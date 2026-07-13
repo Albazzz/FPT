@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css?v=20260713c" />
+  <link rel="stylesheet" href="style.css?v=20260713d" />
 </head>
 <body>
   <div class="app-body">
@@ -41,52 +41,53 @@
 
     <main class="app-main">
       <div class="container quiz-wrap">
-        <nav class="tabs" role="tablist" aria-label="Chế độ làm bài">
-          <button type="button" class="tab active" data-tab="all" role="tab" aria-selected="true">
-            <i class="fa-solid fa-layer-group"></i>
-            Tất cả câu
-            <span class="tab-count" id="badgeAll">0</span>
-          </button>
-          <button type="button" class="tab" data-tab="wrong" role="tab" aria-selected="false">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-            Câu sai
-            <span class="tab-count tab-count-warn" id="badgeWrong">0</span>
-          </button>
-        </nav>
+        <!-- Một hàng nút: tab + tìm + thao tác (cuộn theo trang, không sticky) -->
+        <div class="control-bar card-soft">
+          <nav class="tabs tabs-inline" role="tablist" aria-label="Chế độ làm bài">
+            <button type="button" class="tab active" data-tab="all" role="tab" aria-selected="true">
+              <i class="fa-solid fa-layer-group"></i>
+              <span class="tab-text">Tất cả</span>
+              <span class="tab-count" id="badgeAll">0</span>
+            </button>
+            <button type="button" class="tab" data-tab="wrong" role="tab" aria-selected="false">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span class="tab-text">Câu sai</span>
+              <span class="tab-count tab-count-warn" id="badgeWrong">0</span>
+            </button>
+          </nav>
 
-        <div class="search-bar card-soft">
-          <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
-          <input
-            type="search"
-            id="searchInput"
-            class="search-input"
-            placeholder="Tìm câu hỏi theo nội dung, từ khóa…"
-            autocomplete="off"
-            aria-label="Tìm kiếm câu hỏi"
-          />
-          <button type="button" class="btn btn-ghost btn-sm search-clear hidden" id="btnClearSearch" title="Xóa tìm kiếm">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
-        <div class="search-results hidden" id="searchResults" role="listbox" aria-label="Kết quả tìm kiếm"></div>
-
-        <div class="toolbar card-soft">
-          <div class="toolbar-shuffle" role="group" aria-label="Thứ tự câu hỏi">
-            <label class="toggle" for="shuffleToggle">
-              <input type="checkbox" id="shuffleToggle" checked />
-              <span><i class="fa-solid fa-shuffle"></i> Ngẫu nhiên</span>
-            </label>
-            <button type="button" class="btn btn-secondary btn-sm" id="btnReshuffle" title="Xáo thứ tự câu hỏi (giữ chế độ Ngẫu nhiên)">
-              <i class="fa-solid fa-arrows-rotate"></i> Xáo lại
+          <div class="search-bar search-bar-inline">
+            <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+            <input
+              type="search"
+              id="searchInput"
+              class="search-input"
+              placeholder="Tìm câu hỏi…"
+              autocomplete="off"
+              aria-label="Tìm kiếm câu hỏi"
+            />
+            <button type="button" class="btn btn-ghost btn-sm search-clear hidden" id="btnClearSearch" title="Xóa tìm kiếm">
+              <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
-          <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession">
-            <i class="fa-solid fa-rotate-left"></i> Reset điểm
-          </button>
-          <button type="button" class="btn btn-ghost btn-sm btn-danger-text" id="btnClearWrong">
-            <i class="fa-solid fa-trash-can"></i> Xóa câu sai
-          </button>
+
+          <div class="toolbar toolbar-inline" role="toolbar" aria-label="Thao tác">
+            <label class="toggle" for="shuffleToggle">
+              <input type="checkbox" id="shuffleToggle" checked />
+              <span><i class="fa-solid fa-shuffle"></i> <span class="btn-label">Ngẫu nhiên</span></span>
+            </label>
+            <button type="button" class="btn btn-secondary btn-sm" id="btnReshuffle" title="Xáo thứ tự câu hỏi (giữ chế độ Ngẫu nhiên)">
+              <i class="fa-solid fa-arrows-rotate"></i> <span class="btn-label">Xáo lại</span>
+            </button>
+            <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession" title="Reset điểm phiên">
+              <i class="fa-solid fa-rotate-left"></i> <span class="btn-label">Reset điểm</span>
+            </button>
+            <button type="button" class="btn btn-ghost btn-sm btn-danger-text" id="btnClearWrong" title="Xóa câu sai đã lưu">
+              <i class="fa-solid fa-trash-can"></i> <span class="btn-label">Xóa câu sai</span>
+            </button>
+          </div>
         </div>
+        <div class="search-results hidden" id="searchResults" role="listbox" aria-label="Kết quả tìm kiếm"></div>
 
         <div class="progress-wrap" aria-hidden="true">
           <div class="progress-bar" id="progressBar"></div>
@@ -170,7 +171,7 @@
   </div>
 
   <!-- ?v= cache-bust cho iPad Safari -->
-  <script src="questions.js?v=20260713c"></script>
-  <script src="app.js?v=20260713c"></script>
+  <script src="questions.js?v=20260713d"></script>
+  <script src="app.js?v=20260713d"></script>
 </body>
 </html>

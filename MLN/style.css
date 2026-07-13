@@ -70,16 +70,14 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
     var(--bg);
 }
 
-/* —— Nav —— */
+/* —— Nav (không sticky — cuộn mất khi kéo trang) —— */
 .site-nav {
-  position: sticky;
-  top: 0;
-  z-index: 40;
+  position: relative;
+  z-index: 1;
   height: var(--nav-h);
   display: flex;
   align-items: center;
-  backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--surface);
   border-bottom: 1px solid var(--border);
 }
 
@@ -169,7 +167,75 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
   padding-bottom: var(--sp-8);
 }
 
-.quiz-wrap { padding-top: var(--sp-5); }
+.quiz-wrap { padding-top: var(--sp-4); }
+
+/* —— Control bar: tabs + search + actions = một hàng nút —— */
+.control-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  margin-bottom: var(--sp-3);
+}
+
+.tabs-inline {
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  padding: 3px;
+  margin: 0;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-full);
+  box-shadow: none;
+}
+
+.tabs-inline .tab {
+  flex: 0 0 auto;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: var(--r-full);
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.search-bar-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 160px;
+  min-width: 140px;
+  max-width: 100%;
+  padding: 6px 12px;
+  margin: 0;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-full);
+  position: relative;
+}
+
+.toolbar-inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  flex: 0 1 auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.toolbar-inline .toggle {
+  padding: 7px 10px;
+  font-size: 0.82rem;
+}
+
+.toolbar-inline .btn {
+  white-space: nowrap;
+}
 
 /* —— Search —— */
 .search-bar {
@@ -195,11 +261,14 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
   font-weight: 500;
   color: var(--text);
   min-width: 0;
+  font-size: 0.88rem;
 }
 
 .search-input::placeholder { color: var(--muted); font-weight: 500; }
 
 .search-clear { flex-shrink: 0; }
+.search-clear.hidden,
+.search-results.hidden { display: none !important; }
 
 .search-results {
   background: var(--surface);
@@ -281,6 +350,7 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
   font-size: 0.9rem;
   color: var(--muted);
   background: transparent;
+  touch-action: manipulation;
 }
 
 .tab:hover { color: var(--accent); background: var(--accent-soft); }
@@ -333,17 +403,6 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
   margin-bottom: var(--sp-4);
 }
 
-/* Ngẫu nhiên (toggle) và Xáo lại (nút) — hai control tách biệt, không đè nhau trên iPad */
-.toolbar-shuffle {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  margin-right: 4px;
-  padding-right: 10px;
-  border-right: 1px solid var(--border);
-}
-
 .toggle {
   display: inline-flex;
   align-items: center;
@@ -359,9 +418,10 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  white-space: nowrap;
 }
 
-.toggle input { accent-color: var(--accent); width: 1rem; height: 1rem; cursor: pointer; }
+.toggle input { accent-color: var(--accent); width: 1rem; height: 1rem; cursor: pointer; flex-shrink: 0; }
 .toggle i { color: var(--accent); }
 
 #btnReshuffle:disabled {
@@ -987,14 +1047,30 @@ kbd {
 
 .hint-desk { display: inline; }
 
+@media (max-width: 720px) {
+  .control-bar {
+    gap: 6px;
+    padding: 8px;
+  }
+  .search-bar-inline {
+    flex: 1 1 100%;
+    order: 3;
+  }
+  .tabs-inline { order: 1; }
+  .toolbar-inline { order: 2; flex: 1 1 auto; justify-content: flex-start; }
+}
+
 @media (max-width: 560px) {
   .brand-text span { display: none; }
-  .nav-stats .badge { padding: 4px 8px; }
+  .nav-stats .badge { padding: 4px 8px; font-size: 0.7rem; }
   .btn-nav .nav-label { display: none; }
   .btn-nav { min-width: 3rem; padding: 12px; }
-  .tab { font-size: 0.82rem; padding: 10px 8px; gap: 6px; }
+  .tabs-inline .tab { padding: 8px 10px; font-size: 0.78rem; gap: 4px; }
+  .tabs-inline .tab .tab-text { max-width: 4.5rem; overflow: hidden; text-overflow: ellipsis; }
+  .toolbar-inline .btn-label { display: none; }
+  .toolbar-inline .toggle .btn-label { display: inline; }
+  .toolbar-inline .btn { min-width: 40px; min-height: 40px; padding: 8px 10px; }
   .question { font-size: 1rem; }
-  .toolbar-shuffle { border-right: none; padding-right: 0; margin-right: 0; width: 100%; }
   .hint-desk { display: none; }
 }
 
