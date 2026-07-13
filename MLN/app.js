@@ -1094,28 +1094,8 @@
     }
   });
 
-  let touchStartX = 0;
-  document.addEventListener(
-    "touchstart",
-    (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-    },
-    { passive: true }
-  );
-  document.addEventListener(
-    "touchend",
-    (e) => {
-      // Đừng swipe chuyển câu khi đang mở modal / bấm nút toolbar
-      if (document.body.classList.contains("modal-open")) return;
-      const t = e.target;
-      if (t && t.closest && t.closest("button, a, input, label, .modal, .toolbar")) return;
-      const dx = e.changedTouches[0].screenX - touchStartX;
-      if (Math.abs(dx) < 60) return;
-      if (dx < 0) go(1);
-      else go(-1);
-    },
-    { passive: true }
-  );
+  // Vuốt trái/phải chuyển câu đã TẮT — trên iPad quá nhạy, dễ nhảy câu khi cuộn/chạm.
+  // Vẫn dùng nút Trước/Sau, phím ← →, hoặc ô nhảy số.
 
   // jump input changes (phát hiện nhảy liên tục do value/max update)
   if (el.jumpInput) {
