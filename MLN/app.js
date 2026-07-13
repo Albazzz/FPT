@@ -781,8 +781,6 @@
 
   el.shuffleToggle.addEventListener("change", () => {
     // Bật/tắt ngẫu nhiên: luôn build lại queue và về Câu 1.
-    // Trước đây keep id → index nhảy (vd Câu 5 shuffled #100 → unshuffle Câu 100)
-    // và tắt random không về 1 như mong đợi.
     const cur = currentQuestion();
     dbg("shuffleToggle:change", {
       checked: el.shuffleToggle.checked,
@@ -794,11 +792,17 @@
   });
 
   el.btnReshuffle.addEventListener("click", () => {
+    // Không tự bật «Ngẫu nhiên» — chỉ xáo khi toggle đang bật.
+    // Tắt random + Xáo lại → về Câu 1 theo thứ tự gốc (không bật random).
     dbg("btnReshuffle:click", {
-      wasChecked: el.shuffleToggle.checked,
+      shuffleOn: el.shuffleToggle.checked,
       keepPositionId: null,
     });
-    el.shuffleToggle.checked = true;
+    if (!el.shuffleToggle.checked) {
+      showToast("Bật «Ngẫu nhiên» trước rồi bấm Xáo lại, hoặc giữ tắt để làm theo thứ tự.");
+      rebuildQueue(null);
+      return;
+    }
     rebuildQueue(null);
   });
 
@@ -811,22 +815,83 @@
     render();
   });
 
+  /** @type {HTMLElement | null} */
+  let toastEl = null;
+  let toastTimer = null;
+  function showToast(message) {
+    if (!toastEl) {
+      toastEl = document.createElement("div");
+      toastEl.id = "mlnToast";
+      toastEl.className = "mln-toast";
+      toastEl.setAttribute("role", "status");
+      document.body.appendChild(toastEl);
+    }
+    toastEl.textContent = message;
+    toastEl.classList.add("is-on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toastEl.classList.remove("is-on");
+    }, 2800);
+  }
+
   /**
-   * Custom confirm — window.confirm thường không hiện trên iPad Safari / WebView.
+   * Modal confirm tự vẽ (không dùng window.confirm — iPad hay chặn).
    * @param {string} message
    * @param {{title?: string, okText?: string, cancelText?: string}} [opts]
    * @returns {Promise<boolean>}
    */
+  function ensureConfirmModal() {
+    let modal = document.getElementById("confirmModal");
+    if (modal) return modal;
+
+    modal = document.createElement("div");
+    modal.id = "confirmModal";
+    modal.className = "modal";
+    modal.setAttribute("role", "dialog");
+    modal.setAttribute("aria-modal", "true");
+    modal.innerHTML =
+      '<div class="modal-backdrop" data-confirm-cancel="1"></div>' +
+      '<div class="modal-panel" role="document">' +
+      '  <div class="modal-icon" aria-hidden="true"><i class="fa-solid fa-trash-can"></i></div>' +
+      '  <h3 class="modal-title" id="confirmTitle">Xác nhận</h3>' +
+      '  <p class="modal-msg" id="confirmMsg"></p>' +
+      '  <div class="modal-actions">' +
+      '    <button type="button" class="btn btn-secondary" id="confirmCancel">Hủy</button>' +
+      '    <button type="button" class="btn btn-danger" id="confirmOk">Xóa</button>' +
+      "  </div>" +
+      "</div>";
+    document.body.appendChild(modal);
+    return modal;
+  }
+
+  function hideConfirmModal(modal) {
+    if (!modal) return;
+    modal.classList.add("hidden");
+    modal.setAttribute("hidden", "");
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open");
+  }
+
+  function showConfirmModal(modal) {
+    modal.classList.remove("hidden");
+    modal.removeAttribute("hidden");
+    // Inline style để chắc chắn hiện trên iOS (UA stylesheet + cache CSS)
+    modal.style.cssText =
+      "display:flex;position:fixed;inset:0;z-index:9999;align-items:center;justify-content:center;padding:16px;";
+    document.body.classList.add("modal-open");
+  }
+
   function confirmDialog(message, opts) {
     const options = opts || {};
-    const modal = document.getElementById("confirmModal");
-    const msgEl = document.getElementById("confirmMsg");
-    const titleEl = document.getElementById("confirmTitle");
-    const btnOk = document.getElementById("confirmOk");
-    const btnCancel = document.getElementById("confirmCancel");
-    if (!modal || !msgEl || !btnOk || !btnCancel) {
-      // fallback desktop nếu thiếu markup
-      return Promise.resolve(window.confirm(message));
+    const modal = ensureConfirmModal();
+    const msgEl = modal.querySelector("#confirmMsg") || document.getElementById("confirmMsg");
+    const titleEl = modal.querySelector("#confirmTitle") || document.getElementById("confirmTitle");
+    const btnOk = modal.querySelector("#confirmOk") || document.getElementById("confirmOk");
+    const btnCancel = modal.querySelector("#confirmCancel") || document.getElementById("confirmCancel");
+
+    if (!msgEl || !btnOk || !btnCancel) {
+      showToast(message + " (không mở được hộp thoại)");
+      return Promise.resolve(false);
     }
 
     if (titleEl) titleEl.textContent = options.title || "Xác nhận";
@@ -834,56 +899,68 @@
     btnOk.textContent = options.okText || "Xóa";
     btnCancel.textContent = options.cancelText || "Hủy";
 
-    modal.classList.remove("hidden");
-    modal.removeAttribute("hidden");
-
-    const prevOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
+    showConfirmModal(modal);
 
     return new Promise((resolve) => {
+      let done = false;
       const finish = (ok) => {
-        modal.classList.add("hidden");
-        modal.setAttribute("hidden", "");
-        document.body.style.overflow = prevOverflow;
+        if (done) return;
+        done = true;
+        hideConfirmModal(modal);
         btnOk.removeEventListener("click", onOk);
         btnCancel.removeEventListener("click", onCancel);
-        modal.querySelectorAll("[data-confirm-cancel]").forEach((el) => {
-          el.removeEventListener("click", onCancel);
-        });
+        btnOk.removeEventListener("touchend", onOkTouch);
+        btnCancel.removeEventListener("touchend", onCancelTouch);
+        modal.removeEventListener("click", onBackdrop);
         document.removeEventListener("keydown", onKey);
         resolve(ok);
       };
-      const onOk = () => finish(true);
-      const onCancel = () => finish(false);
+      const onOk = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        finish(true);
+      };
+      const onCancel = (e) => {
+        if (e) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+        finish(false);
+      };
+      // touchend + preventDefault tránh 300ms / mất click trên iOS
+      const onOkTouch = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        finish(true);
+      };
+      const onCancelTouch = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        finish(false);
+      };
+      const onBackdrop = (e) => {
+        const t = e.target;
+        if (t && t.getAttribute && t.getAttribute("data-confirm-cancel")) {
+          finish(false);
+        }
+      };
       const onKey = (e) => {
         if (e.key === "Escape") {
           e.preventDefault();
           finish(false);
-        } else if (e.key === "Enter") {
-          e.preventDefault();
-          finish(true);
         }
       };
 
       btnOk.addEventListener("click", onOk);
       btnCancel.addEventListener("click", onCancel);
-      modal.querySelectorAll("[data-confirm-cancel]").forEach((el) => {
-        el.addEventListener("click", onCancel);
-      });
+      btnOk.addEventListener("touchend", onOkTouch, { passive: false });
+      btnCancel.addEventListener("touchend", onCancelTouch, { passive: false });
+      modal.addEventListener("click", onBackdrop);
       document.addEventListener("keydown", onKey);
-      // focus nút Hủy cho an toàn (tránh Enter lỡ xóa trên desktop)
-      setTimeout(() => btnCancel.focus(), 0);
     });
   }
 
-  el.btnClearWrong.addEventListener("click", async () => {
-    if (wrongIds.size === 0) return;
-    const ok = await confirmDialog(`Xóa ${wrongIds.size} câu sai đã lưu? Hành động này không hoàn tác.`, {
-      title: "Xóa câu sai",
-      okText: "Xóa hết",
-      cancelText: "Hủy",
-    });
-    if (!ok) return;
+  function clearAllWrong() {
     wrongIds = new Set();
     saveWrongIds();
     if (mode === "wrong") rebuildQueue(null);
@@ -891,7 +968,49 @@
       updateBadges();
       render();
     }
-  });
+    showToast("Đã xóa hết câu sai đã lưu.");
+  }
+
+  let clearWrongLockUntil = 0;
+  function onClearWrongClick(e) {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    const now = Date.now();
+    // Tránh touchend + click mở modal 2 lần trên iPad
+    if (now < clearWrongLockUntil) return;
+    clearWrongLockUntil = now + 500;
+
+    if (wrongIds.size === 0) {
+      showToast("Chưa có câu sai nào để xóa.");
+      return;
+    }
+    // Đang mở modal rồi thì thôi
+    if (document.body.classList.contains("modal-open")) return;
+
+    const n = wrongIds.size;
+    confirmDialog(`Xóa ${n} câu sai đã lưu? Hành động này không hoàn tác.`, {
+      title: "Xóa câu sai",
+      okText: "Xóa hết",
+      cancelText: "Hủy",
+    }).then((ok) => {
+      if (ok) clearAllWrong();
+    });
+  }
+
+  if (el.btnClearWrong) {
+    el.btnClearWrong.addEventListener("click", onClearWrongClick);
+    // iPad: touchend (preventDefault) nếu synthetic click bị nuốt
+    el.btnClearWrong.addEventListener(
+      "touchend",
+      (e) => {
+        e.preventDefault();
+        onClearWrongClick(e);
+      },
+      { passive: false }
+    );
+  }
 
   el.btnGoAll.addEventListener("click", () => setMode("all"));
 
@@ -986,6 +1105,10 @@
   document.addEventListener(
     "touchend",
     (e) => {
+      // Đừng swipe chuyển câu khi đang mở modal / bấm nút toolbar
+      if (document.body.classList.contains("modal-open")) return;
+      const t = e.target;
+      if (t && t.closest && t.closest("button, a, input, label, .modal, .toolbar")) return;
       const dx = e.changedTouches[0].screenX - touchStartX;
       if (Math.abs(dx) < 60) return;
       if (dx < 0) go(1);

@@ -1054,4 +1054,45 @@ kbd {
   flex: 1;
   justify-content: center;
   min-height: 44px; /* touch target iPad */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+body.modal-open {
+  overflow: hidden;
+  touch-action: none;
+}
+
+/* Toast (thông báo nhẹ — thay alert trên iPad) */
+.mln-toast {
+  position: fixed;
+  left: 50%;
+  bottom: max(24px, env(safe-area-inset-bottom));
+  transform: translateX(-50%) translateY(120%);
+  z-index: 10000;
+  max-width: min(92vw, 420px);
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #1c2434;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 220ms ease, opacity 220ms ease;
+}
+.mln-toast.is-on {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+#btnClearWrong,
+#btnReshuffle {
+  min-height: 40px;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
 }
