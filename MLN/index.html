@@ -152,6 +152,20 @@
     </main>
   </div>
 
+  <!-- Modal xác nhận (thay window.confirm — iPad/Safari hay không hiện popup native) -->
+  <div id="confirmModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmMsg" hidden>
+    <div class="modal-backdrop" data-confirm-cancel tabindex="-1"></div>
+    <div class="modal-panel" role="document">
+      <div class="modal-icon" aria-hidden="true"><i class="fa-solid fa-trash-can"></i></div>
+      <h3 class="modal-title" id="confirmTitle">Xác nhận</h3>
+      <p class="modal-msg" id="confirmMsg"></p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-secondary" id="confirmCancel">Hủy</button>
+        <button type="button" class="btn btn-primary btn-danger" id="confirmOk">Xóa</button>
+      </div>
+    </div>
+  </div>
+
   <script src="questions.js"></script>
   <script src="app.js"></script>
 </body>

@@ -131,6 +131,26 @@
   }
 
   // —— Utils ——
+  /** Debug: bật/tắt log console khi điều tra shuffle / nhảy câu */
+  const DEBUG_MLN = false;
+  let _dbgRenderN = 0;
+  function dbg(tag, data) {
+    if (!DEBUG_MLN) return;
+    const cur = queue[index];
+    const base = {
+      t: Date.now(),
+      tag,
+      mode,
+      shuffleOn: !!(el.shuffleToggle && el.shuffleToggle.checked),
+      index,
+      qId: cur ? cur.id : null,
+      queueLen: queue.length,
+      first3Ids: queue.slice(0, 3).map((q) => q.id),
+      jumpInput: el.jumpInput ? el.jumpInput.value : null,
+    };
+    console.log("[MLN-DEBUG]", tag, Object.assign(base, data || {}));
+  }
+
   function shuffle(arr) {
     const a = arr.slice();
     for (let i = a.length - 1; i > 0; i--) {
@@ -156,8 +176,19 @@
   }
 
   function rebuildQueue(keepPositionId) {
+    const prevIndex = index;
+    const prevId = queue[index] ? queue[index].id : null;
+    const stack = new Error().stack;
+    dbg("rebuildQueue:start", {
+      keepPositionId,
+      prevIndex,
+      prevId,
+      stack: stack ? stack.split("\n").slice(0, 6).join(" | ") : null,
+    });
+
     let list = getSourceList();
-    if (el.shuffleToggle.checked && list.length > 1) {
+    const didShuffle = !!(el.shuffleToggle.checked && list.length > 1);
+    if (didShuffle) {
       list = shuffle(list);
     }
     queue = list;
@@ -165,14 +196,26 @@
     if (keepPositionId != null) {
       const found = queue.findIndex((q) => q.id === keepPositionId);
       index = found >= 0 ? found : 0;
+      dbg("rebuildQueue:keepId", {
+        keepPositionId,
+        found,
+        newIndex: index,
+        didShuffle,
+      });
     } else {
       index = 0;
+      dbg("rebuildQueue:resetTo0", { didShuffle, reason: "keepPositionId is null" });
     }
     if (index >= queue.length) index = Math.max(0, queue.length - 1);
 
     lastChoice = new Map();
     answered = false;
     selectedLetters = [];
+    dbg("rebuildQueue:beforeRender", {
+      didShuffle,
+      newIndex: index,
+      newId: queue[index] ? queue[index].id : null,
+    });
     render();
   }
 
@@ -235,6 +278,15 @@
   }
 
   function render() {
+    _dbgRenderN += 1;
+    const qPeek = currentQuestion();
+    dbg("render", {
+      n: _dbgRenderN,
+      qId: qPeek ? qPeek.id : null,
+      answered,
+      selectedLetters: selectedLetters.slice(),
+    });
+
     updateBadges();
 
     const q = currentQuestion();
@@ -598,6 +650,14 @@
 
   function go(delta) {
     const next = index + delta;
+    dbg("go", {
+      delta,
+      fromIndex: index,
+      toIndex: next,
+      fromId: queue[index] ? queue[index].id : null,
+      toId: queue[next] ? queue[next].id : null,
+      blocked: next < 0 || next >= queue.length,
+    });
     if (next < 0 || next >= queue.length) return;
     index = next;
     answered = false;
@@ -609,6 +669,14 @@
 
   function jumpTo(n) {
     const i = Number(n) - 1;
+    dbg("jumpTo", {
+      raw: n,
+      targetIndex: i,
+      fromIndex: index,
+      fromId: queue[index] ? queue[index].id : null,
+      toId: queue[i] ? queue[i].id : null,
+      blocked: !Number.isFinite(i) || i < 0 || i >= queue.length,
+    });
     if (!Number.isFinite(i) || i < 0 || i >= queue.length) return;
     index = i;
     answered = false;
@@ -712,11 +780,24 @@
   }
 
   el.shuffleToggle.addEventListener("change", () => {
+    // Bật/tắt ngẫu nhiên: luôn build lại queue và về Câu 1.
+    // Trước đây keep id → index nhảy (vd Câu 5 shuffled #100 → unshuffle Câu 100)
+    // và tắt random không về 1 như mong đợi.
     const cur = currentQuestion();
-    rebuildQueue(cur ? cur.id : null);
+    dbg("shuffleToggle:change", {
+      checked: el.shuffleToggle.checked,
+      prevId: cur ? cur.id : null,
+      prevIndex: index,
+      action: "rebuildQueue(null) → index 0",
+    });
+    rebuildQueue(null);
   });
 
   el.btnReshuffle.addEventListener("click", () => {
+    dbg("btnReshuffle:click", {
+      wasChecked: el.shuffleToggle.checked,
+      keepPositionId: null,
+    });
     el.shuffleToggle.checked = true;
     rebuildQueue(null);
   });
@@ -730,9 +811,79 @@
     render();
   });
 
-  el.btnClearWrong.addEventListener("click", () => {
+  /**
+   * Custom confirm — window.confirm thường không hiện trên iPad Safari / WebView.
+   * @param {string} message
+   * @param {{title?: string, okText?: string, cancelText?: string}} [opts]
+   * @returns {Promise<boolean>}
+   */
+  function confirmDialog(message, opts) {
+    const options = opts || {};
+    const modal = document.getElementById("confirmModal");
+    const msgEl = document.getElementById("confirmMsg");
+    const titleEl = document.getElementById("confirmTitle");
+    const btnOk = document.getElementById("confirmOk");
+    const btnCancel = document.getElementById("confirmCancel");
+    if (!modal || !msgEl || !btnOk || !btnCancel) {
+      // fallback desktop nếu thiếu markup
+      return Promise.resolve(window.confirm(message));
+    }
+
+    if (titleEl) titleEl.textContent = options.title || "Xác nhận";
+    msgEl.textContent = message;
+    btnOk.textContent = options.okText || "Xóa";
+    btnCancel.textContent = options.cancelText || "Hủy";
+
+    modal.classList.remove("hidden");
+    modal.removeAttribute("hidden");
+
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return new Promise((resolve) => {
+      const finish = (ok) => {
+        modal.classList.add("hidden");
+        modal.setAttribute("hidden", "");
+        document.body.style.overflow = prevOverflow;
+        btnOk.removeEventListener("click", onOk);
+        btnCancel.removeEventListener("click", onCancel);
+        modal.querySelectorAll("[data-confirm-cancel]").forEach((el) => {
+          el.removeEventListener("click", onCancel);
+        });
+        document.removeEventListener("keydown", onKey);
+        resolve(ok);
+      };
+      const onOk = () => finish(true);
+      const onCancel = () => finish(false);
+      const onKey = (e) => {
+        if (e.key === "Escape") {
+          e.preventDefault();
+          finish(false);
+        } else if (e.key === "Enter") {
+          e.preventDefault();
+          finish(true);
+        }
+      };
+
+      btnOk.addEventListener("click", onOk);
+      btnCancel.addEventListener("click", onCancel);
+      modal.querySelectorAll("[data-confirm-cancel]").forEach((el) => {
+        el.addEventListener("click", onCancel);
+      });
+      document.addEventListener("keydown", onKey);
+      // focus nút Hủy cho an toàn (tránh Enter lỡ xóa trên desktop)
+      setTimeout(() => btnCancel.focus(), 0);
+    });
+  }
+
+  el.btnClearWrong.addEventListener("click", async () => {
     if (wrongIds.size === 0) return;
-    if (!confirm(`Xóa ${wrongIds.size} câu sai đã lưu?`)) return;
+    const ok = await confirmDialog(`Xóa ${wrongIds.size} câu sai đã lưu? Hành động này không hoàn tác.`, {
+      title: "Xóa câu sai",
+      okText: "Xóa hết",
+      cancelText: "Hủy",
+    });
+    if (!ok) return;
     wrongIds = new Set();
     saveWrongIds();
     if (mode === "wrong") rebuildQueue(null);
@@ -843,6 +994,16 @@
     { passive: true }
   );
 
+  // jump input changes (phát hiện nhảy liên tục do value/max update)
+  if (el.jumpInput) {
+    el.jumpInput.addEventListener("input", () => {
+      dbg("jumpInput:input", { value: el.jumpInput.value });
+    });
+    el.jumpInput.addEventListener("change", () => {
+      dbg("jumpInput:change", { value: el.jumpInput.value });
+    });
+  }
+
   // —— Boot ——
   if (!ALL.length) {
     el.questionText.textContent = "Không tải được câu hỏi. Kiểm tra file questions.js.";
@@ -850,5 +1011,11 @@
     return;
   }
 
+  dbg("boot", { totalQuestions: ALL.length, shuffleDefault: el.shuffleToggle?.checked });
+  console.info(
+    "%c[MLN-DEBUG] Log bật. Mở DevTools → Console, lọc «MLN-DEBUG». " +
+      "Thử: tắt Ngẫu nhiên → bật lại / Xáo lại / next-prev. Copy log gửi lại.",
+    "color:#0ea5e9;font-weight:bold"
+  );
   rebuildQueue(null);
 })();
