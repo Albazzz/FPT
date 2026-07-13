@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20260713c" />
 </head>
 <body>
   <div class="app-body">
@@ -71,13 +71,15 @@
         <div class="search-results hidden" id="searchResults" role="listbox" aria-label="Kết quả tìm kiếm"></div>
 
         <div class="toolbar card-soft">
-          <label class="toggle">
-            <input type="checkbox" id="shuffleToggle" checked />
-            <span><i class="fa-solid fa-shuffle"></i> Ngẫu nhiên</span>
-          </label>
-          <button type="button" class="btn btn-secondary btn-sm" id="btnReshuffle">
-            <i class="fa-solid fa-arrows-rotate"></i> Xáo lại
-          </button>
+          <div class="toolbar-shuffle" role="group" aria-label="Thứ tự câu hỏi">
+            <label class="toggle" for="shuffleToggle">
+              <input type="checkbox" id="shuffleToggle" checked />
+              <span><i class="fa-solid fa-shuffle"></i> Ngẫu nhiên</span>
+            </label>
+            <button type="button" class="btn btn-secondary btn-sm" id="btnReshuffle" title="Xáo thứ tự câu hỏi (giữ chế độ Ngẫu nhiên)">
+              <i class="fa-solid fa-arrows-rotate"></i> Xáo lại
+            </button>
+          </div>
           <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession">
             <i class="fa-solid fa-rotate-left"></i> Reset điểm
           </button>
@@ -145,8 +147,9 @@
         </nav>
 
         <p class="hint">
-          <i class="fa-regular fa-keyboard"></i>
-          <kbd>←</kbd> <kbd>→</kbd> chuyển câu · <kbd>A</kbd>–<kbd>E</kbd> chọn · multi: chọn nhiều rồi <kbd>Enter</kbd> xác nhận
+          <i class="fa-solid fa-hand-pointer"></i>
+          Chuyển câu bằng nút <strong>Trước / Sau</strong> (không vuốt).
+          <span class="hint-desk"> · Máy tính: <kbd>A</kbd>–<kbd>E</kbd> chọn · multi: <kbd>Enter</kbd></span>
         </p>
       </div>
     </main>
@@ -166,7 +169,8 @@
     </div>
   </div>
 
-  <script src="questions.js"></script>
-  <script src="app.js"></script>
+  <!-- ?v= cache-bust cho iPad Safari -->
+  <script src="questions.js?v=20260713c"></script>
+  <script src="app.js?v=20260713c"></script>
 </body>
 </html>

@@ -175,19 +175,34 @@
     return ALL.slice();
   }
 
-  function rebuildQueue(keepPositionId) {
+  /**
+   * @param {number|null|undefined} keepPositionId
+   * @param {{ forceShuffle?: boolean }} [opts]
+   *   forceShuffle: xáo ngay (nút Xáo lại) — KHÔNG đụng tới checkbox Ngẫu nhiên
+   */
+  function rebuildQueue(keepPositionId, opts) {
+    const options = opts || {};
     const prevIndex = index;
     const prevId = queue[index] ? queue[index].id : null;
     const stack = new Error().stack;
+    const shuffleOn = !!(el.shuffleToggle && el.shuffleToggle.checked);
+    // Xáo lại chỉ forceShuffle; checkbox Ngẫu nhiên chỉ do user bật/tắt
+    const didShuffle = !!(
+      (options.forceShuffle || shuffleOn) &&
+      getSourceList().length > 1
+    );
+
     dbg("rebuildQueue:start", {
       keepPositionId,
       prevIndex,
       prevId,
+      shuffleOn,
+      forceShuffle: !!options.forceShuffle,
+      didShuffle,
       stack: stack ? stack.split("\n").slice(0, 6).join(" | ") : null,
     });
 
     let list = getSourceList();
-    const didShuffle = !!(el.shuffleToggle.checked && list.length > 1);
     if (didShuffle) {
       list = shuffle(list);
     }
@@ -213,10 +228,23 @@
     selectedLetters = [];
     dbg("rebuildQueue:beforeRender", {
       didShuffle,
+      shuffleOn,
       newIndex: index,
       newId: queue[index] ? queue[index].id : null,
     });
+    syncReshuffleBtn();
     render();
+  }
+
+  /** Nút Xáo lại chỉ dùng khi đang bật Ngẫu nhiên — hai control tách biệt */
+  function syncReshuffleBtn() {
+    if (!el.btnReshuffle || !el.shuffleToggle) return;
+    const on = !!el.shuffleToggle.checked;
+    el.btnReshuffle.disabled = !on;
+    el.btnReshuffle.title = on
+      ? "Xáo thứ tự câu hỏi (giữ chế độ Ngẫu nhiên)"
+      : "Chỉ dùng khi đã bật Ngẫu nhiên";
+    el.btnReshuffle.setAttribute("aria-disabled", on ? "false" : "true");
   }
 
   function currentQuestion() {
@@ -780,30 +808,27 @@
   }
 
   el.shuffleToggle.addEventListener("change", () => {
-    // Bật/tắt ngẫu nhiên: luôn build lại queue và về Câu 1.
-    const cur = currentQuestion();
+    // CHỈ toggle này bật/tắt chế độ Ngẫu nhiên — không liên quan nút Xáo lại.
     dbg("shuffleToggle:change", {
       checked: el.shuffleToggle.checked,
-      prevId: cur ? cur.id : null,
       prevIndex: index,
-      action: "rebuildQueue(null) → index 0",
     });
-    rebuildQueue(null);
+    syncReshuffleBtn();
+    rebuildQueue(null); // bật = xáo + về Câu 1; tắt = thứ tự gốc + về Câu 1
   });
 
-  el.btnReshuffle.addEventListener("click", () => {
-    // Không tự bật «Ngẫu nhiên» — chỉ xáo khi toggle đang bật.
-    // Tắt random + Xáo lại → về Câu 1 theo thứ tự gốc (không bật random).
-    dbg("btnReshuffle:click", {
-      shuffleOn: el.shuffleToggle.checked,
-      keepPositionId: null,
-    });
+  el.btnReshuffle.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    // Xáo lại = xáo lại thứ tự hiện tại. KHÔNG BAO GIỜ gán shuffleToggle.checked.
     if (!el.shuffleToggle.checked) {
-      showToast("Bật «Ngẫu nhiên» trước rồi bấm Xáo lại, hoặc giữ tắt để làm theo thứ tự.");
-      rebuildQueue(null);
+      showToast("Bật «Ngẫu nhiên» trước — Xáo lại không tự bật chế độ này.");
+      syncReshuffleBtn();
       return;
     }
-    rebuildQueue(null);
+    dbg("btnReshuffle:click", { shuffleOn: true, forceShuffle: true });
+    rebuildQueue(null, { forceShuffle: true });
+    showToast("Đã xáo lại thứ tự câu hỏi.");
   });
 
   el.btnResetSession.addEventListener("click", () => {
@@ -1057,16 +1082,21 @@
     // keep results visible while typing; only hide when clicking far? better keep until clear
   });
 
+  // Chỉ chuyển câu bằng nút Trước/Sau (và ô nhảy số). Không vuốt, không phím mũi tên trên tablet.
+  const isCoarsePointer =
+    typeof window.matchMedia === "function" &&
+    window.matchMedia("(pointer: coarse)").matches;
+
   document.addEventListener("keydown", (e) => {
     if (e.target && (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA")) {
-      // allow Enter on multi submit when not in jump/search? skip
       return;
     }
 
-    if (e.key === "ArrowLeft") {
+    // iPad/tablet: tắt phím ← → (tránh nhảy câu ngoài ý muốn)
+    if (!isCoarsePointer && e.key === "ArrowLeft") {
       e.preventDefault();
       go(-1);
-    } else if (e.key === "ArrowRight") {
+    } else if (!isCoarsePointer && e.key === "ArrowRight") {
       e.preventDefault();
       go(1);
     } else if (e.key === "Enter") {
@@ -1076,7 +1106,7 @@
         submitMulti();
       } else if (!answered) {
         // don't auto next on enter for single
-      } else {
+      } else if (!isCoarsePointer) {
         e.preventDefault();
         go(1);
       }
@@ -1094,8 +1124,7 @@
     }
   });
 
-  // Vuốt trái/phải chuyển câu đã TẮT — trên iPad quá nhạy, dễ nhảy câu khi cuộn/chạm.
-  // Vẫn dùng nút Trước/Sau, phím ← →, hoặc ô nhảy số.
+  // Không đăng ký touchstart/touchend để vuốt chuyển câu.
 
   // jump input changes (phát hiện nhảy liên tục do value/max update)
   if (el.jumpInput) {
@@ -1115,10 +1144,6 @@
   }
 
   dbg("boot", { totalQuestions: ALL.length, shuffleDefault: el.shuffleToggle?.checked });
-  console.info(
-    "%c[MLN-DEBUG] Log bật. Mở DevTools → Console, lọc «MLN-DEBUG». " +
-      "Thử: tắt Ngẫu nhiên → bật lại / Xáo lại / next-prev. Copy log gửi lại.",
-    "color:#0ea5e9;font-weight:bold"
-  );
+  syncReshuffleBtn();
   rebuildQueue(null);
 })();

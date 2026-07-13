@@ -333,6 +333,17 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
   margin-bottom: var(--sp-4);
 }
 
+/* Ngẫu nhiên (toggle) và Xáo lại (nút) — hai control tách biệt, không đè nhau trên iPad */
+.toolbar-shuffle {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-right: 4px;
+  padding-right: 10px;
+  border-right: 1px solid var(--border);
+}
+
 .toggle {
   display: inline-flex;
   align-items: center;
@@ -346,10 +357,25 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
   color: var(--muted);
   cursor: pointer;
   user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 .toggle input { accent-color: var(--accent); width: 1rem; height: 1rem; cursor: pointer; }
 .toggle i { color: var(--accent); }
+
+#btnReshuffle:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Chỉ cuộn dọc — giảm vuốt ngang trình duyệt / gesture */
+.app-body,
+.app-main,
+.quiz-wrap,
+.quiz-card {
+  touch-action: pan-y;
+}
 
 /* —— Buttons —— */
 .btn {
@@ -959,6 +985,8 @@ kbd {
 
 .app-main { padding-bottom: var(--sp-10); }
 
+.hint-desk { display: inline; }
+
 @media (max-width: 560px) {
   .brand-text span { display: none; }
   .nav-stats .badge { padding: 4px 8px; }
@@ -966,6 +994,8 @@ kbd {
   .btn-nav { min-width: 3rem; padding: 12px; }
   .tab { font-size: 0.82rem; padding: 10px 8px; gap: 6px; }
   .question { font-size: 1rem; }
+  .toolbar-shuffle { border-right: none; padding-right: 0; margin-right: 0; width: 100%; }
+  .hint-desk { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
