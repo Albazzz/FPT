@@ -33,7 +33,7 @@
   --t-fast: 150ms ease;
   --t-normal: 250ms ease;
   --nav-h: 64px;
-  --max-width: 720px;
+  --max-width: 980px; /* đủ chỗ 1 hàng: tabs + tìm + nút */
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -169,14 +169,24 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
 
 .quiz-wrap { padding-top: var(--sp-4); }
 
-/* —— Control bar: tabs + search + actions = một hàng nút —— */
+/* —— Control bar: 1 hàng ngang
+   [Tabs]  [Tìm…………………]  [Ngẫu nhiên] [Xáo lại] [Reset] [Xóa]
+*/
 .control-bar {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   padding: 8px 10px;
   margin-bottom: var(--sp-3);
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.control-bar > * {
+  flex-shrink: 0;
 }
 
 .tabs-inline {
@@ -200,13 +210,15 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
   white-space: nowrap;
 }
 
+/* Ô tìm chiếm phần giữa, co giãn */
 .search-bar-inline {
   display: flex;
   align-items: center;
   gap: 8px;
-  flex: 1 1 160px;
-  min-width: 140px;
-  max-width: 100%;
+  flex: 1 1 auto;
+  flex-shrink: 1;
+  min-width: 120px;
+  max-width: none;
   padding: 6px 12px;
   margin: 0;
   background: var(--surface-2);
@@ -217,10 +229,10 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
 
 .toolbar-inline {
   display: inline-flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 6px;
-  flex: 0 1 auto;
+  flex: 0 0 auto;
   margin: 0;
   padding: 0;
   border: none;
@@ -1047,17 +1059,27 @@ kbd {
 
 .hint-desk { display: inline; }
 
-@media (max-width: 720px) {
+/* Vẫn 1 hàng ngang trên mobile; thu gọn nhãn, cho cuộn ngang nếu chật */
+@media (max-width: 900px) {
   .control-bar {
-    gap: 6px;
+    gap: 8px;
     padding: 8px;
   }
   .search-bar-inline {
-    flex: 1 1 100%;
-    order: 3;
+    min-width: 100px;
+    flex: 1 1 140px;
   }
-  .tabs-inline { order: 1; }
-  .toolbar-inline { order: 2; flex: 1 1 auto; justify-content: flex-start; }
+  .toolbar-inline .btn-label {
+    display: none;
+  }
+  .toolbar-inline .toggle .btn-label {
+    display: inline;
+  }
+  .toolbar-inline .btn {
+    min-width: 40px;
+    min-height: 40px;
+    padding: 8px 10px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1066,10 +1088,8 @@ kbd {
   .btn-nav .nav-label { display: none; }
   .btn-nav { min-width: 3rem; padding: 12px; }
   .tabs-inline .tab { padding: 8px 10px; font-size: 0.78rem; gap: 4px; }
-  .tabs-inline .tab .tab-text { max-width: 4.5rem; overflow: hidden; text-overflow: ellipsis; }
-  .toolbar-inline .btn-label { display: none; }
-  .toolbar-inline .toggle .btn-label { display: inline; }
-  .toolbar-inline .btn { min-width: 40px; min-height: 40px; padding: 8px 10px; }
+  .tabs-inline .tab-text { /* giữ text ngắn «Tất cả» / «Câu sai» */ }
+  .toolbar-inline .toggle .btn-label { display: none; } /* chỉ icon + checkbox khi hẹp */
   .question { font-size: 1rem; }
   .hint-desk { display: none; }
 }
