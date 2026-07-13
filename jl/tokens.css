@@ -1,0 +1,67 @@
+/* Design tokens — shared across the entire app */
+:root {
+  /* Colors */
+  --color-surface-lowest: #ffffff;
+  --color-surface: #f8f9ff;
+  --color-surface-low: #eff4ff;
+  --color-surface-mid: #e5eeff;
+  --color-surface-high: #dce9ff;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #424754;
+  --color-primary: #0058be;
+  --color-primary-container: #2170e4;
+  --color-on-primary: #ffffff;
+  --color-primary-fixed: #d8e2ff;
+  --color-primary-fixed-dim: #adc6ff;
+  --color-secondary: #585f67;
+  --color-outline: #727785;
+  --color-outline-variant: #c2c6d6;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-tertiary: #006947;
+  --color-tertiary-container: #00855b;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-success: #006947;
+  --color-success-bg: rgba(111, 251, 190, 0.25);
+
+  /* Typography */
+  --font-headline: "Hanken Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* Spacing (8pt baseline) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-full: 9999px;
+
+  --shadow-1: 0 2px 4px rgba(59, 130, 246, 0.04);
+  --shadow-2: 0 10px 20px rgba(59, 130, 246, 0.08);
+
+  --header-height: 64px;
+  --sidebar-width: 260px;
+  --max-width: 1280px;
+  --transition: 150ms ease;
+  --z-header: 40;
+  --z-sidebar: 35;
+  --z-modal: 100;
+  --z-toast: 110;
+}

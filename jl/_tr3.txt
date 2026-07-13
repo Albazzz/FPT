@@ -1,0 +1,2 @@
+const QUIZ_TR = [
+  {qv:"Hình thức nào được gửi/nhận dưới dạng tín hiệu analog?",cv:["A. dữ liệu digital 0 và 1","B. dữ liệu dạng gói (packet)","C. tín hiệu dòng điện (mA) hoặc điện áp (mV)","D. mã nhị phân"],why:"✓ Chọn C — tín hiệu dòng điện (mA) hoặc điện áp (mV) Lý do: アナログは電流・電圧の連続的な信号で送受信されます。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: dữ liệu digital 0 và 1 | B sai/không khớp: dữ liệu dạng gói (packet) | D sai/không khớp:

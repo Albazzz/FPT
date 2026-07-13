@@ -1,0 +1,378 @@
+[Heading1] 練習問題，ミニテストの解答
+第 1 章練習問題 問題I
+解答： (ア)
+解説： ファイルシステムとは， Windows や MacOS などの OS ごとに決められたファイル記録の形式のことです． ( イ) はファイルアクセスのタイミングを決定するもので， OSの機能のうちプロセス制御と呼ばれています．( ウ) は一般にワープロなどのアプリケーションソフトが行い，(エ)はワクチンソフトが行います．
+第 1 章ミニテスト 1
+○ハードディスクや光ディスクドライブ， USB メモリ等を指す． メインメモリと違って， CPU が直接アクセスすることはない．(4) 拡張子プログラムやデータの破壊に備え，予備の記憶装置にデータを複製しておくこと．○(3) エクスプローラコンピュータのファイルの属性・内容を表すための文字列． ファイル名のピリオドで区切られた右側の部分．(2) 記録媒体ウィンドウで， ファイル操作やアプリケーションの起動等を画面上で行うためのプログラムのこと．フォルダの内容を表示するウィンドウである．○(1) バックアップ○ハードディスクや光ディスクドライブ， USB メモリ等を指す． メインメモリと違って， CPU が直接アクセスすることはない．(4) 拡張子プログラムやデータの破壊に備え，予備の記憶装置にデータを複製しておくこと．○(3) エクスプローラコンピュータのファイルの属性・内容を表すための文字列． ファイル名のピリオドで区切られた右側の部分．(2) 記録媒体ウィンドウで， ファイル操作やアプリケーションの起動等を画面上で行うためのプログラムのこと．フォルダの内容を表示するウィンドウである．○(1) バックアップ問題 I
+○
+ハードディスクや光ディスクドライブ， USB メモリ等を指す． メインメモリと違って， CPU が直接アクセスすることはない．
+(4) 拡張子
+プログラムやデータの破壊に備え，予備の記憶装置にデータを複製しておくこと．
+○
+(3) エクスプローラ
+コンピュータのファイルの属性・内容を表すための文字列． ファイル名のピリオドで区切られた右側の部分．
+(2) 記録媒体
+ウィンドウで， ファイル操作やアプリケーションの起動等を画面上で行うためのプログラムのこと．
+フォルダの内容を表示するウィンドウである．
+○
+(1) バックアップ
+○
+ハードディスクや光ディスクドライブ， USB メモリ等を指す． メインメモリと違って， CPU が直接アクセスすることはない．
+(4) 拡張子
+プログラムやデータの破壊に備え，予備の記憶装置にデータを複製しておくこと．
+○
+(3) エクスプローラ
+コンピュータのファイルの属性・内容を表すための文字列． ファイル名のピリオドで区切られた右側の部分．
+(2) 記録媒体
+ウィンドウで， ファイル操作やアプリケーションの起動等を画面上で行うためのプログラムのこと．
+フォルダの内容を表示するウィンドウである．
+○
+(1) バックアップ
+○○
+○
+○
+○○○○○○○○○○(5) 外部記憶装置(5) 外部記憶装置○○ファイルの入れ物で， 広義にはメモリのように一時的にデータを保持するもの．通常はハードディスク，フロッピーディスクなど．ファイルの入れ物で， 広義にはメモリのように一時的にデータを保持するもの．通常はハードディスク，フロッピーディスクなど．
+○
+○
+○
+○
+○
+○
+○
+○
+○
+○
+(5) 外部記憶装置
+(5) 外部記憶装置
+○
+○
+ファイルの入れ物で， 広義にはメモリのように一時的にデータを保持するもの．通常はハードディスク，フロッピーディスクなど．
+ファイルの入れ物で， 広義にはメモリのように一時的にデータを保持するもの．通常はハードディスク，フロッピーディスクなど．
+問題 II
+問題 III
+[Heading4] Thông thường nhiều lượng vật lý xung quanh chúng ta như chiều dài, trọng lượng, thời gian v.v… là lượng liên tục (Analog), trong khi đó máy tính kỹ thuật số làm tròn (xấp xỉ, gần đúng…) các đơn vị lượng này thành các con số nhất định.
+問題 IV
+計算するための道具には古くからさまざまなものがあります．
+第 1 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Trạm làm việc (workstation) không khác biệt nhiều so với máy vi tính thông thường về hình dáng cũng như tính năng. Nhưng khác với máy vi tính, trạm làm việc có tính ổn định cao, dù phải hoạt động liên tục trong thời gian dài cũng ít khi xảy ra hỏng hóc.
+問題 III
+たくさんの種類のあるコンピュータを一言で表すと「記憶」して「処理」する機械と言うことができます．どちらか一方の機能だけではコンピュータと呼ぶことができません．
+第 2 章練習問題
+解答： (ウ)
+解説：( ア) はネットオークション， ( イ) はオンラインショッピングモール， ( エ) はアフ
+ィリエートやクリック保証型広告のことを述べています．
+第 2 章ミニテスト 1
+問題 I
+問題 II
+問題 III
+[Heading4] Internet là công cụ giao tiếp tuyệt vời giúp mọi người ở khắp nơi trên thế giới có thể tiếp xúc trực tiếp với nhau. Tuy nhiên, nếu không nhìn thấy mặt nhau thì cũng có những trường hợp nói những điều mà tuyệt đối không nói nếu là gặp nhau trực tiếp.
+問題 IV
+ホームページからダウンロードできるソフトウェアには， 製品として売られているものの他に，フリーウェアやシェアウェアなどがあります．
+第 2 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Văn bản ngày càng được điện tử hóa, CD-R ngày càng phổ biến, internet ngày càng thông dụng khiến cho việc sao chép thông tin bền vững có thể thực hiện một cách dễ dàng. Tuy nhiên, không phải là muốn làm gì cũng được dù kỹ thuật có cho phép. Đặc biệt cần phải lưu ý về quyền sở hữu trí tuệ hiện có rất nhiều văn bản luật pháp quy định.
+問題 III
+著作財産権とは，著作物の複製や放送などについての著作者の権利を保護するもので，放映された番組をビデオで発売する等の二次利用に関する制限も含まれます．
+第 3 章練習問題
+解答： (エ)
+解説： ( ア) は電子ビーム，( イ) はバックライトで発光するので， 素子自体が光る自発光ではありません．(ウ)は自発光ですが，プラズマ放電という小さい蛍光灯のような発光方式で，発光ダイオードとは原理が異なります．
+第 3 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Trong thời gian tới, vì ranh giới giữa việc truyền thông tin nhờ vào internet và chức năng điện thoại ngày càng thu hẹp, nên người ta dự đoán rằng cước phí và những hình thức kinh doanh như ký hợp đồng… sẽ có nhiều thay đổi.
+問題 III
+携帯電話は，通話以外にも多様な通信方式を持っています．たとえば，携帯電話同士で個人情報を交換する名刺機能では赤外線通信を利用し，ハンズフリーフォンとして利用す
+るためのヘッドセットとの通信は Bluetooth を利用しています．
+第 3 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Việc quyết định ứng dụng có thể sử dụng được của điện thoại di động có tiêu chuẩn
+[Heading4] quốc tế là phần mềm gọi là hệ điều hành. Các hệ điều hành tiêu biểu là iOS, Android, Windows Phone, Symbian… Cho dù là loại máy điện thoại của các công ty khác nhau nhưng nếu là cùng một hệ điều hành thì vẫn có thể sử dụng chung nhiều ứng dụng.
+問題 III
+入力用ハードウェアとして， スマートフォンなどでは， タッチパネルのセンサが使われています．タッチパネルには，多くの方式がありますが，携帯電話で代表的な方式は抵抗膜方式と静電容量方式です．
+第 4 章練習問題
+解答： (エ)
+解説：  (ア)は，ADSL モデムと電話局(収容局)の間は一般の電話線なので金属線になります．(イ)は，金属線の抵抗やノイズにより距離が長くなれば通信速度が遅くなります．(ウ)
+は，電話の領域とデータ通信の領域は別に確保されているので，電話の利用が影響することはありません．
+第 4 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] CATV，ADSL，FTTH，truyền tin bằng đường dây điện là các loại điển hình của
+[Heading4] phương tiện có thể kết nối bằng dây kim loại hay cáp quang.
+問題 III
+複数台のパソコンを利用したり， 家庭内の好きな場所でネットワークに接続しようとした場合に，家庭でも無線LAN がよく使われます．
+第 4 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Là một phương tiện kết nối mạng, truyền tin không dây ngày càng có vai trò quan
+[Heading4] trọng. Phương thức truyền tin không dây tiêu biểu là điện thoại di động, PHS, IrDA, card IC kiểu không tiếp xúc, Bluetooth, LAN không dây…
+問題 III
+ホームページを見たり， ファイルを取ってきたりするのが下り， メールを送信したり，自分のホームページを更新したりするのが上りと言います．
+第 5 章練習問題
+解答： (エ)
+解説： (ア)の DNS サーバは，ドメイン名と IP アドレスの変換を行う装置です(6 章を参照)．(イ)は Google などの検索サイトのことです．(ウ)はハブの一種で，効率的なデータ
+転送を行います．
+第 5 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Người ta gọi network kết nối cục bộ trong phạm vi một công ty hay trường học là mạng LAN, network kết nối trong phạm vi khu vực rộng hơn là mạng WAN.
+問題 III
+ネットワークの中でのコンピュータの接続形態には大きく分けてバス型， スター型， リング型の 3 種類があります．
+第 5 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Thông thường máy tính đóng vai trò là máy chủ thì thường lưu trữ nhiều thông tin quan trọng trong LAN. Vì vậy, khi kết nối vào internet có nhiều người không xác định sử dụng thì rất cần phải có cấu tạo đảm bảo an toàn.
+問題 III
+ネットワークの中で処理を行うコンピュータの配置の仕方によって， 集中処理システムと分散処理システムに分けることができます．
+第 6 章練習問題
+解答： (イ)
+解説： IPv6 も IPv4 と同様に数字のアドレスで，現在も IPv4 と IPv6 が共存しています．( エ) は， 上位層のプロトコルでの暗号化もありますが， IPv6 自体にもセキュリティ機
+能が備えられています．
+第 6 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Vì tên miền càng dễ nhớ thì càng có lợi trong kinh doanh, nên đã nhiều lần xảy ra việc tranh chấp tên miền giữa các công ty có tên giống nhau.
+問題 III
+コンピュータや周辺機器は多くの国の多くのメーカが製造していますので， 国際的な規格に従ったものでなければなりません．
+第 6 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Giống như HTML, việc dùng tag (nhãn/thẻ) để mở rộng phương pháp ghi chép văn bản là XML. XML là viết tắt của eXtensible Markup Language, khác với HTML, đây là ngôn ngữ ghi chép mà người dùng có thể tự do định nghĩa các tag để sử dụng.
+問題 III
+秘密の情報をインターネット経由で送りたい場合は文書を暗号化しなければなりません．
+第 7 章練習問題
+解答： (エ)
+解説： Cookie は PC ごと，ユーザごとに保管される利用履歴などの個人情報であり，他の PC や他のユーザID でログインすると別の Cookie を利用することになります．
+第 7 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Tiền điện tử có các hình thức là loại dùng IC card, loại dùng internet, loại dùng hỗn hợp cả hai loại trên. Trong loại dùng IC card thì có kiểu khép kín và kiểu mở.
+問題 III
+EOS (Electronic Ordering System) とは，オンラインの受発注システムのことを言います．ネットワークを利用するメリットは， 遠方との取引でも距離を意識することなく利用でき， 24 時間対応できることです．
+第 7 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Thông thường trong trình duyệt sử dụng cấu trúc Cookie, nhớ thông tin ID đối với website, và khi truy cập lại vào website đó thì có thể tự mình truyền đi cho ai đó một cách tự động.
+問題 III
+銀行にとっては， あらかじめチャージされた分の現金を運用でき， 口座振替という従来の仕組みがそのまま使えます．
+第 8 章練習問題
+解答： (ウ)
+解説：  Y さんが持っている暗号化用の鍵を公開鍵としてあらかじめ X さんに送り，X
+さんはこの鍵を使って作成したメールを暗号化して Y さんに送り，受け取った Y さんは公
+開鍵のペアである復号化用の秘密鍵で復号化します．
+第 8 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Xác thực là việc xác nhận xem văn bản được gửi đến có phải là do đúng người đó gửi hay không. Do qua internet không thể nhìn thấy mặt người gửi, nên rất dễ giả mạo người khác, đặc biệt việc xác nhận người đặt hàng trong mua bán trực tuyến rất quan trọng.
+問題 III
+受け取る側では何文字ずらしたかを知らないと復号化ができません．
+第 8 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Xét trường hợp A gửi văn bản cho B. Bên nhận B có mã để mã hóa văn bản và có mã để giải mã văn bản. Trong trường hợp này, A sẽ nhận được mã khóa công khai dùng để mã hóa văn bản mà B gửi cho qua internet. Như vậy chỉ có mã dùng để mã hóa là công khai, còn mã dùng để giải mã thì chỉ có B mới lưu giữ và người khác không thể biết được.
+問題 III
+与えられた原文が推測できないように変換することを暗号化と言い， 原文に戻すことを復号化と言います．
+第 9 章練習問題
+解答： (エ)
+解説： (ア)の稼働率は 0.90×0.95=0.855，(イ)の稼働率は 0.90×0.95×0.95=0.812，(ウ)の稼働率は 0.90×(1－(1－0.95)×(1－0.95))=0.898，(エ)の稼働率は 1－(1－0.95)×(1－ 0.95)=0.998 です．
+第 9 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Người ta gọi những email gây phiền hà cho người nhận như email quảng cáo không được chấp nhận, email có nội dung lừa đảo là thư rác. Thông tin trong danh bạ bị lấy cắp do nhiễm vi rút sẽ được sử dụng là địa chỉ để gửi thư rác đến.
+問題 III
+会社等の組織で最も重要な情報を持っているサーバコンピュータは，攻撃対象となりやすいです．
+第 9 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Điểm chú ý khi lập password đó là nên tránh những từ hoặc số có ý nghĩa. Thí dụ, nếu đặt là tên mình, tên nghệ sỹ, tên gia đình, bạn bè, người yêu, vật nuôi, số điện thoại, biển số xe, thì chỉ cần biết được cá nhân đó là có thể dễ dàng suy đoán được. Ngoài ra, những từ đơn có ghi trong từ điển hoặc những từ ngắn đơn giản thì có thể sử dụng các file từ điển của máy tính và tra cứu ra được bằng cách thử tất cả các chìa khóa (duyệt – trâu)
+問題 III
+ウィルスに感染する危険性があるので， 送り主とタイトルを見て， 自分が知らない人であれば内容を確認するまでもなく削除すればほとんどの場合問題ありません．
+第 10 章練習問題
+解答： (ウ)
+解説： 2GHz の CPU では 1 クロックの時間は 20 億分の 1 秒なので，5 クロックならばその 5 倍となり，5÷2,000,000,000=2.5÷1,000,000,000 秒となります．
+第 10 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Đường dẫn cho dòng điện chạy qua giữa CPU, bộ nhớ trên bo mạch chủ được gọi là bus. Tổ hợp IC điều khiển dữ liệu chạy qua bus và dữ liệu với thiết bị ngoại vi được gọi là tập chip.
+問題 III
+コンピュータは演算装置，制御装置，記憶装置，入力装置，出力装置の 5 要素からなり
+ます．演算装置はコンピュータの頭脳にあたる装置で，計算などの処理を行います．制御装置は記憶装置からデータを読み込み，演算装置の指示に従って，演算結果を記憶装置に書き込んだり， 制御信号を送ったりします． 記憶装置は， 様々なデータを記憶しておく部品です．入力装置はユーザからデータ入力を受け，出力装置は結果をユーザに提示します．
+第 10 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Tần số xung nhịp càng cao thì tốc độ tính toán càng nhanh. Tuy nhiên điều này chỉ đúng trong trường hợp so sánh CPU cùng loại. Nếu là CPU khác tập lệnh thì thế mạnh xử lý khác nhau nên nếu chỉ căn cứ vào tần số xung nhịp thì không thể biết được tốc độ tính toán.
+問題 III
+ハードディスクの内部では，磁性体を塗った何枚かの金属の円板が 1 分間に数千回転の高速で常に回転しています．円板の円周に直交する方向に動くアームの先端には，ヘッドが取り付けられます．
+第 11 章練習問題
+解答： (エ)
+解説：  この条件は， 他のスイッチの状態にかかわらず， 一方のスイッチだけで照明の
+on と off を制御できるということを述べています．すなわち，下の階のスイッチ X を 0 か
+1 に操作できる場所にいるとき，上の階のスイッチ Y が Y=0 でも，Y=1 でも，照明の状態を変更でき，その逆も可能なことを意味します．入力 X，Y の組み合わせに対する出力は， (ア)が図 68 の U，(イ)が図 68 の V，(エ)が図 68 の W です．(ウ)は図 68 の Z の 0 と 1
+を入れ替えたものになります． この中で， 他のスイッチの状態によらずに照明を制御できるのは図 68 のW だけになります．
+第 11 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Đi ốt có cấu tạo bởi 2 loại vất chất là dương và âm được dán với nhau. Vật chất âm
+[Heading4] trong trạng thái dư thừa điện tích, vật chất dương trong trạng thái thiếu điện tích, nên điện tích dễ di chuyển từ n sang p, dòng điện chạy theo chiều ngược lại với chiều di chuyển của điện tích, và nó chỉ chạy được một chiều.
+問題 III
+コンピュータのハードウェアは，0 と 1 の 2 値の論理を扱う論理回路を基本として構成されています．その 1 つに OR 回路があります．OR 回路とはスイッチが並列に並んだ回路としてモデル化されます．スイッチ X か Y のどちらかを on にすれば電球 Z が on になります．
+第 11 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] IC là phân tử lô gic của thế hệ 3 được dịch ra là mạch tích hợp, là mạch trong đó
+[Heading4] có khoảng 10 đèn bán dẫn trong một gói tin, về nguyên lý thì không khác so với thế hệ thứ hai.
+問題 III
+CPU の動作原理は，電子式計算機の登場以前に数学的な概念として提唱されたチューリングマシンに基づいています．
+第 12 章練習問題
+解答： (エ)
+解説： 2 進数の 1.101 は 0 桁目，-1 桁目，-3 桁目が 1 なので，20+2-1+2-3=1 + 1/2 + 1/8=1+0.5+0.125=1.625 となります．
+第 12 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Máy vi tính xử lý thông tin bằng hai trạng thái on và off. Con số phù hợp để biểu thị hai trạng thái này là hệ nhị phân. Con số thông thường chúng ta sử dụng là hệ số thập phân, sử dụng mười ký hiệu khác nhau từ 0 đến 9, đến khi hết ký hiệu thì tiếp tục tăng thêm một chữ số.
+問題 III
+実数の場合，注意しなければいけないことがあります．たとえば 10 進数の 0.1 という数字を考えてみましょう．上記の方法で計算していくと，図 12.5 のように 0.4 から下は，同じ計算の繰り返しになります．つまり，10 進数の 0.1 は 2 進数では 0.00011001100110011
+…となり，無限に続くことになってしまいます．
+第 12 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Chúng ta cũng có thể biểu hiện phép tính nhân và phép tính chia bằng phép tính
+[Heading4] cộng. Thí dụ trường hợp thực hiện phép tính 5 x 3, 5 biểu diễn bởi hệ nhị phân là 101, 3 biểu diễn bởi hệ nhị phân là 11, nên nếu chúng ta viết 101 ở chữ số là 1 và cộng như khi chúng ta viết phép tính ra thì sẽ được 1111 là số 15 trong hệ thập phân, và với cách như vậy chúng ta có thể thực hiện được phép nhân.
+問題 III
+引き算の実現には引き回路を新たに作るのではなく，数字を負の実現にすることで足し算回路に帰着しています．負の表現は単純で，最初の桁を通常の数字と解釈せずに，符号を表すものと解釈します．
+第 13 章練習問題
+解答： (ウ)
+解説：  日本語 700 文字は 1,400 バイトに相当するので，4.7×1,000,000,000 バイトの
+DVD-R では 4.7×1,000,000,000÷1,400=3,357,143 ページとなります．
+第 13 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Chính phủ Việt Nam xác định phát triển nguồn nhân lực về cả số lượng và chất lượng là điều kiện then chốt cho sự thành công của công nghệ phần mềm, bản thân các doanh nghiệp cũng tập trung đào tạo nhân lực; mở rộng sản xuất. Chính phủ Việt Nam đã quyết định chi 70 triệu USD cho công nghệ phần mềm giai đoạn đến 2010, phấn đấu tốc độ tăng trưởng đạt 35% - 40%/năm; doanh thu đạt 800 triệu USD, trong đó 40% là xuất khẩu. Đồng thời, chính phủ cũng đặt mục tiêu đến năm 2010, VN sẽ đứng trong tốp 15 quốc gia gia công phần mềm và dịch vụ hấp dẫn nhất thế giới.
+第 13 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Khi nói tới thông tin nhiều hay ít thì sẽ có những phán đoán chủ quan tùy theo thông
+[Heading4] tin đó có tác dụng hay không với người nói. Trong lĩnh vực xử lý thông tin, người ta đo lượng thông tin một cách khách quan chứ không có phán đoán chủ quan.
+問題 III
+コンピュータのデータには 0 と 1 の並びで表現された数字があるだけで，文字そのもの
+が記録されているわけではありません． したがって， データをどのように解釈するかで表示される文字が異なってきます．
+第 14 章練習問題
+解答： (イ)
+解説： 通常，ディスプレイの物理的な解像度と表示解像度は一致しますが，ユーザが低い解像度に設定することができます．この例では，物理的な画素を複数使って 1 つの画
+素を表示しているので文字が大きくなり， 画像は元よりも少ない部分しか表示できなくなります．動画再生速度は主に表示解像度に依存するので大きな影響はありません．解像度を上げたときには表示色が減少する場合もありますが，解像度を下げても減少しません．
+第 14 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] MIDI là mã đặc thù cho âm nhạc, trường hợp là âm thanh thông thường thì không thể mã hóa thành nốt nhạc.
+問題 III
+MP3 プレーヤで聴く音楽やハードディスクレコーダで見る映像はデジタル化されて記
+録されています．
+第 14 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Người ta trình chiếu truyện tranh động bằng cách chiếu liên tiếp với tốc độ cao các hình ảnh khác nhau.
+問題 III
+パソコンや携帯電話の液晶画面では赤，緑，青の 3 色の小さな短冊が集まっています．
+第 15 章練習問題
+解答： (イ)
+解説： もとの表現法の"BBBBB BWWWW BBBBW BWWWW BWWWW"は 25 文字です． これを， 連続数を使ったランレングス表記で表すと"B6W4B4WBW4BW4" となり， 13 文字に圧縮されます．したがって，圧縮率は，13÷25=52.0%となります．
+第 15 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Khi xem trang chủ, tốc độ nhanh chậm mà ta cảm nhận được là rất khác nhau khi kết nối từ nhà riêng và kết nối từ bên ngoài như tại các điểm truy cập… Tốc độ nhanh chậm của đường truyền như thế có thể được thể hiện bằng con số một cách khách quan.
+問題 III
+データを圧縮するためには，圧縮ソフトを使います． 圧縮方式に応じて圧縮後のファイル名の拡張子はzip，lzh，gz などになります．
+第 15 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Trong khi truyền dữ liệu sẽ phát sinh nhiễu do sóng điện của các thiết bị thông tin khác, sự tiếp nối không tốt của các đầu nối, sự tắt mở của các sản phẩm điện tử, sấm sét…, các sai lệch trở nên nhiều hơn nếu có sự tiếp nhận mạnh mẽ những ảnh hưởng này.
+問題 III
+誤り検出・訂正機構の中で， 最も単純で基本的なのがパリティチェックによる誤り検出です．
+第 16 章練習問題
+解答： (イ)
+解説： 一般に， OS が異なると使い勝手も変わり， 標準で使われる文字コードも変わるので， アプリケーションの側で対応する必要があります． ( エ) のソースコードとは， プ
+ログラム作成者による命令の記述であり， ソースコードからコンピュータが実行するための実行ファイルが作成されます． OS は重要な知的財産であり， Linux などの一部を除い
+てソースコードは公開されません．
+第 16 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Trước khi OS được lắp đặt vào máy tính, các phần mềm ứng dụng được sản xuất ứng theo từng hãng sản xuất phần cứng. Ngoài ra, các phần cứng như chuột, bàn phím… cũng được nghiên cứu phát triển bởi các hãng. Nhờ OS mà chúng được đồng nhất để sử dụng, nên cải thiện được hiệu quả của việc phát triển sản phẩm. Chỉ cần OS đạt tiêu chuẩn đã quy định thì dù là phần cứng, phần mềm của hãng nào cũng có thể sử dụng bình thường mà không gặp vấn đề trở ngại gì.
+問題 III
+Windows ， MacOS ， Linux などのソフトウェアは， オペレーティングシステム， または略して OS と呼ばれます． OS はソフトウェアの一種ですが，ワープロや表計算などの
+アプリケーションソフトと， ハードウェアとの中間的な位置付けになります． このため日本語では基本ソフトと呼ばれることもあります．
+第 16 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] OS không chỉ được cài đặt trong máy tính cá nhân mà còn được cài đặt trong các đồ điện tử gia dụng như máy nghe nhạc, bản đồ điện tử trong xe hơi, thiết bị chơi game…Phần mềm dùng cho đồ điện gia dụng vốn được nghiên cứu sản xuất riêng cho từng loại sản phẩm, nhưng nhờ lắp đặt OS mà thời gian nghiên cứu sản xuất được rút ngắn.
+問題 III
+複数のプログラムが同時に動くように管理することをマルチタスクと呼んでいます．
+第 17 章練習問題
+解答： (エ)
+解説： 結合した結果には，「社員番号」「社員名」「年齢」という他の表にない項目が入っているので，"社員"表には必要です．「部署名」と「都道府県名」に関しては，それぞれ， " 部署" 表，" 都道府県" 表から抽出できるので， 抽出のためのフィールドとして「部署コー
+ド」「都道府県コード」も必要になります．
+第 17 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Việc đặt vé xem hòa nhạc hoặc vé tàu điện có chỉ định sẵn chỗ ngồi được xử lý bằng máy tính đã kết nối trực tuyến. Để tránh tình trạng đặt trùng chỗ ngồi khi có nhiều người trên toàn quốc cùng tiến hành đặt vé, dữ liệu sẽ được quản lý bởi hệ thống cơ sở
+[Heading4] dữ liệu trên máy tính.
+問題 III
+データベースのデータを表す単位のことをレコードと言い，レコード間の関係を表す代表的な表現法は階層的表現，網的表現，関係的表現の 3 つです．
+第 17 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Loại dạng lưới là loại dữ liệu được sắp xếp theo cấu trúc mẹ con, tìm kiếm dữ liệu bằng cách truy nhập tuần tự cấu trúc này. Có thể xem loại này là loại phân cấp chỉ có 2 cấp.
+問題 III
+集合演算と呼ばれるデータ操作には合併, 共通部分, 差, 直積という 4 つの操作があり
+ます．これらは数学の集合論で一般的に使われる操作の集まりです．
+第 18 章練習問題
+解答： (イ)
+解説： "仕入明細"表に新しい伝票のレコードを入力するためには，「商品コード」が必要になるので，新しい商品の場合，事前に"商品"表に商品のレコードを追加しておく必要
+があります． また， 商品のレコードを追加するためには「業者コード」が必要になるので，新しい業者の場合，事前に"業者"表に業者のレコードを追加しておかなければなりません．
+第 18 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] SQL là viết tắt của các chữ cái đầu Structured Query Language, dịch ra là ngôn ngữ hỏi đáp có cấu trúc. Đó là một tập hợp các lệnh để thao tác cơ sở dữ liệu, mà cơ bản là cơ sở dữ liệu quan hệ.
+問題 III
+Microsoft の Access を始め，多くのデータベースソフトウェアは関係データベースを基本としているため， SQL 形式でファイルを保存したり， 操作したりすることができます．なお，無償で使える SQL には，MySQL というソフトがあります．
+第 18 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Để sắp xếp kết quả của phép chiếu, người ta dùng thuật ngữ ORDER BY. Viết ASC đối với trường hợp sắp xếp theo kiểu tăng dần, DESC đối với trường hợp giảm dần. ASC là viết tắt của từ Ascend (tăng lên), DESC là descend (giảm xuống).
+問題 III
+条件の部分には AND や OR で複雑な条件を書くことができます．
+第 19 章練習問題
+解答： (ウ)
+解説： (ア)は HTML や XML など，(イ)は Fortran や C など，(エ)は COBOL などが
+該当します．
+第 19 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Trong các phần mềm của máy tính có các phần mềm như word, tính toán bảng biểu… Những phần mềm này được viết bởi tập lệnh gọi là chương trình. Các yếu tố cơ bản của chương trình tương đối đơn giản, bằng việc kết hợp một cách logic các yếu tố đơn giản đó mà người ta có thể thực hiện được các công việc phức tạp.
+問題 III
+プログラミング言語とは， コンピュータに対する命令記述の集まりであって， 人工的な文法規則を持ちます．たとえば，SQL もプログラミング言語の 1 つと考えられます．
+第 19 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Ngoài bốn phép tính cộng trừ nhân chia, một chức năng quan trọng nhất của một chương trình đó là phán đoán điều kiện. Dù nói là phán đoán điều kiện, nhưng không phải là có thể phán đoán các điều kiện phức tạp, mà chỉ giới hạn ở phán đán đơn giản xem là thật hay giả, cụ thể là bằng hay không bằng, phán đoán quan hệ lớn bé.
+問題 III
+手続型の言語では，単純な文法で手順を記述しますが，一度作成したプログラムの再利用を容易にするためにオブジェクト指向という概念が考案されました．
+第 20 章練習問題
+解答： (イ)
+解説： (1)で x = 2， y = 3 に，(2)で x = 2,y = y-1 = 3-1 = 2 に，(3)で x = x+y = 2+2
+= 4, y = 2 になり，(4)で条件判断をすると y は 1 でないので，再び(2)に戻ります．
+2 回目の(2)で x = 4, y = y-1 = 2-1 = 1 に, (3)で x = x+y = 4+1 = 5, y = 1 になり，(4)で条件判断すると y = 1 なので処理は終了し，このときの x の値は 5 となります．
+第 20 章ミニテスト 1
+問題 I
+問題 II
+[Heading4] Giải thuật phải được xem xét cho từng vấn đề, tuy nhiên đối với vấn đề quan trọng, thường gặp thì người ta đề xuất ra giải thuật hữu hiệu. Tiêu biểu cho vấn đề thường được sử dụng là sorting (phân loại)
+問題 III
+プログラムの基本的な処理の手順をアルゴリズムと言います． アルゴリズムの目的は入力，出力，処理手順を明確にすることです．
+第 20 章ミニテスト 2
+問題 I
+問題 II
+[Heading4] Khi xây dựng một chương trình mới, cùng với việc xử lý nội bộ hiệu quả, yếu tố quan trọng phải tính tới đó là giao diện người máy. Giao diện người máy hay còn gọi là giao diện người dùng là việc dùng tùy ý máy móc như là máy vi tính đối với người sử dụng.
+問題 III
+一般に， ヒューマンインタフェースの設計は， アルゴリズム検討時では十分に行えないことが多く， 試作プログラムを作ってみて問題点を修正していくというやり方になります．このように試行錯誤を前提に設計していくことをプロトタイピングと呼びます．

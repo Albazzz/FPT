@@ -1,0 +1,522 @@
+[
+  {
+    "qv": "スカベンジングといって、残された個人情報を(…)する犯罪もあります。",
+    "cv": [
+      "A. Quản lý",
+      "B. Thu thập",
+      "C. Xóa bỏ",
+      "D. Sắp xếp"
+    ],
+    "why": "✓ Chọn B — Thu thập Lý do: スカベンジングは残された個人情報を「収集」する犯罪です（§7.5）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: Quản lý | C sai/không khớp: Xóa bỏ | D sai/không khớp: Sắp xếp"
+  },
+  {
+    "qv": "[Chuyên môn] (…)は、データのアクセス速度が最も高速です。",
+    "cv": [
+      "A. Bộ nhớ đệm)",
+      "B. メモリ (Bộ nhớ RAM)",
+      "C. ハードディスク (Ổ đĩa cứng)",
+      "D. ラム (RAM)"
+    ],
+    "why": "✓ Chọn A — Bộ nhớ đệm) Lý do: キャッシュ（Cache）はCPUに最も近く、アクセス速度が最も高速な記憶装置です（§10）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: B sai/không khớp: メモリ (Bộ nhớ RAM) | C sai/không khớp: ハードディスク (Ổ đĩa cứng) | D sai/không khớp: ラム (RAM)"
+  },
+  {
+    "qv": "アルファベット1文字の情報量はどうなりますか。",
+    "cv": [
+      "A. 8 bit = 1 byte",
+      "B. 16 bit = 2 byte",
+      "C. 8 bit = 2 byte",
+      "D. 16 bit = 1 byte"
+    ],
+    "why": "✓ Chọn A — 8 bit = 1 byte Lý do: アルファベット1文字は8 bit = 1 byteです（256種類 = 2⁸）（§13.3）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: B sai/không khớp: 16 bit = 2 byte | C sai/không khớp: 8 bit = 2 byte | D sai/không khớp: 16 bit = 1 byte"
+  },
+  {
+    "qv": "[Thuật ngữ] Hãy chuyển sang tiếng Nhật: Điện lưu",
+    "cv": [
+      "A. Điện tích",
+      "B. Điện lực",
+      "C. Điện cực",
+      "D. Dòng điện"
+    ],
+    "why": "✓ Chọn D — Dòng điện Lý do: Điện lưu（ジエン・ルウ）は電流（でんりゅう）です（§4）。 Đây là câu đối chiếu thuật ngữ JP ↔ VI: phải khớp đúng nghĩa chuyên ngành, không chọn từ gần nghĩa. So với lựa chọn khác: A sai/không khớp: Điện tích | B sai/không khớp: Điện lực | C sai/không khớp: Điện cực"
+  },
+  {
+    "qv": "使われる論理素子によって何世代に分けられるか。",
+    "cv": [
+      "A. 3",
+      "B. 5",
+      "C. 2",
+      "D. 4"
+    ],
+    "why": "✓ Chọn D — 4 Lý do: 論理素子によってコンピュータは4世代（真空管→トランジスタ→IC→LSI）に分けられます（§11.2）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: 3 | B sai/không khớp: 5 | C sai/không khớp: 2"
+  },
+  {
+    "qv": "[Chuyên môn] データベースの表現法「データを親、子、孫のような階層構造に並べ、最上位の親からたどることによって検索する表現法です」とはどれですか。",
+    "cv": [
+      "A. biểu diễn quan hệ (bảng)",
+      "B. biểu diễn dạng lưới",
+      "C. 親子的表現",
+      "D. biểu diễn phân cấp (cây)"
+    ],
+    "why": "✓ Chọn D — biểu diễn phân cấp (cây) Lý do: これは階層的表現（木構造）の定義です。Chương 17.2 データベースの表現法より（§17.2）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: biểu diễn quan hệ (bảng) | B sai/không khớp: biểu diễn dạng lưới | C sai/không khớp: 親子的表現"
+  },
+  {
+    "qv": "大量のデータを扱うために、何が重要ですか。",
+    "cv": [
+      "A. tốc độ khi tìm kiếm",
+      "B. 検索時間",
+      "C. データ操作の時間",
+      "D. データ量"
+    ],
+    "why": "✓ Chọn A — tốc độ khi tìm kiếm Lý do: 大量データを扱うためには検索時の速度が最も重要です（§17.1）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: B sai/không khớp: 検索時間 | C sai/không khớp: データ操作の時間 | D sai/không khớp: データ量"
+  },
+  {
+    "qv": "[Chuyên môn] 「.com」のように種別だけで国名がないのはどの国のドメイン名ですか。",
+    "cv": [
+      "A. アメリカ",
+      "B. 日本",
+      "C. オーストラリア",
+      "D. ベトナム"
+    ],
+    "why": "✓ Chọn A — アメリカ Lý do: 「.com」のように国名がないドメイン名はアメリカのドメイン名です（§6.2）。 Đây là câu chọn phát biểu ĐÚNG: chỉ có đáp án này khớp định nghĩa/kiến thức trong giáo trình. So với lựa chọn khác: B sai/không khớp: 日本 | C sai/không khớp: オーストラリア | D sai/không khớp: ベトナム"
+  },
+  {
+    "qv": "[Chuyên môn] HTMLとは;Hyper Text Markup Languageの略で、文字の(…)、音、ファイルへのリンクなどが記述できます。",
+    "cv": [
+      "A. 種類・配置・画像・動画",
+      "B. 種類・機器・画像・動画",
+      "C. 種類・配置・転送・動画",
+      "D. 種類・配置・画像・装置"
+    ],
+    "why": "✓ Chọn A — 種類・配置・画像・動画 Lý do: HTMLは文字の種類・配置・画像・動画・音・ファイルへのリンクなどが記述できます（§6.4）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: B sai/không khớp: 種類・機器・画像・動画 | C sai/không khớp: 種類・配置・転送・動画 | D sai/không khớp: 種類・配置・画像・装置"
+  },
+  {
+    "qv": "Web2.0 là gì?",
+    "cv": [
+      "A. kiểu hai chiều ホームページ",
+      "B. một chiềuなアドレス",
+      "C. kiểu hai chiều アドレス",
+      "D. 一方向的なホームページ"
+    ],
+    "why": "✓ Chọn A — kiểu hai chiều ホームページ Lý do: Web 2.0は双方向型のホームページ（誰もが情報発信できる）のことです（§2.2）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: B sai/không khớp: một chiềuなアドレス | C sai/không khớp: kiểu hai chiều アドレス | D sai/không khớp: 一方向的なホームページ"
+  },
+  {
+    "qv": "[Chuyên môn] 「マウスやキーボードの操作の仕方、ウィンドウの見え方、ファイルの扱い方などを決定します」はOS機能の何の内容を指しますか。",
+    "cv": [
+      "A. ソフトとハードの仲介",
+      "B. ユーザquản lý",
+      "C. giao diện người dùng (UI)",
+      "D. プロセスquản lý"
+    ],
+    "why": "✓ Chọn C — giao diện người dùng (UI) Lý do: ユーザインタフェース機能はマウス・キーボード・ウィンドウ操作を決定するOS機能です（§10.6）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: ソフトとハードの仲介 | B sai/không khớp: ユーザquản lý | D sai/không khớp: プロセスquản lý"
+  },
+  {
+    "qv": "[Chuyên môn] CPUの動作原理は何に基づいていますか。",
+    "cv": [
+      "A. máy Turing",
+      "B. ダイオード",
+      "C. オートマトン",
+      "D. bóng bán dẫn (transistor)"
+    ],
+    "why": "✓ Chọn A — máy Turing Lý do: CPUの動作原理はチューリングマシンに基づいています（§11.3）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: B sai/không khớp: ダイオード | C sai/không khớp: オートマトン | D sai/không khớp: bóng bán dẫn (transistor)"
+  },
+  {
+    "qv": "[Thuật ngữ] Hãy chuyển sang tiếng Nhật: Hệ thống xử lý phân tán",
+    "cv": [
+      "A. hệ thống xử lý tập trung",
+      "B. 並列処理システム",
+      "C. hệ thống xử lý phân tán",
+      "D. 独立処理システム"
+    ],
+    "why": "✓ Chọn C — hệ thống xử lý phân tán Lý do: Hệ thống xử lý phân tán（ヘー・トン・スー・リー・ファン・タン）は分散処理システムです（§5.4）。 Đây là câu đối chiếu thuật ngữ JP ↔ VI: phải khớp đúng nghĩa chuyên ngành, không chọn từ gần nghĩa. So với lựa chọn khác: A sai/không khớp: hệ thống xử lý tập trung | B sai/không khớp: 並列処理システム | D sai/không khớp: 独立処理システム"
+  },
+  {
+    "qv": "[Chuyên môn] (…)を圧縮するには、音の波としての性質を使います。",
+    "cv": [
+      "A. thông tin ảnh",
+      "B. 通信情報",
+      "C. 音声",
+      "D. 波長"
+    ],
+    "why": "✓ Chọn C — 音声 Lý do: 音声の圧縮にはフーリエ変換を用い、音の波としての性質（低・高周波）を利用します（§15.3）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: thông tin ảnh | B sai/không khớp: 通信情報 | D sai/không khớp: 波長"
+  },
+  {
+    "qv": "[Chuyên môn] 光ファイバを使って家庭まで高速通信を行うことは何でしょう。",
+    "cv": [
+      "A. CATV",
+      "B. ADSL",
+      "C. FTTH",
+      "D. SDSL"
+    ],
+    "why": "✓ Chọn C — FTTH Lý do: FTTH（Fiber To The Home）は光ファイバを家庭まで引く高速通信方式です（§4.1）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: CATV | B sai/không khớp: ADSL | D sai/không khớp: SDSL"
+  },
+  {
+    "qv": "Hãy chọn phát biểu SAI về nén run-length.",
+    "cv": [
+      "A. 色がいくつ並ぶかを記述する圧縮方式",
+      "B. どの場合でもデータサイズを大幅に削減できる",
+      "C. 最も単純な画像圧縮方式の1つ",
+      "D. 最も複雑な画像圧縮方式の1つ"
+    ],
+    "why": "✓ Chọn B — どの場合でもデータサイズを大幅に削減できる Lý do: ランレングス圧縮は色変化が多い場合かえってデータが増えることがあります（§15）。 Đây là câu chọn phát biểu SAI: đáp án trên là nội dung không đúng; các lựa chọn còn lại là đúng theo giáo trình. So với lựa chọn khác: A đúng/không phải đáp án vì đây không phải phát biểu sai (色がいくつ並ぶかを記述する圧縮方式) | C đúng/không phải đáp án vì đây không phải phát biểu sai (最も単純な画像圧縮方式の1つ) | D đúng/không phải đáp án vì đây không phải phát biểu sai (最も複雑な画像圧縮方式の1つ)"
+  },
+  {
+    "qv": "[Chuyên môn] 音声の波をそのまま電波の波に置き換えて送受信するアナログ通信を特徴としているのは第何世代の携帯電話ですか。",
+    "cv": [
+      "A. điện thoại di động thế hệ 2",
+      "B. 第3.5世代携帯電話",
+      "C. điện thoại di động thế hệ 3",
+      "D. điện thoại di động thế hệ 1"
+    ],
+    "why": "✓ Chọn D — điện thoại di động thế hệ 1 Lý do: 第1世代携帯電話は音声の波をそのまま電波に置き換えるアナログ通信を採用しています（§3.1）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: điện thoại di động thế hệ 2 | B sai/không khớp: 第3.5世代携帯電話 | C sai/không khớp: điện thoại di động thế hệ 3"
+  },
+  {
+    "qv": "[Chuyên môn] EOSについて正しいものはどれですか。",
+    "cv": [
+      "A. ネットワークを使った電子データ交換の標準化のことで、受発注・決済・配送などに用いられます",
+      "B. 文書・図面・取引情報などが扱われます",
+      "C. オンラインの受発注システムのことを言います",
+      "D. 製造業における全製造過程の電子化についての標準化のことを言います"
+    ],
+    "why": "✓ Chọn C — オンラインの受発注システムのことを言います Lý do: EOS（Electronic Ordering System）はオンラインの受発注システムのことです（§7.2）。 Đây là câu chọn phát biểu ĐÚNG: chỉ có đáp án này khớp định nghĩa/kiến thức trong giáo trình. So với lựa chọn khác: A sai/không khớp: ネットワークを使った電子データ交換の標準化のことで、受発注・決済・配送などに用いられます | B sai/không khớp: 文書・図面・取引情報などが扱われます | D sai/không khớp: 製造業における全製造過程の電子化についての標準化のことを言います"
+  },
+  {
+    "qv": "故障以外で問題なのは、(…)による不具合です。",
+    "cv": [
+      "A. ウイルス",
+      "B. プログラム",
+      "C. プログラムミス",
+      "D. OS"
+    ],
+    "why": "✓ Chọn C — プログラムミス Lý do: ハードウェア故障以外で問題になるのはプログラムミスによる不具合です（§9.1）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: ウイルス | B sai/không khớp: プログラム | D sai/không khớp: OS"
+  },
+  {
+    "qv": "MIDI命令はデータ量としては何ビットとなりますか。",
+    "cv": [
+      "A. 16",
+      "B. 8",
+      "C. 1",
+      "D. 2"
+    ],
+    "why": "✓ Chọn B — 8 Lý do: MIDI命令は256種類以内 = 2⁸ = 8 bitです（§14.1）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: 16 | C sai/không khớp: 1 | D sai/không khớp: 2"
+  },
+  {
+    "qv": "[Chuyên môn] Web2.0の大きな特徴は何ですか。",
+    "cv": [
+      "A. シェアウェアがある",
+      "B. キャラクターがある",
+      "C. long tail (đuôi dài) ある",
+      "D. ソースコードがある"
+    ],
+    "why": "✓ Chọn C — long tail (đuôi dài) ある Lý do: Web 2.0の大きな特徴の一つはロングテール（多品種少量販売モデル）です（§2.2）。 Đây là câu chọn phát biểu ĐÚNG: chỉ có đáp án này khớp định nghĩa/kiến thức trong giáo trình. So với lựa chọn khác: A sai/không khớp: シェアウェアがある | B sai/không khớp: キャラクターがある | D sai/không khớp: ソースコードがある"
+  },
+  {
+    "qv": "[Thuật ngữ] Hãy chuyển sang tiếng Nhật: Cấu trúc hình cây",
+    "cv": [
+      "A. 階段構造",
+      "B. 段階構造",
+      "C. 階層構造",
+      "D. 改装構造"
+    ],
+    "why": "✓ Chọn C — 階層構造 Lý do: Cấu trúc hình cây（カウ・チュック・ヒン・カイ）は階層構造（木構造）（かいそうこうぞう）です（§17.2）。 Đây là câu đối chiếu thuật ngữ JP ↔ VI: phải khớp đúng nghĩa chuyên ngành, không chọn từ gần nghĩa. So với lựa chọn khác: A sai/không khớp: 階段構造 | B sai/không khớp: 段階構造 | D sai/không khớp: 改装構造"
+  },
+  {
+    "qv": "ユーザからの入力は何から行えますか。",
+    "cv": [
+      "A. プリンター",
+      "B. 画面",
+      "C. ディスプレイ",
+      "D. キーボードやマウス"
+    ],
+    "why": "✓ Chọn D — キーボードやマウス Lý do: ユーザからの入力はキーボードやマウスなどの入力装置から行えます（§10.1）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: プリンター | B sai/không khớp: 画面 | C sai/không khớp: ディスプレイ"
+  },
+  {
+    "qv": "[Chuyên môn] 「ヒューマンインタフェースの設計は；(…)検討時では十分に行えないことが多く；試作プログラムを作ってみて問題点を修正していくというやり方になります。」",
+    "cv": [
+      "A. アルゴリズム",
+      "B. ソーティング",
+      "C. マージソート",
+      "D. フローチャート"
+    ],
+    "why": "✓ Chọn A — アルゴリズム Lý do: ヒューマンインタフェース設計は「アルゴリズム検討時」では十分に行えないことが多い（§16）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: B sai/không khớp: ソーティング | C sai/không khớp: マージソート | D sai/không khớp: フローチャート"
+  },
+  {
+    "qv": "Hãy chọn phát biểu ĐÚNG về 転置式 mã hóa.",
+    "cv": [
+      "A. 通信者同士が共通に持つ乱数表などを使う",
+      "B. mã hóa bằng cách dịch ký tự đi vài vị trí",
+      "C. mã hóa bằng cách dịch chuyển vị trí ký tự có/không quy luật",
+      "D. 機械 必ず使う"
+    ],
+    "why": "✓ Chọn C — mã hóa bằng cách dịch chuyển vị trí ký tự có/không quy luật Lý do: 転置式暗号は文字の位置（並び順）を変えることで暗号化します（§8.1）。 Đây là câu chọn phát biểu ĐÚNG: chỉ có đáp án này khớp định nghĩa/kiến thức trong giáo trình. So với lựa chọn khác: A sai/không khớp: 通信者同士が共通に持つ乱数表などを使う | B sai/không khớp: mã hóa bằng cách dịch ký tự đi vài vị trí | D sai/không khớp: 機械 必ず使う"
+  },
+  {
+    "qv": "電子式計算機はいつ開発されましたか。",
+    "cv": [
+      "A. năm 1946",
+      "B. 1930năm代",
+      "C. 17世紀",
+      "D. 紀元前"
+    ],
+    "why": "✓ Chọn A — năm 1946 Lý do: 電子式計算機ENIAC（エニアック）は1946年に開発されました（§1.2）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: B sai/không khớp: 1930năm代 | C sai/không khớp: 17世紀 | D sai/không khớp: 紀元前"
+  },
+  {
+    "qv": "[Thuật ngữ] Hãy chuyển sang tiếng Nhật: Thứ tự tăng dần",
+    "cv": [
+      "A. 上順",
+      "B. thứ tự giảm dần",
+      "C. 下順",
+      "D. thứ tự tăng dần"
+    ],
+    "why": "✓ Chọn D — thứ tự tăng dần Lý do: Thứ tự tăng dần（トゥー・トゥー・タン・ダン）は昇順（しょうじゅん）です（§ソート）。 Đây là câu đối chiếu thuật ngữ JP ↔ VI: phải khớp đúng nghĩa chuyên ngành, không chọn từ gần nghĩa. So với lựa chọn khác: A sai/không khớp: 上順 | B sai/không khớp: thứ tự giảm dần | C sai/không khớp: 下順"
+  },
+  {
+    "qv": "Hãy chọn phát biểu SAI về ngôn ngữ cấp thấp.",
+    "cv": [
+      "A. JavaやC++",
+      "B. 汎用性や読みやすさに問題があります",
+      "C. メモリに蓄えられているプログラム",
+      "D. CPUの種類に依存した機械語"
+    ],
+    "why": "✓ Chọn A — JavaやC++ Lý do: JavaやC++は高水準言語（高級言語）です。低級言語はアセンブリ・機械語です（§16）。 Đây là câu chọn phát biểu SAI: đáp án trên là nội dung không đúng; các lựa chọn còn lại là đúng theo giáo trình. So với lựa chọn khác: B đúng/không phải đáp án vì đây không phải phát biểu sai (汎用性や読みやすさに問題があります) | C đúng/không phải đáp án vì đây không phải phát biểu sai (メモリに蓄えられているプログラム) | D đúng/không phải đáp án vì đây không phải phát biểu sai (CPUの種類に依存した機械語)"
+  },
+  {
+    "qv": "長さ、重さ、時間など身の回りの多くの物理量は何ですか。",
+    "cv": [
+      "A. analog時計",
+      "B. digital / số量",
+      "C. digital / số時計",
+      "D. analog量"
+    ],
+    "why": "✓ Chọn D — analog量 Lý do: 長さ・重さ・時間などの身の回りの物理量は連続的なアナログ量です（§1.1）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: analog時計 | B sai/không khớp: digital / số量 | C sai/không khớp: digital / số時計"
+  },
+  {
+    "qv": "Hãy chọn phát biểu SAI.",
+    "cv": [
+      "A. ネットワーク層のIPプロトコルに従って番号が割り当てられている",
+      "B. コンピュータの住所にあたる名前である",
+      "C. 桁数の多い数字の並びである",
+      "D. 覚えやすい"
+    ],
+    "why": "✓ Chọn D — 覚えやすい Lý do: IPアドレスは数字の並びで覚えにくいため、覚えやすいドメイン名が使われます（§6.2）。 Đây là câu chọn phát biểu SAI: đáp án trên là nội dung không đúng; các lựa chọn còn lại là đúng theo giáo trình. So với lựa chọn khác: A đúng/không phải đáp án vì đây không phải phát biểu sai (ネットワーク層のIPプロトコルに従って番号が割り当てられている) | B đúng/không phải đáp án vì đây không phải phát biểu sai (コンピュータの住所にあたる名前である) | C đúng/không phải đáp án vì đây không phải phát biểu sai (桁数の多い数字の並びである)"
+  },
+  {
+    "qv": "[Chuyên môn] 電気機械式はいつ誕生されましたか。",
+    "cv": [
+      "A. 1946",
+      "B. 1930",
+      "C. 1949",
+      "D. 1939"
+    ],
+    "why": "✓ Chọn B — 1930 Lý do: 電気機械式コンピュータは1930年代に誕生しました（§1.2）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: 1946 | C sai/không khớp: 1949 | D sai/không khớp: 1939"
+  },
+  {
+    "qv": "Hãy chọn phát biểu ĐÚNG về hướng đối tượng (OOP).",
+    "cv": [
+      "A. lấy 'vật/object' làm trung tâm",
+      "B. 一度作成したプログラムの再利用は難しい",
+      "C. lấy 'việc/thủ tục' làm trung tâm",
+      "D. 機械語 近いngôn ngữ cấp thấp"
+    ],
+    "why": "✓ Chọn A — lấy 'vật/object' làm trung tâm Lý do: オブジェクト指向は「もの（オブジェクト）」を中心にするプログラミングパラダイムです（§16）。 Đây là câu chọn phát biểu ĐÚNG: chỉ có đáp án này khớp định nghĩa/kiến thức trong giáo trình. So với lựa chọn khác: B sai/không khớp: 一度作成したプログラムの再利用は難しい | C sai/không khớp: lấy 'việc/thủ tục' làm trung tâm | D sai/không khớp: 機械語 近いngôn ngữ cấp thấp"
+  },
+  {
+    "qv": "[Chuyên môn] 暗号化について正しいものを選びなさい。",
+    "cv": [
+      "A. biến đổi để không thể đoán được bản gốc",
+      "B. 与えられた原文に戻さないこと",
+      "C. 与えられた原文が推測できるように変換すること",
+      "D. trả về bản gốc đã cho"
+    ],
+    "why": "✓ Chọn A — biến đổi để không thể đoán được bản gốc Lý do: 暗号化は原文が推測できないように変換することです（§8.1）。 Đây là câu chọn phát biểu ĐÚNG: chỉ có đáp án này khớp định nghĩa/kiến thức trong giáo trình. So với lựa chọn khác: B sai/không khớp: 与えられた原文に戻さないこと | C sai/không khớp: 与えられた原文が推測できるように変換すること | D sai/không khớp: trả về bản gốc đã cho"
+  },
+  {
+    "qv": "PCのOSに関する記述のうち、適切なものはどれか。",
+    "cv": [
+      "A. OSが異なっていてもアプリケーションはOSの種別を意識せずに処理できる",
+      "B. アプリケーションが自由にOSの機能を使えるようにソースコードの公開が義務付けられている",
+      "C. OSはファイルの文字コードを自動変換する機能をもつためアプリは文字コード種別を意識しなくてよい",
+      "D. OSはアプリケーションに対して、CPUやメモリなどのコンピュータ資源を割り当てる"
+    ],
+    "why": "✓ Chọn D — OSはアプリケーションに対して、CPUやメモリなどのコンピュータ資源を割り当てる Lý do: OSはCPU・メモリ・補助記憶装置などのコンピュータ資源をアプリに割り当てます（§10.6）。 Đây là câu chọn phát biểu ĐÚNG: chỉ có đáp án này khớp định nghĩa/kiến thức trong giáo trình. So với lựa chọn khác: A sai/không khớp: OSが異なっていてもアプリケーションはOSの種別を意識せずに処理できる | B sai/không khớp: アプリケーションが自由にOSの機能を使えるようにソースコードの公開が義務付けられている | C sai/không khớp: OSはファイルの文字コードを自動変換する機能をもつためアプリは文字コード種別を意識しなくてよい"
+  },
+  {
+    "qv": "コンピュータのデータは何の並びで表現された数字ですか。",
+    "cv": [
+      "A. 0 1",
+      "B. 00 11",
+      "C. 0 10",
+      "D. 01 10"
+    ],
+    "why": "✓ Chọn A — 0 1 Lý do: コンピュータのデータは全て0と1（2進数）の並びで表現されます（§12）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: B sai/không khớp: 00 11 | C sai/không khớp: 0 10 | D sai/không khớp: 01 10"
+  },
+  {
+    "qv": "JRのSuicaなどで使われているのは何ですか。",
+    "cv": [
+      "A. IrDA",
+      "B. Bluetooth",
+      "C. thẻ IC không tiếp xúc",
+      "D. FTTH"
+    ],
+    "why": "✓ Chọn C — thẻ IC không tiếp xúc Lý do: JRのSuicaは非接触型ICカードを使っています（§4.2）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: IrDA | B sai/không khớp: Bluetooth | D sai/không khớp: FTTH"
+  },
+  {
+    "qv": "quyền sở hữu công nghiệp どんな権?",
+    "cv": [
+      "A. 新規の技術についての権利を保護する権利",
+      "B. 技術の進歩を保護する権利",
+      "C. 製品のデザインについての権利",
+      "D. 工業の進歩を保護する権利"
+    ],
+    "why": "✓ Chọn B — 技術の進歩を保護する権利 Lý do: 工業所有権は技術の進歩を保護する権利です（特許・実用新案・意匠・商標を含む）（§2.5）。 Đây là câu chọn phát biểu ĐÚNG: chỉ có đáp án này khớp định nghĩa/kiến thức trong giáo trình. So với lựa chọn khác: A sai/không khớp: 新規の技術についての権利を保護する権利 | C sai/không khớp: 製品のデザインについての権利 | D sai/không khớp: 工業の進歩を保護する権利"
+  },
+  {
+    "qv": "携帯電話、パソコン、カーナビ、マウス、キーボード、ヘッドホンなどに搭載されている通信規格は何ですか。",
+    "cv": [
+      "A. FTTH",
+      "B. thẻ IC không tiếp xúc",
+      "C. Bluetooth",
+      "D. IrDA"
+    ],
+    "why": "✓ Chọn C — Bluetooth Lý do: Bluetoothは携帯・PC・カーナビ・マウス・キーボード・ヘッドホンなど幅広い機器に使われています（§4.2）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: FTTH | B sai/không khớp: thẻ IC không tiếp xúc | D sai/không khớp: IrDA"
+  },
+  {
+    "qv": "[Chuyên môn] CPUについて正しいものを選びなさい。",
+    "cv": [
+      "A. CPUの中には演算装置機能だけが組み込まれている",
+      "B. điều khiển dữ liệu trên bus và với thiết bị ngoài",
+      "C. linh kiện trung tâm xử lý ある",
+      "D. パソコン内で大きな面積を占めるメインとなる基板のこと"
+    ],
+    "why": "✓ Chọn C — linh kiện trung tâm xử lý ある Lý do: CPUは処理の中心となる部品（チップ）です。マザーボードと混同しないように（§10.6）。 Đây là câu chọn phát biểu ĐÚNG: chỉ có đáp án này khớp định nghĩa/kiến thức trong giáo trình. So với lựa chọn khác: A sai/không khớp: CPUの中には演算装置機能だけが組み込まれている | B sai/không khớp: điều khiển dữ liệu trên bus và với thiết bị ngoài | D sai/không khớp: パソコン内で大きな面積を占めるメインとなる基板のこと"
+  },
+  {
+    "qv": "Hãy chọn phát biểu SAI.",
+    "cv": [
+      "A. 着信メロディのデータは、音楽用のコードと解釈されます",
+      "B. 高音質な楽曲再生が可能です",
+      "C. 高音質な楽曲再生が不可能です",
+      "D. モジュレーションなどにより表現されています"
+    ],
+    "why": "✓ Chọn B — 高音質な楽曲再生が可能です Lý do: 着信メロディ（MIDI形式）は高音質な楽曲再生が不可能です。「可能」は誤り（§14.1）。 Đây là câu chọn phát biểu SAI: đáp án trên là nội dung không đúng; các lựa chọn còn lại là đúng theo giáo trình. So với lựa chọn khác: A đúng/không phải đáp án vì đây không phải phát biểu sai (着信メロディのデータは、音楽用のコードと解釈されます) | C đúng/không phải đáp án vì đây không phải phát biểu sai (高音質な楽曲再生が不可能です) | D đúng/không phải đáp án vì đây không phải phát biểu sai (モジュレーションなどにより表現されています)"
+  },
+  {
+    "qv": "[Thuật ngữ] Hãy chuyển sang tiếng Nhật: Từ khóa",
+    "cv": [
+      "A. khóa chính",
+      "B. từ khóa",
+      "C. khóa ngoại",
+      "D. khóa thay thế"
+    ],
+    "why": "✓ Chọn B — từ khóa Lý do: Từ khóa（トゥー・コア）はキーワードです（§17）。 Đây là câu đối chiếu thuật ngữ JP ↔ VI: phải khớp đúng nghĩa chuyên ngành, không chọn từ gần nghĩa. So với lựa chọn khác: A sai/không khớp: khóa chính | C sai/không khớp: khóa ngoại | D sai/không khớp: khóa thay thế"
+  },
+  {
+    "qv": "[Chuyên môn] (…)とは、インターネット上で提供される各種のサービス・システム・各種のファイルの場所を特定するための記述方式です。",
+    "cv": [
+      "A. DNS",
+      "B. WWW",
+      "C. IP",
+      "D. URL"
+    ],
+    "why": "✓ Chọn D — URL Lý do: URL（Uniform Resource Location）はインターネット上のリソースの場所を特定する記述方式です（§6.2）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: DNS | B sai/không khớp: WWW | C sai/không khớp: IP"
+  },
+  {
+    "qv": "Hãy chọn phát biểu ĐÚNG về điện thoại di động thế hệ 1.",
+    "cv": [
+      "A. 通信速度の高速化",
+      "B. đổi sóng âm thành sóng radio nguyên trạng để gửi/nhận",
+      "C. digital / số方式 採用",
+      "D. データの送受信が可能"
+    ],
+    "why": "✓ Chọn B — đổi sóng âm thành sóng radio nguyên trạng để gửi/nhận Lý do: 第1世代はアナログ通信で、音声の波をそのまま電波に置き換えて送受信します（§3.1）。 Đây là câu chọn phát biểu ĐÚNG: chỉ có đáp án này khớp định nghĩa/kiến thức trong giáo trình. So với lựa chọn khác: A sai/không khớp: 通信速度の高速化 | C sai/không khớp: digital / số方式 採用 | D sai/không khớp: データの送受信が可能"
+  },
+  {
+    "qv": "bản quyền / quyền tác giả về cái đúng là cái nào?",
+    "cv": [
+      "A. 音楽・絵画・小説・映画などの「思想または感情を創作的に表現したもの」です",
+      "B. 機器・衣服・日用品などのデザインについての権利です",
+      "C. 物品の形状・構造・組み合わせに係る「考案」を保護するための権利です",
+      "D. 製品などの名前・ロゴマークなど「商標」についての権利です"
+    ],
+    "why": "✓ Chọn A — 音楽・絵画・小説・映画などの「思想または感情を創作的に表現したもの」です Lý do: 著作権は思想・感情を創作的に表現したもの（文芸・美術・音楽・映画等）を保護します（§2.5）。 Đây là câu chọn phát biểu ĐÚNG: chỉ có đáp án này khớp định nghĩa/kiến thức trong giáo trình. So với lựa chọn khác: B sai/không khớp: 機器・衣服・日用品などのデザインについての権利です | C sai/không khớp: 物品の形状・構造・組み合わせに係る「考案」を保護するための権利です | D sai/không khớp: 製品などの名前・ロゴマークなど「商標」についての権利です"
+  },
+  {
+    "qv": "bản quyền / quyền tác giả 特徴 なん?",
+    "cv": [
+      "A. 手続き 必要",
+      "B. 登録 義務",
+      "C. 創作した時点で自動的に権利が発生",
+      "D. 許可 必要"
+    ],
+    "why": "✓ Chọn C — 創作した時点で自動的に権利が発生 Lý do: 著作権は創作した時点で自動的に権利が発生します（無方式主義）（§2.5）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: 手続き 必要 | B sai/không khớp: 登録 義務 | D sai/không khớp: 許可 必要"
+  },
+  {
+    "qv": "2つ以上の処理装置が、メモリを共有せずに、それぞれ独立したメモリを持って並列処理を行う方式は何でしょう。",
+    "cv": [
+      "A. 分散処理",
+      "B. 集中処理",
+      "C. multiprocessor liên kết chặt (chia sẻ bộ nhớ)",
+      "D. multiprocessor liên kết lỏng (bộ nhớ độc lập)"
+    ],
+    "why": "✓ Chọn D — multiprocessor liên kết lỏng (bộ nhớ độc lập) Lý do: 疎結合マルチプロセッサは各処理装置が独立したメモリを持ち、並列処理を行います（§5.4）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: 分散処理 | B sai/không khớp: 集中処理 | C sai/không khớp: multiprocessor liên kết chặt (chia sẻ bộ nhớ)"
+  },
+  {
+    "qv": "インターネットでは、IPアドレス（コンピュータの住所にあたる番号）を使って、相手の(…)を特定します。",
+    "cv": [
+      "A. máy tính",
+      "B. データ",
+      "C. 名前",
+      "D. 住所"
+    ],
+    "why": "✓ Chọn A — máy tính Lý do: IPアドレスを使って相手の「コンピュータ」の場所を特定します（§6.2）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: B sai/không khớp: データ | C sai/không khớp: 名前 | D sai/không khớp: 住所"
+  },
+  {
+    "qv": "[Thuật ngữ] Hãy chuyển sang tiếng Nhật: Cơ sở dữ liệu quan hệ",
+    "cv": [
+      "A. cơ sở dữ liệu quan hệ",
+      "B. 相関データベース",
+      "C. 関連データベース",
+      "D. 関心データベース"
+    ],
+    "why": "✓ Chọn A — cơ sở dữ liệu quan hệ Lý do: Cơ sở dữ liệu quan hệ は関係データベース（かんけいデータベース）です（§17.2）。 Đây là câu đối chiếu thuật ngữ JP ↔ VI: phải khớp đúng nghĩa chuyên ngành, không chọn từ gần nghĩa. So với lựa chọn khác: B sai/không khớp: 相関データベース | C sai/không khớp: 関連データベース | D sai/không khớp: 関心データベース"
+  },
+  {
+    "qv": "[Thuật ngữ] Hãy chuyển sang tiếng Nhật: Nén dữ liệu",
+    "cv": [
+      "A. データ集計",
+      "B. nén dữ liệu",
+      "C. データ抽出",
+      "D. データ変換"
+    ],
+    "why": "✓ Chọn B — nén dữ liệu Lý do: Nén dữ liệu（ネン・ズー・リエウ）はデータ圧縮（データあっしゅく）です（§15.2）。 Đây là câu đối chiếu thuật ngữ JP ↔ VI: phải khớp đúng nghĩa chuyên ngành, không chọn từ gần nghĩa. So với lựa chọn khác: A sai/không khớp: データ集計 | C sai/không khớp: データ抽出 | D sai/không khớp: データ変換"
+  },
+  {
+    "qv": "[Thuật ngữ] Hãy chuyển sang tiếng Việt: 高水準言語",
+    "cv": [
+      "A. Ngôn ngữ bậc thấp",
+      "B. Ngôn ngữ máy",
+      "C. Ngôn ngữ tự nhiên",
+      "D. Ngôn ngữ bậc cao"
+    ],
+    "why": "✓ Chọn D — Ngôn ngữ bậc cao Lý do: 高水準言語はNgôn ngữ bậc cao（ゴン・グー・バック・カオ）です（§16）。 Đây là câu đối chiếu thuật ngữ JP ↔ VI: phải khớp đúng nghĩa chuyên ngành, không chọn từ gần nghĩa. So với lựa chọn khác: A sai/không khớp: Ngôn ngữ bậc thấp | B sai/không khớp: Ngôn ngữ máy | C sai/không khớp: Ngôn ngữ tự nhiên"
+  },
+  {
+    "qv": "Hãy chọn phát biểu SAI.",
+    "cv": [
+      "A. ソーシャルネットワーキングサービス（SNS）の普及",
+      "B. ユーザ自身がコンテンツを作成・共有する",
+      "C. người gửi và người nhận thông tin bị cố định",
+      "D. ブログやウィキ（Wiki）などの活用"
+    ],
+    "why": "✓ Chọn C — người gửi và người nhận thông tin bị cố định Lý do: Web 2.0は双方向なので、情報の送り手と受け手は固定されていません（§2.2）。 Đây là câu chọn phát biểu SAI: đáp án trên là nội dung không đúng; các lựa chọn còn lại là đúng theo giáo trình. So với lựa chọn khác: A đúng/không phải đáp án vì đây không phải phát biểu sai (ソーシャルネットワーキングサービス（SNS）の普及) | B đúng/không phải đáp án vì đây không phải phát biểu sai (ユーザ自身がコンテンツを作成・共有する) | D đúng/không phải đáp án vì đây không phải phát biểu sai (ブログやウィキ（Wiki）などの活用)"
+  },
+  {
+    "qv": "[Chuyên môn] 1文字を表現するために、16ビット（2バイト）のデータ量を使用する文字コードは何ですか。",
+    "cv": [
+      "A. ASCIIコード",
+      "B. Unicode",
+      "C. シフトJISコード",
+      "D. EUC"
+    ],
+    "why": "✓ Chọn B — Unicode Lý do: Unicode（ユニコード）は1文字を16ビット（2バイト）で表現する文字コードです（§13.5）。 Khớp kiến thức giáo trình (định nghĩa, số liệu, hoặc thuật ngữ chuẩn). So với lựa chọn khác: A sai/không khớp: ASCIIコード | C sai/không khớp: シフトJISコード | D sai/không khớp: EUC"
+  }
+]

@@ -1,0 +1,71 @@
+/* Hub page extras — extends css/app.css + css/study-site.css */
+
+.hub-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+}
+
+.hub-icon {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.hub-icon--jit {
+  color: #0b6bcb;
+  background: rgba(47, 124, 246, 0.12);
+}
+
+.hub-icon--mln {
+  color: #6d28d9;
+  background: rgba(124, 58, 237, 0.12);
+}
+
+.hub-icon--fe {
+  color: #0f766e;
+  background: rgba(31, 157, 99, 0.12);
+}
+
+.home-card .meta {
+  margin-top: 2px;
+}
+
+.home-card .card-actions {
+  margin-top: auto;
+}
+
+.home-card .card-actions .btn {
+  width: 100%;
+}
+
+.hub-footer {
+  padding: var(--sp-8) 0 var(--sp-10);
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.hub-footer strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.05em 0.35em;
+  color: var(--text);
+}
+
+@media (max-width: 640px) {
+  .hub-card-top {
+    flex-wrap: wrap;
+  }
+}

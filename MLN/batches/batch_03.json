@@ -1,0 +1,482 @@
+[
+  {
+    "id": 121,
+    "question": "Đến nay thế giới trải qua bao nhiều cuộc cách mạng công nghiệp?",
+    "options": {
+      "A": "Ba cuộc cách mạng công nghiệp",
+      "B": "Bốn cuộc cách mạng công nghiệp",
+      "C": "Năm cuộc cách mạng công nghiệp",
+      "D": "Hai cuộc cách mạng công nghiệp"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 122,
+    "question": "Những yếu tố cốt lõi của kỹ thuật số trong cách mạng công nghiệp lần thứ 4 là: (chọn 3 phương án)",
+    "options": {
+      "A": "Công nghệ 3D",
+      "B": "Dữ liệu lớn (Big data)",
+      "C": "Công nghệ sinh học",
+      "D": "Vạn vật kết nối (loT)",
+      "E": "Trí tuệ nhân tạo (AI)"
+    },
+    "answer": "B",
+    "answers": [
+      "B",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "id": 123,
+    "question": "Cách mạng công nghiệp lần thứ 3 còn được gọi là:",
+    "options": {
+      "A": "Cách mạng vô tuyến",
+      "B": "Cách mạng điện tử",
+      "C": "Cách mạng sinh học",
+      "D": "Cách mạng máy tính"
+    },
+    "answer": "D",
+    "answers": null
+  },
+  {
+    "id": 124,
+    "question": "Đối tượng nghiên cứu của kinh tế chính trị Mác - Lênin được hiểu là",
+    "options": {
+      "A": "Những biểu hiện vật chất của lực lượng sản xuất",
+      "B": "Các quan hệ giữa cơ sở hạ tầng và kiến trúc thượng tầng",
+      "C": "Các quan hệ giữa lực lượng sản xuất và quan hệ sản xuất",
+      "D": "Các quan hệ xã hội của sản xuất và trao đổi"
+    },
+    "answer": "D",
+    "answers": null
+  },
+  {
+    "id": 125,
+    "question": "Giải thích: Đối tượng nghiên cứu của kinh tế chính trị Mác – Lênin các quan hệ sản xuất và trao đổi trong mối quan hệ biện chứngvới lực lượng sản xuất và kiến trúc thượng tầng.) Đối tượng nghiên cứu của kinh tế chính trị Mác - Lênin là gì?",
+    "options": {
+      "A": "Nghiên cứu các quan hệ sản xuất trong các khâu của quá trình tái sản xuất xã hội: sản xuất -phân phối - trao đối -tiêu dùng",
+      "B": "Nghiên cứu các quan hệ sản xuất trong các khâu của quá trình tái sản xuất xã hội: sản xuất- trao đối - phân phối -tiêu dùng",
+      "C": "Nghiên cứu các quan hệ sản xuất trong các khâu của quá trình sản xuất xã hội: sản xuất- trao đối- tiêu dùng",
+      "D": "Nghiên cứu các quan hệ sản xuất trong các khâu của quá trình sản xuất xã hội: mua - bán"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 126,
+    "question": "Đâu KHÔNG phải là chức năng chính của kinh tế chính trị Mác - Lênin?",
+    "options": {
+      "A": "Chức năng phương pháp luận",
+      "B": "Chức năng tư tưởng",
+      "C": "Chức năng nhận thức",
+      "D": "Chức năng giáo dục"
+    },
+    "answer": "D",
+    "answers": null
+  },
+  {
+    "id": 127,
+    "question": "Kiểu trả lời khác: Chức năng khoa học) Việc đẩy mạnh ứng dụng khoa học - công nghệ ở nước ta hiện nay phải gắn liền với yếu tố nào sau đây",
+    "options": {
+      "A": "Phát triển công nghiệp nặng",
+      "B": "Phát triển sản xuất công nghệ cao",
+      "C": "Phát triển kinh tế tri thức",
+      "D": "Phát triển công nghiệp nhẹ"
+    },
+    "answer": "C",
+    "answers": null
+  },
+  {
+    "id": 128,
+    "question": "Chức năng tiền tệ là",
+    "options": {
+      "A": "Phương tiện lưu thông, phương tiện thanh toán; phương tiện mua bán; tiền tệ thế giới, thước đo giá trị",
+      "B": "Phương tiện lưu thông, phương tiện thanh toán; phương tiện cất trữ; tiền tệ thế giới, thước đo giá trị",
+      "C": "Phương tiện lưu thông, phương tiện trao đổi, phương tiện cất trữ; tiền tệ, thước đo giá trị",
+      "D": "Phương tiện lưu thông, phương tiện thanh toán. phương tiện cất trữ, thước đo giá trị"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 129,
+    "question": "Ai là người được Mác coi là sáng lập ra kinh tế chính trị tư sản cổ điển?",
+    "options": {
+      "A": "Thomas Mun",
+      "B": "David Ricardo",
+      "C": "Adam Smith",
+      "D": "William Petty"
+    },
+    "answer": "D",
+    "answers": null
+  },
+  {
+    "id": 130,
+    "question": "Nền kinh tế hàng hoá có thể hình thành và phát triển khi có các điều kiện nào?",
+    "options": {
+      "A": "Phân công lao động xã hội và sự tách biệt về mặt kinh tế của các chủ thể sản xuất.",
+      "B": "Sự tách biệt về mặt kinh tế của các chủ thể sản xuất",
+      "C": "Của cải dư thừa",
+      "D": "Khi có chế độ tư hữu xuất hiện"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 131,
+    "question": "Theo C. Mác, hàng hoá là sản phẩm lao động được sản xuất ra nhằm mục đích gì?",
+    "options": {
+      "A": "Trao đổi và mua bán",
+      "B": "Tiêu dùng",
+      "C": "Kiếm lợi nhuận",
+      "D": "Tặng và biểu"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 132,
+    "question": "Theo C.Mác, khối lượng giá trị thặng dư là gì?",
+    "options": {
+      "A": "Giá trị của hàng hoá",
+      "B": "Lượng giá trị thặng dư bằng tiền mà nhà tư bản thu được",
+      "C": "Lượng giá trị mà trong toàn bộ quá trình lưu thông thu được",
+      "D": "Giá trị sức lao động"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 133,
+    "question": "Để tiền biến thành tư bản cần?",
+    "options": {
+      "A": "Phải tích lũy một lượng tiền lớn; tiền cần phải được đưa vào kinh doanh tư bản với mục đích thu giá trị thặng dư",
+      "B": "Phải tích lũy được một lượng hàng hóa lớn, hàng hóa cần phải được đưa vào kinh doanh tư bản với mục đích thu giá trị thặng dư",
+      "C": "Phải tích lũy một lượng tiền lớn",
+      "D": "Phải tích lũy được một lượng máy móc lớn, máy móc cần phải được đưa vào kinh doanh tư bản với mục đích thu giá trị thặng dư"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 134,
+    "question": "Vai trò của máy móc trong quá trình tạo ra giá trị thặng dư, chọn ý đúng.",
+    "options": {
+      "A": "Máy móc là tiền đề vật chất cho việc tạo ra giá trị thặng dư",
+      "B": "Máy móc và sức lao động đều tạo ra giá trị thặng dư",
+      "C": "Máy móc là nguồn gốc của giá trị thặng dư"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 135,
+    "question": "Mỗi cuộc cách mạng công nghiệp xuất hiện đều có sự phát triển nhảy vọt về:",
+    "options": {
+      "A": "Tư liệu lao động",
+      "B": "Các phát minh sáng chế",
+      "C": "Tư liệu sinh hoạt",
+      "D": "Tư liệu tiêu dùng"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 136,
+    "question": "Đại hội nào của Đảng Cộng sản Việt Nam đề cập đến sự cần thiết đổi mới cơ chế quản lý kinh tế",
+    "options": {
+      "A": "Đại hội đảng VII",
+      "B": "Đại hội đảng VI",
+      "C": "Đại hội đảng VIII",
+      "D": "Đại hội đảng V"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 137,
+    "question": "Trong nền sản xuất hàng hóa, lạm phát là hiện tượng kinh tế tác động trực tiếp đến",
+    "options": {
+      "A": "Tích tụ và tập trung tư bản",
+      "B": "Tuần hoàn và chu chuyển tư bản",
+      "C": "Sản xuất và tiêu dùng"
+    },
+    "answer": "C",
+    "answers": null
+  },
+  {
+    "id": 138,
+    "question": "Theo quan điểm của kinh tế chính trị, trong tư liệu lao động bộ phận nào quyết định đến năng suất lao động",
+    "options": {
+      "A": "Các vật chứa đựng, bảo quản",
+      "B": "Nguyên vật liệu cho sản xuất",
+      "C": "Công cụ lao động",
+      "D": "Kết cấu hạ tầng sản xuất"
+    },
+    "answer": "C",
+    "answers": null
+  },
+  {
+    "id": 139,
+    "question": "Trong nền kinh tế thị trường định hướng xã hội chủ nghĩa, thành phần kinh tế nào giữ vai trò",
+    "options": {
+      "A": "Thành phần kinh tế nhà nước",
+      "B": "Thành phần kinh tế tư nhân",
+      "C": "Thành phần kinh tế tập thể",
+      "D": "Thành phần kinh tế có vốn đầu tư nước ngoài"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 140,
+    "question": "Cạnh tranh kinh tế được hiểu là",
+    "options": {
+      "A": "Sự đấu tranh ở giữa các chủ thể kinh tế, để giành chi phí tối đa cho mình",
+      "B": "Sự đấu tranh ở giữa các chủ thể kinh tế, để giành lợi ích tối đa cho mình",
+      "C": "Sự đấu tranh ở giữa các chủ thể kinh tế, để giành thị phần tối đa cho mình",
+      "D": "Sự đấu tranh ở giữa các chủ thể kinh tế"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 141,
+    "question": "Đối tượng nghiên cứu của kinh tế- chính trị Mác-Lênin là",
+    "options": {
+      "A": "Các quan hệ của sản xuất và trao đổi trong phương thức sản xuất mà các quan hệ đó hình thành và phát triển",
+      "B": "Quá trình sản xuất, phân phối, trao đổi, tiêu dùng",
+      "C": "Quan hệ xã hội giữa người với người",
+      "D": "Quan hệ sản xuất trong mối quan hệ tác động qua lại giữa lực lượng sản xuất"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 142,
+    "question": "Quan hệ về tỷ lượng trong trao đổi giữa các hàng hóa với nhau do cái gì quy định?",
+    "options": {
+      "A": "Do tính hữu ích của hàng hóa",
+      "B": "Do giá trị nội tại của hàng hóa",
+      "C": "Do quan hệ cung - cầu",
+      "D": "Do ngẫu nhiên"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 143,
+    "question": "Cách mạng công nghiệp lần thứ tư được đề cập lần đầu tiên tại ở đâu và năm nào?",
+    "options": {
+      "A": "Tại Đức năm 2011",
+      "B": "Tại Pháp năm 2011",
+      "C": "Tại Anh năm 2012",
+      "D": "Tại Mỹ năm 2011"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 144,
+    "question": "Công nghiệp hóa ở nước Anh bắt nguồn từ ngành nào?",
+    "options": {
+      "A": "Công nghiệp dệt",
+      "B": "Công nghiệp cơ khí chế tạo",
+      "C": "Công nghiệp khai khoảng",
+      "D": "Công nghiệp đóng tàu"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 145,
+    "question": "Phương hướng cơ bản, lâu dài để tăng sản phẩm xã hội là",
+    "options": {
+      "A": "Tăng năng suất lao động",
+      "B": "Tăng cường độ lao động",
+      "C": "Kéo dài thời gian lao động",
+      "D": "Mở rộng quy mô sản xuất, khai thác tài nguyên thiên nhiên"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 146,
+    "question": "Đâu là các nhân tố thúc đẩy sự tăng trưởng kinh tế?",
+    "options": {
+      "A": "Kỹ thuật - công nghệ Cơ cấu kinh tế, Thể chế chính trị, Con người",
+      "B": "Con người; Kỹ thuật công nghệ; Cơ cấu kinh tế; Thể chế chính trị, vốn",
+      "C": "Con người; Cơ cấu kinh tế; Thể chế chính trị, vốn",
+      "D": "Kỹ thuật - công nghệ; Cơ cấu kinh tế; Thể chế chính trị, vốn"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 147,
+    "question": "Ở Việt Nam cũng như trên thế giới sử dụng thuật ngũ \"cách mạng công nghiệp lần thứ tư\" với hàm ý gì?",
+    "options": {
+      "A": "Sự thay đổi về lượng trong lực lượng sản xuất của nền kinh tế thế giới",
+      "B": "Sự thay đổi về chất trong lực lượng sản xuất của nền kinh tế thế giới",
+      "C": "Sự thay đổi về chất trong quan hệ sản xuất của nền kinh tế thế giới",
+      "D": "Sự thay đổi căn bản, toàn diện trong đời sống, sản xuất của nền kinh tế thế giới"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 148,
+    "question": "Cách mạng công nghiệp lần thứ nhất khởi phát ở quốc gia nào?",
+    "options": {
+      "A": "Anh",
+      "B": "Pháp",
+      "C": "Hy lap",
+      "D": "Đức"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 149,
+    "question": "Cách mạng công nghiệp lần thứ hai khởi phát ở quốc gia nào?",
+    "options": {
+      "A": "Anh",
+      "B": "Pháp",
+      "C": "Hy lap",
+      "D": "Nga"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 150,
+    "question": "Mô hình công nghiệp hóa kiểu Liên Xô được bắt đầu trong thời gian nào?",
+    "options": {
+      "A": "Từ đầu những năm 1920",
+      "B": "Từ đầu những năm 1930",
+      "C": "Từ đầu những năm 1940",
+      "D": "Sau năm 1945"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 151,
+    "question": "Chọn câu sai khi nói về đặc điểm của kinh tế thị trường.",
+    "options": {
+      "A": "Kinh tế thị trường là kinh tế hàng hoá phát triển cao",
+      "B": "Kinh tế thị trường lấy khoa học công nghệ hiện đại làm cơ sở",
+      "C": "Kinh tế thị trường chỉ có thể phát triển mạnh ở xã hội phong kiến",
+      "D": "Kinh tế thị trường đạt đến trình độ cao trong chủ nghĩa tư bản"
+    },
+    "answer": "C",
+    "answers": null
+  },
+  {
+    "id": 152,
+    "question": "Chọn câu sai: Khuyết tật của kinh tế thị trường là",
+    "options": {
+      "A": "Luôn run rủi ro ẩn chứa",
+      "B": "Nhà nước không thể sửa chữa",
+      "C": "Không tự phục hồi được sắc độ phân tích trong xã hội",
+      "D": "Không thể tự phục hồi tài nguyên kiệt"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 153,
+    "question": "Cấu tạo hữu cơ của tư bản được kí hiệu là",
+    "options": {
+      "A": "c/v",
+      "B": "T/T",
+      "C": "m/v",
+      "D": "CH/ch"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 154,
+    "question": "Yếu tố quyết định đến giá cả hàng hoá là",
+    "options": {
+      "A": "Giá trị của hàng hoá",
+      "B": "Quan hệ cung cầu về hàng hoá",
+      "C": "Giá trị sử dụng của hàng hoá"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 155,
+    "question": "Trên giác độ kinh tế chính trị, mục tiêu cuối cùng của xuất khẩu tư bản là:",
+    "options": {
+      "A": "Chiếm đoạt giá trị thặng dư và các nguồn lợi khác ở nước nhập khẩu tư bản",
+      "B": "Thực hiện giá trị và chiếm các nguồn lợi khác của nước nhập khẩu tư bản",
+      "C": "Giúp đỡ các nước nhập khẩu tư bản phát triển."
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 156,
+    "question": "Tốc độ chu chuyển tư bản được tính bằng công thức:",
+    "options": {
+      "A": "n = CH/ch",
+      "B": "N = ch/ CH",
+      "C": "n=t/t100%",
+      "D": "N=t/t100%"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 157,
+    "question": "Đâu không phải nằm trong tính tất yếu khách quan của công nghiệp hóa, hiện đại hóa ở Việt Nam ?",
+    "options": {
+      "A": "Từ yêu cầu phải xây dựng cơ sở vật chất- kỹ thuật của chủ nghĩa xã hội",
+      "B": "Từ yêu cầu phải rút ngắn khoảng cách tụt lùi về kinh tế, kĩ thuật, công nghệ giữa nước ta với các nước trong khu vực và quốc tế",
+      "C": "Từ yêu cầu cần phải tạo ra năng suất lao động xã hội cao, bảo đảm cho sự tồn tại và phát triển của chủ nghĩa xã hội",
+      "D": "Từ yêu cầu của thể chế chính trị của Việt Nam"
+    },
+    "answer": "D",
+    "answers": null
+  },
+  {
+    "id": 158,
+    "question": "Một trong những tác động tích cực của độc quyền đối với nền kinh tế đó là",
+    "options": {
+      "A": "Tập trung các nguồn lực trong việc nghiên cứu phát triển và khai thác các tiến bộ của khoa học kỹ thuật",
+      "B": "Tăng sức mua của người tiêu dùng, từ đó nâng cao năng lực cạnh tranh của các tổ chức độc quyền",
+      "C": "Tạo ra sức mạnh về chính trị, quân sự cho các quốc gia phát triển",
+      "D": "Bị chi phối bởi các nhóm lợi ích cục bộ từ đó làm gia tăng sự phân hóa giàu nghèo"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 159,
+    "question": "Trong nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam, vai trò của kinh tế nhà nước và kinh tế tư nhân đó là",
+    "options": {
+      "A": "Kinh tế nhà nước giữ vai trò chủ đạo, kinh tế tư nhân giữ vai trò là một động lực quan trọng",
+      "B": "Kinh tế nhà nước giữ vai trò quyết định, kinh tế tư nhân giữ vai trò là một động lực quan trọng",
+      "C": "Kinh tế tư nhân giữ vai trò chủ đạo, kinh tế nhà nước giữ vai trò là một động lực quan trọng",
+      "D": "Kinh tế tư nhân giữ vai trò then chốt, kinh tế nhà nước giữ vai trò quyết định"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 160,
+    "question": "Cạnh tranh trong chủ nghĩa tư bản dẫn đến",
+    "options": {
+      "A": "Tích lũy tư bản",
+      "B": "Tích tụ tư bản",
+      "C": "Độc quyền"
+    },
+    "answer": "C",
+    "answers": null
+  }
+]

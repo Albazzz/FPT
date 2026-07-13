@@ -1,0 +1,1523 @@
+TOM TAT CHI TIET ON THI	TÓM TẮT CHI TIẾT ÔN THI
+BAN NAY CO NOI DUNG GIAI THICH DAY DU (khong chi tieu de).	BẢN NÀY CÓ NỘI DUNG GIẢI THÍCH ĐẦY ĐỦ (không chỉ tiêu đề).
+Moi muc: dinh nghia + giai thich + vi du/cong thuc + diem hay ra de.	Mỗi mục: định nghĩa + giải thích + ví dụ/công thức + điểm hay ra đề.
+Ngon ngu: tieng Viet + giu thuan ngu tieng Anh nhu trong sach goc.	Ngôn ngữ: tiếng Việt + giữ thuật ngữ tiếng Anh như trong sách gốc.
+Ky thi FE	Kỳ thi FE
+Chuong nay giai thich may tinh duoc cau tao the nao, du lieu duoc bieu dien ra sao,	Chương này giải thích máy tính được cấu tạo thế nào, dữ liệu được biểu diễn ra sao,
+CPU/bo nho/o dia/I-O hoat dong the nao. Day la nen tang de hieu cac chuong sau.	CPU/bộ nhớ/ổ đĩa/I-O hoạt động thế nào. Đây là nền tảng để hiểu các chương sau.
+1. Cau hinh co ban may tinh	1. Cấu hình cơ bản máy tính
+1-1 Lich su may tinh	1-1 Lịch sử máy tính
+1-2 Nam don vi chinh	1-2 Năm đơn vị chính
+2. Bieu dien du lieu trong may tinh	2. Biểu diễn dữ liệu trong máy tính
+4. Auxiliary Storage (bo nho phu)	4. Auxiliary Storage (bộ nhớ phụ)
+PHU LUC BO SUNG - CAC DIEM CAN DE TRA LOI CAU HOI MAU (test.txt)	PHỤ LỤC BỔ SUNG — CÁC ĐIỂM CẦN ĐỂ TRẢ LỜI CÂU HỎI MẪU (test.txt)
+(Bo sung sau khi doi chieu de mau; DOC THEM PHAN NAY KHI ON DE)	(Bổ sung sau khi đối chiếu đề mẫu; ĐỌC THÊM PHẦN NÀY KHI ÔN ĐỀ)
+HET PHU LUC BO SUNG	HẾT PHỤ LỤC BỔ SUNG
+PHU LUC - CHECKLIST ON NHANH TRUOC THI	PHỤ LỤC — CHECKLIST ÔN NHANH TRƯỚC THI
+Cach dung: doc tung muc -> tu viet lai so do -> lam bai Exercises cuoi chuong trong sach.	Cách dùng: đọc từng mục → tự viết lại sơ đồ → làm bài Exercises cuối chương trong sách.
+File nay thay the ban 'chi tieu de'; moi dong la noi dung on that.	File này thay thế bản 'chỉ tiêu đề'; mỗi dòng là nội dung ôn thật.
+Nguon: New FE Textbook Vol.1 & Vol.2 (vol1.docx, vol2.docx).	Nguồn: New FE Textbook Vol.1 & Vol.2 (vol1.docx, vol2.docx).
+DIEM THI:	ĐIỂM THI:
+VI DU 	VÍ DỤ 
+VI DU	VÍ DỤ
+Luu y:	Lưu ý:
+The he may tinh	Thế hệ máy tính
+thuong duoc chia theo linh kien logic	thường được chia theo linh kiện logic
+chu yeu duoc dung	chủ yếu được dùng
+dung den dien tu	dùng đèn điện tử
+la may tinh som nhat	là máy tính sớm nhất
+tieu thu dien rat lon	tiêu thụ điện rất lớn
+phat nhiet manh	phát nhiệt mạnh
+chu yeu tinh toan dan dao	chủ yếu tính toán đạn đạo
+De doi wiring theo bai toan	Để đổi wiring theo bài toán
+mot so nguoi khong coi do la may tinh theo nghia hien dai	một số người không coi đó là máy tính theo nghĩa hiện đại
+dung co che	dùng cơ chế
+chuong trinh luu trong may roi chay	chương trình lưu trong máy rồi chạy
+May theo kien truc nay goi la	Máy theo kiến trúc này gọi là
+dung transistor (ban dan)	dùng transistor (bán dẫn)
+la may thuong mai som	là máy thương mại sớm
+nho, it hong hon den dien tu	nhỏ, ít hỏng hơn đèn điện tử
+may gon va tin cay hon	máy gọn và tin cậy hơn
+tich hop hang tram transistor tren chip silicon	tích hợp hàng trăm transistor trên chip silicon
+may general-purpose dung duoc nhieu loai xu ly	máy general-purpose dùng được nhiều loại xử lý
+mat do cao hon	mật độ cao hơn
+Xuat hien may dieu khien cong nghiep	Xuất hiện máy điều khiển công nghiệp
+cho thiet bi gia dung	cho thiết bị gia dụng
+cho tinh khoa hoc	cho tính khoa học
+microcomputer ca nhan	microcomputer cá nhân
+Chuyen tu	Chuyển từ
+dong goi ca he thong vao 1 chip	đóng gói cả hệ thống vào 1 chip
+Xu huong hien dai	Xu hướng hiện đại
+co the lap trinh logic sau khi san xuat	có thể lập trình logic sau khi sản xuất
+tiet kiem nang luong	tiết kiệm năng lượng
+may de dung hon	máy dễ dùng hơn
+co kha nang suy luan/gan con nguoi hon	có khả năng suy luận/gần con người hơn
+nho thu tu	nhớ thứ tự
+Du may tinh co nhieu loai	Dù máy tính có nhiều loại
+cau hinh co ban deu gom	cấu hình cơ bản đều gồm
+don vi chinh	đơn vị chính
+mo phong cach con nguoi giai bai toan	mô phỏng cách con người giải bài toán
+doc du lieu can xu ly	đọc dữ liệu cần xử lý
+ban phim, chuot, cam bien	bàn phím, chuột, cảm biến
+xuat ket qua dang nguoi doc duoc	xuất kết quả dạng người đọc được
+man hinh, may in	màn hình, máy in
+ghi nho du lieu	ghi nhớ dữ liệu
+Co 2 loai	Có 2 loại
+truy cap truc tiep tu CPU	truy cập trực tiếp từ CPU
+mat khi mat dien	mất khi mất điện
+luu lau	lưu lâu
+thuc hien phep toan so hoc va logic	thực hiện phép toán số học và logic
+so sanh theo chi thi cua control unit	so sánh theo chỉ thị của control unit
+giai ma lenh	giải mã lệnh
+ra lenh cho	ra lệnh cho
+don vi con lai	đơn vị còn lại
+La 'nhac truong' cua may	Là 'nhạc trưởng' của máy
+Thiet bi ngoai CPU	Thiết bị ngoài CPU
+goi la	gọi là
+chuc nang CPU dong goi vao	chức năng CPU đóng gói vào
+tich hop ca he thong	tích hợp cả hệ thống
+ke ca bo nho	kể cả bộ nhớ
+vao 1 chip	vào 1 chip
+nhanh, it dien nhung rui ro phat trien cao	nhanh, ít điện nhưng rủi ro phát triển cao
+nhieu chip trong 1 package	nhiều chip trong 1 package
+con tich hop ca I/O	còn tích hợp cả I/O
+ho tro hoac chi lam 1 loai xu ly chuyen biet	hỗ trợ hoặc chỉ làm 1 loại xử lý chuyên biệt
+khac general-purpose	khác general-purpose
+dua vao memory	đưa vào memory
+hieu	hiểu
+la cong	là cộng
+lay 3 va 6, tinh 9, ghi vao memory	lấy 3 và 6, tính 9, ghi vào memory
+hien 9	hiện 9
+Du lieu trong may duoc bieu dien bang tin hieu dien chi co 2 trang thai	Dữ liệu trong máy được biểu diễn bằng tín hiệu điện chỉ có 2 trạng thái
+gan 0 va 1	gán 0 và 1
+Don vi nho nhat	Đơn vị nhỏ nhất
+la don vi xu ly cua may	là đơn vị xử lý của máy
+tuy kien truc	tùy kiến trúc
+Word cang nhieu bit, 1 lan xu ly cang nhieu thong tin	Word càng nhiều bit, 1 lần xử lý càng nhiều thông tin
+thuong nhanh hon	thường nhanh hơn
+Luong thong tin	Lượng thông tin
+bieu dien duoc	biểu diễn được
+trang thai/loai	trạng thái/loại
+Ly thuyet thong tin	Lý thuyết thông tin
+su kien cang it xac suat xay ra, luong thong tin mang lai cang lon	sự kiện càng ít xác suất xảy ra, lượng thông tin mang lại càng lớn
+muc 'bat ngo'	mức 'bất ngờ'
+Xac suat	Xác suất
+tuong ung	tương ứng
+Prefix lon	Prefix lớn
+Prefix nho	Prefix nhỏ
+trong may tinh thuong	trong máy tính thường
+De bai hay hoi dung	Đề bài hay hỏi dùng
+moi hang la luy thua cua n	mỗi hàng là lũy thừa của n
+dung chu so	dùng chữ số
+den n thi nho	đến n thì nhớ
+chi 0 va 1	chỉ 0 và 1
+Vi du	Ví dụ
+thap phan	thập phân
+Bat phan	Bát phân
+va thap luc phan	và thập lục phân
+de viet gon nhi phan	để viết gọn nhị phân
+1 chu so oct	1 chữ số oct
+1 chu so hex	1 chữ số hex
+dung 0-9 va A-F	dùng 0-9 và A-F
+Chuyen thap phan	Chuyển thập phân
+phan nguyen	phần nguyên
+chia lien tiep cho 2, lay du tu duoi len	chia liên tiếp cho 2, lấy dư từ dưới lên
+Phan thap phan	Phần thập phân
+nhan 2, lay phan nguyen lan luot	nhân 2, lấy phần nguyên lần lượt
+moi chu so thap phan ma bang 4 bit rieng	mỗi chữ số thập phân mã bằng 4 bit riêng
+khong phai nhi phan thuan cua ca so	không phải nhị phân thuần của cả số
+bai tinh chuyen co so	bài tính chuyển cơ số
+doi hex	đổi hex
+bang nhom 4 bit xuat hien rat nhieu	bằng nhóm 4 bit xuất hiện rất nhiều
+So nguyen co dau thuong dung	Số nguyên có dấu thường dùng
+Pho bien nhat	Phổ biến nhất
+cua so am	của số âm
+dao tat ca bit roi +1	đảo tất cả bit rồi +1
+Uu diem	Ưu điểm
+phep cong/tru dung chung mach cong	phép cộng/trừ dùng chung mạch cộng
+chi co 1 so 0	chỉ có 1 số 0
+Pham vi so nguyen	Phạm vi số nguyên
+dau phay co dinh	dấu phẩy cố định
+gom dau	gồm dấu
+phan mu	phần mũ
+phan dinh tri	phần định trị
+bieu dien so rat lon/nho	biểu diễn số rất lớn/nhỏ
+co the bi	có thể bị
+va sai so lam tron	và sai số làm tròn
+pho bien quoc te	phổ biến quốc tế
+may mainframe	máy mainframe
+ho tro da ngon ngu	hỗ trợ đa ngôn ngữ
+cho tieng Nhat	cho tiếng Nhật
+them bit de kiem tra loi le/chan khi truyen/luu	thêm bit để kiểm tra lỗi lẻ/chẵn khi truyền/lưu
+dung phat hien loi manh hon	dùng phát hiện lỗi mạnh hơn
+xem them Network	xem thêm Network
+gom control unit	gồm control unit
+tap thanh ghi	tập thanh ghi
+ket noi qua bus	kết nối qua bus
+Register quan trong	Register quan trọng
+dia chi lenh ke	địa chỉ lệnh kế
+lenh dang xu ly	lệnh đang xử lý
+toan hang	toán hạng
+ket qua so sanh	kết quả so sánh
+Chu ky lenh	Chu kỳ lệnh
+co ban	cơ bản
+doc lenh	đọc lệnh
+giai ma	giải mã
+thuc thi	thực thi
+Tan so dong ho	Tần số đồng hồ
+cao hon thuong xu ly nhieu chu ky hon/giay	cao hơn thường xử lý nhiều chu kỳ hơn/giây
+nhung hieu nang thuc te con phu thuoc	nhưng hiệu năng thực tế còn phụ thuộc
+Moi o nho co dia chi	Mỗi ô nhớ có địa chỉ
+va noi dung	và nội dung
+CPU truy cap bang dia chi	CPU truy cập bằng địa chỉ
+doc/ghi	đọc/ghi
+giu noi dung khi mat dien	giữ nội dung khi mất điện
+chu yeu doc	chủ yếu đọc
+co bien the ghi duoc	có biến thể ghi được
+mat do cao	mật độ cao
+can refresh dinh ky	cần refresh định kỳ
+dung lam main memory	dùng làm main memory
+nhanh hon, dat, khong can refresh	nhanh hơn, đắt, không cần refresh
+dung lam cache	dùng làm cache
+nhanh-dat -> cham-re	nhanh-đắt → chậm-rẻ
+Muc tieu: can bang toc do va chi phi	Mục tiêu: cân bằng tốc độ và chi phí
+Lenh gom	Lệnh gồm
+ma phep toan	mã phép toán
+toan hang / dia chi	toán hạng / địa chỉ
+Cac che do dia chi hoa thuong gap	Các chế độ địa chỉ hóa thường gặp
+toan hang nam trong lenh	toán hạng nằm trong lệnh
+lenh chua dia chi o nho	lệnh chứa địa chỉ ô nhớ
+lenh tro toi cho chua dia chi that	lệnh trỏ tới chỗ chứa địa chỉ thật
+dia chi co so + index	địa chỉ cơ sở + index
+offset so voi PC	offset so với PC
+So dia chi trong lenh	Số địa chỉ trong lệnh
+anh huong do dai lenh va so lan truy cap bo nho	ảnh hưởng độ dài lệnh và số lần truy cập bộ nhớ
+Cong logic co ban	Cổng logic cơ bản
+Moi cong la khoi xay dung ALU va control	Mỗi cổng là khối xây dựng ALU và control
+Mach to hop	Mạch tổ hợp
+ra chi phu thuoc vao vao hien tai	ra chỉ phụ thuộc vào vào hiện tại
+Mach tuan tu	Mạch tuần tự
+co nho trang thai	có nhớ trạng thái
+cong nhi phan	cộng nhị phân
+dich bit	dịch bit
+nhan/chia 2	nhân/chia 2
+so sanh	so sánh
+Bieu thuc Boolean	Biểu thức Boolean
+dinh luat	định luật
+bang chan ly	bảng chân lý
+dung don gian hoa logic	dùng đơn giản hóa logic
+it cong, nhanh, re hon	ít cổng, nhanh, rẻ hơn
+chia xu ly lenh thanh nhieu stage	chia xử lý lệnh thành nhiều stage
+de nhieu lenh chong lan nhau theo thoi gian	để nhiều lệnh chồng lấn nhau theo thời gian
+lam giam hieu suat pipeline	làm giảm hiệu suất pipeline
+bo nho nhanh giua CPU va main memory	bộ nhớ nhanh giữa CPU và main memory
+tan dung tinh dia phuong	tận dụng tính địa phương
+tim thay	tìm thấy
+phai xuong main memory	phải xuống main memory
+Chinh sach ghi	Chính sách ghi
+ghi xuong luon	ghi xuống luôn
+ghi cache, xuong memory sau	ghi cache, xuống memory sau
+Anh xa	Ánh xạ
+lenh don gian, de pipeline	lệnh đơn giản, dễ pipeline
+lenh phuc tap, manh nhung kho toi uu	lệnh phức tạp, mạnh nhưng khó tối ưu
+muc hieu	mức hiểu
+thiet bi I/O trao doi truc tiep voi memory khong qua CPU tung byte	thiết bị I/O trao đổi trực tiếp với memory không qua CPU từng byte
+giam tai CPU	giảm tải CPU
+chia bank de truy cap song song	chia bank để truy cập song song
+chuong trinh thay khong gian dia chi lon hon RAM vat ly	chương trình thấy không gian địa chỉ lớn hơn RAM vật lý
+Dia tu	Đĩa từ
+mat dia	mặt đĩa
+dau tu	đầu từ
+ranh	ránh
+cac track thang hang tren cac mat	các track thẳng hàng trên các mặt
+doi dau	đổi đầu
+cho sector quay toi	chờ sector quay tới
+Dung luong	Dung lượng
+so mat	số mặt
+so track/mat	số track/mặt
+so sector/track	số sector/track
+so byte/sector	số byte/sector
+ghep nhieu dia	ghép nhiều đĩa
+nhanh, khong du phong	nhanh, không dự phòng
+sao guong, an toan	sao gương, an toàn
+can bang	cân bằng
+parity kep	parity kép
+De hay hoi trade-off toc do / do tin cay / dung luong hieu dung	Đề hay hỏi trade-off tốc độ / độ tin cậy / dung lượng hiệu dụng
+doc/ghi bang laser	đọc/ghi bằng laser
+phu hop phat hanh, luu tru thuy dong	phù hợp phát hành, lưu trữ thụ động
+truy cap nhanh, chiu soc, it on	truy cập nhanh, chịu sốc, ít ồn
+thuong dat hon HDD theo GB	thường đắt hơn HDD theo GB
+co gioi han so lan ghi	có giới hạn số lần ghi
+re, dung luong lon, access tuan tu	rẻ, dung lượng lớn, access tuần tự
+chu yeu backup/archive	chủ yếu backup/archive
+nhan chu	nhận chữ
+to tram	tô trám
+sec ngan hang	séc ngân hàng
+kim, phun, laser	kim, phun, laser
+CPU cho/polling - don gian nhung ton CPU	CPU chờ/polling - đơn giản nhưng tốn CPU
+thiet bi ngat khi xong	thiết bị ngắt khi xong
+may lon	máy lớn
+pho bien, hot-plug	phổ biến, hot-plug
+o dia	ổ đĩa
+card mo rong toc do cao	card mở rộng tốc độ cao
+hinh anh	hình ảnh
+khong day	không dây
+tin hieu yeu cau CPU tam dung viec hien tai de xu ly su kien	tín hiệu yêu cầu CPU tạm dừng việc hiện tại để xử lý sự kiện
+co muc uu tien va vector ngat	có mức ưu tiên và vector ngắt
+Chuong nay phan loai he thong xu ly thong tin	Chương này phân loại hệ thống xử lý thông tin
+danh gia hieu nang/do tin cay	đánh giá hiệu năng/độ tin cậy
+giao dien nguoi-may va multimedia	giao diện người-máy và multimedia
+dua 1 loat chi thi, may chay den het	đưa 1 loạt chỉ thị, máy chạy đến hết
+nguoi khong can thiep giua chung	người không can thiệp giữa chừng
+nguoi va may trao doi tung buoc qua man hinh/lenh	người và máy trao đổi từng bước qua màn hình/lệnh
+Can UI tot	Cần UI tốt
+de nang nang suat nguoi dung	để nâng năng suất người dùng
+gom du lieu roi xu ly 1 luc vao thoi diem dinh	gom dữ liệu rồi xử lý 1 lúc vào thời điểm định
+tinh luong, cuoi ngay	tính lương, cuối ngày
+Khong can phan hoi tuc thi	Không cần phản hồi tức thì
+mang du lieu ve trung tam	mang dữ liệu về trung tâm
+gui job tu xa	gửi job từ xa
+user tu thao tac	user tự thao tác
+user nhap, operator chay	user nhập, operator chạy
+cap nhat master/DB theo giao dich	cập nhật master/DB theo giao dịch
+Can ACID	Cần ACID
+het hoac khong	hết hoặc không
+khong mau thuan	không mâu thuẫn
+khong xen lan sai	không xen lẫn sai
+da commit thi con sau su co	đã commit thì còn sau sự cố
+co yeu cau den la xu ly ngay	có yêu cầu đến là xử lý ngay
+tre han gay hau qua nghiem trong	trễ hạn gây hậu quả nghiêm trọng
+tui khi, dieu khien an toan	túi khí, điều khiển an toàn
+tre han khong gay chet nguoi	trễ hạn không gây chết người
+dat cho	đặt chỗ
+xu ly tap trung 1 may/trung tam	xử lý tập trung 1 máy/trung tâm
+de quan tri nhung de SPOF va kho mo rong	dễ quản trị nhưng dễ SPOF và khó mở rộng
+chia viec tren nhieu may	chia việc trên nhiều máy
+Can dong bo, mang, bao mat, giao thuc	Cần đồng bộ, mạng, bảo mật, giao thức
+client yeu cau, server cung cap dich vu	client yêu cầu, server cung cấp dịch vụ
+noi tiep	nối tiếp
+ca he thong chi OK khi MOI thanh phan OK	cả hệ thống chỉ OK khi MỌI thành phần OK
+do tin cay giam khi ghep them	độ tin cậy giảm khi ghép thêm
+song song	song song
+he thong OK neu IT NHAT 1 nhanh OK	hệ thống OK nếu ÍT NHẤT 1 nhánh OK
+tang do tin cay, ton tai nguyen	tăng độ tin cậy, tốn tài nguyên
+may du phong dang chay san	máy dự phòng đang chạy sẵn
+bat khi can	bật khi cần
+khi loi thi ve trang thai an toan	khi lỗi thì về trạng thái an toàn
+giam chuc nang nhung van chay duoc phan con lai	giảm chức năng nhưng vẫn chạy được phần còn lại
+chiu loi van hoat dong dung	chịu lỗi vẫn hoạt động đúng
+thoi gian tu gui yeu cau den nhan tra loi	thời gian từ gửi yêu cầu đến nhận trả lời
+quan trong interactive	quan trọng interactive
+thoi gian tu nop job den nhan toan bo ket qua	thời gian từ nộp job đến nhận toàn bộ kết quả
+quan trong batch	quan trọng batch
+so viec/giao dich hoan thanh tren 1 don vi thoi gian	số việc/giao dịch hoàn thành trên 1 đơn vị thời gian
+trieu lenh may / giay	triệu lệnh máy / giây
+so sanh tho, phu thuoc tap lenh	so sánh thô, phụ thuộc tập lệnh
+phep toan thuc	phép toán thực
+phan khong song song hoa duoc se gioi han toc do tang khi them CPU	phần không song song hóa được sẽ giới hạn tốc độ tăng khi thêm CPU
+thoi gian trung binh giua 2 lan hong	thời gian trung bình giữa 2 lần hỏng
+cang lon cang tot	càng lớn càng tốt
+thoi gian trung binh sua xong	thời gian trung bình sửa xong
+cang nho cang tot	càng nhỏ càng tốt
+ty le hong	tỷ lệ hỏng
+nhan cac R	nhân các R
+dau doi (hong som)	đầu đời (hỏng sớm)
+on dinh	ổn định
+cuoi doi (hao mon)	cuối đời (hao mòn)
+hieu nang tren chi phi	hiệu năng trên chi phí
+tong chi phi so huu	tổng chi phí sở hữu
+mua + van hanh + bao tri + dien + nhan su	mua + vận hành + bảo trì + điện + nhân sự
+Can can nhac	Cần cân nhắc
+loi nhuan / von dau tu	lợi nhuận / vốn đầu tư
+thiet ke de nguoi dung hieu va thao tac de, it loi	thiết kế để người dùng hiểu và thao tác dễ, ít lỗi
+hieu qua, hieu suat, hai long	hiệu quả, hiệu suất, hài lòng
+do hoa	đồ họa
+dong lenh	dòng lệnh
+Nguyen tac	Nguyên tắc
+giam loi nguoi dung	giảm lỗi người dùng
+mau sac, font, do tuong phan, bo cuc man hinh, giam moi mat	màu sắc, font, độ tương phản, bố cục màn hình, giảm mỏi mắt
+ho tro nguoi khuyet tat	hỗ trợ người khuyết tật
+nhom thong tin hop ly	nhóm thông tin hợp lý
+default an toan	default an toàn
+thong bao loi ro rang	thông báo lỗi rõ ràng
+ket hop	kết hợp
+Nen mat mat	Nén mất mát
+file nho, mat 1 phan chat luong	file nhỏ, mất 1 phần chất lượng
+giu nguyen	giữ nguyên
+phat trong khi tai	phát trong khi tải
+thoai tren IP	thoại trên IP
+Ung dung	Ứng dụng
+dao tao, giai tri	đào tạo, giải trí
+y te, hoi nghi truyen hinh	y tế, hội nghị truyền hình
+Phan loai phan mem	Phân loại phần mềm
+la cau noi giua phan cung va nguoi dung	là cầu nối giữa phần cứng và người dùng
+quan ly/hieu qua hoa hardware	quản lý/hiệu quả hóa hardware
+phuc vu muc tieu nguoi dung	phục vụ mục tiêu người dùng
+ke toan, van phong	kế toán, văn phòng
+quan ly tai nguyen	quản lý tài nguyên
+cung cap moi truong chay chuong trinh	cung cấp môi trường chạy chương trình
+toi thieu	tối thiểu
+nhieu chuc nang gom	nhiều chức năng gồm
+han che quyen	hạn chế quyền
+toan quyen	toàn quyền
+chuyen vao kernel mode	chuyển vào kernel mode
+bat nguon	bật nguồn
+nap OS	nạp OS
+chon OS	chọn OS
+nap qua mang	nạp qua mạng
+Bootloader thuong nam	Bootloader thường nằm
+nen/giai nen	nén/giải nén
+dich chuong trinh	dịch chương trình
+nam giua OS va ung dung	nằm giữa OS và ứng dụng
+tra phi, ma nguon dong	trả phí, mã nguồn đóng
+mien phi dung, chua chac open source	miễn phí dùng, chưa chắc open source
+dung thu	dùng thử
+ma nguon mo	mã nguồn mở
+giay phep	giấy phép
+can hieu nghia vu chia se khi chinh sua/phat hanh	cần hiểu nghĩa vụ chia sẻ khi chỉnh sửa/phát hành
+nhat la GPL	nhất là GPL
+khong con ban quyen	không còn bản quyền
+thue dich vu qua mang, khong can cai local	thuê dịch vụ qua mạng, không cần cài local
+OS quan ly	OS quản lý
+nhieu tien trinh dung CPU xen ke	nhiều tiến trình dùng CPU xen kẽ
+nhieu luong trong 1 process	nhiều luồng trong 1 process
+Muc tieu	Mục tiêu
+cong bang	công bằng
+Dong bo	Đồng bộ
+xay ra khi du 4 dieu kien	xảy ra khi đủ 4 điều kiện
+Xu ly	Xử lý
+trang co dinh	trang cố định
+qua nhieu page fault vi thieu frame	quá nhiều page fault vì thiếu frame
+dong bo xu ly su kien I/O va loi	đồng bộ xử lý sự kiện I/O và lỗi
+chay nhieu VM	chạy nhiều VM
+ma 0/1 may hieu truc tiep	mã 0/1 máy hiểu trực tiếp
+gan voi lenh may	gần với lệnh máy
+gan ngon ngu nguoi	gần ngôn ngữ người
+huong khai bao	hướng khai báo
+dich ca source	dịch cả source
+roi link thanh load module	rồi link thành load module
+chay nhanh	chạy nhanh
+dich va chay tung phan	dịch và chạy từng phần
+linh hoat, de debug	linh hoạt, dễ debug
+Thuoc tinh chuong trinh	Thuộc tính chương trình
+nhieu user chay chung code an toan	nhiều user chạy chung code an toàn
+doi duoc dia chi nap	đổi được địa chỉ nạp
+tap hop record	tập hợp record
+record gom field	record gồm field
+de nhan dang/tim kiem	để nhận dạng/tìm kiếm
+Truy cap	Truy cập
+lan luot	lần lượt
+theo dia chi/key	theo địa chỉ/key
+To chuc file	Tổ chức file
+Anh huong hieu nang	Ảnh hưởng hiệu năng
+quan ly cay thu muc tren PC	quản lý cây thư mục trên PC
+luu nhieu the he	lưu nhiều thế hệ
+thu thuat restore	thủ thuật restore
+dong goi lau dai	đóng gói lâu dài
+Can ma hoa/bao mat file nhay cam	Cần mã hóa/bảo mật file nhạy cảm
+giai quyet trung lap va mau thuan du lieu	giải quyết trùng lặp và mâu thuẫn dữ liệu
+khi dung nhieu file rieng le	khi dùng nhiều file riêng lẻ
+la trong tam de FE	là trọng tâm đề FE
+Moi chuong trinh tu tao file	Mỗi chương trình tự tạo file
+de trung lap muc du lieu	dễ trùng lặp mục dữ liệu
+sua 1 cho khong dong bo cho khac	sửa 1 chỗ không đồng bộ chỗ khác
+quan ly tich hop	quản lý tích hợp
+doi cau truc it anh huong chuong trinh	đổi cấu trúc ít ảnh hưởng chương trình
+quyen truy cap	quyền truy cập
+Thiet ke CSDL	Thiết kế CSDL
+mo ta nghiep vu, chua phu thuoc DBMS	mô tả nghiệp vụ, chưa phụ thuộc DBMS
+cau truc logic	cấu trúc logic
+bang, quan he	bảng, quan hệ
+kieu luu, index, file vat ly	kiểu lưu, index, file vật lý
+1-nhieu cay	1-nhiều cây
+nhieu-nhieu	nhiều-nhiều
+bang 2 chieu	bảng 2 chiều
+pho bien nhat	phổ biến nhất
+tap gia tri hop le	tập giá trị hợp lệ
+gia tri thuc te	giá trị thực tế
+Phep toan quan he	Phép toán quan hệ
+chon hang	chọn hàng
+chon cot	chọn cột
+ket bang	kết bảng
+Phep tap hop	Phép tập hợp
+Them insert/update/delete	Thêm insert/update/delete
+hinh chu nhat	hình chữ nhật
+hinh thoi	hình thoi
+gia tri nguyen to, khong lap nhom	giá trị nguyên tố, không lặp nhóm
+het phu thuoc 1 phan khoa	hết phụ thuộc 1 phần khóa
+het phu thuoc bay	hết phụ thuộc bắc cầu
+Muc tieu giam redundancy	Mục tiêu giảm redundancy
+va anomaly	và anomaly
+cung cap	cung cấp
+dinh nghia	định nghĩa
+thao tac	thao tác
+giong transaction processing chuong 2	giống transaction processing chương 2
+co the xay ra	có thể xảy ra
+co them	có thêm
+ghi log	ghi log
+lui	lùi
+tien	tiến
+sau su co	sau sự cố
+ghi log truoc khi ghi data	ghi log trước khi ghi data
+ao hoa	ảo hóa
+phan quyen	phân quyền
+tang toc truy van	tăng tốc truy vấn
+them/sua/xoa cot hay rang buoc	thêm/sửa/xóa cột hay ràng buộc
+Kieu hay gap	Kiểu hay gặp
+khop 2 ben	khớp 2 bên
+giu ben trai/phai ca khi khong khop	giữ bên trái/phải cả khi không khớp
+Ham gom	Hàm gộp
+long nhau	lồng nhau
+can than thieu WHERE	cẩn thận thiếu WHERE
+xac nhan giao dich	xác nhận giao dịch
+huy	hủy
+ket hop ket qua SELECT	kết hợp kết quả SELECT
+viet/doc SQL	viết/đọc SQL
+hieu ket qua JOIN	hiểu kết quả JOIN
+va GROUP BY	và GROUP BY
+phan biet WHERE vs HAVING	phân biệt WHERE vs HAVING
+CSDL phan tan	CSDL phân tán
+du lieu o nhieu site	dữ liệu ở nhiều site
+can location transparency	cần location transparency
+dam bao atomic toan cuc	đảm bảo atomic toàn cục
+sao chep	sao chép
+chia ngang/doc	chia ngang/dọc
+de hieu nang va san sang	để hiệu năng và sẵn sàng
+Kho du lieu phan tich	Kho dữ liệu phân tích
+dac trung	đặc trưng
+nap du lieu	nạp dữ liệu
+theo phong ban	theo phòng ban
+cho big data / linh hoat schema	cho big data / linh hoạt schema
+biet phan biet voi RDB la du o muc FE	biết phân biệt với RDB là đủ ở mức FE
+Tu mo hinh mang	Từ mô hình mạng
+den dich vu Internet va quan tri mang	đến dịch vụ Internet và quản trị mạng
+Loai mang va cau hinh	Loại mạng và cấu hình
+pham vi nho	phạm vi nhỏ
+van phong	văn phòng
+toc do cao	tốc độ cao
+rong dia ly	rộng địa lý
+thanh pho	thành phố
+ca nhan	cá nhân
+noi bo TCP/IP	nội bộ TCP/IP
+mo rong doi tac	mở rộng đối tác
+toan cau	toàn cầu
+chia se collision domain	chia sẻ collision domain
+chia port, giam collision	chia port, giảm collision
+dinh tuyen giua mang	định tuyến giữa mạng
+khac giao thuc	khác giao thức
+Ky thuat truyen va dich vu	Kỹ thuật truyền và dịch vụ
+tan so	tần số
+thoi gian	thời gian
+buoc song quang	bước sóng quang
+kenh co dinh, giong dien thoai	kênh cố định, giống điện thoại
+chia goi	chia gói
+xa, bang thong rong, it nhieu	xa, băng thông rộng, ít nhiễu
+song vo tuyen/vi song/ve tinh	sóng vô tuyến/vi sóng/vệ tinh
+Phat hien loi	Phát hiện lỗi
+sua loi	sửa lỗi
+Dieu khien truyen	Điều khiển truyền
+dong bo hoa, khung	đồng bộ hóa, khung
+Truy cap duong truyen	Truy cập đường truyền
+co dien	cổ điển
+Dich vu	Dịch vụ
+di dong	di động
+uu tien luu luong	ưu tiên lưu lượng
+HOC THUOC	HỌC THUỘC
+dich vu ung dung cho chuong trinh	dịch vụ ứng dụng cho chương trình
+truyen file, truy van DB tu xa	truyền file, truy vấn DB từ xa
+ma hoa, nen, chuyen doi cu phap du lieu	mã hóa, nén, chuyển đổi cú pháp dữ liệu
+quan ly phien, diem dong bo, quyen noi	quản lý phiên, điểm đồng bộ, quyền nói
+truyen end-to-end tin cay	truyền end-to-end tin cậy
+dia chi logic, routing, chuyen tiep goi	địa chỉ logic, routing, chuyển tiếp gói
+tin cay giua 2 nut ke	tin cậy giữa 2 nút kề
+bit, dien ap, day, connector, toc do xung	bit, điện áp, dây, connector, tốc độ xung
+dung dich vu lop N-1	dùng dịch vụ lớp N-1
+protocol giua 2 entity cung lop 2 dau mut	protocol giữa 2 entity cùng lớp 2 đầu mút
+La de facto cua Internet	Là de facto của Internet
+ten mien	tên miền
+cap phat IP dong	cấp phát IP động
+dinh kem da phuong tien	đính kèm đa phương tiện
+quan tri mang	quản trị mạng
+login tu xa	login từ xa
+an toan hon	an toàn hơn
+dong bo gio	đồng bộ giờ
+media thoi gian thuc	media thời gian thực
+huong ket noi, tin cay, kiem soat luong	hướng kết nối, tin cậy, kiểm soát luồng
+phu hop web/mail/file	phù hợp web/mail/file
+khong ket noi, nhe	không kết nối, nhẹ
+phu hop DNS/streaming/VoIP khi chap nhan mat goi	phù hợp DNS/streaming/VoIP khi chấp nhận mất gói
+vi du private	ví dụ private
+bien dich dia chi	biến dịch địa chỉ
+bao loi/ping	báo lỗi/ping
+phan doan mang logic	phân đoạn mạng logic
+dung CSMA/CA	dùng CSMA/CA
+bao mat	bảo mật
+mang cac mang	mạng các mạng
+tao nen WWW	tạo nên WWW
+toi uu va bao mat	tối ưu và bảo mật
+Giam sat traffic, log, capacity planning	Giám sát traffic, log, capacity planning
+An ninh thong tin	An ninh thông tin
+cong nghe + quan tri	công nghệ + quản trị
+la cot loi moi de thi security	là cốt lõi mọi đề thi security
+Khai niem	Khái niệm
+la duy tri	là duy trì
+va co the them	và có thể thêm
+chi entity duoc phep moi doc/su dung	chỉ entity được phép mới đọc/sử dụng
+thong tin dung va day du, khong bi sua trai phep	thông tin đúng và đầy đủ, không bị sửa trái phép
+dung luc can van truy cap duoc	đúng lúc cần vẫn truy cập được
+dung la entity do	đúng là entity đó
+truy vet hanh vi ve dung chu the	truy vết hành vi về đúng chủ thể
+khong choi bo duoc hanh dong da thuc hien	không chối bỏ được hành động đã thực hiện
+hanh vi on dinh dung nhu thiet ke	hành vi ổn định đúng như thiết kế
+Quan ly 3 doi tuong	Quản lý 3 đối tượng
+tai san can bao ve	tài sản cần bảo vệ
+moi de doa	mối đe dọa
+diem yeu co the bi tan dung	điểm yếu có thể bị tận dụng
+Rui ro ~ ket hop 3 yeu to	Rủi ro ~ kết hợp 3 yếu tố
+4 chuc nang	4 chức năng
+han che thiet hai	hạn chế thiệt hại
+khoi phuc	khôi phục
+Tai san thong tin	Tài sản thông tin
+huu hinh	hữu hình
+may, phan mem, tai lieu	máy, phần mềm, tài liệu
+va vo hinh	và vô hình
+du lieu khach hang, IP, uy tin	dữ liệu khách hàng, IP, uy tín
+Moi de doa mang	Mối đe dọa mạng
+nghe len	nghe lén
+sua doi	sửa đổi
+gia mao	giả mạo
+Cong nghe bao mat	Công nghệ bảo mật
+Ma hoa doi xung	Mã hóa đối xứng
+1 khoa chung - nhanh	1 khóa chung - nhanh
+Ma hoa bat doi xung	Mã hóa bất đối xứng
+cap public/private	cặp public/private
+phan phoi khoa, chu ky so	phân phối khóa, chữ ký số
+Hash 1 chieu	Hash 1 chiều
+van tay du lieu	vân tay dữ liệu
+doi 1 bit -> hash khac	đổi 1 bit → hash khác
+dung toan ven va luu mat khau	dùng toàn vẹn và lưu mật khẩu
+kem salt	kèm salt
+Chu ky so	Chữ ký số
+bam + ma hoa bang private key	băm + mã hóa bằng private key
+xac thuc + toan ven + khong choi bo	xác thực + toàn vẹn + không chối bỏ
+xac nhan chu public key	xác nhận chủ public key
+Kenh an toan	Kênh an toàn
+Xac thuc	Xác thực
+mat khau	mật khẩu
+sinh trac hoc	sinh trắc học
+nhieu yeu to	nhiều yếu tố
+Phan quyen	Phân quyền
+nguyen tac least privilege	nguyên tắc least privilege
+Firewall loc goi	Firewall lọc gói
+IDS phat hien xam nhap	IDS phát hiện xâm nhập
+IPS ngan chan	IPS ngăn chặn
+WAF bao ve ung dung web	WAF bảo vệ ứng dụng web
+Loi ung dung pho bien	Lỗi ứng dụng phổ biến
+phong bang validate input	phòng bằng validate input
+Quan tri an ninh va tieu chuan	Quản trị an ninh và tiêu chuẩn
+he thong quan ly an ninh thong tin theo chu trinh PDCA	hệ thống quản lý an ninh thông tin theo chu trình PDCA
+Quy trinh rui ro	Quy trình rủi ro
+xac dinh tai san	xác định tài sản
+de doa/diem yeu	đe dọa/điểm yếu
+danh gia	đánh giá
+xu ly	xử lý
+tranh, giam, chuyen giao bao hiem, chap nhan	tránh, giảm, chuyển giao bảo hiểm, chấp nhận
+giam sat	giám sát
+chinh sach	chính sách
+Dao tao nhan su	Đào tạo nhân sự
+Phan loai thong tin	Phân loại thông tin
+xu ly su co	xử lý sự cố
+danh gia an ninh san pham theo muc EAL	đánh giá an ninh sản phẩm theo mức EAL
+Co cac co quan/tieu chuan quoc gia bo sung	Có các cơ quan/tiêu chuẩn quốc gia bổ sung
+Bien phap con nguoi / ky thuat / vat ly / trien khai	Biện pháp con người / kỹ thuật / vật lý / triển khai
+dao tao	đào tạo
+phong social engineering	phòng social engineering
+phan quyen theo need-to-know	phân quyền theo need-to-know
+ma hoa luu tru/truyen	mã hóa lưu trữ/truyền
+kiem soat ra vao phong may	kiểm soát ra vào phòng máy
+tieu huy o dia an toan	tiêu hủy ổ đĩa an toàn
+segment mang	segment mạng
+Cau truc du lieu + thuat toan	Cấu trúc dữ liệu + thuật toán
+la phan 'tu duy lap trinh' cua FE	là phần 'tư duy lập trình' của FE
+hay gap bai stack/queue	hay gặp bài stack/queue
+do phuc tap sort	độ phức tạp sort
+Tap phan tu cung kieu	Tập phần tử cùng kiểu
+nam lien tiep	nằm liên tiếp
+truy cap O(1) qua index	truy cập O(1) qua index
+Sach nay thuong danh index tu 1 (de hieu)	Sách này thường đánh index từ 1 (dễ hiểu)
+1-chieu, da chieu (nhieu index)	1-chiều, đa chiều (nhiều index)
+phan tu la ban ghi nhieu field khac kieu	phần tử là bản ghi nhiều field khác kiểu
+so phan tu co dinh	số phần tử cố định
+co the doi kich thuoc luc chay	có thể đổi kích thước lúc chạy
+Mang dung duoc cho hash table	Mảng dùng được cho hash table
+can xu ly synonym/collision	cần xử lý synonym/collision
+Uu: truy cap nhanh	Ưu: truy cập nhanh
+Nhuoc: chen/xoa giua mang ton kem (doi hang loat)	Nhược: chèn/xóa giữa mảng tốn kém (dời hàng loạt)
+moi node co data + pointer toi node ke	mỗi node có data + pointer tới node kế
+Thu tu logic do pointer quyet dinh	Thứ tự logic do pointer quyết định
+khong can nam lien tiep bo nho	không cần nằm liên tiếp bộ nhớ
+Chen/xoa chu yeu sua pointer	Chèn/xóa chủ yếu sửa pointer
+hieu qua hon mang khi thay doi cau truc thuong xuyen	hiệu quả hơn mảng khi thay đổi cấu trúc thường xuyên
+1 chieu	1 chiều
+2 chieu	2 chiều
+de duyet nguoc nhung ton bo nho	dễ duyệt ngược nhưng tốn bộ nhớ
+node cuoi tro ve dau	node cuối trỏ về đầu
+Truy cap tuan tu	Truy cập tuần tự
+khong O(1) toi phan tu bat ky	không O(1) tới phần tử bất kỳ
+Phu hop khi khong biet truoc so luong phan tu	Phù hợp khi không biết trước số lượng phần tử
+vao sau ra truoc	vào sau ra trước
+Ung dung	Ứng dụng
+goi ham, de quy	gọi hàm, đệ quy
+danh gia bieu thuc	đánh giá biểu thức
+vao truoc ra truoc	vào trước ra trước
+them cuoi	thêm cuối
+lay dau	lấy đầu
+Dung HP (head) va TP (tail)	Dùng HP (head) và TP (tail)
+Hang doi vong	Hàng đợi vòng
+tai su dung mang huu han	tái sử dụng mảng hữu hạn
+cho day thao tac push/pop hoac enq/deq	cho dãy thao tác push/pop hoặc enq/deq
+hoi trang thai con lai	hỏi trạng thái còn lại
+ve hinh la de dung	vẽ hình là dễ đúng
+cau truc phan cap 1-nhieu	cấu trúc phân cấp 1-nhiều
+goc duy nhat	gốc duy nhất
+khong con	không con
+do sau	độ sâu
+moi node <= 2 con (trai/phai)	mỗi node ≤ 2 con (trái/phải)
+trai < cha < phai - de tim kiem	trái < cha < phải - dễ tìm kiếm
+Duyet	Duyệt
+theo muc	theo mức
+dung cho hang doi uu tien	dùng cho hàng đợi ưu tiên
+nen tang index CSDL	nền tảng index CSDL
+nhieu nhanh, can bang	nhiều nhánh, cân bằng
+mo ta thuat toan bang ky hieu	mô tả thuật toán bằng ký hiệu
+nhanh dung/sai	nhánh đúng/sai
+3 cau truc dieu khien	3 cấu trúc điều khiển
+nen tang lap trinh cau truc	nền tảng lập trình cấu trúc
+Tim kiem	Tìm kiếm
+duyet lan luot	duyệt lần lượt
+khong can sort	không cần sort
+mang da sap xep	mảng đã sắp xếp
+moi buoc bo 1 nua	mỗi bước bỏ 1 nửa
+So sanh mid, qua trai/phai	So sánh mid, qua trái/phải
+trung binh	trung bình
+xau nhat O(n) neu collision nhieu	xấu nhất O(n) nếu collision nhiều
+Can ham hash tot + xu ly de va	Cần hàm hash tốt + xử lý đè và
+Sap xep	Sắp xếp
+de hieu, O(n^2) - phu hop n nho	dễ hiểu, O(n^2) - phù hợp n nhỏ
+trung binh O(n log n)	trung bình O(n log n)
+xau nhat O(n^2) neu chon pivot te	xấu nhất O(n^2) nếu chọn pivot tệ
+luon O(n log n), can them bo nho	luôn O(n log n), cần thêm bộ nhớ
+giu thu tu tuong doi ban ghi bang khoa	giữ thứ tự tương đối bản ghi bằng khóa
+it bo nho phu	ít bộ nhớ phụ
+biet do phuc tap va nhan dien thuat toan qua mo ta buoc	biết độ phức tạp và nhận diện thuật toán qua mô tả bước
+Thuat toan khac va thiet ke	Thuật toán khác và thiết kế
+ham goi lai chinh no + dieu kien dung	hàm gọi lại chính nó + điều kiện dừng
+thuong dung stack he thong	thường dùng stack hệ thống
+Chuoi, do thi	Chuỗi, đồ thị
+duong di ngan nhat - muc hieu	đường đi ngắn nhất - mức hiểu
+so hoc	số học
+chia doi	chia đôi
+co the gap	có thể gặp
+Danh gia thuat toan	Đánh giá thuật toán
+dung dan + hieu qua thoi gian/khong gian	đúng đắn + hiệu quả thời gian/không gian
+Chien luoc	Chiến lược
+khai niem	khái niệm
+Thiet ke	Thiết kế
+module hoa, ro rang input/output va bien	module hóa, rõ ràng input/output và biến
+### S1. Process states (trang thai tien trinh)	### S1. Process states (trạng thái tiến trình)
+dang chiem CPU thuc thi	đang chiếm CPU thực thi
+san sang chay, dang cho duoc cap CPU	sẵn sàng chạy, đang chờ được cấp CPU
+o hang doi ready	ở hàng đợi ready
+cho su kien	chờ sự kiện
+I/O xong, doc dia, nhap lieu	I/O xong, đọc đĩa, nhập liệu
+process cho data tu disk	process chờ data từ disk
+khong chiem CPU	không chiếm CPU
+ket thuc	kết thúc
+bi treo	bị treo
+thuong do swap/admin	thường do swap/admin
+khac Waiting thuan I/O	khác Waiting thuần I/O
+doi I/O	đợi I/O
+I/O xong	I/O xong
+scheduler chon	scheduler chọn
+het time slice	hết time slice
+### S2. Deadlock - 4 dieu kien Coffman	### S2. Deadlock - 4 điều kiện Coffman
+tai nguyen khong chia se dong thoi	tài nguyên không chia sẻ đồng thời
+giu tai nguyen nay vua doi tai nguyen khac	giữ tài nguyên này vừa đợi tài nguyên khác
+khong tước đoạt được tài nguyên đang giữ	không tước đoạt được tài nguyên đang giữ
+chuoi vong doi tai nguyen	chuỗi vòng đợi tài nguyên
+Phong ngua (prevention)	Phòng ngừa (prevention)
+pha 1 trong 4 dieu kien	phá 1 trong 4 điều kiện
+Pho bien	Phổ biến
+loai Circular wait	loại Circular wait
+danh so tai nguyen, cap theo thu tu	đánh số tài nguyên, cấp theo thứ tự
+loai Hold and wait	loại Hold and wait
+xin het tai nguyen 1 luc - lang phi	xin hết tài nguyên 1 lúc - lãng phí
+do thi cho, giet process / lay lai TN	đồ thị chờ, giết process / lấy lại TN
+### S3. Scheduling va starvation	### S3. Scheduling và starvation
+den truoc phuc vu truoc, khong uu tien	đến trước phục vụ trước, không ưu tiên
+it starvation	ít starvation
+chia time quantum, cong bang, it starvation	chia time quantum, công bằng, ít starvation
+job ngan uu tien	job ngắn ưu tiên
+job dai co the bi starvation (doi mai)	job dài có thể bị starvation (đợi mãi)
+uu tien thap co the starvation	ưu tiên thấp có thể starvation
+giam bang aging	giảm bằng aging
+tang uu tien theo thoi gian cho	tăng ưu tiên theo thời gian chờ
+co the thiet ke de giam starvation	có thể thiết kế để giảm starvation
+### S4. Series / Parallel reliability (tinh so)	### S4. Series / Parallel reliability (tính số)
+noi tiep	nối tiếp
+Vi du	Ví dụ
+du 1 OK	dù 1 OK
+### S5. Compiler / Interpreter / Assembler / Linker / Loader / Firmware	### S5. Compiler / Interpreter / Assembler / Linker / Loader / Firmware
+dich TOAN BO source	dịch TOÀN BỘ source
+truoc khi chay	trước khi chạy
+thuong chay nhanh sau khi dich	thường chạy nhanh sau khi dịch
+debug cham hon	debug chậm hơn
+phai dich lai	phải dịch lại
+dich + thuc thi tung cau/tung phan ngay	dịch + thực thi từng câu/từng phần ngay
+de debug, chay cham hon	dễ debug, chạy chậm hơn
+it tao file object rieng	ít tạo file object riêng
+dich assembly	dịch assembly
+KET HOP nhieu object module	KẾT HỢP nhiều object module
+thanh 1 executable/load module	thành 1 executable/load module
+nap chuong trinh vao bo nho de chay	nạp chương trình vào bộ nhớ để chạy
+phan mem thap, thuong nam trong ROM/flash	phần mềm thấp, thường nằm trong ROM/flash
+con khi mat dien	còn khi mất điện
+Khac application/utility nam o dia	Khác application/utility nằm ở đĩa
+### S6. Open source / license	### S6. Open source / license
+cho phep xem, sua, phan phoi lai source	cho phép xem, sửa, phân phối lại source
+Dung khi muon share code	Dùng khi muốn share code
+tra phi, ma dong	trả phí, mã đóng
+mien phi dung nhung chua chac open source	miễn phí dùng nhưng chưa chắc open source
+dung thu / thue theo ky	dùng thử / thuê theo kỳ
+### S7. Peripheral vs CPU internals	### S7. Peripheral vs CPU internals
+ngoai vi	ngoại vi
+ngoai CPU	ngoài CPU
+Khong phai peripheral	Không phải peripheral
+nam trong/gan CPU	nằm trong/gần CPU
+### S8. Human interface / interface design	### S8. Human interface / interface design
+Muc dich	Mục đích
+cai thien tuong tac nguoi-may	cải thiện tương tác người-máy
+de dung	dễ dùng
+de tiep can	dễ tiếp cận
+Hieu qua	Hiệu quả
+giam loi nguoi dung, tang nang suat, giam dao tao	giảm lỗi người dùng, tăng năng suất, giảm đào tạo
+KHONG phai muc tieu chinh	KHÔNG phải mục tiêu chính
+giam gia hardware, tang nhiet CPU, bo multimedia	giảm giá hardware, tăng nhiệt CPU, bỏ multimedia
+### S9. File organization	### S9. File organization
+luu theo thu tu, doc lan luot	lưu theo thứ tự, đọc lần lượt
+truy cap nhanh theo key/dia chi	truy cập nhanh theo key/địa chỉ
+phu hop 1 trieu ban ghi + customer ID duy nhat	phù hợp 1 triệu bản ghi + customer ID duy nhất
+ghi theo thu tu nhan duoc, khong sort	ghi theo thứ tự nhận được, không sort
+insert nhanh, search cham	insert nhanh, search chậm
+tuan tu, cham random access	tuần tự, chậm random access
+### S10. SQL bo sung	### S10. SQL bổ sung
+xoa CA dinh nghia bang VA du lieu	xóa CẢ định nghĩa bảng VÀ dữ liệu
+xoa dong	xóa dòng
+co the co WHERE	có thể có WHERE
+cau truc bang con	cấu trúc bảng còn
+xoa het dong, giu cau truc	xóa hết dòng, giữ cấu trúc
+tuy DBMS	tùy DBMS
+Tim luong cao thu 2 theo phong	Tìm lương cao thứ 2 theo phòng
+dung subquery	dùng subquery
+voi dieu kien < MAX	với điều kiện < MAX
+Hoac	Hoặc
+trong window function	trong window function
+### S11. Truyen file - tinh thoi gian	### S11. Truyền file - tính thời gian
+Cong thuc	Công thức
+Kich_thuoc_bit / (Toc_do_bit_hieu_dung)	Kích_thước_bit / (Tốc_độ_bit_hiệu_dụng)
+Toc do hieu dung	Tốc độ hiệu dụng
+duong 64 kbps	đường 64 kbps
+So bit	Số bit
+Toc do hieu dung	Tốc độ hiệu dụng
+Luu y don vi	Lưu ý đơn vị
+thuong trong de mang	thường trong đề mạng
+### S12. Two's complement - cach tinh	### S12. Two's complement - cách tính
+So am n bit dang 2's complement	Số âm n bit dạng 2's complement
+neu bit cao nhat = 1 thi la so am	nếu bit cao nhất = 1 thì là số âm
+Cach 1	Cách 1
+gia tri	giá trị
+tong	tổng
+Cach 2	Cách 2
+dao bit roi +1 de lay tri tuyet doi, roi them dau tru	đảo bit rồi +1 để lấy trị tuyệt đối, rồi thêm dấu trừ
+Dao bit	Đảo bit
+thap phan	thập phân
+so la	số là
+Hoac	Hoặc
+### S13. Hex / radix nhac lai	### S13. Hex / radix nhắc lại
+Hex dung 0-9, A-F	Hex dùng 0-9, A-F
+Octal (bat phan): chu so 0-7	Octal (bát phân): chữ số 0-7
+Decimal: 0-9	Decimal: 0-9
+moi chu so thap phan = 4 bit	mỗi chữ số thập phân = 4 bit
+khong phai he dem 0-7	không phải hệ đếm 0-7
+### S14. Postfix / Reverse Polish Notation (RPN)	### S14. Postfix / Reverse Polish Notation (RPN)
+Trung to	Trung tố
+Tien to (prefix)	Tiền tố (prefix)
+Hau to (postfix/RPN)	Hậu tố (postfix/RPN)
+vi * uu tien hon +, nhan B*C truoc roi cong A	vì * ưu tiên hơn +, nhân B*C trước rồi cộng A
+Quy tac hau to	Quy tắc hậu tố
+toan hang truoc, toan tu sau	toán hạng trước, toán tử sau
+dung stack	dùng stack
+gap so thi PUSH	gặp số thì PUSH
+gap phep thi POP 2 toan hang, tinh, PUSH ket qua	gặp phép thì POP 2 toán hạng, tính, PUSH kết quả
+Nhan 2 ve	Nhân 2 vế
+De thi hay cho bieu thuc, chon dung chuoi postfix	Đề thi hay cho biểu thức, chọn đúng chuỗi postfix
+### S15. Stack / Queue mo phong buoc	### S15. Stack / Queue mô phỏng bước
+PUSH them dinh, POP lay dinh	PUSH thêm đỉnh, POP lấy đỉnh
+Vi du rong	Ví dụ rỗng
+dinh con lai	đỉnh còn lại
+ENQUEUE cuoi, DEQUEUE dau	ENQUEUE cuối, DEQUEUE đầu
+dau hang	đầu hàng
+con C,D	còn C,D
+### S16. Linked list chen	### S16. Linked list chèn
+can con tro Head de duyet tu dau	cần con trỏ Head để duyệt từ đầu
+Chen X giua B va C	Chèn X giữa B và C
+Khong can bat dau tu Tail	Không cần bắt đầu từ Tail
+singly khong co prev	singly không có prev
+### S17. BST va duyet cay	### S17. BST và duyệt cây
+moi nut trai < nut hien tai < nut phai	mỗi nút trái < nút hiện tại < nút phải
+moi cay con cung thoa	mỗi cây con cũng thỏa
+Inorder (trai-nut-phai) tren BST cho day TANG DAN	Inorder (trái-nút-phải) trên BST cho dãy TĂNG DẦN
+Vi du nut	Ví dụ nút
+nut-trai-phai	nút-trái-phải
+trai-phai-nut	trái-phải-nút
+Cay nhi phan day du	Cây nhị phân đầy đủ
+chieu cao toi thieu	chiều cao tối thiểu
+muc 0-based hoac so canh	mức 0-based hoặc số cạnh
+can doc de	cần đọc đề
+chieu cao toi thieu	chiều cao tối thiểu
+thuong = floor(log2 n) = 4 (canh) hoac so level = 5	thường = floor(log2 n) = 4 (cạnh) hoặc số level = 5
+O de FE/tieng Viet hay lay so level-1 = 4 khi 31 nut perfect	Ở đề FE/tiếng Việt hay lấy số level-1 = 4 khi 31 nút perfect
+### S18. Sort / Search bo sung	### S18. Sort / Search bổ sung
+moi luot "noi" phan tu lon ve cuoi	mỗi lượt "nổi" phần tử lớn về cuối
+swap ke nhau	swap kề nhau
+moi luot chon MIN (hoac max) trong phan con lai, doi len dau phan chua sort	mỗi lượt chọn MIN (hoặc max) trong phần còn lại, đổi lên đầu phần chưa sort
+Vi du	Ví dụ
+lan 1 chon min=16, doi voi 84	lần 1 chọn min=16, đổi với 84
+thuoc Divide and Conquer (chia de tri)	thuộc Divide and Conquer (chia để trị)
+khong phai (hoac khong dac trung DnC)	không phải (hoặc không đặc trưng DnC)
+khong can mang da sort	không cần mảng đã sort
+best case so sanh = 1 (dung ngay dau)	best case so sánh = 1 (đúng ngay đầu)
+CAN mang da sort	CẦN mảng đã sort
+So lan so sanh toi da	Số lần so sánh tối đa
+Vi du N=7 (mang 7 pt) tim 1 pt: toi da 3 lan	Ví dụ N=7 (mảng 7 phần tử) tìm 1 phần tử: tối đa 3 lần
+### S19. Divide and Conquer	### S19. Divide and Conquer
+Chia bai toan thanh bai con giong nhau, giai roi ket hop	Chia bài toán thành bài con giống nhau, giải rồi kết hợp
+Vi du	Ví dụ
+tinh luy thua nhanh	tính lũy thừa nhanh
+brute force / don gian, khong xep nhom DnC chuan trong de	brute force / đơn giản, không xếp nhóm DnC chuẩn trong đề
+### S20. ISMS / PDCA	### S20. ISMS / PDCA
+thiet lap muc tieu, chinh sach, danh gia rui ro	thiết lập mục tiêu, chính sách, đánh giá rủi ro
+tai san thong tin, chon bien phap	tài sản thông tin, chọn biện pháp
+trien khai bien phap / van hanh	triển khai biện pháp / vận hành
+giam sat, do, review tinh trang	giám sát, đo, review tình trạng
+cai tien	cải tiến
+Vay	Vậy
+### S21. Risk assessment dung	### S21. Risk assessment đúng
+Khong the xu ly het moi rui ro	Không thể xử lý hết mọi rủi ro
+uoc luong thiet hai * tan suat, xep hang uu tien theo muc do rui ro	ước lượng thiệt hại * tần suất, xếp hạng ưu tiên theo mức độ rủi ro
+SAI: chi nhin loss value ma bo qua tan suat	SAI: chỉ nhìn loss value mà bỏ qua tần suất
+khong duoc lap lai phan tich	không được lặp lại phân tích
+khong duoc dung du lieu qua khu tuong tu	không được dùng dữ liệu quá khứ tương tự
+### S22. Information security policy	### S22. Information security policy
+Chinh sach the hien tu duy / huong di cua to chuc ve hanh vi va tieu chi phan doan de dat muc an ninh	Chính sách thể hiện tư duy / hướng đi của tổ chức về hành vi và tiêu chí phán đoán để đạt mức an ninh
+Ap dung toan to chuc, khong phu thuoc tung san pham bao mat	Áp dụng toàn tổ chức, không phụ thuộc từng sản phẩm bảo mật
+Khong phai de cong bo vulnerability ra ben ngoai	Không phải để công bố vulnerability ra bên ngoài
+### S23. CIA map dap an de	### S23. CIA map đáp án đề
+khong lo hong cho ben thu 3	không lộ hổng cho bên thứ 3
+thong tin / quy trinh xu ly chinh xac va day du	thông tin / quy trình xử lý chính xác và đầy đủ
+user truy cap tai san thong tin dung luc can	user truy cập tài sản thông tin đúng lúc cần
+dung user duoc uy quyen	đúng user được ủy quyền
+### S24. Cryptography - de hay ra	### S24. Cryptography - đề hay ra
+1 khoa chung	1 khóa chung
+nhanh	nhanh
+kho chia khoa an toan cho nhieu nguoi neu dung chung 1 key	khó chia khóa an toàn cho nhiều người nếu dùng chung 1 key
+public ma hoa / private giai ma	public mã hóa / private giải mã
+hoac nguoc cho chu ky	hoặc ngược cho chữ ký
+CHAM hon symmetric	CHẬM hơn symmetric
+public key duoc cong khai	public key được công khai
+KHONG can phan phoi bi mat khoa ma hoa public	KHÔNG cần phân phối bí mật khóa mã hóa public
+Hybrid thuc dung	Hybrid thực dụng
+dung public key de ma hoa/gui common key phien	dùng public key để mã hóa/gửi common key phiên
+roi dung common key ma hoa du lieu	rồi dùng common key mã hóa dữ liệu
+Day la mo ta "appropriate" hay chon	Đây là mô tả "appropriate" hay chọn
+ngan lo hong NOI DUNG	ngăn lộ hổng NỘI DUNG
+Khong ngan DoS mail	Không ngăn DoS mail
+khong tu dong bao ve log server	không tự động bảo vệ log server
+mat key van la van de quan ly key	mất key vẫn là vấn đề quản lý key
+### S25. Digital signature muc tieu	### S25. Digital signature mục tiêu
+Dam bao noi dung khong bi sua trai phep	Đảm bảo nội dung không bị sửa trái phép
+xac thuc nguoi ky + non-repudiation	xác thực người ký + non-repudiation
+Khi release software: chu yeu	Khi release software: chủ yếu
+KHONG phai: han che user	KHÔNG phải: hạn chế user
+do la license/DRM	đó là license/DRM
+chung minh ban quyen	chứng minh bản quyền
+cam ket bao tri	cam kết bảo trì
+### S26. Biometric	### S26. Biometric
+tu mat	từ mắt
+van tay	vân tay
+giong	giọng
+long ban tay	lòng bàn tay
+khuon mat	khuôn mặt
+### S27. WPA / WAF / NAT / UTM	### S27. WPA / WAF / NAT / UTM
+ma hoa / bao mat Wireless LAN	mã hóa / bảo mật Wireless LAN
+chan tan cong loi ung dung web	chặn tấn công lỗi ứng dụng web
+map 1 internal IP <-> 1 external IP	map 1 internal IP <-> 1 external IP
+tich hop nhieu chuc nang bao mat	tích hợp nhiều chức năng bảo mật
+### S28. Proxy	### S28. Proxy
+thay client gui request ra server (phia client)	thay client gửi request ra server (phía client)
+thay server nhan request tu client (phia server)	thay server nhận request từ client (phía server)
+can bang tai, SSL offload, bao ve origin	cân bằng tải, SSL offload, bảo vệ origin
+Khac IDS (phat hien xam nhap)	Khác IDS (phát hiện xâm nhập)
+khac personal firewall chi PC	khác personal firewall chỉ PC
+### S29. OP25B	### S29. OP25B
+loc/chan may tram noi bo gui SMTP (port 25) thang ra mail server ngoai	lọc/chặn máy trạm nội bộ gửi SMTP (port 25) thẳng ra mail server ngoài
+giam spam may nhiem	giảm spam máy nhiễm
+Khac SPF/DKIM (xac thuc domain), honeypot, web content filter	Khác SPF/DKIM (xác thực domain), honeypot, web content filter
+### S30. JPCERT/CC	### S30. JPCERT/CC
+la coordinating body cho Information Security Early Warning Partnership	là coordinating body cho Information Security Early Warning Partnership
+doi tac canh bao som an ninh thong tin	đối tác cảnh báo sớm an ninh thông tin
+o Nhat	ở Nhật
+Khac IPA security center thuan tuy	Khác IPA security center thuần túy
+khac Cabinet Secretariat center	khác Cabinet Secretariat center
+khac du an dieu tra cryptography thuan	khác dự án điều tra cryptography thuần
+### S31. Antivirus	### S31. Antivirus
+so khop mau virus da biet	so khớp mẫu virus đã biết
+hieu qua virus BIET, co ten virus	hiệu quả virus BIẾT, có tên virus
+bat hanh vi la	bắt hành vi lạ
+kho luon cho ra ten chinh xac nhu signature	khó luôn cho ra tên chính xác như signature
+Signature file KHONG chi la 16/32 byte dau cua moi virus	Signature file KHÔNG chỉ là 16/32 byte đầu của mỗi virus
+mo ta do sai/qua don gian	mô tả đó sai/quá đơn giản
+Cung size file truoc/sau nhiem khong dam bao restore duoc chi bang "go virus"	Cùng size file trước/sau nhiễm không đảm bảo restore được chỉ bằng "gỡ virus"
+### S32. Password admin dung	### S32. Password admin đúng
+Sau khi xac minh danh tinh user quen mat khau	Sau khi xác minh danh tính user quên mật khẩu
+RESET password va de user tu dat mat khau moi	RESET password và để user tự đặt mật khẩu mới
+SAI: giai ma hash/password roi gui email/phone	SAI: giải mã hash/password rồi gửi email/phone
+password dung hash 1 chieu, khong "decrypt"	password dùng hash 1 chiều, không "decrypt"
+gui password cu la nguy hiem	gửi password cũ là nguy hiểm
+### S33. Social engineering	### S33. Social engineering
+Loi dung con nguoi, khong can exploit ky thuat	Lợi dụng con người, không cần exploit kỹ thuật
+gia danh nguoi uy quyen goi dien hoi password	giả danh người ủy quyền gọi điện hỏi password
+Khac: tan cong lo hong OS, remote control bot, crack PIN bang chuong trinh (ky thuat)	Khác: tấn công lỗ hổng OS, remote control bot, crack PIN bằng chương trình (kỹ thuật)
+### S34. SSL/TLS	### S34. SSL/TLS
+Giao thuc ket hop xac thuc client-server (qua certificate) va ma hoa du lieu truyen	Giao thức kết hợp xác thực client-server (qua certificate) và mã hóa dữ liệu truyền
+xac thuc POP co bao ve password mot phan	xác thực POP có bảo vệ password một phần
+uy quyen API	ủy quyền API
+khung xac thuc mang	khung xác thực mạng
+### S35. CCU (Communication Control Unit)	### S35. CCU (Communication Control Unit)
+Thuc hien lap/thao goi du lieu truyen, dieu khien loi truyen	Thực hiện lắp/tháo gói dữ liệu truyền, điều khiển lỗi truyền
+dinh dang phu hop duong truyen	định dạng phù hợp đường truyền
+quay so	quay số
+Tach biet chuc nang	Tách biệt chức năng
+### S36. Multiplexing ngan gon	### S36. Multiplexing ngắn gọn
+chia khe thoi gian (time slots) cho tung kenh/user	chia khe thời gian (time slots) cho từng kênh/user
+chia bang tan so	chia băng tần số
+chia buoc song anh sang	chia bước sóng ánh sáng
+gan ma cho user	gán mã cho user
+### S37. Multimedia	### S37. Multimedia
+noi dung hinh anh chuyen dong	nội dung hình ảnh chuyển động
+am thanh	âm thanh
+tinh	tĩnh
+chu	chữ
+du lieu nhi phan chung	dữ liệu nhị phân chung
+### S38. Semiconductor vs magnetic disk	### S38. Semiconductor vs magnetic disk
+truy cap nhanh hon, it chuyen dong co	truy cập nhanh hơn, ít chuyển động cơ
+re / dung luong lon, cham hon do seek+quay	rẻ / dung lượng lớn, chậm hơn do seek+quay
+### S39. Response time / Availability / Real-time / Batch / Centralized	### S39. Response time / Availability / Real-time / Batch / Centralized
+thoi gian tu gui yeu cau den nhan phan hoi	thời gian từ gửi yêu cầu đến nhận phản hồi
+xac suat he thong dung duoc khi can	xác suất hệ thống dùng được khi cần
+Payroll thang 1 lan	Payroll tháng 1 lần
+Dat ve may bay can ngay	Đặt vé máy bay cần ngay
+moi xu ly dồn 1 may trung tam	mọi xử lý dồn 1 máy trung tâm
+nhieu may	nhiều máy
+### S40. File management OS	### S40. File management OS
+Quan ly file dong thoi nhieu user, khoa/quyen truy cap, toan ven	Quản lý file đồng thời nhiều user, khóa/quyền truy cập, toàn vẹn
+khong phai language processing hay licensing	không phải language processing hay licensing
+### S41. OS Process Management	### S41. OS Process Management
+Chiu trach nhiem scheduling: process nao nhan CPU (time)	Chịu trách nhiệm scheduling: process nào nhận CPU (time)
+### S42. Generation + storage tom tat de	### S42. Generation + storage tóm tắt đề
+don vi nho nhat	đơn vị nhỏ nhất
+da ngon ngu quoc te	đa ngôn ngữ quốc tế
+### S43. Tu khoa / cong thuc bo sung chot	### S43. Từ khóa / công thức bổ sung chốt
+dam bao atomic transaction phan tan	đảm bảo atomic transaction phân tán
+du an la temporary (co thoi han bat dau-ket thuc ro)	dự án là temporary (có thời hạn bắt đầu–kết thúc rõ)
+So mau 16-bit	Số mẫu 16-bit
+Tu khoa bo sung de self-test day du	Từ khóa bổ sung để self-test đầy đủ
+co thoi han bat dau va ket thuc xac dinh (temporary)	có thời hạn bắt đầu và kết thúc xác định (temporary)
+16-bit patterns: 2^16 = 65536 = 65,536 loai (viet 216 co the nham 2^16)	16-bit patterns: 2^16 = 65536 = 65,536 loại (viết 216 có thể nhầm 2^16)
+Chuong nay	Chương này
+giai thich	giải thích
+duoc cau tao	được cấu tạo
+the nao	thế nào
+du lieu	dữ liệu
+bieu dien	biểu diễn
+hoat dong	hoạt động
+Day la nen tang	Đây là nền tảng
+de hieu	để hiểu
+cac chuong sau	các chương sau
+Cau hinh	Cấu hình
+co ban may tinh	cơ bản máy tính
+Lich su may tinh	Lịch sử máy tính
+Nam don vi chinh	Năm đơn vị chính
+Bieu dien du lieu trong may tinh	Biểu diễn dữ liệu trong máy tính
+cong nghe tang toc	công nghệ tăng tốc
+bo nho phu	bộ nhớ phụ
+Kien thuc doanh nghiep	Kiến thức doanh nghiệp
+ke toan	kế toán
+toan ung dung	toán ứng dụng
+phap ly va tuan thu	pháp lý và tuân thủ
+phan 'xa hoi & quan ly' cua FE	phần 'xã hội & quản lý' của FE
+Muc dich hoat dong doanh nghiep	Mục đích hoạt động doanh nghiệp
+Hoat dong doanh nghiep bam theo	Hoạt động doanh nghiệp bám theo
+triet ly quan tri	triết lý quản trị
+quan diem, ly do ton tai, gia tri cot loi	quan điểm, lý do tồn tại, giá trị cốt lõi
+Muc tieu cot loi	Mục tiêu cốt lõi
+tao loi nhuan va ton tai lau dai	tạo lợi nhuận và tồn tại lâu dài
+trong quan tri lanh manh	trong quản trị lành mạnh
+Dong thoi dong gop xa hoi	Đồng thời đóng góp xã hội
+neu mat long tin xa hoi se kho ton tai	nếu mất lòng tin xã hội sẽ khó tồn tại
+Chu trinh co ban	Chu trình cơ bản
+huy dong von	huy động vốn
+san xuat/dich vu	sản xuất/dịch vụ
+ban hang thu tien	bán hàng thu tiền
+tra chi phi	trả chi phí
+luong, gia von	lương, giá vốn
+lai/lo	lãi/lỗ
+chia co tuc + giu lai tai dau tu	chia cổ tức + giữ lại tái đầu tư
+Dac diem to chuc	Đặc điểm tổ chức
+chuc nang kinh te	chức năng kinh tế
+tach so huu va quan ly	tách sở hữu và quản lý
+doc lap quyet dinh	độc lập quyết định
+he thong hop tac nhieu nguoi	hệ thống hợp tác nhiều người
+Van hanh theo PDCA	Vận hành theo PDCA
+cai tien lien tuc	cải tiến liên tục
+trach nhiem xa hoi cua doanh nghiep	trách nhiệm xã hội của doanh nghiệp
+voi cong dong, moi truong	với cộng đồng, môi trường
+giam tieu thu dien thiet bi IT	giảm tiêu thụ điện thiết bị IT
+dung tai nguyen hieu qua	dùng tài nguyên hiệu quả
+dinh hinh gia tri/thuong hieu	định hình giá trị/thương hiệu
+giam sat quan tri de dang tin	giám sát quản trị để đáng tin
+voi thi truong/khach hang	với thị trường/khách hàng
+cong bo thong tin tai chinh/kinh doanh	công bố thông tin tài chính/kinh doanh
+bat buoc hoac tu nguyen cho nha dau tu	bắt buộc hoặc tự nguyện cho nhà đầu tư
+ke hoach duy tri/khoi phuc nghiep vu	kế hoạch duy trì/khôi phục nghiệp vụ
+khi that bai/thien tai	khi thất bại/thiên tai
+thoi gian dung chap nhan duoc	thời gian dừng chấp nhận được
+Co cau to chuc	Cơ cấu tổ chức
+Hinh thuc von	Hình thức vốn
+nha nuoc	nhà nước
+tu nhan/cong ty	tư nhân/công ty
+khong chia lai	không chia lãi
+Cong ty co phan	Công ty cổ phần
+huy dong von bang co phan	huy động vốn bằng cổ phần
+chiu trach nhiem huu han	chịu trách nhiệm hữu hạn
+co the IPO len san	có thể IPO lên sàn
+Co quan	Cơ quan
+quyet dinh cao nhat	quyết định cao nhất
+dieu hanh quan trong	điều hành quan trọng
+co the co outside director	có thể có outside director
+kiem toan giam sat	kiểm toán giám sát
+Co cau	Cơ cấu
+Anh huong quyen han va giao tiep	Ảnh hưởng quyền hạn và giao tiếp
+Vai tro C-level	Vai trò C-level
+Quan tri kinh doanh	Quản trị kinh doanh
+Nguon luc quan tri	Nguồn lực quản trị
+nguoi - may - vat tu - tien - thong tin	người - máy - vật tư - tiền - thông tin
+Quy trinh	Quy trình
+quan tri theo muc tieu	quản trị theo mục tiêu
+can do bang chi so	cần đo bằng chỉ số
+gan voi chien luoc	gắn với chiến lược
+Ke toan tai chinh	Kế toán tài chính
+bao cao cho ben ngoai	báo cáo cho bên ngoài
+co dong, chu no, co quan	cổ đông, chủ nợ, cơ quan
+Nguyen tac so kep	Nguyên tắc sổ kép
+Bao cao chinh	Báo cáo chính
+Bang can doi	Bảng cân đối
+doanh thu - chi phi = lai/lo	doanh thu - chi phí = lãi/lỗ
+dong tien	dòng tiền
+Khau hao	Khấu hao
+phan bo nguyen gia TSCD qua nhieu ky	phân bổ nguyên giá TSCĐ qua nhiều kỳ
+Ton kho	Tồn kho
+anh huong gia von va lai	ảnh hưởng giá vốn và lãi
+Chi so	Chỉ số
+thanh toan ngan han	thanh toán ngắn hạn
+De hay hoi doc hieu so lieu co ban	Đề hay hỏi đọc hiểu số liệu cơ bản
+Ke toan quan tri	Kế toán quản trị
+phuc vu ra quyet dinh noi bo	phục vụ ra quyết định nội bộ
+khong bat buoc mau nhu tai chinh	không bắt buộc mẫu như tài chính
+Chi phi co dinh / bien doi	Chi phí cố định / biến đổi
+diem hoa von	điểm hòa vốn
+dinh phi / (don gia - bien phi don vi)	định phí / (đơn giá - biến phí đơn vị)
+Lap ngan sach	Lập ngân sách
+so sanh thuc te - dinh muc	so sánh thực tế - định mức
+tinh phi theo hoat dong	tính phí theo hoạt động
+muc hieu	mức hiểu
+Xac suat, ky vong, phuong sai, phan phoi chuan	Xác suất, kỳ vọng, phương sai, phân phối chuẩn
+nen cho quyet dinh rui ro	nền cho quyết định rủi ro
+To hop/chinh hop, tap hop	Tổ hợp/chỉnh hợp, tập hợp
+Sai so tinh toan may	Sai số tính toán máy
+lam tron, cat bot, tran so	làm tròn, cắt bớt, tràn số
+lien he chuong hardware	liên hệ chương hardware
+quy hoach tuyen tinh	quy hoạch tuyến tính
+ham muc tieu voi rang buoc tuyen tinh	hàm mục tiêu với ràng buộc tuyến tính
+nghiem o dinh mien kha thi	nghiệm ở đỉnh miền khả thi
+mang cong viec	mạng công việc
+thoi gian som/muon	thời gian sớm/muộn
+duong critical path	đường critical path
+kep thoi gian du an	kép thời gian dự án
+Rat hay thi	Rất hay thi
+ton kho	tồn kho
+hang doi	hàng đợi
+co ban	cơ bản
+cay quyet dinh	cây quyết định
+bai toan van tai/gan cap	bài toán vận tải/gán cặp
+nghien cuu thoi gian/dong tac	nghiên cứu thời gian/động tác
+nang nang suat san xuat	nâng năng suất sản xuất
+uu tien 80/20	ưu tiên 80/20
+nhan qua	nhân quả
+bo sung phan tich dinh tinh	bổ sung phân tích định tính
+quan he chat luong lo hang va xac suat chap nhan trong lay mau	quan hệ chất lượng lô hàng và xác suất chấp nhận trong lấy mẫu
+chat luong toan dien	chất lượng toàn diện
+Phan tich kinh doanh	Phân tích kinh doanh
+ty so tai chinh	tỷ số tài chính
+du bao cau	dự báo cầu
+hoi quy	hồi quy
+ho tro ra quyet dinh	hỗ trợ ra quyết định
+Phap ly, compliance, tieu chuan	Pháp lý, compliance, tiêu chuẩn
+So huu tri tue	Sở hữu trí tuệ
+ban quyen phan mem/tai lieu	bản quyền phần mềm/tài liệu
+sang che	sáng chế
+chong canh tranh khong lanh manh	chống cạnh tranh không lành mạnh
+Luat lien quan bao mat	Luật liên quan bảo mật
+truy cap may tinh trai phep	truy cập máy tính trái phép
+bao ve du lieu ca nhan	bảo vệ dữ liệu cá nhân
+chu ky dien tu	chữ ký điện tử
+toi pham mang	tội phạm mạng
+theo khung quoc gia	theo khung quốc gia
+Lao dong va giao dich	Lao động và giao dịch
+hop dong lao dong	hợp đồng lao động
+khoan thau phu	khoán thầu phụ
+thuong mai dien tu	thương mại điện tử
+bao ve nguoi tieu dung	bảo vệ người tiêu dùng
+tuan thu phap luat + quy che noi bo + dao duc	tuân thủ pháp luật + quy chế nội bộ + đạo đức
+co kenh to giac noi bo	có kênh tố giác nội bộ
+chong hoi lo	chống hối lộ
+Tieu chuan	Tiêu chuẩn
+thuc te thi truong	thực tế thị trường
+Chung nhan	Chứng nhận
+Chien luoc kinh doanh	Chiến lược kinh doanh
+chien luoc cong nghe va mo hinh nganh	chiến lược công nghệ và mô hình ngành
+Ky thuat chien luoc	Kỹ thuật chiến lược
+cach dat muc tieu kinh doanh dua tren triet ly cong ty	cách đạt mục tiêu kinh doanh dựa trên triết lý công ty
+xay dung vi the thi truong	xây dựng vị thế thị trường
+Lien he	Liên hệ
+thay doi huong di	thay đổi hướng đi
+so voi best practice/doi thu manh	so với best practice/đối thủ mạnh
+tham linh vuc moi	thâm lĩnh vực mới
+tao synergy	tạo synergy
+ban hang, san xuat, dau tu, quan tri	bán hàng, sản xuất, đầu tư, quản trị
+theo chat/luong nguon luc	theo chất/lượng nguồn lực
+thi phan #1	thị phần #1
+chien luoc toan dien	chiến lược toàn diện
+tan cong khac biet	tấn công khác biệt
+chuyen biet ngach	chuyên biệt ngách
+bat chuoc, giam gia	bắt chước, giảm giá
+tap trung vao nang luc cot loi kho sao chep	tập trung vào năng lực cốt lõi khó sao chép
+hai long KH	hài lòng KH
+va loi the canh tranh	và lợi thế cạnh tranh
+lien ket khong von	liên kết không vốn
+co von	có vốn
+chuoi gia tri	chuỗi giá trị
+doi thu cung cong doan	đối thủ cùng công đoạn
+thiet ke, thue SX	thiết kế, thuê SX
+nuoc re nhan cong	nước rẻ nhân công
+giam chi phi nhung kho kiem soat tu xa	giảm chi phí nhưng khó kiểm soát từ xa
+Nghien cuu thi truong	Nghiên cứu thị trường
+thuong hieu	thương hiệu
+quan he khach hang lau dai	quan hệ khách hàng lâu dài
+Dat muc tieu do duoc	Đặt mục tiêu đo được
+nhieu chieu	nhiều chiều
+tai chinh, KH, quy trinh, hoc hoi	tài chính, KH, quy trình, học hỏi
+He thong ho tro	Hệ thống hỗ trợ
+tong the tai nguyen	tổng thể tài nguyên
+chuoi cung ung	chuỗi cung ứng
+tri thuc	tri thức
+Chien luoc cong nghe	Chiến lược công nghệ
+phai thang hang business strategy	phải thẳng hàng business strategy
+duong cong S cua cong nghe	đường cong S của công nghệ
+quan ly bang sang che	quản lý bằng sáng chế
+chuyen giao cong nghe	chuyển giao công nghệ
+danh gia cong nghe	đánh giá công nghệ
+Nganh va e-business	Ngành và e-business
+cac hoat dong tao gia tri	các hoạt động tạo giá trị
+canh tranh nganh	cạnh tranh ngành
+doi thu moi	đối thủ mới
+thay the	thay thế
+quyen ban/mua	quyền bán/mua
+tai thiet ke quy trinh de nhay vot hieu qua	tái thiết kế quy trình để nhảy vọt hiệu quả
+khac cai tien nho kaizen	khác cải tiến nhỏ kaizen
+san thuong mai	sàn thương mại
+thanh toan dien tu	thanh toán điện tử
+phan mem	phần mềm
+nen tang	nền tảng
+ha tang	hạ tầng
+desktop ao	desktop ảo
+Thiet bi tieu dung & cong nghiep	Thiết bị tiêu dùng & công nghiệp
+IT nhung vao san pham vat ly	IT nhúng vào sản phẩm vật lý
+Chien luoc he thong thong tin khop voi chien luoc kinh doanh	Chiến lược hệ thống thông tin khớp với chiến lược kinh doanh
+phe duyet	phê duyệt
+ke hoach tin hoc hoa tong the	kế hoạch tin học hóa tổng thể
+Quy trinh IS Strategy	Quy trình IS Strategy
+dung CNTT the nao de thuc thi	dùng CNTT thế nào để thực thi
+hieu qua	hiệu quả
+Quy trinh	Quy trình
+xac nhan business strategy	xác nhận business strategy
+khao sat moi truong & hien trang nghiep vu	khảo sát môi trường & hiện trạng nghiệp vụ
+chien luoc co ban	chiến lược cơ bản
+hinh anh nghiep vu moi	hình ảnh nghiệp vụ mới
+pham vi & muc tieu dau tu	phạm vi & mục tiêu đầu tư
+de xuat	đề xuất
+phe duyet	phê duyệt
+trien khai/giam sat/danh gia	triển khai/giám sát/đánh giá
+chinh sach toi uu tong the + ke hoach	chính sách tối ưu tổng thể + kế hoạch
+Can: chinh sach IT governance	Cần: chính sách IT governance
+nguyen tac dau tu	nguyên tắc đầu tư
+muc tieu toi uu gan business	mục tiêu tối ưu gắn business
+tam nhin to-be	tầm nhìn to-be
+chinh sach doi to chuc/quy trinh	chính sách đổi tổ chức/quy trình
+chinh sach an ninh	chính sách an ninh
+kha nang to chuc dinh huong IT strategy	khả năng tổ chức định hướng IT strategy
+de tao loi the canh tranh va kiem soat rui ro IT	để tạo lợi thế cạnh tranh và kiểm soát rủi ro IT
+muc do chin muoi quy trinh	mức độ chín muồi quy trình
+khung vong doi phan mem/giao dich phat trien	khung vòng đời phần mềm/giao dịch phát triển
+Phan tich as-is / to-be	Phân tích as-is / to-be
+cai tien lien tuc hoac BPR	cải tiến liên tục hoặc BPR
+ban giai phap tong the	bán giải pháp tổng thể
+goi + tu van + tich hop	gói + tư vấn + tích hợp
+khong chi ban goi mem roi	không chỉ bán gói mềm rời
+Lua chon package / custom / cloud / SOA tuy yeu cau va nguon luc	Lựa chọn package / custom / cloud / SOA tùy yêu cầu và nguồn lực
+Lap ke hoach, yeu cau, mua sam	Lập kế hoạch, yêu cầu, mua sắm
+Ke hoach tin hoc hoa tung he thong	Kế hoạch tin học hóa từng hệ thống
+muc tieu, ngan sach, lich, chat luong	mục tiêu, ngân sách, lịch, chất lượng
+feasibility ky thuat - kinh te - van hanh	feasibility kỹ thuật - kinh tế - vận hành
+hieu nang, bao mat, kha dung	hiệu năng, bảo mật, khả dụng
+Ky thuat	Kỹ thuật
+phong van, workshop, quan sat, prototype	phỏng vấn, workshop, quan sát, prototype
+cham thau nha cung cap	chấm thầu nhà cung cấp
+hop dong, tieu chi nghiem thu	hợp đồng, tiêu chí nghiệm thu
+canh bao vendor lock-in va offshore	cảnh báo vendor lock-in và offshore
+tu dinh nghia yeu cau den bao tri/huy	từ định nghĩa yêu cầu đến bảo trì/hủy
+phuong phap, thiet ke, cau hinh	phương pháp, thiết kế, cấu hình
+dinh nghia cac process vong doi he thong	định nghĩa các process vòng đời hệ thống
+System requirements can ro	System requirements cần rõ
+pham vi, chuc nang	phạm vi, chức năng
+tin cay, an ninh, giao dien	tin cậy, an ninh, giao diện
+rang buoc thiet ke, moi truong, chat luong	ràng buộc thiết kế, môi trường, chất lượng
+Danh gia requirements	Đánh giá requirements
+Co the dung prototype/simulation	Có thể dùng prototype/simulation
+nhieu nguoi phat hien loi som	nhiều người phát hiện lỗi sớm
+co moderator chiu trach nhiem	có moderator chịu trách nhiệm
+Cap do test	Cấp độ test
+moi giai doan thiet ke tuong ung 1 cap test	mỗi giai đoạn thiết kế tương ứng 1 cấp test
+theo dac ta, khong nhin code	theo đặc tả, không nhìn code
+theo cau truc code	theo cấu trúc code
+chay lai sau khi sua	chạy lại sau khi sửa
+dung dac ta	đúng đặc tả
+dung nhu cau that	đúng nhu cầu thật
+sua loi	sửa lỗi
+thich nghi moi truong moi	thích nghi môi trường mới
+cai tien chuc nang/hieu nang	cải tiến chức năng/hiệu năng
+ngan loi tuong lai	ngăn lỗi tương lai
+go he thong	gỡ hệ thống
+xoa an toan du lieu	xóa an toàn dữ liệu
+ket thuc license	kết thúc license
+luu tru ho so can thiet	lưu trữ hồ sơ cần thiết
+Phuong phap va thiet ke	Phương pháp và thiết kế
+Mo hinh quy trinh	Mô hình quy trình
+tuan tu	tuần tự
+rui ro	rủi ro
+lap, phan hoi nhanh	lặp, phản hồi nhanh
+module, coupling thap (tot), cohesion cao (tot)	module, coupling thấp (tốt), cohesion cao (tốt)
+metric loi/phuc tap	metric lỗi/phức tạp
+Moi truong & cau hinh	Môi trường & cấu hình
+Quan ly ban quyen/thu vien/OSS dung trong du an	Quản lý bản quyền/thư viện/OSS dùng trong dự án
+tranh vi pham license	tránh vi phạm license
+Tach moi truong	Tách môi trường
+chuan hoa cong cu	chuẩn hóa công cụ
+xac dinh CI	xác định CI
+yeu cau thay doi	yêu cầu thay đổi
+danh gia tac dong	đánh giá tác động
+phe duyet	phê duyệt
+thuc hien	thực hiện
+Kien truc 3 lop	Kiến trúc 3 lớp
+trinh bay	trình bày
+nghiep vu	nghiệp vụ
+du lieu	dữ liệu
+HTTP khong trang thai	HTTP không trạng thái
+duy tri dang nhap	duy trì đăng nhập
+Can HTTPS	Cần HTTPS
+Rui ro	Rủi ro
+bat buoc biet bien phap phong	bắt buộc biết biện pháp phòng
+de mo rong	để mở rộng
+Du an la hoat dong co thoi han	Dự án là hoạt động có thời hạn
+tao san pham/dich vu la	tạo sản phẩm/dịch vụ lạ
+PM de dat QCD trong rang buoc	PM để đạt QCD trong ràng buộc
+Muc tieu va khai niem	Mục tiêu và khái niệm
+tam thoi	tạm thời
+tao deliverable la	tạo deliverable lạ
+ap dung kien thuc/ky nang/cong cu theo PDCA de thanh cong	áp dụng kiến thức/kỹ năng/công cụ theo PDCA để thành công
+Rang buoc cot loi	Ràng buộc cốt lõi
+thoi han	thời hạn
+Them pham vi, rui ro, tai nguyen	Thêm phạm vi, rủi ro, tài nguyên
+Dac diem	Đặc điểm
+lam ro dan	làm rõ dần
+ai bi anh huong/co loi ich	ai bị ảnh hưởng/có lợi ích
+van hoa to chuc, luat, thi truong	văn hóa tổ chức, luật, thị trường
+Vong doi	Vòng đời
+Giai doan	Giai đoạn
+chi phi thap	chi phí thấp
+dinh cao nhan su/chi phi	đỉnh cao nhân sự/chi phí
+PM can nang luc kien thuc + thuc thi + con nguoi	PM cần năng lực kiến thức + thực thi + con người
+lanh dao, giao tiep, dam phan, xung dot, dong luc	lãnh đạo, giao tiếp, đàm phán, xung đột, động lực
+ho tro/kiem soat nhieu du an	hỗ trợ/kiểm soát nhiều dự án
+To chuc	Tổ chức
+PM yeu quyen	PM yếu quyền
+PM manh quyen	PM mạnh quyền
+Trien khai & EVM	Triển khai & EVM
+Nhom quy trinh	Nhóm quy trình
+khoi dong	khởi động
+la tai lieu tong	là tài liệu tổng
+SPI/CPI < 1 la cham/qua chi phi	SPI/CPI < 1 là chậm/quá chi phí
+Hay ra de tinh so	Hay ra đề tính số
+Cac knowledge area	Các knowledge area
+hop nhat ke hoach	hợp nhất kế hoạch
+dieu phoi thay doi tong the	điều phối thay đổi tổng thể
+dong du an	đóng dự án
+thu thap requirement	thu thập requirement
+chia viec cay	chia việc cây
+baseline pham vi	baseline phạm vi
+chong scope creep	chống scope creep
+dinh nghia activity	định nghĩa activity
+quan he	quan hệ
+uoc luong, lich	ước lượng, lịch
+uoc luong	ước lượng
+ngan sach, kiem soat	ngân sách, kiểm soát
+nhan su/team	nhân sự/team
+Quan ly dich vu IT de giao dung cam ket voi khach hang	Quản lý dịch vụ IT để giao đúng cam kết với khách hàng
+va cai tien lien tuc	và cải tiến liên tục
+Muc dich va SLA	Mục đích và SLA
+phuong thuc tao gia tri cho KH bang ket qua KH muon dat	phương thức tạo giá trị cho KH bằng kết quả KH muốn đạt
+thuong vo hinh	thường vô hình
+dich vu dua tren IT	dịch vụ dựa trên IT
+nang luc + quy trinh de thiet ke, chuyen giao, van hanh, cai tien dich vu dung nhu cau KH	năng lực + quy trình để thiết kế, chuyển giao, vận hành, cải tiến dịch vụ đúng nhu cầu KH
+thoa thuan ghi nhan muc dich vu giua nha cung cap va KH	thỏa thuận ghi nhận mức dịch vụ giữa nhà cung cấp và KH
+co the nam trong hop dong	có thể nằm trong hợp đồng
+Noi dung SLA thuong gom	Nội dung SLA thường gồm
+ben tham gia	bên tham gia
+pham vi/ten dich vu	phạm vi/tên dịch vụ
+mo ta dich vu	mô tả dịch vụ
+thoi gian cung cap	thời gian cung cấp
+to chuc lien lac & uu tien	tổ chức liên lạc & ưu tiên
+bao mat	bảo mật
+muc tieu & cach danh gia	mục tiêu & cách đánh giá
+tinh phi	tính phí
+loai tru trach nhiem	loại trừ trách nhiệm
+yeu cau muc dich vu	yêu cầu mức dịch vụ
+He thong quan ly dich vu (SMS)	Hệ thống quản lý dịch vụ (SMS)
+yeu cau va huong dan SMS	yêu cầu và hướng dẫn SMS
+chung nhan he thong quan ly dich vu IT	chứng nhận hệ thống quản lý dịch vụ IT
+Tiep can process + PDCA	Tiếp cận process + PDCA
+lap ke hoach SM	lập kế hoạch SM
+trien khai	triển khai
+do luong, review	đo lường, review
+cai tien hieu luc/hieu qua	cải tiến hiệu lực/hiệu quả
+4 buoc xay dung	4 bước xây dựng
+lech hien trang vs yeu cau	lệch hiện trạng vs yêu cầu
+thiet lap to chuc/SMS	thiết lập tổ chức/SMS
+trien khai ke hoach	triển khai kế hoạch
+van hanh cac process	vận hành các process
+thu vien best practice quan ly dich vu IT	thư viện best practice quản lý dịch vụ IT
+diem tiep xuc chinh	điểm tiếp xúc chính
+voi nguoi dung	với người dùng
+khoi phuc dich vu NHANH, giam anh huong	khôi phục dịch vụ NHANH, giảm ảnh hưởng
+khong bat buoc tim goc loi ngay	không bắt buộc tìm gốc lỗi ngay
+tim root cause, ngan lap lai	tìm root cause, ngăn lặp lại
+thay doi co kiem soat	thay đổi có kiểm soát
+ghi cau hinh	ghi cấu hình
+dam bao dung SLA lau dai	đảm bảo đúng SLA lâu dài
+phan biet Incident vs Problem la cau 'an diem'	phân biệt Incident vs Problem là câu 'ăn điểm'
+Thiet ke, process, van hanh, co so vat chat	Thiết kế, process, vận hành, cơ sở vật chất
+thiet ke dich vu moi/thay doi va dua vao production an toan	thiết kế dịch vụ mới/thay đổi và đưa vào production an toàn
+dao tao	đào tạo
+giam sat	giám sát
+backup dinh ky	backup định kỳ
+dien	điện
+lam mat	làm mát
+an ninh vat ly, moi truong	an ninh vật lý, môi trường
+Kiem toan he thong va kiem soat noi bo dam bao tin cay, tuan thu, hieu qua	Kiểm toán hệ thống và kiểm soát nội bộ đảm bảo tin cậy, tuân thủ, hiệu quả
+gan voi IT governance	gắn với IT governance
+danh gia doc lap de dua ra y kien ve muc tieu kiem soat/tuan thu/tin cay thong tin	đánh giá độc lập để đưa ra ý kiến về mục tiêu kiểm soát/tuân thủ/tin cậy thông tin
+noi bo	nội bộ
+ben ngoai	bên ngoài
+danh gia control cua he thong thong tin ve hieu luc, hieu qua, tin cay, an ninh, tuan thu	đánh giá control của hệ thống thông tin về hiệu lực, hiệu quả, tin cậy, an ninh, tuân thủ
+Kiem toan vien can doc lap va dao duc nghe nghiep	Kiểm toán viên cần độc lập và đạo đức nghề nghiệp
+Quy trinh	Quy trình
+lap ke hoach	lập kế hoạch
+khao sat so bo	khảo sát sơ bộ
+thu thap bang chung	thu thập bằng chứng
+phat hien	phát hiện
+bao cao	báo cáo
+toan moi truong IT	toàn môi trường IT
+tren tung ung dung	trên từng ứng dụng
+quy trinh do HĐQT/BGĐ/nhan vien thuc hien de dam bao hop ly	quy trình do HĐQT/BGĐ/nhân viên thực hiện để đảm bảo hợp lý
+hieu qua van hanh	hiệu quả vận hành
+tin cay bao cao tai chinh	tin cậy báo cáo tài chính
+tuan thu phap luat	tuân thủ pháp luật
+Thanh phan kieu COSO	Thành phần kiểu COSO
+Loai control	Loại control
+ngan	ngăn
+phat hien	phát hiện
+khac phuc	khắc phục
+tach nguoi phe duyet / ghi so / giu tai san de giam gian lan	tách người phê duyệt / ghi sổ / giữ tài sản để giảm gian lận
+Uy quyen, ghi chep, doi chieu doc lap	Ủy quyền, ghi chép, đối chiếu độc lập
+khuon kho dieu huong IT tao gia tri kinh doanh va quan ly rui ro IT	khuôn khổ điều hướng IT tạo giá trị kinh doanh và quản lý rủi ro IT
+board/executive chiu trach nhiem	board/executive chịu trách nhiệm
+Can alignment IT-business	Cần alignment IT-business
+do luong hieu qua dau tu IT	đo lường hiệu quả đầu tư IT
+bao mat, tuan thu	bảo mật, tuân thủ
+la bo thuc hanh pho bien	là bộ thực hành phổ biến
+tham chieu COBIT	tham chiếu COBIT
+la 1 cong cu dam bao IT governance van hanh that	là 1 công cụ đảm bảo IT governance vận hành thật
+ON NHANH TRUOC THI	ÔN NHANH TRƯỚC THI
+chuyen co so	chuyển cơ sở
+Cach dung	Cách dùng
+doc tung muc	đọc từng mục
+tu viet lai so do	tự viết lại sơ đồ
+lam bai Exercises cuoi chuong trong sach	làm bài Exercises cuối chương trong sách
+File nay thay the ban	File này thay thế bản
+chi tieu de	chỉ tiêu đề
+moi dong la noi dung on that	mỗi dòng là nội dung ôn thật
+Nguon	Nguồn
+'''
+
+from pathlib import Path
+text = Path('TOM_TAT_ON_THI_FE_VOL1_VOL2.txt').read_text(encoding='utf-8')
+# Sort by length descending so longer phrases match first
+items = []
+for line in pairs.strip().splitlines():
+    if not line.strip() or '\t' not in line:
+        continue
+    a,b = line.split('\t',1)
+    items.append((a,b))
+items.sort(key=lambda x: -len(x[0]))
+n=0
+for a,b in items:
+    if a in text:
+        c = text.count(a)
+        text = text.replace(a,b)
+        n += c
+Path('TOM_TAT_ON_THI_FE_VOL1_VOL2.txt').write_text(text, encoding='utf-8')
+print('replacements', n)
+# sample
+print(text[:600])
+print('---')
+print('has diacritics', any(ord(ch)>127 for ch in text))

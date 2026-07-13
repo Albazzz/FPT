@@ -1,0 +1,29 @@
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Intermediate extracts (regenerable)
+vol1_raw.txt
+vol2_raw.txt
+chapters_extract/
+val.txt
+_v.txt
+_bounds.txt
+_unique_q.txt
+structure.txt
+testwrite.txt
+v2scan2.txt
+key_points_raw.txt
+
+# Local temp
+*.log

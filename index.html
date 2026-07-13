@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Study Hub — Tổng hợp ôn tập</title>
+  <meta name="description" content="Trang tổng hợp 3 module ôn tập: JIT401, Quiz MLN, FE Study Hub. Website tĩnh, deploy GitHub Pages." />
+  <meta name="theme-color" content="#f5f7fb" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/study-site.css" />
+  <link rel="stylesheet" href="css/hub.css" />
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./">
+        <span class="brand-mark">SH</span>
+        <span>Study Hub</span>
+      </a>
+      <div class="nav-links">
+        <a href="jl/">JIT401</a>
+        <a href="MLN/">Quiz MLN</a>
+        <a href="wedJfe/">FE Study</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-mini">
+      <div class="container">
+        <span class="eyebrow">Static site · GitHub Pages</span>
+        <h1>Tổng hợp ôn tập</h1>
+        <p>
+          Chọn một module bên dưới để mở trang tương ứng. Mỗi mục là website tĩnh riêng
+          trong thư mục <code>jl/</code>, <code>MLN/</code> hoặc <code>wedJfe/</code>.
+        </p>
+        <div class="stat-row" style="max-width: 520px">
+          <div class="stat"><strong>3</strong><span>Module</span></div>
+          <div class="stat"><strong>HTML</strong><span>Web tĩnh</span></div>
+          <div class="stat"><strong>GH</strong><span>Pages ready</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0">
+      <div class="container home-grid">
+        <article class="card home-card">
+          <div class="hub-card-top">
+            <span class="cat-icon hub-icon hub-icon--jit">IT</span>
+            <span class="badge badge-accent">Thư mục jl/</span>
+          </div>
+          <h2>JIT401</h2>
+          <p>
+            Tài liệu học nhanh song ngữ JP–VI theo giáo trình JIT401, kèm ôn luyện quiz,
+            quiz mẫu và quiz PT. Lưu câu sai trên trình duyệt.
+          </p>
+          <div class="meta">
+            <span class="badge">Tài liệu</span>
+            <span class="badge">Quiz</span>
+            <span class="badge">JP–VI</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="jl/">Vào JIT401</a>
+          </div>
+        </article>
+
+        <article class="card home-card">
+          <div class="hub-card-top">
+            <span class="cat-icon hub-icon hub-icon--mln">MLN</span>
+            <span class="badge badge-accent">Thư mục MLN/</span>
+          </div>
+          <h2>Quiz MLN</h2>
+          <p>
+            Ôn tập trắc nghiệm MLN: xáo câu, lưu câu sai, tìm kiếm, phím tắt và làm lại
+            các câu đã sai trong phiên học.
+          </p>
+          <div class="meta">
+            <span class="badge">Trắc nghiệm</span>
+            <span class="badge">Câu sai</span>
+            <span class="badge">LocalStorage</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="MLN/">Vào Quiz MLN</a>
+          </div>
+        </article>
+
+        <article class="card home-card">
+          <div class="hub-card-top">
+            <span class="cat-icon hub-icon hub-icon--fe">FE</span>
+            <span class="badge badge-accent">Thư mục wedJfe/</span>
+          </div>
+          <h2>FE Study Hub</h2>
+          <p>
+            Ôn thi FE (Vol.1 &amp; Vol.2): tóm tắt kiến thức có mục lục + kiểm tra trắc nghiệm
+            có giải thích, lưu tiến trình local.
+          </p>
+          <div class="meta">
+            <span class="badge">Ôn tập</span>
+            <span class="badge">Kiểm tra</span>
+            <span class="badge">FE</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="wedJfe/">Vào FE Study</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hub-footer">
+    <div class="container">
+      <p>Website tĩnh — deploy <strong>GitHub Pages</strong> (Source: branch root).</p>
+    </div>
+  </footer>
+</body>
+</html>

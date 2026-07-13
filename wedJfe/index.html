@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FE Study — Ôn tập & Kiểm tra</title>
+  <meta name="description" content="Website tĩnh ôn thi FE: tóm tắt kiến thức + kiểm tra trắc nghiệm, lưu tiến trình local." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/study-site.css" />
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#/" data-nav>
+        <span class="brand-mark">FE</span>
+        <span>FE Study Hub</span>
+      </a>
+      <div class="nav-links">
+        <a href="#/" data-nav>Trang chủ</a>
+        <a href="#/study" data-nav>Ôn tập</a>
+        <a href="#/quiz" data-nav>Kiểm tra</a>
+        <a href="#/wrong" data-nav>Câu sai</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <main id="view-home" class="page-view active">
+    <section class="hero-mini">
+      <div class="container">
+        <span class="eyebrow">New FE Textbook · Vol.1 & Vol.2</span>
+        <h1>Ôn tập kiến thức & luyện đề FE</h1>
+        <p>
+          Hai phần: đọc tóm tắt có cấu trúc chương/mục, và làm trắc nghiệm có giải thích,
+          điều hướng mũi tên, lưu tiến trình + danh sách câu sai trên trình duyệt (localStorage).
+        </p>
+        <div class="stat-row" style="max-width:520px">
+          <div class="stat"><strong id="stat-sections">—</strong><span>Mục ôn tập</span></div>
+          <div class="stat"><strong id="stat-questions">—</strong><span>Câu hỏi</span></div>
+          <div class="stat"><strong id="stat-progress">0%</strong><span>Tiến độ quiz</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top:0">
+      <div class="container home-grid">
+        <article class="card home-card">
+          <span class="badge badge-accent">Phần 1</span>
+          <h2>Nội dung ôn tập</h2>
+          <p>
+            Toàn bộ <code>TOM_TAT_ON_THI_FE_VOL1_VOL2.txt</code> chia theo mục,
+            mục lục bên trái, tìm kiếm nhanh, cuộn tới từng phần.
+          </p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="#/study" data-nav>Vào ôn tập</a>
+          </div>
+        </article>
+        <article class="card home-card">
+          <span class="badge badge-accent">Phần 2</span>
+          <h2>Kiểm tra trắc nghiệm</h2>
+          <p>
+            <strong id="home-quiz-count">—</strong> câu hỏi từ ngân hàng ôn + mẫu <code>test.txt</code>.
+            Chọn đáp án → hiện đúng/sai + giải thích. Mũi tên trái/phải chuyển câu. Câu sai được lưu để học lại.
+          </p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="#/quiz" data-nav>Làm bài</a>
+            <a class="btn btn-secondary" href="#/wrong" data-nav>Xem câu sai</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- STUDY -->
+  <main id="view-study" class="page-view">
+    <section class="hero-mini">
+      <div class="container">
+        <span class="eyebrow">Ôn tập</span>
+        <h1>Tóm tắt kiến thức FE</h1>
+        <p>Chọn mục bên trái hoặc tìm kiếm. Nội dung lấy từ file tóm tắt đã tổng hợp.</p>
+      </div>
+    </section>
+    <div class="container study-layout">
+      <aside class="card study-toc">
+        <h3>Mục lục</h3>
+        <input id="toc-search" class="toc-search form-control" type="search" placeholder="Tìm mục..." />
+        <ul id="toc-list" class="toc-list"></ul>
+      </aside>
+      <div id="study-content" class="study-content"></div>
+    </div>
+  </main>
+
+  <!-- QUIZ -->
+  <main id="view-quiz" class="page-view">
+    <section class="hero-mini">
+      <div class="container">
+        <span class="eyebrow">Kiểm tra</span>
+        <h1>Trắc nghiệm FE</h1>
+        <p>Tiến trình được lưu tự động. Bạn có thể đóng tab và làm tiếp lần sau.</p>
+      </div>
+    </section>
+    <div class="container quiz-shell">
+      <div class="mode-tabs" role="tablist">
+        <button type="button" class="active" data-mode="all" id="mode-all">Tất cả câu</button>
+        <button type="button" data-mode="unanswered" id="mode-unanswered">Chưa trả lời</button>
+        <button type="button" data-mode="wrong" id="mode-wrong">Chỉ câu sai</button>
+      </div>
+
+      <div class="quiz-toolbar">
+        <div class="quiz-stats">
+          <span class="badge badge-accent" id="q-total-badge">Tổng 0 câu</span>
+          <span class="badge" id="q-index-badge">Câu 1 / 1</span>
+          <span class="badge badge-done" id="q-answered-badge">Đã làm 0</span>
+          <span class="badge" id="q-correct-badge">Đúng 0</span>
+          <span class="badge" style="background:var(--wrong-bg);color:var(--wrong);border:0" id="q-wrong-badge">Sai 0</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button type="button" class="btn btn-secondary" id="btn-reset-progress">Xóa tiến trình</button>
+          <a class="btn btn-ghost" href="#/wrong" data-nav>Học câu sai →</a>
+        </div>
+      </div>
+
+      <div class="progress-bar" aria-hidden="true"><span id="quiz-progress-fill"></span></div>
+
+      <article class="card quiz-card">
+        <div class="quiz-meta">
+          <span class="badge" id="q-source">bank</span>
+          <span class="badge badge-accent" id="q-id">—</span>
+          <span class="badge" id="q-num">Câu số —</span>
+        </div>
+        <h2 class="q-text" id="q-text">Đang tải câu hỏi…</h2>
+        <div class="options" id="q-options"></div>
+        <div class="explain-box" id="q-explain">
+          <div class="explain-header">
+            <strong id="q-explain-title">Giải thích</strong>
+            <button type="button" class="btn btn-ghost btn-sm" id="btn-toggle-explain" hidden>Ẩn giải thích</button>
+          </div>
+          <div class="explain-body-wrap" id="q-explain-body-wrap">
+            <div id="q-explain-body" class="explain-body"></div>
+          </div>
+        </div>
+        <div class="nav-arrows">
+          <button type="button" class="icon-btn" id="btn-prev" aria-label="Câu trước">←</button>
+          <div class="center-info" id="q-pos">1 / 1</div>
+          <button type="button" class="icon-btn" id="btn-next" aria-label="Câu sau">→</button>
+        </div>
+        <p class="kbd-hint">Phím tắt: ← → chuyển câu · 1–4 chọn đáp án · Enter câu tiếp</p>
+      </article>
+    </div>
+  </main>
+
+  <!-- WRONG LIST -->
+  <main id="view-wrong" class="page-view">
+    <section class="hero-mini">
+      <div class="container">
+        <span class="eyebrow">Học kèm</span>
+        <h1>Câu trả lời sai</h1>
+        <p>Các câu bạn chọn sai được lưu tại đây. Bấm “Làm lại” để nhảy thẳng vào chế độ ôn câu sai.</p>
+      </div>
+    </section>
+    <div class="container wrong-panel">
+      <div class="card">
+        <div class="quiz-toolbar">
+          <h2 style="font-size:1.1rem">Danh sách câu sai (<span id="wrong-count">0</span>)</h2>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button type="button" class="btn btn-primary" id="btn-practice-wrong">Làm lại câu sai</button>
+            <button type="button" class="btn btn-secondary" id="btn-clear-wrong">Xóa danh sách sai</button>
+          </div>
+        </div>
+        <ul class="wrong-list" id="wrong-list"></ul>
+        <p class="wrong-empty" id="wrong-empty">Chưa có câu sai — làm quiz để bắt đầu.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>FE Study Hub · Static site (GitHub Pages) · Dữ liệu từ TOM_TAT + test.txt / BO_300 · Tiến trình lưu localStorage trên máy bạn.</p>
+    </div>
+  </footer>
+
+  <script src="js/data-study.js"></script>
+  <script src="js/data-quiz.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

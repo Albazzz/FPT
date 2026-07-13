@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz MLN – Ôn tập trắc nghiệm</title>
+  <meta name="description" content="Quiz ôn tập trắc nghiệm MLN: ngẫu nhiên, lưu câu sai, tìm kiếm, chọn nhiều đáp án" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-body">
+    <header class="site-nav">
+      <div class="nav-inner container">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+          <div class="brand-text">
+            <strong>Quiz MLN</strong>
+            <span>Ôn tập trắc nghiệm</span>
+          </div>
+        </div>
+        <div class="nav-stats" id="statsBar">
+          <span class="badge badge-done" title="Đúng trong phiên">
+            <i class="fa-solid fa-circle-check"></i>
+            <strong id="statCorrect">0</strong> đúng
+          </span>
+          <span class="badge badge-wrong" title="Câu sai đã lưu">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <strong id="statWrong">0</strong> sai
+          </span>
+          <span class="badge" title="Tiến độ">
+            <i class="fa-solid fa-list-ol"></i>
+            <strong id="statProgress">0</strong>/<span id="statTotal">0</span>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <div class="container quiz-wrap">
+        <nav class="tabs" role="tablist" aria-label="Chế độ làm bài">
+          <button type="button" class="tab active" data-tab="all" role="tab" aria-selected="true">
+            <i class="fa-solid fa-layer-group"></i>
+            Tất cả câu
+            <span class="tab-count" id="badgeAll">0</span>
+          </button>
+          <button type="button" class="tab" data-tab="wrong" role="tab" aria-selected="false">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            Câu sai
+            <span class="tab-count tab-count-warn" id="badgeWrong">0</span>
+          </button>
+        </nav>
+
+        <div class="search-bar card-soft">
+          <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+          <input
+            type="search"
+            id="searchInput"
+            class="search-input"
+            placeholder="Tìm câu hỏi theo nội dung, từ khóa…"
+            autocomplete="off"
+            aria-label="Tìm kiếm câu hỏi"
+          />
+          <button type="button" class="btn btn-ghost btn-sm search-clear hidden" id="btnClearSearch" title="Xóa tìm kiếm">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="search-results hidden" id="searchResults" role="listbox" aria-label="Kết quả tìm kiếm"></div>
+
+        <div class="toolbar card-soft">
+          <label class="toggle">
+            <input type="checkbox" id="shuffleToggle" checked />
+            <span><i class="fa-solid fa-shuffle"></i> Ngẫu nhiên</span>
+          </label>
+          <button type="button" class="btn btn-secondary btn-sm" id="btnReshuffle">
+            <i class="fa-solid fa-arrows-rotate"></i> Xáo lại
+          </button>
+          <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession">
+            <i class="fa-solid fa-rotate-left"></i> Reset điểm
+          </button>
+          <button type="button" class="btn btn-ghost btn-sm btn-danger-text" id="btnClearWrong">
+            <i class="fa-solid fa-trash-can"></i> Xóa câu sai
+          </button>
+        </div>
+
+        <div class="progress-wrap" aria-hidden="true">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <section class="card quiz-card" id="quizCard">
+          <div class="card-meta">
+            <span class="q-index" id="qIndex"><i class="fa-solid fa-circle-question"></i> Câu 1</span>
+            <span class="q-id" id="qId"></span>
+          </div>
+          <h2 class="question" id="questionText">Đang tải…</h2>
+          <p class="multi-hint hidden" id="multiHint">
+            <i class="fa-solid fa-square-check"></i>
+            Chọn nhiều phương án, rồi bấm <strong>Xác nhận</strong>
+          </p>
+          <div class="options" id="options" role="listbox" aria-label="Các phương án"></div>
+          <div class="submit-row hidden" id="submitRow">
+            <button type="button" class="btn btn-primary" id="btnSubmit" disabled>
+              <i class="fa-solid fa-paper-plane"></i> Xác nhận
+            </button>
+            <span class="submit-count" id="submitCount">Đã chọn 0</span>
+          </div>
+          <div class="feedback hidden" id="feedback" role="status"></div>
+          <div class="explain-toggle-row hidden" id="explainToggleRow">
+            <button type="button" class="btn btn-secondary btn-sm" id="btnToggleExplain" aria-expanded="true">
+              <i class="fa-solid fa-lightbulb" id="toggleExplainIcon"></i>
+              <span id="toggleExplainLabel">Ẩn giải thích</span>
+            </button>
+          </div>
+          <div class="explain-panel hidden" id="explainPanel" aria-live="polite"></div>
+          <div class="alt-panel hidden" id="altPanel" aria-live="polite"></div>
+        </section>
+
+        <div class="empty card hidden" id="emptyState">
+          <div class="empty-icon"><i class="fa-solid fa-face-smile"></i></div>
+          <h2 id="emptyTitle">Chưa có câu sai</h2>
+          <p id="emptyDesc">Khi bạn trả lời sai, câu hỏi sẽ được lưu ở tab này để làm lại.</p>
+          <button type="button" class="btn btn-primary" id="btnGoAll">
+            <i class="fa-solid fa-arrow-left"></i> Về tab Tất cả
+          </button>
+        </div>
+
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
+          <button type="button" class="btn btn-secondary btn-nav" id="btnPrev" title="Câu trước (←)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Trước</span>
+          </button>
+          <div class="nav-center">
+            <input type="number" id="jumpInput" min="1" class="jump-input" title="Nhảy tới số câu" aria-label="Nhảy tới số câu" />
+            <button type="button" class="btn btn-secondary btn-sm" id="btnJump">
+              <i class="fa-solid fa-location-arrow"></i> Đi
+            </button>
+          </div>
+          <button type="button" class="btn btn-secondary btn-nav" id="btnNext" title="Câu sau (→)">
+            <span class="nav-label">Sau</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+
+        <p class="hint">
+          <i class="fa-regular fa-keyboard"></i>
+          <kbd>←</kbd> <kbd>→</kbd> chuyển câu · <kbd>A</kbd>–<kbd>E</kbd> chọn · multi: chọn nhiều rồi <kbd>Enter</kbd> xác nhận
+        </p>
+      </div>
+    </main>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

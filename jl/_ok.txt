@@ -1,0 +1,4 @@
+QUIZ_TR=True buildExplain=True size=391745
+const QUIZ_TR = [
+  {qv:"Hình thức nào được gửi/nhận dưới dạng tín hiệu analog?",cv:["A. dữ liệu digital 0 và 1","B. dữ liệu dạng gói (packet)","C. tín hiệu dòng điện (mA) hoặc điện áp (mV)","D. mã nhị phân"],why:"Đáp án đúng là C. Nội dung đáp án: tín hiệu dòng điện (mA) hoặc điện áp (mV). Giải thích (theo giáo trình): アナログは電流・電圧の連続的な信号で送受信されます。 Dạng điền từ: chọn từ phù hợp chỗ trống. Các lựa chọn khác không đúng ngữ cảnh câu hỏi: A (dữ liệu digital 0 và 1); B (dữ liệu dạng gói (packet)); D (mã nhị phân)."},
+  {qv:"Digital biểu diễn loại đại lượng nào?",cv:["A. đại lượng liên tục","B. đại lượng đã số hóa","C. dòng điện 量","D. 波形 量"],why:"Đáp án đúng là B. Nội dung đáp án: đại lượng đã số h

@@ -1,0 +1,488 @@
+[
+  {
+    "id": 441,
+    "question": "Điều gì xảy ra nếu cung thấp hơn cầu?",
+    "options": {
+      "A": "Giá cả cao hơn giá trị",
+      "B": "Giá cả thấp hơn giá trị",
+      "C": "Hàng hóa tạo ra được tăng cao giá bán",
+      "D": "Hàng hóa phong phú"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 442,
+    "question": "Điều gì xảy ra nếu cung lớn hơn cầu? ->B) Thế nào là thời gian lao động xã hội cần thiết?",
+    "options": {
+      "A": "Là khoảng thời gian sản xuất của tuyệt đại bộ phận hàng hóa",
+      "B": "Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hóa nhất định trong điều kiện trình độ kỹ thuật trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình",
+      "C": "Là khoảng thời gian do người có trình độ chuyên môn cao quyết định",
+      "D": "Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hóa nhất định trong điều kiện trình khoa học trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 443,
+    "question": "Nguyên nhân dẫn tới hình thành các tổ chức độc quyền đa ngành đó là:",
+    "options": {
+      "A": "Cạnh tranh gay gắt và đối phó với luật chống độc quyền",
+      "B": "Cạnh tranh giữa các ngành và cạnh tranh đa quốc gia",
+      "C": "Thu lợi nhuận kinh doanh từ chúng khoán",
+      "D": "Đối phó với luật chống độc quyền ở các quốc gia"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 444,
+    "question": "Quốc gia nào thuộc nhóm các nước công nghiệp mới (NICS)?",
+    "options": {
+      "A": "Hoa Kỳ",
+      "B": "Singapore",
+      "C": "Việt Nam",
+      "D": "Trung Quốc"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 445,
+    "question": "Cho ví dụ: nhà tư bản đầu tư 50 USD để mua nguyên vật liệu dệt vải, tốn 5 USD cho hao mòn máy móc để dệt được 10 mét vải từ nguyên liệu trên, 15 USD đề trả công cho công nhân làm việc trong 8 giờ theo thoả thuận, nhưng sau 4 giờ thì công nhân đã làm xong 10 mét vải. Để tăng giá trị thặng dư được tạo ra 15 USD, nhà tư bản cần làm gì?",
+    "options": {
+      "A": "Nhà tư bản cần bắt công nhân tăng ca 4 giờ nữa bên cạnh 8 giờ thỏa thuận",
+      "B": "Nhà tư bản không cần làm gì cả chỉ ngồi không thì giá trị thặng dư cũng tạo ra",
+      "C": "Đầu tư thêm 50 USD cho nguyên liệu, 5 USD cho hao mòn máy móc và bắt công nhân làm thêm 4 giờ nữa như thỏa thuận",
+      "D": "Ngay từ thời điểm làm xong 4 giờ thì giá trị thặng dư đã được tạo ra rồi"
+    },
+    "answer": "C",
+    "answers": null
+  },
+  {
+    "id": 446,
+    "question": "Nền kinh tế tri thức có bản chất là gì?",
+    "options": {
+      "A": "Một phương thức sản xuất mới",
+      "B": "Một hình thái kinh tế - xã hội mới",
+      "C": "Một nấc thang phát triển của lực lượng sản xuất",
+      "D": "Một giai đoạn phát triển cao của nên kinh tế công nghiệp"
+    },
+    "answer": "C",
+    "answers": null
+  },
+  {
+    "id": 447,
+    "question": "Thị trường được hiểu là gì?",
+    "options": {
+      "A": "Tổng hòa những quan hệ kinh tế",
+      "B": "Tổng hòa những quan hệ xã hội",
+      "C": "Tổng hòa những quan hệ lợi ích",
+      "D": "Tổng hòa các quan hệ trao đổi"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 448,
+    "question": "Đối với hao phí lao động cá biệt, quy luật giá trị yêu cầu điều gì?",
+    "options": {
+      "A": "Hao phí lao động cá biệt < hao phí lao động xã hội cần thiết",
+      "B": "Hao phí lao động cá biệt = hao phí lao động xã hội cn thiết",
+      "C": "Hao phí lao động cá biệt ≥ hao phí lao động xã hội cần thiết",
+      "D": "Hao phái lao động cá biệt phải vận động cùng với hao phí lao động xã hội cần thiết"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 449,
+    "question": "Cạnh tranh trong nội bộ ngành dẫn đến hình thành điều gì?",
+    "options": {
+      "A": "Giá cả sản xuất",
+      "B": "Giá trị thị trường",
+      "C": "Giá cà hàng hóa",
+      "D": "Giá trị thặng dư"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 450,
+    "question": "Trong nền sản xuất hàng hóa ngày nay, hình thành những hàng hóa có yếu tố khác với hàng hóa thông thường. Đặc trưng của chúng là",
+    "options": {
+      "A": "Có giá trị sử dụng, có giá cả, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra",
+      "B": "Có giá trị, có giá cả, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra",
+      "C": "Có giá trị sử dụng, có giá trị, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra",
+      "D": "Có giá trị, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra"
+    },
+    "answer": "C",
+    "answers": null
+  },
+  {
+    "id": 451,
+    "question": "Trên phương diện kinh tế chính trị, tái sản xuất là",
+    "options": {
+      "A": "Là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng",
+      "B": "Là quá trình sản xuất liên tục",
+      "C": "Là sự khôi phục lại sản xuất"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 452,
+    "question": "Theo nghĩa trửu tượng, thị trưởng được hiểu như thế nào?",
+    "options": {
+      "A": "Là nơi diễn ra hành vi trao đổi, mua bán hàng hóá giữa các chủ thế kinh tế với nhau",
+      "B": "Là tổng thể các yếu tố kinh tế vận động theo quy luật của thị trường",
+      "C": "Là nơi người bán quyết định giá cà, người mua chi được quyền lựa chọn",
+      "D": "Là tổng hòà các mỗi quan hệ liên quan đến trao đổi, mua bán hàng hóá, dịch vụ trong xã hội"
+    },
+    "answer": "D",
+    "answers": null
+  },
+  {
+    "id": 453,
+    "question": "Tư bản khả biến tồn tại dưới hình thức nào?",
+    "options": {
+      "A": "Tiền lương phải trả cho người lao động",
+      "B": "Nguyên liệu, vật liệu, máy móc, sức lao động",
+      "C": "Hàng hóa, sức lao động",
+      "D": "Vật liệu, máy móc, tiên công trả cho công nhân"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 454,
+    "question": "Cấu tạo kỹ thuật của tư bản được hiểu là",
+    "options": {
+      "A": "Tỷ lệ giữa số lượng tư liệu sản xuất và số lượng sức lao động sử dụng những tư liệu sản xuất đó trong quá trình sản xuất",
+      "B": "Tỷ lệ giữa số lượng nguyên liệu tiêu hao trong quá trình sản xuất và số lượng sức lao động sử dụng những tư liệu sản xuất đó trong quá trình sản xuất",
+      "C": "Tỷ lệ giữa số lượng sức lao động sử dụng trong quá trình sản xuất và tư liệu sản xuất trong quá trình sản xuất",
+      "D": "Tỷ lệ giữa số lượng giá trị của tư bản bất biến và số lượng giá trị của tư bản khả biến cần thiết để tiến hành sản xuất"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 455,
+    "question": "Địa tô tư bản chủ nghĩa được hiểu là gì?",
+    "options": {
+      "A": "Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ",
+      "B": "Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần thu nhập bình quân mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ",
+      "C": "Phần giá trị còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà tư bản kinh doanh đất phải nộp cho địa chủ",
+      "D": "Phần giá trị còn lại sau khi đã khấu trừ đi phần lợi nhuận thu được mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 456,
+    "question": "Trong chủ nghĩa tư bản, người công nhân bán:",
+    "options": {
+      "A": "Sức lao động cho nhà tư bản",
+      "B": "Lao động cho nhà tư bản",
+      "C": "Hàng hóa cho nhà tư bản"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 457,
+    "question": "Trong nền kinh tế thị trưởng thì thị trường có vai trò gì?",
+    "options": {
+      "A": "Điều tiết sản xuất",
+      "B": "Phân bổ lao động",
+      "C": "Là công cụ phân bổ các nguồn lực kinh tế",
+      "D": "Phân bổ tư liệu sàn xuất"
+    },
+    "answer": "C",
+    "answers": null
+  },
+  {
+    "id": 458,
+    "question": "Trong xuất khẩu tư bản, có hai hình thức đầu tư đó là:",
+    "options": {
+      "A": "Đầu tư trực tiếp và đầu tư gián tiếp",
+      "B": "Đầu tư trực tiếp và đầu tư ủy nhiệm",
+      "C": "Đầu tư trực tiếp và đầu tư nhà nước",
+      "D": "Đầu tư tư bản tư nhân và đầu tư tư bản nhà nước"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 459,
+    "question": "Khi các xí nghiệp tham gia chỉ mất độc quyền về lưu thông là hình thức độc quyền nào?",
+    "options": {
+      "A": "Cartel",
+      "B": "Syndicate",
+      "C": "Trust",
+      "D": "Consortium"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 460,
+    "question": "Chủ nghĩa tư bản độc quyền được xem là:",
+    "options": {
+      "A": "Một phương thức sản xuất",
+      "B": "Một giai đoạn phát triển của phương thức sản xuất tư bản chủ nghĩa",
+      "C": "Một hình thái kinh tế xã hội",
+      "D": "Thời kỳ quá độ đi lên chủ nghĩa xã hội"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 461,
+    "question": "Lao động trừu tượng tạo ra",
+    "options": {
+      "A": "Giá trị của hàng hoá",
+      "B": "Giá trị sử dụng của hàng hóa",
+      "C": "Tiền lương",
+      "D": "Lợi nhuận cho tư bản"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 462,
+    "question": "Quy luật giá trị có tác dụng:",
+    "options": {
+      "A": "Điều tiết sản xuất và lưu thông hàng hóa.",
+      "B": "Cải tiến kỹ thuật, tăng năng suất lao động",
+      "C": "Phân hóá những người sản xuất",
+      "D": "Các phương án trả lời đêu đúng"
+    },
+    "answer": "D",
+    "answers": null
+  },
+  {
+    "id": 463,
+    "question": "Tính chất của tư bản bất biến (c) là:",
+    "options": {
+      "A": "Giá trị của nó không thay đổi vẽ lượng và được chuyển nguyên vẹn sang sản phẩm",
+      "B": "Giá trị của nó không thay đổi và được chuyển ngay sang sản phẩm sau một chu kỳ sản xuất",
+      "C": "Giá trị của nó chuyển dân vào sản phẩm qua khấu hao"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 464,
+    "question": "Một trong những tác động tích cực của quy luật giá trị là gì?",
+    "options": {
+      "A": "Người sản xuất có thể sản xuất nhiều loại hàng hóá",
+      "B": "Người tiêu dùng mua được hàng hóá rẻ",
+      "C": "Người sản xuất ngày càng giàu có",
+      "D": "Kích thích lực lượng sản xuất, năng suất lao động tăng"
+    },
+    "answer": "D",
+    "answers": null
+  },
+  {
+    "id": 465,
+    "question": "Thế nào là lao động giản đơn?",
+    "options": {
+      "A": "Là lao động không cần trài qua đào tạo cũng có thể làm được",
+      "B": "Là lao động làm công việc đơn gian",
+      "C": "Là lao động chi làm một công đoạn của quá trình tạo ra hàng hóá",
+      "D": "Lao động của người dưới tuối thành niên"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 466,
+    "question": "Sự phát triển của các tổ chức độc quyền trong ngân hàng đã làm thay đổi quan hệ giữa ngân hàng và các doanh nghiệp công nghiệp đó là:",
+    "options": {
+      "A": "Từ trung gian thanh toán trở thành khống chế mọi hoạt động kinh tế - xã hội",
+      "B": "Từ trung gian thanh toán trở thành cổ đông của các doanh nghiệp nhà nước",
+      "C": "Từ hoạt động cho vay trở thành hoạt động khống chế doanh tư nhân",
+      "D": "Từ hoạt động cho vay trở thành chi phối các doanh nghiệp"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 467,
+    "question": "Theo công thức chung của tư bản thì T' được tính như thế nào?",
+    "options": {
+      "A": "T'= T + t (t>0)",
+      "B": "T'= T +t (t<0)",
+      "C": "T'= T + t t(t>=0)",
+      "D": "T'= T +t +t(t<=0)"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 468,
+    "question": "Quá trình lưu thông tư bản là:",
+    "options": {
+      "A": "Tuần hoàn và chu chuyển giá trị hàng hóa",
+      "B": "Tuần hoàn và chu chuyển tư bản",
+      "C": "Tuần hoàn và chu chuyển hàng hóa",
+      "D": "Tuần hoàn và tích lũy tư bản"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 469,
+    "question": "Trong nền kinh tế thị trường, thị trường KHÔNG thực hiện vai trò nào sau đây?",
+    "options": {
+      "A": "Thực hiện giá trị hàng hóa",
+      "B": "Phân bổ tư liệu sản xuất",
+      "C": "Điều tiết nguồn lực cho sản xuất",
+      "D": "Hoạch định chính sách kinh tế"
+    },
+    "answer": "D",
+    "answers": null
+  },
+  {
+    "id": 470,
+    "question": "Tại sao việc phát triển kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là tất yếu khách quan? Chọn 2 đáp án.",
+    "options": {
+      "A": "Kinh tế thị trường có thế tự hình thành khi có các điều kiện khách quan.",
+      "B": "Kinh tế thị trường tư bản chủ nghĩa là mô hình tối ưu nhất cho mọi quốc gia.",
+      "C": "Kinh tế thị trường là động lực thúc đấy lực lượng sản xuất phát triến nhanh và hiệu quả.",
+      "D": "Kinh tế thị trường giúp Việt Nam độc lập hoàn toàn khỏi các quy luật của thị trường toàn cầu."
+    },
+    "answer": "A",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 471,
+    "question": "Lựa chọn đáp án đúng nhất: Mong muốn dân giàu, nước mạnh, dân chủ, công bằng, văn minh là mong muốn chung của ai?",
+    "options": {
+      "A": "Chỉ các quốc gia phát triển",
+      "B": "Chỉ các quốc gia đang phát triễn",
+      "C": "Các nước xã hội chủ nghĩa mới giảnh được chủ quyền dân tộc",
+      "D": "Tất cả các quốc gia trên thế giới"
+    },
+    "answer": "D",
+    "answers": null
+  },
+  {
+    "id": 472,
+    "question": "Theo C.Mác có một loại hàng hóa đặc biệt mà khi sử dụng nó thì giá trị của nó không những được bảo tồn mà còn tạo ra những giá trị mới lớn hơn giá trị bản thân nó. Hàng hóa đó là gì?",
+    "options": {
+      "A": "Hàng hóa sức lao động",
+      "B": "Thức ăn",
+      "C": "Dịch vụ chăm sóc sức khoẻ",
+      "D": "Nước uống"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 473,
+    "question": "Sự tác động giữa cung và cầu sẽ hình thành:",
+    "options": {
+      "A": "Giá trị cân bằng (hay giá trị thị trường)",
+      "B": "Giá cả cân bằng ( hay giá cả thị trường)",
+      "C": "Giá cả hàng hóa",
+      "D": "Giá trị hàng hóa"
+    },
+    "answer": "B",
+    "answers": null
+  },
+  {
+    "id": 474,
+    "question": "Yếu tố cấu thành thể chế kinh tế thị trường định hướng xã hội chủ nghĩa là:",
+    "options": {
+      "A": "Các bộ quy tắc, chế định, luật pháp",
+      "B": "Các chủ thể tham gia kinh tế thị trường định hướng xã hội chủ nghĩa",
+      "C": "Cơ chế vận hành kinh tế thị trường định hướng xã hội chủ nghĩa",
+      "D": "Các yếu tố thị trường và các thị trường",
+      "E": "Tất cả phương án trên"
+    },
+    "answer": "E",
+    "answers": null
+  },
+  {
+    "id": 475,
+    "question": "Sự vận động của tiền trong nền sản xuất hàng hóa giản đơn (H-T-H), sự vận động của tiền trong nền sản xuất hàng hóa tư bản (T-H-T'). Hãy chỉ ra điểm chung của hai hình thức vận động này? (lựa chọn hai đáp án)",
+    "options": {
+      "A": "Đều có hai thực thể vật chất là tiền và hàng.",
+      "B": "Đều bắt đầu bằng hành vi bán.",
+      "C": "Đều có hai hành vi đối lập nhau - mua và bán.",
+      "D": "Đều kết thúc bằng hành vi mua."
+    },
+    "answer": "A",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 476,
+    "question": "Các nhân tố nào sau đây ảnh hưởng đến năng suất lao động?",
+    "options": {
+      "A": "Trình độ khéo léo trung bình của người lao động; Mức độ phát triển của khoa học và trình độ áp dụng khoa học vào quy trình công nghệ; Sự kết hợp xã hội của quá trình sản xuất; Quy mô và hiệu suất của tư liệu sản xuất; Các điều kiện tự nhiên",
+      "B": "Các chính sách quy định từ nhà nước; Phương pháp và quy định giờ làm việc và đãi ngộ; Sự hợp tác của quá trình làm việc nhóm hiệu quả; Sự phát triển và đào tạo liên tục; Khả năng sáng tạo và đổi mới và thay đổi tư duy",
+      "C": "Trình độ và kỹ năng của người lao động ngày càng được nâng cao; Môi trường làm việc phù hợp phát huy hết khả năng cá nhân; Quản lý và tổ chức công việc có sự phân công rõ ràng; Sức khỏe và tình trạng thể chất của người lao động được đảm bảo; Các chuẩn mực quy tắc và thái độ của người lao động trong lao động sản xuất"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 477,
+    "question": "Mục tiêu mà nền kinh tế thị trường định hướng xã hội chủ nghĩa của Việt Nam hướng tôi bao gồm những gì? Chọn hai đáp án.",
+    "options": {
+      "A": "Xã hội \"dân giàu, nước mạnh, dân chủ, công bằng, văn minh\".",
+      "B": "Kinh tế chỉ vận hành dựa trên nguyên tắc thị trường tự do.",
+      "C": "Cân bằng lợi ích giữa các thành phần kinh tế.",
+      "D": "Hoàn toàn không cần sự quản lý của Nhà nước."
+    },
+    "answer": "A",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 478,
+    "question": "Hiện nay, do sự phát triển của lực lượng sản xuất và khoa học công nghệ đã hình thành các tổ chức độc quyền mới đó là:",
+    "options": {
+      "A": "Concern và Conglomerate",
+      "B": "Concern và Syndicate",
+      "C": "Concern và Trust",
+      "D": "Concern, Conglomerate và consortium"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 479,
+    "question": "Trong cùng một thời gian lao động khi số lượng sản phẩm tăng lên còn giá trị một đơn vị hàng hóa và các điều khác không thay đối thì đó là kết quả của:",
+    "options": {
+      "A": "Tăng cường độ lao động",
+      "B": "Tăng năng suất lao động và tăng cường độ lao động",
+      "C": "Tăng năng suất lao động",
+      "D": "Các phương án trên đều sai"
+    },
+    "answer": "A",
+    "answers": null
+  },
+  {
+    "id": 480,
+    "question": "Lựa chọn đáp án đúng nhất: Trong nền kinh tế thị trường, hoạt động kinh tế được biểu hiện như thể nào?",
+    "options": {
+      "A": "Vô cùng phong phú",
+      "B": "Phong phú",
+      "C": "Trao đối mua bán",
+      "D": "Sản xuất và trao đối hàng hóa"
+    },
+    "answer": "A",
+    "answers": null
+  }
+]

@@ -1,0 +1,336 @@
+22|[Heading8] LỜI GIỚI THIỆU
+23|[Heading8] Xung quanh chúng ta có rất nhiều các thiết bị IT như máy tính, điện thoại di động, máy nghe nhạc, cơ sở hạ tầng thông tin mà tiêu biểu phải kể tới là internet đã trở nên không thể thiếu được trong cuộc sống của chúng ta. Dự báo trong thời gian tới xu hướng này vẫn sẽ tiếp tục với tốc độ phát triển nhanh chóng.
+24|[Heading8] Nhờ vào sự tiến bộ của IT mà cuộc sống của chúng ta ngày càng tiện lợi hơn, tuy vậy có nhiều khi chúng ta còn hạn chế về cách sử dụng cũng như chịu những hành vi làm phiền. Ngoài ra, tùy vào cách sử dụng mà cũng có trường hợp vô tình gây phiền hà đến người khác, đặc biệt có thể gây ra ảnh hưởng nghiêm trọng do trong thời đại hiện nay internet kết nối với toàn thế giới. Để tồn tại trong xã hội thông tin một cách an toàn và giảm thiểu những mặt bất lợi, cần phải hiểu ít nhiều và có những kiến thức cơ bản về kỹ thuật công nghệ thông tin.
+25|[Heading8] Tại Việt Nam, hiện nay nhu cầu phiên dịch tiếng Nhật có kiến thức IT tại Việt Nam cũng như nhu cầu về các kỹ sư IT biết tiếng Nhật tại Việt Nam ngày càng tăng cao. Do vậy, mà ngày càng có nhiều cơ sở đào tạo IT tiếng Nhật tại Việt Nam như Đại học Hà Nội, Đại học FPT, Đại học Thăng Long. Tuy nhiên, vẫn chưa có một giáo trình tiếng Nhật công nghệ thông tin nào bằng tiếng Nhật có kèm giải thích bằng tiếng Việt, ngoài ra các giáo trình tiếng Nhật viết tại Việt Nam có khó khan là không thể cập nhật tình hình của Nhật Bản.
+26|[Heading8] Cuốn sách là giáo trình tiếng Nhật IT đầu tiên được xuất bản ở Việt Nam, được biên soạn dựa trên cuốn “Những kiến thức cơ bản về công nghệ thông tin” nhà xuất bản Shokodo (2006) của GS.TS. Mikio Terasawa, và cuốn “Tin học đại cương và xử lý thông tin” (Tái bản lần 2) nhà xuất bản Shokodo (2011), có bổ sung thêm phần giải thích từ vựng chuyên ngành, từ mới tiếng Việt, bài tập luyện tập, bài kiểm tra nhỏ.
+27|[Heading8] Cuốn sách bao gồm 20 chương, với nội dung phong phú được sắp xếp một cách hệ thống từ những kiến thức chung về IT đến các kiến thức về nguyên lý phần cứng, phần mềm. Mỗi chương là một chủ đề khác nhau nên độc giả cũng có thể thay đổi thứ tự các chương, hoặc chỉ chọn lọc những nội dung mình quan tâm. Để cho người học có thể học được một cách hiệu quả, mỗi chương đều có phần từ mới, phần giải thích từ chuyên ngành, bài tập luyện tập, bài kiểm tra nhỏ và danh mục từ vựng.
+28|[Heading8] Cuốn sách là thành quả của dự án hợp tác cùng nghiên cứu biên soạn sách giáo khoa của Trường Đại học Hà Nội và trường Đại học Nihon, Nhật Bản. Phần bài khóa và phần bài tập luyện tập do GS.TS. Mikio Terasawa, Đại học Nihon, Nhật Bản phụ trách, phần từ mới, phần giải thích từ chuyên ngành, bài kiểm tra nhỏ và phần phụ lục do TS. Nguyễn Thị Minh Hương, Đại học Hà Nội phụ trách.
+29|[Heading8] Chúng tôi mong rằng cuốn sách này sẽ hữu ích với người học và người dạy tiếng Nhật IT cũng như góp phần cho sự phát triển ngành IT ở Việt Nam.
+30|[Heading8] Năm 2013
+31|[Heading8] Tập thể tác giả
+155|[Heading1] コンピュータの基礎(Những kiến thức cơ bản về máy tính)
+380|[Heading2] デジタルとアナログ
+384|[Heading9] 図 1 アナログ量とデジタル量
+385|[Heading2] コンピュータの歴史
+398|[Heading2] 身の回りのコンピュータ
+400|[Heading9] 図 2 コンピュータの種類
+404|[Heading2] コンピュータの機能
+407|[Heading9] 図 3 コンピュータの機能
+411|[Heading9] 図 4 記憶と処理による演算
+412|[Heading2] ファイル
+415|[Heading9] 図 5 フォルダ，ファイルの種類を表すアイコン
+422|[Heading2] フォルダ
+424|[Heading9] 図 6 フォルダアイコン
+429|[Heading9] 図 7 エクスプローラの起動
+436|[Heading9] 図 8 ディレクトリ構造
+437|[Heading2] ドライブ
+499|[Heading4] Từ xa xưa đã có rất nhiều công cụ để tính toán khác nhau.
+524|[Heading4] Có nhiều loại máy tính khác nhau, nhưng chúng đều có thể gọi chung là loại máy móc “ghi nhớ” rồi “xử lý”. Nếu chỉ có một trong hai chức năng này thì không thể gọi là máy tính.
+528|[Heading1] インターネット利用(Sử dụng internet)
+753|[Heading2] ホームページ検索
+760|[Heading2] Web2.0
+779|[Heading2] クラウドコンピューティング
+784|[Heading9] 図 11 クラウドコンピューティング
+787|[Heading2] メール利用の注意
+793|[Heading4] 自分の氏名，連絡先等を明記する
+795|[Heading4] 相手の氏名を明記する
+799|[Heading4] 急な返事を求めない
+801|[Heading4] メールアドレスを確認する
+805|[Heading4] 大きな添付ファイルを送らない
+809|[Heading4] 著作権のあるファイルを送らない
+811|[Heading4] 読めない文字を使わない
+815|[Heading4] 添付ファイルのウィルスをチェックする
+817|[Heading4] 礼儀に気を付ける
+848|[Heading2] 法律
+935|[Heading4] Trong số các phần mềm tải về từ các trang web, ngoài các phần mềm được bán dưới dạng sản phẩm, còn có các phần mềm miễn phí, phần mềm chia sẻ v.v..
+961|[Heading4] Quyền tài sản là quyền bảo hộ quyền lợi của tác giả về phục chế, trình chiếu tác phẩm sáng tác, bao gồm cả giới hạn về quyền sử dụng thứ hai như bán chương trình đã chiếu dưới dạng Video.
+965|[Heading1] IT 機器の現状(Các thiết bị IT)
+1074|[Heading2] 第 3.5 世代携帯電話
+1087|[Heading2] 通信
+1095|[Heading2] 放送
+1104|[Heading2] ハードウェア
+1117|[Heading2] ソフトウェア
+1145|[Heading4] Ngoài chức năng đàm thoại, điện thoại di động có nhiều hình thức truyền thông tin
+1146|[Heading4] đa dạng. Thí dụ, chức năng danh thiếp có thể trao đổi thông tin cá nhân giữa hai điện thoại di động với nhau bằng cách sử dụng đường truyền qua tia hồng ngoại. Ngoài ra, người ta sử dụng Bluetooth để truyền thông tin tới tai nghe, nhờ vậy mà có thể sử dụng chế độ rảnh tay.
+1168|[Heading4] Về phần cứng dùng để nhập thông tin, trong các loại điện thoại như điện thoại thông
+1169|[Heading4] minh (Smart phone) người ta sử dụng cảm ứng bằng bảng điều khiển chạm (Touch panel). Có nhiều loại touch panel khác nhau, nhưng loại tiêu biểu được dùng trong điện thoại di động là loại màn hình cảm ứng điện trở và màn hình điện tĩnh.
+1175|[Heading1] データ通信技術(Công nghệ truyền dữ liệu)
+1415|[Heading2] 有線接続
+1442|[Heading9] 図 16 ラストワンマイル問題
+1446|[Heading2] 無線通信手段
+1492|[Heading4] Mạng không dây được sử dụng để có thể kết nối internet cho nhiều máy tính cùng một lúc hoặc để có thể truy cập internet ở các địa điểm khác nhau trong nhà.
+1517|[Heading4] Việc xem trang chủ, nhận file… gọi là tải xuống, việc gửi email, cập nhật trang chủ của mình … gọi là tải lên.
+1521|[Heading1] ネットワーク(Network)
+1656|[Heading2] コンピュータネットワーク
+1661|[Heading2] インターネット
+1669|[Heading2] ネットワークの形態
+1684|[Heading2] ネットワークの構成
+1700|[Heading2] ネットワークセキュリティ
+1736|[Heading4] Trong các hình thức kết nối của máy tính trong mạng, chia làm 3 loại lớn là kiểu bus, kiểu star, kiểu Ring.
+1762|[Heading4] Trong network, tùy theo cách sắp đặt vị trí các máy tính xử lý mà người ta có thể
+1763|[Heading4] phân chia thành hệ thống xử lý tập trung và hệ thống xử lý phân tán.
+2019|[Heading2] プロトコル
+2030|[Heading2] IP アドレスとドメイン名
+2042|[Heading2] インターネット情報の流れ
+2053|[Heading2] HTML
+2095|[Heading2] XML
+2164|[Heading4] Vì máy tính và các thiết bị phụ kiện của máy tính được sản xuất bởi nhiều nhà sản xuất của nhiều quốc gia khác nhau, nên tất cả đều phải tuân theo một tiêu chuẩn quốc tế nhất định.
+2190|[Heading4] Trong trường hợp bạn muốn gửi các thông tin bí mật qua internet, bạn phải mã hoá văn bản.
+2194|[Heading1] ビジネスにおけるインターネット利用(Sử dụng internet trong thương mại)
+2314|[Heading2] 電子商取引
+2322|[Heading9] 図 34 電子商取引に用いられる技術
+2323|[Heading2] 電子商取引情報の標準化
+2324|[Heading4] EDI
+2330|[Heading4] EOS
+2338|[Heading4] CALS
+2341|[Heading2] 電子マネー
+2346|[Heading9] 図 35 クローズドループ型電子マネーのバリューの流れ
+2350|[Heading9] 図 36 オープンループ型電子マネーのバリューの流れ
+2351|[Heading2] 顧客管理
+2358|[Heading2] 個人情報保護
+2394|[Heading4] EOS là hệ thống đặt hàng, tiếp nhận đơn hàng trực tuyến. Ưu điểm của việc dùng mạng là có thể giao dịch với các khách hàng ở xa và giao dịch 24/24h.
+2420|[Heading4] Đối với ngân hàng, có thể sử dụng tiền mặt mà được nạp trong tài khoản từ trước và có thể sử dụng cơ cấu (cấu trúc) chuyển tiền qua tài khoản như từ trước đến nay.
+2424|[Heading1] 暗号化(Mã hóa)
+2563|[Heading2] 古典的暗号
+2575|[Heading2] 最近の暗号
+2582|[Heading5] "QLKRQ"  f (" NIHON",3)
+2586|[Heading2] 共通鍵と公開鍵
+2590|[Heading9] 図 41 共通鍵方式と公開鍵方式
+2591|[Heading3] 公開鍵方式による秘密文書通信
+2598|[Heading3] 公開鍵方式による認証
+2604|[Heading2] SSL によるウェブ認証
+2638|[Heading4] Nếu bên nhận không biết bên gửi đã dịch chuyển bao nhiêu ký tự thì không thể giải mã được nội dung.
+2664|[Heading4] Người ta gọi việc biến đổi bản gốc sao cho không thể đoán được nội dung là mã hóa, và việc chuyển về bản gốc là giải mã.
+2668|[Heading1] セキュリティ(An toàn và bảo mật)
+2935|[Heading2] 事故
+2947|[Heading2] ウィルス
+2954|[Heading2] サーバに対する攻撃
+2961|[Heading2] パスワード窃盗
+2967|[Heading2] 利用上の注意点
+2969|[Heading4] メール
+2975|[Heading4] ブラウザ
+2980|[Heading4] ウィルス
+2982|[Heading4] ソフトの更新
+2985|[Heading4] ダウンロード
+2988|[Heading4] パスワード
+2991|[Heading2] システムの安全性評価
+2995|[Heading9] 図 47 典型的なコンピュータのエラー曲線
+3056|[Heading4] Máy chủ là máy có nhiều thông tin quan trọng nhất trong các công ty, tổ chức, nên
+3057|[Heading4] máy chủ là đối tượng dễ bị tấn công.
+3082|[Heading4] Do có nguy cơ bị nhiễm vi rút, nếu thấy tên người gửi và tiêu đề gửi là của người mình không biết, thì tốt nhất không cần xác nhận nội dung mà xóa thư đó đi ngay.
+3086|[Heading1] コンピュータの構造(Cấu trúc máy tính)
+3336|[Heading2] コンピュータの構成要素
+3341|[Heading9] 図 52 コンピュータの構成要素
+3342|[Heading2] パソコンの内部構成
+3352|[Heading9] 図 54 パソコン内部のデータの流れ
+3355|[Heading2] 記憶装置の特徴
+3359|[Heading9] 図 55 アクセス速度と記憶容量の関係
+3360|[Heading2] 半導体メモリ
+3383|[Heading9] 図 58 ハードディスクの記憶領域
+3384|[Heading2] CPU
+3428|[Heading4] Máy tính cấu tạo từ 5 bộ phận đó là thiết bị tính toán, thiết bị điều khiển, thiết bị ghi nhớ, thiết bị vào và thiết bị ra. Thiết bị tính toán là thiết bị đầu não của máy tính, thực hiện việc xử lý tính toán. Thiết bị điều khiển đọc dữ liệu từ thiết bị ghi nhớ, làm theo chỉ dẫn của thiết bị tính toán, ghi kết quả tính toán vào thiết bị ghi nhớ, gửi tín hiệu điều khiển. Thiết bị ghi nhớ là bộ phận ghi nhớ nhiều dữ liệu khác nhau. Thiết bị vào tiếp nhận việc nhập dữ liệu từ người sử dụng, thiết bị ra trình kết quả cho người sử dụng
+3457|[Heading4] Bên trong đĩa cứng có vài đĩa kim loại được phủ một lớp vật liệu từ tính, chúng thường xuyên quay vòng với tốc độ vài nghìn vòng trong một phút. Ở đầu cần di chuyển vuông góc với vòng tròn đĩa có gắn đầu đọc.
+3461|[Heading1] CPU の動作原理(Nguyên lý hoạt động của CPU)
+3618|[Heading2] CPU の動作
+3625|[Heading2] 論理素子の歴史
+3644|[Heading2] 論理素子の動作原理
+3673|[Heading2] 論理回路
+3717|[Heading4] Phần cứng của máy tính về cơ bản được cấu tạo bởi mạch lô gic với 2 giá trị 0 và 1. Trong các mạch lô gic có mạch OR. Mạch OR là mạch có các công tắc được nối song song. Nếu hoặc công tắc X hoặc công tắc Y bật thì bóng đèn Z cũng được bật.
+3742|[Heading4] Nguyên lý hoạt động của CPU được căn cứ vào máy turing, một loại máy được nhắc đến như là một khái niệm toán học trước khi máy tính điện tử ra đời.
+3746|[Heading1] 演算処理(Xử lý tính toán)
+3923|[Heading2] 基数
+4017|[Heading2] 2 進数と 10 進数の変換
+4032|[Heading2] 桁数の多い足し算
+4038|[Heading2] 負の表現
+4054|[Heading2] かけ算・割り算
+4072|[Heading2] 数学関数
+4115|[Heading4] Có điểm cần lưu ý với trường hợp là số thực. Thí dụ chúng ta thử cùng suy nghĩ về trường hợp số 0,1 của hệ cơ số 10. Nếu tính toán theo phương pháp như trên thì từ số 0,4 trở đi sự tính toán sẽ bị lặp đi lặp lại như ở hình 12.5. Có nghĩa là số 0,1 của hệ cơ số 10 khi chuyển sang hệ nhị phân sẽ là 0.00011001100110011… và tiếp tục kéo dài đến vô hạn.
+4142|[Heading4] Để thực hiện phép trừ, thì người ta không xây dựng mới mạch phép trừ, mà người ta quy về mạch phép cộng và biểu diễn con số dưới dạng số âm. Cách biểu diễn số âm
+4143|[Heading4] rất đơn giản, người ta quy ước chữ số đầu tiên không phải là để biểu thị con số thông thường mà nó có ý nghĩa biểu thị dấu của con số.
+4147|[Heading1] 情報量(Lượng thông tin)
+4266|[Heading2] 情報量
+4311|[Heading2] 情報量の単位
+4345|[Heading2] 文字の情報量
+4355|[Heading2] 日本語の情報量
+4360|[Heading2] 文字コード
+4429|[Heading4] Trong dữ liệu của máy tính chỉ có các số được biểu hiện bằng cách sắp xếp 0 và 1, bản thân các ký tự không được ghi trong máy. Vì vậy, tùy theo việc lý giải dữ liệu như thế nào mà các kỹ tự biểu hiện ra khác nhau.
+4433|[Heading1] マルチメディア表現(Đa phương tiện)
+4540|[Heading2] MIDI 楽曲情報
+4553|[Heading2] 音声情報
+4559|[Heading9] 図 82 音声情報のデジタル化
+4573|[Heading2] 静止画像
+4577|[Heading9] 表 1 画面解像度の呼び名
+4624|[Heading2] 動画像
+4666|[Heading4] Âm nhạc nhe bằng máy nghe nhạc MP3 hay hình ảnh xem bằng đĩa cứng được số hóa và lưu trữ sẵn vào các thiết bị đó.
+4691|[Heading4] Màn hình tinh thể của máy tính cá nhân hay điện thoại di động là tập hợp của các khối nhỏ với 3 mầu sắc là đỏ, xanh lam, xanh da trời.
+4695|[Heading1] データ通信(Truyền dữ liệu)
+4834|[Heading2] 通信の情報量
+4840|[Heading9] 表 2 代表的な通信速度
+4863|[Heading9] 表 3 代表的な帯域幅
+4879|[Heading2] 文字情報圧縮
+4883|[Heading2] 音声情報圧縮
+4886|[Heading9] 図 86 フーリエ変換による正弦波への分解
+4889|[Heading2] 画像情報圧縮
+4898|[Heading2] 動画像情報圧縮
+4920|[Heading9] 図 92 パリティチェックによる誤り検出
+4924|[Heading9] 図 93 誤り訂正ができない場合
+4954|[Heading4] Để nén dữ liệu người ta sử dụng phần mềm nén. Tùy theo hình thức nén mà đuôi mở rộng của file sau khi nén sẽ là zip, lzh, gz…
+4979|[Heading4] Trong cơ cấu kiểm tra lỗi sai và chỉnh sửa, cách cơ bản nhất đơn giản nhất là phát hiện ra lỗi sai bằng kiểm chẵn lẻ.
+4983|[Heading1] オペレーティングシステム(Hệ điều hành)
+5152|[Heading2] オペレーティングシステムとは
+5158|[Heading2] OS の機能
+5175|[Heading9] 図 96 記憶装置間のデータ移動
+5181|[Heading9] 図 97 見かけ上の同時処理実現法
+5187|[Heading2] OS の種類
+5234|[Heading4] Các phần mềm như Windows, MacOS, Linux… được gọi là hệ điều hành, viết tắt là OS. OS cũng là một loại phần mềm nhưng có vị trí trung gian giữa các phần mềm ứng dụng như word, excel… và phần cứng. Do vậy, trong tiếng Nhật cũng có khi người ta gọi đó là phần mềm cơ bản.
+5260|[Heading4] Việc quản lý nhiều chương trình cùng chạy cùng một lúc được gọi là đa nhiệm.
+5264|[Heading1] データベース理論(Cơ sở dữ liệu)
+5410|[Heading2] データベースとは
+5426|[Heading2] データベースの表現法
+5428|[Heading4] 階層的表現(木構造)
+5434|[Heading4] 網的表現(親子構造)
+5440|[Heading4] 関係的表現
+5446|[Heading2] 関係的表現のデータ操作
+5501|[Heading4] Người ta gọi đơn vị biểu hiện dữ liệu của cơ sở dữ liệu là bản ghi, có 3 cách tiêu biểu để thể hiện quan hệ giữa các bản ghi đó là loại phân cấp, loại dạng lưới, loại quan hệ.
+5526|[Heading4] Các phép toán tập hợp thao tác dữ liệu gồm phép hợp, phép giao, hiệu và phần bù.
+5527|[Heading4] Những phép toán này được sử dụng phổ biến trong tập hợp toán học.
+5531|[Heading1] データベース記述(Mô tả dữ liệu)
+5599|[Heading2] SQL とは
+5625|[Heading2] SQL の基本構文
+5661|[Heading2] 条件検索
+5708|[Heading2] 並べ替え
+5719|[Heading2] 結合
+5767|[Heading4] Vì nhiều phần mềm cơ sở dữ liệu, điển hình là Access của Microsoft, có dữ liệu kiểu quan hệ nên có thể lưu trữ, sử dụng các file bằng định dạng SQL. Hiện nay có phần mềm MySQL là một trong những phần mềm SQL đang được sử dụng miễn phí.
+5792|[Heading4] Trong phần điều kiện ta có thể viết các điều kiện phức tạp bằng cách dùng AND hoặc OR.
+5796|[Heading1] プログラミングの基礎(Cơ sở lập trình)
+5964|[Heading2] プログラミング言語
+5974|[Heading2] プログラムの内部動作
+5980|[Heading2] 高級言語の基本処理
+5982|[Heading4] 代入
+6000|[Heading4] 配列
+6019|[Heading4] 四則演算
+6042|[Heading4] 条件判断
+6092|[Heading4] 繰り返し
+6111|[Heading2] オブジェクト指向
+6151|[Heading4] Ngôn ngữ lập trình là tập hợp các lệnh viết cho máy tính, có quy tắc ngữ pháp nhân tạo. Thí dụ, SQL cũng được coi là một ngôn ngữ lập trình.
+6177|[Heading4] Trong ngôn ngữ thủ tục, người ta viết quy trình bằng ngữ pháp đơn giản, khái niệm hướng đối tượng đã được đề xuất ra để có thể sử dụng lại chương trình đã viết..
+6181|[Heading1] アルゴリズム(Giải thuật)
+6290|[Heading2] アルゴリズム
+6297|[Heading2] フローチャート
+6304|[Heading2] ソーティング
+6341|[Heading2] ヒューマンインタフェースの設計
+6413|[Heading4] Quy trình xử lý cơ bản của một chương trình được gọi là giải thuật. Mục đích của giải thuật là làm rõ các bước nhập, xuất, xử lý.
+6438|[Heading4] Nhìn chung thiết kế của giao diện người máy nhiều trường hợp không thể tiến hành đầy đủ khi xem xét giải thuật, do vậy thường thì người ta sẽ làm thử chương trình thử nghiệm, sau đó chỉnh sửa các vấn đề tồn tại. Việc thiết kế trên cơ sở lỗi phát hiện khi thử như thế này được gọi là sự tạo nguyên mẫu.
+6442|[Heading1] 練習問題，ミニテストの解答
+6527|[Heading4] Thông thường nhiều lượng vật lý xung quanh chúng ta như chiều dài, trọng lượng, thời gian v.v… là lượng liên tục (Analog), trong khi đó máy tính kỹ thuật số làm tròn (xấp xỉ, gần đúng…) các đơn vị lượng này thành các con số nhất định.
+6566|[Heading4] Trạm làm việc (workstation) không khác biệt nhiều so với máy vi tính thông thường về hình dáng cũng như tính năng. Nhưng khác với máy vi tính, trạm làm việc có tính ổn định cao, dù phải hoạt động liên tục trong thời gian dài cũng ít khi xảy ra hỏng hóc.
+6653|[Heading4] Internet là công cụ giao tiếp tuyệt vời giúp mọi người ở khắp nơi trên thế giới có thể tiếp xúc trực tiếp với nhau. Tuy nhiên, nếu không nhìn thấy mặt nhau thì cũng có những trường hợp nói những điều mà tuyệt đối không nói nếu là gặp nhau trực tiếp.
+6693|[Heading4] Văn bản ngày càng được điện tử hóa, CD-R ngày càng phổ biến, internet ngày càng thông dụng khiến cho việc sao chép thông tin bền vững có thể thực hiện một cách dễ dàng. Tuy nhiên, không phải là muốn làm gì cũng được dù kỹ thuật có cho phép. Đặc biệt cần phải lưu ý về quyền sở hữu trí tuệ hiện có rất nhiều văn bản luật pháp quy định.
+6717|[Heading4] Trong thời gian tới, vì ranh giới giữa việc truyền thông tin nhờ vào internet và chức năng điện thoại ngày càng thu hẹp, nên người ta dự đoán rằng cước phí và những hình thức kinh doanh như ký hợp đồng… sẽ có nhiều thay đổi.
+6745|[Heading4] Việc quyết định ứng dụng có thể sử dụng được của điện thoại di động có tiêu chuẩn
+6746|[Heading4] quốc tế là phần mềm gọi là hệ điều hành. Các hệ điều hành tiêu biểu là iOS, Android, Windows Phone, Symbian… Cho dù là loại máy điện thoại của các công ty khác nhau nhưng nếu là cùng một hệ điều hành thì vẫn có thể sử dụng chung nhiều ứng dụng.
+6791|[Heading4] CATV，ADSL，FTTH，truyền tin bằng đường dây điện là các loại điển hình của
+6792|[Heading4] phương tiện có thể kết nối bằng dây kim loại hay cáp quang.
+6831|[Heading4] Là một phương tiện kết nối mạng, truyền tin không dây ngày càng có vai trò quan
+6832|[Heading4] trọng. Phương thức truyền tin không dây tiêu biểu là điện thoại di động, PHS, IrDA, card IC kiểu không tiếp xúc, Bluetooth, LAN không dây…
+6875|[Heading4] Người ta gọi network kết nối cục bộ trong phạm vi một công ty hay trường học là mạng LAN, network kết nối trong phạm vi khu vực rộng hơn là mạng WAN.
+6914|[Heading4] Thông thường máy tính đóng vai trò là máy chủ thì thường lưu trữ nhiều thông tin quan trọng trong LAN. Vì vậy, khi kết nối vào internet có nhiều người không xác định sử dụng thì rất cần phải có cấu tạo đảm bảo an toàn.
+6954|[Heading4] Vì tên miền càng dễ nhớ thì càng có lợi trong kinh doanh, nên đã nhiều lần xảy ra việc tranh chấp tên miền giữa các công ty có tên giống nhau.
+6989|[Heading4] Giống như HTML, việc dùng tag (nhãn/thẻ) để mở rộng phương pháp ghi chép văn bản là XML. XML là viết tắt của eXtensible Markup Language, khác với HTML, đây là ngôn ngữ ghi chép mà người dùng có thể tự do định nghĩa các tag để sử dụng.
+7031|[Heading4] Tiền điện tử có các hình thức là loại dùng IC card, loại dùng internet, loại dùng hỗn hợp cả hai loại trên. Trong loại dùng IC card thì có kiểu khép kín và kiểu mở.
+7070|[Heading4] Thông thường trong trình duyệt sử dụng cấu trúc Cookie, nhớ thông tin ID đối với website, và khi truy cập lại vào website đó thì có thể tự mình truyền đi cho ai đó một cách tự động.
+7114|[Heading4] Xác thực là việc xác nhận xem văn bản được gửi đến có phải là do đúng người đó gửi hay không. Do qua internet không thể nhìn thấy mặt người gửi, nên rất dễ giả mạo người khác, đặc biệt việc xác nhận người đặt hàng trong mua bán trực tuyến rất quan trọng.
+7153|[Heading4] Xét trường hợp A gửi văn bản cho B. Bên nhận B có mã để mã hóa văn bản và có mã để giải mã văn bản. Trong trường hợp này, A sẽ nhận được mã khóa công khai dùng để mã hóa văn bản mà B gửi cho qua internet. Như vậy chỉ có mã dùng để mã hóa là công khai, còn mã dùng để giải mã thì chỉ có B mới lưu giữ và người khác không thể biết được.
+7196|[Heading4] Người ta gọi những email gây phiền hà cho người nhận như email quảng cáo không được chấp nhận, email có nội dung lừa đảo là thư rác. Thông tin trong danh bạ bị lấy cắp do nhiễm vi rút sẽ được sử dụng là địa chỉ để gửi thư rác đến.
+7236|[Heading4] Điểm chú ý khi lập password đó là nên tránh những từ hoặc số có ý nghĩa. Thí dụ, nếu đặt là tên mình, tên nghệ sỹ, tên gia đình, bạn bè, người yêu, vật nuôi, số điện thoại, biển số xe, thì chỉ cần biết được cá nhân đó là có thể dễ dàng suy đoán được. Ngoài ra, những từ đơn có ghi trong từ điển hoặc những từ ngắn đơn giản thì có thể sử dụng các file từ điển của máy tính và tra cứu ra được bằng cách thử tất cả các chìa khóa (duyệt – trâu)
+7278|[Heading4] Đường dẫn cho dòng điện chạy qua giữa CPU, bộ nhớ trên bo mạch chủ được gọi là bus. Tổ hợp IC điều khiển dữ liệu chạy qua bus và dữ liệu với thiết bị ngoại vi được gọi là tập chip.
+7319|[Heading4] Tần số xung nhịp càng cao thì tốc độ tính toán càng nhanh. Tuy nhiên điều này chỉ đúng trong trường hợp so sánh CPU cùng loại. Nếu là CPU khác tập lệnh thì thế mạnh xử lý khác nhau nên nếu chỉ căn cứ vào tần số xung nhịp thì không thể biết được tốc độ tính toán.
+7364|[Heading4] Đi ốt có cấu tạo bởi 2 loại vất chất là dương và âm được dán với nhau. Vật chất âm
+7365|[Heading4] trong trạng thái dư thừa điện tích, vật chất dương trong trạng thái thiếu điện tích, nên điện tích dễ di chuyển từ n sang p, dòng điện chạy theo chiều ngược lại với chiều di chuyển của điện tích, và nó chỉ chạy được một chiều.
+7404|[Heading4] IC là phân tử lô gic của thế hệ 3 được dịch ra là mạch tích hợp, là mạch trong đó
+7405|[Heading4] có khoảng 10 đèn bán dẫn trong một gói tin, về nguyên lý thì không khác so với thế hệ thứ hai.
+7447|[Heading4] Máy vi tính xử lý thông tin bằng hai trạng thái on và off. Con số phù hợp để biểu thị hai trạng thái này là hệ nhị phân. Con số thông thường chúng ta sử dụng là hệ số thập phân, sử dụng mười ký hiệu khác nhau từ 0 đến 9, đến khi hết ký hiệu thì tiếp tục tăng thêm một chữ số.
+7487|[Heading4] Chúng ta cũng có thể biểu hiện phép tính nhân và phép tính chia bằng phép tính
+7488|[Heading4] cộng. Thí dụ trường hợp thực hiện phép tính 5 x 3, 5 biểu diễn bởi hệ nhị phân là 101, 3 biểu diễn bởi hệ nhị phân là 11, nên nếu chúng ta viết 101 ở chữ số là 1 và cộng như khi chúng ta viết phép tính ra thì sẽ được 1111 là số 15 trong hệ thập phân, và với cách như vậy chúng ta có thể thực hiện được phép nhân.
+7531|[Heading4] Chính phủ Việt Nam xác định phát triển nguồn nhân lực về cả số lượng và chất lượng là điều kiện then chốt cho sự thành công của công nghệ phần mềm, bản thân các doanh nghiệp cũng tập trung đào tạo nhân lực; mở rộng sản xuất. Chính phủ Việt Nam đã quyết định chi 70 triệu USD cho công nghệ phần mềm giai đoạn đến 2010, phấn đấu tốc độ tăng trưởng đạt 35% - 40%/năm; doanh thu đạt 800 triệu USD, trong đó 40% là xuất khẩu. Đồng thời, chính phủ cũng đặt mục tiêu đến năm 2010, VN sẽ đứng trong tốp 15 quốc gia gia công phần mềm và dịch vụ hấp dẫn nhất thế giới.
+7567|[Heading4] Khi nói tới thông tin nhiều hay ít thì sẽ có những phán đoán chủ quan tùy theo thông
+7568|[Heading4] tin đó có tác dụng hay không với người nói. Trong lĩnh vực xử lý thông tin, người ta đo lượng thông tin một cách khách quan chứ không có phán đoán chủ quan.
+7612|[Heading4] MIDI là mã đặc thù cho âm nhạc, trường hợp là âm thanh thông thường thì không thể mã hóa thành nốt nhạc.
+7656|[Heading4] Người ta trình chiếu truyện tranh động bằng cách chiếu liên tiếp với tốc độ cao các hình ảnh khác nhau.
+7698|[Heading4] Khi xem trang chủ, tốc độ nhanh chậm mà ta cảm nhận được là rất khác nhau khi kết nối từ nhà riêng và kết nối từ bên ngoài như tại các điểm truy cập… Tốc độ nhanh chậm của đường truyền như thế có thể được thể hiện bằng con số một cách khách quan.
+7737|[Heading4] Trong khi truyền dữ liệu sẽ phát sinh nhiễu do sóng điện của các thiết bị thông tin khác, sự tiếp nối không tốt của các đầu nối, sự tắt mở của các sản phẩm điện tử, sấm sét…, các sai lệch trở nên nhiều hơn nếu có sự tiếp nhận mạnh mẽ những ảnh hưởng này.
+7781|[Heading4] Trước khi OS được lắp đặt vào máy tính, các phần mềm ứng dụng được sản xuất ứng theo từng hãng sản xuất phần cứng. Ngoài ra, các phần cứng như chuột, bàn phím… cũng được nghiên cứu phát triển bởi các hãng. Nhờ OS mà chúng được đồng nhất để sử dụng, nên cải thiện được hiệu quả của việc phát triển sản phẩm. Chỉ cần OS đạt tiêu chuẩn đã quy định thì dù là phần cứng, phần mềm của hãng nào cũng có thể sử dụng bình thường mà không gặp vấn đề trở ngại gì.
+7821|[Heading4] OS không chỉ được cài đặt trong máy tính cá nhân mà còn được cài đặt trong các đồ điện tử gia dụng như máy nghe nhạc, bản đồ điện tử trong xe hơi, thiết bị chơi game…Phần mềm dùng cho đồ điện gia dụng vốn được nghiên cứu sản xuất riêng cho từng loại sản phẩm, nhưng nhờ lắp đặt OS mà thời gian nghiên cứu sản xuất được rút ngắn.
+7863|[Heading4] Việc đặt vé xem hòa nhạc hoặc vé tàu điện có chỉ định sẵn chỗ ngồi được xử lý bằng máy tính đã kết nối trực tuyến. Để tránh tình trạng đặt trùng chỗ ngồi khi có nhiều người trên toàn quốc cùng tiến hành đặt vé, dữ liệu sẽ được quản lý bởi hệ thống cơ sở
+7864|[Heading4] dữ liệu trên máy tính.
+7903|[Heading4] Loại dạng lưới là loại dữ liệu được sắp xếp theo cấu trúc mẹ con, tìm kiếm dữ liệu bằng cách truy nhập tuần tự cấu trúc này. Có thể xem loại này là loại phân cấp chỉ có 2 cấp.
+7947|[Heading4] SQL là viết tắt của các chữ cái đầu Structured Query Language, dịch ra là ngôn ngữ hỏi đáp có cấu trúc. Đó là một tập hợp các lệnh để thao tác cơ sở dữ liệu, mà cơ bản là cơ sở dữ liệu quan hệ.
+7986|[Heading4] Để sắp xếp kết quả của phép chiếu, người ta dùng thuật ngữ ORDER BY. Viết ASC đối với trường hợp sắp xếp theo kiểu tăng dần, DESC đối với trường hợp giảm dần. ASC là viết tắt của từ Ascend (tăng lên), DESC là descend (giảm xuống).
+8029|[Heading4] Trong các phần mềm của máy tính có các phần mềm như word, tính toán bảng biểu… Những phần mềm này được viết bởi tập lệnh gọi là chương trình. Các yếu tố cơ bản của chương trình tương đối đơn giản, bằng việc kết hợp một cách logic các yếu tố đơn giản đó mà người ta có thể thực hiện được các công việc phức tạp.
+8068|[Heading4] Ngoài bốn phép tính cộng trừ nhân chia, một chức năng quan trọng nhất của một chương trình đó là phán đoán điều kiện. Dù nói là phán đoán điều kiện, nhưng không phải là có thể phán đoán các điều kiện phức tạp, mà chỉ giới hạn ở phán đán đơn giản xem là thật hay giả, cụ thể là bằng hay không bằng, phán đoán quan hệ lớn bé.
+8113|[Heading4] Giải thuật phải được xem xét cho từng vấn đề, tuy nhiên đối với vấn đề quan trọng, thường gặp thì người ta đề xuất ra giải thuật hữu hiệu. Tiêu biểu cho vấn đề thường được sử dụng là sorting (phân loại)
+8152|[Heading4] Khi xây dựng một chương trình mới, cùng với việc xử lý nội bộ hiệu quả, yếu tố quan trọng phải tính tới đó là giao diện người máy. Giao diện người máy hay còn gọi là giao diện người dùng là việc dùng tùy ý máy móc như là máy vi tính đối với người sử dụng.
+8155|[Heading1] 附録
+8292|[Heading1] 索引
+8303|[Heading6] Ａ
+8311|[Heading6] Ｂ
+8318|[Heading6] Ｃ
+8329|[Heading6] Ｄ
+8336|[Heading6] Ｅ
+8344|[Heading6] Ｆ
+8347|[Heading6] Ｇ
+8353|[Heading6] Ｈ
+8358|[Heading6] Ｉ
+8369|[Heading6] Ｊ
+8375|[Heading6] Ｌ
+8380|[Heading6] Ｍ
+8390|[Heading6] Ｎ
+8392|[Heading6] Ｏ
+8396|[Heading6] Ｐ
+8399|[Heading6] Ｒ
+8406|[Heading6] Ｓ
+8418|[Heading6] Ｔ
+8420|[Heading6] Ｕ
+8425|[Heading6] Ｖ
+8430|[Heading6] Ｗ
+8437|[Heading6] Ｘ
+8440|[Heading7] あ
+8450|[Heading7] い
+8454|[Heading7] う
+8456|[Heading7] え
+8463|[Heading7] お
+8471|[Heading7] か
+8485|[Heading7] き
+8496|[Heading7] く
+8508|[Heading7] け
+8512|[Heading7] こ
+8520|[Heading7] さ
+8527|[Heading7] し
+8550|[Heading7] す
+8561|[Heading7] せ
+8571|[Heading7] そ
+8574|[Heading7] た
+8581|[Heading7] ち
+8591|[Heading7] つ
+8593|[Heading7] て
+8610|[Heading7] と
+8619|[Heading7] な
+8623|[Heading7] に
+8627|[Heading7] ね
+8631|[Heading7] の
+8633|[Heading7] は
+8653|[Heading7] ひ
+8664|[Heading7] ふ
+8687|[Heading7] へ
+8695|[Heading7] ほ
+8700|[Heading7] ま
+8708|[Heading7] み
+8710|[Heading7] め
+8715|[Heading7] も
+8718|[Heading7] ゆ
+8722|[Heading7] ら
+8726|[Heading7] り
+8731|[Heading7] る
+8733|[Heading7] れ
+8735|[Heading7] ろ
+8740|[Heading7] わ

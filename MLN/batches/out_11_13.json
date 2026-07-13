@@ -1,0 +1,928 @@
+[
+  {
+    "id": 441,
+    "explanation": {
+      "whyCorrect": "Theo quy luật cung – cầu, khi cung thấp hơn cầu (thiếu hàng so với nhu cầu), người mua cạnh tranh nhau để mua, đẩy giá cả lên cao hơn mức giá trị (hoặc cao hơn giá cả cân bằng). Vì vậy cung < cầu → giá cả cao hơn giá trị.",
+      "whyWrong": {
+        "B": "«Giá cả thấp hơn giá trị» xảy ra khi cung lớn hơn cầu (dư thừa hàng), người bán phải hạ giá để tiêu thụ — ngược với tình huống cung thấp hơn cầu.",
+        "C": "«Hàng hóa tạo ra được tăng cao giá bán» diễn đạt mơ hồ, không nêu đúng quan hệ cung – cầu – giá trị. Hệ quả trực tiếp được giáo trình nhấn mạnh là giá cả bị đẩy cao hơn giá trị.",
+        "D": "«Hàng hóa phong phú» mô tả tình trạng dư thừa/cung dồi dào, trái với cung thấp hơn cầu (khan hiếm tương đối)."
+      }
+    }
+  },
+  {
+    "id": 442,
+    "explanation": {
+      "whyCorrect": "Thời gian lao động xã hội cần thiết (theo Mác) là thời gian cần để sản xuất một loại hàng hóa nhất định trong điều kiện trình độ kỹ thuật trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình của xã hội. Đây là cơ sở quyết định độ lớn giá trị hàng hóa.",
+      "whyWrong": {
+        "A": "«Khoảng thời gian sản xuất của tuyệt đại bộ phận hàng hóa» chỉ gợi ý số đông, chưa đủ các điều kiện chuẩn (kỹ thuật, khéo léo, cường độ lao động trung bình).",
+        "C": "Không do «người có trình độ chuyên môn cao» quyết định; giá trị dựa trên mức trung bình xã hội, không phải mức cá biệt của người giỏi nhất.",
+        "D": "Dùng «trình độ khoa học trung bình» thay cho «trình độ kỹ thuật trung bình» — lệch thuật ngữ chuẩn trong định nghĩa thời gian lao động xã hội cần thiết."
+      }
+    }
+  },
+  {
+    "id": 443,
+    "explanation": {
+      "whyCorrect": "Tổ chức độc quyền đa ngành (congomerate) hình thành khi cạnh tranh gay gắt buộc tư bản đa dạng hóa ngành nghề để phân tán rủi ro, đồng thời để đối phó luật chống độc quyền (tránh bị khống chế khi chi phối quá mức một ngành). Đây là nguyên nhân được nêu trong giáo trình.",
+      "whyWrong": {
+        "B": "«Cạnh tranh giữa các ngành và cạnh tranh đa quốc gia» có liên quan bối cảnh chung nhưng không trúng cặp nguyên nhân đặc thù: cạnh tranh gay gắt + đối phó luật chống độc quyền.",
+        "C": "«Thu lợi nhuận từ chứng khoán» là hoạt động tài chính, không phải nguyên nhân hình thành tổ chức độc quyền đa ngành.",
+        "D": "Chỉ nêu «đối phó luật chống độc quyền» — đúng một nửa; thiếu yếu tố cạnh tranh gay gắt trong ngành/giữa các tư bản."
+      }
+    }
+  },
+  {
+    "id": 444,
+    "explanation": {
+      "whyCorrect": "Nhóm NICs (Newly Industrializing Countries — các nước công nghiệp mới) gồm các nền kinh tế công nghiệp hóa nhanh như «bốn con rồng châu Á»: Hàn Quốc, Đài Loan, Hong Kong, Singapore. Singapore thuộc nhóm này.",
+      "whyWrong": {
+        "A": "Hoa Kỳ là nước tư bản công nghiệp phát triển lâu đời (G7), không xếp vào nhóm NICs.",
+        "C": "Việt Nam là nước đang phát triển/công nghiệp hóa, hiện đại hóa, chưa được xếp vào nhóm NICs cổ điển.",
+        "D": "Trung Quốc là nền kinh tế lớn đang trỗi dậy, không thuộc danh mục NICs truyền thống như Singapore."
+      }
+    }
+  },
+  {
+    "id": 445,
+    "explanation": {
+      "whyCorrect": "Trong ví dụ: sau 4 giờ công nhân đã tạo đủ giá trị bù sức lao động (15 USD) + giá trị thặng dư; nhưng 4 giờ còn lại trong ngày làm việc thỏa thuận (8 giờ) chỉ tạo thêm m’ nếu có thêm nguyên liệu và hao mòn máy để sản xuất tiếp. Muốn tăng m thêm 15 USD trong 4 giờ còn lại, nhà tư bản phải đầu tư thêm 50 USD nguyên liệu + 5 USD hao mòn và bắt công nhân làm tiếp 4 giờ theo thỏa thuận — phương pháp giá trị thặng dư tuyệt đối/kéo dài thời gian lao động thặng dư trong ngày.",
+      "whyWrong": {
+        "A": "«Bắt tăng ca 4 giờ bên cạnh 8 giờ» là kéo dài ngoài thỏa thuận; ví dụ yêu cầu tận dụng 4 giờ còn lại trong 8 giờ đã thỏa thuận kèm đầu tư thêm c, không phải tăng ca thêm ngoài ngày làm việc.",
+        "B": "Không «ngồi không» mà vẫn có m — giá trị thặng dư chỉ phát sinh khi sức lao động được sử dụng kết hợp với TLSX; hết nguyên liệu thì không sản xuất tiếp được.",
+        "D": "Sau 4 giờ đã có m, nhưng câu hỏi hỏi cách *tăng thêm* 15 USD m nữa — cần tiếp tục sản xuất với đầu tư bổ sung, không dừng ở thời điểm đó."
+      }
+    }
+  },
+  {
+    "id": 446,
+    "explanation": {
+      "whyCorrect": "Kinh tế tri thức không phải phương thức sản xuất hay hình thái kinh tế – xã hội mới, mà là nấc thang phát triển cao của lực lượng sản xuất (tri thức, khoa học – công nghệ trở thành yếu tố quyết định tăng trưởng).",
+      "whyWrong": {
+        "A": "«Phương thức sản xuất mới» — sai cấp độ: phương thức sản xuất = LLSX + QHSX; kinh tế tri thức chủ yếu phản ánh trình độ LLSX.",
+        "B": "«Hình thái kinh tế – xã hội mới» — quá cao; chưa thay thế CNTB/XHCN như một hình thái hoàn chỉnh.",
+        "D": "«Giai đoạn phát triển cao của nền kinh tế công nghiệp» gần đúng về lịch sử nhưng giáo trình chốt bản chất là nấc thang phát triển của LLSX, không chỉ «giai đoạn của kinh tế công nghiệp»."
+      }
+    }
+  },
+  {
+    "id": 447,
+    "explanation": {
+      "whyCorrect": "Theo kinh tế chính trị Mác-xít, thị trường được hiểu là tổng hòa những quan hệ kinh tế (giữa các chủ thể trong trao đổi, mua bán, phân phối…), không thu hẹp chỉ còn địa điểm hay hành vi mua bán đơn lẻ.",
+      "whyWrong": {
+        "B": "«Tổng hòa quan hệ xã hội» quá rộng (gồm chính trị, văn hóa…); thị trường trước hết là quan hệ kinh tế.",
+        "C": "«Tổng hòa quan hệ lợi ích» chỉ một khía cạnh; lợi ích được thể hiện qua quan hệ kinh tế trên thị trường.",
+        "D": "«Tổng hòa các quan hệ trao đổi» hẹp hơn định nghĩa chuẩn: thị trường bao quát quan hệ kinh tế gắn sản xuất – phân phối – trao đổi – tiêu dùng."
+      }
+    }
+  },
+  {
+    "id": 448,
+    "explanation": {
+      "whyCorrect": "Quy luật giá trị lấy hao phí lao động xã hội cần thiết làm chuẩn. Đối với hao phí lao động cá biệt, yêu cầu là ngang bằng (hoặc hướng tới) hao phí lao động xã hội cần thiết: ai tốn hơn thì lỗ khi bán theo giá trị xã hội; ai tốn ít hơn thì có lợi thế.",
+      "whyWrong": {
+        "A": "Hao phí cá biệt < hao phí xã hội là *kết quả mong muốn* của người sản xuất giỏi (có lợi), không phải «yêu cầu» mang tính chuẩn mực của quy luật đối với mọi hao phí cá biệt.",
+        "C": "Hao phí cá biệt ≥ hao phí xã hội khiến người sản xuất bất lợi/thua lỗ — không phải yêu cầu của quy luật giá trị.",
+        "D": "«Vận động cùng với» mơ hồ, không nêu quan hệ đẳng thức chuẩn: cá biệt so với xã hội cần thiết."
+      }
+    }
+  },
+  {
+    "id": 449,
+    "explanation": {
+      "whyCorrect": "Cạnh tranh trong nội bộ ngành (cùng loại hàng hóa) làm thống nhất các giá trị cá biệt thành giá trị thị trường (giá trị xã hội của hàng hóa đó). Đây là kết quả đặc thù của cạnh tranh nội ngành.",
+      "whyWrong": {
+        "A": "«Giá cả sản xuất» (giá thành + lợi nhuận bình quân) hình thành chủ yếu do cạnh tranh *giữa các ngành* (chu chuyển tư bản, san bằng tỷ suất lợi nhuận).",
+        "C": "«Giá cả hàng hóa» là hình thức biểu hiện bằng tiền của giá trị, không phải kết quả riêng của cạnh tranh nội ngành như giá trị thị trường.",
+        "D": "«Giá trị thặng dư» sinh ra trong sản xuất tư bản chủ nghĩa từ sức lao động, không do cạnh tranh nội ngành «hình thành»."
+      }
+    }
+  },
+  {
+    "id": 450,
+    "explanation": {
+      "whyCorrect": "Trong sản xuất hàng hóa hiện đại xuất hiện những hàng hóa/yếu tố hàng hóa đặc thù (tri thức, quyền sở hữu, một số tài sản…) vẫn có giá trị sử dụng và giá trị, có thể trao đổi – mua bán, nhưng không (hoặc không chủ yếu) do hao phí lao động trực tiếp tạo ra theo kiểu hàng hóa vật thể thông thường. Đặc trưng đúng theo đáp án chuẩn là C.",
+      "whyWrong": {
+        "A": "Nêu «có giá trị sử dụng, có giá cả» nhưng thiếu «có giá trị» và thay bằng giá cả — không đủ cặp thuộc tính hàng hóa theo cách giáo trình chốt đáp án.",
+        "B": "Nêu «có giá trị, có giá cả» nhưng thiếu «giá trị sử dụng» — thiếu thuộc tính cơ bản của hàng hóa.",
+        "D": "Chỉ «có giá trị, có thể trao đổi» — thiếu giá trị sử dụng và không đủ mô tả đặc trưng so với hàng hóa thông thường."
+      }
+    }
+  },
+  {
+    "id": 451,
+    "explanation": {
+      "whyCorrect": "Trên phương diện kinh tế chính trị, tái sản xuất là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng (bao gồm cả tái sản xuất giản đơn và mở rộng), không chỉ là «sản xuất liên tục» hay «khôi phục» một lần.",
+      "whyWrong": {
+        "B": "«Quá trình sản xuất liên tục» gần nghĩa nhưng thiếu ý «lặp lại và phục hồi không ngừng» — nội dung chuẩn của khái niệm tái sản xuất.",
+        "C": "«Sự khôi phục lại sản xuất» hẹp, gợi ý phục hồi sau gián đoạn, không bao quát tái sản xuất như chu trình thường xuyên của xã hội."
+      }
+    }
+  },
+  {
+    "id": 452,
+    "explanation": {
+      "whyCorrect": "Theo nghĩa trừu tượng, thị trường là tổng hòa các mối quan hệ liên quan đến trao đổi, mua bán hàng hóa, dịch vụ trong xã hội — khái quát quan hệ kinh tế, không chỉ «chỗ» diễn ra giao dịch.",
+      "whyWrong": {
+        "A": "«Nơi diễn ra hành vi trao đổi…» là nghĩa cụ thể/hẹp (địa điểm, chợ), không phải nghĩa trừu tượng.",
+        "B": "«Tổng thể các yếu tố kinh tế vận động theo quy luật thị trường» chung chung, không trúng định nghĩa thị trường theo nghĩa trừu tượng.",
+        "C": "Sai bản chất: giá cả do quan hệ cung – cầu và nhiều chủ thể quyết định, không phải «người bán quyết định giá, người mua chỉ lựa chọn»."
+      }
+    }
+  },
+  {
+    "id": 453,
+    "explanation": {
+      "whyCorrect": "Tư bản khả biến (v) là phần tư bản nhà tư bản ứng ra để mua sức lao động — tồn tại dưới hình thức tiền lương (tiền công) trả cho người lao động. Đây là bộ phận làm thay đổi (tăng) giá trị trong sản xuất.",
+      "whyWrong": {
+        "B": "«Nguyên liệu, vật liệu, máy móc, sức lao động» trộn c và v; nguyên liệu – máy móc thuộc tư bản bất biến.",
+        "C": "«Hàng hóa, sức lao động» không phải hình thức tồn tại điển hình của v (v là giá trị sức lao động dưới dạng tiền công).",
+        "D": "«Vật liệu, máy móc, tiền công» gộp cả c và v; tư bản khả biến chỉ là tiền công/sức lao động."
+      }
+    }
+  },
+  {
+    "id": 454,
+    "explanation": {
+      "whyCorrect": "Cấu tạo kỹ thuật của tư bản là tỷ lệ giữa số lượng tư liệu sản xuất và số lượng sức lao động sử dụng những TLSX đó — phản ánh mặt kỹ thuật, hiện vật của quan hệ giữa tư bản chết và lao động sống.",
+      "whyWrong": {
+        "B": "Chỉ «nguyên liệu tiêu hao» hẹp hơn «tư liệu sản xuất» (còn công cụ, máy móc…).",
+        "C": "Đảo tỷ lệ (sức lao động / TLSX) — không đúng cách diễn đạt chuẩn cấu tạo kỹ thuật.",
+        "D": "«Tỷ lệ giá trị c / v» là cấu tạo *giá trị* (hoặc cấu tạo hữu cơ khi gắn với kỹ thuật), không phải cấu tạo kỹ thuật."
+      }
+    }
+  },
+  {
+    "id": 455,
+    "explanation": {
+      "whyCorrect": "Địa tô tư bản chủ nghĩa là phần giá trị thặng dư còn lại sau khi đã khấu trừ lợi nhuận bình quân mà nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ (chủ đất). Đây là m’ chuyển hóa thành địa tô.",
+      "whyWrong": {
+        "B": "«Thu nhập bình quân» không phải thuật ngữ chuẩn; phải là *lợi nhuận bình quân*.",
+        "C": "«Phần giá trị còn lại» + «kinh doanh đất» mơ hồ; đúng là phần *giá trị thặng dư* sau lợi nhuận bình quân trong kinh doanh nông nghiệp.",
+        "D": "«Phần giá trị… sau lợi nhuận thu được» sai logic: địa tô không phải phần còn lại sau toàn bộ lợi nhuận thực thu, mà là phần m’ vượt lợi nhuận bình quân nộp cho địa chủ."
+      }
+    }
+  },
+  {
+    "id": 456,
+    "explanation": {
+      "whyCorrect": "Trong CNTB, công nhân bán *sức lao động* (khả năng lao động) cho nhà tư bản như một hàng hóa đặc biệt, không bán «lao động» hay sản phẩm hoàn chỉnh của mình trong quan hệ làm thuê.",
+      "whyWrong": {
+        "B": "«Bán lao động» — sai thuật ngữ Mác: lao động là quá trình sử dụng sức lao động; cái được mua bán là sức lao động.",
+        "C": "«Bán hàng hóa cho nhà tư bản» — công nhân làm thuê không sở hữu sản phẩm; sản phẩm thuộc nhà tư bản sau sản xuất."
+      }
+    }
+  },
+  {
+    "id": 457,
+    "explanation": {
+      "whyCorrect": "Trong kinh tế thị trường, thị trường đóng vai trò là công cụ phân bổ các nguồn lực kinh tế (vốn, lao động, đất đai, công nghệ…) thông qua giá cả, cạnh tranh, cung – cầu — đây là vai trò khái quát nhất.",
+      "whyWrong": {
+        "A": "«Điều tiết sản xuất» là một biểu hiện, chưa bao quát đủ vai trò phân bổ nguồn lực.",
+        "B": "«Phân bổ lao động» chỉ một loại nguồn lực, hẹp hơn «các nguồn lực kinh tế».",
+        "D": "«Phân bổ tư liệu sản xuất» cũng chỉ một phần nguồn lực, không đủ như đáp án C."
+      }
+    }
+  },
+  {
+    "id": 458,
+    "explanation": {
+      "whyCorrect": "Xuất khẩu tư bản có hai hình thức đầu tư cơ bản: đầu tư trực tiếp (FDI — đầu tư sản xuất, sở hữu tài sản ở nước ngoài) và đầu tư gián tiếp (FPI — chứng khoán, cho vay…).",
+      "whyWrong": {
+        "B": "«Đầu tư ủy nhiệm» không phải cặp hình thức chuẩn của xuất khẩu tư bản.",
+        "C": "«Đầu tư nhà nước» là phân loại theo chủ thể, không thay cho cặp trực tiếp – gián tiếp.",
+        "D": "«Tư bản tư nhân và tư bản nhà nước» phân theo sở hữu chủ thể xuất khẩu, không phải hai hình thức đầu tư trực tiếp/gián tiếp."
+      }
+    }
+  },
+  {
+    "id": 459,
+    "explanation": {
+      "whyCorrect": "Syndicate (xanh-đi-ca): các xí nghiệp thành viên còn độc lập về sản xuất nhưng mất độc lập về lưu thông (tiêu thụ, mua nguyên liệu tập trung qua ban thương mại chung). Đặc trưng đúng là «chỉ mất độc quyền/độc lập về lưu thông».",
+      "whyWrong": {
+        "A": "Cartel: thỏa thuận giá, sản lượng, thị trường nhưng vẫn độc lập cả sản xuất lẫn lưu thông ở mức độ lớn hơn syndicate.",
+        "C": "Trust: hợp nhất chặt, mất độc lập cả sản xuất và lưu thông dưới một trung tâm.",
+        "D": "Consortium: liên minh tạm thời cùng thực hiện dự án lớn, không phải hình thức «chỉ mất độc lập lưu thông»."
+      }
+    }
+  },
+  {
+    "id": 460,
+    "explanation": {
+      "whyCorrect": "Chủ nghĩa tư bản độc quyền (chủ nghĩa đế quốc theo Lênin) là một *giai đoạn phát triển* của phương thức sản xuất tư bản chủ nghĩa (từ cạnh tranh tự do sang độc quyền), không phải phương thức sản xuất hay hình thái KT-XH riêng biệt.",
+      "whyWrong": {
+        "A": "Không phải «một phương thức sản xuất» mới — vẫn là phương thức sản xuất tư bản chủ nghĩa.",
+        "C": "Không phải «hình thái kinh tế – xã hội» độc lập thay CNTB.",
+        "D": "«Thời kỳ quá độ lên CNXH» là phạm trù khác (quá độ sau cách mạng), không đồng nhất CNTB độc quyền."
+      }
+    }
+  },
+  {
+    "id": 461,
+    "explanation": {
+      "whyCorrect": "Lao động trừu tượng (hao phí sức lực con người nói chung, không kể hình thức cụ thể) tạo ra *giá trị* của hàng hóa. Lao động cụ thể tạo giá trị sử dụng.",
+      "whyWrong": {
+        "B": "«Giá trị sử dụng» do lao động *cụ thể* tạo ra, không phải lao động trừu tượng.",
+        "C": "«Tiền lương» là giá cả sức lao động, không phải sản phẩm trực tiếp của lao động trừu tượng trong hàng hóa.",
+        "D": "«Lợi nhuận» là hình thức chuyển hóa của giá trị thặng dư, không phải cái lao động trừu tượng «tạo ra» theo thuộc tính hàng hóa."
+      }
+    }
+  },
+  {
+    "id": 462,
+    "explanation": {
+      "whyCorrect": "Quy luật giá trị có ba tác dụng cơ bản: (1) điều tiết sản xuất và lưu thông hàng hóa; (2) kích thích cải tiến kỹ thuật, tăng năng suất lao động; (3) phân hóa những người sản xuất hàng hóa. Cả A, B, C đều đúng → chọn D.",
+      "whyWrong": {
+        "A": "Đúng nhưng chưa đủ: chỉ nêu một trong ba tác dụng; đáp án đầy đủ là «các phương án đều đúng».",
+        "B": "Đúng một tác dụng (kích thích kỹ thuật, NSLĐ), chưa bao quát toàn bộ.",
+        "C": "Đúng tác dụng phân hóa người sản xuất, nhưng vẫn chỉ một phần."
+      }
+    }
+  },
+  {
+    "id": 463,
+    "explanation": {
+      "whyCorrect": "Tư bản bất biến (c): giá trị của nó *không thay đổi về lượng* trong quá trình sản xuất và được chuyển nguyên vẹn (từng phần hoặc toàn bộ tùy loại TLSX) sang sản phẩm — không tạo ra giá trị mới.",
+      "whyWrong": {
+        "B": "«Chuyển ngay sang sản phẩm sau một chu kỳ» chỉ đúng với một phần c lưu động (nguyên liệu); máy móc (c cố định) chuyển dần qua nhiều chu kỳ.",
+        "C": "«Chuyển dần qua khấu hao» chỉ mô tả tư bản cố định, không khái quát toàn bộ tính chất của c."
+      }
+    }
+  },
+  {
+    "id": 464,
+    "explanation": {
+      "whyCorrect": "Tác động tích cực quan trọng của quy luật giá trị: buộc người sản xuất giảm hao phí cá biệt xuống dưới/ ngang mức xã hội → cải tiến kỹ thuật, tổ chức sản xuất → kích thích lực lượng sản xuất và năng suất lao động tăng.",
+      "whyWrong": {
+        "A": "«Sản xuất nhiều loại hàng hóa» không phải tác dụng đặc thù/tích cực then chốt của quy luật giá trị.",
+        "B": "«Người tiêu dùng mua hàng rẻ» có thể là hệ quả gián tiếp, không phải nội dung giáo trình nhấn mạnh như kích thích LLSX.",
+        "C": "«Người sản xuất ngày càng giàu có» không tất yếu (có phân hóa giàu – nghèo); không phải tác dụng tích cực khái quát."
+      }
+    }
+  },
+  {
+    "id": 465,
+    "explanation": {
+      "whyCorrect": "Lao động giản đơn là lao động không cần trải qua đào tạo chuyên môn đặc biệt, người lao động bình thường cũng làm được. Đây là đơn vị quy đổi cho lao động phức tạp.",
+      "whyWrong": {
+        "B": "«Làm công việc đơn giản» gần nghĩa thường ngày nhưng thiếu tiêu chí «không cần đào tạo» trong định nghĩa kinh tế chính trị.",
+        "C": "«Chỉ làm một công đoạn» là phân công lao động, không phải định nghĩa lao động giản đơn.",
+        "D": "«Người dưới tuổi thành niên» — tiêu chí tuổi tác, không liên quan bản chất lao động giản đơn."
+      }
+    }
+  },
+  {
+    "id": 466,
+    "explanation": {
+      "whyCorrect": "Khi ngân hàng tập trung – độc quyền hóa, quan hệ với công nghiệp thay đổi: từ trung gian thanh toán/tín dụng thông thường trở thành thế lực khống chế hoạt động kinh tế – xã hội (thông qua tín dụng, cổ phần, nhân sự đan xen) — cơ sở hình thành tư bản tài chính.",
+      "whyWrong": {
+        "B": "«Trở thành cổ đông doanh nghiệp nhà nước» hẹp và không đúng bản chất chung (không chỉ DNNN).",
+        "C": "«Khống chế doanh nghiệp tư nhân» hẹp; độc quyền ngân hàng chi phối rộng hơn.",
+        "D": "«Chi phối các doanh nghiệp» đúng hướng nhưng kém đầy đủ so với «khống chế mọi hoạt động kinh tế – xã hội» theo đáp án chuẩn."
+      }
+    }
+  },
+  {
+    "id": 467,
+    "explanation": {
+      "whyCorrect": "Công thức chung của tư bản: T – H – T', trong đó T' = T + t và t > 0 (t là số tiền dôi ra — giá trị thặng dư dưới hình thức tiền). Mục đích vận động là làm tăng giá trị.",
+      "whyWrong": {
+        "B": "t < 0 nghĩa là lỗ, trái mục đích và công thức chung của tư bản.",
+        "C": "t ≥ 0 gồm cả t = 0 (không tăng giá trị) — không phản ánh bản chất T' > T.",
+        "D": "t ≤ 0 hoàn toàn sai hướng tăng giá trị của tư bản."
+      }
+    }
+  },
+  {
+    "id": 468,
+    "explanation": {
+      "whyCorrect": "Lưu thông tư bản gồm tuần hoàn tư bản (chu trình T–H…P…H'–T' và các hình thái) và chu chuyển tư bản (tuần hoàn xét về mặt thời gian, tốc độ). Đây là nội dung «quá trình lưu thông tư bản».",
+      "whyWrong": {
+        "A": "«Tuần hoàn và chu chuyển giá trị hàng hóa» nhầm đối tượng: ở đây là tư bản, không chỉ giá trị hàng hóa nói chung.",
+        "C": "«Tuần hoàn và chu chuyển hàng hóa» là lưu thông hàng hóa giản đơn, khác lưu thông tư bản.",
+        "D": "«Tích lũy tư bản» là tái sản xuất mở rộng tư bản, không đồng nhất với lưu thông (tuần hoàn + chu chuyển)."
+      }
+    }
+  },
+  {
+    "id": 469,
+    "explanation": {
+      "whyCorrect": "Câu hỏi dạng phủ định: thị trường KHÔNG thực hiện vai trò hoạch định chính sách kinh tế. Hoạch định chính sách là chức năng của Nhà nước (vĩ mô), không phải của bản thân thị trường.",
+      "whyWrong": {
+        "A": "«Thực hiện giá trị hàng hóa» là vai trò/chức năng của thị trường (hàng hóa được thừa nhận qua trao đổi) — không phải cái «không» làm.",
+        "B": "«Phân bổ tư liệu sản xuất» thuộc chức năng phân bổ nguồn lực của thị trường — đúng vai trò, không chọn.",
+        "C": "«Điều tiết nguồn lực cho sản xuất» đúng vai trò thị trường — không chọn vì câu tìm cái KHÔNG."
+      }
+    }
+  },
+  {
+    "id": 470,
+    "explanation": {
+      "whyCorrect": "Phát triển KTTT định hướng XHCN ở Việt Nam là tất yếu vì: (A) kinh tế thị trường hình thành khi có điều kiện khách quan (phân công lao động xã hội, đa dạng sở hữu…); (C) KTTT là động lực thúc đẩy LLSX phát triển nhanh, hiệu quả. Cả hai giải thích tính tất yếu khách quan.",
+      "whyWrong": {
+        "B": "«KTTT tư bản chủ nghĩa là mô hình tối ưu nhất cho mọi quốc gia» — sai: Việt Nam chọn KTTT *định hướng XHCN*, không coi CNTB là tối ưu phổ quát.",
+        "D": "«Độc lập hoàn toàn khỏi quy luật thị trường toàn cầu» — sai: hội nhập vẫn chịu quy luật thị trường; không phải lý do tất yếu của mô hình."
+      }
+    }
+  },
+  {
+    "id": 471,
+    "explanation": {
+      "whyCorrect": "«Dân giàu, nước mạnh, dân chủ, công bằng, văn minh» là mong muốn/phát triển chung của nhân loại, của tất cả các quốc gia — không chỉ riêng một nhóm nước hay chỉ các nước XHCN.",
+      "whyWrong": {
+        "A": "Không «chỉ các quốc gia phát triển» — nước đang phát triển cũng hướng tới các giá trị đó.",
+        "B": "Không «chỉ các quốc gia đang phát triển».",
+        "C": "Không giới hạn «các nước XHCN mới giành chủ quyền» — phạm vi hẹp hơn thực tế."
+      }
+    }
+  },
+  {
+    "id": 472,
+    "explanation": {
+      "whyCorrect": "Hàng hóa đặc biệt theo Mác là *sức lao động*: khi được sử dụng (lao động), nó bảo tồn giá trị TLSX chuyển vào sản phẩm và tạo ra giá trị mới lớn hơn giá trị bản thân sức lao động — nguồn gốc giá trị thặng dư.",
+      "whyWrong": {
+        "B": "Thức ăn khi tiêu dùng mất giá trị sử dụng, không tạo giá trị mới lớn hơn theo nghĩa sản xuất tư bản.",
+        "C": "Dịch vụ chăm sóc sức khỏe không phải hàng hóa đặc biệt tạo m’ trong lý thuyết giá trị thặng dư của Mác.",
+        "D": "Nước uống tương tự hàng tiêu dùng thông thường, không phải nguồn gốc giá trị thặng dư."
+      }
+    }
+  },
+  {
+    "id": 473,
+    "explanation": {
+      "whyCorrect": "Sự tác động qua lại giữa cung và cầu hình thành *giá cả cân bằng* (giá cả thị trường) — mức giá tại đó lượng cung bằng lượng cầu. Đây là giá cả, không phải bản thân giá trị.",
+      "whyWrong": {
+        "A": "«Giá trị cân bằng / giá trị thị trường» — giá trị thị trường hình thành chủ yếu từ cạnh tranh nội ngành/hao phí xã hội; cung – cầu quyết định *giá cả* dao động quanh giá trị.",
+        "C": "«Giá cả hàng hóa» chung chung, chưa chỉ mức cân bằng do cung – cầu.",
+        "D": "«Giá trị hàng hóa» do lao động xã hội cần thiết quyết định, không do cung – cầu «hình thành» trực tiếp."
+      }
+    }
+  },
+  {
+    "id": 474,
+    "explanation": {
+      "whyCorrect": "Thể chế KTTT định hướng XHCN gồm đầy đủ: hệ thống quy tắc – luật pháp; các chủ thể tham gia; cơ chế vận hành; các yếu tố và các loại thị trường. Do đó «tất cả phương án trên» (E) là đúng.",
+      "whyWrong": {
+        "A": "Chỉ «bộ quy tắc, chế định, luật pháp» — đúng một cấu phần, chưa đủ thể chế.",
+        "B": "Chỉ «các chủ thể» — một yếu tố của thể chế.",
+        "C": "Chỉ «cơ chế vận hành» — chưa bao quát luật pháp, chủ thể, thị trường.",
+        "D": "Chỉ «yếu tố thị trường và các thị trường» — thiếu khung thể chế và chủ thể."
+      }
+    }
+  },
+  {
+    "id": 475,
+    "explanation": {
+      "whyCorrect": "Điểm chung của H–T–H và T–H–T': (A) đều có hai thực thể vật chất tiền và hàng; (C) đều có hai hành vi đối lập — mua và bán. Đó là điểm giống nhau về hình thức vận động.",
+      "whyWrong": {
+        "B": "Không «đều bắt đầu bằng bán»: H–T–H bắt đầu bằng bán (H–T), còn T–H–T' bắt đầu bằng mua (T–H).",
+        "D": "Không «đều kết thúc bằng mua»: H–T–H kết thúc bằng mua (T–H), T–H–T' kết thúc bằng bán (H'–T')."
+      }
+    }
+  },
+  {
+    "id": 476,
+    "explanation": {
+      "whyCorrect": "Theo Mác, các nhân tố quyết định năng suất lao động gồm: trình độ khéo léo trung bình của người lao động; mức phát triển và ứng dụng khoa học vào công nghệ; sự kết hợp xã hội của quá trình sản xuất; quy mô và hiệu suất TLSX; điều kiện tự nhiên. Đáp án A nêu đúng hệ thống này.",
+      "whyWrong": {
+        "B": "Liệt kê chính sách, đãi ngộ, sáng tạo… mang tính quản trị hiện đại, không phải bộ nhân tố kinh điển Mác nêu về NSLĐ.",
+        "C": "Nhấn mạnh kỹ năng, môi trường, sức khỏe — một phần thực tiễn nhưng không trùng hệ năm nhân tố chuẩn trong giáo trình."
+      }
+    }
+  },
+  {
+    "id": 477,
+    "explanation": {
+      "whyCorrect": "Mục tiêu KTTT định hướng XHCN ở Việt Nam hướng tới: (A) xã hội «dân giàu, nước mạnh, dân chủ, công bằng, văn minh»; (C) cân bằng/hài hòa lợi ích giữa các thành phần kinh tế. Đây là định hướng XHCN của mô hình.",
+      "whyWrong": {
+        "B": "«Chỉ vận hành theo nguyên tắc thị trường tự do» — sai: có sự quản lý của Nhà nước XHCN, định hướng XHCN.",
+        "D": "«Hoàn toàn không cần quản lý Nhà nước» — trái bản chất mô hình định hướng XHCN."
+      }
+    }
+  },
+  {
+    "id": 478,
+    "explanation": {
+      "whyCorrect": "Do LLSX và KHCN phát triển, bên cạnh cartel, syndicate, trust… xuất hiện các tổ chức độc quyền mới: Concern (công-xoóc-xi-om/công-xec-n liên kết đa dạng) và Conglomerate (tập đoàn đa ngành). Cặp được giáo trình nêu là Concern và Conglomerate.",
+      "whyWrong": {
+        "B": "Syndicate là hình thức cổ điển, không phải «tổ chức độc quyền mới» điển hình như conglomerate.",
+        "C": "Trust cũng là hình thức truyền thống, không phải nét mới như concern – conglomerate.",
+        "D": "Thêm consortium; đáp án chuẩn chốt cặp Concern và Conglomerate."
+      }
+    }
+  },
+  {
+    "id": 479,
+    "explanation": {
+      "whyCorrect": "Tăng *cường độ* lao động: cùng thời gian, hao phí lao động nhiều hơn → số sản phẩm tăng, *tổng giá trị* tăng tương ứng nên *giá trị một đơn vị* không đổi. Đúng với giả thiết «số lượng sản phẩm tăng, giá trị đơn vị không đổi».",
+      "whyWrong": {
+        "B": "Tăng NSLĐ làm giá trị đơn vị *giảm*; kết hợp cả hai không khớp «giá trị đơn vị không đổi».",
+        "C": "Tăng năng suất lao động: cùng thời gian tạo nhiều sản phẩm hơn nhưng tổng giá trị không tăng tương ứng → giá trị đơn vị giảm — trái giả thiết.",
+        "D": "«Các phương án đều sai» — sai vì A đúng."
+      }
+    }
+  },
+  {
+    "id": 480,
+    "explanation": {
+      "whyCorrect": "Trong KTTT, hoạt động kinh tế biểu hiện *vô cùng phong phú* (sản xuất, trao đổi, dịch vụ, tài chính, đa dạng chủ thể và hình thức…) — đáp án mang tính khái quát cao nhất theo cách ra đề.",
+      "whyWrong": {
+        "B": "«Phong phú» đúng hướng nhưng kém mức «vô cùng phong phú» mà đáp án chuẩn chọn.",
+        "C": "«Trao đổi mua bán» chỉ một mặt lưu thông, hẹp.",
+        "D": "«Sản xuất và trao đổi hàng hóa» đúng một phần nhưng chưa khái quát hết tính phong phú của hoạt động kinh tế thị trường."
+      }
+    }
+  },
+  {
+    "id": 481,
+    "explanation": {
+      "whyCorrect": "Lao động xã hội của người sản xuất hàng hóa kết tinh trong hàng hóa chính là *giá trị* của hàng hóa (phần lao động trừu tượng được xã hội thừa nhận).",
+      "whyWrong": {
+        "B": "«Giá trị sử dụng» do lao động cụ thể tạo ra, phản ánh công dụng, không phải «lao động xã hội kết tinh» theo nghĩa giá trị.",
+        "C": "«Giá cả» là biểu hiện bằng tiền của giá trị, không đồng nhất với bản thân giá trị.",
+        "D": "«Tiền lương» là giá cả sức lao động, không phải lao động xã hội kết tinh trong hàng hóa nói chung."
+      }
+    }
+  },
+  {
+    "id": 482,
+    "explanation": {
+      "whyCorrect": "Độc quyền tập trung nguồn lực lớn, có khả năng và động lực đầu tư nghiên cứu khoa học – kỹ thuật quy mô lớn (cạnh tranh bằng đổi mới, bảo vệ vị thế). Đây là một hệ quả/khả năng được giáo trình nêu khi xuất hiện độc quyền.",
+      "whyWrong": {
+        "B": "«Giảm năng suất lao động» không phải hệ quả tất yếu; độc quyền thường gắn tích tụ kỹ thuật cao.",
+        "C": "«Giảm quy mô kinh tế quốc gia» sai — độc quyền thường gắn tập trung sản xuất lớn.",
+        "D": "«Lành mạnh hơn cạnh tranh» — độc quyền thường hạn chế cạnh tranh tự do, không làm lành mạnh hơn theo nghĩa cạnh tranh hoàn hảo."
+      }
+    }
+  },
+  {
+    "id": 483,
+    "explanation": {
+      "whyCorrect": "KTTT định hướng XHCN được Đảng xác định là *mô hình kinh tế tổng quát* của thời kỳ quá độ lên CNXH ở Việt Nam (văn kiện Đại hội).",
+      "whyWrong": {
+        "B": "«Mô hình kinh tế tập trung tổng quát» — nhầm với cơ chế kế hoạch hóa tập trung bao cấp trước Đổi mới.",
+        "C": "«Mô hình kinh tế Nhà nước» hẹp: có kinh tế nhà nước chủ đạo nhưng nhiều thành phần, không chỉ «kinh tế Nhà nước».",
+        "D": "«Mô hình kinh tế tập trung» — trái với cơ chế thị trường định hướng XHCN."
+      }
+    }
+  },
+  {
+    "id": 484,
+    "explanation": {
+      "whyCorrect": "Những quan hệ kinh tế của một xã hội biểu hiện trước hết dưới hình thức *lợi ích* (lợi ích kinh tế). Lợi ích là động lực và hình thức biểu hiện trực tiếp của quan hệ sản xuất.",
+      "whyWrong": {
+        "A": "«Quyền lực» thuộc chính trị – nhà nước, là biểu hiện gián tiếp/cao hơn, không phải hình thức trước hết của quan hệ kinh tế.",
+        "B": "«Văn hóa» phản ánh xã hội rộng hơn, không phải biểu hiện trước hết của quan hệ kinh tế.",
+        "D": "«Chính trị» dựa trên kinh tế nhưng không phải hình thức biểu hiện trước hết của bản thân quan hệ kinh tế."
+      }
+    }
+  },
+  {
+    "id": 485,
+    "explanation": {
+      "whyCorrect": "Giá trị là thuộc tính xã hội, chỉ bộc lộ trong *quan hệ trao đổi* (so sánh, ngang giá giữa các hàng hóa). Ngoài trao đổi, giá trị không tự «hiện ra» như giá trị sử dụng.",
+      "whyWrong": {
+        "B": "«Mua bán» là hình thức trao đổi có tiền; gốc để nhận biết giá trị vẫn là quan hệ trao đổi nói chung.",
+        "C": "«Kinh doanh» rộng và không phải điều kiện lý luận để bộc lộ thuộc tính giá trị.",
+        "D": "«Tích trữ» không làm lộ thuộc tính giá trị qua so sánh xã hội."
+      }
+    }
+  },
+  {
+    "id": 486,
+    "explanation": {
+      "whyCorrect": "Lao động cụ thể (lao động dưới hình thức hữu ích xác định: may, dệt, rèn…) tạo ra *giá trị sử dụng* của hàng hóa.",
+      "whyWrong": {
+        "B": "«Giá trị trao đổi» là hình thức biểu hiện của giá trị, do lao động trừu tượng/quan hệ trao đổi, không do lao động cụ thể tạo ra.",
+        "C": "«Giá trị» do lao động *trừu tượng* tạo ra.",
+        "D": "Lao động cụ thể không «tạo ra» lao động trừu tượng — đó là hai mặt của cùng một lao động sản xuất hàng hóa."
+      }
+    }
+  },
+  {
+    "id": 487,
+    "explanation": {
+      "whyCorrect": "Thứ tự lịch sử từ thấp đến cao của tổ chức độc quyền: Cartel → Syndicate → Trust → Consortium (và các hình thức cao hơn). Đáp án D đúng trật tự.",
+      "whyWrong": {
+        "A": "Bắt đầu bằng Trust — đảo thứ tự (trust mức liên kết cao hơn cartel, syndicate).",
+        "B": "«Cortium» sai chính tả/thứ tự; không đúng chuỗi phát triển.",
+        "C": "Syndicate trước Cartel — sai: cartel là hình thức lỏng/thấp hơn syndicate."
+      }
+    }
+  },
+  {
+    "id": 488,
+    "explanation": {
+      "whyCorrect": "Phát triển KTTT định hướng XHCN phá vỡ tính *tự cấp, tự túc, lạc hậu* của nền kinh tế (mở rộng phân công lao động, hàng hóa hóa, liên kết thị trường) — đây là ý nghĩa chuyển đổi cơ cấu – cơ chế.",
+      "whyWrong": {
+        "B": "Không «phá vỡ tự do cạnh tranh» — KTTT vẫn vận hành bằng cạnh tranh (có điều tiết).",
+        "C": "Không nhằm «phá vỡ khủng hoảng kinh tế» như tính chất bị phá của nền kinh tế tự cấp.",
+        "D": "Khoảng cách giàu nghèo, đạo đức là vấn đề cần giải quyết bằng định hướng XHCN, không phải «tính chất» bị phá vỡ như tự cấp – tự túc."
+      }
+    }
+  },
+  {
+    "id": 489,
+    "explanation": {
+      "whyCorrect": "Việt Nam là thành viên sáng lập Diễn đàn hợp tác Á – Âu (ASEM); ASEM được khởi động năm 1996 (Hội nghị thượng đỉnh ASEM 1 tại Bangkok).",
+      "whyWrong": {
+        "B": "1997 — không phải năm sáng lập ASEM (gắn các sự kiện hội nhập khác, không phải mốc ASEM 1).",
+        "C": "1998 — sai mốc sáng lập.",
+        "D": "1999 — sai mốc sáng lập."
+      }
+    }
+  },
+  {
+    "id": 490,
+    "explanation": {
+      "whyCorrect": "Trong trạng thái độc quyền, cạnh tranh *nội bộ* tổ chức độc quyền nhằm: (A) giành lợi thế trong hệ thống; (B) chiếm tỷ lệ cổ phần khống chế; (C) phân chia lợi ích có lợi hơn. Ba mục tiêu này phản ánh đấu tranh quyền lực – lợi ích bên trong liên minh.",
+      "whyWrong": {
+        "D": "«Để xác định địa vị độc quyền» chủ yếu là kết quả/mục tiêu của cạnh tranh *với bên ngoài* hoặc quá trình hình thành độc quyền, không phải mục đích điển hình của cạnh tranh nội bộ đã ở trong tổ chức độc quyền."
+      }
+    }
+  },
+  {
+    "id": 491,
+    "explanation": {
+      "whyCorrect": "Khi sản xuất và trao đổi phát triển, cần một vật ngang giá *chung* cho mọi hàng hóa — đó là *hình thái chung của giá trị* (một hàng hóa đóng vai trò tương đương phổ biến). Tiền tệ là hình thái phát triển tiếp theo khi vật ngang giá chung cố định vào kim loại quý.",
+      "whyWrong": {
+        "A": "Hình thái giản đơn/ngẫu nhiên: một hàng hóa đổi ngẫu nhiên với một hàng hóa khác — chưa có vật ngang giá chung.",
+        "B": "Hình thái mở rộng: một hàng hóa đổi với nhiều hàng hóa — vẫn chưa có một vật ngang giá duy nhất chung.",
+        "D": "Hình thái tiền tệ là bước sau khi vật ngang giá chung đã được xã hội cố định; câu hỏi hỏi hình thái xuất hiện *vật ngang giá chung* → hình thái chung."
+      }
+    }
+  },
+  {
+    "id": 492,
+    "explanation": {
+      "whyCorrect": "Hàng hóa cá nhân (hàng hóa tư nhân/private good): nếu một người đã tiêu dùng thì người khác không thể tiêu dùng cùng một đơn vị đó nữa (tính cạnh tranh trong tiêu dùng, loại trừ).",
+      "whyWrong": {
+        "B": "«Người khác vẫn tái sử dụng» mang tính hàng hóa công/chia sẻ, không phải hàng hóa cá nhân điển hình.",
+        "C": "«Giảm giá trị khi bán» không phải định nghĩa hàng hóa cá nhân.",
+        "D": "«Tái sử dụng làm tăng giá trị» sai bản chất tiêu dùng hàng hóa cá nhân."
+      }
+    }
+  },
+  {
+    "id": 493,
+    "explanation": {
+      "whyCorrect": "Câu phủ định: hình thức biểu hiện của giá trị thặng dư trong KTTT gồm lợi nhuận, lợi tức, địa tô tư bản chủ nghĩa… *Thuế khóa* không phải hình thức biểu hiện điển hình của m’ theo phân tích kinh tế chính trị Mác (thuế là công cụ phân phối của nhà nước).",
+      "whyWrong": {
+        "B": "«Lợi nhuận» đúng là hình thức chuyển hóa/biểu hiện của giá trị thặng dư — không chọn vì câu tìm cái KHÔNG phải.",
+        "C": "«Lợi tức» là m’ chia cho tư bản cho vay — đúng hình thức biểu hiện.",
+        "D": "«Địa tô tư bản chủ nghĩa» là m’ nộp cho địa chủ — đúng hình thức biểu hiện."
+      }
+    }
+  },
+  {
+    "id": 494,
+    "explanation": {
+      "whyCorrect": "Sản xuất giá trị thặng dư là thống nhất giữa: (A) quá trình tạo ra giá trị mới (lao động trừu tượng) và (B) làm tăng giá trị (tạo m’ vượt giá trị sức lao động) — đồng thời là quá trình sản xuất giá trị sử dụng. Hai đáp án A, B trúng yêu cầu đề.",
+      "whyWrong": {
+        "C": "«Tiêu thụ sản phẩm» thuộc lưu thông/thực hiện, không phải bản thân quá trình *sản xuất* m’.",
+        "D": "«Vận chuyển» là khâu lưu thông/hậu cần, không cấu thành bản chất sản xuất giá trị thặng dư."
+      }
+    }
+  },
+  {
+    "id": 495,
+    "explanation": {
+      "whyCorrect": "Thể chế KTTT ĐHXHCN ở Việt Nam chưa đồng bộ vì nhiều lý do bổ sung nhau: mới hình thành nên phải hoàn thiện khách quan; yêu cầu nâng cao năng lực quản lý nhà nước; còn khuyết điểm, chưa đủ mạnh và hiệu quả. Do đó «tất cả phương án trên» (D).",
+      "whyWrong": {
+        "A": "Đúng một nguyên nhân/khía cạnh nhưng chưa đủ so với đáp án tổng hợp.",
+        "B": "Đúng yêu cầu nâng cao năng lực quản lý — chỉ một phần.",
+        "C": "Đúng về hạn chế thực tiễn — chưa bao quát toàn bộ."
+      }
+    }
+  },
+  {
+    "id": 496,
+    "explanation": {
+      "whyCorrect": "Quy luật: tự do cạnh tranh dẫn đến tích tụ và tập trung sản xuất; khi đạt mức độ nhất định sẽ sinh ra *độc quyền*. Đây là logic hình thành CNTB độc quyền.",
+      "whyWrong": {
+        "B": "«Tự do cạnh tranh» là điểm xuất phát, không phải kết quả khi tích tụ – tập trung đã cao.",
+        "C": "Khủng hoảng kinh tế có liên quan chu kỳ CNTB nhưng không phải kết luận trực tiếp «tích tụ đến mức… dẫn đến».",
+        "D": "«Sản xuất thừa» là biểu hiện khủng hoảng, không phải hệ quả tất yếu trực tiếp được hỏi."
+      }
+    }
+  },
+  {
+    "id": 497,
+    "explanation": {
+      "whyCorrect": "Hoàn thiện thể chế sở hữu trong KTTT ĐHXHCN gồm: (A) thể chế hóa đầy đủ quyền tài sản của nhà nước, tổ chức, cá nhân; (B) hoàn thiện pháp luật đất đai, chống lãng phí; (C) hoàn thiện pháp luật quản lý, khai thác, sử dụng tài nguyên thiên nhiên. Ba nội dung A–B–C là đáp án đúng.",
+      "whyWrong": {
+        "D": "«Hoàn thiện thiết chế phát triển các thành phần kinh tế, loại hình doanh nghiệp» thuộc hoàn thiện thể chế kinh tế/doanh nghiệp chung, không phải trọng tâm *thể chế về sở hữu* như A–B–C trong đáp án chuẩn."
+      }
+    }
+  },
+  {
+    "id": 498,
+    "explanation": {
+      "whyCorrect": "Hàng hóa trao đổi được với nhau vì: (A) đều là sản phẩm của lao động (có cơ sở chung); (B) chứa chứa trên cơ sở lượng lao động xã hội ngang nhau (giá trị tương đương). Cả A và B hợp thành cơ sở trao đổi theo lý thuyết giá trị lao động.",
+      "whyWrong": {
+        "C": "«Sản phẩm của quá trình trao đổi» — sai logic: hàng hóa là sản phẩm của sản xuất, rồi mới đi vào trao đổi.",
+        "D": "«Công dụng như nhau» — sai: trao đổi xảy ra chính vì công dụng *khác nhau* (giá trị sử dụng khác), còn cái chung là giá trị."
+      }
+    }
+  },
+  {
+    "id": 499,
+    "explanation": {
+      "whyCorrect": "Câu điền: «Kinh tế thị trường định hướng *xã hội chủ nghĩa* là nền kinh tế vận hành theo các quy luật của *thị trường*». Vừa theo quy luật thị trường, vừa định hướng XHCN.",
+      "whyWrong": {
+        "B": "«Quy luật của sản xuất hàng hóa» hẹp/không chuẩn bằng «quy luật của thị trường» trong công thức định nghĩa.",
+        "C": "«Định hướng thị trường / quy luật xã hội» đảo và sai nội dung.",
+        "D": "«Quy luật cạnh tranh hàng hóa» chỉ một bộ phận quy luật thị trường, không đủ."
+      }
+    }
+  },
+  {
+    "id": 500,
+    "explanation": {
+      "whyCorrect": "Tư bản bất biến (c) tồn tại dưới hình thức nguyên liệu, nhiên liệu, vật liệu, máy móc… (tư liệu sản xuất) — giá trị chuyển sang sản phẩm, không tự tăng lên.",
+      "whyWrong": {
+        "B": "Gồm «sức lao động» — sức lao động thuộc tư bản *khả biến* (v).",
+        "C": "«Máy móc, sức lao động» thiếu nguyên liệu và lẫn v.",
+        "D": "«Tiền công trả công nhân» là v, không phải c."
+      }
+    }
+  },
+  {
+    "id": 501,
+    "explanation": {
+      "whyCorrect": "Đối tượng nghiên cứu của kinh tế chính trị Mác-xít là quan hệ sản xuất — thể thống nhất các quan hệ giữa người với người trong sản xuất và trao đổi (A), bao gồm quan hệ trong từng khâu (B) và giữa các khâu của tái sản xuất xã hội (C). Đáp án nhiều lựa chọn: A, B, C.",
+      "whyWrong": {
+        "D": "«Quan hệ giữa các quốc gia trong sản xuất sản phẩm» thuộc kinh tế quốc tế/quan hệ quốc tế, không phải định nghĩa đối tượng trung tâm của KTCT theo giáo trình này."
+      }
+    }
+  },
+  {
+    "id": 502,
+    "explanation": {
+      "whyCorrect": "Quy luật kinh tế mang tính *khách quan*: tồn tại và tác động độc lập với ý muốn chủ quan; con người chỉ có thể nhận thức và vận dụng, không tạo ra hay xóa bỏ tùy tiện.",
+      "whyWrong": {
+        "A": "«Chủ quan» — sai: quy luật không do ý chí cá nhân/nhà nước đặt ra theo ý muốn.",
+        "C": "«Vừa chủ quan vừa khách quan» — làm mơ hồ tính khách quan của quy luật.",
+        "D": "«Không có đáp án đúng» — sai vì B đúng."
+      }
+    }
+  },
+  {
+    "id": 503,
+    "explanation": {
+      "whyCorrect": "Quy luật giá trị yêu cầu sản xuất và trao đổi hàng hóa trên cơ sở *hao phí lao động xã hội cần thiết* — giá trị do thời gian lao động xã hội cần thiết quyết định.",
+      "whyWrong": {
+        "B": "«Hao phí lao động cá biệt» chỉ quyết định giá trị cá biệt; xã hội thừa nhận theo mức xã hội cần thiết.",
+        "C": "«Hao phí lao động tư nhân» nhấn mạnh tính tư nhân của lao động, không phải cơ sở đo giá trị.",
+        "D": "«Hao phí lao động cụ thể» gắn giá trị sử dụng, không quyết định độ lớn giá trị."
+      }
+    }
+  },
+  {
+    "id": 504,
+    "explanation": {
+      "whyCorrect": "Lợi ích kinh tế là lợi ích vật chất và lợi ích thu được khi thực hiện các hoạt động kinh tế của con người — động lực thúc đẩy chủ thể tham gia sản xuất, trao đổi, phân phối.",
+      "whyWrong": {
+        "A": "Chỉ «lợi ích vật chất» — hẹp, chưa gắn hoạt động kinh tế và các lợi ích thu được từ đó.",
+        "B": "«Vật chất và dịch vụ đi kèm» lệch sang mô tả gói sản phẩm – dịch vụ, không phải định nghĩa lợi ích kinh tế.",
+        "D": "«Lợi ích vật chất và lợi ích dịch vụ» tách «dịch vụ» như một loại lợi ích riêng — kém chuẩn so với «lợi ích thu được khi thực hiện hoạt động kinh tế»."
+      }
+    }
+  },
+  {
+    "id": 505,
+    "explanation": {
+      "whyCorrect": "Hai điều kiện để sức lao động trở thành hàng hóa: (A) người lao động tự do về thân thể (có quyền định đoạt sức lao động); (B) «tự do» không có tư liệu sản xuất (phải bán sức lao động để sống).",
+      "whyWrong": {
+        "C": "«Có tư liệu sản xuất» — khi đó có thể tự sản xuất, không buộc phải bán sức lao động như hàng hóa.",
+        "D": "«Đang làm nô lệ» — mất tự do thân thể, không đủ điều kiện «tự do» để bán sức lao động theo nghĩa CNTB."
+      }
+    }
+  },
+  {
+    "id": 506,
+    "explanation": {
+      "whyCorrect": "Trong sản xuất hàng hóa giản đơn, tiền vận động theo công thức H – T – H (bán để mua): mục đích là giá trị sử dụng, tiền chỉ là trung gian.",
+      "whyWrong": {
+        "B": "T–H–T là dạng chưa có m’, chưa phản ánh đầy đủ vận động tư bản.",
+        "C": "H–T'–H không phải công thức chuẩn.",
+        "D": "T–H–T' là công thức vận động của *tư bản*, không phải sản xuất hàng hóa giản đơn."
+      }
+    }
+  },
+  {
+    "id": 507,
+    "explanation": {
+      "whyCorrect": "Mâu thuẫn cơ bản của CNTB: mâu thuẫn giữa trình độ xã hội hóa ngày càng cao của lực lượng sản xuất với quan hệ sản xuất dựa trên chiếm hữu tư nhân tư bản chủ nghĩa về *tư liệu sản xuất*.",
+      "whyWrong": {
+        "A": "Sai ở «tư liệu tiêu dùng» — phải là tư liệu *sản xuất*.",
+        "C": "«Công nghiệp hóa» thay «xã hội hóa» — không đúng thuật ngữ mâu thuẫn cơ bản.",
+        "D": "«Trí tuệ hóa» và «tư liệu tiêu dùng» đều sai thuật ngữ chuẩn."
+      }
+    }
+  },
+  {
+    "id": 508,
+    "explanation": {
+      "whyCorrect": "Syndicate: các xí nghiệp *giữ độc lập về sản xuất*, *mất độc lập về lưu thông* hàng hóa (tiêu thụ tập trung). Đây là đặc điểm cơ bản phân biệt với cartel và trust.",
+      "whyWrong": {
+        "B": "Đảo: không phải giữ độc lập lưu thông mà mất độc lập lưu thông.",
+        "C": "«Giữ độc lập cả lưu thông lẫn sản xuất» gần cartel hơn syndicate.",
+        "D": "«Chỉ mất một phần nhỏ độc lập lưu thông» làm nhẹ mức độ; syndicate mất độc lập lưu thông về cơ bản."
+      }
+    }
+  },
+  {
+    "id": 509,
+    "explanation": {
+      "whyCorrect": "Giữa các lợi ích kinh tế (cá nhân, tập thể, xã hội…) tồn tại quan hệ *vừa thống nhất vừa mâu thuẫn*: thống nhất trên cơ sở phát triển chung, mâu thuẫn về phân chia, ưu tiên ngắn – dài hạn…",
+      "whyWrong": {
+        "B": "Chỉ «thống nhất» — bỏ qua xung đột lợi ích thực tế.",
+        "C": "Chỉ «mâu thuẫn» — bỏ qua sự thống nhất tương đối của hệ lợi ích.",
+        "D": "«Không có đáp án đúng» — sai vì A đúng."
+      }
+    }
+  },
+  {
+    "id": 510,
+    "explanation": {
+      "whyCorrect": "Trên thế giới thường khái quát *3* mô hình công nghiệp hóa tiêu biểu (ví dụ: mô hình phương Tây cổ điển; mô hình công nghiệp hóa XHCN trước đây; mô hình NICs/Đông Á — hoặc các cách phân 3 nhóm tương ứng trong giáo trình). Đáp án là 3.",
+      "whyWrong": {
+        "B": "4 — không phải số mô hình tiêu biểu được chốt trong đáp án.",
+        "C": "5 — sai so với phân loại 3 mô hình.",
+        "D": "6 — sai so với phân loại 3 mô hình."
+      }
+    }
+  },
+  {
+    "id": 511,
+    "explanation": {
+      "whyCorrect": "Hàng hóa sức lao động cũng có hai thuộc tính của hàng hóa: (A) *giá trị* (xác định bởi giá trị tư liệu sinh hoạt cần thiết tái sản xuất sức lao động) và (C) *giá trị sử dụng* (khả năng tạo ra giá trị mới lớn hơn giá trị bản thân nó).",
+      "whyWrong": {
+        "B": "«Tự do» là điều kiện để sức lao động thành hàng hóa, không phải thuộc tính nội tại như giá trị/giá trị sử dụng.",
+        "D": "«Sức khỏe người lao động» là yếu tố ảnh hưởng chất lượng sức lao động, không phải thuộc tính hàng hóa theo lý thuyết."
+      }
+    }
+  },
+  {
+    "id": 512,
+    "explanation": {
+      "whyCorrect": "Phân chia thị trường hàng hóa và thị trường dịch vụ dựa trên *đối tượng* được đưa ra trao đổi, mua bán (hàng hóa hữu hình vs dịch vụ).",
+      "whyWrong": {
+        "B": "«Tính chuyên biệt của thị trường» không phải căn cứ phân loại hàng hóa/dịch vụ.",
+        "C": "«Đầu vào, đầu ra» dùng để phân thị trường yếu tố sản xuất / sản phẩm, không phải hàng hóa vs dịch vụ.",
+        "D": "«Tính chất và cơ chế vận hành» dùng cho phân loại khác (cạnh tranh, độc quyền…)."
+      }
+    }
+  },
+  {
+    "id": 513,
+    "explanation": {
+      "whyCorrect": "Theo A. Smith, kinh tế chính trị gắn nhà lập pháp/chính khách với hai mục tiêu: (A) tạo nguồn thu nhập dồi dào, sinh kế phong phú cho dân chúng; (B) tạo nguồn ngân sách đầy đủ cho nhà nước làm nhiệm vụ công. Đây là định nghĩa mục tiêu kinh điển của Smith.",
+      "whyWrong": {
+        "C": "«Tăng trưởng và tiến bộ công bằng xã hội» mang ngôn ngữ hiện đại, không phải cặp mục tiêu Smith nêu.",
+        "D": "«Ai cũng đầy đủ phúc lợi xã hội» — tư tưởng nhà nước phúc lợi sau này, không phải diễn đạt của Smith."
+      }
+    }
+  },
+  {
+    "id": 514,
+    "explanation": {
+      "whyCorrect": "Hệ giá trị toàn diện «dân giàu, nước mạnh, dân chủ, công bằng, văn minh» là hệ giá trị của xã hội *tương lai* mà loài người phấn đấu (định hướng phát triển, gắn mục tiêu XHCN).",
+      "whyWrong": {
+        "A": "«Hiện tại» — chưa phải xã hội đã hoàn toàn đạt hệ giá trị đó trên phạm vi loài người.",
+        "B": "«Quá khứ» — không phải đích phấn đấu.",
+        "D": "«Tư bản chủ nghĩa» — CNTB không đồng nhất với đầy đủ công bằng, văn minh theo mục tiêu XHCN."
+      }
+    }
+  },
+  {
+    "id": 515,
+    "explanation": {
+      "whyCorrect": "Quá trình sản xuất là sự kết hợp *sức lao động* với *đối tượng lao động* và *tư liệu lao động* (ba yếu tố đơn giản của quá trình lao động theo Mác).",
+      "whyWrong": {
+        "B": "«Lao động» thay «sức lao động» — lẫn quá trình với khả năng; công thức chuẩn dùng sức lao động + đối tượng + tư liệu lao động.",
+        "C": "Chỉ «sức lao động với công cụ» — thiếu đối tượng lao động; công cụ chỉ là một bộ phận tư liệu lao động.",
+        "D": "«Lao động với điều tiết của nhà tư bản» — không phải định nghĩa các yếu tố quá trình sản xuất nói chung."
+      }
+    }
+  },
+  {
+    "id": 516,
+    "explanation": {
+      "whyCorrect": "Câu hỏi tìm nội dung *không phải* tác động tích cực của hội nhập KTQT. «Hội nhập làm gia tăng sự cạnh tranh» chủ yếu là thách thức/sức ép (doanh nghiệp yếu có thể thất thế), không được xếp là tác động tích cực như mở rộng thị trường, công nghệ, nhân lực, an ninh…",
+      "whyWrong": {
+        "B": "«Mở rộng thị trường, tiếp thu KHCN, vốn, chuyển dịch cơ cấu» — đúng tác động tích cực; không chọn.",
+        "C": "«Nâng cao chất lượng nguồn nhân lực» — tác động tích cực; không chọn.",
+        "D": "«Thúc đẩy hội nhập văn hóa, chính trị, củng cố ANQP» — được coi là tác động tích cực/mở rộng; không chọn vì câu tìm cái không phải tích cực."
+      }
+    }
+  },
+  {
+    "id": 517,
+    "explanation": {
+      "whyCorrect": "Trường phái kinh tế chính trị cổ điển Anh tiêu biểu: William Petty, Adam Smith, David Ricardo (lý thuyết giá trị lao động, phân công, địa tô…).",
+      "whyWrong": {
+        "B": "Boisguillebert, Quesnay, Turgot thuộc trọng nông/pháp, không phải cổ điển Anh.",
+        "C": "Stafford, Mun, Scaruffi gắn chủ nghĩa trọng thương.",
+        "D": "Serra, Montchrétien, Quesnay — trọng thương/trọng nông, không phải bộ ba cổ điển Anh."
+      }
+    }
+  },
+  {
+    "id": 518,
+    "explanation": {
+      "whyCorrect": "Đặc trưng phổ biến KTTT: đa dạng chủ thể và hình thức sở hữu; thị trường quyết định phân bổ nguồn lực xã hội; giá cả hình thành theo nguyên tắc thị trường; là nền kinh tế *mở*. Đáp án A đủ và đúng.",
+      "whyWrong": {
+        "B": "Sai ở «kinh tế đóng» — KTTT bản chất là mở.",
+        "C": "Sai: «nhà nước quyết định phân bổ nguồn lực» và «kinh tế đóng» — trái đặc trưng thị trường.",
+        "D": "Gần đúng nhưng «giá cả theo quy luật cung – cầu» hẹp hơn «nguyên tắc thị trường» (còn cạnh tranh, giá trị…); đáp án chuẩn là A."
+      }
+    }
+  },
+  {
+    "id": 519,
+    "explanation": {
+      "whyCorrect": "Tư bản thương nghiệp trong CNTB là một bộ phận của *tư bản công nghiệp* tách ra chuyên đảm nhận giai đoạn lưu thông hàng hóa (H'–T'), chia sẻ m’ dưới dạng lợi nhuận thương nghiệp.",
+      "whyWrong": {
+        "A": "«Tách từ tư bản nông nghiệp» — sai nguồn gốc; nguồn là tư bản công nghiệp.",
+        "C": "«Tách từ tư bản cho vay» — tư bản cho vay là hình thức khác (lợi tức).",
+        "D": "«Tách từ tư bản thương nghiệp» — vòng lẩn, không giải thích nguồn gốc."
+      }
+    }
+  },
+  {
+    "id": 520,
+    "explanation": {
+      "whyCorrect": "Sản xuất giá trị thặng dư tuyệt đối: tăng m’ bằng cách kéo dài thời gian lao động trong ngày (A) và/hoặc tăng cường độ lao động (B) khi ngày lao động và điều kiện kỹ thuật cho phép — thời gian lao động tất yếu chưa rút ngắn bằng NSLĐ. Đáp án đúng: A và B.",
+      "whyWrong": {
+        "C": "«Rút ngắn thời gian lao động tất yếu» là phương pháp giá trị thặng dư *tương đối* (tăng NSLĐ).",
+        "D": "«Tăng quy mô vốn» liên quan tích lũy/tái sản xuất mở rộng, không phải định nghĩa phương pháp m’ tuyệt đối."
+      }
+    }
+  },
+  {
+    "id": 521,
+    "explanation": {
+      "whyCorrect": "Xét bản chất, lợi ích kinh tế phản ánh *mục đích và động cơ* của các quan hệ giữa các chủ thể trong nền sản xuất xã hội — là hình thức biểu hiện động lực của quan hệ sản xuất.",
+      "whyWrong": {
+        "B": "«Gắn các chủ thể… lợi ích tương ứng» mô tả vai trò liên kết, không phải bản chất «phản ánh mục đích – động cơ».",
+        "C": "«Động lực về lâu dài» một phần đúng nhưng hẹp và không trúng định nghĩa bản chất.",
+        "D": "«Tất cả» — sai vì chỉ A là bản chất theo đáp án chuẩn."
+      }
+    }
+  },
+  {
+    "id": 522,
+    "explanation": {
+      "whyCorrect": "Hoàn thiện thể chế *gắn tăng trưởng kinh tế với tiến bộ và công bằng xã hội* đòi hỏi xây dựng hệ thống thể chế kết hợp chặt chẽ phát triển kinh tế nhanh và bền vững (D) — đúng trọng tâm nhiệm vụ được hỏi.",
+      "whyWrong": {
+        "A": "Rà soát pháp luật theo cam kết quốc tế thuộc hội nhập/thể chế hội nhập, không trúng trực tiếp «tăng trưởng gắn công bằng xã hội».",
+        "B": "Đa phương hóa, đa dạng hóa hợp tác — nhiệm vụ hội nhập, khác trọng tâm công bằng xã hội.",
+        "C": "Thiết chế phản ứng biến động thế giới — quản trị rủi ro bên ngoài, không phải nội dung cốt lõi tăng trưởng – công bằng."
+      }
+    }
+  },
+  {
+    "id": 523,
+    "explanation": {
+      "whyCorrect": "Thế mạnh điển hình của DNNVV: *linh hoạt ứng phó với biến động thị trường* (quy mô nhỏ, ra quyết định nhanh, dễ điều chỉnh mặt hàng/quy trình).",
+      "whyWrong": {
+        "A": "«Nhạy cảm với thay đổi trong sản xuất» có thể đúng một phần nhưng đáp án chuẩn nhấn mạnh linh hoạt với *thị trường*.",
+        "C": "«Mạnh dạn đầu tư ngành mới mạo hiểm» thường là thế mạnh của doanh nghiệp lớn/vốn mạnh hơn.",
+        "D": "«Nguồn lực tài chính lớn…» — trái đặc điểm DNNVV (vốn hạn chế)."
+      }
+    }
+  },
+  {
+    "id": 524,
+    "explanation": {
+      "whyCorrect": "Cơ sở sâu xa hình thành sở hữu hiện thực xuất phát trước hết từ *quá trình sản xuất và tái sản xuất xã hội* — sở hữu được xác lập và tái tạo trong sản xuất, không chỉ ở lưu thông hay quản lý.",
+      "whyWrong": {
+        "B": "«Lưu thông và sản xuất» — lưu thông quan trọng nhưng cơ sở sâu xa trước hết là sản xuất – tái sản xuất.",
+        "C": "«Phân phối và tái sản xuất» — phân phối dựa trên sở hữu/sản xuất, không phải nguồn gốc sâu xa hàng đầu.",
+        "D": "«Quản lý và tái sản xuất» — quản lý là chức năng, không thay thế sản xuất – tái sản xuất làm cơ sở sở hữu."
+      }
+    }
+  },
+  {
+    "id": 525,
+    "explanation": {
+      "whyCorrect": "Biểu hiện mới về tích tụ và tập trung tư bản: bên cạnh xí nghiệp vừa và nhỏ phát triển, xuất hiện các *công ty độc quyền xuyên quốc gia* (TNC) — quy mô tích tụ vượt biên giới quốc gia.",
+      "whyWrong": {
+        "A": "«Vai trò tư bản tài chính» là đặc điểm CNTB độc quyền nói chung, không phải biểu hiện *mới* riêng về tích tụ – tập trung theo đáp án này.",
+        "C": "«Quốc tế hóa, toàn cầu hóa, khu vực hóa» là bối cảnh/chủ trương rộng, không trúng biểu hiện tích tụ – tập trung như TNC.",
+        "D": "«Hợp tác, chuyển giao công nghệ cốt lõi» không phải biểu hiện tích tụ – tập trung tư bản."
+      }
+    }
+  },
+  {
+    "id": 526,
+    "explanation": {
+      "whyCorrect": "Nguyên nhân hình thành độc quyền trong KTTT tư bản: (A) sự phát triển của lực lượng sản xuất (cơ sở vật chất – kỹ thuật cho sản xuất lớn); (B) cạnh tranh (tất yếu dẫn tích tụ – tập trung); (C) khủng hoảng và sự phát triển hệ thống tín dụng (thúc đẩy tập trung tư bản). Ba nhân tố A, B, C hợp thành.",
+      "whyWrong": {
+        "D": "«Doanh nghiệp giảm quy mô tích tụ và tập trung» — ngược quy luật: độc quyền đi với *tăng* tích tụ và tập trung sản xuất, không phải giảm."
+      }
+    }
+  }
+]

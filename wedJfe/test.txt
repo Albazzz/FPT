@@ -1,0 +1,911 @@
+Dưới đây là đáp án chi tiết cho 2 câu hỏi cuối cùng trong bộ ảnh của bạn:
+Câu hỏi 39: A process is waiting for data from a disk drive before continuing execution. Which state is the process most likely in?
+Đáp án: Waiting (Khi một tiến trình đang phải chờ một sự kiện nào đó hoàn thành, ví dụ như chờ đọc/ghi dữ liệu từ ổ đĩa (I/O), nó sẽ tạm rời khỏi CPU và chuyển sang trạng thái chờ - Waiting hoặc Blocked - để nhường tài nguyên cho các tiến trình khác).
+Câu hỏi 40: A software development team wants to distribute software while allowing users to view, modify, and redistribute the source code.
+Đáp án: Open-source License (Giấy phép mã nguồn mở - Open-source License - là loại giấy phép đặc trưng cho phép cộng đồng người dùng có quyền tự do truy cập, xem, chỉnh sửa và phân phối lại mã nguồn của phần mềm đó).
+Dưới đây là đáp án chi tiết cho các câu hỏi tiếp theo từ các bức ảnh của bạn, được sắp xếp lại theo thứ tự từ câu 29 đến câu 38 để bạn tiện theo dõi:
+Câu hỏi 29: What is the main purpose of interface design?
+Đáp án: To improve user usability and accessibility (Mục đích chính của thiết kế giao diện là cải thiện trải nghiệm người dùng, giúp phần mềm/hệ thống trở nên dễ sử dụng và dễ tiếp cận hơn đối với người dùng).
+Câu hỏi 30: How many bits are contained in one byte?
+Đáp án: 8 (Theo quy ước chuẩn, 1 byte bao gồm 8 bits).
+Câu hỏi 31: A compiler translates a source program containing 20,000 lines of code. Which statement best describes the compilation process?
+Đáp án: The entire source program is translated before execution (Đặc trưng của trình biên dịch - compiler - là nó đọc và dịch toàn bộ mã nguồn của chương trình sang mã máy trước khi thực thi, khác với trình thông dịch - interpreter - dịch và chạy từng dòng lệnh).
+Câu hỏi 32: Which of the following is a non-volatile storage device?
+Đáp án: Hard disk (Ổ cứng là thiết bị lưu trữ bất biến / non-volatile, nó giữ nguyên dữ liệu ngay cả khi ngắt nguồn điện. Trong khi đó, RAM, CPU, Cache và Register đều mất dữ liệu khi tắt máy).
+Câu hỏi 33: Which SQL command removes a table definition and its data?
+Đáp án: DROP TABLE (Lệnh DROP TABLE trong SQL được sử dụng để xóa hoàn toàn cả cấu trúc (định nghĩa) của một bảng lẫn mọi dữ liệu được lưu bên trong bảng đó khỏi cơ sở dữ liệu).
+Câu hỏi 34: Which OS management function is primarily responsible for deciding which process receives CPU time?
+Đáp án: Process Management (Quản lý tiến trình là chức năng cốt lõi của Hệ điều hành chịu trách nhiệm lên lịch (scheduling) và quyết định tiến trình nào sẽ được cấp phát thời gian sử dụng CPU).
+Câu hỏi 35: Which of the following is classified as a peripheral device?
+Đáp án: Input unit (Khối đầu vào - Input unit - ví dụ như chuột, bàn phím, máy quét là thiết bị ngoại vi kết nối từ bên ngoài vào. Các lựa chọn còn lại như Control unit, ALU, CPU, hay Register đều là các thành phần cốt lõi bên trong vi xử lý).
+Câu hỏi 36: Which generation of computers introduced VLSI technology?
+Đáp án: 4th generation (Máy tính thế hệ thứ 4 đánh dấu sự ra đời của công nghệ vi mạch tích hợp mật độ rất cao - VLSI, cho phép thu nhỏ hàng ngàn transistor vào một chip vi xử lý duy nhất).
+Câu hỏi 37: Why is user-friendly interface design important?
+Đáp án: It reduces user errors and improves usability (Một thiết kế giao diện thân thiện, trực quan sẽ giúp người dùng thao tác dễ dàng hơn, từ đó làm giảm thiểu các sai sót do con người gây ra và tăng tính khả dụng).
+Câu hỏi 38: Which of the following devices was mainly used as the logic gate in first-generation computers?
+Đáp án: Vacuum tube (Máy tính thế hệ đầu tiên sử dụng các ống/đèn chân không - Vacuum tubes - làm các cổng logic và bộ khuếch đại điện tử để xử lý tín hiệu).
+Dưới đây là đáp án chi tiết cho các câu hỏi tiếp theo từ các bức ảnh của bạn, được sắp xếp lại theo thứ tự từ câu 29 đến câu 38 để bạn tiện theo dõi:
+Câu hỏi 29: What is the main purpose of interface design?
+Đáp án: To improve user usability and accessibility (Mục đích chính của thiết kế giao diện là cải thiện trải nghiệm người dùng, giúp phần mềm/hệ thống trở nên dễ sử dụng và dễ tiếp cận hơn đối với người dùng).
+Câu hỏi 30: How many bits are contained in one byte?
+Đáp án: 8 (Theo quy ước chuẩn, 1 byte bao gồm 8 bits).
+Câu hỏi 31: A compiler translates a source program containing 20,000 lines of code. Which statement best describes the compilation process?
+Đáp án: The entire source program is translated before execution (Đặc trưng của trình biên dịch - compiler - là nó đọc và dịch toàn bộ mã nguồn của chương trình sang mã máy trước khi thực thi, khác với trình thông dịch - interpreter - dịch và chạy từng dòng lệnh).
+Câu hỏi 32: Which of the following is a non-volatile storage device?
+Đáp án: Hard disk (Ổ cứng là thiết bị lưu trữ bất biến / non-volatile, nó giữ nguyên dữ liệu ngay cả khi ngắt nguồn điện. Trong khi đó, RAM, CPU, Cache và Register đều mất dữ liệu khi tắt máy).
+Câu hỏi 33: Which SQL command removes a table definition and its data?
+Đáp án: DROP TABLE (Lệnh DROP TABLE trong SQL được sử dụng để xóa hoàn toàn cả cấu trúc (định nghĩa) của một bảng lẫn mọi dữ liệu được lưu bên trong bảng đó khỏi cơ sở dữ liệu).
+Câu hỏi 34: Which OS management function is primarily responsible for deciding which process receives CPU time?
+Đáp án: Process Management (Quản lý tiến trình là chức năng cốt lõi của Hệ điều hành chịu trách nhiệm lên lịch (scheduling) và quyết định tiến trình nào sẽ được cấp phát thời gian sử dụng CPU).
+Câu hỏi 35: Which of the following is classified as a peripheral device?
+Đáp án: Input unit (Khối đầu vào - Input unit - ví dụ như chuột, bàn phím, máy quét là thiết bị ngoại vi kết nối từ bên ngoài vào. Các lựa chọn còn lại như Control unit, ALU, CPU, hay Register đều là các thành phần cốt lõi bên trong vi xử lý).
+Câu hỏi 36: Which generation of computers introduced VLSI technology?
+Đáp án: 4th generation (Máy tính thế hệ thứ 4 đánh dấu sự ra đời của công nghệ vi mạch tích hợp mật độ rất cao - VLSI, cho phép thu nhỏ hàng ngàn transistor vào một chip vi xử lý duy nhất).
+Câu hỏi 37: Why is user-friendly interface design important?
+Đáp án: It reduces user errors and improves usability (Một thiết kế giao diện thân thiện, trực quan sẽ giúp người dùng thao tác dễ dàng hơn, từ đó làm giảm thiểu các sai sót do con người gây ra và tăng tính khả dụng).
+Câu hỏi 38: Which of the following devices was mainly used as the logic gate in first-generation computers?
+Đáp án: Vacuum tube (Máy tính thế hệ đầu tiên sử dụng các ống/đèn chân không - Vacuum tubes - làm các cổng logic và bộ khuếch đại điện tử để xử lý tín hiệu).
+Dưới đây là đáp án chi tiết cho các câu hỏi tiếp theo xuất hiện trong các bức ảnh của bạn, được sắp xếp theo thứ tự từ câu 11 đến câu 19 để bạn dễ theo dõi:
+Câu hỏi 11: Which type of software acts as an intermediary between application software and the operating system?
+Đáp án: Middleware (Phần mềm trung gian - Middleware - hoạt động như một cầu nối/trung gian giữa các ứng dụng và hệ điều hành hoặc giữa các ứng dụng với nhau).
+Câu hỏi 12: Which statement correctly describes the advantage of an interpreter compared with a compiler?
+Đáp án: It allows immediate execution and debugging of statements (Trình thông dịch - interpreter - dịch và thực thi từng dòng lệnh một ngay lập tức, điều này giúp việc phát hiện và gỡ lỗi (debugging) dễ dàng hơn so với trình biên dịch).
+Câu hỏi 13: Which type of processing system executes jobs collectively without user interaction?
+Đáp án: Batch processing (Hệ thống xử lý theo lô - Batch processing - gom các công việc (jobs) lại thành từng nhóm và tự động thực thi tuần tự mà không cần sự tương tác của người dùng).
+Câu hỏi 14: Two modules have reliabilities 0.95 and 0.90 in a series system. What is the system reliability?
+Đáp án: 0.855 (Độ tin cậy của một hệ thống mắc nối tiếp bằng tích độ tin cậy của các thành phần bên trong nó: $0.95 \times 0.90 = 0.855$).
+Câu hỏi 15: Which programming language is closest to machine language and uses mnemonic instructions?
+Đáp án: Assembly Language (Hợp ngữ - Assembly Language - là ngôn ngữ lập trình bậc thấp, rất gần với ngôn ngữ máy và sử dụng các từ gợi nhớ (mnemonics) thay vì các chuỗi nhị phân).
+Câu hỏi 16: What is the smallest unit of data representation in computers?
+Đáp án: Bit (Bit là đơn vị lưu trữ thông tin nhỏ nhất trong máy tính, chỉ có thể nhận giá trị 0 hoặc 1).
+Câu hỏi 17: What is the characteristic of auxiliary storage?
+Đáp án: It has non-volatile characteristics (Bộ nhớ phụ / lưu trữ ngoài như ổ cứng HDD, SSD có đặc tính "non-volatile", tức là bộ nhớ bất biến, không bị mất dữ liệu khi tắt nguồn điện).
+Câu hỏi 18: Which of the following character codes is internationally standardized for multilingual text representation?
+Đáp án: Unicode (Unicode là bộ mã chuẩn quốc tế được thiết kế để có thể biểu diễn văn bản của hầu hết các ngôn ngữ trên thế giới).
+Câu hỏi 19: Which Coffman condition can be eliminated to prevent deadlock?
+Đáp án: Circular Wait hoặc Hold and Wait (Lưu ý: Về mặt lý thuyết, để ngăn bế tắc (deadlock), hệ điều hành có thể phá vỡ điều kiện Hold and Wait hoặc Circular Wait. Tuy nhiên, trong thực tế và các giáo trình Khoa học Máy tính cơ bản, phá vỡ Circular Wait (bằng cách đánh số thứ tự tài nguyên) là cách khả thi và được sử dụng làm đáp án chuẩn phổ biến nhất vì loại bỏ "Hold and Wait" gây lãng phí tài nguyên rất lớn. Tùy thuộc vào tài liệu học của bạn, hãy cân nhắc chọn một trong hai).
+Dưới đây là đáp án chi tiết cho các câu hỏi tiếp theo xuất hiện trong các bức ảnh của bạn, được sắp xếp theo thứ tự từ câu 11 đến câu 19 để bạn dễ theo dõi:
+Câu hỏi 11: Which type of software acts as an intermediary between application software and the operating system?
+Đáp án: Middleware (Phần mềm trung gian - Middleware - hoạt động như một cầu nối/trung gian giữa các ứng dụng và hệ điều hành hoặc giữa các ứng dụng với nhau).
+Câu hỏi 12: Which statement correctly describes the advantage of an interpreter compared with a compiler?
+Đáp án: It allows immediate execution and debugging of statements (Trình thông dịch - interpreter - dịch và thực thi từng dòng lệnh một ngay lập tức, điều này giúp việc phát hiện và gỡ lỗi (debugging) dễ dàng hơn so với trình biên dịch).
+Câu hỏi 13: Which type of processing system executes jobs collectively without user interaction?
+Đáp án: Batch processing (Hệ thống xử lý theo lô - Batch processing - gom các công việc (jobs) lại thành từng nhóm và tự động thực thi tuần tự mà không cần sự tương tác của người dùng).
+Câu hỏi 14: Two modules have reliabilities 0.95 and 0.90 in a series system. What is the system reliability?
+Đáp án: 0.855 (Độ tin cậy của một hệ thống mắc nối tiếp bằng tích độ tin cậy của các thành phần bên trong nó: $0.95 \times 0.90 = 0.855$).
+Câu hỏi 15: Which programming language is closest to machine language and uses mnemonic instructions?
+Đáp án: Assembly Language (Hợp ngữ - Assembly Language - là ngôn ngữ lập trình bậc thấp, rất gần với ngôn ngữ máy và sử dụng các từ gợi nhớ (mnemonics) thay vì các chuỗi nhị phân).
+Câu hỏi 16: What is the smallest unit of data representation in computers?
+Đáp án: Bit (Bit là đơn vị lưu trữ thông tin nhỏ nhất trong máy tính, chỉ có thể nhận giá trị 0 hoặc 1).
+Câu hỏi 17: What is the characteristic of auxiliary storage?
+Đáp án: It has non-volatile characteristics (Bộ nhớ phụ / lưu trữ ngoài như ổ cứng HDD, SSD có đặc tính "non-volatile", tức là bộ nhớ bất biến, không bị mất dữ liệu khi tắt nguồn điện).
+Câu hỏi 18: Which of the following character codes is internationally standardized for multilingual text representation?
+Đáp án: Unicode (Unicode là bộ mã chuẩn quốc tế được thiết kế để có thể biểu diễn văn bản của hầu hết các ngôn ngữ trên thế giới).
+Câu hỏi 19: Which Coffman condition can be eliminated to prevent deadlock?
+Đáp án: Circular Wait hoặc Hold and Wait (Lưu ý: Về mặt lý thuyết, để ngăn bế tắc (deadlock), hệ điều hành có thể phá vỡ điều kiện Hold and Wait hoặc Circular Wait. Tuy nhiên, trong thực tế và các giáo trình Khoa học Máy tính cơ bản, phá vỡ Circular Wait (bằng cách đánh số thứ tự tài nguyên) là cách khả thi và được sử dụng làm đáp án chuẩn phổ biến nhất vì loại bỏ "Hold and Wait" gây lãng phí tài nguyên rất lớn. Tùy thuộc vào tài liệu học của bạn, hãy cân nhắc chọn một trong hai).
+【Đáp án】
+Chọn: B
+【Câu hoàn chỉnh】
+Which of the following is an appropriate description of JPCERT/CC?
+-> b) It is a coordinating body for the Information Security Early Warning Partnership.
+Dưới đây là nội dung câu hỏi và các đáp án được trích xuất từ loạt ảnh mới bạn vừa cung cấp:
+
+**Ảnh 1:**
+
+* **Câu hỏi:** Ký pháp hậu tố (Postfix) của biểu thức A+B*C là:
+* **Các lựa chọn:**
+* A+BC*
+* *ABC+
+* AB+C*
+* ABC*+
+
+
+
+**Ảnh 2:**
+
+* **Câu hỏi (CÂU HỎI 13 - SINGLECHOICE):** Which of the following software is typically stored in ROM and remains available even when power is turned off?
+* **Các lựa chọn:**
+* Utility software
+* Middleware
+* Firmware
+* Interpreter
+* Application software
+
+
+
+**Ảnh 3:**
+
+* **Câu hỏi (CÂU HỎI 2 - SINGLECHOICE):** Which of the following is performed in the Plan phase of a PDCA model that is applied to any ISMS process?
+* **Các lựa chọn:**
+* d) Risk assessment of information assets
+* a) Management of operational status
+* c) Review of implementation status
+* b) Implementation of improvement measures
+
+
+
+**Ảnh 4:**
+
+* **Câu hỏi (SINGLECHOICE):** When a file of 10^6 bytes is transmitted by using a 64 kbps line, approximately how long (in seconds) does it take to transfer the file? *(phần cuối bị khuất, có xuất hiện cụm)* 80%.
+* **Các lựa chọn:**
+* 100
+* 125
+* 157
+* 19.6
+
+
+
+**Ảnh 5:**
+
+* **Câu hỏi (CÂU HỎI 33 - SINGLECHOICE):** Which scheduling algorithm may cause starvation?
+* **Các lựa chọn:**
+* FIFO
+* Multilevel Feedback
+* FCFS
+* Round Robin
+* Shortest Job First
+
+
+
+**Ảnh 6:**
+
+* **Câu hỏi (CÂU HỎI 23 - SINGLECHOICE):** Cho một queue rỗng. Thực hiện ENQUEUE(A), ENQUEUE(B), DEQUEUE(), ENQUEUE(C), ENQUEUE(D), DEQUEUE(). Phần tử đầu hàng đợi cuối cùng là:
+* **Các lựa chọn:**
+* A
+* B
+* C
+* D
+
+
+
+**Ảnh 7:**
+
+* **Câu hỏi (SINGLECHOICE):** Which of the following is an appropriate description of cryptography?
+* **Các lựa chọn:**
+* a) Common key cryptography is safe for communication with multiple parties, even when the same encryption key is used.
+* d) A method is made practical by which at the start of communication a common key is encrypted by public key cryptography and sent to the... *(phần cuối bị khuất, tiếp tục là)* encryption of data is performed by common key cryptography.
+* c) Public key cryptography offers simpler and faster decryption than common key cryptography does.
+* b) Public key cryptography requires that the encryption key be privately distributed to the communicating party.
+
+
+
+**Ảnh 8:**
+
+* **Câu hỏi (CÂU HỎI 38 - SINGLECHOICE):** An 8-bit two's complement value is 11101010. What is its decimal value?
+* **Các lựa chọn:**
+* 234
+* -21
+* -22
+* 106
+* None of the above
+
+
+
+**Ảnh 9:**
+
+* **Câu hỏi (CÂU HỎI 19 - SINGLECHOICE):** Which of the following is an objective of a software developer in attaching a digital signature to software when software is released on the Internet?
+* **Các lựa chọn:**
+* b) To restrict use of the software to specified users
+* a) To assure that the software developer bears responsibility for maintenance
+* c) To show that the software copyright lies with the developer
+* d) To assure that the content of the software is not changed illegally
+
+
+
+**Ảnh 10:**
+
+* **Câu hỏi (CÂU HỎI 21 - SINGLECHOICE):** Thuật toán nào thuộc nhóm Divide and Conquer?
+* **Các lựa chọn:**
+* Selection Sort
+* Insertion Sort
+* Quick Sort
+* Bubble Sort
+Dưới đây là nội dung câu hỏi và các đáp án được trích xuất từ loạt ảnh mới bạn vừa cung cấp:
+
+**Ảnh 1:**
+
+* **Câu hỏi:** Ký pháp hậu tố (Postfix) của biểu thức A+B*C là:
+* **Các lựa chọn:**
+* A+BC*
+* *ABC+
+* AB+C*
+* ABC*+
+
+
+
+**Ảnh 2:**
+
+* **Câu hỏi (CÂU HỎI 13 - SINGLECHOICE):** Which of the following software is typically stored in ROM and remains available even when power is turned off?
+* **Các lựa chọn:**
+* Utility software
+* Middleware
+* Firmware
+* Interpreter
+* Application software
+
+
+
+**Ảnh 3:**
+
+* **Câu hỏi (CÂU HỎI 2 - SINGLECHOICE):** Which of the following is performed in the Plan phase of a PDCA model that is applied to any ISMS process?
+* **Các lựa chọn:**
+* d) Risk assessment of information assets
+* a) Management of operational status
+* c) Review of implementation status
+* b) Implementation of improvement measures
+
+
+
+**Ảnh 4:**
+
+* **Câu hỏi (SINGLECHOICE):** When a file of 10^6 bytes is transmitted by using a 64 kbps line, approximately how long (in seconds) does it take to transfer the file? *(phần cuối bị khuất, có xuất hiện cụm)* 80%.
+* **Các lựa chọn:**
+* 100
+* 125
+* 157
+* 19.6
+
+
+
+**Ảnh 5:**
+
+* **Câu hỏi (CÂU HỎI 33 - SINGLECHOICE):** Which scheduling algorithm may cause starvation?
+* **Các lựa chọn:**
+* FIFO
+* Multilevel Feedback
+* FCFS
+* Round Robin
+* Shortest Job First
+
+
+
+**Ảnh 6:**
+
+* **Câu hỏi (CÂU HỎI 23 - SINGLECHOICE):** Cho một queue rỗng. Thực hiện ENQUEUE(A), ENQUEUE(B), DEQUEUE(), ENQUEUE(C), ENQUEUE(D), DEQUEUE(). Phần tử đầu hàng đợi cuối cùng là:
+* **Các lựa chọn:**
+* A
+* B
+* C
+* D
+
+
+
+**Ảnh 7:**
+
+* **Câu hỏi (SINGLECHOICE):** Which of the following is an appropriate description of cryptography?
+* **Các lựa chọn:**
+* a) Common key cryptography is safe for communication with multiple parties, even when the same encryption key is used.
+* d) A method is made practical by which at the start of communication a common key is encrypted by public key cryptography and sent to the... *(phần cuối bị khuất, tiếp tục là)* encryption of data is performed by common key cryptography.
+* c) Public key cryptography offers simpler and faster decryption than common key cryptography does.
+* b) Public key cryptography requires that the encryption key be privately distributed to the communicating party.
+
+
+
+**Ảnh 8:**
+
+* **Câu hỏi (CÂU HỎI 38 - SINGLECHOICE):** An 8-bit two's complement value is 11101010. What is its decimal value?
+* **Các lựa chọn:**
+* 234
+* -21
+* -22
+* 106
+* None of the above
+
+
+
+**Ảnh 9:**
+
+* **Câu hỏi (CÂU HỎI 19 - SINGLECHOICE):** Which of the following is an objective of a software developer in attaching a digital signature to software when software is released on the Internet?
+* **Các lựa chọn:**
+* b) To restrict use of the software to specified users
+* a) To assure that the software developer bears responsibility for maintenance
+* c) To show that the software copyright lies with the developer
+* d) To assure that the content of the software is not changed illegally
+
+
+
+**Ảnh 10:**
+
+* **Câu hỏi (CÂU HỎI 21 - SINGLECHOICE):** Thuật toán nào thuộc nhóm Divide and Conquer?
+* **Các lựa chọn:**
+* Selection Sort
+* Insertion Sort
+* Quick Sort
+* Bubble Sort
+Dưới đây là nội dung câu hỏi và các đáp án được trích xuất từ các hình ảnh bạn vừa cung cấp:
+Ảnh 1:
+Câu hỏi (CÂU HỎI 31 - SINGLECHOICE): Which SQL command removes a table definition and its data?
+Các lựa chọn:
+DELETE
+REMOVE
+TRUNCATE
+ERASE
+DROP TABLE
+Ảnh 2:
+Câu hỏi (SINGLECHOICE): Which of the following is biometric authentication that uses information which can be obtained from the human eye?
+Các lựa chọn:
+d) Palm authentication
+c) Voice authentication
+b) Fingerprint authentication
+a) Iris authentication
+Ảnh 3:
+Câu hỏi (CÂU HỎI 18 - SINGLECHOICE): A company wants software that can be legally copied and used without purchasing a license fee. Which category is most appropriate?
+Các lựa chọn:
+Proprietary software
+Open-source software
+Subscription software
+Commercial software
+Trial software
+Ảnh 4:
+Câu hỏi (CÂU HỎI 33 - SINGLECHOICE): Which of the following is an appropriate description of JPCERT/CC?
+Các lựa chọn:
+c) It is a security center under the jurisdiction of the Information-technology Promotion Agency, Japan.
+a) It is a project to investigate appropriate implementation methods and operational methods for cryptography.
+b) It is a coordinating body for the Information Security Early Warning Partnership.
+d) It is an information security center that is established in the Cabinet Secretariat of Japan.
+Ảnh 5:
+Câu hỏi (SINGLECHOICE): Which of the following is an appropriate description of cryptography?
+Các lựa chọn:
+a) Common key cryptography is safe for communication with multiple parties, even when the same encryption key is used.
+d) A method is made practical by which at the start of communication a common key is encrypted by public key cryptography and sent to the... (phần này bị khuất chữ) encryption of data is performed by common key cryptography.
+c) Public key cryptography offers simpler and faster decryption than common key cryptography does.
+b) Public key cryptography requires that the encryption key be privately distributed to the communicating party.
+Ảnh 6:
+Câu hỏi (CÂU HỎI 27 - SINGLECHOICE): What is availability in system reliability evaluation?
+Các lựa chọn:
+The number of network users
+The probability that a system is usable when needed
+The size of auxiliary storage
+The amount of multimedia content
+The speed of data entry
+Ảnh 7:
+Câu hỏi (CÂU HỎI 10 - SINGLECHOICE): Cho mảng [12,24,35,48,60,75,88]. Dùng binary search tìm 35. Số lần so sánh tối đa là:
+Các lựa chọn:
+1
+4
+2
+3
+Ảnh 8:
+Câu hỏi (CÂU HỎI 10 - SINGLECHOICE): Cho dãy 84 73 28 16 51. Sau lần đầu tiên của Selection Sort, dãy là:
+Các lựa chọn:
+16 73 28 84 51
+16 28 73 84 51
+16 84 73 28 51
+16 28 51 73 84
+Ảnh 9:
+Câu hỏi (CÂU HỎI 14 - SINGLECHOICE): Which component combines multiple object modules into a single executable program?
+Các lựa chọn:
+Loader
+Compiler
+Assembler
+Linker
+Interpreter
+Ảnh 10:
+Câu hỏi (CÂU HỎI 3 - SINGLECHOICE): Thuật toán nào thuộc nhóm Divide and Conquer?
+Các lựa chọn:
+Selection Sort
+Quick Sort
+Insertion Sort
+Bubble Sort
+Dưới đây là nội dung câu hỏi và các đáp án được trích xuất từ các hình ảnh bạn đã cung cấp:
+Ảnh 1:
+Câu hỏi: Which of the following is an appropriate description of WPA? (Từ cuối hơi mờ, dựa vào đáp án có thể là WPA hoặc WAF)
+Các lựa chọn:
+b) It is a method for one-to-one conversion of an internal address to an external address.
+c) It is a method that integrates and centrally manages multiple different security functions.
+d) It is an encryption method for a wireless LAN
+a) It is software that blocks an attack against vulnerabilities in the Web application.
+Ảnh 2:
+Câu hỏi (CÂU HỎI 34 - SINGLECHOICE): Which SQL correctly returns the second-highest salary for each department?
+Các lựa chọn:
+All are correct
+Query B
+None of the above
+Query C
+Query A
+Ảnh 3:
+Câu hỏi (CÂU HỎI 21 - SINGLECHOICE): Cấu trúc dữ liệu nào hoạt động theo nguyên tắc FIFO?
+Các lựa chọn:
+Heap
+Tree
+Stack
+Queue
+Ảnh 4:
+Câu hỏi (SINGLECHOICE): Cho một stack rỗng. Thực hiện PUSH(3), PUSH(7), POP(), PUSH(5), PUSH(9), POP(). Phần tử ở đỉnh stack cuối cùng là:
+Các lựa chọn:
+7
+5
+3
+9
+Ảnh 5:
+Câu hỏi (CÂU HỎI 39 - SINGLECHOICE): Which processing system is most appropriate for payroll calculations performed once a month?
+Các lựa chọn:
+Interactive processing system
+Real-time processing system
+Batch processing system
+Distributed system
+Parallel system
+Ảnh 6:
+Câu hỏi (CÂU HỎI 35 - SINGLECHOICE): Which of the following is an effect of e-mail encryption?
+Các lựa chọn:
+c) The sending log of the mail server can be protected from falsification.
+b) The leakage of e-mail content can be prevented.
+a) The loss of an encryption key can be prevented.
+d) The attack that obstructs mail service can be prevented.
+Ảnh 7:
+Câu hỏi (SINGLECHOICE): Which of the following is an appropriate description of risk assessment?
+Các lựa chọn:
+a) Since it requires too much time and expense to address all conceivable risks, an organization should forecast the loss values and frequency of occurrence, and rank risks in order of size.
+d) Since the purpose of risk analysis is to determine the value of losses resulting from the materialization of risk, an organization should consider measures for prioritized risks with the highest loss value.
+b) Until all measures to risks that are evaluated through risk analyses are completed, an organization should avoid implementing repeated risk assessments.
+c) Since risk analysis is for the purpose of preventing future losses, an organization should avoid referencing data that is collected from a similar past project.
+Ảnh 8:
+Câu hỏi (CÂU HỎI 36 - SINGLECHOICE): Which type of processing system is suitable for airline reservation systems requiring immediate responses?
+Các lựa chọn:
+Manual processing system
+Offline processing system
+Standalone processing system
+Real-time processing system
+Batch processing system
+Ảnh 9:
+Câu hỏi (SINGLECHOICE): Which of the following is an objective of a software developer in attaching a digital signature to software when software is released on the Internet?
+Các lựa chọn:
+c) To show that the software copyright lies with the developer
+a) To assure that the software developer bears responsibility for maintenance
+d) To assure that the content of the software is not changed illegally
+b) To restrict use of the software to specified users
+Ảnh 10:
+Câu hỏi (CÂU HỎI 19 - SINGLECHOICE): A process is waiting for data from a disk drive before continuing execution. Which state is the process most likely in?
+Các lựa chọn:
+Ready
+Waiting
+Running
+Terminated
+Suspended
+Dưới đây là nội dung câu hỏi và các đáp án được trích xuất từ các hình ảnh bạn vừa cung cấp:
+Ảnh 1:
+Câu hỏi (CÂU HỎI 32 - SINGLECHOICE): When a file of 10^6 bytes is transmitted by using a 64 kbps line, approximately how long (in seconds) does it take to transfer the file? Here, the line utilization rate is 80%.
+Các lựa chọn:
+157
+19.6
+125
+100
+Ảnh 2:
+Câu hỏi (CÂU HỎI 31 - SINGLECHOICE): Cấu trúc dữ liệu nào phù hợp nhất để xử lý lời gọi hàm đệ quy?
+Các lựa chọn:
+Linked List
+Stack
+Queue
+Array
+Ảnh 3:
+Câu hỏi (CÂU HỎI 28 - SINGLECHOICE): Which file organization method stores records in the order they are received, without any sorting?
+Các lựa chọn:
+Sequential file
+Heap file
+Indexed file
+Direct file
+Relative file
+Ảnh 4:
+(Ảnh này có nội dung giống hệt Ảnh 2)
+Câu hỏi (CÂU HỎI 31 - SINGLECHOICE): Cấu trúc dữ liệu nào phù hợp nhất để xử lý lời gọi hàm đệ quy?
+Các lựa chọn:
+Linked List
+Stack
+Queue
+Array
+Ảnh 5:
+Câu hỏi (CÂU HỎI 8 - SINGLECHOICE): Cho một stack rỗng. Thực hiện PUSH(3), PUSH(7), POP(), PUSH(5), PUSH(9), POP(). Phần tử ở đỉnh stack cuối cùng là:
+Các lựa chọn:
+9
+3
+7
+5
+Ảnh 6:
+Câu hỏi (CÂU HỎI 15 - SINGLECHOICE): Which processing system concentrates all processing tasks on one central computer?
+Các lựa chọn:
+Interactive processing system
+Distributed processing system
+Parallel processing system
+Batch processing system
+Centralized processing system
+Ảnh 7:
+Câu hỏi (CÂU HỎI 1 - SINGLECHOICE): Which of the following is an appropriate description of the role of a reverse proxy?
+Các lựa chọn:
+a) It sends an access request, in place of a client, to a server.
+b) It receives an access request, in place of a server, from a client.
+c) It ensures the security of a PC that connects to a network.
+d) It detects intrusion into a network.
+Ảnh 8:
+Câu hỏi (CÂU HỎI 29 - SINGLECHOICE): Which of the following is an appropriate explanation of OP25B?
+Các lựa chọn:
+d) Performing port number-based filtering of e-mail which is sent from the internal network to an external mail server.
+b) Authenticating the source domain of the e-mail by recording signature information in e-mail headers.
+a) Setting up a server on the Internet which appears to have vulnerabilities, and collecting information about a method and pathway of unauthorized intrusion.
+c) Restricting access to websites from the internal network by filtering content.
+Ảnh 9:
+Câu hỏi (CÂU HỎI 35 - SINGLECHOICE): Which multimedia element represents moving visual content?
+Các lựa chọn:
+Audio
+Binary
+Graphics
+Text
+Video
+Ảnh 10:
+Câu hỏi (CÂU HỎI 17 - SINGLECHOICE): Cho danh sách liên kết đơn A->B->C->D->NULL. Muốn chèn X giữa B và C:
+Các lựa chọn:
+B.next=X; X.next=C
+X.next=B; B.next=X
+X.next=D; B.next=X
+C.next=X; X.next=D
+Dưới đây là nội dung câu hỏi và các đáp án được trích xuất từ các hình ảnh bạn vừa cung cấp:
+Ảnh 1:
+Câu hỏi: Cấu trúc dữ liệu nào hoạt động theo nguyên tắc FIFO?
+Các lựa chọn:
+Heap
+Tree
+Queue
+Stack
+Ảnh 2:
+Câu hỏi (CÂU HỎI 1 - SINGLECHOICE): What is the smallest unit of data representation in computers?
+Các lựa chọn:
+Word
+Bit
+Nibble
+Character
+Byte
+Ảnh 3:
+Câu hỏi (CÂU HỎI 29 - SINGLECHOICE): Thuật toán nào có ý tưởng đẩy phần tử lớn nhất về cuối dãy sau mỗi lượt quét?
+Các lựa chọn:
+Merge Sort
+Quick Sort
+Bubble Sort
+Selection Sort
+Ảnh 4:
+Câu hỏi (CÂU HỎI 37 - SINGLECHOICE): What is the value of hexadecimal number A in decimal notation?
+Các lựa chọn:
+12
+10
+9
+11
+8
+Ảnh 5:
+Câu hỏi (CÂU HỎI 26 - SINGLECHOICE): Which of the following is performed in the Plan phase of a PDCA model that is applied to any ISMS process?
+Các lựa chọn:
+b) Implementation of improvement measures
+a) Management of operational status
+c) Review of implementation status
+d) Risk assessment of information assets
+Ảnh 6:
+Câu hỏi (CÂU HỎI 22 - SINGLECHOICE): What is response time in system evaluation?
+Các lựa chọn:
+The amount of electricity consumed
+The number of users in a network
+The lifetime of a storage device
+The time required to repair hardware
+The time required to respond to a request
+Ảnh 7:
+Câu hỏi (CÂU HỎI 7 - SINGLECHOICE): Which of the following is a secure protocol that combines an authentication function between a client and a server with an encryption function for communication data?
+Các lựa chọn:
+a) APOP
+d) SSL
+b) EAP
+c) OAuth
+Ảnh 8:
+Câu hỏi (CÂU HỎI 9 - SINGLECHOICE): Which of the following is an appropriate description concerning antivirus software?
+Các lựa chọn:
+b) Virus detection using the signature files of antivirus software is an effective method for detecting known viruses and identifying virus names.
+d) In the method of detecting a virus by identifying unauthorized behavior, the name of the virus can be identified from the behavior characteristics.
+c) If the size of a file that is infected by a virus is the same as the size before the infection, the file can be restored to its pre-infection state by removing the virus.
+a) A signature file for antivirus software is a database that contains the first 16 bytes or 32 bytes of the code of each virus.
+Ảnh 9:
+Câu hỏi (CÂU HỎI 30 - SINGLECHOICE): Cho dãy 84 73 28 16 51. Sau lần đầu tiên của Selection Sort, dãy là:
+Các lựa chọn:
+16 73 28 84 51
+16 84 73 28 51
+16 28 51 73 84
+16 28 73 84 51
+Ảnh 10:
+Câu hỏi (CÂU HỎI 29 - SINGLECHOICE): What is the main advantage of semiconductor memory over magnetic disks?
+Các lựa chọn:
+Lower speed
+Faster access speed
+Consumes more power
+Mechanical movement required
+Larger physical size
+Dưới đây là nội dung câu hỏi và các đáp án được trích xuất từ loạt ảnh bạn vừa cung cấp:
+Ảnh 1:
+Câu hỏi (CÂU HỎI 7 - SINGLECHOICE): Cho BST có các nút 50,30,70,20,40,60,80. Kết quả duyệt Inorder là:
+Các lựa chọn:
+50 20 30 40 70 60 80
+20 30 40 50 60 70 80
+20 40 30 60 80 70 50
+50 30 20 40 70 60 80
+Ảnh 2:
+Câu hỏi (CÂU HỎI 17 - SINGLECHOICE): Which of the following is an appropriate description of JPCERT/CC?
+Các lựa chọn:
+a) It is a project to investigate appropriate implementation methods and operational methods for cryptography.
+c) It is a security center under the jurisdiction of the Information-technology Promotion Agency, Japan.
+d) It is an information security center that is established in the Cabinet Secretariat of Japan.
+b) It is a coordinating body for the Information Security Early Warning Partnership.
+Ảnh 3:
+Câu hỏi (CÂU HỎI 16 - SINGLECHOICE): Two modules have reliabilities 0.95 and 0.90 in a series system. What is the system reliability?
+Các lựa chọn:
+0.905
+0.950
+0.995
+0.860
+0.855
+Ảnh 4:
+Câu hỏi (CÂU HỎI 26 - SINGLECHOICE): Thuật toán nào không yêu cầu dữ liệu được sắp xếp trước?
+Các lựa chọn:
+Merge Sort
+Binary Search
+Quick Sort
+Linear Search
+Ảnh 5:
+Câu hỏi (CÂU HỎI 22 - SINGLECHOICE): Độ phức tạp thời gian tệ nhất của Linear Search là:
+Các lựa chọn:
+O(N)
+O(N²)
+O(1)
+O(logN)
+Ảnh 6:
+Câu hỏi (CÂU HỎI 16 - SINGLECHOICE): Trong một BST, tất cả các nút bên trái của một nút đều có giá trị:
+Các lựa chọn:
+Lớn hơn nút gốc
+Không xác định
+Nhỏ hơn nút gốc
+Bằng nút gốc
+Ảnh 7:
+Câu hỏi (CÂU HỎI 5 - SINGLECHOICE): Which type of processing system executes jobs collectively without user interaction?
+Các lựa chọn:
+Interactive processing
+Batch processing
+Parallel processing
+Online processing
+Distributed processing
+Ảnh 8:
+Câu hỏi (CÂU HỎI 18 - SINGLECHOICE): Which of the following is an appropriate description of information security policy?
+Các lựa chọn:
+a) A company's security policy is for the purpose of defining the content that should be set within each security system, and therefore, its content differs according to the security-related product to be installed.
+c) A company's top management should externally disclose information system vulnerabilities that are factors behind the development of a security policy.
+b) A company's security policy consists of behavior and judgment criteria to be followed, and does not include stance and direction concerning the security activities.
+d) In order to achieve the targeted security level, it is necessary to clearly indicate the organization's thinking concerning behavior and judgment to be followed.
+Ảnh 9:
+Câu hỏi (CÂU HỎI 2 - SINGLECHOICE): Which of the following best describes an assembler?
+Các lựa chọn:
+Executes source code line by line
+Converts machine code into source code
+Loads programs into memory
+Links object modules
+Translates assembly language into machine language
+Ảnh 10:
+Câu hỏi (SINGLECHOICE): When an internal user of a company forgets the password, which of the following is an appropriate action a security administrator should take after the identity of the user is verified?
+Các lựa chọn:
+a) Decrypting the encrypted password that is managed by the security administrator, and informing the user by e-mail
+b) Decrypting the encrypted password that is managed by the security administrator, and informing the user by telephone
+c) Converting the password that is managed on the security administrator's own PC into a hash value, and informing the user by using a classified internal document
+d) Resetting the password, and having the user set a new password
+Dưới đây là nội dung câu hỏi và các đáp án được trích xuất từ các hình ảnh bạn vừa cung cấp:
+Ảnh 1
+Câu hỏi (CÂU HỎI 34 - SINGLECHOICE): Nếu một cây nhị phân đầy đủ có 31 nút thì chiều cao tối thiểu của cây là:
+Các lựa chọn:
+6
+31
+4
+5
+Ảnh 2
+Câu hỏi (SINGLECHOICE): Which of the following is an appropriate description of cryptography?
+Các lựa chọn:
+a) Common key cryptography is safe for communication with multiple parties, even when the same encryption key is used.
+d) A method is made practical by which at the start of communication a common key is encrypted by public key cryptography and sent to the... (phần chữ bị khuất)
+c) Public key cryptography offers simpler and faster decryption than common key cryptography does.
+b) Public key cryptography requires that the encryption key be privately distributed to the communicating party.
+Ảnh 3
+Câu hỏi (SINGLECHOICE): Cho BST có các nút 50,30,70,20,40,60,80. Kết quả duyệt inorder là:
+Các lựa chọn:
+20 30 40 50 60 70 80
+50 20 30 40 70 60 80
+20 40 30 60 80 70 50
+50 30 20 40 70 60 80
+Ảnh 4
+Câu hỏi (CÂU HỎI 23 - SINGLECHOICE): Which number system uses digits from 0 to 7?
+Các lựa chọn:
+Decimal
+Hexadecimal
+BCD
+Binary
+Octal
+Ảnh 5
+Câu hỏi (CÂU HỎI 3 - SINGLECHOICE): A database file contains one million records. Users frequently retrieve records using a unique customer ID. Which file organization method provides the fastest access?
+Các lựa chọn:
+Tape file
+Direct file
+Sequential file
+Stream file
+Heap file
+Ảnh 6
+Câu hỏi (CÂU HỎI 12 - SINGLECHOICE): According to ISO/IEC 27001 (JIS Q 27001), which of the following is the definition of availability in information security?
+Các lựa chọn:
+b) Ensuring that a user of an information system is the correctly authorized user
+c) Ensuring that information is not disclosed to third parties
+a) Ensuring that information and a processing method are accurate and complete
+d) Ensuring that a user can access information assets at the required time
+Ảnh 7
+Câu hỏi (CÂU HỎI 30 - SINGLECHOICE): Linear Search trên N phần tử có số lần so sánh tốt nhất là:
+Các lựa chọn:
+N
+N/2
+1
+log2N
+Ảnh 8
+Câu hỏi (CÂU HỎI 6 - SINGLECHOICE): Which of the following is an appropriate explanation of TDM that is one of the multiplexing techniques?
+Các lựa chọn:
+It is a multiplexing technique that is used to change the connection destination in units of time slots.
+It is a multiplexing technique that is used to assign a code to each user.
+It is a multiplexing technique that is used to change the frequency band in use.
+It is a multiplexing technique that is used to change the wavelength of the light in use.
+Ảnh 9
+Câu hỏi (CÂU HỎI 18 - SINGLECHOICE): Thuật toán nào không yêu cầu dữ liệu được sắp xếp trước?
+Các lựa chọn:
+Quick Sort
+Linear Search
+Merge Sort
+Binary Search
+Ảnh 10
+Câu hỏi (CÂU HỎI 17 - SINGLECHOICE): What is the main purpose of interface design?
+Các lựa chọn:
+To minimize storage devices
+To reduce hardware cost
+To remove multimedia functions
+To increase CPU temperature
+To improve user usability and accessibility
+Dưới đây là nội dung câu hỏi và các đáp án được trích xuất từ các hình ảnh bạn vừa cung cấp:
+Ảnh 1:
+Câu hỏi (CÂU HỎI 12 - SINGLECHOICE): According to ISO/IEC 27001 (JIS Q 27001), which of the following is the definition of availability in information security?
+Các lựa chọn:
+b) Ensuring that a user of an information system is the correctly authorized user
+c) Ensuring that information is not disclosed to third parties
+a) Ensuring that information and a processing method are accurate and complete
+d) Ensuring that a user can access information assets at the required time
+Ảnh 2:
+Câu hỏi (CÂU HỎI 30 - SINGLECHOICE): Linear Search trên N phần tử có số lần so sánh tốt nhất là:
+Các lựa chọn:
+N
+N/2
+1
+log₂N
+Ảnh 3:
+Câu hỏi (CÂU HỎI 6 - SINGLECHOICE): Which of the following is an appropriate explanation of TDM that is one of the multiplexing techniques?
+Các lựa chọn:
+It is a multiplexing technique that is used to change the connection destination in units of time slots.
+It is a multiplexing technique that is used to assign a code to each user.
+It is a multiplexing technique that is used to change the frequency band in use.
+It is a multiplexing technique that is used to change the wavelength of the light in use.
+Ảnh 4:
+Câu hỏi (CÂU HỎI 17 - SINGLECHOICE): What is the main purpose of interface design?
+Các lựa chọn:
+To minimize storage devices
+To reduce hardware cost
+To remove multimedia functions
+To increase CPU temperature
+To improve user usability and accessibility
+Ảnh 5:
+Câu hỏi (CÂU HỎI 18 - SINGLECHOICE): Thuật toán nào không yêu cầu dữ liệu được sắp xếp trước?
+Các lựa chọn:
+Quick Sort
+Linear Search
+Merge Sort
+Binary Search
+Ảnh 6:
+Câu hỏi (SINGLECHOICE): Among the descriptions concerning devices that constitute a network, which of the following is an explanation concerning the CCU (Communication Control Unit)?
+Các lựa chọn:
+It dials the telephone number of the terminal in order to call the terminal.
+It performs conversion from a digital signal to an analog signal, and vice versa.
+It converts the digital signals in a computer to a format that is suitable for transmission.
+It assembles or disassembles the data to be transmitted, or performs error control of the data.
+Ảnh 7:
+Câu hỏi (CÂU HỎI 25 - SINGLECHOICE): Which of the following is an appropriate description of WPA?
+Các lựa chọn:
+b) It is a method for one-to-one conversion of an internal address to an external address.
+a) It is software that blocks an attack against vulnerabilities in the Web application.
+d) It is an encryption method for a wireless LAN
+c) It is a method that integrates and centrally manages multiple different security functions.
+Ảnh 8:
+Câu hỏi (CÂU HỎI 6 - SINGLECHOICE): Which of the following is a non-volatile storage device?
+Các lựa chọn:
+Register
+RAM
+CPU
+Cache memory
+Hard disk
+Ảnh 9:
+Câu hỏi (CÂU HỎI 15 - SINGLECHOICE): Biểu thức (A+B)*(C-D/E) ở dạng Reverse Polish Notation là:
+Các lựa chọn:
+AB+CDE/-*
+ABC+DE/-*
+AB+CD-E/*
+AB+C-D/E*
+Ảnh 10:
+Câu hỏi (SINGLECHOICE): Which of the following is the action that corresponds to social engineering?
+Các lựa chọn:
+a) Performing an attack that exploits the security hole in an OS
+b) Externally controlling a virus-infected computer
+c) Intruding into a computer room by using a PIN that is analyzed by a program
+d) Impersonating an authorized person to request the password via telephone
+Dưới đây là nội dung câu hỏi và các đáp án được trích xuất từ loạt ảnh mới bạn vừa cung cấp:
+Ảnh 1:
+Câu hỏi (CÂU HỎI 24 - SINGLECHOICE): Which statement correctly describes the advantage of an interpreter compared with a compiler?
+Các lựa chọn:
+It creates object code before execution
+It requires less memory during execution
+It allows immediate execution and debugging of statements
+It eliminates syntax checking
+It produces a faster executable program
+Ảnh 2:
+Câu hỏi (CÂU HỎI 13 - SINGLECHOICE): Which of the following is an appropriate description of risk assessment?
+Các lựa chọn:
+a) Since it requires too much time and expense to address all conceivable risks, an organization should forecast the loss values and frequency of occurrence, and rank risks in order of size.
+b) Until all measures to risks that are evaluated through risk analyses are completed, an organization should avoid implementing repeated risk analyses.
+d) Since the purpose of risk analysis is to determine the value of losses resulting from the materialization of risk, an organization should consider measures for prioritized risks with the highest loss value.
+c) Since risk analysis is for the purpose of preventing future losses, an organization should avoid referencing data that is collected from a similar past project.
+Ảnh 3:
+Câu hỏi (CÂU HỎI 24 - SINGLECHOICE): Which of the following is an appropriate explanation of TDM that is one of the multiplexing techniques?
+Các lựa chọn:
+It is a multiplexing technique that is used to assign a code to each user.
+It is a multiplexing technique that is used to change the connection destination in units of time slots.
+It is a multiplexing technique that is used to change the frequency band in use.
+It is a multiplexing technique that is used to change the wavelength of the light in use.
+Ảnh 4:
+Câu hỏi (CÂU HỎI 11 - SINGLECHOICE): What is the purpose of human interface technology?
+Các lựa chọn:
+To increase electricity usage
+To manage databases
+To replace operating systems
+To compress multimedia files
+To improve interaction between humans and computers
+Ảnh 5:
+Câu hỏi (CÂU HỎI 5 - SINGLECHOICE): Ký pháp hậu tố (Postfix) của biểu thức A+B*C là:
+Các lựa chọn:
+ABC*+
+*ABC+
+A+BC*
+AB+C*
+Ảnh 6:
+Câu hỏi (SINGLECHOICE): Biểu thức (A+B)*(C-D/E) ở dạng Reverse Polish Notation là:
+Các lựa chọn:
+AB+CD-E/*
+AB+C-D/E*
+ABC+DE/-*
+AB+CDE/-*
+Ảnh 7:
+Câu hỏi (CÂU HỎI 30 - SINGLECHOICE): Which memory loses its contents when power is turned off?
+Các lựa chọn:
+ROM
+Flash Memory
+SSD
+RAM
+Magnetic Disk
+Ảnh 8:
+Câu hỏi (CÂU HỎI 24 - SINGLECHOICE): Cấu trúc dữ liệu nào phù hợp nhất để xử lý lời gọi hàm đệ quy?
+Các lựa chọn:
+Queue
+Stack
+Array
+Linked List
+Ảnh 9:
+Câu hỏi (CÂU HỎI 8 - SINGLECHOICE): A software system must support multiple users accessing files simultaneously while preventing... (phần sau bị khuất)
+Các lựa chọn:
+Device Management
+Language Processing
+Memory Management
+Software Licensing
+File Management
+Ảnh 10:
+Câu hỏi (CÂU HỎI 23 - SINGLECHOICE): Trong linked list đơn, để duyệt toàn bộ danh sách cần bắt đầu từ:
+Các lựa chọn:
+Head
+Node bất kỳ
+Tail
+Node cuối
+

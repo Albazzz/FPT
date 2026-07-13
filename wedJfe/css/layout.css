@@ -1,0 +1,81 @@
+/* Master layout shell */
+
+.app-body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-body--auth {
+  background: var(--color-surface-low);
+}
+
+.app-body--marketing {
+  background: var(--color-surface);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.app-shell {
+  flex: 1 1 auto;
+  display: flex;
+  min-height: 0;
+}
+
+.app-shell__content {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+/* Auth main: center card */
+.app-main--auth {
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--space-4) var(--space-6);
+}
+
+.app-main--auth-inner {
+  width: 100%;
+  max-width: 440px;
+}
+
+.app-main--wide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px var(--space-4) var(--space-5);
+}
+
+/* Decorative blobs (shared) */
+.bg-blob {
+  position: fixed;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 9999px;
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+}
+
+.bg-blob--primary {
+  top: -10%;
+  left: -5%;
+  background: var(--color-primary-fixed);
+}
+
+.bg-blob--tertiary {
+  bottom: -10%;
+  right: -5%;
+  background: var(--color-tertiary-fixed);
+  opacity: 0.3;
+}
+
+.app-main { position: relative; z-index: 1; }

@@ -1,0 +1,30 @@
+BAO CAO DOI CHIEU test.txt <-> TOM TAT
+============================================================
+
+1) Mau trong test.txt (cac dang cau chinh):
+- Hardware: byte/bit, VLSI, vacuum tube, volatile/non-volatile, 2's complement, hex/oct
+- IPS: batch/real-time/centralized, series reliability, UI usability, response time
+- Software/OS: middleware, compiler/interpreter/assembler/linker/firmware, process states,
+  scheduling/starvation, deadlock Coffman, open source, file org
+- DB: DROP TABLE, (advanced rank salary)
+- Network: TDM, transfer time 157s, CCU, WPA
+- Security: CIA availability, ISMS Plan risk assessment, hybrid crypto, digital signature,
+  biometric iris, reverse proxy, OP25B, JPCERT/CC, social engineering, SSL, antivirus, password reset
+- DS/Algo: stack/queue sim, linked list insert, postfix/RPN, BST inorder, DnC quicksort,
+  bubble/selection, linear/binary search, tree height
+
+2) Ket qua bo sung tom tat:
+- Da them PHU LUC BO SUNG S1..S42 vao TOM_TAT_ON_THI_FE_VOL1_VOL2.txt
+- Do dai tom tat moi: 67736 bytes
+
+3) Bo 300 cau:
+- File: BO_300_CAU_ON_THI.txt
+- So cau: 300
+
+4) Tu kiem tra: moi cau can cac tu khoa xuat hien trong tom tat
+- PASS: 300/300
+- FAIL: 0/300
+- TAT CA 300 CAU DEU CO CO SO TRONG TOM TAT -> THANH CONG
+
+5) Ghi chu: mot so cau mau test.txt trung lap / thieu options (Query A/B/C).
+   Cau SQL rank 2 da duoc bo sung y tuong window/subquery trong S10.
