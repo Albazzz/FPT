@@ -83,14 +83,11 @@ def is_variant_header(s):
 
 
 def end_of_variant_block(vh_i, limit):
-    """Index after last line of a variant block starting at vh_i."""
+    """Index after last line of a variant block starting at vh_i.
+    One-line closed headers '(... )' must NOT swallow the next main stem."""
     header = lines[vh_i]
-    if header.strip().endswith(")") and ("->" in header or len(header) > 40):
-        j = vh_i + 1
-        while j < limit and is_empty(lines[j]):
-            j += 1
-        if j >= limit or not opt_re.match(lines[j]):
-            return vh_i + 1
+    if header.strip().endswith(")"):
+        return vh_i + 1
 
     j = vh_i + 1
     saw_option = False

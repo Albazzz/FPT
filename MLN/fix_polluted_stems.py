@@ -163,40 +163,19 @@ def extract_options_ending_at(end_i):
 def end_of_variant_block(vh_i, limit):
     """
     Return index AFTER the last line belonging to variant starting at vh_i.
-    Variants may be:
-      - one line: (Kiểu hỏi khác: ... -> ans)  or  (Kiểu hỏi khác: rephrase)
-      - multi-line: header, optional Q text, A..D options, last option ends with )
-      - multi-line without closing ): options then blank then next main stem
+    One-line closed headers '(... )' must NOT swallow the next main stem.
     """
     header = lines[vh_i]
-    # count parens on header
-    rest_m = variant_loose.match(header) or variant_re.match(header)
-    rest = (rest_m.group(3) if rest_m and rest_m.lastindex and rest_m.lastindex >= 3 else "") or ""
-    if not rest and rest_m:
-        # group 2 may be type only; try full
-        rest = rest_m.group(0)
-        # strip prefix
-        rest = re.sub(r"^\(?\s*Kiểu\s+(hỏi|trả lời)\s+(khác|tương tự)\s*[:：]?\s*", "", rest, flags=re.I)
-
-    # Single-line closed variant
-    if header.strip().endswith(")") and ("->" in header or len(header) > 40):
+    if header.strip().endswith(")"):
         return vh_i + 1
-    if rest.strip().endswith(")") and vh_i + 1 < limit and not opt_re.match(lines[vh_i + 1] if vh_i + 1 < n else ""):
-        # check if next lines are options of THIS variant
-        j = vh_i + 1
-        while j < limit and is_empty(lines[j]):
-            j += 1
-        if j >= limit or not opt_re.match(lines[j]):
-            return vh_i + 1
 
     j = vh_i + 1
     saw_option = False
-    saw_body = False  # any non-empty content after header
+    saw_body = False
     while j < limit:
         if is_variant_header(lines[j]):
             break
         if is_empty(lines[j]):
-            # if already saw options/body and blank gap, maybe end
             if saw_option or saw_body:
                 k = j + 1
                 while k < limit and is_empty(lines[k]):
@@ -217,10 +196,8 @@ def end_of_variant_block(vh_i, limit):
             continue
         if is_answer_line(lines[j]):
             break
-        # text line
         if saw_option:
             return j
-        # answer-only variant: "=> text)" or "-> text)"
         if lines[j].startswith("=>") or lines[j].startswith("->") or "->" in lines[j] or "=>" in lines[j]:
             saw_body = True
             if lines[j].rstrip().endswith(")"):
@@ -231,8 +208,6 @@ def end_of_variant_block(vh_i, limit):
             return j + 1
         if lines[j].endswith(")") and saw_body:
             return j + 1
-        # if we already had body (Q text) and this looks like a NEW main stem
-        # (long question without being option), stop BEFORE it
         if saw_body and look_like_hard_question(lines[j]):
             return j
         saw_body = True
