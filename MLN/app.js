@@ -511,31 +511,55 @@
   function showExplainPanel(q) {
     if (!el.explainPanel) return;
     const exp = q && q.explanation;
-    if (!exp || (!exp.whyCorrect && !exp.whyWrong)) {
+    if (!exp || (!exp.whyCorrect && !exp.whyWrong && !exp.memoryTip && !exp.answerDisplay)) {
       hideExplainPanel();
       return;
     }
 
     const corrects = correctLetters(q);
-    let html = `<div class="explain-title"><i class="fa-solid fa-lightbulb"></i> Giải thích</div>`;
+    let html = `<div class="explain-title"><i class="fa-solid fa-lightbulb"></i> Giải thích ôn thi</div>`;
 
     const fmt = (s) =>
       escapeHtml(s || "")
         .replace(/\n•/g, "<br>•")
         .replace(/\n/g, "<br>");
 
+    // ✅ Đáp án
+    let ansLabel = exp.answerDisplay || "";
+    if (!ansLabel && corrects.length) {
+      ansLabel = corrects
+        .map((L) => `${L}${q.options && q.options[L] ? ". " + q.options[L] : ""}`)
+        .join(" | ");
+    }
+    if (ansLabel) {
+      html += `<div class="explain-block explain-ans">
+        <div class="explain-label"><i class="fa-solid fa-circle-check"></i> Đáp án</div>
+        <p class="explain-answer-line">${fmt(ansLabel)}</p>
+      </div>`;
+    }
+
+    // 📝 Giải thích
     if (exp.whyCorrect) {
       html += `<div class="explain-block explain-ok">
-        <div class="explain-label"><i class="fa-solid fa-circle-check"></i> Vì sao đúng</div>
+        <div class="explain-label"><i class="fa-solid fa-book-open"></i> Giải thích</div>
         <p>${fmt(exp.whyCorrect)}</p>
       </div>`;
     }
 
+    // 💡 Mẹo nhớ
+    if (exp.memoryTip) {
+      html += `<div class="explain-block explain-tip">
+        <div class="explain-label"><i class="fa-solid fa-lightbulb"></i> Mẹo nhớ</div>
+        <p class="explain-tip-line">${fmt(exp.memoryTip)}</p>
+      </div>`;
+    }
+
+    // ❌ Vì sao các đáp án khác sai
     const wrong = exp.whyWrong || {};
     const wrongKeys = Object.keys(wrong).sort();
     if (wrongKeys.length) {
       html += `<div class="explain-block explain-bad">
-        <div class="explain-label"><i class="fa-solid fa-circle-xmark"></i> Vì sao các lựa chọn còn lại sai</div>
+        <div class="explain-label"><i class="fa-solid fa-circle-xmark"></i> Vì sao các đáp án khác sai</div>
         <ul class="explain-list">`;
       wrongKeys.forEach((L) => {
         const optText = (q.options && q.options[L]) || "";
@@ -545,7 +569,7 @@
       html += `</ul></div>`;
     }
 
-    // also list correct options clearly for multi
+    // multi: also list correct options clearly if more than one
     if (corrects.length > 1) {
       html += `<div class="explain-block explain-keys">
         <div class="explain-label"><i class="fa-solid fa-list-check"></i> Các đáp án đúng</div>
@@ -593,16 +617,30 @@
         html += `</div>`;
       }
 
-      if (ansLetter || ansText) {
-        const label = ansLetter
-          ? `Đáp án: ${escapeHtml(String(ansLetter))}${ansText ? " — " + escapeHtml(ansText) : ""}`
-          : `Đáp án: ${escapeHtml(ansText)}`;
-        html += `<p class="alt-answer"><i class="fa-solid fa-check"></i><span>${label}</span></p>`;
+      const aexp = alt.explanation || {};
+      const ansDisp = aexp.answerDisplay || (ansLetter
+        ? `${ansLetter}${ansText ? ". " + ansText : ""}`
+        : ansText || "");
+      if (ansDisp) {
+        html += `<p class="alt-answer"><i class="fa-solid fa-check"></i><span>Đáp án: ${escapeHtml(String(ansDisp))}</span></p>`;
       } else {
         html += `<p class="alt-answer warn"><i class="fa-solid fa-triangle-exclamation"></i><span>Chưa có đáp án trong dữ liệu nguồn</span></p>`;
       }
-      if (alt.explanation && alt.explanation.whyCorrect) {
-        html += `<p class="alt-explain"><i class="fa-solid fa-lightbulb"></i> ${escapeHtml(alt.explanation.whyCorrect)}</p>`;
+      if (aexp.whyCorrect) {
+        html += `<p class="alt-explain"><i class="fa-solid fa-book-open"></i> ${escapeHtml(aexp.whyCorrect)}</p>`;
+      }
+      if (aexp.memoryTip) {
+        html += `<p class="alt-tip"><i class="fa-solid fa-lightbulb"></i> Mẹo: ${escapeHtml(aexp.memoryTip)}</p>`;
+      }
+      const aw = aexp.whyWrong || {};
+      const awKeys = Object.keys(aw).sort();
+      if (awKeys.length) {
+        html += `<ul class="alt-wrong-list">`;
+        awKeys.forEach((L) => {
+          const ot = opts[L] || "";
+          html += `<li><strong>${escapeHtml(L)}${ot ? ". " + escapeHtml(ot) : ""}</strong> — ${escapeHtml(aw[L])}</li>`;
+        });
+        html += `</ul>`;
       }
       html += `</div>`;
     });

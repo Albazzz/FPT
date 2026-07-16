@@ -14,7 +14,7 @@ from collections import Counter
 
 sys.stdout.reconfigure(encoding="utf-8")
 
-for path in ("data_extracted.txt", "data.docx"):
+for path in ("data.txt", "data_extracted.txt", "data.docx"):
     try:
         raw = open(path, "rb").read().decode("utf-8")
         src = path
@@ -34,7 +34,7 @@ n = len(lines)
 opt_re = re.compile(r"^([A-E])\s*[\.\)\:]\s*(.*)$", re.I)
 ans_pure = re.compile(r"^([A-E]{1,5})$", re.I)
 ans_note = re.compile(r"^([A-E]{1,5})\s*[\(（].+", re.I)
-variant_re = re.compile(r"^\(?\s*Kiểu hỏi\s+(khác|tương tự)\b\s*[:：]?\s*(.*)$", re.I)
+variant_re = re.compile(r"^\(?\s*Kiểu\s+(hỏi|trả lời)\s+(khác|tương tự)\b\s*[:：]?\s*(.*)$", re.I)
 
 
 def is_empty(s):
@@ -49,6 +49,8 @@ def clean_text(s):
     s = re.sub(r"\s+", " ", (s or "")).strip()
     while s.endswith(")") and s.count("(") < s.count(")"):
         s = s[:-1].strip()
+    s = re.sub(r"^\)\s*", "", s)
+    s = re.sub(r"^=>\s*", "", s)
     return s
 
 
@@ -62,7 +64,113 @@ def parse_answer_value(s):
 
 
 def is_variant_header(s):
-    return bool(s) and bool(variant_re.match(s))
+    """True for 'Kiểu hỏi khác' and bare parenthetical alternate stems."""
+    if not s:
+        return False
+    if variant_re.match(s):
+        return True
+    if s.startswith("(") and not opt_re.match(s):
+        inner = s[1:].strip()
+        if not inner:
+            return False
+        if len(inner) >= 25 and (
+            "?" in inner
+            or inner.endswith(":")
+            or re.search(r"\b(là|nào|gì|thế nào|như thế nào)\b", inner, re.I)
+        ):
+            return True
+    return False
+
+
+def end_of_variant_block(vh_i, limit):
+    """Index after last line of a variant block starting at vh_i."""
+    header = lines[vh_i]
+    if header.strip().endswith(")") and ("->" in header or len(header) > 40):
+        j = vh_i + 1
+        while j < limit and is_empty(lines[j]):
+            j += 1
+        if j >= limit or not opt_re.match(lines[j]):
+            return vh_i + 1
+
+    j = vh_i + 1
+    saw_option = False
+    saw_body = False
+    while j < limit:
+        if is_variant_header(lines[j]):
+            break
+        if is_empty(lines[j]):
+            if saw_option or saw_body:
+                k = j + 1
+                while k < limit and is_empty(lines[k]):
+                    k += 1
+                if k < limit and not opt_re.match(lines[k]) and not is_answer_line(lines[k]):
+                    if look_like_hard_question(lines[k]) or (
+                        lines[k] and lines[k][:1].isupper() and len(lines[k]) >= 20
+                    ):
+                        return j
+            j += 1
+            continue
+        if opt_re.match(lines[j]):
+            saw_option = True
+            saw_body = True
+            if lines[j].rstrip().endswith(")"):
+                return j + 1
+            j += 1
+            continue
+        if is_answer_line(lines[j]):
+            break
+        if saw_option:
+            return j
+        if lines[j].startswith("=>") or lines[j].startswith("->") or "->" in lines[j] or "=>" in lines[j]:
+            saw_body = True
+            if lines[j].rstrip().endswith(")"):
+                return j + 1
+            j += 1
+            continue
+        if lines[j] == ")":
+            return j + 1
+        if lines[j].endswith(")") and saw_body:
+            return j + 1
+        if saw_body and look_like_hard_question(lines[j]):
+            return j
+        saw_body = True
+        j += 1
+    return j
+
+
+def strip_leading_pollution(text):
+    """Drop previous variant text accidentally glued onto stem."""
+    if not text:
+        return text
+    m2 = re.search(
+        r"\)\s+([A-ZÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴĐ].{15,})$",
+        text,
+    )
+    if m2:
+        return clean_text(m2.group(1))
+    if "->" in text or "=>" in text:
+        m3 = re.search(
+            r"(?:->|=>)[^)]*\)\s*([A-ZÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴĐ].+)$",
+            text,
+        )
+        if m3:
+            return clean_text(m3.group(1))
+    m = re.search(
+        r"\?\s+([A-ZÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴĐ].+)$",
+        text,
+    )
+    if m:
+        tail = m.group(1).strip()
+        head = text[: m.start() + 1].strip()
+        if re.match(r"^(Chọn|lựa chọn|chọn)\s+\d+", tail, re.I):
+            return text
+        if len(tail) < 40:
+            return text
+        if re.match(r"^(Ý nào|Câu nào|Phương án nào|Đáp án nào)\s+sau đây", tail, re.I) and len(tail) < 60:
+            return text
+        if len(head) >= 25 and len(tail) >= 40:
+            return clean_text(tail)
+    return text
 
 
 def is_option_continuation(s):
@@ -421,46 +529,24 @@ for qi, ans_i in enumerate(answer_idxs):
     #   [Q stem]
     #   [options]
     #   [ANS]
-    stem_start = (prev_ans + 1) if prev_ans is not None else 0
-    # If there are variants after prev_ans, stem starts after last variant block
-    # Find last variant header in (stem_start, first_opt_i)
-    variant_headers = [j for j in range(stem_start, first_opt_i) if is_variant_header(lines[j])]
-    if variant_headers:
-        # stem is after the last variant's content
-        # last variant options end just before first_opt of MAIN
-        # Actually if variant has options, first_opt_i found by walking back from answer
-        # is MAIN's first option, so variant options are between variant header and main stem? 
-        # Or variant options then main stem? Looking at data:
-        #   ANS
-        #   (Kiểu hỏi khác: Q? A B C D)   <- options of variant
-        #   Next main Q stem
-        #   A B C D
-        #   ANS
-        # So first_opt_i is main A. Variant options are BEFORE main stem text.
-        # stem text is between end of variant options and first_opt_i.
-        last_vh = variant_headers[-1]
-        # find end of variant options
-        k = last_vh + 1
-        while k < first_opt_i:
-            if is_empty(lines[k]):
-                k += 1
-                continue
-            if opt_re.match(lines[k]):
-                k += 1
-                continue
-            # non-option: could be variant Q text after header, or main stem
-            # if followed later by options still before first_opt, it's variant body
-            # collect from first hard question after variant options
-            break
-        # walk k forward: skip remaining variant options
-        while k < first_opt_i and (is_empty(lines[k]) or opt_re.match(lines[k])):
-            k += 1
-        # also skip variant-only short lines right after header before options
-        # re-scan: parts from k to first_opt_i
-        stem_start = k
+    # Stem = lines between prev answer and first option, excluding ENTIRE variant blocks
+    # (old logic only skipped header/options, so variant Q text leaked into next stem)
+    region_start = (prev_ans + 1) if prev_ans is not None else 0
+    masked = set()
+    j = region_start
+    while j < first_opt_i:
+        if is_variant_header(lines[j]):
+            end = end_of_variant_block(j, first_opt_i)
+            for t in range(j, end):
+                masked.add(t)
+            j = max(end, j + 1)
+            continue
+        j += 1
 
     parts = []
-    for j in range(stem_start, first_opt_i):
+    for j in range(region_start, first_opt_i):
+        if j in masked:
+            continue
         if is_empty(lines[j]):
             continue
         if is_variant_header(lines[j]):
@@ -469,11 +555,25 @@ for qi, ans_i in enumerate(answer_idxs):
             continue
         if is_answer_line(lines[j]):
             continue
-        parts.append(lines[j])
+        s = lines[j]
+        if s in (")", "->", "=>"):
+            continue
+        if s.startswith("=>") or s.startswith("->"):
+            continue
+        if re.match(r"^\)\s*", s):
+            s = re.sub(r"^\)\s*", "", s)
+            if not s:
+                continue
+        if re.match(r"^\d+\.\s+", s) and ")" in s and len(s) > 60:
+            continue
+        if s.startswith("Giải thích:") or s.startswith("Kiểu trả lời"):
+            continue
+        parts.append(s)
 
     question_text = clean_text(" ".join(parts))
     if question_text.startswith("(") and ")" not in question_text[-3:]:
         question_text = question_text.lstrip("(").strip()
+    question_text = strip_leading_pollution(question_text)
 
     if not question_text:
         failed.append({"at": ans_i, "ans": answer, "opts": list(options.keys()), "reason": "no_stem"})
