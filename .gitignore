@@ -19,3 +19,11 @@ Desktop.ini
 # Logs / cache
 *.log
 .cache/
+
+# deps
+node_modules/
+
+# env
+.env
+.env.local
+.env.*.local

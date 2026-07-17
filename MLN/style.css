@@ -1250,6 +1250,96 @@ body.modal-open {
   touch-action: none;
 }
 
+/* —— Sync badge + Master Control —— */
+.badge-sync {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--muted);
+  font: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.badge-sync:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.badge-sync.is-cloud {
+  background: color-mix(in srgb, #0ea5e9 12%, transparent);
+  border-color: color-mix(in srgb, #0ea5e9 35%, transparent);
+  color: #0369a1;
+}
+.badge-sync.is-syncing {
+  opacity: 0.75;
+}
+.badge-sync.is-error {
+  background: var(--wrong-bg);
+  border-color: #ffd4d6;
+  color: #b42318;
+}
+
+.master-panel {
+  max-width: 420px;
+  text-align: left;
+}
+.master-icon {
+  background: color-mix(in srgb, #0ea5e9 15%, transparent) !important;
+  color: #0369a1 !important;
+}
+.master-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin: 4px 0 6px;
+}
+.master-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font: inherit;
+  font-weight: 600;
+  background: var(--surface);
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.master-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.master-error {
+  color: #b42318;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+.master-status {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin: 0 0 8px;
+}
+.master-actions {
+  margin-top: 8px;
+}
+.master-logout {
+  width: 100%;
+  margin-top: 10px;
+  justify-content: center;
+}
+.master-error.hidden,
+.master-status.hidden,
+.master-logout.hidden {
+  display: none;
+}
+
 /* Toast (thông báo nhẹ — thay alert trên iPad) */
 .mln-toast {
   position: fixed;

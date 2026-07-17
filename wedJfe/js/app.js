@@ -28,7 +28,7 @@
     };
   }
 
-  function loadState() {
+  function loadStateLocal() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return defaultState();
@@ -44,11 +44,41 @@
     }
   }
 
-  function saveState() {
+  function loadState() {
+    return loadStateLocal();
+  }
+
+  function saveStateLocal() {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     } catch (e) {
       console.warn("Cannot save progress", e);
+    }
+  }
+
+  function saveState() {
+    if (window.StudyCloud && StudyCloud.isCloud()) {
+      StudyCloud.notifyChange();
+      return;
+    }
+    saveStateLocal();
+  }
+
+  function applyCloudData(data) {
+    if (data == null) {
+      state = loadStateLocal();
+    } else {
+      state = {
+        ...defaultState(),
+        ...data,
+        answers: data.answers || {},
+        wrongIds: Array.isArray(data.wrongIds) ? data.wrongIds : [],
+      };
+    }
+    try {
+      route();
+    } catch (e) {
+      /* route may not be ready */
     }
   }
 
@@ -588,15 +618,35 @@
   }
 
   /* ---------- Init ---------- */
-  function init() {
+  async function init() {
     if (!location.hash) location.hash = "#/";
     bind();
+    if (window.StudyCloud) {
+      await StudyCloud.mount({
+        subjectId: "wedjfe",
+        badgeParent: "#fe-nav-links",
+        getData: () => state,
+        setData: applyCloudData,
+        onAfterLoad: () => {
+          route();
+        },
+        autoPrompt: true,
+      });
+    }
     route();
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
+    document.addEventListener("DOMContentLoaded", () => {
+      init().catch((e) => {
+        console.warn(e);
+        route();
+      });
+    });
   } else {
-    init();
+    init().catch((e) => {
+      console.warn(e);
+      route();
+    });
   }
 })();

@@ -1,0 +1,51 @@
+# Deploy MLN cloud API to Cloudflare Workers on push (no Vercel).
+# Secrets required in GitHub repo Settings → Secrets and variables → Actions:
+#   CF_API_TOKEN      — Cloudflare API token (Workers Edit)
+#   CF_ACCOUNT_ID     — Cloudflare account id
+#   DATABASE_URL      — Neon pooler connection string
+#   MASTER_CODE       — optional, default Namcong9@
+#   SESSION_SECRET    — optional
+
+name: Deploy MLN Sync Worker
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "workers/mln-sync/**"
+      - ".github/workflows/deploy-mln-sync.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: workers/mln-sync
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install
+        run: npm install
+
+      - name: Deploy with Wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          workingDirectory: workers/mln-sync
+          command: deploy
+          secrets: |
+            DATABASE_URL
+            MASTER_CODE
+            SESSION_SECRET
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          MASTER_CODE: ${{ secrets.MASTER_CODE }}
+          SESSION_SECRET: ${{ secrets.SESSION_SECRET }}

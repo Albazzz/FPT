@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css?v=20260716a" />
+  <link rel="stylesheet" href="style.css?v=20260716f" />
 </head>
 <body>
   <div class="app-body">
@@ -23,6 +23,10 @@
           </div>
         </div>
         <div class="nav-stats" id="statsBar">
+          <button type="button" class="badge badge-sync" id="syncBadge" title="Chế độ lưu tiến trình">
+            <i class="fa-solid fa-hard-drive" id="syncBadgeIcon"></i>
+            <span id="syncBadgeText">Local</span>
+          </button>
           <span class="badge badge-done" title="Đúng trong phiên">
             <i class="fa-solid fa-circle-check"></i>
             <strong id="statCorrect">0</strong> đúng
@@ -170,8 +174,43 @@
     </div>
   </div>
 
+  <!-- Master Control: cloud sync (tùy chọn) -->
+  <div id="masterModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="masterTitle" hidden>
+    <div class="modal-backdrop" data-master-skip tabindex="-1"></div>
+    <div class="modal-panel master-panel" role="document">
+      <div class="modal-icon master-icon" aria-hidden="true"><i class="fa-solid fa-cloud"></i></div>
+      <h3 class="modal-title" id="masterTitle">Master Control</h3>
+      <p class="modal-msg" id="masterMsg">
+        Nhập mã để <strong>lưu tiến trình trên cloud</strong> (đồng bộ nhiều máy).<br />
+        Bỏ qua = chỉ lưu trên máy này (local).
+      </p>
+      <label class="master-label" for="masterCodeInput">Mã Master Control</label>
+      <input
+        type="password"
+        id="masterCodeInput"
+        class="master-input"
+        placeholder="Nhập mã…"
+        autocomplete="current-password"
+        enterkeyhint="go"
+      />
+      <p class="master-error hidden" id="masterError" role="alert"></p>
+      <p class="master-status hidden" id="masterStatus"></p>
+      <div class="modal-actions master-actions">
+        <button type="button" class="btn btn-secondary" id="masterSkip">Bỏ qua (local)</button>
+        <button type="button" class="btn btn-primary" id="masterLogin">
+          <i class="fa-solid fa-right-to-bracket"></i> Vào cloud
+        </button>
+      </div>
+      <button type="button" class="btn btn-ghost btn-sm master-logout hidden" id="masterLogout">
+        <i class="fa-solid fa-right-from-bracket"></i> Thoát cloud → local
+      </button>
+    </div>
+  </div>
+
   <!-- ?v= cache-bust cho iPad Safari -->
+  <script src="../js/cloud-config.js?v=1"></script>
+  <script src="../js/study-cloud.js?v=1"></script>
   <script src="questions.js?v=20260716d"></script>
-  <script src="app.js?v=20260716a"></script>
+  <script src="app.js?v=20260716g"></script>
 </body>
 </html>

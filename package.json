@@ -1,0 +1,9 @@
+{
+  "name": "fpt-study-hub",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Study hub static site + MLN cloud sync API",
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4"
+  }
+}

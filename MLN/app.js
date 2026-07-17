@@ -20,7 +20,7 @@
   let sessionCorrect = 0;
   let sessionAnswered = 0;
   /** @type {Set<number>} */
-  let wrongIds = loadWrongIds();
+  let wrongIds = new Set();
   /**
    * lastChoice: id -> string[] of chosen letters
    * @type {Map<number, string[]>}
@@ -71,6 +71,16 @@
     searchInput: $("#searchInput"),
     searchResults: $("#searchResults"),
     btnClearSearch: $("#btnClearSearch"),
+    syncBadge: $("#syncBadge"),
+    syncBadgeIcon: $("#syncBadgeIcon"),
+    syncBadgeText: $("#syncBadgeText"),
+    masterModal: $("#masterModal"),
+    masterCodeInput: $("#masterCodeInput"),
+    masterError: $("#masterError"),
+    masterStatus: $("#masterStatus"),
+    masterLogin: $("#masterLogin"),
+    masterSkip: $("#masterSkip"),
+    masterLogout: $("#masterLogout"),
   };
 
   function correctLetters(q) {
@@ -96,8 +106,8 @@
     return setsEqual(correctLetters(q), chosen || []);
   }
 
-  // —— Storage ——
-  function loadWrongIds() {
+  // —— Storage: local vs StudyCloud (Neon) ——
+  function loadWrongIdsLocal() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return new Set();
@@ -109,12 +119,43 @@
     }
   }
 
-  function saveWrongIds() {
+  function saveWrongIdsLocal() {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify([...wrongIds]));
     } catch {
       /* ignore */
     }
+  }
+
+  function applyMlnCloudData(data) {
+    if (data == null) {
+      wrongIds = loadWrongIdsLocal();
+    } else {
+      const ids = Array.isArray(data.wrongIds) ? data.wrongIds : [];
+      wrongIds = new Set(ids.map(Number).filter((n) => Number.isFinite(n)));
+      if (data.prefs && typeof data.prefs.explainVisible === "boolean") {
+        explainVisible = data.prefs.explainVisible;
+      }
+    }
+    updateBadges();
+    if (mode === "wrong") rebuildQueue(null);
+    else render();
+  }
+
+  function getMlnCloudData() {
+    return {
+      wrongIds: [...wrongIds],
+      prefs: { explainVisible },
+      stats: { sessionCorrect, sessionAnswered },
+    };
+  }
+
+  function saveWrongIds() {
+    if (window.StudyCloud && StudyCloud.isCloud()) {
+      StudyCloud.notifyChange();
+      return;
+    }
+    saveWrongIdsLocal();
   }
 
   function addWrong(id) {
@@ -127,6 +168,34 @@
     if (wrongIds.delete(id)) {
       saveWrongIds();
       updateBadges();
+    }
+  }
+
+  async function bootStorage() {
+    wrongIds = loadWrongIdsLocal();
+    if (!window.StudyCloud) return;
+    // hide old modal if present
+    if (el.masterModal) {
+      el.masterModal.classList.add("hidden");
+      el.masterModal.setAttribute("hidden", "");
+    }
+    await StudyCloud.mount({
+      subjectId: "mln",
+      badgeParent: el.statsBar || document.querySelector(".nav-stats"),
+      getData: getMlnCloudData,
+      setData: applyMlnCloudData,
+      onAfterLoad: () => {
+        if (mode === "wrong") rebuildQueue(null);
+        else {
+          updateBadges();
+          render();
+        }
+      },
+      autoPrompt: true,
+    });
+    // remove duplicate old badge if any
+    if (el.syncBadge && el.syncBadge.parentNode) {
+      el.syncBadge.style.display = "none";
     }
   }
 
@@ -1183,5 +1252,16 @@
 
   dbg("boot", { totalQuestions: ALL.length, shuffleDefault: el.shuffleToggle?.checked });
   syncReshuffleBtn();
-  rebuildQueue(null);
+
+  bootStorage()
+    .then(() => {
+      rebuildQueue(null);
+    })
+    .catch((e) => {
+      console.warn(e);
+      wrongIds = loadWrongIdsLocal();
+      storageMode = "local";
+      updateSyncBadge("", "Local");
+      rebuildQueue(null);
+    });
 })();

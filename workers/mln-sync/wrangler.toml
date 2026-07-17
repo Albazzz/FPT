@@ -1,0 +1,8 @@
+name = "mln-sync"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# Secrets (set via GitHub Actions / wrangler secret):
+#   DATABASE_URL
+#   MASTER_CODE   (default app-side: Namcong9@)
+#   SESSION_SECRET
