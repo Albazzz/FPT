@@ -6,6 +6,7 @@
   "use strict";
 
   const STORAGE_KEY = "mln-quiz-wrong-ids-v1";
+  const PROGRESS_KEY = "mln-quiz-progress-v1";
 
   /** @type {Array<{id:number,question:string,options:Object.<string,string>,answer:string,answers?:string[]}>} */
   const ALL = Array.isArray(window.QUIZ_QUESTIONS) ? window.QUIZ_QUESTIONS : [];
@@ -29,6 +30,11 @@
   let searchQuery = "";
   /** User preference: show explanation panel after answering (default true) */
   let explainVisible = true;
+  /**
+   * Pending restore after cloud/local load: { currentId, mode, shuffle, explainVisible? }
+   * @type {{ currentId: number|null, mode: string, shuffle?: boolean, explainVisible?: boolean|null }|null}
+   */
+  let pendingRestore = null;
 
   // —— DOM ——
   const $ = (sel) => document.querySelector(sel);
@@ -107,6 +113,7 @@
   }
 
   // —— Storage: local vs StudyCloud (Neon) ——
+  // Cloud payload includes wrongIds + progress.currentId (vị trí câu đang làm).
   function loadWrongIdsLocal() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -127,35 +134,137 @@
     }
   }
 
+  function loadProgressLocal() {
+    try {
+      const raw = localStorage.getItem(PROGRESS_KEY);
+      if (!raw) return null;
+      const p = JSON.parse(raw);
+      if (!p || typeof p !== "object") return null;
+      const id = Number(p.currentId);
+      return {
+        currentId: Number.isFinite(id) ? id : null,
+        mode: p.mode === "wrong" ? "wrong" : "all",
+        shuffle: !!p.shuffle,
+        explainVisible:
+          typeof p.explainVisible === "boolean" ? p.explainVisible : null,
+      };
+    } catch {
+      return null;
+    }
+  }
+
+  function saveProgressLocal() {
+    try {
+      const cur = queue[index];
+      localStorage.setItem(
+        PROGRESS_KEY,
+        JSON.stringify({
+          currentId: cur ? cur.id : null,
+          mode,
+          shuffle: !!(el.shuffleToggle && el.shuffleToggle.checked),
+          explainVisible,
+        })
+      );
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function applyUiMode(newMode) {
+    mode = newMode === "wrong" ? "wrong" : "all";
+    document.querySelectorAll(".tab").forEach((t) => {
+      const active = t.dataset.tab === mode;
+      t.classList.toggle("active", active);
+      t.setAttribute("aria-selected", active ? "true" : "false");
+    });
+  }
+
+  /** Parse cloud/local progress blob into pendingRestore */
+  function setPendingFromPayload(data) {
+    if (!data || typeof data !== "object") {
+      pendingRestore = null;
+      return;
+    }
+    const prog = data.progress || {};
+    const id = Number(prog.currentId != null ? prog.currentId : data.currentId);
+    const shufflePref =
+      data.prefs && typeof data.prefs.shuffle === "boolean"
+        ? data.prefs.shuffle
+        : !!prog.shuffle;
+    pendingRestore = {
+      currentId: Number.isFinite(id) ? id : null,
+      mode: prog.mode === "wrong" || data.mode === "wrong" ? "wrong" : "all",
+      shuffle: shufflePref,
+    };
+  }
+
   function applyMlnCloudData(data) {
     if (data == null) {
       wrongIds = loadWrongIdsLocal();
+      pendingRestore = loadProgressLocal();
+      if (pendingRestore && typeof pendingRestore.explainVisible === "boolean") {
+        explainVisible = pendingRestore.explainVisible;
+      }
     } else {
       const ids = Array.isArray(data.wrongIds) ? data.wrongIds : [];
       wrongIds = new Set(ids.map(Number).filter((n) => Number.isFinite(n)));
       if (data.prefs && typeof data.prefs.explainVisible === "boolean") {
         explainVisible = data.prefs.explainVisible;
       }
+      setPendingFromPayload(data);
     }
     updateBadges();
-    if (mode === "wrong") rebuildQueue(null);
-    else render();
   }
 
   function getMlnCloudData() {
+    const cur = queue[index];
     return {
       wrongIds: [...wrongIds],
-      prefs: { explainVisible },
+      prefs: {
+        explainVisible,
+        shuffle: !!(el.shuffleToggle && el.shuffleToggle.checked),
+      },
+      progress: {
+        mode,
+        currentId: cur ? cur.id : null,
+        index: index,
+      },
       stats: { sessionCorrect, sessionAnswered },
+      savedAt: Date.now(),
     };
   }
 
-  function saveWrongIds() {
+  /** Persist wrong bank + vị trí câu (cloud hoặc local) */
+  function persistState() {
     if (window.StudyCloud && StudyCloud.isCloud()) {
       StudyCloud.notifyChange();
       return;
     }
     saveWrongIdsLocal();
+    saveProgressLocal();
+  }
+
+  function saveWrongIds() {
+    persistState();
+  }
+
+  function restorePositionAndBuild() {
+    const r = pendingRestore;
+    pendingRestore = null;
+    if (r) {
+      if (r.mode === "wrong" && wrongIds.size > 0) applyUiMode("wrong");
+      else applyUiMode("all");
+      if (typeof r.shuffle === "boolean" && el.shuffleToggle) {
+        el.shuffleToggle.checked = r.shuffle;
+      }
+      syncReshuffleBtn();
+      rebuildQueue(r.currentId != null ? r.currentId : null);
+      if (r.currentId != null && queue[index] && queue[index].id === r.currentId) {
+        /* restored */
+      }
+      return;
+    }
+    rebuildQueue(null);
   }
 
   function addWrong(id) {
@@ -173,6 +282,10 @@
 
   async function bootStorage() {
     wrongIds = loadWrongIdsLocal();
+    pendingRestore = loadProgressLocal();
+    if (pendingRestore && typeof pendingRestore.explainVisible === "boolean") {
+      explainVisible = pendingRestore.explainVisible;
+    }
     if (!window.StudyCloud) return;
     // hide old modal if present
     if (el.masterModal) {
@@ -185,11 +298,8 @@
       getData: getMlnCloudData,
       setData: applyMlnCloudData,
       onAfterLoad: () => {
-        if (mode === "wrong") rebuildQueue(null);
-        else {
-          updateBadges();
-          render();
-        }
+        // Cloud login / restore — nhảy về câu đã lưu
+        restorePositionAndBuild();
       },
       autoPrompt: true,
     });
@@ -320,12 +430,7 @@
     // Prefer current queue; if not found, switch to all + unshuffle order by id
     let found = queue.findIndex((q) => q.id === id);
     if (found < 0) {
-      mode = "all";
-      document.querySelectorAll(".tab").forEach((t) => {
-        const active = t.dataset.tab === "all";
-        t.classList.toggle("active", active);
-        t.setAttribute("aria-selected", active ? "true" : "false");
-      });
+      applyUiMode("all");
       el.shuffleToggle.checked = false;
       queue = ALL.slice();
       found = queue.findIndex((q) => q.id === id);
@@ -339,6 +444,7 @@
     searchQuery = "";
     if (el.btnClearSearch) el.btnClearSearch.classList.add("hidden");
     render();
+    persistState();
     el.quizCard?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
@@ -796,6 +902,7 @@
     hideExplainPanel();
     hideAltPanel();
     render();
+    persistState();
   }
 
   function jumpTo(n) {
@@ -815,17 +922,14 @@
     hideExplainPanel();
     hideAltPanel();
     render();
+    persistState();
   }
 
   function setMode(newMode) {
     if (newMode === mode) return;
-    mode = newMode;
-    document.querySelectorAll(".tab").forEach((t) => {
-      const active = t.dataset.tab === mode;
-      t.classList.toggle("active", active);
-      t.setAttribute("aria-selected", active ? "true" : "false");
-    });
+    applyUiMode(newMode);
     rebuildQueue(null);
+    persistState();
   }
 
   // —— Search ——
@@ -918,6 +1022,7 @@
     });
     syncReshuffleBtn();
     rebuildQueue(null); // bật = xáo + về Câu 1; tắt = thứ tự gốc + về Câu 1
+    persistState();
   });
 
   el.btnReshuffle.addEventListener("click", (e) => {
@@ -931,6 +1036,7 @@
     }
     dbg("btnReshuffle:click", { shuffleOn: true, forceShuffle: true });
     rebuildQueue(null, { forceShuffle: true });
+    persistState();
     showToast("Đã xáo lại thứ tự câu hỏi.");
   });
 
@@ -1152,6 +1258,7 @@
         q.explanation &&
         (q.explanation.whyCorrect || q.explanation.whyWrong);
       updateExplainToggleUI(!!has);
+      persistState();
     });
   }
 
@@ -1251,13 +1358,19 @@
 
   bootStorage()
     .then(() => {
-      rebuildQueue(null);
+      // Cloud path already restored via onAfterLoad; local path still needs restore.
+      if (!(window.StudyCloud && StudyCloud.isCloud())) {
+        if (!pendingRestore) pendingRestore = loadProgressLocal();
+        restorePositionAndBuild();
+      } else if (!queue.length) {
+        // Safety: cloud mounted but queue empty (onAfterLoad missed)
+        restorePositionAndBuild();
+      }
     })
     .catch((e) => {
       console.warn(e);
       wrongIds = loadWrongIdsLocal();
-      storageMode = "local";
-      updateSyncBadge("", "Local");
-      rebuildQueue(null);
+      pendingRestore = loadProgressLocal();
+      restorePositionAndBuild();
     });
 })();

@@ -241,6 +241,40 @@
     }, 450);
   }
 
+  /** Immediate save — dùng khi ẩn tab / đóng trang (mobile) */
+  function flushSave() {
+    if (mode !== "cloud" || !getDataFn) return Promise.resolve();
+    if (saveTimer) {
+      clearTimeout(saveTimer);
+      saveTimer = null;
+    }
+    updateBadge("is-syncing", "Đang lưu…");
+    return save(subjectId, getDataFn())
+      .then(() => {
+        updateBadge("is-cloud", "Cloud");
+      })
+      .catch((e) => {
+        console.warn(e);
+        updateBadge("is-error", "Lỗi cloud");
+      });
+  }
+
+  function bindLifecycleFlush() {
+    if (global.__studyCloudLifecycleBound) return;
+    global.__studyCloudLifecycleBound = true;
+    const flush = () => {
+      try {
+        flushSave();
+      } catch (e) {
+        /* ignore */
+      }
+    };
+    window.addEventListener("pagehide", flush);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "hidden") flush();
+    });
+  }
+
   function toast(msg) {
     if (typeof global.showToast === "function") {
       global.showToast(msg);
@@ -438,6 +472,7 @@
 
     injectStyles();
     ensureModal();
+    bindLifecycleFlush();
 
     // badge
     let parent = opts.badgeParent;
@@ -497,6 +532,7 @@
   global.StudyCloud = {
     mount,
     notifyChange,
+    flush: flushSave,
     isCloud,
     openModal,
     cloudConfigured,
