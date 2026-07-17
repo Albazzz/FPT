@@ -193,10 +193,6 @@
       },
       autoPrompt: true,
     });
-    // remove duplicate old badge if any
-    if (el.syncBadge && el.syncBadge.parentNode) {
-      el.syncBadge.style.display = "none";
-    }
   }
 
   // —— Utils ——

@@ -9,24 +9,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css?v=20260716g" />
+  <link rel="stylesheet" href="style.css?v=20260716h" />
 </head>
 <body>
   <div class="app-body">
     <header class="site-nav">
       <div class="nav-inner container">
-        <div class="brand">
+        <a class="brand" href="../" title="Về Study Hub">
           <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
           <div class="brand-text">
             <strong>Quiz MLN</strong>
             <span>Ôn tập trắc nghiệm</span>
           </div>
-        </div>
+        </a>
+        <nav class="nav-links" id="mln-nav-links" aria-label="Điều hướng">
+          <a href="../"><i class="fa-solid fa-house"></i> Study Hub</a>
+          <a href="../jl/">JIT401</a>
+          <a href="../wedJfe/">FE Study</a>
+        </nav>
         <div class="nav-stats" id="statsBar">
-          <button type="button" class="badge badge-sync" id="syncBadge" title="Chế độ lưu tiến trình">
-            <i class="fa-solid fa-hard-drive" id="syncBadgeIcon"></i>
-            <span id="syncBadgeText">Local</span>
-          </button>
           <span class="badge badge-done" title="Đúng trong phiên">
             <i class="fa-solid fa-circle-check"></i>
             <strong id="statCorrect">0</strong> đúng
