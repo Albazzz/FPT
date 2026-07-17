@@ -25,6 +25,9 @@
       currentIndex: 0,
       mode: "all",
       explainHidden: false,
+      shuffle: false,
+      /** @type {string[]|null} order of ids when shuffle on */
+      orderIds: null,
     };
   }
 
@@ -216,16 +219,45 @@
   }
 
   /* ---------- Quiz ---------- */
-  function filteredIds() {
+  function shuffleArray(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function baseIdsForMode() {
     const mode = state.mode || "all";
     if (mode === "all") return quizData.map((q) => q.id);
     if (mode === "unanswered") {
       return quizData.filter((q) => !state.answers[q.id]).map((q) => q.id);
     }
-    // wrong mode
     const set = new Set(state.wrongIds);
-    // also include answered wrong even if removed? keep wrongIds as source of truth
     return quizData.filter((q) => set.has(q.id)).map((q) => q.id);
+  }
+
+  /** Rebuild id order for current mode (respect shuffle). */
+  function rebuildOrder(keepId) {
+    let ids = baseIdsForMode();
+    if (state.shuffle && ids.length > 1) {
+      ids = shuffleArray(ids);
+    }
+    state.orderIds = ids;
+    if (keepId != null) {
+      const i = ids.indexOf(keepId);
+      state.currentIndex = i >= 0 ? i : 0;
+    } else {
+      state.currentIndex = 0;
+    }
+  }
+
+  function filteredIds() {
+    if (!state.orderIds) rebuildOrder(null);
+    const base = new Set(baseIdsForMode());
+    // keep order but drop ids no longer in mode
+    return state.orderIds.filter((id) => base.has(id));
   }
 
   function currentList() {
@@ -251,6 +283,76 @@
     return { all, unanswered, wrong };
   }
 
+  function goToQuestionId(id) {
+    const list = currentList();
+    let idx = list.findIndex((q) => q.id === id);
+    if (idx < 0) {
+      state.mode = "all";
+      rebuildOrder(id);
+      idx = currentList().findIndex((q) => q.id === id);
+    }
+    if (idx < 0) return;
+    state.currentIndex = idx;
+    saveState(true);
+    hideSearchResults();
+    renderQuiz();
+  }
+
+  function hideSearchResults() {
+    const el = $("#quiz-search-results");
+    if (el) {
+      el.classList.add("hidden");
+      el.innerHTML = "";
+    }
+  }
+
+  function runQuizSearch(q) {
+    const box = $("#quiz-search-results");
+    if (!box) return;
+    const query = (q || "").trim().toLowerCase();
+    if (!query) {
+      hideSearchResults();
+      return;
+    }
+    const tokens = query.split(/\s+/).filter(Boolean);
+    const hits = [];
+    for (const item of quizData) {
+      const hay = (
+        item.question +
+        " " +
+        (item.options || []).join(" ") +
+        " " +
+        item.id
+      ).toLowerCase();
+      if (tokens.every((t) => hay.includes(t))) {
+        hits.push(item);
+        if (hits.length >= 30) break;
+      }
+    }
+    if (!hits.length) {
+      box.innerHTML =
+        '<div class="search-empty" style="padding:12px;color:var(--muted);text-align:center">Không tìm thấy</div>';
+      box.classList.remove("hidden");
+      return;
+    }
+    box.innerHTML = hits
+      .map((item) => {
+        const sn =
+          item.question.length > 100
+            ? item.question.slice(0, 100) + "…"
+            : item.question;
+        return `<button type="button" class="qz-search-item" data-id="${escapeHtml(item.id)}">
+          <span class="qz-search-item-id">${escapeHtml(item.id)}</span>
+          <span>${escapeHtml(sn)}</span>
+        </button>`;
+      })
+      .join("");
+    box.classList.remove("hidden");
+    box.querySelectorAll(".qz-search-item").forEach((btn) => {
+      btn.addEventListener("click", () => goToQuestionId(btn.dataset.id));
+    });
+  }
+
   function renderQuiz() {
     clampIndex();
     const list = currentList();
@@ -259,101 +361,150 @@
 
     const totalBadge = $("#q-total-badge");
     if (totalBadge) totalBadge.textContent = `Tổng ${st.total} câu`;
-    $("#q-answered-badge").textContent = `Đã làm ${st.answered}/${st.total}`;
-    $("#q-correct-badge").textContent = `Đúng ${st.correct}`;
-    $("#q-wrong-badge").textContent = `Sai ${st.wrong}`;
-    $("#quiz-progress-fill").style.width = `${st.pct}%`;
+    const ansB = $("#q-answered-badge");
+    if (ansB) ansB.textContent = `Đã làm ${st.answered}/${st.total}`;
+    const corB = $("#q-correct-badge");
+    if (corB) corB.textContent = `Đúng ${st.correct}`;
+    const wrB = $("#q-wrong-badge");
+    if (wrB) wrB.textContent = `Sai ${st.wrong}`;
+    const fill = $("#quiz-progress-fill");
+    if (fill) {
+      const pct = list.length
+        ? Math.round(((state.currentIndex + 1) / list.length) * 100)
+        : 0;
+      fill.style.width = `${pct}%`;
+    }
 
-    const modeAll = $("#mode-all");
-    const modeUn = $("#mode-unanswered");
-    const modeWrong = $("#mode-wrong");
-    if (modeAll) modeAll.textContent = `Tất cả câu (${counts.all})`;
-    if (modeUn) modeUn.textContent = `Chưa trả lời (${counts.unanswered})`;
-    if (modeWrong) modeWrong.textContent = `Chỉ câu sai (${counts.wrong})`;
+    const cAll = $("#mode-all-count");
+    const cUn = $("#mode-un-count");
+    const cWr = $("#mode-wrong-count");
+    if (cAll) cAll.textContent = String(counts.all);
+    if (cUn) cUn.textContent = String(counts.unanswered);
+    if (cWr) cWr.textContent = String(counts.wrong);
 
-    $$(".mode-tabs button").forEach((btn) => {
-      btn.classList.toggle("active", btn.dataset.mode === state.mode);
+    $$(".mode-tabs button, .qz-tabs button").forEach((btn) => {
+      if (btn.dataset.mode)
+        btn.classList.toggle("active", btn.dataset.mode === state.mode);
     });
 
+    const shuffleEl = $("#shuffleToggle");
+    if (shuffleEl) shuffleEl.checked = !!state.shuffle;
+    const reshuffle = $("#btn-reshuffle");
+    if (reshuffle) reshuffle.disabled = !state.shuffle;
+
+    const card = $("#quiz-card-main");
+    const empty = $("#quiz-empty");
+
     if (!list.length) {
-      $("#q-text").textContent =
-        state.mode === "wrong"
-          ? "Chưa có câu sai nào. Làm bài ở chế độ “Tất cả câu” trước."
-          : state.mode === "unanswered"
-            ? "Bạn đã trả lời hết các câu!"
-            : "Không có câu hỏi.";
-      $("#q-options").innerHTML = "";
-      $("#q-explain").className = "explain-box";
-      $("#q-pos").textContent = "0 / 0";
-      $("#q-index-badge").textContent = "—";
-      const qNumEmpty = $("#q-num");
-      if (qNumEmpty) qNumEmpty.textContent = "Câu số —";
-      $("#btn-prev").disabled = true;
-      $("#btn-next").disabled = true;
+      if (card) card.classList.add("hidden");
+      if (empty) {
+        empty.classList.remove("hidden");
+        const title = $("#quiz-empty-title");
+        const desc = $("#quiz-empty-desc");
+        if (state.mode === "wrong") {
+          if (title) title.textContent = "Chưa có câu sai";
+          if (desc)
+            desc.textContent =
+              "Làm bài ở chế độ «Tất cả» — câu sai sẽ được lưu tại đây.";
+        } else if (state.mode === "unanswered") {
+          if (title) title.textContent = "Đã trả lời hết";
+          if (desc) desc.textContent = "Không còn câu chưa làm trong bank.";
+        } else {
+          if (title) title.textContent = "Không có câu hỏi";
+          if (desc) desc.textContent = "Kiểm tra file data-quiz.js.";
+        }
+      }
+      const prev = $("#btn-prev");
+      const next = $("#btn-next");
+      if (prev) prev.disabled = true;
+      if (next) next.disabled = true;
+      const jump = $("#jump-input");
+      if (jump) jump.value = "";
       return;
     }
+
+    if (card) card.classList.remove("hidden");
+    if (empty) empty.classList.add("hidden");
 
     const q = list[state.currentIndex];
     const answered = state.answers[q.id];
     const pos = state.currentIndex + 1;
     const totalInMode = list.length;
-    // Absolute order in full bank (1-based), for stable "số câu" across modes
     const bankNo = quizData.findIndex((x) => x.id === q.id) + 1;
 
-    $("#q-source").textContent = q.source || "bank";
-    $("#q-id").textContent = q.id;
-    $("#q-index-badge").textContent = `Câu ${pos} / ${totalInMode}`;
+    const src = $("#q-source");
+    if (src) src.textContent = q.source || "bank";
+    const qid = $("#q-id");
+    if (qid) qid.textContent = q.id;
+    const idxBadge = $("#q-index-badge");
+    if (idxBadge) idxBadge.textContent = `Câu ${pos} / ${totalInMode}`;
     const qNum = $("#q-num");
     if (qNum) {
       qNum.textContent =
         state.mode === "all"
-          ? `Câu số ${bankNo}/${st.total}`
-          : `Câu số ${bankNo}/${st.total} · lọc ${pos}/${totalInMode}`;
+          ? `Câu ${pos} / ${totalInMode}`
+          : `Câu ${pos} / ${totalInMode} · #${bankNo}`;
     }
-    $("#q-pos").textContent = `${pos} / ${totalInMode}`;
-    $("#q-text").textContent = q.question;
+    const qPos = $("#q-pos");
+    if (qPos) qPos.textContent = `${pos} / ${totalInMode}`;
+    const qText = $("#q-text");
+    if (qText) qText.textContent = q.question;
+
+    const jump = $("#jump-input");
+    if (jump) {
+      jump.max = String(totalInMode);
+      jump.value = String(pos);
+    }
 
     const box = $("#q-options");
-    box.innerHTML = "";
-    q.options.forEach((opt, i) => {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "option-btn";
-      const label = splitOption(opt).label;
-      btn.textContent = `${String.fromCharCode(65 + i)}. ${label}`;
-      btn.dataset.index = String(i);
-      if (answered) {
-        btn.disabled = true;
-        if (i === q.correctIndex) btn.classList.add("correct");
-        if (i === answered.choice && !answered.correct) btn.classList.add("wrong");
-        if (i === answered.choice) btn.classList.add("selected");
-      } else {
-        btn.addEventListener("click", () => selectAnswer(q, i, list));
-      }
-      box.appendChild(btn);
-    });
+    if (box) {
+      box.innerHTML = "";
+      q.options.forEach((opt, i) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "option-btn qz-option";
+        const label = splitOption(opt).label;
+        const L = String.fromCharCode(65 + i);
+        btn.innerHTML = `<span class="qz-letter">${L}</span><span class="qz-opt-text">${escapeHtml(label)}</span>`;
+        btn.dataset.index = String(i);
+        if (answered) {
+          btn.disabled = true;
+          if (i === q.correctIndex) btn.classList.add("correct");
+          if (i === answered.choice && !answered.correct) btn.classList.add("wrong");
+          if (i === answered.choice) btn.classList.add("selected");
+        } else {
+          btn.addEventListener("click", () => selectAnswer(q, i, list));
+        }
+        box.appendChild(btn);
+      });
+    }
 
     const exp = $("#q-explain");
     const toggleBtn = $("#btn-toggle-explain");
     const bodyWrap = $("#q-explain-body-wrap");
-    if (answered) {
+    if (answered && exp) {
       exp.className = `explain-box show ${answered.correct ? "ok" : "bad"}`;
-      $("#q-explain-title").textContent = answered.correct ? "Chính xác!" : "Chưa đúng";
-      $("#q-explain-body").innerHTML = buildExplanationHtml(q, answered);
+      const et = $("#q-explain-title");
+      if (et) et.textContent = answered.correct ? "Chính xác!" : "Chưa đúng";
+      const eb = $("#q-explain-body");
+      if (eb) eb.innerHTML = buildExplanationHtml(q, answered);
       if (toggleBtn) {
         toggleBtn.hidden = false;
         toggleBtn.textContent = state.explainHidden ? "Hiện giải thích" : "Ẩn giải thích";
       }
       if (bodyWrap) bodyWrap.classList.toggle("collapsed", !!state.explainHidden);
-    } else {
+    } else if (exp) {
       exp.className = "explain-box";
-      $("#q-explain-body").innerHTML = "";
+      const eb = $("#q-explain-body");
+      if (eb) eb.innerHTML = "";
       if (toggleBtn) toggleBtn.hidden = true;
       if (bodyWrap) bodyWrap.classList.remove("collapsed");
     }
 
-    $("#btn-prev").disabled = state.currentIndex <= 0;
-    $("#btn-next").disabled = state.currentIndex >= list.length - 1;
+    const prev = $("#btn-prev");
+    const next = $("#btn-next");
+    if (prev) prev.disabled = state.currentIndex <= 0;
+    if (next) next.disabled = state.currentIndex >= list.length - 1;
   }
 
   /** Split "Label (detail...)" option text into short label + detail. */
@@ -476,8 +627,18 @@
   }
 
   function setMode(mode) {
+    if (state.mode === mode) return;
     state.mode = mode;
-    state.currentIndex = 0;
+    rebuildOrder(null);
+    saveState(true);
+    renderQuiz();
+  }
+
+  function jumpToDisplay(n) {
+    const list = currentList();
+    const i = Number(n) - 1;
+    if (!Number.isFinite(i) || i < 0 || i >= list.length) return;
+    state.currentIndex = i;
     saveState(true);
     renderQuiz();
   }
@@ -557,6 +718,52 @@
     if (prev) prev.addEventListener("click", goPrev);
     if (next) next.addEventListener("click", goNext);
 
+    const jumpBtn = $("#btn-jump");
+    const jumpInput = $("#jump-input");
+    if (jumpBtn && jumpInput) {
+      jumpBtn.addEventListener("click", () => jumpToDisplay(jumpInput.value));
+      jumpInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          jumpToDisplay(jumpInput.value);
+        }
+      });
+    }
+
+    const shuffleEl = $("#shuffleToggle");
+    if (shuffleEl) {
+      shuffleEl.addEventListener("change", () => {
+        const cur = currentList()[state.currentIndex];
+        state.shuffle = !!shuffleEl.checked;
+        rebuildOrder(cur ? cur.id : null);
+        saveState(true);
+        renderQuiz();
+      });
+    }
+    const reshuffle = $("#btn-reshuffle");
+    if (reshuffle) {
+      reshuffle.addEventListener("click", () => {
+        if (!state.shuffle) return;
+        rebuildOrder(null);
+        saveState(true);
+        renderQuiz();
+      });
+    }
+
+    const search = $("#quiz-search");
+    if (search) {
+      let t = null;
+      search.addEventListener("input", () => {
+        clearTimeout(t);
+        t = setTimeout(() => runQuizSearch(search.value), 180);
+      });
+    }
+
+    const goAll = $("#btn-go-all-mode");
+    if (goAll) {
+      goAll.addEventListener("click", () => setMode("all"));
+    }
+
     const toggleExplain = $("#btn-toggle-explain");
     if (toggleExplain) {
       toggleExplain.addEventListener("click", () => {
@@ -564,11 +771,14 @@
         const wrap = $("#q-explain-body-wrap");
         if (wrap) wrap.classList.toggle("collapsed", !!state.explainHidden);
         toggleExplain.textContent = state.explainHidden ? "Hiện giải thích" : "Ẩn giải thích";
+        saveState(false);
       });
     }
 
-    $$(".mode-tabs button").forEach((btn) => {
-      btn.addEventListener("click", () => setMode(btn.dataset.mode));
+    $$(".mode-tabs button, .qz-tabs button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (btn.dataset.mode) setMode(btn.dataset.mode);
+      });
     });
 
     const reset = $("#btn-reset-progress");

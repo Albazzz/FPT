@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="study-site.css">
+  <link rel="stylesheet" href="../js/quiz-shell.css?v=1">
 </head>
 <body>
 
@@ -3385,16 +3386,36 @@
     <h2>Câu hỏi <span>ôn luyện</span></h2>
     <p class="quiz-hero-sub">Tổng hợp 6 mẫu · song ngữ Nhật–Việt</p>
   </div>
-  <div class="progress-strip"><div class="progress-fill" id="q-progress" style="width:0%"></div></div>
-  <div class="quiz-stats-bar">
-    <div class="quiz-stats-inner">
-      <span class="quiz-stat-item">Câu: <strong id="q-stat-cur">1 / ?</strong></span>
-      <span class="quiz-stat-item" style="color:var(--correct)">Đúng: <strong id="q-stat-ok">0</strong></span>
-      <span class="quiz-stat-item" style="color:var(--wrong)">Sai: <strong id="q-stat-ng">0</strong></span>
+  <div class="quiz-container qz-root" style="max-width:900px;margin:0 auto;padding:0 16px 24px">
+    <div class="qz-control-bar" data-engine="q">
+      <div class="qz-search" style="flex:1">
+        <input type="search" id="q-search" placeholder="Tìm câu hỏi…" autocomplete="off" />
+      </div>
+      <div class="qz-toolbar">
+        <label class="qz-toggle"><input type="checkbox" id="q-shuffle" /> Ngẫu nhiên</label>
+        <button type="button" class="qz-btn" id="q-reshuffle" disabled>Xáo lại</button>
+        <button type="button" class="qz-btn qz-btn-ghost qz-btn-danger" onclick="resetQuiz()">Làm lại từ đầu</button>
+      </div>
     </div>
-  </div>
-  <div class="quiz-container">
+    <div class="qz-search-results hidden" id="q-search-results"></div>
+    <div class="qz-progress"><span id="q-progress" class="qz-progress-fill" style="width:0%"></span></div>
+    <div class="quiz-stats-bar" style="margin-bottom:10px">
+      <div class="quiz-stats-inner">
+        <span class="quiz-stat-item">Câu: <strong id="q-stat-cur">1 / ?</strong></span>
+        <span class="quiz-stat-item" style="color:var(--correct)">Đúng: <strong id="q-stat-ok">0</strong></span>
+        <span class="quiz-stat-item" style="color:var(--wrong)">Sai: <strong id="q-stat-ng">0</strong></span>
+      </div>
+    </div>
     <div id="q-area"></div>
+    <nav class="qz-nav" id="q-nav">
+      <button type="button" class="qz-btn-nav" id="q-prev">← Trước</button>
+      <div class="qz-nav-center">
+        <input type="number" class="qz-jump-input" id="q-jump" min="1" />
+        <button type="button" class="qz-btn" id="q-jump-btn">Đi</button>
+      </div>
+      <button type="button" class="qz-btn-nav" id="q-next">Sau →</button>
+    </nav>
+    <p class="qz-hint">Chuyển câu bằng Trước / Sau · ô nhảy số câu</p>
     <div class="score-card" id="q-finish" style="display:none">
       <div><span class="score-big" id="q-fscore">0</span><span class="score-of"> điểm</span></div>
       <div class="score-grade" id="q-fgrade"></div>
@@ -3440,16 +3461,36 @@
     <h2>52 câu <span>Quiz mẫu gốc</span></h2>
     <p class="quiz-hero-sub">Nguyên bản câu hỏi · Phong cách thi thật</p>
   </div>
-  <div class="progress-strip"><div class="progress-fill orange" id="s-progress" style="width:0%"></div></div>
-  <div class="quiz-stats-bar">
-    <div class="quiz-stats-inner">
-      <span class="quiz-stat-item">Câu: <strong id="s-stat-cur">1 / 52</strong></span>
-      <span class="quiz-stat-item" style="color:var(--correct)">Đúng: <strong id="s-stat-ok">0</strong></span>
-      <span class="quiz-stat-item" style="color:var(--wrong)">Sai: <strong id="s-stat-ng">0</strong></span>
+  <div class="quiz-container qz-root" style="max-width:900px;margin:0 auto;padding:0 16px 24px">
+    <div class="qz-control-bar" data-engine="s">
+      <div class="qz-search" style="flex:1">
+        <input type="search" id="s-search" placeholder="Tìm câu hỏi…" autocomplete="off" />
+      </div>
+      <div class="qz-toolbar">
+        <label class="qz-toggle"><input type="checkbox" id="s-shuffle" /> Ngẫu nhiên</label>
+        <button type="button" class="qz-btn" id="s-reshuffle" disabled>Xáo lại</button>
+        <button type="button" class="qz-btn qz-btn-ghost qz-btn-danger" onclick="resetSample()">Làm lại từ đầu</button>
+      </div>
     </div>
-  </div>
-  <div class="quiz-container">
+    <div class="qz-search-results hidden" id="s-search-results"></div>
+    <div class="qz-progress"><span id="s-progress" class="qz-progress-fill" style="width:0%;background:var(--warning)"></span></div>
+    <div class="quiz-stats-bar" style="margin-bottom:10px">
+      <div class="quiz-stats-inner">
+        <span class="quiz-stat-item">Câu: <strong id="s-stat-cur">1 / 52</strong></span>
+        <span class="quiz-stat-item" style="color:var(--correct)">Đúng: <strong id="s-stat-ok">0</strong></span>
+        <span class="quiz-stat-item" style="color:var(--wrong)">Sai: <strong id="s-stat-ng">0</strong></span>
+      </div>
+    </div>
     <div id="s-area"></div>
+    <nav class="qz-nav" id="s-nav">
+      <button type="button" class="qz-btn-nav" id="s-prev">← Trước</button>
+      <div class="qz-nav-center">
+        <input type="number" class="qz-jump-input" id="s-jump" min="1" />
+        <button type="button" class="qz-btn" id="s-jump-btn">Đi</button>
+      </div>
+      <button type="button" class="qz-btn-nav" id="s-next">Sau →</button>
+    </nav>
+    <p class="qz-hint">Chuyển câu bằng Trước / Sau · ô nhảy số câu</p>
     <div class="score-card" id="s-finish" style="display:none">
       <div><span class="score-big" id="s-fscore" style="color:var(--warning)">0</span><span class="score-of"> / 52</span></div>
       <div class="score-grade" id="s-fgrade"></div>
@@ -3496,16 +3537,36 @@
     <h2>109 câu <span style="color:#c4b5fd">Quiz PT</span></h2>
     <p class="quiz-hero-sub">Câu hỏi từ quiz.txt · cùng tính năng ôn luyện / giải thích</p>
   </div>
-  <div class="progress-strip"><div class="progress-fill" id="pt-progress" style="width:0%;background:#8b5cf6"></div></div>
-  <div class="quiz-stats-bar">
-    <div class="quiz-stats-inner">
-      <span class="quiz-stat-item">Câu: <strong id="pt-stat-cur">1 / 109</strong></span>
-      <span class="quiz-stat-item" style="color:var(--correct)">Đúng: <strong id="pt-stat-ok">0</strong></span>
-      <span class="quiz-stat-item" style="color:var(--wrong)">Sai: <strong id="pt-stat-ng">0</strong></span>
+  <div class="quiz-container qz-root" style="max-width:900px;margin:0 auto;padding:0 16px 24px">
+    <div class="qz-control-bar" data-engine="pt">
+      <div class="qz-search" style="flex:1">
+        <input type="search" id="pt-search" placeholder="Tìm câu hỏi…" autocomplete="off" />
+      </div>
+      <div class="qz-toolbar">
+        <label class="qz-toggle"><input type="checkbox" id="pt-shuffle" /> Ngẫu nhiên</label>
+        <button type="button" class="qz-btn" id="pt-reshuffle" disabled>Xáo lại</button>
+        <button type="button" class="qz-btn qz-btn-ghost qz-btn-danger" onclick="resetPT()">Làm lại từ đầu</button>
+      </div>
     </div>
-  </div>
-  <div class="quiz-container">
+    <div class="qz-search-results hidden" id="pt-search-results"></div>
+    <div class="qz-progress"><span id="pt-progress" class="qz-progress-fill" style="width:0%;background:#8b5cf6"></span></div>
+    <div class="quiz-stats-bar" style="margin-bottom:10px">
+      <div class="quiz-stats-inner">
+        <span class="quiz-stat-item">Câu: <strong id="pt-stat-cur">1 / 109</strong></span>
+        <span class="quiz-stat-item" style="color:var(--correct)">Đúng: <strong id="pt-stat-ok">0</strong></span>
+        <span class="quiz-stat-item" style="color:var(--wrong)">Sai: <strong id="pt-stat-ng">0</strong></span>
+      </div>
+    </div>
     <div id="pt-area"></div>
+    <nav class="qz-nav" id="pt-nav">
+      <button type="button" class="qz-btn-nav" id="pt-prev">← Trước</button>
+      <div class="qz-nav-center">
+        <input type="number" class="qz-jump-input" id="pt-jump" min="1" />
+        <button type="button" class="qz-btn" id="pt-jump-btn">Đi</button>
+      </div>
+      <button type="button" class="qz-btn-nav" id="pt-next">Sau →</button>
+    </nav>
+    <p class="qz-hint">Chuyển câu bằng Trước / Sau · ô nhảy số câu</p>
     <div class="score-card" id="pt-finish" style="display:none">
       <div><span class="score-big" id="pt-fscore" style="color:#8b5cf6">0</span><span class="score-of"> / 109</span></div>
       <div class="score-grade" id="pt-fgrade"></div>
@@ -4279,12 +4340,22 @@ const PT_TR = [
   }
 
   // =====================================================
-  // QUIZ ENGINE (汎用)
+  // QUIZ ENGINE (汎用) — UI shell kiểu MLN, data giữ nguyên
   // =====================================================
+  function shuffleArr(a){
+    const x=a.slice();
+    for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=x[i];x[i]=x[j];x[j]=t;}
+    return x;
+  }
   function makeEngine(data, prefix, totalEl, okEl, ngEl, progressEl, areaEl, finishEl, fscoreEl, fgradeEl, fbarEl, fwrongEl, wrongSet, wrongBadgeEl) {
-    let idx=0, answered=false, correct=0, wrong=0, ans={};
+    // pos = vị trí trong queue; queue[i] = index gốc trong data (để shuffle + wrongSet ổn định)
+    let queue = data.map(function(_,i){return i;});
+    let pos = 0;
+    let answered=false, correct=0, wrong=0, ans={};
+    let shuffleOn=false;
 
-    function getLetter(c){return c.split('.')[0].trim();}
+    function qi(){ return queue[pos]; } // data index hiện tại
+    function getLetter(c){return String(c).split('.')[0].trim();}
     function updateBadge(){
       if(wrongBadgeEl){
         if(wrongSet.size>0){wrongBadgeEl.style.display='inline-block';wrongBadgeEl.textContent=wrongSet.size;}
@@ -4292,107 +4363,270 @@ const PT_TR = [
       }
     }
     function updateStats(){
-      if(totalEl) totalEl.textContent=`${idx+1} / ${data.length}`;
+      const n=queue.length||data.length;
+      if(totalEl) totalEl.textContent=(pos>=n?n:pos+1)+' / '+n;
       if(okEl) okEl.textContent=correct;
       if(ngEl) ngEl.textContent=wrong;
-      if(progressEl) progressEl.style.width=`${(idx/data.length)*100}%`;
+      if(progressEl){
+        const pct=n?Math.min(100,((Math.min(pos,n-1)+1)/n)*100):0;
+        progressEl.style.width=pct+'%';
+      }
+      const jump=document.getElementById(prefix+'-jump');
+      if(jump){ jump.max=String(n); jump.value=String(pos>=n?n:pos+1); }
+      const prev=document.getElementById(prefix+'-prev');
+      const next=document.getElementById(prefix+'-next');
+      if(prev) prev.disabled=pos<=0 || pos>=n;
+      if(next) next.disabled=pos>=n-1;
+      // khi đã hết (finish) disable next differently
+      if(pos>=n){ if(prev) prev.disabled=true; if(next) next.disabled=true; }
     }
     function mLabel(m){
       const labels={1:'Mẫu 1: Điền từ',2:'Mẫu 2: Hỏi trực tiếp',3:'Mẫu 3: Định nghĩa',4:'Mẫu 4: Dịch thuật ngữ',5:'Mẫu 5: Chọn đúng',6:'Mẫu 6: Chọn sai'};
       const cls=['','mau-1','mau-2','mau-3','mau-4','mau-5','mau-6'];
       return m?`<span class="mau-badge ${cls[m]}">${labels[m]||''}</span>`:'';
     }
+    function trFor(dataIdx){
+      return (prefix==='s'?SAMPLE_TR:prefix==='pt'?PT_TR:QUIZ_TR)[dataIdx];
+    }
+    function hideSearch(){
+      const box=document.getElementById(prefix+'-search-results');
+      if(box){ box.classList.add('hidden'); box.innerHTML=''; }
+    }
     function render(){
       const fin=document.getElementById(finishEl);
       const area=document.getElementById(areaEl);
-      if(idx>=data.length){area.style.display='none';showFinish();return;}
-      area.style.display='block';if(fin)fin.style.display='none';
+      const nav=document.getElementById(prefix+'-nav');
+      if(pos>=queue.length){
+        if(area) area.style.display='none';
+        if(nav) nav.style.display='none';
+        showFinish();
+        return;
+      }
+      if(area) area.style.display='block';
+      if(nav) nav.style.display='flex';
+      if(fin) fin.style.display='none';
       updateStats();
-      const q=data[idx], locked=answered, ch=ans[idx];
+      const dataIdx=qi();
+      const q=data[dataIdx], locked=answered, ch=ans[dataIdx];
       const isOrange=prefix==='s';
-      area.innerHTML=`<div class="q-card">
-        <div class="q-num${isOrange?' orange':''}">${mLabel(q.m)} 問題 ${idx+1} / ${data.length}</div>
-        <div class="q-text">${q.q}</div>
-        <div class="choices">${q.c.map(c=>{
-          const l=getLetter(c);let cls='choice-btn';
+      area.innerHTML=`<div class="q-card qz-card">
+        <div class="qz-meta">
+          <span class="qz-meta-left">${mLabel(q.m)} 問題 ${pos+1} / ${queue.length}</span>
+          <span class="qz-meta-right">#${dataIdx+1}</span>
+        </div>
+        <div class="q-text qz-stem">${q.q}</div>
+        <div class="choices qz-options">${q.c.map(function(c){
+          const l=getLetter(c);let cls='choice-btn qz-option';
           if(locked){if(l===q.a)cls+=' correct';else if(l===ch)cls+=' wrong';}
-          return`<button class="${cls}" onclick="engines['${prefix}'].choose('${l}')" ${locked?'disabled':''}>${c}</button>`;
+          return '<button type="button" class="'+cls+'" onclick="engines[\''+prefix+'\'].choose(\''+l+'\')" '+(locked?'disabled':'')+'>'+
+            '<span class="qz-letter">'+l+'</span><span class="qz-opt-text">'+escHtml(c.replace(/^[A-D]\.\s*/,''))+'</span></button>';
         }).join('')}</div>
-        ${locked?`<div class="${ch===q.a?'correct-hint':'wrong-hint'}">${ch===q.a?'✅ Chính xác!':'❌ Sai — đáp án đúng: '+q.a+(wrongSet?` · Đã lưu vào câu sai`:'')}</div>${buildExplainPanel(q, (prefix==='s'?SAMPLE_TR:prefix==='pt'?PT_TR:QUIZ_TR)[idx], ch)}`:''}
-      </div>
-      <div class="quiz-nav">
-        ${locked?`<button class="btn ${isOrange?'btn-orange':'btn-primary'}" onclick="engines['${prefix}'].next()">${idx+1<data.length?'Câu tiếp theo →':'Xem kết quả →'}</button>`:''}
+        ${locked?`<div class="${ch===q.a?'correct-hint qz-feedback ok':'wrong-hint qz-feedback err'}">${ch===q.a?'✅ Chính xác!':'❌ Sai — đáp án đúng: '+q.a+(wrongSet?` · Đã lưu vào câu sai`:'')}</div>${buildExplainPanel(q, trFor(dataIdx), ch)}`:''}
       </div>`;
     }
     function showFinish(){
       const fin=document.getElementById(finishEl);if(!fin)return;
       fin.style.display='block';
-      if(progressEl) document.getElementById(progressEl.replace('#','')||progressEl)&&(document.getElementById(progressEl.replace('#',''))||{style:{width:'100%'}}).style&&(document.getElementById(progressEl.replace('#',''))||{}).style;
-      // just update progress directly
-      const pbar=document.getElementById(progressEl.id||progressEl);
       const pct=Math.round(correct/data.length*100);
       if(fscoreEl) document.getElementById(fscoreEl).textContent=correct;
       const grade=pct>=90?'優秀 🏆':pct>=70?'合格 ✅':pct>=50?'もう少し 📚':'不合格 ❌';
-      if(fgradeEl) document.getElementById(fgradeEl).textContent=`${pct}% — ${grade}`;
+      if(fgradeEl) document.getElementById(fgradeEl).textContent=pct+'% — '+grade;
       if(fwrongEl) document.getElementById(fwrongEl).textContent=wrongSet?wrongSet.size:wrong;
       const bar=document.getElementById(fbarEl);
-      if(bar){bar.style.background=pct>=70?'#34c759':pct>=50?'#ff9500':'#ff3b30';setTimeout(()=>{bar.style.width=pct+'%';},50);}
+      if(bar){bar.style.background=pct>=70?'#34c759':pct>=50?'#ff9500':'#ff3b30';setTimeout(function(){bar.style.width=pct+'%';},50);}
       updateBadge();
+      updateStats();
     }
+    function rebuildQueue(keepDataIdx, forceShuffle){
+      const ids=data.map(function(_,i){return i;});
+      if(forceShuffle || shuffleOn) queue=shuffleArr(ids);
+      else queue=ids;
+      if(keepDataIdx!=null){
+        const f=queue.indexOf(Number(keepDataIdx));
+        pos=f>=0?f:0;
+      } else pos=0;
+      answered=false;
+    }
+    function go(delta){
+      const n=pos+delta;
+      if(n<0||n>=queue.length) return;
+      pos=n;
+      answered=!!ans[qi()];
+      render();
+      window.scrollTo(0,0);
+      if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
+    }
+    function jumpTo(displayN){
+      const i=Number(displayN)-1;
+      if(!Number.isFinite(i)||i<0||i>=queue.length) return;
+      pos=i;
+      answered=!!ans[qi()];
+      render();
+      window.scrollTo(0,0);
+      if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
+    }
+    function goToDataIndex(dataIdx){
+      let f=queue.indexOf(Number(dataIdx));
+      if(f<0){
+        shuffleOn=false;
+        const sh=document.getElementById(prefix+'-shuffle');
+        if(sh) sh.checked=false;
+        rebuildQueue(dataIdx,false);
+        f=queue.indexOf(Number(dataIdx));
+      }
+      if(f<0) return;
+      pos=f;
+      answered=!!ans[qi()];
+      hideSearch();
+      render();
+      window.scrollTo(0,0);
+      if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
+    }
+    function runSearch(q){
+      const box=document.getElementById(prefix+'-search-results');
+      if(!box) return;
+      const query=String(q||'').trim().toLowerCase();
+      if(!query){ hideSearch(); return; }
+      const tokens=query.split(/\s+/).filter(Boolean);
+      const hits=[];
+      for(let i=0;i<data.length;i++){
+        const item=data[i];
+        const hay=(item.q+' '+(item.c||[]).join(' ')).toLowerCase();
+        if(tokens.every(function(t){return hay.includes(t);})){
+          hits.push({i:i,q:item.q});
+          if(hits.length>=30) break;
+        }
+      }
+      if(!hits.length){
+        box.innerHTML='<div style="padding:12px;text-align:center;color:var(--muted)">Không tìm thấy</div>';
+        box.classList.remove('hidden');
+        return;
+      }
+      box.innerHTML=hits.map(function(h){
+        const sn=h.q.length>100?h.q.slice(0,100)+'…':h.q;
+        return '<button type="button" class="qz-search-item" data-i="'+h.i+'"><span class="qz-search-item-id">#'+(h.i+1)+'</span><span>'+escHtml(sn)+'</span></button>';
+      }).join('');
+      box.classList.remove('hidden');
+      box.querySelectorAll('.qz-search-item').forEach(function(btn){
+        btn.addEventListener('click',function(){ goToDataIndex(Number(btn.getAttribute('data-i'))); });
+      });
+    }
+    function wireChrome(){
+      const prev=document.getElementById(prefix+'-prev');
+      const next=document.getElementById(prefix+'-next');
+      const jumpBtn=document.getElementById(prefix+'-jump-btn');
+      const jumpIn=document.getElementById(prefix+'-jump');
+      const sh=document.getElementById(prefix+'-shuffle');
+      const re=document.getElementById(prefix+'-reshuffle');
+      const search=document.getElementById(prefix+'-search');
+      if(prev) prev.onclick=function(){ go(-1); };
+      if(next) next.onclick=function(){ go(1); };
+      if(jumpBtn&&jumpIn){
+        jumpBtn.onclick=function(){ jumpTo(jumpIn.value); };
+        jumpIn.onkeydown=function(e){ if(e.key==='Enter'){ e.preventDefault(); jumpTo(jumpIn.value); } };
+      }
+      if(sh){
+        sh.onchange=function(){
+          const keep=pos<queue.length?qi():null;
+          shuffleOn=!!sh.checked;
+          if(re) re.disabled=!shuffleOn;
+          rebuildQueue(keep, false);
+          render();
+          if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
+        };
+      }
+      if(re){
+        re.onclick=function(){
+          if(!shuffleOn) return;
+          rebuildQueue(null, true);
+          render();
+          if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
+        };
+      }
+      if(search){
+        let t=null;
+        search.oninput=function(){
+          clearTimeout(t);
+          t=setTimeout(function(){ runSearch(search.value); },180);
+        };
+      }
+    }
+    wireChrome();
+
     return {
       data,
       wrongSet,
-      get idx(){ return idx; },
+      get idx(){ return pos; },
       getState(){
         return {
-          idx: idx,
+          idx: pos,
+          dataIdx: pos<queue.length?qi():null,
           answered: !!answered,
           correct: correct,
           wrong: wrong,
           ans: Object.assign({}, ans),
           wrongList: wrongSet ? Array.from(wrongSet) : [],
+          shuffle: shuffleOn,
+          queue: queue.slice(),
         };
       },
       applyState(st){
         if(!st || typeof st !== 'object') return;
-        const maxIdx = Math.max(0, data.length); // allow == length (màn kết quả)
-        let n = Number(st.idx);
-        if(!Number.isFinite(n) || n < 0) n = 0;
-        idx = Math.min(n, maxIdx);
-        answered = !!st.answered;
-        correct = Number(st.correct) || 0;
-        wrong = Number(st.wrong) || 0;
-        ans = {};
-        if(st.ans && typeof st.ans === 'object'){
-          Object.keys(st.ans).forEach(function(k){ ans[k] = st.ans[k]; });
+        shuffleOn=!!st.shuffle;
+        const sh=document.getElementById(prefix+'-shuffle');
+        if(sh) sh.checked=shuffleOn;
+        const re=document.getElementById(prefix+'-reshuffle');
+        if(re) re.disabled=!shuffleOn;
+        if(Array.isArray(st.queue) && st.queue.length===data.length){
+          queue=st.queue.map(Number);
+        } else {
+          rebuildQueue(null, false);
+        }
+        let n=Number(st.idx);
+        if(!Number.isFinite(n)||n<0) n=0;
+        pos=Math.min(n, data.length);
+        answered=!!st.answered;
+        correct=Number(st.correct)||0;
+        wrong=Number(st.wrong)||0;
+        ans={};
+        if(st.ans && typeof st.ans==='object'){
+          Object.keys(st.ans).forEach(function(k){ ans[k]=st.ans[k]; });
         }
         if(wrongSet){
           wrongSet.clear();
-          const list = Array.isArray(st.wrongList) ? st.wrongList
-            : (Array.isArray(st.wrongIds) ? st.wrongIds : null);
+          const list=Array.isArray(st.wrongList)?st.wrongList:(Array.isArray(st.wrongIds)?st.wrongIds:null);
           if(list) list.forEach(function(i){ wrongSet.add(Number(i)); });
+        }
+        // nếu lưu dataIdx, ưu tiên
+        if(st.dataIdx!=null && Number.isFinite(Number(st.dataIdx))){
+          const f=queue.indexOf(Number(st.dataIdx));
+          if(f>=0) pos=f;
         }
         updateBadge();
         render();
       },
       render,
       choose(letter){
-        if(answered)return;
-        answered=true;ans[idx]=letter;
-        if(letter===data[idx].a){correct++;if(wrongSet)wrongSet.delete(idx);}
-        else{wrong++;if(wrongSet)wrongSet.add(idx);}
+        if(answered||pos>=queue.length)return;
+        const dataIdx=qi();
+        answered=true;ans[dataIdx]=letter;
+        if(letter===data[dataIdx].a){correct++;if(wrongSet)wrongSet.delete(dataIdx);}
+        else{wrong++;if(wrongSet)wrongSet.add(dataIdx);}
         updateBadge();render();
         if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
       },
-      next(){
-        idx++;
-        answered=false;
-        render();
-        window.scrollTo(0,0);
-        if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
-      },
+      next(){ go(1); },
+      prev(){ go(-1); },
+      jumpTo,
+      goToDataIndex,
       reset(){
-        idx=0;answered=false;correct=0;wrong=0;ans={};
+        shuffleOn=false;
+        const sh=document.getElementById(prefix+'-shuffle');
+        if(sh) sh.checked=false;
+        const re=document.getElementById(prefix+'-reshuffle');
+        if(re) re.disabled=true;
+        rebuildQueue(null,false);
+        pos=0;answered=false;correct=0;wrong=0;ans={};
         if(wrongSet)wrongSet.clear();
         updateBadge();render();window.scrollTo(0,0);
         if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
@@ -4402,10 +4636,13 @@ const PT_TR = [
   }
 
   // =====================================================
-  // WRONG ENGINE
+  // WRONG ENGINE — UI shell + prev/next (data wrongSet giữ nguyên)
   // =====================================================
   function makeWrongEngine(sourceEngine, prefix, cntEl, listEl, areaEl, finishEl, remEl, startBtnEl){
     let queue=[], idx=0, answered=false, choice=null;
+    function trFor(qi){
+      return (prefix==='sw'?SAMPLE_TR:prefix==='ptw'?PT_TR:QUIZ_TR)[qi];
+    }
     function intro(){
       const arr=Array.from(sourceEngine.wrongSet).sort((a,b)=>a-b);
       document.getElementById(cntEl).textContent=arr.length;
@@ -4437,19 +4674,26 @@ const PT_TR = [
       if(idx>=queue.length){showFinish();return;}
       const qi=queue[idx],q=sourceEngine.data[qi],locked=answered;
       const isOrange=prefix==='sw';
-      area.innerHTML=`<div class="page-info"><span>Ôn lại: ${idx+1}/${queue.length}</span><span style="color:var(--red)">Còn sai: ${sourceEngine.wrongSet.size}</span></div>
-      <div class="q-card">
-        <div class="q-num${isOrange?' orange':''}">問題 ${qi+1}</div>
-        <div class="q-text">${q.q}</div>
-        <div class="choices">${q.c.map(c=>{
-          const l=c.split('.')[0].trim();let cls='choice-btn';
-          if(locked){if(l===q.a)cls+=' correct';else if(l===choice)cls+=' wrong';}
-          return`<button class="${cls}" onclick="wrongEngines['${prefix}'].choose('${l}')" ${locked?'disabled':''}>${c}</button>`;
-        }).join('')}</div>
-        ${locked?`<div class="${choice===q.a?'correct-hint':'wrong-hint'}">${choice===q.a?'✅ Chính xác! Đã gỡ khỏi danh sách.':'❌ Vẫn sai — đáp án đúng: '+q.a}</div>${buildExplainPanel(q, (prefix==='sw'?SAMPLE_TR:prefix==='ptw'?PT_TR:QUIZ_TR)[qi], choice)}`:''}
+      area.innerHTML=`<div class="qz-root">
+      <div class="page-info" style="display:flex;justify-content:space-between;margin-bottom:10px;font-weight:700;font-size:0.85rem">
+        <span>Ôn lại: ${idx+1}/${queue.length}</span>
+        <span style="color:var(--wrong)">Còn sai: ${sourceEngine.wrongSet.size}</span>
       </div>
-      <div class="quiz-nav">
-        ${locked?`<button class="btn ${isOrange?'btn-orange':'btn-primary'}" onclick="wrongEngines['${prefix}'].next()">${idx+1<queue.length?'Câu tiếp →':'Hoàn thành →'}</button>`:''}
+      <div class="q-card qz-card">
+        <div class="qz-meta"><span class="qz-meta-left">問題 #${qi+1}</span><span class="qz-meta-right">${idx+1} / ${queue.length}</span></div>
+        <div class="q-text qz-stem">${q.q}</div>
+        <div class="choices qz-options">${q.c.map(c=>{
+          const l=c.split('.')[0].trim();let cls='choice-btn qz-option';
+          if(locked){if(l===q.a)cls+=' correct';else if(l===choice)cls+=' wrong';}
+          return`<button type="button" class="${cls}" onclick="wrongEngines['${prefix}'].choose('${l}')" ${locked?'disabled':''}><span class="qz-letter">${l}</span><span class="qz-opt-text">${escHtml(c.replace(/^[A-D]\.\s*/,''))}</span></button>`;
+        }).join('')}</div>
+        ${locked?`<div class="${choice===q.a?'correct-hint qz-feedback ok':'wrong-hint qz-feedback err'}">${choice===q.a?'✅ Chính xác! Đã gỡ khỏi danh sách.':'❌ Vẫn sai — đáp án đúng: '+q.a}</div>${buildExplainPanel(q, trFor(qi), choice)}`:''}
+      </div>
+      <nav class="qz-nav" style="margin-top:12px">
+        <button type="button" class="qz-btn-nav" onclick="wrongEngines['${prefix}'].prev()" ${idx<=0?'disabled':''}>← Trước</button>
+        <div class="qz-nav-center" style="font-weight:700;color:var(--muted)">${idx+1} / ${queue.length}</div>
+        <button type="button" class="qz-btn-nav" onclick="wrongEngines['${prefix}'].next()">${idx+1<queue.length?'Sau →':'Xong'}</button>
+      </nav>
       </div>`;
     }
     function choose(letter){
@@ -4471,6 +4715,10 @@ const PT_TR = [
     }
     return {
       intro,start,choose,
+      prev(){
+        if(idx<=0)return;
+        idx--;answered=false;choice=null;render();window.scrollTo(0,0);
+      },
       next(){
         idx++;answered=false;choice=null;render();window.scrollTo(0,0);
         if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);

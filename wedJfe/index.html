@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/app.css" />
   <link rel="stylesheet" href="css/study-site.css" />
+  <link rel="stylesheet" href="../js/quiz-shell.css?v=1" />
 </head>
 <body>
   <nav class="site-nav">
@@ -93,62 +94,80 @@
     </div>
   </main>
 
-  <!-- QUIZ -->
+  <!-- QUIZ — shell UI kiểu MLN (data quiz không đổi) -->
   <main id="view-quiz" class="page-view">
     <section class="hero-mini">
       <div class="container">
         <span class="eyebrow">Kiểm tra</span>
         <h1>Trắc nghiệm FE</h1>
-        <p>Tiến trình được lưu tự động. Bạn có thể đóng tab và làm tiếp lần sau.</p>
+        <p>Cùng kiểu làm bài MLN · tiến trình Local / Cloud · data đề giữ nguyên.</p>
       </div>
     </section>
-    <div class="container quiz-shell">
-      <div class="mode-tabs" role="tablist">
-        <button type="button" class="active" data-mode="all" id="mode-all">Tất cả câu</button>
-        <button type="button" data-mode="unanswered" id="mode-unanswered">Chưa trả lời</button>
-        <button type="button" data-mode="wrong" id="mode-wrong">Chỉ câu sai</button>
+    <div class="container quiz-shell qz-root">
+      <div class="qz-control-bar" role="toolbar" aria-label="Điều khiển quiz">
+        <div class="qz-tabs mode-tabs" role="tablist">
+          <button type="button" class="active qz-tab" data-mode="all" id="mode-all">Tất cả <span class="qz-tab-count" id="mode-all-count">0</span></button>
+          <button type="button" class="qz-tab" data-mode="unanswered" id="mode-unanswered">Chưa TL <span class="qz-tab-count" id="mode-un-count">0</span></button>
+          <button type="button" class="qz-tab" data-mode="wrong" id="mode-wrong">Câu sai <span class="qz-tab-count warn" id="mode-wrong-count">0</span></button>
+        </div>
+        <div class="qz-search">
+          <input type="search" id="quiz-search" placeholder="Tìm câu hỏi…" autocomplete="off" aria-label="Tìm câu hỏi" />
+        </div>
+        <div class="qz-toolbar">
+          <label class="qz-toggle" for="shuffleToggle">
+            <input type="checkbox" id="shuffleToggle" />
+            <span>Ngẫu nhiên</span>
+          </label>
+          <button type="button" class="qz-btn" id="btn-reshuffle" disabled title="Xáo lại (khi bật Ngẫu nhiên)">Xáo lại</button>
+          <button type="button" class="qz-btn qz-btn-ghost qz-btn-danger" id="btn-reset-progress">Xóa tiến trình</button>
+          <a class="qz-btn qz-btn-ghost" href="#/wrong" data-nav>DS câu sai</a>
+        </div>
+      </div>
+      <div class="qz-search-results hidden" id="quiz-search-results"></div>
+
+      <div class="quiz-stats" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px">
+        <span class="badge badge-accent" id="q-total-badge">Tổng 0 câu</span>
+        <span class="badge" id="q-index-badge">Câu 1 / 1</span>
+        <span class="badge badge-done" id="q-answered-badge">Đã làm 0</span>
+        <span class="badge" id="q-correct-badge">Đúng 0</span>
+        <span class="badge" style="background:var(--wrong-bg);color:var(--wrong);border:0" id="q-wrong-badge">Sai 0</span>
       </div>
 
-      <div class="quiz-toolbar">
-        <div class="quiz-stats">
-          <span class="badge badge-accent" id="q-total-badge">Tổng 0 câu</span>
-          <span class="badge" id="q-index-badge">Câu 1 / 1</span>
-          <span class="badge badge-done" id="q-answered-badge">Đã làm 0</span>
-          <span class="badge" id="q-correct-badge">Đúng 0</span>
-          <span class="badge" style="background:var(--wrong-bg);color:var(--wrong);border:0" id="q-wrong-badge">Sai 0</span>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <button type="button" class="btn btn-secondary" id="btn-reset-progress">Xóa tiến trình</button>
-          <a class="btn btn-ghost" href="#/wrong" data-nav>Học câu sai →</a>
-        </div>
-      </div>
+      <div class="qz-progress" aria-hidden="true"><span id="quiz-progress-fill" class="qz-progress-fill"></span></div>
 
-      <div class="progress-bar" aria-hidden="true"><span id="quiz-progress-fill"></span></div>
-
-      <article class="card quiz-card">
-        <div class="quiz-meta">
-          <span class="badge" id="q-source">bank</span>
-          <span class="badge badge-accent" id="q-id">—</span>
-          <span class="badge" id="q-num">Câu số —</span>
+      <article class="card quiz-card qz-card" id="quiz-card-main">
+        <div class="qz-meta quiz-meta">
+          <span class="qz-meta-left"><span id="q-num">Câu số —</span></span>
+          <span class="qz-meta-right"><span id="q-source">bank</span> · <span id="q-id">—</span> · <span id="q-pos">1 / 1</span></span>
         </div>
-        <h2 class="q-text" id="q-text">Đang tải câu hỏi…</h2>
-        <div class="options" id="q-options"></div>
+        <h2 class="q-text qz-stem" id="q-text">Đang tải câu hỏi…</h2>
+        <div class="options qz-options" id="q-options"></div>
         <div class="explain-box" id="q-explain">
           <div class="explain-header">
             <strong id="q-explain-title">Giải thích</strong>
-            <button type="button" class="btn btn-ghost btn-sm" id="btn-toggle-explain" hidden>Ẩn giải thích</button>
+            <button type="button" class="qz-btn btn-sm" id="btn-toggle-explain" hidden>Ẩn giải thích</button>
           </div>
           <div class="explain-body-wrap" id="q-explain-body-wrap">
             <div id="q-explain-body" class="explain-body"></div>
           </div>
         </div>
-        <div class="nav-arrows">
-          <button type="button" class="icon-btn" id="btn-prev" aria-label="Câu trước">←</button>
-          <div class="center-info" id="q-pos">1 / 1</div>
-          <button type="button" class="icon-btn" id="btn-next" aria-label="Câu sau">→</button>
-        </div>
-        <p class="kbd-hint">Phím tắt: ← → chuyển câu · 1–4 chọn đáp án · Enter câu tiếp</p>
       </article>
+
+      <div class="qz-empty hidden" id="quiz-empty">
+        <h2 id="quiz-empty-title">Không có câu</h2>
+        <p id="quiz-empty-desc">Đổi chế độ hoặc làm bài ở «Tất cả».</p>
+        <button type="button" class="qz-btn qz-btn-primary" id="btn-go-all-mode">Về Tất cả</button>
+      </div>
+
+      <nav class="qz-nav" aria-label="Điều hướng câu hỏi">
+        <button type="button" class="qz-btn-nav" id="btn-prev">← Trước</button>
+        <div class="qz-nav-center">
+          <input type="number" class="qz-jump-input" id="jump-input" min="1" title="Nhảy tới số câu" aria-label="Nhảy tới số câu" />
+          <button type="button" class="qz-btn" id="btn-jump">Đi</button>
+        </div>
+        <button type="button" class="qz-btn-nav" id="btn-next">Sau →</button>
+      </nav>
+      <p class="qz-hint">Chuyển câu bằng Trước / Sau (không vuốt). Máy tính: ← → · 1–4 chọn đáp án.</p>
     </div>
   </main>
 
@@ -186,6 +205,6 @@
   <script src="cloud/study-cloud.js?v=6"></script>
   <script src="js/data-study.js"></script>
   <script src="js/data-quiz.js"></script>
-  <script src="js/app.js?v=cloud2"></script>
+  <script src="js/app.js?v=qz1"></script>
 </body>
 </html>
