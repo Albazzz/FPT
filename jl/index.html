@@ -3543,8 +3543,8 @@
   </div>
 </div>
 
-<script src="cloud/cloud-config.js?v=3"></script>
-<script src="cloud/study-cloud.js?v=3"></script>
+<script src="cloud/cloud-config.js?v=5"></script>
+<script src="cloud/study-cloud.js?v=6"></script>
 <script>
 const QUIZ = [
   // === CHƯƠNG 1: Digital/Analog/Lịch sử ===
@@ -4340,7 +4340,41 @@ const PT_TR = [
       updateBadge();
     }
     return {
-      data,idx,answered,correct,wrong,ans,wrongSet,
+      data,
+      wrongSet,
+      get idx(){ return idx; },
+      getState(){
+        return {
+          idx: idx,
+          answered: !!answered,
+          correct: correct,
+          wrong: wrong,
+          ans: Object.assign({}, ans),
+          wrongList: wrongSet ? Array.from(wrongSet) : [],
+        };
+      },
+      applyState(st){
+        if(!st || typeof st !== 'object') return;
+        const maxIdx = Math.max(0, data.length); // allow == length (màn kết quả)
+        let n = Number(st.idx);
+        if(!Number.isFinite(n) || n < 0) n = 0;
+        idx = Math.min(n, maxIdx);
+        answered = !!st.answered;
+        correct = Number(st.correct) || 0;
+        wrong = Number(st.wrong) || 0;
+        ans = {};
+        if(st.ans && typeof st.ans === 'object'){
+          Object.keys(st.ans).forEach(function(k){ ans[k] = st.ans[k]; });
+        }
+        if(wrongSet){
+          wrongSet.clear();
+          const list = Array.isArray(st.wrongList) ? st.wrongList
+            : (Array.isArray(st.wrongIds) ? st.wrongIds : null);
+          if(list) list.forEach(function(i){ wrongSet.add(Number(i)); });
+        }
+        updateBadge();
+        render();
+      },
       render,
       choose(letter){
         if(answered)return;
@@ -4348,10 +4382,21 @@ const PT_TR = [
         if(letter===data[idx].a){correct++;if(wrongSet)wrongSet.delete(idx);}
         else{wrong++;if(wrongSet)wrongSet.add(idx);}
         updateBadge();render();
-        if(typeof window.jitPersistWrong==='function') window.jitPersistWrong();
+        if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
       },
-      next(){idx++;answered=false;render();window.scrollTo(0,0);},
-      reset(){idx=0;answered=false;correct=0;wrong=0;ans={};if(wrongSet)wrongSet.clear();updateBadge();render();window.scrollTo(0,0);if(typeof window.jitPersistWrong==='function') window.jitPersistWrong();},
+      next(){
+        idx++;
+        answered=false;
+        render();
+        window.scrollTo(0,0);
+        if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
+      },
+      reset(){
+        idx=0;answered=false;correct=0;wrong=0;ans={};
+        if(wrongSet)wrongSet.clear();
+        updateBadge();render();window.scrollTo(0,0);
+        if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
+      },
       updateStats,updateBadge
     };
   }
@@ -4411,8 +4456,10 @@ const PT_TR = [
       if(answered)return;
       answered=true;choice=letter;
       const qi=queue[idx];
-      if(letter===sourceEngine.data[qi].a){sourceEngine.wrongSet.delete(qi);sourceEngine.correct++;if(typeof window.jitPersistWrong==='function') window.jitPersistWrong();}
-      else sourceEngine.wrong++;
+      if(letter===sourceEngine.data[qi].a){
+        sourceEngine.wrongSet.delete(qi);
+        if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
+      }
       sourceEngine.updateBadge();render();
     }
     function showFinish(){
@@ -4420,8 +4467,16 @@ const PT_TR = [
       document.getElementById(finishEl).style.display='block';
       document.getElementById(remEl).textContent=sourceEngine.wrongSet.size;
       sourceEngine.updateBadge();
+      if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
     }
-    return {intro,start,choose,next(){idx++;answered=false;choice=null;render();window.scrollTo(0,0);},back(){intro();}};
+    return {
+      intro,start,choose,
+      next(){
+        idx++;answered=false;choice=null;render();window.scrollTo(0,0);
+        if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(true);
+      },
+      back(){intro();}
+    };
   }
 
   // =====================================================
@@ -4429,77 +4484,127 @@ const PT_TR = [
   // =====================================================
   const engines={}, wrongEngines={};
 
-  const JIT_LS_KEY = 'jit401-wrong-v1';
+  const JIT_LS_KEY = 'jit401-progress-v2';
+  const JIT_LS_KEY_LEGACY = 'jit401-wrong-v1';
+  window.__jitCurrentPage = 'study';
 
-  function loadJitWrongLocal() {
+  function loadJitProgressLocal() {
     try {
-      const raw = localStorage.getItem(JIT_LS_KEY);
-      if (!raw) return { q: [], s: [], pt: [] };
-      const p = JSON.parse(raw);
-      return {
-        q: Array.isArray(p.q) ? p.q : [],
-        s: Array.isArray(p.s) ? p.s : [],
-        pt: Array.isArray(p.pt) ? p.pt : [],
-      };
+      let raw = localStorage.getItem(JIT_LS_KEY);
+      if (!raw) {
+        // migrate old wrong-only storage
+        raw = localStorage.getItem(JIT_LS_KEY_LEGACY);
+        if (!raw) return null;
+        const old = JSON.parse(raw);
+        return {
+          wrong: {
+            q: Array.isArray(old.q) ? old.q : [],
+            s: Array.isArray(old.s) ? old.s : [],
+            pt: Array.isArray(old.pt) ? old.pt : [],
+          },
+        };
+      }
+      return JSON.parse(raw);
     } catch (e) {
-      return { q: [], s: [], pt: [] };
+      return null;
     }
+  }
+
+  function snapEngine(eng) {
+    if (!eng || typeof eng.getState !== 'function') return null;
+    return eng.getState();
   }
 
   function getJitProgressData() {
+    const q = snapEngine(engines['q']);
+    const s = snapEngine(engines['s']);
+    const pt = snapEngine(engines['pt']);
     return {
       wrong: {
-        q: engines['q'] ? Array.from(engines['q'].wrongSet) : [],
-        s: engines['s'] ? Array.from(engines['s'].wrongSet) : [],
-        pt: engines['pt'] ? Array.from(engines['pt'].wrongSet) : [],
+        q: q ? q.wrongList : (engines['q'] ? Array.from(engines['q'].wrongSet) : []),
+        s: s ? s.wrongList : (engines['s'] ? Array.from(engines['s'].wrongSet) : []),
+        pt: pt ? pt.wrongList : (engines['pt'] ? Array.from(engines['pt'].wrongSet) : []),
       },
+      engines: { q: q, s: s, pt: pt },
+      page: window.__jitCurrentPage || 'study',
+      savedAt: Date.now(),
     };
   }
 
+  function applyEngineFromPack(key, pack, engState) {
+    const eng = engines[key];
+    if (!eng) return;
+    if (engState && typeof eng.applyState === 'function') {
+      // ensure wrongList from pack.wrong if missing in engState
+      const st = Object.assign({}, engState);
+      if ((!st.wrongList || !st.wrongList.length) && pack && Array.isArray(pack[key])) {
+        st.wrongList = pack[key];
+      }
+      eng.applyState(st);
+      return;
+    }
+    // legacy: only wrong ids
+    if (eng.wrongSet && pack && Array.isArray(pack[key])) {
+      eng.wrongSet.clear();
+      pack[key].forEach(function (i) { eng.wrongSet.add(Number(i)); });
+      eng.updateBadge();
+      eng.render();
+    }
+  }
+
   function applyJitWrongData(data) {
-    let pack = { q: [], s: [], pt: [] };
+    let payload = data;
     if (data == null) {
-      pack = loadJitWrongLocal();
-    } else if (data.wrong) {
-      pack = {
-        q: Array.isArray(data.wrong.q) ? data.wrong.q : [],
-        s: Array.isArray(data.wrong.s) ? data.wrong.s : [],
-        pt: Array.isArray(data.wrong.pt) ? data.wrong.pt : [],
-      };
+      payload = loadJitProgressLocal() || { wrong: { q: [], s: [], pt: [] } };
     }
-    if (engines['q']) {
-      engines['q'].wrongSet.clear();
-      pack.q.forEach((i) => engines['q'].wrongSet.add(Number(i)));
-      engines['q'].updateBadge();
+    const pack = (payload && payload.wrong) || {
+      q: [],
+      s: [],
+      pt: [],
+    };
+    // Also accept flat legacy {q,s,pt}
+    if (!payload.wrong && (Array.isArray(payload.q) || Array.isArray(payload.s) || Array.isArray(payload.pt))) {
+      pack.q = Array.isArray(payload.q) ? payload.q : [];
+      pack.s = Array.isArray(payload.s) ? payload.s : [];
+      pack.pt = Array.isArray(payload.pt) ? payload.pt : [];
     }
-    if (engines['s']) {
-      engines['s'].wrongSet.clear();
-      pack.s.forEach((i) => engines['s'].wrongSet.add(Number(i)));
-      engines['s'].updateBadge();
+    const eng = (payload && payload.engines) || {};
+    applyEngineFromPack('q', pack, eng.q);
+    applyEngineFromPack('s', pack, eng.s);
+    applyEngineFromPack('pt', pack, eng.pt);
+
+    // refresh wrong-list pages if open
+    if (wrongEngines['w'] && typeof wrongEngines['w'].intro === 'function') {
+      /* intro only when on that page — showPage handles */
     }
-    if (engines['pt']) {
-      engines['pt'].wrongSet.clear();
-      pack.pt.forEach((i) => engines['pt'].wrongSet.add(Number(i)));
-      engines['pt'].updateBadge();
+    if (payload && payload.page && typeof window.__jitRestorePage === 'function') {
+      window.__jitPendingPage = payload.page;
+    } else if (payload && payload.page) {
+      window.__jitPendingPage = payload.page;
     }
   }
 
   function saveJitWrongLocal() {
     try {
-      localStorage.setItem(JIT_LS_KEY, JSON.stringify(getJitProgressData().wrong));
+      localStorage.setItem(JIT_LS_KEY, JSON.stringify(getJitProgressData()));
     } catch (e) {}
   }
 
-  window.jitPersistWrong = function () {
+  window.jitPersistWrong = function (immediate) {
     if (window.StudyCloud && StudyCloud.isCloud()) {
-      StudyCloud.notifyChange();
+      StudyCloud.notifyChange(!!immediate);
       return;
     }
     saveJitWrongLocal();
   };
 
   window.addEventListener('DOMContentLoaded', async ()=>{
-    const saved = loadJitWrongLocal();
+    const savedLocal = loadJitProgressLocal() || {};
+    const wrongPack = (savedLocal.wrong) || {
+      q: Array.isArray(savedLocal.q) ? savedLocal.q : [],
+      s: Array.isArray(savedLocal.s) ? savedLocal.s : [],
+      pt: Array.isArray(savedLocal.pt) ? savedLocal.pt : [],
+    };
 
     // Main quiz engine
     engines['q'] = makeEngine(
@@ -4509,7 +4614,7 @@ const PT_TR = [
       document.getElementById('q-stat-ng'),
       document.getElementById('q-progress'),
       'q-area','q-finish','q-fscore','q-fgrade','q-fbar','q-fwrong',
-      new Set(saved.q.map(Number)),
+      new Set((wrongPack.q || []).map(Number)),
       document.getElementById('wrong-badge')
     );
 
@@ -4521,7 +4626,7 @@ const PT_TR = [
       document.getElementById('s-stat-ng'),
       document.getElementById('s-progress'),
       's-area','s-finish','s-fscore','s-fgrade','s-fbar','s-fwrong',
-      new Set(saved.s.map(Number)),
+      new Set((wrongPack.s || []).map(Number)),
       document.getElementById('swrong-badge')
     );
 
@@ -4538,14 +4643,21 @@ const PT_TR = [
       document.getElementById('pt-stat-ng'),
       document.getElementById('pt-progress'),
       'pt-area','pt-finish','pt-fscore','pt-fgrade','pt-fbar','pt-fwrong',
-      new Set(saved.pt.map(Number)),
+      new Set((wrongPack.pt || []).map(Number)),
       document.getElementById('ptwrong-badge')
     );
     wrongEngines['ptw'] = makeWrongEngine(engines['pt'],'ptw','ptw-cnt','ptw-list','ptw-area','ptw-finish','ptw-rem','ptw-start-btn');
 
-    engines['q'].render();
-    engines['s'].render();
-    engines['pt'].render();
+    // Apply full local engine snapshots (position + answers) if any
+    if (savedLocal.engines) {
+      applyEngineFromPack('q', wrongPack, savedLocal.engines.q);
+      applyEngineFromPack('s', wrongPack, savedLocal.engines.s);
+      applyEngineFromPack('pt', wrongPack, savedLocal.engines.pt);
+    } else {
+      engines['q'].render();
+      engines['s'].render();
+      engines['pt'].render();
+    }
     engines['q'].updateBadge();
     engines['s'].updateBadge();
     engines['pt'].updateBadge();
@@ -4557,10 +4669,22 @@ const PT_TR = [
           badgeParent: '#jit-nav-tabs',
           getData: getJitProgressData,
           setData: applyJitWrongData,
-          onAfterLoad: function () {
+          onAfterLoad: function (data) {
             engines['q'] && engines['q'].updateBadge();
             engines['s'] && engines['s'].updateBadge();
             engines['pt'] && engines['pt'].updateBadge();
+            const page = (data && data.page) || window.__jitPendingPage;
+            window.__jitPendingPage = null;
+            if (page && page !== 'study' && typeof showPage === 'function') {
+              try { showPage(page); } catch (e) {}
+            }
+            // Toast resume position for active quiz
+            try {
+              const q = engines['q'] && engines['q'].getState && engines['q'].getState();
+              if (q && q.idx > 0) {
+                /* quiet — page restore is enough */
+              }
+            } catch (e) {}
           },
           autoPrompt: true,
         });
@@ -4580,10 +4704,12 @@ const PT_TR = [
     const tabs=document.querySelectorAll('.nav-tab');
     const map={'study':0,'quiz':1,'sample':2,'pt':3,'wrong':4,'swrong':5,'ptwrong':6};
     if(map[which]!==undefined) tabs[map[which]].classList.add('active');
+    window.__jitCurrentPage = which;
     if(which==='wrong') wrongEngines['w'].intro();
     if(which==='swrong') wrongEngines['sw'].intro();
     if(which==='ptwrong') wrongEngines['ptw'].intro();
     window.scrollTo(0,0);
+    if(typeof window.jitPersistWrong==='function') window.jitPersistWrong(false);
   }
 
   // =====================================================

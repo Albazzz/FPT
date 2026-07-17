@@ -56,9 +56,12 @@
     }
   }
 
-  function saveState() {
+  /**
+   * @param {boolean} [immediate] true = flush Neon ngay (Next/Prev)
+   */
+  function saveState(immediate) {
     if (window.StudyCloud && StudyCloud.isCloud()) {
-      StudyCloud.notifyChange();
+      StudyCloud.notifyChange(!!immediate);
       return;
     }
     saveStateLocal();
@@ -68,11 +71,15 @@
     if (data == null) {
       state = loadStateLocal();
     } else {
+      const ci = Number(data.currentIndex);
       state = {
         ...defaultState(),
         ...data,
         answers: data.answers || {},
         wrongIds: Array.isArray(data.wrongIds) ? data.wrongIds : [],
+        currentIndex: Number.isFinite(ci) && ci >= 0 ? ci : 0,
+        mode: data.mode === "wrong" || data.mode === "unanswered" ? data.mode : "all",
+        explainHidden: !!data.explainHidden,
       };
     }
     try {
@@ -445,7 +452,7 @@
       // (optional: remove on correct retry)
       state.wrongIds = state.wrongIds.filter((id) => id !== q.id);
     }
-    saveState();
+    saveState(true);
     renderQuiz();
     renderHome();
   }
@@ -454,7 +461,7 @@
     const list = currentList();
     if (state.currentIndex > 0) {
       state.currentIndex--;
-      saveState();
+      saveState(true);
       renderQuiz();
     }
   }
@@ -463,7 +470,7 @@
     const list = currentList();
     if (state.currentIndex < list.length - 1) {
       state.currentIndex++;
-      saveState();
+      saveState(true);
       renderQuiz();
     }
   }
@@ -471,7 +478,7 @@
   function setMode(mode) {
     state.mode = mode;
     state.currentIndex = 0;
-    saveState();
+    saveState(true);
     renderQuiz();
   }
 
@@ -569,7 +576,7 @@
       reset.addEventListener("click", () => {
         if (confirm("Xóa toàn bộ tiến trình làm bài và danh sách câu sai trên máy này?")) {
           state = defaultState();
-          saveState();
+          saveState(true);
           renderQuiz();
           renderHome();
           renderWrong();
@@ -582,7 +589,7 @@
       practiceWrong.addEventListener("click", () => {
         state.mode = "wrong";
         state.currentIndex = 0;
-        saveState();
+        saveState(true);
         location.hash = "#/quiz";
       });
     }
@@ -592,7 +599,7 @@
       clearWrong.addEventListener("click", () => {
         if (confirm("Xóa danh sách câu sai? (Không xóa lịch sử đúng/sai đã làm)")) {
           state.wrongIds = [];
-          saveState();
+          saveState(true);
           renderWrong();
         }
       });
@@ -621,19 +628,45 @@
   async function init() {
     if (!location.hash) location.hash = "#/";
     bind();
+    let cloudRestored = false;
     if (window.StudyCloud) {
-      await StudyCloud.mount({
-        subjectId: "wedjfe",
-        badgeParent: "#fe-nav-links",
-        getData: () => state,
-        setData: applyCloudData,
-        onAfterLoad: () => {
-          route();
-        },
-        autoPrompt: true,
-      });
+      try {
+        await StudyCloud.mount({
+          subjectId: "wedjfe",
+          badgeParent: "#fe-nav-links",
+          getData: () => ({
+            answers: state.answers,
+            wrongIds: state.wrongIds,
+            currentIndex: state.currentIndex,
+            mode: state.mode,
+            explainHidden: state.explainHidden,
+            savedAt: Date.now(),
+          }),
+          setData: applyCloudData,
+          onAfterLoad: (data) => {
+            cloudRestored = true;
+            route();
+            if (data && Number(data.currentIndex) > 0) {
+              const n = Number(data.currentIndex) + 1;
+              if (typeof window.showToast === "function") {
+                window.showToast("Cloud: tiếp tục câu " + n);
+              } else {
+                const el = document.createElement("div");
+                el.textContent = "Cloud: tiếp tục câu " + n;
+                el.style.cssText =
+                  "position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:10001;background:#1c2434;color:#fff;padding:12px 16px;border-radius:12px;font:600 14px system-ui";
+                document.body.appendChild(el);
+                setTimeout(() => el.remove(), 2500);
+              }
+            }
+          },
+          autoPrompt: true,
+        });
+      } catch (e) {
+        console.warn("StudyCloud mount failed", e);
+      }
     }
-    route();
+    if (!cloudRestored) route();
   }
 
   if (document.readyState === "loading") {

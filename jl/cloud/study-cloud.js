@@ -58,6 +58,18 @@
     }
   }
 
+  function withTimeout(promise, ms, label) {
+    let t = null;
+    const timeout = new Promise((_, reject) => {
+      t = setTimeout(() => {
+        reject(new Error((label || "Cloud") + " timeout " + ms + "ms"));
+      }, ms);
+    });
+    return Promise.race([promise, timeout]).finally(() => {
+      if (t) clearTimeout(t);
+    });
+  }
+
   async function getSql() {
     if (!DATABASE_URL) throw new Error("Thiếu DATABASE_URL trong cloud-config.js");
     // Always re-ensure schema if previous run failed mid-way
@@ -69,12 +81,18 @@
           // Prefer esm.sh; fallback jsdelivr
           let mod;
           try {
-            mod = await import(
-              "https://esm.sh/@neondatabase/serverless@0.10.4"
+            mod = await withTimeout(
+              import("https://esm.sh/@neondatabase/serverless@0.10.4"),
+              12000,
+              "Load Neon driver"
             );
           } catch {
-            mod = await import(
-              "https://cdn.jsdelivr.net/npm/@neondatabase/serverless@0.10.4/+esm"
+            mod = await withTimeout(
+              import(
+                "https://cdn.jsdelivr.net/npm/@neondatabase/serverless@0.10.4/+esm"
+              ),
+              12000,
+              "Load Neon driver (fallback)"
             );
           }
           const neon = mod.neon || (mod.default && mod.default.neon) || mod.default;
@@ -82,7 +100,7 @@
             throw new Error("Không load được Neon driver (neon is not a function)");
           }
           const client = neon(DATABASE_URL, { fullResults: false });
-          await ensureSchema(client);
+          await withTimeout(ensureSchema(client), 15000, "Tạo schema Neon");
           sql = client;
           schemaOk = true;
           return sql;
@@ -494,7 +512,7 @@
         localStorage.setItem(FLAG_KEY, "1");
       } catch (e) {}
       updateBadge("is-syncing", "Đang tải…");
-      const data = await load(subjectId);
+      const data = await withTimeout(load(subjectId), 15000, "Tải tiến trình");
       dirty = false;
       lastKnownSavedAt = Number(data && data.savedAt) || Date.now();
       if (setDataFn) setDataFn(data || {});
@@ -504,10 +522,13 @@
       closeModal();
     } catch (e) {
       console.error(e);
+      mode = "local";
+      dirty = false;
+      updateBadge("is-error", "Lỗi cloud");
       const msg = e.message || "Kết nối thất bại";
       showErr(
-        /cors|failed to fetch|network/i.test(msg)
-          ? "CORS/network tới Neon — xem F12 Console"
+        /cors|failed to fetch|network|timeout/i.test(msg)
+          ? msg + " — thử lại hoặc dùng local"
           : msg
       );
       if (st) st.classList.add("hidden");
@@ -573,7 +594,7 @@
         updateBadge("is-syncing", "Đang tải…");
         await getSql();
         mode = "cloud";
-        const data = await load(subjectId);
+        const data = await withTimeout(load(subjectId), 15000, "Tải tiến trình");
         dirty = false;
         lastKnownSavedAt = Number(data && data.savedAt) || Date.now();
         if (setDataFn) setDataFn(data || {});
@@ -582,6 +603,13 @@
         return;
       } catch (e) {
         console.warn("Cloud restore failed", e);
+        mode = "local";
+        dirty = false;
+        updateBadge("is-error", "Lỗi cloud");
+        toast(
+          (e && e.message) ||
+            "Không tải được cloud — đang dùng local. Bấm badge để thử lại."
+        );
         try {
           localStorage.removeItem(FLAG_KEY);
         } catch (e2) {}
@@ -590,7 +618,9 @@
 
     mode = "local";
     dirty = false;
-    updateBadge("", "Local");
+    if (!badgeEl || !badgeEl.classList.contains("is-error")) {
+      updateBadge("", "Local");
+    }
     if (opts.autoPrompt !== false && cloudConfigured()) {
       try {
         const key = "study-cloud-prompted-" + subjectId;
