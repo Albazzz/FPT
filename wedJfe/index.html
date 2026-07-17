@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FE Study — Ôn tập & Kiểm tra</title>
-  <meta name="description" content="Website tĩnh ôn thi FE: tóm tắt kiến thức + kiểm tra trắc nghiệm, lưu tiến trình local." />
+  <title>FE Study â€” Ă”n táº­p & Kiá»ƒm tra</title>
+  <meta name="description" content="Website tÄ©nh Ă´n thi FE: tĂ³m táº¯t kiáº¿n thá»©c + kiá»ƒm tra tráº¯c nghiá»‡m, lÆ°u tiáº¿n trĂ¬nh local." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -19,10 +19,10 @@
         <span>FE Study Hub</span>
       </a>
       <div class="nav-links" id="fe-nav-links">
-        <a href="#/" data-nav>Trang chủ</a>
-        <a href="#/study" data-nav>Ôn tập</a>
-        <a href="#/quiz" data-nav>Kiểm tra</a>
-        <a href="#/wrong" data-nav>Câu sai</a>
+        <a href="#/" data-nav>Trang chá»§</a>
+        <a href="#/study" data-nav>Ă”n táº­p</a>
+        <a href="#/quiz" data-nav>Kiá»ƒm tra</a>
+        <a href="#/wrong" data-nav>CĂ¢u sai</a>
       </div>
     </div>
   </nav>
@@ -31,42 +31,42 @@
   <main id="view-home" class="page-view active">
     <section class="hero-mini">
       <div class="container">
-        <span class="eyebrow">New FE Textbook · Vol.1 & Vol.2</span>
-        <h1>Ôn tập kiến thức & luyện đề FE</h1>
+        <span class="eyebrow">New FE Textbook Â· Vol.1 & Vol.2</span>
+        <h1>Ă”n táº­p kiáº¿n thá»©c & luyá»‡n Ä‘á» FE</h1>
         <p>
-          Hai phần: đọc tóm tắt có cấu trúc chương/mục, và làm trắc nghiệm có giải thích,
-          điều hướng mũi tên, lưu tiến trình + danh sách câu sai trên trình duyệt (localStorage).
+          Hai pháº§n: Ä‘á»c tĂ³m táº¯t cĂ³ cáº¥u trĂºc chÆ°Æ¡ng/má»¥c, vĂ  lĂ m tráº¯c nghiá»‡m cĂ³ giáº£i thĂ­ch,
+          Ä‘iá»u hÆ°á»›ng mÅ©i tĂªn, lÆ°u tiáº¿n trĂ¬nh + danh sĂ¡ch cĂ¢u sai trĂªn trĂ¬nh duyá»‡t (localStorage).
         </p>
         <div class="stat-row" style="max-width:520px">
-          <div class="stat"><strong id="stat-sections">—</strong><span>Mục ôn tập</span></div>
-          <div class="stat"><strong id="stat-questions">—</strong><span>Câu hỏi</span></div>
-          <div class="stat"><strong id="stat-progress">0%</strong><span>Tiến độ quiz</span></div>
+          <div class="stat"><strong id="stat-sections">â€”</strong><span>Má»¥c Ă´n táº­p</span></div>
+          <div class="stat"><strong id="stat-questions">â€”</strong><span>CĂ¢u há»i</span></div>
+          <div class="stat"><strong id="stat-progress">0%</strong><span>Tiáº¿n Ä‘á»™ quiz</span></div>
         </div>
       </div>
     </section>
     <section class="section" style="padding-top:0">
       <div class="container home-grid">
         <article class="card home-card">
-          <span class="badge badge-accent">Phần 1</span>
-          <h2>Nội dung ôn tập</h2>
+          <span class="badge badge-accent">Pháº§n 1</span>
+          <h2>Ná»™i dung Ă´n táº­p</h2>
           <p>
-            Toàn bộ <code>TOM_TAT_ON_THI_FE_VOL1_VOL2.txt</code> chia theo mục,
-            mục lục bên trái, tìm kiếm nhanh, cuộn tới từng phần.
+            ToĂ n bá»™ <code>TOM_TAT_ON_THI_FE_VOL1_VOL2.txt</code> chia theo má»¥c,
+            má»¥c lá»¥c bĂªn trĂ¡i, tĂ¬m kiáº¿m nhanh, cuá»™n tá»›i tá»«ng pháº§n.
           </p>
           <div class="card-actions">
-            <a class="btn btn-primary" href="#/study" data-nav>Vào ôn tập</a>
+            <a class="btn btn-primary" href="#/study" data-nav>VĂ o Ă´n táº­p</a>
           </div>
         </article>
         <article class="card home-card">
-          <span class="badge badge-accent">Phần 2</span>
-          <h2>Kiểm tra trắc nghiệm</h2>
+          <span class="badge badge-accent">Pháº§n 2</span>
+          <h2>Kiá»ƒm tra tráº¯c nghiá»‡m</h2>
           <p>
-            <strong id="home-quiz-count">—</strong> câu hỏi từ ngân hàng ôn + mẫu <code>test.txt</code>.
-            Chọn đáp án → hiện đúng/sai + giải thích. Mũi tên trái/phải chuyển câu. Câu sai được lưu để học lại.
+            <strong id="home-quiz-count">â€”</strong> cĂ¢u há»i tá»« ngĂ¢n hĂ ng Ă´n + máº«u <code>test.txt</code>.
+            Chá»n Ä‘Ă¡p Ă¡n â†’ hiá»‡n Ä‘Ăºng/sai + giáº£i thĂ­ch. MÅ©i tĂªn trĂ¡i/pháº£i chuyá»ƒn cĂ¢u. CĂ¢u sai Ä‘Æ°á»£c lÆ°u Ä‘á»ƒ há»c láº¡i.
           </p>
           <div class="card-actions">
-            <a class="btn btn-primary" href="#/quiz" data-nav>Làm bài</a>
-            <a class="btn btn-secondary" href="#/wrong" data-nav>Xem câu sai</a>
+            <a class="btn btn-primary" href="#/quiz" data-nav>LĂ m bĂ i</a>
+            <a class="btn btn-secondary" href="#/wrong" data-nav>Xem cĂ¢u sai</a>
           </div>
         </article>
       </div>
@@ -77,15 +77,15 @@
   <main id="view-study" class="page-view">
     <section class="hero-mini">
       <div class="container">
-        <span class="eyebrow">Ôn tập</span>
-        <h1>Tóm tắt kiến thức FE</h1>
-        <p>Chọn mục bên trái hoặc tìm kiếm. Nội dung lấy từ file tóm tắt đã tổng hợp.</p>
+        <span class="eyebrow">Ă”n táº­p</span>
+        <h1>TĂ³m táº¯t kiáº¿n thá»©c FE</h1>
+        <p>Chá»n má»¥c bĂªn trĂ¡i hoáº·c tĂ¬m kiáº¿m. Ná»™i dung láº¥y tá»« file tĂ³m táº¯t Ä‘Ă£ tá»•ng há»£p.</p>
       </div>
     </section>
     <div class="container study-layout">
       <aside class="card study-toc">
-        <h3>Mục lục</h3>
-        <input id="toc-search" class="toc-search form-control" type="search" placeholder="Tìm mục..." />
+        <h3>Má»¥c lá»¥c</h3>
+        <input id="toc-search" class="toc-search form-control" type="search" placeholder="TĂ¬m má»¥c..." />
         <ul id="toc-list" class="toc-list"></ul>
       </aside>
       <div id="study-content" class="study-content"></div>
@@ -96,29 +96,29 @@
   <main id="view-quiz" class="page-view">
     <section class="hero-mini">
       <div class="container">
-        <span class="eyebrow">Kiểm tra</span>
-        <h1>Trắc nghiệm FE</h1>
-        <p>Tiến trình được lưu tự động. Bạn có thể đóng tab và làm tiếp lần sau.</p>
+        <span class="eyebrow">Kiá»ƒm tra</span>
+        <h1>Tráº¯c nghiá»‡m FE</h1>
+        <p>Tiáº¿n trĂ¬nh Ä‘Æ°á»£c lÆ°u tá»± Ä‘á»™ng. Báº¡n cĂ³ thá»ƒ Ä‘Ă³ng tab vĂ  lĂ m tiáº¿p láº§n sau.</p>
       </div>
     </section>
     <div class="container quiz-shell">
       <div class="mode-tabs" role="tablist">
-        <button type="button" class="active" data-mode="all" id="mode-all">Tất cả câu</button>
-        <button type="button" data-mode="unanswered" id="mode-unanswered">Chưa trả lời</button>
-        <button type="button" data-mode="wrong" id="mode-wrong">Chỉ câu sai</button>
+        <button type="button" class="active" data-mode="all" id="mode-all">Táº¥t cáº£ cĂ¢u</button>
+        <button type="button" data-mode="unanswered" id="mode-unanswered">ChÆ°a tráº£ lá»i</button>
+        <button type="button" data-mode="wrong" id="mode-wrong">Chá»‰ cĂ¢u sai</button>
       </div>
 
       <div class="quiz-toolbar">
         <div class="quiz-stats">
-          <span class="badge badge-accent" id="q-total-badge">Tổng 0 câu</span>
-          <span class="badge" id="q-index-badge">Câu 1 / 1</span>
-          <span class="badge badge-done" id="q-answered-badge">Đã làm 0</span>
-          <span class="badge" id="q-correct-badge">Đúng 0</span>
+          <span class="badge badge-accent" id="q-total-badge">Tá»•ng 0 cĂ¢u</span>
+          <span class="badge" id="q-index-badge">CĂ¢u 1 / 1</span>
+          <span class="badge badge-done" id="q-answered-badge">ÄĂ£ lĂ m 0</span>
+          <span class="badge" id="q-correct-badge">ÄĂºng 0</span>
           <span class="badge" style="background:var(--wrong-bg);color:var(--wrong);border:0" id="q-wrong-badge">Sai 0</span>
         </div>
         <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <button type="button" class="btn btn-secondary" id="btn-reset-progress">Xóa tiến trình</button>
-          <a class="btn btn-ghost" href="#/wrong" data-nav>Học câu sai →</a>
+          <button type="button" class="btn btn-secondary" id="btn-reset-progress">XĂ³a tiáº¿n trĂ¬nh</button>
+          <a class="btn btn-ghost" href="#/wrong" data-nav>Há»c cĂ¢u sai â†’</a>
         </div>
       </div>
 
@@ -127,26 +127,26 @@
       <article class="card quiz-card">
         <div class="quiz-meta">
           <span class="badge" id="q-source">bank</span>
-          <span class="badge badge-accent" id="q-id">—</span>
-          <span class="badge" id="q-num">Câu số —</span>
+          <span class="badge badge-accent" id="q-id">â€”</span>
+          <span class="badge" id="q-num">CĂ¢u sá»‘ â€”</span>
         </div>
-        <h2 class="q-text" id="q-text">Đang tải câu hỏi…</h2>
+        <h2 class="q-text" id="q-text">Äang táº£i cĂ¢u há»iâ€¦</h2>
         <div class="options" id="q-options"></div>
         <div class="explain-box" id="q-explain">
           <div class="explain-header">
-            <strong id="q-explain-title">Giải thích</strong>
-            <button type="button" class="btn btn-ghost btn-sm" id="btn-toggle-explain" hidden>Ẩn giải thích</button>
+            <strong id="q-explain-title">Giáº£i thĂ­ch</strong>
+            <button type="button" class="btn btn-ghost btn-sm" id="btn-toggle-explain" hidden>áº¨n giáº£i thĂ­ch</button>
           </div>
           <div class="explain-body-wrap" id="q-explain-body-wrap">
             <div id="q-explain-body" class="explain-body"></div>
           </div>
         </div>
         <div class="nav-arrows">
-          <button type="button" class="icon-btn" id="btn-prev" aria-label="Câu trước">←</button>
+          <button type="button" class="icon-btn" id="btn-prev" aria-label="CĂ¢u trÆ°á»›c">â†</button>
           <div class="center-info" id="q-pos">1 / 1</div>
-          <button type="button" class="icon-btn" id="btn-next" aria-label="Câu sau">→</button>
+          <button type="button" class="icon-btn" id="btn-next" aria-label="CĂ¢u sau">â†’</button>
         </div>
-        <p class="kbd-hint">Phím tắt: ← → chuyển câu · 1–4 chọn đáp án · Enter câu tiếp</p>
+        <p class="kbd-hint">PhĂ­m táº¯t: â† â†’ chuyá»ƒn cĂ¢u Â· 1â€“4 chá»n Ä‘Ă¡p Ă¡n Â· Enter cĂ¢u tiáº¿p</p>
       </article>
     </div>
   </main>
@@ -155,34 +155,34 @@
   <main id="view-wrong" class="page-view">
     <section class="hero-mini">
       <div class="container">
-        <span class="eyebrow">Học kèm</span>
-        <h1>Câu trả lời sai</h1>
-        <p>Các câu bạn chọn sai được lưu tại đây. Bấm “Làm lại” để nhảy thẳng vào chế độ ôn câu sai.</p>
+        <span class="eyebrow">Há»c kĂ¨m</span>
+        <h1>CĂ¢u tráº£ lá»i sai</h1>
+        <p>CĂ¡c cĂ¢u báº¡n chá»n sai Ä‘Æ°á»£c lÆ°u táº¡i Ä‘Ă¢y. Báº¥m â€œLĂ m láº¡iâ€ Ä‘á»ƒ nháº£y tháº³ng vĂ o cháº¿ Ä‘á»™ Ă´n cĂ¢u sai.</p>
       </div>
     </section>
     <div class="container wrong-panel">
       <div class="card">
         <div class="quiz-toolbar">
-          <h2 style="font-size:1.1rem">Danh sách câu sai (<span id="wrong-count">0</span>)</h2>
+          <h2 style="font-size:1.1rem">Danh sĂ¡ch cĂ¢u sai (<span id="wrong-count">0</span>)</h2>
           <div style="display:flex;gap:8px;flex-wrap:wrap">
-            <button type="button" class="btn btn-primary" id="btn-practice-wrong">Làm lại câu sai</button>
-            <button type="button" class="btn btn-secondary" id="btn-clear-wrong">Xóa danh sách sai</button>
+            <button type="button" class="btn btn-primary" id="btn-practice-wrong">LĂ m láº¡i cĂ¢u sai</button>
+            <button type="button" class="btn btn-secondary" id="btn-clear-wrong">XĂ³a danh sĂ¡ch sai</button>
           </div>
         </div>
         <ul class="wrong-list" id="wrong-list"></ul>
-        <p class="wrong-empty" id="wrong-empty">Chưa có câu sai — làm quiz để bắt đầu.</p>
+        <p class="wrong-empty" id="wrong-empty">ChÆ°a cĂ³ cĂ¢u sai â€” lĂ m quiz Ä‘á»ƒ báº¯t Ä‘áº§u.</p>
       </div>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>FE Study Hub · Static site (GitHub Pages) · Dữ liệu từ TOM_TAT + test.txt / BO_300 · Tiến trình lưu localStorage trên máy bạn.</p>
+      <p>FE Study Hub Â· Static site (GitHub Pages) Â· Dá»¯ liá»‡u tá»« TOM_TAT + test.txt / BO_300 Â· Tiáº¿n trĂ¬nh lÆ°u localStorage trĂªn mĂ¡y báº¡n.</p>
     </div>
   </footer>
 
-  <script src="../js/cloud-config.js?v=1"></script>
-  <script src="../js/study-cloud.js?v=1"></script>
+  <script src="../js/cloud-config.js?v=2"></script>
+  <script src="../js/study-cloud.js?v=2"></script>
   <script src="js/data-study.js"></script>
   <script src="js/data-quiz.js"></script>
   <script src="js/app.js?v=cloud1"></script>

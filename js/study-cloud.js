@@ -13,6 +13,7 @@
   let mode = "local"; // local | cloud
   let sql = null;
   let sqlReady = null;
+  let schemaOk = false;
   let saveTimer = null;
   let subjectId = "default";
   let getDataFn = null;
@@ -53,72 +54,148 @@
   }
 
   async function getSql() {
-    if (sql) return sql;
     if (!DATABASE_URL) throw new Error("Thiếu DATABASE_URL trong js/cloud-config.js");
+    if (sql && schemaOk) return sql;
+
     if (!sqlReady) {
       sqlReady = (async () => {
-        const mod = await import(
-          "https://cdn.jsdelivr.net/npm/@neondatabase/serverless@0.10.4/+esm"
-        );
-        const neon = mod.neon || (mod.default && mod.default.neon);
-        if (!neon) throw new Error("Không load được Neon driver");
-        sql = neon(DATABASE_URL);
-        await sql`
-          CREATE TABLE IF NOT EXISTS study_progress (
-            id TEXT PRIMARY KEY,
-            data JSONB NOT NULL DEFAULT '{}'::jsonb,
-            updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
-          )
-        `;
-        // migrate old MLN row if present
         try {
-          await sql`
-            CREATE TABLE IF NOT EXISTS mln_progress (
-              id TEXT PRIMARY KEY DEFAULT 'default',
-              data JSONB NOT NULL DEFAULT '{}'::jsonb,
-              updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
-            )
-          `;
-          const old = await sql`SELECT data FROM mln_progress WHERE id = 'default' LIMIT 1`;
-          if (old[0] && old[0].data) {
-            const payload =
-              typeof old[0].data === "string"
-                ? old[0].data
-                : JSON.stringify(old[0].data);
-            await sql`
-              INSERT INTO study_progress (id, data, updated_at)
-              VALUES ('mln', ${payload}::jsonb, now())
-              ON CONFLICT (id) DO NOTHING
-            `;
-          }
+          const mod = await import(
+            "https://cdn.jsdelivr.net/npm/@neondatabase/serverless@0.10.4/+esm"
+          );
+          const neon = mod.neon || (mod.default && mod.default.neon);
+          if (!neon) throw new Error("Không load được Neon driver");
+          const client = neon(DATABASE_URL);
+          await ensureSchema(client);
+          sql = client;
+          schemaOk = true;
+          return sql;
         } catch (e) {
-          /* ignore migrate errors */
+          sqlReady = null;
+          schemaOk = false;
+          sql = null;
+          throw e;
         }
-        return sql;
       })();
     }
     return sqlReady;
   }
 
+  /** CREATE TABLE via neon tagged-template (HTTP driver has no .query). */
+  async function ensureSchema(client) {
+    const s = client;
+    if (!s) throw new Error("No SQL client");
+
+    await s`
+      CREATE TABLE IF NOT EXISTS study_progress (
+        id TEXT PRIMARY KEY,
+        data JSONB NOT NULL DEFAULT '{}'::jsonb,
+        updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+      )
+    `;
+
+    // seed empty subject rows
+    await s`
+      INSERT INTO study_progress (id, data) VALUES
+        ('mln', '{}'::jsonb),
+        ('jl', '{}'::jsonb),
+        ('wedjfe', '{}'::jsonb)
+      ON CONFLICT (id) DO NOTHING
+    `;
+
+    // migrate old mln_progress if present
+    try {
+      await s`
+        CREATE TABLE IF NOT EXISTS mln_progress (
+          id TEXT PRIMARY KEY DEFAULT 'default',
+          data JSONB NOT NULL DEFAULT '{}'::jsonb,
+          updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+        )
+      `;
+      const old = await s`SELECT data FROM mln_progress WHERE id = 'default' LIMIT 1`;
+      if (old[0] && old[0].data) {
+        const payload =
+          typeof old[0].data === "string"
+            ? old[0].data
+            : JSON.stringify(old[0].data);
+        await s`
+          INSERT INTO study_progress (id, data, updated_at)
+          VALUES ('mln', ${payload}::jsonb, now())
+          ON CONFLICT (id) DO NOTHING
+        `;
+      }
+    } catch (e) {
+      console.warn("migrate mln_progress skipped", e);
+    }
+
+    schemaOk = true;
+  }
+
   async function load(id) {
     const s = await getSql();
-    const rows = await s`
-      SELECT data FROM study_progress WHERE id = ${id} LIMIT 1
-    `;
-    if (!rows[0]) return {};
-    const raw = rows[0].data;
-    return typeof raw === "string" ? JSON.parse(raw) : raw || {};
+    try {
+      const rows = await s`
+        SELECT data FROM study_progress WHERE id = ${id} LIMIT 1
+      `;
+      if (!rows[0]) return {};
+      const raw = rows[0].data;
+      if (raw == null) return {};
+      if (typeof raw === "string") {
+        try {
+          return JSON.parse(raw);
+        } catch {
+          return {};
+        }
+      }
+      return raw || {};
+    } catch (e) {
+      const msg = String((e && e.message) || e);
+      if (/does not exist/i.test(msg)) {
+        schemaOk = false;
+        await ensureSchema(s);
+        const rows = await s`
+          SELECT data FROM study_progress WHERE id = ${id} LIMIT 1
+        `;
+        if (!rows[0]) return {};
+        const raw = rows[0].data;
+        if (typeof raw === "string") {
+          try {
+            return JSON.parse(raw);
+          } catch {
+            return {};
+          }
+        }
+        return raw || {};
+      }
+      throw e;
+    }
   }
 
   async function save(id, data) {
     const s = await getSql();
     const payload = JSON.stringify(data || {});
-    await s`
-      INSERT INTO study_progress (id, data, updated_at)
-      VALUES (${id}, ${payload}::jsonb, now())
-      ON CONFLICT (id) DO UPDATE
-        SET data = EXCLUDED.data, updated_at = now()
-    `;
+    try {
+      await s`
+        INSERT INTO study_progress (id, data, updated_at)
+        VALUES (${id}, ${payload}::jsonb, now())
+        ON CONFLICT (id) DO UPDATE
+          SET data = EXCLUDED.data, updated_at = now()
+      `;
+    } catch (e) {
+      const msg = String((e && e.message) || e);
+      if (/does not exist/i.test(msg)) {
+        schemaOk = false;
+        await ensureSchema(s);
+        await s`
+          INSERT INTO study_progress (id, data, updated_at)
+          VALUES (${id}, ${payload}::jsonb, now())
+          ON CONFLICT (id) DO UPDATE
+            SET data = EXCLUDED.data, updated_at = now()
+        `;
+        return;
+      }
+      throw e;
+    }
   }
 
   function scheduleSave() {
