@@ -6335,5 +6335,621 @@ window.QUIZ_DATA = [
       "private",
       "192.168"
     ]
+  },
+  {
+    "id": "j068",
+    "source": "datajfe",
+    "question": "A LAN access method circulates control information in a fixed direction. A station may transmit only after receiving this control information and gaining transmission privilege. Which statement BEST distinguishes this method from CSMA/CD?",
+    "options": [
+      "It is restricted exclusively to star networks and cannot operate on a bus topology.",
+      "It requires every station to transmit immediately and detect collisions after transmission.",
+      "It divides a digital communication line into time-based logical channels.",
+      "It grants transmission rights through a circulating token rather than sensing the channel and reacting to possible contention."
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: It grants transmission rights through a circulating token rather than sensing the channel and reacting to possible contention.. Token ring/token bus: chỉ gửi khi có token, khác CSMA/CD (tranh chấp kênh).",
+    "answerText": "It grants transmission rights through a circulating token rather than sensing the channel and reacting to possible contention.",
+    "keywords": []
+  },
+  {
+    "id": "j069",
+    "source": "datajfe",
+    "question": "An organization wants to exchange product model data using an international standard specifically intended for product model information. Which standardization mechanism BEST matches this requirement?",
+    "options": [
+      "STEP.",
+      "EDI.",
+      "CALS.",
+      "CORBA."
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án: STEP.. STEP (ISO 10303) chuẩn trao đổi product model.",
+    "answerText": "STEP.",
+    "keywords": []
+  },
+  {
+    "id": "j070",
+    "source": "datajfe",
+    "question": "A company uses a transmission method in which a dedicated communication path is established before data transfer. Communication performance is predictable, but bursty traffic frequently leaves allocated capacity unused during silent periods. Which switching method BEST matches this situation?",
+    "options": [
+      "Circuit switching.",
+      "Packet switching.",
+      "Message switching.",
+      "Store-and-forward packet exchange."
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án: Circuit switching.. Circuit switching: kênh dành riêng, dễ lãng phí khi traffic bursty.",
+    "answerText": "Circuit switching.",
+    "keywords": []
+  },
+  {
+    "id": "j071",
+    "source": "datajfe",
+    "question": "A project manager shortens an activity that is not currently on the critical path. After the change, the project completion date remains unchanged. Which explanation is MOST appropriate?",
+    "options": [
+      "An activity outside the critical path cannot become part of a critical path under any circumstances.",
+      "Non-critical activities are ignored during both forward and backward calculations.",
+      "Only activities starting from the first node can affect the project duration.",
+      "Reducing an activity duration affects the project only when the activity is associated with the path determining the completion time."
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: Reducing an activity duration affects the project only when the activity is associated with the path determining the completion time.. Rút ngắn activity chỉ ảnh hưởng deadline nếu nằm trên critical path.",
+    "answerText": "Reducing an activity duration affects the project only when the activity is associated with the path determining the completion time.",
+    "keywords": []
+  },
+  {
+    "id": "j072",
+    "source": "datajfe",
+    "question": "An attacker secretly intercepts data traveling across a network and steals information without necessarily modifying the transmitted data. Which computer crime BEST describes the attack?",
+    "options": [
+      "Salami method.",
+      "Scavenging.",
+      "Falsification.",
+      "Tapping."
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: Tapping.. Tapping = nghe lén/chặn gói trên đường truyền.",
+    "answerText": "Tapping.",
+    "keywords": []
+  },
+  {
+    "id": "j073",
+    "source": "datajfe",
+    "question": "A software organization wants an international standard that structures lifecycle processes for acquisition, supply, development, operation, and maintenance, but does not prescribe specific development methods or required software products. Which standard BEST matches this requirement?",
+    "options": [
+      "ISO 14001.",
+      "ISO 9001.",
+      "ISO 12207.",
+      "ISO/IEC 15408."
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án: ISO 12207.. ISO 12207: quy trình vòng đời phần mềm, không bắt buộc method cụ thể.",
+    "answerText": "ISO 12207.",
+    "keywords": []
+  },
+  {
+    "id": "j074",
+    "source": "datajfe",
+    "question": "Which of the following is an appropriate explanation of a Java servlet?",
+    "options": [
+      "It is a program that is developed with Java and executed on an application server in response to a request from a client.",
+      "It is an interpreter (i.e., execution environment) that executes programs that are developed with Java, and has a function to execute a sort of intermediate code called bytecode.",
+      "It is a program that is developed with Java and executed after the download from a web server.",
+      "It is a set of rules for handling a program that is developed with Java as an application component."
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án: It is a program that is developed with Java and executed on an application server in response to a request from a client.. Servlet: Java chạy trên application server, đáp request client.",
+    "answerText": "It is a program that is developed with Java and executed on an application server in response to a request from a client.",
+    "keywords": []
+  },
+  {
+    "id": "j075",
+    "source": "datajfe",
+    "question": "A product vendor claims that its system provides several advanced security features. A customer needs a framework for specifying security requirements, allowing the vendor to make security claims, and enabling an independent laboratory to evaluate whether those claims are satisfied. Which standard BEST supports this situation?",
+    "options": [
+      "ISO 14001.",
+      "ISO 12207.",
+      "ISO 9001.",
+      "ISO/IEC 15408 Common Criteria."
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: ISO/IEC 15408 Common Criteria.. ISO/IEC 15408 Common Criteria: khung yêu cầu & đánh giá bảo mật.",
+    "answerText": "ISO/IEC 15408 Common Criteria.",
+    "keywords": []
+  },
+  {
+    "id": "j076",
+    "source": "datajfe",
+    "question": "A software organization requires every project to follow documented plans and ensures that requirements, work products, and services are managed. However, different projects may still use significantly different process descriptions and procedures. Which CMMI maturity level BEST describes the organization?",
+    "options": [
+      "Level 4 - Quantitatively Managed.",
+      "Level 1 - Initial.",
+      "Level 2 - Managed.",
+      "Level 3 - Defined."
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án: Level 2 - Managed.. CMMI Level 2 Managed: kế hoạch/yêu cầu/work product theo dự án, chưa chuẩn hóa toàn tổ chức.",
+    "answerText": "Level 2 - Managed.",
+    "keywords": []
+  },
+  {
+    "id": "j077",
+    "source": "datajfe",
+    "question": "A table has a single-column primary key. Every non-key attribute depends on that key, but one non-key attribute determines another non-key attribute. Which normalization problem remains?",
+    "options": [
+      "Partial dependency prevents second normal form.",
+      "The primary key violates a format constraint.",
+      "Repeated items prevent first normal form.",
+      "A non-key dependency prevents third normal form."
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: A non-key dependency prevents third normal form.. Phụ thuộc transitive giữa non-key → chưa đạt 3NF.",
+    "answerText": "A non-key dependency prevents third normal form.",
+    "keywords": []
+  },
+  {
+    "id": "j078",
+    "source": "datajfe",
+    "question": "A communication protocol transmits data in frames, supports continuous transfer and full-duplex communication, and inserts a zero after a sequence of consecutive one bits to prevent user data from being confused with a flag sequence. Which protocol is being described?",
+    "options": [
+      "Basic Procedure (BSC)",
+      "Token passing.",
+      "CSMA/CD.",
+      "HDLC."
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: HDLC.. HDLC: frame, bit stuffing (chèn 0 sau dãy bit 1), full-duplex.",
+    "answerText": "HDLC.",
+    "keywords": []
+  },
+  {
+    "id": "j079",
+    "source": "datajfe",
+    "question": "Which of the following is a purpose of use of a message digest in message authentication?",
+    "options": [
+      "To ensure the confidentiality of the message",
+      "To confirm an overview of the message",
+      "To confirm the encryption method of the message",
+      "To confirm that the message is not falsified"
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: To confirm that the message is not falsified. Message digest dùng để phát hiện falsification (toàn vẹn).",
+    "answerText": "To confirm that the message is not falsified",
+    "keywords": []
+  },
+  {
+    "id": "j080",
+    "source": "datajfe",
+    "question": "Which of the following is software that can be used free of charge for a trial period, but if the user wishes to continue using the software after this period, a usage fee must be paid?",
+    "options": [
+      "Public domain software",
+      "Freeware",
+      "Package software",
+      "Shareware"
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: Shareware. Shareware: dùng thử miễn phí, trả phí nếu tiếp tục.",
+    "answerText": "Shareware",
+    "keywords": []
+  },
+  {
+    "id": "j081",
+    "source": "datajfe",
+    "question": "A network service must carry voice, video, and data using fixed-length transmission units. Connections are mapped to virtual circuits that can provide Quality of Service guarantees, but maintaining connections between many source and destination pairs creates a scalability problem. Which technology BEST fits this description?",
+    "options": [
+      "FDM.",
+      "ISDN.",
+      "ATM.",
+      "ADSL."
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án: ATM.. ATM: cell độ dài cố định, virtual circuit, QoS.",
+    "answerText": "ATM.",
+    "keywords": []
+  },
+  {
+    "id": "j082",
+    "source": "datajfe",
+    "question": "A communication system must allow terminals with different transmission speeds to exchange data. Intermediate switching units may temporarily store transmitted data before forwarding it. Which switching approach BEST matches these characteristics?",
+    "options": [
+      "Circuit switching.",
+      "Frequency division multiplexing.",
+      "Simplex transmission.",
+      "Message switching."
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: Message switching.. Message switching: store-and-forward, hỗ trợ khác tốc độ.",
+    "answerText": "Message switching.",
+    "keywords": []
+  },
+  {
+    "id": "j083",
+    "source": "datajfe",
+    "question": "Deleting root 50 from the given BST using inorder successor results in which new root?",
+    "options": [
+      "60",
+      "70",
+      "40",
+      "80",
+      "50"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án: 60. Xóa nút BST bằng inorder successor (nhỏ nhất cây con phải).",
+    "answerText": "60",
+    "keywords": []
+  },
+  {
+    "id": "j084",
+    "source": "datajfe",
+    "question": "An organization wants to detect whether a transferred document has been altered. Management is not primarily concerned with proving who created the document. Which security technology BEST addresses this requirement?",
+    "options": [
+      "Access management.",
+      "Entity authentication.",
+      "Single Sign On.",
+      "Message authentication."
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: Message authentication.. Message authentication phát hiện document bị sửa.",
+    "answerText": "Message authentication.",
+    "keywords": []
+  },
+  {
+    "id": "j085",
+    "source": "datajfe",
+    "question": "A query must preserve every row from the Student table even when no corresponding row exists in the Mark table. Rows without a matching mark must still appear with missing Mark-table values represented as NULL. Which operation BEST satisfies this requirement?",
+    "options": [
+      "Student LEFT OUTER JOIN Mark.",
+      "Student CROSS JOIN Mark.",
+      "Student INNER JOIN Mark.",
+      "Student NATURAL JOIN Mark."
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án: Student LEFT OUTER JOIN Mark.. LEFT OUTER JOIN giữ mọi dòng bảng trái.",
+    "answerText": "Student LEFT OUTER JOIN Mark.",
+    "keywords": []
+  },
+  {
+    "id": "j086",
+    "source": "datajfe",
+    "question": "A security team deploys a firewall and assumes that all forms of information theft are now prevented. An attacker later obtains discarded temporary data remaining after a completed computer job. Which explanation BEST describes why the firewall did not prevent the incident?",
+    "options": [
+      "The incident is falsification because stored data was intentionally modified.",
+      "The incident is scavenging, which concerns residual information rather than unauthorized external network access.",
+      "The firewall only protects systems against computer viruses.",
+      "The incident is tapping, which cannot be detected by any security mechanism."
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án: The incident is scavenging, which concerns residual information rather than unauthorized external network access.. Scavenging: lấy residual data sau job, không phải chặn firewall mạng.",
+    "answerText": "The incident is scavenging, which concerns residual information rather than unauthorized external network access.",
+    "keywords": []
+  },
+  {
+    "id": "j087",
+    "source": "datajfe",
+    "question": "A database query must combine every possible row from relation A with every possible row from relation B, without requiring matching attribute values. Which operation BEST describes the requirement?",
+    "options": [
+      "Inner join.",
+      "Cartesian product or CROSS JOIN.",
+      "Natural join.",
+      "Left outer join."
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án: Cartesian product or CROSS JOIN.. CROSS JOIN / Cartesian product: mọi cặp hàng.",
+    "answerText": "Cartesian product or CROSS JOIN.",
+    "keywords": []
+  },
+  {
+    "id": "j088",
+    "source": "datajfe",
+    "question": "Two transactions update different records and then each requests a lock on the record already locked by the other transaction. Neither transaction can continue. Which database control problem has occurred?",
+    "options": [
+      "A loss of durability caused by simultaneous processing.",
+      "A violation of atomicity caused by an incomplete rollback.",
+      "A deadlock caused by transactions waiting for each other to release locks.",
+      "A medium failure requiring roll-forward recovery."
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án: A deadlock caused by transactions waiting for each other to release locks.. Deadlock: hai transaction chờ khóa lẫn nhau.",
+    "answerText": "A deadlock caused by transactions waiting for each other to release locks.",
+    "keywords": []
+  },
+  {
+    "id": "j089",
+    "source": "datajfe",
+    "question": "A transmission scheme divides the bandwidth of an analog line into several independent channels. Some capacity is intentionally left unused between adjacent channels to reduce interference. Which statement BEST describes the scheme?",
+    "options": [
+      "WDM divides a digital line into low-speed logical channels.",
+      "TDM uses time intervals and requires guardbands.",
+      "HDLC inserts unused frequency bands after consecutive one bits.",
+      "FDM uses frequency bands and sacrifices some capacity for guardbands."
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: FDM uses frequency bands and sacrifices some capacity for guardbands.. FDM: chia tần số, guardband giảm nhiễu.",
+    "answerText": "FDM uses frequency bands and sacrifices some capacity for guardbands.",
+    "keywords": []
+  },
+  {
+    "id": "j090",
+    "source": "datajfe",
+    "question": "A company needs high-speed Internet access over existing telephone lines. Download traffic is expected to be much heavier than upload traffic, and performance may decrease as the customer is located farther from the central office. Which technology BEST fits?",
+    "options": [
+      "ADSL.",
+      "WDM.",
+      "ISDN primary rate interface.",
+      "ATM."
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án: ADSL.. ADSL: Internet qua đường điện thoại, download > upload, phụ thuộc khoảng cách.",
+    "answerText": "ADSL.",
+    "keywords": []
+  },
+  {
+    "id": "j091",
+    "source": "datajfe",
+    "question": "In an arrow diagram, two activities must preserve a dependency relationship even though no actual work, resource consumption, or processing time is required between them. Which project management technique BEST represents this relationship?",
+    "options": [
+      "A shortened activity on the critical path.",
+      "A critical activity with zero float.",
+      "A milestone that replaces both activities.",
+      "A dummy activity with zero duration."
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: A dummy activity with zero duration.. Dummy activity: quan hệ phụ thuộc, thời lượng 0.",
+    "answerText": "A dummy activity with zero duration.",
+    "keywords": []
+  },
+  {
+    "id": "j092",
+    "source": "datajfe",
+    "question": "A queue is modeled as M/M/1, but analysts discover that service times are fixed and identical for every arrival rather than randomly varying according to the assumed service-time distribution. Which model characteristic is violated?",
+    "options": [
+      "Exponential service-time behavior.",
+      "Random arrivals represented by a Poisson process.",
+      "First Come First Serve processing.",
+      "The existence of exactly one server."
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án: Exponential service-time behavior.. M/M/1 giả định service time exponential (không cố định).",
+    "answerText": "Exponential service-time behavior.",
+    "keywords": []
+  },
+  {
+    "id": "j093",
+    "source": "datajfe",
+    "question": "A transaction processing system is described as an M/M/1 queue. During observation, analysts discover that requests are processed according to priority, and urgent requests may be served before requests that arrived earlier. Which assumption of the model described in the chapter is violated?",
+    "options": [
+      "Requests are processed according to First Come First Serve.",
+      "The system contains only one processing server.",
+      "The service time follows an exponential distribution.",
+      "The arrival process follows a random distribution."
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án: Requests are processed according to First Come First Serve.. M/M/1 giả định FCFS; priority phá giả định.",
+    "answerText": "Requests are processed according to First Come First Serve.",
+    "keywords": []
+  },
+  {
+    "id": "j094",
+    "source": "datajfe",
+    "question": "A process represents the state transition among three states: a ready state, a running state, and a waiting state. Which of the following is an appropriate description concerning the state transition of a process?",
+    "options": [
+      "In a multiprogramming system, even with only one CPU, multiple processes in the running state exist.",
+      "Ready state refers to a state in which a process is waiting for CPU allocation. Generally, there are multiple processes in the ready state, and they are formed into a queue.",
+      "In systems that perform time-sharing processing with the round robin method, a process in the running state makes a state transition to the waiting state after a fixed time passes.",
+      "If multiple processes are executed simultaneously in which CPU processing and I/O processing appear alternately, each process makes a state transition between the two states of the running state and the waiting state only."
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án: Ready state refers to a state in which a process is waiting for CPU allocation. Generally, there are multiple processes in the ready state, and they are formed into a queue.. Ready = chờ CPU; thường nhiều process xếp hàng ready.",
+    "answerText": "Ready state refers to a state in which a process is waiting for CPU allocation. Generally, there are multiple processes in the ready state, and they are formed into a queue.",
+    "keywords": []
+  },
+  {
+    "id": "j095",
+    "source": "datajfe",
+    "question": "A sender encrypts a message using the receiver's publicly available key. Only the receiver should be able to recover the original message. Which key is required for decryption?",
+    "options": [
+      "The sender's private key.",
+      "The sender's public key.",
+      "The receiver's private key.",
+      "The receiver's public key."
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án: The receiver's private key.. Mã hóa bằng public key người nhận → giải bằng private key người nhận.",
+    "answerText": "The receiver's private key.",
+    "keywords": []
+  },
+  {
+    "id": "j096",
+    "source": "datajfe",
+    "question": "Linear Search trên N phần tử có số lần so sánh tốt nhất là:",
+    "options": [
+      "N/2",
+      "1",
+      "log₂ N",
+      "N"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án: 1. Linear search best case: 1 lần so sánh (phần tử ở đầu).",
+    "answerText": "1",
+    "keywords": []
+  },
+  {
+    "id": "j097",
+    "source": "datajfe",
+    "question": "A distributed database update affects several database sites. The system must ensure that the update does not leave some sites committed while others remain uncommitted. Which technology is MOST directly intended to preserve integrity in this situation?",
+    "options": [
+      "Two-phase commitment, because it coordinates integrity when a distributed database is updated.",
+      "Replication, because updated contents are automatically reflected in database copies.",
+      "Projection, because it limits the attributes involved in each distributed update.",
+      "Exclusive access control, because it permanently prevents simultaneous distributed transactions."
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án: Two-phase commitment, because it coordinates integrity when a distributed database is updated.. Two-phase commit giữ toàn vẹn update phân tán.",
+    "answerText": "Two-phase commitment, because it coordinates integrity when a distributed database is updated.",
+    "keywords": []
+  },
+  {
+    "id": "j098",
+    "source": "datajfe",
+    "question": "A database designer removes all repeated items from a table. However, one non-key attribute still depends on only part of a composite primary key. Which statement BEST describes the table?",
+    "options": [
+      "It is in first normal form but does not satisfy second normal form.",
+      "It is in third normal form because all repeated items have been removed.",
+      "It is in second normal form but does not satisfy third normal form.",
+      "It is not in first normal form because partial dependency creates repeated items."
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án: It is in first normal form but does not satisfy second normal form.. Hết repeated item = 1NF; partial dependency → chưa 2NF.",
+    "answerText": "It is in first normal form but does not satisfy second normal form.",
+    "keywords": []
+  },
+  {
+    "id": "j099",
+    "source": "datajfe",
+    "question": "According to ISO/IEC 27001, which best defines availability?",
+    "options": [
+      "Access to information when required",
+      "Accuracy of information",
+      "Authentication of users",
+      "Confidentiality of information"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án: Access to information when required. Availability: truy cập thông tin khi cần (CIA).",
+    "answerText": "Access to information when required",
+    "keywords": []
+  },
+  {
+    "id": "j100",
+    "source": "datajfe",
+    "question": "A receiving system must identify damaged frames and request retransmission when a positive acknowledgment is not received. The same layer also handles physical addressing and logical network topology. Which OSI layer is MOST directly responsible?",
+    "options": [
+      "Physical layer.",
+      "Transport layer.",
+      "Network layer.",
+      "Data Link layer."
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: Data Link layer.. Data Link: frame, error detect, retransmission, physical addressing.",
+    "answerText": "Data Link layer.",
+    "keywords": []
+  },
+  {
+    "id": "j101",
+    "source": "datajfe",
+    "question": "An organization already uses standard processes across projects and manages its processes proactively. It now selects subprocesses that strongly influence overall performance and controls them using statistical techniques. Which change in process management is MOST significant?",
+    "options": [
+      "Moving from statistical process control to continuous innovative process improvement.",
+      "Moving from dependence on individual competence to documented project plans.",
+      "Moving from qualitative process predictability to quantitative process predictability.",
+      "Moving from project-specific practices to organization-wide standard processes."
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án: Moving from qualitative process predictability to quantitative process predictability.. Lên quantitative process control (CMMI L4-ish).",
+    "answerText": "Moving from qualitative process predictability to quantitative process predictability.",
+    "keywords": []
+  },
+  {
+    "id": "j102",
+    "source": "datajfe",
+    "question": "During a backward calculation, several activities diverge from the same node toward different later nodes. Which principle is used when determining the latest allowable node time?",
+    "options": [
+      "Take the larger required value for each path.",
+      "Take the smaller required value for the possible paths.",
+      "Ignore non-critical outgoing activities.",
+      "Add all path values together."
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án: Take the smaller required value for the possible paths.. Backward: lấy giá trị nhỏ hơn khi nhánh phân kỳ.",
+    "answerText": "Take the smaller required value for the possible paths.",
+    "keywords": []
+  },
+  {
+    "id": "j103",
+    "source": "datajfe",
+    "question": "A transaction performs several updates and then encounters a logical program error before successful completion. Recovery uses pre-update log information to undo only the failed transaction's changes. Which recovery method BEST matches the situation?",
+    "options": [
+      "Roll-forward.",
+      "Two-phase commitment.",
+      "Roll-back.",
+      "Replication."
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án: Roll-back.. Logical error → roll-back bằng pre-update log.",
+    "answerText": "Roll-back.",
+    "keywords": []
+  },
+  {
+    "id": "j104",
+    "source": "datajfe",
+    "question": "A network administrator needs a device that forwards traffic between different logical networks based on logical addressing. The device must also operate at the OSI layer where routing and congestion control are performed. Which device BEST satisfies the requirement?",
+    "options": [
+      "Bridge.",
+      "Repeater.",
+      "Hub.",
+      "Router."
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: Router.. Router: chuyển giữa mạng logic, tầng Network.",
+    "answerText": "Router.",
+    "keywords": []
+  },
+  {
+    "id": "j105",
+    "source": "datajfe",
+    "question": "Which of the following is an appropriate role of FCS in a frame that is transmitted through the HDLC procedure?",
+    "options": [
+      "It records the code for identifying the start or end of the frame.",
+      "It records the type and transmission order of the frame.",
+      "It records the error control code of the frame.",
+      "It records the information for identifying the transmitting station or receiving station of the frame."
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án: It records the error control code of the frame.. FCS trong HDLC: mã kiểm soát lỗi frame.",
+    "answerText": "It records the error control code of the frame.",
+    "keywords": []
+  },
+  {
+    "id": "j106",
+    "source": "datajfe",
+    "question": "A company encrypts confidential files using the same secret key for both encryption and decryption. It later publishes this key so external partners can securely send encrypted files to the company. Which statement BEST identifies the security problem?",
+    "options": [
+      "The encryption method remains secure because decryption still requires the same key.",
+      "The system becomes message authentication instead of encryption.",
+      "Publishing the shared secret compromises private key cryptography because the key must be kept secret.",
+      "The company has automatically converted the system into public key cryptography."
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án: Publishing the shared secret compromises private key cryptography because the key must be kept secret.. Symmetric secret key phải giữ bí mật; công bố → mất an toàn.",
+    "answerText": "Publishing the shared secret compromises private key cryptography because the key must be kept secret.",
+    "keywords": []
+  },
+  {
+    "id": "j107",
+    "source": "datajfe",
+    "question": "Which of the following can be assigned to a computer as the IP address of class C?",
+    "options": [
+      "192.128.0.0",
+      "192.0.256.16",
+      "192.0.0.255",
+      "192.128.0.128"
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án: 192.128.0.128. Class C 192.x.x.x; 256 invalid; .0 network; .255 broadcast; host hợp lệ 192.128.0.128.",
+    "answerText": "192.128.0.128",
+    "keywords": []
+  },
+  {
+    "id": "j108",
+    "source": "datajfe",
+    "question": "A process is executed through a state transition among three states: a ready state, a running state, and a waiting state. Which of the following is an appropriate description concerning the state transition of a process?",
+    "options": [
+      "In a multiprogramming system, even with only one CPU, multiple processes in the running state exist.",
+      "Ready state refers to a state in which a process is waiting for CPU allocation. Generally, there are multiple processes in the ready state, and they are formed into a queue.",
+      "In systems that perform time-sharing processing with the round robin method, a process in the running state makes a state transition to the waiting state after a fixed time passes.",
+      "If multiple processes are executed simultaneously in which CPU processing and I/O processing appear alternately, each process makes a state transition between the two states of the running state and the waiting state only."
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án: Ready state refers to a state in which a process is waiting for CPU allocation. Generally, there are multiple processes in the ready state, and they are formed into a queue.. Ready state: chờ CPU, nhiều process xếp hàng.",
+    "answerText": "Ready state refers to a state in which a process is waiting for CPU allocation. Generally, there are multiple processes in the ready state, and they are formed into a queue.",
+    "keywords": []
   }
 ];
