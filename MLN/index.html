@@ -1,15 +1,15 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quiz MLN â€“ Ă”n táº­p tráº¯c nghiá»‡m</title>
-  <meta name="description" content="Quiz Ă´n táº­p tráº¯c nghiá»‡m MLN: ngáº«u nhiĂªn, lÆ°u cĂ¢u sai, tĂ¬m kiáº¿m, chá»n nhiá»u Ä‘Ă¡p Ă¡n" />
+  <title>Quiz MLN – Ôn tập trắc nghiệm</title>
+  <meta name="description" content="Quiz ôn tập trắc nghiệm MLN: ngẫu nhiên, lưu câu sai, tìm kiếm, chọn nhiều đáp án" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css?v=20260716f" />
+  <link rel="stylesheet" href="style.css?v=20260716g" />
 </head>
 <body>
   <div class="app-body">
@@ -19,23 +19,23 @@
           <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
           <div class="brand-text">
             <strong>Quiz MLN</strong>
-            <span>Ă”n táº­p tráº¯c nghiá»‡m</span>
+            <span>Ôn tập trắc nghiệm</span>
           </div>
         </div>
         <div class="nav-stats" id="statsBar">
-          <button type="button" class="badge badge-sync" id="syncBadge" title="Cháº¿ Ä‘á»™ lÆ°u tiáº¿n trĂ¬nh">
+          <button type="button" class="badge badge-sync" id="syncBadge" title="Chế độ lưu tiến trình">
             <i class="fa-solid fa-hard-drive" id="syncBadgeIcon"></i>
             <span id="syncBadgeText">Local</span>
           </button>
-          <span class="badge badge-done" title="ÄĂºng trong phiĂªn">
+          <span class="badge badge-done" title="Đúng trong phiên">
             <i class="fa-solid fa-circle-check"></i>
-            <strong id="statCorrect">0</strong> Ä‘Ăºng
+            <strong id="statCorrect">0</strong> đúng
           </span>
-          <span class="badge badge-wrong" title="CĂ¢u sai Ä‘Ă£ lÆ°u">
+          <span class="badge badge-wrong" title="Câu sai đã lưu">
             <i class="fa-solid fa-circle-xmark"></i>
             <strong id="statWrong">0</strong> sai
           </span>
-          <span class="badge" title="Tiáº¿n Ä‘á»™">
+          <span class="badge" title="Tiến độ">
             <i class="fa-solid fa-list-ol"></i>
             <strong id="statProgress">0</strong>/<span id="statTotal">0</span>
           </span>
@@ -45,17 +45,17 @@
 
     <main class="app-main">
       <div class="container quiz-wrap">
-        <!-- Má»™t hĂ ng nĂºt: tab + tĂ¬m + thao tĂ¡c (cuá»™n theo trang, khĂ´ng sticky) -->
+        <!-- Một hàng nút: tab + tìm + thao tác (cuộn theo trang, không sticky) -->
         <div class="control-bar card-soft">
-          <nav class="tabs tabs-inline" role="tablist" aria-label="Cháº¿ Ä‘á»™ lĂ m bĂ i">
+          <nav class="tabs tabs-inline" role="tablist" aria-label="Chế độ làm bài">
             <button type="button" class="tab active" data-tab="all" role="tab" aria-selected="true">
               <i class="fa-solid fa-layer-group"></i>
-              <span class="tab-text">Táº¥t cáº£</span>
+              <span class="tab-text">Tất cả</span>
               <span class="tab-count" id="badgeAll">0</span>
             </button>
             <button type="button" class="tab" data-tab="wrong" role="tab" aria-selected="false">
               <i class="fa-solid fa-triangle-exclamation"></i>
-              <span class="tab-text">CĂ¢u sai</span>
+              <span class="tab-text">Câu sai</span>
               <span class="tab-count tab-count-warn" id="badgeWrong">0</span>
             </button>
           </nav>
@@ -66,32 +66,32 @@
               type="search"
               id="searchInput"
               class="search-input"
-              placeholder="TĂ¬m cĂ¢u há»iâ€¦"
+              placeholder="Tìm câu hỏi…"
               autocomplete="off"
-              aria-label="TĂ¬m kiáº¿m cĂ¢u há»i"
+              aria-label="Tìm kiếm câu hỏi"
             />
-            <button type="button" class="btn btn-ghost btn-sm search-clear hidden" id="btnClearSearch" title="XĂ³a tĂ¬m kiáº¿m">
+            <button type="button" class="btn btn-ghost btn-sm search-clear hidden" id="btnClearSearch" title="Xóa tìm kiếm">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
 
-          <div class="toolbar toolbar-inline" role="toolbar" aria-label="Thao tĂ¡c">
+          <div class="toolbar toolbar-inline" role="toolbar" aria-label="Thao tác">
             <label class="toggle" for="shuffleToggle">
               <input type="checkbox" id="shuffleToggle" checked />
-              <span><i class="fa-solid fa-shuffle"></i> <span class="btn-label">Ngáº«u nhiĂªn</span></span>
+              <span><i class="fa-solid fa-shuffle"></i> <span class="btn-label">Ngẫu nhiên</span></span>
             </label>
-            <button type="button" class="btn btn-secondary btn-sm" id="btnReshuffle" title="XĂ¡o thá»© tá»± cĂ¢u há»i (giá»¯ cháº¿ Ä‘á»™ Ngáº«u nhiĂªn)">
-              <i class="fa-solid fa-arrows-rotate"></i> <span class="btn-label">XĂ¡o láº¡i</span>
+            <button type="button" class="btn btn-secondary btn-sm" id="btnReshuffle" title="Xáo thứ tự câu hỏi (giữ chế độ Ngẫu nhiên)">
+              <i class="fa-solid fa-arrows-rotate"></i> <span class="btn-label">Xáo lại</span>
             </button>
-            <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession" title="Reset Ä‘iá»ƒm phiĂªn">
-              <i class="fa-solid fa-rotate-left"></i> <span class="btn-label">Reset Ä‘iá»ƒm</span>
+            <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession" title="Reset điểm phiên">
+              <i class="fa-solid fa-rotate-left"></i> <span class="btn-label">Reset điểm</span>
             </button>
-            <button type="button" class="btn btn-ghost btn-sm btn-danger-text" id="btnClearWrong" title="XĂ³a cĂ¢u sai Ä‘Ă£ lÆ°u">
-              <i class="fa-solid fa-trash-can"></i> <span class="btn-label">XĂ³a cĂ¢u sai</span>
+            <button type="button" class="btn btn-ghost btn-sm btn-danger-text" id="btnClearWrong" title="Xóa câu sai đã lưu">
+              <i class="fa-solid fa-trash-can"></i> <span class="btn-label">Xóa câu sai</span>
             </button>
           </div>
         </div>
-        <div class="search-results hidden" id="searchResults" role="listbox" aria-label="Káº¿t quáº£ tĂ¬m kiáº¿m"></div>
+        <div class="search-results hidden" id="searchResults" role="listbox" aria-label="Kết quả tìm kiếm"></div>
 
         <div class="progress-wrap" aria-hidden="true">
           <div class="progress-bar" id="progressBar"></div>
@@ -99,26 +99,26 @@
 
         <section class="card quiz-card" id="quizCard">
           <div class="card-meta">
-            <span class="q-index" id="qIndex"><i class="fa-solid fa-circle-question"></i> CĂ¢u 1</span>
+            <span class="q-index" id="qIndex"><i class="fa-solid fa-circle-question"></i> Câu 1</span>
             <span class="q-id" id="qId"></span>
           </div>
-          <h2 class="question" id="questionText">Äang táº£iâ€¦</h2>
+          <h2 class="question" id="questionText">Đang tải…</h2>
           <p class="multi-hint hidden" id="multiHint">
             <i class="fa-solid fa-square-check"></i>
-            Chá»n nhiá»u phÆ°Æ¡ng Ă¡n, rá»“i báº¥m <strong>XĂ¡c nháº­n</strong>
+            Chọn nhiều phương án, rồi bấm <strong>Xác nhận</strong>
           </p>
-          <div class="options" id="options" role="listbox" aria-label="CĂ¡c phÆ°Æ¡ng Ă¡n"></div>
+          <div class="options" id="options" role="listbox" aria-label="Các phương án"></div>
           <div class="submit-row hidden" id="submitRow">
             <button type="button" class="btn btn-primary" id="btnSubmit" disabled>
-              <i class="fa-solid fa-paper-plane"></i> XĂ¡c nháº­n
+              <i class="fa-solid fa-paper-plane"></i> Xác nhận
             </button>
-            <span class="submit-count" id="submitCount">ÄĂ£ chá»n 0</span>
+            <span class="submit-count" id="submitCount">Đã chọn 0</span>
           </div>
           <div class="feedback hidden" id="feedback" role="status"></div>
           <div class="explain-toggle-row hidden" id="explainToggleRow">
             <button type="button" class="btn btn-secondary btn-sm" id="btnToggleExplain" aria-expanded="true">
               <i class="fa-solid fa-lightbulb" id="toggleExplainIcon"></i>
-              <span id="toggleExplainLabel">áº¨n giáº£i thĂ­ch</span>
+              <span id="toggleExplainLabel">Ẩn giải thích</span>
             </button>
           </div>
           <div class="explain-panel hidden" id="explainPanel" aria-live="polite"></div>
@@ -127,25 +127,25 @@
 
         <div class="empty card hidden" id="emptyState">
           <div class="empty-icon"><i class="fa-solid fa-face-smile"></i></div>
-          <h2 id="emptyTitle">ChÆ°a cĂ³ cĂ¢u sai</h2>
-          <p id="emptyDesc">Khi báº¡n tráº£ lá»i sai, cĂ¢u há»i sáº½ Ä‘Æ°á»£c lÆ°u á»Ÿ tab nĂ y Ä‘á»ƒ lĂ m láº¡i.</p>
+          <h2 id="emptyTitle">Chưa có câu sai</h2>
+          <p id="emptyDesc">Khi bạn trả lời sai, câu hỏi sẽ được lưu ở tab này để làm lại.</p>
           <button type="button" class="btn btn-primary" id="btnGoAll">
-            <i class="fa-solid fa-arrow-left"></i> Vá» tab Táº¥t cáº£
+            <i class="fa-solid fa-arrow-left"></i> Về tab Tất cả
           </button>
         </div>
 
-        <nav class="nav-arrows" aria-label="Äiá»u hÆ°á»›ng cĂ¢u há»i">
-          <button type="button" class="btn btn-secondary btn-nav" id="btnPrev" title="CĂ¢u trÆ°á»›c (â†)">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
+          <button type="button" class="btn btn-secondary btn-nav" id="btnPrev" title="Câu trước (←)">
             <i class="fa-solid fa-arrow-left"></i>
-            <span class="nav-label">TrÆ°á»›c</span>
+            <span class="nav-label">Trước</span>
           </button>
           <div class="nav-center">
-            <input type="number" id="jumpInput" min="1" class="jump-input" title="Nháº£y tá»›i sá»‘ cĂ¢u" aria-label="Nháº£y tá»›i sá»‘ cĂ¢u" />
+            <input type="number" id="jumpInput" min="1" class="jump-input" title="Nhảy tới số câu" aria-label="Nhảy tới số câu" />
             <button type="button" class="btn btn-secondary btn-sm" id="btnJump">
-              <i class="fa-solid fa-location-arrow"></i> Äi
+              <i class="fa-solid fa-location-arrow"></i> Đi
             </button>
           </div>
-          <button type="button" class="btn btn-secondary btn-nav" id="btnNext" title="CĂ¢u sau (â†’)">
+          <button type="button" class="btn btn-secondary btn-nav" id="btnNext" title="Câu sau (→)">
             <span class="nav-label">Sau</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
@@ -153,56 +153,56 @@
 
         <p class="hint">
           <i class="fa-solid fa-hand-pointer"></i>
-          Chuyá»ƒn cĂ¢u báº±ng nĂºt <strong>TrÆ°á»›c / Sau</strong> (khĂ´ng vuá»‘t).
-          <span class="hint-desk"> Â· MĂ¡y tĂ­nh: <kbd>A</kbd>â€“<kbd>E</kbd> chá»n Â· multi: <kbd>Enter</kbd></span>
+          Chuyển câu bằng nút <strong>Trước / Sau</strong> (không vuốt).
+          <span class="hint-desk"> · Máy tính: <kbd>A</kbd>–<kbd>E</kbd> chọn · multi: <kbd>Enter</kbd></span>
         </p>
       </div>
     </main>
   </div>
 
-  <!-- Modal xĂ¡c nháº­n (thay window.confirm â€” iPad/Safari hay khĂ´ng hiá»‡n popup native) -->
+  <!-- Modal xác nhận (thay window.confirm — iPad/Safari hay không hiện popup native) -->
   <div id="confirmModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmMsg" hidden>
     <div class="modal-backdrop" data-confirm-cancel tabindex="-1"></div>
     <div class="modal-panel" role="document">
       <div class="modal-icon" aria-hidden="true"><i class="fa-solid fa-trash-can"></i></div>
-      <h3 class="modal-title" id="confirmTitle">XĂ¡c nháº­n</h3>
+      <h3 class="modal-title" id="confirmTitle">Xác nhận</h3>
       <p class="modal-msg" id="confirmMsg"></p>
       <div class="modal-actions">
-        <button type="button" class="btn btn-secondary" id="confirmCancel">Há»§y</button>
-        <button type="button" class="btn btn-danger" id="confirmOk">XĂ³a</button>
+        <button type="button" class="btn btn-secondary" id="confirmCancel">Hủy</button>
+        <button type="button" class="btn btn-danger" id="confirmOk">Xóa</button>
       </div>
     </div>
   </div>
 
-  <!-- Master Control: cloud sync (tĂ¹y chá»n) -->
+  <!-- Master Control: cloud sync (tùy chọn) -->
   <div id="masterModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="masterTitle" hidden>
     <div class="modal-backdrop" data-master-skip tabindex="-1"></div>
     <div class="modal-panel master-panel" role="document">
       <div class="modal-icon master-icon" aria-hidden="true"><i class="fa-solid fa-cloud"></i></div>
       <h3 class="modal-title" id="masterTitle">Master Control</h3>
       <p class="modal-msg" id="masterMsg">
-        Nháº­p mĂ£ Ä‘á»ƒ <strong>lÆ°u tiáº¿n trĂ¬nh trĂªn cloud</strong> (Ä‘á»“ng bá»™ nhiá»u mĂ¡y).<br />
-        Bá» qua = chá»‰ lÆ°u trĂªn mĂ¡y nĂ y (local).
+        Nhập mã để <strong>lưu tiến trình trên cloud</strong> (đồng bộ nhiều máy).<br />
+        Bỏ qua = chỉ lưu trên máy này (local).
       </p>
-      <label class="master-label" for="masterCodeInput">MĂ£ Master Control</label>
+      <label class="master-label" for="masterCodeInput">Mã Master Control</label>
       <input
         type="password"
         id="masterCodeInput"
         class="master-input"
-        placeholder="Nháº­p mĂ£â€¦"
+        placeholder="Nhập mã…"
         autocomplete="current-password"
         enterkeyhint="go"
       />
       <p class="master-error hidden" id="masterError" role="alert"></p>
       <p class="master-status hidden" id="masterStatus"></p>
       <div class="modal-actions master-actions">
-        <button type="button" class="btn btn-secondary" id="masterSkip">Bá» qua (local)</button>
+        <button type="button" class="btn btn-secondary" id="masterSkip">Bỏ qua (local)</button>
         <button type="button" class="btn btn-primary" id="masterLogin">
-          <i class="fa-solid fa-right-to-bracket"></i> VĂ o cloud
+          <i class="fa-solid fa-right-to-bracket"></i> Vào cloud
         </button>
       </div>
       <button type="button" class="btn btn-ghost btn-sm master-logout hidden" id="masterLogout">
-        <i class="fa-solid fa-right-from-bracket"></i> ThoĂ¡t cloud â†’ local
+        <i class="fa-solid fa-right-from-bracket"></i> Thoát cloud → local
       </button>
     </div>
   </div>
