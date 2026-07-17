@@ -1,60 +1,40 @@
 # FE Study Hub
 
-Website tĩnh ôn thi **Fundamental Information Technology Engineer (FE)** — deploy được bằng **GitHub Pages**.
+Website tĩnh ôn thi **FE** — GitHub Pages.
 
-## Tính năng
+## Chạy
 
-1. **Ôn tập** — hiển thị `TOM_TAT_ON_THI_FE_VOL1_VOL2.txt` theo mục, có mục lục + tìm kiếm.
-2. **Kiểm tra** — trắc nghiệm (ngân hàng 300 câu + mẫu từ `test.txt`):
-   - Chọn đáp án → hiện đúng/sai + giải thích
-   - Mũi tên ← → (hoặc phím mũi tên) chuyển câu
-   - Lưu **tiến trình** + **câu sai** bằng `localStorage`
-   - Trang **Câu sai** để học lại
-
-## Chạy local
-
-Mở bằng static server (tránh `file://` chặn module/path trên một số trình duyệt):
+Mở root repo bằng static server, vào `/wedJfe/`:
 
 ```bash
-# Python
 python -m http.server 8080
-
-# hoặc Node
-npx serve .
+# http://localhost:8080/wedJfe/
 ```
 
-Vào: http://localhost:8080
-
-## Deploy GitHub Pages
-
-1. Đẩy repo lên GitHub.
-2. **Settings → Pages → Source**: Deploy from branch `main` (hoặc `master`), folder `/ (root)`.
-3. Site sẽ có dạng: `https://<user>.github.io/<repo>/`
-
-File `.nojekyll` đã có sẵn để GitHub không xử lý Jekyll (tránh ẩn folder `_` nếu sau này thêm).
-
-## Cấu trúc
+## Cấu trúc (runtime)
 
 ```
-index.html          # SPA (hash router)
-css/app.css         # design system gốc
-css/study-site.css  # style trang ôn/thi
-js/data-study.js    # nội dung ôn (auto)
-js/data-quiz.js     # câu hỏi (auto)
-js/app.js           # logic UI + localStorage
-build_site_data.py  # sinh lại data từ txt
+index.html
+css/app.css
+css/study-site.css
+js/app.js
+js/data-study.js      # ôn tập (runtime)
+js/data-quiz.js       # trắc nghiệm (runtime)
+cloud/                # Master Control + Neon
 ```
 
-## Sinh lại dữ liệu
+Shell quiz dùng chung: `../js/quiz-shell.css`.
 
-Sau khi sửa tóm tắt / ngân hàng câu hỏi:
+## Sinh lại data (tùy chọn)
 
 ```bash
 python build_site_data.py
 ```
 
-## Lưu ý
+Nguồn: `TOM_TAT_ON_THI_FE_VOL1_VOL2.txt`, `BO_300_CAU_ON_THI.txt`, `test.txt`.
 
-- Tiến trình chỉ lưu **trên trình duyệt máy bạn** (không có server/đăng nhập).
-- Xóa tiến trình: nút **Xóa tiến trình** trong phần Kiểm tra.
-- CSS dùng token/class từ `css/app.css` (nút, card, nav, badge…).
+Thêm câu từ `../datajfe.md`:
+
+```bash
+python _import_datajfe.py
+```
