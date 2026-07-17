@@ -517,7 +517,7 @@
         const fl = filteredIds();
         const idx = fl.indexOf(id);
         state.currentIndex = idx >= 0 ? idx : 0;
-        saveState();
+        saveState(true);
         location.hash = "#/quiz";
       });
       const study = document.createElement("a");
