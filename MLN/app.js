@@ -141,8 +141,11 @@
       const p = JSON.parse(raw);
       if (!p || typeof p !== "object") return null;
       const id = Number(p.currentId);
+      let idx = Number(p.index);
+      if (!Number.isFinite(idx) && p.display != null) idx = Number(p.display) - 1;
       return {
         currentId: Number.isFinite(id) ? id : null,
+        index: Number.isFinite(idx) && idx >= 0 ? idx : null,
         mode: p.mode === "wrong" ? "wrong" : "all",
         shuffle: !!p.shuffle,
         explainVisible:
@@ -160,6 +163,8 @@
         PROGRESS_KEY,
         JSON.stringify({
           currentId: cur ? cur.id : null,
+          index: index,
+          display: index + 1,
           mode,
           shuffle: !!(el.shuffleToggle && el.shuffleToggle.checked),
           explainVisible,
@@ -187,12 +192,21 @@
     }
     const prog = data.progress || {};
     const id = Number(prog.currentId != null ? prog.currentId : data.currentId);
+    // index = 0-based trong queue; display = 1-based (Câu N)
+    let idx = Number(prog.index);
+    if (!Number.isFinite(idx) && prog.display != null) {
+      idx = Number(prog.display) - 1;
+    }
+    if (!Number.isFinite(idx) && data.currentIndex != null) {
+      idx = Number(data.currentIndex);
+    }
     const shufflePref =
       data.prefs && typeof data.prefs.shuffle === "boolean"
         ? data.prefs.shuffle
         : !!prog.shuffle;
     pendingRestore = {
       currentId: Number.isFinite(id) ? id : null,
+      index: Number.isFinite(idx) && idx >= 0 ? idx : null,
       mode: prog.mode === "wrong" || data.mode === "wrong" ? "wrong" : "all",
       shuffle: shufflePref,
     };
@@ -226,18 +240,23 @@
       },
       progress: {
         mode,
-        currentId: cur ? cur.id : null,
-        index: index,
+        currentId: cur ? Number(cur.id) : null,
+        index: queue.length ? index : 0,
+        display: queue.length ? index + 1 : 1,
       },
       stats: { sessionCorrect, sessionAnswered },
       savedAt: Date.now(),
     };
   }
 
-  /** Persist wrong bank + vị trí câu (cloud hoặc local) */
-  function persistState() {
+  /**
+   * Persist wrong bank + vị trí câu (cloud hoặc local).
+   * @param {{ immediate?: boolean }} [opts] immediate=true khi Next/Prev (lưu Neon ngay)
+   */
+  function persistState(opts) {
+    const immediate = !!(opts && opts.immediate);
     if (window.StudyCloud && StudyCloud.isCloud()) {
-      StudyCloud.notifyChange();
+      StudyCloud.notifyChange(immediate);
       return;
     }
     saveWrongIdsLocal();
@@ -245,26 +264,59 @@
   }
 
   function saveWrongIds() {
-    persistState();
+    persistState({ immediate: true });
   }
 
   function restorePositionAndBuild() {
     const r = pendingRestore;
     pendingRestore = null;
-    if (r) {
-      if (r.mode === "wrong" && wrongIds.size > 0) applyUiMode("wrong");
-      else applyUiMode("all");
-      if (typeof r.shuffle === "boolean" && el.shuffleToggle) {
-        el.shuffleToggle.checked = r.shuffle;
-      }
-      syncReshuffleBtn();
-      rebuildQueue(r.currentId != null ? r.currentId : null);
-      if (r.currentId != null && queue[index] && queue[index].id === r.currentId) {
-        /* restored */
-      }
+    if (!r) {
+      rebuildQueue(null);
       return;
     }
-    rebuildQueue(null);
+
+    if (r.mode === "wrong" && wrongIds.size > 0) applyUiMode("wrong");
+    else applyUiMode("all");
+    if (typeof r.shuffle === "boolean" && el.shuffleToggle) {
+      el.shuffleToggle.checked = r.shuffle;
+    }
+    syncReshuffleBtn();
+
+    const shuffleOn = !!(el.shuffleToggle && el.shuffleToggle.checked);
+    // Ưu tiên: currentId (ổn định); fallback: index 0-based trong hàng đợi
+    const keepId =
+      r.currentId != null && Number.isFinite(Number(r.currentId))
+        ? Number(r.currentId)
+        : null;
+
+    if (keepId != null) {
+      rebuildQueue(keepId);
+      // Nếu id không còn trong queue (đổi bộ câu), fallback index
+      if (
+        (!queue[index] || Number(queue[index].id) !== keepId) &&
+        r.index != null &&
+        queue.length
+      ) {
+        index = Math.min(Math.max(0, r.index), queue.length - 1);
+        answered = false;
+        selectedLetters = [];
+        render();
+      }
+    } else if (r.index != null && !shuffleOn) {
+      rebuildQueue(null);
+      if (queue.length) {
+        index = Math.min(Math.max(0, r.index), queue.length - 1);
+        answered = false;
+        selectedLetters = [];
+        render();
+      }
+    } else {
+      rebuildQueue(null);
+    }
+
+    if (queue.length && index > 0) {
+      showToast("Tiếp tục từ câu " + (index + 1) + " / " + queue.length);
+    }
   }
 
   function addWrong(id) {
@@ -384,7 +436,8 @@
     queue = list;
 
     if (keepPositionId != null) {
-      const found = queue.findIndex((q) => q.id === keepPositionId);
+      const want = Number(keepPositionId);
+      const found = queue.findIndex((q) => Number(q.id) === want);
       index = found >= 0 ? found : 0;
       dbg("rebuildQueue:keepId", {
         keepPositionId,
@@ -444,7 +497,7 @@
     searchQuery = "";
     if (el.btnClearSearch) el.btnClearSearch.classList.add("hidden");
     render();
-    persistState();
+    persistState({ immediate: true });
     el.quizCard?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
@@ -902,7 +955,7 @@
     hideExplainPanel();
     hideAltPanel();
     render();
-    persistState();
+    persistState({ immediate: true });
   }
 
   function jumpTo(n) {
@@ -922,14 +975,14 @@
     hideExplainPanel();
     hideAltPanel();
     render();
-    persistState();
+    persistState({ immediate: true });
   }
 
   function setMode(newMode) {
     if (newMode === mode) return;
     applyUiMode(newMode);
     rebuildQueue(null);
-    persistState();
+    persistState({ immediate: true });
   }
 
   // —— Search ——

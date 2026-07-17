@@ -20,6 +20,11 @@
   let setDataFn = null;
   let onAfterLoad = null;
   let badgeEl = null;
+  /** Only write Neon when true — prevents idle tabs from overwriting progress */
+  let dirty = false;
+  /** savedAt from last successful load/save — used for light LWW */
+  let lastKnownSavedAt = 0;
+  let saving = false;
 
   function cloudConfigured() {
     return Boolean(DATABASE_URL && MASTER_CODE);
@@ -224,39 +229,105 @@
     }
   }
 
-  function scheduleSave() {
-    if (mode !== "cloud" || !getDataFn) return;
-    if (saveTimer) clearTimeout(saveTimer);
-    saveTimer = setTimeout(async () => {
-      saveTimer = null;
-      updateBadge("is-syncing", "Đang lưu…");
-      try {
-        await save(subjectId, getDataFn());
-        updateBadge("is-cloud", "Cloud");
-      } catch (e) {
-        console.warn(e);
-        updateBadge("is-error", "Lỗi cloud");
-        toast(e.message || "Lưu Neon thất bại");
-      }
-    }, 450);
+  function markClean(savedAt) {
+    dirty = false;
+    if (Number.isFinite(Number(savedAt)) && Number(savedAt) > 0) {
+      lastKnownSavedAt = Number(savedAt);
+    }
   }
 
-  /** Immediate save — dùng khi ẩn tab / đóng trang (mobile) */
-  function flushSave() {
-    if (mode !== "cloud" || !getDataFn) return Promise.resolve();
+  /**
+   * Build payload + light merge so an idle tab cannot clobber newer progress.
+   * wrongIds are unioned; progress keeps the "further" cursor when remote is newer.
+   */
+  function buildPayloadForSave() {
+    const local = (getDataFn && getDataFn()) || {};
+    const savedAt = Date.now();
+    return Object.assign({}, local, { savedAt: savedAt });
+  }
+
+  async function mergeWithRemoteIfNeeded(localPayload) {
+    try {
+      const remote = await load(subjectId);
+      const remoteTs = Number(remote && remote.savedAt) || 0;
+      if (!remoteTs || remoteTs <= lastKnownSavedAt) {
+        return localPayload;
+      }
+      // Remote changed since we loaded (another device). Merge carefully.
+      const localWrong = Array.isArray(localPayload.wrongIds)
+        ? localPayload.wrongIds
+        : [];
+      const remoteWrong = Array.isArray(remote.wrongIds) ? remote.wrongIds : [];
+      const wrongSet = new Set(
+        localWrong.concat(remoteWrong).map(Number).filter((n) => Number.isFinite(n))
+      );
+
+      const lp = localPayload.progress || {};
+      const rp = remote.progress || {};
+      const li = Number(lp.index);
+      const ri = Number(rp.index);
+      // Prefer local progress (this tab is dirty / user is studying here)
+      // but if local has no position and remote does, keep remote.
+      let progress = lp;
+      if (
+        (!Number.isFinite(li) || (lp.currentId == null && lp.display == null)) &&
+        (Number.isFinite(ri) || rp.currentId != null)
+      ) {
+        progress = rp;
+      }
+
+      return Object.assign({}, remote, localPayload, {
+        wrongIds: Array.from(wrongSet),
+        progress: progress,
+        prefs: Object.assign({}, remote.prefs || {}, localPayload.prefs || {}),
+        savedAt: localPayload.savedAt,
+      });
+    } catch (e) {
+      console.warn("mergeWithRemoteIfNeeded", e);
+      return localPayload;
+    }
+  }
+
+  async function doSave(opts) {
+    const options = opts || {};
+    if (mode !== "cloud" || !getDataFn) return false;
+    if (!dirty && !options.force) return false;
+    if (saving) return false;
+    saving = true;
+    updateBadge("is-syncing", "Đang lưu…");
+    try {
+      let payload = buildPayloadForSave();
+      payload = await mergeWithRemoteIfNeeded(payload);
+      await save(subjectId, payload);
+      markClean(payload.savedAt);
+      updateBadge("is-cloud", "Cloud");
+      return true;
+    } catch (e) {
+      console.warn(e);
+      updateBadge("is-error", "Lỗi cloud");
+      if (!options.silent) toast(e.message || "Lưu Neon thất bại");
+      return false;
+    } finally {
+      saving = false;
+    }
+  }
+
+  function scheduleSave() {
+    if (mode !== "cloud" || !getDataFn || !dirty) return;
+    if (saveTimer) clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => {
+      saveTimer = null;
+      doSave({ silent: false });
+    }, 200);
+  }
+
+  /** Immediate save — navigation / pagehide (only if dirty) */
+  function flushSave(opts) {
     if (saveTimer) {
       clearTimeout(saveTimer);
       saveTimer = null;
     }
-    updateBadge("is-syncing", "Đang lưu…");
-    return save(subjectId, getDataFn())
-      .then(() => {
-        updateBadge("is-cloud", "Cloud");
-      })
-      .catch((e) => {
-        console.warn(e);
-        updateBadge("is-error", "Lỗi cloud");
-      });
+    return doSave(Object.assign({ silent: true }, opts || {}));
   }
 
   function bindLifecycleFlush() {
@@ -264,7 +335,7 @@
     global.__studyCloudLifecycleBound = true;
     const flush = () => {
       try {
-        flushSave();
+        if (dirty) flushSave({ silent: true });
       } catch (e) {
         /* ignore */
       }
@@ -424,6 +495,8 @@
       } catch (e) {}
       updateBadge("is-syncing", "Đang tải…");
       const data = await load(subjectId);
+      dirty = false;
+      lastKnownSavedAt = Number(data && data.savedAt) || Date.now();
       if (setDataFn) setDataFn(data || {});
       if (onAfterLoad) onAfterLoad(data || {});
       updateBadge("is-cloud", "Cloud");
@@ -443,6 +516,8 @@
 
   function logout(showMsg) {
     mode = "local";
+    dirty = false;
+    lastKnownSavedAt = 0;
     try {
       localStorage.removeItem(FLAG_KEY);
     } catch (e) {}
@@ -499,6 +574,8 @@
         await getSql();
         mode = "cloud";
         const data = await load(subjectId);
+        dirty = false;
+        lastKnownSavedAt = Number(data && data.savedAt) || Date.now();
         if (setDataFn) setDataFn(data || {});
         if (onAfterLoad) onAfterLoad(data || {});
         updateBadge("is-cloud", "Cloud");
@@ -512,6 +589,7 @@
     }
 
     mode = "local";
+    dirty = false;
     updateBadge("", "Local");
     if (opts.autoPrompt !== false && cloudConfigured()) {
       try {
@@ -524,9 +602,21 @@
     }
   }
 
-  /** Call after local data changes when in cloud mode */
-  function notifyChange() {
-    if (mode === "cloud") scheduleSave();
+  /**
+   * Call after local data changes when in cloud mode.
+   * @param {boolean|object} [immediateOrOpts] - true = save now (navigation)
+   */
+  function notifyChange(immediateOrOpts) {
+    if (mode !== "cloud") return;
+    dirty = true;
+    const immediate =
+      immediateOrOpts === true ||
+      (immediateOrOpts && immediateOrOpts.immediate);
+    if (immediate) {
+      flushSave({ silent: true });
+    } else {
+      scheduleSave();
+    }
   }
 
   global.StudyCloud = {
@@ -534,6 +624,9 @@
     notifyChange,
     flush: flushSave,
     isCloud,
+    isDirty: function () {
+      return dirty;
+    },
     openModal,
     cloudConfigured,
     MASTER_CODE,
