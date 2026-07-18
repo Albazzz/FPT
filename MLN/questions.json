@@ -52,16 +52,16 @@
       "C": "Hiệp tác đơn giản, sản xuất thủ công, sản xuất hiện đại",
       "D": "Hiệp tác đơn giản, công trường thủ công, đại công nghiệp"
     },
-    "answer": "C",
+    "answer": "D",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "C. Hiệp tác đơn giản, sản xuất thủ công, sản xuất hiện đại",
+      "answerDisplay": "D. Hiệp tác đơn giản, công trường thủ công, đại công nghiệp",
       "whyCorrect": "Ba giai đoạn CMCN lần thứ nhất theo Mác: hiệp tác đơn giản → công trường thủ công → đại công nghiệp. Đây là quy luật phát triển từ phân công thủ công đến sản xuất bằng máy móc.",
-      "memoryTip": "Hiệp tác đơn giản → công trường thủ công → đại công nghiệp.",
+      "memoryTip": "CMCN I: hiệp tác đơn giản → công trường thủ công → đại công nghiệp.",
       "whyWrong": {
         "A": "Giai đoạn giữa không phải “lao động thủ công / lao động phức tạp” mà là công trường thủ công.",
-        "B": "Dùng “công nghiệp hóa” chung chung, không đúng thuật ngữ giai đoạn thứ ba là đại công nghiệp (cơ khí hóa bằng máy móc).",
-        "D": "Không khớp đúng bản chất khái niệm trong đề so với đáp án C."
+        "B": "Dùng “công nghiệp hóa” chung chung, không đúng thuật ngữ giai đoạn thứ ba là đại công nghiệp (cơ khí).",
+        "C": "“Sản xuất thủ công / sản xuất hiện đại” là thuật ngữ mơ hồ, không phải công thức ba giai đoạn chuẩn của Mác."
       }
     },
     "variantOfStem": "Nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của cách mạng công nghiệp qua mấy gi"
@@ -286,19 +286,19 @@
     "id": 14,
     "question": "Cơ chế kinh tế của độc quyền nhà nước trong chủ nghĩa tư bản gồm:",
     "options": {
-      "A": "Cơ chế thị trưởng, độc quyền tư nhân và sự can thiệp của nhà nước",
+      "A": "Cơ chế thị trường, độc quyền tư nhân và sự can thiệp của nhà nước",
       "B": "Cơ chế thị trường, các nhà tài phiệt và sự điều tiết của nhà nước",
       "C": "Cơ chế thị trường và độc quyền tư nhân"
     },
     "answer": "A",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "A. Cơ chế thị trưởng, độc quyền tư nhân và sự can thiệp của nhà nước",
-      "whyCorrect": "Cơ chế kinh tế CNTB độc quyền nhà nước là sự kết hợp: cơ chế thị trường + độc quyền tư nhân + sự can thiệp/điều tiết của nhà nước. Ba yếu tố này cùng vận hành trong CNTB ĐQNN.",
+      "answerDisplay": "A. Cơ chế thị trường, độc quyền tư nhân và sự can thiệp của nhà nước",
+      "whyCorrect": "Cơ chế kinh tế CNTB độc quyền nhà nước là sự kết hợp: cơ chế thị trường + độc quyền tư nhân + sự can thiệp/điều tiết của nhà nước.",
       "memoryTip": "Chốt khái niệm: Cơ chế thị trưởng, độc quyền tư nhân và sự can thiệp của … — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
       "whyWrong": {
         "B": "Nhấn “nhà tài phiệt” thay cho cặp thị trường–độc quyền tư nhân–nhà nước; không đúng cấu trúc chuẩn.",
-        "C": "Chỉ có thị trường và độc quyền tư nhân, thiếu nhân tố can thiệp của nhà nước — không đủ cơ chế ĐQNN."
+        "C": "Chỉ có thị trường và độc quyền tư nhân, thiếu can thiệp của nhà nước — không đủ cơ chế ĐQNN."
       }
     }
   },
@@ -375,16 +375,16 @@
       "C": "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
       "D": "Từ giữa thế kỷ XIX đến giữa thế kỷ XX"
     },
-    "answer": "A",
+    "answer": "D",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "A. Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
-      "whyCorrect": "CMCN lần thứ hai gắn điện–thép–hóa chất, diễn ra khoảng nửa cuối thế kỷ XIX đến đầu thế kỷ XX (cũng có cách nói “từ giữa XIX đến giữa XX” tùy bộ đề). Cần khớp đúng đáp án của từng câu trong ngân hàng.",
-      "memoryTip": "Chốt khái niệm: Từ giữa thế kỷ XV đến giữa thế kỷ XIX — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
+      "answerDisplay": "D. Từ giữa thế kỷ XIX đến giữa thế kỷ XX",
+      "whyCorrect": "CMCN lần thứ hai gắn điện, thép, hóa chất, dây chuyền; diễn ra khoảng giữa/nửa cuối thế kỷ XIX đến giữa/đầu thế kỷ XX. Trong các lựa chọn, “từ giữa thế kỷ XIX đến giữa thế kỷ XX” là mốc phù hợp nhất.",
+      "memoryTip": "CMCN II ≈ giữa/nửa cuối XIX → đầu/giữa XX (điện–thép–hóa chất).",
       "whyWrong": {
-        "B": "Lệch mốc: hoặc quá sớm (nhầm CMCN I ~ giữa XVIII–XIX), hoặc sai nửa đầu/nửa cuối thế kỷ so với CMCN II.",
-        "C": "Lệch mốc: hoặc quá sớm (nhầm CMCN I ~ giữa XVIII–XIX), hoặc sai nửa đầu/nửa cuối thế kỷ so với CMCN II.",
-        "D": "Không khớp đúng bản chất khái niệm trong đề so với đáp án A."
+        "A": "Giữa XV–giữa XIX quá sớm; không phải thời kỳ CMCN II (cũng không khớp CMCN I ~ giữa XVIII–XIX).",
+        "B": "Giữa XVI–XVII thuộc thời kỳ trước công nghiệp hóa hiện đại.",
+        "C": "Giữa XVIII–giữa XIX gắn CMCN lần thứ nhất (hơi nước, cơ khí), không phải CMCN II."
       }
     },
     "variantOfStem": "Cách mạng công nghiệp lần thứ hai diễn ra trong giai đoạn nào?"
@@ -1422,16 +1422,16 @@
       "C": "Hoạt động nghệ thuật, thể thao.",
       "D": "Hoạt động thực nghiệm khoa học."
     },
-    "answer": "D",
+    "answer": "B",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "D. Hoạt động thực nghiệm khoa học.",
-      "whyCorrect": "Đáp án đúng: D. Hoạt động thực nghiệm khoa học.. Đối chiếu giáo trình MLN theo đúng khái niệm trong đề.",
-      "memoryTip": "Chốt khái niệm: Hoạt động thực nghiệm khoa học. — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
+      "answerDisplay": "B. Hoạt động sản xuất của cải vật chất.",
+      "whyCorrect": "Theo chủ nghĩa duy vật lịch sử, hoạt động cơ bản nhất, nền tảng đời sống xã hội là sản xuất của cải vật chất. Sản xuất quyết định tồn tại xã hội và các lĩnh vực khác.",
+      "memoryTip": "Cơ sở đời sống XH = sản xuất của cải vật chất.",
       "whyWrong": {
-        "A": "Không khớp đúng nội dung đáp án.",
-        "B": "Không khớp đúng nội dung đáp án.",
-        "C": "Không khớp đúng nội dung đáp án."
+        "A": "Chính trị quan trọng nhưng không phải cơ sở đời sống xã hội theo triết học Mác–Lênin.",
+        "C": "Nghệ thuật, thể thao thuộc thượng tầng/đời sống tinh thần, không phải cơ sở.",
+        "D": "Thực nghiệm khoa học quan trọng với LLSX hiện đại nhưng không thay thế sản xuất vật chất làm “cơ sở đời sống xã hội”."
       }
     },
     "variantOfStem": "Lao động sản xuất có đặc trưng cơ bản là:"
@@ -1699,18 +1699,18 @@
     "options": {
       "A": "Hệ thống thể chế chưa đầy đủ",
       "B": "Hệ thống thể chế tạm thời hiệu quả",
-      "C": "Hệ thống thể chế có nhiều yếu tố thị trường và các loại thị trường",
+      "C": "Hệ thống thể chế còn thiếu, chưa đồng bộ/đầy đủ các yếu tố thị trường và các loại thị trường",
       "D": "Thể chế kinh tế thị trường định hướng xã hội chủ nghĩa đồng bộ"
     },
     "answer": "C",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "C. Hệ thống thể chế có nhiều yếu tố thị trường và các loại thị trường",
-      "whyCorrect": "Cần hoàn thiện thể chế KTTT ĐH XHCN vì hệ thống thể chế còn nhiều yếu tố thị trường và các loại thị trường chưa đồng bộ/đầy đủ — tức thể chế chưa hoàn chỉnh so với yêu cầu phát triển.",
+      "answerDisplay": "C. Hệ thống thể chế còn thiếu, chưa đồng bộ/đầy đủ các yếu tố thị trường và các loại thị trường",
+      "whyCorrect": "Cần hoàn thiện thể chế KTTT định hướng XHCN vì hệ thống thể chế còn thiếu, chưa đồng bộ/đầy đủ các yếu tố và loại thị trường so với yêu cầu phát triển.",
       "memoryTip": "Chốt khái niệm: Hệ thống thể chế có nhiều yếu tố thị trường và các loại t… — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
       "whyWrong": {
-        "A": "Đúng một phần nhưng đáp án chốt nhấn thiếu yếu tố và loại thị trường.",
-        "B": "Phải lý do cần hoàn thiện theo đề.",
+        "A": "Đúng một phần (“chưa đầy đủ”) nhưng đáp án C nêu cụ thể hơn về yếu tố và loại thị trường chưa đồng bộ.",
+        "B": "“Tạm thời hiệu quả” không phải lý do chuẩn để phải hoàn thiện thể chế theo giáo trình.",
         "D": "Nếu đã “đồng bộ” thì không còn là lý do phải hoàn thiện."
       }
     }
@@ -1921,12 +1921,12 @@
     "alternatives": [],
     "explanation": {
       "answerDisplay": "A. Số công nhân là 200 người",
-      "whyCorrect": "Tư bản khả biến (v) là phần tư bản dùng mua sức lao động. Chỉ lao động sống mới tạo ra giá trị mới và giá trị thặng dư; còn tư bản bất biến (c — máy móc, nguyên liệu) chỉ chuyển giá trị cũ vào sản phẩm.",
-      "memoryTip": "c = máy móc/nguyên liệu (chuyển giá trị). v = người (tạo giá trị thặng dư).",
+      "whyCorrect": "Ban đầu: 100 công nhân tạo giá trị mới 500.000 → 5.000/người; v = 1.000/người → m = 4.000 → m′ = 400%. “Trình độ bóc lột tăng thêm 100%” hiểu là m′ tăng thêm 100 điểm phần trăm → m′ = 500%. Giá trị mới/người = v + m = 1.000 + 5.000 = 6.000. Số công nhân cần = 1.200.000 / 6.000 = 200.",
+      "memoryTip": "m′: 400%→500%; giá trị mới/CN=6000 → n=200.",
       "whyWrong": {
-        "B": "Không đúng định nghĩa tư bản khả biến (v = mua sức lao động, tạo m).",
-        "C": "Không đúng định nghĩa tư bản khả biến (v = mua sức lao động, tạo m).",
-        "D": "Không đúng định nghĩa tư bản khả biến (v = mua sức lao động, tạo m)."
+        "B": "100 người chỉ giữ nguyên quy mô ban đầu, không đủ tạo giá trị mới 1.200.000 với m′ mới.",
+        "C": "500 người tính sai (thường do dùng sai m′ hoặc chia nhầm).",
+        "D": "50 người làm giảm quy mô, không đạt 1.200.000."
       }
     }
   },
@@ -4092,16 +4092,16 @@
       "C": "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
       "D": "Từ đầu những năm 60 của XX đến cuối thế kỷ XX"
     },
-    "answer": "B",
+    "answer": "D",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "B. Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
-      "whyCorrect": "Đáp án D: D. Từ đầu những năm 60 của XX đến cuối thế kỷ XX. Trong hệ thống kiến thức kinh tế chính trị (và các chủ đề nhà nước–thị trường–CNH liên quan), đây là phương án phản ánh đúng bản chất/định nghĩa/mốc sự kiện mà câu hỏi đang yêu cầu. Các lựa chọn khác lệch khái niệm, lệch giai đoạn, hoặc mô tả hiện tượng phụ không phải trọng tâm đáp án.",
-      "memoryTip": "Chốt khái niệm: Từ giữa thế kỷ XVI đến giữa thế kỷ XVII — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
+      "answerDisplay": "D. Từ đầu những năm 60 của XX đến cuối thế kỷ XX",
+      "whyCorrect": "CMCN lần thứ ba gắn điện tử, tin học, tự động hóa; diễn ra từ đầu những năm 1960 của thế kỷ XX đến cuối thế kỷ XX. Đáp án D khớp mốc này (và khớp câu cùng chủ đề trong bank).",
+      "memoryTip": "CMCN III: đầu thập niên 60 XX → cuối XX.",
       "whyWrong": {
-        "A": "Sai vì không khớp đúng bản chất khái niệm cần chọn. (“Từ giữa thế kỷ XV đến giữa thế kỷ XIX”).",
-        "C": "Sai vì không khớp đúng bản chất khái niệm cần chọn. (“Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX”).",
-        "D": "Không khớp đúng bản chất khái niệm trong đề so với đáp án B."
+        "A": "Giữa XV–giữa XIX không phải CMCN III.",
+        "B": "Giữa XVI–XVII thuộc thời kỳ trước công nghiệp hiện đại.",
+        "C": "Giữa XVIII–giữa XIX gắn CMCN I, không phải CMCN III."
       }
     },
     "variantOfStem": "Cách mạng công nghiệp lần thứ ba diễn ra trong giai đoạn nào?"
@@ -4442,12 +4442,12 @@
     "alternatives": [],
     "explanation": {
       "answerDisplay": "A. Có hệ thống pháp quy kiện toàn và sự quản lý vĩ mô của Nhà nước",
-      "whyCorrect": "Kinh tế thị trường lấy thị trường làm cơ sở phân bổ nguồn lực đòi hỏi chủ thể kinh tế độc lập: tự chủ sản xuất–kinh doanh, tự chịu lỗ lãi. Không có tính độc lập này thì quan hệ hàng hóa–tiền tệ và cạnh tranh không vận hành đúng nghĩa.",
+      "whyCorrect": "Xã hội lấy thị trường làm phương tiện cơ sở phân bổ nguồn lực cần hệ thống pháp quy kiện toàn và sự quản lý vĩ mô của Nhà nước để thị trường vận hành trật tự, khắc phục khuyết tật. Phương án A nêu đủ “vĩ mô”.",
       "memoryTip": "Chốt khái niệm: Có hệ thống pháp quy kiện toàn và sự quản lý vĩ mô của Nh… — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
       "whyWrong": {
-        "B": "Phủ nhận tính độc lập mâu thuẫn với bản chất kinh tế thị trường.",
-        "C": "Diễn đạt lệch; lỗ lãi là kết quả phải tự chịu, không phải “quyền quyết định” tùy tiện.",
-        "D": "Tự chủ không có nghĩa làm bất cứ gì; vẫn bị pháp luật và quy luật thị trường ràng buộc."
+        "B": "Chỉ nói “quản lý của Nhà nước” chung, thiếu nhấn quản lý vĩ mô — kém chặt so với A.",
+        "C": "“Quản lý văn hóa xã hội” không phải đặc điểm cốt lõi của phân bổ nguồn lực qua thị trường.",
+        "D": "Gắn “giáo dục” làm trọng tâm quản lý không đúng đặc điểm kinh tế–thị trường được hỏi."
       }
     },
     "variantOfStem": "Một trong những đặc điểm chủ yếu của bất kỳ xã hội nào lấy thị trường làm phương tiện có tính cơ sở để phân phối các ngu"
@@ -4461,16 +4461,16 @@
       "C": "Tiền ghi nợ",
       "D": "Tiền vàng"
     },
-    "answer": "D",
+    "answer": "A",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "D. Tiền vàng",
-      "whyCorrect": "Theo đáp án của đề, tiền vàng được xác định là phương tiện thanh toán có giá trị/sức mua với tư cách tiền gắn với bản thân kim loại quý. Trong khung đáp án này, D là lựa chọn được chấm đúng.",
-      "memoryTip": "Chốt khái niệm: Tiền vàng — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
+      "answerDisplay": "A. Tiền quy ước",
+      "whyCorrect": "Định nghĩa: phương tiện thanh toán có sức mua với tư cách tiền vượt xa chi phí sản xuất (hoặc giá trị khi dùng vào việc khác) là tiền quy ước (tiền ký hiệu/fiat). Sức mua không dựa trên giá trị nội tại bằng chi phí SX.",
+      "memoryTip": "Sức mua ≫ chi phí SX → tiền quy ước (ký hiệu).",
       "whyWrong": {
-        "A": "Tiền quy ước (fiat) thường được định nghĩa sức mua vượt xa chi phí sản xuất; không phải đáp án của đề.",
-        "B": "Tiền tượng trưng cũng mang tính ký hiệu, không được chọn trong đáp án.",
-        "C": "Tiền ghi nợ là hình thức tín dụng, không phải đáp án được chấm."
+        "B": "Tiền tượng trưng gần nghĩa ký hiệu; trong nhiều giáo trình được gộp/gần với tiền quy ước, nhưng đáp án chuẩn của định nghĩa “sức mua vượt xa chi phí” thường chốt tiền quy ước.",
+        "C": "Tiền ghi nợ là hình thức tín dụng, không phải định nghĩa sức mua ≫ chi phí SX.",
+        "D": "Tiền vàng có giá trị nội tại gắn kim loại; không phải kiểu sức mua “vượt xa chi phí sản xuất” như tiền quy ước."
       }
     }
   },
@@ -4528,11 +4528,11 @@
     "alternatives": [],
     "explanation": {
       "answerDisplay": "B. M=m' x V",
-      "whyCorrect": "Giá trị hàng hóa (ký hiệu W hoặc G) = c + v + m. Trong đó: c = tư bản bất biến (máy móc, nguyên liệu — chuyển giá trị cũ); v = tư bản khả biến (sức lao động); m = giá trị thặng dư do lao động sống tạo ra. Công thức này thể hiện cấu thành lượng giá trị một đơn vị hàng hóa.",
-      "memoryTip": "W (hoặc G) = c + v + m. c chuyển giá trị; v + m = giá trị mới.",
+      "whyCorrect": "Khối lượng giá trị thặng dư M = m′ × V, trong đó m′ là tỷ suất giá trị thặng dư, V là tổng tư bản khả biến. Công thức đo quy mô m do toàn bộ lao động làm thuê tạo ra.",
+      "memoryTip": "M = m′ × V.",
       "whyWrong": {
-        "A": "Không đúng công thức W/G = c + v + m.",
-        "C": "Không đúng công thức W/G = c + v + m."
+        "A": "M = m′ × p′ không phải công thức khối lượng giá trị thặng dư.",
+        "C": "M = m′ × t′ không phải công thức chuẩn khối lượng m."
       }
     }
   },
@@ -4857,7 +4857,7 @@
     "id": 223,
     "question": "Quy luật chung của tích luỹ tư bản là gì? Ý nào sau đây không đúng.",
     "options": {
-      "A": "Giai cấp tư sản ngày càng giàu có, mâu thuẫn trong chủ nghĩa tư bản tăng lên",
+      "A": "Tích lũy tư bản làm xóa bỏ hoàn toàn mâu thuẫn giai cấp và nạn thất nghiệp",
       "B": "Cấu tạo hữu cơ của tư bản tăng lên",
       "C": "Quá trình bần cùng hoá giai cấp vô sản",
       "D": "Khoảng cách giàu nghèo ngày càng tăng, nạn thất nghiệp trở nên phổ biến"
@@ -4865,13 +4865,13 @@
     "answer": "A",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "A. Giai cấp tư sản ngày càng giàu có, mâu thuẫn trong chủ nghĩa tư bản tăng lên",
-      "whyCorrect": "Câu hỏi chọn ý không đúng về quy luật chung của tích lũy tư bản. Nội dung quy luật nhấn mạnh cấu tạo hữu cơ tăng, bần cùng hóa vô sản, khoảng cách giàu nghèo và thất nghiệp; phương án A (theo đáp án đề) không được xem là phát biểu đúng/đủ về quy luật này.",
+      "answerDisplay": "A. Tích lũy tư bản làm xóa bỏ hoàn toàn mâu thuẫn giai cấp và nạn thất nghiệp",
+      "whyCorrect": "Câu chọn ý KHÔNG đúng về quy luật chung của tích lũy. Tích lũy TBCN không xóa mâu thuẫn giai cấp hay thất nghiệp; trái lại cấu tạo hữu cơ tăng, bần cùng hóa, giàu nghèo và thất nghiệp gắn với tích lũy. A là phát biểu sai cần chọn.",
       "memoryTip": "Tích lũy = tư bản hóa giá trị thặng dư.",
       "whyWrong": {
-        "B": "Đúng nội dung: cấu tạo hữu cơ của tư bản có xu hướng tăng trong tích lũy.",
-        "C": "Đúng: quá trình bần cùng hóa giai cấp vô sản là nội dung quy luật chung.",
-        "D": "Đúng: giàu nghèo gia tăng và thất nghiệp phổ biến gắn với tích lũy."
+        "B": "Đúng: cấu tạo hữu cơ của tư bản có xu hướng tăng khi tích lũy.",
+        "C": "Đúng: quy luật chung gắn bần cùng hóa giai cấp vô sản (tương đối/tuyệt đối tùy điều kiện).",
+        "D": "Đúng: khoảng cách giàu nghèo và thất nghiệp gắn xu hướng tích lũy."
       }
     }
   },
@@ -4884,16 +4884,16 @@
       "C": "Tư bản hóa sức lao động",
       "D": "Tư bản hóa giá trị sản xuất"
     },
-    "answer": "A",
+    "answer": "B",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "A. Tư bản hóa tư liệu tiêu dùng",
-      "whyCorrect": "Tích lũy tư bản là biến một phần giá trị thặng dư thành tư bản thêm (tư bản hóa m) để mở rộng sản xuất. Không phải chỉ «cất giữ» hay tiêu dùng hết m.",
-      "memoryTip": "Tích lũy = tư bản hóa giá trị thặng dư (m → tư bản mới).",
+      "answerDisplay": "B. Tư bản hóa giá trị thặng dư",
+      "whyCorrect": "Tích lũy tư bản là biến một phần giá trị thặng dư thành tư bản thêm (tư bản hóa m) để mở rộng sản xuất — không phải tiêu dùng hết m hay “tư bản hóa tư liệu tiêu dùng”.",
+      "memoryTip": "Tích lũy = tư bản hóa giá trị thặng dư (m).",
       "whyWrong": {
-        "B": "“Tư bản hóa giá trị thặng dư” không khớp đúng bản chất khái niệm trong đề.",
-        "C": "“Tư bản hóa sức lao động” không khớp đúng bản chất khái niệm trong đề.",
-        "D": "“Tư bản hóa giá trị sản xuất” không khớp đúng bản chất khái niệm trong đề."
+        "A": "“Tư bản hóa tư liệu tiêu dùng” không đúng định nghĩa tích lũy (tư bản hóa m).",
+        "C": "Không phải tư bản hóa sức lao động.",
+        "D": "“Tư bản hóa giá trị sản xuất” không phải thuật ngữ/định nghĩa chuẩn."
       }
     },
     "variantOfStem": "Quy luật chung của tích luỹ tư bản là gì? Ý nào sau đây không đúng."
@@ -5529,15 +5529,15 @@
       "B": "Tư bản sản xuất.",
       "C": "Tư bản hàng hoá."
     },
-    "answer": "A",
+    "answer": "B",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "A. Tư bản tiền tệ.",
-      "whyCorrect": "Theo đáp án đề, c và v được gắn với quá trình ứng tư bản dưới hình thái tiền để mua TLSX và sức lao động – tức xét trong chu trình bắt đầu từ tư bản tiền tệ. Đáp án được chấm là tư bản tiền tệ.",
-      "memoryTip": "c = máy; v = người (tạo m).",
+      "answerDisplay": "B. Tư bản sản xuất.",
+      "whyCorrect": "c và v là sự phân chia tư bản sản xuất theo vai trò trong tạo ra giá trị thặng dư: c = TLSX (không tạo m mới), v = sức lao động (tạo m). Đó là phạm trù tư bản sản xuất.",
+      "memoryTip": "c, v ⊂ tư bản sản xuất.",
       "whyWrong": {
-        "B": "Về lý luận thuần túy, c và v là kết cấu của tư bản sản xuất; nhưng không phải đáp án được chấm ở câu này.",
-        "C": "Tư bản hàng hóa là H', không phải chỗ phân chia c và v."
+        "A": "Tư bản tiền tệ là hình thái tuần hoàn (T), không phải chỗ phân chia c và v.",
+        "C": "Tư bản hàng hóa là H′; không phân c/v theo vai trò tạo m."
       }
     }
   },
@@ -6121,15 +6121,15 @@
       "B": "Antoine Montchretiên",
       "C": "William Petty"
     },
-    "answer": "A",
+    "answer": "B",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "A. Francois Quesney",
-      "whyCorrect": "Đáp án B: B. Antoine Montchretiên. Trong hệ thống kiến thức kinh tế chính trị (và các chủ đề nhà nước–thị trường–CNH liên quan), đây là phương án phản ánh đúng bản chất/định nghĩa/mốc sự kiện mà câu hỏi đang yêu cầu. Các lựa chọn khác lệch khái niệm, lệch giai đoạn, hoặc mô tả hiện tượng phụ không phải trọng tâm đáp án.",
-      "memoryTip": "Montchrestien: đặt tên «kinh tế chính trị».",
+      "answerDisplay": "B. Antoine Montchretiên",
+      "whyCorrect": "Antoine de Montchrestien (Montchretiên) là người đầu tiên dùng thuật ngữ “kinh tế–chính trị” (1615). François Quesnay thuộc trường phái trọng nông; William Petty là nhà kinh tế cổ điển sớm nhưng không phải người đặt tên thuật ngữ này.",
+      "memoryTip": "KTCT (tên) → Montchrestien 1615.",
       "whyWrong": {
-        "B": "Không khớp đúng bản chất khái niệm trong đề so với đáp án A.",
-        "C": "Sai vì không khớp đúng bản chất khái niệm cần chọn. (“William Petty”)."
+        "A": "Quesnay là đại biểu trọng nông, không phải người đưa ra khái niệm “kinh tế–chính trị”.",
+        "C": "Petty có đóng góp lý luận sớm nhưng không phải người đầu tiên đặt tên thuật ngữ KTCT."
       }
     },
     "variantOfStem": "Thuật ngữ \"kinh tế- chính trị\" được sử dụng lần đầu tiên vào năm nào?"
@@ -6242,17 +6242,19 @@
     "options": {
       "A": "Quy luật đấu tranh giai cấp",
       "B": "Quy luật giá trị",
-      "C": "Quy luật quan hệ sản xuất phù hợp với lực lượng sản xuất"
+      "C": "Quy luật quan hệ sản xuất phù hợp với lực lượng sản xuất",
+      "D": "Quy luật giá trị thặng dư"
     },
-    "answer": "B",
+    "answer": "D",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "B. Quy luật giá trị",
-      "whyCorrect": "Trong các phương án cho sẵn, đáp án được chấm là quy luật giá trị – quy luật kinh tế của sản xuất và lưu thông hàng hóa, nền tảng vận hành kinh tế TBCN với tư cách kinh tế hàng hóa phát triển cao.",
-      "memoryTip": "Chốt khái niệm: Quy luật giá trị — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
+      "answerDisplay": "D. Quy luật giá trị thặng dư",
+      "whyCorrect": "Quy luật kinh tế cơ bản của CNTB là quy luật giá trị thặng dư: mục đích của sản xuất TBCN là tối đa hóa giá trị thặng dư. Quy luật giá trị là quy luật của sản xuất hàng hóa nói chung, không riêng CNTB.",
+      "memoryTip": "Quy luật KT cơ bản CNTB = giá trị thặng dư.",
       "whyWrong": {
-        "A": "Đấu tranh giai cấp là quy luật xã hội–chính trị, không phải quy luật kinh tế cơ bản trong bộ đáp án.",
-        "C": "QHSX phù hợp LLSX là quy luật chung mọi xã hội, không riêng CNTB."
+        "A": "Đấu tranh giai cấp là quy luật xã hội–chính trị, không phải quy luật kinh tế cơ bản của CNTB.",
+        "B": "Quy luật giá trị chi phối SXHH nói chung, không phải quy luật kinh tế cơ bản riêng của CNTB.",
+        "C": "QHSX phù hợp LLSX là quy luật chung mọi xã hội."
       }
     }
   },
@@ -6302,19 +6304,19 @@
     "id": 290,
     "question": "Điều kiện để ra đời và tồn tại của sản xuất hàng hóa:",
     "options": {
-      "A": "Số lượng hàng hoá làm ra trong một đơn vị thời gian tăng lên",
-      "B": "Số lượng lao động hao phí trong thời gian đó không thay đổi",
-      "C": "Giá trị 1 đơn vị hàng hoá giảm đi"
+      "A": "Phân công lao động xã hội",
+      "B": "Sự tách biệt về kinh tế giữa các chủ thể (sở hữu khác nhau về TLSX)",
+      "C": "Cả A và B"
     },
-    "answer": "A",
+    "answer": "C",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "A. Số lượng hàng hoá làm ra trong một đơn vị thời gian tăng lên",
-      "whyCorrect": "Sản xuất hàng hóa ra đời và tồn tại khi có đủ hai điều kiện: (1) phân công lao động xã hội — mỗi người/nhóm làm một loại sản phẩm; (2) sự tách biệt về kinh tế giữa các chủ thể — sản phẩm thuộc chủ khác nhau nên phải trao đổi. Thiếu một trong hai thì chưa thành sản xuất hàng hóa đầy đủ.",
-      "memoryTip": "Muốn có hàng hóa cần 2 điều: ✓ phân công lao động xã hội ✓ chủ sở hữu/tách biệt kinh tế.",
+      "answerDisplay": "C. Cả A và B",
+      "whyCorrect": "Sản xuất hàng hóa ra đời và tồn tại khi có đủ: (1) phân công lao động xã hội; (2) sự tách biệt kinh tế giữa các chủ thể (sản phẩm thuộc chủ khác nhau nên phải trao đổi). Cả hai điều kiện đều cần — đáp án C.",
+      "memoryTip": "SXHH = phân công LĐXH + tách biệt kinh tế.",
       "whyWrong": {
-        "B": "Phân công trong gia đình chưa đủ tầm xã hội của sản xuất hàng hóa.",
-        "C": "Tư hữu là một dạng tách biệt sở hữu, nhưng công thức chuẩn là phân công LĐXH + tách biệt kinh tế."
+        "A": "Chỉ nêu một điều kiện; thiếu tách biệt kinh tế thì chưa đủ.",
+        "B": "Chỉ nêu một điều kiện; thiếu phân công LĐXH thì chưa đủ."
       }
     }
   },
@@ -6505,7 +6507,7 @@
     "id": 299,
     "question": "Chọn phương án đúng về quy luật kinh tế:",
     "options": {
-      "A": "Quy luật kinh tế là quy luật xã hội do con người đặt ra, là quy luật khách quan phát sinh tác dụng qua hoạt động kinh tế của con người.",
+      "A": "Quy luật kinh tế là quy luật xã hội khách quan, phát sinh tác dụng qua hoạt động kinh tế của con người (không do con người đặt ra theo ý muốn chủ quan)",
       "B": "Quy luật kinh tế có tính lịch sử",
       "C": "Các phương án trả lời đều đúng."
     },
@@ -6513,11 +6515,11 @@
     "alternatives": [],
     "explanation": {
       "answerDisplay": "C. Các phương án trả lời đều đúng.",
-      "whyCorrect": "Quy luật kinh tế là quy luật xã hội khách quan, phát sinh và tác động qua hoạt động kinh tế của con người; đồng thời mang tính lịch sử (gắn phương thức sản xuất nhất định). Cả các ý nêu đều đúng → chọn tất cả.",
+      "whyCorrect": "Quy luật kinh tế mang tính khách quan, tác động qua hoạt động kinh tế của con người; đồng thời có tính lịch sử (gắn phương thức sản xuất). A (đã chỉnh) và B đều đúng → chọn C.",
       "memoryTip": "Chốt khái niệm: Các phương án trả lời đều đúng. — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
       "whyWrong": {
-        "A": "Không khớp đúng bản chất khái niệm trong đề so với đáp án C.",
-        "B": "Không khớp đúng bản chất khái niệm trong đề so với đáp án C."
+        "A": "Đúng một phần nội dung khách quan; đề yêu cầu phương án đầy đủ hơn là C (gồm cả tính lịch sử).",
+        "B": "Đúng (tính lịch sử) nhưng chưa đủ so với C."
       }
     }
   },
@@ -6723,21 +6725,21 @@
     "id": 309,
     "question": "Theo kinh tế - chính trị Mác - Lênin, loại tiền nào có chức năng cất trữ?",
     "options": {
-      "A": "Tiên giấy",
-      "B": "Tiền điện tủ",
+      "A": "Tiền giấy",
+      "B": "Tiền điện tử",
       "C": "Tiền vàng",
       "D": "Bitcoin"
     },
-    "answer": "D",
+    "answer": "C",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "D. Bitcoin",
-      "whyCorrect": "Đáp án đúng: D. Bitcoin. Đối chiếu giáo trình MLN theo đúng khái niệm trong đề.",
-      "memoryTip": "Chốt khái niệm: Bitcoin — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
+      "answerDisplay": "C. Tiền vàng",
+      "whyCorrect": "Theo KTCT Mác–Lênin, chức năng cất trữ (tích trữ) đòi hỏi tiền có giá trị thực — tiền vàng (và kim loại quý). Tiền giấy, tiền điện tử, Bitcoin không phải đáp án chuẩn chức năng cất trữ trong giáo trình này.",
+      "memoryTip": "Cất trữ (Mác) → tiền vàng.",
       "whyWrong": {
-        "A": "Không khớp đúng nội dung đáp án.",
-        "B": "Không khớp đúng nội dung đáp án.",
-        "C": "Không khớp đúng nội dung đáp án."
+        "A": "Tiền giấy là ký hiệu giá trị, không phải hình thức điển hình cho chức năng cất trữ theo giáo trình Mác–Lênin.",
+        "B": "Tiền điện tử không thay tiền vàng trong trình bày chức năng cất trữ cổ điển.",
+        "D": "Bitcoin không thuộc hệ thống phạm trù tiền tệ trong giáo trình KTCT Mác–Lênin về chức năng cất trữ."
       }
     },
     "variantOfStem": "Những chức năng nào của tiền tệ đòi hỏi phải có tiền vàng?"
@@ -6919,17 +6921,17 @@
     "options": {
       "A": "K = c + p + m",
       "B": "K = c + v + m",
-      "C": "K = c + t + m"
+      "C": "K = c + v"
     },
-    "answer": "B",
+    "answer": "C",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "B. K = c + v + m",
-      "whyCorrect": "Theo đáp án đề, chi phí sản xuất tư bản được gắn công thức K = c + v + m (trùng công thức giá trị hàng hóa trong cách trình bày của đề). Đây là lựa chọn được chấm đúng trong các phương án cho sẵn.",
-      "memoryTip": "W (hoặc G) = c + v + m.",
+      "answerDisplay": "C. K = c + v",
+      "whyCorrect": "Chi phí sản xuất tư bản chủ nghĩa k (hoặc K) = c + v — chỉ gồm tư bản ứng trước, không gồm m. Công thức c + v + m là giá trị hàng hóa W, không phải chi phí sản xuất tư bản.",
+      "memoryTip": "k = c + v (không có m).",
       "whyWrong": {
-        "A": "C + p + m không phải công thức chuẩn được chọn.",
-        "C": "C + t + m có “t” không thuộc công thức c–v–m."
+        "A": "c + p + m không phải công thức chi phí sản xuất tư bản.",
+        "B": "c + v + m = giá trị hàng hóa W, lớn hơn chi phí tư bản k vì còn chứa m."
       }
     }
   },
@@ -7172,12 +7174,12 @@
     "alternatives": [],
     "explanation": {
       "answerDisplay": "C. M= m'. V",
-      "whyCorrect": "Giá trị hàng hóa (ký hiệu W hoặc G) = c + v + m. Trong đó: c = tư bản bất biến (máy móc, nguyên liệu — chuyển giá trị cũ); v = tư bản khả biến (sức lao động); m = giá trị thặng dư do lao động sống tạo ra. Công thức này thể hiện cấu thành lượng giá trị một đơn vị hàng hóa.",
-      "memoryTip": "W (hoặc G) = c + v + m. c chuyển giá trị; v + m = giá trị mới.",
+      "whyCorrect": "Khối lượng giá trị thặng dư M = m′ · V (V = tư bản khả biến). m′ đo mức bóc lột; V phản ánh quy mô sức lao động được sử dụng.",
+      "memoryTip": "M = m′ · V.",
       "whyWrong": {
-        "A": "Không đúng công thức W/G = c + v + m.",
-        "B": "Không đúng công thức W/G = c + v + m.",
-        "D": "Không đúng công thức W/G = c + v + m."
+        "A": "M = m′ · K không đúng (K/tư bản tổng không thay V trong công thức chuẩn).",
+        "B": "M = m′ · C nhầm tư bản bất biến; c không tạo m.",
+        "D": "M = m′ · V′ không phải công thức chuẩn."
       }
     }
   },
@@ -7892,7 +7894,7 @@
   },
   {
     "id": 364,
-    "question": "Đâu KHÔNG phải là nhân tố ảnh hưởng đến quy mô tích luỹ tư bản?",
+    "question": "Đâu là nguồn (cơ sở) của tích lũy tư bản?",
     "options": {
       "A": "Lượng giá trị thặng dư",
       "B": "Sử dụng hiệu quả máy móc",
@@ -7903,12 +7905,12 @@
     "alternatives": [],
     "explanation": {
       "answerDisplay": "A. Lượng giá trị thặng dư",
-      "whyCorrect": "Câu tìm nhân tố KHÔNG thuộc các nhân tố kinh điển ảnh hưởng quy mô tích lũy (trong danh mục giáo trình: trình độ bóc lột, năng suất LĐXH, hiệu quả sử dụng máy móc/tư bản cố định, chênh lệch tư bản dùng–tiêu dùng…). “Lượng giá trị thặng dư” là nguồn/cơ sở có thể tích lũy, nhưng trong cách hỏi loại trừ của đề được coi là không nằm trong nhóm “nhân tố ảnh hưởng” nêu ở các phương án còn lại.",
-      "memoryTip": "Đề tìm ý SAI/loại trừ → chốt: «Lượng giá trị thặng dư».",
+      "whyCorrect": "Nguồn của tích lũy tư bản là giá trị thặng dư (lượng m có thể tư bản hóa). Các nhân tố như hiệu quả máy móc, NSLĐ xã hội, trình độ khai thác sức lao động ảnh hưởng quy mô tích lũy nhưng nguồn gốc vẫn là m.",
+      "memoryTip": "Nguồn tích lũy = giá trị thặng dư (m).",
       "whyWrong": {
-        "B": "Sử dụng hiệu quả máy móc (tiết kiệm c, tăng hiệu suất) làm tăng khả năng tích lũy — là nhân tố.",
-        "C": "Năng suất lao động xã hội tăng làm rẻ tư liệu sinh hoạt và TLSX, mở rộng quy mô tích lũy — là nhân tố.",
-        "D": "Trình độ khai thác sức lao động (mức bóc lột) tăng m, tăng phần có thể tư bản hóa — là nhân tố."
+        "B": "Sử dụng hiệu quả máy móc là nhân tố ảnh hưởng quy mô, không phải “nguồn” của tích lũy.",
+        "C": "NSLĐ xã hội là nhân tố ảnh hưởng quy mô tích lũy, không phải nguồn gốc m.",
+        "D": "Trình độ khai thác sức lao động ảnh hưởng lượng m tạo ra, nhưng nguồn/cơ sở tích lũy vẫn là bản thân giá trị thặng dư."
       }
     }
   },
@@ -8843,17 +8845,17 @@
     "options": {
       "A": "Là nguồn gốc của giá trị thặng dư",
       "B": "Là điều kiện để tăng năng suất lao động",
-      "C": "Các phương án trà lời đều đúng"
+      "C": "Các phương án trả lời đều đúng"
     },
-    "answer": "C",
+    "answer": "B",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "C. Các phương án trà lời đều đúng",
-      "whyCorrect": "Theo đáp án tổng hợp của đề: tư bản cố định (máy móc, nhà xưởng…) được xem vừa là điều kiện vật chất để tăng NSLĐ, vừa (trong cách diễn đạt của một số tài liệu ôn) gắn với quá trình tạo ra điều kiện thu m — nên chọn “các phương án đều đúng”.",
-      "memoryTip": "Chốt khái niệm: Các phương án trà lời đều đúng — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
+      "answerDisplay": "B. Là điều kiện để tăng năng suất lao động",
+      "whyCorrect": "Tư bản cố định (máy móc, nhà xưởng…) là điều kiện vật chất để tăng năng suất lao động. Nó không phải nguồn gốc của giá trị thặng dư — nguồn m là lao động thặng dư (tư bản khả biến v).",
+      "memoryTip": "TB cố định → điều kiện tăng NSLĐ; không tạo m.",
       "whyWrong": {
-        "A": "Nếu đứng riêng: nguồn gốc m là lao động thặng dư (v), không phải tư bản cố định; nhưng đề gộp vào C.",
-        "B": "Đúng một phần (điều kiện tăng NSLĐ) nhưng đề yêu cầu phương án đầy đủ hơn là C."
+        "A": "Sai: nguồn gốc m là lao động sống / v, không phải tư bản cố định.",
+        "C": "Không “đều đúng” vì A sai."
       }
     }
   },
@@ -8866,16 +8868,16 @@
       "C": "Tư bản chủ nghĩa",
       "D": "Xã hội chủ nghĩa"
     },
-    "answer": "C",
+    "answer": "A",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "C. Tư bản chủ nghĩa",
-      "whyCorrect": "Theo đáp án giáo trình/đề này: kinh tế thị trường với tư cách hình thái phổ biến, thống trị chỉ xuất hiện và hoàn chỉnh trong xã hội tư bản chủ nghĩa (sản xuất hàng hóa TBCN chi phối toàn bộ).",
-      "memoryTip": "Chốt khái niệm: Tư bản chủ nghĩa — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
+      "answerDisplay": "A. Phong kiến",
+      "whyCorrect": "Kinh tế thị trường hình thành (xuất hiện với tư cách hình thái kinh tế hàng hóa–thị trường phát triển) trong xã hội phong kiến khi sản xuất hàng hóa và trao đổi mở rộng (thành thị, thương nhân…). Ở CNTB nó trở thành thống trị; mầm mống trao đổi có từ sớm hơn nhưng “hình thành” theo giáo trình gắn phong kiến (khớp Q12).",
+      "memoryTip": "KTTT hình thành: phong kiến; thống trị: TBCN.",
       "whyWrong": {
-        "A": "Phong kiến có mầm mống hàng hóa–thị trường nhưng chưa thành kinh tế thị trường phổ biến.",
-        "B": "Chiếm hữu nô lệ có trao đổi nhưng chưa phải kinh tế thị trường hoàn chỉnh.",
-        "D": "XHCN (định hướng) sử dụng/phát triển KTTT, không phải nơi “xuất hiện lần đầu”."
+        "B": "Chiếm hữu nô lệ có trao đổi manh nha, thường gắn “mầm mống”, chưa phải giai đoạn hình thành KTTT.",
+        "C": "CNTB là giai đoạn KTTT phát triển cao/thống trị, không phải nơi “xuất hiện lần đầu / hình thành” theo cách hỏi này.",
+        "D": "XHCN không phải xã hội hình thành KTTT lần đầu."
       }
     }
   },
@@ -9450,16 +9452,16 @@
       "C": "Sự xuất hiện của công nghệ thông tin, tự động hóa sản xuất",
       "D": "Lao động chân tay, năng suất tăng"
     },
-    "answer": "A",
+    "answer": "C",
     "alternatives": [],
     "explanation": {
-      "answerDisplay": "A. Sự xuất hiện của máy móc, lao động thủ công",
-      "whyCorrect": "Đáp án đúng: A. Sự xuất hiện của máy móc, lao động thủ công. Đối chiếu giáo trình MLN theo đúng khái niệm trong đề.",
-      "memoryTip": "Chốt khái niệm: Sự xuất hiện của máy móc, lao động thủ công — gắn đúng định nghĩa trong đề, loại phương án lệch thuật ngữ.",
+      "answerDisplay": "C. Sự xuất hiện của công nghệ thông tin, tự động hóa sản xuất",
+      "whyCorrect": "Đặc trưng cơ bản CMCN lần thứ ba là sự xuất hiện của công nghệ thông tin và tự động hóa sản xuất (điện tử, tin học). “Máy móc, lao động thủ công” thuộc logic CMCN I, không phải CMCN III.",
+      "memoryTip": "CMCN III = CNTT + tự động hóa.",
       "whyWrong": {
-        "B": "Không khớp đúng nội dung đáp án.",
-        "C": "Không khớp đúng nội dung đáp án.",
-        "D": "Không khớp đúng nội dung đáp án."
+        "A": "Máy móc thay lao động thủ công là đặc trưng CMCN I, không phải III.",
+        "B": "Có CNTT nhưng “thời gian làm việc tăng lên” không phải đặc trưng chuẩn CMCN III.",
+        "D": "Lao động chân tay không phải đặc trưng CMCN III."
       }
     },
     "variantOfStem": "Đặc trưng cơ bản của cách mạng công nghiệp lần thứ ba là gì?"
@@ -10482,7 +10484,7 @@
   },
   {
     "id": 482,
-    "question": "Khi các xí nghiệp tham gia chỉ mất độc quyền về lưu thông là hình thức độc quyền nào?",
+    "question": "Khi các xí nghiệp tham gia chỉ mất độc lập về lưu thông là hình thức độc quyền nào?",
     "options": {
       "A": "Cartel",
       "B": "Syndicate",
@@ -10493,12 +10495,12 @@
     "alternatives": [],
     "explanation": {
       "answerDisplay": "B. Syndicate",
-      "whyCorrect": "Syndicate (xanh-đi-ca): các xí nghiệp thành viên còn độc lập về sản xuất nhưng mất độc lập về lưu thông (tiêu thụ, mua nguyên liệu tập trung qua ban thương mại chung). Đặc trưng đúng là “chỉ mất độc quyền/độc lập về lưu thông”.",
-      "memoryTip": "Cartel lỏng; Syndicate chặt hơn; Trust chặt nhất.",
+      "whyCorrect": "Syndicate (xanh-đi-ca): thành viên còn độc lập về sản xuất nhưng mất độc lập về lưu thông (tiêu thụ/mua nguyên liệu qua ban thương mại chung).",
+      "memoryTip": "Syndicate = mất độc lập lưu thông.",
       "whyWrong": {
-        "A": "Cartel: thỏa thuận giá, sản lượng, thị trường nhưng vẫn độc lập cả sản xuất lẫn lưu thông ở mức độ lớn hơn syndicate.",
-        "C": "Trust: hợp nhất chặt, mất độc lập cả sản xuất và lưu thông dưới một trung tâm.",
-        "D": "Consortium: liên minh tạm thời cùng thực hiện dự án lớn, không phải hình thức “chỉ mất độc lập lưu thông”."
+        "A": "Cartel: thỏa thuận giá, sản lượng, thị trường; độc lập sản xuất và lưu thông ở mức cao hơn syndicate.",
+        "C": "Trust: hợp nhất chặt, mất độc lập cả sản xuất và lưu thông.",
+        "D": "Consortium: liên minh tạm thời cho dự án lớn, không phải “chỉ mất độc lập lưu thông”."
       }
     }
   },
