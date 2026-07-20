@@ -1,0 +1,1085 @@
+{
+  "1": {
+    "questionVi": "Service và Activity khác nhau như thế nào về chức năng chính?",
+    "optionsVi": {
+      "A": "Service có giao diện người dùng và chạy nền, còn Activity không có UI và chạy foreground.",
+      "B": "Service không có giao diện người dùng và có thể chạy vô thời hạn ở background, còn Activity có UI và chỉ tồn tại khi người dùng tương tác.",
+      "C": "Cả hai đều có UI và có thể chạy ở background.",
+      "D": "Cả hai đều không có UI và chỉ dùng để xử lý dữ liệu."
+    }
+  },
+  "2": {
+    "questionVi": "Activity là gì?",
+    "optionsVi": {
+      "A": "Thành phần chỉ chạy nền, không có giao diện người dùng.",
+      "B": "Thành phần cơ bản của hầu hết ứng dụng, đại diện cho một cửa sổ hoặc màn hình.",
+      "C": "File XML dùng để lưu trữ dữ liệu.",
+      "D": "Thư viện xử lý yêu cầu mạng."
+    }
+  },
+  "3": {
+    "questionVi": "Lớp nào dùng để tạo notification tương thích ngược?",
+    "optionsVi": {
+      "A": "Notification.Builder",
+      "B": "NotificationManagerCompat",
+      "C": "NotificationCompat.Builder",
+      "D": "NotificationCompat.Channel"
+    }
+  },
+  "4": {
+    "questionVi": "Mục đích của file AndroidManifest.xml trong Android là gì?",
+    "optionsVi": {
+      "A": "Lưu thông tin cấu hình dự án",
+      "B": "Khai báo Activity và permission của ứng dụng",
+      "C": "Quản lý dependency của dự án",
+      "D": "Tạo giao diện người dùng của ứng dụng"
+    }
+  },
+  "5": {
+    "questionVi": "Layout manager nào sau đây KHÔNG được Android cung cấp sẵn?",
+    "optionsVi": {
+      "A": "LinearLayoutManager",
+      "B": "GridLayoutManager",
+      "C": "CircularLayoutManager",
+      "D": "StaggeredGridLayoutManager"
+    }
+  },
+  "6": {
+    "questionVi": "Khi tạo chương trình Client, cần gọi những method/constructor nào để thiết lập luồng I/O giao tiếp với Server?",
+    "optionsVi": {
+      "A": "new PrintWriter(socket.getOutputStream())",
+      "B": "new BufferedReader(new InputStreamReader(socket.getInputStream()))",
+      "C": "socket()",
+      "D": "bind()"
+    }
+  },
+  "7": {
+    "questionVi": "Cơ chế chính dùng để truyền dữ liệu giữa các Activity trong Android là gì?",
+    "optionsVi": {
+      "A": "Shared Preferences",
+      "B": "Files",
+      "C": "Intents",
+      "D": "Databases"
+    }
+  },
+  "8": {
+    "questionVi": "Cho: result_columns = {KEY_ID, COL1, COL2}. Đoạn mã nào in đúng giá trị COL1 nếu kết quả không rỗng?",
+    "optionsVi": {
+      "A": "if (cursor.moveToFirst()) { do { System.out.println(cursor.getString(1)); } while (cursor.moveToNext()); }",
+      "B": "do { System.out.println(cursor.getString(0)); } while (cursor.moveToNext());",
+      "C": "if (cursor.moveToFirst()) { do { System.out.println(cursor.getString(0)); } while (cursor.moveToNext()); }",
+      "D": "if (cursor != null) { do { System.out.println(cursor.getString(1)); } while (!cursor.isNull(0)); }"
+    }
+  },
+  "9": {
+    "questionVi": "Kiến trúc MVVM khác MVP chủ yếu ở điểm nào?",
+    "optionsVi": {
+      "A": "MVVM dùng data binding để tự động cập nhật View khi Model/ViewModel thay đổi, khác với MVP.",
+      "B": "MVP dùng data binding còn MVVM thì không.",
+      "C": "MVVM không dùng thành phần Model.",
+      "D": "MVVM đòi hỏi xử lý cập nhật View thủ công nhiều hơn."
+    }
+  },
+  "10": {
+    "questionVi": "Permission nào cho phép ứng dụng Android ghi vào external storage?",
+    "optionsVi": {
+      "A": "android.permission.READ_EXTERNAL_STORAGE",
+      "B": "android.permission.WRITE_EXTERNAL_STORAGE",
+      "C": "android.permission.CAMERA",
+      "D": "android.permission.SEND_SMS"
+    }
+  },
+  "11": {
+    "questionVi": "Hai loại contextual menu chính trong Android là gì?",
+    "optionsVi": {
+      "A": "Options Menu và Popup Menu",
+      "B": "Floating Context Menu và Contextual Action Mode",
+      "C": "Dialog Menu và Bottom Sheet Menu",
+      "D": "Overflow Menu và Context Menu"
+    }
+  },
+  "12": {
+    "questionVi": "Những cách nào có thể dùng để lấy khóa SHA-1 của project Android? (Chọn 2 đáp án đúng)",
+    "optionsVi": {
+      "A": "Chạy signingReport từ Android Studio (Gradle task).",
+      "B": "Đọc SHA-1 từ strings.xml trong project.",
+      "C": "Chạy keytool -list -v -keystore debug.keystore trong Terminal.",
+      "D": "Lấy từ Google Play Console sau khi publish ứng dụng."
+    }
+  },
+  "13": {
+    "questionVi": "Implicit Intent dùng để làm gì?",
+    "optionsVi": {
+      "A": "Chỉ để khởi động Activity trong cùng app",
+      "B": "Điều hướng tới một layout XML cụ thể",
+      "C": "Yêu cầu một hành động mà app khác có thể xử lý",
+      "D": "Định nghĩa action tùy chỉnh bên trong app"
+    }
+  },
+  "14": {
+    "questionVi": "Thuộc tính android:orientation trong LinearLayout có ý nghĩa gì?",
+    "optionsVi": {
+      "A": "Xác định màu của layout.",
+      "B": "Xác định view con được xếp theo chiều ngang hay dọc.",
+      "C": "Thiết lập padding xung quanh layout.",
+      "D": "Điều khiển visibility của layout."
+    }
+  },
+  "15": {
+    "questionVi": "Trong MVP của Android, trách nhiệm của View là gì?",
+    "optionsVi": {
+      "A": "Hiển thị dữ liệu và xử lý tương tác người dùng.",
+      "B": "Lưu dữ liệu vào database.",
+      "C": "Triển khai business logic.",
+      "D": "Gửi notification cho người dùng."
+    }
+  },
+  "16": {
+    "questionVi": "Thành phần Android nào chịu trách nhiệm nhận và phản ứng với broadcast?",
+    "optionsVi": {
+      "A": "Activities",
+      "B": "Services",
+      "C": "BroadcastReceivers",
+      "D": "ContentProviders"
+    }
+  },
+  "17": {
+    "questionVi": "Đặc điểm cơ bản của LinearLayout trong Android là gì?",
+    "optionsVi": {
+      "A": "Xếp view con theo dạng lưới (grid).",
+      "B": "Xếp view con theo một hàng (stack), ngang hoặc dọc.",
+      "C": "Cho phép layout lồng nhau phức tạp.",
+      "D": "Chủ yếu dùng để tạo layout hình tròn."
+    }
+  },
+  "18": {
+    "questionVi": "Method nào phù hợp nhất để lưu dữ liệu nhỏ chưa lưu ngay trước khi người dùng chuyển sang app khác?",
+    "optionsVi": {
+      "A": "onDestroy()",
+      "B": "onResume()",
+      "C": "onPause()",
+      "D": "onCreate()"
+    }
+  },
+  "19": {
+    "questionVi": "Cái nào sau đây KHÔNG phải là tùy chọn lưu trữ dữ liệu trong Android?",
+    "optionsVi": {
+      "A": "SharedPreferences",
+      "B": "Internal Storage",
+      "C": "External Storage",
+      "D": "Activity Stack"
+    }
+  },
+  "20": {
+    "questionVi": "Những phát biểu nào sau đây đúng về Internal Storage của Android?",
+    "optionsVi": {
+      "A": "File trong internal storage mặc định có thể được app khác truy cập.",
+      "B": "File lưu trong internal storage mặc định là private cho app.",
+      "C": "Internal storage dùng file system của thiết bị.",
+      "D": "Internal storage chỉ bị xóa khi factory-reset, không bao giờ khi gỡ app."
+    }
+  },
+  "21": {
+    "questionVi": "Vì sao Retrofit thường được dùng trong phát triển Android?",
+    "optionsVi": {
+      "A": "Retrofit đơn giản hóa network request nhờ API mức cao.",
+      "B": "Retrofit cải thiện thiết kế UI trong app Android.",
+      "C": "Retrofit quản lý thao tác database trong Android.",
+      "D": "Retrofit xử lý lifecycle event trong app Android."
+    }
+  },
+  "22": {
+    "questionVi": "Hậu quả tiềm ẩn khi thực hiện tác vụ chạy lâu trên main thread trong app Android là gì?",
+    "optionsVi": {
+      "A": "Thực hiện tác vụ chạy lâu trên main thread có thể gây lỗi ANR (Application Not Responding).",
+      "B": "Thực hiện tác vụ chạy lâu trên main thread cải thiện hiệu năng app.",
+      "C": "Thực hiện tác vụ chạy lâu trên main thread giảm tiêu thụ pin.",
+      "D": "Thực hiện tác vụ chạy lâu trên main thread làm tăng tốc các task nền."
+    }
+  },
+  "23": {
+    "questionVi": "Trong đa luồng Android, lý do chính để dùng worker thread là gì?",
+    "optionsVi": {
+      "A": "Để thao tác trực tiếp UI nhằm render nhanh hơn.",
+      "B": "Để thực thi thao tác tốn thời gian mà không chặn main thread.",
+      "C": "Để đơn giản hóa cấu trúc của main thread.",
+      "D": "Để thay thế hoàn toàn main thread."
+    }
+  },
+  "24": {
+    "questionVi": "Permission nào cần thêm vào AndroidManifest.xml để Google Maps hoạt động?",
+    "optionsVi": {
+      "A": "android.permission.INTERNET",
+      "B": "android.permission.BLUETOOTH",
+      "C": "android.permission.CAMERA",
+      "D": "android.permission.READ_CONTACTS"
+    }
+  },
+  "25": {
+    "questionVi": "Trong UI Automator, method nào dùng để tìm phần tử UI theo text?",
+    "optionsVi": {
+      "A": "findTextElement()",
+      "B": "onView(withText())",
+      "C": "UiSelector().text()",
+      "D": "selectByText()"
+    }
+  },
+  "26": {
+    "questionVi": "Những phát biểu nào sau đây đúng về Shared Preferences của Android?",
+    "optionsVi": {
+      "A": "Shared Preferences được lưu dưới dạng file JSON.",
+      "B": "getPreferences() dùng để truy cập preference cấp ứng dụng.",
+      "C": "clear() xóa một cặp key-value cụ thể.",
+      "D": "Shared Preferences cho phép Activity và ứng dụng lưu dữ liệu dạng cặp key-value."
+    }
+  },
+  "27": {
+    "questionVi": "Widget nào dùng để nhóm các RadioButton sao cho chỉ chọn được một tùy chọn tại một thời điểm?",
+    "optionsVi": {
+      "A": "RadioGroup",
+      "B": "RadioButton",
+      "C": "CheckBox",
+      "D": "Switch"
+    }
+  },
+  "28": {
+    "questionVi": "SeekBar phục vụ mục đích gì và hỗ trợ use case điển hình nào?",
+    "optionsVi": {
+      "A": "Hiển thị danh sách các mục có thể chọn.",
+      "B": "Cho phép người dùng chọn một giá trị trong khoảng bằng cách kéo thumb.",
+      "C": "Hiển thị một dòng văn bản.",
+      "D": "Hoạt động như công tắc bật/tắt đơn giản."
+    }
+  },
+  "29": {
+    "questionVi": "Mô tả nào đúng nhất về mối quan hệ giữa View và ViewModel trong MVVM?",
+    "optionsVi": {
+      "A": "View observe các thay đổi từ ViewModel.",
+      "B": "ViewModel observe View và cập nhật widget trực tiếp.",
+      "C": "View chỉ cập nhật ViewModel bằng lời gọi method trực tiếp, không observation.",
+      "D": "ViewModel gửi dữ liệu tới Model trực tiếp mà không qua View."
+    }
+  },
+  "30": {
+    "questionVi": "Nếu người dùng từ chối yêu cầu permission và chọn \"Never Ask Again\", điều gì xảy ra và app khôi phục chức năng đó như thế nào?",
+    "optionsVi": {
+      "A": "App sẽ không thể dùng chức năng đó, và người dùng phải gỡ rồi cài lại app.",
+      "B": "Lần sau app request, hệ thống sẽ tự động cấp permission.",
+      "C": "App không còn request permission qua dialog được nữa, và người dùng phải vào Settings của thiết bị để cấp permission thủ công.",
+      "D": "App có thể tiếp tục gửi request permission cho đến khi người dùng đồng ý."
+    }
+  },
+  "31": {
+    "questionVi": "Trong MVVM, thành phần nào chịu trách nhiệm xử lý presentation logic và tương tác với View?",
+    "optionsVi": {
+      "A": "Model",
+      "B": "View",
+      "C": "ViewModel",
+      "D": "Controller"
+    }
+  },
+  "32": {
+    "questionVi": "Mục đích chính của BroadcastReceiver là gì?",
+    "optionsVi": {
+      "A": "Chỉ để gửi custom broadcast.",
+      "B": "Quản lý task nền chạy lâu kèm UI.",
+      "C": "Đăng ký và nhận thông báo về Intent (broadcast).",
+      "D": "Định nghĩa giao diện người dùng của ứng dụng."
+    }
+  },
+  "33": {
+    "questionVi": "Cho RecyclerView.Adapter có private List<String> data. Hãy chọn cách implement getItemCount() đúng.",
+    "optionsVi": {
+      "A": "return 0;",
+      "B": "return 1;",
+      "C": "return data.length;",
+      "D": "return data.size();"
+    }
+  },
+  "34": {
+    "questionVi": "Bạn thiết kế app hiển thị danh sách bài báo bên trái và nội dung bên phải trên tablet, nhưng trên điện thoại nội dung nằm màn hình riêng. Nên dùng thành phần nào?",
+    "optionsVi": {
+      "A": "Chỉ dùng một Activity với bật/tắt visibility layout có điều kiện",
+      "B": "Triển khai toàn bộ UI bằng custom View",
+      "C": "Dùng Fragment để tách list và detail view",
+      "D": "Dựa vào nhiều Service để quản lý dữ liệu UI"
+    }
+  },
+  "35": {
+    "questionVi": "Mục đích của method publishProgress() trong AsyncTask là gì?",
+    "optionsVi": {
+      "A": "Bắt đầu task nền",
+      "B": "Cập nhật tiến độ task nền trên UI thread",
+      "C": "Hủy task nền ngay lập tức",
+      "D": "Xử lý input người dùng"
+    }
+  },
+  "36": {
+    "questionVi": "Loại contextual menu nào phù hợp nhất để cho phép chọn nhiều item trong RecyclerView và thực hiện bulk action?",
+    "optionsVi": {
+      "A": "Floating Context Menu",
+      "B": "Contextual Action Mode",
+      "C": "Options Menu",
+      "D": "Popup Menu"
+    }
+  },
+  "37": {
+    "questionVi": "Trong các method lập trình socket liệt kê, method nào chỉ dùng cho UDP, không dùng cho TCP?",
+    "optionsVi": {
+      "A": "bind()",
+      "B": "connect()",
+      "C": "read() and write()",
+      "D": "sendto() and recvfrom()"
+    }
+  },
+  "38": {
+    "questionVi": "Chức năng chính của ContentResolver trong kiến trúc Content Provider là gì?",
+    "optionsVi": {
+      "A": "Định nghĩa cấu trúc và định dạng dữ liệu.",
+      "B": "Tương tác trực tiếp với lớp lưu trữ bên dưới (ví dụ SQLite).",
+      "C": "Xử lý permission khi truy cập Content Provider.",
+      "D": "Gửi request tới và nhận response từ Content Provider."
+    }
+  },
+  "39": {
+    "questionVi": "Method nào dùng để hủy (cancel) một notification trong Android?",
+    "optionsVi": {
+      "A": "removeNotification()",
+      "B": "cancel()",
+      "C": "dismissNotification()",
+      "D": "clearNotification()"
+    }
+  },
+  "40": {
+    "questionVi": "Bạn có hai BroadcastReceiver đăng ký cùng custom intent. Một cái android:priority=\"100\", cái kia \"50\". Receiver nào được gọi trước?",
+    "optionsVi": {
+      "A": "Cái priority 50 vì priority thấp chạy trước",
+      "B": "Cả hai được gọi đồng thời",
+      "C": "Cái có priority 100",
+      "D": "Thứ tự ngẫu nhiên, không phụ thuộc priority"
+    }
+  },
+  "41": {
+    "questionVi": "Bạn implement BroadcastReceiver phản ứng thay đổi trạng thái Bluetooth. Nên đăng ký receiver ở đâu để vẫn hoạt động khi app không chạy?",
+    "optionsVi": {
+      "A": "Trong method onResume() của Activity",
+      "B": "Đăng ký động trong một Service đang chạy",
+      "C": "Đăng ký tĩnh trong AndroidManifest.xml",
+      "D": "Trong onCreateView() của Fragment"
+    }
+  },
+  "42": {
+    "questionVi": "Điều gì xảy ra trong lifecycle của Activity khi người dùng nhấn nút Home?",
+    "optionsVi": {
+      "A": "onPause() rồi onStop().",
+      "B": "onRestart() rồi onStart().",
+      "C": "onDestroy() ngay lập tức.",
+      "D": "onPause() rồi onDestroy()."
+    }
+  },
+  "43": {
+    "questionVi": "Điều gì xảy ra với lifecycle của Fragment khi Activity host bị pause?",
+    "optionsVi": {
+      "A": "Fragment tiếp tục chạy độc lập.",
+      "B": "Fragment bị destroy.",
+      "C": "Các method lifecycle của Fragment được pause theo tuần tự cùng onPause() của Activity.",
+      "D": "Fragment detach khỏi Activity."
+    }
+  },
+  "44": {
+    "questionVi": "Cái nào sau đây thường được xem là danh mục cảm biến phần cứng (khác với nguồn dữ liệu content/provider như Calendar)?",
+    "optionsVi": {
+      "A": "Sensor",
+      "B": "Calendar",
+      "C": "Camera",
+      "D": "Location"
+    }
+  },
+  "45": {
+    "questionVi": "Thành phần nào chịu trách nhiệm truy cập dữ liệu do Content Provider cung cấp?",
+    "optionsVi": {
+      "A": "ContentResolver",
+      "B": "ContentObserver",
+      "C": "ContentValues",
+      "D": "Content Contract"
+    }
+  },
+  "46": {
+    "questionVi": "Hoạt động nào nên tránh trong onPause() và để sang onStop()?",
+    "optionsVi": {
+      "A": "Lưu dữ liệu quan trọng",
+      "B": "Dừng animation",
+      "C": "Thực hiện thao tác tốn tài nguyên như ghi file lớn hoặc đóng database",
+      "D": "Tạm ẩn view hoặc thay đổi layout"
+    }
+  },
+  "47": {
+    "questionVi": "Làm thế nào để tối ưu network request trong Android?",
+    "optionsVi": {
+      "A": "Triển khai caching để giảm số network request.",
+      "B": "Tăng kích thước payload để mỗi request mang nhiều dữ liệu hơn.",
+      "C": "Chỉ dựa vào tối ưu phía server để có hiệu năng tốt hơn.",
+      "D": "Tắt network request để tiết kiệm pin."
+    }
+  },
+  "48": {
+    "questionVi": "Trong Android, method nào dùng để gửi normal broadcast?",
+    "optionsVi": {
+      "A": "sendOrderedBroadcast()",
+      "B": "sendBroadcast()",
+      "C": "sendLocalBroadcast()",
+      "D": "registerReceiver()"
+    }
+  },
+  "49": {
+    "questionVi": "Mục đích của notification group trong Android là gì?",
+    "optionsVi": {
+      "A": "Notification group cho phép gom các notification liên quan để dễ quản lý và dismiss.",
+      "B": "Notification group thay thế hoàn toàn notification channel.",
+      "C": "Notification group xử lý việc gửi notification tới thiết bị.",
+      "D": "Notification group chỉ định mức importance của notification."
+    }
+  },
+  "50": {
+    "questionVi": "Bạn cần gửi message từ Android client tới server bằng socket. Sau khi có OutputStream, method nào đảm bảo dữ liệu được truyền ngay?",
+    "optionsVi": {
+      "A": "write()",
+      "B": "flush()",
+      "C": "send()",
+      "D": "transmit()"
+    }
+  },
+  "51": {
+    "questionVi": "Điều gì xảy ra với các Fragment trong Activity khi Activity bị pause và destroy?",
+    "optionsVi": {
+      "A": "Khi Activity pause, Fragment vẫn chạy; khi Activity destroy, Fragment cũng bị destroy.",
+      "B": "Trong cả hai trường hợp, Fragment bị pause và được thêm vào back stack.",
+      "C": "Khi Activity pause, mọi Fragment bên trong cũng pause; khi Activity destroy, mọi Fragment cũng bị destroy.",
+      "D": "Khi Activity pause, Fragment được thêm vào back stack; khi Activity destroy, chúng vẫn tồn tại."
+    }
+  },
+  "52": {
+    "questionVi": "List a được định nghĩa a = [1, 2, 3, 4, 5]. Chọn 2 câu lệnh xóa phần tử giữa 3 để a bằng [1, 2, 4, 5]:",
+    "optionsVi": {
+      "A": "a[2:2] = []",
+      "B": "a[2] = []",
+      "C": "del a[2]",
+      "D": "a.remove(3)"
+    }
+  },
+  "53": {
+    "questionVi": "Annotation nào trong Retrofit dùng để gửi object Java làm request body?",
+    "optionsVi": {
+      "A": "@Query",
+      "B": "@Path",
+      "C": "@Field",
+      "D": "@Body"
+    }
+  },
+  "54": {
+    "questionVi": "Shared Preferences lưu dữ liệu như thế nào và ở đâu trong file system Android?",
+    "optionsVi": {
+      "A": "Dạng file nhị phân trong thư mục cache của ứng dụng.",
+      "B": "Dạng file XML trong thư mục shared_prefs của ứng dụng.",
+      "C": "Dạng plain text trên external storage.",
+      "D": "Dạng bảng trong SQLite database."
+    }
+  },
+  "55": {
+    "questionVi": "Loại contextual menu nào phù hợp nhất để cho phép chọn nhiều item trong RecyclerView và thực hiện bulk action?",
+    "optionsVi": {
+      "A": "Floating Context Menu",
+      "B": "Contextual Action Mode",
+      "C": "Options Menu",
+      "D": "Popup Menu"
+    }
+  },
+  "56": {
+    "questionVi": "onPause() được gọi khi nào?",
+    "optionsVi": {
+      "A": "Khi người dùng bắt đầu rời Activity hiện tại",
+      "B": "Khi Activity được tạo lần đầu",
+      "C": "Ngay trước khi Activity chuyển sang trạng thái Stopped",
+      "D": "Khi Activity bị ẩn hoàn toàn khỏi màn hình"
+    }
+  },
+  "57": {
+    "questionVi": "Trong app Android dùng socket, nên thực hiện thao tác mạng an toàn như thế nào để không chặn UI thread?",
+    "optionsVi": {
+      "A": "Chạy code socket trực tiếp trong onCreate() của Activity",
+      "B": "Chạy network/socket trên background thread (Executor, coroutine, Thread, WorkManager…)",
+      "C": "Gọi Thread.sleep() trước khi đọc từ socket",
+      "D": "Tắt StrictMode để cho phép gọi mạng trên main thread"
+    }
+  },
+  "58": {
+    "questionVi": "Khi đánh dấu vị trí người dùng trên Google Map, method nào thêm marker đúng tại latitude và longitude cụ thể?",
+    "optionsVi": {
+      "A": "map.addMarker(new MarkerOptions().position(new LatLng(lat, lng)));",
+      "B": "map.addPolyline(new PolylineOptions().add(new LatLng(lat, lng)));",
+      "C": "map.addCircle(new CircleOptions().center(new LatLng(lat, lng)));",
+      "D": "map.addPolygon(new PolygonOptions().add(new LatLng(lat, lng)));"
+    }
+  },
+  "59": {
+    "questionVi": "Cái nào sau đây là ví dụ về UI test case?",
+    "optionsVi": {
+      "A": "Kiểm tra network request có bị timeout không",
+      "B": "Xác minh click button dẫn tới màn hình mới",
+      "C": "Kiểm tra định dạng dữ liệu JSON",
+      "D": "Tối ưu truy vấn database"
+    }
+  },
+  "60": {
+    "questionVi": "4 thành phần chính của Android là gì?",
+    "optionsVi": {
+      "A": "Activities",
+      "B": "Services",
+      "C": "Broadcast Receivers",
+      "D": "Content Providers",
+      "E": "Tất cả các đáp án còn lại"
+    }
+  },
+  "101": {
+    "questionVi": "Làm thế nào để tạo notification channel trong Android?",
+    "optionsVi": {
+      "A": "Chỉ gọi createNotificationChannel() trên NotificationManager (không tạo object channel).",
+      "B": "Tạo object NotificationChannel rồi truyền vào createNotificationChannel() của NotificationManager.",
+      "C": "Thêm thẻ <notification-channel> trong AndroidManifest.xml.",
+      "D": "Đặt attribute channel trong thẻ <notification> của layout XML."
+    }
+  },
+  "102": {
+    "questionVi": "Tầm quan trọng của notification channel trong Android là gì?",
+    "optionsVi": {
+      "A": "Notification channel cho phép người dùng quản lý và kiểm soát hành vi notification theo từng danh mục.",
+      "B": "Notification channel dùng để định nghĩa layout của notification card.",
+      "C": "Notification channel chỉ xác định priority một lần và người dùng không quản lý được.",
+      "D": "Notification channel xử lý việc gửi notification tới thiết bị."
+    }
+  },
+  "103": {
+    "questionVi": "Content URI là gì và cấu trúc của nó như thế nào?",
+    "optionsVi": {
+      "A": "Đường dẫn tới webpage hoặc file, dạng file:// hoặc http://.",
+      "B": "URI định danh dữ liệu trong ContentProvider, thường dạng content://authority/path[/id].",
+      "C": "Đường dẫn tới database nội bộ, chỉ app gốc truy cập được.",
+      "D": "Đường dẫn tới resource trên server, dùng để gọi API."
+    }
+  },
+  "104": {
+    "questionVi": "Theo sơ đồ \"SOCKET API\", thứ tự các method phía server để thiết lập kết nối và bắt đầu trao đổi dữ liệu là gì?",
+    "optionsVi": {
+      "A": "socket() → connect() → read() → write() → close()",
+      "B": "socket() → bind() → listen() → accept() → write()/read() → close()",
+      "C": "socket() → bind() → listen() → read() → write() → close()",
+      "D": "socket() → accept() → connect() → write() → read() → close()"
+    }
+  },
+  "105": {
+    "questionVi": "Method accept() làm gì trong lập trình socket?",
+    "optionsVi": {
+      "A": "Khởi tạo kết nối tới socket khác.",
+      "B": "Chờ thụ động kết nối từ client.",
+      "C": "Gửi dữ liệu tới socket đã kết nối.",
+      "D": "Đọc dữ liệu từ socket đã kết nối."
+    }
+  },
+  "106": {
+    "questionVi": "Method nào client socket dùng để khởi tạo kết nối tới server tại IP và port cụ thể?",
+    "optionsVi": {
+      "A": "bind()",
+      "B": "listen()",
+      "C": "connect()",
+      "D": "accept()"
+    }
+  },
+  "107": {
+    "questionVi": "Attribute nào đặt padding phía bắt đầu (start) của view, theo pixel (thay thế thân thiện RTL cho paddingLeft)?",
+    "optionsVi": {
+      "A": "android:padding",
+      "B": "android:paddingTop",
+      "C": "android:paddingStart",
+      "D": "android:paddingLeft",
+      "E": "android:paddingRight",
+      "F": "android:paddingEnd"
+    }
+  },
+  "108": {
+    "questionVi": "Cho LinearLayout orientation vertical, thêm android:layout_weight=\"1\" cho TextView ảnh hưởng hiển thị như thế nào?",
+    "optionsVi": {
+      "A": "Nó luôn tự lấp đầy toàn bộ layout theo chiều dọc.",
+      "B": "Nó làm TextView biến mất.",
+      "C": "Nó phân bổ khoảng trống còn lại theo tỉ lệ cho TextView cùng các component khác cũng có weight.",
+      "D": "Nó đổi orientation sang horizontal."
+    }
+  },
+  "109": {
+    "questionVi": "Bạn muốn theo dõi mọi thay đổi text trong EditText theo thời gian thực. Nên dùng listener nào?",
+    "optionsVi": {
+      "A": "setOnEditorActionListener",
+      "B": "addTextChangedListener",
+      "C": "setOnFocusChangeListener",
+      "D": "setOnKeyListener"
+    }
+  },
+  "110": {
+    "questionVi": "Những phát biểu nào đúng khi dùng Chains trong ConstraintLayout? (Chọn 2 đáp án đúng)",
+    "optionsVi": {
+      "A": "Căn một chuỗi View theo một trong hai hướng (horizontal hoặc vertical).",
+      "B": "Phân phối khoảng trống đều (hoặc theo style) giữa các View trong chain.",
+      "C": "Chỉ nối View với parent (chain không liên quan liên kết sibling).",
+      "D": "Tạo linear layout (chain thay thế hoàn toàn LinearLayout như một ViewGroup khác)."
+    }
+  },
+  "111": {
+    "questionVi": "Cho: Button myButton = (Button) findViewById(R.id.my_button); findViewById(R.id.my_button) trả về kiểu dữ liệu gì?",
+    "optionsVi": {
+      "A": "View",
+      "B": "Object",
+      "C": "Button",
+      "D": "R.id"
+    }
+  },
+  "112": {
+    "questionVi": "Bạn cần màn Settings với nhiều tùy chọn để người dùng đổi preference của app. Subclass Fragment nào phù hợp nhất?",
+    "optionsVi": {
+      "A": "DialogFragment",
+      "B": "ListFragment",
+      "C": "PreferenceFragment",
+      "D": "Fragment"
+    }
+  },
+  "113": {
+    "questionVi": "Lệnh SQL nào dùng để lấy dữ liệu từ bảng database?",
+    "optionsVi": {
+      "A": "INSERT",
+      "B": "UPDATE",
+      "C": "DELETE",
+      "D": "SELECT"
+    }
+  },
+  "114": {
+    "questionVi": "Mục đích của SQLite trong Android là gì?",
+    "optionsVi": {
+      "A": "Gửi push notification",
+      "B": "Lưu dữ liệu có cấu trúc cục bộ trong database nhẹ",
+      "C": "Quản lý user preference",
+      "D": "Xây dựng UI layout"
+    }
+  },
+  "115": {
+    "questionVi": "Bước đầu tiên trong quy trình xử lý Android permission là gì?",
+    "optionsVi": {
+      "A": "Request permission.",
+      "B": "Thiết kế UX app để tự giải thích.",
+      "C": "Khai báo permission trong file manifest của app.",
+      "D": "Chờ người dùng yêu cầu một hành động cụ thể."
+    }
+  },
+  "116": {
+    "questionVi": "Trong các nhóm permission liệt kê, cái nào được coi là \"dangerous\" và vì sao?",
+    "optionsVi": {
+      "A": "INTERNET, vì cho phép app truy cập mạng.",
+      "B": "CAMERA, vì cho phép app truy cập camera và có thể chụp ảnh mà người dùng không biết.",
+      "C": "VIBRATE, vì gây rung trên thiết bị.",
+      "D": "SET_WALLPAPER, vì có thể thay đổi giao diện người dùng."
+    }
+  },
+  "117": {
+    "questionVi": "Cách đúng để thêm access permission cho ứng dụng là gì?",
+    "optionsVi": {
+      "A": "Thêm thẻ <uses-permission> là con của thẻ <manifest> trong AndroidManifest.xml.",
+      "B": "Thêm thẻ <add-permission> là con của thẻ <manifest> trong AndroidManifest.xml.",
+      "C": "Chỉ thêm thẻ <permission> bên trong class Activity.",
+      "D": "Thêm thẻ <permission> là con của thẻ <application> trong AndroidManifest.xml."
+    }
+  },
+  "118": {
+    "questionVi": "Phát biểu nào sau đây KHÔNG đúng về IntentService?",
+    "optionsVi": {
+      "A": "Nó là subclass của class Service.",
+      "B": "Nó có thể tương tác trực tiếp với giao diện người dùng.",
+      "C": "Nó xử lý request bằng worker thread.",
+      "D": "Nó tự dừng khi hết việc."
+    }
+  },
+  "119": {
+    "questionVi": "Trong lifecycle của Started Service, onStartCommand() dùng để làm gì và START_STICKY nghĩa là gì?",
+    "optionsVi": {
+      "A": "Method này khởi động service; START_STICKY đảm bảo service không bao giờ bị kill.",
+      "B": "Method này được gọi khi startService() được invoke; START_STICKY nghĩa là nếu bị kill, service có thể được tạo lại với Intent null.",
+      "C": "Method này được gọi khi service được tạo; START_STICKY luôn restart với Intent gốc.",
+      "D": "Method này được gọi khi service được tạo; START_STICKY kill service khi tài nguyên thấp."
+    }
+  },
+  "120": {
+    "questionVi": "Dùng SharedPreferences mang lại lợi ích gì cho phát triển app Android?",
+    "optionsVi": {
+      "A": "SharedPreferences cung cấp cách nhẹ và đơn giản để lưu bền vững lượng nhỏ dữ liệu app.",
+      "B": "SharedPreferences cải thiện thiết kế hình ảnh của Activity Android.",
+      "C": "SharedPreferences quản lý kết nối mạng hiệu quả.",
+      "D": "SharedPreferences xử lý task nền một cách mượt mà."
+    }
+  },
+  "121": {
+    "questionVi": "Thảo luận rủi ro và thách thức tiềm ẩn liên quan tới đa luồng trong phát triển app Android.",
+    "optionsVi": {
+      "A": "Rủi ro tiềm ẩn gồm race condition, deadlock, vấn đề đồng bộ hóa và độ phức tạp debug tăng.",
+      "B": "Đa luồng không có rủi ro miễn là dùng AsyncTask.",
+      "C": "Đa luồng cải thiện hiệu năng mà không có rủi ro nào.",
+      "D": "Đa luồng chỉ ảnh hưởng tiêu thụ pin và không có hậu quả khác."
+    }
+  },
+  "122": {
+    "questionVi": "Một trong những lợi ích của IntentService là gì?",
+    "optionsVi": {
+      "A": "Nó có thể tương tác trực tiếp với UI.",
+      "B": "Nó có thể xử lý nhiều request cùng lúc (song song thực sự).",
+      "C": "Nó dùng thread riêng để xử lý request, không chặn main thread.",
+      "D": "Nó luôn có thể bị interrupt tự do như Thread thường."
+    }
+  },
+  "123": {
+    "questionVi": "Method nào được gọi khi Activity được tạo lần đầu?",
+    "optionsVi": {
+      "A": "onCreate()",
+      "B": "onStart()",
+      "C": "onResume()",
+      "D": "onPause()"
+    }
+  },
+  "124": {
+    "questionVi": "Đoạn code nào sau đây dùng để start một Activity mới từ Activity hiện tại?",
+    "optionsVi": {
+      "A": "startActivity(new Intent(this, NewActivity.class));",
+      "B": "new Intent().start(NewActivity.class);",
+      "C": "Intent.start(this, NewActivity.class);",
+      "D": "NewActivity.start();"
+    }
+  },
+  "125": {
+    "questionVi": "Component support library nào cung cấp phiên bản UI element tương thích ngược?",
+    "optionsVi": {
+      "A": "AppCompat",
+      "B": "Recycler",
+      "C": "Retrofit",
+      "D": "ConstraintLayout"
+    }
+  },
+  "126": {
+    "questionVi": "Method nào dùng để hiển thị thông báo ngắn cho người dùng trong Activity Android?",
+    "optionsVi": {
+      "A": "Toast.makeText(context, \"Message\", Toast.LENGTH_SHORT).show();",
+      "B": "Toast.show(context, \"Message\", Toast.LENGTH_SHORT).makeText();",
+      "C": "Toast.display(context, \"Message\", Toast.LENGTH_SHORT).show();",
+      "D": "Toast.message(context, \"Message\", Toast.LENGTH_SHORT).show();"
+    }
+  },
+  "127": {
+    "questionVi": "Method đầu tiên được gọi trong lifecycle của Activity là gì?",
+    "optionsVi": {
+      "A": "onStart()",
+      "B": "onCreate()",
+      "C": "onResume()",
+      "D": "onActivityCreate()"
+    }
+  },
+  "128": {
+    "questionVi": "Mục đích chính của framework testing Espresso là gì?",
+    "optionsVi": {
+      "A": "Kiểm tra kết nối mạng",
+      "B": "Đo mức sử dụng pin",
+      "C": "Mô phỏng và xác minh tương tác giao diện trong một app",
+      "D": "Build file APK của app"
+    }
+  },
+  "129": {
+    "questionVi": "Class PendingIntent đóng góp gì cho xử lý action của notification?",
+    "optionsVi": {
+      "A": "Nó bọc một Intent để thực thi sau (ví dụ khi người dùng chạm notification).",
+      "B": "Nó tạo notification.",
+      "C": "Nó quản lý notification channel.",
+      "D": "Nó hiển thị notification trên status bar."
+    }
+  },
+  "130": {
+    "questionVi": "Method nào dùng để gửi notification tới hệ thống?",
+    "optionsVi": {
+      "A": "sendNotification()",
+      "B": "notify()",
+      "C": "push()",
+      "D": "trigger()"
+    }
+  },
+  "131": {
+    "questionVi": "Cách tiếp cận nào mang lại sự linh hoạt nhất khi xử lý các loại broadcast khác nhau?",
+    "optionsVi": {
+      "A": "Đăng ký tĩnh trong manifest",
+      "B": "Đăng ký động trong code",
+      "C": "Dùng sendBroadcast()",
+      "D": "Dùng sendStickyBroadcast()"
+    }
+  },
+  "132": {
+    "questionVi": "Method nào bạn dùng để gửi broadcast tới tất cả receiver đã đăng ký?",
+    "optionsVi": {
+      "A": "sendBroadcast()",
+      "B": "sendOrderedBroadcast()",
+      "C": "sendStickyBroadcast()",
+      "D": "sendLocalBroadcast()"
+    }
+  },
+  "133": {
+    "questionVi": "Loại broadcast nào nên dùng để đảm bảo receiver xử lý theo thứ tự cụ thể, cho phép chỉnh sửa trước khi chuyển tiếp?",
+    "optionsVi": {
+      "A": "Normal Broadcast",
+      "B": "Ordered Broadcast",
+      "C": "Local Broadcast",
+      "D": "Sticky Broadcast"
+    }
+  },
+  "134": {
+    "questionVi": "Sự khác biệt giữa system broadcast và custom broadcast trong Android là gì?",
+    "optionsVi": {
+      "A": "System broadcast do hệ thống gửi; custom broadcast do app gửi.",
+      "B": "System broadcast xử lý cập nhật UI; custom broadcast xử lý task nền.",
+      "C": "System broadcast dành cho network; custom broadcast dành cho file.",
+      "D": "System broadcast luôn kém an toàn hơn custom broadcast."
+    }
+  },
+  "135": {
+    "questionVi": "Mục đích chính của file AndroidManifest.xml trong app Android là gì?",
+    "optionsVi": {
+      "A": "Định nghĩa layout giao diện người dùng của app",
+      "B": "Lưu toàn bộ code Java của app",
+      "C": "Khai báo thông tin app thiết yếu cho hệ thống Android",
+      "D": "Hiển thị app trên Play Store"
+    }
+  },
+  "136": {
+    "questionVi": "Thứ tự đúng của 6 giai đoạn trong quy trình phát triển ứng dụng là gì? (1 Build/run, 2 Write code, 3 Define layout, 4 Test/debug, 5 Create project, 6 Publish)",
+    "optionsVi": {
+      "A": "1 → 2 → 3 → 4 → 5 → 6",
+      "B": "3 → 1 → 2 → 4 → 5 → 6",
+      "C": "1 → 2 → 3 → 4 → 5 → 6 (thứ tự sai trùng lặp)",
+      "D": "5 → 3 → 2 → 1 → 4 → 6"
+    }
+  },
+  "137": {
+    "questionVi": "Mục đích chính của Android Software Development Kit (SDK) là gì?",
+    "optionsVi": {
+      "A": "Cung cấp các ứng dụng dựng sẵn cho thiết bị Android",
+      "B": "Cung cấp bộ công cụ và thư viện để phát triển app Android",
+      "C": "Quản lý cập nhật hệ điều hành Android",
+      "D": "Chỉ mô phỏng phần cứng Android cho mục đích testing"
+    }
+  },
+  "138": {
+    "questionVi": "Mục đích của emulator trong phát triển Android là gì?",
+    "optionsVi": {
+      "A": "Chỉ để test app trên thiết bị thật",
+      "B": "Mô phỏng môi trường thiết bị Android để testing và debugging",
+      "C": "Biên dịch code của app",
+      "D": "Deploy app lên Google Play Store"
+    }
+  },
+  "139": {
+    "questionVi": "Attribute nào dùng để chỉ định ID của View trong file layout XML?",
+    "optionsVi": {
+      "A": "id",
+      "B": "android:id",
+      "C": "identifier",
+      "D": "viewId"
+    }
+  },
+  "140": {
+    "questionVi": "Method nào cho phép người dùng quay lại Activity trước?",
+    "optionsVi": {
+      "A": "finish()",
+      "B": "return()",
+      "C": "exitActivity()",
+      "D": "close()"
+    }
+  },
+  "141": {
+    "questionVi": "RecyclerView cung cấp ba layout manager built-in nào?",
+    "optionsVi": {
+      "A": "LinearLayout, FrameLayout, StaggeredGridLayout",
+      "B": "FrameLayout, GridLayout, ConstraintLayout",
+      "C": "LinearLayoutManager, GridLayoutManager, StaggeredGridLayoutManager",
+      "D": "ConstraintLayout, GridLayout, StaggeredGridLayout"
+    }
+  },
+  "142": {
+    "questionVi": "Ba method bắt buộc trong RecyclerView.Adapter là gì?",
+    "optionsVi": {
+      "A": "onCreateViewHolder(), onBindViewHolder(), getItemCount()",
+      "B": "getView(), getItemViewType(), getItemId()",
+      "C": "setAdapter(), setLayoutManager(), addItem()",
+      "D": "onStart(), onResume(), onStop()"
+    }
+  },
+  "143": {
+    "questionVi": "Attribute XML nào đặt hint bên trong EditText?",
+    "optionsVi": {
+      "A": "android:placeholder",
+      "B": "android:caption",
+      "C": "android:hint",
+      "D": "android:label"
+    }
+  },
+  "144": {
+    "questionVi": "Mục đích của method onBindViewHolder() trong Adapter là gì?",
+    "optionsVi": {
+      "A": "Gắn một View mới vào RecyclerView",
+      "B": "Tạo ViewHolder mới cho một item",
+      "C": "Gán (bind) dữ liệu tại vị trí cụ thể vào ViewHolder của nó",
+      "D": "Xóa một item khỏi list"
+    }
+  },
+  "145": {
+    "questionVi": "Khi thêm Google Map, bước nào cần thiết để hiển thị chính xác vị trí hiện tại của người dùng?",
+    "optionsVi": {
+      "A": "Gọi map.setMyLocationEnabled(true) sau khi đã có location permission cần thiết.",
+      "B": "Chỉ dùng LocationManager và đặt marker thủ công (đây là cách duy nhất được phép).",
+      "C": "Sửa theme của app trong styles.xml để gồm map view.",
+      "D": "Không cần làm gì; Google Maps luôn hiện location tự động mà không cần gọi API."
+    }
+  },
+  "146": {
+    "questionVi": "Developer thêm polyline nối ba thành phố. Method nào dùng để vẽ đường này trên map?",
+    "optionsVi": {
+      "A": "map.addLine()",
+      "B": "map.drawPath()",
+      "C": "map.addPolyline()",
+      "D": "map.createRoute()"
+    }
+  },
+  "147": {
+    "questionVi": "Thẻ XML nào thường dùng để thêm Google Map vào layout Android (mẫu SupportMapFragment)?",
+    "optionsVi": {
+      "A": "<MapView>",
+      "B": "<MapFragment>",
+      "C": "<fragment> (với class/android:name = SupportMapFragment)",
+      "D": "<GoogleMap>"
+    }
+  },
+  "148": {
+    "questionVi": "Cách tiếp cận Google Maps API nào liên quan tới việc đặt vị trí camera của map (theo đáp án đề)?",
+    "optionsVi": {
+      "A": "setCameraPosition()",
+      "B": "setCameraTarget()",
+      "C": "CameraUpdateFactory.newCameraPosition(...) / moveCamera/animateCamera",
+      "D": "map.cameraZoom"
+    }
+  },
+  "149": {
+    "questionVi": "Android Architecture Components cung cấp annotation tiện lợi cho DAO. Cái nào sau đây KHÔNG được hỗ trợ?",
+    "optionsVi": {
+      "A": "@Query",
+      "B": "@Insert",
+      "C": "@Update",
+      "D": "@Select"
+    }
+  },
+  "150": {
+    "questionVi": "Method chính dùng để mở hoặc tạo SQLite database trong Android là gì?",
+    "optionsVi": {
+      "A": "SQLiteDatabase.openDatabase()",
+      "B": "SQLiteDatabase.createDatabase()",
+      "C": "SQLiteDatabase.openOrCreateDatabase()",
+      "D": "SQLiteOpenHelper.getDatabase()"
+    }
+  },
+  "151": {
+    "questionVi": "Khi dùng SQLite database, một hàng (row) được nhận diện như thế nào?",
+    "optionsVi": {
+      "A": "Theo tên cột",
+      "B": "Theo ID duy nhất",
+      "C": "Theo tên bảng",
+      "D": "Theo tên database"
+    }
+  },
+  "152": {
+    "questionVi": "Làm thế nào để định nghĩa entity và DAO trong Room database?",
+    "optionsVi": {
+      "A": "Gắn annotation @Entity cho entity và @Dao cho DAO trên class Java/Kotlin",
+      "B": "Tạo file layout XML cho entity và DAO",
+      "C": "Chỉ dùng class định sẵn của Room, không cần annotation",
+      "D": "Entity và DAO không được dùng trong Room database"
+    }
+  },
+  "153": {
+    "questionVi": "Method/thành phần nào nên tránh dùng để xử lý business logic trong kiến trúc MVC?",
+    "optionsVi": {
+      "A": "View",
+      "B": "Model",
+      "C": "Controller",
+      "D": "Presenter"
+    }
+  },
+  "154": {
+    "questionVi": "ViewModel đóng vai trò gì trong kiến trúc MVVM?",
+    "optionsVi": {
+      "A": "ViewModel quản lý UI state và tương tác với Model.",
+      "B": "ViewModel thao tác trực tiếp các phần tử UI của View.",
+      "C": "ViewModel chỉ xử lý sự kiện chạm thô trên widget.",
+      "D": "ViewModel chỉ chịu trách nhiệm lưu trữ dữ liệu bền vững."
+    }
+  },
+  "155": {
+    "questionVi": "Data binding mang lại lợi ích gì cho kiến trúc MVVM?",
+    "optionsVi": {
+      "A": "Giảm boilerplate bằng cách tự động cập nhật view khi dữ liệu thay đổi.",
+      "B": "Mã hóa dữ liệu để tăng bảo mật.",
+      "C": "Tăng dung lượng lưu trữ dữ liệu.",
+      "D": "Đơn giản hóa thao tác mạng."
+    }
+  },
+  "156": {
+    "questionVi": "Vai trò của method onReceive trong BroadcastReceiver là gì?",
+    "optionsVi": {
+      "A": "Khởi tạo BroadcastReceiver",
+      "B": "Xử lý broadcast message",
+      "C": "Gửi broadcast message",
+      "D": "Hủy đăng ký BroadcastReceiver"
+    }
+  },
+  "157": {
+    "questionVi": "Cách đúng để tạo instance của Retrofit API interface là gì?",
+    "optionsVi": {
+      "A": "Retrofit retrofit = new Retrofit(); MyApi api = retrofit.create(MyApi.class);",
+      "B": "Retrofit retrofit = Retrofit.create(); MyApi api = retrofit.newInstance(MyApi.class);",
+      "C": "Retrofit retrofit = new Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(GsonConverterFactory.create()).build(); MyApi api = retrofit.create(MyApi.class);",
+      "D": "Retrofit retrofit = Retrofit.newInstance(BASE_URL); MyApi api = retrofit.createInstance(MyApi.class);"
+    }
+  },
+  "158": {
+    "questionVi": "Method Google Map nào dùng để xóa tất cả marker, polyline, polygon và overlay khỏi map?",
+    "optionsVi": {
+      "A": "clear()",
+      "B": "removeMarker()",
+      "C": "removePolyline()",
+      "D": "resetMap()"
+    }
+  },
+  "159": {
+    "questionVi": "Bạn request tới /group/5/users?sort=name. Nên định nghĩa tham số sort trong method Retrofit bằng query parameter như thế nào?",
+    "optionsVi": {
+      "A": "@Query(\"sort\") String sort",
+      "B": "@Path(\"sort\") String sort",
+      "C": "@Field(\"sort\") String sort",
+      "D": "@Url(\"sort\") String sort"
+    }
+  },
+  "160": {
+    "questionVi": "Làm thế nào để gửi GET request tới URL web service trong Android?",
+    "optionsVi": {
+      "A": "Dùng thư viện như Retrofit hoặc Volley cho HTTP request bất đồng bộ.",
+      "B": "Nhúng URL trực tiếp trong file layout XML.",
+      "C": "Chỉ gọi execute() trên AsyncTask với URL (đủ như giải pháp hoàn chỉnh).",
+      "D": "Dùng HttpURLConnection để mở kết nối và đọc response (cũng hợp lệ, nhưng đáp án đề là A)."
+    }
+  }
+}

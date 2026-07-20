@@ -125,6 +125,70 @@ def parse_file(cfg: dict) -> list[dict]:
     return questions
 
 
+def load_vi_translations() -> dict[str, dict]:
+    """Load optional Vietnamese stems/options from vi_translations.json."""
+    path = ROOT / "vi_translations.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise SystemExit("vi_translations.json must be an object keyed by id")
+    return data
+
+
+def apply_vi_translations(questions: list[dict], vi: dict[str, dict]) -> None:
+    """Attach questionVi / optionsVi at top-level and under explanation."""
+    missing_q: list[str] = []
+    missing_opt: list[str] = []
+    for q in questions:
+        sid = str(q["id"])
+        tr = vi.get(sid) or {}
+        question_vi = (tr.get("questionVi") or "").strip()
+        options_vi = tr.get("optionsVi") or {}
+        if not isinstance(options_vi, dict):
+            options_vi = {}
+
+        # Ensure every option letter has a Vietnamese entry (fallback to English)
+        filled: dict[str, str] = {}
+        for letter, en in (q.get("options") or {}).items():
+            val = options_vi.get(letter)
+            if val is None or not str(val).strip():
+                filled[letter] = en
+                missing_opt.append(f"{sid}:{letter}")
+            else:
+                filled[letter] = str(val)
+
+        if not question_vi:
+            missing_q.append(sid)
+
+        if question_vi:
+            q["questionVi"] = question_vi
+        if filled:
+            q["optionsVi"] = filled
+
+        exp = q.setdefault("explanation", {})
+        if question_vi:
+            exp["questionVi"] = question_vi
+        if filled:
+            exp["optionsVi"] = filled
+
+    print(
+        "vi translations:",
+        "loaded",
+        len(vi),
+        "applied",
+        sum(1 for q in questions if q.get("questionVi")),
+        "missing_questionVi",
+        len(missing_q),
+        "missing_optionsVi",
+        len(missing_opt),
+    )
+    if missing_q:
+        print("  missing questionVi ids:", missing_q[:20], "..." if len(missing_q) > 20 else "")
+    if missing_opt:
+        print("  missing optionsVi:", missing_opt[:20], "..." if len(missing_opt) > 20 else "")
+
+
 def main() -> None:
     all_q: list[dict] = []
     meta_exams: dict = {}
@@ -146,6 +210,12 @@ def main() -> None:
             "title": cfg["title"],
             "count": len(qs),
         }
+
+    vi = load_vi_translations()
+    if vi:
+        apply_vi_translations(all_q, vi)
+    else:
+        print("vi_translations.json not found — skipping Vietnamese fields")
 
     meta = {
         "subject": "PRM392",

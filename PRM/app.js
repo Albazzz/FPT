@@ -818,27 +818,108 @@
     }
   }
 
+  function questionViOf(q) {
+    if (!q) return "";
+    if (q.questionVi) return String(q.questionVi);
+    if (q.explanation && q.explanation.questionVi) return String(q.explanation.questionVi);
+    return "";
+  }
+
+  function optionsViOf(q) {
+    if (!q) return {};
+    if (q.optionsVi && typeof q.optionsVi === "object") return q.optionsVi;
+    if (q.explanation && q.explanation.optionsVi && typeof q.explanation.optionsVi === "object") {
+      return q.explanation.optionsVi;
+    }
+    return {};
+  }
+
+  function hasExplainContent(q) {
+    if (!q) return false;
+    const exp = q.explanation || {};
+    return !!(
+      exp.whyCorrect ||
+      exp.whyWrong ||
+      exp.memoryTip ||
+      exp.answerDisplay ||
+      questionViOf(q) ||
+      Object.keys(optionsViOf(q)).length
+    );
+  }
+
   function showExplainPanel(q) {
     if (!el.explainPanel) return;
-    const exp = q && q.explanation;
-    if (!exp || (!exp.whyCorrect && !exp.whyWrong && !exp.memoryTip && !exp.answerDisplay)) {
+    const exp = (q && q.explanation) || {};
+    if (!hasExplainContent(q)) {
       hideExplainPanel();
       return;
     }
 
     const corrects = correctLetters(q);
-    let html = `<div class="explain-title"><i class="fa-solid fa-lightbulb"></i> Giải thích ôn thi</div>`;
+    const chosen = lastChoice.get(q.id) || selectedLetters || [];
+    const qv = questionViOf(q);
+    const ov = optionsViOf(q);
+    const letters = Object.keys(q.options || {}).sort();
+    const hasTranslation = !!(qv || letters.some((L) => ov[L]));
+
+    let html = `<div class="explain-title"><i class="fa-solid fa-language"></i> Bảng dịch &amp; giải thích</div>`;
 
     const fmt = (s) =>
       escapeHtml(s || "")
         .replace(/\n•/g, "<br>•")
         .replace(/\n/g, "<br>");
 
+    // 🌐 Bảng dịch câu hỏi + lựa chọn (kiểu JIT)
+    if (hasTranslation) {
+      html += `<div class="explain-block explain-trans">
+        <div class="explain-label"><i class="fa-solid fa-book"></i> Câu hỏi</div>
+        <table class="explain-table explain-q">
+          <thead><tr><th style="width:22%">Loại</th><th>Nội dung</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Câu hỏi (EN)</strong></td><td class="en-cell">${escapeHtml(q.question || "")}</td></tr>
+            <tr><td><strong>Dịch (VI)</strong></td><td>${escapeHtml(qv || "—")}</td></tr>
+          </tbody>
+        </table>
+        <div class="explain-sub">Các lựa chọn</div>
+        <table class="explain-table explain-choices">
+          <thead>
+            <tr>
+              <th>Mã</th>
+              <th>Tiếng Anh</th>
+              <th>Bản dịch VI</th>
+              <th>Ghi chú</th>
+            </tr>
+          </thead>
+          <tbody>`;
+      letters.forEach((L) => {
+        const en = (q.options && q.options[L]) || "";
+        const vi = ov[L] || "";
+        const isAns = corrects.includes(L);
+        const isPick = chosen.includes(L);
+        let mark = "";
+        if (isAns) mark = '<span class="tag-ok">ĐÁP ÁN ĐÚNG</span>';
+        else if (isPick) mark = '<span class="tag-bad">Bạn chọn</span>';
+        const rowClass = isAns ? "row-ok" : isPick ? "row-bad" : "";
+        html += `<tr class="${rowClass}">
+          <td><strong>${escapeHtml(L)}</strong></td>
+          <td class="en-cell">${escapeHtml(en)}</td>
+          <td>${escapeHtml(vi || "—")}</td>
+          <td>${mark}</td>
+        </tr>`;
+      });
+      html += `</tbody></table></div>`;
+    }
+
     // ✅ Đáp án
     let ansLabel = exp.answerDisplay || "";
     if (!ansLabel && corrects.length) {
       ansLabel = corrects
-        .map((L) => `${L}${q.options && q.options[L] ? ". " + q.options[L] : ""}`)
+        .map((L) => {
+          const vi = ov[L];
+          const en = q.options && q.options[L];
+          if (vi) return `${L}. ${vi}`;
+          return en ? `${L}. ${en}` : L;
+        })
         .join(" | ");
     }
     if (ansLabel) {
@@ -872,7 +953,7 @@
         <div class="explain-label"><i class="fa-solid fa-circle-xmark"></i> Vì sao các đáp án khác sai</div>
         <ul class="explain-list">`;
       wrongKeys.forEach((L) => {
-        const optText = (q.options && q.options[L]) || "";
+        const optText = ov[L] || (q.options && q.options[L]) || "";
         html += `<li><strong>${escapeHtml(L)}${optText ? ". " + escapeHtml(optText) : ""}</strong>
           <span>${fmt(wrong[L])}</span></li>`;
       });
@@ -885,7 +966,8 @@
         <div class="explain-label"><i class="fa-solid fa-list-check"></i> Các đáp án đúng</div>
         <ul class="explain-list">`;
       corrects.forEach((L) => {
-        html += `<li><strong>${escapeHtml(L)}. ${escapeHtml((q.options && q.options[L]) || "")}</strong></li>`;
+        const text = ov[L] || (q.options && q.options[L]) || "";
+        html += `<li><strong>${escapeHtml(L)}. ${escapeHtml(text)}</strong></li>`;
       });
       html += `</ul></div>`;
     }
@@ -1402,11 +1484,7 @@
     el.btnToggleExplain.addEventListener("click", () => {
       explainVisible = !explainVisible;
       const q = currentQuestion();
-      const has =
-        answered &&
-        q &&
-        q.explanation &&
-        (q.explanation.whyCorrect || q.explanation.whyWrong);
+      const has = answered && hasExplainContent(q);
       updateExplainToggleUI(!!has);
       persistState();
     });
