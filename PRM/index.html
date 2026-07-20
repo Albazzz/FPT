@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quiz MLN – Ôn tập trắc nghiệm</title>
-  <meta name="description" content="Quiz ôn tập trắc nghiệm MLN: ngẫu nhiên, lưu câu sai, tìm kiếm, chọn nhiều đáp án" />
+  <title>Quiz PRM392 – Ôn tập trắc nghiệm</title>
+  <meta name="description" content="Quiz ôn tập PRM392: đề FE / FE-RE / cả 2, ngẫu nhiên, lưu câu sai, tìm kiếm, chọn nhiều đáp án" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css?v=20260716h" />
+  <link rel="stylesheet" href="style.css?v=20260720a" />
 </head>
 <body>
   <div class="app-body">
     <header class="site-nav">
       <div class="nav-inner container">
         <a class="brand" href="../" title="Về Study Hub">
-          <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+          <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-mobile-screen-button"></i></span>
           <div class="brand-text">
-            <strong>Quiz MLN</strong>
-            <span>Ôn tập trắc nghiệm</span>
+            <strong>Quiz PRM392</strong>
+            <span>FE · FE-RE · Android</span>
           </div>
         </a>
-        <nav class="nav-links" id="mln-nav-links" aria-label="Điều hướng">
+        <nav class="nav-links" id="prm-nav-links" aria-label="Điều hướng">
           <a href="../"><i class="fa-solid fa-house"></i> Study Hub</a>
-          <a href="../PRM/">PRM</a>
+          <a href="../MLN/">MLN</a>
           <a href="../jl/">JIT401</a>
           <a href="../wedJfe/">FE Study</a>
         </nav>
@@ -47,7 +47,31 @@
 
     <main class="app-main">
       <div class="container quiz-wrap">
-        <!-- Một hàng nút: tab + tìm + thao tác (cuộn theo trang, không sticky) -->
+        <!-- Chọn đề: FE / FE-RE / cả 2 -->
+        <div class="exam-bar card-soft">
+          <div class="exam-bar-label">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Chọn đề</span>
+          </div>
+          <nav class="tabs tabs-inline exam-tabs" role="tablist" aria-label="Chọn đề thi">
+            <button type="button" class="tab exam-tab" data-exam="fe" role="tab" aria-selected="false">
+              <i class="fa-solid fa-file"></i>
+              <span class="tab-text">Đề FE</span>
+              <span class="tab-count" id="badgeExamFe">60</span>
+            </button>
+            <button type="button" class="tab exam-tab" data-exam="re" role="tab" aria-selected="false">
+              <i class="fa-solid fa-file-circle-plus"></i>
+              <span class="tab-text">Đề FE-RE</span>
+              <span class="tab-count" id="badgeExamRe">60</span>
+            </button>
+            <button type="button" class="tab exam-tab active" data-exam="both" role="tab" aria-selected="true">
+              <i class="fa-solid fa-layer-group"></i>
+              <span class="tab-text">Cả 2 đề</span>
+              <span class="tab-count" id="badgeExamBoth">120</span>
+            </button>
+          </nav>
+        </div>
+
         <div class="control-bar card-soft">
           <nav class="tabs tabs-inline" role="tablist" aria-label="Chế độ làm bài">
             <button type="button" class="tab active" data-tab="all" role="tab" aria-selected="true">
@@ -155,14 +179,15 @@
 
         <p class="hint">
           <i class="fa-solid fa-hand-pointer"></i>
-          Chuyển câu bằng nút <strong>Trước / Sau</strong> (không vuốt).
-          <span class="hint-desk"> · Máy tính: <kbd>A</kbd>–<kbd>E</kbd> chọn · multi: <kbd>Enter</kbd></span>
+          Chọn <strong>Đề FE</strong>, <strong>FE-RE</strong> hoặc <strong>Cả 2</strong> phía trên.
+          Chuyển câu bằng nút <strong>Trước / Sau</strong>.
+          <span class="hint-desk"> · Máy tính: <kbd>A</kbd>–<kbd>F</kbd> chọn · multi: <kbd>Enter</kbd></span>
         </p>
       </div>
     </main>
   </div>
 
-  <!-- Modal xác nhận (thay window.confirm — iPad/Safari hay không hiện popup native) -->
+  <!-- Modal xác nhận -->
   <div id="confirmModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmMsg" hidden>
     <div class="modal-backdrop" data-confirm-cancel tabindex="-1"></div>
     <div class="modal-panel" role="document">
@@ -209,10 +234,9 @@
     </div>
   </div>
 
-  <!-- ?v= cache-bust cho iPad Safari -->
   <script src="cloud/cloud-config.js?v=5"></script>
   <script src="cloud/study-cloud.js?v=6"></script>
-  <script src="questions.js?v=20260716d"></script>
-  <script src="app.js?v=20260717c"></script>
+  <script src="questions.js?v=20260720a"></script>
+  <script src="app.js?v=20260720a"></script>
 </body>
 </html>
