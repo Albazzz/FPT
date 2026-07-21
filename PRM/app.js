@@ -419,7 +419,7 @@
       el.masterModal.setAttribute("hidden", "");
     }
     await StudyCloud.mount({
-      subjectId: "prm",
+      subjectId: "prm393",
       badgeParent: el.statsBar || document.querySelector(".nav-stats"),
       getData: getPrmCloudData,
       setData: applyPrmCloudData,
