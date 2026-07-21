@@ -1,6 +1,6 @@
 /**
- * Quiz PRM393 (Flutter) – static quiz app (clone of MLN)
- * Exam filter: SP26 FE | SP26 B5 FE | both · multi-select · search · wrong bank
+ * Quiz PRM393 (Flutter) – static quiz app (clone of PRM/MLN)
+ * Exam filter: FE sources · multi-select · search · wrong bank
  */
 (function () {
   "use strict";

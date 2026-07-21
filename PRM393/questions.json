@@ -1,4 +1,4 @@
-window.QUIZ_QUESTIONS = [
+[
   {
     "source": "SP26-B5-FE",
     "num": 1,
@@ -3331,4 +3331,4 @@ window.QUIZ_QUESTIONS = [
     },
     "id": 98
   }
-];
+]

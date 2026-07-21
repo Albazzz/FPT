@@ -1,0 +1,341 @@
+Đề Thi FE PRM393 - SP26 - B5 - FE
+Nguồn: https://fuexam.me/threads/prm393-sp26-b5-fe.474/
+Học kỳ: SP2026
+Loại: FE
+Ngày: 9/5/26
+
+1. (Choose 1 answer)
+Which widget pattern protects authenticated routes?
+A. Navigator
+B. Guard
+C. Route protection
+D. Middleware
+
+2. (Choose 1 answer)
+Why are tests important for refactoring?
+A. Reduce UI work
+B. Ensure changes don't break functionality
+C. Improve animations
+D. Change layout
+
+3. (Choose 1 answer)
+What is the role of BuildContext in Flutter?
+A. Store application data
+B. Locate widgets in the widget tree
+C. Manage navigation history
+D. Render UI pixels
+
+4. (Choose 1 answer)
+What role does the Flutter framework play in application development?
+A. It manages database servers
+B. It provides UI components and rendering logic
+C. It replaces the operating system
+D. It runs backend business logic
+
+5. (Choose 1 answer)
+How is the Flutter UI constructed internally?
+A. Using XML layout files
+B. Using HTML and CSS
+C. Using a hierarchical widget tree
+D. Using native UI components only
+
+6. (Choose 1 answer)
+Which widget enables custom scroll effects in Flutter?
+A. ListView
+B. SingleChildScrollView
+C. CustomScrollView
+D. Column
+
+7. (Choose 1 answer)
+Which practice improves rendering performance?
+A. Large widget trees
+B. Splitting widgets
+C. Global state
+D. Frequent rebuilds
+
+8. (Choose 1 answer)
+What does an integration test verify?
+A. Single function
+B. Widget rendering
+C. End-to-end app behavior
+D. Theme consistency
+
+9. (Choose 1 answer)
+Why is separating UI and state logic recommended?
+A. Reduce code size
+B. Improve maintainability
+C. Faster execution
+D. Better animations
+
+10. (Choose 1 answer)
+When does Flutter rebuild the widget tree?
+A. On every frame
+B. When state changes
+C. Only when app restarts
+D. Only during hot restart
+
+11. (Choose 1 answer)
+Which concept does BLoC heavily rely on?
+A. Future
+B. Stream
+C. Animation
+D. Theme
+
+12. (Choose 1 answer)
+Why is version control critical?
+A. UI changes
+B. Track and manage code changes
+C. Improve animations
+D. Store data
+
+13. (Choose 1 answer)
+Why is immutability important in BLoC states?
+A. UI speed
+B. Predictable state changes
+C. Memory usage
+D. Theme control
+
+14. (Choose 1 answer)
+Which Flutter plugin provides SQLite support?
+A. hive
+B. moor
+C. sqflite
+D. shared_preferences
+
+15. (Choose 1 answer)
+What is the main benefit of using Maps in Dart?
+A. Storing values without keys
+B. Storing key-value pairs
+C. Rendering UI components
+D. Managing asynchronous tasks
+
+16. (Choose 1 answer)
+Which tool helps analyze UI performance in Flutter?
+A. Inspector
+B. DevTools
+C. Emulator
+D. Hot reload
+
+17. (Choose 1 answer)
+What does a Dart class primarily represent?
+A. A UI widget only
+B. A blueprint for creating objects
+C. A database table
+D. A network request
+
+18. (Choose 1 answer)
+What is the purpose of SliverAppBar?
+A. Static app bar
+B. Scrollable flexible app bar
+C. Bottom navigation
+D. Drawer control
+
+19. (Choose 1 answer)
+What is Hive mainly used for?
+A. Remote database
+B. Lightweight local NoSQL storage
+C. State management
+D. Routing
+
+20. (Choose 1 answer)
+Which HTTP header is commonly used for authorization?
+A. Content-Type
+B. Accept
+C. Authorization
+D. Cache-Control
+
+21. (Choose 1 answer)
+What does TextEditingController manage?
+A. Theme
+B. Text input value
+C. Validation rules
+D. Layout constraints
+
+22. (Choose 1 answer)
+Why is Dart considered suitable for Flutter development?
+A. It is only used for backend systems
+B. It supports both UI and application logic efficiently
+C. It replaces native languages
+D. It does not support asynchronous programming
+
+23. (Choose 1 answer)
+What does the build() method return in a widget?
+A. A screen
+B. A widget tree describing the UI
+C. Application state
+D. Rendered pixels
+
+24. (Choose 1 answer)
+What represents the output of a BLoC?
+A. Events
+B. Widgets
+C. States
+D. Controllers
+
+25. (Choose 1 answer)
+What is Cubit in BLoC?
+A. UI widget
+B. Simplified BLoC without events
+C. Database layer
+D. Animation helper
+
+26. (Choose 1 answer)
+Which activity is typically performed after creating a new Flutter project?
+A. Deploying to app stores
+B. Running the default app on a device
+C. Configuring authentication
+D. Optimizing database queries
+
+27. (Choose 1 answer)
+Which practice improves deployment security?
+A. Debug builds
+B. Secure signing keys
+C. Hardcoding secrets
+D. Skipping validation
+
+28. (Choose 1 answer)
+Why is Chapter 14 considered optional (Plus)?
+A. Deployment is UI logic
+B. Apps can be tested without publishing
+C. It replaces authentication
+D. It handles APIs
+
+29. (Choose 1 answer)
+What is the primary purpose of ThemeData in Flutter?
+A. Manage navigation
+B. Define application-wide visual styles
+C. Handle state changes
+D. Control animations
+
+30. (Choose 1 answer)
+Which method is used to update the UI when state changes?
+A. build()
+B. setState()
+C. initState()
+D. dispose()
+
+31. (Choose 1 answer)
+Which Flutter package is commonly used for simple key-value storage?
+A. sqflite
+B. shared_preferences
+C. provider
+D. http
+
+32. (Choose 1 answer)
+Why should architecture be decided early?
+A. Avoid UI work
+B. Reduce refactoring cost
+C. Improve animations
+D. Change theme
+
+33. (Choose 1 answer)
+What is pagination used for?
+A. UI animation
+B. Handling large datasets efficiently
+C. Theme management
+D. Authentication
+
+34. (Choose 1 answer)
+Which widget helps avoid rebuilding unchanged UI parts?
+A. Container
+B. RepaintBoundary
+C. Column
+D. FutureBuilder
+
+35. (Choose 1 answer)
+Which widget is used to handle asynchronous API responses in UI?
+A. FutureBuilder
+B. ListView
+C. Provider
+D. Form
+
+36. (Choose 1 answer)
+Which Dart feature helps organize code into reusable libraries?
+A. Widgets
+B. Packages and imports
+C. Hot reload
+D. Layout constraints
+
+37. (Choose 1 answer)
+What is refresh token used for?
+A. UI refresh
+B. Extend session without re-login
+C. Theme update
+D. Navigation reset
+
+38. (Choose 1 answer)
+What is rebuild scope optimization in Flutter?
+A. Reducing widget tree depth
+B. Limiting rebuild to affected widgets
+C. Caching API responses
+D. Using global state
+
+39. (Choose 1 answer)
+Why is BLoC suitable for large teams?
+A. Less code
+B. Standardized architecture
+C. Faster builds
+D. UI reuse
+
+40. (Choose 1 answer)
+Which widget reacts to async data from local storage?
+A. FutureBuilder
+B. StreamBuilder
+C. ListView
+D. Provider
+
+41. (Choose 1 answer)
+What is a token in authentication systems?
+A. UI key
+B. Temporary access credential
+C. Database ID
+D. Theme value
+
+42. (Choose 1 answer)
+What does a Tween define?
+A. Animation speed
+B. Value range for animation
+C. UI layout
+D. State logic
+
+43. (Choose 1 answer)
+Which Dart feature allows defining reusable, type-safe components?
+A. Mixins
+B. Generics
+C. Futures
+D. Streams
+
+44. (Choose 1 answer)
+Which widget animates between two widgets?
+A. AnimatedSwitcher
+B. AnimatedOpacity
+C. AnimatedAlign
+D. AnimatedSize
+
+45. (Choose 1 answer)
+Why should setState() be called sparingly?
+A. It increases app size
+B. It may trigger unnecessary rebuilds
+C. It blocks UI thread
+D. It causes memory leaks
+
+46. (Choose 1 answer)
+What is test isolation?
+A. Running all tests together
+B. Independence of test cases
+C. UI separation
+D. Mocking only
+
+47. (Choose 1 answer)
+What does crossAxisAlignment control?
+A. Vertical alignment in Column
+B. Horizontal alignment in Column
+C. Child order
+D. Widget size
+
+48. (Choose 1 answer)
+Which tool is commonly used for version control?
+A. SVN
+B. Git
+C. FTP
+D. ZIP
