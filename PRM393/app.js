@@ -1,12 +1,18 @@
 /**
- * Quiz PRM393 (Flutter) – static quiz app (clone of PRM/MLN)
- * Exam filter: FE sources · multi-select · search · wrong bank
+ * Quiz PRM393 (Flutter) – static quiz app (clone of MLN)
+ * Exam filter: SP26 FE | SP26 B5 FE | both · multi-select · search · wrong bank
  */
 (function () {
   "use strict";
 
   const STORAGE_KEY = "prm393-quiz-wrong-ids-v1";
   const PROGRESS_KEY = "prm393-quiz-progress-v1";
+  /** Keys cũ (trước khi đổi tên PRM392→PRM393) — đọc để không mất tiến trình */
+  const LEGACY_STORAGE_KEYS = ["prm-quiz-wrong-ids-v1", "prm392-quiz-wrong-ids-v1"];
+  const LEGACY_PROGRESS_KEYS = ["prm-quiz-progress-v1", "prm392-quiz-progress-v1"];
+  /** Cloud subject: giữ "prm" để khớp data đã lưu; vẫn đọc "prm393" nếu có */
+  const CLOUD_SUBJECT = "prm";
+  const CLOUD_SUBJECT_ALT = "prm393";
 
   /** @type {Array<{id:number,num?:number,exam?:string,examLabel?:string,question:string,options:Object.<string,string>,answer:string,answers?:string[]}>} */
   const BANK = Array.isArray(window.QUIZ_QUESTIONS) ? window.QUIZ_QUESTIONS : [];
@@ -138,31 +144,21 @@
   }
 
   // —— Storage: local vs StudyCloud (Neon) ——
-  // Cloud payload includes wrongIds + progress.currentId (vị trí câu đang làm).
-  function loadWrongIdsLocal() {
+  // Cloud payload includes wrongIds + progress.currentId + lastChoices (đã trả lời).
+  function parseWrongIdsRaw(raw) {
+    if (!raw) return null;
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (!raw) return new Set();
       const arr = JSON.parse(raw);
-      if (!Array.isArray(arr)) return new Set();
+      if (!Array.isArray(arr)) return null;
       return new Set(arr.map(Number).filter((n) => Number.isFinite(n)));
     } catch {
-      return new Set();
+      return null;
     }
   }
 
-  function saveWrongIdsLocal() {
+  function parseProgressRaw(raw) {
+    if (!raw) return null;
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify([...wrongIds]));
-    } catch {
-      /* ignore */
-    }
-  }
-
-  function loadProgressLocal() {
-    try {
-      const raw = localStorage.getItem(PROGRESS_KEY);
-      if (!raw) return null;
       const p = JSON.parse(raw);
       if (!p || typeof p !== "object") return null;
       const id = Number(p.currentId);
@@ -176,7 +172,83 @@
         explainVisible:
           typeof p.explainVisible === "boolean" ? p.explainVisible : null,
         examSet: normalizeExamSet(p.examSet),
+        lastChoices:
+          p.lastChoices && typeof p.lastChoices === "object"
+            ? p.lastChoices
+            : null,
       };
+    } catch {
+      return null;
+    }
+  }
+
+  function loadWrongIdsLocal() {
+    try {
+      let set = parseWrongIdsRaw(localStorage.getItem(STORAGE_KEY));
+      if (set && set.size) return set;
+      for (const k of LEGACY_STORAGE_KEYS) {
+        set = parseWrongIdsRaw(localStorage.getItem(k));
+        if (set && set.size) {
+          // migrate → key mới
+          try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify([...set]));
+          } catch {
+            /* ignore */
+          }
+          return set;
+        }
+      }
+      return set || new Set();
+    } catch {
+      return new Set();
+    }
+  }
+
+  function saveWrongIdsLocal() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...wrongIds]));
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function lastChoicesToObject() {
+    const o = {};
+    lastChoice.forEach((letters, id) => {
+      if (Array.isArray(letters) && letters.length) o[String(id)] = letters.slice();
+    });
+    return o;
+  }
+
+  function applyLastChoicesObject(obj) {
+    if (!obj || typeof obj !== "object") return;
+    Object.keys(obj).forEach((k) => {
+      const id = Number(k);
+      const letters = obj[k];
+      if (!Number.isFinite(id) || !Array.isArray(letters) || !letters.length) return;
+      lastChoice.set(
+        id,
+        letters.map(String).map((L) => L.toUpperCase())
+      );
+    });
+  }
+
+  function loadProgressLocal() {
+    try {
+      let p = parseProgressRaw(localStorage.getItem(PROGRESS_KEY));
+      if (p && (p.currentId != null || p.index != null || p.lastChoices)) return p;
+      for (const k of LEGACY_PROGRESS_KEYS) {
+        p = parseProgressRaw(localStorage.getItem(k));
+        if (p && (p.currentId != null || p.index != null || p.lastChoices)) {
+          try {
+            localStorage.setItem(PROGRESS_KEY, localStorage.getItem(k));
+          } catch {
+            /* ignore */
+          }
+          return p;
+        }
+      }
+      return p;
     } catch {
       return null;
     }
@@ -195,6 +267,7 @@
           shuffle: !!(el.shuffleToggle && el.shuffleToggle.checked),
           explainVisible,
           examSet,
+          lastChoices: lastChoicesToObject(),
         })
       );
     } catch {
@@ -270,7 +343,25 @@
       mode: prog.mode === "wrong" || data.mode === "wrong" ? "wrong" : "all",
       shuffle: shufflePref,
       examSet: normalizeExamSet(examFrom),
+      lastChoices:
+        (prog.lastChoices && typeof prog.lastChoices === "object"
+          ? prog.lastChoices
+          : null) ||
+        (data.lastChoices && typeof data.lastChoices === "object"
+          ? data.lastChoices
+          : null),
     };
+  }
+
+  function hasUsefulProgress(data) {
+    if (!data || typeof data !== "object") return false;
+    if (Array.isArray(data.wrongIds) && data.wrongIds.length) return true;
+    const prog = data.progress || {};
+    if (prog.currentId != null || prog.index != null || prog.display != null)
+      return true;
+    if (prog.lastChoices && Object.keys(prog.lastChoices).length) return true;
+    if (data.lastChoices && Object.keys(data.lastChoices).length) return true;
+    return false;
   }
 
   function applyPrmCloudData(data) {
@@ -283,6 +374,9 @@
       if (pendingRestore && pendingRestore.examSet) {
         examSet = normalizeExamSet(pendingRestore.examSet);
       }
+      if (pendingRestore && pendingRestore.lastChoices) {
+        applyLastChoicesObject(pendingRestore.lastChoices);
+      }
     } else {
       const ids = Array.isArray(data.wrongIds) ? data.wrongIds : [];
       wrongIds = new Set(ids.map(Number).filter((n) => Number.isFinite(n)));
@@ -293,6 +387,22 @@
         examSet = normalizeExamSet(data.prefs.examSet);
       }
       setPendingFromPayload(data);
+      if (pendingRestore && pendingRestore.lastChoices) {
+        applyLastChoicesObject(pendingRestore.lastChoices);
+      } else if (data.lastChoices) {
+        applyLastChoicesObject(data.lastChoices);
+      }
+      // Cloud rỗng nhưng local còn tiến trình (đổi subject) → giữ local
+      if (!hasUsefulProgress(data)) {
+        const localProg = loadProgressLocal();
+        const localWrong = loadWrongIdsLocal();
+        if (localWrong.size) wrongIds = localWrong;
+        if (localProg) {
+          pendingRestore = localProg;
+          if (localProg.examSet) examSet = normalizeExamSet(localProg.examSet);
+          if (localProg.lastChoices) applyLastChoicesObject(localProg.lastChoices);
+        }
+      }
     }
     applyExamUi();
     updateBadges();
@@ -300,8 +410,10 @@
 
   function getPrmCloudData() {
     const cur = queue[index];
+    const choices = lastChoicesToObject();
     return {
       wrongIds: [...wrongIds],
+      lastChoices: choices,
       prefs: {
         explainVisible,
         shuffle: !!(el.shuffleToggle && el.shuffleToggle.checked),
@@ -313,6 +425,7 @@
         currentId: cur ? Number(cur.id) : null,
         index: queue.length ? index : 0,
         display: queue.length ? index + 1 : 1,
+        lastChoices: choices,
       },
       stats: { sessionCorrect, sessionAnswered },
       savedAt: Date.now(),
@@ -354,14 +467,19 @@
     if (typeof r.shuffle === "boolean" && el.shuffleToggle) {
       el.shuffleToggle.checked = r.shuffle;
     }
+    if (r.lastChoices) applyLastChoicesObject(r.lastChoices);
     syncReshuffleBtn();
 
     const shuffleOn = !!(el.shuffleToggle && el.shuffleToggle.checked);
     // Ưu tiên: currentId (ổn định); fallback: index 0-based trong hàng đợi
-    const keepId =
+    // Nếu id không còn trong bank (đổi bộ đề), bỏ keepId để dùng index
+    let keepId =
       r.currentId != null && Number.isFinite(Number(r.currentId))
         ? Number(r.currentId)
         : null;
+    if (keepId != null && !BANK.some((q) => Number(q.id) === keepId)) {
+      keepId = null;
+    }
 
     if (keepId != null) {
       rebuildQueue(keepId);
@@ -412,6 +530,12 @@
     if (pendingRestore && typeof pendingRestore.explainVisible === "boolean") {
       explainVisible = pendingRestore.explainVisible;
     }
+    if (pendingRestore && pendingRestore.examSet) {
+      examSet = normalizeExamSet(pendingRestore.examSet);
+    }
+    if (pendingRestore && pendingRestore.lastChoices) {
+      applyLastChoicesObject(pendingRestore.lastChoices);
+    }
     if (!window.StudyCloud) return;
     // hide old modal if present
     if (el.masterModal) {
@@ -419,7 +543,8 @@
       el.masterModal.setAttribute("hidden", "");
     }
     await StudyCloud.mount({
-      subjectId: "prm",
+      // "prm" = subject đã dùng trước khi rename; app vẫn đọc legacy local keys
+      subjectId: CLOUD_SUBJECT,
       badgeParent: el.statsBar || document.querySelector(".nav-stats"),
       getData: getPrmCloudData,
       setData: applyPrmCloudData,
@@ -526,7 +651,7 @@
     }
     if (index >= queue.length) index = Math.max(0, queue.length - 1);
 
-    lastChoice = new Map();
+    // Không xóa lastChoice — cần giữ đáp án đã làm để mở lại vẫn hiện đúng/sai
     answered = false;
     selectedLetters = [];
     dbg("rebuildQueue:beforeRender", {
@@ -1098,6 +1223,8 @@
     showExplainPanel(q);
     showAltPanel(q);
     updateBadges();
+    // Lưu ngay vị trí + đáp án đã chọn (trước đây chỉ lưu khi Next → mất tiến trình)
+    persistState({ immediate: true });
   }
 
   function submitMulti() {
@@ -1279,6 +1406,7 @@
     answered = false;
     selectedLetters = [];
     render();
+    persistState({ immediate: true });
   });
 
   /** @type {HTMLElement | null} */
