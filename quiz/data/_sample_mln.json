@@ -1,0 +1,40 @@
+{
+  "id": 1,
+  "task": "all",
+  "taskLabel": "MLN",
+  "num": 1,
+  "question": "Biểu hiện mới của sự phân chia thị trường giữa các liên minh độc quyền đó là",
+  "options": {
+    "A": "Hình thành các tổ chức đa quốc gia",
+    "B": "Hình thành các tổ chức độc quyền trong nhà nước tư bản",
+    "C": "Hình thành xu hướng khu vực hóa",
+    "D": "Hình thành xu hướng toàn cầu hóa"
+  },
+  "answer": "D",
+  "alternatives": [],
+  "explanation": {
+    "questionVi": "Biểu hiện mới của sự phân chia thị trường giữa các liên minh độc quyền đó là",
+    "optionsVi": {
+      "A": "Hình thành các tổ chức đa quốc gia",
+      "B": "Hình thành các tổ chức độc quyền trong nhà nước tư bản",
+      "C": "Hình thành xu hướng khu vực hóa",
+      "D": "Hình thành xu hướng toàn cầu hóa"
+    },
+    "answerDisplay": "D. Hình thành xu hướng toàn cầu hóa",
+    "concept": "• Xu hướng gắn kết kinh tế – chính trị – văn hóa vượt biên giới quốc gia.",
+    "whyCorrect": "• Ở CNTB độc quyền, phân chia thị trường vượt biên giới quốc gia. Biểu hiện mới nổi bật là xu hướng toàn cầu hóa (gắn xuất khẩu tư bản, TNC), không chỉ phân chia trong một nước.\n• Ở CNTB độc quyền, phân chia thị trường mang tính toàn cầu (TNC, xuất khẩu tư bản).",
+    "whyWrong": {
+      "A": "• Là gì? Doanh nghiệp hoạt động sản xuất – kinh doanh trên nhiều nước.\n• Vai trò? Là chủ thể quan trọng của xuất khẩu tư bản và toàn cầu hóa.\n• Vì sao sai? Là chủ thể quan trọng của xuất khẩu tư bản và toàn cầu hóa — không khớp trọng tâm đề bằng đáp án đúng (Xu hướng gắn kết kinh tế – chính trị – văn hóa vượt biên giới quốc gia).",
+      "B": "• Là gì? Tình trạng một hoặc vài chủ thể khống chế thị trường, hạn chế cạnh tranh tự do.\n• Vai trò? Giai đoạn CNTB độc quyền: tập trung tư bản và liên minh độc quyền.\n• Vì sao sai? Giai đoạn CNTB độc quyền: tập trung tư bản và liên minh độc quyền — không khớp trọng tâm đề bằng đáp án đúng (Xu hướng gắn kết kinh tế – chính trị – văn hóa vượt biên giới quốc gia).",
+      "C": "• Là gì? Liên kết kinh tế trong một khu vực địa lý (khối, hiệp định khu vực).\n• Vai trò? Phạm vi hẹp hơn toàn cầu hóa; không phải biểu hiện ‘mới’ nổi bật nhất của chia thị trường độc quyền.\n• Vì sao sai? Phạm vi hẹp hơn toàn cầu hóa; không phải biểu hiện ‘mới’ nổi bật nhất của chia thị trường độc quyền — không khớp trọng tâm đề bằng đáp án đúng (Xu hướng gắn kết kinh tế – chính trị – văn hóa vượt biên giới quốc gia)."
+    },
+    "memoryTip": "Độc quyền phân thị trường → toàn cầu hóa (không chỉ trong nước).",
+    "whatIs": {
+      "A": "Doanh nghiệp hoạt động sản xuất – kinh doanh trên nhiều nước.",
+      "B": "Tình trạng một hoặc vài chủ thể khống chế thị trường, hạn chế cạnh tranh tự do.",
+      "C": "Liên kết kinh tế trong một khu vực địa lý (khối, hiệp định khu vực).",
+      "D": "Xu hướng gắn kết kinh tế – chính trị – văn hóa vượt biên giới quốc gia."
+    },
+    "intent": "• Ở CNTB độc quyền, phân chia thị trường mang tính siêu quốc gia (xuất khẩu tư bản, TNC).\n• Cần phân biệt toàn cầu hóa với khu vực hóa hay tổ chức trong một nước."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 1,
+  "task": "quiz",
+  "taskLabel": "Quiz",
+  "num": 1,
+  "chapterHint": 1,
+  "question": "アナログ信号として送受信される形式はどれか。",
+  "options": {
+    "A": "0と1のデジタルデータ",
+    "B": "パケットデータ",
+    "C": "電流(mA)または電圧(mV)信号",
+    "D": "バイナリコード"
+  },
+  "answer": "C",
+  "alternatives": [],
+  "explanation": {
+    "questionVi": "Hình thức nào được gửi/nhận dưới dạng tín hiệu analog?",
+    "optionsVi": {
+      "A": "dữ liệu digital 0 và 1",
+      "B": "dữ liệu dạng gói (packet)",
+      "C": "tín hiệu dòng điện (mA) hoặc điện áp (mV)",
+      "D": "mã nhị phân"
+    },
+    "answerDisplay": "C. tín hiệu dòng điện (mA) hoặc điện áp (mV)",
+    "concept": "• Tín hiệu liên tục biểu diễn bằng sự thay đổi dòng điện (mA) hoặc điện áp (mV).",
+    "whyCorrect": "• Dùng để truyền thông tin dạng analog trên đường dây/điện tử.\n• Khớp đúng bản chất kiến thức mà câu hỏi đang kiểm tra.",
+    "whyWrong": {
+      "A": "• Là gì? Dữ liệu số được biểu diễn bằng hai giá trị rời rạc 0 và 1.\n• Dùng để làm gì? Là nền tảng lưu trữ và xử lý trong hệ thống digital.\n• Vì sao sai? Câu hỏi hỏi dạng tín hiệu analog liên tục; phương án này thuộc dữ liệu/mã số hoặc cách đóng gói, không phải sóng analog.",
+      "B": "• Là gì? Dữ liệu được chia thành các gói (packet) để truyền trên mạng.\n• Dùng để làm gì? Giúp định tuyến, kiểm soát lỗi và truyền hiệu quả.\n• Vì sao sai? Câu hỏi hỏi dạng tín hiệu analog liên tục; phương án này thuộc dữ liệu/mã số hoặc cách đóng gói, không phải sóng analog.",
+      "D": "• Là gì? Mã nhị phân dùng ký hiệu 0 và 1 để biểu diễn dữ liệu.\n• Dùng để làm gì? Mã hóa thông tin trong máy tính và truyền số.\n• Vì sao sai? Câu hỏi hỏi dạng tín hiệu analog liên tục; phương án này thuộc dữ liệu/mã số hoặc cách đóng gói, không phải sóng analog."
+    },
+    "whatIs": {
+      "A": "Dữ liệu số được biểu diễn bằng hai giá trị rời rạc 0 và 1.",
+      "B": "Dữ liệu được chia thành các gói (packet) để truyền trên mạng.",
+      "C": "Tín hiệu liên tục biểu diễn bằng sự thay đổi dòng điện (mA) hoặc điện áp (mV).",
+      "D": "Mã nhị phân dùng ký hiệu 0 và 1 để biểu diễn dữ liệu."
+    },
+    "intent": "• Analog dùng tín hiệu liên tục (thường điện áp/dòng điện).\n• Digital biểu diễn bằng mức rời rạc 0/1."
+  },
+  "meta": {
+    "originEx": "アナログは電流・電圧の連続的な信号で送受信されます。"
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "name": "mln-sync-worker",
-  "private": true,
-  "version": "1.0.0",
-  "main": "src/index.js",
-  "dependencies": {
-    "@neondatabase/serverless": "^0.10.4"
-  }
-}

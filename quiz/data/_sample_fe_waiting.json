@@ -1,0 +1,43 @@
+{
+  "id": 1,
+  "task": "test",
+  "taskLabel": "Test",
+  "num": 1,
+  "question": "A process is waiting for data from a disk drive before continuing execution. Which state is the process most likely in?",
+  "options": {
+    "A": "Waiting",
+    "B": "Suspended",
+    "C": "Terminated",
+    "D": "New"
+  },
+  "answer": "A",
+  "alternatives": [],
+  "explanation": {
+    "questionVi": "Tiến trình đang chờ dữ liệu từ đĩa — thường ở trạng thái nào?",
+    "optionsVi": {
+      "A": "trạng thái chờ (I/O/sự kiện)",
+      "B": "tạm dừng",
+      "C": "đã kết thúc",
+      "D": "New"
+    },
+    "answerDisplay": "A. Waiting",
+    "concept": "• Tiến trình đang chờ một sự kiện (I/O, khóa, dữ liệu) hoàn thành.",
+    "whyCorrect": "• Nhường CPU cho tiến trình khác trong lúc chờ.\n• Khớp đúng bản chất kiến thức mà câu hỏi đang kiểm tra.",
+    "whyWrong": {
+      "B": "• Là gì? Tiến trình bị tạm dừng (thường swap/đưa ra bộ nhớ phụ), không được lập lịch ngay.\n• Dùng để làm gì? Giải phóng RAM hoặc kiểm soát tải hệ thống.\n• Vì sao sai? Suspended thường là bị tạm dừng/swap; đề chỉ nói đang chờ dữ liệu đĩa (Waiting), không nói bị suspend.",
+      "C": "• Là gì? Tiến trình đã chạy xong hoặc bị kết thúc; OS không còn lập lịch nó.\n• Dùng để làm gì? Giải phóng tài nguyên sau khi kết thúc.\n• Vì sao sai? Terminated là đã xong/bị hủy; tiến trình trong đề vẫn còn chờ dữ liệu nên chưa kết thúc.",
+      "D": "• Là gì? Tiến trình vừa được tạo, chưa vào hàng đợi Ready.\n• Dùng để làm gì? Bước khởi tạo trước khi OS cho phép chạy.\n• Vì sao sai? New là tiến trình mới tạo, chưa sẵn sàng; đề tả tiến trình đã chạy và đang chờ I/O."
+    },
+    "whatIs": {
+      "A": "Tiến trình đang chờ một sự kiện (I/O, khóa, dữ liệu) hoàn thành.",
+      "B": "Tiến trình bị tạm dừng (thường swap/đưa ra bộ nhớ phụ), không được lập lịch ngay.",
+      "C": "Tiến trình đã chạy xong hoặc bị kết thúc; OS không còn lập lịch nó.",
+      "D": "Tiến trình vừa được tạo, chưa vào hàng đợi Ready."
+    },
+    "intent": "• OS quản lý tiến trình qua các trạng thái (New/Ready/Running/Waiting/Terminated…).\n• Cần khớp trạng thái với hành vi trong câu hỏi (chờ I/O ≠ chờ CPU)."
+  },
+  "meta": {
+    "rebuilt": true,
+    "originId": "t001"
+  }
+}

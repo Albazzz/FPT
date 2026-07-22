@@ -1,0 +1,83 @@
+/**
+ * Unified Quiz Hub — subject registry
+ * task = “bài/đề” (generalized from PRM exam filter)
+ */
+window.QUIZ_SUBJECTS = {
+  prm: {
+    id: "prm",
+    title: "PRM393",
+    subtitle: "Flutter · FE SP26",
+    brandIcon: "fa-mobile-screen-button",
+    storageWrong: "uq-prm-wrong-v1",
+    storageProgress: "uq-prm-progress-v1",
+    cloudSubject: "prm",
+    multiSelect: true,
+    showTranslationAlways: true,
+    tasks: [
+      { id: "fe", label: "SP26 FE", icon: "fa-file" },
+      { id: "re", label: "SP26 B5 FE", icon: "fa-file-circle-plus" },
+      { id: "all", label: "Tất cả", icon: "fa-layer-group" },
+    ],
+    defaultTask: "all",
+    dataKey: "prm",
+    hint: "Chọn đề SP26 FE / B5 FE hoặc cả hai. Giải thích song ngữ EN–VI theo cấu trúc chuẩn.",
+  },
+  mln: {
+    id: "mln",
+    title: "MLN",
+    subtitle: "Triết · Kinh tế chính trị",
+    brandIcon: "fa-book-open",
+    storageWrong: "uq-mln-wrong-v1",
+    storageProgress: "uq-mln-progress-v1",
+    cloudSubject: "mln",
+    multiSelect: true,
+    showTranslationAlways: false,
+    hideTranslation: true,
+    tasks: [{ id: "all", label: "Toàn bộ", icon: "fa-layer-group" }],
+    defaultTask: "all",
+    dataKey: "mln",
+    hint: "Quiz MLN — định nghĩa + đặc trưng, multi-select, ngân hàng câu sai (không bảng dịch).",
+  },
+  jit: {
+    id: "jit",
+    title: "JIT401",
+    subtitle: "IT JP–VI · Quiz / Sample / PT",
+    brandIcon: "fa-laptop-code",
+    storageWrong: "uq-jit-wrong-v1",
+    storageProgress: "uq-jit-progress-v1",
+    cloudSubject: "jit",
+    multiSelect: false,
+    showTranslationAlways: true,
+    tasks: [
+      { id: "quiz", label: "Quiz", icon: "fa-list-check" },
+      { id: "sample", label: "Sample", icon: "fa-flask" },
+      { id: "pt", label: "Quiz PT", icon: "fa-pen-to-square" },
+      { id: "all", label: "Tất cả", icon: "fa-layer-group" },
+    ],
+    defaultTask: "all",
+    dataKey: "jit",
+    hint: "Ba bank: Quiz giáo trình · Sample · Quiz PT. Câu JP + bảng dịch VI + giải thích cấu trúc.",
+  },
+  fe: {
+    id: "fe",
+    title: "FE / wedJfe",
+    subtitle: "Ôn FE · Test · 300 · datajfe",
+    brandIcon: "fa-graduation-cap",
+    storageWrong: "uq-fe-wrong-v1",
+    storageProgress: "uq-fe-progress-v1",
+    cloudSubject: "fe",
+    multiSelect: false,
+    showTranslationAlways: true,
+    tasks: [
+      { id: "test", label: "Test", icon: "fa-vial" },
+      { id: "bank300", label: "300 câu", icon: "fa-database" },
+      { id: "datajfe", label: "datajfe", icon: "fa-file-image" },
+      { id: "all", label: "Tất cả", icon: "fa-layer-group" },
+    ],
+    defaultTask: "all",
+    dataKey: "fe",
+    hint: "FE Study: test ảnh · bộ 300 · datajfe. Option đã làm sạch; giải thích theo promt.md.",
+  },
+};
+
+window.QUIZ_SUBJECT_ORDER = ["prm", "mln", "jit", "fe"];

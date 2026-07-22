@@ -1,7 +1,0 @@
-function formatWhy(why){
-    let s = escHtml(why||'');
-    s = s.replace(/✓\s*/g, '<div class="why-line why-ans">✓ ');
-    s = s.replace(/\s*Lý do:\s*/g, '</div><div class="why-line"><strong>Lý do:</strong> ');
-    s = s.replace(/\s*Đây là câu/g, '</div><div class="why-line">Đây là câu');
-    s = s.replace(/\s*Khớp kiến thức/g, '</div><div class="why-line">Khớp kiến thức');
-    s = s.replace(/\s*So với lựa chọn khác:\s*/g, '</div><div class="why-line"><strong>So với lựa chọn khác:</strong><br>')

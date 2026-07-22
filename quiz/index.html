@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz Hub — Tổng hợp ôn tập</title>
+  <meta name="description" content="Một web quiz thống nhất: PRM393, MLN, JIT401, FE. ~1347 câu, chọn môn + bài/đề, giải thích chuẩn." />
+  <meta name="theme-color" content="#f5f7fb" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css?v=ok1" />
+</head>
+<body class="hub-page">
+  <div class="app-body">
+    <header class="site-nav">
+      <div class="nav-inner container">
+        <a class="brand" href="./" title="Quiz Hub">
+          <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></span>
+          <div class="brand-text">
+            <strong>Quiz Hub</strong>
+            <span>1 engine · 4 môn · ~1347 câu</span>
+          </div>
+        </a>
+        <nav class="nav-links" aria-label="Điều hướng">
+          <a href="play.html?s=prm"><i class="fa-solid fa-play"></i> Vào quiz</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="app-main hub-main">
+      <section class="hub-hero container">
+        <span class="hub-eyebrow">Static · Local / Cloud · Base PRM</span>
+        <h1>Tổng hợp ôn trắc nghiệm</h1>
+        <p class="hub-lead">
+          Tất cả quiz gộp trong thư mục này: chọn môn, chọn bài/đề, làm bài
+          với cùng một giao diện — xáo câu, câu sai, tìm kiếm, bảng dịch &amp; giải thích.
+        </p>
+        <div class="hub-hero-stats" aria-label="Thống kê nhanh">
+          <div class="hub-stat">
+            <strong>4</strong>
+            <span>môn</span>
+          </div>
+          <div class="hub-stat">
+            <strong>1347</strong>
+            <span>câu hỏi</span>
+          </div>
+          <div class="hub-stat">
+            <strong>1</strong>
+            <span>engine</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="container hub-grid" aria-label="Danh sách môn">
+        <!-- PRM -->
+        <article class="hub-card card">
+          <div class="hub-card-top">
+            <span class="hub-icon hub-icon--prm"><i class="fa-solid fa-mobile-screen-button"></i></span>
+            <span class="badge">98 câu</span>
+          </div>
+          <h2>PRM393</h2>
+          <p>Flutter FE SP26 — chọn đề SP26 FE (50) hoặc SP26 B5 FE (48), multi-select, dịch VI + giải thích.</p>
+          <div class="hub-tags">
+            <span class="badge">SP26 FE · 50</span>
+            <span class="badge">B5 FE · 48</span>
+            <span class="badge">EN → VI</span>
+          </div>
+          <div class="hub-actions">
+            <a class="btn btn-primary" href="play.html?s=prm"><i class="fa-solid fa-play"></i> Làm bài</a>
+            <a class="btn btn-secondary" href="play.html?s=prm">Tất cả đề</a>
+          </div>
+        </article>
+
+        <!-- MLN -->
+        <article class="hub-card card">
+          <div class="hub-card-top">
+            <span class="hub-icon hub-icon--mln"><i class="fa-solid fa-book-open"></i></span>
+            <span class="badge">549 câu</span>
+          </div>
+          <h2>MLN</h2>
+          <p>Triết · Kinh tế chính trị — ngân hàng lớn, multi-select, giải thích vì sao đúng/sai, lưu câu sai.</p>
+          <div class="hub-tags">
+            <span class="badge">Toàn bộ</span>
+            <span class="badge">Multi-select</span>
+            <span class="badge">Câu sai</span>
+          </div>
+          <div class="hub-actions">
+            <a class="btn btn-primary" href="play.html?s=mln"><i class="fa-solid fa-play"></i> Làm bài</a>
+          </div>
+        </article>
+
+        <!-- JIT -->
+        <article class="hub-card card">
+          <div class="hub-card-top">
+            <span class="hub-icon hub-icon--jit"><i class="fa-solid fa-laptop-code"></i></span>
+            <span class="badge">292 câu</span>
+          </div>
+          <h2>JIT401</h2>
+          <p>IT Nhật–Việt: 3 bank Quiz / Sample / PT. Câu tiếng Nhật + bảng dịch VI + giải thích cấu trúc.</p>
+          <div class="hub-tags">
+            <span class="badge">Quiz · 131</span>
+            <span class="badge">Sample · 52</span>
+            <span class="badge">PT · 109</span>
+          </div>
+          <div class="hub-actions">
+            <a class="btn btn-primary" href="play.html?s=jit"><i class="fa-solid fa-play"></i> Làm bài</a>
+            <a class="btn btn-secondary" href="play.html?s=jit">Cả 3 bank</a>
+          </div>
+        </article>
+
+        <!-- FE -->
+        <article class="hub-card card">
+          <div class="hub-card-top">
+            <span class="hub-icon hub-icon--fe"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span class="badge">408 câu</span>
+          </div>
+          <h2>FE / wedJfe</h2>
+          <p>Ôn FE: Test ảnh, bộ 300 câu, datajfe. Option đã chuẩn hóa, giải thích theo form promt.</p>
+          <div class="hub-tags">
+            <span class="badge">Test · 67</span>
+            <span class="badge">300 câu</span>
+            <span class="badge">datajfe · 41</span>
+          </div>
+          <div class="hub-actions">
+            <a class="btn btn-primary" href="play.html?s=fe"><i class="fa-solid fa-play"></i> Làm bài</a>
+            <a class="btn btn-secondary" href="play.html?s=fe">Tất cả bank</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="container hub-note card-soft">
+        <h3><i class="fa-solid fa-circle-info"></i> Cách dùng nhanh</h3>
+        <ul>
+          <li>Chọn môn ở thẻ trên → vào <strong>Làm bài</strong>.</li>
+          <li>Trong màn quiz: chọn <strong>Bài / đề</strong>, bật ngẫu nhiên, lọc <strong>Câu sai</strong>.</li>
+          <li>Tiến trình: LocalStorage; có thể đăng nhập Master Control để sync cloud (nếu bật).</li>
+          <li>Thư mục cũ (<code>MLN/</code>, <code>PRM/</code>, <code>jl/</code>, <code>wedJfe/</code>) vẫn giữ — bản sạch nằm ở <code>quiz/</code>.</li>
+        </ul>
+      </section>
+
+      <p class="hub-footer container">
+        Data: <code>quiz/data/{prm,mln,jit,fe}.js</code> · Engine: <code>play.html</code> + <code>app.js</code>
+      </p>
+    </main>
+  </div>
+
+  <script>
+    // Deep-link cũ: quiz/?s=prm → play
+    (function () {
+      try {
+        var s = new URLSearchParams(location.search).get("s") || new URLSearchParams(location.search).get("subject");
+        if (s) {
+          location.replace("play.html?s=" + encodeURIComponent(s));
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+</body>
+</html>

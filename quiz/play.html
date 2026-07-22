@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Làm quiz — Quiz Hub</title>
+  <meta name="description" content="Quiz thống nhất 4 môn: PRM393, MLN, JIT401, FE — một engine, data theo task." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css?v=ok1" />
+</head>
+<body>
+  <div class="app-body">
+    <header class="site-nav">
+      <div class="nav-inner container">
+        <a class="brand" href="./" title="Về Quiz Hub">
+          <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></span>
+          <div class="brand-text">
+            <strong>Quiz Hub</strong>
+            <span>1 engine · 4 môn</span>
+          </div>
+        </a>
+        <nav class="nav-links" aria-label="Điều hướng">
+          <a href="./"><i class="fa-solid fa-table-cells"></i> Môn học</a>
+          <a href="./"><i class="fa-solid fa-house"></i> Quiz Hub</a>
+        </nav>
+        <div class="nav-stats" id="statsBar">
+          <span class="badge badge-done" title="Đúng trong phiên">
+            <i class="fa-solid fa-circle-check"></i>
+            <strong id="statCorrect">0</strong> đúng
+          </span>
+          <span class="badge badge-wrong" title="Câu sai đã lưu">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <strong id="statWrong">0</strong> sai
+          </span>
+          <span class="badge" title="Tiến độ">
+            <i class="fa-solid fa-list-ol"></i>
+            <strong id="statProgress">0</strong>/<span id="statTotal">0</span>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <div class="container quiz-wrap">
+        <!-- Subject switcher -->
+        <div class="subject-bar card-soft">
+          <div class="exam-bar-label">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Môn học</span>
+          </div>
+          <nav class="tabs tabs-inline subject-tabs" role="tablist" aria-label="Chọn môn">
+            <a class="tab subject-tab" data-subject="prm" href="play.html?s=prm" role="tab">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <span class="tab-text">PRM393</span>
+            </a>
+            <a class="tab subject-tab" data-subject="mln" href="play.html?s=mln" role="tab">
+              <i class="fa-solid fa-book-open"></i>
+              <span class="tab-text">MLN</span>
+            </a>
+            <a class="tab subject-tab" data-subject="jit" href="play.html?s=jit" role="tab">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span class="tab-text">JIT401</span>
+            </a>
+            <a class="tab subject-tab" data-subject="fe" href="play.html?s=fe" role="tab">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span class="tab-text">FE</span>
+            </a>
+          </nav>
+        </div>
+
+        <!-- Task / đề filter (filled by app.js) -->
+        <div class="exam-bar card-soft">
+          <div class="exam-bar-label">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Bài / đề</span>
+          </div>
+          <nav class="tabs tabs-inline exam-tabs" id="taskTabs" role="tablist" aria-label="Chọn bài">
+            <!-- dynamic -->
+          </nav>
+        </div>
+
+        <div class="control-bar card-soft">
+          <nav class="tabs tabs-inline" role="tablist" aria-label="Chế độ làm bài">
+            <button type="button" class="tab active" data-tab="all" role="tab" aria-selected="true">
+              <i class="fa-solid fa-layer-group"></i>
+              <span class="tab-text">Tất cả</span>
+              <span class="tab-count" id="badgeAll">0</span>
+            </button>
+            <button type="button" class="tab" data-tab="wrong" role="tab" aria-selected="false">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span class="tab-text">Câu sai</span>
+              <span class="tab-count tab-count-warn" id="badgeWrong">0</span>
+            </button>
+          </nav>
+
+          <div class="search-bar search-bar-inline">
+            <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+            <input
+              type="search"
+              id="searchInput"
+              class="search-input"
+              placeholder="Tìm câu hỏi…"
+              autocomplete="off"
+              aria-label="Tìm kiếm câu hỏi"
+            />
+            <button type="button" class="btn btn-ghost btn-sm search-clear hidden" id="btnClearSearch" title="Xóa tìm kiếm">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="toolbar toolbar-inline" role="toolbar" aria-label="Thao tác">
+            <label class="toggle" for="shuffleToggle">
+              <input type="checkbox" id="shuffleToggle" checked />
+              <span><i class="fa-solid fa-shuffle"></i> <span class="btn-label">Ngẫu nhiên</span></span>
+            </label>
+            <button type="button" class="btn btn-secondary btn-sm" id="btnReshuffle" title="Xáo thứ tự câu hỏi">
+              <i class="fa-solid fa-arrows-rotate"></i> <span class="btn-label">Xáo lại</span>
+            </button>
+            <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession" title="Reset điểm phiên">
+              <i class="fa-solid fa-rotate-left"></i> <span class="btn-label">Reset điểm</span>
+            </button>
+            <button type="button" class="btn btn-ghost btn-sm btn-danger-text" id="btnClearWrong" title="Xóa câu sai đã lưu">
+              <i class="fa-solid fa-trash-can"></i> <span class="btn-label">Xóa câu sai</span>
+            </button>
+          </div>
+        </div>
+        <div class="search-results hidden" id="searchResults" role="listbox" aria-label="Kết quả tìm kiếm"></div>
+
+        <div class="progress-wrap" aria-hidden="true">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <section class="card quiz-card" id="quizCard">
+          <div class="card-meta">
+            <span class="q-index" id="qIndex"><i class="fa-solid fa-circle-question"></i> Câu 1</span>
+            <span class="q-id" id="qId"></span>
+          </div>
+          <h2 class="question" id="questionText">Đang tải…</h2>
+          <p class="multi-hint hidden" id="multiHint">
+            <i class="fa-solid fa-square-check"></i>
+            Chọn nhiều phương án, rồi bấm <strong>Xác nhận</strong>
+          </p>
+          <div class="options" id="options" role="listbox" aria-label="Các phương án"></div>
+          <div class="submit-row hidden" id="submitRow">
+            <button type="button" class="btn btn-primary" id="btnSubmit" disabled>
+              <i class="fa-solid fa-paper-plane"></i> Xác nhận
+            </button>
+            <span class="submit-count" id="submitCount">Đã chọn 0</span>
+          </div>
+          <div class="feedback hidden" id="feedback" role="status"></div>
+          <div class="explain-toggle-row hidden" id="explainToggleRow">
+            <button type="button" class="btn btn-secondary btn-sm" id="btnToggleExplain" aria-expanded="true">
+              <i class="fa-solid fa-lightbulb" id="toggleExplainIcon"></i>
+              <span id="toggleExplainLabel">Ẩn giải thích</span>
+            </button>
+          </div>
+          <div class="explain-panel hidden" id="explainPanel" aria-live="polite"></div>
+          <div class="alt-panel hidden" id="altPanel" aria-live="polite"></div>
+        </section>
+
+        <div class="empty card hidden" id="emptyState">
+          <div class="empty-icon"><i class="fa-solid fa-face-smile"></i></div>
+          <h2 id="emptyTitle">Chưa có câu sai</h2>
+          <p id="emptyDesc">Khi bạn trả lời sai, câu hỏi sẽ được lưu ở tab này để làm lại.</p>
+          <button type="button" class="btn btn-primary" id="btnGoAll">
+            <i class="fa-solid fa-arrow-left"></i> Về tab Tất cả
+          </button>
+        </div>
+
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
+          <button type="button" class="btn btn-secondary btn-nav" id="btnPrev" title="Câu trước (←)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Trước</span>
+          </button>
+          <div class="nav-center">
+            <input type="number" id="jumpInput" min="1" class="jump-input" title="Nhảy tới số câu" aria-label="Nhảy tới số câu" />
+            <button type="button" class="btn btn-secondary btn-sm" id="btnJump">
+              <i class="fa-solid fa-location-arrow"></i> Đi
+            </button>
+          </div>
+          <button type="button" class="btn btn-secondary btn-nav" id="btnNext" title="Câu sau (→)">
+            <span class="nav-label">Sau</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+
+        <p class="hint">
+          <i class="fa-solid fa-hand-pointer"></i>
+          Chọn môn ở thanh trên, chọn bài/đề, rồi làm quiz. Giải thích theo cấu trúc chuẩn (dịch · đáp án · vì sao đúng/sai).
+        </p>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal xác nhận -->
+  <div id="confirmModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmMsg" hidden>
+    <div class="modal-backdrop" data-confirm-cancel tabindex="-1"></div>
+    <div class="modal-panel" role="document">
+      <div class="modal-icon" aria-hidden="true"><i class="fa-solid fa-trash-can"></i></div>
+      <h3 class="modal-title" id="confirmTitle">Xác nhận</h3>
+      <p class="modal-msg" id="confirmMsg"></p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-secondary" id="confirmCancel">Hủy</button>
+        <button type="button" class="btn btn-danger" id="confirmOk">Xóa</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master Control: cloud sync -->
+  <div id="masterModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="masterTitle" hidden>
+    <div class="modal-backdrop" data-master-skip tabindex="-1"></div>
+    <div class="modal-panel master-panel" role="document">
+      <div class="modal-icon master-icon" aria-hidden="true"><i class="fa-solid fa-cloud"></i></div>
+      <h3 class="modal-title" id="masterTitle">Master Control</h3>
+      <p class="modal-msg" id="masterMsg">
+        Nhập mã để <strong>lưu tiến trình trên cloud</strong> (đồng bộ nhiều máy).<br />
+        Bỏ qua = chỉ lưu trên máy này (local).
+      </p>
+      <label class="master-label" for="masterCodeInput">Mã Master Control</label>
+      <input
+        type="password"
+        id="masterCodeInput"
+        class="master-input"
+        placeholder="Nhập mã…"
+        autocomplete="current-password"
+        enterkeyhint="go"
+      />
+      <p class="master-error hidden" id="masterError" role="alert"></p>
+      <p class="master-status hidden" id="masterStatus"></p>
+      <div class="modal-actions master-actions">
+        <button type="button" class="btn btn-secondary" id="masterSkip">Bỏ qua (local)</button>
+        <button type="button" class="btn btn-primary" id="masterLogin">
+          <i class="fa-solid fa-right-to-bracket"></i> Vào cloud
+        </button>
+      </div>
+      <button type="button" class="btn btn-ghost btn-sm master-logout hidden" id="masterLogout">
+        <i class="fa-solid fa-right-from-bracket"></i> Thoát cloud → local
+      </button>
+    </div>
+  </div>
+
+  <script src="cloud/cloud-config.js?v=5"></script>
+  <script src="cloud/study-cloud.js?v=6"></script>
+  <script src="subjects.js?v=ok1"></script>
+  <script src="data/prm.js?v=ok1"></script>
+  <script src="data/mln.js?v=ok1"></script>
+  <script src="data/jit.js?v=ok1"></script>
+  <script src="data/fe.js?v=ok1"></script>
+  <script src="app.js?v=ok1"></script>
+</body>
+</html>
