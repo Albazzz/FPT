@@ -1,0 +1,1409 @@
+{
+  "at": "2026-07-23T13:12:16.747Z",
+  "status": "PREVIEW_ONLY",
+  "rules": [
+    "6.1 Fact lịch sử: chỉ answerDisplay (+ memoryTip?); gỡ intent/concept/whyCorrect/whyWrong",
+    "6.2 CLI: whyWrong = lệnh/tool dùng để làm gì",
+    "6.3 Thành phần (AOT+JIT, PDCA): whyCorrect giải từng phần",
+    "6.4 Lý thuyết/phạm trù: không batch gỡ trong đợt này"
+  ],
+  "counts": {
+    "r1_fact": 30,
+    "r2_cli": 3,
+    "r3_compound": 3
+  },
+  "r1_fact": [
+    {
+      "id": 17,
+      "num": 17,
+      "question": "Cách mạng công nghiệp lần thứ hai diễn ra trong giai đoạn nào?",
+      "options": {
+        "A": "Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX",
+        "B": "Từ nửa đầu thế kỷ XIX đến cuối thế kỷ XIX",
+        "C": "Từ nửa đầu thế kỷ XX đề nữa cuối thế kỷ XX",
+        "D": "Từ nửa cuối thế kỷ XIX đến nửa cuối thế kỷ XX"
+      },
+      "answer": "A",
+      "answerDisplay": "A. Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX",
+      "before": {
+        "intent": "• Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "concept": "• Định nghĩa/đặc trưng cần nắm: Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX",
+        "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Từ nửa đầu thế kỷ XIX đến cuối thế kỷ XIX\n• Dùng để làm gì? Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Vì sao sai? Từ nửa đầu thế kỷ XIX đến cuối thế kỷ XIX. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX",
+        "memoryTipOptional": "• Fact: Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX."
+      }
+    },
+    {
+      "id": 18,
+      "num": 18,
+      "question": "Cách mạng công nghiệp lần thứ hai diễn ra trong thời gian nào?",
+      "options": {
+        "A": "Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
+        "B": "Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
+        "C": "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+        "D": "Từ giữa thế kỷ XIX đến giữa thế kỷ XX"
+      },
+      "answer": "D",
+      "answerDisplay": "D. Từ giữa thế kỷ XIX đến giữa thế kỷ XX",
+      "before": {
+        "intent": "• Từ giữa thế kỷ XIX đến giữa thế kỷ XX\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "concept": "• Định nghĩa/đặc trưng cần nắm: Từ giữa thế kỷ XIX đến giữa thế kỷ XX",
+        "whyCorrect": "• Từ giữa thế kỷ XIX đến giữa thế kỷ XX\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "whyWrongKeys": [
+          "A",
+          "B",
+          "C"
+        ],
+        "whyWrongSample": "• Là gì? Từ giữa thế kỷ XV đến giữa thế kỷ XIX\n• Dùng để làm gì? Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Vì sao sai? Từ giữa thế kỷ XV đến giữa thế kỷ XIX. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Từ giữa thế kỷ XIX đến giữa thế kỷ XX."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "D. Từ giữa thế kỷ XIX đến giữa thế kỷ XX",
+        "memoryTipOptional": "• Fact: Từ giữa thế kỷ XIX đến giữa thế kỷ XX."
+      }
+    },
+    {
+      "id": 23,
+      "num": 23,
+      "question": "Quá trình công nghiệp hóa của các nước tư bản cổ điển diễn ra trong thời gian khoảng bao nhiêu năm?",
+      "options": {
+        "A": "Từ 60 - 80 năm",
+        "B": "Từ 50 - 70 năm",
+        "C": "Từ 60 - 90 năm",
+        "D": "Từ 50 - 80 năm"
+      },
+      "answer": "A",
+      "answerDisplay": "A. Từ 60 - 80 năm",
+      "before": {
+        "intent": "• Từ 60 - 80 năm\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
+        "concept": "• Từ 60 - 80 năm. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin. Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Từ 60 - 80 năm\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Từ 50 - 70 năm\n• Vai trò? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Từ 50 - 70 năm. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Từ 60 - 80 năm."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. Từ 60 - 80 năm",
+        "memoryTipOptional": "• Fact: Từ 60 - 80 năm."
+      }
+    },
+    {
+      "id": 27,
+      "num": 27,
+      "question": "Ai là người đề xuất ra ba loại thương nghiệp (trao đổi tự nhiên, trao đổi tiền tệ, trao đổi thông qua mục đích làm giàu) và hai loại kinh doanh (kinh tế, sản xuất của cải)?",
+      "options": {
+        "A": "Aristoteles",
+        "B": "Platon",
+        "C": "Xenophon",
+        "D": "Karl Marx"
+      },
+      "answer": "A",
+      "answerDisplay": "A. Aristoteles",
+      "before": {
+        "intent": "• Cụm «Aristoteles» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
+        "concept": "• Cụm «Aristoteles» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin.\n• Cụm «Aristoteles» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Cụm «Platon» mang một nghĩa riêng cần đối chiếu với đề.\n• Dùng để làm gì? So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.\n• Vì sao sai? «Platon» — Cụm «Platon» mang một nghĩa riêng cần đối chiếu với đề. Đề cần: Cụm «Aristoteles» mang một nghĩa riêng cần đối chiếu với đề."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. Aristoteles",
+        "memoryTipOptional": "• Fact: Aristoteles."
+      }
+    },
+    {
+      "id": 48,
+      "num": 48,
+      "question": "Cách mạng công nghiệp lần thứ nhất diễn ra trong thời gian nào?",
+      "options": {
+        "A": "Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
+        "B": "Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
+        "C": "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+        "D": "Từ giữa thế kỷ XIX đến giữa thế kỷ XX"
+      },
+      "answer": "C",
+      "answerDisplay": "C. Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+      "before": {
+        "intent": "• Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "concept": "• Định nghĩa/đặc trưng cần nắm: Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+        "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "whyWrongKeys": [
+          "A",
+          "B",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Từ giữa thế kỷ XV đến giữa thế kỷ XIX\n• Dùng để làm gì? Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Vì sao sai? Từ giữa thế kỷ XV đến giữa thế kỷ XIX. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "C. Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+        "memoryTipOptional": "• Fact: Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX."
+      }
+    },
+    {
+      "id": 109,
+      "num": 109,
+      "question": "Ai là người đưa kinh tế chính trị trở thành môn khoa học có tính hệ thống với các phạm trù và khái niệm chuyên ngành?",
+      "options": {
+        "A": "Adam Smith",
+        "B": "David Ricardo",
+        "C": "Karl Marx",
+        "D": "Willian Stafford"
+      },
+      "answer": "A",
+      "answerDisplay": "A. Adam Smith",
+      "before": {
+        "intent": "• Cụm «Adam Smith» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
+        "concept": "• Cụm «Adam Smith» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyCorrect": "• Lịch sử các học thuyết kinh tế (重商, cổ điển Anh, v.v.). Lịch sử học thuyết: trọng thương, trọng nông, kinh tế chính trị cổ điển Anh.\n• Cụm «Adam Smith» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Cụm «David Ricardo» mang một nghĩa riêng cần đối chiếu với đề.\n• Vai trò? So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.\n• Vì sao sai? Cụm «David Ricardo» mang một nghĩa riêng cần đối chiếu với đề. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Cụm «Adam Smith» mang một nghĩa riêng cần đối chiếu với đề."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. Adam Smith",
+        "memoryTipOptional": "• Fact: Adam Smith."
+      }
+    },
+    {
+      "id": 112,
+      "num": 112,
+      "question": "Thuật ngữ \"kinh tế chính trị\" được sử dụng lần đầu tiên vào năm nào?",
+      "options": {
+        "A": "1615",
+        "B": "1616",
+        "C": "1617",
+        "D": "1618"
+      },
+      "answer": "A",
+      "answerDisplay": "A. 1615",
+      "before": {
+        "intent": "• Một giá trị số cụ thể (1615) cần kiểm tra trong điều kiện/công thức đề.\n• Thay vào phép tính hoặc tiêu chí để xem có thỏa không.",
+        "concept": "• Một giá trị số cụ thể (1615) cần kiểm tra trong điều kiện/công thức đề.",
+        "whyCorrect": "• Một giá trị số cụ thể (1615) cần kiểm tra trong điều kiện/công thức đề.\n• Thay vào phép tính hoặc tiêu chí để xem có thỏa không.",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Một giá trị số cụ thể (1616) cần kiểm tra trong điều kiện/công thức đề.\n• Dùng để làm gì? Thay vào phép tính hoặc tiêu chí để xem có thỏa không.\n• Vì sao sai? «1616» — Một giá trị số cụ thể (1616) cần kiểm tra trong điều kiện/công thức đề. Đề cần: Một giá trị số cụ thể (1615) cần kiểm tra trong điều kiện/công thức đề."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. 1615",
+        "memoryTipOptional": "• Fact: 1615."
+      }
+    },
+    {
+      "id": 114,
+      "num": 114,
+      "question": "Người phát minh ra con thoi - một cải tiến của khung dệt và là một đóng góp quan trọng cho cách mạng cộng nghiệp lần thứ nhất là",
+      "options": {
+        "A": "John Kay (1704 - 1779)",
+        "B": "Richard Arkwright (1732-1792)",
+        "C": "Edmund Cartwright (1743-1823)",
+        "D": "James Watt (1736-1891)"
+      },
+      "answer": "A",
+      "answerDisplay": "A. John Kay (1704 - 1779)",
+      "before": {
+        "intent": "• Phạm trù/khái niệm «John Kay (1704 - 1779)» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "concept": "• Phạm trù/khái niệm «John Kay (1704 - 1779)» trong KTCT–triết Mác–Lênin.",
+        "whyCorrect": "• Phạm trù/khái niệm «John Kay (1704 - 1779)» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Phạm trù/khái niệm «Richard Arkwright (1732-1792)» trong KTCT–triết Mác–Lênin.\n• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Phạm trù/khái niệm «Richard Arkwright (1732-1792)» trong KTCT–triết Mác–Lênin. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Phạm trù/khái niệm «John Kay (1704 - 1779)» trong KTCT–triết Mác–Lênin."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. John Kay (1704 - 1779)",
+        "memoryTipOptional": "• Fact: John Kay (1704 - 1779)."
+      }
+    },
+    {
+      "id": 117,
+      "num": 117,
+      "question": "Công nghiệp hoá ở Anh (cuộc cách mạng công nghiệp lần thứ nhất) bắt nguồn từ ngành nào?",
+      "options": {
+        "A": "Công nghiệp nhẹ",
+        "B": "Công nghiệp nặng",
+        "C": "Dịch vụ",
+        "D": "Sản xuất vũ khí"
+      },
+      "answer": "A",
+      "answerDisplay": "A. Công nghiệp nhẹ",
+      "before": {
+        "intent": "• Công nghiệp nhẹ\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "concept": "• Công nghiệp nhẹ. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Công nghiệp nhẹ\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Công nghiệp nặng\n• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Công nghiệp nặng. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Công nghiệp nhẹ."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. Công nghiệp nhẹ",
+        "memoryTipOptional": "• Fact: Công nghiệp nhẹ."
+      }
+    },
+    {
+      "id": 119,
+      "num": 119,
+      "question": "Hình thức độc quyền dưới dạng Cartel được phổ biến ở Châu âu vào thời gian nào?",
+      "options": {
+        "A": "Đầu thế kỷ XIX",
+        "B": "Giữ thế kỷ XIX",
+        "C": "Cuối thế kỷ XIX",
+        "D": "Đầu thế kỷ XX"
+      },
+      "answer": "C",
+      "answerDisplay": "C. Cuối thế kỷ XIX",
+      "before": {
+        "intent": "• Các hình thức liên minh độc quyền từ thấp đến cao.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
+        "concept": "• Các hình thức liên minh độc quyền từ thấp đến cao.",
+        "whyCorrect": "• Liên quan hình thức tổ chức độc quyền (Cartel → Syndicate → Trust → Consortium) và cạnh tranh trong CNTB độc quyền.\n• Các hình thức liên minh độc quyền từ thấp đến cao.\n• Khống chế thị trường, giá cả, phân chia lĩnh vực.",
+        "whyWrongKeys": [
+          "A",
+          "B",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Đầu thế kỷ XIX\n• Vai trò? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Đầu thế kỷ XIX. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Các hình thức liên minh độc quyền từ thấp đến cao."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "C. Cuối thế kỷ XIX",
+        "memoryTipOptional": "• Fact: Cuối thế kỷ XIX."
+      }
+    },
+    {
+      "id": 132,
+      "num": 132,
+      "question": "Cách mạng công nghiệp lần thứ 3 còn được gọi là:",
+      "options": {
+        "A": "Cách mạng vô tuyến",
+        "B": "Cách mạng điện tử",
+        "C": "Cách mạng sinh học",
+        "D": "Cách mạng máy tính"
+      },
+      "answer": "D",
+      "answerDisplay": "D. Cách mạng máy tính",
+      "before": {
+        "intent": "• Cách mạng máy tính\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "concept": "• Cách mạng máy tính. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Cách mạng máy tính\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyWrongKeys": [
+          "A",
+          "B",
+          "C"
+        ],
+        "whyWrongSample": "• Là gì? Cách mạng vô tuyến\n• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Cách mạng vô tuyến. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Cách mạng máy tính."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "D. Cách mạng máy tính",
+        "memoryTipOptional": "• Fact: Cách mạng máy tính."
+      }
+    },
+    {
+      "id": 139,
+      "num": 139,
+      "question": "Ai là người được Mác coi là sáng lập ra kinh tế chính trị tư sản cổ điển?",
+      "options": {
+        "A": "Thomas Mun",
+        "B": "David Ricardo",
+        "C": "Adam Smith",
+        "D": "William Petty"
+      },
+      "answer": "D",
+      "answerDisplay": "D. William Petty",
+      "before": {
+        "intent": "• Phạm trù/khái niệm «William Petty» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "concept": "• Phạm trù/khái niệm «William Petty» trong KTCT–triết Mác–Lênin.",
+        "whyCorrect": "• Lịch sử các học thuyết kinh tế (重商, cổ điển Anh, v.v.). Lịch sử học thuyết: trọng thương, trọng nông, kinh tế chính trị cổ điển Anh.\n• Phạm trù/khái niệm «William Petty» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyWrongKeys": [
+          "A",
+          "B",
+          "C"
+        ],
+        "whyWrongSample": "• Là gì? Phạm trù/khái niệm «Thomas Mun» trong KTCT–triết Mác–Lênin.\n• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Phạm trù/khái niệm «Thomas Mun» trong KTCT–triết Mác–Lênin. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Phạm trù/khái niệm «William Petty» trong KTCT–triết Mác–Lênin."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "D. William Petty",
+        "memoryTipOptional": "• Fact: William Petty."
+      }
+    },
+    {
+      "id": 153,
+      "num": 153,
+      "question": "Cách mạng công nghiệp lần thứ tư được đề cập lần đầu tiên tại ở đâu và năm nào?",
+      "options": {
+        "A": "Tại Đức năm 2011",
+        "B": "Tại Pháp năm 2011",
+        "C": "Tại Anh năm 2012",
+        "D": "Tại Mỹ năm 2011"
+      },
+      "answer": "A",
+      "answerDisplay": "A. Tại Đức năm 2011",
+      "before": {
+        "intent": "• Tại Đức năm 2011\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "concept": "• Tại Đức năm 2011. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Tại Đức năm 2011\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Tại Pháp năm 2011\n• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Tại Pháp năm 2011. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Tại Đức năm 2011."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. Tại Đức năm 2011",
+        "memoryTipOptional": "• Fact: Tại Đức năm 2011."
+      }
+    },
+    {
+      "id": 154,
+      "num": 154,
+      "question": "Công nghiệp hóa ở nước Anh bắt nguồn từ ngành nào?",
+      "options": {
+        "A": "Công nghiệp dệt",
+        "B": "Công nghiệp cơ khí chế tạo",
+        "C": "Công nghiệp khai khoảng",
+        "D": "Công nghiệp đóng tàu"
+      },
+      "answer": "A",
+      "answerDisplay": "A. Công nghiệp dệt",
+      "before": {
+        "intent": "• Cụm «Công nghiệp dệt» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
+        "concept": "• Cụm «Công nghiệp dệt» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Cụm «Công nghiệp dệt» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Công nghiệp cơ khí chế tạo\n• Dùng để làm gì? Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Vì sao sai? «Công nghiệp cơ khí chế tạo» — Công nghiệp cơ khí chế tạo. Đề cần: Cụm «Công nghiệp dệt» mang một nghĩa riêng cần đối chiếu với đề."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. Công nghiệp dệt",
+        "memoryTipOptional": "• Fact: Công nghiệp dệt."
+      }
+    },
+    {
+      "id": 158,
+      "num": 158,
+      "question": "Cách mạng công nghiệp lần thứ nhất khởi phát ở quốc gia nào?",
+      "options": {
+        "A": "Anh",
+        "B": "Pháp",
+        "C": "Hy lap",
+        "D": "Đức"
+      },
+      "answer": "A",
+      "answerDisplay": "A. Anh",
+      "before": {
+        "intent": "• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "concept": "• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.",
+        "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Pháp\n• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Pháp. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. Anh",
+        "memoryTipOptional": "• Fact: Anh."
+      }
+    },
+    {
+      "id": 159,
+      "num": 159,
+      "question": "Cách mạng công nghiệp lần thứ hai khởi phát ở quốc gia nào?",
+      "options": {
+        "A": "Anh",
+        "B": "Pháp",
+        "C": "Hy lap",
+        "D": "Nga"
+      },
+      "answer": "A",
+      "answerDisplay": "A. Anh",
+      "before": {
+        "intent": "• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "concept": "• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.",
+        "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Pháp\n• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Pháp. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. Anh",
+        "memoryTipOptional": "• Fact: Anh."
+      }
+    },
+    {
+      "id": 160,
+      "num": 160,
+      "question": "Mô hình công nghiệp hóa kiểu Liên Xô được bắt đầu trong thời gian nào?",
+      "options": {
+        "A": "Từ đầu những năm 1920",
+        "B": "Từ đầu những năm 1930",
+        "C": "Từ đầu những năm 1940",
+        "D": "Sau năm 1945"
+      },
+      "answer": "B",
+      "answerDisplay": "B. Từ đầu những năm 1930",
+      "before": {
+        "intent": "• Cụm «Từ đầu những năm 1930» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
+        "concept": "• Cụm «Từ đầu những năm 1930» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Cụm «Từ đầu những năm 1930» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
+        "whyWrongKeys": [
+          "A",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Cụm «Từ đầu những năm 1920» mang một nghĩa riêng cần đối chiếu với đề.\n• Dùng để làm gì? So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.\n• Vì sao sai? «Từ đầu những năm 1920» — Cụm «Từ đầu những năm 1920» mang một nghĩa riêng cần đối chiếu với đề. Đề cần: Cụm «Từ đầu những năm 1930» mang một nghĩa riêng cần đối chiếu với đề."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "B. Từ đầu những năm 1930",
+        "memoryTipOptional": "• Fact: Từ đầu những năm 1930."
+      }
+    },
+    {
+      "id": 186,
+      "num": 186,
+      "question": "Cách mạng công nghiệp lần thứ ba diễn ra trong giai đoạn nào?",
+      "options": {
+        "A": "Từ đầu thập niên 50 của thế kỷ XX đến cuối thế kỷ XX",
+        "B": "Từ đầu thập niên 60 của thế kỷ XX đến cuối thế kỷ XX",
+        "C": "Từ đầu thập niên 70 của thế kỷ XX đến cuối thế kỷ XX",
+        "D": "Từ đầu thập niên 80 của thế kỷ XX đến cuối thế kỷ XX"
+      },
+      "answer": "B",
+      "answerDisplay": "B. Từ đầu thập niên 60 của thế kỷ XX đến cuối thế kỷ XX",
+      "before": {
+        "intent": "• Từ đầu thập niên 60 của thế kỷ XX đến cuối thế kỷ XX\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "concept": "• Định nghĩa/đặc trưng cần nắm: Từ đầu thập niên 60 của thế kỷ XX đến cuối thế kỷ XX",
+        "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Từ đầu thập niên 60 của thế kỷ XX đến cuối thế kỷ XX\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "whyWrongKeys": [
+          "A",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Từ đầu thập niên 50 của thế kỷ XX đến cuối thế kỷ XX\n• Dùng để làm gì? Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Vì sao sai? Từ đầu thập niên 50 của thế kỷ XX đến cuối thế kỷ XX. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Từ đầu thập niên 60 của thế kỷ XX đến cuối thế kỷ XX."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "B. Từ đầu thập niên 60 của thế kỷ XX đến cuối thế kỷ XX",
+        "memoryTipOptional": "• Fact: Từ đầu thập niên 60 của thế kỷ XX đến cuối thế kỷ XX."
+      }
+    },
+    {
+      "id": 187,
+      "num": 187,
+      "question": "Cách mạng công nghiệp lần thứ ba diễn ra trong thời gian nào?",
+      "options": {
+        "A": "Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
+        "B": "Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
+        "C": "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+        "D": "Từ đầu những năm 60 của XX đến cuối thế kỷ XX"
+      },
+      "answer": "D",
+      "answerDisplay": "D. Từ đầu những năm 60 của XX đến cuối thế kỷ XX",
+      "before": {
+        "intent": "• Từ đầu những năm 60 của XX đến cuối thế kỷ XX\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "concept": "• Định nghĩa/đặc trưng cần nắm: Từ đầu những năm 60 của XX đến cuối thế kỷ XX",
+        "whyCorrect": "• Từ đầu những năm 60 của XX đến cuối thế kỷ XX\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "whyWrongKeys": [
+          "A",
+          "B",
+          "C"
+        ],
+        "whyWrongSample": "• Là gì? Từ giữa thế kỷ XV đến giữa thế kỷ XIX\n• Dùng để làm gì? Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Vì sao sai? Từ giữa thế kỷ XV đến giữa thế kỷ XIX. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Từ đầu những năm 60 của XX đến cuối thế kỷ XX."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "D. Từ đầu những năm 60 của XX đến cuối thế kỷ XX",
+        "memoryTipOptional": "• Fact: Từ đầu những năm 60 của XX đến cuối thế kỷ XX."
+      }
+    },
+    {
+      "id": 236,
+      "num": 236,
+      "question": "Phương thức sản xuất tư bản chủ nghĩa được thiết lập và phát triển qua các giai đoạn nào sau đây:",
+      "options": {
+        "A": "Chủ nghĩa tư bản độc quyền",
+        "B": "Chủ nghĩa tư bản tự do cạnh tranh",
+        "C": "Chủ nghĩa tư bản tự do cạnh tranh và chủ nghĩa tư bản độc quyền.",
+        "D": "Chủ nghĩa tư bản hiện đại"
+      },
+      "answer": "C",
+      "answerDisplay": "C. Chủ nghĩa tư bản tự do cạnh tranh và chủ nghĩa tư bản độc quyền.",
+      "before": {
+        "intent": "• Chủ nghĩa tư bản tự do cạnh tranh và chủ nghĩa tư bản độc quyền.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
+        "concept": "• Định nghĩa/đặc trưng cần nắm: Chủ nghĩa tư bản tự do cạnh tranh và chủ nghĩa tư bản độc quyền.",
+        "whyCorrect": "• . Liên quan hình thức tổ chức độc quyền (Cartel → Syndicate → Trust → Consortium) và cạnh tranh trong CNTB độc quyền. Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin.\n• Chủ nghĩa tư bản tự do cạnh tranh và chủ nghĩa tư bản độc quyền.\n• Phạm trù KTCT (tư bản / thặng dư); đối chiếu đúng định nghĩa đề hỏi.",
+        "whyWrongKeys": [
+          "A",
+          "B",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Chủ nghĩa tư bản độc quyền\n• Vai trò? Phạm trù KTCT (tư bản / thặng dư); đối chiếu đúng định nghĩa đề hỏi."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "C. Chủ nghĩa tư bản tự do cạnh tranh và chủ nghĩa tư bản độc quyền.",
+        "memoryTipOptional": "• Fact: Chủ nghĩa tư bản tự do cạnh tranh và chủ nghĩa tư bản độc quyền.."
+      }
+    },
+    {
+      "id": 237,
+      "num": 237,
+      "question": "Trong các nhà kinh điển của chủ nghĩa Mác - Lênin, ai là người khái quát về nguyên nhân ra đời của chủ nghĩa tư bản độc quyền bằng câu: \"tự do cạnh tranh đẻ ra tập trung sản xuất và sự tập trung sản xuất này, khi phát triển tới một mức độ nhất định lại dẫn tới độc quyền\".",
+      "options": {
+        "A": "Ph. Ăngghen",
+        "B": "C. Mác",
+        "C": "Ph. Ăngghen và C. Mác",
+        "D": "V.I.Lêinin."
+      },
+      "answer": "D",
+      "answerDisplay": "D. V.I.Lêinin.",
+      "before": {
+        "intent": "• V.I.Lêinin.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
+        "concept": "• V.I.Lêinin. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyCorrect": "• I.Lêinin.. Liên quan hình thức tổ chức độc quyền (Cartel → Syndicate → Trust → Consortium) và cạnh tranh trong CNTB độc quyền. Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin.\n• V.I.Lêinin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyWrongKeys": [
+          "A",
+          "B",
+          "C"
+        ],
+        "whyWrongSample": "• Là gì? Ph. Ăngghen\n• Vai trò? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Ph. Ăngghen. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: V.I.Lêinin."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "D. V.I.Lêinin.",
+        "memoryTipOptional": "• Fact: V.I.Lêinin.."
+      }
+    },
+    {
+      "id": 280,
+      "num": 280,
+      "question": "Thuật ngữ \"kinh tế- chính trị\" được sử dụng lần đầu tiên vào năm nào?",
+      "options": {
+        "A": "1615",
+        "B": "1616",
+        "C": "1617"
+      },
+      "answer": "A",
+      "answerDisplay": "A. 1615",
+      "before": {
+        "intent": "• Một giá trị số cụ thể (1615) cần kiểm tra trong điều kiện/công thức đề.\n• Thay vào phép tính hoặc tiêu chí để xem có thỏa không.",
+        "concept": "• Một giá trị số cụ thể (1615) cần kiểm tra trong điều kiện/công thức đề.",
+        "whyCorrect": "• Một giá trị số cụ thể (1615) cần kiểm tra trong điều kiện/công thức đề.\n• Thay vào phép tính hoặc tiêu chí để xem có thỏa không.",
+        "whyWrongKeys": [
+          "B",
+          "C"
+        ],
+        "whyWrongSample": "• Là gì? Một giá trị số cụ thể (1616) cần kiểm tra trong điều kiện/công thức đề.\n• Dùng để làm gì? Thay vào phép tính hoặc tiêu chí để xem có thỏa không.\n• Vì sao sai? «1616» — Một giá trị số cụ thể (1616) cần kiểm tra trong điều kiện/công thức đề. Đề cần: Một giá trị số cụ thể (1615) cần kiểm tra trong điều kiện/công thức đề."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. 1615",
+        "memoryTipOptional": "• Fact: 1615."
+      }
+    },
+    {
+      "id": 281,
+      "num": 281,
+      "question": "Ai là người đầu tiên đưa ra khái niệm \"kinh tế- chính trị\"?",
+      "options": {
+        "A": "Francois Quesney",
+        "B": "Antoine Montchretiên",
+        "C": "William Petty"
+      },
+      "answer": "B",
+      "answerDisplay": "B. Antoine Montchretiên",
+      "before": {
+        "intent": "• Cụm «Antoine Montchretiên» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
+        "concept": "• Cụm «Antoine Montchretiên» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyCorrect": "• Cụm «Antoine Montchretiên» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
+        "whyWrongKeys": [
+          "A",
+          "C"
+        ],
+        "whyWrongSample": "• Là gì? Cụm «Francois Quesney» mang một nghĩa riêng cần đối chiếu với đề.\n• Dùng để làm gì? So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.\n• Vì sao sai? «Francois Quesney» — Cụm «Francois Quesney» mang một nghĩa riêng cần đối chiếu với đề. Đề cần: Cụm «Antoine Montchretiên» mang một nghĩa riêng cần đối chiếu với đề."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "B. Antoine Montchretiên",
+        "memoryTipOptional": "• Fact: Antoine Montchretiên."
+      }
+    },
+    {
+      "id": 324,
+      "num": 324,
+      "question": "Ai là người đầu tiên phát minh ra tính hai mặt của lao động sản xuất hàng hóa: lao động cụ thể và lao động trừu tượng?",
+      "options": {
+        "A": "Đ. Ricacđô",
+        "B": "C. Mác",
+        "C": "Ph. Ăngghen",
+        "D": "V.I. Lênin"
+      },
+      "answer": "B",
+      "answerDisplay": "B. C. Mác",
+      "before": {
+        "intent": "• Hao phí sức lao động người nói chung, tạo ra giá trị hàng hóa.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
+        "concept": "• Hao phí sức lao động người nói chung, tạo ra giá trị hàng hóa.",
+        "whyCorrect": "• Mác. Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin.\n• Hao phí sức lao động người nói chung, tạo ra giá trị hàng hóa.\n• Cơ sở so sánh/trao đổi hàng hóa.",
+        "whyWrongKeys": [
+          "A",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Đ. Ricacđô\n• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? «Đ. Ricacđô» — Đ. Ricacđô. Đề cần: Hao phí sức lao động người nói chung, tạo ra giá trị hàng hóa."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "B. C. Mác",
+        "memoryTipOptional": "• Fact: C. Mác."
+      }
+    },
+    {
+      "id": 413,
+      "num": 413,
+      "question": "Quan điểm về \"xây dựng nên kinh tế tự chủ phải dựa trên cơ sở làm chủ công nghệ và chủ động, tích cực hội nhập, đa dạng hóa thị trường, nâng cao khả năng thích ứng của nền kinh tế được đưa ra trong chiến lược phát triển kinh tế - xã hội ở giai đoạn nào?",
+      "options": {
+        "A": "Chiến lược phát triển kinh tế - xã hội 2001 -2010",
+        "B": "Chiến lược phát triển kinh tế - xã hội 2011 -2020",
+        "C": "Chiến lược phát triển kinh tế - xã hội 2021 -2030",
+        "D": "Chiến lược phát triển kinh tế - xã hội 2016-2021"
+      },
+      "answer": "C",
+      "answerDisplay": "C. Chiến lược phát triển kinh tế - xã hội 2021 -2030",
+      "before": {
+        "intent": "• Chiến lược phát triển kinh tế - xã hội 2021 -2030\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
+        "concept": "• Định nghĩa/đặc trưng cần nắm: Chiến lược phát triển kinh tế - xã hội 2021 -2030",
+        "whyCorrect": "• Toàn cầu hóa, hội nhập kinh tế và xuất khẩu tư bản (ĐT trực tiếp/gián tiếp). Cơ chế thị trường, cạnh tranh và quan hệ cung–cầu trong nền kinh tế hàng hóa.\n• Chiến lược phát triển kinh tế - xã hội 2021 -2030\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "whyWrongKeys": [
+          "A",
+          "B",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Chiến lược phát triển kinh tế - xã hội 2001 -2010\n• Dùng để làm gì? Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Vì sao sai? Chiến lược phát triển kinh tế - xã hội 2001 -2010. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Chiến lược phát triển kinh tế - xã hội 2021 -2030."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "C. Chiến lược phát triển kinh tế - xã hội 2021 -2030",
+        "memoryTipOptional": "• Fact: Chiến lược phát triển kinh tế - xã hội 2021 -2030."
+      }
+    },
+    {
+      "id": 467,
+      "num": 467,
+      "question": "Quốc gia nào thuộc nhóm các nước công nghiệp mới (NICS)?",
+      "options": {
+        "A": "Hoa Kỳ",
+        "B": "Singapore",
+        "C": "Việt Nam",
+        "D": "Trung Quốc"
+      },
+      "answer": "B",
+      "answerDisplay": "B. Singapore",
+      "before": {
+        "intent": "• Cụm «Singapore» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
+        "concept": "• Cụm «Singapore» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyCorrect": "• Cụm «Singapore» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
+        "whyWrongKeys": [
+          "A",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Cụm «Hoa Kỳ» mang một nghĩa riêng cần đối chiếu với đề.\n• Dùng để làm gì? So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.\n• Vì sao sai? «Hoa Kỳ» — Cụm «Hoa Kỳ» mang một nghĩa riêng cần đối chiếu với đề. Đề cần: Cụm «Singapore» mang một nghĩa riêng cần đối chiếu với đề."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "B. Singapore",
+        "memoryTipOptional": "• Fact: Singapore."
+      }
+    },
+    {
+      "id": 512,
+      "num": 512,
+      "question": "Việt Nam tham gia sáng lập diễn đàn hợp tác Á -Âu (ASEM) năm nào?",
+      "options": {
+        "A": "1996",
+        "B": "1997",
+        "C": "1998",
+        "D": "1999"
+      },
+      "answer": "A",
+      "answerDisplay": "A. 1996",
+      "before": {
+        "intent": "• Một giá trị số cụ thể (1996) cần kiểm tra trong điều kiện/công thức đề.\n• Thay vào phép tính hoặc tiêu chí để xem có thỏa không.",
+        "concept": "• Một giá trị số cụ thể (1996) cần kiểm tra trong điều kiện/công thức đề.",
+        "whyCorrect": "• Một giá trị số cụ thể (1996) cần kiểm tra trong điều kiện/công thức đề.\n• Thay vào phép tính hoặc tiêu chí để xem có thỏa không.",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Một giá trị số cụ thể (1997) cần kiểm tra trong điều kiện/công thức đề.\n• Dùng để làm gì? Thay vào phép tính hoặc tiêu chí để xem có thỏa không.\n• Vì sao sai? «1997» — Một giá trị số cụ thể (1997) cần kiểm tra trong điều kiện/công thức đề. Đề cần: Một giá trị số cụ thể (1996) cần kiểm tra trong điều kiện/công thức đề."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. 1996",
+        "memoryTipOptional": "• Fact: 1996."
+      }
+    },
+    {
+      "id": 554,
+      "num": 530,
+      "question": "Việt Nam tham gia sáng lập diễn đàn hợp tác Á - Âu (ASEM) năm nào?",
+      "options": {
+        "A": "1996",
+        "B": "1997",
+        "C": "1998",
+        "D": "1999"
+      },
+      "answer": "A",
+      "answerDisplay": "A. 1996",
+      "before": {
+        "intent": "• Một giá trị số cụ thể (1996) cần kiểm tra trong điều kiện/công thức đề.\n• Thay vào phép tính hoặc tiêu chí để xem có thỏa không.",
+        "concept": "• Một giá trị số cụ thể (1996) cần kiểm tra trong điều kiện/công thức đề.",
+        "whyCorrect": "• Một giá trị số cụ thể (1996) cần kiểm tra trong điều kiện/công thức đề.\n• Thay vào phép tính hoặc tiêu chí để xem có thỏa không.",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Một giá trị số cụ thể (1997) cần kiểm tra trong điều kiện/công thức đề.\n• Dùng để làm gì? Thay vào phép tính hoặc tiêu chí để xem có thỏa không.\n• Vì sao sai? «1997» — Một giá trị số cụ thể (1997) cần kiểm tra trong điều kiện/công thức đề. Đề cần: Một giá trị số cụ thể (1996) cần kiểm tra trong điều kiện/công thức đề."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. 1996",
+        "memoryTipOptional": "• Fact: 1996."
+      }
+    },
+    {
+      "id": 569,
+      "num": 546,
+      "question": "Người phát minh ra con thoi - một cải tiến của khung dệt và là một đồng góp quan trọng cho cách mạng công nghiệp lần thứ nhất là",
+      "options": {
+        "A": "John Kay (1704-1779)",
+        "B": "Richard Arkwright (1732-1792)",
+        "C": "Edmund Cartwright (1743-1823)",
+        "D": "James Watt (1736-1891)"
+      },
+      "answer": "A",
+      "answerDisplay": "A. John Kay (1704-1779)",
+      "before": {
+        "intent": "• Phạm trù/khái niệm «John Kay (1704-1779)» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "concept": "• Phạm trù/khái niệm «John Kay (1704-1779)» trong KTCT–triết Mác–Lênin.",
+        "whyCorrect": "• Phạm trù/khái niệm «John Kay (1704-1779)» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Phạm trù/khái niệm «Richard Arkwright (1732-1792)» trong KTCT–triết Mác–Lênin.\n• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Phạm trù/khái niệm «Richard Arkwright (1732-1792)» trong KTCT–triết Mác–Lênin. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Phạm trù/khái niệm «John Kay (1704-1779)» trong KTCT–triết Mác–Lênin."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. John Kay (1704-1779)",
+        "memoryTipOptional": "• Fact: John Kay (1704-1779)."
+      }
+    },
+    {
+      "id": 570,
+      "num": 548,
+      "question": "Cách mạng công nghiệp lần thứ nhất khởi phát từ nước nào?",
+      "options": {
+        "A": "Anh",
+        "B": "Pháp",
+        "C": "Mỹ",
+        "D": "Đức"
+      },
+      "answer": "A",
+      "answerDisplay": "A. Anh",
+      "before": {
+        "intent": "• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "concept": "• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.",
+        "whyCorrect": "• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+        "whyWrongKeys": [
+          "B",
+          "C",
+          "D"
+        ],
+        "whyWrongSample": "• Là gì? Pháp\n• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Pháp. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin."
+      },
+      "after": {
+        "keep": [
+          "answerDisplay",
+          "questionVi (nếu có)",
+          "optionsVi (nếu có)"
+        ],
+        "remove": [
+          "intent",
+          "concept",
+          "whyCorrect",
+          "whyWrong",
+          "whatIs"
+        ],
+        "answerDisplay": "A. Anh",
+        "memoryTipOptional": "• Fact: Anh."
+      }
+    }
+  ],
+  "r2_cli": [
+    {
+      "id": 54,
+      "question": "Which command builds a release APK?",
+      "options": {
+        "A": "flutter run",
+        "B": "flutter build apk",
+        "C": "flutter doctor",
+        "D": "flutter clean"
+      },
+      "answer": "B",
+      "before": {
+        "concept": "• Gói cài đặt Android chứa mã và tài nguyên đã build.",
+        "whyCorrect": "• Gói cài đặt Android chứa mã và tài nguyên đã build.\n• Phát hành/cài app lên thiết bị.",
+        "whyWrongSample": "• Là gì? Cơ chế Flutter/Dart liên quan «flutter run».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm trù với trọng tâm đề.\n• Vì sao sai? «flutter run» — Cơ chế Flutter/Dart liên quan «flutter run». Đề cần: Gói cài đặt Android chứa mã và tài nguyên đã build."
+      },
+      "after": {
+        "concept": "• `flutter build apk` tạo gói APK bản release.",
+        "whyCorrect": "• `flutter build apk` tạo gói APK bản release.",
+        "whyWrong": {
+          "A": {
+            "Là gì?": "flutter run",
+            "Dùng để làm gì?": "Chạy app Flutter (dev/debug).",
+            "Vì sao sai?": "Không phải lệnh mà đề hỏi."
+          },
+          "C": {
+            "Là gì?": "flutter doctor",
+            "Dùng để làm gì?": "Kiểm tra SDK/PATH Flutter — không sinh APK release.",
+            "Vì sao sai?": "Không phải lệnh mà đề hỏi."
+          },
+          "D": {
+            "Là gì?": "flutter clean",
+            "Dùng để làm gì?": "Xóa build cache/artifact Flutter.",
+            "Vì sao sai?": "Không phải lệnh mà đề hỏi."
+          }
+        }
+      }
+    },
+    {
+      "id": 106,
+      "question": "Which command verifies Flutter SDK installation after adding PATH?",
+      "options": {
+        "A": "npm doctor",
+        "B": "pip check",
+        "C": "flutter doctor",
+        "D": "adb uninstall"
+      },
+      "answer": "C",
+      "before": {
+        "concept": "• Lệnh kiểm tra môi trường SDK, toolchain, thiết bị Flutter.",
+        "whyCorrect": "• Lệnh kiểm tra môi trường SDK, toolchain, thiết bị Flutter.\n• Xác nhận cài đặt/PATH sau setup.",
+        "whyWrongSample": "• Là gì? Cơ chế Flutter/Dart liên quan «npm doctor».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm trù với trọng tâm đề.\n• Vì sao sai? «npm doctor» — Cơ chế Flutter/Dart liên quan «npm doctor». Đề cần: Lệnh kiểm tra môi trường SDK, toolchain, thiết bị Flutter."
+      },
+      "after": {
+        "concept": "• `flutter doctor` kiểm tra Flutter SDK, PATH và môi trường sau khi cài/ thêm PATH.",
+        "whyCorrect": "• `flutter doctor` kiểm tra Flutter SDK, PATH và môi trường sau khi cài/ thêm PATH.",
+        "whyWrong": {
+          "A": {
+            "Là gì?": "npm doctor",
+            "Dùng để làm gì?": "Kiểm tra môi trường Node/npm.",
+            "Vì sao sai?": "Không phải lệnh mà đề hỏi."
+          },
+          "B": {
+            "Là gì?": "pip check",
+            "Dùng để làm gì?": "Kiểm tra dependency hỏng của Python/pip.",
+            "Vì sao sai?": "Không phải lệnh mà đề hỏi."
+          },
+          "D": {
+            "Là gì?": "adb uninstall",
+            "Dùng để làm gì?": "Gỡ app trên thiết bị Android qua ADB.",
+            "Vì sao sai?": "Không phải lệnh mà đề hỏi."
+          }
+        }
+      }
+    },
+    {
+      "id": 217,
+      "question": "Which command builds a release APK?",
+      "options": {
+        "A": "flutter run",
+        "B": "flutter build apk",
+        "C": "flutter doctor --uninstall",
+        "D": "dart fix --dry-run only"
+      },
+      "answer": "B",
+      "before": {
+        "concept": "• Gói cài đặt Android chứa mã và tài nguyên đã build.",
+        "whyCorrect": "• Gói cài đặt Android chứa mã và tài nguyên đã build.\n• Phát hành/cài app lên thiết bị.",
+        "whyWrongSample": "• Là gì? Cơ chế Flutter/Dart liên quan «flutter run».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm trù với trọng tâm đề.\n• Vì sao sai? «flutter run» — Cơ chế Flutter/Dart liên quan «flutter run». Đề cần: Gói cài đặt Android chứa mã và tài nguyên đã build."
+      },
+      "after": {
+        "concept": "• `flutter build apk` tạo gói APK bản release.",
+        "whyCorrect": "• `flutter build apk` tạo gói APK bản release.",
+        "whyWrong": {
+          "A": {
+            "Là gì?": "flutter run",
+            "Dùng để làm gì?": "Chạy app Flutter (dev/debug).",
+            "Vì sao sai?": "Không phải lệnh mà đề hỏi."
+          },
+          "C": {
+            "Là gì?": "flutter doctor --uninstall",
+            "Dùng để làm gì?": "Kiểm tra SDK/PATH Flutter — không sinh APK release.",
+            "Vì sao sai?": "Không phải lệnh mà đề hỏi."
+          },
+          "D": {
+            "Là gì?": "dart fix --dry-run only",
+            "Dùng để làm gì?": "Gợi ý/sửa theo analyzer Dart.",
+            "Vì sao sai?": "Không phải lệnh mà đề hỏi."
+          }
+        }
+      }
+    }
+  ],
+  "r3_compound": [
+    {
+      "bank": "prm",
+      "id": 109,
+      "question": "Dart in Flutter is described as supporting which compilation modes?",
+      "options": {
+        "A": "Only interpreted BASIC",
+        "B": "Only COBOL batch",
+        "C": "AOT and JIT compilation",
+        "D": "Only assembly hand-writing"
+      },
+      "answer": "C",
+      "ansText": "AOT and JIT compilation",
+      "before": {
+        "concept": "• Hai chế độ biên dịch Dart: JIT (dev) và AOT (release).",
+        "whyCorrect": "• Hai chế độ biên dịch Dart: JIT (dev) và AOT (release).\n• JIT hỗ trợ hot reload; AOT tối ưu bản ship.",
+        "whyWrongSample": "• Là gì? Cơ chế Flutter/Dart liên quan «Chỉ BASIC thông dịch».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm trù với trọng tâm đề.\n• Vì sao sai? «Only interpreted BASIC» — Cơ chế Flutter/Dart liên quan «Chỉ BASIC thông dịch». Đề cần: Hai chế độ biên dịch Dart: JIT (dev) và AOT (release)."
+      },
+      "after": {
+        "concept": "• Dart/Flutter: hai chế độ biên dịch JIT (dev) và AOT (release).",
+        "whyCorrect": "• JIT: biên dịch khi chạy — hot reload lúc dev.\n• AOT: biên dịch trước khi ship — release tối ưu.\n• Đáp án đúng là cả hai, không phải BASIC/COBOL/assembly tay.",
+        "whyWrong": {
+          "A": "• Là gì? Only interpreted BASIC\n• Thuộc/dùng: stack hoặc mô hình khác đề hỏi.\n• Vì sao sai? Không phải tổ hợp/thành phần đúng của đề.",
+          "B": "• Là gì? Only COBOL batch\n• Thuộc/dùng: stack hoặc mô hình khác đề hỏi.\n• Vì sao sai? Không phải tổ hợp/thành phần đúng của đề.",
+          "D": "• Là gì? Only assembly hand-writing\n• Thuộc/dùng: stack hoặc mô hình khác đề hỏi.\n• Vì sao sai? Không phải tổ hợp/thành phần đúng của đề."
+        }
+      }
+    },
+    {
+      "bank": "fe",
+      "id": 234,
+      "question": "PDCA letters?",
+      "options": {
+        "A": "Gateway",
+        "B": "Hub",
+        "C": "Bridge",
+        "D": "Plan Do Check Act"
+      },
+      "answer": "D",
+      "ansText": "Plan Do Check Act",
+      "before": {
+        "concept": "• Plan Do Check Act",
+        "whyCorrect": "• Plan Do Check Act",
+        "whyWrongSample": "• Là gì? Gateway\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì sao sai? Không khớp đáp án đúng: Plan Do Check Act."
+      },
+      "after": {
+        "concept": "• PDCA: Plan → Do → Check → Act.",
+        "whyCorrect": "• Plan: lập kế hoạch / đánh giá.\n• Do: thực hiện.\n• Check: kiểm tra kết quả.\n• Act: điều chỉnh, cải tiến.",
+        "whyWrong": {
+          "A": "• Là gì? Gateway\n• Thuộc/dùng: stack hoặc mô hình khác đề hỏi.\n• Vì sao sai? Không phải tổ hợp/thành phần đúng của đề.",
+          "B": "• Là gì? Hub\n• Thuộc/dùng: stack hoặc mô hình khác đề hỏi.\n• Vì sao sai? Không phải tổ hợp/thành phần đúng của đề.",
+          "C": "• Là gì? Bridge\n• Thuộc/dùng: stack hoặc mô hình khác đề hỏi.\n• Vì sao sai? Không phải tổ hợp/thành phần đúng của đề."
+        }
+      }
+    },
+    {
+      "bank": "fe",
+      "id": 644,
+      "question": "PDCA cycle stands for:",
+      "options": {
+        "A": "Push, Drop, Commit, Abort",
+        "B": "Packet, Data, Control, Access",
+        "C": "Plan, Do, Check, Act",
+        "D": "Print, Delete, Copy, Archive"
+      },
+      "answer": "C",
+      "ansText": "Plan, Do, Check, Act",
+      "before": {
+        "concept": "• Plan, Do, Check, Act",
+        "whyCorrect": "• Plan, Do, Check, Act",
+        "whyWrongSample": "• Là gì? Push, Drop, Commit, Abort\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì sao sai? Không khớp đáp án đúng: Plan,, kiểm tra, Act."
+      },
+      "after": {
+        "concept": "• PDCA: Plan → Do → Check → Act.",
+        "whyCorrect": "• Plan: lập kế hoạch / đánh giá.\n• Do: thực hiện.\n• Check: kiểm tra kết quả.\n• Act: điều chỉnh, cải tiến.",
+        "whyWrong": {
+          "A": "• Là gì? Push, Drop, Commit, Abort\n• Thuộc/dùng: stack hoặc mô hình khác đề hỏi.\n• Vì sao sai? Không phải tổ hợp/thành phần đúng của đề.",
+          "B": "• Là gì? Packet, Data, Control, Access\n• Thuộc/dùng: stack hoặc mô hình khác đề hỏi.\n• Vì sao sai? Không phải tổ hợp/thành phần đúng của đề.",
+          "D": "• Là gì? Print, Delete, Copy, Archive\n• Thuộc/dùng: stack hoặc mô hình khác đề hỏi.\n• Vì sao sai? Không phải tổ hợp/thành phần đúng của đề."
+        }
+      }
+    }
+  ]
+}

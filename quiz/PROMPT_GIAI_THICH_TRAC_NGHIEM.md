@@ -616,49 +616,130 @@ Hai nhóm lỗi **không** hết nếu chỉ chỉnh wording prompt — phải s
 5. Nếu sai **ánh xạ** hoặc **từ điển**: sửa pipeline (mục 4b), không chỉ sửa 1 câu JSON.
 
 ---
-những câu thuộc phạm trù sự thật  lịch sử thì không cần giải thich tại sao  ví dụ câu sau 
-Cách mạng công nghiệp lần thứ nhất khởi phát từ nước nào?
 
-A
-A. Anh
+## 6. Hai kiểu hỏi: tối giản vs giải thích theo miền (bắt buộc)
 
-B
-B. Pháp
+### 6.1 Sự thật lịch sử / fact đơn (không “vì sao” giả tạo)
 
-C
-C. Mỹ
+**Áp dụng khi đề chỉ yêu cầu nhớ một trong các loại sau:**
 
-D
-D. Đức
-Sai. Đáp án đúng: A. Anh
+- người (ai / tác giả / nhà phát minh)  
+- năm / giai đoạn thời gian (mốc đã chốt)  
+- địa điểm / quốc gia / tổ chức  
+- tên gọi / “còn được gọi là”  
+- thuật ngữ xuất hiện lần đầu  
 
-Ẩn giải thích
-Giải thích
-Đáp án
-A. Anh
-đoạn này là k cần : 
-Ý chính của câu hỏi
-• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.
-• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).
+**Không áp dụng** (giữ `concept` / `whyCorrect` / `whyWrong` đầy đủ) nếu hỏi:
 
-Giải thích đáp án đúng
-Đây là gì?
-• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.
+- bản chất · nguyên nhân · đặc điểm · vai trò · ý nghĩa  
+- cơ chế · quá trình · phân biệt phạm trù · “chọn phương án sai” lý thuyết  
+- quan điểm / chủ trương / chiến lược (vd. chiến lược KT–XH giai đoạn nào **kèm** nội dung quan điểm — không gỡ hết)
 
-Vì sao đúng?
-• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.
-• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).
-đoạn này là k cần : 
-Các đáp án còn lại
-B. Pháp
-• Là gì? Pháp
-• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).
-• Vì sao sai? Pháp. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.
-C. Mỹ
-• Là gì? Phạm trù/khái niệm «Mỹ» trong KTCT–triết Mác–Lênin.
-• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).
-• Vì sao sai? Phạm trù/khái niệm «Mỹ» trong KTCT–triết Mác–Lênin. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.
-D. Đức
-• Là gì? Đức
-• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).
-• Vì sao sai? Đức. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin. 
+**Ví dụ fact (gỡ bloat):** *CMCN lần 1 khởi phát từ nước nào?* → A. Anh  
+
+**Ví dụ không xếp fact thuần:** *Phương thức sản xuất TBCN được thiết lập qua các giai đoạn nào?* (quá trình) · *Quan điểm “kinh tế tự chủ…” trong chiến lược…?* (chủ trương + mốc — ưu tiên giữ 1 dòng why).
+
+**UI fact thuần chỉ cần:**
+
+| Field | Quy tắc |
+|-------|---------|
+| `answerDisplay` | Có — `A. Anh` |
+| `questionVi` / `optionsVi` | Có nếu đề EN; tên riêng giữ nguyên |
+| `intent` / `concept` / `whyCorrect` / `whyWrong` / `whatIs` | **Bỏ** — không template «Phạm trù «Anh» trong KTCT…» |
+
+**Cấm:** nhét fact (Anh, 1615, John Kay…) vào khuôn MLN “chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…”.
+
+```
+answerDisplay: A. Anh
+memoryTip: • CMCN 1 khởi phát từ Anh.   # tuỳ chọn, 1 dòng
+```
+
+---
+
+### 6.2 Lệnh / CLI / tool (whyWrong = “dùng để làm gì”)
+
+**Nhận diện:** hỏi lệnh, tool, doctor/check/build… (PRM/JFE/JIT).
+
+**Ví dụ:** *Which command verifies Flutter SDK installation after adding PATH?*  
+A. `npm doctor` · B. `pip check` · C. `flutter doctor` · D. `adb uninstall`
+
+| Field | Quy tắc |
+|-------|---------|
+| `concept` / `whyCorrect` | Lệnh **đúng** làm việc gì trong ngữ cảnh đề |
+| `whyWrong[L]` | Mỗi option sai: **lệnh/tool đó dùng để làm gì** (miền thật), rồi 1 câu vì sao không trả lời đề |
+
+**Khung whyWrong (lệnh hợp lệ):**
+
+```
+• Là gì? <tên lệnh>
+• Dùng để làm gì? <việc thật của lệnh>
+• Vì sao sai? Không phải lệnh mà đề hỏi.
+```
+
+**Lệnh giả / không hợp lệ** (distractor kiểu `flutter doctor --uninstall`):
+
+```
+• Là gì? Chuỗi lệnh giả / không phải subcommand chuẩn của Flutter CLI.
+• Dùng để làm gì? Không dùng được — không phải lệnh hợp lệ.
+• Vì sao sai? Không tồn tại / không phải lệnh build hay verify SDK.
+```
+
+**Bảng gợi ý:**
+
+| Option | Dùng để làm gì? |
+|--------|-----------------|
+| `npm doctor` | Kiểm tra môi trường **Node/npm** |
+| `pip check` | Kiểm tra dependency **Python/pip** |
+| `adb uninstall` | Gỡ app **Android** qua ADB |
+| `flutter run` | Chạy app Flutter (dev/debug) |
+| `flutter clean` | Xóa build cache |
+| `flutter build apk` | Build APK release |
+| `flutter doctor` | Kiểm tra SDK/PATH Flutter |
+| `dart fix …` | Gợi ý/sửa theo analyzer Dart |
+| `flutter doctor --uninstall` | **Không phải lệnh Flutter CLI hợp lệ** |
+
+**Cấm:** «Cơ chế Flutter/Dart liên quan «npm doctor»» · mô tả lệnh giả như thể lệnh thật.
+
+---
+
+### 6.3 Đáp án có thành phần (giải thích từng thành phần)
+
+**Nhận diện:** đáp án là tổ hợp (AOT **và** JIT; Plan–Do–Check–Act…).
+
+**Ví dụ:** *Dart … compilation modes?* → **C. AOT and JIT compilation**
+
+| Field | Quy tắc |
+|-------|---------|
+| `concept` | Nêu tổ hợp đúng (JIT + AOT) |
+| `whyCorrect` | **Mỗi thành phần là gì / khi nào** + 1 câu kết luận vì sao chọn tổ hợp đó |
+| `whyWrong` | Distractor: là gì / stack nào — **không** dán template generic |
+
+**Chuẩn gọn (whyCorrect tập trung đáp án):**
+
+```
+concept:
+• Dart/Flutter hỗ trợ JIT và AOT.
+
+whyCorrect:
+• JIT: biên dịch khi chạy — hot reload lúc dev.
+• AOT: biên dịch trước khi phát hành — tối ưu hiệu năng release.
+• Vì Dart hỗ trợ cả hai chế độ nên đáp án là AOT and JIT.
+
+whyWrong A (Only interpreted BASIC):
+• Là gì? BASIC thông dịch — ngôn ngữ/cách chạy khác Dart.
+• Dùng để làm gì? Chạy script BASIC (không phải Flutter toolchain).
+• Vì sao sai? Không phải chế độ biên dịch Dart (JIT/AOT).
+```
+
+**Cấm:** kết luận whyCorrect bằng liệt kê dài distractor (“không phải BASIC/COBOL/assembly…”) thay cho câu **vì sao tổ hợp đúng**; cấm whyWrong «Cơ chế Flutter/Dart liên quan «…»».
+
+---
+
+### 6.4 Bảng chọn nhanh
+
+| Kiểu đề | intent / concept / whyCorrect | whyWrong |
+|---------|-------------------------------|----------|
+| Fact who/when/where/country/name | Tối thiểu; **có thể chỉ `answerDisplay`** | **Không bắt buộc** |
+| Lệnh / CLI (kể cả lệnh giả) | Lệnh đúng **làm gì** | Hợp lệ → dùng để làm gì; **giả → nói không hợp lệ** |
+| Đáp án nhiều thành phần | **Giải thích từng thành phần** + kết luận ngắn | Distractor: là gì / stack nào |
+| Lý thuyết / quá trình / quan điểm / phân biệt | Đủ concept + why (mục 0–2) | Contrast miền / lớp hỏi cụ thể |
