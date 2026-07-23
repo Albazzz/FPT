@@ -53,19 +53,28 @@ function correctsOf(q) {
 /** EN leftover after partial VI translation */
 function halfTranslated(s) {
   if (!s) return false;
-  // Only flag clear EN leftovers after VI stems (not Vietnamese "cho/các/…")
+  // Only flag clear EN leftovers after VI stems (not Vietnamese syllables / function words)
   if (
     /Cái nào [A-Za-z]{4,}|Cái gì [A-Za-z]{4,}|Mẫu widget nào [A-Za-z]{4,}|Trước khi [a-z]{4,}/i.test(
       s
     )
   ) {
-    // Allow if the next token is common VI (ASCII without diacritics)
+    // Skip common VI (with/without diacritics) and short technical acronyms handled elsewhere
     if (
-      !/Cái nào (cho|các|có|cần|để|trong|sau|hay|nên|phải|giúp|dùng|thường)|Cái gì (là|được|sẽ|đã)|Mẫu widget nào (cho|các|có)|Trước khi (chạy|cài|tạo|dùng|mở)/i.test(
+      !/Cái nào (cho|các|có|cần|để|trong|sau|hay|nên|phải|giúp|dùng|thường|truy|nhanh|chậm|phù|thích|thuộc|được|đang|sẽ|đã|bị|bằng|với|như|khi|này|kia|sau|trên|dưới)|Cái gì (là|được|sẽ|đã|làm|xảy)|Mẫu widget nào (cho|các|có)|Trước khi (chạy|cài|tạo|dùng|mở|gửi|đọc)|cái nào (truy|nhanh|chậm|phù|thuộc|được)/i.test(
         s
       )
-    )
-      return true;
+    ) {
+      // Only hard-flag if next token looks like English leftover (common EN stems)
+      if (
+        /Cái nào (type|generation|number|primary|main|input|technique|protocol|processing|programming|memory|device|operation|estimate|item|generation|OS|CPU|RAID|UPS|ISO)/i.test(
+          s
+        ) ||
+        /Cái gì (type|kind|main)/i.test(s) ||
+        /which |what |when |where |that |with |from |into |using |used to |is used/i.test(s)
+      )
+        return true;
+    }
   }
   if (
     /Widget nào (enables|allows|is|used|helps|can|does|provides|animates|rebuilds|protects|applies|reacts|retrieves|resets|groups|focuses|improves|creates|manages)\b/i.test(

@@ -1,0 +1,1916 @@
+[
+  {
+    "label": "PRM L1 Layout — Expanded",
+    "id": 158,
+    "task": "slides",
+    "answer": "A",
+    "question": "Expanded inside a Flex (Row/Column) is used to:",
+    "options": {
+      "A": "Take remaining free space along the main axis",
+      "B": "Hide the keyboard only",
+      "C": "Start deep links",
+      "D": "Compile AOT"
+    },
+    "optionsVi": {
+      "A": "Take remaining free space along the main axis",
+      "B": "Chỉ ẩn bàn phím",
+      "C": "Bắt đầu deep link",
+      "D": "Biên dịch AOT"
+    },
+    "questionVi": "Expanded trong Flex (Row/Column) dùng để:",
+    "answerDisplay": "A. Take remaining free space along the main axis",
+    "concept": "• Expanded buộc con chiếm toàn bộ không gian còn lại trên main axis của Flex (Row/Column).",
+    "whyCorrect": "• Trong Row: giãn ngang; trong Column: giãn dọc; nhiều Expanded chia theo flex.\n• Tương đương Flexible(fit: FlexFit.tight). Không phải overlap (Stack) hay compile AOT.",
+    "whyWrongOne": {
+      "letter": "B",
+      "text": "• Là gì? Bàn phím / ẩn hiện keyboard.\n• Dùng để làm gì? Input IME, không layout flex fill.\n• Vì sao sai? Ẩn bàn phím là UX input — không phải cơ chế flex fill main axis."
+    },
+    "remainingAnswers": {
+      "B": {
+        "option": "Hide the keyboard only",
+        "optionsVi": "Chỉ ẩn bàn phím",
+        "whatIs": "Bàn phím / ẩn hiện keyboard.",
+        "whyWrong": "• Là gì? Bàn phím / ẩn hiện keyboard.\n• Dùng để làm gì? Input IME, không layout flex fill.\n• Vì sao sai? Ẩn bàn phím là UX input — không phải cơ chế flex fill main axis."
+      },
+      "C": {
+        "option": "Start deep links",
+        "optionsVi": "Bắt đầu deep link",
+        "whatIs": "Deep link — mở màn/app từ URL.",
+        "whyWrong": "• Là gì? Deep link — mở màn/app từ URL.\n• Dùng để làm gì? Share link vào feature.\n• Vì sao sai? Deep link thuộc điều hướng/URL — không phải Expanded trong Row/Column."
+      },
+      "D": {
+        "option": "Compile AOT",
+        "optionsVi": "Biên dịch AOT",
+        "whatIs": "JIT (dev) / AOT (release) — chế độ biên dịch Dart.",
+        "whyWrong": "• Là gì? JIT (dev) / AOT (release) — chế độ biên dịch Dart.\n• Dùng để làm gì? Hot reload vs tối ưu ship.\n• Vì sao sai? AOT là chế độ biên dịch release — không phải widget layout."
+      }
+    },
+    "whyWrongAll": {
+      "B": "• Là gì? Bàn phím / ẩn hiện keyboard.\n• Dùng để làm gì? Input IME, không layout flex fill.\n• Vì sao sai? Ẩn bàn phím là UX input — không phải cơ chế flex fill main axis.",
+      "C": "• Là gì? Deep link — mở màn/app từ URL.\n• Dùng để làm gì? Share link vào feature.\n• Vì sao sai? Deep link thuộc điều hướng/URL — không phải Expanded trong Row/Column.",
+      "D": "• Là gì? JIT (dev) / AOT (release) — chế độ biên dịch Dart.\n• Dùng để làm gì? Hot reload vs tối ưu ship.\n• Vì sao sai? AOT là chế độ biên dịch release — không phải widget layout."
+    },
+    "memoryTip": "• Expanded = Flexible(tight) trên main axis.",
+    "intent": "• L1 — Expanded/main axis."
+  },
+  {
+    "label": "PRM L1 Layout — Stack overlap",
+    "id": 55,
+    "task": "fe",
+    "answer": "C",
+    "question": "Which widget allows overlapping of its child widgets?",
+    "options": {
+      "A": "Column",
+      "B": "Row",
+      "C": "Stack",
+      "D": "Expanded"
+    },
+    "optionsVi": {
+      "A": "Column",
+      "B": "Row",
+      "C": "Stack",
+      "D": "Expanded"
+    },
+    "questionVi": "Đâu là widget cho phép các widget con chồng lên nhau?",
+    "answerDisplay": "C. Stack",
+    "concept": "• Stack xếp widget con theo trục Z, cho phép chồng (overlap).",
+    "whyCorrect": "• Row/Column xếp một trục, không overlap mặc định.\n• ListView cuộn list, không phải lớp chồng.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Column — xếp con theo cột dọc.\n• Dùng để làm gì? Bố cục dọc; không overlap/scroll mặc định.\n• Vì sao sai? Row/Column xếp một trục, không overlap mặc định như Stack."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Column",
+        "optionsVi": "Column",
+        "whatIs": "Column — xếp con theo cột dọc.",
+        "whyWrong": "• Là gì? Column — xếp con theo cột dọc.\n• Dùng để làm gì? Bố cục dọc; không overlap/scroll mặc định.\n• Vì sao sai? Row/Column xếp một trục, không overlap mặc định như Stack."
+      },
+      "B": {
+        "option": "Row",
+        "optionsVi": "Row",
+        "whatIs": "Row — xếp con theo hàng ngang.",
+        "whyWrong": "• Là gì? Row — xếp con theo hàng ngang.\n• Dùng để làm gì? Bố cục ngang (main axis ngang).\n• Vì sao sai? Row/Column xếp một trục, không overlap mặc định như Stack."
+      },
+      "D": {
+        "option": "Expanded",
+        "optionsVi": "Expanded",
+        "whatIs": "Expanded — chiếm hết không gian còn lại trên main axis của Flex.",
+        "whyWrong": "• Là gì? Expanded — chiếm hết không gian còn lại trên main axis của Flex.\n• Dùng để làm gì? Trong Row/Column chia phần trống theo flex.\n• Vì sao sai? Expanded chia space flex — không xếp chồng Z."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Column — xếp con theo cột dọc.\n• Dùng để làm gì? Bố cục dọc; không overlap/scroll mặc định.\n• Vì sao sai? Row/Column xếp một trục, không overlap mặc định như Stack.",
+      "B": "• Là gì? Row — xếp con theo hàng ngang.\n• Dùng để làm gì? Bố cục ngang (main axis ngang).\n• Vì sao sai? Row/Column xếp một trục, không overlap mặc định như Stack.",
+      "D": "• Là gì? Expanded — chiếm hết không gian còn lại trên main axis của Flex.\n• Dùng để làm gì? Trong Row/Column chia phần trống theo flex.\n• Vì sao sai? Expanded chia space flex — không xếp chồng Z."
+    },
+    "memoryTip": "• Overlap → Stack.",
+    "intent": "• L1 — Stack vs Row/Column."
+  },
+  {
+    "label": "PRM L2 Async — Future",
+    "id": 122,
+    "task": "slides",
+    "answer": "C",
+    "question": "What does a Future represent?",
+    "options": {
+      "A": "A completed widget tree only",
+      "B": "A synchronous int always",
+      "C": "A value or error that will be available later",
+      "D": "A GPU shader"
+    },
+    "optionsVi": {
+      "A": "Chỉ A completed widget tree",
+      "B": "A synchronous int always",
+      "C": "A value or error that will be available later",
+      "D": "A GPU shader"
+    },
+    "questionVi": "Future đại diện cho điều gì?",
+    "answerDisplay": "C. A value or error that will be available later",
+    "concept": "• Future biểu diễn một kết quả (hoặc lỗi) bất đồng bộ sẽ có sau — one-shot.",
+    "whyCorrect": "• Dùng với async/await, gọi API/đọc file một lần.\n• Stream mới là nhiều sự kiện theo thời gian.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Widget tree — cây cấu hình UI.\n• Dùng để làm gì? Mô tả giao diện tại một thời điểm.\n• Vì sao sai? Widget tree mô tả UI tại một thời điểm — không phải Future (kết quả async sau)."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "A completed widget tree only",
+        "optionsVi": "Chỉ A completed widget tree",
+        "whatIs": "Widget tree — cây cấu hình UI.",
+        "whyWrong": "• Là gì? Widget tree — cây cấu hình UI.\n• Dùng để làm gì? Mô tả giao diện tại một thời điểm.\n• Vì sao sai? Widget tree mô tả UI tại một thời điểm — không phải Future (kết quả async sau)."
+      },
+      "B": {
+        "option": "A synchronous int always",
+        "optionsVi": "A synchronous int always",
+        "whatIs": "A synchronous int always — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? A synchronous int always — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? int đồng bộ có ngay; Future là giá trị/lỗi sẽ có sau (async)."
+      },
+      "D": {
+        "option": "A GPU shader",
+        "optionsVi": "A GPU shader",
+        "whatIs": "A GPU shader — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? A GPU shader — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? GPU shader thuộc render — không biểu diễn kết quả async one-shot của Future."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Widget tree — cây cấu hình UI.\n• Dùng để làm gì? Mô tả giao diện tại một thời điểm.\n• Vì sao sai? Widget tree mô tả UI tại một thời điểm — không phải Future (kết quả async sau).",
+      "B": "• Là gì? A synchronous int always — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? int đồng bộ có ngay; Future là giá trị/lỗi sẽ có sau (async).",
+      "D": "• Là gì? A GPU shader — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? GPU shader thuộc render — không biểu diễn kết quả async one-shot của Future."
+    },
+    "memoryTip": "• Future: 1 lần · Stream: nhiều lần.",
+    "intent": "• L2 — Future one-shot."
+  },
+  {
+    "label": "PRM L2 Async — Stream",
+    "id": 11,
+    "task": "re",
+    "answer": "B",
+    "question": "Which concept does BLoC heavily rely on?",
+    "options": {
+      "A": "Future",
+      "B": "Stream",
+      "C": "Animation",
+      "D": "Theme"
+    },
+    "optionsVi": {
+      "A": "Future",
+      "B": "Stream",
+      "C": "Animation",
+      "D": "Theme"
+    },
+    "questionVi": "BLoC dựa mạnh vào khái niệm nào?",
+    "answerDisplay": "B. Stream",
+    "concept": "• Stream là chuỗi sự kiện/giá trị async theo thời gian (nhiều lần).",
+    "whyCorrect": "• BLoC/state stream, socket, auth state changes… emit nhiều lần.\n• Future chỉ một kết quả rồi hoàn tất.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Future — kết quả/lỗi async one-shot sẽ có sau.\n• Dùng để làm gì? await API/file một lần.\n• Vì sao sai? Future one-shot; BLoC/stream cần chuỗi state theo thời gian."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Future",
+        "optionsVi": "Future",
+        "whatIs": "Future — kết quả/lỗi async one-shot sẽ có sau.",
+        "whyWrong": "• Là gì? Future — kết quả/lỗi async one-shot sẽ có sau.\n• Dùng để làm gì? await API/file một lần.\n• Vì sao sai? Future one-shot; BLoC/stream cần chuỗi state theo thời gian."
+      },
+      "C": {
+        "option": "Animation",
+        "optionsVi": "Animation",
+        "whatIs": "Animation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Animation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? Animation/Theme không phải xương sống reactive của BLoC."
+      },
+      "D": {
+        "option": "Theme",
+        "optionsVi": "Theme",
+        "whatIs": "Theme/ThemeData — màu, typography, style dùng chung.",
+        "whyWrong": "• Là gì? Theme/ThemeData — màu, typography, style dùng chung.\n• Dùng để làm gì? Đồng bộ giao diện.\n• Vì sao sai? Animation/Theme không phải xương sống reactive của BLoC."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Future — kết quả/lỗi async one-shot sẽ có sau.\n• Dùng để làm gì? await API/file một lần.\n• Vì sao sai? Future one-shot; BLoC/stream cần chuỗi state theo thời gian.",
+      "C": "• Là gì? Animation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? Animation/Theme không phải xương sống reactive của BLoC.",
+      "D": "• Là gì? Theme/ThemeData — màu, typography, style dùng chung.\n• Dùng để làm gì? Đồng bộ giao diện.\n• Vì sao sai? Animation/Theme không phải xương sống reactive của BLoC."
+    },
+    "memoryTip": "• Future 1 · Stream nhiều.",
+    "intent": "• L2 — Stream multi-event."
+  },
+  {
+    "label": "PRM L3 State — setState / BLoC / Provider",
+    "id": 45,
+    "task": "re",
+    "answer": "B",
+    "question": "Why should setState() be called sparingly?",
+    "options": {
+      "A": "It increases app size",
+      "B": "It may trigger unnecessary rebuilds",
+      "C": "It blocks UI thread",
+      "D": "It causes memory leaks"
+    },
+    "optionsVi": {
+      "A": "It increases app size",
+      "B": "It may trigger unnecessary rebuilds",
+      "C": "It blocks UI thread",
+      "D": "It causes memory leaks"
+    },
+    "questionVi": "Vì sao nên gọi setState() vừa phải?",
+    "answerDisplay": "B. It may trigger unnecessary rebuilds",
+    "concept": "• setState đánh dấu State đã đổi và xếp lịch rebuild nhánh StatefulWidget liên quan.",
+    "whyCorrect": "• Chỉ dùng khi dữ liệu local của State đổi và UI cần phản ánh.\n• dispose/initState/build là vòng đời khác — không phải API «cập nhật UI vì state đổi».",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Tăng kích thước gói app.\n• Dùng để làm gì? Binary size — không liên quan tần suất setState.\n• Vì sao sai? setState không làm tăng kích thước APK; vấn đề là rebuild thừa."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "It increases app size",
+        "optionsVi": "It increases app size",
+        "whatIs": "Tăng kích thước gói app.",
+        "whyWrong": "• Là gì? Tăng kích thước gói app.\n• Dùng để làm gì? Binary size — không liên quan tần suất setState.\n• Vì sao sai? setState không làm tăng kích thước APK; vấn đề là rebuild thừa."
+      },
+      "C": {
+        "option": "It blocks UI thread",
+        "optionsVi": "It blocks UI thread",
+        "whatIs": "Block UI isolate/thread.",
+        "whyWrong": "• Là gì? Block UI isolate/thread.\n• Dùng để làm gì? I/O nặng/sync; setState chủ yếu gây rebuild.\n• Vì sao sai? setState không block UI thread như I/O sync; nó xếp lịch rebuild."
+      },
+      "D": {
+        "option": "It causes memory leaks",
+        "optionsVi": "It causes memory leaks",
+        "whatIs": "Rò rỉ bộ nhớ.",
+        "whyWrong": "• Là gì? Rò rỉ bộ nhớ.\n• Dùng để làm gì? Thường dispose sai; setState vừa phải không «gây leak» như lý do chính.\n• Vì sao sai? Leak thường do không dispose; lý do «gọi vừa phải» là tránh rebuild không cần."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Tăng kích thước gói app.\n• Dùng để làm gì? Binary size — không liên quan tần suất setState.\n• Vì sao sai? setState không làm tăng kích thước APK; vấn đề là rebuild thừa.",
+      "C": "• Là gì? Block UI isolate/thread.\n• Dùng để làm gì? I/O nặng/sync; setState chủ yếu gây rebuild.\n• Vì sao sai? setState không block UI thread như I/O sync; nó xếp lịch rebuild.",
+      "D": "• Là gì? Rò rỉ bộ nhớ.\n• Dùng để làm gì? Thường dispose sai; setState vừa phải không «gây leak» như lý do chính.\n• Vì sao sai? Leak thường do không dispose; lý do «gọi vừa phải» là tránh rebuild không cần."
+    },
+    "memoryTip": "• Đổi state local → setState → rebuild.",
+    "intent": "• L3 — setState."
+  },
+  {
+    "label": "PRM L4 Nav/auth — Guard / deep link",
+    "id": 1,
+    "task": "re",
+    "answer": "B",
+    "question": "Which widget pattern protects authenticated routes?",
+    "options": {
+      "A": "Navigator",
+      "B": "Guard",
+      "C": "Route protection",
+      "D": "Middleware"
+    },
+    "optionsVi": {
+      "A": "Navigator",
+      "B": "Guard",
+      "C": "Bảo vệ route (mô tả chung)",
+      "D": "Middleware"
+    },
+    "questionVi": "Mẫu widget/pattern nào bảo vệ các route đã xác thực?",
+    "answerDisplay": "B. Guard",
+    "concept": "• Route Guard: chặn/cho phép vào route tùy trạng thái xác thực.",
+    "whyCorrect": "• Màn cần login chỉ mở khi đã auth; chưa login thì redirect login.\n• Navigator chỉ push/pop; Middleware là khái niệm web/server; «Route protection» chỉ mô tả chung.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Navigator — API điều hướng stack route (push/pop).\n• Dùng để làm gì? Chuyển màn, quản lý lịch sử route.\n• Vì sao sai? Navigator chỉ push/pop stack — không tự chặn route theo auth."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Navigator",
+        "optionsVi": "Navigator",
+        "whatIs": "Navigator — API điều hướng stack route (push/pop).",
+        "whyWrong": "• Là gì? Navigator — API điều hướng stack route (push/pop).\n• Dùng để làm gì? Chuyển màn, quản lý lịch sử route.\n• Vì sao sai? Navigator chỉ push/pop stack — không tự chặn route theo auth."
+      },
+      "C": {
+        "option": "Route protection",
+        "optionsVi": "Bảo vệ route (mô tả chung)",
+        "whatIs": "Cụm mô tả «bảo vệ route», không phải tên API/widget Flutter chuẩn.",
+        "whyWrong": "• Là gì? Cụm mô tả «bảo vệ route», không phải tên API/widget Flutter chuẩn.\n• Dùng để làm gì? Nói ý tưởng bảo vệ, không phải class cụ thể.\n• Vì sao sai? Chỉ mô tả chung, không phải tên pattern/widget cụ thể như Guard."
+      },
+      "D": {
+        "option": "Middleware",
+        "optionsVi": "Middleware",
+        "whatIs": "Middleware — pipeline web/server (Express, Next…).",
+        "whyWrong": "• Là gì? Middleware — pipeline web/server (Express, Next…).\n• Dùng để làm gì? Xử lý request/response phía server.\n• Vì sao sai? Middleware là khái niệm web/server, không phải pattern Guard Flutter chuẩn."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Navigator — API điều hướng stack route (push/pop).\n• Dùng để làm gì? Chuyển màn, quản lý lịch sử route.\n• Vì sao sai? Navigator chỉ push/pop stack — không tự chặn route theo auth.",
+      "C": "• Là gì? Cụm mô tả «bảo vệ route», không phải tên API/widget Flutter chuẩn.\n• Dùng để làm gì? Nói ý tưởng bảo vệ, không phải class cụ thể.\n• Vì sao sai? Chỉ mô tả chung, không phải tên pattern/widget cụ thể như Guard.",
+      "D": "• Là gì? Middleware — pipeline web/server (Express, Next…).\n• Dùng để làm gì? Xử lý request/response phía server.\n• Vì sao sai? Middleware là khái niệm web/server, không phải pattern Guard Flutter chuẩn."
+    },
+    "memoryTip": "• Guard = cửa auth · Navigator = cầu thang.",
+    "intent": "• L4 — phân biệt Guard vs Navigator vs Middleware."
+  },
+  {
+    "label": "PRM L5 Arch — BuildContext / 3 layers / Skia",
+    "id": 3,
+    "task": "re",
+    "answer": "B",
+    "question": "What is the role of BuildContext in Flutter?",
+    "options": {
+      "A": "Store application data",
+      "B": "Locate widgets in the widget tree",
+      "C": "Manage navigation history",
+      "D": "Render UI pixels"
+    },
+    "optionsVi": {
+      "A": "Lưu dữ liệu ứng dụng",
+      "B": "Định vị widget trên widget tree",
+      "C": "Quản lý lịch sử điều hướng",
+      "D": "Vẽ pixel UI"
+    },
+    "questionVi": "BuildContext đóng vai trò gì trong Flutter?",
+    "answerDisplay": "B. Định vị widget trên widget tree",
+    "concept": "• BuildContext là handle trỏ tới vị trí Element của widget trên widget tree.",
+    "whyCorrect": "• Dùng để tìm ancestor (Theme.of, MediaQuery, Navigator.of…) theo vị trí trên cây.\n• Không phải kho lưu data app, không vẽ pixel, không thay history navigation API.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Store application data — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? Context không phải kho lưu data app; chỉ là handle vị trí trên tree."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Store application data",
+        "optionsVi": "Lưu dữ liệu ứng dụng",
+        "whatIs": "Store application data — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Store application data — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? Context không phải kho lưu data app; chỉ là handle vị trí trên tree."
+      },
+      "C": {
+        "option": "Manage navigation history",
+        "optionsVi": "Quản lý lịch sử điều hướng",
+        "whatIs": "Manage navigation history — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Manage navigation history — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? Lịch sử route thuộc Navigator, không phải định nghĩa vai trò BuildContext."
+      },
+      "D": {
+        "option": "Render UI pixels",
+        "optionsVi": "Vẽ pixel UI",
+        "whatIs": "Render UI pixels — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Render UI pixels — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? Vẽ pixel là Engine/Skia — Context không render pixel."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Store application data — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? Context không phải kho lưu data app; chỉ là handle vị trí trên tree.",
+      "C": "• Là gì? Manage navigation history — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? Lịch sử route thuộc Navigator, không phải định nghĩa vai trò BuildContext.",
+      "D": "• Là gì? Render UI pixels — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? Vẽ pixel là Engine/Skia — Context không render pixel."
+    },
+    "memoryTip": "• UI = cây · Context = tọa độ trên cây.",
+    "intent": "• L5 — đúng vai trò BuildContext."
+  },
+  {
+    "label": "PRM L6 Dart — const / generics / collections",
+    "id": 53,
+    "task": "fe",
+    "answer": "C",
+    "question": "What happens if a non-nullable variable is not initialized in Dart?",
+    "options": {
+      "A": "The app runs normally",
+      "B": "A runtime exception occurs",
+      "C": "A compile-time error occurs",
+      "D": "The value becomes null automatically"
+    },
+    "optionsVi": {
+      "A": "The app runs normally",
+      "B": "A runtime exception occurs",
+      "C": "Xảy ra lỗi lúc biên dịch",
+      "D": "The value becomes null automatically"
+    },
+    "questionVi": "Điều gì xảy ra nếu biến non-nullable chưa được khởi tạo trong Dart?",
+    "answerDisplay": "C. Xảy ra lỗi lúc biên dịch",
+    "concept": "• Null safety: biến non-nullable phải được khởi tạo trước khi dùng — thường lỗi lúc biên dịch.",
+    "whyCorrect": "• Không «im lặng null» hay tự dynamic.\n• Compiler bắt thiếu init.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? The app runs normally — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «The app runs normally» không phải thứ đề cần (đáp án đúng hướng «A compile-time error occurs»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "The app runs normally",
+        "optionsVi": "The app runs normally",
+        "whatIs": "The app runs normally — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? The app runs normally — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «The app runs normally» không phải thứ đề cần (đáp án đúng hướng «A compile-time error occurs»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+      },
+      "B": {
+        "option": "A runtime exception occurs",
+        "optionsVi": "A runtime exception occurs",
+        "whatIs": "A runtime exception occurs — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? A runtime exception occurs — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «A runtime exception occurs» không phải thứ đề cần (đáp án đúng hướng «A compile-time error occurs»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+      },
+      "D": {
+        "option": "The value becomes null automatically",
+        "optionsVi": "The value becomes null automatically",
+        "whatIs": "The value becomes null automatically — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? The value becomes null automatically — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «The value becomes null automatically» không phải thứ đề cần (đáp án đúng hướng «A compile-time error occurs»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? The app runs normally — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «The app runs normally» không phải thứ đề cần (đáp án đúng hướng «A compile-time error occurs»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+      "B": "• Là gì? A runtime exception occurs — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «A runtime exception occurs» không phải thứ đề cần (đáp án đúng hướng «A compile-time error occurs»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+      "D": "• Là gì? The value becomes null automatically — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «The value becomes null automatically» không phải thứ đề cần (đáp án đúng hướng «A compile-time error occurs»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+    },
+    "memoryTip": "• Non-null → phải init.",
+    "intent": "• L6 — null safety."
+  },
+  {
+    "label": "PRM L7 Form/data/API",
+    "id": 19,
+    "task": "re",
+    "answer": "B",
+    "question": "What is Hive mainly used for?",
+    "options": {
+      "A": "Remote database",
+      "B": "Lightweight local NoSQL storage",
+      "C": "State management",
+      "D": "Routing"
+    },
+    "optionsVi": {
+      "A": "Remote database",
+      "B": "Lưu trữ NoSQL local nhẹ",
+      "C": "Quản lý state",
+      "D": "Routing"
+    },
+    "questionVi": "Hive chủ yếu dùng để làm gì?",
+    "answerDisplay": "B. Lưu trữ NoSQL local nhẹ",
+    "concept": "• Hive là kho NoSQL local nhẹ (box), đọc ghi nhanh trên device.",
+    "whyCorrect": "• Cache/local object; không phải thay Skia hay HTTP framing.\n• Khác SharedPreferences (KV đơn giản) và sqflite (SQL).",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Tầng CSDL / SQL.\n• Dùng để làm gì? Lưu trữ quan hệ, không animation UI.\n• Vì sao sai? «Remote database» không phải thứ đề cần (đúng loại lưu trữ); Lưu trữ quan hệ, không animation UI."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Remote database",
+        "optionsVi": "Remote database",
+        "whatIs": "Tầng CSDL / SQL.",
+        "whyWrong": "• Là gì? Tầng CSDL / SQL.\n• Dùng để làm gì? Lưu trữ quan hệ, không animation UI.\n• Vì sao sai? «Remote database» không phải thứ đề cần (đúng loại lưu trữ); Lưu trữ quan hệ, không animation UI."
+      },
+      "C": {
+        "option": "State management",
+        "optionsVi": "Quản lý state",
+        "whatIs": "State management — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? State management — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «State management» không phải thứ đề cần (đúng loại lưu trữ); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+      },
+      "D": {
+        "option": "Routing",
+        "optionsVi": "Routing",
+        "whatIs": "Routing — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Routing — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Routing» không phải thứ đề cần (đúng loại lưu trữ); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Tầng CSDL / SQL.\n• Dùng để làm gì? Lưu trữ quan hệ, không animation UI.\n• Vì sao sai? «Remote database» không phải thứ đề cần (đúng loại lưu trữ); Lưu trữ quan hệ, không animation UI.",
+      "C": "• Là gì? State management — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «State management» không phải thứ đề cần (đúng loại lưu trữ); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+      "D": "• Là gì? Routing — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Routing» không phải thứ đề cần (đúng loại lưu trữ); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+    },
+    "memoryTip": "• Hive = NoSQL local nhẹ.",
+    "intent": "• L7 — Hive."
+  },
+  {
+    "label": "PRM L8 Tool/test",
+    "id": 82,
+    "task": "fe",
+    "answer": "B",
+    "question": "What is the main purpose of hot reload in Flutter?",
+    "options": {
+      "A": "Improve runtime performance",
+      "B": "Instantly reflect code changes in UI",
+      "C": "Publish apps faster",
+      "D": "Reduce memory usage"
+    },
+    "optionsVi": {
+      "A": "cải thiện runtime hiệu năng",
+      "B": "Instantly reflect code changes in UI",
+      "C": "Publish apps faster",
+      "D": "giảm memory usage"
+    },
+    "questionVi": "Mục đích chính của hot reload trong Flutter?",
+    "answerDisplay": "B. Instantly reflect code changes in UI",
+    "concept": "• Hot reload nạp lại code UI gần như giữ state đang chạy để xem thay đổi nhanh.",
+    "whyCorrect": "• Khác hot restart (reset state) và khác ship store.\n• Mục tiêu dev tốc độ lặp UI.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Improve runtime performance — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Improve runtime performance» không phải thứ đề cần (xem đổi UI nhanh, giữ state); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Improve runtime performance",
+        "optionsVi": "cải thiện runtime hiệu năng",
+        "whatIs": "Improve runtime performance — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Improve runtime performance — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Improve runtime performance» không phải thứ đề cần (xem đổi UI nhanh, giữ state); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+      },
+      "C": {
+        "option": "Publish apps faster",
+        "optionsVi": "Publish apps faster",
+        "whatIs": "Publish apps faster — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Publish apps faster — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Publish apps faster» không phải thứ đề cần (xem đổi UI nhanh, giữ state); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+      },
+      "D": {
+        "option": "Reduce memory usage",
+        "optionsVi": "giảm memory usage",
+        "whatIs": "Reduce memory usage — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Reduce memory usage — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Reduce memory usage» không phải thứ đề cần (xem đổi UI nhanh, giữ state); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Improve runtime performance — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Improve runtime performance» không phải thứ đề cần (xem đổi UI nhanh, giữ state); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+      "C": "• Là gì? Publish apps faster — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Publish apps faster» không phải thứ đề cần (xem đổi UI nhanh, giữ state); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+      "D": "• Là gì? Reduce memory usage — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Reduce memory usage» không phải thứ đề cần (xem đổi UI nhanh, giữ state); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+    },
+    "memoryTip": "• Hot reload giữ state · Restart reset.",
+    "intent": "• L8 — hot reload."
+  },
+  {
+    "label": "PRM L9 UI shell — Theme / Scaffold / MediaQuery",
+    "id": 29,
+    "task": "re",
+    "answer": "B",
+    "question": "What is the primary purpose of ThemeData in Flutter?",
+    "options": {
+      "A": "Manage navigation",
+      "B": "Define application-wide visual styles",
+      "C": "Handle state changes",
+      "D": "Control animations"
+    },
+    "optionsVi": {
+      "A": "quản lý navigation",
+      "B": "Define application-wide visual styles",
+      "C": "Handle state changes",
+      "D": "Control animations"
+    },
+    "questionVi": "Mục đích chính của ThemeData trong Flutter?",
+    "answerDisplay": "B. Define application-wide visual styles",
+    "concept": "• ThemeData định nghĩa màu, typography và style component dùng chung.",
+    "whyCorrect": "• Không phải schema SQL hay module kernel.\n• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Vì vậy chọn «Define application-wide visual styles» khớp đề.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Manage navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Manage navigation» không phải thứ đề cần (style visual app); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Manage navigation",
+        "optionsVi": "quản lý navigation",
+        "whatIs": "Manage navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Manage navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Manage navigation» không phải thứ đề cần (style visual app); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+      },
+      "C": {
+        "option": "Handle state changes",
+        "optionsVi": "Handle state changes",
+        "whatIs": "Handle state changes — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Handle state changes — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Handle state changes» không phải thứ đề cần (style visual app); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+      },
+      "D": {
+        "option": "Control animations",
+        "optionsVi": "Control animations",
+        "whatIs": "Control animations — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Control animations — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Control animations» không phải thứ đề cần (style visual app); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Manage navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Manage navigation» không phải thứ đề cần (style visual app); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+      "C": "• Là gì? Handle state changes — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Handle state changes» không phải thứ đề cần (style visual app); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+      "D": "• Là gì? Control animations — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Control animations» không phải thứ đề cần (style visual app); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+    },
+    "memoryTip": "• ThemeData = skin app · gắn qua MaterialApp.",
+    "intent": "• L9 — theme."
+  },
+  {
+    "label": "PRM Why-best-practice",
+    "id": 2,
+    "task": "re",
+    "answer": "B",
+    "question": "Why are tests important for refactoring?",
+    "options": {
+      "A": "Reduce UI work",
+      "B": "Ensure changes don't break functionality",
+      "C": "Improve animations",
+      "D": "Change layout"
+    },
+    "optionsVi": {
+      "A": "Giảm công việc UI",
+      "B": "Đảm bảo thay đổi không phá chức năng",
+      "C": "Cải thiện animation",
+      "D": "Đổi layout"
+    },
+    "questionVi": "Vì sao việc viết test quan trọng khi refactor code?",
+    "answerDisplay": "B. Đảm bảo thay đổi không phá chức năng",
+    "concept": "• Test tự động bảo vệ hành vi khi refactor — đổi cấu trúc nhưng giữ behavior.",
+    "whyCorrect": "• Regression test báo ngay nếu sửa làm hỏng chức năng đã có.\n• Không nhằm giảm vẽ UI hay «đổi layout/animation».",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Giảm công việc vẽ/UI.\n• Dùng để làm gì? Tối ưu render, không phải lý do test refactor.\n• Vì sao sai? Test không nhằm giảm khối lượng vẽ UI."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Reduce UI work",
+        "optionsVi": "Giảm công việc UI",
+        "whatIs": "Giảm công việc vẽ/UI.",
+        "whyWrong": "• Là gì? Giảm công việc vẽ/UI.\n• Dùng để làm gì? Tối ưu render, không phải lý do test refactor.\n• Vì sao sai? Test không nhằm giảm khối lượng vẽ UI."
+      },
+      "C": {
+        "option": "Improve animations",
+        "optionsVi": "Cải thiện animation",
+        "whatIs": "Cải thiện animation UI.",
+        "whyWrong": "• Là gì? Cải thiện animation UI.\n• Dùng để làm gì? Trải nghiệm chuyển động, không thay test/refactor.\n• Vì sao sai? Animation đẹp hơn không bảo vệ hành vi khi đổi cấu trúc code."
+      },
+      "D": {
+        "option": "Change layout",
+        "optionsVi": "Đổi layout",
+        "whatIs": "Đổi bố cục UI.",
+        "whyWrong": "• Là gì? Đổi bố cục UI.\n• Dùng để làm gì? Sửa layout, không phải mục tiêu test refactor.\n• Vì sao sai? Đổi layout là kiểu sửa UI; test nhằm lưới an toàn chức năng, không «để đổi layout»."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Giảm công việc vẽ/UI.\n• Dùng để làm gì? Tối ưu render, không phải lý do test refactor.\n• Vì sao sai? Test không nhằm giảm khối lượng vẽ UI.",
+      "C": "• Là gì? Cải thiện animation UI.\n• Dùng để làm gì? Trải nghiệm chuyển động, không thay test/refactor.\n• Vì sao sai? Animation đẹp hơn không bảo vệ hành vi khi đổi cấu trúc code.",
+      "D": "• Là gì? Đổi bố cục UI.\n• Dùng để làm gì? Sửa layout, không phải mục tiêu test refactor.\n• Vì sao sai? Đổi layout là kiểu sửa UI; test nhằm lưới an toàn chức năng, không «để đổi layout»."
+    },
+    "memoryTip": "• Refactor = đổi form, giữ behavior → test là lưới an toàn.",
+    "intent": "• L8/L9 — why tests."
+  },
+  {
+    "label": "PRM §6.2 CLI",
+    "id": 54,
+    "task": "fe",
+    "answer": "B",
+    "question": "Which command builds a release APK?",
+    "options": {
+      "A": "flutter run",
+      "B": "flutter build apk",
+      "C": "flutter doctor",
+      "D": "flutter clean"
+    },
+    "optionsVi": {
+      "A": "flutter run",
+      "B": "flutter build apk",
+      "C": "flutter doctor",
+      "D": "flutter clean"
+    },
+    "questionVi": "Lệnh nào build APK bản release?",
+    "answerDisplay": "B. flutter build apk",
+    "concept": "• `flutter build apk` tạo gói Android APK bản release.",
+    "whyCorrect": "• Lệnh build APK release chính thức của Flutter CLI.\n• `flutter run` = dev; `flutter doctor` = môi trường; `flutter clean` = xóa cache.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? flutter run — chạy app dev/debug.\n• Dùng để làm gì? Debug trên device/emulator.\n• Vì sao sai? Chạy dev/debug — không tạo APK release."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "flutter run",
+        "optionsVi": "flutter run",
+        "whatIs": "flutter run — chạy app dev/debug.",
+        "whyWrong": "• Là gì? flutter run — chạy app dev/debug.\n• Dùng để làm gì? Debug trên device/emulator.\n• Vì sao sai? Chạy dev/debug — không tạo APK release."
+      },
+      "C": {
+        "option": "flutter doctor",
+        "optionsVi": "flutter doctor",
+        "whatIs": "flutter doctor — kiểm tra SDK/PATH/toolchain.",
+        "whyWrong": "• Là gì? flutter doctor — kiểm tra SDK/PATH/toolchain.\n• Dùng để làm gì? Verify môi trường.\n• Vì sao sai? Chỉ kiểm tra môi trường — không build APK."
+      },
+      "D": {
+        "option": "flutter clean",
+        "optionsVi": "flutter clean",
+        "whatIs": "flutter clean — xóa build cache.",
+        "whyWrong": "• Là gì? flutter clean — xóa build cache.\n• Dùng để làm gì? Làm sạch trước rebuild.\n• Vì sao sai? Chỉ xóa cache build — không sinh APK."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? flutter run — chạy app dev/debug.\n• Dùng để làm gì? Debug trên device/emulator.\n• Vì sao sai? Chạy dev/debug — không tạo APK release.",
+      "C": "• Là gì? flutter doctor — kiểm tra SDK/PATH/toolchain.\n• Dùng để làm gì? Verify môi trường.\n• Vì sao sai? Chỉ kiểm tra môi trường — không build APK.",
+      "D": "• Là gì? flutter clean — xóa build cache.\n• Dùng để làm gì? Làm sạch trước rebuild.\n• Vì sao sai? Chỉ xóa cache build — không sinh APK."
+    },
+    "memoryTip": "• Build release APK: flutter build apk.",
+    "intent": "• L4/L8 — nhận đúng lệnh CLI theo mục tiêu build vs verify vs run."
+  },
+  {
+    "label": "PRM §6.3 Composite AOT+JIT",
+    "id": 109,
+    "task": "slides",
+    "answer": "C",
+    "question": "Dart in Flutter is described as supporting which compilation modes?",
+    "options": {
+      "A": "Only interpreted BASIC",
+      "B": "Only COBOL batch",
+      "C": "AOT and JIT compilation",
+      "D": "Only assembly hand-writing"
+    },
+    "optionsVi": {
+      "A": "Chỉ BASIC thông dịch",
+      "B": "Chỉ COBOL batch",
+      "C": "Biên dịch AOT và JIT",
+      "D": "Chỉ viết assembly tay"
+    },
+    "questionVi": "Dart trong Flutter được mô tả hỗ trợ chế độ biên dịch nào?",
+    "answerDisplay": "C. Biên dịch AOT và JIT",
+    "concept": "• Dart/Flutter hỗ trợ hai chế độ biên dịch: JIT (dev) và AOT (release).",
+    "whyCorrect": "• JIT: biên dịch khi chạy — hỗ trợ hot reload lúc phát triển.\n• AOT: biên dịch trước khi phát hành — tối ưu hiệu năng release.\n• Vì Dart hỗ trợ cả hai chế độ nên đáp án là AOT and JIT.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Only interpreted BASIC — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? BASIC thông dịch là ngôn ngữ/cách chạy khác — không phải chế độ biên dịch Dart (JIT/AOT)."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Only interpreted BASIC",
+        "optionsVi": "Chỉ BASIC thông dịch",
+        "whatIs": "Only interpreted BASIC — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Only interpreted BASIC — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? BASIC thông dịch là ngôn ngữ/cách chạy khác — không phải chế độ biên dịch Dart (JIT/AOT)."
+      },
+      "B": {
+        "option": "Only COBOL batch",
+        "optionsVi": "Chỉ COBOL batch",
+        "whatIs": "Only COBOL batch — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? Only COBOL batch — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? COBOL batch là stack legacy/mainframe — không mô tả Dart hỗ trợ JIT + AOT."
+      },
+      "D": {
+        "option": "Only assembly hand-writing",
+        "optionsVi": "Chỉ viết assembly tay",
+        "whatIs": "Only assembly hand-writing — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+        "whyWrong": "• Là gì? Only assembly hand-writing — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? Viết assembly tay không phải workflow biên dịch Flutter/Dart (JIT dev, AOT release)."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Only interpreted BASIC — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? BASIC thông dịch là ngôn ngữ/cách chạy khác — không phải chế độ biên dịch Dart (JIT/AOT).",
+      "B": "• Là gì? Only COBOL batch — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? COBOL batch là stack legacy/mainframe — không mô tả Dart hỗ trợ JIT + AOT.",
+      "D": "• Là gì? Only assembly hand-writing — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? Viết assembly tay không phải workflow biên dịch Flutter/Dart (JIT dev, AOT release)."
+    },
+    "memoryTip": "• JIT = dev/hot reload · AOT = release.",
+    "intent": "• L8/L6 — nhận đúng cặp chế độ biên dịch Dart (rule 6.3)."
+  },
+  {
+    "label": "PRM §6.0b pattern reason (singleton factory)",
+    "id": 128,
+    "task": "slides",
+    "answer": "B",
+    "question": "Which is a valid reason to use a singleton via factory?",
+    "options": {
+      "A": "To create millions of identical DB connections every frame",
+      "B": "To reuse one shared service instance",
+      "C": "To avoid all state management",
+      "D": "To replace Navigator"
+    },
+    "optionsVi": {
+      "A": "To create millions of identical DB connections every frame",
+      "B": "Tái sử dụng một instance service dùng chung",
+      "C": "To avoid all state management",
+      "D": "To replace Navigator"
+    },
+    "questionVi": "Lý do hợp lệ nào để dùng singleton qua factory?",
+    "answerDisplay": "B. Tái sử dụng một instance service dùng chung",
+    "concept": "• Singleton via factory: factory constructor trả về cùng một instance dùng chung, không new mỗi lần.",
+    "whyCorrect": "• Các chỗ inject/gọi nhận cùng service object.\n• Vì vậy «reuse one shared service instance» là lý do hợp lệ — không phải tạo mới mỗi call hay tắt null safety.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? To create millions of identical DB connections every frame — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? «To create millions of identical DB connection…» không phải thứ đề cần (đáp án đúng hướng «To reuse one shared service instance»); Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "To create millions of identical DB connections every frame",
+        "optionsVi": "To create millions of identical DB connections every frame",
+        "whatIs": "To create millions of identical DB connections every frame — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+        "whyWrong": "• Là gì? To create millions of identical DB connections every frame — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? «To create millions of identical DB connection…» không phải thứ đề cần (đáp án đúng hướng «To reuse one shared service instance»); Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại."
+      },
+      "C": {
+        "option": "To avoid all state management",
+        "optionsVi": "To avoid all state management",
+        "whatIs": "To avoid all state management — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+        "whyWrong": "• Là gì? To avoid all state management — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «To avoid all state management» không phải thứ đề cần (đáp án đúng hướng «To reuse one shared service instance»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+      },
+      "D": {
+        "option": "To replace Navigator",
+        "optionsVi": "To replace Navigator",
+        "whatIs": "Navigator — API điều hướng stack route (push/pop).",
+        "whyWrong": "• Là gì? Navigator — API điều hướng stack route (push/pop).\n• Dùng để làm gì? Chuyển màn, quản lý lịch sử route.\n• Vì sao sai? «To replace Navigator» không phải thứ đề cần (đáp án đúng hướng «To reuse one shared service instance»); Chuyển màn, quản lý lịch sử route."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? To create millions of identical DB connections every frame — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? «To create millions of identical DB connection…» không phải thứ đề cần (đáp án đúng hướng «To reuse one shared service instance»); Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.",
+      "C": "• Là gì? To avoid all state management — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «To avoid all state management» không phải thứ đề cần (đáp án đúng hướng «To reuse one shared service instance»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+      "D": "• Là gì? Navigator — API điều hướng stack route (push/pop).\n• Dùng để làm gì? Chuyển màn, quản lý lịch sử route.\n• Vì sao sai? «To replace Navigator» không phải thứ đề cần (đáp án đúng hướng «To reuse one shared service instance»); Chuyển màn, quản lý lịch sử route."
+    },
+    "memoryTip": "• Factory singleton = một instance dùng chung.",
+    "intent": "• L6 — singleton/factory (rule 6.0b)."
+  },
+  {
+    "label": "JFE J1 OS / process scenario",
+    "id": 1,
+    "task": "test",
+    "answer": "A",
+    "question": "A process is waiting for data from a disk drive before continuing execution. Which state is the process most likely in?",
+    "options": {
+      "A": "Waiting",
+      "B": "Suspended",
+      "C": "Terminated",
+      "D": "New"
+    },
+    "optionsVi": {
+      "A": "đang chờ",
+      "B": "Tạm dừng",
+      "C": "đã kết thúc",
+      "D": "Mới"
+    },
+    "questionVi": "Tiến trình đang chờ dữ liệu từ đĩa trước khi chạy tiếp. Thường ở trạng thái nào?",
+    "answerDisplay": "A. Waiting (chờ I/O/sự kiện)",
+    "concept": "• Trạng thái tiến trình đang chờ sự kiện ngoài (I/O, khóa, dữ liệu).",
+    "whyCorrect": "• Trạng thái tiến trình đang chờ sự kiện ngoài (I/O, khóa, dữ liệu).\n• Nhường CPU cho tiến trình khác trong lúc chờ.",
+    "whyWrongOne": {
+      "letter": "B",
+      "text": "• Là gì? Khái niệm/API «Suspended» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Suspended» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "B": {
+        "option": "Suspended",
+        "optionsVi": "Tạm dừng",
+        "whatIs": "Tiến trình bị tạm dừng (thường swap ra bộ nhớ phụ), không lập lịch ngay.",
+        "whyWrong": "• Là gì? Khái niệm/API «Suspended» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Suspended» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "C": {
+        "option": "Terminated",
+        "optionsVi": "đã kết thúc",
+        "whatIs": "Tiến trình đã kết thúc; OS không còn lập lịch nó.",
+        "whyWrong": "• Là gì? Khái niệm/API «Terminated» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Terminated» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "D": {
+        "option": "New",
+        "optionsVi": "Mới",
+        "whatIs": "Trạng thái/khái niệm OS liên quan «New».",
+        "whyWrong": "• Là gì? Trạng thái/khái niệm OS liên quan «New».\n• Dùng để làm gì? Gắn vòng đời tiến trình, lập lịch CPU hoặc chờ I/O.\n• Vì sao sai? New là vừa tạo; đề tả tiến trình đã chạy rồi mới chờ dữ liệu."
+      }
+    },
+    "whyWrongAll": {
+      "B": "• Là gì? Khái niệm/API «Suspended» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Suspended» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "C": "• Là gì? Khái niệm/API «Terminated» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Terminated» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "D": "• Là gì? Trạng thái/khái niệm OS liên quan «New».\n• Dùng để làm gì? Gắn vòng đời tiến trình, lập lịch CPU hoặc chờ I/O.\n• Vì sao sai? New là vừa tạo; đề tả tiến trình đã chạy rồi mới chờ dữ liệu."
+    },
+    "memoryTip": "• Waiting = chờ sự kiện/I/O; Ready = chờ CPU.",
+    "intent": "• OS quản lý tiến trình qua các trạng thái.\n• Chờ I/O (Waiting) khác chờ CPU (Ready) và khác Suspended."
+  },
+  {
+    "label": "JFE J2 Network",
+    "id": 158,
+    "task": "bank300",
+    "answer": "D",
+    "question": "DNS role?",
+    "options": {
+      "A": "Hub",
+      "B": "Bridge",
+      "C": "Gateway",
+      "D": "Name <-> IP"
+    },
+    "optionsVi": {
+      "A": "Hub (bộ tập trung tầng 1)",
+      "B": "Bridge (cầu nối tầng 2 / MAC)",
+      "C": "Gateway",
+      "D": "Name <-> IP"
+    },
+    "questionVi": "Vai trò của DNS?",
+    "answerDisplay": "D. Name <-> IP",
+    "concept": "• Hệ thống phân giải tên miền thành địa chỉ IP.",
+    "whyCorrect": "• Hệ thống phân giải tên miền thành địa chỉ IP.\n• Người dùng dùng tên dễ nhớ thay vì số IP.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Bộ tập trung tầng 1, chia sẻ collision domain.\n• Dùng để làm gì? Bộ tập trung tầng 1, chia sẻ collision domain.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Hub",
+        "optionsVi": "Hub (bộ tập trung tầng 1)",
+        "whatIs": "Bộ tập trung tầng 1: phát lại tín hiệu ra mọi cổng (shared medium).",
+        "whyWrong": "• Là gì? Bộ tập trung tầng 1, chia sẻ collision domain.\n• Dùng để làm gì? Bộ tập trung tầng 1, chia sẻ collision domain.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "B": {
+        "option": "Bridge",
+        "optionsVi": "Bridge (cầu nối tầng 2 / MAC)",
+        "whatIs": "Bridge (cầu nối tầng 2 / MAC)",
+        "whyWrong": "• Là gì? Cầu nối tầng 2, lọc/chuyển theo MAC.\n• Dùng để làm gì? Cầu nối tầng 2, lọc/chuyển theo MAC.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "C": {
+        "option": "Gateway",
+        "optionsVi": "Gateway",
+        "whatIs": "Cơ chế/thuật ngữ CNTT «Gateway».",
+        "whyWrong": "• Là gì? Cổng kết nối giữa các miền mạng/giao thức.\n• Dùng để làm gì? Cổng kết nối giữa các miền mạng/giao thức.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Bộ tập trung tầng 1, chia sẻ collision domain.\n• Dùng để làm gì? Bộ tập trung tầng 1, chia sẻ collision domain.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "B": "• Là gì? Cầu nối tầng 2, lọc/chuyển theo MAC.\n• Dùng để làm gì? Cầu nối tầng 2, lọc/chuyển theo MAC.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "C": "• Là gì? Cổng kết nối giữa các miền mạng/giao thức.\n• Dùng để làm gì? Cổng kết nối giữa các miền mạng/giao thức.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": null,
+    "intent": "• Hệ thống phân giải tên miền thành địa chỉ IP.\n• Người dùng dùng tên dễ nhớ thay vì số IP."
+  },
+  {
+    "label": "JFE J3 Database",
+    "id": 7,
+    "task": "test",
+    "answer": "A",
+    "question": "Which SQL command removes a table definition and its data?",
+    "options": {
+      "A": "DROP TABLE",
+      "B": "TRUNCATE",
+      "C": "UPDATE",
+      "D": "DELETE"
+    },
+    "optionsVi": {
+      "A": "DROP TABLE",
+      "B": "TRUNCATE",
+      "C": "UPDATE",
+      "D": "Xóa"
+    },
+    "questionVi": "Cái nào SQL command removes bảng definition and dữ liệu?",
+    "answerDisplay": "A. DROP TABLE",
+    "concept": "• Thao tác/giao dịch trên cơ sở dữ liệu quan hệ.",
+    "whyCorrect": "• Thao tác/giao dịch trên cơ sở dữ liệu quan hệ.\n• Lưu trữ và truy vấn dữ liệu bền vững; không thuộc widget tree UI.",
+    "whyWrongOne": {
+      "letter": "B",
+      "text": "• Là gì? Khái niệm/API «TRUNCATE» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «TRUNCATE» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "B": {
+        "option": "TRUNCATE",
+        "optionsVi": "TRUNCATE",
+        "whatIs": "Cụm «TRUNCATE» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyWrong": "• Là gì? Khái niệm/API «TRUNCATE» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «TRUNCATE» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "C": {
+        "option": "UPDATE",
+        "optionsVi": "UPDATE",
+        "whatIs": "Cụm «UPDATE» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyWrong": "• Là gì? Khái niệm/API «UPDATE» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «UPDATE» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "D": {
+        "option": "DELETE",
+        "optionsVi": "Xóa",
+        "whatIs": "Cụm «DELETE» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyWrong": "• Là gì? Phương thức HTTP xóa tài nguyên.\n• Dùng để làm gì? Phương thức HTTP xóa tài nguyên.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "B": "• Là gì? Khái niệm/API «TRUNCATE» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «TRUNCATE» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "C": "• Là gì? Khái niệm/API «UPDATE» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «UPDATE» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "D": "• Là gì? Phương thức HTTP xóa tài nguyên.\n• Dùng để làm gì? Phương thức HTTP xóa tài nguyên.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": null,
+    "intent": "• Thao tác/giao dịch trên cơ sở dữ liệu quan hệ.\n• Lưu trữ và truy vấn dữ liệu bền vững; không thuộc widget tree UI."
+  },
+  {
+    "label": "JFE J4 Math / check digit / expression",
+    "id": 212,
+    "task": "bank300",
+    "answer": "C",
+    "question": "Postfix of A+B*C?",
+    "options": {
+      "A": "Reduce hardware cost",
+      "B": "Align IT with business goals",
+      "C": "ABC*+",
+      "D": "Minimize storage devices"
+    },
+    "optionsVi": {
+      "A": "Giảm chi phí phần cứng",
+      "B": "Căn chỉnh IT với mục tiêu kinh doanh",
+      "C": "ABC*+",
+      "D": "Giảm thiểu lưu trữ thiết bị"
+    },
+    "questionVi": "Hậu tố A+B*C?",
+    "answerDisplay": "C. ABC*+",
+    "concept": "• Postfix (RPN): toán hạng trước, toán tử sau; × ưu tiên hơn +.",
+    "whyCorrect": "• A + B * C: nhân trước → B C * rồi cộng A → A (B C *) +.\n• Postfix: A B C * + → viết ABC*+.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Reduce hardware cost\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Reduce hardware cost",
+        "optionsVi": "Giảm chi phí phần cứng",
+        "whatIs": "Phần mềm quản lý phần cứng, tiến trình, bộ nhớ, I/O.",
+        "whyWrong": "• Là gì? Reduce hardware cost\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "B": {
+        "option": "Align IT with business goals",
+        "optionsVi": "Căn chỉnh IT với mục tiêu kinh doanh",
+        "whatIs": "Align IT với business goals",
+        "whyWrong": "• Là gì? Align IT with business goals\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "D": {
+        "option": "Minimize storage devices",
+        "optionsVi": "Giảm thiểu lưu trữ thiết bị",
+        "whatIs": "Minimize lưu trữ devices",
+        "whyWrong": "• Là gì? Minimize storage devices\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Reduce hardware cost\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "B": "• Là gì? Align IT with business goals\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "D": "• Là gì? Minimize storage devices\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": "• A+B*C → ABC*+ (không phải AB+C*).",
+    "intent": "• Phần mềm quản lý phần cứng, tiến trình, bộ nhớ, I/O.\n• Cấp tài nguyên và lập lịch cho chương trình."
+  },
+  {
+    "label": "JFE J5 Project mgmt",
+    "id": 40,
+    "task": "test",
+    "answer": "B",
+    "question": "Which of the following is an appropriate description of risk assessment?",
+    "options": {
+      "A": "GPU",
+      "B": "Since it requires too much time and expense to address all conceivable risks, an organization should forecast the loss values and frequency of occurrence, and rank risks in order of size.",
+      "C": "Register",
+      "D": "DMA controller"
+    },
+    "optionsVi": {
+      "A": "GPU",
+      "B": "Không xử lý hết mọi rủi ro; ước lượng thiệt hại & tần suất, xếp hạng rủi ro theo mức độ.",
+      "C": "Register",
+      "D": "DMA controller"
+    },
+    "questionVi": "Đâu là mô tả risk assessment?",
+    "answerDisplay": "B. Không xử lý hết mọi rủi ro; ước lượng thiệt hại & tần suất, xếp hạng rủi ro theo mức độ.",
+    "concept": "• Phần mềm quản lý phần cứng, tiến trình, bộ nhớ, I/O.",
+    "whyCorrect": "• Phần mềm quản lý phần cứng, tiến trình, bộ nhớ, I/O.\n• Cấp tài nguyên và lập lịch cho chương trình.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Khái niệm/API «GPU» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «GPU» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "GPU",
+        "optionsVi": "GPU",
+        "whatIs": "Cụm «GPU» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyWrong": "• Là gì? Khái niệm/API «GPU» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «GPU» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "C": {
+        "option": "Register",
+        "optionsVi": "Register",
+        "whatIs": "Cụm «Register» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyWrong": "• Là gì? Khái niệm/API «Register» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Register» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "D": {
+        "option": "DMA controller",
+        "optionsVi": "DMA controller",
+        "whatIs": "Cụm «DMA controller» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyWrong": "• Là gì? DMA controller\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Khái niệm/API «GPU» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «GPU» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "C": "• Là gì? Khái niệm/API «Register» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Register» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "D": "• Là gì? DMA controller\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": null,
+    "intent": "• Phần mềm quản lý phần cứng, tiến trình, bộ nhớ, I/O.\n• Cấp tài nguyên và lập lịch cho chương trình."
+  },
+  {
+    "label": "JFE J6 Compiler / interpreter",
+    "id": 5,
+    "task": "test",
+    "answer": "A",
+    "question": "A compiler translates a source program containing 20,000 lines of code. Which statement best describes the compilation process?",
+    "options": {
+      "A": "The entire source program is translated before execution",
+      "B": "High-level language only",
+      "C": "Statements are translated and executed one by one",
+      "D": "Only comments are translated"
+    },
+    "optionsVi": {
+      "A": "Toàn bộ chương trình nguồn được dịch trước khi thực thi",
+      "B": "Chỉ ngôn ngữ bậc cao",
+      "C": "Từng câu lệnh được dịch và thực thi tuần tự (interpreter)",
+      "D": "Chỉ dịch phần chú thích"
+    },
+    "questionVi": "Compiler dịch chương trình nguồn 20.000 dòng. Phát biểu nào mô tả đúng nhất quá trình biên dịch?",
+    "answerDisplay": "A. Toàn bộ chương trình nguồn được dịch trước khi thực thi",
+    "concept": "• Chương trình dịch toàn bộ mã nguồn sang mã đích trước khi chạy.",
+    "whyCorrect": "• Chương trình dịch toàn bộ mã nguồn sang mã đích trước khi chạy.",
+    "whyWrongOne": {
+      "letter": "B",
+      "text": "• Là gì? High-level language only\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "B": {
+        "option": "High-level language only",
+        "optionsVi": "Chỉ ngôn ngữ bậc cao",
+        "whatIs": "Phát biểu lệch về compiler/interpreter: «High-level language only».",
+        "whyWrong": "• Là gì? High-level language only\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "C": {
+        "option": "Statements are translated and executed one by one",
+        "optionsVi": "Từng câu lệnh được dịch và thực thi tuần tự (interpreter)",
+        "whatIs": "Statements là translated và executed một bằng một",
+        "whyWrong": "• Là gì? Statements are translated and executed one by one\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "D": {
+        "option": "Only comments are translated",
+        "optionsVi": "Chỉ dịch phần chú thích",
+        "whatIs": "Phát biểu lệch về compiler/interpreter: «Only comments are translated».",
+        "whyWrong": "• Là gì? Only comments are translated\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "B": "• Là gì? High-level language only\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "C": "• Là gì? Statements are translated and executed one by one\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "D": "• Là gì? Only comments are translated\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": "• Waiting = chờ sự kiện/I/O; Ready = chờ CPU.",
+    "intent": "• OS quản lý tiến trình qua các trạng thái.\n• Chờ I/O (Waiting) khác chờ CPU (Ready) và khác Suspended."
+  },
+  {
+    "label": "JFE J7 Security",
+    "id": 30,
+    "task": "test",
+    "answer": "D",
+    "question": "Which of the following is biometric authentication that uses information which can be obtained from the human eye?",
+    "options": {
+      "A": "Confidentiality",
+      "B": "Non-repudiation",
+      "C": "Authorization",
+      "D": "Iris authentication"
+    },
+    "optionsVi": {
+      "A": "Tính bí mật",
+      "B": "Non-repudiation",
+      "C": "ủy quyền",
+      "D": "Iris xác thực"
+    },
+    "questionVi": "Xác thực sinh trắc nào dùng thông tin lấy từ mắt người?",
+    "answerDisplay": "D. Iris xác thực",
+    "concept": "• Bảo mật client: token/credential và kiểm soát truy cập dữ liệu user.",
+    "whyCorrect": "• Bảo vệ dữ liệu và chỉ cho phép thao tác khi đã xác thực đúng.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Khái niệm/API «Confidentiality» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Confidentiality» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Confidentiality",
+        "optionsVi": "Tính bí mật",
+        "whatIs": "Cụm «Confidentiality» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyWrong": "• Là gì? Khái niệm/API «Confidentiality» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Confidentiality» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "B": {
+        "option": "Non-repudiation",
+        "optionsVi": "Non-repudiation",
+        "whatIs": "Cụm «Non-repudiation» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyWrong": "• Là gì? Non-repudiation\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "C": {
+        "option": "Authorization",
+        "optionsVi": "ủy quyền",
+        "whatIs": "Authorization (thường mang access token)",
+        "whyWrong": "• Là gì? Khái niệm/API «Authorization» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Authorization» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Khái niệm/API «Confidentiality» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Confidentiality» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "B": "• Là gì? Non-repudiation\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "C": "• Là gì? Khái niệm/API «Authorization» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Authorization» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": null,
+    "intent": "• Cụm «Iris xác thực» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm."
+  },
+  {
+    "label": "JFE J8 SE / license",
+    "id": 31,
+    "task": "test",
+    "answer": "C",
+    "question": "A company wants software that can be legally copied and used without purchasing a license fee. Which category is most appropriate?",
+    "options": {
+      "A": "Middleware",
+      "B": "To remove multimedia functions",
+      "C": "Open-source software",
+      "D": "Application software"
+    },
+    "optionsVi": {
+      "A": "Middleware",
+      "B": "để Gỡ bỏ multimedia hàm",
+      "C": "Mã nguồn mở phần mềm",
+      "D": "Phần mềm ứng dụng"
+    },
+    "questionVi": "Muốn phần mềm được sao chép/dùng hợp pháp không trả phí license. Nhóm nào phù hợp?",
+    "answerDisplay": "C. Open-mã nguồn software",
+    "concept": "• Phần mềm quản lý phần cứng, tiến trình, bộ nhớ, I/O.",
+    "whyCorrect": "• Phần mềm quản lý phần cứng, tiến trình, bộ nhớ, I/O.\n• Cấp tài nguyên và lập lịch cho chương trình.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Khái niệm/API «Middleware» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Middleware» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Middleware",
+        "optionsVi": "Middleware",
+        "whatIs": "Middleware",
+        "whyWrong": "• Là gì? Khái niệm/API «Middleware» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Middleware» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "B": {
+        "option": "To remove multimedia functions",
+        "optionsVi": "để Gỡ bỏ multimedia hàm",
+        "whatIs": "Cụm «để Gỡ bỏ multimedia hàm» mang một nghĩa riêng cần đối chiếu với đề.",
+        "whyWrong": "• Là gì? To remove multimedia functions\n• Dùng để làm gì? Mô tả một lý do/hành vi — cần đối chiếu đúng pattern đề hỏi.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "D": {
+        "option": "Application software",
+        "optionsVi": "Phần mềm ứng dụng",
+        "whatIs": "Application software",
+        "whyWrong": "• Là gì? Application software\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Khái niệm/API «Middleware» — đối chiếu đúng vai trò với đề.\n• Dùng để làm gì? Khái niệm/API «Middleware» — đối chiếu đúng vai trò với đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "B": "• Là gì? To remove multimedia functions\n• Dùng để làm gì? Mô tả một lý do/hành vi — cần đối chiếu đúng pattern đề hỏi.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "D": "• Là gì? Application software\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": null,
+    "intent": "• Phần mềm quản lý phần cứng, tiến trình, bộ nhớ, I/O.\n• Cấp tài nguyên và lập lịch cho chương trình."
+  },
+  {
+    "label": "JFE domain ROI (P2 dictionary)",
+    "id": 640,
+    "task": "books",
+    "answer": "A",
+    "question": "ROI measures roughly:",
+    "options": {
+      "A": "Return relative to investment",
+      "B": "Only packet loss",
+      "C": "Only cache hit ratio always",
+      "D": "Only page faults"
+    },
+    "optionsVi": {
+      "A": "Lợi nhuận / suất sinh lời so với vốn đầu tư",
+      "B": "Gói tin loss",
+      "C": "Cache hit ratio luôn",
+      "D": "Lỗi trang"
+    },
+    "questionVi": "ROI đo gần đúng điều gì?",
+    "answerDisplay": "A. Lợi nhuận / suất sinh lời so với vốn đầu tư",
+    "concept": "• Lợi nhuận / suất sinh lời so với vốn đầu tư",
+    "whyCorrect": "• Lợi nhuận / suất sinh lời so với vốn đầu tư",
+    "whyWrongOne": {
+      "letter": "B",
+      "text": "• Là gì? Only packet loss\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "B": {
+        "option": "Only packet loss",
+        "optionsVi": "Gói tin loss",
+        "whatIs": "Gói dữ liệu có header + payload để truyền trên mạng chuyển mạch gói.",
+        "whyWrong": "• Là gì? Only packet loss\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "C": {
+        "option": "Only cache hit ratio always",
+        "optionsVi": "Cache hit ratio luôn",
+        "whatIs": "Tỉ lệ truy vấn trúng bộ nhớ đệm (cache hit ratio).",
+        "whyWrong": "• Là gì? Only cache hit ratio always\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "D": {
+        "option": "Only page faults",
+        "optionsVi": "Lỗi trang",
+        "whatIs": "Lỗi trang: trang nhớ ảo chưa có trong RAM, OS phải nạp.",
+        "whyWrong": "• Là gì? Only page faults\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "B": "• Là gì? Only packet loss\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "C": "• Là gì? Only cache hit ratio always\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "D": "• Là gì? Only page faults\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": "• ROI = Return On Investment ≈ lợi nhuận / vốn đầu tư.\n• Không phải packet loss / cache hit / page fault.",
+    "intent": "• ROI = lợi nhuận / vốn đầu tư (chỉ số tài chính).\n• Loại metric mạng/OS (packet loss, cache hit, page fault)."
+  },
+  {
+    "label": "MLN M1 Định nghĩa",
+    "id": 28,
+    "task": "all",
+    "answer": "B",
+    "question": "Kinh tế thị trường được hiểu là",
+    "options": {
+      "A": "Do chủ nghĩa tư bản sinh ra",
+      "B": "Có cùng bản chất với kinh tế hàng hóa",
+      "C": "Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội",
+      "D": "Là sản phẩm riêng của chủ nghĩa tư bản"
+    },
+    "optionsVi": {
+      "A": "Do chủ nghĩa tư bản sinh ra",
+      "B": "Có cùng bản chất với kinh tế hàng hóa",
+      "C": "Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội",
+      "D": "Là sản phẩm riêng của chủ nghĩa tư bản"
+    },
+    "questionVi": "Kinh tế thị trường được hiểu là",
+    "answerDisplay": "B. Có cùng bản chất với kinh tế hàng hóa",
+    "concept": "• Sản phẩm lao động nhằm trao đổi trên thị trường.",
+    "whyCorrect": "• Sản phẩm lao động nhằm trao đổi trên thị trường.\n• Mang giá trị sử dụng và giá trị.\n• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin. Cơ chế thị trường, cạnh tranh và quan hệ cung–cầu trong nền kinh tế hàng hóa.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Do chủ nghĩa tư bản sinh ra\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Do chủ nghĩa tư bản sinh ra",
+        "optionsVi": "Do chủ nghĩa tư bản sinh ra",
+        "whatIs": "Do chủ nghĩa tư bản sinh ra",
+        "whyWrong": "• Là gì? Do chủ nghĩa tư bản sinh ra\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "C": {
+        "option": "Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội",
+        "optionsVi": "Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội",
+        "whatIs": "Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội",
+        "whyWrong": "• Là gì? Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "D": {
+        "option": "Là sản phẩm riêng của chủ nghĩa tư bản",
+        "optionsVi": "Là sản phẩm riêng của chủ nghĩa tư bản",
+        "whatIs": "Là sản phẩm riêng của chủ nghĩa tư bản",
+        "whyWrong": "• Là gì? Là sản phẩm riêng của chủ nghĩa tư bản\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Do chủ nghĩa tư bản sinh ra\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "C": "• Là gì? Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "D": "• Là gì? Là sản phẩm riêng của chủ nghĩa tư bản\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": null,
+    "intent": "• Sản phẩm lao động nhằm trao đổi trên thị trường.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần."
+  },
+  {
+    "label": "MLN M2 Đặc trưng / biểu hiện",
+    "id": 1,
+    "task": "all",
+    "answer": "D",
+    "question": "Biểu hiện mới của sự phân chia thị trường giữa các liên minh độc quyền đó là",
+    "options": {
+      "A": "Hình thành các tổ chức đa quốc gia",
+      "B": "Hình thành các tổ chức độc quyền trong nhà nước tư bản",
+      "C": "Hình thành xu hướng khu vực hóa",
+      "D": "Hình thành xu hướng toàn cầu hóa"
+    },
+    "optionsVi": {
+      "A": "Hình thành các tổ chức đa quốc gia",
+      "B": "Hình thành các tổ chức độc quyền trong nhà nước tư bản",
+      "C": "Hình thành xu hướng khu vực hóa",
+      "D": "Hình thành xu hướng toàn cầu hóa"
+    },
+    "questionVi": "Biểu hiện mới của sự phân chia thị trường giữa các liên minh độc quyền đó là",
+    "answerDisplay": "D. Hình thành xu hướng toàn cầu hóa",
+    "concept": "• Gắn kết kinh tế – chính trị vượt biên giới quốc gia.",
+    "whyCorrect": "• Liên quan hình thức tổ chức độc quyền (Cartel → Syndicate → Trust → Consortium) và cạnh tranh trong CNTB độc quyền. Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin.\n• Gắn kết kinh tế – chính trị vượt biên giới quốc gia.\n• Phân chia thị trường và xuất khẩu tư bản mang tính toàn cầu.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Hình thành các tổ chức đa quốc gia\n• Vai trò? Phạm trù hội nhập / chủ thể kinh tế — kiểm tra đúng lớp «biểu hiện» hay «chủ thể».\n• Vì sao sai? Hình thành các tổ chức đa quốc gia. Đúng là một khái niệm liên quan nhưng không phải «biểu hiện mới» mà đề hỏi — đề cần: Gắn kết kinh tế – chính trị vượt biên giới quốc gia."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Hình thành các tổ chức đa quốc gia",
+        "optionsVi": "Hình thành các tổ chức đa quốc gia",
+        "whatIs": "Hình thành các tổ chức đa quốc gia",
+        "whyWrong": "• Là gì? Hình thành các tổ chức đa quốc gia\n• Vai trò? Phạm trù hội nhập / chủ thể kinh tế — kiểm tra đúng lớp «biểu hiện» hay «chủ thể».\n• Vì sao sai? Hình thành các tổ chức đa quốc gia. Đúng là một khái niệm liên quan nhưng không phải «biểu hiện mới» mà đề hỏi — đề cần: Gắn kết kinh tế – chính trị vượt biên giới quốc gia."
+      },
+      "B": {
+        "option": "Hình thành các tổ chức độc quyền trong nhà nước tư bản",
+        "optionsVi": "Hình thành các tổ chức độc quyền trong nhà nước tư bản",
+        "whatIs": "Hình thành các tổ chức độc quyền trong nhà nước tư bản",
+        "whyWrong": "• Là gì? Hình thành các tổ chức độc quyền trong nhà nước tư bản\n• Vai trò? Gắn với can thiệp/quy định của Nhà nước (giá hành chính).\n• Vì sao sai? Hình thành các tổ chức độc quyền trong nhà nước tư bản. Đúng là một khái niệm liên quan nhưng không phải «biểu hiện mới» mà đề hỏi — đề cần: Gắn kết kinh tế – chính trị vượt biên giới quốc gia."
+      },
+      "C": {
+        "option": "Hình thành xu hướng khu vực hóa",
+        "optionsVi": "Hình thành xu hướng khu vực hóa",
+        "whatIs": "Liên kết kinh tế trong một khu vực địa lý (khối, FTA…).",
+        "whyWrong": "• Là gì? Liên kết kinh tế trong một khu vực địa lý (khối, FTA…).\n• Vai trò? Hội nhập phạm vi hẹp hơn toàn cầu hóa.\n• Vì sao sai? Liên kết kinh tế trong một khu vực địa lý (khối, FTA…). Đúng là một khái niệm liên quan nhưng không phải «biểu hiện mới» mà đề hỏi — đề cần: Gắn kết kinh tế – chính trị vượt biên giới quốc gia."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Hình thành các tổ chức đa quốc gia\n• Vai trò? Phạm trù hội nhập / chủ thể kinh tế — kiểm tra đúng lớp «biểu hiện» hay «chủ thể».\n• Vì sao sai? Hình thành các tổ chức đa quốc gia. Đúng là một khái niệm liên quan nhưng không phải «biểu hiện mới» mà đề hỏi — đề cần: Gắn kết kinh tế – chính trị vượt biên giới quốc gia.",
+      "B": "• Là gì? Hình thành các tổ chức độc quyền trong nhà nước tư bản\n• Vai trò? Gắn với can thiệp/quy định của Nhà nước (giá hành chính).\n• Vì sao sai? Hình thành các tổ chức độc quyền trong nhà nước tư bản. Đúng là một khái niệm liên quan nhưng không phải «biểu hiện mới» mà đề hỏi — đề cần: Gắn kết kinh tế – chính trị vượt biên giới quốc gia.",
+      "C": "• Là gì? Liên kết kinh tế trong một khu vực địa lý (khối, FTA…).\n• Vai trò? Hội nhập phạm vi hẹp hơn toàn cầu hóa.\n• Vì sao sai? Liên kết kinh tế trong một khu vực địa lý (khối, FTA…). Đúng là một khái niệm liên quan nhưng không phải «biểu hiện mới» mà đề hỏi — đề cần: Gắn kết kinh tế – chính trị vượt biên giới quốc gia."
+    },
+    "memoryTip": null,
+    "intent": "• Gắn kết kinh tế – chính trị vượt biên giới quốc gia.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần."
+  },
+  {
+    "label": "MLN M3 Phủ định",
+    "id": 5,
+    "task": "all",
+    "answer": "A",
+    "question": "Đâu không phải đặc trưng của chủ nghĩa tư bản?",
+    "options": {
+      "A": "Quyền sở hữu tư liệu sản xuất thuộc về nhà nước",
+      "B": "Tích lũy tư bản",
+      "C": "Trao đổi tự nguyện",
+      "D": "Một hệ thống giá cả và thị trường cạnh tranh"
+    },
+    "optionsVi": {
+      "A": "Quyền sở hữu tư liệu sản xuất thuộc về nhà nước",
+      "B": "Tích lũy tư bản",
+      "C": "Trao đổi tự nguyện",
+      "D": "Một hệ thống giá cả và thị trường cạnh tranh"
+    },
+    "questionVi": "Đâu không phải đặc trưng của chủ nghĩa tư bản?",
+    "answerDisplay": "A. Quyền sở hữu tư liệu sản xuất thuộc về nhà nước",
+    "concept": "• Định nghĩa/đặc trưng cần nắm: Quyền sở hữu tư liệu sản xuất thuộc về nhà nước",
+    "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin. Cơ chế thị trường, cạnh tranh và quan hệ cung–cầu trong nền kinh tế hàng hóa.\n• Quyền sở hữu tư liệu sản xuất thuộc về nhà nước\n• Gắn với can thiệp/quy định của Nhà nước (giá hành chính).",
+    "whyWrongOne": {
+      "letter": "B",
+      "text": "• Là gì? Dùng một phần giá trị thặng dư để mở rộng tư bản sản xuất.\n• Vai trò? Tăng quy mô sản xuất và khả năng sinh lợi của tư bản.\n• Vì sao sai? Dùng một phần giá trị thặng dư để mở rộng tư bản sản xuất. Đây có thể là đặc trưng/đúng khái niệm; đề đang tìm phương án không thuộc tập đó."
+    },
+    "remainingAnswers": {
+      "B": {
+        "option": "Tích lũy tư bản",
+        "optionsVi": "Tích lũy tư bản",
+        "whatIs": "Dùng một phần giá trị thặng dư để mở rộng tư bản sản xuất.",
+        "whyWrong": "• Là gì? Dùng một phần giá trị thặng dư để mở rộng tư bản sản xuất.\n• Vai trò? Tăng quy mô sản xuất và khả năng sinh lợi của tư bản.\n• Vì sao sai? Dùng một phần giá trị thặng dư để mở rộng tư bản sản xuất. Đây có thể là đặc trưng/đúng khái niệm; đề đang tìm phương án không thuộc tập đó."
+      },
+      "C": {
+        "option": "Trao đổi tự nguyện",
+        "optionsVi": "Trao đổi tự nguyện",
+        "whatIs": "Trao đổi tự nguyện",
+        "whyWrong": "• Là gì? Trao đổi tự nguyện\n• Vai trò? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Trao đổi tự nguyện. Đây có thể là đặc trưng/đúng khái niệm; đề đang tìm phương án không thuộc tập đó."
+      },
+      "D": {
+        "option": "Một hệ thống giá cả và thị trường cạnh tranh",
+        "optionsVi": "Một hệ thống giá cả và thị trường cạnh tranh",
+        "whatIs": "Một hệ thống giá cả và thị trường cạnh tranh",
+        "whyWrong": "• Là gì? Một hệ thống giá cả và thị trường cạnh tranh\n• Vai trò? Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Vì sao sai? Một hệ thống giá cả và thị trường cạnh tranh. Đây có thể là đặc trưng/đúng khái niệm; đề đang tìm phương án không thuộc tập đó."
+      }
+    },
+    "whyWrongAll": {
+      "B": "• Là gì? Dùng một phần giá trị thặng dư để mở rộng tư bản sản xuất.\n• Vai trò? Tăng quy mô sản xuất và khả năng sinh lợi của tư bản.\n• Vì sao sai? Dùng một phần giá trị thặng dư để mở rộng tư bản sản xuất. Đây có thể là đặc trưng/đúng khái niệm; đề đang tìm phương án không thuộc tập đó.",
+      "C": "• Là gì? Trao đổi tự nguyện\n• Vai trò? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).\n• Vì sao sai? Trao đổi tự nguyện. Đây có thể là đặc trưng/đúng khái niệm; đề đang tìm phương án không thuộc tập đó.",
+      "D": "• Là gì? Một hệ thống giá cả và thị trường cạnh tranh\n• Vai trò? Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Vì sao sai? Một hệ thống giá cả và thị trường cạnh tranh. Đây có thể là đặc trưng/đúng khái niệm; đề đang tìm phương án không thuộc tập đó."
+    },
+    "memoryTip": null,
+    "intent": "• Quyền sở hữu tư liệu sản xuất thuộc về nhà nước\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần."
+  },
+  {
+    "label": "MLN M4 Quan hệ / vai trò / tiền đề",
+    "id": 4,
+    "task": "all",
+    "answer": "B",
+    "question": "Chọn phương án sai vai trò của cách mạng công nghiệp đối với sự phát triển đó là",
+    "options": {
+      "A": "Thúc đẩy sự phát triển của lực lượng sản xuất",
+      "B": "Thúc đẩy các quan hệ sản xuất mới ra đời",
+      "C": "Thúc đẩy hoàn thiện quan hệ sản xuất",
+      "D": "Thúc đẩy đổi mới phương thức quản trị phát triển"
+    },
+    "optionsVi": {
+      "A": "Thúc đẩy sự phát triển của lực lượng sản xuất",
+      "B": "Thúc đẩy các quan hệ sản xuất mới ra đời",
+      "C": "Thúc đẩy hoàn thiện quan hệ sản xuất",
+      "D": "Thúc đẩy đổi mới phương thức quản trị phát triển"
+    },
+    "questionVi": "Chọn phương án sai vai trò của cách mạng công nghiệp đối với sự phát triển đó là",
+    "answerDisplay": "B. Thúc đẩy các quan hệ sản xuất mới ra đời",
+    "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
+    "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất. Mối quan hệ LLSX – QHSX và chế độ sở hữu.\n• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Thúc đẩy sự phát triển của lực lượng sản xuất\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Thúc đẩy sự phát triển của lực lượng sản xuất",
+        "optionsVi": "Thúc đẩy sự phát triển của lực lượng sản xuất",
+        "whatIs": "Thúc đẩy sự phát triển của lực lượng sản xuất",
+        "whyWrong": "• Là gì? Thúc đẩy sự phát triển của lực lượng sản xuất\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "C": {
+        "option": "Thúc đẩy hoàn thiện quan hệ sản xuất",
+        "optionsVi": "Thúc đẩy hoàn thiện quan hệ sản xuất",
+        "whatIs": "Mô hình bảng + khóa + quan hệ giữa bảng.",
+        "whyWrong": "• Là gì? Thúc đẩy hoàn thiện quan hệ sản xuất\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "D": {
+        "option": "Thúc đẩy đổi mới phương thức quản trị phát triển",
+        "optionsVi": "Thúc đẩy đổi mới phương thức quản trị phát triển",
+        "whatIs": "Thúc đẩy đổi mới phương thức quản trị phát triển",
+        "whyWrong": "• Là gì? Thúc đẩy đổi mới phương thức quản trị phát triển\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Thúc đẩy sự phát triển của lực lượng sản xuất\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "C": "• Là gì? Thúc đẩy hoàn thiện quan hệ sản xuất\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "D": "• Là gì? Thúc đẩy đổi mới phương thức quản trị phát triển\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": null,
+    "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL)."
+  },
+  {
+    "label": "MLN M5 Thứ tự / giai đoạn",
+    "id": 2,
+    "task": "all",
+    "answer": "C",
+    "question": "Nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của cách mạng công nghiệp qua mấy giai đoạn phát triển?",
+    "options": {
+      "A": "Một giai đoạn",
+      "B": "Hai giai đoạn",
+      "C": "Ba giai đoạn",
+      "D": "Bốn giai đoạn"
+    },
+    "optionsVi": {
+      "A": "Một giai đoạn",
+      "B": "Hai giai đoạn",
+      "C": "Ba giai đoạn",
+      "D": "Bốn giai đoạn"
+    },
+    "questionVi": "Nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của cách mạng công nghiệp qua mấy giai đoạn phát triển?",
+    "answerDisplay": "C. Ba giai đoạn",
+    "concept": "• Ba giai đoạn. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+    "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Ba giai đoạn\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Một giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Một giai đoạn",
+        "optionsVi": "Một giai đoạn",
+        "whatIs": "Một giai đoạn",
+        "whyWrong": "• Là gì? Một giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "B": {
+        "option": "Hai giai đoạn",
+        "optionsVi": "Hai giai đoạn",
+        "whatIs": "Hai giai đoạn",
+        "whyWrong": "• Là gì? Hai giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "D": {
+        "option": "Bốn giai đoạn",
+        "optionsVi": "Bốn giai đoạn",
+        "whatIs": "Bốn giai đoạn",
+        "whyWrong": "• Là gì? Bốn giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Một giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "B": "• Là gì? Hai giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "D": "• Là gì? Bốn giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": null,
+    "intent": "• Ba giai đoạn\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…)."
+  },
+  {
+    "label": "MLN M6 So sánh",
+    "id": 205,
+    "task": "all",
+    "answer": "A",
+    "question": "Phương pháp sản xuất giá trị thặng dư tuyệt đối và phương pháp sản xuất giá trị thặng dư tương đối có điểm nào giống nhau?",
+    "options": {
+      "A": "Đều làm tăng tỷ suất giá trị thặng dư",
+      "B": "Đều làm cho công nhân tổn sức lao động nhiều hơn",
+      "C": "Đều làm giảm giá trị sức lao động của công nhân"
+    },
+    "optionsVi": {
+      "A": "Đều làm tăng tỷ suất giá trị thặng dư",
+      "B": "Đều làm cho công nhân tổn sức lao động nhiều hơn",
+      "C": "Đều làm giảm giá trị sức lao động của công nhân"
+    },
+    "questionVi": "Phương pháp sản xuất giá trị thặng dư tuyệt đối và phương pháp sản xuất giá trị thặng dư tương đối có điểm nào giống nhau?",
+    "answerDisplay": "A. Đều làm tăng tỷ suất giá trị thặng dư",
+    "concept": "• Phần giá trị người lao động tạo ra vượt giá trị sức lao động.",
+    "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin.\n• Phần giá trị người lao động tạo ra vượt giá trị sức lao động.\n• Nguồn gốc lợi nhuận của nhà tư bản.",
+    "whyWrongOne": {
+      "letter": "B",
+      "text": "• Là gì? Đều làm cho công nhân tổn sức lao động nhiều hơn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "B": {
+        "option": "Đều làm cho công nhân tổn sức lao động nhiều hơn",
+        "optionsVi": "Đều làm cho công nhân tổn sức lao động nhiều hơn",
+        "whatIs": "Đều làm cho công nhân tổn sức lao động nhiều hơn",
+        "whyWrong": "• Là gì? Đều làm cho công nhân tổn sức lao động nhiều hơn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "C": {
+        "option": "Đều làm giảm giá trị sức lao động của công nhân",
+        "optionsVi": "Đều làm giảm giá trị sức lao động của công nhân",
+        "whatIs": "Đều làm giảm giá trị sức lao động của công nhân",
+        "whyWrong": "• Là gì? Đều làm giảm giá trị sức lao động của công nhân\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "B": "• Là gì? Đều làm cho công nhân tổn sức lao động nhiều hơn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "C": "• Là gì? Đều làm giảm giá trị sức lao động của công nhân\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": null,
+    "intent": "• Phần giá trị người lao động tạo ra vượt giá trị sức lao động.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần."
+  },
+  {
+    "label": "MLN M7 Tác giả",
+    "id": 2,
+    "task": "all",
+    "answer": "C",
+    "question": "Nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của cách mạng công nghiệp qua mấy giai đoạn phát triển?",
+    "options": {
+      "A": "Một giai đoạn",
+      "B": "Hai giai đoạn",
+      "C": "Ba giai đoạn",
+      "D": "Bốn giai đoạn"
+    },
+    "optionsVi": {
+      "A": "Một giai đoạn",
+      "B": "Hai giai đoạn",
+      "C": "Ba giai đoạn",
+      "D": "Bốn giai đoạn"
+    },
+    "questionVi": "Nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của cách mạng công nghiệp qua mấy giai đoạn phát triển?",
+    "answerDisplay": "C. Ba giai đoạn",
+    "concept": "• Ba giai đoạn. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+    "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Ba giai đoạn\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Một giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "Một giai đoạn",
+        "optionsVi": "Một giai đoạn",
+        "whatIs": "Một giai đoạn",
+        "whyWrong": "• Là gì? Một giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "B": {
+        "option": "Hai giai đoạn",
+        "optionsVi": "Hai giai đoạn",
+        "whatIs": "Hai giai đoạn",
+        "whyWrong": "• Là gì? Hai giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      },
+      "D": {
+        "option": "Bốn giai đoạn",
+        "optionsVi": "Bốn giai đoạn",
+        "whatIs": "Bốn giai đoạn",
+        "whyWrong": "• Là gì? Bốn giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Một giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "B": "• Là gì? Hai giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi.",
+      "D": "• Là gì? Bốn giai đoạn\n• Dùng để làm gì? Đối chiếu đúng vai trò/cơ chế với trọng tâm đề.\n• Vì sao sai? Không khớp kiến thức/cơ chế mà đề hỏi."
+    },
+    "memoryTip": null,
+    "intent": "• Ba giai đoạn\n• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…)."
+  },
+  {
+    "label": "MLN M8 Multi-select",
+    "id": 43,
+    "task": "all",
+    "answer": "ABC",
+    "question": "Lý thuyết bàn tay vô hình của Adam Smith được hiểu là: (chọn 3 phương án đúng)",
+    "options": {
+      "A": "Người bán và người mua, phân bố nguồn lực kinh tế đạt được hiệu quả xã hội lớn nhất mà không cần sự can thiệp của chính phủ",
+      "B": "Mô tả khả năng của cơ chế thị trường trong việc điều chỉnh cung cầu trên thị trường.",
+      "C": "Các cá nhân tham gia muốn tối đa hóa lợi nhuận cho mình",
+      "D": "Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình"
+    },
+    "optionsVi": {
+      "A": "Người bán và người mua, phân bố nguồn lực kinh tế đạt được hiệu quả xã hội lớn nhất mà không cần sự can thiệp của chính phủ",
+      "B": "Mô tả khả năng của cơ chế thị trường trong việc điều chỉnh cung cầu trên thị trường.",
+      "C": "Các cá nhân tham gia muốn tối đa hóa lợi nhuận cho mình",
+      "D": "Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình"
+    },
+    "questionVi": "Lý thuyết bàn tay vô hình của Adam Smith được hiểu là: (chọn 3 phương án đúng)",
+    "answerDisplay": "A. Người bán và người mua, phân bố nguồn lực kinh tế đạt được hiệu quả xã hội lớn nhất mà không cần sự can thiệp của chính phủ · B. Mô tả khả năng của cơ chế thị trường trong việc điều chỉnh cung cầu trên thị trường. · C. Các cá nhân tham gia muốn tối đa hóa lợi nhuận cho mình",
+    "concept": "• Định nghĩa/đặc trưng cần nắm: Người bán và người mua, phân bố nguồn lực kinh tế đạt được hiệu quả xã hội lớn nhất mà không cần sự can thiệp của chính phủ",
+    "whyCorrect": "• Câu chọn nhiều đáp án: A, B, C.\n• Người bán và người mua, phân bố nguồn lực kinh tế đạt được hiệu quả xã hội lớn nhất mà không cần sự can thiệp của chính phủ\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Mô tả khả năng của cơ chế thị trường trong việc điều chỉnh cung cầu trên thị trường.; C. Các cá nhân tham gia muốn tối đa hóa lợi nhuận cho mình. Cơ chế thị trường, cạnh tranh và quan hệ cung–cầu trong nền kinh tế hàng hóa. Lịch sử các học thuyết kinh tế (重商, cổ điển Anh, v.v.).",
+    "whyWrongOne": {
+      "letter": "D",
+      "text": "• Là gì? Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình\n• Dùng để làm gì? Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Vì sao sai? «Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mìn…» — Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình. Đề cần: Người bán và người mua, phân bố nguồn lực kinh tế đạt được hiệu quả xã hội lớn nhất mà không cần sự can thiệp của chính phủ."
+    },
+    "remainingAnswers": {
+      "D": {
+        "option": "Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình",
+        "optionsVi": "Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình",
+        "whatIs": "Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình",
+        "whyWrong": "• Là gì? Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình\n• Dùng để làm gì? Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Vì sao sai? «Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mìn…» — Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình. Đề cần: Người bán và người mua, phân bố nguồn lực kinh tế đạt được hiệu quả xã hội lớn nhất mà không cần sự can thiệp của chính phủ."
+      }
+    },
+    "whyWrongAll": {
+      "D": "• Là gì? Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình\n• Dùng để làm gì? Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.\n• Vì sao sai? «Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mìn…» — Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình. Đề cần: Người bán và người mua, phân bố nguồn lực kinh tế đạt được hiệu quả xã hội lớn nhất mà không cần sự can thiệp của chính phủ."
+    },
+    "memoryTip": null,
+    "intent": "• Người bán và người mua, phân bố nguồn lực kinh tế đạt được hiệu quả xã hội lớn nhất mà không cần sự can thiệp của chính phủ\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề."
+  },
+  {
+    "label": "MLN §6.1 Fact who/when/where",
+    "id": 112,
+    "task": "all",
+    "answer": "A",
+    "question": "Thuật ngữ \"kinh tế chính trị\" được sử dụng lần đầu tiên vào năm nào?",
+    "options": {
+      "A": "1615",
+      "B": "1616",
+      "C": "1617",
+      "D": "1618"
+    },
+    "optionsVi": {
+      "A": "1615",
+      "B": "1616",
+      "C": "1617",
+      "D": "1618"
+    },
+    "questionVi": "Thuật ngữ \"kinh tế chính trị\" được sử dụng lần đầu tiên vào năm nào?",
+    "answerDisplay": "A. 1615",
+    "concept": null,
+    "whyCorrect": null,
+    "whyWrongOne": null,
+    "remainingAnswers": {
+      "B": {
+        "option": "1616",
+        "optionsVi": "1616",
+        "whatIs": null,
+        "whyWrong": null
+      },
+      "C": {
+        "option": "1617",
+        "optionsVi": "1617",
+        "whatIs": null,
+        "whyWrong": null
+      },
+      "D": {
+        "option": "1618",
+        "optionsVi": "1618",
+        "whatIs": null,
+        "whyWrong": null
+      }
+    },
+    "whyWrongAll": {},
+    "memoryTip": "• Fact: 1615.",
+    "intent": null
+  },
+  {
+    "label": "JIT T1 専門用語 / dịch",
+    "id": 7,
+    "task": "quiz",
+    "answer": "B",
+    "question": "【専門用語】次のベトナム語の用語を日本語に直しなさい。 Máy tính điện tử",
+    "options": {
+      "A": "電気機械式計算機",
+      "B": "電子式計算機",
+      "C": "電子制御計算機",
+      "D": "電子計算管"
+    },
+    "optionsVi": {
+      "A": "máy tính điện-cơ",
+      "B": "máy tính điện tử",
+      "C": "máy tính điều khiển điện tử",
+      "D": "ống tính điện tử"
+    },
+    "questionVi": "【Thuật ngữ】Hãy dịch thuật ngữ tiếng Việt sau sang tiếng Nhật: «Máy tính điện tử»",
+    "answerDisplay": "B. máy tính điện tử",
+    "concept": "• «Máy tính điện tử» trong tiếng Nhật là «máy tính điện tử».",
+    "whyCorrect": "• máy tính điện tử — Máy tính điện tử（ ） máy tính điện tử（ ） 。 Đây là câu đối chiếu thuật ngữ JP ↔ VI: phải khớp đúng nghĩa chuyên ngành, không chọn từ gần nghĩa.\n• Việt «Máy tính điện tử» ⇔ Nhật «máy tính điện tử».\n• máy tính điện tử\n• Chọn đúng cặp dịch thuật ngữ, không chọn từ gần nghĩa khác lĩnh vực.",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? máy tính điện-cơ\n• Dùng để làm gì? Thuật ngữ: máy tính điện-cơ.\n• Vì sao sai? kiểu điện-cơmáy tính [Lựa chọn A]"
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "電気機械式計算機",
+        "optionsVi": "máy tính điện-cơ",
+        "whatIs": "máy tính điện-cơ",
+        "whyWrong": "• Là gì? máy tính điện-cơ\n• Dùng để làm gì? Thuật ngữ: máy tính điện-cơ.\n• Vì sao sai? kiểu điện-cơmáy tính [Lựa chọn A]"
+      },
+      "C": {
+        "option": "電子制御計算機",
+        "optionsVi": "máy tính điều khiển điện tử",
+        "whatIs": "máy tính điều khiển điện tử",
+        "whyWrong": "• Là gì? máy tính điều khiển điện tử\n• Dùng để làm gì? Thuật ngữ: máy tính điều khiển điện tử.\n• Vì sao sai? Phương án này không khớp chủ đề đề hỏi. Đáp án đúng: máy tính điện tử. [Lựa chọn C]"
+      },
+      "D": {
+        "option": "電子計算管",
+        "optionsVi": "ống tính điện tử",
+        "whatIs": "ống tính điện tử",
+        "whyWrong": "• Là gì? ống tính điện tử\n• Dùng để làm gì? Thuật ngữ: ống tính điện tử.\n• Vì sao sai? Phương án này không khớp chủ đề đề hỏi. Đáp án đúng: máy tính điện tử. [Lựa chọn D]"
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? máy tính điện-cơ\n• Dùng để làm gì? Thuật ngữ: máy tính điện-cơ.\n• Vì sao sai? kiểu điện-cơmáy tính [Lựa chọn A]",
+      "C": "• Là gì? máy tính điều khiển điện tử\n• Dùng để làm gì? Thuật ngữ: máy tính điều khiển điện tử.\n• Vì sao sai? Phương án này không khớp chủ đề đề hỏi. Đáp án đúng: máy tính điện tử. [Lựa chọn C]",
+      "D": "• Là gì? ống tính điện tử\n• Dùng để làm gì? Thuật ngữ: ống tính điện tử.\n• Vì sao sai? Phương án này không khớp chủ đề đề hỏi. Đáp án đúng: máy tính điện tử. [Lựa chọn D]"
+    },
+    "memoryTip": "• Máy tính điện tử = máy tính điện tử\n• Học theo cặp VI ↔ JP, tránh nhầm từ kanji/katakana gần.",
+    "intent": "• Câu từ vựng: cho thuật ngữ tiếng Việt → chọn bản tiếng Nhật đúng.\n• Thuật ngữ cần dịch: «Máy tính điện tử»"
+  },
+  {
+    "label": "JIT T2 正しい / 誤っている",
+    "id": 3,
+    "task": "quiz",
+    "answer": "D",
+    "question": "アナログについて正しいものをえらんでください。",
+    "options": {
+      "A": "コピーができる",
+      "B": "切れ目のある正確な表現ができる",
+      "C": "1と0だけを使う",
+      "D": "曖昧なものをそのまま表現できる"
+    },
+    "optionsVi": {
+      "A": "có thể sao chép",
+      "B": "Biểu diễn chính xác, rời rạc được",
+      "C": "chỉ dùng 0 và 1",
+      "D": "Biểu diễn được cả cái mơ hồ nguyên trạng"
+    },
+    "questionVi": "Chọn phát biểu ĐÚNG về tương tự (analog).",
+    "answerDisplay": "D. Biểu diễn được cả cái mơ hồ nguyên trạng",
+    "concept": "• Biểu diễn được cả cái mơ hồ nguyên trạng\n• Nghĩa: Biểu diễn được cả cái mơ hồ nguyên trạng.",
+    "whyCorrect": "• Biểu diễn được cả cái mơ hồ nguyên trạng\n• Đáp án D: Biểu diễn được cả cái mơ hồ nguyên trạng",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? có thể sao chép\n• Dùng để làm gì? Thuật ngữ: có thể sao chép.\n• Vì sao sai? có thể sao chép [Lựa chọn A]"
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "コピーができる",
+        "optionsVi": "có thể sao chép",
+        "whatIs": "có thể sao chép",
+        "whyWrong": "• Là gì? có thể sao chép\n• Dùng để làm gì? Thuật ngữ: có thể sao chép.\n• Vì sao sai? có thể sao chép [Lựa chọn A]"
+      },
+      "B": {
+        "option": "切れ目のある正確な表現ができる",
+        "optionsVi": "Biểu diễn chính xác, rời rạc được",
+        "whatIs": "Biểu diễn chính xác, rời rạc được",
+        "whyWrong": "• Là gì? Biểu diễn chính xác, rời rạc được\n• Dùng để làm gì? Nghĩa: Biểu diễn chính xác, rời rạc được.\n• Vì sao sai? biểu diễn chính xác, có ranh giới rời rạc [Lựa chọn B]"
+      },
+      "C": {
+        "option": "1と0だけを使う",
+        "optionsVi": "chỉ dùng 0 và 1",
+        "whatIs": "chỉ dùng 0 và 1",
+        "whyWrong": "• Là gì? chỉ dùng 0 và 1\n• Dùng để làm gì? Thuật ngữ: chỉ dùng 0 và 1.\n• Vì sao sai? chỉ dùng 0 và 1 [Lựa chọn C]"
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? có thể sao chép\n• Dùng để làm gì? Thuật ngữ: có thể sao chép.\n• Vì sao sai? có thể sao chép [Lựa chọn A]",
+      "B": "• Là gì? Biểu diễn chính xác, rời rạc được\n• Dùng để làm gì? Nghĩa: Biểu diễn chính xác, rời rạc được.\n• Vì sao sai? biểu diễn chính xác, có ranh giới rời rạc [Lựa chọn B]",
+      "C": "• Là gì? chỉ dùng 0 và 1\n• Dùng để làm gì? Thuật ngữ: chỉ dùng 0 và 1.\n• Vì sao sai? chỉ dùng 0 và 1 [Lựa chọn C]"
+    },
+    "memoryTip": null,
+    "intent": "• Câu JIT: nắm định nghĩa/thứ tự/thuật ngữ CNTT.\n• Biểu diễn được cả cái mơ hồ nguyên trạng"
+  },
+  {
+    "label": "JIT T3 何/どれ định nghĩa",
+    "id": 1,
+    "task": "quiz",
+    "answer": "C",
+    "question": "アナログ信号として送受信される形式はどれか。",
+    "options": {
+      "A": "0と1のデジタルデータ",
+      "B": "パケットデータ",
+      "C": "電流(mA)または電圧(mV)信号",
+      "D": "バイナリコード"
+    },
+    "optionsVi": {
+      "A": "Dữ liệu số 0 và 1",
+      "B": "Dữ liệu dạng gói (packet)",
+      "C": "Tín hiệu dòng (mA) hoặc điện áp (mV)",
+      "D": "Mã nhị phân"
+    },
+    "questionVi": "Tín hiệu analog được gửi/nhận dưới dạng nào?",
+    "answerDisplay": "C. Tín hiệu dòng (mA) hoặc điện áp (mV)",
+    "concept": "• Tín hiệu dòng (mA) hoặc điện áp (mV)\n• Nghĩa: Tín hiệu dòng (mA) hoặc điện áp (mV).",
+    "whyCorrect": "• tín hiệu dòng điện (mA) hoặc điện áp (mV) — tương tự (analog) dòng điện điện áp liên tục 。\n• Tín hiệu dòng (mA) hoặc điện áp (mV)\n• Đáp án C: Tín hiệu dòng (mA) hoặc điện áp (mV)",
+    "whyWrongOne": {
+      "letter": "A",
+      "text": "• Là gì? Dữ liệu số 0 và 1\n• Dùng để làm gì? Nghĩa: Dữ liệu số 0 và 1.\n• Vì sao sai? dữ liệu digital 0 và 1 [Lựa chọn A]"
+    },
+    "remainingAnswers": {
+      "A": {
+        "option": "0と1のデジタルデータ",
+        "optionsVi": "Dữ liệu số 0 và 1",
+        "whatIs": "Dữ liệu số 0 và 1",
+        "whyWrong": "• Là gì? Dữ liệu số 0 và 1\n• Dùng để làm gì? Nghĩa: Dữ liệu số 0 và 1.\n• Vì sao sai? dữ liệu digital 0 và 1 [Lựa chọn A]"
+      },
+      "B": {
+        "option": "パケットデータ",
+        "optionsVi": "Dữ liệu dạng gói (packet)",
+        "whatIs": "Dữ liệu dạng gói (packet)",
+        "whyWrong": "• Là gì? Dữ liệu dạng gói (packet)\n• Dùng để làm gì? Nghĩa: Dữ liệu dạng gói (packet).\n• Vì sao sai? dữ liệu dạng gói (packet) [Lựa chọn B]"
+      },
+      "D": {
+        "option": "バイナリコード",
+        "optionsVi": "Mã nhị phân",
+        "whatIs": "Mã nhị phân",
+        "whyWrong": "• Là gì? Mã nhị phân\n• Dùng để làm gì? Nghĩa: Mã nhị phân.\n• Vì sao sai? mã nhị phân [Lựa chọn D]"
+      }
+    },
+    "whyWrongAll": {
+      "A": "• Là gì? Dữ liệu số 0 và 1\n• Dùng để làm gì? Nghĩa: Dữ liệu số 0 và 1.\n• Vì sao sai? dữ liệu digital 0 và 1 [Lựa chọn A]",
+      "B": "• Là gì? Dữ liệu dạng gói (packet)\n• Dùng để làm gì? Nghĩa: Dữ liệu dạng gói (packet).\n• Vì sao sai? dữ liệu dạng gói (packet) [Lựa chọn B]",
+      "D": "• Là gì? Mã nhị phân\n• Dùng để làm gì? Nghĩa: Mã nhị phân.\n• Vì sao sai? mã nhị phân [Lựa chọn D]"
+    },
+    "memoryTip": null,
+    "intent": "• Câu JIT: nắm định nghĩa/thứ tự/thuật ngữ CNTT.\n• Tín hiệu dòng (mA) hoặc điện áp (mV)"
+  }
+]
