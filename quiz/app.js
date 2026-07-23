@@ -380,7 +380,7 @@
       const tid = node.getAttribute("data-task-count");
       const n = countForTask(tid);
       node.textContent = String(n);
-      // Ẩn tab Bài/đề khi 0 câu (Albazzz, Đề FE, Đề ảnh… nếu không có data)
+      // Ẩn tab Bài/đề khi 0 câu (Albazzz, Đề FE… nếu không có data)
       const btn = node.closest(".exam-tab");
       if (btn && tid !== "all") {
         btn.classList.toggle("hidden", n === 0);
@@ -1984,7 +1984,7 @@
         examSet = CFG.defaultTask && countForTask(CFG.defaultTask) > 0 ? CFG.defaultTask : "all";
       }
       const cur = normalizeExamSet(examSet);
-      // Chỉ render tab có câu (giữ "all"); không hiện Albazzz/Đề FE/Đề ảnh = 0
+      // Chỉ render tab có câu (giữ "all"); không hiện tab count = 0
       const visibleTasks = TASK_DEFS.filter((t) => t.id === "all" || countForTask(t.id) > 0);
       taskTabs.innerHTML = visibleTasks
         .map((t) => {

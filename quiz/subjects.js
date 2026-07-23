@@ -18,7 +18,6 @@ window.QUIZ_SUBJECTS = {
       { id: "fe", label: "SP26 FE", icon: "fa-file" },
       { id: "re", label: "SP26 B5 FE", icon: "fa-file-circle-plus" },
       { id: "fuexam", label: "Đề FE", icon: "fa-file-circle-check" },
-      { id: "fuexam_image", label: "Đề ảnh", icon: "fa-image" },
       { id: "slides", label: "Slides", icon: "fa-chalkboard" },
       { id: "all", label: "Tất cả", icon: "fa-layer-group" },
     ],

@@ -27,7 +27,8 @@ const MAP = {
     defaultLabel: "Slides",
     sourceTask: {
       fuexam: { task: "fuexam", taskLabel: "Đề FE" },
-      fuexam_image: { task: "fuexam_image", taskLabel: "Đề ảnh" },
+      // Gộp vào SP26 FE (không tách tab Đề ảnh)
+      fuexam_image: { task: "fe", taskLabel: "SP26 FE" },
       slides: { task: "slides", taskLabel: "Slides" },
     },
   },
