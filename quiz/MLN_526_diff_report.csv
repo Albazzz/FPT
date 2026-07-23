@@ -1,0 +1,67 @@
+type,src_id,src_line,mln_num,score,ans_526,ans_mln,note,question_526
+answer_mismatch,#190,1382,204,1.00,D=Tiền vàng,A=Tiền quy ước,ans-mismatch,Loại tiền nào được hiểu là phương tiện thanh toán mà giá trị hay sức mua của nó với tư cách là tiền vượt xa chi phí sản 
+answer_mismatch,#238,1713,253,1.00,A=Tư bản tiền tệ.,B=Tư bản sản xuất.,ans-mismatch,Tư bản bất biến (c) và tư bản khả biến (v) thuộc phạm trù tư bản nào?
+answer_mismatch,#209,1505,223,1.00,"A=Giai cấp tư sản ngày càng giàu có, mâu t",A=Tích lũy tư bản làm xóa bỏ hoàn toàn mâu,same-letter-diff-content,Quy luật chung của tích luỹ tư bản là gì? Ý nào sau đây không đúng.
+answer_mismatch,#301,2144,318,1.00,B=K = c + v + m,C=K = c + v,ans-mismatch,Chi phí sản xuất tư bản tính bằng công thức nào sau đây
+answer_mismatch,#387,2761,408,1.00,C=Tư bản chủ nghĩa,A=Phong kiến,ans-mismatch,Kinh tế thị trường xuất hiện lần đầu tiên ở xã hội nào?
+answer_mismatch,#274,1954,290,1.00,A=Số lượng hàng hoá làm ra trong một đơn v,C=Cả A và B,ans-mismatch,Điều kiện để ra đời và tồn tại của sản xuất hàng hóa:
+answer_mismatch,#271,1935,287,1.00,B=Quy luật giá trị,D=Quy luật giá trị thặng dư,ans-mismatch,Quy luật kinh tế cơ bản của chủ nghĩa tư bản là
+answer_mismatch,#386,2755,407,1.00,C=Các phương án trà lời đều đúng,B=Là điều kiện để tăng năng suất lao động,ans-mismatch,Tư bản cố định có vai trò gì?
+multi_truncated,#432,3087,455,1.00,ABC,A,mln first letter only,"Trong giai đoạn chủ nghĩa tư bản độc quyền, ngoài sự cạnh tranh giữa những người sản xuất nhỏ, giữa những nhà tư bản vừa"
+multi_truncated,#475,3386,498,1.00,AC,A,mln first letter only,"Sự vận động của tiền trong nền sản xuất hàng hóa giản đơn (H-T-H), sự vận động của tiền trong nền sản xuất hàng hóa tư b"
+multi_truncated,#224,1616,239,1.00,ABD,A,mln first letter only,Sự khác biệt về mục tiêu giữa kinh tế thị trường định hướng xã hội chủ nghĩa với kinh tế thị trường tư bản chủ nghĩa là 
+multi_truncated,#65,479,71,1.00,AC,A,mln first letter only,"Phạm trù lợi nhuận chẳng qua chỉ là một hình thái thần bí hóa của giá trị thặng dư, nguyên nhân của việc này xuất phát t"
+multi_truncated,#497,3540,520,1.00,ABC,A,mln first letter only,Để hoàn thiện thể chế về sở hữu trong nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam cần thực hiện những 
+multi_truncated,#470,3350,493,1.00,AC,A,mln first letter only,Tại sao việc phát triển kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là tất yếu khách quan? Chọn 2 đáp án.
+multi_truncated,#513,3652,536,1.00,AB,A,mln first letter only,Theo A. Smith kinh tế chính trị là một ngành khoa học gắn với chính khách hay nhà lập pháp gắn với những mục tiêu nào?
+multi_truncated,#215,1554,230,1.00,ABD,A,mln first letter only,"Khi phân chia thể chế theo các yếu tố cấu thành lĩnh vực cốt lõi của xã hội, thể chế được phần chia (nhiều phương án)"
+multi_truncated,#397,2839,419,1.00,AB,A,mln first letter only,"Sau những năm 50 của thế ký XX, chủ nghĩa tư bàn chuyển sang chính sách thực dân mới đó là: (chọn nhiều đáp án)"
+multi_truncated,#490,3491,513,1.00,ABC,A,mln first letter only,"Trọng trạng thái độc quyền, cạnh tranh trong nội bộ các tổ chức độc quyền nhằm mục đích gì? (lựa chọn 3 đáp án)"
+multi_truncated,#494,3519,517,1.00,AB,A,mln first letter only,Quá trình sản xuất giá trị thặng dư là sự thống nhất giữa các yếu tố nào sau đây? (Chọn 2 đáp án đúng)
+multi_truncated,#122,887,131,1.00,BDE,B,mln first letter only,Những yếu tố cốt lõi của kỹ thuật số trong cách mạng công nghiệp lần thứ 4 là: (chọn 3 phương án)
+multi_truncated,#526,3743,549,1.00,ABC,A,mln first letter only,Nguyên nhân hình thành độc quyền trong nên kinh tế thị trường ở các nước tư bản chủ nghĩa là gì?
+multi_truncated,#293,2092,310,1.00,AC,A,mln first letter only,Mục tiêu của kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là gì? Chọn hai đáp án.
+multi_truncated,#85,627,93,1.00,AC,A,mln first letter only,Mục đích hình thành độc quyền nhà nước trong chủ nghĩa tư bản đó là: (chọn nhiều phương án)
+multi_truncated,#520,3701,543,1.00,AB,A,mln first letter only,Phương pháp sản xuất giá trị thặng dư tuyệt đối được nhà tư bản tạo ra bằng cách nào?
+multi_truncated,#505,3596,528,1.00,AB,A,mln first letter only,Để sức lao động trở thành hàng hóa thì cần những điều kiện nào? (Chọn 2 đáp án)
+multi_truncated,#40,289,43,1.00,ABC,A,mln first letter only,Lý thuyết bàn tay vô hình của Adam Smith được hiểu là: (chọn 3 phương án đúng)
+multi_truncated,#162,1165,173,1.00,ABC,A,mln first letter only,Vai trò tích cực của chủ nghĩa tư bản đó là: (chọn nhiều phương án)
+multi_truncated,#206,1486,220,1.00,ABC,A,mln first letter only,Những hạn chế của chủ nghĩa tư bản bao gồm: (chọn nhiều phương án).
+multi_truncated,#331,2347,349,1.00,ABC,A,mln first letter only,Tăng tốc độ chu chuyển của tư bản sẽ dẫn tới? (chọn nhiêu đáp án)
+multi_truncated,#511,3638,534,1.00,AC,A,mln first letter only,Đâu là thuộc tính của hàng hóa sức lao động? (Chọn 2 đáp án)
+multi_truncated,#501,3568,524,1.00,ABC,A,mln first letter only,Đối tượng nghiên cứu của Kinh tế chính trị được hiểu là:
+multi_truncated,#498,3547,521,1.00,AB,A,mln first letter only,Hàng hóa được trao đối với nhau dựa trên yếu tố nào?
+multi_truncated,#477,3400,500,0.92,AC,A,mln first letter only,Chọn hai đáp án.
+kieu_no_src_ans,Kieu#101,742,110,1.00,(none),B,verify manually,"Kinh tế chính trị cổ điển Anh được hình thành và phát triển từ cuối thế ký XVIII đến nửa đầu thế kỷ XIX, mở đầu bằng các"
+kieu_no_src_ans,Kieu#2,14,3,1.00,(none),D,verify manually,"Khi nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của các mạng công nghiệp qua các"
+kieu_no_src_ans,Kieu#189,1372,203,1.00,(none),A,verify manually,Một trong những đặc điểm chủ yếu của bất kỳ xã hội nào lấy thị trường làm phương tiện có tính cơ sở để phân phối các ngu
+kieu_no_src_ans,Kieu#84,619,235,0.95,(none),A,verify manually,"Những nhận xét dưới đây về phương pháp sản xuất giá trị thặng dư tuyệt đối, nhận xét nào là không đúng?"
+kieu_no_src_ans,Kieu#72,535,80,1.00,(none),A,verify manually,Nguyên nhân nào quyết định nhất dẫn đến sự sụp đổ của Liên Xô và hệ thống XHCN ở Đông Âu?
+kieu_no_src_ans,Kieu#70,520,77,1.00,(none),A,verify manually,Hệ thống lý luận kinh tế chính trị đầu tiên nghiên cứu về sản xuất tư bản chủ nghĩa là
+kieu_no_src_ans,Kieu#46,337,51,1.00,(none),D,verify manually,Nguồn gốc nào không đúng với nguồn vốn công nghiệp hóa ở các nước tư bàn cổ điển?
+kieu_no_src_ans,Kieu#315,2238,333,1.00,(none),B,verify manually,Chỉ phí sản xuất tư bản tương quan như thế nào với chi phí sản xuất thực tế?
+kieu_no_src_ans,Kieu#412,2947,435,1.00,(none),C,verify manually,Đặc trưng cơ bản của cuộc cách mạng công nghiệp lần thứ ba là gì?
+kieu_no_src_ans,Kieu#16,117,18,1.00,(none),D,verify manually,Cách mạng công nghiệp lần thứ hai diễn ra trong thời gian nào?
+kieu_no_src_ans,Kieu#175,1258,187,1.00,(none),D,verify manually,Cách mạng công nghiệp lần thứ ba diễn ra trong thời gian nào?
+kieu_no_src_ans,Kieu#265,1896,281,1.00,(none),B,verify manually,"Ai là người đầu tiên đưa ra khái niệm ""kinh tế- chính trị""?"
+kieu_no_src_ans,Kieu#151,1097,162,1.00,(none),C,verify manually,Đặc điểm nào dưới đây không phải của kinh tế thị trường?
+kieu_no_src_ans,Kieu#43,315,47,1.00,(none),C,verify manually,"Xét về bản chất, lợi ích kinh tế được hiều như thế nào?"
+kieu_no_src_ans,Kieu#362,2586,383,1.00,(none),A,verify manually,"Về kinh tế, xuất khẩu tư bản nhà nước thường hướng vào:"
+kieu_no_src_ans,Kieu#26,195,29,1.00,(none),B,verify manually,"Về vị trí lịch sử, kinh tế thị trường có đặc điểm gì?"
+kieu_no_src_ans,Kieu#209,1511,224,1.00,(none),B,verify manually,Tích lũy tư bản là gì?
+kieu_no_src_ans,Kieu#354,2523,374,1.00,(none),B,verify manually,Hàng hóa là gì?
+unmatched_src,Kieu sau #347,2472,366,0.50,,B,needs manual,Tuần hoàn tư bản là sự vận động của tư bản lần lượt trải qua ba giai đoạn dưới hình thái nào?
+unmatched_src,Kieu sau #282,2012,314,0.62,Lao động con người,B,needs manual,"Trong các yếu tố sau đây, yếu tố nào là nguồn gốc của giá trị hàng hóa?"
+unmatched_src,#176,1268,461,0.45,B,C,needs manual,Những nhân tố nào ảnh hưởng đến quy mô của tích lũy tư bản?
+unmatched_src,Kieu sau #68,505,5,0.40,Đầu tư tư bản trực tiếp thu lợi nhuận ở nước ngoài,A,needs manual,Đâu không phải là mục đích của hội nhập kinh tế quốc tế?
+unmatched_src,#347,2466,416,0.36,B,B,needs manual,Tuần hoàn của tư bản công nghiệp trải qua mãy giai đoạn?
+unmatched_src,#220,1588,,0.00,A,,needs manual,hay không?
+leftover_mln,,,66,,,B,in ghi chu or weak map,Hoạt động nào của con người được coi là cơ bản nhất và là cơ sở của đời sống xã hội?
+leftover_mln,,,136,,,D,in ghi chu or weak map,Chức năng khoa học
+leftover_mln,,,194,,,C,in ghi chu or weak map,Xuất khẩu hàng hóa là một trong những đặc điểm của:
+leftover_mln,,,309,,,C,in ghi chu or weak map,"Theo kinh tế - chính trị Mác - Lênin, loại tiền nào có chức năng cất trữ?"
+leftover_mln,,,360,,,A,in ghi chu or weak map,"Gọi W là giá trị hàng hóa, vậy công thức tính giá trị hàng hóa là gì?"
+leftover_mln,,,364,,,A,in ghi chu or weak map,Đâu là nguồn (cơ sở) của tích lũy tư bản?
+leftover_mln,,,412,,,C,in ghi chu or weak map,Mô hình kinh tế thị trường định hướng xã hội chủ nghĩa ở nước ta được chính thức nêu ra ở Đại hội nào của Đảng Cộng sản 
+low_conf_match,#345,2452,188,0.73,A,B,score 0.72-0.9,Đâu KHÔNG phải là nhân tố ảnh hưởng đến quy mô tích luỹ tư bản?
+low_conf_match,Kieu sau #234,1691,366,0.73,Lưu thông - sản xuất - lưu thông,B,score 0.72-0.9,Ba giai đoạn vận động của tuần hoàn tư bản công nghiệp là:

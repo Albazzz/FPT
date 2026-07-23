@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css?v=ok1" />
+  <link rel="stylesheet" href="style.css?v=ok2" />
 </head>
 <body>
   <div class="app-body">
@@ -82,115 +82,138 @@
           </nav>
         </div>
 
-        <div class="control-bar card-soft">
-          <nav class="tabs tabs-inline" role="tablist" aria-label="Chế độ làm bài">
-            <button type="button" class="tab active" data-tab="all" role="tab" aria-selected="true">
-              <i class="fa-solid fa-layer-group"></i>
-              <span class="tab-text">Tất cả</span>
-              <span class="tab-count" id="badgeAll">0</span>
-            </button>
-            <button type="button" class="tab" data-tab="wrong" role="tab" aria-selected="false">
-              <i class="fa-solid fa-triangle-exclamation"></i>
-              <span class="tab-text">Câu sai</span>
-              <span class="tab-count tab-count-warn" id="badgeWrong">0</span>
-            </button>
-          </nav>
+        <div class="workspace" id="workspace">
+          <!-- Bản đồ câu — bên trái, ẩn/hiện bằng nút -->
+          <aside class="side-map" id="sideMap" aria-label="Bản đồ câu hỏi">
+            <div class="map-head">
+              <span><i class="fa-solid fa-map"></i> Bản đồ</span>
+              <span class="map-count"><span id="mapCount">0</span> câu</span>
+            </div>
+            <div class="map-legend">
+              <span><i class="dot current"></i> đang làm</span>
+              <span><i class="dot ok"></i> đúng</span>
+              <span><i class="dot bad"></i> sai</span>
+              <span><i class="dot unseen"></i> chưa</span>
+            </div>
+            <div class="q-map" id="qMap" role="list"></div>
+          </aside>
 
-          <div class="search-bar search-bar-inline">
-            <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
-            <input
-              type="search"
-              id="searchInput"
-              class="search-input"
-              placeholder="Tìm câu hỏi…"
-              autocomplete="off"
-              aria-label="Tìm kiếm câu hỏi"
-            />
-            <button type="button" class="btn btn-ghost btn-sm search-clear hidden" id="btnClearSearch" title="Xóa tìm kiếm">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </div>
+          <div class="main-col">
+            <div class="control-bar card-soft">
+              <nav class="tabs tabs-inline" role="tablist" aria-label="Chế độ làm bài">
+                <button type="button" class="tab active" data-tab="all" role="tab" aria-selected="true">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <span class="tab-text">Tất cả</span>
+                  <span class="tab-count" id="badgeAll">0</span>
+                </button>
+                <button type="button" class="tab" data-tab="wrong" role="tab" aria-selected="false">
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                  <span class="tab-text">Câu sai</span>
+                  <span class="tab-count tab-count-warn" id="badgeWrong">0</span>
+                </button>
+              </nav>
 
-          <div class="toolbar toolbar-inline" role="toolbar" aria-label="Thao tác">
-            <label class="toggle" for="shuffleToggle">
-              <input type="checkbox" id="shuffleToggle" checked />
-              <span><i class="fa-solid fa-shuffle"></i> <span class="btn-label">Ngẫu nhiên</span></span>
-            </label>
-            <button type="button" class="btn btn-secondary btn-sm" id="btnReshuffle" title="Xáo thứ tự câu hỏi">
-              <i class="fa-solid fa-arrows-rotate"></i> <span class="btn-label">Xáo lại</span>
-            </button>
-            <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession" title="Reset điểm phiên">
-              <i class="fa-solid fa-rotate-left"></i> <span class="btn-label">Reset điểm</span>
-            </button>
-            <button type="button" class="btn btn-ghost btn-sm btn-danger-text" id="btnClearWrong" title="Xóa câu sai đã lưu">
-              <i class="fa-solid fa-trash-can"></i> <span class="btn-label">Xóa câu sai</span>
-            </button>
+              <div class="search-bar search-bar-inline">
+                <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+                <input
+                  type="search"
+                  id="searchInput"
+                  class="search-input"
+                  placeholder="Tìm câu hỏi…"
+                  autocomplete="off"
+                  aria-label="Tìm kiếm câu hỏi"
+                />
+                <button type="button" class="btn btn-ghost btn-sm search-clear hidden" id="btnClearSearch" title="Xóa tìm kiếm">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+
+              <div class="toolbar toolbar-inline" role="toolbar" aria-label="Thao tác">
+                <button type="button" class="btn btn-secondary btn-sm" id="btnToggleMap" title="Ẩn/hiện bản đồ câu" aria-pressed="true" aria-controls="sideMap">
+                  <i class="fa-solid fa-map" id="mapToggleIcon"></i>
+                  <span class="btn-label" id="mapToggleLabel">Ẩn bản đồ</span>
+                </button>
+                <label class="toggle" for="shuffleToggle">
+                  <input type="checkbox" id="shuffleToggle" checked />
+                  <span><i class="fa-solid fa-shuffle"></i> <span class="btn-label">Ngẫu nhiên</span></span>
+                </label>
+                <button type="button" class="btn btn-secondary btn-sm" id="btnReshuffle" title="Xáo thứ tự câu hỏi">
+                  <i class="fa-solid fa-arrows-rotate"></i> <span class="btn-label">Xáo lại</span>
+                </button>
+                <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession" title="Reset điểm phiên">
+                  <i class="fa-solid fa-rotate-left"></i> <span class="btn-label">Reset điểm</span>
+                </button>
+                <button type="button" class="btn btn-ghost btn-sm btn-danger-text" id="btnClearWrong" title="Xóa câu sai đã lưu">
+                  <i class="fa-solid fa-trash-can"></i> <span class="btn-label">Xóa câu sai</span>
+                </button>
+              </div>
+            </div>
+            <div class="search-results hidden" id="searchResults" role="listbox" aria-label="Kết quả tìm kiếm"></div>
+
+            <div class="progress-wrap" aria-hidden="true">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <section class="card quiz-card" id="quizCard">
+              <div class="card-meta">
+                <span class="q-index" id="qIndex"><i class="fa-solid fa-circle-question"></i> Câu 1</span>
+                <span class="q-id" id="qId"></span>
+              </div>
+              <h2 class="question" id="questionText">Đang tải…</h2>
+              <p class="multi-hint hidden" id="multiHint">
+                <i class="fa-solid fa-square-check"></i>
+                Chọn nhiều phương án, rồi bấm <strong>Xác nhận</strong>
+              </p>
+              <div class="options" id="options" role="listbox" aria-label="Các phương án"></div>
+              <div class="submit-row hidden" id="submitRow">
+                <button type="button" class="btn btn-primary" id="btnSubmit" disabled>
+                  <i class="fa-solid fa-paper-plane"></i> Xác nhận
+                </button>
+                <span class="submit-count" id="submitCount">Đã chọn 0</span>
+              </div>
+              <div class="feedback hidden" id="feedback" role="status"></div>
+              <div class="explain-toggle-row hidden" id="explainToggleRow">
+                <button type="button" class="btn btn-secondary btn-sm" id="btnToggleExplain" aria-expanded="true">
+                  <i class="fa-solid fa-lightbulb" id="toggleExplainIcon"></i>
+                  <span id="toggleExplainLabel">Ẩn giải thích</span>
+                </button>
+              </div>
+              <div class="explain-panel hidden" id="explainPanel" aria-live="polite"></div>
+              <div class="alt-panel hidden" id="altPanel" aria-live="polite"></div>
+            </section>
+
+            <div class="empty card hidden" id="emptyState">
+              <div class="empty-icon"><i class="fa-solid fa-face-smile"></i></div>
+              <h2 id="emptyTitle">Chưa có câu sai</h2>
+              <p id="emptyDesc">Khi bạn trả lời sai, câu hỏi sẽ được lưu ở tab này để làm lại.</p>
+              <button type="button" class="btn btn-primary" id="btnGoAll">
+                <i class="fa-solid fa-arrow-left"></i> Về tab Tất cả
+              </button>
+            </div>
+
+            <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
+              <button type="button" class="btn btn-secondary btn-nav" id="btnPrev" title="Câu trước (←)">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span class="nav-label">Trước</span>
+              </button>
+              <div class="nav-center">
+                <input type="number" id="jumpInput" min="1" class="jump-input" title="Nhảy tới số câu" aria-label="Nhảy tới số câu" />
+                <button type="button" class="btn btn-secondary btn-sm" id="btnJump">
+                  <i class="fa-solid fa-location-arrow"></i> Đi
+                </button>
+              </div>
+              <button type="button" class="btn btn-secondary btn-nav" id="btnNext" title="Câu sau (→)">
+                <span class="nav-label">Sau</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </nav>
+
+            <p class="hint">
+              <i class="fa-solid fa-hand-pointer"></i>
+              Chọn môn ở thanh trên, chọn bài/đề, rồi làm quiz. Bản đồ bên trái: click số câu để nhảy tới.
+            </p>
           </div>
         </div>
-        <div class="search-results hidden" id="searchResults" role="listbox" aria-label="Kết quả tìm kiếm"></div>
-
-        <div class="progress-wrap" aria-hidden="true">
-          <div class="progress-bar" id="progressBar"></div>
-        </div>
-
-        <section class="card quiz-card" id="quizCard">
-          <div class="card-meta">
-            <span class="q-index" id="qIndex"><i class="fa-solid fa-circle-question"></i> Câu 1</span>
-            <span class="q-id" id="qId"></span>
-          </div>
-          <h2 class="question" id="questionText">Đang tải…</h2>
-          <p class="multi-hint hidden" id="multiHint">
-            <i class="fa-solid fa-square-check"></i>
-            Chọn nhiều phương án, rồi bấm <strong>Xác nhận</strong>
-          </p>
-          <div class="options" id="options" role="listbox" aria-label="Các phương án"></div>
-          <div class="submit-row hidden" id="submitRow">
-            <button type="button" class="btn btn-primary" id="btnSubmit" disabled>
-              <i class="fa-solid fa-paper-plane"></i> Xác nhận
-            </button>
-            <span class="submit-count" id="submitCount">Đã chọn 0</span>
-          </div>
-          <div class="feedback hidden" id="feedback" role="status"></div>
-          <div class="explain-toggle-row hidden" id="explainToggleRow">
-            <button type="button" class="btn btn-secondary btn-sm" id="btnToggleExplain" aria-expanded="true">
-              <i class="fa-solid fa-lightbulb" id="toggleExplainIcon"></i>
-              <span id="toggleExplainLabel">Ẩn giải thích</span>
-            </button>
-          </div>
-          <div class="explain-panel hidden" id="explainPanel" aria-live="polite"></div>
-          <div class="alt-panel hidden" id="altPanel" aria-live="polite"></div>
-        </section>
-
-        <div class="empty card hidden" id="emptyState">
-          <div class="empty-icon"><i class="fa-solid fa-face-smile"></i></div>
-          <h2 id="emptyTitle">Chưa có câu sai</h2>
-          <p id="emptyDesc">Khi bạn trả lời sai, câu hỏi sẽ được lưu ở tab này để làm lại.</p>
-          <button type="button" class="btn btn-primary" id="btnGoAll">
-            <i class="fa-solid fa-arrow-left"></i> Về tab Tất cả
-          </button>
-        </div>
-
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
-          <button type="button" class="btn btn-secondary btn-nav" id="btnPrev" title="Câu trước (←)">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span class="nav-label">Trước</span>
-          </button>
-          <div class="nav-center">
-            <input type="number" id="jumpInput" min="1" class="jump-input" title="Nhảy tới số câu" aria-label="Nhảy tới số câu" />
-            <button type="button" class="btn btn-secondary btn-sm" id="btnJump">
-              <i class="fa-solid fa-location-arrow"></i> Đi
-            </button>
-          </div>
-          <button type="button" class="btn btn-secondary btn-nav" id="btnNext" title="Câu sau (→)">
-            <span class="nav-label">Sau</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </nav>
-
-        <p class="hint">
-          <i class="fa-solid fa-hand-pointer"></i>
-          Chọn môn ở thanh trên, chọn bài/đề, rồi làm quiz. Giải thích theo cấu trúc chuẩn (dịch · đáp án · vì sao đúng/sai).
-        </p>
       </div>
     </main>
   </div>
@@ -244,11 +267,11 @@
 
   <script src="cloud/cloud-config.js?v=5"></script>
   <script src="cloud/study-cloud.js?v=6"></script>
-  <script src="subjects.js?v=ok1"></script>
-  <script src="data/prm.js?v=ok1"></script>
-  <script src="data/mln.js?v=ok1"></script>
-  <script src="data/jit.js?v=ok1"></script>
-  <script src="data/fe.js?v=ok1"></script>
-  <script src="app.js?v=ok1"></script>
+  <script src="subjects.js?v=ok2"></script>
+  <script src="data/prm.js?v=ok2"></script>
+  <script src="data/mln.js?v=ok2"></script>
+  <script src="data/jit.js?v=ok2"></script>
+  <script src="data/fe.js?v=ok2"></script>
+  <script src="app.js?v=ok2"></script>
 </body>
 </html>

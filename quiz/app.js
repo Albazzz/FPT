@@ -85,6 +85,13 @@
   /** Active pool for current exam selection (before wrong-mode filter) */
   function examPool() {
     if (examSet === "all" || examSet === "both") return BANK.slice();
+    // MLN bank: legacy questions use task "all" (not the filter id "all")
+    if (examSet === "bank") {
+      return BANK.filter((q) => {
+        const t = String(q.task || q.exam || "all");
+        return t === "all" || t === "bank" || t === "bank_526";
+      });
+    }
     return BANK.filter((q) => String(q.task || q.exam || "all") === examSet);
   }
 
@@ -154,14 +161,39 @@
     masterLogin: $("#masterLogin"),
     masterSkip: $("#masterSkip"),
     masterLogout: $("#masterLogout"),
+    sideMap: $("#sideMap"),
+    qMap: $("#qMap"),
+    mapCount: $("#mapCount"),
+    btnToggleMap: $("#btnToggleMap"),
+    mapToggleLabel: $("#mapToggleLabel"),
+    mapToggleIcon: $("#mapToggleIcon"),
   };
+
+  const MAP_VIS_KEY = "uq-map-visible-v1";
+  let mapVisible = true;
+  try {
+    const v = localStorage.getItem(MAP_VIS_KEY);
+    if (v === "0") mapVisible = false;
+  } catch {
+    /* ignore */
+  }
 
   function correctLetters(q) {
     if (!q) return [];
     if (Array.isArray(q.answers) && q.answers.length) {
-      return q.answers.map(String).sort();
+      return q.answers
+        .map((a) => String(a).toUpperCase().replace(/[^A-E]/g, ""))
+        .filter(Boolean)
+        .sort();
     }
-    return q.answer ? [String(q.answer)] : [];
+    if (q.answer == null || q.answer === "") return [];
+    // Multi-select may be stored as "ABC" (not only ["A","B","C"])
+    const s = String(q.answer)
+      .toUpperCase()
+      .replace(/[^A-E]/g, "");
+    if (!s) return [];
+    if (s.length === 1) return [s];
+    return s.split("").sort();
   }
 
   function isMulti(q) {
@@ -333,10 +365,16 @@
   function updateExamBadges() {
     document.querySelectorAll("[data-task-count]").forEach((node) => {
       const tid = node.getAttribute("data-task-count");
-      const n =
-        tid === "all"
-          ? BANK.length
-          : BANK.filter((q) => String(q.task || q.exam) === tid).length;
+      let n = 0;
+      if (tid === "all") n = BANK.length;
+      else if (tid === "bank") {
+        n = BANK.filter((q) => {
+          const t = String(q.task || q.exam || "all");
+          return t === "all" || t === "bank" || t === "bank_526";
+        }).length;
+      } else {
+        n = BANK.filter((q) => String(q.task || q.exam) === tid).length;
+      }
       node.textContent = String(n);
     });
   }
@@ -763,6 +801,125 @@
     el.progressBar.style.width = pct + "%";
   }
 
+  function applyMapVisibility() {
+    document.body.classList.toggle("map-hidden", !mapVisible);
+    if (el.sideMap) {
+      el.sideMap.hidden = !mapVisible;
+      el.sideMap.setAttribute("aria-hidden", mapVisible ? "false" : "true");
+    }
+    if (el.btnToggleMap) {
+      el.btnToggleMap.setAttribute("aria-pressed", mapVisible ? "true" : "false");
+      el.btnToggleMap.classList.toggle("is-active", mapVisible);
+    }
+    if (el.mapToggleLabel) {
+      el.mapToggleLabel.textContent = mapVisible ? "Ẩn bản đồ" : "Hiện bản đồ";
+    }
+    if (el.mapToggleIcon) {
+      el.mapToggleIcon.className = mapVisible
+        ? "fa-solid fa-map"
+        : "fa-solid fa-map-location-dot";
+    }
+    try {
+      localStorage.setItem(MAP_VIS_KEY, mapVisible ? "1" : "0");
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function jumpToId(qid) {
+    const i = queue.findIndex((q) => q && q.id === qid);
+    if (i < 0) return;
+    jumpTo(i + 1);
+  }
+
+  function mapCellState(q) {
+    if (!q) return "unseen";
+    const chosen = lastChoice.get(q.id);
+    if (chosen) {
+      return isCorrectSelection(q, chosen) ? "ok" : "bad";
+    }
+    if (wrongIds.has(q.id)) return "bad";
+    return "unseen";
+  }
+
+  /** Bản đồ câu (giống MLN122_FE) — hiển thị queue hiện tại, click để nhảy */
+  function renderQMap() {
+    const map = el.qMap;
+    if (!map) return;
+    const cur = currentQuestion();
+    const list = queue;
+
+    if (el.mapCount) el.mapCount.textContent = String(list.length);
+
+    const MAX = 360;
+    let start = 0;
+    let end = list.length;
+    if (list.length > MAX) {
+      const safePos = Math.min(Math.max(0, index), Math.max(0, list.length - 1));
+      start = Math.max(0, safePos - Math.floor(MAX / 2));
+      end = Math.min(list.length, start + MAX);
+      start = Math.max(0, end - MAX);
+    }
+
+    const frag = document.createDocumentFragment();
+    if (!list.length) {
+      const empty = document.createElement("div");
+      empty.className = "q-map-empty";
+      empty.textContent = "Chưa có câu";
+      frag.appendChild(empty);
+    }
+
+    if (start > 0) {
+      const more = document.createElement("button");
+      more.type = "button";
+      more.className = "q-cell";
+      more.textContent = "…";
+      more.title = "Về đầu danh sách";
+      more.addEventListener("click", () => jumpTo(1));
+      frag.appendChild(more);
+    }
+
+    for (let i = start; i < end; i++) {
+      const q = list[i];
+      if (!q) continue;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "q-cell";
+      btn.textContent = String(i + 1);
+      btn.title = `${questionTag(q)} · vị trí ${i + 1}`;
+      btn.setAttribute("role", "listitem");
+      btn.dataset.qid = String(q.id);
+      if (cur && q.id === cur.id) btn.classList.add("is-current");
+      const st = mapCellState(q);
+      if (st === "ok") btn.classList.add("is-ok");
+      if (st === "bad") btn.classList.add("is-bad");
+      btn.addEventListener("click", () => jumpToId(q.id));
+      frag.appendChild(btn);
+    }
+
+    if (end < list.length) {
+      const more = document.createElement("button");
+      more.type = "button";
+      more.className = "q-cell";
+      more.textContent = "…";
+      more.title = "Tới cuối danh sách";
+      more.addEventListener("click", () => jumpTo(list.length));
+      frag.appendChild(more);
+    }
+
+    map.innerHTML = "";
+    map.appendChild(frag);
+
+    try {
+      const curBtn = map.querySelector(".q-cell.is-current");
+      if (curBtn && typeof curBtn.scrollIntoView === "function") {
+        curBtn.scrollIntoView({ block: "nearest", inline: "nearest" });
+      }
+    } catch {
+      /* ignore */
+    }
+  }
+
   function updateSubmitUI(q) {
     if (!el.submitRow || !el.btnSubmit) return;
     if (!q || answered || !isMulti(q)) {
@@ -812,6 +969,7 @@
       el.jumpInput.value = "";
       if (el.submitRow) el.submitRow.classList.add("hidden");
       if (el.multiHint) el.multiHint.classList.add("hidden");
+      renderQMap();
       return;
     }
 
@@ -881,6 +1039,7 @@
     el.btnNext.disabled = index >= queue.length - 1;
     el.jumpInput.max = queue.length;
     el.jumpInput.value = String(index + 1);
+    renderQMap();
   }
 
   /**
@@ -1296,6 +1455,7 @@
     showExplainPanel(q);
     showAltPanel(q);
     updateBadges();
+    renderQMap();
     // Lưu ngay vị trí + đáp án đã chọn (trước đây chỉ lưu khi Next → mất tiến trình)
     persistState({ immediate: true });
   }
@@ -1690,6 +1850,15 @@
       persistState();
     });
   }
+
+  if (el.btnToggleMap) {
+    el.btnToggleMap.addEventListener("click", () => {
+      mapVisible = !mapVisible;
+      applyMapVisibility();
+      if (mapVisible) renderQMap();
+    });
+  }
+  applyMapVisibility();
 
   if (el.searchInput) {
     let searchTimer = null;
