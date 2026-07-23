@@ -19,6 +19,17 @@ function esc(s) {
 
 /** Full / long option phrases — exact-ish match (case-insensitive). */
 export const OPT_EXACT = [
+  // Network devices (keep token + short VI gloss)
+  ["Bridge.", "Bridge (cầu nối tầng 2 / MAC)"],
+  ["Bridge", "Bridge (cầu nối tầng 2 / MAC)"],
+  ["Repeater.", "Repeater (bộ lặp tầng 1)"],
+  ["Repeater", "Repeater (bộ lặp tầng 1)"],
+  ["Hub.", "Hub (bộ tập trung tầng 1)"],
+  ["Hub", "Hub (bộ tập trung tầng 1)"],
+  ["Router.", "Router (bộ định tuyến tầng 3 / IP)"],
+  ["Router", "Router (bộ định tuyến tầng 3 / IP)"],
+  ["Switch.", "Switch (bộ chuyển mạch tầng 2)"],
+  ["Switch", "Switch (bộ chuyển mạch tầng 2)"],
   // Finance / metrics (before word-map "Return" → "Trả về")
   ["Return relative to investment", "Lợi nhuận / suất sinh lời so với vốn đầu tư"],
   ["Return on Investment", "Suất sinh lời trên vốn đầu tư (ROI)"],
@@ -818,13 +829,23 @@ export function translateOpt(opt) {
     if (/オブジェクト/.test(raw)) return `${raw} — mô hình hướng đối tượng`;
     return raw;
   }
-  if (isTechToken(raw)) return raw;
 
-  // Domain phrases before word map (ROI: Return ≠ programming return)
+  // Exact option book BEFORE isTechToken (Bridge./Router. are short tech-looking tokens)
   const low = raw.toLowerCase();
   for (const [en, vi] of OPT_EXACT) {
     if (low === en.toLowerCase()) return vi;
   }
+  // strip trailing period for device names
+  const bare = raw.replace(/\.$/, "");
+  if (bare !== raw) {
+    for (const [en, vi] of OPT_EXACT) {
+      if (bare.toLowerCase() === en.toLowerCase()) return vi;
+    }
+  }
+
+  if (isTechToken(raw)) return raw;
+
+  // Domain phrases before word map (ROI: Return ≠ programming return)
   // Substring finance / ROI before "Return" → "Trả về"
   if (/\breturn\b/i.test(raw) && /\binvestment\b|\bROI\b/i.test(raw)) {
     if (/relative to investment/i.test(raw))
@@ -901,7 +922,25 @@ function deepEnPhrases(s) {
     [/\btransmission speeds?\b/gi, "tốc độ truyền"],
     [/\bexchange data\b/gi, "trao đổi dữ liệu"],
     [/\btemporarily store\b/gi, "lưu tạm"],
+    [/\bA network administrator needs a device that forwards traffic between different logical networks based on logical addressing\./gi,
+      "Quản trị mạng cần thiết bị chuyển tiếp lưu lượng giữa các mạng logic theo địa chỉ logic."],
+    [/\bThe device must also operate at the OSI layer where routing and congestion control are performed\./gi,
+      "Thiết bị còn phải hoạt động ở tầng OSI thực hiện định tuyến và kiểm soát tắc nghẽn."],
+    [/\bWhich device BEST satisfies the requirement\??/gi, "Thiết bị nào thỏa yêu cầu tốt nhất?"],
+    [/\bnetwork administrator\b/gi, "quản trị mạng"],
+    [/\blogical networks?\b/gi, "mạng logic"],
+    [/\blogical addressing\b/gi, "địa chỉ logic (IP)"],
+    [/\bcongestion control\b/gi, "kiểm soát tắc nghẽn"],
+    [/\bOSI layer\b/gi, "tầng OSI"],
+    [/\bforwards traffic\b/gi, "chuyển tiếp lưu lượng"],
     [/\bforwarding\b/gi, "chuyển tiếp"],
+    [/\bsatisfies the requirement\b/gi, "thỏa yêu cầu"],
+    [/\bbased on\b/gi, "dựa trên"],
+    [/\bdifferent\b/gi, "các ... khác nhau"],
+    [/\bneeds a device that\b/gi, "cần thiết bị"],
+    [/\bmust also operate at\b/gi, "phải hoạt động ở"],
+    [/\bare performed\b/gi, "được thực hiện"],
+    [/\bBEST\b/g, "tốt nhất"],
     [/\bswitching approach\b/gi, "cách chuyển mạch"],
     [/\bbest matches these characteristics\b/gi, "khớp nhất các đặc điểm này"],
     [/\bcircuit switching\b/gi, "chuyển mạch kênh"],

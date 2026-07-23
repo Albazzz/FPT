@@ -55,7 +55,9 @@ function bullets(...lines) {
 }
 
 function hasVi(s) {
-  return /[àáạảãâăèéêìíòóôơùúưỳýđ]/i.test(s || "");
+  return /[àáạảãâăèéêìíòóôơùúưỳýđÀÁẠẢÃÂĂÈÉÊÌÍÒÓÔƠÙÚƯỲÝĐ\u1EA0-\u1EF9]/i.test(
+    s || ""
+  );
 }
 function hasJp(s) {
   return /[\u3040-\u30ff\u3400-\u9fff]/.test(s || "");
@@ -202,10 +204,48 @@ const DICT = [
     tags: ["db"],
   },
   {
-    re: [/curves|animation curve|tween|animationcontroller/i],
+    // NEVER bare "tween" — matches "be-tween" in English network stems
+    re: [/\bcurves\b|\banimation curves?\b|\btween\b|\banimationcontroller\b/i],
     what: "Đường cong/thời gian điều khiển nhịp chuyển động UI (ease-in/out…).",
     role: "Làm animation mượt, không tuyến tính cứng.",
     tags: ["flutter"],
+  },
+  // Networking devices (FE/JFE) — before generic OS/process fallbacks
+  {
+    re: [/\brouters?\b/i],
+    what: "Thiết bị tầng 3 (Network): định tuyến/chuyển tiếp gói giữa các mạng logic theo địa chỉ IP.",
+    role: "Routing, phân đoạn mạng, congestion control ở tầng mạng OSI.",
+    tags: ["net", "fe"],
+  },
+  {
+    re: [/\bbridges?\b/i],
+    what: "Thiết bị tầng 2 (Data Link): nối segment LAN, lọc/chuyển frame theo MAC.",
+    role: "Không định tuyến theo IP giữa các mạng logic khác nhau.",
+    tags: ["net", "fe"],
+  },
+  {
+    re: [/\brepeaters?\b/i],
+    what: "Thiết bị tầng 1 (Physical): khuếch đại/tái tạo tín hiệu trên cùng môi trường.",
+    role: "Kéo dài cáp; không phân đoạn mạng logic, không routing.",
+    tags: ["net", "fe"],
+  },
+  {
+    re: [/\bhubs?\b/i],
+    what: "Bộ tập trung tầng 1: phát lại tín hiệu ra mọi cổng (shared medium).",
+    role: "Không lọc MAC, không định tuyến IP.",
+    tags: ["net", "fe"],
+  },
+  {
+    re: [/\bswitch(?:es)?\b/i],
+    what: "Thiết bị tầng 2: chuyển frame theo bảng MAC, mỗi cổng một collision domain.",
+    role: "LAN switching; routing liên mạng vẫn cần router (L3).",
+    tags: ["net", "fe"],
+  },
+  {
+    re: [/\bOSI\b|open systems interconnection/i],
+    what: "Mô hình 7 tầng Open Systems Interconnection (chuẩn tham chiếu mạng).",
+    role: "Phân lớp chức năng: Physical → … → Application; routing ở tầng Network (L3).",
+    tags: ["net", "fe"],
   },
   {
     re: [/\bexpanded\b/i],
@@ -684,6 +724,17 @@ function lookup(text) {
         const rest = s.replace(new RegExp(matched.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"), " ");
         if (/[A-Za-zÀ-ỹ]{4,}/.test(rest)) sc = Math.min(sc, 12);
       }
+      // Flutter-only tags must not win on pure network/OS FE stems
+      if (
+        c.tags &&
+        c.tags.includes("flutter") &&
+        /router|bridge|hub|repeater|osi|ip address|subnet|lan|wan|packet|congestion|logical network/i.test(
+          s
+        ) &&
+        !/flutter|widget|dart|animation|curve/i.test(s)
+      ) {
+        sc = Math.min(sc, 5);
+      }
       if (sc > score) {
         score = sc;
         best = c;
@@ -701,6 +752,15 @@ function packDef(c) {
 function defineCorrect(question, ansText) {
   const q = String(question || "");
   const a = String(ansText || "");
+
+  // Network device scenario (FE): prefer answer device over accidental EN substring hits
+  if (
+    /network|osi|routing|logical network|ip address|subnet|lan|wan|forward/i.test(q) &&
+    /router|bridge|hub|repeater|switch/i.test(a)
+  ) {
+    const aHit = lookup(a);
+    if (aHit && aHit.tags && aHit.tags.includes("net")) return packDef(aHit);
+  }
 
   // Stream vs Future: question mentions both — pick by answer nature
   if (/stream/i.test(q) && /future/i.test(q)) {
@@ -1112,11 +1172,22 @@ function paraphraseOption(text, ctx = "") {
       tags: ["fe"],
     };
   }
-  if (/process|waiting|ready|disk|cpu|os|operating|suspend/i.test(blob)) {
+  // Avoid matching "OS" inside "OSI" or random FE stems
+  if (
+    /\b(process|waiting|ready|disk|cpu|operating\s+system|suspend|page\s*fault)\b/i.test(blob) &&
+    !/router|bridge|hub|repeater|osi layer|logical network/i.test(blob)
+  ) {
     return {
       what: `Trạng thái/khái niệm OS liên quan «${label}».`,
       role: "Gắn vòng đời tiến trình, lập lịch CPU hoặc chờ I/O.",
       tags: ["os"],
+    };
+  }
+  if (/router|bridge|hub|repeater|switch|osi|logical network|routing/i.test(blob)) {
+    return {
+      what: `Thiết bị/khái niệm mạng «${label}».`,
+      role: "Đối chiếu đúng tầng OSI và chức năng (routing / switching / physical).",
+      tags: ["net", "fe"],
     };
   }
   if (/tư bản|giá trị|độc quyền|thị trường|lao động|giai cấp|mác|cách mạng/i.test(blob)) {
@@ -1178,6 +1249,11 @@ const Q_PHRASES = [
   [/What is the main purpose of interface design\??/i, "Mục đích chính của thiết kế giao diện là gì?"],
   [/Generics in Dart mainly help you:/i, "Generics trong Dart chủ yếu giúp bạn:"],
   [/ROI measures roughly:/i, "ROI đo gần đúng điều gì?"],
+  [
+    /A network administrator needs a device that forwards traffic between different logical networks based on logical addressing\.\s*The device must also operate at the OSI layer where routing and congestion control are performed\.\s*Which device BEST satisfies the requirement\??/i,
+    "Quản trị mạng cần thiết bị chuyển tiếp lưu lượng giữa các mạng logic theo địa chỉ logic, hoạt động ở tầng OSI thực hiện routing và kiểm soát tắc nghẽn. Thiết bị nào phù hợp nhất?",
+  ],
+  [/Which device BEST satisfies the requirement\??/i, "Thiết bị nào thỏa yêu cầu tốt nhất?"],
 ];
 
 const OPT_PHRASES = [
@@ -1457,6 +1533,19 @@ function whyWrongSpecific(opt, optDef, correctDef, question, remoteWhy) {
       return "Page fault thuộc quản lý bộ nhớ ảo OS; ROI là chỉ số tài chính.";
   }
 
+  // Network devices (router scenario)
+  if (/logical network|routing and congestion|forwards traffic|osi layer where routing/i.test(q) || (/\brouter\b/i.test(cWhat) && /network|osi|routing/i.test(q))) {
+    if (/\bbridge\b/i.test(o))
+      return "Bridge làm việc tầng 2 (MAC), nối segment LAN — không định tuyến giữa các mạng logic theo IP.";
+    if (/\brepeater\b/i.test(o))
+      return "Repeater chỉ khuếch đại tín hiệu tầng 1; không đọc địa chỉ logic, không routing.";
+    if (/\bhub\b/i.test(o))
+      return "Hub là bộ tập trung tầng 1, broadcast ra mọi cổng; không routing/congestion control tầng mạng.";
+    if (/\bswitch\b/i.test(o) && !/router|l3/i.test(o))
+      return "Switch chủ yếu tầng 2 (MAC); đề cần thiết bị tầng 3 định tuyến liên mạng.";
+    if (/\brouter\b/i.test(o)) return null;
+  }
+
   // Domain contrasts
   if (/buildcontext/i.test(q)) {
     if (/apk|binary/i.test(o))
@@ -1699,6 +1788,12 @@ function buildIntent(question, correctDef, kbTags) {
       "Loại metric mạng/OS (packet loss, cache hit, page fault)."
     );
   }
+  if (/logical network|routing and congestion|forwards traffic|osi layer where routing/i.test(q)) {
+    return bullets(
+      "Router = tầng 3: định tuyến theo địa chỉ logic (IP) giữa các mạng.",
+      "Bridge/Switch ≈ L2 · Hub/Repeater ≈ L1 — không thay router liên mạng."
+    );
+  }
   if (/tư bản|giá trị|độc quyền|thị trường|lao động/i.test(q)) {
     return bullets(
       correctDef.what,
@@ -1879,6 +1974,11 @@ function rebuildOne(q, remote) {
       exp.memoryTip = bullets("ROI = Return On Investment ≈ lợi nhuận / vốn đầu tư.", "Không phải packet loss / cache hit / page fault.");
     if (/giá cả độc quyền/i.test(qText))
       exp.memoryTip = bullets("Giá độc quyền = tổ chức độc quyền áp đặt khi mua/bán.", "≠ giá Nhà nước (hành chính).");
+    if (/logical network|routing and congestion|forwards traffic|osi layer where routing/i.test(qText))
+      exp.memoryTip = bullets(
+        "L3 Router: IP + routing + congestion control.",
+        "L2 Bridge/Switch · L1 Hub/Repeater."
+      );
   }
 
   exp.whatIs = {};
@@ -2030,8 +2130,8 @@ for (const [localKey, remoteFile] of mapEntries) {
     : forceAll
       ? localKey === "mln"
         ? "all-mln-v7-pipeline"
-        : "all-prm-jfe-v7-pipeline"
-      : "imported-v7-pipeline";
+        : "all-prm-jfe-v8-net"
+      : "imported-v8";
   const qs = local.questions.map((q) => {
     const isImp = IMPORTED.has(q.task) || IMPORTED.has(q.source);
     const doRebuild = forceAll || isImp;
