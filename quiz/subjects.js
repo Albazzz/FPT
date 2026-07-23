@@ -6,13 +6,14 @@ window.QUIZ_SUBJECTS = {
   prm: {
     id: "prm",
     title: "PRM393",
-    subtitle: "Flutter · FE SP26 · Slides",
+    subtitle: "Flutter · SP26 · Slides",
     brandIcon: "fa-mobile-screen-button",
     storageWrong: "uq-prm-wrong-v1",
     storageProgress: "uq-prm-progress-v1",
     cloudSubject: "prm",
     multiSelect: true,
     showTranslationAlways: true,
+    // Chỉ hiện tab khi có câu (app ẩn count=0)
     tasks: [
       { id: "fe", label: "SP26 FE", icon: "fa-file" },
       { id: "re", label: "SP26 B5 FE", icon: "fa-file-circle-plus" },
@@ -23,7 +24,7 @@ window.QUIZ_SUBJECTS = {
     ],
     defaultTask: "all",
     dataKey: "prm",
-    hint: "Chọn đề SP26 / Đề FE / Slides hoặc tất cả. Giải thích song ngữ EN–VI theo cấu trúc chuẩn.",
+    hint: "Chọn đề SP26 / Slides (tab 0 câu sẽ ẩn). Giải thích song ngữ EN–VI.",
   },
   mln: {
     id: "mln",
@@ -66,11 +67,12 @@ window.QUIZ_SUBJECTS = {
     ],
     defaultTask: "all",
     dataKey: "jit",
-    hint: "Quiz / Sample / PT + Slides & Đề FE bổ sung. Câu JP + bảng dịch VI.",
+    hint: "Quiz / Sample / PT + Slides. Tab không có câu sẽ ẩn. JP + bảng dịch VI.",
   },
+  // dataKey vẫn "fe" (file data/fe.js); hiển thị JFE — URL ?s=fe hoặc ?s=jfe
   fe: {
     id: "fe",
-    title: "FE / wedJfe",
+    title: "JFE301",
     subtitle: "Test · 300 · Books · Đề FE",
     brandIcon: "fa-graduation-cap",
     storageWrong: "uq-fe-wrong-v1",
@@ -89,7 +91,7 @@ window.QUIZ_SUBJECTS = {
     ],
     defaultTask: "all",
     dataKey: "fe",
-    hint: "FE Study: test · 300 · datajfe + Books/Đề FE bổ sung từ remote.",
+    hint: "JFE301: test · 300 · datajfe + Books/Đề FE. Tab 0 câu được ẩn.",
   },
 };
 

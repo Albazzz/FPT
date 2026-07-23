@@ -16,6 +16,8 @@
   const SUBJECTS = window.QUIZ_SUBJECTS || {};
   const ORDER = window.QUIZ_SUBJECT_ORDER || Object.keys(SUBJECTS);
   let subjectId = (qsParam("s") || qsParam("subject") || "prm").toLowerCase();
+  // Alias hiển thị: JFE301 (data vẫn key "fe")
+  if (subjectId === "jfe" || subjectId === "jfe301" || subjectId === "wedjfe") subjectId = "fe";
   if (!SUBJECTS[subjectId]) subjectId = ORDER[0] || "prm";
   const CFG = SUBJECTS[subjectId] || {
     id: subjectId,
@@ -362,20 +364,30 @@
     updateExamBadges();
   }
 
+  function countForTask(tid) {
+    if (tid === "all") return BANK.length;
+    if (tid === "bank") {
+      return BANK.filter((q) => {
+        const t = String(q.task || q.exam || "all");
+        return t === "all" || t === "bank" || t === "bank_526";
+      }).length;
+    }
+    return BANK.filter((q) => String(q.task || q.exam) === tid).length;
+  }
+
   function updateExamBadges() {
     document.querySelectorAll("[data-task-count]").forEach((node) => {
       const tid = node.getAttribute("data-task-count");
-      let n = 0;
-      if (tid === "all") n = BANK.length;
-      else if (tid === "bank") {
-        n = BANK.filter((q) => {
-          const t = String(q.task || q.exam || "all");
-          return t === "all" || t === "bank" || t === "bank_526";
-        }).length;
-      } else {
-        n = BANK.filter((q) => String(q.task || q.exam) === tid).length;
-      }
+      const n = countForTask(tid);
       node.textContent = String(n);
+      // Ẩn tab Bài/đề khi 0 câu (Albazzz, Đề FE, Đề ảnh… nếu không có data)
+      const btn = node.closest(".exam-tab");
+      if (btn && tid !== "all") {
+        btn.classList.toggle("hidden", n === 0);
+        btn.hidden = n === 0;
+        if (n === 0) btn.setAttribute("aria-hidden", "true");
+        else btn.removeAttribute("aria-hidden");
+      }
     });
   }
 
@@ -1967,26 +1979,37 @@
     });
     const taskTabs = document.getElementById("taskTabs");
     if (taskTabs) {
+      // Nếu task đang chọn có 0 câu → về "all"
+      if (examSet !== "all" && countForTask(examSet) === 0) {
+        examSet = CFG.defaultTask && countForTask(CFG.defaultTask) > 0 ? CFG.defaultTask : "all";
+      }
       const cur = normalizeExamSet(examSet);
-      taskTabs.innerHTML = TASK_DEFS.map((t) => {
-        const on = cur === t.id;
-        return (
-          '<button type="button" class="tab exam-tab' +
-          (on ? " active" : "") +
-          '" data-exam="' +
-          t.id +
-          '" role="tab" aria-selected="' +
-          (on ? "true" : "false") +
-          '">' +
-          (t.icon ? '<i class="fa-solid ' + t.icon + '"></i> ' : "") +
-          '<span class="tab-text">' +
-          t.label +
-          "</span>" +
-          '<span class="tab-count" data-task-count="' +
-          t.id +
-          '">0</span></button>'
-        );
-      }).join("");
+      // Chỉ render tab có câu (giữ "all"); không hiện Albazzz/Đề FE/Đề ảnh = 0
+      const visibleTasks = TASK_DEFS.filter((t) => t.id === "all" || countForTask(t.id) > 0);
+      taskTabs.innerHTML = visibleTasks
+        .map((t) => {
+          const on = cur === t.id;
+          const n = countForTask(t.id);
+          return (
+            '<button type="button" class="tab exam-tab' +
+            (on ? " active" : "") +
+            '" data-exam="' +
+            t.id +
+            '" role="tab" aria-selected="' +
+            (on ? "true" : "false") +
+            '">' +
+            (t.icon ? '<i class="fa-solid ' + t.icon + '"></i> ' : "") +
+            '<span class="tab-text">' +
+            t.label +
+            "</span>" +
+            '<span class="tab-count" data-task-count="' +
+            t.id +
+            '">' +
+            n +
+            "</span></button>"
+          );
+        })
+        .join("");
       taskTabs.querySelectorAll(".exam-tab").forEach((btn) => {
         btn.addEventListener("click", () => setExamSet(btn.getAttribute("data-exam")));
       });

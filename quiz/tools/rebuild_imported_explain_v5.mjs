@@ -747,6 +747,31 @@ function definePhrase(text) {
       tags: ["dart"],
     };
   }
+  // FE / JFE numeric & classic
+  if (/^8$/.test(t)) {
+    return { what: "Số 8 — thường là 1 byte = 8 bit.", role: "Đơn vị đo bit trong một byte.", tags: ["fe"] };
+  }
+  if (/^0\.855$/.test(t)) {
+    return {
+      what: "0.855 = 0.95 × 0.90 — độ tin cậy hệ nối tiếp (series).",
+      role: "Series reliability: nhân các module R = R1×R2×…",
+      tags: ["fe"],
+    };
+  }
+  if (/immediate execution and debugging|interpreter/i.test(t)) {
+    return {
+      what: "Interpreter: chạy/debug ngay từng câu lệnh, không cần biên dịch hết trước.",
+      role: "Ưu điểm so với compiler (dịch toàn bộ rồi mới chạy).",
+      tags: ["fe"],
+    };
+  }
+  if (/only comments are translated|machine code is converted back|high-level language only/i.test(t)) {
+    return {
+      what: `Phát biểu lệch về compiler/interpreter: «${t.slice(0, 80)}».`,
+      role: "Không mô tả đúng ưu điểm interpreter so với compiler.",
+      tags: ["fe"],
+    };
+  }
   return null;
 }
 
@@ -879,6 +904,10 @@ const Q_PHRASES = [
   [/What is a main benefit of Flutter listed in the introduction slides\??/i, "Lợi ích chính nào của Flutter được nêu trong slide giới thiệu?"],
   [/Which command verifies Flutter SDK installation after adding PATH\??/i, "Lệnh nào kiểm tra cài đặt Flutter SDK sau khi thêm PATH?"],
   [/How many bits are contained in one byte\??/i, "Một byte gồm bao nhiêu bit?"],
+  [/Two modules have reliabilities .+ series system/i, "Hai module độ tin cậy nối tiếp (series) — độ tin cậy hệ thống?"],
+  [/Which statement correctly describes the advantage of an interpreter compared with a compiler\??/i, "Phát biểu nào đúng về ưu điểm interpreter so với compiler?"],
+  [/Which of the following is an appropriate explanation of the spooling function\??/i, "Giải thích nào phù hợp về chức năng spooling?"],
+  [/Which of the following statements is TRUE about the critical path in PERT\??/i, "Phát biểu nào ĐÚNG về critical path trong PERT?"],
   [/ARP resolves:\s*/i, "ARP phân giải:"],
   [/A process is waiting for data from a disk drive before continuing execution\. Which state is the process most likely in\??/i, "Tiến trình đang chờ dữ liệu từ đĩa trước khi chạy tiếp. Nó thường ở trạng thái nào?"],
   [/What is the main purpose of interface design\??/i, "Mục đích chính của thiết kế giao diện là gì?"],
@@ -1214,6 +1243,15 @@ function buildIntent(question, correctDef, kbTags) {
   if (/mod\(|check digit/i.test(q)) {
     return bullets("Tính check digit/modulo theo công thức đề.", "Thay số và chọn giá trị thỏa.");
   }
+  if (/one byte|how many bits/i.test(q)) {
+    return bullets("1 byte = 8 bit (chuẩn máy tính).", "Không nhầm với 16-bit word hay 7-bit ASCII thuần.");
+  }
+  if (/reliabilit|series system/i.test(q)) {
+    return bullets("Hệ nối tiếp: R = R1 × R2 × …", "Hệ song song khác công thức.");
+  }
+  if (/interpreter|compiler/i.test(q)) {
+    return bullets("Interpreter: chạy/debug ngay; compiler: dịch hết trước khi chạy.", "Chọn đúng ưu điểm của từng loại.");
+  }
   // fallback knowledge-focused
   return bullets(correctDef.what, correctDef.role);
 }
@@ -1386,8 +1424,15 @@ function writeBank(key, questions, meta = {}) {
 }
 
 // ── main ───────────────────────────────────────────────
+// node rebuild_imported_explain_v5.mjs           → only imported tasks
+// node rebuild_imported_explain_v5.mjs --all-prm-jfe → ALL questions in prm + fe (JFE)
+const ALL_PRM_JFE = process.argv.includes("--all-prm-jfe");
 const report = {};
-for (const [localKey, remoteFile] of Object.entries(MAP)) {
+const mapEntries = ALL_PRM_JFE
+  ? Object.entries(MAP).filter(([k]) => k === "prm" || k === "fe")
+  : Object.entries(MAP);
+
+for (const [localKey, remoteFile] of mapEntries) {
   const remotePath = path.join(fetchDir, remoteFile);
   const remote = fs.existsSync(remotePath)
     ? JSON.parse(fs.readFileSync(remotePath, "utf8"))
@@ -1399,9 +1444,11 @@ for (const [localKey, remoteFile] of Object.entries(MAP)) {
   let n = 0;
   let bannedLeft = 0;
   let echoLeft = 0;
+  const passName = ALL_PRM_JFE ? "all-prm-jfe-v5" : "imported-v5-translate";
   const qs = local.questions.map((q) => {
     const isImp = IMPORTED.has(q.task) || IMPORTED.has(q.source);
-    if (!isImp) return q;
+    const doRebuild = ALL_PRM_JFE || isImp;
+    if (!doRebuild) return q;
     n++;
     const out = rebuildOne(q, byQ.get(norm(q.question)));
     const blob = JSON.stringify(out.explanation || {});
@@ -1412,8 +1459,8 @@ for (const [localKey, remoteFile] of Object.entries(MAP)) {
       echoLeft++;
     return out;
   });
-  writeBank(localKey, qs, { pass: "imported-v5-translate", rebuilt: n });
-  report[localKey] = { rebuilt: n, bannedLeft, echoLeft };
+  writeBank(localKey, qs, { pass: passName, rebuilt: n });
+  report[localKey] = { rebuilt: n, bannedLeft, echoLeft, pass: passName };
   console.log(localKey, report[localKey]);
 }
 

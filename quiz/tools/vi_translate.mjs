@@ -568,6 +568,9 @@ export const OPT_WORDS = [
 ];
 
 export const Q_EXACT = [
+  ["How many bits are contained in one byte?", "Một byte chứa bao nhiêu bit?"],
+  ["Two modules have reliabilities 0.95 and 0.90 in a series system. What is the system reliability?", "Hai module có độ tin cậy 0.95 và 0.90 nối tiếp (series). Độ tin cậy hệ thống?"],
+  ["Which statement correctly describes the advantage of an interpreter compared with a compiler?", "Phát biểu nào đúng về ưu điểm của interpreter so với compiler?"],
   ["What does a Stream provide compared to a single Future?", "So với một Future đơn lẻ, Stream cung cấp gì thêm?"],
   ["What does a Future represent?", "Future đại diện cho điều gì?"],
   ["What is the role of BuildContext?", "Vai trò của BuildContext là gì?"],
