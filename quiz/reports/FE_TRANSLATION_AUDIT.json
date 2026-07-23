@@ -1,12 +1,113 @@
 {
   "summary": {
-    "at": "2026-07-23T12:06:49.126Z",
+    "at": "2026-07-23T12:35:43.327Z",
     "total": 726,
     "threshold": 0.4,
     "pureEnglishQuestionVi": 0,
     "halfTranslatedQuestionVi": 0,
-    "questionsFlagged": 0,
+    "questionsFlagged": 10,
     "badLongOptionSlots": 0
   },
-  "rows": []
+  "rows": [
+    {
+      "id": 422,
+      "num": 14,
+      "task": "fuexam",
+      "qViRatio": 34.5,
+      "qViMeaningful": 19,
+      "badOpts": "",
+      "questionVi": "Có hệ ghi hình số lắp bốn camera an ninh. Trong hệ này, dữ liệu video mỗi camera được thu ở 1 Mbps và ghi 24 giờ/ngày. Cần bao nhiêu Gbyte d",
+      "question": "There is a digital video recording system installed with four security cameras. In this system, the video data from each"
+    },
+    {
+      "id": 409,
+      "num": 1,
+      "task": "fuexam",
+      "qViRatio": 33.9,
+      "qViMeaningful": 12,
+      "badOpts": "",
+      "questionVi": "Chữ số kiểm tra cho số 4 chữ số abcd được tính như sau: mod((a*4+b*3+c*2+d*1), 10). Khi chữ số kiểm tra của “7b42” bằng 6, số nào sau đây là",
+      "question": "A check digit for a 4-digit number abcd can be calculated as follows: mod((a*4+b*3+c*2+d*1), 10). When the check digit f"
+    },
+    {
+      "id": 449,
+      "num": 41,
+      "task": "fuexam",
+      "qViRatio": 31.7,
+      "qViMeaningful": 28,
+      "badOpts": "",
+      "questionVi": "Có một chuẩn có thể biểu diễn dữ liệu theo cấu trúc phân cấp bằng cách bao dữ liệu tương ứng với lồng nhau bằng thẻ <N> (bắt đầu) và </N> (k",
+      "question": "There is a standard that can represent data in a hierarchical structure by enclosing data that corresponds to nesting wi"
+    },
+    {
+      "id": 446,
+      "num": 38,
+      "task": "fuexam",
+      "qViRatio": 29.4,
+      "qViMeaningful": 10,
+      "badOpts": "",
+      "questionVi": "Dữ liệu còn lại trên stack sau các thao tác sau là gì, giả sử ban đầu stack rỗng? push 5 => push 10 => push 5 => pop => push 10 => push 10 =",
+      "question": "What is the data remaining on the stack after doing the following operations, assume that from start, stack is empty? pu"
+    },
+    {
+      "id": 428,
+      "num": 20,
+      "task": "fuexam",
+      "qViRatio": 29.1,
+      "qViMeaningful": 19,
+      "badOpts": "",
+      "questionVi": "Quy tắc cú pháp của định danh trường \"field ID\" được biểu diễn bằng ký hiệu BNF như dưới đây. Khi mỗi ID được định nghĩa là dãy chữ và/hoặc ",
+      "question": "The syntax rules of the field identifier \"field ID\" are represented in BNF notation as shown below. When each ID is defi"
+    },
+    {
+      "id": 450,
+      "num": 42,
+      "task": "fuexam",
+      "qViRatio": 25,
+      "qViMeaningful": 14,
+      "badOpts": "",
+      "questionVi": "Trong hệ RAID3 như hình dưới, ba đĩa (Disk 0 đến 2) cho dữ liệu stripe theo byte và một đĩa parity riêng (Disk 3) được dùng như một volume. ",
+      "question": "In the RAID3 system shown below, three disks (Disks 0 through 2) for byte-striped data and one dedicated parity disk (Di"
+    },
+    {
+      "id": 455,
+      "num": 47,
+      "task": "fuexam",
+      "qViRatio": 23.8,
+      "qViMeaningful": 13,
+      "badOpts": "",
+      "questionVi": "Theo khảo sát 100 sinh viên, có 40 học tiếng Anh, 30 học tiếng Pháp và 25 học tiếng Tây Ban Nha. Ngoài ra, 8 học cả Anh và Pháp, 6 học cả An",
+      "question": "According to a survey of 100 students, there are 40 students studying English, 30 studying French, and 25 studying Spani"
+    },
+    {
+      "id": 456,
+      "num": 48,
+      "task": "fuexam",
+      "qViRatio": 22.9,
+      "qViMeaningful": 33,
+      "badOpts": "",
+      "questionVi": "Khi xử lý CPU và in được thực hiện cho bốn job theo các điều kiện dưới đây, mất bao nhiêu phút để hoàn thành từ lúc bắt đầu xử lý CPU job đầ",
+      "question": "When CPU processing and printing are performed for four jobs under the conditions below, how many minutes does it take t"
+    },
+    {
+      "id": 417,
+      "num": 9,
+      "task": "fuexam",
+      "qViRatio": 18,
+      "qViMeaningful": 30,
+      "badOpts": "",
+      "questionVi": "Phát biểu sau về CRM đúng hay sai? Quản lý quan hệ khách hàng (CRM) là hệ thống doanh nghiệp liên chức năng, được vận hành bởi một bộ module",
+      "question": "The following statement is true/ false about CRM? Customer Relationship Management (CRM) is a cross-functional enterpris"
+    },
+    {
+      "id": 435,
+      "num": 27,
+      "task": "fuexam",
+      "qViRatio": 14,
+      "qViMeaningful": 19,
+      "badOpts": "",
+      "questionVi": "Nhiều thư mục mang tên A và B được quản lý theo cấu trúc như hình dưới. Khi thư mục hiện tại được đổi theo thứ tự \\BA → ..\\B → \\A, thư mục h",
+      "question": "Multiple directories having the names A and B are managed in the structure shown below. When the current directory is ch"
+    }
+  ]
 }

@@ -16,7 +16,7 @@ import {
   enMeaningfulCount,
 } from "./fe_sentence_translate.mjs";
 import { translateOptDeep, translateQuestion, hasVi } from "./vi_translate.mjs";
-import { matchFeQExact } from "./fe_q_exact.mjs";
+import { matchFeQExact, isOverSummarized, matchFullSentenceQ } from "./fe_q_exact.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dataDir = path.join(__dirname, "../data");
@@ -96,28 +96,59 @@ function betterQ(raw, current) {
   const c = String(current || "").trim();
   if (!r) return c || r;
 
-  // Curated full-sentence always wins
+  // Full-sentence book first (dịch đủ ý, không cắt)
+  const full = matchFullSentenceQ(r);
+  if (full && !isOverSummarized(r, full)) return full;
+
+  // Curated exact — reject over-summarized maps
   const exact = matchFeQExact(r);
-  if (exact) return exact;
+  if (exact && !isOverSummarized(r, exact)) return exact;
 
   const candidates = [];
   const tq = translateQuestion(r);
-  if (tq) candidates.push(tq);
+  if (tq && !isOverSummarized(r, tq) && !isCodeSwitchSalad(tq)) candidates.push(tq);
   const ts = translateFeSentence(r);
-  if (ts) candidates.push(ts);
+  if (ts && !isCodeSwitchSalad(ts)) candidates.push(ts);
 
-  // Keep current only when already dense good VI
-  if (c && hasVi(c) && !isHalfEnglish(c) && !isCodeSwitchSalad(c) && enMeaningfulCount(c) <= 4) {
+  // Keep current only if full meaning retained (not a short summary of long EN)
+  if (
+    c &&
+    hasVi(c) &&
+    !isHalfEnglish(c) &&
+    !isCodeSwitchSalad(c) &&
+    !isOverSummarized(r, c)
+  ) {
     candidates.push(c);
   }
 
-  candidates.sort((a, b) => scoreVi(a) - scoreVi(b));
-  let best = candidates[0] || c || r;
+  candidates.sort((a, b) => {
+    const oa = isOverSummarized(r, a) ? 50 : 0;
+    const ob = isOverSummarized(r, b) ? 50 : 0;
+    if (oa !== ob) return oa - ob;
+    // Prefer fuller VI (higher word count) when both OK
+    const wa = (String(a).match(/[\p{L}\p{N}]+/gu) || []).length;
+    const wb = (String(b).match(/[\p{L}\p{N}]+/gu) || []).length;
+    if (Math.abs(wa - wb) >= 4) return wb - wa;
+    return scoreVi(a) - scoreVi(b);
+  });
 
-  // Last resort: pure "Đề:" over code-switch salad
-  if (isCodeSwitchSalad(best) || (isHalfEnglish(best) && enMeaningfulCount(best) >= 8)) {
-    const clean = `Đề: ${r.length > 180 ? r.slice(0, 177) + "…" : r}`;
-    if (scoreVi(clean) < scoreVi(best)) best = clean;
+  let best = candidates[0] || null;
+  // If still nothing good, prefer full book even if ratio edge-case
+  if (!best && full) best = full;
+  if (!best && exact) best = exact;
+  if (!best) best = c || r;
+
+  // Last resort: original EN labeled — better than cutting meaning
+  if (
+    isOverSummarized(r, best) ||
+    isCodeSwitchSalad(best) ||
+    (isHalfEnglish(best) && enMeaningfulCount(best) >= 8)
+  ) {
+    if (full) return full;
+    // Keep English source under Đề: only if VI cut meaning badly
+    if (isOverSummarized(r, best)) {
+      return `Đề: ${r}`;
+    }
   }
   return best;
 }

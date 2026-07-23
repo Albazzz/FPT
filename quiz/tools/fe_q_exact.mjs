@@ -5,6 +5,7 @@
  */
 import { FE_Q_EXACT_BANK } from "./fe_q_exact_bank.mjs";
 import { FE_BANK300_Q } from "./fe_bank300_q.mjs";
+import { FE_Q_FULL_SENTENCE, isOverSummarized, matchFullSentenceQ } from "./fe_q_full_sentence.mjs";
 
 const FE_Q_EXACT_CORE = [
   [
@@ -594,8 +595,15 @@ const FE_Q_EXACT_CORE = [
   ],
 ];
 
-/** Core + bank-actual + short bank300 stems */
-export const FE_Q_EXACT = [...FE_Q_EXACT_CORE, ...FE_Q_EXACT_BANK, ...FE_BANK300_Q];
+/** Full-sentence maps first, then core/bank/short (full sentence wins on equal length via longer keys) */
+export const FE_Q_EXACT = [
+  ...FE_Q_FULL_SENTENCE,
+  ...FE_Q_EXACT_CORE,
+  ...FE_Q_EXACT_BANK,
+  ...FE_BANK300_Q,
+];
+
+export { isOverSummarized, matchFullSentenceQ };
 
 /** Normalize whitespace for matching */
 export function normQ(s) {
@@ -609,8 +617,14 @@ export function normQ(s) {
 /**
  * Exact-normalized match only (bank file holds actual wording variants).
  * Prefer longest EN key to avoid short-entry stealing.
+ * Reject over-summarized VI (cuts meaning vs source EN).
  */
 export function matchFeQExact(question) {
+  const raw = String(question || "").trim();
+  // Prefer dedicated full-sentence book first
+  const full = matchFullSentenceQ(raw);
+  if (full && !isOverSummarized(raw, full)) return full;
+
   const snorm = normQ(question).toLowerCase();
   if (!snorm) return null;
   let bestVi = null;
@@ -619,6 +633,8 @@ export function matchFeQExact(question) {
     const enN = normQ(en).toLowerCase();
     if (!enN) continue;
     if (snorm === enN && enN.length >= bestLen) {
+      // skip maps that cut the source meaning
+      if (isOverSummarized(raw, vi)) continue;
       bestVi = vi;
       bestLen = enN.length;
     }

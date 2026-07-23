@@ -9,7 +9,7 @@ import {
   isHalfEnglish,
   enMeaningfulCount,
 } from "./fe_sentence_translate.mjs";
-import { matchFeQExact } from "./fe_q_exact.mjs";
+import { matchFeQExact, isOverSummarized, matchFullSentenceQ } from "./fe_q_exact.mjs";
 import { FE_OPT_EXACT_BANK } from "./fe_opt_exact_bank.mjs";
 
 export function hasVi(s) {
@@ -1124,9 +1124,13 @@ export function translateQuestion(q) {
   if (hasVi(s) && !hasJp(s) && !isHalfEnglish(s)) return s;
   if (hasJp(s)) return null;
 
-  // Exact FE bank stems (full-sentence curated) — highest priority
+  // Full-sentence book (không tóm tắt cắt ý)
+  const fullQ = matchFullSentenceQ(s);
+  if (fullQ && !isOverSummarized(s, fullQ)) return fullQ;
+
+  // Exact FE bank stems — skip over-summarized maps
   const feExact = matchFeQExact(s);
-  if (feExact) return feExact;
+  if (feExact && !isOverSummarized(s, feExact)) return feExact;
 
   // Full-sentence FE pass for long stems
   if (s.length >= 40) {
