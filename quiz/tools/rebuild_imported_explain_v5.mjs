@@ -812,6 +812,14 @@ function defineCorrect(question, ansText) {
       tags: ["net", "fe"],
     };
   }
+  // Infix → prefix / postfix expression conversion
+  if (/prefix expression|postfix|infix notation|converted to the prefix/i.test(q)) {
+    return {
+      what: "Đổi biểu thức infix sang prefix/postfix: toán tử đứng trước (prefix) hoặc sau (postfix) toán hạng.",
+      role: "whyCorrect phải ghi từng bước bung ngoặc / ưu tiên ×÷ trước +−; option biểu thức giữ nguyên ký hiệu (không dịch A/x).",
+      tags: ["fe", "calc"],
+    };
+  }
   // HDLC: frames + full-duplex + bit stuffing (zero after ones / flag)
   if (
     /inserts? a zero after|bit\s*stuffing|confused with a flag|full-?duplex/i.test(q) &&

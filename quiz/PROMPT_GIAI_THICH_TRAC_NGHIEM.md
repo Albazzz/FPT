@@ -235,15 +235,28 @@ Xuất: `quiz/reports/EXPLAIN_AUDIT.md` · `EXPLAIN_AUDIT.json` · `EXPLAIN_AUDI
 | `whyWrong` | Nhầm DDL/DML · nhầm mức chuẩn hóa · nhầm commit/rollback |
 | `memoryTip` | Cặp khái niệm đề hay tráo |
 
-#### J4 — Số / check digit / độ tin cậy
+#### J4 — Số / check digit / độ tin cậy / **biểu thức (infix·prefix·postfix)**
 
 | Thành phần | Viết gì |
 |------------|---------|
-| `concept` | Công thức/rule (mod, trọng số, R nối tiếp = tích…) |
-| `whyCorrect` | Thay số → ra đúng đáp án |
-| `whyWrong` | Sai công thức · sai chỗ lấy dư · nhầm song song/nối tiếp |
-| `memoryTip` | Viết 1 dòng công thức |
+| `concept` | Công thức/rule (mod, trọng số, R nối tiếp = tích…) **hoặc** quy tắc đổi ký pháp |
+| `whyCorrect` | **Bắt buộc có cách tính / từng bước** (thay số → ra đáp án; hoặc bung ngoặc → prefix/postfix từng lớp) — **không** chỉ lặp lại chuỗi đáp án |
+| `whyWrong` | Sai công thức · sai chỗ lấy dư · nhầm song song/nối tiếp · **sai thứ tự toán tử/toán hạng** khi đổi ký pháp |
+| `memoryTip` | Viết 1 dòng công thức **hoặc** “prefix: toán tử trước; × trước −; ngoặc trong trước” |
 | Lưu ý | “Là gì?” với option số = “giá trị ứng với bước tính…” |
+
+**Kinh nghiệm (JFE tính toán / đổi biểu thức) — bắt buộc:**
+
+1. **Option là biểu thức** (`x - - A x 2 + BC x DEF`, `A2BC+…`, chuỗi chỉ gồm chữ cái ngắn + `+ − × / ( )`):  
+   - **Giữ nguyên 100%** trong `optionsVi` / `answerDisplay`.  
+   - **Cấm** word-map: `A`→“một”, `x`→title-case `X`, v.v.  
+2. **`whyCorrect` phải là lời giải từng bước**, ví dụ infix→prefix:  
+   - B+C → `+BC`  
+   - 2×(B+C) → `×2+BC`  
+   - …  
+   - ×F ngoài → khớp option đúng.  
+3. **Không** dùng stub kiểu “Bản dịch/diễn đạt phương án — đối chiếu định nghĩa” cho câu tính.  
+4. Option sai: chỉ ra **bước nào lệch** (vd. `×2×B+C` thay vì `×2+BC`).  
 
 #### J5 — Quản lý dự án
 
@@ -603,5 +616,49 @@ Hai nhóm lỗi **không** hết nếu chỉ chỉnh wording prompt — phải s
 5. Nếu sai **ánh xạ** hoặc **từ điển**: sửa pipeline (mục 4b), không chỉ sửa 1 câu JSON.
 
 ---
+những câu thuộc phạm trù sự thật  lịch sử thì không cần giải thich tại sao  ví dụ câu sau 
+Cách mạng công nghiệp lần thứ nhất khởi phát từ nước nào?
 
-*Cập nhật: 2026-07-23 — pipeline P1–P4 (Generics bleed, ROI dict, JIT gloss, MLN template).*
+A
+A. Anh
+
+B
+B. Pháp
+
+C
+C. Mỹ
+
+D
+D. Đức
+Sai. Đáp án đúng: A. Anh
+
+Ẩn giải thích
+Giải thích
+Đáp án
+A. Anh
+đoạn này là k cần : 
+Ý chính của câu hỏi
+• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.
+• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).
+
+Giải thích đáp án đúng
+Đây là gì?
+• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.
+
+Vì sao đúng?
+• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.
+• Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).
+đoạn này là k cần : 
+Các đáp án còn lại
+B. Pháp
+• Là gì? Pháp
+• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).
+• Vì sao sai? Pháp. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.
+C. Mỹ
+• Là gì? Phạm trù/khái niệm «Mỹ» trong KTCT–triết Mác–Lênin.
+• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).
+• Vì sao sai? Phạm trù/khái niệm «Mỹ» trong KTCT–triết Mác–Lênin. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.
+D. Đức
+• Là gì? Đức
+• Dùng để làm gì? Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).
+• Vì sao sai? Đức. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin. 

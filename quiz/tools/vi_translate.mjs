@@ -826,9 +826,28 @@ export function isTechToken(s) {
   return false;
 }
 
+/** Prefix/postfix/infix / arithmetic option strings — never word-map (A≠một, x≠X titlecase). */
+export function isMathExprOpt(s) {
+  const t = String(s || "").trim();
+  if (!t || t.length > 80) return false;
+  if (!/[+\-×*/^()]|\bx\b/i.test(t) && !/^[A-Za-z0-9\s+\-x×*/()]+$/.test(t)) return false;
+  // mostly operators, digits, single/double letter operands
+  if (!/^[A-Za-z0-9\s+\-x×*/().,]+$/i.test(t)) return false;
+  if (/\b(the|and|with|for|only|always|when|which|from|into|that|this|software|system|process)\b/i.test(t))
+    return false;
+  const ops = (t.match(/[+\-×*/^x]/gi) || []).length;
+  const words = t.match(/[A-Za-z]{3,}/g) || [];
+  // expression-like if ≥2 ops and no long English words (allow BC, DEF as operands)
+  if (ops >= 2 && words.every((w) => w.length <= 4)) return true;
+  if (ops >= 3 && t.length <= 40) return true;
+  return false;
+}
+
 export function translateOpt(opt) {
   const raw = String(opt || "").trim();
   if (!raw) return raw;
+  // Keep math / prefix-postfix expressions byte-identical
+  if (isMathExprOpt(raw)) return raw;
   if (hasVi(raw) && !hasJp(raw)) return raw;
   if (hasJp(raw)) {
     if (/階層|ツリー/.test(raw)) return `${raw} — mô hình phân cấp/cây`;
@@ -1190,6 +1209,7 @@ export function translateQuestion(q) {
 export function translateOptDeep(opt) {
   const raw = String(opt || "").trim();
   if (!raw) return raw;
+  if (isMathExprOpt(raw)) return raw;
   // Option exact bank (exact, strip punct, or long shared prefix for OCR-truncated stems)
   const low = raw.toLowerCase();
   const strip = raw.replace(/[.?!]+$/, "").trim().toLowerCase();
