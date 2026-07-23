@@ -17,6 +17,19 @@ function esc(s) {
 
 /** Full / long option phrases — exact-ish match (case-insensitive). */
 export const OPT_EXACT = [
+  // Finance / metrics (before word-map "Return" → "Trả về")
+  ["Return relative to investment", "Lợi nhuận / suất sinh lời so với vốn đầu tư"],
+  ["Return on Investment", "Suất sinh lời trên vốn đầu tư (ROI)"],
+  ["return on investment", "suất sinh lời trên vốn đầu tư (ROI)"],
+  ["Only packet loss", "Chỉ tỉ lệ mất gói tin (packet loss)"],
+  ["Only cache hit ratio always", "Chỉ tỉ lệ trúng cache (cache hit ratio)"],
+  ["Only page faults", "Chỉ page fault (lỗi trang bộ nhớ)"],
+  // Generics / type system
+  ["Write reusable type-safe APIs (e.g., List<T>)", "Viết API tái sử dụng, an toàn kiểu (vd. List<T>)"],
+  ["Write reusable type-safe APIs", "Viết API tái sử dụng, an toàn kiểu"],
+  ["Remove type safety", "Gỡ bỏ an toàn kiểu (type safety)"],
+  ["Only style colors", "Chỉ style màu sắc"],
+  ["Compile CSS", "Biên dịch CSS"],
   ["Exactly one value then ends always only", "Chỉ đúng một giá trị rồi kết thúc"],
   ["A sequence of asynchronous events/values over time", "Chuỗi sự kiện/giá trị bất đồng bộ theo thời gian"],
   ["Only file system permissions", "Chỉ quyền hệ thống tệp"],
@@ -338,8 +351,14 @@ export const OPT_WORDS = [
   [/\bimprove\b/g, "cải thiện"],
   [/\bEnsure\b/gi, "Đảm bảo"],
   [/\bensure\b/g, "đảm bảo"],
-  [/\bReturn\b/gi, "Trả về"],
-  [/\breturn\b/g, "trả về"],
+  // Financial "return" before programming "return value"
+  [/\bReturn on Investment\b/gi, "Suất sinh lời trên vốn đầu tư (ROI)"],
+  [/\breturn on investment\b/gi, "suất sinh lời trên vốn đầu tư (ROI)"],
+  [/\bReturn relative to investment\b/gi, "Lợi nhuận so với vốn đầu tư"],
+  [/\breturn relative to investment\b/gi, "lợi nhuận so với vốn đầu tư"],
+  // Verb/programming return only when NOT finance context (lookbehind-ish via negative lookahead)
+  [/\bReturn\b(?!\s+(?:relative|on\s+investment|on\s+capital|on\s+assets))/g, "Trả về"],
+  [/\breturn\b(?!\s+(?:relative|on\s+investment|on\s+capital|on\s+assets))/g, "trả về"],
   [/\bConvert\b/gi, "Chuyển"],
   [/\bconvert\b/g, "chuyển"],
   [/\bConverting\b/gi, "Chuyển"],
@@ -579,6 +598,10 @@ export const OPT_WORDS = [
 ];
 
 export const Q_EXACT = [
+  ["ROI measures roughly:", "ROI đo gần đúng điều gì?"],
+  ["ROI measures roughly", "ROI đo gần đúng điều gì?"],
+  ["Generics in Dart mainly help you:", "Generics trong Dart chủ yếu giúp bạn:"],
+  ["Generics in Dart mainly help you", "Generics trong Dart chủ yếu giúp bạn:"],
   ["How many bits are contained in one byte?", "Một byte chứa bao nhiêu bit?"],
   ["Two modules have reliabilities 0.95 and 0.90 in a series system. What is the system reliability?", "Hai module có độ tin cậy 0.95 và 0.90 nối tiếp (series). Độ tin cậy hệ thống?"],
   ["Which statement correctly describes the advantage of an interpreter compared with a compiler?", "Phát biểu nào đúng về ưu điểm của interpreter so với compiler?"],
@@ -788,15 +811,24 @@ export function translateOpt(opt) {
   if (hasJp(raw)) {
     if (/階層|ツリー/.test(raw)) return `${raw} — mô hình phân cấp/cây`;
     if (/リレーショナル/.test(raw)) return `${raw} — mô hình quan hệ (bảng)`;
-    if (/ネットワーク/.test(raw)) return `${raw} — mô hình mạng`;
+    // DB network model only when "型" / database context — not generic "ネットワーク"
+    if (/ネットワーク型|網型/.test(raw)) return `${raw} — mô hình mạng (network model)`;
     if (/オブジェクト/.test(raw)) return `${raw} — mô hình hướng đối tượng`;
     return raw;
   }
   if (isTechToken(raw)) return raw;
 
+  // Domain phrases before word map (ROI: Return ≠ programming return)
   const low = raw.toLowerCase();
   for (const [en, vi] of OPT_EXACT) {
     if (low === en.toLowerCase()) return vi;
+  }
+  // Substring finance / ROI before "Return" → "Trả về"
+  if (/\breturn\b/i.test(raw) && /\binvestment\b|\bROI\b/i.test(raw)) {
+    if (/relative to investment/i.test(raw))
+      return "Lợi nhuận / suất sinh lời so với vốn đầu tư";
+    if (/return on investment/i.test(raw))
+      return "Suất sinh lời trên vốn đầu tư (ROI)";
   }
 
   let t = raw;

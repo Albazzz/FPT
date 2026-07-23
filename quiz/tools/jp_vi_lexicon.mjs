@@ -58,9 +58,12 @@ export const JP_VI = {
   電子制御計算機: "máy tính điều khiển điện tử",
   電子計算管: "ống tính điện tử",
   汎用計算機: "máy tính đa dụng",
-  計算機: "máy tính / computer",
-  "計算機（コンピュータ）": "máy tính (computer)",
-  コンピュータ: "máy tính (computer)",
+  計算機: "máy tính",
+  "計算機（コンピュータ）": "máy tính",
+  コンピュータ: "máy tính",
+  デジタルコンピュータ: "máy tính số (digital)",
+  デジタル時計: "đồng hồ số",
+  サーバ: "máy chủ (server)",
   アプリケーション: "ứng dụng (application)",
   ソフトウェア: "phần mềm",
   ハードウェア: "phần cứng",
@@ -113,7 +116,12 @@ export const JP_VI = {
   木構造: "cấu trúc cây",
   "木構造（ツリー構造）": "cấu trúc cây (tree)",
   階層構造: "cấu trúc phân cấp",
-  ネットワーク: "mạng / network model",
+  // General network ≠ DB "network model" (use ネットワーク型 for DB)
+  ネットワーク: "mạng",
+  ネットワークセキュリティ: "an ninh mạng (network security)",
+  セキュリティ: "bảo mật / an ninh",
+  ネットワーク型: "mô hình mạng (network model)",
+  "ネットワーク型データベース": "CSDL mạng (network model)",
   オブジェクト: "đối tượng / object",
   リレーショナル: "quan hệ (relational)",
   線形リスト: "list tuyến tính",
@@ -295,7 +303,25 @@ export const JP_PHRASES = [
   ["インターネット専用のシステム", "Hệ thống chỉ dành cho Internet"],
   ["残された個人情報を", "thông tin cá nhân còn sót"],
   ["差分記録", "ghi sai phân (chỉ lưu phần khác frame trước)"],
+  // —— digital / security (JIT slides) ——
+  ["現在使われているコンピュータは，デジタルコンピュータです", "Máy tính đang dùng hiện nay là máy tính số (digital)"],
+  ["たとえば，時間は連続的に流れていますが，デジタル時計では1秒単位の数字として扱っています", "Ví dụ thời gian chảy liên tục nhưng đồng hồ số xử lý theo đơn vị 1 giây"],
+  ["通常，サーバとなっているコンピュータには，重要な情報が記録されています", "Thông thường máy chủ (server) lưu thông tin quan trọng"],
+  ["通常， サーバとなっているコンピュータには， 重要な情報が記録されています", "Thông thường máy chủ (server) lưu thông tin quan trọng"],
+  ["デジタルコンピュータでは，一定単位の数字に近似して扱っています", "Máy tính số xấp xỉ/xử lý theo đơn vị số rời rạc"],
+  ["ネットワークセキュリティ", "an ninh mạng (network security)"],
+  ["重要な情報が記録されています", "thông tin quan trọng được ghi/lưu"],
+  ["1秒単位の数字として扱っています", "xử lý dưới dạng số theo đơn vị 1 giây"],
 ];
+
+/** VI gloss without EN parenthetical — for mid-sentence replace (readable). */
+function viInline(vi) {
+  return String(vi || "")
+    .replace(/\s*\([^)]*\)/g, "")
+    .replace(/\s*\/\s*network model/gi, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
 
 /** Avoid matching short keys inside longer JP words (パス ⊂ パスワード). */
 function jpSafeIncludes(hay, needle) {
@@ -314,14 +340,14 @@ export function glossJp(text) {
   if (!raw) return raw;
   if (hasVi(raw) && !hasJp(raw)) return raw;
 
-  // exact
+  // exact term → bilingual label (short options)
   if (JP_VI[raw]) return `${raw} — ${JP_VI[raw]}`;
 
-  // phrases longest first — exact or near-exact
+  // phrases longest first — exact or near-exact (prefer full VI, no JP echo soup)
   const phrases = [...JP_PHRASES].sort((a, b) => b[0].length - a[0].length);
   for (const [jp, vi] of phrases) {
-    if (raw === jp) return vi;
-    if (raw.includes(jp) && jp.length >= 6 && raw.length <= jp.length + 8) return vi;
+    if (raw === jp || raw.replace(/\s+/g, "") === jp.replace(/\s+/g, "")) return vi;
+    if (raw.includes(jp) && jp.length >= 6 && raw.length <= jp.length + 12) return vi;
   }
 
   // key exact-ish contains — prefer longest key with safe boundary
@@ -338,20 +364,26 @@ export function glossJp(text) {
     return `${raw} — ${best.vi}`;
   }
 
-  // Long sentence: replace known phrases then keys (longest first), keep readability
+  // Long sentence: phrase then keys with *inline* VI (no "máy tính (computer)" spam)
   let t = raw;
   for (const [jp, vi] of phrases) {
-    if (t.includes(jp)) t = t.split(jp).join(vi);
+    if (t.includes(jp)) t = t.split(jp).join(viInline(vi));
   }
   const keys = Object.keys(JP_VI).sort((a, b) => b.length - a.length);
   for (const jp of keys) {
     if (jp.length < 3) continue;
-    if (jpSafeIncludes(t, jp)) t = t.split(jp).join(JP_VI[jp]);
+    if (jpSafeIncludes(t, jp)) t = t.split(jp).join(viInline(JP_VI[jp]));
   }
+  // Clean leftover JP punctuation / doubled spaces
+  t = t
+    .replace(/[，、]/g, ", ")
+    .replace(/。/g, ".")
+    .replace(/\s{2,}/g, " ")
+    .trim();
   if (hasVi(t) && t !== raw) {
-    // If almost fully translated, return VI; else bilingual short note
     const jpLeft = (t.match(/[\u3040-\u30ff\u3400-\u9fff]/g) || []).length;
-    if (jpLeft <= 4) return t;
+    // Prefer clean VI for long stems; avoid "JP → half-gloss" soup
+    if (jpLeft <= 6 || raw.length >= 28) return t;
     return `${raw} → ${t}`;
   }
   // keep JP if pure short

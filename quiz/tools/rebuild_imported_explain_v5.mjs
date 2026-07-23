@@ -370,11 +370,24 @@ const DICT = [
     tags: ["flutter"],
   },
   {
-    // Only bare language name — not "Dart VM"
+    // Prefer topic "Generics" over bare language name "Dart" in same stem
+    re: [/\bgenerics?\b/i, /List\s*<\s*T\s*>/i, /type-?safe\s+APIs?/i],
+    what: "Generics: viết code tái sử dụng với nhiều kiểu dữ liệu mà vẫn type-safe (vd. List<T>, Map<K,V>).",
+    role: "Một API/generic class dùng được cho int, String… mà compiler vẫn kiểm tra kiểu.",
+    tags: ["dart"],
+  },
+  {
+    re: [/\bROI\b|return on investment|return relative to investment/i],
+    what: "ROI (Return on Investment): đo suất sinh lời / lợi nhuận thu được so với chi phí đầu tư.",
+    role: "Chỉ số tài chính/hiệu quả đầu tư — không phải metric mạng hay OS.",
+    tags: ["biz", "fe"],
+  },
+  {
+    // Only bare language name — not "Dart VM". Low priority vs topic keywords (see lookup).
     re: [/(?<![\w])Dart(?!\s*VM)(?![\w])/],
     what: "Ngôn ngữ lập trình chính của Flutter.",
     role: "Viết UI và logic app Flutter.",
-    tags: ["dart"],
+    tags: ["dart", "bare-lang"],
   },
   {
     re: [/javascript/i],
@@ -587,6 +600,12 @@ const DICT = [
     tags: ["mln"],
   },
   {
+    re: [/giá cả độc quyền/i],
+    what: "Mức giá do tổ chức độc quyền chủ động áp đặt khi mua/bán nhằm thu lợi nhuận độc quyền.",
+    role: "Không phải giá cạnh tranh tự do, cũng không phải giá hành chính do Nhà nước quy định.",
+    tags: ["mln"],
+  },
+  {
     re: [/cartel|syndicate|trust|consortium/i],
     what: "Các hình thức liên minh độc quyền từ thấp đến cao.",
     role: "Khống chế thị trường, giá cả, phân chia lĩnh vực.",
@@ -658,7 +677,13 @@ function lookup(text) {
       if (!m) continue;
       // Prefer longer actual match; de-weight bare short tokens
       const matched = m[0] || "";
-      const sc = matched.length * 10 + (re.source || "").length;
+      let sc = matched.length * 10 + (re.source || "").length;
+      // Bare language names (Dart/Flutter) must not steal topic (Generics, Stream…)
+      if (c.tags && c.tags.includes("bare-lang")) sc = Math.min(sc, 8);
+      else if (/^(dart|flutter|javascript|kotlin)$/i.test(matched.trim())) {
+        const rest = s.replace(new RegExp(matched.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"), " ");
+        if (/[A-Za-zÀ-ỹ]{4,}/.test(rest)) sc = Math.min(sc, 12);
+      }
       if (sc > score) {
         score = sc;
         best = c;
@@ -692,18 +717,24 @@ function defineCorrect(question, ansText) {
     }
   }
 
-  // Named concept questions: "role of X", "What does a X", "What is X", "X inside …", "X is used to"
+  // Named concept questions: "role of X", "What does a X", "Generics in Dart…", "X is used to"
+  // Prefer the *topic* token, never the language suffix (… in Dart / Flutter).
   const named =
     q.match(/role of\s+([A-Za-z0-9_]+)/i) ||
     q.match(/What does (?:a |an )?([A-Za-z0-9_]+)\b/i) ||
     q.match(/What is (?:a |an |the )?([A-Za-z0-9_]+)\b/i) ||
     q.match(/Vai trò của\s+([A-Za-z0-9_]+)/i) ||
     q.match(/^([A-Za-z0-9_]+)\s+inside\b/i) ||
+    q.match(/^([A-Za-z0-9_]+)\s+in\s+(?:Dart|Flutter)\b/i) ||
+    q.match(/^([A-Za-z0-9_]+)\b.{0,40}\b(?:mainly |primarily )?(?:help|helps|used to)\b/i) ||
     q.match(/^([A-Za-z0-9_]+)\b.{0,40}\bis used to\b/i) ||
     q.match(/Which widget\b.*\b(Expanded|Flexible|SizedBox|Stack|Padding|Container)\b/i);
   if (named && !/compared/i.test(q)) {
-    const hit = lookup(named[1]);
-    if (hit) return packDef(hit);
+    const topic = named[1];
+    if (!/^(dart|flutter|javascript|kotlin)$/i.test(topic)) {
+      const hit = lookup(topic);
+      if (hit) return packDef(hit);
+    }
   }
 
   // Phrase-level define for long answer text (definitional options)
@@ -970,20 +1001,70 @@ function paraphraseOption(text, ctx = "") {
   const label = ovi && ovi !== t ? ovi : t.length > 100 ? t.slice(0, 97) + "…" : t;
   const blob = `${ctx} ${t} ${label}`;
 
-  // Long VI options (MLN): the option IS the definition
+  // Long VI options (MLN): the option IS the claim — role = category, not echo template
   if (hasVi(t) && t.length >= 24) {
     const short = t.length > 160 ? t.slice(0, 157) + "…" : t;
+    let role = "Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.";
+    if (/thị phần|doanh nghiệp chiếm|thông qua nhà nước/i.test(t))
+      role = "Lẫn lộn doanh nghiệp lớn với cơ chế giá độc quyền + Nhà nước.";
+    else if (/nhà nước|hành chính|tổ chức nhà nước/i.test(t))
+      role = "Gắn với can thiệp/quy định của Nhà nước (giá hành chính).";
+    else if (/tổ chức độc quyền áp đặt|giá cả các tổ chức độc quyền/i.test(t))
+      role = "Đúng hướng: tổ chức độc quyền chủ động áp đặt giá mua/bán.";
+    else if (/toàn cầu hóa|khu vực hóa|đa quốc gia/i.test(t))
+      role = "Phạm trù hội nhập / chủ thể kinh tế — kiểm tra đúng lớp «biểu hiện» hay «chủ thể».";
+    else if (/thặng dư|tích lũy|tư bản/i.test(t))
+      role = "Phạm trù KTCT (tư bản / thặng dư); đối chiếu đúng định nghĩa đề hỏi.";
+    return { what: short, role, tags: ["mln"] };
+  }
+  // Domain EN distractors BEFORE VI-label fallback (else role becomes "Bản dịch…")
+  if (/packet loss|mất gói/i.test(blob)) {
     return {
-      what: short,
-      role: `Ý của lựa chọn này: ${short.slice(0, 80)}${short.length > 80 ? "…" : ""} — đặt đúng trong hệ phạm trù đề hỏi.`,
-      tags: ["mln"],
+      what: "Tỉ lệ gói tin bị mất trên đường truyền mạng.",
+      role: "Metric chất lượng mạng — không phải chỉ số tài chính.",
+      tags: ["fe", "net"],
+    };
+  }
+  if (/cache hit|tỉ lệ trúng cache/i.test(blob)) {
+    return {
+      what: "Tỉ lệ truy vấn trúng bộ nhớ đệm (cache hit ratio).",
+      role: "Metric hiệu năng nhớ/cache — không phải ROI.",
+      tags: ["fe"],
+    };
+  }
+  if (/page fault|lỗi trang bộ nhớ/i.test(blob)) {
+    return {
+      what: "Lỗi trang: trang nhớ ảo chưa có trong RAM, OS phải nạp.",
+      role: "Metric/OS quản lý bộ nhớ ảo — không phải suất sinh lời.",
+      tags: ["os"],
+    };
+  }
+  if (/style colors|only style|style màu/i.test(blob)) {
+    return {
+      what: "Chỉ liên quan style/màu giao diện.",
+      role: "Thuộc tầng UI decoration — không phải hệ thống kiểu Generics.",
+      tags: ["flutter"],
+    };
+  }
+  if (/remove type safety|gỡ bỏ an toàn kiểu|gỡ bỏ.*type safety/i.test(blob)) {
+    return {
+      what: "Gỡ bỏ kiểm tra kiểu tĩnh (type safety).",
+      role: "Trái mục tiêu Generics (Generics tăng type safety).",
+      tags: ["dart"],
+    };
+  }
+  if (/compile css|biên dịch css/i.test(blob)) {
+    return {
+      what: "Biên dịch CSS (stylesheet web).",
+      role: "Flutter/Dart không dùng pipeline CSS làm UI chính.",
+      tags: ["web"],
     };
   }
   if (hasVi(label) && label.length >= 24 && label !== t) {
     const short = label.length > 160 ? label.slice(0, 157) + "…" : label;
     return {
       what: short,
-      role: `Diễn đạt của phương án («${short.slice(0, 50)}${short.length > 50 ? "…" : ""}»), cần khớp đúng lớp khái niệm đề hỏi.`,
+      role: "Bản dịch/diễn đạt phương án — đối chiếu với định nghĩa chuẩn của đề.",
       tags: hasVi(ctx) ? ["mln"] : [],
     };
   }
@@ -1041,14 +1122,14 @@ function paraphraseOption(text, ctx = "") {
   if (/tư bản|giá trị|độc quyền|thị trường|lao động|giai cấp|mác|cách mạng/i.test(blob)) {
     return {
       what: hasVi(label) ? label : `Phạm trù/khái niệm «${label}» trong KTCT–triết Mác–Lênin.`,
-      role: "Đặt đúng trong hệ phạm trù; tránh nhầm khái niệm gần.",
+      role: "Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…).",
       tags: ["mln"],
     };
   }
   if (/flutter|widget|dart|async|stream|future|bloc|provider|navigator/i.test(blob)) {
     return {
-      what: `Cơ chế Flutter/Dart «${label}».`,
-      role: "Chỉ chọn khi khớp đúng API/widget/state mà đề hỏi.",
+      what: `Cơ chế Flutter/Dart liên quan «${label}».`,
+      role: "Chỉ đúng khi khớp API/widget/state mà stem hỏi (không lấy nhầm topic lân cận).",
       tags: ["flutter"],
     };
   }
@@ -1095,6 +1176,8 @@ const Q_PHRASES = [
   [/ARP resolves:\s*/i, "ARP phân giải:"],
   [/A process is waiting for data from a disk drive before continuing execution\. Which state is the process most likely in\??/i, "Tiến trình đang chờ dữ liệu từ đĩa trước khi chạy tiếp. Nó thường ở trạng thái nào?"],
   [/What is the main purpose of interface design\??/i, "Mục đích chính của thiết kế giao diện là gì?"],
+  [/Generics in Dart mainly help you:/i, "Generics trong Dart chủ yếu giúp bạn:"],
+  [/ROI measures roughly:/i, "ROI đo gần đúng điều gì?"],
 ];
 
 const OPT_PHRASES = [
@@ -1167,8 +1250,7 @@ const OPT_PHRASES = [
 ];
 
 function translateQuestion(q) {
-  const lex = lexTranslateQuestion(q);
-  if (lex) return lex;
+  // Local phrase book first (domain stems like ROI / Generics)
   let s = String(q || "").trim();
   if (!s) return s;
   if (hasVi(s) && !hasJp(s)) return s;
@@ -1176,6 +1258,9 @@ function translateQuestion(q) {
   for (const [re, rep] of Q_PHRASES) {
     if (re.test(s)) return s.replace(re, rep);
   }
+  // Lex only if it actually produced Vietnamese (avoid English echo blocking Q_PHRASES)
+  const lex = lexTranslateQuestion(q);
+  if (lex && hasVi(lex) && !/^Câu hỏi:\s/i.test(lex)) return lex;
   return `Đề: ${s}`;
 }
 
@@ -1301,6 +1386,14 @@ function isBadRemoteWhy(w, opt, question) {
     !/auth|guard|protect|login|middleware|route protection/i.test(String(question || "") + String(opt || ""))
   )
     return true;
+  // Remote CSS/XML UI template pasted onto Generics / type-system questions
+  if (
+    /xml\/html\/css|dựng ui chính bằng xml|layout xml/i.test(w) &&
+    /\bgenerics?\b|type-?safe|list\s*<\s*t/i.test(String(question || ""))
+  )
+    return true;
+  // Remote "không trả lời đúng trọng tâm" filler (banned class) even if partial
+  if (/không trả lời đúng trọng tâm|đáp án chuẩn là|hãy so sánh trực tiếp/i.test(w)) return true;
   return false;
 }
 
@@ -1317,8 +1410,16 @@ function whyWrongSpecific(opt, optDef, correctDef, question, remoteWhy) {
   const oWhat = optDef.what;
   const cWhat = correctDef.what;
 
-  // MLN / Vietnamese theory banks
-  if (hasVi(q) && !hasJp(q) && /tư bản|độc quyền|giá trị|thị trường|giai cấp|mác|cách mạng|biểu hiện|đặc trưng|phạm trù|ý thức|vật chất|thặng dư|tái sản xuất|toàn cầu|khu vực/i.test(q + o)) {
+  // MLN / Vietnamese theory banks — concrete contrast, no "Khác phạm trù" filler
+  if (hasVi(q) && !hasJp(q) && /tư bản|độc quyền|giá trị|thị trường|giai cấp|mác|cách mạng|biểu hiện|đặc trưng|phạm trù|ý thức|vật chất|thặng dư|tái sản xuất|toàn cầu|khu vực|giá cả/i.test(q + o)) {
+    if (/giá cả độc quyền|giá độc quyền/i.test(q)) {
+      // Check hybrid distractor before pure "Nhà nước"
+      if (/thị phần|thông qua nhà nước/i.test(o))
+        return "Có doanh nghiệp lớn nhưng «thông qua Nhà nước đưa giá» lẫn lộn giá hành chính với giá độc quyền; đề cần giá do tổ chức độc quyền áp đặt trực tiếp khi mua/bán.";
+      if (/nhà nước|hành chính|tổ chức nhà nước/i.test(o))
+        return "Đây là giá do Nhà nước/hành chính quy định — khác giá độc quyền do tổ chức tư bản độc quyền tự áp đặt khi mua/bán.";
+      return `${oWhat.replace(/\.$/, "")}. Không khớp định nghĩa giá cả độc quyền (tổ chức độc quyền áp đặt khi mua/bán).`;
+    }
     if (/biểu hiện mới|biểu hiện của/i.test(q)) {
       return `${oWhat.replace(/\.$/, "")}. Đúng là một khái niệm liên quan nhưng không phải «biểu hiện mới» mà đề hỏi — đề cần: ${cWhat.replace(/\.$/, "")}.`;
     }
@@ -1328,7 +1429,32 @@ function whyWrongSpecific(opt, optDef, correctDef, question, remoteWhy) {
     if (/thứ tự|từ thấp đến cao|các giai đoạn/i.test(q)) {
       return `${oWhat.replace(/\.$/, "")}. Sai thứ tự/giai đoạn so với đáp án chuẩn của đề.`;
     }
-    return `${oWhat.replace(/\.$/, "")}. Khác phạm trù hoặc khác khía cạnh so với điều đề hỏi (${cWhat.replace(/\.$/, "")}).`;
+    // Prefer naming the actual mismatch type over generic "khác phạm trù"
+    if (/nhà nước/i.test(o) && /độc quyền|tư bản/i.test(q + cWhat))
+      return `${oWhat.replace(/\.$/, "")}. Gắn với Nhà nước/hành chính, trong khi đề hỏi phạm trù độc quyền tư bản: ${cWhat.replace(/\.$/, "")}.`;
+    return `${oWhat.replace(/\.$/, "")}. Gần nghĩa nhưng sai lớp/khía cạnh so với đề — cần: ${cWhat.replace(/\.$/, "")}.`;
+  }
+
+  // Generics (Dart) — option-specific
+  if (/\bgenerics?\b/i.test(q)) {
+    if (/remove type safety|gỡ bỏ.*type safety|gỡ bỏ kiểu/i.test(o))
+      return "Generics tăng type safety (kiểm tra kiểu lúc biên dịch), không loại bỏ type safety.";
+    if (/style colors|màu|colors?/i.test(o))
+      return "Màu/style UI không liên quan cơ chế generic type parameters.";
+    if (/compile css|biên dịch css/i.test(o))
+      return "Flutter/Dart không biên dịch CSS; Generics là tính năng hệ thống kiểu (List<T>…).";
+    if (/type-safe|list\s*<|reusable/i.test(o))
+      return null; // correct path
+  }
+
+  // ROI / finance metrics
+  if (/\bROI\b|return on investment|return relative to investment/i.test(q + " " + cWhat)) {
+    if (/packet loss/i.test(o))
+      return "Packet loss là metric mạng (mất gói); ROI đo lợi nhuận so với vốn đầu tư.";
+    if (/cache hit/i.test(o))
+      return "Cache hit ratio là hiệu năng bộ nhớ đệm; không phải suất sinh lời đầu tư.";
+    if (/page fault/i.test(o))
+      return "Page fault thuộc quản lý bộ nhớ ảo OS; ROI là chỉ số tài chính.";
   }
 
   // Domain contrasts
@@ -1555,6 +1681,24 @@ function buildIntent(question, correctDef, kbTags) {
       "Chọn phương án khớp cơ chế Flutter, không chọn stack web/Android nhầm."
     );
   }
+  if (/giá cả độc quyền|giá độc quyền/i.test(q)) {
+    return bullets(
+      "Phân biệt giá độc quyền (tổ chức độc quyền áp đặt) với giá Nhà nước và giá cạnh tranh.",
+      "Đề hỏi định nghĩa «giá cả độc quyền», không hỏi thứ tự Cartel–Trust."
+    );
+  }
+  if (/\bgenerics?\b/i.test(q)) {
+    return bullets(
+      "Generics = type parameter tái sử dụng + type-safe (List<T>, Map<K,V>).",
+      "Không nhầm với «ngôn ngữ Dart» hay style UI."
+    );
+  }
+  if (/\bROI\b|return on investment/i.test(q)) {
+    return bullets(
+      "ROI = lợi nhuận / vốn đầu tư (chỉ số tài chính).",
+      "Loại metric mạng/OS (packet loss, cache hit, page fault)."
+    );
+  }
   if (/tư bản|giá trị|độc quyền|thị trường|lao động/i.test(q)) {
     return bullets(
       correctDef.what,
@@ -1663,15 +1807,41 @@ function rebuildOne(q, remote) {
   // why correct — drop English-only / section-header remote stubs
   const badWhyLine =
     /vì sao các đáp án|nếu bạn chọn nhầm|multiple async|async result later|packages\/imports\s*=|mẹo nhớ|đáp án đúng:/i;
-  let why = remoteP.why.filter(
-    (l) =>
-      !isEcho(l, options[primary]) &&
-      !BANNED.test(l) &&
-      !badWhyLine.test(l) &&
-      !(!hasVi(l) && l.length < 80 && /[A-Za-z]{4,}/.test(l))
-  );
-  why.push(correctDef.what);
-  why.push(correctDef.role);
+  // Remote often pastes Cartel chain onto unrelated monopoly-price defs — drop off-topic
+  const remoteOffTopic =
+    (/giá cả độc quyền|giá độc quyền/i.test(qText) &&
+      /cartel|syndicate|trust|consortium|hình thức tổ chức/i.test(remoteP.why.join(" "))) ||
+    (/\bgenerics?\b/i.test(qText) &&
+      /ngôn ngữ lập trình chính|viết ui và logic/i.test(remoteP.why.join(" ")));
+  let why = remoteOffTopic
+    ? []
+    : remoteP.why.filter(
+        (l) =>
+          !isEcho(l, options[primary]) &&
+          !BANNED.test(l) &&
+          !badWhyLine.test(l) &&
+          !(!hasVi(l) && l.length < 80 && /[A-Za-z]{4,}/.test(l))
+      );
+  // Definitional stems: answer "what it is" first, not a related chapter fact
+  if (/được hiểu là|là gì\b|nghĩa là|measures roughly|mainly help/i.test(qText)) {
+    why = [
+      correctDef.what,
+      correctDef.role,
+      /giá cả độc quyền/i.test(qText)
+        ? "Không phải giá cạnh tranh tự do, cũng không phải giá hành chính do Nhà nước quy định."
+        : null,
+      /\bgenerics?\b/i.test(qText)
+        ? "Ví dụ: List<T>, Map<K,V>, Future<T> — một API dùng nhiều kiểu, compiler vẫn kiểm tra."
+        : null,
+      /\bROI\b|return relative/i.test(qText)
+        ? "Công thức gợi ý: ROI ≈ lợi nhuận (return) / vốn đầu tư (investment)."
+        : null,
+      ...why,
+    ];
+  } else {
+    why.push(correctDef.what);
+    why.push(correctDef.role);
+  }
   if (ans.length > 1) why.unshift(`Câu chọn nhiều đáp án: ${ans.join(", ")}.`);
   exp.whyCorrect = bullets(...why);
   if (!exp.whyCorrect) {
@@ -1703,6 +1873,12 @@ function rebuildOne(q, remote) {
       exp.memoryTip = bullets("SizedBox = size cố định; Expanded = chiếm phần còn lại (flex).");
     if (/overlap|stack/i.test(qText) && /stack/i.test(options[primary] || qText))
       exp.memoryTip = bullets("Stack xếp chồng (Z); Row/Column không overlap mặc định.");
+    if (/\bgenerics?\b/i.test(qText))
+      exp.memoryTip = bullets("Generics = List<T> / Map<K,V> — tái sử dụng + type-safe.", "Không gỡ type safety; không liên quan CSS/màu.");
+    if (/\bROI\b|return relative to investment/i.test(qText))
+      exp.memoryTip = bullets("ROI = Return On Investment ≈ lợi nhuận / vốn đầu tư.", "Không phải packet loss / cache hit / page fault.");
+    if (/giá cả độc quyền/i.test(qText))
+      exp.memoryTip = bullets("Giá độc quyền = tổ chức độc quyền áp đặt khi mua/bán.", "≠ giá Nhà nước (hành chính).");
   }
 
   exp.whatIs = {};
@@ -1850,12 +2026,12 @@ for (const [localKey, remoteFile] of mapEntries) {
     (ALL_PRM_JFE && (localKey === "prm" || localKey === "fe")) ||
     (ALL_MLN && localKey === "mln");
   const passName = ALL
-    ? "all-banks-v6"
+    ? "all-banks-v7-pipeline"
     : forceAll
       ? localKey === "mln"
-        ? "all-mln-v6"
-        : "all-prm-jfe-v6"
-      : "imported-v6";
+        ? "all-mln-v7-pipeline"
+        : "all-prm-jfe-v7-pipeline"
+      : "imported-v7-pipeline";
   const qs = local.questions.map((q) => {
     const isImp = IMPORTED.has(q.task) || IMPORTED.has(q.source);
     const doRebuild = forceAll || isImp;

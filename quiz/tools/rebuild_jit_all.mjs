@@ -156,8 +156,23 @@ function translateQuestion(qText, maps) {
     return "Về hệ thống xử lý phân tán (分散処理システム), phát biểu nào đúng?";
   }
 
+  // Explicit high-value topics (before generic gloss that used to say "network model")
+  if (/ネットワークセキュリティ/.test(t) && /正しい/.test(t)) {
+    return "Về an ninh mạng (ネットワークセキュリティ), phát biểu nào đúng?";
+  }
+  if (/ネットワークセキュリティ/.test(t) && /正しくない|誤/.test(t)) {
+    return "Về an ninh mạng (ネットワークセキュリティ), phát biểu nào SAI?";
+  }
+
   // High-frequency quiz stems (capture topic)
   let m2;
+  // （ネットワーク）ネットワークセキュリティ について正しい説明はどれか。
+  if ((m2 = t.match(/[（(]([^）)]+)[）)]\s*(.+?)について正しい説明はどれか/))) {
+    return `（${m2[1]}）Về «${glossTopic(m2[2])}», giải thích nào đúng?`;
+  }
+  if ((m2 = t.match(/^(.+?)について正しい説明はどれか。?$/))) {
+    return `Về «${glossTopic(m2[1])}», giải thích nào đúng?`;
+  }
   if ((m2 = t.match(/^(.+?)について正しくないものを(?:えら|選)んでください。?$/))) {
     return `Chọn phát biểu SAI về «${glossTopic(m2[1])}».`;
   }
@@ -517,6 +532,24 @@ function rebuildOne(q, remote, maps) {
       term ? `${term} ≈ ${ansText}` : ansText,
       "Ưu tiên định nghĩa chuẩn giáo trình, không dịch word-by-word lệch."
     );
+  } else if (/ネットワークセキュリティ/.test(qText)) {
+    exp.intent = bullets(
+      "An ninh mạng (network security): bảo vệ thông tin/hệ thống trên mạng.",
+      "Chọn phát biểu đúng về lý do cần bảo mật — loại nhiễu về digital/analog."
+    );
+    exp.concept = bullets(
+      "An ninh mạng: bảo vệ dữ liệu và hệ thống máy tính khỏi truy cập trái phép, rò rỉ, phá hoại.",
+      "Server thường lưu thông tin quan trọng → là đối tượng cần bảo vệ."
+    );
+    exp.whyCorrect = bullets(
+      ...remoteP.why,
+      "Máy chủ (server) thường ghi/lưu thông tin quan trọng — đây là lý do then chốt phải quan tâm an ninh mạng.",
+      "Các phương án chỉ nói «máy tính số / đồng hồ số» thuộc khái niệm digital, không giải thích an ninh mạng."
+    );
+    exp.memoryTip = bullets(
+      "ネットワークセキュリティ = an ninh mạng",
+      "Server + dữ liệu quan trọng → cần security (không nhầm digital computer)."
+    );
   } else {
     exp.intent = bullets(
       remoteP.qvi && hasVi(remoteP.qvi) ? "Đọc kỹ đề (đã dịch) và chọn đúng bản chất kỹ thuật." : "Câu JIT: nắm định nghĩa/thứ tự/thuật ngữ CNTT.",
@@ -569,8 +602,18 @@ function rebuildOne(q, remote, maps) {
         ww = `«${wrongVi || ovi}» không phải nghĩa Việt đúng của «${term}». Đúng: «${ansText}».`;
       } else if (kind === "imi" && term) {
         ww = `Không phải nghĩa chuẩn của «${term}». Nghĩa đúng: ${rightVi || ansVi}.`;
+      } else if (/ネットワークセキュリティ/.test(qText)) {
+        if (/デジタルコンピュータ|デジタル時計|デジタル/.test(opt))
+          ww = "Đây là kiến thức máy tính số/digital (rời rạc hóa), không giải thích vì sao cần an ninh mạng.";
+        else if (/現在使われているコンピュータ/.test(opt))
+          ww = "Chỉ khẳng định máy tính hiện dùng là digital — không liên quan bảo mật thông tin trên mạng.";
+        else if (/サーバ|重要な情報/.test(opt))
+          ww = null; // correct
+        else
+          ww = `Không giải thích an ninh mạng. Đúng: server thường lưu thông tin quan trọng nên cần bảo vệ.`;
       } else {
-        ww = `«${String(ovi).slice(0, 60)}» không khớp đáp án ${primary} «${String(ansVi).slice(0, 60)}». ${wrongVi || od.what}.`;
+        // Avoid "không khớp đáp án C" template — state what the option is vs topic
+        ww = `«${String(wrongVi || ovi).slice(0, 80)}» thuộc khái niệm/cơ chế khác. Đúng: ${String(rightVi || ansVi).slice(0, 80)}.`;
       }
     }
     // ensure uniqueness per option
@@ -643,7 +686,7 @@ const outQs = local.questions.map((q) => {
 const payload = {
   subject: "jit",
   upgradedAt: new Date().toISOString(),
-  explainPass: "jit-all-v2",
+  explainPass: "jit-all-v3-security-gloss",
   count: outQs.length,
   rebuilt: outQs.length,
   bannedLeft,

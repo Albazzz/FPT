@@ -521,7 +521,7 @@ Bạn là giáo viên JIT401 (IT tiếng Nhật).
 
 ---
 
-## 4. Pipeline & metrics v6 (tóm tắt)
+## 4. Pipeline & metrics (tóm tắt)
 
 | Lệnh | Phạm vi |
 |------|---------|
@@ -529,14 +529,68 @@ Bạn là giáo viên JIT401 (IT tiếng Nhật).
 | `node quiz/tools/rebuild_imported_explain_v5.mjs --all-prm-jfe` | chỉ công nghệ |
 | `node quiz/tools/rebuild_imported_explain_v5.mjs --all-mln` | chỉ MLN |
 | `node quiz/tools/rebuild_jit_all.mjs` | JIT |
-
-| Filler đã về 0 sau v6 | PRM | FE | MLN | JIT |
-|------------------------|----:|---:|----:|----:|
-| `Phương án «` / thuộc miền | 0 | 0 | 0 | 0 |
-| `không khớp trọng tâm đề bằng đáp án đúng` | 0 | 0 | 0 (trước 520) | 0 |
-| Stub JP generic | 0 | 0 | 0 | 0 |
+| `node quiz/tools/audit_explains.mjs` | Rà toàn bank |
 
 Code: `rebuild_imported_explain_v5.mjs` · `vi_translate.mjs` · `rebuild_jit_all.mjs` · `jp_vi_lexicon.mjs`.
+
+---
+
+## 4b. Rút kinh nghiệm pipeline (không sửa chỉ bằng prompt)
+
+Hai nhóm lỗi **không** hết nếu chỉ chỉnh wording prompt — phải sửa code map/từ điển:
+
+### P1 — Ánh xạ sai kiến thức (concept bleed)
+
+| Triệu chứng | Nguyên nhân pipeline | Cách xử lý |
+|-------------|----------------------|------------|
+| Đề **Generics** → concept «Ngôn ngữ Flutter/Dart» | `lookup("…Dart…")` trúng bare language name trước topic | DICT `generics` ưu tiên; de-weight `bare-lang`; named extract `^X in Dart` |
+| Đề **Stream** → Future (đã xử) | Keyword cả hai | Ưu tiên answer nature + named topic |
+| Remote why dán **Cartel chain** vào câu «giá cả độc quyền» | Reuse remote off-topic | `remoteOffTopic` filter + DICT `giá cả độc quyền` |
+
+**Quy tắc viết/đánh giá:** `concept` = **chủ đề stem** (token đầu / “X in Y”), không phải ngôn ngữ nền tảng hay chương lân cận.
+
+### P2 — Dịch sai ngữ cảnh (dictionary)
+
+| Triệu chứng | Nguyên nhân | Cách xử lý |
+|-------------|-------------|------------|
+| **Return** on Investment → «**Trả về** relative…» | Word-map `Return` = programming `return` | `OPT_EXACT` finance trước; negative lookahead khi map `Return` |
+| half-EN option ROI/cache/page fault | Thiếu phrase book FE | Thêm exact phrase + domain whyWrong |
+| Generics options «Write tái sử dụng kiểu-safe» | Dịch từng từ | `OPT_EXACT` full option |
+
+**Quy tắc:** nhận diện miền (finance / network / OS / Dart) **trước** word-map; thuật ngữ đa nghĩa (`return`, `package`, `stream`) ưu tiên phrase dài.
+
+### P3 — JIT gloss / phân loại
+
+| Triệu chứng | Nguyên nhân | Cách xử lý |
+|-------------|-------------|------------|
+| ネットワークセキュリティ → «network **model**» | Lexicon gộp DB network model | `ネットワーク` = mạng; `ネットワーク型` = network model |
+| Câu dài: `máy tính (computer)` chèn khắp | Replace mid-sentence kèm EN parenthesis | `viInline()` bỏ `(EN)` khi thay trong câu dài |
+| WhyWrong «không khớp đáp án C» | Template echo | Domain contrast (digital ≠ security) |
+| Đáp án digital trên đề security | OCR/parser không — thiếu concept topic | Branch `ネットワークセキュリティ` trong rebuild |
+
+**Quy tắc JIT:** (1) topic stem trước option gloss; (2) options dài → VI sạch hoặc `JP — VI` ngắn; (3) whyWrong nói **sai miền**, không «không khớp đáp án X».
+
+### P4 — MLN template why
+
+| Triệu chứng | Cách xử lý |
+|-------------|------------|
+| whyCorrect = Cartel… khi đề là định nghĩa giá | DICT + definitional stem path |
+| whyWrong = «Khác phạm trù…» | Contrast cụ thể (Nhà nước vs độc quyền) |
+
+**Ví dụ chuẩn — giá cả độc quyền:**  
+`concept`: mức giá tổ chức độc quyền áp đặt khi mua/bán.  
+`whyCorrect`: nhằm lợi nhuận độc quyền; ≠ cạnh tranh tự do; ≠ giá hành chính.  
+`whyWrong B`: giá Nhà nước = hành chính.
+
+### Checklist trước khi ship giải thích
+
+```
+[ ] concept khớp TOKEN chủ đề stem (Generics ≠ Dart; ROI ≠ packet; セキュリティ ≠ digital)
+[ ] optionsVi: phrase domain đúng (Return on Investment ≠ Trả về)
+[ ] whyCorrect trả lời đúng lớp hỏi (định nghĩa / thứ tự / biểu hiện…)
+[ ] whyWrong từng option: contrast miền, không template «khác phạm trù / không khớp đáp án»
+[ ] JIT: không spam (english) giữa câu; ネットワーク ≠ network model trừ DB
+```
 
 ---
 
@@ -544,9 +598,10 @@ Code: `rebuild_imported_explain_v5.mjs` · `vi_translate.mjs` · `rebuild_jit_al
 
 1. Thêm hàng vào bảng kiểu (L*/J*/M*/T*).  
 2. Quy định 4–5 dòng: concept / whyCorrect / whyWrong / tip / cấm.  
-3. Thêm DICT + `whyWrongSpecific` nếu lặp ≥3 câu.  
-4. Rebuild đúng môn → cập nhật ~số đếm trong prompt.
+3. Thêm DICT + `whyWrongSpecific` + (nếu dịch) `OPT_EXACT` / `JP_PHRASES` nếu lặp ≥2 câu.  
+4. Rebuild đúng môn → `audit_explains.mjs` → cập nhật ~số đếm trong prompt.  
+5. Nếu sai **ánh xạ** hoặc **từ điển**: sửa pipeline (mục 4b), không chỉ sửa 1 câu JSON.
 
 ---
 
-*Cập nhật: 2026-07-23 — chi tiết thành phần theo từng kiểu hỏi, đo từ bank PRM/JFE/MLN/JIT.*
+*Cập nhật: 2026-07-23 — pipeline P1–P4 (Generics bleed, ROI dict, JIT gloss, MLN template).*
