@@ -2,6 +2,7 @@
  * JP (IT/JIT401) → VI gloss dictionary + helpers.
  * Used by rebuild_jit_all.mjs
  */
+import { JIT_STUB_VI } from "./jit_stub_lexicon.mjs";
 
 export function hasVi(s) {
   // Latin-1 accents + Vietnamese Latin Extended Additional (U+1EA0–1EF9: ế ể ệ ố ộ ớ …)
@@ -916,6 +917,12 @@ export function glossJp(text) {
   if (hasVi(raw) && !hasJp(raw)) return raw;
 
   const compact = compactJp(raw);
+  // stub book first
+  if (JIT_STUB_VI[raw]) return JIT_STUB_VI[raw];
+  for (const [jp, vi] of Object.entries(JIT_STUB_VI)) {
+    if (jp.length >= 12 && compact === compactJp(jp)) return vi;
+  }
+
   const phrases = [...JP_PHRASES].sort((a, b) => b[0].length - a[0].length);
 
   // 0) productive short composition
@@ -1038,14 +1045,13 @@ function viClean(vi) {
     .trim();
 }
 
-/** Latin/EN technical gloss is OK for display (not only Vietnamese diacritics). */
+/** Latin/EN/VI gloss is OK for display (anything without JP scripts). */
 function isDisplayGloss(s) {
   const t = String(s || "").trim();
-  if (!t || hasJp(t)) return false;
-  if (hasVi(t)) return true;
-  // English / digits / common tech tokens
-  if (/^[A-Za-z0-9][\w\s./+()%\-–—,:'"]{0,80}$/.test(t)) return true;
-  return false;
+  if (!t) return false;
+  // Reject leftover Japanese
+  if (hasJp(t)) return false;
+  return t.length >= 1;
 }
 
 /** Clean VI/EN gloss only (for optionsVi right side). */
@@ -1053,6 +1059,25 @@ export function glossJpClean(text) {
   const raw = String(text || "").trim();
   // Direct lexicon → pure gloss
   if (JP_VI[raw] && isDisplayGloss(JP_VI[raw])) return JP_VI[raw];
+  // Remaining stub fill book
+  if (JIT_STUB_VI[raw] && isDisplayGloss(JIT_STUB_VI[raw])) return JIT_STUB_VI[raw];
+  // whitespace-insensitive / prefix match for long options (bank may truncate with …)
+  const compact = compactJp(raw.replace(/[…\.]+$/, ""));
+  let bestStub = null;
+  let bestLen = 0;
+  for (const [jp, vi] of Object.entries(JIT_STUB_VI)) {
+    if (!isDisplayGloss(vi)) continue;
+    const cj = compactJp(jp);
+    if (compact === cj) return vi;
+    // prefix: option starts with stub key or vice versa (long stems)
+    if (jp.length >= 20 && (compact.startsWith(cj.slice(0, 40)) || cj.startsWith(compact.slice(0, 40)))) {
+      if (Math.min(compact.length, cj.length) > bestLen) {
+        bestLen = Math.min(compact.length, cj.length);
+        bestStub = vi;
+      }
+    }
+  }
+  if (bestStub) return bestStub;
 
   // composition first (pure VI/EN)
   const composed = composeShortVi(raw);

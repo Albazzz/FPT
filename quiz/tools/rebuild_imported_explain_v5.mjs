@@ -11,6 +11,7 @@ import {
   translateQuestion as lexTranslateQuestion,
   translateOptDeep as lexTranslateOptDeep,
 } from "./vi_translate.mjs";
+import { FE_Q_EXACT } from "./fe_q_exact.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dataDir = path.join(__dirname, "../data");
@@ -1331,12 +1332,29 @@ function translateQuestion(q) {
   if (!s) return s;
   if (hasVi(s) && !hasJp(s)) return s;
   if (hasJp(s)) return null;
+
+  // Exact full FE stems (remaining half-translated bank)
+  const snorm = s.replace(/\s+/g, " ").trim();
+  for (const [en, vi] of FE_Q_EXACT) {
+    const enN = en.replace(/\s+/g, " ").trim();
+    if (snorm === enN || snorm.startsWith(enN.slice(0, Math.min(80, enN.length))) && snorm.length <= enN.length + 40)
+      return vi;
+    // fuzzy: first 100 chars
+    if (snorm.slice(0, 100) === enN.slice(0, 100) && enN.length > 40) return vi;
+  }
+
   for (const [re, rep] of Q_PHRASES) {
     if (re.test(s)) return s.replace(re, rep);
   }
   // Lex only if it actually produced Vietnamese (avoid English echo blocking Q_PHRASES)
   const lex = lexTranslateQuestion(q);
-  if (lex && hasVi(lex) && !/^Câu hỏi:\s/i.test(lex)) return lex;
+  if (lex && hasVi(lex) && !/^Câu hỏi:\s/i.test(lex)) {
+    // Reject still-heavy English half-translates when we have a better exact later — keep if en density low
+    const enLeft = (lex.match(/[A-Za-z]{4,}/g) || []).length;
+    if (enLeft < 8) return lex;
+  }
+  // Last: deep lex even if half, better than raw EN
+  if (lex && hasVi(lex)) return lex;
   return `Đề: ${s}`;
 }
 
@@ -1824,22 +1842,37 @@ function rebuildOne(q, remote) {
   const qText = q.question || "";
 
   const exp = {};
-  // question VI
-  if (hasVi(qText) && !hasJp(qText)) exp.questionVi = qText;
-  else if (remoteP.qvi && hasVi(remoteP.qvi) && !/^Đề:\s/i.test(remoteP.qvi))
+  // question VI — prefer exact FE book / local translate over half remote
+  const localQ = translateQuestion(qText);
+  const localOk =
+    localQ &&
+    hasVi(localQ) &&
+    !/^Đề:\s/i.test(localQ) &&
+    (localQ.match(/[A-Za-z]{4,}/g) || []).length < 8;
+
+  if (hasVi(qText) && !hasJp(qText) && (qText.match(/[A-Za-z]{4,}/g) || []).length < 6) {
+    exp.questionVi = qText;
+  } else if (localOk) {
+    exp.questionVi = localQ;
+  } else if (
+    remoteP.qvi &&
+    hasVi(remoteP.qvi) &&
+    !/^Đề:\s/i.test(remoteP.qvi) &&
+    (remoteP.qvi.match(/[A-Za-z]{4,}/g) || []).length < 8
+  ) {
     exp.questionVi = remoteP.qvi;
-  else {
-    const t = translateQuestion(qText);
-    exp.questionVi = t && !/^Đề:\s/i.test(t) ? t : translateQuestion(qText) || qText;
+  } else {
+    exp.questionVi = localQ || remoteP.qvi || qText;
   }
-  // salvage half-translated questionVi
+  // salvage remaining half-EN
   if (
     exp.questionVi &&
     ((exp.questionVi.match(/[A-Za-z]{4,}/g) || []).length >= 6 ||
       /Cái nào [A-Za-z]|Cái gì [A-Za-z]|Trước khi [a-z]{3,}/i.test(exp.questionVi))
   ) {
-    const t2 = translateQuestion(qText);
-    if (t2 && hasVi(t2)) exp.questionVi = t2;
+    if (localOk) exp.questionVi = localQ;
+    else if (localQ && hasVi(localQ) && (localQ.match(/[A-Za-z]{4,}/g) || []).length < (exp.questionVi.match(/[A-Za-z]{4,}/g) || []).length)
+      exp.questionVi = localQ;
   }
 
   exp.optionsVi = {};
