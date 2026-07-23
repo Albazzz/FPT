@@ -202,6 +202,46 @@
     }
   }
 
+  // —— Explain panel field visibility (user prefs, not content edit) ——
+  const EXPLAIN_VIS_KEY = "uq-explain-fields-vis-v1";
+  const EXPLAIN_VIS_DEFAULT = {
+    translation: true, // bảng dịch đề + options
+    answer: true, // đáp án
+    intent: true, // ý chính
+    concept: true, // đây là gì?
+    whyCorrect: true, // vì sao đúng?
+    memoryTip: true, // mẹo nhớ
+    whyWrong: true, // các đáp án còn lại
+    multiKeys: true, // multi-select: list đáp án đúng
+  };
+  /** @type {typeof EXPLAIN_VIS_DEFAULT} */
+  let explainVis = { ...EXPLAIN_VIS_DEFAULT };
+  try {
+    const raw = localStorage.getItem(EXPLAIN_VIS_KEY);
+    if (raw) {
+      const p = JSON.parse(raw);
+      if (p && typeof p === "object") {
+        for (const k of Object.keys(EXPLAIN_VIS_DEFAULT)) {
+          if (typeof p[k] === "boolean") explainVis[k] = p[k];
+        }
+      }
+    }
+  } catch {
+    /* ignore */
+  }
+
+  function saveExplainVis() {
+    try {
+      localStorage.setItem(EXPLAIN_VIS_KEY, JSON.stringify(explainVis));
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function explainFieldOn(key) {
+    return explainVis[key] !== false;
+  }
+
   function deepMergeExplain(base, ovr) {
     const b = base && typeof base === "object" ? { ...base } : {};
     if (!ovr || typeof ovr !== "object") return b;
@@ -1237,7 +1277,11 @@
     );
   }
 
-  function showExplainPanel(q) {
+  /**
+   * @param {object} q
+   * @param {{ keepVisOpen?: boolean }} [opts]
+   */
+  function showExplainPanel(q, opts) {
     if (!el.explainPanel) return;
     const exp = effectiveExplanation(q);
     if (!hasExplainContent(q)) {
@@ -1259,15 +1303,20 @@
     html += hideTrans
       ? `<div class="explain-title"><i class="fa-solid fa-lightbulb"></i> Giải thích</div>`
       : `<div class="explain-title"><i class="fa-solid fa-language"></i> Bảng dịch &amp; giải thích</div>`;
-    html += `</div>`;
+    html += `<div class="explain-actions">
+      <button type="button" class="btn btn-secondary btn-sm" id="btnExplainVis" title="Chọn phần hiển thị trong giải thích" aria-expanded="false" aria-controls="explainVisPopover">
+        <i class="fa-solid fa-sliders"></i> Hiển thị
+      </button>
+    </div></div>`;
+    html += buildExplainVisPopoverHtml(hideTrans);
 
     const fmt = (s) =>
       escapeHtml(s || "")
         .replace(/\n•/g, "<br>•")
         .replace(/\n/g, "<br>");
 
-    // 🌐 Bảng dịch câu hỏi + lựa chọn (bỏ với MLN)
-    if (hasTranslation) {
+    // 🌐 Bảng dịch câu hỏi + lựa chọn (bỏ với MLN / tắt trong cài đặt)
+    if (hasTranslation && explainFieldOn("translation")) {
       html += `<div class="explain-block explain-trans">
         <div class="explain-label"><i class="fa-solid fa-book"></i> Câu hỏi</div>
         <table class="explain-table explain-q">
@@ -1319,7 +1368,7 @@
         })
         .join(" | ");
     }
-    if (ansLabel) {
+    if (ansLabel && explainFieldOn("answer")) {
       html += `<div class="explain-block explain-ans">
         <div class="explain-label"><i class="fa-solid fa-circle-check"></i> Đáp án</div>
         <p class="explain-answer-line">${fmt(ansLabel)}</p>
@@ -1327,7 +1376,7 @@
     }
 
     // 🎯 Ý chính câu hỏi
-    if (exp.intent) {
+    if (exp.intent && explainFieldOn("intent")) {
       html += `<div class="explain-block explain-intent">
         <div class="explain-label"><i class="fa-solid fa-bullseye"></i> Ý chính của câu hỏi</div>
         <p>${fmt(exp.intent)}</p>
@@ -1335,20 +1384,22 @@
     }
 
     // 📝 Giải thích đáp án đúng (Đây là gì? ≠ Vì sao đúng?)
-    if (exp.concept || exp.whyCorrect) {
+    const showConcept = !!(exp.concept && explainFieldOn("concept"));
+    const showWhy = !!(exp.whyCorrect && explainFieldOn("whyCorrect"));
+    if (showConcept || showWhy) {
       html += `<div class="explain-block explain-ok">
         <div class="explain-label"><i class="fa-solid fa-book-open"></i> Giải thích đáp án đúng</div>`;
-      if (exp.concept) {
+      if (showConcept) {
         html += `<div class="explain-sub">Đây là gì?</div><p>${fmt(exp.concept)}</p>`;
       }
-      if (exp.whyCorrect) {
+      if (showWhy) {
         html += `<div class="explain-sub">Vì sao đúng?</div><p>${fmt(exp.whyCorrect)}</p>`;
       }
       html += `</div>`;
     }
 
     // 💡 Mẹo nhớ (giữ nếu có — PRM)
-    if (exp.memoryTip) {
+    if (exp.memoryTip && explainFieldOn("memoryTip")) {
       html += `<div class="explain-block explain-tip">
         <div class="explain-label"><i class="fa-solid fa-lightbulb"></i> Mẹo nhớ</div>
         <p class="explain-tip-line">${fmt(exp.memoryTip)}</p>
@@ -1358,7 +1409,7 @@
     // ❌ Đáp án còn lại: Là gì? / Dùng để làm gì? / Vì sao sai?
     const wrong = exp.whyWrong || {};
     const wrongKeys = Object.keys(wrong).sort();
-    if (wrongKeys.length) {
+    if (wrongKeys.length && explainFieldOn("whyWrong")) {
       html += `<div class="explain-block explain-bad">
         <div class="explain-label"><i class="fa-solid fa-circle-xmark"></i> Các đáp án còn lại</div>
         <ul class="explain-list explain-list-teach">`;
@@ -1383,7 +1434,7 @@
     }
 
     // multi: also list correct options clearly if more than one
-    if (corrects.length > 1) {
+    if (corrects.length > 1 && explainFieldOn("multiKeys")) {
       html += `<div class="explain-block explain-keys">
         <div class="explain-label"><i class="fa-solid fa-list-check"></i> Các đáp án đúng</div>
         <ul class="explain-list">`;
@@ -1395,7 +1446,113 @@
     }
 
     el.explainPanel.innerHTML = html;
+    bindExplainVisControls(q, !!(opts && opts.keepVisOpen));
     updateExplainToggleUI(true);
+  }
+
+  function buildExplainVisPopoverHtml(hideTrans) {
+    const fields = [
+      !hideTrans && { key: "translation", label: "Bảng dịch (đề + lựa chọn)" },
+      { key: "answer", label: "Đáp án" },
+      { key: "intent", label: "Ý chính của câu hỏi" },
+      { key: "concept", label: "Đây là gì? (concept)" },
+      { key: "whyCorrect", label: "Vì sao đúng?" },
+      { key: "memoryTip", label: "Mẹo nhớ" },
+      { key: "whyWrong", label: "Các đáp án còn lại" },
+      { key: "multiKeys", label: "Danh sách đáp án đúng (multi)" },
+    ].filter(Boolean);
+
+    let h = `<div class="explain-vis-popover hidden" id="explainVisPopover" role="dialog" aria-label="Phần hiển thị giải thích">
+      <div class="explain-vis-head">Hiển thị trong giải thích</div>
+      <p class="explain-vis-hint">Chỉ ẩn/hiện phần xem. Không sửa nội dung. Lưu trên trình duyệt.</p>
+      <div class="explain-vis-list">`;
+    for (const f of fields) {
+      const on = explainFieldOn(f.key);
+      h += `<label class="explain-vis-item">
+        <input type="checkbox" data-explain-vis="${escapeHtml(f.key)}" ${on ? "checked" : ""} />
+        <span>${escapeHtml(f.label)}</span>
+      </label>`;
+    }
+    h += `</div>
+      <div class="explain-vis-actions">
+        <button type="button" class="btn btn-secondary btn-sm" id="btnExplainVisAll">Bật hết</button>
+        <button type="button" class="btn btn-secondary btn-sm" id="btnExplainVisReset">Mặc định</button>
+      </div>
+    </div>`;
+    return h;
+  }
+
+  function bindExplainVisControls(q, keepOpen) {
+    if (!el.explainPanel || !q) return;
+    const btn = el.explainPanel.querySelector("#btnExplainVis");
+    const pop = el.explainPanel.querySelector("#explainVisPopover");
+    if (!btn || !pop) return;
+
+    if (keepOpen) {
+      pop.classList.remove("hidden");
+      btn.setAttribute("aria-expanded", "true");
+    }
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const willOpen = pop.classList.contains("hidden");
+      if (willOpen) {
+        pop.classList.remove("hidden");
+        btn.setAttribute("aria-expanded", "true");
+      } else {
+        pop.classList.add("hidden");
+        btn.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    pop.addEventListener("click", (e) => e.stopPropagation());
+
+    const refreshKeepOpen = () => showExplainPanel(q, { keepVisOpen: true });
+
+    pop.querySelectorAll("input[data-explain-vis]").forEach((inp) => {
+      inp.addEventListener("change", () => {
+        const key = inp.getAttribute("data-explain-vis");
+        if (!key || !(key in EXPLAIN_VIS_DEFAULT)) return;
+        explainVis[key] = !!inp.checked;
+        saveExplainVis();
+        refreshKeepOpen();
+      });
+    });
+
+    const allBtn = pop.querySelector("#btnExplainVisAll");
+    if (allBtn) {
+      allBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        for (const k of Object.keys(EXPLAIN_VIS_DEFAULT)) explainVis[k] = true;
+        saveExplainVis();
+        refreshKeepOpen();
+      });
+    }
+    const resetBtn = pop.querySelector("#btnExplainVisReset");
+    if (resetBtn) {
+      resetBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        explainVis = { ...EXPLAIN_VIS_DEFAULT };
+        saveExplainVis();
+        refreshKeepOpen();
+      });
+    }
+
+    // click outside closes
+    setTimeout(() => {
+      const onDoc = (ev) => {
+        if (!el.explainPanel) return;
+        const p = el.explainPanel.querySelector("#explainVisPopover");
+        const b = el.explainPanel.querySelector("#btnExplainVis");
+        if (!p || p.classList.contains("hidden")) return;
+        if (p.contains(ev.target) || (b && b.contains(ev.target))) return;
+        p.classList.add("hidden");
+        if (b) b.setAttribute("aria-expanded", "false");
+        document.removeEventListener("click", onDoc);
+      };
+      document.addEventListener("click", onDoc);
+    }, 0);
   }
 
   function openExplainEditor(q) {
