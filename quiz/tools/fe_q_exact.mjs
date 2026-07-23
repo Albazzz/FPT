@@ -4,6 +4,7 @@
  * Bank-actual strings: see fe_q_exact_bank.mjs (merged below).
  */
 import { FE_Q_EXACT_BANK } from "./fe_q_exact_bank.mjs";
+import { FE_BANK300_Q } from "./fe_bank300_q.mjs";
 
 const FE_Q_EXACT_CORE = [
   [
@@ -589,8 +590,8 @@ const FE_Q_EXACT_CORE = [
   ],
 ];
 
-/** Core + bank-actual strings (bank keys win on equal length via longer scan order) */
-export const FE_Q_EXACT = [...FE_Q_EXACT_CORE, ...FE_Q_EXACT_BANK];
+/** Core + bank-actual + short bank300 stems */
+export const FE_Q_EXACT = [...FE_Q_EXACT_CORE, ...FE_Q_EXACT_BANK, ...FE_BANK300_Q];
 
 /** Normalize whitespace for matching */
 export function normQ(s) {

@@ -3,6 +3,7 @@
  * Phrase-first, then multi-word chunks, then controlled glossary — never raw word salad.
  */
 import { hasVi } from "./vi_translate.mjs";
+import { FE_OPT_EXACT_BANK } from "./fe_opt_exact_bank.mjs";
 
 const STOP = new Set(
   "a an the of to in on for and or is are be by as at it its this that with from which when what how who than then into over under not no only also can may must will should does do did has have had been being was were if so but we you they he she i our your their there here such any all each every more most less few many much very just even still yet both either neither".split(
@@ -885,6 +886,26 @@ function polish(s) {
 /**
  * Translate one EN (or half-EN) FE exam string to denser Vietnamese.
  */
+function exactPhraseHit(raw) {
+  const low = raw.toLowerCase();
+  const strip = raw.replace(/[.?!]+$/, "").trim().toLowerCase();
+  // Prefer longest match across phrase book + option bank
+  let best = null;
+  let bestLen = 0;
+  const pools = [FE_SENTENCE_PHRASES, FE_OPT_EXACT_BANK];
+  for (const pool of pools) {
+    for (const [en, vi] of pool) {
+      const enLow = en.toLowerCase();
+      const enStrip = en.replace(/[.?!]+$/, "").trim().toLowerCase();
+      if ((low === enLow || strip === enStrip || raw === en) && en.length >= bestLen) {
+        best = vi;
+        bestLen = en.length;
+      }
+    }
+  }
+  return best;
+}
+
 export function translateFeSentence(input) {
   const raw = String(input || "").trim();
   if (!raw) return raw;
@@ -892,17 +913,8 @@ export function translateFeSentence(input) {
   const enWords = raw.match(/[A-Za-z]{3,}/g) || [];
   if (hasVi(raw) && enWords.length <= 2) return raw;
 
-  const low = raw.toLowerCase();
-  // Exact phrase
-  for (const [en, vi] of FE_SENTENCE_PHRASES) {
-    if (low === en.toLowerCase()) return vi;
-    if (raw === en) return vi;
-  }
-  // Near-exact (ignore trailing punctuation)
-  const strip = raw.replace(/[.?!]+$/, "").trim();
-  for (const [en, vi] of FE_SENTENCE_PHRASES) {
-    if (strip.toLowerCase() === en.replace(/[.?!]+$/, "").toLowerCase()) return vi;
-  }
+  const exact = exactPhraseHit(raw);
+  if (exact) return exact;
 
   let t = raw;
   // Longest chunks
@@ -1013,9 +1025,17 @@ export function translateFeSentence(input) {
 }
 
 const TECH_KEEP = new Set(
-  "tcp udp ip dns http https ftp smtp pop imap arp dhcp lan wan wlan vpn dma cpu gpu ram rom ssd hdd os api sql xml json etl raid atm qos sla crm erp scm osi iso cmmi html css mime pop3 ascii unicode utf bst fifo lifo nlr lrn lnr mtbf mttr csrf xss sql oop dma".split(
-    " "
-  )
+  (
+    "tcp udp ip dns http https ftp smtp pop imap arp dhcp lan wan wlan vpn dma cpu gpu ram rom ssd hdd os api sql xml json etl raid atm qos sla crm erp scm osi iso cmmi html css mime pop3 ascii unicode utf bst fifo lifo nlr lrn lnr mtbf mttr csrf xss oop dma " +
+    "java jvm bytecode servlet applet proxy hybrid token bus star ring mesh buffer cache kernel thrashing paging hashing stack queue join view commit rollback hash crc fcs mac vlan mpls pki rsa aes des md5 sha url uri gui cli bios uefi ipv4 ipv6 aws ec2 soa raci " +
+    "wpa waf ssl tls nat icmp ppp hdlc fdm tdm wdm cdma bcd rpn bcp drp wbs spi cpi pmo cobit itil sso csd l csdl null left right outer inner cross natural " +
+    "server client request response license application module process thread session cookie portal cloud grid utility infrastructure platform software hardware " +
+    "phase level model data file disk code test bug path node edge graph tree list array pointer register instruction memory network router switch hub bridge " +
+    "firewall packet frame protocol address port packet stream datagram cipher encrypt decrypt key secret public private digital signature authentication authorization " +
+    "incident problem change release config baseline milestone deliverable stakeholder vendor customer service availability integrity confidentiality " +
+    "product price place promotion cyan magenta yellow black orange purple brown gray red green blue white " +
+    "plan do check act push pop enq deq fifo lifo"
+  ).split(/\s+/)
 );
 
 export function enMeaningfulCount(s) {
@@ -1025,8 +1045,17 @@ export function enMeaningfulCount(s) {
     if (!low || low.length < 3) return false;
     if (STOP.has(low)) return false;
     if (TECH_KEEP.has(low)) return false;
+    // Short acronyms / all-caps tokens (CSDL, SLA, HTML…)
+    if (/^[A-Z0-9]{2,8}$/.test(w)) return false;
     if (/^csma/i.test(w) || /^token$/i.test(w) || /^bus$/i.test(w)) return false;
     if (/^o\(/i.test(w)) return false;
+    // Vietnamese syllables without diacritics that appear in our glosses
+    if (
+      /^(pha|toi|toi|cac|cua|va|cho|voi|tu|den|khi|sau|truoc|trong|ngoai|tren|duoi|mot|hai|ba|bon|nam|sau|bay|tam|chin|muoi|luon|chi|hoac|nhung|nhu|de|la|co|khong|duoc|bang|theo|tu|ra|vao|len|xuong)$/i.test(
+        low
+      )
+    )
+      return false;
     return true;
   }).length;
 }

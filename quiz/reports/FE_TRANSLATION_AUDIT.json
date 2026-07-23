@@ -1,33 +1,33 @@
 {
   "summary": {
-    "at": "2026-07-23T08:15:14.999Z",
+    "at": "2026-07-23T08:24:52.415Z",
     "total": 726,
     "threshold": 0.4,
     "pureEnglishQuestionVi": 1,
-    "halfTranslatedQuestionVi": 30,
-    "questionsFlagged": 445,
-    "badLongOptionSlots": 318
+    "halfTranslatedQuestionVi": 13,
+    "questionsFlagged": 250,
+    "badLongOptionSlots": 143
   },
   "rows": [
     {
-      "id": 283,
-      "num": 216,
-      "task": "bank300",
+      "id": 597,
+      "num": 197,
+      "task": "books",
       "qViRatio": 100,
       "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Requirements: functional vs non-functional?",
-      "question": "Requirements: functional vs non-functional?"
+      "badOpts": "A",
+      "questionVi": "Deadlock databases occur khi:",
+      "question": "Deadlock in databases can occur when:"
     },
     {
-      "id": 68,
-      "num": 1,
+      "id": 284,
+      "num": 217,
       "task": "bank300",
       "qViRatio": 100,
       "qViMeaningful": 3,
       "badOpts": "",
-      "questionVi": "How bits one byte?",
-      "question": "How many bits are in one byte?"
+      "questionVi": "Walk-through review?",
+      "question": "Walk-through review?"
     },
     {
       "id": 519,
@@ -50,94 +50,34 @@
       "question": "Regression testing is performed to:"
     },
     {
-      "id": 597,
-      "num": 197,
-      "task": "books",
+      "id": 271,
+      "num": 204,
+      "task": "bank300",
       "qViRatio": 100,
-      "qViMeaningful": 3,
-      "badOpts": "A",
-      "questionVi": "Deadlock databases occur when:",
-      "question": "Deadlock in databases can occur when:"
-    },
-    {
-      "id": 543,
-      "num": 139,
-      "task": "books",
-      "qViRatio": 87.5,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Đề: An audit trail is useful because it:",
-      "question": "An audit trail is useful because it:"
-    },
-    {
-      "id": 665,
-      "num": 270,
-      "task": "books",
-      "qViRatio": 87.5,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Đề: Cohesion within a module should generally be:",
-      "question": "Cohesion within a module should generally be:"
-    },
-    {
-      "id": 632,
-      "num": 233,
-      "task": "books",
-      "qViRatio": 87.5,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Đề: A graph G=(V,E) consists of:",
-      "question": "A graph G=(V,E) consists of:"
+      "questionVi": "B2C e-business?",
+      "question": "B2C e-business?"
     },
     {
-      "id": 213,
-      "num": 146,
+      "id": 285,
+      "num": 218,
       "task": "bank300",
-      "qViRatio": 87.5,
-      "qViMeaningful": 1,
+      "qViRatio": 100,
+      "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Đề: RPN of (A+B)*(C-D/E)?",
-      "question": "RPN of (A+B)*(C-D/E)?"
+      "questionVi": "Inspection review?",
+      "question": "Inspection review?"
     },
     {
-      "id": 304,
-      "num": 237,
+      "id": 296,
+      "num": 229,
       "task": "bank300",
-      "qViRatio": 85.7,
-      "qViMeaningful": 4,
-      "badOpts": "C",
-      "questionVi": "Đề: General IT controls vs application controls?",
-      "question": "General IT controls vs application controls?"
-    },
-    {
-      "id": 518,
-      "num": 111,
-      "task": "books",
-      "qViRatio": 85.7,
-      "qViMeaningful": 3,
-      "badOpts": "AC",
-      "questionVi": "Đề: A common risk of outsourcing is:",
-      "question": "A common risk of outsourcing is:"
-    },
-    {
-      "id": 623,
-      "num": 224,
-      "task": "books",
-      "qViRatio": 85.7,
-      "qViMeaningful": 3,
-      "badOpts": "A",
-      "questionVi": "Đề: A linked list is characterized by:",
-      "question": "A linked list is characterized by:"
-    },
-    {
-      "id": 123,
-      "num": 56,
-      "task": "bank300",
-      "qViRatio": 83.3,
-      "qViMeaningful": 5,
+      "qViRatio": 100,
+      "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Cho phép view/modify/redistribute source?",
-      "question": "Allow view/modify/redistribute source?"
+      "questionVi": "Fast-tracking?",
+      "question": "Fast-tracking?"
     },
     {
       "id": 345,
@@ -146,118 +86,8 @@
       "qViRatio": 83.3,
       "qViMeaningful": 5,
       "badOpts": "",
-      "questionVi": "Đề: Soft real-time miss deadline?",
+      "questionVi": "Soft real-time khi trễ deadline?",
       "question": "Soft real-time miss deadline?"
-    },
-    {
-      "id": 84,
-      "num": 17,
-      "task": "bank300",
-      "qViRatio": 83.3,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Thanh ghi inside CPU: ngoại vi?",
-      "question": "Register is inside CPU: peripheral?"
-    },
-    {
-      "id": 131,
-      "num": 64,
-      "task": "bank300",
-      "qViRatio": 83.3,
-      "qViMeaningful": 4,
-      "badOpts": "A",
-      "questionVi": "Eliminate which condition ngăn deadlock (chung)?",
-      "question": "Eliminate which condition to prevent deadlock (common)?"
-    },
-    {
-      "id": 534,
-      "num": 128,
-      "task": "books",
-      "qViRatio": 83.3,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Đề: A Gantt chart mainly shows:",
-      "question": "A Gantt chart mainly shows:"
-    },
-    {
-      "id": 76,
-      "num": 9,
-      "task": "bank300",
-      "qViRatio": 83.3,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Hexadecimal digit A in decimal?",
-      "question": "Hexadecimal digit A in decimal?"
-    },
-    {
-      "id": 542,
-      "num": 138,
-      "task": "books",
-      "qViRatio": 83.3,
-      "qViMeaningful": 3,
-      "badOpts": "AC",
-      "questionVi": "Đề: Segregation of duties helps to:",
-      "question": "Segregation of duties helps to:"
-    },
-    {
-      "id": 652,
-      "num": 255,
-      "task": "books",
-      "qViRatio": 83.3,
-      "qViMeaningful": 3,
-      "badOpts": "B",
-      "questionVi": "Đề: BCP/DR planning aims to:",
-      "question": "BCP/DR planning aims to:"
-    },
-    {
-      "id": 675,
-      "num": 281,
-      "task": "books",
-      "qViRatio": 83.3,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Lessons learned are captured to:",
-      "question": "Lessons learned are captured to:"
-    },
-    {
-      "id": 349,
-      "num": 282,
-      "task": "bank300",
-      "qViRatio": 83.3,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: E-R entity drawn as?",
-      "question": "E-R entity drawn as?"
-    },
-    {
-      "id": 592,
-      "num": 192,
-      "task": "books",
-      "qViRatio": 83.3,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: A view in SQL is:",
-      "question": "A view in SQL is:"
-    },
-    {
-      "id": 685,
-      "num": 292,
-      "task": "books",
-      "qViRatio": 83.3,
-      "qViMeaningful": 2,
-      "badOpts": "C",
-      "questionVi": "Đề: Evidence in audits should be:",
-      "question": "Evidence in audits should be:"
-    },
-    {
-      "id": 100,
-      "num": 33,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Đề: Airline reservation immediate response?",
-      "question": "Airline reservation immediate response?"
     },
     {
       "id": 118,
@@ -268,116 +98,6 @@
       "badOpts": "",
       "questionVi": "Language closest machine với mnemonics?",
       "question": "Language closest to machine with mnemonics?"
-    },
-    {
-      "id": 120,
-      "num": 53,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Combines object modules vào executable?",
-      "question": "Combines object modules into executable?"
-    },
-    {
-      "id": 128,
-      "num": 61,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Scheduling starve long các job?",
-      "question": "Scheduling that may starve long jobs?"
-    },
-    {
-      "id": 156,
-      "num": 89,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Tầng OSI end- -end reliability?",
-      "question": "OSI layer for end-to-end reliability?"
-    },
-    {
-      "id": 180,
-      "num": 113,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "ISMS Plan phase bao gồm?",
-      "question": "ISMS Plan phase includes?"
-    },
-    {
-      "id": 182,
-      "num": 115,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "D",
-      "questionVi": "Đề: Risk assessment proper approach?",
-      "question": "Risk assessment proper approach?"
-    },
-    {
-      "id": 200,
-      "num": 133,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Đề: Symmetric crypto other name?",
-      "question": "Symmetric crypto other name?"
-    },
-    {
-      "id": 222,
-      "num": 155,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Đề: Linear search worst complexity?",
-      "question": "Linear search worst complexity?"
-    },
-    {
-      "id": 225,
-      "num": 158,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "C",
-      "questionVi": "Đề: Linked list insert advantage?",
-      "question": "Linked list insert advantage?"
-    },
-    {
-      "id": 323,
-      "num": 256,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Giao thức cho secure web?",
-      "question": "Protocol for secure web?"
-    },
-    {
-      "id": 361,
-      "num": 294,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Đề: Twisted pair common use?",
-      "question": "Twisted pair common use?"
-    },
-    {
-      "id": 485,
-      "num": 77,
-      "task": "books",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "BC",
-      "questionVi": "ACID proPERTies transactions bao gồm:",
-      "question": "ACID properties of transactions include:"
     },
     {
       "id": 496,
@@ -395,7 +115,7 @@
       "task": "books",
       "qViRatio": 80,
       "qViMeaningful": 4,
-      "badOpts": "A",
+      "badOpts": "",
       "questionVi": "Hot swappable components Cho phép:",
       "question": "Hot swappable components allow:"
     },
@@ -405,179 +125,19 @@
       "task": "books",
       "qViRatio": 80,
       "qViMeaningful": 4,
-      "badOpts": "C",
+      "badOpts": "",
       "questionVi": "OLAs (Operational Level Agreements) thường:",
       "question": "OLAs (Operational Level Agreements) are typically:"
     },
     {
-      "id": 689,
-      "num": 296,
-      "task": "books",
-      "qViRatio": 80,
-      "qViMeaningful": 4,
-      "badOpts": "A",
-      "questionVi": "CMMI Level 1 (Initial) characterized:",
-      "question": "CMMI Level 1 (Initial) is characterized by:"
-    },
-    {
-      "id": 95,
-      "num": 28,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Information amount với n bits?",
-      "question": "Information amount with n bits?"
-    },
-    {
-      "id": 110,
-      "num": 43,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Vì sao user-friendly UI?",
-      "question": "Why user-friendly UI?"
-    },
-    {
-      "id": 303,
-      "num": 236,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 3,
-      "badOpts": "A",
-      "questionVi": "Đề: External audit vs internal?",
-      "question": "External audit vs internal?"
-    },
-    {
-      "id": 524,
-      "num": 117,
-      "task": "books",
-      "qViRatio": 80,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Unit testing focuses on:",
-      "question": "Unit testing focuses on:"
-    },
-    {
-      "id": 655,
-      "num": 259,
-      "task": "books",
-      "qViRatio": 80,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Requirements definition aims to:",
-      "question": "Requirements definition aims to:"
-    },
-    {
-      "id": 672,
-      "num": 277,
-      "task": "books",
-      "qViRatio": 80,
-      "qViMeaningful": 3,
-      "badOpts": "B",
-      "questionVi": "Đề: A RACI matrix clarifies:",
-      "question": "A RACI matrix clarifies:"
-    },
-    {
-      "id": 686,
-      "num": 293,
-      "task": "books",
-      "qViRatio": 80,
-      "qViMeaningful": 3,
-      "badOpts": "BC",
-      "questionVi": "Đề: Preventive controls aim to:",
-      "question": "Preventive controls aim to:"
-    },
-    {
-      "id": 687,
-      "num": 294,
-      "task": "books",
-      "qViRatio": 80,
-      "qViMeaningful": 3,
-      "badOpts": "A",
-      "questionVi": "Đề: Detective controls aim to:",
-      "question": "Detective controls aim to:"
-    },
-    {
-      "id": 688,
-      "num": 295,
-      "task": "books",
-      "qViRatio": 80,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Corrective controls aim to:",
-      "question": "Corrective controls aim to:"
-    },
-    {
-      "id": 245,
-      "num": 178,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: ITIL de facto for?",
-      "question": "ITIL de facto for?"
-    },
-    {
-      "id": 350,
-      "num": 283,
-      "task": "bank300",
-      "qViRatio": 80,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Relationship cardinality M:N?",
-      "question": "Relationship cardinality M:N?"
-    },
-    {
-      "id": 555,
-      "num": 152,
-      "task": "books",
-      "qViRatio": 80,
-      "qViMeaningful": 2,
-      "badOpts": "C",
-      "questionVi": "Đề: A deadlock occurs when:",
-      "question": "A deadlock occurs when:"
-    },
-    {
-      "id": 595,
-      "num": 195,
-      "task": "books",
-      "qViRatio": 80,
-      "qViMeaningful": 2,
-      "badOpts": "C",
-      "questionVi": "Đề: COMMIT in a transaction:",
-      "question": "COMMIT in a transaction:"
-    },
-    {
-      "id": 604,
-      "num": 204,
-      "task": "books",
-      "qViRatio": 80,
-      "qViMeaningful": 2,
-      "badOpts": "AC",
-      "questionVi": "Đề: UDP is characterized as:",
-      "question": "UDP is characterized as:"
-    },
-    {
-      "id": 75,
-      "num": 8,
+      "id": 68,
+      "num": 1,
       "task": "bank300",
       "qViRatio": 75,
       "qViMeaningful": 3,
       "badOpts": "",
-      "questionVi": "Cache usually implemented với?",
-      "question": "Cache is usually implemented with?"
-    },
-    {
-      "id": 80,
-      "num": 13,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Range of n-bit 2's complement?",
-      "question": "Range of n-bit 2's complement?"
+      "questionVi": "How bits one byte?",
+      "question": "How many bits are in one byte?"
     },
     {
       "id": 81,
@@ -590,76 +150,6 @@
       "question": "International multilingual character code?"
     },
     {
-      "id": 92,
-      "num": 25,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Pipeline hazard types?",
-      "question": "Pipeline hazard types?"
-    },
-    {
-      "id": 129,
-      "num": 62,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Round Robin reduces?",
-      "question": "Round Robin reduces?"
-    },
-    {
-      "id": 130,
-      "num": 63,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Coffman conditions count?",
-      "question": "Coffman conditions count?"
-    },
-    {
-      "id": 157,
-      "num": 90,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Tầng OSI frames/MAC?",
-      "question": "OSI layer frames/MAC?"
-    },
-    {
-      "id": 161,
-      "num": 94,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: HTTP port commonly?",
-      "question": "HTTP port commonly?"
-    },
-    {
-      "id": 165,
-      "num": 98,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: CDMA/CDM idea?",
-      "question": "CDMA/CDM idea?"
-    },
-    {
-      "id": 181,
-      "num": 114,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: ISMS Act phase?",
-      "question": "ISMS Act phase?"
-    },
-    {
       "id": 207,
       "num": 140,
       "task": "bank300",
@@ -668,176 +158,6 @@
       "badOpts": "",
       "questionVi": "Best recursion gọi handling?",
       "question": "Best for recursion call handling?"
-    },
-    {
-      "id": 210,
-      "num": 143,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Singly list traverse từ?",
-      "question": "Singly list traverse from?"
-    },
-    {
-      "id": 217,
-      "num": 150,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Bubble sort idea?",
-      "question": "Bubble sort idea?"
-    },
-    {
-      "id": 223,
-      "num": 156,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Binary search complexity?",
-      "question": "Binary search complexity?"
-    },
-    {
-      "id": 229,
-      "num": 162,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Hash average search?",
-      "question": "Hash average search?"
-    },
-    {
-      "id": 230,
-      "num": 163,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Merge sort complexity?",
-      "question": "Merge sort complexity?"
-    },
-    {
-      "id": 231,
-      "num": 164,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Quicksort worst case?",
-      "question": "Quicksort worst case?"
-    },
-    {
-      "id": 236,
-      "num": 169,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Break-even idea?",
-      "question": "Break-even idea?"
-    },
-    {
-      "id": 240,
-      "num": 173,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Competitive leader strategy?",
-      "question": "Competitive leader strategy?"
-    },
-    {
-      "id": 252,
-      "num": 185,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Unit test tests?",
-      "question": "Unit test tests?"
-    },
-    {
-      "id": 253,
-      "num": 186,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Black-box testing?",
-      "question": "Black-box testing?"
-    },
-    {
-      "id": 254,
-      "num": 187,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: White-box testing?",
-      "question": "White-box testing?"
-    },
-    {
-      "id": 255,
-      "num": 188,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: High cohesion good?",
-      "question": "High cohesion good?"
-    },
-    {
-      "id": 256,
-      "num": 189,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Low coupling good?",
-      "question": "Low coupling good?"
-    },
-    {
-      "id": 273,
-      "num": 206,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "A",
-      "questionVi": "Đề: Outsourcing offshore risk?",
-      "question": "Outsourcing offshore risk?"
-    },
-    {
-      "id": 284,
-      "num": 217,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "C",
-      "questionVi": "Đề: Walk-through review?",
-      "question": "Walk-through review?"
-    },
-    {
-      "id": 300,
-      "num": 233,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Service continuity liên quan?",
-      "question": "IT service continuity related to?"
-    },
-    {
-      "id": 319,
-      "num": 252,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Starvation risk algorithm?",
-      "question": "Starvation risk algorithm?"
     },
     {
       "id": 324,
@@ -850,76 +170,6 @@
       "question": "Mail send protocol?"
     },
     {
-      "id": 325,
-      "num": 258,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Mail receive protocols?",
-      "question": "Mail receive protocols?"
-    },
-    {
-      "id": 326,
-      "num": 259,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "RAID parity đơn disk?",
-      "question": "RAID with parity single disk?"
-    },
-    {
-      "id": 332,
-      "num": 265,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: SQL injection defense?",
-      "question": "SQL injection defense?"
-    },
-    {
-      "id": 346,
-      "num": 279,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Client-server model?",
-      "question": "Client-server model?"
-    },
-    {
-      "id": 358,
-      "num": 291,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "D",
-      "questionVi": "Đề: Bus topology weakness?",
-      "question": "Bus topology weakness?"
-    },
-    {
-      "id": 360,
-      "num": 293,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Optical fiber advantage?",
-      "question": "Optical fiber advantage?"
-    },
-    {
-      "id": 528,
-      "num": 122,
-      "task": "books",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "BCD",
-      "questionVi": "Đề: Agile development emphasizes:",
-      "question": "Agile development emphasizes:"
-    },
-    {
       "id": 584,
       "num": 183,
       "task": "books",
@@ -928,16 +178,6 @@
       "badOpts": "",
       "questionVi": "Absolute pathnames start từ:",
       "question": "Absolute pathnames start from:"
-    },
-    {
-      "id": 626,
-      "num": 227,
-      "task": "books",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "BFS graph uses thường:",
-      "question": "BFS on a graph uses typically:"
     },
     {
       "id": 645,
@@ -955,19 +195,9 @@
       "task": "books",
       "qViRatio": 75,
       "qViMeaningful": 3,
-      "badOpts": "B",
+      "badOpts": "",
       "questionVi": "Competitive advantage come từ:",
       "question": "Competitive advantage can come from:"
-    },
-    {
-      "id": 658,
-      "num": 263,
-      "task": "books",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Integration testing verifies:",
-      "question": "Integration testing verifies:"
     },
     {
       "id": 659,
@@ -975,7 +205,7 @@
       "task": "books",
       "qViRatio": 75,
       "qViMeaningful": 3,
-      "badOpts": "C",
+      "badOpts": "",
       "questionVi": "Acceptance testing thường done:",
       "question": "Acceptance testing is typically done to:"
     },
@@ -985,7 +215,7 @@
       "task": "books",
       "qViRatio": 75,
       "qViMeaningful": 3,
-      "badOpts": "B",
+      "badOpts": "",
       "questionVi": "Coupling giữ modules generally:",
       "question": "Coupling between modules should generally be:"
     },
@@ -1020,364 +250,34 @@
       "question": "An external audit is typically performed by:"
     },
     {
-      "id": 719,
-      "num": 571,
-      "task": "albazzz",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: Black-box testing?",
-      "question": "Black-box testing?"
-    },
-    {
-      "id": 720,
-      "num": 572,
-      "task": "albazzz",
-      "qViRatio": 75,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: White-box testing?",
-      "question": "White-box testing?"
-    },
-    {
-      "id": 91,
-      "num": 24,
+      "id": 245,
+      "num": 178,
       "task": "bank300",
       "qViRatio": 75,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Đề: PC register holds?",
-      "question": "PC register holds?"
+      "questionVi": "ITIL de facto cho?",
+      "question": "ITIL de facto for?"
     },
     {
-      "id": 133,
-      "num": 66,
+      "id": 273,
+      "num": 206,
       "task": "bank300",
       "qViRatio": 75,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Đề: Microkernel vs monolithic?",
-      "question": "Microkernel vs monolithic?"
+      "questionVi": "Rủi ro outsourcing offshore?",
+      "question": "Outsourcing offshore risk?"
     },
     {
-      "id": 150,
-      "num": 83,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Selection relational op?",
-      "question": "Selection relational op?"
-    },
-    {
-      "id": 151,
-      "num": 84,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Projection relational op?",
-      "question": "Projection relational op?"
-    },
-    {
-      "id": 160,
-      "num": 93,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "C",
-      "questionVi": "Đề: TCP vs UDP?",
-      "question": "TCP vs UDP?"
-    },
-    {
-      "id": 172,
-      "num": 105,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "B",
-      "questionVi": "Đề: Switch vs hub?",
-      "question": "Switch vs hub?"
-    },
-    {
-      "id": 173,
-      "num": 106,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Router works at?",
-      "question": "Router works at?"
-    },
-    {
-      "id": 192,
-      "num": 125,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Reverse proxy does?",
-      "question": "Reverse proxy does?"
-    },
-    {
-      "id": 193,
-      "num": 126,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Forward proxy does?",
-      "question": "Forward proxy does?"
-    },
-    {
-      "id": 195,
-      "num": 128,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "A",
-      "questionVi": "Đề: JPCERT/CC role?",
-      "question": "JPCERT/CC role?"
-    },
-    {
-      "id": 237,
-      "num": 170,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: QC Pareto idea?",
-      "question": "QC Pareto idea?"
-    },
-    {
-      "id": 247,
-      "num": 180,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "A",
-      "questionVi": "Đề: Incident vs Problem?",
-      "question": "Incident vs Problem?"
-    },
-    {
-      "id": 248,
-      "num": 181,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Service desk is?",
-      "question": "Service desk is?"
-    },
-    {
-      "id": 251,
-      "num": 184,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: V-model links?",
-      "question": "V-model links?"
-    },
-    {
-      "id": 266,
-      "num": 199,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: IT governance aims?",
-      "question": "IT governance aims?"
-    },
-    {
-      "id": 271,
-      "num": 204,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: B2C e-business?",
-      "question": "B2C e-business?"
-    },
-    {
-      "id": 289,
-      "num": 222,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "A",
-      "questionVi": "Đề: Verification vs Validation?",
-      "question": "Verification vs Validation?"
-    },
-    {
-      "id": 295,
-      "num": 228,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Crashing a schedule?",
-      "question": "Crashing a schedule?"
-    },
-    {
-      "id": 312,
-      "num": 245,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Hex F decimal?",
-      "question": "Hex F decimal?"
-    },
-    {
-      "id": 341,
-      "num": 274,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: IDS vs IPS?",
-      "question": "IDS vs IPS?"
-    },
-    {
-      "id": 553,
-      "num": 149,
+      "id": 555,
+      "num": 152,
       "task": "books",
       "qViRatio": 75,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Đề: ER diagrams model:",
-      "question": "ER diagrams model:"
-    },
-    {
-      "id": 557,
-      "num": 155,
-      "task": "books",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: HTTPS is essentially:",
-      "question": "HTTPS is essentially:"
-    },
-    {
-      "id": 594,
-      "num": 194,
-      "task": "books",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "A",
-      "questionVi": "Đề: A JOIN operation:",
-      "question": "A JOIN operation:"
-    },
-    {
-      "id": 609,
-      "num": 210,
-      "task": "books",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: IPv6 addresses are:",
-      "question": "IPv6 addresses are:"
-    },
-    {
-      "id": 615,
-      "num": 216,
-      "task": "books",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "BC",
-      "questionVi": "Đề: PKI relies on:",
-      "question": "PKI relies on:"
-    },
-    {
-      "id": 635,
-      "num": 236,
-      "task": "books",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "C",
-      "questionVi": "Đề: A trademark protects:",
-      "question": "A trademark protects:"
-    },
-    {
-      "id": 716,
-      "num": 565,
-      "task": "albazzz",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "B",
-      "questionVi": "Đề: Incident vs Problem?",
-      "question": "Incident vs Problem?"
-    },
-    {
-      "id": 717,
-      "num": 566,
-      "task": "albazzz",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Service desk is?",
-      "question": "Service desk is?"
-    },
-    {
-      "id": 724,
-      "num": 613,
-      "task": "albazzz",
-      "qViRatio": 75,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Crashing a schedule?",
-      "question": "Crashing a schedule?"
-    },
-    {
-      "id": 354,
-      "num": 287,
-      "task": "bank300",
-      "qViRatio": 75,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: View in DB?",
-      "question": "View in DB?"
-    },
-    {
-      "id": 621,
-      "num": 222,
-      "task": "books",
-      "qViRatio": 75,
-      "qViMeaningful": 1,
-      "badOpts": "A",
-      "questionVi": "Đề: A vulnerability is:",
-      "question": "A vulnerability is:"
-    },
-    {
-      "id": 669,
-      "num": 274,
-      "task": "books",
-      "qViRatio": 75,
-      "qViMeaningful": 1,
-      "badOpts": "B",
-      "questionVi": "Đề: A milestone is:",
-      "question": "A milestone is:"
-    },
-    {
-      "id": 208,
-      "num": 141,
-      "task": "bank300",
-      "qViRatio": 72.7,
-      "qViMeaningful": 8,
-      "badOpts": "",
-      "questionVi": "Stack: PUSH3 PUSH7 POP PUSH5 PUSH9 POP — đỉnh stack là gì?",
-      "question": "Stack: PUSH3 PUSH7 POP PUSH5 PUSH9 POP top?"
-    },
-    {
-      "id": 86,
-      "num": 19,
-      "task": "bank300",
-      "qViRatio": 71.4,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Advantage semiconductor bộ nhớ vs magnetic disk?",
-      "question": "Advantage of semiconductor memory vs magnetic disk?"
+      "questionVi": "Deadlock xảy ra khi:",
+      "question": "A deadlock occurs when:"
     },
     {
       "id": 25,
@@ -1398,6 +298,26 @@
       "badOpts": "",
       "questionVi": "Hard real-time ví dụ idea?",
       "question": "Hard real-time example idea?"
+    },
+    {
+      "id": 123,
+      "num": 56,
+      "task": "bank300",
+      "qViRatio": 66.7,
+      "qViMeaningful": 4,
+      "badOpts": "",
+      "questionVi": "Cho phép view/modify/redistribute source?",
+      "question": "Allow view/modify/redistribute source?"
+    },
+    {
+      "id": 131,
+      "num": 64,
+      "task": "bank300",
+      "qViRatio": 66.7,
+      "qViMeaningful": 4,
+      "badOpts": "A",
+      "questionVi": "Eliminate which condition ngăn deadlock (chung)?",
+      "question": "Eliminate which condition to prevent deadlock (common)?"
     },
     {
       "id": 198,
@@ -1440,24 +360,14 @@
       "question": "Array access time complexity?"
     },
     {
-      "id": 466,
-      "num": 58,
-      "task": "books",
+      "id": 304,
+      "num": 237,
+      "task": "bank300",
       "qViRatio": 66.7,
       "qViMeaningful": 4,
       "badOpts": "",
-      "questionVi": "Cái gì MTBF stand reliability discussions?",
-      "question": "What does MTBF stand for in reliability discussions?"
-    },
-    {
-      "id": 504,
-      "num": 96,
-      "task": "books",
-      "qViRatio": 66.7,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Cái nào fundamental set OOP concepts?",
-      "question": "Which is a fundamental set of OOP concepts?"
+      "questionVi": "General IT controls khác application controls?",
+      "question": "General IT controls vs application controls?"
     },
     {
       "id": 506,
@@ -1465,69 +375,9 @@
       "task": "books",
       "qViRatio": 66.7,
       "qViMeaningful": 4,
-      "badOpts": "B",
+      "badOpts": "",
       "questionVi": "Intellectual property rights generally Bảo vệ:",
       "question": "Intellectual property rights generally protect:"
-    },
-    {
-      "id": 521,
-      "num": 114,
-      "task": "books",
-      "qViRatio": 66.7,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Use case diagram UML dùng để:",
-      "question": "A use case diagram in UML is used to:"
-    },
-    {
-      "id": 537,
-      "num": 132,
-      "task": "books",
-      "qViRatio": 66.7,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "ITIL-style incident quản lý aims:",
-      "question": "ITIL-style incident management aims to:"
-    },
-    {
-      "id": 544,
-      "num": 140,
-      "task": "books",
-      "qViRatio": 66.7,
-      "qViMeaningful": 4,
-      "badOpts": "A",
-      "questionVi": "Câu hỏi: CMMI maturity levels describe:",
-      "question": "CMMI maturity levels describe:"
-    },
-    {
-      "id": 567,
-      "num": 165,
-      "task": "books",
-      "qViRatio": 66.7,
-      "qViMeaningful": 4,
-      "badOpts": "A",
-      "questionVi": "SRAM thường dùng cho cache because:",
-      "question": "SRAM is commonly used for cache because:"
-    },
-    {
-      "id": 643,
-      "num": 245,
-      "task": "books",
-      "qViRatio": 66.7,
-      "qViMeaningful": 4,
-      "badOpts": "A",
-      "questionVi": "SCM (Supply Chain quản lý) focuses:",
-      "question": "SCM (Supply Chain Management) focuses on:"
-    },
-    {
-      "id": 653,
-      "num": 256,
-      "task": "books",
-      "qViRatio": 66.7,
-      "qViMeaningful": 4,
-      "badOpts": "C",
-      "questionVi": "RPO (Recovery Point mục tiêu) relates:",
-      "question": "An RPO (Recovery Point Objective) relates to:"
     },
     {
       "id": 656,
@@ -1540,6 +390,16 @@
       "question": "Internal design focuses more on:"
     },
     {
+      "id": 665,
+      "num": 270,
+      "task": "books",
+      "qViRatio": 66.7,
+      "qViMeaningful": 4,
+      "badOpts": "",
+      "questionVi": "Cohesion trong module nhìn chung nên:",
+      "question": "Cohesion within a module should generally be:"
+    },
+    {
       "id": 710,
       "num": 317,
       "task": "books",
@@ -1550,314 +410,34 @@
       "question": "Which metric is Mean Time To Repair?"
     },
     {
-      "id": 216,
-      "num": 149,
+      "id": 84,
+      "num": 17,
       "task": "bank300",
       "qViRatio": 66.7,
       "qViMeaningful": 3,
       "badOpts": "",
-      "questionVi": "Divide and Conquer sort ví dụ?",
-      "question": "Divide and Conquer sort example?"
+      "questionVi": "Thanh ghi trong CPU — ngoại vi?",
+      "question": "Register is inside CPU: peripheral?"
     },
     {
-      "id": 494,
-      "num": 86,
-      "task": "books",
-      "qViRatio": 66.7,
-      "qViMeaningful": 3,
-      "badOpts": "C",
-      "questionVi": "What SSL/TLS chủ yếu achieve?",
-      "question": "What can SSL/TLS primarily achieve?"
-    },
-    {
-      "id": 132,
-      "num": 65,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "B",
-      "questionVi": "Đề: Kernel modes?",
-      "question": "Kernel modes?"
-    },
-    {
-      "id": 140,
-      "num": 73,
+      "id": 181,
+      "num": 114,
       "task": "bank300",
       "qViRatio": 66.7,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Đề: Backup types?",
-      "question": "Backup types?"
+      "questionVi": "Pha Act ISMS?",
+      "question": "ISMS Act phase?"
     },
     {
-      "id": 155,
-      "num": 88,
+      "id": 289,
+      "num": 222,
       "task": "bank300",
       "qViRatio": 66.7,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Tầng OSI routing?",
-      "question": "OSI layer for routing?"
-    },
-    {
-      "id": 158,
-      "num": 91,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: DNS role?",
-      "question": "DNS role?"
-    },
-    {
-      "id": 159,
-      "num": 92,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: DHCP role?",
-      "question": "DHCP role?"
-    },
-    {
-      "id": 170,
-      "num": 103,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: CCU role?",
-      "question": "CCU role?"
-    },
-    {
-      "id": 171,
-      "num": 104,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Modem role?",
-      "question": "Modem role?"
-    },
-    {
-      "id": 174,
-      "num": 107,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: IPv4 bits?",
-      "question": "IPv4 bits?"
-    },
-    {
-      "id": 175,
-      "num": 108,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: IPv6 bits?",
-      "question": "IPv6 bits?"
-    },
-    {
-      "id": 197,
-      "num": 130,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "SSL cung cấp?",
-      "question": "SSL provides?"
-    },
-    {
-      "id": 201,
-      "num": 134,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Hash property?",
-      "question": "Hash property?"
-    },
-    {
-      "id": 205,
-      "num": 138,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: FIFO structure?",
-      "question": "FIFO structure?"
-    },
-    {
-      "id": 206,
-      "num": 139,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: LIFO structure?",
-      "question": "LIFO structure?"
-    },
-    {
-      "id": 234,
-      "num": 167,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: PDCA letters?",
-      "question": "PDCA letters?"
-    },
-    {
-      "id": 238,
-      "num": 171,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Ishikawa diagram?",
-      "question": "Ishikawa diagram?"
-    },
-    {
-      "id": 241,
-      "num": 174,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Nicher strategy?",
-      "question": "Nicher strategy?"
-    },
-    {
-      "id": 244,
-      "num": 177,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: CIO approves?",
-      "question": "CIO approves?"
-    },
-    {
-      "id": 250,
-      "num": 183,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Waterfall model?",
-      "question": "Waterfall model?"
-    },
-    {
-      "id": 257,
-      "num": 190,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "A",
-      "questionVi": "Đề: Configuration baseline?",
-      "question": "Configuration baseline?"
-    },
-    {
-      "id": 263,
-      "num": 196,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Risk responses?",
-      "question": "Risk responses?"
-    },
-    {
-      "id": 274,
-      "num": 207,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Copyright protects?",
-      "question": "Copyright protects?"
-    },
-    {
-      "id": 275,
-      "num": 208,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Patent protects?",
-      "question": "Patent protects?"
-    },
-    {
-      "id": 276,
-      "num": 209,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "B",
-      "questionVi": "Đề: Going concern?",
-      "question": "Going concern?"
-    },
-    {
-      "id": 285,
-      "num": 218,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Inspection review?",
-      "question": "Inspection review?"
-    },
-    {
-      "id": 292,
-      "num": 225,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: PMO role?",
-      "question": "PMO role?"
-    },
-    {
-      "id": 293,
-      "num": 226,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Matrix organization?",
-      "question": "Matrix organization?"
-    },
-    {
-      "id": 296,
-      "num": 229,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: Fast-tracking?",
-      "question": "Fast-tracking?"
-    },
-    {
-      "id": 297,
-      "num": 230,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "C",
-      "questionVi": "Known lỗi ITIL?",
-      "question": "Known error in ITIL?"
-    },
-    {
-      "id": 333,
-      "num": 266,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "XSS liên quan?",
-      "question": "XSS related to?"
+      "questionVi": "Verification khác Validation?",
+      "question": "Verification vs Validation?"
     },
     {
       "id": 334,
@@ -1870,42 +450,12 @@
       "question": "Digital certificate issued by?"
     },
     {
-      "id": 355,
-      "num": 288,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: GRANT/REVOKE?",
-      "question": "GRANT/REVOKE?"
-    },
-    {
-      "id": 365,
-      "num": 298,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: ARP resolves?",
-      "question": "ARP resolves?"
-    },
-    {
-      "id": 558,
-      "num": 156,
-      "task": "books",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "AB",
-      "questionVi": "SLA thường defines:",
-      "question": "An SLA typically defines:"
-    },
-    {
       "id": 565,
       "num": 163,
       "task": "books",
       "qViRatio": 66.7,
       "qViMeaningful": 2,
-      "badOpts": "",
+      "badOpts": "D",
       "questionVi": "Lệnh pIPelining aims:",
       "question": "Instruction pipelining aims to:"
     },
@@ -1915,9 +465,19 @@
       "task": "books",
       "qViRatio": 66.7,
       "qViMeaningful": 2,
-      "badOpts": "A",
+      "badOpts": "",
       "questionVi": "Semaphore dùng cho:",
       "question": "A semaphore is used for:"
+    },
+    {
+      "id": 595,
+      "num": 195,
+      "task": "books",
+      "qViRatio": 66.7,
+      "qViMeaningful": 2,
+      "badOpts": "C",
+      "questionVi": "COMMIT trong transaction:",
+      "question": "COMMIT in a transaction:"
     },
     {
       "id": 616,
@@ -1930,16 +490,6 @@
       "question": "Malware includes:"
     },
     {
-      "id": 627,
-      "num": 228,
-      "task": "books",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "DFS thường uses:",
-      "question": "DFS typically uses:"
-    },
-    {
       "id": 634,
       "num": 235,
       "task": "books",
@@ -1950,22 +500,12 @@
       "question": "A patent typically protects:"
     },
     {
-      "id": 649,
-      "num": 251,
-      "task": "books",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "A",
-      "questionVi": "Đề: SOA emphasizes:",
-      "question": "SOA emphasizes:"
-    },
-    {
       "id": 651,
       "num": 254,
       "task": "books",
       "qViRatio": 66.7,
       "qViMeaningful": 2,
-      "badOpts": "A",
+      "badOpts": "",
       "questionVi": "PaaS cung cấp:",
       "question": "PaaS provides:"
     },
@@ -1975,7 +515,7 @@
       "task": "books",
       "qViRatio": 66.7,
       "qViMeaningful": 2,
-      "badOpts": "B",
+      "badOpts": "",
       "questionVi": "Mã review aims:",
       "question": "A code review aims to:"
     },
@@ -1995,79 +535,9 @@
       "task": "books",
       "qViRatio": 66.7,
       "qViMeaningful": 2,
-      "badOpts": "A",
+      "badOpts": "",
       "questionVi": "Standard change thường:",
       "question": "A standard change is typically:"
-    },
-    {
-      "id": 718,
-      "num": 568,
-      "task": "albazzz",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "B",
-      "questionVi": "Đề: Waterfall model?",
-      "question": "Waterfall model?"
-    },
-    {
-      "id": 726,
-      "num": 683,
-      "task": "albazzz",
-      "qViRatio": 66.7,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: ARP resolves?",
-      "question": "ARP resolves?"
-    },
-    {
-      "id": 143,
-      "num": 76,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Xóa vs DROP?",
-      "question": "DELETE vs DROP?"
-    },
-    {
-      "id": 152,
-      "num": 85,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: JOIN does?",
-      "question": "JOIN does?"
-    },
-    {
-      "id": 190,
-      "num": 123,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: WPA is?",
-      "question": "WPA is?"
-    },
-    {
-      "id": 191,
-      "num": 124,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "A",
-      "questionVi": "Đề: WAF is?",
-      "question": "WAF is?"
-    },
-    {
-      "id": 194,
-      "num": 127,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "D",
-      "questionVi": "Đề: OP25B is?",
-      "question": "OP25B is?"
     },
     {
       "id": 211,
@@ -2080,124 +550,14 @@
       "question": "Insert X between B and C?"
     },
     {
-      "id": 246,
-      "num": 179,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: SLA is?",
-      "question": "SLA is?"
-    },
-    {
-      "id": 258,
-      "num": 191,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: WBS is?",
-      "question": "WBS is?"
-    },
-    {
-      "id": 267,
-      "num": 200,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: COBIT is?",
-      "question": "COBIT is?"
-    },
-    {
-      "id": 277,
-      "num": 210,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "C",
-      "questionVi": "Đề: Disclosure/IR?",
-      "question": "Disclosure/IR?"
-    },
-    {
-      "id": 278,
-      "num": 211,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: Green IT?",
-      "question": "Green IT?"
-    },
-    {
-      "id": 291,
-      "num": 224,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: Stakeholder is?",
-      "question": "Stakeholder is?"
-    },
-    {
-      "id": 351,
-      "num": 284,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: COMMIT does?",
-      "question": "COMMIT does?"
-    },
-    {
-      "id": 352,
-      "num": 285,
-      "task": "bank300",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: ROLLBACK does?",
-      "question": "ROLLBACK does?"
-    },
-    {
-      "id": 715,
-      "num": 564,
-      "task": "albazzz",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "D",
-      "questionVi": "Đề: SLA is?",
-      "question": "SLA is?"
-    },
-    {
-      "id": 723,
-      "num": 609,
-      "task": "albazzz",
-      "qViRatio": 66.7,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: Stakeholder is?",
-      "question": "Stakeholder is?"
-    },
-    {
-      "id": 36,
-      "num": 36,
-      "task": "test",
-      "qViRatio": 63.6,
-      "qViMeaningful": 7,
-      "badOpts": "",
-      "questionVi": "Cái nào SQL correctly trả về second-highest salary each department?",
-      "question": "Which SQL correctly returns the second-highest salary for each department?"
-    },
-    {
-      "id": 307,
-      "num": 240,
+      "id": 208,
+      "num": 141,
       "task": "bank300",
       "qViRatio": 62.5,
-      "qViMeaningful": 4,
+      "qViMeaningful": 5,
       "badOpts": "",
-      "questionVi": "Đề: Parallel two 0.9 modules approx R?",
-      "question": "Parallel two 0.9 modules approx R?"
+      "questionVi": "Stack PUSH3 PUSH7 POP PUSH5 PUSH9 POP — top?",
+      "question": "Stack: PUSH3 PUSH7 POP PUSH5 PUSH9 POP top?"
     },
     {
       "id": 65,
@@ -2210,16 +570,6 @@
       "question": "What is the purpose of human interface technology?"
     },
     {
-      "id": 70,
-      "num": 3,
-      "task": "bank300",
-      "qViRatio": 60,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Cái nào generation introduced VLSI?",
-      "question": "Which generation introduced VLSI?"
-    },
-    {
       "id": 71,
       "num": 4,
       "task": "bank300",
@@ -2228,26 +578,6 @@
       "badOpts": "",
       "questionVi": "First-generation logic thiết bị?",
       "question": "First-generation logic device?"
-    },
-    {
-      "id": 88,
-      "num": 21,
-      "task": "bank300",
-      "qViRatio": 60,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: RAID 1 main feature?",
-      "question": "RAID 1 main feature?"
-    },
-    {
-      "id": 89,
-      "num": 22,
-      "task": "bank300",
-      "qViRatio": 60,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đề: RAID 0 main feature?",
-      "question": "RAID 0 main feature?"
     },
     {
       "id": 104,
@@ -2270,24 +600,14 @@
       "question": "Purpose of human interface technology?"
     },
     {
-      "id": 184,
-      "num": 117,
-      "task": "bank300",
-      "qViRatio": 60,
-      "qViMeaningful": 3,
-      "badOpts": "B",
-      "questionVi": "Hybrid crypto practical phương thức?",
-      "question": "Hybrid crypto practical method?"
-    },
-    {
-      "id": 215,
-      "num": 148,
+      "id": 120,
+      "num": 53,
       "task": "bank300",
       "qViRatio": 60,
       "qViMeaningful": 3,
       "badOpts": "",
-      "questionVi": "BST cây con trái values?",
-      "question": "BST left subtree values?"
+      "questionVi": "Ghép object module thành executable?",
+      "question": "Combines object modules into executable?"
     },
     {
       "id": 221,
@@ -2300,14 +620,14 @@
       "question": "Linear search best comparisons?"
     },
     {
-      "id": 311,
-      "num": 244,
+      "id": 300,
+      "num": 233,
       "task": "bank300",
       "qViRatio": 60,
       "qViMeaningful": 3,
       "badOpts": "",
-      "questionVi": "Đề: 16-bit patterns count?",
-      "question": "16-bit patterns count?"
+      "questionVi": "IT service continuity liên quan?",
+      "question": "IT service continuity related to?"
     },
     {
       "id": 330,
@@ -2330,14 +650,14 @@
       "question": "Parity bit used for?"
     },
     {
-      "id": 434,
-      "num": 26,
-      "task": "fuexam",
+      "id": 485,
+      "num": 77,
+      "task": "books",
       "qViRatio": 60,
       "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Biểu thức infix (A−2×(B+C)−D×E)×F đổi sang prefix được gì?",
-      "question": "When the expression (A - 2 x (B + C) - D x E) x F in conventional infix notation is converted to the prefix expression, "
+      "badOpts": "BC",
+      "questionVi": "ACID proPERTies transactions bao gồm:",
+      "question": "ACID properties of transactions include:"
     },
     {
       "id": 495,
@@ -2350,24 +670,14 @@
       "question": "The main purpose of a penetration test is to:"
     },
     {
-      "id": 499,
-      "num": 91,
+      "id": 524,
+      "num": 117,
       "task": "books",
       "qViRatio": 60,
       "qViMeaningful": 3,
       "badOpts": "",
-      "questionVi": "Cái nào technique implements queue?",
-      "question": "Which technique implements a queue?"
-    },
-    {
-      "id": 500,
-      "num": 92,
-      "task": "books",
-      "qViRatio": 60,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Stack uses Cái nào discipline?",
-      "question": "A stack uses which discipline?"
+      "questionVi": "Unit testing tập trung vào:",
+      "question": "Unit testing focuses on:"
     },
     {
       "id": 536,
@@ -2375,29 +685,9 @@
       "task": "books",
       "qViRatio": 60,
       "qViMeaningful": 3,
-      "badOpts": "D",
+      "badOpts": "",
       "questionVi": "Service level quản lý about:",
       "question": "Service level management is about:"
-    },
-    {
-      "id": 568,
-      "num": 166,
-      "task": "books",
-      "qViRatio": 60,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "DRAM lưu bits mainly dùng:",
-      "question": "DRAM stores bits mainly using:"
-    },
-    {
-      "id": 617,
-      "num": 218,
-      "task": "books",
-      "qViRatio": 60,
-      "qViMeaningful": 3,
-      "badOpts": "A",
-      "questionVi": "SQL injection attacks nhắm tới:",
-      "question": "SQL injection attacks target:"
     },
     {
       "id": 622,
@@ -2430,24 +720,14 @@
       "question": "Unauthorized copying of licensed software is:"
     },
     {
-      "id": 115,
-      "num": 48,
-      "task": "bank300",
+      "id": 689,
+      "num": 296,
+      "task": "books",
       "qViRatio": 60,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Intermediary giữ apps và OS?",
-      "question": "Intermediary between apps and OS?"
-    },
-    {
-      "id": 153,
-      "num": 86,
-      "task": "bank300",
-      "qViRatio": 60,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Dữ liệu warehouse vs OLTP?",
-      "question": "Data warehouse vs OLTP?"
+      "qViMeaningful": 3,
+      "badOpts": "A",
+      "questionVi": "CMMI Level 1 (Initial) characterized:",
+      "question": "CMMI Level 1 (Initial) is characterized by:"
     },
     {
       "id": 505,
@@ -2458,26 +738,6 @@
       "badOpts": "A",
       "questionVi": "Big-O notation dùng để:",
       "question": "Big-O notation is used to:"
-    },
-    {
-      "id": 212,
-      "num": 145,
-      "task": "bank300",
-      "qViRatio": 60,
-      "qViMeaningful": 0,
-      "badOpts": "",
-      "questionVi": "Hậu tố A+B*C?",
-      "question": "Postfix of A+B*C?"
-    },
-    {
-      "id": 315,
-      "num": 248,
-      "task": "bank300",
-      "qViRatio": 60,
-      "qViMeaningful": 0,
-      "badOpts": "",
-      "questionVi": "Hậu tố A*B+C?",
-      "question": "Postfix of A*B+C?"
     },
     {
       "id": 21,
@@ -2500,6 +760,26 @@
       "question": "Access time of disk includes?"
     },
     {
+      "id": 91,
+      "num": 24,
+      "task": "bank300",
+      "qViRatio": 57.1,
+      "qViMeaningful": 4,
+      "badOpts": "",
+      "questionVi": "Thanh ghi PC (program counter) giữ gì?",
+      "question": "PC register holds?"
+    },
+    {
+      "id": 199,
+      "num": 132,
+      "task": "bank300",
+      "qViRatio": 57.1,
+      "qViMeaningful": 4,
+      "badOpts": "",
+      "questionVi": "Admin khi user quên MK (đã verify)?",
+      "question": "Admin action forgotten password after verify?"
+    },
+    {
       "id": 327,
       "num": 260,
       "task": "bank300",
@@ -2515,29 +795,9 @@
       "task": "books",
       "qViRatio": 57.1,
       "qViMeaningful": 4,
-      "badOpts": "C",
+      "badOpts": "",
       "questionVi": "Break- point analysis được dùng để find:",
       "question": "Break-even point analysis is used to find:"
-    },
-    {
-      "id": 532,
-      "num": 126,
-      "task": "books",
-      "qViRatio": 57.1,
-      "qViMeaningful": 4,
-      "badOpts": "C",
-      "questionVi": "WBS (Work Breakdown Structure) được dùng để:",
-      "question": "WBS (Work Breakdown Structure) is used to:"
-    },
-    {
-      "id": 654,
-      "num": 257,
-      "task": "books",
-      "qViRatio": 57.1,
-      "qViMeaningful": 4,
-      "badOpts": "A",
-      "questionVi": "RTO (Recovery thời gian mục tiêu) relates:",
-      "question": "An RTO (Recovery Time Objective) relates to:"
     },
     {
       "id": 668,
@@ -2550,16 +810,6 @@
       "question": "Project triple constraints classically include:"
     },
     {
-      "id": 321,
-      "num": 254,
-      "task": "bank300",
-      "qViRatio": 57.1,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Cái nào tầng HTTP belongs TCP/IP?",
-      "question": "Which layer HTTP belongs TCP/IP?"
-    },
-    {
       "id": 610,
       "num": 211,
       "task": "books",
@@ -2570,44 +820,24 @@
       "question": "Which protocol is connectionless at the network layer for best-effort packet delivery on the Internet?"
     },
     {
-      "id": 27,
-      "num": 27,
+      "id": 307,
+      "num": 240,
+      "task": "bank300",
+      "qViRatio": 55.6,
+      "qViMeaningful": 4,
+      "badOpts": "",
+      "questionVi": "Song song hai module 0.9 — R xấp xỉ?",
+      "question": "Parallel two 0.9 modules approx R?"
+    },
+    {
+      "id": 36,
+      "num": 36,
       "task": "test",
-      "qViRatio": 55.6,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "8-bit bù 2 value 11101010. What decimal value?",
-      "question": "An 8-bit two's complement value is 11101010. What is its decimal value?"
-    },
-    {
-      "id": 709,
-      "num": 316,
-      "task": "books",
-      "qViRatio": 55.6,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Cái nào hệ thống focuses customer interactions and relationshIPs?",
-      "question": "Which system focuses on customer interactions and relationships?"
-    },
-    {
-      "id": 409,
-      "num": 1,
-      "task": "fuexam",
       "qViRatio": 54.5,
-      "qViMeaningful": 7,
+      "qViMeaningful": 6,
       "badOpts": "",
-      "questionVi": "Check digit abcd = mod(a×4+b×3+c×2+d×1, 10). Với “7b42” check digit = 6, b bằng bao nhiêu?",
-      "question": "A check digit for a 4-digit number abcd can be calculated as follows: mod((a*4+b*3+c*2+d*1), 10). When the check digit f"
-    },
-    {
-      "id": 545,
-      "num": 141,
-      "task": "books",
-      "qViRatio": 54.5,
-      "qViMeaningful": 7,
-      "badOpts": "",
-      "questionVi": "Check digit abcd = mod(a×4+b×3+c×2+d×1, 10). Với “7b42” check digit = 6, b bằng bao nhiêu?",
-      "question": "A check digit for abcd is mod((a*4+b*3+c*2+d*1),10)=6 for 7b42. What is b?"
+      "questionVi": "Cái nào SQL correctly trả về second-highest salary each department?",
+      "question": "Which SQL correctly returns the second-highest salary for each department?"
     },
     {
       "id": 704,
@@ -2620,36 +850,6 @@
       "question": "Which analysis classifies inventory into A/B/C by importance/value?"
     },
     {
-      "id": 209,
-      "num": 142,
-      "task": "bank300",
-      "qViRatio": 53.8,
-      "qViMeaningful": 7,
-      "badOpts": "",
-      "questionVi": "Hàng đợi: ENQA ENQB DEQ ENQC ENQD DEQ — phần tử front là gì?",
-      "question": "Queue: ENQA ENQB DEQ ENQC ENQD DEQ front?"
-    },
-    {
-      "id": 463,
-      "num": 55,
-      "task": "books",
-      "qViRatio": 53.8,
-      "qViMeaningful": 7,
-      "badOpts": "",
-      "questionVi": "Đâu là vai trò của program counter (thanh ghi chương trình) trong CPU?",
-      "question": "Which of the following is a role of the program counter (program register) of the CPU?"
-    },
-    {
-      "id": 419,
-      "num": 11,
-      "task": "fuexam",
-      "qViRatio": 53.8,
-      "qViMeaningful": 5,
-      "badOpts": "ABC",
-      "questionVi": "Đâu là role chương trình thanh ghi (i.e., chương trình counter) CPU?",
-      "question": "Which of the following is a role of the program register (i.e., program counter) of the CPU?"
-    },
-    {
       "id": 425,
       "num": 17,
       "task": "fuexam",
@@ -2660,14 +860,14 @@
       "question": "Which of the following is a protocol for e-mail on the Internet that allows an e-mail client to access e-mail on a remot"
     },
     {
-      "id": 696,
-      "num": 303,
-      "task": "books",
+      "id": 434,
+      "num": 26,
+      "task": "fuexam",
       "qViRatio": 53.3,
-      "qViMeaningful": 5,
+      "qViMeaningful": 3,
       "badOpts": "",
-      "questionVi": "Cái nào estimate phương thức counts EI/EO/EQ/ILF/EIF style các chức năng?",
-      "question": "Which estimate method counts EI/EO/EQ/ILF/EIF style functions?"
+      "questionVi": "Biểu thức infix (A−2×(B+C)−D×E)×F đổi sang prefix được gì?",
+      "question": "When the expression (A - 2 x (B + C) - D x E) x F in conventional infix notation is converted to the prefix expression, "
     },
     {
       "id": 378,
@@ -2680,14 +880,24 @@
       "question": "A communication protocol transmits data in frames, supports continuous transfer and full-duplex communication, and inser"
     },
     {
-      "id": 16,
-      "num": 16,
-      "task": "test",
+      "id": 409,
+      "num": 1,
+      "task": "fuexam",
       "qViRatio": 50,
-      "qViMeaningful": 5,
+      "qViMeaningful": 7,
       "badOpts": "",
-      "questionVi": "Two modules have reliabilities 0.95 and 0.90 series hệ thống. What hệ thống reliability?",
-      "question": "Two modules have reliabilities 0.95 and 0.90 in a series system. What is the system reliability?"
+      "questionVi": "Check digit abcd = mod(a×4+b×3+c×2+d×1, 10). Với “7b42” check digit = 6, b bằng bao nhiêu?",
+      "question": "A check digit for a 4-digit number abcd can be calculated as follows: mod((a*4+b*3+c*2+d*1), 10). When the check digit f"
+    },
+    {
+      "id": 545,
+      "num": 141,
+      "task": "books",
+      "qViRatio": 50,
+      "qViMeaningful": 7,
+      "badOpts": "",
+      "questionVi": "Check digit abcd = mod(a×4+b×3+c×2+d×1, 10). Với “7b42” check digit = 6, b bằng bao nhiêu?",
+      "question": "A check digit for abcd is mod((a*4+b*3+c*2+d*1),10)=6 for 7b42. What is b?"
     },
     {
       "id": 408,
@@ -2695,69 +905,9 @@
       "task": "datajfe",
       "qViRatio": 50,
       "qViMeaningful": 5,
-      "badOpts": "",
+      "badOpts": "C",
       "questionVi": "Tiến trình ready/running/waiting. Điều gì khiến running → waiting?",
       "question": "A process is executed through a state transition among three states: a ready state, a running state, and a waiting state"
-    },
-    {
-      "id": 412,
-      "num": 4,
-      "task": "fuexam",
-      "qViRatio": 50,
-      "qViMeaningful": 5,
-      "badOpts": "ABCD",
-      "questionVi": "Đâu là mô tả về maturity level staged representation CMMI?",
-      "question": "Which of the following is an appropriate description concerning the maturity level in the staged representation of CMMI?"
-    },
-    {
-      "id": 492,
-      "num": 84,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 5,
-      "badOpts": "",
-      "questionVi": "Tầng OSI nào gắn với truyền tin cậy end-to-end (TCP)?",
-      "question": "Which OSI layer is primarily associated with end-to-end reliable transport (TCP)?"
-    },
-    {
-      "id": 7,
-      "num": 7,
-      "task": "test",
-      "qViRatio": 50,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Cái nào SQL command removes bảng definition and dữ liệu?",
-      "question": "Which SQL command removes a table definition and its data?"
-    },
-    {
-      "id": 125,
-      "num": 58,
-      "task": "bank300",
-      "qViRatio": 50,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "OS chức năng deciding CPU thời gian cho tiến trình?",
-      "question": "OS function deciding CPU time for process?"
-    },
-    {
-      "id": 459,
-      "num": 51,
-      "task": "fuexam",
-      "qViRatio": 50,
-      "qViMeaningful": 4,
-      "badOpts": "AC",
-      "questionVi": "Đâu là giải thích SFA (Sales Force Automation)?",
-      "question": "Which of the following is an explanation of SFA (Sales Force Automation)?"
-    },
-    {
-      "id": 461,
-      "num": 53,
-      "task": "fuexam",
-      "qViRatio": 50,
-      "qViMeaningful": 4,
-      "badOpts": "ACD",
-      "questionVi": "Cái nào sau đây achieved dùng SSL/TLS?",
-      "question": "Which of the following can be achieved by using SSL/TLS?"
     },
     {
       "id": 508,
@@ -2765,29 +915,9 @@
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 4,
-      "badOpts": "C",
+      "badOpts": "",
       "questionVi": "Personal dữ liệu bảo vệ laws mainly aim:",
       "question": "Personal data protection laws mainly aim to:"
-    },
-    {
-      "id": 563,
-      "num": 161,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "DMA (Direct bộ nhớ truy cập) cho phép:",
-      "question": "DMA (Direct Memory Access) allows:"
-    },
-    {
-      "id": 702,
-      "num": 309,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 4,
-      "badOpts": "B",
-      "questionVi": "Cái nào giao thức suite tầng model has 7 layers?",
-      "question": "Which protocol suite layer model has 7 layers?"
     },
     {
       "id": 4,
@@ -2800,16 +930,6 @@
       "question": "How many bits are contained in one byte?"
     },
     {
-      "id": 141,
-      "num": 74,
-      "task": "bank300",
-      "qViRatio": 50,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "OS multi-user concurrent các tệp chức năng?",
-      "question": "OS multi-user concurrent files function?"
-    },
-    {
       "id": 185,
       "num": 118,
       "task": "bank300",
@@ -2820,24 +940,64 @@
       "question": "Public key crypto speed vs symmetric?"
     },
     {
-      "id": 328,
-      "num": 261,
+      "id": 316,
+      "num": 249,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 3,
       "badOpts": "",
-      "questionVi": "UPS hỗ trợ which bảo mật aspect mainly?",
-      "question": "UPS supports which security aspect mainly?"
+      "questionVi": "Stack rỗng PUSH1 PUSH2 POP — top?",
+      "question": "Stack empty PUSH1 PUSH2 POP result top?"
     },
     {
-      "id": 460,
-      "num": 52,
-      "task": "fuexam",
+      "id": 466,
+      "num": 58,
+      "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 3,
-      "badOpts": "B",
-      "questionVi": "Cái gì là HDLC protocol stands?",
-      "question": "What is HDLC protocol stands for?"
+      "badOpts": "",
+      "questionVi": "Cái gì MTBF stand reliability discussions?",
+      "question": "What does MTBF stand for in reliability discussions?"
+    },
+    {
+      "id": 504,
+      "num": 96,
+      "task": "books",
+      "qViRatio": 50,
+      "qViMeaningful": 3,
+      "badOpts": "",
+      "questionVi": "Cái nào fundamental set OOP concepts?",
+      "question": "Which is a fundamental set of OOP concepts?"
+    },
+    {
+      "id": 521,
+      "num": 114,
+      "task": "books",
+      "qViRatio": 50,
+      "qViMeaningful": 3,
+      "badOpts": "",
+      "questionVi": "Use case diagram UML dùng để:",
+      "question": "A use case diagram in UML is used to:"
+    },
+    {
+      "id": 537,
+      "num": 132,
+      "task": "books",
+      "qViRatio": 50,
+      "qViMeaningful": 3,
+      "badOpts": "",
+      "questionVi": "ITIL-style incident quản lý aims:",
+      "question": "ITIL-style incident management aims to:"
+    },
+    {
+      "id": 544,
+      "num": 140,
+      "task": "books",
+      "qViRatio": 50,
+      "qViMeaningful": 3,
+      "badOpts": "A",
+      "questionVi": "Câu hỏi: CMMI maturity levels describe:",
+      "question": "CMMI maturity levels describe:"
     },
     {
       "id": 581,
@@ -2850,64 +1010,54 @@
       "question": "Real-time systems are characterized by:"
     },
     {
-      "id": 600,
-      "num": 200,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 3,
-      "badOpts": "A",
-      "questionVi": "OSI model, vật lý tầng deals:",
-      "question": "In the OSI model, the physical layer deals with:"
-    },
-    {
-      "id": 603,
-      "num": 203,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Switch LAN thường forwards dự trên:",
-      "question": "A switch in a LAN typically forwards based on:"
-    },
-    {
       "id": 624,
       "num": 225,
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 3,
-      "badOpts": "B",
+      "badOpts": "",
       "questionVi": "Bảng băm cung cấp average-case:",
       "question": "A hash table provides average-case:"
     },
     {
-      "id": 644,
-      "num": 246,
+      "id": 643,
+      "num": 245,
+      "task": "books",
+      "qViRatio": 50,
+      "qViMeaningful": 3,
+      "badOpts": "A",
+      "questionVi": "SCM (Supply Chain quản lý) focuses:",
+      "question": "SCM (Supply Chain Management) focuses on:"
+    },
+    {
+      "id": 653,
+      "num": 256,
+      "task": "books",
+      "qViRatio": 50,
+      "qViMeaningful": 3,
+      "badOpts": "C",
+      "questionVi": "RPO (Recovery Point mục tiêu) relates:",
+      "question": "An RPO (Recovery Point Objective) relates to:"
+    },
+    {
+      "id": 675,
+      "num": 281,
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 3,
       "badOpts": "",
-      "questionVi": "PDCA chu kỳ viết tắt cho:",
-      "question": "PDCA cycle stands for:"
+      "questionVi": "Lessons learned được ghi nhận để:",
+      "question": "Lessons learned are captured to:"
     },
     {
-      "id": 74,
-      "num": 7,
+      "id": 75,
+      "num": 8,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Main bộ nhớ thường which type?",
-      "question": "Main memory is typically which type?"
-    },
-    {
-      "id": 82,
-      "num": 15,
-      "task": "bank300",
-      "qViRatio": 50,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "CPU = Cái nào units?",
-      "question": "CPU = which units?"
+      "questionVi": "Cache usually implemented với?",
+      "question": "Cache is usually implemented with?"
     },
     {
       "id": 83,
@@ -2915,19 +1065,29 @@
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 2,
-      "badOpts": "A",
+      "badOpts": "",
       "questionVi": "Cái nào peripheral device?",
       "question": "Which is a peripheral device?"
     },
     {
-      "id": 94,
-      "num": 27,
+      "id": 92,
+      "num": 25,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "1 KB traditional binary bộ nhớ?",
-      "question": "1 KB in traditional binary memory?"
+      "questionVi": "Các loại hazard pipeline?",
+      "question": "Pipeline hazard types?"
+    },
+    {
+      "id": 95,
+      "num": 28,
+      "task": "bank300",
+      "qViRatio": 50,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Lượng thông tin với n bit?",
+      "question": "Information amount with n bits?"
     },
     {
       "id": 109,
@@ -2970,14 +1130,14 @@
       "question": "Hot standby means?"
     },
     {
-      "id": 137,
-      "num": 70,
+      "id": 171,
+      "num": 104,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Tổ chức tệp fastest unique ID?",
-      "question": "File organization fastest by unique ID?"
+      "questionVi": "Vai trò của modem?",
+      "question": "Modem role?"
     },
     {
       "id": 188,
@@ -3010,34 +1170,84 @@
       "question": "Non-repudiation means?"
     },
     {
-      "id": 239,
-      "num": 172,
+      "id": 217,
+      "num": 150,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "PERT đường găng float?",
-      "question": "PERT critical path float?"
+      "questionVi": "Ý tưởng bubble sort?",
+      "question": "Bubble sort idea?"
     },
     {
-      "id": 249,
-      "num": 182,
+      "id": 240,
+      "num": 173,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Đề: ISO 20000 about?",
-      "question": "ISO 20000 about?"
+      "questionVi": "Chiến lược competitive leader?",
+      "question": "Competitive leader strategy?"
     },
     {
-      "id": 259,
-      "num": 192,
+      "id": 248,
+      "num": 181,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Dự án constraints QCD?",
-      "question": "Project constraints QCD?"
+      "questionVi": "Service desk là gì?",
+      "question": "Service desk is?"
+    },
+    {
+      "id": 253,
+      "num": 186,
+      "task": "bank300",
+      "qViRatio": 50,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Kiểm thử black-box?",
+      "question": "Black-box testing?"
+    },
+    {
+      "id": 254,
+      "num": 187,
+      "task": "bank300",
+      "qViRatio": 50,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Kiểm thử white-box?",
+      "question": "White-box testing?"
+    },
+    {
+      "id": 255,
+      "num": 188,
+      "task": "bank300",
+      "qViRatio": 50,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "High cohesion tốt vì?",
+      "question": "High cohesion good?"
+    },
+    {
+      "id": 256,
+      "num": 189,
+      "task": "bank300",
+      "qViRatio": 50,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Low coupling tốt vì?",
+      "question": "Low coupling good?"
+    },
+    {
+      "id": 257,
+      "num": 190,
+      "task": "bank300",
+      "qViRatio": 50,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Configuration baseline là gì?",
+      "question": "Configuration baseline?"
     },
     {
       "id": 264,
@@ -3050,24 +1260,34 @@
       "question": "Internal control SoD?"
     },
     {
-      "id": 313,
-      "num": 246,
+      "id": 276,
+      "num": 209,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Đề: Hex 10 decimal?",
-      "question": "Hex 10 decimal?"
+      "questionVi": "Nguyên tắc going concern?",
+      "question": "Going concern?"
     },
     {
-      "id": 314,
-      "num": 247,
+      "id": 279,
+      "num": 212,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Đề: Binary 1010 decimal?",
-      "question": "Binary 1010 decimal?"
+      "questionVi": "MBO (Management by Objectives)?",
+      "question": "MBO?"
+    },
+    {
+      "id": 325,
+      "num": 258,
+      "task": "bank300",
+      "qViRatio": 50,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Giao thức nhận mail?",
+      "question": "Mail receive protocols?"
     },
     {
       "id": 335,
@@ -3080,54 +1300,14 @@
       "question": "Symmetric algorithm example?"
     },
     {
-      "id": 337,
-      "num": 270,
+      "id": 346,
+      "num": 279,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Hash ví dụ family?",
-      "question": "Hash example family?"
-    },
-    {
-      "id": 347,
-      "num": 280,
-      "task": "bank300",
-      "qViRatio": 50,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Đề: 3-tier layers?",
-      "question": "3-tier layers?"
-    },
-    {
-      "id": 362,
-      "num": 295,
-      "task": "bank300",
-      "qViRatio": 50,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "CRC được dùng cho?",
-      "question": "CRC used for?"
-    },
-    {
-      "id": 489,
-      "num": 81,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 2,
-      "badOpts": "A",
-      "questionVi": "TCP tốt nhất characterized:",
-      "question": "TCP is best characterized as:"
-    },
-    {
-      "id": 491,
-      "num": 83,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "HDLC viết tắt cho:",
-      "question": "HDLC stands for:"
+      "questionVi": "Mô hình client–server?",
+      "question": "Client-server model?"
     },
     {
       "id": 509,
@@ -3135,7 +1315,7 @@
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 2,
-      "badOpts": "ABD",
+      "badOpts": "AD",
       "questionVi": "Compliance corporate nghĩ là:",
       "question": "Compliance in corporate IT means:"
     },
@@ -3160,16 +1340,6 @@
       "question": "System testing focuses on:"
     },
     {
-      "id": 529,
-      "num": 123,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 2,
-      "badOpts": "B",
-      "questionVi": "đường găng PERT/CPM:",
-      "question": "On the critical path in PERT/CPM:"
-    },
-    {
       "id": 539,
       "num": 134,
       "task": "books",
@@ -3185,29 +1355,9 @@
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 2,
-      "badOpts": "A",
+      "badOpts": "",
       "questionVi": "Internal kiểm soát aims:",
       "question": "Internal control aims to:"
-    },
-    {
-      "id": 551,
-      "num": 147,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 2,
-      "badOpts": "C",
-      "questionVi": "MIME được dùng email:",
-      "question": "MIME is used in email to:"
-    },
-    {
-      "id": 569,
-      "num": 167,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Bus máy tính architecture:",
-      "question": "A bus in computer architecture is:"
     },
     {
       "id": 574,
@@ -3225,29 +1375,9 @@
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 2,
-      "badOpts": "C",
+      "badOpts": "",
       "questionVi": "Context switch nghĩ là:",
       "question": "A context switch means:"
-    },
-    {
-      "id": 582,
-      "num": 181,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "Xử lý theo lô suitable when:",
-      "question": "Batch processing is suitable when:"
-    },
-    {
-      "id": 586,
-      "num": 186,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "API viết tắt cho:",
-      "question": "API stands for:"
     },
     {
       "id": 593,
@@ -3258,16 +1388,6 @@
       "badOpts": "A",
       "questionVi": "Index được dùng mainly:",
       "question": "An index is used mainly to:"
-    },
-    {
-      "id": 599,
-      "num": 199,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "ETL viết tắt cho:",
-      "question": "ETL stands for:"
     },
     {
       "id": 602,
@@ -3290,6 +1410,16 @@
       "question": "Binary search requires:"
     },
     {
+      "id": 626,
+      "num": 227,
+      "task": "books",
+      "qViRatio": 50,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "BFS graph uses thường:",
+      "question": "BFS on a graph uses typically:"
+    },
+    {
       "id": 633,
       "num": 234,
       "task": "books",
@@ -3310,24 +1440,14 @@
       "question": "Privacy by design means:"
     },
     {
-      "id": 639,
-      "num": 241,
+      "id": 658,
+      "num": 263,
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "KPI viết tắt cho:",
-      "question": "KPI stands for:"
-    },
-    {
-      "id": 662,
-      "num": 267,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 2,
-      "badOpts": "AC",
-      "questionVi": "CI (liên tục Integration) practices thường:",
-      "question": "CI (Continuous Integration) practices typically:"
+      "questionVi": "Integration testing kiểm chứng:",
+      "question": "Integration testing verifies:"
     },
     {
       "id": 663,
@@ -3335,7 +1455,7 @@
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 2,
-      "badOpts": "A",
+      "badOpts": "",
       "questionVi": "Technical debt ám chỉ:",
       "question": "Technical debt refers to:"
     },
@@ -3345,7 +1465,7 @@
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 2,
-      "badOpts": "C",
+      "badOpts": "",
       "questionVi": "Slack (float) hoạt động:",
       "question": "Slack (float) of an activity is:"
     },
@@ -3365,7 +1485,7 @@
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 2,
-      "badOpts": "B",
+      "badOpts": "",
       "questionVi": "Capacity quản lý aims:",
       "question": "Capacity management aims to:"
     },
@@ -3375,9 +1495,39 @@
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 2,
-      "badOpts": "ABD",
+      "badOpts": "BD",
       "questionVi": "Segregation duties ví dụ:",
       "question": "Segregation of duties example:"
+    },
+    {
+      "id": 717,
+      "num": 566,
+      "task": "albazzz",
+      "qViRatio": 50,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Service desk là gì?",
+      "question": "Service desk is?"
+    },
+    {
+      "id": 719,
+      "num": 571,
+      "task": "albazzz",
+      "qViRatio": 50,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Kiểm thử black-box?",
+      "question": "Black-box testing?"
+    },
+    {
+      "id": 720,
+      "num": 572,
+      "task": "albazzz",
+      "qViRatio": 50,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Kiểm thử white-box?",
+      "question": "White-box testing?"
     },
     {
       "id": 119,
@@ -3390,124 +1540,44 @@
       "question": "Assembler does what?"
     },
     {
-      "id": 135,
-      "num": 68,
-      "task": "bank300",
-      "qViRatio": 50,
-      "qViMeaningful": 1,
-      "badOpts": "C",
-      "questionVi": "Đề: Thrashing?",
-      "question": "Thrashing?"
-    },
-    {
-      "id": 149,
-      "num": 82,
+      "id": 277,
+      "num": 210,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 1,
       "badOpts": "",
-      "questionVi": "ACID D nghĩ là?",
-      "question": "ACID D means?"
+      "questionVi": "Disclosure / IR?",
+      "question": "Disclosure/IR?"
     },
     {
-      "id": 166,
-      "num": 99,
+      "id": 278,
+      "num": 211,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 1,
       "badOpts": "",
-      "questionVi": "CSMA/CD được dùng?",
-      "question": "CSMA/CD used in?"
+      "questionVi": "Green IT?",
+      "question": "Green IT?"
     },
     {
-      "id": 167,
-      "num": 100,
+      "id": 295,
+      "num": 228,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 1,
       "badOpts": "",
-      "questionVi": "CSMA/CA được dùng?",
-      "question": "CSMA/CA used in?"
+      "questionVi": "Crashing lịch?",
+      "question": "Crashing a schedule?"
     },
     {
-      "id": 235,
-      "num": 168,
+      "id": 312,
+      "num": 245,
       "task": "bank300",
       "qViRatio": 50,
       "qViMeaningful": 1,
       "badOpts": "",
-      "questionVi": "Đề: Assets = ?",
-      "question": "Assets = ?"
-    },
-    {
-      "id": 260,
-      "num": 193,
-      "task": "bank300",
-      "qViRatio": 50,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: SPI = ?",
-      "question": "SPI = ?"
-    },
-    {
-      "id": 261,
-      "num": 194,
-      "task": "bank300",
-      "qViRatio": 50,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: CPI = ?",
-      "question": "CPI = ?"
-    },
-    {
-      "id": 272,
-      "num": 205,
-      "task": "bank300",
-      "qViRatio": 50,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: Benchmarking?",
-      "question": "Benchmarking?"
-    },
-    {
-      "id": 279,
-      "num": 212,
-      "task": "bank300",
-      "qViRatio": 50,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: MBO?",
-      "question": "MBO?"
-    },
-    {
-      "id": 298,
-      "num": 231,
-      "task": "bank300",
-      "qViRatio": 50,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Đề: CMDB?",
-      "question": "CMDB?"
-    },
-    {
-      "id": 367,
-      "num": 300,
-      "task": "bank300",
-      "qViRatio": 50,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "Private IP ví dụ?",
-      "question": "Private IP example?"
-    },
-    {
-      "id": 552,
-      "num": 148,
-      "task": "books",
-      "qViRatio": 50,
-      "qViMeaningful": 1,
-      "badOpts": "",
-      "questionVi": "POP3 thường:",
-      "question": "POP3 typically:"
+      "questionVi": "Hex F thập phân?",
+      "question": "Hex F decimal?"
     },
     {
       "id": 585,
@@ -3525,119 +1595,79 @@
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 1,
-      "badOpts": "B",
+      "badOpts": "",
       "questionVi": "Candidate khóa:",
       "question": "A candidate key is:"
     },
     {
-      "id": 681,
-      "num": 288,
+      "id": 669,
+      "num": 274,
       "task": "books",
       "qViRatio": 50,
       "qViMeaningful": 1,
-      "badOpts": "C",
-      "questionVi": "CMDB lưu:",
-      "question": "A CMDB stores:"
+      "badOpts": "B",
+      "questionVi": "Milestone là:",
+      "question": "A milestone is:"
     },
     {
-      "id": 713,
-      "num": 453,
-      "task": "albazzz",
-      "qViRatio": 50,
-      "qViMeaningful": 1,
-      "badOpts": "AD",
-      "questionVi": "Đề: Thrashing?",
-      "question": "Thrashing?"
-    },
-    {
-      "id": 722,
-      "num": 590,
+      "id": 724,
+      "num": 613,
       "task": "albazzz",
       "qViRatio": 50,
       "qViMeaningful": 1,
       "badOpts": "",
-      "questionVi": "Đề: Benchmarking?",
-      "question": "Benchmarking?"
+      "questionVi": "Crashing lịch?",
+      "question": "Crashing a schedule?"
     },
     {
-      "id": 725,
-      "num": 616,
-      "task": "albazzz",
+      "id": 350,
+      "num": 283,
+      "task": "bank300",
       "qViRatio": 50,
-      "qViMeaningful": 1,
-      "badOpts": "C",
-      "questionVi": "Đề: CMDB?",
-      "question": "CMDB?"
+      "qViMeaningful": 0,
+      "badOpts": "",
+      "questionVi": "Bản số M:N?",
+      "question": "Relationship cardinality M:N?"
     },
     {
-      "id": 548,
-      "num": 144,
+      "id": 632,
+      "num": 233,
       "task": "books",
-      "qViRatio": 47.1,
+      "qViRatio": 50,
+      "qViMeaningful": 0,
+      "badOpts": "",
+      "questionVi": "Đồ thị G=(V,E) gồm:",
+      "question": "A graph G=(V,E) consists of:"
+    },
+    {
+      "id": 463,
+      "num": 55,
+      "task": "books",
+      "qViRatio": 46.2,
       "qViMeaningful": 6,
       "badOpts": "",
-      "questionVi": "100 SV: Anh40 Pháp30 Tây25; giao EF8 ES6 FS5; không học 22. Bao nhiêu học cả ba?",
-      "question": "100 students: E40 F30 S25; EF8 ES6 FS5; none 22. How many study all three?"
+      "questionVi": "Đâu là vai trò của program counter (thanh ghi chương trình) trong CPU?",
+      "question": "Which of the following is a role of the program counter (program register) of the CPU?"
     },
     {
-      "id": 405,
-      "num": 38,
-      "task": "datajfe",
-      "qViRatio": 45.5,
-      "qViMeaningful": 5,
-      "badOpts": "AD",
-      "questionVi": "Vai trò phù hợp của FCS trong khung HDLC là gì?",
-      "question": "Which of the following is an appropriate role of FCS in a frame that is transmitted through the HDLC procedure?"
-    },
-    {
-      "id": 464,
-      "num": 56,
-      "task": "books",
-      "qViRatio": 45.5,
-      "qViMeaningful": 5,
-      "badOpts": "A",
-      "questionVi": "Cái nào bộ nhớ type thường fastest cho CPU truy cập?",
-      "question": "Which memory type is typically the fastest for the CPU to access?"
-    },
-    {
-      "id": 218,
-      "num": 151,
-      "task": "bank300",
-      "qViRatio": 45.5,
+      "id": 419,
+      "num": 11,
+      "task": "fuexam",
+      "qViRatio": 46.2,
       "qViMeaningful": 4,
       "badOpts": "",
-      "questionVi": "Đề: Selection sort first pass on 84 73 28 16 51?",
-      "question": "Selection sort first pass on 84 73 28 16 51?"
+      "questionVi": "Đâu là role chương trình thanh ghi (i.e., chương trình counter) CPU?",
+      "question": "Which of the following is a role of the program register (i.e., program counter) of the CPU?"
     },
     {
-      "id": 399,
-      "num": 32,
-      "task": "datajfe",
-      "qViRatio": 45.5,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Theo ISO/IEC 27001, which tốt nhất defines độ sẵn sàng?",
-      "question": "According to ISO/IEC 27001, which best defines availability?"
-    },
-    {
-      "id": 474,
-      "num": 66,
-      "task": "books",
-      "qViRatio": 44.4,
-      "qViMeaningful": 7,
-      "badOpts": "",
-      "questionVi": "Hai thiết bị song song chỉ hỏng khi cả hai hỏng. So với nối tiếp, song song thường:",
-      "question": "A system with two devices in parallel fails only if both fail. Compared with series connection, parallel generally:"
-    },
-    {
-      "id": 10,
-      "num": 10,
+      "id": 27,
+      "num": 27,
       "task": "test",
       "qViRatio": 44.4,
       "qViMeaningful": 4,
       "badOpts": "",
-      "questionVi": "Cái nào generation các máy tính introduced VLSI technology?",
-      "question": "Which generation of computers introduced VLSI technology?"
+      "questionVi": "8-bit bù 2 value 11101010. What decimal value?",
+      "question": "An 8-bit two's complement value is 11101010. What is its decimal value?"
     },
     {
       "id": 49,
@@ -3650,54 +1680,34 @@
       "question": "What is the value of hexadecimal number A in decimal notation?"
     },
     {
-      "id": 317,
-      "num": 250,
-      "task": "bank300",
-      "qViRatio": 44.4,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Hàng đợi rỗng: ENQ1 ENQ2 DEQ — front là gì?",
-      "question": "Queue empty ENQ1 ENQ2 DEQ front?"
-    },
-    {
       "id": 414,
       "num": 6,
       "task": "fuexam",
       "qViRatio": 44.4,
       "qViMeaningful": 4,
-      "badOpts": "BCDE",
+      "badOpts": "",
       "questionVi": "Cái nào sau đây phát biểu INCORRECT cloud computing?",
       "question": "Which of following statement is INCORRECT of cloud computing?"
     },
     {
-      "id": 437,
-      "num": 29,
-      "task": "fuexam",
-      "qViRatio": 44.4,
-      "qViMeaningful": 4,
-      "badOpts": "ABCD",
-      "questionVi": "Đâu là mô tả về use case diagram UML?",
-      "question": "Which of the following is an appropriate description concerning a use case diagram in UML?"
-    },
-    {
-      "id": 514,
-      "num": 107,
+      "id": 709,
+      "num": 316,
       "task": "books",
       "qViRatio": 44.4,
       "qViMeaningful": 4,
       "badOpts": "",
-      "questionVi": "SFA (Sales Force Automation) mô tả đúng nhất là:",
-      "question": "SFA (Sales Force Automation) is best described as:"
+      "questionVi": "Cái nào hệ thống focuses customer interactions and relationshIPs?",
+      "question": "Which system focuses on customer interactions and relationships?"
     },
     {
-      "id": 199,
-      "num": 132,
+      "id": 213,
+      "num": 146,
       "task": "bank300",
-      "qViRatio": 43.8,
-      "qViMeaningful": 7,
+      "qViRatio": 44.4,
+      "qViMeaningful": 0,
       "badOpts": "",
-      "questionVi": "Admin nên làm gì khi user quên mật khẩu (sau khi đã xác minh danh tính)?",
-      "question": "Admin action forgotten password after verify?"
+      "questionVi": "RPN (hậu tố) của (A+B)*(C-D/E)?",
+      "question": "RPN of (A+B)*(C-D/E)?"
     },
     {
       "id": 453,
@@ -3710,26 +1720,6 @@
       "question": "There is an 8-bit register where integers are represented in binary by using 2's complement for negative numbers. When t"
     },
     {
-      "id": 60,
-      "num": 60,
-      "task": "test",
-      "qViRatio": 43.8,
-      "qViMeaningful": 6,
-      "badOpts": "",
-      "questionVi": "Theo ISO/IEC 27001, định nghĩa availability (sẵn sàng) trong an toàn thông tin là gì?",
-      "question": "According to ISO/IEC 27001 (JIS Q 27001), which of the following is the definition of availability in information securi"
-    },
-    {
-      "id": 59,
-      "num": 59,
-      "task": "test",
-      "qViRatio": 43.5,
-      "qViMeaningful": 9,
-      "badOpts": "",
-      "questionVi": "File CSDL 1 triệu bản ghi, tra thường theo customer ID duy nhất. Cách tổ chức file nào tra cứu hiệu quả nhất?",
-      "question": "A database file contains one million records. Users frequently retrieve records using a unique customer ID. Which file o"
-    },
-    {
       "id": 487,
       "num": 79,
       "task": "books",
@@ -3740,26 +1730,6 @@
       "question": "Which protocol allows a mail client to access messages on a server while typically leaving mail on the server?"
     },
     {
-      "id": 428,
-      "num": 20,
-      "task": "fuexam",
-      "qViRatio": 42.9,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Theo BNF, field ID bắt đầu bằng chữ. Đâu là field ID hợp lệ?",
-      "question": "The syntax rules of the field identifier \"field ID\" are represented in BNF notation as shown below. When each ID is defi"
-    },
-    {
-      "id": 45,
-      "num": 45,
-      "task": "test",
-      "qViRatio": 42.9,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Đâu là mô tả role reverse proxy?",
-      "question": "Which of the following is an appropriate description of the role of a reverse proxy?"
-    },
-    {
       "id": 99,
       "num": 32,
       "task": "bank300",
@@ -3768,6 +1738,46 @@
       "badOpts": "",
       "questionVi": "Payroll once month tốt nhất hệ thống?",
       "question": "Payroll once a month best system?"
+    },
+    {
+      "id": 150,
+      "num": 83,
+      "task": "bank300",
+      "qViRatio": 42.9,
+      "qViMeaningful": 3,
+      "badOpts": "",
+      "questionVi": "Phép Selection trong quan hệ làm gì?",
+      "question": "Selection relational op?"
+    },
+    {
+      "id": 151,
+      "num": 84,
+      "task": "bank300",
+      "qViRatio": 42.9,
+      "qViMeaningful": 3,
+      "badOpts": "",
+      "questionVi": "Phép Projection trong quan hệ làm gì?",
+      "question": "Projection relational op?"
+    },
+    {
+      "id": 156,
+      "num": 89,
+      "task": "bank300",
+      "qViRatio": 42.9,
+      "qViMeaningful": 3,
+      "badOpts": "",
+      "questionVi": "Tầng OSI tin cậy end-to-end?",
+      "question": "OSI layer for end-to-end reliability?"
+    },
+    {
+      "id": 317,
+      "num": 250,
+      "task": "bank300",
+      "qViRatio": 42.9,
+      "qViMeaningful": 3,
+      "badOpts": "",
+      "questionVi": "Hàng đợi rỗng ENQ1 ENQ2 DEQ — front?",
+      "question": "Queue empty ENQ1 ENQ2 DEQ front?"
     },
     {
       "id": 320,
@@ -3795,7 +1805,7 @@
       "task": "fuexam",
       "qViRatio": 42.9,
       "qViMeaningful": 3,
-      "badOpts": "ACD",
+      "badOpts": "",
       "questionVi": "Đâu là main mục đích penetration test?",
       "question": "Which of the following is the main purpose of a penetration test?"
     },
@@ -3805,7 +1815,7 @@
       "task": "fuexam",
       "qViRatio": 42.9,
       "qViMeaningful": 3,
-      "badOpts": "ABC",
+      "badOpts": "",
       "questionVi": "Đâu là main tác vụ service desk?",
       "question": "Which of the following is the main task of a service desk?"
     },
@@ -3820,6 +1830,16 @@
       "question": "Which activity belongs to external design?"
     },
     {
+      "id": 532,
+      "num": 126,
+      "task": "books",
+      "qViRatio": 42.9,
+      "qViMeaningful": 3,
+      "badOpts": "C",
+      "questionVi": "WBS (Work Breakdown Structure) được dùng để:",
+      "question": "WBS (Work Breakdown Structure) is used to:"
+    },
+    {
       "id": 535,
       "num": 129,
       "task": "books",
@@ -3828,6 +1848,16 @@
       "badOpts": "",
       "questionVi": "Phù hợp quality-related chỉ số development:",
       "question": "An appropriate quality-related indicator in development is:"
+    },
+    {
+      "id": 654,
+      "num": 257,
+      "task": "books",
+      "qViRatio": 42.9,
+      "qViMeaningful": 3,
+      "badOpts": "",
+      "questionVi": "RTO (Recovery thời gian mục tiêu) relates:",
+      "question": "An RTO (Recovery Time Objective) relates to:"
     },
     {
       "id": 706,
@@ -3860,64 +1890,34 @@
       "question": "Time complexity O(n²) means:"
     },
     {
-      "id": 8,
-      "num": 8,
-      "task": "test",
-      "qViRatio": 42.1,
+      "id": 80,
+      "num": 13,
+      "task": "bank300",
+      "qViRatio": 42.9,
+      "qViMeaningful": 1,
+      "badOpts": "",
+      "questionVi": "Phạm vi số bù 2 n-bit?",
+      "question": "Range of n-bit 2's complement?"
+    },
+    {
+      "id": 548,
+      "num": 144,
+      "task": "books",
+      "qViRatio": 41.2,
       "qViMeaningful": 6,
       "badOpts": "",
-      "questionVi": "Cái nào OS quản lý chức năng chủ yếu responsible cho deciding which tiến trình receives CPU thời gian?",
-      "question": "Which OS management function is primarily responsible for deciding which process receives CPU time?"
+      "questionVi": "100 SV: Anh40 Pháp30 Tây25; giao EF8 ES6 FS5; không học 22. Bao nhiêu học cả ba?",
+      "question": "100 students: E40 F30 S25; EF8 ES6 FS5; none 22. How many study all three?"
     },
     {
-      "id": 23,
-      "num": 23,
+      "id": 41,
+      "num": 41,
       "task": "test",
-      "qViRatio": 41.7,
-      "qViMeaningful": 5,
-      "badOpts": "",
-      "questionVi": "Trong Plan của PDCA áp dụng cho ISMS, thực hiện việc gì?",
-      "question": "Which of the following is performed in the Plan phase of a PDCA model that is applied to any ISMS process?"
-    },
-    {
-      "id": 465,
-      "num": 57,
-      "task": "books",
-      "qViRatio": 41.7,
-      "qViMeaningful": 5,
-      "badOpts": "",
-      "questionVi": "RAID với parity, Cái nào operation thường dùng reconstruct lost dữ liệu?",
-      "question": "In RAID with parity, which operation is commonly used to reconstruct lost data?"
-    },
-    {
-      "id": 441,
-      "num": 33,
-      "task": "fuexam",
-      "qViRatio": 41.7,
-      "qViMeaningful": 4,
-      "badOpts": "CD",
-      "questionVi": "Đâu là phù hợp item checked when ordered phần mềm được giao?",
-      "question": "Which of the following is the appropriate item to be checked when the ordered software is delivered?"
-    },
-    {
-      "id": 407,
-      "num": 40,
-      "task": "datajfe",
-      "qViRatio": 41.7,
-      "qViMeaningful": 3,
-      "badOpts": "",
-      "questionVi": "Cái nào sau đây assigned máy tính đị chỉ IP class C?",
-      "question": "Which of the following can be assigned to a computer as the IP address of class C?"
-    },
-    {
-      "id": 456,
-      "num": 48,
-      "task": "fuexam",
       "qViRatio": 40,
       "qViMeaningful": 6,
       "badOpts": "",
-      "questionVi": "4 job CPU + in theo điều kiện đề. Mất bao nhiêu phút từ job đầu đến hết in job cuối?",
-      "question": "When CPU processing and printing are performed for four jobs under the conditions below, how many minutes does it take t"
+      "questionVi": "Cái nào type processing system suitable hệ đặt vé máy bay cần phản hồi ngay?",
+      "question": "Which type of processing system is suitable for airline reservation systems requiring immediate responses?"
     },
     {
       "id": 98,
@@ -3940,16 +1940,6 @@
       "question": "Full binary tree 31 nodes min height (edges)?"
     },
     {
-      "id": 316,
-      "num": 249,
-      "task": "bank300",
-      "qViRatio": 40,
-      "qViMeaningful": 4,
-      "badOpts": "",
-      "questionVi": "Stack rỗng: PUSH1 PUSH2 POP — đỉnh còn lại là gì?",
-      "question": "Stack empty PUSH1 PUSH2 POP result top?"
-    },
-    {
       "id": 379,
       "num": 12,
       "task": "datajfe",
@@ -3960,6 +1950,56 @@
       "question": "Which of the following is a purpose of use of a message digest in message authentication?"
     },
     {
+      "id": 412,
+      "num": 4,
+      "task": "fuexam",
+      "qViRatio": 40,
+      "qViMeaningful": 4,
+      "badOpts": "",
+      "questionVi": "Đâu là mô tả về maturity level staged representation CMMI?",
+      "question": "Which of the following is an appropriate description concerning the maturity level in the staged representation of CMMI?"
+    },
+    {
+      "id": 702,
+      "num": 309,
+      "task": "books",
+      "qViRatio": 40,
+      "qViMeaningful": 4,
+      "badOpts": "B",
+      "questionVi": "Cái nào giao thức suite tầng model has 7 layers?",
+      "question": "Which protocol suite layer model has 7 layers?"
+    },
+    {
+      "id": 70,
+      "num": 3,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Cái nào generation introduced VLSI?",
+      "question": "Which generation introduced VLSI?"
+    },
+    {
+      "id": 106,
+      "num": 39,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Cái gì là response time?",
+      "question": "What is response time?"
+    },
+    {
+      "id": 115,
+      "num": 48,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Intermediary giữ apps và OS?",
+      "question": "Intermediary between apps and OS?"
+    },
+    {
       "id": 126,
       "num": 59,
       "task": "bank300",
@@ -3968,6 +2008,26 @@
       "badOpts": "",
       "questionVi": "Tiến trình đang chờ cho disk I/O trạng thái?",
       "question": "Process waiting for disk I/O state?"
+    },
+    {
+      "id": 130,
+      "num": 63,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Số điều kiện Coffman (deadlock)?",
+      "question": "Coffman conditions count?"
+    },
+    {
+      "id": 133,
+      "num": 66,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Microkernel khác monolithic thế nào?",
+      "question": "Microkernel vs monolithic?"
     },
     {
       "id": 134,
@@ -4000,14 +2060,54 @@
       "question": "Transfer time formula?"
     },
     {
-      "id": 177,
-      "num": 110,
+      "id": 172,
+      "num": 105,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "B",
+      "questionVi": "Switch khác hub thế nào?",
+      "question": "Switch vs hub?"
+    },
+    {
+      "id": 174,
+      "num": 107,
       "task": "bank300",
       "qViRatio": 40,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "CIA độ sẵn sàng definition?",
-      "question": "CIA Availability definition?"
+      "questionVi": "IPv4 có bao nhiêu bit?",
+      "question": "IPv4 bits?"
+    },
+    {
+      "id": 175,
+      "num": 108,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "IPv6 có bao nhiêu bit?",
+      "question": "IPv6 bits?"
+    },
+    {
+      "id": 180,
+      "num": 113,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Pha Plan của ISMS gồm?",
+      "question": "ISMS Plan phase includes?"
+    },
+    {
+      "id": 184,
+      "num": 117,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Hybrid crypto practical phương thức?",
+      "question": "Hybrid crypto practical method?"
     },
     {
       "id": 186,
@@ -4030,44 +2130,124 @@
       "question": "Phishing is related to?"
     },
     {
-      "id": 510,
-      "num": 102,
-      "task": "books",
+      "id": 215,
+      "num": 148,
+      "task": "bank300",
       "qViRatio": 40,
       "qViMeaningful": 2,
-      "badOpts": "AC",
-      "questionVi": "Phân tích SWOT xem xét:",
-      "question": "A SWOT analysis examines:"
+      "badOpts": "",
+      "questionVi": "BST cây con trái values?",
+      "question": "BST left subtree values?"
     },
     {
-      "id": 515,
-      "num": 108,
-      "task": "books",
+      "id": 223,
+      "num": 156,
+      "task": "bank300",
       "qViRatio": 40,
       "qViMeaningful": 2,
-      "badOpts": "AD",
-      "questionVi": "CRM các hệ thống focus:",
-      "question": "CRM systems focus on:"
+      "badOpts": "",
+      "questionVi": "Độ phức tạp binary search?",
+      "question": "Binary search complexity?"
     },
     {
-      "id": 538,
-      "num": 133,
-      "task": "books",
+      "id": 225,
+      "num": 158,
+      "task": "bank300",
       "qViRatio": 40,
       "qViMeaningful": 2,
-      "badOpts": "B",
-      "questionVi": "Problem ITSM thường nghĩ là:",
-      "question": "A problem in ITSM typically means:"
+      "badOpts": "",
+      "questionVi": "Ưu điểm chèn linked list?",
+      "question": "Linked list insert advantage?"
     },
     {
-      "id": 580,
-      "num": 178,
+      "id": 230,
+      "num": 163,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Độ phức tạp merge sort?",
+      "question": "Merge sort complexity?"
+    },
+    {
+      "id": 247,
+      "num": 180,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Incident khác Problem thế nào?",
+      "question": "Incident vs Problem?"
+    },
+    {
+      "id": 252,
+      "num": 185,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Unit test kiểm thử gì?",
+      "question": "Unit test tests?"
+    },
+    {
+      "id": 311,
+      "num": 244,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Số mẫu bit 16-bit?",
+      "question": "16-bit patterns count?"
+    },
+    {
+      "id": 323,
+      "num": 256,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Giao thức web an toàn?",
+      "question": "Protocol for secure web?"
+    },
+    {
+      "id": 499,
+      "num": 91,
       "task": "books",
       "qViRatio": 40,
       "qViMeaningful": 2,
       "badOpts": "",
-      "questionVi": "Paging bộ nhớ ảo maps:",
-      "question": "Paging in virtual memory maps:"
+      "questionVi": "Cái nào technique implements queue?",
+      "question": "Which technique implements a queue?"
+    },
+    {
+      "id": 500,
+      "num": 92,
+      "task": "books",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Stack uses Cái nào discipline?",
+      "question": "A stack uses which discipline?"
+    },
+    {
+      "id": 543,
+      "num": 139,
+      "task": "books",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "Audit trail hữu ích vì:",
+      "question": "An audit trail is useful because it:"
+    },
+    {
+      "id": 568,
+      "num": 166,
+      "task": "books",
+      "qViRatio": 40,
+      "qViMeaningful": 2,
+      "badOpts": "",
+      "questionVi": "DRAM lưu bits mainly dùng:",
+      "question": "DRAM stores bits mainly using:"
     },
     {
       "id": 588,
@@ -4090,14 +2270,14 @@
       "question": "Virtualization primarily allows:"
     },
     {
-      "id": 607,
-      "num": 208,
+      "id": 617,
+      "num": 218,
       "task": "books",
       "qViRatio": 40,
       "qViMeaningful": 2,
-      "badOpts": "",
-      "questionVi": "HTTP status 200 nghĩ là:",
-      "question": "HTTP status 200 means:"
+      "badOpts": "A",
+      "questionVi": "SQL injection attacks nhắm tới:",
+      "question": "SQL injection attacks target:"
     },
     {
       "id": 650,
@@ -4120,54 +2300,74 @@
       "question": "A kickoff meeting is typically used to:"
     },
     {
-      "id": 677,
-      "num": 284,
-      "task": "books",
+      "id": 716,
+      "num": 565,
+      "task": "albazzz",
       "qViRatio": 40,
       "qViMeaningful": 2,
-      "badOpts": "C",
-      "questionVi": "CAB change quản lý thường:",
-      "question": "A CAB in change management is often:"
+      "badOpts": "",
+      "questionVi": "Incident khác Problem thế nào?",
+      "question": "Incident vs Problem?"
     },
     {
-      "id": 116,
-      "num": 49,
+      "id": 153,
+      "num": 86,
       "task": "bank300",
       "qViRatio": 40,
       "qViMeaningful": 1,
       "badOpts": "",
-      "questionVi": "Trình biên dịch translates how?",
-      "question": "Compiler translates how?"
+      "questionVi": "Dữ liệu warehouse vs OLTP?",
+      "question": "Data warehouse vs OLTP?"
     },
     {
-      "id": 397,
-      "num": 30,
-      "task": "datajfe",
-      "qViRatio": 38.9,
-      "qViMeaningful": 7,
-      "badOpts": "ACD",
-      "questionVi": "Cập nhật CSDL phân tán nhiều site; không để site này commit site kia rollback. Kỹ thuật nào?",
-      "question": "A distributed database update affects several database sites. The system must ensure that the update does not leave some"
+      "id": 251,
+      "num": 184,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 1,
+      "badOpts": "",
+      "questionVi": "V-model liên kết gì?",
+      "question": "V-model links?"
     },
     {
-      "id": 458,
-      "num": 50,
-      "task": "fuexam",
-      "qViRatio": 36.4,
-      "qViMeaningful": 4,
-      "badOpts": "ABCD",
-      "questionVi": "Công thức nào SAI khi tính điểm hòa vốn (break-even)?",
-      "question": "Which of the following is INCORRECT formular to determine break-event point?"
+      "id": 212,
+      "num": 145,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 0,
+      "badOpts": "",
+      "questionVi": "Hậu tố A+B*C?",
+      "question": "Postfix of A+B*C?"
     },
     {
-      "id": 711,
-      "num": 318,
-      "task": "books",
-      "qViRatio": 35.7,
-      "qViMeaningful": 4,
-      "badOpts": "BC",
-      "questionVi": "Cái nào mã hó approach uses same khó cho mã hó and giải mã?",
-      "question": "Which encryption approach uses the same key for encryption and decryption?"
+      "id": 315,
+      "num": 248,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 0,
+      "badOpts": "",
+      "questionVi": "Hậu tố A*B+C?",
+      "question": "Postfix of A*B+C?"
+    },
+    {
+      "id": 349,
+      "num": 282,
+      "task": "bank300",
+      "qViRatio": 40,
+      "qViMeaningful": 0,
+      "badOpts": "",
+      "questionVi": "Thực thể E-R vẽ?",
+      "question": "E-R entity drawn as?"
+    },
+    {
+      "id": 59,
+      "num": 59,
+      "task": "test",
+      "qViRatio": 34.8,
+      "qViMeaningful": 8,
+      "badOpts": "",
+      "questionVi": "File CSDL 1 triệu bản ghi, tra thường theo customer ID duy nhất. Cách tổ chức file nào tra cứu hiệu quả nhất?",
+      "question": "A database file contains one million records. Users frequently retrieve records using a unique customer ID. Which file o"
     },
     {
       "id": 498,
@@ -4180,154 +2380,24 @@
       "question": "Which is an appropriate security practice for passwords?"
     },
     {
-      "id": 657,
-      "num": 261,
+      "id": 662,
+      "num": 267,
       "task": "books",
       "qViRatio": 33.3,
-      "qViMeaningful": 1,
-      "badOpts": "BC",
-      "questionVi": "Prototype dùng để:",
-      "question": "A prototype is used to:"
-    },
-    {
-      "id": 484,
-      "num": 76,
-      "task": "books",
-      "qViRatio": 33.3,
-      "qViMeaningful": 0,
-      "badOpts": "AB",
-      "questionVi": "Khó chính must:",
-      "question": "A primary key must:"
-    },
-    {
-      "id": 393,
-      "num": 26,
-      "task": "datajfe",
-      "qViRatio": 30.4,
-      "qViMeaningful": 5,
-      "badOpts": "ACD",
-      "questionVi": "Hệ TPS mô tả M/M/1 nhưng thực tế phục vụ theo lớp ưu tiên, không pure FCFS. Điều gì thay đổi?",
-      "question": "A transaction processing system is described as an M/M/1 queue. During observation, analysts discover that requests are "
-    },
-    {
-      "id": 511,
-      "num": 103,
-      "task": "books",
-      "qViRatio": 30,
-      "qViMeaningful": 3,
-      "badOpts": "BD",
-      "questionVi": "Phân tích ABC tồn kho ưu tiên mặt hàng theo:",
-      "question": "ABC analysis for inventory prioritizes items by:"
-    },
-    {
-      "id": 388,
-      "num": 21,
-      "task": "datajfe",
-      "qViRatio": 28.6,
-      "qViMeaningful": 4,
-      "badOpts": "BCD",
-      "questionVi": "Hai transaction khóa chéo bản ghi của nhau, không tiến được. Tình huống nào?",
-      "question": "Two transactions update different records and then each requests a lock on the record already locked by the other transa"
-    },
-    {
-      "id": 598,
-      "num": 198,
-      "task": "books",
-      "qViRatio": 28.6,
       "qViMeaningful": 2,
       "badOpts": "AC",
-      "questionVi": "Dữ liệu warehouse thường được dùng cho:",
-      "question": "A data warehouse is typically used for:"
+      "questionVi": "CI (liên tục Integration) practices thường:",
+      "question": "CI (Continuous Integration) practices typically:"
     },
     {
-      "id": 433,
-      "num": 25,
+      "id": 458,
+      "num": 50,
       "task": "fuexam",
       "qViRatio": 27.3,
       "qViMeaningful": 3,
       "badOpts": "ABCD",
-      "questionVi": "Đâu là phù hợp flow thực thi SQL các câu lệnh?",
-      "question": "Which of the following is the appropriate flow of execution of SQL statements?"
-    },
-    {
-      "id": 389,
-      "num": 22,
-      "task": "datajfe",
-      "qViRatio": 26.7,
-      "qViMeaningful": 4,
-      "badOpts": "ABCD",
-      "questionVi": "Chia băng thông đường analog thành nhiều kênh; chừa guard band. Ghép kênh kiểu nào?",
-      "question": "A transmission scheme divides the bandwidth of an analog line into several independent channels. Some capacity is intent"
-    },
-    {
-      "id": 406,
-      "num": 39,
-      "task": "datajfe",
-      "qViRatio": 25,
-      "qViMeaningful": 5,
-      "badOpts": "CD",
-      "questionVi": "Mã bằng một secret key; sau đó công bố key cho đối tác. Tính chất bảo mật nào bị mất?",
-      "question": "A company encrypts confidential files using the same secret key for both encryption and decryption. It later publishes t"
-    },
-    {
-      "id": 431,
-      "num": 23,
-      "task": "fuexam",
-      "qViRatio": 25,
-      "qViMeaningful": 2,
-      "badOpts": "AB",
-      "questionVi": "Tổ hợp 4 mực/toner in màu đầy đủ (CMYK) nào đúng?",
-      "question": "Which of the following is the appropriate combination of 4 color inks or toners for a full-color printer?"
-    },
-    {
-      "id": 436,
-      "num": 28,
-      "task": "fuexam",
-      "qViRatio": 21.4,
-      "qViMeaningful": 1,
-      "badOpts": "ABCD",
-      "questionVi": "Mô tả phù hợp khi so sánh chống giả thẻ IC và thẻ từ?",
-      "question": "Which of the following is an appropriate description in comparison of how to safeguard IC cards and magnetic cards again"
-    },
-    {
-      "id": 371,
-      "num": 4,
-      "task": "datajfe",
-      "qViRatio": 20,
-      "qViMeaningful": 3,
-      "badOpts": "ABD",
-      "questionVi": "PM rút ngắn hoạt động không nằm trên critical path nhưng ngày hoàn thành dự án không đổi. Vì sao?",
-      "question": "A project manager shortens an activity that is not currently on the critical path. After the change, the project complet"
-    },
-    {
-      "id": 442,
-      "num": 34,
-      "task": "fuexam",
-      "qViRatio": 20,
-      "qViMeaningful": 2,
-      "badOpts": "BCD",
-      "questionVi": "Cái nào sau đây helps cải thiện độ sẵn sàng?",
-      "question": "Which of the following helps improve availability?"
-    },
-    {
-      "id": 481,
-      "num": 73,
-      "task": "books",
-      "qViRatio": 20,
-      "qViMeaningful": 2,
-      "badOpts": "ABCD",
-      "questionVi": "Đâu là phù hợp flow SQL phát biểu xử lý?",
-      "question": "Which of the following is the appropriate flow of SQL statement processing?"
-    },
-    {
-      "id": 513,
-      "num": 105,
-      "task": "books",
-      "qViRatio": 20,
-      "qViMeaningful": 2,
-      "badOpts": "AB",
-      "questionVi": "Dạng công thức nào liên quan điểm hòa vốn (contribution)?",
-      "question": "Which formula form is related to break-even (contribution approach)?"
+      "questionVi": "Công thức nào SAI khi tính điểm hòa vốn (break-even)?",
+      "question": "Which of the following is INCORRECT formular to determine break-event point?"
     },
     {
       "id": 497,
@@ -4340,6 +2410,26 @@
       "question": "A firewall is mainly used to:"
     },
     {
+      "id": 515,
+      "num": 108,
+      "task": "books",
+      "qViRatio": 20,
+      "qViMeaningful": 1,
+      "badOpts": "AD",
+      "questionVi": "CRM các hệ thống focus:",
+      "question": "CRM systems focus on:"
+    },
+    {
+      "id": 528,
+      "num": 122,
+      "task": "books",
+      "qViRatio": 20,
+      "qViMeaningful": 1,
+      "badOpts": "BCD",
+      "questionVi": "Phát triển Agile nhấn mạnh:",
+      "question": "Agile development emphasizes:"
+    },
+    {
       "id": 392,
       "num": 25,
       "task": "datajfe",
@@ -4350,42 +2440,12 @@
       "question": "A queue is modeled as M/M/1, but analysts discover that service times are fixed and identical for every arrival rather t"
     },
     {
-      "id": 451,
-      "num": 43,
-      "task": "fuexam",
-      "qViRatio": 16.7,
-      "qViMeaningful": 2,
-      "badOpts": "AC",
-      "questionVi": "Đâu là nhất phù hợp mô tả về exclusive kiểm soát DBMS?",
-      "question": "Which of the following is the most appropriate description concerning the exclusive control of a DBMS?"
-    },
-    {
-      "id": 559,
-      "num": 157,
-      "task": "books",
-      "qViRatio": 16.7,
-      "qViMeaningful": 1,
-      "badOpts": "AB",
-      "questionVi": "Cache bộ nhớ được dùng để:",
-      "question": "Cache memory is used to:"
-    },
-    {
-      "id": 614,
-      "num": 215,
-      "task": "books",
-      "qViRatio": 16.7,
-      "qViMeaningful": 1,
-      "badOpts": "AB",
-      "questionVi": "Hash chức năng thường được dùng:",
-      "question": "A hash function is typically used to:"
-    },
-    {
       "id": 402,
       "num": 35,
       "task": "datajfe",
       "qViRatio": 15.8,
       "qViMeaningful": 3,
-      "badOpts": "BCD",
+      "badOpts": "CD",
       "questionVi": "Tính ngược: nhiều hoạt động tỏa từ một nút. Nguyên tắc xác định latest finish của nút trước chung?",
       "question": "During a backward calculation, several activities diverge from the same node toward different later nodes. Which princip"
     },
@@ -4400,64 +2460,54 @@
       "question": "There is a standard that can represent data in a hierarchical structure by enclosing data that corresponds to nesting wi"
     },
     {
-      "id": 444,
-      "num": 36,
-      "task": "fuexam",
-      "qViRatio": 14.3,
-      "qViMeaningful": 2,
-      "badOpts": "ABCD",
-      "questionVi": "Biểu đồ kiểm soát: các đường san phẳng. Tình huống cho thấy điều gì?",
-      "question": "View the picture and choose right answer. As shown in the figure below, all the lines show signs of leveling off in the "
-    },
-    {
-      "id": 410,
-      "num": 2,
-      "task": "fuexam",
-      "qViRatio": 14.3,
-      "qViMeaningful": 1,
-      "badOpts": "CD",
-      "questionVi": "Đâu là giải thích spooling chức năng?",
-      "question": "Which of the following is an appropriate explanation of the spooling function?"
-    },
-    {
-      "id": 429,
-      "num": 21,
-      "task": "fuexam",
-      "qViRatio": 12.5,
-      "qViMeaningful": 2,
-      "badOpts": "BCD",
-      "questionVi": "GUI có danh sách ứng viên để chọn. Trường hợp nào nên dùng cách nhập này?",
-      "question": "A GUI screen contains a candidate list from which a user can select an item. Which of the following is an appropriate ca"
-    },
-    {
-      "id": 386,
-      "num": 19,
-      "task": "datajfe",
-      "qViRatio": 10.5,
-      "qViMeaningful": 2,
-      "badOpts": "AB",
-      "questionVi": "Chỉ dựa firewall rồi bị lộ tài liệu vứt thùng rác. Nguyên tắc bảo mật nào bị bỏ qua?",
-      "question": "A security team deploys a firewall and assumes that all forms of information theft are now prevented. An attacker later "
-    },
-    {
-      "id": 423,
-      "num": 15,
-      "task": "fuexam",
+      "id": 481,
+      "num": 73,
+      "task": "books",
       "qViRatio": 10,
       "qViMeaningful": 1,
-      "badOpts": "BC",
-      "questionVi": "Tổ hợp khái niệm OOP cơ bản nào phù hợp?",
-      "question": "Which of the following is an appropriate combination of the fundamental object-oriented programming concepts?"
+      "badOpts": "ACD",
+      "questionVi": "Đâu là phù hợp flow SQL phát biểu xử lý?",
+      "question": "Which of the following is the appropriate flow of SQL statement processing?"
     },
     {
-      "id": 480,
-      "num": 72,
+      "id": 431,
+      "num": 23,
+      "task": "fuexam",
+      "qViRatio": 8.3,
+      "qViMeaningful": 1,
+      "badOpts": "AB",
+      "questionVi": "Tổ hợp 4 mực/toner in màu đầy đủ (CMYK) nào đúng?",
+      "question": "Which of the following is the appropriate combination of 4 color inks or toners for a full-color printer?"
+    },
+    {
+      "id": 604,
+      "num": 204,
       "task": "books",
       "qViRatio": 0,
       "qViMeaningful": 0,
-      "badOpts": "AB",
-      "questionVi": "Trình biên dịch thường:",
-      "question": "A compiler typically:"
+      "badOpts": "AC",
+      "questionVi": "UDP đặc trưng là:",
+      "question": "UDP is characterized as:"
+    },
+    {
+      "id": 686,
+      "num": 293,
+      "task": "books",
+      "qViRatio": 0,
+      "qViMeaningful": 0,
+      "badOpts": "BC",
+      "questionVi": "Kiểm soát phòng ngừa nhằm:",
+      "question": "Preventive controls aim to:"
+    },
+    {
+      "id": 713,
+      "num": 453,
+      "task": "albazzz",
+      "qViRatio": 0,
+      "qViMeaningful": 0,
+      "badOpts": "AD",
+      "questionVi": "Thrashing là gì?",
+      "question": "Thrashing?"
     }
   ]
 }

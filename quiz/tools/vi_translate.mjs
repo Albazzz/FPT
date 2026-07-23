@@ -10,6 +10,7 @@ import {
   enMeaningfulCount,
 } from "./fe_sentence_translate.mjs";
 import { matchFeQExact } from "./fe_q_exact.mjs";
+import { FE_OPT_EXACT_BANK } from "./fe_opt_exact_bank.mjs";
 
 export function hasVi(s) {
   return /[àáạảãâăèéêìíòóôơùúưỳýđÀÁẠẢÃÂĂÈÉÊÌÍÒÓÔƠÙÚƯỲÝĐ\u1EA0-\u1EF9]/i.test(
@@ -1185,6 +1186,33 @@ export function translateQuestion(q) {
 export function translateOptDeep(opt) {
   const raw = String(opt || "").trim();
   if (!raw) return raw;
+  // Option exact bank (exact, strip punct, or long shared prefix for OCR-truncated stems)
+  const low = raw.toLowerCase();
+  const strip = raw.replace(/[.?!]+$/, "").trim().toLowerCase();
+  let bestOpt = null;
+  let bestLen = 0;
+  for (const [en, vi] of FE_OPT_EXACT_BANK) {
+    const el = en.toLowerCase();
+    const es = en.replace(/[.?!]+$/, "").trim().toLowerCase();
+    if ((low === el || strip === es) && en.length >= bestLen) {
+      bestOpt = vi;
+      bestLen = en.length;
+      continue;
+    }
+    // Shared prefix ≥ min(90, 70% of shorter) for long options
+    if (raw.length >= 50 && en.length >= 50) {
+      let shared = 0;
+      const lim = Math.min(low.length, el.length);
+      while (shared < lim && low[shared] === el[shared]) shared++;
+      const need = Math.max(90, Math.floor(Math.min(raw.length, en.length) * 0.7));
+      if (shared >= need && en.length >= bestLen) {
+        bestOpt = vi;
+        bestLen = en.length;
+      }
+    }
+  }
+  if (bestOpt) return bestOpt;
+
   // Exact phrase book first
   const full0 = translateFeSentence(raw);
   if (full0 && !isHalfEnglish(full0) && hasVi(full0)) return full0;

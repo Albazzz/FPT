@@ -24,6 +24,14 @@ const OPT_MEANINGFUL = 6;
 function hasVi(s) {
   return /[àáạảãâăèéêìíòóôơùúưỳýđ\u1EA0-\u1EF9]/i.test(s || "");
 }
+
+/** Intentional EN tech tokens — do not count as leftover half-translation */
+const TECH_KEEP = new Set(
+  "tcp udp ip dns http https ftp smtp pop imap arp dhcp lan wan wlan vpn dma cpu gpu ram rom ssd hdd os api sql xml json etl raid atm qos sla crm erp scm osi iso cmmi html css mime pop3 ascii unicode utf bst fifo lifo nlr lrn lnr mtbf mttr csrf xss oop wpa waf ssl tls nat icmp ppp hdlc fdm tdm wdm cdma bcd rpn bcp drp wbs spi cpi pmo cobit itil sml sso jvm bytecode servlet applet proxy hybrid token bus star ring mesh buffer cache kernel thrashing paging hashing stack queue join view commit rollback hash crc fcs mac vlan mpls vpn nat oss pki rsa aes des md5 sha url uri gui cli rom bios uefi ipv4 ipv6 aws ec2 soa raci cmmi cmm nist cis pdf png jpg gif utf8 utf16 ascii ebcdic scada iot ml ai nlp".split(
+    " "
+  )
+);
+
 function enDensity(s) {
   const all = String(s || "").match(/[\p{L}\p{N}]+/gu) || [];
   if (!all.length) return { en: 0, total: 0, ratio: 0, meaningful: 0 };
@@ -33,11 +41,27 @@ function enDensity(s) {
       " "
     )
   );
-  const meaningful = en.filter((w) => !STOP.has(w.toLowerCase()) && w.length >= 3);
+  const meaningful = en.filter((w) => {
+    const low = w.toLowerCase().replace(/[^a-z0-9]/g, "");
+    if (!low || low.length < 3) return false;
+    if (STOP.has(low)) return false;
+    if (TECH_KEEP.has(low)) return false;
+    if (/^o\(/i.test(w) || /^csma/i.test(w)) return false;
+    if (/^[A-Z]{2,6}$/.test(w) && w.length <= 6) return false; // short acronyms
+    return true;
+  });
+  // ratio also ignores pure tech tokens for fairer half-EN score
+  const enContent = en.filter((w) => {
+    const low = w.toLowerCase().replace(/[^a-z0-9]/g, "");
+    if (STOP.has(low)) return false;
+    if (TECH_KEEP.has(low)) return false;
+    if (/^[A-Z]{2,6}$/.test(w) && w.length <= 6) return false;
+    return true;
+  });
   return {
-    en: en.length,
+    en: enContent.length,
     total: all.length,
-    ratio: en.length / all.length,
+    ratio: all.length ? enContent.length / all.length : 0,
     meaningful: meaningful.length,
   };
 }
