@@ -17,12 +17,14 @@ Xuất: `quiz/reports/EXPLAIN_AUDIT.md` · `EXPLAIN_AUDIT.json` · `EXPLAIN_AUDI
 | `questionVi` | Dịch đề | Có | Đủ nghĩa; giữ token kỹ thuật/JP quan trọng |
 | `optionsVi` | Dịch từng option | Có | 1–1 với A/B/C…; token giữ nguyên khi là API/tên riêng |
 | `answerDisplay` | Đáp án đúng | Có | `A. …` hoặc multi `A · C` |
-| `concept` | **Đây là gì?** | Có | Bản chất khái niệm đề hỏi (1–2 bullet), **không** nhãn quá rộng |
-| `whyCorrect` | **Vì sao đúng?** | Có | Cơ chế + điều kiện dùng + khác biệt gần |
-| `whyWrong[L]` | Từng option sai | Có (mọi chữ sai) | 3 dòng: Là gì? / Dùng|Vai trò? / Vì sao sai? |
-| `whatIs[L]` | (nội bộ) | Nên có | Định nghĩa từng option (đúng + sai) |
+| `concept` | **Đây là gì?** | Thường có* | **Khái niệm kỹ thuật** đề hỏi — **không** copy/dịch lại nguyên câu đáp án |
+| `whyCorrect` | **Vì sao đúng?** | Thường có* | Liên hệ khái niệm ↔ đề; **không** lặp nguyên văn đáp án |
+| `whyWrong[L]` | Từng option sai | Thường có* | 3 dòng: Là gì? / Dùng|Vai trò? / Vì sao sai? — **đúng đối tượng option** |
+| `whatIs[L]` | (nội bộ) | Nên có | Định nghĩa option; **≠** chỉ echo text đáp án |
 | `intent` | (nội bộ/gợi ý) | Tuỳ | Lớp hỏi / mục tiêu phân biệt |
 | `memoryTip` | **Mẹo nhớ** | Khuyến nghị | 1–2 câu: cặp đối chiếu, thứ tự, kanji |
+
+\*Ngoại lệ **fact thuần (mục 6.1)**: có thể **chỉ** `answerDisplay` (+ `memoryTip` tuỳ chọn).
 
 ### Khung 3 dòng `whyWrong` theo môn
 
@@ -36,7 +38,9 @@ Xuất: `quiz/reports/EXPLAIN_AUDIT.md` · `EXPLAIN_AUDIT.json` · `EXPLAIN_AUDI
 
 `thuộc miền Flutter…` · `Phương án «…»` · `Chỉ chọn nếu khớp async/UI…` ·  
 `không khớp trọng tâm đề bằng đáp án đúng (…)` · stub `Câu hỏi tiếng Nhật…` ·  
-1 câu whyWrong dán cho cả B/C/D · concept “layout nói chung” cho Expanded.
+1 câu whyWrong dán cho cả B/C/D · concept “layout nói chung” cho Expanded ·  
+**`concept`/`whyCorrect` chỉ echo đáp án** · **whyWrong template giống hệt mọi option** ·  
+**«Cơ chế Flutter/Dart liên quan «…»»** · **«Phạm trù/khái niệm «Anh» trong KTCT…»** cho fact.
 
 ### Rubric /10
 
@@ -598,10 +602,13 @@ Hai nhóm lỗi **không** hết nếu chỉ chỉnh wording prompt — phải s
 ### Checklist trước khi ship giải thích
 
 ```
-[ ] concept khớp TOKEN chủ đề stem (Generics ≠ Dart; ROI ≠ packet; セキュリティ ≠ digital)
+[ ] Đã xác định đề hỏi kiến thức gì (mục 6.0) — không chỉ echo đáp án
+[ ] concept = khái niệm (6.0b), không «To…/Return…» copy nguyên đáp án
+[ ] whyCorrect liên hệ khái niệm; ≠ lặp whatIs/đáp án (6.5)
+[ ] whyWrong đúng đối tượng từng option (6.4); CLI = dùng để làm gì (6.2)
+[ ] Fact who/when/where: tối giản (6.1); composite: từng thành phần (6.3)
+[ ] Mọi block có giá trị học (6.6) — không chỉ dịch/đồng nghĩa đáp án
 [ ] optionsVi: phrase domain đúng (Return on Investment ≠ Trả về)
-[ ] whyCorrect trả lời đúng lớp hỏi (định nghĩa / thứ tự / biểu hiện…)
-[ ] whyWrong từng option: contrast miền, không template «khác phạm trù / không khớp đáp án»
 [ ] JIT: không spam (english) giữa câu; ネットワーク ≠ network model trừ DB
 ```
 
@@ -617,129 +624,169 @@ Hai nhóm lỗi **không** hết nếu chỉ chỉnh wording prompt — phải s
 
 ---
 
-## 6. Hai kiểu hỏi: tối giản vs giải thích theo miền (bắt buộc)
+## 6. Feedback tổng hợp — tăng giá trị học, giảm lặp (bắt buộc)
 
-### 6.1 Sự thật lịch sử / fact đơn (không “vì sao” giả tạo)
+> Rút kinh nghiệm review: **đúng trọng tâm đề**, **concept = khái niệm** (không echo đáp án), **whyWrong = đúng đối tượng option**, fact tối giản, CLI/thành phần có cấu trúc.
 
-**Áp dụng khi đề chỉ yêu cầu nhớ một trong các loại sau:**
+### 6.0 Trước khi viết — đúng trọng tâm câu hỏi
 
-- người (ai / tác giả / nhà phát minh)  
-- năm / giai đoạn thời gian (mốc đã chốt)  
-- địa điểm / quốc gia / tổ chức  
-- tên gọi / “còn được gọi là”  
-- thuật ngữ xuất hiện lần đầu  
-
-**Không áp dụng** (giữ `concept` / `whyCorrect` / `whyWrong` đầy đủ) nếu hỏi:
-
-- bản chất · nguyên nhân · đặc điểm · vai trò · ý nghĩa  
-- cơ chế · quá trình · phân biệt phạm trù · “chọn phương án sai” lý thuyết  
-- quan điểm / chủ trương / chiến lược (vd. chiến lược KT–XH giai đoạn nào **kèm** nội dung quan điểm — không gỡ hết)
-
-**Ví dụ fact (gỡ bloat):** *CMCN lần 1 khởi phát từ nước nào?* → A. Anh  
-
-**Ví dụ không xếp fact thuần:** *Phương thức sản xuất TBCN được thiết lập qua các giai đoạn nào?* (quá trình) · *Quan điểm “kinh tế tự chủ…” trong chiến lược…?* (chủ trương + mốc — ưu tiên giữ 1 dòng why).
-
-**UI fact thuần chỉ cần:**
-
-| Field | Quy tắc |
-|-------|---------|
-| `answerDisplay` | Có — `A. Anh` |
-| `questionVi` / `optionsVi` | Có nếu đề EN; tên riêng giữ nguyên |
-| `intent` / `concept` / `whyCorrect` / `whyWrong` / `whatIs` | **Bỏ** — không template «Phạm trù «Anh» trong KTCT…» |
-
-**Cấm:** nhét fact (Anh, 1615, John Kay…) vào khuôn MLN “chủ thể ≠ biểu hiện, Nhà nước ≠ độc quyền…”.
-
-```
-answerDisplay: A. Anh
-memoryTip: • CMCN 1 khởi phát từ Anh.   # tuỳ chọn, 1 dòng
-```
+1. Xác định **đề đang hỏi kiến thức gì** (định nghĩa widget? lệnh? fact? chế độ biên dịch?…).  
+2. **Không** chỉ diễn giải/dịch lại đáp án.  
+3. Mỗi block (`concept`, `whyCorrect`, `whyWrong`) phải trả lời được **ít nhất một** trong:  
+   *Nó là gì? · Dùng khi nào? · Hoạt động thế nào? · Khác đáp án kia ra sao? · Vì sao đúng?*  
+4. Block chỉ **dịch lại / copy / đổi đồng nghĩa** đáp án → **bỏ hoặc viết lại** (không có giá trị học).
 
 ---
 
-### 6.2 Lệnh / CLI / tool (whyWrong = “dùng để làm gì”)
+### 6.0b «Đây là gì?» (`concept`) = khái niệm, không = cả câu đáp án
 
-**Nhận diện:** hỏi lệnh, tool, doctor/check/build… (PRM/JFE/JIT).
+Nếu đáp án là **câu hành động / mô tả** (To… / Use… / Return… / Create… / Reuse… / Avoid… / Enable… / Support… / Allow…):
 
-**Ví dụ:** *Which command verifies Flutter SDK installation after adding PATH?*  
-A. `npm doctor` · B. `pip check` · C. `flutter doctor` · D. `adb uninstall`
+| | Nội dung |
+|--|----------|
+| ❌ Sai | `concept`: «To reuse one shared service instance.» / «Return a Future\<int\>.» (chỉ lặp đáp án) |
+| ✅ Đúng | Tìm **khái niệm kỹ thuật** trong đề hoặc đáp án → giải thích khái niệm đó |
+
+**Ví dụ — singleton via factory**
+
+- Đề: *Which is a valid reason to use a singleton via factory?*  
+- Đáp án: *To reuse one shared service instance.*
+
+```
+concept (Đây là gì?):
+• Singleton via factory: factory constructor luôn trả về cùng một instance, không new object mỗi lần gọi.
+
+whyCorrect (Vì sao đúng?):
+• Singleton giữ một instance dùng chung.
+• Các nơi inject/gọi nhận cùng một object.
+• Vì vậy “reuse one shared service instance” là lý do hợp lệ.
+```
+
+**«Vì sao đúng?»** phải **liên hệ khái niệm ↔ đề**, không lặp nguyên văn đáp án.
+
+---
+
+### 6.1 Fact (Who / When / Where / …)
+
+**Áp dụng** nếu chỉ yêu cầu nhớ:
+
+- người · năm · thời gian · giai đoạn (mốc) · địa điểm · quốc gia · tổ chức · tên gọi · thuật ngữ lần đầu  
+
+**Ví dụ stem:** Ai… · Khi nào… · Ở đâu… · Quốc gia nào… · Năm bao nhiêu…
+
+| Giữ | Bỏ |
+|-----|-----|
+| `answerDisplay` | `intent`, `concept`, `whatIs`, `whyCorrect`, `whyWrong` |
+| `memoryTip` (tuỳ chọn 1 dòng) | template «Phạm trù «Anh» trong KTCT…» |
+
+**Không áp dụng** (giữ giải thích đầy đủ) nếu hỏi: bản chất · vai trò · cơ chế · đặc điểm · nguyên nhân · phân biệt · ý nghĩa · quá trình · quan điểm/chủ trương (không chỉ mốc).
+
+**Ví dụ fact:** *CMCN 1 khởi phát từ nước nào?* → chỉ `A. Anh` (+ tip tuỳ chọn).  
+**Không fact thuần:** *PTTT TBCN qua các giai đoạn nào?* · *Quan điểm kinh tế tự chủ trong chiến lược…?*
+
+---
+
+### 6.2 CLI / Command
+
+**Nhận diện:** đáp án / options là command (`flutter doctor`, `git clone`, `adb uninstall`, `npm doctor`…).
 
 | Field | Quy tắc |
 |-------|---------|
-| `concept` / `whyCorrect` | Lệnh **đúng** làm việc gì trong ngữ cảnh đề |
-| `whyWrong[L]` | Mỗi option sai: **lệnh/tool đó dùng để làm gì** (miền thật), rồi 1 câu vì sao không trả lời đề |
-
-**Khung whyWrong (lệnh hợp lệ):**
+| `concept` / `whyCorrect` | Lệnh **đúng** làm **việc gì** (ngữ cảnh đề) |
+| `whyWrong[L]` | Mẫu 3 dòng; **«Dùng để làm gì?»** = chức năng **thật** của command |
 
 ```
 • Là gì? <tên lệnh>
-• Dùng để làm gì? <việc thật của lệnh>
-• Vì sao sai? Không phải lệnh mà đề hỏi.
+• Dùng để làm gì? <việc thật>
+• Vì sao sai? Không phải lệnh đề hỏi.
 ```
 
-**Lệnh giả / không hợp lệ** (distractor kiểu `flutter doctor --uninstall`):
-
-```
-• Là gì? Chuỗi lệnh giả / không phải subcommand chuẩn của Flutter CLI.
-• Dùng để làm gì? Không dùng được — không phải lệnh hợp lệ.
-• Vì sao sai? Không tồn tại / không phải lệnh build hay verify SDK.
-```
-
-**Bảng gợi ý:**
+**Lệnh giả** (vd. `flutter doctor --uninstall`): ghi **không phải lệnh Flutter CLI hợp lệ** — không mô tả như `flutter doctor` thật.
 
 | Option | Dùng để làm gì? |
 |--------|-----------------|
-| `npm doctor` | Kiểm tra môi trường **Node/npm** |
-| `pip check` | Kiểm tra dependency **Python/pip** |
-| `adb uninstall` | Gỡ app **Android** qua ADB |
-| `flutter run` | Chạy app Flutter (dev/debug) |
-| `flutter clean` | Xóa build cache |
-| `flutter build apk` | Build APK release |
-| `flutter doctor` | Kiểm tra SDK/PATH Flutter |
-| `dart fix …` | Gợi ý/sửa theo analyzer Dart |
-| `flutter doctor --uninstall` | **Không phải lệnh Flutter CLI hợp lệ** |
+| `npm doctor` | Kiểm tra môi trường Node/npm |
+| `pip check` | Dependency Python/pip |
+| `adb uninstall` | Gỡ app Android |
+| `flutter run` / `clean` / `build apk` / `doctor` | Chạy dev / xóa cache / build APK / kiểm tra SDK |
+| `dart fix …` | Analyzer Dart |
+| `… --uninstall` (giả) | **Không hợp lệ** |
 
-**Cấm:** «Cơ chế Flutter/Dart liên quan «npm doctor»» · mô tả lệnh giả như thể lệnh thật.
+**Cấm:** template Flutter chung «Cơ chế Flutter/Dart liên quan «…»» cho mọi lệnh.
 
 ---
 
-### 6.3 Đáp án có thành phần (giải thích từng thành phần)
+### 6.3 Composite answer (nhiều thành phần)
 
-**Nhận diện:** đáp án là tổ hợp (AOT **và** JIT; Plan–Do–Check–Act…).
-
-**Ví dụ:** *Dart … compilation modes?* → **C. AOT and JIT compilation**
+**Nhận diện:** AOT+JIT · Plan Do Check Act · CRUD · MVC…
 
 | Field | Quy tắc |
 |-------|---------|
-| `concept` | Nêu tổ hợp đúng (JIT + AOT) |
-| `whyCorrect` | **Mỗi thành phần là gì / khi nào** + 1 câu kết luận vì sao chọn tổ hợp đó |
-| `whyWrong` | Distractor: là gì / stack nào — **không** dán template generic |
-
-**Chuẩn gọn (whyCorrect tập trung đáp án):**
+| `whyCorrect` | **Giải thích từng thành phần** — không chỉ «PDCA = Plan Do Check Act» |
+| `concept` | Nêu tổ hợp đúng ngắn gọn |
+| Kết luận | 1 câu vì sao chọn tổ hợp đó (không liệt kê dài distractor) |
 
 ```
-concept:
-• Dart/Flutter hỗ trợ JIT và AOT.
-
-whyCorrect:
+whyCorrect (AOT + JIT):
 • JIT: biên dịch khi chạy — hot reload lúc dev.
-• AOT: biên dịch trước khi phát hành — tối ưu hiệu năng release.
-• Vì Dart hỗ trợ cả hai chế độ nên đáp án là AOT and JIT.
+• AOT: biên dịch trước phát hành — tối ưu release.
+• Vì Dart hỗ trợ cả hai nên đáp án là AOT and JIT.
 
-whyWrong A (Only interpreted BASIC):
-• Là gì? BASIC thông dịch — ngôn ngữ/cách chạy khác Dart.
-• Dùng để làm gì? Chạy script BASIC (không phải Flutter toolchain).
-• Vì sao sai? Không phải chế độ biên dịch Dart (JIT/AOT).
+whyCorrect (PDCA):
+• Plan → lập kế hoạch · Do → thực hiện · Check → kiểm tra · Act → điều chỉnh.
 ```
-
-**Cấm:** kết luận whyCorrect bằng liệt kê dài distractor (“không phải BASIC/COBOL/assembly…”) thay cho câu **vì sao tổ hợp đúng**; cấm whyWrong «Cơ chế Flutter/Dart liên quan «…»».
 
 ---
 
-### 6.4 Bảng chọn nhanh
+### 6.4 Distractor (`whyWrong`) — đúng đối tượng option
 
-| Kiểu đề | intent / concept / whyCorrect | whyWrong |
-|---------|-------------------------------|----------|
-| Fact who/when/where/country/name | Tối thiểu; **có thể chỉ `answerDisplay`** | **Không bắt buộc** |
-| Lệnh / CLI (kể cả lệnh giả) | Lệnh đúng **làm gì** | Hợp lệ → dùng để làm gì; **giả → nói không hợp lệ** |
-| Đáp án nhiều thành phần | **Giải thích từng thành phần** + kết luận ngắn | Distractor: là gì / stack nào |
-| Lý thuyết / quá trình / quan điểm / phân biệt | Đủ concept + why (mục 0–2) | Contrast miền / lớp hỏi cụ thể |
+| Option | «Là gì?» phải nói về |
+|--------|----------------------|
+| `Navigator` | Navigator (điều hướng route) |
+| `FutureBuilder` | FutureBuilder (lắng nghe Future → UI) |
+| `StatefulWidget` | StatefulWidget (state cục bộ, setState) |
+| `flutter run` | Lệnh chạy app (xem 6.2) |
+
+**Cấm** dán một template cho mọi option:
+
+```
+• Là gì? Cơ chế Flutter…
+• Dùng để làm gì? Đối chiếu đúng cơ chế…
+```
+
+---
+
+### 6.5 Không lặp lại đáp án (whatIs / concept / whyCorrect)
+
+Nếu `concept` **và** `whyCorrect` (hoặc `whatIs[đáp án]`) chỉ **sinh lại cùng một chuỗi đáp án** → **rewrite**.
+
+| ❌ Duplicate | ✅ Có giá trị học |
+|-------------|------------------|
+| Đây là gì? `Future<int>` / Vì sao đúng? `Future<int>` | Đây là gì? Future biểu diễn kết quả sẽ có sau. / Vì sao đúng? Hàm `async` trả về Future. |
+| Đây là gì? *To reuse one shared…* | Đây là gì? Singleton/factory… (khái niệm) |
+
+---
+
+### 6.6 Ưu tiên giá trị học (mọi block)
+
+Trước khi giữ một block, hỏi: block có giúp học **thêm** không?
+
+| Chỉ làm việc này | Xử lý |
+|------------------|--------|
+| Dịch lại đáp án | Bỏ / viết lại |
+| Copy đáp án | Bỏ / viết lại |
+| Đổi từ đồng nghĩa | Bỏ / viết lại |
+
+Mỗi block nên trả lời ≥1: *là gì? · khi nào? · thế nào? · khác gì? · vì sao đúng?* — nếu không → **không sinh block đó**.
+
+---
+
+### 6.7 Bảng chọn nhanh
+
+| Kiểu đề | concept / whyCorrect | whyWrong |
+|---------|----------------------|----------|
+| Fact who/when/where/name | **Có thể chỉ `answerDisplay`** | Không bắt buộc |
+| Lệnh / CLI | Lệnh đúng **làm gì** | Hợp lệ → dùng làm gì; **giả → không hợp lệ** |
+| Composite (AOT+JIT, PDCA…) | **Từng thành phần** + kết luận ngắn | Đúng đối tượng distractor |
+| To / Use / Return… (lý do dùng pattern) | **Khái niệm** (singleton, Future…) không echo To… | Option sai: khái niệm/stack thật |
+| Lý thuyết / quá trình / quan điểm | Đủ concept + why (mục 0–2) | Contrast miền cụ thể |
