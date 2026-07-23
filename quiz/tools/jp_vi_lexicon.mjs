@@ -78,6 +78,14 @@ export const JP_VI = {
   パケット: "gói tin (packet)",
   データ: "dữ liệu",
   情報量: "lượng thông tin",
+  文字コード: "mã ký tự (character code)",
+  文字: "ký tự / chữ",
+  数字: "chữ số / số",
+  物理量: "đại lượng vật lý",
+  連続的: "liên tục",
+  近似: "xấp xỉ",
+  表現: "biểu diễn / thể hiện",
+  記録: "ghi / lưu",
   サンプリング周波数: "tần số lấy mẫu",
   量子化: "lượng tử hóa",
   量子化数: "số mức lượng tử hóa",
@@ -267,8 +275,67 @@ export const JP_VI = {
   UX: "trải nghiệm người dùng",
 };
 
-/** Extra multi-word / phrase glosses (substring, longest first) */
+/** Collapse whitespace / fullwidth space for phrase matching */
+function normJp(s) {
+  return String(s || "")
+    .replace(/[\u3000\s]+/g, " ")
+    .replace(/[，]/g, "，")
+    .replace(/[．]/g, "。")
+    .trim();
+}
+function compactJp(s) {
+  return normJp(s).replace(/\s+/g, "");
+}
+
+/** Extra multi-word / full-sentence glosses (longest first). Never mid-token soup. */
 export const JP_PHRASES = [
+  // —— high-frequency slide options (×40–56) ——
+  [
+    "アナログとは，連続的な量のことを表します。長さ・重さ・時間など身の回りの多くの物理量はアナログ量です。",
+    "Analog là đại lượng liên tục. Chiều dài, khối lượng, thời gian… nhiều đại lượng vật lý quanh ta là analog.",
+  ],
+  [
+    "デジタルとは，数値化された量のことを表します。デジタルコンピュータでは電圧が高い(オン)，低い(オフ)に対応させるために，1と0の数字だけを使っています。",
+    "Digital là đại lượng đã số hóa. Máy tính số chỉ dùng 1 và 0 để tương ứng điện áp cao (on) / thấp (off).",
+  ],
+  [
+    "たとえば，時間は連続的に流れていますが，デジタル時計では1秒単位の数字として扱っています。",
+    "Ví dụ thời gian chảy liên tục nhưng đồng hồ số xử lý theo đơn vị số 1 giây.",
+  ],
+  [
+    "デジタルコンピュータでは，一定単位の数字に近似して扱っています。",
+    "Máy tính số xử lý xấp xỉ theo đơn vị số rời rạc.",
+  ],
+  [
+    "現在使われているコンピュータは，デジタルコンピュータです。",
+    "Máy tính đang dùng hiện nay là máy tính số (digital).",
+  ],
+  [
+    "コンピュータのデータは 0 と 1 の並びで表現された数字であり，文字そのものが記録されているわけではありません。",
+    "Dữ liệu máy tính là dãy số biểu diễn bằng 0 và 1; không phải bản thân chữ cái được ghi trực tiếp.",
+  ],
+  [
+    "コンピュータのデータは0と1の並びで表現された数字であり，文字そのものが記録されているわけではありません。",
+    "Dữ liệu máy tính là dãy số biểu diễn bằng 0 và 1; không phải bản thân chữ cái được ghi trực tiếp.",
+  ],
+  [
+    "日常生活でなじんでいるパソコンから，スーパーコンピュータまで，世の中には多くの形態のコンピュータがありますが，その基本原理はまったく同じです。この章では，コンピュータの機能や歴史の基礎について概観します。",
+    "Từ PC quen thuộc đến supercomputer đều chung nguyên lý. (Đoạn mở đầu chương chức năng/lịch sử máy tính — nhiễu.)",
+  ],
+  [
+    "デジタルコンピュータは，パソコンでもスーパーコンピュータでもその動作原理は同じで，非常に単純なものです。この動作原理を理解することによってコンピュータの利用で注意すべきことが分かります。この章",
+    "Máy tính số (PC hay supercomputer) cùng nguyên lý hoạt động đơn giản. (Đoạn mở đầu chương — nhiễu.)",
+  ],
+  [
+    "通常，サーバとなっているコンピュータには，重要な情報が記録されています。",
+    "Thông thường máy chủ (server) lưu thông tin quan trọng.",
+  ],
+  [
+    "通常， サーバとなっているコンピュータには， 重要な情報が記録されています。",
+    "Thông thường máy chủ (server) lưu thông tin quan trọng.",
+  ],
+
+  // —— ROM / memory ——
   ["読み取り専用の半導体メモリである", "Là bộ nhớ bán dẫn chỉ đọc (ROM)"],
   ["読み書き専用の半導体メモリである", "Là bộ nhớ bán dẫn đọc-ghi (sai khái niệm ROM)"],
   ["画面イメージ全体を記憶するメモリである", "Bộ nhớ lưu toàn bộ ảnh màn hình (VRAM/frame buffer)"],
@@ -282,11 +349,16 @@ export const JP_PHRASES = [
   ["数値化された量", "Đại lượng đã số hóa"],
   ["切れ目のある正確な表現ができる", "Biểu diễn chính xác, rời rạc được"],
   ["曖昧なものをそのまま表現できる", "Biểu diễn được cả cái mơ hồ nguyên trạng"],
+  ["曖昧なものをそのまま残すことができる", "Có thể giữ nguyên phần mơ hồ"],
   ["正確で切れ目のある", "Chính xác và rời rạc"],
   ["演算・記憶・制御・入力・出力装置", "Đơn vị tính · nhớ · điều khiển · vào · ra"],
   ["演算・記憶・制御・入力・通信装置", "Tính · nhớ · điều khiển · vào · truyền thông"],
   ["演算・記憶・制御・表示・出力装置", "Tính · nhớ · điều khiển · hiển thị · ra"],
   ["演算・処理・制御・入力・出力装置", "Tính · xử lý · điều khiển · vào · ra"],
+  ["コンピュータ ＝ 入力 ＋ 出力", "Máy tính = vào + ra (thiếu)"],
+  ["コンピュータ ＝ 演算 ＋ 通信", "Máy tính = tính + truyền thông (thiếu)"],
+  ["コンピュータ ＝ 記憶 ＋ 処理", "Máy tính = nhớ + xử lý (thiếu)"],
+  ["コンピュータ ＝ 表示 ＋ 制御", "Máy tính = hiển thị + điều khiển (thiếu)"],
   ["ファイル名の後ろの文字列", "Chuỗi ký tự sau tên file (phần mở rộng)"],
   ["ファイルを整理するための入れ物", "Hộp/thư mục để sắp xếp file"],
   ["ファイルの内容を処理する装置", "Thiết bị xử lý nội dung file"],
@@ -300,27 +372,187 @@ export const JP_PHRASES = [
   ["処理を複数のコンピュータで分散して管理する", "Phân tán xử lý trên nhiều máy tính để quản lý"],
   ["中心となるコンピュータが全ての処理を管理する", "Một máy trung tâm quản lý toàn bộ xử lý (tập trung)"],
   ["1台のコンピュータのみが稼働する", "Chỉ một máy tính hoạt động"],
+  ["1台のコンピュータが全処理を担当する", "Một máy tính đảm nhiệm toàn bộ xử lý"],
+  ["2つ以上の処理装置がメモリを共有して並列処理を行う", "≥2 bộ xử lý chia sẻ bộ nhớ, xử lý song song"],
+  ["2つ以上の処理装置が独立したメモリを持って並列処理を行う", "≥2 bộ xử lý có bộ nhớ riêng, xử lý song song"],
   ["インターネット専用のシステム", "Hệ thống chỉ dành cho Internet"],
   ["残された個人情報を", "thông tin cá nhân còn sót"],
   ["差分記録", "ghi sai phân (chỉ lưu phần khác frame trước)"],
-  // —— digital / security (JIT slides) ——
-  ["現在使われているコンピュータは，デジタルコンピュータです", "Máy tính đang dùng hiện nay là máy tính số (digital)"],
-  ["たとえば，時間は連続的に流れていますが，デジタル時計では1秒単位の数字として扱っています", "Ví dụ thời gian chảy liên tục nhưng đồng hồ số xử lý theo đơn vị 1 giây"],
-  ["通常，サーバとなっているコンピュータには，重要な情報が記録されています", "Thông thường máy chủ (server) lưu thông tin quan trọng"],
-  ["通常， サーバとなっているコンピュータには， 重要な情報が記録されています", "Thông thường máy chủ (server) lưu thông tin quan trọng"],
-  ["デジタルコンピュータでは，一定単位の数字に近似して扱っています", "Máy tính số xấp xỉ/xử lý theo đơn vị số rời rạc"],
   ["ネットワークセキュリティ", "an ninh mạng (network security)"],
   ["重要な情報が記録されています", "thông tin quan trọng được ghi/lưu"],
   ["1秒単位の数字として扱っています", "xử lý dưới dạng số theo đơn vị 1 giây"],
+  ["与えられた原文が推測できないように変換すること", "Chuyển đổi sao cho không suy ra được bản gốc (mã hóa)"],
+  ["与えられた原文が推測できるように変換すること", "Chuyển đổi vẫn suy ra được bản gốc (không phải mã hóa chặt)"],
+  ["バスを流れるデータや外部機器とのデータを制御する", "Điều khiển dữ liệu trên bus và với thiết bị ngoài"],
+  ["メモリに蓄えられているプログラム", "Chương trình được lưu trong bộ nhớ"],
+  ["パソコン内で大きな面積を占めるメインとなる基板のこと", "Bo mạch chính chiếm diện tích lớn trong PC (mainboard)"],
+  ["CPUの中には演算装置機能だけが組み込まれている", "Trong CPU chỉ gắn chức năng đơn vị tính (thiếu/sai)"],
+  ["情報の送り手と受け手が固定されている", "Bên gửi và bên nhận thông tin cố định"],
+  ["色がいくつ並ぶかを記述する圧縮方式", "Cách nén mô tả có bao nhiêu màu xếp liền"],
+  ["ユーザ自身がコンテンツを作成・共有できる", "Người dùng tự tạo và chia sẻ nội dung"],
+  ["パソコン内のHDDにデータを保存するサービス", "Dịch vụ lưu dữ liệu trên HDD trong PC"],
+  ["インターネットを通じてコンピュータ資源やサービスを提供する", "Cung cấp tài nguyên/máy tính/dịch vụ qua Internet (cloud)"],
+  ["DVDを使ってソフトウェアを配布する方法", "Phân phối phần mềm bằng DVD"],
+  ["USBメモリを使ったデータ共有の方法", "Chia sẻ dữ liệu bằng USB"],
+  ["著作権のあるファイルを送ってよい", "Được gửi file có bản quyền (thường sai trong ngữ cảnh)"],
+  ["添付ファイルのウィルスをチェックする", "Kiểm tra virus file đính kèm"],
+  ["著作者人格権・著作者財産権・著作隣接権", "Quyền nhân thân · quyền tài sản · quyền liền kề"],
+  ["インターネット利用形態の主なものにホームページ閲覧とメール送受信があります。", "Hình thức dùng Internet chính: xem trang web và gửi/nhận email."],
+  ["どちらも，携帯電話で日常的に利用しているでしょう。", "Cả hai đều dùng hằng ngày trên điện thoại di động."],
+  ["インターネットは世界中の人たちと直接ふれあうことができる，すばらしいコミュニケーションの道具です。", "Internet là công cụ giao tiếp tuyệt vời, tiếp xúc trực tiếp với người khắp thế giới."],
+  ["しかし，実際に顔が見えないと，現実世界では決して言わないような表現をしてしまう場合もあります。", "Nhưng khi không thấy mặt, đôi khi dùng cách nói không bao giờ nói ngoài đời."],
+  ["インターネットといえどもコンピュータの向こうには生身の人間がいることを想像しなければいけません。", "Dù là Internet vẫn phải nhớ phía máy tính là con người thật."],
+  ["クローズドループ型の電子マネーは、現金のような匿名性が高く、小口の利用に適している。", "Tiền điện tử closed-loop: ẩn danh cao như tiền mặt, phù hợp giao dịch nhỏ."],
+  ["ネットワークを使った電子データ交換の標準化のことで、受発注・決済・配送などに用いられます", "Chuẩn hóa trao đổi dữ liệu điện tử qua mạng (EDI): đặt hàng, thanh toán, giao hàng…"],
+  ["文書・図面・取引情報などが扱われます", "Xử lý văn bản, bản vẽ, thông tin giao dịch…"],
+  ["オンラインの受発注システムのことを言います", "Hệ thống đặt/nhận hàng trực tuyến (EOS)"],
+  ["製造業における全製造過程の電子化についての標準化のことを言います", "Chuẩn hóa điện tử hóa toàn bộ quy trình sản xuất (sản xuất)"],
+  ["稼働率 ＝ MTTR / (MTBF ＋ MTTR)", "Tỉ lệ hoạt động = MTTR / (MTBF + MTTR) — thường sai công thức"],
+  ["公開鍵方式と秘密鍵方式で暗号化した状態で情報通信を行う", "Truyền tin đã mã hóa bằng khóa công khai và khóa bí mật"],
+  ["ウィルスを検出するソフトウェア", "Phần mềm phát hiện virus"],
+  ["クラウド上のデータ管理システム", "Hệ quản lý dữ liệu trên cloud"],
+  ["赤外線を使った通信規格で、遮蔽物があると通信できない", "Chuẩn truyền hồng ngoại; có vật chắn thì không thông"],
+  ["通信速度が54 Mbpsの規格", "Chuẩn tốc độ 54 Mbps"],
+  ["携帯電話やパソコンに搭載されている", "Gắn trên điện thoại/PC"],
+  ["カードを読み取り機に差し込んで使う", "Cắm thẻ vào đầu đọc để dùng"],
+  ["JRのSuicaなどで使われている", "Dùng trong Suica (JR) v.v."],
+  ["押された部分の縦横の抵抗値を測定する", "Đo điện trở dọc/ngang chỗ chạm (cảm ứng điện trở)"],
+  ["指先の電荷を測定して位置を検出する", "Đo điện tích đầu ngón tay để xác định vị trí (cảm ứng điện dung)"],
+  ["指先とセンサの間に蓄えられる電荷", "Điện tích tích giữa đầu ngón và cảm biến"],
+  ["光の強弱を記録する素子と増幅器が並んだセンサ", "Cảm biến gồm phần tử ghi sáng tối + khuếch đại"],
+  ["デジタル通信になり音質が向上した", "Chuyển sang truyền số → chất lượng âm tốt hơn"],
+  ["ブロードバンドを前提としている", "Lấy băng rộng làm tiền đề"],
+  ["着信メロディのデータは、音楽用のコードと解釈されます", "Dữ liệu nhạc chuông được hiểu là mã âm nhạc"],
+  ["モジュレーションなどにより表現されています", "Biểu diễn bằng điều chế (modulation) v.v."],
+  ["High Text Markup Languageの略", "Viết tắt High Text Markup Language (sai — HTML là HyperText)"],
+  ["ユーザが独自にタグを定義できる言語", "Ngôn ngữ cho phép người dùng tự định nghĩa thẻ"],
+  ["文字の種類・配置・画像・動画などが記述できる言語", "Ngôn ngữ mô tả kiểu chữ, bố cục, ảnh, video…"],
+  ["管理（かんり）：Quản lý", "管理 (kanri): Quản lý"],
+  ["収集（しゅうしゅう）：Thu thập", "収集 (shūshū): Thu thập"],
+  ["削除（さくじょ）：Xóa bỏ", "削除 (sakujo): Xóa bỏ"],
+  ["整理（せいり）：Sắp xếp", "整理 (seiri): Sắp xếp"],
+  // —— more common quiz options ——
+  [
+    "日常生活でなじんでいるパソコンから， スーパーコンピュータまで， 世の中には多くの形態のコンピュータがありますが， その基本原理はまったく同じです。 この章では， コンピュータの機能や歴史の基礎について概観します。",
+    "Từ PC quen thuộc đến supercomputer đều chung nguyên lý. (Đoạn mở đầu chương chức năng/lịch sử máy tính — nhiễu.)",
+  ],
+  ["ホームページを見る場合には， Internet Explorer( インターネットエクスプローラ) などのブラウザ( 閲覧ソフト) を利用します。", "Xem trang web bằng trình duyệt như Internet Explorer."],
+  ["稼働率 ＝ MTBF / (MTBF ＋ MTTR)", "Tỉ lệ hoạt động = MTBF / (MTBF + MTTR)"],
+  ["稼働率 ＝ MTTR / (MTBF ＋ MTTR)", "Tỉ lệ hoạt động = MTTR / (MTBF + MTTR) — công thức thường sai"],
+  ["人為的に作成されたプログラム（感染→潜伏→発病）", "Chương trình do người tạo (nhiễm → ủ → phát bệnh) — virus"],
+  ["パソコン内で大きな面積を占めるメインの基板", "Bo mạch chính chiếm diện tích lớn trong PC"],
+  ["パソコン内で最も大きな面積を占める基板のこと", "Bo mạch chiếm diện tích lớn nhất trong PC (mainboard)"],
+  ["両方のスイッチがONのときだけ出力がON", "Chỉ khi cả hai công tắc ON thì output ON (AND)"],
+  ["スイッチが並列に並んだ回路で、少なくとも1つONで出力がON", "Mạch song song: ≥1 công tắc ON thì output ON (OR)"],
+  ["映画は1秒間に24回画面が書き換えられる", "Phim làm mới màn hình 24 lần/giây"],
+  ["日本のテレビは1秒間に30回画面が書き換えられる", "TV Nhật làm mới màn hình 30 lần/giây"],
+  ["動画の情報量 ＝ 静止画1枚 × フレームレート × 秒数", "Lượng tin video = 1 ảnh tĩnh × frame rate × số giây"],
+  ["動画は静止画と関係なく独立した形式である", "Video là định dạng độc lập, không liên quan ảnh tĩnh (sai)"],
+  ["全ての波を波長の違う正弦波に分解する変換", "Biến đổi phân rã sóng thành các sine khác bước sóng (Fourier)"],
+  ["インターネット（ADSL・FTTHなど）で音声情報を送受信する", "Gửi/nhận âm thanh qua Internet (ADSL/FTTH…) — VoIP"],
+  ["いかなる場合でもデータサイズを大幅に削減できる", "Mọi trường hợp đều giảm mạnh kích thước dữ liệu (thường sai)"],
+  ["どの場合でもデータサイズを大幅に削減できる", "Mọi trường hợp đều giảm mạnh kích thước dữ liệu (thường sai)"],
+  ["ネットワーク上の複数のコンピュータで処理を分担する", "Nhiều máy trên mạng chia sẻ xử lý"],
+  ["JavaやC++が低級言語の代表例である", "Java/C++ là ngôn ngữ bậc thấp điển hình (sai — chúng là bậc cao)"],
+  ["文字の並び順を入れ替えることで暗号化する", "Mã hóa bằng cách đổi thứ tự chữ (hoán vị)"],
+  ["文字の位置を規則的または不規則にずらすことで暗号化する", "Mã hóa bằng dịch vị trí chữ (Caesar/shift)"],
+  ["OSが異なってもアプリケーションはOS種別を意識せずに処理できる", "App chạy bất chấp OS mà không cần biết loại OS (sai / quá tuyệt đối)"],
+  ["OSが異なっていてもアプリケーションはOSの種別を意識せずに処理できる", "App chạy bất chấp OS mà không cần biết loại OS (sai / quá tuyệt đối)"],
+  ["OSはソースコードの公開が義務付けられている", "OS bắt buộc công khai mã nguồn (sai — không phải mọi OS)"],
+  ["OSはCPUやメモリなどのコンピュータ資源をアプリに割り当てる", "OS cấp phát tài nguyên (CPU, bộ nhớ…) cho ứng dụng"],
+  ["OSはアプリケーションに対して、CPUやメモリなどのコンピュータ資源を割り当てる", "OS cấp phát CPU/bộ nhớ… cho ứng dụng"],
+  ["OSはファイルの文字コードを自動変換する機能を必ず持つ", "OS luôn tự đổi mã ký tự file (không nhất thiết)"],
+  ["OSはファイルの文字コードを自動変換する機能をもつためアプリは文字コード種別を意識しなくてよい", "OS tự đổi mã ký tự nên app không cần quan tâm (sai / quá tuyệt đối)"],
+  ["アプリケーションが自由にOSの機能を使えるようにソースコードの公開が義務付けられている", "Bắt buộc mở source để app dùng tự do chức năng OS (sai)"],
+  ["ネットワーク層のIPプロトコルに従って番号が割り当てられている", "Số được gán theo giao thức IP tầng mạng"],
+  ["音声の波をそのまま電波の波に置き換えて送受信する", "Thay sóng âm bằng sóng radio nguyên dạng để thu/phát (analog)"],
+  ["音楽・絵画・小説・映画などの「思想または感情を創作的に表現したもの」です", "Tác phẩm biểu hiện sáng tạo tư tưởng/cảm xúc (bản quyền)"],
+  ["機器・衣服・日用品などのデザインについての権利です", "Quyền về thiết kế máy móc/quần áo/đồ dùng (ý thiết kế)"],
+  ["物品の形状・構造・組み合わせに係る「考案」を保護するための権利です", "Bảo hộ «ý tưởng thiết kế kỹ thuật» về hình dạng/cấu trúc (utility model)"],
+  ["製品などの名前・ロゴマークなど「商標」についての権利です", "Quyền về tên/logo sản phẩm (nhãn hiệu)"],
+  ["通信の手順であるプロトコルを機能ごとに7つの階層に分けて定義したモデルである", "Mô hình chia giao thức thành 7 tầng theo chức năng (OSI)"],
+  ["製造業における全製造過程の電子化の標準化", "Chuẩn hóa điện tử hóa toàn bộ quy trình sản xuất"],
+  ["ネットワークを使った電子データ交換の標準化", "Chuẩn hóa trao đổi dữ liệu điện tử qua mạng (EDI)"],
+  ["キャッシュ (Cache：Bộ nhớ đệm)", "Cache — bộ nhớ đệm"],
+  ["ハードディスク (Ổ đĩa cứng)", "Hard disk — ổ đĩa cứng"],
+  ["こもじ - chữ in thường", "こもじ — chữ thường (hiragana reading)"],
+  ["だいもじ - chữ thường", "だいもじ — chữ hoa (thường là 大文字)"],
+  ["たいいきはば - chiều rộng dải tần", "たいいきはば — bề rộng băng tần"],
+  ["たいいきふく - băng thông hẹp", "たいいきふく — băng hẹp"],
+  ["はばたいいき - độ trễ", "はばたいいき — (reading; cần đối chiếu 帯域)"],
+  ["しゅうはすうたい - băng tần", "しゅうはすうたい — băng tần (周波数帯)"],
+  ["電荷（でんか）：Điện tích", "電荷 (denka): điện tích"],
+  ["電力（でんりょく）：Điện lực", "電力 (denryoku): công suất điện"],
+  ["電極（でんきょく）：Điện cực", "電極 (denkyoku): điện cực"],
+  [
+    "感染経路は、USBメモリやインターネットを利用したメール、ホームページを経由する",
+    "Đường lây nhiễm: USB, email qua Internet, trang web…",
+  ],
+  [
+    "感染経路 là、USBメモリやインターネットを利用したメール、ホームページを経由する",
+    "Đường lây nhiễm: USB, email qua Internet, trang web…",
+  ],
+  [
+    "計算するための道具には古くから様々なものがあり，紀元前にもアバカスという，そろばんの起源とされる道具が使われていました。",
+    "Từ xưa đã có nhiều công cụ tính; thời cổ có abacus (nguồn gốc bàn tính). (Đoạn mở đầu — nhiễu.)",
+  ],
+  [
+    "デスクトップ上の「コンピュータ」アイコンをダブルクリックすると使用可能な機器の一覧が表示され，名前の横に(C:)(E:) などのアルファベットが付いています。",
+    "Double-click biểu tượng Computer → danh sách ổ (C:)(E:)… (Đoạn mở đầu — nhiễu.)",
+  ],
+  [
+    "皆さんは日常的にメールを使っていると思いますが，ビジネスメールには注意すべきマナーがあり，友達同士のように送ると大変失礼になることもあります。",
+    "Email hằng ngày khác email công việc — cần phép lịch sự. (Đoạn mở đầu — nhiễu.)",
+  ],
+  [
+    "文書の電子化，CD-R の普及，ホームページ利用の一般化に伴って情報の劣化しないコピーがとても手軽に行えるようになってきました。",
+    "Số hóa / CD-R / web làm việc copy không suy hao rất dễ. (Đoạn mở đầu — nhiễu.)",
+  ],
+  [
+    "日本における携帯電話は，1985 年に NTT が発売した肩掛け式のショルダーフォンに始まり，いくつかの技術革新を経て，約 9 割の国民が持つまでに普及してきています。",
+    "Điện thoại di động Nhật từ shoulder phone NTT 1985 đến ~90% dân dùng. (Đoạn mở đầu — nhiễu.)",
+  ],
+  [
+    "携帯電話は， NTT ドコモ， au ， ソフトバンクなどの電話会社（ 通信キャリア） と契約して通話が可能になります。",
+    "Thuê bao qua nhà mạng (DoCoMo, au, SoftBank…) mới gọi được. (Đoạn mở đầu — nhiễu.)",
+  ],
+  [
+    "出力用ハードウェアとして，携帯電話の画面で使われている液晶の構造は，画像の基本となる 1 点 1 点について，バックライトの光を透過，遮断することで明るさを調整するものです。",
+    "Màn LCD: từng điểm pixel chỉnh sáng bằng cho/chặn đèn nền. (Đoạn kỹ thuật màn hình.)",
+  ],
+  [
+    "iPhone の成功を受けてスマートフォンが脚光を浴びるようになり，ガラパゴス携帯と呼ばれる国内での利用に特化した携帯電話から国際標準へと移行が進んでいます。",
+    "Sau iPhone, chuyển từ «Galápagos phone» nội địa sang smartphone chuẩn quốc tế. (Đoạn mở đầu — nhiễu.)",
+  ],
 ];
 
-/** VI gloss without EN parenthetical — for mid-sentence replace (readable). */
-function viInline(vi) {
-  return String(vi || "")
-    .replace(/\s*\([^)]*\)/g, "")
-    .replace(/\s*\/\s*network model/gi, "")
-    .replace(/\s{2,}/g, " ")
-    .trim();
+/** True if string mixes JP+VI in one stream (unreadable machine gloss). */
+export function isJpViSoup(s) {
+  const t = String(s || "");
+  if (!hasJp(t) || !hasVi(t)) return false;
+
+  // Short bilingual labels are OK: 管理（かんり）：Quản lý · こもじ - chữ in thường
+  if (t.length <= 70 && /[—–：:\-]|（[^）]{1,20}）/.test(t)) return false;
+
+  // Long "JP — clean VI" OK when right side is mostly Vietnamese
+  if (/[—–]/.test(t)) {
+    const left = t.split(/[—–]/)[0] || "";
+    const right = t.split(/[—–]/).slice(1).join("—");
+    const rJp = (right.match(/[\u3040-\u30ff\u3400-\u9fff]/g) || []).length;
+    // right still JP-heavy → soup; left JP + right VI → OK
+    if (rJp > 6) return true;
+    if (hasJp(left) && hasVi(right) && rJp <= 6) return false;
+    // both sides mixed
+    return rJp > 2 && hasJp(right) && hasVi(right);
+  }
+
+  // Same stream, long, both scripts, no separator → soup (half-translate)
+  if (t.length >= 36) return true;
+  return false;
+}
+
+function jpCharCount(s) {
+  return (String(s || "").match(/[\u3040-\u30ff\u3400-\u9fff]/g) || []).length;
 }
 
 /** Avoid matching short keys inside longer JP words (パス ⊂ パスワード). */
@@ -335,22 +567,43 @@ function jpSafeIncludes(hay, needle) {
   return true;
 }
 
+/**
+ * Full-sentence / option translator.
+ * Returns clean VI when possible; never returns JP+VI soup.
+ * Short terms → "JP — VI". Unknown long JP → original JP (caller may keep as-is).
+ */
 export function glossJp(text) {
   const raw = String(text || "").trim();
   if (!raw) return raw;
   if (hasVi(raw) && !hasJp(raw)) return raw;
 
-  // exact term → bilingual label (short options)
-  if (JP_VI[raw]) return `${raw} — ${JP_VI[raw]}`;
-
-  // phrases longest first — exact or near-exact (prefer full VI, no JP echo soup)
+  const compact = compactJp(raw);
   const phrases = [...JP_PHRASES].sort((a, b) => b[0].length - a[0].length);
+
+  // 1) exact / whitespace-insensitive full phrase
   for (const [jp, vi] of phrases) {
-    if (raw === jp || raw.replace(/\s+/g, "") === jp.replace(/\s+/g, "")) return vi;
-    if (raw.includes(jp) && jp.length >= 6 && raw.length <= jp.length + 12) return vi;
+    if (raw === jp || compact === compactJp(jp)) return vi;
+    // near-exact: option slightly longer (trailing 。 extra space)
+    if (compact.startsWith(compactJp(jp)) && compact.length <= compactJp(jp).length + 4) return vi;
+    if (compactJp(jp).startsWith(compact) && compactJp(jp).length <= compact.length + 4 && compact.length >= 20)
+      return vi;
   }
 
-  // key exact-ish contains — prefer longest key with safe boundary
+  // 2) contains a long phrase covering ≥70% of option → use that VI
+  for (const [jp, vi] of phrases) {
+    const cj = compactJp(jp);
+    if (cj.length >= 20 && compact.includes(cj) && cj.length / Math.max(compact.length, 1) >= 0.7) {
+      return vi;
+    }
+  }
+
+  // 3) exact lexicon term
+  if (JP_VI[raw]) return `${raw} — ${JP_VI[raw]}`;
+  for (const [jp, vi] of Object.entries(JP_VI)) {
+    if (compact === compactJp(jp)) return `${raw} — ${vi}`;
+  }
+
+  // 4) short term with known key
   let best = null;
   let bestLen = 0;
   for (const [jp, vi] of Object.entries(JP_VI)) {
@@ -359,36 +612,109 @@ export function glossJp(text) {
       bestLen = jp.length;
     }
   }
-  // Short option: bilingual gloss of whole term
-  if (best && raw.length <= 36 && (raw === best.jp || raw.length <= best.jp.length + 12)) {
+  if (best && raw.length <= 40 && (raw === best.jp || raw.length <= best.jp.length + 14)) {
     return `${raw} — ${best.vi}`;
   }
 
-  // Long sentence: phrase then keys with *inline* VI (no "máy tính (computer)" spam)
-  let t = raw;
-  for (const [jp, vi] of phrases) {
-    if (t.includes(jp)) t = t.split(jp).join(viInline(vi));
+  // 5) Pattern-based full sentences (only when whole option matches a clean pattern)
+  const patterned = patternTranslate(raw);
+  if (patterned && !isJpViSoup(patterned) && jpCharCount(patterned) <= 4) return patterned;
+
+  // 6) Long unknown JP: KEEP pure JP (do NOT partial-replace → soup).
+  // Short unknown: keep JP.
+  return raw;
+}
+
+/**
+ * Structural patterns for common quiz sentence shapes.
+ * Only returns clean VI; otherwise null.
+ */
+function patternTranslate(raw) {
+  let t = normJp(raw);
+
+  // Xとは，Yです。 → X là Y.
+  let m = t.match(/^(.+?)とは[，,]\s*(.+?)です。?$/);
+  if (m && m[1].length <= 30 && m[2].length <= 80) {
+    const x = termVi(m[1]);
+    const y = phraseOrKeep(m[2]);
+    if (x && y && !hasJp(x) && jpCharCount(y) <= 2) return `${x} là ${y}.`;
   }
+
+  // 現在使われているXは，Yです。
+  m = t.match(/^現在使われている(.+?)は[，,]\s*(.+?)です。?$/);
+  if (m) {
+    const x = termVi(m[1]) || m[1];
+    const y = termVi(m[2]) || phraseOrKeep(m[2]);
+    if (jpCharCount(String(y)) <= 2) return `${termVi("現在") || "Hiện nay"} ${x} đang dùng là ${y}.`.replace(/^Hiện nay /, "Hiện nay ");
+    // simpler
+    if (JP_VI[m[2]] || /デジタルコンピュータ/.test(m[2]))
+      return `Máy tính đang dùng hiện nay là máy tính số (digital).`;
+  }
+
+  // Xでは，Yしています。/Yています。
+  m = t.match(/^(.+?)では[，,]\s*(.+?)(?:しています|ています|ます)。?$/);
+  if (m && m[1].length <= 40) {
+    const x = termVi(m[1]);
+    if (x && /近似|扱/.test(m[2])) return `Trong ${x}, xử lý xấp xỉ theo đơn vị số.`;
+  }
+
+  return null;
+}
+
+function termVi(jp) {
+  const t = String(jp || "").trim();
+  if (!t) return "";
+  if (JP_VI[t]) return viClean(JP_VI[t]);
+  for (const [k, v] of Object.entries(JP_VI)) {
+    if (compactJp(k) === compactJp(t)) return viClean(v);
+  }
+  // multi-word compound from keys longest
+  let s = t;
   const keys = Object.keys(JP_VI).sort((a, b) => b.length - a.length);
-  for (const jp of keys) {
-    if (jp.length < 3) continue;
-    if (jpSafeIncludes(t, jp)) t = t.split(jp).join(viInline(JP_VI[jp]));
+  for (const k of keys) {
+    if (k.length < 3) continue;
+    if (s.includes(k)) s = s.split(k).join(viClean(JP_VI[k]));
   }
-  // Clean leftover JP punctuation / doubled spaces
-  t = t
-    .replace(/[，、]/g, ", ")
-    .replace(/。/g, ".")
+  if (jpCharCount(s) <= 2 && hasVi(s)) return s;
+  return null;
+}
+
+function phraseOrKeep(s) {
+  const compact = compactJp(s);
+  for (const [jp, vi] of JP_PHRASES) {
+    if (compact === compactJp(jp) || compact.includes(compactJp(jp))) return vi;
+  }
+  const tv = termVi(s);
+  return tv || s;
+}
+
+function viClean(vi) {
+  return String(vi || "")
+    .replace(/\s*\([^)]*\)/g, "")
+    .replace(/\s*\/\s*[^/]+$/g, "")
     .replace(/\s{2,}/g, " ")
     .trim();
-  if (hasVi(t) && t !== raw) {
-    const jpLeft = (t.match(/[\u3040-\u30ff\u3400-\u9fff]/g) || []).length;
-    // Prefer clean VI for long stems; avoid "JP → half-gloss" soup
-    if (jpLeft <= 6 || raw.length >= 28) return t;
-    return `${raw} → ${t}`;
+}
+
+/** Clean VI gloss only (for optionsVi right side). */
+export function glossJpClean(text) {
+  const g = glossJp(text);
+  if (!g) return "";
+  if (isJpViSoup(g)) return "";
+  // Bilingual "JP — VI" → take VI side only when left is Japanese
+  if (/[—–]/.test(g)) {
+    const left = g.split(/[—–]/)[0].trim();
+    const right = g.split(/[—–]/).slice(1).join("—").trim();
+    if (hasJp(left) && hasVi(right) && jpCharCount(right) <= 4) return right;
+    // Pure VI sentence that happens to contain an em dash (e.g. note in parentheses)
+    if (!hasJp(g) && hasVi(g)) return g;
+    if (hasVi(right) && jpCharCount(right) <= 4 && !hasJp(right)) return right;
+    return "";
   }
-  // keep JP if pure short
-  if (hasJp(raw) && raw.length <= 60) return raw;
-  return raw;
+  if (hasVi(g) && jpCharCount(g) <= 4) return g;
+  // Allow a bit more residual JP punctuation/units
+  if (hasVi(g) && jpCharCount(g) <= 8 && g.length >= 12) return g;
+  return "";
 }
 
 export function extractViTermFromQuestion(q) {

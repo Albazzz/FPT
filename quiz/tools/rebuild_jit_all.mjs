@@ -11,6 +11,8 @@ import {
   hasVi,
   hasJp,
   glossJp,
+  glossJpClean,
+  isJpViSoup,
   extractViTermFromQuestion,
   JP_VI,
 } from "./jp_vi_lexicon.mjs";
@@ -166,12 +168,14 @@ function translateQuestion(qText, maps) {
 
   // High-frequency quiz stems (capture topic)
   let m2;
-  // （ネットワーク）ネットワークセキュリティ について正しい説明はどれか。
+  // （情報量）文字コード について正しい説明はどれか。
   if ((m2 = t.match(/[（(]([^）)]+)[）)]\s*(.+?)について正しい説明はどれか/))) {
-    return `（${m2[1]}）Về «${glossTopic(m2[2])}», giải thích nào đúng?`;
+    const chap = glossTopic(m2[1]);
+    const topic = glossTopic(m2[2]);
+    return `（${chap}）Về ${topic}, giải thích nào đúng?`;
   }
   if ((m2 = t.match(/^(.+?)について正しい説明はどれか。?$/))) {
-    return `Về «${glossTopic(m2[1])}», giải thích nào đúng?`;
+    return `Về ${glossTopic(m2[1])}, giải thích nào đúng?`;
   }
   if ((m2 = t.match(/^(.+?)について正しくないものを(?:えら|選)んでください。?$/))) {
     return `Chọn phát biểu SAI về «${glossTopic(m2[1])}».`;
@@ -248,37 +252,75 @@ function translateQuestion(qText, maps) {
 
 function glossTopic(topic) {
   const t = String(topic || "").trim().replace(/^「|」$/g, "");
+  if (!t) return t;
+  // Prefer clean bilingual: 文字コード (mã ký tự)
+  if (JP_VI[t]) return `${t} (${JP_VI[t]})`;
+  const clean = glossJpClean(t);
+  if (clean) {
+    // if clean already is "term — vi" style handled; else wrap
+    return /[\u3040-\u30ff\u3400-\u9fff]/.test(t) ? `${t} (${clean})` : clean;
+  }
   const g = glossJp(t);
-  if (g.includes("—")) return `${t} (${g.split("—").slice(1).join("—").trim()})`;
-  if (hasVi(g) && g !== t) return g;
+  if (g.includes("—") && !isJpViSoup(g)) {
+    return `${t} (${g.split("—").slice(1).join("—").trim()})`;
+  }
+  if (hasVi(g) && !hasJp(g)) return g;
   return t;
 }
 
+/**
+ * Option VI: always readable.
+ * - Short term: `JP — VI`
+ * - Full sentence with known phrase: `JP — full VI` OR just clean VI if very long
+ * - Unknown long JP: keep JP (no half-translate soup)
+ */
 function translateOpt(opt, maps) {
-  const t = String(opt || "").trim();
+  // Fix source pollution: accidental VI particles inside JP stems
+  let t = String(opt || "")
+    .trim()
+    .replace(/\s+là、/g, "は、")
+    .replace(/\s+là,/g, "は、");
   if (!t) return t;
   if (hasVi(t) && !hasJp(t)) return t;
+  // Already bilingual short label (reading — VI) — keep, don't double-wrap
+  if (
+    hasVi(t) &&
+    hasJp(t) &&
+    t.length <= 80 &&
+    /[—–：:\-]/.test(t) &&
+    !isJpViSoup(t)
+  ) {
+    return t;
+  }
 
-  // harvested
+  // harvested exact
   if (maps.jp2vi.has(t)) {
-    const vi = maps.jp2vi.get(t);
-    if (hasJp(t)) return `${t} — ${vi}`;
-    return vi;
+    const vi = String(maps.jp2vi.get(t) || "").trim();
+    if (hasVi(vi) && !hasJp(vi)) {
+      return hasJp(t) ? `${t} — ${vi}` : vi;
+    }
+    // harvest already bilingual
+    if (hasVi(vi) && !isJpViSoup(vi)) return vi;
+  }
+
+  const clean = glossJpClean(t);
+  if (clean) {
+    // Long JP sentence: show clean VI primarily (JP still in options raw UI if needed)
+    if (hasJp(t) && t.length >= 50) return `${t} — ${clean}`;
+    if (hasJp(t)) return `${t} — ${clean}`;
+    return clean;
   }
 
   const g = glossJp(t);
-  if (g !== t) return g;
-
-  // partial harvest: any key contained
-  for (const [jp, vi] of maps.jp2vi) {
-    if (jp.length >= 2 && t.includes(jp)) {
-      return hasJp(t) ? `${t} — ${vi}` : vi;
-    }
-  }
-  for (const [jp, vi] of Object.entries(JP_VI)) {
-    if (jp.length >= 2 && t === jp) return `${jp} — ${vi}`;
+  if (g && g !== t && !isJpViSoup(g)) {
+    if (!hasJp(g) && hasVi(g)) return hasJp(t) ? `${t} — ${g}` : g;
+    if (g.includes("—") && !isJpViSoup(g)) return g;
   }
 
+  // exact lexicon
+  if (JP_VI[t]) return `${t} — ${JP_VI[t]}`;
+
+  // No soup: leave pure JP (student still reads original; better than 半翻訳)
   return t;
 }
 
@@ -376,7 +418,7 @@ function defineOpt(optText, maps) {
 
   if (maps.jp2vi.has(t)) {
     const vi = maps.jp2vi.get(t);
-    if (hasVi(String(vi))) {
+    if (hasVi(String(vi)) && !hasJp(String(vi))) {
       return {
         what: hasJp(t) ? `${t}: ${vi}` : vi,
         role: `Cặp thuật ngữ IT: «${tip}» ↔ «${vi}».`,
@@ -384,29 +426,42 @@ function defineOpt(optText, maps) {
     }
   }
 
-  const g = glossJp(t);
-  if (g !== t && hasVi(g)) {
-    const viPart = g.includes("—") ? g.split("—").slice(1).join("—").trim() : g;
+  // Full clean translation preferred
+  const clean = glossJpClean(t);
+  if (clean) {
     return {
-      what: g.includes("—") || g.includes(":") ? g : `${t}: ${g}`,
-      role: `Nghĩa gợi ý: ${viPart || g}.`,
+      what: clean,
+      role: t.length >= 50 ? "Phát biểu / đoạn JP đã dịch đủ nghĩa." : `Nghĩa: ${clean}.`,
     };
   }
 
-  // contained
-  let best = null;
-  let bestLen = 0;
-  for (const [jp, vi] of Object.entries(JP_VI)) {
-    if (jp.length >= 2 && t.includes(jp) && jp.length > bestLen) {
-      best = { jp, vi };
-      bestLen = jp.length;
+  const g = glossJp(t);
+  if (g !== t && hasVi(g) && !isJpViSoup(g)) {
+    const viPart = g.includes("—") ? g.split("—").slice(1).join("—").trim() : g;
+    if (jpSafeCount(viPart) <= 4) {
+      return {
+        what: viPart,
+        role: `Nghĩa: ${viPart}.`,
+      };
     }
   }
-  if (best) {
-    return {
-      what: hasJp(t) ? `${t} — (có «${best.jp}»: ${best.vi})` : `Chứa «${best.jp}» → ${best.vi}`,
-      role: `Thành phần kanji/katakana «${best.jp}» ≈ ${best.vi}.`,
-    };
+
+  // Short term contained key only (not long soup)
+  if (t.length <= 36) {
+    let best = null;
+    let bestLen = 0;
+    for (const [jp, vi] of Object.entries(JP_VI)) {
+      if (jp.length >= 2 && t.includes(jp) && jp.length > bestLen) {
+        best = { jp, vi };
+        bestLen = jp.length;
+      }
+    }
+    if (best && (t === best.jp || t.length <= best.jp.length + 12)) {
+      return {
+        what: `${t}: ${best.vi}`,
+        role: `Thuật ngữ «${best.jp}» ≈ ${best.vi}.`,
+      };
+    }
   }
 
   if (hasVi(t) && !hasJp(t)) {
@@ -416,12 +471,19 @@ function defineOpt(optText, maps) {
     };
   }
 
+  // Long unknown JP: summarize role without fake partial gloss
   return {
-    what: hasJp(t) ? `${t}` : t,
+    what: hasJp(t) ? (t.length > 80 ? t.slice(0, 77) + "…" : t) : t,
     role: hasJp(t)
-      ? `Cụm JP «${tip}» — cần map đúng nghĩa/cơ chế đề hỏi.`
+      ? t.length >= 50
+        ? "Đoạn/phát biểu JP — đối chiếu đúng chủ đề đề hỏi (không dịch nửa câu)."
+        : `Cụm JP «${tip}» — map đúng nghĩa/cơ chế đề hỏi.`
       : `Lựa chọn «${tip}» — đối chiếu với đáp án đúng.`,
   };
+}
+
+function jpSafeCount(s) {
+  return (String(s || "").match(/[\u3040-\u30ff\u3400-\u9fff]/g) || []).length;
 }
 
 function rebuildOne(q, remote, maps) {
@@ -443,27 +505,20 @@ function rebuildOne(q, remote, maps) {
     exp.questionVi = translateQuestion(qText, maps);
   }
 
-  // Options VI — always prefer "JP — gloss" when source is JP
+  // Options VI — clean VI only (never JP+VI soup)
   exp.optionsVi = {};
   for (const L of letters) {
-    let ovi = translateOpt(options[L], maps);
     const raw = String(options[L] || "");
-    if (hasJp(raw)) {
-      const od = defineOpt(raw, maps);
-      const w = String(od.what || "");
-      let gloss = "";
-      const mColon = w.match(/[:：]\s*(.+)$/);
-      const mDash = w.match(/\s[—–-]\s*(.+)$/);
-      if (mColon && hasVi(mColon[1])) gloss = mColon[1].trim();
-      else if (mDash && hasVi(mDash[1])) gloss = mDash[1].trim();
-      else if (hasVi(w)) {
-        // strip leading JP prefix if present
-        gloss = w.replace(raw, "").replace(/^[\s:：—–-]+/, "").trim() || w;
-      } else if (hasVi(ovi) && !hasJp(ovi)) gloss = ovi;
-      // lexicon direct
-      if (!hasVi(gloss) && JP_VI[raw]) gloss = JP_VI[raw];
-      if (hasVi(gloss)) ovi = `${raw} — ${gloss}`;
-      else if (!hasVi(ovi)) ovi = `${raw} — ${od.role || "thuật ngữ JP"}`;
+    let ovi = translateOpt(raw, maps);
+    // Hard reject soup
+    if (isJpViSoup(ovi)) {
+      const clean = glossJpClean(raw);
+      ovi = clean ? `${raw} — ${clean}` : raw;
+    }
+    // If still pure JP long, try defineOpt clean path
+    if (hasJp(ovi) && !hasVi(ovi) && raw.length >= 12) {
+      const clean = glossJpClean(raw);
+      if (clean) ovi = `${raw} — ${clean}`;
     }
     exp.optionsVi[L] = ovi;
   }
@@ -550,19 +605,40 @@ function rebuildOne(q, remote, maps) {
       "ネットワークセキュリティ = an ninh mạng",
       "Server + dữ liệu quan trọng → cần security (không nhầm digital computer)."
     );
-  } else {
+  } else if (/文字コード/.test(qText)) {
     exp.intent = bullets(
-      remoteP.qvi && hasVi(remoteP.qvi) ? "Đọc kỹ đề (đã dịch) và chọn đúng bản chất kỹ thuật." : "Câu JIT: nắm định nghĩa/thứ tự/thuật ngữ CNTT.",
+      "文字コード (mã ký tự): quy tắc map ký tự ↔ mã số nhị phân.",
+      "Chọn phát biểu đúng về bản chất lưu chữ trong máy tính."
+    );
+    exp.concept = bullets(
+      "Mã ký tự: dữ liệu chữ được ghi dưới dạng dãy bit/số (0 và 1), không lưu «hình chữ» nguyên thủy.",
       ansDef.what
     );
-    exp.concept = bullets(ansDef.what, ansDef.role);
     exp.whyCorrect = bullets(
-      ...remoteP.why,
-      remoteP.note,
-      ansDef.what,
-      `Đáp án ${primary}: ${ansVi}`
+      ...remoteP.why.filter((l) => hasVi(l) && !isJpViSoup(l)),
+      glossJpClean(ansText) || ansDef.what,
+      "Máy chỉ lưu mã số 0/1; «chữ» là cách diễn giải theo bảng mã (ASCII, Unicode…)."
     );
-    if (remoteP.tip?.length) exp.memoryTip = bullets(...remoteP.tip);
+    exp.memoryTip = bullets(
+      "文字コード = mã ký tự",
+      "Chữ trên màn hình ← decode dãy 0/1 theo bảng mã."
+    );
+  } else {
+    const ansClean = glossJpClean(ansText) || (hasVi(ansDef.what) && !isJpViSoup(ansDef.what) ? ansDef.what : "");
+    exp.intent = bullets(
+      remoteP.qvi && hasVi(remoteP.qvi) && !isJpViSoup(remoteP.qvi)
+        ? "Đọc kỹ đề (đã dịch) và chọn đúng bản chất kỹ thuật."
+        : "Câu JIT: nắm định nghĩa/thứ tự/thuật ngữ CNTT.",
+      ansClean || null
+    );
+    exp.concept = bullets(ansClean || ansDef.what, ansDef.role);
+    exp.whyCorrect = bullets(
+      ...remoteP.why.filter((l) => hasVi(l) && !isJpViSoup(l)),
+      remoteP.note && hasVi(remoteP.note) && !isJpViSoup(remoteP.note) ? remoteP.note : null,
+      ansClean || ansDef.what,
+      ansClean ? `Đáp án ${primary}: ${ansClean}` : `Đáp án ${primary}.`
+    );
+    if (remoteP.tip?.length) exp.memoryTip = bullets(...remoteP.tip.filter((x) => hasVi(x) && !isJpViSoup(x)));
   }
 
   if (!exp.whyCorrect) exp.whyCorrect = bullets(ansDef.what, `Đáp án ${primary}.`);
@@ -590,18 +666,18 @@ function rebuildOne(q, remote, maps) {
     if (ww && (BANNED.test(ww) || (!hasVi(ww) && hasJp(ww)))) ww = null;
 
     if (!ww) {
-      const wrongVi = ovi.includes("—") || ovi.includes(":")
-        ? ovi.replace(/^[^—:]+[—:]\s*/, "").trim()
-        : ovi;
-      const rightVi = ansVi.includes("—") || ansVi.includes(":")
-        ? ansVi.replace(/^[^—:]+[—:]\s*/, "").trim()
-        : ansVi;
+      const wrongVi =
+        glossJpClean(opt) ||
+        (ovi.includes("—") ? ovi.split("—").slice(1).join("—").trim() : hasVi(ovi) && !isJpViSoup(ovi) ? ovi : "");
+      const rightVi =
+        glossJpClean(ansText) ||
+        (ansVi.includes("—") ? ansVi.split("—").slice(1).join("—").trim() : hasVi(ansVi) && !isJpViSoup(ansVi) ? ansVi : "");
       if (kind === "vi2jp" && term) {
-        ww = `«${wrongVi || ovi}» không phải bản dịch tiếng Nhật của «${term}». Đúng: «${ansText}» (${rightVi || ansVi}).`;
+        ww = `«${wrongVi || ovi}» không phải bản dịch tiếng Nhật của «${term}». Đúng: «${ansText}»${rightVi ? ` (${rightVi})` : ""}.`;
       } else if (kind === "jp2vi" && term) {
         ww = `«${wrongVi || ovi}» không phải nghĩa Việt đúng của «${term}». Đúng: «${ansText}».`;
       } else if (kind === "imi" && term) {
-        ww = `Không phải nghĩa chuẩn của «${term}». Nghĩa đúng: ${rightVi || ansVi}.`;
+        ww = `Không phải nghĩa chuẩn của «${term}». Nghĩa đúng: ${rightVi || ansText}.`;
       } else if (/ネットワークセキュリティ/.test(qText)) {
         if (/デジタルコンピュータ|デジタル時計|デジタル/.test(opt))
           ww = "Đây là kiến thức máy tính số/digital (rời rạc hóa), không giải thích vì sao cần an ninh mạng.";
@@ -611,10 +687,23 @@ function rebuildOne(q, remote, maps) {
           ww = null; // correct
         else
           ww = `Không giải thích an ninh mạng. Đúng: server thường lưu thông tin quan trọng nên cần bảo vệ.`;
+      } else if (/文字コード/.test(qText)) {
+        if (/アナログ/.test(opt))
+          ww = "Đây là định nghĩa analog (đại lượng liên tục) — không giải thích mã ký tự / lưu chữ bằng 0-1.";
+        if (/デジタルコンピュータでは|一定単位|近似/.test(opt))
+          ww = "Nói cách máy tính số xấp xỉ số rời rạc — chưa phải bản chất «chữ được mã hóa thành 0/1».";
+        if (/現在使われているコンピュータ/.test(opt))
+          ww = "Chỉ nói máy hiện dùng là digital — không giải thích 文字コード.";
+        if (/0\s*と\s*1|0 と 1|文字そのもの/.test(opt)) ww = null;
       } else {
-        // Avoid "không khớp đáp án C" template — state what the option is vs topic
-        ww = `«${String(wrongVi || ovi).slice(0, 80)}» thuộc khái niệm/cơ chế khác. Đúng: ${String(rightVi || ansVi).slice(0, 80)}.`;
+        const wLabel = wrongVi || (hasJp(opt) ? "Phát biểu JP này" : String(ovi).slice(0, 60));
+        const rLabel = rightVi || "đáp án đúng của đề";
+        ww = `${wLabel} thuộc khái niệm/cơ chế khác đề đang hỏi. Đúng: ${rLabel}.`;
       }
+    }
+    // Never leave soup in whyWrong
+    if (ww && isJpViSoup(ww)) {
+      ww = `Phương án này không khớp chủ đề đề hỏi. Đáp án đúng: ${glossJpClean(ansText) || "xem đáp án chuẩn"}.`;
     }
     // ensure uniqueness per option
     ww = `${ww} [Lựa chọn ${L}]`;
@@ -686,7 +775,7 @@ const outQs = local.questions.map((q) => {
 const payload = {
   subject: "jit",
   upgradedAt: new Date().toISOString(),
-  explainPass: "jit-all-v3-security-gloss",
+  explainPass: "jit-all-v4-no-soup",
   count: outQs.length,
   rebuilt: outQs.length,
   bannedLeft,
