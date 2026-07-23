@@ -265,6 +265,30 @@ const DICT = [
     tags: ["net", "fe"],
   },
   {
+    re: [/\bHDLC\b|high-?level data link control|bit\s*stuffing|inserts? a zero after/i],
+    what: "HDLC (High-level Data Link Control): truyền frame, full-duplex; bit stuffing chèn 0 sau dãy bit 1 để không nhầm cờ flag.",
+    role: "Giao thức tầng data link; đặc trưng flag + bit stuffing + full-duplex.",
+    tags: ["net", "fe"],
+  },
+  {
+    re: [/\bBasic Procedure\s*\(BSC\)|\bBinary Synchronous\b/i],
+    what: "Basic Procedure (BSC / Binary Synchronous Communication): giao thức đồng bộ IBM cổ.",
+    role: "Khác HDLC; acronym BSC ở đây không phải Balanced Scorecard (thẻ điểm cân bằng).",
+    tags: ["net", "fe"],
+  },
+  {
+    re: [/\bToken passing\b/i],
+    what: "Token passing: chỉ trạm giữ token mới được truyền, tránh va chạm.",
+    role: "LAN token (Token Ring/Bus); không dùng bit stuffing kiểu HDLC.",
+    tags: ["net", "fe"],
+  },
+  {
+    re: [/\bBalanced Scorecard\b/i],
+    what: "Balanced Scorecard (BSC): khung đo hiệu suất (tài chính, khách hàng, quy trình, học hỏi).",
+    role: "Quản trị chiến lược — không phải giao thức mạng Basic Procedure (BSC).",
+    tags: ["mgmt", "fe"],
+  },
+  {
     re: [/\bexpanded\b/i],
     what: "Buộc widget con chiếm toàn bộ không gian còn lại theo main axis của Flex (Row/Column/Flex).",
     role: "Trong Row giãn ngang, trong Column giãn dọc; nhiều Expanded chia phần trống theo flex. Tương đương Flexible(fit: FlexFit.tight).",
@@ -787,6 +811,19 @@ function defineCorrect(question, ansText) {
       role: "Phân biệt với CSMA/CD — không nghe kênh/tranh chấp va chạm.",
       tags: ["net", "fe"],
     };
+  }
+  // HDLC: frames + full-duplex + bit stuffing (zero after ones / flag)
+  if (
+    /inserts? a zero after|bit\s*stuffing|confused with a flag|full-?duplex/i.test(q) &&
+    /frame|protocol|hdlc|flag/i.test(q + " " + a)
+  ) {
+    if (/\bHDLC\b/i.test(a) || /flag sequence|consecutive one bits/i.test(q)) {
+      return {
+        what: "HDLC: High-level Data Link Control — truyền theo frame, full-duplex, bit stuffing (chèn 0 sau dãy bit 1) để không nhầm cờ flag.",
+        role: "Đúng khi đề nêu frame + full-duplex + chèn bit 0 sau dãy 1 (flag transparency).",
+        tags: ["net", "fe"],
+      };
+    }
   }
 
   // Stream vs Future: question mentions both — pick by answer nature
