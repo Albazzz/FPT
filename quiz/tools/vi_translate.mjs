@@ -2,7 +2,14 @@
  * EN → VI translation helpers for quiz options/questions.
  * Prefer full-phrase hits; then multi-word chunks; then light word map.
  * Keep short technical tokens (Dart, List, HTTP…) as-is.
+ * Long FE exam sentences: use fe_sentence_translate (phrase-first).
  */
+import {
+  translateFeSentence,
+  isHalfEnglish,
+  enMeaningfulCount,
+} from "./fe_sentence_translate.mjs";
+import { matchFeQExact } from "./fe_q_exact.mjs";
 
 export function hasVi(s) {
   return /[àáạảãâăèéêìíòóôơùúưỳýđÀÁẠẢÃÂĂÈÉÊÌÍÒÓÔƠÙÚƯỲÝĐ\u1EA0-\u1EF9]/i.test(
@@ -482,17 +489,18 @@ export const OPT_WORDS = [
   [/\bfor\b/gi, "cho"],
   [/\band\b/gi, "và"],
   [/\bor\b/gi, "hoặc"],
-  [/\bthe\b/gi, ""],
-  [/\ba\b/gi, "một"],
-  [/\ban\b/gi, "một"],
-  [/\bto\b/gi, "để"],
-  [/\bof\b/gi, "của"],
-  [/\bin\b/gi, "trong"],
-  [/\bon\b/gi, "trên"],
-  [/\bat\b/gi, "tại"],
-  [/\bby\b/gi, "bằng"],
-  [/\bis\b/gi, "là"],
-  [/\bare\b/gi, "là"],
+  // Articles only when followed by a real word — never strip math vars (a*4, b+1)
+  [/\bthe\b(?=\s+[A-Za-z])/gi, ""],
+  [/\ban\b(?=\s+[A-Za-z]{2,})/gi, "một"],
+  [/\ba\b(?=\s+[A-Za-z]{2,})/gi, "một"],
+  [/\bto\b(?=\s)/gi, "để"],
+  [/\bof\b(?=\s)/gi, "của"],
+  [/\bin\b(?=\s)/gi, "trong"],
+  [/\bon\b(?=\s)/gi, "trên"],
+  [/\bat\b(?=\s)/gi, "tại"],
+  [/\bby\b(?=\s)/gi, "bằng"],
+  [/\bis\b(?=\s)/gi, "là"],
+  [/\bare\b(?=\s)/gi, "là"],
   [/\bused\b/gi, "được dùng"],
   [/\busing\b/gi, "dùng"],
   [/\buse\b/gi, "dùng"],
@@ -884,15 +892,27 @@ export function translateOpt(opt) {
   // Capitalize first letter for sentence-like options
   if (/^[a-zăâêôơưàáạảã]/i.test(t) && t.length > 8) t = titleCaseVi(t);
 
+  // Long / half-EN FE options → full-sentence pass (not word salad)
+  if (raw.length >= 28 && isHalfEnglish(t)) {
+    const full = translateFeSentence(raw);
+    if (full && !isHalfEnglish(full)) return full;
+    if (full && enCount(full) < enCount(t)) return full;
+  }
+
   // If still pure English long phrase, last-resort descriptive wrap (not "định hướng")
   if (!hasVi(t) && !hasJp(t) && t.length > 35 && /^[A-Za-z0-9]/.test(t)) {
-    // try one more aggressive pass
+    const full = translateFeSentence(raw);
+    if (full && (hasVi(full) || enCount(full) < enCount(raw))) return full;
     let w = raw;
     for (const [re, rep] of OPT_WORDS) w = w.replace(re, rep);
     w = polish(w);
     if (hasVi(w)) return titleCaseVi(w);
   }
   return t || raw;
+}
+
+function enCount(s) {
+  return (String(s || "").match(/[A-Za-z]{3,}/g) || []).length;
 }
 
 /** Longer EN→VI phrase pass to reduce half-translated stems */
@@ -1087,8 +1107,12 @@ function deepEnPhrases(s) {
   for (const [re, rep] of pairs) t = t.replace(re, rep);
   // clean double spaces / leftover "Đề:"
   t = t.replace(/^Đề:\s*/i, "").replace(/\s+/g, " ").trim();
-  // drop lone English stubs like "is" "the" "a" if isolated badly
-  t = t.replace(/\b(is|are|was|were|be|been|being|the|a|an|of|to|in|on|at|for|by|as|it|its|this|that|these|those|does|do|did|can|could|will|would|should|may|might)\b/gi, " ");
+  // drop lone English stubs — never strip single-letter math vars (a*4)
+  t = t.replace(
+    /\b(is|are|was|were|be|been|being|the|an|of|to|in|on|at|for|by|as|it|its|this|that|these|those|does|do|did|can|could|will|would|should|may|might)\b/gi,
+    " "
+  );
+  t = t.replace(/\ba\b(?=\s+[A-Za-z]{2,})/gi, " ");
   t = t.replace(/\s+/g, " ").replace(/\s([?.!,;:])/g, "$1").trim();
   return t;
 }
@@ -1096,8 +1120,18 @@ function deepEnPhrases(s) {
 export function translateQuestion(q) {
   let s = String(q || "").trim();
   if (!s) return s;
-  if (hasVi(s) && !hasJp(s)) return s;
+  if (hasVi(s) && !hasJp(s) && !isHalfEnglish(s)) return s;
   if (hasJp(s)) return null;
+
+  // Exact FE bank stems (full-sentence curated) — highest priority
+  const feExact = matchFeQExact(s);
+  if (feExact) return feExact;
+
+  // Full-sentence FE pass for long stems
+  if (s.length >= 40) {
+    const full = translateFeSentence(s);
+    if (full && !isHalfEnglish(full)) return full;
+  }
 
   const low = s.toLowerCase().replace(/\s+/g, " ");
   for (const [en, vi] of Q_EXACT) {
@@ -1112,31 +1146,66 @@ export function translateQuestion(q) {
     }
   }
   t = deepEnPhrases(t);
-  for (const [re, rep] of OPT_WORDS.slice(0, 120)) t = t.replace(re, rep);
+  // Avoid bare article/glue map on long stems (word-salad); only first stems + phrases
+  if (s.length < 80) {
+    for (const [re, rep] of OPT_WORDS.slice(0, 120)) t = t.replace(re, rep);
+  }
   t = polish(t);
 
   // If still mostly English tokens, run deep pass on original
-  const enLeft = (t.match(/[A-Za-z]{4,}/g) || []).length;
-  if (enLeft >= 6) {
-    t = deepEnPhrases(s);
-    for (const [re, rep] of OPT_WORDS.slice(0, 120)) t = t.replace(re, rep);
-    t = polish(t);
+  let enLeft = enMeaningfulCount(t);
+  if (enLeft >= 6 || isHalfEnglish(t)) {
+    const full2 = translateFeSentence(s);
+    if (full2 && enMeaningfulCount(full2) < enLeft) t = full2;
+    else {
+      t = deepEnPhrases(s);
+      t = polish(t);
+    }
   }
 
+  enLeft = enMeaningfulCount(t);
   if (!hasVi(t) && enLeft >= 4) {
-    // Last resort: deep on original + light mark (still try VI particles from stems)
-    t = deepEnPhrases(s);
+    const full3 = translateFeSentence(s);
+    if (full3 && hasVi(full3) && !isHalfEnglish(full3)) return full3;
+    // Prefer clean condensed EN prefix over word-salad
+    if (isHalfEnglish(t) || enLeft >= 8) {
+      t = deepEnPhrases(s);
+      t = polish(t);
+      if (!hasVi(t) || isHalfEnglish(t)) return `Đề: ${s.length > 160 ? s.slice(0, 157) + "…" : s}`;
+    }
     if (!hasVi(t)) t = `Câu hỏi: ${t}`;
+  }
+  // Reject salad: if still half-EN with high density, fall back to Đề: original
+  if (isHalfEnglish(t) && enMeaningfulCount(t) >= 8) {
+    return feExact || `Đề: ${s.length > 160 ? s.slice(0, 157) + "…" : s}`;
   }
   return titleCaseVi(t);
 }
 
 export function translateOptDeep(opt) {
+  const raw = String(opt || "").trim();
+  if (!raw) return raw;
+  // Exact phrase book first
+  const full0 = translateFeSentence(raw);
+  if (full0 && !isHalfEnglish(full0) && hasVi(full0)) return full0;
+  if (raw.length >= 24 && full0 && enMeaningfulCount(full0) + 2 < enMeaningfulCount(raw) && hasVi(full0)) {
+    return full0;
+  }
   const base = translateOpt(opt);
   if (!base) return base;
   if (hasVi(base) && (base.match(/[A-Za-z]{4,}/g) || []).length < 4) return base;
+  if (isHalfEnglish(base) && raw.length >= 20) {
+    const full2 = translateFeSentence(raw);
+    if (full2 && enMeaningfulCount(full2) <= enMeaningfulCount(base) && hasVi(full2)) return full2;
+  }
+  // Short options only: word map
   let t = deepEnPhrases(base);
-  for (const [re, rep] of OPT_WORDS.slice(0, 100)) t = t.replace(re, rep);
+  if (raw.length < 90) {
+    for (const [re, rep] of OPT_WORDS.slice(0, 100)) t = t.replace(re, rep);
+  }
   t = polish(t);
-  return hasVi(t) ? titleCaseVi(t) : base;
+  if (hasVi(t) && !isHalfEnglish(t)) return titleCaseVi(t);
+  // Prefer fully translated short phrase or keep base if cleaner
+  if (full0 && hasVi(full0) && enMeaningfulCount(full0) <= enMeaningfulCount(t)) return full0;
+  return hasVi(t) && enMeaningfulCount(t) < enMeaningfulCount(raw) ? titleCaseVi(t) : base;
 }

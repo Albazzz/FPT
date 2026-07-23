@@ -11,7 +11,11 @@ import {
   translateQuestion as lexTranslateQuestion,
   translateOptDeep as lexTranslateOptDeep,
 } from "./vi_translate.mjs";
-import { FE_Q_EXACT } from "./fe_q_exact.mjs";
+import { FE_Q_EXACT, matchFeQExact } from "./fe_q_exact.mjs";
+import {
+  translateFeSentence,
+  isHalfEnglish as isHalfEnFe,
+} from "./fe_sentence_translate.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dataDir = path.join(__dirname, "../data");
@@ -246,6 +250,18 @@ const DICT = [
     re: [/\bOSI\b|open systems interconnection/i],
     what: "Mô hình 7 tầng Open Systems Interconnection (chuẩn tham chiếu mạng).",
     role: "Phân lớp chức năng: Physical → … → Application; routing ở tầng Network (L3).",
+    tags: ["net", "fe"],
+  },
+  {
+    re: [/\btoken\s*ring\b|\bcirculating token\b|token rather than sensing/i],
+    what: "Token Ring / token bus: quyền truyền qua token tuần hoàn, tránh tranh chấp kênh.",
+    role: "Khác CSMA/CD (nghe kênh, va chạm). Token cấp quyền gửi có trật tự.",
+    tags: ["net", "fe"],
+  },
+  {
+    re: [/\bCSMA\/CD\b|carrier sense multiple access/i],
+    what: "CSMA/CD: nghe kênh, truyền khi rỗi, phát hiện va chạm và truyền lại.",
+    role: "Ethernet cổ điển; khác token (không cần token tuần hoàn).",
     tags: ["net", "fe"],
   },
   {
@@ -761,6 +777,16 @@ function defineCorrect(question, ansText) {
   ) {
     const aHit = lookup(a);
     if (aHit && aHit.tags && aHit.tags.includes("net")) return packDef(aHit);
+  }
+  // Token vs CSMA/CD
+  if (/circulat(?:es|ing) control information|gaining transmission privilege|distinguishes this method from CSMA/i.test(q)) {
+    const hit = lookup("circulating token token ring");
+    if (hit) return packDef(hit);
+    return {
+      what: "Token (Token Ring/Token Bus): quyền gửi theo token tuần hoàn.",
+      role: "Phân biệt với CSMA/CD — không nghe kênh/tranh chấp va chạm.",
+      tags: ["net", "fe"],
+    };
   }
 
   // Stream vs Future: question mentions both — pick by answer nature
@@ -1333,14 +1359,15 @@ function translateQuestion(q) {
   if (hasVi(s) && !hasJp(s)) return s;
   if (hasJp(s)) return null;
 
-  // Exact full FE stems (remaining half-translated bank)
-  const snorm = s.replace(/\s+/g, " ").trim();
-  for (const [en, vi] of FE_Q_EXACT) {
-    const enN = en.replace(/\s+/g, " ").trim();
-    if (snorm === enN || snorm.startsWith(enN.slice(0, Math.min(80, enN.length))) && snorm.length <= enN.length + 40)
-      return vi;
-    // fuzzy: first 100 chars
-    if (snorm.slice(0, 100) === enN.slice(0, 100) && enN.length > 40) return vi;
+  // Exact / best full FE stems (prefer longest match — avoid short prefix stealing)
+  const bestVi = matchFeQExact(s);
+  if (bestVi) return bestVi;
+
+  // Full-sentence FE translator (phrase-first)
+  if (s.length >= 35) {
+    const full = translateFeSentence(s);
+    if (full && !isHalfEnFe(full)) return full;
+    if (full && hasVi(full) && (full.match(/[A-Za-z]{4,}/g) || []).length < 10) return full;
   }
 
   for (const [re, rep] of Q_PHRASES) {
@@ -1348,12 +1375,13 @@ function translateQuestion(q) {
   }
   // Lex only if it actually produced Vietnamese (avoid English echo blocking Q_PHRASES)
   const lex = lexTranslateQuestion(q);
-  if (lex && hasVi(lex) && !/^Câu hỏi:\s/i.test(lex)) {
-    // Reject still-heavy English half-translates when we have a better exact later — keep if en density low
-    const enLeft = (lex.match(/[A-Za-z]{4,}/g) || []).length;
-    if (enLeft < 8) return lex;
+  if (lex && hasVi(lex) && !/^Câu hỏi:\s/i.test(lex) && !isHalfEnFe(lex)) {
+    return lex;
   }
-  // Last: deep lex even if half, better than raw EN
+  if (lex && hasVi(lex) && !isHalfEnFe(lex)) return lex;
+  // Prefer sentence translate over half lex
+  const full2 = translateFeSentence(s);
+  if (full2 && hasVi(full2)) return full2;
   if (lex && hasVi(lex)) return lex;
   return `Đề: ${s}`;
 }
@@ -1562,6 +1590,15 @@ function whyWrongSpecific(opt, optDef, correctDef, question, remoteWhy) {
     if (/\bswitch\b/i.test(o) && !/router|l3/i.test(o))
       return "Switch chủ yếu tầng 2 (MAC); đề cần thiết bị tầng 3 định tuyến liên mạng.";
     if (/\brouter\b/i.test(o)) return null;
+  }
+  if (/CSMA\/CD|circulat(?:es|ing) control|transmission privilege|circulating token/i.test(q)) {
+    if (/star networks|cannot operate on a bus/i.test(o))
+      return "Token không bị giới hạn chỉ mạng sao; Token Bus chạy trên bus — không phải điểm phân biệt chính với CSMA/CD.";
+    if (/transmit immediately and detect collisions/i.test(o))
+      return "Đây là đặc trưng CSMA/CD (truyền khi rỗi + va chạm), không phải token.";
+    if (/time-based logical channels|time slots/i.test(o))
+      return "Đây là TDM/ghép kênh theo thời gian — khác token và CSMA/CD.";
+    if (/circulating token|rather than sensing/i.test(o)) return null;
   }
 
   // Domain contrasts
@@ -2163,8 +2200,8 @@ for (const [localKey, remoteFile] of mapEntries) {
     : forceAll
       ? localKey === "mln"
         ? "all-mln-v7-pipeline"
-        : "all-prm-jfe-v8-net"
-      : "imported-v8";
+        : "all-prm-jfe-v10-sentence"
+      : "imported-v10";
   const qs = local.questions.map((q) => {
     const isImp = IMPORTED.has(q.task) || IMPORTED.has(q.source);
     const doRebuild = forceAll || isImp;

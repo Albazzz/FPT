@@ -1,8 +1,11 @@
 /**
  * Exact EN→VI for remaining half-translated JFE stems.
  * Match full question text (trim).
+ * Bank-actual strings: see fe_q_exact_bank.mjs (merged below).
  */
-export const FE_Q_EXACT = [
+import { FE_Q_EXACT_BANK } from "./fe_q_exact_bank.mjs";
+
+const FE_Q_EXACT_CORE = [
   [
     "When a file of 10^6 bytes is transmitted by using a 64 kbps line, approximately how long (in seconds) does it take to transfer the file? *(phần cuối bị khuất, có xuất hiện cụm)* 80%.",
     "Truyền file 10^6 byte trên đường 64 kbps mất khoảng bao nhiêu giây?",
@@ -371,4 +374,249 @@ export const FE_Q_EXACT = [
     "Which attack tricks users into revealing secrets via fake websites/emails?",
     "Tấn công dụ lộ bí mật qua web/email giả?",
   ],
+  // Residual salad stems (actual bank wording)
+  [
+    "A process is waiting for data from a disk drive before continuing execution. Which state is the process most likely in?",
+    "Tiến trình đang chờ dữ liệu từ đĩa trước khi chạy tiếp. Thường ở trạng thái nào?",
+  ],
+  [
+    "A software development team wants to distribute software while allowing users to view, modify, and redistribute the source code.",
+    "Nhóm muốn phân phối phần mềm cho phép xem, sửa và phân phối lại mã nguồn. Loại license/phần mềm nào?",
+  ],
+  [
+    "Why is user-friendly interface design important?",
+    "Vì sao thiết kế giao diện thân thiện người dùng quan trọng?",
+  ],
+  [
+    "Which of the following devices was mainly used as the logic gate in first-generation computers?",
+    "Thiết bị nào chủ yếu làm cổng logic ở máy tính thế hệ 1?",
+  ],
+  [
+    "Which of the following character codes is internationally standardized for multilingual text representation?",
+    "Bảng mã ký tự nào được chuẩn hóa quốc tế cho đa ngôn ngữ?",
+  ],
+  [
+    "Which of the following software is typically stored in ROM and remains available even when power is turned off?",
+    "Phần mềm nào thường lưu trong ROM, vẫn còn khi tắt nguồn?",
+  ],
+  [
+    "Which of the following is performed in the Plan phase of a PDCA model that is applied to any ISMS process?",
+    "Trong Plan của PDCA áp dụng cho ISMS, thực hiện việc gì?",
+  ],
+  [
+    "Which of the following is biometric authentication that uses information which can be obtained from the human eye?",
+    "Xác thực sinh trắc nào dùng thông tin lấy từ mắt người?",
+  ],
+  [
+    "A company wants software that can be legally copied and used without purchasing a license fee. Which category is most appropriate?",
+    "Muốn phần mềm được sao chép/dùng hợp pháp không trả phí license. Nhóm nào phù hợp?",
+  ],
+  [
+    "Which component combines multiple object modules into a single executable program?",
+    "Thành phần nào ghép nhiều object module thành một chương trình thực thi?",
+  ],
+  [
+    "Which multimedia element represents moving visual content?",
+    "Thành phần multimedia nào biểu diễn nội dung hình ảnh chuyển động?",
+  ],
+  [
+    "According to ISO/IEC 27001 (JIS Q 27001), which of the following is the definition of availability in information security?",
+    "Theo ISO/IEC 27001, định nghĩa availability (sẵn sàng) trong an toàn thông tin là gì?",
+  ],
+  [
+    "Free use without fee legally for OSS category?",
+    "Dùng miễn phí hợp pháp không mất phí — thuộc nhóm OSS/phần mềm nào?",
+  ],
+  [
+    "Admin action forgotten password after verify?",
+    "Admin nên làm gì khi user quên mật khẩu (sau khi đã xác minh danh tính)?",
+  ],
+  [
+    "Stack: PUSH3 PUSH7 POP PUSH5 PUSH9 POP top?",
+    "Stack: PUSH3 PUSH7 POP PUSH5 PUSH9 POP — đỉnh stack là gì?",
+  ],
+  [
+    "Queue: ENQA ENQB DEQ ENQC ENQD DEQ front?",
+    "Hàng đợi: ENQA ENQB DEQ ENQC ENQD DEQ — phần tử front là gì?",
+  ],
+  [
+    "Stack empty PUSH1 PUSH2 POP result top?",
+    "Stack rỗng: PUSH1 PUSH2 POP — đỉnh còn lại là gì?",
+  ],
+  [
+    "Queue empty ENQ1 ENQ2 DEQ front?",
+    "Hàng đợi rỗng: ENQ1 ENQ2 DEQ — front là gì?",
+  ],
+  [
+    "Best OS for many short interactive jobs fairness?",
+    "OS phù hợp nhiều job tương tác ngắn, công bằng?",
+  ],
+  [
+    "Clean desk policy is which measure type?",
+    "Chính sách clean desk thuộc loại biện pháp nào?",
+  ],
+  [
+    "A network administrator needs a device that forwards traffic between different logical networks based on logical addressing. The device must also operate at the OSI layer where routing and congestion control are performed. Which device BEST satisfies the requirement?",
+    "Cần thiết bị chuyển tiếp giữa các mạng logic theo địa chỉ logic, hoạt động tầng OSI định tuyến/kiểm soát tắc nghẽn. Thiết bị nào?",
+  ],
+  [
+    "Which of the following is an appropriate role of FCS in a frame that is transmitted through the HDLC procedure?",
+    "Vai trò phù hợp của FCS trong khung HDLC là gì?",
+  ],
+  [
+    "Which of the following is a service delivery process that is defined, agreed, recorded, and managed in IT service management?",
+    "Quy trình cung cấp dịch vụ được định nghĩa, thỏa thuận, ghi nhận và quản lý trong ITSM là gì?",
+  ],
+  [
+    "Which of the following is an appropriate technique that is used for implementing a queue as a data structure?",
+    "Kỹ thuật nào phù hợp để cài đặt hàng đợi (queue)?",
+  ],
+  [
+    "Which of the following is an appropriate combination of the fundamental object-oriented programming concepts?",
+    "Tổ hợp khái niệm OOP cơ bản nào phù hợp?",
+  ],
+  [
+    "Which of the following is the appropriate combination of 4 color inks or toners for a full-color printer?",
+    "Tổ hợp 4 mực/toner in màu đầy đủ (CMYK) nào đúng?",
+  ],
+  [
+    "Which of the following is an appropriate description in comparison of how to safeguard IC cards and magnetic cards against forgery?",
+    "Mô tả phù hợp khi so sánh chống giả thẻ IC và thẻ từ?",
+  ],
+  [
+    "A part of a program was changed to add a new function to a system in operation. Which of the following is the most appropriate environment that is used for testing the new program without affecting the system in operation, in order to determine whether or not the system can be brought into full operation?",
+    "Sửa chương trình thêm chức năng trên hệ đang chạy. Môi trường test nào phù hợp nhất, không ảnh hưởng hệ live?",
+  ],
+  [
+    "Which of the following is an explanation of the use case diagram shown below?",
+    "Giải thích nào đúng về sơ đồ use case bên dưới?",
+  ],
+  [
+    "Which of the following is INCORRECT formular to determine break-event point?",
+    "Công thức nào SAI khi tính điểm hòa vốn (break-even)?",
+  ],
+  [
+    "Which combination of inks is typical for full-color printing (CMYK)?",
+    "Tổ hợp mực điển hình cho in màu đầy đủ (CMYK)?",
+  ],
+  [
+    "An arithmetic right shift of a negative number in 2's complement representation:",
+    "Dịch phải số học số âm biểu diễn bù 2 sẽ:",
+  ],
+  [
+    "Why is exclusive control (locking) needed in a DBMS?",
+    "Vì sao DBMS cần kiểm soát độc quyền (locking)?",
+  ],
+  [
+    "Normalization in relational databases mainly aims to:",
+    "Chuẩn hóa CSDL quan hệ chủ yếu nhằm:",
+  ],
+  [
+    "IPv4 address 216.58.221.78 belongs to which class (classful model) and default mask?",
+    "IPv4 216.58.221.78 thuộc lớp nào (classful) và mask mặc định?",
+  ],
+  [
+    "Which OSI layer is primarily associated with end-to-end reliable transport (TCP)?",
+    "Tầng OSI nào gắn với truyền tin cậy end-to-end (TCP)?",
+  ],
+  [
+    "Binary trees can be stored in an array where children of index i are typically at:",
+    "Cây nhị phân lưu mảng: con của chỉ số i thường ở:",
+  ],
+  [
+    "Prefix (Polish) notation places operators:",
+    "Ký pháp tiền tố (Polish) đặt toán tử ở:",
+  ],
+  [
+    "ABC analysis for inventory prioritizes items by:",
+    "Phân tích ABC tồn kho ưu tiên mặt hàng theo:",
+  ],
+  [
+    "Which formula form is related to break-even (contribution approach)?",
+    "Dạng công thức nào liên quan điểm hòa vốn (contribution)?",
+  ],
+  [
+    "SFA (Sales Force Automation) is best described as:",
+    "SFA (Sales Force Automation) mô tả đúng nhất là:",
+  ],
+  [
+    "DFD (Data Flow Diagram) is useful to show:",
+    "DFD (sơ đồ luồng dữ liệu) hữu ích để thể hiện:",
+  ],
+  [
+    "Function point analysis estimates software size based mainly on:",
+    "Function point ước lượng kích thước phần mềm chủ yếu dựa trên:",
+  ],
+  [
+    "Number of one-to-one communication paths among n people is:",
+    "Số đường giao tiếp 1–1 giữa n người là:",
+  ],
+  [
+    "For 6 people needing one-to-one communication, minimum paths are:",
+    "6 người giao tiếp 1–1 — số đường tối thiểu?",
+  ],
+  [
+    "Four cameras 30 fps, 640×480, 16-bit color, 60 seconds. Approx storage? (1MB=10⁶ B)",
+    "4 camera 30fps, 640×480, 16-bit, 60s. Dung lượng xấp xỉ? (1MB=10⁶ B)",
+  ],
+  [
+    "100 students: E40 F30 S25; EF8 ES6 FS5; none 22. How many study all three?",
+    "100 SV: Anh40 Pháp30 Tây25; giao EF8 ES6 FS5; không học 22. Bao nhiêu học cả ba?",
+  ],
+  [
+    "Which RAID level is classically described as striping without parity (no redundancy)?",
+    "RAID level nào cổ điển là striping không parity (không dư thừa)?",
+  ],
+  [
+    "Which structure is best for LIFO temporary storage of return addresses conceptually?",
+    "Cấu trúc nào phù hợp lưu tạm địa chỉ trả về kiểu LIFO?",
+  ],
+  [
+    "Which chart ranks causes by frequency for quality improvement?",
+    "Biểu đồ nào xếp nguyên nhân theo tần suất để cải tiến chất lượng?",
+  ],
+  [
+    "Which process ensures IT services meet agreed targets continuously?",
+    "Quy trình nào đảm bảo dịch vụ IT đạt mục tiêu đã thỏa thuận liên tục?",
+  ],
+  [
+    "Which document decomposes project deliverables into work packages?",
+    "Tài liệu nào phân rã deliverable dự án thành work package?",
+  ],
+  [
+    "Which path has zero total float in a network schedule?",
+    "Đường nào có total float = 0 trên lịch mạng?",
+  ],
 ];
+
+/** Core + bank-actual strings (bank keys win on equal length via longer scan order) */
+export const FE_Q_EXACT = [...FE_Q_EXACT_CORE, ...FE_Q_EXACT_BANK];
+
+/** Normalize whitespace for matching */
+export function normQ(s) {
+  return String(s || "")
+    .replace(/\s+/g, " ")
+    .replace(/[\u201C\u201D]/g, '"')
+    .replace(/[\u2018\u2019]/g, "'")
+    .trim();
+}
+
+/**
+ * Exact-normalized match only (bank file holds actual wording variants).
+ * Prefer longest EN key to avoid short-entry stealing.
+ */
+export function matchFeQExact(question) {
+  const snorm = normQ(question).toLowerCase();
+  if (!snorm) return null;
+  let bestVi = null;
+  let bestLen = 0;
+  for (const [en, vi] of FE_Q_EXACT) {
+    const enN = normQ(en).toLowerCase();
+    if (!enN) continue;
+    if (snorm === enN && enN.length >= bestLen) {
+      bestVi = vi;
+      bestLen = enN.length;
+    }
+  }
+  return bestVi;
+}
