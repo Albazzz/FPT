@@ -85,13 +85,31 @@ for (const q of qs) {
   const qv = e.questionVi || "";
   const qd = enDensity(qv);
   if (!hasVi(qv) && qd.en >= 5) pureQ++;
-  else if (hasVi(qv) && qd.ratio >= Q_THR && qd.meaningful >= 5) halfQ++;
+  else if (
+    hasVi(qv) &&
+    qd.ratio >= Q_THR &&
+    qd.meaningful >= 6 &&
+    /\b(the|and|with|for|that|which|is|are|typically|generally|always|only|done|means|aims|uses|start|protects|provides|shows|needs|cause|good|associated|performed)\b/i.test(
+      qv
+    )
+  )
+    halfQ++;
 
   const optIssues = [];
   for (const [L, vi] of Object.entries(e.optionsVi || {})) {
     const raw = (q.options && q.options[L]) || "";
     const od = enDensity(vi);
-    if (String(raw).length >= 28 && od.ratio >= 0.45 && od.meaningful >= 4) {
+    // Flag only long options that still look like EN salad (not tech-term-heavy VI)
+    const glue =
+      /\b(the|and|with|for|that|which|is|are|always|only|typically|generally|from|into)\b/i.test(
+        vi
+      );
+    if (
+      String(raw).length >= 28 &&
+      od.meaningful >= 5 &&
+      (od.ratio >= 0.5 || glue) &&
+      (!hasVi(vi) || glue || od.meaningful >= 8)
+    ) {
       optIssues.push(L);
       badOptCount++;
     }
@@ -99,8 +117,8 @@ for (const q of qs) {
 
   const qBad =
     (!hasVi(qv) && qd.en >= 5) ||
-    qd.ratio >= Q_THR ||
-    qd.meaningful >= 8 ||
+    (qd.ratio >= Math.max(Q_THR, 0.55) && qd.meaningful >= 6) ||
+    qd.meaningful >= 10 ||
     optIssues.length >= 2;
 
   if (qBad) {

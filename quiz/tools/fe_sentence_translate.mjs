@@ -1043,7 +1043,10 @@ const TECH_KEEP = new Set(
     "firewall packet frame protocol address port packet stream datagram cipher encrypt decrypt key secret public private digital signature authentication authorization " +
     "incident problem change release config baseline milestone deliverable stakeholder vendor customer service availability integrity confidentiality " +
     "product price place promotion cyan magenta yellow black orange purple brown gray red green blue white " +
-    "plan do check act push pop enq deq fifo lifo"
+    "plan do check act push pop enq deq fifo lifo " +
+    "duplex full stuffing bitrate camera soft hard real time deadline fatal degraded quality " +
+    "worm trojan ransomware malware virus sjf shortest job first pipeline stage clock quantum " +
+    "workaround sla feature request root cause documented"
   ).split(/\s+/)
 );
 
@@ -1073,22 +1076,22 @@ export function enMeaningfulCount(s) {
 export function isHalfEnglish(s) {
   const t = String(s || "");
   const m = enMeaningfulCount(t);
-  // Keep common EN tech tokens in good VI sentences
-  if (hasVi(t) && m <= 3) return false;
-  if (m >= 8) return true;
-  if (m >= 4 && !hasVi(t)) return true;
-  if (m >= 5 && hasVi(t)) {
+  // Dense VI + few leftover content words = OK (exam tech terms allowed)
+  if (hasVi(t) && m <= 5) return false;
+  if (m >= 10) return true;
+  if (m >= 5 && !hasVi(t)) return true;
+  if (m >= 7 && hasVi(t)) {
     const all = t.match(/[\p{L}\p{N}]+/gu) || [];
-    const en = all.filter((w) => /^[A-Za-z]/.test(w));
-    // ignore short acronyms in ratio
-    const enReal = en.filter((w) => enMeaningfulCount(w) > 0);
-    if (all.length && enReal.length / all.length >= 0.35) return true;
+    const enReal = all.filter((w) => /^[A-Za-z]/.test(w) && enMeaningfulCount(w) > 0);
+    if (all.length && enReal.length / all.length >= 0.45) return true;
   }
-  // classic word-salad markers (EN articles/verbs mixed with VI glue words)
+  // classic word-salad: EN function words mixed with VI glue
   if (
-    /\b(để|và|của|trong|khi)\b/i.test(t) &&
-    /\b(the|and|with|for|that|which|is|are|to|into|from)\b/i.test(t) &&
-    m >= 4
+    /\b(để|và|của|trong|khi|cho|với|từ)\b/i.test(t) &&
+    /\b(the|and|with|for|that|which|is|are|to|into|from|always|only|typically|generally)\b/i.test(
+      t
+    ) &&
+    m >= 3
   )
     return true;
   return false;

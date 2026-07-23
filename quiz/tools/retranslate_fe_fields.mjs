@@ -48,7 +48,7 @@ function scoreVi(s) {
 }
 
 function leftoverEnGlue(s) {
-  return /\b(the|and|with|of|for|to|is|are|be|by|from|into|that|which|this|as|an|or)\b/i.test(
+  return /\b(the|and|with|of|for|to|is|are|be|by|from|into|that|which|this|as|an|or|not|never|always|only|ever|necessarily|typically|generally|completely|intentionally)\b/i.test(
     String(s || "")
   );
 }

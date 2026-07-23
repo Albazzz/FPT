@@ -1,6 +1,5 @@
 /**
- * Short bank300/books stems → dense Vietnamese (exact keys = actual bank text).
- * Deduped; prefer VI with diacritics.
+ * Short bank stems → dense Vietnamese (exact keys = actual bank text).
  */
 export const FE_BANK300_Q = [
   [
@@ -21,7 +20,7 @@ export const FE_BANK300_Q = [
   ],
   [
     "PC register holds?",
-    "Thanh ghi PC (program counter) giữ gì?"
+    "Thanh ghi PC giữ gì?"
   ],
   [
     "Pipeline hazard types?",
@@ -317,7 +316,7 @@ export const FE_BANK300_Q = [
   ],
   [
     "Outsourcing offshore risk?",
-    "Rủi ro outsourcing offshore?"
+    "Rủi ro outsourcing offshore là gì?"
   ],
   [
     "Copyright protects?",
@@ -353,7 +352,7 @@ export const FE_BANK300_Q = [
   ],
   [
     "Verification vs Validation?",
-    "Verification khác Validation?"
+    "Verification khác Validation thế nào?"
   ],
   [
     "Stakeholder is?",
@@ -385,7 +384,7 @@ export const FE_BANK300_Q = [
   ],
   [
     "General IT controls vs application controls?",
-    "General IT controls khác application controls?"
+    "General IT controls khác application controls thế nào?"
   ],
   [
     "Series 0.99 * 0.99?",
@@ -437,7 +436,7 @@ export const FE_BANK300_Q = [
   ],
   [
     "Soft real-time miss deadline?",
-    "Soft real-time khi trễ deadline thì sao?"
+    "Soft real-time: trễ deadline thì sao?"
   ],
   [
     "Client-server model?",
@@ -501,7 +500,7 @@ export const FE_BANK300_Q = [
   ],
   [
     "Language closest machine with mnemonics?",
-    "Ngôn ngữ gần máy, dùng mnemonic?"
+    "Ngôn ngữ nào gần máy nhất, dùng mnemonic?"
   ],
   [
     "Combines object modules into executable?",
@@ -537,7 +536,7 @@ export const FE_BANK300_Q = [
   ],
   [
     "Register is inside CPU: peripheral?",
-    "Thanh ghi trong CPU — ngoại vi?"
+    "Thanh ghi nằm trong CPU — có phải ngoại vi?"
   ],
   [
     "Scheduling that may starve long jobs?",
@@ -557,7 +556,7 @@ export const FE_BANK300_Q = [
   ],
   [
     "Best recursion call handling?",
-    "Cấu trúc tốt nhất xử lý gọi đệ quy?"
+    "Cấu trúc nào tốt nhất xử lý gọi đệ quy?"
   ],
   [
     "Singly list traverse from?",
@@ -573,7 +572,7 @@ export const FE_BANK300_Q = [
   ],
   [
     "Admin action forgotten password after verify?",
-    "Admin khi user quên MK (đã verify)?"
+    "Admin làm gì khi user quên MK (đã xác minh)?"
   ],
   [
     "Stack: PUSH3 PUSH7 POP PUSH5 PUSH9 POP top?",
@@ -782,5 +781,249 @@ export const FE_BANK300_Q = [
   [
     "International multilingual character code?",
     "Mã ký tự đa ngôn ngữ quốc tế?"
+  ],
+  [
+    "Language closest to machine with mnemonics?",
+    "Ngôn ngữ nào gần máy nhất, dùng mnemonic?"
+  ],
+  [
+    "Best for recursion call handling?",
+    "Cấu trúc nào tốt nhất xử lý gọi đệ quy?"
+  ],
+  [
+    "Mail send protocol?",
+    "Giao thức gửi mail là gì?"
+  ],
+  [
+    "Absolute pathnames start from:",
+    "Đường dẫn tuyệt đối bắt đầu từ:"
+  ],
+  [
+    "Six Sigma is associated with:",
+    "Six Sigma gắn với:"
+  ],
+  [
+    "Acceptance testing is typically done to:",
+    "Acceptance testing thường nhằm:"
+  ],
+  [
+    "Coupling between modules should generally be:",
+    "Coupling giữa các module nhìn chung nên:"
+  ],
+  [
+    "Known error typically means:",
+    "Known error thường nghĩa là:"
+  ],
+  [
+    "Service catalog provides:",
+    "Service catalog cung cấp:"
+  ],
+  [
+    "An external audit is typically performed by:",
+    "Audit bên ngoài thường do ai thực hiện:"
+  ],
+  [
+    "Which scheduling algorithm may cause starvation?",
+    "Thuật toán lập lịch nào có thể gây starvation?"
+  ],
+  [
+    "Hard real-time example idea?",
+    "Ví dụ / ý tưởng hard real-time?"
+  ],
+  [
+    "Allow view/modify/redistribute source?",
+    "Cho phép xem/sửa/phân phối lại mã nguồn?"
+  ],
+  [
+    "Antivirus signature method good for?",
+    "Phương pháp chữ ký antivirus tốt cho?"
+  ],
+  [
+    "Linear search needs sorted data?",
+    "Linear search có cần dữ liệu đã sắp?"
+  ],
+  [
+    "Binary search needs sorted data?",
+    "Binary search có cần dữ liệu đã sắp?"
+  ],
+  [
+    "Intellectual property rights generally protect:",
+    "Quyền sở hữu trí tuệ nói chung bảo vệ:"
+  ],
+  [
+    "Which metric is Mean Time To Repair?",
+    "Chỉ số nào là Mean Time To Repair (MTTR)?"
+  ],
+  [
+    "Digital certificate issued by?",
+    "Chứng thư số do ai cấp?"
+  ],
+  [
+    "Instruction pipelining aims to:",
+    "Pipeline lệnh nhằm:"
+  ],
+  [
+    "A semaphore is used for:",
+    "Semaphore dùng để:"
+  ],
+  [
+    "Malware includes:",
+    "Malware bao gồm:"
+  ],
+  [
+    "A patent typically protects:",
+    "Bằng sáng chế thường bảo vệ:"
+  ],
+  [
+    "PaaS provides:",
+    "PaaS cung cấp:"
+  ],
+  [
+    "A code review aims to:",
+    "Code review nhằm:"
+  ],
+  [
+    "A sequence diagram shows:",
+    "Sequence diagram thể hiện:"
+  ],
+  [
+    "A standard change is typically:",
+    "Standard change thường là:"
+  ],
+  [
+    "Insert X between B and C?",
+    "Chèn X giữa B và C?"
+  ],
+  [
+    "What is the purpose of human interface technology?",
+    "Mục đích công nghệ giao diện người–máy?"
+  ],
+  [
+    "Purpose of human interface technology?",
+    "Mục đích công nghệ giao diện người–máy?"
+  ],
+  [
+    "Parallel reliability formula idea?",
+    "Ý tưởng công thức độ tin cậy song song?"
+  ],
+  [
+    "Linear search best comparisons?",
+    "Linear search: số so sánh tốt nhất?"
+  ],
+  [
+    "Parity bit used for?",
+    "Bit chẵn lẻ (parity) dùng để?"
+  ],
+  [
+    "ACID properties of transactions include:",
+    "Tính chất ACID của transaction gồm:"
+  ],
+  [
+    "Risk is often considered as related to:",
+    "Rủi ro thường liên quan đến:"
+  ],
+  [
+    "Sorting algorithm stability means:",
+    "Tính ổn định của thuật toán sort nghĩa là:"
+  ],
+  [
+    "Unauthorized copying of licensed software is:",
+    "Sao chép trái phép phần mềm có license là:"
+  ],
+  [
+    "Big-O notation is used to:",
+    "Ký hiệu Big-O dùng để:"
+  ],
+  [
+    "Break-even point analysis is used to find:",
+    "Phân tích điểm hòa vốn dùng để tìm:"
+  ],
+  [
+    "Project triple constraints classically include:",
+    "Ba ràng buộc cổ điển của dự án gồm:"
+  ],
+  [
+    "Which protocol is connectionless at the network layer for best-effort packet delivery on the Internet?",
+    "Giao thức tầng mạng connectionless, giao gói best-effort trên Internet?"
+  ],
+  [
+    "Which SQL correctly returns the second-highest salary for each department?",
+    "Câu SQL nào trả về lương cao thứ hai theo từng phòng ban?"
+  ],
+  [
+    "Which analysis classifies inventory into A/B/C by importance/value?",
+    "Phân tích nào xếp tồn kho A/B/C theo tầm quan trọng/giá trị?"
+  ],
+  [
+    "Personal data protection laws mainly aim to:",
+    "Luật bảo vệ dữ liệu cá nhân chủ yếu nhằm:"
+  ],
+  [
+    "How many bits are contained in one byte?",
+    "Một byte có bao nhiêu bit?"
+  ],
+  [
+    "Eliminate which condition to prevent deadlock (common)?",
+    "Bỏ điều kiện nào (thường gặp) để ngăn deadlock?"
+  ],
+  [
+    "Public key crypto speed vs symmetric?",
+    "Tốc độ mật mã khóa công khai so với đối xứng?"
+  ],
+  [
+    "Array access time complexity?",
+    "Độ phức tạp thời gian truy cập mảng?"
+  ],
+  [
+    "What does MTBF stand for in reliability discussions?",
+    "MTBF viết tắt gì trong thảo luận độ tin cậy?"
+  ],
+  [
+    "Which is a fundamental set of OOP concepts?",
+    "Tập khái niệm OOP cơ bản nào?"
+  ],
+  [
+    "A use case diagram in UML is used to:",
+    "Sơ đồ use case UML dùng để:"
+  ],
+  [
+    "ITIL-style incident management aims to:",
+    "Quản lý sự cố kiểu ITIL nhằm:"
+  ],
+  [
+    "CMMI maturity levels describe:",
+    "Các mức trưởng thành CMMI mô tả:"
+  ],
+  [
+    "Real-time systems are characterized by:",
+    "Hệ thống thời gian thực đặc trưng bởi:"
+  ],
+  [
+    "A hash table provides average-case:",
+    "Bảng băm cung cấp (trung bình):"
+  ],
+  [
+    "SCM (Supply Chain Management) focuses on:",
+    "SCM (quản lý chuỗi cung ứng) tập trung vào:"
+  ],
+  [
+    "Cache is usually implemented with?",
+    "Cache thường được cài bằng?"
+  ],
+  [
+    "Which is a peripheral device?",
+    "Cái nào là thiết bị ngoại vi?"
+  ],
+  [
+    "Video multimedia means?",
+    "Video multimedia nghĩa là?"
+  ],
+  [
+    "Fail-safe means?",
+    "Fail-safe nghĩa là?"
+  ],
+  [
+    "When the expression (A - 2 x (B + C) - D x E) x F in conventional infix notation is converted to the prefix expression, which of the following represents the resulting expression?",
+    "Biểu thức infix (A−2×(B+C)−D×E)×F đổi sang prefix được gì?"
   ]
 ];
