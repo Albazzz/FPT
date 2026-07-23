@@ -180,6 +180,57 @@
     /* ignore */
   }
 
+  // —— Explain overrides (local customize, not wiped by rebuild until applied) ——
+  const EXPLAIN_OVR_KEY = "uq-" + subjectId + "-explain-override-v1";
+  /** @type {Record<string, object>} id -> partial explanation */
+  let explainOverrides = {};
+  try {
+    const raw = localStorage.getItem(EXPLAIN_OVR_KEY);
+    if (raw) {
+      const p = JSON.parse(raw);
+      if (p && typeof p === "object") explainOverrides = p;
+    }
+  } catch {
+    /* ignore */
+  }
+
+  function saveExplainOverrides() {
+    try {
+      localStorage.setItem(EXPLAIN_OVR_KEY, JSON.stringify(explainOverrides));
+    } catch {
+      /* ignore quota */
+    }
+  }
+
+  function deepMergeExplain(base, ovr) {
+    const b = base && typeof base === "object" ? { ...base } : {};
+    if (!ovr || typeof ovr !== "object") return b;
+    for (const [k, v] of Object.entries(ovr)) {
+      if (v == null) continue;
+      if (
+        (k === "optionsVi" || k === "whyWrong" || k === "whatIs") &&
+        typeof v === "object" &&
+        !Array.isArray(v)
+      ) {
+        b[k] = { ...(b[k] || {}), ...v };
+      } else {
+        b[k] = v;
+      }
+    }
+    return b;
+  }
+
+  function effectiveExplanation(q) {
+    if (!q) return {};
+    const base = q.explanation && typeof q.explanation === "object" ? q.explanation : {};
+    const ovr = explainOverrides[String(q.id)];
+    return deepMergeExplain(base, ovr);
+  }
+
+  function hasExplainOverride(q) {
+    return !!(q && explainOverrides[String(q.id)]);
+  }
+
   function correctLetters(q) {
     if (!q) return [];
     if (Array.isArray(q.answers) && q.answers.length) {
@@ -1157,23 +1208,23 @@
 
   function questionViOf(q) {
     if (!q) return "";
+    const exp = effectiveExplanation(q);
+    if (exp.questionVi) return String(exp.questionVi);
     if (q.questionVi) return String(q.questionVi);
-    if (q.explanation && q.explanation.questionVi) return String(q.explanation.questionVi);
     return "";
   }
 
   function optionsViOf(q) {
     if (!q) return {};
+    const exp = effectiveExplanation(q);
+    if (exp.optionsVi && typeof exp.optionsVi === "object") return exp.optionsVi;
     if (q.optionsVi && typeof q.optionsVi === "object") return q.optionsVi;
-    if (q.explanation && q.explanation.optionsVi && typeof q.explanation.optionsVi === "object") {
-      return q.explanation.optionsVi;
-    }
     return {};
   }
 
   function hasExplainContent(q) {
     if (!q) return false;
-    const exp = q.explanation || {};
+    const exp = effectiveExplanation(q);
     return !!(
       exp.whyCorrect ||
       exp.concept ||
@@ -1188,7 +1239,7 @@
 
   function showExplainPanel(q) {
     if (!el.explainPanel) return;
-    const exp = (q && q.explanation) || {};
+    const exp = effectiveExplanation(q);
     if (!hasExplainContent(q)) {
       hideExplainPanel();
       return;
@@ -1199,14 +1250,27 @@
     const qv = questionViOf(q);
     const ov = optionsViOf(q);
     const letters = Object.keys(q.options || {}).sort();
+    const isOvr = hasExplainOverride(q);
     // MLN (và môn hideTranslation): không hiện bảng dịch — đề đã tiếng Việt
     const hideTrans = !!(CFG && (CFG.hideTranslation || CFG.showTranslationAlways === false && subjectId === "mln"));
     const hasTranslation =
       !hideTrans && !!(qv || letters.some((L) => ov[L]));
 
-    let html = hideTrans
+    let html = `<div class="explain-title-row">`;
+    html += hideTrans
       ? `<div class="explain-title"><i class="fa-solid fa-lightbulb"></i> Giải thích</div>`
       : `<div class="explain-title"><i class="fa-solid fa-language"></i> Bảng dịch &amp; giải thích</div>`;
+    html += `<div class="explain-actions">`;
+    if (isOvr) {
+      html += `<span class="explain-ovr-badge" title="Đang dùng bản chỉnh sửa local"><i class="fa-solid fa-pen"></i> Đã sửa</span>`;
+    }
+    html += `<button type="button" class="btn btn-secondary btn-sm" id="btnEditExplain" title="Sửa các thành phần giải thích">
+      <i class="fa-solid fa-pen-to-square"></i> Sửa
+    </button>`;
+    html += `<button type="button" class="btn btn-secondary btn-sm" id="btnExportExplainPatch" title="Tải JSON patch tất cả override môn này">
+      <i class="fa-solid fa-download"></i> Export
+    </button>`;
+    html += `</div></div>`;
 
     const fmt = (s) =>
       escapeHtml(s || "")
@@ -1342,7 +1406,173 @@
     }
 
     el.explainPanel.innerHTML = html;
+    bindExplainActionButtons(q);
     updateExplainToggleUI(true);
+  }
+
+  function bindExplainActionButtons(q) {
+    if (!el.explainPanel || !q) return;
+    const editBtn = el.explainPanel.querySelector("#btnEditExplain");
+    if (editBtn) {
+      editBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        openExplainEditor(q);
+      });
+    }
+    const expBtn = el.explainPanel.querySelector("#btnExportExplainPatch");
+    if (expBtn) {
+      expBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        exportExplainPatches();
+      });
+    }
+  }
+
+  function openExplainEditor(q) {
+    if (!el.explainPanel || !q) return;
+    const exp = effectiveExplanation(q);
+    const letters = Object.keys(q.options || {}).sort();
+    const ov = exp.optionsVi || {};
+    const ww = exp.whyWrong || {};
+    const wi = exp.whatIs || {};
+
+    let form = `<div class="explain-editor" data-qid="${escapeHtml(String(q.id))}">
+      <div class="explain-editor-head">
+        <strong><i class="fa-solid fa-pen-to-square"></i> Sửa giải thích</strong>
+        <span class="explain-editor-meta">${escapeHtml(questionTag(q))} · id ${escapeHtml(String(q.id))}</span>
+      </div>
+      <p class="explain-editor-hint">Lưu trên trình duyệt (local). Rebuild pipeline không xóa override. Dùng <em>Export</em> để lấy JSON patch áp vào bank.</p>
+
+      <label class="explain-field"><span>Dịch đề (questionVi)</span>
+        <textarea id="ee_questionVi" rows="3">${escapeHtml(exp.questionVi || "")}</textarea>
+      </label>`;
+
+    letters.forEach((L) => {
+      const raw = (q.options && q.options[L]) || "";
+      form += `<label class="explain-field"><span>optionsVi ${escapeHtml(L)} <em class="muted">${escapeHtml(String(raw).slice(0, 60))}${String(raw).length > 60 ? "…" : ""}</em></span>
+        <textarea id="ee_opt_${escapeHtml(L)}" rows="2">${escapeHtml(ov[L] || "")}</textarea>
+      </label>`;
+    });
+
+    form += `<label class="explain-field"><span>Đáp án hiển thị (answerDisplay)</span>
+        <textarea id="ee_answerDisplay" rows="2">${escapeHtml(exp.answerDisplay || "")}</textarea>
+      </label>
+      <label class="explain-field"><span>Ý chính (intent)</span>
+        <textarea id="ee_intent" rows="3">${escapeHtml(exp.intent || "")}</textarea>
+      </label>
+      <label class="explain-field"><span>Đây là gì? (concept)</span>
+        <textarea id="ee_concept" rows="3">${escapeHtml(exp.concept || "")}</textarea>
+      </label>
+      <label class="explain-field"><span>Vì sao đúng? (whyCorrect)</span>
+        <textarea id="ee_whyCorrect" rows="4">${escapeHtml(exp.whyCorrect || "")}</textarea>
+      </label>
+      <label class="explain-field"><span>Mẹo nhớ (memoryTip)</span>
+        <textarea id="ee_memoryTip" rows="2">${escapeHtml(exp.memoryTip || "")}</textarea>
+      </label>`;
+
+    letters.forEach((L) => {
+      if (correctLetters(q).includes(L)) return;
+      form += `<label class="explain-field"><span>whyWrong ${escapeHtml(L)}</span>
+        <textarea id="ee_ww_${escapeHtml(L)}" rows="4">${escapeHtml(ww[L] || "")}</textarea>
+      </label>`;
+      form += `<label class="explain-field"><span>whatIs ${escapeHtml(L)} (tuỳ chọn)</span>
+        <textarea id="ee_wi_${escapeHtml(L)}" rows="2">${escapeHtml(wi[L] || "")}</textarea>
+      </label>`;
+    });
+
+    form += `<div class="explain-editor-actions">
+        <button type="button" class="btn btn-primary btn-sm" id="ee_save"><i class="fa-solid fa-floppy-disk"></i> Lưu local</button>
+        <button type="button" class="btn btn-secondary btn-sm" id="ee_cancel"><i class="fa-solid fa-xmark"></i> Hủy</button>
+        <button type="button" class="btn btn-secondary btn-sm" id="ee_reset" ${hasExplainOverride(q) ? "" : "disabled"}><i class="fa-solid fa-rotate-left"></i> Xóa override câu này</button>
+      </div>
+    </div>`;
+
+    el.explainPanel.innerHTML = form;
+    updateExplainToggleUI(true);
+
+    const $id = (id) => el.explainPanel.querySelector("#" + id);
+    const cancel = () => {
+      showExplainPanel(q);
+    };
+    const save = () => {
+      const patch = {
+        questionVi: ($id("ee_questionVi") && $id("ee_questionVi").value) || "",
+        answerDisplay: ($id("ee_answerDisplay") && $id("ee_answerDisplay").value) || "",
+        intent: ($id("ee_intent") && $id("ee_intent").value) || "",
+        concept: ($id("ee_concept") && $id("ee_concept").value) || "",
+        whyCorrect: ($id("ee_whyCorrect") && $id("ee_whyCorrect").value) || "",
+        memoryTip: ($id("ee_memoryTip") && $id("ee_memoryTip").value) || "",
+        optionsVi: {},
+        whyWrong: {},
+        whatIs: {},
+      };
+      letters.forEach((L) => {
+        const ot = $id("ee_opt_" + L);
+        if (ot && ot.value.trim()) patch.optionsVi[L] = ot.value.trim();
+        if (!correctLetters(q).includes(L)) {
+          const w = $id("ee_ww_" + L);
+          const wiEl = $id("ee_wi_" + L);
+          if (w && w.value.trim()) patch.whyWrong[L] = w.value.trim();
+          if (wiEl && wiEl.value.trim()) patch.whatIs[L] = wiEl.value.trim();
+        }
+      });
+      // Drop empty containers
+      if (!Object.keys(patch.optionsVi).length) delete patch.optionsVi;
+      if (!Object.keys(patch.whyWrong).length) delete patch.whyWrong;
+      if (!Object.keys(patch.whatIs).length) delete patch.whatIs;
+      ["questionVi", "answerDisplay", "intent", "concept", "whyCorrect", "memoryTip"].forEach((k) => {
+        if (!String(patch[k] || "").trim()) delete patch[k];
+      });
+
+      explainOverrides[String(q.id)] = patch;
+      saveExplainOverrides();
+      showToast("Đã lưu giải thích local (id " + q.id + ").");
+      showExplainPanel(q);
+    };
+    const reset = async () => {
+      const ok = await confirmDialog(
+        "Xóa bản sửa local của câu này và trở về data gốc?",
+        { title: "Xóa override", okText: "Xóa", cancelText: "Huỷ" }
+      );
+      if (!ok) return;
+      delete explainOverrides[String(q.id)];
+      saveExplainOverrides();
+      showToast("Đã xóa override câu " + q.id + ".");
+      showExplainPanel(q);
+    };
+
+    if ($id("ee_save")) $id("ee_save").addEventListener("click", save);
+    if ($id("ee_cancel")) $id("ee_cancel").addEventListener("click", cancel);
+    if ($id("ee_reset")) $id("ee_reset").addEventListener("click", reset);
+  }
+
+  function exportExplainPatches() {
+    const ids = Object.keys(explainOverrides);
+    if (!ids.length) {
+      showToast("Chưa có override local nào cho môn " + subjectId + ".");
+      return;
+    }
+    const payload = {
+      subject: subjectId,
+      dataKey: CFG.dataKey || subjectId,
+      exportedAt: new Date().toISOString(),
+      count: ids.length,
+      patches: explainOverrides,
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], {
+      type: "application/json",
+    });
+    const a = document.createElement("a");
+    const url = URL.createObjectURL(blob);
+    a.href = url;
+    a.download = `explain-patch-${subjectId}-${Date.now()}.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+    showToast("Đã tải patch " + ids.length + " câu. Áp bằng: node quiz/tools/apply_explain_patches.mjs <file>");
   }
 
   function showAltPanel(q) {

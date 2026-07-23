@@ -1964,6 +1964,112 @@ body.modal-open {
 .explain-choices tr.row-bad td {
   background: rgba(229, 72, 77, 0.08) !important;
 }
+
+/* —— Explain customize editor —— */
+.explain-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.explain-title-row .explain-title {
+  margin: 0;
+}
+.explain-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.explain-ovr-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #9a6b00;
+  background: rgba(245, 180, 0, 0.15);
+  border: 1px solid rgba(196, 137, 10, 0.35);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+.explain-editor {
+  background: var(--surface-2, #f7f8fa);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 14px 10px;
+}
+.explain-editor-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.explain-editor-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.explain-editor-hint {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0 0 12px;
+  line-height: 1.45;
+}
+.explain-field {
+  display: block;
+  margin-bottom: 10px;
+}
+.explain-field > span {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+.explain-field > span .muted,
+.explain-field em.muted {
+  font-weight: 500;
+  color: var(--muted);
+  font-style: normal;
+  font-size: 0.72rem;
+  margin-left: 6px;
+}
+.explain-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  resize: vertical;
+  min-height: 2.6em;
+  background: var(--surface, #fff);
+  color: var(--text);
+}
+.explain-field textarea:focus {
+  outline: 2px solid var(--accent-soft, rgba(60, 120, 255, 0.35));
+  border-color: var(--accent, #3c78ff);
+}
+.explain-editor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+@media (max-width: 720px) {
+  .explain-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .tag-ok,
 .tag-bad {
   display: inline-block;
