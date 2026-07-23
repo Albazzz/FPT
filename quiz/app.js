@@ -1250,7 +1250,6 @@
     const qv = questionViOf(q);
     const ov = optionsViOf(q);
     const letters = Object.keys(q.options || {}).sort();
-    const isOvr = hasExplainOverride(q);
     // MLN (và môn hideTranslation): không hiện bảng dịch — đề đã tiếng Việt
     const hideTrans = !!(CFG && (CFG.hideTranslation || CFG.showTranslationAlways === false && subjectId === "mln"));
     const hasTranslation =
@@ -1260,17 +1259,7 @@
     html += hideTrans
       ? `<div class="explain-title"><i class="fa-solid fa-lightbulb"></i> Giải thích</div>`
       : `<div class="explain-title"><i class="fa-solid fa-language"></i> Bảng dịch &amp; giải thích</div>`;
-    html += `<div class="explain-actions">`;
-    if (isOvr) {
-      html += `<span class="explain-ovr-badge" title="Đang dùng bản chỉnh sửa local"><i class="fa-solid fa-pen"></i> Đã sửa</span>`;
-    }
-    html += `<button type="button" class="btn btn-secondary btn-sm" id="btnEditExplain" title="Sửa các thành phần giải thích">
-      <i class="fa-solid fa-pen-to-square"></i> Sửa
-    </button>`;
-    html += `<button type="button" class="btn btn-secondary btn-sm" id="btnExportExplainPatch" title="Tải JSON patch tất cả override môn này">
-      <i class="fa-solid fa-download"></i> Export
-    </button>`;
-    html += `</div></div>`;
+    html += `</div>`;
 
     const fmt = (s) =>
       escapeHtml(s || "")
@@ -1406,28 +1395,7 @@
     }
 
     el.explainPanel.innerHTML = html;
-    bindExplainActionButtons(q);
     updateExplainToggleUI(true);
-  }
-
-  function bindExplainActionButtons(q) {
-    if (!el.explainPanel || !q) return;
-    const editBtn = el.explainPanel.querySelector("#btnEditExplain");
-    if (editBtn) {
-      editBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        openExplainEditor(q);
-      });
-    }
-    const expBtn = el.explainPanel.querySelector("#btnExportExplainPatch");
-    if (expBtn) {
-      expBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        exportExplainPatches();
-      });
-    }
   }
 
   function openExplainEditor(q) {
