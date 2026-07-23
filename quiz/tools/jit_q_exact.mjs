@@ -1,0 +1,160 @@
+/**
+ * Exact JP question → pure VI for JIT401 remaining stems.
+ * Longest match first.
+ */
+export const JIT_Q_EXACT = [
+  ["「#」の記号はどのように読みますか。", "Ký hiệu «#」 đọc như thế nào?"],
+  ["パリティビットには、どのような種類がありますか。", "Bit parity có những loại nào?"],
+  ["「OSI」について、正しいものはどれですか。", "Về OSI, phát biểu nào đúng?"],
+  [
+    "CDでは、傷や手の脂、埃などによってデータが正しく読み取れない場合があります。このような誤りを検出・訂正するための仕組みを何と言いますか。",
+    "Trên CD, dữ liệu có thể đọc sai vì xước/dầu/bụi. Cơ chế phát hiện/sửa lỗi như vậy gọi là gì?",
+  ],
+  ["「giai thừa」は日本語の漢字でどのように読みますか。", "«Giai thừa」 đọc bằng kanji tiếng Nhật như thế nào?"],
+  ["「論理和」は何ですか。", "«論理和」 (OR logic) là gì?"],
+  [
+    "音声情報の高さがデジタル化するとき、（ ① ）が大きいほど、（ ② ）が向上します。",
+    "Khi số hóa chiều cao (biên độ) âm thanh, (①) càng lớn thì (②) càng tốt hơn.",
+  ],
+  [
+    "改行が何番のコードにあたるかなど、画面に直接表示できない記号は何と呼ばれますか。",
+    "Ký hiệu không hiện trực tiếp trên màn (vd. mã xuống dòng) gọi là gì?",
+  ],
+  [
+    "マウスやキーボードの操作方法、ウィンドウの見え方などを決めるものを何と言いますか。",
+    "Cái quyết định cách dùng chuột/bàn phím, cách hiện cửa sổ… gọi là gì?",
+  ],
+  ["ハードディスクの仕組みと管理について正しいものをえらびなさい。", "Chọn phát biểu đúng về cơ chế và quản lý ổ cứng."],
+  ["「変調」は英語で何ですか。", "«変調」 (modulation) tiếng Anh là gì?"],
+  ["一般に100 Kbps〜1 Mbps以上の通信速度を何と言いますか。", "Tốc độ truyền khoảng 100 Kbps–1 Mbps trở lên thường gọi là gì?"],
+  ["プリンタの解像度をドット数で表す単位は何といいますか。", "Đơn vị đo độ phân giải máy in theo số chấm gọi là gì?"],
+  ["A〜Zの26種類の文字を表現するには最低何ビット必要か。", "Để biểu diễn 26 chữ A–Z cần tối thiểu bao nhiêu bit?"],
+  [
+    "ある音をコンピュータのファイルに記録するとき、符号化ビット数（量子化ビット数）を大きくするとどうなるか。",
+    "Khi ghi âm thành file, tăng số bit mã hóa (lượng tử hóa) thì điều gì xảy ra?",
+  ],
+  ["「プロキシサーバ」はベトナム語で何と言いますか。", "«Proxy server」 tiếng Việt gọi là gì?"],
+  ["「CRC」は英語でなんですか。", "CRC viết tắt tiếng Anh là gì?"],
+  ["電源が切れたとき、データが消えてしまうものは何ですか。", "Khi tắt nguồn, dữ liệu bị mất — đó là gì?"],
+  [
+    "デジタル画像は縦横に並んだ点の集まりである。この点を画素、もしくはなんと言いますか。",
+    "Ảnh số là tập điểm xếp dọc/ngang. Điểm đó gọi là pixel, còn gọi là gì?",
+  ],
+  [
+    "見かけ上の記憶容量を実際のメモリ容量より大きくし、大きなメモリ空間を確保することを何と言いますか。",
+    "Làm dung lượng nhớ «ảo」 lớn hơn RAM thật để có không gian nhớ lớn — gọi là gì?",
+  ],
+  [
+    "10進数のマイナス5を、2の補数表現で8ビットの2進数で表すとどうなるか。",
+    "Số thập phân −5 biểu diễn bù 2 bằng 8 bit nhị phân là gì?",
+  ],
+  [
+    "音声を圧縮する際によく使われる、波を正弦波に分解する変換は何ですか。",
+    "Phép biến đổi thường dùng khi nén âm, phân rã sóng thành sine — là gì?",
+  ],
+  ["装置Aと装置Bが直列につながっているシステムを何と言いますか。", "Hệ thiết bị A và B nối tiếp gọi là gì?"],
+  ["装置Aと装置Bが並列につながっているシステムを何と言いますか。", "Hệ thiết bị A và B song song gọi là gì?"],
+  ["波の高さの最大値をいくつの段階で表すかを何と言いますか。", "Số mức dùng để biểu diễn biên độ đỉnh sóng gọi là gì?"],
+  ["2バイトで1文字を表すとき、何種類の文字まで表せるか。", "1 ký tự = 2 byte thì biểu diễn được tối đa bao nhiêu loại ký tự?"],
+  ["「小文字」はどのように読みますか。ベトナム語で何ですか。", "«小文字」 đọc thế nào? Tiếng Việt là gì?"],
+  ["フリーウェアとシェアウェアの違いについて、正しい説明はどれですか。", "Về khác biệt freeware và shareware, giải thích nào đúng?"],
+  [
+    "圧縮・解凍ソフトでファイルを圧縮したとき、圧縮方式によって付けられる拡張子として正しいものはどれですか。",
+    "Khi nén file, phần mở rộng theo kiểu nén — đâu là đúng?",
+  ],
+  [
+    "動画像では、静止画圧縮と差分記録を組み合わせて圧縮率を高めた形式としてよく用いられるものは何ですか。",
+    "Với video, dạng hay dùng kết hợp nén ảnh tĩnh + ghi sai phân để tăng tỉ lệ nén là gì?",
+  ],
+  [
+    "「sóng hình sin」は日本語の漢字でどのように書きますか。どのように読みますか。",
+    "«Sóng hình sin」 viết kanji tiếng Nhật thế nào? Đọc ra sao?",
+  ],
+  ["「帯域幅」はどのように読みますか。ベトナム語で何ですか。", "«帯域幅」 đọc thế nào? Tiếng Việt là gì?"],
+  ["「マス目」はベトナム語で何ですか。", "«マス目」 tiếng Việt là gì?"],
+  ["「PLC」はベトナム語で何ですか。", "PLC tiếng Việt / nghĩa là gì?"],
+  ["ウィルスに感染するのを避けるために、何をしますか。", "Để tránh nhiễm virus, nên làm gì?"],
+  [
+    "国際標準の携帯電話で利用できるアプリケーションを決定するのが何と呼ぶソフトウェアですか。",
+    "Phần mềm quyết định app dùng được trên điện thoại chuẩn quốc tế gọi là gì?",
+  ],
+  ["「周波数帯」はどのように読みますか。ベトナム語で何ですか。", "«周波数帯」 đọc thế nào? Tiếng Việt là gì?"],
+  ["LSIは日本語で何ですか。", "LSI tiếng Nhật / nghĩa là gì?"],
+  ["「số nguyên tố」は日本語で何ですか。", "«Số nguyên tố」 tiếng Nhật là gì?"],
+  ["「サイマル放送」はベトナム語で何ですか。", "«サイマル放送」 (simulcast) tiếng Việt là gì?"],
+  ["LAN (Local Area Network) について、正しいものはどれですか。", "Về LAN (Local Area Network), phát biểu nào đúng?"],
+  [
+    "次の説明する文書は ただしですか。（Phần thuyết minh về từ vựng được cho là đúng hay sai?） 認証とは公開鍵方式と秘密鍵方式により暗号化した状態で情報通信を行うこと。",
+    "Phát biểu sau đúng hay sai? «Xác thực = truyền tin đã mã hóa bằng khóa công khai và khóa bí mật.」",
+  ],
+  [
+    "OSIのセッション層（第5層）の主な役割として、最も適切なものはどれですか。",
+    "Vai trò chính của tầng Session (tầng 5) trong OSI là gì?",
+  ],
+  ["マザーボードとケーブルで接続された箱は何ですか。", "Hộp nối với mainboard bằng cáp là gì?"],
+  [
+    "クロック周波数 3 GHz のプロセッサにおいて、1つの命令が6クロックで実行できるとき、1命令の実行に必要な時間は何ナノ秒か。",
+    "CPU 3 GHz, 1 lệnh = 6 clock — thời gian 1 lệnh là bao nhiêu nanosecond?",
+  ],
+  ["出力装置は何がありますか。", "Thiết bị ra (output) gồm những gì?"],
+  ["チューリングマシンは何から構造されますか。", "Máy Turing gồm những thành phần nào?"],
+  ["「bộ vi xử lý」は日本語でなんですか。", "«Bộ vi xử lý」 tiếng Nhật là gì?"],
+  [
+    "AさんがBさんに電子文書を送信し、Bさんがその文書の送信者を確認する方法について、本文の内容に基づき、正しく説明しているものはどれか。",
+    "A gửi văn bản điện tử cho B; B xác nhận người gửi — cách nào đúng theo bài?",
+  ],
+  [
+    "Aさんは、Bさんに機密文書を電子メールで送信するため、公開鍵暗号方式を用いて文書を暗号化することにした。このとき、Aさんが文書を暗号化するために使用するべき鍵はどれか。",
+    "A mã hóa email mật cho B bằng mật mã khóa công khai. A phải dùng khóa nào?",
+  ],
+  ["コンピュータウイルスの予防策として、最も適切なものはどれですか。", "Biện pháp phòng virus máy tính nào phù hợp nhất?"],
+  ["ダイオードに関する次の記述のうち、正しいものはどれですか。", "Về diode, phát biểu nào đúng?"],
+  ["以下のメモリ部品の中で、アクセス速度が一番速いのはどちらですか。", "Trong các bộ nhớ sau, cái nào truy cập nhanh nhất?"],
+  ["記憶装置は何が該当しますか。", "Đâu thuộc thiết bị nhớ?"],
+  ["「DoS」はベトナム語で何ですか。", "DoS tiếng Việt / nghĩa là gì?"],
+  [
+    "ある企業のデータセンターには、重要な役割を果たすサーバーがあります。このサーバーの稼働データを分析したところ、平均故障間隔が500時間、平均修復時間が10時間であることがわかりました。このサーバーの稼働率はいくつか。",
+    "Server MTBF = 500h, MTTR = 10h. Tỉ lệ hoạt động (availability) là bao nhiêu?",
+  ],
+  ["CALS(Commerce At Light Speed)について、正しいものはどれですか。", "Về CALS (Commerce At Light Speed), phát biểu nào đúng?"],
+  ["「工業所有権」に属しているものはどの有権ですか。", "Quyền nào thuộc «quyền sở hữu công nghiệp」?"],
+  ["「bước đệm」は日本語で何ですか。", "«Bước đệm」 tiếng Nhật là gì?"],
+  ["「RAM」は英語で何ですか。", "RAM tiếng Anh / mở rộng là gì?"],
+  [
+    "OSIにおいて、「隣接機器間転送」の機能は主にどの階層が担当しますか。",
+    "Trong OSI, chức năng «chuyển giữa thiết bị kề」 chủ yếu thuộc tầng nào?",
+  ],
+  ["「通信制御」はどのように読みますか。ベトナム語で何ですか。", "«通信制御」 đọc thế nào? Tiếng Việt là gì?"],
+  ["フォルダの管理とパスに関する説明として、正しいものはどれですか。", "Về quản lý thư mục và path, giải thích nào đúng?"],
+  [
+    "メモリ空間には、番地が割り当てられるところは何と呼ばれましたか。",
+    "Trong không gian nhớ, nơi được gán địa chỉ gọi là gì?",
+  ],
+  ["「_」のキーボードの記号はどのように読みますか。", "Ký hiệu «_」 trên bàn phím đọc như thế nào?"],
+  [
+    "ハードディスクの仕組みと管理に関する次の記述の中で、本文の内容に基づいて正しいものを一つ選びなさい。",
+    "Về cơ chế/quản lý ổ cứng, chọn một phát biểu đúng theo bài.",
+  ],
+  ["「バス」はベトナム語で何ですか。", "«バス」 (bus) tiếng Việt là gì?"],
+  ["「転置式」はどのように読みますか。ベトナム語で何ですか。", "«転置式」 đọc thế nào? Tiếng Việt là gì?"],
+  [
+    "ある回路の入力Xと出力Yの関係が、Y = NOT X で表されるとき、この回路は何回路と呼ばれますか。",
+    "Mạch Y = NOT X được gọi là mạch gì?",
+  ],
+  ["ダイオードと半導体について、正しいものはどれですか。", "Về diode và bán dẫn, phát biểu nào đúng?"],
+  ["「流通過程」はベトナム語で何ですか。", "«流通過程」 tiếng Việt là gì?"],
+  ["「ブロードバンド」は英語で何ですか。ベトナム語で何ですか。", "Broadband tiếng Anh/Việt nghĩa là gì?"],
+  ["電子マネーの形態について、正しいものはどれですか。", "Về hình thái tiền điện tử, phát biểu nào đúng?"],
+  ["NTTドコモのFOMAの商品は何世代携帯電話のものですか。", "Sản phẩm FOMA của NTT DoCoMo thuộc điện thoại thế hệ mấy?"],
+  ["「EDI」は英語でどの言葉に略されましたか。", "EDI là viết tắt tiếng Anh của cụm nào?"],
+  [
+    "ある会社のシステムは、3つの装置A、B、Cで構成されています。AとBは並列接続され、それらがCと直列接続されています。各装置の稼働率はそれぞれ0.9、0.9、0.95であるとき、システム全体の稼働率はいくつか。",
+    "Hệ A∥B rồi nối tiếp C; R_A=R_B=0.9, R_C=0.95. Độ tin cậy hệ thống là bao nhiêu?",
+  ],
+  [
+    "指先とのセンサの間に蓄えられる電荷を測定する方式は何の方式ですか。",
+    "Cách đo điện tích giữa đầu ngón và cảm biến là kiểu cảm ứng nào?",
+  ],
+  ["「単結晶」はどのように読みますか。また、ベトナム語で何ですか。", "«単結晶」 đọc thế nào? Tiếng Việt là gì?"],
+  ["網的表現について正しいものを選びなさい。", "Chọn phát biểu đúng về biểu diễn mạng (network model)."],
+];

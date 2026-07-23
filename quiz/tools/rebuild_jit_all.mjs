@@ -16,6 +16,7 @@ import {
   extractViTermFromQuestion,
   JP_VI,
 } from "./jp_vi_lexicon.mjs";
+import { JIT_Q_EXACT } from "./jit_q_exact.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dataDir = path.join(__dirname, "../data");
@@ -191,6 +192,12 @@ function translateQuestion(qText, maps) {
   const t = String(qText || "").trim();
   if (!t) return t;
   if (hasVi(t) && !hasJp(t)) return t;
+
+  // Exact full-stem book (remaining hard questions)
+  const compact = t.replace(/\s+/g, "");
+  for (const [jp, vi] of JIT_Q_EXACT) {
+    if (t === jp || compact === jp.replace(/\s+/g, "")) return vi;
+  }
 
   let m;
   if ((m = t.match(/【専門用語】次のベトナム語の用語を日本語に直しなさい。\s*(.+)$/))) {
