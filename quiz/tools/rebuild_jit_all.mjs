@@ -269,11 +269,31 @@ function glossTopic(topic) {
 }
 
 /**
- * Option VI: always readable.
- * - Short term: `JP — VI`
- * - Full sentence with known phrase: `JP — full VI` OR just clean VI if very long
- * - Unknown long JP: keep JP (no half-translate soup)
+ * Option VI column = pure Vietnamese only (JP stays in "Gốc").
+ * Never "JP — VI" — that duplicates JP into the translation column.
  */
+function extractViSide(s) {
+  const t = String(s || "").trim();
+  if (!t) return "";
+  if (hasVi(t) && !hasJp(t)) return t;
+  // "JP — VI" / "JP: VI" / "JP：VI"
+  if (/[—–]/.test(t)) {
+    const right = t.split(/[—–]/).slice(1).join("—").trim();
+    if (hasVi(right) && !isJpViSoup(right)) return right;
+  }
+  if (/[：:]/.test(t) && hasJp(t) && hasVi(t)) {
+    const right = t.split(/[：:]/).slice(1).join(":").trim();
+    if (hasVi(right) && (right.match(/[\u3040-\u30ff\u3400-\u9fff]/g) || []).length <= 2)
+      return right;
+  }
+  // "reading - VI" short
+  if (t.length <= 80 && /\s[-–—]\s/.test(t) && hasVi(t)) {
+    const right = t.split(/\s[-–—]\s/).slice(1).join(" - ").trim();
+    if (hasVi(right) && !hasJp(right)) return right;
+  }
+  return "";
+}
+
 function translateOpt(opt, maps) {
   // Fix source pollution: accidental VI particles inside JP stems
   let t = String(opt || "")
@@ -281,46 +301,34 @@ function translateOpt(opt, maps) {
     .replace(/\s+là、/g, "は、")
     .replace(/\s+là,/g, "は、");
   if (!t) return t;
+  // Already pure VI
   if (hasVi(t) && !hasJp(t)) return t;
-  // Already bilingual short label (reading — VI) — keep, don't double-wrap
-  if (
-    hasVi(t) &&
-    hasJp(t) &&
-    t.length <= 80 &&
-    /[—–：:\-]/.test(t) &&
-    !isJpViSoup(t)
-  ) {
-    return t;
-  }
+
+  // Already bilingual short → VI side only
+  const side = extractViSide(t);
+  if (side) return side;
 
   // harvested exact
   if (maps.jp2vi.has(t)) {
     const vi = String(maps.jp2vi.get(t) || "").trim();
-    if (hasVi(vi) && !hasJp(vi)) {
-      return hasJp(t) ? `${t} — ${vi}` : vi;
-    }
-    // harvest already bilingual
-    if (hasVi(vi) && !isJpViSoup(vi)) return vi;
+    const fromHarvest = extractViSide(vi) || (hasVi(vi) && !hasJp(vi) ? vi : "");
+    if (fromHarvest) return fromHarvest;
   }
 
   const clean = glossJpClean(t);
-  if (clean) {
-    // Long JP sentence: show clean VI primarily (JP still in options raw UI if needed)
-    if (hasJp(t) && t.length >= 50) return `${t} — ${clean}`;
-    if (hasJp(t)) return `${t} — ${clean}`;
-    return clean;
-  }
+  if (clean) return clean;
 
   const g = glossJp(t);
   if (g && g !== t && !isJpViSoup(g)) {
-    if (!hasJp(g) && hasVi(g)) return hasJp(t) ? `${t} — ${g}` : g;
-    if (g.includes("—") && !isJpViSoup(g)) return g;
+    const fromG = extractViSide(g) || (hasVi(g) && !hasJp(g) ? g : "");
+    if (fromG) return fromG;
   }
 
-  // exact lexicon
-  if (JP_VI[t]) return `${t} — ${JP_VI[t]}`;
+  // exact lexicon → VI only (keep optional EN in paren)
+  if (JP_VI[t]) return JP_VI[t];
 
-  // No soup: leave pure JP (student still reads original; better than 半翻訳)
+  // Unknown JP: no fake soup — leave empty marker so UI doesn't re-show JP as "dịch"
+  if (hasJp(t)) return "（Xem cột gốc — chưa có bản dịch đầy đủ）";
   return t;
 }
 
@@ -505,27 +513,30 @@ function rebuildOne(q, remote, maps) {
     exp.questionVi = translateQuestion(qText, maps);
   }
 
-  // Options VI — clean VI only (never JP+VI soup)
+  // Options VI — pure Vietnamese (JP remains in options / cột Gốc)
   exp.optionsVi = {};
   for (const L of letters) {
     const raw = String(options[L] || "");
     let ovi = translateOpt(raw, maps);
-    // Hard reject soup
-    if (isJpViSoup(ovi)) {
-      const clean = glossJpClean(raw);
-      ovi = clean ? `${raw} — ${clean}` : raw;
+    // Hard reject any leftover JP in "translation"
+    if (isJpViSoup(ovi) || (hasJp(ovi) && hasVi(ovi))) {
+      ovi = glossJpClean(raw) || extractViSide(ovi) || "（Xem cột gốc — chưa có bản dịch đầy đủ）";
     }
-    // If still pure JP long, try defineOpt clean path
-    if (hasJp(ovi) && !hasVi(ovi) && raw.length >= 12) {
-      const clean = glossJpClean(raw);
-      if (clean) ovi = `${raw} — ${clean}`;
+    if (hasJp(ovi) && !hasVi(ovi)) {
+      ovi = glossJpClean(raw) || "（Xem cột gốc — chưa có bản dịch đầy đủ）";
     }
     exp.optionsVi[L] = ovi;
   }
 
   exp.answerDisplay = [...corrects]
     .sort()
-    .map((L) => `${L}. ${exp.optionsVi[L] || options[L]}`)
+    .map((L) => {
+      const vi = exp.optionsVi[L];
+      const raw = options[L];
+      // Prefer pure VI; fall back to short JP term if untranslated
+      if (vi && !hasJp(vi) && !/chưa có bản dịch/i.test(vi)) return `${L}. ${vi}`;
+      return `${L}. ${raw}`;
+    })
     .join(" · ");
 
   const ansText = options[primary] || "";
