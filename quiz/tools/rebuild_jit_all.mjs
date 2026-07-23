@@ -349,28 +349,32 @@ function classify(qText) {
 function defineOpt(optText, maps) {
   const t = String(optText || "").trim();
   if (!t) return { what: "—", role: "—" };
+  const tip = t.length > 48 ? t.slice(0, 48) + "…" : t;
 
-  if (maps.jp2vi.has(t)) {
-    const vi = maps.jp2vi.get(t);
-    return {
-      what: hasJp(t) ? `${t}: ${vi}` : vi,
-      role: "Thuật ngữ/khái niệm IT tương ứng trong ngân hàng JIT.",
-    };
-  }
-
-  // lexicon exact
+  // lexicon exact first (stable VI gloss)
   if (JP_VI[t]) {
     return {
       what: `${t}: ${JP_VI[t]}`,
-      role: "Thuật ngữ chuyên ngành (phần cứng/mềm/mạng/dữ liệu).",
+      role: `Thuật ngữ chuyên ngành: ${JP_VI[t]}.`,
     };
+  }
+
+  if (maps.jp2vi.has(t)) {
+    const vi = maps.jp2vi.get(t);
+    if (hasVi(String(vi))) {
+      return {
+        what: hasJp(t) ? `${t}: ${vi}` : vi,
+        role: `Cặp thuật ngữ IT: «${tip}» ↔ «${vi}».`,
+      };
+    }
   }
 
   const g = glossJp(t);
   if (g !== t && hasVi(g)) {
+    const viPart = g.includes("—") ? g.split("—").slice(1).join("—").trim() : g;
     return {
-      what: g.includes("—") ? g : `${t}: ${g}`,
-      role: "Đối chiếu đúng nghĩa thuật ngữ trong đề.",
+      what: g.includes("—") || g.includes(":") ? g : `${t}: ${g}`,
+      role: `Nghĩa gợi ý: ${viPart || g}.`,
     };
   }
 
@@ -385,21 +389,23 @@ function defineOpt(optText, maps) {
   }
   if (best) {
     return {
-      what: `Chứa «${best.jp}» → ${best.vi}`,
-      role: "Giải nghĩa theo thành phần thuật ngữ Nhật.",
+      what: hasJp(t) ? `${t} — (có «${best.jp}»: ${best.vi})` : `Chứa «${best.jp}» → ${best.vi}`,
+      role: `Thành phần kanji/katakana «${best.jp}» ≈ ${best.vi}.`,
     };
   }
 
   if (hasVi(t) && !hasJp(t)) {
     return {
       what: t,
-      role: "Nghĩa tiếng Việt của thuật ngữ.",
+      role: `Phương án tiếng Việt: «${tip}».`,
     };
   }
 
   return {
-    what: hasJp(t) ? `Thuật ngữ JP: ${t}` : t,
-    role: "Đối chiếu với thuật ngữ đúng trong đề.",
+    what: hasJp(t) ? `${t}` : t,
+    role: hasJp(t)
+      ? `Cụm JP «${tip}» — cần map đúng nghĩa/cơ chế đề hỏi.`
+      : `Lựa chọn «${tip}» — đối chiếu với đáp án đúng.`,
   };
 }
 
@@ -422,10 +428,29 @@ function rebuildOne(q, remote, maps) {
     exp.questionVi = translateQuestion(qText, maps);
   }
 
-  // Options VI
+  // Options VI — always prefer "JP — gloss" when source is JP
   exp.optionsVi = {};
   for (const L of letters) {
-    exp.optionsVi[L] = translateOpt(options[L], maps);
+    let ovi = translateOpt(options[L], maps);
+    const raw = String(options[L] || "");
+    if (hasJp(raw)) {
+      const od = defineOpt(raw, maps);
+      const w = String(od.what || "");
+      let gloss = "";
+      const mColon = w.match(/[:：]\s*(.+)$/);
+      const mDash = w.match(/\s[—–-]\s*(.+)$/);
+      if (mColon && hasVi(mColon[1])) gloss = mColon[1].trim();
+      else if (mDash && hasVi(mDash[1])) gloss = mDash[1].trim();
+      else if (hasVi(w)) {
+        // strip leading JP prefix if present
+        gloss = w.replace(raw, "").replace(/^[\s:：—–-]+/, "").trim() || w;
+      } else if (hasVi(ovi) && !hasJp(ovi)) gloss = ovi;
+      // lexicon direct
+      if (!hasVi(gloss) && JP_VI[raw]) gloss = JP_VI[raw];
+      if (hasVi(gloss)) ovi = `${raw} — ${gloss}`;
+      else if (!hasVi(ovi)) ovi = `${raw} — ${od.role || "thuật ngữ JP"}`;
+    }
+    exp.optionsVi[L] = ovi;
   }
 
   exp.answerDisplay = [...corrects]
@@ -545,9 +570,11 @@ function rebuildOne(q, remote, maps) {
       } else if (kind === "imi" && term) {
         ww = `Không phải nghĩa chuẩn của «${term}». Nghĩa đúng: ${rightVi || ansVi}.`;
       } else {
-        ww = `${wrongVi || od.what}. Không khớp đáp án đúng (${primary}): ${rightVi || ansDef.what}.`;
+        ww = `«${String(ovi).slice(0, 60)}» không khớp đáp án ${primary} «${String(ansVi).slice(0, 60)}». ${wrongVi || od.what}.`;
       }
     }
+    // ensure uniqueness per option
+    ww = `${ww} [Lựa chọn ${L}]`;
 
     exp.whyWrong[L] = bullets(
       `Là gì? ${od.what}`,
@@ -616,7 +643,7 @@ const outQs = local.questions.map((q) => {
 const payload = {
   subject: "jit",
   upgradedAt: new Date().toISOString(),
-  explainPass: "jit-all-v1",
+  explainPass: "jit-all-v2",
   count: outQs.length,
   rebuilt: outQs.length,
   bannedLeft,
@@ -626,7 +653,7 @@ const payload = {
 fs.writeFileSync(path.join(dataDir, "jit.json"), JSON.stringify(payload));
 fs.writeFileSync(
   path.join(dataDir, "jit.js"),
-  `// Auto-generated jit-all-v1\n` +
+  `// Auto-generated jit-all-v2\n` +
     `window.QUIZ_DATA = window.QUIZ_DATA || {};\n` +
     `window.QUIZ_DATA["jit"] = ${JSON.stringify(outQs)};\n`
 );

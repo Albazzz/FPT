@@ -140,6 +140,17 @@ export const OPT_EXACT = [
   ["UI must hold mutable local state with setState", "UI phải giữ state local mutable bằng setState"],
   ["Horizontal (cross axis) for a vertical Column", "Trục ngang (cross axis) với Column dọc"],
   ["Take remaining free space along the main axis", "Chiếm phần trống còn lại theo trục chính"],
+  ["Hide the keyboard only", "Chỉ ẩn bàn phím"],
+  ["Hide the keyboard", "Ẩn bàn phím"],
+  ["Start deep links", "Khởi chạy deep links"],
+  ["Compile AOT", "Biên dịch AOT"],
+  ["Expanded always filling remaining space", "Expanded luôn lấp đầy phần không gian còn lại"],
+  ["Which widget allows overlapping of its child widgets?", "Widget nào cho phép các widget con chồng lên nhau?"],
+  ["Which widget is best used to add fixed empty space?", "Widget nào tốt nhất để thêm khoảng trống cố định?"],
+  ["Which widget is best for fixed empty space of a given size?", "Widget nào tốt nhất cho khoảng trống cố định theo size?"],
+  ["Expanded inside a Flex (Row/Column) is used to:", "Expanded trong Flex (Row/Column) dùng để:"],
+  ["Which widget pattern protects authenticated routes?", "Mẫu widget nào bảo vệ các route cần xác thực?"],
+  ["What is the role of BuildContext in Flutter?", "Vai trò của BuildContext trong Flutter là gì?"],
   ["Provides parent constraints to choose layout", "Cho constraint từ cha để chọn layout"],
   ["Basic page structure (AppBar, body, etc.)", "Khung trang cơ bản (AppBar, body…)"],
   ["A boolean ON/OFF value", "Giá trị boolean bật/tắt"],
@@ -591,6 +602,8 @@ export const Q_EXACT = [
   ["What is .fromJson() typically used for?", ".fromJson() thường dùng để làm gì?"],
   ["Which widget arranges children vertically?", "Widget nào xếp con theo chiều dọc?"],
   ["Which widget allows children to overlap?", "Widget nào cho phép các con chồng lên nhau?"],
+  ["Which widget allows overlapping of its child widgets?", "Widget nào cho phép các widget con chồng lên nhau?"],
+  ["Which widget is best used to add fixed empty space?", "Widget nào tốt nhất để thêm khoảng trống cố định?"],
   ["What is Scaffold typically used for?", "Scaffold thường dùng để làm gì?"],
   ["What does a Switch widget primarily toggle?", "Widget Switch chủ yếu bật/tắt gì?"],
   ["Why use const widgets when possible?", "Vì sao nên dùng const widget khi có thể?"],
@@ -616,6 +629,8 @@ export const Q_EXACT = [
   ["Which API is commonly used to read screen size/orientation?", "API nào thường dùng để đọc size/orientation màn hình?"],
   ["Adaptive layout typically means:", "Adaptive layout thường nghĩa là:"],
   ["Expanded inside a Flex (Row/Column) is used to:", "Expanded trong Flex (Row/Column) dùng để:"],
+  ["Which widget pattern protects authenticated routes?", "Mẫu widget nào bảo vệ các route cần xác thực?"],
+  ["What is the role of BuildContext in Flutter?", "Vai trò của BuildContext trong Flutter là gì?"],
   ["Why avoid hard-coded sizes for all devices?", "Vì sao tránh hard-code size cho mọi thiết bị?"],
   ["LayoutBuilder is useful because it:", "LayoutBuilder hữu ích vì nó:"],
   ["Which widget is commonly used for scrollable single-child content?", "Widget nào thường dùng cho nội dung 1 con có thể cuộn?"],
@@ -717,6 +732,8 @@ export const Q_STEMS = [
   [/^Which of the following statements is TRUE about\b/i, "Phát biểu nào đúng về"],
   [/^Which of following statement is INCORRECT of\b/i, "Phát biểu nào SAI về"],
   [/^Which of the following\b/i, "Cái nào sau đây"],
+  [/^Which widget pattern\b/i, "Mẫu widget nào"],
+  [/^Which widget\b/i, "Widget nào"],
   [/^Which\b/i, "Cái nào"],
   [/^How many\b/i, "Bao nhiêu"],
   [/^How do\b/i, "Như thế nào"],
@@ -823,6 +840,152 @@ export function translateOpt(opt) {
   return t || raw;
 }
 
+/** Longer EN→VI phrase pass to reduce half-translated stems */
+function deepEnPhrases(s) {
+  let t = String(s || "");
+  const pairs = [
+    [/\bWhich of the following is an appropriate description concerning\b/gi, "Mô tả nào sau đây phù hợp về"],
+    [/\bWhich of the following is an appropriate explanation of\b/gi, "Giải thích nào sau đây phù hợp về"],
+    [/\bWhich of the following is the appropriate flow of\b/gi, "Luồng nào sau đây phù hợp của"],
+    [/\bWhich of the following is INCORRECT\b/gi, "Cái nào sau đây SAI về"],
+    [/\bWhich of the following is the most appropriate\b/gi, "Cái nào sau đây phù hợp nhất"],
+    [/\bWhich of the following\b/gi, "Cái nào sau đây"],
+    [/\bWhat is the primary purpose of\b/gi, "Mục đích chính của"],
+    [/\bWhat is the purpose of\b/gi, "Mục đích của"],
+    [/\bWhat is the main purpose of\b/gi, "Mục đích chính của"],
+    [/\bWhat role does\b/gi, "Vai trò của"],
+    [/\bWhat does\b/gi, ""],
+    [/\bWhat is\b/gi, ""],
+    [/\bWhy are\b/gi, "Vì sao"],
+    [/\bWhy is\b/gi, "Vì sao"],
+    [/\bWhy do\b/gi, "Vì sao"],
+    [/\bHow many\b/gi, "Bao nhiêu"],
+    [/\bstate transition\b/gi, "chuyển trạng thái"],
+    [/\bready state\b/gi, "trạng thái ready (chờ CPU)"],
+    [/\brunning state\b/gi, "trạng thái running (đang chạy)"],
+    [/\bwaiting state\b/gi, "trạng thái waiting (chờ I/O)"],
+    [/\btransmission speeds?\b/gi, "tốc độ truyền"],
+    [/\bexchange data\b/gi, "trao đổi dữ liệu"],
+    [/\btemporarily store\b/gi, "lưu tạm"],
+    [/\bforwarding\b/gi, "chuyển tiếp"],
+    [/\bswitching approach\b/gi, "cách chuyển mạch"],
+    [/\bbest matches these characteristics\b/gi, "khớp nhất các đặc điểm này"],
+    [/\bcircuit switching\b/gi, "chuyển mạch kênh"],
+    [/\bmessage switching\b/gi, "chuyển mạch thông điệp"],
+    [/\bfrequency division multiplexing\b/gi, "ghép kênh phân chia tần số (FDM)"],
+    [/\bsimplex transmission\b/gi, "truyền simplex (một chiều)"],
+    [/\bframes per second\b/gi, "khung hình/giây"],
+    [/\bcolor depth\b/gi, "độ sâu màu"],
+    [/\bstorage capacity\b/gi, "dung lượng lưu trữ"],
+    [/\bhard disk drive\b/gi, "ổ cứng"],
+    [/\bsecurity cameras?\b/gi, "camera an ninh"],
+    [/\bdigital video recording system\b/gi, "hệ thống ghi hình số"],
+    [/\bis required for\b/gi, "cần cho"],
+    [/\bapproximate\b/gi, "xấp xỉ"],
+    [/\bexecution of SQL statements\b/gi, "thực thi câu lệnh SQL"],
+    [/\bSQL statement processing\b/gi, "xử lý câu lệnh SQL"],
+    [/\bcode generation\b/gi, "sinh mã"],
+    [/\boptimization\b/gi, "tối ưu"],
+    [/\bdecomposition\b/gi, "phân rã (parse)"],
+    [/\bbreak-?even point\b/gi, "điểm hòa vốn"],
+    [/\binincorrect formular\b/gi, "công thức SAI"],
+    [/\bincorrect formula\b/gi, "công thức SAI"],
+    [/\bmiddleware is best described as\b/gi, "Middleware được mô tả đúng nhất là"],
+    [/\bmiddleware examples include\b/gi, "Ví dụ middleware gồm"],
+    [/\bsoftware layer between\b/gi, "lớp phần mềm giữa"],
+    [/\bproviding common services\b/gi, "cung cấp dịch vụ dùng chung"],
+    [/\bversion control\b/gi, "quản lý phiên bản"],
+    [/\bsingle codebase\b/gi, "một codebase"],
+    [/\bapplication development\b/gi, "phát triển ứng dụng"],
+    [/\bUI components and rendering logic\b/gi, "thành phần UI và logic render"],
+    [/\bscrollable flexible app bar\b/gi, "app bar linh hoạt, cuộn được"],
+    [/\blightweight local NoSQL storage\b/gi, "lưu trữ NoSQL local nhẹ"],
+    [/\bapplication-wide visual styles\b/gi, "style giao diện toàn app"],
+    [/\bvalue range for animation\b/gi, "khoảng giá trị cho animation"],
+    [/\bwidget tree describing the UI\b/gi, "cây widget mô tả UI"],
+    [/\bensure changes don't break functionality\b/gi, "đảm bảo thay đổi không phá chức năng"],
+    [/\bimportant for refactoring\b/gi, "quan trọng khi refactor"],
+    [/\bcommonly used for\b/gi, "thường dùng cho"],
+    [/\bcommonly used\b/gi, "thường dùng"],
+    [/\bin order to\b/gi, "để"],
+    [/\bas shown below\b/gi, "như dưới đây"],
+    [/\baccording to\b/gi, "theo"],
+    [/\bcompared to\b/gi, "so với"],
+    [/\bwith respect to\b/gi, "đối với"],
+    [/\bin terms of\b/gi, "về mặt"],
+    [/\bfor example\b/gi, "ví dụ"],
+    [/\bsuch as\b/gi, "như"],
+    [/\bin which\b/gi, "trong đó"],
+    [/\bthere is a\b/gi, "có một"],
+    [/\bthere are\b/gi, "có"],
+    [/\bmust allow\b/gi, "phải cho phép"],
+    [/\bmay temporarily\b/gi, "có thể tạm thời"],
+    [/\bbefore continuing\b/gi, "trước khi tiếp tục"],
+    [/\bbefore forwarding\b/gi, "trước khi chuyển tiếp"],
+    [/\bafter a fixed time\b/gi, "sau một khoảng thời gian cố định"],
+    [/\bmultiprogramming system\b/gi, "hệ multiprogramming"],
+    [/\btime-sharing\b/gi, "chia sẻ thời gian"],
+    [/\bround robin\b/gi, "round-robin"],
+    [/\bCPU allocation\b/gi, "cấp phát CPU"],
+    [/\bformed into a queue\b/gi, "xếp thành hàng đợi"],
+    [/\bis an appropriate\b/gi, "là phù hợp"],
+    [/\bis the appropriate\b/gi, "là phù hợp"],
+    [/\bis used to\b/gi, "dùng để"],
+    [/\bis used for\b/gi, "dùng cho"],
+    [/\bplay in\b/gi, "trong"],
+    [/\bprovide[sd]?\b/gi, "cung cấp"],
+    [/\bmanage[sd]?\b/gi, "quản lý"],
+    [/\bdefine[sd]?\b/gi, "định nghĩa"],
+    [/\breturn[sd]?\b/gi, "trả về"],
+    [/\bin a widget\b/gi, "trong một widget"],
+    [/\bin Flutter\b/gi, "trong Flutter"],
+    [/\bthe purpose of\b/gi, "mục đích của"],
+    [/\bthe role of\b/gi, "vai trò của"],
+    [/\bthe following\b/gi, "các mục sau"],
+    [/\bconcerning\b/gi, "về"],
+    [/\bdescription\b/gi, "mô tả"],
+    [/\bcharacteristics\b/gi, "đặc điểm"],
+    [/\bfunctionality\b/gi, "chức năng"],
+    [/\bplatforms?\b/gi, "nền tảng"],
+    [/\btarget\b/gi, "nhắm tới"],
+    [/\busable\b/gi, "dùng được"],
+    [/\bavailable later\b/gi, "sẽ có sau"],
+    [/\bhere,\b/gi, "ở đây,"],
+    [/\bwhich of\b/gi, "cái nào trong"],
+    [/\bwhat\b/gi, "gì"],
+    [/\bwhen\b/gi, "khi"],
+    [/\bwhere\b/gi, "nơi"],
+    [/\bwhy\b/gi, "vì sao"],
+    [/\bhow\b/gi, "như thế nào"],
+    [/\bbefore\b/gi, "trước khi"],
+    [/\bafter\b/gi, "sau khi"],
+    [/\bonly\b/gi, "chỉ"],
+    [/\bbetween\b/gi, "giữa"],
+    [/\bfrom\b/gi, "từ"],
+    [/\binto\b/gi, "vào"],
+    [/\bwith\b/gi, "với"],
+    [/\bwithout\b/gi, "không"],
+    [/\busing\b/gi, "dùng"],
+    [/\band then\b/gi, "và sau đó"],
+    [/\band\b/gi, "và"],
+    [/\bor\b/gi, "hoặc"],
+    [/\bfor one minute\b/gi, "trong một phút"],
+    [/\bper second\b/gi, "mỗi giây"],
+    [/\bper pixel\b/gi, "mỗi pixel"],
+    [/\bits child widgets\b/gi, "các widget con"],
+    [/\boverlapping\b/gi, "chồng lên nhau"],
+    [/\bfixed empty space\b/gi, "khoảng trống cố định"],
+    [/\bof a given size\b/gi, "theo kích thước cho trước"],
+  ];
+  for (const [re, rep] of pairs) t = t.replace(re, rep);
+  // clean double spaces / leftover "Đề:"
+  t = t.replace(/^Đề:\s*/i, "").replace(/\s+/g, " ").trim();
+  // drop lone English stubs like "is" "the" "a" if isolated badly
+  t = t.replace(/\b(is|are|was|were|be|been|being|the|a|an|of|to|in|on|at|for|by|as|it|its|this|that|these|those|does|do|did|can|could|will|would|should|may|might)\b/gi, " ");
+  t = t.replace(/\s+/g, " ").replace(/\s([?.!,;:])/g, "$1").trim();
+  return t;
+}
+
 export function translateQuestion(q) {
   let s = String(q || "").trim();
   if (!s) return s;
@@ -841,34 +1004,32 @@ export function translateQuestion(q) {
       break;
     }
   }
-  // light domain words
-  t = t
-    .replace(/\bcompared to\b/gi, "so với")
-    .replace(/\baccording to\b/gi, "theo")
-    .replace(/\bmainly\b/gi, "chủ yếu")
-    .replace(/\btypically\b/gi, "thường")
-    .replace(/\bprimarily\b/gi, "chủ yếu")
-    .replace(/\bimportant\b/gi, "quan trọng")
-    .replace(/\buseful for\b/gi, "hữu ích cho")
-    .replace(/\bin Flutter apps\b/gi, "trong app Flutter")
-    .replace(/\bin the slides\b/gi, "trong slide")
-    .replace(/\?$/, "?");
-
+  t = deepEnPhrases(t);
+  for (const [re, rep] of OPT_WORDS.slice(0, 120)) t = t.replace(re, rep);
   t = polish(t);
-  if (!hasVi(t)) {
-    // second pass: word map lightly on question
-    let w = s;
-    for (const [re, rep] of Q_STEMS) {
-      if (re.test(w)) {
-        w = w.replace(re, rep);
-        break;
-      }
-    }
-    for (const [re, rep] of OPT_WORDS.slice(0, 80)) w = w.replace(re, rep);
-    w = polish(w);
-    if (hasVi(w)) return titleCaseVi(w);
-    // bilingual: keep EN visible but mark as translation attempt
-    return `Đề: ${s}`;
+
+  // If still mostly English tokens, run deep pass on original
+  const enLeft = (t.match(/[A-Za-z]{4,}/g) || []).length;
+  if (enLeft >= 6) {
+    t = deepEnPhrases(s);
+    for (const [re, rep] of OPT_WORDS.slice(0, 120)) t = t.replace(re, rep);
+    t = polish(t);
+  }
+
+  if (!hasVi(t) && enLeft >= 4) {
+    // Last resort: deep on original + light mark (still try VI particles from stems)
+    t = deepEnPhrases(s);
+    if (!hasVi(t)) t = `Câu hỏi: ${t}`;
   }
   return titleCaseVi(t);
+}
+
+export function translateOptDeep(opt) {
+  const base = translateOpt(opt);
+  if (!base) return base;
+  if (hasVi(base) && (base.match(/[A-Za-z]{4,}/g) || []).length < 4) return base;
+  let t = deepEnPhrases(base);
+  for (const [re, rep] of OPT_WORDS.slice(0, 100)) t = t.replace(re, rep);
+  t = polish(t);
+  return hasVi(t) ? titleCaseVi(t) : base;
 }

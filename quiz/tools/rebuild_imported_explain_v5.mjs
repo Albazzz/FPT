@@ -9,6 +9,7 @@ import { fileURLToPath } from "url";
 import {
   translateOpt as lexTranslateOpt,
   translateQuestion as lexTranslateQuestion,
+  translateOptDeep as lexTranslateOptDeep,
 } from "./vi_translate.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -31,7 +32,11 @@ const IMPORTED = new Set([
 ]);
 
 const BANNED =
-  /khớp kiến thức|theo giáo trình|không khớp bản chất|cần so khớp|đúng vì là|đáp án chuẩn|không trả lời đúng trọng tâm|hãy so sánh trực tiếp|trong ngữ cảnh câu hỏi|phương án nhiễu|xem giải thích bên dưới|bản chất đáp án liên quan|tránh chọn theo từ quen|so sánh bản chất từng phương án|câu hỏi kỹ thuật:|câu hỏi chọn phương án đúng|câu hỏi «là gì|khớp đúng định nghĩa\/cơ chế|không khớp trọng tâm đề|nội dung phương án|chỉ đúng nếu khớp đúng khía cạnh|đề \(dịch định hướng\)|multiple async events over time/i;
+  /khớp kiến thức|theo giáo trình|không khớp bản chất|cần so khớp|đúng vì là|đáp án chuẩn|không trả lời đúng trọng tâm|hãy so sánh trực tiếp|trong ngữ cảnh câu hỏi|phương án nhiễu|xem giải thích bên dưới|bản chất đáp án liên quan|tránh chọn theo từ quen|so sánh bản chất từng phương án|câu hỏi kỹ thuật:|câu hỏi chọn phương án đúng|câu hỏi «là gì|khớp đúng định nghĩa\/cơ chế|không khớp trọng tâm đề|nội dung phương án|chỉ đúng nếu khớp đúng khía cạnh|chỉ chọn nếu khớp|đề \(dịch định hướng\)|multiple async events over time|thuộc miền Flutter|thuộc miền FE|miền Flutter\/Dart|Phương án «|Khái niệm kinh tế–chính trị «|Khái niệm OS «|async\/UI\/state\/toolchain|hiểu theo đúng vai trò|hiểu theo nghĩa kỹ thuật|hiểu theo đúng nghĩa kỹ thuật|không dừng ở nhãn|Ý «[^»]+» trong môn học/i;
+
+/** Soft filler — strip/regenerate even if not fully BANNED historically */
+const FILLER =
+  /thuộc miền|Phương án «|Chỉ chọn nếu|Chỉ đúng khi khớp|async\/UI\/state|hiểu theo đúng|hiểu theo nghĩa kỹ thuật|không khớp trọng tâm đề bằng đáp án đúng|Trong khi đề cần:/i;
 
 function bullets(...lines) {
   const out = [];
@@ -203,9 +208,75 @@ const DICT = [
     tags: ["flutter"],
   },
   {
-    re: [/layout control|row|column|flex|stack\b/i],
-    what: "Cách xếp vị trí/kích thước widget con trên màn hình.",
-    role: "Bố cục UI; khác nhịp animation.",
+    re: [/\bexpanded\b/i],
+    what: "Buộc widget con chiếm toàn bộ không gian còn lại theo main axis của Flex (Row/Column/Flex).",
+    role: "Trong Row giãn ngang, trong Column giãn dọc; nhiều Expanded chia phần trống theo flex. Tương đương Flexible(fit: FlexFit.tight).",
+    tags: ["flutter"],
+  },
+  {
+    re: [/\bflexible\b/i],
+    what: "Cho widget con co giãn trong Flex theo hệ số flex và FlexFit (loose/tight).",
+    role: "Flexible loose không bắt buộc full space; Expanded = Flexible với fit tight.",
+    tags: ["flutter"],
+  },
+  {
+    re: [/\bstack\b/i],
+    what: "Xếp chồng widget con theo trục Z, cho phép overlap.",
+    role: "Badge, overlay, layer UI chồng lên nhau.",
+    tags: ["flutter"],
+  },
+  {
+    re: [/\brow\b/i],
+    what: "Xếp widget con theo hàng ngang (main axis = horizontal).",
+    role: "Bố cục ngang; cross axis là dọc.",
+    tags: ["flutter"],
+  },
+  {
+    re: [/\bcolumn\b/i],
+    what: "Xếp widget con theo cột dọc (main axis = vertical).",
+    role: "Bố cục dọc; cross axis là ngang. Không scroll mặc định, không overlap.",
+    tags: ["flutter"],
+  },
+  {
+    re: [/\bflex\b/i],
+    what: "Widget bố cục theo một trục chính (cha của Row/Column).",
+    role: "Chứa Expanded/Flexible để chia không gian còn lại trên main axis.",
+    tags: ["flutter"],
+  },
+  {
+    re: [/sizedbox/i],
+    what: "Tạo hộp kích thước cố định hoặc khoảng trống size cho trước.",
+    role: "Spacer cố định (width/height); khác Expanded (chiếm phần còn lại).",
+    tags: ["flutter"],
+  },
+  {
+    re: [/\bpadding\b/i],
+    what: "Thêm khoảng lề bên trong quanh child (inset).",
+    role: "Đẩy nội dung cách mép; không tự tạo «ô trống» kích thước độc lập như SizedBox.",
+    tags: ["flutter"],
+  },
+  {
+    re: [/\bcontainer\b/i],
+    what: "Widget trang trí/layout tổng quát (màu, margin, padding, constraints…).",
+    role: "Tiện ích đa năng; không chuyên biệt cho khoảng trống cố định hay flex fill.",
+    tags: ["flutter"],
+  },
+  {
+    re: [/layout control/i],
+    what: "Điều khiển cách xếp vị trí/kích thước widget con trên màn hình.",
+    role: "Bố cục UI (Row/Column/Stack…); khác nhịp animation.",
+    tags: ["flutter"],
+  },
+  {
+    re: [/httpclient|http client/i],
+    what: "Client HTTP để gửi request mạng (GET/POST…).",
+    role: "Gọi API/tải dữ liệu; không phải widget layout hay spacer UI.",
+    tags: ["dart"],
+  },
+  {
+    re: [/\bguard\b|route protection|middleware/i],
+    what: "Mẫu chặn/cho phép vào route đã xác thực (route guard / middleware).",
+    role: "Bảo vệ màn cần login; khác Navigator chỉ push/pop.",
     tags: ["flutter"],
   },
   {
@@ -621,12 +692,15 @@ function defineCorrect(question, ansText) {
     }
   }
 
-  // Named concept questions: "role of X", "What does a X", "What is X"
+  // Named concept questions: "role of X", "What does a X", "What is X", "X inside …", "X is used to"
   const named =
     q.match(/role of\s+([A-Za-z0-9_]+)/i) ||
     q.match(/What does (?:a |an )?([A-Za-z0-9_]+)\b/i) ||
     q.match(/What is (?:a |an |the )?([A-Za-z0-9_]+)\b/i) ||
-    q.match(/Vai trò của\s+([A-Za-z0-9_]+)/i);
+    q.match(/Vai trò của\s+([A-Za-z0-9_]+)/i) ||
+    q.match(/^([A-Za-z0-9_]+)\s+inside\b/i) ||
+    q.match(/^([A-Za-z0-9_]+)\b.{0,40}\bis used to\b/i) ||
+    q.match(/Which widget\b.*\b(Expanded|Flexible|SizedBox|Stack|Padding|Container)\b/i);
   if (named && !/compared/i.test(q)) {
     const hit = lookup(named[1]);
     if (hit) return packDef(hit);
@@ -675,6 +749,48 @@ function definePhrase(text) {
       what: "Hằng số xác định từ lúc biên dịch (const trong Dart).",
       role: "Giá trị cố định compile-time; không phát sự kiện async theo thời gian.",
       tags: ["dart"],
+    };
+  }
+  if (/take remaining free space|remaining free space along the main axis|fills? remaining space/i.test(t)) {
+    return {
+      what: "Chiếm toàn bộ không gian còn lại theo main axis của Flex (Row ngang, Column dọc).",
+      role: "Đúng bản chất Expanded; nhiều Expanded chia theo thuộc tính flex.",
+      tags: ["flutter"],
+    };
+  }
+  if (/hide the keyboard/i.test(t)) {
+    return {
+      what: "Ẩn bàn phím ảo trên màn hình.",
+      role: "Thường dùng FocusScope.of(context).unfocus() / FocusNode — không phải Expanded.",
+      tags: ["flutter"],
+    };
+  }
+  if (/deep links?/i.test(t)) {
+    return {
+      what: "Mở ứng dụng (hoặc màn cụ thể) từ URL/URI bên ngoài.",
+      role: "Routing/deep linking; không liên quan chia không gian layout Flex.",
+      tags: ["flutter"],
+    };
+  }
+  if (/compile aot|aot\b/i.test(t) && !/jit/i.test(t)) {
+    return {
+      what: "Biên dịch Ahead-of-Time: dịch Dart ra native trước khi chạy (bản release).",
+      role: "Tối ưu hiệu năng bản ship; không phải widget layout.",
+      tags: ["dart"],
+    };
+  }
+  if (/expanded always filling remaining space/i.test(t)) {
+    return {
+      what: "Expanded luôn lấp đầy phần không gian còn lại trên main axis của Flex.",
+      role: "Khác SizedBox (size cố định); dùng khi cần giãn theo khoảng trống.",
+      tags: ["flutter"],
+    };
+  }
+  if (/fixed empty space|fixed space of a given size/i.test(t)) {
+    return {
+      what: "Khoảng trống kích thước cố định (width/height cho trước).",
+      role: "Đúng việc của SizedBox; Expanded thì chiếm phần còn lại, không «cố định size» độc lập.",
+      tags: ["flutter"],
     };
   }
   if (/organize reusable libraries|libraries and dependencies/i.test(t)) {
@@ -843,40 +959,102 @@ function define(text, ctx = "") {
     };
   }
 
-  // Domain-aware fallback — never "Nội dung phương án" / never question-topic theft
+  // Domain-aware fallback — paraphrase option; NEVER wrapper filler
+  return paraphraseOption(t, ctx);
+}
+
+/** Concrete definition from option text — used when DICT misses */
+function paraphraseOption(text, ctx = "") {
+  const t = String(text || "").trim();
   const ovi = lexTranslateOpt(t);
-  const label = ovi && ovi !== t ? ovi : t.length > 90 ? t.slice(0, 87) + "…" : t;
-  if (/flutter|widget|dart|async|stream|future|bloc|provider/i.test(ctx + " " + t)) {
+  const label = ovi && ovi !== t ? ovi : t.length > 100 ? t.slice(0, 97) + "…" : t;
+  const blob = `${ctx} ${t} ${label}`;
+
+  // Long VI options (MLN): the option IS the definition
+  if (hasVi(t) && t.length >= 24) {
+    const short = t.length > 160 ? t.slice(0, 157) + "…" : t;
     return {
-      what: `Phương án «${label}» thuộc miền Flutter/Dart — hiểu theo đúng vai trò kỹ thuật của cụm này.`,
-      role: "Chỉ chọn nếu khớp đúng khái niệm async/UI/state/toolchain mà đề hỏi.",
-      tags: ["flutter"],
-    };
-  }
-  if (/process|waiting|ready|disk|cpu|os|operating/i.test(ctx + " " + t)) {
-    return {
-      what: `Khái niệm OS «${label}» gắn vòng đời tiến trình / lập lịch / I/O.`,
-      role: "Đối chiếu trạng thái Waiting/Ready/Running… với tình huống đề.",
-      tags: ["os"],
-    };
-  }
-  if (/tư bản|giá trị|độc quyền|thị trường|lao động/i.test(ctx + t)) {
-    return {
-      what: `Khái niệm kinh tế–chính trị «${label}» trong lý thuyết Mác–Lênin.`,
-      role: "Khớp đúng định nghĩa/đặc trưng đề hỏi, tránh nhầm khái niệm gần.",
+      what: short,
+      role: `Ý của lựa chọn này: ${short.slice(0, 80)}${short.length > 80 ? "…" : ""} — đặt đúng trong hệ phạm trù đề hỏi.`,
       tags: ["mln"],
     };
   }
-  if (/network|packet|protocol|ip|dns|arp|cloud|project|management|spool/i.test(ctx + " " + t)) {
+  if (hasVi(label) && label.length >= 24 && label !== t) {
+    const short = label.length > 160 ? label.slice(0, 157) + "…" : label;
     return {
-      what: `Phương án «${label}» trong miền FE/CNTT — cần đúng cơ chế/định nghĩa đề hỏi.`,
-      role: "So với đáp án đúng theo bản chất kỹ thuật, không chọn theo từ quen.",
+      what: short,
+      role: `Diễn đạt của phương án («${short.slice(0, 50)}${short.length > 50 ? "…" : ""}»), cần khớp đúng lớp khái niệm đề hỏi.`,
+      tags: hasVi(ctx) ? ["mln"] : [],
+    };
+  }
+
+  // Short EN distractors — domain roles without «Phương án»
+  if (/navigation history|lịch sử điều hướng|quản lý lịch sử/i.test(blob)) {
+    return {
+      what: "Lịch sử stack điều hướng (các route đã push/pop).",
+      role: "Do Navigator quản lý; BuildContext chỉ là cách gọi Navigator.of(context).",
+      tags: ["flutter"],
+    };
+  }
+  if (/application data|lưu application|store.*data|app data/i.test(blob)) {
+    return {
+      what: "Lưu dữ liệu ứng dụng (state/storage), không phải tọa độ widget.",
+      role: "State management / local storage — khác vai trò BuildContext trên tree.",
+      tags: ["flutter"],
+    };
+  }
+  if (/paint|pixel|vẽ pixel|render ui only/i.test(blob)) {
+    return {
+      what: "Vẽ pixel/lớp đồ họa lên màn hình.",
+      role: "Thuộc RenderObject/engine (Skia); không phải Handle BuildContext.",
+      tags: ["flutter"],
+    };
+  }
+  if (/middleware/i.test(blob)) {
+    return {
+      what: "Lớp trung gian xử lý request/response (thường web/server).",
+      role: "Gần ý 'chặn/cho qua' nhưng không phải widget pattern Guard chuẩn Flutter.",
+      tags: ["flutter"],
+    };
+  }
+  if (/route protection|authenticated routes|guard/i.test(blob)) {
+    return {
+      what: "Bảo vệ route cần đăng nhập (cho phép/chặn vào màn).",
+      role: "Route guard / auth gate trước khi vào màn bảo vệ.",
+      tags: ["flutter"],
+    };
+  }
+  if (/batch processing|udp|tcp|http|dns|arp|spool|mtbf|check digit/i.test(blob)) {
+    return {
+      what: `Cơ chế/thuật ngữ CNTT «${label}».`,
+      role: "Đối chiếu đúng định nghĩa/đặc trưng kỹ thuật mà đề hỏi.",
       tags: ["fe"],
     };
   }
+  if (/process|waiting|ready|disk|cpu|os|operating|suspend/i.test(blob)) {
+    return {
+      what: `Trạng thái/khái niệm OS liên quan «${label}».`,
+      role: "Gắn vòng đời tiến trình, lập lịch CPU hoặc chờ I/O.",
+      tags: ["os"],
+    };
+  }
+  if (/tư bản|giá trị|độc quyền|thị trường|lao động|giai cấp|mác|cách mạng/i.test(blob)) {
+    return {
+      what: hasVi(label) ? label : `Phạm trù/khái niệm «${label}» trong KTCT–triết Mác–Lênin.`,
+      role: "Đặt đúng trong hệ phạm trù; tránh nhầm khái niệm gần.",
+      tags: ["mln"],
+    };
+  }
+  if (/flutter|widget|dart|async|stream|future|bloc|provider|navigator/i.test(blob)) {
+    return {
+      what: `Cơ chế Flutter/Dart «${label}».`,
+      role: "Chỉ chọn khi khớp đúng API/widget/state mà đề hỏi.",
+      tags: ["flutter"],
+    };
+  }
   return {
-    what: `Phương án «${label}» — hiểu theo nghĩa kỹ thuật/lý thuyết của riêng cụm này.`,
-    role: "Chỉ đúng khi khớp đúng khía cạnh đề hỏi (không phải mọi khái niệm gần).",
+    what: label.length > 2 ? `Cụm «${label}» mang một nghĩa riêng cần đối chiếu với đề.` : "Một lựa chọn cạnh tranh; đối chiếu trực tiếp với đề.",
+    role: "So bản chất với đáp án đúng; loại nếu sai đối tượng hoặc sai lớp khái niệm.",
     tags: [],
   };
 }
@@ -885,6 +1063,12 @@ function define(text, ctx = "") {
 const Q_PHRASES = [
   [/What is the role of BuildContext\??/i, "Vai trò của BuildContext là gì?"],
   [/What is the role of (.+?)\??$/i, "Vai trò của $1 là gì?"],
+  [/Which widget allows overlapping of its child widgets\??/i, "Widget nào cho phép các widget con chồng lên nhau?"],
+  [/Which widget is best used to add fixed empty space\??/i, "Widget nào tốt nhất để thêm khoảng trống cố định?"],
+  [/Which widget is best for fixed empty space of a given size\??/i, "Widget nào tốt nhất cho khoảng trống cố định theo size?"],
+  [/Expanded inside a Flex \(Row\/Column\) is used to:/i, "Expanded trong Flex (Row/Column) dùng để:"],
+  [/Which widget pattern protects authenticated routes\??/i, "Mẫu widget nào bảo vệ các route cần xác thực?"],
+  [/What is the role of BuildContext in Flutter\??/i, "Vai trò của BuildContext trong Flutter là gì?"],
   [/What does Curves\/Animation provide\??/i, "Curves/Animation cung cấp gì?"],
   [/What does a Future represent\??/i, "Future đại diện cho điều gì?"],
   [/What does a Stream provide compared to a single Future\??/i, "So với một Future đơn lẻ, Stream cung cấp gì thêm?"],
@@ -941,6 +1125,15 @@ const OPT_PHRASES = [
   [/JavaScript only/i, "Chỉ JavaScript"],
   [/Animation curve behavior/i, "Hành vi đường cong animation"],
   [/Layout control/i, "Điều khiển bố cục (layout)"],
+  [/Take remaining free space along the main axis/i, "Chiếm phần trống còn lại theo trục chính"],
+  [/Hide the keyboard only/i, "Chỉ ẩn bàn phím"],
+  [/Hide the keyboard/i, "Ẩn bàn phím"],
+  [/Start deep links/i, "Khởi chạy deep links"],
+  [/Compile AOT/i, "Biên dịch AOT"],
+  [/Expanded always filling remaining space/i, "Expanded luôn lấp đầy phần không gian còn lại"],
+  // Q-like strings sometimes land in option/stem helpers
+  [/Which widget allows overlapping of its child widgets\??/i, "Widget nào cho phép các widget con chồng lên nhau?"],
+  [/Which widget is best used to add fixed empty space\??/i, "Widget nào tốt nhất để thêm khoảng trống cố định?"],
   [/State updates/i, "Cập nhật state"],
   [/Navigation/i, "Điều hướng màn hình"],
   [/AOT and JIT compilation/i, "Biên dịch AOT và JIT"],
@@ -1059,19 +1252,63 @@ function parseRemote(raw) {
   return out;
 }
 
+/** Strip known MLN/remote filler tails; return cleaned why or null */
+function cleanRemoteWhy(w) {
+  if (!w) return null;
+  let s = String(w)
+    .replace(/\s*[—\-–]\s*không khớp trọng tâm đề bằng đáp án đúng\s*\([^)]*\)\.?/gi, "")
+    .replace(/\s*không khớp trọng tâm đề bằng đáp án đúng\s*\([^)]*\)\.?/gi, "")
+    .replace(/\s*Trong khi đề cần:\s*.+$/i, "")
+    .replace(/\s*đáp án chuẩn là[^.]+\.?/gi, "")
+    .trim();
+  if (!s || s.length < 12) return null;
+  if (BANNED.test(s) || FILLER.test(s)) return null;
+  return s;
+}
+
 function isBadRemoteWhy(w, opt, question) {
   if (!w) return true;
   if (BANNED.test(w)) return true;
+  if (FILLER.test(w) && /không khớp trọng tâm|Trong khi đề cần|thuộc miền|Phương án «/i.test(w)) {
+    // may still salvage prefix via cleanRemoteWhy
+    if (!cleanRemoteWhy(w)) return true;
+  }
   if (w.length < 12) return true;
   // remote often pastes the same Future/BLoC line onto every distractor
   if (/BLoC|bloc/i.test(w) && !/bloc|stream/i.test(String(opt || ""))) return true;
   if (/Future là giá trị bất đồng bộ một lần/i.test(w) && /permission|const|compile|apk|sql|widget|html|kotlin/i.test(String(opt || "")))
     return true;
   if (/không trả lời đúng trọng tâm|đáp án chuẩn|so sánh trực tiếp/i.test(w)) return true;
+  // Column/Stack layout template pasted onto keyboard / deep links / AOT / etc.
+  if (
+    /Column xếp dọc|không scroll mặc định, không overlap|Row xếp ngang/i.test(w) &&
+    !/column|row|stack|overlap|scroll|layout|flex|expanded|sizedbox|padding|align/i.test(
+      String(opt || "")
+    )
+  )
+    return true;
+  // Expanded-fill template used when option is not about Expanded/space
+  if (
+    /Expanded chiếm phần còn lại|trục chính Flex/i.test(w) &&
+    !/expanded|remaining|flex|space|sizedbox|padding|container|layout/i.test(String(opt || ""))
+  )
+    return true;
+  // same remote line reused across unrelated options (too short generic + no opt keywords)
+  if (/Lựa chọn này không trả lời đúng trọng tâm/i.test(w)) return true;
+  // Navigator auth-guard template on non-auth questions
+  if (
+    /không tự chặn route theo auth|route guard|xác thực/i.test(w) &&
+    !/auth|guard|protect|login|middleware|route protection/i.test(String(question || "") + String(opt || ""))
+  )
+    return true;
   return false;
 }
 
 function whyWrongSpecific(opt, optDef, correctDef, question, remoteWhy) {
+  const cleaned = cleanRemoteWhy(remoteWhy);
+  if (cleaned && !isBadRemoteWhy(cleaned, opt, question)) {
+    return cleaned;
+  }
   if (remoteWhy && !isBadRemoteWhy(remoteWhy, opt, question)) {
     return remoteWhy;
   }
@@ -1079,6 +1316,20 @@ function whyWrongSpecific(opt, optDef, correctDef, question, remoteWhy) {
   const q = String(question || "");
   const oWhat = optDef.what;
   const cWhat = correctDef.what;
+
+  // MLN / Vietnamese theory banks
+  if (hasVi(q) && !hasJp(q) && /tư bản|độc quyền|giá trị|thị trường|giai cấp|mác|cách mạng|biểu hiện|đặc trưng|phạm trù|ý thức|vật chất|thặng dư|tái sản xuất|toàn cầu|khu vực/i.test(q + o)) {
+    if (/biểu hiện mới|biểu hiện của/i.test(q)) {
+      return `${oWhat.replace(/\.$/, "")}. Đúng là một khái niệm liên quan nhưng không phải «biểu hiện mới» mà đề hỏi — đề cần: ${cWhat.replace(/\.$/, "")}.`;
+    }
+    if (/đâu không phải|không phải đặc trưng|không thuộc/i.test(q)) {
+      return `${oWhat.replace(/\.$/, "")}. Đây có thể là đặc trưng/đúng khái niệm; đề đang tìm phương án không thuộc tập đó.`;
+    }
+    if (/thứ tự|từ thấp đến cao|các giai đoạn/i.test(q)) {
+      return `${oWhat.replace(/\.$/, "")}. Sai thứ tự/giai đoạn so với đáp án chuẩn của đề.`;
+    }
+    return `${oWhat.replace(/\.$/, "")}. Khác phạm trù hoặc khác khía cạnh so với điều đề hỏi (${cWhat.replace(/\.$/, "")}).`;
+  }
 
   // Domain contrasts
   if (/buildcontext/i.test(q)) {
@@ -1198,8 +1449,60 @@ function whyWrongSpecific(opt, optDef, correctDef, question, remoteWhy) {
     if (/cannot draw/i.test(o)) return "Flutter vẽ UI tùy biến qua widget/custom paint; phát biểu phủ định là sai.";
   }
 
-  // Generic but still contentful (not banned): definition contrast
-  return `${oWhat.replace(/\.$/, "")}. Trong khi đề cần: ${cWhat.replace(/\.$/, "")}.`;
+  // Expanded / Flex remaining space
+  if (/expanded/i.test(q) || /remaining free space|main axis/i.test(q + " " + cWhat)) {
+    if (/keyboard|hide the keyboard/i.test(o))
+      return "Expanded không điều khiển bàn phím. Ẩn bàn phím thường dùng FocusScope.of(context).unfocus() hoặc FocusNode.";
+    if (/deep link/i.test(o))
+      return "Deep links mở app/màn hình qua URL; không liên quan chia không gian layout Flex.";
+    if (/compile aot|\baot\b/i.test(o))
+      return "AOT (Ahead-of-Time) là cơ chế biên dịch Dart khi build release; không phải widget Expanded.";
+    if (/navigator|httpclient|network latency|z-depth|time axis/i.test(o))
+      return `${oWhat.replace(/\.$/, "")}. Expanded chỉ chia không gian còn lại trên main axis của Flex.`;
+  }
+
+  // SizedBox fixed space vs Expanded / Padding / Container
+  if (/fixed empty space|fixed space|given size/i.test(q) || /sizedbox/i.test(cWhat + q)) {
+    if (/expanded/i.test(o))
+      return "Expanded chiếm phần còn lại trên main axis (flex fill), không tạo khoảng trống size cố định độc lập như SizedBox.";
+    if (/padding/i.test(o))
+      return "Padding thêm lề quanh child; không chuyên tạo «ô trống» width/height cố định như SizedBox.";
+    if (/container/i.test(o))
+      return "Container đa năng (trang trí + constraints); SizedBox mới là widget gọn cho khoảng trống size cố định.";
+    if (/navigator/i.test(o))
+      return "Navigator điều hướng route/màn hình; không tạo khoảng trống layout.";
+    if (/httpclient/i.test(o))
+      return "HttpClient thuộc tầng mạng/HTTP; không liên quan spacer UI.";
+  }
+
+  // Stack overlap
+  if (/overlap|overlapping/i.test(q)) {
+    if (/column/i.test(o))
+      return "Column xếp dọc trên main axis, không overlap child theo mặc định.";
+    if (/row/i.test(o)) return "Row xếp ngang; không xếp chồng/overlap như Stack.";
+    if (/expanded/i.test(o))
+      return "Expanded chỉ chiếm phần còn lại trong Flex; không tạo lớp chồng Z như Stack.";
+  }
+
+  // crossAxisAlignment in Column
+  if (/crossaxisalignment|cross axis/i.test(q)) {
+    if (/vertical alignment in column/i.test(o))
+      return "Trong Column main axis đã là dọc; crossAxisAlignment điều khiển trục ngang (cross), không phải căn dọc.";
+    if (/child order|widget size|z-depth|time axis|network latency/i.test(o))
+      return `${oWhat.replace(/\.$/, "")}. crossAxisAlignment chỉ căn theo trục vuông góc main axis.`;
+  }
+
+  // Generic but contentful: always mention this option’s own label for uniqueness
+  const ow = oWhat.replace(/\.$/, "").replace(FILLER, "").trim();
+  const cw = cWhat.replace(/\.$/, "").replace(FILLER, "").trim();
+  const optHint = String(o || "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 70);
+  if (ow && cw && norm(ow) !== norm(cw)) {
+    return `«${optHint}${String(o).length > 70 ? "…" : ""}» — ${ow}. Đề cần: ${cw}.`;
+  }
+  return `«${optHint}${String(o).length > 70 ? "…" : ""}» lệch đối tượng/cơ chế so với đáp án đúng của đề.`;
 }
 
 function buildIntent(question, correctDef, kbTags) {
@@ -1227,6 +1530,24 @@ function buildIntent(question, correctDef, kbTags) {
   }
   if (/const|final|var|null/i.test(q)) {
     return bullets("Phân biệt const, final, var và null safety.", "Compile-time vs runtime assignment.");
+  }
+  if (/expanded|flex\b|main axis|remaining free space/i.test(q)) {
+    return bullets(
+      "Expanded chỉ dùng trong Flex/Row/Column.",
+      "Giãn theo main axis: Row → ngang, Column → dọc; nhiều Expanded chia theo flex."
+    );
+  }
+  if (/fixed empty space|sizedbox/i.test(q)) {
+    return bullets(
+      "Phân biệt khoảng trống cố định (SizedBox) và flex fill (Expanded).",
+      "Padding/Container không thay thế SizedBox cho spacer size rõ ràng."
+    );
+  }
+  if (/overlap|stack/i.test(q)) {
+    return bullets(
+      "Stack cho overlap theo trục Z.",
+      "Row/Column/Expanded là layout flex, không chồng lớp."
+    );
   }
   if (/flutter|widget|skia|render/i.test(q)) {
     return bullets(
@@ -1266,14 +1587,40 @@ function rebuildOne(q, remote) {
   const exp = {};
   // question VI
   if (hasVi(qText) && !hasJp(qText)) exp.questionVi = qText;
-  else if (remoteP.qvi) exp.questionVi = remoteP.qvi;
+  else if (remoteP.qvi && hasVi(remoteP.qvi) && !/^Đề:\s/i.test(remoteP.qvi))
+    exp.questionVi = remoteP.qvi;
   else {
     const t = translateQuestion(qText);
-    exp.questionVi = t || "Câu hỏi tiếng Nhật — đọc kỹ đề; đáp án theo khái niệm CNTT.";
+    exp.questionVi = t && !/^Đề:\s/i.test(t) ? t : translateQuestion(qText) || qText;
+  }
+  // salvage half-translated questionVi
+  if (
+    exp.questionVi &&
+    ((exp.questionVi.match(/[A-Za-z]{4,}/g) || []).length >= 6 ||
+      /Cái nào [A-Za-z]|Cái gì [A-Za-z]|Trước khi [a-z]{3,}/i.test(exp.questionVi))
+  ) {
+    const t2 = translateQuestion(qText);
+    if (t2 && hasVi(t2)) exp.questionVi = t2;
   }
 
   exp.optionsVi = {};
-  for (const L of letters) exp.optionsVi[L] = translateOpt(options[L]);
+  for (const L of letters) {
+    const raw = options[L];
+    let ovi = translateOpt(raw);
+    // deepen half-EN options
+    if (
+      ovi &&
+      ((ovi.match(/[A-Za-z]{4,}/g) || []).length >= 4 ||
+        /Cái nào |Cái gì |is |the |which /i.test(ovi))
+    ) {
+      try {
+        ovi = lexTranslateOptDeep(raw) || ovi;
+      } catch {
+        /* keep ovi */
+      }
+    }
+    exp.optionsVi[L] = ovi;
+  }
 
   const ans = [...corrects].sort();
   exp.answerDisplay = ans
@@ -1282,12 +1629,34 @@ function rebuildOne(q, remote) {
 
   const primary = ans[0] || "A";
   const correctDef = defineCorrect(qText, options[primary] || "");
-  // concept must not echo option name — expand with contrast if needed
+  // concept: prefer substance; never append filler "Vai trò: một đặc trưng…"
   let concept = correctDef.what;
+  const roleOk =
+    correctDef.role &&
+    !FILLER.test(correctDef.role) &&
+    !/đối chiếu đúng khía cạnh|hệ phạm trù đề hỏi/i.test(correctDef.role);
   if (isEcho(concept, options[primary]) || isEcho(concept, exp.optionsVi[primary])) {
-    concept = correctDef.role
-      ? `${correctDef.what.replace(/\.$/, "")}. Vai trò: ${correctDef.role}`
-      : `Định nghĩa kỹ thuật khớp yêu cầu đề (không chỉ trùng tên phương án).`;
+    if (hasVi(options[primary]) && String(options[primary]).length >= 24) {
+      concept = String(options[primary]);
+    } else if (roleOk) {
+      concept = `${correctDef.what.replace(/\.$/, "")}. ${correctDef.role}`;
+    }
+  } else if (roleOk && concept.length < 40) {
+    concept = `${concept.replace(/\.$/, "")}. ${correctDef.role}`;
+  }
+  // strip residual filler tails on concept
+  concept = String(concept)
+    .replace(/\.?\s*Vai trò:\s*Một đặc trưng\/khái niệm[^.]*/gi, "")
+    .replace(/Một đặc trưng\/khái niệm trong hệ phạm trù[^.]*/gi, "")
+    .trim();
+  if (!concept || concept.length < 12) concept = correctDef.what || exp.optionsVi[primary] || options[primary];
+  // MLN: avoid pure echo of answer text (audit concept_echo)
+  if (
+    hasVi(options[primary]) &&
+    norm(concept) === norm(options[primary]) &&
+    String(options[primary]).length >= 20
+  ) {
+    concept = `Định nghĩa/đặc trưng cần nắm: ${String(options[primary])}`;
   }
   exp.concept = bullets(concept);
 
@@ -1325,6 +1694,15 @@ function rebuildOne(q, remote) {
       exp.memoryTip = bullets("C-S-T-C: Cartel → Syndicate → Trust → Consortium.");
     if (/waiting|ready|process/i.test(qText))
       exp.memoryTip = bullets("Waiting = chờ sự kiện/I/O; Ready = chờ CPU.");
+    if (/expanded/i.test(qText))
+      exp.memoryTip = bullets(
+        "Expanded = Flexible(fit: FlexFit.tight) — bắt buộc full phần còn lại trên main axis.",
+        "Row: main = ngang · Column: main = dọc."
+      );
+    if (/fixed empty space|sizedbox/i.test(qText) && /sizedbox/i.test(options[primary] || ""))
+      exp.memoryTip = bullets("SizedBox = size cố định; Expanded = chiếm phần còn lại (flex).");
+    if (/overlap|stack/i.test(qText) && /stack/i.test(options[primary] || qText))
+      exp.memoryTip = bullets("Stack xếp chồng (Z); Row/Column không overlap mặc định.");
   }
 
   exp.whatIs = {};
@@ -1342,11 +1720,20 @@ function rebuildOne(q, remote) {
     const od = define(opt, qText);
     let what = od.what;
     let role = od.role;
-    if (isEcho(what, opt) || isEcho(what, ovi)) {
-      what = `${ovi}: hiểu theo đúng nghĩa kỹ thuật/lý thuyết, không dừng ở nhãn.`;
+    if (isEcho(what, opt) || isEcho(what, ovi) || FILLER.test(what) || BANNED.test(what)) {
+      const para = paraphraseOption(opt, qText);
+      what = para.what;
+      if (FILLER.test(role) || BANNED.test(role) || !role) role = para.role;
     }
-    if (BANNED.test(what)) what = od.hit?.what || `Ý «${ovi}» trong môn học — định nghĩa theo ngữ cảnh đề.`;
-    if (BANNED.test(role)) role = od.hit?.role || "Thực hiện chức năng gắn với đúng khái niệm này.";
+    if (FILLER.test(role) || BANNED.test(role)) {
+      role = od.role && !FILLER.test(od.role) && !BANNED.test(od.role)
+        ? od.role
+        : "Đối chiếu đúng cơ chế/phạm trù với trọng tâm đề.";
+    }
+    // MLN long options: prefer option text as "Là gì?"
+    if (hasVi(String(opt)) && String(opt).length >= 28 && FILLER.test(what)) {
+      what = String(opt).length > 160 ? String(opt).slice(0, 157) + "…" : String(opt);
+    }
 
     exp.whatIs[L] = what;
 
@@ -1355,47 +1742,53 @@ function rebuildOne(q, remote) {
     if (/BLoC|bloc/i.test(ww) && !/bloc|stream/i.test(opt + qText)) {
       ww = whyWrongSpecific(opt, { what, role }, correctDef, qText, null);
     }
+    if (FILLER.test(ww) || BANNED.test(ww)) {
+      ww = whyWrongSpecific(opt, { what, role }, correctDef, qText, null);
+    }
+    // role label for MLN
+    const roleLabel = hasVi(qText) && /tư bản|độc quyền|giá trị|giai cấp|biểu hiện|đặc trưng|phạm trù/i.test(qText)
+      ? "Vai trò?"
+      : "Dùng để làm gì?";
     exp.whyWrong[L] = bullets(
       `Là gì? ${what}`,
-      `Dùng để làm gì? ${role}`,
+      `${roleLabel} ${role}`,
       `Vì sao sai? ${ww}`
     );
   }
 
-  // Quality gate: no banned phrases anywhere
+  // Quality gate: no banned / filler phrases anywhere
   const blob = JSON.stringify(exp);
-  if (BANNED.test(blob)) {
-    // scrub lines
+  if (BANNED.test(blob) || FILLER.test(blob)) {
+    const badLine = (l) => BANNED.test(l) || FILLER.test(l);
     for (const key of ["concept", "whyCorrect", "intent", "memoryTip"]) {
       if (exp[key]) {
         exp[key] = bullets(
           ...String(exp[key])
             .split("\n")
             .map((l) => l.replace(/^•\s*/, ""))
-            .filter((l) => !BANNED.test(l))
+            .filter((l) => !badLine(l))
         );
       }
     }
     for (const L of Object.keys(exp.whyWrong || {})) {
-      const parts = String(exp.whyWrong[L]).split("\n").map((l) => l.replace(/^•\s*/, ""));
-      const clean = parts.filter((l) => !BANNED.test(l));
-      // re-ensure 3 parts
-      const what = (clean.find((l) => /^Là gì\?/i.test(l)) || `Là gì? ${exp.whatIs[L]}`).replace(
-        /^Là gì\?\s*/i,
-        ""
-      );
-      const role = (
-        clean.find((l) => /^Dùng để làm gì\?/i.test(l)) ||
-        `Dùng để làm gì? ${define(options[L], qText).role}`
-      ).replace(/^Dùng để làm gì\?\s*/i, "");
-      let why = clean.find((l) => /^Vì sao sai\?/i.test(l));
-      why = why
-        ? why.replace(/^Vì sao sai\?\s*/i, "")
-        : whyWrongSpecific(options[L], define(options[L], qText), correctDef, qText, null);
-      if (BANNED.test(why)) {
-        why = `${define(options[L], qText).what.replace(/\.$/, "")}. Đề đang hỏi khía cạnh khác: ${correctDef.what.replace(/\.$/, "")}.`;
+      if (corrects.has(L)) continue;
+      const od = define(options[L], qText);
+      let what = exp.whatIs[L] || od.what;
+      let role = od.role;
+      if (badLine(what) || isEcho(what, options[L])) {
+        what = paraphraseOption(options[L], qText).what;
       }
-      exp.whyWrong[L] = bullets(`Là gì? ${what}`, `Dùng để làm gì? ${role}`, `Vì sao sai? ${why}`);
+      if (badLine(role)) role = "Đối chiếu đúng cơ chế/phạm trù với trọng tâm đề.";
+      let why = whyWrongSpecific(options[L], { what, role }, correctDef, qText, null);
+      if (badLine(why)) {
+        why = `${String(what).replace(/\.$/, "")}. Đề đang hỏi khía cạnh khác: ${String(correctDef.what).replace(/\.$/, "")}.`;
+      }
+      exp.whatIs[L] = what;
+      const roleLabel =
+        hasVi(qText) && /tư bản|độc quyền|giá trị|giai cấp|biểu hiện|đặc trưng/i.test(qText)
+          ? "Vai trò?"
+          : "Dùng để làm gì?";
+      exp.whyWrong[L] = bullets(`Là gì? ${what}`, `${roleLabel} ${role}`, `Vì sao sai? ${why}`);
     }
     if (!exp.concept) exp.concept = bullets(correctDef.what);
     if (!exp.whyCorrect) exp.whyCorrect = bullets(correctDef.what, correctDef.role);
@@ -1424,13 +1817,21 @@ function writeBank(key, questions, meta = {}) {
 }
 
 // ── main ───────────────────────────────────────────────
-// node rebuild_imported_explain_v5.mjs           → only imported tasks
-// node rebuild_imported_explain_v5.mjs --all-prm-jfe → ALL questions in prm + fe (JFE)
-const ALL_PRM_JFE = process.argv.includes("--all-prm-jfe");
+// node rebuild_imported_explain_v5.mjs              → only imported tasks
+// node rebuild_imported_explain_v5.mjs --all-prm-jfe → ALL prm + fe
+// node rebuild_imported_explain_v5.mjs --all-mln     → ALL mln
+// node rebuild_imported_explain_v5.mjs --all         → ALL prm + fe + mln
+const ALL = process.argv.includes("--all");
+const ALL_PRM_JFE = ALL || process.argv.includes("--all-prm-jfe");
+const ALL_MLN = ALL || process.argv.includes("--all-mln");
 const report = {};
-const mapEntries = ALL_PRM_JFE
-  ? Object.entries(MAP).filter(([k]) => k === "prm" || k === "fe")
-  : Object.entries(MAP);
+const mapEntries = Object.entries(MAP).filter(([k]) => {
+  if (ALL) return k === "prm" || k === "fe" || k === "mln";
+  if (ALL_PRM_JFE && ALL_MLN) return k === "prm" || k === "fe" || k === "mln";
+  if (ALL_PRM_JFE) return k === "prm" || k === "fe";
+  if (ALL_MLN) return k === "mln";
+  return true; // default: all MAP keys but only imported tasks
+});
 
 for (const [localKey, remoteFile] of mapEntries) {
   const remotePath = path.join(fetchDir, remoteFile);
@@ -1443,24 +1844,35 @@ for (const [localKey, remoteFile] of mapEntries) {
   const local = JSON.parse(fs.readFileSync(path.join(dataDir, `${localKey}.json`), "utf8"));
   let n = 0;
   let bannedLeft = 0;
+  let fillerLeft = 0;
   let echoLeft = 0;
-  const passName = ALL_PRM_JFE ? "all-prm-jfe-v5" : "imported-v5-translate";
+  const forceAll =
+    (ALL_PRM_JFE && (localKey === "prm" || localKey === "fe")) ||
+    (ALL_MLN && localKey === "mln");
+  const passName = ALL
+    ? "all-banks-v6"
+    : forceAll
+      ? localKey === "mln"
+        ? "all-mln-v6"
+        : "all-prm-jfe-v6"
+      : "imported-v6";
   const qs = local.questions.map((q) => {
     const isImp = IMPORTED.has(q.task) || IMPORTED.has(q.source);
-    const doRebuild = ALL_PRM_JFE || isImp;
+    const doRebuild = forceAll || isImp;
     if (!doRebuild) return q;
     n++;
     const out = rebuildOne(q, byQ.get(norm(q.question)));
     const blob = JSON.stringify(out.explanation || {});
     if (BANNED.test(blob)) bannedLeft++;
+    if (FILLER.test(blob)) fillerLeft++;
     const ans = String(out.answer || "")[0];
     const ansText = (out.options && out.options[ans]) || "";
     if (isEcho(String(out.explanation?.concept || "").replace(/^[•\s]+/, ""), ansText))
       echoLeft++;
     return out;
   });
-  writeBank(localKey, qs, { pass: passName, rebuilt: n });
-  report[localKey] = { rebuilt: n, bannedLeft, echoLeft, pass: passName };
+  writeBank(localKey, qs, { pass: passName, rebuilt: n, fillerLeft, bannedLeft });
+  report[localKey] = { rebuilt: n, bannedLeft, fillerLeft, echoLeft, pass: passName };
   console.log(localKey, report[localKey]);
 }
 
@@ -1471,9 +1883,12 @@ const samples = [
   prm.questions.find((q) => /What does a Stream provide/i.test(q.question)),
   prm.questions.find((q) => /What does a Future represent/i.test(q.question)),
   prm.questions.find((q) => /three layers/i.test(q.question)),
+  prm.questions.find((q) => /Expanded inside a Flex/i.test(q.question)),
+  prm.questions.find((q) => /Which widget allows overlapping/i.test(q.question)),
+  prm.questions.find((q) => /fixed empty space of a given size/i.test(q.question)),
 ];
 for (const s of samples.filter(Boolean)) {
   console.log("\n====", s.id, s.question.slice(0, 60));
-  console.log(JSON.stringify(s.explanation, null, 2).slice(0, 1200));
+  console.log(JSON.stringify(s.explanation, null, 2).slice(0, 1600));
 }
 console.log("REPORT", report);
