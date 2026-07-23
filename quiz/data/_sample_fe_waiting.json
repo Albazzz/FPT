@@ -22,7 +22,7 @@
     },
     "answerDisplay": "A. Waiting",
     "concept": "• Tiến trình đang chờ một sự kiện (I/O, khóa, dữ liệu) hoàn thành.",
-    "whyCorrect": "• Nhường CPU cho tiến trình khác trong lúc chờ.\n• Khớp đúng bản chất kiến thức mà câu hỏi đang kiểm tra.",
+    "whyCorrect": "• Nhường CPU cho tiến trình khác trong lúc chờ.",
     "whyWrong": {
       "B": "• Là gì? Tiến trình bị tạm dừng (thường swap/đưa ra bộ nhớ phụ), không được lập lịch ngay.\n• Dùng để làm gì? Giải phóng RAM hoặc kiểm soát tải hệ thống.\n• Vì sao sai? Suspended thường là bị tạm dừng/swap; đề chỉ nói đang chờ dữ liệu đĩa (Waiting), không nói bị suspend.",
       "C": "• Là gì? Tiến trình đã chạy xong hoặc bị kết thúc; OS không còn lập lịch nó.\n• Dùng để làm gì? Giải phóng tài nguyên sau khi kết thúc.\n• Vì sao sai? Terminated là đã xong/bị hủy; tiến trình trong đề vẫn còn chờ dữ liệu nên chưa kết thúc.",

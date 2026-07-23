@@ -495,6 +495,13 @@ function heuristicConcept(optionText, optionsVi) {
       purpose: "Dùng để định vị sự kiện (ra đời máy, công nghệ…).",
     };
   }
+  // pure number / digit choice
+  if (/^\d+(\.\d+)?$/.test(raw)) {
+    return {
+      what: `Giá trị số «${raw}» là một phương án kết quả tính/thông số trong đề.`,
+      purpose: "Cần thay vào công thức/điều kiện đề và kiểm tra khớp.",
+    };
+  }
   // file ext
   if (/^\.[a-z0-9]+$/i.test(raw) || /\.(doc|xls|pdf|htm|exe|jpg)/i.test(raw)) {
     return {
@@ -502,16 +509,23 @@ function heuristicConcept(optionText, optionsVi) {
       purpose: "Nhận diện định dạng tệp cho ứng dụng/OS.",
     };
   }
+  // JP DB models etc. short tokens
+  if (/階層|リレーショナル|ネットワーク|オブジェクト|ツリー/.test(raw)) {
+    return {
+      what: `Mô hình/khái niệm CSDL «${vi}».`,
+      purpose: "Phân biệt cách tổ chức dữ liệu (cây, quan hệ, mạng…).",
+    };
+  }
   // short label
   if (raw.length <= 40) {
     return {
-      what: `Khái niệm/phương án «${vi}»${vi !== raw ? ` (${raw})` : ""} trong ngữ cảnh CNTT.`,
-      purpose: `Thường gắn với chủ đề mà thuật ngữ «${vi}» mô tả.`,
+      what: `Khái niệm «${vi}»${vi !== raw ? ` (${raw})` : ""} trong ngữ cảnh câu hỏi.`,
+      purpose: "Đối chiếu định nghĩa với đúng điều kiện đề, không chỉ vì tên quen.",
     };
   }
   return {
     what: vi.length > 120 ? vi.slice(0, 120) + "…" : vi,
-    purpose: "Là một phương án kiến thức liên quan trong đề.",
+    purpose: "So khớp nội dung phương án với yêu cầu cụ thể của câu hỏi.",
   };
 }
 
@@ -639,32 +653,48 @@ function splitConceptAndWhy(existingConcept, existingWhy, correctConcept, ansLab
     looksLikeRepeatAnswer(concept, ansLabel) ||
     concept.length < 20 ||
     /đáp án đúng/i.test(concept) ||
+    /📝|dịch câu hỏi|✅\s*đáp án|câu bổ sung từ remote/i.test(concept) ||
     norm(concept) === norm(ansLabel) ||
     norm(concept).startsWith(norm(ansLabel))
   ) {
     concept = correctConcept.what;
   }
 
-  // Truncated dumps → prefer DB what
-  if (concept.length > 180 && concept.includes("…")) {
+  // Truncated dumps / long prose dumps → prefer DB what
+  if (concept.length > 180 && (concept.includes("…") || /📝|✅|dịch câu hỏi/i.test(concept))) {
+    concept = correctConcept.what;
+  }
+  // If concept still looks like multi-section remote dump, force KB/heuristic
+  if ((concept.match(/\n/g) || []).length >= 3 && /đáp án|dịch/i.test(concept)) {
     concept = correctConcept.what;
   }
 
   let why = String(existingWhy || "").replace(/^•\s*/gm, "").trim();
+  // Drop import stubs / name-echo leftovers
+  if (
+    /^đáp án đúng\b/i.test(why) ||
+    /câu bổ sung từ remote/i.test(why) ||
+    looksLikeRepeatAnswer(why, ansLabel)
+  ) {
+    why = "";
+  }
   const whyLines = why
     .split(/\n+/)
     .map((l) => l.replace(/^•\s*/, "").replace(/^【[^】]+】/, "").trim())
     .filter(Boolean)
     .filter((l) => !looksLikeRepeatAnswer(l, ansLabel))
+    .filter((l) => !/^đáp án đúng\b/i.test(l))
+    .filter((l) => !/câu bổ sung từ remote/i.test(l))
     .filter((l) => !/^chọn\s+[a-z]/i.test(l))
     .filter((l) => !/theo giáo trình/i.test(l))
     .filter((l) => !/câu hỏi hỏi:/i.test(l))
     .filter((l) => !/khớp định nghĩa\/chuẩn/i.test(l))
+    .filter((l) => !/thường gắn với chủ đề mà thuật ngữ/i.test(l))
     .filter((l) => norm(l) !== norm(concept) && !concept.startsWith(l.slice(0, 40)));
 
   whyLines.push(correctConcept.purpose);
   if (whyLines.length < 2) {
-    whyLines.push("Khớp đúng điều kiện và bản chất kiến thức trong câu hỏi.");
+    whyLines.push("Đối chiếu định nghĩa/cơ chế với đúng điều kiện mà đề yêu cầu.");
   }
 
   const cleanWhy = [...new Set(whyLines.map((l) => l.trim()))]
@@ -684,13 +714,18 @@ function splitConceptAndWhy(existingConcept, existingWhy, correctConcept, ansLab
 function upgradeQuestion(q) {
   const exp = { ...(q.explanation || {}) };
   const options = q.options || {};
-  const corrects = new Set(
-    Array.isArray(q.answers) && q.answers.length
-      ? q.answers.map(String)
-      : q.answer
-        ? [String(q.answer)]
-        : []
-  );
+  let ansLetters = [];
+  if (Array.isArray(q.answers) && q.answers.length) {
+    ansLetters = q.answers
+      .map((a) => String(a).toUpperCase().replace(/[^A-E]/g, ""))
+      .filter(Boolean);
+  } else if (q.answer != null && q.answer !== "") {
+    const s = String(q.answer)
+      .toUpperCase()
+      .replace(/[^A-E]/g, "");
+    ansLetters = s.length <= 1 ? (s ? [s] : []) : s.split("");
+  }
+  const corrects = new Set(ansLetters);
   const ans = [...corrects][0] || "A";
   const ansText = options[ans] || "";
   const ansVi = (exp.optionsVi && exp.optionsVi[ans]) || ansText;

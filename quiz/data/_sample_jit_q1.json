@@ -23,7 +23,7 @@
     },
     "answerDisplay": "C. tín hiệu dòng điện (mA) hoặc điện áp (mV)",
     "concept": "• Tín hiệu liên tục biểu diễn bằng sự thay đổi dòng điện (mA) hoặc điện áp (mV).",
-    "whyCorrect": "• Dùng để truyền thông tin dạng analog trên đường dây/điện tử.\n• Khớp đúng bản chất kiến thức mà câu hỏi đang kiểm tra.",
+    "whyCorrect": "• Dùng để truyền thông tin dạng analog trên đường dây/điện tử.",
     "whyWrong": {
       "A": "• Là gì? Dữ liệu số được biểu diễn bằng hai giá trị rời rạc 0 và 1.\n• Dùng để làm gì? Là nền tảng lưu trữ và xử lý trong hệ thống digital.\n• Vì sao sai? Câu hỏi hỏi dạng tín hiệu analog liên tục; phương án này thuộc dữ liệu/mã số hoặc cách đóng gói, không phải sóng analog.",
       "B": "• Là gì? Dữ liệu được chia thành các gói (packet) để truyền trên mạng.\n• Dùng để làm gì? Giúp định tuyến, kiểm soát lỗi và truyền hiệu quả.\n• Vì sao sai? Câu hỏi hỏi dạng tín hiệu analog liên tục; phương án này thuộc dữ liệu/mã số hoặc cách đóng gói, không phải sóng analog.",

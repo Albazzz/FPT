@@ -55,8 +55,17 @@ function writeBank(key, questions, meta = {}) {
 }
 
 function correctsOf(q) {
-  if (Array.isArray(q.answers) && q.answers.length) return q.answers.map(String);
-  return q.answer ? [String(q.answer)] : [];
+  if (Array.isArray(q.answers) && q.answers.length) {
+    return q.answers
+      .map((a) => String(a).toUpperCase().replace(/[^A-E]/g, ""))
+      .filter(Boolean);
+  }
+  if (q.answer == null || q.answer === "") return [];
+  const s = String(q.answer)
+    .toUpperCase()
+    .replace(/[^A-E]/g, "");
+  if (!s) return [];
+  return s.length === 1 ? [s] : s.split("");
 }
 
 // ── MLN concept dictionary (định nghĩa, không lặp tên) ─
@@ -128,6 +137,24 @@ const MLN = [
     what: "Tình trạng một hoặc vài chủ thể khống chế thị trường, hạn chế cạnh tranh tự do.",
     trait: "Giai đoạn CNTB độc quyền: tập trung tư bản và liên minh độc quyền.",
     tags: ["cntb"],
+  },
+  {
+    k: [/cartel|syndicate|trust|consortium|卡特尔/i],
+    what: "Các hình thức tổ chức độc quyền (Cartel → Syndicate → Trust → Consortium) từ thấp đến cao.",
+    trait: "Thứ tự lịch sử: Cartel, Syndicate, Trust, Consortium.",
+    tags: ["cntb"],
+  },
+  {
+    k: [/tiền quy ước|tiền tượng trưng|tiền ghi nợ/i],
+    what: "Dạng tiền không đủ giá trị nội tại bằng sức mua danh nghĩa khi dùng làm tiền.",
+    trait: "Tiền quy ước: sức mua vượt xa chi phí/giá trị dùng việc khác.",
+    tags: ["general"],
+  },
+  {
+    k: [/bàn tay vô hình|adam smith/i],
+    what: "Cơ chế thị trường tự điều chỉnh cung – cầu qua lợi ích cá nhân (Adam Smith).",
+    trait: "Không cần can thiệp hành chính trực tiếp vào từng giao dịch.",
+    tags: ["market"],
   },
   {
     k: [/cạnh tranh tự do/i],
@@ -360,6 +387,30 @@ function conceptOf(opt) {
   return heuristicMln(opt);
 }
 
+/** Drop thin/import-stub explanations so teaching pass rebuilds cleanly */
+function isThinExplain(q) {
+  const e = q.explanation || {};
+  const ww = e.whyWrong || {};
+  if (!Object.keys(ww).length) return true;
+  const wc = String(e.whyCorrect || "");
+  const c = String(e.concept || "");
+  if (/^•?\s*Đáp án đúng\b/i.test(wc.trim())) return true;
+  if (/Câu bổ sung từ remote/i.test(c)) return true;
+  if (!e.intent) return true;
+  const parts = Object.values(ww);
+  if (
+    parts.length &&
+    !parts.every(
+      (v) =>
+        /Là gì\?/i.test(v) &&
+        (/Vai trò\?|Dùng để làm gì\?/i.test(v)) &&
+        /Vì sao sai\?/i.test(v)
+    )
+  )
+    return true;
+  return false;
+}
+
 function isNegationQuestion(q) {
   return /không phải|không đúng|sai|ngoại trừ|trừ|loại trừ|chọn.*sai|phương án sai/i.test(
     q
@@ -408,6 +459,8 @@ function splitCorrect(exp, ansText, correct, question) {
   // keep useful old lines that are not name-echo / filler
   for (const l of oldWhy) {
     if (norm(l) === norm(ansText)) continue;
+    if (/^đáp án đúng\b/i.test(l)) continue;
+    if (/câu bổ sung từ remote/i.test(l)) continue;
     if (/khớp đúng bản chất|đúng với định nghĩa|chuẩn kiến thức|theo giáo trình/i.test(l))
       continue;
     if (norm(l) === norm(concept)) continue;
@@ -508,14 +561,21 @@ function upgradeMln(q) {
   exp.concept = concept;
   exp.whyCorrect = whyCorrect;
   if (corrects.size > 1) {
+    const rest = String(whyCorrect)
+      .split("\n")
+      .map((l) => l.replace(/^•\s*/, ""))
+      .filter(Boolean)
+      .filter((l) => !/câu hỏi có thể chọn nhiều/i.test(l))
+      .filter((l) => !/^đáp án đúng\b/i.test(l))
+      .slice(0, 3);
     exp.whyCorrect = bullets(
-      `Câu hỏi có thể chọn nhiều phương án đúng: ${[...corrects].join(", ")}.`,
-      ...String(whyCorrect)
-        .split("\n")
-        .map((l) => l.replace(/^•\s*/, ""))
-        .filter(Boolean)
-        .slice(0, 3)
+      `Câu chọn nhiều đáp án đúng: ${[...corrects].sort().join(", ")}.`,
+      ...rest
     );
+    exp.answerDisplay = [...corrects]
+      .sort()
+      .map((L) => `${L}. ${options[L] || L}`)
+      .join(" · ");
   }
   exp.intent = detectIntent(q.question, ansText, correct);
 
