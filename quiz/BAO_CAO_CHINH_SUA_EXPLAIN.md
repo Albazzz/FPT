@@ -1,12 +1,43 @@
-# Báo cáo chỉnh sửa giải thích câu bổ sung (imported) — v5
+# Báo cáo chỉnh sửa giải thích — v5 + JIT all-v1
 
 - **Ngày:** 2026-07-23  
-- **Phạm vi:** ~850 câu `task/source` ∈ `fuexam` | `slides` | `books` | `albazzz` | `fuexam_image`  
-- **Môn:** PRM393 (127) · MLN (65) · JIT401 (340) · FE/JFE (318)  
+- **Phạm vi imported:** ~850 câu `fuexam` | `slides` | `books` | `albazzz` | `fuexam_image`  
+- **JIT toàn bank:** **632 câu** (quiz · sample · pt · fuexam · slides)  
 - **Data:** `quiz/data/{prm,mln,jit,fe}.{json,js}`  
-- **Script:** `quiz/tools/rebuild_imported_explain_v5.mjs` + `quiz/tools/vi_translate.mjs`  
+- **Script PRM/FE/MLN imported:** `rebuild_imported_explain_v5.mjs` + `vi_translate.mjs`  
+- **Script JIT:** `rebuild_jit_all.mjs` + `jp_vi_lexicon.mjs`  
 - **Export:** `quiz/IMPORTED_EXPLAINS.md` · `quiz/IMPORTED_EXPLAINS.csv`  
-- **Cache UI:** `play.html` data `?v=ok6`
+- **Cache UI:** JIT `?v=ok7` · môn khác `?v=ok6`
+
+---
+
+## 0. JIT toàn bank (fix sau phản hồi «bán dẫn»)
+
+**Vấn đề:** Quiz/Sample JIT (và slides 専門用語) dịch/giải thích generic:
+`Câu hỏi tiếng Nhật — đọc kỹ đề…` · `Phương án «半導体» — hiểu theo nghĩa kỹ thuật…` lặp cho mọi option.
+
+**Đã làm:** `node quiz/tools/rebuild_jit_all.mjs` trên **632** câu.
+
+| Chỉ số | Trước | Sau |
+|--------|------:|----:|
+| Generic «Phương án « / Câu hỏi tiếng Nhật» | ~629 | **0** |
+| 専門用語 có dịch VI có chủ đích | thấp | **226/234** |
+| Còn prefix `Đề (JP):` (stem khó) | — | **41** |
+
+**Ví dụ «bán dẫn» → 半導体:**
+
+| | Sau |
+|--|-----|
+| Dịch đề | 【Thuật ngữ】Hãy dịch … sang tiếng Nhật: «bán dẫn» |
+| A | 論理素子 — phần tử logic |
+| B ✅ | 半導体 — bán dẫn (semiconductor) |
+| C | チューリングマシン — máy Turing |
+| D | 反対方向 — hướng ngược lại |
+| Vì sao sai A | không phải bản dịch JP của «bán dẫn»; đúng 半導体 |
+
+```bash
+node quiz/tools/rebuild_jit_all.mjs
+```
 
 ---
 
