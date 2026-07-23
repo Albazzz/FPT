@@ -93,7 +93,11 @@ const FE_Q_EXACT_CORE = [
   ],
   [
     "A communication protocol transmits data in frames, supports continuous transfer and full-duplex communication, and inserts a zero after a sequence of ones for transparency. Which protocol is this?",
-    "Giao thức truyền frame, full-duplex, chèn bit 0 sau dãy bit 1 (bit stuffing). Là giao thức nào?",
+    "Một giao thức truyền thông truyền dữ liệu theo frame, hỗ trợ truyền liên tục và full-duplex, chèn bit 0 sau dãy bit 1 (bit stuffing / trong suốt cờ flag). Giao thức nào?",
+  ],
+  [
+    "A communication protocol transmits data in frames, supports continuous transfer and full-duplex communication, and inserts a zero after a sequence of consecutive one bits to prevent user data from being confused with a flag sequence. Which protocol is being described?",
+    "Một giao thức truyền thông truyền dữ liệu theo frame, hỗ trợ truyền liên tục và full-duplex, đồng thời chèn bit 0 sau một dãy bit 1 liên tiếp để dữ liệu người dùng không bị nhầm với dãy cờ (flag sequence). Giao thức nào đang được mô tả?",
   ],
   [
     "Which of the following is software that can be used free of charge for a trial period, but if the user wishes to continue using the software after the trial period, a license fee is usually required?",

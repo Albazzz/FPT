@@ -152,7 +152,7 @@ const HAND = [
   ],
   [
     "A communication protocol transmits data in frames, supports continuous transfer and full-duplex",
-    "Giao thức truyền frame, full-duplex, chèn bit 0 sau dãy bit 1 (bit stuffing). Là giao thức nào?",
+    "Một giao thức truyền thông truyền dữ liệu theo frame, hỗ trợ truyền liên tục và full-duplex, chèn bit 0 sau dãy bit 1 (bit stuffing) để không nhầm cờ flag. Giao thức nào?",
   ],
   [
     "A network service must carry voice, video, and data using fixed-length transmission units",
