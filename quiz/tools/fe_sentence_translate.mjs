@@ -909,6 +909,15 @@ function exactPhraseHit(raw) {
 export function translateFeSentence(input) {
   const raw = String(input || "").trim();
   if (!raw) return raw;
+
+  // XML/HTML structure options: never word-map tags; use exact bank or keep as sample
+  if (/<\/?[a-zA-Z][^>]*>/.test(raw) && raw.length >= 40) {
+    const exactXml = exactPhraseHit(raw);
+    if (exactXml) return exactXml;
+    // Keep structure readable; avoid "mới Document quản lý" salad
+    return raw.replace(/\bNew Document Management\b/gi, "New Document Management");
+  }
+
   // Already good VI with little EN
   const enWords = raw.match(/[A-Za-z]{3,}/g) || [];
   if (hasVi(raw) && enWords.length <= 2) return raw;

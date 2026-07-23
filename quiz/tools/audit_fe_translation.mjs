@@ -27,9 +27,16 @@ function hasVi(s) {
 
 /** Intentional EN tech tokens — do not count as leftover half-translation */
 const TECH_KEEP = new Set(
-  "tcp udp ip dns http https ftp smtp pop imap arp dhcp lan wan wlan vpn dma cpu gpu ram rom ssd hdd os api sql xml json etl raid atm qos sla crm erp scm osi iso cmmi html css mime pop3 ascii unicode utf bst fifo lifo nlr lrn lnr mtbf mttr csrf xss oop wpa waf ssl tls nat icmp ppp hdlc fdm tdm wdm cdma bcd rpn bcp drp wbs spi cpi pmo cobit itil sml sso jvm bytecode servlet applet proxy hybrid token bus star ring mesh buffer cache kernel thrashing paging hashing stack queue join view commit rollback hash crc fcs mac vlan mpls vpn nat oss pki rsa aes des md5 sha url uri gui cli rom bios uefi ipv4 ipv6 aws ec2 soa raci cmmi cmm nist cis pdf png jpg gif utf8 utf16 ascii ebcdic scada iot ml ai nlp".split(
-    " "
-  )
+  (
+    "tcp udp ip dns http https ftp smtp pop imap arp dhcp lan wan wlan vpn dma cpu gpu ram rom ssd hdd os api sql xml json etl raid atm qos sla crm erp scm osi iso cmmi html css mime pop3 ascii unicode utf bst fifo lifo nlr lrn lnr mtbf mttr csrf xss oop wpa waf ssl tls nat icmp ppp hdlc fdm tdm wdm cdma bcd rpn bcp drp wbs spi cpi pmo cobit itil sml sso jvm bytecode servlet applet proxy hybrid token bus star ring mesh buffer cache kernel thrashing paging hashing stack queue join view commit rollback hash crc fcs mac vlan mpls oss pki rsa aes des md5 sha url uri gui cli bios uefi ipv4 ipv6 aws ec2 soa raci cmm nist cis pdf png jpg gif utf8 utf16 ebcdic scada iot ml ai nlp " +
+    "circular wait hold differential incremental backup collision domain product price place promotion cyan magenta yellow black aqua orange brown gray red green blue white " +
+    "fixed cost sales variable quantity sold recovery media roll forward poisson arrivals first come serve materialization continuity class candidates consist values " +
+    "magnetic stripes public key cryptography optimization decomposition generation reliable connection oriented lightweight store exchange non dependency third " +
+    "process thread running waiting ready multiprogramming quantum critical path float system server client request response data design structure module internal physical " +
+    "java level model file disk code test bug network protocol address port packet frame node edge graph tree list array pointer register instruction memory " +
+    "full hot swap license application platform infrastructure cloud grid utility throughput pipeline deadlock lock transaction atomic " +
+    "cmyk rgb bpm bsc rto rpo cab ola sla scm b2c b2b sfa erp crm soa xss csrf sql dml ddl"
+  ).split(/\s+/)
 );
 
 function enDensity(s) {

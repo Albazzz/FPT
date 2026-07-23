@@ -63,15 +63,26 @@ function better(raw, current) {
   if (deep) candidates.push(deep);
   const sent = translateFeSentence(r);
   if (sent) candidates.push(sent);
-  // Drop current if it still has EN glue words between VI
-  if (c && !leftoverEnGlue(c) && !isCodeSwitchSalad(c) && !isHalfEnglish(c)) {
+  // Drop current if EN glue, code-switch salad, half-EN, or mangled XML ("mới Document")
+  const mangledXml =
+    /<\/?[a-z]/i.test(c) && /mới\s+Document|quản lý<\/title>/i.test(c);
+  if (
+    c &&
+    !leftoverEnGlue(c) &&
+    !isCodeSwitchSalad(c) &&
+    !isHalfEnglish(c) &&
+    !mangledXml
+  ) {
     candidates.push(c);
   }
 
   candidates.sort((a, b) => {
     const d = scoreVi(a) - scoreVi(b);
     if (d !== 0) return d;
-    // tie-break: fewer raw Latin letters, then longer VI gloss
+    // Prefer hasVi; then fewer raw Latin letters; then denser gloss
+    const va = hasVi(a) ? 0 : 1;
+    const vb = hasVi(b) ? 0 : 1;
+    if (va !== vb) return va - vb;
     const la = (String(a).match(/[A-Za-z]/g) || []).length;
     const lb = (String(b).match(/[A-Za-z]/g) || []).length;
     if (la !== lb) return la - lb;
