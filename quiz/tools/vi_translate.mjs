@@ -5,7 +5,9 @@
  */
 
 export function hasVi(s) {
-  return /[àáạảãâăèéêìíòóôơùúưỳýđÀÁẠẢÃÂĂÈÉÊÌÍÒÓÔƠÙÚƯỲÝĐ]/i.test(s || "");
+  return /[àáạảãâăèéêìíòóôơùúưỳýđÀÁẠẢÃÂĂÈÉÊÌÍÒÓÔƠÙÚƯỲÝĐ\u1EA0-\u1EF9]/i.test(
+    s || ""
+  );
 }
 export function hasJp(s) {
   return /[\u3040-\u30ff\u3400-\u9fff]/.test(s || "");

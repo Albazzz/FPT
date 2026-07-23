@@ -4,7 +4,10 @@
  */
 
 export function hasVi(s) {
-  return /[àáạảãâăèéêìíòóôơùúưỳýđÀÁẠẢÃÂĂÈÉÊÌÍÒÓÔƠÙÚƯỲÝĐ]/i.test(s || "");
+  // Latin-1 accents + Vietnamese Latin Extended Additional (U+1EA0–1EF9: ế ể ệ ố ộ ớ …)
+  return /[àáạảãâăèéêìíòóôơùúưỳýđÀÁẠẢÃÂĂÈÉÊÌÍÒÓÔƠÙÚƯỲÝĐ\u1EA0-\u1EF9]/i.test(
+    s || ""
+  );
 }
 export function hasJp(s) {
   return /[\u3040-\u30ff\u3400-\u9fff]/.test(s || "");
@@ -227,6 +230,116 @@ export const JP_VI = {
   サーバ: "máy chủ",
   クライアント: "máy khách",
   プロトコル: "giao thức",
+  プロトコル数: "số lượng giao thức",
+  パリティ: "parity (chẵn lẻ)",
+  パリティビット: "bit parity (kiểm chẵn lẻ)",
+  パリティチェック: "kiểm tra parity",
+  パリティコード: "mã parity",
+  奇数パリティ: "parity lẻ",
+  偶数パリティ: "parity chẵn",
+  画素数: "số điểm ảnh (pixel)",
+  画素: "điểm ảnh (pixel)",
+  ピクセル: "pixel",
+  ビット: "bit",
+  バイト: "byte",
+  ビットレート: "bit rate (tốc độ bit)",
+  フレームレート: "frame rate (tốc độ khung hình)",
+  トランジスタ: "transistor",
+  ダイオード: "diode",
+  真空管: "ống chân không",
+  マザーボード: "mainboard (bo mạch chủ)",
+  ユーザインタフェース: "giao diện người dùng (UI)",
+  ユーザーインターフェース: "giao diện người dùng (UI)",
+  並列システム: "hệ thống song song",
+  直列システム: "hệ thống nối tiếp",
+  集中システム: "hệ thống tập trung",
+  分散システム: "hệ thống phân tán",
+  商標権: "quyền nhãn hiệu",
+  意匠権: "quyền kiểu dáng (ý thiết kế)",
+  実用新案権: "quyền giải pháp hữu ích",
+  特許権: "quyền sáng chế",
+  オートマトン: "automaton (ô tô-mát)",
+  ソーティング: "sắp xếp (sorting)",
+  ソート: "sắp xếp (sort)",
+  プロセス管理: "quản lý process",
+  ユーザ管理: "quản lý người dùng",
+  ソフトとハードの仲介: "trung gian phần mềm và phần cứng",
+  電子マネー: "tiền điện tử",
+  メッシュ型: "mạng lưới (mesh)",
+  スター型: "mạng hình sao",
+  バス型: "mạng bus",
+  リング型: "mạng vòng",
+  画像情報: "thông tin ảnh",
+  通信情報: "thông tin truyền thông",
+  テキスト情報: "thông tin văn bản",
+  データ量: "lượng dữ liệu",
+  デジタル量: "đại lượng số (digital)",
+  アナログ量: "đại lượng tương tự (analog)",
+  処理の中心となる部品: "linh kiện trung tâm xử lý (CPU)",
+  "処理の中心となる部品である": "là linh kiện trung tâm xử lý (CPU)",
+  スイッチが直列に並んだ回路: "mạch các công tắc xếp nối tiếp",
+  スイッチが並列に並んだ回路: "mạch các công tắc xếp song song",
+  "8進数": "hệ bát phân",
+  "最も単純な画像圧縮方式の1つ": "một trong các cách nén ảnh đơn giản nhất",
+  関係的表現: "biểu diễn quan hệ (relational)",
+  階層的表現: "biểu diễn phân cấp (hierarchical)",
+  網的表現: "biểu diễn mạng (network model)",
+  データ操作の時間: "thời gian thao tác dữ liệu",
+  検索時の速度: "tốc độ khi tìm kiếm",
+  上順: "thứ tự tăng (ascending)",
+  下順: "thứ tự giảm (descending)",
+  昇順: "thứ tự tăng dần",
+  降順: "thứ tự giảm dần",
+  日本: "Nhật Bản",
+  アメリカ: "Mỹ",
+  オーストラリア: "Úc",
+  イギリス: "Anh",
+  ベトナム: "Việt Nam",
+  "1946年": "năm 1946",
+  "1949年": "năm 1949",
+  "1930年": "năm 1930",
+  "1939年": "năm 1939",
+  "1930年代": "thập niên 1930",
+  "（候補なし）": "(không có phương án phù hợp)",
+  コピーができる: "có thể sao chép",
+  赤外線を使って通信する: "truyền thông bằng hồng ngoại",
+  ファイアウォール: "tường lửa (firewall)",
+  フローチャート: "lưu đồ (flowchart)",
+  デバイスドライバ: "device driver",
+  フーリエ変換: "biến đổi Fourier",
+  マージソート: "merge sort",
+  バブルソート: "bubble sort",
+  シェルソート: "shell sort",
+  ランレングス圧縮: "nén run-length",
+  ハフマン符号: "mã Huffman",
+  セクタ: "sector (đĩa)",
+  バリュー: "value (giá trị/tiền điện tử)",
+  メモリやハードディスク: "bộ nhớ và ổ cứng",
+  ロングテールがある: "có long tail",
+  シェアウェアがある: "có shareware",
+  キャラクターがある: "có ký tự/nhân vật",
+  一方向的なアドレス: "địa chỉ một chiều",
+  一方向的なホームページ: "trang web một chiều",
+  双方向型のアドレス: "địa chỉ hai chiều",
+  双方向型のホームページ: "trang web hai chiều",
+  与えられた原文に戻さないこと: "không khôi phục được bản gốc",
+  与えられた原文に戻すこと: "khôi phục được bản gốc",
+  人為的: "do con người tạo ra",
+  代替キー: "khóa thay thế (alternate key)",
+  動画: "video / ảnh động",
+  画面: "màn hình / khung hình",
+  第1世代携帯電話: "điện thoại di động thế hệ 1",
+  第2世代携帯電話: "điện thoại di động thế hệ 2",
+  第3世代携帯電話: "điện thoại di động thế hệ 3",
+  "第3.5世代携帯電話": "điện thoại di động thế hệ 3.5",
+  非接触型ICカード: "thẻ IC không tiếp xúc",
+  "高音質な楽曲再生が可能です": "có thể phát nhạc chất lượng cao",
+  "高音質な楽曲再生が不可能です": "không thể phát nhạc chất lượng cao",
+  "0と1": "0 và 1",
+  かんすう: "hàm số (kansū)",
+  ビット数: "số bit",
+  画質: "chất lượng ảnh",
+  ぎざぎざ: "răng cưa / răng lược (aliasing)",
   パケット交換: "chuyển mạch gói",
   回線交換: "chuyển mạch kênh",
   帯域幅: "băng thông",
@@ -567,6 +680,62 @@ function jpSafeIncludes(hay, needle) {
   return true;
 }
 
+/** Compose VI for short productive patterns (X数, 年, …). */
+function composeShortVi(raw) {
+  const t = String(raw || "").trim();
+  if (!t || t.length > 48) return null;
+
+  // năm: 1946年
+  let m = t.match(/^(\d{3,4})年$/);
+  if (m) return `năm ${m[1]}`;
+  m = t.match(/^(\d{3,4})年代$/);
+  if (m) return `thập niên ${m[1]}`;
+
+  // N回 / N層 / N世代 / N個
+  m = t.match(/^(\d+)\s*回$/);
+  if (m) return `${m[1]} lần`;
+  m = t.match(/^(\d+)\s*層$/);
+  if (m) return `${m[1]} tầng`;
+  m = t.match(/^(\d+)\s*世代$/);
+  if (m) return `${m[1]} thế hệ`;
+  m = t.match(/^(\d[\d,]*)\s*個$/);
+  if (m) return `${m[1]} cái/mục`;
+
+  // X数 → số X
+  if (t.endsWith("数") && t.length >= 2) {
+    const base = t.slice(0, -1);
+    if (JP_VI[base]) return `số ${JP_VI[base]}`;
+    if (base === "画素") return "số điểm ảnh (pixel)";
+    if (base === "ビット") return "số bit";
+    if (base === "プロトコル") return "số lượng giao thức";
+  }
+
+  // Xビット
+  if (t.endsWith("ビット") && t.length > 3) {
+    const base = t.slice(0, -3);
+    if (JP_VI[base]) return `bit ${JP_VI[base]}`;
+    if (base === "パリティ") return "bit parity (kiểm chẵn lẻ)";
+  }
+
+  // X型
+  if (t.endsWith("型") && t.length >= 2) {
+    const base = t.slice(0, -1);
+    if (JP_VI[base]) return `kiểu/dạng ${JP_VI[base]}`;
+    if (base === "スター") return "mạng hình sao";
+    if (base === "メッシュ") return "mạng lưới (mesh)";
+    if (base === "バス") return "mạng bus";
+    if (base === "リング") return "mạng vòng";
+  }
+
+  // bilingual already: 管理（かんり）：Quản lý
+  m = t.match(/^(.+?)（[^）]+）[：:]\s*(.+)$/);
+  if (m && hasVi(m[2])) return m[2].trim();
+  m = t.match(/^(.+?)\s*[-–—]\s*(.+)$/);
+  if (m && hasVi(m[2]) && !hasJp(m[2])) return m[2].trim();
+
+  return null;
+}
+
 /**
  * Full-sentence / option translator.
  * Returns clean VI when possible; never returns JP+VI soup.
@@ -579,6 +748,10 @@ export function glossJp(text) {
 
   const compact = compactJp(raw);
   const phrases = [...JP_PHRASES].sort((a, b) => b[0].length - a[0].length);
+
+  // 0) productive short composition
+  const composed = composeShortVi(raw);
+  if (composed) return composed;
 
   // 1) exact / whitespace-insensitive full phrase
   for (const [jp, vi] of phrases) {
@@ -696,24 +869,41 @@ function viClean(vi) {
     .trim();
 }
 
-/** Clean VI gloss only (for optionsVi right side). */
+/** Latin/EN technical gloss is OK for display (not only Vietnamese diacritics). */
+function isDisplayGloss(s) {
+  const t = String(s || "").trim();
+  if (!t || hasJp(t)) return false;
+  if (hasVi(t)) return true;
+  // English / digits / common tech tokens
+  if (/^[A-Za-z0-9][\w\s./+()%\-–—,:'"]{0,80}$/.test(t)) return true;
+  return false;
+}
+
+/** Clean VI/EN gloss only (for optionsVi right side). */
 export function glossJpClean(text) {
+  const raw = String(text || "").trim();
+  // Direct lexicon → pure gloss
+  if (JP_VI[raw] && isDisplayGloss(JP_VI[raw])) return JP_VI[raw];
+
+  // composition first (pure VI/EN)
+  const composed = composeShortVi(raw);
+  if (composed && isDisplayGloss(composed)) return composed;
+
   const g = glossJp(text);
   if (!g) return "";
   if (isJpViSoup(g)) return "";
-  // Bilingual "JP — VI" → take VI side only when left is Japanese
+  // Bilingual "JP — gloss" → take right side
   if (/[—–]/.test(g)) {
     const left = g.split(/[—–]/)[0].trim();
     const right = g.split(/[—–]/).slice(1).join("—").trim();
-    if (hasJp(left) && hasVi(right) && jpCharCount(right) <= 4) return right;
-    // Pure VI sentence that happens to contain an em dash (e.g. note in parentheses)
-    if (!hasJp(g) && hasVi(g)) return g;
-    if (hasVi(right) && jpCharCount(right) <= 4 && !hasJp(right)) return right;
+    if (hasJp(left) && isDisplayGloss(right) && jpCharCount(right) <= 4) return right;
+    if (!hasJp(g) && isDisplayGloss(g)) return g;
+    if (isDisplayGloss(right) && jpCharCount(right) <= 4) return right;
     return "";
   }
-  if (hasVi(g) && jpCharCount(g) <= 4) return g;
-  // Allow a bit more residual JP punctuation/units
-  if (hasVi(g) && jpCharCount(g) <= 8 && g.length >= 12) return g;
+  if (isDisplayGloss(g) && jpCharCount(g) <= 4) return g;
+  if (isDisplayGloss(g) && jpCharCount(g) <= 8 && g.length >= 12) return g;
+  if (isDisplayGloss(g) && !hasJp(g)) return g;
   return "";
 }
 

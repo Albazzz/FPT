@@ -269,6 +269,49 @@ function translateQuestion(qText, maps) {
   if (/分散処理システム/.test(t) && /正しい/.test(t))
     return "Về hệ thống xử lý phân tán, phát biểu nào đúng?";
 
+  // Image quality / resolution
+  if (/ぎざぎざの少ないきれいな画像を得るには何を増やすとよいか/.test(t))
+    return "Muốn ảnh mịn, ít răng cưa thì nên tăng cái gì?";
+  if (/きれいな画像|ぎざぎざ/.test(t) && /増やす|画素数|解像度/.test(t))
+    return "Để có ảnh đẹp/ít răng cưa, nên tăng yếu tố nào?";
+
+  // Generations / conversion / common stems
+  if (/論理素子によってコンピュータは何世代に分けられるか/.test(t))
+    return "Theo linh kiện logic, máy tính được chia thành bao nhiêu thế hệ?";
+  if (/2進数「?1100」?を10進数に変換すると何か/.test(t))
+    return "Chuyển số nhị phân 1100 sang thập phân được bao nhiêu?";
+  if (/日本のテレビ放送.*フレームレート/.test(t) || /1秒あたりの画面書き換え回数/.test(t))
+    return "Frame rate (số lần làm mới màn hình/giây) của truyền hình Nhật là bao nhiêu?";
+  if (/「?電気機械式」?コンピュータが誕生したのはいつか/.test(t))
+    return "Máy tính «điện-cơ» ra đời khi nào?";
+  if (/インターネットでIPアドレスを使って何を特定するか/.test(t))
+    return "Trên Internet, địa chỉ IP dùng để xác định cái gì?";
+  if (/長さ、重さ、時間など身の回りの多くの物理量は何か/.test(t))
+    return "Chiều dài, khối lượng, thời gian… nhiều đại lượng vật lý quanh ta là gì?";
+  if (/CPUの動作原理は何に基づいているか/.test(t))
+    return "Nguyên lý hoạt động của CPU dựa trên cái gì?";
+  if (/ユーザからの入力は何から行えますか/.test(t))
+    return "Người dùng có thể nhập liệu từ đâu?";
+  if (/工業所有権はどんな権ですか/.test(t))
+    return "Quyền sở hữu công nghiệp gồm những quyền nào / là loại quyền gì?";
+  if (/着信メロディについて正しくないものを選びなさい/.test(t))
+    return "Chọn phát biểu SAI về nhạc chuông (ringtone).";
+  if (/著作権について正しいものはどれですか/.test(t))
+    return "Phát biểu nào ĐÚNG về bản quyền (copyright)?";
+  if (/著作権の特徴はなんですか/.test(t)) return "Đặc trưng của bản quyền là gì?";
+  if (/2つ以上の処理装置が、メモリを共有せずに/.test(t))
+    return "Cách xử lý song song với ≥2 bộ xử lý, mỗi cái có bộ nhớ riêng (không chia sẻ) gọi là gì?";
+  if (/動画像では、1つ前の画像との違っている部分だけを記録して圧縮率を高める方法を何と言いますか/.test(t))
+    return "Với video, chỉ ghi phần khác frame trước để tăng tỉ lệ nén — gọi là gì?";
+  if (/何を増やすとよいか/.test(t)) {
+    if (/画像|ぎざぎざ|きれい/.test(t))
+      return "Muốn ảnh đẹp/ít răng cưa thì nên tăng cái gì?";
+    return "Nên tăng yếu tố nào?";
+  }
+  if (/何世代に分けられるか/.test(t)) return "Được chia thành bao nhiêu thế hệ?";
+  if (/いくらか|いくつか/.test(t) && /フレーム|回/.test(t))
+    return "Con số (frame rate / số lần) là bao nhiêu?";
+
   if ((m = t.match(/^「(.+?)」とは何ですか。?$/))) {
     const vi = topicVi(m[1]);
     return vi ? `«${vi}» là gì?` : "Thuật ngữ trong đề là gì?";
@@ -513,20 +556,21 @@ function defineOpt(optText, maps) {
   if (!t) return { what: "—", role: "—" };
   const tip = t.length > 48 ? t.slice(0, 48) + "…" : t;
 
-  // lexicon exact first (stable VI gloss)
+  // lexicon exact first — pure VI/EN only (no JP left for scrub to double-paste)
   if (JP_VI[t]) {
     return {
-      what: `${t}: ${JP_VI[t]}`,
-      role: `Thuật ngữ chuyên ngành: ${JP_VI[t]}.`,
+      what: JP_VI[t],
+      role: `Thuật ngữ: ${JP_VI[t]}.`,
     };
   }
 
   if (maps.jp2vi.has(t)) {
-    const vi = maps.jp2vi.get(t);
-    if (hasVi(String(vi)) && !hasJp(String(vi))) {
+    const vi = String(maps.jp2vi.get(t) || "").trim();
+    const viOnly = extractViSide(vi) || (hasVi(vi) && !hasJp(vi) ? vi : "");
+    if (viOnly) {
       return {
-        what: hasJp(t) ? `${t}: ${vi}` : vi,
-        role: `Cặp thuật ngữ IT: «${tip}» ↔ «${vi}».`,
+        what: viOnly,
+        role: `Thuật ngữ: ${viOnly}.`,
       };
     }
   }
@@ -551,7 +595,7 @@ function defineOpt(optText, maps) {
     }
   }
 
-  // Short term contained key only (not long soup)
+  // Short term contained key only — pure VI (no JP in what/role)
   if (t.length <= 36) {
     let best = null;
     let bestLen = 0;
@@ -563,27 +607,29 @@ function defineOpt(optText, maps) {
     }
     if (best && (t === best.jp || t.length <= best.jp.length + 12)) {
       return {
-        what: `${t}: ${best.vi}`,
-        role: `Thuật ngữ «${best.jp}» ≈ ${best.vi}.`,
+        what: best.vi,
+        role: `Thuật ngữ: ${best.vi}.`,
       };
     }
   }
 
+  // Avoid "what: vi: vi" double — defineOpt callers may pass already-clean
+
   if (hasVi(t) && !hasJp(t)) {
     return {
       what: t,
-      role: `Phương án tiếng Việt: «${tip}».`,
+      role: `Phương án: «${tip}».`,
     };
   }
 
-  // Long unknown JP: summarize role without fake partial gloss
+  // Unknown: pure VI placeholder (never leave raw JP for scrub to gut)
   return {
-    what: hasJp(t) ? (t.length > 80 ? t.slice(0, 77) + "…" : t) : t,
-    role: hasJp(t)
+    what: hasJp(t)
       ? t.length >= 50
-        ? "Đoạn/phát biểu JP — đối chiếu đúng chủ đề đề hỏi (không dịch nửa câu)."
-        : `Cụm JP «${tip}» — map đúng nghĩa/cơ chế đề hỏi.`
-      : `Lựa chọn «${tip}» — đối chiếu với đáp án đúng.`,
+        ? "Phát biểu/đoạn JP (xem cột gốc)"
+        : "Thuật ngữ/phương án JP (xem cột gốc)"
+      : t,
+    role: "Đối chiếu đúng nghĩa/cơ chế đề hỏi; xem cột gốc nếu chưa dịch đủ.",
   };
 }
 
@@ -717,9 +763,27 @@ function rebuildOne(q, remote, maps) {
       "ネットワークセキュリティ = an ninh mạng",
       "Server + dữ liệu quan trọng → cần security (không nhầm digital computer)."
     );
+  } else if (/ぎざぎざ|画素数|きれいな画像/.test(qText)) {
+    exp.intent = bullets(
+      "Chất lượng ảnh số: càng nhiều pixel (số điểm ảnh) càng mịn, ít răng cưa.",
+      "Không nhầm với parity bit, số giao thức hay tên miền."
+    );
+    exp.concept = bullets(
+      "Số điểm ảnh (pixel count): độ chi tiết không gian của ảnh số.",
+      "Tăng số pixel → ảnh mịn hơn, ít răng cưa (aliasing)."
+    );
+    exp.whyCorrect = bullets(
+      glossJpClean(ansText) || "Số điểm ảnh (pixel)",
+      "Ảnh số là lưới điểm; nhiều điểm hơn → đường biên mượt, ít «răng cưa».",
+      "Parity bit / số giao thức / tên miền không quyết định độ mịn ảnh."
+    );
+    exp.memoryTip = bullets(
+      "Ảnh đẹp ít răng cưa → tăng số pixel (độ phân giải).",
+      "Parity = lỗi bit; domain = tên miền; protocol = giao thức."
+    );
   } else if (/文字コード/.test(qText)) {
     exp.intent = bullets(
-      "文字コード (mã ký tự): quy tắc map ký tự ↔ mã số nhị phân.",
+      "Mã ký tự: quy tắc map ký tự ↔ mã số nhị phân.",
       "Chọn phát biểu đúng về bản chất lưu chữ trong máy tính."
     );
     exp.concept = bullets(
@@ -916,7 +980,7 @@ const outQs = local.questions.map((q) => {
 const payload = {
   subject: "jit",
   upgradedAt: new Date().toISOString(),
-  explainPass: "jit-all-v5-pure-vi",
+  explainPass: "jit-all-v6-lexicon-fill",
   count: outQs.length,
   rebuilt: outQs.length,
   bannedLeft,
