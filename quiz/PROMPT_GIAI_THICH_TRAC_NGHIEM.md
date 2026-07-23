@@ -790,3 +790,58 @@ Mỗi block nên trả lời ≥1: *là gì? · khi nào? · thế nào? · khá
 | Composite (AOT+JIT, PDCA…) | **Từng thành phần** + kết luận ngắn | Đúng đối tượng distractor |
 | To / Use / Return… (lý do dùng pattern) | **Khái niệm** (singleton, Future…) không echo To… | Option sai: khái niệm/stack thật |
 | Lý thuyết / quá trình / quan điểm | Đủ concept + why (mục 0–2) | Contrast miền cụ thể |
+**Giải thích đúng rule (đã format lại)**
+
+**intent**  
+M4 – hỏi tiền đề (điều kiện quan trọng) cho sự ra đời và phát triển của nền kinh tế thị trường.
+
+**answerDisplay**  
+D. Sản xuất và trao đổi hàng hóa
+
+**concept (Đây là gì)**  
+Tiền đề khách quan của kinh tế thị trường là sự phát triển của sản xuất xã hội đến mức xuất hiện sản phẩm dư thừa và trao đổi hàng hóa trở thành thường xuyên, phổ biến.
+
+**whyCorrect (Vì sao đúng)**  
+- Sản xuất tạo ra sản phẩm dư thừa (cơ sở vật chất).  
+- Trao đổi hàng hóa biến sản phẩm đó thành hàng hóa, hình thành quan hệ hàng hóa – tiền tệ.  
+- Chỉ khi hai yếu tố này kết hợp với nhau mới xuất hiện và phát triển nền kinh tế thị trường. Thiếu một trong hai thì chưa đủ điều kiện.
+
+**whyWrong**
+
+**A. Sản xuất**  
+- Là gì: Sản xuất là hoạt động tạo ra của cải vật chất, đáp ứng nhu cầu tiêu dùng của con người.  
+- Vai trò: Là điều kiện cần, tạo ra sản phẩm dư thừa làm cơ sở vật chất.  
+- Vì sao sai: Chỉ có sản xuất mà chưa có trao đổi hàng hóa thường xuyên thì chưa hình thành được thị trường.
+
+**B. Trao đổi hàng hóa**  
+- Là gì: Trao đổi hàng hóa là việc đổi sản phẩm lao động này lấy sản phẩm lao động khác thông qua quan hệ hàng hóa – tiền tệ.  
+- Vai trò: Là hình thức biểu hiện của quan hệ hàng hóa, giúp sản phẩm trở thành hàng hóa.  
+- Vì sao sai: Trao đổi chỉ là mặt hình thức; thiếu cơ sở sản xuất phát triển thì trao đổi không thể trở thành phổ biến và bền vững.
+
+**C. Thị trường**  
+- Là gì: Thị trường là nơi diễn ra việc mua bán hàng hóa, tổng hòa các quan hệ cung – cầu.  
+- Vai trò: Là kết quả và môi trường hoạt động của kinh tế hàng hóa.  
+- Vì sao sai: Thị trường là sản phẩm của quá trình phát triển, không phải tiền đề dẫn đến sự ra đời của kinh tế thị trường.
+
+**memoryTip**  
+Tiền đề = Sản xuất (dư thừa) + Trao đổi hàng hóa (thường xuyên).  
+Thiếu một bên → chưa có kinh tế thị trường. 
+
+### Rule bổ sung bắt buộc cho whyWrong (MLN)
+
+1. **Định dạng nhãn**:  
+   Luôn dùng dấu hai chấm `:` thay vì dấu hỏi `?`  
+   - Đúng: `Là gì:` · `Vai trò:` · `Vì sao sai:`  
+   - Sai: `Là gì?` · `Vai trò?` · `Vì sao sai?`
+
+2. **Nội dung dòng “Là gì:”**  
+   Phải viết thành câu định nghĩa đầy đủ, rõ nghĩa, có thể kèm ví dụ ngắn hoặc giải thích phạm trù.  
+   Không chỉ lặp lại tên option hay cụm từ ngắn.  
+
+   Ví dụ đúng:  
+   - `Là gì: Thị trường là nơi diễn ra việc mua bán hàng hóa, tổng hòa các quan hệ cung – cầu.`  
+   - `Là gì: Sản xuất là hoạt động tạo ra của cải vật chất, đáp ứng nhu cầu tiêu dùng của con người.`
+
+3. **Áp dụng đồng bộ**  
+   Cả 3 dòng (Là gì – Vai trò – Vì sao sai) đều dùng dấu `:`.  
+   Dòng “Là gì:” phải đủ dài và có giá trị học, không được stub.

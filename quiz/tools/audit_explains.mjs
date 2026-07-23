@@ -53,18 +53,44 @@ function correctsOf(q) {
 /** EN leftover after partial VI translation */
 function halfTranslated(s) {
   if (!s) return false;
+  // Only flag clear EN leftovers after VI stems (not Vietnamese "cho/các/…")
   if (
-    /Cái nào [A-Za-z]|Cái gì [A-Za-z]|Mẫu widget nào [a-z]|Widget nào [a-z]{3,}|Trước khi [a-z]{4,}/i.test(
+    /Cái nào [A-Za-z]{4,}|Cái gì [A-Za-z]{4,}|Mẫu widget nào [A-Za-z]{4,}|Trước khi [a-z]{4,}/i.test(
+      s
+    )
+  ) {
+    // Allow if the next token is common VI (ASCII without diacritics)
+    if (
+      !/Cái nào (cho|các|có|cần|để|trong|sau|hay|nên|phải|giúp|dùng|thường)|Cái gì (là|được|sẽ|đã)|Mẫu widget nào (cho|các|có)|Trước khi (chạy|cài|tạo|dùng|mở)/i.test(
+        s
+      )
+    )
+      return true;
+  }
+  if (
+    /Widget nào (enables|allows|is|used|helps|can|does|provides|animates|rebuilds|protects|applies|reacts|retrieves|resets|groups|focuses|improves|creates|manages)\b/i.test(
       s
     )
   )
     return true;
   // "… Trước when continuing" style mixed
-  if (hasVi(s) && /\b(before|after|which|what|when|where|that|with|from|into|using|used to|is used)\b/i.test(s))
+  if (
+    hasVi(s) &&
+    /\b(before|after|which|what|when|where|that|with|from|into|using|used to|is used)\b/i.test(s)
+  )
     return true;
-  const en = (s.match(/[A-Za-z]{4,}/g) || []).length;
+  // Count only "real" EN tokens: skip short/common VI-without-diacritics noise is hard;
+  // require higher density so technical tokens (Flutter, Stream) alone don't fail.
+  const enTokens = (s.match(/[A-Za-z]{4,}/g) || []).filter(
+    (w) =>
+      !/^(quan|trong|nhung|duoc|nhieu|truoc|ngoai|giua|theo|dung|viec|thoi|thuc|thay|cach|loai|phan|toan|cung|khac|hoac|khai|tren|duoi|giup|that|them|sang|vang|nhat|theo|dung)$/i.test(
+        w
+      )
+  );
+  const en = enTokens.length;
   const words = s.split(/\s+/).filter(Boolean).length;
-  if (hasVi(s) && en >= 5 && en / Math.max(words, 1) > 0.4) return true;
+  // Allow technical tokens (Flutter/Android/Stream) inside otherwise-VI sentences
+  if (hasVi(s) && en >= 7 && en / Math.max(words, 1) > 0.5) return true;
   return false;
 }
 

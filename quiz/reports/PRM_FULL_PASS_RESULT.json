@@ -1,0 +1,324 @@
+{
+  "n": 225,
+  "hard": 38,
+  "flagsCount": {
+    "same_whyWrong_all": 4,
+    "half_translated_question": 19,
+    "half_translated_opt_B": 8,
+    "half_translated_opt_A": 10,
+    "half_translated_opt_C": 2,
+    "half_translated_opt_D": 1
+  },
+  "fails": [
+    {
+      "id": 2,
+      "flags": [
+        "same_whyWrong_all"
+      ],
+      "q": "Why are tests important for refactoring?",
+      "qvi": "Vì sao việc viết test quan trọng khi refactor code?"
+    },
+    {
+      "id": 6,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Which widget enables custom scroll effects in Flutter?",
+      "qvi": "Widget nào cho phép hiệu ứng cuộn tùy chỉnh trong Flutter?"
+    },
+    {
+      "id": 13,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Why is immutability important in BLoC states?",
+      "qvi": "Vì sao immutability quan trọng với state trong BLoC?"
+    },
+    {
+      "id": 44,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Which widget animates between two widgets?",
+      "qvi": "Widget nào animate giữa hai widget?"
+    },
+    {
+      "id": 55,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Which widget allows overlapping of its child widgets?",
+      "qvi": "Widget nào cho phép các widget con chồng lên nhau?"
+    },
+    {
+      "id": 77,
+      "flags": [
+        "same_whyWrong_all"
+      ],
+      "q": "What is implicit animation?",
+      "qvi": "Implicit animation là gì?"
+    },
+    {
+      "id": 98,
+      "flags": [
+        "same_whyWrong_all"
+      ],
+      "q": "Which status code indicates server error?",
+      "qvi": "Mã trạng thái nào cho biết lỗi server?"
+    },
+    {
+      "id": 103,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Which engine technology does Flutter use for rendering (as mentioned in slides)?",
+      "qvi": "Công nghệ engine nào Flutter dùng để render (theo slide)?"
+    },
+    {
+      "id": 105,
+      "flags": [
+        "half_translated_opt_B"
+      ],
+      "q": "What is a main benefit of Flutter listed in the introduction slides?",
+      "qvi": "Một lợi ích chính của Flutter nêu trong slide giới thiệu?"
+    },
+    {
+      "id": 107,
+      "flags": [
+        "half_translated_opt_A"
+      ],
+      "q": "What is DartPad mainly useful for according to the slides?",
+      "qvi": "DartPad chủ yếu hữu ích để làm gì (theo slide)?"
+    },
+    {
+      "id": 117,
+      "flags": [
+        "half_translated_opt_A"
+      ],
+      "q": "What does string interpolation like \"$name\" do?",
+      "qvi": "String interpolation kiểu \"$name\" làm gì?"
+    },
+    {
+      "id": 121,
+      "flags": [
+        "half_translated_question",
+        "half_translated_opt_A"
+      ],
+      "q": "Why is async/await important in Flutter apps?",
+      "qvi": "Vì sao async/await quan trọng trong app Flutter?"
+    },
+    {
+      "id": 125,
+      "flags": [
+        "half_translated_opt_B"
+      ],
+      "q": "What is .fromJson() typically used for?",
+      "qvi": ".fromJson() thường dùng để làm gì?"
+    },
+    {
+      "id": 126,
+      "flags": [
+        "half_translated_opt_C"
+      ],
+      "q": "Which practice is recommended for long-running CPU work?",
+      "qvi": "Thực hành nào khuyến nghị cho công việc CPU kéo dài?"
+    },
+    {
+      "id": 133,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Which widget allows children to overlap?",
+      "qvi": "Widget nào cho phép các con chồng lên nhau?"
+    },
+    {
+      "id": 144,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Where do you typically configure Android deep link intent filters?",
+      "qvi": "Thường cấu hình Android deep link intent-filter ở đâu?"
+    },
+    {
+      "id": 145,
+      "flags": [
+        "half_translated_opt_B"
+      ],
+      "q": "BLoC architecture primarily separates:",
+      "qvi": "Kiến trúc BLoC chủ yếu tách:"
+    },
+    {
+      "id": 150,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Which widget rebuilds when a Stream emits new data?",
+      "qvi": "Widget nào rebuild khi Stream phát dữ liệu mới?"
+    },
+    {
+      "id": 166,
+      "flags": [
+        "half_translated_opt_A"
+      ],
+      "q": "A strong password validation demo in slides requires at least:",
+      "qvi": "Demo validate mật khẩu mạnh trong slide yêu cầu tối thiểu:"
+    },
+    {
+      "id": 168,
+      "flags": [
+        "half_translated_question",
+        "half_translated_opt_B"
+      ],
+      "q": "Why validate user input before submit?",
+      "qvi": "Vì sao validate input trước khi submit?"
+    },
+    {
+      "id": 173,
+      "flags": [
+        "half_translated_opt_B"
+      ],
+      "q": "What is the purpose of parsing JSON?",
+      "qvi": "Mục đích parse JSON?"
+    },
+    {
+      "id": 175,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Which HTTP header commonly carries access credentials?",
+      "qvi": "Header HTTP nào thường mang credential truy cập?"
+    },
+    {
+      "id": 176,
+      "flags": [
+        "same_whyWrong_all"
+      ],
+      "q": "Which status code indicates a server error?",
+      "qvi": "Mã trạng thái nào cho biết lỗi server?"
+    },
+    {
+      "id": 180,
+      "flags": [
+        "half_translated_opt_A",
+        "half_translated_opt_B"
+      ],
+      "q": "When calling APIs, why handle loading and error states in UI?",
+      "qvi": "Khi gọi API, vì sao cần xử lý loading và error trên UI?"
+    },
+    {
+      "id": 183,
+      "flags": [
+        "half_translated_opt_A",
+        "half_translated_opt_D"
+      ],
+      "q": "Why map JSON fields into model classes?",
+      "qvi": "Vì sao map field JSON vào model class?"
+    },
+    {
+      "id": 188,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Which widget is often used to show async local storage reads?",
+      "qvi": "Widget nào hay dùng để hiển thị đọc storage local bất đồng bộ?"
+    },
+    {
+      "id": 194,
+      "flags": [
+        "half_translated_opt_B"
+      ],
+      "q": "Why is secure authentication critical in mobile apps?",
+      "qvi": "Vì sao xác thực an toàn quan trọng trên mobile?"
+    },
+    {
+      "id": 195,
+      "flags": [
+        "half_translated_opt_A"
+      ],
+      "q": "After successful login with a mock token flow, what should you typically do?",
+      "qvi": "Sau login thành công với mock token, thường nên làm gì?"
+    },
+    {
+      "id": 198,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Which widget can react to auth state exposed as a Stream?",
+      "qvi": "Widget nào phản ứng auth state được expose dạng Stream?"
+    },
+    {
+      "id": 201,
+      "flags": [
+        "half_translated_opt_A"
+      ],
+      "q": "Logout should typically:",
+      "qvi": "Logout thường nên:"
+    },
+    {
+      "id": 202,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Push notifications in this module are related to:",
+      "qvi": "Push notification trong module này liên quan tới:"
+    },
+    {
+      "id": 205,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Which Flutter test focuses on UI components/widgets?",
+      "qvi": "Test Flutter nào tập trung UI component/widget?"
+    },
+    {
+      "id": 211,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "find.byType / find.text in widget tests are used to:",
+      "qvi": "find.byType / find.text trong widget test dùng để:"
+    },
+    {
+      "id": 212,
+      "flags": [
+        "half_translated_question",
+        "half_translated_opt_C"
+      ],
+      "q": "Mocking dependencies in unit tests helps:",
+      "qvi": "Mock dependency trong unit test giúp:"
+    },
+    {
+      "id": 215,
+      "flags": [
+        "half_translated_question",
+        "half_translated_opt_B"
+      ],
+      "q": "Why extract list item widgets (e.g. TaskTile) and use Selector?",
+      "qvi": "Vì sao tách widget item list (vd TaskTile) và dùng Selector?"
+    },
+    {
+      "id": 218,
+      "flags": [
+        "half_translated_question"
+      ],
+      "q": "Why use ValueKey(task.id) instead of UniqueKey() for list items?",
+      "qvi": "Vì sao dùng ValueKey(task.id) thay UniqueKey() cho item list?"
+    },
+    {
+      "id": 219,
+      "flags": [
+        "half_translated_opt_A"
+      ],
+      "q": "GlobalKey warning in slides: GlobalKey is:",
+      "qvi": "Cảnh báo GlobalKey trong slide: GlobalKey là:"
+    },
+    {
+      "id": 223,
+      "flags": [
+        "half_translated_opt_A"
+      ],
+      "q": "Why is clean architecture beneficial?",
+      "qvi": "Vì sao clean architecture có lợi?"
+    }
+  ]
+}
