@@ -1,7 +1,23 @@
 /**
- * Full-sentence EN→VI (không tóm tắt cắt ý).
+ * Full-sentence EN→VI (dịch sát, không tóm tắt, không cướp câu gần giống).
  */
 export const FE_Q_FULL_SENTENCE = [
+  [
+    "There is an 8-bit register where integers are represented in binary by using 2's complement for negative numbers. When the decimal integer \"-24\" is stored in the register and then arithmetically shifted 2 bits right, what is the resulting value in decimal? Here, the leftmost bit of the register is used as a sign bit.",
+    "Có thanh ghi 8-bit trong đó số nguyên được biểu diễn nhị phân, số âm dùng bù 2. Khi số thập phân \"-24\" được lưu vào thanh ghi rồi được dịch phải số học 2 bit, giá trị thập phân kết quả là bao nhiêu? Ở đây bit ngoài cùng bên trái của thanh ghi dùng làm bit dấu."
+  ],
+  [
+    "There is an 8-bit register where integers are represented in binary by using 2's complement for negative numbers. When the decimal integer \"-13\" is stored, which bit pattern is used?",
+    "Có thanh ghi 8-bit trong đó số nguyên được biểu diễn nhị phân, số âm dùng bù 2. Khi số thập phân \"-13\" được lưu, dùng dãy bit nào?"
+  ],
+  [
+    "A systems design is represented using several diagrams. When a system analyst wants to confirm the design information such as the relationships among functions and the interface among modules in a hierarchical manner, which of the following is the most appropriate diagram that should be inspected by the analyst?",
+    "Thiết kế hệ thống được biểu diễn bằng nhiều sơ đồ. Khi phân tích viên hệ thống muốn xác nhận thông tin thiết kế như quan hệ giữa các chức năng và giao diện giữa các module theo kiểu phân cấp, sơ đồ nào sau đây là phù hợp nhất để phân tích viên xem xét?"
+  ],
+  [
+    "A systems design is represented using several diagrams. When a system analyst wants to confirm the design information such as the relationship among components and the flow of data, which diagram is most appropriate?",
+    "Thiết kế hệ thống được biểu diễn bằng nhiều sơ đồ. Khi phân tích viên muốn xác nhận thông tin thiết kế như quan hệ giữa các thành phần và luồng dữ liệu, sơ đồ nào phù hợp nhất?"
+  ],
   [
     "A communication protocol transmits data in frames, supports continuous transfer and full-duplex communication, and inserts a zero after a sequence of consecutive one bits to prevent user data from being confused with a flag sequence. Which protocol is being described?",
     "Một giao thức truyền thông truyền dữ liệu theo frame, hỗ trợ truyền liên tục và full-duplex, đồng thời chèn bit 0 sau một dãy bit 1 liên tiếp để dữ liệu người dùng không bị nhầm với dãy cờ (flag sequence). Giao thức nào đang được mô tả?"
@@ -43,10 +59,6 @@ export const FE_Q_FULL_SENTENCE = [
     "Cái nào sau đây ám chỉ lừa đảo trực tuyến, trong đó kẻ gian dụ người nhận e-mail bấm vào liên kết đưa tới website giả để yêu cầu cung cấp thông tin mật?"
   ],
   [
-    "There is an 8-bit register where integers are represented in binary by using 2's complement for negative numbers. When the decimal integer \"-13\" is stored, which bit pattern is used?",
-    "Có thanh ghi 8-bit, số nguyên được biểu diễn nhị phân, số âm dùng bù 2. Khi lưu số thập phân \"-13\", dùng dãy bit nào?"
-  ],
-  [
     "A process is executed through a state transition among three states: a ready state, a running state, and a waiting state. Which of the following causes a transition from the running state to the waiting state?",
     "Một tiến trình thực thi qua chuyển trạng thái giữa ba trạng thái: ready, running và waiting. Điều nào sau đây gây chuyển từ running sang waiting?"
   ],
@@ -77,10 +89,6 @@ export const FE_Q_FULL_SENTENCE = [
   [
     "In a certain project, each of the 6 employee members needs to communicate on a one-to-one basis. What is the minimum number of paths needed for communication among them?",
     "Trong một dự án, mỗi người trong 6 nhân viên cần giao tiếp theo kiểu một-một. Số đường giao tiếp tối thiểu cần giữa họ là bao nhiêu?"
-  ],
-  [
-    "A systems design is represented using several diagrams. When a system analyst wants to confirm the design information such as the relationship among components and the flow of data, which diagram is most appropriate?",
-    "Thiết kế hệ thống được biểu diễn bằng nhiều sơ đồ. Khi phân tích viên muốn xác nhận thông tin thiết kế như quan hệ giữa các thành phần và luồng dữ liệu, sơ đồ nào phù hợp nhất?"
   ],
   [
     "A part of a program was changed to add a new function to a system in operation. Which of the following is the most appropriate environment that is used for testing the new program without affecting the system in operation, in order to determine whether or not the system can be brought into full operation?",
@@ -363,10 +371,6 @@ export const FE_Q_FULL_SENTENCE = [
     "Có hệ ghi hình số lắp bốn camera an ninh. Trong hệ này, dữ liệu video mỗi camera được thu ở 1 Mbps và ghi 24 giờ/ngày. Cần bao nhiêu Gbyte dung lượng lưu cho một ngày ghi của tất cả camera? Ở đây 1 Gbyte = 10^9 byte, 1 Mbit = 10^6 bit."
   ],
   [
-    "A systems design is represented using several diagrams. When a system analyst wants to confirm the design information such as the relationships among functions and the interface among modules in a hierarchical manner, which of the following is the most appropriate diagram that should be inspected by the analyst?",
-    "Thiết kế hệ thống được biểu diễn bằng nhiều sơ đồ. Khi phân tích viên muốn xác nhận thông tin thiết kế như quan hệ giữa các thành phần và luồng dữ liệu, sơ đồ nào phù hợp nhất?"
-  ],
-  [
     "In a certain project, each of the 6 employee members needs to communicate on a one-to-one basis. What is the minimum number of paths needed to communicate in such a way?",
     "Trong một dự án, mỗi người trong 6 nhân viên cần giao tiếp theo kiểu một-một. Số đường giao tiếp tối thiểu cần giữa họ là bao nhiêu?"
   ],
@@ -409,25 +413,36 @@ export const FE_Q_FULL_SENTENCE = [
   [
     "When CPU processing and printing are performed for four jobs under the conditions below, how many minutes does it take to complete them from the start of the first CPU processing until the end of the last printing? [Conditions] (1) The multiplicity of jobs is 1 during execution. (2) The CPU processing time of each job is 20 minutes. (3) 400 Mbytes of printing data are spooled for each job when the CPU processing ends. The printing function of the OS operates after spooling is completed, and printing is performed by the printer. (4) One printer is available, and the printing speed is 10 minutes per 100 Mbytes. (5) The functions of CPU processing and printing can operate in parallel, and do not affect each other. (6) The time period that is not mentioned in the conditions, such as the time required for spooling, can be ignored.",
     "Khi xử lý CPU và in được thực hiện cho bốn job theo các điều kiện dưới đây, mất bao nhiêu phút để hoàn thành từ lúc bắt đầu xử lý CPU job đầu đến khi in xong job cuối? [Điều kiện] (1) Độ đa nhiệm job là 1 khi thực thi. (2) Thời gian xử lý CPU mỗi job là 20 phút. (3) 400 Mbyte dữ liệu in được spool cho mỗi job khi xử lý CPU kết thúc. Chức năng in của OS chạy sau khi spool xong và in bằng máy in. (4) Có một máy in, tốc độ in 10 phút cho mỗi 100 Mbyte. (5) Xử lý CPU và in có thể chạy song song, không ảnh hưởng lẫn nhau. (6) Các khoảng thời gian không nêu trong điều kiện (ví dụ thời gian spool) có thể bỏ qua."
+  ],
+  [
+    "Which of the following refers to online scams where thieves attempt to entice e-mail recipients into clicking on a link that takes them to a bogus website, and the website may prompt the recipient to provide personal information such as social security number, bank account number, and credit card number, and/or it may download malicious software onto the recipient's computer?",
+    "Cái nào sau đây ám chỉ lừa đảo trực tuyến, trong đó kẻ gian dụ người nhận e-mail bấm vào liên kết đưa họ tới website giả, và website đó có thể yêu cầu người nhận cung cấp thông tin cá nhân như số an sinh xã hội, số tài khoản ngân hàng và số thẻ tín dụng, và/hoặc có thể tải phần mềm độc hại xuống máy tính của người nhận?"
+  ],
+  [
+    "What is the data remaining on the stack after doing the following operations, assume that from start, stack is empty? push 5 => push 10 => push 5 => pop => push 10 => push 10 => push 5 => pop => pop. Assume that stack is empty at first and sequence format 5, 8, 10 mean that 5 is at bottom of stack and 10 is at top of stack.",
+    "Dữ liệu còn lại trên stack sau các thao tác sau là gì, giả sử ban đầu stack rỗng? push 5 => push 10 => push 5 => pop => push 10 => push 10 => push 5 => pop => pop. Giả sử stack rỗng lúc đầu và định dạng dãy 5, 8, 10 nghĩa là 5 ở đáy stack và 10 ở đỉnh stack."
   ]
 ];
 
-/** word-count ratio VI/EN too low → over-summarized (full stems may be longer than map keys) */
 export function isOverSummarized(en, vi) {
   const e = String(en || "").trim();
   const v = String(vi || "").trim();
   if (!e || !v) return false;
-  // Already a long full-sentence VI — treat as complete
-  const vw = (v.match(/[\p{L}\p{N}]+/gu) || []).length;
-  if (vw >= 35 || v.length >= 220) return false;
   if (/^Đề:\s*/i.test(v)) return true;
+  const vw = (v.match(/[\p{L}\p{N}]+/gu) || []).length;
   const ew = (e.match(/[\p{L}\p{N}]+/gu) || []).length;
   if (ew < 12) return false;
+  // long faithful VI is OK
+  if (vw >= 40 || v.length >= 250) return false;
   if (vw / ew < 0.45) return true;
   if (e.length >= 120 && v.length / e.length < 0.35) return true;
   return false;
 }
 
+/**
+ * Exact match only, or shared ≥ 95% of the longer side AND length ratio ≥ 0.95.
+ * Prevents sibling stems (e.g. -13 bit pattern vs -24 arithmetic shift) from stealing maps.
+ */
 export function matchFullSentenceQ(question) {
   const snorm = String(question || "")
     .replace(/\s+/g, " ")
@@ -437,26 +452,26 @@ export function matchFullSentenceQ(question) {
   if (!snorm) return null;
   let best = null;
   let bestLen = 0;
-  let bestShared = 0;
   for (const [en, vi] of FE_Q_FULL_SENTENCE) {
     const enN = en
       .replace(/\s+/g, " ")
       .replace(/[\u201C\u201D]/g, '"')
       .trim()
       .toLowerCase();
+    if (!enN) continue;
     if (snorm === enN && enN.length >= bestLen) {
       best = vi;
       bestLen = enN.length;
-      bestShared = enN.length;
       continue;
     }
     let shared = 0;
     const lim = Math.min(snorm.length, enN.length);
     while (shared < lim && snorm[shared] === enN[shared]) shared++;
-    if (shared >= 60 && shared >= bestShared) {
+    const longer = Math.max(snorm.length, enN.length);
+    const shorter = Math.min(snorm.length, enN.length);
+    if (shared / longer >= 0.95 && shorter / longer >= 0.95 && enN.length >= bestLen) {
       best = vi;
       bestLen = enN.length;
-      bestShared = shared;
     }
   }
   return best;
