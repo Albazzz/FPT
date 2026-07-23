@@ -104,168 +104,265 @@ function harvestPairs(questions) {
   return { vi2jp, jp2vi, termMeaning };
 }
 
-// ── Question translation ────────────────────────────────
+// ── Pure-VI helpers (translation columns must not contain JP) ──
+function jpCount(s) {
+  return (String(s || "").match(/[\u3040-\u30ff\u3400-\u9fff]/g) || []).length;
+}
+
+/** Topic → Vietnamese only (no kana/kanji left). */
+function topicVi(topic) {
+  const t = String(topic || "")
+    .trim()
+    .replace(/^「|」$/g, "")
+    .replace(/^【|】$/g, "");
+  if (!t) return "";
+  if (!hasJp(t)) return t;
+  if (JP_VI[t]) return JP_VI[t];
+  const clean = glossJpClean(t);
+  if (clean && !hasJp(clean)) return clean;
+  let s = t;
+  const keys = Object.keys(JP_VI).sort((a, b) => b.length - a.length);
+  for (const k of keys) {
+    if (k.length < 2) continue;
+    if (s.includes(k)) s = s.split(k).join(JP_VI[k]);
+  }
+  s = s
+    .replace(/[「」『』（）【】]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!hasJp(s) && s.length >= 2) return s;
+  if (/アナログ/.test(t)) return "analog (tương tự)";
+  if (/デジタル/.test(t)) return "digital (số)";
+  if (/コンピュータ/.test(t)) return "máy tính";
+  if (/ネットワークセキュリティ/.test(t)) return "an ninh mạng";
+  if (/文字コード/.test(t)) return "mã ký tự";
+  if (/情報量/.test(t)) return "lượng thông tin";
+  if (/著作権/.test(t)) return "bản quyền";
+  if (/著作隣接権/.test(t)) return "quyền liền kề quyền tác giả";
+  if (/拡張子/.test(t)) return "phần mở rộng (extension)";
+  if (/フォルダ/.test(t)) return "thư mục";
+  if (/クラウドコンピューティング/.test(t)) return "điện toán đám mây";
+  if (/ネチケット/.test(t)) return "netiquette";
+  if (/タッチパネル/.test(t)) return "màn hình cảm ứng";
+  if (/抵抗膜方式/.test(t)) return "cảm ứng điện trở";
+  if (/静電容量方式/.test(t)) return "cảm ứng điện dung";
+  if (/非接触型ICカード/.test(t)) return "thẻ IC không tiếp xúc";
+  if (/分散処理システム/.test(t)) return "hệ thống xử lý phân tán";
+  if (/OSI参照モデル/.test(t)) return "mô hình tham chiếu OSI";
+  if (/第2世代携帯電話/.test(t)) return "điện thoại di động thế hệ 2";
+  if (/第1世代携帯電話/.test(t)) return "điện thoại di động thế hệ 1";
+  if (/CMOSセンサ/.test(t)) return "cảm biến CMOS";
+  if (/スター型/.test(t)) return "mạng hình sao";
+  if (/メール/.test(t)) return "email";
+  if (/半導体/.test(t)) return "bán dẫn";
+  if (/ROM/.test(t)) return "ROM";
+  return "";
+}
+
+/** Ensure display string has no Japanese scripts. */
+function ensurePureVi(s, fallback = "（Xem cột gốc — bản dịch đang bổ sung）") {
+  let t = String(s || "").trim();
+  if (!t) return fallback;
+  if (!hasJp(t)) return t;
+  // Prefer VI inside parentheses after a JP term: デジタル (số)
+  t = t.replace(
+    /[\u3040-\u30ff\u3400-\u9fff][^\s（(]{0,24}[（(]([^）)]*[àáạảãâăèéêìíòóôơùúưỳýđÀÁẠẢÃÂĂÈÉÊÌÍÒÓÔƠÙÚƯỲÝĐ][^）)]*)[）)]/g,
+    "$1"
+  );
+  const keys = Object.keys(JP_VI).sort((a, b) => b.length - a.length);
+  for (const k of keys) {
+    if (k.length < 2) continue;
+    if (t.includes(k)) t = t.split(k).join(JP_VI[k]);
+  }
+  if (hasJp(t)) {
+    const stripped = t
+      .replace(/[\u3040-\u30ff\u3400-\u9fff]+/g, " ")
+      .replace(/\s{2,}/g, " ")
+      .replace(/\s+([,.!?;:])/g, "$1")
+      .trim();
+    if (hasVi(stripped) && stripped.length >= 8) return stripped;
+    return fallback;
+  }
+  return t;
+}
+
+// ── Question translation (pure VI only) ─────────────────
 function translateQuestion(qText, maps) {
   const t = String(qText || "").trim();
   if (!t) return t;
   if (hasVi(t) && !hasJp(t)) return t;
 
-  let m = t.match(/【専門用語】次のベトナム語の用語を日本語に直しなさい。\s*(.+)$/);
-  if (m) {
+  let m;
+  if ((m = t.match(/【専門用語】次のベトナム語の用語を日本語に直しなさい。\s*(.+)$/))) {
     return `【Thuật ngữ】Hãy dịch thuật ngữ tiếng Việt sau sang tiếng Nhật: «${m[1].trim()}»`;
   }
-  m = t.match(/【専門用語】次のベトナム語の用語をベトナム語に直しなさい。\s*(.+)$/);
-  if (m) {
-    // Template often mislabeled; actually JP term → VI
-    return `【Thuật ngữ】Hãy dịch thuật ngữ sau sang tiếng Việt: «${m[1].trim()}»`;
+  if ((m = t.match(/【専門用語】次のベトナム語の用語をベトナム語に直しなさい。\s*(.+)$/))) {
+    const vi = topicVi(m[1].trim());
+    return vi
+      ? `【Thuật ngữ】Hãy dịch thuật ngữ sau sang tiếng Việt: «${vi}»`
+      : "【Thuật ngữ】Hãy dịch thuật ngữ trong đề sang tiếng Việt.";
   }
-  m = t.match(/【専門用語】(.+?)\s*の意味として最も適切なものはどれか。?/);
-  if (m) {
-    const term = m[1].trim();
-    const g = glossJp(term);
-    const viPart = g.includes("—") ? g.split("—").slice(1).join("—").trim() : "";
-    if (viPart) return `【Thuật ngữ】Nghĩa nào phù hợp nhất với «${term}» (${viPart})?`;
-    return `【Thuật ngữ】Nghĩa nào phù hợp nhất với «${term}»?`;
+  if ((m = t.match(/【専門用語】次の日本語の用語をベトナム語に直しなさい。\s*(.+)$/))) {
+    const vi = topicVi(m[1].trim());
+    return vi
+      ? `【Thuật ngữ】Chọn nghĩa tiếng Việt đúng cho «${vi}».`
+      : "【Thuật ngữ】Chọn nghĩa tiếng Việt đúng cho thuật ngữ trong đề.";
   }
-
-  // 「X」とは何ですか
-  m = t.match(/^「(.+?)」とは何ですか。?$/);
-  if (m) return `«${m[1]}» là gì?`;
-
-  m = t.match(/^(.+?)とは何ですか。?$/);
-  if (m && m[1].length < 40) return `«${m[1].trim()}» là gì?`;
-
-  // fill blank patterns
-  if (/（\s*）|\( \)|（\s*）/.test(t) || /（\s*）/.test(t)) {
-    let s = t
-      .replace(/（\s*）/g, "（ … ）")
-      .replace(/といって/g, " được gọi là,")
-      .replace(/もあります/g, " cũng có")
-      .replace(/します/g, "")
-      .replace(/する/g, "");
-    // light key replace
-    s = glossJp(s);
-    if (hasVi(s)) return s;
-    return `Điền từ thích hợp: ${glossJp(t)}`;
+  if ((m = t.match(/【専門用語】(.+?)\s*の意味として最も適切なものはどれか。?/))) {
+    const vi = topicVi(m[1].trim());
+    return vi
+      ? `【Thuật ngữ】Nghĩa nào phù hợp nhất với «${vi}»?`
+      : "【Thuật ngữ】Nghĩa nào phù hợp nhất với thuật ngữ trong đề?";
   }
 
-  // Patterned general JP stems
-  let s = t;
-  if (/スカベンジングとはどのような犯罪か/.test(t)) {
-    return "Scavenging là loại tội phạm / hành vi nào?";
+  if (/【専門知識】次の質問に対して、正しい答えを１つ選びなさい。/.test(t)) {
+    return "【Chuyên môn】Chọn một đáp án đúng cho câu hỏi trong đề.";
   }
-  if (/分散処理システム/.test(t) && /正しいものを/.test(t)) {
-    return "Về hệ thống xử lý phân tán (分散処理システム), phát biểu nào đúng?";
+  if (/【専門知識】/.test(t)) {
+    return "【Chuyên môn】Chọn đáp án đúng theo kiến thức trong đề.";
   }
 
-  // Explicit high-value topics (before generic gloss that used to say "network model")
-  if (/ネットワークセキュリティ/.test(t) && /正しい/.test(t)) {
-    return "Về an ninh mạng (ネットワークセキュリティ), phát biểu nào đúng?";
+  if (/スカベンジングとはどのような犯罪か/.test(t)) return "Scavenging là loại tội phạm / hành vi nào?";
+  if (/アナログ信号として送受信される形式はどれか/.test(t))
+    return "Tín hiệu analog được gửi/nhận dưới dạng nào?";
+  if (/電子式計算機ENIACが開発された年はいつか/.test(t))
+    return "Máy tính điện tử ENIAC được phát triển năm nào?";
+  if (/フォン・ノイマンのプログラム内蔵方式コンピュータが登場したのはいつか/.test(t))
+    return "Máy tính kiểu chương trình lưu trong bộ nhớ (von Neumann) xuất hiện khi nào?";
+  if (/コンピュータを1つの式で表すと何になるか/.test(t))
+    return "Biểu diễn máy tính bằng một công thức thì được gì?";
+  if (/コンピュータの5要素として正しいものを/.test(t))
+    return "Đâu là 5 thành phần đúng của máy tính?";
+  if (/Excelファイルの拡張子はどれか/.test(t)) return "Phần mở rộng của file Excel là gì?";
+  if (/HTMLファイルの拡張子はどれか/.test(t)) return "Phần mở rộng của file HTML là gì?";
+  if (/ホームページのアドレスのことを（\s*）という/.test(t))
+    return "Địa chỉ trang web được gọi là ( … ).";
+  if (/ファイルの種類を識別するために、ファイル名に付けられる（\s*）のことを拡張子/.test(t))
+    return "Chuỗi gắn sau tên file để nhận loại file gọi là phần mở rộng ( … ).";
+  if (/dpi（dot per inch）はどの機器の解像度を表すか/i.test(t))
+    return "dpi (dot per inch) biểu thị độ phân giải của thiết bị nào?";
+  if (/ブラウザがウェブサイトのID情報を自動で記憶する仕組みを何というか/.test(t))
+    return "Cơ chế trình duyệt tự nhớ thông tin ID website gọi là gì?";
+  if (/最もよく使われるネットワーク接続形態はどれか/.test(t))
+    return "Hình thái kết nối mạng được dùng nhiều nhất là gì?";
+  if (/OSI参照モデルは何層構造か/.test(t)) return "Mô hình tham chiếu OSI gồm bao nhiêu tầng?";
+  if (/OSI参照モデルのトランスポート層で使用されるプロトコルはどれか/.test(t))
+    return "Tầng Transport của mô hình OSI dùng giao thức nào?";
+  if (/「\.com」のように種別だけで国名がないのはどの国のドメイン名か/.test(t))
+    return "Domain chỉ có loại (vd. .com) không có mã quốc gia thuộc nước nào?";
+  if (/製品のデザインについての権利を何というか/.test(t))
+    return "Quyền về thiết kế sản phẩm gọi là gì?";
+  if (/社名やロゴなどの商標を保護する権利を何というか/.test(t))
+    return "Quyền bảo hộ tên công ty/logo (nhãn hiệu) gọi là gì?";
+  if (/第1世代携帯電話の通信方式はどれか/.test(t))
+    return "Phương thức truyền thông điện thoại di động thế hệ 1 là gì?";
+  if (/FTTH（光ファイバ通信）の最大通信速度はどれか/.test(t))
+    return "Tốc độ truyền tối đa của FTTH (cáp quang) là bao nhiêu?";
+  if (/メールの添付ファイルで即座に削除すべき拡張子はどれか/.test(t))
+    return "Phần mở rộng file đính kèm email nào nên xóa ngay?";
+  if (/著作権に含まれるものとして正しいのはどれか/.test(t))
+    return "Đâu là thành phần đúng thuộc bản quyền (copyright)?";
+  if (/ネットワークセキュリティ/.test(t) && /正しい/.test(t))
+    return "Về an ninh mạng, phát biểu nào đúng?";
+  if (/ネットワークセキュリティ/.test(t) && /正しくない|誤/.test(t))
+    return "Về an ninh mạng, phát biểu nào SAI?";
+  if (/分散処理システム/.test(t) && /正しい/.test(t))
+    return "Về hệ thống xử lý phân tán, phát biểu nào đúng?";
+
+  if ((m = t.match(/^「(.+?)」とは何ですか。?$/))) {
+    const vi = topicVi(m[1]);
+    return vi ? `«${vi}» là gì?` : "Thuật ngữ trong đề là gì?";
   }
-  if (/ネットワークセキュリティ/.test(t) && /正しくない|誤/.test(t)) {
-    return "Về an ninh mạng (ネットワークセキュリティ), phát biểu nào SAI?";
+  if ((m = t.match(/^(.+?)とは何ですか。?$/)) && m[1].length < 40) {
+    const vi = topicVi(m[1]);
+    return vi ? `«${vi}» là gì?` : "Khái niệm trong đề là gì?";
   }
 
-  // High-frequency quiz stems (capture topic)
+  if (/（\s*）|\(\s*\)/.test(t)) {
+    if (/拡張子/.test(t))
+      return "Điền từ: phần gắn sau tên file để nhận loại file gọi là ( … ).";
+    if (/ビット|bit/i.test(t))
+      return "Điền từ: đơn vị ( … ) của lượng thông tin gọi là bit.";
+    if (/ドメイン/.test(t)) return "Điền từ: địa chỉ trang web còn gọi là ( … ).";
+    return "Điền từ thích hợp vào chỗ trống (xem câu gốc).";
+  }
+
   let m2;
-  // （情報量）文字コード について正しい説明はどれか。
   if ((m2 = t.match(/[（(]([^）)]+)[）)]\s*(.+?)について正しい説明はどれか/))) {
-    const chap = glossTopic(m2[1]);
-    const topic = glossTopic(m2[2]);
+    const chap = topicVi(m2[1]) || "chương";
+    const topic = topicVi(m2[2]) || "chủ đề trong đề";
     return `（${chap}）Về ${topic}, giải thích nào đúng?`;
   }
-  if ((m2 = t.match(/^(.+?)について正しい説明はどれか。?$/))) {
-    return `Về ${glossTopic(m2[1])}, giải thích nào đúng?`;
+  if ((m2 = t.match(/^「?(.+?)」?について正しい説明はどれか。?$/))) {
+    return `Về ${topicVi(m2[1]) || "chủ đề trong đề"}, giải thích nào đúng?`;
   }
-  if ((m2 = t.match(/^(.+?)について正しくないものを(?:えら|選)んでください。?$/))) {
-    return `Chọn phát biểu SAI về «${glossTopic(m2[1])}».`;
+  if ((m2 = t.match(/^「?(.+?)」?について正しくないものを(?:えら|選)んでください。?$/))) {
+    return `Chọn phát biểu SAI về ${topicVi(m2[1]) || "chủ đề trong đề"}.`;
   }
-  if ((m2 = t.match(/^(.+?)について正しいものを(?:えら|選)んでください。?$/))) {
-    return `Chọn phát biểu ĐÚNG về «${glossTopic(m2[1])}».`;
+  if ((m2 = t.match(/^「?(.+?)」?について正しいものを(?:えら|選)んでください。?$/))) {
+    return `Chọn phát biểu ĐÚNG về ${topicVi(m2[1]) || "chủ đề trong đề"}.`;
+  }
+  if ((m2 = t.match(/^(.+?)として正しいものを(?:えら|選)んでください。?$/))) {
+    return `Đâu là phát biểu ĐÚNG về ${topicVi(m2[1]) || "nội dung đề"}?`;
+  }
+  if ((m2 = t.match(/^(.+?)として正しくないものを(?:えら|選)んでください。?$/))) {
+    return `Đâu là phát biểu SAI về ${topicVi(m2[1]) || "nội dung đề"}?`;
+  }
+  if ((m2 = t.match(/^(.+?)として正しいのはどれか。?$/))) {
+    return `Đâu là lựa chọn ĐÚNG về ${topicVi(m2[1]) || "nội dung đề"}?`;
   }
   if ((m2 = t.match(/^(.+?)とは何を表す量か。?$/))) {
-    return `«${glossTopic(m2[1])}» biểu thị đại lượng gì?`;
+    return `${topicVi(m2[1]) || "Đại lượng này"} biểu thị đại lượng gì?`;
   }
   if ((m2 = t.match(/^(.+?)は何の略か。?$/))) {
-    return `«${glossTopic(m2[1])}» là viết tắt của gì?`;
+    return `${topicVi(m2[1]) || "Thuật ngữ này"} là viết tắt của gì?`;
   }
   if ((m2 = t.match(/^(.+?)は何層構造か。?$/))) {
-    return `«${glossTopic(m2[1])}» gồm bao nhiêu tầng?`;
+    return `${topicVi(m2[1]) || "Mô hình này"} gồm bao nhiêu tầng?`;
   }
   if ((m2 = t.match(/^(.+?)を何というか。?$/))) {
-    return `«${glossTopic(m2[1])}» gọi là gì?`;
+    return `${topicVi(m2[1]) || "Đối tượng này"} gọi là gì?`;
   }
   if ((m2 = t.match(/^(.+?)とはどのような方式か。?$/))) {
-    return `«${glossTopic(m2[1])}» là phương thức như thế nào?`;
+    return `${topicVi(m2[1]) || "Cái này"} là phương thức như thế nào?`;
   }
   if ((m2 = t.match(/^(.+?)はどのような形をしているか。?$/))) {
-    return `«${glossTopic(m2[1])}» có dạng hình như thế nào?`;
+    return `${topicVi(m2[1]) || "Đối tượng này"} có dạng hình như thế nào?`;
   }
   if ((m2 = t.match(/^(.+?)はカメラ内でどのような役割を持つか。?$/))) {
-    return `«${glossTopic(m2[1])}» đóng vai trò gì trong máy ảnh?`;
+    return `${topicVi(m2[1]) || "Linh kiện này"} đóng vai trò gì trong máy ảnh?`;
   }
   if ((m2 = t.match(/^(.+?)では何を測定するか。?$/))) {
-    return `Với «${glossTopic(m2[1])}», đo cái gì?`;
+    return `Với ${topicVi(m2[1]) || "phương thức này"}, đo cái gì?`;
   }
   if ((m2 = t.match(/^(.+?)という言葉を(\d{4})年に提唱したのは誰か。?$/))) {
-    return `Ai đề xướng thuật ngữ «${glossTopic(m2[1])}» năm ${m2[2]}?`;
+    return `Ai đề xướng thuật ngữ «${topicVi(m2[1]) || "trong đề"}» năm ${m2[2]}?`;
   }
   if ((m2 = t.match(/^(\d+)\s*GBは何\s*MBか。?$/i))) {
     return `${m2[1]} GB bằng bao nhiêu MB?`;
   }
   if ((m2 = t.match(/^(.+?)は何個のコード番号を持つか。?$/))) {
-    return `«${glossTopic(m2[1])}» có bao nhiêu mã (code point)?`;
+    return `${topicVi(m2[1]) || "Bảng mã này"} có bao nhiêu mã (code point)?`;
   }
-  if ((m2 = t.match(/^dpi（dot per inch）はどの機器の解像度を表すか。?$/i))) {
-    return "dpi (dot per inch) biểu thị độ phân giải của thiết bị nào?";
+  if ((m2 = t.match(/^(.+?)の拡張子はどれか。?$/))) {
+    return `Phần mở rộng của ${topicVi(m2[1]) || "file trong đề"} là gì?`;
   }
-  if ((m2 = t.match(/^ブラウザがウェブサイトのID情報を自動で記憶する仕組みを何というか。?$/))) {
-    return "Cơ chế trình duyệt tự nhớ thông tin ID website gọi là gì?";
+  if ((m2 = t.match(/^(.+?)はどれか。?$/)) && m2[1].length < 50) {
+    const vi = topicVi(m2[1]);
+    return vi ? `${vi} là cái nào?` : "Chọn phương án đúng (xem câu gốc).";
+  }
+  if ((m2 = t.match(/^(.+?)が開発された年はいつか。?$/))) {
+    return `${topicVi(m2[1]) || "Hệ thống này"} được phát triển năm nào?`;
+  }
+  if ((m2 = t.match(/^(.+?)が登場したのはいつか。?$/))) {
+    return `${topicVi(m2[1]) || "Công nghệ này"} xuất hiện khi nào?`;
   }
 
-  s = s
-    .replace(/について正しくないものをえらんでください。?/g, ": chọn phát biểu SAI.")
-    .replace(/について正しくないものを選んでください。?/g, ": chọn phát biểu SAI.")
-    .replace(/について正しいものをえらんでください。?/g, ": chọn phát biểu đúng.")
-    .replace(/について正しいものを選んでください。?/g, ": chọn phát biểu đúng.")
-    .replace(/次のうち/g, "Trong các phương án sau, ")
-    .replace(/どれか。?/g, " là cái nào?")
-    .replace(/何と言いますか。?/g, " gọi là gì?")
-    .replace(/どのような犯罪か。?/g, " là tội gì?")
-    .replace(/とは何ですか。?/g, " là gì?")
-    .replace(/何ですか。?/g, " là gì?")
-    .replace(/について/g, " — ")
-    .replace(/として/g, " với tư cách ")
-    .replace(/最も適切な/g, "phù hợp nhất ")
-    .replace(/正しい/g, "đúng ")
-    .replace(/誤っている/g, "sai ")
-    .replace(/スカベンジング/g, "Scavenging")
-    .replace(/分散処理システム/g, "hệ thống xử lý phân tán");
-  s = glossJp(s);
-  s = s.replace(/\s+/g, " ").trim();
-  if (hasVi(s) && s !== t) return s;
-  const g = glossJp(t);
-  if (hasVi(g) && g !== t) return g;
-  // Last resort: keep JP visible but label clearly (still better than empty stub)
-  return `Đề (JP): ${t}`;
+  return "Chọn phương án đúng theo định nghĩa/cơ chế trong đề (xem câu gốc tiếng Nhật).";
 }
 
 function glossTopic(topic) {
-  const t = String(topic || "").trim().replace(/^「|」$/g, "");
-  if (!t) return t;
-  // Prefer clean bilingual: 文字コード (mã ký tự)
-  if (JP_VI[t]) return `${t} (${JP_VI[t]})`;
-  const clean = glossJpClean(t);
-  if (clean) {
-    // if clean already is "term — vi" style handled; else wrap
-    return /[\u3040-\u30ff\u3400-\u9fff]/.test(t) ? `${t} (${clean})` : clean;
-  }
-  const g = glossJp(t);
-  if (g.includes("—") && !isJpViSoup(g)) {
-    return `${t} (${g.split("—").slice(1).join("—").trim()})`;
-  }
-  if (hasVi(g) && !hasJp(g)) return g;
-  return t;
+  return topicVi(topic) || "chủ đề trong đề";
 }
 
 /**
@@ -506,12 +603,14 @@ function rebuildOne(q, remote, maps) {
 
   const exp = {};
 
-  // Question VI
-  if (remoteP.qvi && hasVi(remoteP.qvi) && !BANNED.test(remoteP.qvi)) {
+  // Question VI — pure Vietnamese only (no JP in translation column)
+  if (remoteP.qvi && hasVi(remoteP.qvi) && !hasJp(remoteP.qvi) && !BANNED.test(remoteP.qvi)) {
     exp.questionVi = remoteP.qvi;
   } else {
     exp.questionVi = translateQuestion(qText, maps);
   }
+  exp.questionVi = ensurePureVi(exp.questionVi, translateQuestion(qText, maps));
+  if (hasJp(exp.questionVi)) exp.questionVi = ensurePureVi(exp.questionVi);
 
   // Options VI — pure Vietnamese (JP remains in options / cột Gốc)
   exp.optionsVi = {};
@@ -534,8 +633,10 @@ function rebuildOne(q, remote, maps) {
       const vi = exp.optionsVi[L];
       const raw = options[L];
       // Prefer pure VI; fall back to short JP term if untranslated
-      if (vi && !hasJp(vi) && !/chưa có bản dịch/i.test(vi)) return `${L}. ${vi}`;
-      return `${L}. ${raw}`;
+      if (vi && !hasJp(vi) && !/chưa có bản dịch|đang bổ sung/i.test(vi)) return `${L}. ${vi}`;
+      const clean = glossJpClean(raw);
+      if (clean && !hasJp(clean)) return `${L}. ${clean}`;
+      return `${L}. (xem cột gốc)`;
     })
     .join(" · ");
 
@@ -753,6 +854,35 @@ function rebuildOne(q, remote, maps) {
     exp.questionVi = translateQuestion(qText, maps);
   }
 
+  // SCRUB_PURE_VI_FIELDS — no Japanese in translation / explain display
+  exp.questionVi = ensurePureVi(exp.questionVi);
+  for (const L of Object.keys(exp.optionsVi || {})) {
+    exp.optionsVi[L] = ensurePureVi(exp.optionsVi[L], "（Xem cột gốc — chưa có bản dịch đầy đủ）");
+  }
+  exp.answerDisplay = ensurePureVi(exp.answerDisplay, exp.answerDisplay);
+  if (hasJp(exp.answerDisplay)) {
+    exp.answerDisplay = [...corrects]
+      .sort()
+      .map((L) => {
+        const vi = exp.optionsVi[L];
+        if (vi && !hasJp(vi) && !/chưa có bản dịch|đang bổ sung/i.test(vi)) return `${L}. ${vi}`;
+        return `${L}. (xem cột gốc)`;
+      })
+      .join(" · ");
+  }
+  for (const key of ["concept", "whyCorrect", "intent", "memoryTip"]) {
+    if (exp[key]) exp[key] = ensurePureVi(exp[key], exp[key].replace(/[\u3040-\u30ff\u3400-\u9fff]+/g, " ").replace(/\s+/g, " ").trim() || "—");
+  }
+  for (const L of Object.keys(exp.whatIs || {})) {
+    exp.whatIs[L] = ensurePureVi(exp.whatIs[L], glossJpClean(options[L]) || "（xem cột gốc）");
+  }
+  for (const L of Object.keys(exp.whyWrong || {})) {
+    exp.whyWrong[L] = ensurePureVi(
+      exp.whyWrong[L],
+      exp.whyWrong[L].replace(/[\u3040-\u30ff\u3400-\u9fff]+/g, " ").replace(/\s+/g, " ").trim() || "Phương án này không khớp đề."
+    );
+  }
+
   return { ...q, explanation: exp };
 }
 
@@ -786,7 +916,7 @@ const outQs = local.questions.map((q) => {
 const payload = {
   subject: "jit",
   upgradedAt: new Date().toISOString(),
-  explainPass: "jit-all-v4-no-soup",
+  explainPass: "jit-all-v5-pure-vi",
   count: outQs.length,
   rebuilt: outQs.length,
   bannedLeft,
