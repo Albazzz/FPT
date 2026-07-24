@@ -16,6 +16,7 @@ Xuất: `quiz/reports/EXPLAIN_AUDIT.md` · `EXPLAIN_AUDIT.json` · `EXPLAIN_AUDI
 |------|------|
 | `EXAMPLE_TRUE_FALSE_CRM.md` · `.json` | J5c True/False — fe #417 CRM↔ERP |
 | `EXAMPLE_MTBF_MTTR_AVAILABILITY.md` · `.json` | J4b nhiều thành phần — fe #442 availability |
+| `JIT401_SITE_ADDED_ONLY.json` (tag `jit401-site-added`) | 148 câu site mới + explain; **C3** bleed/filler/OCR |
 
 ## 0. Schema thành phần (mọi môn — map UI)
 
@@ -672,6 +673,91 @@ memoryTip   = kanji gợi nghĩa hoặc cặp アナログ↔デジタル
 
 ---
 
+### C3. Kinh nghiệm site-added JIT401 (148 câu zip/FE — 2026-07)
+
+> Nguồn: bank `quiz/promt/JIT401_SITE_ADDED_ONLY.json` (tag `jit401-site-added`, **không** ghi đè `quiz/data/jit.json` trừ khi user yêu cầu import).  
+> Rút từ pass v11–v16: filler → domain whyWrong, answer key, OCR, concept bleed.
+
+#### C3.0 Ship / file
+
+| File | Vai trò |
+|------|---------|
+| `JIT401_SITE_ADDED_ONLY.json` | Chỉ câu **mới** vs local bank + explain đủ schema |
+| `JIT401_SITE_FULL.json` | Toàn remote (có thể sync explain từ added) |
+| `quiz/data/jit_site_export.json` | Twin compact |
+| `answerPatches` / `answerNotes` | Mọi chữ cái đổi so remote **phải** có note (stem + lý do) |
+
+**Tags gợi ý:** `jit401-site-added` · `prompt-giai-thich` · `ocrReview` · `answer-patched`.
+
+#### C3.1 Cấm filler (đã đo — thay bằng contrast miền)
+
+Không dùng (và **không** thay bằng biến thể cùng ý):
+
+| Filler cấm | Thay bằng |
+|------------|-----------|
+| `Stem cần «X»; «Y» là khái niệm/phát biểu khác (không dùng thay)` | Vì sao **option này** sai về kiến thức / mệnh đề con |
+| `Nhãn/khái niệm: <echo option>` | Dòng 2 = miền/chức năng thật (API, topology, quyền SHTT…) |
+| `Khác bản chất «đáp án» — không map đúng điều kiện đề` | Chỉ ra **bước/miền** lệch (sai cột SQL, nhầm bus/star, …) |
+| `Sai chính tả so với dạng chuẩn «dpi»` khi option là `Hz`/`bps` | Đúng đơn vị: dpi=in · bps=truyền · Hz=tần số · fps=video |
+| `Không đặt tên điểm ảnh` trên câu **không** hỏi pixel | Chỉ dùng khi stem pixel; JOIN/RLE/MIDI ≠ pixel |
+| `Topology vòng…` / SQL / UI dán nhầm option khác miền | whyWrong **đúng đối tượng** option (P1 concept bleed) |
+| `memoryTip`: `• A: MPEG` / `• D: 5` | Mẹo cặp/đối chiếu/công thức, không echo letter+đáp án |
+| `questionVi` nguyên JP hoặc token rác (`MIDI , , …`) | Dịch **đủ câu** VI; giữ token JP kỹ thuật khi cần |
+
+#### C3.2 Concept bleed & copy-paste (P1 — nghiêm trọng)
+
+| Case | Sai | Đúng |
+|------|-----|------|
+| Stem **静止画 · 256色 · イラスト** (#660/#662) | Explain MPEG / ans video | **GIF** (palette ≤256); MPEG = câu nén video (#656) |
+| Stem **差分記録** video (#634/#637) | `concept` = «Bit = đơn vị nhỏ nhất…» | Inter-frame delta; ≠ Fourier / sample / quantize |
+| Cùng img/note nhiều id | Rebuild dán 1 block cho cả lô | Mỗi id: stem JP + options letter **riêng** (thứ tự A/B/C/D có thể khác) |
+| 上り upload | Remote ans = 上流→下流 | **下流→上流**; hành vi «xem web / lấy file» = 下り |
+
+**Quy tắc:** đọc **stem JP gốc** trước mọi patch; không tin remote letter nếu mâu thuẫn kiến thức + `whyCorrect` đã viết đúng nội dung khác chữ.
+
+#### C3.3 Answer key — khi được phép sửa letter
+
+Chỉ đổi `answer` khi **một trong**:
+
+1. Stem phủ định/đúng-sai rõ (`正しい` / `正しくない`) + đúng một mệnh đề khớp kiến thức.  
+2. Định nghĩa chuẩn (GIF 256色, swap = RAM↔disk, OLED tự phát sáng ≠ backlight).  
+3. Remote letter trỏ option **sai nội dung** trong khi option khác đúng (topology #647 A bus-sai vs C ring-đúng).
+
+Luôn ghi `answerPatches[id]` + `answerNotes[id]` (1–2 câu: stem + lý do).  
+**Không** đổi letter khi OCR cắt toán tử/số liệu (#720) — giữ ans nguồn + `meta.ocrReview`.
+
+#### C3.4 OCR / đề cắt
+
+| Id kiểu | Xử lý |
+|---------|--------|
+| Toán/binary thiếu toán tử (#720) | Giữ ans; whyCorrect ghi «cần ảnh gốc»; không bịa bước tính |
+| Truyền file thiếu dung lượng (#709/#710) | Nếu options khớp bài FE kinh điển: ghi **giả định** (vd 5GB) trong concept + answerNote |
+| HDD head/track (#739/#742) | Head «luôn chạm» = SAI; cùng track ít seek = ĐÚNG — chốt theo kiến thức + note OCR |
+
+#### C3.5 whyWrong 3 dòng — checklist JIT
+
+```
+[ ] Là gì? = JP (nếu có) + gloss — đúng option đang xét, không dán text đáp án đúng
+[ ] Dùng để làm gì? = miền/chức năng (không «cùng chương kiến thức với stem»)
+[ ] Vì sao sai? = contrast kiến thức với stem (sai chiều 上り, thiếu FK join, % ≠ đơn vị…)
+[ ] Không whyWrong[đáp án đúng]
+[ ] Câu 正しい/正しくない: option «đúng kiến thức nhưng không phải đáp án» → nói rõ «phát biểu đúng; đề hỏi cái SAI/cái ĐÚNG»
+```
+
+#### C3.6 Pipeline gợi ý (site-added)
+
+```bash
+# export / rebuild added-only (không merge local jit.json nếu user chưa bảo)
+node quiz/tools/fix_jit_site_added.mjs
+# audit toàn bank (sau khi import hoặc khi so PRM/FE/MLN)
+node quiz/tools/audit_explains.mjs
+```
+
+Patch tay theo lô: ưu tiên (1) answer key + stem map, (2) whyWrong sai miền, (3) questionVi stub/JP, (4) memoryTip echo.  
+**Cấm** mass-replace filler bằng filler mới cùng họ.
+
+---
+
 ## 2. Bảng tra nhanh: stem → ưu tiên thành phần
 
 | Gặp stem… | Ưu tiên điền |
@@ -725,10 +811,11 @@ Bạn là giáo viên ôn MLN.
 ```
 Bạn là giáo viên JIT401 (IT tiếng Nhật).
 1) Gán T1 dịch thuật ngữ / T2 đúng-sai / T3 định nghĩa / T4 domain.
-2) questionVi có nghĩa; mọi option JP kèm gloss VI.
-3) concept = định nghĩa thật; whyWrong = sai nghĩa/sai cặp, từng option.
-4) Mẹo kanji hoặc cặp アナログ↔デジタル.
-5) Cấm stub “Câu hỏi tiếng Nhật…”. Tự chấm ≥ 8.5/10.
+2) questionVi có nghĩa (không để nguyên cả câu JP / token rác); mọi option JP kèm gloss VI.
+3) concept = định nghĩa thật đúng STEM (không filler bit/MPEG dán nhầm); whyWrong = sai miền từng option.
+4) Mẹo kanji hoặc cặp アナログ↔デジタル / 上り↔下り — không echo «• A: đáp án».
+5) Cấm stub filler (C3.1). Đổi answer letter → answerPatches + answerNotes.
+6) OCR cắt: ocrReview, không bịa phép tính. Tự chấm ≥ 8.5/10. Xem C3 (site-added).
 ```
 
 ---
@@ -781,6 +868,8 @@ Hai nhóm lỗi **không** hết nếu chỉ chỉnh wording prompt — phải s
 | Đáp án digital trên đề security | OCR/parser không — thiếu concept topic | Branch `ネットワークセキュリティ` trong rebuild |
 
 **Quy tắc JIT:** (1) topic stem trước option gloss; (2) options dài → VI sạch hoặc `JP — VI` ngắn; (3) whyWrong nói **sai miền**, không «không khớp đáp án X».
+
+**Bổ sung site-added (C3):** mass-rewrite hay **thay filler cũ bằng filler mới** (`Khác bản chất «X»`, spell-dpi cho Hz, pixel-bleed lên JOIN/MIDI). Phải **viết domain từng option** hoặc patch tay theo stem; rà `questionVi` còn JP-only; stem 256色/差分/上り không copy block MPEG/bit/下り. Chi tiết: **mục C3**.
 
 ### P4 — MLN template why
 

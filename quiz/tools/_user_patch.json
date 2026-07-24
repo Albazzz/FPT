@@ -1,0 +1,318 @@
+{
+  "title": "JIT401 v10 — patch sửa vi phạm PROMPT_GIAI_THICH_TRAC_NGHIEM (đợt audit)",
+  "appliesTo": "JIT401 v10 (fixPass: jit-added-promt-v10-j4-and-roles)",
+  "howToApply": "Với mỗi id trong 'explainPatches', merge (deep-merge theo field) vào record gốc cùng id. Field 'answerOverride' (nếu có) nghĩa là đổi answer + answerNote trong meta; 'optionsViOverride' nghĩa là thay optionsVi tương ứng. Còn lại chỉ merge vào explanation (concept/whyCorrect/whyWrong/whatIs/memoryTip/intent) — field nào không có trong patch thì giữ nguyên bản gốc.",
+  "summaryOfChanges": {
+    "630": "SỬA ĐÁP ÁN (A→D) để khớp phép tính tuyệt đối MIDI/SD card 2170h; bỏ biện minh 'gần đúng do OCR'.",
+    "696": "Viết lại whyWrong JOIN: giải thích rõ ngưỡng số bảng tối thiểu/tối đa sai ở đâu.",
+    "714": "Viết lại whyWrong thứ tự KB<MB<GB<TB: chỉ rõ vị trí đảo sai của từng phương án.",
+    "720": "Đánh dấu CẦN RÀ LẠI (đề OCR thiếu dữ kiện) thay vì giữ whyWrong vô nghĩa.",
+    "756": "Viết lại whyWrong biểu thức C++ modulo âm: giải thích lỗi dấu/quy ước modulo.",
+    "638,639": "Viết lại whyWrong JIS 16-8: nêu đúng bước lệch (nhân đôi nhầm / sai bội số byte / đảo vế).",
+    "659,727": "Viết lại whyWrong bit cho 26 ký tự A-Z: so 2^n với 26 thay vì template rỗng.",
+    "685,744": "Viết lại whyWrong bù-2 của -5: phân biệt bù-1 / dạng chưa lấy bù / sign-magnitude.",
+    "709,710": "Viết lại whyWrong thời gian truyền 100Mbps: chỉ rõ lỗi thiếu ×8, sai bậc 10^3 vs 10^6.",
+    "14,629,640,653,694,726,734,743,745,748": "Sửa dòng 2 whyWrong bị gán nhầm cụm 'cách đọc kana' cho option không liên quan đến đọc âm — thay bằng vai trò/chức năng thật của option.",
+    "656,660,662,706,712,637,732,752": "Viết lại nhóm whyWrong nén media (MPEG/GIF/JPEG/BMP/PNG, delta recording, audio pipeline) theo đúng domain thay vì template chung 'không phải mục cần/không cần'."
+  },
+  "explainPatches": {
+    "14": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? テキストのみ — chỉ văn bản\n• Dùng để làm gì? Loại dữ liệu không mang tính chất sóng (không có biên độ/tần số âm).\n• Vì sao sai? Văn bản không có đặc tính sóng âm để áp dụng kỹ thuật nén dựa trên tần số/biên độ như âm thanh.",
+          "C": "• Là gì? 電源\n• Dùng để làm gì? Nguồn cấp điện — không phải dữ liệu để nén.\n• Vì sao sai? Nguồn điện không phải là loại dữ liệu số hóa cần nén.",
+          "D": "• Là gì? ケーブル\n• Dùng để làm gì? Phương tiện vật lý truyền tín hiệu — không phải dữ liệu để nén.\n• Vì sao sai? Cáp là thiết bị truyền dẫn, không phải đối tượng dữ liệu áp dụng kỹ thuật nén sóng âm."
+        }
+      }
+    },
+    "629": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? ミドルウェア — middleware\n• Dùng để làm gì? Lớp phần mềm trung gian giữa ứng dụng và OS/DB.\n• Vì sao sai? Middleware là kiến trúc phần mềm, không phải ký hiệu đại diện chuỗi trong câu lệnh LIKE.",
+          "C": "• Là gì? フィールド — trường\n• Dùng để làm gì? Cột dữ liệu trong bảng CSDL.\n• Vì sao sai? Field là đơn vị dữ liệu (cột), không phải ký hiệu wildcard trong pattern matching.",
+          "D": "• Là gì? メソッド — method\n• Dùng để làm gì? Hàm gắn với đối tượng trong lập trình hướng đối tượng.\n• Vì sao sai? Method là hành vi của object, không liên quan đến ký hiệu % trong SQL LIKE."
+        }
+      }
+    },
+    "630": {
+      "answerOverride": "D",
+      "answerNoteOverride": "Tính đúng công thức 4B×16 âm×2 phách/s=128B/s → 10^9/128/3600≈2170h. Sửa đáp án khớp số liệu tuyệt đối (không còn biện minh gần-đúng/OCR).",
+      "optionsViOverride": {
+        "A": "khoảng 828 giờ",
+        "B": "khoảng 1,036 giờ",
+        "C": "khoảng 1,548 giờ",
+        "D": "khoảng 2,170 giờ"
+      },
+      "explanation": {
+        "answerDisplay": "D. khoảng 2,170 giờ",
+        "concept": "• MIDI lưu sự kiện nốt (không PCM sóng); dung lượng dữ liệu ∝ (byte/phách) × (số âm đồng thời tối đa) × (số phách/giây).\n• Đề cho: 1 phách=4 byte, đa âm tối đa=16, tempo=120 (phách/phút), 1G byte=10^9 byte.",
+        "whyCorrect": "• B1: tempo 120 phách/phút ⇒ 120÷60 = 2 phách/giây.\n• B2: mỗi phách tối đa tốn 4 byte × 16 âm = 64 byte.\n• B3: tốc độ dữ liệu = 64 byte/phách × 2 phách/giây = 128 byte/giây.\n• B4: thời gian chứa được = 10^9 ÷ 128 = 7 812 500 giây.\n• B5: đổi giờ = 7 812 500 ÷ 3600 ≈ 2 170,1 giờ → chọn mốc «khoảng 2 170 giờ».",
+        "whyWrong": {
+          "A": "• Là gì? khoảng 828 giờ\n• Dùng để làm gì? Mốc thời lượng sai do thiếu một thừa số trong tích 4×16×2.\n• Vì sao sai? Tương ứng nếu bỏ sót hệ số đa âm hoặc tính nhầm byte/phách — không khớp 128 B/s thực tế.",
+          "B": "• Là gì? khoảng 1,036 giờ\n• Dùng để làm gì? Mốc thời lượng sai do nhân thiếu/thừa hệ số 2 (phách/giây).\n• Vì sao sai? Ứng với tốc độ ~256 B/s (gấp đôi 128) — sai vì tính tempo 120 bpm thành 4 phách/giây thay vì 2.",
+          "C": "• Là gì? khoảng 1,548 giờ\n• Dùng để làm gì? Mốc thời lượng sai do làm tròn/quy đổi giờ nhầm hệ số.\n• Vì sao sai? Không khớp 7 812 500 giây ÷ 3600 theo đúng công thức 3 bước ở trên."
+        },
+        "whatIs": {
+          "A": "khoảng 828 giờ",
+          "B": "khoảng 1,036 giờ",
+          "C": "khoảng 1,548 giờ",
+          "D": "khoảng 2,170 giờ"
+        },
+        "memoryTip": "• 128 B/s (=4B×16 âm×2 phách/s) → 10^9/128/3600 ≈ 2170 h.",
+        "intent": "• J4 — MIDI dung lượng (đã hiệu chỉnh khớp số liệu)."
+      }
+    },
+    "637": {
+      "explanation": {
+        "whyWrong": {
+          "A": "• Là gì? フーリエ変換 — biến đổi Fourier\n• Dùng để làm gì? Công cụ toán phân tích tần số, dùng trong nén âm thanh/tín hiệu.\n• Vì sao sai? Đây là kỹ thuật phân tích tần số, không phải kỹ thuật ghi phần khác biệt giữa các khung hình liên tiếp.",
+          "C": "• Là gì? 標本化 — lấy mẫu (sampling)\n• Dùng để làm gì? Rời rạc hóa tín hiệu liên tục theo thời gian (bước đầu số hóa âm thanh).\n• Vì sao sai? Sampling là bước số hóa tín hiệu ban đầu, không phải kỹ thuật nén bằng ghi chênh lệch khung hình.",
+          "D": "• Là gì? 量子化 — lượng tử hóa (quantization)\n• Dùng để làm gì? Chia biên độ tín hiệu thành các mức rời rạc.\n• Vì sao sai? Quantization xử lý biên độ tín hiệu, không phải kỹ thuật so sánh/ghi khác biệt giữa các khung hình video."
+        }
+      }
+    },
+    "638": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? 32-16\n• Dùng để làm gì? Nhiễu gấp đôi số bit JIS chuẩn.\n• Vì sao sai? Nhân đôi nhầm cả hai vế: JIS dùng 2 byte = 16 bit tổng (không phải 32), mỗi byte vẫn 8 bit (không phải 16).",
+          "C": "• Là gì? 12-16\n• Dùng để làm gì? Nhiễu số bit không khớp cấu trúc byte chuẩn.\n• Vì sao sai? 12 không phải bội số của 8-bit/byte; JIS không chia theo cụm 12 bit.",
+          "D": "• Là gì? 8-12\n• Dùng để làm gì? Đảo ngược thứ tự và sai vế thứ hai.\n• Vì sao sai? Vế đầu 8 đúng 1 byte nhưng vế sau 12 không khớp tổng 16 bit của JIS 2-byte."
+        }
+      }
+    },
+    "639": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? 32-16\n• Dùng để làm gì? Nhiễu gấp đôi số bit JIS chuẩn.\n• Vì sao sai? Nhân đôi nhầm cả hai vế: JIS dùng 2 byte = 16 bit tổng (không phải 32), mỗi byte vẫn 8 bit (không phải 16).",
+          "C": "• Là gì? 12-16\n• Dùng để làm gì? Nhiễu số bit không khớp cấu trúc byte chuẩn.\n• Vì sao sai? 12 không phải bội số của 8-bit/byte; JIS không chia theo cụm 12 bit.",
+          "D": "• Là gì? 8-12\n• Dùng để làm gì? Đảo ngược thứ tự và sai vế thứ hai.\n• Vì sao sai? Vế đầu 8 đúng 1 byte nhưng vế sau 12 không khớp tổng 16 bit của JIS 2-byte."
+        }
+      }
+    },
+    "640": {
+      "explanation": {
+        "whyWrong": {
+          "A": "• Là gì? パリティビット — bit parity (kiểm chẵn lẻ)\n• Dùng để làm gì? Kỹ thuật phát hiện lỗi đơn giản bằng 1 bit dư.\n• Vì sao sai? Parity chỉ phát hiện lỗi cơ bản, không phải tên cơ chế phát hiện·sửa lỗi tổng quát mà CD dùng (như CIRC).",
+          "C": "• Là gì? フーリエ変換 — biến đổi Fourier\n• Dùng để làm gì? Công cụ toán phân tích tần số tín hiệu.\n• Vì sao sai? Biến đổi Fourier dùng trong xử lý/nén tín hiệu, không phải cơ chế sửa lỗi đọc đĩa.",
+          "D": "• Là gì? 差分記録 — ghi phần khác biệt (delta)\n• Dùng để làm gì? Kỹ thuật nén video bằng ghi khung hình chênh lệch.\n• Vì sao sai? Đây là kỹ thuật nén dữ liệu video, không liên quan đến sửa lỗi đọc đĩa CD."
+        }
+      }
+    },
+    "653": {
+      "explanation": {
+        "whyWrong": {
+          "A": "• Là gì? 基本 — cơ bản\n• Dùng để làm gì? Tính từ mô tả mức độ chung, không định lượng.\n• Vì sao sai? «Cơ bản» không xác định rõ vị trí trong thang đo (nhỏ nhất/lớn nhất); định nghĩa chuẩn của bit là đơn vị NHỎ NHẤT.",
+          "B": "• Là gì? 最大 — lớn nhất\n• Dùng để làm gì? Mức cực đại của thang đo lượng tin.\n• Vì sao sai? Ngược hoàn toàn với định nghĩa: bit là đơn vị NHỎ NHẤT, không phải lớn nhất.",
+          "D": "• Là gì? 中間 — trung gian\n• Dùng để làm gì? Mức giữa thang đo.\n• Vì sao sai? Không tồn tại khái niệm «đơn vị trung gian» trong định nghĩa chuẩn của bit."
+        }
+      }
+    },
+    "656": {
+      "explanation": {
+        "whyWrong": {
+          "A": "• Là gì? GIF\n• Dùng để làm gì? Nén ảnh TĨNH, tối đa 256 màu, không xử lý chuỗi khung hình theo thời gian.\n• Vì sao sai? GIF không có cơ chế nén dựa trên chênh lệch giữa các khung hình theo thời gian như video/audio.",
+          "B": "• Là gì? JPEG\n• Dùng để làm gì? Nén ảnh TĨNH bằng biến đổi DCT trên từng ảnh đơn lẻ.\n• Vì sao sai? JPEG xử lý từng ảnh độc lập, không nén chuỗi khung hình chuyển động theo thời gian như MPEG.",
+          "D": "• Là gì? BMP\n• Dùng để làm gì? Định dạng bitmap không nén (hoặc nén tối thiểu) cho ảnh tĩnh.\n• Vì sao sai? BMP không có cơ chế nén hiệu quả, càng không xử lý dữ liệu video/audio theo thời gian."
+        }
+      }
+    },
+    "659": {
+      "explanation": {
+        "concept": "• Số bit n cần thỏa 2^n ≥ số ký tự cần biểu diễn (26).\n• 2^4=16 (thiếu) < 26 ≤ 32=2^5 → n tối thiểu = 5.",
+        "whyCorrect": "• 2^4=16 không đủ cho 26 ký tự; 2^5=32 ≥ 26 → cần tối thiểu 5 bit.",
+        "whyWrong": {
+          "A": "• Là gì? 6 bit\n• Dùng để làm gì? Số bit thừa so với mức tối thiểu cần.\n• Vì sao sai? 2^6=64 dư quá nhiều so với 26 ký tự; đề hỏi mức TỐI THIỂU nên 6 không phải đáp án đúng nhất (dù đủ dùng, không phải cận dưới).",
+          "B": "• Là gì? 7 bit\n• Dùng để làm gì? Số bit thừa nhiều hơn nữa so với mức tối thiểu cần.\n• Vì sao sai? 2^7=128 dư còn nhiều hơn A; càng xa mức tối thiểu 5 bit.",
+          "C": "• Là gì? 4 bit\n• Dùng để làm gì? Số bit không đủ biểu diễn 26 ký tự.\n• Vì sao sai? 2^4=16 < 26, không đủ mã hóa toàn bộ 26 chữ cái — thiếu bit."
+        }
+      }
+    },
+    "660": {
+      "explanation": {
+        "whyWrong": {
+          "A": "• Là gì? GIF\n• Dùng để làm gì? Nén ảnh TĨNH, tối đa 256 màu, không xử lý chuỗi khung hình theo thời gian.\n• Vì sao sai? GIF không có cơ chế nén dựa trên chênh lệch giữa các khung hình theo thời gian như video/audio.",
+          "B": "• Là gì? JPEG\n• Dùng để làm gì? Nén ảnh TĨNH bằng biến đổi DCT trên từng ảnh đơn lẻ.\n• Vì sao sai? JPEG xử lý từng ảnh độc lập, không nén chuỗi khung hình chuyển động theo thời gian như MPEG.",
+          "D": "• Là gì? BMP\n• Dùng để làm gì? Định dạng bitmap không nén (hoặc nén tối thiểu) cho ảnh tĩnh.\n• Vì sao sai? BMP không có cơ chế nén hiệu quả, càng không xử lý dữ liệu video/audio theo thời gian."
+        }
+      }
+    },
+    "662": {
+      "explanation": {
+        "whyWrong": {
+          "A": "• Là gì? GIF\n• Dùng để làm gì? Nén ảnh TĨNH, tối đa 256 màu, không xử lý chuỗi khung hình theo thời gian.\n• Vì sao sai? GIF không có cơ chế nén dựa trên chênh lệch giữa các khung hình theo thời gian như video/audio.",
+          "B": "• Là gì? JPEG\n• Dùng để làm gì? Nén ảnh TĨNH bằng biến đổi DCT trên từng ảnh đơn lẻ.\n• Vì sao sai? JPEG xử lý từng ảnh độc lập, không nén chuỗi khung hình chuyển động theo thời gian như MPEG.",
+          "D": "• Là gì? BMP\n• Dùng để làm gì? Định dạng bitmap không nén (hoặc nén tối thiểu) cho ảnh tĩnh.\n• Vì sao sai? BMP không có cơ chế nén hiệu quả, càng không xử lý dữ liệu video/audio theo thời gian."
+        }
+      }
+    },
+    "685": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? 11111010\n• Dùng để làm gì? Kết quả dừng ở bước đảo bit (bù 1), chưa +1.\n• Vì sao sai? Đây là bù-1 (one's complement) của 00000101, còn thiếu bước +1 để thành bù-2.",
+          "C": "• Là gì? 00000101\n• Dùng để làm gì? Biểu diễn nhị phân của +5, chưa lấy bù.\n• Vì sao sai? Đây là +5 dạng nhị phân thường, chưa qua bước đảo bit và +1 để biểu diễn số âm.",
+          "D": "• Là gì? 10000101\n• Dùng để làm gì? Cách biểu diễn dấu-độ lớn (sign-magnitude) của -5, không phải bù-2.\n• Vì sao sai? Chỉ đổi bit dấu (MSB) của 00000101 thành 1 mà không đảo các bit còn lại và +1 — sai quy tắc bù-2."
+        }
+      }
+    },
+    "694": {
+      "explanation": {
+        "whyWrong": {
+          "A": "• Là gì? マルチメディア — multimedia\n• Dùng để làm gì? Kết hợp nhiều loại dữ liệu (ảnh, âm thanh, video) trong một ứng dụng.\n• Vì sao sai? Multimedia nói về LOẠI DỮ LIỆU xử lý, không phải về việc nhiều người dùng chia sẻ một máy.",
+          "B": "• Là gì? マルチプロセス — multiprocess\n• Dùng để làm gì? Chạy nhiều tiến trình đồng thời trên một máy.\n• Vì sao sai? Multiprocess nói về SỐ TIẾN TRÌNH chạy, không phải về SỐ NGƯỜI DÙNG truy cập máy.",
+          "C": "• Là gì? マルチタスク — đa nhiệm\n• Dùng để làm gì? Một người dùng chạy nhiều tác vụ cùng lúc.\n• Vì sao sai? Multitask vẫn là một người dùng làm nhiều việc, khác với multi-user (nhiều người dùng cùng một máy)."
+        }
+      }
+    },
+    "696": {
+      "explanation": {
+        "whyWrong": {
+          "A": "• Là gì? Chỉ đúng 2 bảng\n• Dùng để làm gì? Giới hạn cứng số bảng tham gia JOIN.\n• Vì sao sai? JOIN có thể nối chuỗi ≥3 bảng (join nhiều lần); giới hạn «chỉ đúng 2» quá hẹp so với thực tế SQL.",
+          "C": "• Là gì? 1 bảng trở lên\n• Dùng để làm gì? Ngưỡng tối thiểu số bảng.\n• Vì sao sai? JOIN theo định nghĩa cần kết hợp dữ liệu từ ít nhất 2 bảng khác nhau; 1 bảng không tạo ra phép kết (join).",
+          "D": "• Là gì? 3 bảng trở lên\n• Dùng để làm gì? Ngưỡng tối thiểu số bảng bị đẩy lên quá cao.\n• Vì sao sai? JOIN 2 bảng (vd A JOIN B) đã là JOIN hợp lệ; không cần tối thiểu 3 bảng."
+        }
+      }
+    },
+    "706": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? GIF\n• Dùng để làm gì? Nén ảnh tĩnh tối đa 256 màu.\n• Vì sao sai? Không xử lý chuỗi khung hình chuyển động như MPEG.",
+          "C": "• Là gì? JPEG\n• Dùng để làm gì? Nén ảnh tĩnh bằng DCT.\n• Vì sao sai? Xử lý từng ảnh riêng lẻ, không nén video/audio theo thời gian.",
+          "D": "• Là gì? PNG\n• Dùng để làm gì? Nén ảnh tĩnh không mất dữ liệu (lossless).\n• Vì sao sai? Chỉ dùng cho ảnh tĩnh, không có cơ chế nén video/audio chuyển động."
+        }
+      }
+    },
+    "709": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? 5000 giây\n• Dùng để làm gì? Kết quả nếu quên đổi Mbit→bit đúng bậc (nhầm 10^3 thay vì 10^6).\n• Vì sao sai? Nếu lấy rate=100×10^3 bit/s thay vì 100×10^6, thời gian sẽ bị phóng đại gấp 1000 lần lên mức 5 chữ số — không khớp phép tính chuẩn.",
+          "C": "• Là gì? 50 giây\n• Dùng để làm gì? Kết quả nếu quên nhân 8 khi đổi byte→bit.\n• Vì sao sai? Bỏ qua bước ×8 (1 byte = 8 bit) khi đổi dung lượng file từ byte sang bit sẽ ra kết quả nhỏ hơn đúng 8 lần (400÷8=50).",
+          "D": "• Là gì? 4 giây\n• Dùng để làm gì? Kết quả nếu sai cả hai bước ×8 và đổi đơn vị Mbit.\n• Vì sao sai? Lệch 2 bậc so với 400 giây đúng — không khớp công thức t = (dung lượng bit) ÷ (tốc độ bit/s)."
+        }
+      }
+    },
+    "710": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? 5000 giây\n• Dùng để làm gì? Kết quả nếu quên đổi Mbit→bit đúng bậc (nhầm 10^3 thay vì 10^6).\n• Vì sao sai? Nếu lấy rate=100×10^3 bit/s thay vì 100×10^6, thời gian sẽ bị phóng đại gấp 1000 lần lên mức 5 chữ số — không khớp phép tính chuẩn.",
+          "C": "• Là gì? 50 giây\n• Dùng để làm gì? Kết quả nếu quên nhân 8 khi đổi byte→bit.\n• Vì sao sai? Bỏ qua bước ×8 (1 byte = 8 bit) khi đổi dung lượng file từ byte sang bit sẽ ra kết quả nhỏ hơn đúng 8 lần (400÷8=50).",
+          "D": "• Là gì? 4 giây\n• Dùng để làm gì? Kết quả nếu sai cả hai bước ×8 và đổi đơn vị Mbit.\n• Vì sao sai? Lệch 2 bậc so với 400 giây đúng — không khớp công thức t = (dung lượng bit) ÷ (tốc độ bit/s)."
+        }
+      }
+    },
+    "712": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? GIF\n• Dùng để làm gì? Nén ảnh tĩnh tối đa 256 màu.\n• Vì sao sai? Không xử lý chuỗi khung hình chuyển động như MPEG.",
+          "C": "• Là gì? JPEG\n• Dùng để làm gì? Nén ảnh tĩnh bằng DCT.\n• Vì sao sai? Xử lý từng ảnh riêng lẻ, không nén video/audio theo thời gian.",
+          "D": "• Là gì? PNG\n• Dùng để làm gì? Nén ảnh tĩnh không mất dữ liệu (lossless).\n• Vì sao sai? Chỉ dùng cho ảnh tĩnh, không có cơ chế nén video/audio chuyển động."
+        }
+      }
+    },
+    "714": {
+      "explanation": {
+        "whyWrong": {
+          "A": "• Là gì? 1KB < 1TB < 1MB < 1GB\n• Dùng để làm gì? Chuỗi thứ tự bị đảo vị trí TB và MB.\n• Vì sao sai? TB (10^12) phải đứng SAU GB (10^9), không thể xen giữa KB và MB.",
+          "C": "• Là gì? 1KB < 1MB < 1TB < 1GB\n• Dùng để làm gì? Chuỗi thứ tự đặt TB trước GB.\n• Vì sao sai? TB (10^12) lớn hơn GB (10^9), phải đứng sau GB chứ không phải trước.",
+          "D": "• Là gì? 1TB < 1KB < 1MB < 1GB\n• Dùng để làm gì? Chuỗi thứ tự đặt đơn vị lớn nhất (TB) lên đầu.\n• Vì sao sai? TB là đơn vị lớn nhất trong 4 đơn vị, phải đứng cuối chuỗi tăng dần, không phải đầu."
+        }
+      }
+    },
+    "720": {
+      "explanation": {
+        "concept": "• Đề bị cắt (OCR) phần toán tử giữa hai số nhị phân 01011010 và 0110…; không đủ dữ kiện để trình bày lại phép tính đầy đủ.",
+        "whyCorrect": "• Giữ đáp án A theo nguồn gốc (chưa thể tái lập phép tính do đề thiếu ký tự); cần đối chiếu ảnh gốc Zip240 CÂU HỎI 47 img054 để bổ sung đầy đủ trước khi viết lời giải từng bước chuẩn.",
+        "whyWrong": {
+          "B": "• Là gì? 01111011\n• Dùng để làm gì? Phương án nhiễu khác kết quả A.\n• Vì sao sai? Không khớp kết quả bank chốt (A) — cần đối chiếu đề gốc đầy đủ để xác nhận phép toán trước khi giải thích bước tính.",
+          "C": "• Là gì? 00110001\n• Dùng để làm gì? Phương án nhiễu khác kết quả A.\n• Vì sao sai? Không khớp kết quả bank chốt (A) — cần đối chiếu đề gốc đầy đủ để xác nhận phép toán trước khi giải thích bước tính.",
+          "D": "• Là gì? 11000101\n• Dùng để làm gì? Phương án nhiễu khác kết quả A.\n• Vì sao sai? Không khớp kết quả bank chốt (A) — cần đối chiếu đề gốc đầy đủ để xác nhận phép toán trước khi giải thích bước tính."
+        },
+        "intent": "• J4 — CẦN RÀ LẠI ẢNH GỐC (đề OCR thiếu ký tự, chưa thể viết lời giải từng bước chuẩn)."
+      }
+    },
+    "726": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? マルチタスク — đa nhiệm\n• Dùng để làm gì? Chạy nhiều tác vụ cùng lúc trên một hệ thống.\n• Vì sao sai? Multitask là cơ chế xử lý song song tác vụ, không liên quan đến cách thao tác chuột/bàn phím/cửa sổ."
+        }
+      }
+    },
+    "727": {
+      "explanation": {
+        "concept": "• Số bit n cần thỏa 2^n ≥ số ký tự cần biểu diễn (26).\n• 2^4=16 (thiếu) < 26 ≤ 32=2^5 → n tối thiểu = 5.",
+        "whyCorrect": "• 2^4=16 không đủ cho 26 ký tự; 2^5=32 ≥ 26 → cần tối thiểu 5 bit.",
+        "whyWrong": {
+          "A": "• Là gì? 6 bit\n• Dùng để làm gì? Số bit thừa so với mức tối thiểu cần.\n• Vì sao sai? 2^6=64 dư quá nhiều so với 26 ký tự; đề hỏi mức TỐI THIỂU nên 6 không phải đáp án đúng nhất (dù đủ dùng, không phải cận dưới).",
+          "B": "• Là gì? 7 bit\n• Dùng để làm gì? Số bit thừa nhiều hơn nữa so với mức tối thiểu cần.\n• Vì sao sai? 2^7=128 dư còn nhiều hơn A; càng xa mức tối thiểu 5 bit.",
+          "C": "• Là gì? 4 bit\n• Dùng để làm gì? Số bit không đủ biểu diễn 26 ký tự.\n• Vì sao sai? 2^4=16 < 26, không đủ mã hóa toàn bộ 26 chữ cái — thiếu bit."
+        }
+      }
+    },
+    "732": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? 符号化 — mã hóa (coding)\n• Dùng để làm gì? Bước gán mã nhị phân cho giá trị đã lượng tử hóa — có mặt trong hầu hết codec.\n• Vì sao sai? Coding là bước gần như bắt buộc trong pipeline nén audio chuẩn (sample→quantize→code), khác với Fourier transform (không phải codec nào cũng cần).",
+          "C": "• Là gì? フーリエ変換 — biến đổi Fourier\n• Dùng để làm gì? Phân tích/biến đổi tín hiệu sang miền tần số — chỉ một số codec (như MP3/AAC) dùng.\n• Vì sao sai? [đây chính là đáp án đúng ở câu 752 — option nhiễu tại 732].",
+          "D": "• Là gì? 量子化 — lượng tử hóa (quantization)\n• Dùng để làm gì? Chia biên độ tín hiệu thành mức rời rạc — bước gần như bắt buộc trong số hóa âm thanh.\n• Vì sao sai? Quantization là bước cốt lõi của mọi pipeline số hóa audio, khác với Fourier transform (tùy chọn theo codec)."
+        }
+      }
+    },
+    "734": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? ハードウェア — phần cứng\n• Dùng để làm gì? Thiết bị vật lý của máy tính nói chung.\n• Vì sao sai? «Phần cứng» là khái niệm quá rộng, không mô tả đúng cơ chế cụ thể «bảo vệ/mở rộng không gian nhớ lớn» mà đề hỏi.",
+          "D": "• Là gì? メモリー — bộ nhớ (chung)\n• Dùng để làm gì? Thuật ngữ chung cho bộ nhớ máy tính (RAM, cache…).\n• Vì sao sai? «Bộ nhớ» nói chung không nêu rõ cơ chế mở rộng/bảo vệ không gian nhớ vượt RAM vật lý — đó là vai trò riêng của bộ nhớ ảo (仮想記憶)."
+        }
+      }
+    },
+    "743": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? マルチタスク — đa nhiệm\n• Dùng để làm gì? Chạy nhiều tác vụ cùng lúc.\n• Vì sao sai? Multitask là cơ chế lập lịch xử lý, không liên quan đến kỹ thuật làm dung lượng nhớ hiển thị lớn hơn RAM vật lý thật."
+        }
+      }
+    },
+    "744": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? 11111010\n• Dùng để làm gì? Kết quả dừng ở bước đảo bit (bù 1), chưa +1.\n• Vì sao sai? Đây là bù-1 (one's complement) của 00000101, còn thiếu bước +1 để thành bù-2.",
+          "C": "• Là gì? 00000101\n• Dùng để làm gì? Biểu diễn nhị phân của +5, chưa lấy bù.\n• Vì sao sai? Đây là +5 dạng nhị phân thường, chưa qua bước đảo bit và +1 để biểu diễn số âm.",
+          "D": "• Là gì? 10000101\n• Dùng để làm gì? Cách biểu diễn dấu-độ lớn (sign-magnitude) của -5, không phải bù-2.\n• Vì sao sai? Chỉ đổi bit dấu (MSB) của 00000101 thành 1 mà không đảo các bit còn lại và +1 — sai quy tắc bù-2."
+        }
+      }
+    },
+    "745": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? ビット — bit\n• Dùng để làm gì? Đơn vị nhỏ nhất của lượng tin (0/1).\n• Vì sao sai? Bit là đơn vị thông tin trừu tượng, không phải tên gọi điểm ảnh cụ thể trên lưới ảnh số.",
+          "C": "• Là gì? コード — mã / code\n• Dùng để làm gì? Chuỗi ký hiệu biểu diễn dữ liệu.\n• Vì sao sai? «Mã» là khái niệm biểu diễn dữ liệu nói chung, không phải tên đơn vị điểm ảnh.",
+          "D": "• Là gì? データ — dữ liệu\n• Dùng để làm gì? Khái niệm chung cho mọi thông tin số hóa.\n• Vì sao sai? Quá chung chung, không chỉ đích danh đơn vị điểm nhỏ xếp dọc-ngang tạo nên ảnh số."
+        }
+      }
+    },
+    "748": {
+      "explanation": {
+        "whyWrong": {
+          "B": "• Là gì? マルチタスク — đa nhiệm\n• Dùng để làm gì? Chạy nhiều tác vụ cùng lúc trên một hệ thống.\n• Vì sao sai? Multitask là cơ chế xử lý song song tác vụ, không liên quan đến cách thao tác chuột/bàn phím/cửa sổ."
+        }
+      }
+    },
+    "752": {
+      "explanation": {
+        "whyWrong": {
+          "A": "• Là gì? 標本化 — lấy mẫu (sampling)\n• Dùng để làm gì? Rời rạc hóa tín hiệu liên tục theo thời gian — bước bắt buộc của MỌI phương pháp nén audio số.\n• Vì sao sai? Sampling là bước nền tảng không thể thiếu để số hóa âm thanh trước khi nén bằng bất kỳ phương pháp nào.",
+          "B": "• Là gì? 符号化 — mã hóa (coding)\n• Dùng để làm gì? Gán mã nhị phân cho dữ liệu đã lượng tử hóa — bước bắt buộc để tạo file số.\n• Vì sao sai? Coding là bước cuối bắt buộc của mọi pipeline nén, không thể bỏ qua.",
+          "D": "• Là gì? 量子化 — lượng tử hóa (quantization)\n• Dùng để làm gì? Chia biên độ tín hiệu thành mức rời rạc — bước bắt buộc để số hóa biên độ.\n• Vì sao sai? Quantization là bước cốt lõi bắt buộc, khác với Fourier transform chỉ dùng ở một số codec cụ thể (không phải mọi phương pháp)."
+        }
+      }
+    },
+    "756": {
+      "explanation": {
+        "whyWrong": {
+          "A": "• Là gì? -3\n• Dùng để làm gì? Kết quả nếu tính nhầm dấu ở bước a+(b-a)*a.\n• Vì sao sai? Nếu quên dấu âm của (b-a)=-3 khi nhân với a=10 sẽ ra -20 bị đọc nhầm, dẫn tới modulo lệch dấu so với -4 đúng.",
+          "C": "• Là gì? 3\n• Dùng để làm gì? Kết quả nếu lấy trị tuyệt đối của phép modulo thay vì giữ dấu âm theo quy ước C++.\n• Vì sao sai? Trong C++, dấu của kết quả % theo dấu số bị chia (-200); lấy trị tuyệt đối 3 bỏ qua quy ước dấu ngôn ngữ.",
+          "D": "• Là gì? 4\n• Dùng để làm gì? Cùng lỗi lấy trị tuyệt đối như C nhưng làm tròn khác.\n• Vì sao sai? Không khớp -200 % 7 = -4 theo đúng quy ước C++ (kết quả modulo mang dấu của số bị chia)."
+        }
+      }
+    }
+  }
+}

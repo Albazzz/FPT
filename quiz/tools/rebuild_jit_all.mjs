@@ -958,6 +958,7 @@ function rebuildOne(q, remote, maps) {
 }
 
 // ── main ────────────────────────────────────────────────
+const EXPORT_SITE = process.argv.includes("--export-site");
 const local = JSON.parse(fs.readFileSync(path.join(dataDir, "jit.json"), "utf8"));
 const remote = fs.existsSync(remotePath)
   ? JSON.parse(fs.readFileSync(remotePath, "utf8"))
@@ -970,53 +971,474 @@ for (const [jp, vi] of Object.entries(JP_VI)) {
   maps.jp2vi.set(jp, vi);
 }
 
+function mapSourceTask(src, sets) {
+  const s = String(src || "");
+  const set = Array.isArray(sets) ? sets : [];
+  if (s === "fuexam") return { task: "fuexam", taskLabel: "Đề FE" };
+  if (s === "slides") return { task: "slides", taskLabel: "Slides" };
+  if (s === "albazzz") return { task: "albazzz", taskLabel: "Albazzz" };
+  if (
+    s === "zip240" ||
+    s === "quiz_pt" ||
+    s === "thao_nguyen" ||
+    set.includes("quiz_pt") ||
+    set.includes("zip240")
+  ) {
+    return { task: "pt", taskLabel: "Quiz PT" };
+  }
+  return { task: "slides", taskLabel: "Slides" };
+}
+
+function cleanOptions(opts) {
+  const out = {};
+  for (const [k, v] of Object.entries(opts || {})) {
+    let t = String(v ?? "").trim();
+    if (t.length > 160 && t.includes(" - ")) t = t.split(" - ")[0].trim();
+    if (t.length > 200) t = t.slice(0, 197) + "…";
+    out[String(k).toUpperCase()] = t;
+  }
+  return out;
+}
+
+function remoteToLocal(rq) {
+  const st = mapSourceTask(rq.source, rq.sets);
+  const answers = correctsOf(rq);
+  const answer = answers.length ? answers.sort().join("") : "A";
+  return {
+    id: Number(rq.id) || 0,
+    task: st.task,
+    taskLabel: st.taskLabel,
+    num: Number(rq.id) || 0,
+    question: String(rq.question || "").trim(),
+    options: cleanOptions(rq.options),
+    answer,
+    alternatives: [],
+    source: rq.source || undefined,
+    exam: rq.exam || undefined,
+    sets: rq.sets || undefined,
+    note: rq.note || undefined,
+    meta: {
+      origin: "han126-MLN122_FE-jit401",
+      remoteId: rq.id,
+      note: rq.note || null,
+      choose: rq.choose ?? null,
+    },
+  };
+}
+
+/** Longest-key replace JP fragments → VI (for long option sentences). */
+function deepGlossJp(s) {
+  let t = String(s || "").trim();
+  if (!t) return "";
+  if (hasVi(t) && !hasJp(t)) return t;
+  const clean = glossJpClean(t);
+  if (clean && !hasJp(clean) && clean.length >= 2) return clean;
+  const keys = Object.keys(JP_VI).sort((a, b) => b.length - a.length);
+  let out = t;
+  for (const k of keys) {
+    if (k.length < 2) continue;
+    if (out.includes(k)) out = out.split(k).join(JP_VI[k]);
+  }
+  // Common grammar crumbs → VI
+  out = out
+    .replace(/について/g, " về ")
+    .replace(/正しいものはどれか。?/g, " — phát biểu nào đúng?")
+    .replace(/正しくないものを(?:えら|選)んでください。?/g, " — chọn phát biểu SAI.")
+    .replace(/正しいものを(?:えら|選)んでください。?/g, " — chọn phát biểu ĐÚNG.")
+    .replace(/は何ですか。?/g, " là gì?")
+    .replace(/とは何ですか。?/g, " là gì?")
+    .replace(/何と呼ばれますか。?/g, " được gọi là gì?")
+    .replace(/何が違いますか。?/g, " khác nhau ở điểm nào?")
+    .replace(/の違いは何ですか。?/g, " khác nhau thế nào?")
+    .replace(/を選びなさい。?/g, " — hãy chọn.")
+    .replace(/をえらんでください。?/g, " — hãy chọn.")
+    .replace(/ではない。?/g, " — không phải.")
+    .replace(/である。?/g, ".")
+    .replace(/です。?/g, ".")
+    .replace(/ます。?/g, ".")
+    .replace(/ので/g, " nên ")
+    .replace(/だから/g, " vì vậy ")
+    .replace(/または/g, " hoặc ")
+    .replace(/及び/g, " và ")
+    .replace(/および/g, " và ")
+    .replace(/など/g, "…")
+    .replace(/という/g, " gọi là ")
+    .replace(/できる/g, " có thể ")
+    .replace(/できない/g, " không thể ")
+    .replace(/しやすい/g, " dễ ")
+    .replace(/しにくい/g, " khó ")
+    .replace(/受けやすい/g, " dễ chịu ảnh hưởng")
+    .replace(/受けにくい/g, " ít chịu ảnh hưởng")
+    .replace(/専用の/g, " chuyên dụng ")
+    .replace(/専用線/g, " đường truyền riêng")
+    .replace(/利用しない/g, " không dùng")
+    .replace(/安定に/g, " ổn định ")
+    .replace(/高速な/g, " tốc độ cao ")
+    .replace(/通信/g, " truyền thông")
+    .replace(/実現できません/g, " không thực hiện được")
+    .replace(/影響/g, " ảnh hưởng")
+    .replace(/ノイズ/g, " nhiễu")
+    .replace(/光ファイバ/g, " cáp quang")
+    .replace(/ワイルドカード/g, " wildcard")
+    .replace(/ミドルウェア/g, " middleware")
+    .replace(/フィールド/g, " field (trường)")
+    .replace(/メソッド/g, " method (phương thức)")
+    .replace(/[「」『』（）【】]/g, " ")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+  if (!hasJp(out) && out.length >= 2) return out;
+  // strip leftover kana/kanji if enough Latin/VI remains
+  const stripped = out
+    .replace(/[\u3040-\u30ff\u3400-\u9fff]+/g, " ")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+  if (stripped.length >= 8 && (hasVi(stripped) || /[A-Za-z]{3,}/.test(stripped)))
+    return stripped;
+  return hasJp(out) ? "" : out;
+}
+
+function translateQuestionExtra(qText) {
+  const t = String(qText || "").trim();
+  let m;
+  if ((m = t.match(/^(.+?)は(.+?)と何が違いますか。?$/))) {
+    const a = topicVi(m[1]) || deepGlossJp(m[1]) || m[1];
+    const b = topicVi(m[2]) || deepGlossJp(m[2]) || m[2];
+    return `${a} khác ${b} ở điểm nào?`;
+  }
+  if ((m = t.match(/^(.+?)は何と呼ばれますか。?$/))) {
+    const a = topicVi(m[1]) || deepGlossJp(m[1]) || "Cái này";
+    return `${a} được gọi là gì?`;
+  }
+  if ((m = t.match(/^['"]?(.+?)['"]?の「(.+?)」は(.+?)で何と呼ばれますか。?$/))) {
+    return `Trong «${deepGlossJp(m[1]) || m[1]}», «${m[2]}» trong ${topicVi(m[3]) || m[3]} được gọi là gì?`;
+  }
+  if ((m = t.match(/^(.+?)について正しいものを(?:えら|選)んでください。?$/))) {
+    return `Chọn phát biểu ĐÚNG về ${topicVi(m[1]) || deepGlossJp(m[1]) || "chủ đề trong đề"}.`;
+  }
+  if ((m = t.match(/^(.+?)について正しくないものを(?:えら|選)んでください。?$/))) {
+    return `Chọn phát biểu SAI về ${topicVi(m[1]) || deepGlossJp(m[1]) || "chủ đề trong đề"}.`;
+  }
+  if ((m = t.match(/^(.+?)の特徴は(?:なん|何)ですか。?$/))) {
+    return `Đặc trưng của ${topicVi(m[1]) || deepGlossJp(m[1]) || "đối tượng trong đề"} là gì?`;
+  }
+  if ((m = t.match(/^(.+?)を何と言いますか。?$/))) {
+    return `${topicVi(m[1]) || deepGlossJp(m[1]) || "Cái này"} gọi là gì?`;
+  }
+  return "";
+}
+
+/** Post-pass: fill weak VI fields for export (esp. zip240 long JP). */
+function polishExportQuestion(q, maps) {
+  const exp = { ...(q.explanation || {}) };
+  const options = q.options || {};
+  const corrects = new Set(correctsOf(q));
+  const primary = [...corrects].sort()[0] || "A";
+
+  // Better questionVi
+  if (
+    !exp.questionVi ||
+    /chưa có bản dịch|xem câu gốc|Chọn phương án đúng theo định nghĩa/i.test(exp.questionVi)
+  ) {
+    const extra = translateQuestionExtra(q.question);
+    if (extra) exp.questionVi = extra;
+    else {
+      const g = deepGlossJp(q.question);
+      if (g && g.length >= 8) exp.questionVi = g;
+    }
+  }
+
+  exp.optionsVi = exp.optionsVi || {};
+  for (const L of Object.keys(options).sort()) {
+    const cur = String(exp.optionsVi[L] || "");
+    if (!cur || /chưa có bản dịch|đang bổ sung|xem cột gốc/i.test(cur) || hasJp(cur)) {
+      const g = deepGlossJp(options[L]) || glossJpClean(options[L]) || translateOpt(options[L], maps);
+      if (g && !hasJp(g) && !/chưa có bản dịch/i.test(g)) exp.optionsVi[L] = g;
+      else if (g) exp.optionsVi[L] = g;
+    }
+  }
+
+  exp.answerDisplay = [...corrects]
+    .sort()
+    .map((L) => {
+      const vi = exp.optionsVi[L];
+      if (vi && !hasJp(vi) && !/chưa có bản dịch|đang bổ sung/i.test(vi)) return `${L}. ${vi}`;
+      const g = deepGlossJp(options[L]);
+      if (g) return `${L}. ${g}`;
+      return `${L}. (xem cột gốc)`;
+    })
+    .join(" · ");
+
+  const ansVi =
+    exp.optionsVi[primary] && !/chưa có|xem cột/i.test(exp.optionsVi[primary])
+      ? exp.optionsVi[primary]
+      : deepGlossJp(options[primary]) || options[primary];
+  const ansJp = options[primary] || "";
+  const remoteP = parseRemote(q.note || "");
+
+  // Strengthen concept / whyCorrect when thin
+  const thinConcept =
+    !exp.concept ||
+    exp.concept.length < 40 ||
+    /Thuật ngữ\/phương án JP|xem cột gốc|Nghĩa: （/i.test(exp.concept);
+  if (thinConcept) {
+    const kind = classify(q.question || "");
+    if (kind === "vi2jp") {
+      const term = extractViTermFromQuestion(q.question || "") || "thuật ngữ trong đề";
+      exp.concept = bullets(
+        `«${term}» tiếng Nhật đúng: «${ansJp}» (${ansVi}).`,
+        "Chọn đúng cặp dịch, không nhầm từ gần nghĩa."
+      );
+      exp.whyCorrect = bullets(
+        `Việt «${term}» ⇔ Nhật «${ansJp}» = ${ansVi}.`,
+        "Đúng bản dịch thuật ngữ CNTT/điện tử đã học."
+      );
+      exp.memoryTip = bullets(`${term} = ${ansJp} (${ansVi})`);
+      exp.intent = bullets("T1 — 専門用語: VI → JP.");
+    } else {
+      exp.concept = bullets(
+        `Đáp án đúng: ${ansVi}`,
+        deepGlossJp(ansJp) && deepGlossJp(ansJp) !== ansVi ? deepGlossJp(ansJp) : null,
+        "Đối chiếu đúng bản chất kỹ thuật đề hỏi (JIT)."
+      );
+      exp.whyCorrect = bullets(
+        ...remoteP.why,
+        `Chọn ${primary}: ${ansVi}.`,
+        "Khớp định nghĩa/cơ chế trong stem tiếng Nhật."
+      );
+      if (!exp.memoryTip || /xem cột gốc/i.test(exp.memoryTip)) {
+        exp.memoryTip = bullets(`${primary}: ${ansVi}`);
+      }
+      if (!exp.intent || exp.intent.length < 20) {
+        exp.intent = bullets("T3/T4 — chọn định nghĩa hoặc phát biểu đúng (JIT).");
+      }
+    }
+  }
+
+  // whyWrong 3 dòng đủ cho mọi option sai
+  exp.whyWrong = exp.whyWrong || {};
+  for (const L of Object.keys(options).sort()) {
+    if (corrects.has(L)) {
+      delete exp.whyWrong[L];
+      continue;
+    }
+    const ovi =
+      exp.optionsVi[L] && !/chưa có|xem cột/i.test(exp.optionsVi[L])
+        ? exp.optionsVi[L]
+        : deepGlossJp(options[L]) || options[L];
+    const weak =
+      !exp.whyWrong[L] ||
+      exp.whyWrong[L].length < 50 ||
+      /chưa có bản dịch|xem cột gốc|Phương án này không khớp/i.test(exp.whyWrong[L]);
+    if (weak) {
+      exp.whyWrong[L] = [
+        `• Là gì? ${ovi}`,
+        `• Dùng để làm gì? Khái niệm gần nghĩa hoặc khác miền với điều đề hỏi.`,
+        `• Vì sao sai? Không map đúng từ/cơ chế trong stem; đúng là ${exp.answerDisplay}.`,
+      ].join("\n");
+    }
+  }
+
+  // whatIs pure VI
+  exp.whatIs = exp.whatIs || {};
+  for (const L of Object.keys(options).sort()) {
+    if (!exp.whatIs[L] || /xem cột gốc|Thuật ngữ\/phương án JP/i.test(exp.whatIs[L])) {
+      exp.whatIs[L] =
+        exp.optionsVi[L] && !/chưa có|xem cột/i.test(exp.optionsVi[L])
+          ? exp.optionsVi[L]
+          : deepGlossJp(options[L]) || "（xem cột gốc）";
+    }
+  }
+
+  return { ...q, explanation: exp };
+}
+
+function optionsEqual(a, b) {
+  const ka = Object.keys(a || {}).sort().join("");
+  const kb = Object.keys(b || {}).sort().join("");
+  if (ka !== kb) return false;
+  for (const L of ka) {
+    if (norm(String((a || {})[L] || "")) !== norm(String((b || {})[L] || "")))
+      return false;
+  }
+  return true;
+}
+
+/** Prefer rich local explain when same stem+options; keep remote answer. */
+function preferLocalExplain(rebuilt, localQ, remoteAns) {
+  if (!localQ?.explanation || typeof localQ.explanation !== "object") return rebuilt;
+  if (!optionsEqual(rebuilt.options, localQ.options)) return rebuilt;
+  const le = localQ.explanation;
+  const re = rebuilt.explanation || {};
+  // Keep remote-correct answer + display; borrow concept/why* when local is richer
+  const localWhyWrong = le.whyWrong && Object.keys(le.whyWrong).length;
+  const remoteWhyWrong = re.whyWrong && Object.keys(re.whyWrong).length;
+  const richer =
+    (String(le.concept || "").length > String(re.concept || "").length + 20) ||
+    (localWhyWrong && (!remoteWhyWrong || localWhyWrong >= remoteWhyWrong));
+  if (!richer) return rebuilt;
+  const letters = String(remoteAns || rebuilt.answer || "")
+    .toUpperCase()
+    .replace(/[^A-E]/g, "")
+    .split("");
+  const optsVi = le.optionsVi || re.optionsVi || {};
+  const options = rebuilt.options || {};
+  const answerDisplay = letters
+    .map((L) => {
+      const vi = optsVi[L];
+      if (vi && !/chưa có bản dịch|đang bổ sung/i.test(vi)) return `${L}. ${vi}`;
+      return options[L] ? `${L}. ${options[L]}` : L;
+    })
+    .join(" · ");
+  // Drop whyWrong entries that are now correct under remote answer
+  const whyWrong = { ...(le.whyWrong || {}) };
+  for (const L of letters) delete whyWrong[L];
+  return {
+    ...rebuilt,
+    answer: letters.join("") || rebuilt.answer,
+    explanation: {
+      ...le,
+      questionVi: le.questionVi || re.questionVi,
+      optionsVi: optsVi,
+      answerDisplay,
+      whyWrong,
+      // Ensure wrong options still have 3-line entries if missing after ans flip
+      ...(!Object.keys(whyWrong).length ? { whyWrong: re.whyWrong || {} } : {}),
+    },
+  };
+}
+
 const byQ = new Map();
 for (const rq of remote.questions || []) byQ.set(norm(rq.question), rq);
 
+const localByNorm = new Map();
+for (const q of local.questions || []) {
+  const n = norm(q.question);
+  if (!localByNorm.has(n)) localByNorm.set(n, q);
+}
+
 let bannedLeft = 0;
 let genericLeft = 0;
-const outQs = local.questions.map((q) => {
-  const rebuilt = rebuildOne(q, byQ.get(norm(q.question)), maps);
-  const blob = JSON.stringify(rebuilt.explanation || {});
-  if (BANNED.test(blob)) bannedLeft++;
-  if (/Phương án «|Câu hỏi tiếng Nhật|Khái niệm «|không thỏa điều kiện cốt lõi/i.test(blob))
-    genericLeft++;
-  return rebuilt;
-});
+let outQs;
 
-const payload = {
-  subject: "jit",
-  upgradedAt: new Date().toISOString(),
-  explainPass: "jit-all-v6-lexicon-fill",
-  count: outQs.length,
-  rebuilt: outQs.length,
-  bannedLeft,
-  genericLeft,
-  questions: outQs,
-};
-fs.writeFileSync(path.join(dataDir, "jit.json"), JSON.stringify(payload));
-fs.writeFileSync(
-  path.join(dataDir, "jit.js"),
-  `// Auto-generated jit-all-v2\n` +
-    `window.QUIZ_DATA = window.QUIZ_DATA || {};\n` +
-    `window.QUIZ_DATA["jit"] = ${JSON.stringify(outQs)};\n`
-);
+if (EXPORT_SITE) {
+  // Full remote bank → separate file (does NOT overwrite quiz/data/jit.*)
+  let reusedLocal = 0;
+  outQs = (remote.questions || []).map((rq) => {
+    const base = remoteToLocal(rq);
+    let rebuilt = rebuildOne(base, rq, maps);
+    const localQ = localByNorm.get(norm(rq.question));
+    const before = JSON.stringify(rebuilt.explanation || {});
+    rebuilt = preferLocalExplain(rebuilt, localQ, base.answer);
+    if (JSON.stringify(rebuilt.explanation || {}) !== before) reusedLocal++;
+    // Export polish: deep gloss + PROMPT schema fill (T1–T4)
+    rebuilt = polishExportQuestion(rebuilt, maps);
+    const exp = rebuilt.explanation || {};
+    const blob = JSON.stringify(exp);
+    if (BANNED.test(blob)) bannedLeft++;
+    if (/Phương án «|Câu hỏi tiếng Nhật|Khái niệm «|không thỏa điều kiện cốt lõi/i.test(blob))
+      genericLeft++;
+    return rebuilt;
+  });
 
-// samples
-const samples = [
-  outQs.find((q) => /bán dẫn/.test(q.question || "")),
-  outQs.find((q) => /ROM/.test(q.question || "") && /とは何/.test(q.question || "")),
-  outQs.find((q) => /スカベンジング/.test(q.question || "")),
-  outQs.find((q) => /分散処理システム/.test(q.question || "")),
-];
-console.log("REPORT", {
-  total: outQs.length,
-  bannedLeft,
-  genericLeft,
-  harvestedVi2jp: maps.vi2jp.size,
-  harvestedJp2vi: maps.jp2vi.size,
-});
-for (const s of samples.filter(Boolean)) {
-  console.log("\n====", s.id, (s.question || "").slice(0, 70));
-  console.log(JSON.stringify(s.explanation, null, 2).slice(0, 1400));
+  const bySource = {};
+  const byTask = {};
+  for (const q of outQs) {
+    bySource[q.source || "(none)"] = (bySource[q.source || "(none)"] || 0) + 1;
+    byTask[q.task || "(none)"] = (byTask[q.task || "(none)"] || 0) + 1;
+  }
+
+  const exportPayload = {
+    subject: "jit",
+    code: remote.code || "JIT401",
+    title: remote.title || "JIT401 from site",
+    sourceUrl: "https://han126-phuc2004.github.io/MLN122_FE/",
+    dataUrl: "https://han126-phuc2004.github.io/MLN122_FE/data/jit401.json",
+    exportedAt: new Date().toISOString(),
+    explainPass: "jit-site-export-v1+promt-schema",
+    promptRule: "quiz/promt/PROMPT_GIAI_THICH_TRAC_NGHIEM.md#c-jit401",
+    schemaNote:
+      "Mỗi câu: answer + explanation{questionVi,optionsVi,answerDisplay,concept,whyCorrect,whyWrong,memoryTip,intent} theo promt.",
+    count: outQs.length,
+    remoteTotal: remote.total || outQs.length,
+    breakdown: remote.breakdown || null,
+    bySource,
+    byTask,
+    reusedLocalExplain: reusedLocal,
+    bannedLeft,
+    genericLeft,
+    questions: outQs,
+  };
+
+  const exportPath = path.join(__dirname, "../promt/JIT401_SITE_FULL.json");
+  fs.writeFileSync(exportPath, JSON.stringify(exportPayload, null, 2), "utf8");
+  // compact twin next to data (optional convenience, still separate from jit.json)
+  const compactPath = path.join(dataDir, "jit_site_export.json");
+  fs.writeFileSync(compactPath, JSON.stringify(exportPayload), "utf8");
+
+  console.log("EXPORT SITE", {
+    exportPath,
+    compactPath,
+    total: outQs.length,
+    reusedLocal,
+    bannedLeft,
+    genericLeft,
+    bySource,
+    byTask,
+  });
+  const samples = [
+    outQs.find((q) => /スカベンジング/.test(q.question || "")),
+    outQs.find((q) => /専門用語/.test(q.question || "")),
+    outQs.find((q) => q.source === "zip240"),
+  ];
+  for (const s of samples.filter(Boolean)) {
+    console.log("\n====", s.id, s.source, (s.question || "").slice(0, 70));
+    console.log("ans", s.answer);
+    console.log(JSON.stringify(s.explanation, null, 2).slice(0, 1200));
+  }
+} else {
+  outQs = local.questions.map((q) => {
+    const rebuilt = rebuildOne(q, byQ.get(norm(q.question)), maps);
+    const blob = JSON.stringify(rebuilt.explanation || {});
+    if (BANNED.test(blob)) bannedLeft++;
+    if (/Phương án «|Câu hỏi tiếng Nhật|Khái niệm «|không thỏa điều kiện cốt lõi/i.test(blob))
+      genericLeft++;
+    return rebuilt;
+  });
+
+  const payload = {
+    subject: "jit",
+    upgradedAt: new Date().toISOString(),
+    explainPass: "jit-all-v6-lexicon-fill",
+    count: outQs.length,
+    rebuilt: outQs.length,
+    bannedLeft,
+    genericLeft,
+    questions: outQs,
+  };
+  fs.writeFileSync(path.join(dataDir, "jit.json"), JSON.stringify(payload));
+  fs.writeFileSync(
+    path.join(dataDir, "jit.js"),
+    `// Auto-generated jit-all-v2\n` +
+      `window.QUIZ_DATA = window.QUIZ_DATA || {};\n` +
+      `window.QUIZ_DATA["jit"] = ${JSON.stringify(outQs)};\n`
+  );
+
+  // samples
+  const samples = [
+    outQs.find((q) => /bán dẫn/.test(q.question || "")),
+    outQs.find((q) => /ROM/.test(q.question || "") && /とは何/.test(q.question || "")),
+    outQs.find((q) => /スカベンジング/.test(q.question || "")),
+    outQs.find((q) => /分散処理システム/.test(q.question || "")),
+  ];
+  console.log("REPORT", {
+    total: outQs.length,
+    bannedLeft,
+    genericLeft,
+    harvestedVi2jp: maps.vi2jp.size,
+    harvestedJp2vi: maps.jp2vi.size,
+  });
+  for (const s of samples.filter(Boolean)) {
+    console.log("\n====", s.id, (s.question || "").slice(0, 70));
+    console.log(JSON.stringify(s.explanation, null, 2).slice(0, 1400));
+  }
 }
