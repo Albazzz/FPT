@@ -8995,7 +8995,10 @@
     "prompt-giai-thich",
     "fixpass-v16b",
     "lessons-bleed-filler-ocr",
-    "separate-from-local-jit-json"
+    "imported-to-jit-json",
+    "task-site"
   ],
-  "lessonRef": "quiz/promt/PROMPT_GIAI_THICH_TRAC_NGHIEM.md#c3-kinh-nghiem-site-added"
+  "lessonRef": "quiz/promt/PROMPT_GIAI_THICH_TRAC_NGHIEM.md#c3-kinh-nghiem-site-added",
+  "importedAt": "2026-07-24T12:17:56.868Z",
+  "importTask": "site"
 }

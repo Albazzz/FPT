@@ -48,7 +48,7 @@ window.QUIZ_SUBJECTS = {
   jit: {
     id: "jit",
     title: "JIT401",
-    subtitle: "Quiz · Sample · PT · Slides",
+    subtitle: "Quiz · Sample · PT · Slides · Site",
     brandIcon: "fa-laptop-code",
     storageWrong: "uq-jit-wrong-v1",
     storageProgress: "uq-jit-progress-v1",
@@ -61,12 +61,13 @@ window.QUIZ_SUBJECTS = {
       { id: "pt", label: "Quiz PT", icon: "fa-pen-to-square" },
       { id: "fuexam", label: "Đề FE", icon: "fa-file-circle-check" },
       { id: "slides", label: "Slides (bổ sung)", icon: "fa-chalkboard" },
+      { id: "site", label: "Site (bổ sung)", icon: "fa-globe" },
       { id: "albazzz", label: "Albazzz", icon: "fa-book" },
       { id: "all", label: "Tất cả", icon: "fa-layer-group" },
     ],
     defaultTask: "all",
     dataKey: "jit",
-    hint: "Quiz / Sample / PT + Slides. Tab không có câu sẽ ẩn. JP + bảng dịch VI.",
+    hint: "Quiz / Sample / PT + Slides + Site (MLN122). Tab 0 câu sẽ ẩn. JP + bảng dịch VI.",
   },
   // dataKey vẫn "fe" (file data/fe.js); hiển thị JFE — URL ?s=fe hoặc ?s=jfe
   fe: {
