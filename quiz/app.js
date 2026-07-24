@@ -114,6 +114,9 @@
     qIndex: $("#qIndex"),
     qId: $("#qId"),
     questionText: $("#questionText"),
+    questionFigure: $("#questionFigure"),
+    questionImage: $("#questionImage"),
+    questionImageCap: $("#questionImageCap"),
     multiHint: $("#multiHint"),
     options: $("#options"),
     submitRow: $("#submitRow"),
@@ -860,6 +863,51 @@
     return queue[index] || null;
   }
 
+  /**
+   * Resolve image path for a question (meta.img / img / imageUrl).
+   * Relative paths are served from quiz root (e.g. imge/1.png).
+   * @param {object} q
+   * @returns {{ src: string, label: string }|null}
+   */
+  function resolveQuestionImage(q) {
+    if (!q) return null;
+    const m = q.meta || {};
+    const url = q.imageUrl || m.imageUrl || null;
+    if (url) {
+      return { src: String(url), label: String(m.imgLabel || m.caption || "") };
+    }
+    const name = q.img || m.img || m.image || null;
+    if (!name) return null;
+    const s = String(name);
+    if (/^https?:\/\//i.test(s) || s.startsWith("data:") || s.startsWith("/") || s.startsWith("./") || s.includes("/")) {
+      return { src: s, label: String(m.imgLabel || m.caption || "") };
+    }
+    const dir = String(m.imgDir || "imge").replace(/\/+$/, "");
+    return { src: dir + "/" + s, label: String(m.imgLabel || m.caption || "") };
+  }
+
+  function renderQuestionImage(q) {
+    if (!el.questionFigure || !el.questionImage) return;
+    const ref = resolveQuestionImage(q);
+    if (!ref) {
+      el.questionFigure.classList.add("hidden");
+      el.questionImage.removeAttribute("src");
+      el.questionImage.alt = "";
+      if (el.questionImageCap) el.questionImageCap.textContent = "";
+      return;
+    }
+    el.questionFigure.classList.remove("hidden");
+    el.questionImage.src = ref.src;
+    el.questionImage.alt = ref.label || "Hình minh họa đề bài";
+    if (el.questionImageCap) {
+      el.questionImageCap.textContent = ref.label || "";
+      el.questionImageCap.classList.toggle("hidden", !ref.label);
+    }
+    el.questionImage.onerror = () => {
+      el.questionFigure.classList.add("hidden");
+    };
+  }
+
   function goToQuestionId(id) {
     // Prefer current queue; if not found, switch to all + unshuffle + matching exam
     let found = queue.findIndex((q) => q.id === id);
@@ -1087,6 +1135,7 @@
     el.qId.textContent =
       questionTag(q) + (wrongIds.has(q.id) ? " · đã sai trước đó" : "");
     el.questionText.textContent = q.question;
+    renderQuestionImage(q);
 
     const multi = isMulti(q);
     if (el.multiHint) {

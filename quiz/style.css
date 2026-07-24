@@ -800,6 +800,51 @@ body.map-hidden .side-map {
   margin-bottom: 16px;
 }
 
+/* —— Question figure (FE/JFE diagrams, tables) —— */
+.q-figure {
+  margin: 0 0 16px;
+  padding: 12px;
+  background: var(--surface-2, #f4f7fb);
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.q-figure.hidden {
+  display: none;
+}
+
+.q-figure-img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: min(70vh, 640px);
+  margin: 0 auto;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  cursor: zoom-in;
+}
+
+.q-figure-img:active {
+  cursor: zoom-out;
+}
+
+.q-figure-cap {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted, #64748b);
+  line-height: 1.35;
+}
+
+.q-figure-cap.hidden,
+.q-figure-cap:empty {
+  display: none;
+}
+
 /* —— Options —— */
 .options {
   display: flex;
