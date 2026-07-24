@@ -1,0 +1,48 @@
+{
+  "rule": "J5c",
+  "title": "True/False — statement sai: chỉ chỗ sai (CRM gán nhầm mô tả ERP)",
+  "source": {
+    "subject": "fe",
+    "id": 417,
+    "task": "fuexam",
+    "num": 9,
+    "answer": "A"
+  },
+  "pattern": {
+    "when": "Stem true/false + đoạn mô tả dài về khái niệm X; options True/False",
+    "ifAnswerTrue": "whyCorrect khẳng định statement khớp bản chất X (giải thích bình thường)",
+    "ifAnswerFalse": "whyCorrect phải chỉ ra mệnh đề/cụm sai trong đoạn + vì sao (thường tráo với khái niệm gần, vd. CRM↔ERP)"
+  },
+  "question": "The following statement is true/ false about CRM? Customer Relationship Management (CRM) is a cross-functional enterprise system driven by an integrated suite of software modules that supports the basic internal business processes of a company. CRM gives a company an integrated real-time view of its core business processes such as production, order processing, and inventory management, tied together by CRM applications software and a common database maintained by a database management system. CRM systems track business resources (such as cash, raw materials, and production capacity) and the status of commitments made by the business (such as customer orders, purchase orders, and employee payroll), no matter which department (manufacturing, purchasing, sales, accounting, and so on) has entered the data into the system. CRM facilitates information flow between all business functions inside the organization, and manages connections to outside stakeholders.",
+  "options": {
+    "A": "False",
+    "B": "True"
+  },
+  "wrongClausesInStatement": [
+    "supports the basic internal business processes",
+    "production, order processing, and inventory management",
+    "track business resources (cash, raw materials, production capacity)",
+    "employee payroll / cross-department resource commitments"
+  ],
+  "actuallyDescribes": "ERP (Enterprise Resource Planning)",
+  "correctConcept": "CRM = customer-facing (sales, marketing, service)",
+  "explanation": {
+    "questionVi": "Phát biểu sau về CRM đúng hay sai? (đoạn mô tả dài — xem stem EN)",
+    "optionsVi": {
+      "A": "False",
+      "B": "True"
+    },
+    "answerDisplay": "A. False",
+    "concept": "• CRM (Customer Relationship Management): hệ hướng **khách hàng** — sales, marketing, service, pipeline, ticket CS…\n• Không phải suite back-office “basic internal” (sản xuất, tồn kho, cash, nguyên liệu, payroll) — đó là **ERP**.",
+    "whyCorrect": "• **Chỗ sai trong statement:**\n  – Gán CRM = hỗ trợ basic **internal** business processes (giống ERP).\n  – Nêu production / inventory / track cash–raw materials–production capacity / payroll cross-department.\n• **Vì sao sai:** các ý trên là mô tả **ERP**, không phải CRM.\n• CRM đúng nghĩa: quan hệ & tương tác **khách hàng** (customer-facing), không điều phối tài nguyên nội bộ.\n• → Phát biểu **sai** → đáp án **False**.",
+    "whyWrong": {
+      "B": "• Là gì? True = khẳng định toàn bộ đoạn mô tả CRM là đúng.\n• Dùng để làm gì? Chọn khi statement khớp bản chất khái niệm.\n• Vì sao sai? Đoạn đang mô tả ERP (internal resources) gán nhầm cho CRM — chọn True là bỏ sót chỗ tráo khái niệm."
+    },
+    "memoryTip": "• CRM = khách hàng (sales/marketing/service).\n• ERP = tài nguyên & quy trình nội bộ (SX, kho, tiền, payroll…).",
+    "intent": "• J5c — True/False · phân biệt CRM vs ERP qua statement dài."
+  },
+  "files": {
+    "promptRule": "quiz/promt/PROMPT_GIAI_THICH_TRAC_NGHIEM.md#j5c",
+    "exampleMd": "quiz/promt/EXAMPLE_TRUE_FALSE_CRM.md"
+  }
+}

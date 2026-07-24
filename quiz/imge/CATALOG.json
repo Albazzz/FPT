@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T07:27:33.188Z",
+  "generatedAt": "2026-07-24T07:41:30.041Z",
   "note": "Enhanced screenshots in quiz/imge. Paths relative to quiz/.",
   "mapping": [
     {
@@ -63,8 +63,9 @@
       "path": "imge/8.png",
       "feId": 447,
       "fuexamNum": 39,
-      "label": "ABC analysis product group A",
-      "status": "attached"
+      "label": "ABC analysis product group A (official FE; ans B=2&5)",
+      "status": "attached",
+      "answerNote": "Official IPA FE H13/H18/H21: Class A = products 2 and 5 (not 1 and 2)"
     },
     {
       "file": "9.png",

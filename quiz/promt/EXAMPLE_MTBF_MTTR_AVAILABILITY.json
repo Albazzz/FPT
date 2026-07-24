@@ -1,0 +1,56 @@
+{
+  "rule": "J4b",
+  "title": "Nhiều thành phần — định nghĩa MTBF/MTTR rồi so availability",
+  "source": {
+    "subject": "fe",
+    "id": 442,
+    "task": "fuexam",
+    "num": 34,
+    "answer": "D"
+  },
+  "pattern": {
+    "when": "De/options co >=2 ky hieu trong mot cong thuc (MTBF+MTTR, series R1*R2, ...)",
+    "must": [
+      "Dinh nghia tung thanh phan (MTBF la gi, MTTR la gi)",
+      "Viet cong thuc lien ket",
+      "Moi option: bien doi bien -> A tang/giam/khong doi",
+      "optionsVi dich du VI, giu acronym; cam half-EN"
+    ]
+  },
+  "components": {
+    "Availability": "Ty le thoi gian he thong san sang dung",
+    "MTBF": "Mean Time Between Failures — thoi gian TB giua hai lan hong",
+    "MTTR": "Mean Time To Repair — thoi gian TB sua/khoi phuc",
+    "formula": "A = MTBF / (MTBF + MTTR)"
+  },
+  "question": "Which of the following helps improve availability?",
+  "options": {
+    "A": "Doubling both MTBF and MTTR",
+    "B": "Reducing MTBF to half and doubling MTTR",
+    "C": "Reducing both MTBF and MTTR to half",
+    "D": "Doubling MTBF and reducing MTTR to half"
+  },
+  "explanation": {
+    "questionVi": "Cái nào sau đây giúp cải thiện độ sẵn sàng (availability)?",
+    "optionsVi": {
+      "A": "Gấp đôi cả MTBF và MTTR",
+      "B": "Giảm MTBF còn một nửa và gấp đôi MTTR",
+      "C": "Giảm cả MTBF và MTTR còn một nửa",
+      "D": "Gấp đôi MTBF và giảm MTTR còn một nửa"
+    },
+    "answerDisplay": "D. Gấp đôi MTBF và giảm MTTR còn một nửa",
+    "concept": "• Availability (độ sẵn sàng): tỉ lệ thời gian hệ thống sẵn sàng dùng.\n• MTBF (Mean Time Between Failures): thời gian trung bình giữa hai lần hỏng — càng lớn càng ít hỏng.\n• MTTR (Mean Time To Repair): thời gian trung bình để sửa/khôi phục — càng nhỏ càng sửa nhanh.\n• Công thức: A = MTBF / (MTBF + MTTR).",
+    "whyCorrect": "• D: gấp đôi MTBF (ít hỏng hơn) và giảm MTTR còn nửa (sửa nhanh hơn) → A = 2m/(2m + t/2) > m/(m+t) → availability tăng.\n• Đó đúng hướng “improve availability”.",
+    "whyWrong": {
+      "A": "• Là gì? Gấp đôi cả MTBF và MTTR.\n• Dùng để làm gì? A = 2m/(2m+2t) = m/(m+t) — trùng A cũ.\n• Vì sao sai? Availability không cải thiện (không đổi).",
+      "B": "• Là gì? Giảm MTBF còn nửa và gấp đôi MTTR.\n• Dùng để làm gì? A = (m/2)/(m/2+2t) < m/(m+t).\n• Vì sao sai? Làm A giảm — trái improve availability.",
+      "C": "• Là gì? Giảm cả MTBF và MTTR còn một nửa.\n• Dùng để làm gì? A = (m/2)/((m/2)+(t/2)) = m/(m+t) — không đổi.\n• Vì sao sai? Không improve; chỉ co cùng tỉ lệ."
+    },
+    "memoryTip": "• A↑ ← MTBF↑ (ít hỏng) và MTTR↓ (sửa nhanh).\n• Gấp đôi / chia đôi cả hai → A đứng yên.",
+    "intent": "• J4b — availability: định nghĩa MTBF/MTTR + so option theo công thức."
+  },
+  "files": {
+    "promptRule": "quiz/promt/PROMPT_GIAI_THICH_TRAC_NGHIEM.md#j4b",
+    "exampleMd": "quiz/promt/EXAMPLE_MTBF_MTTR_AVAILABILITY.md"
+  }
+}

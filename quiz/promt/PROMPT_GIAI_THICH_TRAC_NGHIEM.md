@@ -10,6 +10,13 @@ node quiz/tools/audit_explains.mjs
 
 Xuất: `quiz/reports/EXPLAIN_AUDIT.md` · `EXPLAIN_AUDIT.json` · `EXPLAIN_AUDIT_FAILS.csv`
 
+**Ví dụ rút kinh nghiệm:**
+
+| File | Kiểu |
+|------|------|
+| `EXAMPLE_TRUE_FALSE_CRM.md` · `.json` | J5c True/False — fe #417 CRM↔ERP |
+| `EXAMPLE_MTBF_MTTR_AVAILABILITY.md` · `.json` | J4b nhiều thành phần — fe #442 availability |
+
 ## 0. Schema thành phần (mọi môn — map UI)
 
 | Field | UI / nhãn | Bắt buộc | Nội dung chuẩn |
@@ -265,6 +272,69 @@ Xuất: `quiz/reports/EXPLAIN_AUDIT.md` · `EXPLAIN_AUDIT.json` · `EXPLAIN_AUDI
 3. **Không** dùng stub kiểu “Bản dịch/diễn đạt phương án — đối chiếu định nghĩa” cho câu tính.  
 4. Option sai: chỉ ra **bước nào lệch** (vd. `×2×B+C` thay vì `×2+BC`).  
 
+#### J4b — Độ tin cậy / availability có **nhiều thành phần** (MTBF · MTTR · MTTF · series/parallel…)
+
+**Khi nào:** đề/options nhắc **≥ 2 ký hiệu** cùng công thức (MTBF+MTTR → availability; R₁·R₂ series; …), hoặc hỏi *improve availability*, *MTBF*, *MTTR*, *down time*.
+
+**Nguyên tắc lõi:** trước khi so option, **định nghĩa từng thành phần** + **công thức liên kết**. Học sinh không được giả định đã thuộc viết tắt.
+
+| Thành phần | Bắt buộc viết |
+|------------|----------------|
+| `concept` | (1) **Availability / reliability là gì** (1 dòng); (2) **Từng viết tắt:** MTBF = …, MTTR = … (và MTTF/MTBF nếu đề dùng); (3) **Công thức** `A = MTBF / (MTBF + MTTR)` (hoặc R series/parallel) |
+| `whyCorrect` | Thay đổi từng biến trong option đúng → A tăng/giảm/**không đổi** (có thể gắn số giả m=…, t=… hoặc tỉ lệ ký hiệu) |
+| `whyWrong[L]` | **Là gì?** diễn option bằng MTBF/MTTR ↑↓; **Dùng?** cắm vào công thức; **Vì sao sai?** A↓ hoặc A không đổi / không “improve” |
+| `optionsVi` | **Dịch đủ tiếng Việt** (gấp đôi / giảm còn một nửa…) — **giữ** MTBF, MTTR; **cấm** half-EN: `helps cải thiện`, `Doubling both MTBF và…` |
+| `memoryTip` | A↑ ← MTBF↑ và MTTR↓ · double cả hai → A không đổi |
+
+**Bảng thành phần chuẩn (học thuộc khi viết):**
+
+| Ký hiệu | Tên | Ý nghĩa ngắn |
+|---------|-----|----------------|
+| **MTBF** | Mean Time Between Failures | Thời gian trung bình **giữa hai lần hỏng** (càng lớn = càng ít hỏng / bền hơn) |
+| **MTTR** | Mean Time To Repair | Thời gian trung bình **sửa/khôi phục** (càng nhỏ = sửa càng nhanh) |
+| **MTTF** | Mean Time To Failure | Tương tự “sống đến khi hỏng” (thiết bị non-repairable); đề FE hay gộp họ MTBF |
+| **Availability A** | Độ sẵn sàng | Tỉ lệ thời gian hệ **sẵn sàng dùng** ≈ `MTBF / (MTBF + MTTR)` |
+
+**Hệ quả so option (availability):**
+
+| Thay đổi | A = m/(m+t) |
+|----------|-------------|
+| MTBF×2 và MTTR×2 | A **không đổi** |
+| MTBF÷2 và MTTR×2 | A **giảm** |
+| MTBF÷2 và MTTR÷2 | A **không đổi** |
+| MTBF×2 và MTTR÷2 | A **tăng** ← improve |
+
+##### ❌ Anti-pattern (đã gặp fe #442)
+
+```
+questionVi:  Cái nào sau đây helps cải thiện độ sẵn sàng?     ← half-EN
+optionsVi:   Doubling both MTBF và MTTR                        ← half-EN
+concept:     A ≈ MTBF/(MTBF+MTTR)…                              ← thiếu “MTBF/MTTR là gì”
+whyWrong[A]: Double MTBF & MTTR — A không đổi.                 ← OK công thức nhưng chưa định nghĩa thành phần
+```
+
+##### ✅ Mẫu đạt — fe #442 (*Which helps improve availability?*)
+
+| Field | Nội dung chuẩn |
+|-------|----------------|
+| **ans** | D. Doubling MTBF and reducing MTTR to half |
+| `concept` | **Availability** = tỉ lệ thời gian sẵn sàng. **MTBF** = mean time between failures (tb giữa 2 lần hỏng). **MTTR** = mean time to repair (tb thời gian sửa). `A = MTBF/(MTBF+MTTR)`. |
+| `whyCorrect` | D: MTBF↑ + MTTR↓ → tử số tăng, mẫu số tăng ít hơn (hoặc giảm phần sửa) → **A tăng**. |
+| `whyWrong[A]` | Gấp đôi **cả** MTBF và MTTR → `2m/(2m+2t)=m/(m+t)` → A **không đổi**. |
+| `whyWrong[B]` | MTBF↓ + MTTR↑ → hỏng nhiều hơn, sửa lâu hơn → A **giảm**. |
+| `whyWrong[C]` | Chia đôi cả hai → cùng tỉ lệ → A **không đổi** (không “improve”). |
+| `memoryTip` | A↑ = sống lâu hơn (MTBF↑) **và** sửa nhanh hơn (MTTR↓). |
+
+**File example:** `quiz/promt/EXAMPLE_MTBF_MTTR_AVAILABILITY.md`  
+**Data:** fe id `442` (fuexam num 34)
+
+**Checklist J4b trước khi chốt:**
+
+1. `concept` có **định nghĩa MTBF + MTTR** (hoặc mọi ký hiệu đề dùng), không chỉ viết công thức?
+2. `whyCorrect` / `whyWrong` có **cắm option vào công thức** (↑↓ / không đổi)?
+3. `questionVi` + `optionsVi` **Việt đầy đủ**, giữ acronym?
+4. Không half-EN (`helps…`, `Doubling… và`)?
+
 #### J5 — Quản lý dự án
 
 | Thành phần | Viết gì |
@@ -333,6 +403,62 @@ memoryTip:   (thiếu)
 
 **Data đã chốt mẫu:** fe ids `237, 238, 418, 432, 444, 447, 511, 534, 549, 550, 695, 704`  
 (`node quiz/tools/patch_fe_qc_tools.mjs`)
+
+#### J5c — True / False (phát biểu đúng–sai về một khái niệm)
+
+**Khi nào:** stem dạng *The following statement is true/false about X?*, *True or False*, option chỉ **True/False** (hoặc Đúng/Sai); thường là **đoạn mô tả dài** gán thuộc tính cho X.
+
+**Nguyên tắc lõi (khác MCQ thường):**
+
+| Đáp án đúng | Cách giải thích |
+|-------------|-----------------|
+| **True** (phát biểu **đúng**) | Viết **như bình thường**: `concept` = X là gì; `whyCorrect` = khẳng định từng ý chính của statement **khớp** bản chất X (có thể tóm 2–3 mệnh đề then chốt). |
+| **False** (phát biểu **sai**) | **Không** chỉ nói “statement sai”. Phải **chỉ ra chỗ sai trong đoạn**: mệnh đề/cụm nào gán nhầm; đúng ra thuộc khái niệm nào (thường cặp CRM↔ERP, compiler↔interpreter…); vì sao False. |
+
+**Khung field**
+
+| Thành phần | True (statement đúng) | False (statement sai) |
+|------------|----------------------|------------------------|
+| `concept` | Định nghĩa **X đúng** (ngắn, chuẩn) | Định nghĩa **X đúng** + 1 dòng **phân biệt** với khái niệm bị nhầm (nếu có) |
+| `whyCorrect` | Vì sao **toàn bộ / phần chính** statement khớp X | (1) **Chỗ sai:** trích/ý “…” gán cho X; (2) **Vì sao sai:** X thực ra…; (3) Kết luận → **False** |
+| `whyWrong` | Option False: phủ nhận statement đúng — vì sao không chọn | Option True: chấp nhận statement — bỏ sót chỗ gán nhầm |
+| `memoryTip` | 1 câu neo X | Cặp đối chiếu (vd. CRM=khách · ERP=nội bộ tài nguyên) |
+
+##### Kinh nghiệm rút ra (bắt buộc khi viết T/F)
+
+1. **Đọc statement như checklist** — gạch các mệnh đề: “hỗ trợ internal process”, “track cash/raw materials”, “production capacity”…  
+2. **Đáp án False** → mỗi mệnh đề gán nhầm phải **chỉ ra** (không gộp mơ hồ “toàn đoạn sai”).  
+3. **Đáp án True** → không cần “mổ chỗ sai”; khẳng định vì sao đúng là đủ (tránh bịa lỗi không có).  
+4. Cấm `whyCorrect` chỉ: “Vì đáp án là False/True.”  
+5. UI 2 option: `whyWrong` **một** option còn lại vẫn 3 dòng ngắn (Là gì? / Ý nghĩa chọn? / Vì sao sai?).
+
+##### ❌ Anti-pattern
+
+```
+whyCorrect: • Đáp án A. False.
+whyWrong[B]: • True — không khớp đáp án đúng.
+```
+
+##### ✅ Mẫu đạt — fe #417 CRM (statement mô tả ERP gán nhầm cho CRM → False)
+
+| Field | Nội dung chuẩn |
+|-------|----------------|
+| **Đề** | True/false about CRM? + đoạn dài (internal processes, production, inventory, cash, raw materials, payroll…) |
+| **ans** | A. False |
+| `concept` | CRM = quản lý **quan hệ khách hàng** (sales / marketing / service). ERP mới là suite nội bộ (sản xuất, tồn kho, tài nguyên, payroll…). |
+| `whyCorrect` | **Chỗ sai:** gán CRM = “basic **internal** business”, production/inventory, track cash–raw materials–capacity, payroll… → đó là mô tả **ERP**. **CRM** = customer-facing, không phải back-office tài nguyên. → **False**. |
+| `whyWrong[B]` | True = chấp nhận cả đoạn; bỏ sót chỗ nhầm CRM↔ERP. |
+| `memoryTip` | CRM = khách hàng · ERP = tài nguyên / quy trình nội bộ. |
+
+**File example đầy đủ:** `quiz/promt/EXAMPLE_TRUE_FALSE_CRM.md`  
+**Data:** fe id `417` (fuexam num 9)
+
+**Checklist J5c trước khi chốt:**
+
+1. Đáp án True hay False đã quyết định **nhánh giải thích** đúng chưa?
+2. Nếu False: đã **chỉ ra ≥ 1 cụm/mệnh đề sai** trong statement chưa?
+3. Có neo cặp khái niệm (CRM/ERP…) khi bị tráo chưa?
+4. Không để whyCorrect = “vì đáp án là A”?
 
 #### J6–J8 — Compiler, security, SE
 
@@ -560,7 +686,9 @@ memoryTip   = kanji gợi nghĩa hoặc cặp アナログ↔デジタル
 | Multi-select | answerDisplay đủ chữ; why từng chữ |
 | 専門用語 / dịch | optionsVi JP+VI; map từ |
 | 正しい/誤 | chỉ ra mệnh đề con đúng/sai |
+| **True/False · statement về X** | **J5c:** True → giải thích khớp X; **False → chỉ chỗ sai trong đoạn + vì sao** (vd. CRM gán nhầm mô tả ERP) |
 | Check digit / MTBF | công thức trong concept/tip; option số = kết quả bước tính |
+| **Availability · MTBF+MTTR** (nhiều thành phần) | **J4b:** định nghĩa **từng** MTBF/MTTR + `A=MTBF/(MTBF+MTTR)` rồi so option ↑↓ |
 
 ---
 
@@ -570,11 +698,15 @@ memoryTip   = kanji gợi nghĩa hoặc cặp アナログ↔デジタル
 
 ```
 Bạn là giáo viên ôn PRM (Flutter) hoặc JFE (CNTT). 
-1) Phân loại kiểu hỏi (L1–L9 hoặc J1–J8 ở PROMPT_GIAI_THICH_TRAC_NGHIEM.md).
+1) Phân loại kiểu hỏi (L1–L9 hoặc J1–J8 / J5b / J5c ở PROMPT_GIAI_THICH_TRAC_NGHIEM.md).
 2) Điền đủ: questionVi, optionsVi, answerDisplay, concept, whyCorrect, whyWrong[L], memoryTip.
 3) whyWrong 3 dòng, đúng domain từng option; cấm filler đã liệt kê.
 4) Layout: main axis; Async: Future≠Stream; OS: Waiting≠Ready; Network: đúng việc giao thức.
-5) Tự chấm ≥ 8.5/10 trước khi trả kết quả.
+5) True/False (J5c): nếu đáp án True → giải thích statement khớp khái niệm;
+   nếu False → chỉ ra mệnh đề/cụm sai trong đoạn + vì sao (không chỉ “vì đáp án False”).
+6) Nhiều thành phần (J4b: MTBF/MTTR/availability…): định nghĩa TỪNG ký hiệu + công thức,
+   rồi so option ↑/↓/không đổi; dịch VI đủ, cấm half-EN.
+7) Tự chấm ≥ 8.5/10 trước khi trả kết quả.
 ```
 
 ### 3B. MLN
