@@ -13,13 +13,13 @@ const dataDir = path.join(__dirname, "../data");
 const outDir = path.join(__dirname, "../reports");
 
 const BANNED =
-  /khớp kiến thức|theo giáo trình|không khớp bản chất|cần so khớp|đúng vì là|đáp án chuẩn|không trả lời đúng trọng tâm|hãy so sánh trực tiếp|trong ngữ cảnh câu hỏi|phương án nhiễu|xem giải thích bên dưới|bản chất đáp án liên quan|tránh chọn theo từ quen|so sánh bản chất từng phương án|câu hỏi kỹ thuật:|câu hỏi chọn phương án đúng|không khớp trọng tâm đề|nội dung phương án|chỉ đúng nếu khớp đúng khía cạnh|chỉ chọn nếu khớp|multiple async events over time|thuộc miền Flutter|thuộc miền FE|miền Flutter\/Dart|Phương án «|Khái niệm kinh tế–chính trị «|async\/UI\/state\/toolchain|hiểu theo đúng vai trò|hiểu theo nghĩa kỹ thuật|Câu hỏi tiếng Nhật|đáp án theo khái niệm CNTT/i;
+  /khớp kiến thức|theo giáo trình|không khớp bản chất|cần so khớp|đúng vì là|đáp án chuẩn|không trả lời đúng trọng tâm|hãy so sánh trực tiếp|trong ngữ cảnh câu hỏi|phương án nhiễu|xem giải thích bên dưới|bản chất đáp án liên quan|tránh chọn theo từ quen|so sánh bản chất từng phương án|câu hỏi kỹ thuật:|câu hỏi chọn phương án đúng|không khớp trọng tâm đề|nội dung phương án|chỉ đúng nếu khớp đúng khía cạnh|chỉ chọn nếu khớp|multiple async events over time|thuộc miền Flutter|thuộc miền FE|miền Flutter\/Dart|Phương án «|Khái niệm kinh tế–chính trị «|async\/UI\/state\/toolchain|hiểu theo đúng vai trò|hiểu theo nghĩa kỹ thuật|Câu hỏi tiếng Nhật|đáp án theo khái niệm CNTT|khái niệm\/cơ chế trong miền đề|cần đối chiếu với đề|So bản chất với đáp án đúng|không thỏa:\s*khớp đáp án/i;
 
 const FILLER =
-  /thuộc miền|Phương án «|Chỉ chọn nếu|Chỉ đúng khi khớp|async\/UI\/state|hiểu theo đúng|hiểu theo nghĩa kỹ thuật|không khớp trọng tâm đề bằng đáp án đúng|Trong khi đề cần:/i;
+  /thuộc miền|Phương án «|Chỉ chọn nếu|Chỉ đúng khi khớp|async\/UI\/state|hiểu theo đúng|hiểu theo nghĩa kỹ thuật|không khớp trọng tâm đề bằng đáp án đúng|Trong khi đề cần:|Có vai trò riêng;\s*đối chiếu với điều kiện stem|khái niệm\/cơ chế trong miền đề \(OS/i;
 
 const GENERIC_CONCEPT =
-  /Cách xếp vị trí\/kích thước widget con|Cơ chế Flutter\/Dart «|Cụm «[^»]+» mang một nghĩa riêng|Một đặc trưng\/khái niệm trong hệ phạm trù; đối chiếu đúng khía cạnh đề hỏi|Đối chiếu đúng cơ chế\/phạm trù với trọng tâm đề/i;
+  /Cách xếp vị trí\/kích thước widget con|Cơ chế Flutter\/Dart «|Cụm «[^»]+» mang một nghĩa riêng|Một đặc trưng\/khái niệm trong hệ phạm trù; đối chiếu đúng khía cạnh đề hỏi|Đối chiếu đúng cơ chế\/phạm trù với trọng tâm đề|khái niệm\/cơ chế trong miền đề|Cụm «[^»]+» cần đối chiếu với đề/i;
 
 function hasVi(s) {
   return /[àáạảãâăèéêìíòóôơùúưỳýđ]/i.test(s || "");
@@ -183,6 +183,32 @@ function auditQuestion(subject, q) {
       flags.push("stream_concept_bleed");
   }
 
+  // Placeholder shell left by bulk explain generators (all subjects)
+  if (/khái niệm\/cơ chế trong miền đề/i.test(blob)) flags.push("domain_placeholder_shell");
+  if (/Cụm «[^»]+» cần đối chiếu với đề/i.test(blob)) flags.push("cum_can_doi_chieu");
+  if (/Có vai trò riêng;\s*đối chiếu với điều kiện stem/i.test(blob))
+    flags.push("whyWrong_role_stub");
+  if (/không thỏa:\s*khớp đáp án/i.test(blob)) flags.push("whyWrong_khop_dap_an_tail");
+
+  // QC tools: must distinguish purpose, not echo chart name
+  if (
+    subject === "fe" &&
+    /pareto chart|rank issues or problems in descending|xếp.*tần suất giảm dần/i.test(
+      (q.question || "") + " " + (e.questionVi || "")
+    )
+  ) {
+    if (/khái niệm\/cơ chế|cần đối chiếu với đề/i.test(String(e.concept || "") + String(e.whyCorrect || "")))
+      flags.push("qc_pareto_placeholder");
+    if (
+      e.whyWrong &&
+      !/ishikawa|xương cá|nguyên nhân|control limit|tương quan|scatter|tần suất/i.test(
+        JSON.stringify(e.whyWrong)
+      )
+    )
+      flags.push("qc_tools_no_contrast");
+    if (!e.memoryTip) flags.push("soft_missing_memoryTip");
+  }
+
   if (subject === "mln") {
     if (/không khớp trọng tâm đề bằng đáp án đúng/i.test(blob)) flags.push("mln_tail_filler");
     if (corrects.size > 1 && e.whyCorrect && !/nhiều đáp án|chọn nhiều/i.test(String(e.whyCorrect)))
@@ -255,7 +281,7 @@ function hasEnWordHeavy(s) {
 function severity(flags) {
   if (
     flags.some((f) =>
-      /banned|filler|missing_concept|missing_whyWrong$|same_whyWrong|mln_tail|jit_stub|expanded_generic|stream_concept|missing_whyCorrect/.test(
+      /banned|filler|missing_concept|missing_whyWrong$|same_whyWrong|mln_tail|jit_stub|expanded_generic|stream_concept|missing_whyCorrect|domain_placeholder|cum_can_doi_chieu|whyWrong_role_stub|whyWrong_khop_dap_an|qc_pareto_placeholder|qc_tools_no_contrast/.test(
         f
       )
     )
@@ -293,6 +319,12 @@ function flagLabel(f) {
     concept_echo_answer: "Concept chỉ echo đáp án",
     whyCorrect_too_short: "whyCorrect quá ngắn",
     soft_missing_memoryTip: "(soft) thiếu memoryTip",
+    domain_placeholder_shell: "Placeholder «khái niệm/cơ chế trong miền đề»",
+    cum_can_doi_chieu: "Stub «Cụm … cần đối chiếu với đề»",
+    whyWrong_role_stub: "WhyWrong stub «Có vai trò riêng; đối chiếu…»",
+    whyWrong_khop_dap_an_tail: "WhyWrong đuôi «không thỏa: khớp đáp án»",
+    qc_pareto_placeholder: "QC/Pareto còn placeholder concept/why",
+    qc_tools_no_contrast: "QC tools whyWrong thiếu contrast tool",
   };
   if (map[f]) return map[f];
   if (f.startsWith("half_translated_opt_")) return "Dịch option nửa vời " + f.slice(-1);

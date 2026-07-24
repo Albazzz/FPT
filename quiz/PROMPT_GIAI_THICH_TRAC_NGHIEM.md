@@ -40,7 +40,10 @@ Xuất: `quiz/reports/EXPLAIN_AUDIT.md` · `EXPLAIN_AUDIT.json` · `EXPLAIN_AUDI
 `không khớp trọng tâm đề bằng đáp án đúng (…)` · stub `Câu hỏi tiếng Nhật…` ·  
 1 câu whyWrong dán cho cả B/C/D · concept “layout nói chung” cho Expanded ·  
 **`concept`/`whyCorrect` chỉ echo đáp án** · **whyWrong template giống hệt mọi option** ·  
-**«Cơ chế Flutter/Dart liên quan «…»»** · **«Phạm trù/khái niệm «Anh» trong KTCT…»** cho fact.
+**«Cơ chế Flutter/Dart liên quan «…»»** · **«Phạm trù/khái niệm «Anh» trong KTCT…»** cho fact ·  
+**«… — khái niệm/cơ chế trong miền đề (OS/mạng/DB/PM/…)»** ·  
+**«Cụm «…» cần đối chiếu với đề»** · **«So bản chất với đáp án đúng; loại nếu…»** ·  
+**«Có vai trò riêng; đối chiếu với điều kiện stem»** · **«không thỏa: khớp đáp án «…»»**.
 
 ### Rubric /10
 
@@ -270,6 +273,66 @@ Xuất: `quiz/reports/EXPLAIN_AUDIT.md` · `EXPLAIN_AUDIT.json` · `EXPLAIN_AUDI
 | `whyCorrect` | Đúng mục tiêu quản trị đề hỏi |
 | `whyWrong` | Đúng thuật ngữ PM nhưng sai giai đoạn/mục đích |
 | `memoryTip` | “Công cụ X dùng khi Y” |
+
+#### J5b — QC tools / biểu đồ chất lượng (Pareto · Ishikawa · Control · Scatter · ABC · Gantt)
+
+**Khi nào:** đề hỏi *which chart*, *used to rank by frequency*, *Ishikawa*, *control chart*, *ABC analysis*, *Gantt mainly shows*…
+
+| Thành phần | Viết gì |
+|------------|---------|
+| `concept` | **Định nghĩa công dụng thật** của đúng tool (không dán đuôi “khái niệm/cơ chế trong miền đề”) |
+| `whyCorrect` | Nối **cụm việc đề hỏi** (xếp tần suất / tìm nguyên nhân / theo dõi limit / % tích lũy…) ↔ đúng tool |
+| `whyWrong` | Mỗi option = **tool khác**: Là gì? + Dùng để làm gì? + Vì sao **sai việc đề hỏi** (không “không khớp đáp án A”) |
+| `memoryTip` | Bảng 1 dòng: Pareto≠Fishbone≠Control≠Scatter (± ABC/Gantt) |
+
+**Bảng phân biệt bắt buộc (học thuộc khi viết whyWrong):**
+
+| Tool | Việc chính |
+|------|------------|
+| **Pareto chart** | Xếp vấn đề/nguyên nhân theo **tần suất hoặc impact ↓** → vital few (80/20) |
+| **Ishikawa / cause-effect** | **Nhóm nguyên nhân** có thể gây ra một kết quả (xương cá) — *không* xếp tần suất |
+| **Control chart** | Theo dõi **biến động quy trình theo thời gian** so UCL/LCL |
+| **Scatter** | **Tương quan** hai biến |
+| **ABC analysis** | Phân lớp tồn kho A/B/C theo **giá trị đóng góp** (cùng họ Pareto) |
+| **Gantt** | **Lịch task × thời gian** (PM), không phải QC 7 tools |
+
+##### ❌ Anti-pattern (đã gặp fe #432 Pareto — **cấm lặp**)
+
+```
+concept:     • Pareto chart — khái niệm/cơ chế trong miền đề (OS/mạng/DB/PM/…)
+whyCorrect:  • Cụm «Pareto chart» cần đối chiếu với đề.
+             • So bản chất với đáp án đúng; loại nếu sai đối tượng…
+whyWrong[B]: • Là gì? Cause-and-effect — khái niệm/cơ chế trong miền đề…
+             • Dùng để làm gì? Có vai trò riêng; đối chiếu với điều kiện stem.
+             • Vì sao sai? «Cause-and-effect» (B) không thỏa: khớp đáp án «Pareto chart».
+memoryTip:   (thiếu)
+```
+
+**Vì sao fail rubric:** concept = placeholder; whyCorrect = echo tên đáp án; whyWrong = template giống nhau, **không dạy** Fishbone/Control/Scatter khác Pareto chỗ nào.
+
+##### ✅ Mẫu đạt (≥ 9/10) — fe #432 (sau patch)
+
+| Field | Nội dung chuẩn |
+|-------|----------------|
+| **Đề** | Chart dùng trong QC để **rank issues theo frequency giảm dần**? |
+| **ans** | A. Pareto chart |
+| `concept` | Pareto chart: cột (+ đường lũy tích) xếp vấn đề theo tần suất/tác động ↓ → vital few (80/20). |
+| `whyCorrect` | Đề hỏi đúng việc **xếp theo tần suất giảm dần** → Pareto làm việc đó; tool kia mục đích khác. |
+| `whyWrong[B]` | Ishikawa = nhóm nguyên nhân gốc — **không** xếp hạng tần suất. |
+| `whyWrong[C]` | Control chart = biến động theo thời gian + limit — **không** rank list vấn đề. |
+| `whyWrong[D]` | Scatter = tương quan 2 biến — **không** rank frequency. |
+| `memoryTip` | Pareto=xếp tần suất · Fishbone=tìm nguyên nhân · Control=theo dõi quy trình · Scatter=tương quan. |
+
+**Checklist J5b trước khi chốt:**
+
+1. `concept` có **định nghĩa/công dụng**, không có chuỗi `khái niệm/cơ chế trong miền đề`?
+2. `whyCorrect` nói **việc đề hỏi** + vì sao tool khớp — không chỉ lặp tên option?
+3. Mỗi `whyWrong` nêu **đúng việc của distractor** rồi contrast với stem?
+4. Có `memoryTip` cặp đối chiếu tool gần nghĩa?
+5. Option dịch sạch (Cause-and-effect → nguyên nhân–kết quả / Ishikawa; không half-EN)?
+
+**Data đã chốt mẫu:** fe ids `237, 238, 418, 432, 444, 447, 511, 534, 549, 550, 695, 704`  
+(`node quiz/tools/patch_fe_qc_tools.mjs`)
 
 #### J6–J8 — Compiler, security, SE
 

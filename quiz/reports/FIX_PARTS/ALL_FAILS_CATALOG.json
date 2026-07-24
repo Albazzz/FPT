@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-07-24T01:55:49.704Z",
+  "total": 1652,
+  "bySubject": {
+    "prm": 0,
+    "fe": 699,
+    "mln": 553,
+    "jit": 400
+  },
+  "parts": [
+    {
+      "key": "part1_fe_core",
+      "count": 163,
+      "title": "Phần 1/5 — FE lõi đề (test · datajfe · fuexam · albazzz)"
+    },
+    {
+      "key": "part2_fe_bank300",
+      "count": 294,
+      "title": "Phần 2/5 — FE bank300 (300 câu rút gọn)"
+    },
+    {
+      "key": "part3_fe_books",
+      "count": 242,
+      "title": "Phần 3/5 — FE books (bổ sung)"
+    },
+    {
+      "key": "part4_mln",
+      "count": 553,
+      "title": "Phần 4/5 — MLN (toàn bank lỗi placeholder)"
+    },
+    {
+      "key": "part5_jit",
+      "count": 400,
+      "title": "Phần 5/5 — JIT401 (quiz · sample · pt · slides · fuexam)"
+    }
+  ]
+}

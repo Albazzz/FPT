@@ -1,0 +1,401 @@
+n	subject	id	task	num	answer	flags	question_short
+1	jit	293	fuexam	6	A	khop_dap_an	データベースの表現法には「データを親、子、孫のような階層構造に並べ、最上位の親からたどることによって検索する表現法です。」とかいてあるものはどんな表現ですか。
+2	jit	294	fuexam	13	A	domain_shell|vai_tro_stub	【専門用語】次のベトナム語の用語をベトナム語に直しなさい。 分散処理システム
+3	jit	295	fuexam	41	A	khop_dap_an	ロングテールの考え方を活用したインターネットにおけるビジネスの説明として、適切なものはどれか
+4	jit	296	fuexam	42	A	khop_dap_an	日本語でのコードについて正しくないものをえらんでください。
+5	jit	297	fuexam	43	A	khop_dap_an	コンピューターが逢(あ)える事故は何ですか。
+6	jit	299	fuexam	45	A	khop_dap_an	OSの機能は何ですか。
+7	jit	301	fuexam	47	A	khop_dap_an	「取引プロセスとは、( ) 以外にも商品案内や配送などの処理、さらには商品開発まで含めます。」
+8	jit	302	fuexam	48	A	khop_dap_an	メール利用の注意について正しくないものはどれですか。
+9	jit	303	fuexam	49	A	khop_dap_an	映画では1秒に何回の書き換えを行っていますか。
+10	jit	304	fuexam	50	A	khop_dap_an	「射影の結果を並べ替えるには ( ) という単語を使います。」
+11	jit	306	fuexam	52	A	khop_dap_an	「小さいものから順に または逆に大きいものから順にデータを並べ替えること」は何を指しますか。
+12	jit	307	fuexam	53	A	khop_dap_an	クッキー(cookie)に関する記述a~cのうち、適切なものだけをすべて挙げたものはどれか。
+13	jit	309	fuexam	55	A	khop_dap_an	フォルダとは何ですか
+14	jit	310	fuexam	56	A	khop_dap_an	「電子機器には、コンピュータ、携帯電話、( ) を始めとして、ポータブルオーディオやゲーム機などの家電製品など多くのものがあり、ネットワークは成長し続けています。」
+15	jit	312	fuexam	58	A	khop_dap_an	出力用ハードウェアは何ですか。
+16	jit	313	fuexam	59	A	khop_dap_an	新たなプログラムを作成するときに、効率的な内部処理とともに考慮しなければならない重要な要素は何ですか。
+17	jit	314	fuexam	60	A	khop_dap_an	動画像情報圧縮では、何がよく用いられますか。
+18	jit	184	pt	1	B	khop_dap_an	動画像では、1つ前の画像との違っている部分だけを記録して圧縮率を高める方法を何と言いますか。
+19	jit	185	pt	2	A	khop_dap_an	「#」の記号はどのように読みますか。
+20	jit	186	pt	3	B	domain_shell|vai_tro_stub|khop_dap_an	JISコードは、日本工業規格 JIS が定めたもので、（  ）bitの数字を（  ）桁ずつ区切って表します。
+21	jit	187	pt	4	A	khop_dap_an	パリティビットには、どのような種類がありますか。
+22	jit	189	pt	6	A	domain_shell|vai_tro_stub|khop_dap_an	2進数10011と2進数101を乗算した結果の2進数はどれか。
+23	jit	190	pt	7	B	khop_dap_an	CDでは、傷や手の脂、埃などによってデータが正しく読み取れない場合があります。このような誤りを検出・訂正するための仕組みを何と言いますか。
+24	jit	191	pt	8	B	khop_dap_an	通信回線の伝送誤りに対処するパリティチェック方式（垂直パリティ）の記述として、適切なものはどれか。
+25	jit	192	pt	9	A	khop_dap_an	「giai thừa」は日本語の漢字でどのように読みますか。
+26	jit	193	pt	10	D	khop_dap_an	「論理和」は何ですか。
+27	jit	196	pt	13	A	khop_dap_an	改行が何番のコードにあたるかなど、画面に直接表示できない記号は何と呼ばれますか。
+28	jit	197	pt	14	D	domain_shell|vai_tro_stub|khop_dap_an	世界の主要な言語で使われている文字を統一的に表す文字コードはどれか。
+29	jit	198	pt	15	C	khop_dap_an	マウスやキーボードの操作方法、ウィンドウの見え方などを決めるものを何と言いますか。
+30	jit	201	pt	18	A	domain_shell|vai_tro_stub|khop_dap_an	「変調」は英語で何ですか。
+31	jit	202	pt	19	C	domain_shell|vai_tro_stub|khop_dap_an	映像データや音声データの圧縮方式として代表的なものはどれか。
+32	jit	203	pt	20	B	khop_dap_an	ネットワークの形態について、中心に集線装置を置き複数のコンピュータを接続する形態はどれか。
+33	jit	205	pt	22	C	khop_dap_an	一般に100 Kbps〜1 Mbps以上の通信速度を何と言いますか。
+34	jit	206	pt	23	B	domain_shell|vai_tro_stub|khop_dap_an	プリンタの解像度をドット数で表す単位は何といいますか。
+35	jit	207	pt	24	C	khop_dap_an	情報量の（  ）単位のことをビット(bit)といいます。
+36	jit	208	pt	25	C	domain_shell|vai_tro_stub|khop_dap_an	A〜Zの26種類の文字を表現するには最低何ビット必要か。
+37	jit	209	pt	26	B	khop_dap_an	ある音をコンピュータのファイルに記録するとき、符号化ビット数（量子化ビット数）を大きくするとどうなるか。
+38	jit	210	pt	27	A	khop_dap_an	（  ）とは、数値を扱う際に「基となる数」のことである。
+39	jit	211	pt	28	D	domain_shell|vai_tro_stub|khop_dap_an	「プロキシサーバ」はベトナム語で何と言いますか。
+40	jit	212	pt	29	B	domain_shell|vai_tro_stub|khop_dap_an	「CRC」は英語でなんですか。
+41	jit	213	pt	30	D	domain_shell|vai_tro_stub|khop_dap_an	電源が切れたとき、データが消えてしまうものは何ですか。
+42	jit	215	pt	32	C	khop_dap_an	見かけ上の記憶容量を実際のメモリ容量より大きくし、大きなメモリ空間を確保することを何と言いますか。
+43	jit	216	pt	33	A	khop_dap_an	ぎざぎざの少ないきれいな画像を得るには何を増やすとよいか。
+44	jit	217	pt	34	A	domain_shell|vai_tro_stub|khop_dap_an	10進数のマイナス5を、2の補数表現で8ビットの2進数で表すとどうなるか。
+45	jit	218	pt	35	C	khop_dap_an	音声を圧縮する際によく使われる、波を正弦波に分解する変換は何ですか。
+46	jit	219	pt	36	B	domain_shell|vai_tro_stub|khop_dap_an	2進数100001を3倍したものはどれか。
+47	jit	220	pt	37	B	khop_dap_an	装置Aと装置Bが直列につながっているシステムを何と言いますか。
+48	jit	221	pt	38	B	khop_dap_an	装置Aと装置Bが並列につながっているシステムを何と言いますか。
+49	jit	222	pt	39	D	domain_shell|vai_tro_stub|khop_dap_an	イラストなどに使われる、最大表示色が256色の静止画圧縮形式はどれか。
+50	jit	223	pt	40	B	khop_dap_an	波の高さの最大値をいくつの段階で表すかを何と言いますか。
+51	jit	224	pt	41	C	domain_shell|vai_tro_stub|khop_dap_an	2バイトで1文字を表すとき、何種類の文字まで表せるか。
+52	jit	225	pt	42	A	domain_shell|vai_tro_stub|khop_dap_an	10進数155を2進数で表したものはどれか。
+53	jit	226	pt	43	A	domain_shell|vai_tro_stub|khop_dap_an	2進数1.111を10進数で表現したものはどれか。
+54	jit	227	pt	44	C	domain_shell|vai_tro_stub|khop_dap_an	MIDI命令のデータ段階（取りうる値の数）として適切なものはどれか。
+55	jit	228	pt	45	C	khop_dap_an	「小文字」はどのように読みますか。ベトナム語で何ですか。
+56	jit	230	pt	47	D	khop_dap_an	データの（  ）と（  ）の対応を決めているのが文字コードです。
+57	jit	232	pt	49	C	domain_shell|vai_tro_stub	圧縮・解凍ソフトでファイルを圧縮したとき、圧縮方式によって付けられる拡張子として正しいものはどれですか。
+58	jit	233	pt	50	C	domain_shell|vai_tro_stub|khop_dap_an	動画像では、静止画圧縮と差分記録を組み合わせて圧縮率を高めた形式としてよく用いられるものは何ですか。
+59	jit	234	pt	51	B	khop_dap_an	「sóng hình sin」は日本語の漢字でどのように書きますか。どのように読みますか。
+60	jit	235	pt	52	A	domain_shell|vai_tro_stub|khop_dap_an	ネットワークのデータ伝送速度を表す単位はどれか。
+61	jit	236	pt	53	A	khop_dap_an	「帯域幅」はどのように読みますか。ベトナム語で何ですか。
+62	jit	237	pt	54	D	domain_shell|vai_tro_stub|khop_dap_an	「マス目」はベトナム語で何ですか。
+63	jit	238	pt	55	A	khop_dap_an	「PLC」はベトナム語で何ですか。
+64	jit	239	pt	56	A	khop_dap_an	個人のパソコンをねらった（  ）としてウイルスが代表的です。
+65	jit	240	pt	57	B	khop_dap_an	ウィルスに感染するのを避けるために、何をしますか。
+66	jit	241	pt	58	B	khop_dap_an	国際標準の携帯電話で利用できるアプリケーションを決定するのが何と呼ぶソフトウェアですか。
+67	jit	242	pt	59	C	khop_dap_an	「周波数帯」はどのように読みますか。ベトナム語で何ですか。
+68	jit	243	pt	60	A	khop_dap_an	LSIは日本語で何ですか。
+69	jit	244	pt	61	A	khop_dap_an	A3サイズ（29.7cm×42.0cm）を350 dpiで印刷する場合の画素数の計算で使う関係はどれか。
+70	jit	245	pt	62	B	khop_dap_an	「số nguyên tố」は日本語で何ですか。
+71	jit	246	pt	63	D	domain_shell|vai_tro_stub|khop_dap_an	「サイマル放送」はベトナム語で何ですか。
+72	jit	248	pt	65	A	domain_shell|vai_tro_stub|khop_dap_an	次の説明する文書は ただしですか。（Phần thuyết minh về từ vựng được cho là đúng hay sai?） 認証とは公開鍵方式と秘密鍵方式により暗号化した状態で情報通信を行うこと。
+73	jit	249	pt	66	A	khop_dap_an	OSIのセッション層（第5層）の主な役割として、最も適切なものはどれですか。
+74	jit	251	pt	68	A	domain_shell|vai_tro_stub|khop_dap_an	マザーボードとケーブルで接続された箱は何ですか。
+75	jit	252	pt	69	A	domain_shell|vai_tro_stub|khop_dap_an	クロック周波数 3 GHz のプロセッサにおいて、1つの命令が6クロックで実行できるとき、1命令の実行に必要な時間は何ナノ秒か。
+76	jit	253	pt	70	C	domain_shell|vai_tro_stub|khop_dap_an	出力装置は何がありますか。
+77	jit	254	pt	71	B	khop_dap_an	「ROM」とは何ですか。
+78	jit	255	pt	72	B	khop_dap_an	チューリングマシンは何から構造されますか。
+79	jit	256	pt	73	D	domain_shell|vai_tro_stub|khop_dap_an	故障以外で問題なのは、( ) による不具合です。
+80	jit	257	pt	74	C	khop_dap_an	「bộ vi xử lý」は日本語でなんですか。
+81	jit	258	pt	75	A	khop_dap_an	AさんがBさんに電子文書を送信し、Bさんがその文書の送信者を確認する方法について、本文の内容に基づき、正しく説明しているものはどれか。
+82	jit	259	pt	76	A	khop_dap_an	Aさんは、Bさんに機密文書を電子メールで送信するため、公開鍵暗号方式を用いて文書を暗号化することにした。このとき、Aさんが文書を暗号化するために使用するべき鍵はどれか。
+83	jit	260	pt	77	D	khop_dap_an	コンピュータウイルスの予防策として、最も適切なものはどれですか。
+84	jit	261	pt	78	D	khop_dap_an	CPUについて正しくないものをえらんでください。
+85	jit	263	pt	80	D	domain_shell|vai_tro_stub|khop_dap_an	以下のメモリ部品の中で、アクセス速度が一番速いのはどちらですか。
+86	jit	264	pt	81	B	domain_shell|vai_tro_stub|khop_dap_an	記憶装置は何が該当しますか。
+87	jit	265	pt	82	A	domain_shell|vai_tro_stub|khop_dap_an	「DoS」はベトナム語で何ですか。
+88	jit	266	pt	83	A	domain_shell|vai_tro_stub|khop_dap_an	ある企業のデータセンターには、重要な役割を果たすサーバーがあります。このサーバーの稼働データを分析したところ、平均故障間隔が500時間、平均修復時間が10時間であることがわかりました。このサーバーの稼働率はいくつか。
+89	jit	268	pt	85	B	khop_dap_an	「工業所有権」に属しているものはどの有権ですか。
+90	jit	269	pt	86	C	khop_dap_an	「bước đệm」は日本語で何ですか。
+91	jit	270	pt	87	D	domain_shell|vai_tro_stub|khop_dap_an	「RAM」は英語で何ですか。
+92	jit	271	pt	88	C	khop_dap_an	OSIにおいて、「隣接機器間転送」の機能は主にどの階層が担当しますか。
+93	jit	272	pt	89	B	khop_dap_an	「通信制御」はどのように読みますか。ベトナム語で何ですか。
+94	jit	274	pt	91	D	domain_shell|vai_tro_stub|khop_dap_an	メモリ空間には、番地が割り当てられるところは何と呼ばれましたか。
+95	jit	275	pt	92	B	khop_dap_an	コンピュータウィルスについて正しくないものをえらんでください。
+96	jit	277	pt	94	C	khop_dap_an	「_」のキーボードの記号はどのように読みますか。
+97	jit	279	pt	96	B	domain_shell|vai_tro_stub|khop_dap_an	「バス」はベトナム語で何ですか。
+98	jit	280	pt	97	C	khop_dap_an	「転置式」はどのように読みますか。ベトナム語で何ですか。
+99	jit	281	pt	98	C	khop_dap_an	ある回路の入力Xと出力Yの関係が、Y = NOT X で表されるとき、この回路は何回路と呼ばれますか。
+100	jit	283	pt	100	B	domain_shell|vai_tro_stub|khop_dap_an	「流通過程」はベトナム語で何ですか。
+101	jit	284	pt	101	A	domain_shell|vai_tro_stub|khop_dap_an	「ブロードバンド」は英語で何ですか。ベトナム語で何ですか。
+102	jit	286	pt	103	C	domain_shell|vai_tro_stub|khop_dap_an	NTTドコモのFOMAの商品は何世代携帯電話のものですか。
+103	jit	287	pt	104	C	domain_shell|vai_tro_stub|khop_dap_an	「EDI」は英語でどの言葉に略されましたか。
+104	jit	288	pt	105	C	domain_shell|vai_tro_stub|khop_dap_an	ある会社のシステムは、3つの装置A、B、Cで構成されています。AとBは並列接続され、それらがCと直列接続されています。各装置の稼働率はそれぞれ0.9、0.9、0.95であるとき、システム全体の稼働率はいくつか。
+105	jit	289	pt	106	C	khop_dap_an	指先とのセンサの間に蓄えられる電荷を測定する方式は何の方式ですか。
+106	jit	290	pt	107	D	khop_dap_an	「単結晶」はどのように読みますか。また、ベトナム語で何ですか。
+107	jit	291	pt	108	C	khop_dap_an	コンピュータのCPUにおいて、バスの主な役割として最も適切なものはどれか。
+108	jit	292	pt	109	B	khop_dap_an	Chọn cách gọi tên đúng của hệ thống trong hình
+109	jit	5	quiz	5	C	khop_dap_an	電子式計算機ENIACが開発された年はいつか。
+110	jit	6	quiz	6	C	khop_dap_an	フォン・ノイマンのプログラム内蔵方式コンピュータが登場したのはいつか。
+111	jit	8	quiz	8	C	khop_dap_an	コンピュータを1つの式で表すと何になるか。
+112	jit	11	quiz	11	C	domain_shell|vai_tro_stub|khop_dap_an	Excelファイルの拡張子はどれか。
+113	jit	12	quiz	12	D	khop_dap_an	ファイルの種類を識別するために、ファイル名に付けられる（ ）のことを拡張子という。
+114	jit	13	quiz	13	D	domain_shell|vai_tro_stub|khop_dap_an	HTMLファイルの拡張子はどれか。
+115	jit	15	quiz	15	B	domain_shell|vai_tro_stub|khop_dap_an	ホームページのアドレスのことを（ ）という。
+116	jit	16	quiz	16	C	khop_dap_an	Web 2.0という言葉を2004年に提唱したのは誰か。
+117	jit	18	quiz	18	C	khop_dap_an	Web2.0について正しくないものをえらんでください。
+118	jit	19	quiz	19	C	khop_dap_an	クラウドコンピューティングという言葉を2006年に提唱したのは誰か。
+119	jit	21	quiz	21	B	khop_dap_an	メール利用のネチケットとして正しくないものをえらんでください。
+120	jit	22	quiz	22	B	domain_shell|vai_tro_stub|khop_dap_an	メールの添付ファイルで即座に削除すべき拡張子はどれか。
+121	jit	25	quiz	25	C	khop_dap_an	製品のデザインについての権利を何というか。
+122	jit	26	quiz	26	D	khop_dap_an	社名やロゴなどの商標を保護する権利を何というか。
+123	jit	29	quiz	29	B	khop_dap_an	第1世代携帯電話の通信方式はどれか。
+124	jit	30	quiz	30	C	khop_dap_an	タッチパネルの「静電容量方式」では何を測定するか。
+125	jit	33	quiz	33	C	khop_dap_an	タッチパネルの「抵抗膜方式」について正しくないものをえらんでください。
+126	jit	34	quiz	34	B	khop_dap_an	CMOSセンサはカメラ内でどのような役割を持つか。
+127	jit	35	quiz	35	C	khop_dap_an	FTTH（光ファイバ通信）の最大通信速度はどれか。
+128	jit	38	quiz	38	C	domain_shell|vai_tro_stub	【専門知識】次の質問に対して、正しい答えを１つ選びなさい。「電灯線を利用してデータ通信を行う技術」はどれですか。
+129	jit	39	quiz	39	C	domain_shell|vai_tro_stub|khop_dap_an	Wi-Fiは何の略か。
+130	jit	40	quiz	40	D	khop_dap_an	Bluetoothについて正しくないものをえらんでください。
+131	jit	43	quiz	43	B	khop_dap_an	最もよく使われるネットワーク接続形態はどれか。
+132	jit	47	quiz	47	C	khop_dap_an	OSI参照モデルは何層構造か。
+133	jit	48	quiz	48	C	khop_dap_an	【専門知識】（ ）を圧縮するには、音の波としての性質を使います。
+134	jit	49	quiz	49	B	khop_dap_an	「.com」のように種別だけで国名がないのはどの国のドメイン名か。
+135	jit	52	quiz	52	D	domain_shell|vai_tro_stub	【専門知識】次の質問に対して、正しい答えを１つ選びなさい。「ユーザが独自にタグを自由に定義して利用できるマークアップ言語」はどれですか。
+136	jit	53	quiz	53	C	domain_shell|vai_tro_stub|khop_dap_an	OSI参照モデルのトランスポート層で使用されるプロトコルはどれか。
+137	jit	56	quiz	56	B	khop_dap_an	ブラウザがウェブサイトのID情報を自動で記憶する仕組みを何というか。
+138	jit	57	quiz	57	D	khop_dap_an	OECD8原則について正しくないものをえらんでください。
+139	jit	58	quiz	58	A	domain_shell|vai_tro_stub	【専門用語】次の日本語の用語をベトナム語に直しなさい。 電子商取引
+140	jit	64	quiz	64	C	domain_shell|vai_tro_stub|khop_dap_an	並列に接続した2つのシステム（A, B）の稼働率の計算式はどれか。
+141	jit	67	quiz	67	D	khop_dap_an	パスワード設定について正しくないものをえらんでください。
+142	jit	68	quiz	68	C	khop_dap_an	信頼度成長曲線はどのような形をしているか。
+143	jit	69	quiz	69	B	domain_shell|vai_tro_stub|khop_dap_an	RAMの正式名称はどれか。
+144	jit	71	quiz	71	B	domain_shell|vai_tro_stub	【専門知識】次の質問に対して、正しい答えを１つ選びなさい。「パソコン内において大きな面積を占めるメインとなる基板のこと」はどれですか。
+145	jit	72	quiz	72	C	domain_shell|vai_tro_stub	【専門用語】次の日本語の用語をベトナム語に直しなさい。 演算装置
+146	jit	73	quiz	73	D	khop_dap_an	CPUについて正しくないものをえらんでください。
+147	jit	74	quiz	74	C	domain_shell|vai_tro_stub|khop_dap_an	コンピュータの第1世代に使用された論理素子はどれか。
+148	jit	76	quiz	76	B	khop_dap_an	AND回路のモデルはどれか。
+149	jit	78	quiz	78	C	khop_dap_an	論理素子によってコンピュータは何世代に分けられるか。
+150	jit	79	quiz	79	C	domain_shell|vai_tro_stub|khop_dap_an	2進数「1100」を10進数に変換すると何か。
+151	jit	81	quiz	81	C	domain_shell|vai_tro_stub|khop_dap_an	2進数の加算で「1 + 1」の結果はどれか。
+152	jit	83	quiz	83	C	domain_shell|vai_tro_stub|khop_dap_an	情報量の最小単位はどれか。
+153	jit	84	quiz	84	B	domain_shell|vai_tro_stub|khop_dap_an	アルファベット1文字の情報量は（ ）である。
+154	jit	85	quiz	85	B	khop_dap_an	現在の日本語文字に使われるUnicodeは何個のコード番号を持つか。
+155	jit	86	quiz	86	B	domain_shell|vai_tro_stub	【専門用語】次の日本語の用語をベトナム語に直しなさい。 情報量
+156	jit	87	quiz	87	C	domain_shell|vai_tro_stub|khop_dap_an	1つの日本語文字（漢字など）を表現するために使用するデータ量は（ ）である。
+157	jit	88	quiz	88	B	domain_shell|vai_tro_stub	MIDI（Musical Instrument Digital Interface）命令のデータ量はどれか。
+158	jit	90	quiz	90	B	domain_shell|vai_tro_stub|khop_dap_an	CDの音声のサンプリング周波数はどれか。
+159	jit	91	quiz	91	B	domain_shell|vai_tro_stub	デジタル画像のVGA解像度として正しいものをえらんでください。
+160	jit	92	quiz	92	C	domain_shell|vai_tro_stub|khop_dap_an	RGB各色8 bitで表現する場合、1画素（ピクセル）のデータ量はどれか。
+161	jit	94	quiz	94	D	khop_dap_an	動画について正しくないものをえらんでください。
+162	jit	95	quiz	95	C	khop_dap_an	日本のテレビ放送における1秒あたりの画面書き換え回数（フレームレート）はいくつか。
+163	jit	96	quiz	96	C	domain_shell|vai_tro_stub	通信速度の単位として正しいのはどれか。
+164	jit	98	quiz	98	C	domain_shell|vai_tro_stub	【専門用語】次の日本語の用語をベトナム語に直しなさい。 データ圧縮
+165	jit	99	quiz	99	B	khop_dap_an	ランレングス圧縮とは、（ ）を記述する画像圧縮方式の1つである。
+166	jit	100	quiz	100	D	khop_dap_an	音声情報の圧縮について正しくないものをえらんでください。
+167	jit	101	quiz	101	B	domain_shell|vai_tro_stub|khop_dap_an	1 GBは何 MBか。
+168	jit	102	quiz	102	B	khop_dap_an	ADSLは何の略か。
+169	jit	105	quiz	105	C	domain_shell|vai_tro_stub|khop_dap_an	日本のテレビ放送で使われるフレームレートはいくらか。
+170	jit	107	quiz	107	D	domain_shell|vai_tro_stub	【専門用語】次の日本語の用語をベトナム語に直しなさい。 高水準言語
+171	jit	108	quiz	108	A	domain_shell|vai_tro_stub|khop_dap_an	dpi（dot per inch）はどの機器の解像度を表すか。
+172	jit	109	quiz	109	C	khop_dap_an	ランレングス圧縮について正しくないものをえらんでください。
+173	jit	113	quiz	113	B	khop_dap_an	大量のデータを扱うために最も重要なのはどれか。
+174	jit	116	quiz	116	B	khop_dap_an	「電気機械式」コンピュータが誕生したのはいつか。
+175	jit	117	quiz	117	B	domain_shell|vai_tro_stub|khop_dap_an	【専門知識】（ ）は、データのアクセス速度が最も高速です。
+176	jit	118	quiz	118	A	khop_dap_an	密結合マルチプロセッサとはどのような方式か。
+177	jit	119	quiz	119	B	khop_dap_an	疎結合マルチプロセッサとはどのような方式か。
+178	jit	121	quiz	121	C	khop_dap_an	インターネットでIPアドレスを使って何を特定するか。
+179	jit	122	quiz	122	B	khop_dap_an	スカベンジングとはどのような犯罪か。
+180	jit	124	quiz	124	D	khop_dap_an	低級言語について正しくないものをえらんでください。
+181	jit	125	quiz	125	B	khop_dap_an	長さ、重さ、時間など身の回りの多くの物理量は何か。
+182	jit	127	quiz	127	C	khop_dap_an	転置式暗号の特徴はどれか。
+183	jit	129	quiz	129	A	khop_dap_an	CPUの動作原理は何に基づいているか。
+184	jit	130	quiz	130	B	domain_shell|vai_tro_stub|khop_dap_an	コンピュータのデータは（ ）の並びで表現された数字である。
+185	jit	132	sample	1	B	khop_dap_an	スカベンジングといって、残された個人情報を（ ）する犯罪もあります。
+186	jit	133	sample	2	A	khop_dap_an	【専門知識】（ ）は、データのアクセス速度が最も高速です。
+187	jit	134	sample	3	A	domain_shell|vai_tro_stub|khop_dap_an	アルファベット1文字の情報量はどうなりますか。
+188	jit	136	sample	5	D	domain_shell|vai_tro_stub|khop_dap_an	使われる論理素子によって何世代に分けられるか。
+189	jit	137	sample	6	D	khop_dap_an	【専門知識】データベースの表現法「データを親、子、孫のような階層構造に並べ、最上位の親からたどることによって検索する表現法です」とはどれですか。
+190	jit	138	sample	7	A	khop_dap_an	大量のデータを扱うために、何が重要ですか。
+191	jit	139	sample	8	A	khop_dap_an	【専門知識】「.com」のように種別だけで国名がないのはどの国のドメイン名ですか。
+192	jit	140	sample	9	A	khop_dap_an	【専門知識】HTMLとは;Hyper Text Markup Languageの略で、文字の（ ）、音、ファイルへのリンクなどが記述できます。
+193	jit	141	sample	10	A	khop_dap_an	Web2.0とは何ですか。
+194	jit	142	sample	11	C	khop_dap_an	【専門知識】「マウスやキーボードの操作の仕方、ウィンドウの見え方、ファイルの扱い方などを決定します」はOS機能の何の内容を指しますか。
+195	jit	143	sample	12	A	khop_dap_an	【専門知識】CPUの動作原理は何に基づいていますか。
+196	jit	145	sample	14	C	khop_dap_an	【専門知識】（ ）を圧縮するには、音の波としての性質を使います。
+197	jit	146	sample	15	C	domain_shell|vai_tro_stub|khop_dap_an	【専門知識】光ファイバを使って家庭まで高速通信を行うことは何でしょう。
+198	jit	147	sample	16	B	khop_dap_an	ランレングス圧縮について正しくないものをえらんでください。
+199	jit	150	sample	19	C	domain_shell|vai_tro_stub|khop_dap_an	故障以外で問題なのは、（ ）による不具合です。
+200	jit	151	sample	20	B	domain_shell|vai_tro_stub|khop_dap_an	MIDI命令はデータ量としては何ビットとなりますか。
+201	jit	152	sample	21	C	khop_dap_an	【専門知識】Web2.0の大きな特徴は何ですか。
+202	jit	154	sample	23	D	khop_dap_an	ユーザからの入力は何から行えますか。
+203	jit	155	sample	24	A	khop_dap_an	【専門知識】「ヒューマンインタフェースの設計は；（ ）検討時では十分に行えないことが多く；試作プログラムを作ってみて問題点を修正していくというやり方になります。」
+204	jit	157	sample	26	A	khop_dap_an	電子式計算機はいつ開発されましたか。
+205	jit	159	sample	28	A	khop_dap_an	低級言語について正しくないものをえらんでください。
+206	jit	160	sample	29	D	khop_dap_an	長さ、重さ、時間など身の回りの多くの物理量は何ですか。
+207	jit	161	sample	30	D	khop_dap_an	IPアドレスについて正しくないものをえらんでください。
+208	jit	162	sample	31	B	domain_shell|vai_tro_stub|khop_dap_an	【専門知識】電気機械式はいつ誕生されましたか。
+209	jit	165	sample	34	D	khop_dap_an	PCのOSに関する記述のうち、適切なものはどれか。
+210	jit	166	sample	35	A	khop_dap_an	コンピュータのデータは何の並びで表現された数字ですか。
+211	jit	167	sample	36	C	domain_shell|vai_tro_stub|khop_dap_an	JRのSuicaなどで使われているのは何ですか。
+212	jit	168	sample	37	B	khop_dap_an	工業所有権はどんな権ですか。
+213	jit	169	sample	38	C	domain_shell|vai_tro_stub|khop_dap_an	携帯電話、パソコン、カーナビ、マウス、キーボード、ヘッドホンなどに搭載されている通信規格は何ですか。
+214	jit	171	sample	40	B	khop_dap_an	着信メロディについて正しくないものを選びなさい。
+215	jit	173	sample	42	D	domain_shell|vai_tro_stub|khop_dap_an	【専門知識】（ ）とは、インターネット上で提供される各種のサービス・システム・各種のファイルの場所を特定するための記述方式です。
+216	jit	176	sample	45	C	khop_dap_an	著作権の特徴はなんですか。
+217	jit	177	sample	46	D	khop_dap_an	2つ以上の処理装置が、メモリを共有せずに、それぞれ独立したメモリを持って並列処理を行う方式は何でしょう。
+218	jit	178	sample	47	A	khop_dap_an	インターネットでは、IPアドレス（コンピュータの住所にあたる番号）を使って、相手の（ ）を特定します。
+219	jit	181	sample	50	D	domain_shell|vai_tro_stub	【専門用語】次の日本語の用語をベトナム語に直しなさい。 高水準言語
+220	jit	182	sample	51	C	khop_dap_an	Web2.0について正しくないものをえらんでください。
+221	jit	183	sample	52	B	domain_shell|vai_tro_stub|khop_dap_an	【専門知識】1文字を表現するために、16ビット（2バイト）のデータ量を使用する文字コードは何ですか。
+222	jit	315	slides	295	B	khop_dap_an	スカベンジングといって、残された個人情報を（ ）する犯罪もあります。
+223	jit	316	slides	297	A	khop_dap_an	【専門知識】「.com」のように種別だけで国名がないのはどの国のドメイン名ですか。
+224	jit	317	slides	298	A	khop_dap_an	【専門知識】HTMLとは;Hyper Text Markup Languageの略で、文字の（ ）、音、ファイルへのリンクなどが記述できます。
+225	jit	318	slides	299	A	khop_dap_an	Web2.0とは何ですか。
+226	jit	319	slides	300	C	khop_dap_an	【専門知識】「マウスやキーボードの操作の仕方、ウィンドウの見え方、ファイルの扱い方などを決定します」はOS機能の何の内容を指しますか。
+227	jit	320	slides	301	A	khop_dap_an	【専門知識】CPUの動作原理は何に基づいていますか。
+228	jit	321	slides	303	C	domain_shell|vai_tro_stub|khop_dap_an	【専門知識】光ファイバを使って家庭まで高速通信を行うことは何でしょう。
+229	jit	324	slides	306	C	khop_dap_an	【専門知識】Web2.0の大きな特徴は何ですか。
+230	jit	325	slides	307	D	khop_dap_an	ユーザからの入力は何から行えますか。
+231	jit	326	slides	308	A	khop_dap_an	【専門知識】「ヒューマンインタフェースの設計は；（ ）検討時では十分に行えないことが多く；試作プログラムを作ってみて問題点を修正していくというやり方になります。」
+232	jit	327	slides	309	B	domain_shell|vai_tro_stub|khop_dap_an	【専門知識】電気機械式はいつ誕生されましたか。
+233	jit	330	slides	312	B	khop_dap_an	着信メロディについて正しくないものを選びなさい。
+234	jit	331	slides	321	B	domain_shell|vai_tro_stub	【専門用語】ジョン・モークリー（John Mauchly） の意味として最も適切なものはどれか。
+235	jit	332	slides	322	C	domain_shell|vai_tro_stub	【専門用語】パス（path） の意味として最も適切なものはどれか。
+236	jit	333	slides	323	C	domain_shell|vai_tro_stub	【専門用語】ライプニッツの乗算機（Leibniz のじょうさんき） の意味として最も適切なものはどれか。
+237	jit	334	slides	324	A	domain_shell|vai_tro_stub	【専門用語】フォン・ノイマン（John von Neumann） の意味として最も適切なものはどれか。
+238	jit	335	slides	325	C	domain_shell|vai_tro_stub	【専門用語】ファイル（file） の意味として最も適切なものはどれか。
+239	jit	336	slides	326	B	domain_shell|vai_tro_stub	【専門用語】汎用計算機（はんようけいさんき） の意味として最も適切なものはどれか。
+240	jit	337	slides	327	C	domain_shell|vai_tro_stub	【専門用語】アプリケーション（a pplication） の意味として最も適切なものはどれか。
+241	jit	338	slides	328	B	domain_shell|vai_tro_stub	【専門用語】子供のフォルダ（こどもの folder） の意味として最も適切なものはどれか。
+242	jit	349	slides	339	A	domain_shell|vai_tro_stub	【専門用語】不公平（ふこうへい） の意味として最も適切なものはどれか。
+243	jit	350	slides	340	B	domain_shell|vai_tro_stub	【専門用語】フリーウェア（Freeware） の意味として最も適切なものはどれか。
+244	jit	351	slides	341	A	domain_shell|vai_tro_stub	【専門用語】放送権（ほうそうけん） の意味として最も適切なものはどれか。
+245	jit	352	slides	342	D	domain_shell|vai_tro_stub	【専門用語】実行ファイル（じっこう File） の意味として最も適切なものはどれか。
+246	jit	353	slides	343	A	domain_shell|vai_tro_stub	【専門用語】きげん（きかいしき） の意味として最も適切なものはどれか。
+247	jit	354	slides	344	D	domain_shell|vai_tro_stub	【専門用語】著作人格権（ちょさくじんかくけん） の意味として最も適切なものはどれか。
+248	jit	355	slides	345	D	domain_shell|vai_tro_stub	【専門用語】ネチケット（netiquette） の意味として最も適切なものはどれか。
+249	jit	356	slides	346	A	domain_shell|vai_tro_stub	【専門用語】漏洩（ろうえい） の意味として最も適切なものはどれか。
+250	jit	365	slides	355	C	domain_shell|vai_tro_stub	【専門用語】電荷（でんか） の意味として最も適切なものはどれか。
+251	jit	366	slides	356	B	domain_shell|vai_tro_stub	【専門用語】透過（とうか） の意味として最も適切なものはどれか。
+252	jit	367	slides	357	B	domain_shell|vai_tro_stub	【専門用語】有機 EL ディスプレイ（ゆうき eelectroluminescence display） の意味として最も適切なものはどれか。
+253	jit	368	slides	358	C	domain_shell|vai_tro_stub	【専門用語】周波数帯域（ちゅうはすうたいいき） の意味として最も適切なものはどれか。
+254	jit	369	slides	359	A	domain_shell|vai_tro_stub	【専門用語】ブロードバンド（broadband） の意味として最も適切なものはどれか。
+255	jit	370	slides	360	A	domain_shell|vai_tro_stub	【専門用語】SED（Surface-conduction Electron-emitter Display） の意味として最も適切なものはどれか。
+256	jit	371	slides	361	A	domain_shell|vai_tro_stub	【専門用語】盗聴（とうちょう） の意味として最も適切なものはどれか。
+257	jit	372	slides	362	C	domain_shell|vai_tro_stub	【専門用語】次のベトナム語の用語を日本語に直しなさい。 phát sóng từng đoạn
+258	jit	373	slides	363	A	domain_shell|vai_tro_stub	【専門用語】次のベトナム語の用語を日本語に直しなさい。 ánh sáng phân cực
+259	jit	380	slides	370	C	domain_shell|vai_tro_stub	【専門用語】遮蔽物（しゃへいぶつ） の意味として最も適切なものはどれか。
+260	jit	381	slides	371	B	domain_shell|vai_tro_stub	【専門用語】ハンズフリー（hands-free） の意味として最も適切なものはどれか。
+261	jit	382	slides	372	D	domain_shell|vai_tro_stub	【専門用語】光ファイバ（ひかり fiber） の意味として最も適切なものはどれか。
+262	jit	383	slides	373	D	domain_shell|vai_tro_stub	【専門用語】ユビキタス（ubiquitous） の意味として最も適切なものはどれか。
+263	jit	384	slides	374	D	domain_shell|vai_tro_stub	【専門用語】POS（Point of Sale） の意味として最も適切なものはどれか。
+264	jit	385	slides	375	A	domain_shell|vai_tro_stub	【専門用語】コスト削減（cost さくげん） の意味として最も適切なものはどれか。
+265	jit	386	slides	376	B	domain_shell|vai_tro_stub	【専門用語】truyền dữ liệu có dây（55） の意味として最も適切なものはどれか。
+266	jit	387	slides	377	C	domain_shell|vai_tro_stub	【専門用語】受信機（じゅしんき） の意味として最も適切なものはどれか。
+267	jit	393	slides	383	A	domain_shell|vai_tro_stub	【専門用語】WAN（Wide Area Network） の意味として最も適切なものはどれか。
+268	jit	394	slides	384	D	domain_shell|vai_tro_stub	【専門用語】スター型（star がた） の意味として最も適切なものはどれか。
+269	jit	395	slides	385	B	domain_shell|vai_tro_stub	【専門用語】ネームサーバ（name server） の意味として最も適切なものはどれか。
+270	jit	396	slides	386	D	domain_shell|vai_tro_stub	【専門用語】犯罪的行為（はんざいてきこうい） の意味として最も適切なものはどれか。
+271	jit	397	slides	387	D	domain_shell|vai_tro_stub	【専門用語】大域的（たいいきてき） の意味として最も適切なものはどれか。
+272	jit	398	slides	388	C	domain_shell|vai_tro_stub	【専門用語】ポータブルオーディオ（portable audio） の意味として最も適切なものはどれか。
+273	jit	399	slides	389	B	domain_shell|vai_tro_stub	【専門用語】局所的（きょくしょてき） の意味として最も適切なものはどれか。
+274	jit	400	slides	390	B	domain_shell|vai_tro_stub	【専門用語】攻撃（こうげき） の意味として最も適切なものはどれか。
+275	jit	409	slides	399	A	domain_shell|vai_tro_stub	【専門用語】人工言語（じんこうげんご） の意味として最も適切なものはどれか。
+276	jit	410	slides	400	A	domain_shell|vai_tro_stub	【専門用語】本質的な（ほんしつてきな） の意味として最も適切なものはどれか。
+277	jit	411	slides	401	D	domain_shell|vai_tro_stub	【専門用語】IP アドレス（IP address） の意味として最も適切なものはどれか。
+278	jit	412	slides	402	B	domain_shell|vai_tro_stub	【専門用語】無償奉仕（むしょうほうし） の意味として最も適切なものはどれか。
+279	jit	413	slides	403	B	domain_shell|vai_tro_stub	【専門用語】サブネットマスク（subnet mask） の意味として最も適切なものはどれか。
+280	jit	414	slides	404	B	domain_shell|vai_tro_stub	【専門用語】大幅に（おおはばに） の意味として最も適切なものはどれか。
+281	jit	415	slides	405	C	domain_shell|vai_tro_stub	【専門用語】物理層（ぶつりそう） の意味として最も適切なものはどれか。
+282	jit	416	slides	406	D	domain_shell|vai_tro_stub	【専門用語】一覧表（いちらんひょう） の意味として最も適切なものはどれか。
+283	jit	417	slides	407	D	domain_shell|vai_tro_stub	【専門用語】次のベトナム語の用語を日本語に直しなさい。 giao thức mạng
+284	jit	418	slides	408	A	domain_shell|vai_tro_stub	【専門用語】次のベトナム語の用語を日本語に直しなさい。 phần mềm ứng dụng
+285	jit	423	slides	413	C	domain_shell|vai_tro_stub	【専門用語】出力結果（しゅつりょくけっか） の意味として最も適切なものはどれか。
+286	jit	424	slides	414	B	domain_shell|vai_tro_stub	【専門用語】オリジネータ（originator） の意味として最も適切なものはどれか。
+287	jit	425	slides	415	A	domain_shell|vai_tro_stub	【専門用語】匿名（とくめい） の意味として最も適切なものはどれか。
+288	jit	426	slides	416	D	domain_shell|vai_tro_stub	【専門用語】電子マネー（でんし money） の意味として最も適切なものはどれか。
+289	jit	427	slides	417	A	domain_shell|vai_tro_stub	【専門用語】BtoC 企業対消費者（Business to Consumer きぎょうたいしょうひしゃ） の意味として最も適切なものはどれか。
+290	jit	428	slides	418	D	domain_shell|vai_tro_stub	【専門用語】受注（じゅちゅう） の意味として最も適切なものはどれか。
+291	jit	429	slides	419	D	domain_shell|vai_tro_stub	【専門用語】電子商取引（でんししょうとりひき） の意味として最も適切なものはどれか。
+292	jit	430	slides	420	D	domain_shell	【専門用語】次のベトナム語の用語を日本語に直しなさい。 thương mại tốc độ ánh sáng
+293	jit	437	slides	427	B	domain_shell|vai_tro_stub	【専門用語】認証（にんしょう） の意味として最も適切なものはどれか。
+294	jit	438	slides	428	B	domain_shell|vai_tro_stub	【専門用語】復元する（ふくげんする） の意味として最も適切なものはどれか。
+295	jit	439	slides	429	D	domain_shell|vai_tro_stub	【専門用語】秘密鍵（ひみつかぎ） の意味として最も適切なものはどれか。
+296	jit	440	slides	430	D	domain_shell|vai_tro_stub	【専門用語】秘密鍵方式（ひみつかぎほうしき） の意味として最も適切なものはどれか。
+297	jit	441	slides	431	D	domain_shell|vai_tro_stub	【専門用語】錠（じょう） の意味として最も適切なものはどれか。
+298	jit	442	slides	432	D	domain_shell|vai_tro_stub	【専門用語】当人（とうにん） の意味として最も適切なものはどれか。
+299	jit	443	slides	433	B	domain_shell|vai_tro_stub	【専門用語】古典的（こてんてき） の意味として最も適切なものはどれか。
+300	jit	444	slides	434	D	domain_shell|vai_tro_stub	【専門用語】デジタル証明書（digital しょうめいしょ） の意味として最も適切なものはどれか。
+301	jit	452	slides	442	A	domain_shell|vai_tro_stub	【専門用語】パターンファイル（pattern file） の意味として最も適切なものはどれか。
+302	jit	453	slides	443	A	domain_shell|vai_tro_stub	【専門用語】踏み台（ふみだい） の意味として最も適切なものはどれか。
+303	jit	454	slides	444	A	domain_shell|vai_tro_stub	【専門用語】悪用する（あくようする） の意味として最も適切なものはどれか。
+304	jit	455	slides	445	A	domain_shell|vai_tro_stub	【専門用語】即座に（そくざに） の意味として最も適切なものはどれか。
+305	jit	456	slides	446	A	domain_shell|vai_tro_stub	【専門用語】挙動（きょどう） の意味として最も適切なものはどれか。
+306	jit	457	slides	447	B	domain_shell|vai_tro_stub	【専門用語】不正侵入（ふせいしんにゅう） の意味として最も適切なものはどれか。
+307	jit	458	slides	448	A	domain_shell|vai_tro_stub	【専門用語】thời gian trung bình để sửa chữa（55） の意味として最も適切なものはどれか。
+308	jit	459	slides	449	C	domain_shell|vai_tro_stub	【専門用語】信頼度成長曲線（しんらいどせいちょう きょくせん） の意味として最も適切なものはどれか。
+309	jit	469	slides	459	A	domain_shell|vai_tro_stub	【専門用語】出力装置（しゅつりょくそうち） の意味として最も適切なものはどれか。
+310	jit	470	slides	460	B	domain_shell|vai_tro_stub	【専門用語】クロック（clock） の意味として最も適切なものはどれか。
+311	jit	471	slides	461	C	domain_shell|vai_tro_stub	【専門用語】グラフィックプロセッサ（graphic processor） の意味として最も適切なものはどれか。
+312	jit	472	slides	462	B	domain_shell|vai_tro_stub	【専門用語】チップセット（chip set） の意味として最も適切なものはどれか。
+313	jit	473	slides	463	A	domain_shell|vai_tro_stub	【専門用語】USB（Universal System Bus） の意味として最も適切なものはどれか。
+314	jit	474	slides	464	A	domain_shell|vai_tro_stub	【専門用語】基板（きばん） の意味として最も適切なものはどれか。
+315	jit	475	slides	465	A	domain_shell|vai_tro_stub	【専門用語】演算装置（えんざんそうち） の意味として最も適切なものはどれか。
+316	jit	476	slides	466	A	domain_shell|vai_tro_stub	【専門用語】整数（せいすう） の意味として最も適切なものはどれか。
+317	jit	477	slides	467	C	domain_shell|vai_tro_stub	【専門用語】次のベトナム語の用語を日本語に直しなさい。 cung từ
+318	jit	478	slides	468	B	domain_shell	【専門用語】次のベトナム語の用語を日本語に直しなさい。 解像度
+319	jit	485	slides	475	C	domain_shell|vai_tro_stub	【専門用語】余る（あまる） の意味として最も適切なものはどれか。
+320	jit	486	slides	476	D	domain_shell|vai_tro_stub	【専門用語】削る（けずる） の意味として最も適切なものはどれか。
+321	jit	487	slides	477	B	domain_shell|vai_tro_stub	【専門用語】ダイオード（diode） の意味として最も適切なものはどれか。
+322	jit	488	slides	478	C	domain_shell|vai_tro_stub	【専門用語】半導体（はんどうたい） の意味として最も適切なものはどれか。
+323	jit	489	slides	479	D	domain_shell|vai_tro_stub	【専門用語】電球（でんきゅう） の意味として最も適切なものはどれか。
+324	jit	490	slides	480	A	domain_shell|vai_tro_stub	【専門用語】発光ダイオード LED（はっこう diode Light Emitting Diode） の意味として最も適切なものはどれか。
+325	jit	491	slides	481	A	domain_shell|vai_tro_stub	【専門用語】論理積（ろんりせき） の意味として最も適切なものはどれか。
+326	jit	492	slides	482	C	domain_shell|vai_tro_stub	【専門用語】論理素子（ろんりそし） の意味として最も適切なものはどれか。
+327	jit	500	slides	490	D	domain_shell|vai_tro_stub	【専門用語】基数（きすう） の意味として最も適切なものはどれか。
+328	jit	501	slides	491	A	domain_shell|vai_tro_stub	【専門用語】16 進数（じゅうろくしんすう） の意味として最も適切なものはどれか。
+329	jit	502	slides	492	B	domain_shell|vai_tro_stub	【専門用語】書き並べる（かきならべる） の意味として最も適切なものはどれか。
+330	jit	503	slides	493	D	domain_shell|vai_tro_stub	【専門用語】10 進数（じっしんすう） の意味として最も適切なものはどれか。
+331	jit	504	slides	494	D	domain_shell|vai_tro_stub	【専門用語】合計する（ごうけいする） の意味として最も適切なものはどれか。
+332	jit	505	slides	495	B	domain_shell|vai_tro_stub	【専門用語】テイラー展開（Taylor てんかい） の意味として最も適切なものはどれか。
+333	jit	506	slides	496	A	domain_shell|vai_tro_stub	【専門用語】加減乗除（かげんじょうじょ） の意味として最も適切なものはどれか。
+334	jit	507	slides	497	A	domain_shell|vai_tro_stub	【専門用語】余り（あまり） の意味として最も適切なものはどれか。
+335	jit	517	slides	507	B	domain_shell|vai_tro_stub	【専門用語】性能（せいのう） の意味として最も適切なものはどれか。
+336	jit	518	slides	508	B	domain_shell|vai_tro_stub	【専門用語】客観的（きゃっかんてき） の意味として最も適切なものはどれか。
+337	jit	519	slides	509	D	domain_shell|vai_tro_stub	【専門用語】改行コード（かいぎょう code） の意味として最も適切なものはどれか。
+338	jit	520	slides	510	A	domain_shell|vai_tro_stub	【専門用語】JIS コード（Japanese Industrial Standard code） の意味として最も適切なものはどれか。
+339	jit	521	slides	511	B	domain_shell|vai_tro_stub	【専門用語】オペレーティング システム（operating system） の意味として最も適切なものはどれか。
+340	jit	522	slides	512	C	domain_shell|vai_tro_stub	【専門用語】主観的（しゅかんてき） の意味として最も適切なものはどれか。
+341	jit	523	slides	513	C	domain_shell|vai_tro_stub	【専門用語】指摘する（してきする） の意味として最も適切なものはどれか。
+342	jit	524	slides	514	C	domain_shell|vai_tro_stub	【専門用語】最小単位（さいしょうたんい） の意味として最も適切なものはどれか。
+343	jit	530	slides	520	A	domain_shell|vai_tro_stub	【専門用語】インクジェット プリンタ（inkjet printer） の意味として最も適切なものはどれか。
+344	jit	531	slides	521	B	domain_shell|vai_tro_stub	【専門用語】原色（げんしょく） の意味として最も適切なものはどれか。
+345	jit	532	slides	522	C	domain_shell|vai_tro_stub	【専門用語】量子化数（りょうしかすう） の意味として最も適切なものはどれか。
+346	jit	533	slides	523	D	domain_shell|vai_tro_stub	【専門用語】音符（おんぷ） の意味として最も適切なものはどれか。
+347	jit	534	slides	524	D	domain_shell|vai_tro_stub	【専門用語】特殊なコード（とくしゅな code） の意味として最も適切なものはどれか。
+348	jit	535	slides	525	A	domain_shell|vai_tro_stub	【専門用語】縦横（たてよこ） の意味として最も適切なものはどれか。
+349	jit	536	slides	526	C	domain_shell|vai_tro_stub	【専門用語】静止画像（せいしがぞう） の意味として最も適切なものはどれか。
+350	jit	537	slides	527	C	domain_shell|vai_tro_stub	【専門用語】接続端子（せつぞくたんし） の意味として最も適切なものはどれか。
+351	jit	538	slides	528	B	domain_shell|vai_tro_stub	【専門用語】次のベトナム語の用語を日本語に直しなさい。 mảnh giấy nhỏ , dài
+352	jit	539	slides	529	C	domain_shell|vai_tro_stub	【専門用語】次のベトナム語の用語を日本語に直しなさい。 nốt nhạc
+353	jit	545	slides	535	B	domain_shell|vai_tro_stub	【専門用語】パリティチェック（parity check） の意味として最も適切なものはどれか。
+354	jit	546	slides	536	A	domain_shell|vai_tro_stub	【専門用語】判定（はんてい） の意味として最も適切なものはどれか。
+355	jit	547	slides	537	D	domain_shell|vai_tro_stub	【専門用語】差分（さぶん） の意味として最も適切なものはどれか。
+356	jit	548	slides	538	A	domain_shell|vai_tro_stub	【専門用語】不可逆（ふかぎゃく） の意味として最も適切なものはどれか。
+357	jit	549	slides	539	D	domain_shell|vai_tro_stub	【専門用語】BPS（Bit Per Second） の意味として最も適切なものはどれか。
+358	jit	550	slides	540	A	domain_shell|vai_tro_stub	【専門用語】損なう（そこなう） の意味として最も適切なものはどれか。
+359	jit	551	slides	541	B	domain_shell|vai_tro_stub	【専門用語】プロセッサー（processor） の意味として最も適切なものはどれか。
+360	jit	552	slides	542	A	domain_shell|vai_tro_stub	【専門用語】車線（しゃせん） の意味として最も適切なものはどれか。
+361	jit	560	slides	550	C	domain_shell|vai_tro_stub	【専門用語】ガレージ（ｇ arage） の意味として最も適切なものはどれか。
+362	jit	561	slides	551	A	domain_shell|vai_tro_stub	【専門用語】LINUX（リナックス） の意味として最も適切なものはどれか。
+363	jit	562	slides	552	C	domain_shell|vai_tro_stub	【専門用語】UNIX（ユニックス） の意味として最も適切なものはどれか。
+364	jit	563	slides	553	D	domain_shell|vai_tro_stub	【専門用語】中身（なかみ） の意味として最も適切なものはどれか。
+365	jit	564	slides	554	C	domain_shell|vai_tro_stub	【専門用語】相違（そうい） の意味として最も適切なものはどれか。
+366	jit	565	slides	555	C	domain_shell|vai_tro_stub	【専門用語】スワッピング（s wapping） の意味として最も適切なものはどれか。
+367	jit	566	slides	556	C	domain_shell|vai_tro_stub	【専門用語】マルチユーザ（multiuser） の意味として最も適切なものはどれか。
+368	jit	568	slides	558	C	domain_shell|vai_tro_stub	【専門用語】次のベトナム語の用語を日本語に直しなさい。 tiến xa , nhảy vọt
+369	jit	573	slides	563	D	domain_shell|vai_tro_stub	【専門用語】階層構造（かいそうこうぞう） の意味として最も適切なものはどれか。
+370	jit	574	slides	564	D	domain_shell|vai_tro_stub	【専門用語】起動（きどう） の意味として最も適切なものはどれか。
+371	jit	575	slides	565	A	domain_shell|vai_tro_stub	【専門用語】リレーショナル 表現（Relational ひょうげん） の意味として最も適切なものはどれか。
+372	jit	576	slides	566	A	domain_shell|vai_tro_stub	【専門用語】網的表現（あみてきひょうげん） の意味として最も適切なものはどれか。
+373	jit	577	slides	567	A	domain_shell|vai_tro_stub	【専門用語】急激（きゅうげき） の意味として最も適切なものはどれか。
+374	jit	578	slides	568	D	domain_shell|vai_tro_stub	【専門用語】自然な結合（しぜんなけつごう） の意味として最も適切なものはどれか。
+375	jit	579	slides	569	C	domain_shell|vai_tro_stub	【専門用語】共通部分（きょうつうぶぶん） の意味として最も適切なものはどれか。
+376	jit	580	slides	570	B	domain_shell|vai_tro_stub	【専門用語】実用性（じつようせい） の意味として最も適切なものはどれか。
+377	jit	587	slides	577	C	domain_shell|vai_tro_stub	【専門用語】昇順（しょうじゅん） の意味として最も適切なものはどれか。
+378	jit	588	slides	578	A	domain_shell|vai_tro_stub	【専門用語】更新（こうしん） の意味として最も適切なものはどれか。
+379	jit	589	slides	579	A	domain_shell|vai_tro_stub	【専門用語】削除（さくじょ） の意味として最も適切なものはどれか。
+380	jit	590	slides	580	A	domain_shell|vai_tro_stub	【専門用語】SQL（Structured Query Language） の意味として最も適切なものはどれか。
+381	jit	591	slides	581	B	domain_shell|vai_tro_stub	【専門用語】要素名（ようそめい） の意味として最も適切なものはどれか。
+382	jit	592	slides	582	D	domain_shell|vai_tro_stub	【専門用語】構文（こうぶん） の意味として最も適切なものはどれか。
+383	jit	593	slides	583	A	domain_shell|vai_tro_stub	【専門用語】ワイルドカード（wildcard） の意味として最も適切なものはどれか。
+384	jit	594	slides	584	C	domain_shell|vai_tro_stub	【専門用語】降順（こうじゅん） の意味として最も適切なものはどれか。
+385	jit	603	slides	593	C	domain_shell|vai_tro_stub	【専門用語】動作（どうさ） の意味として最も適切なものはどれか。
+386	jit	604	slides	594	A	domain_shell|vai_tro_stub	【専門用語】蓄える（たくわえる） の意味として最も適切なものはどれか。
+387	jit	605	slides	595	A	domain_shell|vai_tro_stub	【専門用語】低級言語（ていきゅうげんご） の意味として最も適切なものはどれか。
+388	jit	606	slides	596	B	domain_shell|vai_tro_stub	【専門用語】定型的（ていけいてき） の意味として最も適切なものはどれか。
+389	jit	607	slides	597	A	domain_shell|vai_tro_stub	【専門用語】四則演算（しそくえんざん） の意味として最も適切なものはどれか。
+390	jit	608	slides	598	B	domain_shell|vai_tro_stub	【専門用語】コンパイラ（compiler） の意味として最も適切なものはどれか。
+391	jit	609	slides	599	A	domain_shell|vai_tro_stub	【専門用語】添え字（そえじ） の意味として最も適切なものはどれか。
+392	jit	610	slides	600	A	domain_shell|vai_tro_stub	【専門用語】XML 言語（XML げんご） の意味として最も適切なものはどれか。
+393	jit	618	slides	608	B	domain_shell|vai_tro_stub	【専門用語】頻繁（ひんぱん） の意味として最も適切なものはどれか。
+394	jit	619	slides	609	B	domain_shell|vai_tro_stub	【専門用語】エラー対策（error たいさく） の意味として最も適切なものはどれか。
+395	jit	620	slides	610	B	domain_shell|vai_tro_stub	【専門用語】書き下す（かきくだす） の意味として最も適切なものはどれか。
+396	jit	621	slides	611	B	domain_shell|vai_tro_stub	【専門用語】試行錯誤（しこうさくご） の意味として最も適切なものはどれか。
+397	jit	622	slides	612	A	domain_shell|vai_tro_stub	【専門用語】フローチャート（flowchart） の意味として最も適切なものはどれか。
+398	jit	623	slides	613	C	domain_shell|vai_tro_stub	【専門用語】投入（とうにゅう） の意味として最も適切なものはどれか。
+399	jit	624	slides	614	A	domain_shell|vai_tro_stub	【専門用語】身振り（みぶり） の意味として最も適切なものはどれか。
+400	jit	625	slides	615	D	domain_shell|vai_tro_stub	【専門用語】バブルソート（bubble sort） の意味として最も適切なものはどれか。

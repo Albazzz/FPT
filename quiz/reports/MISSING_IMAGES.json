@@ -1,0 +1,996 @@
+{
+  "generatedAt": "2026-07-24T01:36:52.120Z",
+  "note": "Questions that need a figure/table to answer (or datajfe meta.img without asset). App currently has no image renderer in app.js; workspace has zero .png/.jpg assets.",
+  "workspaceImageFiles": 0,
+  "bySubject": {
+    "prm": {
+      "total": 225,
+      "withImgMeta": 0,
+      "strongNeedFigure": [],
+      "mediumMaybeFigure": [],
+      "datajfeMetaImgCount": 0,
+      "datajfeMustSeeDiagram": [],
+      "datajfeAllMeta": []
+    },
+    "mln": {
+      "total": 615,
+      "withImgMeta": 0,
+      "strongNeedFigure": [],
+      "mediumMaybeFigure": [],
+      "datajfeMetaImgCount": 0,
+      "datajfeMustSeeDiagram": [],
+      "datajfeAllMeta": []
+    },
+    "jit": {
+      "total": 632,
+      "withImgMeta": 0,
+      "strongNeedFigure": [],
+      "mediumMaybeFigure": [],
+      "datajfeMetaImgCount": 0,
+      "datajfeMustSeeDiagram": [],
+      "datajfeAllMeta": []
+    },
+    "fe": {
+      "total": 726,
+      "withImgMeta": 41,
+      "strongNeedFigure": [
+        {
+          "id": 383,
+          "task": "datajfe",
+          "taskLabel": "datajfe",
+          "num": 16,
+          "answer": "A",
+          "hasImgMeta": true,
+          "imgRef": {
+            "img": "image_17.png",
+            "imageKey": 17,
+            "imageUrl": null
+          },
+          "question": "Deleting root 50 from the given BST using inorder successor results in which new root?",
+          "questionVi": "Xóa nút gốc 50 khỏi BST bằng inorder successor — gốc mới là gì?",
+          "searchHint": "BST delete root 50 inorder successor diagram",
+          "reason": "Deleting root"
+        },
+        {
+          "id": 420,
+          "task": "fuexam",
+          "taskLabel": "Đề FE",
+          "num": 12,
+          "answer": "A",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "What is the function point value of a program that has the functions and characteristics shown in the table below? Here, the correction coefficient of complexity is 0.75.",
+          "questionVi": "Giá trị function point của chương trình có các chức năng và đặc trưng như bảng dưới là bao nhiêu? Ở đây hệ số hiệu chỉnh là 0.85.",
+          "searchHint": "FE exam function point table (EI/EO/EQ/ILF/EIF counts + complexity 0.75)",
+          "reason": "shown in the table"
+        },
+        {
+          "id": 428,
+          "task": "fuexam",
+          "taskLabel": "Đề FE",
+          "num": 20,
+          "answer": "B",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "The syntax rules of the field identifier \"field ID\" are represented in BNF notation as shown below. When each ID is defined as an arbitrary sequence of letters and/or digits, which of the following should be inserted int",
+          "questionVi": "Quy tắc cú pháp của định danh trường \"field ID\" được biểu diễn bằng ký hiệu BNF như dưới đây. Khi mỗi ID được định nghĩa là dãy chữ và/hoặc chữ số bất kỳ, cái n",
+          "searchHint": "BNF field ID syntax (text may already include rules — image optional)",
+          "reason": "shown below"
+        },
+        {
+          "id": 430,
+          "task": "fuexam",
+          "taskLabel": "Đề FE",
+          "num": 22,
+          "answer": "B",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "When the binary tree shown in the figure below is stored in a one-dimensional array A under the following conditions, what is the array index of the node \"T\"?",
+          "questionVi": "Cây nhị phân lưu mảng 1 chiều theo quy tắc. Nút giá trị 20 ở chỉ số nào?",
+          "searchHint": "FE exam binary tree → 1D array index of node T",
+          "reason": "shown in the figure"
+        },
+        {
+          "id": 435,
+          "task": "fuexam",
+          "taskLabel": "Đề FE",
+          "num": 27,
+          "answer": "B",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "Multiple directories having the names A and B are managed in the structure shown below. When the current directory is changed in order of \\BA ->..\\B -> \\A, which of the following is the resulting current directory? Here,",
+          "questionVi": "Nhiều thư mục mang tên A và B được quản lý theo cấu trúc như hình dưới. Khi thư mục hiện tại được đổi theo thứ tự \\BA → ..\\B → \\A, thư mục hiện tại kết quả là g",
+          "searchHint": "FE exam directory tree structure A/B path navigation",
+          "reason": "structure shown"
+        },
+        {
+          "id": 439,
+          "task": "fuexam",
+          "taskLabel": "Đề FE",
+          "num": 31,
+          "answer": "B",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "Which of the following is an explanation of the use case diagram shown below?",
+          "questionVi": "Giải thích nào đúng về sơ đồ use case bên dưới?",
+          "searchHint": "UML use case: order management, ordering staff, inventory management system",
+          "reason": "diagram shown"
+        },
+        {
+          "id": 444,
+          "task": "fuexam",
+          "taskLabel": "Đề FE",
+          "num": 36,
+          "answer": "D",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "View the picture and choose right answer. As shown in the figure below, all the lines show signs of leveling off in the control chart of a program test. Which of the following can be inferred from this condition?",
+          "questionVi": "Xem hình và chọn đáp án đúng. Như hình dưới, mọi đường trên biểu đồ kiểm soát của một quá trình đều có dấu hiệu san phẳng. Tình huống này cho thấy điều gì?",
+          "searchHint": "software test control chart lines leveling off",
+          "reason": "View the picture"
+        },
+        {
+          "id": 447,
+          "task": "fuexam",
+          "taskLabel": "Đề FE",
+          "num": 39,
+          "answer": "A",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "When ABC analysis is used to categorize product items in the table below, which of the following is the combination of the product numbers for the items that are categorized into the group \"A\"?",
+          "questionVi": "Khi dùng phân tích ABC để phân loại mặt hàng trong bảng dưới, tổ hợp số hiệu sản phẩm nào thuộc nhóm A?",
+          "searchHint": "ABC analysis product table cumulative sales %",
+          "reason": "table below"
+        },
+        {
+          "id": 450,
+          "task": "fuexam",
+          "taskLabel": "Đề FE",
+          "num": 42,
+          "answer": "C",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "In the RAID3 system shown below, three disks (Disks 0 through 2) for byte-striped data and one dedicated parity disk (Disk 3) are used as one volume. Parity byte Ap is generated by calculating the \"exclusive OR\" (⊕) of t",
+          "questionVi": "Trong hệ RAID3 như hình dưới, ba đĩa (Disk 0 đến 2) cho dữ liệu stripe theo byte và một đĩa parity riêng (Disk 3) được dùng như một volume. Byte parity Ap được ",
+          "searchHint": "RAID3 diagram Disk0-2 data + Disk3 parity XOR recovery",
+          "reason": "shown below"
+        }
+      ],
+      "mediumMaybeFigure": [
+        {
+          "id": 226,
+          "task": "bank300",
+          "taskLabel": "300 câu",
+          "num": 159,
+          "answer": "D",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "Full binary tree 31 nodes min height (edges)?",
+          "questionVi": "Cây nhị phân đầy đủ 31 nodes min height (edges)?",
+          "searchHint": "exam figure for: Full binary tree 31 nodes min height (edges)?",
+          "reason": "binary tree"
+        },
+        {
+          "id": 418,
+          "task": "fuexam",
+          "taskLabel": "Đề FE",
+          "num": 10,
+          "answer": "C",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "Given the following inventory data: Item Annual Value ($) P 4000 Q 2500 R 1500 S 800 T 200 Which statement is correct according to ABC analysis?",
+          "questionVi": "Theo ABC analysis với giá trị tồn kho P–T như bảng, phát biểu nào đúng?",
+          "searchHint": "ABC analysis product table cumulative sales %",
+          "reason": "ABC analysis"
+        },
+        {
+          "id": 502,
+          "task": "books",
+          "taskLabel": "Books",
+          "num": 94,
+          "answer": "A",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "Binary trees can be stored in an array where children of index i are typically at:",
+          "questionVi": "Cây nhị phân lưu mảng: con của chỉ số i thường ở:",
+          "searchHint": "FE exam binary tree → 1D array index of node T",
+          "reason": "Binary tree"
+        },
+        {
+          "id": 511,
+          "task": "books",
+          "taskLabel": "Books",
+          "num": 103,
+          "answer": "B",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "ABC analysis for inventory prioritizes items by:",
+          "questionVi": "Phân tích ABC tồn kho ưu tiên mặt hàng theo:",
+          "searchHint": "ABC analysis product table cumulative sales %",
+          "reason": "ABC analysis"
+        },
+        {
+          "id": 550,
+          "task": "books",
+          "taskLabel": "Books",
+          "num": 146,
+          "answer": "A",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "A control chart is typically used to:",
+          "questionVi": "Biểu đồ kiểm soát thường được dùng:",
+          "searchHint": "software test control chart lines leveling off",
+          "reason": "control chart"
+        },
+        {
+          "id": 629,
+          "task": "books",
+          "taskLabel": "Books",
+          "num": 230,
+          "answer": "A",
+          "hasImgMeta": false,
+          "imgRef": {
+            "img": null,
+            "imageKey": null,
+            "imageUrl": null
+          },
+          "question": "A full binary tree of height h (root height 0) has at most how many nodes at the last level?",
+          "questionVi": "Cây nhị phân đầy đủ cao h (gốc cao 0) có tối đa bao nhiêu nút tầng cuối?",
+          "searchHint": "exam figure for: A full binary tree of height h (root height 0) has at most how many nodes at the",
+          "reason": "binary tree"
+        }
+      ],
+      "datajfeMetaImgCount": 41,
+      "datajfeMustSeeDiagram": [
+        {
+          "id": 383,
+          "task": "datajfe",
+          "taskLabel": "datajfe",
+          "num": 16,
+          "answer": "A",
+          "hasImgMeta": true,
+          "imgRef": {
+            "img": "image_17.png",
+            "imageKey": 17,
+            "imageUrl": null
+          },
+          "question": "Deleting root 50 from the given BST using inorder successor results in which new root?",
+          "questionVi": "Xóa nút gốc 50 khỏi BST bằng inorder successor — gốc mới là gì?",
+          "searchHint": "BST delete root 50 inorder successor diagram",
+          "reason": "Deleting root"
+        },
+        {
+          "id": 391,
+          "task": "datajfe",
+          "taskLabel": "datajfe",
+          "num": 24,
+          "answer": "D",
+          "hasImgMeta": true,
+          "imgRef": {
+            "img": "image_25.png",
+            "imageKey": 25,
+            "imageUrl": null
+          },
+          "question": "In an arrow diagram, two activities must preserve a dependency relationship even though no actual work, resource consumption, or processing time is required between them. Which project management technique BEST represent",
+          "questionVi": "Trên sơ đồ mũi tên, hai hoạt động phải giữ quan hệ phụ thuộc dù không cần công việc thực, tiêu hao tài nguyên hay thời gian xử lý. Dùng gì?",
+          "searchHint": "datajfe diagram for image_25.png · key=25"
+        },
+        {
+          "id": 394,
+          "task": "datajfe",
+          "taskLabel": "datajfe",
+          "num": 27,
+          "answer": "B",
+          "hasImgMeta": true,
+          "imgRef": {
+            "img": "image_28.png",
+            "imageKey": 28,
+            "imageUrl": null
+          },
+          "question": "A process represents the state transition among three states: a ready state, a running state, and a waiting state. Which of the following is an appropriate description concerning the state transition of a process?",
+          "questionVi": "Một tiến trình biểu diễn chuyển trạng thái giữa ba trạng thái: ready, running và waiting. Chuyển trạng thái nào sau đây là đúng?",
+          "searchHint": "datajfe diagram for image_28.png · key=28"
+        },
+        {
+          "id": 402,
+          "task": "datajfe",
+          "taskLabel": "datajfe",
+          "num": 35,
+          "answer": "B",
+          "hasImgMeta": true,
+          "imgRef": {
+            "img": "image_36.png",
+            "imageKey": 36,
+            "imageUrl": null
+          },
+          "question": "During a backward calculation, several activities diverge from the same node toward different later nodes. Which principle is used when determining the latest allowable node time?",
+          "questionVi": "Tính ngược: nhiều hoạt động tỏa từ một nút. Nguyên tắc xác định latest finish của nút trước chung?",
+          "searchHint": "datajfe diagram for image_36.png · key=36"
+        },
+        {
+          "id": 408,
+          "task": "datajfe",
+          "taskLabel": "datajfe",
+          "num": 41,
+          "answer": "B",
+          "hasImgMeta": true,
+          "imgRef": {
+            "img": "image_44.png",
+            "imageKey": 44,
+            "imageUrl": null
+          },
+          "question": "A process is executed through a state transition among three states: a ready state, a running state, and a waiting state. Which of the following is an appropriate description concerning the state transition of a process?",
+          "questionVi": "Một tiến trình thực thi qua chuyển trạng thái giữa ba trạng thái: ready, running và waiting. Điều nào sau đây gây chuyển từ running sang waiting?",
+          "searchHint": "datajfe diagram for image_44.png · key=44"
+        }
+      ],
+      "datajfeAllMeta": [
+        {
+          "id": 368,
+          "num": 1,
+          "img": "image.png",
+          "key": 1,
+          "answer": "D",
+          "q": "A LAN access method circulates control information in a fixed direction. A station may transmit only"
+        },
+        {
+          "id": 369,
+          "num": 2,
+          "img": "image_2.png",
+          "key": 2,
+          "answer": "A",
+          "q": "An organization wants to exchange product model data using an international standard specifically in"
+        },
+        {
+          "id": 370,
+          "num": 3,
+          "img": "image_3.png",
+          "key": 3,
+          "answer": "A",
+          "q": "A company uses a transmission method in which a dedicated communication path is established before d"
+        },
+        {
+          "id": 371,
+          "num": 4,
+          "img": "image_4.png",
+          "key": 4,
+          "answer": "D",
+          "q": "A project manager shortens an activity that is not currently on the critical path. After the change,"
+        },
+        {
+          "id": 372,
+          "num": 5,
+          "img": "image_5.png",
+          "key": 5,
+          "answer": "D",
+          "q": "An attacker secretly intercepts data traveling across a network and steals information without neces"
+        },
+        {
+          "id": 373,
+          "num": 6,
+          "img": "image_7.png",
+          "key": 7,
+          "answer": "C",
+          "q": "A software organization wants an international standard that structures lifecycle processes for acqu"
+        },
+        {
+          "id": 374,
+          "num": 7,
+          "img": "image_8.png",
+          "key": 8,
+          "answer": "A",
+          "q": "Which of the following is an appropriate explanation of a Java servlet?"
+        },
+        {
+          "id": 375,
+          "num": 8,
+          "img": "image_9.png",
+          "key": 9,
+          "answer": "D",
+          "q": "A product vendor claims that its system provides several advanced security features. A customer need"
+        },
+        {
+          "id": 376,
+          "num": 9,
+          "img": "image_10.png",
+          "key": 10,
+          "answer": "C",
+          "q": "A software organization requires every project to follow documented plans and ensures that requireme"
+        },
+        {
+          "id": 377,
+          "num": 10,
+          "img": "image_11.png",
+          "key": 11,
+          "answer": "D",
+          "q": "A table has a single-column primary key. Every non-key attribute depends on that key, but one non-ke"
+        },
+        {
+          "id": 378,
+          "num": 11,
+          "img": "image_12.png",
+          "key": 12,
+          "answer": "D",
+          "q": "A communication protocol transmits data in frames, supports continuous transfer and full-duplex comm"
+        },
+        {
+          "id": 379,
+          "num": 12,
+          "img": "image_13.png",
+          "key": 13,
+          "answer": "D",
+          "q": "Which of the following is a purpose of use of a message digest in message authentication?"
+        },
+        {
+          "id": 380,
+          "num": 13,
+          "img": "image_14.png",
+          "key": 14,
+          "answer": "D",
+          "q": "Which of the following is software that can be used free of charge for a trial period, but if the us"
+        },
+        {
+          "id": 381,
+          "num": 14,
+          "img": "image_15.png",
+          "key": 15,
+          "answer": "C",
+          "q": "A network service must carry voice, video, and data using fixed-length transmission units. Connectio"
+        },
+        {
+          "id": 382,
+          "num": 15,
+          "img": "image_16.png",
+          "key": 16,
+          "answer": "D",
+          "q": "A communication system must allow terminals with different transmission speeds to exchange data. Int"
+        },
+        {
+          "id": 383,
+          "num": 16,
+          "img": "image_17.png",
+          "key": 17,
+          "answer": "A",
+          "q": "Deleting root 50 from the given BST using inorder successor results in which new root?"
+        },
+        {
+          "id": 384,
+          "num": 17,
+          "img": "image_18.png",
+          "key": 18,
+          "answer": "D",
+          "q": "An organization wants to detect whether a transferred document has been altered. Management is not p"
+        },
+        {
+          "id": 385,
+          "num": 18,
+          "img": "image_19.png",
+          "key": 19,
+          "answer": "A",
+          "q": "A query must preserve every row from the Student table even when no corresponding row exists in the "
+        },
+        {
+          "id": 386,
+          "num": 19,
+          "img": "image_20.png",
+          "key": 20,
+          "answer": "B",
+          "q": "A security team deploys a firewall and assumes that all forms of information theft are now prevented"
+        },
+        {
+          "id": 387,
+          "num": 20,
+          "img": "image_21.png",
+          "key": 21,
+          "answer": "B",
+          "q": "A database query must combine every possible row from relation A with every possible row from relati"
+        },
+        {
+          "id": 388,
+          "num": 21,
+          "img": "image_22.png",
+          "key": 22,
+          "answer": "C",
+          "q": "Two transactions update different records and then each requests a lock on the record already locked"
+        },
+        {
+          "id": 389,
+          "num": 22,
+          "img": "image_23.png",
+          "key": 23,
+          "answer": "D",
+          "q": "A transmission scheme divides the bandwidth of an analog line into several independent channels. Som"
+        },
+        {
+          "id": 390,
+          "num": 23,
+          "img": "image_24.png",
+          "key": 24,
+          "answer": "A",
+          "q": "A company needs high-speed Internet access over existing telephone lines. Download traffic is expect"
+        },
+        {
+          "id": 391,
+          "num": 24,
+          "img": "image_25.png",
+          "key": 25,
+          "answer": "D",
+          "q": "In an arrow diagram, two activities must preserve a dependency relationship even though no actual wo"
+        },
+        {
+          "id": 392,
+          "num": 25,
+          "img": "image_26.png",
+          "key": 26,
+          "answer": "A",
+          "q": "A queue is modeled as M/M/1, but analysts discover that service times are fixed and identical for ev"
+        },
+        {
+          "id": 393,
+          "num": 26,
+          "img": "image_27.png",
+          "key": 27,
+          "answer": "A",
+          "q": "A transaction processing system is described as an M/M/1 queue. During observation, analysts discove"
+        },
+        {
+          "id": 394,
+          "num": 27,
+          "img": "image_28.png",
+          "key": 28,
+          "answer": "B",
+          "q": "A process represents the state transition among three states: a ready state, a running state, and a "
+        },
+        {
+          "id": 395,
+          "num": 28,
+          "img": "image_29.png",
+          "key": 29,
+          "answer": "C",
+          "q": "A sender encrypts a message using the receiver's publicly available key. Only the receiver should be"
+        },
+        {
+          "id": 396,
+          "num": 29,
+          "img": "image_30.png",
+          "key": 30,
+          "answer": "B",
+          "q": "Linear Search trên N phần tử có số lần so sánh tốt nhất là:"
+        },
+        {
+          "id": 397,
+          "num": 30,
+          "img": "image_31.png",
+          "key": 31,
+          "answer": "A",
+          "q": "A distributed database update affects several database sites. The system must ensure that the update"
+        },
+        {
+          "id": 398,
+          "num": 31,
+          "img": "image_32.png",
+          "key": 32,
+          "answer": "A",
+          "q": "A database designer removes all repeated items from a table. However, one non-key attribute still de"
+        },
+        {
+          "id": 399,
+          "num": 32,
+          "img": "image_33.png",
+          "key": 33,
+          "answer": "A",
+          "q": "According to ISO/IEC 27001, which best defines availability?"
+        },
+        {
+          "id": 400,
+          "num": 33,
+          "img": "image_34.png",
+          "key": 34,
+          "answer": "D",
+          "q": "A receiving system must identify damaged frames and request retransmission when a positive acknowled"
+        },
+        {
+          "id": 401,
+          "num": 34,
+          "img": "image_35.png",
+          "key": 35,
+          "answer": "C",
+          "q": "An organization already uses standard processes across projects and manages its processes proactivel"
+        },
+        {
+          "id": 402,
+          "num": 35,
+          "img": "image_36.png",
+          "key": 36,
+          "answer": "B",
+          "q": "During a backward calculation, several activities diverge from the same node toward different later "
+        },
+        {
+          "id": 403,
+          "num": 36,
+          "img": "image_37.png",
+          "key": 37,
+          "answer": "C",
+          "q": "A transaction performs several updates and then encounters a logical program error before successful"
+        },
+        {
+          "id": 404,
+          "num": 37,
+          "img": "image_38.png",
+          "key": 38,
+          "answer": "D",
+          "q": "A network administrator needs a device that forwards traffic between different logical networks base"
+        },
+        {
+          "id": 405,
+          "num": 38,
+          "img": "image_39.png",
+          "key": 39,
+          "answer": "C",
+          "q": "Which of the following is an appropriate role of FCS in a frame that is transmitted through the HDLC"
+        },
+        {
+          "id": 406,
+          "num": 39,
+          "img": "image_40.png",
+          "key": 40,
+          "answer": "C",
+          "q": "A company encrypts confidential files using the same secret key for both encryption and decryption. "
+        },
+        {
+          "id": 407,
+          "num": 40,
+          "img": "image_41.png",
+          "key": 41,
+          "answer": "D",
+          "q": "Which of the following can be assigned to a computer as the IP address of class C?"
+        },
+        {
+          "id": 408,
+          "num": 41,
+          "img": "image_44.png",
+          "key": 44,
+          "answer": "B",
+          "q": "A process is executed through a state transition among three states: a ready state, a running state,"
+        }
+      ]
+    }
+  },
+  "checklist": [
+    {
+      "priority": "P1",
+      "subject": "fe",
+      "task": "datajfe",
+      "count": 41,
+      "note": "meta.img đã gắn (image.png…image_44.png) nhưng workspace KHÔNG có file ảnh; app cũng chưa render image.",
+      "mustSeeFirst": [
+        {
+          "id": 383,
+          "num": 16,
+          "img": "image_17.png",
+          "ans": "A",
+          "q": "Deleting root 50 from the given BST using inorder successor results in which new root?",
+          "searchHint": "BST delete root 50 inorder successor diagram"
+        },
+        {
+          "id": 391,
+          "num": 24,
+          "img": "image_25.png",
+          "ans": "D",
+          "q": "In an arrow diagram, two activities must preserve a dependency relationship even though no actual work, resource consumption, or processing time is required between them. Which project management technique BEST represent",
+          "searchHint": "datajfe diagram for image_25.png · key=25"
+        },
+        {
+          "id": 394,
+          "num": 27,
+          "img": "image_28.png",
+          "ans": "B",
+          "q": "A process represents the state transition among three states: a ready state, a running state, and a waiting state. Which of the following is an appropriate description concerning the state transition of a process?",
+          "searchHint": "datajfe diagram for image_28.png · key=28"
+        },
+        {
+          "id": 402,
+          "num": 35,
+          "img": "image_36.png",
+          "ans": "B",
+          "q": "During a backward calculation, several activities diverge from the same node toward different later nodes. Which principle is used when determining the latest allowable node time?",
+          "searchHint": "datajfe diagram for image_36.png · key=36"
+        },
+        {
+          "id": 408,
+          "num": 41,
+          "img": "image_44.png",
+          "ans": "B",
+          "q": "A process is executed through a state transition among three states: a ready state, a running state, and a waiting state. Which of the following is an appropriate description concerning the state transition of a process?",
+          "searchHint": "datajfe diagram for image_44.png · key=44"
+        }
+      ],
+      "allFiles": [
+        "image.png",
+        "image_2.png",
+        "image_3.png",
+        "image_4.png",
+        "image_5.png",
+        "image_7.png",
+        "image_8.png",
+        "image_9.png",
+        "image_10.png",
+        "image_11.png",
+        "image_12.png",
+        "image_13.png",
+        "image_14.png",
+        "image_15.png",
+        "image_16.png",
+        "image_17.png",
+        "image_18.png",
+        "image_19.png",
+        "image_20.png",
+        "image_21.png",
+        "image_22.png",
+        "image_23.png",
+        "image_24.png",
+        "image_25.png",
+        "image_26.png",
+        "image_27.png",
+        "image_28.png",
+        "image_29.png",
+        "image_30.png",
+        "image_31.png",
+        "image_32.png",
+        "image_33.png",
+        "image_34.png",
+        "image_35.png",
+        "image_36.png",
+        "image_37.png",
+        "image_38.png",
+        "image_39.png",
+        "image_40.png",
+        "image_41.png",
+        "image_44.png"
+      ]
+    },
+    {
+      "priority": "P0",
+      "subject": "fe",
+      "task": "fuexam",
+      "id": 420,
+      "num": 12,
+      "answer": "A",
+      "question": "What is the function point value of a program that has the functions and characteristics shown in the table below? Here, the correction coefficient of complexity is 0.75.",
+      "questionVi": "Giá trị function point của chương trình có các chức năng và đặc trưng như bảng dưới là bao nhiêu? Ở đây hệ số hiệu chỉnh là 0.85.",
+      "hasImgMeta": false,
+      "searchHint": "FE exam function point table (EI/EO/EQ/ILF/EIF counts + complexity 0.75)",
+      "reason": "shown in the table"
+    },
+    {
+      "priority": "P0",
+      "subject": "fe",
+      "task": "fuexam",
+      "id": 428,
+      "num": 20,
+      "answer": "B",
+      "question": "The syntax rules of the field identifier \"field ID\" are represented in BNF notation as shown below. When each ID is defined as an arbitrary sequence of letters and/or digits, which of the following should be inserted int",
+      "questionVi": "Quy tắc cú pháp của định danh trường \"field ID\" được biểu diễn bằng ký hiệu BNF như dưới đây. Khi mỗi ID được định nghĩa là dãy chữ và/hoặc chữ số bất kỳ, cái n",
+      "hasImgMeta": false,
+      "searchHint": "BNF field ID syntax (text may already include rules — image optional)",
+      "reason": "shown below"
+    },
+    {
+      "priority": "P0",
+      "subject": "fe",
+      "task": "fuexam",
+      "id": 430,
+      "num": 22,
+      "answer": "B",
+      "question": "When the binary tree shown in the figure below is stored in a one-dimensional array A under the following conditions, what is the array index of the node \"T\"?",
+      "questionVi": "Cây nhị phân lưu mảng 1 chiều theo quy tắc. Nút giá trị 20 ở chỉ số nào?",
+      "hasImgMeta": false,
+      "searchHint": "FE exam binary tree → 1D array index of node T",
+      "reason": "shown in the figure"
+    },
+    {
+      "priority": "P0",
+      "subject": "fe",
+      "task": "fuexam",
+      "id": 435,
+      "num": 27,
+      "answer": "B",
+      "question": "Multiple directories having the names A and B are managed in the structure shown below. When the current directory is changed in order of \\BA ->..\\B -> \\A, which of the following is the resulting current directory? Here,",
+      "questionVi": "Nhiều thư mục mang tên A và B được quản lý theo cấu trúc như hình dưới. Khi thư mục hiện tại được đổi theo thứ tự \\BA → ..\\B → \\A, thư mục hiện tại kết quả là g",
+      "hasImgMeta": false,
+      "searchHint": "FE exam directory tree structure A/B path navigation",
+      "reason": "structure shown"
+    },
+    {
+      "priority": "P0",
+      "subject": "fe",
+      "task": "fuexam",
+      "id": 439,
+      "num": 31,
+      "answer": "B",
+      "question": "Which of the following is an explanation of the use case diagram shown below?",
+      "questionVi": "Giải thích nào đúng về sơ đồ use case bên dưới?",
+      "hasImgMeta": false,
+      "searchHint": "UML use case: order management, ordering staff, inventory management system",
+      "reason": "diagram shown"
+    },
+    {
+      "priority": "P0",
+      "subject": "fe",
+      "task": "fuexam",
+      "id": 444,
+      "num": 36,
+      "answer": "D",
+      "question": "View the picture and choose right answer. As shown in the figure below, all the lines show signs of leveling off in the control chart of a program test. Which of the following can be inferred from this condition?",
+      "questionVi": "Xem hình và chọn đáp án đúng. Như hình dưới, mọi đường trên biểu đồ kiểm soát của một quá trình đều có dấu hiệu san phẳng. Tình huống này cho thấy điều gì?",
+      "hasImgMeta": false,
+      "searchHint": "software test control chart lines leveling off",
+      "reason": "View the picture"
+    },
+    {
+      "priority": "P0",
+      "subject": "fe",
+      "task": "fuexam",
+      "id": 447,
+      "num": 39,
+      "answer": "A",
+      "question": "When ABC analysis is used to categorize product items in the table below, which of the following is the combination of the product numbers for the items that are categorized into the group \"A\"?",
+      "questionVi": "Khi dùng phân tích ABC để phân loại mặt hàng trong bảng dưới, tổ hợp số hiệu sản phẩm nào thuộc nhóm A?",
+      "hasImgMeta": false,
+      "searchHint": "ABC analysis product table cumulative sales %",
+      "reason": "table below"
+    },
+    {
+      "priority": "P0",
+      "subject": "fe",
+      "task": "fuexam",
+      "id": 450,
+      "num": 42,
+      "answer": "C",
+      "question": "In the RAID3 system shown below, three disks (Disks 0 through 2) for byte-striped data and one dedicated parity disk (Disk 3) are used as one volume. Parity byte Ap is generated by calculating the \"exclusive OR\" (⊕) of t",
+      "questionVi": "Trong hệ RAID3 như hình dưới, ba đĩa (Disk 0 đến 2) cho dữ liệu stripe theo byte và một đĩa parity riêng (Disk 3) được dùng như một volume. Byte parity Ap được ",
+      "hasImgMeta": false,
+      "searchHint": "RAID3 diagram Disk0-2 data + Disk3 parity XOR recovery",
+      "reason": "shown below"
+    },
+    {
+      "priority": "P2",
+      "subject": "fe",
+      "task": "bank300",
+      "id": 226,
+      "num": 159,
+      "answer": "D",
+      "question": "Full binary tree 31 nodes min height (edges)?",
+      "searchHint": "exam figure for: Full binary tree 31 nodes min height (edges)?",
+      "reason": "binary tree"
+    },
+    {
+      "priority": "P2",
+      "subject": "fe",
+      "task": "fuexam",
+      "id": 418,
+      "num": 10,
+      "answer": "C",
+      "question": "Given the following inventory data: Item Annual Value ($) P 4000 Q 2500 R 1500 S 800 T 200 Which statement is correct according to ABC analysis?",
+      "searchHint": "ABC analysis product table cumulative sales %",
+      "reason": "ABC analysis"
+    },
+    {
+      "priority": "P2",
+      "subject": "fe",
+      "task": "books",
+      "id": 502,
+      "num": 94,
+      "answer": "A",
+      "question": "Binary trees can be stored in an array where children of index i are typically at:",
+      "searchHint": "FE exam binary tree → 1D array index of node T",
+      "reason": "Binary tree"
+    },
+    {
+      "priority": "P2",
+      "subject": "fe",
+      "task": "books",
+      "id": 511,
+      "num": 103,
+      "answer": "B",
+      "question": "ABC analysis for inventory prioritizes items by:",
+      "searchHint": "ABC analysis product table cumulative sales %",
+      "reason": "ABC analysis"
+    },
+    {
+      "priority": "P2",
+      "subject": "fe",
+      "task": "books",
+      "id": 550,
+      "num": 146,
+      "answer": "A",
+      "question": "A control chart is typically used to:",
+      "searchHint": "software test control chart lines leveling off",
+      "reason": "control chart"
+    },
+    {
+      "priority": "P2",
+      "subject": "fe",
+      "task": "books",
+      "id": 629,
+      "num": 230,
+      "answer": "A",
+      "question": "A full binary tree of height h (root height 0) has at most how many nodes at the last level?",
+      "searchHint": "exam figure for: A full binary tree of height h (root height 0) has at most how many nodes at the",
+      "reason": "binary tree"
+    }
+  ],
+  "summary": {
+    "prm": {
+      "total": 225,
+      "needImage": 0
+    },
+    "mln": {
+      "total": 615,
+      "needImage": 0
+    },
+    "jit": {
+      "total": 632,
+      "needImage": 0
+    },
+    "fe": {
+      "total": 726,
+      "datajfeWithMetaNoFile": 41,
+      "datajfeMustSeeDiagram": 5,
+      "otherStrong": 8,
+      "otherMedium": 6
+    }
+  }
+}

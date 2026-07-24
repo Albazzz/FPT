@@ -1,0 +1,295 @@
+n	subject	id	task	num	answer	flags	question_short
+1	fe	68	bank300	1	C	domain_shell|vai_tro_stub|khop_dap_an	How many bits are in one byte?
+2	fe	69	bank300	2	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	What is the smallest unit of data in a computer?
+3	fe	70	bank300	3	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which generation introduced VLSI?
+4	fe	71	bank300	4	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	First-generation logic device?
+5	fe	72	bank300	5	B	domain_shell|vai_tro_stub|khop_dap_an	Non-volatile storage example?
+6	fe	73	bank300	6	A	domain_shell|vai_tro_stub|khop_dap_an	Which memory loses data when power is off?
+7	fe	74	bank300	7	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Main memory is typically which type?
+8	fe	75	bank300	8	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Cache is usually implemented with?
+9	fe	76	bank300	9	C	domain_shell|vai_tro_stub|khop_dap_an	Hexadecimal digit A in decimal?
+10	fe	77	bank300	10	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Number system using digits 0-7?
+11	fe	78	bank300	11	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	8-bit two's complement 11101010 equals?
+12	fe	79	bank300	12	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Two's complement of negative: method?
+13	fe	80	bank300	13	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Range of n-bit 2's complement?
+14	fe	81	bank300	14	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	International multilingual character code?
+15	fe	82	bank300	15	D	domain_shell|vai_tro_stub|khop_dap_an	CPU = which units?
+16	fe	83	bank300	16	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which is a peripheral device?
+17	fe	84	bank300	17	B	domain_shell|vai_tro_stub|khop_dap_an	Register is inside CPU: peripheral?
+18	fe	85	bank300	18	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Auxiliary storage characteristic?
+19	fe	86	bank300	19	D	domain_shell|vai_tro_stub	Advantage of semiconductor memory vs magnetic disk?
+20	fe	87	bank300	20	A	domain_shell|vai_tro_stub	Access time of disk includes?
+21	fe	88	bank300	21	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	RAID 1 main feature?
+22	fe	89	bank300	22	C	domain_shell|vai_tro_stub|khop_dap_an	RAID 0 main feature?
+23	fe	90	bank300	23	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Instruction cycle order?
+24	fe	91	bank300	24	A	domain_shell|vai_tro_stub|khop_dap_an	PC register holds?
+25	fe	92	bank300	25	B	domain_shell|vai_tro_stub|khop_dap_an	Pipeline hazard types?
+26	fe	93	bank300	26	A	domain_shell|vai_tro_stub|khop_dap_an	DMA purpose?
+27	fe	94	bank300	27	D	domain_shell|vai_tro_stub|khop_dap_an	1 KB in traditional binary memory?
+28	fe	95	bank300	28	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Information amount with n bits?
+29	fe	96	bank300	29	B	domain_shell|vai_tro_stub|khop_dap_an	BCD means?
+30	fe	97	bank300	30	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	FPGA characteristic?
+31	fe	98	bank300	31	D	domain_shell|vai_tro_stub|khop_dap_an	Jobs executed collectively without user interaction?
+32	fe	99	bank300	32	A	domain_shell|vai_tro_stub|khop_dap_an	Payroll once a month best system?
+33	fe	100	bank300	33	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Airline reservation immediate response?
+34	fe	101	bank300	34	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Hard real-time example idea?
+35	fe	102	bank300	35	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	All processing on one central computer?
+36	fe	103	bank300	36	A	domain_shell|vai_tro_stub|khop_dap_an	Reliability series R=0.95 and 0.90?
+37	fe	104	bank300	37	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Parallel reliability formula idea?
+38	fe	105	bank300	38	A	domain_shell|vai_tro_stub|khop_dap_an	Availability formula?
+39	fe	106	bank300	39	D	domain_shell|vai_tro_stub|khop_dap_an	What is response time?
+40	fe	107	bank300	40	C	domain_shell|vai_tro_stub|khop_dap_an	What is throughput?
+41	fe	108	bank300	41	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	ACID: A means?
+42	fe	109	bank300	42	A	domain_shell|vai_tro_stub|khop_dap_an	Purpose of interface design?
+43	fe	110	bank300	43	D	domain_shell|vai_tro_stub|khop_dap_an	Why user-friendly UI?
+44	fe	111	bank300	44	A	domain_shell|vai_tro_stub|khop_dap_an	Purpose of human interface technology?
+45	fe	112	bank300	45	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Video multimedia means?
+46	fe	113	bank300	46	A	domain_shell|vai_tro_stub|khop_dap_an	Fail-safe means?
+47	fe	114	bank300	47	D	khop_dap_an	Hot standby means?
+48	fe	115	bank300	48	C	domain_shell|vai_tro_stub|khop_dap_an	Intermediary between apps and OS?
+49	fe	116	bank300	49	B	domain_shell|vai_tro_stub	Compiler translates how?
+50	fe	117	bank300	50	A	domain_shell|vai_tro_stub	Interpreter advantage vs compiler?
+51	fe	118	bank300	51	D	domain_shell|vai_tro_stub|khop_dap_an	Language closest to machine with mnemonics?
+52	fe	119	bank300	52	A	can_doi_chieu|so_ban_chat|khop_dap_an	Assembler does what?
+53	fe	120	bank300	53	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Combines object modules into executable?
+54	fe	121	bank300	54	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Loads program into memory?
+55	fe	122	bank300	55	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Software in ROM after power off?
+56	fe	123	bank300	56	A	domain_shell|vai_tro_stub|khop_dap_an	Allow view/modify/redistribute source?
+57	fe	124	bank300	57	B	domain_shell|vai_tro_stub|khop_dap_an	Free use without fee legally for OSS category?
+58	fe	125	bank300	58	A	domain_shell|vai_tro_stub|khop_dap_an	OS function deciding CPU time for process?
+59	fe	128	bank300	61	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Scheduling that may starve long jobs?
+60	fe	129	bank300	62	A	domain_shell|vai_tro_stub|khop_dap_an	Round Robin reduces?
+61	fe	130	bank300	63	D	domain_shell|vai_tro_stub|khop_dap_an	Coffman conditions count?
+62	fe	131	bank300	64	A	domain_shell|vai_tro_stub|khop_dap_an	Eliminate which condition to prevent deadlock (common)?
+63	fe	132	bank300	65	B	domain_shell|vai_tro_stub|khop_dap_an	Kernel modes?
+64	fe	133	bank300	66	C	domain_shell|vai_tro_stub|khop_dap_an	Microkernel vs monolithic?
+65	fe	134	bank300	67	D	domain_shell|vai_tro_stub|khop_dap_an	Virtual memory page fault?
+66	fe	135	bank300	68	C	domain_shell|vai_tro_stub|khop_dap_an	Thrashing?
+67	fe	136	bank300	69	B	domain_shell|vai_tro_stub|khop_dap_an	Reentrant program?
+68	fe	137	bank300	70	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	File organization fastest by unique ID?
+69	fe	138	bank300	71	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	File stores in arrival order unsorted?
+70	fe	139	bank300	72	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Sequential file good for?
+71	fe	140	bank300	73	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Backup types?
+72	fe	141	bank300	74	C	domain_shell|vai_tro_stub|khop_dap_an	OS multi-user concurrent files function?
+73	fe	142	bank300	75	D	domain_shell|vai_tro_stub	SQL remove table definition and data?
+74	fe	143	bank300	76	A	domain_shell|vai_tro_stub	DELETE vs DROP?
+75	fe	144	bank300	77	B	domain_shell|vai_tro_stub|khop_dap_an	1NF means?
+76	fe	145	bank300	78	A	domain_shell|vai_tro_stub|khop_dap_an	2NF means?
+77	fe	146	bank300	79	D	domain_shell|vai_tro_stub|khop_dap_an	3NF means?
+78	fe	147	bank300	80	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Primary key ensures?
+79	fe	148	bank300	81	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Foreign key ensures?
+80	fe	149	bank300	82	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	ACID D means?
+81	fe	150	bank300	83	D	domain_shell|vai_tro_stub|khop_dap_an	Selection relational op?
+82	fe	151	bank300	84	A	domain_shell|vai_tro_stub	Projection relational op?
+83	fe	152	bank300	85	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	JOIN does?
+84	fe	153	bank300	86	C	domain_shell|vai_tro_stub|khop_dap_an	Data warehouse vs OLTP?
+85	fe	154	bank300	87	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	2PC used for?
+86	fe	155	bank300	88	A	domain_shell|vai_tro_stub	OSI layer for routing?
+87	fe	156	bank300	89	B	domain_shell|vai_tro_stub|khop_dap_an	OSI layer for end-to-end reliability?
+88	fe	157	bank300	90	A	domain_shell|vai_tro_stub|khop_dap_an	OSI layer frames/MAC?
+89	fe	158	bank300	91	D	domain_shell|vai_tro_stub	DNS role?
+90	fe	159	bank300	92	A	domain_shell|khop_dap_an	DHCP role?
+91	fe	161	bank300	94	C	domain_shell|vai_tro_stub|khop_dap_an	HTTP port commonly?
+92	fe	162	bank300	95	D	domain_shell|vai_tro_stub|khop_dap_an	TDM explanation?
+93	fe	163	bank300	96	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	FDM explanation?
+94	fe	164	bank300	97	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	WDM explanation?
+95	fe	165	bank300	98	A	domain_shell|vai_tro_stub|khop_dap_an	CDMA/CDM idea?
+96	fe	166	bank300	99	D	domain_shell|khop_dap_an	CSMA/CD used in?
+97	fe	167	bank300	100	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	CSMA/CA used in?
+98	fe	168	bank300	101	B	domain_shell|vai_tro_stub|khop_dap_an	File 10^6 bytes on 64kbps 80% util time?
+99	fe	169	bank300	102	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Transfer time formula?
+100	fe	170	bank300	103	D	domain_shell|vai_tro_stub|khop_dap_an	CCU role?
+101	fe	171	bank300	104	A	domain_shell|vai_tro_stub|khop_dap_an	Modem role?
+102	fe	172	bank300	105	B	domain_shell|vai_tro_stub|khop_dap_an	Switch vs hub?
+103	fe	173	bank300	106	C	domain_shell	Router works at?
+104	fe	174	bank300	107	D	domain_shell|vai_tro_stub|khop_dap_an	IPv4 bits?
+105	fe	175	bank300	108	A	domain_shell|vai_tro_stub|khop_dap_an	IPv6 bits?
+106	fe	176	bank300	109	B	domain_shell|vai_tro_stub|khop_dap_an	NAT purpose?
+107	fe	177	bank300	110	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	CIA Availability definition?
+108	fe	178	bank300	111	D	domain_shell|vai_tro_stub|khop_dap_an	CIA Confidentiality?
+109	fe	179	bank300	112	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	CIA Integrity?
+110	fe	180	bank300	113	C	domain_shell|vai_tro_stub|khop_dap_an	ISMS Plan phase includes?
+111	fe	181	bank300	114	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	ISMS Act phase?
+112	fe	182	bank300	115	D	domain_shell|vai_tro_stub	Risk assessment proper approach?
+113	fe	183	bank300	116	A	domain_shell|vai_tro_stub	Security policy should?
+114	fe	184	bank300	117	B	domain_shell|vai_tro_stub|khop_dap_an	Hybrid crypto practical method?
+115	fe	185	bank300	118	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Public key crypto speed vs symmetric?
+116	fe	186	bank300	119	D	domain_shell|vai_tro_stub	Public encryption key distribution?
+117	fe	187	bank300	120	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Digital signature on released software aims?
+118	fe	188	bank300	121	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Email encryption effect?
+119	fe	189	bank300	122	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Iris authentication type?
+120	fe	190	bank300	123	D	khop_dap_an	WPA is?
+121	fe	191	bank300	124	A	domain_shell|vai_tro_stub|khop_dap_an	WAF is?
+122	fe	192	bank300	125	C	domain_shell|vai_tro_stub|khop_dap_an	Reverse proxy does?
+123	fe	193	bank300	126	C	domain_shell|vai_tro_stub|khop_dap_an	Forward proxy does?
+124	fe	194	bank300	127	D	domain_shell|vai_tro_stub|khop_dap_an	OP25B is?
+125	fe	195	bank300	128	A	domain_shell|vai_tro_stub|khop_dap_an	JPCERT/CC role?
+126	fe	196	bank300	129	B	domain_shell|vai_tro_stub|khop_dap_an	Social engineering example?
+127	fe	197	bank300	130	A	domain_shell|vai_tro_stub|khop_dap_an	SSL provides?
+128	fe	198	bank300	131	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Antivirus signature method good for?
+129	fe	199	bank300	132	C	domain_shell|vai_tro_stub|khop_dap_an	Admin action forgotten password after verify?
+130	fe	200	bank300	133	C	domain_shell|vai_tro_stub|khop_dap_an	Symmetric crypto other name?
+131	fe	201	bank300	134	A	domain_shell|vai_tro_stub	Hash property?
+132	fe	202	bank300	135	D	domain_shell|vai_tro_stub|khop_dap_an	Non-repudiation means?
+133	fe	203	bank300	136	A	domain_shell|vai_tro_stub|khop_dap_an	Least privilege?
+134	fe	204	bank300	137	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Phishing is related to?
+135	fe	205	bank300	138	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	FIFO structure?
+136	fe	206	bank300	139	D	domain_shell|vai_tro_stub|khop_dap_an	LIFO structure?
+137	fe	207	bank300	140	C	domain_shell|vai_tro_stub|khop_dap_an	Best for recursion call handling?
+138	fe	208	bank300	141	B	domain_shell|vai_tro_stub|khop_dap_an	Stack: PUSH3 PUSH7 POP PUSH5 PUSH9 POP top?
+139	fe	209	bank300	142	A	domain_shell|so_ban_chat|vai_tro_stub|khop_dap_an	Queue: ENQA ENQB DEQ ENQC ENQD DEQ front?
+140	fe	210	bank300	143	D	domain_shell|vai_tro_stub|khop_dap_an	Singly list traverse from?
+141	fe	211	bank300	144	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Insert X between B and C?
+142	fe	212	bank300	145	C	domain_shell|vai_tro_stub	Postfix of A+B*C?
+143	fe	213	bank300	146	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	RPN of (A+B)*(C-D/E)?
+144	fe	214	bank300	147	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	BST inorder of 50,30,70,20,40,60,80?
+145	fe	215	bank300	148	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	BST left subtree values?
+146	fe	216	bank300	149	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Divide and Conquer sort example?
+147	fe	217	bank300	150	A	domain_shell|vai_tro_stub|khop_dap_an	Bubble sort idea?
+148	fe	218	bank300	151	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Selection sort first pass on 84 73 28 16 51?
+149	fe	219	bank300	152	C	domain_shell|so_ban_chat|vai_tro_stub|khop_dap_an	Linear search needs sorted data?
+150	fe	220	bank300	153	C	domain_shell|vai_tro_stub|khop_dap_an	Binary search needs sorted data?
+151	fe	221	bank300	154	A	domain_shell|vai_tro_stub|khop_dap_an	Linear search best comparisons?
+152	fe	222	bank300	155	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Linear search worst complexity?
+153	fe	223	bank300	156	A	domain_shell|vai_tro_stub|khop_dap_an	Binary search complexity?
+154	fe	224	bank300	157	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Array access time complexity?
+155	fe	225	bank300	158	C	domain_shell|vai_tro_stub|khop_dap_an	Linked list insert advantage?
+156	fe	226	bank300	159	D	domain_shell|vai_tro_stub|khop_dap_an	Full binary tree 31 nodes min height (edges)?
+157	fe	227	bank300	160	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Preorder order?
+158	fe	228	bank300	161	B	domain_shell|vai_tro_stub|khop_dap_an	Postorder order?
+159	fe	229	bank300	162	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Hash average search?
+160	fe	230	bank300	163	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Merge sort complexity?
+161	fe	231	bank300	164	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Quicksort worst case?
+162	fe	232	bank300	165	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	CSR means?
+163	fe	233	bank300	166	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	BCP means?
+164	fe	234	bank300	167	D	domain_shell|vai_tro_stub|khop_dap_an	PDCA letters?
+165	fe	235	bank300	168	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Assets = ?
+166	fe	236	bank300	169	B	domain_shell|vai_tro_stub|khop_dap_an	Break-even idea?
+167	fe	239	bank300	172	C	domain_shell|vai_tro_stub|khop_dap_an	PERT critical path float?
+168	fe	240	bank300	173	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Competitive leader strategy?
+169	fe	241	bank300	174	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Nicher strategy?
+170	fe	242	bank300	175	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	4P marketing?
+171	fe	243	bank300	176	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Product life cycle stages?
+172	fe	244	bank300	177	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	CIO approves?
+173	fe	245	bank300	178	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	ITIL de facto for?
+174	fe	246	bank300	179	D	domain_shell|vai_tro_stub|khop_dap_an	SLA is?
+175	fe	247	bank300	180	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Incident vs Problem?
+176	fe	248	bank300	181	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Service desk is?
+177	fe	249	bank300	182	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	ISO 20000 about?
+178	fe	250	bank300	183	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Waterfall model?
+179	fe	251	bank300	184	C	domain_shell|vai_tro_stub|khop_dap_an	V-model links?
+180	fe	252	bank300	185	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Unit test tests?
+181	fe	253	bank300	186	A	domain_shell|vai_tro_stub|khop_dap_an	Black-box testing?
+182	fe	254	bank300	187	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	White-box testing?
+183	fe	255	bank300	188	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	High cohesion good?
+184	fe	256	bank300	189	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Low coupling good?
+185	fe	257	bank300	190	A	domain_shell|vai_tro_stub|khop_dap_an	Configuration baseline?
+186	fe	258	bank300	191	D	domain_shell|vai_tro_stub	WBS is?
+187	fe	259	bank300	192	C	domain_shell|vai_tro_stub	Project constraints QCD?
+188	fe	260	bank300	193	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	SPI = ?
+189	fe	261	bank300	194	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	CPI = ?
+190	fe	262	bank300	195	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	SPI<1 means?
+191	fe	263	bank300	196	A	domain_shell|vai_tro_stub	Risk responses?
+192	fe	264	bank300	197	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Internal control SoD?
+193	fe	265	bank300	198	C	domain_shell|vai_tro_stub|khop_dap_an	System audit is?
+194	fe	266	bank300	199	D	domain_shell|vai_tro_stub|khop_dap_an	IT governance aims?
+195	fe	267	bank300	200	A	domain_shell|vai_tro_stub|khop_dap_an	COBIT is?
+196	fe	268	bank300	201	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	SaaS means?
+197	fe	269	bank300	202	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	PaaS means?
+198	fe	270	bank300	203	D	domain_shell|vai_tro_stub|khop_dap_an	IaaS means?
+199	fe	271	bank300	204	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	B2C e-business?
+200	fe	272	bank300	205	C	domain_shell|vai_tro_stub|khop_dap_an	Benchmarking?
+201	fe	273	bank300	206	A	domain_shell|vai_tro_stub	Outsourcing offshore risk?
+202	fe	274	bank300	207	D	domain_shell|vai_tro_stub|khop_dap_an	Copyright protects?
+203	fe	275	bank300	208	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Patent protects?
+204	fe	276	bank300	209	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Going concern?
+205	fe	277	bank300	210	C	domain_shell|vai_tro_stub|khop_dap_an	Disclosure/IR?
+206	fe	278	bank300	211	D	domain_shell|vai_tro_stub|khop_dap_an	Green IT?
+207	fe	279	bank300	212	C	domain_shell|vai_tro_stub|khop_dap_an	MBO?
+208	fe	280	bank300	213	B	domain_shell|vai_tro_stub|khop_dap_an	ERP supports?
+209	fe	281	bank300	214	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	CRM supports?
+210	fe	282	bank300	215	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	SCM supports?
+211	fe	283	bank300	216	A	domain_shell|vai_tro_stub|khop_dap_an	Requirements: functional vs non-functional?
+212	fe	284	bank300	217	C	domain_shell|vai_tro_stub|khop_dap_an	Walk-through review?
+213	fe	285	bank300	218	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Inspection review?
+214	fe	286	bank300	219	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Corrective maintenance?
+215	fe	287	bank300	220	A	domain_shell|vai_tro_stub|khop_dap_an	Adaptive maintenance?
+216	fe	288	bank300	221	B	domain_shell|vai_tro_stub|khop_dap_an	Perfective maintenance?
+217	fe	289	bank300	222	A	domain_shell|vai_tro_stub|khop_dap_an	Verification vs Validation?
+218	fe	290	bank300	223	D	domain_shell|vai_tro_stub	Project temporary means?
+219	fe	291	bank300	224	C	domain_shell|vai_tro_stub|khop_dap_an	Stakeholder is?
+220	fe	292	bank300	225	C	domain_shell|vai_tro_stub|khop_dap_an	PMO role?
+221	fe	293	bank300	226	A	domain_shell|vai_tro_stub|khop_dap_an	Matrix organization?
+222	fe	294	bank300	227	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Critical path activities have?
+223	fe	295	bank300	228	A	domain_shell|vai_tro_stub	Crashing a schedule?
+224	fe	296	bank300	229	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Fast-tracking?
+225	fe	297	bank300	230	C	domain_shell|vai_tro_stub|khop_dap_an	Known error in ITIL?
+226	fe	298	bank300	231	D	domain_shell|vai_tro_stub|khop_dap_an	CMDB?
+227	fe	299	bank300	232	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Availability management goal?
+228	fe	300	bank300	233	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	IT service continuity related to?
+229	fe	301	bank300	234	A	domain_shell|vai_tro_stub|khop_dap_an	Preventive control example?
+230	fe	302	bank300	235	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Detective control example?
+231	fe	303	bank300	236	A	domain_shell|vai_tro_stub|khop_dap_an	External audit vs internal?
+232	fe	304	bank300	237	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	General IT controls vs application controls?
+233	fe	305	bank300	238	C	domain_shell|vai_tro_stub|khop_dap_an	Series reliabilities 0.9 and 0.9?
+234	fe	306	bank300	239	D	domain_shell|vai_tro_stub|khop_dap_an	Series 0.99 * 0.99?
+235	fe	307	bank300	240	A	domain_shell|vai_tro_stub|khop_dap_an	Parallel two 0.9 modules approx R?
+236	fe	308	bank300	241	B	domain_shell|vai_tro_stub	MTBF=99 MTTR=1 availability?
+237	fe	309	bank300	242	A	domain_shell|vai_tro_stub|khop_dap_an	2^10 equals?
+238	fe	310	bank300	243	D	domain_shell|vai_tro_stub|khop_dap_an	2^8 equals?
+239	fe	311	bank300	244	C	domain_shell|vai_tro_stub|khop_dap_an	16-bit patterns count?
+240	fe	312	bank300	245	B	domain_shell|vai_tro_stub|khop_dap_an	Hex F decimal?
+241	fe	313	bank300	246	A	domain_shell|vai_tro_stub|khop_dap_an	Hex 10 decimal?
+242	fe	314	bank300	247	D	domain_shell|vai_tro_stub|khop_dap_an	Binary 1010 decimal?
+243	fe	315	bank300	248	A	domain_shell|vai_tro_stub	Postfix of A*B+C?
+244	fe	316	bank300	249	B	domain_shell|vai_tro_stub|khop_dap_an	Stack empty PUSH1 PUSH2 POP result top?
+245	fe	317	bank300	250	C	domain_shell|vai_tro_stub|khop_dap_an	Queue empty ENQ1 ENQ2 DEQ front?
+246	fe	318	bank300	251	D	domain_shell|vai_tro_stub|khop_dap_an	Best OS for many short interactive jobs fairness?
+247	fe	319	bank300	252	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Starvation risk algorithm?
+248	fe	320	bank300	253	B	khop_dap_an	Process blocked on keyboard input state?
+249	fe	321	bank300	254	A	domain_shell|vai_tro_stub	Which layer HTTP belongs TCP/IP?
+250	fe	322	bank300	255	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which layer IP?
+251	fe	323	bank300	256	C	domain_shell|vai_tro_stub|khop_dap_an	Protocol for secure web?
+252	fe	324	bank300	257	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Mail send protocol?
+253	fe	325	bank300	258	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Mail receive protocols?
+254	fe	326	bank300	259	D	domain_shell|vai_tro_stub	RAID with parity single disk?
+255	fe	327	bank300	260	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Hot swap related often to?
+256	fe	328	bank300	261	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	UPS supports which security aspect mainly?
+257	fe	329	bank300	262	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Clean desk policy is which measure type?
+258	fe	330	bank300	263	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Lock on server room door?
+259	fe	331	bank300	264	C	domain_shell|vai_tro_stub|khop_dap_an	Patch management is?
+260	fe	332	bank300	265	B	domain_shell|vai_tro_stub	SQL injection defense?
+261	fe	333	bank300	266	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	XSS related to?
+262	fe	334	bank300	267	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Digital certificate issued by?
+263	fe	335	bank300	268	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Symmetric algorithm example?
+264	fe	336	bank300	269	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Asymmetric example?
+265	fe	337	bank300	270	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Hash example family?
+266	fe	338	bank300	271	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	MFA means?
+267	fe	339	bank300	272	A	domain_shell|vai_tro_stub|khop_dap_an	RBAC means?
+268	fe	340	bank300	273	B	domain_shell|khop_dap_an	DMZ purpose?
+269	fe	341	bank300	274	A	domain_shell|vai_tro_stub|khop_dap_an	IDS vs IPS?
+270	fe	342	bank300	275	D	domain_shell|vai_tro_stub|khop_dap_an	VPN purpose?
+271	fe	343	bank300	276	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Throughput high means?
+272	fe	344	bank300	277	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Turnaround time used in?
+273	fe	345	bank300	278	A	domain_shell|vai_tro_stub|khop_dap_an	Soft real-time miss deadline?
+274	fe	346	bank300	279	D	domain_shell|vai_tro_stub|khop_dap_an	Client-server model?
+275	fe	347	bank300	280	A	domain_shell|vai_tro_stub|khop_dap_an	3-tier layers?
+276	fe	348	bank300	281	B	domain_shell|vai_tro_stub|khop_dap_an	Normalization goal?
+277	fe	349	bank300	282	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	E-R entity drawn as?
+278	fe	350	bank300	283	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Relationship cardinality M:N?
+279	fe	351	bank300	284	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	COMMIT does?
+280	fe	352	bank300	285	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	ROLLBACK does?
+281	fe	353	bank300	286	A	domain_shell|vai_tro_stub|khop_dap_an	Index purpose?
+282	fe	354	bank300	287	D	domain_shell|vai_tro_stub|khop_dap_an	View in DB?
+283	fe	355	bank300	288	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	GRANT/REVOKE?
+284	fe	356	bank300	289	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	OLTP means?
+285	fe	357	bank300	290	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	ETL means?
+286	fe	358	bank300	291	D	domain_shell|vai_tro_stub|khop_dap_an	Bus topology weakness?
+287	fe	359	bank300	292	A	domain_shell|vai_tro_stub|khop_dap_an	Star topology center device often?
+288	fe	360	bank300	293	B	domain_shell|vai_tro_stub|khop_dap_an	Optical fiber advantage?
+289	fe	361	bank300	294	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Twisted pair common use?
+290	fe	362	bank300	295	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	CRC used for?
+291	fe	363	bank300	296	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Parity bit used for?
+292	fe	364	bank300	297	C	domain_shell|vai_tro_stub|khop_dap_an	Sliding window improves?
+293	fe	366	bank300	299	D	domain_shell|can_doi_chieu|so_ban_chat|khop_dap_an	ICMP used by?
+294	fe	367	bank300	300	A	domain_shell|can_doi_chieu|so_ban_chat|khop_dap_an	Private IP example?

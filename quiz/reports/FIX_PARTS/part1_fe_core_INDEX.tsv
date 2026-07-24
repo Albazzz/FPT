@@ -1,0 +1,164 @@
+n	subject	id	task	num	answer	flags	question_short
+1	fe	712	albazzz	332	D	domain_shell|vai_tro_stub	Which statement correctly describes the advantage of an interpreter compared with a compiler?
+2	fe	713	albazzz	453	A	domain_shell|vai_tro_stub|khop_dap_an	Thrashing?
+3	fe	714	albazzz	561	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Product life cycle stages?
+4	fe	715	albazzz	564	C	domain_shell|vai_tro_stub|khop_dap_an	SLA is?
+5	fe	716	albazzz	565	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Incident vs Problem?
+6	fe	717	albazzz	566	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Service desk is?
+7	fe	718	albazzz	568	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Waterfall model?
+8	fe	719	albazzz	571	A	domain_shell|vai_tro_stub|khop_dap_an	Black-box testing?
+9	fe	720	albazzz	572	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	White-box testing?
+10	fe	721	albazzz	586	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	SaaS means?
+11	fe	722	albazzz	590	C	domain_shell|vai_tro_stub|khop_dap_an	Benchmarking?
+12	fe	723	albazzz	609	B	domain_shell|vai_tro_stub|khop_dap_an	Stakeholder is?
+13	fe	724	albazzz	613	A	domain_shell|vai_tro_stub	Crashing a schedule?
+14	fe	725	albazzz	616	D	domain_shell|vai_tro_stub|khop_dap_an	CMDB?
+15	fe	726	albazzz	683	D	domain_shell|vai_tro_stub	ARP resolves?
+16	fe	368	datajfe	1	D	domain_shell|vai_tro_stub|khop_dap_an	A LAN access method circulates control information in a fixed direction. A station may transmit only after receiving thi
+17	fe	369	datajfe	2	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	An organization wants to exchange product model data using an international standard specifically intended for product m
+18	fe	371	datajfe	4	D	domain_shell|vai_tro_stub	A project manager shortens an activity that is not currently on the critical path. After the change, the project complet
+19	fe	372	datajfe	5	D	domain_shell|vai_tro_stub|khop_dap_an	An attacker secretly intercepts data traveling across a network and steals information without necessarily modifying the
+20	fe	373	datajfe	6	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	A software organization wants an international standard that structures lifecycle processes for acquisition, supply, dev
+21	fe	374	datajfe	7	A	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate explanation of a Java servlet?
+22	fe	375	datajfe	8	D	domain_shell|vai_tro_stub	A product vendor claims that its system provides several advanced security features. A customer needs a framework for sp
+23	fe	376	datajfe	9	C	domain_shell|vai_tro_stub	A software organization requires every project to follow documented plans and ensures that requirements, work products, 
+24	fe	378	datajfe	11	D	domain_shell|vai_tro_stub|khop_dap_an	A communication protocol transmits data in frames, supports continuous transfer and full-duplex communication, and inser
+25	fe	379	datajfe	12	D	domain_shell|vai_tro_stub	Which of the following is a purpose of use of a message digest in message authentication?
+26	fe	380	datajfe	13	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which of the following is software that can be used free of charge for a trial period, but if the user wishes to continu
+27	fe	381	datajfe	14	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	A network service must carry voice, video, and data using fixed-length transmission units. Connections are mapped to vir
+28	fe	382	datajfe	15	D	domain_shell|vai_tro_stub|khop_dap_an	A communication system must allow terminals with different transmission speeds to exchange data. Intermediate switching 
+29	fe	383	datajfe	16	A	domain_shell|vai_tro_stub|khop_dap_an	Deleting root 50 from the given BST using inorder successor results in which new root?
+30	fe	384	datajfe	17	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	An organization wants to detect whether a transferred document has been altered. Management is not primarily concerned w
+31	fe	386	datajfe	19	B	domain_shell|vai_tro_stub	A security team deploys a firewall and assumes that all forms of information theft are now prevented. An attacker later 
+32	fe	387	datajfe	20	B	domain_shell|vai_tro_stub|khop_dap_an	A database query must combine every possible row from relation A with every possible row from relation B, without requir
+33	fe	388	datajfe	21	C	domain_shell|vai_tro_stub	Two transactions update different records and then each requests a lock on the record already locked by the other transa
+34	fe	389	datajfe	22	D	domain_shell|vai_tro_stub	A transmission scheme divides the bandwidth of an analog line into several independent channels. Some capacity is intent
+35	fe	390	datajfe	23	A	domain_shell|vai_tro_stub|khop_dap_an	A company needs high-speed Internet access over existing telephone lines. Download traffic is expected to be much heavie
+36	fe	391	datajfe	24	D	domain_shell|vai_tro_stub	In an arrow diagram, two activities must preserve a dependency relationship even though no actual work, resource consump
+37	fe	392	datajfe	25	A	domain_shell|vai_tro_stub|khop_dap_an	A queue is modeled as M/M/1, but analysts discover that service times are fixed and identical for every arrival rather t
+38	fe	393	datajfe	26	A	domain_shell|vai_tro_stub	A transaction processing system is described as an M/M/1 queue. During observation, analysts discover that requests are 
+39	fe	395	datajfe	28	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	A sender encrypts a message using the receiver's publicly available key. Only the receiver should be able to recover the
+40	fe	396	datajfe	29	B	domain_shell|vai_tro_stub|khop_dap_an	Linear Search trên N phần tử có số lần so sánh tốt nhất là:
+41	fe	397	datajfe	30	A	khop_dap_an	A distributed database update affects several database sites. The system must ensure that the update does not leave some
+42	fe	399	datajfe	32	A	khop_dap_an	According to ISO/IEC 27001, which best defines availability?
+43	fe	400	datajfe	33	D	domain_shell|vai_tro_stub|khop_dap_an	A receiving system must identify damaged frames and request retransmission when a positive acknowledgment is not receive
+44	fe	401	datajfe	34	C	domain_shell|vai_tro_stub	An organization already uses standard processes across projects and manages its processes proactively. It now selects su
+45	fe	402	datajfe	35	B	domain_shell|vai_tro_stub|khop_dap_an	During a backward calculation, several activities diverge from the same node toward different later nodes. Which princip
+46	fe	403	datajfe	36	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	A transaction performs several updates and then encounters a logical program error before successful completion. Recover
+47	fe	405	datajfe	38	C	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate role of FCS in a frame that is transmitted through the HDLC procedure?
+48	fe	406	datajfe	39	C	domain_shell	A company encrypts confidential files using the same secret key for both encryption and decryption. It later publishes t
+49	fe	407	datajfe	40	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which of the following can be assigned to a computer as the IP address of class C?
+50	fe	409	fuexam	1	B	domain_shell|vai_tro_stub	A check digit for a 4-digit number abcd can be calculated as follows: mod((a*4+b*3+c*2+d*1), 10). When the check digit f
+51	fe	410	fuexam	2	A	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate explanation of the spooling function?
+52	fe	411	fuexam	3	D	khop_dap_an	Which of the following is a service delivery process that is defined, agreed, recorded, and managed in IT service manage
+53	fe	412	fuexam	4	C	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate description concerning the maturity level in the staged representation of CMMI?
+54	fe	413	fuexam	5	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which of the following is equivalent to the result of the arithmetic expression “753₈ – A6₁₆”? Here, each number is writ
+55	fe	414	fuexam	6	C	domain_shell|vai_tro_stub|khop_dap_an	Which of following statement is INCORRECT of cloud computing?
+56	fe	415	fuexam	7	D	domain_shell|vai_tro_stub|khop_dap_an	Which of the following statements is TRUE about the critical path in PERT?
+57	fe	416	fuexam	8	D	domain_shell|vai_tro_stub	Which of the following is the most appropriate indicator that is directly helpful in managing software quality in a syst
+58	fe	417	fuexam	9	A	domain_shell|vai_tro_stub|khop_dap_an	The following statement is true/ false about CRM? Customer Relationship Management (CRM) is a cross-functional enterpris
+59	fe	419	fuexam	11	A	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is a role of the program register (i.e., program counter) of the CPU?
+60	fe	420	fuexam	12	A	domain_shell|vai_tro_stub	What is the function point value of a program that has the functions and characteristics shown in the table below? Here,
+61	fe	421	fuexam	13	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which of the following is an appropriate technique that is used for implementing a queue as a data structure?
+62	fe	422	fuexam	14	B	domain_shell|vai_tro_stub	There is a digital video recording system installed with four security cameras. In this system, the video data from each
+63	fe	423	fuexam	15	A	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate combination of the fundamental object-oriented programming concepts?
+64	fe	424	fuexam	16	B	domain_shell|vai_tro_stub|khop_dap_an	A systems design is represented using several diagrams. When a system analyst wants to confirm the design information su
+65	fe	425	fuexam	17	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which of the following is a protocol for e-mail on the Internet that allows an e-mail client to access e-mail on a remot
+66	fe	426	fuexam	18	A	domain_shell|vai_tro_stub|khop_dap_an	Determine which type of network class and default subnet mask of this IP address belong to? IP version 4 = 216.58.221.78
+67	fe	427	fuexam	19	A	domain_shell|vai_tro_stub	In a certain project, each of the 6 employee members needs to communicate on a one-to-one basis. What is the minimum num
+68	fe	428	fuexam	20	B	domain_shell|vai_tro_stub|khop_dap_an	The syntax rules of the field identifier "field ID" are represented in BNF notation as shown below. When each ID is defi
+69	fe	429	fuexam	21	D	domain_shell|vai_tro_stub|khop_dap_an	A GUI screen contains a candidate list from which a user can select an item. Which of the following is an appropriate ca
+70	fe	430	fuexam	22	B	domain_shell|vai_tro_stub|khop_dap_an	When the binary tree shown in the figure below is stored in a one-dimensional array A under the following conditions, wh
+71	fe	431	fuexam	23	A	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is the appropriate combination of 4 color inks or toners for a full-color printer?
+72	fe	434	fuexam	26	D	domain_shell|vai_tro_stub	When the expression (A - 2 x (B + C) - D x E) x F in conventional infix notation is converted to the prefix expression, 
+73	fe	435	fuexam	27	B	domain_shell|vai_tro_stub|khop_dap_an	Multiple directories having the names A and B are managed in the structure shown below. When the current directory is ch
+74	fe	436	fuexam	28	D	khop_dap_an	Which of the following is an appropriate description in comparison of how to safeguard IC cards and magnetic cards again
+75	fe	437	fuexam	29	D	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate description concerning a use case diagram in UML?
+76	fe	438	fuexam	30	B	domain_shell|vai_tro_stub|khop_dap_an	A part of a program was changed to add a new function to a system in operation. Which of the following is the most appro
+77	fe	439	fuexam	31	B	khop_dap_an	Which of the following is an explanation of the use case diagram shown below?
+78	fe	440	fuexam	32	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Which of the following refers to online scams where thieves attempt to entice e-mail recipients into clicking on a link 
+79	fe	441	fuexam	33	A	domain_shell|khop_dap_an	Which of the following is the appropriate item to be checked when the ordered software is delivered?
+80	fe	442	fuexam	34	D	khop_dap_an	Which of the following helps improve availability?
+81	fe	443	fuexam	35	C	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is the main purpose of a penetration test?
+82	fe	445	fuexam	37	B	domain_shell|vai_tro_stub|khop_dap_an	Which of the following means product improvement, and product disposal are planned according to each stage of introducti
+83	fe	446	fuexam	38	A	domain_shell|vai_tro_stub|khop_dap_an	What is the data remaining on the stack after doing the following operations, assume that from start, stack is empty? pu
+84	fe	448	fuexam	40	C	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is the main task of a service desk?
+85	fe	450	fuexam	42	C	domain_shell|vai_tro_stub	In the RAID3 system shown below, three disks (Disks 0 through 2) for byte-striped data and one dedicated parity disk (Di
+86	fe	451	fuexam	43	A	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is the most appropriate description concerning the exclusive control of a DBMS?
+87	fe	452	fuexam	44	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which of the following is a protocol for e-mail on the Internet that supports not only text but other data such as audio
+88	fe	453	fuexam	45	B	domain_shell|vai_tro_stub|khop_dap_an	There is an 8-bit register where integers are represented in binary by using 2's complement for negative numbers. When t
+89	fe	454	fuexam	46	D	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an activity performed during the external design phase of system development?
+90	fe	455	fuexam	47	C	domain_shell|vai_tro_stub|khop_dap_an	According to a survey of 100 students, there are 40 students studying English, 30 studying French, and 25 studying Spani
+91	fe	456	fuexam	48	C	domain_shell|vai_tro_stub|khop_dap_an	When CPU processing and printing are performed for four jobs under the conditions below, how many minutes does it take t
+92	fe	457	fuexam	49	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	It focuses on system implementation behavior and is preferred over verification for the following reasons: - It facilita
+93	fe	458	fuexam	50	B	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is INCORRECT formular to determine break-event point?
+94	fe	459	fuexam	51	B	khop_dap_an	Which of the following is an explanation of SFA (Sales Force Automation)?
+95	fe	460	fuexam	52	A	domain_shell|vai_tro_stub|khop_dap_an	What is HDLC protocol stands for?
+96	fe	461	fuexam	53	B	domain_shell|vai_tro_stub|khop_dap_an	Which of the following can be achieved by using SSL/TLS?
+97	fe	462	fuexam	54	D	domain_shell|vai_tro_stub	There exist the same two devices, each with an MTBF of 45 hours and an MTTR of 5 hours. What is the availability of a sy
+98	fe	2	test	2	D	domain_shell|vai_tro_stub|khop_dap_an	A software development team wants to distribute software while allowing users to view, modify, and redistribute the sour
+99	fe	3	test	3	A	domain_shell|vai_tro_stub|khop_dap_an	What is the main purpose of interface design?
+100	fe	4	test	4	B	domain_shell|vai_tro_stub|khop_dap_an	How many bits are contained in one byte?
+101	fe	5	test	5	A	domain_shell|vai_tro_stub	A compiler translates a source program containing 20,000 lines of code. Which statement best describes the compilation p
+102	fe	6	test	6	D	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is a non-volatile storage device?
+103	fe	7	test	7	A	domain_shell|vai_tro_stub	Which SQL command removes a table definition and its data?
+104	fe	8	test	8	B	domain_shell|vai_tro_stub|khop_dap_an	Which OS management function is primarily responsible for deciding which process receives CPU time?
+105	fe	9	test	9	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which of the following is classified as a peripheral device?
+106	fe	10	test	10	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which generation of computers introduced VLSI technology?
+107	fe	11	test	11	A	domain_shell|vai_tro_stub|khop_dap_an	Why is user-friendly interface design important?
+108	fe	12	test	12	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which of the following devices was mainly used as the logic gate in first-generation computers?
+109	fe	13	test	13	C	domain_shell|vai_tro_stub|khop_dap_an	Which type of software acts as an intermediary between application software and the operating system?
+110	fe	14	test	14	D	domain_shell|vai_tro_stub	Which statement correctly describes the advantage of an interpreter compared with a compiler?
+111	fe	15	test	15	C	domain_shell|vai_tro_stub|khop_dap_an	Which type of processing system executes jobs collectively without user interaction?
+112	fe	16	test	16	C	domain_shell|vai_tro_stub|khop_dap_an	Two modules have reliabilities 0.95 and 0.90 in a series system. What is the system reliability?
+113	fe	17	test	17	C	domain_shell|vai_tro_stub|khop_dap_an	Which programming language is closest to machine language and uses mnemonic instructions?
+114	fe	18	test	18	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	What is the smallest unit of data representation in computers?
+115	fe	19	test	19	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	What is the characteristic of auxiliary storage?
+116	fe	20	test	20	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which of the following character codes is internationally standardized for multilingual text representation?
+117	fe	21	test	21	A	domain_shell|vai_tro_stub|khop_dap_an	Which Coffman condition can be eliminated to prevent deadlock?
+118	fe	22	test	22	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which of the following software is typically stored in ROM and remains available even when power is turned off?
+119	fe	23	test	23	A	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is performed in the Plan phase of a PDCA model that is applied to any ISMS process?
+120	fe	24	test	24	B	domain_shell|vai_tro_stub|khop_dap_an	When a file of 10^6 bytes is transmitted by using a 64 kbps line, approximately how long (in seconds) does it take to tr
+121	fe	25	test	25	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which scheduling algorithm may cause starvation?
+122	fe	26	test	26	D	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate description of cryptography?
+123	fe	27	test	27	A	domain_shell|vai_tro_stub|khop_dap_an	An 8-bit two's complement value is 11101010. What is its decimal value?
+124	fe	28	test	28	B	domain_shell|vai_tro_stub	Which of the following is an objective of a software developer in attaching a digital signature to software when softwar
+125	fe	29	test	29	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Thuật toán nào thuộc nhóm Divide and Conquer?
+126	fe	30	test	30	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Which of the following is biometric authentication that uses information which can be obtained from the human eye?
+127	fe	31	test	31	C	domain_shell|vai_tro_stub	A company wants software that can be legally copied and used without purchasing a license fee. Which category is most ap
+128	fe	32	test	32	C	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate description of JPCERT/CC?
+129	fe	33	test	33	C	domain_shell|vai_tro_stub|khop_dap_an	What is availability in system reliability evaluation?
+130	fe	34	test	34	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Which component combines multiple object modules into a single executable program?
+131	fe	35	test	35	A	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate description of WPA? (Từ cuối hơi mờ, dựa vào đáp án có thể là WPA hoặc WAF)
+132	fe	36	test	36	B	domain_shell|vai_tro_stub	Which SQL correctly returns the second-highest salary for each department?
+133	fe	37	test	37	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Cấu trúc dữ liệu nào hoạt động theo nguyên tắc FIFO?
+134	fe	38	test	38	D	domain_shell|vai_tro_stub|khop_dap_an	Which processing system is most appropriate for payroll calculations performed once a month?
+135	fe	39	test	39	A	domain_shell|vai_tro_stub	Which of the following is an effect of e-mail encryption?
+136	fe	40	test	40	B	domain_shell|vai_tro_stub	Which of the following is an appropriate description of risk assessment?
+137	fe	41	test	41	A	domain_shell|vai_tro_stub	Which type of processing system is suitable for airline reservation systems requiring immediate responses?
+138	fe	42	test	42	D	domain_shell|vai_tro_stub|khop_dap_an	Cấu trúc dữ liệu nào phù hợp nhất để xử lý lời gọi hàm đệ quy?
+139	fe	43	test	43	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which file organization method stores records in the order they are received, without any sorting?
+140	fe	44	test	44	B	domain_shell|vai_tro_stub|khop_dap_an	Which processing system concentrates all processing tasks on one central computer?
+141	fe	45	test	45	A	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate description of the role of a reverse proxy?
+142	fe	46	test	46	D	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate explanation of OP25B?
+143	fe	47	test	47	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which multimedia element represents moving visual content?
+144	fe	48	test	48	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Thuật toán nào có ý tưởng đẩy phần tử lớn nhất về cuối dãy sau mỗi lượt quét?
+145	fe	49	test	49	C	domain_shell|vai_tro_stub|khop_dap_an	What is the value of hexadecimal number A in decimal notation?
+146	fe	50	test	50	D	domain_shell|vai_tro_stub|khop_dap_an	What is response time in system evaluation?
+147	fe	51	test	51	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Which of the following is a secure protocol that combines an authentication function between a client and a server with 
+148	fe	52	test	52	B	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate description concerning antivirus software?
+149	fe	53	test	53	A	domain_shell|vai_tro_stub	What is the main advantage of semiconductor memory over magnetic disks?
+150	fe	54	test	54	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Thuật toán nào không yêu cầu dữ liệu được sắp xếp trước?
+151	fe	55	test	55	A	domain_shell|vai_tro_stub	Which of the following is an appropriate description of information security policy?
+152	fe	56	test	56	B	domain_shell|vai_tro_stub|khop_dap_an	Which of the following best describes an assembler?
+153	fe	57	test	57	A	domain_shell|vai_tro_stub	When an internal user of a company forgets the password, which of the following is an appropriate action a security admi
+154	fe	58	test	58	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which number system uses digits from 0 to 7?
+155	fe	59	test	59	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	A database file contains one million records. Users frequently retrieve records using a unique customer ID. Which file o
+156	fe	60	test	60	B	domain_shell|vai_tro_stub	According to ISO/IEC 27001 (JIS Q 27001), which of the following is the definition of availability in information securi
+157	fe	61	test	61	A	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is an appropriate explanation of TDM that is one of the multiplexing techniques?
+158	fe	62	test	62	D	domain_shell|khop_dap_an	Among the descriptions concerning devices that constitute a network, which of the following is an explanation concerning
+159	fe	63	test	63	C	khop_dap_an	Which of the following is an appropriate description of WPA?
+160	fe	64	test	64	C	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is the action that corresponds to social engineering?
+161	fe	65	test	65	C	domain_shell|vai_tro_stub|khop_dap_an	What is the purpose of human interface technology?
+162	fe	66	test	66	D	domain_shell|vai_tro_stub|khop_dap_an	Which memory loses its contents when power is turned off?
+163	fe	67	test	67	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	A software system must support multiple users accessing files simultaneously while preventing conflicting updates. Which

@@ -1,0 +1,243 @@
+n	subject	id	task	num	answer	flags	question_short
+1	fe	463	books	55	B	domain_shell|vai_tro_stub|khop_dap_an	Which of the following is a role of the program counter (program register) of the CPU?
+2	fe	464	books	56	A	domain_shell|vai_tro_stub|khop_dap_an	Which memory type is typically the fastest for the CPU to access?
+3	fe	465	books	57	C	domain_shell|vai_tro_stub|khop_dap_an	In RAID with parity, which operation is commonly used to reconstruct lost data?
+4	fe	466	books	58	B	domain_shell|vai_tro_stub	What does MTBF stand for in reliability discussions?
+5	fe	467	books	59	A	khop_dap_an	Availability of a single device is commonly approximated by which formula?
+6	fe	468	books	60	C	domain_shell|vai_tro_stub|khop_dap_an	Two identical devices each have availability 0.9. What is the availability if connected in series?
+7	fe	469	books	61	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which combination of inks is typical for full-color printing (CMYK)?
+8	fe	470	books	62	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	An arithmetic right shift of a negative number in 2's complement representation:
+9	fe	471	books	63	B	domain_shell|vai_tro_stub|khop_dap_an	Which statement about IC cards vs magnetic cards is appropriate?
+10	fe	472	books	64	C	domain_shell|vai_tro_stub|khop_dap_an	Spooling primarily improves system efficiency by:
+11	fe	473	books	65	B	domain_shell|vai_tro_stub|khop_dap_an	Which of the following best describes multiprogramming?
+12	fe	474	books	66	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	A system with two devices in parallel fails only if both fail. Compared with series connection, parallel generally:
+13	fe	475	books	67	C	domain_shell|vai_tro_stub|khop_dap_an	Which is an appropriate purpose of a system performance indicator such as throughput?
+14	fe	476	books	68	B	domain_shell|vai_tro_stub|khop_dap_an	Client/server architecture typically separates:
+15	fe	477	books	69	A	domain_shell|vai_tro_stub|khop_dap_an	Which is a primary role of an operating system?
+16	fe	478	books	70	B	domain_shell|vai_tro_stub|khop_dap_an	Middleware is best described as:
+17	fe	479	books	71	C	domain_shell|vai_tro_stub	Open source software generally means:
+18	fe	480	books	72	A	domain_shell|vai_tro_stub	A compiler typically:
+19	fe	482	books	74	A	khop_dap_an	Why is exclusive control (locking) needed in a DBMS?
+20	fe	483	books	75	C	domain_shell|vai_tro_stub|khop_dap_an	Normalization in relational databases mainly aims to:
+21	fe	484	books	76	B	domain_shell|vai_tro_stub|khop_dap_an	A primary key must:
+22	fe	485	books	77	A	domain_shell|vai_tro_stub	ACID properties of transactions include:
+23	fe	486	books	78	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	IPv4 address 216.58.221.78 belongs to which class (classful model) and default mask?
+24	fe	487	books	79	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which protocol allows a mail client to access messages on a server while typically leaving mail on the server?
+25	fe	488	books	80	B	khop_dap_an	SMTP is primarily used to:
+26	fe	489	books	81	A	domain_shell|vai_tro_stub	TCP is best characterized as:
+27	fe	490	books	82	D	domain_shell	DNS is used to:
+28	fe	491	books	83	B	domain_shell|vai_tro_stub|khop_dap_an	HDLC stands for:
+29	fe	492	books	84	C	domain_shell|vai_tro_stub	Which OSI layer is primarily associated with end-to-end reliable transport (TCP)?
+30	fe	493	books	85	D	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Online scams that lure users to fake sites to steal credentials are called:
+31	fe	494	books	86	B	domain_shell|vai_tro_stub|khop_dap_an	What can SSL/TLS primarily achieve?
+32	fe	495	books	87	C	domain_shell|vai_tro_stub|khop_dap_an	The main purpose of a penetration test is to:
+33	fe	496	books	88	A	domain_shell|vai_tro_stub|khop_dap_an	Public-key cryptography typically uses:
+34	fe	497	books	89	B	domain_shell|vai_tro_stub|khop_dap_an	A firewall is mainly used to:
+35	fe	498	books	90	C	domain_shell|vai_tro_stub	Which is an appropriate security practice for passwords?
+36	fe	499	books	91	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which technique implements a queue?
+37	fe	500	books	92	B	domain_shell|vai_tro_stub|khop_dap_an	A stack uses which discipline?
+38	fe	501	books	93	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	After push 5, push 10, push 5, pop, push 10, push 10, push 5, pop, pop (empty start), remaining bottom→top is:
+39	fe	502	books	94	A	domain_shell|vai_tro_stub|khop_dap_an	Binary trees can be stored in an array where children of index i are typically at:
+40	fe	503	books	95	B	domain_shell|vai_tro_stub	Prefix (Polish) notation places operators:
+41	fe	504	books	96	C	domain_shell|khop_dap_an	Which is a fundamental set of OOP concepts?
+42	fe	505	books	97	A	domain_shell|vai_tro_stub|khop_dap_an	Big-O notation is used to:
+43	fe	506	books	98	B	domain_shell|vai_tro_stub|khop_dap_an	Intellectual property rights generally protect:
+44	fe	507	books	99	A	domain_shell|vai_tro_stub	A license agreement for software typically:
+45	fe	508	books	100	C	domain_shell|vai_tro_stub|khop_dap_an	Personal data protection laws mainly aim to:
+46	fe	509	books	101	B	domain_shell|vai_tro_stub|khop_dap_an	Compliance in corporate IT means:
+47	fe	510	books	102	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	A SWOT analysis examines:
+48	fe	512	books	104	C	domain_shell|vai_tro_stub|khop_dap_an	Break-even point analysis is used to find:
+49	fe	513	books	105	A	domain_shell|vai_tro_stub|khop_dap_an	Which formula form is related to break-even (contribution approach)?
+50	fe	514	books	107	C	domain_shell|vai_tro_stub|khop_dap_an	SFA (Sales Force Automation) is best described as:
+51	fe	515	books	108	A	domain_shell|vai_tro_stub|khop_dap_an	CRM systems focus on:
+52	fe	516	books	109	B	domain_shell|vai_tro_stub|khop_dap_an	An information systems strategy should primarily align with:
+53	fe	517	books	110	A	domain_shell|vai_tro_stub|khop_dap_an	Outsourcing IT services means:
+54	fe	518	books	111	C	domain_shell|vai_tro_stub	A common risk of outsourcing is:
+55	fe	519	books	112	B	domain_shell|vai_tro_stub|khop_dap_an	Cloud computing is characterized by:
+56	fe	520	books	113	D	domain_shell|vai_tro_stub|khop_dap_an	Which activity belongs to external design?
+57	fe	521	books	114	B	domain_shell|vai_tro_stub|khop_dap_an	A use case diagram in UML is used to:
+58	fe	522	books	115	A	domain_shell|vai_tro_stub|khop_dap_an	DFD (Data Flow Diagram) is useful to show:
+59	fe	523	books	116	C	domain_shell|vai_tro_stub|khop_dap_an	Function point analysis estimates software size based mainly on:
+60	fe	524	books	117	B	domain_shell|vai_tro_stub|khop_dap_an	Unit testing focuses on:
+61	fe	525	books	118	A	domain_shell|vai_tro_stub|khop_dap_an	System testing focuses on:
+62	fe	526	books	119	C	domain_shell|vai_tro_stub|khop_dap_an	An appropriate environment to test a changed program without affecting live operations is:
+63	fe	527	books	120	B	domain_shell|vai_tro_stub|khop_dap_an	When software is delivered from a vendor, a key check is:
+64	fe	528	books	122	C	domain_shell|vai_tro_stub|khop_dap_an	Agile development emphasizes:
+65	fe	529	books	123	D	domain_shell|vai_tro_stub|khop_dap_an	On the critical path in PERT/CPM:
+66	fe	530	books	124	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Number of one-to-one communication paths among n people is:
+67	fe	531	books	125	B	domain_shell|vai_tro_stub|khop_dap_an	For 6 people needing one-to-one communication, minimum paths are:
+68	fe	532	books	126	C	domain_shell|vai_tro_stub	WBS (Work Breakdown Structure) is used to:
+69	fe	533	books	127	A	domain_shell|vai_tro_stub	Project risk management includes:
+70	fe	535	books	129	C	domain_shell|vai_tro_stub|khop_dap_an	An appropriate quality-related indicator in development is:
+71	fe	536	books	130	D	domain_shell|vai_tro_stub|khop_dap_an	Service level management is about:
+72	fe	537	books	132	A	domain_shell|vai_tro_stub|khop_dap_an	ITIL-style incident management aims to:
+73	fe	538	books	133	B	domain_shell|vai_tro_stub|khop_dap_an	A problem in ITSM typically means:
+74	fe	539	books	134	C	domain_shell|vai_tro_stub|khop_dap_an	Change management is intended to:
+75	fe	540	books	136	B	domain_shell|vai_tro_stub|khop_dap_an	The purpose of a system audit includes:
+76	fe	541	books	137	A	domain_shell|vai_tro_stub|khop_dap_an	Internal control aims to:
+77	fe	542	books	138	C	domain_shell|vai_tro_stub|khop_dap_an	Segregation of duties helps to:
+78	fe	543	books	139	B	domain_shell|vai_tro_stub|khop_dap_an	An audit trail is useful because it:
+79	fe	544	books	140	A	domain_shell|vai_tro_stub|khop_dap_an	CMMI maturity levels describe:
+80	fe	545	books	141	B	domain_shell|vai_tro_stub	A check digit for abcd is mod((a*4+b*3+c*2+d*1),10)=6 for 7b42. What is b?
+81	fe	546	books	142	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	What is 753₈ − A6₁₆ in decimal?
+82	fe	547	books	143	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Four cameras 30 fps, 640×480, 16-bit color, 60 seconds. Approx storage? (1MB=10⁶ B)
+83	fe	548	books	144	C	domain_shell|vai_tro_stub|khop_dap_an	100 students: E40 F30 S25; EF8 ES6 FS5; none 22. How many study all three?
+84	fe	551	books	147	C	domain_shell|vai_tro_stub|khop_dap_an	MIME is used in email to:
+85	fe	552	books	148	B	domain_shell|vai_tro_stub|khop_dap_an	POP3 typically:
+86	fe	553	books	149	A	domain_shell|vai_tro_stub|khop_dap_an	ER diagrams model:
+87	fe	554	books	151	A	domain_shell|vai_tro_stub|khop_dap_an	Virtual memory allows:
+88	fe	555	books	152	C	domain_shell|vai_tro_stub|khop_dap_an	A deadlock occurs when:
+89	fe	556	books	154	A	domain_shell|vai_tro_stub|khop_dap_an	A foreign key references:
+90	fe	557	books	155	C	domain_shell|vai_tro_stub|khop_dap_an	HTTPS is essentially:
+91	fe	558	books	156	A	domain_shell|vai_tro_stub|khop_dap_an	An SLA typically defines:
+92	fe	559	books	157	B	domain_shell|vai_tro_stub|khop_dap_an	Cache memory is used to:
+93	fe	560	books	158	C	domain_shell|vai_tro_stub|khop_dap_an	Earned value management (EVM) is used to:
+94	fe	561	books	159	A	domain_shell|vai_tro_stub	A digital signature provides:
+95	fe	562	books	160	B	domain_shell|vai_tro_stub|khop_dap_an	Regression testing is performed to:
+96	fe	563	books	161	B	domain_shell|vai_tro_stub|khop_dap_an	DMA (Direct Memory Access) allows:
+97	fe	564	books	162	A	domain_shell|vai_tro_stub|khop_dap_an	An interrupt is used to:
+98	fe	565	books	163	C	domain_shell|vai_tro_stub|khop_dap_an	Instruction pipelining aims to:
+99	fe	566	books	164	B	domain_shell|vai_tro_stub|khop_dap_an	Which storage is typically non-volatile?
+100	fe	567	books	165	A	domain_shell|vai_tro_stub|khop_dap_an	SRAM is commonly used for cache because:
+101	fe	568	books	166	C	domain_shell|vai_tro_stub|khop_dap_an	DRAM stores bits mainly using:
+102	fe	569	books	167	B	domain_shell|vai_tro_stub|khop_dap_an	A bus in computer architecture is:
+103	fe	570	books	168	A	domain_shell|vai_tro_stub|khop_dap_an	Hot swappable components allow:
+104	fe	571	books	169	C	domain_shell|vai_tro_stub|khop_dap_an	ECC memory is used to:
+105	fe	572	books	170	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which RAID level is classically described as striping without parity (no redundancy)?
+106	fe	573	books	171	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	RAID 1 primarily provides:
+107	fe	574	books	172	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which is an input device?
+108	fe	575	books	173	B	domain_shell|vai_tro_stub|khop_dap_an	A UPS is used to:
+109	fe	576	books	174	A	domain_shell|vai_tro_stub|khop_dap_an	A process is best described as:
+110	fe	577	books	175	B	domain_shell|vai_tro_stub|khop_dap_an	A thread is:
+111	fe	578	books	176	C	domain_shell|vai_tro_stub|khop_dap_an	A context switch means:
+112	fe	579	books	177	A	domain_shell|vai_tro_stub|khop_dap_an	A semaphore is used for:
+113	fe	580	books	178	B	domain_shell|vai_tro_stub|khop_dap_an	Paging in virtual memory maps:
+114	fe	581	books	180	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Real-time systems are characterized by:
+115	fe	582	books	181	B	domain_shell|vai_tro_stub	Batch processing is suitable when:
+116	fe	583	books	182	C	domain_shell|vai_tro_stub|khop_dap_an	A file system provides:
+117	fe	584	books	183	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Absolute pathnames start from:
+118	fe	585	books	184	B	domain_shell|vai_tro_stub|khop_dap_an	Firmware is typically:
+119	fe	586	books	186	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	API stands for:
+120	fe	587	books	187	B	domain_shell|vai_tro_stub|khop_dap_an	Middleware examples include:
+121	fe	588	books	188	A	domain_shell|vai_tro_stub	Licensed commercial software typically:
+122	fe	589	books	189	C	domain_shell|vai_tro_stub|khop_dap_an	Virtualization primarily allows:
+123	fe	590	books	190	B	domain_shell|vai_tro_stub|khop_dap_an	A candidate key is:
+124	fe	591	books	191	A	domain_shell|khop_dap_an	1NF requires roughly that:
+125	fe	592	books	192	C	domain_shell|vai_tro_stub	A view in SQL is:
+126	fe	593	books	193	B	domain_shell|vai_tro_stub|khop_dap_an	An index is used mainly to:
+127	fe	594	books	194	A	domain_shell|vai_tro_stub|khop_dap_an	A JOIN operation:
+128	fe	595	books	195	C	domain_shell|vai_tro_stub	COMMIT in a transaction:
+129	fe	596	books	196	B	domain_shell|vai_tro_stub|khop_dap_an	ROLLBACK is used to:
+130	fe	597	books	197	A	domain_shell|vai_tro_stub|khop_dap_an	Deadlock in databases can occur when:
+131	fe	598	books	198	C	domain_shell|vai_tro_stub|khop_dap_an	A data warehouse is typically used for:
+132	fe	599	books	199	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	ETL stands for:
+133	fe	600	books	200	A	domain_shell|vai_tro_stub|khop_dap_an	In the OSI model, the physical layer deals with:
+134	fe	601	books	201	C	khop_dap_an	The data link layer commonly uses:
+135	fe	602	books	202	B	domain_shell|vai_tro_stub	A router primarily operates to:
+136	fe	603	books	203	A	domain_shell|vai_tro_stub|khop_dap_an	A switch in a LAN typically forwards based on:
+137	fe	604	books	204	C	domain_shell|vai_tro_stub	UDP is characterized as:
+138	fe	605	books	205	B	domain_shell|vai_tro_stub|khop_dap_an	NAT is used to:
+139	fe	606	books	206	A	khop_dap_an	DHCP is used to:
+140	fe	607	books	208	B	domain_shell|vai_tro_stub|khop_dap_an	HTTP status 200 means:
+141	fe	608	books	209	A	domain_shell|vai_tro_stub|khop_dap_an	A proxy server can be used to:
+142	fe	609	books	210	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	IPv6 addresses are:
+143	fe	610	books	211	B	domain_shell|vai_tro_stub|khop_dap_an	Which protocol is connectionless at the network layer for best-effort packet delivery on the Internet?
+144	fe	611	books	212	A	domain_shell|vai_tro_stub|khop_dap_an	Confidentiality means:
+145	fe	612	books	213	B	domain_shell|vai_tro_stub|khop_dap_an	Integrity means:
+146	fe	613	books	214	C	domain_shell|vai_tro_stub|khop_dap_an	Availability means:
+147	fe	614	books	215	A	domain_shell|vai_tro_stub	A hash function is typically used to:
+148	fe	615	books	216	B	domain_shell|vai_tro_stub|khop_dap_an	PKI relies on:
+149	fe	616	books	217	C	domain_shell|vai_tro_stub	Malware includes:
+150	fe	617	books	218	A	domain_shell|vai_tro_stub	SQL injection attacks target:
+151	fe	618	books	219	B	domain_shell|vai_tro_stub|khop_dap_an	An IDS is used to:
+152	fe	619	books	220	C	domain_shell|vai_tro_stub|khop_dap_an	Social engineering attacks primarily exploit:
+153	fe	620	books	221	A	domain_shell|vai_tro_stub	Two-factor authentication typically requires:
+154	fe	621	books	222	B	domain_shell|vai_tro_stub|khop_dap_an	A vulnerability is:
+155	fe	622	books	223	C	domain_shell|vai_tro_stub	Risk is often considered as related to:
+156	fe	623	books	224	A	domain_shell|vai_tro_stub|khop_dap_an	A linked list is characterized by:
+157	fe	624	books	225	B	domain_shell|vai_tro_stub	A hash table provides average-case:
+158	fe	625	books	226	C	domain_shell|vai_tro_stub|khop_dap_an	Binary search requires:
+159	fe	626	books	227	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	BFS on a graph uses typically:
+160	fe	627	books	228	B	domain_shell|vai_tro_stub|khop_dap_an	DFS typically uses:
+161	fe	628	books	229	C	domain_shell|vai_tro_stub|khop_dap_an	Time complexity O(n²) means:
+162	fe	629	books	230	A	domain_shell|vai_tro_stub|khop_dap_an	A full binary tree of height h (root height 0) has at most how many nodes at the last level?
+163	fe	630	books	231	B	domain_shell|vai_tro_stub|khop_dap_an	Recursion requires:
+164	fe	631	books	232	C	domain_shell|vai_tro_stub|khop_dap_an	Sorting algorithm stability means:
+165	fe	632	books	233	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	A graph G=(V,E) consists of:
+166	fe	633	books	234	A	domain_shell|vai_tro_stub|khop_dap_an	Copyright primarily protects:
+167	fe	634	books	235	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	A patent typically protects:
+168	fe	635	books	236	C	domain_shell|vai_tro_stub|khop_dap_an	A trademark protects:
+169	fe	636	books	237	A	domain_shell|vai_tro_stub	Unauthorized copying of licensed software is:
+170	fe	637	books	238	B	domain_shell|vai_tro_stub|khop_dap_an	An NDA is used to:
+171	fe	638	books	239	C	domain_shell|vai_tro_stub|khop_dap_an	Privacy by design means:
+172	fe	639	books	241	B	domain_shell|vai_tro_stub|khop_dap_an	KPI stands for:
+173	fe	640	books	242	A	domain_shell|vai_tro_stub	ROI measures roughly:
+174	fe	641	books	243	C	domain_shell|vai_tro_stub|khop_dap_an	TCO means:
+175	fe	642	books	244	B	domain_shell|vai_tro_stub|khop_dap_an	BSC (Balanced Scorecard) typically includes perspectives such as:
+176	fe	643	books	245	A	domain_shell|vai_tro_stub|khop_dap_an	SCM (Supply Chain Management) focuses on:
+177	fe	644	books	246	C	domain_shell|vai_tro_stub|khop_dap_an	PDCA cycle stands for:
+178	fe	645	books	247	B	domain_shell|vai_tro_stub|khop_dap_an	Six Sigma is associated with:
+179	fe	646	books	248	A	domain_shell|vai_tro_stub|khop_dap_an	QFD (Quality Function Deployment) is used to:
+180	fe	647	books	249	C	domain_shell|vai_tro_stub|khop_dap_an	A mission statement typically describes:
+181	fe	648	books	250	B	domain_shell|vai_tro_stub|khop_dap_an	Competitive advantage can come from:
+182	fe	649	books	251	A	domain_shell|vai_tro_stub|khop_dap_an	SOA emphasizes:
+183	fe	650	books	253	C	domain_shell|vai_tro_stub|khop_dap_an	IaaS provides primarily:
+184	fe	651	books	254	A	domain_shell|vai_tro_stub|khop_dap_an	PaaS provides:
+185	fe	652	books	255	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	BCP/DR planning aims to:
+186	fe	653	books	256	C	domain_shell|vai_tro_stub|khop_dap_an	An RPO (Recovery Point Objective) relates to:
+187	fe	654	books	257	A	domain_shell|vai_tro_stub|khop_dap_an	An RTO (Recovery Time Objective) relates to:
+188	fe	655	books	259	A	domain_shell|vai_tro_stub|khop_dap_an	Requirements definition aims to:
+189	fe	656	books	260	B	domain_shell|vai_tro_stub|khop_dap_an	Internal design focuses more on:
+190	fe	657	books	261	C	domain_shell|vai_tro_stub|khop_dap_an	A prototype is used to:
+191	fe	658	books	263	B	domain_shell|vai_tro_stub|khop_dap_an	Integration testing verifies:
+192	fe	659	books	264	C	domain_shell|vai_tro_stub|khop_dap_an	Acceptance testing is typically done to:
+193	fe	660	books	265	A	domain_shell|vai_tro_stub|khop_dap_an	Version control systems help to:
+194	fe	661	books	266	B	domain_shell|vai_tro_stub|khop_dap_an	A code review aims to:
+195	fe	662	books	267	C	domain_shell|vai_tro_stub|khop_dap_an	CI (Continuous Integration) practices typically:
+196	fe	663	books	268	A	domain_shell|vai_tro_stub|khop_dap_an	Technical debt refers to:
+197	fe	664	books	269	B	domain_shell|vai_tro_stub|khop_dap_an	Coupling between modules should generally be:
+198	fe	665	books	270	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Cohesion within a module should generally be:
+199	fe	666	books	271	A	domain_shell|vai_tro_stub|khop_dap_an	A sequence diagram shows:
+200	fe	667	books	272	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Maintenance types include corrective, adaptive, perfective — corrective means:
+201	fe	668	books	273	A	domain_shell|vai_tro_stub	Project triple constraints classically include:
+202	fe	669	books	274	B	domain_shell|vai_tro_stub|khop_dap_an	A milestone is:
+203	fe	670	books	275	C	domain_shell|vai_tro_stub|khop_dap_an	Slack (float) of an activity is:
+204	fe	671	books	276	A	domain_shell|vai_tro_stub	Risk response strategies include avoid, mitigate, transfer, accept — transfer means:
+205	fe	672	books	277	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	A RACI matrix clarifies:
+206	fe	673	books	279	A	domain_shell|vai_tro_stub|khop_dap_an	Scope creep refers to:
+207	fe	674	books	280	B	domain_shell|vai_tro_stub|khop_dap_an	A kickoff meeting is typically used to:
+208	fe	675	books	281	C	domain_shell|vai_tro_stub|khop_dap_an	Lessons learned are captured to:
+209	fe	676	books	283	B	domain_shell|vai_tro_stub|khop_dap_an	Known error typically means:
+210	fe	677	books	284	C	domain_shell|vai_tro_stub|khop_dap_an	A CAB in change management is often:
+211	fe	678	books	285	A	domain_shell|vai_tro_stub|khop_dap_an	A standard change is typically:
+212	fe	679	books	286	B	domain_shell|vai_tro_stub|khop_dap_an	Capacity management aims to:
+213	fe	680	books	287	C	domain_shell|vai_tro_stub|khop_dap_an	Availability management focuses on:
+214	fe	681	books	288	A	domain_shell|vai_tro_stub|khop_dap_an	A CMDB stores:
+215	fe	682	books	289	B	domain_shell|vai_tro_stub|khop_dap_an	Service catalog provides:
+216	fe	683	books	290	C	domain_shell|vai_tro_stub|khop_dap_an	OLAs (Operational Level Agreements) are typically:
+217	fe	684	books	291	A	domain_shell|vai_tro_stub|khop_dap_an	An external audit is typically performed by:
+218	fe	685	books	292	B	domain_shell|vai_tro_stub|khop_dap_an	Evidence in audits should be:
+219	fe	686	books	293	C	domain_shell|vai_tro_stub|khop_dap_an	Preventive controls aim to:
+220	fe	687	books	294	A	domain_shell|vai_tro_stub|khop_dap_an	Detective controls aim to:
+221	fe	688	books	295	B	domain_shell|vai_tro_stub|khop_dap_an	Corrective controls aim to:
+222	fe	689	books	296	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	CMMI Level 1 (Initial) is characterized by:
+223	fe	690	books	297	A	domain_shell|vai_tro_stub|khop_dap_an	Segregation of duties example:
+224	fe	691	books	298	B	domain_shell|vai_tro_stub|khop_dap_an	Access control lists (ACLs) are used to:
+225	fe	692	books	299	A	domain_shell|vai_tro_stub	Which OSI layer includes IP addressing and routing?
+226	fe	693	books	300	C	domain_shell|vai_tro_stub|khop_dap_an	Which is most appropriate to ensure message confidentiality on a public network?
+227	fe	694	books	301	B	domain_shell|vai_tro_stub|khop_dap_an	Which structure is best for LIFO temporary storage of return addresses conceptually?
+228	fe	696	books	303	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which estimate method counts EI/EO/EQ/ILF/EIF style functions?
+229	fe	697	books	304	C	domain_shell|vai_tro_stub|khop_dap_an	Which process ensures IT services meet agreed targets continuously?
+230	fe	698	books	305	A	domain_shell|vai_tro_stub|khop_dap_an	Which device filters packets based on rules between networks?
+231	fe	699	books	306	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Which database property ensures either all operations of a transaction complete or none do?
+232	fe	700	books	307	A	domain_shell|vai_tro_stub	Which document decomposes project deliverables into work packages?
+233	fe	701	books	308	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which testing type checks the system against user acceptance criteria before go-live?
+234	fe	702	books	309	A	domain_shell|vai_tro_stub|khop_dap_an	Which protocol suite layer model has 7 layers?
+235	fe	703	books	310	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which memory management technique uses pages of fixed size?
+236	fe	705	books	312	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Which path has zero total float in a network schedule?
+237	fe	706	books	313	C	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which email-related standard extends messages beyond plain text?
+238	fe	707	books	314	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which attack tricks users into revealing secrets via fake websites/emails?
+239	fe	708	books	315	C	domain_shell|vai_tro_stub|khop_dap_an	Which system supports sales process automation?
+240	fe	709	books	316	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which system focuses on customer interactions and relationships?
+241	fe	710	books	317	B	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub|khop_dap_an	Which metric is Mean Time To Repair?
+242	fe	711	books	318	A	domain_shell|can_doi_chieu|so_ban_chat|vai_tro_stub	Which encryption approach uses the same key for encryption and decryption?
