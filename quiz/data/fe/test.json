@@ -1505,7 +1505,7 @@
       "task": "test",
       "taskLabel": "Test",
       "num": 35,
-      "question": "Which of the following is an appropriate description of WPA? (Từ cuối hơi mờ, dựa vào đáp án có thể là WPA hoặc WAF)",
+      "question": "Which of the following is an appropriate description of WPA?",
       "options": {
         "A": "It is an encryption method for a wireless LAN",
         "B": "Gateway",
