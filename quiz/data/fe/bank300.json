@@ -4411,36 +4411,36 @@
       "question": "File 10^6 bytes on 64kbps 80% util time?",
       "options": {
         "A": "16",
-        "B": "~157 seconds",
+        "B": "~156 seconds",
         "C": "2048",
         "D": "128"
       },
       "answer": "B",
       "alternatives": [],
       "explanation": {
-        "questionVi": "Tệp 10^6 bytes 64kbps 80% util thời gian?",
+        "questionVi": "File 10⁶ byte, đường 64 kbps, tận dụng 80% — mất bao lâu?",
         "optionsVi": {
           "A": "16",
-          "B": "~157 seconds",
+          "B": "~156 giây",
           "C": "2048",
           "D": "128"
         },
-        "answerDisplay": "B. ~157 seconds",
-        "concept": "• t ≈ size_bits / (bitrate × utilization).",
-        "whyCorrect": "• Bits = 10⁶×8 = 8×10⁶.\n• Rate hiệu dụng = 64×10³ × 0.8 = 51200 bit/s.\n• t = 8×10⁶/51200 = **156.25 s** → bank B (thường chọn đáp án ~156–157).",
-        "intent": "• bank300 · 101 · J6-HW",
+        "answerDisplay": "B. ~156 seconds",
+        "concept": "• Thời gian truyền ≈ số bit / (bitrate × utilization). 1 byte = 8 bit; 64 kbps = 64×10³ bit/s.",
+        "whyCorrect": "• bits = 10⁶ × 8 = 8×10⁶ bit.\n• rate hiệu dụng = 64000 × 0.8 = 51200 bit/s.\n• t = 8×10⁶ / 51200 = **156.25 s ≈ 156 s**.",
+        "intent": "• bank300 · 101 · J6 — transmission time.",
         "whatIs": {
-          "A": "16 — nhiễu, không thuộc đáp án kỹ thuật stem.",
-          "B": "~157 seconds",
-          "C": "2048 — nhiễu, không thuộc đáp án kỹ thuật stem.",
-          "D": "128 — nhiễu, không thuộc đáp án kỹ thuật stem."
+          "A": "16 — nhầm đơn vị/bước (vd. quên ×8 hoặc util).",
+          "B": "~156 s — đúng 156.25 s làm tròn.",
+          "C": "2048 — nhiễu số lớn.",
+          "D": "128 — nhiễu (vd. 10⁶/(64000×0.8/8) kiểu nhầm)."
         },
         "whyWrong": {
-          "A": "• Là gì? Giá trị «16».\n• Dùng để làm gì? Một kết quả số ứng với bước tính/nhầm công thức.\n• Vì sao sai? Không bằng đáp án «~157 seconds» — sai bước đổi cơ số/công thức/đếm.",
-          "C": "• Là gì? Giá trị «2048».\n• Dùng để làm gì? Một kết quả số ứng với bước tính/nhầm công thức.\n• Vì sao sai? Không bằng đáp án «~157 seconds» — sai bước đổi cơ số/công thức/đếm.",
-          "D": "• Là gì? Giá trị «128».\n• Dùng để làm gì? Một kết quả số ứng với bước tính/nhầm công thức.\n• Vì sao sai? Không bằng đáp án «~157 seconds» — sai bước đổi cơ số/công thức/đếm."
+          "A": "• Là gì? 16.\n• Dùng để làm gì? Kết quả nếu sai đơn vị.\n• Vì sao sai? Không khớp 8×10⁶/51200 = 156.25.",
+          "C": "• Là gì? 2048.\n• Dùng để làm gì? Nhiễu.\n• Vì sao sai? Không phải thời gian truyền đúng.",
+          "D": "• Là gì? 128.\n• Dùng để làm gì? Nhiễu.\n• Vì sao sai? Không bằng 156.25 s."
         },
-        "memoryTip": "• t = bits / (bps×util)."
+        "memoryTip": "• t = (bytes×8) / (bps×util) → 8e6/51200 ≈ 156 s."
       },
       "meta": {
         "rebuilt": true,
@@ -6178,7 +6178,7 @@
       "answer": "B",
       "alternatives": [],
       "explanation": {
-        "questionVi": "Stack: PUSH3 PUSH7 POP PUSH5 PUSH9 POP — đỉnh là gì?",
+        "questionVi": "Stack: PUSH 3, PUSH 7, POP, PUSH 5, PUSH 9, POP — đỉnh (top) là gì?",
         "optionsVi": {
           "A": "10",
           "B": "5",
@@ -6186,21 +6186,21 @@
           "D": "4"
         },
         "answerDisplay": "B. 5",
-        "concept": "• 5 — khái niệm/cơ chế đúng với stem «Stack: PUSH3 PUSH7 POP PUSH5 PUSH9 POP top?».",
-        "whyCorrect": "• Stem hỏi: Stack: PUSH3 PUSH7 POP PUSH5 PUSH9 POP top?\n• Đáp án «5» khớp bản chất cần chọn; các option khác sai miền hoặc nhiễu.",
-        "intent": "• bank300 · 141 · J-misc",
+        "concept": "• Stack LIFO: PUSH thêm đỉnh; POP lấy đỉnh. Theo dõi stack sau từng bước.",
+        "whyCorrect": "• [] → PUSH3 [3] → PUSH7 [3,7] → POP → [3] → PUSH5 [3,5] → PUSH9 [3,5,9] → POP → [3,5].\n• Top = **5**.",
+        "intent": "• bank300 · 141 · J4 — stack simulation.",
         "whatIs": {
-          "A": "10 — nhiễu, không thuộc đáp án kỹ thuật stem.",
-          "B": "5 — nhiễu, không thuộc đáp án kỹ thuật stem.",
-          "C": "6 — nhiễu, không thuộc đáp án kỹ thuật stem.",
-          "D": "4 — nhiễu, không thuộc đáp án kỹ thuật stem."
+          "A": "10 — nhiễu (vd. 3+7).",
+          "B": "5 — top đúng sau các bước.",
+          "C": "6 — nhiễu.",
+          "D": "4 — nhiễu."
         },
         "whyWrong": {
-          "A": "• Là gì? Giá trị «10».\n• Dùng để làm gì? Một kết quả số ứng với bước tính/nhầm công thức.\n• Vì sao sai? Không bằng đáp án «5» — sai bước đổi cơ số/công thức/đếm.",
-          "C": "• Là gì? Giá trị «6».\n• Dùng để làm gì? Một kết quả số ứng với bước tính/nhầm công thức.\n• Vì sao sai? Không bằng đáp án «5» — sai bước đổi cơ số/công thức/đếm.",
-          "D": "• Là gì? Giá trị «4».\n• Dùng để làm gì? Một kết quả số ứng với bước tính/nhầm công thức.\n• Vì sao sai? Không bằng đáp án «5» — sai bước đổi cơ số/công thức/đếm."
+          "A": "• Là gì? 10.\n• Dùng để làm gì? Có thể nhầm cộng 3+7.\n• Vì sao sai? Stack không cộng; top sau POP cuối là 5.",
+          "C": "• Là gì? 6.\n• Dùng để làm gì? Nhiễu.\n• Vì sao sai? Mô phỏng stack cho top = 5.",
+          "D": "• Là gì? 4.\n• Dùng để làm gì? Nhiễu.\n• Vì sao sai? Top = 5."
         },
-        "memoryTip": "• Nhớ: 5 ↔ stem."
+        "memoryTip": "• Vẽ stack từng PUSH/POP; top = phần tử cuối mảng."
       },
       "meta": {
         "rebuilt": true,
@@ -10930,7 +10930,7 @@
       "answer": "B",
       "alternatives": [],
       "explanation": {
-        "questionVi": "Stack rỗng PUSH1 PUSH2 POP — top?",
+        "questionVi": "Stack rỗng: PUSH 1, PUSH 2, POP — đỉnh còn lại là gì?",
         "optionsVi": {
           "A": "2",
           "B": "1",
@@ -10938,21 +10938,21 @@
           "D": "0"
         },
         "answerDisplay": "B. 1",
-        "concept": "• Hex A₁₆ = 10₁₀.",
-        "whyCorrect": "• Chữ số hex A tương ứng thập phân 10.",
-        "intent": "• bank300 · 249 · J-misc",
+        "concept": "• Stack rỗng → PUSH1 → PUSH2 → POP: lấy 2 ra, còn 1 ở đỉnh.",
+        "whyCorrect": "• [] → PUSH1 [1] → PUSH2 [1,2] → POP → [1].\n• Top = **1** (không phải 2 đã bị POP).",
+        "intent": "• bank300 · 249 · J4 — stack simulation.",
         "whatIs": {
-          "A": "2 — nhiễu, không thuộc đáp án kỹ thuật stem.",
-          "B": "1 — nhiễu, không thuộc đáp án kỹ thuật stem.",
-          "C": "4 — nhiễu, không thuộc đáp án kỹ thuật stem.",
-          "D": "0 — nhiễu, không thuộc đáp án kỹ thuật stem."
+          "A": "2 — vừa bị POP.",
+          "B": "1 — top còn lại.",
+          "C": "4 — nhiễu.",
+          "D": "0 — nhầm stack rỗng sau POP."
         },
         "whyWrong": {
-          "A": "• Là gì? Giá trị «2».\n• Dùng để làm gì? Một kết quả số ứng với bước tính/nhầm công thức.\n• Vì sao sai? Không bằng đáp án «1» — sai bước đổi cơ số/công thức/đếm.",
-          "C": "• Là gì? Giá trị «4».\n• Dùng để làm gì? Một kết quả số ứng với bước tính/nhầm công thức.\n• Vì sao sai? Không bằng đáp án «1» — sai bước đổi cơ số/công thức/đếm.",
-          "D": "• Là gì? Giá trị «0».\n• Dùng để làm gì? Một kết quả số ứng với bước tính/nhầm công thức.\n• Vì sao sai? Không bằng đáp án «1» — sai bước đổi cơ số/công thức/đếm."
+          "A": "• Là gì? 2.\n• Dùng để làm gì? Đỉnh trước POP.\n• Vì sao sai? POP đã lấy 2; top còn 1.",
+          "C": "• Là gì? 4.\n• Dùng để làm gì? Nhiễu.\n• Vì sao sai? Không xuất hiện trong chuỗi thao tác.",
+          "D": "• Là gì? 0 / rỗng.\n• Dùng để làm gì? Nhầm POP hết.\n• Vì sao sai? Còn phần tử 1."
         },
-        "memoryTip": "• A=10 B=11 … F=15."
+        "memoryTip": "• POP lấy phần tử mới nhất; top còn lại là phần tử dưới."
       },
       "meta": {
         "rebuilt": true,
@@ -11360,39 +11360,39 @@
       "task": "bank300",
       "taskLabel": "300 câu",
       "num": 259,
-      "question": "RAID with parity single disk?",
+      "question": "Which RAID level uses striping with distributed parity and can recover from a single disk failure?",
       "options": {
-        "A": "Parity striping",
-        "B": "Hot spare only",
-        "C": "Mirroring",
+        "A": "RAID 3/4 (dedicated parity disk, fixed parity drive)",
+        "B": "Hot spare only (no striping/parity by itself)",
+        "C": "Mirroring (RAID 1)",
         "D": "RAID 5"
       },
       "answer": "D",
       "alternatives": [],
       "explanation": {
-        "questionVi": "RAID parity một đĩa?",
+        "questionVi": "Mức RAID nào striping + parity phân tán và chịu được hỏng 1 đĩa?",
         "optionsVi": {
-          "A": "Parity striping",
-          "B": "Hot spare",
-          "C": "Mirroring",
+          "A": "RAID 3/4 — parity cố định trên 1 đĩa",
+          "B": "Chỉ hot spare (không phải level RAID đủ nghĩa stem)",
+          "C": "Mirroring (RAID 1)",
           "D": "RAID 5"
         },
         "answerDisplay": "D. RAID 5",
-        "concept": "• RAID 5 — khái niệm/cơ chế đúng với stem «RAID with parity single disk?».",
-        "whyCorrect": "• Stem hỏi: RAID with parity single disk?\n• Đáp án «RAID 5» khớp bản chất cần chọn; các option khác sai miền hoặc nhiễu.",
-        "intent": "• bank300 · 259 · J6-HW",
+        "concept": "• RAID 5: block striping + parity phân tán trên mọi đĩa; chịu mất 1 đĩa.\n• RAID 3/4: có parity nhưng **1 đĩa parity cố định** — khác «distributed parity».",
+        "whyCorrect": "• Stem: striping + distributed parity + single-disk failure → **RAID 5**.\n• A mô tả RAID 3/4 (dedicated parity), không phải distributed.\n• RAID 1 = mirror, không parity striping.\n• Hot spare chỉ là đĩa dự phòng, không định nghĩa level.",
+        "intent": "• bank300 · 259 · J6 — RAID 5.",
         "whatIs": {
-          "A": "Parity striping",
-          "B": "Hot spare only",
-          "C": "Mirroring",
-          "D": "RAID 5"
+          "A": "RAID 3/4 — striping + 1 parity disk cố định.",
+          "B": "Hot spare — đĩa dự phòng online.",
+          "C": "RAID 1 mirroring — nhân bản, không parity.",
+          "D": "RAID 5 — striping + distributed parity."
         },
         "whyWrong": {
-          "A": "• Là gì? Parity striping\n• Dùng để làm gì? Thuộc miền gần hoặc thuật ngữ khác «RAID 5».\n• Vì sao sai? Stem hỏi khía cạnh dẫn tới «RAID 5», không chọn «Parity striping».",
-          "B": "• Là gì? Hot spare.\n• Dùng để làm gì? Đĩa dự phòng.\n• Vì sao sai? Không phải đặc trưng chính RAID0/1 trong stem.",
-          "C": "• Là gì? Mirroring\n• Dùng để làm gì? Thuộc miền gần hoặc thuật ngữ khác «RAID 5».\n• Vì sao sai? Stem hỏi khía cạnh dẫn tới «RAID 5», không chọn «Mirroring»."
+          "A": "• Là gì? RAID 3/4 (parity disk cố định).\n• Dùng để làm gì? Parity tập trung 1 đĩa.\n• Vì sao sai? Stem cần parity **phân tán** (distributed) → RAID 5, không phải dedicated parity.",
+          "B": "• Là gì? Hot spare.\n• Dùng để làm gì? Dự phòng thay thế.\n• Vì sao sai? Không phải kỹ thuật striping+parity của level RAID.",
+          "C": "• Là gì? Mirroring (RAID 1).\n• Dùng để làm gì? Sao chép full đĩa.\n• Vì sao sai? Không dùng parity striping."
         },
-        "memoryTip": "• Nhớ: RAID 5 ↔ stem."
+        "memoryTip": "• RAID 5 = striping + parity rải đều · RAID 3/4 = 1 đĩa parity cố định · RAID 1 = mirror."
       },
       "meta": {
         "rebuilt": true,
