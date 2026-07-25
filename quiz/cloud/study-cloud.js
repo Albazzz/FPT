@@ -264,6 +264,33 @@
     return Object.assign({}, local, { savedAt: savedAt });
   }
 
+  function mergeChoiceMaps(a, b) {
+    const out = {};
+    function put(obj) {
+      if (!obj || typeof obj !== "object") return;
+      Object.keys(obj).forEach((k) => {
+        const letters = obj[k];
+        if (!Array.isArray(letters) || !letters.length) return;
+        out[String(k)] = letters.map(String);
+      });
+    }
+    put(a);
+    put(b); // b wins on conflict
+    return out;
+  }
+
+  function mergeStats(a, b) {
+    const aa = (a && Number(a.sessionAnswered)) || 0;
+    const ac = (a && Number(a.sessionCorrect)) || 0;
+    const ba = (b && Number(b.sessionAnswered)) || 0;
+    const bc = (b && Number(b.sessionCorrect)) || 0;
+    // Prefer higher counters so partial remote cannot wipe a higher local score
+    return {
+      sessionAnswered: Math.max(aa, ba),
+      sessionCorrect: Math.max(ac, bc),
+    };
+  }
+
   async function mergeWithRemoteIfNeeded(localPayload) {
     try {
       const remote = await load(subjectId);
@@ -286,16 +313,30 @@
       const ri = Number(rp.index);
       // Prefer local progress (this tab is dirty / user is studying here)
       // but if local has no position and remote does, keep remote.
-      let progress = lp;
+      let progress = Object.assign({}, lp);
       if (
         (!Number.isFinite(li) || (lp.currentId == null && lp.display == null)) &&
         (Number.isFinite(ri) || rp.currentId != null)
       ) {
-        progress = rp;
+        progress = Object.assign({}, rp);
       }
+
+      // Always union lastChoices + stats — remote-only wrongIds must not zero score
+      const lastChoices = mergeChoiceMaps(
+        mergeChoiceMaps(rp.lastChoices, remote.lastChoices),
+        mergeChoiceMaps(lp.lastChoices, localPayload.lastChoices)
+      );
+      const stats = mergeStats(
+        mergeStats(remote.stats, rp.stats),
+        mergeStats(localPayload.stats, lp.stats)
+      );
+      progress.lastChoices = lastChoices;
+      progress.stats = stats;
 
       return Object.assign({}, remote, localPayload, {
         wrongIds: Array.from(wrongSet),
+        lastChoices: lastChoices,
+        stats: stats,
         progress: progress,
         prefs: Object.assign({}, remote.prefs || {}, localPayload.prefs || {}),
         savedAt: localPayload.savedAt,
@@ -518,7 +559,7 @@
       if (setDataFn) setDataFn(data || {});
       if (onAfterLoad) onAfterLoad(data || {});
       updateBadge("is-cloud", "Cloud");
-      toast("Cloud: lưu Neon (không ghi local).");
+      toast("Cloud: đồng bộ Neon (+ mirror local để F5 không mất điểm).");
       closeModal();
     } catch (e) {
       console.error(e);

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css?v=ok9" />
+  <link rel="stylesheet" href="style.css?v=ok10" />
 </head>
 <body>
   <div class="app-body">
@@ -27,18 +27,25 @@
           <a href="./"><i class="fa-solid fa-house"></i> Quiz Hub</a>
         </nav>
         <div class="nav-stats" id="statsBar">
-          <span class="badge badge-done" title="Đúng trong phiên">
-            <i class="fa-solid fa-circle-check"></i>
-            <strong id="statCorrect">0</strong> đúng
+          <span class="badge badge-answered" title="Số câu đã trả lời (theo tiến trình đã lưu)">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <strong id="statAnswered">0</strong> đã làm
           </span>
-          <span class="badge badge-wrong" title="Câu sai đã lưu">
+          <span class="badge badge-score badge-done" title="Điểm = số câu đúng (1 điểm/câu đúng)">
+            <i class="fa-solid fa-star"></i>
+            <strong id="statScore">0</strong> điểm
+            <span class="stat-pct" id="statPct" hidden></span>
+          </span>
+          <span class="badge badge-wrong" title="Câu sai đã lưu (ôn lại)">
             <i class="fa-solid fa-circle-xmark"></i>
             <strong id="statWrong">0</strong> sai
           </span>
-          <span class="badge" title="Tiến độ">
+          <span class="badge" title="Vị trí câu hiện tại / tổng hàng đợi">
             <i class="fa-solid fa-list-ol"></i>
             <strong id="statProgress">0</strong>/<span id="statTotal">0</span>
           </span>
+          <!-- statCorrect kept for JS/API tương thích; ẩn UI -->
+          <strong id="statCorrect" class="sr-only" aria-hidden="true">0</strong>
         </div>
       </div>
     </header>
@@ -270,12 +277,12 @@
   </div>
 
   <script src="cloud/cloud-config.js?v=5"></script>
-  <script src="cloud/study-cloud.js?v=6"></script>
+  <script src="cloud/study-cloud.js?v=8"></script>
   <script src="subjects.js?v=ok13"></script>
   <script src="data/prm.js?v=ok12"></script>
   <script src="data/mln.js?v=ok12"></script>
-  <script src="data/jit.js?v=ok13"></script>
+  <script src="data/jit.js?v=ok15"></script>
   <script src="data/fe.js?v=ok16"></script>
-  <script src="app.js?v=ok10"></script>
+  <script src="app.js?v=ok14"></script>
 </body>
 </html>

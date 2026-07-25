@@ -33,6 +33,11 @@
 
   const STORAGE_KEY = CFG.storageWrong;
   const PROGRESS_KEY = CFG.storageProgress;
+  /** Điểm/đã làm — key riêng, luôn ghi local (kể cả cloud) để F5 không mất */
+  const SCORE_KEY = String(PROGRESS_KEY || "uq-" + subjectId + "-progress-v1").replace(
+    /progress/i,
+    "score"
+  );
   const CLOUD_SUBJECT = CFG.cloudSubject || subjectId;
   const CLOUD_SUBJECT_ALT = subjectId;
   const LEGACY_STORAGE_KEYS = [];
@@ -142,6 +147,9 @@
     statWrong: $("#statWrong"),
     statProgress: $("#statProgress"),
     statTotal: $("#statTotal"),
+    statAnswered: $("#statAnswered"),
+    statScore: $("#statScore"),
+    statPct: $("#statPct"),
     badgeAll: $("#badgeAll"),
     badgeWrong: $("#badgeWrong"),
     badgeExamFe: $("#badgeExamFe"),
@@ -329,6 +337,7 @@
       const id = Number(p.currentId);
       let idx = Number(p.index);
       if (!Number.isFinite(idx) && p.display != null) idx = Number(p.display) - 1;
+      const stats = extractStatsFromPayload(p);
       return {
         currentId: Number.isFinite(id) ? id : null,
         index: Number.isFinite(idx) && idx >= 0 ? idx : null,
@@ -341,6 +350,7 @@
           p.lastChoices && typeof p.lastChoices === "object"
             ? p.lastChoices
             : null,
+        stats,
       };
     } catch {
       return null;
@@ -385,6 +395,89 @@
     return o;
   }
 
+  /** Gộp nhiều map lastChoices (map sau ghi đè map trước khi trùng id). */
+  function mergeChoiceMaps() {
+    const out = {};
+    for (let i = 0; i < arguments.length; i++) {
+      const obj = arguments[i];
+      if (!obj || typeof obj !== "object") continue;
+      Object.keys(obj).forEach((k) => {
+        const letters = obj[k];
+        if (!Array.isArray(letters) || !letters.length) return;
+        const id = Number(k);
+        if (!Number.isFinite(id)) return;
+        out[String(id)] = letters.map(String).map((L) => L.toUpperCase());
+      });
+    }
+    return out;
+  }
+
+  function extractChoicesFromPayload(data) {
+    if (!data || typeof data !== "object") return {};
+    const prog = data.progress || {};
+    return mergeChoiceMaps(prog.lastChoices, data.lastChoices);
+  }
+
+  function extractStatsFromPayload(data) {
+    if (!data || typeof data !== "object") return null;
+    const st = data.stats || (data.progress && data.progress.stats) || null;
+    if (!st || typeof st !== "object") return null;
+    const a = Number(st.sessionAnswered);
+    const c = Number(st.sessionCorrect);
+    if (!Number.isFinite(a) && !Number.isFinite(c)) return null;
+    return {
+      sessionAnswered: Number.isFinite(a) ? Math.max(0, a) : 0,
+      sessionCorrect: Number.isFinite(c) ? Math.max(0, c) : 0,
+    };
+  }
+
+  /**
+   * Khôi phục điểm: ưu tiên đếm lại từ lastChoice; nếu thiếu map
+   * (cloud cũ chỉ có wrongIds) thì lấy max với stats đã lưu — tránh về 0 oan.
+   */
+  function applyStatsFallback(stats) {
+    if (!stats) return;
+    const a = Number(stats.sessionAnswered);
+    const c = Number(stats.sessionCorrect);
+    if (Number.isFinite(a) && a > sessionAnswered) sessionAnswered = a;
+    if (Number.isFinite(c) && c > sessionCorrect) sessionCorrect = c;
+    // Đúng không vượt quá đã làm
+    if (sessionCorrect > sessionAnswered) sessionAnswered = sessionCorrect;
+  }
+
+  function loadScoreLocal() {
+    try {
+      const raw = localStorage.getItem(SCORE_KEY);
+      if (!raw) return null;
+      const o = JSON.parse(raw);
+      if (!o || typeof o !== "object") return null;
+      const a = Number(o.sessionAnswered);
+      const c = Number(o.sessionCorrect);
+      if (!Number.isFinite(a) && !Number.isFinite(c)) return null;
+      return {
+        sessionAnswered: Number.isFinite(a) ? Math.max(0, a) : 0,
+        sessionCorrect: Number.isFinite(c) ? Math.max(0, c) : 0,
+      };
+    } catch {
+      return null;
+    }
+  }
+
+  function saveScoreLocal() {
+    try {
+      localStorage.setItem(
+        SCORE_KEY,
+        JSON.stringify({
+          sessionCorrect,
+          sessionAnswered,
+          savedAt: Date.now(),
+        })
+      );
+    } catch {
+      /* ignore */
+    }
+  }
+
   function applyLastChoicesObject(obj) {
     if (!obj || typeof obj !== "object") return;
     Object.keys(obj).forEach((k) => {
@@ -396,15 +489,16 @@
         letters.map(String).map((L) => L.toUpperCase())
       );
     });
+    recomputeSessionStatsFromChoices();
   }
 
   function loadProgressLocal() {
     try {
       let p = parseProgressRaw(localStorage.getItem(PROGRESS_KEY));
-      if (p && (p.currentId != null || p.index != null || p.lastChoices)) return p;
+      if (p && (p.currentId != null || p.index != null || p.lastChoices || p.stats)) return p;
       for (const k of LEGACY_PROGRESS_KEYS) {
         p = parseProgressRaw(localStorage.getItem(k));
-        if (p && (p.currentId != null || p.index != null || p.lastChoices)) {
+        if (p && (p.currentId != null || p.index != null || p.lastChoices || p.stats)) {
           try {
             localStorage.setItem(PROGRESS_KEY, localStorage.getItem(k));
           } catch {
@@ -422,6 +516,11 @@
   function saveProgressLocal() {
     try {
       const cur = queue[index];
+      const choices = lastChoicesToObject();
+      const stats = {
+        sessionCorrect,
+        sessionAnswered,
+      };
       localStorage.setItem(
         PROGRESS_KEY,
         JSON.stringify({
@@ -432,9 +531,12 @@
           shuffle: !!(el.shuffleToggle && el.shuffleToggle.checked),
           explainVisible,
           examSet,
-          lastChoices: lastChoicesToObject(),
+          lastChoices: choices,
+          stats,
         })
       );
+      // Luôn mirror điểm ra key riêng (kể cả khi cloud mode)
+      saveScoreLocal();
     } catch {
       /* ignore */
     }
@@ -527,13 +629,8 @@
       mode: prog.mode === "wrong" || data.mode === "wrong" ? "wrong" : "all",
       shuffle: shufflePref,
       examSet: normalizeExamSet(examFrom),
-      lastChoices:
-        (prog.lastChoices && typeof prog.lastChoices === "object"
-          ? prog.lastChoices
-          : null) ||
-        (data.lastChoices && typeof data.lastChoices === "object"
-          ? data.lastChoices
-          : null),
+      lastChoices: extractChoicesFromPayload(data),
+      stats: extractStatsFromPayload(data),
     };
   }
 
@@ -545,25 +642,53 @@
       return true;
     if (prog.lastChoices && Object.keys(prog.lastChoices).length) return true;
     if (data.lastChoices && Object.keys(data.lastChoices).length) return true;
+    if (data.stats && (data.stats.sessionAnswered || data.stats.sessionCorrect))
+      return true;
     return false;
   }
 
   function applyPrmCloudData(data) {
+    // Giữ điểm đang có trong RAM (trước khi cloud ghi đè)
+    const memChoices = lastChoicesToObject();
+    const memStats = {
+      sessionCorrect,
+      sessionAnswered,
+    };
+    const localProg = loadProgressLocal();
+    const localWrong = loadWrongIdsLocal();
+    const localScore = loadScoreLocal();
+    const localChoices = mergeChoiceMaps(
+      extractChoicesFromPayload(localProg),
+      localProg && localProg.lastChoices,
+      memChoices
+    );
+    const localStatsBundle = [
+      memStats,
+      localScore,
+      localProg && localProg.stats,
+      extractStatsFromPayload(localProg),
+    ];
+
     if (data == null) {
-      wrongIds = loadWrongIdsLocal();
-      pendingRestore = loadProgressLocal();
+      wrongIds = localWrong;
+      pendingRestore = localProg;
       if (pendingRestore && typeof pendingRestore.explainVisible === "boolean") {
         explainVisible = pendingRestore.explainVisible;
       }
       if (pendingRestore && pendingRestore.examSet) {
         examSet = normalizeExamSet(pendingRestore.examSet);
       }
-      if (pendingRestore && pendingRestore.lastChoices) {
-        applyLastChoicesObject(pendingRestore.lastChoices);
-      }
+      applyLastChoicesObject(localChoices);
+      localStatsBundle.forEach(applyStatsFallback);
     } else {
-      const ids = Array.isArray(data.wrongIds) ? data.wrongIds : [];
-      wrongIds = new Set(ids.map(Number).filter((n) => Number.isFinite(n)));
+      // Union wrongIds: cloud ⊔ local — không để cloud xóa câu sai local
+      const cloudWrong = Array.isArray(data.wrongIds) ? data.wrongIds : [];
+      wrongIds = new Set(
+        cloudWrong
+          .concat([...localWrong])
+          .map(Number)
+          .filter((n) => Number.isFinite(n))
+      );
       if (data.prefs && typeof data.prefs.explainVisible === "boolean") {
         explainVisible = data.prefs.explainVisible;
       }
@@ -571,22 +696,41 @@
         examSet = normalizeExamSet(data.prefs.examSet);
       }
       setPendingFromPayload(data);
-      if (pendingRestore && pendingRestore.lastChoices) {
-        applyLastChoicesObject(pendingRestore.lastChoices);
-      } else if (data.lastChoices) {
-        applyLastChoicesObject(data.lastChoices);
+
+      // Gộp lastChoices cloud + local + RAM (local/RAM ghi đè khi trùng)
+      const cloudChoices = extractChoicesFromPayload(data);
+      const mergedChoices = mergeChoiceMaps(cloudChoices, localChoices);
+      applyLastChoicesObject(mergedChoices);
+      if (pendingRestore) {
+        pendingRestore.lastChoices = mergedChoices;
+        pendingRestore.stats = {
+          sessionCorrect,
+          sessionAnswered,
+        };
       }
-      // Cloud rỗng nhưng local còn tiến trình (đổi subject) → giữ local
-      if (!hasUsefulProgress(data)) {
-        const localProg = loadProgressLocal();
-        const localWrong = loadWrongIdsLocal();
-        if (localWrong.size) wrongIds = localWrong;
-        if (localProg) {
-          pendingRestore = localProg;
-          if (localProg.examSet) examSet = normalizeExamSet(localProg.examSet);
-          if (localProg.lastChoices) applyLastChoicesObject(localProg.lastChoices);
-        }
+
+      // Stats: max với cloud + mọi nguồn local/RAM — cloud thiếu stats không được về 0
+      applyStatsFallback(extractStatsFromPayload(data));
+      localStatsBundle.forEach(applyStatsFallback);
+      if (pendingRestore && pendingRestore.stats) {
+        applyStatsFallback(pendingRestore.stats);
       }
+
+      // Cloud gần như rỗng về vị trí → giữ cursor local
+      if (!hasUsefulProgress(data) && localProg) {
+        pendingRestore = Object.assign({}, localProg, {
+          lastChoices: mergedChoices,
+          stats: { sessionCorrect, sessionAnswered },
+        });
+        if (localProg.examSet) examSet = normalizeExamSet(localProg.examSet);
+      }
+    }
+    // Mirror local ngay sau restore — F5 lần sau vẫn còn dù cloud thiếu stats
+    try {
+      saveWrongIdsLocal();
+      saveProgressLocal();
+    } catch {
+      /* ignore */
     }
     applyExamUi();
     updateBadges();
@@ -595,6 +739,7 @@
   function getPrmCloudData() {
     const cur = queue[index];
     const choices = lastChoicesToObject();
+    const stats = { sessionCorrect, sessionAnswered };
     return {
       wrongIds: [...wrongIds],
       lastChoices: choices,
@@ -610,24 +755,26 @@
         index: queue.length ? index : 0,
         display: queue.length ? index + 1 : 1,
         lastChoices: choices,
+        stats,
       },
-      stats: { sessionCorrect, sessionAnswered },
+      stats,
       savedAt: Date.now(),
     };
   }
 
   /**
-   * Persist wrong bank + vị trí câu (cloud hoặc local).
+   * Persist wrong bank + vị trí + điểm.
+   * Luôn ghi localStorage (kể cả cloud) — trước đây cloud-only khiến F5 điểm về 0.
    * @param {{ immediate?: boolean }} [opts] immediate=true khi Next/Prev (lưu Neon ngay)
    */
   function persistState(opts) {
     const immediate = !!(opts && opts.immediate);
-    if (window.StudyCloud && StudyCloud.isCloud()) {
-      StudyCloud.notifyChange(immediate);
-      return;
-    }
+    // Dual-write: local luôn có bản sao điểm/lastChoices
     saveWrongIdsLocal();
     saveProgressLocal();
+    if (window.StudyCloud && StudyCloud.isCloud()) {
+      StudyCloud.notifyChange(immediate);
+    }
   }
 
   function saveWrongIds() {
@@ -652,7 +799,10 @@
       el.shuffleToggle.checked = r.shuffle;
     }
     if (r.lastChoices) applyLastChoicesObject(r.lastChoices);
+    if (r.stats) applyStatsFallback(r.stats);
+    applyStatsFallback(loadScoreLocal());
     syncReshuffleBtn();
+    updateBadges();
 
     const shuffleOn = !!(el.shuffleToggle && el.shuffleToggle.checked);
     // Ưu tiên: currentId (ổn định); fallback: index 0-based trong hàng đợi
@@ -711,6 +861,11 @@
   async function bootStorage() {
     wrongIds = loadWrongIdsLocal();
     pendingRestore = loadProgressLocal();
+    // Khôi phục điểm sớm từ key riêng + progress (trước khi cloud có thể thiếu stats)
+    applyStatsFallback(loadScoreLocal());
+    if (pendingRestore && pendingRestore.stats) {
+      applyStatsFallback(pendingRestore.stats);
+    }
     if (pendingRestore && typeof pendingRestore.explainVisible === "boolean") {
       explainVisible = pendingRestore.explainVisible;
     }
@@ -719,7 +874,11 @@
     }
     if (pendingRestore && pendingRestore.lastChoices) {
       applyLastChoicesObject(pendingRestore.lastChoices);
+      // lastChoice recompute không được làm tụt điểm đã fallback
+      applyStatsFallback(loadScoreLocal());
+      if (pendingRestore.stats) applyStatsFallback(pendingRestore.stats);
     }
+    updateBadges();
     if (!window.StudyCloud) return;
     // hide old modal if present
     if (el.masterModal) {
@@ -735,6 +894,11 @@
       onAfterLoad: () => {
         // Cloud login / restore — nhảy về câu đã lưu
         restorePositionAndBuild();
+        // Cloud payload có thể thiếu stats — giữ điểm local/score key
+        applyStatsFallback(loadScoreLocal());
+        updateBadges();
+        saveScoreLocal();
+        saveProgressLocal();
       },
       autoPrompt: true,
     });
@@ -937,6 +1101,32 @@
   }
 
   // —— Render ——
+  /**
+   * Đồng bộ điểm/đã làm từ lastChoice.
+   * @param {{ force?: boolean }} [opts] force=true (Reset điểm) ghi đè tuyệt đối;
+   *   mặc định không giảm điểm đã khôi phục khi map đáp án bị thiếu một phần.
+   */
+  function recomputeSessionStatsFromChoices(opts) {
+    let answered = 0;
+    let correct = 0;
+    lastChoice.forEach((chosen, id) => {
+      if (!chosen || !chosen.length) return;
+      const q = BANK.find((x) => Number(x.id) === Number(id));
+      if (!q) return;
+      answered += 1;
+      if (isCorrectSelection(q, chosen)) correct += 1;
+    });
+    if (opts && opts.force) {
+      sessionAnswered = answered;
+      sessionCorrect = correct;
+      return;
+    }
+    // Không cho điểm tụt về 0 khi cloud/local mất lastChoices nhưng stats còn
+    sessionAnswered = Math.max(sessionAnswered, answered);
+    sessionCorrect = Math.max(sessionCorrect, correct);
+    if (sessionCorrect > sessionAnswered) sessionAnswered = sessionCorrect;
+  }
+
   function updateBadges() {
     el.badgeAll.textContent = String(examPool().length);
     el.badgeWrong.textContent = String(
@@ -946,6 +1136,18 @@
     updateExamBadges();
     el.statWrong.textContent = String(wrongIds.size);
     el.statCorrect.textContent = String(sessionCorrect);
+    if (el.statAnswered) el.statAnswered.textContent = String(sessionAnswered);
+    if (el.statScore) el.statScore.textContent = String(sessionCorrect);
+    if (el.statPct) {
+      if (sessionAnswered > 0) {
+        const p = Math.round((sessionCorrect / sessionAnswered) * 100);
+        el.statPct.textContent = `(${p}%)`;
+        el.statPct.hidden = false;
+      } else {
+        el.statPct.textContent = "";
+        el.statPct.hidden = true;
+      }
+    }
     el.statTotal.textContent = String(queue.length);
     el.statProgress.textContent = queue.length ? String(index + 1) : "0";
     const pct = queue.length ? ((index + 1) / queue.length) * 100 : 0;
@@ -1360,7 +1562,10 @@
     html += buildExplainVisPopoverHtml(hideTrans);
 
     const fmt = (s) =>
-      escapeHtml(s || "")
+      escapeHtml(
+        // Data lỗi đôi khi lưu literal "\n" thay vì xuống dòng thật
+        String(s || "").replace(/\\n/g, "\n")
+      )
         .replace(/\n•/g, "<br>•")
         .replace(/\n/g, "<br>");
 
@@ -1371,8 +1576,8 @@
         <table class="explain-table explain-q">
           <thead><tr><th style="width:22%">Loại</th><th>Nội dung</th></tr></thead>
           <tbody>
-            <tr><td><strong>Câu gốc</strong></td><td class="en-cell">${escapeHtml(q.question || "")}</td></tr>
-            <tr><td><strong>Dịch (VI)</strong></td><td>${escapeHtml(qv || "—")}</td></tr>
+            <tr><td><strong>Câu gốc</strong></td><td class="en-cell">${fmt(q.question || "")}</td></tr>
+            <tr><td><strong>Dịch (VI)</strong></td><td>${fmt(qv || "—")}</td></tr>
           </tbody>
         </table>
         <div class="explain-sub">Các lựa chọn</div>
@@ -1848,11 +2053,11 @@
     answered = true;
     selectedLetters = chosen.slice().sort();
     lastChoice.set(q.id, selectedLetters.slice());
-    sessionAnswered += 1;
+    // Điểm / đã làm: đếm lại từ lastChoice (tránh +1 trùng khi trả lời lại)
+    recomputeSessionStatsFromChoices();
 
     const ok = isCorrectSelection(q, selectedLetters);
     if (ok) {
-      sessionCorrect += 1;
       if (mode === "wrong") removeWrong(q.id);
     } else {
       addWrong(q.id);
@@ -2049,11 +2254,18 @@
   });
 
   el.btnResetSession.addEventListener("click", () => {
+    lastChoice = new Map();
     sessionCorrect = 0;
     sessionAnswered = 0;
-    lastChoice = new Map();
+    recomputeSessionStatsFromChoices({ force: true });
+    try {
+      localStorage.removeItem(SCORE_KEY);
+    } catch {
+      /* ignore */
+    }
     answered = false;
     selectedLetters = [];
+    updateBadges();
     render();
     persistState({ immediate: true });
   });
