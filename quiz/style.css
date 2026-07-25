@@ -190,6 +190,23 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
 }
 .badge-done strong { color: var(--correct); }
 
+.badge-visitors {
+  background: color-mix(in srgb, #22c55e 12%, transparent);
+  border-color: color-mix(in srgb, #22c55e 35%, transparent);
+  color: #15803d;
+}
+.badge-visitors strong {
+  color: #15803d;
+}
+.badge-visitors .visitors-day {
+  font-weight: 600;
+  opacity: 0.85;
+  font-size: 0.7rem;
+}
+.badge-visitors.hidden {
+  display: none !important;
+}
+
 .badge-wrong {
   background: var(--wrong-bg);
   color: var(--wrong);

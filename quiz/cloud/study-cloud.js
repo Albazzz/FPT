@@ -1,6 +1,7 @@
 /**
  * StudyCloud — Master Control + Neon sync for all subjects (MLN / JIT / FE).
  * Local = localStorage (caller). Cloud = Neon table study_progress (id = subject).
+ * Visitors: site_visits (device_id) — mọi máy ping; số thiết bị chỉ hiện khi Master login.
  */
 (function (global) {
   "use strict";
@@ -9,6 +10,10 @@
   const MASTER_CODE = String(CFG.MASTER_CODE || "Namcong9@");
   const DATABASE_URL = String(CFG.DATABASE_URL || "");
   const FLAG_KEY = "study-cloud-mode-v1";
+  const DEVICE_KEY = "study-cloud-device-id-v1";
+  const VISIT_PING_KEY = "study-cloud-visit-ping-v1";
+  /** Throttle ghi visit (ms) — tránh spam mỗi lần đổi tab/reload liên tục */
+  const VISIT_PING_TTL_MS = 30 * 60 * 1000;
 
   let mode = "local"; // local | cloud
   let sql = null;
@@ -20,6 +25,7 @@
   let setDataFn = null;
   let onAfterLoad = null;
   let badgeEl = null;
+  let visitorsEl = null;
   /** Only write Neon when true — prevents idle tabs from overwriting progress */
   let dirty = false;
   /** savedAt from last successful load/save — used for light LWW */
@@ -166,6 +172,20 @@
       console.warn("migrate mln_progress skipped", e);
     }
 
+    // Step 4: visitor devices (non-fatal if fails later on first ping)
+    try {
+      await s`CREATE TABLE IF NOT EXISTS site_visits (
+        device_id TEXT PRIMARY KEY,
+        first_seen TIMESTAMPTZ NOT NULL DEFAULT now(),
+        last_seen TIMESTAMPTZ NOT NULL DEFAULT now(),
+        hit_count INT NOT NULL DEFAULT 1,
+        user_agent TEXT,
+        last_subject TEXT
+      )`;
+    } catch (e) {
+      console.warn("CREATE site_visits", e);
+    }
+
     // verify
     try {
       await s`SELECT 1 FROM study_progress LIMIT 1`;
@@ -178,6 +198,160 @@
     }
 
     schemaOk = true;
+  }
+
+  function getDeviceId() {
+    try {
+      let id = localStorage.getItem(DEVICE_KEY);
+      if (id && String(id).length >= 8) return String(id);
+      id =
+        (global.crypto &&
+          typeof global.crypto.randomUUID === "function" &&
+          global.crypto.randomUUID()) ||
+        "d-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 12);
+      localStorage.setItem(DEVICE_KEY, id);
+      return id;
+    } catch {
+      return "ephemeral-" + Date.now().toString(36);
+    }
+  }
+
+  function shouldPingVisit() {
+    try {
+      const last = Number(localStorage.getItem(VISIT_PING_KEY) || 0);
+      if (Number.isFinite(last) && Date.now() - last < VISIT_PING_TTL_MS) {
+        return false;
+      }
+      return true;
+    } catch {
+      return true;
+    }
+  }
+
+  function markVisitPinged() {
+    try {
+      localStorage.setItem(VISIT_PING_KEY, String(Date.now()));
+    } catch {
+      /* ignore */
+    }
+  }
+
+  /** Mọi máy vào web đều ping (throttle); không cần Master. */
+  async function recordVisit(sub) {
+    if (!cloudConfigured()) return false;
+    if (!shouldPingVisit()) return false;
+    try {
+      const s = await getSql();
+      const deviceId = getDeviceId();
+      const ua = String(
+        (global.navigator && global.navigator.userAgent) || ""
+      ).slice(0, 300);
+      const subject = String(sub || subjectId || "").slice(0, 40);
+      await s`
+        INSERT INTO site_visits (device_id, first_seen, last_seen, hit_count, user_agent, last_subject)
+        VALUES (${deviceId}, now(), now(), 1, ${ua}, ${subject})
+        ON CONFLICT (device_id) DO UPDATE SET
+          last_seen = now(),
+          hit_count = site_visits.hit_count + 1,
+          user_agent = EXCLUDED.user_agent,
+          last_subject = EXCLUDED.last_subject
+      `;
+      markVisitPinged();
+      return true;
+    } catch (e) {
+      console.warn("recordVisit", e);
+      return false;
+    }
+  }
+
+  async function fetchVisitorStats() {
+    const s = await getSql();
+    const totalRows = await s`SELECT COUNT(*)::int AS n FROM site_visits`;
+    const dayRows = await s`
+      SELECT COUNT(*)::int AS n FROM site_visits
+      WHERE last_seen > now() - interval '1 day'
+    `;
+    return {
+      total: Number(totalRows[0] && totalRows[0].n) || 0,
+      activeDay: Number(dayRows[0] && dayRows[0].n) || 0,
+    };
+  }
+
+  function ensureVisitorsBadge(parent) {
+    if (visitorsEl && visitorsEl.isConnected) return visitorsEl;
+    const existing = document.getElementById("statVisitors");
+    if (existing) {
+      visitorsEl = existing;
+      return visitorsEl;
+    }
+    if (!parent) return null;
+    visitorsEl = document.createElement("span");
+    visitorsEl.id = "statVisitors";
+    visitorsEl.className = "badge badge-visitors hidden";
+    visitorsEl.title = "Số thiết bị đã vào web (Neon · chỉ Master)";
+    visitorsEl.innerHTML =
+      '<i class="fa-solid fa-users" aria-hidden="true"></i> ' +
+      '<strong id="statVisitorCount">—</strong> máy' +
+      '<span class="visitors-day hidden" id="statVisitorDay"></span>';
+    parent.appendChild(visitorsEl);
+    return visitorsEl;
+  }
+
+  function setVisitorsBadgeVisible(on) {
+    const el = visitorsEl || document.getElementById("statVisitors");
+    if (!el) return;
+    el.classList.toggle("hidden", !on);
+    if (!on) {
+      const strong = el.querySelector("#statVisitorCount") || document.getElementById("statVisitorCount");
+      if (strong) strong.textContent = "—";
+      const day = el.querySelector("#statVisitorDay") || document.getElementById("statVisitorDay");
+      if (day) {
+        day.textContent = "";
+        day.classList.add("hidden");
+      }
+    }
+  }
+
+  async function refreshVisitorBadge() {
+    if (mode !== "cloud") {
+      setVisitorsBadgeVisible(false);
+      return null;
+    }
+    const el = visitorsEl || document.getElementById("statVisitors");
+    if (!el) return null;
+    el.classList.remove("hidden");
+    const strong =
+      el.querySelector("#statVisitorCount") ||
+      document.getElementById("statVisitorCount");
+    const dayEl =
+      el.querySelector("#statVisitorDay") ||
+      document.getElementById("statVisitorDay");
+    try {
+      if (strong) strong.textContent = "…";
+      const stats = await fetchVisitorStats();
+      if (strong) strong.textContent = String(stats.total);
+      el.title =
+        "Thiết bị đã vào web: " +
+        stats.total +
+        " · active 24h: " +
+        stats.activeDay +
+        " (Neon site_visits)";
+      if (dayEl) {
+        if (stats.activeDay > 0) {
+          dayEl.textContent = " · " + stats.activeDay + " (24h)";
+          dayEl.classList.remove("hidden");
+        } else {
+          dayEl.textContent = "";
+          dayEl.classList.add("hidden");
+        }
+      }
+      return stats;
+    } catch (e) {
+      console.warn("refreshVisitorBadge", e);
+      if (strong) strong.textContent = "?";
+      el.title = "Không đọc được site_visits: " + ((e && e.message) || e);
+      return null;
+    }
   }
 
   async function load(id) {
@@ -465,6 +639,10 @@
       .sc-badge.is-cloud{background:#e0f2fe;border-color:#7dd3fc;color:#0369a1}
       .sc-badge.is-syncing{opacity:.75}
       .sc-badge.is-error{background:#fef2f2;border-color:#fecaca;color:#b91c1c}
+      .badge-visitors{background:#f0fdf4;border-color:#bbf7d0;color:#15803d}
+      .badge-visitors strong{color:#15803d}
+      .badge-visitors .visitors-day{font-weight:600;opacity:.85;font-size:.7rem}
+      .badge-visitors.hidden{display:none!important}
       .sc-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px}
       .sc-modal.hidden{display:none!important}
       .sc-backdrop{position:absolute;inset:0;background:rgba(15,23,42,.45)}
@@ -589,12 +767,17 @@
       if (setDataFn) setDataFn(data || {});
       if (onAfterLoad) onAfterLoad(data || {});
       updateBadge("is-cloud", "Cloud");
+      // Master: ghi visit + hiện số thiết bị trên nav
+      recordVisit(subjectId).finally(function () {
+        refreshVisitorBadge();
+      });
       toast("Cloud: đồng bộ Neon (+ mirror local để F5 không mất điểm).");
       closeModal();
     } catch (e) {
       console.error(e);
       mode = "local";
       dirty = false;
+      setVisitorsBadgeVisible(false);
       updateBadge("is-error", "Lỗi cloud");
       const msg = e.message || "Kết nối thất bại";
       showErr(
@@ -614,6 +797,7 @@
       localStorage.removeItem(FLAG_KEY);
     } catch (e) {}
     updateBadge("", "Local");
+    setVisitorsBadgeVisible(false);
     if (setDataFn) {
       // reload local via empty signal — caller should re-read localStorage
       setDataFn(null);
@@ -653,6 +837,14 @@
         '<span data-cloud-icon class="fa-solid fa-hard-drive"></span><span data-cloud-text>Local</span>';
       badgeEl.onclick = () => openModal();
       parent.appendChild(badgeEl);
+      ensureVisitorsBadge(parent);
+    } else {
+      ensureVisitorsBadge(document.querySelector(".nav-stats") || document.querySelector(".site-nav .nav-inner"));
+    }
+
+    // Mọi máy (kể cả local) ping visit — Master mới thấy số trên nav
+    if (cloudConfigured()) {
+      recordVisit(subjectId).catch(function () {});
     }
 
     let wantCloud = false;
@@ -671,11 +863,13 @@
         if (setDataFn) setDataFn(data || {});
         if (onAfterLoad) onAfterLoad(data || {});
         updateBadge("is-cloud", "Cloud");
+        refreshVisitorBadge().catch(function () {});
         return;
       } catch (e) {
         console.warn("Cloud restore failed", e);
         mode = "local";
         dirty = false;
+        setVisitorsBadgeVisible(false);
         updateBadge("is-error", "Lỗi cloud");
         toast(
           (e && e.message) ||
@@ -689,6 +883,7 @@
 
     mode = "local";
     dirty = false;
+    setVisitorsBadgeVisible(false);
     if (!badgeEl || !badgeEl.classList.contains("is-error")) {
       updateBadge("", "Local");
     }
@@ -730,6 +925,9 @@
     },
     openModal,
     cloudConfigured,
+    recordVisit,
+    refreshVisitorBadge,
+    fetchVisitorStats,
     MASTER_CODE,
   };
 })(window);

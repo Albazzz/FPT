@@ -1114,7 +1114,7 @@
         "A": "Improve user usability and accessibility",
         "B": "Align IT with business goals",
         "C": "Reduce hardware cost",
-        "D": "A method is made practical by which at the start of communication a common key is encrypted by public key cryptography and sent to the... *(phần cuối bị khuất, tiếp tục là)* encryption of data is performed by common key cryptography."
+        "D": "A method is made practical by which at the start of communication a common key is encrypted by public key cryptography and sent; then encryption of data is performed by common key cryptography."
       },
       "answer": "D",
       "alternatives": [],

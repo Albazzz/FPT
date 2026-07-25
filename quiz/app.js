@@ -146,34 +146,54 @@
   /**
    * Điểm / đã làm / sai theo tag đang học (examSet).
    * Storage vẫn toàn môn; chỉ UI + reset/xóa bám scope này.
+   *
+   * % = đúng / đã làm trong tag — KHÔNG chia tổng bank hay độ dài hàng đợi.
+   * «đã làm» = câu có lastChoice trong tag ∪ correctIds trong tag.
+   * Wrong-bank chỉ bổ sung «đã làm» khi tag chưa có lastChoice (restore cũ).
    */
   function examScoreStats() {
     const scope = examPoolIdSet();
+    /** @type {Set<number>} */
+    const answeredIds = new Set();
+
     let correct = 0;
-    let wrong = 0;
-    let answeredFromChoices = 0;
-    let wrongOnly = 0;
-
     correctIds.forEach((id) => {
-      if (scope.has(Number(id))) correct += 1;
+      const nid = Number(id);
+      if (!scope.has(nid)) return;
+      correct += 1;
+      answeredIds.add(nid);
     });
+
+    let wrong = 0;
     wrongIds.forEach((id) => {
-      if (!scope.has(Number(id))) return;
-      wrong += 1;
-      if (!correctIds.has(Number(id))) wrongOnly += 1;
+      const nid = Number(id);
+      if (scope.has(nid)) wrong += 1;
     });
+
+    let anyChoiceInScope = false;
     lastChoice.forEach((chosen, id) => {
-      if (!scope.has(Number(id))) return;
-      if (chosen && chosen.length) answeredFromChoices += 1;
+      const nid = Number(id);
+      if (!scope.has(nid) || !chosen || !chosen.length) return;
+      anyChoiceInScope = true;
+      answeredIds.add(nid);
     });
 
-    let answered = Math.max(answeredFromChoices, correct + wrongOnly, correct);
-    if (answered < correct) answered = correct;
+    // Restore cũ: chưa có map đáp án trong tag → ước lượng đã làm từ wrong-bank
+    if (!anyChoiceInScope) {
+      wrongIds.forEach((id) => {
+        const nid = Number(id);
+        if (scope.has(nid)) answeredIds.add(nid);
+      });
+    }
 
+    const answered = Math.max(answeredIds.size, correct);
     return {
       correct,
       wrong,
       answered,
+      // Cùng công thức: điểm% = đúng / đã làm (tag)
+      pctNum: correct,
+      pctDen: answered,
       total: scope.size,
       label: currentExamLabel(),
       scoped: isScopedExam(),
@@ -1370,12 +1390,17 @@
     if (el.statAnswered) el.statAnswered.textContent = String(ui.answered);
     if (el.statScore) el.statScore.textContent = String(ui.correct);
     if (el.statPct) {
-      if (ui.answered > 0) {
-        const p = Math.round((ui.correct / ui.answered) * 100);
+      // Tỷ lệ đúng / đã làm trong tag — không dùng tổng bank hay độ dài queue
+      const den = ui.pctDen > 0 ? ui.pctDen : ui.answered;
+      const num = ui.pctNum != null ? ui.pctNum : ui.correct;
+      if (den > 0) {
+        const p = Math.round((num / den) * 100);
         el.statPct.textContent = `(${p}%)`;
+        el.statPct.title = `${num}/${den} đúng/đã làm · ${ui.scoped ? "tag «" + ui.label + "»" : "cả môn"}`;
         el.statPct.hidden = false;
       } else {
         el.statPct.textContent = "";
+        el.statPct.removeAttribute("title");
         el.statPct.hidden = true;
       }
     }

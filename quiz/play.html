@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css?v=ok10" />
+  <link rel="stylesheet" href="style.css?v=ok11" />
 </head>
 <body>
   <div class="app-body">
@@ -47,6 +47,12 @@
           <span class="badge" title="Vị trí câu hiện tại / tổng hàng đợi">
             <i class="fa-solid fa-list-ol"></i>
             <strong id="statProgress">0</strong>/<span id="statTotal">0</span>
+          </span>
+          <!-- Chỉ hiện sau Master Control (StudyCloud cloud mode) -->
+          <span class="badge badge-visitors hidden" id="statVisitors" title="Số thiết bị đã vào web (Neon · chỉ Master)">
+            <i class="fa-solid fa-users" aria-hidden="true"></i>
+            <strong id="statVisitorCount">—</strong> máy
+            <span class="visitors-day hidden" id="statVisitorDay"></span>
           </span>
         </div>
       </div>
@@ -279,12 +285,12 @@
   </div>
 
   <script src="cloud/cloud-config.js?v=5"></script>
-  <script src="cloud/study-cloud.js?v=9"></script>
+  <script src="cloud/study-cloud.js?v=10"></script>
   <script src="subjects.js?v=ok13"></script>
   <script src="data/prm.js?v=ok12"></script>
   <script src="data/mln.js?v=ok12"></script>
   <script src="data/jit.js?v=ok15"></script>
   <script src="data/fe.js?v=ok16"></script>
-  <script src="app.js?v=ok17"></script>
+  <script src="app.js?v=ok18b"></script>
 </body>
 </html>
