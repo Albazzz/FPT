@@ -31,7 +31,11 @@
             <i class="fa-solid fa-pen-to-square"></i>
             <strong id="statAnswered">0</strong> đã làm
           </span>
-          <span class="badge badge-score badge-done" title="Điểm = số câu đúng (1 điểm/câu đúng)">
+          <span class="badge badge-score badge-done" title="Số câu đúng đã lưu (sống sót F5/cloud)">
+            <i class="fa-solid fa-circle-check"></i>
+            <strong id="statCorrect">0</strong> đúng
+          </span>
+          <span class="badge badge-score" title="Điểm = số câu đúng (1 điểm/câu)">
             <i class="fa-solid fa-star"></i>
             <strong id="statScore">0</strong> điểm
             <span class="stat-pct" id="statPct" hidden></span>
@@ -44,8 +48,6 @@
             <i class="fa-solid fa-list-ol"></i>
             <strong id="statProgress">0</strong>/<span id="statTotal">0</span>
           </span>
-          <!-- statCorrect kept for JS/API tương thích; ẩn UI -->
-          <strong id="statCorrect" class="sr-only" aria-hidden="true">0</strong>
         </div>
       </div>
     </header>
@@ -277,12 +279,12 @@
   </div>
 
   <script src="cloud/cloud-config.js?v=5"></script>
-  <script src="cloud/study-cloud.js?v=8"></script>
+  <script src="cloud/study-cloud.js?v=9"></script>
   <script src="subjects.js?v=ok13"></script>
   <script src="data/prm.js?v=ok12"></script>
   <script src="data/mln.js?v=ok12"></script>
   <script src="data/jit.js?v=ok15"></script>
   <script src="data/fe.js?v=ok16"></script>
-  <script src="app.js?v=ok14"></script>
+  <script src="app.js?v=ok15"></script>
 </body>
 </html>

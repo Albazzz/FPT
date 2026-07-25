@@ -307,6 +307,28 @@
         localWrong.concat(remoteWrong).map(Number).filter((n) => Number.isFinite(n))
       );
 
+      // Union correctIds (same pattern as wrongIds — score must survive F5)
+      const localCorrect = []
+        .concat(Array.isArray(localPayload.correctIds) ? localPayload.correctIds : [])
+        .concat(
+          localPayload.progress && Array.isArray(localPayload.progress.correctIds)
+            ? localPayload.progress.correctIds
+            : []
+        );
+      const remoteCorrect = []
+        .concat(Array.isArray(remote.correctIds) ? remote.correctIds : [])
+        .concat(
+          remote.progress && Array.isArray(remote.progress.correctIds)
+            ? remote.progress.correctIds
+            : []
+        );
+      const correctSet = new Set(
+        localCorrect
+          .concat(remoteCorrect)
+          .map(Number)
+          .filter((n) => Number.isFinite(n))
+      );
+
       const lp = localPayload.progress || {};
       const rp = remote.progress || {};
       const li = Number(lp.index);
@@ -326,15 +348,23 @@
         mergeChoiceMaps(rp.lastChoices, remote.lastChoices),
         mergeChoiceMaps(lp.lastChoices, localPayload.lastChoices)
       );
-      const stats = mergeStats(
+      let stats = mergeStats(
         mergeStats(remote.stats, rp.stats),
         mergeStats(localPayload.stats, lp.stats)
       );
+      // Floor score by correctIds size (never drop below known correct set)
+      stats = {
+        sessionAnswered: Math.max(stats.sessionAnswered || 0, correctSet.size),
+        sessionCorrect: Math.max(stats.sessionCorrect || 0, correctSet.size),
+        correctIds: Array.from(correctSet),
+      };
       progress.lastChoices = lastChoices;
       progress.stats = stats;
+      progress.correctIds = Array.from(correctSet);
 
       return Object.assign({}, remote, localPayload, {
         wrongIds: Array.from(wrongSet),
+        correctIds: Array.from(correctSet),
         lastChoices: lastChoices,
         stats: stats,
         progress: progress,
