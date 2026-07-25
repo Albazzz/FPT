@@ -634,14 +634,14 @@
     const s = document.createElement("style");
     s.id = "study-cloud-css";
     s.textContent = `
-      .sc-badge{cursor:pointer;border:1px solid #e2e8f0;background:#f8fafc;color:#64748b;font:700 12px/1 system-ui;display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px}
+      .sc-badge{cursor:pointer;border:1px solid #e2e8f0;background:#f8fafc;color:#64748b;font:700 12px/1 system-ui;display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;flex-shrink:0;order:60}
       .sc-badge:hover{border-color:#6366f1;color:#4f46e5}
       .sc-badge.is-cloud{background:#e0f2fe;border-color:#7dd3fc;color:#0369a1}
       .sc-badge.is-syncing{opacity:.75}
       .sc-badge.is-error{background:#fef2f2;border-color:#fecaca;color:#b91c1c}
-      .badge-visitors{background:#f0fdf4;border-color:#bbf7d0;color:#15803d}
-      .badge-visitors strong{color:#15803d}
-      .badge-visitors .visitors-day{font-weight:600;opacity:.85;font-size:.7rem}
+      .badge-visitors{flex-shrink:0;order:50;background:#ecfdf5;border:1px solid #4ade80;color:#166534;font:700 12px/1.2 system-ui;display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;box-shadow:0 0 0 2px rgba(34,197,94,.12)}
+      .badge-visitors strong{color:#15803d;font-size:14px}
+      .badge-visitors .visitors-day{font-weight:600;opacity:.9;font-size:11px;color:#166534}
       .badge-visitors.hidden{display:none!important}
       .sc-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px}
       .sc-modal.hidden{display:none!important}

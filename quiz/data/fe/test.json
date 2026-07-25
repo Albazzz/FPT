@@ -2222,7 +2222,7 @@
         "questionVi": "Giao thức an toàn nào kết hợp xác thực client–server và mã hóa truyền dữ liệu?",
         "optionsVi": {
           "A": "SSL",
-          "B": "Tính àn vẹn",
+          "B": "Tính toàn vẹn",
           "C": "Xác thực",
           "D": "Non-repudiation"
         },
@@ -2395,14 +2395,14 @@
       "answer": "A",
       "alternatives": [],
       "explanation": {
-        "questionVi": "Cái nào sau đây là mô tả phù hợp về vai trò của reverse proxy?",
+        "questionVi": "Đâu là mô tả phù hợp về chính sách an toàn thông tin (information security policy)?",
         "optionsVi": {
-          "A": "Để đạt mức bảo mật mục tiêu cần chính sách bảo mật nêu rõ hành vi nhân viên.",
-          "B": "Tính àn vẹn",
+          "A": "Để đạt mức bảo mật mục tiêu, cần nêu rõ tư duy của tổ chức về hành vi và cách phán đoán cần tuân theo.",
+          "B": "Tính toàn vẹn",
           "C": "Xác thực",
-          "D": "ủy quyền"
+          "D": "Ủy quyền"
         },
-        "answerDisplay": "A. Để đạt mức bảo mật mục tiêu cần chính sách bảo mật nêu rõ hành vi nhân viên.",
+        "answerDisplay": "A. Để đạt mức bảo mật mục tiêu, cần nêu rõ tư duy của tổ chức về hành vi và cách phán đoán cần tuân theo.",
         "concept": "• Security policy: văn bản quản trị nêu nguyên tắc, trách nhiệm, hành vi được phép/cấm — định hướng ISMS.",
         "whyCorrect": "• Option A đúng tinh thần policy (management direction).\n• B/C/D là thuộc tính/cơ chế, không phải định nghĩa policy.",
         "intent": "• J7 — security policy.",
@@ -2488,7 +2488,7 @@
           "A": "Resetting mật khẩu, và having người dùng set một mới mật khẩu",
           "B": "Non-repudiation",
           "C": "Xác thực",
-          "D": "Tính àn vẹn"
+          "D": "Tính toàn vẹn"
         },
         "answerDisplay": "A. Resetting mật khẩu, và having người dùng set một mới mật khẩu",
         "concept": "• Quy trình quên MK: verify identity → temporary reset / force change — user tự đặt secret mới, admin không tái sử dụng MK cũ.",

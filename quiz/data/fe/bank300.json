@@ -1652,7 +1652,7 @@
           "A": "MTBF/(MTBF+MTTR)",
           "B": "ủy quyền",
           "C": "Non-repudiation",
-          "D": "Tính àn vẹn"
+          "D": "Tính toàn vẹn"
         },
         "answerDisplay": "A. MTBF/(MTBF+MTTR)",
         "concept": "• Availability (CIA): truy cập thông tin/hệ khi cần.",
@@ -3499,10 +3499,10 @@
         "optionsVi": {
           "A": "Xác thực",
           "B": "Non-repudiation",
-          "C": "Entity tính àn vẹn",
+          "C": "Entity tính toàn vẹn",
           "D": "độ sẵn sàng"
         },
-        "answerDisplay": "C. Entity tính àn vẹn",
+        "answerDisplay": "C. Entity tính toàn vẹn",
         "concept": "• Primary key: định danh duy nhất hàng, not null.",
         "whyCorrect": "• Khóa chính bảng quan hệ.",
         "intent": "• bank300 · 80 · J3-DB",
@@ -3543,10 +3543,10 @@
         "optionsVi": {
           "A": "Tính bí mật",
           "B": "ủy quyền",
-          "C": "Referential tính àn vẹn",
+          "C": "Referential tính toàn vẹn",
           "D": "Xác thực"
         },
-        "answerDisplay": "C. Referential tính àn vẹn",
+        "answerDisplay": "C. Referential tính toàn vẹn",
         "concept": "• Foreign key: tham chiếu PK bảng khác — toàn vẹn tham chiếu.",
         "whyCorrect": "• Ràng buộc quan hệ giữa bảng.",
         "intent": "• bank300 · 81 · J3-DB",
@@ -4819,7 +4819,7 @@
           "A": "Accessible Khi bắt buộc",
           "B": "Xác thực",
           "C": "Non-repudiation",
-          "D": "Tính àn vẹn"
+          "D": "Tính toàn vẹn"
         },
         "answerDisplay": "A. Accessible Khi bắt buộc",
         "concept": "• Availability (CIA): truy cập thông tin/hệ khi cần.",
@@ -4902,10 +4902,10 @@
       "answer": "C",
       "alternatives": [],
       "explanation": {
-        "questionVi": "CIA tính àn vẹn?",
+        "questionVi": "CIA tính toàn vẹn?",
         "optionsVi": {
           "A": "Xác thực",
-          "B": "Tính àn vẹn",
+          "B": "Tính toàn vẹn",
           "C": "Accurate và complete",
           "D": "Non-repudiation"
         },
@@ -5083,7 +5083,7 @@
           "A": "Nêu tiêu chí hành vi/phán đoán bảo mật của tổ chức",
           "B": "Non-repudiation",
           "C": "ủy quyền",
-          "D": "Tính àn vẹn"
+          "D": "Tính toàn vẹn"
         },
         "answerDisplay": "A. Nêu tiêu chí hành vi/phán đoán bảo mật của tổ chức",
         "concept": "• State org behavior/judgment criteria for security — khái niệm/cơ chế đúng với stem «Security policy should?».",
@@ -5346,7 +5346,7 @@
         "optionsVi": {
           "A": "Biometric từ eye",
           "B": "Tính bí mật",
-          "C": "Tính àn vẹn",
+          "C": "Tính toàn vẹn",
           "D": "Xác thực"
         },
         "answerDisplay": "A. Biometric từ eye",
@@ -5610,7 +5610,7 @@
         "optionsVi": {
           "A": "Cơ quan điều phối cảnh báo sớm an toàn thông tin (JPCERT/CC…).",
           "B": "Xác thực",
-          "C": "Tính àn vẹn",
+          "C": "Tính toàn vẹn",
           "D": "Non-repudiation"
         },
         "answerDisplay": "A. Cơ quan điều phối cảnh báo sớm an toàn thông tin (JPCERT/CC…).",
@@ -10185,7 +10185,7 @@
         "questionVi": "độ sẵn sàng quản lý mục tiêu?",
         "optionsVi": {
           "A": "Meet agreed độ sẵn sàng SLA",
-          "B": "Tính àn vẹn",
+          "B": "Tính toàn vẹn",
           "C": "Tính bí mật",
           "D": "Xác thực"
         },
@@ -11462,7 +11462,7 @@
         "optionsVi": {
           "A": "Tính bí mật",
           "B": "độ sẵn sàng (nguồn điện)",
-          "C": "Tính àn vẹn",
+          "C": "Tính toàn vẹn",
           "D": "Non-repudiation"
         },
         "answerDisplay": "B. độ sẵn sàng (nguồn điện)",
@@ -11593,7 +11593,7 @@
         "questionVi": "Patch quản lý?",
         "optionsVi": {
           "A": "Xác thực",
-          "B": "Tính àn vẹn",
+          "B": "Tính toàn vẹn",
           "C": "Technical bảo mật measure",
           "D": "độ sẵn sàng"
         },
@@ -11683,7 +11683,7 @@
           "A": "Web bảo mật",
           "B": "Tính bí mật",
           "C": "Xác thực",
-          "D": "Tính àn vẹn"
+          "D": "Tính toàn vẹn"
         },
         "answerDisplay": "A. Web bảo mật",
         "concept": "• Web security — khái niệm/cơ chế đúng với stem «XSS related to?».",
@@ -11726,7 +11726,7 @@
         "optionsVi": {
           "A": "ủy quyền",
           "B": "độ sẵn sàng",
-          "C": "Tính àn vẹn",
+          "C": "Tính toàn vẹn",
           "D": "CA (Certificate Authority)"
         },
         "answerDisplay": "D. CA (Certificate Authority)",
@@ -11901,7 +11901,7 @@
         "questionVi": "MFA nghĩ là?",
         "optionsVi": {
           "A": "độ sẵn sàng",
-          "B": "Tính àn vẹn",
+          "B": "Tính toàn vẹn",
           "C": "Tính bí mật",
           "D": "Multi-factor xác thực"
         },

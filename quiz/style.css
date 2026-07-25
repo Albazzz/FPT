@@ -79,19 +79,25 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
 .site-nav {
   position: relative;
   z-index: 1;
-  height: var(--nav-h);
+  /* auto height: nhiều badge (điểm + visitors + cloud) không bị cắt */
+  min-height: var(--nav-h);
+  height: auto;
   display: flex;
   align-items: center;
   background: var(--surface);
   border-bottom: 1px solid var(--border);
+  padding-block: 8px;
+  overflow: visible;
 }
 
 .nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--sp-4);
+  flex-wrap: wrap;
+  gap: 8px var(--sp-4);
   width: 100%;
+  row-gap: 8px;
 }
 
 .brand {
@@ -165,6 +171,11 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
   flex-wrap: wrap;
   gap: 8px;
   justify-content: flex-end;
+  align-items: center;
+  flex: 1 1 220px;
+  min-width: 0;
+  /* Trên màn hẹp: cuộn ngang thay vì mất badge cuối */
+  max-width: 100%;
 }
 
 .badge {
@@ -191,20 +202,31 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
 .badge-done strong { color: var(--correct); }
 
 .badge-visitors {
-  background: color-mix(in srgb, #22c55e 12%, transparent);
-  border-color: color-mix(in srgb, #22c55e 35%, transparent);
-  color: #15803d;
+  flex-shrink: 0;
+  order: 50; /* gần cloud badge */
+  background: #ecfdf5;
+  border: 1px solid #4ade80;
+  color: #166534;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.12);
 }
 .badge-visitors strong {
   color: #15803d;
+  font-size: 0.95rem;
 }
 .badge-visitors .visitors-day {
   font-weight: 600;
-  opacity: 0.85;
-  font-size: 0.7rem;
+  opacity: 0.9;
+  font-size: 0.72rem;
+  color: #166534;
 }
 .badge-visitors.hidden {
   display: none !important;
+}
+.sc-badge {
+  flex-shrink: 0;
+  order: 60;
 }
 
 .badge-wrong {
@@ -1468,6 +1490,18 @@ kbd {
 @media (max-width: 560px) {
   .brand-text span { display: none; }
   .nav-stats .badge { padding: 4px 8px; font-size: 0.7rem; }
+  /* Visitors + cloud luôn thấy trên mobile */
+  .nav-stats .badge-visitors {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+  .nav-stats {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    padding-bottom: 2px;
+  }
   .nav-links { gap: 8px; font-size: 0.78rem; }
   .nav-links a:not(:first-child) { display: none; } /* mobile: chỉ Study Hub */
   .btn-nav .nav-label { display: none; }

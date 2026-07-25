@@ -4141,12 +4141,12 @@
       "explanation": {
         "questionVi": "Chữ ký số cung cấp:",
         "optionsVi": {
-          "A": "Tính àn vẹn and non-repudiation ( xác thực signer)",
+          "A": "Tính toàn vẹn and non-repudiation ( xác thực signer)",
           "B": "Chỉ compression",
           "C": "Nhanh hơn scrolling",
           "D": "Chỉ MAC flooding"
         },
-        "answerDisplay": "A. Tính àn vẹn and non-repudiation ( xác thực signer)",
+        "answerDisplay": "A. Tính toàn vẹn and non-repudiation ( xác thực signer)",
         "concept": "• An toàn thông tin: CIA, crypto, auth, perimeter, malware…",
         "whyCorrect": "• Stem security/crypto.",
         "intent": "• books · num 159 · FE theory",
@@ -6282,7 +6282,7 @@
       "source": "books",
       "exam": "JFE301_BOOK_V1_CH6",
       "explanation": {
-        "questionVi": "Tính àn vẹn nghĩ là:",
+        "questionVi": "Tính toàn vẹn nghĩ là:",
         "optionsVi": {
           "A": "Dữ liệu luôn deleted",
           "B": "Dữ liệu not improperly altered",
