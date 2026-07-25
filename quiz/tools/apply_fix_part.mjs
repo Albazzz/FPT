@@ -12,9 +12,9 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { loadBank, saveBank } from "./data_bank.mjs";
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-const dataDir = path.join(root, "data");
 const partsDir = path.join(root, "reports", "FIX_PARTS");
 
 const args = process.argv.slice(2);
@@ -58,8 +58,7 @@ if (!targets.length) {
 const banks = new Map();
 function getBank(subject) {
   if (!banks.has(subject)) {
-    const p = path.join(dataDir, `${subject}.json`);
-    banks.set(subject, JSON.parse(fs.readFileSync(p, "utf8")));
+    banks.set(subject, loadBank(subject));
   }
   return banks.get(subject);
 }
@@ -98,14 +97,8 @@ for (const key of targets) {
 for (const [subject, data] of banks) {
   data.upgradedAt = new Date().toISOString();
   data.explainPass = String(data.explainPass || "") + `+fix-part-${applied}`;
-  fs.writeFileSync(path.join(dataDir, `${subject}.json`), JSON.stringify(data));
-  fs.writeFileSync(
-    path.join(dataDir, `${subject}.js`),
-    `// Auto-generated — apply_fix_part\n` +
-      `window.QUIZ_DATA = window.QUIZ_DATA || {};\n` +
-      `window.QUIZ_DATA[${JSON.stringify(subject)}] = ${JSON.stringify(data.questions)};\n`
-  );
-  console.log(`[write] ${subject}: ${data.questions.length} questions`);
+  const info = saveBank(subject, data, { jsComment: "apply_fix_part" });
+  console.log(`[write] ${subject}: ${info.total} questions (parts + monofile)`);
 }
 
 console.log(JSON.stringify({ applied, skipped, bySub, onlyDone }, null, 2));

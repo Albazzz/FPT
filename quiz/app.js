@@ -112,6 +112,102 @@
     return BANK.filter((q) => String(q.task || q.exam || "all") === examSet);
   }
 
+  /** true khi đang lọc theo 1 task/tag cụ thể (không phải «Tất cả»). */
+  function isScopedExam() {
+    return examSet !== "all" && examSet !== "both";
+  }
+
+  function currentExamLabel() {
+    if (!isScopedExam()) return "Tất cả";
+    const def = TASK_DEFS.find((t) => t.id === examSet);
+    return (def && def.label) || examSet;
+  }
+
+  /** Set id số thuộc pool tag đang chọn. */
+  function examPoolIdSet() {
+    const set = new Set();
+    examPool().forEach((q) => {
+      const id = Number(q.id);
+      if (Number.isFinite(id)) set.add(id);
+    });
+    return set;
+  }
+
+  function wrongIdsInExamPool() {
+    const scope = examPoolIdSet();
+    return [...wrongIds].filter((id) => scope.has(Number(id)));
+  }
+
+  function correctIdsInExamPool() {
+    const scope = examPoolIdSet();
+    return [...correctIds].filter((id) => scope.has(Number(id)));
+  }
+
+  /**
+   * Điểm / đã làm / sai theo tag đang học (examSet).
+   * Storage vẫn toàn môn; chỉ UI + reset/xóa bám scope này.
+   */
+  function examScoreStats() {
+    const scope = examPoolIdSet();
+    let correct = 0;
+    let wrong = 0;
+    let answeredFromChoices = 0;
+    let wrongOnly = 0;
+
+    correctIds.forEach((id) => {
+      if (scope.has(Number(id))) correct += 1;
+    });
+    wrongIds.forEach((id) => {
+      if (!scope.has(Number(id))) return;
+      wrong += 1;
+      if (!correctIds.has(Number(id))) wrongOnly += 1;
+    });
+    lastChoice.forEach((chosen, id) => {
+      if (!scope.has(Number(id))) return;
+      if (chosen && chosen.length) answeredFromChoices += 1;
+    });
+
+    let answered = Math.max(answeredFromChoices, correct + wrongOnly, correct);
+    if (answered < correct) answered = correct;
+
+    return {
+      correct,
+      wrong,
+      answered,
+      total: scope.size,
+      label: currentExamLabel(),
+      scoped: isScopedExam(),
+    };
+  }
+
+  /** Cập nhật title nút Reset/Xóa sai + badge điểm theo tag đang chọn. */
+  function updateScopeActionTitles() {
+    const label = currentExamLabel();
+    const scoped = isScopedExam();
+    const scopeHint = scoped ? `tag «${label}»` : "toàn bộ môn";
+    if (el.btnResetSession) {
+      el.btnResetSession.title = scoped
+        ? `Reset điểm tag «${label}» (không đụng tag khác)`
+        : "Reset điểm toàn bộ môn (mọi tag)";
+    }
+    if (el.btnClearWrong) {
+      el.btnClearWrong.title = scoped
+        ? `Xóa câu sai trong tag «${label}» (không đụng tag khác)`
+        : "Xóa câu sai đã lưu (toàn bộ môn)";
+    }
+    const bar = document.getElementById("statsBar");
+    if (bar) {
+      const ans = bar.querySelector(".badge-answered");
+      const done = bar.querySelector(".badge-done");
+      const score = bar.querySelector(".badge-score:not(.badge-done)");
+      const wrong = bar.querySelector(".badge-wrong");
+      if (ans) ans.title = `Số câu đã trả lời · ${scopeHint}`;
+      if (done) done.title = `Số câu đúng đã lưu · ${scopeHint}`;
+      if (score) score.title = `Điểm = số câu đúng (1đ/câu) · ${scopeHint}`;
+      if (wrong) wrong.title = `Câu sai đã lưu (ôn lại) · ${scopeHint}`;
+    }
+  }
+
   function questionTag(q) {
     if (!q) return "";
     const lab =
@@ -632,6 +728,7 @@
       t.setAttribute("aria-selected", active ? "true" : "false");
     });
     updateExamBadges();
+    updateScopeActionTitles();
   }
 
   function countForTask(tid) {
@@ -1254,23 +1351,27 @@
   }
 
   function updateBadges() {
-    // Điểm UI luôn bám correctIds (bền qua F5), không tin session-only
-    sessionCorrect = correctIds.size;
+    // Storage / cloud: session* vẫn phản ánh toàn môn (correctIds global)
+    // UI header: luôn theo tag đang học (examSet)
+    const globalCorrect = correctIds.size;
+    if (sessionCorrect < globalCorrect) sessionCorrect = globalCorrect;
     if (sessionAnswered < sessionCorrect) sessionAnswered = sessionCorrect;
 
-    el.badgeAll.textContent = String(examPool().length);
-    el.badgeWrong.textContent = String(
-      examPool().filter((q) => wrongIds.has(q.id)).length
-    );
-    // statWrong vẫn là tổng câu sai đã lưu (toàn bộ bank)
+    const ui = examScoreStats();
+    const poolLen = examPool().length;
+
+    el.badgeAll.textContent = String(poolLen);
+    el.badgeWrong.textContent = String(ui.wrong);
     updateExamBadges();
-    el.statWrong.textContent = String(wrongIds.size);
-    el.statCorrect.textContent = String(sessionCorrect);
-    if (el.statAnswered) el.statAnswered.textContent = String(sessionAnswered);
-    if (el.statScore) el.statScore.textContent = String(sessionCorrect);
+    updateScopeActionTitles();
+
+    el.statWrong.textContent = String(ui.wrong);
+    el.statCorrect.textContent = String(ui.correct);
+    if (el.statAnswered) el.statAnswered.textContent = String(ui.answered);
+    if (el.statScore) el.statScore.textContent = String(ui.correct);
     if (el.statPct) {
-      if (sessionAnswered > 0) {
-        const p = Math.round((sessionCorrect / sessionAnswered) * 100);
+      if (ui.answered > 0) {
+        const p = Math.round((ui.correct / ui.answered) * 100);
         el.statPct.textContent = `(${p}%)`;
         el.statPct.hidden = false;
       } else {
@@ -1436,10 +1537,14 @@
       el.quizCard.classList.add("hidden");
       el.emptyState.classList.remove("hidden");
       if (mode === "wrong") {
-        el.emptyTitle.textContent = wrongIds.size === 0 ? "Chưa có câu sai" : "Hết câu trong hàng đợi";
+        const w = examScoreStats().wrong;
+        const tag = currentExamLabel();
+        el.emptyTitle.textContent = w === 0 ? "Chưa có câu sai" : "Hết câu trong hàng đợi";
         el.emptyDesc.textContent =
-          wrongIds.size === 0
-            ? "Khi bạn trả lời sai ở tab Tất cả, câu sẽ được lưu ở đây để làm lại."
+          w === 0
+            ? isScopedExam()
+              ? `Tag «${tag}» chưa có câu sai đã lưu. Thử tab khác hoặc làm bài rồi quay lại.`
+              : "Khi bạn trả lời sai, câu sẽ được lưu ở đây để làm lại."
             : "Bấm «Xáo lại» hoặc chuyển tab để tiếp tục.";
       } else {
         el.emptyTitle.textContent = "Không có câu hỏi";
@@ -2393,22 +2498,51 @@
   });
 
   el.btnResetSession.addEventListener("click", () => {
-    lastChoice = new Map();
-    correctIds = new Set();
-    sessionCorrect = 0;
-    sessionAnswered = 0;
-    recomputeSessionStatsFromChoices({ force: true });
-    try {
-      localStorage.removeItem(SCORE_KEY);
-      localStorage.removeItem(CORRECT_KEY);
-    } catch {
-      /* ignore */
+    const label = currentExamLabel();
+    const scoped = isScopedExam();
+    let cleared = 0;
+
+    if (!scoped) {
+      // Tab «Tất cả»: reset toàn môn
+      cleared = correctIds.size;
+      lastChoice = new Map();
+      correctIds = new Set();
+      sessionCorrect = 0;
+      sessionAnswered = 0;
+      try {
+        localStorage.removeItem(SCORE_KEY);
+        localStorage.removeItem(CORRECT_KEY);
+      } catch {
+        /* ignore */
+      }
+      // Không gọi syncScoreFromSets — tránh kéo lại answered từ wrongIds
+      recomputeSessionStatsFromChoices({ force: true });
+    } else {
+      // Chỉ xóa điểm / đáp án đã chọn thuộc tag đang làm
+      const scope = examPoolIdSet();
+      cleared = correctIdsInExamPool().length;
+      for (const id of [...lastChoice.keys()]) {
+        if (scope.has(Number(id))) lastChoice.delete(id);
+      }
+      correctIds = new Set(
+        [...correctIds].filter((id) => !scope.has(Number(id)))
+      );
+      // Không wipe SCORE_KEY/CORRECT_KEY toàn cục — còn data tag khác
+      saveCorrectIdsLocal();
+      recomputeSessionStatsFromChoices({ force: true });
+      syncScoreFromSets();
     }
+
     answered = false;
     selectedLetters = [];
     updateBadges();
     render();
     persistState({ immediate: true });
+    showToast(
+      scoped
+        ? `Đã reset điểm tag «${label}»${cleared ? ` (${cleared} câu đúng đã xóa)` : ""}.`
+        : "Đã reset điểm toàn bộ môn."
+    );
   });
 
   /** @type {HTMLElement | null} */
@@ -2556,15 +2690,36 @@
     });
   }
 
-  function clearAllWrong() {
-    wrongIds = new Set();
+  /** Xóa câu sai theo tag đang chọn (hoặc toàn môn nếu «Tất cả»). */
+  function clearWrongForCurrentExam() {
+    const label = currentExamLabel();
+    const scoped = isScopedExam();
+    let removed = 0;
+
+    if (!scoped) {
+      removed = wrongIds.size;
+      wrongIds = new Set();
+    } else {
+      const scope = examPoolIdSet();
+      const next = new Set();
+      wrongIds.forEach((id) => {
+        if (scope.has(Number(id))) removed += 1;
+        else next.add(id);
+      });
+      wrongIds = next;
+    }
+
     saveWrongIds();
     if (mode === "wrong") rebuildQueue(null);
     else {
       updateBadges();
       render();
     }
-    showToast("Đã xóa hết câu sai đã lưu.");
+    showToast(
+      scoped
+        ? `Đã xóa ${removed} câu sai trong tag «${label}».`
+        : `Đã xóa hết ${removed} câu sai đã lưu.`
+    );
   }
 
   let clearWrongLockUntil = 0;
@@ -2578,20 +2733,32 @@
     if (now < clearWrongLockUntil) return;
     clearWrongLockUntil = now + 500;
 
-    if (wrongIds.size === 0) {
-      showToast("Chưa có câu sai nào để xóa.");
+    const scoped = isScopedExam();
+    const label = currentExamLabel();
+    const scopedWrong = wrongIdsInExamPool();
+    const n = scoped ? scopedWrong.length : wrongIds.size;
+
+    if (n === 0) {
+      showToast(
+        scoped
+          ? `Tag «${label}» chưa có câu sai để xóa.`
+          : "Chưa có câu sai nào để xóa."
+      );
       return;
     }
     // Đang mở modal rồi thì thôi
     if (document.body.classList.contains("modal-open")) return;
 
-    const n = wrongIds.size;
-    confirmDialog(`Xóa ${n} câu sai đã lưu? Hành động này không hoàn tác.`, {
-      title: "Xóa câu sai",
-      okText: "Xóa hết",
+    const msg = scoped
+      ? `Xóa ${n} câu sai trong tag «${label}»? Các tag khác giữ nguyên. Không hoàn tác.`
+      : `Xóa ${n} câu sai đã lưu (toàn bộ môn)? Hành động này không hoàn tác.`;
+
+    confirmDialog(msg, {
+      title: scoped ? `Xóa câu sai · ${label}` : "Xóa câu sai",
+      okText: scoped ? "Xóa tag này" : "Xóa hết",
       cancelText: "Hủy",
     }).then((ok) => {
-      if (ok) clearAllWrong();
+      if (ok) clearWrongForCurrentExam();
     });
   }
 

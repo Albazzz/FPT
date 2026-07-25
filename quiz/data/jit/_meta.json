@@ -1,0 +1,44 @@
+{
+  "subject": "jit",
+  "upgradedAt": "2026-07-25T00:52:14.258Z",
+  "explainPass": "jit-all-v6-lexicon-fill+rule6-learning+rule6-learning+rule6-learning+rule6-learning+pass-v1+half-en+last3+part5-jit-quality-v1+part5-jit-quality-v1+restore-translations-8afbb3d",
+  "rebuilt": 632,
+  "bannedLeft": 0,
+  "genericLeft": 0,
+  "siteImport": {
+    "at": "2026-07-24T12:17:56.868Z",
+    "task": "site",
+    "taskLabel": "Site (bổ sung)",
+    "imported": 0,
+    "skipped": 148,
+    "from": "quiz/promt/JIT401_SITE_ADDED_ONLY.json",
+    "fixPass": "jit-added-promt-v16b-tagged",
+    "tags": [
+      "jit401-site-added",
+      "prompt-giai-thich",
+      "fixpass-v16b",
+      "lessons-bleed-filler-ocr",
+      "imported-to-jit-json",
+      "task-site"
+    ]
+  },
+  "total": 780,
+  "tasks": [
+    "quiz",
+    "sample",
+    "pt",
+    "fuexam",
+    "slides",
+    "site"
+  ],
+  "counts": {
+    "quiz": 131,
+    "sample": 52,
+    "pt": 109,
+    "fuexam": 22,
+    "slides": 318,
+    "site": 148
+  },
+  "partsOf": "jit",
+  "note": "Edit {task}.json then run: node quiz/tools/merge_by_task.mjs jit"
+}

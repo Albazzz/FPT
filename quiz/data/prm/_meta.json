@@ -1,0 +1,18 @@
+{
+  "subject": "prm",
+  "upgradedAt": "2026-07-23T14:29:47.197Z",
+  "explainPass": "prm-full-pass-rule6-v1+patch-residual+quality-cli+whywrong-v2+whywrong-v2+whywrong-v2",
+  "total": 225,
+  "tasks": [
+    "fe",
+    "re",
+    "slides"
+  ],
+  "counts": {
+    "fe": 51,
+    "re": 48,
+    "slides": 126
+  },
+  "partsOf": "prm",
+  "note": "Edit {task}.json then run: node quiz/tools/merge_by_task.mjs prm"
+}

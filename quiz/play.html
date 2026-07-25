@@ -27,20 +27,20 @@
           <a href="./"><i class="fa-solid fa-house"></i> Quiz Hub</a>
         </nav>
         <div class="nav-stats" id="statsBar">
-          <span class="badge badge-answered" title="Số câu đã trả lời (theo tiến trình đã lưu)">
+          <span class="badge badge-answered" title="Số câu đã trả lời · theo tag đang học">
             <i class="fa-solid fa-pen-to-square"></i>
             <strong id="statAnswered">0</strong> đã làm
           </span>
-          <span class="badge badge-score badge-done" title="Số câu đúng đã lưu (sống sót F5/cloud)">
+          <span class="badge badge-score badge-done" title="Số câu đúng · theo tag đang học">
             <i class="fa-solid fa-circle-check"></i>
             <strong id="statCorrect">0</strong> đúng
           </span>
-          <span class="badge badge-score" title="Điểm = số câu đúng (1 điểm/câu)">
+          <span class="badge badge-score" title="Điểm = số câu đúng (1đ/câu) · theo tag đang học">
             <i class="fa-solid fa-star"></i>
             <strong id="statScore">0</strong> điểm
             <span class="stat-pct" id="statPct" hidden></span>
           </span>
-          <span class="badge badge-wrong" title="Câu sai đã lưu (ôn lại)">
+          <span class="badge badge-wrong" title="Câu sai đã lưu · theo tag đang học">
             <i class="fa-solid fa-circle-xmark"></i>
             <strong id="statWrong">0</strong> sai
           </span>
@@ -149,10 +149,10 @@
                 <button type="button" class="btn btn-secondary btn-sm" id="btnReshuffle" title="Xáo thứ tự câu hỏi">
                   <i class="fa-solid fa-arrows-rotate"></i> <span class="btn-label">Xáo lại</span>
                 </button>
-                <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession" title="Reset điểm phiên">
+                <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession" title="Reset điểm theo tag đang chọn">
                   <i class="fa-solid fa-rotate-left"></i> <span class="btn-label">Reset điểm</span>
                 </button>
-                <button type="button" class="btn btn-ghost btn-sm btn-danger-text" id="btnClearWrong" title="Xóa câu sai đã lưu">
+                <button type="button" class="btn btn-ghost btn-sm btn-danger-text" id="btnClearWrong" title="Xóa câu sai theo tag đang chọn">
                   <i class="fa-solid fa-trash-can"></i> <span class="btn-label">Xóa câu sai</span>
                 </button>
               </div>
@@ -285,6 +285,6 @@
   <script src="data/mln.js?v=ok12"></script>
   <script src="data/jit.js?v=ok15"></script>
   <script src="data/fe.js?v=ok16"></script>
-  <script src="app.js?v=ok15"></script>
+  <script src="app.js?v=ok17"></script>
 </body>
 </html>

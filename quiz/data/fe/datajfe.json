@@ -1,0 +1,1856 @@
+{
+  "subject": "fe",
+  "task": "datajfe",
+  "taskLabel": "datajfe",
+  "count": 41,
+  "questions": [
+    {
+      "id": 368,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 1,
+      "question": "A LAN access method circulates control information in a fixed direction. A station may transmit only after receiving this control information and gaining transmission privilege. Which statement BEST distinguishes this method from CSMA/CD?",
+      "options": {
+        "A": "It is restricted exclusively to star networks and cannot operate on a bus topology.",
+        "B": "It requires every station to transmit immediately and detect collisions after transmission.",
+        "C": "It divides a digital communication line into time-based logical channels.",
+        "D": "It grants transmission rights through a circulating token rather than sensing the channel and reacting to possible contention."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Phương thức truy cập LAN tuần hoàn tin điều khiển một chiều; trạm chỉ gửi khi có quyền. Phân biệt với CSMA/CD?",
+        "optionsVi": {
+          "A": "Chỉ dùng mạng hình sao, không chạy trên topology bus.",
+          "B": "Mọi trạm truyền ngay và phát hiện va chạm sau truyền (CSMA/CD-like).",
+          "C": "Chia đường truyền số thành kênh logic theo thời gian (TDM).",
+          "D": "Cấp quyền truyền bằng token tuần hoàn, không nghe kênh/tranh chấp kiểu CSMA."
+        },
+        "answerDisplay": "D. Cấp quyền truyền bằng token tuần hoàn, không nghe kênh/tranh chấp kiểu CSMA.",
+        "concept": "• Token passing: token tuần hoàn; chỉ station giữ token được truyền.",
+        "whyCorrect": "• Stem = token ring/token bus style.\n• Không phải CSMA/CD (collision); không chỉ star; không thuần TDM description.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "It is restricted exclusively to star networks and cannot operate on a bus topology.",
+          "B": "It requires every station to transmit immediately and detect collisions after transmission.",
+          "C": "It divides a digital communication line into time-based logical channels.",
+          "D": "It grants transmission rights through a circulating token rather than sensing the channel and reacting to possible contention."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Chỉ star, không bus.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Token bus tồn tại trên bus.",
+          "B": "• Là gì? Transmit immediately + detect collision.\n• Dùng để làm gì? CSMA/CD.\n• Vì sao sai? Khác token.",
+          "C": "• Là gì? Chia time slot digital line.\n• Dùng để làm gì? TDM.\n• Vì sao sai? Không phải token control frame."
+        },
+        "memoryTip": "• Token = quyền gửi luân phiên · CSMA/CD = tranh chấp."
+      },
+      "meta": {
+        "imageKey": 1,
+        "img": "image.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 369,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 2,
+      "question": "An organization wants to exchange product model data using an international standard specifically intended for product model information. Which standardization mechanism BEST matches this requirement?",
+      "options": {
+        "A": "STEP.",
+        "B": "EDI.",
+        "C": "CALS.",
+        "D": "CORBA."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Tổ chức muốn trao đổi dữ liệu mô hình sản phẩm theo chuẩn quốc tế chuyên cho product model. Chuẩn nào?",
+        "optionsVi": {
+          "A": "STEP.",
+          "B": "EDI.",
+          "C": "CALS.",
+          "D": "CORBA."
+        },
+        "answerDisplay": "A. STEP.",
+        "concept": "• STEP (ISO 10303): Standard for Exchange of Product model data.",
+        "whyCorrect": "• A STEP đúng product model.\n• EDI chứng từ TMĐT; CALS hậu cần/tài liệu; CORBA middleware objects.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "STEP.",
+          "B": "EDI.",
+          "C": "CALS.",
+          "D": "CORBA."
+        },
+        "whyWrong": {
+          "B": "• Là gì? EDI.\n• Dùng để làm gì? Business documents.\n• Vì sao sai? Không specialized product model CAD/PLM.",
+          "C": "• Là gì? CALS.\n• Dùng để làm gì? Logistics/docs chuẩn.\n• Vì sao sai? Khác STEP product model.",
+          "D": "• Là gì? CORBA.\n• Dùng để làm gì? Distributed objects.\n• Vì sao sai? Không phải product model exchange standard."
+        },
+        "memoryTip": "• Product model exchange → STEP."
+      },
+      "meta": {
+        "imageKey": 2,
+        "img": "image_2.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 370,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 3,
+      "question": "A company uses a transmission method in which a dedicated communication path is established before data transfer. Communication performance is predictable, but bursty traffic frequently leaves allocated capacity unused during silent periods. Which switching method BEST matches this situation?",
+      "options": {
+        "A": "Circuit switching.",
+        "B": "Packet switching.",
+        "C": "Message switching.",
+        "D": "Store-and-forward packet exchange."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Công ty dùng đường truyền dành riêng được thiết lập trước khi truyền dữ liệu. Cách truyền này là gì?",
+        "optionsVi": {
+          "A": "Chuyển mạch kênh.",
+          "B": "Chuyển mạch gói.",
+          "C": "Chuyển mạch thông điệp.",
+          "D": "Store-and-forward gói tin exchange."
+        },
+        "answerDisplay": "A. Chuyển mạch kênh.",
+        "concept": "• Mức mượt và tiết kiệm tài nguyên khi render/chạy app.",
+        "whyCorrect": "• Sau khi cài/thêm PATH, doctor xác nhận toolchain sẵn sàng.",
+        "intent": "• Mức mượt và tiết kiệm tài nguyên khi render/chạy app.\n• Skia/AOT/rebuild hẹp giúp UI mượt.",
+        "whatIs": {
+          "A": "Switch — thiết bị tầng 2, chuyển frame theo MAC.",
+          "B": "Switch — thiết bị tầng 2, chuyển frame theo MAC.",
+          "C": "Switch — thiết bị tầng 2, chuyển frame theo MAC.",
+          "D": "Packet/gói dữ liệu mạng."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Switch — thiết bị tầng 2, chuyển frame theo MAC.\n• Dùng để làm gì? LAN switching.\n• Vì sao sai? «Packet switching.» (B) không thỏa: đúng lệnh/khái niệm CSDL.",
+          "C": "• Là gì? Switch — thiết bị tầng 2, chuyển frame theo MAC.\n• Dùng để làm gì? LAN switching.\n• Vì sao sai? «Message switching.» (C) không thỏa: đúng lệnh/khái niệm CSDL.",
+          "D": "• Là gì? Packet/gói dữ liệu mạng.\n• Dùng để làm gì? Chia nhỏ truyền trên mạng gói.\n• Vì sao sai? «Store-and-forward packet exchange.» (D) không thỏa: đúng lệnh/khái niệm CSDL."
+        }
+      },
+      "meta": {
+        "imageKey": 3,
+        "img": "image_3.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 371,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 4,
+      "question": "A project manager shortens an activity that is not currently on the critical path. After the change, the project completion date remains unchanged. Which explanation is MOST appropriate?",
+      "options": {
+        "A": "An activity outside the critical path cannot become part of a critical path under any circumstances.",
+        "B": "Non-critical activities are ignored during both forward and backward calculations.",
+        "C": "Only activities starting from the first node can affect the project duration.",
+        "D": "Reducing an activity duration affects the project only when the activity is associated with the path determining the completion time."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "PM rút ngắn hoạt động không nằm trên critical path nhưng ngày hoàn thành dự án không đổi. Vì sao?",
+        "optionsVi": {
+          "A": "Hoạt động ngoài critical path không bao giờ vào critical path (sai — float có thể hết).",
+          "B": "Hoạt động non-critical bị bỏ qua khi tính xuôi/ngược (sai).",
+          "C": "Chỉ hoạt động từ nút đầu mới ảnh hưởng thời lượng dự án (sai).",
+          "D": "Rút ngắn hoạt động chỉ ảnh hưởng dự án khi nó nằm trên đường quyết định thời điểm hoàn thành (critical path)."
+        },
+        "answerDisplay": "D. Rút ngắn hoạt động chỉ ảnh hưởng dự án khi nó nằm trên đường quyết định thời điểm hoàn thành (critical path).",
+        "concept": "• Ngoài CP có float: rút ngắn trong float không đổi project end; chỉ rút CP mới rút deadline.",
+        "whyCorrect": "• Đúng bản chất float/non-critical.\n• A sai tuyệt đối (có thể thành CP nếu rút khác); B sai; C sai.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "An activity outside the critical path cannot become part of a critical path under any circumstances.",
+          "B": "Non-critical activities are ignored during both forward and backward calculations.",
+          "C": "Only activities starting from the first node can affect the project duration.",
+          "D": "Reducing an activity duration affects the project only when the activity is associated with the path determining the completion time."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Ngoài CP không bao giờ thành CP.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Rút CP khác có thể đổi đường găng.",
+          "B": "• Là gì? Ignore non-critical in calc.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Vẫn tính forward/backward.",
+          "C": "• Là gì? Only first-node activities…\n• Dùng để làm gì? Sai.\n• Vì sao sai? Mọi activity có thể trên path."
+        },
+        "memoryTip": "• Ngoài CP có float → rút ngắn (trong float) không đổi end date."
+      },
+      "meta": {
+        "imageKey": 4,
+        "img": "image_4.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 372,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 5,
+      "question": "An attacker secretly intercepts data traveling across a network and steals information without necessarily modifying the transmitted data. Which computer crime BEST describes the attack?",
+      "options": {
+        "A": "Salami method.",
+        "B": "Scavenging.",
+        "C": "Falsification.",
+        "D": "Tapping."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Tấn công chặn nghe/đánh cắp dữ liệu trên mạng, không nhất thiết sửa gói. Là kiểu tấn công nào?",
+        "optionsVi": {
+          "A": "Salami phương thức.",
+          "B": "Scavenging.",
+          "C": "Falsification.",
+          "D": "Tapping."
+        },
+        "answerDisplay": "D. Tapping.",
+        "concept": "• Tapping/eavesdropping: chặn bắt gói tin thụ động.",
+        "whyCorrect": "• D Tapping.\n• Salami lấy từng phần nhỏ tài chính; Scavenging rác residual; Falsification sửa đổi.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Salami method.",
+          "B": "Scavenging.",
+          "C": "Falsification.",
+          "D": "Tapping."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Salami.\n• Dùng để làm gì? Cắt nhỏ giao dịch.\n• Vì sao sai? Không phải nghe lén đường truyền.",
+          "B": "• Là gì? Scavenging.\n• Dùng để làm gì? Lấy residual/media thải.\n• Vì sao sai? Khác intercept on network.",
+          "C": "• Là gì? Falsification.\n• Dùng để làm gì? Sửa dữ liệu.\n• Vì sao sai? Stem không modify."
+        },
+        "memoryTip": "• Tapping = nghe lén · Falsification = sửa · Scavenging = bới rác."
+      },
+      "meta": {
+        "imageKey": 5,
+        "img": "image_5.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 373,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 6,
+      "question": "A software organization wants an international standard that structures lifecycle processes for acquisition, supply, development, operation, and maintenance, but does not prescribe specific development methods or required software products. Which standard BEST matches this requirement?",
+      "options": {
+        "A": "ISO 14001.",
+        "B": "ISO 9001.",
+        "C": "ISO 12207.",
+        "D": "ISO/IEC 15408."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một tổ chức phần mềm muốn chuẩn quốc tế cấu trúc các quy trình vòng đời cho mua, cung, phát triển, vận hành và bảo trì, nhưng không quy định phương pháp hay công cụ phát triển cụ thể. Chuẩn nào phù hợp nhất?",
+        "optionsVi": {
+          "A": "ISO 14001.",
+          "B": "ISO 9001.",
+          "C": "ISO 12207.",
+          "D": "ISO/IEC 15408."
+        },
+        "answerDisplay": "C. ISO 12207.",
+        "concept": "• ISO/IEC 12207: software lifecycle processes.",
+        "whyCorrect": "• C 12207.\n• 14001 môi trường; 9001 QMS; 15408 Common Criteria an ninh.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "memoryTip": "• SW lifecycle processes → ISO 12207.",
+        "whatIs": {
+          "A": "ISO 14001.",
+          "B": "ISO 9001.",
+          "C": "ISO 12207.",
+          "D": "ISO/IEC 15408."
+        },
+        "whyWrong": {
+          "A": "• Là gì? ISO 14001.\n• Dùng để làm gì? EMS.\n• Vì sao sai? Không SW lifecycle.",
+          "B": "• Là gì? ISO 9001.\n• Dùng để làm gì? Quality MS.\n• Vì sao sai? Không chi tiết SW lifecycle 12207.",
+          "D": "• Là gì? 15408.\n• Dùng để làm gì? Security eval CC.\n• Vì sao sai? Không lifecycle process structure."
+        }
+      },
+      "meta": {
+        "imageKey": 7,
+        "img": "image_7.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 374,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 7,
+      "question": "Which of the following is an appropriate explanation of a Java servlet?",
+      "options": {
+        "A": "It is a program that is developed with Java and executed on an application server in response to a request from a client.",
+        "B": "It is an interpreter (i.e., execution environment) that executes programs that are developed with Java, and has a function to execute a sort of intermediate code called bytecode.",
+        "C": "It is a program that is developed with Java and executed after the download from a web server.",
+        "D": "It is a set of rules for handling a program that is developed with Java as an application component."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cái nào sau đây là giải thích phù hợp về Java servlet?",
+        "optionsVi": {
+          "A": "Chương trình Java chạy trên application server, đáp request client (servlet).",
+          "B": "Môi trường thực thi Java (JVM): chạy bytecode trung gian.",
+          "C": "Chương trình Java tải từ web server rồi chạy (applet).",
+          "D": "Bộ quy tắc xử lý chương trình Java như thành phần ứng dụng (JavaBeans/EJB…)."
+        },
+        "answerDisplay": "A. Chương trình Java chạy trên application server, đáp request client (servlet).",
+        "concept": "• Servlet: chương trình Java chạy trên application server, xử lý request client (HTTP) sinh response.",
+        "whyCorrect": "• A đúng server-side Java component.\n• B gần JVM description — không phải servlet.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "It is a program that is developed with Java and executed on an application server in response to a request from a client.",
+          "B": "It is an interpreter (i.e., execution environment) that executes programs that are developed with Java, and has a function to execute a sort of intermediate code called bytecode.",
+          "C": "It is a program that is developed with Java and executed after the download from a web server.",
+          "D": "It is a set of rules for handling a program that is developed with Java as an application component."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Interpreter/JVM mô tả.\n• Dùng để làm gì? JRE/JVM.\n• Vì sao sai? Không định nghĩa servlet request/response.",
+          "C": "• Là gì? It is a program that is developed with Java and executed after the download from a web server.\n• Dùng để làm gì? —\n• Vì sao sai? Không khớp servlet.",
+          "D": "• Là gì? It is a set of rules for handling a program that is developed with Java as an application component.\n• Dùng để làm gì? —\n• Vì sao sai? Không khớp servlet."
+        },
+        "memoryTip": "• Servlet = Java trên app server, đáp request client."
+      },
+      "meta": {
+        "imageKey": 8,
+        "img": "image_8.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 375,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 8,
+      "question": "A product vendor claims that its system provides several advanced security features. A customer needs a framework for specifying security requirements, allowing the vendor to make security claims, and enabling an independent laboratory to evaluate whether those claims are satisfied. Which standard BEST supports this situation?",
+      "options": {
+        "A": "ISO 14001.",
+        "B": "ISO 12207.",
+        "C": "ISO 9001.",
+        "D": "ISO/IEC 15408 Common Criteria."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Nhà cung cấp sản phẩm khẳng định hệ của họ có nhiều tính năng bảo mật nâng cao. Khách hàng cần một khung để đặc tả yêu cầu bảo mật và đánh giá sản phẩm. Cái nào phù hợp nhất?",
+        "optionsVi": {
+          "A": "ISO 14001.",
+          "B": "ISO 12207.",
+          "C": "ISO 9001.",
+          "D": "ISO/IEC 15408 thường gặp Criteria."
+        },
+        "answerDisplay": "D. ISO/IEC 15408 thường gặp Criteria.",
+        "concept": "• ISO/IEC 15408 Common Criteria: khung đánh giá bảo mật sản phẩm IT.",
+        "whyCorrect": "• D CC/15408.\n• 14001/9001/12207 khác miền.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "ISO 14001.",
+          "B": "ISO 12207.",
+          "C": "ISO 9001.",
+          "D": "ISO/IEC 15408 Common Criteria."
+        },
+        "whyWrong": {
+          "A": "• Là gì? 14001.\n• Dùng để làm gì? Môi trường.\n• Vì sao sai? Không security product eval.",
+          "B": "• Là gì? 12207.\n• Dùng để làm gì? SW lifecycle.\n• Vì sao sai? Không CC.",
+          "C": "• Là gì? 9001.\n• Dùng để làm gì? Quality.\n• Vì sao sai? Không security criteria framework."
+        },
+        "memoryTip": "• Security product evaluation → Common Criteria 15408."
+      },
+      "meta": {
+        "imageKey": 9,
+        "img": "image_9.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 376,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 9,
+      "question": "A software organization requires every project to follow documented plans and ensures that requirements, work products, and services are managed. However, different projects may still use significantly different process descriptions and procedures. Which CMMI maturity level BEST describes the organization?",
+      "options": {
+        "A": "Level 4 - Quantitatively Managed.",
+        "B": "Level 1 - Initial.",
+        "C": "Level 2 - Managed.",
+        "D": "Level 3 - Defined."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một tổ chức phần mềm yêu cầu mọi dự án tuân theo kế hoạch có tài liệu và đảm bảo yêu cầu, sản phẩm công việc và dịch vụ được quản lý. Process area CMMI nào liên quan nhất?",
+        "optionsVi": {
+          "A": "Level 4 - Quantitatively quản lý.",
+          "B": "Level 1 - Initial.",
+          "C": "Level 2 - quản lý.",
+          "D": "Level 3 - định nghĩa."
+        },
+        "answerDisplay": "C. Level 2 - quản lý.",
+        "concept": "• CMMI Level 2 Managed: kỷ luật project, plan documented, theo dõi deliverable.",
+        "whyCorrect": "• C Level 2 Managed.\n• L1 ad-hoc; L3 org standard; L4 quant.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "memoryTip": "• L2 Managed = project plans documented & followed.",
+        "whatIs": {
+          "A": "Level 4 - Quantitatively Managed.",
+          "B": "Level 1 - Initial.",
+          "C": "Level 2 - Managed.",
+          "D": "Level 3 - Defined."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Level 4 Quant.\n• Dùng để làm gì? Đo thống kê.\n• Vì sao sai? Stem chưa nhấn statistical control.",
+          "B": "• Là gì? Level 1 Initial.\n• Dùng để làm gì? Ad hoc.\n• Vì sao sai? Trái documented plans enforced.",
+          "D": "• Là gì? Level 3 Defined.\n• Dùng để làm gì? Chuẩn org.\n• Vì sao sai? Stem nhấn project plans managed → L2."
+        }
+      },
+      "meta": {
+        "imageKey": 10,
+        "img": "image_10.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 377,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 10,
+      "question": "A table has a single-column primary key. Every non-key attribute depends on that key, but one non-key attribute determines another non-key attribute. Which normalization problem remains?",
+      "options": {
+        "A": "Partial dependency prevents second normal form.",
+        "B": "The primary key violates a format constraint.",
+        "C": "Repeated items prevent first normal form.",
+        "D": "A non-key dependency prevents third normal form."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Bảng có PK một cột; mọi thuộc tính phụ thuộc PK nhưng một non-key xác định non-key khác. Vi phạm dạng chuẩn nào?",
+        "optionsVi": {
+          "A": "Phụ thuộc bộ phận ngăn second dạng chuẩn.",
+          "B": "Khó chính violates format constraint.",
+          "C": "Repeated items ngăn first dạng chuẩn.",
+          "D": "Non-key dependency ngăn third dạng chuẩn."
+        },
+        "answerDisplay": "D. Non-key dependency ngăn third dạng chuẩn.",
+        "concept": "• A non-key dependency ngăn third dạng chuẩn.",
+        "whyCorrect": "• Đảm bảo dữ liệu đúng format, UX tốt hơn, giảm lỗi server.",
+        "intent": "• Xếp widget con theo cột dọc (main axis = vertical).\n• Bố cục dọc; cross axis là ngang. Không scroll mặc định, không overlap.",
+        "whatIs": {
+          "A": "Tín hiệu tương tự liên tục (dòng/áp…).",
+          "B": "Primary key — định danh duy nhất hàng.",
+          "C": "Tín hiệu tương tự liên tục (dòng/áp…).",
+          "D": "Tín hiệu tương tự liên tục (dòng/áp…)."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Tín hiệu tương tự liên tục (dòng/áp…).\n• Dùng để làm gì? Analog continuous signal.\n• Vì sao sai? «Partial dependency prevents second normal form.» (A) không thỏa: đúng lệnh/khái niệm CSDL.",
+          "B": "• Là gì? Primary key — định danh duy nhất hàng.\n• Dùng để làm gì? Ràng buộc thực thể.\n• Vì sao sai? «The primary key violates a format constraint.» (B) không thỏa: đúng lệnh/khái niệm CSDL.",
+          "C": "• Là gì? Tín hiệu tương tự liên tục (dòng/áp…).\n• Dùng để làm gì? Analog continuous signal.\n• Vì sao sai? «Repeated items prevent first normal form.» (C) không thỏa: đúng lệnh/khái niệm CSDL."
+        }
+      },
+      "meta": {
+        "imageKey": 11,
+        "img": "image_11.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 378,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 11,
+      "question": "A communication protocol transmits data in frames, supports continuous transfer and full-duplex communication, and inserts a zero after a sequence of consecutive one bits to prevent user data from being confused with a flag sequence. Which protocol is being described?",
+      "options": {
+        "A": "Basic Procedure (BSC)",
+        "B": "Token passing.",
+        "C": "CSMA/CD.",
+        "D": "HDLC."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một giao thức truyền thông truyền dữ liệu theo frame, hỗ trợ truyền liên tục và full-duplex, đồng thời chèn bit 0 sau một dãy bit 1 liên tiếp để dữ liệu người dùng không bị nhầm với dãy cờ (flag sequence). Giao thức nào đang được mô tả?",
+        "optionsVi": {
+          "A": "Basic Procedure (BSC) — giao thức đồng bộ IBM (Binary Synchronous), không phải Balanced Scorecard",
+          "B": "Token passing (cấp quyền truyền bằng token tuần hoàn).",
+          "C": "CSMA/CD (nghe kênh + phát hiện va chạm).",
+          "D": "HDLC (High-level Data Link Control)."
+        },
+        "answerDisplay": "D. HDLC (High-level Data Link Control).",
+        "concept": "• HDLC: bit-oriented framing, bit stuffing, full-duplex data link.",
+        "whyCorrect": "• D HDLC (zero insert after five/six 1s — bit stuffing).\n• BSC character-oriented; token/CSMA media access LAN.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Basic Procedure (BSC)",
+          "B": "Token passing.",
+          "C": "CSMA/CD.",
+          "D": "HDLC."
+        },
+        "whyWrong": {
+          "A": "• Là gì? BSC/Basic Procedure.\n• Dùng để làm gì? Character-oriented.\n• Vì sao sai? Không bit stuffing HDLC.",
+          "B": "• Là gì? Token passing.\n• Dùng để làm gì? LAN access.\n• Vì sao sai? Không mô tả bit stuffing frame.",
+          "C": "• Là gì? CSMA/CD.\n• Dùng để làm gì? Ethernet access.\n• Vì sao sai? Khác HDLC framing."
+        },
+        "memoryTip": "• Bit stuffing + full-duplex frames → HDLC."
+      },
+      "meta": {
+        "imageKey": 12,
+        "img": "image_12.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 379,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 12,
+      "question": "Which of the following is a purpose of use of a message digest in message authentication?",
+      "options": {
+        "A": "To ensure the confidentiality of the message",
+        "B": "To confirm an overview of the message",
+        "C": "To confirm the encryption method of the message",
+        "D": "To confirm that the message is not falsified"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Đâu là mục đích use message digest message xác thực?",
+        "optionsVi": {
+          "A": "đảm bảo tính bí mật message",
+          "B": "để confirm một overview của message",
+          "C": "Confirm mã hó phương thức message",
+          "D": "Để confirm message là không falsified"
+        },
+        "answerDisplay": "D. Để confirm message là không falsified",
+        "concept": "• Digest/hash: phát hiện falsification (integrity) — so khớp digest.",
+        "whyCorrect": "• D confirm not falsified.\n• Không confidentiality (cần encrypt); không «overview» nội dung.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "To ensure the confidentiality of the message",
+          "B": "To confirm an overview of the message",
+          "C": "To confirm the encryption method of the message",
+          "D": "To confirm that the message is not falsified"
+        },
+        "whyWrong": {
+          "A": "• Là gì? Confidentiality.\n• Dùng để làm gì? Cần encryption.\n• Vì sao sai? Digest không che nội dung.",
+          "B": "• Là gì? Overview of message.\n• Dùng để làm gì? Tóm tắt nghĩa.\n• Vì sao sai? Không phải mục đích crypto digest.",
+          "C": "• Là gì? Confirm encryption method.\n• Dùng để làm gì? —\n• Vì sao sai? Digest không cho biết cipher algorithm."
+        },
+        "memoryTip": "• Digest → integrity (không bị sửa)."
+      },
+      "meta": {
+        "imageKey": 13,
+        "img": "image_13.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 380,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 13,
+      "question": "Which of the following is software that can be used free of charge for a trial period, but if the user wishes to continue using the software after this period, a usage fee must be paid?",
+      "options": {
+        "A": "Public domain software",
+        "B": "Freeware",
+        "C": "Package software",
+        "D": "Shareware"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cái nào sau đây là phần mềm dùng miễn phí trong thời gian dùng thử, nhưng nếu người dùng muốn tiếp tục sau thời gian thử thì thường phải trả phí license?",
+        "optionsVi": {
+          "A": "Phần mềm public domain",
+          "B": "Freeware",
+          "C": "Package phần mềm",
+          "D": "Shareware"
+        },
+        "answerDisplay": "D. Shareware",
+        "concept": "• Shareware: trial free, trả phí nếu tiếp tục (khác freeware/public domain).",
+        "whyCorrect": "• D Shareware.\n• Freeware free ongoing; public domain không bản quyền; package = đóng gói bán.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Public domain software",
+          "B": "Freeware",
+          "C": "Package software",
+          "D": "Shareware"
+        },
+        "whyWrong": {
+          "A": "• Là gì? Public domain.\n• Dùng để làm gì? Không giữ exclusive rights.\n• Vì sao sai? Không mô hình trial→pay.",
+          "B": "• Là gì? Freeware.\n• Dùng để làm gì? Free ongoing.\n• Vì sao sai? Không bắt buộc trả sau trial.",
+          "C": "• Là gì? Package software.\n• Dùng để làm gì? Đóng gói thương mại.\n• Vì sao sai? Không đặc trưng trial period."
+        },
+        "memoryTip": "• Trial rồi trả = shareware · Free mãi = freeware."
+      },
+      "meta": {
+        "imageKey": 14,
+        "img": "image_14.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 381,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 14,
+      "question": "A network service must carry voice, video, and data using fixed-length transmission units. Connections are mapped to virtual circuits that can provide Quality of Service guarantees, but maintaining connections between many source and destination pairs creates a scalability problem. Which technology BEST fits this description?",
+      "options": {
+        "A": "FDM.",
+        "B": "ISDN.",
+        "C": "ATM.",
+        "D": "ADSL."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một dịch vụ mạng phải mang voice, video và dữ liệu bằng đơn vị truyền độ dài cố định. Các kết nối được ánh xạ tới mạch ảo (virtual circuit) có thể đảm bảo tham số QoS. Công nghệ nào phù hợp?",
+        "optionsVi": {
+          "A": "FDM.",
+          "B": "ISDN.",
+          "C": "ATM.",
+          "D": "ADSL."
+        },
+        "answerDisplay": "C. ATM.",
+        "concept": "• ATM: cell 53-byte cố định, virtual circuit, đa dịch vụ voice/video/data.",
+        "whyCorrect": "• C ATM.\n• FDM tần số; ISDN kênh; ADSL access bất đối xứng.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "FDM.",
+          "B": "ISDN.",
+          "C": "ATM.",
+          "D": "ADSL."
+        },
+        "whyWrong": {
+          "A": "• Là gì? FDM.\n• Dùng để làm gì? Chia tần số analog.\n• Vì sao sai? Không fixed-length cells VC.",
+          "B": "• Là gì? ISDN.\n• Dùng để làm gì? Digital telephony channels.\n• Vì sao sai? Không ATM cell model.",
+          "D": "• Là gì? ADSL.\n• Dùng để làm gì? Broadband trên phone line.\n• Vì sao sai? Không cell switching backbone."
+        },
+        "memoryTip": "• ATM = fixed cells + VC · đa media."
+      },
+      "meta": {
+        "imageKey": 15,
+        "img": "image_15.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 382,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 15,
+      "question": "A communication system must allow terminals with different transmission speeds to exchange data. Intermediate switching units may temporarily store transmitted data before forwarding it. Which switching approach BEST matches these characteristics?",
+      "options": {
+        "A": "Circuit switching.",
+        "B": "Frequency division multiplexing.",
+        "C": "Simplex transmission.",
+        "D": "Message switching."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một hệ truyền thông phải cho các terminal tốc độ truyền khác nhau trao đổi dữ liệu. Các đơn vị chuyển mạch trung gian có thể lưu tạm dữ liệu. Phương thức chuyển mạch nào phù hợp nhất?",
+        "optionsVi": {
+          "A": "Chuyển mạch kênh.",
+          "B": "Ghép kênh phân chia tần số (FDM).",
+          "C": "Simplex truyền.",
+          "D": "Chuyển mạch thông điệp."
+        },
+        "answerDisplay": "D. Chuyển mạch thông điệp.",
+        "concept": "• Message switching: store-and-forward toàn message, cho phép tốc độ khác nhau.",
+        "whyCorrect": "• D Message switching.\n• Circuit = kết nối dành riêng realtime; FDM/simplex khác.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Circuit switching.",
+          "B": "Frequency division multiplexing.",
+          "C": "Simplex transmission.",
+          "D": "Message switching."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Circuit switching.\n• Dùng để làm gì? Path dành riêng.\n• Vì sao sai? Khó lệch tốc độ store-forward.",
+          "B": "• Là gì? FDM.\n• Dùng để làm gì? Chia băng tần.\n• Vì sao sai? Không store-forward message.",
+          "C": "• Là gì? Simplex.\n• Dùng để làm gì? Một chiều.\n• Vì sao sai? Không giải thích speed mismatch store."
+        },
+        "memoryTip": "• Store-and-forward message → message switching · Packet = nhỏ hơn."
+      },
+      "meta": {
+        "imageKey": 16,
+        "img": "image_16.png",
+        "rebuilt": true
+      },
+      "_pilotFixed": "2026-07-23-v1"
+    },
+    {
+      "id": 383,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 16,
+      "question": "Deleting root 50 from the given BST using inorder successor results in which new root?",
+      "options": {
+        "A": "60",
+        "B": "70",
+        "C": "40",
+        "D": "80",
+        "E": "50"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Xóa nút gốc 50 khỏi BST bằng inorder successor — gốc mới là gì?",
+        "optionsVi": {
+          "A": "60",
+          "B": "70",
+          "C": "40",
+          "D": "80",
+          "E": "50"
+        },
+        "answerDisplay": "A. 60",
+        "concept": "• Xóa node 2 con: thay bằng inorder successor (min cây phải) hoặc predecessor.\n• Successor của 50 thường 60 nếu có.",
+        "whyCorrect": "• Theo BST figure đề: inorder successor của 50 = **60** → root mới 60 (A).\n• 70/40/80/50 không phải successor chuẩn figure.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "60",
+          "B": "70",
+          "C": "40",
+          "D": "80",
+          "E": "50"
+        },
+        "whyWrong": {
+          "B": "• Là gì? 70.\n• Dùng để làm gì? Node khác.\n• Vì sao sai? Không phải inorder successor của 50.",
+          "C": "• Là gì? 40.\n• Dùng để làm gì? Cây trái.\n• Vì sao sai? Predecessor phía, không successor.",
+          "D": "• Là gì? 80.\n• Dùng để làm gì? Xa hơn.\n• Vì sao sai? Không min cây phải.",
+          "E": "• Là gì? 50.\n• Dùng để làm gì? Giữ root.\n• Vì sao sai? Đã xóa 50."
+        },
+        "memoryTip": "• Xóa root 2 con: thay inorder successor (min right) · đề → 60."
+      },
+      "meta": {
+        "imageKey": 17,
+        "img": "image_17.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 384,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 17,
+      "question": "An organization wants to detect whether a transferred document has been altered. Management is not primarily concerned with proving who created the document. Which security technology BEST addresses this requirement?",
+      "options": {
+        "A": "Access management.",
+        "B": "Entity authentication.",
+        "C": "Single Sign On.",
+        "D": "Message authentication."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một tổ chức muốn phát hiện tài liệu đã chuyển có bị sửa hay không. Quản lý không đặt trọng tâm chứng minh ai đã tạo tài liệu. Kỹ thuật nào phù hợp nhất?",
+        "optionsVi": {
+          "A": "Quản lý truy cập.",
+          "B": "Xác thực thực thể.",
+          "C": "đơn Sign.",
+          "D": "Xác thực thông điệp."
+        },
+        "answerDisplay": "D. Xác thực thông điệp.",
+        "concept": "• Message authentication (MAC/digest): integrity, không nhất thiết non-repudiation đầy đủ.",
+        "whyCorrect": "• D Message authentication.\n• Entity auth = ai; SSO = đăng nhập; Access mgmt = quyền.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Access management.",
+          "B": "Entity authentication.",
+          "C": "Single Sign On.",
+          "D": "Message authentication."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Access management.\n• Dùng để làm gì? Quyền truy cập.\n• Vì sao sai? Không detect alter message.",
+          "B": "• Là gì? Entity authentication.\n• Dùng để làm gì? Xác thực chủ thể.\n• Vì sao sai? Đề không primary who created.",
+          "C": "• Là gì? SSO.\n• Dùng để làm gì? Một lần đăng nhập.\n• Vì sao sai? Không integrity message."
+        },
+        "memoryTip": "• Detect alter → message auth/integrity · Who → entity auth/signature."
+      },
+      "meta": {
+        "imageKey": 18,
+        "img": "image_18.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 385,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 18,
+      "question": "A query must preserve every row from the Student table even when no corresponding row exists in the Mark table. Rows without a matching mark must still appear with missing Mark-table values represented as NULL. Which operation BEST satisfies this requirement?",
+      "options": {
+        "A": "Student LEFT OUTER JOIN Mark.",
+        "B": "Student CROSS JOIN Mark.",
+        "C": "Student INNER JOIN Mark.",
+        "D": "Student NATURAL JOIN Mark."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một truy vấn phải giữ mọi dòng từ bảng Student kể cả khi không có dòng tương ứng trong bảng Mark. Các dòng không có mark khớp phải hiện mark NULL. Cần join kiểu nào?",
+        "optionsVi": {
+          "A": "Student LEFT OUTER JOIN Mark.",
+          "B": "Student CROSS JOIN Mark.",
+          "C": "Student INNER JOIN Mark.",
+          "D": "Student NATURAL JOIN Mark."
+        },
+        "answerDisplay": "A. Student LEFT OUTER JOIN Mark.",
+        "concept": "• Tín hiệu tương tự liên tục (dòng/áp…).\n• Analog continuous signal.",
+        "whyCorrect": "• Analog continuous signal.\n• Khớp stem: đúng lệnh/khái niệm CSDL.",
+        "intent": "• Phân biệt const, final, var và null safety.\n• Compile-time vs runtime assignment.",
+        "whatIs": {
+          "A": "Tín hiệu tương tự liên tục (dòng/áp…).",
+          "B": "Tín hiệu tương tự liên tục (dòng/áp…).",
+          "C": "Tín hiệu tương tự liên tục (dòng/áp…).",
+          "D": "Tín hiệu tương tự liên tục (dòng/áp…)."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Tín hiệu tương tự liên tục (dòng/áp…).\n• Dùng để làm gì? Analog continuous signal.\n• Vì sao sai? «Student CROSS JOIN Mark.» (B) không thỏa: đúng lệnh/khái niệm CSDL.",
+          "C": "• Là gì? Tín hiệu tương tự liên tục (dòng/áp…).\n• Dùng để làm gì? Analog continuous signal.\n• Vì sao sai? «Student INNER JOIN Mark.» (C) không thỏa: đúng lệnh/khái niệm CSDL.",
+          "D": "• Là gì? Tín hiệu tương tự liên tục (dòng/áp…).\n• Dùng để làm gì? Analog continuous signal.\n• Vì sao sai? «Student NATURAL JOIN Mark.» (D) không thỏa: đúng lệnh/khái niệm CSDL."
+        }
+      },
+      "meta": {
+        "imageKey": 19,
+        "img": "image_19.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 386,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 19,
+      "question": "A security team deploys a firewall and assumes that all forms of information theft are now prevented. An attacker later obtains discarded temporary data remaining after a completed computer job. Which explanation BEST describes why the firewall did not prevent the incident?",
+      "options": {
+        "A": "The incident is falsification because stored data was intentionally modified.",
+        "B": "The incident is scavenging, which concerns residual information rather than unauthorized external network access.",
+        "C": "The firewall only protects systems against computer viruses.",
+        "D": "The incident is tapping, which cannot be detected by any security mechanism."
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Nhóm bảo mật triển khai firewall và cho rằng mọi hình thức đánh cắp thông tin đã được ngăn. Sau đó kẻ tấn công lấy được tài liệu vứt trong thùng rác. Nguyên tắc bảo mật nào đã bị bỏ qua?",
+        "optionsVi": {
+          "A": "Sự cố falsification: dữ liệu lưu bị sửa cố ý.",
+          "B": "Sự cố scavenging: lộ thông tin dư, không phải truy cập mạng ngoài trái phép.",
+          "C": "Tường lử protects các hệ thống against máy tính các virus.",
+          "D": "Sự cố tapping: nghe lén; không cơ chế nào phát hiện được (sai)."
+        },
+        "answerDisplay": "B. Sự cố scavenging: lộ thông tin dư, không phải truy cập mạng ngoài trái phép.",
+        "concept": "• Scavenging: lấy residual information (dumpster, discarded media) — ngoài đường network firewall.",
+        "whyCorrect": "• B đúng: scavenging residual, không phải network breach firewall chặn.\n• Falsification = sửa; firewall không chặn offline dumpster.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "The incident is falsification because stored data was intentionally modified.",
+          "B": "The incident is scavenging, which concerns residual information rather than unauthorized external network access.",
+          "C": "The firewall only protects systems against computer viruses.",
+          "D": "The incident is tapping, which cannot be detected by any security mechanism."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Falsification.\n• Dùng để làm gì? Sửa data.\n• Vì sao sai? Stem là lấy discarded text, không modify.",
+          "C": "• Là gì? Firewall only protects…\n• Dùng để làm gì? Mô tả hạn chế FW.\n• Vì sao sai? Có thể đúng phụ nhưng bank B scavenging.",
+          "D": "• Là gì? The incident is tapping, which cannot be detected by any security mechanism.\n• Dùng để làm gì? —\n• Vì sao sai? Ưu tiên scavenging B."
+        },
+        "memoryTip": "• Scavenging = bới residual/offline · FW ≠ chặn dumpster."
+      },
+      "meta": {
+        "imageKey": 20,
+        "img": "image_20.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 387,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 20,
+      "question": "A database query must combine every possible row from relation A with every possible row from relation B, without requiring matching attribute values. Which operation BEST describes the requirement?",
+      "options": {
+        "A": "Inner join.",
+        "B": "Cartesian product or CROSS JOIN.",
+        "C": "Natural join.",
+        "D": "Left outer join."
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một truy vấn CSDL phải kết hợp mọi dòng có thể của quan hệ A với mọi dòng có thể của quan hệ B, không yêu cầu khớp thuộc tính. Đây là phép toán nào?",
+        "optionsVi": {
+          "A": "Inner join.",
+          "B": "Tích Descartes or CROSS JOIN.",
+          "C": "Natural join.",
+          "D": "Left outer join."
+        },
+        "answerDisplay": "B. Tích Descartes or CROSS JOIN.",
+        "concept": "• Cartesian product / CROSS JOIN: |A|×|B| hàng.",
+        "whyCorrect": "• B CROSS JOIN/cartesian.\n• Inner/natural/left cần điều kiện khớp (outer giữ phía).",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Inner join.",
+          "B": "Cartesian product or CROSS JOIN.",
+          "C": "Natural join.",
+          "D": "Left outer join."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Inner join.\n• Dùng để làm gì? Khớp key.\n• Vì sao sai? Không phải mọi cặp.",
+          "C": "• Là gì? Natural join.\n• Dùng để làm gì? Khớp cột cùng tên.\n• Vì sao sai? Không full product.",
+          "D": "• Là gì? Left outer join.\n• Dùng để làm gì? Giữ trái + khớp.\n• Vì sao sai? Không mọi cặp A×B."
+        },
+        "memoryTip": "• Mọi cặp không điều kiện = CROSS JOIN / ×."
+      },
+      "meta": {
+        "imageKey": 21,
+        "img": "image_21.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 388,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 21,
+      "question": "Two transactions update different records and then each requests a lock on the record already locked by the other transaction. Neither transaction can continue. Which database control problem has occurred?",
+      "options": {
+        "A": "A loss of durability caused by simultaneous processing.",
+        "B": "A violation of atomicity caused by an incomplete rollback.",
+        "C": "A deadlock caused by transactions waiting for each other to release locks.",
+        "D": "A medium failure requiring roll-forward recovery."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Hai transaction cập nhật các bản ghi khác nhau rồi mỗi cái yêu cầu khóa bản ghi đã bị transaction kia khóa. Không transaction nào tiến tiếp được. Đây là tình huống gì?",
+        "optionsVi": {
+          "A": "Loss tính bền vững caused simultaneous xử lý.",
+          "B": "Vi phạm atomicity do rollback không hoàn tất.",
+          "C": "Deadlock: các transaction chờ nhau nhả khóa.",
+          "D": "Lỗi media cần recovery roll-forward."
+        },
+        "answerDisplay": "C. Deadlock: các transaction chờ nhau nhả khóa.",
+        "concept": "• Deadlock: chu trình chờ khóa lẫn nhau.",
+        "whyCorrect": "• C deadlock wait-for cycle.\n• Không durability/atomicity failure mô tả chính; không media failure.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "memoryTip": "• Chờ vòng khóa = deadlock.",
+        "whatIs": {
+          "A": "A loss of durability caused by simultaneous processing.",
+          "B": "A violation of atomicity caused by an incomplete rollback.",
+          "C": "A deadlock caused by transactions waiting for each other to release locks.",
+          "D": "A medium failure requiring roll-forward recovery."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Loss of durability.\n• Dùng để làm gì? ACID D.\n• Vì sao sai? Stem là wait lock vòng.",
+          "B": "• Là gì? Atomicity incomplete rollback.\n• Dùng để làm gì? ACID A.\n• Vì sao sai? Chưa abort — đang deadlock.",
+          "D": "• Là gì? Medium failure roll-forward.\n• Dùng để làm gì? Recovery media.\n• Vì sao sai? Không phải lock cycle."
+        }
+      },
+      "meta": {
+        "imageKey": 22,
+        "img": "image_22.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 389,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 22,
+      "question": "A transmission scheme divides the bandwidth of an analog line into several independent channels. Some capacity is intentionally left unused between adjacent channels to reduce interference. Which statement BEST describes the scheme?",
+      "options": {
+        "A": "WDM divides a digital line into low-speed logical channels.",
+        "B": "TDM uses time intervals and requires guardbands.",
+        "C": "HDLC inserts unused frequency bands after consecutive one bits.",
+        "D": "FDM uses frequency bands and sacrifices some capacity for guardbands."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một sơ đồ truyền chia băng thông đường analog thành nhiều kênh độc lập. Một phần dung lượng cố ý để trống làm dải bảo vệ (guard band). Đây là phương pháp ghép kênh nào?",
+        "optionsVi": {
+          "A": "WDM chia đường số thành kênh logic tốc độ thấp (mô tả sai/nhầm TDM).",
+          "B": "TDM dùng khe thời gian và cần guard band.",
+          "C": "HDLC chèn dải tần không dùng sau dãy bit 1 (sai — bit stuffing).",
+          "D": "FDM dùng dải tần, chừa guard band (mất một phần dung lượng)."
+        },
+        "answerDisplay": "D. FDM dùng dải tần, chừa guard band (mất một phần dung lượng).",
+        "concept": "• FDM: chia tần số; guardband giảm nhiễu kênh kề.",
+        "whyCorrect": "• D FDM + guardband.\n• WDM/TDM/HDLC mô tả option A–C sai khớp stem.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "WDM divides a digital line into low-speed logical channels.",
+          "B": "TDM uses time intervals and requires guardbands.",
+          "C": "HDLC inserts unused frequency bands after consecutive one bits.",
+          "D": "FDM uses frequency bands and sacrifices some capacity for guardbands."
+        },
+        "whyWrong": {
+          "A": "• Là gì? WDM divides digital…\n• Dùng để làm gì? Sai/không khớp stem analog guardband FDM.\n• Vì sao sai? undefined",
+          "B": "• Là gì? TDM uses time… guardbands.\n• Dùng để làm gì? TDM time; guardband điển hình FDM.\n• Vì sao sai? undefined",
+          "C": "• Là gì? HDLC inserts unused freq…\n• Dùng để làm gì? HDLC bit stuff.\n• Vì sao sai? Không FDM."
+        },
+        "memoryTip": "• FDM = tần số + guardband · TDM = time slot · WDM = bước sóng."
+      },
+      "meta": {
+        "imageKey": 23,
+        "img": "image_23.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 390,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 23,
+      "question": "A company needs high-speed Internet access over existing telephone lines. Download traffic is expected to be much heavier than upload traffic, and performance may decrease as the customer is located farther from the central office. Which technology BEST fits?",
+      "options": {
+        "A": "ADSL.",
+        "B": "WDM.",
+        "C": "ISDN primary rate interface.",
+        "D": "ATM."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một công ty cần truy cập Internet tốc độ cao trên đường điện thoại sẵn có. Lưu lượng tải xuống dự kiến nặng hơn nhiều so với tải lên. Công nghệ nào phù hợp nhất?",
+        "optionsVi": {
+          "A": "ADSL.",
+          "B": "WDM.",
+          "C": "ISDN chính rate interface.",
+          "D": "ATM."
+        },
+        "answerDisplay": "A. ADSL.",
+        "concept": "• ADSL: bất đối xứng trên copper phone, downstream > upstream.",
+        "whyCorrect": "• A ADSL.\n• WDM quang; ISDN PRI kênh; ATM cells.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "ADSL.",
+          "B": "WDM.",
+          "C": "ISDN primary rate interface.",
+          "D": "ATM."
+        },
+        "whyWrong": {
+          "B": "• Là gì? WDM.\n• Dùng để làm gì? Quang bước sóng.\n• Vì sao sai? Không phone-line asymmetric access điển hình.",
+          "C": "• Là gì? ISDN PRI.\n• Dùng để làm gì? Kênh 2B+…\n• Vì sao sai? Không ADSL broadband asymmetric.",
+          "D": "• Là gì? ATM.\n• Dùng để làm gì? Cell network.\n• Vì sao sai? Không mô tả ADSL access."
+        },
+        "memoryTip": "• Phone line, down>up → ADSL."
+      },
+      "meta": {
+        "imageKey": 24,
+        "img": "image_24.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 391,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 24,
+      "question": "In an arrow diagram, two activities must preserve a dependency relationship even though no actual work, resource consumption, or processing time is required between them. Which project management technique BEST represents this relationship?",
+      "options": {
+        "A": "A shortened activity on the critical path.",
+        "B": "A critical activity with zero float.",
+        "C": "A milestone that replaces both activities.",
+        "D": "A dummy activity with zero duration."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trên sơ đồ mũi tên, hai hoạt động phải giữ quan hệ phụ thuộc dù không cần công việc thực, tiêu hao tài nguyên hay thời gian xử lý. Dùng gì?",
+        "optionsVi": {
+          "A": "Shortened hoạt động đường găng.",
+          "B": "Critical hoạt động zero float.",
+          "C": "Milestone replaces các hoạt động.",
+          "D": "Hoạt động giả zero thời lượng."
+        },
+        "answerDisplay": "D. Hoạt động giả zero thời lượng.",
+        "concept": "• Dummy activity: duration 0, chỉ biểu diễn quan hệ phụ thuộc logic.",
+        "whyCorrect": "• D dummy zero duration.\n• Không phải critical/shortened/milestone thay thế cả hai theo stem.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "memoryTip": "• Dummy = 0 time, chỉ dependency.",
+        "whatIs": {
+          "A": "A shortened activity on the critical path.",
+          "B": "A critical activity with zero float.",
+          "C": "A milestone that replaces both activities.",
+          "D": "A dummy activity with zero duration."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Shortened on CP.\n• Dùng để làm gì? Crash/crashing.\n• Vì sao sai? Có work time — trái zero work.",
+          "B": "• Là gì? Critical zero float.\n• Dùng để làm gì? CP activity thật.\n• Vì sao sai? Vẫn có work thường.",
+          "C": "• Là gì? Milestone replaces both.\n• Dùng để làm gì? Mốc.\n• Vì sao sai? Không dummy dependency thuần."
+        }
+      },
+      "meta": {
+        "imageKey": 25,
+        "img": "image_25.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 392,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 25,
+      "question": "A queue is modeled as M/M/1, but analysts discover that service times are fixed and identical for every arrival rather than randomly varying according to the assumed service-time distribution. Which model characteristic is violated?",
+      "options": {
+        "A": "Exponential service-time behavior.",
+        "B": "Random arrivals represented by a Poisson process.",
+        "C": "First Come First Serve processing.",
+        "D": "The existence of exactly one server."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một hàng đợi được mô hình hóa M/M/1, nhưng phân tích viên phát hiện thời gian phục vụ cố định và giống nhau cho mọi lần đến chứ không biến thiên ngẫu nhiên. Mô hình nào phù hợp hơn?",
+        "optionsVi": {
+          "A": "Thời gian phục vụ phân phối mũ (exponential).",
+          "B": "Random arrivals represented Poisson tiến trình.",
+          "C": "First Come First Serve xử lý.",
+          "D": "Existence exactly one máy chủ."
+        },
+        "answerDisplay": "A. Thời gian phục vụ phân phối mũ (exponential).",
+        "concept": "• M/M/1: Poisson arrival + Exponential service + 1 server. Service cố định → không exponential (M).",
+        "whyCorrect": "• A exponential service-time — bị vi phạm (thành gần M/D/1).\n• Poisson/FCFS/1 server vẫn có thể giữ.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Exponential service-time behavior.",
+          "B": "Random arrivals represented by a Poisson process.",
+          "C": "First Come First Serve processing.",
+          "D": "The existence of exactly one server."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Poisson arrivals.\n• Dùng để làm gì? Có thể vẫn đúng.\n• Vì sao sai? Stem phá service distribution.",
+          "C": "• Là gì? FCFS.\n• Dùng để làm gì? Kỷ luật hàng đợi.\n• Vì sao sai? Stem không nói đổi order.",
+          "D": "• Là gì? One server.\n• Dùng để làm gì? M/M/1 có 1 server.\n• Vì sao sai? Không bị phá."
+        },
+        "memoryTip": "• M/M/1: service ~ Exp · cố định → không còn M service."
+      },
+      "meta": {
+        "imageKey": 26,
+        "img": "image_26.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 393,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 26,
+      "question": "A transaction processing system is described as an M/M/1 queue. During observation, analysts discover that requests are processed according to priority, and urgent requests may be served before requests that arrived earlier. Which assumption of the model described in the chapter is violated?",
+      "options": {
+        "A": "Requests are processed according to First Come First Serve.",
+        "B": "The system contains only one processing server.",
+        "C": "The service time follows an exponential distribution.",
+        "D": "The arrival process follows a random distribution."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một hệ xử lý giao dịch được mô tả là hàng đợi M/M/1. Trong quan sát, phân tích viên phát hiện yêu cầu được xử lý theo lớp ưu tiên chứ không pure FCFS. Điều gì thay đổi?",
+        "optionsVi": {
+          "A": "Xử lý yêu cầu theo FCFS.",
+          "B": "Hệ thống contains one xử lý máy chủ.",
+          "C": "Thời gian phục vụ phân phối mũ.",
+          "D": "Quá trình đến theo phân phối ngẫu nhiên."
+        },
+        "answerDisplay": "A. Xử lý yêu cầu theo FCFS.",
+        "concept": "• M/M/1 chuẩn thường kèm FCFS; priority phá FCFS assumption phân tích cơ bản.",
+        "whyCorrect": "• A FCFS — bị phá khi priority.\n• 1 server / exp service / random arrival vẫn có thể.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "memoryTip": "• Priority scheduling ≠ FCFS assumption M/M/1 cơ bản.",
+        "whatIs": {
+          "A": "Requests are processed according to First Come First Serve.",
+          "B": "The system contains only one processing server.",
+          "C": "The service time follows an exponential distribution.",
+          "D": "The arrival process follows a random distribution."
+        },
+        "whyWrong": {
+          "B": "• Là gì? One server.\n• Dùng để làm gì? Vẫn 1 server.\n• Vì sao sai? Priority không phá số server.",
+          "C": "• Là gì? Exponential service.\n• Dùng để làm gì? Stem không đổi service dist.\n• Vì sao sai? undefined",
+          "D": "• Là gì? Random arrival.\n• Dùng để làm gì? Stem không đổi arrival.\n• Vì sao sai? undefined"
+        }
+      },
+      "meta": {
+        "imageKey": 27,
+        "img": "image_27.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 394,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 27,
+      "question": "A process represents the state transition among three states: a ready state, a running state, and a waiting state. Which of the following is an appropriate description concerning the state transition of a process?",
+      "options": {
+        "A": "In a multiprogramming system, even with only one CPU, multiple processes in the running state exist.",
+        "B": "Ready state refers to a state in which a process is waiting for CPU allocation. Generally, there are multiple processes in the ready state, and they are formed into a queue.",
+        "C": "In systems that perform time-sharing processing with the round robin method, a process in the running state makes a state transition to the waiting state after a fixed time passes.",
+        "D": "If multiple processes are executed simultaneously in which CPU processing and I/O processing appear alternately, each process makes a state transition between the two states of the running state and the waiting state only."
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một tiến trình biểu diễn chuyển trạng thái giữa ba trạng thái: ready, running và waiting. Chuyển trạng thái nào sau đây là đúng?",
+        "optionsVi": {
+          "A": "Đa chương trình một CPU không có nhiều tiến trình đang chạy cùng lúc (thường chỉ một).",
+          "B": "Sẵn sàng: chờ cấp CPU; thường nhiều tiến trình xếp hàng sẵn sàng.",
+          "C": "Chia sẻ thời gian xoay vòng: hết lát thời gian, trạng thái chạy chuyển về sẵn sàng (không phải chờ nhập/xuất).",
+          "D": "Nhiều tiến trình đồng thời, CPU và nhập/xuất xen kẽ; mỗi tiến trình chuyển giữa chạy và chờ."
+        },
+        "answerDisplay": "B. Sẵn sàng: chờ cấp CPU; thường nhiều tiến trình xếp hàng sẵn sàng.",
+        "concept": "• Trạng thái tiến trình đang chờ sự kiện ngoài (I/O, khóa, dữ liệu).",
+        "whyCorrect": "• Trạng thái tiến trình đang chờ sự kiện ngoài (I/O, khóa, dữ liệu).\n• Nhường CPU cho tiến trình khác trong lúc chờ.",
+        "intent": "• OS quản lý tiến trình qua các trạng thái.\n• Chờ I/O (Waiting) khác chờ CPU (Ready) và khác Suspended.",
+        "memoryTip": "• Waiting = chờ sự kiện/I/O; Ready = chờ CPU.",
+        "whatIs": {
+          "A": "Running — đang chiếm CPU thực thi.",
+          "B": "Waiting/Blocked — tiến trình chờ sự kiện ngoài (I/O, khóa).",
+          "C": "Waiting/Blocked — tiến trình chờ sự kiện ngoài (I/O, khóa).",
+          "D": "Waiting/Blocked — tiến trình chờ sự kiện ngoài (I/O, khóa)."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Running — đang chiếm CPU thực thi.\n• Dùng để làm gì? Chạy lệnh trên processor.\n• Vì sao sai? «In a multiprogramming system, even with only one CPU,…» (A) không thỏa: trạng thái chờ I/O (Waiting), không Ready/Terminated.",
+          "C": "• Là gì? Waiting/Blocked — tiến trình chờ sự kiện ngoài (I/O, khóa).\n• Dùng để làm gì? Nhường CPU trong lúc chờ I/O hoặc sự kiện.\n• Vì sao sai? Waiting chờ I/O — khác Ready (đã sẵn sàng, chỉ chờ CPU).",
+          "D": "• Là gì? Waiting/Blocked — tiến trình chờ sự kiện ngoài (I/O, khóa).\n• Dùng để làm gì? Nhường CPU trong lúc chờ I/O hoặc sự kiện.\n• Vì sao sai? Option D «If multiple processes are executed simultaneousl» khác đáp án đúng về bản chất: trạng thái chờ I/O (Waiting), không Ready/Terminated."
+        }
+      },
+      "meta": {
+        "imageKey": 28,
+        "img": "image_28.png",
+        "rebuilt": true
+      },
+      "_pilotFixed": "2026-07-23-v1"
+    },
+    {
+      "id": 395,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 28,
+      "question": "A sender encrypts a message using the receiver's publicly available key. Only the receiver should be able to recover the original message. Which key is required for decryption?",
+      "options": {
+        "A": "The sender's private key.",
+        "B": "The sender's public key.",
+        "C": "The receiver's private key.",
+        "D": "The receiver's public key."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Người gửi mã hóa thông điệp bằng khóa công khai của người nhận. Chỉ người nhận mới khôi phục được thông điệp gốc. Người nhận phải dùng khóa nào để giải mã?",
+        "optionsVi": {
+          "A": "Sender's private khóa.",
+          "B": "Sender's khó công khai.",
+          "C": "Receiver's private khóa.",
+          "D": "Receiver's khó công khai."
+        },
+        "answerDisplay": "C. Receiver's private khóa.",
+        "concept": "• Public-key encryption: encrypt bằng public_receiver → decrypt bằng private_receiver.",
+        "whyCorrect": "• C receiver's private key.\n• Public nhận chỉ mã; private gửi dùng ký, không giải thư mã cho receiver.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "The sender's private key.",
+          "B": "The sender's public key.",
+          "C": "The receiver's private key.",
+          "D": "The receiver's public key."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Sender private.\n• Dùng để làm gì? Ký số.\n• Vì sao sai? Không giải thư mã bằng public nhận.",
+          "B": "• Là gì? Sender public.\n• Dùng để làm gì? —\n• Vì sao sai? Ai cũng có; không bí mật giải.",
+          "D": "• Là gì? Receiver public.\n• Dùng để làm gì? Đã dùng để mã.\n• Vì sao sai? Không giải được — cần private."
+        },
+        "memoryTip": "• Mã public_nhận · Giải private_nhận."
+      },
+      "meta": {
+        "imageKey": 29,
+        "img": "image_29.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 396,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 29,
+      "question": "Linear Search trên N phần tử có số lần so sánh tốt nhất là:",
+      "options": {
+        "A": "N/2",
+        "B": "1",
+        "C": "log₂ N",
+        "D": "N"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Linear Search trên N phần tử có số lần so sánh tốt nhất là:",
+        "optionsVi": {
+          "A": "N/2",
+          "B": "1",
+          "C": "log₂ N",
+          "D": "N"
+        },
+        "answerDisplay": "B. 1",
+        "concept": "• Best case linear search: phần tử ở đầu → 1 so sánh.",
+        "whyCorrect": "• B = 1.\n• N worst; N/2 average xấp xỉ; log₂N binary.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "N/2",
+          "B": "1",
+          "C": "log₂ N",
+          "D": "N"
+        },
+        "whyWrong": {
+          "A": "• Là gì? N/2.\n• Dùng để làm gì? Gần average.\n• Vì sao sai? Không best.",
+          "C": "• Là gì? log₂ N.\n• Dùng để làm gì? Binary search.\n• Vì sao sai? Linear best = 1.",
+          "D": "• Là gì? N.\n• Dùng để làm gì? Worst case.\n• Vì sao sai? Không best."
+        },
+        "memoryTip": "• Linear best=1 · worst=N · Binary best/avg ~ log N (cần sort)."
+      },
+      "meta": {
+        "imageKey": 30,
+        "img": "image_30.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 397,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 30,
+      "question": "A distributed database update affects several database sites. The system must ensure that the update does not leave some sites committed while others remain uncommitted. Which technology is MOST directly intended to preserve integrity in this situation?",
+      "options": {
+        "A": "Two-phase commitment, because it coordinates integrity when a distributed database is updated.",
+        "B": "Replication, because updated contents are automatically reflected in database copies.",
+        "C": "Projection, because it limits the attributes involved in each distributed update.",
+        "D": "Exclusive access control, because it permanently prevents simultaneous distributed transactions."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một cập nhật CSDL phân tán ảnh hưởng nhiều site. Hệ thống phải đảm bảo cập nhật không để một số site đã commit trong khi site khác bị rollback. Kỹ thuật nào được dùng?",
+        "optionsVi": {
+          "A": "Commit 2 pha: điều phối toàn vẹn khi cập nhật CSDL phân tán.",
+          "B": "Replication: nội dung cập nhật phản ánh tự động sang bản sao CSDL.",
+          "C": "Projection vì giới hạn thuộc tính trong mỗi cập nhật phân tán (không đúng 2PC).",
+          "D": "Kiểm soát truy cập độc quyền vì vĩnh viễn chặn giao dịch phân tán đồng thời (sai)."
+        },
+        "answerDisplay": "A. Commit 2 pha: điều phối toàn vẹn khi cập nhật CSDL phân tán.",
+        "concept": "• Two-phase commit (2PC): điều phối atomic commit phân tán.",
+        "whyCorrect": "• A 2PC.\n• Replication copy data; projection algebra; không thay 2PC atomicity.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Two-phase commitment, because it coordinates integrity when a distributed database is updated.",
+          "B": "Replication, because updated contents are automatically reflected in database copies.",
+          "C": "Projection, because it limits the attributes involved in each distributed update.",
+          "D": "Exclusive access control, because it permanently prevents simultaneous distributed transactions."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Replication.\n• Dùng để làm gì? Nhân bản data.\n• Vì sao sai? Không đảm bảo atomic multi-site update một mình.",
+          "C": "• Là gì? Projection.\n• Dùng để làm gì? Đại số quan hệ.\n• Vì sao sai? Không commit protocol.",
+          "D": "• Là gì? Exclusive access control, because it permanently prevents simultaneous distribut\n• Dùng để làm gì? —\n• Vì sao sai? Không phải 2PC."
+        },
+        "memoryTip": "• Distributed atomic update → two-phase commit."
+      },
+      "meta": {
+        "imageKey": 31,
+        "img": "image_31.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 398,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 31,
+      "question": "A database designer removes all repeated items from a table. However, one non-key attribute still depends on only part of a composite primary key. Which statement BEST describes the table?",
+      "options": {
+        "A": "It is in first normal form but does not satisfy second normal form.",
+        "B": "It is in third normal form because all repeated items have been removed.",
+        "C": "It is in second normal form but does not satisfy third normal form.",
+        "D": "It is not in first normal form because partial dependency creates repeated items."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Đã loại lặp nhưng non-key vẫn phụ thuộc một phần composite PK. Chưa đạt dạng chuẩn nào?",
+        "optionsVi": {
+          "A": "Đạt 1NF nhưng chưa 2NF.",
+          "B": "Đạt 3NF vì đã loại hết phần lặp (có thể sai).",
+          "C": "Đạt 2NF nhưng chưa 3NF.",
+          "D": "Chưa 1NF vì phụ thuộc bộ phận tạo lặp (có thể nhầm 2NF)."
+        },
+        "answerDisplay": "A. Đạt 1NF nhưng chưa 2NF.",
+        "concept": "• Tín hiệu tương tự liên tục (dòng/áp…).",
+        "whyCorrect": "• Phần mềm quản lý phần cứng, tiến trình, bộ nhớ, I/O.\n• Cấp tài nguyên và lập lịch cho chương trình.",
+        "intent": "• Phần mềm quản lý phần cứng, tiến trình, bộ nhớ, I/O.\n• Cấp tài nguyên và lập lịch cho chương trình.",
+        "whatIs": {
+          "A": "Tín hiệu tương tự liên tục (dòng/áp…).",
+          "B": "Tín hiệu tương tự liên tục (dòng/áp…).",
+          "C": "Tín hiệu tương tự liên tục (dòng/áp…).",
+          "D": "Tín hiệu tương tự liên tục (dòng/áp…)."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Tín hiệu tương tự liên tục (dòng/áp…).\n• Dùng để làm gì? Analog continuous signal.\n• Vì sao sai? «It is in third normal form because all repeated items…» (B) không thỏa: đúng lệnh/khái niệm CSDL.",
+          "C": "• Là gì? Tín hiệu tương tự liên tục (dòng/áp…).\n• Dùng để làm gì? Analog continuous signal.\n• Vì sao sai? «It is in second normal form but does not satisfy thir…» (C) không thỏa: đúng lệnh/khái niệm CSDL.",
+          "D": "• Là gì? Tín hiệu tương tự liên tục (dòng/áp…).\n• Dùng để làm gì? Analog continuous signal.\n• Vì sao sai? «It is not in first normal form because partial depend…» (D) không thỏa: đúng lệnh/khái niệm CSDL."
+        }
+      },
+      "meta": {
+        "imageKey": 32,
+        "img": "image_32.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 399,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 32,
+      "question": "According to ISO/IEC 27001, which best defines availability?",
+      "options": {
+        "A": "Access to information when required",
+        "B": "Accuracy of information",
+        "C": "Authentication of users",
+        "D": "Confidentiality of information"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Theo ISO/IEC 27001, đâu là định nghĩa phù hợp nhất về độ sẵn sàng (availability)?",
+        "optionsVi": {
+          "A": "Truy cập information khi required",
+          "B": "Accuracy của information",
+          "C": "Xác thực của người dùng",
+          "D": "Tính bí mật information"
+        },
+        "answerDisplay": "A. Truy cập information when required",
+        "concept": "• Availability: truy cập thông tin/hệ khi authorized user cần.",
+        "whyCorrect": "• A Access when required.\n• B integrity; C auth; D confidentiality.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Access to information when required",
+          "B": "Accuracy of information",
+          "C": "Authentication of users",
+          "D": "Confidentiality of information"
+        },
+        "whyWrong": {
+          "B": "• Là gì? Accuracy.\n• Dùng để làm gì? Gần integrity.\n• Vì sao sai? Không phải availability.",
+          "C": "• Là gì? Authentication.\n• Dùng để làm gì? Xác thực.\n• Vì sao sai? Khác A trong CIA.",
+          "D": "• Là gì? Confidentiality.\n• Dùng để làm gì? Bí mật.\n• Vì sao sai? Khác availability."
+        },
+        "memoryTip": "• Availability = when required · C/I/A."
+      },
+      "meta": {
+        "imageKey": 33,
+        "img": "image_33.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 400,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 33,
+      "question": "A receiving system must identify damaged frames and request retransmission when a positive acknowledgment is not received. The same layer also handles physical addressing and logical network topology. Which OSI layer is MOST directly responsible?",
+      "options": {
+        "A": "Physical layer.",
+        "B": "Transport layer.",
+        "C": "Network layer.",
+        "D": "Data Link layer."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Hệ nhận phải nhận diện frame hỏng và yêu cầu truyền lại khi không nhận được ACK dương. Cùng tầng đó cũng cung cấp framing. Tầng nào chủ yếu cung cấp điều này?",
+        "optionsVi": {
+          "A": "Vật lý tầng.",
+          "B": "Tầng transport.",
+          "C": "Tầng mạng.",
+          "D": "Tầng liên kết dữ liệu."
+        },
+        "answerDisplay": "D. Tầng liên kết dữ liệu.",
+        "concept": "• Data Link: framing, error detect, ACK/ARQ, physical addressing (MAC).",
+        "whyCorrect": "• D Data Link.\n• Physical bit; Network IP; Transport end-to-end host.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "memoryTip": "• Frame + ACK/ARQ + MAC → Data Link.",
+        "whatIs": {
+          "A": "Physical layer.",
+          "B": "Transport layer.",
+          "C": "Network layer.",
+          "D": "Data Link layer."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Physical.\n• Dùng để làm gì? Bit/signal.\n• Vì sao sai? Không frame ACK logic.",
+          "B": "• Là gì? Transport.\n• Dùng để làm gì? End-to-end.\n• Vì sao sai? Frame+MAC là Data Link.",
+          "C": "• Là gì? Network.\n• Dùng để làm gì? Routing/IP.\n• Vì sao sai? Không HDLC-like frame local."
+        }
+      },
+      "meta": {
+        "imageKey": 34,
+        "img": "image_34.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 401,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 34,
+      "question": "An organization already uses standard processes across projects and manages its processes proactively. It now selects subprocesses that strongly influence overall performance and controls them using statistical techniques. Which change in process management is MOST significant?",
+      "options": {
+        "A": "Moving from statistical process control to continuous innovative process improvement.",
+        "B": "Moving from dependence on individual competence to documented project plans.",
+        "C": "Moving from qualitative process predictability to quantitative process predictability.",
+        "D": "Moving from project-specific practices to organization-wide standard processes."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Đã chuẩn hóa quy trình, quản lý chủ động; nay chọn subprocess đo lường định lượng theo mục tiêu kinh doanh. Mức trưởng thành nào?",
+        "optionsVi": {
+          "A": "Chuyển từ kiểm soát quy trình thống kê sang cải tiến liên tục/sáng tạo.",
+          "B": "Chuyển từ phụ thuộc năng lực cá nhân sang kế hoạch dự án có tài liệu.",
+          "C": "Chuyển từ dự đoán quy trình định tính sang định lượng.",
+          "D": "Chuyển từ thực hành riêng dự án sang quy trình chuẩn toàn tổ chức."
+        },
+        "answerDisplay": "C. Chuyển từ dự đoán quy trình định tính sang định lượng.",
+        "concept": "• Từ Defined (L3 qualitative org) → Quantitatively Managed (L4) đo thống kê subprocess.",
+        "whyCorrect": "• C Moving qualitative predictability → quantitative process management.\n• A L4→L5; B L1→L2.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "memoryTip": "• L3 Defined → L4 Quantitatively managed.",
+        "whatIs": {
+          "A": "Moving from statistical process control to continuous innovative process improvement.",
+          "B": "Moving from dependence on individual competence to documented project plans.",
+          "C": "Moving from qualitative process predictability to quantitative process predictability.",
+          "D": "Moving from project-specific practices to organization-wide standard processes."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Stat control → continuous innovation.\n• Dùng để làm gì? L4→L5 Optimizing.\n• Vì sao sai? Stem vào quant từ defined.",
+          "B": "• Là gì? Individual → documented plans.\n• Dùng để làm gì? L1→L2.\n• Vì sao sai? Org đã standard — không L2.",
+          "D": "• Là gì? Moving from project-specific practices to organization-wide standard processes.\n• Dùng để làm gì? —\n• Vì sao sai? Bank C."
+        }
+      },
+      "meta": {
+        "imageKey": 35,
+        "img": "image_35.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 402,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 35,
+      "question": "During a backward calculation, several activities diverge from the same node toward different later nodes. Which principle is used when determining the latest allowable node time?",
+      "options": {
+        "A": "Take the larger required value for each path.",
+        "B": "Take the smaller required value for the possible paths.",
+        "C": "Ignore non-critical outgoing activities.",
+        "D": "Add all path values together."
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Tính ngược: nhiều hoạt động tỏa từ một nút. Nguyên tắc xác định latest finish của nút trước chung?",
+        "optionsVi": {
+          "A": "Take larger bắt buộc giá trị cho mỗi path.",
+          "B": "Lấy giá trị nhỏ hơn trong các đường có thể (tính ngược).",
+          "C": "Ignore non-critical outgoing các hoạt động.",
+          "D": "Add tất cả path values together."
+        },
+        "answerDisplay": "B. Lấy giá trị nhỏ hơn trong các đường có thể (tính ngược).",
+        "concept": "• Backward pass: tại node phân kỳ ra sau, latest time = **min** các latest required của nhánh sau (phải thỏa nhánh gắt nhất).",
+        "whyCorrect": "• B Take the smaller value.\n• Max dùng forward sớm; không cộng path; không ignore.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Take the larger required value for each path.",
+          "B": "Take the smaller required value for the possible paths.",
+          "C": "Ignore non-critical outgoing activities.",
+          "D": "Add all path values together."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Take larger.\n• Dùng để làm gì? Gần forward max.\n• Vì sao sai? Backward diverge → min.",
+          "C": "• Là gì? Ignore non-critical.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Vẫn xét ràng buộc nhánh.",
+          "D": "• Là gì? Add all path values.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Không cộng latest."
+        },
+        "memoryTip": "• Forward: max · Backward diverge: min."
+      },
+      "meta": {
+        "imageKey": 36,
+        "img": "image_36.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 403,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 36,
+      "question": "A transaction performs several updates and then encounters a logical program error before successful completion. Recovery uses pre-update log information to undo only the failed transaction's changes. Which recovery method BEST matches the situation?",
+      "options": {
+        "A": "Roll-forward.",
+        "B": "Two-phase commitment.",
+        "C": "Roll-back.",
+        "D": "Replication."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một transaction thực hiện nhiều cập nhật rồi gặp lỗi logic chương trình trước khi hoàn tất thành công. Recovery dùng thông tin log trước cập nhật. Hành động recovery nào phù hợp?",
+        "optionsVi": {
+          "A": "Roll-forward.",
+          "B": "Commit 2 phament.",
+          "C": "Roll-back.",
+          "D": "Replication."
+        },
+        "answerDisplay": "C. Roll-back.",
+        "concept": "• Roll-back: dùng before-image/pre-update log hoàn tác về trước TX.",
+        "whyCorrect": "• C Roll-back.\n• Roll-forward redo sau checkpoint; 2PC phân tán; replication copy.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Roll-forward.",
+          "B": "Two-phase commitment.",
+          "C": "Roll-back.",
+          "D": "Replication."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Roll-forward.\n• Dùng để làm gì? Redo sau crash từ log sau.\n• Vì sao sai? Logical error trước commit → undo/rollback.",
+          "B": "• Là gì? Two-phase commit.\n• Dùng để làm gì? Distributed atomic.\n• Vì sao sai? Không phải local undo.",
+          "D": "• Là gì? Replication.\n• Dùng để làm gì? Copy data.\n• Vì sao sai? Không recovery undo."
+        },
+        "memoryTip": "• Lỗi trước commit → roll-back (undo) · sau commit crash → roll-forward (redo)."
+      },
+      "meta": {
+        "imageKey": 37,
+        "img": "image_37.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 404,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 37,
+      "question": "A network administrator needs a device that forwards traffic between different logical networks based on logical addressing. The device must also operate at the OSI layer where routing and congestion control are performed. Which device BEST satisfies the requirement?",
+      "options": {
+        "A": "Bridge.",
+        "B": "Repeater.",
+        "C": "Hub.",
+        "D": "Router."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cần thiết bị chuyển tiếp giữa các mạng logic theo địa chỉ logic, hoạt động tầng OSI định tuyến/kiểm soát tắc nghẽn. Thiết bị nào?",
+        "optionsVi": {
+          "A": "Bridge (cầu nối tầng 2 / MAC)",
+          "B": "Repeater (bộ lặp tầng 1)",
+          "C": "Hub (bộ tập trung tầng 1)",
+          "D": "Router (bộ định tuyến tầng 3 / IP)"
+        },
+        "answerDisplay": "D. Router (bộ định tuyến tầng 3 / IP)",
+        "concept": "• Thiết bị tầng 3 (Network): định tuyến/chuyển tiếp gói giữa các mạng logic theo địa chỉ IP.",
+        "whyCorrect": "• Mở màn cụ thể theo cấu hình route/URL.",
+        "intent": "• Router = tầng 3: định tuyến theo địa chỉ logic (IP) giữa các mạng.\n• Bridge/Switch ≈ L2 · Hub/Repeater ≈ L1 — không thay router liên mạng.",
+        "memoryTip": "• L3 Router: IP + routing + congestion control.\n• L2 Bridge/Switch · L1 Hub/Repeater.",
+        "whatIs": {
+          "A": "Bridge — tầng 2, nối segment LAN theo MAC.",
+          "B": "Hub/Repeater — tầng 1, khuếch đại/phát lại tín hiệu.",
+          "C": "Hub/Repeater — tầng 1, khuếch đại/phát lại tín hiệu.",
+          "D": "Router — thiết bị tầng 3, định tuyến IP."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Bridge — tầng 2, nối segment LAN theo MAC.\n• Dùng để làm gì? Không routing IP.\n• Vì sao sai? «Bridge.» (A) không thỏa: định tuyến tầng 3.",
+          "B": "• Là gì? Hub/Repeater — tầng 1, khuếch đại/phát lại tín hiệu.\n• Dùng để làm gì? Không định tuyến IP.\n• Vì sao sai? «Repeater.» (B) không thỏa: định tuyến tầng 3.",
+          "C": "• Là gì? Hub/Repeater — tầng 1, khuếch đại/phát lại tín hiệu.\n• Dùng để làm gì? Không định tuyến IP.\n• Vì sao sai? «Hub.» (C) không thỏa: định tuyến tầng 3."
+        }
+      },
+      "meta": {
+        "imageKey": 38,
+        "img": "image_38.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 405,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 38,
+      "question": "Which of the following is an appropriate role of FCS in a frame that is transmitted through the HDLC procedure?",
+      "options": {
+        "A": "It records the code for identifying the start or end of the frame.",
+        "B": "It records the type and transmission order of the frame.",
+        "C": "It records the error control code of the frame.",
+        "D": "It records the information for identifying the transmitting station or receiving station of the frame."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cái nào sau đây là vai trò phù hợp của FCS trong frame được truyền theo thủ tục HDLC?",
+        "optionsVi": {
+          "A": "Ghi mã nhận diện đầu/cuối frame (flag).",
+          "B": "Ghi loại và thứ tự truyền frame.",
+          "C": "Các bản ghi kiểm soát lỗi mã khung.",
+          "D": "Ghi thông tin nhận diện trạm gửi/nhận của frame."
+        },
+        "answerDisplay": "C. Các bản ghi kiểm soát lỗi mã khung.",
+        "concept": "• FCS (Frame Check Sequence): mã kiểm soát lỗi (CRC) của frame.",
+        "whyCorrect": "• C error control code.\n• Flag = start/end; Control = type/order; Address = station id.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "It records the code for identifying the start or end of the frame.",
+          "B": "It records the type and transmission order of the frame.",
+          "C": "It records the error control code of the frame.",
+          "D": "It records the information for identifying the transmitting station or receiving station of the frame."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Start/end of frame.\n• Dùng để làm gì? Flag field.\n• Vì sao sai? Không phải FCS.",
+          "B": "• Là gì? Type and order.\n• Dùng để làm gì? Control field.\n• Vì sao sai? Không FCS.",
+          "D": "• Là gì? Identify transmitter.\n• Dùng để làm gì? Address field.\n• Vì sao sai? Không FCS."
+        },
+        "memoryTip": "• FCS = CRC/error check · Flag = biên frame."
+      },
+      "meta": {
+        "imageKey": 39,
+        "img": "image_39.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 406,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 39,
+      "question": "A company encrypts confidential files using the same secret key for both encryption and decryption. It later publishes this key so external partners can securely send encrypted files to the company. Which statement BEST identifies the security problem?",
+      "options": {
+        "A": "The encryption method remains secure because decryption still requires the same key.",
+        "B": "The system becomes message authentication instead of encryption.",
+        "C": "Publishing the shared secret compromises private key cryptography because the key must be kept secret.",
+        "D": "The company has automatically converted the system into public key cryptography."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một công ty mã hóa file mật bằng cùng một secret key cho cả mã hóa và giải mã. Sau đó công ty công bố khóa này để đối tác ngoài đọc được file. Tính chất bảo mật nào bị mất?",
+        "optionsVi": {
+          "A": "Vẫn an toàn vì giải mã vẫn cần cùng khóa (có thể sai nếu đã lộ key).",
+          "B": "Hệ thành xác thực thông điệp thay vì mã hóa.",
+          "C": "Công bố shared secret làm mất bảo mật mật mã khóa bí mật (phải giữ secret).",
+          "D": "Công ty tự chuyển hệ sang mật mã khóa công khai (sai nếu đã lộ secret key)."
+        },
+        "answerDisplay": "C. Công bố shared secret làm mất bảo mật mật mã khóa bí mật (phải giữ secret).",
+        "concept": "• Symmetric (common/secret) key: ai có key đều giải được — publish key = mất confidentiality.",
+        "whyCorrect": "• C: publishing shared secret phá bảo mật (private/symmetric key crypto).\n• Không còn «vẫn secure»; không biến thành message auth.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "The encryption method remains secure because decryption still requires the same key.",
+          "B": "The system becomes message authentication instead of encryption.",
+          "C": "Publishing the shared secret compromises private key cryptography because the key must be kept secret.",
+          "D": "The company has automatically converted the system into public key cryptography."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Vẫn secure vì cùng key.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Key đã public → ai cũng giải.",
+          "B": "• Là gì? Trở thành message auth.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Publish key phá mật, không biến thành MAC.",
+          "D": "• Là gì? The company has automatically converted the system into public key cryptography.\n• Dùng để làm gì? —\n• Vì sao sai? Bank C."
+        },
+        "memoryTip": "• Symmetric key phải giữ bí mật · public key mới công khai được."
+      },
+      "meta": {
+        "imageKey": 40,
+        "img": "image_40.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 407,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 40,
+      "question": "Which of the following can be assigned to a computer as the IP address of class C?",
+      "options": {
+        "A": "192.128.0.0",
+        "B": "192.0.256.16",
+        "C": "192.0.0.255",
+        "D": "192.128.0.128"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cái nào sau đây assigned máy tính đị chỉ IP class C?",
+        "optionsVi": {
+          "A": "192.128.0.0",
+          "B": "192.0.256.16",
+          "C": "192.0.0.255",
+          "D": "192.128.0.128"
+        },
+        "answerDisplay": "D. 192.128.0.128",
+        "concept": "• Class C: 192–223.x.x.x; host không .0 network, không .255 broadcast (trong /24); mỗi octet 0–255.",
+        "whyCorrect": "• D 192.128.0.128 — class C, host hợp lệ.\n• A 192.128.0.0 thường network id.\n• B 256 invalid octet.\n• C 192.0.0.255 broadcast-ish.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "192.128.0.0",
+          "B": "192.0.256.16",
+          "C": "192.0.0.255",
+          "D": "192.128.0.128"
+        },
+        "whyWrong": {
+          "A": "• Là gì? 192.128.0.0.\n• Dùng để làm gì? Network address điển hình.\n• Vì sao sai? Không gán host.",
+          "B": "• Là gì? …256…\n• Dùng để làm gì? Octet >255.\n• Vì sao sai? IP invalid.",
+          "C": "• Là gì? 192.0.0.255.\n• Dùng để làm gì? Broadcast dạng.\n• Vì sao sai? Không gán host thường."
+        },
+        "memoryTip": "• Host class C: không .0/.255 · octet ≤255 · 192.128.0.128 OK."
+      },
+      "meta": {
+        "imageKey": 41,
+        "img": "image_41.png",
+        "rebuilt": true
+      }
+    },
+    {
+      "id": 408,
+      "task": "datajfe",
+      "taskLabel": "datajfe",
+      "num": 41,
+      "question": "A process is executed through a state transition among three states: a ready state, a running state, and a waiting state. Which of the following is an appropriate description concerning the state transition of a process?",
+      "options": {
+        "A": "In a multiprogramming system, even with only one CPU, multiple processes in the running state exist.",
+        "B": "Ready state refers to a state in which a process is waiting for CPU allocation. Generally, there are multiple processes in the ready state, and they are formed into a queue.",
+        "C": "In systems that perform time-sharing processing with the round robin method, a process in the running state makes a state transition to the waiting state after a fixed time passes.",
+        "D": "If multiple processes are executed simultaneously in which CPU processing and I/O processing appear alternately, each process makes a state transition between the two states of the running state and the waiting state only."
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một tiến trình thực thi qua chuyển trạng thái giữa ba trạng thái: ready, running và waiting. Điều nào sau đây gây chuyển từ running sang waiting?",
+        "optionsVi": {
+          "A": "Đa chương trình một CPU không có nhiều tiến trình đang chạy cùng lúc (thường chỉ một).",
+          "B": "Sẵn sàng: chờ cấp CPU; thường nhiều tiến trình xếp hàng sẵn sàng.",
+          "C": "Chia sẻ thời gian xoay vòng: hết lát thời gian, trạng thái chạy chuyển về sẵn sàng (không phải chờ nhập/xuất).",
+          "D": "Nhiều tiến trình đồng thời, CPU và nhập/xuất xen kẽ; mỗi tiến trình chuyển giữa chạy và chờ."
+        },
+        "answerDisplay": "B. Sẵn sàng: chờ cấp CPU; thường nhiều tiến trình xếp hàng sẵn sàng.",
+        "concept": "• Trạng thái tiến trình đang chờ sự kiện ngoài (I/O, khóa, dữ liệu).",
+        "whyCorrect": "• Trạng thái tiến trình đang chờ sự kiện ngoài (I/O, khóa, dữ liệu).\n• Nhường CPU cho tiến trình khác trong lúc chờ.",
+        "intent": "• OS quản lý tiến trình qua các trạng thái.\n• Chờ I/O (Waiting) khác chờ CPU (Ready) và khác Suspended.",
+        "memoryTip": "• Waiting = chờ sự kiện/I/O; Ready = chờ CPU.",
+        "whatIs": {
+          "A": "Running — đang chiếm CPU thực thi.",
+          "B": "Waiting/Blocked — tiến trình chờ sự kiện ngoài (I/O, khóa).",
+          "C": "Waiting/Blocked — tiến trình chờ sự kiện ngoài (I/O, khóa).",
+          "D": "Waiting/Blocked — tiến trình chờ sự kiện ngoài (I/O, khóa)."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Running — đang chiếm CPU thực thi.\n• Dùng để làm gì? Chạy lệnh trên processor.\n• Vì sao sai? «In a multiprogramming system, even with only one CPU,…» (A) không thỏa: trạng thái chờ I/O (Waiting), không Ready/Terminated.",
+          "C": "• Là gì? Waiting/Blocked — tiến trình chờ sự kiện ngoài (I/O, khóa).\n• Dùng để làm gì? Nhường CPU trong lúc chờ I/O hoặc sự kiện.\n• Vì sao sai? Waiting chờ I/O — khác Ready (đã sẵn sàng, chỉ chờ CPU).",
+          "D": "• Là gì? Waiting/Blocked — tiến trình chờ sự kiện ngoài (I/O, khóa).\n• Dùng để làm gì? Nhường CPU trong lúc chờ I/O hoặc sự kiện.\n• Vì sao sai? Option D «If multiple processes are executed simultaneousl» khác đáp án đúng về bản chất: trạng thái chờ I/O (Waiting), không Ready/Terminated."
+        }
+      },
+      "meta": {
+        "imageKey": 44,
+        "img": "image_44.png",
+        "rebuilt": true
+      },
+      "_pilotFixed": "2026-07-23-v1"
+    }
+  ]
+}

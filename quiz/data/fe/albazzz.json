@@ -1,0 +1,642 @@
+{
+  "subject": "fe",
+  "task": "albazzz",
+  "taskLabel": "Albazzz",
+  "count": 15,
+  "questions": [
+    {
+      "id": 712,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 332,
+      "question": "Which statement correctly describes the advantage of an interpreter compared with a compiler?",
+      "options": {
+        "A": "It eliminates syntax checking",
+        "B": "It produces a faster executable program",
+        "C": "It creates object code before execution",
+        "D": "It allows immediate execution and debugging of statements",
+        "E": "It requires less memory during execution"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_TEST",
+      "explanation": {
+        "questionVi": "Phát biểu nào correctly mô tả advantage bộ thông dịch compared trình biên dịch?",
+        "optionsVi": {
+          "A": "Loại bỏ kiểm tra cú pháp (sai)",
+          "B": "Produces nhanh hơn executable chương trình",
+          "C": "Creates object mã trước khi thực thi",
+          "D": "Cho phép thực thi và gỡ lỗi ngay từng câu lệnh",
+          "E": "Yêu cầu bộ nhớ trong lúc thực thi"
+        },
+        "answerDisplay": "D. Cho phép thực thi và gỡ lỗi ngay từng câu lệnh",
+        "concept": "• Interpreter: thực thi/debug từng câu ngay, không cần biên dịch toàn bộ trước.",
+        "whyCorrect": "• D: immediate execution & debugging — ưu điểm cổ điển vs compiler.\n• A sai (vẫn check syntax); B sai (thường chậm hơn); C là compiler; E không luôn đúng.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "It eliminates syntax checking",
+          "B": "It produces a faster executable program",
+          "C": "It creates object code before execution",
+          "D": "It allows immediate execution and debugging of statements",
+          "E": "It requires less memory during execution"
+        },
+        "whyWrong": {
+          "A": "• Là gì? Eliminates syntax checking.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Interpreter vẫn phân tích cú pháp.",
+          "B": "• Là gì? Faster executable.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Thường chậm hơn mã đã compile.",
+          "C": "• Là gì? Creates object code before execution.\n• Dùng để làm gì? Compiler.\n• Vì sao sai? Không phải advantage interpreter.",
+          "E": "• Là gì? Requires less memory.\n• Dùng để làm gì? Không luôn đúng.\n• Vì sao sai? Không phải ưu điểm chuẩn đề."
+        },
+        "memoryTip": "• Interpreter = chạy/debug ngay · Compiler = dịch trước (thường nhanh hơn)."
+      }
+    },
+    {
+      "id": 713,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 453,
+      "question": "Thrashing?",
+      "options": {
+        "A": "Too many page faults, low progress",
+        "B": "All are correct",
+        "C": "BCP for IT services",
+        "D": "Web security / input output encoding"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "Thrashing là gì?",
+        "optionsVi": {
+          "A": "Too lỗi trang, low progress",
+          "B": "Tất cả là correct",
+          "C": "BCP cho services",
+          "D": "Bảo mật web / mã hóa input–output"
+        },
+        "answerDisplay": "A. Too lỗi trang, low progress",
+        "concept": "• Thrashing: quá nhiều page fault, CPU bận swap, tiến độ thực gần như đứng.",
+        "whyCorrect": "• A đúng định nghĩa thrashing bộ nhớ ảo.\n• B/C/D nhiễu miền khác.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Too many page faults, low progress",
+          "B": "All are correct",
+          "C": "BCP for IT services",
+          "D": "Web security / input output encoding"
+        },
+        "whyWrong": {
+          "B": "• Là gì? All are correct.\n• Dùng để làm gì? —\n• Vì sao sai? Chỉ A đúng thrashing.",
+          "C": "• Là gì? BCP for IT.\n• Dùng để làm gì? Liên tục kinh doanh.\n• Vì sao sai? Không phải thrashing.",
+          "D": "• Là gì? Web security encoding.\n• Dùng để làm gì? An ninh web.\n• Vì sao sai? Không phải page fault thrashing."
+        },
+        "memoryTip": "• Thrashing = page fault bão hòa, không làm việc hữu ích."
+      }
+    },
+    {
+      "id": 714,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 561,
+      "question": "Product life cycle stages?",
+      "options": {
+        "A": "4th generation",
+        "B": "Intro Growth Maturity Decline",
+        "C": "0.855",
+        "D": "Assemble/disassemble data, error control for transmission"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "Vòng đời sản phẩm stages?",
+        "optionsVi": {
+          "A": "4th generation",
+          "B": "Giới thiệu – Tăng trưởng – Bão hòa – Suy thoái",
+          "C": "0.855",
+          "D": "Ghép/tách dữ liệu, kiểm soát lỗi khi truyền"
+        },
+        "answerDisplay": "B. Giới thiệu – Tăng trưởng – Bão hòa – Suy thoái",
+        "concept": "• PLC: Introduction → Growth → Maturity → Decline.",
+        "whyCorrect": "• B đúng bốn giai đoạn chuẩn.\n• A gen máy tính; C số reliability; D CCU — nhiễu.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "4th generation",
+          "B": "Intro Growth Maturity Decline",
+          "C": "0.855",
+          "D": "Assemble/disassemble data, error control for transmission"
+        },
+        "whyWrong": {
+          "A": "• Là gì? 4th generation.\n• Dùng để làm gì? Thế hệ máy tính.\n• Vì sao sai? Không phải PLC.",
+          "C": "• Là gì? 0.855.\n• Dùng để làm gì? Số.\n• Vì sao sai? Không phải giai đoạn SP.",
+          "D": "• Là gì? Assemble/disassemble…\n• Dùng để làm gì? CCU.\n• Vì sao sai? Không phải PLC."
+        },
+        "memoryTip": "• Intro → Growth → Maturity → Decline."
+      }
+    },
+    {
+      "id": 715,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 564,
+      "question": "SLA is?",
+      "options": {
+        "A": "Ready",
+        "B": "Energy-efficient IT / reduce environmental impact",
+        "C": "Service Level Agreement with customer",
+        "D": "Creator + peers find errors early"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "SLA là gì?",
+        "optionsVi": {
+          "A": "Sẵn sàng",
+          "B": "IT tiết kiệm năng lượng / giảm tác động môi trường (Green IT)",
+          "C": "Thỏa thuận mức dịch vụ (SLA) với khách hàng",
+          "D": "Tác giả + đồng nghiệp tìm lỗi sớm (walk-through)"
+        },
+        "answerDisplay": "C. Thỏa thuận mức dịch vụ (SLA) với khách hàng",
+        "concept": "• SLA (Service Level Agreement): thỏa thuận mức dịch vụ với khách hàng/user.",
+        "whyCorrect": "• C đúng.\n• A trạng thái process; B green IT; D review — khác.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Ready",
+          "B": "Energy-efficient IT / reduce environmental impact",
+          "C": "Service Level Agreement with customer",
+          "D": "Creator + peers find errors early"
+        },
+        "whyWrong": {
+          "A": "• Là gì? Ready.\n• Dùng để làm gì? Process state.\n• Vì sao sai? Không phải SLA.",
+          "B": "• Là gì? Energy-efficient IT.\n• Dùng để làm gì? Green IT.\n• Vì sao sai? Không phải SLA.",
+          "D": "• Là gì? Creator + peers find errors.\n• Dùng để làm gì? Review.\n• Vì sao sai? Không phải SLA."
+        },
+        "memoryTip": "• SLA = cam kết mức dịch vụ với customer."
+      }
+    },
+    {
+      "id": 716,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 565,
+      "question": "Incident vs Problem?",
+      "options": {
+        "A": "-2^(n-1) .. 2^(n-1)-1",
+        "B": "Restore ASAP vs find root cause",
+        "C": "2^n types",
+        "D": "Rectangle"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "Incident khác Problem thế nào?",
+        "optionsVi": {
+          "A": "-2^(n-1).. 2^(n-1)-1",
+          "B": "Khôi phục ASAP vs tìm nguyên nhân gốc (incident vs problem)",
+          "C": "2^n kiểu",
+          "D": "Rectangle"
+        },
+        "answerDisplay": "B. Khôi phục ASAP vs tìm nguyên nhân gốc (incident vs problem)",
+        "concept": "• Incident: khôi phục dịch vụ ASAP. Problem: tìm root cause, ngăn lặp lại (ITIL).",
+        "whyCorrect": "• B đúng cặp Incident/Problem.\n• A/C/D nhiễu số/hình.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "-2^(n-1) .. 2^(n-1)-1",
+          "B": "Restore ASAP vs find root cause",
+          "C": "2^n types",
+          "D": "Rectangle"
+        },
+        "whyWrong": {
+          "A": "• Là gì? Phạm vi 2's complement.\n• Dùng để làm gì? Số.\n• Vì sao sai? Không phải ITIL incident/problem.",
+          "C": "• Là gì? 2^n types.\n• Dùng để làm gì? Đếm.\n• Vì sao sai? Không phải định nghĩa.",
+          "D": "• Là gì? Rectangle.\n• Dùng để làm gì? Hình.\n• Vì sao sai? Nhiễu."
+        },
+        "memoryTip": "• Incident = restore ASAP · Problem = root cause."
+      }
+    },
+    {
+      "id": 717,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 566,
+      "question": "Service desk is?",
+      "options": {
+        "A": "Sequential file",
+        "B": "It is a multiplexing technique that is used to change the connection destination in units of time slots.",
+        "C": "16 73 28 84 51",
+        "D": "SPOC for users"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "Service desk là gì?",
+        "optionsVi": {
+          "A": "Tệp tuần tự",
+          "B": "Ghép kênh đổi điểm đến theo khe thời gian (TDM).",
+          "C": "16 73 28 84 51",
+          "D": "SPOC cho người dùng"
+        },
+        "answerDisplay": "D. SPOC cho người dùng",
+        "concept": "• Service desk: Single Point of Contact (SPOC) cho user về sự cố/yêu cầu dịch vụ.",
+        "whyCorrect": "• D = SPOC for users — đúng.\n• A/B/C nhiễu file/TDM/số.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Sequential file",
+          "B": "It is a multiplexing technique that is used to change the connection destination in units of time slots.",
+          "C": "16 73 28 84 51",
+          "D": "SPOC for users"
+        },
+        "whyWrong": {
+          "A": "• Là gì? Sequential file.\n• Dùng để làm gì? File org.\n• Vì sao sai? Không phải service desk.",
+          "B": "• Là gì? TDM description.\n• Dùng để làm gì? Multiplexing.\n• Vì sao sai? Không phải desk.",
+          "C": "• Là gì? Dãy số.\n• Dùng để làm gì? —\n• Vì sao sai? Nhiễu."
+        },
+        "memoryTip": "• Service desk = SPOC user."
+      }
+    },
+    {
+      "id": 718,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 568,
+      "question": "Waterfall model?",
+      "options": {
+        "A": "I/O transfers without CPU per-byte involvement",
+        "B": "Product Price Place Promotion",
+        "C": "DROP TABLE",
+        "D": "Sequential phases"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "Mô hình Waterfall?",
+        "optionsVi": {
+          "A": "Truyền I/O không cần CPU can thiệp từng byte (DMA)",
+          "B": "Product – Price – Place – Promotion (4P)",
+          "C": "DROP TABLE",
+          "D": "Sequential phases"
+        },
+        "answerDisplay": "D. Sequential phases",
+        "concept": "• Waterfall: các pha tuần tự (req→design→code→test→maintain), ít quay lại.",
+        "whyCorrect": "• D Sequential phases — đúng waterfall.\n• A DMA; B 4P marketing; C SQL — nhiễu.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "I/O transfers without CPU per-byte involvement",
+          "B": "Product Price Place Promotion",
+          "C": "DROP TABLE",
+          "D": "Sequential phases"
+        },
+        "whyWrong": {
+          "A": "• Là gì? I/O without CPU…\n• Dùng để làm gì? DMA.\n• Vì sao sai? Không phải lifecycle model.",
+          "B": "• Là gì? 4P.\n• Dùng để làm gì? Marketing.\n• Vì sao sai? Không phải waterfall.",
+          "C": "• Là gì? DROP TABLE.\n• Dùng để làm gì? SQL.\n• Vì sao sai? Không phải model quy trình."
+        },
+        "memoryTip": "• Waterfall = pha nối tiếp."
+      }
+    },
+    {
+      "id": 719,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 571,
+      "question": "Black-box testing?",
+      "options": {
+        "A": "Based on spec, not code",
+        "B": "High bandwidth, low noise, long distance",
+        "C": "16",
+        "D": "Business to Consumer"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "Kiểm thử black-box?",
+        "optionsVi": {
+          "A": "Dự trên spec, not mã",
+          "B": "Băng thông cao, nhiễu thấp, khoảng cách xa",
+          "C": "16",
+          "D": "Business để Consumer"
+        },
+        "answerDisplay": "A. Dự trên spec, not mã",
+        "concept": "• Black-box: test theo spec/yêu cầu, không nhìn code nội bộ.",
+        "whyCorrect": "• A đúng.\n• B/C/D nhiễu mạng/số/B2C.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Based on spec, not code",
+          "B": "High bandwidth, low noise, long distance",
+          "C": "16",
+          "D": "Business to Consumer"
+        },
+        "whyWrong": {
+          "B": "• Là gì? High bandwidth fiber…\n• Dùng để làm gì? Truyền dẫn.\n• Vì sao sai? Không phải black-box.",
+          "C": "• Là gì? 16.\n• Dùng để làm gì? Số.\n• Vì sao sai? Nhiễu.",
+          "D": "• Là gì? B2C.\n• Dùng để làm gì? Thương mại.\n• Vì sao sai? Không phải testing."
+        },
+        "memoryTip": "• Black-box = theo spec · White-box = theo code."
+      }
+    },
+    {
+      "id": 720,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 572,
+      "question": "White-box testing?",
+      "options": {
+        "A": "Based on code structure",
+        "B": "Moderator-led formal review",
+        "C": "Supply chain management",
+        "D": "It is a method for one-to-one conversion of an internal address to an external address."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "Kiểm thử white-box?",
+        "optionsVi": {
+          "A": "Dự trên mã structure",
+          "B": "Review chính thức có moderator (inspection)",
+          "C": "Supply chain quản lý",
+          "D": "Ánh xạ 1–1 địa chỉ nội bộ ↔ ngoài (NAT tĩnh)."
+        },
+        "answerDisplay": "A. Dự trên mã structure",
+        "concept": "• White-box: thiết kế test dựa trên cấu trúc mã (nhánh, đường đi).",
+        "whyCorrect": "• A đúng.\n• B review meeting; C SCM; D NAT — nhiễu.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Based on code structure",
+          "B": "Moderator-led formal review",
+          "C": "Supply chain management",
+          "D": "It is a method for one-to-one conversion of an internal address to an external address."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Moderator-led review.\n• Dùng để làm gì? Review.\n• Vì sao sai? Không phải white-box test.",
+          "C": "• Là gì? SCM.\n• Dùng để làm gì? Chuỗi cung ứng.\n• Vì sao sai? Không phải test.",
+          "D": "• Là gì? 1-1 address conversion.\n• Dùng để làm gì? NAT.\n• Vì sao sai? Không phải white-box."
+        },
+        "memoryTip": "• White-box = nhìn code structure."
+      }
+    },
+    {
+      "id": 721,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 586,
+      "question": "SaaS means?",
+      "options": {
+        "A": "Customer relationship management",
+        "B": "Fixed cost / (price - variable unit cost)",
+        "C": "Software as a Service",
+        "D": "Process management / scheduling"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "SaaS nghĩ là?",
+        "optionsVi": {
+          "A": "Customer relationshIP quản lý",
+          "B": "Chi phí cố định / (giá − chi phí biến đổi đơn vị)",
+          "C": "Phần mềm Service",
+          "D": "Tiến trình quản lý / scheduling"
+        },
+        "answerDisplay": "C. Phần mềm Service",
+        "concept": "• SaaS = Software as a Service — dùng phần mềm qua mạng, nhà cung cấp vận hành.",
+        "whyCorrect": "• C đúng expansion.\n• A CRM; B BEP; D process mgmt — khác.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Customer relationship management",
+          "B": "Fixed cost / (price - variable unit cost)",
+          "C": "Software as a Service",
+          "D": "Process management / scheduling"
+        },
+        "whyWrong": {
+          "A": "• Là gì? CRM.\n• Dùng để làm gì? Quan hệ KH.\n• Vì sao sai? Không phải SaaS.",
+          "B": "• Là gì? Break-even formula.\n• Dùng để làm gì? Tài chính.\n• Vì sao sai? Không phải SaaS.",
+          "D": "• Là gì? Process management.\n• Dùng để làm gì? OS.\n• Vì sao sai? Không phải cloud service model."
+        },
+        "memoryTip": "• SaaS · PaaS · IaaS."
+      }
+    },
+    {
+      "id": 722,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 590,
+      "question": "Benchmarking?",
+      "options": {
+        "A": "One-way fingerprint; integrity check",
+        "B": "Largest bubbles to end each pass",
+        "C": "Compare with best practice/competitors",
+        "D": "Segment public services from internal LAN"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "Benchmarking là gì?",
+        "optionsVi": {
+          "A": "Vân tay một chiều; kiểm tra toàn vẹn (hash)",
+          "B": "Largest bubbles để kết thúc mỗi pass",
+          "C": "So với thực hành tốt / đối thủ (benchmarking)",
+          "D": "Tách dịch vụ công khỏi LAN nội bộ (DMZ/segmentation)"
+        },
+        "answerDisplay": "C. So với thực hành tốt / đối thủ (benchmarking)",
+        "concept": "• Benchmarking: so sánh với best practice / đối thủ để cải tiến.",
+        "whyCorrect": "• C đúng.\n• A hash; B bubble; D DMZ — khác.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "One-way fingerprint; integrity check",
+          "B": "Largest bubbles to end each pass",
+          "C": "Compare with best practice/competitors",
+          "D": "Segment public services from internal LAN"
+        },
+        "whyWrong": {
+          "A": "• Là gì? One-way fingerprint.\n• Dùng để làm gì? Hash/digest.\n• Vì sao sai? Không phải benchmarking.",
+          "B": "• Là gì? Bubble sort idea.\n• Dùng để làm gì? Sort.\n• Vì sao sai? Không phải benchmarking.",
+          "D": "• Là gì? Segment public/internal.\n• Dùng để làm gì? DMZ/network.\n• Vì sao sai? Không phải benchmarking."
+        },
+        "memoryTip": "• Benchmark = so với best/competitors."
+      }
+    },
+    {
+      "id": 723,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 609,
+      "question": "Stakeholder is?",
+      "options": {
+        "A": "Utility software",
+        "B": "Anyone interested/affected by project",
+        "C": "Decimal",
+        "D": "Merge Sort"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "Stakeholder là gì?",
+        "optionsVi": {
+          "A": "Utility phần mềm",
+          "B": "Bất kỳ ai quan tâm/bị ảnh hưởng bởi dự án (stakeholder)",
+          "C": "Decimal",
+          "D": "Merge Sort"
+        },
+        "answerDisplay": "B. Bất kỳ ai quan tâm/bị ảnh hưởng bởi dự án (stakeholder)",
+        "concept": "• Stakeholder: cá nhân/tổ chức quan tâm hoặc bị ảnh hưởng bởi dự án.",
+        "whyCorrect": "• B đúng PMBOK-ish.\n• A/C/D nhiễu.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Utility software",
+          "B": "Anyone interested/affected by project",
+          "C": "Decimal",
+          "D": "Merge Sort"
+        },
+        "whyWrong": {
+          "A": "• Là gì? Utility software.\n• Dùng để làm gì? Loại SW.\n• Vì sao sai? Không phải stakeholder.",
+          "C": "• Là gì? Decimal.\n• Dùng để làm gì? Hệ đếm.\n• Vì sao sai? Nhiễu.",
+          "D": "• Là gì? Merge Sort.\n• Dùng để làm gì? Thuật toán.\n• Vì sao sai? Nhiễu."
+        },
+        "memoryTip": "• Stakeholder = interested/affected by project."
+      }
+    },
+    {
+      "id": 724,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 613,
+      "question": "Crashing a schedule?",
+      "options": {
+        "A": "Add resources to shorten duration (cost↑)",
+        "B": "Choose rows by condition",
+        "C": "Rectangle",
+        "D": "EV/PV"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "Crashing lịch (thêm tài nguyên) là gì?",
+        "optionsVi": {
+          "A": "Thêm tài nguyên rút ngắn thời gian (chi phí↑) — crashing",
+          "B": "Choose rows bằng condition",
+          "C": "Rectangle",
+          "D": "EV/PV"
+        },
+        "answerDisplay": "A. Thêm tài nguyên rút ngắn thời gian (chi phí↑) — crashing",
+        "concept": "• Crashing: thêm resource rút ngắn duration, thường tăng chi phí.",
+        "whyCorrect": "• A đúng schedule crashing.\n• B SQL; C shape; D SPI-ish — nhiễu.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Add resources to shorten duration (cost↑)",
+          "B": "Choose rows by condition",
+          "C": "Rectangle",
+          "D": "EV/PV"
+        },
+        "whyWrong": {
+          "B": "• Là gì? Choose rows by condition.\n• Dùng để làm gì? SQL WHERE.\n• Vì sao sai? Không phải crashing.",
+          "C": "• Là gì? Rectangle.\n• Dùng để làm gì? Hình.\n• Vì sao sai? Nhiễu.",
+          "D": "• Là gì? EV/PV.\n• Dùng để làm gì? Earned value ratio.\n• Vì sao sai? Khác crashing."
+        },
+        "memoryTip": "• Crash = thêm resource, ngắn hạn, tốn hơn · Fast-track = chồng pha."
+      }
+    },
+    {
+      "id": 725,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 616,
+      "question": "CMDB?",
+      "options": {
+        "A": "Ready",
+        "B": "O(n log n)",
+        "C": "Too many page faults, low progress",
+        "D": "Configuration management database"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "CMDB là gì?",
+        "optionsVi": {
+          "A": "Sẵn sàng",
+          "B": "O(n log n)",
+          "C": "Too lỗi trang, low progress",
+          "D": "CSDL quản lý cấu hình (CMDB)"
+        },
+        "answerDisplay": "D. CSDL quản lý cấu hình (CMDB)",
+        "concept": "• CMDB: Configuration Management Database — lưu CI và quan hệ (ITIL).",
+        "whyCorrect": "• D đúng.\n• A/B/C nhiễu state/complexity/thrashing.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Ready",
+          "B": "O(n log n)",
+          "C": "Too many page faults, low progress",
+          "D": "Configuration management database"
+        },
+        "whyWrong": {
+          "A": "• Là gì? Ready.\n• Dùng để làm gì? Process state.\n• Vì sao sai? Không phải CMDB.",
+          "B": "• Là gì? O(n log n).\n• Dùng để làm gì? Độ phức tạp.\n• Vì sao sai? Nhiễu.",
+          "C": "• Là gì? Too many page faults.\n• Dùng để làm gì? Thrashing.\n• Vì sao sai? Không phải CMDB."
+        },
+        "memoryTip": "• CMDB = DB cấu hình ITIL."
+      }
+    },
+    {
+      "id": 726,
+      "task": "albazzz",
+      "taskLabel": "Albazzz",
+      "num": 683,
+      "question": "ARP resolves?",
+      "options": {
+        "A": "Device Management",
+        "B": "Social engineering / fraud",
+        "C": "O(log N)",
+        "D": "IP to MAC"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "albazzz",
+      "exam": "JFE301_ALBAZZZ_BANK300",
+      "explanation": {
+        "questionVi": "ARP phân giải gì?",
+        "optionsVi": {
+          "A": "Thiết bị quản lý",
+          "B": "Kỹ thuật xã hội / fraud",
+          "C": "O(log n)",
+          "D": "IP để MAC"
+        },
+        "answerDisplay": "D. IP để MAC",
+        "concept": "• ARP: IP address → MAC address trong LAN.",
+        "whyCorrect": "• D IP to MAC.\n• A device mgmt; B SE; C complexity — nhiễu.",
+        "intent": "• JFE datajfe/albazzz — concept + contrast.",
+        "whatIs": {
+          "A": "Device Management",
+          "B": "Social engineering / fraud",
+          "C": "O(log N)",
+          "D": "IP to MAC"
+        },
+        "whyWrong": {
+          "A": "• Là gì? Device Management.\n• Dùng để làm gì? OS.\n• Vì sao sai? Không phải ARP.",
+          "B": "• Là gì? Social engineering.\n• Dùng để làm gì? An ninh người.\n• Vì sao sai? Không phải ARP.",
+          "C": "• Là gì? O(log N).\n• Dùng để làm gì? Complexity.\n• Vì sao sai? Nhiễu."
+        },
+        "memoryTip": "• ARP: IP→MAC · DNS: name→IP."
+      }
+    }
+  ]
+}

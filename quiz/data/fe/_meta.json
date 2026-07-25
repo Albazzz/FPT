@@ -1,0 +1,30 @@
+{
+  "subject": "fe",
+  "upgradedAt": "2026-07-24T07:50:11.620Z",
+  "explainPass": "fe-full-sentence-v1-faithful+prefix-434+calc-steps+calc-steps+rule6.3-pdca+rule6-learning+rule6-learning+rule6-learning+rule6-learning+pass-v1+half-en+last3+qc-tools-pareto-v1+part1-test-quality-v1+part1-fuexam-quality-v1+part1-datajfe-albazzz-v1+part2-bank300-quality-v1+part3-books-quality-v1+restore-translations-8afbb3d",
+  "pass": "all-prm-jfe-v10-sentence",
+  "rebuilt": 726,
+  "fillerLeft": 0,
+  "bannedLeft": 0,
+  "imgAttachedAt": "2026-07-24T07:41:30.044Z",
+  "imgAttachedCount": 8,
+  "total": 726,
+  "tasks": [
+    "test",
+    "bank300",
+    "datajfe",
+    "albazzz",
+    "books",
+    "fuexam"
+  ],
+  "counts": {
+    "test": 67,
+    "bank300": 300,
+    "datajfe": 41,
+    "albazzz": 15,
+    "books": 249,
+    "fuexam": 54
+  },
+  "partsOf": "fe",
+  "note": "Edit {task}.json then run: node quiz/tools/merge_by_task.mjs fe"
+}

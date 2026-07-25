@@ -1,0 +1,2329 @@
+{
+  "subject": "fe",
+  "task": "fuexam",
+  "taskLabel": "Đề FE",
+  "count": 54,
+  "questions": [
+    {
+      "id": 409,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 1,
+      "question": "A check digit for a 4-digit number abcd can be calculated as follows: mod((a*4+b*3+c*2+d*1), 10). When the check digit for the 4-digit number “7b42” is equal to 6, which of the following is the correct number to be put in b? Here, mod (x, y) returns the remainder after “x” is divided by “y”",
+      "options": {
+        "A": "7",
+        "B": "6",
+        "C": "5",
+        "D": "8"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Chữ số kiểm tra cho số 4 chữ số abcd được tính như sau: mod((a*4+b*3+c*2+d*1), 10). Khi chữ số kiểm tra của “7b42” bằng 6, số nào sau đây là giá trị đúng cần đặt vào b? Ở đây mod(x, y) trả về phần dư khi x chia cho y.",
+        "optionsVi": {
+          "A": "7",
+          "B": "6",
+          "C": "5",
+          "D": "8"
+        },
+        "answerDisplay": "B. 6",
+        "concept": "• Check digit: mã dư theo trọng số cố định để phát hiện lỗi nhập; tìm ẩn số thỏa đồng dư.",
+        "whyCorrect": "• 7×4 + b×3 + 4×2 + 2×1 = 28 + 3b + 8 + 2 = 38 + 3b.\n• (38+3b) mod 10 = 6 → (8+3b) mod 10 = 6 → 3b ≡ −2 ≡ 8 (mod 10).\n• b=6: 3×6=18 ≡ 8 (mod 10). Kiểm: 38+18=56, 56 mod 10=6 ✓.",
+        "intent": "• J4 — check digit / modular arithmetic.",
+        "whatIs": {
+          "A": "b=7 → 3×7=21 ≡1; 8+1=9 ≠6.",
+          "B": "b=6 → thỏa đồng dư.",
+          "C": "b=5 → 15≡5; 8+5=13≡3 ≠6.",
+          "D": "b=8 → 24≡4; 8+4=12≡2 ≠6."
+        },
+        "whyWrong": {
+          "A": "• Là gì? b=7.\n• Dùng để làm gì? Thử trọng số.\n• Vì sao sai? 3×7≡1 → (8+1)≡9 ≠ check 6.",
+          "C": "• Là gì? b=5.\n• Dùng để làm gì? Thử.\n• Vì sao sai? 3×5≡5 → (8+5)≡3 ≠6.",
+          "D": "• Là gì? b=8.\n• Dùng để làm gì? Thử.\n• Vì sao sai? 3×8≡4 → (8+4)≡2 ≠6."
+        },
+        "memoryTip": "• Check digit: thay số → mod 10 khớp; thử b=6."
+      }
+    },
+    {
+      "id": 410,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 2,
+      "question": "Which of the following is an appropriate explanation of the spooling function?",
+      "options": {
+        "A": "The overall processing power of a system is enhanced by performing data transfer between the main storage and low-speed input/output devices via auxiliary storage devices.",
+        "B": "Execution of the programs is temporarily suspended, and control is transferred to the control program.",
+        "C": "If a CPU becomes idle because of the execution of input/output instructions while executing a certain task, the CPU is assigned to another task.",
+        "D": "The access time to auxiliary storage devices is reduced by providing a buffer pool consisting of multiple buffers and by increasing the probability of accessing buffers located in the main storage."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Đâu là giải thích spooling chức năng?",
+        "optionsVi": {
+          "A": "Tăng năng lực hệ thống bằng chuyển dữ liệu giữa bộ nhớ chính và I/O chậm qua bộ nhớ phụ (sai/không điển hình).",
+          "B": "Thực thi các chương trình temporarily tạm dừng, and kiểm soát transferred kiểm soát chương trình.",
+          "C": "CPU rỗi do I/O thì gán cho task khác (multiprogramming).",
+          "D": "Giảm thời gian truy cập bộ nhớ phụ bằng pool buffer, tăng xác suất truy cập buffer ở bộ nhớ chính."
+        },
+        "answerDisplay": "A. Tăng năng lực hệ thống bằng chuyển dữ liệu giữa bộ nhớ chính và I/O chậm qua bộ nhớ phụ (sai/không điển hình).",
+        "concept": "• Spooling (Simultaneous Peripheral Operations On-Line): ghi job/I/O ra đĩa phụ, thiết bị chậm đọc từ đĩa — tách CPU khỏi tốc độ I/O.",
+        "whyCorrect": "• A mô tả đúng: main memory ↔ slow I/O qua auxiliary (disk queue).\n• B giống interrupt/supervisor call, không phải spool.",
+        "intent": "• J1 — spooling.",
+        "whatIs": {
+          "A": "Spooling qua auxiliary storage.",
+          "B": "Suspend + control program — gần interrupt/OS trap.",
+          "C": "Mô tả khác (không phải spool chuẩn).",
+          "D": "Option khác đề."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Tạm dừng program, giao control program.\n• Dùng để làm gì? Gần cơ chế interrupt / privileged switch.\n• Vì sao sai? Spool là đệm I/O trên auxiliary storage, không phải mô tả này.",
+          "C": "• Là gì? If a CPU becomes idle because of the execution of input/output instructions while executing a certain task, the CPU is assigned to another task.\n• Dùng để làm gì? Đối chiếu định nghĩa spool.\n• Vì sao sai? Không mô tả chuyển I/O chậm qua auxiliary storage.",
+          "D": "• Là gì? The access time to auxiliary storage devices is reduced by providing a buffer pool consisting of multiple buffers and by increasing the probability of accessing buffers located in the main storage.\n• Dùng để làm gì? Đối chiếu định nghĩa spool.\n• Vì sao sai? Không phải spooling chuẩn FE."
+        },
+        "memoryTip": "• Spool = I/O chậm ↔ disk buffer, giải phóng CPU."
+      }
+    },
+    {
+      "id": 411,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 3,
+      "question": "Which of the following is a service delivery process that is defined, agreed, recorded, and managed in IT service management?",
+      "options": {
+        "A": "Schedule management",
+        "B": "Risk management",
+        "C": "Quality management",
+        "D": "Service level management"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Quy trình cung cấp dịch vụ được định nghĩa, thỏa thuận, ghi nhận và quản lý trong ITSM là gì?",
+        "optionsVi": {
+          "A": "Quản lý lịch biểu",
+          "B": "Quản lý rủi ro",
+          "C": "Quản lý chất lượng",
+          "D": "Quản lý mức dịch vụ (SLM)"
+        },
+        "answerDisplay": "D. Quản lý mức dịch vụ (SLM)",
+        "concept": "• Service Level Management (SLM): định nghĩa/thỏa thuận/ghi nhận/quản lý SLA — mức dịch vụ đã cam kết.",
+        "whyCorrect": "• «Defined, agreed, recorded, and managed» là ngôn ngữ chuẩn SLM/SLA.\n• Schedule/risk/quality là lĩnh vực khác (PM/chung).",
+        "intent": "• J5 — ITSM SLM.",
+        "memoryTip": "• SLA lifecycle → Service level management.",
+        "whatIs": {
+          "A": "Schedule — lịch dự án/tài nguyên.",
+          "B": "Risk — rủi ro.",
+          "C": "Quality — chất lượng sản phẩm/QT.",
+          "D": "SLM — quản lý mức dịch vụ (SLA)."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Schedule management.\n• Dùng để làm gì? Lịch.\n• Vì sao sai? Không phải quy trình SLA ITSM.",
+          "B": "• Là gì? Risk management.\n• Dùng để làm gì? Rủi ro.\n• Vì sao sai? Khác service level agreement lifecycle.",
+          "C": "• Là gì? Quality management.\n• Dùng để làm gì? CL.\n• Vì sao sai? Rộng hơn; đề nhấn defined/agreed/recorded service level → SLM."
+        }
+      }
+    },
+    {
+      "id": 412,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 4,
+      "question": "Which of the following is an appropriate description concerning the maturity level in the staged representation of CMMI?",
+      "options": {
+        "A": "At the “initial” level, processes are characterized for projects and are often reactive.",
+        "B": "At the “defined” level, processes are statistically measured and controlled.",
+        "C": "At the “managed” level, processes are documented and followed.",
+        "D": "At the “quantitatively managed” level, processes are continually improved."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây là mô tả phù hợp khi so sánh cách bảo vệ thẻ IC và thẻ từ chống làm giả?",
+        "optionsVi": {
+          "A": "CMMI Initial: quy trình mang tính dự án, thường phản ứng.",
+          "B": "CMMI Defined: quy trình đo/kiểm soát thống kê (mô tả có thể lệch level).",
+          "C": "CMMI Managed: quy trình có tài liệu và được tuân thủ.",
+          "D": "CMMI Quantitatively Managed: cải tiến liên tục (mô tả lệch — đó là Optimizing)."
+        },
+        "answerDisplay": "C. CMMI Managed: quy trình có tài liệu và được tuân thủ.",
+        "concept": "• CMMI staged (rút gọn học): 1 Initial ad-hoc · 2 Managed (project discipline, documented) · 3 Defined (org standard) · 4 Quantitatively managed · 5 Optimizing.\n• Bank chọn C cho «managed = documented and followed» — khớp level 2 trong nhiều tài liệu FE.",
+        "whyCorrect": "• Đáp án bank C: managed = documented & followed.\n• B nhầm: statistical control gần level 4 quant.\n• A gần đúng initial nhưng không phải đáp án.\n• D quant ≠ chỉ «innovative».",
+        "intent": "• J5 — CMMI levels.",
+        "whatIs": {
+          "A": "Initial — ad hoc/reactive (đúng hướng level 1, không phải ans).",
+          "B": "Defined — nhầm với quant measure.",
+          "C": "Managed — documented & followed (bank).",
+          "D": "Quantitatively managed — đo thống kê."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Initial = project/reactive.\n• Dùng để làm gì? Mô tả level 1.\n• Vì sao sai? Đề hỏi ans bank về managed (C), không chọn initial.",
+          "B": "• Là gì? Defined = statistically measured.\n• Dùng để làm gì? Sai: đo thống kê ≈ L4 quant.\n• Vì sao sai? Defined (L3) = chuẩn hóa tổ chức, chưa nhấn statistical control.",
+          "D": "• Là gì? Quantitatively managed…\n• Dùng để làm gì? Level 4.\n• Vì sao sai? Không khớp mô tả «documented and followed» của managed."
+        },
+        "memoryTip": "• CMMI: 1 ad-hoc · 2 managed · 3 defined · 4 quant · 5 optimizing."
+      }
+    },
+    {
+      "id": 413,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 5,
+      "question": "Which of the following is equivalent to the result of the arithmetic expression “753₈ – A6₁₆”? Here, each number is written in radix notation; that is, the radix is represented by a subscript following the number.",
+      "options": {
+        "A": "101001101₂",
+        "B": "501₈",
+        "C": "325₁₀",
+        "D": "135₁₆"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây tương đương kết quả biểu thức số học “753₈ – A6₁₆”? Ở đây mỗi số được viết theo ký hiệu cơ số (radix).",
+        "optionsVi": {
+          "A": "101001101₂",
+          "B": "501₈",
+          "C": "325₁₀",
+          "D": "135₁₆"
+        },
+        "answerDisplay": "C. 325₁₀",
+        "concept": "• Đổi cùng cơ số 10 rồi trừ; đối chiếu các biểu diễn.",
+        "whyCorrect": "• 753₈ = 7×64 + 5×8 + 3 = 448+40+3 = **491₁₀**.\n• A6₁₆ = 10×16 + 6 = **166₁₀**.\n• 491 − 166 = **325₁₀** → C.\n• Kiểm: 325₁₀ = 505₈ (không 501); 145₁₆ (không 135); binary khác 101001101₂(=333).",
+        "intent": "• J4 — radix conversion.",
+        "whatIs": {
+          "A": "101001101₂ = 333₁₀ — sai.",
+          "B": "501₈ = 321₁₀ — gần nhưng sai.",
+          "C": "325₁₀ — đúng hiệu.",
+          "D": "135₁₆ = 309₁₀ — sai."
+        },
+        "whyWrong": {
+          "A": "• Là gì? 101001101₂.\n• Dùng để làm gì? Binary.\n• Vì sao sai? Giá trị 333 ≠ 325.",
+          "B": "• Là gì? 501₈.\n• Dùng để làm gì? Octal.\n• Vì sao sai? 501₈=321₁0 ≠ 325.",
+          "D": "• Là gì? 135₁₆.\n• Dùng để làm gì? Hex.\n• Vì sao sai? 135₁₆=309 ≠ 325."
+        },
+        "memoryTip": "• Đổi hết sang 10 → trừ → đối chiếu option."
+      }
+    },
+    {
+      "id": 414,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 6,
+      "question": "Which of following statement is INCORRECT of cloud computing?",
+      "options": {
+        "A": "Companies can scale up to massive capacities in an instant without having to invest in new infrastructure, train new personnel, or license new software.",
+        "B": "Amazon Web Services (AWS) EC2 is a sample of cloud computing.",
+        "C": "One concern is if one piece of the software on a node fails, other pieces of the software on other nodes may fail.",
+        "D": "It evolves from grid computing and provides on-demand resource provisioning.",
+        "E": "It relies on sharing of resources to achieve coherence and economies of scale, similar to a utility (like the electricity grid) over a network."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây phát biểu INCORRECT cloud computing?",
+        "optionsVi": {
+          "A": "Mở rộng dung lượng tức thì, không đầu tư hạ tầng/nhân sự/license mới (cloud).",
+          "B": "AWS EC2 là ví dụ cloud computing.",
+          "C": "Lo ngại: lỗi phần mềm một node có thể kéo theo node khác.",
+          "D": "Tiến hóa từ grid, cấp tài nguyên theo nhu cầu (cloud).",
+          "E": "Chia sẻ tài nguyên, lợi thế quy mô kiểu utility trên mạng (cloud)."
+        },
+        "answerDisplay": "C. Lo ngại: lỗi phần mềm một node có thể kéo theo node khác.",
+        "concept": "• Cloud: on-demand, scale, multi-tenant… Single node process fail không phải đặc trưng «incorrect» duy nhất — bank đánh dấu C là câu SAI cần chọn.",
+        "whyCorrect": "• A: scale on-demand — đúng cloud.\n• B: EC2 là IaaS cloud — đúng.\n• C: phát biểu bank đánh dấu **sai** về cloud (chọn INCORRECT).\n• Đọc kỹ C: lo ngại fail một mảnh SW trên node… không phải định nghĩa/concern chuẩn đề — đáp án C.",
+        "intent": "• J5 — cloud (chọn câu sai).",
+        "whatIs": {
+          "A": "Elasticity/scale — đúng cloud.",
+          "B": "EC2 IaaS — đúng ví dụ.",
+          "C": "Phát biểu sai (ans).",
+          "D": "Option còn lại."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Scale up massive capacities…\n• Dùng để làm gì? Đúng lợi ích cloud.\n• Vì sao sai? Không phải câu INCORRECT.",
+          "B": "• Là gì? AWS EC2 sample.\n• Dùng để làm gì? Đúng ví dụ.\n• Vì sao sai? Không chọn khi đề hỏi sai.",
+          "D": "• Là gì? It evolves from grid computing and provides on-demand resource provisioning.\n• Dùng để làm gì? Đối chiếu.\n• Vì sao sai? Bank ans = C."
+        },
+        "memoryTip": "• Đề INCORRECT → chọn phát biểu sai (C)."
+      }
+    },
+    {
+      "id": 415,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 7,
+      "question": "Which of the following statements is TRUE about the critical path in PERT?",
+      "options": {
+        "A": "Activities on the critical path have slack time",
+        "B": "Critical path always has the least number of tasks",
+        "C": "Critical path can be ignored if resources are sufficient",
+        "D": "Delays in critical path activities will delay the entire project"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây các câu lệnh TRUE about đường găng PERT?",
+        "optionsVi": {
+          "A": "Các hoạt động đường găng have slack thời gian",
+          "B": "đường găng luôn has least number các tác vụ",
+          "C": "đường găng ignored if các tài nguyên sufficient",
+          "D": "Delays đường găng các hoạt động delay àn bộ dự án"
+        },
+        "answerDisplay": "D. Delays đường găng các hoạt động delay àn bộ dự án",
+        "concept": "• Critical path: chuỗi hoạt động slack ≈ 0; quyết định project duration. Trễ CP → trễ dự án.",
+        "whyCorrect": "• D đúng bản chất CP.\n• A sai: CP slack = 0 (không «có slack»).\n• B sai: CP là dài nhất về thời gian, không phải ít task.\n• C sai: không ignore CP.",
+        "intent": "• J5 — PERT critical path.",
+        "whatIs": {
+          "A": "Sai — CP không có float.",
+          "B": "Sai — không theo số task.",
+          "C": "Sai — không bỏ CP.",
+          "D": "Đúng — delay CP = delay project."
+        },
+        "whyWrong": {
+          "A": "• Là gì? CP có slack.\n• Dùng để làm gì? Sai định nghĩa.\n• Vì sao sai? Critical ≈ zero slack.",
+          "B": "• Là gì? Ít task nhất.\n• Dùng để làm gì? Sai.\n• Vì sao sai? CP = đường dài nhất (thời gian).",
+          "C": "• Là gì? Ignore nếu đủ resource.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Resource leveling khác; CP vẫn quyết định hoàn thành."
+        },
+        "memoryTip": "• Critical path: slack 0 · trễ CP = trễ dự án."
+      }
+    },
+    {
+      "id": 416,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 8,
+      "question": "Which of the following is the most appropriate indicator that is directly helpful in managing software quality in a system development project?",
+      "options": {
+        "A": "Number of completed work packages that compose a WBS",
+        "B": "Productivity of individual programming",
+        "C": "Program version and modification level",
+        "D": "Period of time required to adequately review each deliverable"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Chỉ số nào hữu ích trực tiếp để quản lý chất lượng phần mềm trong dự án?",
+        "optionsVi": {
+          "A": "Số work package hoàn thành tạo nên WBS.",
+          "B": "Productivity của từng programming",
+          "C": "Chương trình version and modification level",
+          "D": "Thời gian cần để review đủ từng deliverable."
+        },
+        "answerDisplay": "D. Thời gian cần để review đủ từng deliverable.",
+        "concept": "• Chất lượng SW gắn review/inspection đầy đủ deliverable — thời gian review adequate là chỉ số quản trị chất lượng trực tiếp.",
+        "whyCorrect": "• D liên hệ trực tiếp chất lượng (review).\n• A tiến độ phạm vi; B productivity; C configuration — gián tiếp hơn quality management theo stem «most appropriate… quality».",
+        "intent": "• J5 — software quality metrics.",
+        "whatIs": {
+          "A": "WBS completion — tiến độ scope.",
+          "B": "Productivity — hiệu suất code.",
+          "C": "Versioning — cấu hình.",
+          "D": "Review time adequacy — chất lượng."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Completed WBS packages.\n• Dùng để làm gì? Theo dõi tiến độ.\n• Vì sao sai? Không trực tiếp đo chất lượng review.",
+          "B": "• Là gì? Programming productivity.\n• Dùng để làm gì? Tốc độ code.\n• Vì sao sai? Nhanh ≠ chất lượng.",
+          "C": "• Là gì? Version/modification level.\n• Dùng để làm gì? Quản lý cấu hình.\n• Vì sao sai? Hữu ích CM, không phải chỉ số quality review chính."
+        },
+        "memoryTip": "• Quality ↔ review/inspection đủ · không chỉ velocity."
+      }
+    },
+    {
+      "id": 417,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 9,
+      "question": "The following statement is true/ false about CRM? Customer Relationship Management (CRM) is a cross-functional enterprise system driven by an integrated suite of software modules that supports the basic internal business processes of a company. CRM gives a company an integrated real-time view of its core business processes such as production, order processing, and inventory management, tied together by CRM applications software and a common database maintained by a database management system. CRM systems track business resources (such as cash, raw materials, and production capacity) and the status of commitments made by the business (such as customer orders, purchase orders, and employee payroll), no matter which department (manufacturing, purchasing, sales, accounting, and so on) has entered the data into the system. CRM facilitates information flow between all business functions inside the organization, and manages connections to outside stakeholders.",
+      "options": {
+        "A": "False",
+        "B": "True"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Phát biểu sau về CRM đúng hay sai? Quản lý quan hệ khách hàng (CRM) là hệ thống doanh nghiệp liên chức năng, được vận hành bởi một bộ module phần mềm tích hợp hỗ trợ các quy trình kinh doanh nội bộ cơ bản của công ty. CRM cho công ty cái nhìn tích hợp thời gian thực về các quy trình kinh doanh cốt lõi như sản xuất, xử lý đơn hàng và quản lý tồn kho, được gắn kết bởi phần mềm ứng dụng CRM và CSDL chung do hệ quản trị CSDL duy trì. Hệ CRM theo dõi tài nguyên kinh doanh (tiền mặt, nguyên liệu, năng lực sản xuất) và trạng thái các cam kết của doanh nghiệp (đơn khách, đơn mua, lương nhân viên), bất kể phòng ban nào (sản xuất, mua hàng, bán hàng, kế toán…) đã nhập dữ liệu vào hệ. CRM tạo thuận lợi cho luồng thông tin giữa mọi chức năng kinh doanh trong tổ chức và quản lý kết nối với các bên liên quan bên ngoài.",
+        "optionsVi": {
+          "A": "False",
+          "B": "True"
+        },
+        "answerDisplay": "A. False",
+        "concept": "• CRM (Customer Relationship Management): hệ hướng **khách hàng** — sales, marketing, service, pipeline, ticket CS…\n• Không phải suite back-office “basic internal” (sản xuất, tồn kho, cash, nguyên liệu, payroll) — đó là **ERP**.",
+        "whyCorrect": "• **Chỗ sai trong statement:**\n  – Gán CRM = hỗ trợ basic **internal** business processes (giống ERP).\n  – Nêu production / inventory / track cash–raw materials–production capacity / payroll cross-department.\n• **Vì sao sai:** các ý trên là mô tả **ERP** (Enterprise Resource Planning), không phải CRM.\n• CRM đúng nghĩa: quan hệ & tương tác **khách hàng** (customer-facing), không điều phối tài nguyên nội bộ.\n• → Phát biểu **sai** → đáp án **False**.",
+        "intent": "• J5c — True/False · phân biệt CRM vs ERP qua statement dài.",
+        "memoryTip": "• CRM = khách hàng (sales/marketing/service).\n• ERP = tài nguyên & quy trình nội bộ (SX, kho, tiền, payroll…).",
+        "whatIs": {
+          "A": "False — phát biểu gán mô tả ERP cho CRM nên sai.",
+          "B": "True — khẳng định statement (ở đây statement lại sai)."
+        },
+        "whyWrong": {
+          "B": "• Là gì? True = khẳng định toàn bộ đoạn mô tả CRM là đúng.\n• Dùng để làm gì? Chọn khi statement khớp bản chất khái niệm.\n• Vì sao sai? Đoạn đang mô tả ERP (internal resources) gán nhầm cho CRM — chọn True là bỏ sót chỗ tráo khái niệm."
+        }
+      }
+    },
+    {
+      "id": 418,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 10,
+      "question": "Given the following inventory data: Item Annual Value ($) P 4000 Q 2500 R 1500 S 800 T 200 Which statement is correct according to ABC analysis?",
+      "options": {
+        "A": "Items P, Q, R are Class A",
+        "B": "All items are equally important",
+        "C": "Items P and Q are Class A",
+        "D": "Item P alone is Class A"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Theo ABC analysis với giá trị tồn kho P–T như bảng, phát biểu nào đúng?",
+        "optionsVi": {
+          "A": "Items P, Q, R là class A",
+          "B": "Tất cả items là equally quan trọng",
+          "C": "Items P và Q là class A",
+          "D": "Item P alone là class A"
+        },
+        "answerDisplay": "C. Items P và Q là class A",
+        "concept": "• Phân tích ABC (kiểu Pareto): xếp mặt hàng theo giá trị tích lũy giảm dần; class A ≈ thiểu số mặt hàng đóng góp ~70–80% tổng giá trị.",
+        "whyCorrect": "• Tổng = 4000+2500+1500+800+200 = 9000.\n• P = 4000 (44,4%); P+Q = 6500 (≈72%) → thường gộp class A (vital few).\n• P+Q+R = 8000 (≈89%) đã quá rộng cho «A» theo ngưỡng vital few thông dụng → không chọn A.\n• Chỉ P (~44%) thường chưa đủ coi là cả nhóm A nếu đề theo chuẩn ~70–80%.",
+        "intent": "• J5 — ABC/Pareto: tính % tích lũy, chọn đúng tập class A.",
+        "whatIs": {
+          "A": "Gom P+Q+R làm class A (~89% giá trị) — thường quá rộng so ngưỡng A.",
+          "B": "Mọi item ngang nhau — phủ định ABC.",
+          "C": "P và Q = class A (~72% tích lũy) — khớp vital few.",
+          "D": "Chỉ P class A (~44%) — thường hẹp hơn nhóm A chuẩn."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Class A gồm P, Q và R.\n• Dùng để làm gì? Mở rộng nhóm ưu tiên cao nhất.\n• Vì sao sai? P+Q+R ≈ 89% — thường tràn sang B; class A chuẩn ~70–80% → chỉ P+Q.",
+          "B": "• Là gì? Mọi mặt hàng quan trọng như nhau.\n• Dùng để làm gì? Bỏ phân tầng ưu tiên.\n• Vì sao sai? ABC tồn tại đúng vì giá trị đóng góp khác nhau — không «equally important».",
+          "D": "• Là gì? Chỉ P là class A.\n• Dùng để làm gì? Thu hẹp tối đa nhóm then chốt.\n• Vì sao sai? P một mình ~44% thường chưa đủ ngưỡng tích lũy A; thêm Q mới ~72%."
+        },
+        "memoryTip": "• ABC: xếp giá trị ↓ · A ≈ tích lũy ~70–80% · P+Q = 6500/9000."
+      },
+      "meta": {
+        "img": "1.png",
+        "imageKey": 10,
+        "imgDir": "imge",
+        "imgLabel": "ABC inventory Class A (Q10)",
+        "imgSource": "user-upload-enhanced"
+      },
+      "img": "1.png"
+    },
+    {
+      "id": 419,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 11,
+      "question": "Which of the following is a role of the program register (i.e., program counter) of the CPU?",
+      "options": {
+        "A": "In order to read out an instruction, it contains the address where the next instruction is stored.",
+        "B": "In order to perform an arithmetic or logical operation, it contains data that is read out from the memory.",
+        "C": "In order to execute a conditional branch instruction, it contains the state of operation results.",
+        "D": "In order to decode an instruction, it contains the instruction that is read out from the memory."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Đâu là role chương trình thanh ghi (i.e., chương trình counter) CPU?",
+        "optionsVi": {
+          "A": "Giữ địa chỉ lệnh kế để nạp lệnh (program counter).",
+          "B": "Chứa dữ liệu đọc từ bộ nhớ để thực hiện phép toán số học/logic (thanh ghi dữ liệu).",
+          "C": "Chứa cờ/kết quả phép toán để nhánh có điều kiện (status/flag register).",
+          "D": "Chứa lệnh vừa đọc từ bộ nhớ để giải mã (instruction register)."
+        },
+        "answerDisplay": "A. Giữ địa chỉ lệnh kế để nạp lệnh (program counter).",
+        "concept": "• Program Counter (PC) / program register: giữ địa chỉ instruction sẽ fetch tiếp.",
+        "whyCorrect": "• A đúng định nghĩa PC.\n• B gần accumulator/MDR/data reg; C gần flags/status.",
+        "intent": "• J6 — CPU registers.",
+        "whatIs": {
+          "A": "PC — next instruction address.",
+          "B": "Data register / accumulator role.",
+          "C": "Status/flags cho branch.",
+          "D": "Khác."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Chứa data từ memory cho ALU.\n• Dùng để làm gì? MDR/ACC.\n• Vì sao sai? Không phải PC.",
+          "C": "• Là gì? Trạng thái conditional branch.\n• Dùng để làm gì? Flags/PSW.\n• Vì sao sai? Không phải PC.",
+          "D": "• Là gì? In order to decode an instruction, it contains the instruction that is read out from the memory.\n• Dùng để làm gì? Thanh ghi/khác.\n• Vì sao sai? Không phải PC giữ địa chỉ lệnh kế."
+        },
+        "memoryTip": "• PC = địa chỉ lệnh kế · IR = lệnh hiện tại · ACC = dữ liệu."
+      }
+    },
+    {
+      "id": 420,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 12,
+      "question": "What is the function point value of a program that has the functions and characteristics shown in the table below? Here, the correction coefficient of complexity is 0.75.",
+      "options": {
+        "A": "18",
+        "B": "24",
+        "C": "30",
+        "D": "32"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Giá trị function point của chương trình có các chức năng và đặc trưng như bảng dưới là bao nhiêu? Ở đây hệ số hiệu chỉnh là 0.85.",
+        "optionsVi": {
+          "A": "18",
+          "B": "24",
+          "C": "30",
+          "D": "32"
+        },
+        "answerDisplay": "A. 18",
+        "concept": "• FP = (Σ UFP theo loại EI/EO/EQ/ILF/EIF × weight) × CAF. CAF = 0,75 (complexity coefficient).",
+        "whyCorrect": "• Theo bảng đề (không nhúng trong text bank): UFP × 0,75 = **18** (đáp án A).\n• 24/30/32 thường là quên nhân 0,75 hoặc nhầm weight.\n• (Cần bảng số liệu đề gốc để tái tính từng dòng.)",
+        "intent": "• J5 — function point.",
+        "whatIs": {
+          "A": "18 = UFP×0.75 (bank).",
+          "B": "24 — có thể UFP chưa ×0.75 hoặc weight khác.",
+          "C": "30 — nhầm tổng.",
+          "D": "32 — nhầm tổng."
+        },
+        "whyWrong": {
+          "B": "• Là gì? 24.\n• Dùng để làm gì? Giá trị trung gian.\n• Vì sao sai? Không khớp UFP×0.75 = 18 theo bank.",
+          "C": "• Là gì? 30.\n• Dùng để làm gì? Tổng sai.\n• Vì sao sai? Không phải FP sau hiệu chỉnh.",
+          "D": "• Là gì? 32.\n• Dùng để làm gì? Tổng sai.\n• Vì sao sai? Không khớp đáp án 18."
+        },
+        "memoryTip": "• FP = UFP × hệ số phức tạp · đề này → 18."
+      },
+      "meta": {
+        "img": "2.png",
+        "imageKey": 12,
+        "imgDir": "imge",
+        "imgLabel": "Function point table (Q12)",
+        "imgSource": "user-upload-enhanced"
+      },
+      "img": "2.png"
+    },
+    {
+      "id": 421,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 13,
+      "question": "Which of the following is an appropriate technique that is used for implementing a queue as a data structure?",
+      "options": {
+        "A": "FIFO",
+        "B": "LIFO",
+        "C": "LFU",
+        "D": "LRU"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây là kỹ thuật phù hợp để cài đặt hàng đợi (queue) như một cấu trúc dữ liệu?",
+        "optionsVi": {
+          "A": "FIFO",
+          "B": "LIFO",
+          "C": "LFU",
+          "D": "LRU"
+        },
+        "answerDisplay": "A. FIFO",
+        "concept": "• Queue = FIFO (First-In First-Out). Stack = LIFO. LFU/LRU = cache replacement.",
+        "whyCorrect": "• Queue implementation semantics = FIFO.\n• LIFO = stack; LFU/LRU = page/cache.",
+        "intent": "• J4 — queue FIFO.",
+        "whatIs": {
+          "A": "FIFO — queue.",
+          "B": "LIFO — stack.",
+          "C": "LFU — least frequently used (cache).",
+          "D": "LRU — least recently used (cache)."
+        },
+        "whyWrong": {
+          "B": "• Là gì? LIFO.\n• Dùng để làm gì? Stack.\n• Vì sao sai? Không phải queue.",
+          "C": "• Là gì? LFU.\n• Dùng để làm gì? Thay thế cache theo tần suất.\n• Vì sao sai? Không cài queue.",
+          "D": "• Là gì? LRU.\n• Dùng để làm gì? Thay thế cache theo thời gian dùng.\n• Vì sao sai? Không cài queue."
+        },
+        "memoryTip": "• Queue=FIFO · Stack=LIFO · LRU/LFU=cache."
+      }
+    },
+    {
+      "id": 422,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 14,
+      "question": "There is a digital video recording system installed with four security cameras. In this system, the video data from each camera is captured at 30 frames per second with a resolution of 640 × 480 pixels and a color depth of 16 bits per pixel, and then it is stored in the hard disk drive. Which of the following is the approximate storage capacity that is required for recording all video data for one minute? Here, 1 MB is 10^6 bytes, and 1 GB is 10^9 bytes.",
+      "options": {
+        "A": "74 MB",
+        "B": "4.5 GB",
+        "C": "19 MB",
+        "D": "1.2 GB"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Có hệ ghi hình số lắp bốn camera an ninh. Trong hệ này, dữ liệu video mỗi camera được thu ở 1 Mbps và ghi 24 giờ/ngày. Cần bao nhiêu Gbyte dung lượng lưu cho một ngày ghi của tất cả camera? Ở đây 1 Gbyte = 10^9 byte, 1 Mbit = 10^6 bit.",
+        "optionsVi": {
+          "A": "74 MB",
+          "B": "4.5 GB",
+          "C": "19 MB",
+          "D": "1.2 GB"
+        },
+        "answerDisplay": "B. 4.5 GB",
+        "concept": "• Dung lượng ≈ cameras × fps × width × height × color_depth_bits × time / 8. Cần đủ tham số đề (thời gian, bit/pixel, nén?).",
+        "whyCorrect": "• Theo tham số đề FE đầy đủ (thường có thời lượng + bit/pixel), kết quả bank **4.5 GB**.\n• A/C quá nhỏ (thiếu nhân camera/time/bit); D 1.2GB là nhầm hệ số.",
+        "intent": "• J4 — data volume calculation.",
+        "whatIs": {
+          "A": "74 MB — thiếu hệ số.",
+          "B": "4.5 GB — bank.",
+          "C": "19 MB — thiếu.",
+          "D": "1.2 GB — nhầm."
+        },
+        "whyWrong": {
+          "A": "• Là gì? 74 MB.\n• Dùng để làm gì? Quá nhỏ.\n• Vì sao sai? Thiếu nhân camera/thời gian/bit.",
+          "C": "• Là gì? 19 MB.\n• Dùng để làm gì? Quá nhỏ.\n• Vì sao sai? Không đủ raw volume.",
+          "D": "• Là gì? 1.2 GB.\n• Dùng để làm gì? Sai hệ số.\n• Vì sao sai? Bank = 4.5 GB."
+        },
+        "memoryTip": "• Volume ≈ N×fps×W×H×bits×t / 8 · đề này → 4.5GB."
+      },
+      "_pilotFixed": "2026-07-23-v1"
+    },
+    {
+      "id": 423,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 15,
+      "question": "Which of the following is an appropriate combination of the fundamental object-oriented programming concepts?",
+      "options": {
+        "A": "Abstraction, encapsulation, inheritance, polymorphism",
+        "B": "Virtualization, structuring, projection, class",
+        "C": "Materialization, structuring, continuity, class",
+        "D": "Normalization, encapsulation, division, class"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây là tổ hợp phù hợp các khái niệm lập trình hướng đối tượng cơ bản?",
+        "optionsVi": {
+          "A": "Trừu tượng hóa, đóng gói, kế thừa, đa hình",
+          "B": "Ảo hóa, cấu trúc, projection, class (không phải OOP chuẩn)",
+          "C": "Materialization, cấu trúc, continuity, class (sai OOP)",
+          "D": "Chuẩn hóa, encapsulation, division, class"
+        },
+        "answerDisplay": "A. Trừu tượng hóa, đóng gói, kế thừa, đa hình",
+        "concept": "• 4 trụ OOP kinh điển: abstraction, encapsulation, inheritance, polymorphism.",
+        "whyCorrect": "• A là bộ chuẩn SG.\n• B/C/D trộn thuật ngữ lạ/DB (normalization).",
+        "intent": "• J6 — OOP pillars.",
+        "whatIs": {
+          "A": "4 trụ OOP.",
+          "B": "Virtualization… — không bộ OOP chuẩn.",
+          "C": "Materialization… — không chuẩn.",
+          "D": "Normalization — DB, không OOP core set."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Virtualization, structuring…\n• Dùng để làm gì? Trộn khái niệm.\n• Vì sao sai? Không phải 4 trụ OOP.",
+          "C": "• Là gì? Materialization…\n• Dùng để làm gì? Lạ.\n• Vì sao sai? Không phải OOP fundamentals.",
+          "D": "• Là gì? Normalization…\n• Dùng để làm gì? CSDL.\n• Vì sao sai? Không thay abstraction/inheritance/polymorphism set."
+        },
+        "memoryTip": "• OOP: Abstract · Encapsulate · Inherit · Polymorph."
+      }
+    },
+    {
+      "id": 424,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 16,
+      "question": "A systems design is represented using several diagrams. When a system analyst wants to confirm the design information such as the relationships among functions and the interface among modules in a hierarchical manner, which of the following is the most appropriate diagram that should be inspected by the analyst?",
+      "options": {
+        "A": "WBS diagram",
+        "B": "Data flow diagram",
+        "C": "Entity-relationship diagram",
+        "D": "State transition diagram"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Thiết kế hệ thống được biểu diễn bằng nhiều sơ đồ. Khi phân tích viên hệ thống muốn xác nhận thông tin thiết kế như quan hệ giữa các chức năng và giao diện giữa các module theo kiểu phân cấp, sơ đồ nào sau đây là phù hợp nhất để phân tích viên xem xét?",
+        "optionsVi": {
+          "A": "WBS diagram",
+          "B": "Dữ liệu flow diagram",
+          "C": "Entity-relationship diagram",
+          "D": "Trạng thái transition diagram"
+        },
+        "answerDisplay": "B. Dữ liệu flow diagram",
+        "concept": "• DFD: luồng dữ liệu giữa process, kho, external entity — quan hệ chức năng/interface logic.\n• (Một số tài liệu dùng structure chart cho hierarchical modules; bank chọn DFD.)",
+        "whyCorrect": "• Bank B: DFD cho relationships among functions & interfaces.\n• WBS = work breakdown PM; ER = data model; State = hành vi trạng thái.",
+        "intent": "• J5/J8 — design diagrams.",
+        "whatIs": {
+          "A": "WBS — phân rã công việc dự án.",
+          "B": "DFD — luồng dữ liệu/chức năng.",
+          "C": "ER — thực thể–quan hệ dữ liệu.",
+          "D": "State transition — trạng thái đối tượng."
+        },
+        "whyWrong": {
+          "A": "• Là gì? WBS.\n• Dùng để làm gì? Phạm vi/công việc PM.\n• Vì sao sai? Không mô hình interface module hệ thống.",
+          "C": "• Là gì? ER diagram.\n• Dùng để làm gì? Mô hình dữ liệu.\n• Vì sao sai? Không hierarchical functions/interfaces.",
+          "D": "• Là gì? State transition.\n• Dùng để làm gì? Hành vi state.\n• Vì sao sai? Không quan hệ chức năng phân cấp."
+        },
+        "memoryTip": "• Functions + data flow → DFD · Data structure → ER · States → STD."
+      }
+    },
+    {
+      "id": 425,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 17,
+      "question": "Which of the following is a protocol for e-mail on the Internet that allows an e-mail client to access e-mail on a remote mail server?",
+      "options": {
+        "A": "MIME",
+        "B": "SMTP",
+        "C": "POP3",
+        "D": "IMAP"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây là giao thức e-mail trên Internet cho phép client truy cập thư trên mail server từ xa?",
+        "optionsVi": {
+          "A": "MIME",
+          "B": "SMTP",
+          "C": "POP3",
+          "D": "IMAP"
+        },
+        "answerDisplay": "D. IMAP",
+        "concept": "• IMAP: truy cập/quản lý mail trên server (folder, multi-device). POP3 tải về local. SMTP gửi. MIME mã hóa nội dung đa kiểu.",
+        "whyCorrect": "• «Access e-mail on a remote mail server» khớp IMAP (và POP; bank D IMAP — phù hợp access-on-server).\n• SMTP = send; MIME = content format.",
+        "intent": "• J2 — mail protocols.",
+        "whatIs": {
+          "A": "MIME — định dạng nội dung đa phần.",
+          "B": "SMTP — gửi mail.",
+          "C": "POP3 — tải về client.",
+          "D": "IMAP — truy cập trên server."
+        },
+        "whyWrong": {
+          "A": "• Là gì? MIME.\n• Dùng để làm gì? Content-Type multipart.\n• Vì sao sai? Không phải protocol truy cập mailbox.",
+          "B": "• Là gì? SMTP.\n• Dùng để làm gì? Submission/transfer gửi.\n• Vì sao sai? Không đọc mailbox remote kiểu client access.",
+          "C": "• Là gì? POP3.\n• Dùng để làm gì? Download mail về máy.\n• Vì sao sai? Cũng access server nhưng bank chọn IMAP (giữ trên server/multi-client)."
+        },
+        "memoryTip": "• SMTP gửi · POP tải · IMAP quản trên server · MIME nội dung."
+      }
+    },
+    {
+      "id": 426,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 18,
+      "question": "Determine which type of network class and default subnet mask of this IP address belong to? IP version 4 = 216.58.221.78",
+      "options": {
+        "A": "Class C, and default subnet mask is 255.255.255.0",
+        "B": "Class A, and default subnet mask is 255.0.0.0",
+        "C": "It's an incorrect IP address",
+        "D": "Class B, and default subnet mask is 255.255.0.0"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "IP 216.58.221.78 thuộc lớp mạng nào và subnet mask mặc định?",
+        "optionsVi": {
+          "A": "Class C, and default mặt nạ mạng con 255.255.255.0",
+          "B": "Class A, and default mặt nạ mạng con 255.0.0.0",
+          "C": "'s incorrect đị chỉ IP",
+          "D": "Class B, and default mặt nạ mạng con 255.255.0.0"
+        },
+        "answerDisplay": "A. Class C, and default mặt nạ mạng con 255.255.255.0",
+        "concept": "• Classful: A 1–126 · B 128–191 · C 192–223. 216 ∈ 192–223 → Class C · /24 = 255.255.255.0.",
+        "whyCorrect": "• 216 → Class C → default /24.\n• Không phải A/B; IP hợp lệ.",
+        "intent": "• J2 — IP classful.",
+        "whatIs": {
+          "A": "Class C /24.",
+          "B": "Class A — first octet 1–126.",
+          "C": "Invalid — sai.",
+          "D": "Class B — 128–191."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Class A.\n• Dùng để làm gì? 1–126.\n• Vì sao sai? 216 > 126.",
+          "C": "• Là gì? Incorrect IP.\n• Dùng để làm gì? —\n• Vì sao sai? 216.58.221.78 hợp lệ.",
+          "D": "• Là gì? Class B.\n• Dùng để làm gì? 128–191.\n• Vì sao sai? 216 ≥ 192 → C."
+        },
+        "memoryTip": "• C: 192–223 · mask 255.255.255.0."
+      }
+    },
+    {
+      "id": 427,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 19,
+      "question": "In a certain project, each of the 6 employee members needs to communicate on a one-to-one basis. What is the minimum number of paths needed to communicate in such a way?",
+      "options": {
+        "A": "15",
+        "B": "9",
+        "C": "6",
+        "D": "30"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Trong một dự án, mỗi người trong 6 nhân viên cần giao tiếp theo kiểu một-một. Số đường giao tiếp tối thiểu cần giữa họ là bao nhiêu?",
+        "optionsVi": {
+          "A": "15",
+          "B": "9",
+          "C": "6",
+          "D": "30"
+        },
+        "answerDisplay": "A. 15",
+        "concept": "• Communication channels n người 1-1: C(n,2) = n(n−1)/2.",
+        "whyCorrect": "• C(6,2) = 6×5/2 = **15**.\n• 30 = n(n−1) quên /2; 6 = chỉ n; 9 sai.",
+        "intent": "• J5 — communication paths.",
+        "whatIs": {
+          "A": "15 = C(6,2).",
+          "B": "9 — sai.",
+          "C": "6 = n.",
+          "D": "30 = n(n−1)."
+        },
+        "whyWrong": {
+          "B": "• Là gì? 9.\n• Dùng để làm gì? Sai công thức.\n• Vì sao sai? Đúng 15.",
+          "C": "• Là gì? 6.\n• Dùng để làm gì? Chỉ số người.\n• Vì sao sai? Số cạnh graph đầy đủ K6 = 15.",
+          "D": "• Là gì? 30.\n• Dùng để làm gì? n(n−1).\n• Vì sao sai? Quên chia 2 (mỗi cạnh 1 đường)."
+        },
+        "memoryTip": "• Đường giao tiếp = n(n−1)/2."
+      }
+    },
+    {
+      "id": 428,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 20,
+      "question": "The syntax rules of the field identifier \"field ID\" are represented in BNF notation as shown below. When each ID is defined as an arbitrary sequence of letters and/or digits, which of the following should be inserted into the blank A? <field ID>::= <ID> | <field ID>.<ID> <ID>::= A <letter>::= a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z <digit>::= 0|1|2|3|4|5|6|7|8|9 a) <ID>.<letter>|<ID>.<digit> b) <ID><letter>|<ID><digit>|<ID>.<ID> c) <letter>|<digit>|<ID><letter>|<ID><digit> d) <letter><ID>|<digit><ID>",
+      "options": {
+        "A": "Choose b",
+        "B": "Choose c",
+        "C": "Choose d",
+        "D": "Choose a"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Quy tắc cú pháp của định danh trường \"field ID\" được biểu diễn bằng ký hiệu BNF như dưới đây. Khi mỗi ID được định nghĩa là dãy chữ và/hoặc chữ số bất kỳ, cái nào sau đây nên điền vào chỗ trống A? <field ID>::= <ID> | <field ID>.<ID> <ID>::= A <letter>::= a|b|c|…|z <digit>::= 0|1|…|9 a) <ID>.<letter>|<ID>.<digit> b) <ID><letter>|<ID><digit>|<ID>.<ID> c) <letter>|<digit>|<ID><letter>|<ID><digit> d) <letter><ID>|<digit><ID>",
+        "optionsVi": {
+          "A": "Choose b",
+          "B": "Choose c",
+          "C": "Choose d",
+          "D": "Choose một"
+        },
+        "answerDisplay": "B. Choose c",
+        "concept": "• BNF đệ quy cho identifier: ID ::= letter | digit | ID letter | ID digit (sinh chuỗi chữ/số arbitrary).",
+        "whyCorrect": "• Theo đề BNF (trong stem đầy đủ): chỗ trống A cần production cho phép ID mở rộng bằng letter/digit — **phương án c** trong đề.\n• Bank map: B = Choose c.",
+        "intent": "• J4/J6 — BNF.",
+        "whatIs": {
+          "A": "Chọn production b — sai cấu trúc.",
+          "B": "Chọn production c — đúng bank.",
+          "C": "Chọn d — sai.",
+          "D": "Chọn a — sai."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Choose b.\n• Dùng để làm gì? Production b.\n• Vì sao sai? Không sinh đúng arbitrary letter/digit sequence theo rule đề.",
+          "C": "• Là gì? Choose d.\n• Dùng để làm gì? Production d.\n• Vì sao sai? Sai dạng BNF so đáp án.",
+          "D": "• Là gì? Choose a.\n• Dùng để làm gì? Production a.\n• Vì sao sai? Sai dạng BNF so đáp án."
+        },
+        "memoryTip": "• ID đệ quy: base letter/digit + ID·letter|ID·digit → ans «c»."
+      },
+      "_pilotFixed": "2026-07-23-v1",
+      "meta": {
+        "img": "3.png",
+        "imageKey": 20,
+        "imgDir": "imge",
+        "imgLabel": "BNF field ID syntax",
+        "imgSource": "user-upload-enhanced"
+      },
+      "img": "3.png"
+    },
+    {
+      "id": 429,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 21,
+      "question": "A GUI screen contains a candidate list from which a user can select an item. Which of the following is an appropriate case to adopt this data entry method?",
+      "options": {
+        "A": "Input data needs to be edited.",
+        "B": "Candidates consist of many different values.",
+        "C": "Data, like a sentence, that does not have a constant value needs to be entered.",
+        "D": "Candidates consist of only a few predetermined values."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "GUI có danh sách ứng viên để chọn. Trường hợp nào nên dùng cách nhập này?",
+        "optionsVi": {
+          "A": "Input dữ liệu needs edited.",
+          "B": "Candidates consist các... khác nhau values.",
+          "C": "Dữ liệu kiểu câu, không giá trị cố định — cần nhập tự do.",
+          "D": "Ứng viên chỉ gồm vài giá trị định sẵn (chọn từ list)."
+        },
+        "answerDisplay": "D. Ứng viên chỉ gồm vài giá trị định sẵn (chọn từ list).",
+        "concept": "• List/combo cố định: ít giá trị biết trước → giảm lỗi gõ, nhanh chọn. Nhiều giá trị/free text → search/text field.",
+        "whyCorrect": "• D đúng HCI: few predetermined values → list.\n• A cần editor; B many values → không list thuần; C free sentence → text.",
+        "intent": "• J8 — GUI input methods.",
+        "whatIs": {
+          "A": "Cần edit — text field.",
+          "B": "Nhiều giá trị — search/autocomplete.",
+          "C": "Câu tự do — textarea.",
+          "D": "Ít giá trị cố định — list."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Cần edit data.\n• Dùng để làm gì? Text editing.\n• Vì sao sai? List chọn sẵn kém linh hoạt edit.",
+          "B": "• Là gì? Rất nhiều candidates.\n• Dùng để làm gì? List dài khó dùng.\n• Vì sao sai? Không appropriate thuần list.",
+          "C": "• Là gì? Sentence free text.\n• Dùng để làm gì? Không constant value.\n• Vì sao sai? Cần gõ tự do, không list."
+        },
+        "memoryTip": "• Ít giá trị cố định → list · Free text → ô nhập."
+      }
+    },
+    {
+      "id": 430,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 22,
+      "question": "When the binary tree shown in the figure below is stored in a one-dimensional array A under the following conditions, what is the array index of the node \"T\"?",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "3",
+        "D": "10"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cây nhị phân lưu mảng 1 chiều theo quy tắc. Nút giá trị 20 ở chỉ số nào?",
+        "optionsVi": {
+          "A": "6",
+          "B": "7",
+          "C": "3",
+          "D": "10"
+        },
+        "answerDisplay": "B. 7",
+        "concept": "• Lưu binary tree mảng: root index 1 (hoặc 0); left=2i, right=2i+1 (1-based phổ biến đề FE).",
+        "whyCorrect": "• Theo figure đề + quy tắc index bank → nút **T** ở index **7**.\n• (Không có figure trong JSON — bám đáp án B; khi có hình: đếm level-order.)",
+        "intent": "• J4 — binary tree array indexing.",
+        "whatIs": {
+          "A": "6 — nhầm nút kề.",
+          "B": "7 — index T (bank).",
+          "C": "3 — nhầm level trên.",
+          "D": "10 — ngoài/nhầm."
+        },
+        "whyWrong": {
+          "A": "• Là gì? 6.\n• Dùng để làm gì? Index khác.\n• Vì sao sai? Không phải vị trí T theo figure+rule.",
+          "C": "• Là gì? 3.\n• Dùng để làm gì? Gần root.\n• Vì sao sai? T không ở index 3.",
+          "D": "• Là gì? 10.\n• Dùng để làm gì? Xa.\n• Vì sao sai? Sai mapping."
+        },
+        "memoryTip": "• Tree→array: level order · left=2i · right=2i+1 · T→7."
+      },
+      "meta": {
+        "img": "4.png",
+        "imageKey": 22,
+        "imgDir": "imge",
+        "imgLabel": "Binary tree array index T",
+        "imgSource": "user-upload-enhanced"
+      },
+      "img": "4.png"
+    },
+    {
+      "id": 431,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 23,
+      "question": "Which of the following is the appropriate combination of 4 color inks or toners for a full-color printer?",
+      "options": {
+        "A": "Cyan, Magenta, Yellow, and Black",
+        "B": "Aqua, Orange, Brown, and Black",
+        "C": "Red, Green, Blue, and Black",
+        "D": "Red, Green, Blue, and Gray"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Tổ hợp 4 mực/toner in màu đầy đủ (CMYK) nào đúng?",
+        "optionsVi": {
+          "A": "Cyan, Magenta, Yellow, và Black",
+          "B": "Aqua, Orange, Brown, và Black",
+          "C": "Red, Green, Blue, và Black",
+          "D": "Red, Green, Blue, và Gray"
+        },
+        "answerDisplay": "A. Cyan, Magenta, Yellow, và Black",
+        "concept": "• In màu subtractive: **CMYK** (Cyan, Magenta, Yellow, Key/Black).",
+        "whyCorrect": "• A = CMYK chuẩn.\n• RGB là additive (màn hình), không phải 4 mực in chuẩn.",
+        "intent": "• J6 — color models print.",
+        "whatIs": {
+          "A": "CMYK.",
+          "B": "Màu không chuẩn ink set.",
+          "C": "RGB+K — màn hình+đen, không CMY.",
+          "D": "RGB+Gray — không CMYK."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Aqua/Orange…\n• Dùng để làm gì? Không bộ CMYK.\n• Vì sao sai? Không phải 4 mực full-color chuẩn.",
+          "C": "• Là gì? RGB+Black.\n• Dùng để làm gì? RGB additive display.\n• Vì sao sai? In offset/laser dùng CMYK.",
+          "D": "• Là gì? RGB+Gray.\n• Dùng để làm gì? Sai model in.\n• Vì sao sai? Thiếu CMY."
+        },
+        "memoryTip": "• Màn hình RGB · In CMYK."
+      }
+    },
+    {
+      "id": 432,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 24,
+      "question": "Which of the following is a chart or a diagram that is often used in quality control to rank issues or problems in descending order of frequency?",
+      "options": {
+        "A": "Pareto chart",
+        "B": "Cause-and-effect diagram",
+        "C": "Control chart",
+        "D": "Scatter diagram"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây là biểu đồ thường dùng trong kiểm soát chất lượng để xếp vấn đề theo tần suất giảm dần?",
+        "optionsVi": {
+          "A": "Biểu đồ Pareto",
+          "B": "Cause-và-effect diagram",
+          "C": "Biểu đồ kiểm soát",
+          "D": "Scatter diagram"
+        },
+        "answerDisplay": "A. Biểu đồ Pareto",
+        "concept": "• Pareto chart: biểu đồ cột (thường kết hợp đường lũy tích) xếp vấn đề/nguyên nhân theo tần suất hoặc tác động giảm dần — làm nổi «vital few» (80/20) trong QC.",
+        "whyCorrect": "• Đề hỏi đúng một việc: **xếp vấn đề theo tần suất giảm dần**.\n• Pareto chart làm đúng việc đó: cột cao → thấp theo số lần xuất hiện, giúp ưu tiên nguyên nhân then chốt.\n• Các biểu đồ kia thuộc bộ QC tools nhưng **mục đích khác** (nguyên nhân / ổn định quy trình / tương quan).",
+        "intent": "• J5/QC tools — phân biệt Pareto · Fishbone · Control · Scatter.",
+        "whatIs": {
+          "A": "Pareto chart — xếp hạng theo tần suất/tác động + lũy tích (80/20).",
+          "B": "Cause-and-effect (Ishikawa) — xương cá, nhóm yếu tố gây ra một kết quả.",
+          "C": "Control chart — theo dõi biến động quy trình theo thời gian so với control limit.",
+          "D": "Scatter diagram — quan hệ (tương quan) giữa hai biến số."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Biểu đồ nguyên nhân–kết quả / Ishikawa (xương cá).\n• Dùng để làm gì? Phân tích và nhóm các nguyên nhân gốc có thể gây ra một vấn đề.\n• Vì sao sai? Đề hỏi **xếp theo tần suất**. Fishbone tìm/cấu trúc nguyên nhân, không xếp hạng số lần xuất hiện.",
+          "C": "• Là gì? Biểu đồ kiểm soát (control chart).\n• Dùng để làm gì? Theo dõi ổn định quy trình theo thời gian (trong/ngoài control limit).\n• Vì sao sai? Không dùng để xếp danh sách vấn đề theo tần suất giảm dần.",
+          "D": "• Là gì? Biểu đồ phân tán (scatter).\n• Dùng để làm gì? Kiểm tra mối tương quan giữa hai đại lượng.\n• Vì sao sai? Thể hiện quan hệ X–Y, không xếp hạng vấn đề theo tần suất."
+        },
+        "memoryTip": "• Pareto = xếp tần suất (80/20) · Fishbone = tìm nguyên nhân · Control = theo dõi quy trình · Scatter = tương quan."
+      }
+    },
+    {
+      "id": 433,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 25,
+      "question": "Which of the following is the appropriate flow of execution of SQL statements?",
+      "options": {
+        "A": "Code generation => Optimization => Decomposition => Execution",
+        "B": "Decomposition => Optimization => Code generation => Execution",
+        "C": "Optimization => Decomposition => Code generation => Execution",
+        "D": "Decomposition => Code generation => Optimization => Execution"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Đâu là phù hợp flow thực thi SQL các câu lệnh?",
+        "optionsVi": {
+          "A": "Sinh mã → Tối ưu → Phân rã → Thực thi (thứ tự sai điển hình).",
+          "B": "Phân rã → Tối ưu → Sinh mã → Thực thi.",
+          "C": "Tối ưu → Phân rã → Sinh mã → Thực thi (sai thứ tự).",
+          "D": "Phân rã → Sinh mã → Tối ưu → Thực thi."
+        },
+        "answerDisplay": "B. Phân rã → Tối ưu → Sinh mã → Thực thi.",
+        "concept": "• Thao tác/giao dịch trên cơ sở dữ liệu quan hệ.",
+        "whyCorrect": "• Thao tác/giao dịch trên cơ sở dữ liệu quan hệ.\n• Lưu trữ và truy vấn dữ liệu bền vững; không thuộc widget tree UI.",
+        "intent": "• Thao tác/giao dịch trên cơ sở dữ liệu quan hệ.\n• Lưu trữ và truy vấn dữ liệu bền vững; không thuộc widget tree UI.",
+        "whatIs": {
+          "A": "Mô hình OSI 7 tầng.",
+          "B": "Mô hình OSI 7 tầng.",
+          "C": "Mô hình OSI 7 tầng.",
+          "D": "Mô hình OSI 7 tầng."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Mô hình OSI 7 tầng.\n• Dùng để làm gì? Phân lớp chức năng mạng.\n• Vì sao sai? «Code generation => Optimization => Decomposition => E…» (A) không thỏa: đúng lệnh/khái niệm CSDL.",
+          "C": "• Là gì? Mô hình OSI 7 tầng.\n• Dùng để làm gì? Phân lớp chức năng mạng.\n• Vì sao sai? «Optimization => Decomposition => Code generation => E…» (C) không thỏa: đúng lệnh/khái niệm CSDL.",
+          "D": "• Là gì? Mô hình OSI 7 tầng.\n• Dùng để làm gì? Phân lớp chức năng mạng.\n• Vì sao sai? «Decomposition => Code generation => Optimization => E…» (D) không thỏa: đúng lệnh/khái niệm CSDL."
+        }
+      },
+      "_pilotFixed": "2026-07-23-v1"
+    },
+    {
+      "id": 434,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 26,
+      "question": "When the expression (A - 2 x (B + C) - D x E) x F in conventional infix notation is converted to the prefix expression, which of the following represents the resulting expression?",
+      "options": {
+        "A": "A2BC + x - DE x - F x",
+        "B": "A2BC + x - DE x F - x",
+        "C": "x - - A x 2 x B + CDEF",
+        "D": "x - - A x 2 + BC x DEF"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Khi biểu thức (A - 2 x (B + C) - D x E) x F ở ký pháp trung tố (infix) thông thường được đổi sang biểu thức tiền tố (prefix), cái nào sau đây là biểu thức kết quả?",
+        "optionsVi": {
+          "A": "A2BC + x - DE x - F x",
+          "B": "A2BC + x - DE x F - x",
+          "C": "x - - A x 2 x B + CDEF",
+          "D": "x - - A x 2 + BC x DEF"
+        },
+        "answerDisplay": "D. x - - A x 2 + BC x DEF",
+        "concept": "• Prefix (Polish): toán tử trước toán hạng; giữ thứ tự ưu tiên × trước +/−; ngoặc trong trước.",
+        "whyCorrect": "• Trong: (B+C) → `+BC`.\n• 2×(B+C) → `×2+BC`.\n• D×E → `×DE`.\n• A − 2(B+C) → `−A×2+BC` rồi − (D×E) → `−−A×2+BC×DE`.\n• ×F ngoài → `×−−A×2+BC×DEF` = option **D** (ký hiệu x cho ×).\n• Giữ nguyên chuỗi option, không word-map.",
+        "intent": "• J4 — infix→prefix steps.",
+        "whatIs": {
+          "A": "Hậu/lệch toán tử F.",
+          "B": "Sai vị trí F/−.",
+          "C": "×2×B+C sai ngoặc (B+C).",
+          "D": "Prefix đúng."
+        },
+        "whyWrong": {
+          "A": "• Là gì? …F x cuối kiểu khác.\n• Dùng để làm gì? Sai cấu trúc prefix ngoài.\n• Vì sao sai? F phải là toán tử × ngoài cùng dạng D.",
+          "B": "• Là gì? …F - x\n• Dùng để làm gì? Sai thứ tự toán tử.\n• Vì sao sai? Không khớp ×(… )F.",
+          "C": "• Là gì? x2xB+C…\n• Dùng để làm gì? Nhân 2×B rồi +C.\n• Vì sao sai? Mất ngoặc (B+C) → phải ×2+BC."
+        },
+        "memoryTip": "• Prefix: op trước · (B+C)→+BC · ×2+BC · × ngoài F."
+      }
+    },
+    {
+      "id": 435,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 27,
+      "question": "Multiple directories having the names A and B are managed in the structure shown below. When the current directory is changed in order of \\BA ->..\\B -> \\A, which of the following is the resulting current directory? Here, directories are specified as follows: [Methods to specify directories] (1) A directory is referenced as \\directory name\\directory name, where the directories on the path are listed and separated with \\ (backslash) in sequence, followed by \\ and the directory name. (2) The current directory is represented by. (one period). (3) The directory one level above is represented by.. (two periods). (4) When a reference begins with \\, it is assumed that the root directory is omitted from the beginning of the reference. (5) When a reference does not start with \\,.., or., it is assumed that \\, which means that the reference is under the current directory, is omitted from the beginning of the reference.",
+      "options": {
+        "A": "A",
+        "B": "\\A",
+        "C": "\\B\\A",
+        "D": "\\BA"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Nhiều thư mục mang tên A và B được quản lý theo cấu trúc như hình dưới. Khi thư mục hiện tại được đổi theo thứ tự \\BA → ..\\B → \\A, thư mục hiện tại kết quả là gì? Ở đây thư mục được chỉ định như sau: [Cách chỉ định thư mục] (1) Thư mục được tham chiếu dạng \\tên_thư_mục\\tên_thư_mục, liệt kê các thư mục trên đường dẫn, cách nhau bằng \\ (backslash), rồi \\ và tên thư mục. (2) Thư mục hiện tại được biểu diễn bằng . (một dấu chấm). (3) Thư mục một cấp trên được biểu diễn bằng .. (hai dấu chấm). (4) Khi tham chiếu bắt đầu bằng \\, coi như root đã bị lược ở đầu tham chiếu. (5) Khi tham chiếu không bắt đầu bằng \\, .. hoặc ., coi như \\ (nghĩa là tham chiếu dưới thư mục hiện tại) bị lược ở đầu tham chiếu.",
+        "optionsVi": {
+          "A": "A",
+          "B": "\\một",
+          "C": "\\B\\một",
+          "D": "\\BA"
+        },
+        "answerDisplay": "B. \\một",
+        "concept": "• Path: \\ = từ root; .. = lên 1 cấp; tên = xuống. Theo figure đề có nhiều A/B lồng.",
+        "whyCorrect": "• Theo cấu trúc đề + dãy cd: kết thúc tại **\\A** (root\\A) — bank B.\n• (Cần figure: nhánh \\B\\A vs \\BA khác nhau.)",
+        "intent": "• J1 — directory paths.",
+        "whatIs": {
+          "A": "A — relative, không rõ root.",
+          "B": "\\A — từ root vào A.",
+          "C": "\\B\\A — nhánh B rồi A.",
+          "D": "\\BA — thư mục tên BA hoặc B\\A compact."
+        },
+        "whyWrong": {
+          "A": "• Là gì? A.\n• Dùng để làm gì? Relative name.\n• Vì sao sai? Đáp án chuẩn absolute \\A.",
+          "C": "• Là gì? \\B\\A.\n• Dùng để làm gì? Path khác.\n• Vì sao sai? Không phải kết quả dãy cd đề.",
+          "D": "• Là gì? \\BA.\n• Dùng để làm gì? Path/name khác.\n• Vì sao sai? Không khớp final current bank."
+        },
+        "memoryTip": "• \\ từ root · .. lên 1 · đề này → \\A."
+      }
+    },
+    {
+      "id": 436,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 28,
+      "question": "Which of the following is an appropriate description in comparison of how to safeguard IC cards and magnetic cards against forgery?",
+      "options": {
+        "A": "A magnetic card is more robust against forgery than an IC card because the magnetic card uses a bar code for information recording.",
+        "B": "An IC card is more robust against forgery than a magnetic card because the IC card uses a two-dimensional code for information recording.",
+        "C": "A magnetic card is more robust against forgery than an IC card because the magnetic card stores information on a magnetic stripe and has a more complicated data protection mechanism.",
+        "D": "An IC card is more robust against forgery than a magnetic card because the IC card provides the features of storing and encrypting information in the IC chip."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây là mô tả phù hợp khi so sánh cách bảo vệ thẻ IC và thẻ từ chống làm giả?",
+        "optionsVi": {
+          "A": "Thẻ từ chống giả hơn thẻ IC vì dùng barcode (sai).",
+          "B": "Thẻ IC chống giả hơn thẻ từ vì dùng mã 2D (sai — không đúng cơ chế chính).",
+          "C": "Thẻ từ chống giả tốt hơn thẻ IC vì dải từ và cơ chế bảo vệ phức tạp hơn (sai — thường ngược lại).",
+          "D": "Thẻ IC chống giả tốt hơn thẻ từ nhờ chip lưu và mã hóa."
+        },
+        "answerDisplay": "D. Thẻ IC chống giả tốt hơn thẻ từ nhờ chip lưu và mã hóa.",
+        "concept": "• IC card: chip + có thể crypto/auth — khó clone hơn magnetic stripe chỉ copy track.",
+        "whyCorrect": "• IC card dùng chip (có thể mã hóa/xác thực) → khó làm giả hơn magnetic stripe.\n• Đáp án D khớp so sánh đúng; A/B sai bản chất (barcode/2D).",
+        "intent": "• J7 — IC vs magnetic card.",
+        "whatIs": {
+          "A": "Sai — magnetic không robust hơn.",
+          "B": "Lý do 2D code — sai bản chất IC.",
+          "C": "Mô tả lệch.",
+          "D": "IC chống giả tốt hơn (chip)."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Magnetic robust hơn.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Magnetic stripe dễ copy hơn IC.",
+          "B": "• Là gì? IC vì 2D code.\n• Dùng để làm gì? Sai cơ chế.\n• Vì sao sai? IC = chip, không phải vì 2D code.",
+          "C": "• Là gì? A magnetic card is more robust against forgery than an IC card because the magne\n• Dùng để làm gì? —\n• Vì sao sai? Không phải ans D."
+        },
+        "memoryTip": "• IC chip + crypto ≫ magnetic stripe clone."
+      }
+    },
+    {
+      "id": 437,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 29,
+      "question": "Which of the following is an appropriate description concerning a use case diagram in UML?",
+      "options": {
+        "A": "It is used to represent mutual actions by means of messages sent and received between objects.",
+        "B": "It is used to model the functional, informational, behavioral, and organizational workflow perspectives.",
+        "C": "It is used to describe the sequence of states that an object goes through in response to external events.",
+        "D": "It is used to show what system functions are performed for which actor, from the user's perspective."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây là mô tả phù hợp về sơ đồ use case trong UML?",
+        "optionsVi": {
+          "A": "Biểu diễn tương tác bằng message gửi/nhận giữa đối tượng (sequence diagram).",
+          "B": "Mô hình hóa góc nhìn chức năng, thông tin, hành vi, tổ chức (workflow).",
+          "C": "Mô tả chuỗi trạng thái đối tượng phản ứng sự kiện ngoài (state diagram).",
+          "D": "Thể hiện chức năng hệ thống cho actor nào, góc nhìn người dùng (use case)."
+        },
+        "answerDisplay": "D. Thể hiện chức năng hệ thống cho actor nào, góc nhìn người dùng (use case).",
+        "concept": "• Use case diagram: actors, use cases, system boundary, quan hệ include/extend — **chức năng hệ thống nhìn từ ngoài**.",
+        "whyCorrect": "• Bank D đúng use case.\n• A ≈ sequence/communication; B ≈ enterprise modeling; C ≈ state machine.",
+        "intent": "• J8 — UML use case.",
+        "whatIs": {
+          "A": "Sequence-like messages.",
+          "B": "Workflow multi-perspective.",
+          "C": "State machine.",
+          "D": "Use case diagram."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Messages between objects.\n• Dùng để làm gì? Sequence diagram.\n• Vì sao sai? Không phải use case.",
+          "B": "• Là gì? Workflow perspectives.\n• Dùng để làm gì? Khác UML use case thuần.\n• Vì sao sai? Không định nghĩa use case chuẩn.",
+          "C": "• Là gì? Sequence of states.\n• Dùng để làm gì? State diagram.\n• Vì sao sai? Không phải use case."
+        },
+        "memoryTip": "• Use case = actor + usecase + boundary · Sequence = messages · State = states."
+      }
+    },
+    {
+      "id": 438,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 30,
+      "question": "A part of a program was changed to add a new function to a system in operation. Which of the following is the most appropriate environment that is used for testing the new program without affecting the system in operation, in order to determine whether or not the system can be brought into full operation?",
+      "options": {
+        "A": "Test environment for other systems",
+        "B": "Test environment equivalent to production",
+        "C": "Production environment",
+        "D": "Programming environment"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Một phần chương trình được sửa để thêm chức năng mới cho hệ đang vận hành. Môi trường nào sau đây phù hợp nhất để kiểm thử chương trình mới mà không ảnh hưởng hệ đang chạy, nhằm quyết định có đưa hệ vào vận hành đầy đủ hay không?",
+        "optionsVi": {
+          "A": "Môi trường kiểm thử cho other các hệ thống",
+          "B": "Môi trường kiểm thử equivalent production",
+          "C": "Production môi trường",
+          "D": "Programming môi trường"
+        },
+        "answerDisplay": "B. Môi trường kiểm thử equivalent production",
+        "concept": "• Test trên staging/pre-prod giống prod để phát hiện lỗi môi trường, **tách** khỏi production live.",
+        "whyCorrect": "• B: equivalent to production nhưng không phải prod → an toàn + tin cậy.\n• C rủi ro user thật; D dev chưa đủ giống; A hệ khác thiếu tương đương.",
+        "intent": "• J5 — test environments.",
+        "whatIs": {
+          "A": "Env hệ khác — kém tương đương.",
+          "B": "Staging ≈ prod.",
+          "C": "Prod live — rủi ro.",
+          "D": "Dev/programming — khác prod."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Test env hệ khác.\n• Dùng để làm gì? Khác stack.\n• Vì sao sai? Không đảm bảo giống prod.",
+          "C": "• Là gì? Production.\n• Dùng để làm gì? Hệ thật.\n• Vì sao sai? Ảnh hưởng user — trái «without affecting».",
+          "D": "• Là gì? Programming env.\n• Dùng để làm gì? Máy dev.\n• Vì sao sai? Thiếu độ giống prod."
+        },
+        "memoryTip": "• Test ≈ prod nhưng ≠ prod live."
+      }
+    },
+    {
+      "id": 439,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 31,
+      "question": "Which of the following is an explanation of the use case diagram shown below?",
+      "options": {
+        "A": "There are four use cases, and the names of those use cases are order management system, order processing, order change processing, and order cancellation processing.",
+        "B": "The order management system is inside the system boundary, while the ordering staff and the inventory management system are outside the system boundary.",
+        "C": "The ordering staff is the only actor, because the inventory management system is not a person.",
+        "D": "The scope of system development includes both the order management system and the inventory management system."
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Giải thích nào đúng về sơ đồ use case bên dưới?",
+        "optionsVi": {
+          "A": "Có 4 use case: hệ quản lý đơn, xử lý đơn, đổi đơn, hủy đơn (có thể nhầm ranh giới hệ thống).",
+          "B": "Hệ quản lý đơn trong ranh giới; nhân viên đặt hàng và hệ tồn kho ngoài ranh giới.",
+          "C": "Chỉ nhân viên đặt hàng là actor vì hệ tồn kho không phải người (có thể sai nếu hệ ngoài là actor).",
+          "D": "Phạm vi phát triển gồm cả hệ đơn hàng và hệ tồn kho."
+        },
+        "answerDisplay": "B. Hệ quản lý đơn trong ranh giới; nhân viên đặt hàng và hệ tồn kho ngoài ranh giới.",
+        "concept": "• System boundary: use case/system trong khung; **actor** (người/hệ ngoài) nằm ngoài.",
+        "whyCorrect": "• B đúng UML: order management system trong; ordering staff + inventory management system là actor ngoài.\n• A nhầm tên system thành use case; C sai (hệ ngoài cũng actor); D sai phạm vi.",
+        "intent": "• J8 — đọc use case diagram.",
+        "whatIs": {
+          "A": "Đếm use case sai (gộp system name).",
+          "B": "Boundary đúng.",
+          "C": "Bỏ actor hệ thống ngoài.",
+          "D": "Scope sai."
+        },
+        "whyWrong": {
+          "A": "• Là gì? 4 use case gồm tên hệ thống.\n• Dùng để làm gì? Nhầm system = use case.\n• Vì sao sai? System boundary ≠ use case name list.",
+          "C": "• Là gì? Chỉ staff là actor.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Hệ inventory bên ngoài cũng là actor.",
+          "D": "• Là gì? Scope gồm cả…\n• Dùng để làm gì? Sai boundary.\n• Vì sao sai? Không khớp hình chuẩn bank."
+        },
+        "memoryTip": "• Trong khung = system · Ngoài = actors (người/hệ ngoài)."
+      },
+      "meta": {
+        "img": "6.png",
+        "imageKey": 31,
+        "imgDir": "imge",
+        "imgLabel": "UML use case order management",
+        "imgSource": "user-upload-enhanced"
+      },
+      "img": "6.png"
+    },
+    {
+      "id": 440,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 32,
+      "question": "Which of the following refers to online scams where thieves attempt to entice e-mail recipients into clicking on a link that takes them to a bogus website, and the website may prompt the recipient to provide personal information such as social security number, bank account number, and credit card number, and/or it may download malicious software onto the recipient's computer?",
+      "options": {
+        "A": "DoS attack",
+        "B": "Trojan horse",
+        "C": "Cross site scripting",
+        "D": "Phishing"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây ám chỉ lừa đảo trực tuyến, trong đó kẻ gian dụ người nhận e-mail bấm vào liên kết đưa họ tới website giả, và website đó có thể yêu cầu người nhận cung cấp thông tin cá nhân như số an sinh xã hội, số tài khoản ngân hàng và số thẻ tín dụng, và/hoặc có thể tải phần mềm độc hại xuống máy tính của người nhận?",
+        "optionsVi": {
+          "A": "DoS tấn công",
+          "B": "Trojan horse",
+          "C": "Cross site scripting",
+          "D": "Lừ đảo phishing"
+        },
+        "answerDisplay": "D. Lừ đảo phishing",
+        "concept": "• Phishing: lừa đảo qua mail/web giả (giả bank…) để đánh cắp credential/PII.",
+        "whyCorrect": "• Mail + bogus website + personal info = phishing.\n• DoS = làm sập dịch vụ; Trojan = malware ngụy trang; XSS = inject script web.",
+        "intent": "• J7 — phishing.",
+        "whatIs": {
+          "A": "DoS — từ chối dịch vụ.",
+          "B": "Trojan — mã độc giả hợp lệ.",
+          "C": "XSS — chèn script site.",
+          "D": "Phishing — lừa lấy thông tin."
+        },
+        "whyWrong": {
+          "A": "• Là gì? DoS.\n• Dùng để làm gì? Làm đầy/tắt service.\n• Vì sao sai? Không phải lừa form giả.",
+          "B": "• Là gì? Trojan.\n• Dùng để làm gì? Malware.\n• Vì sao sai? Có thể liên quan nhưng stem = scam mail+fake site → phishing.",
+          "C": "• Là gì? XSS.\n• Dùng để làm gì? Lỗ hổng web inject.\n• Vì sao sai? Khác social mail phishing."
+        },
+        "memoryTip": "• Mail giả + site giả + lấy PII → phishing."
+      }
+    },
+    {
+      "id": 441,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 33,
+      "question": "Which of the following is the appropriate item to be checked when the ordered software is delivered?",
+      "options": {
+        "A": "The functions described in the specifications are implemented.",
+        "B": "A quality management plan is provided.",
+        "C": "The details of the cost estimation submitted by the supplier are reasonable.",
+        "D": "The activity report indicates that there is no delay in making progress on activities."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Khi nhận phần mềm đã đặt hàng, mục nào nên được kiểm tra?",
+        "optionsVi": {
+          "A": "Các chức năng described specifications implemented.",
+          "B": "Chất lượng quản lý plan provided.",
+          "C": "Chi tiết ước lượng chi phí nhà cung cấp là hợp lý.",
+          "D": "Báo cáo hoạt động cho thấy không trễ tiến độ."
+        },
+        "answerDisplay": "A. Các chức năng described specifications implemented.",
+        "concept": "• Acceptance delivery: đối chiếu **deliverable vs spec** (functional completeness) — acceptance criteria.",
+        "whyCorrect": "• Lúc deliver: verify functions per specification.\n• B/C thuộc plan/contract trước; D tiến độ quá trình, không phải check lúc nhận hàng chính.",
+        "intent": "• J5 — acceptance check.",
+        "whatIs": {
+          "A": "Spec functions implemented — acceptance.",
+          "B": "Q-plan — earlier planning.",
+          "C": "Cost estimate — contracting.",
+          "D": "Progress report — monitoring."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Quality plan provided.\n• Dùng để làm gì? Kế hoạch.\n• Vì sao sai? Không phải kiểm tra sản phẩm lúc giao.",
+          "C": "• Là gì? Cost estimation reasonable.\n• Dùng để làm gì? Trước/đặt hàng.\n• Vì sao sai? Không phải khi delivered software.",
+          "D": "• Là gì? No delay in activity report.\n• Dùng để làm gì? Theo dõi tiến độ.\n• Vì sao sai? Không thay verify function vs spec."
+        },
+        "memoryTip": "• Delivery check = spec functions có đủ không."
+      }
+    },
+    {
+      "id": 442,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 34,
+      "question": "Which of the following helps improve availability?",
+      "options": {
+        "A": "Doubling both MTBF and MTTR",
+        "B": "Reducing MTBF to half and doubling MTTR",
+        "C": "Reducing both MTBF and MTTR to half",
+        "D": "Doubling MTBF and reducing MTTR to half"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây giúp cải thiện độ sẵn sàng (availability)?",
+        "optionsVi": {
+          "A": "Gấp đôi cả MTBF và MTTR",
+          "B": "Giảm MTBF còn một nửa và gấp đôi MTTR",
+          "C": "Giảm cả MTBF và MTTR còn một nửa",
+          "D": "Gấp đôi MTBF và giảm MTTR còn một nửa"
+        },
+        "answerDisplay": "D. Gấp đôi MTBF và giảm MTTR còn một nửa",
+        "concept": "• Availability (độ sẵn sàng): tỉ lệ thời gian hệ thống sẵn sàng dùng.\n• MTBF (Mean Time Between Failures): thời gian trung bình giữa hai lần hỏng — càng lớn càng ít hỏng.\n• MTTR (Mean Time To Repair): thời gian trung bình để sửa/khôi phục — càng nhỏ càng sửa nhanh.\n• Công thức: A = MTBF / (MTBF + MTTR).",
+        "whyCorrect": "• D: gấp đôi MTBF (ít hỏng hơn) và giảm MTTR còn nửa (sửa nhanh hơn)\n  → A = 2m / (2m + t/2) > m/(m+t) (m,t > 0) → availability tăng rõ.\n• Đúng hướng “improve availability”.",
+        "intent": "• J4b — availability: định nghĩa MTBF/MTTR + so option theo công thức.",
+        "whatIs": {
+          "A": "Gấp đôi cả MTBF & MTTR → A không đổi.",
+          "B": "MTBF↓ MTTR↑ → A giảm.",
+          "C": "Chia đôi cả hai → A không đổi.",
+          "D": "MTBF↑ MTTR↓ → A tăng."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Gấp đôi cả MTBF và MTTR.\n• Dùng để làm gì? A = 2m/(2m+2t) = m/(m+t) — trùng A cũ.\n• Vì sao sai? Availability không cải thiện (không đổi).",
+          "B": "• Là gì? Giảm MTBF còn nửa (hỏng dày hơn) và gấp đôi MTTR (sửa lâu hơn).\n• Dùng để làm gì? A = (m/2)/(m/2+2t) < m/(m+t).\n• Vì sao sai? Làm A giảm — trái improve availability.",
+          "C": "• Là gì? Giảm cả MTBF và MTTR còn một nửa.\n• Dùng để làm gì? A = (m/2)/((m/2)+(t/2)) = m/(m+t) — không đổi.\n• Vì sao sai? Không improve; chỉ co cùng tỉ lệ."
+        },
+        "memoryTip": "• A↑ ← MTBF↑ (ít hỏng) và MTTR↓ (sửa nhanh).\n• Gấp đôi / chia đôi cả hai → A đứng yên."
+      }
+    },
+    {
+      "id": 443,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 35,
+      "question": "Which of the following is the main purpose of a penetration test?",
+      "options": {
+        "A": "To confirm that the outputs resulting from various inputs to the target program are identical with the outputs defined in the specifications",
+        "B": "To confirm the strength of the in-use encryption method",
+        "C": "To confirm that there is neither a security hole nor a setup error on the firewall and public servers",
+        "D": "To confirm the number of sessions that the firewall can process per unit time"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Đâu là main mục đích penetration test?",
+        "optionsVi": {
+          "A": "Xác nhận output với nhiều input khớp đặc tả (kiểm thử).",
+          "B": "Confirm strength -use mã hó phương thức",
+          "C": "Xác nhận firewall/server công khai không lỗ hổng hay cấu hình sai.",
+          "D": "Xác nhận số phiên firewall xử lý được mỗi đơn vị thời gian."
+        },
+        "answerDisplay": "C. Xác nhận firewall/server công khai không lỗ hổng hay cấu hình sai.",
+        "concept": "• Penetration test: tấn công có kiểm soát để phát hiện vulnerability & misconfiguration trước attacker thật.",
+        "whyCorrect": "• C khớp mục tiêu pentest (security hole / setup error).\n• A = functional test; B hẹp (crypto strength only).",
+        "intent": "• J7 — penetration testing.",
+        "whatIs": {
+          "A": "Functional correctness vs spec.",
+          "B": "Crypto strength check hẹp.",
+          "C": "Pentest — holes & misconfig.",
+          "D": "Khác."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Outputs = spec.\n• Dùng để làm gì? Functional/black-box test.\n• Vì sao sai? Không phải mục tiêu pentest chính.",
+          "B": "• Là gì? Encryption strength only.\n• Dùng để làm gì? Crypto audit hẹp.\n• Vì sao sai? Pentest rộng hơn firewall/host holes.",
+          "D": "• Là gì? Option D.\n• Dùng để làm gì? —\n• Vì sao sai? Bank ans C."
+        },
+        "memoryTip": "• Pentest = giả lập tấn công tìm lỗ hổng."
+      }
+    },
+    {
+      "id": 444,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 36,
+      "question": "View the picture and choose right answer. As shown in the figure below, all the lines show signs of leveling off in the control chart of a program test. Which of the following can be inferred from this condition?",
+      "options": {
+        "A": "a) Numerous bugs have occurred, and the number of completed test items has stopped rising.",
+        "B": "b) The bug occurrence and test item completion rates match, and there are no more unresolved bugs.",
+        "C": "c) The number of completed test items has risen, and bugs have stopped occurring.",
+        "D": "d) The process is facing some bugs that are difficult to resolve, and subsequent tests are not proceeding."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Xem hình và chọn đáp án đúng. Như hình dưới, mọi đường trên biểu đồ kiểm soát của một quá trình đều có dấu hiệu san phẳng. Tình huống này cho thấy điều gì?",
+        "optionsVi": {
+          "A": "Nhiều bug; số test item hoàn thành ngừng tăng.",
+          "B": "Tỷ lệ bug và hoàn thành test khớp, không còn bug chưa xử lý.",
+          "C": "Số test hoàn thành tăng và bug ngừng xuất hiện.",
+          "D": "Quy trình gặp bug khó gỡ, các test tiếp không tiến triển."
+        },
+        "answerDisplay": "D. Quy trình gặp bug khó gỡ, các test tiếp không tiến triển.",
+        "concept": "• Control chart trong kiểm thử: theo dõi các chỉ số (bug, test hoàn thành…) theo thời gian. Khi **mọi đường san phẳng**, tiến độ gần như đứng — thường do kẹt ở bug khó, không phải «đã sạch bug».",
+        "whyCorrect": "• San phẳng đồng loạt = không còn xu hướng tăng test completed / giảm bug như kỳ vọng khi test trôi chảy.\n• Suy luận hợp lý: đang vướng bug khó → test sau không đẩy tiếp (đáp án D).\n• Không suy ra «hết bug» chỉ vì đường nằm ngang.",
+        "intent": "• J5 — đọc control chart test: leveling off ≠ hết lỗi.",
+        "whatIs": {
+          "A": "Nhiều bug + test completed dừng — một kịch bản kẹt, nhưng nhấn «numerous bugs» không khớp mọi đường san phẳng như D.",
+          "B": "Bug rate khớp completion và hết unresolved — mô tả trạng thái «sạch» (thường đường bug thấp ổn định + test xong).",
+          "C": "Test tăng + bug dừng — mô tả tiến triển tốt, không phải leveling off mọi đường.",
+          "D": "Bug khó gỡ chặn tiến độ test tiếp — khớp leveling off đồng loạt."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Nhiều bug phát sinh đồng thời test ngừng tăng.\n• Dùng để làm gì? Mô tả một kiểu tắc test.\n• Vì sao sai? Nhấn «numerous bugs occurred» không phải suy luận chuẩn khi chỉ biết các đường san phẳng; đáp án chuẩn là kẹt bug khó làm test sau không tiến.",
+          "B": "• Là gì? Bug và test completion khớp, hết unresolved bugs.\n• Dùng để làm gì? Gợi ý chất lượng đã ổn / gần xong.\n• Vì sao sai? San phẳng ≠ đã xử lý hết bug; có thể đang đứng yên vì kẹt.",
+          "C": "• Là gì? Test completed tăng, bug ngừng.\n• Dùng để làm gì? Tiến triển kiểm thử tốt.\n• Vì sao sai? Mâu thuẫn «leveling off» (không còn tăng/giảm rõ) — đây là đường đang tiến, không phải san phẳng."
+        },
+        "memoryTip": "• Control chart test: mọi đường nằm ngang → nghi kẹt bug khó, đừng vội kết luận «hết lỗi»."
+      },
+      "meta": {
+        "img": "7.png",
+        "imageKey": 36,
+        "imgDir": "imge",
+        "imgLabel": "Test control chart leveling",
+        "imgSource": "user-upload-enhanced"
+      },
+      "img": "7.png"
+    },
+    {
+      "id": 445,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 37,
+      "question": "Which of the following means product improvement, and product disposal are planned according to each stage of introduction, growth, maturity, and decline?",
+      "options": {
+        "A": "Business continuity plan",
+        "B": "Product life cycle strategy"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cải tiến/thải bỏ sản phẩm theo giai đoạn giới thiệu–tăng trưởng–bão hòa–suy — khái niệm nào?",
+        "optionsVi": {
+          "A": "Kế hoạch liên tục kinh doanh (BCP)",
+          "B": "Vòng đời sản phẩm strategy"
+        },
+        "answerDisplay": "B. Vòng đời sản phẩm strategy",
+        "concept": "• Product life cycle: intro → growth → maturity → decline — chiến lược marketing/product theo giai đoạn.",
+        "whyCorrect": "• Đúng tên product life cycle strategy.\n• BCP = duy trì hoạt động khi sự cố, khác vòng đời sản phẩm.",
+        "intent": "• J5 — PLC strategy.",
+        "whatIs": {
+          "A": "BCP — liên tục kinh doanh khi disaster.",
+          "B": "PLC strategy — theo giai đoạn SP."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Business continuity plan.\n• Dùng để làm gì? Chuẩn bị sự cố/disaster.\n• Vì sao sai? Không phải chiến lược theo PLC intro/growth/maturity/decline."
+        },
+        "memoryTip": "• Intro-Growth-Maturity-Decline → product life cycle."
+      }
+    },
+    {
+      "id": 446,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 38,
+      "question": "What is the data remaining on the stack after doing the following operations, assume that from start, stack is empty? push 5 => push 10 => push 5 => pop => push 10 => push 10 => push 5 => pop => pop. Assume that stack is empty at first and sequence format 5, 8, 10 mean that 5 is at bottom of stack and 10 is at top of stack.",
+      "options": {
+        "A": "5, 10, 10",
+        "B": "10, 10, 5",
+        "C": "10, 5, 10",
+        "D": "5, 5, 10"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Dữ liệu còn lại trên stack sau các thao tác sau là gì, giả sử ban đầu stack rỗng? push 5 => push 10 => push 5 => pop => push 10 => push 10 => push 5 => pop => pop. Giả sử stack rỗng lúc đầu và định dạng dãy 5, 8, 10 nghĩa là 5 ở đáy stack và 10 ở đỉnh stack.",
+        "optionsVi": {
+          "A": "5, 10, 10",
+          "B": "10, 10, 5",
+          "C": "10, 5, 10",
+          "D": "5, 5, 10"
+        },
+        "answerDisplay": "A. 5, 10, 10",
+        "concept": "• Stack LIFO: push lên đỉnh, pop lấy đỉnh.",
+        "whyCorrect": "• [] →[5]→[5,10]→[5,10,5]→pop[5,10]→[5,10,10]→[5,10,10,10]→[5,10,10,10,5]→pop[5,10,10,10]→pop **[5,10,10]**.\n• Đáy→đỉnh = 5,10,10.",
+        "intent": "• J4 — stack trace.",
+        "whatIs": {
+          "A": "5,10,10 — đúng mô phỏng.",
+          "B": "10,10,5 — đảo.",
+          "C": "10,5,10 — sai.",
+          "D": "5,5,10 — sai."
+        },
+        "whyWrong": {
+          "B": "• Là gì? 10,10,5.\n• Dùng để làm gì? Nhầm đỉnh/đáy.\n• Vì sao sai? Còn 5 dưới cùng.",
+          "C": "• Là gì? 10,5,10.\n• Dùng để làm gì? Sai thứ tự pop/push.\n• Vì sao sai? Mô phỏng ra 5,10,10.",
+          "D": "• Là gì? 5,5,10.\n• Dùng để làm gì? Sót phần tử.\n• Vì sao sai? Không khớp 2 pop cuối."
+        },
+        "memoryTip": "• Mô phỏng từng push/pop · LIFO."
+      }
+    },
+    {
+      "id": 447,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 39,
+      "question": "When ABC analysis is used to categorize product items in the table below, which of the following is the combination of the product numbers for the items that are categorized into the group \"A\"?",
+      "options": {
+        "A": "1 and 2",
+        "B": "2 and 5",
+        "C": "4 and 8",
+        "D": "2 and 6"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Khi dùng phân tích ABC để phân loại mặt hàng trong bảng dưới, tổ hợp số hiệu sản phẩm nào thuộc nhóm A?",
+        "optionsVi": {
+          "A": "1 và 2",
+          "B": "2 và 5",
+          "C": "4 và 8",
+          "D": "2 và 6"
+        },
+        "answerDisplay": "B. 2 và 5",
+        "concept": "• Phân tích ABC (Pareto): xếp mặt hàng theo **giá trị đóng góp** (ở đây = **Annual sales amount** = số lượng × đơn giá) giảm dần.\n• Nhóm **A** ≈ vital few — tích lũy khoảng **~70%** tổng giá trị (thường dùng ngưỡng 70%; B ~70–90%; C phần còn lại).\n• **Không** xếp theo số hiệu hay số lượng bán thuần — phải theo **doanh thu năm**.",
+        "whyCorrect": "• Từ bảng: Annual sales amount = quantity × unit price. Tổng = **3,825**.\n• Xếp amount giảm dần:\n  – **#2** = 2,400 → 2,400/3,825 ≈ **62.7%**\n  – **#5** = 600 → cộng dồn 3,000/3,825 ≈ **78.4%** (đã vượt ~70%)\n• → Hai mã đầu theo giá trị là **2 và 5** = nhóm **A**.\n• (Mã 1 chỉ 220 — hạng thấp hơn, không vào cặp A.)",
+        "whyWrong": {
+          "A": "• Là gì? Cặp mã 1 và 2.\n• Dùng để làm gì? Hai số hiệu bất kỳ trong bảng.\n• Vì sao sai? #2 đúng là amount cao nhất (2,400), nhưng **#1 chỉ 220** — không phải hạng 2 theo giá trị (hạng 2 là **#5 = 600**). Nhầm “số hiệu nhỏ = quan trọng”.",
+          "C": "• Là gì? Cặp mã 4 và 8.\n• Dùng để làm gì? #4 amount 130; #8 amount 300.\n• Vì sao sai? Không phải hai hạng đầu theo doanh thu; tích lũy A đã chốt ở 2+5.",
+          "D": "• Là gì? Cặp mã 2 và 6.\n• Dùng để làm gì? #2 đúng cao nhất; #6 amount chỉ 25.\n• Vì sao sai? #6 không thuộc vital few; hạng 2 đúng là #5 (600), không phải #6."
+        },
+        "whatIs": {
+          "A": "1 và 2 — nhầm #1 thay vì #5 (amount).",
+          "B": "2 và 5 — hai amount cao nhất; tích lũy ≈78% → nhóm A.",
+          "C": "4 và 8 — amount thấp/trung, không phải A.",
+          "D": "2 và 6 — #6 amount quá nhỏ."
+        },
+        "memoryTip": "• ABC theo **doanh thu** (amount), không theo số hiệu hay qty.\n• Đề này: xếp amount → 2 (2,400) rồi 5 (600) → A = **2 và 5**.",
+        "intent": "• J5b/J4 — ABC: tính amount, xếp hạng, tích lũy ~70% → nhóm A.",
+        "calcSteps": "Bảng (qty × price = amount):\n1: 110×2=220 | 2: 60×40=2,400 | 3: 10×4=40 | 4: 130×1=130 | 5: 50×12=600\n6: 1×25=25 | 7: 10×2=20 | 8: 150×2=300 | 9: 20×2=40 | 10: 50×1=50 | Σ=3,825\nXếp amount ↓: 2(2400) → 5(600) → 8(300) → 1(220) → …\nTích lũy: 2400/3825≈62.7%; +600 → 3000/3825≈78.4% ≥ ~70% → A = {2,5}."
+      },
+      "meta": {
+        "img": "8.png",
+        "imageKey": 39,
+        "imgDir": "imge",
+        "imgLabel": "ABC analysis product group A (official FE table)",
+        "imgSource": "redraw-official-fe-h21-q76"
+      },
+      "img": "8.png"
+    },
+    {
+      "id": 448,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 40,
+      "question": "Which of the following is the main task of a service desk?",
+      "options": {
+        "A": "Conducting interviews to collect computerization needs for future system planning",
+        "B": "Investigating and analyzing system utilization to evaluate the IT service level",
+        "C": "Responding to inquiries, such as system failures, for enhanced user convenience",
+        "D": "Investigating the cause of bugs to improve the quality of application software"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Đâu là main tác vụ service desk?",
+        "optionsVi": {
+          "A": "Phỏng vấn thu thập nhu cầu tin học hóa cho lập kế hoạch hệ thống.",
+          "B": "Điều tra/phân tích mức sử dụng hệ thống để đánh giá mức dịch vụ IT",
+          "C": "Tiếp nhận hỏi đáp (sự cố hệ thống…) để tăng tiện lợi user",
+          "D": "Điều tra nguyên nhân bug để cải chất lượng phần mềm ứng dụng"
+        },
+        "answerDisplay": "C. Tiếp nhận hỏi đáp (sự cố hệ thống…) để tăng tiện lợi user",
+        "concept": "• Service desk (ITIL): single point of contact — incident/request, hỗ trợ người dùng.",
+        "whyCorrect": "• C đúng SPOC support.\n• A planning; B SL report/analysis; D dev debug — không phải main service desk.",
+        "intent": "• J5 — service desk.",
+        "whatIs": {
+          "A": "Demand collection — planning.",
+          "B": "Service level evaluation.",
+          "C": "Service desk ops.",
+          "D": "Bug root cause — dev."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Interviews for future system.\n• Dùng để làm gì? Planning/BA.\n• Vì sao sai? Không phải main service desk.",
+          "B": "• Là gì? Evaluate IT service level.\n• Dùng để làm gì? SLM/reporting.\n• Vì sao sai? Không phải daily desk.",
+          "D": "• Là gì? Investigate bugs.\n• Dùng để làm gì? Development/problem mgmt sâu.\n• Vì sao sai? Desk chủ yếu tiếp nhận/escalate."
+        },
+        "memoryTip": "• Service desk = điểm tiếp xúc sự cố/hỗ trợ user."
+      }
+    },
+    {
+      "id": 449,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 41,
+      "question": "There is a standard that can represent data in a hierarchical structure by enclosing data that corresponds to nesting with tags <N>, which means the start, and </N>, which means the end, and then linking the nesting these tags. Company A decides to comply with this standard and create a paper by using the structural rules: Structural rules A paper is composed of a header and a body text. The header is composed of a title and author information. Author information is composed of a name and a department. Which of the following is the appropriate header of a paper named “New Document Management” that is created by Jack Smith of the Information Systems Department (I/S Department) in accordance with this standard and these structural rules?",
+      "options": {
+        "A": "B. <header><author info><title>New Document Management<name>Jack Smith</name><dept>I/S Department</dept></author info></header>",
+        "B": "D. <header><title>New Document Management</title><author info><name>Jack Smith</name></author info><dept>I/S Department</dept></header>",
+        "C": "F. <header><title>New Document Management</title><author info> <name>Jack Smith</name> <dept>I/S Department</dept></author info></header>",
+        "D": "H. <header><title>New Document Management</title><name>Jack Smithauthor info><dept>I/S Department</dept></author info></name></header>"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Có một chuẩn có thể biểu diễn dữ liệu theo cấu trúc phân cấp bằng cách bao dữ liệu tương ứng với lồng nhau bằng thẻ <N> (bắt đầu) và </N> (kết thúc), rồi liên kết các lồng thẻ đó. Công ty A quyết định tuân chuẩn này và tạo một bài viết theo các quy tắc cấu trúc: Một bài gồm header và body. Header gồm title và author information. Author information gồm name và department. Đâu là header phù hợp cho bài “New Document Management” do Jack Smith thuộc Information Systems Department (I/S Department) tạo theo chuẩn và quy tắc này?",
+        "optionsVi": {
+          "A": "B. Cấu trúc XML (author info bọc title/name) — mẫu B.",
+          "B": "D. Cấu trúc XML (title, author info, dept) — mẫu D.",
+          "C": "F. Cấu trúc XML lồng thẻ (title + author info) — mẫu F.",
+          "D": "H. Cấu trúc XML lồng sai/lệch thẻ — mẫu H."
+        },
+        "answerDisplay": "C. F. Cấu trúc XML lồng thẻ (title + author info) — mẫu F.",
+        "concept": "• Mô hình dữ liệu dạng cây cha–con, truy cập từ gốc xuống một nhánh.",
+        "whyCorrect": "• Mô hình dữ liệu dạng cây cha–con, truy cập từ gốc xuống một nhánh.\n• Tổ chức dữ liệu phân cấp (thư mục, BOM…).",
+        "intent": "• Mô hình dữ liệu dạng cây cha–con, truy cập từ gốc xuống một nhánh.\n• Tổ chức dữ liệu phân cấp (thư mục, BOM…).",
+        "whatIs": {
+          "A": "New — tiến trình vừa được tạo, chưa Ready.",
+          "B": "New — tiến trình vừa được tạo, chưa Ready.",
+          "C": "New — tiến trình vừa được tạo, chưa Ready.",
+          "D": "New — tiến trình vừa được tạo, chưa Ready."
+        },
+        "whyWrong": {
+          "A": "• Là gì? New — tiến trình vừa được tạo, chưa Ready.\n• Dùng để làm gì? Giai đoạn khởi tạo PCB/tài nguyên.\n• Vì sao sai? «B. <header><author info><title>New Document Managemen…» (A) không thỏa: đúng cơ chế bảo mật.",
+          "B": "• Là gì? New — tiến trình vừa được tạo, chưa Ready.\n• Dùng để làm gì? Giai đoạn khởi tạo PCB/tài nguyên.\n• Vì sao sai? «D. <header><title>New Document Management</title><aut…» (B) không thỏa: đúng cơ chế bảo mật.",
+          "D": "• Là gì? New — tiến trình vừa được tạo, chưa Ready.\n• Dùng để làm gì? Giai đoạn khởi tạo PCB/tài nguyên.\n• Vì sao sai? «H. <header><title>New Document Management</title><nam…» (D) không thỏa: đúng cơ chế bảo mật."
+        }
+      }
+    },
+    {
+      "id": 450,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 42,
+      "question": "In the RAID3 system shown below, three disks (Disks 0 through 2) for byte-striped data and one dedicated parity disk (Disk 3) are used as one volume. Parity byte Ap is generated by calculating the \"exclusive OR\" (⊕) of three bytes in Disks 0 through 2. For example, Ap(1-3) = A1 ⊕ A2 ⊕ A3. In the event of a disk failure, data recovery can be accomplished by using the information recorded on the remaining three error-free disks. Which of the following operations should be executed for this data recovery?",
+      "options": {
+        "A": "AND",
+        "B": "Exclusive NOR",
+        "C": "Exclusive OR",
+        "D": "OR"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Trong hệ RAID3 như hình dưới, ba đĩa (Disk 0 đến 2) cho dữ liệu stripe theo byte và một đĩa parity riêng (Disk 3) được dùng như một volume. Byte parity Ap được tạo bằng phép XOR (⊕) của ba byte trên Disk 0 đến 2. Ví dụ Ap(1-3) = A1 ⊕ A2 ⊕ A3. Khi một đĩa hỏng, có thể khôi phục dữ liệu bằng thông tin trên ba đĩa còn lại không lỗi. Phép toán nào sau đây cần thực hiện để khôi phục dữ liệu đó?",
+        "optionsVi": {
+          "A": "Và",
+          "B": "Exclusive NOR",
+          "C": "Exclusive hoặc",
+          "D": "Hoặc"
+        },
+        "answerDisplay": "C. Exclusive hoặc",
+        "concept": "• RAID parity XOR: mất 1 trong {data,parity} khôi phục bằng XOR các đĩa còn lại (vì x⊕x=0, x⊕0=x).",
+        "whyCorrect": "• Ap = A1⊕A2⊕A3 → A1 = Ap⊕A2⊕A3 (cùng XOR).\n• AND/OR/XNOR không phải phép parity chuẩn RAID3.",
+        "intent": "• J6 — RAID parity.",
+        "whatIs": {
+          "A": "AND — không khôi phục parity.",
+          "B": "XNOR — không chuẩn RAID.",
+          "C": "XOR — parity RAID.",
+          "D": "OR — không."
+        },
+        "whyWrong": {
+          "A": "• Là gì? AND.\n• Dùng để làm gì? Giao bit.\n• Vì sao sai? Không đảo được mất mát 1 disk parity.",
+          "B": "• Là gì? Exclusive NOR.\n• Dùng để làm gì? —\n• Vì sao sai? Parity RAID dùng XOR.",
+          "D": "• Là gì? OR.\n• Dùng để làm gì? Hội bit.\n• Vì sao sai? Không tính parity khôi phục."
+        },
+        "memoryTip": "• RAID parity = XOR · mất 1 → XOR phần còn lại."
+      },
+      "meta": {
+        "img": "9.png",
+        "imageKey": 42,
+        "imgDir": "imge",
+        "imgLabel": "RAID3 parity recovery",
+        "imgSource": "user-upload-enhanced"
+      },
+      "img": "9.png"
+    },
+    {
+      "id": 451,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 43,
+      "question": "Which of the following is the most appropriate description concerning the exclusive control of a DBMS?",
+      "options": {
+        "A": "Exclusive control is necessary for data that might be updated simultaneously by several people.",
+        "B": "Exclusive control is necessary for improving the processing speed of data that is frequently accessed.",
+        "C": "Exclusive control is necessary for preventing the occurrence of a deadlock when data is accessed.",
+        "D": "In order to improve the processing speed, the range of the data on which exclusive control is performed must be made as wide as possible."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Đâu là nhất phù hợp mô tả về exclusive kiểm soát DBMS?",
+        "optionsVi": {
+          "A": "Cần khóa độc quyền khi nhiều người có thể cập nhật cùng dữ liệu.",
+          "B": "Khóa độc quyền cần để tăng tốc dữ liệu truy cập thường xuyên (sai — mục tiêu chính là toàn vẹn).",
+          "C": "Khóa độc quyền cần để ngăn deadlock (sai — khóa sai có thể gây deadlock).",
+          "D": "Muốn nhanh hơn thì nới rộng phạm vi khóa độc quyền càng rộng càng tốt (sai — thường hẹp hơn)."
+        },
+        "answerDisplay": "A. Cần khóa độc quyền khi nhiều người có thể cập nhật cùng dữ liệu.",
+        "concept": "• Exclusive control / locking: tránh lost update khi concurrent write — lock exclusive khi sửa.",
+        "whyCorrect": "• A đúng mục tiêu concurrency control.\n• B sai: lock không phải để tăng tốc.\n• C: lock có thể **gây** deadlock, không phải «cần để ngăn deadlock» như định nghĩa chính.",
+        "intent": "• J3 — DBMS locking.",
+        "whatIs": {
+          "A": "Concurrent update protection.",
+          "B": "Speed — sai.",
+          "C": "Deadlock prevention — không phải định nghĩa exclusive chính.",
+          "D": "Khác."
+        },
+        "whyWrong": {
+          "B": "• Là gì? Improve speed frequent access.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Lock thường giảm concurrency/speed.",
+          "C": "• Là gì? Prevent deadlock.\n• Dùng để làm gì? Không chính.\n• Vì sao sai? Exclusive lock là nguồn deadlock nếu không có protocol.",
+          "D": "• Là gì? Option D.\n• Dùng để làm gì? —\n• Vì sao sai? Bank A."
+        },
+        "memoryTip": "• Exclusive lock = chống ghi đồng thời xung đột."
+      }
+    },
+    {
+      "id": 452,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 44,
+      "question": "Which of the following is a protocol for e-mail on the Internet that supports not only text but other data such as audio and images through message header extension?",
+      "options": {
+        "A": "HTML",
+        "B": "SMTP",
+        "C": "MIME",
+        "D": "MHS"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây là giao thức e-mail trên Internet hỗ trợ không chỉ text mà cả dữ liệu khác như audio và ảnh qua MIME?",
+        "optionsVi": {
+          "A": "HTML",
+          "B": "SMTP",
+          "C": "MIME",
+          "D": "MHS"
+        },
+        "answerDisplay": "C. MIME",
+        "concept": "• MIME: mở rộng định dạng message (Content-Type) cho multipart, image, audio… trên hạ tầng mail.",
+        "whyCorrect": "• «Header extension… audio and images» = MIME.\n• SMTP = vận chuyển; HTML = markup; MHS = message handling system X.400-ish.",
+        "intent": "• J2 — MIME.",
+        "whatIs": {
+          "A": "HTML — trang web/markup.",
+          "B": "SMTP — send protocol.",
+          "C": "MIME — multimedia mail content.",
+          "D": "MHS — message handling (X.400)."
+        },
+        "whyWrong": {
+          "A": "• Là gì? HTML.\n• Dùng để làm gì? Markup.\n• Vì sao sai? Không phải chuẩn mở rộng mail header MIME.",
+          "B": "• Là gì? SMTP.\n• Dùng để làm gì? Transfer mail.\n• Vì sao sai? Không định nghĩa multipart body types.",
+          "D": "• Là gì? MHS.\n• Dùng để làm gì? Kiến trúc message cũ.\n• Vì sao sai? Đề Internet header extension → MIME."
+        },
+        "memoryTip": "• MIME = mail đa phương tiện · SMTP = gửi."
+      }
+    },
+    {
+      "id": 453,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 45,
+      "question": "There is an 8-bit register where integers are represented in binary by using 2's complement for negative numbers. When the decimal integer \"-24\" is stored in the register and then arithmetically shifted 2 bits right, what is the resulting value in decimal? Here, the leftmost bit of the register is used as a sign bit.",
+      "options": {
+        "A": "58",
+        "B": "-6",
+        "C": "-96",
+        "D": "-102"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Có thanh ghi 8-bit trong đó số nguyên được biểu diễn nhị phân, số âm dùng bù 2. Khi số thập phân \"-24\" được lưu vào thanh ghi rồi được dịch phải số học 2 bit, giá trị thập phân kết quả là bao nhiêu? Ở đây bit ngoài cùng bên trái của thanh ghi dùng làm bit dấu.",
+        "optionsVi": {
+          "A": "58",
+          "B": "-6",
+          "C": "-96",
+          "D": "-102"
+        },
+        "answerDisplay": "B. -6",
+        "concept": "• Arithmetic shift right: giữ bit dấu (sign-extend). −24 ÷ 4 = −6 (ASR 2 ≈ chia 2² có dấu).",
+        "whyCorrect": "• −24 = 11101000₂ (8-bit).\n• ASR 1: 11110100 = −12; ASR 2: 11111010 = **−6**.\n• Logical shift sẽ sai dấu; −96 là shift left hướng.",
+        "intent": "• J4 — arithmetic shift.",
+        "whatIs": {
+          "A": "58 — nhầm unsigned/logic.",
+          "B": "-6 — đúng ASR.",
+          "C": "-96 — lệch hướng/lượng.",
+          "D": "-102 — sai."
+        },
+        "whyWrong": {
+          "A": "• Là gì? 58.\n• Dùng để làm gì? Có thể đọc unsigned sau shift.\n• Vì sao sai? ASR signed → −6.",
+          "C": "• Là gì? -96.\n• Dùng để làm gì? Gần shift left ×4.\n• Vì sao sai? Đề right shift.",
+          "D": "• Là gì? -102.\n• Dùng để làm gì? Sai bit.\n• Vì sao sai? Không khớp ASR2."
+        },
+        "memoryTip": "• ASR giữ dấu ≈ chia 2^k có dấu · −24 ASR2 = −6."
+      }
+    },
+    {
+      "id": 454,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 46,
+      "question": "Which of the following is an activity performed during the external design phase of system development?",
+      "options": {
+        "A": "Designing the physical data",
+        "B": "Finalizing the performance requirements",
+        "C": "Designing the programs",
+        "D": "Designing the screens and form layouts"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Hoạt động nào thuộc giai đoạn thiết kế ngoài (external design)?",
+        "optionsVi": {
+          "A": "Designing vật lý dữ liệu",
+          "B": "Finalizing hiệu năng requirements",
+          "C": "Designing các chương trình",
+          "D": "Designing màn hình và form layouts"
+        },
+        "answerDisplay": "D. Designing màn hình và form layouts",
+        "concept": "• External design (basic/outside): UI màn hình/form, interface ngoài — nhìn từ user/system boundary.\n• Internal: program, physical DB.",
+        "whyCorrect": "• Screens/forms = external design điển hình.\n• A/C internal; B gần requirements, không phải design phase output chính «external design».",
+        "intent": "• J5 — design phases.",
+        "whatIs": {
+          "A": "Physical data — internal/DB physical.",
+          "B": "Performance requirements — req.",
+          "C": "Programs — internal design/coding.",
+          "D": "Screens/forms — external design."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Physical data design.\n• Dùng để làm gì? Internal/physical.\n• Vì sao sai? Sau external logical.",
+          "B": "• Là gì? Finalize performance req.\n• Dùng để làm gì? Requirements.\n• Vì sao sai? Không phải external design artifact chính.",
+          "C": "• Là gì? Design programs.\n• Dùng để làm gì? Internal.\n• Vì sao sai? Chi tiết module/code structure."
+        },
+        "memoryTip": "• External = màn hình/form/interface ngoài · Internal = program/physical DB."
+      }
+    },
+    {
+      "id": 455,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 47,
+      "question": "According to a survey of 100 students, there are 40 students studying English, 30 studying French, and 25 studying Spanish. In addition, 8 students are studying English and French, 6 are studying English and Spanish, 5 are studying French and Spanish, and 22 are not studying any of the three languages. Which of the following is the number of students studying all three languages?",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "2",
+        "D": "4"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Theo khảo sát 100 sinh viên, có 40 học tiếng Anh, 30 học tiếng Pháp và 25 học tiếng Tây Ban Nha. Ngoài ra, 8 học cả Anh và Pháp, 6 học cả Anh và Tây Ban Nha, 5 học cả Pháp và Tây Ban Nha, và 2 học cả ba ngôn ngữ. Bao nhiêu sinh viên chỉ học đúng một ngôn ngữ?",
+        "optionsVi": {
+          "A": "1",
+          "B": "3",
+          "C": "2",
+          "D": "4"
+        },
+        "answerDisplay": "C. 2",
+        "concept": "• Inclusion-exclusion 3 tập; thường hỏi chỉ một môn / cả ba / ngoài cuộc…",
+        "whyCorrect": "• Theo số liệu đề đầy đủ (gồm |E∩F∩S|), kết quả bank **2**.\n• Áp dụng |A∪B∪C|=Σ|A|−Σ|A∩B|+|A∩B∩C| hoặc công thức vùng chỉ-one.",
+        "intent": "• J4 — sets inclusion-exclusion.",
+        "whatIs": {
+          "A": "1 — lệch 1.",
+          "B": "3 — lệch.",
+          "C": "2 — bank.",
+          "D": "4 — lệch."
+        },
+        "whyWrong": {
+          "A": "• Là gì? 1.\n• Dùng để làm gì? Sai đếm vùng.\n• Vì sao sai? Bank = 2.",
+          "B": "• Là gì? 3.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Không khớp IE.",
+          "D": "• Là gì? 4.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Không khớp IE."
+        },
+        "memoryTip": "• 3 sets: ∪ = Σsingle − Σđôi + triple."
+      }
+    },
+    {
+      "id": 456,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 48,
+      "question": "When CPU processing and printing are performed for four jobs under the conditions below, how many minutes does it take to complete them from the start of the first CPU processing until the end of the last printing? [Conditions] (1) The multiplicity of jobs is 1 during execution. (2) The CPU processing time of each job is 20 minutes. (3) 400 Mbytes of printing data are spooled for each job when the CPU processing ends. The printing function of the OS operates after spooling is completed, and printing is performed by the printer. (4) One printer is available, and the printing speed is 10 minutes per 100 Mbytes. (5) The functions of CPU processing and printing can operate in parallel, and do not affect each other. (6) The time period that is not mentioned in the conditions, such as the time required for spooling, can be ignored.",
+      "options": {
+        "A": "160",
+        "B": "120",
+        "C": "180",
+        "D": "240"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Khi xử lý CPU và in được thực hiện cho bốn job theo các điều kiện dưới đây, mất bao nhiêu phút để hoàn thành từ lúc bắt đầu xử lý CPU job đầu đến khi in xong job cuối? [Điều kiện] (1) Độ đa nhiệm job là 1 khi thực thi. (2) Thời gian xử lý CPU mỗi job là 20 phút. (3) 400 Mbyte dữ liệu in được spool cho mỗi job khi xử lý CPU kết thúc. Chức năng in của OS chạy sau khi spool xong và in bằng máy in. (4) Có một máy in, tốc độ in 10 phút cho mỗi 100 Mbyte. (5) Xử lý CPU và in có thể chạy song song, không ảnh hưởng lẫn nhau. (6) Các khoảng thời gian không nêu trong điều kiện (ví dụ thời gian spool) có thể bỏ qua.",
+        "optionsVi": {
+          "A": "160",
+          "B": "120",
+          "C": "180",
+          "D": "240"
+        },
+        "answerDisplay": "C. 180",
+        "concept": "• Pipeline CPU∥print: vẽ Gantt; tổng = max đường khi chồng I/O và CPU theo constraint đề.",
+        "whyCorrect": "• Theo điều kiện đề (thời lượng CPU/print từng job, 1 CPU 1 printer): mô phỏng → **180** phút.\n• 240 = cộng tuần tự không chồng; 120/160 thiếu overlap.",
+        "intent": "• J1 — multiprogramming schedule.",
+        "memoryTip": "• Vẽ lịch CPU∥printer · không cộng mù 4 job.",
+        "whatIs": {
+          "A": "160 — thiếu/thừa overlap.",
+          "B": "120 — quá tối ưu sai.",
+          "C": "180 — bank.",
+          "D": "240 — no overlap."
+        },
+        "whyWrong": {
+          "A": "• Là gì? 160.\n• Dùng để làm gì? Sai Gantt.\n• Vì sao sai? Không khớp constraint đề.",
+          "B": "• Là gì? 120.\n• Dùng để làm gì? Quá ngắn.\n• Vì sao sai? Không đủ CPU+print serialized parts.",
+          "D": "• Là gì? 240.\n• Dùng để làm gì? Cộng nối tiếp.\n• Vì sao sai? Bỏ qua chồng CPU/print."
+        }
+      }
+    },
+    {
+      "id": 457,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 49,
+      "question": "It focuses on system implementation behavior and is preferred over verification for the following reasons: - It facilitates the consideration of environmental factors that influence system behavior. - It allows feature interaction. A key its feature is error detection, which ensures correct functional implementation. What is kind of testing?",
+      "options": {
+        "A": "Integration test",
+        "B": "System test",
+        "C": "Operational test",
+        "D": "Unit test"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Nó tập trung vào hành vi cài đặt/hiện thực hệ thống và được ưa hơn verification vì các lý do sau: - Giúp xem xét hệ thống như một toàn thể - Dễ phát hiện lỗi thiếu sót. Đây là gì?",
+        "optionsVi": {
+          "A": "Integration test",
+          "B": "Hệ thống test",
+          "C": "Operational test",
+          "D": "Unit test"
+        },
+        "answerDisplay": "B. Hệ thống test",
+        "concept": "• System test: kiểm hệ thống tổng thể theo yêu cầu, hành vi end-to-end, môi trường gần thật — preferred over pure verification theo stem.",
+        "whyCorrect": "• Stem nhấn system implementation behavior + environment → system test.\n• Unit = module; integration = ghép; operational = sau triển khai ops.",
+        "intent": "• J5 — test levels.",
+        "whatIs": {
+          "A": "Integration — interfaces modules.",
+          "B": "System — whole system behavior.",
+          "C": "Operational — production-like ops.",
+          "D": "Unit — smallest piece."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Integration test.\n• Dùng để làm gì? Ghép module.\n• Vì sao sai? Hẹp hơn whole-system behavior stem.",
+          "C": "• Là gì? Operational test.\n• Dùng để làm gì? Sau go-live/ops.\n• Vì sao sai? Stem system test phase.",
+          "D": "• Là gì? Unit test.\n• Dùng để làm gì? Hàm/class.\n• Vì sao sai? Không phủ environmental system behavior."
+        },
+        "memoryTip": "• Unit→Integration→System→Acceptance/Ops."
+      }
+    },
+    {
+      "id": 458,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 50,
+      "question": "Which of the following is INCORRECT formular to determine break-event point?",
+      "options": {
+        "A": "Break-event point = fixed_cost / (sales-variable_cost)",
+        "B": "Break-event point = quantity_sold * variable_cost",
+        "C": "Break-event point = fixed_cost / (1-variable_cost/sales)",
+        "D": "Break-event point = fixed_cost / (1-variable_cost_ratio)"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Công thức nào SAI khi tính điểm hòa vốn (break-even)?",
+        "optionsVi": {
+          "A": "Điểm hòa vốn = fixed_cost / (sales − variable_cost)",
+          "B": "Điểm hòa vốn = quantity_sold × variable_cost (sai)",
+          "C": "Điểm hòa vốn = fixed_cost / (1 − variable_cost/sales)",
+          "D": "Điểm hòa vốn = fixed_cost / (1 − variable_cost_ratio)"
+        },
+        "answerDisplay": "B. Điểm hòa vốn = quantity_sold × variable_cost (sai)",
+        "concept": "• BEP: fixed / contribution margin (per unit hoặc 1−v ratio). **Không** = qty × variable.",
+        "whyCorrect": "• B không phải công thức BEP → INCORRECT (đáp án).\n• A/C/D là biến thể đúng (unit hoặc ratio).",
+        "intent": "• J5 — break-even.",
+        "whatIs": {
+          "A": "Đúng dạng unit contribution.",
+          "B": "Sai — qty×VC không ra BEP.",
+          "C": "Đúng dạng sales ratio.",
+          "D": "Đúng 1−v ratio."
+        },
+        "whyWrong": {
+          "A": "• Là gì? fixed/(sales−variable).\n• Dùng để làm gì? Công thức đúng.\n• Vì sao sai? Đề hỏi INCORRECT — không chọn A.",
+          "C": "• Là gì? fixed/(1−v/sales).\n• Dùng để làm gì? Đúng.\n• Vì sao sai? Không phải câu sai.",
+          "D": "• Là gì? fixed/(1−v ratio).\n• Dùng để làm gì? Đúng.\n• Vì sao sai? Không phải câu sai."
+        },
+        "memoryTip": "• BEP = FC / contribution · không phải Q×VC."
+      },
+      "_pilotFixed": "2026-07-23-v1"
+    },
+    {
+      "id": 459,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 51,
+      "question": "Which of the following is an explanation of SFA (Sales Force Automation)?",
+      "options": {
+        "A": "It is a method or a concept to improve business efficiency by planning and managing company-wide business resources effectively and comprehensively.",
+        "B": "It is a method to improve sales efficiency and quality and to increase sales and profits by utilizing IT in sales activities.",
+        "C": "It is to perform commercial transactions with consumers or between businesses by utilizing an electronic network such as the Internet.",
+        "D": "It is a system to support the business activities of retail stores by increasing their sales and profits, thereby increasing their business transactions with wholesalers or manufacturers."
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Đâu là giải thích SFA (Sales Force Automation)?",
+        "optionsVi": {
+          "A": "Phương pháp/khái niệm lập kế hoạch và quản lý tài nguyên toàn công ty hiệu quả (ERP).",
+          "B": "Dùng IT trong bán hàng để tăng hiệu quả, chất lượng, doanh số (SFA).",
+          "C": "Giao dịch thương mại với khách/B2B qua mạng điện tử (e-commerce).",
+          "D": "Hệ hỗ trợ bán lẻ tăng doanh số/lợi nhuận, từ đó tăng giao dịch với bán sỉ/nhà sản xuất."
+        },
+        "answerDisplay": "B. Dùng IT trong bán hàng để tăng hiệu quả, chất lượng, doanh số (SFA).",
+        "concept": "• SFA: tự động hóa lực lượng bán (lead, opportunity, pipeline) bằng IT.",
+        "whyCorrect": "• B đúng định nghĩa SFA.\n• A ≈ ERP; không phải SFA.",
+        "intent": "• J5 — SFA.",
+        "whatIs": {
+          "A": "ERP-ish company-wide resources.",
+          "B": "SFA — sales IT.",
+          "C": "Khác.",
+          "D": "Khác."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Company-wide resources ERP.\n• Dùng để làm gì? ERP.\n• Vì sao sai? SFA hẹp sales force, không ERP toàn doanh nghiệp.",
+          "C": "• Là gì? It is to perform commercial transactions with consumers or between businesses by\n• Dùng để làm gì? —\n• Vì sao sai? Không khớp SFA.",
+          "D": "• Là gì? It is a system to support the business activities of retail stores by increasing\n• Dùng để làm gì? —\n• Vì sao sai? Không khớp SFA."
+        },
+        "memoryTip": "• SFA = IT cho bán hàng · CRM rộng hơn quan hệ KH · ERP = nội bộ tổng."
+      }
+    },
+    {
+      "id": 460,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 52,
+      "question": "What is HDLC protocol stands for?",
+      "options": {
+        "A": "High-level Data Link Control",
+        "B": "High-level Data Link Commission",
+        "C": "Highlevel Data Link Communication",
+        "D": "High-Density Link Control"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái gì là HDLC protocol stands?",
+        "optionsVi": {
+          "A": "High-level dữ liệu Link kiểm soát",
+          "B": "High-level dữ liệu Link Commission",
+          "C": "Highlevel dữ liệu Link truyền thông",
+          "D": "High-Density Link kiểm soát"
+        },
+        "answerDisplay": "A. High-level dữ liệu Link kiểm soát",
+        "concept": "• HDLC: High-level Data Link Control — giao thức tầng Data Link (bit-oriented).",
+        "whyCorrect": "• Đúng expansion chuẩn ISO HDLC.\n• B/C/D sai từ Commission/Communication/Density.",
+        "intent": "• J2 — protocol names.",
+        "whatIs": {
+          "A": "High-level Data Link Control.",
+          "B": "Sai Commission.",
+          "C": "Sai Communication.",
+          "D": "Sai Density."
+        },
+        "whyWrong": {
+          "B": "• Là gì? …Commission.\n• Dùng để làm gì? Sai từ.\n• Vì sao sai? Control không phải Commission.",
+          "C": "• Là gì? …Communication.\n• Dùng để làm gì? Sai từ.\n• Vì sao sai? Là Control.",
+          "D": "• Là gì? High-Density…\n• Dùng để làm gì? Sai.\n• Vì sao sai? High-level Data Link Control."
+        },
+        "memoryTip": "• HDLC = High-level Data Link Control."
+      }
+    },
+    {
+      "id": 461,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 53,
+      "question": "Which of the following can be achieved by using SSL/TLS?",
+      "options": {
+        "A": "Processing time is shortened in communication between clients and servers.",
+        "B": "Communication between clients and servers is encrypted.",
+        "C": "The SMTP connection from mail software to a Web server is enabled.",
+        "D": "The trails of communication between browsers and Web servers are secured."
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Cái nào sau đây achieved dùng SSL/TLS?",
+        "optionsVi": {
+          "A": "Thời gian xử lý rút ngắn trong truyền thông client–server.",
+          "B": "Truyền thông giữ clients and servers đã mã hóa.",
+          "C": "SMTP connection mail phần mềm Web máy chủ enabled.",
+          "D": "Dấu vết truyền thông trình duyệt–web server được bảo vệ."
+        },
+        "answerDisplay": "B. Truyền thông giữ clients and servers đã mã hóa.",
+        "concept": "• SSL/TLS: mã hóa kênh + xác thực (thường server cert) — confidentiality (và integrity) trên đường truyền.",
+        "whyCorrect": "• B đúng.\n• A sai (overhead crypto có thể chậm hơn); C không phải mục tiêu SSL; D «trails secured» mơ hồ/không chính.",
+        "intent": "• J7 — SSL/TLS purpose.",
+        "whatIs": {
+          "A": "Faster processing — sai.",
+          "B": "Encrypt channel — đúng.",
+          "C": "SMTP to Web — sai.",
+          "D": "Trails — không định nghĩa chính."
+        },
+        "whyWrong": {
+          "A": "• Là gì? Shorten processing time.\n• Dùng để làm gì? Sai.\n• Vì sao sai? TLS thêm handshake/encrypt cost.",
+          "C": "• Là gì? SMTP to Web server.\n• Dùng để làm gì? Sai protocol role.\n• Vì sao sai? TLS không «bật SMTP tới web».",
+          "D": "• Là gì? Trails secured.\n• Dùng để làm gì? Mơ hồ.\n• Vì sao sai? Mục tiêu rõ là encrypt (+auth) channel."
+        },
+        "memoryTip": "• SSL/TLS → mã hóa (và xác thực) kênh."
+      }
+    },
+    {
+      "id": 462,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 54,
+      "question": "There exist the same two devices, each with an MTBF of 45 hours and an MTTR of 5 hours. What is the availability of a system that connects these TWO devices in series?",
+      "options": {
+        "A": "0.76",
+        "B": "0.95",
+        "C": "0.99",
+        "D": "0.81"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JFE301_SP26_FE",
+      "explanation": {
+        "questionVi": "Có hai thiết bị giống nhau, mỗi cái có MTBF 45 giờ và MTTR 5 giờ. Availability của hệ nối hai thiết bị này theo kiểu nối tiếp là bao nhiêu?",
+        "optionsVi": {
+          "A": "0.76",
+          "B": "0.95",
+          "C": "0.99",
+          "D": "0.81"
+        },
+        "answerDisplay": "D. 0.81",
+        "concept": "• A_i = MTBF/(MTBF+MTTR). Series độc lập: A_sys = A₁×A₂.",
+        "whyCorrect": "• A = 45/(45+5) = 45/50 = **0.9**.\n• Series 2 máy: 0.9×0.9 = **0.81**.\n• 0.95 = nhầm một máy khác số; 0.99 quá cao; 0.76 sai phép.",
+        "intent": "• J4 — availability series.",
+        "whatIs": {
+          "A": "0.76 — sai tính.",
+          "B": "0.95 — không khớp 0.9².",
+          "C": "0.99 — quá cao.",
+          "D": "0.81 = 0.9×0.9."
+        },
+        "whyWrong": {
+          "A": "• Là gì? 0.76.\n• Dùng để làm gì? Sai.\n• Vì sao sai? Đúng 0.81.",
+          "B": "• Là gì? 0.95.\n• Dùng để làm gì? Có thể nhầm MTBF/(MTBF+1).\n• Vì sao sai? Một device =0.9; series =0.81.",
+          "C": "• Là gì? 0.99.\n• Dùng để làm gì? Gần parallel lầm.\n• Vì sao sai? Series nhân → thấp hơn single."
+        },
+        "memoryTip": "• A=MTBF/(MTBF+MTTR) · series: nhân · parallel: 1−∏(1−A)."
+      }
+    }
+  ]
+}

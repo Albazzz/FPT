@@ -1,12 +1,17 @@
 {
-  "generatedAt": "2026-07-23T00:00:00.000Z",
-  "subjects": ["prm", "mln", "jit", "fe"],
+  "generatedAt": "2026-07-25T11:29:34.162Z",
+  "subjects": [
+    "prm",
+    "mln",
+    "jit",
+    "fe"
+  ],
   "counts": {
     "prm": 225,
     "mln": 615,
-    "jit": 632,
+    "jit": 780,
     "fe": 726
   },
-  "total": 2198,
-  "notes": "Imported missing questions from han126-phuc2004.github.io/MLN122_FE; question map on play.html"
+  "total": 2346,
+  "notes": "Per-task parts under quiz/data/{subject}/{task}.json; monofile merged for app"
 }

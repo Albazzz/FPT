@@ -1,0 +1,2083 @@
+{
+  "subject": "prm",
+  "task": "fe",
+  "taskLabel": "SP26-FE",
+  "count": 51,
+  "questions": [
+    {
+      "id": 49,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 1,
+      "question": "Why is clean architecture beneficial?",
+      "options": {
+        "A": "Fewer files",
+        "B": "Easier maintenance and testing",
+        "C": "Better UI",
+        "D": "Faster builds"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vì sao clean architecture có lợi?",
+        "optionsVi": {
+          "A": "Fewer files",
+          "B": "Easier maintenance và testing",
+          "C": "Better UI",
+          "D": "Build nhanh hơn"
+        },
+        "answerDisplay": "B. Easier maintenance và testing",
+        "concept": "• Clean architecture tách layer (UI/domain/data), dependency hướng vào trong.",
+        "whyCorrect": "• Dễ test, đổi UI/DB độc lập; giảm spaghetti.\n• Không ép một widget khổng lồ.",
+        "whyWrong": {
+          "A": "• Là gì? Fewer files — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Fewer files» không phải thứ đề cần (đáp án đúng hướng «Easier maintenance and testing»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Better UI — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Better UI» không phải thứ đề cần (đáp án đúng hướng «Easier maintenance and testing»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Faster builds — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Faster builds» không phải thứ đề cần (đáp án đúng hướng «Easier maintenance and testing»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Fewer files — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Easier maintenance and testing — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Better UI — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Faster builds — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L5 — clean arch.",
+        "memoryTip": "• Ranh giới rõ → dễ test/đổi."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 50,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 2,
+      "question": "What is Dart primarily designed for in the Flutter ecosystem?",
+      "options": {
+        "A": "Database management",
+        "B": "User interface development",
+        "C": "General-purpose programming with UI focus",
+        "D": "Network security"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong hệ sinh thái Flutter, Dart chủ yếu được thiết kế để làm gì?",
+        "optionsVi": {
+          "A": "Database management",
+          "B": "User interface phát triển",
+          "C": "General-purpose programming with UI focus",
+          "D": "Network security"
+        },
+        "answerDisplay": "C. General-purpose programming with UI focus",
+        "concept": "• General-purpose programming with UI focus: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: What is Dart primarily designed for in the Flutter ecosystem?\n• Đáp án đúng hướng tới: General-purpose programming with UI focus: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Tầng CSDL / SQL.\n• Dùng để làm gì? Lưu trữ quan hệ, không animation UI.\n• Vì sao sai? «Database management» không phải thứ đề cần (đáp án đúng hướng «General-purpose programming with UI focu»); Lưu trữ quan hệ, không animation UI.",
+          "B": "• Là gì? User interface development — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «User interface development» không phải thứ đề cần (đáp án đúng hướng «General-purpose programming with UI focu»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Network security — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Network security» không phải thứ đề cần (đáp án đúng hướng «General-purpose programming with UI focu»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Tầng CSDL / SQL.",
+          "B": "User interface development — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "General-purpose programming with UI focus — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+          "D": "Network security — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain.",
+        "memoryTip": "• Unit=logic · Widget=UI · Integration=E2E · doctor=môi trường."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 51,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 3,
+      "question": "Why is secure authentication critical in mobile apps?",
+      "options": {
+        "A": "UI quality",
+        "B": "Protect user data",
+        "C": "Reduce code",
+        "D": "Improve speed"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vì sao xác thực an toàn quan trọng trên app di động?",
+        "optionsVi": {
+          "A": "UI quality",
+          "B": "Protect user data",
+          "C": "giảm code",
+          "D": "cải thiện speed"
+        },
+        "answerDisplay": "B. Protect user data",
+        "concept": "• Protect user data: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: Why is secure authentication critical in mobile apps?\n• Đáp án đúng hướng tới: Protect user data: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? UI quality — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «UI quality» không phải thứ đề cần (đáp án đúng hướng «Protect user data»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Reduce code — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Reduce code» không phải thứ đề cần (đáp án đúng hướng «Protect user data»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Improve speed — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Improve speed» không phải thứ đề cần (đáp án đúng hướng «Protect user data»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "UI quality — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Protect user data — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Reduce code — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Improve speed — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain.",
+        "memoryTip": "• Token=credential · Guard=cửa route · Authorization header."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 52,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 4,
+      "question": "Which HTTP method is typically used to retrieve data?",
+      "options": {
+        "A": "POST",
+        "B": "PUT",
+        "C": "GET",
+        "D": "DELETE"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Phương thức HTTP nào thường dùng để lấy dữ liệu?",
+        "optionsVi": {
+          "A": "POST",
+          "B": "PUT",
+          "C": "GET",
+          "D": "DELETE"
+        },
+        "answerDisplay": "C. GET",
+        "concept": "• HTTP GET dùng để lấy/tải tài nguyên, không (lẽ ra) gửi body tạo mới.",
+        "whyCorrect": "• POST tạo/cập nhật với body; DELETE/PUT mục đích khác.\n• Đọc dữ liệu API.\n• Vì vậy chọn «GET» khớp đề.",
+        "whyWrong": {
+          "A": "• Là gì? HTTP POST — gửi body tạo/cập nhật.\n• Dùng để làm gì? Submit/tạo bản ghi.\n• Vì sao sai? «POST» không phải thứ đề cần (đáp án đúng hướng «GET»); Submit/tạo bản ghi.",
+          "B": "• Là gì? PUT — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «PUT» không phải thứ đề cần (đáp án đúng hướng «GET»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? DELETE — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «DELETE» không phải thứ đề cần (đáp án đúng hướng «GET»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "HTTP POST — gửi body tạo/cập nhật.",
+          "B": "PUT — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "HTTP GET — lấy tài nguyên.",
+          "D": "DELETE — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L7 — GET.",
+        "memoryTip": "• Đọc dữ liệu → GET."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 53,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 5,
+      "question": "What happens if a non-nullable variable is not initialized in Dart?",
+      "options": {
+        "A": "The app runs normally",
+        "B": "A runtime exception occurs",
+        "C": "A compile-time error occurs",
+        "D": "The value becomes null automatically"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Điều gì xảy ra nếu biến non-nullable chưa được khởi tạo trong Dart?",
+        "optionsVi": {
+          "A": "The app runs normally",
+          "B": "A runtime exception occurs",
+          "C": "Xảy ra lỗi lúc biên dịch",
+          "D": "The value becomes null automatically"
+        },
+        "answerDisplay": "C. Xảy ra lỗi lúc biên dịch",
+        "concept": "• Null safety: biến non-nullable phải được khởi tạo trước khi dùng — thường lỗi lúc biên dịch.",
+        "whyCorrect": "• Không «im lặng null» hay tự dynamic.\n• Compiler bắt thiếu init.",
+        "whyWrong": {
+          "A": "• Là gì? The app runs normally — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «The app runs normally» không phải thứ đề cần (đáp án đúng hướng «A compile-time error occurs»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "B": "• Là gì? A runtime exception occurs — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «A runtime exception occurs» không phải thứ đề cần (đáp án đúng hướng «A compile-time error occurs»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? The value becomes null automatically — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «The value becomes null automatically» không phải thứ đề cần (đáp án đúng hướng «A compile-time error occurs»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "The app runs normally — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "A runtime exception occurs — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "A compile-time error occurs — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+          "D": "The value becomes null automatically — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L6 — null safety.",
+        "memoryTip": "• Non-null → phải init."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 54,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 6,
+      "question": "Which command builds a release APK?",
+      "options": {
+        "A": "flutter run",
+        "B": "flutter build apk",
+        "C": "flutter doctor",
+        "D": "flutter clean"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Lệnh nào build APK bản release?",
+        "optionsVi": {
+          "A": "flutter run",
+          "B": "flutter build apk",
+          "C": "flutter doctor",
+          "D": "flutter clean"
+        },
+        "answerDisplay": "B. flutter build apk",
+        "concept": "• `flutter build apk` tạo gói Android APK bản release.",
+        "whyCorrect": "• Lệnh build APK release chính thức của Flutter CLI.\n• `flutter run` = dev; `flutter doctor` = môi trường; `flutter clean` = xóa cache.",
+        "whyWrong": {
+          "A": "• Là gì? flutter run — chạy app dev/debug.\n• Dùng để làm gì? Debug trên device/emulator.\n• Vì sao sai? Chạy dev/debug — không tạo APK release.",
+          "C": "• Là gì? flutter doctor — kiểm tra SDK/PATH/toolchain.\n• Dùng để làm gì? Verify môi trường.\n• Vì sao sai? Chỉ kiểm tra môi trường — không build APK.",
+          "D": "• Là gì? flutter clean — xóa build cache.\n• Dùng để làm gì? Làm sạch trước rebuild.\n• Vì sao sai? Chỉ xóa cache build — không sinh APK."
+        },
+        "whatIs": {
+          "A": "flutter run — chạy app dev/debug.",
+          "B": "flutter build apk — build APK release.",
+          "C": "flutter doctor — kiểm tra SDK/PATH/toolchain.",
+          "D": "flutter clean — xóa build cache."
+        },
+        "intent": "• L4/L8 — nhận đúng lệnh CLI theo mục tiêu build vs verify vs run.",
+        "memoryTip": "• Build release APK: flutter build apk."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 55,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 7,
+      "question": "Which widget allows overlapping of its child widgets?",
+      "options": {
+        "A": "Column",
+        "B": "Row",
+        "C": "Stack",
+        "D": "Expanded"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Đâu là widget cho phép các widget con chồng lên nhau?",
+        "optionsVi": {
+          "A": "Column",
+          "B": "Row",
+          "C": "Stack",
+          "D": "Expanded"
+        },
+        "answerDisplay": "C. Stack",
+        "concept": "• Stack xếp widget con theo trục Z, cho phép chồng (overlap).",
+        "whyCorrect": "• Row/Column xếp một trục, không overlap mặc định.\n• ListView cuộn list, không phải lớp chồng.",
+        "whyWrong": {
+          "A": "• Là gì? Column — xếp con theo cột dọc.\n• Dùng để làm gì? Bố cục dọc; không overlap/scroll mặc định.\n• Vì sao sai? Row/Column xếp một trục, không overlap mặc định như Stack.",
+          "B": "• Là gì? Row — xếp con theo hàng ngang.\n• Dùng để làm gì? Bố cục ngang (main axis ngang).\n• Vì sao sai? Row/Column xếp một trục, không overlap mặc định như Stack.",
+          "D": "• Là gì? Expanded — chiếm hết không gian còn lại trên main axis của Flex.\n• Dùng để làm gì? Trong Row/Column chia phần trống theo flex.\n• Vì sao sai? Expanded chia space flex — không xếp chồng Z."
+        },
+        "whatIs": {
+          "A": "Column — xếp con theo cột dọc.",
+          "B": "Row — xếp con theo hàng ngang.",
+          "C": "Stack — xếp chồng con theo trục Z, cho overlap.",
+          "D": "Expanded — chiếm hết không gian còn lại trên main axis của Flex."
+        },
+        "intent": "• L1 — Stack vs Row/Column.",
+        "memoryTip": "• Overlap → Stack."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 56,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 8,
+      "question": "Which platforms can Flutter applications target using a single codebase?",
+      "options": {
+        "A": "Android only",
+        "B": "iOS only",
+        "C": "Android, iOS, web, and desktop",
+        "D": "Web servers only"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Flutter nhắm nền tảng nào với một codebase?",
+        "optionsVi": {
+          "A": "Chỉ Android",
+          "B": "Chỉ iOS",
+          "C": "Android, iOS, web, và desktop",
+          "D": "Chỉ Web servers"
+        },
+        "answerDisplay": "C. Android, iOS, web, và desktop",
+        "concept": "• Android, iOS, web, and desktop: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: Which platforms can Flutter applications target using a single codebase?\n• Đáp án đúng hướng tới: Android, iOS, web, and desktop: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Android only — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Android only» không phải thứ đề cần (đáp án đúng hướng «Android, iOS, web, and desktop»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "B": "• Là gì? iOS only — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «iOS only» không phải thứ đề cần (đáp án đúng hướng «Android, iOS, web, and desktop»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Web servers only — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Web servers only» không phải thứ đề cần (đáp án đúng hướng «Android, iOS, web, and desktop»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Android only — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "iOS only — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Android, iOS, web, and desktop — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Web servers only — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain.",
+        "memoryTip": "• Unit=logic · Widget=UI · Integration=E2E · doctor=môi trường."
+      },
+      "source": "SP26-FE",
+      "_pilotFixed": "2026-07-23-v1"
+    },
+    {
+      "id": 57,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 9,
+      "question": "What is the main risk of improper state management?",
+      "options": {
+        "A": "UI inconsistency",
+        "B": "Longer compile time",
+        "C": "Package conflicts",
+        "D": "Build errors"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Rủi ro chính của quản lý state kém là gì?",
+        "optionsVi": {
+          "A": "UI inconsistency",
+          "B": "Longer compile time",
+          "C": "Package conflicts",
+          "D": "Build errors"
+        },
+        "answerDisplay": "A. UI inconsistency",
+        "concept": "• UI inconsistency: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: What is the main risk of improper state management?\n• Đáp án đúng hướng tới: UI inconsistency: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "B": "• Là gì? Longer compile time — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Longer compile time» không phải thứ đề cần (đáp án đúng hướng «UI inconsistency»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Package/import — module thư viện tái sử dụng.\n• Dùng để làm gì? Tổ chức dependency pub.\n• Vì sao sai? «Package conflicts» không phải thứ đề cần (đáp án đúng hướng «UI inconsistency»); Tổ chức dependency pub.",
+          "D": "• Là gì? Build errors — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Build errors» không phải thứ đề cần (đáp án đúng hướng «UI inconsistency»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "UI inconsistency — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Longer compile time — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Package/import — module thư viện tái sử dụng.",
+          "D": "Build errors — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 58,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 10,
+      "question": "What does CurvedAnimation provide?",
+      "options": {
+        "A": "Layout control",
+        "B": "Animation curve behavior",
+        "C": "State updates",
+        "D": "Navigation"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "CurvedAnimation cung cấp gì?",
+        "optionsVi": {
+          "A": "Layout control",
+          "B": "Animation curve behavior",
+          "C": "State updates",
+          "D": "Navigation"
+        },
+        "answerDisplay": "B. Animation curve behavior",
+        "concept": "• Chuyển động/UI animation.",
+        "whyCorrect": "• Trải nghiệm chuyển cảnh, không thay state/auth.\n• Khớp trọng tâm đề: What does CurvedAnimation provide?\n• Đáp án đúng hướng tới: Chuyển động/UI animation.",
+        "whyWrong": {
+          "A": "• Là gì? Layout control — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Layout control» không phải thứ đề cần (đáp án đúng hướng «Animation curve behavior»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? State updates — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «State updates» không phải thứ đề cần (đáp án đúng hướng «Animation curve behavior»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Navigation» không phải thứ đề cần (đáp án đúng hướng «Animation curve behavior»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Layout control — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Animation curve behavior — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "State updates — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 59,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 11,
+      "question": "How can data be passed to a new screen?",
+      "options": {
+        "A": "Using global variables",
+        "B": "Via constructor arguments",
+        "C": "Using ThemeData",
+        "D": "Using Scaffold"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Làm sao truyền dữ liệu sang màn hình mới?",
+        "optionsVi": {
+          "A": "dùng global variables",
+          "B": "Via constructor arguments",
+          "C": "dùng ThemeData",
+          "D": "dùng Scaffold"
+        },
+        "answerDisplay": "B. Via constructor arguments",
+        "concept": "• Via constructor arguments: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: How can data be passed to a new screen?\n• Đáp án đúng hướng tới: Via constructor arguments: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Using global variables — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Using global variables» không phải thứ đề cần (đáp án đúng hướng «Via constructor arguments»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Theme/ThemeData — màu, typography, style dùng chung.\n• Dùng để làm gì? Đồng bộ giao diện.\n• Vì sao sai? «Using ThemeData» không phải thứ đề cần (đáp án đúng hướng «Via constructor arguments»); Đồng bộ giao diện.",
+          "D": "• Là gì? Scaffold — khung màn Material (appBar, body, fab…).\n• Dùng để làm gì? Shell một màn hình.\n• Vì sao sai? «Using Scaffold» không phải thứ đề cần (đáp án đúng hướng «Via constructor arguments»); Shell một màn hình."
+        },
+        "whatIs": {
+          "A": "Using global variables — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Via constructor arguments — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Theme/ThemeData — màu, typography, style dùng chung.",
+          "D": "Scaffold — khung màn Material (appBar, body, fab…)."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 60,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 12,
+      "question": "What is the purpose of parsing JSON?",
+      "options": {
+        "A": "Encrypt data",
+        "B": "Convert JSON into Dart objects",
+        "C": "Send requests",
+        "D": "Cache responses"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Mục đích của việc parse JSON?",
+        "optionsVi": {
+          "A": "Encrypt data",
+          "B": "Convert JSON thành Dart objects",
+          "C": "Send requests",
+          "D": "Cache responses"
+        },
+        "answerDisplay": "B. Convert JSON thành Dart objects",
+        "concept": "• Parse JSON biến chuỗi/map JSON thành cấu trúc Dart dùng được trong app.",
+        "whyCorrect": "• Không compile shader hay ký APK.\n• Model typed an toàn hơn Map string lỏng mãi.",
+        "whyWrong": {
+          "A": "• Là gì? Encrypt data — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Encrypt data» không phải thứ đề cần (đáp án đúng hướng «Convert JSON into Dart objects»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Send requests — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Send requests» không phải thứ đề cần (đáp án đúng hướng «Convert JSON into Dart objects»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Cache responses — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Cache responses» không phải thứ đề cần (đáp án đúng hướng «Convert JSON into Dart objects»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Encrypt data — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Convert JSON into Dart objects — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Send requests — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Cache responses — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L7 — JSON/model.",
+        "memoryTip": "• JSON → Map → Model.fromJson."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 61,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 13,
+      "question": "Which phase involves gathering requirements?",
+      "options": {
+        "A": "Implementation",
+        "B": "Design",
+        "C": "Analysis",
+        "D": "Testing"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Giai đoạn nào liên quan thu thập yêu cầu?",
+        "optionsVi": {
+          "A": "Implementation",
+          "B": "Design",
+          "C": "Analysis",
+          "D": "Testing"
+        },
+        "answerDisplay": "C. Analysis",
+        "concept": "• Analysis: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: Which phase involves gathering requirements?\n• Đáp án đúng hướng tới: Analysis: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Implementation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Implementation» không phải thứ đề cần (đáp án đúng hướng «Analysis»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "B": "• Là gì? Design — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Design» không phải thứ đề cần (đáp án đúng hướng «Analysis»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Testing — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Testing» không phải thứ đề cần (đáp án đúng hướng «Analysis»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Implementation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Design — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Analysis — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Testing — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 62,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 14,
+      "question": "Which Flutter tool helps debug network requests?",
+      "options": {
+        "A": "DevTools",
+        "B": "Inspector",
+        "C": "Emulator",
+        "D": "Hot reload"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Công cụ Flutter nào giúp debug request mạng?",
+        "optionsVi": {
+          "A": "DevTools",
+          "B": "Inspector",
+          "C": "Emulator",
+          "D": "Hot reload"
+        },
+        "answerDisplay": "A. DevTools",
+        "concept": "• Flutter DevTools: inspector, performance, network… để debug app.",
+        "whyCorrect": "• Emulator chỉ chạy app; Inspector một phần; Notepad không debug Flutter.\n• Phân tích UI/CPU/mạng khi dev.\n• Vì vậy chọn «DevTools» khớp đề.",
+        "whyWrong": {
+          "B": "• Là gì? Widget Inspector — xem cây widget/layout.\n• Dùng để làm gì? Debug cấu trúc UI.\n• Vì sao sai? «Inspector» không phải thứ đề cần (đáp án đúng hướng «DevTools»); Debug cấu trúc UI.",
+          "C": "• Là gì? Emulator — máy ảo chạy app.\n• Dùng để làm gì? Chạy thử, không thay profiler đầy đủ.\n• Vì sao sai? «Emulator» không phải thứ đề cần (đáp án đúng hướng «DevTools»); Chạy thử, không thay profiler đầy đủ.",
+          "D": "• Là gì? Hot reload — nạp code UI, gần như giữ state.\n• Dùng để làm gì? Xem đổi UI nhanh khi dev.\n• Vì sao sai? «Hot reload» không phải thứ đề cần (đáp án đúng hướng «DevTools»); Xem đổi UI nhanh khi dev."
+        },
+        "whatIs": {
+          "A": "DevTools — debug performance/network/inspector.",
+          "B": "Widget Inspector — xem cây widget/layout.",
+          "C": "Emulator — máy ảo chạy app.",
+          "D": "Hot reload — nạp code UI, gần như giữ state."
+        },
+        "intent": "• L8 — DevTools.",
+        "memoryTip": "• Hiệu năng/mạng → DevTools."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 63,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 15,
+      "question": "Which Dart feature supports object-oriented programming?",
+      "options": {
+        "A": "Widgets",
+        "B": "Classes and objects",
+        "C": "Hot reload",
+        "D": "Layout builders"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Tính năng Dart nào hỗ trợ lập trình hướng đối tượng?",
+        "optionsVi": {
+          "A": "Widgets",
+          "B": "Class và object",
+          "C": "Hot reload",
+          "D": "Layout builders"
+        },
+        "answerDisplay": "B. Class và object",
+        "concept": "• Classes and objects: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: Which Dart feature supports object-oriented programming?\n• Đáp án đúng hướng tới: Classes and objects: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Widgets — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Widgets» không phải thứ đề cần (đáp án đúng hướng «Classes and objects»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Hot reload — nạp code UI, gần như giữ state.\n• Dùng để làm gì? Xem đổi UI nhanh khi dev.\n• Vì sao sai? «Hot reload» không phải thứ đề cần (đáp án đúng hướng «Classes and objects»); Xem đổi UI nhanh khi dev.",
+          "D": "• Là gì? Layout builders — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Layout builders» không phải thứ đề cần (đáp án đúng hướng «Classes and objects»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Widgets — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Classes and objects — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Hot reload — nạp code UI, gần như giữ state.",
+          "D": "Layout builders — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 64,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 16,
+      "question": "Which approach helps reduce unnecessary widget rebuilds?",
+      "options": {
+        "A": "Using global variables",
+        "B": "Fine-grained state updates",
+        "C": "Hot restart",
+        "D": "Large widgets"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cách nào giúp giảm rebuild widget không cần thiết?",
+        "optionsVi": {
+          "A": "dùng global variables",
+          "B": "Fine-grained state updates",
+          "C": "Hot restart",
+          "D": "Large widgets"
+        },
+        "answerDisplay": "B. Fine-grained state updates",
+        "concept": "• Fine-grained state updates: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: Which approach helps reduce unnecessary widget rebuilds?\n• Đáp án đúng hướng tới: Fine-grained state updates: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Using global variables — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Using global variables» không phải thứ đề cần (đáp án đúng hướng «Fine-grained state updates»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Hot restart — chạy lại app, reset state.\n• Dùng để làm gì? Khởi tạo lại sau đổi lớn.\n• Vì sao sai? «Hot restart» không phải thứ đề cần (đáp án đúng hướng «Fine-grained state updates»); Khởi tạo lại sau đổi lớn.",
+          "D": "• Là gì? Large widgets — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Large widgets» không phải thứ đề cần (đáp án đúng hướng «Fine-grained state updates»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Using global variables — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Fine-grained state updates — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+          "C": "Hot restart — chạy lại app, reset state.",
+          "D": "Large widgets — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 65,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 17,
+      "question": "Which action best demonstrates Flutter's reactive UI model?",
+      "options": {
+        "A": "Manually updating UI elements",
+        "B": "Rebuilding UI in response to state changes",
+        "C": "Editing layout XML",
+        "D": "Calling native APIs"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Hành động nào thể hiện rõ mô hình UI reactive của Flutter?",
+        "optionsVi": {
+          "A": "Manually updating UI elements",
+          "B": "Rebuilding UI in response to state changes",
+          "C": "Editing layout XML",
+          "D": "Calling native APIs"
+        },
+        "answerDisplay": "B. Rebuilding UI in response to state changes",
+        "concept": "• Flutter build lại nhánh widget khi phụ thuộc đổi.",
+        "whyCorrect": "• Cập nhật UI phản ứng state.\n• Khớp trọng tâm đề: Which action best demonstrates Flutter's reactive UI model?\n• Đáp án đúng hướng tới: Flutter build lại nhánh widget khi phụ thuộc đổi.",
+        "whyWrong": {
+          "A": "• Là gì? Manually updating UI elements — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Manually updating UI elements» không phải thứ đề cần (đáp án đúng hướng «Rebuilding UI in response to state chang»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Editing layout XML — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Editing layout XML» không phải thứ đề cần (đáp án đúng hướng «Rebuilding UI in response to state chang»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Calling native APIs — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Calling native APIs» không phải thứ đề cần (đáp án đúng hướng «Rebuilding UI in response to state chang»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Manually updating UI elements — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Rebuilding UI in response to state changes — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+          "C": "Editing layout XML — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Calling native APIs — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 66,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 18,
+      "question": "Why are const widgets recommended?",
+      "options": {
+        "A": "They improve readability",
+        "B": "They reduce rebuild cost",
+        "C": "They add state",
+        "D": "They handle navigation"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vì sao nên dùng const widget?",
+        "optionsVi": {
+          "A": "They cải thiện readability",
+          "B": "They giảm rebuild cost",
+          "C": "They add state",
+          "D": "They handle navigation"
+        },
+        "answerDisplay": "B. They giảm rebuild cost",
+        "concept": "• const widget là instance compile-time, có thể tái sử dụng và bỏ qua rebuild không cần thiết.",
+        "whyCorrect": "• Flutter so sánh identity/canonical instance → ít work build hơn.\n• Không liên quan tắt null safety hay ép rebuild full tree.",
+        "whyWrong": {
+          "A": "• Là gì? They improve readability — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «They improve readability» không phải thứ đề cần (tối ưu rebuild bằng const); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? They add state — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «They add state» không phải thứ đề cần (tối ưu rebuild bằng const); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? They handle navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «They handle navigation» không phải thứ đề cần (tối ưu rebuild bằng const); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "They improve readability — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "They reduce rebuild cost — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "They add state — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "They handle navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L9/L1 — const performance.",
+        "memoryTip": "• const = rẻ hơn khi UI không đổi."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 67,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 19,
+      "question": "Why should animations be disposed properly?",
+      "options": {
+        "A": "Improve UI",
+        "B": "Prevent memory leaks",
+        "C": "Speed up builds",
+        "D": "Fix layout"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vì sao cần dispose animation đúng cách?",
+        "optionsVi": {
+          "A": "cải thiện UI",
+          "B": "Prevent memory leaks",
+          "C": "Speed up builds",
+          "D": "Fix layout"
+        },
+        "answerDisplay": "B. Prevent memory leaks",
+        "concept": "• Prevent memory leaks: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: Why should animations be disposed properly?\n• Đáp án đúng hướng tới: Prevent memory leaks: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Improve UI — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Improve UI» không phải thứ đề cần (đáp án đúng hướng «Prevent memory leaks»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Speed up builds — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Speed up builds» không phải thứ đề cần (đáp án đúng hướng «Prevent memory leaks»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Fix layout — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Fix layout» không phải thứ đề cần (đáp án đúng hướng «Prevent memory leaks»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Improve UI — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Rò rỉ bộ nhớ.",
+          "C": "Speed up builds — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Fix layout — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 68,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 20,
+      "question": "Which Flutter test focuses on UI components?",
+      "options": {
+        "A": "Unit test",
+        "B": "Widget test",
+        "C": "Integration test",
+        "D": "Load test"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Loại test Flutter nào tập trung component UI?",
+        "optionsVi": {
+          "A": "Unit test",
+          "B": "Widget test",
+          "C": "Integration test",
+          "D": "Load test"
+        },
+        "answerDisplay": "B. Widget test",
+        "concept": "• Widget test bơm widget, find/tap/expect trên cây UI test.",
+        "whyCorrect": "• Tập trung component UI, nhẹ hơn integration đầy đủ.\n• Unit không gắn widget tree.",
+        "whyWrong": {
+          "A": "• Là gì? Unit test — kiểm hàm/class logic, không full UI.\n• Dùng để làm gì? Nhanh, cô lập.\n• Vì sao sai? Unit test logic thuần, không tập trung component UI.",
+          "C": "• Là gì? Integration test — luồng E2E nhiều lớp.\n• Dùng để làm gì? Gần hành vi user.\n• Vì sao sai? Integration nặng hơn, E2E — đề hỏi widget test UI.",
+          "D": "• Là gì? Load test — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Load test» không phải thứ đề cần (đáp án đúng hướng «Widget test»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Unit test — kiểm hàm/class logic, không full UI.",
+          "B": "Widget test — bơm widget tree, find/tap UI.",
+          "C": "Integration test — luồng E2E nhiều lớp.",
+          "D": "Load test — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L8 — widget test.",
+        "memoryTip": "• Widget test ↔ find.byType / find.text."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 69,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 21,
+      "question": "Why should database operations be asynchronous?",
+      "options": {
+        "A": "Simplify syntax",
+        "B": "Avoid blocking UI thread",
+        "C": "Reduce code",
+        "D": "Improve theme"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vì sao thao tác database nên bất đồng bộ?",
+        "optionsVi": {
+          "A": "Simplify syntax",
+          "B": "Avoid blocking UI thread",
+          "C": "giảm code",
+          "D": "cải thiện theme"
+        },
+        "answerDisplay": "B. Avoid blocking UI thread",
+        "concept": "• Avoid blocking UI thread: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: Why should database operations be asynchronous?\n• Đáp án đúng hướng tới: Avoid blocking UI thread: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Simplify syntax — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Simplify syntax» không phải thứ đề cần (đáp án đúng hướng «Avoid blocking UI thread»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Reduce code — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Reduce code» không phải thứ đề cần (đáp án đúng hướng «Avoid blocking UI thread»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Theme/ThemeData — màu, typography, style dùng chung.\n• Dùng để làm gì? Đồng bộ giao diện.\n• Vì sao sai? «Improve theme» không phải thứ đề cần (đáp án đúng hướng «Avoid blocking UI thread»); Đồng bộ giao diện."
+        },
+        "whatIs": {
+          "A": "Simplify syntax — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Avoid blocking UI thread — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Reduce code — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Theme/ThemeData — màu, typography, style dùng chung."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain.",
+        "memoryTip": "• Future: 1 lần · Stream: nhiều lần."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 70,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 22,
+      "question": "Why is Chapter 13 considered optional (Plus)?",
+      "options": {
+        "A": "It replaces core concepts",
+        "B": "Apps can work without deep optimization",
+        "C": "It manages navigation",
+        "D": "It handles authentication"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vì sao Chapter 13 được xem là tùy chọn (Plus)?",
+        "optionsVi": {
+          "A": "It replaces core concepts",
+          "B": "Apps can work không deep optimization",
+          "C": "It manages navigation",
+          "D": "It handles authentication"
+        },
+        "answerDisplay": "B. Apps can work không deep optimization",
+        "concept": "• Apps can work without deep optimization: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: Why is Chapter 13 considered optional (Plus)?\n• Đáp án đúng hướng tới: Apps can work without deep optimization: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? It replaces core concepts — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «It replaces core concepts» không phải thứ đề cần (đáp án đúng hướng «Apps can work without deep optimization»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? It manages navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «It manages navigation» không phải thứ đề cần (đáp án đúng hướng «Apps can work without deep optimization»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? It handles authentication — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «It handles authentication» không phải thứ đề cần (đáp án đúng hướng «Apps can work without deep optimization»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "It replaces core concepts — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Apps can work without deep optimization — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "It manages navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "It handles authentication — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 71,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 23,
+      "question": "Which widget applies a theme to an entire Flutter application?",
+      "options": {
+        "A": "Scaffold",
+        "B": "Theme",
+        "C": "MaterialApp",
+        "D": "Container"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Widget nào gắn theme cho toàn bộ ứng dụng Flutter?",
+        "optionsVi": {
+          "A": "Scaffold",
+          "B": "Theme",
+          "C": "MaterialApp",
+          "D": "Container"
+        },
+        "answerDisplay": "C. MaterialApp",
+        "concept": "• MaterialApp (root) gắn ThemeData cho toàn ứng dụng.",
+        "whyCorrect": "• Theme ở root lan xuống cây con; Divider/Spacer không apply theme app-wide.\n• Root cấu hình app-wide.\n• Vì vậy chọn «MaterialApp» khớp đề.",
+        "whyWrong": {
+          "A": "• Là gì? Scaffold — khung màn Material (appBar, body, fab…).\n• Dùng để làm gì? Shell một màn hình.\n• Vì sao sai? «Scaffold» không phải thứ đề cần (style visual app); Shell một màn hình.",
+          "B": "• Là gì? Theme/ThemeData — màu, typography, style dùng chung.\n• Dùng để làm gì? Đồng bộ giao diện.\n• Vì sao sai? «Theme» không phải thứ đề cần (style visual app); Đồng bộ giao diện.",
+          "D": "• Là gì? Container — widget trang trí/layout đa năng (màu, padding, constraint…).\n• Dùng để làm gì? Bọc/styling; không chuyên spacer cố định.\n• Vì sao sai? «Container» không phải thứ đề cần (style visual app); Bọc/styling; không chuyên spacer cố định."
+        },
+        "whatIs": {
+          "A": "Scaffold — khung màn Material (appBar, body, fab…).",
+          "B": "Theme/ThemeData — màu, typography, style dùng chung.",
+          "C": "MaterialApp/CupertinoApp — root theme, route, localization.",
+          "D": "Container — widget trang trí/layout đa năng (màu, padding, constraint…)."
+        },
+        "intent": "• L9 — theme.",
+        "memoryTip": "• ThemeData = skin app · gắn qua MaterialApp."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 72,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 24,
+      "question": "What is the purpose of SliverAppBar?",
+      "options": {
+        "A": "Static app bar",
+        "B": "Scrollable flexible app bar",
+        "C": "Bottom navigation",
+        "D": "Drawer control"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Mục đích của SliverAppBar là gì?",
+        "optionsVi": {
+          "A": "App bar tĩnh",
+          "B": "App bar linh hoạt, cuộn theo nội dung",
+          "C": "Điều hướng dưới cùng",
+          "D": "Điều khiển drawer"
+        },
+        "answerDisplay": "B. App bar linh hoạt, cuộn theo nội dung",
+        "concept": "• SliverAppBar là app bar trong CustomScrollView, co/giãn theo cuộn nội dung.",
+        "whyCorrect": "• Khác app bar tĩnh, bottom navigation hay drawer.\n• Loose không bắt buộc full space; tight ≈ Expanded.\n• Vì vậy chọn «App bar linh hoạt, cuộn theo nội dung» khớp đề.",
+        "whyWrong": {
+          "A": "• Là gì? Static app bar — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Static app bar» không phải thứ đề cần (đáp án đúng hướng «Scrollable flexible app bar»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Bottom navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Bottom navigation» không phải thứ đề cần (đáp án đúng hướng «Scrollable flexible app bar»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Drawer control — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Drawer control» không phải thứ đề cần (đáp án đúng hướng «Scrollable flexible app bar»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Static app bar — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Flexible — co giãn trong Flex theo flex + FlexFit.",
+          "C": "Bottom navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Drawer control — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L1/L9 — SliverAppBar.",
+        "memoryTip": "• SliverAppBar = header cuộn linh hoạt."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 73,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 25,
+      "question": "Which widget is best used to add fixed empty space?",
+      "options": {
+        "A": "Padding",
+        "B": "Expanded",
+        "C": "SizedBox",
+        "D": "Container"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Widget nào phù hợp nhất để thêm khoảng trống cố định?",
+        "optionsVi": {
+          "A": "Padding",
+          "B": "Expanded",
+          "C": "SizedBox",
+          "D": "Container"
+        },
+        "answerDisplay": "C. SizedBox",
+        "concept": "• SizedBox tạo hộp/khoảng trống với width/height cố định cho trước.",
+        "whyCorrect": "• Khác Expanded (chiếm phần còn lại flex), khác spacer vô hướng không size.\n• Phù hợp gap cố định giữa control.",
+        "whyWrong": {
+          "A": "• Là gì? Padding — thêm khoảng lề trong quanh child (inset).\n• Dùng để làm gì? Đẩy nội dung cách mép; không tạo «ô trống» độc lập như SizedBox.\n• Vì sao sai? Padding chỉ inset quanh child — không tạo ô trống kích thước độc lập như SizedBox(width/height).",
+          "B": "• Là gì? Expanded — chiếm hết không gian còn lại trên main axis của Flex.\n• Dùng để làm gì? Trong Row/Column chia phần trống theo flex.\n• Vì sao sai? Expanded chiếm phần flex còn lại (co giãn), không phải khoảng trống width/height cố định.",
+          "D": "• Là gì? Container — widget trang trí/layout đa năng (màu, padding, constraint…).\n• Dùng để làm gì? Bọc/styling; không chuyên spacer cố định.\n• Vì sao sai? Container đa năng; spacer cố định rõ ràng và nhẹ hơn là SizedBox."
+        },
+        "whatIs": {
+          "A": "Padding — thêm khoảng lề trong quanh child (inset).",
+          "B": "Expanded — chiếm hết không gian còn lại trên main axis của Flex.",
+          "C": "SizedBox — hộp/khoảng trống với width/height cố định cho trước.",
+          "D": "Container — widget trang trí/layout đa năng (màu, padding, constraint…)."
+        },
+        "intent": "• L1 — SizedBox spacer.",
+        "memoryTip": "• SizedBox = size cố định · Expanded = phần còn lại."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 74,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 26,
+      "question": "Which package supports BLoC architecture?",
+      "options": {
+        "A": "provider",
+        "B": "flutter_bloc",
+        "C": "sqflite",
+        "D": "http"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Package nào hỗ trợ kiến trúc BLoC?",
+        "optionsVi": {
+          "A": "provider",
+          "B": "flutter_bloc",
+          "C": "sqflite",
+          "D": "http"
+        },
+        "answerDisplay": "B. flutter_bloc",
+        "concept": "• BLoC — tách event → business logic → state (thường qua Stream).",
+        "whyCorrect": "• Quản lý state có cấu trúc, dễ test.\n• Khớp trọng tâm đề: Which package supports BLoC architecture?\n• Đáp án đúng hướng tới: BLoC — tách event → business logic → state (thường qua Stream).",
+        "whyWrong": {
+          "A": "• Là gì? Provider — chia sẻ/đọc state xuống cây widget.\n• Dùng để làm gì? DI/state đơn giản, tránh prop-drill.\n• Vì sao sai? «provider» không phải thứ đề cần (đáp án đúng hướng «flutter_bloc»); DI/state đơn giản, tránh prop-drill.",
+          "C": "• Là gì? sqflite — plugin SQLite trên Flutter.\n• Dùng để làm gì? DB quan hệ local, SQL.\n• Vì sao sai? «sqflite» không phải thứ đề cần (đáp án đúng hướng «flutter_bloc»); DB quan hệ local, SQL.",
+          "D": "• Là gì? HTTP client (http/dio) — gọi API mạng.\n• Dùng để làm gì? GET/POST tải/gửi data.\n• Vì sao sai? «http» không phải thứ đề cần (đáp án đúng hướng «flutter_bloc»); GET/POST tải/gửi data."
+        },
+        "whatIs": {
+          "A": "Provider — chia sẻ/đọc state xuống cây widget.",
+          "B": "BLoC — event → logic → state (thường qua Stream).",
+          "C": "sqflite — plugin SQLite trên Flutter.",
+          "D": "HTTP client (http/dio) — gọi API mạng."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 75,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 27,
+      "question": "Which Flutter widget reacts to authentication state changes?",
+      "options": {
+        "A": "FutureBuilder",
+        "B": "StreamBuilder",
+        "C": "ListView",
+        "D": "Form"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Widget Flutter nào phản ứng thay đổi trạng thái xác thực?",
+        "optionsVi": {
+          "A": "FutureBuilder",
+          "B": "StreamBuilder",
+          "C": "ListView",
+          "D": "Form"
+        },
+        "answerDisplay": "B. StreamBuilder",
+        "concept": "• StreamBuilder — lắng nghe Stream và rebuild khi có event mới.",
+        "whyCorrect": "• UI phản ứng chuỗi dữ liệu theo thời gian (auth stream, socket…).\n• Khớp trọng tâm đề: Which Flutter widget reacts to authentication state changes?\n• Đáp án đúng hướng tới: StreamBuilder — lắng nghe Stream và rebuild khi có event mới.",
+        "whyWrong": {
+          "A": "• Là gì? FutureBuilder — lắng nghe một Future, build UI theo snapshot.\n• Dùng để làm gì? Loading/data/error cho thao tác one-shot.\n• Vì sao sai? «FutureBuilder» không phải thứ đề cần (đáp án đúng hướng «StreamBuilder»); Loading/data/error cho thao tác one-shot.",
+          "C": "• Là gì? ListView — danh sách cuộn nhiều phần tử.\n• Dùng để làm gì? List dài một trục.\n• Vì sao sai? «ListView» không phải thứ đề cần (đáp án đúng hướng «StreamBuilder»); List dài một trục.",
+          "D": "• Là gì? Form/FormState — nhóm field, validate/save/reset chung.\n• Dùng để làm gì? Kiểm input trước submit.\n• Vì sao sai? «Form» không phải thứ đề cần (đáp án đúng hướng «StreamBuilder»); Kiểm input trước submit."
+        },
+        "whatIs": {
+          "A": "FutureBuilder — lắng nghe một Future, build UI theo snapshot.",
+          "B": "StreamBuilder — lắng nghe Stream, rebuild mỗi khi có event.",
+          "C": "ListView — danh sách cuộn nhiều phần tử.",
+          "D": "Form/FormState — nhóm field, validate/save/reset chung."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain.",
+        "memoryTip": "• Unit=logic · Widget=UI · Integration=E2E · doctor=môi trường."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 76,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 28,
+      "question": "What is technical debt?",
+      "options": {
+        "A": "UI lag",
+        "B": "Future cost of poor design decisions",
+        "C": "Memory usage",
+        "D": "API limit"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Technical debt là gì?",
+        "optionsVi": {
+          "A": "UI lag",
+          "B": "Chi phí tương lai của quyết định thiết kế kém",
+          "C": "Dùng bộ nhớ",
+          "D": "API limit"
+        },
+        "answerDisplay": "B. Chi phí tương lai của quyết định thiết kế kém",
+        "concept": "• Technical debt: chi phí bảo trì/sửa sau do cắt góc thiết kế hoặc chất lượng code.",
+        "whyCorrect": "• Không phải đường cong animation hay widget Expanded.\n• await API, đọc file một lần.\n• Vì vậy chọn «Chi phí tương lai của quyết định thiết kế kém» khớp đề.",
+        "whyWrong": {
+          "A": "• Là gì? UI lag — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «UI lag» không phải thứ đề cần (đáp án đúng hướng «Future cost of poor design decisions»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Memory usage — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Memory usage» không phải thứ đề cần (đáp án đúng hướng «Future cost of poor design decisions»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? API limit — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «API limit» không phải thứ đề cần (đáp án đúng hướng «Future cost of poor design decisions»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "UI lag — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Future — kết quả/lỗi async one-shot sẽ có sau.",
+          "C": "Memory usage — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "API limit — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L8/arch — debt.",
+        "memoryTip": "• Nợ kỹ thuật = trả lãi sau."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 77,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 29,
+      "question": "What is implicit animation?",
+      "options": {
+        "A": "Manual animation control",
+        "B": "Animation without controller",
+        "C": "API animation",
+        "D": "Navigation animation"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Implicit animation là gì?",
+        "optionsVi": {
+          "A": "Manual animation control",
+          "B": "Animation không controller",
+          "C": "API animation",
+          "D": "Navigation animation"
+        },
+        "answerDisplay": "B. Animation không controller",
+        "concept": "• Implicit animation: Flutter tự nội suy khi property đổi, không cần AnimationController tường minh.",
+        "whyCorrect": "• Đổi property (opacity, size…) → framework animate mượt.\n• Khác explicit animation phải tự quản lý controller/ticker.\n• Không liên quan SQL trigger, cờ AOT hay HTTP verb.",
+        "whyWrong": {
+          "A": "• Là gì? Manual animation control — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Manual animation control» không phải thứ đề cần (đáp án đúng hướng «Animation without controller»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? API animation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «API animation» không phải thứ đề cần (đáp án đúng hướng «Animation without controller»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Navigation animation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Navigation animation» không phải thứ đề cần (đáp án đúng hướng «Animation without controller»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Manual animation control — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Animation without controller — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "API animation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Navigation animation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 78,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 30,
+      "question": "Which Dart data structure is best suited for storing an ordered collection of items?",
+      "options": {
+        "A": "Set",
+        "B": "Map",
+        "C": "List",
+        "D": "Queue"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cấu trúc dữ liệu Dart nào phù hợp nhất cho dãy có thứ tự?",
+        "optionsVi": {
+          "A": "Set",
+          "B": "Map",
+          "C": "List",
+          "D": "Queue"
+        },
+        "answerDisplay": "C. List",
+        "concept": "• List là dãy có thứ tự, cho phép phần tử trùng, truy cập theo chỉ số.",
+        "whyCorrect": "• Set loại trùng; Map là key–value — không thay list có thứ tự cho phép trùng.\n• Dãy phần tử có thứ tự.\n• Vì vậy chọn «List» khớp đề.",
+        "whyWrong": {
+          "A": "• Là gì? Set — tập không trùng.\n• Dùng để làm gì? Unique membership.\n• Vì sao sai? «Set» không phải thứ đề cần (đáp án đúng hướng «List»); Unique membership.",
+          "B": "• Là gì? Map — key → value.\n• Dùng để làm gì? Tra cứu theo khóa.\n• Vì sao sai? «Map» không phải thứ đề cần (đáp án đúng hướng «List»); Tra cứu theo khóa.",
+          "D": "• Là gì? Queue — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Queue» không phải thứ đề cần (đáp án đúng hướng «List»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Set — tập không trùng.",
+          "B": "Map — key → value.",
+          "C": "List — dãy có thứ tự, cho trùng, index.",
+          "D": "Queue — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L6 — List.",
+        "memoryTip": "• List có thứ tự, cho trùng."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 79,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 31,
+      "question": "Which Flutter concept supports reactive UI updates?",
+      "options": {
+        "A": "Manual refresh",
+        "B": "Widget rebuilding",
+        "C": "Hot restart",
+        "D": "Native callbacks"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Khái niệm Flutter nào hỗ trợ cập nhật UI reactive?",
+        "optionsVi": {
+          "A": "Manual refresh",
+          "B": "Widget rebuilding",
+          "C": "Hot restart",
+          "D": "Native callbacks"
+        },
+        "answerDisplay": "B. Widget rebuilding",
+        "concept": "• HTTP GET — lấy tài nguyên, không (lẽ ra) đổi state server.",
+        "whyCorrect": "• Đọc dữ liệu API.\n• Khớp trọng tâm đề: Which Flutter concept supports reactive UI updates?\n• Đáp án đúng hướng tới: HTTP GET — lấy tài nguyên, không (lẽ ra) đổi state server.",
+        "whyWrong": {
+          "A": "• Là gì? Manual refresh — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Manual refresh» không phải thứ đề cần (đáp án đúng hướng «Widget rebuilding»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Hot restart — chạy lại app, reset state.\n• Dùng để làm gì? Khởi tạo lại sau đổi lớn.\n• Vì sao sai? «Hot restart» không phải thứ đề cần (đáp án đúng hướng «Widget rebuilding»); Khởi tạo lại sau đổi lớn.",
+          "D": "• Là gì? Native callbacks — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Native callbacks» không phải thứ đề cần (đáp án đúng hướng «Widget rebuilding»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Manual refresh — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Widget rebuilding — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Hot restart — chạy lại app, reset state.",
+          "D": "Native callbacks — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain.",
+        "memoryTip": "• Unit=logic · Widget=UI · Integration=E2E · doctor=môi trường."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 80,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 32,
+      "question": "Which type of test checks individual functions or classes?",
+      "options": {
+        "A": "Widget test",
+        "B": "Integration test",
+        "C": "Unit test",
+        "D": "System test"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Loại test nào kiểm tra từng hàm hoặc class?",
+        "optionsVi": {
+          "A": "Widget test",
+          "B": "Integration test",
+          "C": "Unit test",
+          "D": "System test"
+        },
+        "answerDisplay": "C. Unit test",
+        "concept": "• Unit test kiểm tra hàm/class logic nhỏ, cô lập dependency.",
+        "whyCorrect": "• Nhanh, không cần full UI tree hay driver E2E.\n• Widget test = UI; integration = nhiều phần.",
+        "whyWrong": {
+          "A": "• Là gì? Widget test — bơm widget tree, find/tap UI.\n• Dùng để làm gì? Kiểm component UI.\n• Vì sao sai? Widget test gắn UI tree — đề hỏi unit logic hàm/class.",
+          "B": "• Là gì? Integration test — luồng E2E nhiều lớp.\n• Dùng để làm gì? Gần hành vi user.\n• Vì sao sai? Integration bao nhiều phần/E2E — không phải unit lẻ.",
+          "D": "• Là gì? System test — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «System test» không phải thứ đề cần (đáp án đúng hướng «Unit test»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Widget test — bơm widget tree, find/tap UI.",
+          "B": "Integration test — luồng E2E nhiều lớp.",
+          "C": "Unit test — kiểm hàm/class logic, không full UI.",
+          "D": "System test — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L8 — phân loại test.",
+        "memoryTip": "• Unit = logic · Widget = UI · Integration = E2E."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 81,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 33,
+      "question": "What is the role of events in BLoC?",
+      "options": {
+        "A": "Store UI",
+        "B": "Trigger state changes",
+        "C": "Render widgets",
+        "D": "Handle layout"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vai trò của event trong BLoC?",
+        "optionsVi": {
+          "A": "Store UI",
+          "B": "Trigger state changes",
+          "C": "Render widgets",
+          "D": "Handle layout"
+        },
+        "answerDisplay": "B. Trigger state changes",
+        "concept": "• Event là tín hiệu đầu vào (ý định user/hệ thống) để BLoC chuyển sang state mới.",
+        "whyCorrect": "• Không vẽ pixel hay ký APK.\n• BLoC map event → state.",
+        "whyWrong": {
+          "A": "• Là gì? Store UI — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Store UI» không phải thứ đề cần (đáp án đúng hướng «Trigger state changes»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Render widgets — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Render widgets» không phải thứ đề cần (đáp án đúng hướng «Trigger state changes»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Handle layout — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Handle layout» không phải thứ đề cần (đáp án đúng hướng «Trigger state changes»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Store UI — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Trigger state changes — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Render widgets — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Handle layout — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L3 — BLoC events.",
+        "memoryTip": "• Event vào · State ra."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 82,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 34,
+      "question": "What is the main purpose of hot reload in Flutter?",
+      "options": {
+        "A": "Improve runtime performance",
+        "B": "Instantly reflect code changes in UI",
+        "C": "Publish apps faster",
+        "D": "Reduce memory usage"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Mục đích chính của hot reload trong Flutter?",
+        "optionsVi": {
+          "A": "cải thiện runtime hiệu năng",
+          "B": "Instantly reflect code changes in UI",
+          "C": "Publish apps faster",
+          "D": "giảm memory usage"
+        },
+        "answerDisplay": "B. Instantly reflect code changes in UI",
+        "concept": "• Hot reload nạp lại code UI gần như giữ state đang chạy để xem thay đổi nhanh.",
+        "whyCorrect": "• Khác hot restart (reset state) và khác ship store.\n• Mục tiêu dev tốc độ lặp UI.",
+        "whyWrong": {
+          "A": "• Là gì? Improve runtime performance — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Improve runtime performance» không phải thứ đề cần (xem đổi UI nhanh, giữ state); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Publish apps faster — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Publish apps faster» không phải thứ đề cần (xem đổi UI nhanh, giữ state); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Reduce memory usage — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Reduce memory usage» không phải thứ đề cần (xem đổi UI nhanh, giữ state); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Improve runtime performance — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Instantly reflect code changes in UI — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Publish apps faster — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Reduce memory usage — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L8 — hot reload.",
+        "memoryTip": "• Hot reload giữ state · Restart reset."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 83,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 35,
+      "question": "Why are forms important in mobile applications?",
+      "options": {
+        "A": "UI decoration",
+        "B": "User data collection",
+        "C": "State management",
+        "D": "Navigation"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vì sao form quan trọng trên app di động?",
+        "optionsVi": {
+          "A": "UI decoration",
+          "B": "User data collection",
+          "C": "Quản lý state",
+          "D": "Navigation"
+        },
+        "answerDisplay": "B. User data collection",
+        "concept": "• User data collection: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: Why are forms important in mobile applications?\n• Đáp án đúng hướng tới: User data collection: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? UI decoration — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «UI decoration» không phải thứ đề cần (đáp án đúng hướng «User data collection»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? State management — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «State management» không phải thứ đề cần (đáp án đúng hướng «User data collection»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Navigation» không phải thứ đề cần (đáp án đúng hướng «User data collection»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "UI decoration — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "User data collection — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "State management — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 84,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 36,
+      "question": "Which method retrieves data from SharedPreferences?",
+      "options": {
+        "A": "get()",
+        "B": "read()",
+        "C": "fetch()",
+        "D": "load()"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Phương thức nào lấy dữ liệu từ SharedPreferences?",
+        "optionsVi": {
+          "A": "get()",
+          "B": "read()",
+          "C": "fetch()",
+          "D": "load()"
+        },
+        "answerDisplay": "A. get()",
+        "concept": "• HTTP GET dùng để lấy/tải tài nguyên, không (lẽ ra) gửi body tạo mới.",
+        "whyCorrect": "• POST tạo/cập nhật với body; DELETE/PUT mục đích khác.\n• Đọc dữ liệu API.\n• Vì vậy chọn «get()» khớp đề.",
+        "whyWrong": {
+          "B": "• Là gì? read() — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? «read()» không phải thứ đề cần (đúng loại lưu trữ); Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.",
+          "C": "• Là gì? fetch() — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? «fetch()» không phải thứ đề cần (đúng loại lưu trữ); Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.",
+          "D": "• Là gì? load() — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? «load()» không phải thứ đề cần (đúng loại lưu trữ); Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại."
+        },
+        "whatIs": {
+          "A": "HTTP GET — lấy tài nguyên.",
+          "B": "read() — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+          "C": "fetch() — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+          "D": "load() — khái niệm/cơ chế khác domain hoặc khác lớp so với stem."
+        },
+        "intent": "• L7 — GET.",
+        "memoryTip": "• Đọc dữ liệu → GET."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 85,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 37,
+      "question": "What is the main benefit of Flutter's widget-based architecture?",
+      "options": {
+        "A": "Widgets are only used for layout design",
+        "B": "Widgets allow code reuse across platforms",
+        "C": "Widgets automatically manage databases",
+        "D": "Widgets replace backend services"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Lợi ích chính của kiến trúc dựa trên widget của Flutter?",
+        "optionsVi": {
+          "A": "Widgets are chỉ dùng cho layout design",
+          "B": "Widgets allow code reuse across platforms",
+          "C": "Widgets automatically quản lý databases",
+          "D": "Widgets replace backend services"
+        },
+        "answerDisplay": "B. Widgets allow code reuse across platforms",
+        "concept": "• Widgets allow code reuse across platforms: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: What is the main benefit of Flutter's widget-based architecture?\n• Đáp án đúng hướng tới: Widgets allow code reuse across platforms: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Widgets are only used for layout design — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Widgets are only used for layout design» không phải thứ đề cần (đáp án đúng hướng «Widgets allow code reuse across platform»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Tầng CSDL / SQL.\n• Dùng để làm gì? Lưu trữ quan hệ, không animation UI.\n• Vì sao sai? «Widgets automatically manage databases» không phải thứ đề cần (đáp án đúng hướng «Widgets allow code reuse across platform»); Lưu trữ quan hệ, không animation UI.",
+          "D": "• Là gì? Widgets replace backend services — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Widgets replace backend services» không phải thứ đề cần (đáp án đúng hướng «Widgets allow code reuse across platform»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Widgets are only used for layout design — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Widgets allow code reuse across platforms — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Tầng CSDL / SQL.",
+          "D": "Widgets replace backend services — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 86,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 38,
+      "question": "Why are widgets lightweight in Flutter?",
+      "options": {
+        "A": "They manage system resources",
+        "B": "They are immutable descriptions",
+        "C": "They store UI state",
+        "D": "They handle rendering directly"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vì sao widget trong Flutter được xem là lightweight?",
+        "optionsVi": {
+          "A": "They quản lý system resources",
+          "B": "They are immutable descriptions",
+          "C": "They store UI state",
+          "D": "They handle rendering directly"
+        },
+        "answerDisplay": "B. They are immutable descriptions",
+        "concept": "• They are immutable descriptions: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: Why are widgets lightweight in Flutter?\n• Đáp án đúng hướng tới: They are immutable descriptions: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? They manage system resources — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «They manage system resources» không phải thứ đề cần (đáp án đúng hướng «They are immutable descriptions»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? They store UI state — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «They store UI state» không phải thứ đề cần (đáp án đúng hướng «They are immutable descriptions»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? They handle rendering directly — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «They handle rendering directly» không phải thứ đề cần (đáp án đúng hướng «They are immutable descriptions»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "They manage system resources — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "They are immutable descriptions — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "They store UI state — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "They handle rendering directly — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 87,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 39,
+      "question": "Why should authentication state be centralized?",
+      "options": {
+        "A": "Reduce UI code",
+        "B": "Ensure consistent access control",
+        "C": "Improve animations",
+        "D": "Simplify layout"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vì sao nên tập trung (centralize) trạng thái xác thực?",
+        "optionsVi": {
+          "A": "giảm UI code",
+          "B": "Ensure consistent access control",
+          "C": "Cải thiện animation",
+          "D": "Simplify layout"
+        },
+        "answerDisplay": "B. Ensure consistent access control",
+        "concept": "• Ensure consistent access control: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: Why should authentication state be centralized?\n• Đáp án đúng hướng tới: Ensure consistent access control: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Giảm công việc vẽ/UI.\n• Dùng để làm gì? Tối ưu render, không phải lý do test refactor.\n• Vì sao sai? «Reduce UI code» không phải thứ đề cần (đáp án đúng hướng «Ensure consistent access control»); Tối ưu render, không phải lý do test refactor.",
+          "C": "• Là gì? Cải thiện animation UI.\n• Dùng để làm gì? Trải nghiệm chuyển động, không thay test/refactor.\n• Vì sao sai? «Improve animations» không phải thứ đề cần (đáp án đúng hướng «Ensure consistent access control»); Trải nghiệm chuyển động, không thay test/refactor.",
+          "D": "• Là gì? Simplify layout — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Simplify layout» không phải thứ đề cần (đáp án đúng hướng «Ensure consistent access control»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Giảm công việc vẽ/UI.",
+          "B": "Ensure consistent access control — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Cải thiện animation UI.",
+          "D": "Simplify layout — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain.",
+        "memoryTip": "• Token=credential · Guard=cửa route · Authorization header."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 88,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 40,
+      "question": "Which widget can hide user input text when configured for password entry?",
+      "options": {
+        "A": "TextField",
+        "B": "ObscureText",
+        "C": "SecureInput",
+        "D": "PasswordField"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Widget nào có thể ẩn chữ người dùng khi cấu hình ô mật khẩu?",
+        "optionsVi": {
+          "A": "TextField",
+          "B": "ObscureText",
+          "C": "SecureInput",
+          "D": "PasswordField"
+        },
+        "answerDisplay": "A. TextField",
+        "concept": "• TextField/TextFormField — ô nhập liệu người dùng.",
+        "whyCorrect": "• Nhập text, password (obscureText), validate.\n• Khớp trọng tâm đề: Which widget can hide user input text when configured for password entry?\n• Đáp án đúng hướng tới: TextField/TextFormField — ô nhập liệu người dùng.",
+        "whyWrong": {
+          "B": "• Là gì? obscureText — ẩn ký tự ô mật khẩu.\n• Dùng để làm gì? Password field.\n• Vì sao sai? «ObscureText» không phải thứ đề cần (đáp án đúng hướng «TextField»); Password field.",
+          "C": "• Là gì? SecureInput — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «SecureInput» không phải thứ đề cần (đáp án đúng hướng «TextField»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? obscureText — ẩn ký tự ô mật khẩu.\n• Dùng để làm gì? Password field.\n• Vì sao sai? «PasswordField» không phải thứ đề cần (đáp án đúng hướng «TextField»); Password field."
+        },
+        "whatIs": {
+          "A": "TextField/TextFormField — ô nhập liệu.",
+          "B": "obscureText — ẩn ký tự ô mật khẩu.",
+          "C": "SecureInput — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "obscureText — ẩn ký tự ô mật khẩu."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 89,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 41,
+      "question": "What is Flutter primarily used for?",
+      "options": {
+        "A": "Designing databases for mobile apps",
+        "B": "Creating native applications from a single codebase",
+        "C": "Developing server-side applications only",
+        "D": "Building operating systems for mobile devices"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Flutter chủ yếu dùng để làm gì?",
+        "optionsVi": {
+          "A": "Designing databases for mobile apps",
+          "B": "Creating native applications from a single codebase",
+          "C": "Chỉ Developing server-side applications",
+          "D": "Building operating systems for mobile devices"
+        },
+        "answerDisplay": "B. Creating native applications from a single codebase",
+        "concept": "• Creating native applications from a single codebase: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: What is Flutter primarily used for?\n• Đáp án đúng hướng tới: Creating native applications from a single codebase: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Tầng CSDL / SQL.\n• Dùng để làm gì? Lưu trữ quan hệ, không animation UI.\n• Vì sao sai? «Designing databases for mobile apps» không phải thứ đề cần (đáp án đúng hướng «Creating native applications from a sing»); Lưu trữ quan hệ, không animation UI.",
+          "C": "• Là gì? Developing server-side applications only — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? «Developing server-side applications only» không phải thứ đề cần (đáp án đúng hướng «Creating native applications from a sing»); Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.",
+          "D": "• Là gì? Building operating systems for mobile devices — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? «Building operating systems for mobile devices» không phải thứ đề cần (đáp án đúng hướng «Creating native applications from a sing»); Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại."
+        },
+        "whatIs": {
+          "A": "Tầng CSDL / SQL.",
+          "B": "Creating native applications from a single codebase — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+          "C": "Developing server-side applications only — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+          "D": "Building operating systems for mobile devices — khái niệm/cơ chế khác domain hoặc khác lớp so với stem."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain.",
+        "memoryTip": "• Unit=logic · Widget=UI · Integration=E2E · doctor=môi trường."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 90,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 42,
+      "question": "Which method resets all form fields?",
+      "options": {
+        "A": "clear()",
+        "B": "reset()",
+        "C": "dispose()",
+        "D": "remove()"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Phương thức nào reset mọi field của form?",
+        "optionsVi": {
+          "A": "clear()",
+          "B": "reset()",
+          "C": "dispose()",
+          "D": "remove()"
+        },
+        "answerDisplay": "B. reset()",
+        "concept": "• FormState.reset() đưa các field trong Form về giá trị ban đầu.",
+        "whyCorrect": "• Không push route hay build APK.\n• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Vì vậy chọn «reset()» khớp đề.",
+        "whyWrong": {
+          "A": "• Là gì? clear() — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? «clear()» không phải thứ đề cần (đáp án đúng hướng «reset()»); Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.",
+          "C": "• Là gì? dispose — giải phóng controller/subscription.\n• Dùng để làm gì? Tránh leak.\n• Vì sao sai? «dispose()» không phải thứ đề cần (đáp án đúng hướng «reset()»); Tránh leak.",
+          "D": "• Là gì? remove() — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? «remove()» không phải thứ đề cần (đáp án đúng hướng «reset()»); Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại."
+        },
+        "whatIs": {
+          "A": "clear() — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+          "B": "reset() — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+          "C": "dispose — giải phóng controller/subscription.",
+          "D": "remove() — khái niệm/cơ chế khác domain hoặc khác lớp so với stem."
+        },
+        "intent": "• L7 — form reset.",
+        "memoryTip": "• reset form → FormState.reset()."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 91,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 43,
+      "question": "Which Dart keyword is used to define a constant value at compile time?",
+      "options": {
+        "A": "final",
+        "B": "static",
+        "C": "const",
+        "D": "var"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Từ khóa Dart nào định nghĩa hằng lúc biên dịch?",
+        "optionsVi": {
+          "A": "final",
+          "B": "static",
+          "C": "const",
+          "D": "var"
+        },
+        "answerDisplay": "C. const",
+        "concept": "• Từ khóa const tạo hằng xác định từ lúc biên dịch (compile-time).",
+        "whyCorrect": "• Khác final (gán 1 lần runtime) và var/dynamic (không phải hằng CT).\n• Tối ưu widget/const value.\n• Vì vậy chọn «const» khớp đề.",
+        "whyWrong": {
+          "A": "• Là gì? final — gán một lần (runtime).\n• Dùng để làm gì? Không reassign.\n• Vì sao sai? «final» không phải thứ đề cần (đáp án đúng hướng «const»); Không reassign.",
+          "B": "• Là gì? static — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «static» không phải thứ đề cần (đáp án đúng hướng «const»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? var — suy luận kiểu, có thể gán lại.\n• Dùng để làm gì? Khai báo gọn.\n• Vì sao sai? «var» không phải thứ đề cần (đáp án đúng hướng «const»); Khai báo gọn."
+        },
+        "whatIs": {
+          "A": "final — gán một lần (runtime).",
+          "B": "static — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "const — hằng compile-time.",
+          "D": "var — suy luận kiểu, có thể gán lại."
+        },
+        "intent": "• L6 — const.",
+        "memoryTip": "• const = compile-time · final = gán 1 lần."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 92,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 44,
+      "question": "What happens after successful login?",
+      "options": {
+        "A": "App closes",
+        "B": "User session starts",
+        "C": "Theme changes",
+        "D": "Navigation resets"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Sau khi đăng nhập thành công thường xảy ra gì?",
+        "optionsVi": {
+          "A": "App closes",
+          "B": "User session starts",
+          "C": "Theme changes",
+          "D": "Navigation resets"
+        },
+        "answerDisplay": "B. User session starts",
+        "concept": "• User session starts: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: What happens after successful login?\n• Đáp án đúng hướng tới: User session starts: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? App closes — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «App closes» không phải thứ đề cần (đáp án đúng hướng «User session starts»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Theme/ThemeData — màu, typography, style dùng chung.\n• Dùng để làm gì? Đồng bộ giao diện.\n• Vì sao sai? «Theme changes» không phải thứ đề cần (đáp án đúng hướng «User session starts»); Đồng bộ giao diện.",
+          "D": "• Là gì? Navigation resets — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Navigation resets» không phải thứ đề cần (đáp án đúng hướng «User session starts»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "App closes — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "User session starts — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Theme/ThemeData — màu, typography, style dùng chung.",
+          "D": "Navigation resets — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain.",
+        "memoryTip": "• Token=credential · Guard=cửa route · Authorization header."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 93,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 45,
+      "question": "Which step is required before running a Flutter app for the first time?",
+      "options": {
+        "A": "Publishing the app",
+        "B": "Setting up the Flutter SDK",
+        "C": "Configuring a database",
+        "D": "Writing backend APIs"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Bước nào cần trước khi chạy app Flutter lần đầu?",
+        "optionsVi": {
+          "A": "Publishing the app",
+          "B": "Setting up the Flutter SDK",
+          "C": "Configuring a database",
+          "D": "Writing backend APIs"
+        },
+        "answerDisplay": "B. Setting up the Flutter SDK",
+        "concept": "• Setting up the Flutter SDK: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: Which step is required before running a Flutter app for the first time?\n• Đáp án đúng hướng tới: Setting up the Flutter SDK: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Publishing the app — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Publishing the app» không phải thứ đề cần (đáp án đúng hướng «Setting up the Flutter SDK»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Tầng CSDL / SQL.\n• Dùng để làm gì? Lưu trữ quan hệ, không animation UI.\n• Vì sao sai? «Configuring a database» không phải thứ đề cần (đáp án đúng hướng «Setting up the Flutter SDK»); Lưu trữ quan hệ, không animation UI.",
+          "D": "• Là gì? Writing backend APIs — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Writing backend APIs» không phải thứ đề cần (đáp án đúng hướng «Setting up the Flutter SDK»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Publishing the app — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Setting up the Flutter SDK — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Tầng CSDL / SQL.",
+          "D": "Writing backend APIs — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain.",
+        "memoryTip": "• Unit=logic · Widget=UI · Integration=E2E · doctor=môi trường."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 94,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 46,
+      "question": "Which widget reacts to async data from local storage?",
+      "options": {
+        "A": "FutureBuilder",
+        "B": "StreamBuilder",
+        "C": "ListView",
+        "D": "Provider"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Widget nào phản ứng dữ liệu async từ local storage?",
+        "optionsVi": {
+          "A": "FutureBuilder",
+          "B": "StreamBuilder",
+          "C": "ListView",
+          "D": "Provider"
+        },
+        "answerDisplay": "A. FutureBuilder",
+        "concept": "• FutureBuilder lắng nghe Future đọc storage/API one-shot và map snapshot → UI.",
+        "whyCorrect": "• Đọc SharedPreferences/API một lần → waiting/data/error trên UI.\n• SizedBox/Divider không lắng nghe async.",
+        "whyWrong": {
+          "B": "• Là gì? StreamBuilder — lắng nghe Stream, rebuild mỗi khi có event.\n• Dùng để làm gì? UI reactive theo chuỗi dữ liệu (auth stream, socket…).\n• Vì sao sai? StreamBuilder cho nhiều event; đọc storage/API one-shot thường dùng FutureBuilder.",
+          "C": "• Là gì? ListView — danh sách cuộn nhiều phần tử.\n• Dùng để làm gì? List dài một trục.\n• Vì sao sai? «ListView» không phải thứ đề cần (đúng loại lưu trữ); List dài một trục.",
+          "D": "• Là gì? Provider — chia sẻ/đọc state xuống cây widget.\n• Dùng để làm gì? DI/state đơn giản, tránh prop-drill.\n• Vì sao sai? «Provider» không phải thứ đề cần (đúng loại lưu trữ); DI/state đơn giản, tránh prop-drill."
+        },
+        "whatIs": {
+          "A": "FutureBuilder — lắng nghe một Future, build UI theo snapshot.",
+          "B": "StreamBuilder — lắng nghe Stream, rebuild mỗi khi có event.",
+          "C": "ListView — danh sách cuộn nhiều phần tử.",
+          "D": "Provider — chia sẻ/đọc state xuống cây widget."
+        },
+        "intent": "• L2 — async builders.",
+        "memoryTip": "• Future one-shot → FutureBuilder · Stream nhiều lần → StreamBuilder."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 95,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 47,
+      "question": "What does golden testing verify?",
+      "options": {
+        "A": "API responses",
+        "B": "UI appearance consistency",
+        "C": "Database state",
+        "D": "Authentication"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Golden testing kiểm tra điều gì?",
+        "optionsVi": {
+          "A": "API responses",
+          "B": "UI appearance consistency",
+          "C": "Database state",
+          "D": "Authentication"
+        },
+        "answerDisplay": "B. UI appearance consistency",
+        "concept": "• Golden test so sánh ảnh UI với file baseline (pixel).",
+        "whyCorrect": "• Bắt lệch visual/regression giao diện.\n• Không đo SQL plan hay pin.",
+        "whyWrong": {
+          "A": "• Là gì? API responses — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «API responses» không phải thứ đề cần (đáp án đúng hướng «UI appearance consistency»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Tầng CSDL / SQL.\n• Dùng để làm gì? Lưu trữ quan hệ, không animation UI.\n• Vì sao sai? «Database state» không phải thứ đề cần (đáp án đúng hướng «UI appearance consistency»); Lưu trữ quan hệ, không animation UI.",
+          "D": "• Là gì? Authentication — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Authentication» không phải thứ đề cần (đáp án đúng hướng «UI appearance consistency»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "API responses — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "UI appearance consistency — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Tầng CSDL / SQL.",
+          "D": "Authentication — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• L8 — golden.",
+        "memoryTip": "• Golden = ảnh UI baseline."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 96,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 48,
+      "question": "Why should state be kept as local as possible?",
+      "options": {
+        "A": "Better animations",
+        "B": "Reduce unnecessary rebuilds",
+        "C": "Simplify UI",
+        "D": "Improve navigation"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vì sao nên giữ state càng local càng tốt?",
+        "optionsVi": {
+          "A": "Animation tốt hơn",
+          "B": "giảm unnecessary rebuilds",
+          "C": "Simplify UI",
+          "D": "cải thiện navigation"
+        },
+        "answerDisplay": "B. giảm unnecessary rebuilds",
+        "concept": "• Flutter build lại nhánh widget khi phụ thuộc đổi.",
+        "whyCorrect": "• Cập nhật UI phản ứng state.\n• Khớp trọng tâm đề: Why should state be kept as local as possible?\n• Đáp án đúng hướng tới: Flutter build lại nhánh widget khi phụ thuộc đổi.",
+        "whyWrong": {
+          "A": "• Là gì? Cải thiện animation UI.\n• Dùng để làm gì? Trải nghiệm chuyển động, không thay test/refactor.\n• Vì sao sai? «Better animations» không phải thứ đề cần (đáp án đúng hướng «Reduce unnecessary rebuilds»); Trải nghiệm chuyển động, không thay test/refactor.",
+          "C": "• Là gì? Simplify UI — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Simplify UI» không phải thứ đề cần (đáp án đúng hướng «Reduce unnecessary rebuilds»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Improve navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Improve navigation» không phải thứ đề cần (đáp án đúng hướng «Reduce unnecessary rebuilds»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Cải thiện animation UI.",
+          "B": "Reduce unnecessary rebuilds — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Simplify UI — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Improve navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 97,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 49,
+      "question": "What is the benefit of composing widgets in Flutter?",
+      "options": {
+        "A": "Faster compilation",
+        "B": "Better code reuse and UI consistency",
+        "C": "Reduced memory usage",
+        "D": "Automatic navigation"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Lợi ích của việc compose widget trong Flutter?",
+        "optionsVi": {
+          "A": "Faster compilation",
+          "B": "Better code reuse và UI consistency",
+          "C": "Reduced memory usage",
+          "D": "Automatic navigation"
+        },
+        "answerDisplay": "B. Better code reuse và UI consistency",
+        "concept": "• Better code reuse and UI consistency: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyCorrect": "• Có thể đúng ở ngữ cảnh khác, cần đối chiếu đúng việc đề hỏi.\n• Khớp trọng tâm đề: What is the benefit of composing widgets in Flutter?\n• Đáp án đúng hướng tới: Better code reuse and UI consistency: khái niệm/cơ chế khác với trọng tâm đề (đối chiếu domain).",
+        "whyWrong": {
+          "A": "• Là gì? Faster compilation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Faster compilation» không phải thứ đề cần (đáp án đúng hướng «Better code reuse and UI consistency»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? Reduced memory usage — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Reduced memory usage» không phải thứ đề cần (đáp án đúng hướng «Better code reuse and UI consistency»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Automatic navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Automatic navigation» không phải thứ đề cần (đáp án đúng hướng «Better code reuse and UI consistency»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Faster compilation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Better code reuse and UI consistency — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "Reduced memory usage — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Automatic navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 98,
+      "task": "fe",
+      "taskLabel": "SP26-FE",
+      "num": 50,
+      "question": "Which status code indicates server error?",
+      "options": {
+        "A": "200",
+        "B": "301",
+        "C": "404",
+        "D": "500"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Mã trạng thái nào cho biết lỗi server?",
+        "optionsVi": {
+          "A": "200",
+          "B": "301",
+          "C": "404",
+          "D": "500"
+        },
+        "answerDisplay": "D. 500",
+        "concept": "• HTTP 5xx (vd. 500) báo lỗi phía máy chủ khi xử lý request.",
+        "whyCorrect": "• Nhóm 5xx = server error (500 Internal Server Error…).\n• 200 là thành công; 301 là chuyển hướng; 404 là không tìm thấy tài nguyên (lỗi client về URL).",
+        "whyWrong": {
+          "A": "• Là gì? 200 — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? 200 = thành công — không phải lỗi server.",
+          "B": "• Là gì? 301 — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.\n• Dùng để làm gì? Có vai trò riêng ở ngữ cảnh khác; không khớp stem hiện tại.\n• Vì sao sai? 301 = redirect — không phải 5xx.",
+          "C": "• Là gì? HTTP 404 — không tìm thấy tài nguyên.\n• Dùng để làm gì? URL/resource không tồn tại.\n• Vì sao sai? 404 = not found (4xx client) — không phải lỗi server 5xx."
+        },
+        "whatIs": {
+          "A": "200 — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+          "B": "301 — khái niệm/cơ chế khác domain hoặc khác lớp so với stem.",
+          "C": "HTTP 404 — không tìm thấy tài nguyên.",
+          "D": "HTTP 5xx — lỗi phía server."
+        },
+        "intent": "• L7 — HTTP 5xx.",
+        "memoryTip": "• 4xx client · 5xx server · 404 = not found."
+      },
+      "source": "SP26-FE"
+    },
+    {
+      "id": 99,
+      "task": "fe",
+      "taskLabel": "SP26 FE",
+      "num": 58,
+      "question": "What does Curves/Animation provide?",
+      "options": {
+        "A": "Layout control",
+        "B": "Animation curve behavior",
+        "C": "State updates",
+        "D": "Navigation"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "source": "fe",
+      "exam": "PRM393_SP26_FE",
+      "explanation": {
+        "questionVi": "Curves/Animation cung cấp gì?",
+        "optionsVi": {
+          "A": "Layout control",
+          "B": "Animation curve behavior",
+          "C": "State updates",
+          "D": "Navigation"
+        },
+        "answerDisplay": "B. Animation curve behavior",
+        "concept": "• Chuyển động/UI animation.",
+        "whyCorrect": "• Trải nghiệm chuyển cảnh, không thay state/auth.\n• Khớp trọng tâm đề: What does Curves/Animation provide?\n• Đáp án đúng hướng tới: Chuyển động/UI animation.",
+        "whyWrong": {
+          "A": "• Là gì? Layout control — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Layout control» không phải thứ đề cần (đáp án đúng hướng «Animation curve behavior»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "C": "• Là gì? State updates — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «State updates» không phải thứ đề cần (đáp án đúng hướng «Animation curve behavior»); Có vai trò riêng; cần đối chiếu với việc đề hỏi.",
+          "D": "• Là gì? Navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.\n• Dùng để làm gì? Có vai trò riêng; cần đối chiếu với việc đề hỏi.\n• Vì sao sai? «Navigation» không phải thứ đề cần (đáp án đúng hướng «Animation curve behavior»); Có vai trò riêng; cần đối chiếu với việc đề hỏi."
+        },
+        "whatIs": {
+          "A": "Layout control — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "B": "Animation curve behavior — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "C": "State updates — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận.",
+          "D": "Navigation — API/widget/khái niệm trong stack Flutter–Dart hoặc lân cận."
+        },
+        "intent": "• Chọn đúng cơ chế/API Flutter–Dart mà đề hỏi; loại distractor sai domain."
+      }
+    }
+  ]
+}

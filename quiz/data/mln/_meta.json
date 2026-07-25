@@ -1,0 +1,20 @@
+{
+  "subject": "mln",
+  "upgradedAt": "2026-07-24T03:12:11.364Z",
+  "explainPass": "all-mln-v7-pipeline+rule6.1-fact+rule6-learning+rule6-learning+rule6-learning+rule6-learning+pass-v1+part4-mln-quality-v1+restore-translations-8afbb3d",
+  "pass": "all-mln-v7-pipeline",
+  "rebuilt": 615,
+  "fillerLeft": 0,
+  "bannedLeft": 0,
+  "total": 615,
+  "tasks": [
+    "all",
+    "fuexam"
+  ],
+  "counts": {
+    "all": 550,
+    "fuexam": 65
+  },
+  "partsOf": "mln",
+  "note": "Edit {task}.json then run: node quiz/tools/merge_by_task.mjs mln"
+}

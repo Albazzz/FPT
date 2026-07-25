@@ -1,0 +1,929 @@
+{
+  "subject": "jit",
+  "task": "fuexam",
+  "taskLabel": "Đề FE",
+  "count": 22,
+  "questions": [
+    {
+      "id": 293,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 6,
+      "question": "データベースの表現法には「データを親、子、孫のような階層構造に並べ、最上位の親からたどることによって検索する表現法です。」とかいてあるものはどんな表現ですか。",
+      "options": {
+        "A": "階層型（ツリー型）",
+        "B": "リレーショナル型",
+        "C": "ネットワーク型",
+        "D": "オブジェクト型"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Trong cách biểu diễn CSDL, mô tả «xếp dữ liệu kiểu cha–con–cháu, tìm từ nút gốc xuống» là kiểu nào?",
+        "optionsVi": {
+          "A": "kiểu phân cấp (cây)",
+          "B": "kiểu/dạng quan hệ (relational)",
+          "C": "mô hình mạng (network model)",
+          "D": "kiểu/dạng đối tượng / object"
+        },
+        "answerDisplay": "A. kiểu phân cấp (cây)",
+        "intent": "• JIT DEF · task fuexam\n• Trong cách biểu diễn CSDL, mô tả «xếp dữ liệu kiểu cha–con–cháu, tìm …",
+        "concept": "• kiểu phân cấp (cây): CSDL cha–con, duyệt từ gốc.",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «kiểu phân cấp (cây)» map đúng miền: CSDL cha–con, duyệt từ gốc.",
+        "whatIs": {
+          "A": "kiểu phân cấp (cây) (CSDL cha–con, duyệt từ gốc)",
+          "B": "kiểu/dạng quan hệ (relational) (bảng–khóa–quan hệ SQL)",
+          "C": "mô hình mạng (network model) (mô hình mạng bản ghi)",
+          "D": "kiểu/dạng đối tượng / object (object DB)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? kiểu/dạng quan hệ (relational)\n• Dùng để làm gì? bảng–khóa–quan hệ SQL\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «kiểu phân cấp (cây)».",
+          "C": "• Là gì? mô hình mạng (network model)\n• Dùng để làm gì? mô hình mạng bản ghi\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «kiểu phân cấp (cây)».",
+          "D": "• Là gì? kiểu/dạng đối tượng / object\n• Dùng để làm gì? object DB\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «kiểu phân cấp (cây)»."
+        },
+        "memoryTip": "• kiểu phân cấp (cây) = CSDL cha–con, duyệt từ gốc"
+      }
+    },
+    {
+      "id": 294,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 13,
+      "question": "【専門用語】次のベトナム語の用語をベトナム語に直しなさい。 分散処理システム",
+      "options": {
+        "A": "Hệ thống xử lý phân tán",
+        "B": "Hệ thống tập trung",
+        "C": "Mạng chỉ có 1 máy",
+        "D": "Hệ điều hành đơn nhiệm"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "【Thuật ngữ】Hãy dịch thuật ngữ sau sang tiếng Việt: «hệ thống xử lý phân tán»",
+        "optionsVi": {
+          "A": "Hệ thống xử lý phân tán",
+          "B": "Hệ thống tập trung",
+          "C": "Mạng chỉ có 1 máy",
+          "D": "Hệ điều hành đơn nhiệm"
+        },
+        "answerDisplay": "A. Hệ thống xử lý phân tán",
+        "intent": "• JIT TERM · task fuexam\n• 【Thuật ngữ】Hãy dịch thuật ngữ sau sang tiếng Việt: «hệ thống xử lý ph…",
+        "concept": "• Thuật ngữ cần map: nghĩa đúng là «Hệ thống xử lý phân tán».",
+        "whyCorrect": "• Đối chiếu JP ↔ VI: «【専門用語】次のベトナム語の用語をベトナム語に直しなさい。 分散処理システム» ↔ «Hệ thống xử lý phân tán».\n• Các phương án khác sai nghĩa hoặc đảo khái niệm.",
+        "memoryTip": "• 分散処理システム ↔ Hệ thống xử lý phân tán",
+        "whatIs": {
+          "A": "Hệ thống xử lý phân tán (Thuật ngữ/cơ chế trong đề JIT.)",
+          "B": "xử lý tập trung (một trung tâm)",
+          "C": "Mạng chỉ có 1 máy (Thuật ngữ/cơ chế trong đề JIT.)",
+          "D": "Hệ điều hành đơn nhiệm (Thuật ngữ/cơ chế trong đề JIT.)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? xử lý tập trung\n• Dùng để làm gì? một trung tâm\n• Vì sao sai? Không phải nghĩa đúng của thuật ngữ stem; đúng là «Hệ thống xử lý phân tán».",
+          "C": "• Là gì? Mạng chỉ có 1 máy\n• Dùng để làm gì? Thuật ngữ/cơ chế trong đề JIT.\n• Vì sao sai? Không phải nghĩa đúng của thuật ngữ stem; đúng là «Hệ thống xử lý phân tán».",
+          "D": "• Là gì? Hệ điều hành đơn nhiệm\n• Dùng để làm gì? Thuật ngữ/cơ chế trong đề JIT.\n• Vì sao sai? Không phải nghĩa đúng của thuật ngữ stem; đúng là «Hệ thống xử lý phân tán»."
+        }
+      }
+    },
+    {
+      "id": 295,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 41,
+      "question": "ロングテールの考え方を活用したインターネットにおけるビジネスの説明として、適切なものはどれか",
+      "options": {
+        "A": "少数のヒット商品だけでなく多品種少量のニッチ商品も売上げに寄与する",
+        "B": "ヒット商品だけを扱う",
+        "C": "店舗面積を必ず拡大する",
+        "D": "在庫を一切持たないことが必須条件で唯一の定義"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Giải thích kinh doanh Internet theo tư duy long tail, câu nào phù hợp?",
+        "optionsVi": {
+          "A": "không chỉ hit; hàng niche cũng đóng góp (long tail)",
+          "B": "chỉ bán hàng bán chạy",
+          "C": "luôn mở rộng diện tích cửa",
+          "D": "không tồn kho là điều kiện duy nhất (sai)"
+        },
+        "answerDisplay": "A. không chỉ hit; hàng niche cũng đóng góp (long tail)",
+        "intent": "• JIT DEF · task fuexam\n• Giải thích kinh doanh Internet theo tư duy long tail, câu nào phù hợp?",
+        "concept": "• Không chỉ hit; hàng niche cũng đóng góp doanh thu (long tail): Mô hình kinh doanh Internet.",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «Không chỉ hit; hàng niche cũng đóng góp doanh thu (long tail)» map đúng miền: Mô hình kinh doanh Internet.",
+        "whatIs": {
+          "A": "không chỉ hit; hàng niche cũng đóng góp (long tail) (Mô hình kinh doanh Internet)",
+          "B": "chỉ bán hàng bán chạy (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "C": "luôn mở rộng diện tích cửa (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "D": "không tồn kho là điều kiện duy nhất (sai) (Thuật ngữ JP trong miền CNTT đề hỏi.)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? chỉ bán hàng bán chạy\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «Không chỉ hit; hàng niche cũng đóng góp doanh thu (long tail)».",
+          "C": "• Là gì? luôn mở rộng diện tích cửa\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «Không chỉ hit; hàng niche cũng đóng góp doanh thu (long tail)».",
+          "D": "• Là gì? không tồn kho là điều kiện duy nhất (sai)\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «Không chỉ hit; hàng niche cũng đóng góp doanh thu (long tail)»."
+        },
+        "memoryTip": "• Không chỉ hit; hàng niche cũng đóng góp doanh thu (long tail) = Mô hình kinh doanh Internet"
+      }
+    },
+    {
+      "id": 296,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 42,
+      "question": "日本語でのコードについて正しくないものをえらんでください。",
+      "options": {
+        "A": "日本語はASCII 7ビットだけで完全に表現できる",
+        "B": "UTF-8などで多言語を扱える",
+        "C": "Shift_JISなどの符号化がある",
+        "D": "Unicodeが広く使われる"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Về mã hóa tiếng Nhật, hãy chọn câu SAI.",
+        "optionsVi": {
+          "A": "tiếng Nhật biểu diễn đủ bằng ASCII 7-bit (sai)",
+          "B": "xử lý đa ngôn ngữ bằng UTF-8…",
+          "C": "có mã hóa như Shift_JIS",
+          "D": "Unicode được dùng rộng rãi"
+        },
+        "answerDisplay": "A. tiếng Nhật biểu diễn đủ bằng ASCII 7-bit (sai)",
+        "intent": "• JIT NEG · task fuexam\n• Về mã hóa tiếng Nhật, hãy chọn câu SAI.",
+        "concept": "• Đề chọn phát biểu **SAI**.\n• Phát biểu sai (đáp án A): Tiếng Nhật biểu diễn đủ chỉ bằng ASCII 7-bit (phát biểu SAI) — Sai: tiếng Nhật cần multi-byte/Unicode.",
+        "whyCorrect": "• Stem yêu cầu chọn câu **không đúng**.\n• «Tiếng Nhật biểu diễn đủ chỉ bằng ASCII 7-bit (phát biểu SAI)» mâu thuẫn kiến thức chuẩn → là đáp án.\n• Các option còn lại là phát biểu đúng/hợp lý hơn.",
+        "whatIs": {
+          "A": "tiếng Nhật biểu diễn đủ bằng ASCII 7-bit (sai) (Sai: tiếng Nhật cần multi-byte/Unicode)",
+          "B": "xử lý đa ngôn ngữ bằng UTF-8… (Mã hóa đa ngôn ngữ)",
+          "C": "có mã hóa như Shift_JIS (Bảng mã tiếng Nhật)",
+          "D": "Unicode được dùng rộng rãi (biểu diễn chữ đa ngôn ngữ)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? xử lý đa ngôn ngữ bằng UTF-8…\n• Dùng để làm gì? Mã hóa đa ngôn ngữ\n• Vì sao sai? Đây là phát biểu đúng/hợp lý — đề hỏi câu SAI nên không chọn.",
+          "C": "• Là gì? có mã hóa như Shift_JIS\n• Dùng để làm gì? Bảng mã tiếng Nhật\n• Vì sao sai? Đây là phát biểu đúng/hợp lý — đề hỏi câu SAI nên không chọn.",
+          "D": "• Là gì? Unicode được dùng rộng rãi\n• Dùng để làm gì? biểu diễn chữ đa ngôn ngữ\n• Vì sao sai? Đây là phát biểu đúng/hợp lý — đề hỏi câu SAI nên không chọn."
+        },
+        "memoryTip": "• Đề SAI/誤 → chọn phát biểu mâu thuẫn kiến thức."
+      }
+    },
+    {
+      "id": 297,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 43,
+      "question": "コンピューターが逢(あ)える事故は何ですか。",
+      "options": {
+        "A": "障害・故障・セキュリティ事故など",
+        "B": "正常終了のみ",
+        "C": "正しいバックアップ",
+        "D": "計画通りの更新"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "«Tai nạn/sự cố» máy tính có thể gặp là gì?",
+        "optionsVi": {
+          "A": "bảo mật / an ninh",
+          "B": "chỉ kết thúc bình thường",
+          "C": "sao lưu",
+          "D": "cập nhật đúng kế hoạch"
+        },
+        "answerDisplay": "A. bảo mật / an ninh",
+        "intent": "• JIT DEF · task fuexam\n• «Tai nạn/sự cố» máy tính có thể gặp là gì?",
+        "concept": "• Sự cố / hỏng / sự cố an ninh…: Rủi ro hệ thống CNTT.",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «Sự cố / hỏng / sự cố an ninh…» map đúng miền: Rủi ro hệ thống CNTT.",
+        "whatIs": {
+          "A": "bảo mật / an ninh (Rủi ro hệ thống CNTT)",
+          "B": "chỉ kết thúc bình thường (Không phải «sự cố»)",
+          "C": "sao lưu (phòng mất dữ liệu)",
+          "D": "cập nhật đúng kế hoạch (Thuật ngữ JP trong miền CNTT đề hỏi.)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? chỉ kết thúc bình thường\n• Dùng để làm gì? Không phải «sự cố»\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «Sự cố / hỏng / sự cố an ninh…».",
+          "C": "• Là gì? sao lưu\n• Dùng để làm gì? phòng mất dữ liệu\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «Sự cố / hỏng / sự cố an ninh…».",
+          "D": "• Là gì? cập nhật đúng kế hoạch\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «Sự cố / hỏng / sự cố an ninh…»."
+        },
+        "memoryTip": "• Sự cố / hỏng / sự cố an ninh… = Rủi ro hệ thống CNTT"
+      }
+    },
+    {
+      "id": 298,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 44,
+      "question": "高級言語について正しいものをえらんでください。",
+      "options": {
+        "A": "人間が理解しやすい文法でプログラムを記述できる",
+        "B": "必ず機械語そのものを手書きする",
+        "C": "CPU命令を1対1で書くことのみ",
+        "D": "GUIが絶対に書けない"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Về ngôn ngữ cấp cao, câu nào đúng?",
+        "optionsVi": {
+          "A": "viết chương trình bằng ngữ pháp dễ hiểu",
+          "B": "luôn viết tay ngôn ngữ máy",
+          "C": "CPU命令を1対1で書くことのみ — khái niệm kỹ thuật",
+          "D": "tuyệt đối không viết được GUI"
+        },
+        "answerDisplay": "A. viết chương trình bằng ngữ pháp dễ hiểu",
+        "intent": "• Đọc kỹ đề (đã dịch) và chọn đúng bản chất kỹ thuật.\n• viết chương trình bằng ngữ pháp dễ hiểu",
+        "concept": "• viết chương trình bằng ngữ pháp dễ hiểu\n• Nghĩa: viết chương trình bằng ngữ pháp dễ hiểu.",
+        "whyCorrect": "• High-level (Python, Java, C…): gần ngôn ngữ người, cần biên dịch/phiên dịch ra máy.\n• viết chương trình bằng ngữ pháp dễ hiểu\n• Đáp án A: viết chương trình bằng ngữ pháp dễ hiểu",
+        "whatIs": {
+          "A": "人間が理解しやすい文法でプログラムを記述できる (thuật ngữ JP).",
+          "B": "必ず機械語そのものを手書きする (thuật ngữ JP).",
+          "C": "CPU命令を1対1で書くことのみ (thuật ngữ JP).",
+          "D": "GUIが絶対に書けない (thuật ngữ JP)."
+        },
+        "whyWrong": {
+          "B": "• Là gì? 必ず機械語そのものを手書きする (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «必ず機械語そのものを手書きする» (B) không thỏa: phát biểu đúng/sai khớp cơ chế.",
+          "C": "• Là gì? CPU命令を1対1で書くことのみ (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «CPU命令を1対1で書くことのみ» (C) không thỏa: phát biểu đúng/sai khớp cơ chế.",
+          "D": "• Là gì? GUIが絶対に書けない (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «GUIが絶対に書けない» (D) không thỏa: phát biểu đúng/sai khớp cơ chế."
+        }
+      }
+    },
+    {
+      "id": 299,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 45,
+      "question": "OSの機能は何ですか。",
+      "options": {
+        "A": "プロセス・メモリ・ファイル・入出力などの管理",
+        "B": "紙の印刷のみ",
+        "C": "電源コードの製造",
+        "D": "CPUの物理製造"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Chức năng của OS là gì?",
+        "optionsVi": {
+          "A": "quản lý process/memory/file/I/O",
+          "B": "紙の印刷のみ — khái niệm kỹ thuật",
+          "C": "sản xuất dây nguồn",
+          "D": "sản xuất vật lý CPU"
+        },
+        "answerDisplay": "A. quản lý process/memory/file/I/O",
+        "intent": "• JIT DEF · task fuexam\n• Chức năng của OS là gì?",
+        "concept": "• Quản lý process, memory, file, I/O…: Chức năng cốt lõi của OS.",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «Quản lý process, memory, file, I/O…» map đúng miền: Chức năng cốt lõi của OS.",
+        "whatIs": {
+          "A": "quản lý process/memory/file/I/O (Chức năng cốt lõi của OS)",
+          "B": "紙の印刷のみ — khái niệm kỹ thuật (Không đủ chức năng OS)",
+          "C": "sản xuất dây nguồn (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "D": "sản xuất vật lý CPU (thực thi lệnh)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? 紙の印刷のみ — khái niệm kỹ thuật\n• Dùng để làm gì? Không đủ chức năng OS\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «Quản lý process, memory, file, I/O…».",
+          "C": "• Là gì? sản xuất dây nguồn\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «Quản lý process, memory, file, I/O…».",
+          "D": "• Là gì? sản xuất vật lý CPU\n• Dùng để làm gì? thực thi lệnh\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «Quản lý process, memory, file, I/O…»."
+        },
+        "memoryTip": "• Quản lý process, memory, file, I/O… = Chức năng cốt lõi của OS"
+      }
+    },
+    {
+      "id": 300,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 46,
+      "question": "インターネットについて正しいものはどれですか。",
+      "options": {
+        "A": "世界規模のコンピュータネットワーク",
+        "B": "1台のPCの内部バス",
+        "C": "単一企業のLANの別名のみ",
+        "D": "プリンタの型番"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Về Internet, câu nào đúng?",
+        "optionsVi": {
+          "A": "máy tính",
+          "B": "1台のPCの内部バス — khái niệm kỹ thuật",
+          "C": "chỉ là tên khác LAN một doanh nghiệp",
+          "D": "máy in"
+        },
+        "answerDisplay": "A. máy tính",
+        "intent": "• Đọc kỹ đề (đã dịch) và chọn đúng bản chất kỹ thuật.\n• máy tính",
+        "concept": "• máy tính\n• Nghĩa: máy tính.",
+        "whyCorrect": "• Internet = mạng các mạng toàn thế giới (TCP/IP).\n• máy tính\n• Đáp án A: máy tính",
+        "whatIs": {
+          "A": "世界規模のコンピュータネットワーク (thuật ngữ JP).",
+          "B": "1台のPCの内部バス (thuật ngữ JP).",
+          "C": "単一企業のLANの別名のみ (thuật ngữ JP).",
+          "D": "プリンタの型番 (thuật ngữ JP)."
+        },
+        "whyWrong": {
+          "B": "• Là gì? 1台のPCの内部バス (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «1台のPCの内部バス» (B) không thỏa: phát biểu đúng/sai khớp cơ chế.",
+          "C": "• Là gì? 単一企業のLANの別名のみ (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «単一企業のLANの別名のみ» (C) không thỏa: phát biểu đúng/sai khớp cơ chế.",
+          "D": "• Là gì? プリンタの型番 (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «プリンタの型番» (D) không thỏa: phát biểu đúng/sai khớp cơ chế."
+        }
+      }
+    },
+    {
+      "id": 301,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 47,
+      "question": "「取引プロセスとは、( ) 以外にも商品案内や配送などの処理、さらには商品開発まで含めます。」",
+      "options": {
+        "A": "決済（支払い）",
+        "B": "画面解像度",
+        "C": "フォント名",
+        "D": "壁紙"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "«Quy trình giao dịch gồm cả giới thiệu hàng, giao hàng, thậm chí phát triển sản phẩm — ngoài ( ).»",
+        "optionsVi": {
+          "A": "thanh toán",
+          "B": "độ phân giải màn hình",
+          "C": "tên font",
+          "D": "hình nền"
+        },
+        "answerDisplay": "A. thanh toán",
+        "intent": "• JIT TERM · task fuexam\n• «Quy trình giao dịch gồm cả giới thiệu hàng, giao hàng, thậm chí phát…",
+        "concept": "• Thuật ngữ cần map: nghĩa đúng là «thanh toán».",
+        "whyCorrect": "• Đối chiếu JP ↔ VI: «「取引プロセスとは、( ) 以外にも商品案内や配送などの処理、さらには商品開発まで含めます。」» ↔ «thanh toán».\n• Các phương án khác sai nghĩa hoặc đảo khái niệm.",
+        "whatIs": {
+          "A": "thanh toán (hoàn tất giao dịch tiền)",
+          "B": "độ phân giải màn hình (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "C": "tên font (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "D": "hình nền (Thuật ngữ JP trong miền CNTT đề hỏi.)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? độ phân giải màn hình\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Không phải nghĩa đúng của thuật ngữ stem; đúng là «thanh toán».",
+          "C": "• Là gì? tên font\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Không phải nghĩa đúng của thuật ngữ stem; đúng là «thanh toán».",
+          "D": "• Là gì? hình nền\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Không phải nghĩa đúng của thuật ngữ stem; đúng là «thanh toán»."
+        },
+        "memoryTip": "• さらには商品開発まで含めます ↔ thanh toán"
+      }
+    },
+    {
+      "id": 302,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 48,
+      "question": "メール利用の注意について正しくないものはどれですか。",
+      "options": {
+        "A": "未知の添付ファイルを無条件に開いてよい",
+        "B": "フィッシングに注意する",
+        "C": "個人情報の取り扱いに注意する",
+        "D": "不審なリンクに注意する"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Về lưu ý khi dùng email, câu nào SAI?",
+        "optionsVi": {
+          "A": "mở file đính kèm lạ không điều kiện (sai)",
+          "B": "フィッシングに注意する — khái niệm kỹ thuật",
+          "C": "cẩn thận xử lý thông tin cá nhân",
+          "D": "cẩn thận link đáng ngờ"
+        },
+        "answerDisplay": "A. mở file đính kèm lạ không điều kiện (sai)",
+        "intent": "• JIT NEG · task fuexam\n• Về lưu ý khi dùng email, câu nào SAI?",
+        "concept": "• Đề chọn phát biểu **SAI**.\n• Phát biểu sai (đáp án A): Mở file đính kèm lạ không điều kiện (SAI / nguy hiểm) — Hành vi không an toàn khi dùng mail.",
+        "whyCorrect": "• Stem yêu cầu chọn câu **không đúng**.\n• «Mở file đính kèm lạ không điều kiện (SAI / nguy hiểm)» mâu thuẫn kiến thức chuẩn → là đáp án.\n• Các option còn lại là phát biểu đúng/hợp lý hơn.",
+        "whatIs": {
+          "A": "mở file đính kèm lạ không điều kiện (sai) (Hành vi không an toàn khi dùng mail)",
+          "B": "フィッシングに注意する — khái niệm kỹ thuật (lừa lấy thông tin qua mail/site giả)",
+          "C": "cẩn thận xử lý thông tin cá nhân (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "D": "cẩn thận link đáng ngờ (Thuật ngữ JP trong miền CNTT đề hỏi.)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? フィッシングに注意する — khái niệm kỹ thuật\n• Dùng để làm gì? lừa lấy thông tin qua mail/site giả\n• Vì sao sai? Đây là phát biểu đúng/hợp lý — đề hỏi câu SAI nên không chọn.",
+          "C": "• Là gì? cẩn thận xử lý thông tin cá nhân\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Đây là phát biểu đúng/hợp lý — đề hỏi câu SAI nên không chọn.",
+          "D": "• Là gì? cẩn thận link đáng ngờ\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Đây là phát biểu đúng/hợp lý — đề hỏi câu SAI nên không chọn."
+        },
+        "memoryTip": "• Đề SAI/誤 → chọn phát biểu mâu thuẫn kiến thức."
+      }
+    },
+    {
+      "id": 303,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 49,
+      "question": "映画では1秒に何回の書き換えを行っていますか。",
+      "options": {
+        "A": "約24フレーム（24fps）",
+        "B": "1フレーム",
+        "C": "1000フレーム固定",
+        "D": "0フレーム"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Phim điện ảnh mỗi giây «vẽ lại» bao nhiêu lần (frame)?",
+        "optionsVi": {
+          "A": "khung hình (frame)",
+          "B": "khung hình (frame)",
+          "C": "khung hình (frame)",
+          "D": "khung hình (frame)"
+        },
+        "answerDisplay": "A. khung hình (frame)",
+        "intent": "• JIT GEN · task fuexam\n• Phim điện ảnh mỗi giây «vẽ lại» bao nhiêu lần (frame)?",
+        "concept": "• 約24フレーム（24fps）: Thuật ngữ JP trong miền CNTT đề hỏi..",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «約24フレーム（24fps）» map đúng miền: Thuật ngữ JP trong miền CNTT đề hỏi..",
+        "whatIs": {
+          "A": "khung hình (frame) (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "B": "khung hình (frame) (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "C": "khung hình (frame) (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "D": "khung hình (frame) (Thuật ngữ JP trong miền CNTT đề hỏi.)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? khung hình (frame)\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «約24フレーム（24fps）».",
+          "C": "• Là gì? khung hình (frame)\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «約24フレーム（24fps）».",
+          "D": "• Là gì? khung hình (frame)\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «約24フレーム（24fps）»."
+        },
+        "memoryTip": "• 約24フレーム（24fps） = Thuật ngữ JP trong miền CNTT đề hỏi."
+      },
+      "_pilotFixed": "2026-07-23-v1"
+    },
+    {
+      "id": 304,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 50,
+      "question": "「射影の結果を並べ替えるには ( ) という単語を使います。」",
+      "options": {
+        "A": "ソート（ORDER BY）",
+        "B": "ジョインのみ",
+        "C": "インデックス削除",
+        "D": "ドロップ"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "«Để sắp xếp kết quả phép chiếu (projection), dùng từ ( ).»",
+        "optionsVi": {
+          "A": "ソート（ORDER BY） — khái niệm kỹ thuật",
+          "B": "ジョインのみ — khái niệm kỹ thuật",
+          "C": "インデックス削除 — khái niệm kỹ thuật",
+          "D": "ドロップ — khái niệm kỹ thuật"
+        },
+        "answerDisplay": "A. ソート（ORDER BY） — khái niệm kỹ thuật",
+        "intent": "• JIT GEN · task fuexam\n• «Để sắp xếp kết quả phép chiếu (projection), dùng từ ( ).»",
+        "concept": "• sắp xếp: xếp thứ tự dữ liệu.",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «sắp xếp» map đúng miền: xếp thứ tự dữ liệu.",
+        "whatIs": {
+          "A": "ソート（ORDER BY） — khái niệm kỹ thuật (xếp thứ tự dữ liệu)",
+          "B": "ジョインのみ — khái niệm kỹ thuật (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "C": "インデックス削除 — khái niệm kỹ thuật (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "D": "ドロップ — khái niệm kỹ thuật (Thuật ngữ JP trong miền CNTT đề hỏi.)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? ジョインのみ — khái niệm kỹ thuật\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «sắp xếp».",
+          "C": "• Là gì? インデックス削除 — khái niệm kỹ thuật\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «sắp xếp».",
+          "D": "• Là gì? ドロップ — khái niệm kỹ thuật\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «sắp xếp»."
+        },
+        "memoryTip": "• sắp xếp = xếp thứ tự dữ liệu"
+      }
+    },
+    {
+      "id": 305,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 51,
+      "question": "共通方式について正しいものをえらんでください。",
+      "options": {
+        "A": "暗号化と復号に同じ鍵を使う共通鍵暗号",
+        "B": "公開鍵と秘密鍵が必ず同一文字列",
+        "C": "鍵が不要な暗号",
+        "D": "圧縮の別名"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Chọn phát biểu ĐÚNG về chủ đề trong đề.",
+        "optionsVi": {
+          "A": "mật mã khóa chung (cùng khóa mã/giải)",
+          "B": "khóa công khai và bí mật luôn giống nhau",
+          "C": "mật mã không cần khóa",
+          "D": "tên khác của nén"
+        },
+        "answerDisplay": "A. mật mã khóa chung (cùng khóa mã/giải)",
+        "intent": "• Câu JIT: nắm định nghĩa/thứ tự/thuật ngữ CNTT.\n• mật mã khóa chung (cùng khóa mã/giải)",
+        "concept": "• mật mã khóa chung (cùng khóa mã/giải)\n• Nghĩa: mật mã khóa chung (cùng khóa mã/giải).",
+        "whyCorrect": "• mật mã khóa chung (cùng khóa mã/giải)\n• Đáp án A: mật mã khóa chung (cùng khóa mã/giải)",
+        "whatIs": {
+          "A": "暗号化と復号に同じ鍵を使う共通鍵暗号 (thuật ngữ JP).",
+          "B": "公開鍵と秘密鍵が必ず同一文字列 (thuật ngữ JP).",
+          "C": "鍵が不要な暗号 (thuật ngữ JP).",
+          "D": "圧縮の別名 (thuật ngữ JP)."
+        },
+        "whyWrong": {
+          "B": "• Là gì? 公開鍵と秘密鍵が必ず同一文字列 (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «公開鍵と秘密鍵が必ず同一文字列» (B) không thỏa: phát biểu đúng/sai khớp cơ chế.",
+          "C": "• Là gì? 鍵が不要な暗号 (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «鍵が不要な暗号» (C) không thỏa: phát biểu đúng/sai khớp cơ chế.",
+          "D": "• Là gì? 圧縮の別名 (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «圧縮の別名» (D) không thỏa: phát biểu đúng/sai khớp cơ chế."
+        }
+      }
+    },
+    {
+      "id": 306,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 52,
+      "question": "「小さいものから順に または逆に大きいものから順にデータを並べ替えること」は何を指しますか。",
+      "options": {
+        "A": "ソート（整列）",
+        "B": "ハッシュ衝突",
+        "C": "正規化",
+        "D": "デッドロック"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "«Sắp xếp dữ liệu từ nhỏ→lớn hoặc ngược lại» gọi là gì?",
+        "optionsVi": {
+          "A": "ソート（整列） — khái niệm kỹ thuật",
+          "B": "ハッシュ衝突 — khái niệm kỹ thuật",
+          "C": "chuẩn hóa",
+          "D": "デッドロック — khái niệm kỹ thuật"
+        },
+        "answerDisplay": "A. ソート（整列） — khái niệm kỹ thuật",
+        "intent": "• JIT DEF · task fuexam\n• «Sắp xếp dữ liệu từ nhỏ→lớn hoặc ngược lại» gọi là gì?",
+        "concept": "• sắp xếp: xếp thứ tự dữ liệu.",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «sắp xếp» map đúng miền: xếp thứ tự dữ liệu.",
+        "whatIs": {
+          "A": "ソート（整列） — khái niệm kỹ thuật (xếp thứ tự dữ liệu)",
+          "B": "ハッシュ衝突 — khái niệm kỹ thuật (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "C": "chuẩn hóa (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "D": "デッドロック — khái niệm kỹ thuật (chờ vòng tài nguyên)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? ハッシュ衝突 — khái niệm kỹ thuật\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «sắp xếp».",
+          "C": "• Là gì? chuẩn hóa\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «sắp xếp».",
+          "D": "• Là gì? デッドロック — khái niệm kỹ thuật\n• Dùng để làm gì? chờ vòng tài nguyên\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «sắp xếp»."
+        },
+        "memoryTip": "• sắp xếp = xếp thứ tự dữ liệu"
+      }
+    },
+    {
+      "id": 307,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 53,
+      "question": "クッキー(cookie)に関する記述a~cのうち、適切なものだけをすべて挙げたものはどれか。",
+      "options": {
+        "A": "Webサーバがブラウザに保存させる小さなデータで状態管理等に使う（適切な説明の組合せ）",
+        "B": "CPUの温度センサの別名",
+        "C": "OSカーネルそのもの",
+        "D": "必ずウイルスである"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Trong các phát biểu a–c về cookie (クッキー), những phát biểu nào là thích hợp? (dạng chọn tổ hợp a–c trên đề gốc — xem a/b/c ở đề đầy đủ nếu có).",
+        "optionsVi": {
+          "A": "phát biểu về web",
+          "B": "tên khác của cảm biến nhiệt CPU",
+          "C": "chính kernel OS",
+          "D": "必ずウイルスである — khái niệm kỹ thuật"
+        },
+        "answerDisplay": "A. phát biểu về web",
+        "intent": "• JIT DEF · task fuexam\n• Về cookie, tổ hợp mô tả đúng là gì? (dạng chọn tổ hợp a–c trên đề gốc)",
+        "concept": "• máy chủ: cung cấp dịch vụ.",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «máy chủ» map đúng miền: cung cấp dịch vụ.",
+        "whatIs": {
+          "A": "phát biểu về web (cung cấp dịch vụ)",
+          "B": "tên khác của cảm biến nhiệt CPU (thực thi lệnh)",
+          "C": "chính kernel OS (quản process/memory/file/I/O)",
+          "D": "必ずウイルスである — khái niệm kỹ thuật (phần mềm độc hại)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? tên khác của cảm biến nhiệt CPU\n• Dùng để làm gì? thực thi lệnh\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «máy chủ».",
+          "C": "• Là gì? chính kernel OS\n• Dùng để làm gì? quản process/memory/file/I/O\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «máy chủ».",
+          "D": "• Là gì? 必ずウイルスである — khái niệm kỹ thuật\n• Dùng để làm gì? phần mềm độc hại\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «máy chủ»."
+        },
+        "memoryTip": "• máy chủ = cung cấp dịch vụ"
+      }
+    },
+    {
+      "id": 308,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 54,
+      "question": "【専門用語】次のベトナム語の用語を日本語に直しなさい。 Thiết bị tính toán",
+      "options": {
+        "A": "計算機（コンピュータ）",
+        "B": "プリンタ",
+        "C": "スピーカ",
+        "D": "マウス"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "【Thuật ngữ】Dịch sang tiếng Nhật: Thiết bị tính toán",
+        "optionsVi": {
+          "A": "máy tính",
+          "B": "máy in",
+          "C": "スピーカ — khái niệm kỹ thuật",
+          "D": "マウス — khái niệm kỹ thuật"
+        },
+        "answerDisplay": "A. máy tính",
+        "intent": "• Câu từ vựng: cho thuật ngữ tiếng Việt → chọn bản tiếng Nhật đúng.\n• Thuật ngữ cần dịch: «Thiết bị tính toán»",
+        "concept": "• «Thiết bị tính toán» trong tiếng Nhật là «máy tính».",
+        "whyCorrect": "• Thiết bị tính toán = computer = máy tính.\n• Việt «Thiết bị tính toán» ⇔ Nhật «máy tính».\n• máy tính\n• Chọn đúng cặp dịch thuật ngữ, không chọn từ gần nghĩa khác lĩnh vực.",
+        "memoryTip": "• Thiết bị tính toán = máy tính\n• Học theo cặp VI ↔ JP, tránh nhầm từ kanji/katakana gần.",
+        "whatIs": {
+          "A": "計算機（コンピュータ） (thuật ngữ JP).",
+          "B": "プリンタ (thuật ngữ JP).",
+          "C": "スピーカ (thuật ngữ JP).",
+          "D": "マウス (thuật ngữ JP)."
+        },
+        "whyWrong": {
+          "B": "• Là gì? プリンタ (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «プリンタ» (B) không thỏa: bản dịch thuật ngữ JP↔VI đúng.",
+          "C": "• Là gì? スピーカ (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «スピーカ» (C) không thỏa: bản dịch thuật ngữ JP↔VI đúng.",
+          "D": "• Là gì? マウス (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «マウス» (D) không thỏa: bản dịch thuật ngữ JP↔VI đúng."
+        }
+      }
+    },
+    {
+      "id": 309,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 55,
+      "question": "フォルダとは何ですか",
+      "options": {
+        "A": "ファイルを整理して格納する入れ物（ディレクトリ）",
+        "B": "CPUのレジスタ",
+        "C": "電源ユニット",
+        "D": "画面の解像度"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Folder là gì?",
+        "optionsVi": {
+          "A": "hộp chứa file (thư mục/directory)",
+          "B": "CPUのレジスタ — khái niệm kỹ thuật",
+          "C": "電源ユニット — khái niệm kỹ thuật",
+          "D": "độ phân giải màn hình"
+        },
+        "answerDisplay": "A. hộp chứa file (thư mục/directory)",
+        "intent": "• JIT DEF · task fuexam\n• Folder là gì?",
+        "concept": "• tệp/file: lưu trữ logic.",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «tệp/file» map đúng miền: lưu trữ logic.",
+        "whatIs": {
+          "A": "hộp chứa file (thư mục/directory) (lưu trữ logic)",
+          "B": "CPUのレジスタ — khái niệm kỹ thuật (thực thi lệnh)",
+          "C": "電源ユニット — khái niệm kỹ thuật (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "D": "độ phân giải màn hình (Thuật ngữ JP trong miền CNTT đề hỏi.)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? CPUのレジスタ — khái niệm kỹ thuật\n• Dùng để làm gì? thực thi lệnh\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «tệp/file».",
+          "C": "• Là gì? 電源ユニット — khái niệm kỹ thuật\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «tệp/file».",
+          "D": "• Là gì? độ phân giải màn hình\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «tệp/file»."
+        },
+        "memoryTip": "• tệp/file = lưu trữ logic"
+      }
+    },
+    {
+      "id": 310,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 56,
+      "question": "「電子機器には、コンピュータ、携帯電話、( ) を始めとして、ポータブルオーディオやゲーム機などの家電製品など多くのものがあり、ネットワークは成長し続けています。」",
+      "options": {
+        "A": "情報家電・家電製品",
+        "B": "化石燃料",
+        "C": "石板",
+        "D": "羊皮紙"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "«Thiết bị điện tử gồm máy tính, điện thoại, ( ) … audio xách tay, máy game và nhiều đồ gia dụng; mạng vẫn phát triển.»",
+        "optionsVi": {
+          "A": "thiết bị thông tin / gia dụng",
+          "B": "nhiên liệu hóa thạch",
+          "C": "bảng đá",
+          "D": "da dê (giấy cổ)"
+        },
+        "answerDisplay": "A. thiết bị thông tin / gia dụng",
+        "intent": "• JIT GEN · task fuexam\n• «Thiết bị điện tử gồm máy tính, điện thoại, ( ) … audio xách tay, máy…",
+        "concept": "• 情報家電・家電製品: Thuật ngữ JP trong miền CNTT đề hỏi..",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «情報家電・家電製品» map đúng miền: Thuật ngữ JP trong miền CNTT đề hỏi..",
+        "whatIs": {
+          "A": "thiết bị thông tin / gia dụng (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "B": "nhiên liệu hóa thạch (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "C": "bảng đá (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "D": "da dê (giấy cổ) (Thuật ngữ JP trong miền CNTT đề hỏi.)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? nhiên liệu hóa thạch\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «情報家電・家電製品».",
+          "C": "• Là gì? bảng đá\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «情報家電・家電製品».",
+          "D": "• Là gì? da dê (giấy cổ)\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «情報家電・家電製品»."
+        },
+        "memoryTip": "• 情報家電・家電製品 = Thuật ngữ JP trong miền CNTT đề hỏi."
+      }
+    },
+    {
+      "id": 311,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 57,
+      "question": "網的表現について正しいものを選びなさい。",
+      "options": {
+        "A": "ネットワーク型データモデルなど網状の関係を表す表現",
+        "B": "必ず木構造のみ",
+        "C": "1対1関係しか表せない",
+        "D": "画像の解像度規格"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Chọn phát biểu đúng về biểu diễn mạng (network model).",
+        "optionsVi": {
+          "A": "biểu diễn quan hệ dạng mạng (network model)",
+          "B": "chỉ cấu trúc cây",
+          "C": "1対1関係しか表せない — khái niệm kỹ thuật",
+          "D": "chuẩn độ phân giải ảnh"
+        },
+        "answerDisplay": "A. biểu diễn quan hệ dạng mạng (network model)",
+        "intent": "• Câu JIT: nắm định nghĩa/thứ tự/thuật ngữ CNTT.\n• biểu diễn quan hệ dạng mạng (network model)",
+        "concept": "• biểu diễn quan hệ dạng mạng (network model)\n• Nghĩa: biểu diễn quan hệ dạng mạng (network model).",
+        "whyCorrect": "• biểu diễn quan hệ dạng mạng (network model)\n• Đáp án A: biểu diễn quan hệ dạng mạng (network model)",
+        "whatIs": {
+          "A": "ネットワーク型データモデルなど網状の関係を表す表現 (thuật ngữ JP).",
+          "B": "必ず木構造のみ (thuật ngữ JP).",
+          "C": "1対1関係しか表せない (thuật ngữ JP).",
+          "D": "画像の解像度規格 (thuật ngữ JP)."
+        },
+        "whyWrong": {
+          "B": "• Là gì? 必ず木構造のみ (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «必ず木構造のみ» (B) không thỏa: phát biểu đúng/sai khớp cơ chế.",
+          "C": "• Là gì? 1対1関係しか表せない (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «1対1関係しか表せない» (C) không thỏa: phát biểu đúng/sai khớp cơ chế.",
+          "D": "• Là gì? 画像の解像度規格 (thuật ngữ JP).\n• Dùng để làm gì? Khái niệm CNTT trong đề thi JIT.\n• Vì sao sai? «画像の解像度規格» (D) không thỏa: phát biểu đúng/sai khớp cơ chế."
+        }
+      }
+    },
+    {
+      "id": 312,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 58,
+      "question": "出力用ハードウェアは何ですか。",
+      "options": {
+        "A": "ディスプレイ・プリンタなど",
+        "B": "キーボード",
+        "C": "マウス",
+        "D": "マイク（入力）"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Phần cứng xuất (output) là gì?",
+        "optionsVi": {
+          "A": "màn hình",
+          "B": "bàn phím",
+          "C": "マウス — khái niệm kỹ thuật",
+          "D": "マイク（入力） — khái niệm kỹ thuật"
+        },
+        "answerDisplay": "A. màn hình",
+        "intent": "• JIT DEF · task fuexam\n• Phần cứng xuất (output) là gì?",
+        "concept": "• ディスプレイ・プリンタなど: Thuật ngữ JP trong miền CNTT đề hỏi..",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «ディスプレイ・プリンタなど» map đúng miền: Thuật ngữ JP trong miền CNTT đề hỏi..",
+        "whatIs": {
+          "A": "màn hình (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "B": "bàn phím (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "C": "マウス — khái niệm kỹ thuật (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "D": "マイク（入力） — khái niệm kỹ thuật (Thuật ngữ JP trong miền CNTT đề hỏi.)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? bàn phím\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «ディスプレイ・プリンタなど».",
+          "C": "• Là gì? マウス — khái niệm kỹ thuật\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «ディスプレイ・プリンタなど».",
+          "D": "• Là gì? マイク（入力） — khái niệm kỹ thuật\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «ディスプレイ・プリンタなど»."
+        },
+        "memoryTip": "• ディスプレイ・プリンタなど = Thuật ngữ JP trong miền CNTT đề hỏi."
+      }
+    },
+    {
+      "id": 313,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 59,
+      "question": "新たなプログラムを作成するときに、効率的な内部処理とともに考慮しなければならない重要な要素は何ですか。",
+      "options": {
+        "A": "保守性・可読性・拡張性",
+        "B": "意図的な難読化のみ",
+        "C": "文書を一切残さないこと",
+        "D": "テストを省略すること"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Khi viết chương trình mới, ngoài xử lý nội bộ hiệu quả, yếu tố quan trọng cần cân nhắc là gì?",
+        "optionsVi": {
+          "A": "bảo trì · dễ đọc · mở rộng",
+          "B": "chỉ làm khó đọc có chủ đích",
+          "C": "không để lại tài liệu",
+          "D": "テストを省略すること — khái niệm kỹ thuật"
+        },
+        "answerDisplay": "A. bảo trì · dễ đọc · mở rộng",
+        "intent": "• JIT DEF · task fuexam\n• Khi viết chương trình mới, ngoài xử lý nội bộ hiệu quả, yếu tố quan t…",
+        "concept": "• bảo trì: sửa/cải sau vận hành.",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «bảo trì» map đúng miền: sửa/cải sau vận hành.",
+        "whatIs": {
+          "A": "bảo trì · dễ đọc · mở rộng (sửa/cải sau vận hành)",
+          "B": "chỉ làm khó đọc có chủ đích (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "C": "không để lại tài liệu (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "D": "テストを省略すること — khái niệm kỹ thuật (phát hiện lỗi)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? chỉ làm khó đọc có chủ đích\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «bảo trì».",
+          "C": "• Là gì? không để lại tài liệu\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «bảo trì».",
+          "D": "• Là gì? テストを省略すること — khái niệm kỹ thuật\n• Dùng để làm gì? phát hiện lỗi\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «bảo trì»."
+        },
+        "memoryTip": "• bảo trì = sửa/cải sau vận hành"
+      }
+    },
+    {
+      "id": 314,
+      "task": "fuexam",
+      "taskLabel": "Đề FE",
+      "num": 60,
+      "question": "動画像情報圧縮では、何がよく用いられますか。",
+      "options": {
+        "A": "MPEGなどの動画像圧縮方式",
+        "B": "非圧縮RAW必須のみ",
+        "C": "音声WAV固定のみ",
+        "D": "テキストCSVのみ"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "source": "fuexam",
+      "exam": "JIT401_SP26_FE",
+      "explanation": {
+        "questionVi": "Khi nén thông tin ảnh động (video), người ta thường dùng gì?",
+        "optionsVi": {
+          "A": "cách nén video như MPEG",
+          "B": "chỉ bắt buộc RAW không nén",
+          "C": "chỉ WAV cố định",
+          "D": "テキストCSVのみ — khái niệm kỹ thuật"
+        },
+        "answerDisplay": "A. cách nén video như MPEG",
+        "intent": "• JIT GEN · task fuexam\n• Khi nén thông tin ảnh động (video), người ta thường dùng gì?",
+        "concept": "• MPEGなどの動画像圧縮方式: Thuật ngữ JP trong miền CNTT đề hỏi..",
+        "whyCorrect": "• Stem hỏi khái niệm/cơ chế CNTT (JP).\n• Đáp án «MPEGなどの動画像圧縮方式» map đúng miền: Thuật ngữ JP trong miền CNTT đề hỏi..",
+        "whatIs": {
+          "A": "cách nén video như MPEG (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "B": "chỉ bắt buộc RAW không nén (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "C": "chỉ WAV cố định (Thuật ngữ JP trong miền CNTT đề hỏi.)",
+          "D": "テキストCSVのみ — khái niệm kỹ thuật (Thuật ngữ JP trong miền CNTT đề hỏi.)"
+        },
+        "whyWrong": {
+          "B": "• Là gì? chỉ bắt buộc RAW không nén\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «MPEGなどの動画像圧縮方式».",
+          "C": "• Là gì? chỉ WAV cố định\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «MPEGなどの動画像圧縮方式».",
+          "D": "• Là gì? テキストCSVのみ — khái niệm kỹ thuật\n• Dùng để làm gì? Thuật ngữ JP trong miền CNTT đề hỏi.\n• Vì sao sai? Sai miền/map từ so với stem; đáp án chuẩn hướng «MPEGなどの動画像圧縮方式»."
+        },
+        "memoryTip": "• MPEGなどの動画像圧縮方式 = Thuật ngữ JP trong miền CNTT đề hỏi."
+      }
+    }
+  ]
+}
