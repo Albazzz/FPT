@@ -16,8 +16,9 @@
   const SUBJECTS = window.QUIZ_SUBJECTS || {};
   const ORDER = window.QUIZ_SUBJECT_ORDER || Object.keys(SUBJECTS);
   let subjectId = (qsParam("s") || qsParam("subject") || "prm").toLowerCase();
-  // Alias hiển thị: JFE301 (data vẫn key "fe")
+  // Alias hiển thị: JFE301 (data vẫn key "fe"), PRN232 (s=prn)
   if (subjectId === "jfe" || subjectId === "jfe301" || subjectId === "wedjfe") subjectId = "fe";
+  if (subjectId === "prn" || subjectId === "prn-232") subjectId = "prn232";
   if (!SUBJECTS[subjectId]) subjectId = ORDER[0] || "prm";
   const CFG = SUBJECTS[subjectId] || {
     id: subjectId,

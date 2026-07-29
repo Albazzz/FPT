@@ -63,5 +63,27 @@ App vẫn đọc `data/{môn}.js` như cũ — không đổi `play.html`.
 | **mln** | `all` 550 (tab Bank) · `fuexam` 65 |
 | **jit** | `quiz` 131 · `sample` 52 · `pt` 109 · `fuexam` 22 · `slides` 318 · `site` 148 |
 | **fe** | `test` 67 · `bank300` 300 · `datajfe` 41 · `albazzz` 15 · `books` 249 · `fuexam` 54 |
+| **prn232** | `fe` 50 (SP26 FE) · `feb5` 50 (SP26 B5 FE) · `fefa25` 50 (FA25 FE) · `pe` 0 (thực hành) |
 
 MLN: câu bank dùng `task: "all"` (legacy); tab UI id `bank` vẫn match — xem `app.js` `examPool()`.
+
+### PRN232 import
+
+Ảnh đề gốc: `Collections/Đề Thi FE - PRN232 - ...` (webp).
+
+```bash
+# OCR + parse (cần rapidocr_onnxruntime, wordninja, Pillow)
+python quiz/tools/import_prn232_exams.py
+node quiz/tools/merge_by_task.mjs prn232 --catalog
+```
+
+OCR thô: `quiz/_ocr_tmp/ocr_raw/`. Sửa tay trong `quiz/data/prn232/{task}.json` rồi merge lại.
+
+### PRN232 explain (form PROMPT)
+
+```bash
+node quiz/tools/upgrade_prn232_explain.mjs
+node quiz/tools/merge_by_task.mjs prn232 --catalog
+```
+
+Explain theo `promt/PROMPT_GIAI_THICH_TRAC_NGHIEM.md`: `questionVi` · `optionsVi` · `concept` · `whyCorrect` · `whyWrong` 3 dòng · `whatIs` · `memoryTip`.

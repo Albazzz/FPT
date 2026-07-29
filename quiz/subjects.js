@@ -93,6 +93,27 @@ window.QUIZ_SUBJECTS = {
     dataKey: "fe",
     hint: "JFE301: test · 300 · datajfe + Books/Đề FE. Tab 0 câu được ẩn.",
   },
+  prn232: {
+    id: "prn232",
+    title: "PRN232",
+    subtitle: "150 MCQ · SP26/B5/FA25 FE · PE thực hành",
+    brandIcon: "fa-code",
+    storageWrong: "uq-prn232-wrong-v1",
+    storageProgress: "uq-prn232-progress-v1",
+    cloudSubject: "prn232",
+    multiSelect: true,
+    showTranslationAlways: true,
+    tasks: [
+      { id: "fe", label: "SP26 FE", icon: "fa-file-circle-check" },
+      { id: "feb5", label: "SP26 B5 FE", icon: "fa-file-circle-plus" },
+      { id: "fefa25", label: "FA25 FE", icon: "fa-file" },
+      { id: "pe", label: "Đề PE", icon: "fa-laptop-code" },
+      { id: "all", label: "Tất cả", icon: "fa-layer-group" },
+    ],
+    defaultTask: "all",
+    dataKey: "prn232",
+    hint: "PRN232: 50 SP26 FE + 50 B5 FE + 50 FA25 FE. Tab PE trống (đề thực hành VS/.NET 8). OCR có thể lệch — đối chiếu ảnh gốc khi nghi ngờ.",
+  },
 };
 
-window.QUIZ_SUBJECT_ORDER = ["prm", "mln", "jit", "fe"];
+window.QUIZ_SUBJECT_ORDER = ["prm", "mln", "jit", "fe", "prn232"];

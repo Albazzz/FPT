@@ -1,0 +1,17 @@
+{
+  "subject": "prn232",
+  "upgradedAt": "2026-07-29T14:30:00.000Z",
+  "total": 150,
+  "tasks": [
+    "fe",
+    "feb5",
+    "fefa25"
+  ],
+  "counts": {
+    "fe": 50,
+    "feb5": 50,
+    "fefa25": 50
+  },
+  "partsOf": "prn232",
+  "note": "Edit {task}.json then run: node quiz/tools/merge_by_task.mjs prn232"
+}

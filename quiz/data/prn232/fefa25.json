@@ -1,0 +1,1607 @@
+{
+  "subject": "prn232",
+  "task": "fefa25",
+  "taskLabel": "FA25-FE",
+  "count": 50,
+  "questions": [
+    {
+      "id": 1,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 1,
+      "question": "You want to create a custom input formatter for the text/csv media type. Which base class should you inherit from?",
+      "options": {
+        "A": "CsvFormatter",
+        "B": "TextOutputFormatter",
+        "C": "TextInputFormatter",
+        "D": "OutputFormatter"
+      },
+      "answer": "C",
+      "explanation": {
+        "questionVi": "Bạn muốn tạo một custom input formatter cho media type text/csv. Bạn nên kế thừa từ lớp cơ sở nào?",
+        "optionsVi": {
+          "A": "CsvFormatter",
+          "B": "TextOutputFormatter",
+          "C": "TextInputFormatter",
+          "D": "OutputFormatter"
+        },
+        "answerDisplay": "C. TextInputFormatter",
+        "concept": "• Input Formatters trong ASP.NET Core MVC/Web API được dùng để deserialize dữ liệu từ request body thành các đối tượng C# dựa trên Media Type (Content-Type header).\n• Để xử lý dữ liệu dạng văn bản (text-based formats) như CSV, JSON, XML, ASP.NET Core cung cấp lớp cơ sở trừu tượng TextInputFormatter (kế thừa từ InputFormatter).",
+        "whyCorrect": "• TextInputFormatter là lớp cơ sở chuẩn trong ASP.NET Core dành riêng cho việc tạo các custom input formatter xử lý định dạng văn bản (như text/csv). Nó cung cấp hỗ trợ sẵn cho Encoding (UTF-8, UTF-16,...) và các phương thức đọc stream ReadResponseBodyAsync.",
+        "whyWrong": {
+          "A": "• CsvFormatter không phải là một class có sẵn trong framework ASP.NET Core mà chỉ là tên lớp tùy chỉnh do lập trình viên tự đặt.",
+          "B": "• TextOutputFormatter được sử dụng để tạo custom output formatter (ghi dữ liệu ra response body), không phải dùng cho input (đọc request body).",
+          "D": "• OutputFormatter là lớp cơ sở cho việc xuất dữ liệu ra HTTP response (Output Formatting), không phải để đọc dữ liệu từ request body."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 2,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 2,
+      "question": "Which query correctly finds all products where the Name property ends with the string 'Edition'?",
+      "options": {
+        "A": "GET /Products?$filter=endswith(Name, 'Edition')",
+        "B": "GET /Products?$filter=Name.endsWith('Edition')",
+        "C": "GET /Products?$filter=last(Name) eq 'Edition'",
+        "D": "GET /Products?$filter=Name like '%Edition'"
+      },
+      "answer": "A",
+      "explanation": {
+        "questionVi": "Truy vấn nào dưới đây tìm chính xác tất cả các sản phẩm có thuộc tính Name kết thúc bằng chuỗi 'Edition' trong OData?",
+        "optionsVi": {
+          "A": "GET /Products?$filter=endswith(Name, 'Edition')",
+          "B": "GET /Products?$filter=Name.endsWith('Edition')",
+          "C": "GET /Products?$filter=last(Name) eq 'Edition'",
+          "D": "GET /Products?$filter=Name like '%Edition'"
+        },
+        "answerDisplay": "A. GET /Products?$filter=endswith(Name, 'Edition')",
+        "concept": "• Trong chuẩn OData (Open Data Protocol), truy vấn lọc dữ liệu sử dụng query option $filter.\n• Các hàm xử lý chuỗi chuẩn trong OData bao gồm: startswith(property, string), endswith(property, string), contains(property, string), substring(property, index),...",
+        "whyCorrect": "• Cú pháp chuẩn của hàm kiểm tra chuỗi kết thúc trong OData $filter là endswith(string_property, 'target_string'). Ở đây endswith(Name, 'Edition') sẽ lọc ra các thực thể có thuộc tính Name kết thúc bằng 'Edition'.",
+        "whyWrong": {
+          "B": "• Cú pháp Name.endsWith(...) dạng gọi phương thức của JavaScript/C# không hợp lệ trong cú pháp bộ lọc của OData.",
+          "C": "• Hàm last() không tồn tại trong OData để kiểm tra phần hậu tố của một chuỗi ký tự.",
+          "D": "• Toán tử like với ký tự đại diện % là cú pháp SQL, không phải là hàm hay toán tử hợp lệ trong bộ lọc OData $filter."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 3,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 3,
+      "question": "What is the primary purpose of Swagger (OpenAPI) in an ASP .NET Core Web API?",
+      "options": {
+        "A": "To provide a database management interface.",
+        "B": "To describe the capabilities of your API and provide interactive documentation.",
+        "C": "To automatically handle user authentication and authorization.",
+        "D": "To monitor the performance of the API in real-time."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Mục đích chính của Swagger (OpenAPI) trong một ứng dụng ASP.NET Core Web API là gì?",
+        "optionsVi": {
+          "A": "Cung cấp giao diện quản lý cơ sở dữ liệu.",
+          "B": "Mô tả các khả năng của API và cung cấp tài liệu thử nghiệm tương tác.",
+          "C": "Tự động xử lý xác thực và phân quyền người dùng.",
+          "D": "Giám sát hiệu năng của API theo thời gian thực."
+        },
+        "answerDisplay": "B. To describe the capabilities of your API and provide interactive documentation.",
+        "concept": "• Swagger (OpenAPI Specification) là chuẩn mô tả machine-readable cho RESTful APIs.\n• Trong ASP.NET Core (sử dụng Swashbuckle hoặc NSwag), Swagger tự động sinh file JSON/YAML mô tả các endpoint, parameters, response types, và cung cấp trang Swagger UI cho phép gọi API trực tiếp từ trình duyệt.",
+        "whyCorrect": "• Swagger (OpenAPI) giúp tạo tài liệu API rõ ràng, tiêu chuẩn hóa và cung cấp giao diện tương tác (Swagger UI) cho phép các nhà phát triển thử nghiệm gọi API dễ dàng mà không cần dùng công cụ bên ngoài như Postman.",
+        "whyWrong": {
+          "A": "• Quản lý cơ sở dữ liệu là chức năng của các công cụ như SSMS, pgAdmin, hoặc EF Core Migration, không phải Swagger.",
+          "C": "• Swagger chỉ hỗ trợ mô tả cấu hình xác thực (VD: nút Authorize để nhập Bearer Token), chứ không tự động xử lý xác thực hay phân quyền logic cho server.",
+          "D": "• Giám sát hiệu năng API theo thời gian thực là vai trò của APM tools (Application Insights, Prometheus, Grafana), không phải Swagger."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 4,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 4,
+      "question": "Which attribute would you use to validate that a property is a valid email address format?",
+      "options": {
+        "A": "[Email]",
+        "B": "[IsEmail]",
+        "C": "[EmailAddress]",
+        "D": "[RegularExpression(@\"^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$\")]"
+      },
+      "answer": "C",
+      "explanation": {
+        "questionVi": "Attribute nào được sử dụng để kiểm tra xem một thuộc tính có đúng định dạng địa chỉ email hay không?",
+        "optionsVi": {
+          "A": "[Email]",
+          "B": "[IsEmail]",
+          "C": "[EmailAddress]",
+          "D": "[RegularExpression(@\"^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$\")]"
+        },
+        "answerDisplay": "C. [EmailAddress]",
+        "concept": "• Data Annotations trong namespace System.ComponentModel.DataAnnotations cung cấp các validation attributes sẵn có trong .NET để kiểm tra tính hợp lệ của Model khi client gửi request.",
+        "whyCorrect": "• [EmailAddress] là attribute tiêu chuẩn có sẵn trong System.ComponentModel.DataAnnotations để xác thực một thuộc tính chứa chuỗi có định dạng địa chỉ email hợp lệ.",
+        "whyWrong": {
+          "A": "• Attribute [Email] không tồn tại trong namespace System.ComponentModel.DataAnnotations của .NET.",
+          "B": "• Attribute [IsEmail] không phải là attribute chuẩn trong .NET Framework / .NET Core.",
+          "D": "• Mặc dù [RegularExpression] có thể dùng để kiểm tra regex email, nhưng [EmailAddress] mới là attribute chuyên dụng, ngắn gọn và chuẩn mực được thiết kế sẵn trong .NET cho mục đích này."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 5,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 5,
+      "question": "You want to select all <a> tags that have a target attribute equal to _blank. What is the correct selector?",
+      "options": {
+        "A": "$(\"a[target='_blank']\")",
+        "B": "$(\"a.target_blank\")",
+        "C": "$(\"a where target is _blank\")",
+        "D": "$(\"a{target:'_blank'}\")"
+      },
+      "answer": "A",
+      "explanation": {
+        "questionVi": "Bạn muốn chọn tất cả các thẻ <a> có thuộc tính target bằng _blank bằng jQuery. Selector nào sau đây là chính xác?",
+        "optionsVi": {
+          "A": "$(\"a[target='_blank']\")",
+          "B": "$(\"a.target_blank\")",
+          "C": "$(\"a where target is _blank\")",
+          "D": "$(\"a{target:'_blank'}\")"
+        },
+        "answerDisplay": "A. $(\"a[target='_blank']\")",
+        "concept": "• jQuery Selector sử dụng cú pháp CSS Selectors để truy vấn các phần tử DOM.\n• Để chọn phần tử dựa theo thuộc tính (attribute), CSS/jQuery dùng cú pháp ngoặc vuông: element[attribute='value'].",
+        "whyCorrect": "• $(\"a[target='_blank']\") sử dụng attribute selector chuẩn [attr='value'], chọn chính xác tất cả thẻ <a> chứa thuộc tính target có giá trị _blank.",
+        "whyWrong": {
+          "B": "• a.target_blank là class selector, tìm thẻ <a> có class=\"target_blank\", không phải kiểm tra thuộc tính target.",
+          "C": "• Cú pháp where target is ... không phải là cú pháp selector hợp lệ trong CSS hay jQuery.",
+          "D": "• Cú pháp a{target:'_blank'} giống định dạng JSON/CSS rule block, không phải là selector truy vấn DOM."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 6,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 6,
+      "question": "Which of the following questions does \"Authentication\" answer?",
+      "options": {
+        "A": "\"What can you do?\"",
+        "B": "\"Who are you?\"",
+        "C": "\"How long can you stay?\"",
+        "D": "\"Where are you from?\""
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Khái niệm \"Authentication\" (Xác thực) trả lời cho câu hỏi nào sau đây?",
+        "optionsVi": {
+          "A": "\"Bạn có thể làm gì?\"",
+          "B": "\"Bạn là ai?\"",
+          "C": "\"Bạn có thể ở lại bao lâu?\"",
+          "D": "\"Bạn đến từ đâu?\""
+        },
+        "answerDisplay": "B. \"Who are you?\"",
+        "concept": "• Trong an toàn thông tin và Web Development:\n  - Authentication (Xác thực): Xác định danh tính của người dùng (Xác nhận \"Bạn là ai?\").\n  - Authorization (Phân quyền): Xác định quyền hạn của người dùng (Xác nhận \"Bạn được phép làm gì?\").",
+        "whyCorrect": "• Authentication kiểm tra danh tính thông qua thông tin đăng nhập (username/password, JWT, OAuth token,...) để khẳng định xem người dùng là ai (\"Who are you?\").",
+        "whyWrong": {
+          "A": "• \"What can you do?\" (Bạn có thể làm gì?) là câu hỏi của Authorization (Phân quyền), không phải Authentication.",
+          "C": "• \"How long can you stay?\" liên quan đến thời hạn tồn tại của Session hoặc Token (Expiration/Lifetime), không phải định nghĩa của Authentication.",
+          "D": "• \"Where are you from?\" liên quan đến nguồn gốc request (Origin, IP Address, Location), không phải Authentication."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 7,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 7,
+      "question": "If a client sends an Accept header with application/json; q=0.9, application/xml; q=1.0, what is it indicating?",
+      "options": {
+        "A": "It can only accept JSON.",
+        "B": "It prefers XML (q=1.0) over JSON (q=0.9).",
+        "C": "It can only accept XML.",
+        "D": "It wants the response to be split between JSON and XML."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Nếu client gửi header Accept với giá trị application/json; q=0.9, application/xml; q=1.0, điều này có nghĩa là gì?",
+        "optionsVi": {
+          "A": "Client chỉ có thể nhận dữ liệu JSON.",
+          "B": "Client ưu tiên nhận XML (q=1.0) hơn JSON (q=0.9).",
+          "C": "Client chỉ có thể nhận dữ liệu XML.",
+          "D": "Client muốn phản hồi được chia đôi giữa JSON và XML."
+        },
+        "answerDisplay": "B. It prefers XML (q=1.0) over JSON (q=0.9).",
+        "concept": "• Header Accept trong HTTP Request dùng cho cơ chế thương lượng nội dung (Content Negotiation).\n• Trọng số q (quality factor) có giá trị từ 0.0 đến 1.0 (mặc định là 1.0). Giá trị q càng cao thể hiện mức độ ưu tiên của client đối với Media Type đó càng lớn.",
+        "whyCorrect": "• Ở đây application/xml có q=1.0 cao hơn application/json có q=0.9, do đó server nên ưu tiên trả về định dạng XML nếu có hỗ trợ.",
+        "whyWrong": {
+          "A": "• Client chấp nhận cả JSON lẫn XML chứ không chỉ riêng JSON.",
+          "C": "• Client chấp nhận cả JSON (với mức ưu tiên thấp hơn một chút là 0.9) chứ không chỉ chấp nhận XML.",
+          "D": "• Một HTTP Response chỉ trả về đúng một media type trong Content-Type header, không thể chia đôi dữ liệu giữa hai định dạng."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 8,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 8,
+      "question": "Which attribute must be applied to methods within a service contract interface to expose them as service operations?",
+      "options": {
+        "A": "[Expose]",
+        "B": "[WebMethod]",
+        "C": "[OperationContract]",
+        "D": "[ServiceMethod]"
+      },
+      "answer": "C",
+      "explanation": {
+        "questionVi": "Attribute nào phải được gắn vào các phương thức bên trong một interface Service Contract để công khai chúng thành các thao tác dịch vụ (service operations) trong WCF / CoreWCF?",
+        "optionsVi": {
+          "A": "[Expose]",
+          "B": "[WebMethod]",
+          "C": "[OperationContract]",
+          "D": "[ServiceMethod]"
+        },
+        "answerDisplay": "C. [OperationContract]",
+        "concept": "• Trong WCF (Windows Communication Foundation) và CoreWCF:\n  - [ServiceContract] gắn trên Interface/Class để khai báo đó là một hợp đồng dịch vụ.\n  - [OperationContract] gắn trên các phương thức của Interface/Class để công khai phương thức đó ra ngoài cho client gọi.",
+        "whyCorrect": "• [OperationContract] báo cho framework biết rằng phương thức đó là một phần của Service Contract và có thể được truy cập từ xa bởi client.",
+        "whyWrong": {
+          "A": "• [Expose] không phải attribute của WCF hay .NET SOAP services.",
+          "B": "• [WebMethod] được sử dụng trong ASP.NET Web Services (ASMX) cũ, không dùng cho WCF / CoreWCF Service Contracts.",
+          "D": "• [ServiceMethod] không tồn tại trong thư viện WCF / CoreWCF chuẩn."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 9,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 9,
+      "question": "A user has the roles \"Editor\" and \"Writer\". The action is decorated with [Authorize(Roles = \"Editor, Admin\")]. Will the user be granted access?",
+      "options": {
+        "A": "Yes, because the user has one of the required roles.",
+        "B": "No, because the user must have both the \"Editor\" and \"Admin\" roles.",
+        "C": "Yes, because the comma indicates an OR relationship.",
+        "D": "It depends on which role was assigned first."
+      },
+      "answer": "A",
+      "explanation": {
+        "questionVi": "Một người dùng có các vai trò \"Editor\" và \"Writer\". Action method được đánh dấu bằng [Authorize(Roles = \"Editor, Admin\")]. Người dùng này có được cấp quyền truy cập không?",
+        "optionsVi": {
+          "A": "Có, vì người dùng có một trong các vai trò được yêu cầu.",
+          "B": "Không, vì người dùng phải có cả hai vai trò \"Editor\" và \"Admin\".",
+          "C": "Có, vì dấu phẩy biểu thị mối quan hệ OR.",
+          "D": "Tùy thuộc vào vai trò nào được gán trước."
+        },
+        "answerDisplay": "A. Yes, because the user has one of the required roles.",
+        "concept": "• Phân quyền dựa trên Role (Role-based Authorization) trong ASP.NET Core:\n  - Phân tách bằng dấu phẩy [Authorize(Roles = \"Editor, Admin\")]: người dùng chỉ cần thuộc ít nhất một trong các role (phép toán OR).\n  - Nhiều attribute [Authorize(Roles = \"Editor\")] [Authorize(Roles = \"Admin\")]: người dùng bắt buộc phải thuộc tất cả các role (phép toán AND).",
+        "whyCorrect": "• Chuỗi \"Editor, Admin\" phân tách bởi dấu phẩy thể hiện điều kiện OR. Vì người dùng có role \"Editor\", họ đáp ứng đủ điều kiện và được truy cập.",
+        "whyWrong": {
+          "B": "• Người dùng chỉ cần có cả hai role nếu sử dụng nhiều attribute [Authorize] riêng biệt, còn chuỗi phân tách bằng dấu phẩy là phép toán OR.",
+          "C": "• Mặc dù phát biểu dấu phẩy biểu thị quan hệ OR là đúng, lựa chọn A giải thích trực tiếp và đầy đủ lý do truy cập thành công của người dùng.",
+          "D": "• Thứ tự gán vai trò cho user không ảnh hưởng tới kết quả kiểm tra quyền của [Authorize]."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 10,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 10,
+      "question": "In a .NET 9 application using EF Core, you've defined the following DbContext. How does EF Core know which classes to include in the database model?\n\npublic class ApplicationDbContext : DbContext\n{\n    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }\n\n    public DbSet<Product> Products { get; set; }\n    public DbSet<Category> Categories { get; set; }\n}",
+      "options": {
+        "A": "It scans the entire assembly for public classes.",
+        "B": "Through the DbSet<T> properties defined in the DbContext.",
+        "C": "It relies on XML configuration files.",
+        "D": "You must manually register each class using builder.Services.AddTransient<Product>()."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Trong ứng dụng .NET 9 sử dụng EF Core, bạn định nghĩa DbContext bên dưới. Làm thế nào EF Core biết được những lớp nào cần đưa vào mô hình cơ sở dữ liệu?\n\npublic class ApplicationDbContext : DbContext\n{\n    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }\n\n    public DbSet<Product> Products { get; set; }\n    public DbSet<Category> Categories { get; set; }\n}",
+        "optionsVi": {
+          "A": "Nó quét toàn bộ assembly để tìm các public class.",
+          "B": "Thông qua các thuộc tính DbSet<T> được định nghĩa trong DbContext.",
+          "C": "Nó phụ thuộc vào các tệp cấu hình XML.",
+          "D": "Bạn phải đăng ký thủ công từng lớp bằng builder.Services.AddTransient<Product>()."
+        },
+        "answerDisplay": "B. Through the DbSet<T> properties defined in the DbContext.",
+        "concept": "• Entity Framework Core sử dụng Reflection để phát hiện các thuộc tính DbSet<TEntity> được khai báo public trong lớp DbContext.\n• Các kiểu dữ liệu TEntity này (cùng với các kiểu thực thể liên quan qua Navigation Properties) sẽ tự động được EF Core đưa vào Data Model.",
+        "whyCorrect": "• EF Core tự động xây dựng cơ sở dữ liệu dựa trên các thuộc tính DbSet<Product> và DbSet<Category> được khai báo công khai trong class ApplicationDbContext.",
+        "whyWrong": {
+          "A": "• EF Core không tự động quét tất cả public class trong assembly để đưa vào DB model nhằm tránh đưa các class không liên quan vào.",
+          "C": "• EF Core hiện đại sử dụng Code-First / DbContext C# configurations hoặc Fluent API chứ không dùng các tệp XML mapping như EDMX ở Entity Framework 6 cũ.",
+          "D": "• AddTransient<Product>() dùng cho Dependency Injection Container, không phải cách EF Core xây dựng DB Model."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 11,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 11,
+      "question": "What is the \"Repository Pattern\" commonly used for in ASP .NET Core data access?",
+      "options": {
+        "A": "To automatically generate API documentation.",
+        "B": "To abstract the data access logic, making the application more modular and testable.",
+        "C": "To handle user authentication and authorization.",
+        "D": "To define the routing rules for API endpoints."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Mẫu thiết kế \"Repository Pattern\" thường được sử dụng để làm gì trong truy cập dữ liệu ASP.NET Core?",
+        "optionsVi": {
+          "A": "Tự động tạo tài liệu API.",
+          "B": "Tách biệt/Trừu tượng hóa logic truy cập dữ liệu, giúp ứng dụng mô-đun hóa và dễ viết unit test hơn.",
+          "C": "Xử lý xác thực và phân quyền người dùng.",
+          "D": "Định nghĩa các quy tắc điều hướng (routing) cho các API endpoint."
+        },
+        "answerDisplay": "B. To abstract the data access logic, making the application more modular and testable.",
+        "concept": "• Repository Pattern là một kiến trúc thiết kế trung gian giữa tầng Business Logic và tầng Data Access (ORM như Entity Framework Core).\n• Mục đích: Giấu đi chi tiết thực thi của truy vấn CSDL (EF Core, SQL, Dapper...) phía sau giao diện interface (vd: IProductRepository).",
+        "whyCorrect": "• Giúp giảm sự phụ thuộc trực tiếp vào ORM/DbContext ở Business Layer, giúp mã nguồn sạch hơn, dễ bảo trì và cho phép dễ dàng mock dữ liệu khi viết Unit Test.",
+        "whyWrong": {
+          "A": "• Tạo tài liệu API là nhiệm vụ của Swagger/OpenAPI.",
+          "C": "• Xác thực và phân quyền do ASP.NET Core Identity / JWT / Authorization Middleware đảm nhận.",
+          "D": "• Định nghĩa routing là vai trò của Routing Middleware / Controller Attributes."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 12,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 12,
+      "question": "Which data types are supported in JSON?",
+      "options": {
+        "A": "String, Number, Boolean, Array, Object, null",
+        "B": "String, Integer, Float, Date, Array, Hashtable",
+        "C": "Text, Decimal, Bit, List, Dictionary, null",
+        "D": "Varchar, Number, Boolean, Collection, Object, undefined"
+      },
+      "answer": "A",
+      "explanation": {
+        "questionVi": "Những kiểu dữ liệu nào được hỗ trợ trong chuẩn JSON (JavaScript Object Notation)?",
+        "optionsVi": {
+          "A": "String, Number, Boolean, Array, Object, null",
+          "B": "String, Integer, Float, Date, Array, Hashtable",
+          "C": "Text, Decimal, Bit, List, Dictionary, null",
+          "D": "Varchar, Number, Boolean, Collection, Object, undefined"
+        },
+        "answerDisplay": "A. String, Number, Boolean, Array, Object, null",
+        "concept": "• Theo tiêu chuẩn ECMA-404 / RFC 8259, JSON hỗ trợ chính xác 6 kiểu dữ liệu cơ bản:\n  1. String (chuỗi)\n  2. Number (số - không phân biệt int/float)\n  3. Boolean (true/false)\n  4. Object (tập hợp cặp key-value)\n  5. Array (mảng giá trị)\n  6. null",
+        "whyCorrect": "• Đáp án A liệt kê chính xác và đầy đủ 6 kiểu dữ liệu chuẩn của JSON.",
+        "whyWrong": {
+          "B": "• JSON không phân biệt Integer/Float (chỉ có Number), không có kiểu Date bản thể (Date được lưu dạng String ISO) và không có Hashtable.",
+          "C": "• Text, Decimal, Bit, List, Dictionary là tên kiểu dữ liệu trong SQL Server hoặc C#, không phải kiểu dữ liệu của JSON.",
+          "D": "• Varchar là kiểu SQL, undefined là kiểu dữ liệu JavaScript nhưng không hợp lệ trong cú pháp JSON chuẩn."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 13,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 13,
+      "question": "To delete a product with an ID of 123, which OData request is correct?",
+      "options": {
+        "A": "POST /Products?$filter=Id eq 123",
+        "B": "DELETE /Products(123)",
+        "C": "GET /Products(123)?action=delete",
+        "D": "REMOVE /Products/123"
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Để xóa một sản phẩm có ID là 123 trong OData API, request nào dưới đây là đúng chuẩn?",
+        "optionsVi": {
+          "A": "POST /Products?$filter=Id eq 123",
+          "B": "DELETE /Products(123)",
+          "C": "GET /Products(123)?action=delete",
+          "D": "REMOVE /Products/123"
+        },
+        "answerDisplay": "B. DELETE /Products(123)",
+        "concept": "• Chuẩn URL của OData sử dụng dấu ngoặc đơn để chỉ định khóa chính của một thực thể: /EntitySet(key).\n• Để thực hiện thao tác xóa thực thể trong OData (và REST nói chung), HTTP Verb DELETE được sử dụng.",
+        "whyCorrect": "• Request DELETE /Products(123) kết hợp đúng HTTP verb DELETE và chuẩn định danh tài nguyên của OData EntitySet(Key).",
+        "whyWrong": {
+          "A": "• POST được dùng để tạo mới dữ liệu, không dùng để xóa dữ liệu.",
+          "C": "• GET chỉ được dùng để truy vấn đọc dữ liệu, không được tạo ra tác dụng phụ (side-effect) như xóa dữ liệu.",
+          "D": "• REMOVE không phải là một phương thức HTTP hợp lệ."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 14,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 14,
+      "question": "What is a \"channel\" in gRPC?",
+      "options": {
+        "A": "The service implementation on the server.",
+        "B": "The generated client-side code.",
+        "C": "A long-lived connection to a gRPC service, which can be reused for multiple calls.",
+        "D": "A specific type of streaming method."
+      },
+      "answer": "C",
+      "explanation": {
+        "questionVi": "Khái niệm \"channel\" trong gRPC có nghĩa là gì?",
+        "optionsVi": {
+          "A": "Sự thực thi dịch vụ (service implementation) ở phía server.",
+          "B": "Mã nguồn phía client được sinh tự động.",
+          "C": "Một kết nối tồn tại lâu dài đến gRPC service, có thể tái sử dụng cho nhiều cuộc gọi RPC.",
+          "D": "Một loại phương thức streaming cụ thể."
+        },
+        "answerDisplay": "C. A long-lived connection to a gRPC service, which can be reused for multiple calls.",
+        "concept": "• Trái tim của kết nối phía Client trong gRPC là GrpcChannel.\n• GrpcChannel đại diện cho một kết nối lâu dài (persistent connection) dựa trên HTTP/2 tới gRPC server endpoint.",
+        "whyCorrect": "• Channel được thiết kế để sống lâu (long-lived) và hỗ trợ multiplexing nhiều RPC call đồng thời trên cùng một kết nối TCP/HTTP2, giúp tiết kiệm chi phí bắt tay (handshake).",
+        "whyWrong": {
+          "A": "• Phần thực thi dịch vụ trên server gọi là Service Implementation / Service Base Class.",
+          "B": "• Mã client được tự động sinh từ file .proto được gọi là gRPC Client Stub.",
+          "D": "• Kỹ thuật streaming trong gRPC bao gồm Client Streaming, Server Streaming, Bi-directional Streaming, không phải định nghĩa của Channel."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 15,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 15,
+      "question": "What is the fundamental role of a Model Binder in ASP .NET Core?",
+      "options": {
+        "A": "To convert C# model objects into JSON or XML for the response.",
+        "B": "To create instances of C# objects by extracting data from an incoming HTTP request (e.g., from the route, query string, or body).",
+        "C": "To bind a database model to a DbContext.",
+        "D": "To validate the properties of a model."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Vai trò cơ bản của Model Binder trong ASP.NET Core là gì?",
+        "optionsVi": {
+          "A": "Chuyển đổi đối tượng C# thành JSON hoặc XML cho phản hồi (response).",
+          "B": "Tạo các thể hiện (instance) của đối tượng C# bằng cách trích xuất dữ liệu từ HTTP request gửi đến (như từ route, query string, hoặc body).",
+          "C": "Ràng buộc mô hình cơ sở dữ liệu với DbContext.",
+          "D": "Kiểm tra tính hợp lệ của các thuộc tính trong mô hình."
+        },
+        "answerDisplay": "B. To create instances of C# objects by extracting data from an incoming HTTP request (e.g., from the route, query string, or body).",
+        "concept": "• Model Binding trong ASP.NET Core là quá trình tự động ánh xạ (map) dữ liệu từ HTTP request (Route values, Query String, Form Fields, Request Body, Headers) vào các tham số phương thức Action của Controller hoặc Razor Page models.",
+        "whyCorrect": "• Model Binder giúp lập trình viên không phải trích xuất thủ công các tham số từ HttpRequest, mà tự động trích xuất và khởi tạo các đối tượng C# mạnh kiểu (strongly-typed).",
+        "whyWrong": {
+          "A": "• Chuyển đổi C# object thành JSON/XML cho response là vai trò của Output Formatter / Serializer.",
+          "C": "• Ràng buộc mô hình với DbContext là công việc của EF Core (ModelBuilder/Mapping).",
+          "D": "• Kiểm tra tính hợp lệ thuộc tính là vai trò của Model Validation (Data Annotations / FluentValidation)."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 16,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 16,
+      "question": "Which of the following is a simple representation of a Model class in C# for an ASP .NET Core application?",
+      "options": {
+        "A": "A static class with methods for rendering HTML.",
+        "B": "An interface defining controller actions.",
+        "C": "A class with properties representing data, often called a POCO (Plain Old CLR Object).",
+        "D": "An attribute used for routing."
+      },
+      "answer": "C",
+      "explanation": {
+        "questionVi": "Lựa chọn nào sau đây thể hiện đơn giản nhất về một lớp Model trong C# cho ứng dụng ASP.NET Core?",
+        "optionsVi": {
+          "A": "Một static class với các phương thức để render ra HTML.",
+          "B": "Một interface định nghĩa các action của controller.",
+          "C": "Một lớp chứa các thuộc tính đại diện cho dữ liệu, thường được gọi là POCO (Plain Old CLR Object).",
+          "D": "Một attribute dùng cho điều hướng (routing)."
+        },
+        "answerDisplay": "C. A class with properties representing data, often called a POCO (Plain Old CLR Object).",
+        "concept": "• Trong mô hình MVC (Model-View-Controller), Model đại diện cho dữ liệu và quy tắc nghiệp vụ (domain data).\n• Trong C#, Model thường được thiết kế dưới dạng POCO class — một class C# đơn thuần chứa các thuộc tính (get/set) mà không phụ thuộc vào framework nào.",
+        "whyCorrect": "• Lớp POCO chứa các thuộc tính đại diện cho cấu trúc dữ liệu là định dạng đơn giản và phổ biến nhất của Model class.",
+        "whyWrong": {
+          "A": "• Static class render HTML liên quan đến Helper class hoặc View Component, không phải Model.",
+          "B": "• Interface định nghĩa controller action không biểu diễn dữ liệu của ứng dụng.",
+          "D": "• Attribute cho routing (như [Route]) là metadata hướng dẫn ứng dụng điều hướng request, không phải Model."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 17,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 17,
+      "question": "When a user provides invalid data in a request body, which HTTP status code is most appropriate to return?",
+      "options": {
+        "A": "500 Internal Server Error",
+        "B": "404 Not Found",
+        "C": "400 Bad Request",
+        "D": "200 OK"
+      },
+      "answer": "C",
+      "explanation": {
+        "questionVi": "Khi người dùng gửi dữ liệu không hợp lệ trong request body, mã trạng thái HTTP nào là phù hợp nhất để trả về?",
+        "optionsVi": {
+          "A": "500 Internal Server Error",
+          "B": "404 Not Found",
+          "C": "400 Bad Request",
+          "D": "200 OK"
+        },
+        "answerDisplay": "C. 400 Bad Request",
+        "concept": "• Các HTTP Status Code chuẩn trong RESTful Web API:\n  - 2xx: Thành công (Success).\n  - 4xx: Lỗi phía Client (Client Errors) — client gửi request không đúng hoặc thiếu thông tin.\n  - 5xx: Lỗi phía Server (Server Errors).",
+        "whyCorrect": "• 400 Bad Request chỉ ra rằng server không thể xử lý request do dữ liệu đầu vào bị lỗi cú pháp, thiếu thông tin bắt buộc, hoặc vi phạm các quy tắc validation của model.",
+        "whyWrong": {
+          "A": "• 500 dùng cho các sự cố ngoài dự kiến ở phía server (uncaught exceptions, lỗi CSDL), không dùng cho lỗi nhập liệu từ client.",
+          "B": "• 404 dùng khi không tìm thấy tài nguyên (endpoint hoặc ID không tồn tại).",
+          "D": "• 200 OK báo hiệu request xử lý thành công, không phù hợp khi dữ liệu đầu vào không hợp lệ."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 18,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 18,
+      "question": "What is serialization in the context of a Web API?",
+      "options": {
+        "A": "The process of converting a .NET object into a format (like JSON or XML) that can be transmitted over the network.",
+        "B": "The process of converting a format (like JSON or XML) from a request into a .NET object.",
+        "C": "The process of handling requests in a specific, sequential order.",
+        "D": "The process of securing data before transmission."
+      },
+      "answer": "A",
+      "explanation": {
+        "questionVi": "Serialization (Tuần tự hóa) trong ngữ cảnh Web API được hiểu là gì?",
+        "optionsVi": {
+          "A": "Quá trình chuyển đổi một đối tượng .NET thành một định dạng (như JSON hoặc XML) có thể truyền qua mạng.",
+          "B": "Quá trình chuyển đổi một định dạng (như JSON hoặc XML) từ request thành một đối tượng .NET.",
+          "C": "Quá trình xử lý các request theo một thứ tự tuần tự cụ thể.",
+          "D": "Quá trình bảo mật dữ liệu trước khi truyền đi."
+        },
+        "answerDisplay": "A. The process of converting a .NET object into a format (like JSON or XML) that can be transmitted over the network.",
+        "concept": "• Serialization (Tuần tự hóa): Chuyển đối tượng C# (in-memory object) thành định dạng chuỗi/byte stream (như JSON, XML) để truyền qua mạng hoặc lưu file.\n• Deserialization (Giải tuần tự hóa): Chuyển đổi ngược từ chuỗi JSON/XML thành đối tượng C# in-memory.",
+        "whyCorrect": "• Đáp án A định nghĩa chính xác quá trình Serialization trong Web API: biến đổi C# object thành JSON/XML để đưa vào HTTP Response Body.",
+        "whyWrong": {
+          "B": "• Đây là định nghĩa của Deserialization (Giải tuần tự hóa), không phải Serialization.",
+          "C": "• Đây là khái niệm xử lý tuần tự (sequential processing), không liên quan đến Serialization.",
+          "D": "• Quá trình bảo mật/mã hóa dữ liệu được gọi là Encryption hoặc Hashing."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 19,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 19,
+      "question": "How can you add custom properties (e.g., FirstName, DateOfBirth) to the user model in ASP .NET Core Identity?",
+      "options": {
+        "A": "By modifying the IdentityUser source code directly.",
+        "B": "By creating a new class that inherits from IdentityUser and adding the new properties to it.",
+        "C": "By storing the extra data in a separate, manually-managed table.",
+        "D": "It is not possible to extend the IdentityUser model."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Làm thế nào bạn có thể thêm các thuộc tính tùy chỉnh (ví dụ: FirstName, DateOfBirth) vào model người dùng trong ASP.NET Core Identity?",
+        "optionsVi": {
+          "A": "Sửa đổi trực tiếp mã nguồn của IdentityUser.",
+          "B": "Tạo một lớp mới kế thừa từ IdentityUser và thêm các thuộc tính mới vào lớp đó.",
+          "C": "Lưu dữ liệu bổ sung trong một bảng riêng biệt được quản lý thủ công.",
+          "D": "Không thể mở rộng mô hình IdentityUser."
+        },
+        "answerDisplay": "B. By creating a new class that inherits from IdentityUser and adding the new properties to it.",
+        "concept": "• ASP.NET Core Identity cung cấp lớp cơ sở IdentityUser mặc định (chứa Username, Email, PasswordHash...).\n• Để mở rộng thông tin người dùng, lập trình viên tạo lớp mới (ví dụ ApplicationUser : IdentityUser) và khai báo thêm các thuộc tính như FirstName, DateOfBirth.",
+        "whyCorrect": "• Tạo lớp tùy chỉnh kế thừa IdentityUser cho phép EF Core Migration tự động cập nhật bảng AspNetUsers để thêm các cột tương ứng một cách dễ dàng và đúng kiến trúc.",
+        "whyWrong": {
+          "A": "• IdentityUser là lớp thuộc thư viện Microsoft.AspNetCore.Identity.EntityFrameworkCore, lập trình viên không thể sửa trực tiếp mã nguồn của framework.",
+          "C": "• Mặc dù có thể tạo bảng riêng nhưng đây không phải là cách chuẩn và tiện lợi để mở rộng User Model trong ASP.NET Core Identity.",
+          "D": "• IdentityUser hoàn toàn hỗ trợ kế thừa để mở rộng thuộc tính."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 20,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 20,
+      "question": "What is the primary advantage of using attribute routing over conventional routing?",
+      "options": {
+        "A": "It is the only way to define routes in minimal APIs.",
+        "B": "It keeps the route definition next to the action method that it maps to, improving locality and discoverability.",
+        "C": "It offers significantly better performance than conventional routing.",
+        "D": "It is required for enabling Swagger/OpenAPI documentation."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Ưu điểm chính của việc sử dụng Attribute Routing so với Conventional Routing là gì?",
+        "optionsVi": {
+          "A": "Đây là cách duy nhất để định nghĩa route trong Minimal APIs.",
+          "B": "Nó giữ định nghĩa route ngay cạnh action method mà nó ánh xạ tới, giúp tăng tính trực quan và dễ tìm kiếm.",
+          "C": "Nó mang lại hiệu năng cao hơn đáng kể so với conventional routing.",
+          "D": "Nó bắt buộc phải có để bật tài liệu Swagger/OpenAPI."
+        },
+        "answerDisplay": "B. It keeps the route definition next to the action method that it maps to, improving locality and discoverability.",
+        "concept": "• Conventional Routing: Định nghĩa các quy tắc đường dẫn tập trung trong file Program.cs (VD: {controller}/{action}/{id?}).\n• Attribute Routing: Đặt các attribute như [Route(\"api/[controller]\")], [HttpGet(\"{id}\")] trực tiếp trên Controller và Action methods.",
+        "whyCorrect": "• Attribute routing giúp lập trình viên thấy ngay URL pattern tương ứng ngay trên Action method mà không cần mở file cấu hình chung, đặc biệt phù hợp cho việc xây dựng RESTful APIs.",
+        "whyWrong": {
+          "A": "• Minimal APIs sử dụng các extension method như MapGet(), MapPost() để định nghĩa route, không nhất thiết dùng Attribute Routing.",
+          "C": "• Cả hai cơ chế routing đều được ASP.NET Core biên dịch thành endpoint tree tối ưu, hiệu năng của chúng là tương đương nhau.",
+          "D": "• Swagger hoạt động tốt hơn với Attribute Routing nhưng không bắt buộc mọi route phải dùng attribute nếu có cấu hình bổ sung."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 21,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 21,
+      "question": "What is the main benefit of using a library like AutoMapper?",
+      "options": {
+        "A": "It automatically creates database tables from DTOs.",
+        "B": "It replaces the need for Dependency Injection.",
+        "C": "It automates the process of converting one object type to another (e.g., an Entity to a DTO), reducing boilerplate code.",
+        "D": "It provides an alternative to JSON for data serialization."
+      },
+      "answer": "C",
+      "explanation": {
+        "questionVi": "Lợi ích chính của việc sử dụng một thư viện như AutoMapper là gì?",
+        "optionsVi": {
+          "A": "Nó tự động tạo các bảng cơ sở dữ liệu từ DTO.",
+          "B": "Nó thay thế nhu cầu sử dụng Dependency Injection.",
+          "C": "Nó tự động hóa quá trình chuyển đổi giữa các kiểu đối tượng (ví dụ: từ Entity sang DTO), giúp giảm mã lặp lại (boilerplate code).",
+          "D": "Nó cung cấp một giải pháp thay thế cho JSON để tuần tự hóa dữ liệu."
+        },
+        "answerDisplay": "C. It automates the process of converting one object type to another (e.g., an Entity to a DTO), reducing boilerplate code.",
+        "concept": "• AutoMapper là thư viện Object-to-Object Mapper phổ biến trong .NET.\n• Trong ứng dụng Web API, dữ liệu thường chuyển đổi qua lại giữa Entity (lớp CSDL) và DTO (Data Transfer Object để gửi cho client).",
+        "whyCorrect": "• AutoMapper giúp tự động ánh xạ các thuộc tính trùng tên giữa 2 kiểu đối tượng, loại bỏ hàng loạt các dòng code gán thủ công dto.Name = entity.Name; dto.Age = entity.Age;.",
+        "whyWrong": {
+          "A": "• Việc tạo bảng CSDL là công việc của ORM (EF Core Migration), không phải AutoMapper.",
+          "B": "• AutoMapper thường được đăng ký và tiêm vào qua Dependency Injection Container, không thay thế DI.",
+          "D": "• AutoMapper chỉ ánh xạ giữa các đối tượng C# in-memory, không thực hiện tuần tự hóa (serialization) ra JSON/XML."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 22,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 22,
+      "question": "The metadata of an OData service, which describes its data model, is typically exposed via which endpoint?",
+      "options": {
+        "A": "/$metadata",
+        "B": "/$help",
+        "C": "/$schema",
+        "D": "/$info"
+      },
+      "answer": "A",
+      "explanation": {
+        "questionVi": "Metadata của một OData service, nơi mô tả mô hình dữ liệu (EDM) của dịch vụ, thường được công khai qua endpoint nào?",
+        "optionsVi": {
+          "A": "/$metadata",
+          "B": "/$help",
+          "C": "/$schema",
+          "D": "/$info"
+        },
+        "answerDisplay": "A. /$metadata",
+        "concept": "• Chuẩn OData quy định endpoint metadata chính thức dạng CSDL/EDMX XML là /$metadata.\n• Khi gửi request GET serviceRoot/$metadata, dịch vụ OData trả về tài liệu mô tả đầy đủ các EntitySets, EntityTypes, Properties, Relationships, và Functions/Actions khả dụng.",
+        "whyCorrect": "• Endpoint /$metadata là chuẩn bắt buộc theo OData Protocol Specification để các công cụ và client tự động khám phá cấu trúc dữ liệu của API.",
+        "whyWrong": {
+          "B": "• /$help không phải là OData system query hay metadata endpoint.",
+          "C": "• /$schema không được dùng trong chuẩn OData để truy vấn tài liệu metadata.",
+          "D": "• /$info không tồn tại trong chuẩn thiết kế OData."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 23,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 23,
+      "question": "The following .NET 8 code is in Program.cs. What is its purpose?\n\nvar app = builder.Build();\n// ...\napp.UseAuthentication();\napp.UseAuthorization();\n// ...\napp.Run();",
+      "options": {
+        "A": "It registers the authentication services.",
+        "B": "It adds the authentication and authorization middleware components to the request pipeline.",
+        "C": "It configures the default authentication scheme.",
+        "D": "It is redundant and has no effect."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Đoạn mã .NET 8 sau nằm trong Program.cs. Mục đích của nó là gì?\n\nvar app = builder.Build();\n// ...\napp.UseAuthentication();\napp.UseAuthorization();\n// ...\napp.Run();",
+        "optionsVi": {
+          "A": "Đăng ký các dịch vụ xác thực vào DI container.",
+          "B": "Thêm các thành phần middleware xác thực (authentication) và phân quyền (authorization) vào đường ống xử lý request (request pipeline).",
+          "C": "Cấu hình scheme xác thực mặc định.",
+          "D": "Đoạn mã này dư thừa và không có tác dụng."
+        },
+        "answerDisplay": "B. It adds the authentication and authorization middleware components to the request pipeline.",
+        "concept": "• Các phương thức bắt đầu bằng Use... trên đối tượng WebApplication (app) được dùng để thêm Middleware vào Request Processing Pipeline.\n• app.UseAuthentication() kiểm tra danh tính (User Identity).\n• app.UseAuthorization() kiểm tra quyền hạn (User Permissions).",
+        "whyCorrect": "• Cả hai phương thức UseAuthentication() và UseAuthorization() đều thêm middleware tương ứng vào middleware pipeline để xử lý mọi HTTP Request đi qua.",
+        "whyWrong": {
+          "A": "• Đăng ký dịch vụ vào DI container sử dụng builder.Services.AddAuthentication() và builder.Services.AddAuthorization(), thực hiện trước khi gọi builder.Build().",
+          "C": "• Cấu hình scheme mặc định được thực hiện trong AddAuthentication(options => ...).",
+          "D": "• Đây là hai bước middleware cực kỳ quan trọng để bảo mật Web API, không hề dư thừa."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 24,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 24,
+      "question": "What does \"Statelessness\" in REST mean?",
+      "options": {
+        "A": "The server does not store any information about the client's state between requests.",
+        "B": "The client does not need to maintain any state about the server.",
+        "C": "The communication protocol does not support sessions.",
+        "D": "The server encrypts all state information."
+      },
+      "answer": "A",
+      "explanation": {
+        "questionVi": "Khái niệm \"Statelessness\" (Phi trạng thái) trong kiến trúc REST có nghĩa là gì?",
+        "optionsVi": {
+          "A": "Server không lưu trữ bất kỳ thông tin nào về trạng thái của client giữa các request.",
+          "B": "Client không cần duy trì bất kỳ trạng thái nào về server.",
+          "C": "Giao thức truyền thông không hỗ trợ session.",
+          "D": "Server mã hóa tất cả thông tin trạng thái."
+        },
+        "answerDisplay": "A. The server does not store any information about the client's state between requests.",
+        "concept": "• Statelessness (Tính phi trạng thái) là một trong những ràng buộc cốt lõi của kiến trúc RESTful.\n• Mỗi request từ client gửi tới server phải chứa đầy đủ tất cả thông tin cần thiết để server hiểu và xử lý (ví dụ: authentication token trong header).",
+        "whyCorrect": "• Server không lưu giữ bất kỳ thông tin phiên (session state) nào của client trong bộ nhớ. Điều này giúp hệ thống dễ dàng mở rộng theo chiều ngang (horizontal scaling).",
+        "whyWrong": {
+          "B": "• Client thường vẫn duy trì trạng thái của ứng dụng (UI state, auth tokens), chỉ có Server là không giữ client session state.",
+          "C": "• Giao thức HTTP/HTTPS hoàn toàn hỗ trợ cơ chế quản lý Session (Cookies/Tokens), nhưng kiến trúc REST quy định không nên dùng session lưu trên server.",
+          "D": "• Mã hóa thông tin trạng thái thuộc về khía cạnh an ninh (Security), không phải bản chất của Statelessness."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 25,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 25,
+      "question": "What is the primary purpose of the HTTP protocol?",
+      "options": {
+        "A": "To securely encrypt data transmissions.",
+        "B": "To transfer hypertext documents across the internet.",
+        "C": "To manage and query databases.",
+        "D": "To define the structure of a web page."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Mục đích chính của giao thức HTTP (Hypertext Transfer Protocol) là gì?",
+        "optionsVi": {
+          "A": "Mã hóa an toàn các dữ liệu truyền đi.",
+          "B": "Truyền tải các tài liệu siêu văn bản (hypertext) và dữ liệu qua mạng internet.",
+          "C": "Quản lý và truy vấn cơ sở dữ liệu.",
+          "D": "Định nghĩa cấu trúc của một trang web."
+        },
+        "answerDisplay": "B. To transfer hypertext documents across the internet.",
+        "concept": "• HTTP (Hypertext Transfer Protocol) là giao thức truyền tải tầng ứng dụng (Application Layer Protocol) trong mô hình TCP/IP.\n• HTTP quy định cách thức client (browser, mobile app) và server giao tiếp với nhau bằng cách truyền/nhận các tài liệu HTML, JSON, hình ảnh, văn bản,...",
+        "whyCorrect": "• Mục đích ban đầu và chính yếu nhất của HTTP là truyền tải các tài liệu siêu văn bản (hypertext documents) và các tài nguyên web khác qua môi trường mạng Internet.",
+        "whyWrong": {
+          "A": "• Mã hóa dữ liệu là nhiệm vụ của HTTPS (HTTP + TLS/SSL), không phải HTTP thuần túy.",
+          "C": "• Quản lý và truy vấn database là vai trò của các hệ quản trị CSDL (DBMS) và SQL, không phải HTTP.",
+          "D": "• Định nghĩa cấu trúc trang web là vai trò của ngôn ngữ đánh dấu HTML (HyperText Markup Language)."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 26,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 26,
+      "question": "By default, where does the model binder attempt to get the data for a complex type parameter (like a class or record) in an [ApiController] action?",
+      "options": {
+        "A": "From the query string.",
+        "B": "From the request body.",
+        "C": "From the route data.",
+        "D": "From the request headers."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Theo mặc định, model binder cố gắng lấy dữ liệu cho một tham số kiểu phức hợp (như một class hoặc record) trong một action của [ApiController] từ đâu?",
+        "optionsVi": {
+          "A": "Từ query string.",
+          "B": "Từ request body.",
+          "C": "Từ route data.",
+          "D": "Từ request headers."
+        },
+        "answerDisplay": "B. From the request body.",
+        "concept": "• Quy tắc suy luận (Binding Source Inference Rules) trong ASP.NET Core với thuộc tính [ApiController] giúp tự động xác định nguồn dữ liệu cho tham số dựa trên kiểu dữ liệu của nó.\n• Các kiểu phức hợp (complex types) như class, struct, record (không thuộc kiểu nguyên thủy, string, hay FormFile, v.v.) mặc định được suy luận là ngầm định gán [FromBody].",
+        "whyCorrect": "• Khi một controller được đánh dấu bằng [ApiController], ASP.NET Core áp dụng quy tắc suy luận nguồn ràng buộc: tham số có kiểu phức hợp (complex type) mặc định sẽ được đọc từ body của request HTTP (tương đương với việc gắn [FromBody]).",
+        "whyWrong": {
+          "A": "• Query string ([FromQuery]) là nguồn mặc định cho các tham số có kiểu dữ liệu đơn giản (simple types) như int, string, bool, DateTime.",
+          "C": "• Route data ([FromRoute]) được sử dụng mặc định khi tên tham số trùng khớp với một biến mẫu tuyến đường (route template parameter) được định nghĩa trên Action hoặc Controller.",
+          "D": "• Request headers ([FromHeader]) không bao giờ là nguồn mặc định tự động suy luận cho tham số kiểu phức hợp; nếu muốn đọc từ header, bạn phải gắn trực tiếp thuộc tính [FromHeader]."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 27,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 27,
+      "question": "A controller action needs to return a \"Not Found\" response when a resource does not exist. Which of the following is the best way to achieve this?\n\n[HttpGet(\"{id}\")]\npublic ActionResult<Product> GetProduct(int id)\n{\n    var product = _productService.GetById(id);\n    if (product == null)\n    {\n        return ???; // What should be here?\n    }\n    return product;\n}",
+      "options": {
+        "A": "Ok()",
+        "B": "NotFound()",
+        "C": "BadRequest()",
+        "D": "NoContent()"
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Một controller action cần trả về phản hồi \"Not Found\" khi tài nguyên không tồn tại. Phương thức nào sau đây là cách tốt nhất để đạt được điều này?\n\n[HttpGet(\"{id}\")]\npublic ActionResult<Product> GetProduct(int id)\n{\n    var product = _productService.GetById(id);\n    if (product == null)\n    {\n        return ???; // Cần điền gì vào đây?\n    }\n    return product;\n}",
+        "optionsVi": {
+          "A": "Ok()",
+          "B": "NotFound()",
+          "C": "BadRequest()",
+          "D": "NoContent()"
+        },
+        "answerDisplay": "B. NotFound()",
+        "concept": "• Trong ASP.NET Core Web API, các trợ lý kết quả (action result helper methods) như NotFound(), Ok(), BadRequest(), NoContent() được cung cấp bởi lớp ControllerBase để trả về phản hồi HTTP với mã trạng thái (status code) tương ứng.\n• Mã HTTP 404 Not Found thể hiện tài nguyên được yêu cầu không thể tìm thấy trên máy chủ.",
+        "whyCorrect": "• NotFound() trả về một NotFoundResult hoặc NotFoundObjectResult tương ứng với mã HTTP status code 404 (Not Found), báo cho client biết rằng tài nguyên Product với id tương ứng không tồn tại trong hệ thống.",
+        "whyWrong": {
+          "A": "• Ok() trả về mã HTTP status code 200 (OK), dùng khi truy vấn thành công và trả về dữ liệu tài nguyên, không phù hợp khi tài nguyên không tồn tại.",
+          "C": "• BadRequest() trả về mã HTTP status code 400 (Bad Request), được dùng khi cú pháp hoặc dữ liệu của request gửi lên bị lỗi/không hợp lệ, không phải do không tìm thấy dữ liệu.",
+          "D": "• NoContent() trả về mã HTTP status code 204 (No Content), thường dùng sau các thao tác PUT/DELETE thành công nhưng không cần trả về dữ liệu trong body; nó không thể hiện lỗi 404 Not Found."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 28,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 28,
+      "question": "According to inference rules, any complex type parameter NOT registered in the DI container and NOT matching a route parameter will be inferred as coming from where?",
+      "options": {
+        "A": "[FromQuery]",
+        "B": "[FromBody]",
+        "C": "[FromRoute]",
+        "D": "[FromHeader]"
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Theo các quy tắc suy luận (inference rules), bất kỳ tham số kiểu phức hợp nào KHÔNG được đăng ký trong container DI và KHÔNG khớp với một tham số route thì sẽ được suy luận là đến từ đâu?",
+        "optionsVi": {
+          "A": "[FromQuery]",
+          "B": "[FromBody]",
+          "C": "[FromRoute]",
+          "D": "[FromHeader]"
+        },
+        "answerDisplay": "B. [FromBody]",
+        "concept": "• Quy tắc suy luận thuộc tính nguồn ràng buộc (Binding Source Inference Rules) áp dụng cho [ApiController] giúp giảm bớt lượng code boilerplate.\n• Thứ tự suy luận: (1) Đăng ký trong DI → [FromServices]; (2) Tên tham số khớp tham số route → [FromRoute]; (3) Kiểu IFormFile/IFormFileCollection → [FromForm]; (4) Tham số kiểu phức hợp khác → [FromBody]; (5) Tham số kiểu đơn giản → [FromQuery].",
+        "whyCorrect": "• Nếu tham số là một kiểu phức hợp, không được tìm thấy trong DI container ([FromServices]) và không có tham số tương ứng trên tuyến đường ([FromRoute]), ASP.NET Core sẽ tự động suy luận nguồn của nó là [FromBody].",
+        "whyWrong": {
+          "A": "• [FromQuery] là nguồn mặc định được suy luận cho các tham số có kiểu dữ liệu đơn giản (simple types) như int, string, bool, v.v.",
+          "C": "• [FromRoute] chỉ được suy luận khi tên của tham số trùng với biến mẫu được định nghĩa trên URL route pattern.",
+          "D": "• [FromHeader] không bao giờ được suy luận tự động cho tham số kiểu phức hợp; lập trình viên phải thêm thuộc tính [FromHeader] một cách tường minh."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 29,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 29,
+      "question": "Which of the following statements about sigmoid function, σ(x), are incorrect?",
+      "options": {
+        "A": "σ(x) is monotonically increasing.",
+        "B": "σ(x) is not differentiable on its entire domain.",
+        "C": "σ(0) = 0.5",
+        "D": "The domain of σ(x) is (0, +∞)"
+      },
+      "answer": "B, D",
+      "explanation": {
+        "questionVi": "Phát biểu nào sau đây về hàm Sigmoid, σ(x), là KHÔNG đúng?",
+        "optionsVi": {
+          "A": "σ(x) là hàm đơn điệu tăng.",
+          "B": "σ(x) không có khả năng lấy đạo hàm trên toàn bộ tập xác định của nó.",
+          "C": "σ(0) = 0.5",
+          "D": "Tập xác định của σ(x) là (0, +∞)"
+        },
+        "answerDisplay": "B. σ(x) is not differentiable on its entire domain. / D. The domain of σ(x) is (0, +∞)",
+        "concept": "• Hàm Sigmoid được định nghĩa công thức: σ(x) = 1 / (1 + e^(-x)).\n• Tập xác định (Domain) của hàm Sigmoid là toàn bộ tập số thực (-∞, +∞). Tập giá trị (Range) là (0, 1).\n• Đạo hàm của hàm Sigmoid tồn tại trên toàn bộ ℝ và có công thức đẹp: σ'(x) = σ(x)(1 - σ(x)).\n• Hàm Sigmoid luôn tăng đơn điệu (monotonically increasing) vì σ'(x) > 0 với mọi x.",
+        "whyCorrect": "• Phát biểu B SAI vì hàm Sigmoid là hàm trơn (smooth function) và có đạo hàm tại mọi điểm trên ℝ.\n• Phát biểu D SAI vì tập xác định của hàm Sigmoid là toàn bộ trục số thực (-∞, +∞) chứ không phải (0, +∞) (khoảng (0, 1) là tập giá trị chứ không phải tập xác định).",
+        "whyWrong": {
+          "A": "• Phát biểu A ĐÚNG (nên không chọn). Vì đạo hàm σ'(x) = σ(x)(1 - σ(x)) > 0 với mọi x ∈ ℝ, nên hàm Sigmoid là hàm đồng biến (tăng đơn điệu).",
+          "C": "• Phát biểu C ĐÚNG (nên không chọn). Thay x = 0 vào công thức: σ(0) = 1 / (1 + e^0) = 1 / (1 + 1) = 0.5."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 30,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 30,
+      "question": "The following controller action is intended to update an existing product. Which HTTP verb is most appropriate for this action?\n\n[HttpPut(\"{id}\")]\npublic IActionResult UpdateProduct(int id, [FromBody] Product product)\n{\n    // Logic to update the product\n    return NoContent();\n}",
+      "options": {
+        "A": "GET",
+        "B": "POST",
+        "C": "PUT",
+        "D": "DELETE"
+      },
+      "answer": "C",
+      "explanation": {
+        "questionVi": "Action controller dưới đây có mục đích cập nhật một sản phẩm đã tồn tại. Động từ HTTP nào phù hợp nhất cho action này?\n\n[HttpPut(\"{id}\")]\npublic IActionResult UpdateProduct(int id, [FromBody] Product product)\n{\n    // Logic to update the product\n    return NoContent();\n}",
+        "optionsVi": {
+          "A": "GET",
+          "B": "POST",
+          "C": "PUT",
+          "D": "DELETE"
+        },
+        "answerDisplay": "C. PUT",
+        "concept": "• Các động từ HTTP (HTTP Verbs / Methods) đại diện cho các hành động CRUD trong thiết kế chuẩn RESTful API:\n  - GET: Đọc / Truy vấn tài nguyên (Read).\n  - POST: Tạo mới tài nguyên (Create).\n  - PUT: Cập nhật toàn bộ tài nguyên hoặc thay thế tài nguyên (Update/Replace).\n  - PATCH: Cập nhật một phần tài nguyên (Partial Update).\n  - DELETE: Xóa tài nguyên (Delete).",
+        "whyCorrect": "• Đoạn mã sử dụng thuộc tính [HttpPut(\"{id}\")] chỉ định rõ ràng phương thức HTTP PUT, vốn được thiết kế để cập nhật/thay thế một tài nguyên hiện có theo chuẩn REST.",
+        "whyWrong": {
+          "A": "• GET được sử dụng để lấy/đọc dữ liệu từ server và là một phương thức an toàn (safe method), không dùng để thay đổi hay cập nhật dữ liệu.",
+          "B": "• POST thường dùng để tạo mới tài nguyên (Create) hoặc gửi dữ liệu để xử lý, không phải là lựa chọn chuẩn nhất để cập nhật hoàn chỉnh một tài nguyên đã biết ID.",
+          "D": "• DELETE được sử dụng để xóa bỏ một tài nguyên khỏi hệ thống."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 31,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 31,
+      "question": "Consider this EF Core entity:\n\npublic class User\n{\n    public int Id { get; set; }\n    public string Username { get; set; } = String.Empty;\n    public string HashedPassword { get; set; } = String.Empty;\n    public bool IsAdmin { get; set; }\n}\n\nWhich of the following would be an appropriate DTO to return to a client asking for user details?",
+      "options": {
+        "A": "public class UserDto {\n    public int Id { get; set; }\n    public string Username { get; set; }\n}",
+        "B": "public class UserDto {\n    public string HashedPassword { get; set; }\n}",
+        "C": "The User entity itself should always be returned directly.",
+        "D": "public class UserDto {\n    public int Id { get; set; }\n    public string Username { get; set; }\n    public string HashedPassword { get; set; }\n    public bool IsAdmin { get; set; }\n}"
+      },
+      "answer": "A",
+      "explanation": {
+        "questionVi": "Xét thực thể EF Core sau:\n\npublic class User\n{\n    public int Id { get; set; }\n    public string Username { get; set; } = String.Empty;\n    public string HashedPassword { get; set; } = String.Empty;\n    public bool IsAdmin { get; set; }\n}\n\nDTO nào sau đây là phù hợp nhất để trả về cho client khi client yêu cầu thông tin chi tiết của người dùng?",
+        "optionsVi": {
+          "A": "public class UserDto {\n    public int Id { get; set; }\n    public string Username { get; set; }\n}",
+          "B": "public class UserDto {\n    public string HashedPassword { get; set; }\n}",
+          "C": "Chính thực thể User nên luôn luôn được trả về trực tiếp.",
+          "D": "public class UserDto {\n    public int Id { get; set; }\n    public string Username { get; set; }\n    public string HashedPassword { get; set; }\n    public bool IsAdmin { get; set; }\n}"
+        },
+        "answerDisplay": "A. public class UserDto {\n    public int Id { get; set; }\n    public string Username { get; set; }\n}",
+        "concept": "• Pattern Data Transfer Object (DTO) được sử dụng để ẩn thông tin nhạy cảm của cơ sở dữ liệu (như chuỗi băm mật khẩu HashedPassword), giảm kích thước dữ liệu truyền qua mạng và ngăn chặn các lỗ hổng bảo mật như Over-Posting.\n• Tuyệt đối không bao giờ để lộ mật khẩu hay thông tin bảo mật nhạy cảm ra ngoài API response.",
+        "whyCorrect": "• Đáp án A tạo ra một UserDto chỉ chứa các thuộc tính an toàn (Id, Username) và loại bỏ hoàn toàn trường nhạy cảm HashedPassword, bảo vệ an toàn cho hệ thống.",
+        "whyWrong": {
+          "B": "• DTO này chỉ chứa HashedPassword – một thông tin cực kỳ nhạy cảm hoàn toàn không được để lộ cho client.",
+          "C": "• Trả về trực tiếp Entity làm lộ các thuộc tính nhạy cảm (HashedPassword), gây rủi ro bảo mật nghiêm trọng và làm tăng độ gắn kết (coupling) giữa database schema và API contract.",
+          "D": "• DTO này vẫn chứa trường HashedPassword, vi phạm nguyên tắc bảo mật thông tin tài khoản người dùng."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 32,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 32,
+      "question": "In a .NET 8 Web API, what is the recommended way to handle model validation errors automatically and return a 400 Bad Request response?",
+      "options": {
+        "A": "Manually checking ModelState.IsValid in every action.",
+        "B": "The [ApiController] attribute automatically handles it.",
+        "C": "Using a custom middleware to inspect every request.",
+        "D": "Relying on the database to throw an exception."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Trong .NET 8 Web API, cách được khuyến nghị để tự động xử lý các lỗi xác thực mô hình (model validation) và trả về phản hồi 400 Bad Request là gì?",
+        "optionsVi": {
+          "A": "Kiểm tra thủ công ModelState.IsValid trong mọi action.",
+          "B": "Thuộc tính [ApiController] sẽ tự động xử lý điều này.",
+          "C": "Sử dụng một middleware tùy chỉnh để kiểm tra mọi request.",
+          "D": "Dựa vào cơ sở dữ liệu để ném ra một ngoại lệ."
+        },
+        "answerDisplay": "B. The [ApiController] attribute automatically handles it.",
+        "concept": "• Khi gắn thuộc tính [ApiController] lên controller, ASP.NET Core sẽ kích hoạt tính năng tự động phản hồi lỗi xác thực (Automatic HTTP 400 responses).\n• Nếu ModelState.IsValid == false, framework sẽ tự động ngắt pipeline và trả về kết quả 400 Bad Request chứa định dạng chuẩn ValidationProblemDetails trước khi code trong Action được thi hành.",
+        "whyCorrect": "• Thuộc tính [ApiController] giúp tự động hóa việc kiểm tra ModelState.IsValid. Nếu dữ liệu không hợp lệ, nó lập tức trả về phản hồi HTTP 400 với thông tin chi tiết lỗi mà lập trình viên không cần viết code kiểm tra thủ công.",
+        "whyWrong": {
+          "A": "• Kiểm tra thủ công ModelState.IsValid là cách làm cũ của ASP.NET MVC/Web API đời đầu, tạo ra nhiều mã lặp lại (boilerplate) không cần thiết trong .NET Core.",
+          "C": "• Viết middleware tùy chỉnh là thừa thãi vì tính năng này đã được tích hợp sẵn thông qua [ApiController].",
+          "D": "• Dựa vào cơ sở dữ liệu sẽ dẫn tới lỗi runtime 500 Internal Server Error, không đúng bản chất lỗi dữ liệu đầu vào không hợp lệ từ client (400 Bad Request)."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 33,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 33,
+      "question": "To retrieve a single Category entity and all of its related Product entities in one request, which query would you use?",
+      "options": {
+        "A": "GET /Categories(1)?$select=Products",
+        "B": "GET /Categories(1)?$expand=Products",
+        "C": "GET /Categories(1)/Products",
+        "D": "GET /Categories(1)/Products?$fetch=all"
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Để truy xuất một thực thể Category đơn lẻ cùng tất cả các thực thể Product có liên quan đến nó trong cùng một request OData, bạn sẽ sử dụng truy vấn nào?",
+        "optionsVi": {
+          "A": "GET /Categories(1)?$select=Products",
+          "B": "GET /Categories(1)?$expand=Products",
+          "C": "GET /Categories(1)/Products",
+          "D": "GET /Categories(1)/Products?$fetch=all"
+        },
+        "answerDisplay": "B. GET /Categories(1)?$expand=Products",
+        "concept": "• Trong OData (Open Data Protocol), tùy chọn $expand được sử dụng để nạp các thực thể liên quan (related entities / navigation properties) kèm theo thực thể gốc trong một phản hồi duy nhất (tương tự INCLUDE trong SQL hoặc EF Core).\n• Tùy chọn $select dùng để chọn ra các thuộc tính cụ thể của thực thể (projection).",
+        "whyCorrect": "• Cú pháp GET /Categories(1)?$expand=Products yêu cầu dịch vụ OData trả về thông tin chi tiết của Category có ID là 1 đồng thời nhúng thêm danh sách toàn bộ các Product thuộc Category đó vào thuộc tính Products.",
+        "whyWrong": {
+          "A": "• $select dùng để lọc các trường/thuộc tính trả về của entity chính chứ không dùng để nạp dữ liệu liên quan (navigation property) theo dạng nhúng cấu trúc.",
+          "C": "• GET /Categories(1)/Products sẽ chỉ trả về danh sách các Products thuộc Category 1, chứ KHÔNG trả về thông tin của thực thể Category đó.",
+          "D": "• $fetch=all không phải là một system query option hợp lệ trong chuẩn OData."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 34,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 34,
+      "question": "What is a primary advantage of using Protocol Buffers (Protobuf) over JSON?",
+      "options": {
+        "A": "Protobuf is a human-readable text format, making it easier to debug.",
+        "B": "Protobuf uses a binary serialization format, which is typically smaller and faster to parse than text-based JSON.",
+        "C": "Protobuf is natively supported by all web browsers without any libraries.",
+        "D": "Protobuf has a more flexible schema that can be changed by the client at will."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Ưu điểm chính của việc sử dụng Protocol Buffers (Protobuf) so với JSON là gì?",
+        "optionsVi": {
+          "A": "Protobuf là định dạng văn bản dễ đọc cho con người, giúp dễ dàng debug hơn.",
+          "B": "Protobuf sử dụng định dạng tuần tự hóa nhị phân, thường nhỏ hơn và phân tích cú pháp nhanh hơn so với JSON dạng văn bản.",
+          "C": "Protobuf được hỗ trợ nguyên bản bởi tất cả các trình duyệt web mà không cần thư viện nào.",
+          "D": "Protobuf có schema linh hoạt hơn, có thể thay đổi bởi client tùy ý."
+        },
+        "answerDisplay": "B. Protobuf uses a binary serialization format, which is typically smaller and faster to parse than text-based JSON.",
+        "concept": "• Protocol Buffers (Protobuf) là cơ chế tuần tự hóa dữ liệu cấu trúc dạng nhị phân (binary format) do Google phát triển, là nền tảng truyền tải dữ liệu của gRPC.\n• So với JSON (định dạng text), Protobuf nén dữ liệu nhỏ hơn nhiều, tốn ít băng thông mạng và tối ưu tốc độ serialize/deserialize hơn đáng kể.",
+        "whyCorrect": "• Vì Protobuf mã hóa dữ liệu dưới dạng nhị phân nguyên khối (binary serialization), kích thước payload truyền qua mạng nhỏ hơn rất nhiều và CPU tốn ít chi phí để parse hơn so với JSON chuỗi văn bản.",
+        "whyWrong": {
+          "A": "• Protobuf là định dạng nhị phân (binary) nên con người KHÔNG thể đọc trực tiếp được nếu không qua công cụ decode; JSON mới là định dạng text dễ đọc.",
+          "C": "• Các trình duyệt web không hỗ trợ Protobuf nguyên bản mà cần có các thư viện JavaScript hoặc proxy (gRPC-Web) để xử lý.",
+          "D": "• Protobuf yêu cầu định nghĩa schema nghiêm ngặt (.proto file) được biên dịch trước, không phải thích thay đổi tùy ý từ phía client."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 35,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 35,
+      "question": "The following LINQ query is written in a .NET 8 service using EF Core. What does it do?\n\nvar result = await _context.Products\n    .Where(p => p.IsAvailable)\n    .OrderBy(p => p.Name)\n    .ToListAsync();",
+      "options": {
+        "A": "It fetches all products, then filters and sorts them in the application's memory.",
+        "B": "It generates a SQL query to select and order available products, which is then executed on the database server.",
+        "C": "It synchronously blocks the thread until the database returns all products.",
+        "D": "It deletes all products that are not available."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Truy vấn LINQ dưới đây được viết trong một service .NET 8 sử dụng EF Core. Truy vấn này thực hiện điều gì?\n\nvar result = await _context.Products\n    .Where(p => p.IsAvailable)\n    .OrderBy(p => p.Name)\n    .ToListAsync();",
+        "optionsVi": {
+          "A": "Nó lấy tất cả sản phẩm về, sau đó lọc và sắp xếp chúng trên bộ nhớ của ứng dụng.",
+          "B": "Nó tạo ra một câu lệnh SQL để chọn và sắp xếp các sản phẩm khả dụng, sau đó được thực thi trên máy chủ cơ sở dữ liệu.",
+          "C": "Nó chặn (block) luồng một cách đồng bộ cho đến khi cơ sở dữ liệu trả về tất cả sản phẩm.",
+          "D": "Nó xóa tất cả các sản phẩm không có sẵn (not available)."
+        },
+        "answerDisplay": "B. It generates a SQL query to select and order available products, which is then executed on the database server.",
+        "concept": "• LINQ to Entities với EF Core sử dụng cơ chế trì hoãn thực thi (Deferred Execution) thông qua IQueryable.\n• Các toán tử Where và OrderBy xây dựng nên cây biểu thức (Expression Tree). Khi gọi một phương thức chuyển đổi như ToListAsync(), EF Core sẽ biên dịch cây biểu thức này thành câu truy vấn SQL tương ứng và gửi tới Database Server để thực thi.",
+        "whyCorrect": "• EF Core biên dịch biểu thức LINQ thành câu lệnh SQL chứa các mệnh đề WHERE IsAvailable = 1 và ORDER BY Name. Việc lọc và sắp xếp được thực hiện trực tiếp tối ưu tại Database Server trước khi dữ liệu được tải về ứng dụng.",
+        "whyWrong": {
+          "A": "• Do truy vấn chạy trên IQueryable (chưa chuyển sang IEnumerable/AsEnumerable), việc lọc và sắp xếp không diễn ra trên memory ứng dụng mà ở Database.",
+          "C": "• Từ khóa await kết hợp ToListAsync() thực hiện truy vấn bất đồng bộ (asynchronous), không gây khóa/chặn luồng (thread blocking).",
+          "D": "• Đoạn code chỉ đọc dữ liệu (SELECT), hoàn toàn không thực hiện thao tác xóa dữ liệu (DELETE)."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 36,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 36,
+      "question": "Which of the following is a well-formed XML document?",
+      "options": {
+        "A": "<note>\n  <to>Tove</to>\n  <from>Jani</from>\n</note>",
+        "B": "<note>\n  <to>Tove\n  <from>Jani</from>\n  </to>\n</note>",
+        "C": "<note>\n  <to>Tove</to>\n  <from>Jani\n<note>",
+        "D": "<note>\n  <to>Tove</from><from>Jani</to>\n</note>"
+      },
+      "answer": "A",
+      "explanation": {
+        "questionVi": "Tài liệu XML nào sau đây đúng định dạng (well-formed XML)?",
+        "optionsVi": {
+          "A": "<note>\n  <to>Tove</to>\n  <from>Jani</from>\n</note>",
+          "B": "<note>\n  <to>Tove\n  <from>Jani</from>\n  </to>\n</note>",
+          "C": "<note>\n  <to>Tove</to>\n  <from>Jani\n<note>",
+          "D": "<note>\n  <to>Tove</from><from>Jani</to>\n</note>"
+        },
+        "answerDisplay": "A. <note>\n  <to>Tove</to>\n  <from>Jani</from>\n</note>",
+        "concept": "• Một tài liệu XML hợp lệ/đúng định dạng (Well-formed XML) phải tuân thủ các quy tắc nghiêm ngặt:\n  1. Phải có một thẻ gốc duy nhất (Root element).\n  2. Mọi thẻ mở phải có thẻ đóng tương ứng.\n  3. Các thẻ phải được lồng nhau đúng thứ tự (không lồng chéo).\n  4. Thẻ đóng phải khớp chính xác tên thẻ mở (phân biệt hoa thường).",
+        "whyCorrect": "• Đáp án A tuân thủ tất cả quy tắc well-formed XML: Thẻ gốc <note> bao bọc hai thẻ con độc lập <to> và <from>, tất cả các thẻ đều đóng/mở đúng thứ tự và tên thẻ.",
+        "whyWrong": {
+          "B": "• Bị lỗi lồng thẻ sai: thẻ <from> nằm bên trong thẻ <to> nhưng lại đóng thẻ </from> trước khi đóng </to>.",
+          "C": "• Thiếu thẻ đóng </from> cho thẻ mở <from> và thiếu thẻ đóng </note> cho thẻ gốc (thẻ cuối lại là thẻ mở <note>).",
+          "D": "• Thẻ mở <to> nhưng lại đóng bằng </from>, và thẻ mở <from> lại đóng bằng </to>, tên thẻ đóng và mở không khớp nhau."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 37,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 37,
+      "question": "In older ASP .NET Web API (not Core), MediaTypeFormatter was the base class. In modern ASP .NET Core, what are the corresponding base classes for input and output formatters?",
+      "options": {
+        "A": "InputFormatter and OutputFormatter",
+        "B": "Formatter and Serializer",
+        "C": "MediaTypeReader and MediaTypeWriter",
+        "D": "RequestFormatter and ResponseFormatter"
+      },
+      "answer": "A",
+      "explanation": {
+        "questionVi": "Trong ASP.NET Web API cũ (trước Core), MediaTypeFormatter là lớp cơ sở. Trong ASP.NET Core hiện đại, các lớp cơ sở tương ứng cho input và output formatter là gì?",
+        "optionsVi": {
+          "A": "InputFormatter và OutputFormatter",
+          "B": "Formatter và Serializer",
+          "C": "MediaTypeReader và MediaTypeWriter",
+          "D": "RequestFormatter và ResponseFormatter"
+        },
+        "answerDisplay": "A. InputFormatter and OutputFormatter",
+        "concept": "• Trong ASP.NET Core, trách nhiệm đọc dữ liệu từ request body và ghi dữ liệu ra response body được chia tách rõ ràng thành hai giao diện/lớp cơ sở:\n  - InputFormatter (hoặc TextInputFormatter): Chịu trách nhiệm đọc dữ liệu đầu vào (Deserialization).\n  - OutputFormatter (hoặc TextOutputFormatter): Chịu trách nhiệm xuất dữ liệu đầu ra (Serialization).",
+        "whyCorrect": "• InputFormatter và OutputFormatter (thuộc namespace Microsoft.AspNetCore.Mvc.Formatters) là hai lớp cơ sở chính thức trong ASP.NET Core thay thế cho MediaTypeFormatter của ASP.NET Web API 2 cũ.",
+        "whyWrong": {
+          "B": "• Formatter và Serializer là các khái niệm chung trong tuần tự hóa, không phải là tên lớp cơ sở MVC Formatter trong ASP.NET Core.",
+          "C": "• MediaTypeReader và MediaTypeWriter không tồn tại trong ASP.NET Core MVC.",
+          "D": "• RequestFormatter và ResponseFormatter không phải là tên lớp chuẩn của framework."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 38,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 38,
+      "question": "If a client sends a request with Content-Type: application/xml, which type of formatter will the ASP .NET Core pipeline try to use to read the request body?",
+      "options": {
+        "A": "An output formatter that can write XML.",
+        "B": "An input formatter that can read XML.",
+        "C": "The default JSON formatter, which will cause an error.",
+        "D": "Any formatter that is registered with the application."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Nếu client gửi một request với header Content-Type: application/xml, pipeline của ASP.NET Core sẽ cố gắng sử dụng loại formatter nào để đọc body của request?",
+        "optionsVi": {
+          "A": "Một output formatter có khả năng ghi XML.",
+          "B": "Một input formatter có khả năng đọc XML.",
+          "C": "Formatter JSON mặc định, điều này sẽ gây ra lỗi.",
+          "D": "Bất kỳ formatter nào được đăng ký trong ứng dụng."
+        },
+        "answerDisplay": "B. An input formatter that can read XML.",
+        "concept": "• Header Content-Type báo cho máy chủ biết định dạng dữ liệu được gửi trong request body.\n• Trong quá trình Model Binding, ASP.NET Core duyệt qua danh sách các InputFormatter đã được đăng ký và chọn ra formatter đầu tiên trả về true cho phương thức CanRead() với Content-Type tương ứng.",
+        "whyCorrect": "• Content-Type xác định định dạng của dữ liệu đầu vào, do đó framework sẽ tìm kiếm một InputFormatter có khả năng giải mã media type application/xml (chẳng hạn như XmlSerializerInputFormatter).",
+        "whyWrong": {
+          "A": "• Output formatter chỉ được dùng để serialize và ghi dữ liệu ra response body dựa trên header Accept, không dùng để đọc request body.",
+          "C": "• Nếu dịch vụ có đăng ký XML Input Formatter (qua AddXmlSerializerFormatters()), pipeline sẽ chọn XML Input Formatter chứ không ép buộc dùng JSON.",
+          "D": "• Pipeline không chọn ngẫu nhiên bất kỳ formatter nào mà chỉ chọn formatter phù hợp nhất với Content-Type được chỉ định."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 39,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 39,
+      "question": "What is \"Server Push\" in HTTP/2?",
+      "options": {
+        "A": "The ability for the client to push data to the server's cache.",
+        "B": "A security feature that pushes updates to the client.",
+        "C": "The ability for the server to send resources to the client that it anticipates the client will need, without the client explicitly requesting them.",
+        "D": "A mechanism for streaming video content."
+      },
+      "answer": "C",
+      "explanation": {
+        "questionVi": "\"Server Push\" trong giao thức HTTP/2 là gì?",
+        "optionsVi": {
+          "A": "Khả năng cho phép client đẩy dữ liệu vào bộ nhớ cache của server.",
+          "B": "Một tính năng bảo mật đẩy các bản cập nhật tới client.",
+          "C": "Khả năng máy chủ chủ động gửi các tài nguyên cho client mà máy chủ dự đoán client sẽ cần, trước khi client gửi yêu cầu lấy các tài nguyên đó.",
+          "D": "Cơ chế để phát trực tuyến (stream) nội dung video."
+        },
+        "answerDisplay": "C. The ability for the server to send resources to the client that it anticipates the client will need, without the client explicitly requesting them.",
+        "concept": "• HTTP/2 Server Push cho phép máy chủ phản hồi gửi kèm các tài nguyên phụ (như file CSS, JS, hình ảnh) trước khi trình duyệt nhận và phân tích file HTML để gửi yêu cầu riêng biệt.\n• Mục đích nhằm giảm thời gian chờ (latency) và số lượng round-trip (RTT) giữa client và server.",
+        "whyCorrect": "• Khái niệm chuẩn của Server Push trong HTTP/2 là server chủ động gửi trước các tài nguyên mà client sẽ cần đến (ví dụ: style.css đi kèm index.html) mà không cần chờ client parse HTML rồi mới tạo HTTP request thứ hai.",
+        "whyWrong": {
+          "A": "• Client đẩy dữ liệu lên server là các request POST/PUT thông thường, không liên quan đến thuật ngữ Server Push.",
+          "B": "• Server Push là tính năng tối ưu hiệu năng truyền tải tài nguyên trang web, không phải là cơ chế bảo mật.",
+          "D": "• Việc stream video sử dụng các giao thức như HLS/DASH hoặc HTTP Live Streaming, không phải là mục đích định nghĩa của HTTP/2 Server Push."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 40,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 40,
+      "question": "A key difference between gRPC and a typical RESTful HTTP API is:",
+      "options": {
+        "A": "REST APIs are strictly-typed, while gRPC is loosely-typed.",
+        "B": "gRPC APIs are defined by a formal contract (.proto file), while REST APIs often rely on documentation (like OpenAPI) that is separate from the implementation.",
+        "C": "gRPC can only be used for internal, server-to-server communication.",
+        "D": "REST APIs support streaming, while gRPC does not."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Một điểm khác biệt quan trọng giữa gRPC và một RESTful HTTP API thông thường là:",
+        "optionsVi": {
+          "A": "REST API định kiểu nghiêm ngặt (strictly-typed), trong khi gRPC định kiểu lỏng lẻo (loosely-typed).",
+          "B": "gRPC API được định nghĩa bằng một hợp đồng chính thức (file .proto), trong khi REST API thường dựa vào tài liệu (như OpenAPI) tách biệt với mã triển khai.",
+          "C": "gRPC chỉ có thể được sử dụng cho giao tiếp nội bộ giữa server với server.",
+          "D": "REST API hỗ trợ streaming, trong khi gRPC thì không."
+        },
+        "answerDisplay": "B. gRPC APIs are defined by a formal contract (.proto file), while REST APIs often rely on documentation (like OpenAPI) that is separate from the implementation.",
+        "concept": "• gRPC là một framework RPC hiện đại dựa trên nguyên lý Schema-first (Contract-first) sử dụng file .proto (Protocol Buffers) để định nghĩa chi tiết dịch vụ và các thông điệp.\n• Mã nguồn Stub (Client) và Base (Server) được tự động sinh ra trực tiếp từ hợp đồng .proto này.\n• REST API thường áp dụng cơ chế tự do hơn, hợp đồng API (như OpenAPI/Swagger) thường được sinh ngược từ code hoặc viết riêng, không bắt buộc làm hợp đồng cứng để tạo code.",
+        "whyCorrect": "• gRPC buộc phải có file hợp đồng .proto làm trung tâm để sinh mã mã hóa/giải mã và định nghĩa phương thức. Trong khi đó, REST API không có hợp đồng tĩnh bắt buộc như vậy mà phải dựa vào các tài liệu mở rộng như OpenAPI/Swagger.",
+        "whyWrong": {
+          "A": "• Ngược lại, gRPC định kiểu rất nghiêm ngặt (strictly-typed) nhờ schema của Protobuf, còn REST JSON có tính chất lỏng lẻo hơn.",
+          "C": "• Mặc dù gRPC phổ biến trong giao tiếp server-to-server, nó vẫn có thể giao tiếp với client (web/mobile) thông qua gRPC-Web hoặc gRPC JSON Transcoding.",
+          "D": "• gRPC hỗ trợ streaming mạnh mẽ trên nền HTTP/2 (Client streaming, Server streaming, Bidirectional streaming), trong khi REST chuẩn cơ bản chỉ sử dụng request-response đơn."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 41,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 41,
+      "question": "In a bidirectional streaming call, when does the server wait for the client to send all its messages before sending its own?",
+      "options": {
+        "A": "Always.",
+        "B": "Never; the client and server can read and write in any order, their streams operate independently.",
+        "C": "Only if the client explicitly signals it has finished writing.",
+        "D": "This is configured by the wait_for_client option in the .proto file."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Trong một cuộc gọi Bidirectional Streaming (luồng hai chiều) của gRPC, khi nào server phải chờ client gửi xong tất cả tin nhắn trước khi tự mình gửi tin nhắn?",
+        "optionsVi": {
+          "A": "Luôn luôn.",
+          "B": "Không bao giờ; client và server có thể đọc và ghi theo bất kỳ thứ tự nào, các luồng của chúng hoạt động độc lập.",
+          "C": "Chỉ khi client phát tín hiệu rõ ràng rằng nó đã hoàn thành việc ghi.",
+          "D": "Điều này được cấu hình bởi tùy chọn wait_for_client trong file .proto."
+        },
+        "answerDisplay": "B. Never; the client and server can read and write in any order, their streams operate independently.",
+        "concept": "• Bidirectional Streaming trong gRPC tận dụng tính năng Full-Duplex (song công toàn phần) của HTTP/2.\n• Luồng gửi từ client và luồng gửi từ server hoàn toàn tách biệt và độc lập với nhau. Server có thể nhận 1 tin nhắn rồi trả về 1 tin nhắn, hoặc nhận nhiều tin rồi mới trả, hoặc chủ động gửi dữ liệu bất cứ lúc nào.",
+        "whyCorrect": "• Trong Bidirectional Streaming, hai luồng read/write hoàn toàn độc lập. Server không bao giờ bắt buộc phải chờ client hoàn tất gửi tin nhắn mới bắt đầu gửi (trừ khi ứng dụng tự thiết kế logic nghiệp vụ như vậy).",
+        "whyWrong": {
+          "A": "• Chờ client gửi xong toàn bộ tin nhắn trước khi trả lời là đặc điểm của Client Streaming, không phải Bidirectional Streaming.",
+          "C": "• Tín hiệu hoàn thành ghi (Completing stream) giúp đóng luồng ghi phía client, nhưng không phải điều kiện bắt buộc để server bắt đầu gửi tin nhắn.",
+          "D": "• Không tồn tại tùy chọn wait_for_client trong chuẩn định nghĩa .proto."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 42,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 42,
+      "question": "Which of the following is a fundamental security principle for stateless RESTful services?",
+      "options": {
+        "A": "The server should store the client's session state to validate every request.",
+        "B": "Each request from a client must contain all the information needed for the server to authenticate and authorize it, without relying on a previous request's context.",
+        "C": "Security is best handled by the client-side application, not the API.",
+        "D": "Using HTTP instead of HTTPS is acceptable for internal services."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Đâu là một nguyên tắc bảo mật cơ bản cho các dịch vụ RESTful không trạng thái (stateless)?",
+        "optionsVi": {
+          "A": "Server nên lưu trữ trạng thái phiên (session state) của client để xác thực từng request.",
+          "B": "Mỗi request từ client phải chứa tất cả thông tin cần thiết để server xác thực và phân quyền, không phụ thuộc vào ngữ cảnh của request trước đó.",
+          "C": "Bảo mật tốt nhất nên được xử lý bởi ứng dụng phía client, không phải bởi API.",
+          "D": "Sử dụng HTTP thay vì HTTPS là có thể chấp nhận được đối với các dịch vụ nội bộ."
+        },
+        "answerDisplay": "B. Each request from a client must contain all the information needed for the server to authenticate and authorize it, without relying on a previous request's context.",
+        "concept": "• Nguyên tắc Statelessness (Không trạng thái) đòi hỏi mọi yêu cầu HTTP từ client lên server phải mang đầy đủ ngữ cảnh (credentials, token, parameters) để server hiểu và xử lý được.\n• Server không duy trì Session State giữa các request. Cơ chế như JWT (JSON Web Token) được gửi trong header Authorization: Bearer <token> là ví dụ tiêu chuẩn cho bảo mật trong RESTful Stateless API.",
+        "whyCorrect": "• Vì dịch vụ là stateless, server không lưu session trên memory. Do đó từng request riêng lẻ bắt buộc phải tự chứa đủ thông tin xác thực và phân quyền (ví dụ token JWT).",
+        "whyWrong": {
+          "A": "• Lưu session state trên server vi phạm trực tiếp nguyên tắc Statelessness của kiến trúc REST và gây khó khăn khi mở rộng hàng loạt server (horizontal scaling).",
+          "C": "• Client là môi trường không tin cậy (untrusted); bảo mật bắt buộc phải được thực thi và kiểm tra nghiêm ngặt tại Backend API.",
+          "D": "• Ngay cả đối với dịch vụ nội bộ, việc truyền tải dữ liệu nhạy cảm không mã hóa qua HTTP vẫn tiềm ẩn rủi ro tấn công nghe lén (Man-In-The-Middle)."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 43,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 43,
+      "question": "To validate a property against a custom pattern, like a specific format for a product code (example: \"PROD-1234\"), which attribute is most suitable?",
+      "options": {
+        "A": "[Format]",
+        "B": "[Pattern]",
+        "C": "[StringLength]",
+        "D": "[RegularExpression]"
+      },
+      "answer": "D",
+      "explanation": {
+        "questionVi": "Để xác thực một thuộc tính theo một mẫu tùy chỉnh, như định dạng cụ thể của mã sản phẩm (ví dụ: \"PROD-1234\"), thuộc tính validation nào là phù hợp nhất?",
+        "optionsVi": {
+          "A": "[Format]",
+          "B": "[Pattern]",
+          "C": "[StringLength]",
+          "D": "[RegularExpression]"
+        },
+        "answerDisplay": "D. [RegularExpression]",
+        "concept": "• Các thuộc tính xác thực dữ liệu (Data Annotation attributes) trong namespace System.ComponentModel.DataAnnotations giúp kiểm tra hợp lệ của DTO/Model.\n• Thuộc tính [RegularExpression(@\"pattern\")] cho phép kiểm tra xem giá trị chuỗi nhập vào có khớp với một biểu thức chính quy (Regex) nhất định hay không.",
+        "whyCorrect": "• [RegularExpression] chấp nhận một chuỗi Regex (ví dụ @\"^PROD-\\d{4}$\"), là thuộc tính chính xác và phù hợp nhất để khớp dữ liệu theo định dạng cấu trúc mẫu tùy chỉnh.",
+        "whyWrong": {
+          "A": "• [Format] không phải là thuộc tính xác thực dữ liệu chuẩn trong .NET DataAnnotations.",
+          "B": "• [Pattern] không tồn tại trong System.ComponentModel.DataAnnotations.",
+          "C": "• [StringLength] chỉ dùng để kiểm tra độ dài tối thiểu và tối đa của chuỗi, không kiểm tra được mẫu định dạng cụ thể."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 44,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 44,
+      "question": "Which of the following best defines a microservice architecture?",
+      "options": {
+        "A": "A single, large application that handles all business logic in one deployable unit.",
+        "B": "An architectural style that structures an application as a collection of small, independently deployable services organized around business capabilities.",
+        "C": "A client-side framework for building single-page applications.",
+        "D": "A database design pattern for sharding data across multiple servers."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Phát biểu nào sau đây định nghĩa đúng nhất về kiến trúc Microservices (vi dịch vụ)?",
+        "optionsVi": {
+          "A": "Một ứng dụng đơn khối lớn xử lý toàn bộ logic nghiệp vụ trong một đơn vị triển khai duy nhất.",
+          "B": "Một phong cách kiến trúc xây dựng ứng dụng thành một tập hợp các dịch vụ nhỏ, có thể triển khai độc lập và được tổ chức xung quanh các năng lực nghiệp vụ.",
+          "C": "Một framework phía client để xây dựng các ứng dụng trang đơn (Single-Page Applications).",
+          "D": "Một pattern thiết kế cơ sở dữ liệu để phân mảnh dữ liệu (sharding) trên nhiều máy chủ."
+        },
+        "answerDisplay": "B. An architectural style that structures an application as a collection of small, independently deployable services organized around business capabilities.",
+        "concept": "• Kiến trúc Microservices phân chia một ứng dụng lớn thành các dịch vụ độc lập nhỏ hơn. Mỗi dịch vụ chạy trong một tiến trình riêng (process), giao tiếp qua giao thức nhẹ (HTTP REST, gRPC, Message Queue) và tập trung vào một nghiệp vụ cụ thể (Bounded Context).\n• Tính chất cốt lõi: Độc lập triển khai (Independently Deployable), độc lập công nghệ (Polyglot) và phân tán dữ liệu.",
+        "whyCorrect": "• Định nghĩa chuẩn của Microservices: ứng dụng là sự kết hợp của nhiều dịch vụ nhỏ, triển khai độc lập, có thể phát triển độc lập và xoay quanh các năng lực nghiệp vụ (business capabilities).",
+        "whyWrong": {
+          "A": "• Đây là định nghĩa của kiến trúc đơn khối (Monolithic Architecture), trái ngược hoàn toàn với Microservices.",
+          "C": "• Microservices là phong cách kiến trúc hệ thống Backend/Distributed System, không phải là framework UI phía client.",
+          "D": "• Phân mảnh cơ sở dữ liệu (Database Sharding) là một kỹ thuật quản trị DB, không phải là định nghĩa về kiến trúc ứng dụng Microservices."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 45,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 45,
+      "question": "What does the HTTP status code 200 OK indicate?",
+      "options": {
+        "A": "The request has been accepted for processing, but the processing has not been completed.",
+        "B": "The server has successfully fulfilled the request.",
+        "C": "The requested resource could not be found.",
+        "D": "The server understands the request but refuses to authorize it."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Mã trạng thái HTTP 200 OK thể hiện điều gì?",
+        "optionsVi": {
+          "A": "Request đã được chấp nhận để xử lý, nhưng quá trình xử lý chưa hoàn tất.",
+          "B": "Máy chủ đã thực thi và đáp ứng yêu cầu một cách thành công.",
+          "C": "Không thể tìm thấy tài nguyên được yêu cầu.",
+          "D": "Máy chủ hiểu yêu cầu nhưng từ chối cấp quyền thực hiện."
+        },
+        "answerDisplay": "B. The server has successfully fulfilled the request.",
+        "concept": "• Mã trạng thái HTTP (HTTP Status Codes) nhóm 2xx đại diện cho các phản hồi thành công.\n• 200 OK là mã trạng thái phản hồi tiêu chuẩn cho các yêu cầu HTTP thành công (GET trả dữ liệu, POST/PUT trả kết quả xử lý thành công).",
+        "whyCorrect": "• 200 OK báo hiệu rằng request từ client đã được nhận, xử lý và đáp ứng thành công bởi server mà không xảy ra lỗi.",
+        "whyWrong": {
+          "A": "• Mô tả của mã HTTP status code 202 Accepted (xử lý bất đồng bộ).",
+          "C": "• Mô tả của mã HTTP status code 404 Not Found.",
+          "D": "• Mô tả của mã HTTP status code 403 Forbidden."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 46,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 46,
+      "question": "What is the most common data format used for the response payloads in modern RESTful APIs?",
+      "options": {
+        "A": "HTML",
+        "B": "XML",
+        "C": "JSON",
+        "D": "YAML"
+      },
+      "answer": "C",
+      "explanation": {
+        "questionVi": "Định dạng dữ liệu phổ biến nhất được sử dụng cho phần thân phản hồi (response payload) trong các RESTful API hiện đại là gì?",
+        "optionsVi": {
+          "A": "HTML",
+          "B": "XML",
+          "C": "JSON",
+          "D": "YAML"
+        },
+        "answerDisplay": "C. JSON",
+        "concept": "• JSON (JavaScript Object Notation) là định dạng trao đổi dữ liệu nhẹ, dạng văn bản, dễ đọc cho con người và dễ dàng parse bởi các ngôn ngữ lập trình.\n• JSON đã trở thành tiêu chuẩn de facto cho việc truyền tải dữ liệu trong các ứng dụng web và RESTful API hiện đại.",
+        "whyCorrect": "• JSON là định dạng phổ biến nhất nhờ tính đơn giản, kích thước gọn nhẹ và khả năng tương thích tuyệt vời với JavaScript cũng như các ngôn ngữ lập trình hiện đại.",
+        "whyWrong": {
+          "A": "• HTML được dùng để dựng giao diện trang web hiển thị trên trình duyệt, không phải định dạng trao đổi dữ liệu chính của RESTful API.",
+          "B": "• XML từng rất phổ biến trong SOAP API hoặc các ứng dụng cũ, nhưng ngày nay ít được dùng hơn JSON trong REST API do cú pháp cồng kềnh hơn.",
+          "D": "• YAML thường được dùng cho các file cấu hình (như Docker Compose, OpenAPI spec), hiếm khi dùng làm định dạng payload dữ liệu trả về cho client."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 47,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 47,
+      "question": "The $count system query option is used to:",
+      "options": {
+        "A": "Count the number of properties on an entity.",
+        "B": "Retrieve the total number of items in a collection, often alongside the data itself.",
+        "C": "Limit the number of results returned.",
+        "D": "Count the number of related entities."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Tùy chọn truy vấn hệ thống $count trong OData được sử dụng để:",
+        "optionsVi": {
+          "A": "Đếm số lượng các thuộc tính trên một thực thể.",
+          "B": "Lấy tổng số lượng mục trong một tập hợp (collection), thường đi kèm với chính dữ liệu đó.",
+          "C": "Giới hạn số lượng kết quả trả về.",
+          "D": "Đếm số lượng thực thể liên quan."
+        },
+        "answerDisplay": "B. Retrieve the total number of items in a collection, often alongside the data itself.",
+        "concept": "• Trong OData, $count=true là một system query option cho phép server trả về tổng số lượng bản ghi (total count) thỏa mãn truy vấn cùng với tập kết quả (dữ liệu đã phân trang).\n• Điều này vô cùng hữu ích để triển khai tính năng phân trang (Pagination) phía client.",
+        "whyCorrect": "• $count=true truy vấn tổng số phần tử trong tập hợp collection gốc, giúp client biết được tổng số lượng dòng dữ liệu để tính toán số trang.",
+        "whyWrong": {
+          "A": "• OData không có tùy chọn đếm số lượng property/field của một entity.",
+          "C": "• Việc giới hạn số lượng kết quả trả về trong OData thuộc về tùy chọn $top.",
+          "D": "• Đếm riêng số lượng thực thể liên quan không phải là chức năng chính của $count trên tập hợp gốc."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 48,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 48,
+      "question": "Which of the following is a correctly formatted Media Type for JSON?",
+      "options": {
+        "A": "text/json",
+        "B": "application/json",
+        "C": "data/json",
+        "D": "json/application"
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Chuỗi Media Type (MIME Type) nào sau đây được định dạng đúng cho dữ liệu JSON?",
+        "optionsVi": {
+          "A": "text/json",
+          "B": "application/json",
+          "C": "data/json",
+          "D": "json/application"
+        },
+        "answerDisplay": "B. application/json",
+        "concept": "• Media Type (MIME Type) chuẩn hóa theo RFC 6838 có dạng type/subtype.\n• Theo tiêu chuẩn IANA và RFC 8259, MIME type chính thức đại diện cho dữ liệu JSON là application/json.",
+        "whyCorrect": "• application/json là MIME Type hợp lệ và duy nhất được đăng ký chính thức với IANA cho định dạng JSON.",
+        "whyWrong": {
+          "A": "• text/json là định dạng không chuẩn (non-standard), dù một số thư viện có thể hỗ trợ nhưng không đúng chuẩn IANA.",
+          "C": "• data/json không phải là một MIME Type đăng ký hợp lệ.",
+          "D": "• json/application bị đảo ngược vị trí type và subtype, hoàn toàn sai quy chuẩn."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 49,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 49,
+      "question": "For a traditional controller-based Web API in .NET 8/9, which method call in Program.cs is essential for routing to controllers?",
+      "options": {
+        "A": "app.MapControllers();",
+        "B": "app.UseControllerRouting();",
+        "C": "app.EnableControllerSupport();",
+        "D": "app.UseStaticFiles();"
+      },
+      "answer": "A",
+      "explanation": {
+        "questionVi": "Đối với một Web API dựa trên Controller truyền thống trong .NET 8/9, lời gọi phương thức nào trong Program.cs là thiết yếu để định tuyến (routing) đến các Controller?",
+        "optionsVi": {
+          "A": "app.MapControllers();",
+          "B": "app.UseControllerRouting();",
+          "C": "app.EnableControllerSupport();",
+          "D": "app.UseStaticFiles();"
+        },
+        "answerDisplay": "A. app.MapControllers();",
+        "concept": "• Trong kiến trúc Endpoint Routing của ASP.NET Core (.NET 6+ / .NET 8 / .NET 9), app.MapControllers() được dùng để quét các Controller và ánh xạ các tuyến đường (route attributes) thành các endpoint xử lý request.\n• Đi kèm với việc đăng ký dịch vụ builder.Services.AddControllers(), app.MapControllers() là bước bắt buộc để kích hoạt Controller routing trong middleware pipeline.",
+        "whyCorrect": "• app.MapControllers() đăng ký các endpoint của controller vào cơ chế Endpoint Routing của ứng dụng ASP.NET Core.",
+        "whyWrong": {
+          "B": "• app.UseControllerRouting() không tồn tại trong ASP.NET Core (chỉ có app.UseRouting()).",
+          "C": "• app.EnableControllerSupport() không phải là một phương thức mở rộng hợp lệ trong framework.",
+          "D": "• app.UseStaticFiles() dùng để phục vụ các file tĩnh (HTML, CSS, JS, hình ảnh) từ thư mục wwwroot, không dùng cho Controller routing."
+        }
+      },
+      "source": "FA25-FE"
+    },
+    {
+      "id": 50,
+      "task": "fefa25",
+      "taskLabel": "FA25-FE",
+      "num": 50,
+      "question": "Which of the following is an example of synchronous communication between microservices?",
+      "options": {
+        "A": "One service publishes an event to a message queue, and another service subscribes to it.",
+        "B": "Service A makes a direct HTTP (e.g., REST or gRPC) call to Service B and waits for an immediate response.",
+        "C": "Service A sends an email notification.",
+        "D": "Service B processes a batch job overnight based on data from Service A."
+      },
+      "answer": "B",
+      "explanation": {
+        "questionVi": "Ví dụ nào sau đây là một giao tiếp đồng bộ (synchronous communication) giữa các microservices?",
+        "optionsVi": {
+          "A": "Một dịch vụ xuất bản một sự kiện lên hàng đợi tin nhắn (message queue) và một dịch vụ khác đăng ký nhận sự kiện đó.",
+          "B": "Dịch vụ A thực hiện một cuộc gọi HTTP (như REST hoặc gRPC) trực tiếp đến Dịch vụ B và chờ đợi phản hồi ngay lập tức.",
+          "C": "Dịch vụ A gửi một thông báo qua email.",
+          "D": "Dịch vụ B xử lý một công việc lô (batch job) qua đêm dựa trên dữ liệu từ Dịch vụ A."
+        },
+        "answerDisplay": "B. Service A makes a direct HTTP (e.g., REST or gRPC) call to Service B and waits for an immediate response.",
+        "concept": "• Giao tiếp đồng bộ (Synchronous Communication): Phía gửi (Client/Service A) gửi yêu cầu và tạm dừng (block) hoặc chờ phản hồi ngay lập tức từ phía nhận (Service B) trước khi tiếp tục thực hiện công việc khác.\n• Giao tiếp bất đồng bộ (Asynchronous Communication): Phía gửi gửi tin nhắn (thường qua Message Broker như RabbitMQ, Kafka) rồi tiếp tục xử lý công việc ngay mà không cần chờ phía nhận phản hồi.",
+        "whyCorrect": "• Đáp án B thể hiện rõ ràng giao tiếp đồng bộ: Service A gọi trực tiếp Service B qua REST hoặc gRPC và chờ kết quả trả về trước khi tiếp tục tiến trình xử lý.",
+        "whyWrong": {
+          "A": "• Đây là mô hình Event-Driven / Pub-Sub bất đồng bộ thông qua Message Queue.",
+          "C": "• Gửi email là một tác vụ nền bất đồng bộ (Fire-and-Forget / Background task).",
+          "D": "• Xử lý theo lô qua đêm (Batch processing) là hình thức xử lý ngoại tuyến (offline/asynchronous processing)."
+        }
+      },
+      "source": "FA25-FE"
+    }
+  ]
+}
