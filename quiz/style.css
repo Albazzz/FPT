@@ -1937,6 +1937,10 @@ body.modal-open {
   color: #0f766e;
   background: rgba(31, 157, 99, 0.12);
 }
+.hub-icon--prn232 {
+  color: #7c3aed;
+  background: rgba(124, 58, 237, 0.15);
+}
 .hub-tags {
   display: flex;
   flex-wrap: wrap;
