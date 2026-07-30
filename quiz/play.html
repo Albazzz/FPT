@@ -48,8 +48,8 @@
             <i class="fa-solid fa-list-ol"></i>
             <strong id="statProgress">0</strong>/<span id="statTotal">0</span>
           </span>
-          <!-- Chỉ hiện sau Master Control (StudyCloud cloud mode) -->
-          <span class="badge badge-visitors hidden" id="statVisitors" title="Số thiết bị đã vào web (Neon · chỉ Master)">
+          <!-- Chỉ hiện sau khi kết nối Cloud (StudyCloud cloud mode) -->
+          <span class="badge badge-visitors hidden" id="statVisitors" title="Số thiết bị đã vào web (Neon Cloud)">
             <i class="fa-solid fa-users" aria-hidden="true"></i>
             <strong id="statVisitorCount">—</strong> máy
             <span class="visitors-day hidden" id="statVisitorDay"></span>
@@ -255,23 +255,24 @@
     </div>
   </div>
 
-  <!-- Master Control: cloud sync -->
+  <!-- Neon Cloud: cloud sync -->
   <div id="masterModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="masterTitle" hidden>
     <div class="modal-backdrop" data-master-skip tabindex="-1"></div>
     <div class="modal-panel master-panel" role="document">
       <div class="modal-icon master-icon" aria-hidden="true"><i class="fa-solid fa-cloud"></i></div>
-      <h3 class="modal-title" id="masterTitle">Master Control</h3>
+      <h3 class="modal-title" id="masterTitle">Kết nối Neon Cloud</h3>
       <p class="modal-msg" id="masterMsg">
-        Nhập mã để <strong>lưu tiến trình trên cloud</strong> (đồng bộ nhiều máy).<br />
+        Nhập <strong>Key Neon</strong> (Database URL) để <strong>lưu tiến trình trên cloud</strong> (đồng bộ nhiều máy).<br />
         Bỏ qua = chỉ lưu trên máy này (local).
       </p>
-      <label class="master-label" for="masterCodeInput">Mã Master Control</label>
+      <label class="master-label" for="masterCodeInput">Key Neon (postgresql://...)</label>
       <input
-        type="password"
+        type="text"
         id="masterCodeInput"
         class="master-input"
-        placeholder="Nhập mã…"
-        autocomplete="current-password"
+        placeholder="Nhập Key Neon của bạn (postgresql://...)"
+        autocomplete="off"
+        spellcheck="false"
         enterkeyhint="go"
       />
       <p class="master-error hidden" id="masterError" role="alert"></p>
@@ -279,7 +280,7 @@
       <div class="modal-actions master-actions">
         <button type="button" class="btn btn-secondary" id="masterSkip">Bỏ qua (local)</button>
         <button type="button" class="btn btn-primary" id="masterLogin">
-          <i class="fa-solid fa-right-to-bracket"></i> Vào cloud
+          <i class="fa-solid fa-cloud"></i> Kết nối Cloud
         </button>
       </div>
       <button type="button" class="btn btn-ghost btn-sm master-logout hidden" id="masterLogout">

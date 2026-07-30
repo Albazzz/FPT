@@ -1129,3 +1129,91 @@ Thiếu một bên → chưa có kinh tế thị trường.
 3. **Áp dụng đồng bộ**  
    Cả 3 dòng (Là gì – Vai trò – Vì sao sai) đều dùng dấu `:`.  
    Dòng “Là gì:” phải đủ dài và có giá trị học, không được stub.
+
+   1. Thêm ví dụ mẫu đạt chuẩn cho câu kinh điển M1 KTCT (bắt buộc)
+Chèn ngay sau phần B2. M1 — Định nghĩa / bản chất một ví dụ hoàn chỉnh:
+Markdown##### ✅ Mẫu đạt (≥ 9/10) — Lao động trừu tượng tạo ra gì? (M1)
+
+| Field | Nội dung chuẩn |
+|-------|----------------|
+| **Đề** | Lao động trừu tượng tạo ra yếu tố nào? |
+| **ans** | A. Giá trị của hàng hóa |
+| `intent` | M1 – hỏi bản chất lao động trừu tượng tạo ra cái gì |
+| `concept` | Lao động trừu tượng là sự hao phí sức lao động nói chung của con người (không phân biệt hình thức cụ thể), tạo ra giá trị hàng hóa. |
+| `whyCorrect` | Theo lý thuyết giá trị lao động của Marx, chỉ lao động trừu tượng mới tạo ra giá trị (phần chung có thể so sánh được giữa các hàng hóa). Lao động cụ thể chỉ tạo giá trị sử dụng. |
+| `whyWrong[B]` | Là gì: Giá trị sử dụng là công dụng của hàng hóa thỏa mãn nhu cầu con người.<br>Vai trò: Do lao động cụ thể tạo ra.<br>Vì sao sai: Đề hỏi cái do lao động trừu tượng tạo ra, không phải lao động cụ thể. |
+| `whyWrong[C]` | Là gì: Tiền lương là giá cả của hàng hóa sức lao động.<br>Vai trò: Hình thức biểu hiện giá trị sức lao động.<br>Vì sao sai: Không phải yếu tố do lao động trừu tượng trực tiếp tạo ra. |
+| `whyWrong[D]` | Là gì: Lợi nhuận là hình thức chuyển hóa của giá trị thặng dư.<br>Vai trò: Phần giá trị do lao động thặng dư tạo ra.<br>Vì sao sai: Là kết quả của quá trình sản xuất tư bản chủ nghĩa, không phải yếu tố do lao động trừu tượng tạo ra theo nghĩa câu hỏi. |
+| `memoryTip` | Trừu tượng → Giá trị · Cụ thể → Giá trị sử dụng. |
+2. Thêm checklist cặp phạm trù KTCT kinh điển (rất nên có)
+Thêm vào cuối mục B3. Khung điền nhanh MLN hoặc sau Rule bổ sung:
+Markdown### Checklist cặp phạm trù KTCT (khi stem hỏi “tạo ra / quyết định / biểu hiện”)
+
+| Cặp | Đúng chiều | Sai chiều thường gặp |
+|-----|------------|----------------------|
+| Lao động trừu tượng ↔ Giá trị | Trừu tượng → Giá trị | Nhầm với giá trị sử dụng |
+| Lao động cụ thể ↔ Giá trị sử dụng | Cụ thể → GTSD | Nhầm với giá trị |
+| LLSX ↔ QHSX | LLSX quyết định QHSX | Đảo chiều |
+| Giá trị ↔ Giá cả | Giá trị quyết định giá cả | Nhầm giá cả quyết định giá trị |
+| Hàng hóa ↔ Tiền | Hàng hóa → Tiền (hình thức) | Nhầm tiền tạo ra hàng hóa |
+
+Khi viết whyWrong phải chỉ rõ **sai chiều** hoặc **sai đối tượng tạo ra**.
+3. Siết chặt thêm Rule “Là gì:” (để chống viết ngắn)
+Bổ sung vào Rule bổ sung bắt buộc cho whyWrong (MLN):
+Markdown4. Độ dài tối thiểu dòng “Là gì:”  
+   Phải ≥ 12–15 từ và chứa ít nhất 1 đặc trưng bản chất (không chỉ tên + “là…”).  
+   Ví dụ đạt:  
+   - “Là gì: Lao động cụ thể là lao động mang hình thức cụ thể, hữu ích, tạo ra giá trị sử dụng của hàng hóa.”  
+   Ví dụ không đạt:  
+   - “Là gì: Giá trị sử dụng của hàng hóa.”
+4. (Tùy chọn nhưng hữu ích) Thêm mục “Cấm riêng KTCT”
+Markdown### Cấm riêng khi viết MLN-KTCT
+- Không dùng câu “Phạm trù/khái niệm trong bài liên quan stem”.
+- Không viết “Không khớp bản chất/lớp hỏi của đề (cần: …)”.
+- Không để whyWrong của B/C/D giống hệt nhau chỉ đổi tên option.
+- Khi đề hỏi “tạo ra”, phải nêu rõ **ai tạo ra cái gì** trong concept và whyCorrect.
+
+### Ngoại lệ câu tính toán / mô phỏng thuần (J4 & scheduling)
+
+Khi đáp án là **số** và stem yêu cầu tính thời gian / giá trị / availability…:
+
+- **Bắt buộc**:
+  - `concept`: nêu rõ từng thành phần + công thức / constraint
+  - `whyCorrect`: lời giải từng bước (hoặc timeline/Gantt ngắn)
+
+- **whyWrong**:
+  - Được phép viết **rất ngắn** (1 dòng) hoặc thậm chí **bỏ** nếu các bước tính đã đủ làm lộ rõ lỗi của từng distractor.
+  - Chỉ giữ khi distractor tương ứng với **lỗi tính phổ biến** cần cảnh báo (ví dụ: quên overlap, dùng sai công thức series/parallel, quên chờ tài nguyên…).
+
+Ví dụ áp dụng cho câu 4 jobs CPU+print:
+- Giữ concept + timeline chi tiết trong whyCorrect
+- whyWrong bỏ qua 
+ví dụ Bảng dịch & giải thích (đã viết lại)
+Câu hỏi
+LoạiNội dungCâu gốcWhen CPU processing and printing are performed for four jobs under the conditions below, how many minutes does it take to complete them from the start of the first CPU processing until the end of the last printing? [Conditions] (1) The multiplicity of jobs is 1 during execution. (2) The CPU processing time of each job is 20 minutes. (3) 400 Mbytes of printing data are spooled for each job when the CPU processing ends. The printing function of the OS operates after spooling is completed, and printing is performed by the printer. (4) One printer is available, and the printing speed is 10 minutes per 100 Mbytes. (5) The functions of CPU processing and printing can operate in parallel, and do not affect each other. (6) The time period that is not mentioned in the conditions, such as the time required for spooling, can be ignored.Dịch (VI)Khi xử lý CPU và in được thực hiện cho bốn job theo các điều kiện dưới đây, mất bao nhiêu phút để hoàn thành từ lúc bắt đầu xử lý CPU của job đầu đến khi in xong job cuối? [Điều kiện] (1) Độ đa nhiệm job là 1 khi thực thi. (2) Thời gian xử lý CPU mỗi job là 20 phút. (3) 400 Mbyte dữ liệu in được spool cho mỗi job khi xử lý CPU kết thúc. Chức năng in của OS chạy sau khi spool xong và in bằng máy in. (4) Có một máy in, tốc độ in 10 phút cho mỗi 100 Mbyte. (5) Xử lý CPU và in có thể chạy song song, không ảnh hưởng lẫn nhau. (6) Các khoảng thời gian không nêu trong điều kiện (ví dụ thời gian spool) có thể bỏ qua.
+Các lựa chọn
+MãGốcBản dịch VIGhi chúA160160B120120C180180ĐÁP ÁN ĐÚNGD240240
+Đáp án
+C. 180
+Ý chính của câu hỏi
+J1 — Lịch trình CPU + in (multiplicity = 1, 1 printer)
+Giải thích đáp án đúng
+Đây là gì?
+Tính thời điểm kết thúc in của job cuối.
+
+Multiplicity = 1 → CPU chạy tuần tự từng job.
+Chỉ có 1 máy in → các lệnh in phải xếp hàng.
+CPU và in chạy song song được.
+Mỗi job: CPU = 20 phút, in = 40 phút (400 MB).
+
+Vì sao đúng?
+Timeline:
+
+0–20: CPU Job1 → bắt đầu in Job1 (20–60)
+20–40: CPU Job2 → Job2 sẵn sàng in lúc 40, nhưng máy in bận đến 60 → in Job2 (60–100)
+40–60: CPU Job3 → in Job3 (100–140)
+60–80: CPU Job4 → in Job4 (140–180)
+
+→ Kết thúc lúc 180 phút.
+Mẹo nhớ
+Vẽ timeline CPU ∥ printer. Không cộng mù 4×(20+40). 

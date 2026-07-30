@@ -7,17 +7,25 @@
   "use strict";
 
   const CFG = global.STUDY_CLOUD || global.MLN_CLOUD || {};
-  const MASTER_CODE = String(CFG.MASTER_CODE || "Namcong9@");
-  const DATABASE_URL = String(CFG.DATABASE_URL || "");
+  const NEON_KEY_STORAGE = "study-cloud-neon-key-v1";
   const FLAG_KEY = "study-cloud-mode-v1";
   const DEVICE_KEY = "study-cloud-device-id-v1";
   const VISIT_PING_KEY = "study-cloud-visit-ping-v1";
   /** Throttle ghi visit (ms) — tránh spam mỗi lần đổi tab/reload liên tục */
   const VISIT_PING_TTL_MS = 30 * 60 * 1000;
 
+  function getDatabaseUrl() {
+    try {
+      const saved = localStorage.getItem(NEON_KEY_STORAGE);
+      if (saved && saved.trim()) return saved.trim();
+    } catch (e) {}
+    return String(CFG.DATABASE_URL || "").trim();
+  }
+
   let mode = "local"; // local | cloud
   let sql = null;
   let sqlReady = null;
+  let currentActiveUrl = null;
   let schemaOk = false;
   let saveTimer = null;
   let subjectId = "default";
@@ -33,7 +41,7 @@
   let saving = false;
 
   function cloudConfigured() {
-    return Boolean(DATABASE_URL && MASTER_CODE);
+    return Boolean(getDatabaseUrl());
   }
 
   function isCloud() {
@@ -76,12 +84,14 @@
     });
   }
 
-  async function getSql() {
-    if (!DATABASE_URL) throw new Error("Thiếu DATABASE_URL trong cloud-config.js");
-    // Always re-ensure schema if previous run failed mid-way
-    if (sql && schemaOk) return sql;
+  async function getSql(targetUrl) {
+    const activeUrl = targetUrl || getDatabaseUrl();
+    if (!activeUrl) throw new Error("Thiếu Key Neon / Database URL (postgresql://...)");
 
-    if (!sqlReady) {
+    if (sql && schemaOk && currentActiveUrl === activeUrl) return sql;
+
+    if (!sqlReady || currentActiveUrl !== activeUrl) {
+      currentActiveUrl = activeUrl;
       sqlReady = (async () => {
         try {
           // Prefer esm.sh; fallback jsdelivr
@@ -105,7 +115,7 @@
           if (typeof neon !== "function") {
             throw new Error("Không load được Neon driver (neon is not a function)");
           }
-          const client = neon(DATABASE_URL, { fullResults: false });
+          const client = neon(activeUrl, { fullResults: false });
           await withTimeout(ensureSchema(client), 15000, "Tạo schema Neon");
           sql = client;
           schemaOk = true;
@@ -114,6 +124,7 @@
           sqlReady = null;
           schemaOk = false;
           sql = null;
+          currentActiveUrl = null;
           throw e;
         }
       })();
@@ -672,17 +683,17 @@
     wrap.innerHTML = `
       <div class="sc-backdrop" data-sc-skip></div>
       <div class="sc-panel" role="dialog" aria-modal="true">
-        <h3>Master Control</h3>
-        <p>Nhập mã để lưu tiến trình <strong>Neon cloud</strong> (đồng bộ nhiều máy).<br/>Bỏ qua = chỉ local trên máy này.</p>
-        <label for="studyCloudCode">Mã Master Control</label>
-        <input type="password" id="studyCloudCode" placeholder="Nhập mã…" autocomplete="current-password" />
+        <h3><i class="fa-solid fa-cloud"></i> Kết nối Neon Cloud</h3>
+        <p>Nhập <strong>Key Neon</strong> (Database URL) của bạn để đồng bộ tiến trình học trên Cloud.<br/>Bỏ qua = chỉ lưu trên máy này (Local).</p>
+        <label for="studyCloudCode">Key Neon (postgresql://...)</label>
+        <input type="text" id="studyCloudCode" placeholder="Nhập Key Neon của bạn (postgresql://...)" autocomplete="off" spellcheck="false" />
         <p class="sc-err hidden" id="studyCloudErr"></p>
         <p class="sc-status hidden" id="studyCloudStatus"></p>
         <div class="sc-actions">
-          <button type="button" id="studyCloudSkip">Bỏ qua (local)</button>
-          <button type="button" class="sc-primary" id="studyCloudLogin">Vào cloud</button>
+          <button type="button" id="studyCloudSkip">Bỏ qua (Local)</button>
+          <button type="button" class="sc-primary" id="studyCloudLogin">Kết nối Cloud</button>
         </div>
-        <button type="button" class="sc-logout hidden" id="studyCloudLogout">Thoát cloud → local</button>
+        <button type="button" class="sc-logout hidden" id="studyCloudLogout">Thoát Cloud → Local</button>
       </div>`;
     document.body.appendChild(wrap);
 
@@ -716,7 +727,9 @@
     if (st) st.classList.add("hidden");
     if (lo) lo.classList.toggle("hidden", mode !== "cloud");
     const input = document.getElementById("studyCloudCode");
-    if (input) input.value = "";
+    if (input) {
+      input.value = getDatabaseUrl();
+    }
     document.getElementById("studyCloudModal").classList.remove("hidden");
     document.body.classList.add("sc-modal-open");
     setTimeout(() => input && input.focus(), 40);
@@ -728,36 +741,35 @@
     document.body.classList.remove("sc-modal-open");
   }
 
-  async function tryLogin() {
+  async function tryLogin(customKey) {
     ensureModal();
     const err = document.getElementById("studyCloudErr");
     const st = document.getElementById("studyCloudStatus");
-    const code = (document.getElementById("studyCloudCode") || {}).value || "";
+    const inputEl = document.getElementById("studyCloudCode");
+    const rawVal = customKey !== undefined ? customKey : (inputEl ? inputEl.value : "");
+    const activeKey = String(rawVal || "").trim();
+
     const showErr = (msg) => {
       if (!err) return;
       err.textContent = msg;
       err.classList.remove("hidden");
     };
-    if (!cloudConfigured()) {
-      showErr("Thiếu cloud-config (DATABASE_URL / MASTER_CODE)");
+
+    if (!activeKey) {
+      showErr("Vui lòng nhập Key Neon (postgresql://...) của bạn.");
       return;
     }
-    if (!code.trim()) {
-      showErr("Nhập mã Master Control.");
-      return;
-    }
-    if (code.trim() !== MASTER_CODE) {
-      showErr("Mã không đúng.");
-      return;
-    }
+
     if (st) {
-      st.textContent = "Đang kết nối Neon…";
+      st.textContent = "Đang kiểm tra kết nối Neon…";
       st.classList.remove("hidden");
     }
+
     try {
-      await getSql();
+      await getSql(activeKey);
       mode = "cloud";
       try {
+        localStorage.setItem(NEON_KEY_STORAGE, activeKey);
         localStorage.setItem(FLAG_KEY, "1");
       } catch (e) {}
       updateBadge("is-syncing", "Đang tải…");
@@ -767,11 +779,10 @@
       if (setDataFn) setDataFn(data || {});
       if (onAfterLoad) onAfterLoad(data || {});
       updateBadge("is-cloud", "Cloud");
-      // Master: ghi visit + hiện số thiết bị trên nav
       recordVisit(subjectId).finally(function () {
         refreshVisitorBadge();
       });
-      toast("Cloud: đồng bộ Neon (+ mirror local để F5 không mất điểm).");
+      toast("Cloud: Đã kết nối Neon (Key hợp lệ).");
       closeModal();
     } catch (e) {
       console.error(e);
@@ -782,8 +793,8 @@
       const msg = e.message || "Kết nối thất bại";
       showErr(
         /cors|failed to fetch|network|timeout/i.test(msg)
-          ? msg + " — thử lại hoặc dùng local"
-          : msg
+          ? msg + " — thử lại hoặc dùng Local"
+          : "Lỗi kết nối Neon: " + msg
       );
       if (st) st.classList.add("hidden");
     }
@@ -795,6 +806,7 @@
     lastKnownSavedAt = 0;
     try {
       localStorage.removeItem(FLAG_KEY);
+      localStorage.removeItem(NEON_KEY_STORAGE);
     } catch (e) {}
     updateBadge("", "Local");
     setVisitorsBadgeVisible(false);
@@ -928,6 +940,6 @@
     recordVisit,
     refreshVisitorBadge,
     fetchVisitorStats,
-    MASTER_CODE,
+    getDatabaseUrl,
   };
 })(window);

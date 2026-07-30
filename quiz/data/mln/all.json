@@ -147,8 +147,8 @@
         },
         "answerDisplay": "B. Thúc đẩy các quan hệ sản xuất mới ra đời",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất. Mối quan hệ LLSX – QHSX và chế độ sở hữu.\n• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
-        "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
+        "intent": "• Kiểm tra kiến thức kinh tế chính trị Mác - Lênin.",
         "whatIs": {
           "A": "Thúc đẩy sự phát triển của lực lượng sản xuất",
           "B": "Thúc đẩy các quan hệ sản xuất mới ra đời",
@@ -2308,7 +2308,7 @@
         },
         "answerDisplay": "C. Các phương án trả lời đều đúng",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin. Cơ chế thị trường, cạnh tranh và quan hệ cung–cầu trong nền kinh tế hàng hóa.\n• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
         "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
         "whatIs": {
           "A": "Giá trị là cơ sở của giá cả, là yếu tố quyết định giá cả, giá cả là hình thức biểu hiện bằng tiền của giá trị",
@@ -3721,7 +3721,7 @@
         },
         "answerDisplay": "A. Có ảnh hưởng tới giá cả thị trường",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin. Cơ chế thị trường, cạnh tranh và quan hệ cung–cầu trong nền kinh tế hàng hóa.\n• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
         "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
         "whatIs": {
           "A": "Có ảnh hưởng tới giá cả thị trường",
@@ -5255,8 +5255,8 @@
         },
         "answerDisplay": "D. Các quan hệ xã hội của sản xuất và trao đổi",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).\n• Mối quan hệ LLSX – QHSX và chế độ sở hữu. Ghi chú đề: (Giải thích: Đối tượng nghiên cứu của kinh tế chính trị Mác – Lênin các quan hệ sản xuất và trao đổi trong mối quan hệ biện chứngvới lực lượng sản xuất và kiến trúc thượng tầng.)",
-        "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
+        "intent": "• Kiểm tra kiến thức kinh tế chính trị Mác - Lênin.",
         "whatIs": {
           "A": "Những biểu hiện vật chất của lực lượng sản xuất",
           "B": "Các quan hệ giữa cơ sở hạ tầng và kiến trúc thượng tầng",
@@ -5275,7 +5275,7 @@
       "task": "all",
       "taskLabel": "MLN",
       "num": 134,
-      "question": "(Giải thích: Đối tượng nghiên cứu của kinh tế chính trị Mác – Lênin các quan hệ sản xuất và trao đổi trong mối quan hệ biện chứngvới lực lượng sản xuất và kiến trúc thượng tầng.) Đối tượng nghiên cứu của kinh tế chính trị Mác - Lênin là gì?",
+      "question": "Đối tượng nghiên cứu của kinh tế chính trị Mác - Lênin là gì?",
       "options": {
         "A": "Nghiên cứu các quan hệ sản xuất trong các khâu của quá trình tái sản xuất xã hội: sản xuất -phân phối - trao đối -tiêu dùng",
         "B": "Nghiên cứu các quan hệ sản xuất trong các khâu của quá trình tái sản xuất xã hội: sản xuất- trao đối - phân phối -tiêu dùng",
@@ -5285,7 +5285,7 @@
       "answer": "A",
       "alternatives": [],
       "explanation": {
-        "questionVi": "(Giải thích: Đối tượng nghiên cứu của kinh tế chính trị Mác – Lênin các quan hệ sản xuất và trao đổi trong mối quan hệ biện chứngvới lực lượng sản xuất và kiến trúc thượng tầng.) Đối tượng nghiên cứu của kinh tế chính trị Mác - Lênin là gì?",
+        "questionVi": "Đối tượng nghiên cứu của kinh tế chính trị Mác - Lênin là gì?",
         "optionsVi": {
           "A": "Nghiên cứu các quan hệ sản xuất trong các khâu củ quá trình tái sản xuất xã hội: sản xuất -phân phối - trao đối -tiêu dùng",
           "B": "Nghiên cứu các quan hệ sản xuất trong các khâu củ quá trình tái sản xuất xã hội: sản xuất- trao đối - phân phối -tiêu dùng",
@@ -5294,8 +5294,8 @@
         },
         "answerDisplay": "A. Nghiên cứu các quan hệ sản xuất trong các khâu củ quá trình tái sản xuất xã hội: sản xuất -phân phối - trao đối -tiêu dùng",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
-        "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
+        "intent": "• Kiểm tra kiến thức kinh tế chính trị Mác - Lênin.",
         "whatIs": {
           "A": "Nghiên cứu các quan hệ sản xuất trong các khâu của quá trình tái sản xuất xã hội: sản xuất -phân …",
           "B": "Nghiên cứu các quan hệ sản xuất trong các khâu của quá trình tái sản xuất xã hội: sản xuất- trao đối - phân phối -tiêu dùng",
@@ -5355,7 +5355,7 @@
       "task": "all",
       "taskLabel": "MLN",
       "num": 136,
-      "question": "Chức năng khoa học",
+      "question": "Đâu KHÔNG phải là chức năng chính của kinh tế chính trị Mác - Lênin?",
       "options": {
         "A": "Chức năng phương pháp luận",
         "B": "Chức năng tư tưởng",
@@ -5366,7 +5366,7 @@
       "alternatives": [],
       "variantOfStem": "Đâu KHÔNG phải là chức năng chính của kinh tế chính trị Mác - Lênin?",
       "explanation": {
-        "questionVi": "Chức năng khoa học",
+        "questionVi": "Đâu KHÔNG phải là chức năng chính của kinh tế chính trị Mác - Lênin?",
         "optionsVi": {
           "A": "Chức năng phương pháp luận",
           "B": "Chức năng tư tưởng",
@@ -5965,8 +5965,8 @@
         },
         "answerDisplay": "A. Các quan hệ củ sản xuất và trao đổi trong phương thức sản xuất mà các quan hệ đó hình thành và phát triển",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
-        "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
+        "intent": "• Kiểm tra kiến thức kinh tế chính trị Mác - Lênin.",
         "whatIs": {
           "A": "Các quan hệ của sản xuất và trao đổi trong phương thức sản xuất mà các quan hệ đó hình thành và p…",
           "B": "Quá trình sản xuất, phân phối, trao đổi, tiêu dùng",
@@ -10762,7 +10762,7 @@
         },
         "answerDisplay": "A. Không phụ thuộc vào cường độ lao động",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin.\n• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
         "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
         "whatIs": {
           "A": "Không phụ thuộc vào cường độ lao động",
@@ -12423,8 +12423,8 @@
         },
         "answerDisplay": "B. Là hao phí lao động kết tinh trong hàng hóa",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin.\n• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
-        "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
+        "intent": "• Kiểm tra kiến thức kinh tế chính trị Mác - Lênin.",
         "whatIs": {
           "A": "Là công dụng của hàng hóa",
           "B": "Là hao phí lao động kết tinh trong hàng hóa",
@@ -14435,7 +14435,7 @@
         },
         "answerDisplay": "C. Ti lệ thuận với tổng giá cả hàng hóa đưa ra thị trường và ti lệ nghịch với tốc độ lưu thông tiền tệ",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin. Cơ chế thị trường, cạnh tranh và quan hệ cung–cầu trong nền kinh tế hàng hóa.\n• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
         "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
         "whatIs": {
           "A": "Ti lệ thuận với tổng giá cà hàng hóa đưa ra thị trưởng và tốc độ lưu thông tiên tệ",
@@ -15695,8 +15695,8 @@
         },
         "answerDisplay": "A. Nhằm phát hiện ra các quy luật chi phối quan hệ giữa người và người trong sản xuất và trao đổi",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin.\n• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
-        "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
+        "intent": "• Kiểm tra kiến thức kinh tế chính trị Mác - Lênin.",
         "whatIs": {
           "A": "Nhằm phát hiện ra các quy luật chi phối quan hệ giữa người và người trong sản xuất và trao đổi",
           "B": "Nhằm phát hiện ra các quy luật chi phối quan hệ giữa người và xã hội trong sản xuất và trao đổi",
@@ -17533,8 +17533,8 @@
         },
         "answerDisplay": "A. Chủ nghĩa tư bản không tồn tại vĩnh viễn",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin. Mối quan hệ LLSX – QHSX và chế độ sở hữu.\n• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
-        "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
+        "intent": "• Kiểm tra kiến thức kinh tế chính trị Mác - Lênin.",
         "whatIs": {
           "A": "Chủ nghĩa tư bản không tồn tại vĩnh viễn",
           "B": "Chủ nghĩa tư bản tiếp tục phát triển đến đỉnh cao",
@@ -19160,7 +19160,7 @@
         },
         "answerDisplay": "A. Từ trung gian thanh án trở thành khống chế mọi hoạt động kinh tế - xã hội",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Liên quan hình thức tổ chức độc quyền (Cartel → Syndicate → Trust → Consortium) và cạnh tranh trong CNTB độc quyền. Vai trò nhà nước trong điều tiết kinh tế thị trường định hướng XHCN.\n• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
         "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
         "whatIs": {
           "A": "Từ trung gian thanh toán trở thành khống chế mọi hoạt động kinh tế - xã hội",

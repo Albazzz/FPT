@@ -256,7 +256,7 @@
       "task": "fuexam",
       "taskLabel": "Đề FE",
       "num": 533,
-      "question": "Quá trình sản xuất giá trị thông dư là sự thống nhất giữa các yếu tố nào sau đây?",
+      "question": "Quá trình sản xuất giá trị thặng dư là sự thống nhất giữa các yếu tố nào sau đây?",
       "options": {
         "A": "Quá trình tạo ra giá trị mới",
         "B": "Làm tăng giá trị",
@@ -268,7 +268,7 @@
       "source": "fuexam",
       "exam": "MLN122_SP26_B5_FE",
       "explanation": {
-        "questionVi": "Quá trình sản xuất giá trị thông dư là sự thống nhất giữa các yếu tố nào sau đây?",
+        "questionVi": "Quá trình sản xuất giá trị thặng dư là sự thống nhất giữa các yếu tố nào sau đây?",
         "optionsVi": {
           "A": "Quá trình tạo ra giá trị mới",
           "B": "Làm tăng giá trị",
@@ -422,7 +422,7 @@
       "task": "fuexam",
       "taskLabel": "Đề FE",
       "num": 538,
-      "question": "Tiên có mấy chức năng?",
+      "question": "Tiền có mấy chức năng?",
       "options": {
         "A": "3",
         "B": "4",
@@ -434,7 +434,7 @@
       "source": "fuexam",
       "exam": "MLN122_SP26_B5_FE",
       "explanation": {
-        "questionVi": "Tiên có mấy chức năng?",
+        "questionVi": "Tiền có mấy chức năng?",
         "optionsVi": {
           "A": "3",
           "B": "4",
@@ -631,24 +631,24 @@
       "task": "fuexam",
       "taskLabel": "Đề FE",
       "num": 543,
-      "question": "Cơ chế thị trường được Adam Smith vị như",
+      "question": "Cơ chế thị trường được Adam Smith ví như",
       "options": {
         "A": "Bàn tay vô hình",
         "B": "Bóng ma vô hình",
         "C": "Con đĩa hai với",
-        "D": "Nam châm hại cực"
+        "D": "Nam châm hai cực"
       },
       "answer": "A",
       "alternatives": [],
       "source": "fuexam",
       "exam": "MLN122_SP26_B5_FE",
       "explanation": {
-        "questionVi": "Cơ chế thị trường được Adam Smith vị như",
+        "questionVi": "Cơ chế thị trường được Adam Smith ví như",
         "optionsVi": {
           "A": "Bàn tay vô hình",
           "B": "Bóng ma vô hình",
           "C": "Con đĩa hai với",
-          "D": "Nam châm hại cực"
+          "D": "Nam châm hai cực"
         },
         "answerDisplay": "A. Bàn tay vô hình",
         "concept": "• Bàn tay vô hình — định nghĩa/kết luận giáo trình khớp stem.",
@@ -673,11 +673,11 @@
       "task": "fuexam",
       "taskLabel": "Đề FE",
       "num": 544,
-      "question": "Hai phương pháp sản xuất giá trị thông dư là",
+      "question": "Hai phương pháp sản xuất giá trị thặng dư là",
       "options": {
-        "A": "Sản xuất giá trị thầng dư tương đối và siêu ngạch",
-        "B": "Sản xuất giả trị thông du tuyệt đối và tương đối",
-        "C": "Sản xuất giá trị thặng dư tuyệt đối và siêu nghạch",
+        "A": "Sản xuất giá trị thặng dư tương đối và siêu ngạch",
+        "B": "Sản xuất giá trị thặng dư tuyệt đối và tương đối",
+        "C": "Sản xuất giá trị thặng dư tuyệt đối và siêu ngạch",
         "D": "Sản xuất giá trị thặng dư trung bình"
       },
       "answer": "B",
@@ -685,11 +685,11 @@
       "source": "fuexam",
       "exam": "MLN122_SP26_B5_FE",
       "explanation": {
-        "questionVi": "Hai phương pháp sản xuất giá trị thông dư là",
+        "questionVi": "Hai phương pháp sản xuất giá trị thặng dư là",
         "optionsVi": {
-          "A": "Sản xuất giá trị thầng dư tương đối và siêu ngạch",
-          "B": "Sản xuất giả trị thông du tuyệt đối và tương đối",
-          "C": "Sản xuất giá trị thặng dư tuyệt đối và siêu nghạch",
+          "A": "Sản xuất giá trị thặng dư tương đối và siêu ngạch",
+          "B": "Sản xuất giá trị thặng dư tuyệt đối và tương đối",
+          "C": "Sản xuất giá trị thặng dư tuyệt đối và siêu ngạch",
           "D": "Sản xuất giá trị thặng dư trung bình"
         },
         "answerDisplay": "B. Sản xuất giả trị thông du tuyệt đối và tương đối",
@@ -757,7 +757,7 @@
       "task": "fuexam",
       "taskLabel": "Đề FE",
       "num": 546,
-      "question": "Người phát minh ra con thoi - một cải tiến của khung dệt và là một đồng góp quan trọng cho cách mạng công nghiệp lần thứ nhất là",
+      "question": "Người phát minh ra con thoi - một cải tiến của khung dệt và là một đóng góp quan trọng cho cách mạng công nghiệp lần thứ nhất là",
       "options": {
         "A": "John Kay (1704-1779)",
         "B": "Richard Arkwright (1732-1792)",
@@ -769,7 +769,7 @@
       "source": "fuexam",
       "exam": "MLN122_SP26_B5_FE",
       "explanation": {
-        "questionVi": "Người phát minh ra con thoi - một cải tiến của khung dệt và là một đồng góp quan trọng cho cách mạng công nghiệp lần thứ nhất là",
+        "questionVi": "Người phát minh ra con thoi - một cải tiến của khung dệt và là một đóng góp quan trọng cho cách mạng công nghiệp lần thứ nhất là",
         "optionsVi": {
           "A": "John Kay (1704-1779)",
           "B": "Richard Arkwright (1732-1792)",
@@ -1134,7 +1134,7 @@
       "num": 557,
       "question": "Đối tượng nghiên cứu của Kinh tế chính trị Mác - Lênin là",
       "options": {
-        "A": "Các quan hệ của sản xuất và trao đổi trong phương thức sản xuất mà các quan hệ đồ hình thành và phát triên",
+        "A": "Các quan hệ của sản xuất và trao đổi trong phương thức sản xuất mà các quan hệ đó hình thành và phát triển",
         "B": "Quá trình sản xuất, phân phối trao đổi, tiêu dùng",
         "C": "Quan hệ xã hội giữa người với người",
         "D": "Quan hệ sản xuất trong mối quan hệ tác động qua lại giữa lực lượng sản xuất"
@@ -1146,15 +1146,15 @@
       "explanation": {
         "questionVi": "Đối tượng nghiên cứu của Kinh tế chính trị Mác - Lênin là",
         "optionsVi": {
-          "A": "Các quan hệ củ sản xuất và trao đổi trong phương thức sản xuất mà các quan hệ đồ hình thành và phát triên",
+          "A": "Các quan hệ của sản xuất và trao đổi trong phương thức sản xuất mà các quan hệ đó hình thành và phát triển",
           "B": "Quá trình sản xuất, phân phối trao đổi, tiêu dùng",
           "C": "Quan hệ xã hội giữa người với người",
           "D": "Quan hệ sản xuất trong mối quan hệ tác động qua lại giữa lực lượng sản xuất"
         },
         "answerDisplay": "D. Quan hệ sản xuất trong mối quan hệ tác động qua lại giữa lực lượng sản xuất",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
-        "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
+        "intent": "• Kiểm tra kiến thức kinh tế chính trị Mác - Lênin.",
         "whatIs": {
           "A": "Các quan hệ của sản xuất và trao đổi trong phương thức sản xuất mà các quan hệ đồ hình thành và phát triên",
           "B": "Quá trình sản xuất, phân phối trao đổi, tiêu dùng",
@@ -1218,9 +1218,9 @@
       "question": "Nhận định \"tự do cạnh tranh đẻ ra tập trung sản xuất và sự tập trung sản xuất này, phát triển tới một mức độ nhất định, lại dẫn tới độc quyền\" là của ai?",
       "options": {
         "A": "C. Mác",
-        "B": "Ph Angghen",
-        "C": "VI Lênin",
-        "D": "Staline"
+        "B": "Ph. Ăng-ghen",
+        "C": "V.I. Lênin",
+        "D": "Stalin"
       },
       "answer": "C",
       "alternatives": [],
@@ -1230,9 +1230,9 @@
         "questionVi": "Nhận định \"tự do cạnh tranh đẻ ra tập trung sản xuất và sự tập trung sản xuất này, phát triển tới một mức độ nhất định, lại dẫn tới độc quyền\" là của ai?",
         "optionsVi": {
           "A": "C. Mác",
-          "B": "Ph Angghen",
-          "C": "VI Lênin",
-          "D": "Staline"
+          "B": "Ph. Ăng-ghen",
+          "C": "V.I. Lênin",
+          "D": "Stalin"
         },
         "answerDisplay": "C. VI Lênin",
         "concept": "• Kết luận gắn đúng tác giả/văn kiện: VI Lênin.",
@@ -1403,7 +1403,7 @@
         },
         "answerDisplay": "A. Không phụ thuộc vào cường độ lao động",
         "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
-        "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin.\n• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Lưu và truy vấn dữ liệu quan hệ (SQL).",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
         "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
         "whatIs": {
           "A": "Không phụ thuộc vào cường độ lao động",
@@ -1966,9 +1966,9 @@
       "task": "fuexam",
       "taskLabel": "Đề FE",
       "num": 580,
-      "question": "(Chọn hai đáp án) Theo",
+      "question": "Theo A. Smith, kinh tế chính trị là một ngành khoa học gắn với chính khách hay nhà lập pháp với những mục tiêu nào? (Chọn hai đáp án)",
       "options": {
-        "A": "Smith kinh tế chính trị là một ngành khoa học gần với chính khách hay nhà lập pháp gần với những mục tiêu nào?A. Tạo ra nguồn thu nhập dồi dào và sinh kế phong phú cho người dân",
+        "A": "Tạo ra nguồn thu nhập dồi dào và sinh kế phong phú cho người dân",
         "B": "Tạo ra khả năng có được nguồn ngân sách đầy đủ cho nhà nước để thực hiện nhiệm vụ công",
         "C": "Tạo ra những giá trị kinh tế mới giúp tăng trưởng kinh tế và tiến bộ công bằng xã hội",
         "D": "Tạo ra khả năng có được ai cũng có đầy đủ những phúc lợi xã hội cần thiết"
@@ -1978,16 +1978,16 @@
       "source": "fuexam",
       "exam": "MLN122_SP26_B5_FE_RE",
       "explanation": {
-        "questionVi": "(Chọn hai đáp án) Theo",
+        "questionVi": "Theo A. Smith, kinh tế chính trị là một ngành khoa học gắn với chính khách hay nhà lập pháp với những mục tiêu nào? (Chọn hai đáp án)",
         "optionsVi": {
-          "A": "Smith kinh tế chính trị là một ngành khoa học gần với chính khách hay nhà lập pháp gần với những mục tiêu nào?. Tạo ra nguồn thu nhập dồi dào và sinh kế phong phú cho người dân",
+          "A": "Tạo ra nguồn thu nhập dồi dào và sinh kế phong phú cho người dân",
           "B": "Tạo ra khả năng có được nguồn ngân sách đầy đủ cho nhà nước để thực hiện nhiệm vụ công",
           "C": "Tạo ra những giá trị kinh tế mới giúp tăng trưởng kinh tế và tiến bộ công bằng xã hội",
           "D": "Tạo ra khả năng có được ai cũng có đầy đủ những phúc lợi xã hội cần thiết"
         },
-        "answerDisplay": "A. Smith kinh tế chính trị là một ngành khoa học gần với chính khách hay nhà lập pháp gần với những mục tiêu nào?. Tạo ra nguồn thu nhập dồi dào và sinh kế phong phú cho người dân · B. Tạo ra khả năng có được nguồn ngân sách đầy đủ cho nhà nước để thực hiện nhiệm vụ công",
-        "concept": "• Nhà nước: công cụ thống trị giai cấp, bảo vệ QHSX thống trị — Smith kinh tế chính trị là một ngành khoa học gần với chính khách hay nhà lập p….",
-        "whyCorrect": "• Câu chọn nhiều: đủ các ý đúng, không thừa ý sai.\n• Các đáp án: Smith kinh tế chính trị là một ngành khoa học gần với chính khách hay nhà lập pháp gần với những mục tiêu nào?A. Tạo ra nguồn thu nhập dồi dào và sinh kế phong phú cho người dân · Tạo ra khả năng có được nguồn ngân sách đầy đủ cho nhà nước để thực hiện nhiệm vụ công.",
+        "answerDisplay": "A. Tạo ra nguồn thu nhập dồi dào và sinh kế phong phú cho người dân · B. Tạo ra khả năng có được nguồn ngân sách đầy đủ cho nhà nước để thực hiện nhiệm vụ công",
+        "concept": "• Theo Adam Smith, kinh tế chính trị có hai mục tiêu chính: tạo thu nhập dồi dào cho người dân và cung cấp ngân sách đầy đủ cho nhà nước.",
+        "whyCorrect": "• Adam Smith nêu rõ 2 mục tiêu: (1) tạo sinh kế/thu nhập cho người dân, (2) cung cấp ngân sách cho nhà nước thực hiện nhiệm vụ công.",
         "intent": "• M8 — multi-select\n• (Chọn hai đáp án) Theo",
         "whatIs": {
           "A": "Smith kinh tế chính trị là một ngành khoa học gần với chính khách hay nhà lập pháp gần với những mục tiêu nào?A. Tạo ra nguồn thu nhập dồi dào và sinh kế phong phú cho người dân",
