@@ -1,0 +1,2034 @@
+[
+  {
+    "remoteIndex": 57,
+    "remoteId": 58,
+    "num": 58,
+    "answer": "B",
+    "question": "What does Curves/Animation provide?",
+    "options": {
+      "A": "Layout control",
+      "B": "Animation curve behavior",
+      "C": "State updates",
+      "D": "Navigation"
+    },
+    "source": "fuexam_image",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 98,
+    "remoteId": 99,
+    "num": 99,
+    "answer": "A",
+    "question": "According to Flutter architecture overview, which three layers are described?",
+    "options": {
+      "A": "Framework (Dart), Engine (C++), Embedder",
+      "B": "HTML, CSS, JavaScript only",
+      "C": "JVM, ART, Dalvik only",
+      "D": "Kernel, Shell, Desktop only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 99,
+    "remoteId": 100,
+    "num": 100,
+    "answer": "B",
+    "question": "What is the correct high-level rendering workflow in Flutter?",
+    "options": {
+      "A": "GPU → Widget Tree → SQL → Disk",
+      "B": "Widget Tree → Render Tree → Composited Scene → GPU Rendering",
+      "C": "XML Layout → Bridge → Native View only",
+      "D": "CSS DOM → Browser → Print only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 100,
+    "remoteId": 101,
+    "num": 101,
+    "answer": "C",
+    "question": "Which statement matches a key concept of Flutter UI?",
+    "options": {
+      "A": "Everything must be written in Kotlin",
+      "B": "UI is defined only with HTML files",
+      "C": "Everything in Flutter is a Widget",
+      "D": "Flutter cannot draw custom UI"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 101,
+    "remoteId": 102,
+    "num": 102,
+    "answer": "B",
+    "question": "Which engine technology does Flutter use for rendering (as mentioned in slides)?",
+    "options": {
+      "A": "WebKit only",
+      "B": "Skia (C++ engine, GPU acceleration)",
+      "C": "OpenGL ES exclusive without Skia",
+      "D": "Swing toolkit"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 102,
+    "remoteId": 103,
+    "num": 103,
+    "answer": "A",
+    "question": "Compared with React Native in the comparison table, Flutter uses which language?",
+    "options": {
+      "A": "Dart",
+      "B": "JavaScript only",
+      "C": "Ruby",
+      "D": "PHP"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 103,
+    "remoteId": 104,
+    "num": 104,
+    "answer": "B",
+    "question": "What is a main benefit of Flutter listed in the introduction slides?",
+    "options": {
+      "A": "Must rewrite UI for every OS with different languages only",
+      "B": "Consistency: same UI across devices (plus performance/flexibility)",
+      "C": "Cannot compile to ARM",
+      "D": "No widget set available"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 104,
+    "remoteId": 105,
+    "num": 105,
+    "answer": "C",
+    "question": "Which command verifies Flutter SDK installation after adding PATH?",
+    "options": {
+      "A": "npm doctor",
+      "B": "pip check",
+      "C": "flutter doctor",
+      "D": "adb uninstall"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 105,
+    "remoteId": 106,
+    "num": 106,
+    "answer": "A",
+    "question": "What is DartPad mainly useful for according to the slides?",
+    "options": {
+      "A": "Run Flutter/Dart code in browser without local install",
+      "B": "Deploy apps to App Store automatically",
+      "C": "Compile C++ engine source",
+      "D": "Manage Android signing keys only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 106,
+    "remoteId": 107,
+    "num": 107,
+    "answer": "B",
+    "question": "When installing Android Studio for Flutter, which plugin is required?",
+    "options": {
+      "A": "Only Python plugin",
+      "B": "Flutter plugin (Dart plugin installs with it)",
+      "C": "Only COBOL plugin",
+      "D": "Only Photoshop plugin"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 107,
+    "remoteId": 108,
+    "num": 108,
+    "answer": "C",
+    "question": "Dart in Flutter is described as supporting which compilation modes?",
+    "options": {
+      "A": "Only interpreted BASIC",
+      "B": "Only COBOL batch",
+      "C": "AOT and JIT compilation",
+      "D": "Only assembly hand-writing"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 108,
+    "remoteId": 109,
+    "num": 109,
+    "answer": "B",
+    "question": "Which collection type stores ordered elements that may contain duplicates?",
+    "options": {
+      "A": "Set",
+      "B": "List",
+      "C": "Map only without order",
+      "D": "Hash without values"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 109,
+    "remoteId": 110,
+    "num": 110,
+    "answer": "A",
+    "question": "Which collection stores unique values only?",
+    "options": {
+      "A": "Set",
+      "B": "List always allowing duplicates only",
+      "C": "String buffer only",
+      "D": "StreamController only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 110,
+    "remoteId": 111,
+    "num": 111,
+    "answer": "C",
+    "question": "What does a Map primarily store in Dart?",
+    "options": {
+      "A": "Only one integer",
+      "B": "Only UI widgets",
+      "C": "Key–value pairs",
+      "D": "Only file handles"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 111,
+    "remoteId": 112,
+    "num": 112,
+    "answer": "B",
+    "question": "Which keyword creates a compile-time constant in Dart?",
+    "options": {
+      "A": "var",
+      "B": "const",
+      "C": "dynamic always",
+      "D": "late without value forever"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 112,
+    "remoteId": 113,
+    "num": 113,
+    "answer": "A",
+    "question": "What is null safety designed to help with?",
+    "options": {
+      "A": "Prevent unexpected null errors by making types non-nullable by default",
+      "B": "Force every variable to be null always",
+      "C": "Disable type checking completely",
+      "D": "Replace HTTP with FTP"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 113,
+    "remoteId": 114,
+    "num": 114,
+    "answer": "C",
+    "question": "If a non-nullable variable is not initialized before use, what typically happens?",
+    "options": {
+      "A": "It silently becomes null",
+      "B": "The OS reboots",
+      "C": "A compile-time error occurs",
+      "D": "Git commits fail"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 114,
+    "remoteId": 115,
+    "num": 115,
+    "answer": "B",
+    "question": "Which statement about Dart classes is correct?",
+    "options": {
+      "A": "Dart is not object-oriented",
+      "B": "Dart is object-oriented; classes are blueprints for objects",
+      "C": "Classes cannot have methods",
+      "D": "Objects cannot be created from classes"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 115,
+    "remoteId": 116,
+    "num": 116,
+    "answer": "A",
+    "question": "What does string interpolation like \"$name\" do?",
+    "options": {
+      "A": "Embeds expression/variable values into a string",
+      "B": "Encrypts the string with AES",
+      "C": "Deletes the variable",
+      "D": "Starts a new isolate always"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 116,
+    "remoteId": 117,
+    "num": 117,
+    "answer": "B",
+    "question": "Which type annotation is appropriate for a list of integers?",
+    "options": {
+      "A": "List<String> only for ints",
+      "B": "List<int>",
+      "C": "Map<int> without value type",
+      "D": "Set<void>"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 117,
+    "remoteId": 118,
+    "num": 118,
+    "answer": "C",
+    "question": "Functions in Dart are described as:",
+    "options": {
+      "A": "Never first-class",
+      "B": "Only allowed inside C++",
+      "C": "First-class objects (can be assigned/passed)",
+      "D": "Forbidden in Flutter"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 118,
+    "remoteId": 119,
+    "num": 119,
+    "answer": "B",
+    "question": "What is a common use of a factory constructor mentioned in slides?",
+    "options": {
+      "A": "Only painting pixels",
+      "B": "Return existing instance / singleton / .fromJson conversion",
+      "C": "Delete the class permanently",
+      "D": "Disable null safety"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 119,
+    "remoteId": 120,
+    "num": 120,
+    "answer": "A",
+    "question": "Why is async/await important in Flutter apps?",
+    "options": {
+      "A": "Handle asynchronous work without blocking the UI thread",
+      "B": "Force UI to freeze during network calls",
+      "C": "Replace all widgets with XML",
+      "D": "Compile Dart to COBOL"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 120,
+    "remoteId": 121,
+    "num": 121,
+    "answer": "C",
+    "question": "What does a Future represent?",
+    "options": {
+      "A": "A completed widget tree only",
+      "B": "A synchronous int always",
+      "C": "A value or error that will be available later",
+      "D": "A GPU shader"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 121,
+    "remoteId": 122,
+    "num": 122,
+    "answer": "B",
+    "question": "What does a Stream provide compared to a single Future?",
+    "options": {
+      "A": "Exactly one value then ends always only",
+      "B": "A sequence of asynchronous events/values over time",
+      "C": "Only file system permissions",
+      "D": "Only compile-time constants"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 122,
+    "remoteId": 123,
+    "num": 123,
+    "answer": "A",
+    "question": "How do packages and imports help structure Dart code?",
+    "options": {
+      "A": "Organize reusable libraries and dependencies",
+      "B": "Increase APK size without any reuse",
+      "C": "Remove null safety",
+      "D": "Replace the Flutter engine"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 123,
+    "remoteId": 124,
+    "num": 124,
+    "answer": "B",
+    "question": "What is .fromJson() typically used for?",
+    "options": {
+      "A": "Drawing custom paint",
+      "B": "Converting JSON map data into a Dart model object",
+      "C": "Starting the emulator",
+      "D": "Signing release APKs"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 124,
+    "remoteId": 125,
+    "num": 125,
+    "answer": "C",
+    "question": "Which practice is recommended for long-running CPU work?",
+    "options": {
+      "A": "Run heavy loops directly in every build()",
+      "B": "Block the main isolate forever",
+      "C": "Use async patterns / avoid blocking UI (and isolates when needed)",
+      "D": "Disable the UI thread intentionally"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 125,
+    "remoteId": 126,
+    "num": 126,
+    "answer": "A",
+    "question": "What does await do when used with a Future?",
+    "options": {
+      "A": "Suspends the async function until the Future completes",
+      "B": "Cancels null safety",
+      "C": "Converts widgets to HTML",
+      "D": "Forces a hot restart"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 126,
+    "remoteId": 127,
+    "num": 127,
+    "answer": "B",
+    "question": "Which is a valid reason to use a singleton via factory?",
+    "options": {
+      "A": "To create millions of identical DB connections every frame",
+      "B": "To reuse one shared service instance",
+      "C": "To avoid all state management",
+      "D": "To replace Navigator"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 127,
+    "remoteId": 128,
+    "num": 128,
+    "answer": "C",
+    "question": "Generics in Dart mainly help you:",
+    "options": {
+      "A": "Remove type safety",
+      "B": "Only style colors",
+      "C": "Write reusable type-safe APIs (e.g., List<T>)",
+      "D": "Compile CSS"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 128,
+    "remoteId": 129,
+    "num": 129,
+    "answer": "B",
+    "question": "What is the role of BuildContext?",
+    "options": {
+      "A": "Store only binary APK data",
+      "B": "Locate a widget in the widget tree / access inherited widgets",
+      "C": "Replace the Dart VM",
+      "D": "Manage only SQL transactions"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 129,
+    "remoteId": 130,
+    "num": 130,
+    "answer": "A",
+    "question": "What does setState() do in a StatefulWidget?",
+    "options": {
+      "A": "Marks state changed so Flutter rebuilds the widget",
+      "B": "Deletes the widget forever",
+      "C": "Only changes AndroidManifest",
+      "D": "Uploads the app to stores"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 130,
+    "remoteId": 131,
+    "num": 131,
+    "answer": "C",
+    "question": "Which widget arranges children vertically?",
+    "options": {
+      "A": "Row",
+      "B": "Stack only always",
+      "C": "Column",
+      "D": "GridView only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 131,
+    "remoteId": 132,
+    "num": 132,
+    "answer": "B",
+    "question": "Which widget allows children to overlap?",
+    "options": {
+      "A": "Column",
+      "B": "Stack",
+      "C": "ListView.builder only",
+      "D": "LinearProgressIndicator"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 132,
+    "remoteId": 133,
+    "num": 133,
+    "answer": "A",
+    "question": "What is Scaffold typically used for?",
+    "options": {
+      "A": "Basic page structure (AppBar, body, etc.)",
+      "B": "HTTP client only",
+      "C": "Database migration only",
+      "D": "Code generation of isolates"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 133,
+    "remoteId": 134,
+    "num": 134,
+    "answer": "B",
+    "question": "What does a Switch widget primarily toggle?",
+    "options": {
+      "A": "Git branches",
+      "B": "A boolean ON/OFF value",
+      "C": "CPU frequency",
+      "D": "Null safety mode"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 134,
+    "remoteId": 135,
+    "num": 135,
+    "answer": "C",
+    "question": "Why use const widgets when possible?",
+    "options": {
+      "A": "They force full tree rebuild every frame",
+      "B": "They disable hot reload",
+      "C": "They reduce rebuild cost for stable UI",
+      "D": "They remove type safety"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 135,
+    "remoteId": 136,
+    "num": 136,
+    "answer": "A",
+    "question": "What does ThemeData primarily define?",
+    "options": {
+      "A": "Application-wide visual styles",
+      "B": "Only SQLite schema",
+      "C": "Only deep link schemes",
+      "D": "Only test coverage reports"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 136,
+    "remoteId": 137,
+    "num": 137,
+    "answer": "B",
+    "question": "What does the build() method return?",
+    "options": {
+      "A": "Raw GPU pixels only",
+      "B": "A widget tree describing the UI",
+      "C": "A signed APK",
+      "D": "A database connection pool"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 137,
+    "remoteId": 138,
+    "num": 138,
+    "answer": "C",
+    "question": "StatelessWidget is best when:",
+    "options": {
+      "A": "UI must hold mutable local state with setState",
+      "B": "You need AnimationController disposal always",
+      "C": "UI depends only on constructor inputs / configuration",
+      "D": "You must ignore BuildContext"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 138,
+    "remoteId": 139,
+    "num": 139,
+    "answer": "A",
+    "question": "crossAxisAlignment in a Column controls alignment along which axis?",
+    "options": {
+      "A": "Horizontal (cross axis) for a vertical Column",
+      "B": "Only Z-depth",
+      "C": "Only time axis",
+      "D": "Network latency"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 139,
+    "remoteId": 140,
+    "num": 140,
+    "answer": "B",
+    "question": "Which widget is best for fixed empty space of a given size?",
+    "options": {
+      "A": "Expanded always filling remaining space",
+      "B": "SizedBox",
+      "C": "Navigator",
+      "D": "HttpClient"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 140,
+    "remoteId": 141,
+    "num": 141,
+    "answer": "B",
+    "question": "What is a key idea of Navigator 2.0 in the slides?",
+    "options": {
+      "A": "Only imperative push/pop forever with no description of stack",
+      "B": "Declarative model: describe the desired navigation stack",
+      "C": "Remove all routes from Flutter",
+      "D": "Use only Android Activities XML"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 141,
+    "remoteId": 142,
+    "num": 142,
+    "answer": "A",
+    "question": "What is deep linking used for?",
+    "options": {
+      "A": "Open a specific screen via URL/external source",
+      "B": "Compress images only",
+      "C": "Generate unit tests only",
+      "D": "Increase battery temperature"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 142,
+    "remoteId": 143,
+    "num": 143,
+    "answer": "C",
+    "question": "Where do you typically configure Android deep link intent filters?",
+    "options": {
+      "A": "pubspec.yaml only",
+      "B": "iOS Info.plist only",
+      "C": "AndroidManifest.xml",
+      "D": "README.md"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 143,
+    "remoteId": 144,
+    "num": 144,
+    "answer": "B",
+    "question": "BLoC architecture primarily separates:",
+    "options": {
+      "A": "HTML and CSS",
+      "B": "UI from business logic via events and states (often Streams)",
+      "C": "CPU and GPU permanently",
+      "D": "Git and SVN"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 144,
+    "remoteId": 145,
+    "num": 145,
+    "answer": "A",
+    "question": "What is the output of a BLoC typically?",
+    "options": {
+      "A": "States",
+      "B": "Only raw SQL dumps",
+      "C": "APK files",
+      "D": "Certificate pins only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 145,
+    "remoteId": 146,
+    "num": 146,
+    "answer": "B",
+    "question": "What do events do in BLoC?",
+    "options": {
+      "A": "Render pixels directly",
+      "B": "Trigger state changes / business handling",
+      "C": "Sign the APK",
+      "D": "Replace Material icons"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 146,
+    "remoteId": 147,
+    "num": 147,
+    "answer": "C",
+    "question": "Why is immutability important for BLoC states?",
+    "options": {
+      "A": "To make states random",
+      "B": "To prevent any UI update",
+      "C": "Predictable state changes / easier comparison",
+      "D": "To disable Streams"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 147,
+    "remoteId": 148,
+    "num": 148,
+    "answer": "A",
+    "question": "How can data be passed to a new screen in common Flutter practice?",
+    "options": {
+      "A": "Via constructor arguments / route arguments",
+      "B": "Only by rebooting the phone",
+      "C": "Only by editing the Flutter engine",
+      "D": "Only through SMS"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 148,
+    "remoteId": 149,
+    "num": 149,
+    "answer": "B",
+    "question": "Which widget rebuilds when a Stream emits new data?",
+    "options": {
+      "A": "SizedBox only",
+      "B": "StreamBuilder",
+      "C": "Icon only",
+      "D": "Divider only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 149,
+    "remoteId": 150,
+    "num": 150,
+    "answer": "A",
+    "question": "Why separate UI and state logic?",
+    "options": {
+      "A": "Improve maintainability and testability",
+      "B": "Make animations slower only",
+      "C": "Force more global mutable state",
+      "D": "Avoid widgets entirely"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 150,
+    "remoteId": 151,
+    "num": 151,
+    "answer": "C",
+    "question": "What does a route guard pattern aim to protect?",
+    "options": {
+      "A": "GPU shaders",
+      "B": "Only font files",
+      "C": "Authenticated routes / unauthorized access",
+      "D": "Hot reload itself"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 151,
+    "remoteId": 152,
+    "num": 152,
+    "answer": "B",
+    "question": "Provider is commonly used for:",
+    "options": {
+      "A": "Image compression only",
+      "B": "Dependency injection / state exposure to the widget tree",
+      "C": "Replacing Dart with Java",
+      "D": "Building Windows kernels"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 152,
+    "remoteId": 153,
+    "num": 153,
+    "answer": "B",
+    "question": "What is the main goal of responsive UI?",
+    "options": {
+      "A": "UI only works on one fixed phone model",
+      "B": "Layouts adapt to different screen sizes",
+      "C": "Disable orientation changes forever",
+      "D": "Remove MediaQuery"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 153,
+    "remoteId": 154,
+    "num": 154,
+    "answer": "A",
+    "question": "What does GridView help build according to the slides?",
+    "options": {
+      "A": "Scrollable grids that adapt columns to width",
+      "B": "Only 3D games engines",
+      "C": "SQL indexes",
+      "D": "Certificate authorities"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 154,
+    "remoteId": 155,
+    "num": 155,
+    "answer": "C",
+    "question": "Which API is commonly used to read screen size/orientation?",
+    "options": {
+      "A": "SharedPreferences only",
+      "B": "HttpClient only",
+      "C": "MediaQuery",
+      "D": "FlutterDriver only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 155,
+    "remoteId": 156,
+    "num": 156,
+    "answer": "B",
+    "question": "Adaptive layout typically means:",
+    "options": {
+      "A": "Same exact pixels on all devices always",
+      "B": "UI chooses suitable layout patterns for platform/screen class",
+      "C": "No widgets allowed",
+      "D": "Only landscape tablets forever"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 156,
+    "remoteId": 157,
+    "num": 157,
+    "answer": "A",
+    "question": "Expanded inside a Flex (Row/Column) is used to:",
+    "options": {
+      "A": "Take remaining free space along the main axis",
+      "B": "Hide the keyboard only",
+      "C": "Start deep links",
+      "D": "Compile AOT"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 157,
+    "remoteId": 158,
+    "num": 158,
+    "answer": "B",
+    "question": "Why avoid hard-coded sizes for all devices?",
+    "options": {
+      "A": "Hard-coded sizes always look perfect everywhere",
+      "B": "Screens differ; rigid sizes break layouts on small/large devices",
+      "C": "Flutter forbids numbers",
+      "D": "MediaQuery is illegal"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 158,
+    "remoteId": 159,
+    "num": 159,
+    "answer": "C",
+    "question": "LayoutBuilder is useful because it:",
+    "options": {
+      "A": "Only builds APKs",
+      "B": "Only manages auth tokens",
+      "C": "Provides parent constraints to choose layout",
+      "D": "Replaces Navigator permanently"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 159,
+    "remoteId": 160,
+    "num": 160,
+    "answer": "A",
+    "question": "Which widget is commonly used for scrollable single-child content?",
+    "options": {
+      "A": "SingleChildScrollView",
+      "B": "AppBar only",
+      "C": "SnackBar only",
+      "D": "Tooltip only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 160,
+    "remoteId": 161,
+    "num": 161,
+    "answer": "B",
+    "question": "What is the primary purpose of forms in mobile apps?",
+    "options": {
+      "A": "GPU profiling only",
+      "B": "User data collection with validation",
+      "C": "Deep link DNS setup only",
+      "D": "Engine compilation"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 161,
+    "remoteId": 162,
+    "num": 162,
+    "answer": "A",
+    "question": "TextEditingController is used to:",
+    "options": {
+      "A": "Read/control text field values",
+      "B": "Sign APKs",
+      "C": "Manage isolates only",
+      "D": "Configure AndroidManifest deep links"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 162,
+    "remoteId": 163,
+    "num": 163,
+    "answer": "C",
+    "question": "How do you typically hide password characters in a TextField?",
+    "options": {
+      "A": "Set keyboardType to email only",
+      "B": "Use ListView",
+      "C": "obscureText: true",
+      "D": "Use GridView.count"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 163,
+    "remoteId": 164,
+    "num": 164,
+    "answer": "B",
+    "question": "What does FormState.reset() do?",
+    "options": {
+      "A": "Uninstall the app",
+      "B": "Reset form fields to initial values",
+      "C": "Clear device storage entirely",
+      "D": "Invalidate SSL certificates"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 164,
+    "remoteId": 165,
+    "num": 165,
+    "answer": "A",
+    "question": "A strong password validation demo in slides requires at least:",
+    "options": {
+      "A": "Length rules (e.g. ≥ 8) and matching confirm password",
+      "B": "Only one character always",
+      "C": "No validation ever",
+      "D": "Password stored in plain Text widget title only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 165,
+    "remoteId": 166,
+    "num": 166,
+    "answer": "C",
+    "question": "GlobalKey<FormState> is commonly used to:",
+    "options": {
+      "A": "Paint custom shaders",
+      "B": "Replace MaterialApp",
+      "C": "Validate the form from outside (currentState.validate())",
+      "D": "Start the emulator"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 166,
+    "remoteId": 167,
+    "num": 167,
+    "answer": "B",
+    "question": "Why validate user input before submit?",
+    "options": {
+      "A": "To slow the UI intentionally",
+      "B": "To ensure correct data and better UX / fewer server errors",
+      "C": "To disable null safety",
+      "D": "To remove FocusNode"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 167,
+    "remoteId": 168,
+    "num": 168,
+    "answer": "A",
+    "question": "Async validation checks are useful when:",
+    "options": {
+      "A": "You must verify uniqueness against a server (e.g. username taken)",
+      "B": "You never use network",
+      "C": "You only draw icons",
+      "D": "You compile the engine"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 168,
+    "remoteId": 169,
+    "num": 169,
+    "answer": "C",
+    "question": "Which widget groups multiple fields for joint validation?",
+    "options": {
+      "A": "Spacer",
+      "B": "Divider",
+      "C": "Form",
+      "D": "Placeholder"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 169,
+    "remoteId": 170,
+    "num": 170,
+    "answer": "B",
+    "question": "AutovalidateMode.onUserInteraction typically means:",
+    "options": {
+      "A": "Never validate",
+      "B": "Validate as the user interacts with fields",
+      "C": "Validate only after APK install",
+      "D": "Validate only on desktop"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 170,
+    "remoteId": 171,
+    "num": 171,
+    "answer": "C",
+    "question": "Which HTTP method is typically used to retrieve data?",
+    "options": {
+      "A": "DELETE only",
+      "B": "PUT only",
+      "C": "GET",
+      "D": "PATCH only always"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 171,
+    "remoteId": 172,
+    "num": 172,
+    "answer": "B",
+    "question": "What is the purpose of parsing JSON?",
+    "options": {
+      "A": "Encrypt the APK",
+      "B": "Convert JSON into Dart objects/maps",
+      "C": "Start Android Studio",
+      "D": "Create deep links"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 172,
+    "remoteId": 173,
+    "num": 173,
+    "answer": "A",
+    "question": "Why is FutureBuilder useful for API data?",
+    "options": {
+      "A": "Binds async Future to UI (loading/success/error)",
+      "B": "Replaces HTTP with Bluetooth only",
+      "C": "Compiles C++ Skia",
+      "D": "Manages only FormState"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 173,
+    "remoteId": 174,
+    "num": 174,
+    "answer": "B",
+    "question": "Which HTTP header commonly carries access credentials?",
+    "options": {
+      "A": "Content-Language only",
+      "B": "Authorization",
+      "C": "Accept-Charset only",
+      "D": "Warning only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 174,
+    "remoteId": 175,
+    "num": 175,
+    "answer": "D",
+    "question": "Which status code indicates a server error?",
+    "options": {
+      "A": "200",
+      "B": "301",
+      "C": "404",
+      "D": "500"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 175,
+    "remoteId": 176,
+    "num": 176,
+    "answer": "A",
+    "question": "What does status code 404 typically mean?",
+    "options": {
+      "A": "Resource not found",
+      "B": "OK success",
+      "C": "Server internal error",
+      "D": "Redirect permanent only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 176,
+    "remoteId": 177,
+    "num": 177,
+    "answer": "B",
+    "question": "What is pagination used for?",
+    "options": {
+      "A": "Only styling buttons",
+      "B": "Loading large datasets in pages efficiently",
+      "C": "Signing APKs",
+      "D": "Disabling JSON"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 177,
+    "remoteId": 178,
+    "num": 178,
+    "answer": "C",
+    "question": "What is a refresh token used for?",
+    "options": {
+      "A": "UI theme switching",
+      "B": "Image caching only",
+      "C": "Obtain new access tokens without re-login",
+      "D": "Hot reload"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 178,
+    "remoteId": 179,
+    "num": 179,
+    "answer": "A",
+    "question": "When calling APIs, why handle loading and error states in UI?",
+    "options": {
+      "A": "Network is async; users need feedback and recovery paths",
+      "B": "HTTP is always instant and never fails",
+      "C": "Flutter forbids try/catch",
+      "D": "JSON cannot fail"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 179,
+    "remoteId": 180,
+    "num": 180,
+    "answer": "B",
+    "question": "POST is most appropriate when:",
+    "options": {
+      "A": "Idempotent pure retrieval of a static file only",
+      "B": "Creating/submitting data to the server",
+      "C": "Only deleting DNS records",
+      "D": "Only reading SharedPreferences"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 180,
+    "remoteId": 181,
+    "num": 181,
+    "answer": "C",
+    "question": "What does Content-Type: application/json indicate?",
+    "options": {
+      "A": "Body is an image PNG",
+      "B": "Body is multipart file only",
+      "C": "Request/response body is JSON",
+      "D": "Request is a WebSocket upgrade only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 181,
+    "remoteId": 182,
+    "num": 182,
+    "answer": "A",
+    "question": "Why map JSON fields into model classes?",
+    "options": {
+      "A": "Type safety, readability, and easier UI binding",
+      "B": "To avoid using Dart",
+      "C": "To disable null safety",
+      "D": "To force stringly-typed maps forever without structure"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 182,
+    "remoteId": 183,
+    "num": 183,
+    "answer": "B",
+    "question": "When are local files preferred over simple key–value storage?",
+    "options": {
+      "A": "Only for one boolean flag",
+      "B": "When data is bigger/structured but may not need full SQL",
+      "C": "When you never need persistence",
+      "D": "When only cloud is allowed"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 183,
+    "remoteId": 184,
+    "num": 184,
+    "answer": "A",
+    "question": "Which package is commonly used for simple key-value storage?",
+    "options": {
+      "A": "shared_preferences",
+      "B": "flutter_bloc only",
+      "C": "flutter_test only",
+      "D": "path_provider only always as KV store"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 184,
+    "remoteId": 185,
+    "num": 185,
+    "answer": "B",
+    "question": "What is Hive mainly used for?",
+    "options": {
+      "A": "Remote PostgreSQL hosting",
+      "B": "Lightweight local NoSQL storage",
+      "C": "Only SSL pinning",
+      "D": "Only deep links"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 185,
+    "remoteId": 186,
+    "num": 186,
+    "answer": "C",
+    "question": "Which plugin provides SQLite support in Flutter?",
+    "options": {
+      "A": "provider",
+      "B": "http",
+      "C": "sqflite",
+      "D": "flutter_local_notifications only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 186,
+    "remoteId": 187,
+    "num": 187,
+    "answer": "A",
+    "question": "Which widget is often used to show async local storage reads?",
+    "options": {
+      "A": "FutureBuilder",
+      "B": "IconButton only",
+      "C": "AppBar only",
+      "D": "SnackBar only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 187,
+    "remoteId": 188,
+    "num": 188,
+    "answer": "B",
+    "question": "Why should database operations be asynchronous?",
+    "options": {
+      "A": "To freeze the UI on purpose",
+      "B": "To avoid blocking the UI thread",
+      "C": "Because SQL cannot run async ever",
+      "D": "To disable persistence"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 188,
+    "remoteId": 189,
+    "num": 189,
+    "answer": "C",
+    "question": "path_provider is typically used to:",
+    "options": {
+      "A": "Call REST APIs",
+      "B": "Manage BLoC events",
+      "C": "Locate app directories for file storage",
+      "D": "Theme the MaterialApp"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 189,
+    "remoteId": 190,
+    "num": 190,
+    "answer": "A",
+    "question": "Which storage suits a small flag like 'onboardingCompleted'?",
+    "options": {
+      "A": "shared_preferences",
+      "B": "Full remote warehouse DB only",
+      "C": "Video codec storage",
+      "D": "Git LFS only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 190,
+    "remoteId": 191,
+    "num": 191,
+    "answer": "B",
+    "question": "What is persistence in mobile apps?",
+    "options": {
+      "A": "Keeping data only in RAM until process death always",
+      "B": "Saving data so it survives app restarts",
+      "C": "Only drawing frames",
+      "D": "Only hot reload state"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 191,
+    "remoteId": 192,
+    "num": 192,
+    "answer": "C",
+    "question": "Choosing SQLite is more appropriate when:",
+    "options": {
+      "A": "You store one boolean",
+      "B": "You need only ephemeral memory",
+      "C": "You need relational queries on structured local data",
+      "D": "You never read data back"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 192,
+    "remoteId": 193,
+    "num": 193,
+    "answer": "B",
+    "question": "Why is secure authentication critical in mobile apps?",
+    "options": {
+      "A": "Only to change icon colors",
+      "B": "To protect user data and control access",
+      "C": "To improve GPU fill rate",
+      "D": "To compile Dart faster"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 193,
+    "remoteId": 194,
+    "num": 194,
+    "answer": "A",
+    "question": "After successful login with a mock token flow, what should you typically do?",
+    "options": {
+      "A": "Save token (e.g. in AuthService) and prepare next navigation",
+      "B": "Delete the Flutter SDK",
+      "C": "Disable all network",
+      "D": "Force a compile error"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 194,
+    "remoteId": 195,
+    "num": 195,
+    "answer": "C",
+    "question": "What is a token in authentication systems?",
+    "options": {
+      "A": "A UI color",
+      "B": "A layout constraint",
+      "C": "A temporary access credential",
+      "D": "A Git commit hash only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 195,
+    "remoteId": 196,
+    "num": 196,
+    "answer": "B",
+    "question": "Why centralize authentication state?",
+    "options": {
+      "A": "To scatter tokens in random widgets",
+      "B": "Ensure consistent access control across screens",
+      "C": "To avoid secure storage forever",
+      "D": "To remove logout"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 196,
+    "remoteId": 197,
+    "num": 197,
+    "answer": "A",
+    "question": "Which widget can react to auth state exposed as a Stream?",
+    "options": {
+      "A": "StreamBuilder",
+      "B": "SizedBox only",
+      "C": "Divider only",
+      "D": "Placeholder only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 197,
+    "remoteId": 198,
+    "num": 198,
+    "answer": "B",
+    "question": "What happens after successful login from a session perspective?",
+    "options": {
+      "A": "App always crashes",
+      "B": "User session starts (authenticated context)",
+      "C": "Device factory resets",
+      "D": "All tokens are printed to UI permanently"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 198,
+    "remoteId": 199,
+    "num": 199,
+    "answer": "C",
+    "question": "Storing tokens insecurely (plain SharedPreferences without care) risks:",
+    "options": {
+      "A": "Faster animations",
+      "B": "Better SEO",
+      "C": "Token theft / account compromise",
+      "D": "Better null safety"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 199,
+    "remoteId": 200,
+    "num": 200,
+    "answer": "A",
+    "question": "Logout should typically:",
+    "options": {
+      "A": "Clear session/token and return to unauthenticated UI",
+      "B": "Keep tokens forever without clearing",
+      "C": "Uninstall Flutter",
+      "D": "Disable hot reload"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 200,
+    "remoteId": 201,
+    "num": 201,
+    "answer": "B",
+    "question": "Push notifications in this module are related to:",
+    "options": {
+      "A": "Only offline SQLite vacuum",
+      "B": "Alerting users (often after auth/session context exists)",
+      "C": "Replacing REST entirely",
+      "D": "Compiling Skia"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 201,
+    "remoteId": 202,
+    "num": 202,
+    "answer": "C",
+    "question": "Protected routes should:",
+    "options": {
+      "A": "Always be public without checks",
+      "B": "Ignore tokens",
+      "C": "Allow access only when authenticated",
+      "D": "Bypass SSL always"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 202,
+    "remoteId": 203,
+    "num": 203,
+    "answer": "C",
+    "question": "Which test type checks individual functions or classes?",
+    "options": {
+      "A": "Widget test",
+      "B": "Integration test",
+      "C": "Unit test",
+      "D": "Manual only screenshot without code"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 203,
+    "remoteId": 204,
+    "num": 204,
+    "answer": "B",
+    "question": "Which Flutter test focuses on UI components/widgets?",
+    "options": {
+      "A": "Unit test only of pure Dart math",
+      "B": "Widget test",
+      "C": "Load test of servers only",
+      "D": "DNS test only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 204,
+    "remoteId": 205,
+    "num": 205,
+    "answer": "A",
+    "question": "What does an integration test verify?",
+    "options": {
+      "A": "End-to-end app behavior across parts",
+      "B": "Only one private method always",
+      "C": "Only font file integrity",
+      "D": "Only Gradle version"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 205,
+    "remoteId": 206,
+    "num": 206,
+    "answer": "B",
+    "question": "Why are tests important for refactoring?",
+    "options": {
+      "A": "They slow CI only with no benefit",
+      "B": "Ensure changes don't break functionality",
+      "C": "They replace product requirements",
+      "D": "They remove the need for UI"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 206,
+    "remoteId": 207,
+    "num": 207,
+    "answer": "A",
+    "question": "What is test isolation?",
+    "options": {
+      "A": "Independence of test cases",
+      "B": "Running all tests in one shared mutable global only",
+      "C": "Disabling assertions",
+      "D": "Skipping failures"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 207,
+    "remoteId": 208,
+    "num": 208,
+    "answer": "C",
+    "question": "Which tool helps debug Flutter apps (network, performance, etc.)?",
+    "options": {
+      "A": "Notepad only",
+      "B": "Paint.exe",
+      "C": "DevTools",
+      "D": "Calculator only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 208,
+    "remoteId": 209,
+    "num": 209,
+    "answer": "B",
+    "question": "The Taskly demo app in slides is used to:",
+    "options": {
+      "A": "Replace the Flutter engine",
+      "B": "Demonstrate each test type on a simple Todo app",
+      "C": "Host production payments only",
+      "D": "Compile C++ only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 209,
+    "remoteId": 210,
+    "num": 210,
+    "answer": "A",
+    "question": "find.byType / find.text in widget tests are used to:",
+    "options": {
+      "A": "Locate widgets in the test environment",
+      "B": "Deploy to Play Store",
+      "C": "Generate icons",
+      "D": "Create keystores"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 210,
+    "remoteId": 211,
+    "num": 211,
+    "answer": "C",
+    "question": "Mocking dependencies in unit tests helps:",
+    "options": {
+      "A": "Increase flakiness only",
+      "B": "Force real network always",
+      "C": "Test logic in isolation without external systems",
+      "D": "Disable CI"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 211,
+    "remoteId": 212,
+    "num": 212,
+    "answer": "B",
+    "question": "Golden tests primarily verify:",
+    "options": {
+      "A": "API JSON schema only",
+      "B": "UI appearance consistency (screenshots/baselines)",
+      "C": "Battery temperature",
+      "D": "DNS TTL"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 212,
+    "remoteId": 213,
+    "num": 213,
+    "answer": "A",
+    "question": "What should you avoid doing inside build()?",
+    "options": {
+      "A": "Heavy work: sorting, JSON parse, complex calc, DB/API calls",
+      "B": "Returning a simple widget tree",
+      "C": "Using const widgets",
+      "D": "Reading Theme.of(context) lightly"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 213,
+    "remoteId": 214,
+    "num": 214,
+    "answer": "B",
+    "question": "Why extract list item widgets (e.g. TaskTile) and use Selector?",
+    "options": {
+      "A": "To rebuild the entire screen on every tiny change always",
+      "B": "To reduce unnecessary rebuilds / narrow rebuild scope",
+      "C": "To disable DevTools",
+      "D": "To remove keys"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 214,
+    "remoteId": 215,
+    "num": 215,
+    "answer": "C",
+    "question": "What is the main purpose of hot reload?",
+    "options": {
+      "A": "Publish to stores",
+      "B": "Increase APK size",
+      "C": "Instantly reflect code changes in UI while developing",
+      "D": "Replace unit tests"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 215,
+    "remoteId": 216,
+    "num": 216,
+    "answer": "B",
+    "question": "Which command builds a release APK?",
+    "options": {
+      "A": "flutter run",
+      "B": "flutter build apk",
+      "C": "flutter doctor --uninstall",
+      "D": "dart fix --dry-run only"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 216,
+    "remoteId": 217,
+    "num": 217,
+    "answer": "A",
+    "question": "Why use ValueKey(task.id) instead of UniqueKey() for list items?",
+    "options": {
+      "A": "Preserve identity/state; UniqueKey forces excess rebuilds",
+      "B": "UniqueKey is always faster",
+      "C": "Keys are forbidden in lists",
+      "D": "ValueKey disables scrolling"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 217,
+    "remoteId": 218,
+    "num": 218,
+    "answer": "B",
+    "question": "GlobalKey warning in slides: GlobalKey is:",
+    "options": {
+      "A": "Always free and should be used everywhere",
+      "B": "Powerful but expensive; avoid unless necessary",
+      "C": "Required for every Text widget",
+      "D": "Only used in unit tests"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 218,
+    "remoteId": 219,
+    "num": 219,
+    "answer": "C",
+    "question": "Which practice improves deployment security?",
+    "options": {
+      "A": "Hardcoding secrets in source",
+      "B": "Committing keystores to public repos",
+      "C": "Protecting signing keys / secure release process",
+      "D": "Using only debug builds in production"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 219,
+    "remoteId": 220,
+    "num": 220,
+    "answer": "A",
+    "question": "const widgets help performance because they:",
+    "options": {
+      "A": "Can be reused and reduce rebuild work",
+      "B": "Force full screen invalidation always",
+      "C": "Disable tree shaking",
+      "D": "Remove AOT"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 220,
+    "remoteId": 221,
+    "num": 221,
+    "answer": "B",
+    "question": "What is technical debt?",
+    "options": {
+      "A": "A bank loan for GPUs",
+      "B": "Future cost of poor design decisions",
+      "C": "A Flutter widget",
+      "D": "A type of Future"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 221,
+    "remoteId": 222,
+    "num": 222,
+    "answer": "A",
+    "question": "Why is clean architecture beneficial?",
+    "options": {
+      "A": "Easier maintenance and testing via separation of concerns",
+      "B": "Fewer files always regardless of design",
+      "C": "Guaranteed faster GPU",
+      "D": "Removes need for tests"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 222,
+    "remoteId": 223,
+    "num": 223,
+    "answer": "C",
+    "question": "App size analysis before deployment helps you:",
+    "options": {
+      "A": "Ignore unused assets forever",
+      "B": "Increase size intentionally without reason",
+      "C": "Find large assets/code to optimize release package",
+      "D": "Disable Play Store"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 223,
+    "remoteId": 224,
+    "num": 224,
+    "answer": "B",
+    "question": "Why decide architecture early?",
+    "options": {
+      "A": "Architecture never matters",
+      "B": "Reduce later refactoring cost",
+      "C": "To avoid writing UI",
+      "D": "To skip testing"
+    },
+    "source": "slides",
+    "task": "",
+    "taskLabel": ""
+  }
+]

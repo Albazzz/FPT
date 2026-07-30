@@ -1,0 +1,1566 @@
+{
+  "part": 1,
+  "totalParts": 10,
+  "range": "Câu 1 đến 55",
+  "count": 55,
+  "subject": "mln",
+  "task": "testmln_part1",
+  "taskLabel": "MLN Phần 1",
+  "questions": [
+    {
+      "id": 1,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 1,
+      "question": "Biểu hiện mới của sự phân chia thị trường giữa các liên minh độc quyền đó là",
+      "options": {
+        "A": "Hình thành các tổ chức đa quốc gia",
+        "B": "Hình thành các tổ chức độc quyền trong nhà nước tư bản",
+        "C": "Hình thành xu hướng khu vực hóa",
+        "D": "Hình thành xu hướng toàn cầu hóa"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Biểu hiện mới của sự phân chia thị trường giữa các liên minh độc quyền đó là",
+        "optionsVi": {
+          "A": "Hình thành các tổ chức đa quốc gia",
+          "B": "Hình thành các tổ chức độc quyền trong nhà nước tư bản",
+          "C": "Hình thành xu hướng khu vực hóa",
+          "D": "Hình thành xu hướng toàn cầu hóa"
+        },
+        "answerDisplay": "D. Hình thành xu hướng toàn cầu hóa",
+        "concept": "• Xu hướng toàn cầu hóa: Sự phân chia thị trường thế giới giữa các liên minh độc quyền trong giai đoạn hiện nay mang biểu hiện mới nổi bật là xu hướng toàn cầu hóa kinh tế.",
+        "whyCorrect": "• Ở giai đoạn CNTB độc quyền hiện đại, phân chia thị trường không chỉ diễn ra qua việc thành lập các cartel hay syndicate quốc tế truyền thống, mà biểu hiện mới nổi bật nhất là xu hướng toàn cầu hóa kinh tế vượt biên giới quốc gia.",
+        "whyWrong": {
+          "A": "• Tổ chức đa quốc gia (TNC/MNC) là chủ thể thực hiện phân chia thị trường, không phải là 'xu hướng/biểu hiện' mà đề hỏi.",
+          "B": "• Tổ chức độc quyền trong nước thuộc phạm vi quốc gia, không phản ánh sự phân chia thị trường quốc tế.",
+          "C": "• Khu vực hóa là xu hướng liên kết hẹp hơn, không phản ánh quy mô mới nổi bật bằng toàn cầu hóa."
+        },
+        "memoryTip": "• Độc quyền phân chia thị trường hiện đại ➔ Toàn cầu hóa."
+      }
+    },
+    {
+      "id": 2,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 2,
+      "question": "Nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của cách mạng công nghiệp qua mấy giai đoạn phát triển?",
+      "options": {
+        "A": "Một giai đoạn",
+        "B": "Hai giai đoạn",
+        "C": "Ba giai đoạn",
+        "D": "Bốn giai đoạn"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của cách mạng công nghiệp qua mấy giai đoạn phát triển?",
+        "optionsVi": {
+          "A": "Một giai đoạn",
+          "B": "Hai giai đoạn",
+          "C": "Ba giai đoạn",
+          "D": "Bốn giai đoạn"
+        },
+        "answerDisplay": "C. Ba giai đoạn",
+        "concept": "• Quy luật phát triển CMCN (K. Marx): Lực lượng sản xuất / công cụ lao động trải qua 3 giai đoạn phát triển.",
+        "whyCorrect": "• C. Mác đã khái quát tính quy luật của cách mạng công nghiệp qua 3 giai đoạn phát triển từ thấp đến cao: Hiệp tác đơn giản ➔ Công trường thủ công ➔ Đại công nghiệp cơ khí.",
+        "memoryTip": "• 3 giai đoạn CMCN theo C. Mác."
+      }
+    },
+    {
+      "id": 3,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 3,
+      "question": "Khi nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của các mạng công nghiệp qua các giai đoạn phát triển đó là:",
+      "options": {
+        "A": "Hiệp tác đơn giản, lao động thủ công, lao động phức tạp",
+        "B": "Hiệp tác đơn giản, công trường thủ công, công nghiệp hóa",
+        "C": "Hiệp tác đơn giản, sản xuất thủ công, sản xuất hiện đại",
+        "D": "Hiệp tác đơn giản, công trường thủ công, đại công nghiệp"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "variantOfStem": "Nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của cách mạng công nghiệp qua mấy gi",
+      "explanation": {
+        "questionVi": "Khi nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của các mạng công nghiệp qua các giai đoạn phát triển đó là:",
+        "optionsVi": {
+          "A": "Hiệp tác đơn giản, lao động thủ công, lao động phức tạp",
+          "B": "Hiệp tác đơn giản, công trường thủ công, công nghiệp hóa",
+          "C": "Hiệp tác đơn giản, sản xuất thủ công, sản xuất hiện đại",
+          "D": "Hiệp tác đơn giản, công trường thủ công, đại công nghiệp"
+        },
+        "answerDisplay": "D. Hiệp tác đơn giản, công trường thủ công, đại công nghiệp",
+        "concept": "• 3 giai đoạn phát triển công nghiệp theo C. Mác: (1) Hiệp tác đơn giản, (2) Công trường thủ công, (3) Đại công nghiệp.",
+        "whyCorrect": "• Theo C. Mác, sự phát triển của sản xuất công nghiệp tư bản chủ nghĩa trải qua đúng 3 giai đoạn mang tính quy luật: Hiệp tác đơn giản ➔ Công trường thủ công ➔ Đại công nghiệp.",
+        "memoryTip": "• Hiệp tác đơn giản ➔ Công trường thủ công ➔ Đại công nghiệp."
+      }
+    },
+    {
+      "id": 4,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 4,
+      "question": "Chọn phương án sai vai trò của cách mạng công nghiệp đối với sự phát triển đó là",
+      "options": {
+        "A": "Thúc đẩy sự phát triển của lực lượng sản xuất",
+        "B": "Thúc đẩy các quan hệ sản xuất mới ra đời",
+        "C": "Thúc đẩy hoàn thiện quan hệ sản xuất",
+        "D": "Thúc đẩy đổi mới phương thức quản trị phát triển"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Chọn phương án sai vai trò của cách mạng công nghiệp đối với sự phát triển đó là",
+        "optionsVi": {
+          "A": "Thúc đẩy sự phát triển của lực lượng sản xuất",
+          "B": "Thúc đẩy các quan hệ sản xuất mới ra đời",
+          "C": "Thúc đẩy hoàn thiện quan hệ sản xuất",
+          "D": "Thúc đẩy đổi mới phương thức quản trị phát triển"
+        },
+        "answerDisplay": "B. Thúc đẩy các quan hệ sản xuất mới ra đời",
+        "concept": "• Quy luật LLSX & QHSX: Cách mạng công nghiệp là sự phát triển nhảy vọt của Lực lượng sản xuất, thúc đẩy hoàn thiện QHSX hiện có.",
+        "whyCorrect": "• CMCN trực tiếp phát triển LLSX và thúc đẩy hoàn thiện QHSX, chứ không 'thúc đẩy QHSX mới ra đời' (việc thay đổi QHSX sang một phương thức sản xuất mới là vai trò của Cách mạng xã hội).",
+        "memoryTip": "• CMCN phát triển LLSX & hoàn thiện QHSX (không trực tiếp đẻ ra QHSX mới)."
+      }
+    },
+    {
+      "id": 5,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 5,
+      "question": "Đâu không phải đặc trưng của chủ nghĩa tư bản?",
+      "options": {
+        "A": "Quyền sở hữu tư liệu sản xuất thuộc về nhà nước",
+        "B": "Tích lũy tư bản",
+        "C": "Trao đổi tự nguyện",
+        "D": "Một hệ thống giá cả và thị trường cạnh tranh"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Đâu không phải đặc trưng của chủ nghĩa tư bản?",
+        "optionsVi": {
+          "A": "Quyền sở hữu tư liệu sản xuất thuộc về nhà nước",
+          "B": "Tích lũy tư bản",
+          "C": "Trao đổi tự nguyện",
+          "D": "Một hệ thống giá cả và thị trường cạnh tranh"
+        },
+        "answerDisplay": "A. Quyền sở hữu tư liệu sản xuất thuộc về nhà nước",
+        "concept": "• Bản chất CNTB: Dựa trên chế độ tư hữu về tư liệu sản xuất, sản xuất hàng hóa, tích lũy tư bản và thị trường cạnh tranh.",
+        "whyCorrect": "• Quyền sở hữu TLSX thuộc về nhà nước (công hữu) là đặc trưng của mô hình XHCN, hoàn toàn đối lập với bản chất sở hữu tư nhân TLSX của CNTB.",
+        "memoryTip": "• CNTB = Sở hữu tư nhân TLSX (không phải sở hữu nhà nước)."
+      }
+    },
+    {
+      "id": 6,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 6,
+      "question": "Khi nghiên cứu tái sản xuất tư bản xã hội thì K. Marx chia nền kinh tế ra làm hai khu vực là",
+      "options": {
+        "A": "KVI sản xuất hàng công nghiệp; KVII: sản xuất tư liệu tiêu dùng",
+        "B": "KVI: sản xuất tư liệu sản xuất; KVII: sản xuất hàng nông nghiệp",
+        "C": "KVI: sản xuất tư liệu sản xuất; KVII: sản xuất tư liệu tiêu dùng",
+        "D": "KVI: sản xuất máy móc; KVII: sản xuất tư liệu tiêu dùng"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Khi nghiên cứu tái sản xuất tư bản xã hội thì K. Marx chia nền kinh tế ra làm hai khu vực là",
+        "optionsVi": {
+          "A": "KVI sản xuất hàng công nghiệp; KVII: sản xuất tư liệu tiêu dùng",
+          "B": "KVI: sản xuất tư liệu sản xuất; KVII: sản xuất hàng nông nghiệp",
+          "C": "KVI: sản xuất tư liệu sản xuất; KVII: sản xuất tư liệu tiêu dùng",
+          "D": "KVI: sản xuất máy móc; KVII: sản xuất tư liệu tiêu dùng"
+        },
+        "answerDisplay": "C. KVI: sản xuất tư liệu sản xuất; KVII: sản xuất tư liệu tiêu dùng",
+        "concept": "• Sơ đồ tái sản xuất tư bản xã hội của K. Marx: Nền kinh tế gồm 2 khu vực (KVI và KVII).",
+        "whyCorrect": "• K. Marx chia nền kinh tế thành: Khu vực I (KVI) - sản xuất Tư liệu sản xuất; Khu vực II (KVII) - sản xuất Tư liệu tiêu dùng.",
+        "memoryTip": "• KVI = Tư liệu sản xuất · KVII = Tư liệu tiêu dùng."
+      }
+    },
+    {
+      "id": 7,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 7,
+      "question": "Địa tô chênh lệch II thu được trên",
+      "options": {
+        "A": "Ruộng đất đã thâm canh",
+        "B": "Ruộng đất có độ màu mỡ trung bình",
+        "C": "Ruộng đất có độ màu mỡ tốt"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Địa tô chênh lệch II thu được trên",
+        "optionsVi": {
+          "A": "Ruộng đất đã thâm canh",
+          "B": "Ruộng đất có độ màu mỡ trung bình",
+          "C": "Ruộng đất có độ màu mỡ tốt"
+        },
+        "answerDisplay": "A. Ruộng đất đã thâm canh",
+        "concept": "• Địa tô chênh lệch II: Địa tô thu được do đầu tư thêm tư bản (thâm canh) trên cùng một diện tích đất đai.",
+        "whyCorrect": "• Địa tô chênh lệch II xuất hiện trên ruộng đất đã qua thâm canh (đầu tư thêm vốn, kỹ thuật, nâng cao hiệu quả canh tác).",
+        "memoryTip": "• Địa tô I = Độ màu mỡ tự nhiên/Vị trí · Địa tô II = Thâm canh."
+      }
+    },
+    {
+      "id": 8,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 8,
+      "question": "Nội dung công cuộc đại phân công lao động xã hội lần thứ nhất là",
+      "options": {
+        "A": "Đại công nghiệp tách khỏi nông nghiệp",
+        "B": "Trồng trọt tách khỏi chăn nuôi",
+        "C": "Chăn nuôi tách khỏi trồng trọt",
+        "D": "Thủ công nghiệp tách khỏi nông nghiệp"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Nội dung công cuộc đại phân công lao động xã hội lần thứ nhất là",
+        "optionsVi": {
+          "A": "Đại công nghiệp tách khỏi nông nghiệp",
+          "B": "Trồng trọt tách khỏi chăn nuôi",
+          "C": "Chăn nuôi tách khỏi trồng trọt",
+          "D": "Thủ công nghiệp tách khỏi nông nghiệp"
+        },
+        "answerDisplay": "C. Chăn nuôi tách khỏi trồng trọt",
+        "concept": "• Phân công lao động xã hội lần 1: Sự chia tách đầu tiên trong lịch sử sản xuất.",
+        "whyCorrect": "• Lần phân công LĐXH thứ nhất đánh dấu ngành Chăn nuôi tách khỏi Trồng trọt, tạo tiền đề cho sản xuất hàng hóa ra đời.",
+        "memoryTip": "• Phân công LĐXH lần 1: Chăn nuôi tách khỏi Trồng trọt."
+      }
+    },
+    {
+      "id": 9,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 9,
+      "question": "Chênh lệch Địa tô chính I thu được trên",
+      "options": {
+        "A": "Ruộng đất có độ màu mỡ trung bình",
+        "B": "Ruộng đất tốt",
+        "C": "Đất ruộng ở vị trí thuận lợi",
+        "D": "Cả ba"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Chênh lệch Địa tô chính I thu được trên",
+        "optionsVi": {
+          "A": "Ruộng đất có độ màu mỡ trung bình",
+          "B": "Ruộng đất tốt",
+          "C": "Đất ruộng ở vị trí thuận lợi",
+          "D": "Cả ba"
+        },
+        "answerDisplay": "D. Cả ba",
+        "concept": "• Địa tô chênh lệch I: Địa tô thu được do điều kiện tự nhiên thuận lợi (độ màu mỡ hoặc vị trí địa lý).",
+        "whyCorrect": "• Địa tô chênh lệch I thu được trên đất có độ màu mỡ tốt, trung bình hoặc ở vị trí gần thị trường/giao thông thuận lợi (gồm cả 3 yếu tố tự nhiên/vị trí).",
+        "memoryTip": "• Địa tô I = Đất tốt + Đất trung bình + Vị trí thuận lợi (Cả ba)."
+      }
+    },
+    {
+      "id": 10,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 10,
+      "question": "Nội dung công cuộc đại phân công lao động xã hội lần thứ hai là:",
+      "options": {
+        "A": "Đại công nghiệp tách khỏi nông nghiệp.",
+        "B": "Trồng trọt tách khỏi chăn nuôi.",
+        "C": "Ngành thương nghiệp ra đời",
+        "D": "Thủ công nghiệp táchh khỏi nông nghiệp."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Nội dung công cuộc đại phân công lao động xã hội lần thứ hai là:",
+        "optionsVi": {
+          "A": "Đại công nghiệp tách khỏi nông nghiệp.",
+          "B": "Trồng trọt tách khỏi chăn nuôi.",
+          "C": "Ngành thương nghiệp ra đời",
+          "D": "Thủ công nghiệp táchh khỏi nông nghiệp."
+        },
+        "answerDisplay": "D. Thủ công nghiệp táchh khỏi nông nghiệp.",
+        "concept": "• Phân công lao động xã hội lần 2: Bước tiến quan trọng thúc đẩy kinh tế hàng hóa.",
+        "whyCorrect": "• Đại phân công LĐXH lần thứ hai là sự kiện Thủ công nghiệp tách khỏi Nông nghiệp, làm cho sản xuất và trao đổi hàng hóa phát triển mạnh mẽ.",
+        "memoryTip": "• Phân công LĐXH lần 2: Thủ công nghiệp tách khỏi Nông nghiệp."
+      }
+    },
+    {
+      "id": 11,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 11,
+      "question": "Nội dung công cuộc đại phân công lao động xã hội lần thứ ba là:",
+      "options": {
+        "A": "Trồng trọt tách khỏi chăn nuôi.",
+        "B": "Ngành thương nghiệp ra đời",
+        "C": "Công nghiệp tách khỏi nông nghiệp",
+        "D": "Thủ công nghiệp tách khỏi nông nghiệp"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Nội dung công cuộc đại phân công lao động xã hội lần thứ ba là:",
+        "optionsVi": {
+          "A": "Trồng trọt tách khỏi chăn nuôi.",
+          "B": "Ngành thương nghiệp ra đời",
+          "C": "Công nghiệp tách khỏi nông nghiệp",
+          "D": "Thủ công nghiệp tách khỏi nông nghiệp"
+        },
+        "answerDisplay": "B. Ngành thương nghiệp ra đời",
+        "concept": "• Phân công lao động xã hội lần 3: Bước ngoặt ra đời ngành trao đổi chuyên trách.",
+        "whyCorrect": "• Đại phân công LĐXH lần thứ ba đánh dấu sự ra đời của ngành Thương nghiệp (tách rời hoạt động mua bán thành một ngành độc lập).",
+        "memoryTip": "• Phân công LĐXH lần 3: Thương nghiệp ra đời."
+      }
+    },
+    {
+      "id": 12,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 12,
+      "question": "Kinh tế thị trường đã hình thành trong xã hội nào?",
+      "options": {
+        "A": "Phong kiến",
+        "B": "Chiếm hữu nô lệ",
+        "C": "Tư bản chủ nghĩa",
+        "D": "Xã hội chủ nghĩa"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Kinh tế thị trường đã hình thành trong xã hội nào?",
+        "optionsVi": {
+          "A": "Phong kiến",
+          "B": "Chiếm hữu nô lệ",
+          "C": "Tư bản chủ nghĩa",
+          "D": "Xã hội chủ nghĩa"
+        },
+        "answerDisplay": "A. Phong kiến",
+        "concept": "• Nguồn gốc lịch sử kinh tế thị trường: Phát triển từ kinh tế hàng hóa đơn giản.",
+        "whyCorrect": "• Kinh tế thị trường đã mầm mống hình thành từ cuối thời kỳ Phong kiến khi sản xuất hàng hóa và thương nghiệp phát triển rộng rãi.",
+        "memoryTip": "• Kinh tế thị trường hình thành từ thời Phong kiến."
+      }
+    },
+    {
+      "id": 13,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 13,
+      "question": "Các tổ chức độc quyền sử dụng giá cả độc quyền để",
+      "options": {
+        "A": "Củng cố vai trò tổ chức độc quyền",
+        "B": "Chiếm đoạt giá trị thặng dư của người khác",
+        "C": "Gây thiệt hại cho các đối thủ cạnh tranh"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Các tổ chức độc quyền sử dụng giá cả độc quyền để",
+        "optionsVi": {
+          "A": "Củng cố vai trò tổ chức độc quyền",
+          "B": "Chiếm đoạt giá trị thặng dư của người khác",
+          "C": "Gây thiệt hại cho các đối thủ cạnh tranh"
+        },
+        "answerDisplay": "B. Chiếm đoạt giá trị thặng dư của người khác",
+        "concept": "• Giá cả độc quyền: Giá cả do các tổ chức độc quyền áp đặt (giá bán cao, giá mua thấp).",
+        "whyCorrect": "• Các tổ chức độc quyền dùng giá cả độc quyền nhằm mục đích chiếm đoạt một phần giá trị thặng dư của các nhà tư bản khác và thu nhập của người lao động.",
+        "memoryTip": "• Giá độc quyền ➔ Chiếm đoạt giá trị thặng dư."
+      }
+    },
+    {
+      "id": 14,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 14,
+      "question": "Cơ chế kinh tế của độc quyền nhà nước trong chủ nghĩa tư bản gồm:",
+      "options": {
+        "A": "Cơ chế thị trường, độc quyền tư nhân và sự can thiệp của nhà nước",
+        "B": "Cơ chế thị trường, các nhà tài phiệt và sự điều tiết của nhà nước",
+        "C": "Cơ chế thị trường và độc quyền tư nhân"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cơ chế kinh tế của độc quyền nhà nước trong chủ nghĩa tư bản gồm:",
+        "optionsVi": {
+          "A": "Cơ chế thị trường, độc quyền tư nhân và sự can thiệp của nhà nước",
+          "B": "Cơ chế thị trường, các nhà tài phiệt và sự điều tiết của nhà nước",
+          "C": "Cơ chế thị trường và độc quyền tư nhân"
+        },
+        "answerDisplay": "A. Cơ chế thị trường, độc quyền tư nhân và sự can thiệp của nhà nước",
+        "concept": "• Độc quyền nhà nước trong CNTB: Sự kết hợp giữa sức mạnh độc quyền tư nhân và sức mạnh nhà nước tư sản.",
+        "whyCorrect": "• Cơ chế kinh tế độc quyền nhà nước gồm 3 yếu tố kết hợp: Cơ chế thị trường + Độc quyền tư nhân + Sự can thiệp/điều tiết của nhà nước.",
+        "memoryTip": "• Cơ chế độc quyền NN = Thị trường + Độc quyền tư nhân + Nhà nước."
+      }
+    },
+    {
+      "id": 15,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 15,
+      "question": "Trong lịch sử phát triển nền sản xuất xã hội, tiền đề nào là quan trọng cho sự ra đời và phát triển của nền kinh tế thị trường?",
+      "options": {
+        "A": "Sản xuất",
+        "B": "Trao đổi hàng hóa",
+        "C": "Thị trường",
+        "D": "Sản xuất và trao đổi hàng hóa"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong lịch sử phát triển nền sản xuất xã hội, tiền đề nào là quan trọng cho sự ra đời và phát triển của nền kinh tế thị trường?",
+        "optionsVi": {
+          "A": "Sản xuất",
+          "B": "Trao đổi hàng hóa",
+          "C": "Thị trường",
+          "D": "Sản xuất và trao đổi hàng hóa"
+        },
+        "answerDisplay": "D. Sản xuất và trao đổi hàng hóa",
+        "concept": "• Tiền đề ra đời kinh tế thị trường: Trình độ phát triển cao của kinh tế hàng hóa.",
+        "whyCorrect": "• Nền kinh tế thị trường chỉ ra đời khi cả hai tiền đề 'Sản xuất' và 'Trao đổi hàng hóa' phát triển phổ biến trong xã hội.",
+        "memoryTip": "• Tiền đề kinh tế thị trường = Sản xuất & Trao đổi hàng hóa."
+      }
+    },
+    {
+      "id": 16,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 16,
+      "question": "Vì sao trong chủ nghĩa tư bản độc quyền cạnh tranh không bị thủ tiêu?",
+      "options": {
+        "A": "Vì cạnh tranh là quy luật khách quan của kinh tế hàng hoá",
+        "B": "Vì tổ chức độc quyền cạnh tranh với các công ty ngoài độc quyền",
+        "C": "Vì các xí nghiệp trong nội bộ tổ chức độc quyền cạnh tranh với nhau"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vì sao trong chủ nghĩa tư bản độc quyền cạnh tranh không bị thủ tiêu?",
+        "optionsVi": {
+          "A": "Vì cạnh tranh là quy luật khách quan của kinh tế hàng hoá",
+          "B": "Vì tổ chức độc quyền cạnh tranh với các công ty ngoài độc quyền",
+          "C": "Vì các xí nghiệp trong nội bộ tổ chức độc quyền cạnh tranh với nhau"
+        },
+        "answerDisplay": "A. Vì cạnh tranh là quy luật khách quan của kinh tế hàng hoá",
+        "concept": "• Mối quan hệ độc quyền và cạnh tranh: Độc quyền sinh ra từ cạnh tranh tự do nhưng không thủ tiêu cạnh tranh.",
+        "whyCorrect": "• Cạnh tranh là quy luật kinh tế khách quan của sản xuất và lưu thông hàng hóa; trong giai đoạn độc quyền, cạnh tranh trở nên gay gắt và đa dạng hơn.",
+        "memoryTip": "• Cạnh tranh là quy luật khách quan (độc quyền không thể thủ tiêu)."
+      }
+    },
+    {
+      "id": 17,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 17,
+      "question": "Cách mạng công nghiệp lần thứ hai diễn ra trong giai đoạn nào?",
+      "options": {
+        "A": "Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX",
+        "B": "Từ nửa đầu thế kỷ XIX đến cuối thế kỷ XIX",
+        "C": "Từ nửa đầu thế kỷ XX đề nữa cuối thế kỷ XX",
+        "D": "Từ nửa cuối thế kỷ XIX đến nửa cuối thế kỷ XX"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cách mạng công nghiệp lần thứ hai diễn ra trong giai đoạn nào?",
+        "optionsVi": {
+          "A": "Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX",
+          "B": "Từ nửa đầu thế kỷ XIX đến cuối thế kỷ XIX",
+          "C": "Từ nửa đầu thế kỷ XX đề nữa cuối thế kỷ XX",
+          "D": "Từ nửa cuối thế kỷ XIX đến nửa cuối thế kỷ XX"
+        },
+        "answerDisplay": "A. Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX",
+        "concept": "• Mốc lịch sử CMCN lần thứ hai: Giai đoạn chuyển sang sản xuất điện khí hóa và động cơ đốt trong.",
+        "whyCorrect": "• Cách mạng công nghiệp lần 2 diễn ra từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX (khoảng 1870 đến 1914).",
+        "memoryTip": "• CMCN lần 2: Nửa cuối TK XIX ➔ Đầu TK XX."
+      }
+    },
+    {
+      "id": 18,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 18,
+      "question": "Cách mạng công nghiệp lần thứ hai diễn ra trong thời gian nào?",
+      "options": {
+        "A": "Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
+        "B": "Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
+        "C": "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+        "D": "Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "variantOfStem": "Cách mạng công nghiệp lần thứ hai diễn ra trong giai đoạn nào?",
+      "explanation": {
+        "questionVi": "Cách mạng công nghiệp lần thứ hai diễn ra trong thời gian nào?",
+        "optionsVi": {
+          "A": "Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
+          "B": "Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
+          "C": "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+          "D": "Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX"
+        },
+        "answerDisplay": "D. Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX",
+        "concept": "• Mốc lịch sử CMCN lần thứ hai (đồng bộ câu 17).",
+        "whyCorrect": "• CMCN lần 2 diễn ra từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX. (Đã sửa phương án D khớp đúng lịch sử và đồng bộ với câu 17).",
+        "memoryTip": "• CMCN lần 2: Nửa cuối TK XIX ➔ Đầu TK XX."
+      }
+    },
+    {
+      "id": 19,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 19,
+      "question": "Những đóng góp to lớn của kinh tế chính trị cổ điển Anh vào lý luận kinh tế chính trị của nhân loại đó là",
+      "options": {
+        "A": "Rút ra kết luận giá trị là do hao phí lao động tạo ra",
+        "B": "Rút ra được bản chất bóc lột của chủ nghĩa tư bản",
+        "C": "Khái quát đúng mục đích của chủ nghĩa tư bản là lợi nhuận",
+        "D": "Luận giải về nhiều phạm trù kinh tế như giá trị, sản phẩm rồng, tư bản, tiền lương"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Những đóng góp to lớn của kinh tế chính trị cổ điển Anh vào lý luận kinh tế chính trị của nhân loại đó là",
+        "optionsVi": {
+          "A": "Rút ra kết luận giá trị là do hao phí lao động tạo ra",
+          "B": "Rút ra được bản chất bóc lột của chủ nghĩa tư bản",
+          "C": "Khái quát đúng mục đích của chủ nghĩa tư bản là lợi nhuận",
+          "D": "Luận giải về nhiều phạm trù kinh tế như giá trị, sản phẩm rồng, tư bản, tiền lương"
+        },
+        "answerDisplay": "A. Rút ra kết luận giá trị là do hao phí lao động tạo ra",
+        "concept": "• Học thuyết giá trị - lao động của Kinh tế chính trị cổ điển Anh (W. Petty, A. Smith, D. Ricardo).",
+        "whyCorrect": "• Đóng góp to lớn nhất của KTCT cổ điển Anh là đã tìm ra luận điểm: Giá trị của hàng hóa là do lao động (hao phí lao động) tạo ra.",
+        "memoryTip": "• Đóng góp KTCT cổ điển Anh = Giá trị do hao phí lao động tạo ra."
+      }
+    },
+    {
+      "id": 20,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 20,
+      "question": "Công nghiệp hoá, hiện đại hoá đất nước phải bảo đảm",
+      "options": {
+        "A": "Xây dựng nền kinh tế khép kín và hướng nội",
+        "B": "Xây dựng nền kinh tế độc lập tự chủ",
+        "C": "Xây dựng nền kinh tế phải dựa vào sự giúp đỡ và lệ thuộc vào các nước tư bản",
+        "D": "Xây dựng nền kinh tế mở nhưng chỉ giao lưu hợp tác với các nước xã hội chủ nghĩa"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Công nghiệp hoá, hiện đại hoá đất nước phải bảo đảm",
+        "optionsVi": {
+          "A": "Xây dựng nền kinh tế khép kín và hướng nội",
+          "B": "Xây dựng nền kinh tế độc lập tự chủ",
+          "C": "Xây dựng nền kinh tế phải dựa vào sự giúp đỡ và lệ thuộc vào các nước tư bản",
+          "D": "Xây dựng nền kinh tế mở nhưng chỉ giao lưu hợp tác với các nước xã hội chủ nghĩa"
+        },
+        "answerDisplay": "B. Xây dựng nền kinh tế độc lập tự chủ",
+        "concept": "• Đường lối CNH-HĐH ở Việt Nam: Xây dựng nền kinh tế độc lập, tự chủ gắn với hội nhập quốc tế.",
+        "whyCorrect": "• Công nghiệp hóa, hiện đại hóa phải đảm bảo xây dựng nền kinh tế độc lập tự chủ để giữ vững chủ quyền quốc gia và phát triển bền vững.",
+        "memoryTip": "• CNH, HĐH ➔ Độc lập tự chủ."
+      }
+    },
+    {
+      "id": 21,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 21,
+      "question": "Việt Nam gia nhập tổ chức ASEAN trong khu vực khi nào?",
+      "options": {
+        "A": "1995",
+        "B": "1996",
+        "C": "1993",
+        "D": "1997"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Việt Nam gia nhập tổ chức ASEAN trong khu vực khi nào?",
+        "optionsVi": {
+          "A": "1995",
+          "B": "1996",
+          "C": "1993",
+          "D": "1997"
+        },
+        "answerDisplay": "A. 1995",
+        "concept": "• Mốc lịch sử hội nhập ASEAN của Việt Nam.",
+        "whyCorrect": "• Việt Nam chính thức gia nhập ASEAN vào ngày 28 tháng 7 năm 1995.",
+        "memoryTip": "• Việt Nam gia nhập ASEAN ➔ 1995."
+      }
+    },
+    {
+      "id": 22,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 22,
+      "question": "Để thực hiện hoàn thiện thể chế kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam cần hoàn thành mấy nhiệm vụ chủ yếu?",
+      "options": {
+        "A": "Ba nhiệm vụ",
+        "B": "Năm nhiệm vụ",
+        "C": "Sáu nhiệm vụ",
+        "D": "Chín nhiệm vụ"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Để thực hiện hoàn thiện thể chế kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam cần hoàn thành mấy nhiệm vụ chủ yếu?",
+        "optionsVi": {
+          "A": "Ba nhiệm vụ",
+          "B": "Năm nhiệm vụ",
+          "C": "Sáu nhiệm vụ",
+          "D": "Chín nhiệm vụ"
+        },
+        "answerDisplay": "B. Năm nhiệm vụ",
+        "concept": "• Thể chế kinh tế thị trường định hướng XHCN ở Việt Nam.",
+        "whyCorrect": "• Văn kiện Đảng xác định 5 nhiệm vụ chủ yếu để hoàn thiện thể chế kinh tế thị trường định hướng XHCN.",
+        "memoryTip": "• Nhiệm vụ hoàn thiện thể chế KTTT ➔ 5 nhiệm vụ."
+      }
+    },
+    {
+      "id": 23,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 23,
+      "question": "Quá trình công nghiệp hóa của các nước tư bản cổ điển diễn ra trong thời gian khoảng bao nhiêu năm?",
+      "options": {
+        "A": "Từ 60 - 80 năm",
+        "B": "Từ 50 - 70 năm",
+        "C": "Từ 60 - 90 năm",
+        "D": "Từ 50 - 80 năm"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Quá trình công nghiệp hóa của các nước tư bản cổ điển diễn ra trong thời gian khoảng bao nhiêu năm?",
+        "optionsVi": {
+          "A": "Từ 60 - 80 năm",
+          "B": "Từ 50 - 70 năm",
+          "C": "Từ 60 - 90 năm",
+          "D": "Từ 50 - 80 năm"
+        },
+        "answerDisplay": "A. Từ 60 - 80 năm",
+        "concept": "• Thời gian CNH cổ điển ở các nước tư bản Âu - Mỹ.",
+        "whyCorrect": "• Quá trình CNH cổ điển ở các nước tư bản kéo dài khoảng 60 đến 80 năm (từ giữa TK XVIII đến giữa TK XIX).",
+        "memoryTip": "• CNH tư bản cổ điển ➔ 60 - 80 năm."
+      }
+    },
+    {
+      "id": 24,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 24,
+      "question": "Kinh tế chính trị Mác - Lênin có những chức nào?",
+      "options": {
+        "A": "Chức năng nhận thức, chức năng thực tiễn, chức năng tư tưởng, chức năng khoa học",
+        "B": "Chức năng nhận thức, chức năng thực tiễn, chức năng khoa học, chức năng phương pháp luận",
+        "C": "Chức năng thực tiễn, chức năng tư tưởng, chức năng dự báo, chức năng phương pháp luận",
+        "D": "Chức năng nhận thức, chức năng thực tiễn, chức năng tư tưởng, chức năng phương pháp luận"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Kinh tế chính trị Mác - Lênin có những chức nào?",
+        "optionsVi": {
+          "A": "Chức năng nhận thức, chức năng thực tiễn, chức năng tư tưởng, chức năng khoa học",
+          "B": "Chức năng nhận thức, chức năng thực tiễn, chức năng khoa học, chức năng phương pháp luận",
+          "C": "Chức năng thực tiễn, chức năng tư tưởng, chức năng dự báo, chức năng phương pháp luận",
+          "D": "Chức năng nhận thức, chức năng thực tiễn, chức năng tư tưởng, chức năng phương pháp luận"
+        },
+        "answerDisplay": "D. Chức năng nhận thức, chức năng thực tiễn, chức năng tư tưởng, chức năng phương pháp luận",
+        "concept": "• Hệ thống 4 chức năng của Kinh tế chính trị Mác - Lênin.",
+        "whyCorrect": "• KTCT Mác - Lênin có 4 chức năng cơ bản: (1) Nhận thức, (2) Thực tiễn, (3) Tư tưởng, (4) Phương pháp luận.",
+        "memoryTip": "• 4 chức năng: Nhận thức · Thực tiễn · Tư tưởng · Phương pháp luận."
+      }
+    },
+    {
+      "id": 25,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 25,
+      "question": "Độc quyền nhà nước trong chủ nghĩa tư bản, sở hữu nhà nước thực hiện chức năng nào?",
+      "options": {
+        "A": "Mở rộng sản xuất tư bản chủ nghĩa",
+        "B": "Tạo điều kiện cho việc di chuyển tư bản của các tổ chức độc quyền vào các ngành sản xuất kinh doanh khác nhau",
+        "C": "Làm chỗ dựa cho sự điều tiết kinh tế nhà nước",
+        "D": "Tất cả phương án trên"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Độc quyền nhà nước trong chủ nghĩa tư bản, sở hữu nhà nước thực hiện chức năng nào?",
+        "optionsVi": {
+          "A": "Mở rộng sản xuất tư bản chủ nghĩa",
+          "B": "Tạo điều kiện cho việc di chuyển tư bản của các tổ chức độc quyền vào các ngành sản xuất kinh doanh khác nhau",
+          "C": "Làm chỗ dựa cho sự điều tiết kinh tế nhà nước",
+          "D": "Tất cả phương án trên"
+        },
+        "answerDisplay": "D. Tất cả phương án trên",
+        "concept": "• Sở hữu nhà nước trong độc quyền nhà nước tư bản chủ nghĩa.",
+        "whyCorrect": "• Sở hữu nhà nước thực hiện cả 3 chức năng: mở rộng sản xuất tư bản, tạo điều kiện di chuyển tư bản giữa các ngành, và làm chỗ dựa cho nhà nước điều tiết kinh tế.",
+        "memoryTip": "• Sở hữu NN tư sản ➔ Tất cả phương án trên."
+      }
+    },
+    {
+      "id": 26,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 26,
+      "question": "Mệnh đề nào sau đây là ý không đúng về lao động phức tạp?",
+      "options": {
+        "A": "Lao động phức tạp là lao động trí tuệ của người lao động có trình độ cao",
+        "B": "Lao động phức tạp là lao động trải qua đào tạo, huấn luyện",
+        "C": "Trong cùng một thời gian lao động, lao động phức tạp tạo ra nhiều giá trị hơn lao động giản đơn."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Mệnh đề nào sau đây là ý không đúng về lao động phức tạp?",
+        "optionsVi": {
+          "A": "Lao động phức tạp là lao động trí tuệ của người lao động có trình độ cao",
+          "B": "Lao động phức tạp là lao động trải qua đào tạo, huấn luyện",
+          "C": "Trong cùng một thời gian lao động, lao động phức tạp tạo ra nhiều giá trị hơn lao động giản đơn."
+        },
+        "answerDisplay": "A. Lao động phức tạp là lao động trí tuệ của người lao động có trình độ cao",
+        "concept": "• Khái niệm Lao động phức tạp trong lý luận giá trị Mác - Lênin.",
+        "whyCorrect": "• Lao động phức tạp là lao động đòi hỏi phải qua huấn luyện, đào tạo chuyên môn mới làm được (bao gồm cả lao động thợ kỹ thuật, tay nghề cao), chứ không đồng nghĩa duy nhất với 'lao động trí tuệ trình độ cao'. Nhận định A là không hoàn toàn đúng.",
+        "memoryTip": "• Lao động phức tạp = Cần đào tạo, huấn luyện (không chỉ là lao động trí tuệ)."
+      }
+    },
+    {
+      "id": 27,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 27,
+      "question": "Ai là người đề xuất ra ba loại thương nghiệp (trao đổi tự nhiên, trao đổi tiền tệ, trao đổi thông qua mục đích làm giàu) và hai loại kinh doanh (kinh tế, sản xuất của cải)?",
+      "options": {
+        "A": "Aristoteles",
+        "B": "Platon",
+        "C": "Xenophon",
+        "D": "Karl Marx"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Ai là người đề xuất ra ba loại thương nghiệp (trao đổi tự nhiên, trao đổi tiền tệ, trao đổi thông qua mục đích làm giàu) và hai loại kinh doanh (kinh tế, sản xuất của cải)?",
+        "optionsVi": {
+          "A": "Aristoteles",
+          "B": "Platon",
+          "C": "Xenophon",
+          "D": "Karl Marx"
+        },
+        "answerDisplay": "A. Aristoteles",
+        "concept": "• Lịch sử tư tưởng kinh tế thời Cổ đại.",
+        "whyCorrect": "• Aristoteles (Aristotle) là nhà tư tưởng cổ đại Hy Lạp đầu tiên phân tích sâu sắc về 3 loại thương nghiệp và 2 loại hình kinh doanh.",
+        "memoryTip": "• Phân tích thương nghiệp cổ đại ➔ Aristoteles."
+      }
+    },
+    {
+      "id": 28,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 28,
+      "question": "Kinh tế thị trường được hiểu là",
+      "options": {
+        "A": "Do chủ nghĩa tư bản sinh ra",
+        "B": "Có cùng bản chất với kinh tế hàng hóa",
+        "C": "Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội",
+        "D": "Là sản phẩm riêng của chủ nghĩa tư bản"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Kinh tế thị trường được hiểu là",
+        "optionsVi": {
+          "A": "Do chủ nghĩa tư bản sinh ra",
+          "B": "Có cùng bản chất với kinh tế hàng hóa",
+          "C": "Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội",
+          "D": "Là sản phẩm riêng của chủ nghĩa tư bản"
+        },
+        "answerDisplay": "B. Có cùng bản chất với kinh tế hàng hóa",
+        "concept": "• Mối quan hệ giữa kinh tế hàng hóa và kinh tế thị trường.",
+        "whyCorrect": "• Kinh tế thị trường là trình độ phát triển cao của kinh tế hàng hóa, có cùng bản chất là dựa trên sản xuất để trao đổi, mua bán.",
+        "memoryTip": "• Kinh tế thị trường = Cùng bản chất với kinh tế hàng hóa."
+      }
+    },
+    {
+      "id": 29,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 29,
+      "question": "Về vị trí lịch sử, kinh tế thị trường có đặc điểm gì?",
+      "options": {
+        "A": "Do chủ nghĩa tư bản sinh ra",
+        "B": "Có cùng bản chất với kinh tế hàng hóa",
+        "C": "Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội",
+        "D": "Là sản phẩm riêng của chủ nghĩa tư bản"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "variantOfStem": "Kinh tế thị trường được hiểu là",
+      "explanation": {
+        "questionVi": "Về vị trí lịch sử, kinh tế thị trường có đặc điểm gì?",
+        "optionsVi": {
+          "A": "Do chủ nghĩa tư bản sinh ra",
+          "B": "Có cùng bản chất với kinh tế hàng hóa",
+          "C": "Tồn tại chủ quan trong thời kỳ quá độ lên chủ nghĩa xã hội",
+          "D": "Là sản phẩm riêng của chủ nghĩa tư bản"
+        },
+        "answerDisplay": "B. Có cùng bản chất với kinh tế hàng hóa",
+        "concept": "• Bản chất kinh tế thị trường (câu đồng bộ stem với câu 28).",
+        "whyCorrect": "• Kinh tế thị trường có cùng bản chất với kinh tế hàng hóa, ra đời từ sự phát triển của phân công lao động xã hội và sở hữu khác nhau về TLSX.",
+        "memoryTip": "• Cùng bản chất với kinh tế hàng hóa."
+      }
+    },
+    {
+      "id": 30,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 30,
+      "question": "Điều kiện để ra đời và tồn tại của sản xuất hàng hóa là",
+      "options": {
+        "A": "Phân công lao động xã hội và sự tách biệt về kinh tế giữa các chủ thể sản xuất",
+        "B": "Phân công lao động trong các gia đình xuất hiện",
+        "C": "Chế độ tư hữu về tư liệu sản xuất",
+        "D": "Nhu cầu trao đổi trong xã hội tăng lên"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Điều kiện để ra đời và tồn tại của sản xuất hàng hóa là",
+        "optionsVi": {
+          "A": "Phân công lao động xã hội và sự tách biệt về kinh tế giữa các chủ thể sản xuất",
+          "B": "Phân công lao động trong các gia đình xuất hiện",
+          "C": "Chế độ tư hữu về tư liệu sản xuất",
+          "D": "Nhu cầu trao đổi trong xã hội tăng lên"
+        },
+        "answerDisplay": "A. Phân công lao động xã hội và sự tách biệt về kinh tế giữa các chủ thể sản xuất",
+        "concept": "• 2 điều kiện ra đời và tồn tại của sản xuất hàng hóa (K. Marx).",
+        "whyCorrect": "• Sản xuất hàng hóa ra đời khi có đủ 2 điều kiện: (1) Phân công lao động xã hội, (2) Sự tách biệt tương đối về mặt kinh tế giữa các chủ thể sản xuất.",
+        "memoryTip": "• 2 điều kiện SXHH = Phân công LĐXH + Tách biệt kinh tế giữa các chủ thể."
+      }
+    },
+    {
+      "id": 31,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 31,
+      "question": "Con đường công nghiệp hóa của Liên Xô thường ưu tiên lĩnh vực nào?",
+      "options": {
+        "A": "Công nghiệp nặng",
+        "B": "Công nghiệp nhẹ",
+        "C": "Công nghiệp khai khoáng",
+        "D": "Công nghiệp chế tạo"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Con đường công nghiệp hóa của Liên Xô thường ưu tiên lĩnh vực nào?",
+        "optionsVi": {
+          "A": "Công nghiệp nặng",
+          "B": "Công nghiệp nhẹ",
+          "C": "Công nghiệp khai khoáng",
+          "D": "Công nghiệp chế tạo"
+        },
+        "answerDisplay": "A. Công nghiệp nặng",
+        "concept": "• Mô hình công nghiệp hóa xã hội chủ nghĩa kiểu Liên Xô.",
+        "whyCorrect": "• Mô hình CNH của Liên Xô ưu tiên phát triển công nghiệp nặng trước để nhanh chóng xây dựng cơ sở vật chất - kỹ thuật tự chủ.",
+        "memoryTip": "• CNH kiểu Liên Xô ➔ Ưu tiên Công nghiệp nặng."
+      }
+    },
+    {
+      "id": 32,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 32,
+      "question": "Sự tách biệt về mặt kinh tế giữa các chủ thể sản xuất xuất hiện dựa trên cơ sở nào?",
+      "options": {
+        "A": "Sự tách biệt về tổ chức sản xuất",
+        "B": "Sự tách biệt về phân phối sản phẩm",
+        "C": "Sự tách biệt về quyền sở hữu",
+        "D": "Sự tách biệt về vai trò sản xuất"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Sự tách biệt về mặt kinh tế giữa các chủ thể sản xuất xuất hiện dựa trên cơ sở nào?",
+        "optionsVi": {
+          "A": "Sự tách biệt về tổ chức sản xuất",
+          "B": "Sự tách biệt về phân phối sản phẩm",
+          "C": "Sự tách biệt về quyền sở hữu",
+          "D": "Sự tách biệt về vai trò sản xuất"
+        },
+        "answerDisplay": "C. Sự tách biệt về quyền sở hữu",
+        "concept": "• Cơ sở của sự tách biệt về mặt kinh tế giữa các chủ thể sản xuất.",
+        "whyCorrect": "• Sự tách biệt về kinh tế giữa những người sản xuất dựa trên chế độ tư hữu hoặc các hình thức sở hữu khác nhau về tư liệu sản xuất.",
+        "memoryTip": "• Tách biệt kinh tế dựa trên ➔ Quyền sở hữu (TLSX)."
+      }
+    },
+    {
+      "id": 33,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 33,
+      "question": "V - Tư bản khả biến là:",
+      "options": {
+        "A": "Bộ phận trực tiếp để tạo ra giá trị sử dụng",
+        "B": "Bộ phận trực tiếp để tạo ra giá trị thặng dư",
+        "C": "Bộ phận trực tiếp để tạo ra sản phẩm thặng dư",
+        "D": "Bộ phận gián tiếp để tạo ra giá trị thặng dư"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "V - Tư bản khả biến là:",
+        "optionsVi": {
+          "A": "Bộ phận trực tiếp để tạo ra giá trị sử dụng",
+          "B": "Bộ phận trực tiếp để tạo ra giá trị thặng dư",
+          "C": "Bộ phận trực tiếp để tạo ra sản phẩm thặng dư",
+          "D": "Bộ phận gián tiếp để tạo ra giá trị thặng dư"
+        },
+        "answerDisplay": "B. Bộ phận trực tiếp để tạo ra giá trị thặng dư",
+        "concept": "• Tư bản khả biến (v): Bộ phận tư bản dùng để mua sức lao động.",
+        "whyCorrect": "• Tư bản khả biến (v) là bộ phận tư bản trực tiếp tạo ra giá trị thặng dư (m) vì sức lao động có khả năng tạo ra giá trị mới lớn hơn giá trị bản thân nó.",
+        "memoryTip": "• Tư bản khả biến (v) ➔ Trực tiếp tạo ra giá trị thặng dư."
+      }
+    },
+    {
+      "id": 34,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 34,
+      "question": "Bản chất khủng hoảng thừa trong nền kinh tế là:",
+      "options": {
+        "A": "Khủng hoảng sản xuất \"thừa\" so với sức mua có hạn của xã hội.",
+        "B": "Khủng hoảng sản xuất \"thừa\" so với nhu cầu xã hội.",
+        "C": "Khủng hoảng sản xuất \"thiếu hụt\" so với sức mua."
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Bản chất khủng hoảng thừa trong nền kinh tế là:",
+        "optionsVi": {
+          "A": "Khủng hoảng sản xuất \"thừa\" so với sức mua có hạn của xã hội.",
+          "B": "Khủng hoảng sản xuất \"thừa\" so với nhu cầu xã hội.",
+          "C": "Khủng hoảng sản xuất \"thiếu hụt\" so với sức mua."
+        },
+        "answerDisplay": "A. Khủng hoảng sản xuất \"thừa\" so với sức mua có hạn của xã hội.",
+        "concept": "• Bản chất khủng hoảng kinh tế trong chủ nghĩa tư bản.",
+        "whyCorrect": "• Khủng hoảng kinh tế trong CNTB là khủng hoảng sản xuất 'thừa' tương đối, tức thừa so với sức mua có hạn của quần chúng lao động.",
+        "memoryTip": "• Khủng hoảng CNTB = Thừa so với sức mua có hạn của xã hội."
+      }
+    },
+    {
+      "id": 35,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 35,
+      "question": "Có mấy nguyên nhân chính dẫn đến sự hình thành độc quyền nhà nước trong chủ nghĩa tư bản?",
+      "options": {
+        "A": "Ba nguyên nhân",
+        "B": "Bốn nguyên nhân",
+        "C": "Năm nguyên nhân",
+        "D": "Sáu nguyên nhân"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Có mấy nguyên nhân chính dẫn đến sự hình thành độc quyền nhà nước trong chủ nghĩa tư bản?",
+        "optionsVi": {
+          "A": "Ba nguyên nhân",
+          "B": "Bốn nguyên nhân",
+          "C": "Năm nguyên nhân",
+          "D": "Sáu nguyên nhân"
+        },
+        "answerDisplay": "B. Bốn nguyên nhân",
+        "concept": "• Nguyên nhân hình thành độc quyền nhà nước trong CNTB.",
+        "whyCorrect": "• Giáo trình ghi nhận 4 nguyên nhân chính dẫn đến sự ra đời của độc quyền nhà nước trong CNTB.",
+        "memoryTip": "• Độc quyền nhà nước ➔ 4 nguyên nhân chính."
+      }
+    },
+    {
+      "id": 36,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 36,
+      "question": "Tiền công thực tế là:",
+      "options": {
+        "A": "Tiền công được biểu hiện bằng số lượng hàng hóa tiêu dùng và dịch vụ mà công nhân mua được bằng tiền công danh nghĩa của mình",
+        "B": "Tiền công được biểu hiện bằng số lượng hàng hóa tiêu dùng và dịch vụ mà công nhân mua được bằng tiền công thực tế của mình",
+        "C": "Tiền công được biểu hiện bằng số tư liệu sản xuất và tiêu dùng và dịch vụ mà công nhân mua được bằng tiền công thực tế của mình"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Tiền công thực tế là:",
+        "optionsVi": {
+          "A": "Tiền công được biểu hiện bằng số lượng hàng hóa tiêu dùng và dịch vụ mà công nhân mua được bằng tiền công danh nghĩa của mình",
+          "B": "Tiền công được biểu hiện bằng số lượng hàng hóa tiêu dùng và dịch vụ mà công nhân mua được bằng tiền công thực tế của mình",
+          "C": "Tiền công được biểu hiện bằng số tư liệu sản xuất và tiêu dùng và dịch vụ mà công nhân mua được bằng tiền công thực tế của mình"
+        },
+        "answerDisplay": "A. Tiền công được biểu hiện bằng số lượng hàng hóa tiêu dùng và dịch vụ mà công nhân mua được bằng tiền công danh nghĩa của mình",
+        "concept": "• Khái niệm Tiền công thực tế trong CNTB.",
+        "whyCorrect": "• Tiền công thực tế là số lượng hàng hóa tiêu dùng và dịch vụ mà công nhân mua được bằng tiền công danh nghĩa sau khi trừ thuế và tính đến biến động giá cả.",
+        "memoryTip": "• Tiền công thực tế = Lượng hàng hóa/dịch vụ mua được bằng tiền công danh nghĩa."
+      }
+    },
+    {
+      "id": 37,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 37,
+      "question": "Biểu hiện mới của tích tụ và tập trung tư bản trong giai đoạn hiện nay là",
+      "options": {
+        "A": "Sự xuất hiện của các công ty độc quyền xuyên quốc gia",
+        "B": "Sự bành trướng lãnh thổ",
+        "C": "Sự tranh giành, xung đột lợi ích về kinh tế",
+        "D": "Sự xung đột về chính trị"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Biểu hiện mới của tích tụ và tập trung tư bản trong giai đoạn hiện nay là",
+        "optionsVi": {
+          "A": "Sự xuất hiện của các công ty độc quyền xuyên quốc gia",
+          "B": "Sự bành trướng lãnh thổ",
+          "C": "Sự tranh giành, xung đột lợi ích về kinh tế",
+          "D": "Sự xung đột về chính trị"
+        },
+        "answerDisplay": "A. Sự xuất hiện của các công ty độc quyền xuyên quốc gia",
+        "concept": "• Biểu hiện mới của tập trung tư bản trong độc quyền hiện đại.",
+        "whyCorrect": "• Sự xuất hiện và xưng hùng xưng bá của các công ty độc quyền xuyên quốc gia (TNCs) là biểu hiện mới nổi bật của tích tụ và tập trung tư bản ngày nay.",
+        "memoryTip": "• Tập trung tư bản hiện đại ➔ Công ty độc quyền xuyên quốc gia (TNC)."
+      }
+    },
+    {
+      "id": 38,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 38,
+      "question": "Những biểu hiện của độc quyền nhà nước trong chủ nghĩa tư bản là:",
+      "options": {
+        "A": "Sự kết hợp nhân sự giữa tổ chức độc quyền cùng với nhà nước; sự hình thành, phát triển của sở hữu nhà nước",
+        "B": "Sự kết hợp về nhân sự giữa tổ chức độc quyền cùng với nhà nước; sự hình thành, phát triển của sở hữu nhà nước, sự điều tiết kinh tế của nhà nước tư sản.",
+        "C": "Sự kết hợp về nhân sự giữa tổ chức độc quyền cùng với nhà nước; sự hình thành, phát triển của sở hữu nhà nước, sự điều tiết kinh tế đối ngoại của nhà nước tư sản.",
+        "D": "Sự kết hợp về nhân sự giữa tổ chức độc quyền với nhà nước; sự điều tiết kinh tế của nhà nước tư sản"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Những biểu hiện của độc quyền nhà nước trong chủ nghĩa tư bản là:",
+        "optionsVi": {
+          "A": "Sự kết hợp nhân sự giữa tổ chức độc quyền cùng với nhà nước; sự hình thành, phát triển của sở hữu nhà nước",
+          "B": "Sự kết hợp về nhân sự giữa tổ chức độc quyền cùng với nhà nước; sự hình thành, phát triển của sở hữu nhà nước, sự điều tiết kinh tế của nhà nước tư sản.",
+          "C": "Sự kết hợp về nhân sự giữa tổ chức độc quyền cùng với nhà nước; sự hình thành, phát triển của sở hữu nhà nước, sự điều tiết kinh tế đối ngoại của nhà nước tư sản.",
+          "D": "Sự kết hợp về nhân sự giữa tổ chức độc quyền với nhà nước; sự điều tiết kinh tế của nhà nước tư sản"
+        },
+        "answerDisplay": "B. Sự kết hợp về nhân sự giữa tổ chức độc quyền cùng với nhà nước; sự hình thành, phát triển của sở hữu nhà nước, sự điều tiết kinh tế của nhà nước tư sản.",
+        "concept": "• 3 biểu hiện chủ yếu của độc quyền nhà nước trong CNTB.",
+        "whyCorrect": "• Độc quyền NN biểu hiện qua: (1) Kết hợp nhân sự giữa tổ chức độc quyền và nhà nước, (2) Sự phát triển của sở hữu nhà nước, (3) Sự điều tiết kinh tế của nhà nước tư sản.",
+        "memoryTip": "• Biểu hiện độc quyền NN = Nhân sự + Sở hữu nhà nước + Điều tiết kinh tế."
+      }
+    },
+    {
+      "id": 39,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 39,
+      "question": "Nội dung về kinh tế chính trị của C. Mác và Ph. Ăngghen được trình bày nhiều nhất trong tác phẩm nào?",
+      "options": {
+        "A": "Tư Bản",
+        "B": "Hệ tư tưởng Đức",
+        "C": "Tuyên ngôn của Đảng Cộng sản",
+        "D": "Biện chứng của tự nhiên"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Nội dung về kinh tế chính trị của C. Mác và Ph. Ăngghen được trình bày nhiều nhất trong tác phẩm nào?",
+        "optionsVi": {
+          "A": "Tư Bản",
+          "B": "Hệ tư tưởng Đức",
+          "C": "Tuyên ngôn của Đảng Cộng sản",
+          "D": "Biện chứng của tự nhiên"
+        },
+        "answerDisplay": "A. Tư Bản",
+        "concept": "• Tác phẩm lý luận kinh tế vĩ đại nhất của K. Marx và F. Engels.",
+        "whyCorrect": "• Tác phẩm 'Tư Bản' (Das Kapital) là nơi K. Marx trình bày toàn bộ hệ thống lý luận Kinh tế chính trị Mác - Lênin một cách đồ sộ và hoàn chỉnh nhất.",
+        "memoryTip": "• Tác phẩm KTCT lớn nhất ➔ Tư Bản."
+      }
+    },
+    {
+      "id": 40,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 40,
+      "question": "Sản xuất hàng hóa ra đời dựa trên",
+      "options": {
+        "A": "Một điều kiện",
+        "B": "Hai điều kiện",
+        "C": "Ba điều kiện",
+        "D": "Bốn điều kiện"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Sản xuất hàng hóa ra đời dựa trên",
+        "optionsVi": {
+          "A": "Một điều kiện",
+          "B": "Hai điều kiện",
+          "C": "Ba điều kiện",
+          "D": "Bốn điều kiện"
+        },
+        "answerDisplay": "B. Hai điều kiện",
+        "concept": "• Điều kiện ra đời sản xuất hàng hóa.",
+        "whyCorrect": "• Sản xuất hàng hóa ra đời dựa trên đúng 2 điều kiện (phân công LĐXH và sự tách biệt về kinh tế giữa các chủ thể).",
+        "memoryTip": "• Sản xuất hàng hóa ➔ 2 điều kiện."
+      }
+    },
+    {
+      "id": 41,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 41,
+      "question": "Cách mạng công nghiệp lần thứ tư sẽ làm mất đi lợi thế của các nước đang phát triển về",
+      "options": {
+        "A": "Tài nguyên thiên nhiên, công nhân giá rẻ",
+        "B": "Khoáng sản, sức lao động",
+        "C": "Khoa học công nghệ, nhân công chất lượng cao"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cách mạng công nghiệp lần thứ tư sẽ làm mất đi lợi thế của các nước đang phát triển về",
+        "optionsVi": {
+          "A": "Tài nguyên thiên nhiên, công nhân giá rẻ",
+          "B": "Khoáng sản, sức lao động",
+          "C": "Khoa học công nghệ, nhân công chất lượng cao"
+        },
+        "answerDisplay": "A. Tài nguyên thiên nhiên, công nhân giá rẻ",
+        "concept": "• Tác động của Cách mạng công nghiệp lần thứ tư (4.0).",
+        "whyCorrect": "• CMCN 4.0 với tự động hóa, AI làm giảm vai trò của lao động phổ thông, khiến các nước đang phát triển mất đi lợi thế về tài nguyên thiên nhiên và công nhân giá rẻ.",
+        "memoryTip": "• CMCN 4.0 mất lợi thế ➔ Tài nguyên & Công nhân giá rẻ."
+      }
+    },
+    {
+      "id": 42,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 42,
+      "question": "Đại hội nào đã xác định kinh tế thị trường định hướng xã hội chủ nghĩa là \"một kiểu tổ chức kinh tế vừa tuân theo quy luật của kinh tế thị trường vừa dựa trên cơ sở và chịu sự dẫn dắt chi phối bởi các nguyên tắc và bản chất của chủ nghĩa xã hội?",
+      "options": {
+        "A": "Đại hội Đảng toàn quốc lần thứ VI",
+        "B": "Đại hội Đảng toàn quốc lần thứ VII",
+        "C": "Đại hội Đảng toàn quốc lần thứ VIII",
+        "D": "Đại hội Đảng toàn quốc lần thứ IX"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Đại hội nào đã xác định kinh tế thị trường định hướng xã hội chủ nghĩa là \"một kiểu tổ chức kinh tế vừa tuân theo quy luật của kinh tế thị trường vừa dựa trên cơ sở và chịu sự dẫn dắt chi phối bởi các nguyên tắc và bản chất của chủ nghĩa xã hội?",
+        "optionsVi": {
+          "A": "Đại hội Đảng toàn quốc lần thứ VI",
+          "B": "Đại hội Đảng toàn quốc lần thứ VII",
+          "C": "Đại hội Đảng toàn quốc lần thứ VIII",
+          "D": "Đại hội Đảng toàn quốc lần thứ IX"
+        },
+        "answerDisplay": "D. Đại hội Đảng toàn quốc lần thứ IX",
+        "concept": "• Lịch sử đường lối đổi mới kinh tế của Đảng Cộng sản Việt Nam.",
+        "whyCorrect": "• Đại hội IX của Đảng (năm 2001) đã chính thức xác định mô hình Kinh tế thị trường định hướng XHCN là mô hình kinh tế tổng quát trong thời kỳ quá độ.",
+        "memoryTip": "• Khái niệm Kinh tế thị trường định hướng XHCN ➔ Đại hội IX (2001)."
+      }
+    },
+    {
+      "id": 43,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 43,
+      "question": "Lý thuyết bàn tay vô hình của Adam Smith được hiểu là: (chọn 3 phương án đúng)",
+      "options": {
+        "A": "Người bán và người mua, phân bố nguồn lực kinh tế đạt được hiệu quả xã hội lớn nhất mà không cần sự can thiệp của chính phủ",
+        "B": "Mô tả khả năng của cơ chế thị trường trong việc điều chỉnh cung cầu trên thị trường.",
+        "C": "Các cá nhân tham gia muốn tối đa hóa lợi nhuận cho mình",
+        "D": "Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình"
+      },
+      "answer": "ABC",
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Lý thuyết bàn tay vô hình của Adam Smith được hiểu là: (chọn 3 phương án đúng)",
+        "optionsVi": {
+          "A": "Người bán và người mua, phân bố nguồn lực kinh tế đạt được hiệu quả xã hội lớn nhất mà không cần sự can thiệp của chính phủ",
+          "B": "Mô tả khả năng của cơ chế thị trường trong việc điều chỉnh cung cầu trên thị trường.",
+          "C": "Các cá nhân tham gia muốn tối đa hóa lợi nhuận cho mình",
+          "D": "Mọi người đều bị bàn tay vô hình dẫn tới kết quả làm lợi cho chính mình"
+        },
+        "answerDisplay": "A, B, C",
+        "concept": "• Cơ chế 'Bàn tay vô hình' của Adam Smith (Cơ chế thị trường tự do).",
+        "whyCorrect": "• 'Bàn tay vô hình' khẳng định cơ chế thị trường tự điều chỉnh cung-cầu, phân bổ nguồn lực hiệu quả khi cá nhân theo đuổi lợi ích chính đáng của mình mà không cần sự can thiệp trực tiếp của chính phủ.",
+        "memoryTip": "• Bàn tay vô hình (A. Smith) = Chọn 3 phương án A, B, C."
+      }
+    },
+    {
+      "id": 44,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 44,
+      "question": "Chọn ý đúng về tăng cường độ lao động. Khi cường độ lao động tăng lên thì",
+      "options": {
+        "A": "Số lượng hàng hoá làm ra trong một đơn vị thời gian không đổi",
+        "B": "Số lượng lao động hao phí trong thời gian đó không thay đổi",
+        "C": "Giá trị 1 đơn vị hàng hoá giảm đi",
+        "D": "Tổng số lượng hàng hóa làm ra của một người tăng lên"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Chọn ý đúng về tăng cường độ lao động. Khi cường độ lao động tăng lên thì",
+        "optionsVi": {
+          "A": "Số lượng hàng hoá làm ra trong một đơn vị thời gian không đổi",
+          "B": "Số lượng lao động hao phí trong thời gian đó không thay đổi",
+          "C": "Giá trị 1 đơn vị hàng hoá giảm đi",
+          "D": "Tổng số lượng hàng hóa làm ra của một người tăng lên"
+        },
+        "answerDisplay": "D. Tổng số lượng hàng hóa làm ra của một người tăng lên",
+        "concept": "• Tác động của việc tăng Cường độ lao động.",
+        "whyCorrect": "• Tăng cường độ lao động là làm cho lao động khẩn trương hơn; trong một đơn vị thời gian hao phí lao động tăng lên, làm tổng số hàng hóa tạo ra tăng lên nhưng giá trị 1 đơn vị hàng hóa không đổi.",
+        "memoryTip": "• Tăng cường độ LĐ ➔ Tổng hàng hóa tăng lên (giá trị 1 SP giữ nguyên)."
+      }
+    },
+    {
+      "id": 45,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 45,
+      "question": "Trên giác độ kinh tế chính trị, lao động trừu tượng là",
+      "options": {
+        "A": "Là phạm trù của mọi nền kinh tế hàng hoá",
+        "B": "Là phạm trù riêng của kinh tế thị trường",
+        "C": "Là phạm trù chung của mọi nền kinh tế"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trên giác độ kinh tế chính trị, lao động trừu tượng là",
+        "optionsVi": {
+          "A": "Là phạm trù của mọi nền kinh tế hàng hoá",
+          "B": "Là phạm trù riêng của kinh tế thị trường",
+          "C": "Là phạm trù chung của mọi nền kinh tế"
+        },
+        "answerDisplay": "A. Là phạm trù của mọi nền kinh tế hàng hoá",
+        "concept": "• Tính chất xã hội của Lao động trừu tượng.",
+        "whyCorrect": "• Lao động trừu tượng tạo ra giá trị của hàng hóa, là thuộc tính mang tính xã hội và là phạm trù riêng của mọi nền kinh tế hàng hóa.",
+        "memoryTip": "• Lao động trừu tượng ➔ Phạm trù của mọi nền kinh tế hàng hóa."
+      }
+    },
+    {
+      "id": 46,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 46,
+      "question": "Xét về bản chất, thì lợi ích kinh tế được hiểu là:",
+      "options": {
+        "A": "Quan hệ kinh tế xã hội",
+        "B": "Quan hệ xã hội, mang tính lịch sử",
+        "C": "Quan hệ sản xuất",
+        "D": "Quan hệ chính trị mang tính lợi ích"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Xét về bản chất, thì lợi ích kinh tế được hiểu là:",
+        "optionsVi": {
+          "A": "Quan hệ kinh tế xã hội",
+          "B": "Quan hệ xã hội, mang tính lịch sử",
+          "C": "Quan hệ sản xuất",
+          "D": "Quan hệ chính trị mang tính lợi ích"
+        },
+        "answerDisplay": "C. Quan hệ sản xuất",
+        "concept": "• Bản chất của Lợi ích kinh tế.",
+        "whyCorrect": "• Xét về bản chất, lợi ích kinh tế phản ánh quan hệ sản xuất giữa các chủ thể trong nền sản xuất xã hội.",
+        "memoryTip": "• Bản chất lợi ích kinh tế = Quan hệ sản xuất."
+      },
+      "_pilotFixed": "2026-07-23-v1"
+    },
+    {
+      "id": 47,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 47,
+      "question": "Xét về bản chất, lợi ích kinh tế được hiểu như thế nào?",
+      "options": {
+        "A": "Quan hệ kinh tế xã hội",
+        "B": "Quan hệ xã hội, mang tính lịch sử",
+        "C": "Quan hệ sản xuất",
+        "D": "Quan hệ chính trị mang tính lợi ích"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "variantOfStem": "Xét về bản chất, thì lợi ích kinh tế được hiểu là:",
+      "explanation": {
+        "questionVi": "Xét về bản chất, lợi ích kinh tế được hiểu như thế nào?",
+        "optionsVi": {
+          "A": "Quan hệ kinh tế xã hội",
+          "B": "Quan hệ xã hội, mang tính lịch sử",
+          "C": "Quan hệ sản xuất",
+          "D": "Quan hệ chính trị mang tính lợi ích"
+        },
+        "answerDisplay": "C. Quan hệ sản xuất",
+        "concept": "• Bản chất lợi ích kinh tế (câu đồng bộ stem với câu 46).",
+        "whyCorrect": "• Lợi ích kinh tế về bản chất là phản ánh các quan hệ sản xuất (Đã sửa lỗi gõ 'hiều' ➔ 'hiểu' ở đề bài).",
+        "memoryTip": "• Bản chất lợi ích kinh tế = Quan hệ sản xuất."
+      },
+      "_pilotFixed": "2026-07-23-v1"
+    },
+    {
+      "id": 48,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 48,
+      "question": "Cách mạng công nghiệp lần thứ nhất diễn ra trong thời gian nào?",
+      "options": {
+        "A": "Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
+        "B": "Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
+        "C": "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+        "D": "Từ giữa thế kỷ XIX đến giữa thế kỷ XX"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cách mạng công nghiệp lần thứ nhất diễn ra trong thời gian nào?",
+        "optionsVi": {
+          "A": "Từ giữa thế kỷ XV đến giữa thế kỷ XIX",
+          "B": "Từ giữa thế kỷ XVI đến giữa thế kỷ XVII",
+          "C": "Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+          "D": "Từ giữa thế kỷ XIX đến giữa thế kỷ XX"
+        },
+        "answerDisplay": "C. Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+        "concept": "• Mốc lịch sử Cách mạng công nghiệp lần thứ nhất.",
+        "whyCorrect": "• Cách mạng công nghiệp lần thứ nhất khởi phát ở Anh và diễn ra từ giữa thế kỷ XVIII đến giữa thế kỷ XIX (gắn liền với máy hơi nước của James Watt).",
+        "memoryTip": "• CMCN lần 1: Giữa TK XVIII ➔ Giữa TK XIX."
+      }
+    },
+    {
+      "id": 49,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 49,
+      "question": "Yếu tố nào quyết định đến sự hình thành của cách mạng công nghiệp.",
+      "options": {
+        "A": "Sự phát triển vượt bậc của quan hệ sản xuất",
+        "B": "Phương thức sản xuất mới ra đời",
+        "C": "Sự phát triển nhảy vọt về trình độ của tư liệu lao động",
+        "D": "Các phát minh sáng chế của các nhà khoa học trên mọi lĩnh vực"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Yếu tố nào quyết định đến sự hình thành của cách mạng công nghiệp.",
+        "optionsVi": {
+          "A": "Sự phát triển vượt bậc của quan hệ sản xuất",
+          "B": "Phương thức sản xuất mới ra đời",
+          "C": "Sự phát triển nhảy vọt về trình độ của tư liệu lao động",
+          "D": "Các phát minh sáng chế của các nhà khoa học trên mọi lĩnh vực"
+        },
+        "answerDisplay": "C. Sự phát triển nhảy vọt về trình độ của tư liệu lao động",
+        "concept": "• Yếu tố quyết định sự hình thành Cách mạng công nghiệp.",
+        "whyCorrect": "• CMCN trước hết là sự phát triển nhảy vọt về trình độ của tư liệu lao động (đặc biệt là máy móc thay thế lao động thủ công).",
+        "memoryTip": "• Quyết định hình thành CMCN = Phát triển nhảy vọt về Tư liệu lao động."
+      }
+    },
+    {
+      "id": 50,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 50,
+      "question": "Nguồn vốn để công nghiệp hóa ở các nước tư bản cổ điển lấy từ đâu?",
+      "options": {
+        "A": "Cướp bóc thuộc địa",
+        "B": "Khai thác lao động làm thuê",
+        "C": "Làm phá sản những người sản xuất nhỏ trong nông nghiệp",
+        "D": "Tất cả phương án trên"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Nguồn vốn để công nghiệp hóa ở các nước tư bản cổ điển lấy từ đâu?",
+        "optionsVi": {
+          "A": "Cướp bóc thuộc địa",
+          "B": "Khai thác lao động làm thuê",
+          "C": "Làm phá sản những người sản xuất nhỏ trong nông nghiệp",
+          "D": "Tất cả phương án trên"
+        },
+        "answerDisplay": "D. Tất cả phương án trên",
+        "concept": "• Nguồn gốc tích lũy vốn CNH tư bản cổ điển.",
+        "whyCorrect": "• Nguồn vốn CNH tư bản cổ điển đến từ cả 3 nguồn: Cướp bóc thuộc địa, bóc lột công nhân làm thuê trong nước, và tước đoạt tài sản của người sản xuất nhỏ.",
+        "memoryTip": "• Nguồn vốn CNH tư bản cổ điển ➔ Tất cả phương án trên."
+      }
+    },
+    {
+      "id": 51,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 51,
+      "question": "Nguồn gốc nào không đúng với nguồn vốn công nghiệp hóa ở các nước tư bản cổ điển?",
+      "options": {
+        "A": "Cướp bóc thuộc địa",
+        "B": "Khai thác lao động làm thuê",
+        "C": "Làm phá sản những người sản xuất nhỏ trong nông nghiệp",
+        "D": "Đi vay nhà nước"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "variantOfStem": "Nguồn vốn để công nghiệp hóa ở các nước tư bản cổ điển lấy từ đâu?",
+      "explanation": {
+        "questionVi": "Nguồn gốc nào không đúng với nguồn vốn công nghiệp hóa ở các nước tư bản cổ điển?",
+        "optionsVi": {
+          "A": "Cướp bóc thuộc địa",
+          "B": "Khai thác lao động làm thuê",
+          "C": "Làm phá sản những người sản xuất nhỏ trong nông nghiệp",
+          "D": "Đi vay nhà nước"
+        },
+        "answerDisplay": "D. Đi vay nhà nước",
+        "concept": "• Nguồn gốc tích lũy vốn CNH tư bản cổ điển (câu hỏi ngoại trừ).",
+        "whyCorrect": "• Các nước tư bản cổ điển không tích lũy vốn bằng cách 'Đi vay nhà nước' (mà ngược lại nhà nước tư sản vay vốn của tư bản tư nhân). (Đã sửa lỗi gõ 'tư bàn' ➔ 'tư bản').",
+        "memoryTip": "• Không đúng nguồn vốn CNH cổ điển ➔ Đi vay nhà nước."
+      }
+    },
+    {
+      "id": 52,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 52,
+      "question": "Sức lao động trở thành hàng hoá một cách phổ biến từ khi nào?",
+      "options": {
+        "A": "Từ khi có chủ nghĩa tư bản",
+        "B": "Từ khi có sản xuất hàng hoá",
+        "C": "Từ khi có kinh tế thị trường",
+        "D": "Từ khi lao động ra đời"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Sức lao động trở thành hàng hoá một cách phổ biến từ khi nào?",
+        "optionsVi": {
+          "A": "Từ khi có chủ nghĩa tư bản",
+          "B": "Từ khi có sản xuất hàng hoá",
+          "C": "Từ khi có kinh tế thị trường",
+          "D": "Từ khi lao động ra đời"
+        },
+        "answerDisplay": "A. Từ khi có chủ nghĩa tư bản",
+        "concept": "• Điều kiện để Sức lao động trở thành hàng hóa một cách phổ biến.",
+        "whyCorrect": "• Sức lao động chỉ trở thành hàng hóa một cách phổ biến từ khi phương thức sản xuất tư bản chủ nghĩa ra đời.",
+        "memoryTip": "• Sức lao động thành hàng hóa phổ biến ➔ Từ khi có Chủ nghĩa tư bản."
+      }
+    },
+    {
+      "id": 53,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 53,
+      "question": "Khi lạm phát phi mã xảy ra, hình thức sử dụng tiền nào có lợi nhất?",
+      "options": {
+        "A": "Mua hàng hoá hoặc vàng cất giữ",
+        "B": "Gửi ngân hàng",
+        "C": "Đầu tư vào sản xuất kinh doanh",
+        "D": "Mua USD"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Khi lạm phát phi mã xảy ra, hình thức sử dụng tiền nào có lợi nhất?",
+        "optionsVi": {
+          "A": "Mua hàng hoá hoặc vàng cất giữ",
+          "B": "Gửi ngân hàng",
+          "C": "Đầu tư vào sản xuất kinh doanh",
+          "D": "Mua USD"
+        },
+        "answerDisplay": "A. Mua hàng hoá hoặc vàng cất giữ",
+        "concept": "• Ứng xử tiền tệ khi xảy ra lạm phát phi mã.",
+        "whyCorrect": "• Khi lạm phát phi mã xảy ra, tiền giấy mất giá nhanh chóng, việc giữ tài sản thực như hàng hóa hoặc vàng cất giữ là hình thức bảo toàn giá trị tốt nhất.",
+        "memoryTip": "• Lạm phát phi mã ➔ Mua hàng hóa hoặc vàng cất giữ."
+      }
+    },
+    {
+      "id": 54,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 54,
+      "question": "Sự tuần hoàn của tư bản, nếu xét nó với tư cách là một quá trình định kỳ đổi mới và thường xuyên lặp đi lặp lại được gọi là",
+      "options": {
+        "A": "Chu chuyển tư bản",
+        "B": "Lưu thông tư bản",
+        "C": "Vận động tư bản",
+        "D": "Tái sản xuất tư bản"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Sự tuần hoàn của tư bản, nếu xét nó với tư cách là một quá trình định kỳ đổi mới và thường xuyên lặp đi lặp lại được gọi là",
+        "optionsVi": {
+          "A": "Chu chuyển tư bản",
+          "B": "Lưu thông tư bản",
+          "C": "Vận động tư bản",
+          "D": "Tái sản xuất tư bản"
+        },
+        "answerDisplay": "A. Chu chuyển tư bản",
+        "concept": "• Định nghĩa Chu chuyển tư bản.",
+        "whyCorrect": "• Chu chuyển tư bản là sự tuần hoàn của tư bản nếu xét nó với tư cách là một quá trình định kỳ đổi mới, lặp đi lặp lại không ngừng. (Đã sửa lỗi gõ 'Lưu thông tự bản' ➔ 'Lưu thông tư bản').",
+        "memoryTip": "• Tuần hoàn lặp đi lặp lại ➔ Chu chuyển tư bản."
+      }
+    },
+    {
+      "id": 55,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 55,
+      "question": "Phương pháp nghiên cứu kinh tế chính trị Mác - Lênin phù hợp nhất đó là:",
+      "options": {
+        "A": "Trừu tượng hóa khoa học",
+        "B": "Phân tích và tổng hợp",
+        "C": "Quy nạp diễn dịch",
+        "D": "Khảo sát, tổng kết thực tiễn"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Phương pháp nghiên cứu kinh tế chính trị Mác - Lênin phù hợp nhất đó là:",
+        "optionsVi": {
+          "A": "Trừu tượng hóa khoa học",
+          "B": "Phân tích và tổng hợp",
+          "C": "Quy nạp diễn dịch",
+          "D": "Khảo sát, tổng kết thực tiễn"
+        },
+        "answerDisplay": "A. Trừu tượng hóa khoa học",
+        "concept": "• Phương pháp nghiên cứu đặc thù của Kinh tế chính trị Mác - Lênin.",
+        "whyCorrect": "• Trừu tượng hóa khoa học là phương pháp nghiên cứu quan trọng và phù hợp nhất của KTCT Mác - Lênin để gạt bỏ các hiện tượng ngẫu nhiên, đi sâu vào bản chất các quy luật kinh tế.",
+        "memoryTip": "• Phương pháp nghiên cứu phù hợp nhất = Trừu tượng hóa khoa học."
+      }
+    }
+  ],
+  "_auditSummary": {
+    "auditedAt": "2026-07-30T14:24:18.491Z",
+    "totalAudited": 55,
+    "status": "PASSED_AND_CLEANED",
+    "totalFixes": 8,
+    "notes": [
+      "Q10 (id=10): Sửa lỗi chính tả 'tác khỏi nộng nghiệp' ➔ 'tách khỏi nông nghiệp'.",
+      "Q11 (id=11): Sửa lỗi chính tả 'tác' ➔ 'tách'.",
+      "Q18 (id=18): Sửa phương án D thành 'Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX' và chọn đáp án D để khớp với câu 17 và lịch sử CMCN 2.",
+      "Q34 (id=34): Sửa 'khủng hoảng thửa' ➔ 'khủng hoảng thừa' và chuẩn hóa dấu câu.",
+      "Q36 (id=36): Làm sạch đề bài, xóa đoạn rác dư thừa trong ngoặc đơn ở đầu.",
+      "Q47 (id=47): Sửa lỗi gõ 'hiều' ➔ 'hiểu'.",
+      "Q51 (id=51): Sửa lỗi gõ 'tư bàn' ➔ 'tư bản'.",
+      "Q54 (id=54): Sửa lỗi gõ 'Lưu thông tự bản' ➔ 'Lưu thông tư bản'."
+    ]
+  }
+}

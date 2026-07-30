@@ -1,0 +1,1058 @@
+[
+  {
+    "remoteIndex": 344,
+    "remoteId": 345,
+    "num": 345,
+    "answer": "A",
+    "question": "Đâu KHÔNG phải là nhân tố ảnh hưởng đến quy mô tích luỹ tư bản?",
+    "options": {
+      "A": "Lượng giá trị thặng dư",
+      "B": "Sử dụng hiệu quả máy móc",
+      "C": "Năng suất lao động xã hội",
+      "D": "Trình độ khai thác sức lao động"
+    },
+    "source": "bank_526",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 526,
+    "remoteId": 527,
+    "num": 527,
+    "answer": "D",
+    "question": "Xét trên phương diện lịch sử, các hình thức tổ chức độc quyền phát triển từ thấp đến cao bao gồm",
+    "options": {
+      "A": "Trust, Cartel, Syndicate, Consortium",
+      "B": "Cortium, Cartel, Syndicate, Trust",
+      "C": "Syndicate, Cartel, Trust, Consortium",
+      "D": "Cartel, Syndicate, Trust, Consortium"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 527,
+    "remoteId": 528,
+    "num": 528,
+    "answer": "ACD",
+    "question": "Hãy chỉ ra vai trò tích cực của chủ nghĩa tư bản.",
+    "options": {
+      "A": "Thúc đẩy lực lượng sản xuất phát triển nhanh chống",
+      "B": "Nhanh chống mô rộng thị trường sang các nước thuộc địa",
+      "C": "Chuyền nên sản xuất nhỏ thành nên sản xuất lớn hiện đại",
+      "D": "Thực hiện xã hội hóa sản xuất"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 528,
+    "remoteId": 529,
+    "num": 529,
+    "answer": "A",
+    "question": "Điền vào chỗ trống để hoàn thành câu sau: \"______ đề ra tập trung sản xuất và sự tập trung sản xuất này, khi phát triển tới một mức độ nhất định, lại dần tới độc quyền\"",
+    "options": {
+      "A": "Tự do cạnh tranh",
+      "B": "Độc quyền",
+      "C": "Tự bản",
+      "D": "Sự ra đời của nhà nước"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 529,
+    "remoteId": 530,
+    "num": 530,
+    "answer": "A",
+    "question": "Việt Nam tham gia sáng lập diễn đàn hợp tác Á - Âu (ASEM) năm nào?",
+    "options": {
+      "A": "1996",
+      "B": "1997",
+      "C": "1998",
+      "D": "1999"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 530,
+    "remoteId": 531,
+    "num": 531,
+    "answer": "ABC",
+    "question": "Trong trạng thái độc quyền, canh tranh trong nội bộ các tổ chức độc quyền nhằm mục đích gì?",
+    "options": {
+      "A": "Giành lợi thế trong hệ thống",
+      "B": "Chiếm tỷ lệ cổ phần khống chế",
+      "C": "Phân chia lợi ích có lợi hơn",
+      "D": "Để xác định địa vị độc quyền"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 531,
+    "remoteId": 532,
+    "num": 532,
+    "answer": "C",
+    "question": "Khi sản xuất và trao đổi hàng hóa phát triển đòi hỏi phải có một vật ngang giả chung xuất hiện ở hình thái nào?",
+    "options": {
+      "A": "Hình thái giá trị giản đơn hay ngẫu nhiên",
+      "B": "Hình thái mô rộng của giá trị",
+      "C": "Hình thái chung của giá trị",
+      "D": "Hình thái tiên tê"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 532,
+    "remoteId": 533,
+    "num": 533,
+    "answer": "AB",
+    "question": "Quá trình sản xuất giá trị thông dư là sự thống nhất giữa các yếu tố nào sau đây?",
+    "options": {
+      "A": "Quá trình tạo ra giá trị mới",
+      "B": "Làm tăng giá trị",
+      "C": "Quá trình tiêu thụ sản phẩm",
+      "D": "Quá trình vận chuyển"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 533,
+    "remoteId": 534,
+    "num": 534,
+    "answer": "A",
+    "question": "Điều gì xảy ra nếu cung thấp hơn câu?",
+    "options": {
+      "A": "Giá cả cao hơn giá trị",
+      "B": "Giá cả thấp hơn giá trị",
+      "C": "Hãng hoa tạo ra được tăng cao giá bản",
+      "D": "Hàng hoa phong phú"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 534,
+    "remoteId": 535,
+    "num": 535,
+    "answer": "AC",
+    "question": "Phạm trù lợi nhuận chẳng qua chỉ là một hình thái thần bí hóa của giá trị thặng dư, nguyên nhân của việc này xuất phát từ:",
+    "options": {
+      "A": "Sự hình thành chi phí sản xuất tư bản chủ nghĩa đã xóa nhòa sự khác nhau giữa c (tư bán bất biến) và v (tư bản khả biến)",
+      "B": "Do chi phí sản xuất tư bản chủ nghĩa luôn nhỏ hơn chi phí sản xuất thực tế",
+      "C": "Sự hình thành của giá trị thặng dư và chi phí sản xuất tư bản chủ nghĩa",
+      "D": "Chi phí sản xuất tư bản chủ nghĩa luôn luôn nhỏ hơn giá của của hàng hóa bán ra"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 536,
+    "remoteId": 537,
+    "num": 537,
+    "answer": "A",
+    "question": "Lao động trừu tượng tạo ra yếu tố nào?",
+    "options": {
+      "A": "Giá trị của hàng hoà",
+      "B": "Giá trị sử dụng của hàng hoá",
+      "C": "Tiền lương",
+      "D": "Lợi nhuận cho từ bản"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 537,
+    "remoteId": 538,
+    "num": 538,
+    "answer": "A",
+    "question": "Tiên có mấy chức năng?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 538,
+    "remoteId": 539,
+    "num": 539,
+    "answer": "B",
+    "question": "Loại tiền nào được hiểu là phương tiện thanh toán mà giá trị hay sức mua của nó với tư cách là tiên vượt xa chi phí sản xuất ra nó hay giá trị của nó khi dùng vào việc khác, chứ không dùng làm tiên?",
+    "options": {
+      "A": "Tiên quy ướ",
+      "B": "Tiên tượng trưng",
+      "C": "Tiên ghi nơ",
+      "D": "Tiên vàng"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 539,
+    "remoteId": 540,
+    "num": 540,
+    "answer": "A",
+    "question": "Khi tích tụ và tập trung sản xuất phát triển đến một mức độ nào đó sẽ dẫn đến vấn đề gì trong nên sản xuất từ bản?",
+    "options": {
+      "A": "Độc quyền",
+      "B": "Tự do cạnh tranh",
+      "C": "Khủng hoảng kinh tế",
+      "D": "Sản xuất thừa"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 540,
+    "remoteId": 541,
+    "num": 541,
+    "answer": "AB",
+    "question": "Hàng hóa được trao đổi với nhau dựa trên yếu tố nào?",
+    "options": {
+      "A": "Đều là sản phẩm của lao động",
+      "B": "Một lượng lao động bằng nhau để tạo ra số lượng giá trị tương đương",
+      "C": "Điều là sản phần của quá trình trao đổi",
+      "D": "Có những công dụng như nhau"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 541,
+    "remoteId": 542,
+    "num": 542,
+    "answer": "B",
+    "question": "Cụm từ nào thích hợp để điền vào dầu ( ) sau: \"Kinh tế thị trường định hướng ( ) là nền kinh tế vận hành theo các quy luật của ( )\"",
+    "options": {
+      "A": "Xã hội chủ nghĩa/ Thị trường.",
+      "B": "Xã hội chủ nghĩa/Sản xuất hàng hóa",
+      "C": "Thị trường Xã hội",
+      "D": "Xã hội chủ nghĩa cạnh tranh hàng hóa"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 542,
+    "remoteId": 543,
+    "num": 543,
+    "answer": "A",
+    "question": "Cơ chế thị trường được Adam Smith vị như",
+    "options": {
+      "A": "Bàn tay vô hình",
+      "B": "Bóng ma vô hình",
+      "C": "Con đĩa hai với",
+      "D": "Nam châm hại cực"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 543,
+    "remoteId": 544,
+    "num": 544,
+    "answer": "B",
+    "question": "Hai phương pháp sản xuất giá trị thông dư là",
+    "options": {
+      "A": "Sản xuất giá trị thầng dư tương đối và siêu ngạch",
+      "B": "Sản xuất giả trị thông du tuyệt đối và tương đối",
+      "C": "Sản xuất giá trị thặng dư tuyệt đối và siêu nghạch",
+      "D": "Sản xuất giá trị thặng dư trung bình"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 544,
+    "remoteId": 545,
+    "num": 545,
+    "answer": "B",
+    "question": "Quy luật kinh tế tôn tại mang tính chất:",
+    "options": {
+      "A": "Chủ quan",
+      "B": "Khách quan",
+      "C": "Vừa chủ quan vũa khách quan",
+      "D": "Không có đáp án đúng"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 545,
+    "remoteId": 546,
+    "num": 546,
+    "answer": "A",
+    "question": "Người phát minh ra con thoi - một cải tiến của khung dệt và là một đồng góp quan trọng cho cách mạng công nghiệp lần thứ nhất là",
+    "options": {
+      "A": "John Kay (1704-1779)",
+      "B": "Richard Arkwright (1732-1792)",
+      "C": "Edmund Cartwright (1743-1823)",
+      "D": "James Watt (1736-1891)"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 547,
+    "remoteId": 548,
+    "num": 548,
+    "answer": "A",
+    "question": "Cách mạng công nghiệp lần thứ nhất khởi phát từ nước nào?",
+    "options": {
+      "A": "Anh",
+      "B": "Pháp",
+      "C": "Mỹ",
+      "D": "Đức"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 548,
+    "remoteId": 549,
+    "num": 549,
+    "answer": "A",
+    "question": "Quy luật giá trị yêu cầu sản xuất và trao đổi hàng hoà phải tiến hành trên cơ sở nào",
+    "options": {
+      "A": "Hao phí lao động xã hội cần thiết",
+      "B": "Hao phí lao động cá biệt",
+      "C": "Hao phi lao động từ nhân",
+      "D": "Hao phí lao động cụ thể"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 549,
+    "remoteId": 550,
+    "num": 550,
+    "answer": "ABC",
+    "question": "Nguyên nhân hình thành độc quyền trong nền kinh tế thị trường ở các nước tư bản chủ nghĩa là gì?",
+    "options": {
+      "A": "Do sự phát triển của lực lượng sản xuất",
+      "B": "Do canh tranh",
+      "C": "Do khủng hoảng và sự phát triển của hệ thống tín dụng",
+      "D": "Do các doanh nghiệp giảm quy mô tích tụ và tập trung sản xuất"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 550,
+    "remoteId": 551,
+    "num": 551,
+    "answer": "A",
+    "question": "\"Xây dựng nền kinh tế tự chủ phải trên cơ sở làm chủ công nghệ và chủ động, tích cực hội nhập, đa dạng hóa thị trường, nâng cao khả năng thích ứng với nền kinh tế...\" Nội dung trên được trích trong văn kiện nào của Đảng?",
+    "options": {
+      "A": "Chiến lược phát triển kinh tế - xã hội 2021-2030",
+      "B": "Chiến lược phát triển kinh tế - xã hội 2011-2020",
+      "C": "Chiến lược phát triển kinh tế - xã hội 2021-2026",
+      "D": "Chiến lược phát triển kinh tế - xã hội 2011-2016"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 552,
+    "remoteId": 553,
+    "num": 553,
+    "answer": "D",
+    "question": "Theo nghĩa trừu tượng, thị trường được hiểu như thế nào?",
+    "options": {
+      "A": "Là nơi diễn ra hành vi trao đổi, mua bán hàng hoá giữa các chủ thể kinh tế với nhau",
+      "B": "Là tổng thể các yếu tố kinh tế vận động theo quy luật của thị trường",
+      "C": "Là nơi người bán quyết định giá cả, người mua chỉ được quyền lựa chọn",
+      "D": "Là tổng hoà các mối quan hệ liên quan đến trao đổi, mua bán hàng hoá, dịch vụ trong xã hội"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 553,
+    "remoteId": 554,
+    "num": 554,
+    "answer": "B",
+    "question": "Trong tuần hoàn từ bán, giai đoạn đầu tiên - giai đoạn lưu thông tư bản tồn tại dưới hình thái gì?",
+    "options": {
+      "A": "Tu bản hàng hóa",
+      "B": "Tự bản tiên tê",
+      "C": "Tư bản sản xuất",
+      "D": "Từ bản tiêu dùng"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 554,
+    "remoteId": 555,
+    "num": 555,
+    "answer": "AB",
+    "question": "Để sức lao động trở thành hàng hóa thì cần những điều kiện nào?",
+    "options": {
+      "A": "Người lao động được tự do về thân thế",
+      "B": "Người lao động không có đủ tư liệu sản xuất",
+      "C": "Người lao động có tư liệu sản xuất",
+      "D": "Người lao động đang làm nô lệ cho một cá nhân trong xã hội"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 555,
+    "remoteId": 556,
+    "num": 556,
+    "answer": "A",
+    "question": "Tiên trong nên sản xuất hàng hóa giản đơn vận động trong quan hệ nào sau đây?",
+    "options": {
+      "A": "H-T-H",
+      "B": "T-H-T",
+      "C": "H-T-H (Lưu ý: Tài liệu liệt kê H-T-H hai lần ở A và C)",
+      "D": "T-H-T"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 556,
+    "remoteId": 557,
+    "num": 557,
+    "answer": "D",
+    "question": "Đối tượng nghiên cứu của Kinh tế chính trị Mác - Lênin là",
+    "options": {
+      "A": "Các quan hệ của sản xuất và trao đổi trong phương thức sản xuất mà các quan hệ đồ hình thành và phát triên",
+      "B": "Quá trình sản xuất, phân phối trao đổi, tiêu dùng",
+      "C": "Quan hệ xã hội giữa người với người",
+      "D": "Quan hệ sản xuất trong mối quan hệ tác động qua lại giữa lực lượng sản xuất"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 557,
+    "remoteId": 558,
+    "num": 558,
+    "answer": "B",
+    "question": "Tư bản tài chính có nguồn gốc từ đầu?",
+    "options": {
+      "A": "Quá trình độc quyền hàng hoá trong thương nghiệp và ngân hàng",
+      "B": "Quá trình độc quyền hàng hoá trong công nghiệp và ngân hàng",
+      "C": "Quá trình độc quyền hàng hoá trong thương nghiệp và công nghiệp",
+      "D": "Quá trình độc quyền hàng hoá trong công - nông - thương"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 559,
+    "remoteId": 560,
+    "num": 560,
+    "answer": "C",
+    "question": "Nhận định \"tự do cạnh tranh đẻ ra tập trung sản xuất và sự tập trung sản xuất này, phát triển tới một mức độ nhất định, lại dẫn tới độc quyền\" là của ai?",
+    "options": {
+      "A": "C. Mác",
+      "B": "Ph Angghen",
+      "C": "VI Lênin",
+      "D": "Staline"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 560,
+    "remoteId": 561,
+    "num": 561,
+    "answer": "B",
+    "question": "Vai trò của các bộ phận tư bản trong chu chuyển từ bản được xác định trong phạm trù",
+    "options": {
+      "A": "Tư bản cố định và lưu thông tư bản",
+      "B": "Tư bản cố định và tư bản lưu động",
+      "C": "Tu bản tài chính và tư bản công nghiệp",
+      "D": "Tư bản bất biến và tư bản lưu động"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 562,
+    "remoteId": 563,
+    "num": 563,
+    "answer": "B",
+    "question": "Hàng hoá sức lao động khác hàng hoá thông thường ở chỗ nào?",
+    "options": {
+      "A": "Khi sử dụng nó sẽ tạo ra một lượng giá trị nhỏ hơn giá trị của bản thân nó",
+      "B": "Khi sử dụng nó sẽ có khả năng tạo ra một lượng giá trị mới lớn hơn giá trị của bản thân nó",
+      "C": "Khi sử dụng nó sẽ tạo ra một lượng giá trị ít hơn hoặc bằng với giá trị của bản thân nó",
+      "D": "Khi sử dụng nó sẽ tạo ra một lượng giá trị bằng đúng với giá trị của bản thân nó"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 563,
+    "remoteId": 564,
+    "num": 564,
+    "answer": "C",
+    "question": "Tính hai mặt của lao động sản xuất hàng hoá bao gồm các mặt nào?",
+    "options": {
+      "A": "Lao động tư nhân, lao động xã hội",
+      "B": "Lao động giản đơn, lao động phức tạp",
+      "C": "Lao động cụ thể, lao động trừu tượng",
+      "D": "Lao động phức tạp, lao động xã hội"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 565,
+    "remoteId": 566,
+    "num": 566,
+    "answer": "A",
+    "question": "Trong quan hệ với cường độ lao động, lượng giá trị của đơn vị hàng hoá tương quan thế nào?",
+    "options": {
+      "A": "Không phụ thuộc vào cường độ lao động",
+      "B": "Tỷ lệ thuận với cường độ lao động",
+      "C": "Tỷ lệ nghịch với cường độ lao động",
+      "D": "Tỷ lệ thuận nghịch tuỳ vào bối cảnh của thị trường"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 566,
+    "remoteId": 567,
+    "num": 567,
+    "answer": "A",
+    "question": "Trên giác độ kinh tế chính trị, lao động trừu tượng được hiểu như thế nào?",
+    "options": {
+      "A": "Là phạm trù của mọi nền kinh tế hàng hoá",
+      "B": "Là phạm trù riêng của kinh tế thị trường",
+      "C": "Là phạm trù chung của mọi nền kinh tế",
+      "D": "Là phạm trù vĩnh viễn, giống nhau ở các nền sản xuất"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 567,
+    "remoteId": 568,
+    "num": 568,
+    "answer": "B",
+    "question": "Dựa vào căn cứ nào để chia tư bản thành tư bản bất biến và tư bản khả biến?",
+    "options": {
+      "A": "Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư",
+      "B": "Phương thức chuyển giá trị các bộ phận tư bản sang sản phẩm",
+      "C": "Tốc độ chu chuyển của tư bản",
+      "D": "Vai trò của chúng trong tích luỹ tư bản"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 568,
+    "remoteId": 569,
+    "num": 569,
+    "answer": "A",
+    "question": "Địa tô chênh lệch II được thu trên ruộng đất nào?",
+    "options": {
+      "A": "Ruộng đất đã thâm canh",
+      "B": "Ruộng đất có độ màu mỡ trung bình",
+      "C": "Ruộng đất có độ màu mỡ tốt",
+      "D": "Ruộng đất chưa được sử dụng lần nào"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 569,
+    "remoteId": 570,
+    "num": 570,
+    "answer": "C",
+    "question": "Loại tái sản xuất nào làm tăng sản phẩm chủ yếu do tăng năng suất lao động và hiệu quả sử dụng các nguồn lực?",
+    "options": {
+      "A": "Tái sản xuất mở rộng theo chiều rộng",
+      "B": "Tái sản xuất theo chu kỳ tháng",
+      "C": "Tái sản xuất mở rộng theo chiều sâu",
+      "D": "Tái sản xuất giản đơn"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 570,
+    "remoteId": 571,
+    "num": 571,
+    "answer": "AC",
+    "question": "(Chọn nhiều phương án) Mục đích hình thành độc quyền nhà nước trong chủ nghĩa tư bản đó là:",
+    "options": {
+      "A": "Phục vụ lợi ích của các tổ chức độc quyền tư nhân",
+      "B": "Phục vụ lợi ích của các nhà tư bản",
+      "C": "Tiếp tục duy trì và phát triển chủ nghĩa tư bản",
+      "D": "Lật đổ chủ nghĩa xã hội"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 571,
+    "remoteId": 572,
+    "num": 572,
+    "answer": "C",
+    "question": "Chủ nghĩa tư bản ra đời khi nào?",
+    "options": {
+      "A": "Sản xuất hàng hoá đã phát triển cao",
+      "B": "Phân công lao động đã phát triển cao",
+      "C": "Tư liệu sản xuất tập trung vào một số ít người còn đa số người bị mất hết tư liệu sản xuất",
+      "D": "Kiến trúc thượng tầng tư bản chủ nghĩa được hình thành hoàn chỉnh"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 572,
+    "remoteId": 573,
+    "num": 573,
+    "answer": "A",
+    "question": "Chính sách thực dân trong thời đại chủ nghĩa đế quốc tư bản đã tạo ra những hình thức lệ thuộc mới có tính quá độ của các nước đó là các hình thức nào?",
+    "options": {
+      "A": "Độc lập về chính trị nhưng lệ thuộc về kinh tế và ngoại giao",
+      "B": "Độc lập về kinh tế nhưng lệ thuộc về chính trị",
+      "C": "Lệ thuộc về kinh tế, chính trị và ngoại giao",
+      "D": "Độc lập về lãnh thổ, nhưng lệ thuộc về ngoại giao"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 573,
+    "remoteId": 574,
+    "num": 574,
+    "answer": "AB",
+    "question": "(Chọn nhiều đáp án) Sau những năm 50 của thế kỷ XX, chủ nghĩa tư bản chuyển sang chính sách thực dân mới đó là:",
+    "options": {
+      "A": "Viện trợ kinh tế",
+      "B": "Viện trợ quân sự",
+      "C": "Viện trợ thuốc men",
+      "D": "Viện trợ chính trị"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 574,
+    "remoteId": 575,
+    "num": 575,
+    "answer": "A",
+    "question": "Đâu là một trong những nguyên nhân dẫn đến sự sụp đổ của Liên Xô và Đông Âu?",
+    "options": {
+      "A": "cơ chế kế hoạch hóa tập trung mệnh lệnh",
+      "B": "công nghiệp hóa quá nhanh",
+      "C": "công nghiệp hóa không gắn với hiện đại hóa",
+      "D": "sản xuất không đi đôi với tiêu dùng"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 575,
+    "remoteId": 576,
+    "num": 576,
+    "answer": "B",
+    "question": "Các tổ chức độc quyền sử dụng giá cả độc quyền để làm gì?",
+    "options": {
+      "A": "Củng cố vai trò của tổ chức độc quyền",
+      "B": "Chiếm đoạt giá trị thặng dư của người khác",
+      "C": "Gây thiệt hại cho các đối thủ cạnh tranh",
+      "D": "Củng cố vị thế độc quyền chính trị"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 576,
+    "remoteId": 577,
+    "num": 577,
+    "answer": "B",
+    "question": "Quan điểm cho rằng, xã hội loài người phát triển dựa theo những quy luật tự nhiên thuộc về trường phái nào?",
+    "options": {
+      "A": "Chủ nghĩa trọng thương",
+      "B": "Chủ nghĩa trọng nông",
+      "C": "Kinh tế chính trị cổ điển Anh",
+      "D": "Kinh tế chính trị của Karl Marx"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 577,
+    "remoteId": 578,
+    "num": 578,
+    "answer": "AC",
+    "question": "(Chọn hai đáp án) Mục tiêu của kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là gì?",
+    "options": {
+      "A": "Xây dựng cơ sở vật chất cho chủ nghĩa xã hội và nâng cao đời sống nhân dân",
+      "B": "Tối đa hóa lợi nhuận cho các doanh nghiệp tư nhân",
+      "C": "Hướng tới dân giàu, nước mạnh, dân chủ, công bằng, văn minh",
+      "D": "Giảm thiểu vai trò của Nhà nước trong quản lý kinh tế"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 578,
+    "remoteId": 579,
+    "num": 579,
+    "answer": "A",
+    "question": "Đâu là các đại diện tiêu biểu của trường phái kinh tế chính trị cổ điển Anh?",
+    "options": {
+      "A": "Montchrétien, Francois Quesney",
+      "B": "Pierr Boisguillebrt, Francois Quesney, Jacques Turgot",
+      "C": "Willian Stafford, Thomas Mun, Gasparo Scaruffi",
+      "D": "Antonso Serra,"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 579,
+    "remoteId": 580,
+    "num": 580,
+    "answer": "AB",
+    "question": "(Chọn hai đáp án) Theo",
+    "options": {
+      "A": "Smith kinh tế chính trị là một ngành khoa học gần với chính khách hay nhà lập pháp gần với những mục tiêu nào?A. Tạo ra nguồn thu nhập dồi dào và sinh kế phong phú cho người dân",
+      "B": "Tạo ra khả năng có được nguồn ngân sách đầy đủ cho nhà nước để thực hiện nhiệm vụ công",
+      "C": "Tạo ra những giá trị kinh tế mới giúp tăng trưởng kinh tế và tiến bộ công bằng xã hội",
+      "D": "Tạo ra khả năng có được ai cũng có đầy đủ những phúc lợi xã hội cần thiết"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 580,
+    "remoteId": 581,
+    "num": 581,
+    "answer": "B",
+    "question": "Chính sách kinh tế được hiểu là hoạt động mang tính chất",
+    "options": {
+      "A": "Chủ quan",
+      "B": "Khách quan",
+      "C": "Vừa chủ quan vừa khách quan",
+      "D": "Không có đáp án đúng"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 581,
+    "remoteId": 582,
+    "num": 582,
+    "answer": "D",
+    "question": "Đâu không phải là chức năng của kinh tế chính trị Mác - Lênin?",
+    "options": {
+      "A": "Chức năng nhận thức",
+      "B": "Chức năng thực tiễn",
+      "C": "Chức năng tư tưởng",
+      "D": "Chức năng khoa học"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 582,
+    "remoteId": 583,
+    "num": 583,
+    "answer": "A",
+    "question": "Giá trị hàng hoá được tạo ra từ quá trình nào?",
+    "options": {
+      "A": "Sản xuất",
+      "B": "Phân phối",
+      "C": "Trao đổi",
+      "D": "Tiêu dùng"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 583,
+    "remoteId": 584,
+    "num": 584,
+    "answer": "C",
+    "question": "Khi sản xuất và trao đổi hàng hóa phát triển đòi hỏi phải có một vật ngang giá chung xuất hiện ở hình thái nào?",
+    "options": {
+      "A": "Hình thái giá trị giản đơn hay ngẫu nhiên",
+      "B": "Hình thái mở rộng của giá trị",
+      "C": "Hình thái chung của giá trị",
+      "D": "Hình thái tiền tệ"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 584,
+    "remoteId": 585,
+    "num": 585,
+    "answer": "A",
+    "question": "Dựa vào căn cứ nào để phân chia thị trường hàng hoá và thị trường dịch vụ?",
+    "options": {
+      "A": "Đối tượng hàng hóa đưa ra trao đổi, mua bán",
+      "B": "Căn cứ vào tính chuyên biệt của thị trường",
+      "C": "Đầu vào, đầu ra của quá trình sản xuất",
+      "D": "Tính chất và cơ chế vận hành của thị trường"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 585,
+    "remoteId": 586,
+    "num": 586,
+    "answer": "AC",
+    "question": "(Chọn hai đáp án) Đâu là thuộc tính của hàng hóa sức lao động?",
+    "options": {
+      "A": "Giá trị",
+      "B": "Tự do",
+      "C": "Giá trị sử dụng",
+      "D": "Sức khỏe của người lao động"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 586,
+    "remoteId": 587,
+    "num": 587,
+    "answer": "ABC",
+    "question": "Theo quan điểm của kinh tế chính trị Mác - Lênin, các nhân tố nào ảnh hưởng tới tỷ suất lợi nhuận trong các nhân tố sau đây?",
+    "options": {
+      "A": "Tỷ suất giá trị thặng dư",
+      "B": "Cấu tạo hữu cơ của tư bản",
+      "C": "Tốc độ chu chuyển của tư bản",
+      "D": "Lợi nhuận bình quân"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 587,
+    "remoteId": 588,
+    "num": 588,
+    "answer": "AB",
+    "question": "(Chọn các phương án đúng) Tư bản cho vay trong chủ nghĩa tư bản có những đặc điểm nào?",
+    "options": {
+      "A": "Quyền sử dụng tách khỏi quyền sở hữu",
+      "B": "Tư bản cho vay là hàng hóa đặc biệt",
+      "C": "Tư bản cho vay không phải là hình thái tư bản phiến diện",
+      "D": "Giá cả của tư bản cho vay được quyết định bởi giá trị của nó"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 588,
+    "remoteId": 589,
+    "num": 589,
+    "answer": "ABC",
+    "question": "Giá trị thặng dư biểu hiện cụ thể thông qua các hình thái nào?",
+    "options": {
+      "A": "Lợi nhuận",
+      "B": "Lợi tức",
+      "C": "Địa tô",
+      "D": "Độc quyền"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 589,
+    "remoteId": 590,
+    "num": 590,
+    "answer": "C",
+    "question": "Hãy chỉ ra đâu không phải là nguyên nhân hình thành độc quyền?",
+    "options": {
+      "A": "Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền",
+      "B": "Do cạnh tranh",
+      "C": "Do sự hoàn thiện của quan hệ sản xuất trong chủ nghĩa tư bản",
+      "D": "Do khủng hoảng sự phát triển của hệ thống tín dụng"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 590,
+    "remoteId": 591,
+    "num": 591,
+    "answer": "ABC",
+    "question": "(Lựa chọn 3 đáp án) Trong trạng thái độc quyền, cạnh tranh trong nội bộ các tổ chức độc quyền nhằm mục đích gì?",
+    "options": {
+      "A": "Giành lợi thế trong hệ thống",
+      "B": "Chiếm tỷ lệ cổ phần khống chế",
+      "C": "Phân chia lợi ích có lợi hơn",
+      "D": "Để xác định địa vị độc quyền"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 591,
+    "remoteId": 592,
+    "num": 592,
+    "answer": "B",
+    "question": "Các tài phiệt thực hiện sự thống trị thông qua cách thức nào?",
+    "options": {
+      "A": "Thể chế",
+      "B": "Chế độ tham dự",
+      "C": "Quản lý và điều hành",
+      "D": "Pháp luật"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 592,
+    "remoteId": 593,
+    "num": 593,
+    "answer": "C",
+    "question": "Một hệ giá trị toàn diện gồm cả dân giàu, nước mạnh, dân chủ, công bằng, văn minh là hệ giá trị của xã hội nào mà loài người phải phấn đấu?",
+    "options": {
+      "A": "Hiện tại",
+      "B": "Quá khứ",
+      "C": "Tương lai",
+      "D": "Tư bản chủ nghĩa"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 593,
+    "remoteId": 594,
+    "num": 594,
+    "answer": "D",
+    "question": "Hoàn thiện thể chế đảm bảo gắn tăng trưởng kinh tế với đảm bảo tiến bộ và công bằng xã hội, Việt Nam cần thực hiện những nhiệm vụ nào?",
+    "options": {
+      "A": "Tiếp tục rà soát, bổ sung, điều chỉnh hệ thống pháp luật và các thể chế liên quan đáp ứng yêu cầu thực hiện các cam kết quốc tế của Việt Nam",
+      "B": "Thực hiện nhất quán chủ trương đa phương hóa, đa dạng hóa trong hợp tác kinh tế quốc tế, không để bị lệ thuộc vào một số loại thị trường",
+      "C": "Xây dựng các thiết chế phù hợp với thông lệ quốc tế để phản ứng nhanh nhạy trước các diễn biến bất lợi của thế giới",
+      "D": "Xây dựng hệ thống thể chế kết hợp chặt chẽ phát triển kinh tế nhanh và bền vững"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 594,
+    "remoteId": 595,
+    "num": 595,
+    "answer": "A",
+    "question": "Nội dung cơ bản của Cách mạng công nghiệp lần thứ nhất là gì?",
+    "options": {
+      "A": "Chuyển từ lao động thủ công thành lao động sử dụng máy móc",
+      "B": "Chuyển từ máy móc thành lao động chân tay",
+      "C": "Chuyển từ săn bắt hái lượm sang đồ đồng",
+      "D": "Chuyển từ nông nghiệp sang công nghiệp"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 595,
+    "remoteId": 596,
+    "num": 596,
+    "answer": "ABC",
+    "question": "(Chọn 3 đáp án) Cơ cấu kinh tế là tổng thể quan hệ hữu cơ, phụ thuộc và quy định lẫn nhau về quy mô và trình độ của cơ cấu nào trong các cơ cấu sau đây?",
+    "options": {
+      "A": "Cơ cấu ngành kinh tế",
+      "B": "Cơ cấu vùng kinh tế",
+      "C": "Cơ cấu thành phần kinh tế",
+      "D": "Cơ cấu bộ phận kinh tế"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  },
+  {
+    "remoteIndex": 596,
+    "remoteId": 597,
+    "num": 597,
+    "answer": "A",
+    "question": "Xét về bản chất lợi ích kinh tế phản ánh điều gì?",
+    "options": {
+      "A": "Phản ánh mục đích và động cơ của các quan hệ giữa các chủ thể trong nền sản xuất xã hội",
+      "B": "Gắn các chủ thể kinh tế khác nhau là những lợi ích tương ứng",
+      "C": "Phản ánh động lực về lâu dài của các chủ thể tham gia kinh tế",
+      "D": "Tất cả phương án trên"
+    },
+    "source": "fuexam",
+    "task": "",
+    "taskLabel": ""
+  }
+]

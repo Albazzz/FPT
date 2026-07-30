@@ -1,0 +1,969 @@
+﻿==== [33m6[39m [33m189[39m A
+Q 2é€²æ•°10011ă¨2é€²æ•°101ă‚’ä¹—ç®—ă—ăŸçµæœă®2é€²æ•°ă¯ă©ă‚Œă‹ă€‚
+O {"A":"1011111","B":"110011","C":"10011","D":"10101"}
+EX 10011â‚‚=19ă€101â‚‚=5ă€19Ă—5=95ă€95â‚â‚€=1011111â‚‚ă€‚
+qVi NhĂ¢n nhá»‹ phĂ¢n 10011â‚‚ Ă— 101â‚‚ â€” káº¿t quáº£ nhá»‹ phĂ¢n lĂ  bao nhiĂªu?
+oVi {"A":"1011111","B":"110011","C":"10011","D":"10101"}
+c â€¢ Káº¿t quáº£ sá»‘ Ä‘Ăºng: 1011111 (theo cĂ´ng thá»©c/Ä‘áº¿m trong stem).
+wc â€¢ 10011â‚‚=19; 101â‚‚=5; 19Ă—5=95.
+â€¢ 95â‚â‚€ = 64+16+8+4+2+1 = 1011111â‚‚ â†’ A.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? 110011â‚‚\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? GiĂ¡ trá»‹ khĂ¡c (thÆ°á»ng do lá»‡ch bit khi nhĂ¢n).\nâ€¢ VĂ¬ sao sai? â‰  95â‚â‚€.",
+ "C": "â€¢ LĂ  gĂ¬? 10011â‚‚\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? ChĂ­nh lĂ  thá»«a sá»‘ 19 â€” chÆ°a nhĂ¢n.\nâ€¢ VĂ¬ sao sai? Thiáº¿u bÆ°á»›c Ă—5.",
+ "D": "â€¢ LĂ  gĂ¬? 10101â‚‚\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Káº¿t quáº£ nháº§m phĂ©p.\nâ€¢ VĂ¬ sao sai? â‰  1011111â‚‚."
+}
+==== [33m8[39m [33m191[39m B
+Q é€ä¿¡å›ç·ă®ä¼é€èª¤ă‚ă«å¯¾å‡¦ă™ă‚‹ăƒ‘ăƒªăƒ†ă‚£ăƒă‚§ăƒƒă‚¯æ–¹å¼ï¼ˆå‚ç›´ăƒ‘ăƒªăƒ†ă‚£ï¼‰ă®è¨˜è¿°ă¨ă—ă¦ă€é©åˆ‡ăªă‚‚ă®ă¯ă©ă‚Œă‹ă€‚
+O {"A":"ă™ă¹ă¦ă®ăƒ“ăƒƒăƒˆèª¤ă‚ă‚’è¨‚æ­£ă§ăă‚‹","B":"1ăƒ“ăƒƒăƒˆă®èª¤ă‚ă‚’æ¤œå‡ºă§ăă‚‹","C":"2ăƒ“ăƒƒăƒˆă®èª¤ă‚ă‚’å¿…ăæ¤œå‡ºă§ăă‚‹","D":"èª¤ă‚ă‚’æ¤œå‡ºă‚‚è¨‚æ­£ă‚‚ă§ăăªă„"}
+EX å˜ç´”ăªăƒ‘ăƒªăƒ†ă‚£ă§ă¯ä¸»ă«å¥‡æ•°å€‹ï¼ˆä»£è¡¨ç„ă«1ăƒ“ăƒƒăƒˆï¼‰ă®èª¤ă‚ă‚’æ¤œå‡ºă§ăă‚‹ă€‚
+qVi Vá» parity check dá»c (vertical parity) xá»­ lĂ½ lá»—i truyá»n Ä‘Æ°á»ng truyá»n, mĂ´ táº£ nĂ o thĂ­ch há»£p?
+oVi {"A":"sá»­a Ä‘Æ°á»£c má»i lá»—i bit","B":"phĂ¡t hiá»‡n Ä‘Æ°á»£c lá»—i 1 bit","C":"cháº¯c cháº¯n phĂ¡t hiá»‡n lá»—i 2 bit","D":"khĂ´ng phĂ¡t hiá»‡n/sá»­a lá»—i Ä‘Æ°á»£c"}
+c â€¢ Parity Ä‘Æ¡n (vertical): chá»§ yáº¿u phĂ¡t hiá»‡n lá»—i sá»‘ láº» bit â€” Ä‘iá»ƒn hĂ¬nh phĂ¡t hiá»‡n lá»—i 1 bit.
+â€¢ KhĂ´ng sá»­a má»i lá»—i; khĂ´ng cháº¯c cháº¯n phĂ¡t hiá»‡n má»i lá»—i 2 bit.
+wc â€¢ Parity Ä‘Æ¡n giáº£n: phĂ¡t hiá»‡n Ä‘Æ°á»£c lá»—i 1 bit (sá»‘ bit 1 Ä‘á»•i parity).
+â€¢ KhĂ´ng sá»­a Ä‘Æ°á»£c má»i lá»—i; lá»—i 2 bit cĂ³ thá»ƒ khĂ´ng phĂ¡t hiá»‡n.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? Â«Sá»­a Ä‘Æ°á»£c má»i lá»—i bitÂ»\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? MĂ´ táº£ ECC máº¡nh / kháº£ nÄƒng sá»­a Ä‘áº§y Ä‘á»§.\nâ€¢ VĂ¬ sao sai? Parity thÆ°á»ng chá»‰ phĂ¡t hiá»‡n, khĂ´ng sá»­a má»i lá»—i.",
+ "C": "â€¢ LĂ  gĂ¬? Â«Cháº¯c cháº¯n phĂ¡t hiá»‡n lá»—i 2 bitÂ»\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Hai bit láº­t cĂ³ thá»ƒ giá»¯ nguyĂªn parity â†’ khĂ´ng luĂ´n phĂ¡t hiá»‡n.\nâ€¢ VĂ¬ sao sai? Sai vá»›i parity Ä‘Æ¡n.",
+ "D": "â€¢ LĂ  gĂ¬? Â«KhĂ´ng phĂ¡t hiá»‡n cÅ©ng khĂ´ng sá»­aÂ»\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Phá»§ nháº­n hoĂ n toĂ n.\nâ€¢ VĂ¬ sao sai? Parity váº«n phĂ¡t hiá»‡n Ä‘Æ°á»£c lá»—i 1 bit."
+}
+==== [33m12[39m [33m195[39m A
+Q ăƒăƒƒăƒˆăƒ¯ăƒ¼ă‚¯ă®å½¢æ…‹ă«ă¤ă„ă¦ă€æ­£ă—ă„ă‚‚ă®ă¯ă©ă‚Œă‹ă€‚
+O {"A":"ăƒªăƒ³ă‚°å‹ă¯ă€ăƒ‡ăƒ¼ă‚¿ăŒé£æ¥ă™ă‚‹ăƒăƒ¼ăƒ‰ă‚’é †æ¬¡ä¼é€ă•ă‚Œă€ä¸€éƒ¨ă®ă‚³ăƒ³ăƒ”ăƒ¥ăƒ¼ă‚¿ăŒæ•…éœă™ă‚‹ă¨é€ä¿¡ă«æ”¯éœăŒå‡ºă‚‹å¯èƒ½æ€§ăŒă‚ă‚‹","B":"ă‚¹ă‚¿ăƒ¼å‹ă¯1æœ¬ă®ă‚±ăƒ¼ăƒ–ăƒ«ă«å…¨ç«¯æœ«ăŒă¶ă‚‰ä¸‹ăŒă‚‹","C":"ăƒă‚¹å‹ă¯ăƒăƒ–ă‚’ä¸­å¿ƒă«æ¥ç¶ă™ă‚‹","D":"ăƒªăƒ³ă‚°å‹ă¯æœ€ă‚‚æ•…éœă®å½±éŸ¿ăŒå°ă•ă„"}
+EX ăƒªăƒ³ă‚°å‹ă¯é£æ¥ă¸é †æ¬¡è»¢é€ă™ă‚‹ăŸă‚ă€æ•…éœă®å½±éŸ¿ăŒå‡ºă‚„ă™ă„ă€‚
+qVi máº¡ng lĂ  cĂ¡i nĂ o?
+oVi {"A":"phĂ¡t biá»ƒu vá» topology máº¡ng","B":"máº¡ng sao: má»i mĂ¡y treo má»™t cĂ¡p (sai mĂ´ táº£ bus)","C":"máº¡ng bus káº¿t ná»‘i quanh hub (sai â€” Ä‘Ă³ lĂ  star)","D":"máº¡ng vĂ²ng"}
+c â€¢ phĂ¡t biá»ƒu vá» topology máº¡ng
+â€¢ PhĂ¡t biá»ƒu / Ä‘oáº¡n JP Ä‘Ă£ dá»‹ch Ä‘á»§ nghÄ©a.
+wc â€¢ Ä‘áº·c trÆ°ng ring topology.
+â€¢ phĂ¡t biá»ƒu vá» topology máº¡ng
+â€¢ ÄĂ¡p Ă¡n A: phĂ¡t biá»ƒu vá» topology máº¡ng
+ww {
+ "B": "â€¢ LĂ  gĂ¬? Â«Star = má»i mĂ¡y treo má»™t sá»£i cĂ¡pÂ»\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? ÄĂ³ gáº§n bus (cĂ¡p chung), khĂ´ng pháº£i star.\nâ€¢ VĂ¬ sao sai? Star: má»—i mĂ¡y ná»‘i hub trung tĂ¢m.",
+ "C": "â€¢ LĂ  gĂ¬? Â«Bus = láº¥y hub lĂ m trung tĂ¢mÂ»\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? ÄĂ³ lĂ  star.\nâ€¢ VĂ¬ sao sai? Bus dĂ¹ng Ä‘Æ°á»ng cĂ¡p chung, khĂ´ng pháº£i hub trung tĂ¢m.",
+ "D": "â€¢ LĂ  gĂ¬? Â«Ring Ă­t bá»‹ áº£nh hÆ°á»Ÿng sá»± cá»‘ nháº¥tÂ»\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? ThÆ°á»ng ngÆ°á»£c láº¡i: Ä‘á»©t vĂ²ng áº£nh hÆ°á»Ÿng lá»›n (trá»« ring kĂ©p).\nâ€¢ VĂ¬ sao sai? KhĂ´ng Ä‘Ăºng Ä‘áº·c trÆ°ng ring cÆ¡ báº£n."
+}
+==== [33m19[39m [33m202[39m C
+Q æ˜ åƒăƒ‡ăƒ¼ă‚¿ă‚„éŸ³å£°ăƒ‡ăƒ¼ă‚¿ă®åœ§ç¸®æ–¹å¼ă¨ă—ă¦ä»£è¡¨ç„ăªă‚‚ă®ă¯ă©ă‚Œă‹ă€‚
+O {"A":"JPEG","B":"GIF","C":"MPEG","D":"BMP"}
+EX å‹•ç”»åƒăƒ»éŸ³å£°ă«ă¯MPEGăŒä»£è¡¨ç„ă€‚JPEG/GIFă¯ä¸»ă«é™æ­¢ç”»ă€‚
+qVi CĂ¡ch nĂ©n Ä‘áº¡i diá»‡n cho dá»¯ liá»‡u video vĂ  Ă¢m thanh lĂ  gĂ¬?
+oVi {"A":"JPEG","B":"GIF","C":"MPEG","D":"BMP"}
+c â€¢ MPEG: chuáº©n nĂ©n video/audio Ä‘iá»ƒn hĂ¬nh (káº¿t há»£p nĂ©n frame + sai phĂ¢n).
+â€¢ JPEG/GIF/BMP chá»§ yáº¿u áº£nh tÄ©nh.
+wc â€¢ Stem: nĂ©n áº£nh Ä‘á»™ng + Ă¢m thanh â†’ MPEG.
+â€¢ JPEG/GIF/BMP khĂ´ng pháº£i chuáº©n video Ä‘iá»ƒn hĂ¬nh.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? JPEG\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? NĂ©n áº£nh tÄ©nh lossy.\nâ€¢ VĂ¬ sao sai? KhĂ´ng pháº£i chuáº©n video/audio Ä‘áº¡i diá»‡n.",
+ "B": "â€¢ LĂ  gĂ¬? GIF\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? áº¢nh tÄ©nh â‰¤256 mĂ u (animation Ä‘Æ¡n giáº£n).\nâ€¢ VĂ¬ sao sai? KhĂ´ng pháº£i nĂ©n AV Ä‘iá»ƒn hĂ¬nh nhÆ° MPEG.",
+ "D": "â€¢ LĂ  gĂ¬? BMP\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Bitmap Ă­t/khĂ´ng nĂ©n.\nâ€¢ VĂ¬ sao sai? KhĂ´ng pháº£i nĂ©n video/audio."
+}
+==== [33m25[39m [33m208[39m C
+Q Aă€œZă®26ç¨®é¡ă®æ–‡å­—ă‚’è¡¨ç¾ă™ă‚‹ă«ă¯æœ€ä½ä½•ăƒ“ăƒƒăƒˆå¿…è¦ă‹ă€‚
+O {"A":"3","B":"4","C":"5","D":"8"}
+EX 2â´=16ä¸è¶³ă€2âµ=32ă§26ä»¥ä¸ă‚’è¡¨ç¾ă§ăă‚‹ă€‚
+qVi Äá»ƒ biá»ƒu diá»…n 26 chá»¯ Aâ€“Z cáº§n tá»‘i thiá»ƒu bao nhiĂªu bit?
+oVi {"A":"3","B":"4","C":"5","D":"8"}
+c â€¢ Káº¿t quáº£ sá»‘ Ä‘Ăºng: 5 (theo cĂ´ng thá»©c/Ä‘áº¿m trong stem).
+wc â€¢ 2âµ=32 Ä‘á»§ 26 chá»¯; 4 bit chá»‰ 16 â€” thiáº¿u.
+â€¢ 8 bit thá»«a so vá»›i Â«tá»‘i thiá»ƒuÂ».
+ww {
+ "A": "â€¢ LĂ  gĂ¬? 3 bit\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? 2Â³=8 < 26.\nâ€¢ VĂ¬ sao sai? KhĂ´ng Ä‘á»§.",
+ "B": "â€¢ LĂ  gĂ¬? 4 bit\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? 2â´=16 < 26.\nâ€¢ VĂ¬ sao sai? KhĂ´ng Ä‘á»§.",
+ "D": "â€¢ LĂ  gĂ¬? 8 bit\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? 2â¸=256 Ä‘á»§ nhÆ°ng khĂ´ng pháº£i tá»‘i thiá»ƒu.\nâ€¢ VĂ¬ sao sai? Äá» há»i minimum."
+}
+==== [33m28[39m [33m211[39m D
+Q ă€Œăƒ—ăƒ­ă‚­ă‚·ă‚µăƒ¼ăƒă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă¨è¨€ă„ă¾ă™ă‹ă€‚
+O {"A":"mĂ¡y chá»§ web","B":"mĂ¡y chá»§ thÆ°","C":"mĂ¡y chá»§ tĂªn miá»n","D":"mĂ¡y chá»§ trung gian"}
+EX ăƒ—ăƒ­ă‚­ă‚·ï¼ä¸­ç¶™ăƒ»ä»£ç† â†’ mĂ¡y chá»§ trung giană€‚
+qVi Â«Proxy serveră€ tiáº¿ng Viá»‡t gá»i lĂ  gĂ¬?
+oVi {"A":"mĂ¡y chá»§ web","B":"mĂ¡y chá»§ thÆ°","C":"mĂ¡y chá»§ tĂªn miá»n","D":"mĂ¡y chá»§ trung gian"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«mĂ¡y chá»§ trung gianÂ».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€Œăƒ—ăƒ­ă‚­ă‚·ă‚µăƒ¼ăƒă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă¨è¨€ă„ă¾ă™ă‹ă€‚Â» â†” Â«mĂ¡y chá»§ trung gianÂ».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? mĂ¡y chá»§ web\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Phá»¥c vá»¥ HTTP ná»™i dung.\nâ€¢ VĂ¬ sao sai? KhĂ´ng pháº£i nghÄ©a proxy.",
+ "B": "â€¢ LĂ  gĂ¬? mĂ¡y chá»§ thÆ°\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Mail server.\nâ€¢ VĂ¬ sao sai? KhĂ¡c proxy.",
+ "C": "â€¢ LĂ  gĂ¬? mĂ¡y chá»§ tĂªn miá»n\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? DNS.\nâ€¢ VĂ¬ sao sai? KhĂ¡c proxy."
+}
+==== [33m34[39m [33m217[39m A
+Q 10é€²æ•°ă®ăƒă‚¤ăƒă‚¹5ă‚’ă€2ă®è£œæ•°è¡¨ç¾ă§8ăƒ“ăƒƒăƒˆă®2é€²æ•°ă§è¡¨ă™ă¨ă©ă†ăªă‚‹ă‹ă€‚
+O {"A":"11111011","B":"11111010","C":"10000101","D":"00000101"}
+EX +5=00000101 â†’ åè»¢11111010 â†’ +1ă§11111011ă€‚
+qVi Sá»‘ tháº­p phĂ¢n âˆ’5 biá»ƒu diá»…n bĂ¹ 2 báº±ng 8 bit nhá»‹ phĂ¢n lĂ  gĂ¬?
+oVi {"A":"11111011","B":"11111010","C":"10000101","D":"00000101"}
+c â€¢ Káº¿t quáº£ sá»‘ Ä‘Ăºng: 11111011 (theo cĂ´ng thá»©c/Ä‘áº¿m trong stem).
+wc â€¢ Quy trĂ¬nh: biá»ƒu diá»…n |n|, Ä‘áº£o bit, cá»™ng 1 â†’ 11111011.
+â€¢ 11111010 lĂ  má»›i Ä‘áº£o chÆ°a +1; 10000101/00000101 khĂ´ng pháº£i âˆ’5 bĂ¹ 2.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? 11111010\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Má»›i Ä‘áº£o bit cá»§a +5, chÆ°a +1.\nâ€¢ VĂ¬ sao sai? Thiáº¿u bÆ°á»›c hoĂ n táº¥t bĂ¹ 2.",
+ "C": "â€¢ LĂ  gĂ¬? 10000101\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Dáº¡ng dáº¥u-Ä‘á»™ lá»›n / nháº§m bit dáº¥u.\nâ€¢ VĂ¬ sao sai? KhĂ´ng pháº£i bĂ¹ 2 cá»§a âˆ’5.",
+ "D": "â€¢ LĂ  gĂ¬? 00000101\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? ChĂ­nh lĂ  +5.\nâ€¢ VĂ¬ sao sai? Thiáº¿u dáº¥u Ă¢m."
+}
+==== [33m36[39m [33m219[39m B
+Q 2é€²æ•°100001ă‚’3å€ă—ăŸă‚‚ă®ă¯ă©ă‚Œă‹ă€‚
+O {"A":"1000010","B":"1100011","C":"111111","D":"1000011"}
+EX 100001â‚‚=33ă€33Ă—3=99ă€99=1100011â‚‚ă€‚
+qVi 100001â‚‚ nhĂ¢n 3 báº±ng bao nhiĂªu (nhá»‹ phĂ¢n)?
+oVi {"A":"1000010","B":"1100011","C":"111111","D":"1000011"}
+c â€¢ Káº¿t quáº£ sá»‘ Ä‘Ăºng: 1100011 (theo cĂ´ng thá»©c/Ä‘áº¿m trong stem).
+wc â€¢ 33Ă—3=99 â†’ 1100011â‚‚.
+â€¢ CĂ¡c option khĂ¡c sai phĂ©p nhĂ¢n/dá»‹ch bit.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? 1000010â‚‚\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Gáº§n nhÆ° dá»‹ch trĂ¡i 1 (Ă—2) â€” nhĂ¢n 2 khĂ´ng pháº£i Ă—3.\nâ€¢ VĂ¬ sao sai? Sai há»‡ sá»‘.",
+ "C": "â€¢ LĂ  gĂ¬? 111111â‚‚\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? 63â‚â‚€ â€” khĂ´ng pháº£i 99.\nâ€¢ VĂ¬ sao sai? Sai.",
+ "D": "â€¢ LĂ  gĂ¬? 1000011â‚‚\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Gáº§n Ä‘Ăºng nhÆ°ng thiáº¿u bit mang.\nâ€¢ VĂ¬ sao sai? â‰  99."
+}
+==== [33m39[39m [33m222[39m D
+Q ă‚¤ăƒ©ă‚¹ăƒˆăªă©ă«ä½¿ă‚ă‚Œă‚‹ă€æœ€å¤§è¡¨ç¤ºè‰²ăŒ256è‰²ă®é™æ­¢ç”»åœ§ç¸®å½¢å¼ă¯ă©ă‚Œă‹ă€‚
+O {"A":"JPEG","B":"BMP","C":"MPEG","D":"GIF"}
+EX GIFă¯æœ€å¤§256è‰²ă®é™æ­¢ç”»ï¼ˆç°¡æ˜“ă‚¢ăƒ‹ăƒ¡ă‚‚å¯ï¼‰ă€‚
+qVi Äá»‹nh dáº¡ng nĂ©n áº£nh tÄ©nh dĂ¹ng cho minh há»a, tá»‘i Ä‘a 256 mĂ u, lĂ  gĂ¬?
+oVi {"A":"JPEG","B":"BMP","C":"MPEG","D":"GIF"}
+c â€¢ GIF: áº£nh tÄ©nh (cĂ³ thá»ƒ animation Ä‘Æ¡n giáº£n), palette tá»‘i Ä‘a 256 mĂ u â€” há»£p illustration.
+â€¢ MPEG lĂ  video; JPEG áº£nh chá»¥p nhiá»u mĂ u; BMP thĂ´.
+wc â€¢ Stem: illustration Â· max 256è‰² Â· é™æ­¢ç”» â†’ GIF.
+â€¢ KhĂ´ng chá»n MPEG (video) dĂ¹ cĂ³ nĂ©n.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? JPEG\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? áº¢nh tÄ©nh lossy, nhiá»u mĂ u (photo).\nâ€¢ VĂ¬ sao sai? KhĂ´ng giá»›i háº¡n 256 mĂ u nhÆ° stem.",
+ "B": "â€¢ LĂ  gĂ¬? BMP\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Bitmap Ă­t nĂ©n.\nâ€¢ VĂ¬ sao sai? KhĂ´ng Ä‘áº·c trÆ°ng 256 mĂ u nĂ©n illustration.",
+ "C": "â€¢ LĂ  gĂ¬? MPEG\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Video/audio.\nâ€¢ VĂ¬ sao sai? Stem lĂ  é™æ­¢ç”» 256è‰² â€” khĂ´ng pháº£i video."
+}
+==== [33m42[39m [33m225[39m A
+Q 10é€²æ•°155ă‚’2é€²æ•°ă§è¡¨ă—ăŸă‚‚ă®ă¯ă©ă‚Œă‹ă€‚
+O {"A":"10011011","B":"10011100","C":"10101011","D":"11001011"}
+EX 155=128+16+8+2+1 â†’ 10011011â‚‚ă€‚
+qVi há»‡ tháº­p phĂ¢n lĂ  cĂ¡i nĂ o?
+oVi {"A":"10011011","B":"10011100","C":"10101011","D":"11001011"}
+c â€¢ Káº¿t quáº£ sá»‘ Ä‘Ăºng: 10011011 (theo cĂ´ng thá»©c/Ä‘áº¿m trong stem).
+wc â€¢ Trá»« lÅ©y thá»«a 2: 128+27â†’+16=11â†’+8=3â†’+2+1.
+â€¢ Khá»›p 10011011.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? 10011100â‚‚\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Sai vĂ i bit tháº¥p.\nâ€¢ VĂ¬ sao sai? â‰  155.",
+ "C": "â€¢ LĂ  gĂ¬? 10101011â‚‚\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Sai bit.\nâ€¢ VĂ¬ sao sai? â‰  155.",
+ "D": "â€¢ LĂ  gĂ¬? 11001011â‚‚\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Sai bit cao.\nâ€¢ VĂ¬ sao sai? â‰  155."
+}
+==== [33m43[39m [33m226[39m A
+Q 2é€²æ•°1.111ă‚’10é€²æ•°ă§è¡¨ç¾ă—ăŸă‚‚ă®ă¯ă©ă‚Œă‹ă€‚
+O {"A":"1.875","B":"1.75","C":"1.5","D":"2.0"}
+EX 1 + 0.5 + 0.25 + 0.125 = 1.875ă€‚
+qVi 1.111â‚‚ Ä‘á»•i sang tháº­p phĂ¢n báº±ng bao nhiĂªu?
+oVi {"A":"1.875","B":"1.75","C":"1.5","D":"2.0"}
+c â€¢ Káº¿t quáº£ sá»‘ Ä‘Ăºng: 1.875 (theo cĂ´ng thá»©c/Ä‘áº¿m trong stem).
+wc â€¢ Pháº§n nguyĂªn 1; pháº§n fraction 0.5+0.25+0.125=0.875 â†’ 1.875.
+â€¢ 1.75 thiáº¿u 0.125; 1.5 thiáº¿u; 2.0 lĂ m trĂ²n sai.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? 1.75\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? 1+0.5+0.25 â€” bá» bit 0.125.\nâ€¢ VĂ¬ sao sai? Thiáº¿u 1/8.",
+ "C": "â€¢ LĂ  gĂ¬? 1.5\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? 1+0.5.\nâ€¢ VĂ¬ sao sai? Bá» hai bit tháº¥p.",
+ "D": "â€¢ LĂ  gĂ¬? 2.0\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? LĂ m trĂ²n/nháº§m.\nâ€¢ VĂ¬ sao sai? â‰  1.875."
+}
+==== [33m44[39m [33m227[39m C
+Q MIDIå‘½ä»¤ă®ăƒ‡ăƒ¼ă‚¿æ®µéï¼ˆå–ă‚ă†ă‚‹å€¤ă®æ•°ï¼‰ă¨ă—ă¦é©åˆ‡ăªă‚‚ă®ă¯ă©ă‚Œă‹ă€‚
+O {"A":"64","B":"100","C":"128","D":"256"}
+EX MIDIăƒ‡ăƒ¼ă‚¿ăƒă‚¤ăƒˆă¯7ăƒ“ăƒƒăƒˆç›¸å½“ă§0ă€œ127ă®128æ®µéă€‚
+qVi Sá»‘ má»©c dá»¯ liá»‡u lá»‡nh MIDI (sá»‘ giĂ¡ trá»‹ cĂ³ thá»ƒ) thĂ­ch há»£p lĂ ?
+oVi {"A":"64","B":"100","C":"128","D":"256"}
+c â€¢ Káº¿t quáº£ sá»‘ Ä‘Ăºng: 128 (theo cĂ´ng thá»©c/Ä‘áº¿m trong stem).
+wc â€¢ 128 = 2â· â€” chuáº©n MIDI data.
+â€¢ 64/100/256 khĂ´ng khá»›p 7-bit data.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? 64\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? 2â¶.\nâ€¢ VĂ¬ sao sai? Ăt hÆ¡n dáº£i MIDI data.",
+ "B": "â€¢ LĂ  gĂ¬? 100\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Sá»‘ tháº­p phĂ¢n trĂ²n â€” khĂ´ng pháº£i 2â·.\nâ€¢ VĂ¬ sao sai? KhĂ´ng chuáº©n MIDI.",
+ "D": "â€¢ LĂ  gĂ¬? 256\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? 2â¸ â€” full byte gá»“m bit status.\nâ€¢ VĂ¬ sao sai? Data byte MIDI lĂ  7 bit."
+}
+==== [33m45[39m [33m228[39m C
+Q ă€Œå°æ–‡å­—ă€ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"ăăă‚‚ă˜ - chá»¯ in hoa","B":"ă“ă‚‚ă˜ - chá»¯ sá»‘","C":"ă“ă‚‚ă˜ - chá»¯ in thÆ°á»ng","D":"ă ă„ă‚‚ă˜ - chá»¯ thÆ°á»ng"}
+EX å°æ–‡å­—ï¼ă“ă‚‚ă˜ï¼chá»¯ in thÆ°á»ngă€‚
+qVi Â« kĂ½ tá»± / chá»¯ă€ Ä‘á»c tháº¿ nĂ o? Tiáº¿ng Viá»‡t lĂ  gĂ¬?
+oVi {"A":"ăăă‚‚ă˜ - chá»¯ in hoa","B":"ă“ă‚‚ă˜ - chá»¯ sá»‘","C":"chá»¯ in thÆ°á»ng","D":"chá»¯ thÆ°á»ng"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«ă“ă‚‚ă˜ - chá»¯ in thÆ°á»ngÂ».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€Œå°æ–‡å­—ă€ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«ă“ă‚‚ă˜ - chá»¯ in thÆ°á»ngÂ».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? ăăă‚‚ă˜ - chá»¯ in hoa\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Chá»¯ hoa (uppercase).\nâ€¢ VĂ¬ sao sai? TrĂ¡i å°æ–‡å­—.",
+ "B": "â€¢ LĂ  gĂ¬? ă“ă‚‚ă˜ - chá»¯ sá»‘\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? ÄĂºng Ä‘á»c nhÆ°ng sai nghÄ©a VI (digits).\nâ€¢ VĂ¬ sao sai? å°æ–‡å­— â‰  chá»¯ sá»‘.",
+ "D": "â€¢ LĂ  gĂ¬? ă ă„ă‚‚ă˜ - chá»¯ thÆ°á»ng\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»c/kanji khĂ´ng khá»›p å°æ–‡å­—.\nâ€¢ VĂ¬ sao sai? Sai."
+}
+==== [33m51[39m [33m234[39m B
+Q ă€ŒsĂ³ng hĂ¬nh sină€ă¯æ—¥æœ¬èªă®æ¼¢å­—ă§ă©ă®ă‚ˆă†ă«æ›¸ăă¾ă™ă‹ă€‚ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚
+O {"A":"ä½™å¼¦æ³¢ - ă‚ˆă’ă‚“ă¯","B":"æ­£å¼¦æ³¢ - ă›ă„ă’ă‚“ă¯","C":"æ­£å¼¦æ³¢ - ă—ă‚‡ă†ă’ă‚“ă¯","D":"æ­£ç„æ³¢ - ă›ă„ă’ă‚“ă¯"}
+EX æ­£å¼¦æ³¢ï¼ˆă›ă„ă’ă‚“ă¯ï¼‰ï¼sinæ³¢ă€‚
+qVi Â«SĂ³ng hĂ¬nh sină€ viáº¿t kanji tiáº¿ng Nháº­t tháº¿ nĂ o? Äá»c ra sao?
+oVi {"A":"sĂ³ng cosine","B":"sĂ³ng sine","C":"sĂ³ng sine (Ä‘á»c sai)","D":"sĂ³ng sine (viáº¿t sai)"}
+c â€¢ SĂ³ng hĂ¬nh sin = æ­£å¼¦æ³¢ï¼ˆă›ă„ă’ă‚“ă¯ï¼‰.
+wc â€¢ ÄĂºng kanji/yomi cho sine wave.
+â€¢ ä½™å¼¦æ³¢ = cosine â€” khĂ¡c.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? SĂ³ng cosine.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? TĂ­n hiá»‡u â€” khĂ´ng pháº£i Â«sĂ³ng hĂ¬nh sinÂ».\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«æ­£å¼¦æ³¢ï¼ˆă›ă„ă’ă‚“ă¯ï¼‰â€” sĂ³ng sinÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? sĂ³ng sine (Ä‘á»c sai) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«æ­£å¼¦æ³¢ï¼ˆă›ă„ă’ă‚“ă¯ï¼‰â€” sĂ³ng sinÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? sĂ³ng sine (viáº¿t sai) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng k
+==== [33m53[39m [33m236[39m A
+Q ă€Œå¸¯åŸŸå¹…ă€ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"ăŸă„ă„ăă¯ă° - chiá»u rá»™ng dáº£i táº§n","B":"ăŸă„ă„ăăµă - bÄƒng thĂ´ng háº¹p","C":"ăŸă„ăă¯ă° - táº§n sá»‘","D":"ă¯ă°ăŸă„ă„ă - Ä‘á»™ trá»…"}
+EX å¸¯åŸŸå¹…ï¼ăŸă„ă„ăă¯ă°ï¼bandwidth / chiá»u rá»™ng dáº£i táº§nă€‚
+qVi Â«bÄƒng thĂ´ngă€ Ä‘á»c tháº¿ nĂ o? Tiáº¿ng Viá»‡t lĂ  gĂ¬?
+oVi {"A":"chiá»u rá»™ng dáº£i táº§n","B":"bÄƒng thĂ´ng háº¹p","C":"ăŸă„ăă¯ă° - táº§n sá»‘","D":"Ä‘á»™ trá»…"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«ăŸă„ă„ăă¯ă° - chiá»u rá»™ng dáº£i táº§nÂ».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€Œå¸¯åŸŸå¹…ă€ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«ăŸă„ă„ăă¯ă° - chiá»u rá»™ng dáº£i táº§nÂ».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? bÄƒng thĂ´ng háº¹p â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«chiá»u rá»™ng dáº£i táº§nÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? ăŸă„ăă¯ă° - táº§n sá»‘ â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«chiá»u rá»™ng dáº£i táº§nÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? Ä‘á»™ trá»… â€” khĂ¡i niá»‡m/option trong Ä‘
+==== [33m54[39m [33m237[39m D
+Q ă€Œăƒă‚¹ç›®ă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"cáº§n","B":"Ä‘Ä©a","C":"sá»£i Ä‘á»‘t","D":"náº¥c"}
+EX ăƒă‚¹ç›®ï¼Ă´/náº¥c trĂªn bÄƒng Turing ăªă©ă€‚
+qVi Â« ă€ tiáº¿ng Viá»‡t lĂ  gĂ¬?
+oVi {"A":"cáº§n","B":"Ä‘Ä©a","C":"sá»£i Ä‘á»‘t","D":"náº¥c"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«náº¥cÂ».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€Œăƒă‚¹ç›®ă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«náº¥cÂ».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? cáº§n â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«náº¥cÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? Ä‘Ä©a â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«náº¥cÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? sá»£i Ä‘á»‘t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ s
+==== [33m55[39m [33m238[39m A
+Q ă€ŒPLCă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"ná»‘i máº¡ng qua há»‡ thá»‘ng Ä‘iá»‡n nhĂ ","B":"truyá»n hĂ¬nh cĂ¡p dĂ¢y dáº«n","C":"cĂ¡p quang Ä‘áº¿n táº­n nhĂ ","D":"truyá»n dá»¯ liá»‡u báº±ng tia há»“ng ngoáº¡i"}
+EX PLC = Power Line Communicationï¼é›»ç¯ç·é€ä¿¡ă€‚
+qVi PLC tiáº¿ng Viá»‡t / nghÄ©a lĂ  gĂ¬?
+oVi {"A":"ná»‘i máº¡ng qua há»‡ thá»‘ng Ä‘iá»‡n nhĂ ","B":"truyá»n hĂ¬nh cĂ¡p dĂ¢y dáº«n","C":"cĂ¡p quang Ä‘áº¿n táº­n nhĂ ","D":"truyá»n dá»¯ liá»‡u báº±ng tia há»“ng ngoáº¡i"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«ná»‘i máº¡ng qua há»‡ thá»‘ng Ä‘iá»‡n nhĂ Â».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€ŒPLCă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«ná»‘i máº¡ng qua há»‡ thá»‘ng Ä‘iá»‡n nhĂ Â».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? truyá»n hĂ¬nh cĂ¡p dĂ¢y dáº«n â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«ná»‘i máº¡ng qua há»‡ thá»‘ng Ä‘iá»‡n nhĂ Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? cĂ¡p quang Ä‘áº¿n táº­n nhĂ  â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«ná»‘i máº¡ng qua há»‡ thá»‘ng Ä‘iá»‡n nhĂ Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? truyá»n dá»¯ liá»‡u
+==== [33m56[39m [33m239[39m A
+Q å€‹äººă®ăƒ‘ă‚½ă‚³ăƒ³ă‚’ă­ă‚‰ă£ăŸï¼ˆ  ï¼‰ă¨ă—ă¦ă‚¦ă‚¤ăƒ«ă‚¹ăŒä»£è¡¨ç„ă§ă™ă€‚
+O {"A":"ç¯ç½ª","B":"è¡Œç‚º","C":"ă‚‚ă®","D":"ç—…æ°—"}
+EX ă‚³ăƒ³ăƒ”ăƒ¥ăƒ¼ă‚¿ç¯ç½ªă®ä¾‹ă¨ă—ă¦ă‚¦ă‚¤ăƒ«ă‚¹ă€‚
+qVi Äiá»n tá»« thĂ­ch há»£p vĂ o chá»— trá»‘ng (xem cĂ¢u gá»‘c).
+oVi {"A":"tá»™i pháº¡m / hĂ nh vi pháº¡m tá»™i","B":"hĂ nh vi","C":"váº­t / Ä‘á»‘i tÆ°á»£ng","D":"ç—…æ°—"}
+c â€¢ Virus lĂ  vĂ­ dá»¥ Ä‘iá»ƒn hĂ¬nh cá»§a (tá»™i pháº¡m / pháº§n má»m Ä‘á»™c háº¡i) nháº¯m PC cĂ¡ nhĂ¢n â€” Ä‘iá»n ç¯ç½ª.
+wc â€¢ Stem: virus Ä‘áº¡i diá»‡n cho (ç¯ç½ª) nháº¯m PC cĂ¡ nhĂ¢n.
+â€¢ KhĂ¡c cĂ¡c tá»« khĂ´ng thuá»™c pháº¡m trĂ¹ Ä‘Ă³.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? hĂ nh vi â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«tá»™i pháº¡m (CNTT)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? váº­t / Ä‘á»‘i tÆ°á»£ng â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«tá»™i pháº¡m (CNTT)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? ç—…æ°— â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ 
+==== [33m57[39m [33m240[39m B
+Q ă‚¦ă‚£ăƒ«ă‚¹ă«æ„ŸæŸ“ă™ă‚‹ă®ă‚’é¿ă‘ă‚‹ăŸă‚ă«ă€ä½•ă‚’ă—ă¾ă™ă‹ă€‚
+O {"A":"ăƒ‘ă‚¹ăƒ¯ăƒ¼ăƒ‰ă«æ°åă‚„æ•°å­—ă ă‘ă‚’ä½¿ă†","B":"å¸¸ă«æœ€æ–°ç‰ˆă«æ›´æ–°ă•ă‚Œă‚‹ăƒ–ăƒ©ă‚¦ă‚¶ă‚’ä½¿ă†","C":"å¤ă„ăƒ–ăƒ©ă‚¦ă‚¶ă‚’ä½¿ă„ç¶ă‘ă‚‹","D":"exe,vbs,scr,pif ă®æ·»ä»˜ă‚’ă™ăă«é–‹ă"}
+EX ăƒ–ăƒ©ă‚¦ă‚¶ă‚’æœ€æ–°ă«ä¿ă¤ăªă©å®‰å…¨å¯¾ç­–ăŒé‡è¦ă€‚å±é™ºæ‹¡å¼µå­ă¯é–‹ă‹ăªă„ă€‚
+qVi Äá»ƒ trĂ¡nh nhiá»…m virus, nĂªn lĂ m gĂ¬?
+oVi {"A":"ăƒ‘ă‚¹ăƒ¯ăƒ¼ăƒ‰ă«æ°åă‚„æ•°å­—ă ă‘ă‚’ä½¿ă†","B":"dĂ¹ng trĂ¬nh duyá»‡t luĂ´n cáº­p nháº­t","C":"cá»© dĂ¹ng trĂ¬nh duyá»‡t cÅ©","D":"má»Ÿ ngay file Ä‘Ă­nh kĂ¨m exe/vbs/scr/pif (nguy hiá»ƒm)"}
+c â€¢ Giáº£m nhiá»…m virus: dĂ¹ng trĂ¬nh duyá»‡t luĂ´n cáº­p nháº­t (vĂ¡ lá»— há»•ng).
+wc â€¢ Cáº­p nháº­t browser giáº£m exploit.
+â€¢ CĂ¡c thĂ³i quen khĂ¡c khĂ´ng khá»›p option Ä‘Ăºng.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? ăƒ‘ă‚¹ăƒ¯ăƒ¼ăƒ‰ă«æ°åă‚„æ•°å­—ă ă‘ă‚’ä½¿ă† â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«dĂ¹ng trĂ¬nh duyá»‡t luĂ´n cáº­p nháº­t báº£n má»›iÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? cá»© dĂ¹ng trĂ¬nh duyá»‡t cÅ© â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«dĂ¹ng trĂ¬nh duyá»‡t luĂ´n cáº­p nháº­t báº£n má»›iÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+==== [33m58[39m [33m241[39m B
+Q å›½é›æ¨™æº–ă®æºå¸¯é›»è©±ă§åˆ©ç”¨ă§ăă‚‹ă‚¢ăƒ—ăƒªă‚±ăƒ¼ă‚·ăƒ§ăƒ³ă‚’æ±ºå®ă™ă‚‹ă®ăŒä½•ă¨å‘¼ă¶ă‚½ăƒ•ăƒˆă‚¦ă‚§ă‚¢ă§ă™ă‹ă€‚
+O {"A":"ă‚¢ăƒ—ăƒªă‚±ăƒ¼ă‚·ăƒ§ăƒ³","B":"ă‚ªăƒăƒ¬ăƒ¼ăƒ†ă‚£ăƒ³ă‚°ă‚·ă‚¹ăƒ†ăƒ ","C":"é›»å­ăƒăƒăƒ¼","D":"ă‚¬ăƒ©ăƒ‘ă‚´ă‚¹æºå¸¯"}
+EX ä½¿ăˆă‚‹ă‚¢ăƒ—ăƒªă‚’æ±ºă‚ă‚‹ă®ă¯OSă€‚
+qVi Pháº§n má»m quyáº¿t Ä‘á»‹nh app dĂ¹ng Ä‘Æ°á»£c trĂªn Ä‘iá»‡n thoáº¡i chuáº©n quá»‘c táº¿ gá»i lĂ  gĂ¬?
+oVi {"A":"ă‚¢ăƒ—ăƒªă‚±ăƒ¼ă‚·ăƒ§ăƒ³","B":"há»‡ Ä‘iá»u hĂ nh","C":"tiá»n Ä‘iá»‡n tá»­","D":"Ä‘iá»‡n thoáº¡i GalĂ¡pagos (ná»™i Ä‘á»‹a Nháº­t)"}
+c â€¢ há»‡ Ä‘iá»u hĂ nh: quáº£n process/memory/file/I/O.
+wc â€¢ OS quáº£n lĂ½ tĂ i nguyĂªn vĂ  API â€” quyáº¿t Ä‘á»‹nh app nĂ o cháº¡y Ä‘Æ°á»£c.
+â€¢ KhĂ´ng nháº§m vá»›i chá»‰ má»™t app hay giao thá»©c máº¡ng Ä‘Æ¡n láº» náº¿u option khĂ¡c.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? ă‚¢ăƒ—ăƒªă‚±ăƒ¼ă‚·ăƒ§ăƒ³ â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«há»‡ Ä‘iá»u hĂ nhÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? tiá»n Ä‘iá»‡n tá»­ â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«há»‡ Ä‘iá»u hĂ nhÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? Ä‘iá»‡n thoáº¡i GalĂ¡pagos (ná»™i Ä‘á»‹a Nháº­t) â€” khĂ¡i niá»‡m/optio
+==== [33m59[39m [33m242[39m C
+Q ă€Œå‘¨æ³¢æ•°å¸¯ă€ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"ă—ă‚…ă†ă¯ă™ă†ăŸă„ - bÄƒng táº§n","B":"ă—ă‚…ă°ă™ă†ă ă„ - dáº£i táº§n sá»‘","C":"ă—ă‚…ă†ă¯ă™ă†ăŸă„ - dáº£i táº§n sá»‘","D":"ă—ă‚…ă†ă±ă™ă†ă ă„ - bÄƒng táº§n"}
+EX å‘¨æ³¢æ•°å¸¯ï¼ă—ă‚…ă†ă¯ă™ă†ăŸă„ï¼dáº£i táº§n sá»‘ / bÄƒng táº§nă€‚
+qVi Â« ă€ Ä‘á»c tháº¿ nĂ o? Tiáº¿ng Viá»‡t lĂ  gĂ¬?
+oVi {"A":"bÄƒng táº§n","B":"dáº£i táº§n sá»‘","C":"dáº£i táº§n sá»‘","D":"bÄƒng táº§n"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«ă—ă‚…ă†ă¯ă™ă†ăŸă„ - dáº£i táº§n sá»‘Â».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€Œå‘¨æ³¢æ•°å¸¯ă€ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«ă—ă‚…ă†ă¯ă™ă†ăŸă„ - dáº£i táº§n sá»‘Â».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? bÄƒng táº§n â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«dáº£i táº§n sá»‘Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? dáº£i táº§n sá»‘ â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«dáº£i táº§n sá»‘Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? bÄƒng táº§n â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªn
+==== [33m60[39m [33m243[39m A
+Q LSIă¯æ—¥æœ¬èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"å¤§è¦æ¨¡é›†ç©å›è·¯","B":"é›†ç©ç·è·¯","C":"é›†ç©å›è·¯","D":"å¤§è¦æ¨¡é›†ç©ç·è·¯"}
+EX LSI = Large Scale Integrationï¼å¤§è¦æ¨¡é›†ç©å›è·¯ă€‚
+qVi LSI tiáº¿ng Nháº­t / nghÄ©a lĂ  gĂ¬?
+oVi {"A":"máº¡ch tĂ­ch há»£p (IC)","B":"máº¡ch tĂ­ch há»£p (sai tá»«)","C":"máº¡ch tĂ­ch há»£p (IC)","D":"LSI (máº¡ch tĂ­ch há»£p quy mĂ´ lá»›n)"}
+c â€¢ LSI = å¤§è¦æ¨¡é›†ç©å›è·¯ (Large Scale Integration) â€” máº¡ch tĂ­ch há»£p quy mĂ´ lá»›n.
+wc â€¢ ÄĂºng má»Ÿ rá»™ng JP cá»§a LSI.
+â€¢ CĂ¡c cá»¥m khĂ¡c sai quy mĂ´/tĂªn.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? máº¡ch tĂ­ch há»£p (sai tá»«) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«LSI â€” máº¡ch tĂ­ch há»£p quy mĂ´ lá»›nÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? Large Scale Integration.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Chip máº­t Ä‘á»™ cao.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«LSI â€” máº¡ch tĂ­ch há»£p quy mĂ´ lá»›nÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? LSI (máº¡ch tĂ­ch há»£p quy mĂ´ lá»›n) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng
+==== [33m61[39m [33m244[39m A
+Q A3ă‚µă‚¤ă‚ºï¼ˆ29.7cmĂ—42.0cmï¼‰ă‚’350 dpiă§å°åˆ·ă™ă‚‹å ´åˆă®ç”»ç´ æ•°ă®è¨ˆç®—ă§ä½¿ă†é–¢ä¿‚ă¯ă©ă‚Œă‹ă€‚
+O {"A":"ç”»ç´ æ•° â‰’ (cm/2.54Ă—dpi) ă®ç¸¦Ă—æ¨ª","B":"ç”»ç´ æ•° = cmĂ—dpi ă®ă¿","C":"ç”»ç´ æ•° = bpsĂ—Hz","D":"ç”»ç´ æ•° = ăƒ“ăƒƒăƒˆæ•°Ă·8"}
+EX dpiă¯1ă‚¤ăƒ³ăƒă‚ăŸă‚ă®ç‚¹ă€‚cmă‚’ă‚¤ăƒ³ăƒ(Ă·2.54)ă«ç›´ă—ă¦Ă—dpiă—ă€ç¸¦Ă—æ¨ªă§ç·ç”»ç´ ă€‚
+qVi In khá»• A3 (29.7Ă—42.0 cm) á»Ÿ 350 dpi â€” quan há»‡ tĂ­nh sá»‘ pixel dĂ¹ng cĂ´ng thá»©c nĂ o?
+oVi {"A":"ç”»ç´ æ•° â‰’ (cm/2.54Ă—dpi) ă®ç¸¦Ă—æ¨ª","B":"sá»‘ Ä‘iá»ƒm áº£nh (pixel)","C":"sá»‘ Ä‘iá»ƒm áº£nh (pixel)","D":"ç”»ç´ æ•° = ăƒ“ăƒƒăƒˆæ•°Ă·8"}
+c â€¢ Äá»•i cm â†’ inch (/2.54), nhĂ¢n dpi â†’ sá»‘ Ä‘iá»ƒm theo cáº¡nh; pixel â‰ˆ (cm/2.54Ă—dpi) dá»c Ă— ngang.
+wc â€¢ CĂ´ng thá»©c Ä‘Ăºng: pixel_cáº¡nh = (cm/2.54)Ă—dpi; tá»•ng â‰ˆ tĂ­ch hai cáº¡nh.
+â€¢ CĂ¡c quan há»‡ khĂ¡c sai Ä‘Æ¡n vá»‹/cĂ´ng thá»©c.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? Sá»‘ cháº¥m in trĂªn má»—i inch â€” Ä‘á»™ phĂ¢n giáº£i mĂ¡y in/áº£nh.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»™ nĂ©t in áº¥n.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«dpi (dot per inch)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? Tá»‘c Ä‘á»™ truyá»n bit má»—i giĂ¢y.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? BÄƒng thĂ´ng máº¡ng.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«dpi (dot per inch)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? Sá»‘ >1 chá»‰ chia háº¿t 1 vĂ  chĂ­nh nĂ³.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? MĂ£ hĂ³a, sá»‘ há»c.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«dpi (dot per inch)
+==== [33m62[39m [33m245[39m B
+Q ă€Œsá»‘ nguyĂªn tá»‘ă€ă¯æ—¥æœ¬èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"ă‹ă‚“ă™ă†","B":"ăă„ă‚“ă™ă†","C":"ă«ă‚“ă™ă†","D":"ă‚‰ă‚“ă™ă†"}
+EX æ­£è§£ă¯Bă€‚ăă„ă‚“ă™ă†
+qVi Â«Sá»‘ nguyĂªn tá»‘ă€ tiáº¿ng Nháº­t lĂ  gĂ¬?
+oVi {"A":"hĂ m sá»‘ (kansÅ«)","B":"Æ°á»›c sá»‘","C":"sá»‘ ngÆ°á»i","D":"sá»‘ ngáº«u nhiĂªn"}
+c â€¢ Â«Sá»‘ nguyĂªn tá»‘Â» tiáº¿ng Nháº­t: ç´ æ•°ï¼ˆăă™ă†ï¼‰â€” lÆ°u Ă½ khĂ´ng nháº§m ăă„ă‚“ă™ă† (thá»«a sá»‘ nguyĂªn tá»‘).
+wc â€¢ Theo Ä‘Ă¡p Ă¡n bank: option B khá»›p Ä‘á» Â«sá»‘ nguyĂªn tá»‘Â» trong bá»™ cĂ¢u nĂ y.
+â€¢ Äá»‘i chiáº¿u kanji/yomi cĂ¡c option cĂ²n láº¡i: khĂ´ng Ä‘Æ°á»£c chá»n.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? hĂ m sá»‘ (kansÅ«) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Æ°á»›c sá»‘Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? sá»‘ ngÆ°á»i â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Æ°á»›c sá»‘Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? sá»‘ ngáº«u nhiĂªn â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂª
+==== [33m63[39m [33m246[39m D
+Q ă€Œă‚µă‚¤ăƒăƒ«æ”¾é€ă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"phĂ¡t sĂ³ng qua vá»‡ tinh","B":"phĂ¡t sĂ³ng táº¡m thá»i","C":"phĂ¡t sĂ³ng tá»«ng Ä‘oáº¡n","D":"phĂ¡t sĂ³ng cĂ¹ng má»™t lĂºc"}
+EX æ­£è§£ă¯Dă€‚phĂ¡t sĂ³ng cĂ¹ng má»™t lĂºc
+qVi Â« ă€ (simulcast) tiáº¿ng Viá»‡t lĂ  gĂ¬?
+oVi {"A":"phĂ¡t sĂ³ng qua vá»‡ tinh","B":"phĂ¡t sĂ³ng táº¡m thá»i","C":"phĂ¡t sĂ³ng tá»«ng Ä‘oáº¡n","D":"phĂ¡t sĂ³ng cĂ¹ng má»™t lĂºc"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«phĂ¡t sĂ³ng cĂ¹ng má»™t lĂºcÂ».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€Œă‚µă‚¤ăƒăƒ«æ”¾é€ă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«phĂ¡t sĂ³ng cĂ¹ng má»™t lĂºcÂ».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? phĂ¡t sĂ³ng qua vá»‡ tinh â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ¡t sĂ³ng cĂ¹ng má»™t lĂºcÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? phĂ¡t sĂ³ng táº¡m thá»i â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ¡t sĂ³ng cĂ¹ng má»™t lĂºcÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? phĂ¡t sĂ³ng tá»«ng Ä‘oáº¡n â€” khĂ¡i niá»‡m/opt
+==== [33m64[39m [33m247[39m D
+Q LAN (Local Area Network) ă«ă¤ă„ă¦ă€æ­£ă—ă„ă‚‚ă®ă¯ă©ă‚Œă§ă™ă‹ă€‚
+O {"A":"LANă¯ă€åºƒåŸŸăªåœ°åŸŸă‚’çµă¶å¤§è¦æ¨¡ăªăƒăƒƒăƒˆăƒ¯ăƒ¼ă‚¯ă§ă‚ă‚ă€ă‚¤ăƒ³ă‚¿ăƒ¼ăƒăƒƒăƒˆă¯WANă®ä¸€ç¨®ă§ă‚ă‚‹ă€‚","B":"LANă¨WANă®åŒºåˆ¥ă¯æ˜ç¢ºă§ă€ä¸€ă¤ă®ä¼æ¥­å†…ă®ăƒăƒƒăƒˆăƒ¯ăƒ¼ă‚¯ă¯ă€æ”¯åº—ăŒè¤‡æ•°ă‚ă£ă¦ă‚‚å¸¸ă«LANă¨ă—ă¦åˆ†é¡ă•ă‚Œă‚‹ă€‚","C":"LANă«ă¯ă‚³ăƒ³ăƒ”ăƒ¥ăƒ¼ă‚¿ă‚„ăƒ—ăƒªăƒ³ă‚¿ă®ă¿ăŒæ¥ç¶ă•ă‚Œă€å®¶é›»è£½å“ăŒæ¥ç¶ă•ă‚Œă‚‹ă“ă¨ă¯ăªă„ă€‚","D":"LANă¯ă€ăƒăƒƒăƒˆăƒ¯ăƒ¼ă‚¯ç®¡ç†è€…ăŒæ­©ă„ă¦æ©Ÿå™¨ă®ç¶æ…‹ă‚’ăƒă‚§ăƒƒă‚¯ă§ăă‚‹ç¨‹åº¦ă®å±€æ‰€ç„ăªç¯„å›²ă‚’æŒ‡ă™ă“ă¨ăŒå¤ă„ă€‚"}
+EX æ­£è§£ă¯Dă€‚LANă¯ă€ăƒăƒƒăƒˆăƒ¯ăƒ¼ă‚¯ç®¡ç†è€…ăŒæ­©ă„ă¦æ©Ÿå™¨ă®ç¶æ…‹ă‚’ăƒă‚§ăƒƒă‚¯ă§ăă‚‹ç¨‹åº¦ă®å±€æ‰€ç„ăªç¯„å›²ă‚’æŒ‡ă™ă“ă¨ăŒå¤ă„ă€‚
+qVi Vá» LAN (Local Area Network), phĂ¡t biá»ƒu nĂ o Ä‘Ăºng?
+oVi {"A":"phĂ¡t biá»ƒu vá» LAN/WAN","B":"phĂ¡t biá»ƒu vá» LAN/WAN","C":"LAN chá»‰ PC/mĂ¡y in, khĂ´ng cĂ³ gia dá»¥ng (sai hiá»‡n Ä‘áº¡i)","D":"phĂ¡t biá»ƒu vá» LAN/WAN"}
+c â€¢ phĂ¡t biá»ƒu vá» LAN/WAN
+â€¢ NghÄ©a: phĂ¡t biá»ƒu vá» LAN/WAN.
+wc â€¢ phĂ¡t biá»ƒu vá» LAN/WAN
+â€¢ ÄĂ¡p Ă¡n D: phĂ¡t biá»ƒu vá» LAN/WAN
+ww {
+ "A": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu vá» LAN/WAN â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ¡t biá»ƒu vá» LAN/WANÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu vá» LAN/WAN â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ¡t biá»ƒu vá» LAN/WANÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? LAN chá»‰ PC/mĂ¡y in, khĂ´ng cĂ³ gia dá»¥ng (
+==== [33m65[39m [33m248[39m A
+Q æ¬¡ă®èª¬æ˜ă™ă‚‹æ–‡æ›¸ă¯ ăŸă ă—ă§ă™ă‹ă€‚ï¼ˆPháº§n thuyáº¿t minh vá» tá»« vá»±ng Ä‘Æ°á»£c cho lĂ  Ä‘Ăºng hay sai?ï¼‰ èªè¨¼ă¨ă¯å…¬é–‹éµæ–¹å¼ă¨ç§˜å¯†éµæ–¹å¼ă«ă‚ˆă‚æ—å·åŒ–ă—ăŸç¶æ…‹ă§æƒ…å ±é€ä¿¡ă‚’è¡Œă†ă“ă¨ă€‚
+O {"A":"False","B":"True","C":"ï¼ˆå€™è£œăªă—ï¼‰","D":"ï¼ˆå€™è£œăªă—ï¼‰"}
+EX æ­£è§£ă¯Aă€‚False
+qVi PhĂ¡t biá»ƒu sau Ä‘Ăºng hay sai? Â«XĂ¡c thá»±c = truyá»n tin Ä‘Ă£ mĂ£ hĂ³a báº±ng khĂ³a cĂ´ng khai vĂ  khĂ³a bĂ­ máº­t.ă€
+oVi {"A":"False","B":"True","C":"(khĂ´ng cĂ³ phÆ°Æ¡ng Ă¡n phĂ¹ há»£p)","D":"(khĂ´ng cĂ³ phÆ°Æ¡ng Ă¡n phĂ¹ há»£p)"}
+c â€¢ CĂ¢u true/false vá» Ä‘oáº¡n thuyáº¿t minh tá»« vá»±ng â€” chá»‘t theo ná»™i dung Ä‘oáº¡n vĂ  Ä‘Ă¡p Ă¡n A.
+â€¢ KhĂ´ng dĂ¡n template Â«phĂ¡t biá»ƒu SAIÂ» generic náº¿u stem lĂ  kiá»ƒm tra Ä‘oáº¡n.
+wc â€¢ Theo key A: khá»›p Ä‘Ă¡nh giĂ¡ Ä‘oáº¡n (Ä‘Ăºng/sai) trong bank.
+â€¢ Äá»c ká»¹ mĂ´ táº£ tá»« vá»±ng â€” khĂ´ng chá»n ngÆ°á»£c key.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? True â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«FalseÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? (khĂ´ng cĂ³ phÆ°Æ¡ng Ă¡n phĂ¹ há»£p) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«FalseÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? (khĂ´ng cĂ³ phÆ°Æ¡ng Ă¡n phĂ¹ há»£p) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬?
+==== [33m66[39m [33m249[39m A
+Q OSIă®ă‚»ăƒƒă‚·ăƒ§ăƒ³å±¤ï¼ˆç¬¬5å±¤ï¼‰ă®ä¸»ăªå½¹å‰²ă¨ă—ă¦ă€æœ€ă‚‚é©åˆ‡ăªă‚‚ă®ă¯ă©ă‚Œă§ă™ă‹ă€‚
+O {"A":"é€ä¿¡ă®é–‹å§‹ă‹ă‚‰çµ‚äº†ă¾ă§ă®æ‰‹é †ă‚’ç®¡ç†ă™ă‚‹ă€‚","B":"é€ä¿¡ç›¸æ‰‹ă¾ă§ă®ăƒ‡ăƒ¼ă‚¿ă®è½‰é€çµŒè·¯ă‚’æ±ºå®ă—ă€è«–ç†ă‚¢ăƒ‰ăƒ¬ă‚¹ă‚’ç®¡ç†ă™ă‚‹ă€‚","C":"é€ä¿¡åª’ä½“ă‚’é€ă˜ă¦ăƒ“ăƒƒăƒˆä¿¡å·ă‚’ä¼é€ă™ă‚‹ăŸă‚ă®é›»æ°—ç„ăƒ»æ©Ÿæ¢°ç„è¦æ ¼ă‚’å®ă‚ă‚‹ă€‚","D":"ăƒ‡ăƒ¼ă‚¿ă®å½¢å¼ï¼ˆæ–‡å­—ă‚³ăƒ¼ăƒ‰ă‚„æ—å·åŒ–ăªă©ï¼‰ă‚’å¤‰æ›ă—ă€ă‚¢ăƒ—ăƒªă‚±ăƒ¼ă‚·ăƒ§ăƒ³å±¤ăŒæ‰±ăˆă‚‹å½¢å¼ă«å¤‰æ›ă™ă‚‹ă€‚"}
+EX æ­£è§£ă¯Aă€‚é€ä¿¡ă®é–‹å§‹ă‹ă‚‰çµ‚äº†ă¾ă§ă®æ‰‹é †ă‚’ç®¡ç†ă™ă‚‹ă€‚
+qVi Vai trĂ² chĂ­nh cá»§a táº§ng Session (táº§ng 5) trong OSI lĂ  gĂ¬?
+oVi {"A":"quáº£n lĂ½ thá»§ tá»¥c tá»« Ä‘áº§u Ä‘áº¿n háº¿t phiĂªn","B":"chá»n Ä‘Æ°á»ng truyá»n vĂ  quáº£n lĂ½ Ä‘á»‹a chá»‰ logic","C":"quy Ä‘á»‹nh chuáº©n Ä‘iá»‡n/cÆ¡ Ä‘á»ƒ truyá»n bit trĂªn mĂ´i trÆ°á»ng","D":"phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³a"}
+c â€¢ OSI táº§ng 5 (Session): quáº£n lĂ½ thá»§ tá»¥c tá»« báº¯t Ä‘áº§u Ä‘áº¿n káº¿t thĂºc phiĂªn giao tiáº¿p.
+wc â€¢ Session layer = thiáº¿t láº­p/duy trĂ¬/káº¿t thĂºc session.
+â€¢ Routing/bit thĂ´/mĂ£ hĂ³a end-to-end thuá»™c táº§ng khĂ¡c.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? chá»n Ä‘Æ°á»ng truyá»n vĂ  quáº£n lĂ½ Ä‘á»‹a chá»‰ logic â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«quáº£n lĂ½ thá»§ tá»¥c tá»« Ä‘áº§u Ä‘áº¿n háº¿t phiĂªnÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? quy Ä‘á»‹nh chuáº©n Ä‘iá»‡n/cÆ¡ Ä‘á»ƒ truyá»n bit trĂªn mĂ´i trÆ°á»ng â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«quáº£n lĂ½ thá»§ tá»¥c tá»« Ä‘áº§u Ä‘áº¿n háº¿t phiĂªnÂ» â€” option n
+==== [33m67[39m [33m250[39m C
+Q ORå›è·¯ă«ă¤ă„ă¦æ­£ă—ă„ă‚‚ă®ă‚’ăˆă‚‰ă‚“ă§ăă ă•ă„ă€‚
+O {"A":"ă‚¹ă‚¤ăƒƒăƒăŒç›´åˆ—ă«ä¸¦ă‚“ă å›è·¯ă¨ă—ă¦ăƒ¢ăƒ‡ăƒ«åŒ–ă•ă‚Œă¾ă™","B":"ORå›è·¯ă®æ¼”ç®—ă®ă“ă¨ă‚’è«–ç†ç©ă¨è¨€ă„ă¾ă™","C":"ă‚¹ă‚¤ăƒƒăƒăŒä¸¦åˆ—ă«ä¸¦ă‚“ă å›è·¯ă¨ă—ă¦ăƒ¢ăƒ‡ăƒ«åŒ–ă•ă‚Œă¾ă™","D":"ORå›è·¯ă¯1ă¤ă®ăƒ€ă‚¤ă‚ªăƒ¼ăƒ‰ă‚’ä½¿ă£ă¦å®Ÿç¾ă§ăă¾ă™"}
+EX æ­£è§£ă¯Că€‚ă‚¹ă‚¤ăƒƒăƒăŒä¸¦åˆ—ă«ä¸¦ă‚“ă å›è·¯ă¨ă—ă¦ăƒ¢ăƒ‡ăƒ«åŒ–ă•ă‚Œă¾ă™
+qVi Chá»n phĂ¡t biá»ƒu ÄĂNG vá» máº¡ch OR.
+oVi {"A":"máº¡ch cĂ¡c cĂ´ng táº¯c xáº¿p ná»‘i tiáº¿p","B":"gá»i phĂ©p OR lĂ  tĂ­ch logic (sai â€” OR lĂ  tá»•ng logic)","C":"máº¡ch cĂ¡c cĂ´ng táº¯c xáº¿p song song","D":"máº¡ch OR lĂ m báº±ng má»™t diode"}
+c â€¢ máº¡ch cĂ¡c cĂ´ng táº¯c xáº¿p song song
+â€¢ NghÄ©a: máº¡ch cĂ¡c cĂ´ng táº¯c xáº¿p song song.
+wc â€¢ máº¡ch cĂ¡c cĂ´ng táº¯c xáº¿p song song
+â€¢ ÄĂ¡p Ă¡n C: máº¡ch cĂ¡c cĂ´ng táº¯c xáº¿p song song
+ww {
+ "A": "â€¢ LĂ  gĂ¬? máº¡ch cĂ¡c cĂ´ng táº¯c xáº¿p ná»‘i tiáº¿p â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«máº¡ch cĂ¡c cĂ´ng táº¯c xáº¿p song songÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? Tá»•ng logic: cĂ³ Ă­t nháº¥t má»™t 1 thĂ¬ ra 1.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Máº¡ch logic OR.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«máº¡ch cĂ¡c cĂ´ng táº¯c xáº¿p song songÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? máº¡ch OR lĂ m báº±ng má»™t diode â€” khĂ¡i niá»‡m/option
+==== [33m68[39m [33m251[39m A
+Q ăƒă‚¶ăƒ¼ăƒœăƒ¼ăƒ‰ă¨ă‚±ăƒ¼ăƒ–ăƒ«ă§æ¥ç¶ă•ă‚ŒăŸç®±ă¯ä½•ă§ă™ă‹ă€‚
+O {"A":"ăƒăƒ¼ăƒ‰ăƒ‡ă‚£ă‚¹ă‚¯","B":"ăƒă‚¶ăƒ¼ăƒœăƒ¼ăƒ‰","C":"CPU","D":"ăƒ¡ăƒª"}
+EX æ­£è§£ă¯Aă€‚ăƒăƒ¼ăƒ‰ăƒ‡ă‚£ă‚¹ă‚¯
+qVi Há»™p ná»‘i vá»›i mainboard báº±ng cĂ¡p lĂ  gĂ¬?
+oVi {"A":"á»• cá»©ng (HDD)","B":"mainboard (bo máº¡ch chá»§)","C":"phĂ¡t biá»ƒu vá» CPU / bá»™ nhá»› / bĂ¡n dáº«n","D":"(máº£nh tá»«)"}
+c â€¢ Há»™p gáº¯n mainboard báº±ng cĂ¡p â€” thÆ°á»ng lĂ  ăƒăƒ¼ăƒ‰ăƒ‡ă‚£ă‚¹ă‚¯ (HDD) trong ngá»¯ cáº£nh Ä‘á».
+wc â€¢ HDD lĂ  thiáº¿t bá»‹ nhá»› phá»¥ káº¿t ná»‘i mainboard qua cĂ¡p.
+â€¢ PhĂ¢n biá»‡t PSU/mĂ n hĂ¬nh/chuá»™t náº¿u lĂ  distractor.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? mainboard (bo máº¡ch chá»§) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«á»• cá»©ng (HDD)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu vá» CPU / bá»™ nhá»› / bĂ¡n dáº«n â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«á»• cá»©ng (HDD)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? (máº£nh tá»«) â€” khĂ¡i niá»‡m/option trong Ä‘
+==== [33m69[39m [33m252[39m A
+Q ă‚¯ăƒ­ăƒƒă‚¯å‘¨æ³¢æ•° 3 GHz ă®ăƒ—ăƒ­ă‚»ăƒƒă‚µă«ăă„ă¦ă€1ă¤ă®å‘½ä»¤ăŒ6ă‚¯ăƒ­ăƒƒă‚¯ă§å®Ÿè¡Œă§ăă‚‹ă¨ăă€1å‘½ä»¤ă®å®Ÿè¡Œă«å¿…è¦ăªæ™‚é–“ă¯ä½•ăƒăƒç§’ă‹ă€‚
+O {"A":"2.0","B":"3.0","C":"0.5","D":"18.0"}
+EX æ­£è§£ă¯Aă€‚2.0
+qVi CPU 3 GHz, 1 lá»‡nh = 6 clock â€” thá»i gian 1 lá»‡nh lĂ  bao nhiĂªu nanosecond?
+oVi {"A":"2.0","B":"3.0","C":"0.5","D":"18.0"}
+c â€¢ Káº¿t quáº£ sá»‘ Ä‘Ăºng: 2.0 (theo cĂ´ng thá»©c/Ä‘áº¿m trong stem).
+wc â€¢ t = (sá»‘ clock)/f = 6 / 3e9 = 2e-9 s = 2.0 ns.
+â€¢ CĂ¡c giĂ¡ trá»‹ khĂ¡c sai há»‡ sá»‘ clock hoáº·c Ä‘Æ¡n vá»‹.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? 3.0 â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«2.0Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? 0.5 â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«2.0Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? 18.0 â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao 
+==== [33m70[39m [33m253[39m C
+Q å‡ºå›è£…ç½®ă¯ä½•ăŒă‚ă‚ă¾ă™ă‹ă€‚
+O {"A":"ă‚­ăƒ¼ăƒœăƒ¼ăƒ‰ă‚„ăƒă‚¦ă‚¹","B":"ăƒ¡ăƒ¢ăƒªă‚„ăƒăƒ¼ăƒ‰ăƒ‡ă‚£ă‚¹ă‚¯","C":"ăƒ‡ă‚£ă‚¹ăƒ—ăƒ¬ă‚¤ă‚„ăƒ—ăƒªăƒ³ă‚¿","D":"CPU"}
+EX æ­£è§£ă¯Că€‚ăƒ‡ă‚£ă‚¹ăƒ—ăƒ¬ă‚¤ă‚„ăƒ—ăƒªăƒ³ă‚¿
+qVi Thiáº¿t bá»‹ ra (output) gá»“m nhá»¯ng gĂ¬?
+oVi {"A":"bĂ n phĂ­m","B":"bá»™ nhá»› vĂ  á»• cá»©ng","C":"mĂ n hĂ¬nh","D":"phĂ¡t biá»ƒu vá» CPU / bá»™ nhá»› / bĂ¡n dáº«n"}
+c â€¢ Thiáº¿t bá»‹ xuáº¥t Ä‘iá»ƒn hĂ¬nh: ăƒ‡ă‚£ă‚¹ăƒ—ăƒ¬ă‚¤ă‚„ăƒ—ăƒªăƒ³ă‚¿ (mĂ n hĂ¬nh, mĂ¡y in).
+wc â€¢ Output = hiá»ƒn thá»‹/in cho ngÆ°á»i dĂ¹ng.
+â€¢ BĂ n phĂ­m/chuá»™t lĂ  input.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? bĂ n phĂ­m â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«mĂ n hĂ¬nh vĂ  mĂ¡y inÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? Bá»™ nhá»› phá»¥ tá»« tĂ­nh, gáº¯n mainboard qua cĂ¡p.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? LÆ°u dá»¯ liá»‡u lĂ¢u dĂ i.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«mĂ n hĂ¬nh vĂ  mĂ¡y inÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu vá» CPU / bá»™ nhá»› / bĂ¡n dáº«n â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬?
+==== [33m71[39m [33m254[39m B
+Q ă€ŒROMă€ă¨ă¯ä½•ă§ă™ă‹ă€‚
+O {"A":"ç”»é¢ă‚¤ăƒ¡ăƒ¼ă‚¸å…¨ä½“ă‚’è¨˜æ†¶ă™ă‚‹ăƒ¡ăƒ¢ăƒªă§ă‚ă‚‹","B":"èª­ă¿å–ă‚å°‚ç”¨ă®åå°ä½“ăƒ¡ăƒ¢ăƒªă§ă‚ă‚‹","C":"èª­ă¿æ›¸ăå°‚ç”¨ă®åå°ä½“ăƒ¡ăƒ¢ăƒªă§ă‚ă‚‹","D":"é™é›»æ°—ă‚’ă‚’è¨˜éŒ²ă™ă‚‹ăƒ¡ăƒ¢ăƒªă§ă‚ă‚‹"}
+EX æ­£è§£ă¯Bă€‚èª­ă¿å–ă‚å°‚ç”¨ă®åå°ä½“ăƒ¡ăƒ¢ăƒªă§ă‚ă‚‹
+qVi Â«ROMÂ» lĂ  gĂ¬?
+oVi {"A":"Bá»™ nhá»› lÆ°u toĂ n bá»™ áº£nh mĂ n hĂ¬nh (VRAM/frame buffer)","B":"LĂ  bá»™ nhá»› bĂ¡n dáº«n chá»‰ Ä‘á»c (ROM)","C":"LĂ  bá»™ nhá»› bĂ¡n dáº«n Ä‘á»c-ghi (sai khĂ¡i niá»‡m ROM)","D":"Bá»™ nhá»› ghi tÄ©nh Ä‘iá»‡n (diá»…n Ä‘áº¡t sai/lá»‡ch)"}
+c â€¢ bá»™ nhá»›: lÆ°u chÆ°Æ¡ng trĂ¬nh/dá»¯ liá»‡u.
+wc â€¢ Äá»‹nh nghÄ©a ROM khá»›p option Ä‘Ăºng B trong bank.
+â€¢ PhĂ¢n biá»‡t RAM bay hÆ¡i / Ä‘Ä©a phá»¥.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? Bá»™ nhá»› lÆ°u toĂ n bá»™ áº£nh mĂ n hĂ¬nh (VRAM/frame buffer) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«LĂ  bá»™ nhá»› bĂ¡n dáº«n chá»‰ Ä‘á»c (ROM)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? LĂ  bá»™ nhá»› bĂ¡n dáº«n Ä‘á»c-ghi (sai khĂ¡i niá»‡m ROM) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«LĂ  bá»™ nhá»› bĂ¡n dáº«n chá»‰ Ä‘á»c (ROM)Â» â€” option nĂ y thuá»™c
+==== [33m72[39m [33m255[39m B
+Q ăƒăƒ¥ăƒ¼ăƒªăƒ³ă‚°ăƒă‚·ăƒ³ă¯ä½•ă‹ă‚‰æ§‹é€ ă•ă‚Œă¾ă™ă‹ă€‚
+O {"A":"ăƒ˜ăƒƒăƒ‰ă€ăƒ†ăƒ¼ăƒ—ă€ăƒ¡ăƒ¢ăƒª","B":"ăƒ˜ăƒƒăƒ‰ă€ăƒ†ăƒ¼ăƒ—","C":"ăƒ†ăƒ¼ăƒ—ă€ăƒ¡ăƒ¢ăƒª","D":"ăƒ˜ăƒƒăƒ‰ă€ăƒ¡ăƒ¢ăƒª"}
+EX æ­£è§£ă¯Bă€‚ăƒ˜ăƒƒăƒ‰ă€ăƒ†ăƒ¼ăƒ—
+qVi MĂ¡y Turing gá»“m nhá»¯ng thĂ nh pháº§n nĂ o?
+oVi {"A":"ăƒ˜ăƒƒăƒ‰ă€ăƒ†ăƒ¼ăƒ—ă€ăƒ¡ăƒ¢ăƒª","B":"Ä‘áº§u Ä‘á»c vĂ  bÄƒng (mĂ¡y Turing)","C":"ăƒ†ăƒ¼ăƒ—ă€ăƒ¡ăƒ¢ăƒª","D":"ăƒ˜ăƒƒăƒ‰ă€ăƒ¡ăƒ¢ăƒª"}
+c â€¢ MĂ¡y Turing gá»“m head (Ä‘áº§u Ä‘á»c/ghi) vĂ  tape (bÄƒng) â€” cáº¥u trĂºc cá»‘t lĂµi.
+wc â€¢ ăƒ˜ăƒƒăƒ‰ă€ăƒ†ăƒ¼ăƒ— lĂ  thĂ nh pháº§n cáº¥u trĂºc Turing machine.
+â€¢ KhĂ´ng nháº§m CPU hiá»‡n Ä‘áº¡i.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? MĂ¡y Turing gá»“m head + tape (+ báº£ng tráº¡ng thĂ¡i).\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? MĂ´ hĂ¬nh tĂ­nh toĂ¡n lĂ½ thuyáº¿t.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Ä‘áº§u Ä‘á»c vĂ  bÄƒng (mĂ¡y Turing)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? ăƒ†ăƒ¼ăƒ—ă€ăƒ¡ăƒ¢ăƒª â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Ä‘áº§u Ä‘á»c vĂ  bÄƒng (mĂ¡y Turing)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? ăƒ˜ăƒƒăƒ‰ă€ăƒ¡ăƒ¢ăƒª â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€”
+==== [33m73[39m [33m256[39m D
+Q æ•…éœä»¥å¤–ă§å•é¡Œăªă®ă¯ă€( ) ă«ă‚ˆă‚‹ä¸å…·åˆă§ă™ă€‚
+O {"A":"ăƒ—ăƒ­ă‚°ăƒ©ăƒ ","B":"ă‚¦ă‚¤ăƒ«ă‚¹","C":"OS","D":"ăƒ—ăƒ­ă‚°ăƒ©ăƒ ăƒŸă‚¹"}
+EX æ­£è§£ă¯Dă€‚ăƒ—ăƒ­ă‚°ăƒ©ăƒ ăƒŸă‚¹
+qVi Äiá»n tá»« thĂ­ch há»£p vĂ o chá»— trá»‘ng (xem cĂ¢u gá»‘c).
+oVi {"A":"chÆ°Æ¡ng trĂ¬nh","B":"ă‚¦ă‚¤ăƒ«ă‚¹","C":"há»‡ Ä‘iá»u hĂ nh (OS)","D":"chÆ°Æ¡ng trĂ¬nh"}
+c â€¢ NgoĂ i há»ng pháº§n cá»©ng, sá»± cá»‘ thÆ°á»ng do ăƒ—ăƒ­ă‚°ăƒ©ăƒ ăƒŸă‚¹ (lá»—i chÆ°Æ¡ng trĂ¬nh/bug).
+wc â€¢ Äiá»n bug pháº§n má»m.
+â€¢ KhĂ´ng pháº£i lĂºc nĂ o cÅ©ng do há»ng mĂ¡y.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? Sai sĂ³t pháº§n má»m gĂ¢y sá»± cá»‘ dĂ¹ pháº§n cá»©ng khĂ´ng há»ng.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? NguyĂªn nhĂ¢n sá»± cá»‘ phi-pháº§n-cá»©ng.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«lá»—i chÆ°Æ¡ng trĂ¬nh (bug)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? ă‚¦ă‚¤ăƒ«ă‚¹ â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«lá»—i chÆ°Æ¡ng trĂ¬nh (bug)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? há»‡ Ä‘iá»u hĂ nh (OS) â€” khĂ¡i niá»‡m/option 
+==== [33m74[39m [33m257[39m C
+Q ă€Œbá»™ vi xá»­ lĂ½ă€ă¯æ—¥æœ¬èªă§ăªă‚“ă§ă™ă‹ă€‚
+O {"A":"ăƒă‚¤ă‚¯ăƒ­ăƒ—ăƒ­ă‚»ăƒƒă‚µăƒ¼","B":"ăƒ‡ăƒă‚¤ă‚¹ăƒ‰ăƒ©ă‚¤ăƒ","C":"ăƒă‚¤ă‚¯ăƒ­ăƒ—ăƒ­ă‚»ăƒƒă‚µ","D":"ăƒă‚¶ăƒ¼ăƒœăƒ¼ăƒ‰"}
+EX æ­£è§£ă¯Că€‚ăƒă‚¤ă‚¯ăƒ­ăƒ—ăƒ­ă‚»ăƒƒă‚µ
+qVi Â«Bá»™ vi xá»­ lĂ½ă€ tiáº¿ng Nháº­t lĂ  gĂ¬?
+oVi {"A":"vi xá»­ lĂ½","B":"driver thiáº¿t bá»‹","C":"vi xá»­ lĂ½","D":"mainboard (bo máº¡ch chá»§)"}
+c â€¢ Â«Bá»™ vi xá»­ lĂ½Â» = ăƒă‚¤ă‚¯ăƒ­ăƒ—ăƒ­ă‚»ăƒƒă‚µ (microprocessor).
+wc â€¢ ÄĂºng thuáº­t ngá»¯ JP.
+â€¢ KhĂ´ng nháº§m chá»‰ Â«bá»™ nhá»›Â» hay Â«busÂ».
+ww {
+ "A": "â€¢ LĂ  gĂ¬? CPU trĂªn má»™t chip â€” bá»™ vi xá»­ lĂ½.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? TrĂ¡i tim mĂ¡y tĂ­nh/nhĂºng.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«vi xá»­ lĂ½ (microprocessor)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? Pháº§n má»m Ä‘iá»u khiá»ƒn pháº§n cá»©ng cá»¥ thá»ƒ.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? OS nĂ³i chuyá»‡n vá»›i thiáº¿t bá»‹ â€” khĂ´ng Ä‘á»‹nh nghÄ©a UI.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«vi xá»­ lĂ½ (microprocessor)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? mainboard (bo máº¡ch chá»§) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m 
+==== [33m75[39m [33m258[39m A
+Q Aă•ă‚“ăŒBă•ă‚“ă«é›»å­æ–‡æ›¸ă‚’é€ä¿¡ă—ă€Bă•ă‚“ăŒăă®æ–‡æ›¸ă®é€ä¿¡è€…ă‚’ç¢ºèªă™ă‚‹æ–¹æ³•ă«ă¤ă„ă¦ă€æœ¬æ–‡ă®å†…å®¹ă«åŸºă¥ăă€æ­£ă—ăèª¬æ˜ă—ă¦ă„ă‚‹ă‚‚ă®ă¯ă©ă‚Œă‹ă€‚
+O {"A":"Aă•ă‚“ă¯è‡ªèº«ă®ç§˜å¯†éµă§æ–‡æ›¸ă‚’æ—å·åŒ–ă—ă¦é€ä¿¡ă™ă‚‹ă€‚Bă•ă‚“ă¯Aă•ă‚“ă®å…¬é–‹éµă§å¾©å·ă§ăă‚Œă°ă€Aă•ă‚“ă‹ă‚‰ă®é€ä¿¡ă¨ç¢ºèªă§ăă‚‹ă€‚","B":"Aă•ă‚“ă¯è‡ªèº«ă®å…¬é–‹éµă§æ–‡æ›¸ă‚’æ—å·åŒ–ă—ă¦é€ä¿¡ă™ă‚‹ă€‚Bă•ă‚“ă¯Aă•ă‚“ă®ç§˜å¯†éµă§å¾©å·ă§ăă‚Œă°ă€Aă•ă‚“ă‹ă‚‰ă®é€ä¿¡ă¨ç¢ºèªă§ăă‚‹ă€‚","C":"Aă•ă‚“ă¯Bă•ă‚“ă®å…¬é–‹éµă§æ–‡æ›¸ă‚’æ—å·åŒ–ă—ă¦é€ä¿¡ă™ă‚‹ă€‚Bă•ă‚“ă¯è‡ªèº«ă®ç§˜å¯†éµă§å¾©å·ă§ăă‚Œă°ă€Aă•ă‚“ă‹ă‚‰ă®é€ä¿¡ă¨ç¢ºèªă§ăă‚‹ă€‚","D":"Aă•ă‚“ă¯Bă•ă‚“ă®ç§˜å¯†éµă§æ–‡æ›¸ă‚’æ—å·åŒ–ă—ă¦é€ä¿¡ă™ă‚‹ă€‚Bă•ă‚“ă¯è‡ªèº«ă®å…¬é–‹éµă§å¾©å·ă§ăă‚Œă°ă€Aă•ă‚“ă‹ă‚‰ă®é€ä¿¡ă¨ç¢ºèªă§ăă‚‹ă€‚"}
+EX æ­£è§£ă¯Aă€‚Aă•ă‚“ă¯è‡ªèº«ă®ç§˜å¯†éµă§æ–‡æ›¸ă‚’æ—å·åŒ–ă—ă¦é€ä¿¡ă™ă‚‹ă€‚Bă•ă‚“ă¯Aă•ă‚“ă®å…¬é–‹éµă§å¾©å·ă§ăă‚Œă°ă€Aă•ă‚“ă‹ă‚‰ă®é€ä¿¡ă¨ç¢ºèªă§ăă‚‹ă€‚
+qVi A gá»­i vÄƒn báº£n Ä‘iá»‡n tá»­ cho B; B xĂ¡c nháº­n ngÆ°á»i gá»­i â€” cĂ¡ch nĂ o Ä‘Ăºng theo bĂ i?
+oVi {"A":"phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³a","B":"phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³a","C":"phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³a","D":"phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³a"}
+c â€¢ XĂ¡c minh ngÆ°á»i gá»­i vÄƒn báº£n Ä‘iá»‡n tá»­: dĂ¹ng chá»¯ kĂ½ sá»‘ / xĂ¡c thá»±c (theo ná»™i dung Ä‘oáº¡n), khĂ´ng chá»‰ mĂ£ hĂ³a ná»™i dung.
+wc â€¢ Chá»n mĂ´ táº£ Ä‘Ăºng theo Ä‘oáº¡n stem (Ä‘Ă¡p Ă¡n A).
+â€¢ MĂ£ hĂ³a báº£o máº­t ná»™i dung â‰  tá»± Ä‘á»™ng chá»©ng minh ngÆ°á»i gá»­i náº¿u thiáº¿u chá»¯ kĂ½/xĂ¡c thá»±c.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³a â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³aÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? Trong mĂ£ hĂ³a khĂ³a cĂ´ng khai: mĂ£ báº±ng public key ngÆ°á»i nháº­n.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Chá»‰ B giáº£i báº±ng private key cá»§a B.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³aÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu vá» mĂ£ hĂ³
+==== [33m76[39m [33m259[39m A
+Q Aă•ă‚“ă¯ă€Bă•ă‚“ă«æ©Ÿå¯†æ–‡æ›¸ă‚’é›»å­ăƒ¡ăƒ¼ăƒ«ă§é€ä¿¡ă™ă‚‹ăŸă‚ă€å…¬é–‹éµæ—å·æ–¹å¼ă‚’ç”¨ă„ă¦æ–‡æ›¸ă‚’æ—å·åŒ–ă™ă‚‹ă“ă¨ă«ă—ăŸă€‚ă“ă®ă¨ăă€Aă•ă‚“ăŒæ–‡æ›¸ă‚’æ—å·åŒ–ă™ă‚‹ăŸă‚ă«ä½¿ç”¨ă™ă‚‹ă¹ăéµă¯ă©ă‚Œă‹ă€‚
+O {"A":"Bă•ă‚“ă®å…¬é–‹éµ","B":"Aă•ă‚“ă®ç§˜å¯†éµ","C":"Bă•ă‚“ă®ç§˜å¯†éµ","D":"Aă•ă‚“ă®å…¬é–‹éµ"}
+EX æ­£è§£ă¯Aă€‚Bă•ă‚“ă®å…¬é–‹éµ
+qVi A mĂ£ hĂ³a email máº­t cho B báº±ng máº­t mĂ£ khĂ³a cĂ´ng khai. A pháº£i dĂ¹ng khĂ³a nĂ o?
+oVi {"A":"khĂ³a cĂ´ng khai cá»§a B","B":"khĂ³a bĂ­ máº­t cá»§a A","C":"khĂ³a bĂ­ máº­t cá»§a B","D":"khĂ³a cĂ´ng khai cá»§a A"}
+c â€¢ MĂ£ hĂ³a khĂ³a cĂ´ng khai: ngÆ°á»i gá»­i A mĂ£ báº±ng å…¬é–‹éµ cá»§a ngÆ°á»i nháº­n B â†’ chá»‰ B giáº£i báº±ng private key.
+wc â€¢ A dĂ¹ng Bă•ă‚“ă®å…¬é–‹éµ Ä‘á»ƒ mĂ£.
+â€¢ KhĂ´ng dĂ¹ng private key cá»§a B Ä‘á»ƒ mĂ£; khĂ´ng dĂ¹ng public key cá»§a A cho má»¥c Ä‘Ă­ch Â«chá»‰ B Ä‘á»cÂ».
+ww {
+ "B": "â€¢ LĂ  gĂ¬? khĂ³a bĂ­ máº­t cá»§a A â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«khĂ³a cĂ´ng khai cá»§a BÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? khĂ³a bĂ­ máº­t cá»§a B â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«khĂ³a cĂ´ng khai cá»§a BÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? khĂ³a cĂ´ng khai cá»§a A â€” khĂ¡i niá»‡m/option tron
+==== [33m77[39m [33m260[39m D
+Q ă‚³ăƒ³ăƒ”ăƒ¥ăƒ¼ă‚¿ă‚¦ă‚¤ăƒ«ă‚¹ă®äºˆé˜²ç­–ă¨ă—ă¦ă€æœ€ă‚‚é©åˆ‡ăªă‚‚ă®ă¯ă©ă‚Œă§ă™ă‹ă€‚
+O {"A":"æ—¢çŸ¥ă®ă‚¦ă‚¤ăƒ«ă‚¹ă®ă¿ă‚’æ¤œå‡ºă™ă‚‹ă‚ˆă†ă€ă‚¦ă‚¤ăƒ«ă‚¹å¯¾ç­–ă‚½ăƒ•ăƒˆă®ăƒ‘ă‚¿ăƒ¼ăƒ³ăƒ•ă‚¡ă‚¤ăƒ«ă¯æ›´æ–°ă—ăªă„ă€‚","B":"ă‚¦ă‚¤ăƒ«ă‚¹ă«æ„ŸæŸ“ă—ăŸå ´åˆă¯ă€ă™ăă«å…¨ă¦ă®ăƒ•ă‚¡ă‚¤ăƒ«ă‚’æ¶ˆå»ă—ăƒ‘ă‚½ă‚³ăƒ³ă‚’åˆæœŸåŒ–ă™ă‚‹ă€‚","C":"ă‚¦ă‚¤ăƒ«ă‚¹æ„ŸæŸ“ă‚’é˜²ăă«ă¯ă€ăƒ¡ăƒ¼ăƒ«ă®åˆ©ç”¨ă‚’å®Œå…¨ă«åœæ­¢ă™ă‚‹ă“ă¨ăŒæœ€ă‚‚å¹æœç„ă§ă‚ă‚‹ă€‚","D":"ă‚¦ă‚¤ăƒ«ă‚¹å¯¾ç­–ă‚½ăƒ•ăƒˆă‚’è³¼å…¥ă—ă€ăƒ‘ă‚¿ăƒ¼ăƒ³ăƒ•ă‚¡ă‚¤ăƒ«ă‚’æ—¥å¸¸ç„ă«æ›´æ–°ă™ă‚‹ă€‚"}
+EX æ­£è§£ă¯Dă€‚ă‚¦ă‚¤ăƒ«ă‚¹å¯¾ç­–ă‚½ăƒ•ăƒˆă‚’è³¼å…¥ă—ă€ăƒ‘ă‚¿ăƒ¼ăƒ³ăƒ•ă‚¡ă‚¤ăƒ«ă‚’æ—¥å¸¸ç„ă«æ›´æ–°ă™ă‚‹ă€‚
+qVi Biá»‡n phĂ¡p phĂ²ng virus mĂ¡y tĂ­nh nĂ o phĂ¹ há»£p nháº¥t?
+oVi {"A":"phĂ¡t biá»ƒu vá» virus / chá»‘ng malware","B":"nhiá»…m virus thĂ¬ xĂ³a háº¿t file vĂ  reset (quĂ¡ cá»±c Ä‘oan)","C":"ngá»«ng háº³n email lĂ  cĂ¡ch phĂ²ng virus hiá»‡u quáº£ nháº¥t (sai)","D":"mua antivirus vĂ  cáº­p nháº­t pattern háº±ng ngĂ y"}
+c â€¢ PhĂ²ng virus: biá»‡n phĂ¡p phĂ¹ há»£p nháº¥t theo option Ä‘Ăºng (cáº­p nháº­t/AV/thĂ³i quen an toĂ n â€” theo key D).
+wc â€¢ Chá»n biá»‡n phĂ¡p phĂ²ng ngá»«a khá»›p kiáº¿n thá»©c + key D.
+â€¢ Loáº¡i biá»‡n phĂ¡p khĂ´ng hiá»‡u quáº£/sai.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu vá» virus / chá»‘ng malware â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«mua antivirus vĂ  cáº­p nháº­t pattern háº±ng ngĂ yÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? nhiá»…m virus thĂ¬ xĂ³a háº¿t file vĂ  reset (quĂ¡ cá»±c Ä‘oan) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«mua antivirus vĂ  cáº­p nháº­t pattern háº±ng ngĂ yÂ» â€” op
+==== [33m78[39m [33m261[39m D
+Q CPUă«ă¤ă„ă¦æ­£ă—ăăªă„ă‚‚ă®ă‚’ăˆă‚‰ă‚“ă§ăă ă•ă„ă€‚
+O {"A":"å‡¦ç†ă®ä¸­å¿ƒă¨ăªă‚‹éƒ¨å“","B":"æ¼”ç®—è£…ç½®ă¨åˆ¶å¾¡è£…ç½®ă®æ©Ÿèƒ½ăŒçµ„ă¿è¾¼ă¾ă‚Œă¦ă„ă‚‹","C":"ă‚³ăƒ³ăƒ”ăƒ¥ăƒ¼ă‚¿ă®é ­è„³","D":"å…¥å›è£…ç½®ă¨å‡ºå›è£…ç½®ă®æ©Ÿèƒ½ăŒçµ„ă¿è¾¼ă¾ă‚Œă¦ă„ă‚‹"}
+EX æ­£è§£ă¯Dă€‚å…¥å›è£…ç½®ă¨å‡ºå›è£…ç½®ă®æ©Ÿèƒ½ăŒçµ„ă¿è¾¼ă¾ă‚Œă¦ă„ă‚‹
+qVi Chá»n phĂ¡t biá»ƒu SAI vá» CPU.
+oVi {"A":"linh kiá»‡n trung tĂ¢m xá»­ lĂ½ (CPU)","B":"cĂ³ ALU vĂ  control unit","C":"mĂ¡y tĂ­nh","D":"cĂ³ input vĂ  output unit"}
+c â€¢ CPU: thá»±c thi lá»‡nh â€” khĂ´ng pháº£i thiáº¿t bá»‹ vĂ o/ra.
+â€¢ Äá» chá»n phĂ¡t biá»ƒu **khĂ´ng Ä‘Ăºng** vá» CPU.
+wc â€¢ Option D gĂ¡n CPU chá»©c nÄƒng input/output â€” sai â†’ lĂ  Ä‘Ă¡p Ă¡n Â«khĂ´ng Ä‘ĂºngÂ».
+â€¢ CĂ¡c option cĂ²n láº¡i Ä‘Ăºng hÆ¡n vá» vai trĂ² CPU.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? linh kiá»‡n trung tĂ¢m xá»­ lĂ½ (CPU) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«cĂ³ input vĂ  output unitÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? cĂ³ ALU vĂ  control unit â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«cĂ³ input vĂ  output unitÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? mĂ¡y tĂ­nh â€” khĂ¡i niá»‡
+==== [33m79[39m [33m262[39m C
+Q ăƒ€ă‚¤ă‚ªăƒ¼ăƒ‰ă«é–¢ă™ă‚‹æ¬¡ă®è¨˜è¿°ă®ă†ă¡ă€æ­£ă—ă„ă‚‚ă®ă¯ă©ă‚Œă§ă™ă‹ă€‚
+O {"A":"ăƒ€ă‚¤ă‚ªăƒ¼ăƒ‰ă¯ă€på‹ă¨nå‹ă¨ă„ă†2ă¤ă®åŒă˜æ€§è³ªă®ç‰©è³ªă‚’è²¼ă‚åˆă‚ă›ă¦ä½œă‚‰ă‚Œă‚‹ă€‚","B":"ă™ă¹ă¦ă®ăƒ€ă‚¤ă‚ªăƒ¼ăƒ‰ă¯é›»æµăŒæµă‚Œă‚‹ă¨ç™ºå…‰ă™ă‚‹ăŸă‚ă€é›»æºăƒ©ăƒ³ăƒ—ăªă©ă«åºƒăç”¨ă„ă‚‰ă‚Œă¦ă„ă‚‹ă€‚","C":"ăƒ€ă‚¤ă‚ªăƒ¼ăƒ‰ă¯ă€é›»æµă‚’ä¸€æ–¹å‘ă«ă—ă‹æµă•ăªă„ă¨ă„ă†ç‚¹ă§ă€çœŸç©ºç®¡ă¨ç•°ăªă‚‹æ©Ÿèƒ½ă‚’æŒă¤ă€‚","D":"ăƒ€ă‚¤ă‚ªăƒ¼ăƒ‰ă§ă¯ă€é›»å­ăŒpå‹ă‹ă‚‰nå‹ă«ç§»å‹•ă—ă‚„ă™ăă€ăă®é€†æ–¹å‘ă«é›»æµăŒæµă‚Œă‚‹ă€‚"}
+EX æ­£è§£ă¯Că€‚ăƒ€ă‚¤ă‚ªăƒ¼ăƒ‰ă¯ă€é›»æµă‚’ä¸€æ–¹å‘ă«ă—ă‹æµă•ăªă„ă¨ă„ă†ç‚¹ă§ă€çœŸç©ºç®¡ă¨ç•°ăªă‚‹æ©Ÿèƒ½ă‚’æŒă¤ă€‚
+qVi Vá» diode, phĂ¡t biá»ƒu nĂ o Ä‘Ăºng?
+oVi {"A":"diode ghĂ©p hai váº­t cĂ¹ng tĂ­nh p vĂ  n (sai â€” khĂ¡c tĂ­nh)","B":"Má»i diode Ä‘á»u phĂ¡t sĂ¡ng khi cĂ³ dĂ²ng (sai â€” chá»‰ LED).","C":"diode chá»‰ cho dĂ²ng má»™t chiá»u â€” khĂ¡c á»‘ng chĂ¢n khĂ´ng","D":"electron dá»… tá»« pâ†’n; dĂ²ng ngÆ°á»£c chiá»u (cáº§n Ä‘á»‘i chiáº¿u chuáº©n)"}
+c â€¢ diode chá»‰ cho dĂ²ng má»™t chiá»u â€” khĂ¡c á»‘ng chĂ¢n khĂ´ng
+â€¢ NghÄ©a: diode chá»‰ cho dĂ²ng má»™t chiá»u â€” khĂ¡c á»‘ng chĂ¢n khĂ´ng.
+wc â€¢ diode chá»‰ cho dĂ²ng má»™t chiá»u â€” khĂ¡c á»‘ng chĂ¢n khĂ´ng
+â€¢ ÄĂ¡p Ă¡n C: diode chá»‰ cho dĂ²ng má»™t chiá»u â€” khĂ¡c á»‘ng chĂ¢n khĂ´ng
+ww {
+ "A": "â€¢ LĂ  gĂ¬? Â«p-type vĂ  n-type cĂ¹ng tĂ­nh cháº¥t ghĂ©p láº¡iÂ»\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? MĂ´ táº£ cáº¥u táº¡o diode.\nâ€¢ VĂ¬ sao sai? Sai: p vĂ  n lĂ  hai loáº¡i bĂ¡n dáº«n trĂ¡i dáº¥u, khĂ´ng Â«cĂ¹ng tĂ­nh cháº¥tÂ».",
+ "B": "â€¢ LĂ  gĂ¬? PhĂ¡t biá»ƒu sai khĂ¡c vá» diode (theo option B).\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i chiáº¿u Ä‘á»‹nh nghÄ©a diode/pn.\nâ€¢ VĂ¬ sao sai? KhĂ´ng khá»›p kiáº¿n thá»©c chuáº©n â†’ khĂ´ng chá»n khi Ä‘á» há»i cĂ¡i Ä‘Ăºng.",
+ "D": "â€¢ LĂ  gĂ¬? PhĂ¡t biá»ƒu sai cĂ²n láº¡i (option D).\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i chiáº¿u chá»‰nh lÆ°u / chiá»u dĂ²ng.\nâ€¢ VĂ¬ sao sai? KhĂ´ng pháº£
+==== [33m80[39m [33m263[39m D
+Q ä»¥ä¸‹ă®ăƒ¡ăƒ¢ăƒªéƒ¨å“ă®ä¸­ă§ă€ă‚¢ă‚¯ă‚»ă‚¹é€Ÿåº¦ăŒä¸€ç•ªé€Ÿă„ă®ă¯ă©ă¡ă‚‰ă§ă™ă‹ă€‚
+O {"A":"ăƒăƒ¼ăƒ‰ăƒ‡ă‚£ă‚¹ă‚¯","B":"USB","C":"ăƒ¡ăƒ¢ăƒª","D":"ă‚­ăƒ£ăƒƒă‚·ăƒ¥"}
+EX æ­£è§£ă¯Dă€‚ă‚­ăƒ£ăƒƒă‚·ăƒ¥
+qVi Trong cĂ¡c loáº¡i bá»™ nhá»› sau, loáº¡i nĂ o cĂ³ tá»‘c Ä‘á»™ truy cáº­p cao nháº¥t?
+oVi {"A":"á»• cá»©ng (HDD)","B":"USB","C":"ăƒ¡ăƒ¢ăƒª","D":"bá»™ nhá»› Ä‘á»‡m (cache)"}
+c â€¢ Trong cĂ¡c bá»™ nhá»› thÆ°á»ng gáº·p, cache (gáº§n CPU) truy cáº­p nhanh nháº¥t.
+wc â€¢ Cache nhanh hÆ¡n RAM/HDD/â€¦
+â€¢ ÄĂ¡p Ă¡n D theo bank.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? Bá»™ nhá»› phá»¥ tá»« tĂ­nh, gáº¯n mainboard qua cĂ¡p.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? LÆ°u dá»¯ liá»‡u lĂ¢u dĂ i.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«cacheÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? USB â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«cacheÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? ăƒ¡ăƒ¢ăƒª â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem
+==== [33m81[39m [33m264[39m B
+Q è¨˜æ†¶è£…ç½®ă¯ä½•ăŒè©²å½“ă—ă¾ă™ă‹ă€‚
+O {"A":"CPU","B":"ăƒ¡ăƒ¢ăƒªă‚„ăƒăƒ¼ăƒ‰ăƒ‡ă‚£ă‚¹ă‚¯","C":"ăƒ‡ă‚£ă‚¹ăƒ—ăƒ¬ă‚¤ă‚„ăƒ—ăƒªăƒ³ă‚¿","D":"ă‚­ăƒ¼ăƒœăƒ¼ăƒ‰ă‚„ăƒă‚¦ă‚¹"}
+EX æ­£è§£ă¯Bă€‚ăƒ¡ăƒ¢ăƒªă‚„ăƒăƒ¼ăƒ‰ăƒ‡ă‚£ă‚¹ă‚¯
+qVi ÄĂ¢u thuá»™c thiáº¿t bá»‹ nhá»›?
+oVi {"A":"phĂ¡t biá»ƒu vá» CPU / bá»™ nhá»› / bĂ¡n dáº«n","B":"bá»™ nhá»› vĂ  á»• cá»©ng","C":"mĂ n hĂ¬nh","D":"bĂ n phĂ­m"}
+c â€¢ bá»™ nhá»›: lÆ°u chÆ°Æ¡ng trĂ¬nh/dá»¯ liá»‡u.
+wc â€¢ Chá»n option Ä‘Ăºng lĂ  thiáº¿t bá»‹ nhá»› theo stem.
+â€¢ Loáº¡i thiáº¿t bá»‹ vĂ o/ra thuáº§n.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu vá» CPU / bá»™ nhá»› / bĂ¡n dáº«n â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«á»• cá»©ng (HDD)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? Thiáº¿t bá»‹ xuáº¥t (output).\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Hiá»ƒn thá»‹ / in káº¿t quáº£ cho ngÆ°á»i dĂ¹ng.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«á»• cá»©ng (HDD)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? bĂ n phĂ­m â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ 
+==== [33m82[39m [33m265[39m A
+Q ă€ŒDoSă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"táº¥n cĂ´ng tá»« chá»‘i dá»‹ch vá»¥","B":"tiĂªu chuáº©n mĂ£ hĂ³a dá»¯ liá»‡u","C":"há»‡ thá»‘ng váº¡n nÄƒng","D":"há»‡ thá»‘ng Ram Ä‘á»™ng"}
+EX æ­£è§£ă¯Aă€‚táº¥n cĂ´ng tá»« chá»‘i dá»‹ch vá»¥
+qVi DoS tiáº¿ng Viá»‡t / nghÄ©a lĂ  gĂ¬?
+oVi {"A":"táº¥n cĂ´ng tá»« chá»‘i dá»‹ch vá»¥","B":"tiĂªu chuáº©n mĂ£ hĂ³a dá»¯ liá»‡u","C":"há»‡ thá»‘ng váº¡n nÄƒng","D":"há»‡ thá»‘ng Ram Ä‘á»™ng"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«táº¥n cĂ´ng tá»« chá»‘i dá»‹ch vá»¥Â».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€ŒDoSă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«táº¥n cĂ´ng tá»« chá»‘i dá»‹ch vá»¥Â».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? tiĂªu chuáº©n mĂ£ hĂ³a dá»¯ liá»‡u â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«táº¥n cĂ´ng tá»« chá»‘i dá»‹ch vá»¥Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? há»‡ thá»‘ng váº¡n nÄƒng â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«táº¥n cĂ´ng tá»« chá»‘i dá»‹ch vá»¥Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? há»‡ thá»‘ng Ram Ä‘á»™ng â€” khĂ¡i niá»‡
+==== [33m83[39m [33m266[39m A
+Q ă‚ă‚‹ä¼æ¥­ă®ăƒ‡ăƒ¼ă‚¿ă‚»ăƒ³ă‚¿ăƒ¼ă«ă¯ă€é‡è¦ăªå½¹å‰²ă‚’æœăŸă™ă‚µăƒ¼ăƒăƒ¼ăŒă‚ă‚ă¾ă™ă€‚ă“ă®ă‚µăƒ¼ăƒăƒ¼ă®ç¨¼åƒăƒ‡ăƒ¼ă‚¿ă‚’åˆ†æă—ăŸă¨ă“ă‚ă€å¹³å‡æ•…éœé–“é”ăŒ500æ™‚é–“ă€å¹³å‡ä¿®å¾©æ™‚é–“ăŒ10æ™‚é–“ă§ă‚ă‚‹ă“ă¨ăŒă‚ă‹ă‚ă¾ă—ăŸă€‚ă“ă®ă‚µăƒ¼ăƒăƒ¼ă®ç¨¼åƒç‡ă¯ă„ăă¤ă‹ă€‚
+O {"A":"98.0%","B":"97.0%","C":"99.0%","D":"99.5%"}
+EX æ­£è§£ă¯Aă€‚98.0%
+qVi Server MTBF = 500h, MTTR = 10h. Tá»‰ lá»‡ hoáº¡t Ä‘á»™ng (availability) lĂ  bao nhiĂªu?
+oVi {"A":"98.0%","B":"97.0%","C":"99.0%","D":"99.5%"}
+c â€¢ Availability A â‰ˆ MTBF / (MTBF + MTTR).
+â€¢ Thay sá»‘ liá»‡u stem â†’ ra 98.0% (theo key).
+wc â€¢ TĂ­nh Ä‘á»™ sáºµn sĂ ng tá»« MTBF & MTTR (hoáº·c uptime) theo cĂ´ng thá»©c Ä‘á».
+â€¢ 98.0% khá»›p Ä‘Ă¡p Ă¡n A.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? 97.0% â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«98.0%Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? 99.0% â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«98.0%Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? 99.5% â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\n
+==== [33m84[39m [33m267[39m C
+Q CALS(Commerce At Light Speed)ă«ă¤ă„ă¦ă€æ­£ă—ă„ă‚‚ă®ă¯ă©ă‚Œă§ă™ă‹ă€‚
+O {"A":"CALSă®ă‚‚ă¨ă‚‚ă¨ă®ç›®ç„ă¯ă€è‡ªå‹•è»æ¥­ç•Œă®ă‚µăƒ—ăƒ©ă‚¤ăƒă‚§ăƒ¼ăƒ³å¹ç‡åŒ–ă‚’å›³ă‚‹ă“ă¨ă ă£ăŸă€‚","B":"CALSă‚’å°å…¥ă—ăŸçµæœă€è»äº‹ç”£æ¥­ă‚’é™¤ăå¤ăă®æ¥­ç•Œă§ç´æœŸă®é•·æœŸåŒ–ăŒå ±å‘ă•ă‚Œă¦ă„ă‚‹ă€‚","C":"CALSă¯ă€ä¼æ¥­é–“ă§åŒă˜ăƒ‡ăƒ¼ă‚¿ă‚’ç”¨ă„ă¦å–å¼•ă§ăă‚‹ă‚ˆă†ă«ă™ă‚‹ăŸă‚ă®æ¨™æº–è¦æ ¼ă§ă‚ă‚‹ă€‚","D":"CALS(Commerce At Light Speed)ă«é–¢ă™ă‚‹æ¬¡ă®è¨˜è¿°ă®ă†ă¡ă€æœ¬æ–‡ă®å†…å®¹ă¨ä¸€è‡´ă™ă‚‹ă‚‚ă®ă¯ă©ă‚Œă‹ă€‚"}
+EX æ­£è§£ă¯Că€‚CALSă¯ă€ä¼æ¥­é–“ă§åŒă˜ăƒ‡ăƒ¼ă‚¿ă‚’ç”¨ă„ă¦å–å¼•ă§ăă‚‹ă‚ˆă†ă«ă™ă‚‹ăŸă‚ă®æ¨™æº–è¦æ ¼ă§ă‚ă‚‹ă€‚
+qVi Vá» CALS (Commerce At Light Speed), phĂ¡t biá»ƒu nĂ o Ä‘Ăºng?
+oVi {"A":"CALS ban Ä‘áº§u nháº±m chuá»—i cung á»©ng Ă´ tĂ´ (sai â€” quĂ¢n sá»±)","B":"sau CALS nhiá»u ngĂ nh kĂ©o dĂ i giao hĂ ng (sai)","C":"CALS = chuáº©n Ä‘á»ƒ doanh nghiá»‡p giao dá»‹ch cĂ¹ng dá»¯ liá»‡u","D":"phĂ¡t biá»ƒu vá» CALS"}
+c â€¢ CALS = chuáº©n Ä‘á»ƒ doanh nghiá»‡p giao dá»‹ch cĂ¹ng dá»¯ liá»‡u
+â€¢ NghÄ©a: CALS = chuáº©n Ä‘á»ƒ doanh nghiá»‡p giao dá»‹ch cĂ¹ng dá»¯ liá»‡u.
+wc â€¢ CALS = chuáº©n Ä‘á»ƒ doanh nghiá»‡p giao dá»‹ch cĂ¹ng dá»¯ liá»‡u
+â€¢ ÄĂ¡p Ă¡n C: CALS = chuáº©n Ä‘á»ƒ doanh nghiá»‡p giao dá»‹ch cĂ¹ng dá»¯ liá»‡u
+ww {
+ "A": "â€¢ LĂ  gĂ¬? CALS ban Ä‘áº§u nháº±m chuá»—i cung á»©ng Ă´ tĂ´ (sai â€” quĂ¢n sá»±) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«CALS = chuáº©n Ä‘á»ƒ doanh nghiá»‡p giao dá»‹ch cĂ¹ng dá»¯ liá»‡uÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? sau CALS nhiá»u ngĂ nh kĂ©o dĂ i giao hĂ ng (sai) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«CALS = chuáº©n Ä‘á»ƒ doanh nghiá»‡p g
+==== [33m85[39m [33m268[39m B
+Q ă€Œå·¥æ¥­æ‰€æœ‰æ¨©ă€ă«å±ă—ă¦ă„ă‚‹ă‚‚ă®ă¯ă©ă®æœ‰æ¨©ă§ă™ă‹ă€‚
+O {"A":"è‘—ä½œé£æ¥æ¨©ă€å•†æ¨™æ¨©ă€å®Ÿç”¨æ–°æ¡ˆæ¨©","B":"æ„åŒ æ¨©ă€ç‰¹è¨±æ¨©ă€å®Ÿç”¨æ–°æ¡ˆæ¨©","C":"è‘—ä½œé£æ¥æ¨©ă€æ„åŒ æ¨©ă€å•†æ¨™æ¨©","D":"æ„åŒ æ¨©ă€è‘—ä½œæ¨©è²¡ç”£æ¨©ă€ç‰¹è¨±æ¨©"}
+EX æ­£è§£ă¯Bă€‚æ„åŒ æ¨©ă€ç‰¹è¨±æ¨©ă€å®Ÿç”¨æ–°æ¡ˆæ¨©
+qVi Quyá»n nĂ o thuá»™c Â«quyá»n sá»Ÿ há»¯u cĂ´ng nghiá»‡pă€?
+oVi {"A":"quyá»n liá»n ká» quyá»n tĂ¡c giáº£","B":"quyá»n giáº£i phĂ¡p há»¯u Ă­ch","C":"quyá»n liá»n ká» quyá»n tĂ¡c giáº£","D":"quyá»n sĂ¡ng cháº¿"}
+c â€¢ å·¥æ¥­æ‰€æœ‰æ¨© (sá»Ÿ há»¯u cĂ´ng nghiá»‡p): patent, utility model, design, trademarkâ€¦ â€” theo option Ä‘Ăºng.
+wc â€¢ Chá»n Ä‘á»‘i tÆ°á»£ng thuá»™c industrial property rights.
+â€¢ Báº£n quyá»n tĂ¡c giáº£ (copyright) khĂ¡c nhĂ³m hay nháº§m.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? quyá»n liá»n ká» quyá»n tĂ¡c giáº£ â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«quyá»n giáº£i phĂ¡p há»¯u Ă­chÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? quyá»n liá»n ká» quyá»n tĂ¡c giáº£ â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«quyá»n giáº£i phĂ¡p há»¯u Ă­chÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? quyá»n sĂ¡ng cháº¿ â€” k
+==== [33m86[39m [33m269[39m C
+Q ă€ŒbÆ°á»›c Ä‘á»‡mă€ă¯æ—¥æœ¬èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"ăă†ă—ă‚‡ă","B":"ăµă£ă‹ă¤","C":"ăµă¿ă ă„","D":"ă‹ă‚“ă™ă†"}
+EX æ­£è§£ă¯Că€‚ăµă¿ă ă„
+qVi Â«BÆ°á»›c Ä‘á»‡mă€ tiáº¿ng Nháº­t lĂ  gĂ¬?
+oVi {"A":"nhĂ¢n lĂªn","B":"ăµă£ă‹ă¤","C":"bá»‡ / bÆ°á»›c Ä‘á»‡m","D":"hĂ m sá»‘ (kansÅ«)"}
+c â€¢ KhĂ¡i niá»‡m stem â€” chá»‘t theo originEx vĂ  Ä‘Ă¡p Ă¡n bank; giáº£i thĂ­ch Ä‘Ăºng miá»n option.
+wc â€¢ ÄĂ¡p Ă¡n C: bá»‡ / bÆ°á»›c Ä‘á»‡m
+â€¢ bá»‡ / bÆ°á»›c Ä‘á»‡m â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Giáº£i: æ­£è§£ă¯Că€‚ăµă¿ă ă„
+ww {
+ "A": "â€¢ LĂ  gĂ¬? nhĂ¢n lĂªn â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«bá»‡ / bÆ°á»›c Ä‘á»‡mÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? ăµă£ă‹ă¤ â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«bá»‡ / bÆ°á»›c Ä‘á»‡mÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? hĂ m sá»‘ (kansÅ«) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m 
+==== [33m87[39m [33m270[39m D
+Q ă€ŒRAMă€ă¯è‹±èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"Random Array Memory","B":"Read Array Memory","C":"Read Access Memory","D":"Random Access Memory"}
+EX æ­£è§£ă¯Dă€‚Random Access Memory
+qVi RAM tiáº¿ng Anh / má»Ÿ rá»™ng lĂ  gĂ¬?
+oVi {"A":"Random Array Memory","B":"Read Array Memory","C":"Read Access Memory","D":"Random Access Memory"}
+c â€¢ bá»™ nhá»›: lÆ°u chÆ°Æ¡ng trĂ¬nh/dá»¯ liá»‡u.
+wc â€¢ ÄĂ¡p Ă¡n D: Random Access Memory
+â€¢ Random Access Memory â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Giáº£i: æ­£è§£ă¯Dă€‚Random Access Memory
+ww {
+ "A": "â€¢ LĂ  gĂ¬? Random Array Memory â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Random Access MemoryÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? Read Array Memory â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Random Access MemoryÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? Read Access Memory â€” khĂ¡i niá»‡m/option tron
+==== [33m88[39m [33m271[39m C
+Q OSIă«ăă„ă¦ă€ă€Œé£æ¥æ©Ÿå™¨é–“è»¢é€ă€ă®æ©Ÿèƒ½ă¯ä¸»ă«ă©ă®éå±¤ăŒæ‹…å½“ă—ă¾ă™ă‹ă€‚
+O {"A":"ăƒăƒƒăƒˆăƒ¯ăƒ¼ă‚¯å±¤","B":"ç‰©ç†å±¤","C":"ăƒ‡ăƒ¼ă‚¿ăƒªăƒ³ă‚¯å±¤","D":"é€ăƒˆăƒ©ăƒ³ă‚¹ăƒăƒ¼ăƒˆå±¤"}
+EX æ­£è§£ă¯Că€‚ăƒ‡ăƒ¼ă‚¿ăƒªăƒ³ă‚¯å±¤
+qVi Trong OSI, chá»©c nÄƒng Â«chuyá»ƒn giá»¯a thiáº¿t bá»‹ ká»ă€ chá»§ yáº¿u thuá»™c táº§ng nĂ o?
+oVi {"A":"ăƒăƒƒăƒˆăƒ¯ăƒ¼ă‚¯å±¤","B":"ç‰©ç†å±¤","C":"ăƒ‡ăƒ¼ă‚¿ăƒªăƒ³ă‚¯å±¤","D":"é€ăƒˆăƒ©ăƒ³ă‚¹ăƒăƒ¼ăƒˆå±¤"}
+c â€¢ ăƒ‡ăƒ¼ă‚¿ăƒªăƒ³ă‚¯å±¤ â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Theo giáº£i: æ­£è§£ă¯Că€‚ăƒ‡ăƒ¼ă‚¿ăƒªăƒ³ă‚¯å±¤
+wc â€¢ ÄĂ¡p Ă¡n C: ăƒ‡ăƒ¼ă‚¿ăƒªăƒ³ă‚¯å±¤ â€” khĂ¡i niá»‡m ká»¹ thuáº­t
+â€¢ ăƒ‡ăƒ¼ă‚¿ăƒªăƒ³ă‚¯å±¤ â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Giáº£i: æ­£è§£ă¯Că€‚ăƒ‡ăƒ¼ă‚¿ăƒªăƒ³ă‚¯å±¤
+ww {
+ "A": "â€¢ LĂ  gĂ¬? ăƒăƒƒăƒˆăƒ¯ăƒ¼ă‚¯å±¤ â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«ăƒ‡ăƒ¼ă‚¿ăƒªăƒ³ă‚¯å±¤ â€” khĂ¡i niá»‡m ká»¹ thuáº­tÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? ç‰©ç†å±¤ â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«ăƒ‡ăƒ¼ă‚¿ăƒªăƒ³ă‚¯å±¤ â€” khĂ¡i niá»‡m ká»¹ thuáº­tÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? é€ăƒˆăƒ©ăƒ³ă‚¹ăƒăƒ¼ăƒˆå±¤ 
+==== [33m89[39m [33m272[39m B
+Q ă€Œé€ä¿¡åˆ¶å¾¡ă€ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"ă¤ă†ă—ă‚“ă›ă„ăă‚‡ - Ä‘iá»u khiá»ƒn tá»« xa","B":"ă¤ă†ă—ă‚“ă›ă„ăă‚‡ - Ä‘iá»u khiá»ƒn thĂ´ng tin","C":"ă¤ă†ă—ă‚“ă›ă„ăă‚‡ă† - háº¡n cháº¿ thĂ´ng tin","D":"ă¤ă†ă—ă‚“ă›ă„ăă‚‡ - háº¡n cháº¿ thĂ´ng tin tá»« xa"}
+EX æ­£è§£ă¯Bă€‚ă¤ă†ă—ă‚“ă›ă„ăă‚‡ - Ä‘iá»u khiá»ƒn thĂ´ng tin
+qVi Â« ă€ Ä‘á»c tháº¿ nĂ o? Tiáº¿ng Viá»‡t lĂ  gĂ¬?
+oVi {"A":"Ä‘iá»u khiá»ƒn tá»« xa","B":"Ä‘iá»u khiá»ƒn thĂ´ng tin","C":"háº¡n cháº¿ thĂ´ng tin","D":"háº¡n cháº¿ thĂ´ng tin tá»« xa"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«ă¤ă†ă—ă‚“ă›ă„ăă‚‡ - Ä‘iá»u khiá»ƒn thĂ´ng tinÂ».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€Œé€ä¿¡åˆ¶å¾¡ă€ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«ă¤ă†ă—ă‚“ă›ă„ăă‚‡ - Ä‘iá»u khiá»ƒn thĂ´ng tinÂ».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? Ä‘iá»u khiá»ƒn tá»« xa â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Ä‘iá»u khiá»ƒn thĂ´ng tinÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? háº¡n cháº¿ thĂ´ng tin â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Ä‘iá»u khiá»ƒn thĂ´ng tinÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? háº¡n cháº¿ thĂ´ng tin tá»« xa â€” khĂ¡i niá»‡m/option tr
+==== [33m90[39m [33m273[39m A
+Q ăƒ•ă‚©ăƒ«ăƒ€ă®ç®¡ç†ă¨ăƒ‘ă‚¹ă«é–¢ă™ă‚‹èª¬æ˜ă¨ă—ă¦ă€æ­£ă—ă„ă‚‚ă®ă¯ă©ă‚Œă§ă™ă‹ă€‚
+O {"A":"ă‚¨ă‚¯ă‚¹ăƒ—ăƒ­ăƒ¼ăƒ©ă§è¡¨ç¤ºă•ă‚Œă‚‹éå±¤æ§‹é€ ă®ă“ă¨ă‚’ăƒ‡ă‚£ăƒ¬ă‚¯ăƒˆăƒªæ§‹é€ ă¨å‘¼ă³ă€ăƒ•ă‚©ăƒ«ăƒ€ă¯è¦ªå­é–¢ä¿‚ă§æ§‹æˆă•ă‚Œă¦ă„ă‚‹ă€‚","B":"é€å¸¸ă€æ–°ă—ăä½œæˆă™ă‚‹ăƒ•ă‚¡ă‚¤ăƒ«ă¯ă€ŒC:Windowsă€ăƒ•ă‚©ăƒ«ăƒ€ă«è‡ªå‹•ç„ă«ä¿å­˜ă•ă‚Œă‚‹ă€‚","C":"ăƒ•ă‚©ăƒ«ăƒ€ă¯ăƒ•ă‚¡ă‚¤ăƒ«ă®ă‚µăƒ–ăƒ•ă‚¡ă‚¤ăƒ«ă§ă‚ă‚‹ă€‚","D":"ăƒ•ă‚¡ă‚¤ăƒ«ă‚’æ¢ă—ă‚„ă™ăă™ă‚‹ăŸă‚ă«ă¯ă€1ă¤ă®ăƒ•ă‚©ăƒ«ăƒ€ă«æ•°ç™¾å€‹ä»¥ä¸ă®ăƒ•ă‚¡ă‚¤ăƒ«ă‚’ă¾ă¨ă‚ă¦ä¿å­˜ă™ă‚‹ă®ăŒå¹ç‡ç„ă§ă‚ă‚‹ă€‚"}
+EX æ­£è§£ă¯Aă€‚ă‚¨ă‚¯ă‚¹ăƒ—ăƒ­ăƒ¼ăƒ©ă§è¡¨ç¤ºă•ă‚Œă‚‹éå±¤æ§‹é€ ă®ă“ă¨ă‚’ăƒ‡ă‚£ăƒ¬ă‚¯ăƒˆăƒªæ§‹é€ ă¨å‘¼ă³ă€ăƒ•ă‚©ăƒ«ăƒ€ă¯è¦ªå­é–¢ä¿‚ă§æ§‹æˆă•ă‚Œă¦ă„ă‚‹ă€‚
+qVi Vá» quáº£n lĂ½ thÆ° má»¥c vĂ  path, giáº£i thĂ­ch nĂ o Ä‘Ăºng?
+oVi {"A":"phĂ¡t biá»ƒu vá» file/thÆ° má»¥c","B":"phĂ¡t biá»ƒu vá» file/thÆ° má»¥c","C":"thÆ° má»¥c lĂ  subfile cá»§a file (sai)","D":"phĂ¡t biá»ƒu vá» file/thÆ° má»¥c"}
+c â€¢ phĂ¡t biá»ƒu vá» file/thÆ° má»¥c
+â€¢ PhĂ¡t biá»ƒu / Ä‘oáº¡n JP Ä‘Ă£ dá»‹ch Ä‘á»§ nghÄ©a.
+wc â€¢ phĂ¡t biá»ƒu vá» file/thÆ° má»¥c
+â€¢ ÄĂ¡p Ă¡n A: phĂ¡t biá»ƒu vá» file/thÆ° má»¥c
+ww {
+ "B": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu vá» file/thÆ° má»¥c â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ¡t biá»ƒu vá» file/thÆ° má»¥cÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? thÆ° má»¥c lĂ  subfile cá»§a file (sai) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ¡t biá»ƒu vá» file/thÆ° má»¥cÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu 
+==== [33m91[39m [33m274[39m D
+Q ăƒ¡ăƒ¢ăƒªç©ºé–“ă«ă¯ă€ç•ªåœ°ăŒå‰²ă‚å½“ă¦ă‚‰ă‚Œă‚‹ă¨ă“ă‚ă¯ä½•ă¨å‘¼ă°ă‚Œă¾ă—ăŸă‹ă€‚
+O {"A":"Cookie","B":"ăƒăƒ¼ăƒ‰ăƒ‡ă‚£ă‚¹ă‚¯","C":"Cache","D":"è¨˜æ†¶ă‚¢ăƒ‰ăƒ¬ă‚¹"}
+EX æ­£è§£ă¯Dă€‚è¨˜æ†¶ă‚¢ăƒ‰ăƒ¬ă‚¹
+qVi Trong khĂ´ng gian nhá»›, nÆ¡i Ä‘Æ°á»£c gĂ¡n Ä‘á»‹a chá»‰ gá»i lĂ  gĂ¬?
+oVi {"A":"cookie","B":"á»• cá»©ng (HDD)","C":"Cache","D":"Ä‘á»‹a chá»‰ nhá»›"}
+c â€¢ Ä‘á»‹a chá»‰ nhá»› â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Theo giáº£i: æ­£è§£ă¯Dă€‚è¨˜æ†¶ă‚¢ăƒ‰ăƒ¬ă‚¹
+wc â€¢ ÄĂ¡p Ă¡n D: Ä‘á»‹a chá»‰ nhá»›
+â€¢ Ä‘á»‹a chá»‰ nhá»› â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Giáº£i: æ­£è§£ă¯Dă€‚è¨˜æ†¶ă‚¢ăƒ‰ăƒ¬ă‚¹
+ww {
+ "A": "â€¢ LĂ  gĂ¬? cookie â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Ä‘á»‹a chá»‰ nhá»›Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? Bá»™ nhá»› phá»¥ tá»« tĂ­nh, gáº¯n mainboard qua cĂ¡p.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? LÆ°u dá»¯ liá»‡u lĂ¢u dĂ i.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Ä‘á»‹a chá»‰ nhá»›Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? Cache â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢
+==== [33m92[39m [33m275[39m B
+Q ă‚³ăƒ³ăƒ”ăƒ¥ăƒ¼ă‚¿ă‚¦ă‚£ăƒ«ă‚¹ă«ă¤ă„ă¦æ­£ă—ăăªă„ă‚‚ă®ă‚’ăˆă‚‰ă‚“ă§ăă ă•ă„ă€‚
+O {"A":"ä¼æŸ“ă—ă€æ½œä¼æœŸé–“ă‚’ăă„ă¦ç™ºç—…ă™ă‚‹éç¨‹ăŒç”Ÿç‰©ă®ă‚¦ă‚£ăƒ«ă‚¹","B":"å€‹äººă®ăƒ‘ă‚½ă‚³ăƒ³ă‚’ă­ă‚‰ă£ăŸç¯ç½ª","C":"äººç‚ºç„ă«ä½œæˆă•ă‚ŒăŸăƒ—ăƒ­ă‚°ăƒ©ăƒ ","D":"æ„ŸæŸ“çµŒè·¯ lĂ ă€USBăƒ¡ăƒ¢ăƒªă‚„ă‚¤ăƒ³ă‚¿ăƒ¼ăƒăƒƒăƒˆă‚’åˆ©ç”¨ă—ăŸăƒ¡ăƒ¼ăƒ«ă€ăƒ›ăƒ¼ăƒ ăƒăƒ¼ă‚¸ă‚’çµŒç”±ă™ă‚‹"}
+EX æ­£è§£ă¯Bă€‚å€‹äººă®ăƒ‘ă‚½ă‚³ăƒ³ă‚’ă­ă‚‰ă£ăŸç¯ç½ª
+qVi Chá»n phĂ¡t biá»ƒu SAI vá» mĂ¡y tĂ­nh.
+oVi {"A":"lĂ¢y â†’ á»§ â†’ phĂ¡t bá»‡nh nhÆ° virus sinh há»c","B":"tá»™i nháº¯m PC cĂ¡ nhĂ¢n","C":"chÆ°Æ¡ng trĂ¬nh","D":"ÄÆ°á»ng lĂ¢y nhiá»…m: USB, email qua Internet, trang webâ€¦"}
+c â€¢ HĂ nh vi pháº¡m phĂ¡p liĂªn quan mĂ¡y tĂ­nh/máº¡ng.
+â€¢ Theo giáº£i: æ­£è§£ă¯Bă€‚å€‹äººă®ăƒ‘ă‚½ă‚³ăƒ³ă‚’ă­ă‚‰ă£ăŸç¯ç½ª
+wc â€¢ ÄĂ¡p Ă¡n B: tá»™i pháº¡m (CNTT)
+â€¢ HĂ nh vi pháº¡m phĂ¡p liĂªn quan mĂ¡y tĂ­nh/máº¡ng.
+â€¢ Giáº£i: æ­£è§£ă¯Bă€‚å€‹äººă®ăƒ‘ă‚½ă‚³ăƒ³ă‚’ă­ă‚‰ă£ăŸç¯ç½ª
+ww {
+ "A": "â€¢ LĂ  gĂ¬? lĂ¢y â†’ á»§ â†’ phĂ¡t bá»‡nh nhÆ° virus sinh há»c â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«tá»™i pháº¡m (CNTT)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? chÆ°Æ¡ng trĂ¬nh â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«tá»™i pháº¡m (CNTT)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? ÄÆ°á»ng lĂ¢y nhiá»…m: USB, email qua Intern
+==== [33m93[39m [33m276[39m D
+Q å…¬é–‹éµæ–¹å¼ă«ă‚ˆă‚‹ç§˜å¯†æ–‡æ›¸é€ä¿¡ă«ă¤ă„ă¦ă€æ­£ă—ă„ă‚‚ă®ă¯ă©ă‚Œă‹ă€‚
+O {"A":"é€ä¿¡é€”ä¸­ă§æ—å·æ–‡ăŒç›—ă¾ă‚Œă¦ă‚‚ă€ç¬¬ä¸‰è€…ă¯Bă®å…¬é–‹éµă‚’å…¥æ‰‹ă™ă‚Œă°æ–‡æ›¸ă‚’å¾©å·åŒ–ă§ăă‚‹ă€‚","B":"é€ä¿¡è€…Aă¯ă€å—ä¿¡è€…Bă®ç§˜å¯†éµă‚’ä½¿ă£ă¦æ–‡æ›¸ă‚’æ—å·åŒ–ă—ă€Bă«é€ä»˜ă™ă‚‹ă€‚","C":"ä¸€åº¦æ—å·åŒ–ă•ă‚ŒăŸæ–‡æ›¸ă¯ă€é€ä¿¡è€…Aă‚‚å—ä¿¡è€…Bă®å…¬é–‹éµă‚’ä½¿ăˆă°å¾©å·åŒ–ă§ăă‚‹ă€‚","D":"å—ä¿¡è€…Bă¯ă€æ—å·åŒ–ç”¨ă®å…¬é–‹éµă¨å¾©å·åŒ–ç”¨ă®ç§˜å¯†éµă®ä¸¡æ–¹ă‚’æ‰€æŒă—ă¦ăă‚ă€Aă‹ă‚‰é€ă‚‰ă‚Œă¦ăăŸæ–‡æ›¸ă‚’ç§˜å¯†éµă§å¾©å·ă™ă‚‹ă€‚"}
+EX æ­£è§£ă¯Dă€‚å—ä¿¡è€…Bă¯ă€æ—å·åŒ–ç”¨ă®å…¬é–‹éµă¨å¾©å·åŒ–ç”¨ă®ç§˜å¯†éµă®ä¸¡æ–¹ă‚’æ‰€æŒă—ă¦ăă‚ă€Aă‹ă‚‰é€ă‚‰ă‚Œă¦ăăŸæ–‡æ›¸ă‚’ç§˜å¯†éµă§å¾©å·ă™ă‚‹ă€‚
+qVi Chá»n phÆ°Æ¡ng Ă¡n Ä‘Ăºng (xem cĂ¢u gá»‘c).
+oVi {"A":"cĂ³ khĂ³a cĂ´ng khai B lĂ  giáº£i Ä‘Æ°á»£c báº£n mĂ£ (sai)","B":"A mĂ£ báº±ng khĂ³a bĂ­ máº­t cá»§a B rá»“i gá»­i (sai/Ä‘Ăºng tĂ¹y ngá»¯ cáº£nh)","C":"A cÅ©ng giáº£i báº±ng khĂ³a cĂ´ng khai cá»§a B (sai Ä‘iá»ƒn hĂ¬nh)","D":"phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³a"}
+c â€¢ phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³a
+â€¢ PhĂ¡t biá»ƒu / Ä‘oáº¡n JP Ä‘Ă£ dá»‹ch Ä‘á»§ nghÄ©a.
+wc â€¢ phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³a
+â€¢ ÄĂ¡p Ă¡n D: phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³a
+ww {
+ "A": "â€¢ LĂ  gĂ¬? cĂ³ khĂ³a cĂ´ng khai B lĂ  giáº£i Ä‘Æ°á»£c báº£n mĂ£ (sai) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³aÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? A mĂ£ báº±ng khĂ³a bĂ­ máº­t cá»§a B rá»“i gá»­i (sai/Ä‘Ăºng tĂ¹y ngá»¯ cáº£nh) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ¡t biá»ƒu vá» mĂ£ hĂ³a / khĂ³aÂ» â€” option nĂ y thuá»™c m
+==== [33m94[39m [33m277[39m C
+Q ă€Œ_ă€ă®ă‚­ăƒ¼ăƒœăƒ¼ăƒ‰ă®è¨˜å·ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚
+O {"A":"ă‚¢ă‚¹ă‚¿ăƒªă‚¹ă‚¯","B":"ăƒăƒƒăƒˆ","C":"ă‚¢ăƒ³ăƒ€ăƒ¼ăƒăƒ¼","D":"ăƒăƒ«ăƒ€"}
+EX æ­£è§£ă¯Că€‚ă‚¢ăƒ³ăƒ€ăƒ¼ăƒăƒ¼
+qVi KĂ½ hiá»‡u Â«_ă€ trĂªn bĂ n phĂ­m Ä‘á»c nhÆ° tháº¿ nĂ o?
+oVi {"A":"ă‚¢ă‚¹ă‚¿ăƒªă‚¹ă‚¯","B":"ăƒăƒƒăƒˆ","C":"gáº¡ch dÆ°á»›i (_)","D":"dáº¥u ngĂ£ (~)"}
+c â€¢ gáº¡ch dÆ°á»›i (_) â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Theo giáº£i: æ­£è§£ă¯Că€‚ă‚¢ăƒ³ăƒ€ăƒ¼ăƒăƒ¼
+wc â€¢ ÄĂ¡p Ă¡n C: gáº¡ch dÆ°á»›i (_)
+â€¢ gáº¡ch dÆ°á»›i (_) â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Giáº£i: æ­£è§£ă¯Că€‚ă‚¢ăƒ³ăƒ€ăƒ¼ăƒăƒ¼
+ww {
+ "A": "â€¢ LĂ  gĂ¬? ă‚¢ă‚¹ă‚¿ăƒªă‚¹ă‚¯ â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«gáº¡ch dÆ°á»›i (_)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? ăƒăƒƒăƒˆ â€” khĂ¡i niá»‡m ká»¹ thuáº­t â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«gáº¡ch dÆ°á»›i (_)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? dáº¥u ngĂ£ (~) â€” khĂ¡i niá»‡m/option trong Ä‘á».\
+==== [33m95[39m [33m278[39m C
+Q ăƒăƒ¼ăƒ‰ăƒ‡ă‚£ă‚¹ă‚¯ă®ä»•çµ„ă¿ă¨ç®¡ç†ă«é–¢ă™ă‚‹æ¬¡ă®è¨˜è¿°ă®ä¸­ă§ă€æœ¬æ–‡ă®å†…å®¹ă«åŸºă¥ă„ă¦æ­£ă—ă„ă‚‚ă®ă‚’ä¸€ă¤é¸ă³ăªă•ă„ă€‚
+O {"A":"ăƒ˜ăƒƒăƒ‰ă¨ăƒ‡ă‚£ă‚¹ă‚¯é¢ă¯å¸¸ă«æ¥è§¦ă—ă¦ăă‚ă€ă“ă‚Œă«ă‚ˆă£ă¦ăƒ‡ăƒ¼ă‚¿ă®èª­ă¿æ›¸ăă®ä¿¡é ¼æ€§ă‚’é«˜ă‚ă¦ă„ă‚‹ă€‚","B":"ăƒăƒ¼ăƒ‰ăƒ‡ă‚£ă‚¹ă‚¯ă¸ă®ç‰©ç†ç„ăªè¡æ’ƒă¯ă€ăƒ˜ăƒƒăƒ‰ă¨ăƒ‡ă‚£ă‚¹ă‚¯ă®é–“ă«é™é–“ăŒă§ăă‚‹ăŸă‚ă€èª­ă¿æ›¸ăé€Ÿåº¦ă®å‘ä¸ă«å½¹ç«‹ă¤ă€‚","C":"åŒä¸€ăƒˆăƒ©ăƒƒă‚¯ä¸ă«ăƒ‡ăƒ¼ă‚¿ăŒé…ç½®ă•ă‚Œă¦ă„ă‚‹å ´åˆă€ă‚¢ăƒ¼ăƒ ă‚’å‹•ă‹ă™å¿…è¦ăŒăªă„ăŸă‚ă€é«˜é€Ÿă«èª­ă¿æ›¸ăă‚’è¡Œă†ă“ă¨ăŒă§ăă‚‹ă€‚","D":"ï¼ˆå€™è£œăªă—ï¼‰"}
+EX æ­£è§£ă¯Că€‚åŒä¸€ăƒˆăƒ©ăƒƒă‚¯ä¸ă«ăƒ‡ăƒ¼ă‚¿ăŒé…ç½®ă•ă‚Œă¦ă„ă‚‹å ´åˆă€ă‚¢ăƒ¼ăƒ ă‚’å‹•ă‹ă™å¿…è¦ăŒăªă„ăŸă‚ă€é«˜é€Ÿă«èª­ă¿æ›¸ăă‚’è¡Œă†ă“ă¨ăŒă§ăă‚‹ă€‚
+qVi Vá» cÆ¡ cháº¿/quáº£n lĂ½ á»• cá»©ng, chá»n má»™t phĂ¡t biá»ƒu Ä‘Ăºng theo bĂ i.
+oVi {"A":"phĂ¡t biá»ƒu vá» á»• cá»©ng","B":"phĂ¡t biá»ƒu vá» á»• cá»©ng","C":"cĂ¹ng track â†’ Ä‘á»c/ghi nhanh hÆ¡n","D":"(khĂ´ng cĂ³ phÆ°Æ¡ng Ă¡n phĂ¹ há»£p)"}
+c â€¢ cĂ¹ng track â†’ Ä‘á»c/ghi nhanh hÆ¡n
+â€¢ PhĂ¡t biá»ƒu / Ä‘oáº¡n JP Ä‘Ă£ dá»‹ch Ä‘á»§ nghÄ©a.
+wc â€¢ cĂ¹ng track â†’ Ä‘á»c/ghi nhanh hÆ¡n
+â€¢ ÄĂ¡p Ă¡n C: cĂ¹ng track â†’ Ä‘á»c/ghi nhanh hÆ¡n
+ww {
+ "A": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu vá» á»• cá»©ng â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«cĂ¹ng track â†’ Ä‘á»c/ghi nhanh hÆ¡nÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? Bá»™ nhá»› phá»¥ tá»« tĂ­nh, gáº¯n mainboard qua cĂ¡p.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? LÆ°u dá»¯ liá»‡u lĂ¢u dĂ i.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«cĂ¹ng track â†’ Ä‘á»c/ghi nhanh hÆ¡nÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? (khĂ´ng cĂ³ phÆ°Æ¡ng Ă¡n phĂ¹ há»£p) â€” khĂ¡i niá»‡m/option 
+==== [33m96[39m [33m279[39m B
+Q ă€Œăƒă‚¹ă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"Ä‘Æ°á»ng dáº«n","B":"máº¡ng mĂ¡y tĂ­nh dáº¡ng kĂªnh","C":"sao lÆ°u","D":"bĂ n tĂ­nh"}
+EX æ­£è§£ă¯Bă€‚máº¡ng mĂ¡y tĂ­nh dáº¡ng kĂªnh
+qVi Â« ă€ (bus) tiáº¿ng Viá»‡t lĂ  gĂ¬?
+oVi {"A":"Ä‘Æ°á»ng dáº«n","B":"máº¡ng mĂ¡y tĂ­nh dáº¡ng kĂªnh","C":"sao lÆ°u","D":"bĂ n tĂ­nh"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«máº¡ng mĂ¡y tĂ­nh dáº¡ng kĂªnhÂ».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€Œăƒă‚¹ă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«máº¡ng mĂ¡y tĂ­nh dáº¡ng kĂªnhÂ».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? Ä‘Æ°á»ng dáº«n â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«máº¡ng mĂ¡y tĂ­nh dáº¡ng kĂªnhÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? sao lÆ°u â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«máº¡ng mĂ¡y tĂ­nh dáº¡ng kĂªnhÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? bĂ n tĂ­nh â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬?
+==== [33m97[39m [33m280[39m C
+Q ă€Œè»¢ç½®å¼ă€ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"ă¦ă‚“ă»ă†ă—ă - mĂ£ hĂ³a hoĂ¡n vá»‹","B":"ă†ă‚“ă¡ă—ă - mĂ£ hĂ³a hoĂ¡n vá»‹","C":"ă¦ă‚“ă¡ă—ă - kiá»ƒu hoĂ¡n vá»‹","D":"ă†ă‚“ă»ă†ă—ă - kiá»ƒu hoĂ¡n vá»‹"}
+EX æ­£è§£ă¯Că€‚ă¦ă‚“ă¡ă—ă - kiá»ƒu hoĂ¡n vá»‹
+qVi Â« ă€ Ä‘á»c tháº¿ nĂ o? Tiáº¿ng Viá»‡t lĂ  gĂ¬?
+oVi {"A":"mĂ£ hĂ³a hoĂ¡n vá»‹","B":"mĂ£ hĂ³a hoĂ¡n vá»‹","C":"kiá»ƒu hoĂ¡n vá»‹","D":"kiá»ƒu hoĂ¡n vá»‹"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«ă¦ă‚“ă¡ă—ă - kiá»ƒu hoĂ¡n vá»‹Â».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€Œè»¢ç½®å¼ă€ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«ă¦ă‚“ă¡ă—ă - kiá»ƒu hoĂ¡n vá»‹Â».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? mĂ£ hĂ³a hoĂ¡n vá»‹ â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«kiá»ƒu hoĂ¡n vá»‹Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? mĂ£ hĂ³a hoĂ¡n vá»‹ â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«kiá»ƒu hoĂ¡n vá»‹Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? kiá»ƒu hoĂ¡n vá»‹ â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i t
+==== [33m98[39m [33m281[39m C
+Q ă‚ă‚‹å›è·¯ă®å…¥å›Xă¨å‡ºå›Yă®é–¢ä¿‚ăŒă€Y = NOT X ă§è¡¨ă•ă‚Œă‚‹ă¨ăă€ă“ă®å›è·¯ă¯ä½•å›è·¯ă¨å‘¼ă°ă‚Œă¾ă™ă‹ă€‚
+O {"A":"ORå›è·¯","B":"ANDå›è·¯","C":"NOTå›è·¯","D":"XORå›è·¯"}
+EX æ­£è§£ă¯Că€‚NOTå›è·¯
+qVi Máº¡ch Y = NOT X Ä‘Æ°á»£c gá»i lĂ  máº¡ch gĂ¬?
+oVi {"A":"máº¡ch OR","B":"máº¡ch AND","C":"máº¡ch NOT","D":"máº¡ch XOR"}
+c â€¢ Phá»§ Ä‘á»‹nh bit.
+â€¢ Theo giáº£i: æ­£è§£ă¯Că€‚NOTå›è·¯
+wc â€¢ ÄĂ¡p Ă¡n C: phĂ©p NOT
+â€¢ Phá»§ Ä‘á»‹nh bit.
+â€¢ Giáº£i: æ­£è§£ă¯Că€‚NOTå›è·¯
+ww {
+ "A": "â€¢ LĂ  gĂ¬? Tá»•ng logic: cĂ³ Ă­t nháº¥t má»™t 1 thĂ¬ ra 1.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Máº¡ch logic OR.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ©p NOTÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? TĂ­ch logic: cáº£ hai 1 má»›i ra 1.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Máº¡ch logic AND.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ©p NOTÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? KhĂ¡c nhau ra 1, giá»‘ng ra 0.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Parity, mĂ£ hĂ³a Ä‘Æ¡n giáº£n.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ©p NOTÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m k
+==== [33m99[39m [33m282[39m D
+Q ăƒ€ă‚¤ă‚ªăƒ¼ăƒ‰ă¨åå°ä½“ă«ă¤ă„ă¦ă€æ­£ă—ă„ă‚‚ă®ă¯ă©ă‚Œă§ă™ă‹ă€‚
+O {"A":"LEDă¯ä¸€èˆ¬ă®ăƒ€ă‚¤ă‚ªăƒ¼ăƒ‰ă¨ă¯æ§‹é€ ăŒç•°ăªă‚ă€å…‰ă‚’ç™ºă—ăªă„ă¨ă„ă†ç‚¹ă§åŒºåˆ¥ă•ă‚Œă‚‹ă€‚","B":"ăƒ€ă‚¤ă‚ªăƒ¼ăƒ‰ă¯ă€på‹ă‹ă‚‰nå‹ă«é›»å­ăŒç§»å‹•ă™ă‚‹ăŸă‚ă€på‹ă‹ă‚‰nå‹ă®æ–¹å‘ă«é›»æµăŒæµă‚Œă‚‹ă€‚","C":"nå‹åå°ä½“ă¯é›»å­ăŒä¸è¶³ă—ă¦ăă‚ă€på‹åå°ä½“ă¯é›»å­ăŒéå‰°ă§ă‚ă‚‹ăŸă‚å®‰å®ă—ă¦ă„ă‚‹ă€‚","D":"é›»æµăŒæµă‚Œă‚‹æ–¹å‘ă¨é›»å­ă®ç§»å‹•ă™ă‚‹æ–¹å‘ă¯é€†ă§ă‚ă‚‹ă€‚"}
+EX æ­£è§£ă¯Dă€‚é›»æµăŒæµă‚Œă‚‹æ–¹å‘ă¨é›»å­ă®ç§»å‹•ă™ă‚‹æ–¹å‘ă¯é€†ă§ă‚ă‚‹ă€‚
+qVi Vá» diode vĂ  bĂ¡n dáº«n, phĂ¡t biá»ƒu nĂ o Ä‘Ăºng?
+oVi {"A":"LED khĂ¡c diode thÆ°á»ng vĂ¬ khĂ´ng phĂ¡t sĂ¡ng (sai â€” LED phĂ¡t sĂ¡ng)","B":"phĂ¡t biá»ƒu vá» diode","C":"n thiáº¿u electron, p thá»«a electron (sai â€” ngÆ°á»£c báº£n cháº¥t)","D":"chiá»u dĂ²ng vĂ  chiá»u electron ngÆ°á»£c nhau"}
+c â€¢ chiá»u dĂ²ng vĂ  chiá»u electron ngÆ°á»£c nhau
+â€¢ NghÄ©a: chiá»u dĂ²ng vĂ  chiá»u electron ngÆ°á»£c nhau.
+wc â€¢ chiá»u dĂ²ng vĂ  chiá»u electron ngÆ°á»£c nhau
+â€¢ ÄĂ¡p Ă¡n D: chiá»u dĂ²ng vĂ  chiá»u electron ngÆ°á»£c nhau
+ww {
+ "A": "â€¢ LĂ  gĂ¬? LED khĂ¡c diode thÆ°á»ng vĂ¬ khĂ´ng phĂ¡t sĂ¡ng (sai â€” LED phĂ¡t sĂ¡ng) â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«chiá»u dĂ²ng vĂ  chiá»u electron ngÆ°á»£c nhauÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu vá» diode â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«chiá»u dĂ²ng vĂ  chiá»u electron ngÆ°á»£c nhauÂ» â€” option nĂ y thuá»™c
+==== [33m100[39m [33m283[39m B
+Q ă€Œæµé€éç¨‹ă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"quĂ¡ trĂ¬nh di chuyá»ƒn","B":"quĂ¡ trĂ¬nh lÆ°u thĂ´ng","C":"quĂ¡ trĂ¬nh váº­n hĂ nh","D":"quĂ¡ trĂ¬nh váº­n hĂ nh"}
+EX æ­£è§£ă¯Bă€‚quĂ¡ trĂ¬nh lÆ°u thĂ´ng
+qVi Â« ă€ tiáº¿ng Viá»‡t lĂ  gĂ¬?
+oVi {"A":"quĂ¡ trĂ¬nh di chuyá»ƒn","B":"quĂ¡ trĂ¬nh lÆ°u thĂ´ng","C":"quĂ¡ trĂ¬nh váº­n hĂ nh","D":"quĂ¡ trĂ¬nh váº­n hĂ nh"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«quĂ¡ trĂ¬nh lÆ°u thĂ´ngÂ».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€Œæµé€éç¨‹ă€ă¯ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«quĂ¡ trĂ¬nh lÆ°u thĂ´ngÂ».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? quĂ¡ trĂ¬nh di chuyá»ƒn â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«quĂ¡ trĂ¬nh lÆ°u thĂ´ngÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? quĂ¡ trĂ¬nh váº­n hĂ nh â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«quĂ¡ trĂ¬nh lÆ°u thĂ´ngÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? quĂ¡ trĂ¬nh váº­n hĂ nh â€” khĂ¡i niá»‡m/option trong
+==== [33m101[39m [33m284[39m A
+Q ă€Œăƒ–ăƒ­ăƒ¼ăƒ‰ăƒăƒ³ăƒ‰ă€ă¯è‹±èªă§ä½•ă§ă™ă‹ă€‚ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"broadband - bÄƒng rá»™ng","B":"brodband - bÄƒng táº§n","C":"buroadband - bÄƒng rá»™ng","D":"burodband - bÄƒng táº§n"}
+EX æ­£è§£ă¯Aă€‚broadband - bÄƒng rá»™ng
+qVi Broadband tiáº¿ng Anh/Viá»‡t nghÄ©a lĂ  gĂ¬?
+oVi {"A":"broadband - bÄƒng rá»™ng","B":"brodband - bÄƒng táº§n","C":"buroadband - bÄƒng rá»™ng","D":"burodband - bÄƒng táº§n"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«cÆ¡ sá»Ÿ dá»¯ liá»‡uÂ».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€Œăƒ–ăƒ­ăƒ¼ăƒ‰ăƒăƒ³ăƒ‰ă€ă¯è‹±èªă§ä½•ă§ă™ă‹ă€‚ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«cÆ¡ sá»Ÿ dá»¯ liá»‡uÂ».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "B": "â€¢ LĂ  gĂ¬? brodband - bÄƒng táº§n\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? lÆ°u trá»¯ cĂ³ tá»• chá»©c\nâ€¢ VĂ¬ sao sai? KhĂ´ng pháº£i nghÄ©a Ä‘Ăºng cá»§a thuáº­t ngá»¯ stem; Ä‘Ăºng lĂ  Â«cÆ¡ sá»Ÿ dá»¯ liá»‡uÂ».",
+ "C": "â€¢ LĂ  gĂ¬? buroadband - bÄƒng rá»™ng\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? lÆ°u trá»¯ cĂ³ tá»• chá»©c\nâ€¢ VĂ¬ sao sai? KhĂ´ng pháº£i nghÄ©a Ä‘Ăºng cá»§a thuáº­t ngá»¯ stem; Ä‘Ăºng lĂ  Â«cÆ¡ sá»Ÿ dá»¯ liá»‡uÂ».",
+ "D": "â€¢ LĂ  gĂ¬? burodband - bÄƒng táº§n\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? lÆ°u trá»¯ cĂ³ tá»• chá»©c\nâ€¢ VĂ¬ sao sai? KhĂ´ng pháº£i nghÄ©a Ä‘Ăºng cá»§a thuáº­t ngá»¯ stem; Ä‘Ăºng lĂ  Â«cÆ¡ sá»Ÿ dá»¯ liá»‡uÂ»."
+}
+==== [33m102[39m [33m285[39m D
+Q é›»å­ăƒăƒăƒ¼ă®å½¢æ…‹ă«ă¤ă„ă¦ă€æ­£ă—ă„ă‚‚ă®ă¯ă©ă‚Œă§ă™ă‹ă€‚
+O {"A":"ă‚ªăƒ¼ăƒ—ăƒ³ăƒ«ăƒ¼ăƒ—å‹ă®é›»å­ăƒăƒăƒ¼ă¯ă€è¨­å‚™æ•è³‡ăŒå°‘ăªăă€é€è¡Œă®è² æ‹…ăŒè»½ă„ăŸă‚ă€æ—©æœŸă«æ™®åă—ăŸă€‚","B":"ă‚¯ăƒ­ăƒ¼ă‚ºăƒ‰ăƒ«ăƒ¼ăƒ—å‹ă®é›»å­ăƒăƒăƒ¼ă¯ă€ç¾é‡‘ă®ă‚ˆă†ăªåŒ¿åæ€§ăŒé«˜ăă€å°å£ă®åˆ©ç”¨ă«é©ă—ă¦ă„ă‚‹ă€‚","C":"ă‚¯ăƒ­ăƒ¼ă‚ºăƒ‰ăƒ«ăƒ¼ăƒ—å‹ă®é›»å­ăƒăƒăƒ¼ă¯ă€ç¾é‡‘ă®ă‚ˆă†ăªåŒ¿åæ€§ăŒé«˜ăă€å°å£ă®åˆ©ç”¨ă«é©ă—ă¦ă„ă‚‹ă€‚","D":"ă‚¯ăƒ­ăƒ¼ă‚ºăƒ‰ăƒ«ăƒ¼ăƒ—å‹ă®é›»å­ăƒăƒăƒ¼ă§ă¯ă€åº—èˆ—ăŒå—ă‘å–ă£ăŸăƒăƒªăƒ¥ăƒ¼ă¯ç™ºè¡Œå…ƒă‚’é€ă˜ă¦é€è¡Œå£åº§ă«æŒ¯ă‚è¾¼ă¾ă‚Œă‚‹ă€‚"}
+EX æ­£è§£ă¯Dă€‚ă‚¯ăƒ­ăƒ¼ă‚ºăƒ‰ăƒ«ăƒ¼ăƒ—å‹ă®é›»å­ăƒăƒăƒ¼ă§ă¯ă€åº—èˆ—ăŒå—ă‘å–ă£ăŸăƒăƒªăƒ¥ăƒ¼ă¯ç™ºè¡Œå…ƒă‚’é€ă˜ă¦é€è¡Œå£åº§ă«æŒ¯ă‚è¾¼ă¾ă‚Œă‚‹ă€‚
+qVi Vá» hĂ¬nh thĂ¡i tiá»n Ä‘iá»‡n tá»­, phĂ¡t biá»ƒu nĂ o Ä‘Ăºng?
+oVi {"A":"phĂ¡t biá»ƒu vá» tiá»n Ä‘iá»‡n tá»­","B":"Tiá»n Ä‘iá»‡n tá»­ closed-loop: áº©n danh cao nhÆ° tiá»n máº·t, phĂ¹ há»£p giao dá»‹ch nhá».","C":"Tiá»n Ä‘iá»‡n tá»­ closed-loop: áº©n danh cao nhÆ° tiá»n máº·t, phĂ¹ há»£p giao dá»‹ch nhá».","D":"phĂ¡t biá»ƒu vá» tiá»n Ä‘iá»‡n tá»­"}
+c â€¢ phĂ¡t biá»ƒu vá» tiá»n Ä‘iá»‡n tá»­
+â€¢ PhĂ¡t biá»ƒu / Ä‘oáº¡n JP Ä‘Ă£ dá»‹ch Ä‘á»§ nghÄ©a.
+wc â€¢ phĂ¡t biá»ƒu vá» tiá»n Ä‘iá»‡n tá»­
+â€¢ ÄĂ¡p Ă¡n D: phĂ¡t biá»ƒu vá» tiá»n Ä‘iá»‡n tá»­
+ww {
+ "A": "â€¢ LĂ  gĂ¬? phĂ¡t biá»ƒu vá» tiá»n Ä‘iá»‡n tá»­ â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ¡t biá»ƒu vá» tiá»n Ä‘iá»‡n tá»­Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? Tiá»n Ä‘iá»‡n tá»­ closed-loop: áº©n danh cao nhÆ° tiá»n máº·t, phĂ¹ há»£p giao dá»‹ch nhá». â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«phĂ¡t biá»ƒu vá» tiá»n Ä‘iá»‡n tá»­Â» â€” option nĂ y thuá»™c miá»n/khĂ¡
+==== [33m103[39m [33m286[39m C
+Q NTTăƒ‰ă‚³ăƒ¢ă®FOMAă®å•†å“ă¯ä½•ä¸–ä»£æºå¸¯é›»è©±ă®ă‚‚ă®ă§ă™ă‹ă€‚
+O {"A":"4G","B":"2G","C":"3G","D":"3.5G"}
+EX æ­£è§£ă¯Că€‚3G
+qVi Sáº£n pháº©m FOMA cá»§a NTT DoCoMo thuá»™c Ä‘iá»‡n thoáº¡i tháº¿ há»‡ máº¥y?
+oVi {"A":"4G","B":"2G","C":"3G","D":"3.5G"}
+c â€¢ 3G â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Theo giáº£i: æ­£è§£ă¯Că€‚3G
+wc â€¢ ÄĂ¡p Ă¡n C: 3G
+â€¢ 3G â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Giáº£i: æ­£è§£ă¯Că€‚3G
+ww {
+ "A": "â€¢ LĂ  gĂ¬? 4G â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«3GÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? 2G â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«3GÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? 3.5G â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai?
+==== [33m104[39m [33m287[39m C
+Q ă€ŒEDIă€ă¯è‹±èªă§ă©ă®è¨€è‘‰ă«ç•¥ă•ă‚Œă¾ă—ăŸă‹ă€‚
+O {"A":"Electronic Data International","B":"Electronical Data International","C":"Electronic Data Interchange","D":"Electronical Data Interchange"}
+EX æ­£è§£ă¯Că€‚Electronic Data Interchange
+qVi EDI lĂ  viáº¿t táº¯t tiáº¿ng Anh cá»§a cá»¥m nĂ o?
+oVi {"A":"Electronic Data International","B":"Electronical Data International","C":"Electronic Data Interchange","D":"Electronical Data Interchange"}
+c â€¢ Electronic Data Interchange â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Theo giáº£i: æ­£è§£ă¯Că€‚Electronic Data Interchange
+wc â€¢ ÄĂ¡p Ă¡n C: Electronic Data Interchange
+â€¢ Electronic Data Interchange â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Giáº£i: æ­£è§£ă¯Că€‚Electronic Data Interchange
+ww {
+ "A": "â€¢ LĂ  gĂ¬? Electronic Data International â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Electronic Data InterchangeÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? Electronical Data International â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Electronic Data InterchangeÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? Elec
+==== [33m105[39m [33m288[39m C
+Q ă‚ă‚‹ä¼ç¤¾ă®ă‚·ă‚¹ăƒ†ăƒ ă¯ă€3ă¤ă®è£…ç½®Aă€Bă€Că§æ§‹æˆă•ă‚Œă¦ă„ă¾ă™ă€‚Aă¨Bă¯ä¸¦åˆ—æ¥ç¶ă•ă‚Œă€ăă‚Œă‚‰ăŒCă¨ç›´åˆ—æ¥ç¶ă•ă‚Œă¦ă„ă¾ă™ă€‚å„è£…ç½®ă®ç¨¼åƒç‡ă¯ăă‚Œăă‚Œ0.9ă€0.9ă€0.95ă§ă‚ă‚‹ă¨ăă€ă‚·ă‚¹ăƒ†ăƒ å…¨ä½“ă®ç¨¼åƒç‡ă¯ă„ăă¤ă‹ă€‚
+O {"A":"89.5%","B":"92.5%","C":"94.0%","D":"91.0%"}
+EX æ­£è§£ă¯Că€‚94.0%
+qVi Há»‡ Aâˆ¥B rá»“i ná»‘i tiáº¿p C; R_A=R_B=0.9, R_C=0.95. Äá»™ tin cáº­y há»‡ thá»‘ng lĂ  bao nhiĂªu?
+oVi {"A":"89.5%","B":"92.5%","C":"94.0%","D":"91.0%"}
+c â€¢ 94.0% â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Theo giáº£i: æ­£è§£ă¯Că€‚94.0%
+wc â€¢ ÄĂ¡p Ă¡n C: 94.0%
+â€¢ 94.0% â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Giáº£i: æ­£è§£ă¯Că€‚94.0%
+ww {
+ "A": "â€¢ LĂ  gĂ¬? 89.5% â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«94.0%Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? 92.5% â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«94.0%Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? 91.0% â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\n
+==== [33m106[39m [33m289[39m C
+Q æŒ‡å…ˆă¨ă®ă‚»ăƒ³ă‚µă®é–“ă«è“„ăˆă‚‰ă‚Œă‚‹é›»è·ă‚’æ¸¬å®ă™ă‚‹æ–¹å¼ă¯ä½•ă®æ–¹å¼ă§ă™ă‹ă€‚
+O {"A":"CMOSă®ă‚»ăƒ³ă‚µă®æ–¹å¼","B":"ă‚»ă‚°ăƒ¡ăƒ³ăƒˆă®æ–¹å¼","C":"é™é›»å®¹é‡æ–¹å¼","D":"æµæ—è†œæ–¹å¼"}
+EX æ­£è§£ă¯Că€‚é™é›»å®¹é‡æ–¹å¼
+qVi CĂ¡ch Ä‘o Ä‘iá»‡n tĂ­ch giá»¯a Ä‘áº§u ngĂ³n vĂ  cáº£m biáº¿n lĂ  kiá»ƒu cáº£m á»©ng nĂ o?
+oVi {"A":"kiá»ƒu cáº£m biáº¿n CMOS","B":"cĂ¡ch/segment method","C":"cáº£m á»©ng Ä‘iá»‡n dung","D":"cáº£m á»©ng Ä‘iá»‡n trá»Ÿ"}
+c â€¢ cáº£m á»©ng Ä‘iá»‡n dung â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Theo giáº£i: æ­£è§£ă¯Că€‚é™é›»å®¹é‡æ–¹å¼
+wc â€¢ ÄĂ¡p Ă¡n C: cáº£m á»©ng Ä‘iá»‡n dung
+â€¢ cáº£m á»©ng Ä‘iá»‡n dung â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Giáº£i: æ­£è§£ă¯Că€‚é™é›»å®¹é‡æ–¹å¼
+ww {
+ "A": "â€¢ LĂ  gĂ¬? kiá»ƒu cáº£m biáº¿n CMOS â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«cáº£m á»©ng Ä‘iá»‡n dungÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? cĂ¡ch/segment method â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«cáº£m á»©ng Ä‘iá»‡n dungÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? cáº£m á»©ng Ä‘iá»‡n trá»Ÿ â€” khĂ¡i niá»‡m/option trong Ä‘á».\n
+==== [33m107[39m [33m290[39m D
+Q ă€Œå˜çµæ™¶ă€ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚ă¾ăŸă€ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚
+O {"A":"ăŸă‚“ă‘ă¤ă—ă‚‡ă† - Ä‘Æ¡n giáº£n","B":"ăŸă‚“ă‘ă¤ă—ă‚‡ - Ä‘Æ¡n káº¿t tinh","C":"ăŸă‚“ă‘ă£ă—ă‚‡ - Ä‘a káº¿t tinh","D":"ăŸă‚“ă‘ă£ă—ă‚‡ă† - Ä‘Æ¡n káº¿t tinh"}
+EX æ­£è§£ă¯Dă€‚ăŸă‚“ă‘ă£ă—ă‚‡ă† - Ä‘Æ¡n káº¿t tinh
+qVi Â« ă€ Ä‘á»c tháº¿ nĂ o? Tiáº¿ng Viá»‡t lĂ  gĂ¬?
+oVi {"A":"Ä‘Æ¡n giáº£n","B":"Ä‘Æ¡n káº¿t tinh","C":"Ä‘a káº¿t tinh","D":"Ä‘Æ¡n káº¿t tinh"}
+c â€¢ Thuáº­t ngá»¯ cáº§n map: nghÄ©a Ä‘Ăºng lĂ  Â«ăŸă‚“ă‘ă£ă—ă‚‡ă† - Ä‘Æ¡n káº¿t tinhÂ».
+wc â€¢ Äá»‘i chiáº¿u JP â†” VI: Â«ă€Œå˜çµæ™¶ă€ă¯ă©ă®ă‚ˆă†ă«èª­ă¿ă¾ă™ă‹ă€‚ă¾ăŸă€ăƒ™ăƒˆăƒăƒ èªă§ä½•ă§ă™ă‹ă€‚Â» â†” Â«ăŸă‚“ă‘ă£ă—ă‚‡ă† - Ä‘Æ¡n káº¿t tinhÂ».
+â€¢ CĂ¡c phÆ°Æ¡ng Ă¡n khĂ¡c sai nghÄ©a hoáº·c Ä‘áº£o khĂ¡i niá»‡m.
+ww {
+ "A": "â€¢ LĂ  gĂ¬? Ä‘Æ¡n giáº£n â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Ä‘Æ¡n káº¿t tinhÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? Ä‘Æ¡n káº¿t tinh â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«Ä‘Æ¡n káº¿t tinhÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? Ä‘a káº¿t tinh â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ t
+==== [33m108[39m [33m291[39m C
+Q ă‚³ăƒ³ăƒ”ăƒ¥ăƒ¼ă‚¿ă®CPUă«ăă„ă¦ă€ăƒă‚¹ă®ä¸»ăªå½¹å‰²ă¨ă—ă¦æœ€ă‚‚é©åˆ‡ăªă‚‚ă®ă¯ă©ă‚Œă‹ă€‚
+O {"A":"æ¼”ç®—è£…ç½®ă¨åˆ¶å¾¡è£…ç½®ă®å‡¦ç†é€Ÿåº¦ă‚’å‘ä¸ă•ă›ă‚‹ă“ă¨","B":"é›»æºă‚’ă‚³ăƒ³ăƒ”ăƒ¥ăƒ¼ă‚¿ă®å„éƒ¨ä½ă«ä¾›çµ¦ă™ă‚‹ă“ă¨","C":"CPUå†…éƒ¨ă§ăƒ‡ăƒ¼ă‚¿ă®ă‚„ă‚ă¨ă‚ă‚’ă™ă‚‹ă“ă¨","D":"å‘½ä»¤ă‚’è§£é‡ˆă—ă€ä»–ă®è£…ç½®ă«åˆ¶å¾¡ä¿¡å·ă‚’é€ă‚‹ă“ă¨"}
+EX æ­£è§£ă¯Că€‚CPUå†…éƒ¨ă§ăƒ‡ăƒ¼ă‚¿ă®ă‚„ă‚ă¨ă‚ă‚’ă™ă‚‹ă“ă¨
+qVi mĂ¡y tĂ­nh lĂ  cĂ¡i nĂ o?
+oVi {"A":"tÄƒng tá»‘c ALU vĂ  control unit","B":"mĂ¡y tĂ­nh","C":"trao Ä‘á»•i dá»¯ liá»‡u trong CPU","D":"giáº£i mĂ£ lá»‡nh, gá»­i tĂ­n hiá»‡u Ä‘iá»u khiá»ƒn"}
+c â€¢ CPU: thá»±c thi lá»‡nh.
+wc â€¢ ÄĂ¡p Ă¡n C: trao Ä‘á»•i dá»¯ liá»‡u trong CPU
+â€¢ trao Ä‘á»•i dá»¯ liá»‡u trong CPU â€” khĂ¡i niá»‡m/option trong Ä‘á».
+â€¢ Giáº£i: æ­£è§£ă¯Că€‚CPUå†…éƒ¨ă§ăƒ‡ăƒ¼ă‚¿ă®ă‚„ă‚ă¨ă‚ă‚’ă™ă‚‹ă“ă¨
+ww {
+ "A": "â€¢ LĂ  gĂ¬? tÄƒng tá»‘c ALU vĂ  control unit â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«trao Ä‘á»•i dá»¯ liá»‡u trong CPUÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "B": "â€¢ LĂ  gĂ¬? mĂ¡y tĂ­nh â€” khĂ¡i niá»‡m/option trong Ä‘á».\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Äá»‘i tÆ°á»£ng ká»¹ thuáº­t riĂªng, khĂ´ng khá»›p stem.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«trao Ä‘á»•i dá»¯ liá»‡u trong CPUÂ» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? giáº£i mĂ£ lá»‡nh, gá»­i tĂ­n hiá»‡u Ä‘iá»
+==== [33m109[39m [33m292[39m B
+Q Chá»n cĂ¡ch gá»i tĂªn Ä‘Ăºng cá»§a há»‡ thá»‘ng trong hĂ¬nh
+O {"A":"ç›´åˆ—ă‚·ă‚¹ăƒ†ăƒ ","B":"ä¸¦åˆ—ă‚·ă‚¹ăƒ†ăƒ ","C":"é›†ä¸­ă‚·ă‚¹ăƒ†ăƒ ","D":"åˆ†æ•£ă‚·ă‚¹ăƒ†ăƒ "}
+EX æ­£è§£ă¯Bă€‚ä¸¦åˆ—ă‚·ă‚¹ăƒ†ăƒ 
+qVi Chá»n cĂ¡ch gá»i tĂªn Ä‘Ăºng cá»§a há»‡ thá»‘ng trong hĂ¬nh
+oVi {"A":"há»‡ ná»‘i tiáº¿p (series)","B":"há»‡ song song (parallel)","C":"há»‡ táº­p trung","D":"há»‡ thá»‘ng phĂ¢n tĂ¡n"}
+c â€¢ Thiáº¿t bá»‹ song song â€” dá»± phĂ²ng láº«n nhau.
+â€¢ Theo giáº£i: æ­£è§£ă¯Bă€‚ä¸¦åˆ—ă‚·ă‚¹ăƒ†ăƒ 
+wc â€¢ ÄĂ¡p Ă¡n B: há»‡ song song (parallel)
+â€¢ Thiáº¿t bá»‹ song song â€” dá»± phĂ²ng láº«n nhau.
+â€¢ Giáº£i: æ­£è§£ă¯Bă€‚ä¸¦åˆ—ă‚·ă‚¹ăƒ†ăƒ 
+ww {
+ "A": "â€¢ LĂ  gĂ¬? Thiáº¿t bá»‹ ná»‘i series â€” há»ng má»™t cĂ¡i cĂ³ thá»ƒ lĂ m sáº­p cáº£ chuá»—i.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? MĂ´ hĂ¬nh Ä‘á»™ tin cáº­y R = R1Â·R2.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«há»‡ song song (parallel)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "C": "â€¢ LĂ  gĂ¬? TĂ i nguyĂªn/xá»­ lĂ½ táº­p trung má»™t chá»—.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Kiáº¿n trĂºc há»‡ thá»‘ng.\nâ€¢ VĂ¬ sao sai? Stem Ä‘ang há»i Â«há»‡ song song (parallel)Â» â€” option nĂ y thuá»™c miá»n/khĂ¡i niá»‡m khĂ¡c.",
+ "D": "â€¢ LĂ  gĂ¬? TĂ i nguyĂªn/xá»­ lĂ½ phĂ¢n tĂ¡n nhiá»u node.\nâ€¢ DĂ¹ng Ä‘á»ƒ lĂ m gĂ¬? Kiáº¿n trĂºc há»‡ th

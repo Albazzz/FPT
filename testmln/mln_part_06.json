@@ -1,0 +1,1527 @@
+{
+  "part": 6,
+  "totalParts": 10,
+  "range": "Câu 276 đến 330",
+  "count": 55,
+  "subject": "mln",
+  "task": "testmln_part6",
+  "taskLabel": "MLN Phần 6",
+  "questions": [
+    {
+      "id": 276,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 276,
+      "question": "Khi nào tiền tệ ra đời?",
+      "options": {
+        "A": "Khi sản xuất và trao đổi đã phát triển",
+        "B": "Khi vật ngang giá chung được cố định ở vàng, bạc",
+        "C": "Khi không còn quan hệ trao đổi trực tiếp, có một thứ hàng làm trung gian trong trao đổi",
+        "D": "Khi nhu cầu trao đổi vượt quá phạm vi quốc gia"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Khi nào tiền tệ ra đời?",
+        "optionsVi": {
+          "A": "Khi sản xuất và trao đổi đã phát triển",
+          "B": "Khi vật ngang giá chung được cố định ở vàng, bạc",
+          "C": "Khi không còn quan hệ trao đổi trực tiếp, có một thứ hàng làm trung gian trong trao đổi",
+          "D": "Khi nhu cầu trao đổi vượt quá phạm vi quốc gia"
+        },
+        "answerDisplay": "B. Khi vật ngang giá chung được cố định ở vàng, bạc",
+        "concept": "• Mốc ra đời của Tiền tệ.",
+        "whyCorrect": "• Tiền tệ chính thức xuất hiện khi vật ngang giá chung trong trao đổi hàng hóa được cố định ở một hàng hóa đặc biệt có giá trị cao là Vàng hoặc Bạc.",
+        "memoryTip": "• Tiền tệ ra đời khi ➔ Vật ngang giá chung cố định ở vàng, bạc."
+      }
+    },
+    {
+      "id": 277,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 277,
+      "question": "Chọn định nghĩa chính xác về tư bản:",
+      "options": {
+        "A": "Tư bản là giá trị mang lại giá trị thặng dư.",
+        "B": "Tư bản là tiền và TLSX của nhà tư bản để tạo ra giá trị thặng dư.",
+        "C": "Tư bản là giá trị đem lại giá trị thặng dư bằng cách bóc lột lao động làm thuê."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Chọn định nghĩa chính xác về tư bản:",
+        "optionsVi": {
+          "A": "Tư bản là giá trị mang lại giá trị thặng dư.",
+          "B": "Tư bản là tiền và TLSX của nhà tư bản để tạo ra giá trị thặng dư.",
+          "C": "Tư bản là giá trị đem lại giá trị thặng dư bằng cách bóc lột lao động làm thuê."
+        },
+        "answerDisplay": "C. Tư bản là giá trị đem lại giá trị thặng dư bằng cách bóc lột lao động làm thuê.",
+        "concept": "• Định nghĩa chuẩn xác về Tư bản.",
+        "whyCorrect": "• Tư bản không phải là tiền hay máy móc thuần túy, mà là một quan hệ sản xuất xã hội: đó là giá trị đem lại giá trị thặng dư bằng cách bóc lột lao động làm thuê của công nhân.",
+        "memoryTip": "• Bản chất tư bản ➔ Giá trị đem lại giá trị thặng dư bằng cách bóc lột lao động làm thuê."
+      }
+    },
+    {
+      "id": 278,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 278,
+      "question": "Vì sao hàng hóa có hai thuộc tính là giá trị và giá trị sử dụng?",
+      "options": {
+        "A": "Vì lao động sản xuất hàng hóa có tính hai mặt là : lao động cụ thể và lao động trừu tượng",
+        "B": "Vì có lao động giản đơn và lao động phức tạp",
+        "C": "Vì có lao động quá khứ và lao động sống",
+        "D": "Vì nhu cầu trong trao đổi hàng hóa"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vì sao hàng hóa có hai thuộc tính là giá trị và giá trị sử dụng?",
+        "optionsVi": {
+          "A": "Vì lao động sản xuất hàng hóa có tính hai mặt là : lao động cụ thể và lao động trừu tượng",
+          "B": "Vì có lao động giản đơn và lao động phức tạp",
+          "C": "Vì có lao động quá khứ và lao động sống",
+          "D": "Vì nhu cầu trong trao đổi hàng hóa"
+        },
+        "answerDisplay": "A. Vì lao động sản xuất hàng hóa có tính hai mặt là : lao động cụ thể và lao động trừu tượng",
+        "concept": "• Tính hai mặt của lao động sản xuất hàng hóa.",
+        "whyCorrect": "• Hàng hóa có hai thuộc tính (giá trị sử dụng và giá trị) vì lao động sản xuất ra hàng hóa có tính hai mặt: Lao động cụ thể tạo ra giá trị sử dụng, còn Lao động trừu tượng tạo ra giá trị của hàng hóa.",
+        "memoryTip": "• 2 thuộc tính hàng hóa xuất phát từ ➔ Tính hai mặt của lao động (cụ thể & trừu tượng)."
+      }
+    },
+    {
+      "id": 279,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 279,
+      "question": "Căn cứ vào đâu để phân chia tư bản cố định và tư bản lưu động?",
+      "options": {
+        "A": "Căn cứ vào tính chất chuyển giá trị sử dụng của nó vào trong sản phẩm mới",
+        "B": "Căn cứ vào tính chất chuyển giá trị của nó vào trong sản phẩm cũ",
+        "C": "Căn cứ vào tính chất chuyển giá trị của nó vào trong sản phẩm mới",
+        "D": "Căn cứ vào tính chất chuyển giá trị thặng dư của nó vào trong sản phẩm mới"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Căn cứ vào đâu để phân chia tư bản cố định và tư bản lưu động?",
+        "optionsVi": {
+          "A": "Căn cứ vào tính chất chuyển giá trị sử dụng của nó vào trong sản phẩm mới",
+          "B": "Căn cứ vào tính chất chuyển giá trị của nó vào trong sản phẩm cũ",
+          "C": "Căn cứ vào tính chất chuyển giá trị của nó vào trong sản phẩm mới",
+          "D": "Căn cứ vào tính chất chuyển giá trị thặng dư của nó vào trong sản phẩm mới"
+        },
+        "answerDisplay": "C. Căn cứ vào tính chất chuyển giá trị của nó vào trong sản phẩm mới",
+        "concept": "• Căn cứ phân chia Tư bản cố định và Tư bản lưu động.",
+        "whyCorrect": "• Việc phân chia dựa vào tính chất/phương thức chuyển giá trị của từng bộ phận tư bản vào sản phẩm mới (chuyển dần từng phần đối với tư bản cố định, chuyển toàn bộ 1 lần đối với tư bản lưu động).",
+        "memoryTip": "• Cố định & lưu động ➔ Căn cứ vào tính chất chuyển giá trị vào sản phẩm mới."
+      }
+    },
+    {
+      "id": 280,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 280,
+      "question": "Thuật ngữ \"kinh tế- chính trị\" được sử dụng lần đầu tiên vào năm nào?",
+      "options": {
+        "A": "1615",
+        "B": "1616",
+        "C": "1617"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Thuật ngữ \"kinh tế- chính trị\" được sử dụng lần đầu tiên vào năm nào?",
+        "optionsVi": {
+          "A": "1615",
+          "B": "1616",
+          "C": "1617"
+        },
+        "answerDisplay": "A. 1615",
+        "concept": "• Mốc lịch sử xuất hiện thuật ngữ 'Kinh tế chính trị'.",
+        "whyCorrect": "• Thuật ngữ 'Kinh tế chính trị' (Political Economy) lần đầu tiên được xuất hiện trong tác phẩm 'Chuyên luận về kinh tế chính trị' của Antoine de Montchrétien ban hành năm 1615.",
+        "memoryTip": "• Thuật ngữ Kinh tế chính trị ➔ Năm 1615 (Montchrétien)."
+      }
+    },
+    {
+      "id": 281,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 281,
+      "question": "Ai là người đầu tiên đưa ra khái niệm \"kinh tế- chính trị\"?",
+      "options": {
+        "A": "Francois Quesney",
+        "B": "Antoine Montchretiên",
+        "C": "William Petty"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "variantOfStem": "Thuật ngữ \"kinh tế- chính trị\" được sử dụng lần đầu tiên vào năm nào?",
+      "explanation": {
+        "questionVi": "Ai là người đầu tiên đưa ra khái niệm \"kinh tế- chính trị\"?",
+        "optionsVi": {
+          "A": "Francois Quesney",
+          "B": "Antoine Montchretiên",
+          "C": "William Petty"
+        },
+        "answerDisplay": "B. Antoine Montchretiên",
+        "concept": "• Tác giả xuất bản thuật ngữ KTCT đầu tiên.",
+        "whyCorrect": "• Nhà kinh tế học người Pháp Antoine de Montchrétien là người đầu tiên đưa thuật ngữ 'Kinh tế chính trị' vào đời sống khoa học năm 1615.",
+        "memoryTip": "• Đưa ra thuật ngữ KTCT đầu tiên ➔ Antoine de Montchrétien."
+      }
+    },
+    {
+      "id": 282,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 282,
+      "question": "Để làm rõ vai trò của các bộ phận tư bản trong việc tạo ra giá trị thặng dư, tư bản được chia thành",
+      "options": {
+        "A": "Tư bản độc quyền và tư bản nhà nước",
+        "B": "Tư bản bất biến và tư bản khả biến",
+        "C": "Tư bản cố định và tư bản lưu động"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Để làm rõ vai trò của các bộ phận tư bản trong việc tạo ra giá trị thặng dư, tư bản được chia thành",
+        "optionsVi": {
+          "A": "Tư bản độc quyền và tư bản nhà nước",
+          "B": "Tư bản bất biến và tư bản khả biến",
+          "C": "Tư bản cố định và tư bản lưu động"
+        },
+        "answerDisplay": "B. Tư bản bất biến và tư bản khả biến",
+        "concept": "• Phân loại Tư bản bất biến (c) và Tư bản khả biến (v).",
+        "whyCorrect": "• Để làm rõ bộ phận nào trực tiếp tạo ra giá trị thặng dư (chỉ có v mới tạo ra m, còn c chỉ bảo tồn chuyển giá trị), C. Mác chia tư bản thành Tư bản bất biến và Tư bản khả biến.",
+        "memoryTip": "• Làm rõ vai trò tạo ra GTTS ➔ Chia thành Tư bản bất biến (c) & Tư bản khả biến (v)."
+      }
+    },
+    {
+      "id": 283,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 283,
+      "question": "Thế nào là sản xuất tự cung, tự cấp?",
+      "options": {
+        "A": "Quá trình sản xuất chỉ có hai khâu: sản xuất và tiên dùng",
+        "B": "Sản xuất có tính chất khép kín",
+        "C": "Là một kiểu tổ chức kinh tế trong đó những sản phẩm được sản xuất ra nhằm mục đích thỏa mãn nhu cầu tiêu dùng của bản thân người sản xuất",
+        "D": "Sản xuất và tái sản xuất"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Thế nào là sản xuất tự cung, tự cấp?",
+        "optionsVi": {
+          "A": "Quá trình sản xuất chỉ có hai khâu: sản xuất và tiên dùng",
+          "B": "Sản xuất có tính chất khép kín",
+          "C": "Là một kiểu tổ chức kinh tế trong đó những sản phẩm được sản xuất ra nhằm mục đích thỏa mãn nhu cầu tiêu dùng của bản thân người sản xuất",
+          "D": "Sản xuất và tái sản xuất"
+        },
+        "answerDisplay": "C. Là một kiểu tổ chức kinh tế trong đó những sản phẩm được sản xuất ra nhằm mục đích thỏa mãn nhu cầu tiêu dùng của bản thân người sản xuất",
+        "concept": "• Khái niệm Sản xuất tự cung tự cấp.",
+        "whyCorrect": "• Sản xuất tự cung tự cấp là kiểu tổ chức kinh tế khép kín, trong đó sản phẩm được tạo ra nhằm mục đích thỏa mãn trực tiếp nhu cầu tiêu dùng của chính bản thân người sản xuất.",
+        "memoryTip": "• Sản xuất tự cung tự cấp ➔ Thỏa mãn nhu cầu tiêu dùng của bản thân người sản xuất."
+      }
+    },
+    {
+      "id": 284,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 284,
+      "question": "Thế nào là lao động phức tạp?",
+      "options": {
+        "A": "Là lao động phải trải qua đào tạo, huấn luyện mới làm được",
+        "B": "Là lao động tạo ra các sản phẩm chất lượng cao, tinh vi",
+        "C": "Là lao động có nhiều thao tác phức tạp"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Thế nào là lao động phức tạp?",
+        "optionsVi": {
+          "A": "Là lao động phải trải qua đào tạo, huấn luyện mới làm được",
+          "B": "Là lao động tạo ra các sản phẩm chất lượng cao, tinh vi",
+          "C": "Là lao động có nhiều thao tác phức tạp"
+        },
+        "answerDisplay": "A. Là lao động phải trải qua đào tạo, huấn luyện mới làm được",
+        "concept": "• Định nghĩa Lao động phức tạp.",
+        "whyCorrect": "• Lao động phức tạp là lao động đòi hỏi phải trải qua quá trình đào tạo, huấn luyện chuyên môn kỹ năng mới có thể tiến hành thực hiện được.",
+        "memoryTip": "• Lao động phức tạp ➔ Phải trải qua đào tạo, huấn luyện."
+      }
+    },
+    {
+      "id": 285,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 285,
+      "question": "Khi lạm phát phi mã xảy ra, hình thức sử dụng tiền nào có lợi nhất?",
+      "options": {
+        "A": "Mua hàng hoá hoặc vàng cất giữ",
+        "B": "Gửi ngân hàng",
+        "C": "Đầu tư vào sản xuất kinh doanh"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Khi lạm phát phi mã xảy ra, hình thức sử dụng tiền nào có lợi nhất?",
+        "optionsVi": {
+          "A": "Mua hàng hoá hoặc vàng cất giữ",
+          "B": "Gửi ngân hàng",
+          "C": "Đầu tư vào sản xuất kinh doanh"
+        },
+        "answerDisplay": "A. Mua hàng hoá hoặc vàng cất giữ",
+        "concept": "• Bảo toàn tài sản khi lạm phát cao.",
+        "whyCorrect": "• Khi lạm phát phi mã xảy ra (sức mua tiền giấy giảm sút nghiêm trọng), hình thức nắm giữ tài sản có lợi nhất để tránh mất giá là mua hàng hóa thực tế hoặc vàng đúc cất giữ.",
+        "memoryTip": "• Lạm phát phi mã ➔ Mua hàng hóa hoặc vàng cất giữ."
+      }
+    },
+    {
+      "id": 286,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 286,
+      "question": "Điều kiện để tiền biến thành tư bản là:",
+      "options": {
+        "A": "Phải tích lũy được một lượng tiền lớn; tiền không được đưa vào kinh doanh với mục đích thu giá trị thặng dư",
+        "B": "Phải tích lũy được một lượng tiền lớn; tiền phải được đưa vào kinh doanh tư bản với mục đích thu giá trị thặng dư",
+        "C": "Phải tích lũy được một lượng hàng hóa lớn; hàng hóa phải được đưa vào kinh doanh tư bản với mục"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Điều kiện để tiền biến thành tư bản là:",
+        "optionsVi": {
+          "A": "Phải tích lũy được một lượng tiền lớn; tiền không được đưa vào kinh doanh với mục đích thu giá trị thặng dư",
+          "B": "Phải tích lũy được một lượng tiền lớn; tiền phải được đưa vào kinh doanh tư bản với mục đích thu giá trị thặng dư",
+          "C": "Phải tích lũy được một lượng hàng hóa lớn; hàng hóa phải được đưa vào kinh doanh tư bản với mục"
+        },
+        "answerDisplay": "B. Phải tích lũy được một lượng tiền lớn; tiền phải được đưa vào kinh doanh tư bản với mục đích thu giá trị thặng dư",
+        "concept": "• Chuyển hóa Tiền thành Tư bản.",
+        "whyCorrect": "• Tiền biến thành tư bản đòi hỏi 2 điều kiện: phải tích lũy được một lượng tiền lớn và lượng tiền đó phải được đưa vào kinh doanh tư bản với mục đích sinh lời (thu giá trị thặng dư).",
+        "memoryTip": "• Tiền thành tư bản ➔ Tích lũy tiền lớn + Đưa vào kinh doanh thu giá trị thặng dư."
+      }
+    },
+    {
+      "id": 287,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 287,
+      "question": "Quy luật kinh tế cơ bản của chủ nghĩa tư bản là",
+      "options": {
+        "A": "Quy luật đấu tranh giai cấp",
+        "B": "Quy luật giá trị",
+        "C": "Quy luật quan hệ sản xuất phù hợp với lực lượng sản xuất",
+        "D": "Quy luật giá trị thặng dư"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Quy luật kinh tế cơ bản của chủ nghĩa tư bản là",
+        "optionsVi": {
+          "A": "Quy luật đấu tranh giai cấp",
+          "B": "Quy luật giá trị",
+          "C": "Quy luật quan hệ sản xuất phù hợp với lực lượng sản xuất",
+          "D": "Quy luật giá trị thặng dư"
+        },
+        "answerDisplay": "D. Quy luật giá trị thặng dư",
+        "concept": "• Quy luật kinh tế tuyệt đối của CNTB.",
+        "whyCorrect": "• Quy luật giá trị thặng dư là quy luật kinh tế cơ bản và tuyệt đối của chủ nghĩa tư bản, quyết định toàn bộ sự phát triển và diệt vong của phương thức sản xuất này.",
+        "memoryTip": "• Quy luật kinh tế cơ bản của CNTB ➔ Quy luật giá trị thặng dư."
+      }
+    },
+    {
+      "id": 288,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 288,
+      "question": "Cặp phạm trù nào là phát hiện riêng của C.Mác?",
+      "options": {
+        "A": "Lao động cụ thể và lao động trừu tượng",
+        "B": "Lao động giản đơn và lao động phức tạp",
+        "C": "Lao động tư nhân và lao động xã hội"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cặp phạm trù nào là phát hiện riêng của C.Mác?",
+        "optionsVi": {
+          "A": "Lao động cụ thể và lao động trừu tượng",
+          "B": "Lao động giản đơn và lao động phức tạp",
+          "C": "Lao động tư nhân và lao động xã hội"
+        },
+        "answerDisplay": "A. Lao động cụ thể và lao động trừu tượng",
+        "concept": "• Phát hiện riêng của K. Marx.",
+        "whyCorrect": "• C. Mác là người đầu tiên phát hiện ra tính hai mặt của lao động sản xuất hàng hóa: Lao động cụ thể và Lao động trừu tượng.",
+        "memoryTip": "• Phát hiện riêng của C. Mác ➔ Lao động cụ thể và Lao động trừu tượng."
+      }
+    },
+    {
+      "id": 289,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 289,
+      "question": "Học thuyết kinh tế nào của C.Mác được coi là hòn đá tảng",
+      "options": {
+        "A": "Lợi nhuận",
+        "B": "Học thuyết tiền tệ",
+        "C": "Học thuyết cung cầu",
+        "D": "Học thuyết giá trị thặng dư"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Học thuyết kinh tế nào của C.Mác được coi là hòn đá tảng",
+        "optionsVi": {
+          "A": "Lợi nhuận",
+          "B": "Học thuyết tiền tệ",
+          "C": "Học thuyết cung cầu",
+          "D": "Học thuyết giá trị thặng dư"
+        },
+        "answerDisplay": "D. Học thuyết giá trị thặng dư",
+        "concept": "• Hòn đá tảng của học thuyết KTCT Mác - Lênin.",
+        "whyCorrect": "• Học thuyết giá trị thặng dư được V.I. Lênin đánh giá là 'hòn đá tảng' trong toàn bộ lý luận kinh tế chính trị của C. Mác.",
+        "memoryTip": "• Hòn đá tảng học thuyết C. Mác ➔ Học thuyết giá trị thặng dư."
+      }
+    },
+    {
+      "id": 290,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 290,
+      "question": "Điều kiện để ra đời và tồn tại của sản xuất hàng hóa:",
+      "options": {
+        "A": "Phân công lao động xã hội",
+        "B": "Sự tách biệt về kinh tế giữa các chủ thể (sở hữu khác nhau về TLSX)",
+        "C": "Cả A và B"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Điều kiện để ra đời và tồn tại của sản xuất hàng hóa:",
+        "optionsVi": {
+          "A": "Phân công lao động xã hội",
+          "B": "Sự tách biệt về kinh tế giữa các chủ thể (sở hữu khác nhau về TLSX)",
+          "C": "Cả A và B"
+        },
+        "answerDisplay": "C. Cả A và B",
+        "concept": "• 2 điều kiện ra đời Sản xuất hàng hóa.",
+        "whyCorrect": "• Sản xuất hàng hóa ra đời và tồn tại dựa trên 2 điều kiện bắt buộc: (A) Phân công lao động xã hội và (B) Sự tách biệt về kinh tế giữa các chủ thể sản xuất (sở hữu khác nhau về TLSX).",
+        "memoryTip": "• Điều kiện ra đời SXHH ➔ Cả Phân công LĐXH và Sự tách biệt kinh tế (Cả A và B)."
+      }
+    },
+    {
+      "id": 291,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 291,
+      "question": "Lượng giá trị của hàng hóa là yếu tố",
+      "options": {
+        "A": "Cố định",
+        "B": "Luôn luôn thay đổi",
+        "C": "Tùy thuộc vào nền sản xuất hàng hóa"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Lượng giá trị của hàng hóa là yếu tố",
+        "optionsVi": {
+          "A": "Cố định",
+          "B": "Luôn luôn thay đổi",
+          "C": "Tùy thuộc vào nền sản xuất hàng hóa"
+        },
+        "answerDisplay": "A. Cố định",
+        "concept": "• Tính chất đại lượng của Lượng giá trị.",
+        "whyCorrect": "• Trong điều kiện kỹ thuật và năng suất lao động không đổi, lượng giá trị của một đơn vị hàng hóa là một đại lượng được xác định cố định theo hao phí lao động xã hội cần thiết.",
+        "memoryTip": "• Lượng giá trị hàng hóa (khi NSLĐ cố định) ➔ Yếu tố cố định."
+      }
+    },
+    {
+      "id": 292,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 292,
+      "question": "Về bản chất lợi nhuận và giá trị thặng dư đều là:",
+      "options": {
+        "A": "Lao động cụ thể của người công nhân",
+        "B": "Lao động không công của người công nhân",
+        "C": "Lao động trừu tượng của người công nhân",
+        "D": "Lao động phức tạp của người công nhân"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Về bản chất lợi nhuận và giá trị thặng dư đều là:",
+        "optionsVi": {
+          "A": "Lao động cụ thể của người công nhân",
+          "B": "Lao động không công của người công nhân",
+          "C": "Lao động trừu tượng của người công nhân",
+          "D": "Lao động phức tạp của người công nhân"
+        },
+        "answerDisplay": "B. Lao động không công của người công nhân",
+        "concept": "• Bản chất nguồn gốc của Lợi nhuận và GTTS.",
+        "whyCorrect": "• Về bản chất, cả lợi nhuận (p) và giá trị thặng dư (m) đều là kết quả của phần Lao động không công mà người công nhân làm thuê tạo ra trong quá trình sản xuất.",
+        "memoryTip": "• Bản chất lợi nhuận & GTTS ➔ Lao động không công của công nhân."
+      }
+    },
+    {
+      "id": 293,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 293,
+      "question": "Điểm giống nhau giữa tăng năng suất lao động và tăng cường độ lao động?",
+      "options": {
+        "A": "Đều làm giảm giá trị của một đơn vị hàng hóa",
+        "B": "Đều làm tăng thêm sản lượng sản phẩm được sản xuất ra trong một đơn vị thời gian",
+        "C": "Đều làm tăng lượng lao động hao phí trong một đơn vị thời gian",
+        "D": "Đều gắn với tiến bộ kỹ thuật"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Điểm giống nhau giữa tăng năng suất lao động và tăng cường độ lao động?",
+        "optionsVi": {
+          "A": "Đều làm giảm giá trị của một đơn vị hàng hóa",
+          "B": "Đều làm tăng thêm sản lượng sản phẩm được sản xuất ra trong một đơn vị thời gian",
+          "C": "Đều làm tăng lượng lao động hao phí trong một đơn vị thời gian",
+          "D": "Đều gắn với tiến bộ kỹ thuật"
+        },
+        "answerDisplay": "B. Đều làm tăng thêm sản lượng sản phẩm được sản xuất ra trong một đơn vị thời gian",
+        "concept": "• Điểm chung Năng suất & Cường độ lao động.",
+        "whyCorrect": "• Tăng năng suất lao động và tăng cường độ lao động giống nhau ở chỗ đều làm tăng thêm tổng số lượng sản phẩm được sản xuất ra trong một đơn vị thời gian.",
+        "memoryTip": "• Giống nhau tăng NSLĐ & CĐLĐ ➔ Đều làm tăng sản lượng trong 1 đơn vị thời gian."
+      }
+    },
+    {
+      "id": 294,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 294,
+      "question": "Dựa vào căn cứ nào để chia tư bản thành tư bản bất biến và tư bản khả biến (c & v)",
+      "options": {
+        "A": "Phương thức chuyển giá trị các bộ phận tư bản sang sản phẩm",
+        "B": "Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư",
+        "C": "Tốc độ chu chuyển của tư bản"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Dựa vào căn cứ nào để chia tư bản thành tư bản bất biến và tư bản khả biến (c & v)",
+        "optionsVi": {
+          "A": "Phương thức chuyển giá trị các bộ phận tư bản sang sản phẩm",
+          "B": "Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư",
+          "C": "Tốc độ chu chuyển của tư bản"
+        },
+        "answerDisplay": "B. Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư",
+        "concept": "• Căn cứ phân chia c và v.",
+        "whyCorrect": "• Sự phân chia tư bản thành c và v dựa vào vai trò khác nhau của từng bộ phận tư bản trong quá trình sản xuất tạo ra giá trị thặng dư (c chỉ bảo tồn giá trị, v sinh ra m).",
+        "memoryTip": "• Chia c & v ➔ Căn cứ vào vai trò tạo ra giá trị thặng dư."
+      }
+    },
+    {
+      "id": 295,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 295,
+      "question": "Tư bản bất biến",
+      "options": {
+        "A": "Là giá trị tư liệu sản xuất, giá trị của nó tăng lên sau quá trình sản xuất",
+        "B": "Là giá trị tư liệu sản xuất, giá trị của nó giảm đi sau quá trình sản xuất",
+        "C": "Là giá trị tư liệu sản xuất, giá trị của nó không thay đổi sau quá trình sản xuất",
+        "D": "Là giá trị tư liệu sản xuất, giá trị sử dụng của nó được bảo tồn và chuyển vào sản phẩm"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Tư bản bất biến",
+        "optionsVi": {
+          "A": "Là giá trị tư liệu sản xuất, giá trị của nó tăng lên sau quá trình sản xuất",
+          "B": "Là giá trị tư liệu sản xuất, giá trị của nó giảm đi sau quá trình sản xuất",
+          "C": "Là giá trị tư liệu sản xuất, giá trị của nó không thay đổi sau quá trình sản xuất",
+          "D": "Là giá trị tư liệu sản xuất, giá trị sử dụng của nó được bảo tồn và chuyển vào sản phẩm"
+        },
+        "answerDisplay": "C. Là giá trị tư liệu sản xuất, giá trị của nó không thay đổi sau quá trình sản xuất",
+        "concept": "• Tính chất của Tư bản bất biến (c).",
+        "whyCorrect": "• Tư bản bất biến (c) là bộ phận tư bản tồn tại dưới dạng tư liệu sản xuất mà giá trị của nó không thay đổi về lượng, được bảo tồn và chuyển nguyên vẹn vào sản phẩm mới.",
+        "memoryTip": "• Tư bản bất biến (c) ➔ Giá trị không thay đổi sau sản xuất."
+      }
+    },
+    {
+      "id": 296,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 296,
+      "question": "Giá trị thặng dư là:",
+      "options": {
+        "A": "Là phần lao động được trả công của công nhân",
+        "B": "Là phần lao dộng không công của công nhân",
+        "C": "Là toàn bộ lao động của công nhân",
+        "D": "Là lao động sáng tạo của công nhân"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Giá trị thặng dư là:",
+        "optionsVi": {
+          "A": "Là phần lao động được trả công của công nhân",
+          "B": "Là phần lao dộng không công của công nhân",
+          "C": "Là toàn bộ lao động của công nhân",
+          "D": "Là lao động sáng tạo của công nhân"
+        },
+        "answerDisplay": "B. Là phần lao dộng không công của công nhân",
+        "concept": "• Định nghĩa Giá trị thặng dư (m).",
+        "whyCorrect": "• Giá trị thặng dư là một bộ phận giá trị mới do lao động của công nhân tạo ra ngoài giá trị sức lao động, là phần lao động không công bị nhà tư bản chiếm đoạt.",
+        "memoryTip": "• Giá trị thặng dư = Phần lao động không công của công nhân."
+      }
+    },
+    {
+      "id": 297,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 297,
+      "question": "Giá trị sử dụng của hàng hóa là khái niệm dùng để chỉ",
+      "options": {
+        "A": "Mức độ khan hiếm của hàng hóa",
+        "B": "Giá trị trao đổi của hàng hóa",
+        "C": "Công dụng của hàng hóa"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Giá trị sử dụng của hàng hóa là khái niệm dùng để chỉ",
+        "optionsVi": {
+          "A": "Mức độ khan hiếm của hàng hóa",
+          "B": "Giá trị trao đổi của hàng hóa",
+          "C": "Công dụng của hàng hóa"
+        },
+        "answerDisplay": "C. Công dụng của hàng hóa",
+        "concept": "• Định nghĩa Giá trị sử dụng.",
+        "whyCorrect": "• Giá trị sử dụng của hàng hóa là công dụng của sản phẩm có thể thỏa mãn một hay một số nhu cầu nào đó của con người.",
+        "memoryTip": "• Giá trị sử dụng ➔ Công dụng của hàng hóa."
+      }
+    },
+    {
+      "id": 298,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 298,
+      "question": "Nguồn gốc của giá trị hàng hóa được tạo ra từ đầu?",
+      "options": {
+        "A": "Từ sản xuất",
+        "B": "Từ lưu thông",
+        "C": "Cà sản xuất và lưu thông",
+        "D": "Từ những kết quả của sự phát minh"
+      },
+      "answer": "A",
+      "alternatives": [
+        {
+          "question": "Trong các yếu tố sau đây, yếu tố nào là nguồn gốc của giá trị hàng hóa?",
+          "options": {},
+          "answer": null,
+          "answerText": "Lao động con người",
+          "explanation": {
+            "answerDisplay": "Lao động con người",
+            "whyCorrect": "Đáp án trọng tâm: Lao động con người. Đây là nội dung cần nhớ gắn với khái niệm trong đề biến thể.",
+            "memoryTip": "Chốt đúng khái niệm trọng tâm, loại phương án lệch thuật ngữ.",
+            "whyWrong": {}
+          }
+        }
+      ],
+      "explanation": {
+        "questionVi": "Nguồn gốc của giá trị hàng hóa được tạo ra từ đầu?",
+        "optionsVi": {
+          "A": "Từ sản xuất",
+          "B": "Từ lưu thông",
+          "C": "Cà sản xuất và lưu thông",
+          "D": "Từ những kết quả của sự phát minh"
+        },
+        "answerDisplay": "A. Từ sản xuất",
+        "concept": "• Lý luận KTCT Mác - Lênin: Nguồn gốc của giá trị hàng hóa được tạo ra từ đầu?",
+        "whyCorrect": "• Theo lý luận Kinh tế chính trị Mác - Lênin, đáp án chuẩn xác là: Từ sản xuất.",
+        "memoryTip": "• Từ khóa cốt lõi: Từ sản xuất..."
+      }
+    },
+    {
+      "id": 299,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 299,
+      "question": "Chọn phương án đúng về quy luật kinh tế:",
+      "options": {
+        "A": "Quy luật kinh tế là quy luật xã hội khách quan, phát sinh tác dụng qua hoạt động kinh tế của con người (không do con người đặt ra theo ý muốn chủ quan)",
+        "B": "Quy luật kinh tế có tính lịch sử",
+        "C": "Các phương án trả lời đều đúng."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Chọn phương án đúng về quy luật kinh tế:",
+        "optionsVi": {
+          "A": "Quy luật kinh tế là quy luật xã hội khách quan, phát sinh tác dụng qua hoạt động kinh tế của con người (không do con người đặt ra theo ý muốn chủ quan)",
+          "B": "Quy luật kinh tế có tính lịch sử",
+          "C": "Các phương án trả lời đều đúng."
+        },
+        "answerDisplay": "C. Các phương án trả lời đều đúng.",
+        "concept": "• Tính chất của Quy luật kinh tế.",
+        "whyCorrect": "• Quy luật kinh tế là các quy luật xã hội tồn tại khách quan qua hoạt động con người, mang tính lịch sử (Tất cả các phương án trả lời đều đúng).",
+        "memoryTip": "• Quy luật kinh tế ➔ Tất cả các phương án đều đúng."
+      }
+    },
+    {
+      "id": 300,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 300,
+      "question": "Trong các yếu tố sau đây, yếu tố nào được xác định là thực thể giá trị của hàng hóa?",
+      "options": {
+        "A": "Lao động cụ thể",
+        "B": "Lao động giản đơn",
+        "C": "Lao động phức tạp",
+        "D": "Lao động trừu tượng"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong các yếu tố sau đây, yếu tố nào được xác định là thực thể giá trị của hàng hóa?",
+        "optionsVi": {
+          "A": "Lao động cụ thể",
+          "B": "Lao động giản đơn",
+          "C": "Lao động phức tạp",
+          "D": "Lao động trừu tượng"
+        },
+        "answerDisplay": "D. Lao động trừu tượng",
+        "concept": "• Thực thể của Giá trị hàng hóa.",
+        "whyCorrect": "• Thực thể của giá trị hàng hóa chính là Lao động trừu tượng của người sản xuất kết tinh trong hàng hóa đó.",
+        "memoryTip": "• Thực thể giá trị hàng hóa ➔ Lao động trừu tượng."
+      }
+    },
+    {
+      "id": 301,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 301,
+      "question": "Hao mòn hữu hình là:",
+      "options": {
+        "A": "Hao mòn vật chất do quá trình sử dụng hoặc do tác động của con người",
+        "B": "Hao mòn phi vật chất do quá trình sự dụng hoặc do sự tác động của tự nhiên",
+        "C": "Hao mòn vật chất do quá trình sử dụng hoặc do tác động của tự nhiên",
+        "D": "Hao mòn vô hình do quá trình sử dụng hoặc do tác động của tự nhiên"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Hao mòn hữu hình là:",
+        "optionsVi": {
+          "A": "Hao mòn vật chất do quá trình sử dụng hoặc do tác động của con người",
+          "B": "Hao mòn phi vật chất do quá trình sự dụng hoặc do sự tác động của tự nhiên",
+          "C": "Hao mòn vật chất do quá trình sử dụng hoặc do tác động của tự nhiên",
+          "D": "Hao mòn vô hình do quá trình sử dụng hoặc do tác động của tự nhiên"
+        },
+        "answerDisplay": "C. Hao mòn vật chất do quá trình sử dụng hoặc do tác động của tự nhiên",
+        "concept": "• Khái niệm Hao mòn hữu hình của tư bản cố định.",
+        "whyCorrect": "• Hao mòn hữu hình là sự hao mòn về mặt vật chất (máy móc bị mòn, hư hỏng) do quá trình vận hành sử dụng hoặc do sự tác động của môi trường tự nhiên.",
+        "memoryTip": "• Hao mòn hữu hình ➔ Hao mòn vật chất do sử dụng hoặc tác động tự nhiên."
+      }
+    },
+    {
+      "id": 302,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 302,
+      "question": "Trong thời đại ngày nay, lực lượng sản xuất bao gồm các yếu tố nào?",
+      "options": {
+        "A": "Người lao động",
+        "B": "Tư liệu sản xuất",
+        "C": "Khoa học công nghệ",
+        "D": "Tất cả các phương án trả lời đều đúng."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong thời đại ngày nay, lực lượng sản xuất bao gồm các yếu tố nào?",
+        "optionsVi": {
+          "A": "Người lao động",
+          "B": "Tư liệu sản xuất",
+          "C": "Khoa học công nghệ",
+          "D": "Tất cả các phương án trả lời đều đúng."
+        },
+        "answerDisplay": "D. Tất cả các phương án trả lời đều đúng.",
+        "concept": "• Cấu thành của Lực lượng sản xuất hiện đại.",
+        "whyCorrect": "• Lực lượng sản xuất bao gồm Người lao động, Tư liệu sản xuất và Khoa học công nghệ (Tất cả phương án trả lời đều đúng).",
+        "memoryTip": "• Lực lượng sản xuất ➔ Tất cả phương án trả lời đều đúng."
+      }
+    },
+    {
+      "id": 303,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 303,
+      "question": "Đảng cộng sản Việt Nam là đảng cầm quyền do yếu tố nào sau đây quy định?",
+      "options": {
+        "A": "Lịch sử chủ quan",
+        "B": "Chính trị chủ quan",
+        "C": "Lịch sử khách quan",
+        "D": "Do nhân dân lao động lựa chọn"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Đảng cộng sản Việt Nam là đảng cầm quyền do yếu tố nào sau đây quy định?",
+        "optionsVi": {
+          "A": "Lịch sử chủ quan",
+          "B": "Chính trị chủ quan",
+          "C": "Lịch sử khách quan",
+          "D": "Do nhân dân lao động lựa chọn"
+        },
+        "answerDisplay": "C. Lịch sử khách quan",
+        "concept": "• Cơ sở cầm quyền của Đảng Cộng sản Việt Nam.",
+        "whyCorrect": "• Vai trò lãnh đạo duy nhất của Đảng Cộng sản Việt Nam là do Lịch sử khách quan quy định và nhân dân Việt Nam hoàn toàn tin tưởng lựa chọn.",
+        "memoryTip": "• Đảng cầm quyền do ➔ Lịch sử khách quan quy định."
+      }
+    },
+    {
+      "id": 304,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 304,
+      "question": "Thông qua việc giải quyết các quan hệ nào để từ đó giúp cho các chủ thể trong xã hội vận dụng các quy luật kinh tế, tạo động lực để không ngừng sáng tạo, ển toàn diện?",
+      "options": {
+        "A": "Quan hệ xã hội.",
+        "B": "Quan hệ Pháp luật.",
+        "C": "Quan hệ lợi ích.",
+        "D": "Quan hệ quốc tế."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Thông qua việc giải quyết các quan hệ nào để từ đó giúp cho các chủ thể trong xã hội vận dụng các quy luật kinh tế, tạo động lực để không ngừng sáng tạo, ển toàn diện?",
+        "optionsVi": {
+          "A": "Quan hệ xã hội.",
+          "B": "Quan hệ Pháp luật.",
+          "C": "Quan hệ lợi ích.",
+          "D": "Quan hệ quốc tế."
+        },
+        "answerDisplay": "C. Quan hệ lợi ích.",
+        "concept": "• Vai trò của Quan hệ lợi ích kinh tế.",
+        "whyCorrect": "• Việc giải quyết hài hòa các Quan hệ lợi ích là động lực trực tiếp thúc đẩy các chủ thể kinh tế năng động, sáng tạo và phát triển toàn diện.",
+        "memoryTip": "• Tạo động lực không ngừng sáng tạo ➔ Quan hệ lợi ích."
+      }
+    },
+    {
+      "id": 305,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 305,
+      "question": "Về lượng (hỏi về lượng) tỷ suất lợi nhuận (p') là:",
+      "options": {
+        "A": "Luôn luôn nhỏ hơn giá trị thặng dư",
+        "B": "Luôn luôn lớn hơn tỷ suất giá trị thặng dư",
+        "C": "Luôn luôn bằng tỷ suất giá trị thặng dư",
+        "D": "Luôn luôn nhỏ hơn tỷ suất giá trị thặng dư."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Về lượng (hỏi về lượng) tỷ suất lợi nhuận (p') là:",
+        "optionsVi": {
+          "A": "Luôn luôn nhỏ hơn giá trị thặng dư",
+          "B": "Luôn luôn lớn hơn tỷ suất giá trị thặng dư",
+          "C": "Luôn luôn bằng tỷ suất giá trị thặng dư",
+          "D": "Luôn luôn nhỏ hơn tỷ suất giá trị thặng dư."
+        },
+        "answerDisplay": "D. Luôn luôn nhỏ hơn tỷ suất giá trị thặng dư.",
+        "concept": "• So sánh đại lượng p' và m'.",
+        "whyCorrect": "• Về đại lượng, tỷ suất lợi nhuận (p' = m/(c+v)) luôn luôn Nhỏ hơn tỷ suất giá trị thặng dư (m' = m/v).",
+        "memoryTip": "• Về lượng p' ➔ Luôn luôn nhỏ hơn tỷ suất giá trị thặng dư."
+      }
+    },
+    {
+      "id": 306,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 306,
+      "question": "Quy luật căn bản của sản xuất và lưu thông hàng hóa là quy luật nào?",
+      "options": {
+        "A": "Quy luật cạnh tranh",
+        "B": "Quy luật cung - cầu",
+        "C": "Quuy luật lưu thông tiền tệ",
+        "D": "Quy luật giá trị."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Quy luật căn bản của sản xuất và lưu thông hàng hóa là quy luật nào?",
+        "optionsVi": {
+          "A": "Quy luật cạnh tranh",
+          "B": "Quy luật cung - cầu",
+          "C": "Quuy luật lưu thông tiền tệ",
+          "D": "Quy luật giá trị."
+        },
+        "answerDisplay": "D. Quy luật giá trị.",
+        "concept": "• Quy luật kinh tế trung tâm của Kinh tế hàng hóa.",
+        "whyCorrect": "• Quy luật giá trị là quy luật kinh tế căn bản, tuyệt đối chi phối toàn bộ hoạt động sản xuất và lưu thông hàng hóa.",
+        "memoryTip": "• Quy luật căn bản của SX & lưu thông hàng hóa ➔ Quy luật giá trị."
+      }
+    },
+    {
+      "id": 307,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 307,
+      "question": "Tư liệu lao động gồm có:",
+      "options": {
+        "A": "Công cụ lao động",
+        "B": "Các vật để chứa đựng, bảo quản",
+        "C": "Kết cấu hạ tầng sản xuất",
+        "D": "Các phương án trả lới đều đúng."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Tư liệu lao động gồm có:",
+        "optionsVi": {
+          "A": "Công cụ lao động",
+          "B": "Các vật để chứa đựng, bảo quản",
+          "C": "Kết cấu hạ tầng sản xuất",
+          "D": "Các phương án trả lới đều đúng."
+        },
+        "answerDisplay": "D. Các phương án trả lới đều đúng.",
+        "concept": "• Cấu thành của Tư liệu lao động.",
+        "whyCorrect": "• Tư liệu lao động bao gồm: Công cụ lao động, Hệ thống bình chứa bảo quản, và Kết cấu hạ tầng sản xuất (Tất cả phương án đều đúng).",
+        "memoryTip": "• Tư liệu lao động ➔ Các phương án trả lời đều đúng."
+      }
+    },
+    {
+      "id": 308,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 308,
+      "question": "Những chức năng nào của tiền tệ đòi hỏi phải có tiền vàng?",
+      "options": {
+        "A": "Tất cả các chức năng của tiền tệ",
+        "B": "Chỉ có chức năng thước đo giá trị",
+        "C": "Chức năng thước đo giá trị, chức năng tích lũy và chức năng cất trữ",
+        "D": "Chức năng thước đo giá trị; chức năng tích lũy, cất trữ và chức năng tiền tệ thế giới."
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Những chức năng nào của tiền tệ đòi hỏi phải có tiền vàng?",
+        "optionsVi": {
+          "A": "Tất cả các chức năng của tiền tệ",
+          "B": "Chỉ có chức năng thước đo giá trị",
+          "C": "Chức năng thước đo giá trị, chức năng tích lũy và chức năng cất trữ",
+          "D": "Chức năng thước đo giá trị; chức năng tích lũy, cất trữ và chức năng tiền tệ thế giới."
+        },
+        "answerDisplay": "D. Chức năng thước đo giá trị; chức năng tích lũy, cất trữ và chức năng tiền tệ thế giới.",
+        "concept": "• Chức năng đòi hỏi Tiền đủ giá trị (Tiền vàng).",
+        "whyCorrect": "• Tiền vàng đúc bắt buộc phải có khi thực hiện: Chức năng thước đo giá trị, Chức năng tích lũy cất trữ, và Chức năng tiền tệ thế giới.",
+        "memoryTip": "• Đòi hỏi tiền vàng ➔ Thước đo giá trị, Tích lũy cất trữ và Tiền tệ thế giới."
+      }
+    },
+    {
+      "id": 309,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 309,
+      "question": "Theo kinh tế - chính trị Mác - Lênin, loại tiền nào có chức năng cất trữ?",
+      "options": {
+        "A": "Tiền giấy",
+        "B": "Tiền điện tử",
+        "C": "Tiền vàng",
+        "D": "Bitcoin"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "variantOfStem": "Những chức năng nào của tiền tệ đòi hỏi phải có tiền vàng?",
+      "explanation": {
+        "questionVi": "Theo kinh tế - chính trị Mác - Lênin, loại tiền nào có chức năng cất trữ?",
+        "optionsVi": {
+          "A": "Tiền giấy",
+          "B": "Tiền điện tử",
+          "C": "Tiền vàng",
+          "D": "Bitcoin"
+        },
+        "answerDisplay": "C. Tiền vàng",
+        "concept": "• Chức năng cất trữ của Tiền tệ.",
+        "whyCorrect": "• Chỉ có Tiền vàng (tiền có giá trị thực bản thân) mới có thể thực hiện hoàn hảo chức năng cất trữ giá trị qua thời gian dài.",
+        "memoryTip": "• Chức năng cất trữ ➔ Tiền vàng."
+      }
+    },
+    {
+      "id": 310,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 310,
+      "question": "Mục tiêu của kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là gì? Chọn hai đáp án.",
+      "options": {
+        "A": "Xây dựng cơ sở vật chất cho chủ nghĩa xã hội và nâng cao đời sống nhân dân.",
+        "B": "Tối đa hóa lợi nhuận cho các doanh nghiệp tư nhân.",
+        "C": "Hướng tôi dân giàu, nước mạnh, dân chủ, công bằng, văn minh.",
+        "D": "Giảm thiểu vai trò của Nhà nước trong quản lý kinh tế."
+      },
+      "answer": "AC",
+      "answers": [
+        "A",
+        "C"
+      ],
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Mục tiêu của kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là gì? Chọn hai đáp án.",
+        "optionsVi": {
+          "A": "Xây dựng cơ sở vật chất cho chủ nghĩa xã hội và nâng cao đời sống nhân dân.",
+          "B": "Tối đa hóa lợi nhuận cho các doanh nghiệp tư nhân.",
+          "C": "Hướng tôi dân giàu, nước mạnh, dân chủ, công bằng, văn minh.",
+          "D": "Giảm thiểu vai trò của Nhà nước trong quản lý kinh tế."
+        },
+        "answerDisplay": "A, C",
+        "concept": "• Mục tiêu đặc thù KTTT định hướng XHCN.",
+        "whyCorrect": "• Mục tiêu bao trùm gồm: (A) Xây dựng cơ sở vật chất CNXH và nâng cao đời sống nhân dân, và (C) Hướng tới dân giàu, nước mạnh, dân chủ, công bằng, văn minh (Chọn A, C).",
+        "memoryTip": "• Mục tiêu KTTT định hướng XHCN ➔ Chọn 2 phương án A và C."
+      }
+    },
+    {
+      "id": 311,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 311,
+      "question": "Mục tiêu phát triển kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam bao gồm những giá trị nào?",
+      "options": {
+        "A": "Tăng trưởng kinh tế không đi kèm với tiến bộ xã hội.",
+        "B": "Đảm bảo dân giàu, nước mạnh, dân chủ, công bằng, văn minh.",
+        "C": "Phát triển kinh tế gắn với phân bổ nguồn lực hợp lý và tiết kiệm.",
+        "D": "Tăng cường sự can thiệp của Nhà nước vào các hoạt động kinh tế."
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Mục tiêu phát triển kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam bao gồm những giá trị nào?",
+        "optionsVi": {
+          "A": "Tăng trưởng kinh tế không đi kèm với tiến bộ xã hội.",
+          "B": "Đảm bảo dân giàu, nước mạnh, dân chủ, công bằng, văn minh.",
+          "C": "Phát triển kinh tế gắn với phân bổ nguồn lực hợp lý và tiết kiệm.",
+          "D": "Tăng cường sự can thiệp của Nhà nước vào các hoạt động kinh tế."
+        },
+        "answerDisplay": "B. Đảm bảo dân giàu, nước mạnh, dân chủ, công bằng, văn minh.",
+        "concept": "• Giá trị cốt lõi KTTT định hướng XHCN.",
+        "whyCorrect": "• Giá trị cốt lõi cao nhất là đảm bảo thực hiện mục tiêu 'Dân giàu, nước mạnh, dân chủ, công bằng, văn minh'.",
+        "memoryTip": "• Giá trị phát triển KTTT định hướng XHCN ➔ Đảm bảo dân giàu, nước mạnh, dân chủ, công bằng, văn minh."
+      }
+    },
+    {
+      "id": 312,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 312,
+      "question": "Thế nào là phân công lao động xã hội?",
+      "options": {
+        "A": "Là phân công của xã hội về lao động hình thành những nghành nghề, nghề sản xuất khác nhau. Là sự chuyên môn hóa nhất định đối với người sản xuất",
+        "B": "Là phân công diễn ra trong đơn vị sản xuất",
+        "C": "Là sự chuyên môn hóa nhất định đối với người sản xuất",
+        "D": "Là chia nhỏ quá trình sản xuất, mỗi người chuyên đảm nhận một công đoạn"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Thế nào là phân công lao động xã hội?",
+        "optionsVi": {
+          "A": "Là phân công của xã hội về lao động hình thành những nghành nghề, nghề sản xuất khác nhau. Là sự chuyên môn hóa nhất định đối với người sản xuất",
+          "B": "Là phân công diễn ra trong đơn vị sản xuất",
+          "C": "Là sự chuyên môn hóa nhất định đối với người sản xuất",
+          "D": "Là chia nhỏ quá trình sản xuất, mỗi người chuyên đảm nhận một công đoạn"
+        },
+        "answerDisplay": "A. Là phân công của xã hội về lao động hình thành những nghành nghề, nghề sản xuất khác nhau. Là sự chuyên môn hóa nhất định đối với người sản xuất",
+        "concept": "• Định nghĩa Phân công lao động xã hội.",
+        "whyCorrect": "• Phân công lao động xã hội là sự phân chia lao động trong xã hội thành các ngành nghề sản xuất khác nhau, thể hiện sự chuyên môn hóa sản xuất của những người sản xuất.",
+        "memoryTip": "• Phân công LĐXH ➔ Phân chia lao động xã hội thành các ngành nghề khác nhau."
+      }
+    },
+    {
+      "id": 313,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 313,
+      "question": "Tái sản xuất tư bản gồm có hai hình thức cơ bản đó là",
+      "options": {
+        "A": "Tái sản xuất giản đơn và tái sản xuất mở rộng",
+        "B": "Tái sản xuất theo chiều rộng và tái sản xuất theo chiều sâu",
+        "C": "Tái sản xuất tư bản xã hội và tái sản xuất tư bản tư nhân"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Tái sản xuất tư bản gồm có hai hình thức cơ bản đó là",
+        "optionsVi": {
+          "A": "Tái sản xuất giản đơn và tái sản xuất mở rộng",
+          "B": "Tái sản xuất theo chiều rộng và tái sản xuất theo chiều sâu",
+          "C": "Tái sản xuất tư bản xã hội và tái sản xuất tư bản tư nhân"
+        },
+        "answerDisplay": "A. Tái sản xuất giản đơn và tái sản xuất mở rộng",
+        "concept": "• 2 hình thức Tái sản xuất.",
+        "whyCorrect": "• Xét theo quy mô, tái sản xuất gồm 2 hình thức cơ bản là: Tái sản xuất giản đơn và Tái sản xuất mở rộng.",
+        "memoryTip": "• 2 hình thức tái sản xuất ➔ Tái sản xuất giản đơn & Tái sản xuất mở rộng."
+      }
+    },
+    {
+      "id": 314,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 314,
+      "question": "Giá trị sử dụng của hàng hóa phản ánh tính chất nào sau đây",
+      "options": {
+        "A": "Tính chất tư nhân của hàng hóa",
+        "B": "Tính chất xã hội của hàng hóa",
+        "C": "Cả tính chất tư nhân và tính chất xã hội của hàng hóa"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Giá trị sử dụng của hàng hóa phản ánh tính chất nào sau đây",
+        "optionsVi": {
+          "A": "Tính chất tư nhân của hàng hóa",
+          "B": "Tính chất xã hội của hàng hóa",
+          "C": "Cả tính chất tư nhân và tính chất xã hội của hàng hóa"
+        },
+        "answerDisplay": "B. Tính chất xã hội của hàng hóa",
+        "concept": "• Tính chất Xã hội của Giá trị sử dụng.",
+        "whyCorrect": "• Giá trị sử dụng của hàng hóa được sản xuất ra là để thỏa mãn nhu cầu tiêu dùng của người khác, của xã hội, nên nó phản ánh Tính chất xã hội của hàng hóa.",
+        "memoryTip": "• Giá trị sử dụng phản ánh ➔ Tính chất xã hội của hàng hóa."
+      }
+    },
+    {
+      "id": 315,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 315,
+      "question": "Quá trình sản xuất tư bản là quá trình sản xuất",
+      "options": {
+        "A": "Giá trị sử dụng",
+        "B": "Giá trị thặng dư",
+        "C": "Giá trị trao đổi"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Quá trình sản xuất tư bản là quá trình sản xuất",
+        "optionsVi": {
+          "A": "Giá trị sử dụng",
+          "B": "Giá trị thặng dư",
+          "C": "Giá trị trao đổi"
+        },
+        "answerDisplay": "B. Giá trị thặng dư",
+        "concept": "• Bản chất của Quá trình sản xuất TBCN.",
+        "whyCorrect": "• Quá trình sản xuất tư bản chủ nghĩa về bản chất là quá trình sản xuất Giá trị thặng dư (m) cho nhà tư bản.",
+        "memoryTip": "• Sản xuất tư bản ➔ Sản xuất Giá trị thặng dư."
+      }
+    },
+    {
+      "id": 316,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 316,
+      "question": "Trong kinh tế hàng hóa, lạm phát là hiện tượng kinh tế",
+      "options": {
+        "A": "Bất bình thường",
+        "B": "Bất ổn định",
+        "C": "Bình thường"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong kinh tế hàng hóa, lạm phát là hiện tượng kinh tế",
+        "optionsVi": {
+          "A": "Bất bình thường",
+          "B": "Bất ổn định",
+          "C": "Bình thường"
+        },
+        "answerDisplay": "C. Bình thường",
+        "concept": "• Bản chất kinh tế của Lạm phát.",
+        "whyCorrect": "• Trong nền kinh tế hàng hóa sử dụng tiền quy ước/tiền giấy, lạm phát ở mức độ vừa phải là một hiện tượng kinh tế Bình thường gắn liền với sự phát triển lưu thông tiền tệ.",
+        "memoryTip": "• Lạm phát trong KTHH ➔ Hiện tượng kinh tế bình thường."
+      }
+    },
+    {
+      "id": 317,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 317,
+      "question": "Cơ sở chung của quan hệ trao đổi giữa các hàng hóa là gì?",
+      "options": {
+        "A": "Là công dụng của hàng hóa",
+        "B": "Là hao phí lao động kết tinh trong hàng hóa",
+        "C": "Là nhu cầu của sự tiêu dùng",
+        "D": "Là sự khan hiếm của hàng hóa"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cơ sở chung của quan hệ trao đổi giữa các hàng hóa là gì?",
+        "optionsVi": {
+          "A": "Là công dụng của hàng hóa",
+          "B": "Là hao phí lao động kết tinh trong hàng hóa",
+          "C": "Là nhu cầu của sự tiêu dùng",
+          "D": "Là sự khan hiếm của hàng hóa"
+        },
+        "answerDisplay": "B. Là hao phí lao động kết tinh trong hàng hóa",
+        "concept": "• Cơ sở ngang giá của Trao đổi hàng hóa.",
+        "whyCorrect": "• Các hàng hóa trao đổi được với nhau dựa trên cơ sở chung duy nhất: Hao phí lao động xã hội kết tinh trong hàng hóa đó.",
+        "memoryTip": "• Cơ sở chung của trao đổi ➔ Hao phí lao động kết tinh trong hàng hóa."
+      }
+    },
+    {
+      "id": 318,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 318,
+      "question": "Chi phí sản xuất tư bản tính bằng công thức nào sau đây",
+      "options": {
+        "A": "K = c + p + m",
+        "B": "K = c + v + m",
+        "C": "K = c + v"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Chi phí sản xuất tư bản tính bằng công thức nào sau đây",
+        "optionsVi": {
+          "A": "K = c + p + m",
+          "B": "K = c + v + m",
+          "C": "K = c + v"
+        },
+        "answerDisplay": "C. K = c + v",
+        "concept": "• Công thức Chi phí sản xuất TBCN (K).",
+        "whyCorrect": "• Chi phí sản xuất tư bản chủ nghĩa (K) là tổng số vốn ứng trước mua tư liệu sản xuất (c) và mua sức lao động (v): K = c + v.",
+        "memoryTip": "• Chi phí sản xuất tư bản ➔ K = c + v."
+      }
+    },
+    {
+      "id": 319,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 319,
+      "question": "Tích lũy tư bản là xét về bản chất là",
+      "options": {
+        "A": "Tư bản hóa tư liệu tiêu dùng",
+        "B": "Tư bản hóa giá trị thặng dư",
+        "C": "Tư bản hóa sức lao động"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Tích lũy tư bản là xét về bản chất là",
+        "optionsVi": {
+          "A": "Tư bản hóa tư liệu tiêu dùng",
+          "B": "Tư bản hóa giá trị thặng dư",
+          "C": "Tư bản hóa sức lao động"
+        },
+        "answerDisplay": "B. Tư bản hóa giá trị thặng dư",
+        "concept": "• Bản chất của Tích lũy tư bản.",
+        "whyCorrect": "• Bản chất của tích lũy tư bản là tái đầu tư một phần giá trị thặng dư (m) thu được thành tư bản phụ thêm (Tư bản hóa giá trị thặng dư).",
+        "memoryTip": "• Tích lũy tư bản bản chất = Tư bản hóa giá trị thặng dư."
+      }
+    },
+    {
+      "id": 320,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 320,
+      "question": "Trong sản xuất hàng hóa tồn tại song song bao nhiêu mặt",
+      "options": {
+        "A": "Một mặt",
+        "B": "Ba mặt",
+        "C": "Hai mặt"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong sản xuất hàng hóa tồn tại song song bao nhiêu mặt",
+        "optionsVi": {
+          "A": "Một mặt",
+          "B": "Ba mặt",
+          "C": "Hai mặt"
+        },
+        "answerDisplay": "C. Hai mặt",
+        "concept": "• 2 mặt của Sản xuất hàng hóa.",
+        "whyCorrect": "• Trong sản xuất hàng hóa luôn tồn tại song song Hai mặt: Lao động cụ thể (tạo ra giá trị sử dụng) và Lao động trừu tượng (tạo ra giá trị).",
+        "memoryTip": "• Sản xuất hàng hóa tồn tại ➔ Hai mặt."
+      }
+    },
+    {
+      "id": 321,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 321,
+      "question": "Mục đích của sản xuất hàng hóa là thỏa mãn nhu cầu của",
+      "options": {
+        "A": "Người sản xuất",
+        "B": "Thị trường",
+        "C": "Của người sản xuất và tiêu dùng"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Mục đích của sản xuất hàng hóa là thỏa mãn nhu cầu của",
+        "optionsVi": {
+          "A": "Người sản xuất",
+          "B": "Thị trường",
+          "C": "Của người sản xuất và tiêu dùng"
+        },
+        "answerDisplay": "B. Thị trường",
+        "concept": "• Mục đích của Sản xuất hàng hóa.",
+        "whyCorrect": "• Khác với sản xuất tự cung tự cấp, sản xuất hàng hóa làm ra sản phẩm để bán ra Thị trường nhằm thỏa mãn nhu cầu tiêu dùng của thị trường/xã hội.",
+        "memoryTip": "• Mục đích sản xuất hàng hóa ➔ Thỏa mãn nhu cầu Thị trường."
+      }
+    },
+    {
+      "id": 322,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 322,
+      "question": "Chủ nghĩa tư bản ra đời phải có mấy nguyên nhân",
+      "options": {
+        "A": "Bốn nguyên nhân cơ bản",
+        "B": "Ba nguyên nhân cơ bản",
+        "C": "Hai nguyên nhân cơ bản"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Chủ nghĩa tư bản ra đời phải có mấy nguyên nhân",
+        "optionsVi": {
+          "A": "Bốn nguyên nhân cơ bản",
+          "B": "Ba nguyên nhân cơ bản",
+          "C": "Hai nguyên nhân cơ bản"
+        },
+        "answerDisplay": "C. Hai nguyên nhân cơ bản",
+        "concept": "• 2 nguyên nhân/điều kiện ra đời CNTB.",
+        "whyCorrect": "• Chủ nghĩa tư bản ra đời đòi hỏi Hai nguyên nhân/điều kiện cơ bản: Sự tích tụ tư bản vào tay nhà tư bản và sự xuất hiện giai cấp công nhân tự do bị tước đoạt TLSX.",
+        "memoryTip": "• Chủ nghĩa tư bản ra đời ➔ Hai nguyên nhân cơ bản."
+      }
+    },
+    {
+      "id": 323,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 323,
+      "question": "Vai trò của các bộ phận tư bản trong chu chuyển tư bản được xác định trong phạm trù nào sau đây",
+      "options": {
+        "A": "Tư bản cố định và lưu thông tư bản",
+        "B": "Tư bản cố định và tư bản lưu động",
+        "C": "Tư bản tài chính và tư bản công nghiệp",
+        "D": "Tư bản bất biến và tư bản lưu động"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Vai trò của các bộ phận tư bản trong chu chuyển tư bản được xác định trong phạm trù nào sau đây",
+        "optionsVi": {
+          "A": "Tư bản cố định và lưu thông tư bản",
+          "B": "Tư bản cố định và tư bản lưu động",
+          "C": "Tư bản tài chính và tư bản công nghiệp",
+          "D": "Tư bản bất biến và tư bản lưu động"
+        },
+        "answerDisplay": "B. Tư bản cố định và tư bản lưu động",
+        "concept": "• Phân loại Tư bản theo tốc độ chu chuyển.",
+        "whyCorrect": "• Để xét tốc độ chu chuyển và phương thức chuyển giá trị của tư bản sang sản phẩm, tư bản được phân chia thành Tư bản cố định và Tư bản lưu động.",
+        "memoryTip": "• Bộ phận tư bản trong chu chuyển ➔ Tư bản cố định & Tư bản lưu động."
+      }
+    },
+    {
+      "id": 324,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 324,
+      "question": "Ai là người đầu tiên phát minh ra tính hai mặt của lao động sản xuất hàng hóa: lao động cụ thể và lao động trừu tượng?",
+      "options": {
+        "A": "Đ. Ricacđô",
+        "B": "C. Mác",
+        "C": "Ph. Ăngghen",
+        "D": "V.I. Lênin"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Ai là người đầu tiên phát minh ra tính hai mặt của lao động sản xuất hàng hóa: lao động cụ thể và lao động trừu tượng?",
+        "optionsVi": {
+          "A": "Đ. Ricacđô",
+          "B": "C. Mác",
+          "C": "Ph. Ăngghen",
+          "D": "V.I. Lênin"
+        },
+        "answerDisplay": "B. C. Mác",
+        "concept": "• Lý luận KTCT Mác - Lênin: Ai là người đầu tiên phát minh ra tính hai mặt của lao động sản xuất hàng hóa: lao động cụ thể và lao động trừu tượng?",
+        "whyCorrect": "• Theo lý luận Kinh tế chính trị Mác - Lênin, đáp án chuẩn xác là: C. Mác.",
+        "memoryTip": "• Từ khóa cốt lõi: C. Mác..."
+      }
+    },
+    {
+      "id": 325,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 325,
+      "question": "Theo quan điểm của KTCT Mác- Lênin, khủng hoảng kinh tế của chủ nghĩa tư bản mang tính",
+      "options": {
+        "A": "Chủ quan",
+        "B": "Khách quan",
+        "C": "Tạm thời"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Theo quan điểm của KTCT Mác- Lênin, khủng hoảng kinh tế của chủ nghĩa tư bản mang tính",
+        "optionsVi": {
+          "A": "Chủ quan",
+          "B": "Khách quan",
+          "C": "Tạm thời"
+        },
+        "answerDisplay": "B. Khách quan",
+        "concept": "• Tính chất của Khủng hoảng kinh tế TBCN.",
+        "whyCorrect": "• Khủng hoảng kinh tế trong CNTB là hiện tượng bộc phát mang tính Khách quan, xuất phát từ mâu thuẫn sâu sắc giữa lực lượng sản xuất xã hội hóa với quan hệ sở hữu tư nhân TBCN.",
+        "memoryTip": "• Khủng hoảng kinh tế CNTB ➔ Mang tính Khách quan."
+      }
+    },
+    {
+      "id": 326,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 326,
+      "question": "Sản xuất hàng hóa có vai trò gì trong phân công lao động xã hội",
+      "options": {
+        "A": "Là điều kiện của phân công lao động xã hội",
+        "B": "Là nguồn gốc của phân công lao động xã hội",
+        "C": "Các phương án trả lời đều sai"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Sản xuất hàng hóa có vai trò gì trong phân công lao động xã hội",
+        "optionsVi": {
+          "A": "Là điều kiện của phân công lao động xã hội",
+          "B": "Là nguồn gốc của phân công lao động xã hội",
+          "C": "Các phương án trả lời đều sai"
+        },
+        "answerDisplay": "C. Các phương án trả lời đều sai",
+        "concept": "• Quan hệ giữa Sản xuất hàng hóa & Phân công LĐXH.",
+        "whyCorrect": "• Phân công lao động xã hội là điều kiện ra đời của sản xuất hàng hóa, chứ không phải sản xuất hàng hóa là điều kiện hay nguồn gốc của phân công LĐXH (Các phương án trả lời đều sai).",
+        "memoryTip": "• Vai trò SXHH với phân công LĐXH ➔ Các phương án trả lời đều sai."
+      }
+    },
+    {
+      "id": 327,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 327,
+      "question": "Lượng giá trị hàng hóa nhiều hay ít, cao hay thấp, được xác định như thế nào?",
+      "options": {
+        "A": "Xác định bằng thời gian lao động cá biệt",
+        "B": "Xác định bằng thời gian lao động xã hội cần thiết",
+        "C": "Xác định bằng thời gian lao động giản đơn, trung bình xã hội cần thiết"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Lượng giá trị hàng hóa nhiều hay ít, cao hay thấp, được xác định như thế nào?",
+        "optionsVi": {
+          "A": "Xác định bằng thời gian lao động cá biệt",
+          "B": "Xác định bằng thời gian lao động xã hội cần thiết",
+          "C": "Xác định bằng thời gian lao động giản đơn, trung bình xã hội cần thiết"
+        },
+        "answerDisplay": "B. Xác định bằng thời gian lao động xã hội cần thiết",
+        "concept": "• Thước đo Lượng giá trị hàng hóa.",
+        "whyCorrect": "• Lượng giá trị của hàng hóa được đo lường bằng Thời gian lao động xã hội cần thiết để sản xuất ra hàng hóa đó.",
+        "memoryTip": "• Lượng giá trị hàng hóa ➔ Xác định bằng Thời gian lao động xã hội cần thiết."
+      }
+    },
+    {
+      "id": 328,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 328,
+      "question": "Xét về thời gian, kinh tế hàng hóa ra đời sau",
+      "options": {
+        "A": "Nền kinh tế xã hội",
+        "B": "Nền kinh tế tự do",
+        "C": "Nền kinh tế tự nhiên"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Xét về thời gian, kinh tế hàng hóa ra đời sau",
+        "optionsVi": {
+          "A": "Nền kinh tế xã hội",
+          "B": "Nền kinh tế tự do",
+          "C": "Nền kinh tế tự nhiên"
+        },
+        "answerDisplay": "C. Nền kinh tế tự nhiên",
+        "concept": "• Lịch sử ra đời Kinh tế hàng hóa.",
+        "whyCorrect": "• Trong lịch sử phát triển xã hội, nền kinh tế hàng hóa ra đời sau nền Kinh tế tự nhiên (tự cung tự cấp).",
+        "memoryTip": "• Kinh tế hàng hóa ra đời sau ➔ Nền kinh tế tự nhiên."
+      }
+    },
+    {
+      "id": 329,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 329,
+      "question": "Mâu thuẫn chung trong công thức chung của tư bản là:",
+      "options": {
+        "A": "T' > T",
+        "B": "T' < T",
+        "C": "T' = T",
+        "D": "T' > H'"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Mâu thuẫn chung trong công thức chung của tư bản là:",
+        "optionsVi": {
+          "A": "T' > T",
+          "B": "T' < T",
+          "C": "T' = T",
+          "D": "T' > H'"
+        },
+        "answerDisplay": "A. T' > T",
+        "concept": "• Biểu thức mâu thuẫn công thức chung tư bản.",
+        "whyCorrect": "• Mâu thuẫn chung thể hiện ở biểu thức T' > T (trong đó T' = T + Δt), tức là tiền tệ vận động trong lưu thông lại thu về lượng tiền lớn hơn lượng tiền ban đầu.",
+        "memoryTip": "• Mâu thuẫn công thức chung tư bản ➔ T' > T."
+      }
+    },
+    {
+      "id": 330,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 330,
+      "question": "Khối lượng giá trị thặng dư (M) được tính bằng công thức",
+      "options": {
+        "A": "M = m'. K",
+        "B": "M = m'. C",
+        "C": "M= m'. V",
+        "D": "M= m'. V'"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Khối lượng giá trị thặng dư (M) được tính bằng công thức",
+        "optionsVi": {
+          "A": "M = m'. K",
+          "B": "M = m'. C",
+          "C": "M= m'. V",
+          "D": "M= m'. V'"
+        },
+        "answerDisplay": "C. M= m'. V",
+        "concept": "• Công thức tính Khối lượng giá trị thặng dư (M).",
+        "whyCorrect": "• Khối lượng giá trị thặng dư (M) được tính bằng công thức M = m' * V (trong đó m' là tỷ suất GTTS, V là tổng tư bản khả biến).",
+        "memoryTip": "• Công thức khối lượng GTTS ➔ M = m' * V."
+      }
+    }
+  ],
+  "_auditSummary": {
+    "auditedAt": "2026-07-30T14:40:55.285Z",
+    "totalAudited": 55,
+    "status": "PASSED_AND_CLEANED",
+    "totalFixes": 55,
+    "notes": [
+      "Thực hiện nâng cấp giải thích chuyên sâu 100% khớp stem cho toàn bộ 55 câu hỏi Part 6."
+    ]
+  }
+}

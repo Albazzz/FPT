@@ -1,0 +1,2560 @@
+[
+  {
+    "id": 7,
+    "stem": "Địa tô chênh lệch II thu được trên",
+    "options": {
+      "A": "Ruộng đất đã thâm canh",
+      "B": "Ruộng đất có độ màu mỡ trung bình",
+      "C": "Ruộng đất có độ màu mỡ tốt"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "stem": "Các tổ chức độc quyền sử dụng giá cả độc quyền để",
+    "options": {
+      "A": "Củng cố vai trò tổ chức độc quyền",
+      "B": "Chiếm đoạt giá trị thặng dư của người khác",
+      "C": "Gây thiệt hại cho các đối thủ cạnh tranh"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "stem": "Cơ chế kinh tế của độc quyền nhà nước trong chủ nghĩa tư bản gồm:",
+    "options": {
+      "A": "Cơ chế thị trường, độc quyền tư nhân và sự can thiệp của nhà nước",
+      "B": "Cơ chế thị trường, các nhà tài phiệt và sự điều tiết của nhà nước",
+      "C": "Cơ chế thị trường và độc quyền tư nhân"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "stem": "Vì sao trong chủ nghĩa tư bản độc quyền cạnh tranh không bị thủ tiêu?",
+    "options": {
+      "A": "Vì cạnh tranh là quy luật khách quan của kinh tế hàng hoá",
+      "B": "Vì tổ chức độc quyền cạnh tranh với các công ty ngoài độc quyền",
+      "C": "Vì các xí nghiệp trong nội bộ tổ chức độc quyền cạnh tranh với nhau"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "stem": "Mệnh đề nào sau đây là ý không đúng về lao động phức tạp?",
+    "options": {
+      "A": "Lao động phức tạp là lao động trí tuệ của người lao động có trình độ cao",
+      "B": "Lao động phức tạp là lao động trải qua đào tạo, huấn luyện",
+      "C": "Trong cùng một thời gian lao động, lao động phức tạp tạo ra nhiều giá trị hơn lao động giản đơn."
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "stem": "Bản chất khủng hoảng thửa trong nền kinh tế là.",
+    "options": {
+      "A": "Khủng hoảng sản xuất \"thừa\" so với sức mua có hạn của xã hội.",
+      "B": "Khủng hoảng sản xuất \"thừa\" so với nhu cầu xã hội.",
+      "C": "Khủng hoảng sản xuất \"thiếu hụt\" so với sức mua."
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "stem": "(1. Tích tụ và tập trung tư bản 2. Phân công lao động xã hội 3. Mâu thuẫn giai cấp 4. Xu hướng quốc tế hóa và cạnh tranh quốc tế) Tiền công thực tế là",
+    "options": {
+      "A": "Tiền công được biểu hiện bằng số lượng hàng hóa tiêu dùng và dịch vụ mà công nhân mua được bằng tiền công danh nghĩa của mình",
+      "B": "Tiền công được biểu hiện bằng số lượng hàng hóa tiêu dùng và dịch vụ mà công nhân mua được bằng tiền công thực tế của mình",
+      "C": "Tiền công được biểu hiện bằng số tư liệu sản xuất và tiêu dùng và dịch vụ mà công nhân mua được bằng tiền công thực tế của mình"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "stem": "Cách mạng công nghiệp lần thứ tư sẽ làm mất đi lợi thế của các nước đang phát triển về",
+    "options": {
+      "A": "Tài nguyên thiên nhiên, công nhân giá rẻ",
+      "B": "Khoáng sản, sức lao động",
+      "C": "Khoa học công nghệ, nhân công chất lượng cao"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "stem": "Trên giác độ kinh tế chính trị, lao động trừu tượng là",
+    "options": {
+      "A": "Là phạm trù của mọi nền kinh tế hàng hoá",
+      "B": "Là phạm trù riêng của kinh tế thị trường",
+      "C": "Là phạm trù chung của mọi nền kinh tế"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "stem": "\"Tư bản tài chính là kết quả của sự hợp nhất giữa tư bản ngân hàng của một số ít ngân hàng độc quyền lớn nhất, với tư bản của những liên minh độc quyền các nhà công nghiệp.\" Câu nói trên của ai?",
+    "options": {
+      "A": "C. Mác",
+      "B": "Ph. Ăngghen",
+      "C": "V. I Lênin",
+      "D": "Hồ Chí Minh"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "stem": "Khi đồng thời tăng năng suất lao động và cường độ lao động lên 2 lần thì ý nào dưới đây là đúng?",
+    "options": {
+      "A": "Giá trị 1 hàng hoá giảm 2 lần, tổng số giá trị hàng hoá tăng 2 lần",
+      "B": "Tổng số hàng hoả tăng lên 2 lần, giá trị 1 hàng hoá giảm 2 lần",
+      "C": "Tổng số hàng hoá tăng lên 4 lần, tổng số giá trị hàng hoá tăng lên 4 lần"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "stem": "Hãy chọn ý đúng khi nói về quan hệ giữa giá trị và giá cả?",
+    "options": {
+      "A": "Giá trị là cơ sở của giá cả, là yếu tố quyết định giá cả, giá cả là hình thức biểu hiện bằng tiền của giá trị",
+      "B": "Giá cả thị trường còn chịu ảnh hưởng của cung - cầu, giá trị của tiền",
+      "C": "Các phương án trả lời đều đúng"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "stem": "Thể chế được phân loại theo:",
+    "options": {
+      "A": "Cách tiếp cận cấu trúc hệ thống, phương thức phát huy vai trò của chủ thể đối với quá trình phát triển, theo cấu thành các lĩnh vực cốt lõi của xã hội và theo cấu trúc các tổ chức tham gia vào xã hội",
+      "B": "Cách tiếp cận cấu trúc hệ thống phương thức phát huy vai trò của doanh nghiệp với quá trình phát triển, theo cấu thành các lĩnh vực cốt lõi của xã hội và theo cấu trúc các tổ chức tham gia vào xã hội",
+      "C": "Cách tiếp cận sự phân chia bên trong hay bên ngoài, phương thức phát huy vai trò của doanh nghiệp với quá trình phát triển, theo cấu thành các lĩnh vực cốt lõi của xã hội và theo cấu trúc các tổ chức tham gia vào xã hội"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "stem": "Các luận điểm dưới đây, luận điểm nào sai?",
+    "options": {
+      "A": "Bóc lột sản phẩm thặng dư chỉ có ở chủ nghĩa tư bản",
+      "B": "Các phương thức sản xuất trước chủ nghĩa tư bản bóc lột sản phẩm thặng dư trực tiếp",
+      "C": "Sản xuất giá trị thặng dư tuyệt đối là hình thái chung nhất của sản xuất giá trị thặng dư"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "stem": "Tính hai mặt của lao động sản xuất hàng hóa là",
+    "options": {
+      "A": "Lao động tư nhân, lao động xã hội",
+      "B": "Lao động giản đơn, lao động phức tạp",
+      "C": "Lao động cụ thể, lao động trừu tượng"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "stem": "Giá cả ruộng đất phụ thuộc các nhân tố nào?",
+    "options": {
+      "A": "Mức địa tô của đất",
+      "B": "Độ màu mỡ của đất",
+      "C": "Vị trí của đất"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "stem": "Độc quyền nhà nước xuất hiện trong chủ nghĩa tư bản là sự liên minh giữa nhà nước tư bản với",
+    "options": {
+      "A": "Các tổ chức nhà nước",
+      "B": "Các tổ chức độc quyền",
+      "C": "Các tổ chức kinh tế tư nhân"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "stem": "Chọn ý đúng về quan hệ cung - cầu đối với giá trị, giá cả?",
+    "options": {
+      "A": "Có ảnh hưởng tới giá cả thị trường",
+      "B": "Quyết định giá trị và giá cả hàng hoá",
+      "C": "Chỉ quyết định đến giá cả và có ảnh hưởng đến giá trị"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "stem": "Địa tô tuyệt đối được hiểu là",
+    "options": {
+      "A": "Loại địa tô mà tất cả các nhà tư bản kinh doanh nông nghiệp đều phải nộp cho địa chủ, cho dù ruộng đất là tốt hay xấu",
+      "B": "Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần lợi nhuận binh quần mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ",
+      "C": "Lợi nhuận siêu ngạch dôi ra ngoài lợi nhuận bình quân"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "stem": "Kinh tế tri thức là",
+    "options": {
+      "A": "Nền kinh tế trong đó có sự sản sinh ra, phổ cập và sử dụng tri thức giữ vai trò quyết định nhất đối với sự phát triển kinh tế, tạo ra của cải, nâng cao chất lượng cuộc sống",
+      "B": "Nền kinh tế áp dụng khoa học kỹ thuật vào sản xuất",
+      "C": "Nền kinh tế phát triển giáo dục đào tạo và xem đây là nền tảng, động lực cho công nghiệp hoá, hiện đại hoá",
+      "D": "Nền kinh tế sử dụng tri thức trong sản xuất là phổ biến, vì thế cần đẩy mạnh đưa sinh viên đi du học ở các nước phát triển"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "stem": "Giá cả độc quyền được hiểu là.",
+    "options": {
+      "A": "Giá cả các tổ chức độc quyền áp đặt trong quá trình mua và bán",
+      "B": "Giá cả do các tổ chức nhà nước áp đặt quy định trong quá trình mua và bán",
+      "C": "Giá cả được các tổ chức doanh nghiệp chiếm thị phần lớn trên thị trường áp đặt và thông qua nhà nước đưa ra giá mua và bán"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "stem": "Ai là người đưa kinh tế chính trị trở thành môn khoa học có tính hệ thống với các phạm trù và khái niệm chuyên ngành?",
+    "options": {
+      "A": "Adam Smith",
+      "B": "David Ricardo",
+      "C": "Karl Marx",
+      "D": "Willian Stafford"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "TYPOS",
+        "detail": "Willian -> William"
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "stem": "Tiền công trong chủ nghĩa tư bản có mấy hình thức?",
+    "options": {
+      "A": "Hai hình thức",
+      "B": "Ba hình thức",
+      "C": "Bốn hình thức"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "stem": "Mức độ bóc lột của nhà tư bản được tính bằng",
+    "options": {
+      "A": "Tỷ suất lợi nhuận",
+      "B": "Tỷ suất giá trị thặng dư",
+      "C": "Tỷ suất lợi nhuận bình quân"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "stem": "Lượng giá trị của đơn vị hàng hoá thay đổi:",
+    "options": {
+      "A": "Tỷ lệ nghịch với năng suất lao động, không phụ thuộc vào cường độ lao động",
+      "B": "Tỷ lệ nghịch với cường độ lao động",
+      "C": "Tỷ lệ thuận với năng suất lao động"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "stem": "Trong chủ nghĩa tư bản ngày nay, các trùm tài chính thống trị nền kinh tế thông qua",
+    "options": {
+      "A": "Kết hợp \"chế độ tham dự\" với \"chế độ uỷ nhiệm\"",
+      "B": "Chế độ tham dự",
+      "C": "Chế độ uỷ nhiệm"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "stem": "(Đảng Cộng sản Việt Nam, Văn kiện Đại hội đại biểu toàn quốc lần thứ IX, NXB CTQG, H., 2001, tr 64 - 65) Độc quyền được hiểu là:",
+    "options": {
+      "A": "Liên minh giữa các doanh nghiệp lớn, có khả năng thâu tóm việc sản xuất và tiêu thụ một số loại hàng hóa, có khả năng định ra giá cả độc quyền, nhằm thu lợi nhuận độc quyền cao",
+      "B": "Liên minh giữa các tổ chức cá nhân và nhà nước, có khả năng thâu tóm việc sản xuất và tiêu thụ một số loại hàng hóa, có khả năng định ra giá cả độc quyền, nhằm thu lợi nhuận độc quyền cao",
+      "C": "Liên minh giữa các doanh nghiệp vừa và nhỏ, có khả năng thâu tóm việc sản xuất và tiêu thụ một số loại hàng hóa, có khả năng định ra giá cả độc quyền, nhằm thu lợi nhuận độc quyền cao"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "stem": "Tích lũy tư bản dẫn đến",
+    "options": {
+      "A": "Hình thành chủ nghĩa tư bản độc quyền",
+      "B": "Hình thành chủ nghĩa tư bản",
+      "C": "Hình thành độc quyền nhà nước giai đoạn tự do cạnh tranh"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "stem": "Chức năng khoa học",
+    "options": {
+      "A": "Chức năng phương pháp luận",
+      "B": "Chức năng tư tưởng",
+      "C": "Chức năng nhận thức",
+      "D": "Chức năng giáo dục"
+    },
+    "answer": "D",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "stem": "Vai trò của máy móc trong quá trình tạo ra giá trị thặng dư, chọn ý đúng.",
+    "options": {
+      "A": "Máy móc là tiền đề vật chất cho việc tạo ra giá trị thặng dư",
+      "B": "Máy móc và sức lao động đều tạo ra giá trị thặng dư",
+      "C": "Máy móc là nguồn gốc của giá trị thặng dư"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "stem": "Trong nền sản xuất hàng hóa, lạm phát là hiện tượng kinh tế tác động trực tiếp đến",
+    "options": {
+      "A": "Tích tụ và tập trung tư bản",
+      "B": "Tuần hoàn và chu chuyển tư bản",
+      "C": "Sản xuất và tiêu dùng"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "stem": "Cấu tạo hữu cơ của tư bản được kí hiệu là",
+    "options": {
+      "A": "c/v",
+      "B": "T/T",
+      "C": "m/v",
+      "D": "CH/ch"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "OPT_A_LOWERCASE",
+        "detail": "Option A starts with lowercase: \"c/v\""
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "stem": "Yếu tố quyết định đến giá cả hàng hoá là",
+    "options": {
+      "A": "Giá trị của hàng hoá",
+      "B": "Quan hệ cung cầu về hàng hoá",
+      "C": "Giá trị sử dụng của hàng hoá"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "stem": "Trên giác độ kinh tế chính trị, mục tiêu cuối cùng của xuất khẩu tư bản là:",
+    "options": {
+      "A": "Chiếm đoạt giá trị thặng dư và các nguồn lợi khác ở nước nhập khẩu tư bản",
+      "B": "Thực hiện giá trị và chiếm các nguồn lợi khác của nước nhập khẩu tư bản",
+      "C": "Giúp đỡ các nước nhập khẩu tư bản phát triển."
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 167,
+    "stem": "Tốc độ chu chuyển tư bản được tính bằng công thức:",
+    "options": {
+      "A": "n = CH/ch",
+      "B": "N = ch/ CH",
+      "C": "n=t/t100%",
+      "D": "N=t/t100%"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "OPT_A_LOWERCASE",
+        "detail": "Option A starts with lowercase: \"n = CH/ch\""
+      }
+    ]
+  },
+  {
+    "id": 171,
+    "stem": "Cạnh tranh trong chủ nghĩa tư bản dẫn đến",
+    "options": {
+      "A": "Tích lũy tư bản",
+      "B": "Tích tụ tư bản",
+      "C": "Độc quyền"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "stem": "Trong cơ chế của độc quyền nhà nước trong chủ nghĩa tư bản thì",
+    "options": {
+      "A": "Nhà nước phụ thuộc vào tổ chức độc quyền",
+      "B": "Nhà nước không phụ thuộc vào tổ chức độc quyền",
+      "C": "Tổ chức độc quyền phụ thuộc vào nhà nước."
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "stem": "Chủ nghĩa tư bản ra đời khi",
+    "options": {
+      "A": "Sản xuất hàng hoá đã phát triển cao",
+      "B": "Phân công lao động đã phát triển cao",
+      "C": "Tư liệu sản xuất tập trung vào một số ít người còn đa số người bị mất hết tư liệu sản xuất"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 176,
+    "stem": "Khi nào sức lao động trở thành hàng hoá một cách phổ biến?",
+    "options": {
+      "A": "Trong nền sản xuất hàng hoá tư bản chủ nghĩa",
+      "B": "Trong xã hội chiếm hữu nô lệ",
+      "C": "Trong nền sản xuất lớn hiện đại"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "stem": "Thể chế được hiểu là",
+    "options": {
+      "A": "Những quy tắc, pháp luật, bộ máy quản lí và cơ chế vận hành nhằm điều chỉnh các hoạt động của con người trong 1 chế độ xã hội",
+      "B": "Luật chơi\" chính thức và phi chính thức được đặt ra đối với các chủ thể tham gia hoạt động trong nền kinh tế của một quốc gia trong một giai đoạn lịch sử nhất định",
+      "C": "Được cấu thành bởi hệ thống các bộ phận khác nhau mà mỗi bộ phận cũng là một hệ thống phức tạp gồm nhiều yếu tố"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "stem": "Dựa vào căn cứ nào để chia tư bản ra thành tư bản cố định và tư bản lưu động?",
+    "options": {
+      "A": "Phương thức chuyển giá trị của các bộ phận tư bản sang sản phẩm",
+      "B": "Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư",
+      "C": "Sự thay đổi về lượng trong quá trình sản xuất"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 193,
+    "stem": "Xuất khẩu hàng hoá là gì?",
+    "options": {
+      "A": "Đặc điểm của giai đoạn chủ nghĩa tư bản tự do cạnh tranh",
+      "B": "Đặc điểm của giai đoạn chủ nghĩa tư bản độc quyền tự do cạnh tranh",
+      "C": "Đặc điểm của giai đoạn chủ nghĩa tư bản độc quyền nhà nước"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 195,
+    "stem": "Nguồn gốc của tích lũy tư bản là",
+    "options": {
+      "A": "Giá trị của hàng hóa",
+      "B": "Giá trị thặng dư",
+      "C": "Giá trị của hàng hóa sức lao động"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 198,
+    "stem": "Công thức chung của tư bản là:",
+    "options": {
+      "A": "H-T-H",
+      "B": "T-H-T'",
+      "C": "T-H-T"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 201,
+    "stem": "Nội dung cơ bản của cách mạng công nghiệp lần thứ nhất đó là",
+    "options": {
+      "A": "Chuyển từ lao động thủ công sang lao động máy móc",
+      "B": "Chuyển từ lao động thủ công sang sử dụng động cơ điện",
+      "C": "Chuyển từ lao động máy móc sang lao động sử dụng năng lượng điện và động cơ điện"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 205,
+    "stem": "Phương pháp sản xuất giá trị thặng dư tuyệt đối và phương pháp sản xuất giá trị thặng dư tương đối có điểm nào giống nhau?",
+    "options": {
+      "A": "Đều làm tăng tỷ suất giá trị thặng dư",
+      "B": "Đều làm cho công nhân tổn sức lao động nhiều hơn",
+      "C": "Đều làm giảm giá trị sức lao động của công nhân"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 207,
+    "stem": "Khối lượng giá trị thặng dư được tính bằng công thức nào?",
+    "options": {
+      "A": "M = m'x p'",
+      "B": "M=m' x V",
+      "C": "M=m'xt'"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "stem": "Sản xuất hàng hóa là",
+    "options": {
+      "A": "Kiểu tổ chức kinh tế mà sản phẩm làm ra được mang ra trao đổi, mua bán trên thị trường để thỏa mãn nhu cầu của xã hội",
+      "B": "Kiểu tổ chức kinh tế mà sản phẩm làm ra phải tuân thủ các quy luật của thị trường nhằm thỏa mãn nhu cầu của xã hội",
+      "C": "Kiểu tổ chức kinh tế do các quy luật sản xuất và lưu thông quyết định nhằm thỏa mãn nhu cầu của thị trường"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 210,
+    "stem": "Tích lũy tư bản là:",
+    "options": {
+      "A": "Tư bản hóa tư liệu tiêu dùng",
+      "B": "Tư bản hóa giá trị thặng dư",
+      "C": "Tư bản hóa sức lao động"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      },
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 212,
+    "stem": "Thị trường giải quyết ba vấn đề kinh tế nào?",
+    "options": {
+      "A": "Sản xuất cái gì? sản xuất như thế nào? sản xuất cho ai?",
+      "B": "Sản xuất ở đâu? sản xuất bao lâu? giá thành sản xuất như thế nào?",
+      "C": "Sản xuất với giá cả nào? sản xuất với hàng hóa gì? cung cầu ra sao?",
+      "D": "Sản xuất cái gì? sản xuất ở đâu? giá thành sản xuất như thế nào?"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      }
+    ]
+  },
+  {
+    "id": 214,
+    "stem": "Chỉ có sản phẩm của những lao động tư nhân độc lập và không phụ thuộc vào nhau mới đối diện với nhau như",
+    "options": {
+      "A": "Những hàng hóa",
+      "B": "Những sản vật trao đổi",
+      "C": "Những sản phẩm trao đổi"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 215,
+    "stem": "Căn cứ vào đâu để chia ra thành tái sản xuất giản đơn và tái sản xuất mở rộng?",
+    "options": {
+      "A": "Căn cứ vào phạm vi",
+      "B": "Căn cứ vào nội dung",
+      "C": "Căn cứ vào quy mô"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 217,
+    "stem": "Trong kinh tế hàng hóa, cạnh tranh có tác dụng.",
+    "options": {
+      "A": "Nó làm cho sản xuất thiếu tính nhân văn",
+      "B": "Nó buộc người sản xuất phải thường xuyên năng động, nhạy bén.",
+      "C": "Nó làm cho sản xuất mang tính nhân văn hơn"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 219,
+    "stem": "Tăng năng suất lao động và tăng cường độ lao động giống nhau ở:",
+    "options": {
+      "A": "Đều làm tăng số hàng hóa sản xuất ra trong một thời gian",
+      "B": "Đều làm tăng lượng lao động hao phí trong 1 đơn vị thời gian",
+      "C": "Đều làm giá trị đơn vị hàng hoá giảm"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "stem": "Chọn các ý không đúng về sản phẩm và hàng hoá.",
+    "options": {
+      "A": "Mọi sản phẩm đều là hàng hoá",
+      "B": "Mọi sản phẩm đều là kết quả của sản xuất",
+      "C": "Không phải mọi sản phẩm đều là hàng hoá"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 222,
+    "stem": "Chi phí thực tế của xã hội để sản xuất hàng hoá là",
+    "options": {
+      "A": "Chi phí lao động sống và lao động quá khứ",
+      "B": "Chi phí tư bản bất biến và tư bản khả biến",
+      "C": "Chi phí sức lao động của toàn xã hội"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 226,
+    "stem": "Giá trị cá biệt của hàng hoá do",
+    "options": {
+      "A": "Hao phí lao động cá biệt của người sản xuất quyết định",
+      "B": "Hao phí lao động cá biệt của người sản xuất nhiều hàng hoá quyết định",
+      "C": "Hao phí lao động của ngành quyết định"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 227,
+    "stem": "Lưu thông hàng hoá dựa trên nguyên tắc ngang giá. Điều này được hiểu như thế nào là đúng?",
+    "options": {
+      "A": "Giá cả của từng hàng hoá luôn luôn bằng giá trị của nó",
+      "B": "Giá trị luôn luôn bằng giá cả",
+      "C": "Giá cả có thể tách rời giá trị và xoay quanh giá trị của nó"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 232,
+    "stem": "Nhân tố nào là cơ bản thúc đẩy chủ nghĩa tư bản ra đời nhanh chóng?",
+    "options": {
+      "A": "Tích luỹ nguyên thuỷ",
+      "B": "Sự phát triển mạnh mẽ của phương tiện giao thông vận tải nhờ đó mở rộng giao lưu buôn bán quốc tế",
+      "C": "Sự tác động của quy luật giá trị"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 233,
+    "stem": "Độc quyền nhà nước trong chủ nghĩa tư bản hình thành dựa trên",
+    "options": {
+      "A": "Ba nguyên nhân",
+      "B": "Bốn nguyên nhân",
+      "C": "Hai nguyên nhân"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 246,
+    "stem": "Có hai hình thức trả tiền công của nhà tư bản đó là",
+    "options": {
+      "A": "Trả bằng tiền hay tư liệu sản xuất",
+      "B": "Trả bằng tiền hay sản phẩm",
+      "C": "Trả bằng tiền hay vàng"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 252,
+    "stem": "Mức độ giàu có của xã hội phụ thuộc chủ yếu vào:",
+    "options": {
+      "A": "Trình độ khoa học công nghệ",
+      "B": "Tài nguyên thiên nhiên",
+      "C": "Khối lượng sản phẩm thặng dư"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 253,
+    "stem": "Tư bản bất biến (c) và tư bản khả biến (v) thuộc phạm trù tư bản nào?",
+    "options": {
+      "A": "Tư bản tiền tệ.",
+      "B": "Tư bản sản xuất.",
+      "C": "Tư bản hàng hoá."
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 254,
+    "stem": "Tiền công tư bản có hai hình thức đó là",
+    "options": {
+      "A": "Tiền công cơ bản và tiền công phụ thêm",
+      "B": "Tiền công thực tế và tiền công danh nghĩa",
+      "C": "Tiền mặt và hàng hóa"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 260,
+    "stem": "Xét về giá trị của hàng hóa, hàng hóa càng khan hiếm thì",
+    "options": {
+      "A": "Giá trị của nó càng cao",
+      "B": "Giá cả của nó càng cao",
+      "C": "Cả giá trị và giá cả của hàng hóa càng cao"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 262,
+    "stem": "Sản xuất hàng hoá xuất hiện dựa trên:",
+    "options": {
+      "A": "Phân công lao động xã hội và chế độ tư hữu hoặc những hình thức sở hữu khác nhau về TLSX.",
+      "B": "Phân công lao động cá biệt và chế độ tư hữu về tư liệu sản xuất",
+      "C": "Phân công lao động chung và chế độ sở hữu khác nhau về TLSX"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 263,
+    "stem": "Sức lao động là:",
+    "options": {
+      "A": "Toàn bộ sức thể lực tồn tại trong mỗi con người",
+      "B": "Toàn bộ sức thể lực và trí lực tồn tại trong mỗi con người",
+      "C": "Toàn bộ sức trí lực tồn tại trong mỗi con người",
+      "D": "Toàn bộ sức thể lực và trí lực tồn tại không có khả năng đem ra sử dụng"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      }
+    ]
+  },
+  {
+    "id": 267,
+    "stem": "Hai hàng hoá trao đổi được với nhau vì:",
+    "options": {
+      "A": "có lượng thời gian hao phí lao động xã hội cần thiết để sản xuất ra chúng bằng nhau.",
+      "B": "Chúng cùng là sản phẩm của lao động.",
+      "C": "Các phương án trả lời đều đúng"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      },
+      {
+        "type": "OPT_A_LOWERCASE",
+        "detail": "Option A starts with lowercase: \"có lượng thời gian hao phí lao động xã hội cần thiết để sản xuất ra chúng bằng nhau.\""
+      }
+    ]
+  },
+  {
+    "id": 269,
+    "stem": "Trong những trường hợp nào sau đây của hao phí lao động cá biệt, trường hợp nào không đáp ứng yêu cầu của quy luật giá trị?",
+    "options": {
+      "A": "Hao phí lao động cá biệt < hao phí lao động xã hội cần thiết",
+      "B": "Hao phí lao động cá biệt = hao phí lao động xã hội cần thiết",
+      "C": "Hao phí lao động cá biệt > hao phí lao động xã hội cần thiêt"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 272,
+    "stem": "Giá trị xã hội của hàng hoá công nghiệp và nông nghiệp giống nhau ở chỗ dựa trên:",
+    "options": {
+      "A": "Hao phí lao động xã hội cần thiết",
+      "B": "Hao phí lao động xã hội trong điều kiện sản xuất trung bình",
+      "C": "Hao phí lao động xã hội trong điều kiện sản xuất khó khăn nhất"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 273,
+    "stem": "Trên giác độ KTCT, chi phí sản xuất tư bản được quan điểm là:",
+    "options": {
+      "A": "Chi phí tư bản (c) và (v).",
+      "B": "Tổng số tiền nhà tư bản ứng ra.",
+      "C": "Số tiền nhà tư bản mua máy móc, nguyên vật liệu."
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 274,
+    "stem": "Trong quan hệ với cường độ lao động, lượng giá trị của đơn vị hàng hoá",
+    "options": {
+      "A": "Không phụ thuộc vào cường độ lao động",
+      "B": "Tỷ lệ thuận với cường độ lao động",
+      "C": "Tỷ lệ nghịch với cường độ lao động"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 275,
+    "stem": "Quan hệ cung cầu thuộc khâu nào của quá trình tái sản xuất xã hội?",
+    "options": {
+      "A": "Sản xuất và tiêu dùng",
+      "B": "Phân phối và trao đổi",
+      "C": "Tiêu dùng"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 277,
+    "stem": "Chọn định nghĩa chính xác về tư bản:",
+    "options": {
+      "A": "Tư bản là giá trị mang lại giá trị thặng dư.",
+      "B": "Tư bản là tiền và TLSX của nhà tư bản để tạo ra giá trị thặng dư.",
+      "C": "Tư bản là giá trị đem lại giá trị thặng dư bằng cách bóc lột lao động làm thuê."
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 280,
+    "stem": "Thuật ngữ \"kinh tế- chính trị\" được sử dụng lần đầu tiên vào năm nào?",
+    "options": {
+      "A": "1615",
+      "B": "1616",
+      "C": "1617"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 281,
+    "stem": "Ai là người đầu tiên đưa ra khái niệm \"kinh tế- chính trị\"?",
+    "options": {
+      "A": "Francois Quesney",
+      "B": "Antoine Montchretiên",
+      "C": "William Petty"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      },
+      {
+        "type": "TYPOS",
+        "detail": "Quesney -> Quesnay"
+      }
+    ]
+  },
+  {
+    "id": 282,
+    "stem": "Để làm rõ vai trò của các bộ phận tư bản trong việc tạo ra giá trị thặng dư, tư bản được chia thành",
+    "options": {
+      "A": "Tư bản độc quyền và tư bản nhà nước",
+      "B": "Tư bản bất biến và tư bản khả biến",
+      "C": "Tư bản cố định và tư bản lưu động"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 284,
+    "stem": "Thế nào là lao động phức tạp?",
+    "options": {
+      "A": "Là lao động phải trải qua đào tạo, huấn luyện mới làm được",
+      "B": "Là lao động tạo ra các sản phẩm chất lượng cao, tinh vi",
+      "C": "Là lao động có nhiều thao tác phức tạp"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 285,
+    "stem": "Khi lạm phát phi mã xảy ra, hình thức sử dụng tiền nào có lợi nhất?",
+    "options": {
+      "A": "Mua hàng hoá hoặc vàng cất giữ",
+      "B": "Gửi ngân hàng",
+      "C": "Đầu tư vào sản xuất kinh doanh"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 286,
+    "stem": "Điều kiện để tiền biến thành tư bản là:",
+    "options": {
+      "A": "Phải tích lũy được một lượng tiền lớn; tiền không được đưa vào kinh doanh với mục đích thu giá trị thặng dư",
+      "B": "Phải tích lũy được một lượng tiền lớn; tiền phải được đưa vào kinh doanh tư bản với mục đích thu giá trị thặng dư",
+      "C": "Phải tích lũy được một lượng hàng hóa lớn; hàng hóa phải được đưa vào kinh doanh tư bản với mục"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 288,
+    "stem": "Cặp phạm trù nào là phát hiện riêng của C.Mác?",
+    "options": {
+      "A": "Lao động cụ thể và lao động trừu tượng",
+      "B": "Lao động giản đơn và lao động phức tạp",
+      "C": "Lao động tư nhân và lao động xã hội"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 290,
+    "stem": "Điều kiện để ra đời và tồn tại của sản xuất hàng hóa:",
+    "options": {
+      "A": "Phân công lao động xã hội",
+      "B": "Sự tách biệt về kinh tế giữa các chủ thể (sở hữu khác nhau về TLSX)",
+      "C": "Cả A và B"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 291,
+    "stem": "Lượng giá trị của hàng hóa là yếu tố",
+    "options": {
+      "A": "Cố định",
+      "B": "Luôn luôn thay đổi",
+      "C": "Tùy thuộc vào nền sản xuất hàng hóa"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 294,
+    "stem": "Dựa vào căn cứ nào để chia tư bản thành tư bản bất biến và tư bản khả biến (c & v)",
+    "options": {
+      "A": "Phương thức chuyển giá trị các bộ phận tư bản sang sản phẩm",
+      "B": "Vai trò các bộ phận tư bản trong quá trình sản xuất giá trị thặng dư",
+      "C": "Tốc độ chu chuyển của tư bản"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 295,
+    "stem": "Tư bản bất biến",
+    "options": {
+      "A": "Là giá trị tư liệu sản xuất, giá trị của nó tăng lên sau quá trình sản xuất",
+      "B": "Là giá trị tư liệu sản xuất, giá trị của nó giảm đi sau quá trình sản xuất",
+      "C": "Là giá trị tư liệu sản xuất, giá trị của nó không thay đổi sau quá trình sản xuất",
+      "D": "Là giá trị tư liệu sản xuất, giá trị sử dụng của nó được bảo tồn và chuyển vào sản phẩm"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      }
+    ]
+  },
+  {
+    "id": 297,
+    "stem": "Giá trị sử dụng của hàng hóa là khái niệm dùng để chỉ",
+    "options": {
+      "A": "Mức độ khan hiếm của hàng hóa",
+      "B": "Giá trị trao đổi của hàng hóa",
+      "C": "Công dụng của hàng hóa"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 299,
+    "stem": "Chọn phương án đúng về quy luật kinh tế:",
+    "options": {
+      "A": "Quy luật kinh tế là quy luật xã hội khách quan, phát sinh tác dụng qua hoạt động kinh tế của con người (không do con người đặt ra theo ý muốn chủ quan)",
+      "B": "Quy luật kinh tế có tính lịch sử",
+      "C": "Các phương án trả lời đều đúng."
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 313,
+    "stem": "Tái sản xuất tư bản gồm có hai hình thức cơ bản đó là",
+    "options": {
+      "A": "Tái sản xuất giản đơn và tái sản xuất mở rộng",
+      "B": "Tái sản xuất theo chiều rộng và tái sản xuất theo chiều sâu",
+      "C": "Tái sản xuất tư bản xã hội và tái sản xuất tư bản tư nhân"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 314,
+    "stem": "Giá trị sử dụng của hàng hóa phản ánh tính chất nào sau đây",
+    "options": {
+      "A": "Tính chất tư nhân của hàng hóa",
+      "B": "Tính chất xã hội của hàng hóa",
+      "C": "Cả tính chất tư nhân và tính chất xã hội của hàng hóa"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 315,
+    "stem": "Quá trình sản xuất tư bản là quá trình sản xuất",
+    "options": {
+      "A": "Giá trị sử dụng",
+      "B": "Giá trị thặng dư",
+      "C": "Giá trị trao đổi"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 316,
+    "stem": "Trong kinh tế hàng hóa, lạm phát là hiện tượng kinh tế",
+    "options": {
+      "A": "Bất bình thường",
+      "B": "Bất ổn định",
+      "C": "Bình thường"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 318,
+    "stem": "Chi phí sản xuất tư bản tính bằng công thức nào sau đây",
+    "options": {
+      "A": "K = c + p + m",
+      "B": "K = c + v + m",
+      "C": "K = c + v"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 319,
+    "stem": "Tích lũy tư bản là xét về bản chất là",
+    "options": {
+      "A": "Tư bản hóa tư liệu tiêu dùng",
+      "B": "Tư bản hóa giá trị thặng dư",
+      "C": "Tư bản hóa sức lao động"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 320,
+    "stem": "Trong sản xuất hàng hóa tồn tại song song bao nhiêu mặt",
+    "options": {
+      "A": "Một mặt",
+      "B": "Ba mặt",
+      "C": "Hai mặt"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 321,
+    "stem": "Mục đích của sản xuất hàng hóa là thỏa mãn nhu cầu của",
+    "options": {
+      "A": "Người sản xuất",
+      "B": "Thị trường",
+      "C": "Của người sản xuất và tiêu dùng"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 322,
+    "stem": "Chủ nghĩa tư bản ra đời phải có mấy nguyên nhân",
+    "options": {
+      "A": "Bốn nguyên nhân cơ bản",
+      "B": "Ba nguyên nhân cơ bản",
+      "C": "Hai nguyên nhân cơ bản"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 325,
+    "stem": "Theo quan điểm của KTCT Mác- Lênin, khủng hoảng kinh tế của chủ nghĩa tư bản mang tính",
+    "options": {
+      "A": "Chủ quan",
+      "B": "Khách quan",
+      "C": "Tạm thời"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 326,
+    "stem": "Sản xuất hàng hóa có vai trò gì trong phân công lao động xã hội",
+    "options": {
+      "A": "Là điều kiện của phân công lao động xã hội",
+      "B": "Là nguồn gốc của phân công lao động xã hội",
+      "C": "Các phương án trả lời đều sai"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 327,
+    "stem": "Lượng giá trị hàng hóa nhiều hay ít, cao hay thấp, được xác định như thế nào?",
+    "options": {
+      "A": "Xác định bằng thời gian lao động cá biệt",
+      "B": "Xác định bằng thời gian lao động xã hội cần thiết",
+      "C": "Xác định bằng thời gian lao động giản đơn, trung bình xã hội cần thiết"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 328,
+    "stem": "Xét về thời gian, kinh tế hàng hóa ra đời sau",
+    "options": {
+      "A": "Nền kinh tế xã hội",
+      "B": "Nền kinh tế tự do",
+      "C": "Nền kinh tế tự nhiên"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 332,
+    "stem": "Chi phí sản xuất tư bản xét về lượng luôn luôn",
+    "options": {
+      "A": "Lớn hơn chi phí sản xuất thực tế",
+      "B": "Nhỏ hơn chi phí sản xuất thực tế",
+      "C": "Bằng chi phí sản xuất thực tế"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 334,
+    "stem": "Hàng hóa sức lao động ra đời phải dựa trên mấy điều kiện",
+    "options": {
+      "A": "Ba điều kiện",
+      "B": "Một điều kiện",
+      "C": "Hai điều kiện"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 335,
+    "stem": "Trong kinh tế chính trị Mác-Lênin, cung là phạm trù kinh tế dùng để chỉ",
+    "options": {
+      "A": "Mọi hàng hoá có khả năng đáp ứng nhu cầu thị trường",
+      "B": "Mọi sản phẩm của lao động",
+      "C": "Một số sản phẩm nhất định của thị trường"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 337,
+    "stem": "Tích tụ và tập trung tư bản giống nhau ở",
+    "options": {
+      "A": "Đều là tăng quy mô tư bản cá biệt",
+      "B": "Có nguồn gốc trực tiếp giống nhau",
+      "C": "Đều là tăng quy mô tư bản xã hội"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 338,
+    "stem": "Giá trị thặng dư siêu ngạch là hình thức",
+    "options": {
+      "A": "Biến tướng của giá trị thặng dư cố định",
+      "B": "Biến tướng của giá trị thặng dư tương đối",
+      "C": "Biến tưởng của giá trị thặng dư tuyệt đối"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 346,
+    "stem": "Vai trò của các bộ phận tư bản trong tích lũy tư bản được xác định bằng phạm trù:",
+    "options": {
+      "A": "Cấu tạo kỹ thuật của tư bản",
+      "B": "Cấu tạo hữu cơ của tư bản",
+      "C": "Cấu tạo giá trị của tư bản"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 348,
+    "stem": "Yếu tố quyết định đến giá cả hàng hoá là",
+    "options": {
+      "A": "Giá trị của hàng hoá",
+      "B": "Quan hệ cung cầu về hàng hoá",
+      "C": "Giá trị sử dụng của hàng hoá"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 352,
+    "stem": "Vê mặt lượng giữa p' và m' thì:",
+    "options": {
+      "A": "p' luôn nhỏ hơn m'",
+      "B": "p' luôn lớn hơn m'",
+      "C": "p' bằng m'"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      },
+      {
+        "type": "OPT_A_LOWERCASE",
+        "detail": "Option A starts with lowercase: \"p' luôn nhỏ hơn m'\""
+      }
+    ]
+  },
+  {
+    "id": 356,
+    "stem": "Kinh tế hàng hóa là sự tiếp nỗi của:",
+    "options": {
+      "A": "Nên kinh tế xã hội",
+      "B": "Nên kinh tế tự do",
+      "C": "Nên kinh tế tự nhiên"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 357,
+    "stem": "Tiên tệ là bánh xe vĩ đại của lưu thông. Câu nói này là của ai và theo anh (chị) nó có đúng không?",
+    "options": {
+      "A": "A. Smith và là câu nói đúng",
+      "B": "Đ. Ricacđô và là câu nói đúng",
+      "C": "C. Mác và là câu nói đúng",
+      "D": "Đ. Ricacđô và là câu nói sai"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      }
+    ]
+  },
+  {
+    "id": 358,
+    "stem": "Sự khác nhau giữa địa tô tuyệt đối và địa tô chênh lệch đó là:",
+    "options": {
+      "A": "Độc quyền kinh doanh ruộng đã theo kiểu tư bản chủ nghĩa là nguyên nhân sinh ra địa tô chênh lệch, còn độc quyền tư hữu về ruộng đất là nguyên nhân sinh ra địa tô tuyệt đối",
+      "B": "Độc quyền sở hữu đất đã theo kiểu tư bản chủ nghĩa là nguyên nhân sinh ra địa tô chênh lệch, còn độc quyền tư hữu vẽ ruộng đất là nguyên nhân sinh ra địa tô tuyệt đối",
+      "C": "Độc quyền kinh doanh ruộng đã theo kiểu tư bản chủ nghĩa là nguyên nhân sinh ra địa tô chênh lệch, còn độc quyền sử dụng về ruộng đất là nguyên nhân sinh ra địa tô tuyệt đối"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 362,
+    "stem": "*Nguyên nhân của bản chất khủng hoảng kinh tế chủ nghĩa tư bản là:",
+    "options": {
+      "A": "Bắt nguồn từ mâu thuẫn của bản chất của chủ nghĩa tư bản",
+      "B": "Do sản xuất không có kế hoạch",
+      "C": "Do chạy theo lợi nhuận"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 370,
+    "stem": "Nếu nhà tư bản trà công theo đúng giá trị sức lao động thì có còn bóc lột giá trị thặng dư không?",
+    "options": {
+      "A": "Không còn",
+      "B": "Tùy trường hợp cụ thể",
+      "C": "Vẫn còn"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 373,
+    "stem": "Hàng hóa là gì:",
+    "options": {
+      "A": "Những vật để thoa mãn nhu cầu tiêu dùng của con người",
+      "B": "Sản phẩm của lao động, có thể thoa mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán",
+      "C": "Những vật có giá trị sử dụng cao",
+      "D": "Những vật mà trên thị trường luôn khan hiếm"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      }
+    ]
+  },
+  {
+    "id": 374,
+    "stem": "Hàng hóa là gì?",
+    "options": {
+      "A": "Là những vật để thỏa mãn nhu cầu tiêu dùng của con người",
+      "B": "Là hết thảy những vật, những thứ thỏa mãn nhu cầu tiêu dùng của con người và chúng được sản xuất ra để trao đổi, buôn bán",
+      "C": "Là những vật có giá trị sử dụng cao",
+      "D": "Là những vật mà trên thị trường luôn khan hiếm"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      }
+    ]
+  },
+  {
+    "id": 379,
+    "stem": "Các tố chức độc quyền hình thành trên cơ sở:",
+    "options": {
+      "A": "Liên kết dọc và liên kết ngang",
+      "B": "Liên kết tự giác và liên kết tự phất",
+      "C": "Liên kết bên ngoài và liên kết bên trong"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 380,
+    "stem": "Tỷ suất lợi nhuận được ký hiệu là p' được tính bằng công thức:",
+    "options": {
+      "A": "p'= m/(c+v)*100%",
+      "B": "p'= t/ (c+v)*100%",
+      "C": "p'= m/(c+v +m)*100%",
+      "D": "p'=p/(c+v)*100%"
+    },
+    "answer": "D",
+    "issues": [
+      {
+        "type": "OPT_A_LOWERCASE",
+        "detail": "Option A starts with lowercase: \"p'= m/(c+v)*100%\""
+      }
+    ]
+  },
+  {
+    "id": 382,
+    "stem": "Về kinh tế, xuất khấu tư bản nhà nước nhằm mục đích:",
+    "options": {
+      "A": "Tạo môi trưởng thuận lợi cho xuất khẩu tư bản tư nhân.",
+      "B": "Tạo điều kiện cho các nước nhập khấu tư bản phát triển",
+      "C": "Khống chế kinh tế các nước nhập khấu tư bản."
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 383,
+    "stem": "Về kinh tế, xuất khẩu tư bản nhà nước thường hướng vào:",
+    "options": {
+      "A": "Ngành kết cấu hạ tầng",
+      "B": "Ngành có vốn chu chuyển nhanh",
+      "C": "Ngành công nghệ môi"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 384,
+    "stem": "Cơ chế thị trường được Adam Smith ví như?",
+    "options": {
+      "A": "Bàn tay vô hình",
+      "B": "Bóng ma vô hình",
+      "C": "Con đĩa hai vòi",
+      "D": "Nam châm hai cực"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "TYPOS",
+        "detail": "con đĩa -> con đỉa"
+      }
+    ]
+  },
+  {
+    "id": 390,
+    "stem": "Lợi nhuận là:",
+    "options": {
+      "A": "Hình thức biến tưởng của kết quả sản xuất",
+      "B": "Hình thức biến tướng của giá trị thặng dư",
+      "C": "Hình thức biến tưông của chi phí sản xuất",
+      "D": "Hình thức biến tước của tư bản cố định"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      }
+    ]
+  },
+  {
+    "id": 396,
+    "stem": "Hai phương pháp sản xuất giá trị thặng dư là",
+    "options": {
+      "A": "Sản xuất giá trị thặng dư tương đối và siêu ngạch",
+      "B": "Sản xuất giá trị thặng dư tuyệt đối và tương đối",
+      "C": "Sản xuất giá trị thăng dư tuyệt đối và siêu nghạch",
+      "D": "Sản xuất giá trị thặng dư trung bình"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "TYPOS",
+        "detail": "siêu nghạch -> siêu ngạch"
+      }
+    ]
+  },
+  {
+    "id": 399,
+    "stem": "Tính định hướng xã hội chủ nghĩa của nền kinh tế thị trường Việt Nam được thể hiện ở khía cạnh nào? cũng như quản lý nhà nước hưông tới xác lấp những giá trị cốt lõi về xã hội",
+    "options": {
+      "D": "Là nền kinh tế phát thuy được trí tuệ và nguồn lực của toàn dân",
+      "E": "Tất cả phương án trên"
+    },
+    "answer": "E",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:true, B:true, C:true, D:false"
+      }
+    ]
+  },
+  {
+    "id": 403,
+    "stem": "Cạnh tranh giữa các ngành xảy ra khi có sự khác nhau về:",
+    "options": {
+      "A": "Giá trị thặng dư siêu ngạch",
+      "B": "Tỷ suất lợi nhuận",
+      "C": "Cung cầu các loại hàng hóa"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 404,
+    "stem": "Sản xuất giá trị thặng dư là quy luật kinh tế:",
+    "options": {
+      "A": "Tuyệt đối của chủ nghĩa tư bản",
+      "B": "Tuyệt đối của doanh nghiệp tư bản",
+      "C": "Tuyệt đối của chủ nghĩa xã hội"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 407,
+    "stem": "Tư bản cố định có vai trò gì?",
+    "options": {
+      "A": "Là nguồn gốc của giá trị thặng dư",
+      "B": "Là điều kiện để tăng năng suất lao động",
+      "C": "Các phương án trả lời đều đúng"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 409,
+    "stem": "(Giải thích: mầm mống → B hình thành → A) Hãy chọn phương án đúng về đặc điểm của quy luật kinh tế:",
+    "options": {
+      "A": "Phát huy tác dụng thông qua hoạt động kinh tế của con người",
+      "B": "Các phương án trả lời đêu đúng",
+      "C": "Mang tính khách quan"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 410,
+    "stem": "Mọi hình thức lạm phát đều làm tăng:",
+    "options": {
+      "A": "Giá cả của hàng hóa",
+      "B": "Giá trị của hàng hóa",
+      "C": "Giá trị sử dụng của hàng hóa"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 417,
+    "stem": "Hàng hóa sức lao động khác hàng hóa thông thường ở chỗ:",
+    "options": {
+      "A": "Khi sử dụng nó sẽ tạo ra một lượng giá trị nhỏ hơn giá trị của bản thân nó",
+      "B": "Khi sử dụng nó sẽ có khả năng tạo ra một lượng giá trị mới lớn hơn giá trị của bản thân nó",
+      "C": "Các phương án trà lời đều sai"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 418,
+    "stem": "Khẳng định nào đúng trong những khẳng định sau?",
+    "options": {
+      "A": "Sản xuất hàng hóa chi là sản phẩm của chủ nghĩa tư bản",
+      "B": "Sản xuất hàng hóa không có trong chủ nghĩa xã hội",
+      "C": "Sản xuất hàng hóa ra đời trong chế độ chiếm hữu nô lệ"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 423,
+    "stem": "Sỡ hữu độc quyền nhà nước là sự kết hợp của:",
+    "options": {
+      "A": "Sở hữu nhà nước và sở hữu độc quyền tư nhân",
+      "B": "Sở hữu của nhà nước tư sản",
+      "C": "Sở hữu của nhiều nước tư bản"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 429,
+    "stem": "Trên giác độ kinh tế chính trị, cầu được hiểu là",
+    "options": {
+      "A": "Nhu cầu của xã hội về dịch vụ",
+      "B": "Nhu cầu xã hội về hàng hóa",
+      "C": "Nhu cầu có khả năng thanh toán của xã hội"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 431,
+    "stem": "Các công thức tính tỷ suất giá trị thặng dư dưới đây, công thức nào đúng?",
+    "options": {
+      "A": "m' = giá trị thặng dư / tư bản khả biến* 100%",
+      "B": "m' = thời gian lao động tất yếu/thời gian lao động cần thiết *100%",
+      "C": "m' = thời gian lao động thặng dư/lao động cần thiết 100%",
+      "D": "m' = giá trị sức lao động / giá trị thặng dư *100%"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "OPT_A_LOWERCASE",
+        "detail": "Option A starts with lowercase: \"m' = giá trị thặng dư / tư bản khả biến* 100%\""
+      }
+    ]
+  },
+  {
+    "id": 432,
+    "stem": "Sức lao động là:",
+    "options": {
+      "A": "Toàn bộ thể lực và trí lực trong một con người đang sống và được vận dụng để sản xuất ra giá trị sử dụng nào đó",
+      "B": "Khả năng lao động, được tiêu dùng trong quá trình sản xuất",
+      "C": "Các phương án trả lời đều đúng"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      },
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 433,
+    "stem": "Tư bản cố định là:",
+    "options": {
+      "A": "Bộ phận tư bản sản xuất tồn tại dưới dạng máy móc, thiết bị, nhà xưởng... về hiện vật tham gia toàn bộ vào quá trình sản xuất, nhưng giá trị của nó bị khấu hao từng phần và được chuyển dần vào sản phẩm mới được sản xuất ra",
+      "B": "Bộ phận tư bản sản xuất tồn tại dưới dạng nguyên liệu, nhiên liệu, vật liệu phụ, sức lao động giá trị của nó lưu thông toàn bộ cùng với sản phẩm và được hoàn lại toàn bộ cho các nhà tư bản sau mỗi quá trình sản xuất",
+      "C": "Bộ phận tư bản tiêu dùng tồn tại dưới dạng máy móc, thiết bị, nhà xưởng... về hiện vật tham gia toàn bộ vào quá trình sản xuất, nhưng giá trị của nó bị khấu hao từng phần và được chuyển dần vào sản phẩm mới được sản xuất ra",
+      "D": "Bộ phận tư bản tiêu dùng tồn tại dưới dạng nguyên liệu, nhiên liệu, vật liệu phụ, sức lao động... giá trị của nó lưu thông toàn bộ cùng với sản phẩm và được hoàn lại toàn bộ cho các nhà tư bản sau mỗi quá trình sản xuất"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      }
+    ]
+  },
+  {
+    "id": 448,
+    "stem": "Từ yêu cầu của quy luật quan hệ sản xuất phải phù hợp với trình độ phát triển của lực lượng sản xuất, lý luận của chủ nghĩa Mác - Lênin khẳng định:",
+    "options": {
+      "A": "Chủ nghĩa tư bản không tồn tại vĩnh viễn",
+      "B": "Chủ nghĩa tư bản tiếp tục phát triển đến đỉnh cao",
+      "C": "Chủ nghĩa tư bản sẽ diệt vong trong thời gian ngắn"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 451,
+    "stem": "Căn cứ vào đâu để phân chia thành tái sản xuất cá biệt và tái sản xuất xã hội?",
+    "options": {
+      "A": "Căn cứ vào phạm vi sản xuất",
+      "B": "Căn cứ vào tốc độ sản xuất",
+      "C": "Căn cứ vào tính chất sản xuất"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 452,
+    "stem": "Loại tái sản xuất nào làm tăng sản phẩm chủ yếu do tăng năng suất lao động và hiệu quả sử dụng các nguồn luc?",
+    "options": {
+      "A": "Tái sản xuất mở rộng theo chiều rộng",
+      "B": "Tái sản xuất mở rộng",
+      "C": "Tái sản xuất mở rộng theo chiều sâu"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 455,
+    "stem": "Trong giai đoạn chủ nghĩa tư bản độc quyền, ngoài sự cạnh tranh giữa những người sản xuất nhỏ, giữa những nhà tư bản vừa và nhỏ như trong giai đoạn chủ nghĩa tư bản cạnh tranh tự do, mà còn có thêm các loại cạnh tranh sau: (chọn nhiều đáp án)",
+    "options": {
+      "A": "cạnh tranh giữa các tổ chức độc quyền với các xí nghiệp ngoài độc quyền",
+      "B": "Cạnh tranh giữa các tổ chức độc quyền vối nhau",
+      "C": "Cạnh tranh trong nội bộ các tổ chức độc quyền",
+      "D": "Cạnh tranh giữa các tổ chức tư bản độc quyền nhà nước với nhau"
+    },
+    "answer": "ABC",
+    "issues": [
+      {
+        "type": "OPT_A_LOWERCASE",
+        "detail": "Option A starts with lowercase: \"cạnh tranh giữa các tổ chức độc quyền với các xí nghiệp ngoài độc quyền\""
+      }
+    ]
+  },
+  {
+    "id": 463,
+    "stem": "Xu hướng chung của sản xuất tư bàn chủ nghĩa là:",
+    "options": {
+      "A": "Nâng cao mức tiền công",
+      "B": "Hạ thấp mức tiền công",
+      "C": "Giữ nguyên mức tiền công"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 474,
+    "stem": "Trên phương diện kinh tế chính trị, tái sản xuất là",
+    "options": {
+      "A": "Là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng",
+      "B": "Là quá trình sản xuất liên tục",
+      "C": "Là sự khôi phục lại sản xuất"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 479,
+    "stem": "Trong chủ nghĩa tư bản, người công nhân bán:",
+    "options": {
+      "A": "Sức lao động cho nhà tư bản",
+      "B": "Lao động cho nhà tư bản",
+      "C": "Hàng hóa cho nhà tư bản"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 486,
+    "stem": "Tính chất của tư bản bất biến (c) là:",
+    "options": {
+      "A": "Giá trị của nó không thay đổi vẽ lượng và được chuyển nguyên vẹn sang sản phẩm",
+      "B": "Giá trị của nó không thay đổi và được chuyển ngay sang sản phẩm sau một chu kỳ sản xuất",
+      "C": "Giá trị của nó chuyển dân vào sản phẩm qua khấu hao"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      },
+      {
+        "type": "TYPOS",
+        "detail": "vẽ lượng -> về lượng; chuyển dân -> chuyển dần"
+      }
+    ]
+  },
+  {
+    "id": 499,
+    "stem": "Các nhân tố nào sau đây ảnh hưởng đến năng suất lao động?",
+    "options": {
+      "A": "Trình độ khéo léo trung bình của người lao động; Mức độ phát triển của khoa học và trình độ áp dụng khoa học vào quy trình công nghệ; Sự kết hợp xã hội của quá trình sản xuất; Quy mô và hiệu suất của tư liệu sản xuất; Các điều kiện tự nhiên",
+      "B": "Các chính sách quy định từ nhà nước; Phương pháp và quy định giờ làm việc và đãi ngộ; Sự hợp tác của quá trình làm việc nhóm hiệu quả; Sự phát triển và đào tạo liên tục; Khả năng sáng tạo và đổi mới và thay đổi tư duy",
+      "C": "Trình độ và kỹ năng của người lao động ngày càng được nâng cao; Môi trường làm việc phù hợp phát huy hết khả năng cá nhân; Quản lý và tổ chức công việc có sự phân công rõ ràng; Sức khỏe và tình trạng thể chất của người lao động được đảm bảo; Các chuẩn mực quy tắc và thái độ của người lao động trong lao động sản xuất"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "MISSING_OPTION",
+        "detail": "Empty option found: A:false, B:false, C:false, D:true"
+      }
+    ]
+  },
+  {
+    "id": 510,
+    "stem": "Xét trên phương diện lịch sủ, các hình thức tổ chức độc quyền phát triển từ thấp đến cao bao gồm:",
+    "options": {
+      "A": "Trust, Cartel, Syndicate, Consortium",
+      "B": "Cortium, Cartel, Syndicate, Trust",
+      "C": "Syndicate, Cartel, Trust, Consortium",
+      "D": "Cartel, Syndicate, Trust, Consortium"
+    },
+    "answer": "D",
+    "issues": [
+      {
+        "type": "TYPOS",
+        "detail": "Cortium -> Consortium"
+      }
+    ]
+  },
+  {
+    "id": 514,
+    "stem": "Khi sản xuất và trao đối hàng hóa phát triên đòi hỏi phải có một vật ngang giá chung xuất hiện ở hình thái nào?",
+    "options": {
+      "A": "Hình thái giá trị giản đơn hay ngẫu nhiên",
+      "B": "Hình thái mở rộng của giá trị",
+      "C": "Hình thái chung của giá trị",
+      "D": "Hình thái tiên tệ"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "TYPOS",
+        "detail": "phát triên -> phát triển"
+      }
+    ]
+  },
+  {
+    "id": 540,
+    "stem": "Đâu là các đại diện tiêu biểu của trường phái kinh tế chính trị cổ điến Anh?",
+    "options": {
+      "A": "William Petty, A. Smith, David Ricardo",
+      "B": "Pierr Boisguillebrt, Francois Quesney, Jacques Turgot",
+      "C": "Willian Stafford, Thomas Mun, Gasparo Scaruffi",
+      "D": "Antonso Serra, A. Montchrétien, Francois Quesney"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "TYPOS",
+        "detail": "Willian -> William; Pierr -> Pierre; Quesney -> Quesnay"
+      }
+    ]
+  },
+  {
+    "id": 551,
+    "stem": "Xét trên phương diện lịch sử, các hình thức tổ chức độc quyền phát triển từ thấp đến cao bao gồm",
+    "options": {
+      "A": "Trust, Cartel, Syndicate, Consortium",
+      "B": "Cortium, Cartel, Syndicate, Trust",
+      "C": "Syndicate, Cartel, Trust, Consortium",
+      "D": "Cartel, Syndicate, Trust, Consortium"
+    },
+    "answer": "D",
+    "issues": [
+      {
+        "type": "TYPOS",
+        "detail": "Cortium -> Consortium"
+      }
+    ]
+  },
+  {
+    "id": 561,
+    "stem": "Tiên có mấy chức năng?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "TYPOS",
+        "detail": "Tiên -> Tiền"
+      }
+    ]
+  },
+  {
+    "id": 566,
+    "stem": "Cơ chế thị trường được Adam Smith vị như",
+    "options": {
+      "A": "Bàn tay vô hình",
+      "B": "Bóng ma vô hình",
+      "C": "Con đĩa hai với",
+      "D": "Nam châm hại cực"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "TYPOS",
+        "detail": "con đĩa -> con đỉa; hai với -> hai vòi; hại cực -> hai cực"
+      }
+    ]
+  },
+  {
+    "id": 567,
+    "stem": "Hai phương pháp sản xuất giá trị thông dư là",
+    "options": {
+      "A": "Sản xuất giá trị thầng dư tương đối và siêu ngạch",
+      "B": "Sản xuất giả trị thông du tuyệt đối và tương đối",
+      "C": "Sản xuất giá trị thặng dư tuyệt đối và siêu nghạch",
+      "D": "Sản xuất giá trị thặng dư trung bình"
+    },
+    "answer": "B",
+    "issues": [
+      {
+        "type": "TYPOS",
+        "detail": "thông du -> thặng dư; siêu nghạch -> siêu ngạch"
+      }
+    ]
+  },
+  {
+    "id": 578,
+    "stem": "Đối tượng nghiên cứu của Kinh tế chính trị Mác - Lênin là",
+    "options": {
+      "A": "Các quan hệ của sản xuất và trao đổi trong phương thức sản xuất mà các quan hệ đồ hình thành và phát triên",
+      "B": "Quá trình sản xuất, phân phối trao đổi, tiêu dùng",
+      "C": "Quan hệ xã hội giữa người với người",
+      "D": "Quan hệ sản xuất trong mối quan hệ tác động qua lại giữa lực lượng sản xuất"
+    },
+    "answer": "D",
+    "issues": [
+      {
+        "type": "TYPOS",
+        "detail": "phát triên -> phát triển"
+      }
+    ]
+  },
+  {
+    "id": 580,
+    "stem": "Nhận định \"tự do cạnh tranh đẻ ra tập trung sản xuất và sự tập trung sản xuất này, phát triển tới một mức độ nhất định, lại dẫn tới độc quyền\" là của ai?",
+    "options": {
+      "A": "C. Mác",
+      "B": "Ph Angghen",
+      "C": "VI Lênin",
+      "D": "Staline"
+    },
+    "answer": "C",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      },
+      {
+        "type": "TYPOS",
+        "detail": "Staline -> Stalin; Ph Angghen -> Ph. Ăng-ghen; VI Lênin -> V.I. Lênin"
+      }
+    ]
+  },
+  {
+    "id": 593,
+    "stem": "Đâu là một trong những nguyên nhân dẫn đến sự sụp đổ của Liên Xô và Đông Âu?",
+    "options": {
+      "A": "cơ chế kế hoạch hóa tập trung mệnh lệnh",
+      "B": "công nghiệp hóa quá nhanh",
+      "C": "công nghiệp hóa không gắn với hiện đại hóa",
+      "D": "sản xuất không đi đôi với tiêu dùng"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "OPT_A_LOWERCASE",
+        "detail": "Option A starts with lowercase: \"cơ chế kế hoạch hóa tập trung mệnh lệnh\""
+      }
+    ]
+  },
+  {
+    "id": 597,
+    "stem": "Đâu là các đại diện tiêu biểu của trường phái kinh tế chính trị cổ điển Anh?",
+    "options": {
+      "A": "Montchrétien, Francois Quesney",
+      "B": "Pierr Boisguillebrt, Francois Quesney, Jacques Turgot",
+      "C": "Willian Stafford, Thomas Mun, Gasparo Scaruffi",
+      "D": "Antonso Serra,"
+    },
+    "answer": "A",
+    "issues": [
+      {
+        "type": "TYPOS",
+        "detail": "Willian -> William; Pierr -> Pierre; Quesney -> Quesnay"
+      }
+    ]
+  },
+  {
+    "id": 598,
+    "stem": "(Chọn hai đáp án) Theo",
+    "options": {
+      "A": "Smith kinh tế chính trị là một ngành khoa học gần với chính khách hay nhà lập pháp gần với những mục tiêu nào?A. Tạo ra nguồn thu nhập dồi dào và sinh kế phong phú cho người dân",
+      "B": "Tạo ra khả năng có được nguồn ngân sách đầy đủ cho nhà nước để thực hiện nhiệm vụ công",
+      "C": "Tạo ra những giá trị kinh tế mới giúp tăng trưởng kinh tế và tiến bộ công bằng xã hội",
+      "D": "Tạo ra khả năng có được ai cũng có đầy đủ những phúc lợi xã hội cần thiết"
+    },
+    "answer": "AB",
+    "issues": [
+      {
+        "type": "BLEED_INTO_OPTION_A",
+        "detail": "Question prompt appears to bleed into Option A"
+      },
+      {
+        "type": "TYPOS",
+        "detail": "gần với -> gắn với"
+      }
+    ]
+  }
+]
