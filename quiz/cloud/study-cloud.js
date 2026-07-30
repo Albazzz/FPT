@@ -657,11 +657,23 @@
       .sc-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px}
       .sc-modal.hidden{display:none!important}
       .sc-backdrop{position:absolute;inset:0;background:rgba(15,23,42,.45)}
-      .sc-panel{position:relative;background:#fff;border-radius:16px;padding:22px;max-width:400px;width:100%;box-shadow:0 20px 50px rgba(0,0,0,.18)}
-      .sc-panel h3{margin:0 0 8px;font:800 1.1rem system-ui}
+      .sc-panel{position:relative;background:#fff;border-radius:16px;padding:22px;max-width:440px;width:100%;box-shadow:0 20px 50px rgba(0,0,0,.18)}
+      .sc-panel h3{margin:0 0 8px;font:800 1.1rem system-ui;display:flex;align-items:center;gap:8px;color:#0f172a}
       .sc-panel p{margin:0 0 12px;color:#64748b;font:500 14px/1.5 system-ui}
       .sc-panel label{display:block;font:700 12px system-ui;color:#64748b;margin-bottom:6px}
-      .sc-panel input{width:100%;box-sizing:border-box;padding:12px;border:1px solid #e2e8f0;border-radius:12px;font:600 14px system-ui;margin-bottom:10px}
+      .sc-panel input{width:100%;box-sizing:border-box;padding:12px;border:1px solid #cbd5e1;border-radius:12px;font:600 13px system-ui;margin-bottom:10px}
+      .sc-panel input:focus{outline:0;border-color:#6366f1;box-shadow:0 0 0 3px rgba(99,102,241,.15)}
+      .sc-help-box{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+      .sc-btn-neon{display:inline-flex;align-items:center;gap:6px;background:#ecfdf5;color:#047857;border:1px solid #a7f3d0;padding:6px 12px;border-radius:8px;font:700 12px system-ui;text-decoration:none;transition:all .15s}
+      .sc-btn-neon:hover{background:#d1fae5;color:#065f46;border-color:#6ee7b7}
+      .sc-btn-guide{background:transparent;border:0;color:#4f46e5;font:600 12px system-ui;cursor:pointer;padding:6px 4px;display:inline-flex;align-items:center;gap:4px}
+      .sc-btn-guide:hover{text-decoration:underline;color:#4338ca}
+      .sc-guide-content{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;margin-bottom:12px;font:500 12px/1.5 system-ui;color:#334155}
+      .sc-guide-content.hidden{display:none!important}
+      .sc-guide-content ol{margin:0;padding-left:18px}
+      .sc-guide-content li{margin-bottom:6px}
+      .sc-guide-content li:last-child{margin-bottom:0}
+      .sc-guide-content code{background:#e2e8f0;color:#0f172a;padding:2px 6px;border-radius:4px;font-family:monospace;font-size:11px}
       .sc-err{color:#b91c1c;font:600 13px system-ui;margin:0 0 8px}
       .sc-err.hidden,.sc-status.hidden,.sc-logout.hidden{display:none!important}
       .sc-status{color:#64748b;font:500 13px system-ui;margin:0 0 8px}
@@ -685,8 +697,28 @@
       <div class="sc-panel" role="dialog" aria-modal="true">
         <h3><i class="fa-solid fa-cloud"></i> Kết nối Neon Cloud</h3>
         <p>Nhập <strong>Key Neon</strong> (Database URL) của bạn để đồng bộ tiến trình học trên Cloud.<br/>Bỏ qua = chỉ lưu trên máy này (Local).</p>
+        
         <label for="studyCloudCode">Key Neon (postgresql://...)</label>
         <input type="text" id="studyCloudCode" placeholder="Nhập Key Neon của bạn (postgresql://...)" autocomplete="off" spellcheck="false" />
+        
+        <div class="sc-help-box">
+          <a href="https://neon.tech" target="_blank" rel="noopener" class="sc-btn-neon">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Tạo Key Neon Free (neon.tech)
+          </a>
+          <button type="button" class="sc-btn-guide" id="studyCloudToggleGuide">
+            <i class="fa-solid fa-circle-question"></i> Hướng dẫn (30s)
+          </button>
+        </div>
+
+        <div class="sc-guide-content hidden" id="studyCloudGuide">
+          <ol>
+            <li>Vào <a href="https://neon.tech" target="_blank" rel="noopener"><strong>neon.tech</strong></a> và đăng ký tài khoản (Miễn phí 100%).</li>
+            <li>Tạo Project mới (ví dụ: <code>quiz-study</code>).</li>
+            <li>Tại Dashboard, copy chuỗi <strong>Database URL / Connection String</strong> (có dạng <code>postgresql://...</code>).</li>
+            <li>Dán chuỗi URL đó vào ô phía trên và bấm <strong>Kết nối Cloud</strong>.</li>
+          </ol>
+        </div>
+
         <p class="sc-err hidden" id="studyCloudErr"></p>
         <p class="sc-status hidden" id="studyCloudStatus"></p>
         <div class="sc-actions">
@@ -696,6 +728,14 @@
         <button type="button" class="sc-logout hidden" id="studyCloudLogout">Thoát Cloud → Local</button>
       </div>`;
     document.body.appendChild(wrap);
+
+    const toggleBtn = document.getElementById("studyCloudToggleGuide");
+    const guideBox = document.getElementById("studyCloudGuide");
+    if (toggleBtn && guideBox) {
+      toggleBtn.onclick = () => {
+        guideBox.classList.toggle("hidden");
+      };
+    }
 
     document.getElementById("studyCloudSkip").onclick = () => {
       logout(true);
