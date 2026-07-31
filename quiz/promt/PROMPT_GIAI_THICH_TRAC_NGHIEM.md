@@ -1216,4 +1216,260 @@ Timeline:
 
 → Kết thúc lúc 180 phút.
 Mẹo nhớ
-Vẽ timeline CPU ∥ printer. Không cộng mù 4×(20+40). 
+Vẽ timeline CPU ∥ printer. Không cộng mù 4×(20+40).
+
+---
+
+## 7. Bài học kinh nghiệm thực chiến từ dự án MLN & Pipeline (Bắt buộc tuân thủ cho mọi môn)
+
+> **Bối cảnh rút kinh nghiệm**: Qua thực tế xử lý 550 câu hỏi môn MLN (và các môn PRM, JFE, JIT), một số lỗi hệ thống đã phát sinh (như trượt lệch index giải thích, dùng văn mẫu tự động fallback, không đồng bộ file JavaScript bundle cho Web App). Phần dưới đây tổng hợp quy tắc bắt buộc để áp dụng cho tất cả các môn học khác trong tương lai.
+
+### 7.1. Cấm tuyệt đối Fallback Generator / Văn mẫu tự động
+1. **Không dùng string fallback ngẫu nhiên**:
+   - ❌ **Cấm**: `concept = "Lý luận KTCT Mác - Lênin: " + stem`
+   - ❌ **Cấm**: `whyCorrect = "Theo lý luận Kinh tế chính trị Mác - Lênin, đáp án chuẩn xác là: " + ans`
+   - ❌ **Cấm**: `whyCorrect = "Đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa..."`
+   - ❌ **Cấm**: `concept = "Định nghĩa/đặc trưng cần nắm: " + ans`
+   - ❌ **Cấm**: `whyWrong = "Khác bản chất với đáp án đúng - không map đúng điều kiện đề"`
+2. **Quy tắc**: Mỗi câu hỏi trong ngân hàng dữ liệu phải được rà soát và viết giải thích chuyên sâu 1-1 riêng biệt, mang giá trị tri thức thực sự. Nếu chạy script xử lý theo lô, phải xuất danh sách các câu rơi vào fallback và viết bổ sung 100%.
+
+### 7.2. Quy trình chống lệch chỉ số (Index Shift Mismatch)
+1. **Nguyên nhân gây lỗi**: Khi dùng script xử lý mảng theo vị trí chỉ số (`items[i]`), nếu file nguồn có số lượng câu khác biệt hoặc bị trượt 1 câu, toàn bộ các câu phía sau sẽ bị gán sai giải thích (ví dụ: câu hỏi về "Sụp đổ Liên Xô" bị gán giải thích của "Xuất khẩu tư bản").
+2. **Quy tắc chống lệch**:
+   - Luôn ánh xạ dữ liệu theo ID duy nhất (`q.id`) hoặc chuỗi đề bài chuẩn (`q.question.trim().toLowerCase()`). Không phụ thuộc vào thứ tự mảng.
+   - Bắt buộc chạy script kiểm tra ngữ nghĩa tự động (`audit_all_550_mismatches.mjs`) để đối chiếu từ khóa chính trong Đề bài ↔ Từ khóa trong phần Giải thích (ví dụ: Đề chứa "Liên Xô" mà giải thích chứa "Xuất khẩu tư bản" ➔ cờ báo lỗi lập tức).
+
+### 7.3. Quy trình đồng bộ dữ liệu Web App & Rebuild Bundle (Nghiêm ngặt)
+1. **Nguyên nhân Web App không cập nhật**: Engine Web App (`play.html` / `app.js`) nạp dữ liệu qua thẻ `<script src="data/{môn}.js">` được biên dịch thành file JavaScript `quiz/data/{môn}.js` chứa `window.QUIZ_DATA["{môn}"]`. Nếu chỉ chỉnh sửa file `.json` hoặc file part trong `testmln/` mà không rebuild file `.js`, trình duyệt vẫn hiển thị dữ liệu cũ!
+2. **Quy trình 5 bước đồng bộ bắt buộc**:
+   - **Bước 1**: Chỉnh sửa / cập nhật file dữ liệu part (`testmln/mln_part_XX.json` hoặc `quiz/data/{môn}/`).
+   - **Bước 2**: Gộp dữ liệu vào các file tổng hợp (`all.json`, `all2.json`, `quiz/data/{môn}.json`).
+   - **Bước 3**: **Bắt buộc chạy script rebuild JS bundle**: 
+     - Ví dụ đối với MLN: `node quiz/tools/rebuild_mln_js.mjs` (để ghi đè file `quiz/data/mln.js`).
+   - **Bước 4**: Tăng số phiên bản cache-buster trong `play.html`:
+     - Ví dụ: `<script src="data/mln.js?v=ok20"></script>` (tăng `v=ok12` ➔ `v=ok20` để ép trình duyệt xóa cache HTTP).
+   - **Bước 5**: Git commit & push, nhắc người dùng dùng phím tắt `Ctrl + F5` để xóa cache trình duyệt khi xem lại.
+
+### 7.4. Chuẩn hóa 3 dòng `whyWrong` cho tất cả các môn
+1. **Định dạng nhãn đồng bộ**: Luôn dùng dấu hai chấm `:` thay vì dấu hỏi `?`
+   - `Là gì:` (Độ dài tối thiểu 12–15 từ, định nghĩa ngắn có nghĩa thật, không copy-paste tên option).
+   - `Dùng để làm gì:` / `Vai trò:` (Chức năng thật của đối tượng trong miền môn học).
+   - `Vì sao sai:` (Lý do cụ thể vì sao không chọn cho stem này: sai đối tượng, sai chiều tác động, sai giai đoạn).
+2. **Không lặp lại template**: Mỗi phương án nhiễu (A, B, C, D) phải có nội dung 3 dòng phân tích riêng biệt theo đúng đối tượng của phương án đó.
+
+### 7.5. Checklist nghiệm thu dữ liệu trước khi hoàn tất một môn
+- [ ] **Check 1**: Chạy audit rà soát văn mẫu (`generic_count === 0`).
+- [ ] **Check 2**: Chạy audit rà soát trượt index ngữ nghĩa (`mismatch_count === 0`).
+- [ ] **Check 3**: Đã đồng bộ file `.json` tổng hợp lẫn file JavaScript bundle `quiz/data/{môn}.js`.
+- [ ] **Check 4**: Đã tăng tham số `v=` cache-buster trong `play.html`.
+- [ ] **Check 5**: Đã test trực tiếp trên Web App kiểm tra hiển thị câu hỏi và giải thích thực tế.
+
+---
+
+### 7.6. Bộ ví dụ mẫu đạt chuẩn theo từng dạng câu hỏi (Golden Examples)
+
+#### Ví dụ 1: Dạng M1 — Định nghĩa / Bản chất (MLN)
+```json
+{
+  "id": 1,
+  "question": "Lao động trừu tượng tạo ra yếu tố nào của hàng hóa?",
+  "options": {
+    "A": "Giá trị của hàng hóa",
+    "B": "Giá trị sử dụng",
+    "C": "Tiền lương",
+    "D": "Lợi nhuận"
+  },
+  "answer": "A",
+  "explanation": {
+    "intent": "M1 – Hỏi bản chất lao động trừu tượng tạo ra yếu tố nào",
+    "concept": "• Lao động trừu tượng: Sự hao phí sức lao động nói chung của người sản xuất hàng hóa về cơ bắp, thần kinh, trí óc (không phân biệt hình thức cụ thể), kết tinh tạo nên giá trị của hàng hóa.",
+    "whyCorrect": "• Trong lý thuyết giá trị lao động của C. Mác, lao động trừu tượng tạo ra giá trị hàng hóa (thể hiện hao phí lao động xã hội), còn lao động cụ thể tạo ra giá trị sử dụng.",
+    "whyWrong": {
+      "B": "• Là gì: Giá trị sử dụng là công dụng của sản phẩm thỏa mãn nhu cầu con người.\n• Vai trò: Do lao động cụ thể (hình thức lao động có ích cụ thể) tạo ra.\n• Vì sao sai: Đề hỏi sản phẩm của lao động trừu tượng, không phải lao động cụ thể.",
+      "C": "• Là gì: Tiền lương là giá cả của hàng hóa sức lao động.\n• Vai trò: Hình thức thu nhập của người lao động làm thuê.\n• Vì sao sai: Tiền lương không phải yếu tố do lao động trừu tượng trực tiếp kết tinh tạo ra.",
+      "D": "• Là gì: Lợi nhuận là hình thức chuyển hóa của giá trị thặng dư trong lưu thông.\n• Vai trò: Mục tiêu kinh doanh của nhà tư bản.\n• Vì sao sai: Lợi nhuận là kết quả của lao động thặng dư trong sản xuất tư bản, không phải định nghĩa kết tinh trực tiếp của lao động trừu tượng nói chung."
+    },
+    "memoryTip": "• Lao động trừu tượng ➔ Giá trị · Lao động cụ thể ➔ Giá trị sử dụng."
+  }
+}
+```
+
+#### Ví dụ 2: Dạng M2 — Biểu hiện / Biểu hiện mới (MLN)
+```json
+{
+  "id": 2,
+  "question": "Biểu hiện mới của sự phân chia thị trường giữa các liên minh độc quyền đó là",
+  "options": {
+    "A": "Hình thành các tổ chức đa quốc gia",
+    "B": "Hình thành các tổ chức độc quyền trong nhà nước tư bản",
+    "C": "Hình thành xu hướng khu vực hóa",
+    "D": "Hình thành xu hướng toàn cầu hóa"
+  },
+  "answer": "D",
+  "explanation": {
+    "intent": "M2 – Hỏi biểu hiện mới của sự phân chia thị trường thế giới trong giai đoạn CNTB hiện đại",
+    "concept": "• Xu hướng toàn cầu hóa: Sự phân chia thị trường thế giới giữa các liên minh độc quyền trong giai đoạn hiện nay mang biểu hiện mới nổi bật là xu hướng toàn cầu hóa kinh tế.",
+    "whyCorrect": "• Ở giai đoạn CNTB độc quyền hiện đại, phân chia thị trường không chỉ diễn ra qua việc thành lập các cartel hay syndicate quốc tế truyền thống, mà biểu hiện mới nổi bật nhất là xu hướng toàn cầu hóa kinh tế vượt biên giới quốc gia.",
+    "whyWrong": {
+      "A": "• Là gì: Các công ty đa quốc gia (TNC/MNC) là chủ thể kinh tế thực hiện phân chia thị trường.\n• Vai trò: Là lực lượng chủ chốt thúc đẩy tích tụ tư bản toàn cầu.\n• Vì sao sai: Đa quốc gia là chủ thể thực hiện, không phải là biểu hiện/xu hướng mà đề bài yêu cầu.",
+      "B": "• Là gì: Tổ chức độc quyền trong nhà nước tư bản là sự kết hợp giữa tư bản độc quyền tư nhân và nhà nước.\n• Vai trò: Điều tiết kinh tế trong phạm vi quốc gia.\n• Vì sao sai: Thuộc phạm vi nội địa, không phản ánh biểu hiện mới của phân chia thị trường quốc tế.",
+      "C": "• Là gì: Xu hướng khu vực hóa là sự liên kết kinh tế giữa các quốc gia trong cùng một khu vực địa lý.\n• Vai trò: Hình thành các khối kinh tế khu vực (như ASEAN, EU).\n• Vì sao sai: Khu vực hóa có phạm vi hẹp hơn xu hướng toàn cầu hóa kinh tế mang tính thế giới."
+    },
+    "memoryTip": "• Biểu hiện mới phân chia thị trường ➔ Toàn cầu hóa (chủ thể là các công ty đa quốc gia)."
+  }
+}
+```
+
+#### Ví dụ 3: Dạng M3 — Phủ định / Loại trừ ("Đâu không phải...") (MLN)
+```json
+{
+  "id": 3,
+  "question": "Đâu không phải đặc trưng của chủ nghĩa tư bản?",
+  "options": {
+    "A": "Quyền sở hữu tư liệu sản xuất thuộc về nhà nước",
+    "B": "Tích lũy tư bản",
+    "C": "Trao đổi tự nguyện",
+    "D": "Một hệ thống giá cả và thị trường cạnh tranh"
+  },
+  "answer": "A",
+  "explanation": {
+    "intent": "M3 – Hỏi loại trừ đặc trưng mâu thuẫn với bản chất Chủ nghĩa tư bản",
+    "concept": "• Chủ nghĩa tư bản: Nền kinh tế dựa trên chế độ tư hữu về tư liệu sản xuất, bóc lột lao động làm thuê, tích lũy tư bản và thị trường cạnh tranh tự do.",
+    "whyCorrect": "• Trong CNTB, sở hữu tư liệu sản xuất thuộc về các nhà tư bản tư nhân. Việc toàn bộ tư liệu sản xuất thuộc sở hữu nhà nước là đặc trưng của mô hình kinh tế kế hoạch hóa xã hội chủ nghĩa, không phải CNTB.",
+    "whyWrong": {
+      "B": "• Là gì: Tích lũy tư bản là việc biến một phần giá trị thặng dư thành tư bản phụ thêm.\n• Vai trò: Là quy luật kinh tế tuyệt đối của CNTB nhằm mở rộng quy mô sản xuất.\n• Vì sao sai: Đây là đặc trưng cốt lõi của CNTB, do đề hỏi 'đâu KHÔNG phải' nên không chọn.",
+      "C": "• Là gì: Trao đổi tự nguyện là nguyên tắc giao dịch dựa trên sự thỏa thuận trên thị trường.\n• Vai trò: Cơ chế vận hành mua bán hàng hóa và sức lao động.\n• Vì sao sai: Đây là đặc trưng vận hành của thị trường tư bản chủ nghĩa nên bị loại trừ.",
+      "D": "• Là gì: Hệ thống giá cả và thị trường cạnh tranh là cơ chế tự điều tiết cung - cầu.\n• Vai trò: Phân bổ tài nguyên và điều tiết lưu thông trong CNTB.\n• Vì sao sai: Đây là đặc trưng thực tế của kinh tế thị trường tư bản chủ nghĩa."
+    },
+    "memoryTip": "• CNTB ➔ Tư hữu TLSX (Không phải công hữu/sở hữu nhà nước toàn bộ)."
+  }
+}
+```
+
+#### Ví dụ 4: Dạng M4 — Nguyên nhân / Quan hệ / Kết quả (MLN)
+```json
+{
+  "id": 4,
+  "question": "Nguyên nhân nào đã dẫn đến sự sụp đổ của Liên Xô và hệ thống xã hội chủ nghĩa ở Đông Âu?",
+  "options": {
+    "A": "Cơ chế kế hoạch hoá tập trung mệnh lệnh",
+    "B": "Sự tiến bộ kỹ thuật không đồng bộ",
+    "C": "Sản xuất không đi đối với tiêu dùng",
+    "D": "Công nghiệp hoá nhanh"
+  },
+  "answer": "A",
+  "explanation": {
+    "intent": "M4 – Hỏi nguyên nhân sâu xa dẫn đến khủng hoảng và sụp đổ mô hình CNXH ở Liên Xô & Đông Âu",
+    "concept": "• Nguyên nhân sụp đổ mô hình CNXH ở Liên Xô: Duy trì quá lâu cơ chế tập trung quan liêu bao cấp mệnh lệnh, làm triệt tiêu động lực phát triển sản xuất và dẫn đến khủng hoảng toàn diện.",
+    "whyCorrect": "• Việc duy trì cơ chế kế hoạch hóa tập trung quan liêu bao cấp mệnh lệnh trong thời gian dài đã kìm hãm lực lượng sản xuất, làm kinh tế trì trệ, suy thoái và dẫn tới sụp đổ hệ thống XHCN ở Liên Xô và Đông Âu.",
+    "whyWrong": {
+      "B": "• Là gì: Sự tiến bộ kỹ thuật không đồng bộ là hiện tượng phát triển khoa học công nghệ chênh lệch giữa các ngành.\n• Vai trò: Yếu tố ảnh hưởng đến năng suất cục bộ.\n• Vì sao sai: Không phải nguyên nhân gốc rễ dẫn tới sụp đổ thể chế kinh tế - xã hội.",
+      "C": "• Là gì: Sản xuất không đi đôi với tiêu dùng là sự mất cân đối giữa nguồn cung và nhu cầu thị trường.\n• Vai trò: Biểu hiện mất cân đối kinh tế.\n• Vì sao sai: Chỉ là hệ quả cụ thể phát sinh từ cơ chế quản lý tập trung quan liêu bao cấp.",
+      "D": "• Là gì: Công nghiệp hóa nhanh là chiến lược đẩy mạnh phát triển công nghiệp tốc độ cao.\n• Vai trò: Chính sách phát triển lực lượng sản xuất giai đoạn đầu của Liên Xô.\n• Vì sao sai: Công nghiệp hóa nhanh từng giúp Liên Xô trở thành cường quốc, không phải nguyên nhân gây sụp đổ."
+    },
+    "memoryTip": "• Nguyên nhân sụp đổ Liên Xô ➔ Cơ chế kế hoạch hóa tập trung mệnh lệnh."
+  }
+}
+```
+
+#### Ví dụ 5: Dạng M5 — Thứ tự / Giai đoạn / Đếm (MLN)
+```json
+{
+  "id": 5,
+  "question": "Nội dung công cuộc đại phân công lao động xã hội lần thứ nhất là",
+  "options": {
+    "A": "Đại công nghiệp tách khỏi nông nghiệp",
+    "B": "Trồng trọt tách khỏi chăn nuôi",
+    "C": "Chăn nuôi tách khỏi trồng trọt",
+    "D": "Thủ công nghiệp tách khỏi nông nghiệp"
+  },
+  "answer": "C",
+  "explanation": {
+    "intent": "M5 – Hỏi mốc lịch sử phân công lao động xã hội lần 1 trong tiến trình phát triển sản xuất hàng hóa",
+    "concept": "• Đại phân công lao động xã hội lần 1: Chăn nuôi tách khỏi trồng trọt (hình thành các bộ tộc chuyên chăn nuôi), là mốc phân công lao động đầu tiên trong lịch sử loài người.",
+    "whyCorrect": "• Trong lịch sử phát triển sản xuất hàng hóa: Lần 1 = Chăn nuôi tách khỏi trồng trọt; Lần 2 = Thủ công nghiệp tách khỏi nông nghiệp; Lần 3 = Thương nghiệp ra đời.",
+    "whyWrong": {
+      "A": "• Là gì: Đại công nghiệp tách khỏi nông nghiệp là quá trình công nghiệp hóa thời hiện đại.\n• Vai trò: Giai đoạn phát triển của sản xuất đại công nghiệp cơ khí.\n• Vì sao sai: Không thuộc 3 cuộc đại phân công lao động xã hội thời kỳ cổ đại.",
+      "B": "• Là gì: Trồng trọt tách khỏi chăn nuôi là diễn đạt ngược chiều của mốc phân công.\n• Vai trò: Ngành trồng trọt vốn xuất hiện trước hoặc song song.\n• Vì sao sai: Bản chất lịch sử là các bộ tộc chăn nuôi tách ra khỏi diện sản xuất nông nghiệp chung.",
+      "D": "• Là gì: Thủ công nghiệp tách khỏi nông nghiệp là sự chuyên môn hóa sản xuất công cụ và hàng thủ công.\n• Vai trò: Mốc phân công lao động xã hội lớn thứ hai.\n• Vì sao sai: Đây là nội dung của cuộc đại phân công lao động xã hội lần thứ HAI, không phải lần thứ nhất."
+    },
+    "memoryTip": "• Lần 1: Chăn nuôi ↔ Trồng trọt · Lần 2: Thủ công nghiệp ↔ Nông nghiệp · Lần 3: Thương nghiệp."
+  }
+}
+```
+
+#### Ví dụ 6: Dạng J4b — Tính toán độ tin cậy / Availability (JFE / CNTT)
+```json
+{
+  "id": 442,
+  "question": "Which of the following helps improve system availability?",
+  "options": {
+    "A": "Doubling both MTBF and MTTR",
+    "B": "Halving MTBF and doubling MTTR",
+    "C": "Halving both MTBF and MTTR",
+    "D": "Doubling MTBF and halving MTTR"
+  },
+  "answer": "D",
+  "explanation": {
+    "intent": "J4b – Hỏi giải pháp nâng cao độ sẵn sàng Availability dựa trên công thức MTBF & MTTR",
+    "concept": "• System Availability (A): Tỉ lệ thời gian hệ thống hoạt động bình thường. MTBF (Mean Time Between Failures) = thời gian trung bình giữa 2 lần hỏng. MTTR (Mean Time To Repair) = thời gian trung bình để sửa chữa. Công thức: A = MTBF / (MTBF + MTTR).",
+    "whyCorrect": "• Khi tăng gấp đôi MTBF (hệ thống bền hơn, ít hỏng) và giảm một nửa MTTR (sửa nhanh hơn), tử số tăng và mẫu số giảm ➔ Hệ số Availability A tăng rõ rệt (cải thiện độ sẵn sàng).",
+    "whyWrong": {
+      "A": "• Là gì: Gấp đôi cả thời gian giữa các lần hỏng (MTBF) và thời gian sửa (MTTR).\n• Dùng để làm gì: Cắm vào công thức A = 2m / (2m + 2t) = m / (m + t).\n• Vì sao sai: Tỉ lệ A hoàn toàn không thay đổi, không giúp cải thiện (improve) độ sẵn sàng.",
+      "B": "• Là gì: Giảm một nửa MTBF (hỏng thường xuyên hơn) và gấp đôi MTTR (sửa lâu hơn).\n• Dùng để làm gì: Cắm vào công thức A = (0.5m) / (0.5m + 2t).\n• Vì sao sai: Khiến tỉ lệ Availability A giảm mạnh, làm hệ thống kém ổn định hơn.",
+      "C": "• Là gì: Giảm một nửa cả MTBF và MTTR.\n• Dùng để làm gì: Cắm vào công thức A = (0.5m) / (0.5m + 0.5t) = m / (m + t).\n• Vì sao sai: Tỉ lệ A vẫn giữ nguyên không đổi."
+    },
+    "memoryTip": "• A↑ = Sống lâu hơn (MTBF↑) AND Sửa nhanh hơn (MTTR↓)."
+  }
+}
+```
+
+#### Ví dụ 7: Dạng J5c — True / False Statement (JFE / CNTT)
+```json
+{
+  "id": 417,
+  "question": "The statement: 'CRM systems mainly manage internal manufacturing processes, raw materials inventory, and payroll' is True or False?",
+  "options": {
+    "A": "False",
+    "B": "True"
+  },
+  "answer": "A",
+  "explanation": {
+    "intent": "J5c – Hỏi tính đúng sai của phát biểu phân biệt giữa CRM và ERP",
+    "concept": "• CRM (Customer Relationship Management): Hệ thống quản lý quan hệ khách hàng (bán hàng, marketing, chăm sóc khách hàng). ERP (Enterprise Resource Planning): Hệ thống hoạch định tài nguyên doanh nghiệp (sản xuất, tồn kho, tài chính, nhân sự, payroll).",
+    "whyCorrect": "• Chỗ sai trong phát biểu: Đề bài gán cho CRM chức năng quản lý quy trình sản xuất nội bộ, tồn kho nguyên vật liệu và bảng lương (payroll) ➔ Đó là chức năng của ERP, không phải CRM. Do đó phát biểu là FALSE.",
+    "whyWrong": {
+      "B": "• Là gì: Chọn True tức chấp nhận toàn bộ mô tả trong đề bài là đúng cho CRM.\n• Dùng để làm gì: Đánh giá khẳng định đúng sai.\n• Vì sao sai: Bỏ sót lỗi tráo đổi khái niệm giữa CRM (hướng ngoại/khách hàng) và ERP (hướng nội/tài nguyên)."
+    },
+    "memoryTip": "• CRM = Hướng ra khách hàng · ERP = Quản trị tài nguyên & quy trình nội bộ."
+  }
+}
+```
+
+#### Ví dụ 8: Dạng T1 — 専門用語 / Dịch thuật ngữ (JIT401 / IT tiếng Nhật)
+```json
+{
+  "id": 650,
+  "question": "【専門用語】「半導体」の英語表記として適切なものはどれか。",
+  "options": {
+    "A": "Semiconductor",
+    "B": "Conductor",
+    "C": "Insulator",
+    "D": "Resistor"
+  },
+  "answer": "A",
+  "explanation": {
+    "intent": "T1 – Hỏi bản dịch thuật ngữ tiếng Nhật ↔ tiếng Anh cho linh kiện bán dẫn",
+    "concept": "• 半導体 (Hán Việt: Bán Đạo Thể): Vật liệu có độ dẫn điện ở mức trung bình giữa chất dẫn điện và chất cách điện, tương ứng với thuật ngữ tiếng Anh là Semiconductor.",
+    "whyCorrect": "• 半 (bán/half) + 導体 (chất dẫn điện/conductor) ➔ 半導体 = Semiconductor.",
+    "whyWrong": {
+      "B": "• Là gì: Conductor (導体): Chất dẫn điện tốt (như đồng, nhôm).\n• Dùng để làm gì: Dẫn dòng điện trong mạch.\n• Vì sao sai: Conductor chỉ là chất dẫn điện, thiếu chữ 'bán' (半).",
+      "C": "• Là gì: Insulator (絶縁体): Chất cách điện (như cao su, thủy tinh).\n• Dùng để làm gì: Ngăn chặn dòng điện chạy qua.\n• Vì sao sai: Mang ý nghĩa trái ngược với vật liệu bán dẫn.",
+      "D": "• Là gì: Resistor (抵抗器): Điện trở.\n• Dùng để làm gì: Hạn chế cường độ dòng điện trong mạch.\n• Vì sao sai: Là một linh kiện thụ động cụ thể, không phải tên lớp vật liệu bán dẫn."
+    },
+    "memoryTip": "• 半導体 (Bán đạo thể) ➔ Semiconductor (Semi + Conductor)."
+  }
+}
+```
+
+
