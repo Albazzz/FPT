@@ -1472,4 +1472,161 @@ Vẽ timeline CPU ∥ printer. Không cộng mù 4×(20+40).
 }
 ```
 
+#### Ví dụ 9: Dạng L1 — Widget & Layout Flex trong Flutter (PRM393)
+```json
+{
+  "id": 101,
+  "question": "Trong Flutter, widget nào được sử dụng bên trong Row hoặc Column để tự động co giãn chiếm phần không gian trống còn lại?",
+  "options": {
+    "A": "Expanded",
+    "B": "SizedBox",
+    "C": "Container",
+    "D": "Padding"
+  },
+  "answer": "A",
+  "explanation": {
+    "intent": "L1 – Hỏi widget điều chỉnh kích thước co giãn linh hoạt trong layout Flex (Row/Column)",
+    "concept": "• Expanded Widget: Là widget thuộc nhóm Flex layout, ép con (child) co giãn để lấp đầy khoảng trống còn lại theo trục chính (main axis) của Row, Column hoặc Flex.",
+    "whyCorrect": "• Expanded kế thừa từ Flexible với `fit: FlexFit.tight`, buộc child phải mở rộng tối đa không gian còn trống trên trục chính của Row/Column, giúp chống tràn màn hình (overflow pixel).",
+    "whyWrong": {
+      "B": "• Là gì: SizedBox là widget tạo ô chứa có kích thước rộng/cao cố định (fixed size).\n• Dùng để làm gì: Tạo khoảng trống cố định giữa các widget hoặc đặt kích thước cứng cho child.\n• Vì sao sai: SizedBox có kích thước cố định, không thể tự co giãn theo tỷ lệ khoảng trống còn lại.",
+      "C": "• Là gì: Container là widget kết hợp các tính năng trang trí (padding, margin, decoration, color).\n• Dùng để làm gì: Đóng gói và tạo kiểu dáng cho widget con.\n• Vì sao sai: Container không tự động co giãn chiếm không gian trống trừ khi được bọc trong Expanded.",
+      "D": "• Là gì: Padding là widget thêm khoảng đệm không gian xung quanh con (child).\n• Dùng để làm gì: Tạo lề trong (inner margin) xung quanh widget.\n• Vì sao sai: Padding chỉ tạo khoảng trống lề cố định, không có cơ chế co giãn flex."
+    },
+    "memoryTip": "• Co giãn tự động trong Row/Column ➔ Expanded (Flex tight) · Kích thước cố định ➔ SizedBox."
+  }
+}
+```
+
+#### Ví dụ 10: Dạng L2 — Asynchronous Programming trong Dart/Flutter (PRM393)
+```json
+{
+  "id": 102,
+  "question": "Sự khác biệt cốt lõi giữa Future và Stream trong ngôn ngữ Dart là gì?",
+  "options": {
+    "A": "Future trả về một giá trị duy nhất (hoặc lỗi) bất đồng bộ; Stream trả về một chuỗi nhiều giá trị theo thời gian",
+    "B": "Future dùng cho dữ liệu đồng bộ; Stream dùng cho dữ liệu bất đồng bộ",
+    "C": "Future hoạt động trên UI thread; Stream hoạt động trên background worker thread",
+    "D": "Future bắt buộc phải dùng async/await; Stream chỉ dùng được với callbacks"
+  },
+  "answer": "A",
+  "explanation": {
+    "intent": "L2 – Phân biệt cơ chế xử lý bất đồng bộ one-shot (Future) và luồng sự kiện liên tục (Stream)",
+    "concept": "• Future & Stream: Future đại diện cho một kết quả duy nhất sẽ hoàn tất trong tương lai (one-shot asynchronous value). Stream đại diện cho một luồng phát ra nhiều sự kiện/giá trị bất đồng bộ nối tiếp nhau theo thời gian (sequence of asynchronous events).",
+    "whyCorrect": "• Bản chất trong Dart: Future tương đương với Promise trong JS (chỉ trả về 1 kết quả 1 lần duy nhất). Stream tương đương với Observable trong RxJS (có thể lắng nghe yield nhiều giá trị liên tục).",
+    "whyWrong": {
+      "B": "• Là gì: Phát biểu nhầm lẫn về tính đồng bộ của Future.\n• Dùng để làm gì: Đánh giá cơ chế bất đồng bộ.\n• Vì sao sai: Cả Future và Stream đều là các cấu trúc bất đồng bộ (asynchronous) trong Dart, không cái nào là đồng bộ.",
+      "C": "• Là gì: Phát biểu sai về mô hình luồng thi hành (thread model) của Dart.\n• Dùng để làm gì: Đánh giá vị trí thực thi.\n• Vì sao sai: Dart chạy đơn luồng (single-threaded Event Loop); cả Future và Stream đều chạy trên Event Loop trừ khi dùng Isolate.",
+      "D": "• Là gì: Phát biểu sai về cú pháp xử lý trong Dart.\n• Dùng để làm gì: Đánh giá cú pháp ngôn ngữ.\n• Vì sao sai: Stream hoàn toàn có thể dùng cú pháp `await for` bất đồng bộ chứ không chỉ dùng callback `.listen()`."
+    },
+    "memoryTip": "• Future ➔ 1 kết quả duy nhất (One-shot) · Stream ➔ Chuỗi nhiều kết quả theo thời gian (Multiple values)."
+  }
+}
+```
+
+#### Ví dụ 11: Dạng P1 — Entity Framework Core & LINQ (.NET / PRN232)
+```json
+{
+  "id": 201,
+  "question": "Trong Entity Framework Core, phương thức nào được sử dụng trong truy vấn LINQ để nạp sớm (Eager Loading) dữ liệu từ bảng có quan hệ?",
+  "options": {
+    "A": "Include",
+    "B": "Join",
+    "C": "AsNoTracking",
+    "D": "ThenBy"
+  },
+  "answer": "A",
+  "explanation": {
+    "intent": "P1 – Hỏi phương thức nạp dữ liệu liên quan (Eager Loading) trong EF Core LINQ",
+    "concept": "• Eager Loading trong EF Core: Là kỹ thuật nạp trước các thực thể liên quan (Navigation Properties) ngay trong câu lệnh SQL truy vấn ban đầu bằng phương thức `.Include()` (và `.ThenInclude()`).",
+    "whyCorrect": "• Khi gọi `context.Orders.Include(o => o.Customer)`, EF Core sẽ sinh ra câu lệnh SQL `JOIN` để lấy cả thông tin Order và Customer trong một lần truy vấn duy nhất tới Database.",
+    "whyWrong": {
+      "B": "• Là gì: Join là toán tử LINQ kết hợp hai tập hợp dựa trên khóa chung (Key Selector).\n• Dùng để làm gì: Kết hợp thủ công 2 bảng trong bộ nhớ hoặc sinh INNER JOIN LINQ.\n• Vì sao sai: Join không tự động gán dữ liệu vào Navigation Property của DbContext entity như Include.",
+      "C": "• Là gì: AsNoTracking là phương thức tắt tính năng theo dõi thay đổi (Change Tracking) của EF Core.\n• Dùng để làm gì: Tối ưu hiệu năng cho các truy vấn chỉ đọc (read-only queries).\n• Vì sao sai: AsNoTracking dùng để tăng tốc truy vấn đọc, không dùng để nạp Navigation Property.",
+      "D": "• Là gì: ThenBy là toán tử sắp xếp phụ cấp hai trong LINQ.\n• Dùng để làm gì: Sắp xếp danh sách theo tiêu chí thứ 2 sau OrderBy.\n• Vì sao sai: ThenBy dùng để sắp xếp kết quả, không liên quan đến việc nạp dữ liệu quan hệ."
+    },
+    "memoryTip": "• Nạp dữ liệu quan hệ Eager Loading trong EF Core ➔ .Include() & .ThenInclude()."
+  }
+}
+```
+
+#### Ví dụ 12: Dạng P2 — ASP.NET Core Dependency Injection & Service Lifetime (.NET / PRN232)
+```json
+{
+  "id": 202,
+  "question": "Trong ASP.NET Core Dependency Injection, Service Lifetime nào tạo ra một instance mới duy nhất cho mỗi HTTP Request và dùng chung instance đó trong suốt vòng đời của request đó?",
+  "options": {
+    "A": "Scoped",
+    "B": "Transient",
+    "C": "Singleton",
+    "D": "Static"
+  },
+  "answer": "A",
+  "explanation": {
+    "intent": "P2 – Phân biệt các cấp độ vòng đời Service (Lifetime) trong Container DI của ASP.NET Core",
+    "concept": "• Service Lifetime trong ASP.NET Core DI:\n  1. Transient: Tạo instance mới MỖI LẦN service được yêu cầu/inject.\n  2. Scoped: Tạo instance mới MỖI HTTP REQUEST (dùng chung trong cùng 1 request).\n  3. Singleton: Tạo instance duy nhất MỘT LẦN KHI APP KHỞI ĐỘNG (dùng chung cho toàn bộ app).",
+    "whyCorrect": "• Scoped (`services.AddScoped<IService, Service>()`) đảm bảo trong cùng một luồng xử lý HTTP Request (từ Controller ➔ Service ➔ Repository), tất cả các nơi injection đều nhận chung một object instance.",
+    "whyWrong": {
+      "B": "• Là gì: Transient (`services.AddTransient`) tạo mới đối tượng mỗi khi được inject.\n• Dùng để làm gì: Dành cho các service nhẹ, không lưu trữ trạng thái (stateless).\n• Vì sao sai: Nếu trong cùng 1 request inject 2 lần thì Transient sẽ tạo ra 2 object khác nhau.",
+      "C": "• Là gì: Singleton (`services.AddSingleton`) tạo duy nhất 1 instance trong suốt thời gian ứng dụng chạy.\n• Dùng để làm gì: Dành cho cache bộ nhớ hoặc service dùng chung toàn ứng dụng.\n• Vì sao sai: Singleton tồn tại xuyên suốt nhiều HTTP Request chứ không bị hủy sau khi request kết thúc.",
+      "D": "• Là gì: Static không phải là một Service Lifetime trong IoC Container của ASP.NET Core.\n• Dùng để làm gì: Từ khóa của ngôn ngữ C#.\n• Vì sao sai: Static thuộc cấp độ lớp C#, không được quản lý bởi DI Container."
+    },
+    "memoryTip": "• Transient ➔ Mỗi lần gọi = 1 instance mới · Scoped ➔ Mỗi HTTP Request = 1 instance · Singleton ➔ Toàn app = 1 instance."
+  }
+}
+```
+
+#### Ví dụ 13: Dạng J1 — OS Process States (JFE301 / CNTT)
+```json
+{
+  "id": 301,
+  "question": "A process in an operating system is waiting for an I/O operation (such as reading a file from disk) to complete. What state is this process currently in?",
+  "options": {
+    "A": "Waiting (Blocked)",
+    "B": "Ready",
+    "C": "Running",
+    "D": "Terminated"
+  },
+  "answer": "A",
+  "explanation": {
+    "intent": "J1 – Xác định trạng thái của tiến trình (Process State) trong hệ điều hành khi chờ sự kiện I/O",
+    "concept": "• Trạng thái Tiến trình (Process States): Tiến trình chuyển sang trạng thái Waiting (Blocked) khi chưa thể thực thi tiếp do phải chờ một sự kiện ngoài CPU hoàn thành (như I/O disk, mạng, bàn phím).",
+    "whyCorrect": "• Do tiến trình đang chờ hoàn tất đọc file từ ổ đĩa (I/O operation), CPU không thể tiếp tục chạy lệnh của tiến trình này ➔ Hệ điều hành đưa tiến trình vào hàng đợi Waiting (Blocked) để nhường CPU cho tiến trình khác.",
+    "whyWrong": {
+      "B": "• Là gì: Ready là trạng thái tiến trình đã có đủ tài nguyên và đang chờ CPU cấp thời gian thực thi (time slice).\n• Dùng để làm gì: Hàng đợi cho CPU Dispatcher.\n• Vì sao sai: Tiến trình chưa có dữ liệu I/O nên chưa thể sẵn sàng chạy trên CPU.",
+      "C": "• Là gì: Running là trạng thái tiến trình đang trực tiếp chiếm giữ và chạy lệnh trên CPU.\n• Dùng để làm gì: Thực thi các phép tính của tiến trình.\n• Vì sao sai: Tiến trình đang bị nghẽn I/O nên không thể ở trạng thái Running.",
+      "D": "• Là gì: Terminated là trạng thái tiến trình đã hoàn tất thi hành hoặc bị ngắt bỏ.\n• Dùng để làm gì: Giải phóng toàn bộ bộ nhớ và tài nguyên.\n• Vì sao sai: Tiến trình vẫn chưa kết thúc công việc."
+    },
+    "memoryTip": "• Waiting ➔ Chờ I/O / Sự kiện bên ngoài · Ready ➔ Đủ tài nguyên, chỉ chờ cấp CPU · Running ➔ Đang chạy trên CPU."
+  }
+}
+```
+
+#### Ví dụ 14: Dạng J5b — Quality Control Tools (JFE301 / CNTT)
+```json
+{
+  "id": 432,
+  "question": "Which quality control tool is used to rank problems or causes in descending order of frequency or cost to focus on the 'vital few'?",
+  "options": {
+    "A": "Pareto chart",
+    "B": "Ishikawa diagram (Fishbone)",
+    "C": "Control chart",
+    "D": "Scatter diagram"
+  },
+  "answer": "A",
+  "explanation": {
+    "intent": "J5b – Phân biệt công cụ quản lý chất lượng (7 QC Tools) dựa trên mục đích sắp xếp tần suất lỗi",
+    "concept": "• Pareto Chart: Là biểu đồ cột kết hợp đường tích lũy (cumulative percentage), sắp xếp các nguyên nhân/lỗi theo thứ tự tần suất giảm dần nhằm áp dụng nguyên lý 80/20 (tập trung giải quyết 20% nguyên nhân cốt lõi gây ra 80% hậu quả).",
+    "whyCorrect": "• Pareto chart là biểu đồ DUY NHẤT trong các QC tools được thiết kế đặc thù để xếp hạng (rank) các vấn đề theo tần suất/chi phí giảm dần từ trái sang phải.",
+    "whyWrong": {
+      "B": "• Là gì: Ishikawa (Sơ đồ xương cá) giúp phân loại và liệt kê các nhóm nguyên nhân tiềm ẩn gây ra một sự cố.\n• Dùng để làm gì: Tìm nguyên nhân gốc rễ (Root Cause Analysis).\n• Vì sao sai: Sơ đồ xương cá không xếp hạng hay đo lường tần suất lỗi.",
+      "C": "• Là gì: Control Chart (Biểu đồ kiểm soát) theo dõi biến động của quy trình theo trục thời gian so với giới hạn UCL/LCL.\n• Dùng để làm gì: Kiểm tra quy trình có ổn định hay không.\n• Vì sao sai: Control chart không dùng để xếp hạng danh sách lỗi theo tần suất.",
+      "D": "• Là gì: Scatter Diagram (Biểu đồ phân tán) biểu diễn mối tương quan đồ thị giữa 2 biến số X và Y.\n• Dùng để làm gì: Kiểm tra mối liên hệ phụ thuộc giữa 2 nhân tố.\n• Vì sao sai: Scatter không có chức năng xếp hạng danh mục lỗi."
+    },
+    "memoryTip": "• Pareto ➔ Xếp tần suất giảm dần (80/20) · Fishbone ➔ Tìm nguyên nhân · Control ➔ Biến động theo thời gian · Scatter ➔ Tương quan 2 biến."
+  }
+}
+```
+
+
 
