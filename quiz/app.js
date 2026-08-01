@@ -286,6 +286,7 @@
     btnReshuffle: $("#btnReshuffle"),
     btnResetSession: $("#btnResetSession"),
     btnClearWrong: $("#btnClearWrong"),
+    btnRestoreWrong: $("#btnRestoreWrong"),
     btnGoAll: $("#btnGoAll"),
     searchInput: $("#searchInput"),
     searchResults: $("#searchResults"),
@@ -2796,6 +2797,61 @@
       (e) => {
         e.preventDefault();
         onClearWrongClick(e);
+      },
+      { passive: false }
+    );
+  }
+
+  function restoreWrongFromHistory() {
+    const choices = lastChoicesToObject();
+    if (!choices || !Object.keys(choices).length) {
+      showToast("Không tìm thấy lịch sử làm bài để khôi phục.");
+      return;
+    }
+
+    let restored = 0;
+    Object.entries(choices).forEach(([idStr, chosen]) => {
+      const id = Number(idStr);
+      const q = BANK.find((item) => Number(item.id) === id);
+      if (!q) return;
+      if (!isCorrectSelection(q, chosen)) {
+        if (!wrongIds.has(id)) {
+          wrongIds.add(id);
+          restored++;
+        }
+      }
+    });
+
+    if (restored > 0) {
+      saveWrongIds();
+      updateBadges();
+      if (mode === "wrong") rebuildQueue(null);
+      else render();
+      showToast(`🎉 Đã khôi phục ${restored} câu sai từ lịch sử!`);
+    } else {
+      showToast("Không có câu sai mới nào trong lịch sử làm bài.");
+    }
+  }
+
+  let restoreWrongLockUntil = 0;
+  function onRestoreWrongClick(e) {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    const now = Date.now();
+    if (now < restoreWrongLockUntil) return;
+    restoreWrongLockUntil = now + 500;
+    restoreWrongFromHistory();
+  }
+
+  if (el.btnRestoreWrong) {
+    el.btnRestoreWrong.addEventListener("click", onRestoreWrongClick);
+    el.btnRestoreWrong.addEventListener(
+      "touchend",
+      (e) => {
+        e.preventDefault();
+        onRestoreWrongClick(e);
       },
       { passive: false }
     );
