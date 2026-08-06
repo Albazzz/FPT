@@ -6,13 +6,13 @@
   "rebuilt": 615,
   "fillerLeft": 0,
   "bannedLeft": 0,
-  "total": 615,
+  "total": 1715,
   "tasks": [
     "all",
     "fuexam"
   ],
   "counts": {
-    "all": 550,
+    "all": 1650,
     "fuexam": 65
   },
   "partsOf": "mln",

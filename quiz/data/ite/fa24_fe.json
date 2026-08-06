@@ -1,0 +1,1979 @@
+{
+  "subject": "ite",
+  "task": "fa24_fe",
+  "taskLabel": "FA24 FE",
+  "count": 60,
+  "questions": [
+    {
+      "id": 1,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 1,
+      "chooseType": "Choose 1 answer",
+      "question": "What does the acronym SIEM stand for in a cybersecurity context?",
+      "options": {
+        "A": "Selective information extrapolation methods",
+        "B": "Social, interpersonal, empathic, mental",
+        "C": "Security Information and Event Management",
+        "D": "Serial input to externalized modulation"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Từ viết tắt SIEM đại diện cho điều gì trong bối cảnh an ninh mạng?",
+        "optionsVi": {
+          "A": "Phương pháp suy luận thông tin có chọn lọc",
+          "B": "Xã hội, tương tác, thấu cảm, tâm lý",
+          "C": "Quản lý Sự kiện và Thông tin An ninh (Security Information and Event Management)",
+          "D": "Đầu vào chuỗi để điều chế ngoài"
+        },
+        "answerDisplay": "C. Security Information and Event Management",
+        "concept": "• SIEM (Security Information and Event Management): Nền tảng an ninh mạng tổng hợp, tương quan và phân tích log sự kiện từ toàn bộ hạ tầng công nghệ.",
+        "whyCorrect": "• Định nghĩa chính xác tên gọi chuẩn của hệ thống SIEM trong an toàn thông tin.",
+        "whyWrong": {
+          "A": "• Đây là tên gọi ngẫu nhiên.",
+          "B": "• Thuộc tính tâm lý xã hội không thuộc an ninh mạng.",
+          "D": "• Giao thức phần cứng viễn thông không liên quan."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 2,
+      "chooseType": "Choose 1 answer",
+      "question": "The Data minimization principle requires that you limit data collection to only what is:",
+      "options": {
+        "A": "Necessary for differential privacy",
+        "B": "Optional for a chain of command",
+        "C": "Needed to have k-anonymity",
+        "D": "Directly required to fulfill a specific, stated purpose"
+      },
+      "answer": "D",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Nguyên tắc Giảm thiểu dữ liệu (Data minimization) yêu cầu bạn giới hạn việc thu thập dữ liệu chỉ trong phạm vi những gì:",
+        "optionsVi": {
+          "A": "Cần thiết cho riêng tư vi sai",
+          "B": "Tùy chọn cho chuỗi chỉ huy",
+          "C": "Cần thiết để có k-anonymity",
+          "D": "Trực tiếp cần thiết để thực hiện mục đích cụ thể đã xác định (required to fulfill a specific purpose)"
+        },
+        "answerDisplay": "D. required to fulfill a specific purpose",
+        "concept": "• Data Minimization Principle: Thu thập đúng và đủ dữ liệu cần thiết cho mục đích công bố.",
+        "whyCorrect": "• Giới hạn thu thập đúng mục đích sử dụng là bản chất của Data Minimization.",
+        "whyWrong": {
+          "A": "• Differential privacy là kỹ thuật toán học.",
+          "B": "• Chuỗi chỉ huy thuộc về cấu trúc tổ chức.",
+          "C": "• k-anonymity là mô hình ẩn danh dữ liệu."
+        }
+      }
+    },
+    {
+      "id": 3,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 3,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following risk categories deals with stakeholder responsibility in creating and using data-driven technologies?",
+      "options": {
+        "A": "Explainability",
+        "B": "Accountability",
+        "C": "Transparency",
+        "D": "Understandability"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Danh mục rủi ro nào xử lý trách nhiệm của các bên liên quan trong việc tạo ra và sử dụng công nghệ dựa trên dữ liệu?",
+        "optionsVi": {
+          "A": "Tính giải thích được",
+          "B": "Trách nhiệm giải trình (Accountability)",
+          "C": "Tính minh bạch",
+          "D": "Tính dễ hiểu"
+        },
+        "answerDisplay": "B. Accountability",
+        "concept": "• Accountability: Quy định rõ nghĩa vụ gánh chịu trách nhiệm đối với các tác động của hệ thống công nghệ.",
+        "whyCorrect": "• Định rõ ai chịu trách nhiệm cho các hậu quả của công nghệ.",
+        "whyWrong": {
+          "A": "• Explainability là thuộc tính giải thích thuật toán.",
+          "C": "• Transparency là công khai thông tin.",
+          "D": "• Understandability là tính dễ tiếp thu."
+        }
+      }
+    },
+    {
+      "id": 4,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 4,
+      "chooseType": "Choose 1 answer",
+      "question": "What kind of shape does a normal distribution take on when plotted in a histogram?",
+      "options": {
+        "A": "Tail shape",
+        "B": "Square shape",
+        "C": "Bell shape",
+        "D": "Tree shape"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Phân bố chuẩn (Normal distribution) có hình dạng như thế nào khi được biểu diễn trên biểu đồ cột (histogram)?",
+        "optionsVi": {
+          "A": "Hình cái đuôi",
+          "B": "Hình vuông",
+          "C": "Hình quả chuông (Bell shape / Bell curve)",
+          "D": "Hình cây"
+        },
+        "answerDisplay": "C. Bell shape",
+        "concept": "• Gaussian Normal Distribution: Hình quả chuông đối xứng qua giá trị trung bình Mean.",
+        "whyCorrect": "• Hình quả chuông đối xứng đặc trưng của phân bố chuẩn.",
+        "whyWrong": {
+          "A": "• Tail shape là phân bố lệch Skewed.",
+          "B": "• Square shape là phân bố đều Uniform.",
+          "D": "• Tree shape là cấu trúc cây."
+        }
+      }
+    },
+    {
+      "id": 5,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 5,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following is a transparency risk of closed source software?",
+      "options": {
+        "A": "Closed source software may not be accessible to independent auditors",
+        "B": "Closed source software cannot be shared with business partners",
+        "C": "Closed source software includes obfuscated code",
+        "D": "Closed source software cannot be reviewed by developing organization"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Nội dung nào sau đây mô tả rủi ro về tính minh bạch của phần mềm mã nguồn đóng (Closed source software)?",
+        "optionsVi": {
+          "A": "Phần mềm mã nguồn đóng có thể không cho phép các kiểm toán viên độc lập bên ngoài truy cập xem xét (may not be accessible to independent auditors)",
+          "B": "Không thể chia sẻ với đối tác",
+          "C": "Chứa mã xáo trộn",
+          "D": "Không thể được xem xét bởi chính tổ chức phát triển"
+        },
+        "answerDisplay": "A. Closed source software may not be accessible to independent auditors.",
+        "concept": "• Closed Source Transparency Risk: Ngăn cản sự kiểm tra độc lập của bên thứ ba.",
+        "whyCorrect": "• Việc ngăn cấm kiểm toán viên độc lập kiểm tra mã nguồn tạo ra rủi ro thiếu minh bạch.",
+        "whyWrong": {
+          "B": "• Vẫn chia sẻ qua hợp đồng thương mại.",
+          "C": "• Mã nguồn đóng lưu mã nhị phân.",
+          "D": "• Tổ chức tự phát triển hoàn toàn nắm mã nguồn."
+        }
+      }
+    },
+    {
+      "id": 6,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 6,
+      "chooseType": "Choose 1 answer",
+      "question": "An unfair model will by nature:",
+      "options": {
+        "A": "Optimize for making fewest decisions",
+        "B": "Try to balance groups automatically",
+        "C": "Optimize for overall accuracy while concentrating errors on a specific subgroup",
+        "D": "Optimize for making fewest mistakes"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Một mô hình không công bằng (Unfair model) về mặt bản chất sẽ thực hiện việc tối ưu hóa nào?",
+        "optionsVi": {
+          "A": "Tối ưu hóa ra ít quyết định",
+          "B": "Tự động cân bằng nhóm",
+          "C": "Tối ưu hóa độ chính xác chung bằng cách dồn sai số/lỗi lên một phân nhóm yếu thế cụ thể (concentrating errors on specific subgroup)",
+          "D": "Tối ưu hóa mắc ít lỗi nhất"
+        },
+        "answerDisplay": "C. optimize for overall accuracy while concentrating errors on a specific subgroup",
+        "concept": "• Unfair Model Behavior: Giữ chỉ số chung cao bằng cách dồn rủi ro thiệt hại lên phân nhóm thiểu số.",
+        "whyCorrect": "• Mô hình thiên vị dồn sai sót thiệt hại lên nhóm yếu thế.",
+        "whyWrong": {
+          "A": "• Số lượng quyết định không phản ánh thiên vị.",
+          "B": "• Mô hình thiên vị không tự cân bằng.",
+          "D": "• Mắc ít lỗi nhất không đảm bảo lỗi được phân bố đều."
+        }
+      }
+    },
+    {
+      "id": 7,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 7,
+      "chooseType": "Choose 1 answer",
+      "question": "What can be learned from a predictive model should not change whether an individual's data is included or excluded in the training set. This concept refers to:",
+      "options": {
+        "A": "Differential privacy",
+        "B": "Dataset filtering",
+        "C": "Biased dataset",
+        "D": "Model fairness score"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Những gì học được từ mô hình dự đoán không nên thay đổi bất kể dữ liệu của một cá nhân có xuất hiện hay bị loại khỏi tập huấn luyện hay không. Khái niệm này đề cập đến:",
+        "optionsVi": {
+          "A": "Tính riêng tư vi sai (Differential privacy)",
+          "B": "Lọc tập dữ liệu",
+          "C": "Tập dữ liệu thiên vị",
+          "D": "Điểm công bằng mô hình"
+        },
+        "answerDisplay": "A. Differential privacy",
+        "concept": "• Core Differential Privacy Principle: Kết quả đầu ra mô hình không bị ảnh hưởng bởi sự có mặt hay vắng mặt của bất kỳ 1 cá nhân nào.",
+        "whyCorrect": "• Đảm bảo sự thêm hay bớt dữ liệu cá nhân không làm thay đổi kết quả dự đoán tổng thể.",
+        "whyWrong": {
+          "B": "• Lọc dữ liệu là khâu tiền xử lý.",
+          "C": "• Tập dữ liệu thiên vị gây sai lệch mô hình.",
+          "D": "• Điểm công bằng đo lường độ bình đẳng."
+        }
+      }
+    },
+    {
+      "id": 8,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 8,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following defines the AI black box problem?",
+      "options": {
+        "A": "The challenge of understanding how complex machine learning algorithms make specific decisions",
+        "B": "Not knowing how something crashed",
+        "C": "Machine intelligence making illusory predictions",
+        "D": "A dangerous machine put in digital prison"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Nội dung nào sau đây định nghĩa bài toán Hộp đen (Black box problem) trong AI?",
+        "optionsVi": {
+          "A": "Thách thức trong việc thấu hiểu cách các thuật toán học máy phức tạp đưa ra các quyết định cụ thể (challenge of understanding how algorithms make decisions)",
+          "B": "Không biết tại sao phần mềm sụp đổ",
+          "C": "Trí tuệ máy tạo dự đoán ảo",
+          "D": "Máy tính bị giam trong tù số"
+        },
+        "answerDisplay": "A. The challenge of understanding how complex ML algorithms make decisions.",
+        "concept": "• Black Box Problem: Không thể truy ngược logic toán học bên trong mạng nơ-ron phức tạp.",
+        "whyCorrect": "• Thách thức thấu hiểu cách mô hình đưa ra quyết định.",
+        "whyWrong": {
+          "B": "• Phần mềm crash là lỗi lập trình Exception.",
+          "C": "• Dự đoán ảo là Ảo giác AI Hallucination.",
+          "D": "• Tù số là khái niệm viễn tưởng."
+        }
+      }
+    },
+    {
+      "id": 9,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 9,
+      "chooseType": "Choose 1 answer",
+      "question": "A type of artificial intelligence that outperforms humans in specific defined tasks is known as:",
+      "options": {
+        "A": "General AI",
+        "B": "Narrow AI",
+        "C": "AEI",
+        "D": "Special AI"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Loại trí tuệ nhân tạo vượt trội hơn con người trong một số nhiệm vụ cụ thể được gọi là gì?",
+        "optionsVi": {
+          "A": "AI tổng quát (General AI)",
+          "B": "AI hẹp / AI chuyên biệt (Narrow AI)",
+          "C": "AEI",
+          "D": "AI đặc biệt"
+        },
+        "answerDisplay": "B. Narrow Al",
+        "concept": "• Narrow AI: Trí tuệ chuyên biệt một tác vụ duy nhất.",
+        "whyCorrect": "• Định nghĩa chuẩn của Narrow AI.",
+        "whyWrong": {
+          "A": "• General AI có năng lực đa nhiệm như con người.",
+          "C": "• AEI không phải thuật ngữ AI tiêu chuẩn.",
+          "D": "• Special AI không phải thuật ngữ học thuật."
+        }
+      }
+    },
+    {
+      "id": 10,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 10,
+      "chooseType": "Choose 1 answer",
+      "question": "When building a predictive model, what is the goal of the training phase?",
+      "options": {
+        "A": "To specify algorithm and clean data",
+        "B": "To adjust the model based on a subset of data, optimizing for a lower error rate",
+        "C": "To use the model in real-world scenarios",
+        "D": "To adjust training methods from backpropagation to supervised learning"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Khi xây dựng một mô hình dự đoán, mục tiêu của giai đoạn huấn luyện (Training phase) là gì?",
+        "optionsVi": {
+          "A": "Chỉ định thuật toán và làm sạch dữ liệu",
+          "B": "Điều chỉnh các trọng số mô hình dựa trên tập dữ liệu huấn luyện, tối ưu hóa để đạt tỷ lệ lỗi sai thấp nhất (adjust model, optimizing for lower error rate)",
+          "C": "Sử dụng mô hình trong kịch bản thực tế",
+          "D": "Chuyển đổi phương pháp huấn luyện"
+        },
+        "answerDisplay": "B. To adjust the model based on a subset of data, optimizing for a lower error rate",
+        "concept": "• Goal of Training: Cập nhật trọng số tham số để hạ thấp hàm sai số Loss.",
+        "whyCorrect": "• Tối ưu hóa trọng số mô hình để giảm tỷ lệ sai số.",
+        "whyWrong": {
+          "A": "• Chọn thuật toán là khâu chuẩn bị.",
+          "C": "• Sử dụng thực tế là pha triển khai Deployment.",
+          "D": "• Backpropagation thuộc Supervised Learning."
+        }
+      }
+    },
+    {
+      "id": 11,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 11,
+      "chooseType": "Choose 1 answer",
+      "question": "Pseudocode can best be defined as:",
+      "options": {
+        "A": "An explainable description of code that is meant for humans, not computers",
+        "B": "A Python library for machine learning",
+        "C": "A middle ground between code and plain writing fed into computers",
+        "D": "A type of Javascript"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Mã giả (Pseudocode) được định nghĩa đúng nhất là gì?",
+        "optionsVi": {
+          "A": "Mô tả thuật toán có thể giải thích được dành cho con người đọc hiểu, không dùng cho máy tính (meant for humans, not computers)",
+          "B": "Thư viện Python",
+          "C": "Ngôn ngữ trung gian nạp vào máy tính",
+          "D": "Loại Javascript"
+        },
+        "answerDisplay": "A. an explainable description of code that is meant for humans, not computers",
+        "concept": "• Pseudocode: Mã giả mô tả thuật toán bằng ngôn ngữ tự nhiên dành cho con người thấu hiểu.",
+        "whyCorrect": "• Dành cho con người đọc hiểu chứ không thực thi trực tiếp trên máy.",
+        "whyWrong": {
+          "B": "• Không phải thư viện lập trình.",
+          "C": "• Máy tính không thực thi trực tiếp mã giả.",
+          "D": "• Không phải ngôn ngữ Javascript."
+        }
+      }
+    },
+    {
+      "id": 12,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 12,
+      "chooseType": "Choose 1 answer",
+      "question": "To measure a predictive model's accuracy, you:",
+      "options": {
+        "A": "Divide number of predictions by total dataset",
+        "B": "Measure ratio of error curve",
+        "C": "Multiply predictions by percentage",
+        "D": "Divide the number of correct predictions by the total number of predictions"
+      },
+      "answer": "D",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Để đo lường độ chính xác (Accuracy) của một mô hình dự đoán, bạn thực hiện phép tính nào?",
+        "optionsVi": {
+          "A": "Chia số dự đoán cho tổng tập dữ liệu",
+          "B": "Đo tỷ lệ đường cong lỗi",
+          "C": "Nhân tổng dự đoán với phần trăm đúng",
+          "D": "Chia số lượng dự đoán đúng cho tổng số lượng dự đoán (Divide correct predictions by total predictions)"
+        },
+        "answerDisplay": "D. divide the number of correct predictions by the total number of predictions",
+        "concept": "• Accuracy Formula: (Correct Predictions) / (Total Predictions).",
+        "whyCorrect": "• Phép chia số dự đoán đúng cho tổng số lần dự đoán ra tỷ lệ độ chính xác.",
+        "whyWrong": {
+          "A": "• Phép chia không tính đến dự đoán đúng.",
+          "B": "• Đường cong lỗi đo Loss curve.",
+          "C": "• Phép nhân không ra công thức Accuracy."
+        }
+      }
+    },
+    {
+      "id": 13,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 13,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following is a good example of a feedback loop in machine learning?",
+      "options": {
+        "A": "A shopping app surfaces items based on profiles",
+        "B": "A shopping app tracks purchases",
+        "C": "A social media site tracks engagement, uses an algorithm to surface posts you're likely to engage with, which then goes back into the algorithm",
+        "D": "A site surfaces controversial posts"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Ví dụ nào sau đây là một minh họa rõ ràng về Vòng lặp phản hồi (Feedback loop) trong học máy?",
+        "optionsVi": {
+          "A": "App mua sắm gợi ý món đồ",
+          "B": "App mua sắm theo dõi đơn hàng",
+          "C": "Trang mạng xã hội theo dõi tương tác, dùng thuật toán đẩy các bài viết bạn dễ tương tác, thông tin tương tác đó lại tiếp tục nạp ngược vào thuật toán (goes back into algorithm)",
+          "D": "Trang web gợi ý bài viết gây tranh cãi"
+        },
+        "answerDisplay": "C. A social media site tracks engagement, uses an algorithm to surface posts you're likely to engage with, which then goes back into the algorithm",
+        "concept": "• Feedback Loop: Dữ liệu hành vi đầu ra nạp ngược lại làm dữ liệu huấn luyện đầu vào cho thuật toán.",
+        "whyCorrect": "• Tương tác người dùng nạp ngược lại vào thuật toán để tiếp tục huấn luyện củng cố.",
+        "whyWrong": {
+          "A": "• Gợi ý cơ bản không có tính củng cố vòng lặp.",
+          "B": "• Theo dõi đơn thuần là dữ liệu tĩnh.",
+          "D": "• Bài viết tranh cãi là chiến lược nội dung."
+        }
+      }
+    },
+    {
+      "id": 14,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 14,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following is one explanation for why cognitive biases exist in human reasoning?",
+      "options": {
+        "A": "We use mental shortcuts (heuristics) to make decisions efficiently under information overload and limited time",
+        "B": "We use them to help remember things",
+        "C": "They help us think logically",
+        "D": "They are taught to us in school"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Giải thích nào sau đây mô tả lý do tại sao Định kiến nhận thức (Cognitive biases) tồn tại trong lập luận của con người?",
+        "optionsVi": {
+          "A": "Con người sử dụng các lối tắt tư duy (heuristics) để đưa ra quyết định nhanh chóng trong điều kiện quá tải thông tin và giới hạn thời gian (mental shortcuts for efficiency)",
+          "B": "Dùng để nhớ đồ vật",
+          "C": "Giúp tư duy logic",
+          "D": "Được dạy ở trường học"
+        },
+        "answerDisplay": "A. We use mental shortcuts to make decisions efficiently.",
+        "concept": "• Heuristics & Cognitive Biases: Lối tắt nhận thức giúp não bộ xử lý thông tin nhanh, vô tình tạo ra định kiến sai lệch.",
+        "whyCorrect": "• Sử dụng lối tắt tư duy ra quyết định nhanh là nguyên nhân gốc rễ sinh ra định kiến nhận thức.",
+        "whyWrong": {
+          "B": "• Không phải công cụ lưu trí nhớ.",
+          "C": "• Đi ngược lại với logic thuần túy.",
+          "D": "• Đây là cơ chế tâm lý tự nhiên."
+        }
+      }
+    },
+    {
+      "id": 15,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 15,
+      "chooseType": "Choose 1 answer",
+      "question": "Dating algorithms become biased mostly through offering users:",
+      "options": {
+        "A": "Collaborative filtering that reinforces existing stereotypes",
+        "B": "Access to separate data models",
+        "C": "Different ways to match",
+        "D": "Unlimited matches per day"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Các thuật toán hẹn hò trở nên bị thiên vị chủ yếu thông qua việc cung cấp cho người dùng tính năng gì?",
+        "optionsVi": {
+          "A": "Lọc cộng tác (Collaborative filtering) củng cố các định kiến hấp dẫn sẵn có",
+          "B": "Truy cập mô hình dữ liệu riêng",
+          "C": "Các cách ghép đôi khác nhau",
+          "D": "Không giới hạn lượt ghép đôi"
+        },
+        "answerDisplay": "A. collaborative filtering",
+        "concept": "• Collaborative Filtering Bias: Tự động nhân rộng các thiên vị dựa trên hành vi quẹt thẻ của số đông.",
+        "whyCorrect": "• Lọc cộng tác củng cố các định kiến xã hội vốn có trong dữ liệu.",
+        "whyWrong": {
+          "B": "• Mô hình riêng là kiến trúc hệ thống.",
+          "C": "• Cách match là giao diện người dùng.",
+          "D": "• Lượt match không sinh thiên vị nhóm."
+        }
+      }
+    },
+    {
+      "id": 16,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 16,
+      "chooseType": "Choose 1 answer",
+      "question": "How does the 'virtuous cycle' that benefits Big Tech operate?",
+      "options": {
+        "A": "Organizations write algorithms with fewer biases",
+        "B": "By acting virtuous, public respects Big Tech",
+        "C": "Better classes of customers lead to richer data",
+        "D": "Data-driven algorithms improve solutions, leading to new customers, and better data"
+      },
+      "answer": "D",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Chu trình tăng trưởng độc quyền ('Virtuous Cycle') mang lại lợi ích cho các tập đoàn Big Tech vận hành như thế nào?",
+        "optionsVi": {
+          "A": "Tổ chức viết thuật toán ít thiên vị",
+          "B": "Công chúng tôn trọng Big Tech hơn",
+          "C": "Khách hàng tốt mang lại dữ liệu phong phú",
+          "D": "Thuật toán dựa trên dữ liệu cải thiện giải pháp -> Thu hút khách hàng mới -> Thu thập thêm dữ liệu tốt hơn (Data -> Product -> Users -> More Data)"
+        },
+        "answerDisplay": "D. Data-driven algorithms improve solutions, leading to new customers, and better data.",
+        "concept": "• Data Flywheel Effect: Dữ liệu -> Sản phẩm tốt -> Nhiều người dùng -> Thêm dữ liệu độc quyền.",
+        "whyCorrect": "• Chu trình tự củng cố giữa dữ liệu, chất lượng sản phẩm và người dùng tạo lợi thế độc quyền.",
+        "whyWrong": {
+          "A": "• Viết thuật toán ít thiên vị là mục tiêu đạo đức.",
+          "B": "• Tôn trọng là hiệu ứng thương hiệu.",
+          "C": "• Khách hàng giàu không phải nguyên nhân cốt lõi."
+        }
+      }
+    },
+    {
+      "id": 17,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 17,
+      "chooseType": "Choose 1 answer",
+      "question": "A model that equalizes the number of mistakes it makes for each subgroup to reduce harm is deciding on:",
+      "options": {
+        "A": "Equality of true outcomes",
+        "B": "Equality of false negatives",
+        "C": "Equality of training data",
+        "D": "Equality of prediction bias"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Một mô hình cân bằng số lượng sai sót mà nó mắc phải cho mỗi nhóm nhỏ để giảm thiểu tổn hại là đang quyết định về tiêu chuẩn nào?",
+        "optionsVi": {
+          "A": "Bình đẳng kết quả thực tế",
+          "B": "Bình đẳng âm tính giả (Equality of false negatives)",
+          "C": "Bình đẳng dữ liệu huấn luyện",
+          "D": "Bình đẳng thiên vị dự đoán"
+        },
+        "answerDisplay": "B. equality of false negatives",
+        "concept": "• Equality of False Negatives: Cân bằng tỷ lệ bỏ sót sai sót gây hại ngang nhau giữa các nhóm.",
+        "whyCorrect": "• Đảm bảo rủi ro bỏ sót tổn hại không dồn lên một nhóm yếu thế cụ thể.",
+        "whyWrong": {
+          "A": "• Bình đẳng kết quả là Equalized Odds.",
+          "C": "• Dữ liệu huấn luyện là phân phối mẫu.",
+          "D": "• Thiên vị dự đoán là chỉ số đo chung."
+        }
+      }
+    },
+    {
+      "id": 18,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 18,
+      "chooseType": "Choose 1 answer",
+      "question": "If your company needs to perform the exact same automated analysis as new data arrives periodically every month, what is the best term to describe that process?",
+      "options": {
+        "A": "Data Pipeline",
+        "B": "Workflow",
+        "C": "Swimlane",
+        "D": "Use case"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Nếu công ty bạn cần thực hiện cùng một quy trình phân tích tự động khi dữ liệu mới đổ về hàng tháng, thuật ngữ nào mô tả đúng nhất quy trình đó?",
+        "optionsVi": {
+          "A": "Đường ống xử lý dữ liệu (Data Pipeline)",
+          "B": "Luồng công việc (Workflow)",
+          "C": "Làn bơi (Swimlane)",
+          "D": "Tình huống sử dụng (Use case)"
+        },
+        "answerDisplay": "A. pipeline",
+        "concept": "• Data Pipeline: Chuỗi tự động hóa thu thập, làm sạch và phân tích dữ liệu lặp đi lặp lại theo định kỳ.",
+        "whyCorrect": "• Tự động hóa quy trình phân tích dữ liệu đầu vào định kỳ là bản chất của Data Pipeline.",
+        "whyWrong": {
+          "B": "• Workflow là quy trình làm việc con người.",
+          "C": "• Swimlane là sơ đồ phân công.",
+          "D": "• Use case là kịch bản phần mềm."
+        }
+      }
+    },
+    {
+      "id": 19,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 19,
+      "chooseType": "Choose 1 answer",
+      "question": "A predictive model's true positive result can be defined as:",
+      "options": {
+        "A": "Predicted negative, actual negative",
+        "B": "Predicted negative, actual positive",
+        "C": "The predicted result was positive, and the actual result was positive",
+        "D": "Predicted positive, actual negative"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Kết quả Dương tính thật (True Positive) của một mô hình dự đoán được định nghĩa là gì?",
+        "optionsVi": {
+          "A": "Dự đoán âm tính, thực tế âm tính (True Negative)",
+          "B": "Dự đoán âm tính, thực tế dương tính (False Negative)",
+          "C": "Kết quả dự đoán là dương tính và kết quả thực tế cũng là dương tính (predicted positive, actual positive)",
+          "D": "Dự đoán dương tính, thực tế âm tính (False Positive)"
+        },
+        "answerDisplay": "C. the predicted result was positive, and the actual result was positive",
+        "concept": "• Confusion Matrix Metrics: True Positive (TP) = Dự đoán Dương tính VÀ Thực tế Dương tính.",
+        "whyCorrect": "• Định nghĩa chính xác của chỉ số True Positive trong Ma trận nhầm lẫn.",
+        "whyWrong": {
+          "A": "• Đây là True Negative (TN).",
+          "B": "• Đây là False Negative (FN).",
+          "D": "• Đây là False Positive (FP)."
+        }
+      }
+    },
+    {
+      "id": 20,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 20,
+      "chooseType": "Choose 1 answer",
+      "question": "What is ambient intelligence?",
+      "options": {
+        "A": "Linked IoT collecting home data",
+        "B": "Linked IoT conducting government surveillance",
+        "C": "Linked IoT technology that is always on and acting to personalize the experience for people within its environment",
+        "D": "Linked IoT collecting campus data"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Trí tuệ môi trường (Ambient Intelligence) được định nghĩa là gì?",
+        "optionsVi": {
+          "A": "Công nghệ IoT thu thập dữ liệu nhà ở",
+          "B": "Công nghệ IoT giám sát lén lút",
+          "C": "Mạng lưới công nghệ IoT kết nối luôn bật và chủ động tương tác để cá nhân hóa trải nghiệm cho con người trong môi trường sống (always on and acting to personalize experience)",
+          "D": "Công nghệ IoT thu thập dữ liệu khuôn viên"
+        },
+        "answerDisplay": "C. Linked IOT technology that always on and acting to personalize the experience for the people within its environment",
+        "concept": "• Ambient Intelligence (AmI): Môi trường thông minh luôn bật để tự động cá nhân hóa trải nghiệm.",
+        "whyCorrect": "• Tính chất luôn bật và tự động cá nhân hóa môi trường sống cho con người.",
+        "whyWrong": {
+          "A": "• Thu thập dữ liệu nhà ở là Smart Home cơ bản.",
+          "B": "• Giám sát lén lút là Mass Surveillance.",
+          "D": "• Dữ liệu khuôn viên là Campus IoT."
+        }
+      }
+    },
+    {
+      "id": 21,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 21,
+      "chooseType": "Choose 1 answer",
+      "question": "What does 'Ethics by Design' mean in software development?",
+      "options": {
+        "A": "Tenet of engineering activism",
+        "B": "An approach in which ethical considerations are integrated proactively from the initial design stage of a product",
+        "C": "A creative design approach",
+        "D": "Reference to IEEE framework"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "'Đạo đức theo thiết kế' (Ethics by Design) có nghĩa là gì trong phát triển phần mềm?",
+        "optionsVi": {
+          "A": "Nguyên lý hoạt động kỹ thuật",
+          "B": "Cách tiếp cận trong đó các xem xét đạo đức được chủ động tích hợp ngay từ giai đoạn thiết kế ban đầu của sản phẩm (ethical considerations integrated from initial design stage)",
+          "C": "Cách tiếp cận thiết kế sáng tạo",
+          "D": "Tài liệu tham khảo IEEE"
+        },
+        "answerDisplay": "B. An approach in which ethics is considered from the initial design stage.",
+        "concept": "• Ethics by Design: Tích hợp chủ động tiêu chuẩn đạo đức và quyền riêng tư ngay từ khâu phác thảo thiết kế hệ thống.",
+        "whyCorrect": "• Chủ động cân nhắc đạo đức ngay từ giai đoạn ý tưởng thiết kế đầu tiên.",
+        "whyWrong": {
+          "A": "• Không phải khẩu hiệu hoạt động.",
+          "C": "• Không chỉ dừng ở mảng sáng tạo đồ họa.",
+          "D": "• IEEE cung cấp khung hỗ trợ chứ không định nghĩa hẹp thuật ngữ này."
+        }
+      }
+    },
+    {
+      "id": 22,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 22,
+      "chooseType": "Choose 1 answer",
+      "question": "What are the attributes of an error function when training a predictive model?",
+      "options": {
+        "A": "Percentage of formatted data",
+        "B": "The percentage or degree to which predictions deviate from actual outcomes",
+        "C": "Ratio of algorithm to curve",
+        "D": "Ratio of training data to consumed data"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Các thuộc tính của một hàm sai số (Error function) khi huấn luyện mô hình dự đoán thể hiện điều gì?",
+        "optionsVi": {
+          "A": "Tỷ lệ dữ liệu định dạng đúng",
+          "B": "Tỷ lệ hoặc mức độ mà các dự đoán của mô hình bị lệch so với kết quả thực tế (percentage of predictions that don't match actual outcomes)",
+          "C": "Tỷ lệ thuật toán trên đường cong",
+          "D": "Tỷ lệ dữ liệu huấn luyện"
+        },
+        "answerDisplay": "B. the percentage of predictions that don't match actual outcomes",
+        "concept": "• Error / Loss Function: Đo lường mức độ sai lệch giữa dự đoán (Prediction) và thực tế (Ground truth).",
+        "whyCorrect": "• Đo lường tỷ lệ/mức độ dự đoán không khớp với kết quả thực tế.",
+        "whyWrong": {
+          "A": "• Định dạng dữ liệu thuộc tiền xử lý.",
+          "C": "• Không có tỷ lệ thuật toán trên đường cong.",
+          "D": "• Tỷ lệ dữ liệu thuộc khai thác mẫu."
+        }
+      }
+    },
+    {
+      "id": 23,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 23,
+      "chooseType": "Choose 1 answer",
+      "question": "At what point should ethical consideration ideally be applied to emerging technologies?",
+      "options": {
+        "A": "Once an ethical issue receives negative feedback",
+        "B": "Upon delivery",
+        "C": "During periodic reviews",
+        "D": "From its inception and design, through maintenance, to applying foresight regarding its decommissioning"
+      },
+      "answer": "D",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Tại thời điểm nào các xem xét đạo đức nên được áp dụng lý tưởng cho các công nghệ mới nổi?",
+        "optionsVi": {
+          "A": "Khi gặp phản hồi tiêu cực",
+          "B": "Khi bàn giao sản phẩm",
+          "C": "Trong các đợt xem xét định kỳ",
+          "D": "Xuyên suốt từ khi hình thành ý tưởng, qua quá trình bảo trì, cho đến khi ngừng vận hành hoàn toàn (From inception through maintenance to decommissioning)"
+        },
+        "answerDisplay": "D. From its inception, through maintenance, to applying foresight regarding its decommissioning.",
+        "concept": "• Lifecycle Ethical Governance: Đạo đức phải được lồng ghép trong suốt toàn bộ vòng đời sản phẩm (Inception -> Maintenance -> Decommissioning).",
+        "whyCorrect": "• Bao phủ toàn bộ vòng đời từ khâu ý tưởng đến khi loại bỏ công nghệ.",
+        "whyWrong": {
+          "A": "• Phản ứng sau khi bùng phát sự cố là bị động.",
+          "B": "• Bàn giao mới xem xét đạo đức là quá muộn.",
+          "C": "• Xem xét định kỳ là chưa đủ nếu bỏ qua khâu thiết kế ban đầu."
+        }
+      }
+    },
+    {
+      "id": 24,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 24,
+      "chooseType": "Choose 1 answer",
+      "question": "Our goals for building an ethical predictive model include making sure the results are:",
+      "options": {
+        "A": "Precise, explainable, predictable",
+        "B": "Accurate, precise, fair",
+        "C": "Precise, methodical, ethical",
+        "D": "Accurate, fair, and explainable"
+      },
+      "answer": "D",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Mục tiêu khi xây dựng một mô hình dự đoán có đạo đức bao gồm việc đảm bảo kết quả đạt 3 tiêu chí nào?",
+        "optionsVi": {
+          "A": "Chính xác, giải thích được, dự đoán được",
+          "B": "Chính xác, chuẩn xác, công bằng",
+          "C": "Chuẩn xác, bài bản, đạo đức",
+          "D": "Chính xác (Accurate), Công bằng (Fair) và Giải thích được (Explainable)"
+        },
+        "answerDisplay": "D. accurate, fair and explainable",
+        "concept": "• Trụ cột AI Đạo đức: Accuracy + Fairness + Explainability.",
+        "whyCorrect": "• Ba tiêu chuẩn cốt lõi của một mô hình dự đoán có trách nhiệm.",
+        "whyWrong": {
+          "A": "• Thiếu tiêu chuẩn công bằng.",
+          "B": "• Thiếu tiêu chuẩn giải thích được.",
+          "C": "• Thiếu tiêu chuẩn công bằng."
+        }
+      }
+    },
+    {
+      "id": 25,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 25,
+      "chooseType": "Choose 1 answer",
+      "question": "What side effect of learning algorithms creates an ethical dilemma regarding user privacy?",
+      "options": {
+        "A": "Learning algorithms require high computing power",
+        "B": "Learning algorithms require large datasets, which often means storing personally identifying information about users",
+        "C": "Learning algorithms require government regulation",
+        "D": "Learning algorithms require fast internet"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Tác dụng phụ nào của các thuật toán học máy tạo ra một tình huống tiến thoái lưỡng nan về đạo đức riêng tư cho người dùng?",
+        "optionsVi": {
+          "A": "Thuật toán yêu cầu năng lượng tính toán cao",
+          "B": "Các thuật toán học máy yêu cầu các tập dữ liệu khổng lồ, đồng nghĩa với việc thu thập và lưu trữ thông tin định danh cá nhân của người dùng (require large datasets, storing identifying information)",
+          "C": "Thuật toán yêu cầu chính phủ quản lý",
+          "D": "Thuật toán cần mạng nhanh"
+        },
+        "answerDisplay": "B. Learning algorithms require large datasets, which means storing identifying information about users",
+        "concept": "• Big Data Privacy Dilemma: Học máy càng thông minh càng thèm khát lượng lớn dữ liệu cá nhân, trực tiếp đe dọa quyền riêng tư.",
+        "whyCorrect": "• Nhu cầu nạp dữ liệu khổng lồ đe dọa trực tiếp quyền riêng tư cá nhân.",
+        "whyWrong": {
+          "A": "• Năng lượng tính toán thuộc về rủi ro môi trường.",
+          "C": "• Quản lý chính phủ là giải pháp pháp lý.",
+          "D": "• Mạng nhanh là hạ tầng viễn thông."
+        }
+      }
+    },
+    {
+      "id": 26,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 26,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following is a good example of a feedback loop in machine learning?",
+      "options": {
+        "A": "Shopping app surfaces items based on profiles",
+        "B": "Shopping app tracks purchases",
+        "C": "A social media site tracks engagement, uses an algorithm to surface posts you're likely to engage with, which then goes back into the algorithm",
+        "D": "Site surfaces controversial posts"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Ví dụ nào sau đây là một minh họa rõ ràng về Vòng lặp phản hồi (Feedback loop) trong học máy?",
+        "optionsVi": {
+          "A": "App mua sắm gợi ý món đồ",
+          "B": "App mua sắm theo dõi đơn hàng",
+          "C": "Trang mạng xã hội theo dõi tương tác, dùng thuật toán đẩy bài viết bạn dễ tương tác, thông tin tương tác đó lại tiếp tục nạp ngược vào thuật toán (goes back into algorithm)",
+          "D": "Trang web gợi ý bài viết gây tranh cãi"
+        },
+        "answerDisplay": "C. A social media site tracks engagement, uses an algorithm to surface posts you're likely to engage with, which then goes back into the algorithm",
+        "concept": "• Feedback Loop: Dữ liệu hành vi đầu ra nạp ngược lại làm dữ liệu đầu vào.",
+        "whyCorrect": "• Tương tác người dùng nạp ngược lại vào thuật toán để tiếp tục huấn luyện.",
+        "whyWrong": {
+          "A": "• Gợi ý đơn thuần không có tính củng cố vòng lặp.",
+          "B": "• Ghi nhận dữ liệu tĩnh.",
+          "D": "• Chiến lược nội dung."
+        }
+      }
+    },
+    {
+      "id": 27,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 27,
+      "chooseType": "Choose 1 answer",
+      "question": "What's the primary functional difference between a basic algorithm and a complex learning algorithm?",
+      "options": {
+        "A": "A basic algorithm has a set amount of choices to optimize for, while a complex algorithm is given freedom to discover its own features and representations",
+        "B": "Basic takes single input, complex takes multiple inputs",
+        "C": "Basic handles numbers, complex handles pictures",
+        "D": "Basic has 5 steps, complex has 15 steps"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Sự khác biệt chức năng chính giữa một thuật toán cơ bản và một thuật toán học máy phức tạp là gì?",
+        "optionsVi": {
+          "A": "Thuật toán cơ bản có một số lượng lựa chọn cố định để tối ưu hóa, trong khi thuật toán học máy phức tạp được tự do tự phát hiện các thuộc tính và biểu diễn dữ liệu (basic has set choices vs complex given freedom to discover features)",
+          "B": "Cơ bản nhận 1 đầu vào, phức tạp nhận nhiều đầu vào",
+          "C": "Cơ bản xử lý số, phức tạp xử lý ảnh",
+          "D": "Cơ bản có 5 bước, phức tạp có 15 bước"
+        },
+        "answerDisplay": "A. A basic algorithm has a set amount of choices to optimize for, while a complex algorithm is given the freedom to find its own model",
+        "concept": "• Representation Learning: Thuật toán phức tạp (Deep Learning) tự động học các biểu diễn thuộc tính từ dữ liệu thô.",
+        "whyCorrect": "• Tự do khám phá và học các biểu diễn đặc trưng là bản chất của thuật toán học phức tạp.",
+        "whyWrong": {
+          "B": "• Thuật toán cơ bản vẫn nhận nhiều biến đầu vào.",
+          "C": "• Thuật toán cơ bản vẫn xử lý hình ảnh.",
+          "D": "• Số bước không quyết định bản chất phức tạp."
+        }
+      }
+    },
+    {
+      "id": 28,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 28,
+      "chooseType": "Choose 1 answer",
+      "question": "How does a smart contract differ from a traditional contract?",
+      "options": {
+        "A": "Smart contracts serve a different purpose",
+        "B": "Smart contracts eliminate the need for a central trusted authority by executing automatically via code",
+        "C": "Smart contracts are more effective",
+        "D": "Smart contracts guarantee anonymity"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Hợp đồng thông minh (Smart contract) khác biệt như thế nào so với hợp đồng truyền thống?",
+        "optionsVi": {
+          "A": "Phục vụ mục đích khác",
+          "B": "Loại bỏ nhu cầu về một cơ quan thẩm quyền trung gian nhờ tự động thực thi bằng mã code (eliminate the need for a central authority)",
+          "C": "Hiệu quả hơn",
+          "D": "Đảm bảo ẩn danh"
+        },
+        "answerDisplay": "B. Smart contracts eliminate the need for a central authority.",
+        "concept": "• Smart Contracts: Tự động thực thi mã nguồn trên Blockchain không cần bên trung gian.",
+        "whyCorrect": "• Loại bỏ vai trò của bên trung gian phân xử.",
+        "whyWrong": {
+          "A": "• Cả hai đều nhằm giao kết cam kết.",
+          "C": "• Hiệu quả phụ thuộc vào mã nguồn.",
+          "D": "• Tính ẩn danh không bắt buộc."
+        }
+      }
+    },
+    {
+      "id": 29,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 29,
+      "chooseType": "Choose 1 answer",
+      "question": "In empirical studies of AI ethical frameworks, what percentage of major frameworks include 'Transparency' as a core principle?",
+      "options": {
+        "A": "Over 75% (Around 73-80% of frameworks)",
+        "B": "25%",
+        "C": "50%",
+        "D": "100%"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Trong các nghiên cứu thực nghiệm về các khung đạo đức AI, tỷ lệ phần trăm các khung làm việc chính đưa 'Tính minh bạch' (Transparency) vào làm nguyên tắc cốt lõi là bao nhiêu?",
+        "optionsVi": {
+          "A": "Trên 75% (Khoảng 73-80% các khung đạo đức toàn cầu đều có Transparency)",
+          "B": "25%",
+          "C": "50%",
+          "D": "100%"
+        },
+        "answerDisplay": "A. 75%",
+        "concept": "• Prevalence of Transparency in AI Guidelines: Thống kê cho thấy hơn 75% tất cả các bộ nguyên tắc đạo đức AI trên thế giới đều chọn Transparency là trụ cột bắt buộc.",
+        "whyCorrect": "• Con số thống kê 75%+ phản ánh sự đồng thuận áp đảo toàn cầu về tính minh bạch.",
+        "whyWrong": {
+          "B": "• 25% quá thấp.",
+          "C": "• 50% chưa phản ánh sự phổ biến.",
+          "D": "• 100% không chính xác vì có một số bộ quy tắc chỉ tập trung an toàn."
+        }
+      }
+    },
+    {
+      "id": 30,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 30,
+      "chooseType": "Choose 1 answer",
+      "question": "A model that equalizes the number of mistakes it makes for each subgroup to reduce harm is deciding on:",
+      "options": {
+        "A": "Equality of true outcomes",
+        "B": "Equality of false negatives",
+        "C": "Equality of training data",
+        "D": "Equality of prediction bias"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Một mô hình cân bằng số lượng sai sót mà nó mắc phải cho mỗi nhóm nhỏ để giảm thiểu tổn hại là đang quyết định về tiêu chuẩn nào?",
+        "optionsVi": {
+          "A": "Bình đẳng kết quả thực tế",
+          "B": "Bình đẳng âm tính giả (Equality of false negatives)",
+          "C": "Bình đẳng dữ liệu huấn luyện",
+          "D": "Bình đẳng thiên vị dự đoán"
+        },
+        "answerDisplay": "B. equality of false negatives",
+        "concept": "• Equality of False Negatives: Cân bằng tỷ lệ bỏ sót sai sót gây hại ngang nhau giữa các nhóm.",
+        "whyCorrect": "• Cân bằng tỷ lệ Âm tính giả giữa các nhóm.",
+        "whyWrong": {
+          "A": "• Equalized Odds.",
+          "C": "• Dữ liệu huấn luyện là phân phối mẫu.",
+          "D": "• Thiên vị dự đoán là chỉ số đo chung."
+        }
+      }
+    },
+    {
+      "id": 31,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 31,
+      "chooseType": "Choose 1 answer",
+      "question": "In Game Theory applied to AI ethics, outcomes that are best for the collective group can be obscured by outcomes best for:",
+      "options": {
+        "A": "The dataset",
+        "B": "The model",
+        "C": "The individual (Individual self-interest)",
+        "D": "The algorithm"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Trong Lý thuyết Trò chơi áp dụng cho đạo đức AI, các kết quả tốt nhất cho tập thể nhóm có thể bị che lấp bởi các kết quả tốt nhất cho:",
+        "optionsVi": {
+          "A": "Tập dữ liệu",
+          "B": "Mô hình",
+          "C": "Tự lợi của cá nhân (The individual)",
+          "D": "Thuật toán"
+        },
+        "answerDisplay": "C. the individual",
+        "concept": "• Game Theory & Tragedy of the Commons: Khi mỗi cá nhân tối ưu hóa tự lợi cá nhân (Individual), kết quả chung của toàn nhóm (Group) bị suy giảm.",
+        "whyCorrect": "• Sự xung đột giữa tự lợi cá nhân ngắn hạn và lợi ích tập thể.",
+        "whyWrong": {
+          "A": "• Dữ liệu là đối tượng.",
+          "B": "• Mô hình là công cụ.",
+          "D": "• Thuật toán không có tư lợi."
+        }
+      }
+    },
+    {
+      "id": 32,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 32,
+      "chooseType": "Choose 1 answer",
+      "question": "An auditing model used to adjust model predictions or decision thresholds after training is an example of a:",
+      "options": {
+        "A": "Sub-processing bias mitigation method",
+        "B": "In-processing bias mitigation method",
+        "C": "Post-processing bias mitigation method",
+        "D": "Pre-processing bias mitigation method"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Một mô hình kiểm toán được sử dụng để điều chỉnh dự đoán hoặc ngưỡng ra quyết định sau khi mô hình đã huấn luyện xong là ví dụ về phương pháp giảm thiểu thiên vị nào?",
+        "optionsVi": {
+          "A": "Phương pháp giảm thiểu phụ",
+          "B": "Phương pháp giảm thiểu trong quá trình (In-processing)",
+          "C": "Phương pháp giảm thiểu sau xử lý (Post-processing bias mitigation)",
+          "D": "Phương pháp giảm thiểu tiền xử lý (Pre-processing)"
+        },
+        "answerDisplay": "C. post-processing",
+        "concept": "• Bias Mitigation Stages: Pre-processing (Can thiệp dữ liệu), In-processing (Can thiệp thuật toán/hàm lỗi), Post-processing (Can thiệp kết quả đầu ra sau huấn luyện).",
+        "whyCorrect": "• Điều chỉnh dự đoán/ngưỡng sau khi mô hình đã huấn luyện xong thuộc về Post-processing.",
+        "whyWrong": {
+          "A": "• Không có khái niệm sub-processing.",
+          "B": "• In-processing can thiệp trong lúc đang huấn luyện.",
+          "D": "• Pre-processing can thiệp vào tập dữ liệu thô trước huấn luyện."
+        }
+      }
+    },
+    {
+      "id": 33,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 33,
+      "chooseType": "Choose 1 answer",
+      "question": "Which school of philosophical thought primarily advocates for a global moral code based on duty?",
+      "options": {
+        "A": "Utilitarianism",
+        "B": "Deontology",
+        "C": "Virtue ethics",
+        "D": "Virtual ethics"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Trường phái tư tưởng triết học nào chủ yếu cổ vũ cho một bộ quy tắc đạo đức toàn cầu dựa trên nghĩa vụ?",
+        "optionsVi": {
+          "A": "Thuyết vị lợi",
+          "B": "Thuyết nghĩa vụ luận (Deontology)",
+          "C": "Thuyết đạo đức đức hạnh",
+          "D": "Đạo đức ảo"
+        },
+        "answerDisplay": "B. Deontology",
+        "concept": "• Deontology: Đạo đức dựa trên nghĩa vụ tuyệt đối.",
+        "whyCorrect": "• Nghĩa vụ luận đòi hỏi tuân thủ các quy tắc đạo đức tuyệt đối.",
+        "whyWrong": {
+          "A": "• Utilitarianism đánh giá theo hậu quả.",
+          "C": "• Virtue ethics tập trung vào đức hạnh cá nhân.",
+          "D": "• Virtual ethics không phải trường phái triết học."
+        }
+      }
+    },
+    {
+      "id": 34,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 34,
+      "chooseType": "Choose 1 answer",
+      "question": "What is 'capability caution' in AI risk governance?",
+      "options": {
+        "A": "Steps to ensure human capabilities not limited by AI",
+        "B": "Freeze AI capabilities at current state",
+        "C": "We need to remember that we don't know the full extent of what AI systems might become capable of so that we can better plan and manage risks",
+        "D": "We know the full extent of what AI systems can do"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "'Thận trọng về năng lực' (Capability caution) trong quản trị rủi ro AI được hiểu là gì?",
+        "optionsVi": {
+          "A": "Đảm bảo năng lực con người không bị giới hạn bởi AI",
+          "B": "Đóng băng năng lực AI ở trạng thái hiện tại",
+          "C": "Chúng ta cần ghi nhớ rằng chúng ta chưa biết hết toàn bộ quy mô năng lực mà các hệ thống AI có thể đạt tới trong tương lai để lập kế hoạch quản lý rủi ro tốt hơn (don't know full extent of AI capability)",
+          "D": "Chúng ta đã biết toàn bộ năng lực AI"
+        },
+        "answerDisplay": "C. We need to remember that we don't know the full extent of what Al systems might become capable of so that we can better plan.",
+        "concept": "• Capability Caution: Thận trọng trước sự tiến hóa bất ngờ vượt tầm kiểm soát của các hệ thống AI siêu việt.",
+        "whyCorrect": "• Thừa nhận sự thiếu chắc chắn về giới hạn năng lực AI tương lai để chủ động phòng ngừa rủi ro.",
+        "whyWrong": {
+          "A": "• Việc làm thuộc về Human Alignment.",
+          "B": "• Đóng băng công nghệ là không khả thi.",
+          "D": "• Tự mãn cho rằng đã biết hết năng lực AI là sai lầm nguy hiểm."
+        }
+      }
+    },
+    {
+      "id": 35,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 35,
+      "chooseType": "Choose 1 answer",
+      "question": "Which mathematical theorem states that no single machine learning model can outperform all other models across all possible problems?",
+      "options": {
+        "A": "No Free Lunch Theorem",
+        "B": "Bayes' Theorem",
+        "C": "Central Limit Theorem",
+        "D": "Goodhart's Law"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Định lý toán học nào khẳng định rằng không có một mô hình học máy duy nhất nào có thể vượt trội hơn tất cả các mô hình khác trên mọi bài toán có thể xảy ra?",
+        "optionsVi": {
+          "A": "Định lý Bữa trưa không miễn phí (No Free Lunch Theorem)",
+          "B": "Định lý Bayes",
+          "C": "Định lý Giới hạn Trung tâm",
+          "D": "Định luật Goodhart"
+        },
+        "answerDisplay": "A. No Free Lunch Theorem",
+        "concept": "• No Free Lunch (NFL) Theorem in ML: Mọi thuật toán học máy đều có hiệu suất trung bình ngang nhau khi xét trên tập hợp tất cả các bài toán có thể xảy ra (Không có thuật toán vạn năng).",
+        "whyCorrect": "• Định lý khẳng định không có thuật toán học máy vạn năng tối ưu cho mọi bài toán.",
+        "whyWrong": {
+          "B": "• Định lý Bayes dùng cho xác suất có điều kiện.",
+          "C": "• Định lý Giới hạn Trung tâm dùng cho phân bố chuẩn mẫu.",
+          "D": "• Định luật Goodhart dùng cho chỉ số đánh giá bị thao túng."
+        }
+      }
+    },
+    {
+      "id": 36,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 36,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following best describes capability caution as referenced in the Asilomar AI Principles?",
+      "options": {
+        "A": "Halt AI development if internal mechanisms unknown",
+        "B": "Given a lack of consensus, we should avoid strong assumptions regarding upper limits on future AI capabilities",
+        "C": "Ensure humans are capable of finding work",
+        "D": "Keep limits on AGI capabilities"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Nội dung nào sau đây mô tả đúng nhất nguyên tắc Thận trọng về Năng lực (Capability Caution) trong Nguyên tắc Asilomar AI?",
+        "optionsVi": {
+          "A": "Dừng phát triển AI nếu không hiểu cơ chế",
+          "B": "Do thiếu sự đồng thuận, chúng ta nên tránh đưa ra các giả định cứng nhắc cho rằng có những giới hạn trên đối với năng lực AI trong tương lai (avoid strong assumptions regarding upper limits)",
+          "C": "Đảm bảo con người có việc làm",
+          "D": "Đặt giới hạn cho AGI"
+        },
+        "answerDisplay": "B. Given a lack of consensus, we should avoid strong assumptions regarding upper limits on future Al capabilities",
+        "concept": "• Asilomar Capability Caution: Tránh giả định chủ quan về giới hạn năng lực tương lai của AI.",
+        "whyCorrect": "• Không đưa ra giả định cứng nhắc về ngưỡng giới hạn trên của năng lực AI.",
+        "whyWrong": {
+          "A": "• Dừng phát triển không phải khuyến nghị Asilomar.",
+          "C": "• Việc làm thuộc về Human Alignment.",
+          "D": "• Giới hạn AGI thuộc về AI Safety Control."
+        }
+      }
+    },
+    {
+      "id": 37,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 37,
+      "chooseType": "Choose 1 answer",
+      "question": "Why is it impractical to protect all possible subgroups in predictive models?",
+      "options": {
+        "A": "Accuracy will be lowered beyond reasonable rate",
+        "B": "Fairness scores won't be high enough",
+        "C": "Individuals do not need protection",
+        "D": "There won't be enough data to reflect each subgroup finely (Combinatorial explosion)"
+      },
+      "answer": "D",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Tại sao việc bảo vệ tất cả các phân nhóm nhỏ có thể xảy ra lại không thực tế trong các mô hình dự đoán?",
+        "optionsVi": {
+          "A": "Độ chính xác bị hạ quá thấp",
+          "B": "Điểm công bằng không đủ cao",
+          "C": "Cá nhân không cần bảo vệ",
+          "D": "Sẽ không có đủ dữ liệu mẫu để phản ánh chính xác từng nhóm nhỏ do sự bùng nổ tổ hợp (won't be enough data to reflect each subgroup)"
+        },
+        "answerDisplay": "D. There won't be enough data to reflect each subgroup",
+        "concept": "• Combinatorial Explosion: Phân nhỏ nhóm quá mức khiến mẫu dữ liệu từng nhóm bị cạn kiệt.",
+        "whyCorrect": "• Sự bùng nổ tổ hợp khiến dữ liệu không đủ đại diện cho từng nhóm nhỏ.",
+        "whyWrong": {
+          "A": "• Độ chính xác là sự đánh đổi phụ.",
+          "B": "• Điểm công bằng phụ thuộc mô hình.",
+          "C": "• Cá nhân luôn cần được bảo vệ."
+        }
+      }
+    },
+    {
+      "id": 38,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 38,
+      "chooseType": "Choose 1 answer",
+      "question": "As a cognitive bias, when humans see a lack of context or meaning around a piece of information, they tend to:",
+      "options": {
+        "A": "Fill in missing details using existing stereotypes or prior assumptions",
+        "B": "Use biased research sources",
+        "C": "Seek authority figures",
+        "D": "Disagree with previous beliefs"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Dưới góc độ định kiến nhận thức, khi con người thấy sự thiếu hụt bối cảnh hoặc ý nghĩa xung quanh một mảnh thông tin, họ có xu hướng:",
+        "optionsVi": {
+          "A": "Tự lấp đầy các chi tiết còn thiếu bằng cách dựa vào các định kiến có sẵn hoặc giả định trước đó (fill in details using stereotypes)",
+          "B": "Dùng nguồn nghiên cứu thiên vị",
+          "C": "Tìm người có thẩm quyền",
+          "D": "Bác bỏ niềm tin cũ"
+        },
+        "answerDisplay": "A. fill in details using existing stereotypes or prior assumptions",
+        "concept": "• Filling in Gaps in Cognitive Bias: Tự động dùng định kiến sẵn có để điền vào khoảng trống thông tin.",
+        "whyCorrect": "• Tự điền chi tiết trống bằng định kiến có sẵn.",
+        "whyWrong": {
+          "B": "• Confirmation bias.",
+          "C": "• Authority bias.",
+          "D": "• Phản ứng đi ngược lại nhận thức."
+        }
+      }
+    },
+    {
+      "id": 39,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 39,
+      "chooseType": "Choose 1 answer",
+      "question": "Which organizational resource is most commonly used to guide employee decision making regarding ethical situations?",
+      "options": {
+        "A": "Code of Ethics / Code of Conduct document",
+        "B": "Financial budget report",
+        "C": "Marketing presentation",
+        "D": "Software architecture diagram"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Nguồn lực tổ chức nào được sử dụng phổ biến nhất để định hướng cho nhân viên ra quyết định trong các tình huống đạo đức?",
+        "optionsVi": {
+          "A": "Bộ quy tắc Đạo đức / Bộ quy tắc Ứng xử (Code of Ethics / Code of Conduct)",
+          "B": "Báo cáo ngân sách tài chính",
+          "C": "Thuyết trình tiếp thị",
+          "D": "Sơ đồ kiến trúc phần mềm"
+        },
+        "answerDisplay": "A. Code of Ethics",
+        "concept": "• Organizational Code of Ethics: Tài liệu chuẩn mực hành vi chính thức định hướng mọi quyết định đạo đức của nhân viên.",
+        "whyCorrect": "• Bộ quy tắc đạo đức là tài liệu hướng dẫn ra quyết định hành vi tiêu chuẩn.",
+        "whyWrong": {
+          "B": "• Báo cáo tài chính quản lý tiền bạc.",
+          "C": "• Thuyết trình tiếp thị nhằm bán hàng.",
+          "D": "• Sơ đồ kiến trúc dùng cho kỹ thuật."
+        }
+      }
+    },
+    {
+      "id": 40,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 40,
+      "chooseType": "Choose 1 answer",
+      "question": "Which approach to corporate governance is more likely to create an ethical organizational culture?",
+      "options": {
+        "A": "A systemic approach with incentive systems aligned with ethical values",
+        "B": "An oversight committee focus on rules",
+        "C": "A board focused on legal compliance",
+        "D": "An oversight committee focus on static frameworks"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Cách tiếp cận quản trị doanh nghiệp nào có khả năng tạo ra một văn hóa tổ chức có đạo đức?",
+        "optionsVi": {
+          "A": "Cách tiếp cận hệ thống kết hợp với hệ thống đãi ngộ/khuyến khích gắn liền với giá trị đạo đức (systemic approach with incentive systems)",
+          "B": "Ủy ban tập trung quy tắc cứng",
+          "C": "Hội đồng tập trung tuân thủ pháp lý",
+          "D": "Ủy ban tập trung khung lý thuyết"
+        },
+        "answerDisplay": "A. A systemic approach with incentive systems.",
+        "concept": "• Systemic Governance: Gắn cơ chế đãi ngộ với giá trị đạo đức.",
+        "whyCorrect": "• Khuyến khích bằng cơ chế đãi ngộ gắn liền với giá trị.",
+        "whyWrong": {
+          "B": "• Quy tắc cứng tạo tâm lý đối phó.",
+          "C": "• Tuân thủ pháp lý là mức sàn.",
+          "D": "• Khung tĩnh thiếu tính hành động."
+        }
+      }
+    },
+    {
+      "id": 41,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 41,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following describes change management in organizational ethics?",
+      "options": {
+        "A": "A collective term describing how employees voice concerns",
+        "B": "A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in fostering an ethical organizational culture",
+        "C": "A collective term for product modifications after negative feedback",
+        "D": "A process to replace executive board"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Nội dung nào sau đây mô tả Quản lý sự thay đổi (Change management) trong bối cảnh đạo đức tổ chức?",
+        "optionsVi": {
+          "A": "Thuật ngữ mô tả cách nhân viên lên tiếng",
+          "B": "Thuật ngữ chung cho tất cả các phương pháp nhằm chuẩn bị, hỗ trợ và giúp đỡ cá nhân, đội ngũ và tổ chức thực hiện sự chuyển đổi sang văn hóa đạo đức (approaches to prepare, support, help in fostering ethical culture)",
+          "C": "Sửa đổi sản phẩm sau phản hồi",
+          "D": "Quy trình thay thế ban điều hành"
+        },
+        "answerDisplay": "B. A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in fostering an ethical organizational culture.",
+        "concept": "• Change Management: Hỗ trợ toàn diện tổ chức thích nghi với văn hóa đạo đức mới.",
+        "whyCorrect": "• Chuẩn bị và hỗ trợ toàn diện các cấp chuyển đổi văn hóa.",
+        "whyWrong": {
+          "A": "• Employee Voice.",
+          "C": "• Product Iteration.",
+          "D": "• Succession planning."
+        }
+      }
+    },
+    {
+      "id": 42,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 42,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following is an important reason to have a dedicated Policy Owner for internal and external ethics policies?",
+      "options": {
+        "A": "They prevent changes from taking place over time",
+        "B": "Policy owner writes policy relying solely on personal knowledge",
+        "C": "They can help to bring the right internal and external stakeholders together to help draft and update these ethics policies",
+        "D": "Single person held accountable"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Lý do quan trọng của việc chỉ định một Chủ sở hữu Chính sách (Policy Owner) cho các chính sách đạo đức là gì?",
+        "optionsVi": {
+          "A": "Ngăn cản sự thay đổi chính sách",
+          "B": "Tự viết chính sách dựa trên kiến thức cá nhân",
+          "C": "Họ giúp kết nối và quy tụ đúng các bên liên quan nội bộ và bên ngoài để cùng dự thảo và cập nhật chính sách (bring right stakeholders together)",
+          "D": "Có một người để đổ lỗi"
+        },
+        "answerDisplay": "C. They can help to bring the right internal and external stakeholders together to help draft these ethics policies _",
+        "concept": "• Policy Owner Role: Điều phối kết nối các bên liên quan (Stakeholder Alignment).",
+        "whyCorrect": "• Quy tụ các bên liên quan lấy ý kiến và cập nhật chính sách.",
+        "whyWrong": {
+          "A": "• Chính sách cần cập nhật.",
+          "B": "• Tự viết cá nhân gây góc nhìn chủ quan.",
+          "D": "• Đổ lỗi không phải mục tiêu."
+        }
+      }
+    },
+    {
+      "id": 43,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 43,
+      "chooseType": "Choose 1 answer",
+      "question": "Why is corporate governance important when thinking about ethical considerations for data-driven technologies?",
+      "options": {
+        "A": "It provides an accountability framework for stakeholders of the organization to prevent ethical violations",
+        "B": "It helps showcase ethical guidelines to customers",
+        "C": "It binds employees in a moral code limiting actions",
+        "D": "It helps have a document to point towards in case of violation"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Tại sao Quản trị doanh nghiệp (Corporate governance) lại quan trọng khi xem xét các khía cạnh đạo đức cho công nghệ dựa trên dữ liệu?",
+        "optionsVi": {
+          "A": "Nó cung cấp một khung giải trình trách nhiệm cho các bên liên quan nhằm ngăn ngừa các vi phạm đạo đức (provides an accountability framework to prevent ethical violations)",
+          "B": "Giúp khoe hướng dẫn đạo đức",
+          "C": "Ràng buộc nhân viên trong mã đạo đức",
+          "D": "Dùng làm tài liệu trỏ tay khi có sự cố"
+        },
+        "answerDisplay": "A. It provides an accountability framework for stakeholders of the organization to prevent ethical violations.",
+        "concept": "• Corporate Governance Value: Thiết lập khung trách nhiệm giải trình và chuẩn mực ứng xử toàn tổ chức.",
+        "whyCorrect": "• Tạo dựng khung giải trình định hướng hành vi chuẩn mực phòng ngừa rủi ro.",
+        "whyWrong": {
+          "B": "• Khoe khoang là mục tiêu tiếp thị.",
+          "C": "• Ràng buộc hạn chế là góc nhìn tiêu cực.",
+          "D": "• Trỏ tay chối bỏ là Ethics Washing."
+        }
+      }
+    },
+    {
+      "id": 44,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 44,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following would be the most beneficial stage to hold ethical risk reviews for a new project?",
+      "options": {
+        "A": "Development stage",
+        "B": "Deployment stage",
+        "C": "Design stage",
+        "D": "Conception / Initial Ideation stage"
+      },
+      "answer": "D",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Giai đoạn nào sau đây sẽ là thời điểm có lợi nhất để tổ chức các buổi đánh giá rủi ro đạo đức cho một dự án mới?",
+        "optionsVi": {
+          "A": "Giai đoạn phát triển",
+          "B": "Giai đoạn triển khai",
+          "C": "Giai đoạn thiết kế",
+          "D": "Giai đoạn hình thành ý tưởng / Khởi tạo dự án (Conception stage)"
+        },
+        "answerDisplay": "D. Conception",
+        "concept": "• Left-shifting Ethics (Phòng ngừa sớm từ khâu Ý tưởng): Đánh giá rủi ro ngay từ giai đoạn Conception giúp triệt hạ nguy cơ đạo đức trước khi tốn chi phí thiết kế và lập trình.",
+        "whyCorrect": "• Đánh giá rủi ro ngay từ giai đoạn hình thành ý tưởng ban đầu giúp chủ động ngăn ngừa lỗi thiết kế.",
+        "whyWrong": {
+          "A": "• Phát triển đã bắt đầu viết mã.",
+          "B": "• Triển khai là sản phẩm đã ra mắt (quá muộn).",
+          "C": "• Thiết kế đã cố định kiến trúc (vẫn trễ hơn Conception)."
+        }
+      }
+    },
+    {
+      "id": 45,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 45,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following is a key reason to engage external stakeholders during the development of ethics policies?",
+      "options": {
+        "A": "Opportunity to demonstrate ethical standpoints",
+        "B": "Reinforce employee values",
+        "C": "It can unearth new qualitative insights into how products and services might be used or impact the target demographic community",
+        "D": "Acts as shielding mechanism"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Lý do quan trọng để thu hút các bên liên quan bên ngoài (External stakeholders) trong quá trình phát triển các chính sách đạo đức là gì?",
+        "optionsVi": {
+          "A": "Cơ hội thể hiện quan điểm",
+          "B": "Củng cố giá trị nhân viên",
+          "C": "Nó có thể phát hiện các góc nhìn định tính mới về cách sản phẩm và dịch vụ được sử dụng hoặc tác động đến cộng đồng mục tiêu (unearth new insights into how products used in target community)",
+          "D": "Làm lá chắn trách nhiệm"
+        },
+        "answerDisplay": "C. It can unearth new insights for how the products and services might be used in the target demographic community.",
+        "concept": "• External Stakeholder Engagement: Khai quật các góc nhìn thực tế định tính từ cộng đồng chịu tác động.",
+        "whyCorrect": "• Phát hiện các góc nhìn định tính mới về tác động cộng đồng.",
+        "whyWrong": {
+          "A": "• Thể hiện quan điểm là PR.",
+          "B": "• Củng cố giá trị nhân viên là công tác nội bộ.",
+          "D": "• Lá chắn trách nhiệm là Ethics Washing."
+        }
+      }
+    },
+    {
+      "id": 46,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 46,
+      "chooseType": "Choose 1 answer",
+      "question": "Which expression best characterizes what an organizational or corporate culture is?",
+      "options": {
+        "A": "\"This is how we want this done.\"",
+        "B": "\"This is how things are done around here.\"",
+        "C": "\"It is what it is.\"",
+        "D": "\"This is what we're told to do.\""
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Câu nói nào thể hiện một cách tốt nhất bản chất của Văn hóa doanh nghiệp / Văn hóa tổ chức?",
+        "optionsVi": {
+          "A": "\"Đây là cách chúng tôi muốn công việc được làm.\"",
+          "B": "\"Đây là cách mọi việc được thực hiện ở đây.\" (\"This is how things are done around here.\")",
+          "C": "\"Nó là như vậy thôi.\"",
+          "D": "\"Đây là những gì chúng tôi được bảo phải làm.\""
+        },
+        "answerDisplay": "B. \"This is how things are done around here.\"",
+        "concept": "• Corporate Culture Definition: Tập quán và thói quen thực thi công việc hàng ngày.",
+        "whyCorrect": "• Khẩu hiệu kinh điển phản ánh hành vi thực tế của doanh nghiệp.",
+        "whyWrong": {
+          "A": "• Mong muốn lý thuyết.",
+          "C": "• Sự buông xuôi.",
+          "D": "• Sự tuân thủ cưỡng chế."
+        }
+      }
+    },
+    {
+      "id": 47,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 47,
+      "chooseType": "Choose 1 answer",
+      "question": "What is the primary purpose of change management in terms of creating an ethical organizational culture?",
+      "options": {
+        "A": "To create a fast transition through training",
+        "B": "To create a management transition",
+        "C": "To create a smooth, supported transition for individuals and teams fostering an ethical culture",
+        "D": "To create a slow transition"
+      },
+      "answer": "C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Mục đích của Quản lý sự thay đổi (Change management) trong việc tạo dựng một văn hóa tổ chức có đạo đức là gì?",
+        "optionsVi": {
+          "A": "Tạo chuyển đổi nhanh",
+          "B": "Tạo chuyển đổi quản lý",
+          "C": "Tạo ra một sự chuyển đổi mượt mà và được hỗ trợ cho cá nhân và tập thể nuôi dưỡng văn hóa đạo đức (create a smooth transition)",
+          "D": "Tạo chuyển đổi chậm"
+        },
+        "answerDisplay": "C. To create a smooth transition.",
+        "concept": "• Change Management Goal: Chuyển đổi văn hóa mượt mà và được hỗ trợ toàn diện.",
+        "whyCorrect": "• Hỗ trợ sự chuyển đổi văn hóa mượt mà và bền vững.",
+        "whyWrong": {
+          "A": "• Tốc độ nhanh không phải ưu tiên hàng đầu.",
+          "B": "• Chuyển đổi quản lý chỉ là một phần.",
+          "D": "• Chuyển đổi chậm không phải mục tiêu."
+        }
+      }
+    },
+    {
+      "id": 48,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 48,
+      "chooseType": "Choose 1 answer",
+      "question": "Why is accountability an important principle to include in governance structures for data-driven technologies?",
+      "options": {
+        "A": "Accountability in governance structures encourages all employees to feel responsible for building trustworthy systems",
+        "B": "Accountability encourages employees to put business needs first",
+        "C": "Accountability encourages management to hold employees accountable for actions",
+        "D": "Accountability encourages key employees to put business needs first"
+      },
+      "answer": "A",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Tại sao trách nhiệm giải trình (Accountability) lại là một nguyên tắc quan trọng cần đưa vào cấu trúc quản trị công nghệ?",
+        "optionsVi": {
+          "A": "Trách nhiệm giải trình thúc đẩy tất cả nhân viên cảm nhận được trách nhiệm cá nhân trong việc xây dựng các hệ thống đáng tin cậy (encourages all employees to feel responsible for building trustworthy systems)",
+          "B": "Đặt nhu cầu kinh doanh lên hàng đầu",
+          "C": "Bắt bẻ nhân viên",
+          "D": "Chạy theo lợi nhuận"
+        },
+        "answerDisplay": "A. Accountability in governance structures encourages all employees to feel responsible for building trusuorthy systems.",
+        "concept": "• Accountability Culture: Lan tỏa tinh thần trách nhiệm tới từng nhân sự.",
+        "whyCorrect": "• Thúc đẩy tinh thần trách nhiệm tập thể xây dựng AI đáng tin cậy.",
+        "whyWrong": {
+          "B": "• Đặt lợi nhuận trên đạo đức gây rủi ro.",
+          "C": "• Không dùng để trừng phạt cá nhân.",
+          "D": "• Chạy theo kinh doanh làm suy yếu quản trị."
+        }
+      }
+    },
+    {
+      "id": 49,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 49,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following risk analysis methods use qualitative descriptor words like 'unlikely' or 'rare' for likelihood, and 'low', 'medium', 'high' for impact? (Select two.)",
+      "options": {
+        "A": "Semi-qualitative analysis",
+        "B": "Quantitative analysis",
+        "C": "Semi-quantitative analysis",
+        "D": "Qualitative analysis"
+      },
+      "answer": "A, D",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Những phương pháp phân tích rủi ro nào sử dụng các từ mô tả định tính như 'hiếm gặp', 'thấp', 'trung bình', 'cao'? (Select two)",
+        "optionsVi": {
+          "A": "Phân tích bán định tính (Semi-qualitative analysis)",
+          "B": "Phân tích định lượng (Quantitative analysis)",
+          "C": "Phân tích bán định lượng",
+          "D": "Phân tích định tính (Qualitative analysis)"
+        },
+        "answerDisplay": "A. Semi-qualitative analysis & D. Qualitative analysis",
+        "concept": "• Qualitative Risk Analysis: Sử dụng các thang đo từ ngữ định tính (Low/Medium/High, Rare/Unlikely) để xếp hạng rủi ro.",
+        "whyCorrect": "• Phân tích định tính và bán định tính sử dụng các nhãn từ ngữ mô tả thay cho con số xác suất tuyệt đối.",
+        "whyWrong": {
+          "B": "• Quantitative analysis sử dụng con số tài chính và phần trăm xác suất chính xác.",
+          "C": "• Semi-quantitative sử dụng số thứ tự điểm số (1-5)."
+        }
+      }
+    },
+    {
+      "id": 50,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 50,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following mechanisms provide a user with more meaningful choices regarding how their personal data is being used? (Select two.)",
+      "options": {
+        "A": "Whether data is used by person of certain gender",
+        "B": "Granular or modular control over data usage categories",
+        "C": "Explicit Opt-in / Opt-out privacy choice mechanisms",
+        "D": "The format data is stored in"
+      },
+      "answer": "B, C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Những cơ chế nào sau đây cung cấp cho người dùng các lựa chọn có ý nghĩa hơn về cách dữ liệu cá nhân của họ được sử dụng? (Select two)",
+        "optionsVi": {
+          "A": "Giới tính người sử dụng dữ liệu",
+          "B": "Quyền kiểm soát chi tiết / mô-đun đối với các mục đích sử dụng dữ liệu (Granular or modular control)",
+          "C": "Các cơ chế lựa chọn Đồng ý / Từ chối rõ ràng (Opt-in / Opt-out mechanisms)",
+          "D": "Định dạng lưu trữ dữ liệu"
+        },
+        "answerDisplay": "B. Granular or modular control over data usage & C. Opt-out/opt-in mechanisms",
+        "concept": "• Meaningful Consent Mechanisms: Quyền kiểm soát chi tiết (Granular Control) và nút bật/tắt Đồng ý/Từ chối (Opt-in/Opt-out) rõ ràng.",
+        "whyCorrect": "• Phân quyền tùy chỉnh chi tiết và cơ chế Opt-in/Opt-out trao quyền tự quyết thực chất cho người dùng.",
+        "whyWrong": {
+          "A": "• Giới tính người xem dữ liệu không phải cơ chế quyền riêng tư.",
+          "D": "• Định dạng lưu trữ thuộc kỹ thuật cơ sở dữ liệu."
+        }
+      }
+    },
+    {
+      "id": 51,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 51,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following are important to provide to a crisis communication team? (Select two.)",
+      "options": {
+        "A": "Clear direction on the roles and responsibilities of team members",
+        "B": "Permission to tell public what they want to hear",
+        "C": "Ability to work independently",
+        "D": "Access to adequate resources and verified information"
+      },
+      "answer": "A, D",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Những yếu tố nào sau đây là quan trọng cần cung cấp cho đội ngũ truyền thông khủng hoảng? (Select two)",
+        "optionsVi": {
+          "A": "Hướng dẫn rõ ràng về vai trò và trách nhiệm của từng thành viên (Clear direction on roles and responsibilities)",
+          "B": "Cho phép nói những gì công chúng thích nghe",
+          "C": "Khả năng làm việc độc lập",
+          "D": "Quyền truy cập vào nguồn lực đầy đủ và thông tin xác thực (Access to adequate resources)"
+        },
+        "answerDisplay": "A. Clear direction on the roles and responsibilities of team members & D. Access to adequate resources",
+        "concept": "• Crisis PR Team Needs: Phân công nhiệm vụ rõ ràng và Cung cấp đủ tài nguyên hạ tầng.",
+        "whyCorrect": "• Phân công vai trò chuẩn xác và cấp đủ tài nguyên giúp đội ứng phó sự cố nhất quán.",
+        "whyWrong": {
+          "B": "• Nói những gì công chúng thích nghe mà thiếu sự thật là dối trá truyền thông.",
+          "C": "• Phải phối hợp chặt chẽ với ban chỉ đạo khủng hoảng."
+        }
+      }
+    },
+    {
+      "id": 52,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 52,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following are important qualities of an effective press release? (Select two.)",
+      "options": {
+        "A": "It's in a digital format",
+        "B": "It's non-interactive",
+        "C": "It's delivered on a single platform",
+        "D": "It's concise, clear, and newsworthy"
+      },
+      "answer": "A, D",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Những đặc tính quan trọng nào thuộc về một Thông cáo báo chí (Press Release) hiệu quả? (Select two)",
+        "optionsVi": {
+          "A": "Được phát hành dưới định dạng kỹ thuật số (digital format)",
+          "B": "Không có tính tương tác",
+          "C": "Phát hành trên một nền tảng",
+          "D": "Ngắn gọn súc tích và có giá trị tin tức (concise and newsworthy)"
+        },
+        "answerDisplay": "A. It's in a digital format & D. It's concise",
+        "concept": "• Press Release Standards: Định dạng Kỹ thuật số (Digital Format) và Tính Ngắn gọn súc tích (Concise).",
+        "whyCorrect": "• Định dạng kỹ thuật số và tính ngắn gọn súc tích là 2 tiêu chuẩn báo chí hiện đại.",
+        "whyWrong": {
+          "B": "• Thông cáo hiện đại tích hợp đa phương tiện tương tác.",
+          "C": "• Nên phát hành đa nền tảng."
+        }
+      }
+    },
+    {
+      "id": 53,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 53,
+      "chooseType": "Choose 1 answer",
+      "question": "Why is it important to categorize ethical risks into different types? (Select two.)",
+      "options": {
+        "A": "It makes it easier for us to identify and manage different types of risks effectively",
+        "B": "It ensures customers know we take ethical risks seriously",
+        "C": "It helps us understand the many complexities involved in different types of ethical risks",
+        "D": "It helps consider risk mitigation in terms of universal tactics"
+      },
+      "answer": "A, C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Tại sao việc phân loại rủi ro đạo đức thành các loại khác nhau lại quan trọng? (Select two)",
+        "optionsVi": {
+          "A": "Nó giúp chúng ta dễ dàng hơn trong việc nhận diện và quản lý hiệu quả từng loại rủi ro (makes it easier to identify and manage different risks)",
+          "B": "Đảm bảo khách hàng biết công ty nghiêm túc",
+          "C": "Nó giúp chúng ta thấu hiểu nhiều sự phức tạp liên quan đến từng loại rủi ro đạo đức (helps understand complexities)",
+          "D": "Giúp tìm chiến thuật toàn năng"
+        },
+        "answerDisplay": "A. It makes it easier for us to identify and manage different types of risks. & C. It helps us understand the many complexities involved in different types of ethical risks.",
+        "concept": "• Categorization Value: Dễ dàng nhận diện/quản lý rủi ro và Thấu hiểu sự phức tạp đặc thù từng loại rủi ro.",
+        "whyCorrect": "• Quản lý rủi ro có hệ thống và thấu hiểu các điểm phức tạp đặc thù.",
+        "whyWrong": {
+          "B": "• Khách hàng là đối tượng truyền thông ngoài.",
+          "D": "• Không có chiến thuật toàn năng (universal tactics)."
+        }
+      }
+    },
+    {
+      "id": 54,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 54,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following are pitfalls in communicating risks to the organization? (Select two.)",
+      "options": {
+        "A": "Having a disjointed, inconsistent message across departments",
+        "B": "Following up messaging with an audience",
+        "C": "Not paying attention to the flow and timing of messaging",
+        "D": "Coordinating a message between departments"
+      },
+      "answer": "A, C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Những cạm bẫy/sai lầm nào khi truyền thông các rủi ro tới tổ chức? (Select two)",
+        "optionsVi": {
+          "A": "Thông điệp bị rời rạc, mâu thuẫn giữa các phòng ban (Having a disjointed message)",
+          "B": "Theo dõi phản hồi thông điệp",
+          "C": "Không chú ý đến luồng và thời điểm truyền thông điệp (Not paying attention to the flow of messaging)",
+          "D": "Phối hợp thông điệp giữa các phòng ban"
+        },
+        "answerDisplay": "A. Having a disjoined message. & C. Not paying attention to the flow of messaging.",
+        "concept": "• Communication Pitfalls: Thông điệp rời rạc thiếu nhất quán (Disjointed message) và Bỏ qua luồng thời điểm truyền thông (Flow/Timing).",
+        "whyCorrect": "• Thông điệp rời rạc không nhất quán và không quan tâm đến luồng truyền thông là 2 bẫy thất bại.",
+        "whyWrong": {
+          "B": "• Theo dõi phản hồi là thực hành tích cực.",
+          "D": "• Phối hợp giữa các phòng ban là thực hành tốt."
+        }
+      }
+    },
+    {
+      "id": 55,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 55,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following are desired qualities when choosing a spokesperson for your organization? (Select two.)",
+      "options": {
+        "A": "Articulate when communicating important details",
+        "B": "Patient when addressing tough questions or concerns",
+        "C": "Lighthearted when dealing with serious topics",
+        "D": "Defensive when challenged"
+      },
+      "answer": "A, B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Những phẩm chất mong muốn nào khi lựa chọn một người phát ngôn cho tổ chức? (Select two)",
+        "optionsVi": {
+          "A": "Ăn nói rõ ràng mạch lạc khi truyền thông chi tiết quan trọng (Articulate when communicating important details)",
+          "B": "Kiên nhẫn khi giải quyết các câu hỏi hóc húa (Patient when addressing tough questions)",
+          "C": "Cợt nhả khi bàn chủ đề nghiêm trọng",
+          "D": "Phòng thủ khi bị thách thức"
+        },
+        "answerDisplay": "A. Articulate when communicating important details & B. Patient when addressing tough questions or concerns",
+        "concept": "• Spokesperson Qualities: Diễn đạt mạch lạc (Articulate) và Kiên nhẫn (Patient).",
+        "whyCorrect": "• Diễn đạt mạch lạc và kiên nhẫn lắng nghe giúp xây dựng uy tín.",
+        "whyWrong": {
+          "C": "• Cợt nhả gây phẫn nộ.",
+          "D": "• Phòng thủ phá hủy lòng tin."
+        }
+      }
+    },
+    {
+      "id": 56,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 56,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following are challenges that can arise if you fail to communicate about the social impact of ethical risks? (Select two.)",
+      "options": {
+        "A": "Decreased corporate revenue",
+        "B": "Reduction of brand loyalty and customer trust",
+        "C": "Disenfranchisement of vulnerable communities",
+        "D": "Erosion of basic human rights"
+      },
+      "answer": "C, D",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Những thách thức/hệ lụy nào có thể phát sinh nếu bạn không truyền thông về tác động xã hội của các rủi ro đạo đức? (Select two)",
+        "optionsVi": {
+          "A": "Sụt giảm doanh thu",
+          "B": "Giảm lòng trung thành thương hiệu",
+          "C": "Sự tước đoạt quyền lợi / đẩy các cộng đồng yếu thế ra bên lề (Disenfranchisement)",
+          "D": "Sự xói mòn các quyền con người cơ bản (Erosion of rights)"
+        },
+        "answerDisplay": "C. Disenfranchisement & D. Erosion of rights",
+        "concept": "• Social Impact Failures: Bỏ qua truyền thông rủi ro xã hội sẽ dẫn tới Sự tước quyền lợi nhóm yếu thế (Disenfranchisement) và Xói mòn nhân quyền (Erosion of rights).",
+        "whyCorrect": "• Tước đoạt quyền lợi cộng đồng yếu thế và xói mòn nhân quyền là tác động xã hội nghiêm trọng nhất.",
+        "whyWrong": {
+          "A": "• Doanh thu là chỉ số tài chính doanh nghiệp.",
+          "B": "• Lòng trung thành thương hiệu là chỉ số tiếp thị."
+        }
+      }
+    },
+    {
+      "id": 57,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 57,
+      "chooseType": "Choose 1 answer",
+      "question": "What does it mean to say that human rights are inalienable? (Select two.)",
+      "options": {
+        "A": "Inalienable rights are conditional",
+        "B": "Inalienable rights are inherent in all human beings by virtue of being human",
+        "C": "Inalienable rights cannot be taken away or surrendered",
+        "D": "Inalienable rights are derived from tradition"
+      },
+      "answer": "B, C",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Nói rằng Quyền con người là Không thể tước đoạt (Inalienable) có nghĩa là gì? (Select two)",
+        "optionsVi": {
+          "A": "Quyền có điều kiện",
+          "B": "Quyền vốn sẵn có ở mọi con người (inherent in all human beings)",
+          "C": "Quyền không thể bị lấy mất hay từ bỏ (cannot be taken away)",
+          "D": "Quyền đến từ truyền thống"
+        },
+        "answerDisplay": "B. Inalienable rights are inherent in all human beings. & C. Inalienable rights cannot be taken away except in extreme circumstances.",
+        "concept": "• Inalienable Rights: Sẵn có tự nhiên và Không thể bị tước đoạt.",
+        "whyCorrect": "• Sẵn có tự nhiên và không thể bị lấy mất.",
+        "whyWrong": {
+          "A": "• Không phải quyền có điều kiện.",
+          "D": "• Quyền mang tính phổ quát."
+        }
+      }
+    },
+    {
+      "id": 58,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 58,
+      "chooseType": "Choose 1 answer",
+      "question": "Which of the following best describes beneficence?",
+      "options": {
+        "A": "Beneficence is a term coined by IBM in 2014",
+        "B": "Beneficence is the active promotion of well-being, not just for moral agents like humans, but of animals, environment, and societies",
+        "C": "Beneficence is promotion of well-being for humans only",
+        "D": "Beneficence is promotion of efficient systems"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Nội dung nào sau đây mô tả đúng nhất khái niệm Thuyết làm điều thiện (Beneficence)?",
+        "optionsVi": {
+          "A": "Thuật ngữ IBM đặt ra năm 2014",
+          "B": "Beneficence là việc chủ động thúc đẩy sự thịnh vượng/tốt đẹp, không chỉ cho con người mà còn cho động vật, môi trường và toàn xã hội (promotion of well-being for humans, animals, environment, societies)",
+          "C": "Chỉ thúc đẩy lợi ích cho con người",
+          "D": "Thúc đẩy hiệu suất hệ thống"
+        },
+        "answerDisplay": "B. Beneficence is the promotion of well-being, not just for moral agents like humans, but of animals, the environment, and societies.",
+        "concept": "• Beneficence: Thúc đẩy điều thiện và lợi ích cho con người, sinh giới và môi trường.",
+        "whyCorrect": "• Thúc đẩy lợi ích rộng lớn cho con người, động vật và môi trường.",
+        "whyWrong": {
+          "A": "• Là khái niệm triết học cổ điển.",
+          "C": "• Định nghĩa hẹp bỏ qua môi trường.",
+          "D": "• Hiệu suất là chỉ số kỹ thuật."
+        }
+      }
+    },
+    {
+      "id": 59,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 59,
+      "chooseType": "Choose 1 answer",
+      "question": "When building a predictive model, what is the goal of the deployment phase?",
+      "options": {
+        "A": "To plug in 40% dataset",
+        "B": "To use the model in real-life predictions, monitoring performance, error rate, and accuracy",
+        "C": "To get model to accept new inputs and train continuously",
+        "D": "To specify algorithm and clean data"
+      },
+      "answer": "B",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Khi xây dựng một mô hình dự đoán, mục tiêu của giai đoạn triển khai (Deployment phase) là gì?",
+        "optionsVi": {
+          "A": "Nạp 40% dữ liệu",
+          "B": "Sử dụng mô hình trong các dự đoán thực tế đời sống, đồng thời liên tục giám sát tỷ lệ lỗi và độ chính xác (use model in real-life predictions, monitoring accuracy)",
+          "C": "Huấn luyện liên tục không dừng",
+          "D": "Chỉ định thuật toán và làm sạch"
+        },
+        "answerDisplay": "B. To use the model in real-life predictions, monitoring the error rate and accuracy",
+        "concept": "• Deployment Phase Goal: Đưa mô hình vào vận hành thực tế và liên tục giám sát hiệu suất (Monitoring accuracy and drift).",
+        "whyCorrect": "• Đưa mô hình vào thực tế và giám sát chỉ số hoạt động đời thực.",
+        "whyWrong": {
+          "A": "• 40% là chỉ số chia dữ liệu.",
+          "C": "• Huấn luyện liên tục thuộc Re-training.",
+          "D": "• Chọn thuật toán là pha chuẩn bị."
+        }
+      }
+    },
+    {
+      "id": 60,
+      "task": "fa24_fe",
+      "taskLabel": "FA24 FE",
+      "num": 60,
+      "chooseType": "Choose 1 answer",
+      "question": "In a scatter plot of Gross Income against Revenue, data points tightly cluster along an upward rising straight line from bottom-left to top-right. What correlation does this suggest?",
+      "options": {
+        "A": "Weak negative correlation",
+        "B": "Weak positive correlation",
+        "C": "Strong negative correlation",
+        "D": "There is a strong positive correlation between both variables"
+      },
+      "answer": "D",
+      "source": "ITE302c_FA24_FE",
+      "explanation": {
+        "questionVi": "Trong biểu đồ phân tán (Scatter plot), các điểm dữ liệu của biến Thu nhập gộp (Gross Income) và Doanh thu (Revenue) tập trung chặt chẽ dọc theo một đường thẳng đi lên từ dưới bên trái đến trên bên phải. Điều này thể hiện loại tương quan nào?",
+        "optionsVi": {
+          "A": "Tương quan âm yếu",
+          "B": "Tương quan dương yếu",
+          "C": "Tương quan âm mạnh",
+          "D": "Có một tương quan dương mạnh giữa cả hai biến số (strong positive correlation)"
+        },
+        "answerDisplay": "D. There is a strong positive correlation between both variables.",
+        "concept": "• Scatter Plot Correlation: Đường thẳng đi lên chặt chẽ từ trái sang phải thể hiện Tương quan Dương Mạnh (Strong Positive Correlation r ≈ 1).",
+        "whyCorrect": "• Xu hướng đi lên chặt chẽ thể hiện tương quan dương mạnh giữa Doanh thu và Thu nhập gộp.",
+        "whyWrong": {
+          "A": "• Tương quan âm đi xuống.",
+          "B": "• Tương quan yếu các điểm dữ liệu phân tán tản mát.",
+          "C": "• Tương quan âm mạnh đi xuống từ trên trái sang dưới phải."
+        }
+      }
+    }
+  ]
+}

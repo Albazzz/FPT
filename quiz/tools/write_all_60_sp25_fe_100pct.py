@@ -1,0 +1,1536 @@
+import json
+import os
+
+# FULL 100% EXPLICIT 60-QUESTION HAND-CRAFTED DICTIONARY FOR SP25 FE
+# Absolutely NO filler text, NO missing items. Every single question from 1 to 60 is explicitly defined.
+
+SP25_FE_60_COMPLETE_DATA = {
+    1: {
+        "question": "Which type of edge case is caused by data outside the normal distribution of a model's training set?",
+        "options": {
+            "A": "Outlier edge case",
+            "B": "Systemic bias case",
+            "C": "Formatting error case",
+            "D": "Validation leak case"
+        },
+        "answer": "A",
+        "questionVi": "Loại trường hợp ngoại lệ (edge case) nào được gây ra bởi dữ liệu nằm ngoài phân bố bình thường (normal distribution) của tập dữ liệu huấn luyện?",
+        "optionsVi": {
+            "A": "Trường hợp ngoại lệ điểm ngoại biệt (Outlier edge case)",
+            "B": "Trường hợp thiên vị hệ thống",
+            "C": "Trường hợp lỗi định dạng",
+            "D": "Trường hợp rò rỉ kiểm chứng"
+        },
+        "answerDisplay": "A. Outlier edge case",
+        "concept": "• Outlier (Điểm ngoại biệt): Dữ liệu cực đoan xuất hiện ngoài dải phân bố thống kê tiêu chuẩn của mô hình.",
+        "whyCorrect": "• Dữ liệu nằm ngoài dải phân phối chuẩn tạo nên các tình huống ngoại lệ điểm ngoại biệt (Outliers).",
+        "whyWrong": {
+            "B": "• Thiên vị hệ thống là lỗi lệch mẫu theo hướng cố định.",
+            "C": "• Lỗi định dạng do sai cú pháp dữ liệu.",
+            "D": "• Rò rỉ kiểm chứng là lỗi rò rỉ thông tin tập test sang tập train."
+        }
+    },
+    2: {
+        "question": "Which of the following types of malware monitors a user's behavior without their knowledge or consent?",
+        "options": {
+            "A": "Adware",
+            "B": "Spyware",
+            "C": "Ransomware",
+            "D": "Trojan horse"
+        },
+        "answer": "B",
+        "questionVi": "Loại phần mềm độc hại (Malware) nào lén lút theo dõi hành vi của người dùng mà không có sự biết đến hoặc đồng ý của họ?",
+        "optionsVi": {
+            "A": "Phần mềm quảng cáo (Adware)",
+            "B": "Phần mềm gián điệp (Spyware)",
+            "C": "Mã độc tống tiền (Ransomware)",
+            "D": "Ngựa Trojan (Trojan horse)"
+        },
+        "answerDisplay": "B. Spyware",
+        "concept": "• Spyware (Phần mềm gián điệp): Ngầm thu thập bàn phím, mật khẩu, vị trí và hành vi duyệt web của người dùng để gửi về máy chủ kẻ tấn công.",
+        "whyCorrect": "• Định nghĩa kinh điển của Spyware là lén lút theo dõi hành vi người dùng.",
+        "whyWrong": {
+            "A": "• Adware đẩy quảng cáo tự động.",
+            "C": "• Ransomware mã hóa tệp đòi tiền chuộc.",
+            "D": "• Trojan ẩn náu dưới dạng phần mềm hợp pháp để mở cổng hậu."
+        }
+    },
+    3: {
+        "question": "What kind of shape does a normal distribution take on when plotted in a histogram?",
+        "options": {
+            "A": "Tail shape",
+            "B": "Square shape",
+            "C": "Bell shape",
+            "D": "Tree shape"
+        },
+        "answer": "C",
+        "questionVi": "Phân bố chuẩn (Normal distribution) có hình dạng như thế nào khi được biểu diễn trên biểu đồ cột (histogram)?",
+        "optionsVi": {
+            "A": "Hình cái đuôi",
+            "B": "Hình vuông",
+            "C": "Hình quả chuông (Bell shape / Bell curve)",
+            "D": "Hình cây"
+        },
+        "answerDisplay": "C. Bell shape",
+        "concept": "• Phân bố Gaussian (Normal Distribution) có dạng hình quả chuông đối xứng qua giá trị trung bình (Mean).",
+        "whyCorrect": "• Hình quả chuông (Bell curve) là đặc trưng đồ thị đối xứng của phân bố chuẩn.",
+        "whyWrong": {
+            "A": "• Hình cái đuôi là đặc trưng của phân bố lệch (Skewed distribution).",
+            "B": "• Hình vuông là phân bố đều (Uniform distribution).",
+            "D": "• Hình cây là sơ đồ cây quyết định (Decision tree)."
+        }
+    },
+    4: {
+        "question": "The principle of deleting unused or unnecessary data early and often during machine learning data pipeline is known as:",
+        "options": {
+            "A": "Data minimization and data sanitization",
+            "B": "Data augmentation",
+            "C": "Data profiling",
+            "D": "Data duplication"
+        },
+        "answer": "A",
+        "questionVi": "Nguyên tắc xóa dữ liệu không sử dụng hoặc không cần thiết sớm và thường xuyên trong đường ống dữ liệu học máy được gọi là gì?",
+        "optionsVi": {
+            "A": "Giảm thiểu dữ liệu và làm sạch dữ liệu (Data minimization and data sanitization)",
+            "B": "Tăng cường dữ liệu (Data augmentation)",
+            "C": "Lập hồ sơ dữ liệu (Data profiling)",
+            "D": "Nhân bản dữ liệu (Data duplication)"
+        },
+        "answerDisplay": "A. Data minimization and data sanitization",
+        "concept": "• Data Minimization & Sanitization: Chủ động xóa bỏ thông tin thừa để hạ thấp nguy cơ lộ rò quyền riêng tư.",
+        "whyCorrect": "• Xóa dữ liệu thừa là cốt lõi của nguyên tắc Giảm thiểu dữ liệu.",
+        "whyWrong": {
+            "B": "• Data augmentation là tạo thêm dữ liệu nhân tạo.",
+            "C": "• Data profiling là phân tích cấu trúc dữ liệu.",
+            "D": "• Data duplication làm tăng dung lượng rủi ro."
+        }
+    },
+    5: {
+        "question": "k-Anonymity in a dataset is achieved when each individual cannot be:",
+        "options": {
+            "A": "Distinguished from at least k-1 other individuals in the dataset based on quasi-identifiers",
+            "B": "Reidentified in k datasets",
+            "C": "Hidden from quasi-identifier column as long as k individuals belong",
+            "D": "Harmed from datasets with k individuals"
+        },
+        "answer": "A",
+        "questionVi": "Tính ẩn danh k-anonymity trong một tập dữ liệu đạt được khi mỗi cá nhân không thể bị:",
+        "optionsVi": {
+            "A": "Phân biệt với ít nhất k-1 cá nhân khác trong cùng tập dữ liệu dựa trên các thuộc tính bán định danh (Distinguished from at least K individuals)",
+            "B": "Tái định danh trong k tập dữ liệu",
+            "C": "Che giấu khỏi cột bán định danh",
+            "D": "Tổn hại từ các tập dữ liệu chứa k cá nhân"
+        },
+        "answerDisplay": "A. distinguished from at least K individuals who are also in the dataset",
+        "concept": "• k-Anonymity Requirement: Mỗi nhóm thuộc tính bán định danh (Quasi-identifiers) phải xuất hiện ít nhất k lần.",
+        "whyCorrect": "• Định nghĩa chuẩn mực của k-anonymity là ẩn mình trong nhóm k cá nhân giống hệt thuộc tính.",
+        "whyWrong": {
+            "B": "• k không phải số lượng tập dữ liệu.",
+            "C": "• Thuộc tính bán định danh bị làm mờ/tổng quát hóa.",
+            "D": "• Tổn hại không liên quan đến định nghĩa k-anonymity."
+        }
+    },
+    6: {
+        "question": "What does the acronym RACI stand for?",
+        "options": {
+            "A": "Relatable, Agreeable, Commendable, Irascible",
+            "B": "Responsible, Accessible, Consulted, Improvised",
+            "C": "Redesignable, Accessible, Collected, Informative",
+            "D": "Responsible, Accountable, Consulted, Informed"
+        },
+        "answer": "D",
+        "questionVi": "Từ viết tắt RACI trong quản trị tổ chức và dự án đại diện cho điều gì?",
+        "optionsVi": {
+            "A": "Relatable, Agreeable, Commendable, Irascible",
+            "B": "Responsible, Accessible, Consulted, Improvised",
+            "C": "Redesignable, Accessible, Collected, Informative",
+            "D": "Người thực thi (Responsible), Người chịu trách nhiệm (Accountable), Người tham vấn (Consulted), Người nhận thông tin (Informed)"
+        },
+        "answerDisplay": "D. Responsible, Accountable, Consulted, Informed",
+        "concept": "• Ma trận RACI: Responsible (thực hiện nhiệm vụ), Accountable (chịu trách nhiệm cuối cùng), Consulted (được tham vấn trước quyết định), Informed (được thông báo kết quả).",
+        "whyCorrect": "• Định nghĩa chính xác của mô hình phân công trách nhiệm RACI trong quản trị.",
+        "whyWrong": {
+            "A": "• Đây là các tính từ tiếng Anh ngẫu nhiên.",
+            "B": "• Accessible và Improvised không phải thành tố RACI.",
+            "C": "• Redesignable và Collected không thuộc ma trận RACI."
+        }
+    },
+    7: {
+        "question": "Which of the following describes extrajudicial judgment?",
+        "options": {
+            "A": "A ruling or scoring made outside of a court",
+            "B": "Transferring defendants from one jurisdiction to another",
+            "C": "Applying law from one jurisdiction within another",
+            "D": "Unusual interpretation of law"
+        },
+        "answer": "A",
+        "questionVi": "Nội dung nào sau đây mô tả Phán quyết ngoài tư pháp (Extrajudicial judgment)?",
+        "optionsVi": {
+            "A": "Một phán quyết hoặc chấm điểm rủi ro được thực hiện bên ngoài hệ thống tòa án chính thức (made outside of a court)",
+            "B": "Chuyển giao bị cáo giữa các thẩm quyền",
+            "C": "Áp dụng luật quốc tế",
+            "D": "Sửa đổi quy trình tòa án"
+        },
+        "answerDisplay": "A. A ruling or scoring made outside of a court",
+        "concept": "• Extrajudicial Judgment là việc các thuật toán hay thực thể tư nhân tự động đưa ra quyết định đánh giá/chấm điểm trừng phạt cá nhân mà không qua quy trình xét xử của tòa án.",
+        "whyCorrect": "• Quyết định hay chấm điểm đưa ra bên ngoài tòa án chính thức là bản chất của Extrajudicial judgment.",
+        "whyWrong": {
+            "B": "• Chuyển bị cáo là Extradition.",
+            "C": "• Áp dụng luật quốc tế là International law application.",
+            "D": "• Sửa đổi quy trình là Judicial reform."
+        }
+    },
+    8: {
+        "question": "Which of the following risk categories deals with stakeholder responsibility in creating and using data-driven technologies?",
+        "options": {
+            "A": "Explainability",
+            "B": "Accountability",
+            "C": "Transparency",
+            "D": "Understandability"
+        },
+        "answer": "B",
+        "questionVi": "Danh mục rủi ro nào sau đây xử lý trách nhiệm của các bên liên quan trong việc tạo ra và sử dụng các công nghệ dựa trên dữ liệu?",
+        "optionsVi": {
+            "A": "Tính giải thích được (Explainability)",
+            "B": "Trách nhiệm giải trình (Accountability)",
+            "C": "Tính minh bạch (Transparency)",
+            "D": "Tính dễ hiểu (Understandability)"
+        },
+        "answerDisplay": "B. Accountability",
+        "concept": "• Trách nhiệm giải trình (Accountability) quy định nghĩa vụ của tổ chức/cá nhân trong việc gánh chịu trách nhiệm đối với các tác động của hệ thống AI.",
+        "whyCorrect": "• Định rõ ai chịu trách nhiệm cho các hậu quả của công nghệ là bản chất của Accountability.",
+        "whyWrong": {
+            "A": "• Explainability là thuộc tính giải thích mô hình toán.",
+            "C": "• Transparency là công khai thông tin.",
+            "D": "• Understandability là khả năng tiếp thu thông điệp."
+        }
+    },
+    9: {
+        "question": "Which of the following best describes the use case for zero-knowledge protocols in cryptography?",
+        "options": {
+            "A": "Choosing what to do when you have zero knowledge",
+            "B": "Notifying when battery is low",
+            "C": "Proving that a statement/data is true without revealing the underlying specific information itself",
+            "D": "Handling divide-by-zero errors"
+        },
+        "answer": "C",
+        "questionVi": "Nội dung nào sau đây mô tả đúng nhất trường hợp sử dụng của Giao thức không kiến thức (Zero-knowledge proof / protocol) trong mật mã học?",
+        "optionsVi": {
+            "A": "Chọn việc cần làm khi không có kiến thức",
+            "B": "Cảnh báo khi hết pin",
+            "C": "Chứng minh rằng một khẳng định/dữ liệu là đúng mà không làm lộ bất kỳ thông tin chi tiết nào bên trong (Proving that something exists, but not the specifics)",
+            "D": "Xử lý lỗi chia cho số 0"
+        },
+        "answerDisplay": "C. Proving that something exists, but not the specifics",
+        "concept": "• Zero-Knowledge Proof (ZKP): Chứng minh sự thật (ví dụ: tôi biết mật khẩu, tôi đủ 18 tuổi) mà hoàn toàn không tiết lộ bản thân mật khẩu hay ngày sinh thực tế.",
+        "whyCorrect": "• Khả năng xác minh tính đúng đắn mà không lộ thông tin gốc là định nghĩa của Zero-Knowledge Proof.",
+        "whyWrong": {
+            "A": "• Không phải là sự thiếu hiểu biết của con người.",
+            "B": "• Không liên quan đến quản lý năng lượng thiết bị.",
+            "D": "• Không liên quan đến phép chia số học."
+        }
+    },
+    10: {
+        "question": "When it comes to protecting private data, which of the following could be the root cause of a data breach?",
+        "options": {
+            "A": "The data was stored insecurely without encryption",
+            "B": "The data was leaked online",
+            "C": "The data was deleted from storage",
+            "D": "The data was broken"
+        },
+        "answer": "A",
+        "questionVi": "Khi nói về việc bảo vệ dữ liệu riêng tư, nội dung nào sau đây có thể là nguyên nhân gốc rễ (root cause) dẫn đến sự cố rò rỉ dữ liệu?",
+        "optionsVi": {
+            "A": "Dữ liệu được lưu trữ không an toàn và thiếu mã hóa (stored insecurely)",
+            "B": "Dữ liệu bị rò rỉ trên mạng",
+            "C": "Dữ liệu bị xóa khỏi kho lưu trữ",
+            "D": "Dữ liệu bị hỏng"
+        },
+        "answerDisplay": "A. The data was stored insecurely.",
+        "concept": "• Root Cause vs Symptom: Lưu trữ dữ liệu không an toàn (Stored Insecurely) là nguyên nhân gốc rễ dẫn tới hậu quả rò rỉ (Leaked Online).",
+        "whyCorrect": "• Hạ tầng lưu trữ không an toàn là nguyên nhân gốc gây ra thảm họa lộ rò.",
+        "whyWrong": {
+            "B": "• Rò rỉ ra mạng là triệu chứng/hậu quả chứ không phải nguyên nhân gốc rễ.",
+            "C": "• Xóa dữ liệu gây mất dữ liệu chứ không rò rỉ.",
+            "D": "• Dữ liệu bị hỏng là hư hỏng tệp."
+        }
+    },
+    11: {
+        "question": "Why is a model that has been overfitted to its training data a source of fairness risk?",
+        "options": {
+            "A": "Because the model includes too much noise",
+            "B": "Because the model is too complex",
+            "C": "Because the model won't generalize fairly to the entire population",
+            "D": "Because the model has temporal bias"
+        },
+        "answer": "C",
+        "questionVi": "Tại sao một mô hình bị khớp quá mức (Overfitted) với dữ liệu huấn luyện lại là một nguồn rủi ro về tính công bằng?",
+        "optionsVi": {
+            "A": "Vì mô hình chứa quá nhiều nhiễu",
+            "B": "Vì mô hình quá phức tạp",
+            "C": "Vì mô hình sẽ không thể tổng quát hóa một cách công bằng cho toàn bộ dân số thực tế (won't generalize to the entire population)",
+            "D": "Vì mô hình bị thiên vị thời gian"
+        },
+        "answerDisplay": "C. Because the model wont generalize to the entire population.",
+        "concept": "• Overfitting & Fairness: Mô hình học quá kỹ các nhiễu và định kiến của tập huấn luyện nhỏ nên sẽ đưa ra các dự đoán sai lệch bất công khi gặp dữ liệu thực tế mới.",
+        "whyCorrect": "• Mất khả năng tổng quát hóa chính xác cho đại chúng gây ra dự đoán thiên vị trên môi trường thực.",
+        "whyWrong": {
+            "A": "• Học cả nhiễu là biểu hiện của overfitting.",
+            "B": "• Phức tạp là nguyên nhân kỹ thuật.",
+            "D": "• Temporal bias do dữ liệu lỗi thời."
+        }
+    },
+    12: {
+        "question": "How does the low likelihood of a crisis relate to its potential impact?",
+        "options": {
+            "A": "A crisis with low likelihood tends to have moderate impact",
+            "B": "A crisis with low likelihood tends to have high impact (Black Swan events)",
+            "C": "A crisis with low likelihood has little to no effect on impact",
+            "D": "A crisis with low likelihood tends to have low impact"
+        },
+        "answer": "B",
+        "questionVi": "Mối quan hệ giữa xác suất xảy ra thấp của một cuộc khủng hoảng và tác động tiềm tàng của nó là gì?",
+        "optionsVi": {
+            "A": "Khủng hoảng có xác suất thấp thường có tác động vừa phải",
+            "B": "Một cuộc khủng hoảng có xác suất xảy ra thấp thường có tác động cực kỳ nghiêm trọng khi nó thực sự xảy ra (low likelihood tends to have high impact)",
+            "C": "Xác suất không ảnh hưởng tác động",
+            "D": "Khủng hoảng xác suất thấp có tác động thấp"
+        },
+        "answerDisplay": "B. A crisis with low likelihood tends to have high impact",
+        "concept": "• Sự kiện Thiên nga đen (Black Swan / High-Impact Low-Probability risks): Các sự cố cực hiếm gặp nhưng một khi xảy ra sẽ gây thảm họa tàn phá khủng khiếp.",
+        "whyCorrect": "• Các rủi ro hiếm gặp thường bị chủ quan bỏ qua nên khi bùng phát sẽ tạo ra tổn hại quy mô tối đa.",
+        "whyWrong": {
+            "A": "• Không dừng ở mức vừa phải.",
+            "C": "• Hai chỉ số này liên kết chặt chẽ trong ma trận rủi ro.",
+            "D": "• Đánh giá tác động thấp cho sự cố hiếm gặp là sai lầm quản lý rủi ro."
+        }
+    },
+    13: {
+        "question": "How can you leverage emerging technologies like AI in disaster recovery plans (DRP)?",
+        "options": {
+            "A": "By using data-driven techniques to inform and optimize strategies behind DRP",
+            "B": "By using NLP to correct typo errors",
+            "C": "By using deep learning to bolster defense against disasters",
+            "D": "By using AI to decide if DRP is necessary"
+        },
+        "answer": "A",
+        "questionVi": "Làm thế nào bạn có thể tận dụng các công nghệ mới nổi như AI trong các kế hoạch khôi phục sau thảm họa (Disaster Recovery Plans - DRP)?",
+        "optionsVi": {
+            "A": "Bằng cách sử dụng các kỹ thuật dựa trên dữ liệu để cung cấp thông tin và tối ưu hóa các chiến lược đằng sau DRP (using data-driven techniques to inform DRP strategies)",
+            "B": "Dùng NLP sửa lỗi chính tả",
+            "C": "Dùng học sâu ngăn thảm họa tự nhiên",
+            "D": "Dùng AI quyết định có cần DRP không"
+        },
+        "answerDisplay": "A. By using data-ciriven techniques to inform the strategies behind the DRP_",
+        "concept": "• AI-augmented Disaster Recovery: Sử dụng phân tích dự báo dữ liệu để mô phỏng kịch bản thảm họa và tối ưu hóa chiến lược khôi phục hạ tầng.",
+        "whyCorrect": "• Phân tích dữ liệu giúp hoạch định chiến lược khôi phục hạ tầng thông minh và hiệu quả hơn.",
+        "whyWrong": {
+            "B": "• Sửa lỗi chính tả không có giá trị khôi phục thảm họa.",
+            "C": "• Học sâu không thể ngăn chặn trực tiếp thảm họa thiên nhiên.",
+            "D": "• DRP là yêu cầu bắt buộc tối thiểu đối với mọi doanh nghiệp."
+        }
+    },
+    14: {
+        "question": "Which of the following is the most important idea that a crisis communication strategy should focus on?",
+        "options": {
+            "A": "The public's perception of a crisis",
+            "B": "The real-world impacts and physical safety effects of a crisis",
+            "C": "The individual details of a crisis",
+            "D": "Internal stakeholder consensus"
+        },
+        "answer": "B",
+        "questionVi": "Nội dung quan trọng nhất mà một chiến lược truyền thông khủng hoảng cần tập trung giải quyết là gì?",
+        "optionsVi": {
+            "A": "Nhận thức của công chúng về khủng hoảng",
+            "B": "Các tác động thực tế trong đời sống thực và sự an toàn của con người (real-world effects of a crisis)",
+            "C": "Các chi tiết đơn lẻ của khủng hoảng",
+            "D": "Sự đồng thuận của các bên nội bộ"
+        },
+        "answerDisplay": "B. The real-world effects ofa crisis",
+        "concept": "• Trọng tâm Truyền thông Khủng hoảng: Ưu tiên giải quyết tác hại thực tế (Real-world effects) và an toàn con người thay vì xử lý khủng hoảng truyền thông suông.",
+        "whyCorrect": "• Giải quyết các hậu quả đời thực và bảo vệ an toàn là nhiệm vụ hàng đầu trong khủng hoảng.",
+        "whyWrong": {
+            "A": "• Nhận thức công chúng là hệ quả phụ.",
+            "C": "• Chi tiết đơn lẻ làm mất bức tranh toàn cảnh.",
+            "D": "• Đồng thuận nội bộ không thay thế được việc xử lý thiệt hại bên ngoài."
+        }
+    },
+    15: {
+        "question": "Which of the following is an adequate definition of a stakeholder?",
+        "options": {
+            "A": "All internal employees only",
+            "B": "All internal employees and external customers",
+            "C": "All people who have an impact on or are impacted by the organization",
+            "D": "All people in the company"
+        },
+        "answer": "C",
+        "questionVi": "Nội dung nào sau đây là định nghĩa đầy đủ về Bên liên quan (Stakeholder)?",
+        "optionsVi": {
+            "A": "Toàn bộ nhân viên nội bộ",
+            "B": "Toàn bộ nhân viên và khách hàng",
+            "C": "Tất cả những người có tác động hoặc chịu tác động bởi hoạt động của tổ chức (impact on or impacted by the organization)",
+            "D": "Toàn bộ người trong công ty"
+        },
+        "answerDisplay": "C. All people who have an impact or are impacted by the organization.",
+        "concept": "• Stakeholder (Bên liên quan) bao gồm bất kỳ cá nhân hay nhóm nào có thể gây ảnh hưởng hoặc chịu ảnh hưởng bởi các quyết định và sản phẩm của doanh nghiệp.",
+        "whyCorrect": "• Bao quát cả chiều tác động hai hướng (tác động đến tổ chức và chịu tác động từ tổ chức).",
+        "whyWrong": {
+            "A": "• Chỉ nhân viên là định nghĩa hẹp Internal.",
+            "B": "• Bỏ qua cơ quan quản lý và cộng đồng.",
+            "D": "• Chỉ người trong công ty bỏ qua các thực thể bên ngoài."
+        }
+    },
+    16: {
+        "question": "When conducting a Business Impact Assessment (BIA), why is it important to interview operational staff?",
+        "options": {
+            "A": "They are candid",
+            "B": "They may have more hands-on institutional knowledge about practical subject workflows than managers",
+            "C": "They find more time for surveys",
+            "D": "They have greater obligation to answer"
+        },
+        "answer": "B",
+        "questionVi": "Khi tiến hành Đánh giá Tác động Kinh doanh (BIA), tại sao việc phỏng vấn trực tiếp nhân viên vận hành thực tế lại quan trọng?",
+        "optionsVi": {
+            "A": "Họ thành thật",
+            "B": "Họ nắm giữ nhiều tri thức thực tế quy trình (institutional knowledge) về vận hành hơn các cấp quản lý (hands-on institutional knowledge)",
+            "C": "Họ rảnh rỗi hơn",
+            "D": "Họ bắt buộc trả lời"
+        },
+        "answerDisplay": "B. They may have more institutional knowledge about a subject than managers.",
+        "concept": "• Operational Staff (Nhân viên vận hành trực tiếp) thấu hiểu mọi rủi ro và nút thắt quy trình hàng ngày mà cấp quản lý chỉ nhìn thấy trên báo cáo.",
+        "whyCorrect": "• Tri thức vận hành thực tế giúp BIA đánh giá chính xác các lỗ hổng hệ thống.",
+        "whyWrong": {
+            "A": "• Sự thành thật phụ thuộc cá nhân.",
+            "C": "• Nhân viên vận hành rất bận rộn.",
+            "D": "• Nghĩa vụ trả lời áp dụng chung."
+        }
+    },
+    17: {
+        "question": "What is the purpose of a holding statement in crisis and media communications?",
+        "options": {
+            "A": "To order the business to temporarily halt operations",
+            "B": "To retain the services of specific media outlets",
+            "C": "To pre-write communications before they are needed",
+            "D": "To prevent personnel from communicating prematurely"
+        },
+        "answer": "D",
+        "questionVi": "Mục đích của một phát ngôn giữ chỗ (Holding Statement) trong truyền thông khủng hoảng là gì?",
+        "optionsVi": {
+            "A": "Yêu cầu doanh nghiệp tạm dừng hoạt động",
+            "B": "Thuê dịch vụ của các cơ quan báo chí cụ thể",
+            "C": "Viết trước các văn bản truyền thông khi chưa cần đến",
+            "D": "Ngăn chặn nhân viên phát ngôn vội vàng/sớm khi chưa có đủ thông tin xác thực (prevent personnel from communicating prematurely)"
+        },
+        "answerDisplay": "D. To prevent personnel from communicating prematurely",
+        "concept": "• Holding Statement là thông cáo ban đầu giúp kiểm soát luồng thông tin, câu thời gian xác minh sự thật và ngăn phát ngôn vội vã.",
+        "whyCorrect": "• Tránh việc nhân viên tự ý đưa ra thông tin chưa kiểm chứng làm trầm trọng thêm khủng hoảng.",
+        "whyWrong": {
+            "A": "• Holding statement là công cụ truyền thông, không phải lệnh dừng vận hành.",
+            "B": "• Không dùng để thuê hợp đồng báo chí.",
+            "C": "• Chuẩn bị kịch bản là crisis template, holding statement dùng để công bố tạm thời khi sự cố xảy ra."
+        }
+    },
+    18: {
+        "question": "In modern financial markets, what percentage of equity-futures and cash-equity trades are executed by automated algorithms?",
+        "options": {
+            "A": "1-5%",
+            "B": "80-90%",
+            "C": "20-30%",
+            "D": "11-17%"
+        },
+        "answer": "B",
+        "questionVi": "Trong thị trường tài chính hiện đại, tỷ lệ phần trăm các giao dịch hợp đồng tương lai cổ phiếu và cổ phiếu tiền mặt được thực hiện tự động bởi thuật toán là bao nhiêu?",
+        "optionsVi": {
+            "A": "1-5%",
+            "B": "80-90% (Áp đảo thị trường)",
+            "C": "20-30%",
+            "D": "11-17%"
+        },
+        "answerDisplay": "B. 80-90%",
+        "concept": "• Algorithmic Trading Dominance: Khoảng 80-90% lượng giao dịch tài chính hiện đại được thực hiện tự động bởi các thuật toán High-Frequency Trading (HFT).",
+        "whyCorrect": "• Con số 80-90% phản ánh tỷ lệ giao dịch tự động hóa thuật toán áp đảo trong tài chính.",
+        "whyWrong": {
+            "A": "• 1-5% quá nhỏ so với thực tế.",
+            "C": "• 20-30% phản ánh thời kỳ thập niên 2000.",
+            "D": "• 11-17% không chính xác."
+        }
+    },
+    19: {
+        "question": "How do anonymized datasets fall short of their goal of being anonymous?",
+        "options": {
+            "A": "Anonymized datasets are deleted",
+            "B": "Anonymized datasets aren't actually anonymous because fields can identify users",
+            "C": "Anonymized datasets can be traced back by browsing history",
+            "D": "Anonymized datasets can be combined with other auxiliary datasets, which re-identifies individuals (Linkage attack)"
+        },
+        "answer": "D",
+        "questionVi": "Tại sao các tập dữ liệu được cho là đã ẩn danh vẫn thất bại trong việc đạt mục tiêu riêng tư của chúng?",
+        "optionsVi": {
+            "A": "Dữ liệu bị xóa",
+            "B": "Trường dữ liệu có thể định danh",
+            "C": "Truy ngược qua lịch sử duyệt web",
+            "D": "Dữ liệu ẩn danh có thể bị liên kết kết hợp với các tập dữ liệu bên ngoài khác, từ đó tái định danh cá nhân (combined with other datasets, re-identify individuals)"
+        },
+        "answerDisplay": "D. Anonymized datasets can be combined with other datasets, which can re-identifry individuals",
+        "concept": "• Tấn công Liên kết (Linkage Attack): Kết hợp tập dữ liệu ẩn danh với tập dữ liệu công khai ngoài làm vô hiệu hóa giải pháp ẩn danh hóa sơ sài.",
+        "whyCorrect": "• Tái định danh danh tính qua liên kết tập dữ liệu phụ trợ bên ngoài là hạn chế cốt lõi.",
+        "whyWrong": {
+            "A": "• Xóa dữ liệu không gây lộ rò.",
+            "B": "• Ẩn danh hóa đã xóa các trường định danh trực tiếp.",
+            "C": "• Lịch sử ứng dụng là một dạng dữ liệu riêng biệt."
+        }
+    },
+    20: {
+        "question": "Which of the following describes the black box problem in AI?",
+        "options": {
+            "A": "It is difficult to understand data nature",
+            "B": "It is difficult to understand how or why an AI system made a particular decision",
+            "C": "It is difficult to understand results",
+            "D": "It is difficult to generate reports"
+        },
+        "answer": "B",
+        "questionVi": "Nội dung nào sau đây mô tả bài toán Hộp đen (Black box problem) trong AI?",
+        "optionsVi": {
+            "A": "Khó hiểu bản chất dữ liệu huấn luyện",
+            "B": "Rất khó để hiểu cách thức hoặc lý do tại sao hệ thống AI lại đưa ra một quyết định cụ thể (difficult to understand how or why AI made a decision)",
+            "C": "Khó hiểu kết quả đầu ra",
+            "D": "Khó tạo báo cáo"
+        },
+        "answerDisplay": "B. It is difficult to understand how or why an Al system made a particular decision.",
+        "concept": "• Black Box Problem xảy ra khi logic tính toán toán học bên trong của mô hình AI quá phức tạp khiến con người không thể giải thích lý do dẫn đến kết quả.",
+        "whyCorrect": "• Không thể giải thích lập luận ra quyết định bên trong của AI là bản chất của vấn đề Black Box.",
+        "whyWrong": {
+            "A": "• Bản chất dữ liệu có thể kiểm tra qua Data Profiling.",
+            "C": "• Kết quả đầu ra hiển thị rõ ràng.",
+            "D": "• Báo cáo là công cụ xuất dữ liệu."
+        }
+    },
+    21: {
+        "question": "What is the black box problem?",
+        "options": {
+            "A": "When a model is deployed, but researchers are unable to figure out why it's making specific decisions",
+            "B": "The problem created when researchers don't create accurate attributes",
+            "C": "The issue of not having enough data",
+            "D": "When a model cannot judge shape or color"
+        },
+        "answer": "A",
+        "questionVi": "Bài toán Hộp đen (Black box problem) được phát biểu chính xác là gì?",
+        "optionsVi": {
+            "A": "Khi một mô hình đã triển khai nhưng các nhà nghiên cứu không thể tìm ra lý do tại sao nó đưa ra các quyết định đó (unable to figure out why making decisions)",
+            "B": "Vấn đề khi không tạo đúng thuộc tính",
+            "C": "Vấn đề thiếu dữ liệu",
+            "D": "Khi mô hình không đoán được hình dạng màu sắc"
+        },
+        "answerDisplay": "A. When a model is deployed, but researchers are unable to figure out why it's making decisions",
+        "concept": "• Sự thiếu khả năng quan sát lập luận bên trong của thuật toán AI phức tạp.",
+        "whyCorrect": "• Không thể suy luận cách mô hình xử lý biến số dẫn đến đầu ra.",
+        "whyWrong": {
+            "B": "• Thuộc tính sai gây thiên vị.",
+            "C": "• Thiếu dữ liệu gây underfitting.",
+            "D": "• Không đoán màu sắc là lỗi thị giác máy tính."
+        }
+    },
+    22: {
+        "question": "When building a predictive model, what is the goal of the development phase?",
+        "options": {
+            "A": "To plug in 40% dataset",
+            "B": "To get the model's error function below an acceptable percentage threshold",
+            "C": "To specify algorithm and clean data",
+            "D": "To train continuously without stopping"
+        },
+        "answer": "B",
+        "questionVi": "Khi xây dựng một mô hình dự đoán, mục tiêu của giai đoạn phát triển (Development phase) là gì?",
+        "optionsVi": {
+            "A": "Nạp 40% dữ liệu",
+            "B": "Đưa hàm sai số (Error function) của mô hình xuống dưới mức ngưỡng chấp nhận được (get error function below acceptable percentage)",
+            "C": "Chỉ định thuật toán và làm sạch",
+            "D": "Huấn luyện liên tục không dừng"
+        },
+        "answerDisplay": "B. To get the model's error function below an acceptable percentage",
+        "concept": "• Tối ưu hóa trong phát triển ML: Điều chỉnh tham số để sai số tổn thất (Loss) giảm xuống mức tối thiểu chấp nhận được.",
+        "whyCorrect": "• Hạ hàm sai số xuống mức tối ưu chấp nhận được là tiêu chuẩn hoàn thành pha phát triển.",
+        "whyWrong": {
+            "A": "• 40% là chỉ số chia dữ liệu.",
+            "C": "• Làm sạch là khâu tiền xử lý.",
+            "D": "• Huấn luyện không dừng gây overfitting."
+        }
+    },
+    23: {
+        "question": "What is the primary purpose of differential privacy?",
+        "options": {
+            "A": "To enable parties to share private data without revealing individual identity in dataset",
+            "B": "To remove direct identifiers",
+            "C": "To only allow certain parties to access data",
+            "D": "To ensure data is completely confidential"
+        },
+        "answer": "A",
+        "questionVi": "Mục đích chính của Tính riêng tư vi sai (Differential Privacy) là gì?",
+        "optionsVi": {
+            "A": "Cho phép các bên chia sẻ và phân tích dữ liệu riêng tư mà không làm lộ danh tính của bất kỳ cá nhân nào có trong tập dữ liệu (share private data without revealing individuals)",
+            "B": "Loại bỏ định danh trực tiếp",
+            "C": "Phân quyền truy cập",
+            "D": "Bảo mật tuyệt đối"
+        },
+        "answerDisplay": "A. To enable parties to share private data without revealing individuals represented in the data.",
+        "concept": "• Differential Privacy thêm nhiễu toán học ngẫu nhiên vào dữ liệu để cho phép phân tích thống kê tổng thể mà triệt tiêu khả năng suy luận danh tính cá nhân.",
+        "whyCorrect": "• Giúp chia sẻ dữ liệu nghiên cứu an toàn mà không làm lộ dữ liệu cá thể.",
+        "whyWrong": {
+            "B": "• Loại bỏ định danh trực tiếp là Anonymization đơn thuần.",
+            "C": "• Phân quyền truy cập là Access Control.",
+            "D": "• Bảo mật tuyệt đối là Encryption."
+        }
+    },
+    24: {
+        "question": "How is a Machine Learning (ML) system different from a Deep Learning (DL) system?",
+        "options": {
+            "A": "A ML system learns from its mistakes",
+            "B": "A ML system does feature extraction automatically",
+            "C": "A ML system needs a human expert to perform manual feature extraction",
+            "D": "A ML system does not need input data"
+        },
+        "answer": "C",
+        "questionVi": "Hệ thống Học máy truyền thống (ML) khác biệt như thế nào so với hệ thống Học sâu (DL)?",
+        "optionsVi": {
+            "A": "ML học từ sai lầm",
+            "B": "ML tự động trích xuất đặc trưng",
+            "C": "Mô hình ML truyền thống yêu cầu chuyên gia con người thực hiện trích xuất thuộc tính thủ công (requires human feature extraction)",
+            "D": "ML không cần dữ liệu đầu vào"
+        },
+        "answerDisplay": "C. A ML system needs a human to provide the feature extraction.",
+        "concept": "• Phân biệt ML và DL: ML truyền thống yêu cầu Feature Engineering thủ công từ con người; DL (Mạng nơ-ron sâu) tự động học Feature Extraction trực tiếp từ dữ liệu thô.",
+        "whyCorrect": "• Trích xuất thuộc tính thủ công bởi con người là hạn chế của ML truyền thống so với DL.",
+        "whyWrong": {
+            "A": "• Cả ML và DL đều điều chỉnh trọng số dựa trên hàm lỗi.",
+            "B": "• Trích xuất thuộc tính tự động là ưu thế của DL.",
+            "D": "• Cả hai đều bắt buộc phải có dữ liệu đầu vào."
+        }
+    },
+    25: {
+        "question": "If your company needs to do the same automated analysis as new data comes in every month, what is the best term to describe that process?",
+        "options": {
+            "A": "Pipeline (Data Pipeline)",
+            "B": "Workflow",
+            "C": "Swimlane",
+            "D": "Use case"
+        },
+        "answer": "A",
+        "questionVi": "Nếu công ty bạn cần thực hiện cùng một quy trình phân tích tự động khi dữ liệu mới đổ về hàng tháng, thuật ngữ nào mô tả đúng nhất quy trình đó?",
+        "optionsVi": {
+            "A": "Đường ống xử lý dữ liệu (Data Pipeline)",
+            "B": "Luồng công việc (Workflow)",
+            "C": "Làn bơi (Swimlane)",
+            "D": "Tình huống sử dụng (Use case)"
+        },
+        "answerDisplay": "A. pipeline",
+        "concept": "• Data Pipeline là chuỗi tự động hóa thu thập, biến đổi, làm sạch và phân tích dữ liệu lặp đi lặp lại theo định kỳ.",
+        "whyCorrect": "• Tự động hóa quy trình phân tích dữ liệu đầu vào định kỳ là bản chất của Data Pipeline.",
+        "whyWrong": {
+            "B": "• Workflow là quy trình làm việc chung của con người.",
+            "C": "• Swimlane là sơ đồ phân công trách nhiệm.",
+            "D": "• Use case là kịch bản ứng dụng phần mềm."
+        }
+    },
+    26: {
+        "question": "Pseudocode can best be defined as:",
+        "options": {
+            "A": "An explainable description of code that is meant for humans, not computers",
+            "B": "A Python library for machine learning",
+            "C": "A middle ground between code and plain writing that can be fed into a computer",
+            "D": "A type of Javascript"
+        },
+        "answer": "A",
+        "questionVi": "Mã giả (Pseudocode) được định nghĩa đúng nhất là gì?",
+        "optionsVi": {
+            "A": "Mô tả thuật toán có thể giải thích được dành cho con người đọc hiểu, không dùng để máy tính thực thi trực tiếp (meant for humans, not computers)",
+            "B": "Một thư viện Python cho học máy",
+            "C": "Ngôn ngữ máy tính",
+            "D": "Một loại Javascript"
+        },
+        "answerDisplay": "A. an explainable description of code that is meant for humans, not computers",
+        "concept": "• Pseudocode (Mã giả) mô tả logic thuật toán bằng ngôn ngữ tự nhiên kết hợp cấu trúc lập trình để con người dễ hiểu và thảo luận.",
+        "whyCorrect": "• Mã giả dành cho con người thấu hiểu logic mà không bị phụ thuộc vào cú pháp máy tính cụ thể.",
+        "whyWrong": {
+            "B": "• Mã giả không phải thư viện mã nguồn.",
+            "C": "• Máy tính không thể biên dịch trực tiếp mã giả.",
+            "D": "• Mã giả không phải ngôn ngữ lập trình Javascript."
+        }
+    },
+    27: {
+        "question": "To measure a predictive model's accuracy, you:",
+        "options": {
+            "A": "Divide the number of predictions by total dataset",
+            "B": "Measure ratio of error curve",
+            "C": "Multiply predictions by percentage",
+            "D": "Divide the number of correct predictions by the total number of predictions"
+        },
+        "answer": "D",
+        "questionVi": "Để đo lường độ chính xác (Accuracy) của một mô hình dự đoán, bạn thực hiện phép tính nào?",
+        "optionsVi": {
+            "A": "Chia số dự đoán cho tổng tập dữ liệu",
+            "B": "Đo tỷ lệ đường cong lỗi",
+            "C": "Nhân tổng dự đoán với phần trăm đúng",
+            "D": "Chia số lượng dự đoán đúng cho tổng số lượng dự đoán (Divide correct predictions by total predictions)"
+        },
+        "answerDisplay": "D. divide the number of correct predictions by the total number of predictions",
+        "concept": "• Công thức tính Accuracy: Accuracy = (Số lượng dự đoán đúng) / (Tổng số lượng dự đoán).",
+        "whyCorrect": "• Phép chia số dự đoán đúng cho tổng số lần dự đoán ra tỷ lệ độ chính xác chuẩn mực.",
+        "whyWrong": {
+            "A": "• Phép chia này không tính đến số dự đoán đúng.",
+            "B": "• Tỷ lệ đường cong lỗi đo Lực mất mát (Loss curve).",
+            "C": "• Phép nhân không ra công thức tính chỉ số Accuracy."
+        }
+    },
+    28: {
+        "question": "Which of the following is a good example of a feedback loop in machine learning?",
+        "options": {
+            "A": "A shopping app surfaces items based on profiles; buying puts you into that dataset reinforcing future recommendations",
+            "B": "A shopping app tracks purchases",
+            "C": "A social media site surfaces posts you engage with, which goes back into the algorithm to show more similar posts",
+            "D": "A site surfaces controversial posts"
+        },
+        "answer": "C",
+        "questionVi": "Ví dụ nào sau đây là một minh họa rõ ràng về Vòng lặp phản hồi (Feedback loop) trong học máy?",
+        "optionsVi": {
+            "A": "App mua sắm gợi ý món đồ",
+            "B": "App mua sắm theo dõi đơn hàng",
+            "C": "Trang mạng xã hội theo dõi tương tác, dùng thuật toán đẩy các bài viết bạn dễ tương tác, thông tin tương tác đó lại tiếp tục nạp ngược vào thuật toán (goes back into algorithm)",
+            "D": "Trang web gợi ý bài viết gây tranh cãi"
+        },
+        "answerDisplay": "C. A social media site tracks engagement, uses an algorithm to surface posts you're likely to engage with, which then goes back into the algorithm",
+        "concept": "• Machine Learning Feedback Loop: Dữ liệu hành vi đầu ra của mô hình trở thành dữ liệu huấn luyện đầu vào cho vòng lặp tiếp theo.",
+        "whyCorrect": "• Tương tác người dùng nạp ngược lại vào thuật toán để tiếp tục huấn luyện là bản chất của feedback loop.",
+        "whyWrong": {
+            "A": "• Gợi ý cơ bản không có tính khuếch đại tự củng cố mạnh.",
+            "B": "• Theo dõi đơn thuần là ghi nhận dữ liệu tĩnh.",
+            "D": "• Bài viết tranh cãi là chiến lược nội dung."
+        }
+    },
+    29: {
+        "question": "Which of the following is one explanation for why cognitive biases exist in human reasoning?",
+        "options": {
+            "A": "We use mental shortcuts (heuristics) to make decisions efficiently under information overload and limited time",
+            "B": "We use them to help remember things",
+            "C": "They help us think logically instead of emotionally",
+            "D": "They are taught to us in school"
+        },
+        "answer": "A",
+        "questionVi": "Giải thích nào sau đây mô tả lý do tại sao Định kiến nhận thức (Cognitive biases) tồn tại trong lập luận của con người?",
+        "optionsVi": {
+            "A": "Con người sử dụng các lối tắt tư duy (heuristics) để đưa ra quyết định nhanh chóng trong điều kiện quá tải thông tin và giới hạn thời gian (mental shortcuts for efficiency)",
+            "B": "Dùng để nhớ đồ vật",
+            "C": "Giúp tư duy logic thay vì cảm xúc",
+            "D": "Được dạy ở trường học"
+        },
+        "answerDisplay": "A. We use mental shortcuts to make decisions efficiently.",
+        "concept": "• Heuristics & Cognitive Biases: Não bộ dùng các lối tắt nhận thức để xử lý nhanh lượng thông tin khổng lồ, vô tình gây ra các sai lệch định kiến.",
+        "whyCorrect": "• Sử dụng lối tắt tư duy để ra quyết định nhanh là nguyên nhân gốc rễ sinh ra định kiến nhận thức.",
+        "whyWrong": {
+            "B": "• Không phải công cụ lưu trữ trí nhớ.",
+            "C": "• Định kiến nhận thức đi ngược lại với logic thuần túy.",
+            "D": "• Đây là cơ chế tâm lý tự nhiên chứ không do trường học dạy."
+        }
+    },
+    30: {
+        "question": "Dating algorithms become biased mostly through offering users:",
+        "options": {
+            "A": "Collaborative filtering that reinforces existing attraction stereotypes",
+            "B": "Access to separate data models",
+            "C": "Different ways to match with users",
+            "D": "Unlimited matches per day"
+        },
+        "answer": "A",
+        "questionVi": "Các thuật toán hẹn hò trở nên bị thiên vị chủ yếu thông qua việc cung cấp cho người dùng tính năng gì?",
+        "optionsVi": {
+            "A": "Lọc cộng tác (Collaborative filtering) củng cố các định kiến hấp dẫn sẵn có",
+            "B": "Truy cập các mô hình dữ liệu riêng",
+            "C": "Các cách ghép đôi khác nhau",
+            "D": "Không giới hạn lượt ghép đôi"
+        },
+        "answerDisplay": "A. collaborative filtering",
+        "concept": "• Lọc cộng tác (Collaborative Filtering) trong app hẹn hò gợi ý người dùng dựa trên hành vi của người dùng tương tự, vô tình tạo ra vòng lặp củng cố định kiến chủng tộc/ngoại hình.",
+        "whyCorrect": "• Lọc cộng tác nhân rộng và củng cố các định kiến xã hội vốn có trong dữ liệu quẹt thẻ.",
+        "whyWrong": {
+            "B": "• Truy cập mô hình riêng là kiến trúc hệ thống.",
+            "C": "• Cách thức match là giao diện người dùng.",
+            "D": "• Lượt match không gây ra định kiến thiên vị nhóm."
+        }
+    },
+    31: {
+        "question": "How does the 'virtuous cycle' that benefits Big Tech operate?",
+        "options": {
+            "A": "Organizations write algorithms with fewer biases",
+            "B": "By acting virtuous, the public respects Big Tech",
+            "C": "Better classes of customers lead to richer data",
+            "D": "Data-driven algorithms improve solutions, leading to new customers, and better data"
+        },
+        "answer": "D",
+        "questionVi": "Chu trình tăng trưởng độc quyền ('Virtuous Cycle') mang lại lợi ích cho các tập đoàn Big Tech vận hành như thế nào?",
+        "optionsVi": {
+            "A": "Tổ chức viết thuật toán ít thiên vị dẫn tới kết quả công bằng hơn",
+            "B": "Hành động đạo đức giúp công chúng tôn trọng Big Tech hơn",
+            "C": "Khách hàng tốt mang lại dữ liệu phong phú hơn",
+            "D": "Thuật toán dựa trên dữ liệu cải thiện giải pháp -> Thu hút khách hàng mới -> Thu thập thêm dữ liệu tốt hơn (Data -> Product -> Users -> More Data)"
+        },
+        "answerDisplay": "D. Data-driven algorithms improve solutions, leading to new customers, and better data.",
+        "concept": "• Vòng lặp phản hồi dữ liệu (Data Flywheel Effect): Càng nhiều dữ liệu -> Thuật toán càng thông minh -> Sản phẩm càng tốt -> Thu hút thêm người dùng -> Lại có thêm dữ liệu độc quyền.",
+        "whyCorrect": "• Chu trình tự củng cố giữa dữ liệu, chất lượng sản phẩm và lượng người dùng tạo nên lợi thế độc quyền cho Big Tech.",
+        "whyWrong": {
+            "A": "• Viết thuật toán ít thiên vị là mục tiêu đạo đức.",
+            "B": "• Công chúng tôn trọng là hiệu ứng thương hiệu.",
+            "C": "• Khách hàng giàu không phải nguyên nhân cốt lõi của chu trình."
+        }
+    },
+    32: {
+        "question": "A model that equalizes the number of mistakes it makes for each subgroup to reduce harm is deciding on:",
+        "options": {
+            "A": "Equality of true outcomes",
+            "B": "Equality of false negatives",
+            "C": "Equality of training data",
+            "D": "Equality of prediction bias"
+        },
+        "answer": "B",
+        "questionVi": "Một mô hình cân bằng số lượng sai sót mà nó mắc phải cho mỗi nhóm nhỏ để giảm thiểu tổn hại là đang quyết định về tiêu chuẩn nào?",
+        "optionsVi": {
+            "A": "Bình đẳng kết quả thực tế",
+            "B": "Bình đẳng âm tính giả (Equality of false negatives)",
+            "C": "Bình đẳng dữ liệu huấn luyện",
+            "D": "Bình đẳng thiên vị dự đoán"
+        },
+        "answerDisplay": "B. equality of false negatives",
+        "concept": "• Equality of False Negatives đảm bảo tỷ lệ bỏ sót sai sót gây hại đạt mức ngang nhau giữa tất cả các phân nhóm xã hội.",
+        "whyCorrect": "• Cân bằng tỷ lệ Âm tính giả giữa các nhóm đảm bảo rủi ro bỏ sót tổn hại không bị dồn lên một nhóm yếu thế cụ thể.",
+        "whyWrong": {
+            "A": "• Bình đẳng kết quả là Equalized Odds tổng thể.",
+            "C": "• Dữ liệu huấn luyện là phân phối mẫu đầu vào.",
+            "D": "• Thiên vị dự đoán là chỉ số đo lường độ lệch chung."
+        }
+    },
+    33: {
+        "question": "Which school of philosophical thought primarily advocates for a global moral code based on duty?",
+        "options": {
+            "A": "Utilitarianism",
+            "B": "Deontology",
+            "C": "Virtue ethics",
+            "D": "Relativism"
+        },
+        "answer": "B",
+        "questionVi": "Trường phái tư tưởng triết học nào chủ yếu cổ vũ cho một bộ quy tắc đạo đức toàn cầu có tính nghĩa vụ tuyệt đối?",
+        "optionsVi": {
+            "A": "Thuyết vị lợi (Utilitarianism)",
+            "B": "Thuyết nghĩa vụ luận (Deontology)",
+            "C": "Thuyết đạo đức đức hạnh (Virtue ethics)",
+            "D": "Thuyết tương đối đạo đức"
+        },
+        "answerDisplay": "B. Deontology",
+        "concept": "• Deontology (Thuyết nghĩa vụ luận của Immanuel Kant) cho rằng các quy tắc đạo đức là những mệnh lệnh tuyệt đối (Categorical Imperatives) áp dụng phổ quát cho toàn nhân loại.",
+        "whyCorrect": "• Nghĩa vụ luận đòi hỏi tuân thủ các quy tắc đạo đức tuyệt đối không thay đổi theo hoàn cảnh.",
+        "whyWrong": {
+            "A": "• Utilitarianism đánh giá đạo đức dựa trên kết quả/hậu quả.",
+            "C": "• Virtue ethics tập trung vào phẩm chất và đức hạnh cá nhân.",
+            "D": "• Relativism cho rằng đạo đức thay đổi theo văn hóa."
+        }
+    },
+    34: {
+        "question": "As a cognitive bias, when humans see a lack of context or meaning around a piece of information, they tend to:",
+        "options": {
+            "A": "Fill in details using existing stereotypes or prior assumptions",
+            "B": "Use biased sources of research",
+            "C": "Seek authority figures",
+            "D": "Disagree with previous beliefs"
+        },
+        "answer": "A",
+        "questionVi": "Dưới góc độ định kiến nhận thức, khi con người thấy sự thiếu hụt bối cảnh hoặc ý nghĩa xung quanh một mảnh thông tin, họ có xu hướng:",
+        "optionsVi": {
+            "A": "Tự lấp đầy các chi tiết còn thiếu bằng cách dựa vào các định kiến có sẵn hoặc giả định trước đó (fill in details using stereotypes)",
+            "B": "Dùng nguồn nghiên cứu thiên vị",
+            "C": "Tìm kiếm nhân vật có thẩm quyền",
+            "D": "Bác bỏ niềm tin cũ"
+        },
+        "answerDisplay": "A. fill in details using existing stereotypes or prior assumptions",
+        "concept": "• Biến dạng nhận thức do thiếu bối cảnh (Filling in gaps): Trí não tự động suy đoán bổ sung phần thông tin thiếu bằng các định kiến xã hội vốn có.",
+        "whyCorrect": "• Tự điền chi tiết trống bằng định kiến có sẵn là phản ứng tâm lý nhận thức phổ biến.",
+        "whyWrong": {
+            "B": "• Tìm nguồn thiên vị là hậu quả của Confirmation bias.",
+            "C": "• Tìm người thẩm quyền là Authority bias.",
+            "D": "• Bác bỏ niềm tin cũ đi ngược lại phản ứng nhận thức tự nhiên."
+        }
+    },
+    35: {
+        "question": "What is non-maleficence?",
+        "options": {
+            "A": "The principle of doing no harm",
+            "B": "The principle of having no bias",
+            "C": "The principle of having no security risk",
+            "D": "The principle of maximizing profits"
+        },
+        "answer": "A",
+        "questionVi": "Khái niệm Không gây hại (Non-maleficence) được định nghĩa là gì?",
+        "optionsVi": {
+            "A": "Nguyên tắc không gây ra tổn hại cho con người và xã hội (The principle of doing no harm)",
+            "B": "Nguyên tắc không có thiên vị",
+            "C": "Nguyên tắc không có rủi ro an ninh",
+            "D": "Nguyên tắc tối đa hóa lợi nhuận"
+        },
+        "answerDisplay": "A. The principle of doing no harm.",
+        "concept": "• Non-maleficence (Primum non nocere - Trước tiên là không gây hại) là quy tắc đạo đức cơ bản yêu cầu hệ thống công nghệ không được gây ra thiệt hại cho người dùng.",
+        "whyCorrect": "• Định nghĩa kinh điển của nguyên tắc Non-maleficence là 'Do no harm'.",
+        "whyWrong": {
+            "B": "• Không thiên vị là Fairness.",
+            "C": "• Không có rủi ro an ninh là Security/Robustness.",
+            "D": "• Tối đa lợi nhuận là Commercial goal."
+        }
+    },
+    36: {
+        "question": "In AI ethics frameworks, the principle of privacy is most commonly paired or referred to alongside:",
+        "options": {
+            "A": "Data protection and confidentiality",
+            "B": "Security and speed",
+            "C": "Accuracy and performance",
+            "D": "Profitability and scale"
+        },
+        "answer": "A",
+        "questionVi": "Trong các khung đạo đức AI, nguyên tắc quyền riêng tư (Privacy) thường đi kèm hoặc được đề cập song hành cùng với:",
+        "optionsVi": {
+            "A": "Bảo vệ dữ liệu và tính bảo mật (Data protection and confidentiality)",
+            "B": "An ninh và tốc độ",
+            "C": "Độ chính xác và hiệu suất",
+            "D": "Lợi nhuận và quy mô"
+        },
+        "answerDisplay": "A. Data protection and confidentiality",
+        "concept": "• Privacy & Data Protection: Quyền riêng tư luôn được đảm bảo thông qua các cơ chế Bảo vệ dữ liệu (Data Protection) và Giữ bảo mật (Confidentiality).",
+        "whyCorrect": "• Bảo vệ dữ liệu và tính bảo mật là bộ đôi đi kèm tự nhiên với quyền riêng tư.",
+        "whyWrong": {
+            "B": "• Tốc độ là tiêu chuẩn kỹ thuật.",
+            "C": "• Hiệu suất là tiêu chuẩn tối ưu hóa toán.",
+            "D": "• Lợi nhuận là tiêu chí tài chính."
+        }
+    },
+    37: {
+        "question": "A goal of a fair model's accuracy standards is to:",
+        "options": {
+            "A": "Minimize the error rate as long as parity is obtained",
+            "B": "Minimize fairness score",
+            "C": "Minimize quality metrics",
+            "D": "Minimize training data size"
+        },
+        "answer": "A",
+        "questionVi": "Mục tiêu về tiêu chuẩn độ chính xác của một mô hình công bằng là gì?",
+        "optionsVi": {
+            "A": "Tối thiểu hóa tỷ lệ lỗi (Error rate) chừng nào tính bình đẳng/ngang bằng (Parity) giữa các nhóm vẫn được đảm bảo (minimize error rate as long as parity is obtained)",
+            "B": "Tối thiểu hóa điểm công bằng",
+            "C": "Tối thiểu hóa chỉ số chất lượng",
+            "D": "Tối thiểu hóa kích thước tập dữ liệu"
+        },
+        "answerDisplay": "A. minimize the error rate as long as parity is obtained",
+        "concept": "• Fairness-Constrained Accuracy Optimization: Đạt được độ chính xác tối đa (lỗi thấp nhất) trong phạm vi ràng buộc công bằng giữa các nhóm.",
+        "whyCorrect": "• Giảm thiểu sai số nhưng bắt buộc duy trì sự bình đẳng chỉ số giữa các nhóm.",
+        "whyWrong": {
+            "B": "• Mục tiêu là tối đa hóa tính công bằng.",
+            "C": "• Chất lượng mô hình cần được tối ưu nâng cao.",
+            "D": "• Kích thước tập dữ liệu phụ thuộc vào bài toán."
+        }
+    },
+    38: {
+        "question": "Why are environmental concerns important to consider in the ethical development of data-driven technologies?",
+        "options": {
+            "A": "Data-driven technologies can cause secondary, indirect, or cumulative effects on the environment that might impact people in the long term.",
+            "B": "Data-driven technologies directly impact the environment through invasive mining.",
+            "C": "Data-driven technologies directly impact environment through pollution.",
+            "D": "Data-driven technologies directly impact living things via displacement."
+        },
+        "answer": "A",
+        "questionVi": "Tại sao các mối quan ngại về môi trường lại quan trọng cần xem xét trong việc phát triển đạo đức các công nghệ dựa trên dữ liệu?",
+        "optionsVi": {
+            "A": "Các công nghệ dựa trên dữ liệu có thể gây ra các tác động thứ cấp, gián tiếp hoặc tích tụ lên môi trường, ảnh hưởng dài hạn tới con người (secondary, indirect, or cumulative effects)",
+            "B": "Tác động trực tiếp qua khai thác khoáng sản",
+            "C": "Tác động trực tiếp qua ô nhiễm",
+            "D": "Tác động trực tiếp gây di dời sinh vật"
+        },
+        "answerDisplay": "A. Data-driven technologies can cause secondary, indirect, or cumulative effects on the environment that might impact people in the long term.",
+        "concept": "• Các trung tâm dữ liệu AI tiêu thụ năng lượng khổng lồ và thải lượng khí thải carbon tích tụ (Cumulative Impact), đe dọa môi trường sống dài hạn.",
+        "whyCorrect": "• Tác động tích tụ và gián tiếp đến môi trường ảnh hưởng trực tiếp đến sự phát triển bền vững của nhân loại.",
+        "whyWrong": {
+            "B": "• Khai thác khoáng sản là chuỗi cung ứng phần cứng.",
+            "C": "• Ô nhiễm trực tiếp là rác thải điện tử.",
+            "D": "• Di dời sinh vật là tác động sinh thái xây dựng."
+        }
+    },
+    39: {
+        "question": "How could a board of ethics be an example of ethics washing?",
+        "options": {
+            "A": "If it has a wide variety of stakeholders",
+            "B": "If it has a narrow list of values to guide decisions",
+            "C": "If it has no power to institute change or enforce compliance",
+            "D": "If it has a large number of stakeholders"
+        },
+        "answer": "C",
+        "questionVi": "Làm thế nào một Hội đồng Đạo đức có thể trở thành một ví dụ về 'Ethics Washing' (Tẩy trắng đạo đức)?",
+        "optionsVi": {
+            "A": "Nếu hội đồng có nhiều bên liên quan",
+            "B": "Nếu hội đồng có danh sách giá trị hẹp",
+            "C": "Nếu hội đồng không có thực quyền để thực thi thay đổi hoặc cưỡng chế tuân thủ (has no power to institute change)",
+            "D": "Nếu hội đồng có đông thành viên"
+        },
+        "answerDisplay": "C. If it has no power to institute change.",
+        "concept": "• Ethics Washing là việc lập ra các hội đồng hình thức để quảng bá hình ảnh nhưng tước bỏ quyền hạn thực thi quyết định của hội đồng đó.",
+        "whyCorrect": "• Thành lập hội đồng bề nổi nhưng không cho thực quyền thay đổi là hình thức Ethics Washing điển hình.",
+        "whyWrong": {
+            "A": "• Đa dạng bên liên quan là tính chất tích cực.",
+            "B": "• Danh sách giá trị hẹp là vấn đề phạm vi.",
+            "D": "• Đông thành viên không quyết định việc tẩy trắng."
+        }
+    },
+    40: {
+        "question": "What does a leadership champion do in terms of organizational ethics?",
+        "options": {
+            "A": "Makes decisions based on company values even in the face of adversity",
+            "B": "Makes decisions based on personal opinions",
+            "C": "Makes decisions based on popularity",
+            "D": "Makes decisions based on brand name"
+        },
+        "answer": "A",
+        "questionVi": "Một thủ lĩnh tiên phong (Leadership champion) đóng vai trò gì trong đạo đức tổ chức?",
+        "optionsVi": {
+            "A": "Đưa ra các quyết định dựa trên các giá trị của công ty ngay cả khi phải đối mặt với nghịch cảnh (Make decisions based on company values even in adversity)",
+            "B": "Ra quyết định dựa trên ý kiến cá nhân",
+            "C": "Ra quyết định dựa trên sự nổi tiếng",
+            "D": "Ra quyết định dựa trên tên thương hiệu"
+        },
+        "answerDisplay": "A. Make decisions based on company values even in the face of adversity.",
+        "concept": "• Leadership Champion: Người lãnh đạo kiên định bảo vệ và thực thi các giá trị đạo đức cốt lõi của công ty ngay cả khi chịu áp lực lợi nhuận hay nghịch cảnh.",
+        "whyCorrect": "• Kiên định bảo vệ giá trị tổ chức trong hoàn cảnh khó khăn là phẩm chất của Leadership Champion.",
+        "whyWrong": {
+            "B": "• Ý kiến cá nhân mang tính chủ quan.",
+            "C": "• Sự nổi tiếng là chỉ số bề nổi.",
+            "D": "• Tên thương hiệu là tài sản tiếp thị."
+        }
+    },
+    41: {
+        "question": "Which of the following describes the purpose of having an Ethics Board for a data-driven organization?",
+        "options": {
+            "A": "An Ethics Board can help maintain an organization's values-based intentions and increase transparency into how they use data-driven technologies",
+            "B": "An Ethics Board can help maintain profit margins",
+            "C": "An Ethics Board decreases inherent dangers of autonomous technologies",
+            "D": "An Ethics Board focuses only on internal employee disputes"
+        },
+        "answer": "A",
+        "questionVi": "Nội dung nào sau đây mô tả đúng mục đích của việc thành lập Hội đồng Đạo đức (Ethics Board) cho một tổ chức dựa trên dữ liệu?",
+        "optionsVi": {
+            "A": "Hội đồng Đạo đức giúp duy trì các định hướng dựa trên giá trị của tổ chức và tăng cường tính minh bạch trong việc sử dụng công nghệ dựa trên dữ liệu (maintain values-based intentions and increase transparency)",
+            "B": "Duy trì biên lợi nhuận",
+            "C": "Giảm nguy cơ tự động",
+            "D": "Chỉ giải quyết tranh chấp nội bộ"
+        },
+        "answerDisplay": "A. An Ethics Board can help maintain an organization's values-based intentions and increase transparency into how they use data-driven technologies _",
+        "concept": "• Hội đồng Đạo đức (Ethics Board) giữ vai trò định hướng giá trị đạo đức và giám sát minh bạch quy trình sử dụng AI trong tổ chức.",
+        "whyCorrect": "• Định hướng giá trị cốt lõi và đảm bảo minh bạch là hai nhiệm vụ quan trọng nhất của Ethics Board.",
+        "whyWrong": {
+            "B": "• Biên lợi nhuận thuộc về Hội đồng quản trị kinh doanh.",
+            "C": "• Giảm nguy cơ tự động là công việc kỹ thuật.",
+            "D": "• Tranh chấp nội bộ thuộc về phòng Nhân sự HR."
+        }
+    },
+    42: {
+        "question": "Which of the following is a key element of communications with internal and external stakeholders regarding an organization's ethics policies?",
+        "options": {
+            "A": "Simple to follow examples and clear guidelines",
+            "B": "Daily communications",
+            "C": "Dense procedural descriptions",
+            "D": "Flexible verbiage"
+        },
+        "answer": "A",
+        "questionVi": "Yếu tố cốt lõi trong truyền thông với các bên liên quan về chính sách đạo đức của tổ chức là gì?",
+        "optionsVi": {
+            "A": "Ví dụ đơn giản dễ làm theo và hướng dẫn rõ ràng (Simple to follow examples)",
+            "B": "Truyền thông hàng ngày",
+            "C": "Mô tả quy trình dày đặc phức tạp",
+            "D": "Ngôn từ mập mờ linh hoạt"
+        },
+        "answerDisplay": "A. Simple to follow examples",
+        "concept": "• Truyền thông chính sách đạo đức cần ưu tiên tính Đơn giản (Simplicity) và Dễ hiểu để mọi đối tượng đều có thể tiếp thu và tuân thủ.",
+        "whyCorrect": "• Tính đơn giản dễ hiểu đảm bảo chính sách thực sự được phổ cập và áp dụng hiệu quả.",
+        "whyWrong": {
+            "B": "• Truyền thông hàng ngày gây quá tải thông tin.",
+            "C": "• Mô tả quá dày đặc gây cản trở việc đọc và hiểu.",
+            "D": "• Ngôn từ mập mờ tạo ra các khe hở vi phạm."
+        }
+    },
+    43: {
+        "question": "Which of the following describes change management in the context of organizational ethics?",
+        "options": {
+            "A": "A collective term used to describe how employees voice concerns",
+            "B": "A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in fostering an ethical organizational culture",
+            "C": "A collective term for product modifications after negative feedback",
+            "D": "A process to replace executive board members"
+        },
+        "answer": "B",
+        "questionVi": "Nội dung nào sau đây mô tả Quản lý sự thay đổi (Change management) trong bối cảnh đạo đức tổ chức?",
+        "optionsVi": {
+            "A": "Thuật ngữ mô tả cách nhân viên lên tiếng",
+            "B": "Thuật ngữ chung cho tất cả các phương pháp nhằm chuẩn bị, hỗ trợ và giúp đỡ cá nhân, đội ngũ và tổ chức thực hiện sự chuyển đổi sang văn hóa đạo đức (approaches to prepare, support, help in making organizational change)",
+            "C": "Sửa đổi sản phẩm sau phản hồi tiêu cực",
+            "D": "Quy trình thay thế ban điều hành"
+        },
+        "answerDisplay": "B. A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in fostering an ethical organizational culture.",
+        "concept": "• Change Management: Quy trình quản trị chuyển đổi hành vi, tư duy và cấu trúc tổ chức hướng tới các chuẩn mực văn hóa đạo đức mới.",
+        "whyCorrect": "• Hỗ trợ toàn diện cá nhân và tập thể thích nghi với sự thay đổi văn hóa tổ chức.",
+        "whyWrong": {
+            "A": "• Lên tiếng là Employee Voice.",
+            "C": "• Sửa sản phẩm là Product Iteration.",
+            "D": "• Thay ban điều hành là Executive succession planning."
+        }
+    },
+    44: {
+        "question": "How is employee voice different than open door policy?",
+        "options": {
+            "A": "Open door policy follows up with people to show how changes were implemented",
+            "B": "Employee voice follows up with people to show how changes were implemented based on their communication",
+            "C": "They are identical in implementation",
+            "D": "Open door policy is strictly formal"
+        },
+        "answer": "B",
+        "questionVi": "Tiếng nói của nhân viên (Employee voice) khác biệt với Chính sách mở cửa (Open door policy) như thế nào?",
+        "optionsVi": {
+            "A": "Chính sách mở cửa theo dõi và minh chứng sự thay đổi",
+            "B": "Employee voice chủ động phản hồi và chứng minh các thay đổi thực tế đã được thực thi dựa trên ý kiến đóng góp của nhân viên (follows up to show how changes were implemented)",
+            "C": "Cả hai giống hệt nhau",
+            "D": "Chính sách mở cửa là hình thức cứng nhắc"
+        },
+        "answerDisplay": "B. Employee voice follows up with the people to show how changes were implemented based on their communication.",
+        "concept": "• Employee Voice thực chất bao gồm hai chiều: Lắng nghe đóng góp và Thực thi hành động phản hồi (Follow-up & Implementation) để nhân viên thấy ý kiến của họ có giá trị.",
+        "whyCorrect": "• Phản hồi kết quả hành động thực tế là điểm khác biệt cốt lõi của Employee Voice so với sự mở cửa lắng nghe thụ động.",
+        "whyWrong": {
+            "A": "• Open door policy chỉ dừng ở mở cửa lắng nghe thụ động.",
+            "C": "• Hai khái niệm có sự khác biệt lớn về tính hiệu quả hành động.",
+            "D": "• Mở cửa mang tính hình thức lỏng lẻo."
+        }
+    },
+    45: {
+        "question": "Which of the following is an important action needed for the finalization of internal and external ethics policies before approval?",
+        "options": {
+            "A": "Discarding open issues to provide a clean slate",
+            "B": "Documenting the assumptions and choices made in the drafting of the policies",
+            "C": "Testing the policy in an already deployed project setting",
+            "D": "Ensuring the policies are the same as those from peer organizations"
+        },
+        "answer": "B",
+        "questionVi": "Hành động quan trọng nào cần thiết cho việc hoàn thiện các chính sách đạo đức trước khi phê duyệt chính thức?",
+        "optionsVi": {
+            "A": "Bỏ qua các vấn đề còn mở",
+            "B": "Ghi chép và lưu trữ tài liệu về các giả định và lựa chọn được đưa ra trong quá trình dự thảo (Documenting assumptions and choices made)",
+            "C": "Thử nghiệm chính sách trên dự án đã triển khai",
+            "D": "Đảm bảo chính sách giống hệt các công ty đối thủ"
+        },
+        "answerDisplay": "B. Documenting the assumptions and choices made in the drafting of the policies",
+        "concept": "• Ghi chép tài liệu về giả định và lý do đưa ra các quyết định trong dự thảo chính sách tạo ra tính giải trình và cơ sở kiểm toán sau này.",
+        "whyCorrect": "• Ghi chép các giả định giúp các bên phê duyệt hiểu rõ căn cứ lập luận của bộ chính sách.",
+        "whyWrong": {
+            "A": "• Bỏ qua vấn đề chưa giải quyết là che giấu rủi ro.",
+            "C": "• Thử nghiệm trên dự án thực tế nên làm ở giai đoạn Pilot.",
+            "D": "• Sao chép đối thủ bỏ qua tính đặc thù của tổ chức."
+        }
+    },
+    46: {
+        "question": "Which of the following describe a process of cross-correlation of data? (Select two.)",
+        "options": {
+            "A": "Discovering new information via inference",
+            "B": "Analysing emotional stimulus",
+            "C": "Comparing multiple data points or datasets to identify hidden patterns",
+            "D": "Comparing people of different demographic groups"
+        },
+        "answer": "A, C",
+        "questionVi": "Những nội dung nào sau đây mô tả quy trình tương quan chéo dữ liệu (Cross-correlation of data)? (Select two)",
+        "optionsVi": {
+            "A": "Khám phá ra các thông tin mới thông qua suy luận dữ liệu (Discovering new information via inference)",
+            "B": "Phân tích phản ứng cảm xúc",
+            "C": "So sánh nhiều điểm dữ liệu hoặc tập dữ liệu với nhau để tìm mẫu ẩn (Comparing multiple data points or sets)",
+            "D": "So sánh các nhóm nhân khẩu học"
+        },
+        "answerDisplay": "A. Discovering new information via inference & C. Comparing multiple data points or sets",
+        "concept": "• Cross-correlation: So sánh đối chiếu chéo nhiều nguồn dữ liệu để phát hiện ra các quy luật và tri thức suy luận mới.",
+        "whyCorrect": "• Suy luận ra thông tin mới và so sánh chéo các điểm dữ liệu là hai đặc trưng của Cross-correlation.",
+        "whyWrong": {
+            "B": "• Phân tích cảm xúc thuộc về Sentiment analysis.",
+            "D": "• So sánh nhân khẩu học là Demographic analysis."
+        }
+    },
+    47: {
+        "question": "Which of the following elements should be communicated with end users when negotiating ethical access to a user's data? (Select two.)",
+        "options": {
+            "A": "The monetary value of that data",
+            "B": "An offer of money to relinquish rights",
+            "C": "The intention behind a certain activity or request",
+            "D": "A request for consent to perform an action"
+        },
+        "answer": "C, D",
+        "questionVi": "Những yếu tố nào sau đây nên được truyền thông rõ ràng với người dùng khi thỏa thuận quyền truy cập dữ liệu một cách có đạo đức? (Select two)",
+        "optionsVi": {
+            "A": "Giá trị tiền tệ của dữ liệu",
+            "B": "Đề nghị tiền để từ bỏ quyền",
+            "C": "Mục đích và ý định đằng sau yêu cầu thu thập dữ liệu (The intention behind request)",
+            "D": "Yêu cầu sự đồng ý (Consent) để thực hiện hành động"
+        },
+        "answerDisplay": "C. The intention behind a certain activity or request & D. A request for consent to perform an action",
+        "concept": "• Informed Consent (Sự đồng ý dựa trên thông tin đầy đủ) yêu cầu giải thích rõ Mục đích sử dụng (Intention) và xin phép đồng ý tự nguyện (Consent).",
+        "whyCorrect": "• Nêu rõ mục đích thu thập và thu thập sự đồng ý rõ ràng là hai yêu cầu minh bạch đạo đức bắt buộc.",
+        "whyWrong": {
+            "A": "• Định giá tiền tệ không phải trọng tâm quyền riêng tư.",
+            "B": "• Dùng tiền ép người dùng từ bỏ quyền là hành vi thao túng vi phạm đạo đức."
+        }
+    },
+    48: {
+        "question": "Which of the following are common key performance indicators (KPIs) within dashboards of data-driven systems? (Select two.)",
+        "options": {
+            "A": "Model training time",
+            "B": "EBITDA financial metrics",
+            "C": "Cashflow forecast",
+            "D": "Performance metrics, such as accuracy and cost functions"
+        },
+        "answer": "A, D",
+        "questionVi": "Những chỉ số hiệu suất cốt lõi (KPI) phổ biến nào hiển thị trên bảng điều khiển của các hệ thống dựa trên dữ liệu? (Select two)",
+        "optionsVi": {
+            "A": "Thời gian huấn luyện mô hình (Model training time)",
+            "B": "Chỉ số tài chính EBITDA",
+            "C": "Dự báo dòng tiền",
+            "D": "Các số liệu đo lường hiệu suất như độ chính xác và hàm sai số (accuracy and cost functions)"
+        },
+        "answerDisplay": "A. Model training time & D. Performance metrics, such as accuracy and cost functions",
+        "concept": "• ML System Dashboard KPIs: Đo lường Thời gian huấn luyện (Training time), Accuracy, Precision/Recall và Hàm mất mát (Loss/Cost function).",
+        "whyCorrect": "• Thời gian huấn luyện và các chỉ số đo lường hiệu suất mô hình là KPI trực quan hóa kỹ thuật chính.",
+        "whyWrong": {
+            "B": "• EBITDA là KPI tài chính kế toán.",
+            "C": "• Dòng tiền thuộc về quản trị tài chính."
+        }
+    },
+    49: {
+        "question": "Which of the following sources does a SIEM (Security Information and Event Management) system typically pull data from? (Select two.)",
+        "options": {
+            "A": "System event logs",
+            "B": "Encrypted personal data",
+            "C": "Personnel emails",
+            "D": "Network intrusion detection alerts"
+        },
+        "answer": "A, D",
+        "questionVi": "Hệ thống SIEM (Quản lý Sự kiện và Thông tin An ninh) thường thu thập dữ liệu từ những nguồn nào sau đây? (Select two)",
+        "optionsVi": {
+            "A": "Nhật ký sự kiện hệ thống (System event logs)",
+            "B": "Dữ liệu cá nhân mã hóa",
+            "C": "Email nhân viên",
+            "D": "Các cảnh báo từ hệ thống phát hiện xâm nhập mạng (Network intrusion detection alerts)"
+        },
+        "answerDisplay": "A. System event logs & D. Network intrusion detection alerts",
+        "concept": "• Nguồn dữ liệu của SIEM: Thu thập Logs sự kiện hệ thống và Cảnh báo an ninh mạng (IDS/IPS Alerts) để tổng hợp phân tích đe dọa.",
+        "whyCorrect": "• Logs hệ thống và cảnh báo phát hiện xâm nhập là hai nguồn dữ liệu an ninh cốt lõi của SIEM.",
+        "whyWrong": {
+            "B": "• SIEM không thu thập nội dung dữ liệu cá nhân mã hóa.",
+            "C": "• Email nhân viên chứa thông tin riêng tư không phải nguồn log an ninh mạng."
+        }
+    },
+    50: {
+        "question": "Which of the following are tools of an effective media communication plan? (Select two.)",
+        "options": {
+            "A": "Mission statement",
+            "B": "Press release",
+            "C": "Public education campaign",
+            "D": "Video briefing"
+        },
+        "answer": "B, C",
+        "questionVi": "Những công cụ nào sau đây thuộc về một kế hoạch truyền thông báo chí/truyền thông hiệu quả? (Select two)",
+        "optionsVi": {
+            "A": "Tuyên bố sứ mệnh",
+            "B": "Thông cáo báo chí (Press release)",
+            "C": "Chiến dịch giáo dục công chúng (Public education campaign)",
+            "D": "Tóm tắt video nội bộ"
+        },
+        "answerDisplay": "B. Press release & C. Public education campaign",
+        "concept": "• Kế hoạch truyền thông báo chí sử dụng các công cụ công bố chính thức như Press Release và các chiến dịch nâng cao nhận thức cộng đồng (Public Education Campaign).",
+        "whyCorrect": "• Thông cáo báo chí và chiến dịch giáo dục là hai công cụ truyền thông đối ngoại chính yếu.",
+        "whyWrong": {
+            "A": "• Tuyên bố sứ mệnh là định hướng chiến lược nội bộ.",
+            "D": "• Video briefing là công cụ giao tiếp nội bộ."
+        }
+    },
+    51: {
+        "question": "Which of the following communication tactics help uphold transparency and explainability from the customer perspective? (Select two.)",
+        "options": {
+            "A": "Providing prompt responses to customer questions about AI decisions",
+            "B": "Providing information about data-driven systems in simple, easy-to-understand terms",
+            "C": "Providing in-depth white papers on algorithms",
+            "D": "Providing guidelines for password security"
+        },
+        "answer": "A, B",
+        "questionVi": "Những chiến thuật truyền thông nào sau đây giúp duy trì tính minh bạch và khả năng giải thích dưới góc nhìn của khách hàng? (Select two)",
+        "optionsVi": {
+            "A": "Cung cấp phản hồi kịp thời cho các câu hỏi của khách hàng về các quyết định tự động của hệ thống (prompt responses to questions about decisions)",
+            "B": "Cung cấp thông tin về các hệ thống dựa trên dữ liệu bằng các thuật ngữ đơn giản, dễ hiểu (simple, easy-to-understand terms)",
+            "C": "Cung cấp tài liệu kỹ thuật hàn lâm phức tạp",
+            "D": "Cung cấp hướng dẫn bảo mật mật khẩu"
+        },
+        "answerDisplay": "A. Providing prompt responses to customer questions about the decisions made by data-driven systems. & B. Providing information about data-driven systems in simple, easy-to-understand terms.",
+        "concept": "• Minh bạch góc nhìn người dùng: Phản hồi nhanh chóng thắc mắc và Giải thích bằng ngôn ngữ phổ thông đơn giản.",
+        "whyCorrect": "• Phản hồi kịp thời và dùng ngôn ngữ đơn giản giúp khách hàng thực sự thấu hiểu và tin tưởng hệ thống.",
+        "whyWrong": {
+            "C": "• Báo cáo hàn lâm quá phức tạp với người dùng đại chúng.",
+            "D": "• Hướng dẫn mật khẩu thuộc về an ninh người dùng."
+        }
+    },
+    52: {
+        "question": "Which of the following are useful strategies for communicating ethical risks to the organization? (Select two.)",
+        "options": {
+            "A": "Communicate information through a single voice",
+            "B": "Disseminate information in multiple formats",
+            "C": "Communicate information in real time",
+            "D": "Provide information only when solicited"
+        },
+        "answer": "B, C",
+        "questionVi": "Những chiến lược nào sau đây là hữu ích để truyền thông các rủi ro đạo đức tới toàn tổ chức? (Select two)",
+        "optionsVi": {
+            "A": "Truyền đạt thông tin qua một giọng nói duy nhất",
+            "B": "Phổ biến thông tin dưới nhiều định dạng đa dạng (Disseminate information in multiple formats)",
+            "C": "Truyền đạt thông tin theo thời gian thực (Communicate information in real time)",
+            "D": "Chỉ cung cấp thông tin khi được yêu cầu"
+        },
+        "answerDisplay": "B. Disseminate information in multiple formats & C. Communicate information in real time",
+        "concept": "• Truyền thông rủi ro hiệu quả cần sử dụng đa dạng định dạng (văn bản, video, tập huấn) và cập nhật kịp thời gian thực.",
+        "whyCorrect": "• Đa dạng định dạng giúp tăng khả năng tiếp thu và truyền thông thời gian thực giúp ngăn ngừa sự cố kịp thời.",
+        "whyWrong": {
+            "A": "• Giọng nói duy nhất tạo ra sự đơn điệu và thiếu phủ sóng.",
+            "D": "• Chỉ cung cấp khi hỏi là thái độ thụ động nguy hiểm trong quản lý rủi ro."
+        }
+    },
+    53: {
+        "question": "Which of the following are useful strategies for communicating ethical risks to the individual? (Select two.)",
+        "options": {
+            "A": "Ensure individuals understand specific details of each risk",
+            "B": "Communicate to individuals proactively rather than reactively",
+            "C": "Inform individuals of how they are obligated to mitigate risks",
+            "D": "Ensure individuals feel that they have input into the process"
+        },
+        "answer": "B, D",
+        "questionVi": "Những chiến lược nào sau đây là hữu ích để truyền thông các rủi ro đạo đức tới từng cá nhân người dùng? (Select two)",
+        "optionsVi": {
+            "A": "Đảm bảo cá nhân hiểu từng chi tiết rủi ro",
+            "B": "Truyền thông tới cá nhân một cách chủ động thay vì bị động phản ứng (Communicate proactively rather than reactively)",
+            "C": "Yêu cầu cá nhân tự giảm thiểu rủi ro",
+            "D": "Đảm bảo cá nhân cảm thấy họ có quyền đóng góp ý kiến vào quy trình (Ensure individuals feel they have input)"
+        },
+        "answerDisplay": "B. Communicate to individuals proactively rather than reactively & D. Ensure individuals feel that they have input into the process",
+        "concept": "• Truyền thông rủi ro cá nhân hiệu quả: Cần thể hiện sự Chủ động (Proactive) và Trao quyền đóng góp (Empowerment) cho người dùng.",
+        "whyCorrect": "• Chủ động cảnh báo và lắng nghe đóng góp ý kiến của người dùng giúp tăng hiệu quả bảo vệ riêng tư.",
+        "whyWrong": {
+            "A": "• Truyền thông quá chi tiết kỹ thuật gây quá tải nhận thức.",
+            "C": "• Đổ trách nhiệm giảm thiểu rủi ro lên người dùng là phi đạo đức."
+        }
+    },
+    54: {
+        "question": "Which of the following best describes why data is sometimes compared to oil? (Select two.)",
+        "options": {
+            "A": "Data can be easily monopolized",
+            "B": "Data can damage the environment",
+            "C": "Data can be monetarily valuable",
+            "D": "Data can fuel algorithmic technologies and digital economy"
+        },
+        "answer": "C, D",
+        "questionVi": "Tại sao dữ liệu đôi khi được ví như 'dầu mỏ' của thế kỷ 21? (Select two)",
+        "optionsVi": {
+            "A": "Dữ liệu dễ bị độc quyền",
+            "B": "Dữ liệu gây hại môi trường",
+            "C": "Dữ liệu sở hữu giá trị kinh tế/tiền tệ khổng lồ (monetarily valuable)",
+            "D": "Dữ liệu làm nhiên liệu vận hành các công nghệ thuật toán và nền kinh tế số (fuel algorithmic technologies)"
+        },
+        "answerDisplay": "C. Data can be monetarily valuable. & D. Data can fuel algorithmic technologies.",
+        "concept": "• Thuật ngữ 'Data is the new oil': Dữ liệu mang giá trị tài sản kinh tế cao và là nhiên liệu cốt lõi vận hành các hệ thống AI.",
+        "whyCorrect": "• Giá trị tài chính lớn và đóng vai trò nhiên liệu thúc đẩy nền kinh tế thuật toán.",
+        "whyWrong": {
+            "A": "• Dữ liệu có thể tái sử dụng không cạn kệt như dầu mỏ vật lý.",
+            "B": "• Tác động môi trường của dữ liệu là gián tiếp do điện năng."
+        }
+    },
+    55: {
+        "question": "What does it mean to say that human rights are inalienable? (Select two.)",
+        "options": {
+            "A": "Inalienable rights are conditional",
+            "B": "Inalienable rights are inherent in all human beings by virtue of being human",
+            "C": "Inalienable rights cannot be taken away, surrendered or transferred",
+            "D": "Inalienable rights are derived from local tradition"
+        },
+        "answer": "B, C",
+        "questionVi": "Việc nói rằng Quyền con người là Không thể tước đoạt (Inalienable) có nghĩa là gì? (Select two)",
+        "optionsVi": {
+            "A": "Quyền không thể tước đoạt là có điều kiện",
+            "B": "Quyền không thể tước đoạt vốn sẵn có ở mọi con người (inherent in all human beings)",
+            "C": "Quyền không thể tước đoạt không thể bị lấy mất, từ bỏ hay chuyển nhượng (cannot be taken away)",
+            "D": "Quyền đến từ truyền thống địa phương"
+        },
+        "answerDisplay": "B. Inalienable rights are inherent in all human beings. & C. Inalienable rights cannot be taken away except in extreme circumstances.",
+        "concept": "• Khái niệm Inalienable Rights (Quyền bất khả xâm phạm / Không thể tước đoạt): Quyền tự nhiên gắn liền với phẩm giá con người và không ai có thể tước bỏ.",
+        "whyCorrect": "• Tính sẵn có tự nhiên và tính không thể bị từ bỏ/tước đoạt là định nghĩa của Inalienable.",
+        "whyWrong": {
+            "A": "• Quyền không thể tước đoạt là tuyệt đối chứ không có điều kiện.",
+            "D": "• Quyền con người mang tính phổ quát toàn cầu chứ không phụ thuộc văn hóa địa phương."
+        }
+    },
+    56: {
+        "question": "Which of the following are advantages to adopting standards frameworks like ISO 27000? (Select two.)",
+        "options": {
+            "A": "Technology-specific focus and precise implementation instructions",
+            "B": "Formal certification processes that provide competitive advantage",
+            "C": "Regulatory weight and legal enforcement",
+            "D": "International support, recognition, and involvement"
+        },
+        "answer": "B, D",
+        "questionVi": "Những lợi thế nào sau đây thu được khi áp dụng các khung tiêu chuẩn như ISO 27000? (Select two)",
+        "optionsVi": {
+            "A": "Tập trung cụ thể công nghệ",
+            "B": "Các quy trình chứng nhận chính thức mang lại lợi thế cạnh tranh thương mại (Formal certification processes providing competitive advantage)",
+            "C": "Sức mạnh cưỡng chế pháp lý",
+            "D": "Sự hỗ trợ, công nhận và thừa nhận quốc tế (International support and recognition)"
+        },
+        "answerDisplay": "B. Formal certification processes that provide competitive advantage & D. International support, recognition, and involvement",
+        "concept": "• Lợi ích của Tiêu chuẩn ISO 27000: Có giá trị Chứng nhận Quốc tế (International Recognition) và chứng minh năng lực an ninh mạng giúp tạo lợi thế cạnh tranh.",
+        "whyCorrect": "• Chứng nhận ISO mang lại uy tín cạnh tranh quốc tế và được công nhận toàn cầu.",
+        "whyWrong": {
+            "A": "• Khung ISO mang tính quản trị chung chứ không hướng dẫn mã nguồn công nghệ cụ thể.",
+            "C": "• ISO là tiêu chuẩn tự nguyện chứ không phải luật cưỡng chế."
+        }
+    },
+    57: {
+        "question": "Which of the following are logical arguments in favor of an organization maintaining compliance? (Select two.)",
+        "options": {
+            "A": "Reduced time to deployment",
+            "B": "Avoidance of reputational damage and legal penalties",
+            "C": "Long-term cost savings due to avoiding severe fines and sanctions",
+            "D": "Reduced costs of development"
+        },
+        "answer": "B, C",
+        "questionVi": "Những lập luận logic nào sau đây ủng hộ việc một tổ chức duy trì sự tuân thủ (Compliance)? (Select two)",
+        "optionsVi": {
+            "A": "Giảm thời gian triển khai",
+            "B": "Tránh tổn hại uy tín thương hiệu và hình phạt pháp lý (Avoidance of reputational damage)",
+            "C": "Tiết kiệm chi phí dài hạn nhờ tránh được các khoản tiền phạt nặng nề (Long-term cost savings due to avoiding fines)",
+            "D": "Giảm chi phí phát triển"
+        },
+        "answerDisplay": "B. Avoidance of reputational damage & C. Long-term cost savings due to avoiding fines",
+        "concept": "• Giá trị của Tuân thủ (Compliance Value): Ngăn chặn án phạt tài chính nặng nề và bảo vệ uy tín thương hiệu khỏi rủi ro kiện tụng.",
+        "whyCorrect": "• Tránh thảm họa tổn hại uy tín và tiết kiệm chi phí phạt pháp lý là hai lợi ích chính.",
+        "whyWrong": {
+            "A": "• Tuân thủ đòi hỏi thời gian kiểm thử nên không làm giảm thời gian triển khai.",
+            "D": "• Chi phí tuân thủ ban đầu làm tăng chi phí phát triển."
+        }
+    },
+    58: {
+        "question": "Which of the following are possible causes of the limited adoption of a code of ethics within an organization? (Select two.)",
+        "options": {
+            "A": "Comprehensive coverage of areas of concerns",
+            "B": "Lack of clarity and ambiguity in the code of ethics",
+            "C": "Prescriptive language used in code",
+            "D": "Lack of awareness of the code of ethics and where it is meant to be applied"
+        },
+        "answer": "B, D",
+        "questionVi": "Những nguyên nhân nào sau đây dẫn đến việc áp dụng hạn chế bộ quy tắc đạo đức trong một tổ chức? (Select two)",
+        "optionsVi": {
+            "A": "Bao phủ toàn diện các mối quan ngại",
+            "B": "Sự thiếu rõ ràng và mập mờ trong nội dung bộ quy tắc (Lack of clarity in the code)",
+            "C": "Ngôn ngữ chỉ định",
+            "D": "Thiếu nhận thức về bộ quy tắc và phạm vi nơi nó cần được áp dụng (Lack of awareness of the code)"
+        },
+        "answerDisplay": "B. Lack of clarity in the code of ethics & D. Lack of awareness of the code of ethics and where it is meant to be applied",
+        "concept": "• Rào cản áp dụng Quy tắc Đạo đức: Thiếu nhận thức tập huấn (Awareness gap) và Ngôn từ mập mờ thiếu rõ ràng (Ambiguity).",
+        "whyCorrect": "• Thiếu đào tạo nhận thức và ngôn từ mập mờ khiến nhân viên không hiểu hoặc không biết cách áp dụng.",
+        "whyWrong": {
+            "A": "• Bao phủ toàn diện thúc đẩy áp dụng tốt hơn.",
+            "C": "• Ngôn ngữ chỉ định rõ ràng giúp dễ tuân thủ hơn."
+        }
+    },
+    59: {
+        "question": "Which of the following describe how adopting ethical practices can be a strategic differentiator? (Select three.)",
+        "options": {
+            "A": "It will build customer trust",
+            "B": "It will support the development of strategic partnerships",
+            "C": "It will encourage top talent applicants to apply for your company",
+            "D": "It will ensure you comply with regulations"
+        },
+        "answer": "A, B, C",
+        "questionVi": "Những yếu tố nào sau đây mô tả cách thức việc áp dụng các thực hành đạo đức có thể trở thành một yếu tố tạo sự biệt chiến lược (Strategic differentiator)? (Select three)",
+        "optionsVi": {
+            "A": "Xây dựng niềm tin vững chắc của khách hàng (build customer trust)",
+            "B": "Hỗ trợ phát triển các mối quan hệ đối tác chiến lược (support strategic partnerships)",
+            "C": "Thu hút và khuyến khích các ứng viên tài năng ứng tuyển vào công ty (encourage applicants to apply)",
+            "D": "Đảm bảo tuân thủ quy định"
+        },
+        "answerDisplay": "A. It will build customer trust & B. It will support the development of strategic partnerships. & D. It will encourage applicants to apply for your company _",
+        "concept": "• Lợi thế Cạnh tranh từ Đạo đức (Ethical Competitive Advantage): Giúp tạo dựng Niềm tin Khách hàng, Thu hút Nhân tài chất lượng cao và Mở rộng Đối tác chiến lược.",
+        "whyCorrect": "• Ba yếu tố A, B, C tạo nên sự khác biệt vượt trội về thương hiệu và tài sản nhân sự so với đối thủ.",
+        "whyWrong": {
+            "D": "• Tuân thủ quy định chỉ là tiêu chuẩn bắt buộc tối thiểu (Baseline compliance), không phải yếu tố tạo sự biệt cạnh tranh (Strategic differentiator)."
+        }
+    },
+    60: {
+        "question": "Why is accountability an important principle to include in governance structures for data-driven technologies?",
+        "options": {
+            "A": "Accountability in governance structures encourages all employees to feel responsible for building trustworthy systems",
+            "B": "Accountability encourages employees to put business needs first",
+            "C": "Accountability encourages management to hold employees accountable for their actions",
+            "D": "Accountability encourages key employees to put business needs first"
+        },
+        "answer": "A",
+        "questionVi": "Tại sao trách nhiệm giải trình (Accountability) lại là một nguyên tắc quan trọng cần đưa vào cấu trúc quản trị công nghệ dựa trên dữ liệu?",
+        "optionsVi": {
+            "A": "Trách nhiệm giải trình thúc đẩy tất cả nhân viên cảm nhận được trách nhiệm cá nhân trong việc xây dựng các hệ thống đáng tin cậy (encourages all employees to feel responsible for building trustworthy systems)",
+            "B": "Khuyến khích nhân viên đặt nhu cầu kinh doanh lên hàng đầu",
+            "C": "Khuyến khích quản lý bắt bẻ nhân viên",
+            "D": "Khuyến khích nhân viên chủ chốt chạy theo lợi nhuận"
+        },
+        "answerDisplay": "A. Accountability in govemance structures encourages all employees to feel responsible for building trusuorthy systems _",
+        "concept": "• Accountability & Culture: Trách nhiệm giải trình lan tỏa nhận thức trách nhiệm cá nhân tới từng kỹ sư và nhân viên để đồng lòng hướng tới AI đáng tin cậy.",
+        "whyCorrect": "• Tạo dựng tinh thần trách nhiệm tập thể trong việc xây dựng sản phẩm công nghệ an toàn có trách nhiệm.",
+        "whyWrong": {
+            "B": "• Đặt nhu cầu kinh doanh lên trên đạo đức gây ra rủi ro vi phạm.",
+            "C": "• Trách nhiệm giải trình không dùng để làm công cụ trừng phạt cá nhân.",
+            "D": "• Chạy theo nhu cầu kinh doanh làm suy yếu quản trị."
+        }
+    }
+}
+
+def run_write_sp25_fe_100pct():
+    filepath = 'quiz/data/ite/sp25_fe.json'
+    with open(filepath, 'r', encoding='utf8') as f:
+        data = json.load(f)
+
+    updated_questions = []
+    for idx, q in enumerate(data['questions'], 1):
+        q['id'] = idx
+        q['num'] = idx
+        q['task'] = "sp25_fe"
+        q['taskLabel'] = "SP25 FE"
+        
+        if idx in SP25_FE_60_COMPLETE_DATA:
+            item = SP25_FE_60_COMPLETE_DATA[idx]
+            if 'question' in item:
+                q['question'] = item['question']
+            if 'options' in item:
+                q['options'] = item['options']
+            q['answer'] = item['answer']
+            q['source'] = "ITE302c_SP25_FE"
+            q['explanation'] = {
+                "questionVi": item['questionVi'],
+                "optionsVi": item['optionsVi'],
+                "answerDisplay": item['answerDisplay'],
+                "concept": item['concept'],
+                "whyCorrect": item['whyCorrect'],
+                "whyWrong": item['whyWrong']
+            }
+        else:
+            raise ValueError(f"CRITICAL ERROR: Question {idx} missing explicit item in SP25_FE_60_COMPLETE_DATA!")
+        updated_questions.append(q)
+
+    data['count'] = len(updated_questions)
+    data['questions'] = updated_questions
+
+    with open(filepath, 'w', encoding='utf8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    print(f"Successfully updated all {len(updated_questions)}/60 questions in sp25_fe.json with zero filler text!")
+
+if __name__ == '__main__':
+    run_write_sp25_fe_100pct()

@@ -1,0 +1,2197 @@
+{
+  "part": 9,
+  "totalParts": 10,
+  "range": "Câu 441 đến 495",
+  "count": 55,
+  "subject": "mln",
+  "task": "testmln_part9",
+  "taskLabel": "MLN Phần 9",
+  "questions": [
+    {
+      "id": 441,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 441,
+      "question": "Lượng giá trị của hàng hóa được đo bằng đơn vị.",
+      "options": {
+        "A": "Khối lượng",
+        "B": "Năng suất",
+        "C": "Thời gian lao động xã hội cần thiết",
+        "D": "Mức độ khan hiếm của hàng hóa"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Lượng giá trị của hàng hóa được đo bằng đơn vị.",
+        "optionsVi": {
+          "A": "Khối lượng",
+          "B": "Năng suất",
+          "C": "Thời gian lao động xã hội cần thiết",
+          "D": "Mức độ khan hiếm của hàng hóa"
+        },
+        "answerDisplay": "C. Thời gian lao động xã hội cần thiết",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Thời gian lao động xã hội cần thiết.",
+        "whyCorrect": "• Stem: Lượng giá trị của hàng hóa được đo bằng đơn vị.\n• Đáp án «Thời gian lao động xã hội cần thiết» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Lượng giá trị của hàng hóa được đo bằng đơn vị.",
+        "whatIs": {
+          "A": "Khối lượng",
+          "B": "Năng suất",
+          "C": "Thời gian lao động xã hội cần thiết",
+          "D": "Mức độ khan hiếm của hàng hóa"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Phương án «Khối lượng»\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Thời gian lao động xã hội cần thiết).",
+          "B": "• Là gì: Phương án «Năng suất»\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Thời gian lao động xã hội cần thiết).",
+          "D": "• Là gì: Mức độ khan hiếm của hàng hóa\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Thời gian lao động xã hội cần thiết)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 442,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 442,
+      "question": "Nhận xét nào sau đây đúng về các nhân tố ảnh hưởng đến lượng giá trị hàng hoá?",
+      "options": {
+        "A": "Lượng giá trị hàng hoá tỉ lệ nghịch với năng xuất lao động",
+        "B": "Lượng giá trị hàng hoá tỉ lệ nghịch với cường độ lao động",
+        "C": "Lượng giá trị hàng hoá bằng giá trị lao động giản đơn",
+        "D": "Lao động phức tạp và lao động giản đơn tạo ra giá trị hàng hoá như nhau"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Nhận xét nào sau đây đúng về các nhân tố ảnh hưởng đến lượng giá trị hàng hoá?",
+        "optionsVi": {
+          "A": "Lượng giá trị hàng hoá tỉ lệ nghịch với năng xuất lao động",
+          "B": "Lượng giá trị hàng hoá tỉ lệ nghịch với cường độ lao động",
+          "C": "Lượng giá trị hàng hoá bằng giá trị lao động giản đơn",
+          "D": "Lao động phức tạp và lao động giản đơn tạo ra giá trị hàng hoá như nhau"
+        },
+        "answerDisplay": "A. Lượng giá trị hàng hoá tỉ lệ nghịch với năng xuất lao động",
+        "concept": "• Lượng giá trị hàng hoá tỉ lệ nghịch với năng xuất lao động",
+        "whyCorrect": "• Stem: Nhận xét nào sau đây đúng về các nhân tố ảnh hưởng đến lượng giá trị hàng hoá?\n• Đáp án «Lượng giá trị hàng hoá tỉ lệ nghịch với năng xuất lao động» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Nhận xét nào sau đây đúng về các nhân tố ảnh hưởng đến lượng giá trị hàng hoá?",
+        "whatIs": {
+          "A": "Lượng giá trị hàng hoá tỉ lệ nghịch với năng xuất lao động",
+          "B": "Lượng giá trị hàng hoá tỉ lệ nghịch với cường độ lao động",
+          "C": "Lượng giá trị hàng hoá bằng giá trị lao động giản đơn",
+          "D": "Lao động phức tạp và lao động giản đơn tạo ra giá trị hàng hoá như nhau"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Lượng giá trị hàng hoá tỉ lệ nghịch với cường độ lao động\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Lượng giá trị hàng hoá tỉ lệ nghịch với năng xuất lao động).",
+          "C": "• Là gì: Lượng giá trị hàng hoá bằng giá trị lao động giản đơn\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Lượng giá trị hàng hoá tỉ lệ nghịch với năng xuất lao động).",
+          "D": "• Là gì: Lao động phức tạp và lao động giản đơn tạo ra giá trị hàng hoá như nhau\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Lượng giá trị hàng hoá tỉ lệ nghịch với năng xuất lao động)."
+        },
+        "memoryTip": "• Neo đáp án: Lượng giá trị hàng hoá tỉ lệ nghịch với năng xuất lao động."
+      }
+    },
+    {
+      "id": 443,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 443,
+      "question": "Nhận định nào sau đây đúng về tư bản cho vay?",
+      "options": {
+        "A": "Tư bản cho vay là hàng hoá đặc biệt",
+        "B": "Tư bản cho vay là hình thái để thu lợi nhuận cao nhất của đầu tư",
+        "C": "Quyền sử dụng đi liền với quyền sở hữu",
+        "D": "Là một phần của giá trị hàng hoá"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Nhận định nào sau đây đúng về tư bản cho vay?",
+        "optionsVi": {
+          "A": "Tư bản cho vay là hàng hoá đặc biệt",
+          "B": "Tư bản cho vay là hình thái để thu lợi nhuận cao nhất của đầu tư",
+          "C": "Quyền sử dụng đi liền với quyền sở hữu",
+          "D": "Là một phần của giá trị hàng hoá"
+        },
+        "answerDisplay": "A. Tư bản cho vay là hàng hoá đặc biệt",
+        "concept": "• Lợi nhuận là hình thức biến tướng của GTTS; tỷ suất so với toàn bộ tư bản hoặc với v — Tư bản cho vay là hàng hoá đặc biệt.",
+        "whyCorrect": "• Stem: Nhận định nào sau đây đúng về tư bản cho vay?\n• Đáp án «Tư bản cho vay là hàng hoá đặc biệt» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Nhận định nào sau đây đúng về tư bản cho vay?",
+        "whatIs": {
+          "A": "Tư bản cho vay là hàng hoá đặc biệt",
+          "B": "Tư bản cho vay là hình thái để thu lợi nhuận cao nhất của đầu tư",
+          "C": "Quyền sử dụng đi liền với quyền sở hữu",
+          "D": "Là một phần của giá trị hàng hoá"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Tư bản cho vay là hình thái để thu lợi nhuận cao nhất của đầu tư\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tư bản cho vay là hàng hoá đặc biệt).",
+          "C": "• Là gì: Quyền sử dụng đi liền với quyền sở hữu\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tư bản cho vay là hàng hoá đặc biệt).",
+          "D": "• Là gì: Là một phần của giá trị hàng hoá\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tư bản cho vay là hàng hoá đặc biệt)."
+        },
+        "memoryTip": "• p' = m/(c+v) · m' = m/v."
+      }
+    },
+    {
+      "id": 444,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 444,
+      "question": "Biểu hiện quy luật giá trị thặng dư ở trong giai đoạn chủ nghĩa tư bản độc quyền là:",
+      "options": {
+        "A": "Quy luật lợi nhuận bình quân",
+        "B": "Quy luật lợi nhuận độc quyền",
+        "C": "Quy luật lợi nhuận",
+        "D": "Quy luật giá cả sản xuất"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Biểu hiện quy luật giá trị thặng dư ở trong giai đoạn chủ nghĩa tư bản độc quyền là:",
+        "optionsVi": {
+          "A": "Quy luật lợi nhuận bình quân",
+          "B": "Quy luật lợi nhuận độc quyền",
+          "C": "Quy luật lợi nhuận",
+          "D": "Quy luật giá cả sản xuất"
+        },
+        "answerDisplay": "B. Quy luật lợi nhuận độc quyền",
+        "concept": "• Giá trị thặng dư: phần giá trị do lao động không công tạo ra, nhà tư bản chiếm đoạt — Quy luật lợi nhuận độc quyền.",
+        "whyCorrect": "• Đề hỏi đặc trưng/biểu hiện (đúng lớp).\n• «Quy luật lợi nhuận độc quyền» đúng lớp và nội dung.",
+        "intent": "• M2 — đặc trưng/biểu hiện\n• Biểu hiện quy luật giá trị thặng dư ở trong giai đoạn chủ nghĩa tư bản độc quyề…",
+        "whatIs": {
+          "A": "Quy luật lợi nhuận bình quân",
+          "B": "Quy luật lợi nhuận độc quyền",
+          "C": "Quy luật lợi nhuận",
+          "D": "Quy luật giá cả sản xuất"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Quy luật lợi nhuận bình quân\n• Vai trò: Có thể đúng khái niệm liên quan nhưng sai lớp (chủ thể / biểu hiện / giai đoạn).\n• Vì sao sai: Stem hỏi đặc trưng/biểu hiện cụ thể → chọn «Quy luật lợi nhuận độc quyền», không chọn lớp này.",
+          "C": "• Là gì: Quy luật lợi nhuận\n• Vai trò: Có thể đúng khái niệm liên quan nhưng sai lớp (chủ thể / biểu hiện / giai đoạn).\n• Vì sao sai: Stem hỏi đặc trưng/biểu hiện cụ thể → chọn «Quy luật lợi nhuận độc quyền», không chọn lớp này.",
+          "D": "• Là gì: Quy luật giá cả sản xuất\n• Vai trò: Có thể đúng khái niệm liên quan nhưng sai lớp (chủ thể / biểu hiện / giai đoạn).\n• Vì sao sai: Stem hỏi đặc trưng/biểu hiện cụ thể → chọn «Quy luật lợi nhuận độc quyền», không chọn lớp này."
+        },
+        "memoryTip": "• GTTS = lao động thặng dư bị chiếm đoạt."
+      }
+    },
+    {
+      "id": 445,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 445,
+      "question": "Trong quá trình sản xuất tư bản chủ nghĩa, có hai loại hao mòn đó là:",
+      "options": {
+        "A": "Hao mòn hữu hình và hao mòn vô hình",
+        "B": "Hao mòn tự nhiên và hao mòn giá trị",
+        "C": "Hao mòn máy móc và hao mòn sức lao động",
+        "D": "Hao mòn máy móc và hao mòn nguyên liệu"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong quá trình sản xuất tư bản chủ nghĩa, có hai loại hao mòn đó là:",
+        "optionsVi": {
+          "A": "Hao mòn hữu hình và hao mòn vô hình",
+          "B": "Hao mòn tự nhiên và hao mòn giá trị",
+          "C": "Hao mòn máy móc và hao mòn sức lao động",
+          "D": "Hao mòn máy móc và hao mòn nguyên liệu"
+        },
+        "answerDisplay": "A. Hao mòn hữu hình và hao mòn vô hình",
+        "concept": "• Sức lao động trở thành hàng hóa khi người lao động tự do thân thể và «tự do» khỏi TLSX — Hao mòn hữu hình và hao mòn vô hình.",
+        "whyCorrect": "• Stem: Trong quá trình sản xuất tư bản chủ nghĩa, có hai loại hao mòn đó là:\n• Đáp án «Hao mòn hữu hình và hao mòn vô hình» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Trong quá trình sản xuất tư bản chủ nghĩa, có hai loại hao mòn đó là:",
+        "whatIs": {
+          "A": "Hao mòn hữu hình và hao mòn vô hình",
+          "B": "Hao mòn tự nhiên và hao mòn giá trị",
+          "C": "Hao mòn máy móc và hao mòn sức lao động",
+          "D": "Hao mòn máy móc và hao mòn nguyên liệu"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Hao mòn tự nhiên và hao mòn giá trị\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Hao mòn hữu hình và hao mòn vô hình).",
+          "C": "• Là gì: Hao mòn máy móc và hao mòn sức lao động\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Hao mòn hữu hình và hao mòn vô hình).",
+          "D": "• Là gì: Hao mòn máy móc và hao mòn nguyên liệu\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Hao mòn hữu hình và hao mòn vô hình)."
+        },
+        "memoryTip": "• Sức LĐ = hàng hóa đặc biệt (tạo GTTS)."
+      }
+    },
+    {
+      "id": 446,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 446,
+      "question": "Mô hình công nghiệp hoá của Nhật Bản và các nước công nghiệp mới gọi tắt là gì?",
+      "options": {
+        "A": "NICS",
+        "B": "TNCs",
+        "C": "OECD",
+        "D": "FPT"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Mô hình công nghiệp hoá của Nhật Bản và các nước công nghiệp mới gọi tắt là gì?",
+        "optionsVi": {
+          "A": "NICS",
+          "B": "TNCs",
+          "C": "OECD",
+          "D": "FPT"
+        },
+        "answerDisplay": "A. NICS",
+        "concept": "• NICS — định nghĩa/kết luận giáo trình khớp stem.",
+        "whyCorrect": "• Stem: Mô hình công nghiệp hoá của Nhật Bản và các nước công nghiệp mới gọi tắt là gì?\n• Đáp án «NICS» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M1 — định nghĩa/bản chất\n• Mô hình công nghiệp hoá của Nhật Bản và các nước công nghiệp mới gọi tắt là gì?",
+        "whatIs": {
+          "A": "NICS",
+          "B": "TNCs",
+          "C": "OECD",
+          "D": "FPT"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Phương án «TNCs»\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: NICS).",
+          "C": "• Là gì: Phương án «OECD»\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: NICS).",
+          "D": "• Là gì: Phương án «FPT»\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: NICS)."
+        },
+        "memoryTip": "• Neo đáp án: NICS."
+      }
+    },
+    {
+      "id": 447,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 447,
+      "question": "Bản chất của độc quyền nhà nước trong chủ nghĩa tư bản là:",
+      "options": {
+        "A": "Sự kết hợp tổ chức độc quyền tư nhân và nhà nước tư sản",
+        "B": "Nhà nước tư sản can thiệp vào kinh tế, chi phối độc quyền",
+        "C": "Các tổ chức độc quyền phụ thuộc vào nhà nước",
+        "D": "Nhằm duy trì lợi ích của nhà nước tư bản"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Bản chất của độc quyền nhà nước trong chủ nghĩa tư bản là:",
+        "optionsVi": {
+          "A": "Sự kết hợp tổ chức độc quyền tư nhân và nhà nước tư sản",
+          "B": "Nhà nước tư sản can thiệp vào kinh tế, chi phối độc quyền",
+          "C": "Các tổ chức độc quyền phụ thuộc vào nhà nước",
+          "D": "Nhằm duy trì lợi ích của nhà nước tư bản"
+        },
+        "answerDisplay": "A. Sự kết hợp tổ chức độc quyền tư nhân và nhà nước tư sản",
+        "concept": "• CNTB độc quyền nhà nước: thị trường + độc quyền tư nhân + can thiệp nhà nước — Sự kết hợp tổ chức độc quyền tư nhân và nhà nước tư sản.",
+        "whyCorrect": "• Stem: Bản chất của độc quyền nhà nước trong chủ nghĩa tư bản là:\n• Đáp án «Sự kết hợp tổ chức độc quyền tư nhân và nhà nước tư sản» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M1 — định nghĩa/bản chất\n• Bản chất của độc quyền nhà nước trong chủ nghĩa tư bản là:",
+        "whatIs": {
+          "A": "Sự kết hợp tổ chức độc quyền tư nhân và nhà nước tư sản",
+          "B": "Nhà nước tư sản can thiệp vào kinh tế, chi phối độc quyền",
+          "C": "Các tổ chức độc quyền phụ thuộc vào nhà nước",
+          "D": "Nhằm duy trì lợi ích của nhà nước tư bản"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Nhà nước tư sản can thiệp vào kinh tế, chi phối độc quyền\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Sự kết hợp tổ chức độc quyền tư nhân và nhà nước tư sản).",
+          "C": "• Là gì: Các tổ chức độc quyền phụ thuộc vào nhà nước\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Sự kết hợp tổ chức độc quyền tư nhân và nhà nước tư sản).",
+          "D": "• Là gì: Nhằm duy trì lợi ích của nhà nước tư bản\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Sự kết hợp tổ chức độc quyền tư nhân và nhà nước tư sản)."
+        },
+        "memoryTip": "• Độc quyền NN = thị trường + độc quyền TN + NN."
+      }
+    },
+    {
+      "id": 448,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 448,
+      "question": "Từ yêu cầu của quy luật quan hệ sản xuất phải phù hợp với trình độ phát triển của lực lượng sản xuất, lý luận của chủ nghĩa Mác - Lênin khẳng định:",
+      "options": {
+        "A": "Chủ nghĩa tư bản không tồn tại vĩnh viễn",
+        "B": "Chủ nghĩa tư bản tiếp tục phát triển đến đỉnh cao",
+        "C": "Chủ nghĩa tư bản sẽ diệt vong trong thời gian ngắn"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Từ yêu cầu của quy luật quan hệ sản xuất phải phù hợp với trình độ phát triển của lực lượng sản xuất, lý luận của chủ nghĩa Mác - Lênin khẳng định:",
+        "optionsVi": {
+          "A": "Chủ nghĩa tư bản không tồn tại vĩnh viễn",
+          "B": "Chủ nghĩa tư bản tiếp tục phát triển đến đỉnh cao",
+          "C": "Chủ nghĩa tư bản sẽ diệt vong trong thời gian ngắn"
+        },
+        "answerDisplay": "A. Chủ nghĩa tư bản không tồn tại vĩnh viễn",
+        "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
+        "intent": "• Kiểm tra kiến thức kinh tế chính trị Mác - Lênin.",
+        "whatIs": {
+          "A": "Chủ nghĩa tư bản không tồn tại vĩnh viễn",
+          "B": "Chủ nghĩa tư bản tiếp tục phát triển đến đỉnh cao",
+          "C": "Chủ nghĩa tư bản sẽ diệt vong trong thời gian ngắn"
+        },
+        "whyWrong": {
+          "B": "• Là gì? Chủ nghĩa tư bản tiếp tục phát triển đến đỉnh cao\n• Vai trò? Phạm trù/khái niệm trong lý thuyết đề cập.\n• Vì sao sai? «Chủ nghĩa tư bản tiếp tục phát triển đến đỉnh cao» (B) không thỏa: đúng quan hệ/vai trò phạm trù.",
+          "C": "• Là gì? Chủ nghĩa tư bản sẽ diệt vong trong thời gian ngắn\n• Vai trò? Phạm trù/khái niệm trong lý thuyết đề cập.\n• Vì sao sai? «Chủ nghĩa tư bản sẽ diệt vong trong thời gian ngắn» (C) không thỏa: đúng quan hệ/vai trò phạm trù."
+        }
+      }
+    },
+    {
+      "id": 449,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 449,
+      "question": "Cơ chế thị trường có sự điều tiết của nhà nước nhằm phục vụ lợi ích của ai?",
+      "options": {
+        "A": "Chủ nghĩa tư bản độc quyền",
+        "B": "Nhà nước dân chủ",
+        "C": "Các công ty tài chính",
+        "D": "Nhân dân lao động"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cơ chế thị trường có sự điều tiết của nhà nước nhằm phục vụ lợi ích của ai?",
+        "optionsVi": {
+          "A": "Chủ nghĩa tư bản độc quyền",
+          "B": "Nhà nước dân chủ",
+          "C": "Các công ty tài chính",
+          "D": "Nhân dân lao động"
+        },
+        "answerDisplay": "A. Chủ nghĩa tư bản độc quyền",
+        "concept": "• Nhà nước: công cụ thống trị giai cấp, bảo vệ QHSX thống trị — Chủ nghĩa tư bản độc quyền.",
+        "whyCorrect": "• Stem hỏi tác giả/văn kiện khái quát.\n• Đúng: Chủ nghĩa tư bản độc quyền.",
+        "intent": "• M7 — tác giả/văn kiện\n• Cơ chế thị trường có sự điều tiết của nhà nước nhằm phục vụ lợi ích của ai?",
+        "whatIs": {
+          "A": "Chủ nghĩa tư bản độc quyền",
+          "B": "Nhà nước dân chủ",
+          "C": "Các công ty tài chính",
+          "D": "Nhân dân lao động"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Nhà nước dân chủ\n• Vai trò: Gắn với tác giả/học thuyết khác hoặc nội dung gần.\n• Vì sao sai: Không phải người/văn kiện mà stem hỏi; đáp án: Chủ nghĩa tư bản độc quyền.",
+          "C": "• Là gì: Các công ty tài chính\n• Vai trò: Gắn với tác giả/học thuyết khác hoặc nội dung gần.\n• Vì sao sai: Không phải người/văn kiện mà stem hỏi; đáp án: Chủ nghĩa tư bản độc quyền.",
+          "D": "• Là gì: Nhân dân lao động\n• Vai trò: Gắn với tác giả/học thuyết khác hoặc nội dung gần.\n• Vì sao sai: Không phải người/văn kiện mà stem hỏi; đáp án: Chủ nghĩa tư bản độc quyền."
+        },
+        "memoryTip": "• Nhà nước = công cụ giai cấp (Mác–Lênin)."
+      }
+    },
+    {
+      "id": 450,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 450,
+      "question": "Khoa học kỹ thuật càng phát triển làm cho:",
+      "options": {
+        "A": "Giá trị sử dụng của hàng hóa ngày càng phong phú và đa dạng",
+        "B": "Giá trị sử dụng của hàng hóa luôn thay đổi",
+        "C": "Giá trị sử dụng của hàng hóa biến thiên theo thị trường",
+        "D": "Giá trị của hàng hóa ngày càng phong phú và đa dạng với nhiều sản phẩm"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Khoa học kỹ thuật càng phát triển làm cho:",
+        "optionsVi": {
+          "A": "Giá trị sử dụng của hàng hóa ngày càng phong phú và đa dạng",
+          "B": "Giá trị sử dụng của hàng hóa luôn thay đổi",
+          "C": "Giá trị sử dụng của hàng hóa biến thiên theo thị trường",
+          "D": "Giá trị của hàng hóa ngày càng phong phú và đa dạng với nhiều sản phẩm"
+        },
+        "answerDisplay": "A. Giá trị sử dụng của hàng hóa ngày càng phong phú và đa dạng",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Giá trị sử dụng của hàng hóa ngày càng phong phú và đa dạng.",
+        "whyCorrect": "• Stem: Khoa học kỹ thuật càng phát triển làm cho:\n• Đáp án «Giá trị sử dụng của hàng hóa ngày càng phong phú và đa dạng» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Khoa học kỹ thuật càng phát triển làm cho:",
+        "whatIs": {
+          "A": "Giá trị sử dụng của hàng hóa ngày càng phong phú và đa dạng",
+          "B": "Giá trị sử dụng của hàng hóa luôn thay đổi",
+          "C": "Giá trị sử dụng của hàng hóa biến thiên theo thị trường",
+          "D": "Giá trị của hàng hóa ngày càng phong phú và đa dạng với nhiều sản phẩm"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Giá trị sử dụng của hàng hóa luôn thay đổi\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị sử dụng của hàng hóa ngày càng phong phú và đa dạng).",
+          "C": "• Là gì: Giá trị sử dụng của hàng hóa biến thiên theo thị trường\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị sử dụng của hàng hóa ngày càng phong phú và đa dạng).",
+          "D": "• Là gì: Giá trị của hàng hóa ngày càng phong phú và đa dạng với nhiều sản phẩm\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị sử dụng của hàng hóa ngày càng phong phú và đa dạng)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 451,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 451,
+      "question": "Căn cứ vào đâu để phân chia thành tái sản xuất cá biệt và tái sản xuất xã hội?",
+      "options": {
+        "A": "Căn cứ vào phạm vi sản xuất",
+        "B": "Căn cứ vào tốc độ sản xuất",
+        "C": "Căn cứ vào tính chất sản xuất"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Căn cứ vào đâu để phân chia thành tái sản xuất cá biệt và tái sản xuất xã hội?",
+        "optionsVi": {
+          "A": "Căn cứ vào phạm vi sản xuất",
+          "B": "Căn cứ vào tốc độ sản xuất",
+          "C": "Căn cứ vào tính chất sản xuất"
+        },
+        "answerDisplay": "A. Căn cứ vào phạm vi sản xuất",
+        "concept": "• Căn cứ vào phạm vi sản xuất — định nghĩa/kết luận giáo trình khớp stem.",
+        "whyCorrect": "• Stem: Căn cứ vào đâu để phân chia thành tái sản xuất cá biệt và tái sản xuất xã hội?\n• Đáp án «Căn cứ vào phạm vi sản xuất» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Căn cứ vào đâu để phân chia thành tái sản xuất cá biệt và tái sản xuất xã hội?",
+        "whatIs": {
+          "A": "Căn cứ vào phạm vi sản xuất",
+          "B": "Căn cứ vào tốc độ sản xuất",
+          "C": "Căn cứ vào tính chất sản xuất"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Căn cứ vào tốc độ sản xuất\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Căn cứ vào phạm vi sản xuất).",
+          "C": "• Là gì: Căn cứ vào tính chất sản xuất\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Căn cứ vào phạm vi sản xuất)."
+        },
+        "memoryTip": "• Neo đáp án: Căn cứ vào phạm vi sản xuất."
+      }
+    },
+    {
+      "id": 452,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 452,
+      "question": "Loại tái sản xuất nào làm tăng sản phẩm chủ yếu do tăng năng suất lao động và hiệu quả sử dụng các nguồn luc?",
+      "options": {
+        "A": "Tái sản xuất mở rộng theo chiều rộng",
+        "B": "Tái sản xuất mở rộng",
+        "C": "Tái sản xuất mở rộng theo chiều sâu"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Loại tái sản xuất nào làm tăng sản phẩm chủ yếu do tăng năng suất lao động và hiệu quả sử dụng các nguồn luc?",
+        "optionsVi": {
+          "A": "Tái sản xuất mở rộng theo chiều rộng",
+          "B": "Tái sản xuất mở rộng",
+          "C": "Tái sản xuất mở rộng theo chiều sâu"
+        },
+        "answerDisplay": "C. Tái sản xuất mở rộng theo chiều sâu",
+        "concept": "• Tích lũy tư bản: biến GTTS thành tư bản thêm để tái sản xuất mở rộng — Tái sản xuất mở rộng theo chiều sâu.",
+        "whyCorrect": "• Stem: Loại tái sản xuất nào làm tăng sản phẩm chủ yếu do tăng năng suất lao động và hiệu quả sử dụng các nguồn luc?\n• Đáp án «Tái sản xuất mở rộng theo chiều sâu» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Loại tái sản xuất nào làm tăng sản phẩm chủ yếu do tăng năng suất lao động và h…",
+        "whatIs": {
+          "A": "Tái sản xuất mở rộng theo chiều rộng",
+          "B": "Tái sản xuất mở rộng",
+          "C": "Tái sản xuất mở rộng theo chiều sâu"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Tái sản xuất mở rộng theo chiều rộng\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tái sản xuất mở rộng theo chiều sâu).",
+          "B": "• Là gì: Tái sản xuất mở rộng\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tái sản xuất mở rộng theo chiều sâu)."
+        },
+        "memoryTip": "• Tích lũy = GTTS → tư bản mới."
+      }
+    },
+    {
+      "id": 453,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 453,
+      "question": "Cổ phiếu có hai loại đó là",
+      "options": {
+        "A": "Cổ phiếu thường và cổ phiếu ưu đãi",
+        "B": "Cổ phiếu thưởng và cổ phiếu ưu đãi",
+        "C": "Cổ tức và cổ phiếu thường",
+        "D": "Cổ phiếu thường và cổ phiếu thưởng"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cổ phiếu có hai loại đó là",
+        "optionsVi": {
+          "A": "Cổ phiếu thường và cổ phiếu ưu đãi",
+          "B": "Cổ phiếu thưởng và cổ phiếu ưu đãi",
+          "C": "Cổ tức và cổ phiếu thường",
+          "D": "Cổ phiếu thường và cổ phiếu thưởng"
+        },
+        "answerDisplay": "A. Cổ phiếu thường và cổ phiếu ưu đãi",
+        "concept": "• Tín dụng/ngân hàng và các hình thái tư bản tiền tệ, tư bản giả trong CNTB — Cổ phiếu thường và cổ phiếu ưu đãi.",
+        "whyCorrect": "• Stem: Cổ phiếu có hai loại đó là\n• Đáp án «Cổ phiếu thường và cổ phiếu ưu đãi» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Cổ phiếu có hai loại đó là",
+        "whatIs": {
+          "A": "Cổ phiếu thường và cổ phiếu ưu đãi",
+          "B": "Cổ phiếu thưởng và cổ phiếu ưu đãi",
+          "C": "Cổ tức và cổ phiếu thường",
+          "D": "Cổ phiếu thường và cổ phiếu thưởng"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Cổ phiếu thưởng và cổ phiếu ưu đãi\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Cổ phiếu thường và cổ phiếu ưu đãi).",
+          "C": "• Là gì: Cổ tức và cổ phiếu thường\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Cổ phiếu thường và cổ phiếu ưu đãi).",
+          "D": "• Là gì: Cổ phiếu thường và cổ phiếu thưởng\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Cổ phiếu thường và cổ phiếu ưu đãi)."
+        },
+        "memoryTip": "• Tín dụng tập trung–phân phối vốn."
+      }
+    },
+    {
+      "id": 454,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 454,
+      "question": "Khi sử dụng hàng hóa sức lao động sẽ tạo ra.",
+      "options": {
+        "A": "Giá trị mới bằng giá trị bản thân nó",
+        "B": "Giá trị mới lớn hơn giá trị bản thân nó",
+        "C": "Giá trị mới nhỏ hơn giá trị bản thân nó",
+        "D": "Giá trị sử dụng mới nhỏ hơn giá trị sử dụng bản thân nó"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Khi sử dụng hàng hóa sức lao động sẽ tạo ra.",
+        "optionsVi": {
+          "A": "Giá trị mới bằng giá trị bản thân nó",
+          "B": "Giá trị mới lớn hơn giá trị bản thân nó",
+          "C": "Giá trị mới nhỏ hơn giá trị bản thân nó",
+          "D": "Giá trị sử dụng mới nhỏ hơn giá trị sử dụng bản thân nó"
+        },
+        "answerDisplay": "B. Giá trị mới lớn hơn giá trị bản thân nó",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Giá trị mới lớn hơn giá trị bản thân nó.",
+        "whyCorrect": "• Stem: Khi sử dụng hàng hóa sức lao động sẽ tạo ra.\n• Đáp án «Giá trị mới lớn hơn giá trị bản thân nó» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Khi sử dụng hàng hóa sức lao động sẽ tạo ra.",
+        "whatIs": {
+          "A": "Giá trị mới bằng giá trị bản thân nó",
+          "B": "Giá trị mới lớn hơn giá trị bản thân nó",
+          "C": "Giá trị mới nhỏ hơn giá trị bản thân nó",
+          "D": "Giá trị sử dụng mới nhỏ hơn giá trị sử dụng bản thân nó"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Giá trị mới bằng giá trị bản thân nó\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị mới lớn hơn giá trị bản thân nó).",
+          "C": "• Là gì: Giá trị mới nhỏ hơn giá trị bản thân nó\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị mới lớn hơn giá trị bản thân nó).",
+          "D": "• Là gì: Giá trị sử dụng mới nhỏ hơn giá trị sử dụng bản thân nó\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị mới lớn hơn giá trị bản thân nó)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 455,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 455,
+      "question": "Trong giai đoạn chủ nghĩa tư bản độc quyền, ngoài sự cạnh tranh giữa những người sản xuất nhỏ, giữa những nhà tư bản vừa và nhỏ như trong giai đoạn chủ nghĩa tư bản cạnh tranh tự do, mà còn có thêm các loại cạnh tranh sau: (chọn nhiều đáp án)",
+      "options": {
+        "A": "cạnh tranh giữa các tổ chức độc quyền với các xí nghiệp ngoài độc quyền",
+        "B": "Cạnh tranh giữa các tổ chức độc quyền vối nhau",
+        "C": "Cạnh tranh trong nội bộ các tổ chức độc quyền",
+        "D": "Cạnh tranh giữa các tổ chức tư bản độc quyền nhà nước với nhau"
+      },
+      "answer": "ABC",
+      "answers": [
+        "A",
+        "B",
+        "C"
+      ],
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong giai đoạn chủ nghĩa tư bản độc quyền, ngoài sự cạnh tranh giữa những người sản xuất nhỏ, giữa những nhà tư bản vừa và nhỏ như trong giai đoạn chủ nghĩa tư bản cạnh tranh tự do, mà còn có thêm các loại cạnh tranh sau: (chọn nhiều đáp án)",
+        "optionsVi": {
+          "A": "cạnh tranh giữa các tổ chức độc quyền với các xí nghiệp ngoài độc quyền",
+          "B": "Cạnh tranh giữa các tổ chức độc quyền vối nhau",
+          "C": "Cạnh tranh trong nội bộ các tổ chức độc quyền",
+          "D": "Cạnh tranh giữa các tổ chức tư bản độc quyền nhà nước với nhau"
+        },
+        "answerDisplay": "A. cạnh tranh giữa các tổ chức độc quyền với các xí nghiệp ngoài độc quyền · B. Cạnh tranh giữa các tổ chức độc quyền vối nhau · C. Cạnh tranh trong nội bộ các tổ chức độc quyền",
+        "concept": "• Định nghĩa/đặc trưng cần nắm: cạnh tranh giữa các tổ chức độc quyền với các xí nghiệp ngoài độc quyền",
+        "whyCorrect": "• Câu chọn nhiều đáp án: A, B, C.\n• Cạnh tranh giữa các tổ chức độc quyền vối nhau; C. Cạnh tranh trong nội bộ các tổ chức độc quyền. Liên quan hình thức tổ chức độc quyền (Cartel → Syndicate → Trust → Consortium) và cạnh tranh trong CNTB độc quyền. Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin.\n• cạnh tranh giữa các tổ chức độc quyền với các xí nghiệp ngoài độc quyền\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "intent": "• cạnh tranh giữa các tổ chức độc quyền với các xí nghiệp ngoài độc quyền\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
+        "whatIs": {
+          "A": "cạnh tranh giữa các tổ chức độc quyền với các xí nghiệp ngoài độc quyền",
+          "B": "Cạnh tranh giữa các tổ chức độc quyền vối nhau",
+          "C": "Cạnh tranh trong nội bộ các tổ chức độc quyền",
+          "D": "Cạnh tranh giữa các tổ chức tư bản độc quyền nhà nước với nhau"
+        },
+        "whyWrong": {
+          "D": "• Là gì? Cạnh tranh giữa các tổ chức tư bản độc quyền nhà nước với nhau\n• Vai trò? Phạm trù/khái niệm trong lý thuyết đề cập.\n• Vì sao sai? «Cạnh tranh giữa các tổ chức tư bản độc quyền nhà nước…» (D) không thỏa: đúng số giai đoạn/thứ tự."
+        }
+      }
+    },
+    {
+      "id": 456,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 456,
+      "question": "Thế nào là tư bản cho vay?",
+      "options": {
+        "A": "Là tư bản hàng hóa mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức",
+        "B": "Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức",
+        "C": "Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi nhuận",
+        "D": "Là tư bản sản xuất mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Thế nào là tư bản cho vay?",
+        "optionsVi": {
+          "A": "Là tư bản hàng hóa mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức",
+          "B": "Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức",
+          "C": "Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi nhuận",
+          "D": "Là tư bản sản xuất mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức"
+        },
+        "answerDisplay": "B. Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một….",
+        "whyCorrect": "• Stem: Thế nào là tư bản cho vay?\n• Đáp án «Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Thế nào là tư bản cho vay?",
+        "whatIs": {
+          "A": "Là tư bản hàng hóa mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức",
+          "B": "Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức",
+          "C": "Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi nhuận",
+          "D": "Là tư bản sản xuất mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Là tư bản hàng hóa mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian…).",
+          "C": "• Là gì: Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi nhuận\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian…).",
+          "D": "• Là gì: Là tư bản sản xuất mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian nhất định để thu lợi tức\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là tư bản tiền tệ mà người chủ của nó nhường cho người khác sử dụng ở trong một thời gian…)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 457,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 457,
+      "question": "Đâu là nội dung cơ bản của tái sản xuất xã hội?",
+      "options": {
+        "A": "Tái sản xuất của cải vật chất; tái sản xuất ra quan hệ sản xuất và tái sản xuất môi trường",
+        "B": "Tái sản xuất của cải vật chất; tái sản xuất sức lao động và tái sản xuất môi trưởng",
+        "C": "Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra lực lượng sản xuất và tái sản xuất môi trường",
+        "D": "Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra quan hệ sản xuất và tái sản xuất môi trường"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Đâu là nội dung cơ bản của tái sản xuất xã hội?",
+        "optionsVi": {
+          "A": "Tái sản xuất của cải vật chất; tái sản xuất ra quan hệ sản xuất và tái sản xuất môi trường",
+          "B": "Tái sản xuất của cải vật chất; tái sản xuất sức lao động và tái sản xuất môi trưởng",
+          "C": "Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra lực lượng sản xuất và tái sản xuất môi trường",
+          "D": "Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra quan hệ sản xuất và tái sản xuất môi trường"
+        },
+        "answerDisplay": "D. Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra quan hệ sản xuất và tái sản xuất môi trường",
+        "concept": "• LLSX–QHSX: biện chứng; LLSX quyết định QHSX; QHSX tác động trở lại — Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra quan ….",
+        "whyCorrect": "• Stem: Đâu là nội dung cơ bản của tái sản xuất xã hội?\n• Đáp án «Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra quan hệ sản xuất và tái sản xuất môi trường» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Đâu là nội dung cơ bản của tái sản xuất xã hội?",
+        "whatIs": {
+          "A": "Tái sản xuất của cải vật chất; tái sản xuất ra quan hệ sản xuất và tái sản xuất môi trường",
+          "B": "Tái sản xuất của cải vật chất; tái sản xuất sức lao động và tái sản xuất môi trưởng",
+          "C": "Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra lực lượng sản xuất và tái sản xuất môi trường",
+          "D": "Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra quan hệ sản xuất và tái sản xuất môi trường"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Tái sản xuất của cải vật chất; tái sản xuất ra quan hệ sản xuất và tái sản xuất môi trường\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra quan hệ sản xuấ…).",
+          "B": "• Là gì: Tái sản xuất của cải vật chất; tái sản xuất sức lao động và tái sản xuất môi trưởng\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra quan hệ sản xuấ…).",
+          "C": "• Là gì: Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra lực lượng sản xuất và tái sản xuất môi trường\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tái sản xuất của cải vật chất; tái sản xuất sức lao động; tái sản xuất ra quan hệ sản xuấ…)."
+        },
+        "memoryTip": "• LLSX quyết định QHSX · QHSX phản tác động."
+      }
+    },
+    {
+      "id": 458,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 458,
+      "question": "Thời gian chu chuyển của tư bản được hiểu:",
+      "options": {
+        "A": "Thời gian sản xuất + thời gian bán hàng",
+        "B": "Thời gian sản xuất + thời gian lưu thông",
+        "C": "Thời gian dự trữ sản xuất + thời gian lưu thông",
+        "D": "Thời gian sản xuất + thời gian tiếp thị"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Thời gian chu chuyển của tư bản được hiểu:",
+        "optionsVi": {
+          "A": "Thời gian sản xuất + thời gian bán hàng",
+          "B": "Thời gian sản xuất + thời gian lưu thông",
+          "C": "Thời gian dự trữ sản xuất + thời gian lưu thông",
+          "D": "Thời gian sản xuất + thời gian tiếp thị"
+        },
+        "answerDisplay": "B. Thời gian sản xuất + thời gian lưu thông",
+        "concept": "• Thời gian sản xuất + thời gian lưu thông — định nghĩa/kết luận giáo trình khớp stem.",
+        "whyCorrect": "• Stem: Thời gian chu chuyển của tư bản được hiểu:\n• Đáp án «Thời gian sản xuất + thời gian lưu thông» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Thời gian chu chuyển của tư bản được hiểu:",
+        "whatIs": {
+          "A": "Thời gian sản xuất + thời gian bán hàng",
+          "B": "Thời gian sản xuất + thời gian lưu thông",
+          "C": "Thời gian dự trữ sản xuất + thời gian lưu thông",
+          "D": "Thời gian sản xuất + thời gian tiếp thị"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Thời gian sản xuất + thời gian bán hàng\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Thời gian sản xuất + thời gian lưu thông).",
+          "C": "• Là gì: Thời gian dự trữ sản xuất + thời gian lưu thông\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Thời gian sản xuất + thời gian lưu thông).",
+          "D": "• Là gì: Thời gian sản xuất + thời gian tiếp thị\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Thời gian sản xuất + thời gian lưu thông)."
+        },
+        "memoryTip": "• Neo đáp án: Thời gian sản xuất + thời gian lưu thông."
+      }
+    },
+    {
+      "id": 459,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 459,
+      "question": "Căn cứ vào đối tượng trao đổi, mua bán cụ thể có các loại thị trường nào?",
+      "options": {
+        "A": "Thị trường hàng hóa và thị trường dịch vụ",
+        "B": "Thị trường hàng hóa, thị trường dịch vụ, thị trường trong nưỡc và thị trường quốc tế",
+        "C": "Thị trường hàng hóa, thị trường dịch vụ, thị trường trong nước, thị trưởng quốc tế, thị trường tư liệu tiều dùng và thị trường tư liệu sản xuất",
+        "D": "Thị trường hàng hóa, thị trường dịch vụ và thị trường mua bán"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Căn cứ vào đối tượng trao đổi, mua bán cụ thể có các loại thị trường nào?",
+        "optionsVi": {
+          "A": "Thị trường hàng hóa và thị trường dịch vụ",
+          "B": "Thị trường hàng hóa, thị trường dịch vụ, thị trường trong nưỡc và thị trường quốc tế",
+          "C": "Thị trường hàng hóa, thị trường dịch vụ, thị trường trong nước, thị trưởng quốc tế, thị trường tư liệu tiều dùng và thị trường tư liệu sản xuất",
+          "D": "Thị trường hàng hóa, thị trường dịch vụ và thị trường mua bán"
+        },
+        "answerDisplay": "A. Thị trường hàng hóa và thị trường dịch vụ",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Thị trường hàng hóa và thị trường dịch vụ.",
+        "whyCorrect": "• Stem: Căn cứ vào đối tượng trao đổi, mua bán cụ thể có các loại thị trường nào?\n• Đáp án «Thị trường hàng hóa và thị trường dịch vụ» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Căn cứ vào đối tượng trao đổi, mua bán cụ thể có các loại thị trường nào?",
+        "whatIs": {
+          "A": "Thị trường hàng hóa và thị trường dịch vụ",
+          "B": "Thị trường hàng hóa, thị trường dịch vụ, thị trường trong nưỡc và thị trường quốc tế",
+          "C": "Thị trường hàng hóa, thị trường dịch vụ, thị trường trong nước, thị trưởng quốc tế, thị trường tư liệu tiều dùng và thị trường tư liệu sản xuất",
+          "D": "Thị trường hàng hóa, thị trường dịch vụ và thị trường mua bán"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Thị trường hàng hóa, thị trường dịch vụ, thị trường trong nưỡc và thị trường quốc tế\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Thị trường hàng hóa và thị trường dịch vụ).",
+          "C": "• Là gì: Thị trường hàng hóa, thị trường dịch vụ, thị trường trong nước, thị trưởng quốc tế, thị trường tư liệu tiều dùng và thị trường tư liệu sản xuất\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Thị trường hàng hóa và thị trường dịch vụ).",
+          "D": "• Là gì: Thị trường hàng hóa, thị trường dịch vụ và thị trường mua bán\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Thị trường hàng hóa và thị trường dịch vụ)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 460,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 460,
+      "question": "Khủng hoàng kinh tế chủ nghĩa tư bản là:",
+      "options": {
+        "A": "Chủ quan",
+        "B": "Tất yếu khách quan",
+        "C": "Nhất thời",
+        "D": "Có tính thời điểm"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Khủng hoàng kinh tế chủ nghĩa tư bản là:",
+        "optionsVi": {
+          "A": "Chủ quan",
+          "B": "Tất yếu khách quan",
+          "C": "Nhất thời",
+          "D": "Có tính thời điểm"
+        },
+        "answerDisplay": "B. Tất yếu khách quan",
+        "concept": "• Tất yếu khách quan — định nghĩa/kết luận giáo trình khớp stem.",
+        "whyCorrect": "• Stem: Khủng hoàng kinh tế chủ nghĩa tư bản là:\n• Đáp án «Tất yếu khách quan» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Khủng hoàng kinh tế chủ nghĩa tư bản là:",
+        "whatIs": {
+          "A": "Chủ quan",
+          "B": "Tất yếu khách quan",
+          "C": "Nhất thời",
+          "D": "Có tính thời điểm"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Phương án «Chủ quan»\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tất yếu khách quan).",
+          "C": "• Là gì: Phương án «Nhất thời»\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tất yếu khách quan).",
+          "D": "• Là gì: Có tính thời điểm\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tất yếu khách quan)."
+        },
+        "memoryTip": "• Neo đáp án: Tất yếu khách quan."
+      }
+    },
+    {
+      "id": 461,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 461,
+      "question": "Những nhân tố ảnh hưởng đến tỷ suất lợi nhuận đó là:",
+      "options": {
+        "A": "Tỷ suất giá trị thặng dư; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.",
+        "B": "Cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.",
+        "C": "Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.",
+        "D": "Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm giá trị thặng dư."
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Những nhân tố ảnh hưởng đến tỷ suất lợi nhuận đó là:",
+        "optionsVi": {
+          "A": "Tỷ suất giá trị thặng dư; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.",
+          "B": "Cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.",
+          "C": "Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.",
+          "D": "Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm giá trị thặng dư."
+        },
+        "answerDisplay": "C. Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.",
+        "concept": "• Giá trị thặng dư: phần giá trị do lao động không công tạo ra, nhà tư bản chiếm đoạt — Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư b….",
+        "whyCorrect": "• Stem: Những nhân tố ảnh hưởng đến tỷ suất lợi nhuận đó là:\n• Đáp án «Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Những nhân tố ảnh hưởng đến tỷ suất lợi nhuận đó là:",
+        "whatIs": {
+          "A": "Tỷ suất giá trị thặng dư; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.",
+          "B": "Cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.",
+          "C": "Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.",
+          "D": "Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm giá trị thặng dư."
+        },
+        "whyWrong": {
+          "A": "• Là gì: Tỷ suất giá trị thặng dư; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết k…).",
+          "B": "• Là gì: Cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm tư bản bất biến.\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết k…).",
+          "D": "• Là gì: Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết kiệm giá trị thặng dư.\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tỷ suất giá trị thặng dư; cấu tạo hữu cơ của tư bản; tốc độ chu chuyển của tư bản; tiết k…)."
+        },
+        "memoryTip": "• GTTS = lao động thặng dư bị chiếm đoạt."
+      }
+    },
+    {
+      "id": 462,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 462,
+      "question": "Sự hình thành độc quyền dựa trên các nguyên nhân nào sau đây?",
+      "options": {
+        "A": "Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền; cạnh tranh; khủng hoảng sự phát triển của hệ thống tín dụng",
+        "B": "Sự phát triển của quan hệ sản xuất thúc đấy các tổ chức độc quyền, cạnh tranh; khủng hoảng sự phát triển của hệ thống tín dụng",
+        "C": "Sự phát triển của phương thức sản xuất tư bản chủ nghĩa thúc đẩy các tổ chức độc quyền; cạnh tranh; khủng hoàng sự phát triển của hệ thống tín dụng",
+        "D": "Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền; cạnh tranh; khúng hoảng trong sự phát triển của một quốc gia"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Sự hình thành độc quyền dựa trên các nguyên nhân nào sau đây?",
+        "optionsVi": {
+          "A": "Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền; cạnh tranh; khủng hoảng sự phát triển của hệ thống tín dụng",
+          "B": "Sự phát triển của quan hệ sản xuất thúc đấy các tổ chức độc quyền, cạnh tranh; khủng hoảng sự phát triển của hệ thống tín dụng",
+          "C": "Sự phát triển của phương thức sản xuất tư bản chủ nghĩa thúc đẩy các tổ chức độc quyền; cạnh tranh; khủng hoàng sự phát triển của hệ thống tín dụng",
+          "D": "Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền; cạnh tranh; khúng hoảng trong sự phát triển của một quốc gia"
+        },
+        "answerDisplay": "A. Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền; cạnh tranh; khủng hoảng sự phát triển của hệ thống tín dụng",
+        "concept": "• Trong CNTB độc quyền, cạnh tranh không mất: cạnh tranh là quy luật khách quan của kinh tế hàng hóa.",
+        "whyCorrect": "• Stem: Sự hình thành độc quyền dựa trên các nguyên nhân nào sau đây?\n• Đáp án «Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền; cạnh tranh; khủng hoảng sự phát triển của hệ thống tín dụng» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Sự hình thành độc quyền dựa trên các nguyên nhân nào sau đây?",
+        "whatIs": {
+          "A": "Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền; cạnh tranh; khủng hoảng sự phát triển của hệ thống tín dụng",
+          "B": "Sự phát triển của quan hệ sản xuất thúc đấy các tổ chức độc quyền, cạnh tranh; khủng hoảng sự phát triển của hệ thống tín dụng",
+          "C": "Sự phát triển của phương thức sản xuất tư bản chủ nghĩa thúc đẩy các tổ chức độc quyền; cạnh tranh; khủng hoàng sự phát triển của hệ thống tín dụng",
+          "D": "Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền; cạnh tranh; khúng hoảng trong sự phát triển của một quốc gia"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Sự phát triển của quan hệ sản xuất thúc đấy các tổ chức độc quyền, cạnh tranh; khủng hoảng sự phát triển của hệ thống tín dụng\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền; cạnh tranh; khủng ho…).",
+          "C": "• Là gì: Sự phát triển của phương thức sản xuất tư bản chủ nghĩa thúc đẩy các tổ chức độc quyền; cạnh tranh; khủng hoàng sự phát triển của hệ thống tín dụng\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền; cạnh tranh; khủng ho…).",
+          "D": "• Là gì: Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền; cạnh tranh; khúng hoảng trong sự phát triển của một quốc gia\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Sự phát triển của lực lượng sản xuất thúc đẩy các tổ chức độc quyền; cạnh tranh; khủng ho…)."
+        },
+        "memoryTip": "• Độc quyền không thủ tiêu cạnh tranh."
+      }
+    },
+    {
+      "id": 463,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 463,
+      "question": "Xu hướng chung của sản xuất tư bàn chủ nghĩa là:",
+      "options": {
+        "A": "Nâng cao mức tiền công",
+        "B": "Hạ thấp mức tiền công",
+        "C": "Giữ nguyên mức tiền công"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Xu hướng chung của sản xuất tư bàn chủ nghĩa là:",
+        "optionsVi": {
+          "A": "Nâng cao mức tiền công",
+          "B": "Hạ thấp mức tiền công",
+          "C": "Giữ nguyên mức tiền công"
+        },
+        "answerDisplay": "B. Hạ thấp mức tiền công",
+        "concept": "• Hạ thấp mức tiền công — định nghĩa/kết luận giáo trình khớp stem.",
+        "whyCorrect": "• Stem: Xu hướng chung của sản xuất tư bàn chủ nghĩa là:\n• Đáp án «Hạ thấp mức tiền công» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Xu hướng chung của sản xuất tư bàn chủ nghĩa là:",
+        "whatIs": {
+          "A": "Nâng cao mức tiền công",
+          "B": "Hạ thấp mức tiền công",
+          "C": "Giữ nguyên mức tiền công"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Nâng cao mức tiền công\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Hạ thấp mức tiền công).",
+          "C": "• Là gì: Giữ nguyên mức tiền công\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Hạ thấp mức tiền công)."
+        },
+        "memoryTip": "• Neo đáp án: Hạ thấp mức tiền công."
+      }
+    },
+    {
+      "id": 464,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 464,
+      "question": "Điều gì xảy ra nếu cung thấp hơn cầu?",
+      "options": {
+        "A": "Giá cả cao hơn giá trị",
+        "B": "Giá cả thấp hơn giá trị",
+        "C": "Hàng hóa tạo ra được tăng cao giá bán",
+        "D": "Hàng hóa phong phú"
+      },
+      "answer": "A",
+      "alternatives": [
+        {
+          "question": "Điều gì xảy ra nếu cung lớn hơn cầu?",
+          "options": {},
+          "answer": null,
+          "answerText": "B",
+          "explanation": {
+            "answerDisplay": "B",
+            "whyCorrect": "Đáp án trọng tâm: B. Đây là nội dung cần nhớ gắn với khái niệm trong đề biến thể.",
+            "memoryTip": "Chốt đúng khái niệm trọng tâm, loại phương án lệch thuật ngữ.",
+            "whyWrong": {}
+          }
+        }
+      ],
+      "explanation": {
+        "questionVi": "Điều gì xảy ra nếu cung thấp hơn cầu?",
+        "optionsVi": {
+          "A": "Giá cả cao hơn giá trị",
+          "B": "Giá cả thấp hơn giá trị",
+          "C": "Hàng hóa tạo ra được tăng cao giá bán",
+          "D": "Hàng hóa phong phú"
+        },
+        "answerDisplay": "A. Giá cả cao hơn giá trị",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Giá cả cao hơn giá trị.",
+        "whyCorrect": "• Stem: Điều gì xảy ra nếu cung thấp hơn cầu?\n• Đáp án «Giá cả cao hơn giá trị» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Điều gì xảy ra nếu cung thấp hơn cầu?",
+        "whatIs": {
+          "A": "Giá cả cao hơn giá trị",
+          "B": "Giá cả thấp hơn giá trị",
+          "C": "Hàng hóa tạo ra được tăng cao giá bán",
+          "D": "Hàng hóa phong phú"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Giá cả thấp hơn giá trị\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá cả cao hơn giá trị).",
+          "C": "• Là gì: Hàng hóa tạo ra được tăng cao giá bán\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá cả cao hơn giá trị).",
+          "D": "• Là gì: Hàng hóa phong phú\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá cả cao hơn giá trị)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 465,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 465,
+      "question": "Thế nào là thời gian lao động xã hội cần thiết?",
+      "options": {
+        "A": "Là khoảng thời gian sản xuất của tuyệt đại bộ phận hàng hóa",
+        "B": "Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hóa nhất định trong điều kiện trình độ kỹ thuật trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình",
+        "C": "Là khoảng thời gian do người có trình độ chuyên môn cao quyết định",
+        "D": "Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hóa nhất định trong điều kiện trình khoa học trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Thế nào là thời gian lao động xã hội cần thiết?",
+        "optionsVi": {
+          "A": "Là khoảng thời gian sản xuất của tuyệt đại bộ phận hàng hóa",
+          "B": "Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hó nhất định trong điều kiện trình độ kỹ thuật trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình",
+          "C": "Là khoảng thời gian do người có trình độ chuyên môn cao quyết định",
+          "D": "Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hó nhất định trong điều kiện trình khoa học trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình"
+        },
+        "answerDisplay": "B. Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hó nhất định trong điều kiện trình độ kỹ thuật trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hóa nhất định trong ….",
+        "whyCorrect": "• Stem: Thế nào là thời gian lao động xã hội cần thiết?\n• Đáp án «Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hóa nhất định trong điều kiện trình độ kỹ thuật trung bình, trình độ khéo léo tr…» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Thế nào là thời gian lao động xã hội cần thiết?",
+        "whatIs": {
+          "A": "Là khoảng thời gian sản xuất của tuyệt đại bộ phận hàng hóa",
+          "B": "Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hóa nhất định trong điều kiện trình độ kỹ thuật trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình",
+          "C": "Là khoảng thời gian do người có trình độ chuyên môn cao quyết định",
+          "D": "Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hóa nhất định trong điều kiện trình khoa học trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Là khoảng thời gian sản xuất của tuyệt đại bộ phận hàng hóa\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hóa nhất định trong điều kiện …).",
+          "C": "• Là gì: Là khoảng thời gian do người có trình độ chuyên môn cao quyết định\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hóa nhất định trong điều kiện …).",
+          "D": "• Là gì: Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hóa nhất định trong điều kiện trình khoa học trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là khoảng thời gian cần thiết để sản xuất ra một loại hàng hóa nhất định trong điều kiện …)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 466,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 466,
+      "question": "Nguyên nhân dẫn tới hình thành các tổ chức độc quyền đa ngành đó là:",
+      "options": {
+        "A": "Cạnh tranh gay gắt và đối phó với luật chống độc quyền",
+        "B": "Cạnh tranh giữa các ngành và cạnh tranh đa quốc gia",
+        "C": "Thu lợi nhuận kinh doanh từ chúng khoán",
+        "D": "Đối phó với luật chống độc quyền ở các quốc gia"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Nguyên nhân dẫn tới hình thành các tổ chức độc quyền đa ngành đó là:",
+        "optionsVi": {
+          "A": "Cạnh tranh gay gắt và đối phó với luật chống độc quyền",
+          "B": "Cạnh tranh giữa các ngành và cạnh tranh đa quốc gia",
+          "C": "Thu lợi nhuận kinh doanh từ chúng khoán",
+          "D": "Đối phó với luật chống độc quyền ở các quốc gia"
+        },
+        "answerDisplay": "A. Cạnh tranh gay gắt và đối phó với luật chống độc quyền",
+        "concept": "• Trong CNTB độc quyền, cạnh tranh không mất: cạnh tranh là quy luật khách quan của kinh tế hàng hóa.",
+        "whyCorrect": "• Stem: Nguyên nhân dẫn tới hình thành các tổ chức độc quyền đa ngành đó là:\n• Đáp án «Cạnh tranh gay gắt và đối phó với luật chống độc quyền» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Nguyên nhân dẫn tới hình thành các tổ chức độc quyền đa ngành đó là:",
+        "whatIs": {
+          "A": "Cạnh tranh gay gắt và đối phó với luật chống độc quyền",
+          "B": "Cạnh tranh giữa các ngành và cạnh tranh đa quốc gia",
+          "C": "Thu lợi nhuận kinh doanh từ chúng khoán",
+          "D": "Đối phó với luật chống độc quyền ở các quốc gia"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Cạnh tranh giữa các ngành và cạnh tranh đa quốc gia\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Cạnh tranh gay gắt và đối phó với luật chống độc quyền).",
+          "C": "• Là gì: Thu lợi nhuận kinh doanh từ chúng khoán\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Cạnh tranh gay gắt và đối phó với luật chống độc quyền).",
+          "D": "• Là gì: Đối phó với luật chống độc quyền ở các quốc gia\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Cạnh tranh gay gắt và đối phó với luật chống độc quyền)."
+        },
+        "memoryTip": "• Độc quyền không thủ tiêu cạnh tranh."
+      }
+    },
+    {
+      "id": 467,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 467,
+      "question": "Quốc gia nào thuộc nhóm các nước công nghiệp mới (NICS)?",
+      "options": {
+        "A": "Hoa Kỳ",
+        "B": "Singapore",
+        "C": "Việt Nam",
+        "D": "Trung Quốc"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Quốc gia nào thuộc nhóm các nước công nghiệp mới (NICS)?",
+        "optionsVi": {
+          "A": "Hoa Kỳ",
+          "B": "Singapore",
+          "C": "Việt Nam",
+          "D": "Trung Quốc"
+        },
+        "answerDisplay": "B. Singapore",
+        "memoryTip": "• Neo đáp án: Singapore.",
+        "concept": "• Singapore — định nghĩa/kết luận giáo trình khớp stem.",
+        "whyCorrect": "• Stem: Quốc gia nào thuộc nhóm các nước công nghiệp mới (NICS)?\n• Đáp án «Singapore» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "whyWrong": {
+          "A": "• Là gì: Phương án «Hoa Kỳ»\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Singapore).",
+          "C": "• Là gì: Phương án «Việt Nam»\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Singapore).",
+          "D": "• Là gì: Phương án «Trung Quốc»\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Singapore)."
+        },
+        "whatIs": {
+          "A": "Hoa Kỳ",
+          "B": "Singapore",
+          "C": "Việt Nam",
+          "D": "Trung Quốc"
+        },
+        "intent": "• M0 — lý thuyết tổng hợp\n• Quốc gia nào thuộc nhóm các nước công nghiệp mới (NICS)?"
+      }
+    },
+    {
+      "id": 468,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 468,
+      "question": "Cho ví dụ: nhà tư bản đầu tư 50 USD để mua nguyên vật liệu dệt vải, tốn 5 USD cho hao mòn máy móc để dệt được 10 mét vải từ nguyên liệu trên, 15 USD đề trả công cho công nhân làm việc trong 8 giờ theo thoả thuận, nhưng sau 4 giờ thì công nhân đã làm xong 10 mét vải. Để tăng giá trị thặng dư được tạo ra 15 USD, nhà tư bản cần làm gì?",
+      "options": {
+        "A": "Nhà tư bản cần bắt công nhân tăng ca 4 giờ nữa bên cạnh 8 giờ thỏa thuận",
+        "B": "Nhà tư bản không cần làm gì cả chỉ ngồi không thì giá trị thặng dư cũng tạo ra",
+        "C": "Đầu tư thêm 50 USD cho nguyên liệu, 5 USD cho hao mòn máy móc và bắt công nhân làm thêm 4 giờ nữa như thỏa thuận",
+        "D": "Ngay từ thời điểm làm xong 4 giờ thì giá trị thặng dư đã được tạo ra rồi"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cho ví dụ: nhà tư bản đầu tư 50 USD để mua nguyên vật liệu dệt vải, tốn 5 USD cho hao mòn máy móc để dệt được 10 mét vải từ nguyên liệu trên, 15 USD đề trả công cho công nhân làm việc trong 8 giờ theo thoả thuận, nhưng sau 4 giờ thì công nhân đã làm xong 10 mét vải. Để tăng giá trị thặng dư được tạo ra 15 USD, nhà tư bản cần làm gì?",
+        "optionsVi": {
+          "A": "Nhà tư bản cần bắt công nhân tăng ca 4 giờ nữa bên cạnh 8 giờ thỏa thuận",
+          "B": "Nhà tư bản không cần làm gì cả chỉ ngồi không thì giá trị thặng dư cũng tạo ra",
+          "C": "Đầu tư thêm 50 USD cho nguyên liệu, 5 USD cho hao mòn máy móc và bắt công nhân làm thêm 4 giờ nữa như thỏa thuận",
+          "D": "Ngay từ thời điểm làm xong 4 giờ thì giá trị thặng dư đã được tạo ra rồi"
+        },
+        "answerDisplay": "C. Đầu tư thêm 50 USD cho nguyên liệu, 5 USD cho hao mòn máy móc và bắt công nhân làm thêm 4 giờ nữa như thỏa thuận",
+        "concept": "• Giá trị thặng dư: phần giá trị do lao động không công tạo ra, nhà tư bản chiếm đoạt — Đầu tư thêm 50 USD cho nguyên liệu, 5 USD cho hao mòn máy móc và bắt công nhân ….",
+        "whyCorrect": "• Stem: Cho ví dụ: nhà tư bản đầu tư 50 USD để mua nguyên vật liệu dệt vải, tốn 5 USD cho hao mòn máy móc để dệt được 10 mét vải từ nguyên liệu trên, 15 USD đề trả côn…\n• Đáp án «Đầu tư thêm 50 USD cho nguyên liệu, 5 USD cho hao mòn máy móc và bắt công nhân làm thêm 4 giờ nữa như thỏa thuận» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Cho ví dụ: nhà tư bản đầu tư 50 USD để mua nguyên vật liệu dệt vải, tốn 5 USD c…",
+        "whatIs": {
+          "A": "Nhà tư bản cần bắt công nhân tăng ca 4 giờ nữa bên cạnh 8 giờ thỏa thuận",
+          "B": "Nhà tư bản không cần làm gì cả chỉ ngồi không thì giá trị thặng dư cũng tạo ra",
+          "C": "Đầu tư thêm 50 USD cho nguyên liệu, 5 USD cho hao mòn máy móc và bắt công nhân làm thêm 4 giờ nữa như thỏa thuận",
+          "D": "Ngay từ thời điểm làm xong 4 giờ thì giá trị thặng dư đã được tạo ra rồi"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Nhà tư bản cần bắt công nhân tăng ca 4 giờ nữa bên cạnh 8 giờ thỏa thuận\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Đầu tư thêm 50 USD cho nguyên liệu, 5 USD cho hao mòn máy móc và bắt công nhân làm thêm 4…).",
+          "B": "• Là gì: Nhà tư bản không cần làm gì cả chỉ ngồi không thì giá trị thặng dư cũng tạo ra\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Đầu tư thêm 50 USD cho nguyên liệu, 5 USD cho hao mòn máy móc và bắt công nhân làm thêm 4…).",
+          "D": "• Là gì: Ngay từ thời điểm làm xong 4 giờ thì giá trị thặng dư đã được tạo ra rồi\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Đầu tư thêm 50 USD cho nguyên liệu, 5 USD cho hao mòn máy móc và bắt công nhân làm thêm 4…)."
+        },
+        "memoryTip": "• GTTS = lao động thặng dư bị chiếm đoạt."
+      }
+    },
+    {
+      "id": 469,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 469,
+      "question": "Nền kinh tế tri thức có bản chất là gì?",
+      "options": {
+        "A": "Một phương thức sản xuất mới",
+        "B": "Một hình thái kinh tế - xã hội mới",
+        "C": "Một nấc thang phát triển của lực lượng sản xuất",
+        "D": "Một giai đoạn phát triển cao của nên kinh tế công nghiệp"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Nền kinh tế tri thức có bản chất là gì?",
+        "optionsVi": {
+          "A": "Một phương thức sản xuất mới",
+          "B": "Một hình thái kinh tế - xã hội mới",
+          "C": "Một nấc thang phát triển của lực lượng sản xuất",
+          "D": "Một giai đoạn phát triển cao của nên kinh tế công nghiệp"
+        },
+        "answerDisplay": "C. Một nấc thang phát triển của lực lượng sản xuất",
+        "concept": "• LLSX–QHSX: biện chứng; LLSX quyết định QHSX; QHSX tác động trở lại — Một nấc thang phát triển của lực lượng sản xuất.",
+        "whyCorrect": "• Stem: Nền kinh tế tri thức có bản chất là gì?\n• Đáp án «Một nấc thang phát triển của lực lượng sản xuất» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M1 — định nghĩa/bản chất\n• Nền kinh tế tri thức có bản chất là gì?",
+        "whatIs": {
+          "A": "Một phương thức sản xuất mới",
+          "B": "Một hình thái kinh tế - xã hội mới",
+          "C": "Một nấc thang phát triển của lực lượng sản xuất",
+          "D": "Một giai đoạn phát triển cao của nên kinh tế công nghiệp"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Một phương thức sản xuất mới\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Một nấc thang phát triển của lực lượng sản xuất).",
+          "B": "• Là gì: Một hình thái kinh tế - xã hội mới\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Một nấc thang phát triển của lực lượng sản xuất).",
+          "D": "• Là gì: Một giai đoạn phát triển cao của nên kinh tế công nghiệp\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Một nấc thang phát triển của lực lượng sản xuất)."
+        },
+        "memoryTip": "• LLSX quyết định QHSX · QHSX phản tác động."
+      }
+    },
+    {
+      "id": 470,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 470,
+      "question": "Thị trường được hiểu là gì?",
+      "options": {
+        "A": "Tổng hòa những quan hệ kinh tế",
+        "B": "Tổng hòa những quan hệ xã hội",
+        "C": "Tổng hòa những quan hệ lợi ích",
+        "D": "Tổng hòa các quan hệ trao đổi"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Thị trường được hiểu là gì?",
+        "optionsVi": {
+          "A": "Tổng hòa những quan hệ kinh tế",
+          "B": "Tổng hòa những quan hệ xã hội",
+          "C": "Tổng hòa những quan hệ lợi ích",
+          "D": "Tổng hòa các quan hệ trao đổi"
+        },
+        "answerDisplay": "A. Tổng hòa những quan hệ kinh tế",
+        "concept": "• Tổng hòa những quan hệ kinh tế — định nghĩa/kết luận giáo trình khớp stem.",
+        "whyCorrect": "• Stem: Thị trường được hiểu là gì?\n• Đáp án «Tổng hòa những quan hệ kinh tế» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M1 — định nghĩa/bản chất\n• Thị trường được hiểu là gì?",
+        "whatIs": {
+          "A": "Tổng hòa những quan hệ kinh tế",
+          "B": "Tổng hòa những quan hệ xã hội",
+          "C": "Tổng hòa những quan hệ lợi ích",
+          "D": "Tổng hòa các quan hệ trao đổi"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Tổng hòa những quan hệ xã hội\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tổng hòa những quan hệ kinh tế).",
+          "C": "• Là gì: Tổng hòa những quan hệ lợi ích\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tổng hòa những quan hệ kinh tế).",
+          "D": "• Là gì: Tổng hòa các quan hệ trao đổi\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tổng hòa những quan hệ kinh tế)."
+        },
+        "memoryTip": "• Neo đáp án: Tổng hòa những quan hệ kinh tế."
+      }
+    },
+    {
+      "id": 471,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 471,
+      "question": "Đối với hao phí lao động cá biệt, quy luật giá trị yêu cầu điều gì?",
+      "options": {
+        "A": "Hao phí lao động cá biệt < hao phí lao động xã hội cần thiết",
+        "B": "Hao phí lao động cá biệt = hao phí lao động xã hội cn thiết",
+        "C": "Hao phí lao động cá biệt ≥ hao phí lao động xã hội cần thiết",
+        "D": "Hao phái lao động cá biệt phải vận động cùng với hao phí lao động xã hội cần thiết"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Đối với hao phí lao động cá biệt, quy luật giá trị yêu cầu điều gì?",
+        "optionsVi": {
+          "A": "Hao phí lao động cá biệt < hao phí lao động xã hội cần thiết",
+          "B": "Hao phí lao động cá biệt = hao phí lao động xã hội cn thiết",
+          "C": "Hao phí lao động cá biệt ≥ hao phí lao động xã hội cần thiết",
+          "D": "Hao phái lao động cá biệt phải vận động cùng với hao phí lao động xã hội cần thiết"
+        },
+        "answerDisplay": "B. Hao phí lao động cá biệt = hao phí lao động xã hội cn thiết",
+        "concept": "• Hao phí lao động cá biệt = hao phí lao động xã hội cn thiết",
+        "whyCorrect": "• Stem: Đối với hao phí lao động cá biệt, quy luật giá trị yêu cầu điều gì?\n• Đáp án «Hao phí lao động cá biệt = hao phí lao động xã hội cn thiết» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Đối với hao phí lao động cá biệt, quy luật giá trị yêu cầu điều gì?",
+        "whatIs": {
+          "A": "Hao phí lao động cá biệt < hao phí lao động xã hội cần thiết",
+          "B": "Hao phí lao động cá biệt = hao phí lao động xã hội cn thiết",
+          "C": "Hao phí lao động cá biệt ≥ hao phí lao động xã hội cần thiết",
+          "D": "Hao phái lao động cá biệt phải vận động cùng với hao phí lao động xã hội cần thiết"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Hao phí lao động cá biệt < hao phí lao động xã hội cần thiết\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Hao phí lao động cá biệt = hao phí lao động xã hội cn thiết).",
+          "C": "• Là gì: Hao phí lao động cá biệt ≥ hao phí lao động xã hội cần thiết\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Hao phí lao động cá biệt = hao phí lao động xã hội cn thiết).",
+          "D": "• Là gì: Hao phái lao động cá biệt phải vận động cùng với hao phí lao động xã hội cần thiết\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Hao phí lao động cá biệt = hao phí lao động xã hội cn thiết)."
+        },
+        "memoryTip": "• Neo đáp án: Hao phí lao động cá biệt = hao phí lao động xã hội cn thiết."
+      }
+    },
+    {
+      "id": 472,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 472,
+      "question": "Cạnh tranh trong nội bộ ngành dẫn đến hình thành điều gì?",
+      "options": {
+        "A": "Giá cả sản xuất",
+        "B": "Giá trị thị trường",
+        "C": "Giá cà hàng hóa",
+        "D": "Giá trị thặng dư"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cạnh tranh trong nội bộ ngành dẫn đến hình thành điều gì?",
+        "optionsVi": {
+          "A": "Giá cả sản xuất",
+          "B": "Giá trị thị trường",
+          "C": "Giá cà hàng hóa",
+          "D": "Giá trị thặng dư"
+        },
+        "answerDisplay": "B. Giá trị thị trường",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Giá trị thị trường.",
+        "whyCorrect": "• Stem: Cạnh tranh trong nội bộ ngành dẫn đến hình thành điều gì?\n• Đáp án «Giá trị thị trường» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Cạnh tranh trong nội bộ ngành dẫn đến hình thành điều gì?",
+        "whatIs": {
+          "A": "Giá cả sản xuất",
+          "B": "Giá trị thị trường",
+          "C": "Giá cà hàng hóa",
+          "D": "Giá trị thặng dư"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Giá cả sản xuất\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị thị trường).",
+          "C": "• Là gì: Giá cà hàng hóa\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị thị trường).",
+          "D": "• Là gì: Giá trị thặng dư\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị thị trường)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 473,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 473,
+      "question": "Trong nền sản xuất hàng hóa ngày nay, hình thành những hàng hóa có yếu tố khác với hàng hóa thông thường. Đặc trưng của chúng là",
+      "options": {
+        "A": "Có giá trị sử dụng, có giá cả, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra",
+        "B": "Có giá trị, có giá cả, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra",
+        "C": "Có giá trị sử dụng, có giá trị, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra",
+        "D": "Có giá trị, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong nền sản xuất hàng hóa ngày nay, hình thành những hàng hóa có yếu tố khác với hàng hóa thông thường. Đặc trưng của chúng là",
+        "optionsVi": {
+          "A": "Có giá trị sử dụng, có giá cả, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra",
+          "B": "Có giá trị, có giá cả, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra",
+          "C": "Có giá trị sử dụng, có giá trị, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra",
+          "D": "Có giá trị, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra"
+        },
+        "answerDisplay": "C. Có giá trị sử dụng, có giá trị, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra",
+        "concept": "• Sản phẩm lao động nhằm trao đổi trên thị trường.",
+        "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin.\n• Sản phẩm lao động nhằm trao đổi trên thị trường.\n• Mang giá trị sử dụng và giá trị.",
+        "intent": "• Sản phẩm lao động nhằm trao đổi trên thị trường.\n• Mang giá trị sử dụng và giá trị.",
+        "whatIs": {
+          "A": "Có giá trị sử dụng, có giá cả, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra",
+          "B": "Có giá trị, có giá cả, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra",
+          "C": "Có giá trị sử dụng, có giá trị, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiế…",
+          "D": "Có giá trị, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra"
+        },
+        "whyWrong": {
+          "A": "• Là gì? Có giá trị sử dụng, có giá cả, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra\n• Vai trò? Phạm trù/khái niệm trong lý thuyết đề cập.\n• Vì sao sai? «Có giá trị sử dụng, có giá cả, có thể trao đổi, mua b…» (A) không thỏa: đúng lớp biểu hiện/đặc trưng đề hỏi.",
+          "B": "• Là gì? Có giá trị, có giá cả, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra\n• Vai trò? Phạm trù/khái niệm trong lý thuyết đề cập.\n• Vì sao sai? «Có giá trị, có giá cả, có thể trao đổi, mua bán nhưng…» (B) không thỏa: đúng lớp biểu hiện/đặc trưng đề hỏi.",
+          "D": "• Là gì? Có giá trị, có thể trao đổi, mua bán nhưng không do hao phí lao động trực tiếp tạo ra\n• Vai trò? Phạm trù/khái niệm trong lý thuyết đề cập.\n• Vì sao sai? «Có giá trị, có thể trao đổi, mua bán nhưng không do h…» (D) không thỏa: đúng lớp biểu hiện/đặc trưng đề hỏi."
+        }
+      }
+    },
+    {
+      "id": 474,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 474,
+      "question": "Trên phương diện kinh tế chính trị, tái sản xuất là",
+      "options": {
+        "A": "Là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng",
+        "B": "Là quá trình sản xuất liên tục",
+        "C": "Là sự khôi phục lại sản xuất"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trên phương diện kinh tế chính trị, tái sản xuất là",
+        "optionsVi": {
+          "A": "Là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng",
+          "B": "Là quá trình sản xuất liên tục",
+          "C": "Là sự khôi phục lại sản xuất"
+        },
+        "answerDisplay": "A. Là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng",
+        "concept": "• Là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng",
+        "whyCorrect": "• Stem: Trên phương diện kinh tế chính trị, tái sản xuất là\n• Đáp án «Là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Trên phương diện kinh tế chính trị, tái sản xuất là",
+        "whatIs": {
+          "A": "Là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng",
+          "B": "Là quá trình sản xuất liên tục",
+          "C": "Là sự khôi phục lại sản xuất"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Là quá trình sản xuất liên tục\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng).",
+          "C": "• Là gì: Là sự khôi phục lại sản xuất\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng)."
+        },
+        "memoryTip": "• Neo đáp án: Là quá trình sản xuất được lặp đi lặp lại và phục hồi không ngừng."
+      }
+    },
+    {
+      "id": 475,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 475,
+      "question": "Theo nghĩa trửu tượng, thị trưởng được hiểu như thế nào?",
+      "options": {
+        "A": "Là nơi diễn ra hành vi trao đổi, mua bán hàng hóá giữa các chủ thế kinh tế với nhau",
+        "B": "Là tổng thể các yếu tố kinh tế vận động theo quy luật của thị trường",
+        "C": "Là nơi người bán quyết định giá cà, người mua chi được quyền lựa chọn",
+        "D": "Là tổng hòà các mỗi quan hệ liên quan đến trao đổi, mua bán hàng hóá, dịch vụ trong xã hội"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Theo nghĩa trửu tượng, thị trưởng được hiểu như thế nào?",
+        "optionsVi": {
+          "A": "Là nơi diễn ra hành vi trao đổi, mua bán hàng hóá giữa các chủ thế kinh tế với nhau",
+          "B": "Là tổng thể các yếu tố kinh tế vận động theo quy luật của thị trường",
+          "C": "Là nơi người bán quyết định giá cà, người mua chi được quyền lựa chọn",
+          "D": "Là tổng hòà các mỗi quan hệ liên quan đến trao đổi, mua bán hàng hóá, dịch vụ trong xã hội"
+        },
+        "answerDisplay": "D. Là tổng hòà các mỗi quan hệ liên quan đến trao đổi, mua bán hàng hóá, dịch vụ trong xã hội",
+        "concept": "• Là tổng hòà các mỗi quan hệ liên quan đến trao đổi, mua bán hàng hóá, dịch vụ trong xã hội",
+        "whyCorrect": "• Stem: Theo nghĩa trửu tượng, thị trưởng được hiểu như thế nào?\n• Đáp án «Là tổng hòà các mỗi quan hệ liên quan đến trao đổi, mua bán hàng hóá, dịch vụ trong xã hội» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Theo nghĩa trửu tượng, thị trưởng được hiểu như thế nào?",
+        "whatIs": {
+          "A": "Là nơi diễn ra hành vi trao đổi, mua bán hàng hóá giữa các chủ thế kinh tế với nhau",
+          "B": "Là tổng thể các yếu tố kinh tế vận động theo quy luật của thị trường",
+          "C": "Là nơi người bán quyết định giá cà, người mua chi được quyền lựa chọn",
+          "D": "Là tổng hòà các mỗi quan hệ liên quan đến trao đổi, mua bán hàng hóá, dịch vụ trong xã hội"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Là nơi diễn ra hành vi trao đổi, mua bán hàng hóá giữa các chủ thế kinh tế với nhau\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là tổng hòà các mỗi quan hệ liên quan đến trao đổi, mua bán hàng hóá, dịch vụ trong xã hội).",
+          "B": "• Là gì: Là tổng thể các yếu tố kinh tế vận động theo quy luật của thị trường\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là tổng hòà các mỗi quan hệ liên quan đến trao đổi, mua bán hàng hóá, dịch vụ trong xã hội).",
+          "C": "• Là gì: Là nơi người bán quyết định giá cà, người mua chi được quyền lựa chọn\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là tổng hòà các mỗi quan hệ liên quan đến trao đổi, mua bán hàng hóá, dịch vụ trong xã hội)."
+        },
+        "memoryTip": "• Neo đáp án: Là tổng hòà các mỗi quan hệ liên quan đến trao đổi, mua bán hàng hóá,…."
+      }
+    },
+    {
+      "id": 476,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 476,
+      "question": "Tư bản khả biến tồn tại dưới hình thức nào?",
+      "options": {
+        "A": "Tiền lương phải trả cho người lao động",
+        "B": "Nguyên liệu, vật liệu, máy móc, sức lao động",
+        "C": "Hàng hóa, sức lao động",
+        "D": "Vật liệu, máy móc, tiên công trả cho công nhân"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Tư bản khả biến tồn tại dưới hình thức nào?",
+        "optionsVi": {
+          "A": "Tiền lương phải trả cho người lao động",
+          "B": "Nguyên liệu, vật liệu, máy móc, sức lao động",
+          "C": "Hàng hóa, sức lao động",
+          "D": "Vật liệu, máy móc, tiên công trả cho công nhân"
+        },
+        "answerDisplay": "A. Tiền lương phải trả cho người lao động",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Tiền lương phải trả cho người lao động.",
+        "whyCorrect": "• Stem: Tư bản khả biến tồn tại dưới hình thức nào?\n• Đáp án «Tiền lương phải trả cho người lao động» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Tư bản khả biến tồn tại dưới hình thức nào?",
+        "whatIs": {
+          "A": "Tiền lương phải trả cho người lao động",
+          "B": "Nguyên liệu, vật liệu, máy móc, sức lao động",
+          "C": "Hàng hóa, sức lao động",
+          "D": "Vật liệu, máy móc, tiên công trả cho công nhân"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Nguyên liệu, vật liệu, máy móc, sức lao động\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tiền lương phải trả cho người lao động).",
+          "C": "• Là gì: Hàng hóa, sức lao động\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tiền lương phải trả cho người lao động).",
+          "D": "• Là gì: Vật liệu, máy móc, tiên công trả cho công nhân\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tiền lương phải trả cho người lao động)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 477,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 477,
+      "question": "Cấu tạo kỹ thuật của tư bản được hiểu là",
+      "options": {
+        "A": "Tỷ lệ giữa số lượng tư liệu sản xuất và số lượng sức lao động sử dụng những tư liệu sản xuất đó trong quá trình sản xuất",
+        "B": "Tỷ lệ giữa số lượng nguyên liệu tiêu hao trong quá trình sản xuất và số lượng sức lao động sử dụng những tư liệu sản xuất đó trong quá trình sản xuất",
+        "C": "Tỷ lệ giữa số lượng sức lao động sử dụng trong quá trình sản xuất và tư liệu sản xuất trong quá trình sản xuất",
+        "D": "Tỷ lệ giữa số lượng giá trị của tư bản bất biến và số lượng giá trị của tư bản khả biến cần thiết để tiến hành sản xuất"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Cấu tạo kỹ thuật của tư bản được hiểu là",
+        "optionsVi": {
+          "A": "Tỷ lệ giữa số lượng tư liệu sản xuất và số lượng sức lao động sử dụng những tư liệu sản xuất đó trong quá trình sản xuất",
+          "B": "Tỷ lệ giữa số lượng nguyên liệu tiêu hao trong quá trình sản xuất và số lượng sức lao động sử dụng những tư liệu sản xuất đó trong quá trình sản xuất",
+          "C": "Tỷ lệ giữa số lượng sức lao động sử dụng trong quá trình sản xuất và tư liệu sản xuất trong quá trình sản xuất",
+          "D": "Tỷ lệ giữa số lượng giá trị của tư bản bất biến và số lượng giá trị của tư bản khả biến cần thiết để tiến hành sản xuất"
+        },
+        "answerDisplay": "A. Tỷ lệ giữa số lượng tư liệu sản xuất và số lượng sức lao động sử dụng những tư liệu sản xuất đó trong quá trình sản xuất",
+        "concept": "• c = tư bản bất biến (TLSX); v = tư bản khả biến (sức lao động); cấu tạo hữu cơ c/v — Tỷ lệ giữa số lượng tư liệu sản xuất và số lượng sức lao động sử dụng những tư ….",
+        "whyCorrect": "• Stem: Cấu tạo kỹ thuật của tư bản được hiểu là\n• Đáp án «Tỷ lệ giữa số lượng tư liệu sản xuất và số lượng sức lao động sử dụng những tư liệu sản xuất đó trong quá trình sản xuất» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Cấu tạo kỹ thuật của tư bản được hiểu là",
+        "whatIs": {
+          "A": "Tỷ lệ giữa số lượng tư liệu sản xuất và số lượng sức lao động sử dụng những tư liệu sản xuất đó trong quá trình sản xuất",
+          "B": "Tỷ lệ giữa số lượng nguyên liệu tiêu hao trong quá trình sản xuất và số lượng sức lao động sử dụng những tư liệu sản xuất đó trong quá trình sản xuất",
+          "C": "Tỷ lệ giữa số lượng sức lao động sử dụng trong quá trình sản xuất và tư liệu sản xuất trong quá trình sản xuất",
+          "D": "Tỷ lệ giữa số lượng giá trị của tư bản bất biến và số lượng giá trị của tư bản khả biến cần thiết để tiến hành sản xuất"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Tỷ lệ giữa số lượng nguyên liệu tiêu hao trong quá trình sản xuất và số lượng sức lao động sử dụng những tư liệu sản xuất đó trong quá trình sản xuất\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tỷ lệ giữa số lượng tư liệu sản xuất và số lượng sức lao động sử dụng những tư liệu sản x…).",
+          "C": "• Là gì: Tỷ lệ giữa số lượng sức lao động sử dụng trong quá trình sản xuất và tư liệu sản xuất trong quá trình sản xuất\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tỷ lệ giữa số lượng tư liệu sản xuất và số lượng sức lao động sử dụng những tư liệu sản x…).",
+          "D": "• Là gì: Tỷ lệ giữa số lượng giá trị của tư bản bất biến và số lượng giá trị của tư bản khả biến cần thiết để tiến hành sản xuất\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tỷ lệ giữa số lượng tư liệu sản xuất và số lượng sức lao động sử dụng những tư liệu sản x…)."
+        },
+        "memoryTip": "• c bất biến · v khả biến · c/v cấu tạo hữu cơ."
+      }
+    },
+    {
+      "id": 478,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 478,
+      "question": "Địa tô tư bản chủ nghĩa được hiểu là gì?",
+      "options": {
+        "A": "Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ",
+        "B": "Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần thu nhập bình quân mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ",
+        "C": "Phần giá trị còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà tư bản kinh doanh đất phải nộp cho địa chủ",
+        "D": "Phần giá trị còn lại sau khi đã khấu trừ đi phần lợi nhuận thu được mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Địa tô tư bản chủ nghĩa được hiểu là gì?",
+        "optionsVi": {
+          "A": "Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ",
+          "B": "Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần thu nhập bình quân mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ",
+          "C": "Phần giá trị còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà tư bản kinh doanh đất phải nộp cho địa chủ",
+          "D": "Phần giá trị còn lại sau khi đã khấu trừ đi phần lợi nhuận thu được mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ"
+        },
+        "answerDisplay": "A. Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ",
+        "concept": "• Giá trị thặng dư: phần giá trị do lao động không công tạo ra, nhà tư bản chiếm đoạt — Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân m….",
+        "whyCorrect": "• Stem: Địa tô tư bản chủ nghĩa được hiểu là gì?\n• Đáp án «Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M1 — định nghĩa/bản chất\n• Địa tô tư bản chủ nghĩa được hiểu là gì?",
+        "whatIs": {
+          "A": "Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ",
+          "B": "Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần thu nhập bình quân mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ",
+          "C": "Phần giá trị còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà tư bản kinh doanh đất phải nộp cho địa chủ",
+          "D": "Phần giá trị còn lại sau khi đã khấu trừ đi phần lợi nhuận thu được mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần thu nhập bình quân mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà …).",
+          "C": "• Là gì: Phần giá trị còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà tư bản kinh doanh đất phải nộp cho địa chủ\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà …).",
+          "D": "• Là gì: Phần giá trị còn lại sau khi đã khấu trừ đi phần lợi nhuận thu được mà các nhà tư bản kinh doanh nông nghiệp phải nộp cho địa chủ\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Phần giá trị thặng dư còn lại sau khi đã khấu trừ đi phần lợi nhuận bình quân mà các nhà …)."
+        },
+        "memoryTip": "• GTTS = lao động thặng dư bị chiếm đoạt."
+      }
+    },
+    {
+      "id": 479,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 479,
+      "question": "Trong chủ nghĩa tư bản, người công nhân bán:",
+      "options": {
+        "A": "Sức lao động cho nhà tư bản",
+        "B": "Lao động cho nhà tư bản",
+        "C": "Hàng hóa cho nhà tư bản"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong chủ nghĩa tư bản, người công nhân bán:",
+        "optionsVi": {
+          "A": "Sức lao động cho nhà tư bản",
+          "B": "Lao động cho nhà tư bản",
+          "C": "Hàng hóa cho nhà tư bản"
+        },
+        "answerDisplay": "A. Sức lao động cho nhà tư bản",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Sức lao động cho nhà tư bản.",
+        "whyCorrect": "• Stem: Trong chủ nghĩa tư bản, người công nhân bán:\n• Đáp án «Sức lao động cho nhà tư bản» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Trong chủ nghĩa tư bản, người công nhân bán:",
+        "whatIs": {
+          "A": "Sức lao động cho nhà tư bản",
+          "B": "Lao động cho nhà tư bản",
+          "C": "Hàng hóa cho nhà tư bản"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Lao động cho nhà tư bản\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Sức lao động cho nhà tư bản).",
+          "C": "• Là gì: Hàng hóa cho nhà tư bản\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Sức lao động cho nhà tư bản)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 480,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 480,
+      "question": "Trong nền kinh tế thị trưởng thì thị trường có vai trò gì?",
+      "options": {
+        "A": "Điều tiết sản xuất",
+        "B": "Phân bổ lao động",
+        "C": "Là công cụ phân bổ các nguồn lực kinh tế",
+        "D": "Phân bổ tư liệu sàn xuất"
+      },
+      "answer": "C",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong nền kinh tế thị trưởng thì thị trường có vai trò gì?",
+        "optionsVi": {
+          "A": "Điều tiết sản xuất",
+          "B": "Phân bổ lao động",
+          "C": "Là công cụ phân bổ các nguồn lực kinh tế",
+          "D": "Phân bổ tư liệu sàn xuất"
+        },
+        "answerDisplay": "C. Là công cụ phân bổ các nguồn lực kinh tế",
+        "concept": "• Quan hệ/điều kiện/ý nghĩa đúng: Là công cụ phân bổ các nguồn lực kinh tế.",
+        "whyCorrect": "• Stem: Trong nền kinh tế thị trưởng thì thị trường có vai trò gì?\n• Kết luận quan hệ/điều kiện khớp lý thuyết: Là công cụ phân bổ các nguồn lực kinh tế.",
+        "intent": "• M4 — quan hệ/vai trò/điều kiện\n• Trong nền kinh tế thị trưởng thì thị trường có vai trò gì?",
+        "whatIs": {
+          "A": "Điều tiết sản xuất",
+          "B": "Phân bổ lao động",
+          "C": "Là công cụ phân bổ các nguồn lực kinh tế",
+          "D": "Phân bổ tư liệu sàn xuất"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Điều tiết sản xuất\n• Vai trò: Một nhân tố/quan hệ có thật nhưng không phải chiều quan hệ hay điều kiện stem nhấn.\n• Vì sao sai: Sai quan hệ/điều kiện so với đáp án: Là công cụ phân bổ các nguồn lực kinh tế.",
+          "B": "• Là gì: Phân bổ lao động\n• Vai trò: Một nhân tố/quan hệ có thật nhưng không phải chiều quan hệ hay điều kiện stem nhấn.\n• Vì sao sai: Sai quan hệ/điều kiện so với đáp án: Là công cụ phân bổ các nguồn lực kinh tế.",
+          "D": "• Là gì: Phân bổ tư liệu sàn xuất\n• Vai trò: Một nhân tố/quan hệ có thật nhưng không phải chiều quan hệ hay điều kiện stem nhấn.\n• Vì sao sai: Sai quan hệ/điều kiện so với đáp án: Là công cụ phân bổ các nguồn lực kinh tế."
+        },
+        "memoryTip": "• Neo đáp án: Là công cụ phân bổ các nguồn lực kinh tế."
+      }
+    },
+    {
+      "id": 481,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 481,
+      "question": "Trong xuất khẩu tư bản, có hai hình thức đầu tư đó là:",
+      "options": {
+        "A": "Đầu tư trực tiếp và đầu tư gián tiếp",
+        "B": "Đầu tư trực tiếp và đầu tư ủy nhiệm",
+        "C": "Đầu tư trực tiếp và đầu tư nhà nước",
+        "D": "Đầu tư tư bản tư nhân và đầu tư tư bản nhà nước"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong xuất khẩu tư bản, có hai hình thức đầu tư đó là:",
+        "optionsVi": {
+          "A": "Đầu tư trực tiếp và đầu tư gián tiếp",
+          "B": "Đầu tư trực tiếp và đầu tư ủy nhiệm",
+          "C": "Đầu tư trực tiếp và đầu tư nhà nước",
+          "D": "Đầu tư tư bản tư nhân và đầu tư tư bản nhà nước"
+        },
+        "answerDisplay": "A. Đầu tư trực tiếp và đầu tư gián tiếp",
+        "concept": "• Nhà nước: công cụ thống trị giai cấp, bảo vệ QHSX thống trị — Đầu tư trực tiếp và đầu tư gián tiếp.",
+        "whyCorrect": "• Stem: Trong xuất khẩu tư bản, có hai hình thức đầu tư đó là:\n• Đáp án «Đầu tư trực tiếp và đầu tư gián tiếp» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Trong xuất khẩu tư bản, có hai hình thức đầu tư đó là:",
+        "whatIs": {
+          "A": "Đầu tư trực tiếp và đầu tư gián tiếp",
+          "B": "Đầu tư trực tiếp và đầu tư ủy nhiệm",
+          "C": "Đầu tư trực tiếp và đầu tư nhà nước",
+          "D": "Đầu tư tư bản tư nhân và đầu tư tư bản nhà nước"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Đầu tư trực tiếp và đầu tư ủy nhiệm\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Đầu tư trực tiếp và đầu tư gián tiếp).",
+          "C": "• Là gì: Đầu tư trực tiếp và đầu tư nhà nước\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Đầu tư trực tiếp và đầu tư gián tiếp).",
+          "D": "• Là gì: Đầu tư tư bản tư nhân và đầu tư tư bản nhà nước\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Đầu tư trực tiếp và đầu tư gián tiếp)."
+        },
+        "memoryTip": "• Nhà nước = công cụ giai cấp (Mác–Lênin)."
+      }
+    },
+    {
+      "id": 482,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 482,
+      "question": "Khi các xí nghiệp tham gia chỉ mất độc lập về lưu thông là hình thức độc quyền nào?",
+      "options": {
+        "A": "Cartel",
+        "B": "Syndicate",
+        "C": "Trust",
+        "D": "Consortium"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Khi các xí nghiệp tham gia chỉ mất độc lập về lưu thông là hình thức độc quyền nào?",
+        "optionsVi": {
+          "A": "Cartel",
+          "B": "Syndicate",
+          "C": "Trust",
+          "D": "Consortium"
+        },
+        "answerDisplay": "B. Syndicate",
+        "concept": "• Syndicate — định nghĩa/kết luận giáo trình khớp stem.",
+        "whyCorrect": "• Stem: Khi các xí nghiệp tham gia chỉ mất độc lập về lưu thông là hình thức độc quyền nào?\n• Đáp án «Syndicate» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Khi các xí nghiệp tham gia chỉ mất độc lập về lưu thông là hình thức độc quyền …",
+        "memoryTip": "• Neo đáp án: Syndicate.",
+        "whatIs": {
+          "A": "Cartel",
+          "B": "Syndicate",
+          "C": "Trust",
+          "D": "Consortium"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Phương án «Cartel»\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Syndicate).",
+          "C": "• Là gì: Phương án «Trust»\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Syndicate).",
+          "D": "• Là gì: Phương án «Consortium»\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Syndicate)."
+        }
+      }
+    },
+    {
+      "id": 483,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 483,
+      "question": "Chủ nghĩa tư bản độc quyền được xem là:",
+      "options": {
+        "A": "Một phương thức sản xuất",
+        "B": "Một giai đoạn phát triển của phương thức sản xuất tư bản chủ nghĩa",
+        "C": "Một hình thái kinh tế xã hội",
+        "D": "Thời kỳ quá độ đi lên chủ nghĩa xã hội"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Chủ nghĩa tư bản độc quyền được xem là:",
+        "optionsVi": {
+          "A": "Một phương thức sản xuất",
+          "B": "Một giai đoạn phát triển của phương thức sản xuất tư bản chủ nghĩa",
+          "C": "Một hình thái kinh tế xã hội",
+          "D": "Thời kỳ quá độ đi lên chủ nghĩa xã hội"
+        },
+        "answerDisplay": "B. Một giai đoạn phát triển của phương thức sản xuất tư bản chủ nghĩa",
+        "concept": "• CNXH: chế độ dựa trên công hữu TLSX chủ yếu, xóa bóc lột, vì con người — Một giai đoạn phát triển của phương thức sản xuất tư bản chủ nghĩa.",
+        "whyCorrect": "• Stem: Chủ nghĩa tư bản độc quyền được xem là:\n• Đáp án «Một giai đoạn phát triển của phương thức sản xuất tư bản chủ nghĩa» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Chủ nghĩa tư bản độc quyền được xem là:",
+        "whatIs": {
+          "A": "Một phương thức sản xuất",
+          "B": "Một giai đoạn phát triển của phương thức sản xuất tư bản chủ nghĩa",
+          "C": "Một hình thái kinh tế xã hội",
+          "D": "Thời kỳ quá độ đi lên chủ nghĩa xã hội"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Một phương thức sản xuất\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Một giai đoạn phát triển của phương thức sản xuất tư bản chủ nghĩa).",
+          "C": "• Là gì: Một hình thái kinh tế xã hội\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Một giai đoạn phát triển của phương thức sản xuất tư bản chủ nghĩa).",
+          "D": "• Là gì: Thời kỳ quá độ đi lên chủ nghĩa xã hội\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Một giai đoạn phát triển của phương thức sản xuất tư bản chủ nghĩa)."
+        },
+        "memoryTip": "• CNXH ↔ công hữu · CNTB ↔ tư hữu TLSX."
+      }
+    },
+    {
+      "id": 484,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 484,
+      "question": "Lao động trừu tượng tạo ra",
+      "options": {
+        "A": "Giá trị của hàng hoá",
+        "B": "Giá trị sử dụng của hàng hóa",
+        "C": "Tiền lương",
+        "D": "Lợi nhuận cho tư bản"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Lao động trừu tượng tạo ra",
+        "optionsVi": {
+          "A": "Giá trị của hàng hoá",
+          "B": "Giá trị sử dụng của hàng hóa",
+          "C": "Tiền lương",
+          "D": "Lợi nhuận cho tư bản"
+        },
+        "answerDisplay": "A. Giá trị của hàng hoá",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Giá trị của hàng hoá.",
+        "whyCorrect": "• Stem: Lao động trừu tượng tạo ra\n• Đáp án «Giá trị của hàng hoá» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Lao động trừu tượng tạo ra",
+        "whatIs": {
+          "A": "Giá trị của hàng hoá",
+          "B": "Giá trị sử dụng của hàng hóa",
+          "C": "Tiền lương",
+          "D": "Lợi nhuận cho tư bản"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Giá trị sử dụng của hàng hóa\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị của hàng hoá).",
+          "C": "• Là gì: Phương án «Tiền lương»\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị của hàng hoá).",
+          "D": "• Là gì: Lợi nhuận cho tư bản\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị của hàng hoá)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 485,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 485,
+      "question": "Quy luật giá trị có tác dụng:",
+      "options": {
+        "A": "Điều tiết sản xuất và lưu thông hàng hóa.",
+        "B": "Cải tiến kỹ thuật, tăng năng suất lao động",
+        "C": "Phân hóá những người sản xuất",
+        "D": "Các phương án trả lời đêu đúng"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Quy luật giá trị có tác dụng:",
+        "optionsVi": {
+          "A": "Điều tiết sản xuất và lưu thông hàng hóa.",
+          "B": "Cải tiến kỹ thuật, tăng năng suất lao động",
+          "C": "Phân hóá những người sản xuất",
+          "D": "Các phương án trả lời đêu đúng"
+        },
+        "answerDisplay": "D. Các phương án trả lời đêu đúng",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Các phương án trả lời đêu đúng.",
+        "whyCorrect": "• Stem: Quy luật giá trị có tác dụng:\n• Đáp án «Các phương án trả lời đêu đúng» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Quy luật giá trị có tác dụng:",
+        "whatIs": {
+          "A": "Điều tiết sản xuất và lưu thông hàng hóa.",
+          "B": "Cải tiến kỹ thuật, tăng năng suất lao động",
+          "C": "Phân hóá những người sản xuất",
+          "D": "Các phương án trả lời đêu đúng"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Điều tiết sản xuất và lưu thông hàng hóa.\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Các phương án trả lời đêu đúng).",
+          "B": "• Là gì: Cải tiến kỹ thuật, tăng năng suất lao động\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Các phương án trả lời đêu đúng).",
+          "C": "• Là gì: Phân hóá những người sản xuất\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Các phương án trả lời đêu đúng)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 486,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 486,
+      "question": "Tính chất của tư bản bất biến (c) là:",
+      "options": {
+        "A": "Giá trị của nó không thay đổi vẽ lượng và được chuyển nguyên vẹn sang sản phẩm",
+        "B": "Giá trị của nó không thay đổi và được chuyển ngay sang sản phẩm sau một chu kỳ sản xuất",
+        "C": "Giá trị của nó chuyển dân vào sản phẩm qua khấu hao"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Tính chất của tư bản bất biến (c) là:",
+        "optionsVi": {
+          "A": "Giá trị củ nó không thay đổi vẽ lượng và được chuyển nguyên vẹn sang sản phẩm",
+          "B": "Giá trị củ nó không thay đổi và được chuyển ngay sang sản phẩm sau một chu kỳ sản xuất",
+          "C": "Giá trị của nó chuyển dân vào sản phẩm qua khấu hao"
+        },
+        "answerDisplay": "A. Giá trị củ nó không thay đổi vẽ lượng và được chuyển nguyên vẹn sang sản phẩm",
+        "concept": "• c = tư bản bất biến (TLSX); v = tư bản khả biến (sức lao động); cấu tạo hữu cơ c/v — Giá trị của nó không thay đổi vẽ lượng và được chuyển nguyên vẹn sang sản phẩm.",
+        "whyCorrect": "• Stem: Tính chất của tư bản bất biến (c) là:\n• Đáp án «Giá trị của nó không thay đổi vẽ lượng và được chuyển nguyên vẹn sang sản phẩm» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Tính chất của tư bản bất biến (c) là:",
+        "whatIs": {
+          "A": "Giá trị của nó không thay đổi vẽ lượng và được chuyển nguyên vẹn sang sản phẩm",
+          "B": "Giá trị của nó không thay đổi và được chuyển ngay sang sản phẩm sau một chu kỳ sản xuất",
+          "C": "Giá trị của nó chuyển dân vào sản phẩm qua khấu hao"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Giá trị của nó không thay đổi và được chuyển ngay sang sản phẩm sau một chu kỳ sản xuất\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị của nó không thay đổi vẽ lượng và được chuyển nguyên vẹn sang sản phẩm).",
+          "C": "• Là gì: Giá trị của nó chuyển dân vào sản phẩm qua khấu hao\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Giá trị của nó không thay đổi vẽ lượng và được chuyển nguyên vẹn sang sản phẩm)."
+        },
+        "memoryTip": "• c bất biến · v khả biến · c/v cấu tạo hữu cơ."
+      }
+    },
+    {
+      "id": 487,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 487,
+      "question": "Một trong những tác động tích cực của quy luật giá trị là gì?",
+      "options": {
+        "A": "Người sản xuất có thể sản xuất nhiều loại hàng hóá",
+        "B": "Người tiêu dùng mua được hàng hóá rẻ",
+        "C": "Người sản xuất ngày càng giàu có",
+        "D": "Kích thích lực lượng sản xuất, năng suất lao động tăng"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Một trong những tác động tích cực của quy luật giá trị là gì?",
+        "optionsVi": {
+          "A": "Người sản xuất có thể sản xuất nhiều loại hàng hóá",
+          "B": "Người tiêu dùng mua được hàng hóá rẻ",
+          "C": "Người sản xuất ngày càng giàu có",
+          "D": "Kích thích lực lượng sản xuất, năng suất lao động tăng"
+        },
+        "answerDisplay": "D. Kích thích lực lượng sản xuất, năng suất lao động tăng",
+        "concept": "• LLSX–QHSX: biện chứng; LLSX quyết định QHSX; QHSX tác động trở lại — Kích thích lực lượng sản xuất, năng suất lao động tăng.",
+        "whyCorrect": "• Stem: Một trong những tác động tích cực của quy luật giá trị là gì?\n• Đáp án «Kích thích lực lượng sản xuất, năng suất lao động tăng» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M1 — định nghĩa/bản chất\n• Một trong những tác động tích cực của quy luật giá trị là gì?",
+        "whatIs": {
+          "A": "Người sản xuất có thể sản xuất nhiều loại hàng hóá",
+          "B": "Người tiêu dùng mua được hàng hóá rẻ",
+          "C": "Người sản xuất ngày càng giàu có",
+          "D": "Kích thích lực lượng sản xuất, năng suất lao động tăng"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Người sản xuất có thể sản xuất nhiều loại hàng hóá\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Kích thích lực lượng sản xuất, năng suất lao động tăng).",
+          "B": "• Là gì: Người tiêu dùng mua được hàng hóá rẻ\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Kích thích lực lượng sản xuất, năng suất lao động tăng).",
+          "C": "• Là gì: Người sản xuất ngày càng giàu có\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Kích thích lực lượng sản xuất, năng suất lao động tăng)."
+        },
+        "memoryTip": "• LLSX quyết định QHSX · QHSX phản tác động."
+      }
+    },
+    {
+      "id": 488,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 488,
+      "question": "Thế nào là lao động giản đơn?",
+      "options": {
+        "A": "Là lao động không cần trài qua đào tạo cũng có thể làm được",
+        "B": "Là lao động làm công việc đơn gian",
+        "C": "Là lao động chi làm một công đoạn của quá trình tạo ra hàng hóá",
+        "D": "Lao động của người dưới tuối thành niên"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Thế nào là lao động giản đơn?",
+        "optionsVi": {
+          "A": "Là lao động không cần trài qua đào tạo cũng có thể làm được",
+          "B": "Là lao động làm công việc đơn gian",
+          "C": "Là lao động chi làm một công đoạn của quá trình tạo ra hàng hóá",
+          "D": "Lao động của người dưới tuối thành niên"
+        },
+        "answerDisplay": "A. Là lao động không cần trài qua đào tạo cũng có thể làm được",
+        "concept": "• Là lao động không cần trài qua đào tạo cũng có thể làm được",
+        "whyCorrect": "• Stem: Thế nào là lao động giản đơn?\n• Đáp án «Là lao động không cần trài qua đào tạo cũng có thể làm được» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Thế nào là lao động giản đơn?",
+        "whatIs": {
+          "A": "Là lao động không cần trài qua đào tạo cũng có thể làm được",
+          "B": "Là lao động làm công việc đơn gian",
+          "C": "Là lao động chi làm một công đoạn của quá trình tạo ra hàng hóá",
+          "D": "Lao động của người dưới tuối thành niên"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Là lao động làm công việc đơn gian\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là lao động không cần trài qua đào tạo cũng có thể làm được).",
+          "C": "• Là gì: Là lao động chi làm một công đoạn của quá trình tạo ra hàng hóá\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là lao động không cần trài qua đào tạo cũng có thể làm được).",
+          "D": "• Là gì: Lao động của người dưới tuối thành niên\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Là lao động không cần trài qua đào tạo cũng có thể làm được)."
+        },
+        "memoryTip": "• Neo đáp án: Là lao động không cần trài qua đào tạo cũng có thể làm được."
+      }
+    },
+    {
+      "id": 489,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 489,
+      "question": "Sự phát triển của các tổ chức độc quyền trong ngân hàng đã làm thay đổi quan hệ giữa ngân hàng và các doanh nghiệp công nghiệp đó là:",
+      "options": {
+        "A": "Từ trung gian thanh toán trở thành khống chế mọi hoạt động kinh tế - xã hội",
+        "B": "Từ trung gian thanh toán trở thành cổ đông của các doanh nghiệp nhà nước",
+        "C": "Từ hoạt động cho vay trở thành hoạt động khống chế doanh tư nhân",
+        "D": "Từ hoạt động cho vay trở thành chi phối các doanh nghiệp"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Sự phát triển của các tổ chức độc quyền trong ngân hàng đã làm thay đổi quan hệ giữa ngân hàng và các doanh nghiệp công nghiệp đó là:",
+        "optionsVi": {
+          "A": "Từ trung gian thanh án trở thành khống chế mọi hoạt động kinh tế - xã hội",
+          "B": "Từ trung gian thanh án trở thành cổ đông củ các doanh nghiệp nhà nước",
+          "C": "Từ hoạt động cho vay trở thành hoạt động khống chế doanh tư nhân",
+          "D": "Từ hoạt động cho vay trở thành chi phối các doanh nghiệp"
+        },
+        "answerDisplay": "A. Từ trung gian thanh án trở thành khống chế mọi hoạt động kinh tế - xã hội",
+        "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
+        "whyCorrect": "• Khớp với lý luận kinh tế chính trị Mác - Lênin trong giáo trình.",
+        "intent": "• Mô hình bảng + khóa + quan hệ giữa bảng.\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
+        "whatIs": {
+          "A": "Từ trung gian thanh toán trở thành khống chế mọi hoạt động kinh tế - xã hội",
+          "B": "Từ trung gian thanh toán trở thành cổ đông của các doanh nghiệp nhà nước",
+          "C": "Từ hoạt động cho vay trở thành hoạt động khống chế doanh tư nhân",
+          "D": "Từ hoạt động cho vay trở thành chi phối các doanh nghiệp"
+        },
+        "whyWrong": {
+          "B": "• Là gì? Từ trung gian thanh toán trở thành cổ đông của các doanh nghiệp nhà nước\n• Vai trò? Phạm trù/khái niệm trong lý thuyết đề cập.\n• Vì sao sai? «Từ trung gian thanh toán trở thành cổ đông của các do…» (B) không thỏa: đúng quan hệ/vai trò phạm trù.",
+          "C": "• Là gì? Từ hoạt động cho vay trở thành hoạt động khống chế doanh tư nhân\n• Vai trò? Phạm trù/khái niệm trong lý thuyết đề cập.\n• Vì sao sai? «Từ hoạt động cho vay trở thành hoạt động khống chế do…» (C) không thỏa: đúng quan hệ/vai trò phạm trù.",
+          "D": "• Là gì? Từ hoạt động cho vay trở thành chi phối các doanh nghiệp\n• Vai trò? Phạm trù/khái niệm trong lý thuyết đề cập.\n• Vì sao sai? «Từ hoạt động cho vay trở thành chi phối các doanh nghiệp» (D) không thỏa: đúng quan hệ/vai trò phạm trù."
+        }
+      }
+    },
+    {
+      "id": 490,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 490,
+      "question": "Theo công thức chung của tư bản thì T' được tính như thế nào?",
+      "options": {
+        "A": "T'= T + t (t>0)",
+        "B": "T'= T +t (t<0)",
+        "C": "T'= T + t t(t>=0)",
+        "D": "T'= T +t +t(t<=0)"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Theo công thức chung của tư bản thì T' được tính như thế nào?",
+        "optionsVi": {
+          "A": "T'= T + t (t>0)",
+          "B": "T'= T +t (t<0)",
+          "C": "T'= T + t t(t>=0)",
+          "D": "T'= T +t +t(t<=0)"
+        },
+        "answerDisplay": "A. T'= T + t (t>0)",
+        "concept": "• T'= T + t (t>0) — định nghĩa/kết luận giáo trình khớp stem.",
+        "whyCorrect": "• Stem: Theo công thức chung của tư bản thì T' được tính như thế nào?\n• Đáp án «T'= T + t (t>0)» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Theo công thức chung của tư bản thì T' được tính như thế nào?",
+        "whatIs": {
+          "A": "T'= T + t (t>0)",
+          "B": "T'= T +t (t<0)",
+          "C": "T'= T + t t(t>=0)",
+          "D": "T'= T +t +t(t<=0)"
+        },
+        "whyWrong": {
+          "B": "• Là gì: T'= T +t (t<0)\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: T'= T + t (t>0)).",
+          "C": "• Là gì: T'= T + t t(t>=0)\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: T'= T + t (t>0)).",
+          "D": "• Là gì: T'= T +t +t(t<=0)\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: T'= T + t (t>0))."
+        },
+        "memoryTip": "• Neo đáp án: T'= T + t (t>0)."
+      }
+    },
+    {
+      "id": 491,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 491,
+      "question": "Quá trình lưu thông tư bản là:",
+      "options": {
+        "A": "Tuần hoàn và chu chuyển giá trị hàng hóa",
+        "B": "Tuần hoàn và chu chuyển tư bản",
+        "C": "Tuần hoàn và chu chuyển hàng hóa",
+        "D": "Tuần hoàn và tích lũy tư bản"
+      },
+      "answer": "B",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Quá trình lưu thông tư bản là:",
+        "optionsVi": {
+          "A": "Tuần hoàn và chu chuyển giá trị hàng hóa",
+          "B": "Tuần hoàn và chu chuyển tư bản",
+          "C": "Tuần hoàn và chu chuyển hàng hóa",
+          "D": "Tuần hoàn và tích lũy tư bản"
+        },
+        "answerDisplay": "B. Tuần hoàn và chu chuyển tư bản",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Tuần hoàn và chu chuyển tư bản.",
+        "whyCorrect": "• Stem: Quá trình lưu thông tư bản là:\n• Đáp án «Tuần hoàn và chu chuyển tư bản» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M0 — lý thuyết tổng hợp\n• Quá trình lưu thông tư bản là:",
+        "whatIs": {
+          "A": "Tuần hoàn và chu chuyển giá trị hàng hóa",
+          "B": "Tuần hoàn và chu chuyển tư bản",
+          "C": "Tuần hoàn và chu chuyển hàng hóa",
+          "D": "Tuần hoàn và tích lũy tư bản"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Tuần hoàn và chu chuyển giá trị hàng hóa\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tuần hoàn và chu chuyển tư bản).",
+          "C": "• Là gì: Tuần hoàn và chu chuyển hàng hóa\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tuần hoàn và chu chuyển tư bản).",
+          "D": "• Là gì: Tuần hoàn và tích lũy tư bản\n• Vai trò: Phạm trù/khái niệm trong bài liên quan stem.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Tuần hoàn và chu chuyển tư bản)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    },
+    {
+      "id": 492,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 492,
+      "question": "Trong nền kinh tế thị trường, thị trường KHÔNG thực hiện vai trò nào sau đây?",
+      "options": {
+        "A": "Thực hiện giá trị hàng hóa",
+        "B": "Phân bổ tư liệu sản xuất",
+        "C": "Điều tiết nguồn lực cho sản xuất",
+        "D": "Hoạch định chính sách kinh tế"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Trong nền kinh tế thị trường, thị trường KHÔNG thực hiện vai trò nào sau đây?",
+        "optionsVi": {
+          "A": "Thực hiện giá trị hàng hóa",
+          "B": "Phân bổ tư liệu sản xuất",
+          "C": "Điều tiết nguồn lực cho sản xuất",
+          "D": "Hoạch định chính sách kinh tế"
+        },
+        "answerDisplay": "D. Hoạch định chính sách kinh tế",
+        "concept": "• Định nghĩa/đặc trưng cần nắm: Hoạch định chính sách kinh tế",
+        "whyCorrect": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác–Lênin. Cơ chế thị trường, cạnh tranh và quan hệ cung–cầu trong nền kinh tế hàng hóa.\n• Hoạch định chính sách kinh tế\n• Một phát biểu lý thuyết; cần đối chiếu đúng lớp hỏi của đề.",
+        "intent": "• Hoạch định chính sách kinh tế\n• Chọn đúng định nghĩa/đặc trưng lý thuyết, tránh nhầm khái niệm gần.",
+        "whatIs": {
+          "A": "Thực hiện giá trị hàng hóa",
+          "B": "Phân bổ tư liệu sản xuất",
+          "C": "Điều tiết nguồn lực cho sản xuất",
+          "D": "Hoạch định chính sách kinh tế"
+        },
+        "whyWrong": {
+          "A": "• Là gì? Thực hiện giá trị hàng hóa\n• Vai trò? Phạm trù/khái niệm trong lý thuyết đề cập.\n• Vì sao sai? «Thực hiện giá trị hàng hóa» (A) không thỏa: đúng quan hệ/vai trò phạm trù.",
+          "B": "• Là gì? Phân bổ tư liệu sản xuất\n• Vai trò? Phạm trù/khái niệm trong lý thuyết đề cập.\n• Vì sao sai? «Phân bổ tư liệu sản xuất» (B) không thỏa: đúng quan hệ/vai trò phạm trù.",
+          "C": "• Là gì? Điều tiết nguồn lực cho sản xuất\n• Vai trò? Phạm trù/khái niệm trong lý thuyết đề cập.\n• Vì sao sai? «Điều tiết nguồn lực cho sản xuất» (C) không thỏa: đúng quan hệ/vai trò phạm trù."
+        }
+      }
+    },
+    {
+      "id": 493,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 493,
+      "question": "Tại sao việc phát triển kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là tất yếu khách quan? Chọn 2 đáp án.",
+      "options": {
+        "A": "Kinh tế thị trường có thế tự hình thành khi có các điều kiện khách quan.",
+        "B": "Kinh tế thị trường tư bản chủ nghĩa là mô hình tối ưu nhất cho mọi quốc gia.",
+        "C": "Kinh tế thị trường là động lực thúc đấy lực lượng sản xuất phát triến nhanh và hiệu quả.",
+        "D": "Kinh tế thị trường giúp Việt Nam độc lập hoàn toàn khỏi các quy luật của thị trường toàn cầu."
+      },
+      "answer": "AC",
+      "answers": [
+        "A",
+        "C"
+      ],
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Tại sao việc phát triển kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là tất yếu khách quan? Chọn 2 đáp án.",
+        "optionsVi": {
+          "A": "Kinh tế thị trường có thế tự hình thành khi có các điều kiện khách quan.",
+          "B": "Kinh tế thị trường tư bản chủ nghĩa là mô hình tối ưu nhất cho mọi quốc gia.",
+          "C": "Kinh tế thị trường là động lực thúc đấy lực lượng sản xuất phát triến nhanh và hiệu quả.",
+          "D": "Kinh tế thị trường giúp Việt Nam độc lập hoàn toàn khỏi các quy luật của thị trường toàn cầu."
+        },
+        "answerDisplay": "A. Kinh tế thị trường có thế tự hình thành khi có các điều kiện khách quan. · C. Kinh tế thị trường là động lực thúc đấy lực lượng sản xuất phát triến nhanh và hiệu quả.",
+        "concept": "• LLSX–QHSX: biện chứng; LLSX quyết định QHSX; QHSX tác động trở lại — Kinh tế thị trường có thế tự hình thành khi có các điều kiện khách quan.; Kinh ….",
+        "whyCorrect": "• Câu chọn nhiều: đủ các ý đúng, không thừa ý sai.\n• Các đáp án: Kinh tế thị trường có thế tự hình thành khi có các điều kiện khách quan. · Kinh tế thị trường là động lực thúc đấy lực lượng sản xuất phát triến nhanh và hiệu quả..",
+        "intent": "• M8 — multi-select\n• Tại sao việc phát triển kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt N…",
+        "whatIs": {
+          "A": "Kinh tế thị trường có thế tự hình thành khi có các điều kiện khách quan.",
+          "B": "Kinh tế thị trường tư bản chủ nghĩa là mô hình tối ưu nhất cho mọi quốc gia.",
+          "C": "Kinh tế thị trường là động lực thúc đấy lực lượng sản xuất phát triến nhanh và hiệu quả.",
+          "D": "Kinh tế thị trường giúp Việt Nam độc lập hoàn toàn khỏi các quy luật của thị trường toàn cầu."
+        },
+        "whyWrong": {
+          "B": "• Là gì: Kinh tế thị trường tư bản chủ nghĩa là mô hình tối ưu nhất cho mọi quốc gia.\n• Vai trò: Một phần tập đáp án; multi-select cần đủ các ý đúng.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Kinh tế thị trường có thế tự hình thành khi có các điều kiện khách quan. · Kinh tế thị tr…).",
+          "D": "• Là gì: Kinh tế thị trường giúp Việt Nam độc lập hoàn toàn khỏi các quy luật của thị trường toàn cầu.\n• Vai trò: Một phần tập đáp án; multi-select cần đủ các ý đúng.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Kinh tế thị trường có thế tự hình thành khi có các điều kiện khách quan. · Kinh tế thị tr…)."
+        },
+        "memoryTip": "• LLSX quyết định QHSX · QHSX phản tác động."
+      }
+    },
+    {
+      "id": 494,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 494,
+      "question": "Lựa chọn đáp án đúng nhất: Mong muốn dân giàu, nước mạnh, dân chủ, công bằng, văn minh là mong muốn chung của ai?",
+      "options": {
+        "A": "Chỉ các quốc gia phát triển",
+        "B": "Chỉ các quốc gia đang phát triễn",
+        "C": "Các nước xã hội chủ nghĩa mới giảnh được chủ quyền dân tộc",
+        "D": "Tất cả các quốc gia trên thế giới"
+      },
+      "answer": "D",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Lựa chọn đáp án đúng nhất: Mong muốn dân giàu, nước mạnh, dân chủ, công bằng, văn minh là mong muốn chung của ai?",
+        "optionsVi": {
+          "A": "Chỉ các quốc gia phát triển",
+          "B": "Chỉ các quốc gia đang phát triễn",
+          "C": "Các nước xã hội chủ nghĩa mới giảnh được chủ quyền dân tộc",
+          "D": "Tất cả các quốc gia trên thế giới"
+        },
+        "answerDisplay": "D. Tất cả các quốc gia trên thế giới",
+        "concept": "• Kết luận gắn đúng tác giả/văn kiện: Tất cả các quốc gia trên thế giới.",
+        "whyCorrect": "• Các ý bộ phận có cơ sở riêng, nhưng kết luận đủ là đáp án gộp (cả ba/tất cả).\n• Chọn đủ tập để khớp giáo trình, không bỏ sót.",
+        "intent": "• M7 — tác giả/văn kiện\n• Lựa chọn đáp án đúng nhất: Mong muốn dân giàu, nước mạnh, dân chủ, công bằng, v…",
+        "whatIs": {
+          "A": "Chỉ các quốc gia phát triển",
+          "B": "Chỉ các quốc gia đang phát triễn",
+          "C": "Các nước xã hội chủ nghĩa mới giảnh được chủ quyền dân tộc",
+          "D": "Tất cả các quốc gia trên thế giới"
+        },
+        "whyWrong": {
+          "A": "• Là gì: Chỉ các quốc gia phát triển\n• Vai trò: Một bộ phận đúng trong tập hợp đầy đủ.\n• Vì sao sai: Đáp án yêu cầu đủ các yếu tố (cả ba/tất cả); chỉ một phần là thiếu.",
+          "B": "• Là gì: Chỉ các quốc gia đang phát triễn\n• Vai trò: Một bộ phận đúng trong tập hợp đầy đủ.\n• Vì sao sai: Đáp án yêu cầu đủ các yếu tố (cả ba/tất cả); chỉ một phần là thiếu.",
+          "C": "• Là gì: Các nước xã hội chủ nghĩa mới giảnh được chủ quyền dân tộc\n• Vai trò: Một bộ phận đúng trong tập hợp đầy đủ.\n• Vì sao sai: Đáp án yêu cầu đủ các yếu tố (cả ba/tất cả); chỉ một phần là thiếu."
+        },
+        "memoryTip": "• Gắn đúng tên: Tất cả các quốc gia trên thế giới."
+      }
+    },
+    {
+      "id": 495,
+      "task": "all",
+      "taskLabel": "MLN",
+      "num": 495,
+      "question": "Theo C.Mác có một loại hàng hóa đặc biệt mà khi sử dụng nó thì giá trị của nó không những được bảo tồn mà còn tạo ra những giá trị mới lớn hơn giá trị bản thân nó. Hàng hóa đó là gì?",
+      "options": {
+        "A": "Hàng hóa sức lao động",
+        "B": "Thức ăn",
+        "C": "Dịch vụ chăm sóc sức khoẻ",
+        "D": "Nước uống"
+      },
+      "answer": "A",
+      "alternatives": [],
+      "explanation": {
+        "questionVi": "Theo C.Mác có một loại hàng hóa đặc biệt mà khi sử dụng nó thì giá trị của nó không những được bảo tồn mà còn tạo ra những giá trị mới lớn hơn giá trị bản thân nó. Hàng hóa đó là gì?",
+        "optionsVi": {
+          "A": "Hàng hóa sức lao động",
+          "B": "Thức ăn",
+          "C": "Dịch vụ chăm sóc sức khoẻ",
+          "D": "Nước uống"
+        },
+        "answerDisplay": "A. Hàng hóa sức lao động",
+        "concept": "• Hàng hóa: sản phẩm lao động để trao đổi; hai thuộc tính GTSDụng & GT — Hàng hóa sức lao động.",
+        "whyCorrect": "• Stem: Theo C.Mác có một loại hàng hóa đặc biệt mà khi sử dụng nó thì giá trị của nó không những được bảo tồn mà còn tạo ra những giá trị mới lớn hơn giá trị bản thân…\n• Đáp án «Hàng hóa sức lao động» đủ yếu tố định nghĩa/kết luận giáo trình, không thiếu/thừa so với các phương án nhiễu gần nghĩa.",
+        "intent": "• M1 — định nghĩa/bản chất\n• Theo C.Mác có một loại hàng hóa đặc biệt mà khi sử dụng nó thì giá trị của nó k…",
+        "whatIs": {
+          "A": "Hàng hóa sức lao động",
+          "B": "Thức ăn",
+          "C": "Dịch vụ chăm sóc sức khoẻ",
+          "D": "Nước uống"
+        },
+        "whyWrong": {
+          "B": "• Là gì: Phương án «Thức ăn»\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Hàng hóa sức lao động).",
+          "C": "• Là gì: Dịch vụ chăm sóc sức khoẻ\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Hàng hóa sức lao động).",
+          "D": "• Là gì: Phương án «Nước uống»\n• Vai trò: Nằm trong hệ phạm trù định nghĩa bản chất đối tượng đề hỏi.\n• Vì sao sai: Không khớp bản chất/lớp hỏi của đề (cần: Hàng hóa sức lao động)."
+        },
+        "memoryTip": "• Hàng hóa = GTSDụng + GT (lao động)."
+      }
+    }
+  ]
+}

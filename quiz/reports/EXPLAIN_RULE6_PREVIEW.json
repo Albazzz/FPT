@@ -1,0 +1,777 @@
+{
+  "r1": [
+    {
+      "subj": "mln",
+      "id": 2,
+      "num": 2,
+      "q": "Nghiên cứu về cách mạng công nghiệp lần thứ nhất, C. Mác đã khái quát tính quy luật của cá",
+      "ans": "C",
+      "concept": "• Ba giai đoạn. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Ba g",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 4,
+      "num": 4,
+      "q": "Chọn phương án sai vai trò của cách mạng công nghiệp đối với sự phát triển đó là",
+      "ans": "B",
+      "concept": "• Mô hình bảng + khóa + quan hệ giữa bảng.",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất. Mối qu",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 8,
+      "num": 8,
+      "q": "Nội dung công cuộc đại phân công lao động xã hội lần thứ nhất là",
+      "ans": "C",
+      "concept": "• Chia tách ngành nghề/lĩnh vực sản xuất trong xã hội.",
+      "why": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 10,
+      "num": 10,
+      "q": "Nội dung công cuộc đại phân công lao động xã hội lần thứ hai là:",
+      "ans": "D",
+      "concept": "• Chia tách ngành nghề/lĩnh vực sản xuất trong xã hội.",
+      "why": "• . Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị M",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 11,
+      "num": 11,
+      "q": "Nội dung công cuộc đại phân công lao động xã hội lần thứ ba là:",
+      "ans": "B",
+      "concept": "• Chia tách ngành nghề/lĩnh vực sản xuất trong xã hội.",
+      "why": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 17,
+      "num": 17,
+      "q": "Cách mạng công nghiệp lần thứ hai diễn ra trong giai đoạn nào?",
+      "ans": "A",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Từ nửa cuối thế kỷ XIX đến đầu thế kỷ XX",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Từ n",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 18,
+      "num": 18,
+      "q": "Cách mạng công nghiệp lần thứ hai diễn ra trong thời gian nào?",
+      "ans": "D",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Từ giữa thế kỷ XIX đến giữa thế kỷ XX",
+      "why": "• Từ giữa thế kỷ XIX đến giữa thế kỷ XX\n• Một phát biểu lý thuyết; cần đối chiếu",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 27,
+      "num": 27,
+      "q": "Ai là người đề xuất ra ba loại thương nghiệp (trao đổi tự nhiên, trao đổi tiền tệ, trao đổ",
+      "ans": "A",
+      "concept": "• Cụm «Aristoteles» mang một nghĩa riêng cần đối chiếu với đề.",
+      "why": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 41,
+      "num": 41,
+      "q": "Cách mạng công nghiệp lần thứ tư sẽ làm mất đi lợi thế của các nước đang phát triển về",
+      "ans": "A",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Tài nguyên thiên nhiên, công nhân giá rẻ",
+      "why": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác",
+      "wrongN": 2
+    },
+    {
+      "subj": "mln",
+      "id": 48,
+      "num": 48,
+      "q": "Cách mạng công nghiệp lần thứ nhất diễn ra trong thời gian nào?",
+      "ans": "C",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Từ giữa thế kỷ XVIII đến giữa thế kỷ XIX",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Từ g",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 49,
+      "num": 49,
+      "q": "Yếu tố nào quyết định đến sự hình thành của cách mạng công nghiệp.",
+      "ans": "C",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Sự phát triển nhảy vọt về trình độ của tư liệu l",
+      "why": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 62,
+      "num": 62,
+      "q": "Điển vào chỗ trống: Theo Karl Marx, kinh tế chính trị học tư sản cổ điển Anh bắt đầu từ...",
+      "ans": "A",
+      "concept": "• Cụm «William Petty... David Ricardo» mang một nghĩa riêng cần đối chiếu với đề",
+      "why": "• .. David Ricardo. Lịch sử các học thuyết kinh tế (重商, cổ điển Anh, v.v.). Lịch",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 67,
+      "num": 67,
+      "q": "Cách mạng công nghiệp lần thứ hai đã tạo ra những tiến bộ vượt bậc trong lĩnh vực nào?",
+      "ans": "D",
+      "concept": "• Tất cả phương án trên. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần ",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Tất ",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 98,
+      "num": 98,
+      "q": "Đặc trưng của cách mạng công nghiệp lần thứ hai đó là",
+      "ans": "A",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Sử dụng năng lượng điện và động cơ điện, để tạo ",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Sử d",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 109,
+      "num": 109,
+      "q": "Ai là người đưa kinh tế chính trị trở thành môn khoa học có tính hệ thống với các phạm trù",
+      "ans": "A",
+      "concept": "• Cụm «Adam Smith» mang một nghĩa riêng cần đối chiếu với đề.",
+      "why": "• Lịch sử các học thuyết kinh tế (重商, cổ điển Anh, v.v.). Lịch sử học thuyết: tr",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 110,
+      "num": 110,
+      "q": "Kinh tế chính trị cổ điển Anh được hình thành và phát triển từ cuối thế ký XVIII đến nửa đ",
+      "ans": "B",
+      "concept": "• Cụm «Adam Smith» mang một nghĩa riêng cần đối chiếu với đề.",
+      "why": "• Lịch sử các học thuyết kinh tế (重商, cổ điển Anh, v.v.). Lịch sử học thuyết: tr",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 112,
+      "num": 112,
+      "q": "Thuật ngữ \"kinh tế chính trị\" được sử dụng lần đầu tiên vào năm nào?",
+      "ans": "A",
+      "concept": "• Một giá trị số cụ thể (1615) cần kiểm tra trong điều kiện/công thức đề.",
+      "why": "• Một giá trị số cụ thể (1615) cần kiểm tra trong điều kiện/công thức đề.\n• Thay",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 114,
+      "num": 114,
+      "q": "Người phát minh ra con thoi - một cải tiến của khung dệt và là một đóng góp quan trọng cho",
+      "ans": "A",
+      "concept": "• Phạm trù/khái niệm «John Kay (1704 - 1779)» trong KTCT–triết Mác–Lênin.",
+      "why": "• Phạm trù/khái niệm «John Kay (1704 - 1779)» trong KTCT–triết Mác–Lênin.\n• Đối ",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 117,
+      "num": 117,
+      "q": "Công nghiệp hoá ở Anh (cuộc cách mạng công nghiệp lần thứ nhất) bắt nguồn từ ngành nào?",
+      "ans": "A",
+      "concept": "• Công nghiệp nhẹ. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ t",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Công",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 124,
+      "num": 124,
+      "q": "(Đảng Cộng sản Việt Nam, Văn kiện Đại hội đại biểu toàn quốc lần thứ IX, NXB CTQG, H., 200",
+      "ans": "A",
+      "concept": "• Mức giá do tổ chức độc quyền chủ động áp đặt khi mua/bán nhằm thu lợi nhuận độ",
+      "why": "• Mức giá do tổ chức độc quyền chủ động áp đặt khi mua/bán nhằm thu lợi nhuận độ",
+      "wrongN": 2
+    },
+    {
+      "subj": "mln",
+      "id": 130,
+      "num": 130,
+      "q": "Đến nay thế giới trải qua bao nhiều cuộc cách mạng công nghiệp?",
+      "ans": "B",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Bốn cuộc cách mạng công nghiệp",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Bốn ",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 131,
+      "num": 131,
+      "q": "Những yếu tố cốt lõi của kỹ thuật số trong cách mạng công nghiệp lần thứ 4 là: (chọn 3 phư",
+      "ans": "BDE",
+      "concept": "• Phạm trù/khái niệm «Dữ liệu lớn (Big dữ liệu)» trong KTCT–triết Mác–Lênin.",
+      "why": "• Câu chọn nhiều đáp án: B, D, E.\n• Vạn vật kết nối (loT); E. Trí tuệ nhân tạo (",
+      "wrongN": 2
+    },
+    {
+      "subj": "mln",
+      "id": 132,
+      "num": 132,
+      "q": "Cách mạng công nghiệp lần thứ 3 còn được gọi là:",
+      "ans": "D",
+      "concept": "• Cách mạng máy tính. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (ch",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Cách",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 139,
+      "num": 139,
+      "q": "Ai là người được Mác coi là sáng lập ra kinh tế chính trị tư sản cổ điển?",
+      "ans": "D",
+      "concept": "• Phạm trù/khái niệm «William Petty» trong KTCT–triết Mác–Lênin.",
+      "why": "• Lịch sử các học thuyết kinh tế (重商, cổ điển Anh, v.v.). Lịch sử học thuyết: tr",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 145,
+      "num": 145,
+      "q": "Mỗi cuộc cách mạng công nghiệp xuất hiện đều có sự phát triển nhảy vọt về:",
+      "ans": "A",
+      "concept": "• Tư liệu lao động. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ ",
+      "why": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 153,
+      "num": 153,
+      "q": "Cách mạng công nghiệp lần thứ tư được đề cập lần đầu tiên tại ở đâu và năm nào?",
+      "ans": "A",
+      "concept": "• Tại Đức năm 2011. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ ",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Tại ",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 157,
+      "num": 157,
+      "q": "Ở Việt Nam cũng như trên thế giới sử dụng thuật ngũ \"cách mạng công nghiệp lần thứ tư\" với",
+      "ans": "B",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Sự thay đổi về chất trong lực lượng sản xuất của",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất. Mối qu",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 158,
+      "num": 158,
+      "q": "Cách mạng công nghiệp lần thứ nhất khởi phát ở quốc gia nào?",
+      "ans": "A",
+      "concept": "• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Phạm",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 159,
+      "num": 159,
+      "q": "Cách mạng công nghiệp lần thứ hai khởi phát ở quốc gia nào?",
+      "ans": "A",
+      "concept": "• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Phạm",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 186,
+      "num": 186,
+      "q": "Cách mạng công nghiệp lần thứ ba diễn ra trong giai đoạn nào?",
+      "ans": "B",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Từ đầu thập niên 60 của thế kỷ XX đến cuối thế k",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Từ đ",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 187,
+      "num": 187,
+      "q": "Cách mạng công nghiệp lần thứ ba diễn ra trong thời gian nào?",
+      "ans": "D",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Từ đầu những năm 60 của XX đến cuối thế kỷ XX",
+      "why": "• Từ đầu những năm 60 của XX đến cuối thế kỷ XX\n• Một phát biểu lý thuyết; cần đ",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 201,
+      "num": 201,
+      "q": "Nội dung cơ bản của cách mạng công nghiệp lần thứ nhất đó là",
+      "ans": "A",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Chuyển từ lao động thủ công sang lao động máy mó",
+      "why": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác",
+      "wrongN": 2
+    },
+    {
+      "subj": "mln",
+      "id": 237,
+      "num": 237,
+      "q": "Trong các nhà kinh điển của chủ nghĩa Mác - Lênin, ai là người khái quát về nguyên nhân ra",
+      "ans": "D",
+      "concept": "• V.I.Lêinin. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (chủ thể ≠ ",
+      "why": "• I.Lêinin.. Liên quan hình thức tổ chức độc quyền (Cartel → Syndicate → Trust →",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 268,
+      "num": 268,
+      "q": "Khi nghiên cứu phương thức sản xuất TBCN, C.Mác bắt đầu từ",
+      "ans": "A",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Sản xuất hàng hoá giản đơn và hàng hoá",
+      "why": "• Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính trị Mác",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 280,
+      "num": 280,
+      "q": "Thuật ngữ \"kinh tế- chính trị\" được sử dụng lần đầu tiên vào năm nào?",
+      "ans": "A",
+      "concept": "• Một giá trị số cụ thể (1615) cần kiểm tra trong điều kiện/công thức đề.",
+      "why": "• Một giá trị số cụ thể (1615) cần kiểm tra trong điều kiện/công thức đề.\n• Thay",
+      "wrongN": 2
+    },
+    {
+      "subj": "mln",
+      "id": 281,
+      "num": 281,
+      "q": "Ai là người đầu tiên đưa ra khái niệm \"kinh tế- chính trị\"?",
+      "ans": "B",
+      "concept": "• Cụm «Antoine Montchretiên» mang một nghĩa riêng cần đối chiếu với đề.",
+      "why": "• Cụm «Antoine Montchretiên» mang một nghĩa riêng cần đối chiếu với đề.\n• So bản",
+      "wrongN": 2
+    },
+    {
+      "subj": "mln",
+      "id": 324,
+      "num": 324,
+      "q": "Ai là người đầu tiên phát minh ra tính hai mặt của lao động sản xuất hàng hóa: lao động cụ",
+      "ans": "B",
+      "concept": "• Hao phí sức lao động người nói chung, tạo ra giá trị hàng hóa.",
+      "why": "• Mác. Bám lý thuyết giá trị, hàng hóa, tiền tệ và tư bản trong Kinh tế chính tr",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 395,
+      "num": 395,
+      "q": "Cuộc cách mạng công nghiệp lần thứ nhất diễn ra trên lĩnh vực nào?",
+      "ans": "A",
+      "concept": "• Năng lượng hơi nước. Đối chiếu định nghĩa/lớp hỏi; tránh nhầm khái niệm gần (c",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Năng",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 398,
+      "num": 398,
+      "q": "Cuộc cách mạng công nghiệp nào gắn liên với sự xuất hiện của trí tuệ nhân tạo, big data, 3",
+      "ans": "A",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Cuộc cách mạng công nghiệp lần thứ tư",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Cuộc",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 434,
+      "num": 434,
+      "q": "Đặc trưng cơ bản của cách mạng công nghiệp lần thứ ba là gì?",
+      "ans": "A",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Sử dụng công nghệ thông tin và máy tính",
+      "why": "• Công nghiệp hóa/hiện đại hóa và quy luật phát triển lực lượng sản xuất.\n• Sử d",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 435,
+      "num": 435,
+      "q": "Đặc trưng cơ bản của cuộc cách mạng công nghiệp lần thứ ba là gì?",
+      "ans": "C",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Sự xuất hiện của công nghệ thông tin, tự động hó",
+      "why": "• Sự xuất hiện của công nghệ thông tin, tự động hóa sản xuất\n• Một phát biểu lý ",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 512,
+      "num": 512,
+      "q": "Việt Nam tham gia sáng lập diễn đàn hợp tác Á -Âu (ASEM) năm nào?",
+      "ans": "A",
+      "concept": "• Một giá trị số cụ thể (1996) cần kiểm tra trong điều kiện/công thức đề.",
+      "why": "• Một giá trị số cụ thể (1996) cần kiểm tra trong điều kiện/công thức đề.\n• Thay",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 554,
+      "num": 530,
+      "q": "Việt Nam tham gia sáng lập diễn đàn hợp tác Á - Âu (ASEM) năm nào?",
+      "ans": "A",
+      "concept": "• Một giá trị số cụ thể (1996) cần kiểm tra trong điều kiện/công thức đề.",
+      "why": "• Một giá trị số cụ thể (1996) cần kiểm tra trong điều kiện/công thức đề.\n• Thay",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 569,
+      "num": 546,
+      "q": "Người phát minh ra con thoi - một cải tiến của khung dệt và là một đồng góp quan trọng cho",
+      "ans": "A",
+      "concept": "• Phạm trù/khái niệm «John Kay (1704-1779)» trong KTCT–triết Mác–Lênin.",
+      "why": "• Phạm trù/khái niệm «John Kay (1704-1779)» trong KTCT–triết Mác–Lênin.\n• Đối ch",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 570,
+      "num": 548,
+      "q": "Cách mạng công nghiệp lần thứ nhất khởi phát từ nước nào?",
+      "ans": "A",
+      "concept": "• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.",
+      "why": "• Phạm trù/khái niệm «Anh» trong KTCT–triết Mác–Lênin.\n• Đối chiếu định nghĩa/lớ",
+      "wrongN": 3
+    },
+    {
+      "subj": "mln",
+      "id": 592,
+      "num": 574,
+      "q": "(Chọn nhiều đáp án) Sau những năm 50 của thế kỷ XX, chủ nghĩa tư bản chuyển sang chính sác",
+      "ans": "AB",
+      "concept": "• Phạm trù/khái niệm «Viện trợ kinh tế» trong KTCT–triết Mác–Lênin.",
+      "why": "• Câu chọn nhiều đáp án: A, B.\n• Viện trợ quân sự. Vai trò nhà nước trong điều t",
+      "wrongN": 2
+    },
+    {
+      "subj": "mln",
+      "id": 613,
+      "num": 595,
+      "q": "Nội dung cơ bản của Cách mạng công nghiệp lần thứ nhất là gì?",
+      "ans": "A",
+      "concept": "• Định nghĩa/đặc trưng cần nắm: Chuyển từ lao động thủ công thành lao động sử dụ",
+      "why": "• Chuyển từ lao động thủ công thành lao động sử dụng máy móc\n• Một phát biểu lý ",
+      "wrongN": 3
+    }
+  ],
+  "r2": [
+    {
+      "subj": "mln",
+      "id": 70,
+      "num": 70,
+      "q": "Những đặc điểm kinh tế cơ bản nhất của chủ nghĩa tư bản độc quyền bao gồm:",
+      "opts": [
+        "Tập trung sản xuất cùng với các tổ chức ",
+        "Tập trung sản xuất cùng với các tổ chức ",
+        "Tập trung sản xuất cùng với các tổ chức ",
+        "Tập trung sản xuất cùng với các tổ chức "
+      ],
+      "ans": "D",
+      "sampleWw": "• Là gì? Tập trung sản xuất cùng với các tổ chức độc quyền; tư bản tài chính; xuất khẩu tư bản; sự p"
+    },
+    {
+      "subj": "mln",
+      "id": 465,
+      "num": 465,
+      "q": "Thế nào là thời gian lao động xã hội cần thiết?",
+      "opts": [
+        "Là khoảng thời gian sản xuất của tuyệt đ",
+        "Là khoảng thời gian cần thiết để sản xuấ",
+        "Là khoảng thời gian do người có trình độ",
+        "Là khoảng thời gian cần thiết để sản xuấ"
+      ],
+      "ans": "B",
+      "sampleWw": "• Là gì? Sản phẩm lao động nhằm trao đổi trên thị trường.\n• Dùng để làm gì? Mang giá trị sử dụng và "
+    },
+    {
+      "subj": "mln",
+      "id": 489,
+      "num": 489,
+      "q": "Sự phát triển của các tổ chức độc quyền trong ngân hàng đã làm thay đổi quan hệ giữa ngân ",
+      "opts": [
+        "Từ trung gian thanh toán trở thành khống",
+        "Từ trung gian thanh toán trở thành cổ đô",
+        "Từ hoạt động cho vay trở thành hoạt động",
+        "Từ hoạt động cho vay trở thành chi phối "
+      ],
+      "ans": "A",
+      "sampleWw": "• Là gì? Từ trung gian thanh toán trở thành cổ đông của các doanh nghiệp nhà nước\n• Vai trò? Gắn với"
+    },
+    {
+      "subj": "mln",
+      "id": 506,
+      "num": 506,
+      "q": "Kinh tế thị trường định hướng xã hội chủ nghĩa là mô hình kinh tế như thế nào của thời quá",
+      "opts": [
+        "Mô hình kinh tế tổng quát",
+        "Mô hình kinh tế tập trung tổng quát",
+        "Mô hình kinh tế Nhà nước",
+        "Mô hình kinh tế tập trung"
+      ],
+      "ans": "A",
+      "sampleWw": "• Là gì? Mô hình kinh tế tập trung tổng quát\n• Dùng để làm gì? Một phát biểu lý thuyết; cần đối chiế"
+    },
+    {
+      "subj": "prm",
+      "id": 40,
+      "num": 40,
+      "q": "Which widget reacts to async data from local storage?",
+      "opts": [
+        "FutureBuilder",
+        "StreamBuilder",
+        "ListView",
+        "Provider"
+      ],
+      "ans": "A",
+      "sampleWw": "• Là gì? Cơ chế Flutter/Dart liên quan «StreamBuilder».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm"
+    },
+    {
+      "subj": "prm",
+      "id": 53,
+      "num": 5,
+      "q": "What happens if a non-nullable variable is not initialized in Dart?",
+      "opts": [
+        "The app runs normally",
+        "A runtime exception occurs",
+        "A compile-time error occurs",
+        "The value becomes null automatically"
+      ],
+      "ans": "C",
+      "sampleWw": "• Là gì? Cơ chế Flutter/Dart liên quan «The app runs normally».\n• Dùng để làm gì? Đối chiếu đúng cơ "
+    },
+    {
+      "subj": "prm",
+      "id": 54,
+      "num": 6,
+      "q": "Which command builds a release APK?",
+      "opts": [
+        "flutter run",
+        "flutter build apk",
+        "flutter doctor",
+        "flutter clean"
+      ],
+      "ans": "B",
+      "sampleWw": "• Là gì? Cơ chế Flutter/Dart liên quan «flutter run».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm t"
+    },
+    {
+      "subj": "prm",
+      "id": 75,
+      "num": 27,
+      "q": "Which Flutter widget reacts to authentication state changes?",
+      "opts": [
+        "FutureBuilder",
+        "StreamBuilder",
+        "ListView",
+        "Form"
+      ],
+      "ans": "B",
+      "sampleWw": "• Là gì? Cơ chế Flutter/Dart liên quan «FutureBuilder».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm"
+    },
+    {
+      "subj": "prm",
+      "id": 94,
+      "num": 46,
+      "q": "Which widget reacts to async data from local storage?",
+      "opts": [
+        "FutureBuilder",
+        "StreamBuilder",
+        "ListView",
+        "Provider"
+      ],
+      "ans": "A",
+      "sampleWw": "• Là gì? Cơ chế Flutter/Dart liên quan «StreamBuilder».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm"
+    },
+    {
+      "subj": "prm",
+      "id": 106,
+      "num": 105,
+      "q": "Which command verifies Flutter SDK installation after adding PATH?",
+      "opts": [
+        "npm doctor",
+        "pip check",
+        "flutter doctor",
+        "adb uninstall"
+      ],
+      "ans": "C",
+      "sampleWw": "• Là gì? Cơ chế Flutter/Dart liên quan «npm doctor».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm tr"
+    },
+    {
+      "subj": "prm",
+      "id": 116,
+      "num": 115,
+      "q": "Which statement about Dart classes is correct?",
+      "opts": [
+        "Dart is not object-oriented",
+        "Dart is object-oriented; classes are blu",
+        "Classes cannot have methods",
+        "Objects cannot be created from classes"
+      ],
+      "ans": "B",
+      "sampleWw": "• Là gì? Ngôn ngữ lập trình chính của Flutter.\n• Dùng để làm gì? Viết UI và logic app Flutter.\n• Vì "
+    },
+    {
+      "subj": "prm",
+      "id": 215,
+      "num": 214,
+      "q": "Why extract list item widgets (e.g. TaskTile) and use Selector?",
+      "opts": [
+        "To rebuild the entire screen on every ti",
+        "To reduce unnecessary rebuilds / narrow ",
+        "To disable DevTools",
+        "To remove keys"
+      ],
+      "ans": "B",
+      "sampleWw": "• Là gì? để rebuild entire màn hình trên mọi tiny thay đổi Luôn\n• Dùng để làm gì? Bản dịch/diễn đạt "
+    },
+    {
+      "subj": "prm",
+      "id": 217,
+      "num": 216,
+      "q": "Which command builds a release APK?",
+      "opts": [
+        "flutter run",
+        "flutter build apk",
+        "flutter doctor --uninstall",
+        "dart fix --dry-run only"
+      ],
+      "ans": "B",
+      "sampleWw": "• Là gì? Cơ chế Flutter/Dart liên quan «flutter run».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm t"
+    },
+    {
+      "subj": "fe",
+      "id": 76,
+      "num": 9,
+      "q": "Hexadecimal digit A in decimal?",
+      "opts": [
+        "11",
+        "20",
+        "10",
+        "9"
+      ],
+      "ans": "C",
+      "sampleWw": "• Là gì? 11\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì sao sai? Không khớp đáp án"
+    },
+    {
+      "subj": "fe",
+      "id": 394,
+      "num": 27,
+      "q": "A process represents the state transition among three states: a ready state, a running sta",
+      "opts": [
+        "In a multiprogramming system, even with ",
+        "Ready state refers to a state in which a",
+        "In systems that perform time-sharing pro",
+        "If multiple processes are executed simul"
+      ],
+      "ans": "B",
+      "sampleWw": "• Là gì? Multiprogramming một CPU vẫn có nhiều tiến trình ở running cùng lúc (sai — thường một runni"
+    },
+    {
+      "subj": "fe",
+      "id": 408,
+      "num": 41,
+      "q": "A process is executed through a state transition among three states: a ready state, a runn",
+      "opts": [
+        "In a multiprogramming system, even with ",
+        "Ready state refers to a state in which a",
+        "In systems that perform time-sharing pro",
+        "If multiple processes are executed simul"
+      ],
+      "ans": "B",
+      "sampleWw": "• Là gì? Multiprogramming một CPU vẫn có nhiều tiến trình ở running cùng lúc (sai — thường một runni"
+    },
+    {
+      "subj": "fe",
+      "id": 409,
+      "num": 1,
+      "q": "A check digit for a 4-digit number abcd can be calculated as follows: mod((a*4+b*3+c*2+d*1",
+      "opts": [
+        "7",
+        "6",
+        "5",
+        "8"
+      ],
+      "ans": "B",
+      "sampleWw": "• Là gì? 7\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì sao sai? Không khớp đáp án "
+    },
+    {
+      "subj": "fe",
+      "id": 545,
+      "num": 141,
+      "q": "A check digit for abcd is mod((a*4+b*3+c*2+d*1),10)=6 for 7b42. What is b?",
+      "opts": [
+        "7",
+        "6",
+        "5",
+        "8"
+      ],
+      "ans": "B",
+      "sampleWw": "• Là gì? 7\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì sao sai? Không khớp đáp án "
+    },
+    {
+      "subj": "fe",
+      "id": 662,
+      "num": 267,
+      "q": "CI (Continuous Integration) practices typically:",
+      "opts": [
+        "Integrate only once per decade",
+        "Ban automated builds",
+        "Frequently merge and automatically build",
+        "Ignore failing tests always"
+      ],
+      "ans": "C",
+      "sampleWw": "• Là gì? Integrate chỉ once per decade\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì"
+    }
+  ],
+  "r3": [
+    {
+      "subj": "prm",
+      "id": 109,
+      "q": "Dart in Flutter is described as supporting which compilation modes?",
+      "ans": "AOT and JIT compilation",
+      "why": "• Hai chế độ biên dịch Dart: JIT (dev) và AOT (release).\n• JIT hỗ trợ hot reload; AOT tối ưu bản shi",
+      "sampleWw": "• Là gì? Cơ chế Flutter/Dart liên quan «Chỉ BASIC thông dịch».\n• Dùng để làm gì? Đối chiếu"
+    },
+    {
+      "subj": "fe",
+      "id": 23,
+      "q": "Which of the following is performed in the Plan phase of a PDCA model that is applied to a",
+      "ans": "Risk assessment of information assets",
+      "why": "• Risk assessment củ information asset",
+      "sampleWw": "• Là gì? Repeater (bộ lặp tầng 1)\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi."
+    },
+    {
+      "subj": "fe",
+      "id": 234,
+      "q": "PDCA letters?",
+      "ans": "Plan Do Check Act",
+      "why": "• Plan Do Check Act",
+      "sampleWw": "• Là gì? Gateway\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì sao sai? Kh"
+    },
+    {
+      "subj": "fe",
+      "id": 644,
+      "q": "PDCA cycle stands for:",
+      "ans": "Plan, Do, Check, Act",
+      "why": "• Plan, Do, Check, Act",
+      "sampleWw": "• Là gì? Push, Drop, Commit, Abort\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi"
+    }
+  ],
+  "at": "2026-07-23T13:10:06.443Z"
+}

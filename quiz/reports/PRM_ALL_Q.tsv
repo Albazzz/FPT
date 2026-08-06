@@ -1,0 +1,225 @@
+1	B	Which widget pattern protects authenticated routes?	Navigator	Guard	Route protection	Middleware
+2	B	Why are tests important for refactoring?	Reduce UI work	Ensure changes don't break functionality	Improve animations	Change layout
+3	B	What is the role of BuildContext in Flutter?	Store application data	Locate widgets in the widget tree	Manage navigation history	Render UI pixels
+4	B	What role does the Flutter framework play in application development?	It manages database servers	It provides UI components and rendering logic	It replaces the operating system	It runs backend business logic
+5	C	How is the Flutter UI constructed internally?	Using XML layout files	Using HTML and CSS	Using a hierarchical widget tree	Using native UI components only
+6	C	Which widget enables custom scroll effects in Flutter?	ListView	SingleChildScrollView	CustomScrollView	Column
+7	B	Which practice improves rendering performance?	Large widget trees	Splitting widgets	Global state	Frequent rebuilds
+8	C	What does an integration test verify?	Single function	Widget rendering	End-to-end app behavior	Theme consistency
+9	B	Why is separating UI and state logic recommended?	Reduce code size	Improve maintainability	Faster execution	Better animations
+10	B	When does Flutter rebuild the widget tree?	On every frame	When state changes	Only when app restarts	Only during hot restart
+11	B	Which concept does BLoC heavily rely on?	Future	Stream	Animation	Theme
+12	B	Why is version control critical?	UI changes	Track and manage code changes	Improve animations	Store data
+13	B	Why is immutability important in BLoC states?	UI speed	Predictable state changes	Memory usage	Theme control
+14	C	Which Flutter plugin provides SQLite support?	hive	moor	sqflite	shared_preferences
+15	B	What is the main benefit of using Maps in Dart?	Storing values without keys	Storing key-value pairs	Rendering UI components	Managing asynchronous tasks
+16	B	Which tool helps analyze UI performance in Flutter?	Inspector	DevTools	Emulator	Hot reload
+17	B	What does a Dart class primarily represent?	A UI widget only	A blueprint for creating objects	A database table	A network request
+18	B	What is the purpose of SliverAppBar?	Static app bar	Scrollable flexible app bar	Bottom navigation	Drawer control
+19	B	What is Hive mainly used for?	Remote database	Lightweight local NoSQL storage	State management	Routing
+20	C	Which HTTP header is commonly used for authorization?	Content-Type	Accept	Authorization	Cache-Control
+21	B	What does TextEditingController manage?	Theme	Text input value	Validation rules	Layout constraints
+22	B	Why is Dart considered suitable for Flutter development?	It is only used for backend systems	It supports both UI and application logic efficiently	It replaces native languages	It does not support asynchronous programming
+23	B	What does the build() method return in a widget?	A screen	A widget tree describing the UI	Application state	Rendered pixels
+24	C	What represents the output of a BLoC?	Events	Widgets	States	Controllers
+25	B	What is Cubit in BLoC?	UI widget	Simplified BLoC without events	Database layer	Animation helper
+26	B	Which activity is typically performed after creating a new Flutter project?	Deploying to app stores	Running the default app on a device	Configuring authentication	Optimizing database queries
+27	B	Which practice improves deployment security?	Debug builds	Secure signing keys	Hardcoding secrets	Skipping validation
+28	B	Why is Chapter 14 considered optional (Plus)?	Deployment is UI logic	Apps can be tested without publishing	It replaces authentication	It handles APIs
+29	B	What is the primary purpose of ThemeData in Flutter?	Manage navigation	Define application-wide visual styles	Handle state changes	Control animations
+30	B	Which method is used to update the UI when state changes?	build()	setState()	initState()	dispose()
+31	B	Which Flutter package is commonly used for simple key-value storage?	sqflite	shared_preferences	provider	http
+32	B	Why should architecture be decided early?	Avoid UI work	Reduce refactoring cost	Improve animations	Change theme
+33	B	What is pagination used for?	UI animation	Handling large datasets efficiently	Theme management	Authentication
+34	B	Which widget helps avoid rebuilding unchanged UI parts?	Container	RepaintBoundary	Column	FutureBuilder
+35	A	Which widget is used to handle asynchronous API responses in UI?	FutureBuilder	ListView	Provider	Form
+36	B	Which Dart feature helps organize code into reusable libraries?	Widgets	Packages and imports	Hot reload	Layout constraints
+37	B	What is refresh token used for?	UI refresh	Extend session without re-login	Theme update	Navigation reset
+38	B	What is rebuild scope optimization in Flutter?	Reducing widget tree depth	Limiting rebuild to affected widgets	Caching API responses	Using global state
+39	B	Why is BLoC suitable for large teams?	Less code	Standardized architecture	Faster builds	UI reuse
+40	A	Which widget reacts to async data from local storage?	FutureBuilder	StreamBuilder	ListView	Provider
+41	B	What is a token in authentication systems?	UI key	Temporary access credential	Database ID	Theme value
+42	B	What does a Tween define?	Animation speed	Value range for animation	UI layout	State logic
+43	B	Which Dart feature allows defining reusable, type-safe components?	Mixins	Generics	Futures	Streams
+44	A	Which widget animates between two widgets?	AnimatedSwitcher	AnimatedOpacity	AnimatedAlign	AnimatedSize
+45	B	Why should setState() be called sparingly?	It increases app size	It may trigger unnecessary rebuilds	It blocks UI thread	It causes memory leaks
+46	B	What is test isolation?	Running all tests together	Independence of test cases	UI separation	Mocking only
+47	B	What does crossAxisAlignment control?	Vertical alignment in Column	Horizontal alignment in Column	Child order	Widget size
+48	B	Which tool is commonly used for version control?	SVN	Git	FTP	ZIP
+49	B	Why is clean architecture beneficial?	Fewer files	Easier maintenance and testing	Better UI	Faster builds
+50	C	What is Dart primarily designed for in the Flutter ecosystem?	Database management	User interface development	General-purpose programming with UI focus	Network security
+51	B	Why is secure authentication critical in mobile apps?	UI quality	Protect user data	Reduce code	Improve speed
+52	C	Which HTTP method is typically used to retrieve data?	POST	PUT	GET	DELETE
+53	C	What happens if a non-nullable variable is not initialized in Dart?	The app runs normally	A runtime exception occurs	A compile-time error occurs	The value becomes null automatically
+54	B	Which command builds a release APK?	flutter run	flutter build apk	flutter doctor	flutter clean
+55	C	Which widget allows overlapping of its child widgets?	Column	Row	Stack	Expanded
+56	C	Which platforms can Flutter applications target using a single codebase?	Android only	iOS only	Android, iOS, web, and desktop	Web servers only
+57	A	What is the main risk of improper state management?	UI inconsistency	Longer compile time	Package conflicts	Build errors
+58	B	What does CurvedAnimation provide?	Layout control	Animation curve behavior	State updates	Navigation
+59	B	How can data be passed to a new screen?	Using global variables	Via constructor arguments	Using ThemeData	Using Scaffold
+60	B	What is the purpose of parsing JSON?	Encrypt data	Convert JSON into Dart objects	Send requests	Cache responses
+61	C	Which phase involves gathering requirements?	Implementation	Design	Analysis	Testing
+62	A	Which Flutter tool helps debug network requests?	DevTools	Inspector	Emulator	Hot reload
+63	B	Which Dart feature supports object-oriented programming?	Widgets	Classes and objects	Hot reload	Layout builders
+64	B	Which approach helps reduce unnecessary widget rebuilds?	Using global variables	Fine-grained state updates	Hot restart	Large widgets
+65	B	Which action best demonstrates Flutter's reactive UI model?	Manually updating UI elements	Rebuilding UI in response to state changes	Editing layout XML	Calling native APIs
+66	B	Why are const widgets recommended?	They improve readability	They reduce rebuild cost	They add state	They handle navigation
+67	B	Why should animations be disposed properly?	Improve UI	Prevent memory leaks	Speed up builds	Fix layout
+68	B	Which Flutter test focuses on UI components?	Unit test	Widget test	Integration test	Load test
+69	B	Why should database operations be asynchronous?	Simplify syntax	Avoid blocking UI thread	Reduce code	Improve theme
+70	B	Why is Chapter 13 considered optional (Plus)?	It replaces core concepts	Apps can work without deep optimization	It manages navigation	It handles authentication
+71	C	Which widget applies a theme to an entire Flutter application?	Scaffold	Theme	MaterialApp	Container
+72	B	What is the purpose of SliverAppBar?	Static app bar	Scrollable flexible app bar	Bottom navigation	Drawer control
+73	C	Which widget is best used to add fixed empty space?	Padding	Expanded	SizedBox	Container
+74	B	Which package supports BLoC architecture?	provider	flutter_bloc	sqflite	http
+75	B	Which Flutter widget reacts to authentication state changes?	FutureBuilder	StreamBuilder	ListView	Form
+76	B	What is technical debt?	UI lag	Future cost of poor design decisions	Memory usage	API limit
+77	B	What is implicit animation?	Manual animation control	Animation without controller	API animation	Navigation animation
+78	C	Which Dart data structure is best suited for storing an ordered collection of items?	Set	Map	List	Queue
+79	B	Which Flutter concept supports reactive UI updates?	Manual refresh	Widget rebuilding	Hot restart	Native callbacks
+80	C	Which type of test checks individual functions or classes?	Widget test	Integration test	Unit test	System test
+81	B	What is the role of events in BLoC?	Store UI	Trigger state changes	Render widgets	Handle layout
+82	B	What is the main purpose of hot reload in Flutter?	Improve runtime performance	Instantly reflect code changes in UI	Publish apps faster	Reduce memory usage
+83	B	Why are forms important in mobile applications?	UI decoration	User data collection	State management	Navigation
+84	A	Which method retrieves data from SharedPreferences?	get()	read()	fetch()	load()
+85	B	What is the main benefit of Flutter's widget-based architecture?	Widgets are only used for layout design	Widgets allow code reuse across platforms	Widgets automatically manage databases	Widgets replace backend services
+86	B	Why are widgets lightweight in Flutter?	They manage system resources	They are immutable descriptions	They store UI state	They handle rendering directly
+87	B	Why should authentication state be centralized?	Reduce UI code	Ensure consistent access control	Improve animations	Simplify layout
+88	A	Which widget can hide user input text when configured for password entry?	TextField	ObscureText	SecureInput	PasswordField
+89	B	What is Flutter primarily used for?	Designing databases for mobile apps	Creating native applications from a single codebase	Developing server-side applications only	Building operating systems for mobile devices
+90	B	Which method resets all form fields?	clear()	reset()	dispose()	remove()
+91	C	Which Dart keyword is used to define a constant value at compile time?	final	static	const	var
+92	B	What happens after successful login?	App closes	User session starts	Theme changes	Navigation resets
+93	B	Which step is required before running a Flutter app for the first time?	Publishing the app	Setting up the Flutter SDK	Configuring a database	Writing backend APIs
+94	A	Which widget reacts to async data from local storage?	FutureBuilder	StreamBuilder	ListView	Provider
+95	B	What does golden testing verify?	API responses	UI appearance consistency	Database state	Authentication
+96	B	Why should state be kept as local as possible?	Better animations	Reduce unnecessary rebuilds	Simplify UI	Improve navigation
+97	B	What is the benefit of composing widgets in Flutter?	Faster compilation	Better code reuse and UI consistency	Reduced memory usage	Automatic navigation
+98	D	Which status code indicates server error?	200	301	404	500
+99	B	What does Curves/Animation provide?	Layout control	Animation curve behavior	State updates	Navigation
+100	A	According to Flutter architecture overview, which three layers are described?	Framework (Dart), Engine (C++), Embedder	HTML, CSS, JavaScript only	JVM, ART, Dalvik only	Kernel, Shell, Desktop only
+101	B	What is the correct high-level rendering workflow in Flutter?	GPU → Widget Tree → SQL → Disk	Widget Tree → Render Tree → Composited Scene → GPU Rendering	XML Layout → Bridge → Native View only	CSS DOM → Browser → Print only
+102	C	Which statement matches a key concept of Flutter UI?	Everything must be written in Kotlin	UI is defined only with HTML files	Everything in Flutter is a Widget	Flutter cannot draw custom UI
+103	B	Which engine technology does Flutter use for rendering (as mentioned in slides)?	WebKit only	Skia (C++ engine, GPU acceleration)	OpenGL ES exclusive without Skia	Swing toolkit
+104	A	Compared with React Native in the comparison table, Flutter uses which language?	Dart	JavaScript only	Ruby	PHP
+105	B	What is a main benefit of Flutter listed in the introduction slides?	Must rewrite UI for every OS with different languages only	Consistency: same UI across devices (plus performance/flexibility)	Cannot compile to ARM	No widget set available
+106	C	Which command verifies Flutter SDK installation after adding PATH?	npm doctor	pip check	flutter doctor	adb uninstall
+107	A	What is DartPad mainly useful for according to the slides?	Run Flutter/Dart code in browser without local install	Deploy apps to App Store automatically	Compile C++ engine source	Manage Android signing keys only
+108	B	When installing Android Studio for Flutter, which plugin is required?	Only Python plugin	Flutter plugin (Dart plugin installs with it)	Only COBOL plugin	Only Photoshop plugin
+109	C	Dart in Flutter is described as supporting which compilation modes?	Only interpreted BASIC	Only COBOL batch	AOT and JIT compilation	Only assembly hand-writing
+110	B	Which collection type stores ordered elements that may contain duplicates?	Set	List	Map only without order	Hash without values
+111	A	Which collection stores unique values only?	Set	List always allowing duplicates only	String buffer only	StreamController only
+112	C	What does a Map primarily store in Dart?	Only one integer	Only UI widgets	Key–value pairs	Only file handles
+113	B	Which keyword creates a compile-time constant in Dart?	var	const	dynamic always	late without value forever
+114	A	What is null safety designed to help with?	Prevent unexpected null errors by making types non-nullable by default	Force every variable to be null always	Disable type checking completely	Replace HTTP with FTP
+115	C	If a non-nullable variable is not initialized before use, what typically happens?	It silently becomes null	The OS reboots	A compile-time error occurs	Git commits fail
+116	B	Which statement about Dart classes is correct?	Dart is not object-oriented	Dart is object-oriented; classes are blueprints for objects	Classes cannot have methods	Objects cannot be created from classes
+117	A	What does string interpolation like "$name" do?	Embeds expression/variable values into a string	Encrypts the string with AES	Deletes the variable	Starts a new isolate always
+118	B	Which type annotation is appropriate for a list of integers?	List<String> only for ints	List<int>	Map<int> without value type	Set<void>
+119	C	Functions in Dart are described as:	Never first-class	Only allowed inside C++	First-class objects (can be assigned/passed)	Forbidden in Flutter
+120	B	What is a common use of a factory constructor mentioned in slides?	Only painting pixels	Return existing instance / singleton / .fromJson conversion	Delete the class permanently	Disable null safety
+121	A	Why is async/await important in Flutter apps?	Handle asynchronous work without blocking the UI thread	Force UI to freeze during network calls	Replace all widgets with XML	Compile Dart to COBOL
+122	C	What does a Future represent?	A completed widget tree only	A synchronous int always	A value or error that will be available later	A GPU shader
+123	B	What does a Stream provide compared to a single Future?	Exactly one value then ends always only	A sequence of asynchronous events/values over time	Only file system permissions	Only compile-time constants
+124	A	How do packages and imports help structure Dart code?	Organize reusable libraries and dependencies	Increase APK size without any reuse	Remove null safety	Replace the Flutter engine
+125	B	What is .fromJson() typically used for?	Drawing custom paint	Converting JSON map data into a Dart model object	Starting the emulator	Signing release APKs
+126	C	Which practice is recommended for long-running CPU work?	Run heavy loops directly in every build()	Block the main isolate forever	Use async patterns / avoid blocking UI (and isolates when needed)	Disable the UI thread intentionally
+127	A	What does await do when used with a Future?	Suspends the async function until the Future completes	Cancels null safety	Converts widgets to HTML	Forces a hot restart
+128	B	Which is a valid reason to use a singleton via factory?	To create millions of identical DB connections every frame	To reuse one shared service instance	To avoid all state management	To replace Navigator
+129	C	Generics in Dart mainly help you:	Remove type safety	Only style colors	Write reusable type-safe APIs (e.g., List<T>)	Compile CSS
+130	B	What is the role of BuildContext?	Store only binary APK data	Locate a widget in the widget tree / access inherited widgets	Replace the Dart VM	Manage only SQL transactions
+131	A	What does setState() do in a StatefulWidget?	Marks state changed so Flutter rebuilds the widget	Deletes the widget forever	Only changes AndroidManifest	Uploads the app to stores
+132	C	Which widget arranges children vertically?	Row	Stack only always	Column	GridView only
+133	B	Which widget allows children to overlap?	Column	Stack	ListView.builder only	LinearProgressIndicator
+134	A	What is Scaffold typically used for?	Basic page structure (AppBar, body, etc.)	HTTP client only	Database migration only	Code generation of isolates
+135	B	What does a Switch widget primarily toggle?	Git branches	A boolean ON/OFF value	CPU frequency	Null safety mode
+136	C	Why use const widgets when possible?	They force full tree rebuild every frame	They disable hot reload	They reduce rebuild cost for stable UI	They remove type safety
+137	A	What does ThemeData primarily define?	Application-wide visual styles	Only SQLite schema	Only deep link schemes	Only test coverage reports
+138	B	What does the build() method return?	Raw GPU pixels only	A widget tree describing the UI	A signed APK	A database connection pool
+139	C	StatelessWidget is best when:	UI must hold mutable local state with setState	You need AnimationController disposal always	UI depends only on constructor inputs / configuration	You must ignore BuildContext
+140	A	crossAxisAlignment in a Column controls alignment along which axis?	Horizontal (cross axis) for a vertical Column	Only Z-depth	Only time axis	Network latency
+141	B	Which widget is best for fixed empty space of a given size?	Expanded always filling remaining space	SizedBox	Navigator	HttpClient
+142	B	What is a key idea of Navigator 2.0 in the slides?	Only imperative push/pop forever with no description of stack	Declarative model: describe the desired navigation stack	Remove all routes from Flutter	Use only Android Activities XML
+143	A	What is deep linking used for?	Open a specific screen via URL/external source	Compress images only	Generate unit tests only	Increase battery temperature
+144	C	Where do you typically configure Android deep link intent filters?	pubspec.yaml only	iOS Info.plist only	AndroidManifest.xml	README.md
+145	B	BLoC architecture primarily separates:	HTML and CSS	UI from business logic via events and states (often Streams)	CPU and GPU permanently	Git and SVN
+146	A	What is the output of a BLoC typically?	States	Only raw SQL dumps	APK files	Certificate pins only
+147	B	What do events do in BLoC?	Render pixels directly	Trigger state changes / business handling	Sign the APK	Replace Material icons
+148	C	Why is immutability important for BLoC states?	To make states random	To prevent any UI update	Predictable state changes / easier comparison	To disable Streams
+149	A	How can data be passed to a new screen in common Flutter practice?	Via constructor arguments / route arguments	Only by rebooting the phone	Only by editing the Flutter engine	Only through SMS
+150	B	Which widget rebuilds when a Stream emits new data?	SizedBox only	StreamBuilder	Icon only	Divider only
+151	A	Why separate UI and state logic?	Improve maintainability and testability	Make animations slower only	Force more global mutable state	Avoid widgets entirely
+152	C	What does a route guard pattern aim to protect?	GPU shaders	Only font files	Authenticated routes / unauthorized access	Hot reload itself
+153	B	Provider is commonly used for:	Image compression only	Dependency injection / state exposure to the widget tree	Replacing Dart with Java	Building Windows kernels
+154	B	What is the main goal of responsive UI?	UI only works on one fixed phone model	Layouts adapt to different screen sizes	Disable orientation changes forever	Remove MediaQuery
+155	A	What does GridView help build according to the slides?	Scrollable grids that adapt columns to width	Only 3D games engines	SQL indexes	Certificate authorities
+156	C	Which API is commonly used to read screen size/orientation?	SharedPreferences only	HttpClient only	MediaQuery	FlutterDriver only
+157	B	Adaptive layout typically means:	Same exact pixels on all devices always	UI chooses suitable layout patterns for platform/screen class	No widgets allowed	Only landscape tablets forever
+158	A	Expanded inside a Flex (Row/Column) is used to:	Take remaining free space along the main axis	Hide the keyboard only	Start deep links	Compile AOT
+159	B	Why avoid hard-coded sizes for all devices?	Hard-coded sizes always look perfect everywhere	Screens differ; rigid sizes break layouts on small/large devices	Flutter forbids numbers	MediaQuery is illegal
+160	C	LayoutBuilder is useful because it:	Only builds APKs	Only manages auth tokens	Provides parent constraints to choose layout	Replaces Navigator permanently
+161	A	Which widget is commonly used for scrollable single-child content?	SingleChildScrollView	AppBar only	SnackBar only	Tooltip only
+162	B	What is the primary purpose of forms in mobile apps?	GPU profiling only	User data collection with validation	Deep link DNS setup only	Engine compilation
+163	A	TextEditingController is used to:	Read/control text field values	Sign APKs	Manage isolates only	Configure AndroidManifest deep links
+164	C	How do you typically hide password characters in a TextField?	Set keyboardType to email only	Use ListView	obscureText: true	Use GridView.count
+165	B	What does FormState.reset() do?	Uninstall the app	Reset form fields to initial values	Clear device storage entirely	Invalidate SSL certificates
+166	A	A strong password validation demo in slides requires at least:	Length rules (e.g. ≥ 8) and matching confirm password	Only one character always	No validation ever	Password stored in plain Text widget title only
+167	C	GlobalKey<FormState> is commonly used to:	Paint custom shaders	Replace MaterialApp	Validate the form from outside (currentState.validate())	Start the emulator
+168	B	Why validate user input before submit?	To slow the UI intentionally	To ensure correct data and better UX / fewer server errors	To disable null safety	To remove FocusNode
+169	A	Async validation checks are useful when:	You must verify uniqueness against a server (e.g. username taken)	You never use network	You only draw icons	You compile the engine
+170	C	Which widget groups multiple fields for joint validation?	Spacer	Divider	Form	Placeholder
+171	B	AutovalidateMode.onUserInteraction typically means:	Never validate	Validate as the user interacts with fields	Validate only after APK install	Validate only on desktop
+172	C	Which HTTP method is typically used to retrieve data?	DELETE only	PUT only	GET	PATCH only always
+173	B	What is the purpose of parsing JSON?	Encrypt the APK	Convert JSON into Dart objects/maps	Start Android Studio	Create deep links
+174	A	Why is FutureBuilder useful for API data?	Binds async Future to UI (loading/success/error)	Replaces HTTP with Bluetooth only	Compiles C++ Skia	Manages only FormState
+175	B	Which HTTP header commonly carries access credentials?	Content-Language only	Authorization	Accept-Charset only	Warning only
+176	D	Which status code indicates a server error?	200	301	404	500
+177	A	What does status code 404 typically mean?	Resource not found	OK success	Server internal error	Redirect permanent only
+178	B	What is pagination used for?	Only styling buttons	Loading large datasets in pages efficiently	Signing APKs	Disabling JSON
+179	C	What is a refresh token used for?	UI theme switching	Image caching only	Obtain new access tokens without re-login	Hot reload
+180	A	When calling APIs, why handle loading and error states in UI?	Network is async; users need feedback and recovery paths	HTTP is always instant and never fails	Flutter forbids try/catch	JSON cannot fail
+181	B	POST is most appropriate when:	Idempotent pure retrieval of a static file only	Creating/submitting data to the server	Only deleting DNS records	Only reading SharedPreferences
+182	C	What does Content-Type: application/json indicate?	Body is an image PNG	Body is multipart file only	Request/response body is JSON	Request is a WebSocket upgrade only
+183	A	Why map JSON fields into model classes?	Type safety, readability, and easier UI binding	To avoid using Dart	To disable null safety	To force stringly-typed maps forever without structure
+184	B	When are local files preferred over simple key–value storage?	Only for one boolean flag	When data is bigger/structured but may not need full SQL	When you never need persistence	When only cloud is allowed
+185	A	Which package is commonly used for simple key-value storage?	shared_preferences	flutter_bloc only	flutter_test only	path_provider only always as KV store
+186	B	What is Hive mainly used for?	Remote PostgreSQL hosting	Lightweight local NoSQL storage	Only SSL pinning	Only deep links
+187	C	Which plugin provides SQLite support in Flutter?	provider	http	sqflite	flutter_local_notifications only
+188	A	Which widget is often used to show async local storage reads?	FutureBuilder	IconButton only	AppBar only	SnackBar only
+189	B	Why should database operations be asynchronous?	To freeze the UI on purpose	To avoid blocking the UI thread	Because SQL cannot run async ever	To disable persistence
+190	C	path_provider is typically used to:	Call REST APIs	Manage BLoC events	Locate app directories for file storage	Theme the MaterialApp
+191	A	Which storage suits a small flag like 'onboardingCompleted'?	shared_preferences	Full remote warehouse DB only	Video codec storage	Git LFS only
+192	B	What is persistence in mobile apps?	Keeping data only in RAM until process death always	Saving data so it survives app restarts	Only drawing frames	Only hot reload state
+193	C	Choosing SQLite is more appropriate when:	You store one boolean	You need only ephemeral memory	You need relational queries on structured local data	You never read data back
+194	B	Why is secure authentication critical in mobile apps?	Only to change icon colors	To protect user data and control access	To improve GPU fill rate	To compile Dart faster
+195	A	After successful login with a mock token flow, what should you typically do?	Save token (e.g. in AuthService) and prepare next navigation	Delete the Flutter SDK	Disable all network	Force a compile error
+196	C	What is a token in authentication systems?	A UI color	A layout constraint	A temporary access credential	A Git commit hash only
+197	B	Why centralize authentication state?	To scatter tokens in random widgets	Ensure consistent access control across screens	To avoid secure storage forever	To remove logout
+198	A	Which widget can react to auth state exposed as a Stream?	StreamBuilder	SizedBox only	Divider only	Placeholder only
+199	B	What happens after successful login from a session perspective?	App always crashes	User session starts (authenticated context)	Device factory resets	All tokens are printed to UI permanently
+200	C	Storing tokens insecurely (plain SharedPreferences without care) risks:	Faster animations	Better SEO	Token theft / account compromise	Better null safety
+201	A	Logout should typically:	Clear session/token and return to unauthenticated UI	Keep tokens forever without clearing	Uninstall Flutter	Disable hot reload
+202	B	Push notifications in this module are related to:	Only offline SQLite vacuum	Alerting users (often after auth/session context exists)	Replacing REST entirely	Compiling Skia
+203	C	Protected routes should:	Always be public without checks	Ignore tokens	Allow access only when authenticated	Bypass SSL always
+204	C	Which test type checks individual functions or classes?	Widget test	Integration test	Unit test	Manual only screenshot without code
+205	B	Which Flutter test focuses on UI components/widgets?	Unit test only of pure Dart math	Widget test	Load test of servers only	DNS test only
+206	A	What does an integration test verify?	End-to-end app behavior across parts	Only one private method always	Only font file integrity	Only Gradle version
+207	B	Why are tests important for refactoring?	They slow CI only with no benefit	Ensure changes don't break functionality	They replace product requirements	They remove the need for UI
+208	A	What is test isolation?	Independence of test cases	Running all tests in one shared mutable global only	Disabling assertions	Skipping failures
+209	C	Which tool helps debug Flutter apps (network, performance, etc.)?	Notepad only	Paint.exe	DevTools	Calculator only
+210	B	The Taskly demo app in slides is used to:	Replace the Flutter engine	Demonstrate each test type on a simple Todo app	Host production payments only	Compile C++ only
+211	A	find.byType / find.text in widget tests are used to:	Locate widgets in the test environment	Deploy to Play Store	Generate icons	Create keystores
+212	C	Mocking dependencies in unit tests helps:	Increase flakiness only	Force real network always	Test logic in isolation without external systems	Disable CI
+213	B	Golden tests primarily verify:	API JSON schema only	UI appearance consistency (screenshots/baselines)	Battery temperature	DNS TTL
+214	A	What should you avoid doing inside build()?	Heavy work: sorting, JSON parse, complex calc, DB/API calls	Returning a simple widget tree	Using const widgets	Reading Theme.of(context) lightly
+215	B	Why extract list item widgets (e.g. TaskTile) and use Selector?	To rebuild the entire screen on every tiny change always	To reduce unnecessary rebuilds / narrow rebuild scope	To disable DevTools	To remove keys
+216	C	What is the main purpose of hot reload?	Publish to stores	Increase APK size	Instantly reflect code changes in UI while developing	Replace unit tests
+217	B	Which command builds a release APK?	flutter run	flutter build apk	flutter doctor --uninstall	dart fix --dry-run only
+218	A	Why use ValueKey(task.id) instead of UniqueKey() for list items?	Preserve identity/state; UniqueKey forces excess rebuilds	UniqueKey is always faster	Keys are forbidden in lists	ValueKey disables scrolling
+219	B	GlobalKey warning in slides: GlobalKey is:	Always free and should be used everywhere	Powerful but expensive; avoid unless necessary	Required for every Text widget	Only used in unit tests
+220	C	Which practice improves deployment security?	Hardcoding secrets in source	Committing keystores to public repos	Protecting signing keys / secure release process	Using only debug builds in production
+221	A	const widgets help performance because they:	Can be reused and reduce rebuild work	Force full screen invalidation always	Disable tree shaking	Remove AOT
+222	B	What is technical debt?	A bank loan for GPUs	Future cost of poor design decisions	A Flutter widget	A type of Future
+223	A	Why is clean architecture beneficial?	Easier maintenance and testing via separation of concerns	Fewer files always regardless of design	Guaranteed faster GPU	Removes need for tests
+224	C	App size analysis before deployment helps you:	Ignore unused assets forever	Increase size intentionally without reason	Find large assets/code to optimize release package	Disable Play Store
+225	B	Why decide architecture early?	Architecture never matters	Reduce later refactoring cost	To avoid writing UI	To skip testing

@@ -114,6 +114,35 @@ window.QUIZ_SUBJECTS = {
     dataKey: "prn232",
     hint: "PRN232: 50 SP26 FE + 50 B5 FE + 50 FA25 FE. Tab PE trống (đề thực hành VS/.NET 8). OCR có thể lệch — đối chiếu ảnh gốc khi nghi ngờ.",
   },
+  ite: {
+    id: "ite",
+    title: "ITE302c",
+    subtitle: "Ethics in IT · 12 Đề FE (720 MCQ)",
+    brandIcon: "fa-scale-balanced",
+    storageWrong: "uq-ite-wrong-v1",
+    storageProgress: "uq-ite-progress-v1",
+    cloudSubject: "ite",
+    multiSelect: true,
+    showTranslationAlways: true,
+    tasks: [
+      { id: "sp26_fe_re", label: "SP26 FE RE", icon: "fa-file-circle-check" },
+      { id: "sp26_fe", label: "SP26 FE", icon: "fa-file" },
+      { id: "su25_fe_re", label: "SU25 FE RE", icon: "fa-file-circle-check" },
+      { id: "su25_fe", label: "SU25 FE", icon: "fa-file" },
+      { id: "sp25_fe_re", label: "SP25 FE RE", icon: "fa-file-circle-check" },
+      { id: "sp25_fe", label: "SP25 FE", icon: "fa-file" },
+      { id: "fa24_fe_re", label: "FA24 FE RE", icon: "fa-file-circle-check" },
+      { id: "fa24_fe", label: "FA24 FE", icon: "fa-file" },
+      { id: "su24_fe_re", label: "SU24 FE RE", icon: "fa-file-circle-check" },
+      { id: "su24_fe", label: "SU24 FE", icon: "fa-file" },
+      { id: "sp24_fe_re", label: "SP24 FE RE", icon: "fa-file-circle-check" },
+      { id: "sp24_fe", label: "SP24 FE", icon: "fa-file" },
+      { id: "all", label: "Tất cả", icon: "fa-layer-group" },
+    ],
+    defaultTask: "all",
+    dataKey: "ite",
+    hint: "ITE302c (Ethics in IT): Đầy đủ 12 đề FE từ FuExam.me (720 câu trắc nghiệm).",
+  },
 };
 
-window.QUIZ_SUBJECT_ORDER = ["prm", "mln", "jit", "fe", "prn232"];
+window.QUIZ_SUBJECT_ORDER = ["prm", "mln", "jit", "fe", "prn232", "ite"];

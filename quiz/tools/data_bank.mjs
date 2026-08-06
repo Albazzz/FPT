@@ -17,7 +17,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const DATA_DIR = path.resolve(__dirname, "../data");
 
-const SUBJECTS = ["prm", "mln", "jit", "fe", "prn232"];
+const SUBJECTS = ["prm", "mln", "jit", "fe", "prn232", "ite"];
 
 /** Preferred task order when merging (matches subjects.js tabs where possible). */
 const TASK_ORDER = {
@@ -26,6 +26,14 @@ const TASK_ORDER = {
   jit: ["quiz", "sample", "pt", "fuexam", "slides", "site", "albazzz"],
   fe: ["test", "bank300", "datajfe", "albazzz", "books", "fuexam"],
   prn232: ["fe", "feb5", "fefa25", "pe"],
+  ite: [
+    "sp26_fe_re", "sp26_fe",
+    "su25_fe_re", "su25_fe",
+    "sp25_fe_re", "sp25_fe",
+    "fa24_fe_re", "fa24_fe",
+    "su24_fe_re", "su24_fe",
+    "sp24_fe_re", "sp24_fe"
+  ],
 };
 
 function ensureDir(d) {

@@ -1,19 +1,21 @@
 {
-  "generatedAt": "2026-07-29T08:26:59.397Z",
+  "generatedAt": "2026-08-06T12:53:44.993Z",
   "subjects": [
     "prm",
     "mln",
     "jit",
     "fe",
-    "prn232"
+    "prn232",
+    "ite"
   ],
   "counts": {
     "prm": 225,
-    "mln": 615,
+    "mln": 1715,
     "jit": 780,
     "fe": 726,
-    "prn232": 150
+    "prn232": 150,
+    "ite": 720
   },
-  "total": 2496,
+  "total": 4316,
   "notes": "Per-task parts under quiz/data/{subject}/{task}.json; monofile merged for app"
 }

@@ -1,0 +1,35 @@
+{
+  "subject": "ite",
+  "upgradedAt": "2026-08-06T11:40:00.000Z",
+  "total": 720,
+  "tasks": [
+    "sp26_fe_re",
+    "sp26_fe",
+    "su25_fe_re",
+    "su25_fe",
+    "sp25_fe_re",
+    "sp25_fe",
+    "fa24_fe_re",
+    "fa24_fe",
+    "su24_fe_re",
+    "su24_fe",
+    "sp24_fe_re",
+    "sp24_fe"
+  ],
+  "counts": {
+    "sp26_fe_re": 60,
+    "sp26_fe": 60,
+    "su25_fe_re": 60,
+    "su25_fe": 60,
+    "sp25_fe_re": 60,
+    "sp25_fe": 60,
+    "fa24_fe_re": 60,
+    "fa24_fe": 60,
+    "su24_fe_re": 60,
+    "su24_fe": 60,
+    "sp24_fe_re": 60,
+    "sp24_fe": 60
+  },
+  "partsOf": "ite",
+  "note": "Edit {task}.json then run: node quiz/tools/merge_by_task.mjs ite"
+}

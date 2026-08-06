@@ -1,0 +1,982 @@
+[
+  {
+    "id": 1,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which widget pattern protects authenticated routes?",
+    "A": "Navigator",
+    "B": "Guard",
+    "C": "Route protection",
+    "D": "Middleware"
+  },
+  {
+    "id": 6,
+    "ans": "C",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which widget enables custom scroll effects in Flutter?",
+    "A": "ListView",
+    "B": "SingleChildScrollView",
+    "C": "CustomScrollView",
+    "D": "Column"
+  },
+  {
+    "id": 7,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which practice improves rendering performance?",
+    "A": "Large widget trees",
+    "B": "Splitting widgets",
+    "C": "Global state",
+    "D": "Frequent rebuilds"
+  },
+  {
+    "id": 11,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which concept does BLoC heavily rely on?",
+    "A": "Future",
+    "B": "Stream",
+    "C": "Animation",
+    "D": "Theme"
+  },
+  {
+    "id": 14,
+    "ans": "C",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which Flutter plugin provides SQLite support?",
+    "A": "hive",
+    "B": "moor",
+    "C": "sqflite",
+    "D": "shared_preferences"
+  },
+  {
+    "id": 15,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "What is the main benefit of using Maps in Dart?",
+    "A": "Storing values without keys",
+    "B": "Storing key-value pairs",
+    "C": "Rendering UI components",
+    "D": "Managing asynchronous tasks"
+  },
+  {
+    "id": 16,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which tool helps analyze UI performance in Flutter?",
+    "A": "Inspector",
+    "B": "DevTools",
+    "C": "Emulator",
+    "D": "Hot reload"
+  },
+  {
+    "id": 17,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "What does a Dart class primarily represent?",
+    "A": "A UI widget only",
+    "B": "A blueprint for creating objects",
+    "C": "A database table",
+    "D": "A network request"
+  },
+  {
+    "id": 21,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "What does TextEditingController manage?",
+    "A": "Theme",
+    "B": "Text input value",
+    "C": "Validation rules",
+    "D": "Layout constraints"
+  },
+  {
+    "id": 22,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Why is Dart considered suitable for Flutter development?",
+    "A": "It is only used for backend systems",
+    "B": "It supports both UI and application logic efficiently",
+    "C": "It replaces native languages",
+    "D": "It does not support asynchronous programming"
+  },
+  {
+    "id": 25,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "What is Cubit in BLoC?",
+    "A": "UI widget",
+    "B": "Simplified BLoC without events",
+    "C": "Database layer",
+    "D": "Animation helper"
+  },
+  {
+    "id": 26,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which activity is typically performed after creating a new Flutter project?",
+    "A": "Deploying to app stores",
+    "B": "Running the default app on a device",
+    "C": "Configuring authentication",
+    "D": "Optimizing database queries"
+  },
+  {
+    "id": 27,
+    "ans": "B",
+    "flags": "generic_concept",
+    "q": "Which practice improves deployment security?",
+    "A": "Debug builds",
+    "B": "Secure signing keys",
+    "C": "Hardcoding secrets",
+    "D": "Skipping validation"
+  },
+  {
+    "id": 30,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which method is used to update the UI when state changes?",
+    "A": "build()",
+    "B": "setState()",
+    "C": "initState()",
+    "D": "dispose()"
+  },
+  {
+    "id": 31,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which Flutter package is commonly used for simple key-value storage?",
+    "A": "sqflite",
+    "B": "shared_preferences",
+    "C": "provider",
+    "D": "http"
+  },
+  {
+    "id": 34,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which widget helps avoid rebuilding unchanged UI parts?",
+    "A": "Container",
+    "B": "RepaintBoundary",
+    "C": "Column",
+    "D": "FutureBuilder"
+  },
+  {
+    "id": 35,
+    "ans": "A",
+    "flags": "generic_concept",
+    "q": "Which widget is used to handle asynchronous API responses in UI?",
+    "A": "FutureBuilder",
+    "B": "ListView",
+    "C": "Provider",
+    "D": "Form"
+  },
+  {
+    "id": 36,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which Dart feature helps organize code into reusable libraries?",
+    "A": "Widgets",
+    "B": "Packages and imports",
+    "C": "Hot reload",
+    "D": "Layout constraints"
+  },
+  {
+    "id": 37,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "What is refresh token used for?",
+    "A": "UI refresh",
+    "B": "Extend session without re-login",
+    "C": "Theme update",
+    "D": "Navigation reset"
+  },
+  {
+    "id": 38,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "What is rebuild scope optimization in Flutter?",
+    "A": "Reducing widget tree depth",
+    "B": "Limiting rebuild to affected widgets",
+    "C": "Caching API responses",
+    "D": "Using global state"
+  },
+  {
+    "id": 40,
+    "ans": "A",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which widget reacts to async data from local storage?",
+    "A": "FutureBuilder",
+    "B": "StreamBuilder",
+    "C": "ListView",
+    "D": "Provider"
+  },
+  {
+    "id": 41,
+    "ans": "B",
+    "flags": "generic_concept",
+    "q": "What is a token in authentication systems?",
+    "A": "UI key",
+    "B": "Temporary access credential",
+    "C": "Database ID",
+    "D": "Theme value"
+  },
+  {
+    "id": 43,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which Dart feature allows defining reusable, type-safe components?",
+    "A": "Mixins",
+    "B": "Generics",
+    "C": "Futures",
+    "D": "Streams"
+  },
+  {
+    "id": 44,
+    "ans": "A",
+    "flags": "half_translated_question",
+    "q": "Which widget animates between two widgets?",
+    "A": "AnimatedSwitcher",
+    "B": "AnimatedOpacity",
+    "C": "AnimatedAlign",
+    "D": "AnimatedSize"
+  },
+  {
+    "id": 47,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "What does crossAxisAlignment control?",
+    "A": "Vertical alignment in Column",
+    "B": "Horizontal alignment in Column",
+    "C": "Child order",
+    "D": "Widget size"
+  },
+  {
+    "id": 48,
+    "ans": "B",
+    "flags": "banned_phrase",
+    "q": "Which tool is commonly used for version control?",
+    "A": "SVN",
+    "B": "Git",
+    "C": "FTP",
+    "D": "ZIP"
+  },
+  {
+    "id": 50,
+    "ans": "C",
+    "flags": "half_translated_question",
+    "q": "What is Dart primarily designed for in the Flutter ecosystem?",
+    "A": "Database management",
+    "B": "User interface development",
+    "C": "General-purpose programming with UI focus",
+    "D": "Network security"
+  },
+  {
+    "id": 53,
+    "ans": "C",
+    "flags": "half_translated_question",
+    "q": "What happens if a non-nullable variable is not initialized in Dart?",
+    "A": "The app runs normally",
+    "B": "A runtime exception occurs",
+    "C": "A compile-time error occurs",
+    "D": "The value becomes null automatically"
+  },
+  {
+    "id": 55,
+    "ans": "C",
+    "flags": "half_translated_question",
+    "q": "Which widget allows overlapping of its child widgets?",
+    "A": "Column",
+    "B": "Row",
+    "C": "Stack",
+    "D": "Expanded"
+  },
+  {
+    "id": 57,
+    "ans": "A",
+    "flags": "half_translated_question",
+    "q": "What is the main risk of improper state management?",
+    "A": "UI inconsistency",
+    "B": "Longer compile time",
+    "C": "Package conflicts",
+    "D": "Build errors"
+  },
+  {
+    "id": 58,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "What does CurvedAnimation provide?",
+    "A": "Layout control",
+    "B": "Animation curve behavior",
+    "C": "State updates",
+    "D": "Navigation"
+  },
+  {
+    "id": 59,
+    "ans": "B",
+    "flags": "generic_concept",
+    "q": "How can data be passed to a new screen?",
+    "A": "Using global variables",
+    "B": "Via constructor arguments",
+    "C": "Using ThemeData",
+    "D": "Using Scaffold"
+  },
+  {
+    "id": 61,
+    "ans": "C",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which phase involves gathering requirements?",
+    "A": "Implementation",
+    "B": "Design",
+    "C": "Analysis",
+    "D": "Testing"
+  },
+  {
+    "id": 62,
+    "ans": "A",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which Flutter tool helps debug network requests?",
+    "A": "DevTools",
+    "B": "Inspector",
+    "C": "Emulator",
+    "D": "Hot reload"
+  },
+  {
+    "id": 63,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which Dart feature supports object-oriented programming?",
+    "A": "Widgets",
+    "B": "Classes and objects",
+    "C": "Hot reload",
+    "D": "Layout builders"
+  },
+  {
+    "id": 64,
+    "ans": "B",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which approach helps reduce unnecessary widget rebuilds?",
+    "A": "Using global variables",
+    "B": "Fine-grained state updates",
+    "C": "Hot restart",
+    "D": "Large widgets"
+  },
+  {
+    "id": 65,
+    "ans": "B",
+    "flags": "half_translated_question|half_translated_opt_B",
+    "q": "Which action best demonstrates Flutter's reactive UI model?",
+    "A": "Manually updating UI elements",
+    "B": "Rebuilding UI in response to state changes",
+    "C": "Editing layout XML",
+    "D": "Calling native APIs"
+  },
+  {
+    "id": 66,
+    "ans": "B",
+    "flags": "same_whyWrong_all",
+    "q": "Why are const widgets recommended?",
+    "A": "They improve readability",
+    "B": "They reduce rebuild cost",
+    "C": "They add state",
+    "D": "They handle navigation"
+  },
+  {
+    "id": 68,
+    "ans": "B",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which Flutter test focuses on UI components?",
+    "A": "Unit test",
+    "B": "Widget test",
+    "C": "Integration test",
+    "D": "Load test"
+  },
+  {
+    "id": 71,
+    "ans": "C",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which widget applies a theme to an entire Flutter application?",
+    "A": "Scaffold",
+    "B": "Theme",
+    "C": "MaterialApp",
+    "D": "Container"
+  },
+  {
+    "id": 72,
+    "ans": "B",
+    "flags": "half_translated_question|same_whyWrong_all",
+    "q": "What is the purpose of SliverAppBar?",
+    "A": "Static app bar",
+    "B": "Scrollable flexible app bar",
+    "C": "Bottom navigation",
+    "D": "Drawer control"
+  },
+  {
+    "id": 74,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which package supports BLoC architecture?",
+    "A": "provider",
+    "B": "flutter_bloc",
+    "C": "sqflite",
+    "D": "http"
+  },
+  {
+    "id": 75,
+    "ans": "B",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which Flutter widget reacts to authentication state changes?",
+    "A": "FutureBuilder",
+    "B": "StreamBuilder",
+    "C": "ListView",
+    "D": "Form"
+  },
+  {
+    "id": 77,
+    "ans": "B",
+    "flags": "half_translated_question|same_whyWrong_all",
+    "q": "What is implicit animation?",
+    "A": "Manual animation control",
+    "B": "Animation without controller",
+    "C": "API animation",
+    "D": "Navigation animation"
+  },
+  {
+    "id": 78,
+    "ans": "C",
+    "flags": "half_translated_question",
+    "q": "Which Dart data structure is best suited for storing an ordered collection of items?",
+    "A": "Set",
+    "B": "Map",
+    "C": "List",
+    "D": "Queue"
+  },
+  {
+    "id": 79,
+    "ans": "B",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which Flutter concept supports reactive UI updates?",
+    "A": "Manual refresh",
+    "B": "Widget rebuilding",
+    "C": "Hot restart",
+    "D": "Native callbacks"
+  },
+  {
+    "id": 80,
+    "ans": "C",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which type of test checks individual functions or classes?",
+    "A": "Widget test",
+    "B": "Integration test",
+    "C": "Unit test",
+    "D": "System test"
+  },
+  {
+    "id": 81,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "What is the role of events in BLoC?",
+    "A": "Store UI",
+    "B": "Trigger state changes",
+    "C": "Render widgets",
+    "D": "Handle layout"
+  },
+  {
+    "id": 82,
+    "ans": "B",
+    "flags": "half_translated_question|same_whyWrong_all",
+    "q": "What is the main purpose of hot reload in Flutter?",
+    "A": "Improve runtime performance",
+    "B": "Instantly reflect code changes in UI",
+    "C": "Publish apps faster",
+    "D": "Reduce memory usage"
+  },
+  {
+    "id": 84,
+    "ans": "A",
+    "flags": "generic_concept|half_translated_question|same_whyWrong_all",
+    "q": "Which method retrieves data from SharedPreferences?",
+    "A": "get()",
+    "B": "read()",
+    "C": "fetch()",
+    "D": "load()"
+  },
+  {
+    "id": 85,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "What is the main benefit of Flutter's widget-based architecture?",
+    "A": "Widgets are only used for layout design",
+    "B": "Widgets allow code reuse across platforms",
+    "C": "Widgets automatically manage databases",
+    "D": "Widgets replace backend services"
+  },
+  {
+    "id": 88,
+    "ans": "A",
+    "flags": "generic_concept|half_translated_question|same_whyWrong_all",
+    "q": "Which widget can hide user input text when configured for password entry?",
+    "A": "TextField",
+    "B": "ObscureText",
+    "C": "SecureInput",
+    "D": "PasswordField"
+  },
+  {
+    "id": 89,
+    "ans": "B",
+    "flags": "generic_concept|half_translated_question",
+    "q": "What is Flutter primarily used for?",
+    "A": "Designing databases for mobile apps",
+    "B": "Creating native applications from a single codebase",
+    "C": "Developing server-side applications only",
+    "D": "Building operating systems for mobile devices"
+  },
+  {
+    "id": 90,
+    "ans": "B",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which method resets all form fields?",
+    "A": "clear()",
+    "B": "reset()",
+    "C": "dispose()",
+    "D": "remove()"
+  },
+  {
+    "id": 91,
+    "ans": "C",
+    "flags": "half_translated_question",
+    "q": "Which Dart keyword is used to define a constant value at compile time?",
+    "A": "final",
+    "B": "static",
+    "C": "const",
+    "D": "var"
+  },
+  {
+    "id": 92,
+    "ans": "B",
+    "flags": "generic_concept",
+    "q": "What happens after successful login?",
+    "A": "App closes",
+    "B": "User session starts",
+    "C": "Theme changes",
+    "D": "Navigation resets"
+  },
+  {
+    "id": 93,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which step is required before running a Flutter app for the first time?",
+    "A": "Publishing the app",
+    "B": "Setting up the Flutter SDK",
+    "C": "Configuring a database",
+    "D": "Writing backend APIs"
+  },
+  {
+    "id": 94,
+    "ans": "A",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which widget reacts to async data from local storage?",
+    "A": "FutureBuilder",
+    "B": "StreamBuilder",
+    "C": "ListView",
+    "D": "Provider"
+  },
+  {
+    "id": 95,
+    "ans": "B",
+    "flags": "half_translated_question|same_whyWrong_all",
+    "q": "What does golden testing verify?",
+    "A": "API responses",
+    "B": "UI appearance consistency",
+    "C": "Database state",
+    "D": "Authentication"
+  },
+  {
+    "id": 97,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "What is the benefit of composing widgets in Flutter?",
+    "A": "Faster compilation",
+    "B": "Better code reuse and UI consistency",
+    "C": "Reduced memory usage",
+    "D": "Automatic navigation"
+  },
+  {
+    "id": 98,
+    "ans": "D",
+    "flags": "half_translated_question",
+    "q": "Which status code indicates server error?",
+    "A": "200",
+    "B": "301",
+    "C": "404",
+    "D": "500"
+  },
+  {
+    "id": 99,
+    "ans": "B",
+    "flags": "same_whyWrong_all",
+    "q": "What does Curves/Animation provide?",
+    "A": "Layout control",
+    "B": "Animation curve behavior",
+    "C": "State updates",
+    "D": "Navigation"
+  },
+  {
+    "id": 103,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which engine technology does Flutter use for rendering (as mentioned in slides)?",
+    "A": "WebKit only",
+    "B": "Skia (C++ engine, GPU acceleration)",
+    "C": "OpenGL ES exclusive without Skia",
+    "D": "Swing toolkit"
+  },
+  {
+    "id": 121,
+    "ans": "A",
+    "flags": "half_translated_question",
+    "q": "Why is async/await important in Flutter apps?",
+    "A": "Handle asynchronous work without blocking the UI thread",
+    "B": "Force UI to freeze during network calls",
+    "C": "Replace all widgets with XML",
+    "D": "Compile Dart to COBOL"
+  },
+  {
+    "id": 125,
+    "ans": "B",
+    "flags": "half_translated_opt_B",
+    "q": "What is .fromJson() typically used for?",
+    "A": "Drawing custom paint",
+    "B": "Converting JSON map data into a Dart model object",
+    "C": "Starting the emulator",
+    "D": "Signing release APKs"
+  },
+  {
+    "id": 133,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which widget allows children to overlap?",
+    "A": "Column",
+    "B": "Stack",
+    "C": "ListView.builder only",
+    "D": "LinearProgressIndicator"
+  },
+  {
+    "id": 136,
+    "ans": "C",
+    "flags": "half_translated_opt_A",
+    "q": "Why use const widgets when possible?",
+    "A": "They force full tree rebuild every frame",
+    "B": "They disable hot reload",
+    "C": "They reduce rebuild cost for stable UI",
+    "D": "They remove type safety"
+  },
+  {
+    "id": 137,
+    "ans": "A",
+    "flags": "same_whyWrong_all",
+    "q": "What does ThemeData primarily define?",
+    "A": "Application-wide visual styles",
+    "B": "Only SQLite schema",
+    "C": "Only deep link schemes",
+    "D": "Only test coverage reports"
+  },
+  {
+    "id": 138,
+    "ans": "B",
+    "flags": "same_whyWrong_all",
+    "q": "What does the build() method return?",
+    "A": "Raw GPU pixels only",
+    "B": "A widget tree describing the UI",
+    "C": "A signed APK",
+    "D": "A database connection pool"
+  },
+  {
+    "id": 144,
+    "ans": "C",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Where do you typically configure Android deep link intent filters?",
+    "A": "pubspec.yaml only",
+    "B": "iOS Info.plist only",
+    "C": "AndroidManifest.xml",
+    "D": "README.md"
+  },
+  {
+    "id": 150,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Which widget rebuilds when a Stream emits new data?",
+    "A": "SizedBox only",
+    "B": "StreamBuilder",
+    "C": "Icon only",
+    "D": "Divider only"
+  },
+  {
+    "id": 153,
+    "ans": "B",
+    "flags": "same_whyWrong_all",
+    "q": "Provider is commonly used for:",
+    "A": "Image compression only",
+    "B": "Dependency injection / state exposure to the widget tree",
+    "C": "Replacing Dart with Java",
+    "D": "Building Windows kernels"
+  },
+  {
+    "id": 156,
+    "ans": "C",
+    "flags": "generic_concept",
+    "q": "Which API is commonly used to read screen size/orientation?",
+    "A": "SharedPreferences only",
+    "B": "HttpClient only",
+    "C": "MediaQuery",
+    "D": "FlutterDriver only"
+  },
+  {
+    "id": 161,
+    "ans": "A",
+    "flags": "generic_concept",
+    "q": "Which widget is commonly used for scrollable single-child content?",
+    "A": "SingleChildScrollView",
+    "B": "AppBar only",
+    "C": "SnackBar only",
+    "D": "Tooltip only"
+  },
+  {
+    "id": 164,
+    "ans": "C",
+    "flags": "generic_concept",
+    "q": "How do you typically hide password characters in a TextField?",
+    "A": "Set keyboardType to email only",
+    "B": "Use ListView",
+    "C": "obscureText: true",
+    "D": "Use GridView.count"
+  },
+  {
+    "id": 168,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Why validate user input before submit?",
+    "A": "To slow the UI intentionally",
+    "B": "To ensure correct data and better UX / fewer server errors",
+    "C": "To disable null safety",
+    "D": "To remove FocusNode"
+  },
+  {
+    "id": 170,
+    "ans": "C",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which widget groups multiple fields for joint validation?",
+    "A": "Spacer",
+    "B": "Divider",
+    "C": "Form",
+    "D": "Placeholder"
+  },
+  {
+    "id": 175,
+    "ans": "B",
+    "flags": "same_whyWrong_all",
+    "q": "Which HTTP header commonly carries access credentials?",
+    "A": "Content-Language only",
+    "B": "Authorization",
+    "C": "Accept-Charset only",
+    "D": "Warning only"
+  },
+  {
+    "id": 177,
+    "ans": "A",
+    "flags": "same_whyWrong_all",
+    "q": "What does status code 404 typically mean?",
+    "A": "Resource not found",
+    "B": "OK success",
+    "C": "Server internal error",
+    "D": "Redirect permanent only"
+  },
+  {
+    "id": 183,
+    "ans": "A",
+    "flags": "half_translated_question",
+    "q": "Why map JSON fields into model classes?",
+    "A": "Type safety, readability, and easier UI binding",
+    "B": "To avoid using Dart",
+    "C": "To disable null safety",
+    "D": "To force stringly-typed maps forever without structure"
+  },
+  {
+    "id": 186,
+    "ans": "B",
+    "flags": "same_whyWrong_all",
+    "q": "What is Hive mainly used for?",
+    "A": "Remote PostgreSQL hosting",
+    "B": "Lightweight local NoSQL storage",
+    "C": "Only SSL pinning",
+    "D": "Only deep links"
+  },
+  {
+    "id": 187,
+    "ans": "C",
+    "flags": "generic_concept|half_translated_question",
+    "q": "Which plugin provides SQLite support in Flutter?",
+    "A": "provider",
+    "B": "http",
+    "C": "sqflite",
+    "D": "flutter_local_notifications only"
+  },
+  {
+    "id": 188,
+    "ans": "A",
+    "flags": "generic_concept",
+    "q": "Which widget is often used to show async local storage reads?",
+    "A": "FutureBuilder",
+    "B": "IconButton only",
+    "C": "AppBar only",
+    "D": "SnackBar only"
+  },
+  {
+    "id": 191,
+    "ans": "A",
+    "flags": "generic_concept",
+    "q": "Which storage suits a small flag like 'onboardingCompleted'?",
+    "A": "shared_preferences",
+    "B": "Full remote warehouse DB only",
+    "C": "Video codec storage",
+    "D": "Git LFS only"
+  },
+  {
+    "id": 197,
+    "ans": "B",
+    "flags": "half_translated_opt_A",
+    "q": "Why centralize authentication state?",
+    "A": "To scatter tokens in random widgets",
+    "B": "Ensure consistent access control across screens",
+    "C": "To avoid secure storage forever",
+    "D": "To remove logout"
+  },
+  {
+    "id": 200,
+    "ans": "C",
+    "flags": "same_whyWrong_all",
+    "q": "Storing tokens insecurely (plain SharedPreferences without care) risks:",
+    "A": "Faster animations",
+    "B": "Better SEO",
+    "C": "Token theft / account compromise",
+    "D": "Better null safety"
+  },
+  {
+    "id": 202,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Push notifications in this module are related to:",
+    "A": "Only offline SQLite vacuum",
+    "B": "Alerting users (often after auth/session context exists)",
+    "C": "Replacing REST entirely",
+    "D": "Compiling Skia"
+  },
+  {
+    "id": 204,
+    "ans": "C",
+    "flags": "generic_concept",
+    "q": "Which test type checks individual functions or classes?",
+    "A": "Widget test",
+    "B": "Integration test",
+    "C": "Unit test",
+    "D": "Manual only screenshot without code"
+  },
+  {
+    "id": 205,
+    "ans": "B",
+    "flags": "generic_concept",
+    "q": "Which Flutter test focuses on UI components/widgets?",
+    "A": "Unit test only of pure Dart math",
+    "B": "Widget test",
+    "C": "Load test of servers only",
+    "D": "DNS test only"
+  },
+  {
+    "id": 206,
+    "ans": "A",
+    "flags": "same_whyWrong_all",
+    "q": "What does an integration test verify?",
+    "A": "End-to-end app behavior across parts",
+    "B": "Only one private method always",
+    "C": "Only font file integrity",
+    "D": "Only Gradle version"
+  },
+  {
+    "id": 207,
+    "ans": "B",
+    "flags": "same_whyWrong_all",
+    "q": "Why are tests important for refactoring?",
+    "A": "They slow CI only with no benefit",
+    "B": "Ensure changes don't break functionality",
+    "C": "They replace product requirements",
+    "D": "They remove the need for UI"
+  },
+  {
+    "id": 208,
+    "ans": "A",
+    "flags": "half_translated_opt_B",
+    "q": "What is test isolation?",
+    "A": "Independence of test cases",
+    "B": "Running all tests in one shared mutable global only",
+    "C": "Disabling assertions",
+    "D": "Skipping failures"
+  },
+  {
+    "id": 211,
+    "ans": "A",
+    "flags": "half_translated_question|same_whyWrong_all",
+    "q": "find.byType / find.text in widget tests are used to:",
+    "A": "Locate widgets in the test environment",
+    "B": "Deploy to Play Store",
+    "C": "Generate icons",
+    "D": "Create keystores"
+  },
+  {
+    "id": 212,
+    "ans": "C",
+    "flags": "half_translated_question|same_whyWrong_all",
+    "q": "Mocking dependencies in unit tests helps:",
+    "A": "Increase flakiness only",
+    "B": "Force real network always",
+    "C": "Test logic in isolation without external systems",
+    "D": "Disable CI"
+  },
+  {
+    "id": 213,
+    "ans": "B",
+    "flags": "same_whyWrong_all",
+    "q": "Golden tests primarily verify:",
+    "A": "API JSON schema only",
+    "B": "UI appearance consistency (screenshots/baselines)",
+    "C": "Battery temperature",
+    "D": "DNS TTL"
+  },
+  {
+    "id": 215,
+    "ans": "B",
+    "flags": "half_translated_question",
+    "q": "Why extract list item widgets (e.g. TaskTile) and use Selector?",
+    "A": "To rebuild the entire screen on every tiny change always",
+    "B": "To reduce unnecessary rebuilds / narrow rebuild scope",
+    "C": "To disable DevTools",
+    "D": "To remove keys"
+  },
+  {
+    "id": 218,
+    "ans": "A",
+    "flags": "half_translated_question",
+    "q": "Why use ValueKey(task.id) instead of UniqueKey() for list items?",
+    "A": "Preserve identity/state; UniqueKey forces excess rebuilds",
+    "B": "UniqueKey is always faster",
+    "C": "Keys are forbidden in lists",
+    "D": "ValueKey disables scrolling"
+  },
+  {
+    "id": 221,
+    "ans": "A",
+    "flags": "same_whyWrong_all",
+    "q": "const widgets help performance because they:",
+    "A": "Can be reused and reduce rebuild work",
+    "B": "Force full screen invalidation always",
+    "C": "Disable tree shaking",
+    "D": "Remove AOT"
+  }
+]

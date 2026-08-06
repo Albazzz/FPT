@@ -1,0 +1,65 @@
+[
+  {
+    "subj": "slides",
+    "id": 109,
+    "q": "Dart in Flutter is described as supporting which compilation modes?",
+    "opts": {
+      "A": "Only interpreted BASIC",
+      "B": "Only COBOL batch",
+      "C": "AOT and JIT compilation",
+      "D": "Only assembly hand-writing"
+    },
+    "ans": "C",
+    "at": "AOT and JIT compilation",
+    "concept": "• Hai chế độ biên dịch Dart: JIT (dev) và AOT (release).",
+    "why": "• Hai chế độ biên dịch Dart: JIT (dev) và AOT (release).\n• JIT hỗ trợ hot reload; AOT tối ưu bản ship.",
+    "wrong": {
+      "A": "• Là gì? Cơ chế Flutter/Dart liên quan «Chỉ BASIC thông dịch».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm trù với trọng tâm đề.\n• Vì sao sai? «Only interpreted BASIC» — Cơ chế Flutter/Dart liên quan «Chỉ BASIC thông dịch». Đề cần: Hai chế độ biên dịch Dart: JIT (dev) và AOT (release).",
+      "B": "• Là gì? Cơ chế Flutter/Dart liên quan «Chỉ COBOL batch».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm trù với trọng tâm đề.\n• Vì sao sai? «Only COBOL batch» — Cơ chế Flutter/Dart liên quan «Chỉ COBOL batch». Đề cần: Hai chế độ biên dịch Dart: JIT (dev) và AOT (release).",
+      "D": "• Là gì? Cơ chế Flutter/Dart liên quan «Chỉ viết assembly tay».\n• Dùng để làm gì? Đối chiếu đúng cơ chế/phạm trù với trọng tâm đề.\n• Vì sao sai? «Only assembly hand-writing» — Cơ chế Flutter/Dart liên quan «Chỉ viết assembly tay». Đề cần: Hai chế độ biên dịch Dart: JIT (dev) và AOT (release)."
+    },
+    "answerDisplay": "C. Biên dịch AOT và JIT"
+  },
+  {
+    "subj": "bank300",
+    "id": 234,
+    "q": "PDCA letters?",
+    "opts": {
+      "A": "Gateway",
+      "B": "Hub",
+      "C": "Bridge",
+      "D": "Plan Do Check Act"
+    },
+    "ans": "D",
+    "at": "Plan Do Check Act",
+    "concept": "• Plan Do Check Act",
+    "why": "• Plan Do Check Act",
+    "wrong": {
+      "A": "• Là gì? Gateway\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì sao sai? Không khớp đáp án đúng: Plan Do Check Act.",
+      "B": "• Là gì? Hub (bộ tập trung tầng 1)\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì sao sai? Không khớp đáp án đúng: Plan kiểm tra Act.",
+      "C": "• Là gì? Bridge (cầu nối tầng 2 / MAC)\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì sao sai? Không khớp đáp án đúng: Plan kiểm tra Act."
+    },
+    "answerDisplay": "D. Plan Do Check Act"
+  },
+  {
+    "subj": "books",
+    "id": 644,
+    "q": "PDCA cycle stands for:",
+    "opts": {
+      "A": "Push, Drop, Commit, Abort",
+      "B": "Packet, Data, Control, Access",
+      "C": "Plan, Do, Check, Act",
+      "D": "Print, Delete, Copy, Archive"
+    },
+    "ans": "C",
+    "at": "Plan, Do, Check, Act",
+    "concept": "• Plan, Do, Check, Act",
+    "why": "• Plan, Do, Check, Act",
+    "wrong": {
+      "A": "• Là gì? Push, Drop, Commit, Abort\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì sao sai? Không khớp đáp án đúng: Plan,, kiểm tra, Act.",
+      "B": "• Là gì? Gói tin, dữ liệu, kiểm soát, truy cập\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì sao sai? Không khớp đáp án đúng: Plan,, kiểm tra, Act.",
+      "D": "• Là gì? Print, Xóa, Copy, Archive\n• Dùng để làm gì? Đối chiếu với cơ chế/đối tượng đề hỏi.\n• Vì sao sai? Không khớp đáp án đúng: Plan,, kiểm tra, Act."
+    },
+    "answerDisplay": "C. Plan, Do, Check, Act"
+  }
+]
