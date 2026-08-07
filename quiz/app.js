@@ -60,6 +60,10 @@
       ? window.QUIZ_QUESTIONS
       : [];
 
+  BANK.forEach((q, idx) => {
+    q.id = idx + 1;
+  });
+
   const TASK_DEFS = Array.isArray(CFG.tasks) ? CFG.tasks : [{ id: "all", label: "Tất cả" }];
   const TASK_IDS = new Set(TASK_DEFS.map((t) => t.id));
 
@@ -102,6 +106,18 @@
 
   /** Active pool for current exam selection (before wrong-mode filter) */
   function examPool() {
+    if (examSet === "ite_unique") {
+      const seen = new Set();
+      const result = [];
+      for (const q of BANK) {
+        const qText = q.question ? String(q.question).toLowerCase().replace(/[^a-z0-9]/g, '') : '';
+        if (!seen.has(qText)) {
+          seen.add(qText);
+          result.push(q);
+        }
+      }
+      return result;
+    }
     if (examSet === "all" || examSet === "both") return BANK.slice();
     // MLN bank: legacy questions use task "all" (not the filter id "all")
     if (examSet === "bank") {
@@ -744,16 +760,33 @@
   }
 
   function applyExamUi() {
-    document.querySelectorAll(".exam-tab[data-exam]").forEach((t) => {
+    document.querySelectorAll(".exam-dropdown-item.exam-tab[data-exam]").forEach((t) => {
       const active = t.dataset.exam === examSet;
       t.classList.toggle("active", active);
       t.setAttribute("aria-selected", active ? "true" : "false");
     });
+    const curExam = TASK_DEFS.find((t) => t.id === examSet) || { label: "Tất cả", id: "all" };
+    const selectedExamText = document.getElementById("selectedExamText");
+    const selectedExamCount = document.getElementById("selectedExamCount");
+    if (selectedExamText) selectedExamText.textContent = curExam.label;
+    if (selectedExamCount) selectedExamCount.textContent = String(countForTask(curExam.id));
     updateExamBadges();
     updateScopeActionTitles();
   }
 
   function countForTask(tid) {
+    if (tid === "ite_unique") {
+      const seen = new Set();
+      let count = 0;
+      for (const q of BANK) {
+        const qText = q.question ? String(q.question).toLowerCase().replace(/[^a-z0-9]/g, '') : '';
+        if (!seen.has(qText)) {
+          seen.add(qText);
+          count++;
+        }
+      }
+      return count;
+    }
     if (tid === "all") return BANK.length;
     if (tid === "bank") {
       return BANK.filter((q) => {
@@ -2908,6 +2941,47 @@
     // keep results visible while typing; only hide when clicking far? better keep until clear
   });
 
+  // Dropdown events
+  const examDropdown = document.getElementById("examDropdown");
+  const examDropdownToggle = document.getElementById("examDropdownToggle");
+  const examDropdownMenu = document.getElementById("examDropdownMenu");
+  const examDropdownSearch = document.getElementById("examDropdownSearch");
+
+  if (examDropdownToggle && examDropdownMenu) {
+    examDropdownToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isExpanded = examDropdownToggle.getAttribute("aria-expanded") === "true";
+      examDropdownToggle.setAttribute("aria-expanded", !isExpanded);
+      examDropdownMenu.classList.toggle("show", !isExpanded);
+      if (!isExpanded && examDropdownSearch) {
+        examDropdownSearch.focus();
+      }
+    });
+  }
+
+  if (examDropdownSearch) {
+    examDropdownSearch.addEventListener("input", (e) => {
+      const q = e.target.value.trim().toLowerCase();
+      document.querySelectorAll("#examDropdownList .exam-dropdown-item").forEach((item) => {
+        const text = item.querySelector(".tab-text")?.textContent || "";
+        item.style.display = text.toLowerCase().includes(q) ? "" : "none";
+      });
+    });
+  }
+
+  document.addEventListener("click", (e) => {
+    if (examDropdown && !examDropdown.contains(e.target)) {
+      if (examDropdownMenu) examDropdownMenu.classList.remove("show");
+      if (examDropdownToggle) examDropdownToggle.setAttribute("aria-expanded", "false");
+      if (examDropdownSearch) {
+        examDropdownSearch.value = "";
+        document.querySelectorAll("#examDropdownList .exam-dropdown-item").forEach((item) => {
+          item.style.display = "";
+        });
+      }
+    }
+  });
+
   // Chỉ chuyển câu bằng nút Trước/Sau (và ô nhảy số). Không vuốt, không phím mũi tên trên tablet.
   const isCoarsePointer =
     typeof window.matchMedia === "function" &&
@@ -2983,8 +3057,8 @@
       btn.classList.toggle("active", on);
       btn.setAttribute("aria-selected", on ? "true" : "false");
     });
-    const taskTabs = document.getElementById("taskTabs");
-    if (taskTabs) {
+    const examDropdownList = document.getElementById("examDropdownList");
+    if (examDropdownList) {
       // Nếu task đang chọn có 0 câu → về "all"
       if (examSet !== "all" && countForTask(examSet) === 0) {
         examSet = CFG.defaultTask && countForTask(CFG.defaultTask) > 0 ? CFG.defaultTask : "all";
@@ -2992,32 +3066,47 @@
       const cur = normalizeExamSet(examSet);
       // Chỉ render tab có câu (giữ "all"); không hiện tab count = 0
       const visibleTasks = TASK_DEFS.filter((t) => t.id === "all" || countForTask(t.id) > 0);
-      taskTabs.innerHTML = visibleTasks
+      examDropdownList.innerHTML = visibleTasks
         .map((t) => {
           const on = cur === t.id;
           const n = countForTask(t.id);
           return (
-            '<button type="button" class="tab exam-tab' +
+            '<button type="button" class="exam-dropdown-item exam-tab' +
             (on ? " active" : "") +
             '" data-exam="' +
             t.id +
-            '" role="tab" aria-selected="' +
+            '" role="option" aria-selected="' +
             (on ? "true" : "false") +
             '">' +
             (t.icon ? '<i class="fa-solid ' + t.icon + '"></i> ' : "") +
             '<span class="tab-text">' +
             t.label +
-            "</span>" +
-            '<span class="tab-count" data-task-count="' +
+            '</span><span class="tab-count" data-task-count="' +
             t.id +
             '">' +
             n +
-            "</span></button>"
+            '</span></button>'
           );
         })
         .join("");
-      taskTabs.querySelectorAll(".exam-tab").forEach((btn) => {
-        btn.addEventListener("click", () => setExamSet(btn.getAttribute("data-exam")));
+      
+      const menu = document.getElementById("examDropdownMenu");
+      const toggle = document.getElementById("examDropdownToggle");
+      const search = document.getElementById("examDropdownSearch");
+
+      examDropdownList.querySelectorAll(".exam-dropdown-item").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          setExamSet(btn.getAttribute("data-exam"));
+          if (menu) menu.classList.remove("show");
+          if (toggle) toggle.setAttribute("aria-expanded", "false");
+          if (search) {
+            search.value = "";
+            const items = examDropdownList.querySelectorAll(".exam-dropdown-item");
+            items.forEach((item) => {
+              item.style.display = "";
+            });
+          }
+        });
       });
     }
     const examBar = document.querySelector(".exam-bar");

@@ -1,0 +1,1148 @@
+{
+  "subject": "ite302",
+  "task": "sp26_fe",
+  "taskLabel": "SP26 - FE",
+  "count": 60,
+  "questions": [
+    {
+      "id": 241,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 1,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/001_ITE302c SP26 FE RE_001.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 1"
+      },
+      "img": "imge/ite302/sp26_fe/001_ITE302c SP26 FE RE_001.webp"
+    },
+    {
+      "id": 242,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 2,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/002_ITE302c SP26 FE RE_002.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 2"
+      },
+      "img": "imge/ite302/sp26_fe/002_ITE302c SP26 FE RE_002.webp"
+    },
+    {
+      "id": 243,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 3,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/003_ITE302c SP26 FE RE_003.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 3"
+      },
+      "img": "imge/ite302/sp26_fe/003_ITE302c SP26 FE RE_003.webp"
+    },
+    {
+      "id": 244,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 4,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/004_ITE302c SP26 FE RE_004.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 4"
+      },
+      "img": "imge/ite302/sp26_fe/004_ITE302c SP26 FE RE_004.webp"
+    },
+    {
+      "id": 245,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 5,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/005_ITE302c SP26 FE RE_005.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 5"
+      },
+      "img": "imge/ite302/sp26_fe/005_ITE302c SP26 FE RE_005.webp"
+    },
+    {
+      "id": 246,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 6,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/006_ITE302c SP26 FE RE_006.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 6"
+      },
+      "img": "imge/ite302/sp26_fe/006_ITE302c SP26 FE RE_006.webp"
+    },
+    {
+      "id": 247,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 7,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/007_ITE302c SP26 FE RE_007.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 7"
+      },
+      "img": "imge/ite302/sp26_fe/007_ITE302c SP26 FE RE_007.webp"
+    },
+    {
+      "id": 248,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 8,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/008_ITE302c SP26 FE RE_008.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 8"
+      },
+      "img": "imge/ite302/sp26_fe/008_ITE302c SP26 FE RE_008.webp"
+    },
+    {
+      "id": 249,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 9,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/009_ITE302c SP26 FE RE_009.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 9"
+      },
+      "img": "imge/ite302/sp26_fe/009_ITE302c SP26 FE RE_009.webp"
+    },
+    {
+      "id": 250,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 10,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/010_ITE302c SP26 FE RE_010.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 10"
+      },
+      "img": "imge/ite302/sp26_fe/010_ITE302c SP26 FE RE_010.webp"
+    },
+    {
+      "id": 251,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 11,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/011_ITE302c SP26 FE RE_011.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 11"
+      },
+      "img": "imge/ite302/sp26_fe/011_ITE302c SP26 FE RE_011.webp"
+    },
+    {
+      "id": 252,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 12,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/012_ITE302c SP26 FE RE_012.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 12"
+      },
+      "img": "imge/ite302/sp26_fe/012_ITE302c SP26 FE RE_012.webp"
+    },
+    {
+      "id": 253,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 13,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/013_ITE302c SP26 FE RE_013.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 13"
+      },
+      "img": "imge/ite302/sp26_fe/013_ITE302c SP26 FE RE_013.webp"
+    },
+    {
+      "id": 254,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 14,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/014_ITE302c SP26 FE RE_014.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 14"
+      },
+      "img": "imge/ite302/sp26_fe/014_ITE302c SP26 FE RE_014.webp"
+    },
+    {
+      "id": 255,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 15,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/015_ITE302c SP26 FE RE_015.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 15"
+      },
+      "img": "imge/ite302/sp26_fe/015_ITE302c SP26 FE RE_015.webp"
+    },
+    {
+      "id": 256,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 16,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/016_ITE302c SP26 FE RE_016.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 16"
+      },
+      "img": "imge/ite302/sp26_fe/016_ITE302c SP26 FE RE_016.webp"
+    },
+    {
+      "id": 257,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 17,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/017_ITE302c SP26 FE RE_017.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 17"
+      },
+      "img": "imge/ite302/sp26_fe/017_ITE302c SP26 FE RE_017.webp"
+    },
+    {
+      "id": 258,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 18,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/018_ITE302c SP26 FE RE_018.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 18"
+      },
+      "img": "imge/ite302/sp26_fe/018_ITE302c SP26 FE RE_018.webp"
+    },
+    {
+      "id": 259,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 19,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/019_ITE302c SP26 FE RE_019.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 19"
+      },
+      "img": "imge/ite302/sp26_fe/019_ITE302c SP26 FE RE_019.webp"
+    },
+    {
+      "id": 260,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 20,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/020_ITE302c SP26 FE RE_020.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 20"
+      },
+      "img": "imge/ite302/sp26_fe/020_ITE302c SP26 FE RE_020.webp"
+    },
+    {
+      "id": 261,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 21,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/021_ITE302c SP26 FE RE_021.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 21"
+      },
+      "img": "imge/ite302/sp26_fe/021_ITE302c SP26 FE RE_021.webp"
+    },
+    {
+      "id": 262,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 22,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/022_ITE302c SP26 FE RE_022.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 22"
+      },
+      "img": "imge/ite302/sp26_fe/022_ITE302c SP26 FE RE_022.webp"
+    },
+    {
+      "id": 263,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 23,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/023_ITE302c SP26 FE RE_023.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 23"
+      },
+      "img": "imge/ite302/sp26_fe/023_ITE302c SP26 FE RE_023.webp"
+    },
+    {
+      "id": 264,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 24,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/024_ITE302c SP26 FE RE_024.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 24"
+      },
+      "img": "imge/ite302/sp26_fe/024_ITE302c SP26 FE RE_024.webp"
+    },
+    {
+      "id": 265,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 25,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/025_ITE302c SP26 FE RE_025.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 25"
+      },
+      "img": "imge/ite302/sp26_fe/025_ITE302c SP26 FE RE_025.webp"
+    },
+    {
+      "id": 266,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 26,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/026_ITE302c SP26 FE RE_026.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 26"
+      },
+      "img": "imge/ite302/sp26_fe/026_ITE302c SP26 FE RE_026.webp"
+    },
+    {
+      "id": 267,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 27,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/027_ITE302c SP26 FE RE_027.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 27"
+      },
+      "img": "imge/ite302/sp26_fe/027_ITE302c SP26 FE RE_027.webp"
+    },
+    {
+      "id": 268,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 28,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/028_ITE302c SP26 FE RE_028.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 28"
+      },
+      "img": "imge/ite302/sp26_fe/028_ITE302c SP26 FE RE_028.webp"
+    },
+    {
+      "id": 269,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 29,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/029_ITE302c SP26 FE RE_029.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 29"
+      },
+      "img": "imge/ite302/sp26_fe/029_ITE302c SP26 FE RE_029.webp"
+    },
+    {
+      "id": 270,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 30,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/030_ITE302c SP26 FE RE_030.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 30"
+      },
+      "img": "imge/ite302/sp26_fe/030_ITE302c SP26 FE RE_030.webp"
+    },
+    {
+      "id": 271,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 31,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/031_ITE302c SP26 FE RE_031.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 31"
+      },
+      "img": "imge/ite302/sp26_fe/031_ITE302c SP26 FE RE_031.webp"
+    },
+    {
+      "id": 272,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 32,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/032_ITE302c SP26 FE RE_032.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 32"
+      },
+      "img": "imge/ite302/sp26_fe/032_ITE302c SP26 FE RE_032.webp"
+    },
+    {
+      "id": 273,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 33,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/033_ITE302c SP26 FE RE_033.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 33"
+      },
+      "img": "imge/ite302/sp26_fe/033_ITE302c SP26 FE RE_033.webp"
+    },
+    {
+      "id": 274,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 34,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/034_ITE302c SP26 FE RE_034.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 34"
+      },
+      "img": "imge/ite302/sp26_fe/034_ITE302c SP26 FE RE_034.webp"
+    },
+    {
+      "id": 275,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 35,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/035_ITE302c SP26 FE RE_035.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 35"
+      },
+      "img": "imge/ite302/sp26_fe/035_ITE302c SP26 FE RE_035.webp"
+    },
+    {
+      "id": 276,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 36,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/036_ITE302c SP26 FE RE_036.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 36"
+      },
+      "img": "imge/ite302/sp26_fe/036_ITE302c SP26 FE RE_036.webp"
+    },
+    {
+      "id": 277,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 37,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/037_ITE302c SP26 FE RE_037.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 37"
+      },
+      "img": "imge/ite302/sp26_fe/037_ITE302c SP26 FE RE_037.webp"
+    },
+    {
+      "id": 278,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 38,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/038_ITE302c SP26 FE RE_038.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 38"
+      },
+      "img": "imge/ite302/sp26_fe/038_ITE302c SP26 FE RE_038.webp"
+    },
+    {
+      "id": 279,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 39,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/039_ITE302c SP26 FE RE_039.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 39"
+      },
+      "img": "imge/ite302/sp26_fe/039_ITE302c SP26 FE RE_039.webp"
+    },
+    {
+      "id": 280,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 40,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/040_ITE302c SP26 FE RE_040.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 40"
+      },
+      "img": "imge/ite302/sp26_fe/040_ITE302c SP26 FE RE_040.webp"
+    },
+    {
+      "id": 281,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 41,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/041_ITE302c SP26 FE RE_041.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 41"
+      },
+      "img": "imge/ite302/sp26_fe/041_ITE302c SP26 FE RE_041.webp"
+    },
+    {
+      "id": 282,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 42,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/042_ITE302c SP26 FE RE_042.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 42"
+      },
+      "img": "imge/ite302/sp26_fe/042_ITE302c SP26 FE RE_042.webp"
+    },
+    {
+      "id": 283,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 43,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/043_ITE302c SP26 FE RE_043.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 43"
+      },
+      "img": "imge/ite302/sp26_fe/043_ITE302c SP26 FE RE_043.webp"
+    },
+    {
+      "id": 284,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 44,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/044_ITE302c SP26 FE RE_044.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 44"
+      },
+      "img": "imge/ite302/sp26_fe/044_ITE302c SP26 FE RE_044.webp"
+    },
+    {
+      "id": 285,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 45,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/045_ITE302c SP26 FE RE_045.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 45"
+      },
+      "img": "imge/ite302/sp26_fe/045_ITE302c SP26 FE RE_045.webp"
+    },
+    {
+      "id": 286,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 46,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/046_ITE302c SP26 FE RE_046.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 46"
+      },
+      "img": "imge/ite302/sp26_fe/046_ITE302c SP26 FE RE_046.webp"
+    },
+    {
+      "id": 287,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 47,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/047_ITE302c SP26 FE RE_047.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 47"
+      },
+      "img": "imge/ite302/sp26_fe/047_ITE302c SP26 FE RE_047.webp"
+    },
+    {
+      "id": 288,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 48,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/048_ITE302c SP26 FE RE_048.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 48"
+      },
+      "img": "imge/ite302/sp26_fe/048_ITE302c SP26 FE RE_048.webp"
+    },
+    {
+      "id": 289,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 49,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/049_ITE302c SP26 FE RE_049.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 49"
+      },
+      "img": "imge/ite302/sp26_fe/049_ITE302c SP26 FE RE_049.webp"
+    },
+    {
+      "id": 290,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 50,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/050_ITE302c SP26 FE RE_050.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 50"
+      },
+      "img": "imge/ite302/sp26_fe/050_ITE302c SP26 FE RE_050.webp"
+    },
+    {
+      "id": 291,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 51,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/051_ITE302c SP26 FE RE_051.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 51"
+      },
+      "img": "imge/ite302/sp26_fe/051_ITE302c SP26 FE RE_051.webp"
+    },
+    {
+      "id": 292,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 52,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/052_ITE302c SP26 FE RE_052.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 52"
+      },
+      "img": "imge/ite302/sp26_fe/052_ITE302c SP26 FE RE_052.webp"
+    },
+    {
+      "id": 293,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 53,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/053_ITE302c SP26 FE RE_053.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 53"
+      },
+      "img": "imge/ite302/sp26_fe/053_ITE302c SP26 FE RE_053.webp"
+    },
+    {
+      "id": 294,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 54,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/054_ITE302c SP26 FE RE_054.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 54"
+      },
+      "img": "imge/ite302/sp26_fe/054_ITE302c SP26 FE RE_054.webp"
+    },
+    {
+      "id": 295,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 55,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/055_ITE302c SP26 FE RE_055.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 55"
+      },
+      "img": "imge/ite302/sp26_fe/055_ITE302c SP26 FE RE_055.webp"
+    },
+    {
+      "id": 296,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 56,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/056_ITE302c SP26 FE RE_056.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 56"
+      },
+      "img": "imge/ite302/sp26_fe/056_ITE302c SP26 FE RE_056.webp"
+    },
+    {
+      "id": 297,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 57,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/057_ITE302c SP26 FE RE_057.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 57"
+      },
+      "img": "imge/ite302/sp26_fe/057_ITE302c SP26 FE RE_057.webp"
+    },
+    {
+      "id": 298,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 58,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/058_ITE302c SP26 FE RE_058.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 58"
+      },
+      "img": "imge/ite302/sp26_fe/058_ITE302c SP26 FE RE_058.webp"
+    },
+    {
+      "id": 299,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 59,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/059_ITE302c SP26 FE RE_059.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 59"
+      },
+      "img": "imge/ite302/sp26_fe/059_ITE302c SP26 FE RE_059.webp"
+    },
+    {
+      "id": 300,
+      "task": "sp26_fe",
+      "taskLabel": "SP26 - FE",
+      "num": 60,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp26_fe/060_ITE302c SP26 FE RE_060.webp",
+        "imgLabel": "ITE302c SP26 - FE - Câu 60"
+      },
+      "img": "imge/ite302/sp26_fe/060_ITE302c SP26 FE RE_060.webp"
+    }
+  ]
+}

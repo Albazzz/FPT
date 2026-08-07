@@ -1,0 +1,1148 @@
+{
+  "subject": "ite302",
+  "task": "su25_fe",
+  "taskLabel": "SU25 - FE",
+  "count": 60,
+  "questions": [
+    {
+      "id": 121,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 1,
+      "question": "Which of the following risk analysis methods use words like\" likely,\"\" unlikely,\" and\" rare\" to describe the likelihood of risk, and words like \" low,\"“medium,\" and \" high\" to describe the impact of risk? (Select two.)",
+      "options": {
+        "A": "Semi-qualitativeanalysis",
+        "B": "Quantitativeanalysis",
+        "C": "Semi-quantitativeanalysis",
+        "D": "Qualitativeanalysis"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/001_ITE302c SU25 FE_001.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 1"
+      },
+      "img": "imge/ite302/su25_fe/001_ITE302c SU25 FE_001.webp"
+    },
+    {
+      "id": 122,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 2,
+      "question": "In reverse-engineering a double coin flip differential model, what would be the amount of truthful \" yes/no\" responses inourdataset?",
+      "options": {
+        "A": "75%",
+        "B": "25%",
+        "C": "100%",
+        "D": "50%"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/002_ITE302c SU25 FE_002.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 2"
+      },
+      "img": "imge/ite302/su25_fe/002_ITE302c SU25 FE_002.webp"
+    },
+    {
+      "id": 123,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 3,
+      "question": "During cross-validation, which of the following dataset splits is used to tune the performance of a model?",
+      "options": {
+        "A": "Training set",
+        "B": "Testset",
+        "C": "Validationtest",
+        "D": "Unit test"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/003_ITE302c SU25 FE_003.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 3"
+      },
+      "img": "imge/ite302/su25_fe/003_ITE302c SU25 FE_003.webp"
+    },
+    {
+      "id": 124,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 4,
+      "question": "When used in recommendation engines, explainable algorithms can help answer the question of",
+      "options": {
+        "A": "why?",
+        "B": "how?",
+        "C": "who?",
+        "D": "what?"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/004_ITE302c SU25 FE_004.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 4"
+      },
+      "img": "imge/ite302/su25_fe/004_ITE302c SU25 FE_004.webp"
+    },
+    {
+      "id": 125,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 5,
+      "question": "Which of the following is a recommended security practice for machine learning datasets?",
+      "options": {
+        "A": "Ensureyourteam isfull ofdifferentperspectives",
+        "B": "Enactasounddatagovernancestructure",
+        "C": "Perform threat modeling with beneficial algorithms",
+        "D": "Createachainofcommand"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/005_ITE302c SU25 FE_005.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 5"
+      },
+      "img": "imge/ite302/su25_fe/005_ITE302c SU25 FE_005.webp"
+    },
+    {
+      "id": 126,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 6,
+      "question": "Which of the following are potential ethical benefits of conducting pilot testing prior to the release of emerging technologies?(Selecttwo.)",
+      "options": {
+        "A": "It certifies that a product's developers are legally accountable.",
+        "B": "Itminimizes the impactofanyethical issues whichmay emerge.",
+        "C": "It demonstrates that the system is functional as early as possible in orderto satisfy senior management andinvestorstakeholders.",
+        "D": "It reveals any gaps in accountability or auditability"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/006_ITE302c SU25 FE_006.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 6"
+      },
+      "img": "imge/ite302/su25_fe/006_ITE302c SU25 FE_006.webp"
+    },
+    {
+      "id": 127,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 7,
+      "question": "Differential privacy works by adding what to a dataset?",
+      "options": {
+        "A": "filters",
+        "B": "fairness scoring",
+        "C": "noise",
+        "D": "k-anonymity"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/007_ITE302c SU25 FE_007.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 7"
+      },
+      "img": "imge/ite302/su25_fe/007_ITE302c SU25 FE_007.webp"
+    },
+    {
+      "id": 128,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 8,
+      "question": "Which of the following describes the technique of homomorphic encryption?",
+      "options": {
+        "A": "A method of swapping public and private keys between hosts.",
+        "B": "A method of cryptography that hides data inside other data.",
+        "C": "A method of performing operations on encrypted data.",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/008_ITE302c SU25 FE_008.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 8"
+      },
+      "img": "imge/ite302/su25_fe/008_ITE302c SU25 FE_008.webp"
+    },
+    {
+      "id": 129,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 9,
+      "question": "Which team typically oversees penetration test operations and adherence to the rules of engagement (ROE)?",
+      "options": {
+        "A": "Blueteam",
+        "B": "Redteam",
+        "C": "Purpleteam",
+        "D": "Whiteteam"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/009_ITE302c SU25 FE_009.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 9"
+      },
+      "img": "imge/ite302/su25_fe/009_ITE302c SU25 FE_009.webp"
+    },
+    {
+      "id": 130,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 10,
+      "question": "Which of the following is a platform that includes hundreds of security exploit tools?",
+      "options": {
+        "A": "Zenmap",
+        "B": "Nmap",
+        "C": "Kali Linux",
+        "D": "Wireshark"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/010_ITE302c SU25 FE_010.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 10"
+      },
+      "img": "imge/ite302/su25_fe/010_ITE302c SU25 FE_010.webp"
+    },
+    {
+      "id": 131,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 11,
+      "question": "You want to solicit feedback from users who are seeking explanations about your Al products and services. So, you decide to place a form on your marketing website that users can fill out. Which of the following is the best way to structure that form for the purpose ofcollecting useful feedback?",
+      "options": {
+        "A": "Provide a drop-down menu of feedback categories that users can select from, with a promise that you'll follow up via email.",
+        "B": "Provide a series of open questions with a single-line entry field where users can provide short answers.",
+        "C": "Provide a series of yes or no questions with radio buttons where users select their respective answers.",
+        "D": "Provide a large, unrestricted text box where users can enter their thoughts at length."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/011_ITE302c SU25 FE_011.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 11"
+      },
+      "img": "imge/ite302/su25_fe/011_ITE302c SU25 FE_011.webp"
+    },
+    {
+      "id": 132,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 12,
+      "question": "Which of the following are fundamental risk management tasks? (Select two.)",
+      "options": {
+        "A": "Mitigation",
+        "B": "Authentication",
+        "C": "Compliance",
+        "D": "Identification"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/012_ITE302c SU25 FE_012.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 12"
+      },
+      "img": "imge/ite302/su25_fe/012_ITE302c SU25 FE_012.webp"
+    },
+    {
+      "id": 133,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 13,
+      "question": "Which of the following are important steps to document during an auditing process? (Select two.)",
+      "options": {
+        "A": "Provide significant advance notice before an audit.",
+        "B": "Specify and document what precisely is being audited.",
+        "C": "Specify a purpose for the audit or an agenda to be covered.",
+        "D": "Document the audit procedures to be followed."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/013_ITE302c SU25 FE_013.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 13"
+      },
+      "img": "imge/ite302/su25_fe/013_ITE302c SU25 FE_013.webp"
+    },
+    {
+      "id": 134,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 14,
+      "question": "Which of the following measures is best suited for reporting results to an audience?",
+      "options": {
+        "A": "Standarddeviation",
+        "B": "Variance",
+        "C": "Mode",
+        "D": "Median"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/014_ITE302c SU25 FE_014.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 14"
+      },
+      "img": "imge/ite302/su25_fe/014_ITE302c SU25 FE_014.webp"
+    },
+    {
+      "id": 135,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 15,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "group inclusion",
+        "B": "privacycolumns",
+        "C": "k-anonymity",
+        "D": "security issues"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/015_ITE302c SU25 FE_015.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 15"
+      },
+      "img": "imge/ite302/su25_fe/015_ITE302c SU25 FE_015.webp"
+    },
+    {
+      "id": 136,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 16,
+      "question": "The organization needs to ask itself about any quality control issues it may be having. Which of the following processes is mostsuitable forasking and answering thatquestion?",
+      "options": {
+        "A": "Businessimpactassessment",
+        "B": "Lessonslearnedreport",
+        "C": "Vulnerability audit",
+        "D": "Business continuityplan"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/016_ITE302c SU25 FE_016.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 16"
+      },
+      "img": "imge/ite302/su25_fe/016_ITE302c SU25 FE_016.webp"
+    },
+    {
+      "id": 137,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 17,
+      "question": "Why is it important to take a proactive approach to addressing liability issues?",
+      "options": {
+        "A": "The law often lags behind innovation.",
+        "B": "The law is not always applied consistently.",
+        "C": "The law is not always clear.",
+        "D": "The law often difficult to understand."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/017_ITE302c SU25 FE_017.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 17"
+      },
+      "img": "imge/ite302/su25_fe/017_ITE302c SU25 FE_017.webp"
+    },
+    {
+      "id": 138,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 18,
+      "question": "When you deliver periodic statements about a crisis to the media, what should the first statement do?",
+      "options": {
+        "A": "Provide in-depth details about the situation",
+        "B": "Survey public opinion of the organization",
+        "C": "Set the tone of what is to follow",
+        "D": "Acceptresponsibilityforperceivedproblems"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/018_ITE302c SU25 FE_018.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 18"
+      },
+      "img": "imge/ite302/su25_fe/018_ITE302c SU25 FE_018.webp"
+    },
+    {
+      "id": 139,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 19,
+      "question": "What is the benefit of hosting a virtual reality press conference over a traditional in-person press conference?",
+      "options": {
+        "A": "It willbeeasierto communicateyour overall message to your audience.",
+        "B": "The conference will be easily accessible to all willing participants.",
+        "C": "The conference can be interactive without the participants needing to be co-located.",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/019_ITE302c SU25 FE_019.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 19"
+      },
+      "img": "imge/ite302/su25_fe/019_ITE302c SU25 FE_019.webp"
+    },
+    {
+      "id": 140,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 20,
+      "question": "Which of the following are important factors to consider when developing a media campaign? (Select two.)",
+      "options": {
+        "A": "The environment in which the campaign will be launched",
+        "B": "The effect the campaign has on the organization's bottom line",
+        "C": "The time-sensitive nature of communication in the campaign",
+        "D": "The risks that will be talked about in the campaign"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/020_ITE302c SU25 FE_020.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 20"
+      },
+      "img": "imge/ite302/su25_fe/020_ITE302c SU25 FE_020.webp"
+    },
+    {
+      "id": 141,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 21,
+      "question": "Which of the following are pifalls in communicating risks to the organization? (select two.)",
+      "options": {
+        "A": "Havinga disjoinedmessage.",
+        "B": "Following up messaging with an audience.",
+        "C": "Notpayingattentiontotheflowofmessaging.",
+        "D": "Coordinatingamessagebetweendepartments"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/021_ITE302c SU25 FE_021.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 21"
+      },
+      "img": "imge/ite302/su25_fe/021_ITE302c SU25 FE_021.webp"
+    },
+    {
+      "id": 142,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 22,
+      "question": "Which ofthefollowing should be conducted as part of a risk communication strategy in order to ensure the organization is upholding its regulatory obligations?",
+      "options": {
+        "A": "Business impactassessment (BIA)",
+        "B": "Compliance audit",
+        "C": "Ethical riskreview",
+        "D": "Publicrelationscampaign"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/022_ITE302c SU25 FE_022.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 22"
+      },
+      "img": "imge/ite302/su25_fe/022_ITE302c SU25 FE_022.webp"
+    },
+    {
+      "id": 143,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 23,
+      "question": "Which of thefollowing describes the purpose of a business impact assessment (BIA)?",
+      "options": {
+        "A": "It helps you predict business interruptions and develop recovery strategies.",
+        "B": "It helps you identify what risks you can accept or transfer to third party.",
+        "C": "It help you evaluate how a product or service could fail to apply ethical values to a society.",
+        "D": "It helps you identify what risks you can accept or transfer to your customers."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/023_ITE302c SU25 FE_023.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 23"
+      },
+      "img": "imge/ite302/su25_fe/023_ITE302c SU25 FE_023.webp"
+    },
+    {
+      "id": 144,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 24,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "It proves that you are completely equipped to address any ethical risks in your data-driven systems.",
+        "B": "It lets stakeholders know that the organization cannot address ethical risks in data-driven systems without inputfromstakeholders first.",
+        "C": "It helps the organization avoid legal trouble during the development and deployment of data-driven systems.",
+        "D": "It demonstrates that the organization is committed to accountability and transparency in their data-driven systems."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/024_ITE302c SU25 FE_024.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 24"
+      },
+      "img": "imge/ite302/su25_fe/024_ITE302c SU25 FE_024.webp"
+    },
+    {
+      "id": 145,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 25,
+      "question": "Why is it important to categorize ethical risks into different types? (Select two.)",
+      "options": {
+        "A": "It makes it easier for us to identify and manage different types of risks.",
+        "B": "It ensures that customers and other external stakeholders know that we take ethical risks seriously",
+        "C": "It helps us understand the many complexities involved in different types of ethical risks.",
+        "D": "It helps us consider risk mitigation in terms of universal tactics that apply to all potential kinds of ethical risk."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/025_ITE302c SU25 FE_025.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 25"
+      },
+      "img": "imge/ite302/su25_fe/025_ITE302c SU25 FE_025.webp"
+    },
+    {
+      "id": 146,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 26,
+      "question": "What is a likely outcome for a weather app using a learning algorithm to figure out where to put their future weatherstations?",
+      "options": {
+        "A": "Accessingweatherforecastsfromlocalbroadcasts",
+        "B": "Storing data in an AWS instance with allweather stations in the country",
+        "C": "Collecting weather data every time the app is opened, knowing the temperature where the app is being used",
+        "D": "Collecting location data every time the app is opened, potentially learning where a user lives, works, etc."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/026_ITE302c SU25 FE_026.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 26"
+      },
+      "img": "imge/ite302/su25_fe/026_ITE302c SU25 FE_026.webp"
+    },
+    {
+      "id": 147,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 27,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "GeneralAl",
+        "B": "Outwit Al",
+        "C": "Specific Al",
+        "D": "EncompassingAl"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/027_ITE302c SU25 FE_027.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 27"
+      },
+      "img": "imge/ite302/su25_fe/027_ITE302c SU25 FE_027.webp"
+    },
+    {
+      "id": 148,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 28,
+      "question": "Which of the following best describes what an algorithm is?",
+      "options": {
+        "A": "arecipethatacomputerusestosolveproblems",
+        "B": "a type of process a human uses to write down what steps need to happen to get a problem solved",
+        "C": "a type ofcomputer that calculates problem-solving methods",
+        "D": "a list of ingredients a computeruses to generate problems to solve"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/028_ITE302c SU25 FE_028.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 28"
+      },
+      "img": "imge/ite302/su25_fe/028_ITE302c SU25 FE_028.webp"
+    },
+    {
+      "id": 149,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 29,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "the predicted result was negative, and the actual result was negative",
+        "B": "the predicted result was negative, and the actual result was positive",
+        "C": "the predicted result was positive, and the actual result was positive",
+        "D": "the predicted result was positive, and the actual result was negative"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/029_ITE302c SU25 FE_029.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 29"
+      },
+      "img": "imge/ite302/su25_fe/029_ITE302c SU25 FE_029.webp"
+    },
+    {
+      "id": 150,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 30,
+      "question": "An algorithm that takes an input, tries 10 different sorting techniques, and uses the best fit on the next 100 inputsisbestdescribedasa",
+      "options": {
+        "A": "implicitalgorithm",
+        "B": "data algorithm",
+        "C": "learningalgorithm",
+        "D": "explicit algorithm"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/030_ITE302c SU25 FE_030.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 30"
+      },
+      "img": "imge/ite302/su25_fe/030_ITE302c SU25 FE_030.webp"
+    },
+    {
+      "id": 151,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 31,
+      "question": "Are criminal justice riskassessments race-neutral?",
+      "options": {
+        "A": "No, it is designed with intention to be unfair.",
+        "B": "Yes, technology in itself is not racist.",
+        "C": "No, the data is biased as it reflects historical bias.",
+        "D": "Yes, algorithms replace human judgement and they are unbiased."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/031_ITE302c SU25 FE_031.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 31"
+      },
+      "img": "imge/ite302/su25_fe/031_ITE302c SU25 FE_031.webp"
+    },
+    {
+      "id": 152,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 32,
+      "question": "Which of the following are key principles of privacy by design? (Select two.)",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Organizations must not expose the operational practices and technologies used to protect user privacy.",
+        "C": "Organizations must keep the focus of privacy protections on the business rather than the user.",
+        "D": "Organizations must be proactive in protecting against privacy risks, not reactive."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/032_ITE302c SU25 FE_032.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 32"
+      },
+      "img": "imge/ite302/su25_fe/032_ITE302c SU25 FE_032.webp"
+    },
+    {
+      "id": 153,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 33,
+      "question": "Which of the following elements are important aspects of ethical integrity with regards to data? (Select two.)",
+      "options": {
+        "A": "If the holders ofdata are trustworthy entities.",
+        "B": "Whether the data was gathered in an ethical manner.",
+        "C": "If the data is commercially viable or monetarily valuable.",
+        "D": "What type of data (audio, visual, etc.) is being collected and/or utilized."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/033_ITE302c SU25 FE_033.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 33"
+      },
+      "img": "imge/ite302/su25_fe/033_ITE302c SU25 FE_033.webp"
+    },
+    {
+      "id": 154,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 34,
+      "question": "When building a predictive model, what is the goal of the deployment phase?",
+      "options": {
+        "A": "To plug in 40% of your dataset, testing the model's accuracy",
+        "B": "To use the model in real-life predictions, monitoring the error rate and accuracy",
+        "C": "To get the model to accept new inputs, train, and repeat training until it finds a better curve",
+        "D": "To specify the type of algorithm the model should use and make sure the data is cleaned/formatted"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/034_ITE302c SU25 FE_034.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 34"
+      },
+      "img": "imge/ite302/su25_fe/034_ITE302c SU25 FE_034.webp"
+    },
+    {
+      "id": 155,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 35,
+      "question": "Whichof thefollowingare examples of howAlcan limit human autonomy? (Selecttwo.)",
+      "options": {
+        "A": "Weapon systems can limit human autonomy as humans may not have decision-making capability or understand the decision making.",
+        "B": "Al systems might impact certain vulnerable groups such as the elderly and children differently than the rest of the population, which could limit those groups'autonomy.",
+        "C": "Al systems can assist individuals with automated, repetitive, or dangerous tasks.",
+        "D": "Al systems can perform tasks that humans cannot, such as processing millions of data records in a matterofseconds."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/035_ITE302c SU25 FE_035.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 35"
+      },
+      "img": "imge/ite302/su25_fe/035_ITE302c SU25 FE_035.webp"
+    },
+    {
+      "id": 156,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 36,
+      "question": "Which type of bias causes people to trust an automated decision-making system (ADS) over a human's decision?",
+      "options": {
+        "A": "Implicit bias",
+        "B": "Automationbias",
+        "C": "Complacency bias",
+        "D": "Confirmation bias"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/036_ITE302c SU25 FE_036.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 36"
+      },
+      "img": "imge/ite302/su25_fe/036_ITE302c SU25 FE_036.webp"
+    },
+    {
+      "id": 157,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 37,
+      "question": "An unintended negative outcome of programming a broad goal into general inteligence is known as",
+      "options": {
+        "A": "an enduringoutput",
+        "B": "artificial sanctification",
+        "C": "perverse instantiation",
+        "D": "anethicaldilemma"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/037_ITE302c SU25 FE_037.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 37"
+      },
+      "img": "imge/ite302/su25_fe/037_ITE302c SU25 FE_037.webp"
+    },
+    {
+      "id": 158,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 38,
+      "question": "If you are doing an analysis of data to determine which of several small businesses you should purchase to gain the maximum benefit to your overall company finances, what type of analysis are you doing?",
+      "options": {
+        "A": "Descriptive",
+        "B": "Prescriptive",
+        "C": "Predictive",
+        "D": "Cumulative"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/038_ITE302c SU25 FE_038.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 38"
+      },
+      "img": "imge/ite302/su25_fe/038_ITE302c SU25 FE_038.webp"
+    },
+    {
+      "id": 159,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 39,
+      "question": "How does increasing Al performance often conflict with the desire for explainability?",
+      "options": {
+        "A": "Increasing Al performance sometimes reduces the transparency of input data used in training, making it moredifficultto explaindecision-makingprocesses.",
+        "B": "Increasing Al performance sometimes leads to greater model complexity, making it more difficult to explain decision-makingprocesses.",
+        "C": "Increasing Al performance sometimes leads to certain evaluation metrics no longer being useful, making it more difficult to explain decision-making processes.",
+        "D": "Increasing Al performance sometimes removes human-in-the-loop (HITL) methods, making it more difficult toexplaindecisi on-makingprocesses."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/039_ITE302c SU25 FE_039.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 39"
+      },
+      "img": "imge/ite302/su25_fe/039_ITE302c SU25 FE_039.webp"
+    },
+    {
+      "id": 160,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 40,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "moreaccurateandfairer",
+        "B": "lessaccurateand lessfair",
+        "C": "fairerbutless accurate",
+        "D": "lessfairbutmoreaccurate"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/040_ITE302c SU25 FE_040.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 40"
+      },
+      "img": "imge/ite302/su25_fe/040_ITE302c SU25 FE_040.webp"
+    },
+    {
+      "id": 161,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 41,
+      "question": "Which subset of transparency involves describing the system to a non-expert?",
+      "options": {
+        "A": "Explainability",
+        "B": "Interpretability",
+        "C": "Auditability",
+        "D": "Useability"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/041_ITE302c SU25 FE_041.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 41"
+      },
+      "img": "imge/ite302/su25_fe/041_ITE302c SU25 FE_041.webp"
+    },
+    {
+      "id": 162,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 42,
+      "question": "Which of the following ethical considerations should have priority in an emergency situation like the use of contact-tracing solutions during a pandemic? (Select two.)",
+      "options": {
+        "A": "Privacy",
+        "B": "Accountability",
+        "C": "Explainability",
+        "D": "Bias"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/042_ITE302c SU25 FE_042.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 42"
+      },
+      "img": "imge/ite302/su25_fe/042_ITE302c SU25 FE_042.webp"
+    },
+    {
+      "id": 163,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 43,
+      "question": "model can still be unfair even though it won't explicitly know which groups are being inputted into the system",
+      "options": {
+        "A": "biased training",
+        "B": "blind attribute",
+        "C": "single attribute",
+        "D": "false-negative optimized"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/043_ITE302c SU25 FE_043.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 43"
+      },
+      "img": "imge/ite302/su25_fe/043_ITE302c SU25 FE_043.webp"
+    },
+    {
+      "id": 164,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 44,
+      "question": "Fairness in machine learning can protect groups from bias, but can stll harm",
+      "options": {
+        "A": "training datasets",
+        "B": "researchers",
+        "C": "future models",
+        "D": "individuals within those groups"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/044_ITE302c SU25 FE_044.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 44"
+      },
+      "img": "imge/ite302/su25_fe/044_ITE302c SU25 FE_044.webp"
+    },
+    {
+      "id": 165,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 45,
+      "question": "Why do smart toys raise additional ethical concerns over those that are raised in the course of other products andservices thatuseAl?",
+      "options": {
+        "A": "They are used in the privacy of homes rather than in public settings, like other products or services.",
+        "B": "The smart toys store personal data on the device, which can be stolen.",
+        "C": "It is difficult to obtain informed consent for the use of the smart toy.",
+        "D": "Children are more susceptible to manipulation and therefore need extra protective measures."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/045_ITE302c SU25 FE_045.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 45"
+      },
+      "img": "imge/ite302/su25_fe/045_ITE302c SU25 FE_045.webp"
+    },
+    {
+      "id": 166,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 46,
+      "question": "Which of the following are important elements of the data minimization principle? (Select two.)",
+      "options": {
+        "A": "Only collect data that is strictly necessary",
+        "B": "Onlykeep dataforas long as it is needed",
+        "C": "Onlydeletedata that canbeeasily replaced",
+        "D": "Only compress data that needs to be kept as small as possible"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/046_ITE302c SU25 FE_046.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 46"
+      },
+      "img": "imge/ite302/su25_fe/046_ITE302c SU25 FE_046.webp"
+    },
+    {
+      "id": 167,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 47,
+      "question": "Which type of entity are the OECD Principles on Artificial Intelligence mostly geared towards?",
+      "options": {
+        "A": "Individuals",
+        "B": "Municipalgovernments",
+        "C": "Nationalgovernments",
+        "D": "Privatecorporations"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/047_ITE302c SU25 FE_047.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 47"
+      },
+      "img": "imge/ite302/su25_fe/047_ITE302c SU25 FE_047.webp"
+    },
+    {
+      "id": 168,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 48,
+      "question": "Which of the following describes an ethical framework?",
+      "options": {
+        "A": "Ethical frameworks raise timeless ethical questions that are not easily put into action.",
+        "B": "Ethical frameworks apply meta-ethical theories to everyday business operations.",
+        "C": "Ethical frameworks consolidate regulatory requirements for an industry.",
+        "D": "Ethical frameworks seek to mitigate ethical concerns by creating actionable steps"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/048_ITE302c SU25 FE_048.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 48"
+      },
+      "img": "imge/ite302/su25_fe/048_ITE302c SU25 FE_048.webp"
+    },
+    {
+      "id": 169,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 49,
+      "question": "Which organizational resource is most commonly used in terms of fostering an ethical organizational culture?",
+      "options": {
+        "A": "Physicalresources",
+        "B": "Informationalresources",
+        "C": "Financialresources",
+        "D": "Humanresources"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/049_ITE302c SU25 FE_049.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 49"
+      },
+      "img": "imge/ite302/su25_fe/049_ITE302c SU25 FE_049.webp"
+    },
+    {
+      "id": 170,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 50,
+      "question": "yourteam is undertaking?",
+      "options": {
+        "A": "Development",
+        "B": "Deployment",
+        "C": "Design",
+        "D": "Conception"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/050_ITE302c SU25 FE_050.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 50"
+      },
+      "img": "imge/ite302/su25_fe/050_ITE302c SU25 FE_050.webp"
+    },
+    {
+      "id": 171,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 51,
+      "question": "How can the human resourcesdepartment helpbuildanethical organizational culture?",
+      "options": {
+        "A": "Hiring candidates based on their technical skills.",
+        "B": "Hiring candidates based on their culture fit.",
+        "C": "Hiring candidates based on theirleadership skills.",
+        "D": "Hiring candidates based on their soft skills"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/051_ITE302c SU25 FE_051.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 51"
+      },
+      "img": "imge/ite302/su25_fe/051_ITE302c SU25 FE_051.webp"
+    },
+    {
+      "id": 172,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 52,
+      "question": "Is an open door policy equivalent to ensuring employee voice?",
+      "options": {
+        "A": "No, because an open door policy is the opposite of employee voice.",
+        "B": "Yes, because both allow employees to speak up.",
+        "C": "Yes, because an open door policy is essential for employee voice.",
+        "D": "No, because an open door policy does not ensure employees feel heard"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/052_ITE302c SU25 FE_052.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 52"
+      },
+      "img": "imge/ite302/su25_fe/052_ITE302c SU25 FE_052.webp"
+    },
+    {
+      "id": 173,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 53,
+      "question": "Which of the following presents the most important argument for why we need to consider the impact of Al on labor in the design, development, and deployment of data-driven technology?",
+      "options": {
+        "A": "There is still a need for human workers in human-in-the-loop mechanisms.",
+        "B": "The organization would like to avoid having to deal with union concerns.",
+        "C": "There may be an impact on worker productivity if they are not included in all phases.",
+        "D": "There might be potential labor rights and human rights violations."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/053_ITE302c SU25 FE_053.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 53"
+      },
+      "img": "imge/ite302/su25_fe/053_ITE302c SU25 FE_053.webp"
+    },
+    {
+      "id": 174,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 54,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Fair competition prevents predatory pricing.",
+        "B": "Fair competition builds user trust in technology as a whole.",
+        "C": "Fair competition provides products choice to users.",
+        "D": "Faircompetition provides service choiceto users."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/054_ITE302c SU25 FE_054.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 54"
+      },
+      "img": "imge/ite302/su25_fe/054_ITE302c SU25 FE_054.webp"
+    },
+    {
+      "id": 175,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 55,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "Moreemployeesarelikelytoswitchcareers.",
+        "B": "Employees willfeel a sense of responsibility and loyalty.",
+        "C": "Employees are more likelyto listento theirsuperiors.",
+        "D": "Thecompanywill getan increase instock value."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/055_ITE302c SU25 FE_055.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 55"
+      },
+      "img": "imge/ite302/su25_fe/055_ITE302c SU25 FE_055.webp"
+    },
+    {
+      "id": 176,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 56,
+      "question": "To which of the following groups would a code of ethics not be applicable?",
+      "options": {
+        "A": "Developers of the data-driven technology system",
+        "B": "Designers of the data-driven technology system",
+        "C": "Business managers of the data-driven technology system",
+        "D": "Data subjects of the data-driven technology system"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/056_ITE302c SU25 FE_056.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 56"
+      },
+      "img": "imge/ite302/su25_fe/056_ITE302c SU25 FE_056.webp"
+    },
+    {
+      "id": 177,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 57,
+      "question": "Which of the following is a misuse of intellectual property (iP) when it comes to ethical accountability for an organization?",
+      "options": {
+        "A": "Collecting returns on investments made in researchand development.",
+        "B": "Filing a patent for the IP that makes non-obvious information known to the public.",
+        "C": "Enhancing the security posture of a product or service.",
+        "D": "UsingIPas adefensivemechanismtoeschewtransparencyrequirements."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/057_ITE302c SU25 FE_057.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 57"
+      },
+      "img": "imge/ite302/su25_fe/057_ITE302c SU25 FE_057.webp"
+    },
+    {
+      "id": 178,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 58,
+      "question": "Which of the following is a notable aspect of the Personal Information Protection and Electronic Documents Act (PIPEDA) when compared to similar laws and regulations?",
+      "options": {
+        "A": "Its exclusive focus on a single domain rather than a breadth of domains",
+        "B": "Theearlydateofits inauguration",
+        "C": "Its nationwide scopeand specific nationalfocus",
+        "D": "A stipulation to continue providing service even if data usage is denied"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/058_ITE302c SU25 FE_058.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 58"
+      },
+      "img": "imge/ite302/su25_fe/058_ITE302c SU25 FE_058.webp"
+    },
+    {
+      "id": 179,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 59,
+      "question": "Why is the question of robot rights and emancipation one that isn't as important as addressing issues of bias, privacy, transparency, and other principles discussed in the various ethicalframeworks?",
+      "options": {
+        "A": "These rights necessitate that robots become sentient entities, which is currently not feasible.",
+        "B": "Humans are anthropocentric and don't want to extend rights to other sentient entities.",
+        "C": "There is no legal precedent for granting rights to entities that are not humans.",
+        "D": "Robots aremechanical instruments and thereforedon't deserveto have rights."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/059_ITE302c SU25 FE_059.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 59"
+      },
+      "img": "imge/ite302/su25_fe/059_ITE302c SU25 FE_059.webp"
+    },
+    {
+      "id": 180,
+      "task": "su25_fe",
+      "taskLabel": "SU25 - FE",
+      "num": 60,
+      "question": "What is the function of a red team in a penetration testing exercise?",
+      "options": {
+        "A": "To conduct the simulated attacks.",
+        "B": "To defend against the simulated attacks.",
+        "C": "To officiate the simulated attacks.",
+        "D": "Todisabletheattacks."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/su25_fe/060_ITE302c SU25 FE_060.webp",
+        "imgLabel": "ITE302c SU25 - FE - Câu 60"
+      },
+      "img": "imge/ite302/su25_fe/060_ITE302c SU25 FE_060.webp"
+    }
+  ]
+}

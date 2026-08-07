@@ -137,6 +137,7 @@ window.QUIZ_SUBJECTS = {
       { id: "su24_fe", label: "SU24 FE", icon: "fa-file" },
       { id: "sp24_fe_re", label: "SP24 FE RE", icon: "fa-file-circle-check" },
       { id: "sp24_fe", label: "SP24 FE", icon: "fa-file" },
+      { id: "ite_unique", label: "Đề không trùng", icon: "fa-circle-check" },
       { id: "all", label: "Tất cả", icon: "fa-layer-group" },
     ],
     defaultTask: "all",

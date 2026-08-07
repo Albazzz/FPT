@@ -1,0 +1,22 @@
+{
+  "subject": "ite302",
+  "total": 360,
+  "tasks": [
+    "sp25_fe",
+    "sp25_fe_re",
+    "su25_fe",
+    "su25_fe_re",
+    "sp26_fe",
+    "sp26_fe_re"
+  ],
+  "counts": {
+    "sp25_fe": 60,
+    "sp25_fe_re": 60,
+    "su25_fe": 60,
+    "su25_fe_re": 60,
+    "sp26_fe": 60,
+    "sp26_fe_re": 60
+  },
+  "partsOf": "ite302",
+  "note": "Edit {task}.json then run: node quiz/tools/merge_by_task.mjs ite302"
+}

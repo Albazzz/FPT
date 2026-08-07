@@ -1,0 +1,1148 @@
+{
+  "subject": "ite302",
+  "task": "sp25_fe",
+  "taskLabel": "SP25 - FE",
+  "count": 60,
+  "questions": [
+    {
+      "id": 1,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 1,
+      "question": "Which type of edge case is caused by data outside the normal distribution?",
+      "options": {
+        "A": "Overftting",
+        "B": "Outliers",
+        "C": "Errors",
+        "D": "Noise"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/001_ITE302c SP25 FE_001.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 1"
+      },
+      "img": "imge/ite302/sp25_fe/001_ITE302c SP25 FE_001.webp"
+    },
+    {
+      "id": 2,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 2,
+      "question": "Which of the following types of malware monitors a user's behavior without their knowledge or permission?",
+      "options": {
+        "A": "Virus",
+        "B": "Spyware",
+        "C": "Ransomware",
+        "D": "Trojanhorse"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/002_ITE302c SP25 FE_002.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 2"
+      },
+      "img": "imge/ite302/sp25_fe/002_ITE302c SP25 FE_002.webp"
+    },
+    {
+      "id": 3,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 3,
+      "question": "What kind of shape does a normal distribution take on when plotted in histogram?",
+      "options": {
+        "A": "Tail shape",
+        "B": "Squareshape",
+        "C": "Bell shape",
+        "D": "Treeshape"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/003_ITE302c SP25 FE_003.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 3"
+      },
+      "img": "imge/ite302/sp25_fe/003_ITE302c SP25 FE_003.webp"
+    },
+    {
+      "id": 4,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 4,
+      "question": "Which of the following describe a process of cross-correlation of data? (Select two.)",
+      "options": {
+        "A": "Discoveringnew informationvia inference",
+        "B": "Analysing an individual's emotional stimulus and response patterns",
+        "C": "Comparingmultiple data points or sets",
+        "D": "Comparing people of different demographic groups"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/004_ITE302c SP25 FE_004.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 4"
+      },
+      "img": "imge/ite302/sp25_fe/004_ITE302c SP25 FE_004.webp"
+    },
+    {
+      "id": 5,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 5,
+      "question": "Which of the following elements should be communicated with end users when negotiating ethical access to a user's data? (Selecttwo.)",
+      "options": {
+        "A": "Themonetaryvalueofthatdata",
+        "B": "An offer of money or other incentives to relinquish user's rights",
+        "C": "The intentionbehindacertainactivityorrequest",
+        "D": "Arequestforconsenttoperformanacti on"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/005_ITE302c SP25 FE_005.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 5"
+      },
+      "img": "imge/ite302/sp25_fe/005_ITE302c SP25 FE_005.webp"
+    },
+    {
+      "id": 6,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 6,
+      "question": "Delete unused data is amethodof dataminimization",
+      "options": {
+        "A": "early and often",
+        "B": "before threat modeling",
+        "C": "afterfairness preparations",
+        "D": "before modeling"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/006_ITE302c SP25 FE_006.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 6"
+      },
+      "img": "imge/ite302/sp25_fe/006_ITE302c SP25 FE_006.webp"
+    },
+    {
+      "id": 7,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 7,
+      "question": "Which of the following are common key performance indicators (KPls) within dashboards of data-driven systems?(Selecttwo.)",
+      "options": {
+        "A": "Modeltrainingtime",
+        "B": "Earnings before interest, taxes, depreciation, and amortization (EBITDA)",
+        "C": "Operatingcashflowforecast",
+        "D": "Performancemetrics, suchasaccuracyandcostfunctions"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/007_ITE302c SP25 FE_007.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 7"
+      },
+      "img": "imge/ite302/sp25_fe/007_ITE302c SP25 FE_007.webp"
+    },
+    {
+      "id": 8,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 8,
+      "question": "K-anonymity in a dataset is achieved when each individual cannot be",
+      "options": {
+        "A": "distinguished from at least K individuals who are also in the dataset",
+        "B": "reidentified inK datasets",
+        "C": "hidden from a quasi-identifier column as long as K individuals belong",
+        "D": "harmed from datasets with K individuals belonging to the sensitive class"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/008_ITE302c SP25 FE_008.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 8"
+      },
+      "img": "imge/ite302/sp25_fe/008_ITE302c SP25 FE_008.webp"
+    },
+    {
+      "id": 9,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 9,
+      "question": "Whatdoestheacronym RACIstand for?",
+      "options": {
+        "A": "Relatable, Agreeable, Commendable, lrascible",
+        "B": "Responsible, Accessible, Consulted, Improvised",
+        "C": "Redesignable, Accessible, Collected, Informative",
+        "D": "Responsible, Accountable, Consulted, Informed"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/009_ITE302c SP25 FE_009.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 9"
+      },
+      "img": "imge/ite302/sp25_fe/009_ITE302c SP25 FE_009.webp"
+    },
+    {
+      "id": 10,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 10,
+      "question": "Which of the following describes extrajudicial judgment?",
+      "options": {
+        "A": "A ruling or scoring made outside of a court.",
+        "B": "Transferring defendants from one jurisdiction to another for trial.",
+        "C": "Applying law from one jurisdiction within another.",
+        "D": "Unusual interpretation of law outside of its typical meaning."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/010_ITE302c SP25 FE_010.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 10"
+      },
+      "img": "imge/ite302/sp25_fe/010_ITE302c SP25 FE_010.webp"
+    },
+    {
+      "id": 11,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 11,
+      "question": "Which of thefollowing sources does a SIEM system typically pull data from? (Select two.)",
+      "options": {
+        "A": "Systemeventlogs",
+        "B": "Encrypted personal data",
+        "C": "Personnelemails",
+        "D": "Network intrusiondetectionalerts"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/011_ITE302c SP25 FE_011.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 11"
+      },
+      "img": "imge/ite302/sp25_fe/011_ITE302c SP25 FE_011.webp"
+    },
+    {
+      "id": 12,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 12,
+      "question": "Which of the following risk categories deals with stakeholder responsibility in creating and using data-driven technologies?",
+      "options": {
+        "A": "Explainability",
+        "B": "Accountability",
+        "C": "Transparency",
+        "D": "Understandability"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/012_ITE302c SP25 FE_012.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 12"
+      },
+      "img": "imge/ite302/sp25_fe/012_ITE302c SP25 FE_012.webp"
+    },
+    {
+      "id": 13,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 13,
+      "question": "Which of the following best describes the use case for zero-knowledge protocols (ZKPs)?",
+      "options": {
+        "A": "Choosing whatto do when you have zeroknowledgeof a subject",
+        "B": "Being made aware of when the battery in a product is past its zero point",
+        "C": "Proving that something exists, but notthe specifics",
+        "D": "Handling divide-by-zero errors in computing software"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/013_ITE302c SP25 FE_013.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 13"
+      },
+      "img": "imge/ite302/sp25_fe/013_ITE302c SP25 FE_013.webp"
+    },
+    {
+      "id": 14,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 14,
+      "question": "When it comes to protecting private data, which of the following could be the root cause of a problem?",
+      "options": {
+        "A": "Thedatawas storedinsecurely.",
+        "B": "The data was leaked online.",
+        "C": "Thedata was deletedfrom storage.",
+        "D": "Thedatawasbroken."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/014_ITE302c SP25 FE_014.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 14"
+      },
+      "img": "imge/ite302/sp25_fe/014_ITE302c SP25 FE_014.webp"
+    },
+    {
+      "id": 15,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 15,
+      "question": "Why is a model that has been overfitted to its training data a source of fairness risk?",
+      "options": {
+        "A": "Becausethe model includes toomuchnoise.",
+        "B": "Because themodel is too complex.",
+        "C": "Because the model won't generalize to the entire population.",
+        "D": "Becausethemodelhasatemporalbi as"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/015_ITE302c SP25 FE_015.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 15"
+      },
+      "img": "imge/ite302/sp25_fe/015_ITE302c SP25 FE_015.webp"
+    },
+    {
+      "id": 16,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 16,
+      "question": "Which of thefollowing are tools of an effectivemedia communication plan? (Selecttwo.)",
+      "options": {
+        "A": "Missionstatement",
+        "B": "Press release",
+        "C": "Public education campaign",
+        "D": "Video briefing"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/016_ITE302c SP25 FE_016.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 16"
+      },
+      "img": "imge/ite302/sp25_fe/016_ITE302c SP25 FE_016.webp"
+    },
+    {
+      "id": 17,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 17,
+      "question": "How does the low likelihood of a crisis relate to its potential impact?",
+      "options": {
+        "A": "A crisis with low likelihood tends to have moderate impact.",
+        "B": "A crisis with low likelihood tends to have high impact.",
+        "C": "A crisis with low likelihood tends to have little to no effect on its impact.",
+        "D": "A crisis with low likelihood tends to have low impact."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/017_ITE302c SP25 FE_017.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 17"
+      },
+      "img": "imge/ite302/sp25_fe/017_ITE302c SP25 FE_017.webp"
+    },
+    {
+      "id": 18,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 18,
+      "question": "perspective?(Selecttwo.)",
+      "options": {
+        "A": "Providing prompt responses to customer questions about the decisions made by data-driven systems.",
+        "B": "Providing information about data-driven systems in simple, easy-to-understand terms.",
+        "C": "Providing in-depth white papers on the algorithms that underlie data-driven systems.",
+        "D": "Providing guidelines for how customers can keep their private data secure when using data-driven systems."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/018_ITE302c SP25 FE_018.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 18"
+      },
+      "img": "imge/ite302/sp25_fe/018_ITE302c SP25 FE_018.webp"
+    },
+    {
+      "id": 19,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 19,
+      "question": "How can you leverage emerging technologies like Al in disaster recovery plans (DRP)?",
+      "options": {
+        "A": "By using data-driven techniques to inform the strategies behind the DRP.",
+        "B": "By using natural language processing (NLP) techniques to ensure the DRP document is understandable and freeoftypographic errors.",
+        "C": "By using deep learning techniques to bolster the organization's defense against disasters.",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/019_ITE302c SP25 FE_019.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 19"
+      },
+      "img": "imge/ite302/sp25_fe/019_ITE302c SP25 FE_019.webp"
+    },
+    {
+      "id": 20,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 20,
+      "question": "Which of the following is the most important idea that a crisis communication program should manage?",
+      "options": {
+        "A": "Thepublic'sperceptionofacr is is",
+        "B": "The real-worldeffects ofa crisis",
+        "C": "The individual detailsof acrisis",
+        "D": "Internal stakeholderconsensus about howto approachacrisis"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/020_ITE302c SP25 FE_020.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 20"
+      },
+      "img": "imge/ite302/sp25_fe/020_ITE302c SP25 FE_020.webp"
+    },
+    {
+      "id": 21,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 21,
+      "question": "Which of the following is an adequate definition of a stakeholder?",
+      "options": {
+        "A": "All internalemployees.",
+        "B": "All internal employees and external customers.",
+        "C": "Phương án C (Xem hình)",
+        "D": "All people in the company."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/021_ITE302c SP25 FE_021.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 21"
+      },
+      "img": "imge/ite302/sp25_fe/021_ITE302c SP25 FE_021.webp"
+    },
+    {
+      "id": 22,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 22,
+      "question": "theground level, not just managers and other higher-ups?",
+      "options": {
+        "A": "They aremorelikely tobe candid andgive forthright responses.",
+        "B": "They may have more institutional knowledge about a subject than managers.",
+        "C": "They are more likely to find the time to complete an interview or survey.",
+        "D": "Theyhaveagreaterobligationtoanswerquestions."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/022_ITE302c SP25 FE_022.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 22"
+      },
+      "img": "imge/ite302/sp25_fe/022_ITE302c SP25 FE_022.webp"
+    },
+    {
+      "id": 23,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 23,
+      "question": "What is the purpose of a holding statement in crisis and media communications?",
+      "options": {
+        "A": "To order the business to temporarily halt certain operations",
+        "B": "To retain the services of specific media outlets",
+        "C": "Topre-write communications beforethey areneeded",
+        "D": "To prevent personnelfrom communicating prematurely"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/023_ITE302c SP25 FE_023.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 23"
+      },
+      "img": "imge/ite302/sp25_fe/023_ITE302c SP25 FE_023.webp"
+    },
+    {
+      "id": 24,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 24,
+      "question": "Which of the following are useful strategies for communicating ethical risks to the organization? (Select two.)",
+      "options": {
+        "A": "Communicate information througha singlevoice",
+        "B": "Disseminate information in multiple formats",
+        "C": "Communicate information inreal time",
+        "D": "Provide information only when solicited"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/024_ITE302c SP25 FE_024.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 24"
+      },
+      "img": "imge/ite302/sp25_fe/024_ITE302c SP25 FE_024.webp"
+    },
+    {
+      "id": 25,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 25,
+      "question": "Which of the following are useful strategies for communicating ethical risks to the individual? (Select two.)",
+      "options": {
+        "A": "Ensure individuals understand the specific details of each risk they are affected by",
+        "B": "Communicate to individuals proactively rather than reactively",
+        "C": "Inform individuals of how they are obligated to mitigate risks to themselves",
+        "D": "Ensure individuals feel that they have input intothe process"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/025_ITE302c SP25 FE_025.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 25"
+      },
+      "img": "imge/ite302/sp25_fe/025_ITE302c SP25 FE_025.webp"
+    },
+    {
+      "id": 26,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 26,
+      "question": "In 2019,_% of equity-futures and cash-equity trades were executed by algorithms",
+      "options": {
+        "A": "1-5%",
+        "B": "80-90%",
+        "C": "20-30%",
+        "D": "11-17%"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/026_ITE302c SP25 FE_026.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 26"
+      },
+      "img": "imge/ite302/sp25_fe/026_ITE302c SP25 FE_026.webp"
+    },
+    {
+      "id": 27,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 27,
+      "question": "How do anonymized datasets fall shortof their goal of being anonymous?",
+      "options": {
+        "A": "Anonymized datasets can be re-identifyed by anyone holding the hash key",
+        "B": "Anonymized datasets aren't actually anonymous because many of the data fields can identify a user",
+        "C": "Anonymized datasets can be traced back to the individuals by looking at their browsing history in the app",
+        "D": "Anonymized datasets can be combined with other datasets, which can re-identify individuals"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/027_ITE302c SP25 FE_027.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 27"
+      },
+      "img": "imge/ite302/sp25_fe/027_ITE302c SP25 FE_027.webp"
+    },
+    {
+      "id": 28,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 28,
+      "question": "Which ofthefollowingdescribes the black boxproblem inAl?",
+      "options": {
+        "A": "It is difficult to understand the nature of data being used to train an Al model.",
+        "B": "It is difficult to understand how or why an Al system made a particular decision.",
+        "C": "It is difficult to understand the results that come from an Al system.",
+        "D": "It is difficult to understand the reports that generate by an Al system."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/028_ITE302c SP25 FE_028.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 28"
+      },
+      "img": "imge/ite302/sp25_fe/028_ITE302c SP25 FE_028.webp"
+    },
+    {
+      "id": 29,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 29,
+      "question": "Whatistheblackboxproblem?",
+      "options": {
+        "A": "When a model is deployed, but researchers are unable to figure out why it's making decisions",
+        "B": "The problem created when researchers don't create accurate attributes for a model",
+        "C": "The issue of not having enough data to accurately train a model",
+        "D": "When a model cannot accurately judge shape or color of objects due to missing data"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/029_ITE302c SP25 FE_029.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 29"
+      },
+      "img": "imge/ite302/sp25_fe/029_ITE302c SP25 FE_029.webp"
+    },
+    {
+      "id": 30,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 30,
+      "question": "When building a predictive model, what is the goal of the develop phase?",
+      "options": {
+        "A": "To plug in 40% of your dataset, testing the model's accuracy",
+        "B": "To get the model's error function below an acceptable percentage",
+        "C": "To specify the type of algorithm the model should use and make sure the data is cleaned/formatted",
+        "D": "To get the model to accept new inputs, train, and repeat training until it finds a better curve"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/030_ITE302c SP25 FE_030.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 30"
+      },
+      "img": "imge/ite302/sp25_fe/030_ITE302c SP25 FE_030.webp"
+    },
+    {
+      "id": 31,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 31,
+      "question": "Which of the following best describes why data is sometimes compared to oil? (Select two.)",
+      "options": {
+        "A": "Datacan be easily monopolized.",
+        "B": "Data can damage the environment.",
+        "C": "Data canbemonetarily valuable.",
+        "D": "Data can fuelalgorithmic technologies."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/031_ITE302c SP25 FE_031.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 31"
+      },
+      "img": "imge/ite302/sp25_fe/031_ITE302c SP25 FE_031.webp"
+    },
+    {
+      "id": 32,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 32,
+      "question": "Which of the following describe how adopting ethical practices can be a strategic differentiator? (Select three.)",
+      "options": {
+        "A": "Itwillbuildcustomertrust.",
+        "B": "It will support the development of strategic partnerships.",
+        "C": "It will ensure you comply with regulations.",
+        "D": "It will encourage applicants to apply foryour company."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/032_ITE302c SP25 FE_032.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 32"
+      },
+      "img": "imge/ite302/sp25_fe/032_ITE302c SP25 FE_032.webp"
+    },
+    {
+      "id": 33,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 33,
+      "question": "What does it mean to say that human rights are inalienable? (Select two.)",
+      "options": {
+        "A": "Inalienable rights are conditional.",
+        "B": "Inalienable rights are inherent in all human beings.",
+        "C": "Inalienable rights cannot be taken away except in extreme circumstances.",
+        "D": "Inalienable rights are derived from tradition."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/033_ITE302c SP25 FE_033.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 33"
+      },
+      "img": "imge/ite302/sp25_fe/033_ITE302c SP25 FE_033.webp"
+    },
+    {
+      "id": 34,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 34,
+      "question": "Whatisthepurposeofdifferentialprivacy?",
+      "options": {
+        "A": "To enable parties to share private data without revealing individuals represented in the data.",
+        "B": "To remove the direct identifiers that can be used to identify individuals.",
+        "C": "To only allow certain parties to access certainportions of the data.",
+        "D": "To ensure the data is completely confidential and cannot be read by unauthorized parties."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/034_ITE302c SP25 FE_034.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 34"
+      },
+      "img": "imge/ite302/sp25_fe/034_ITE302c SP25 FE_034.webp"
+    },
+    {
+      "id": 35,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 35,
+      "question": "How is a Machine Learning (ML) system different from Deep Learning (DL) system?",
+      "options": {
+        "A": "AMLsystemlearnsfrom itsmistakes.",
+        "B": "A ML system does all of the feature extraction and classification.",
+        "C": "A ML system needs a human to provide thefeature extraction.",
+        "D": "AMLsystemdoes not needs inputdata"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/035_ITE302c SP25 FE_035.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 35"
+      },
+      "img": "imge/ite302/sp25_fe/035_ITE302c SP25 FE_035.webp"
+    },
+    {
+      "id": 36,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 36,
+      "question": "describethatprocess?",
+      "options": {
+        "A": "Pipeline",
+        "B": "Workflow",
+        "C": "Swimland",
+        "D": "Usecase"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/036_ITE302c SP25 FE_036.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 36"
+      },
+      "img": "imge/ite302/sp25_fe/036_ITE302c SP25 FE_036.webp"
+    },
+    {
+      "id": 37,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 37,
+      "question": "Pseudocodecanbestbedefinedas",
+      "options": {
+        "A": "an explainable description of code that is meantfor humans, not computers",
+        "B": "a Python library for machine learning",
+        "C": "a middle ground between code and plain writing that can be fed into a computer",
+        "D": "a type of Javascriptthat is both human and machine-readable"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/037_ITE302c SP25 FE_037.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 37"
+      },
+      "img": "imge/ite302/sp25_fe/037_ITE302c SP25 FE_037.webp"
+    },
+    {
+      "id": 38,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 38,
+      "question": "Tomeasureapredictivemodel's accuracy, you",
+      "options": {
+        "A": "divide the number of predictions by the total dataset",
+        "B": "measure the ratio of themodel's error curve",
+        "C": "multiply the number of total predictions by the percentage of correct predictions",
+        "D": "divide the number of correct predictions by the total number of predictions"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/038_ITE302c SP25 FE_038.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 38"
+      },
+      "img": "imge/ite302/sp25_fe/038_ITE302c SP25 FE_038.webp"
+    },
+    {
+      "id": 39,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 39,
+      "question": "Which of the following is a good example of a feedback loop in machine learning? profile.When youbuy, yougo into that dataset",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "A shopping app tracks your purchases, and recommends new things to buy",
+        "C": "A social media site tracks engagement, uses an algorithm to surface posts you're likely to engage with, whichthengoesback intothealgorithm",
+        "D": "A social media site surfaces controversial posts, which make users more angry and lead to more angry posts onthe network"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/039_ITE302c SP25 FE_039.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 39"
+      },
+      "img": "imge/ite302/sp25_fe/039_ITE302c SP25 FE_039.webp"
+    },
+    {
+      "id": 40,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 40,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "We receive too much information andare overloaded.",
+        "B": "We use them to help remember things.",
+        "C": "They help us think logically instead of emotionally.",
+        "D": "They are taught to us in school."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/040_ITE302c SP25 FE_040.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 40"
+      },
+      "img": "imge/ite302/sp25_fe/040_ITE302c SP25 FE_040.webp"
+    },
+    {
+      "id": 41,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 41,
+      "question": "Dating algorithms become biased mostly through offering users",
+      "options": {
+        "A": "collaborativefiltering",
+        "B": "access to separate data models",
+        "C": "different ways to match with users",
+        "D": "unlimited matches perday"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/041_ITE302c SP25 FE_041.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 41"
+      },
+      "img": "imge/ite302/sp25_fe/041_ITE302c SP25 FE_041.webp"
+    },
+    {
+      "id": 42,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 42,
+      "question": "Howdoes the\" virtuous cycle\" thatbenefits Big Tech operate?",
+      "options": {
+        "A": "Organizations write algorithms with fewerbiases, whichleads to fairer outcomes.",
+        "B": "By acting virtuous, the public respects Big Tech more and more.",
+        "C": "Better classes of customers lead to richer and more refined data for algorithmic systems.",
+        "D": "Data-driven algorithms improve solutions, leading to new customers, and better data."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/042_ITE302c SP25 FE_042.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 42"
+      },
+      "img": "imge/ite302/sp25_fe/042_ITE302c SP25 FE_042.webp"
+    },
+    {
+      "id": 43,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 43,
+      "question": "Xem nội dung câu hỏi trong hình ảnh đính kèm bên dưới.",
+      "options": {
+        "A": "equalityoftrueoutcomes",
+        "B": "equality offalsenegatives",
+        "C": "equality of training data",
+        "D": "equalityofpredictionbias"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/043_ITE302c SP25 FE_043.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 43"
+      },
+      "img": "imge/ite302/sp25_fe/043_ITE302c SP25 FE_043.webp"
+    },
+    {
+      "id": 44,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 44,
+      "question": "Which of the following are advantages to adopting standards frameworks like ISO 27000? (Select two.)",
+      "options": {
+        "A": "Technology-specificfocus and precise implementati on instructions",
+        "B": "Formal certification processes that provide competitive advantage",
+        "C": "Regulatory weightand legal enforcement",
+        "D": "International support, recognition, and involvement"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/044_ITE302c SP25 FE_044.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 44"
+      },
+      "img": "imge/ite302/sp25_fe/044_ITE302c SP25 FE_044.webp"
+    },
+    {
+      "id": 45,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 45,
+      "question": "Which school of philosophical thought primarily advocates for a global moral code?",
+      "options": {
+        "A": "Utilitarianism",
+        "B": "Deontology",
+        "C": "Virtueethics",
+        "D": "Virtualethics"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/045_ITE302c SP25 FE_045.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 45"
+      },
+      "img": "imge/ite302/sp25_fe/045_ITE302c SP25 FE_045.webp"
+    },
+    {
+      "id": 46,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 46,
+      "question": "Asacognitivebi as, humansseelackofcontext/meaningaroundapiece of informationandtend to",
+      "options": {
+        "A": "fill ingaps withexistingknowledge",
+        "B": "usebiasedsources of research",
+        "C": "seek authorityfigures",
+        "D": "disagreewiththeirprevious beliefs"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/046_ITE302c SP25 FE_046.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 46"
+      },
+      "img": "imge/ite302/sp25_fe/046_ITE302c SP25 FE_046.webp"
+    },
+    {
+      "id": 47,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 47,
+      "question": "What is non-maleficence?",
+      "options": {
+        "A": "The principle of doing no harm.",
+        "B": "The principle of having no bias.",
+        "C": "The principle of having no security risk.",
+        "D": "The principle of having security risk."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/047_ITE302c SP25 FE_047.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 47"
+      },
+      "img": "imge/ite302/sp25_fe/047_ITE302c SP25 FE_047.webp"
+    },
+    {
+      "id": 48,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 48,
+      "question": "Which of the following are logical arguments in favor of an organization maintaining compliance? (Select two.)",
+      "options": {
+        "A": "Reducedtimetodeployment",
+        "B": "Avoidance of reputational damage",
+        "C": "Long-term cost savings duetoavoidingfines",
+        "D": "Reducedcostsofdevelopment"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/048_ITE302c SP25 FE_048.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 48"
+      },
+      "img": "imge/ite302/sp25_fe/048_ITE302c SP25 FE_048.webp"
+    },
+    {
+      "id": 49,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 49,
+      "question": "In Al, the principle of privacy is most commonly referred to in the context of which of the following concepts?",
+      "options": {
+        "A": "Dataprotection",
+        "B": "Transparency",
+        "C": "Personalprotection",
+        "D": "Humancontrol"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/049_ITE302c SP25 FE_049.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 49"
+      },
+      "img": "imge/ite302/sp25_fe/049_ITE302c SP25 FE_049.webp"
+    },
+    {
+      "id": 50,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 50,
+      "question": "Agoal of afair model's accuracy standards is to",
+      "options": {
+        "A": "minimize the error rate as long as parity is obtained",
+        "B": "minimize the fairness score as long as the error rate isn't affected",
+        "C": "minimize the quality metrics as long as the quantity metrics aren't affected",
+        "D": "minimize the error rate as long as the training data isn't affected"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/050_ITE302c SP25 FE_050.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 50"
+      },
+      "img": "imge/ite302/sp25_fe/050_ITE302c SP25 FE_050.webp"
+    },
+    {
+      "id": 51,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 51,
+      "question": "Why are environmental concerns important to consider in the ethical development of data-driven technologies?",
+      "options": {
+        "A": "Data-driven technologies can cause secondary, indirect, or cumulative effects on the environment that might impactpeople inthelongterm.",
+        "B": "Data-driven technologies directly impact the environment through the invasive mining of resources to createthetechnologies.",
+        "C": "Data-driven technologies directly impact the environment through pollution.",
+        "D": "Data-driven technologies directly impact living things via displacement."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/051_ITE302c SP25 FE_051.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 51"
+      },
+      "img": "imge/ite302/sp25_fe/051_ITE302c SP25 FE_051.webp"
+    },
+    {
+      "id": 52,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 52,
+      "question": "How could a board of ethics be an example of ethic washing?",
+      "options": {
+        "A": "If it has a wide variety of stakeholders.",
+        "B": "If it has a narrow list of values to guide its decisions.",
+        "C": "If it has no power to institute change.",
+        "D": "Ifithasalargenumberofstakeholders."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/052_ITE302c SP25 FE_052.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 52"
+      },
+      "img": "imge/ite302/sp25_fe/052_ITE302c SP25 FE_052.webp"
+    },
+    {
+      "id": 53,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 53,
+      "question": "Whatdoesaleadershipchampiondo?",
+      "options": {
+        "A": "Make decisions based on company values even in the face of adversity.",
+        "B": "Make decisions based on their personal opinions.",
+        "C": "Make decisions based on their popularity.",
+        "D": "Make decisions based on the brand name of the company"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/053_ITE302c SP25 FE_053.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 53"
+      },
+      "img": "imge/ite302/sp25_fe/053_ITE302c SP25 FE_053.webp"
+    },
+    {
+      "id": 54,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 54,
+      "question": "Which of the following describes the purpose of having an Ethics Board fora data-driven organization?",
+      "options": {
+        "A": "An Ethics Board can help maintain an organization's values-based intentions and increase transparency intohowtheyusedat a-driventechnologies.",
+        "B": "An Ethics Board can help maintain an organization's values-based intentions and decrease the inherent dangersofautonomoustechnologies.",
+        "C": "An Ethics Board can help maintain an organization's profit margins and increase transparency into how they increasetheirprofits.",
+        "D": "An Ethics Board can increase transparency into how the organization uses Al or autonomous technologies."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/054_ITE302c SP25 FE_054.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 54"
+      },
+      "img": "imge/ite302/sp25_fe/054_ITE302c SP25 FE_054.webp"
+    },
+    {
+      "id": 55,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 55,
+      "question": "Which of the following is a key element of communications with internal and external stakeholders regarding anorganization's ethicspolicies?",
+      "options": {
+        "A": "Simpletofollowexamples",
+        "B": "Daily communications",
+        "C": "Denseproceduraldescriptions",
+        "D": "Flexibleverbiage"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/055_ITE302c SP25 FE_055.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 55"
+      },
+      "img": "imge/ite302/sp25_fe/055_ITE302c SP25 FE_055.webp"
+    },
+    {
+      "id": 56,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 56,
+      "question": "Whichofthefollowingdescribeschangemanagement?",
+      "options": {
+        "A": "A collective term used to describe how employees are able to voicetheir concerns tofacilitate change in theirorganization.",
+        "B": "A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in fosteringanethicalorganizationalculture.",
+        "C": "A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in makingorganizationalchange.",
+        "D": "A collective term used to explain how organizations facilitate change in a product after receiving negative feedback."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/056_ITE302c SP25 FE_056.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 56"
+      },
+      "img": "imge/ite302/sp25_fe/056_ITE302c SP25 FE_056.webp"
+    },
+    {
+      "id": 57,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 57,
+      "question": "How is employee voice different than open door policy? communication. communication.",
+      "options": {
+        "A": "Phương án A (Xem hình)",
+        "B": "Phương án B (Xem hình)",
+        "C": "Phương án C (Xem hình)",
+        "D": "Phương án D (Xem hình)"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/057_ITE302c SP25 FE_057.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 57"
+      },
+      "img": "imge/ite302/sp25_fe/057_ITE302c SP25 FE_057.webp"
+    },
+    {
+      "id": 58,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 58,
+      "question": "Which of the following are possible causes of the limited adoption of a code of ethics within an organization? (Selecttwo).",
+      "options": {
+        "A": "Comprehensivecoverageofareasofconcernsbythecodeofethics",
+        "B": "Lack of clarity in the code ofethics",
+        "C": "Prescriptive language used in the code of ethics",
+        "D": "Lack of awareness of thecodeof ethics andwhere it ismeanttobe applied"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/058_ITE302c SP25 FE_058.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 58"
+      },
+      "img": "imge/ite302/sp25_fe/058_ITE302c SP25 FE_058.webp"
+    },
+    {
+      "id": 59,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 59,
+      "question": "Why is accountability an important principle to include in governance structures fordata-driven technologies?",
+      "options": {
+        "A": "Accountability in governance structures encourages allemployees tofeel responsibleforbuilding trustworthysystems.",
+        "B": "Accountability in governance structures encourages employees to put business needs first.",
+        "C": "Accountability in governance structures encourages management to hold employees accountable for their actions.",
+        "D": "Accountability in governance structures encourages some key employees to put business needs first."
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/059_ITE302c SP25 FE_059.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 59"
+      },
+      "img": "imge/ite302/sp25_fe/059_ITE302c SP25 FE_059.webp"
+    },
+    {
+      "id": 60,
+      "task": "sp25_fe",
+      "taskLabel": "SP25 - FE",
+      "num": 60,
+      "question": "Whichof the following is an important action needed for thefinalization of internal and external ethics policies beforeapproval?",
+      "options": {
+        "A": "Discarding open issues to provide a clean slate for the nextiterationof the policies",
+        "B": "Documenting the assumptions and choices made in the drafting of the policies",
+        "C": "Testing the policy in an already deployed project setting",
+        "D": "Ensuringthepolicies are thesame as thosefromotherpeerorganizations"
+      },
+      "answer": "A",
+      "meta": {
+        "img": "imge/ite302/sp25_fe/060_ITE302c SP25 FE_060.webp",
+        "imgLabel": "ITE302c SP25 - FE - Câu 60"
+      },
+      "img": "imge/ite302/sp25_fe/060_ITE302c SP25 FE_060.webp"
+    }
+  ]
+}

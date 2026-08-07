@@ -87,6 +87,10 @@
               <i class="fa-solid fa-code"></i>
               <span class="tab-text">PRN232</span>
             </a>
+            <a class="tab subject-tab" data-subject="ite" href="play.html?s=ite" role="tab">
+              <i class="fa-solid fa-scale-balanced"></i>
+              <span class="tab-text">ITE302c</span>
+            </a>
           </nav>
         </div>
 
@@ -96,9 +100,27 @@
             <i class="fa-solid fa-file-lines"></i>
             <span>Bài / đề</span>
           </div>
-          <nav class="tabs tabs-inline exam-tabs" id="taskTabs" role="tablist" aria-label="Chọn bài">
-            <!-- dynamic -->
-          </nav>
+          <div class="exam-dropdown" id="examDropdown">
+            <button type="button" class="exam-dropdown-toggle" id="examDropdownToggle" aria-haspopup="listbox" aria-expanded="false">
+              <div class="selected-info">
+                <span class="selected-text" id="selectedExamText">Đang tải...</span>
+                <span class="badge selected-count" id="selectedExamCount">0</span>
+              </div>
+              <i class="fa-solid fa-chevron-down toggle-icon"></i>
+            </button>
+            <div class="exam-dropdown-menu" id="examDropdownMenu">
+              <div class="exam-dropdown-search-wrap">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="search" class="exam-dropdown-search" id="examDropdownSearch" placeholder="Tìm đề..." autocomplete="off" aria-label="Tìm kiếm đề">
+              </div>
+              <div class="exam-dropdown-list" id="examDropdownList" role="listbox">
+                <!-- render động từ JS -->
+              </div>
+            </div>
+          </div>
+          <span class="exam-bar-hint">
+            <i class="fa-solid fa-circle-info"></i> Bấm để chọn đề khác hoặc gõ tìm kiếm lọc nhanh
+          </span>
         </div>
 
         <div class="workspace" id="workspace">

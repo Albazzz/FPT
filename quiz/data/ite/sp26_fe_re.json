@@ -72,10 +72,6 @@
     },
     {
       "id": 3,
-      "task": "sp26_fe_re",
-      "taskLabel": "SP26 FE RE",
-      "num": 3,
-      "chooseType": "Choose 2 answers",
       "question": "Which of the following are potential ethical benefits of conducting pilot testing prior to the release of emerging technologies? (Select two.)",
       "options": {
         "A": "It certifies that a product's developers are legally accountable.",
@@ -83,31 +79,27 @@
         "C": "It demonstrates that the system is functional as early as possible in order to satisfy senior management and investor stakeholders.",
         "D": "It reveals any gaps in accountability or auditability."
       },
-      "answer": "A, D",
-      "source": "ITE302c_SP26_FE_RE",
+      "answer": "B, D",
       "explanation": {
-        "questionVi": "Phương pháp nào sau đây giúp nâng cao tính giải thích được (Explainability) của mô hình học sâu? (Select two)",
+        "questionVi": "Những lợi ích đạo đức tiềm năng nào của việc tiến hành thử nghiệm thử (pilot testing) trước khi phát hành các công nghệ mới nổi? (Chọn hai)",
         "optionsVi": {
-          "A": "Sử dụng các kỹ thuật giải thích độc lập mô hình như LIME hoặc SHAP",
-          "B": "Tăng số lượng lớp ẩn trong mạng nơ-ron",
-          "C": "Mã hóa toàn bộ tập dữ liệu đầu vào",
-          "D": "Trực quan hóa trọng số và đặc trưng lớp trung gian (Feature visualization)"
+          "A": "Nó chứng nhận rằng các nhà phát triển sản phẩm chịu trách nhiệm pháp lý.",
+          "B": "Nó giảm thiểu tác động của bất kỳ vấn đề đạo đức nào có thể phát sinh.",
+          "C": "Nó chứng minh hệ thống hoạt động sớm nhất có thể để thỏa mãn ban quản lý và các cổ đông.",
+          "D": "Nó để lộ các khoảng trống trong trách nhiệm giải trình hoặc khả năng kiểm toán."
         },
-        "answerDisplay": "A. Using model-agnostic explanation techniques like LIME or SHAP & D. Feature visualization",
-        "concept": "• Giải thích mô hình hộp đen (Black Box) cần các công cụ hỗ trợ như LIME/SHAP và phương pháp trực quan hóa bản đồ nhiệt/đặc trưng trung gian.",
-        "whyCorrect": "• LIME/SHAP xấp xỉ hành vi local của mô hình, còn Feature visualization giúp mở hộp đen hiển thị lớp nhận diện.",
+        "answerDisplay": "B. It minimizes the impact of any ethical issues which may emerge & D. It reveals any gaps in accountability or auditability",
+        "concept": "• Pilot testing (thử nghiệm giới hạn trên phạm vi nhỏ) là bước đệm quan trọng trước khi triển khai rộng rãi để phát hiện sớm các tác động ngoài ý muốn của công nghệ.",
+        "whyCorrect": "• Thử nghiệm giới hạn giúp giảm thiểu thiệt hại thực tế của các rủi ro đạo đức (phương án B) và chỉ ra các lỗ hổng trong quy trình chịu trách nhiệm và kiểm toán hệ thống (phương án D).",
         "whyWrong": {
-          "B": "• Tăng lớp ẩn làm mạng nơ-ron phức tạp hơn và khó giải thích hơn.",
-          "C": "• Mã hóa dữ liệu là bảo mật mã hóa, không làm mô hình dễ giải thích hơn."
+          "A": "• Trách nhiệm pháp lý được điều chỉnh bởi luật pháp và quy chuẩn vận hành, không được tự động chứng nhận chỉ qua pilot testing.",
+          "C": "• Thỏa mãn cổ đông và chứng minh tính năng kỹ thuật là mục tiêu thương mại/vận hành, không phải lợi ích đạo đức của pilot testing."
         }
-      }
+      },
+      "num": 3
     },
     {
       "id": 4,
-      "task": "sp26_fe_re",
-      "taskLabel": "SP26 FE RE",
-      "num": 4,
-      "chooseType": "Choose 1 answer",
       "question": "Why is it important to consider Goodhart's law?",
       "options": {
         "A": "A model might optimize one metric at the expense of others.",
@@ -115,32 +107,28 @@
         "C": "A model might change its task from classification to regression, or vice versa.",
         "D": "A model very famous and can be apply to all domain."
       },
-      "answer": "C",
-      "source": "ITE302c_SP26_FE_RE",
+      "answer": "A",
       "explanation": {
-        "questionVi": "Trách nhiệm chính của nhà quản trị dữ liệu (Data Governance Officer) là gì?",
+        "questionVi": "Tại sao việc xem xét định luật Goodhart lại quan trọng?",
         "optionsVi": {
-          "A": "Trực tiếp viết mã nguồn cho mô hình deep learning",
-          "B": "Mua sắm thiết bị phần cứng máy chủ",
-          "C": "Thiết lập quy trình, chính sách và tiêu chuẩn chất lượng/an toàn dữ liệu",
-          "D": "Quản lý doanh số bán hàng của công ty"
+          "A": "Một mô hình có thể tối ưu hóa một chỉ số đo lường mà gây hại đến các chỉ số khác.",
+          "B": "Một mô hình có thể không hiệu quả trong lĩnh vực ứng dụng của nó.",
+          "C": "Một mô hình có thể thay đổi nhiệm vụ của nó từ phân loại sang hồi quy, hoặc ngược lại.",
+          "D": "Một mô hình rất nổi tiếng và có thể áp dụng cho mọi lĩnh vực."
         },
-        "answerDisplay": "C. Establishing data quality, security policies, and governance standards",
-        "concept": "• Quản trị dữ liệu (Data Governance) tập trung vào khía cạnh chính sách, tiêu chuẩn chất lượng, tuân thủ pháp lý và an toàn dữ liệu.",
-        "whyCorrect": "• Thiết lập quy chuẩn giúp dữ liệu toàn tổ chức luôn chuẩn xác, bảo mật và tuân thủ nguyên tắc đạo đức.",
+        "answerDisplay": "A. A model might optimize one metric at the expense of others.",
+        "concept": "• Định luật Goodhart phát biểu rằng: 'Khi một thước đo trở thành mục tiêu, nó không còn là một thước đo tốt nữa'. Trong học máy, việc cố gắng tối ưu hóa tối đa một chỉ số duy nhất có thể dẫn đến hành vi méo mó hoặc suy giảm chất lượng toàn cục.",
+        "whyCorrect": "• Tối ưu hóa thái quá một metric (như Accuracy) có thể làm giảm mạnh hiệu năng ở các khía cạnh quan trọng khác (như tính công bằng hoặc Recall trên mẫu hiếm).",
         "whyWrong": {
-          "A": "• Viết mã mô hình thuộc vai trò của Data Scientist / ML Engineer.",
-          "B": "• Mua sắm máy chủ thuộc vai trò của IT Operations / DevOps.",
-          "D": "• Quản lý doanh số thuộc về bộ phận Kinh doanh (Sales/Marketing)."
+          "B": "• Hiệu quả ứng dụng là mục tiêu chung, định luật Goodhart giải thích về sự méo mó khi chọn thước đo sai.",
+          "C": "• Mô hình không tự thay đổi loại bài toán từ phân loại sang hồi quy.",
+          "D": "• Định luật không liên quan đến mức độ nổi tiếng hay khả năng ứng dụng đa lĩnh vực của mô hình."
         }
-      }
+      },
+      "num": 4
     },
     {
       "id": 5,
-      "task": "sp26_fe_re",
-      "taskLabel": "SP26 FE RE",
-      "num": 5,
-      "chooseType": "Choose 2 answers",
       "question": "Which of the following elements should be communicated with end users when negotiating ethical access to a user's data? (Select two.)",
       "options": {
         "A": "The monetary value of that data",
@@ -148,32 +136,27 @@
         "C": "The intention behind a certain activity or request",
         "D": "A request for consent to perform an action"
       },
-      "answer": "B",
-      "source": "ITE302c_SP26_FE_RE",
+      "answer": "C, D",
       "explanation": {
-        "questionVi": "Vấn đề đạo đức chính khi áp dụng chấm điểm tín dụng tự động bằng AI là gì?",
+        "questionVi": "Những yếu tố nào sau đây nên được truyền đạt tới người dùng cuối khi đàm phán truy cập dữ liệu của họ một cách có đạo đức? (Chọn hai)",
         "optionsVi": {
-          "A": "Làm tăng chi phí duyệt hồ sơ",
-          "B": "Nguy cơ thiên vị và phân biệt đối xử dựa trên thuộc tính nhạy cảm gián tiếp",
-          "C": "Tốc độ phê duyệt quá chậm",
-          "D": "Tăng dung lượng lưu trữ cơ sở dữ liệu"
+          "A": "Giá trị tiền tệ của dữ liệu đó.",
+          "B": "Đưa ra lời đề nghị bằng tiền hoặc các khuyến khích khác để người dùng từ bỏ quyền của họ.",
+          "C": "Mục đích đằng sau một hoạt động hoặc yêu cầu thu thập dữ liệu cụ thể.",
+          "D": "Yêu cầu sự đồng ý (chấp thuận) của người dùng trước khi thực hiện hành động."
         },
-        "answerDisplay": "B. Risk of bias and indirect discrimination based on sensitive attributes",
-        "concept": "• AI tín dụng có thể sử dụng các thuộc tính thay thế (Proxy Attributes như mã zip, học vấn) dẫn tới phân biệt đối xử với nhóm yếu thế.",
-        "whyCorrect": "• Thiên vị thuật toán khiến người thuộc nhóm yếu thế bị từ chối vay bất công, vi phạm tính công bằng đạo đức.",
+        "answerDisplay": "C. The intention behind a certain activity or request & D. A request for consent to perform an action",
+        "concept": "• Đàm phán truy cập dữ liệu có đạo đức (ethical data access) đòi hỏi tính minh bạch tối đa và sự tôn trọng quyền tự quyết của người dùng.",
+        "whyCorrect": "• Người dùng cần biết rõ mục đích sử dụng dữ liệu (phương án C) và phải chủ động đồng ý thông qua cơ chế chấp thuận rõ ràng (phương án D).",
         "whyWrong": {
-          "A": "• Chấm điểm tự động làm giảm chi phí chứ không tăng.",
-          "C": "• Tốc độ phê duyệt của AI nhanh hơn con người gấp nhiều lần.",
-          "D": "• Dung lượng cơ sở dữ liệu là vấn đề kỹ thuật hạ tầng."
+          "A": "• Giá trị tiền tệ của dữ liệu là khía cạnh thương mại, không phải điều kiện tiên quyết cho việc tiếp cận có đạo đức.",
+          "B": "• Việc dùng tiền mua chuộc để ép người dùng từ bỏ các quyền cơ bản là phi đạo đức."
         }
-      }
+      },
+      "num": 5
     },
     {
       "id": 6,
-      "task": "sp26_fe_re",
-      "taskLabel": "SP26 FE RE",
-      "num": 6,
-      "chooseType": "Choose 1 answer",
       "question": "What are the limitations of training and testing an AI model in a specific context?",
       "options": {
         "A": "Models may perform poorly when applied to different contexts",
@@ -181,32 +164,28 @@
         "C": "Models reduce training data requirements when context is specified",
         "D": "Models automatically improve when tested in the same context"
       },
-      "answer": "B",
-      "source": "ITE302c_SP26_FE_RE",
+      "answer": "A",
       "explanation": {
-        "questionVi": "Khái niệm 'Data Provenance' (Nguồn gốc dữ liệu) đề cập đến điều gì?",
+        "questionVi": "Hạn chế của việc huấn luyện và kiểm thử một mô hình AI trong một bối cảnh (context) cụ thể là gì?",
         "optionsVi": {
-          "A": "Tốc độ tải dữ liệu từ máy chủ",
-          "B": "Lịch sử ghi lại nguồn gốc, quá trình di chuyển và các thay đổi của dữ liệu theo thời gian",
-          "C": "Dung lượng tính bằng Gigabyte của tập dữ liệu",
-          "D": "Thuật toán nén dữ liệu"
+          "A": "Mô hình có thể hoạt động kém khi áp dụng vào các bối cảnh khác.",
+          "B": "Mô hình đòi hỏi ít năng lượng tính toán hơn trong các bối cảnh giới hạn.",
+          "C": "Mô hình giảm yêu cầu dữ liệu huấn luyện khi bối cảnh được chỉ định.",
+          "D": "Mô hình tự động cải thiện khi được kiểm thử trong cùng một bối cảnh."
         },
-        "answerDisplay": "B. Documentation of data origin, movement, and transformations over time",
-        "concept": "• Data Provenance theo dõi vết chuỗi dữ liệu (Data Lineage) từ lúc thu thập nguyên bản đến khi được xử lý và đưa vào mô hình.",
-        "whyCorrect": "• Theo dõi nguồn gốc giúp kiểm toán tính trung thực, tính minh bạch và độ tin cậy của tập dữ liệu huấn luyện.",
+        "answerDisplay": "A. Models may perform poorly when applied to different contexts",
+        "concept": "• Mô hình AI thường bị ràng buộc bởi phân phối dữ liệu huấn luyện (Domain/Context Specificity) và khó tổng quát hóa khi sang môi trường mới.",
+        "whyCorrect": "• Sự thay đổi bối cảnh vận hành thực tế (Covariate Shift / Concept Drift) sẽ làm giảm mạnh hiệu năng của mô hình vốn chỉ được tối ưu cho một bối cảnh hẹp trước đó.",
         "whyWrong": {
-          "A": "• Tốc độ tải thuộc về băng thông mạng.",
-          "C": "• Dung lượng là kích thước tệp tin.",
-          "D": "• Thuật toán nén là kỹ thuật nén nạp dữ liệu."
+          "B": "• Yêu cầu năng lượng tính toán ít hơn là một ưu điểm tiềm năng về tài nguyên, không phải hạn chế về tính chính xác.",
+          "C": "• Xác định bối cảnh không tự động làm giảm nhu cầu dữ liệu huấn luyện.",
+          "D": "• Kiểm thử trong cùng bối cảnh chỉ phản ánh hiệu năng hiện tại, không tự động cải thiện mô hình."
         }
-      }
+      },
+      "num": 6
     },
     {
       "id": 7,
-      "task": "sp26_fe_re",
-      "taskLabel": "SP26 FE RE",
-      "num": 7,
-      "chooseType": "Choose 1 answer",
       "question": "What does the acronym RACI stand for?",
       "options": {
         "A": "Relatable, Agreeable, Commendable, Irascible",
@@ -214,32 +193,28 @@
         "C": "Redesignable, Accessible, Collected, Informative?",
         "D": "Responsible, Accountable, Consulted, Informed"
       },
-      "answer": "A",
-      "source": "ITE302c_SP26_FE_RE",
+      "answer": "D",
       "explanation": {
-        "questionVi": "Tác động nào sau đây là hệ quả của thiên vị xác nhận (Confirmation Bias) trong phân tích dữ liệu?",
+        "questionVi": "Từ viết tắt RACI đại diện cho điều gì?",
         "optionsVi": {
-          "A": "Chỉ chọn lọc dữ liệu phù hợp với giả thuyết ban đầu và bỏ qua dữ liệu mâu thuẫn",
-          "B": "Tăng độ chính xác của mô hình học máy",
-          "C": "Tự động phát hiện các lỗi sai trong tập dữ liệu",
-          "D": "Giảm độ phức tạp tính toán của thuật toán"
+          "A": "Relatable, Agreeable, Commendable, Irascible",
+          "B": "Responsible, Accessible, Consulted, Improvised",
+          "C": "Redesignable, Accessible, Collected, Informative?",
+          "D": "Responsible (Người thực hiện), Accountable (Người phê duyệt), Consulted (Người tư vấn), Informed (Người nhận thông báo)"
         },
-        "answerDisplay": "A. Selective data collection that favors existing hypotheses while ignoring contradictory evidence",
-        "concept": "• Confirmation Bias khiến nhà phân tích vô thức lựa chọn thông tin củng cố niềm tin cá nhân và lờ đi dữ liệu thực tế mâu thuẫn.",
-        "whyCorrect": "• Việc thu thập dữ liệu thiên vị dẫn tới các kết luận nghiên cứu lệch lạc và không phản ánh đúng thực tế khách quan.",
+        "answerDisplay": "D. Responsible, Accountable, Consulted, Informed",
+        "concept": "• Ma trận RACI là công cụ quản trị phân định rõ vai trò và trách nhiệm của từng cá nhân/phòng ban trong dự án hoặc quy trình.",
+        "whyCorrect": "• RACI viết tắt chính xác của: Responsible (Người thực hiện), Accountable (Người phê duyệt/trách nhiệm cuối), Consulted (Người tư vấn), Informed (Người nhận thông báo).",
         "whyWrong": {
-          "B": "• Thiên vị làm giảm độ chính xác và tính khách quan của kết quả.",
-          "C": "• Confirmation bias không giúp phát hiện lỗi mà làm bỏ qua lỗi.",
-          "D": "• Độ phức tạp tính toán phụ thuộc vào số lượng phép toán của thuật toán."
+          "A": "• Đây là tổ hợp từ sai lệch, không phản ánh đúng định nghĩa quản trị của ma trận RACI.",
+          "B": "• Đây là tổ hợp từ sai lệch, không phản ánh đúng định nghĩa quản trị của ma trận RACI.",
+          "C": "• Đây là tổ hợp từ sai lệch, không phản ánh đúng định nghĩa quản trị của ma trận RACI."
         }
-      }
+      },
+      "num": 7
     },
     {
       "id": 8,
-      "task": "sp26_fe_re",
-      "taskLabel": "SP26 FE RE",
-      "num": 8,
-      "chooseType": "Choose 1 answer",
       "question": "What are the essential steps involved in creating personas for user-centric marketing?",
       "options": {
         "A": "Define target audience, conduct research, build fictional personas based on insights, validate personas",
@@ -247,32 +222,28 @@
         "C": "Conduct surveys, run focus groups, implement findings, analyze results",
         "D": "Develop marketing strategies, execute campaigns, evaluate outcomes, adjust tactics"
       },
-      "answer": "C",
-      "source": "ITE302c_SP26_FE_RE",
+      "answer": "A",
       "explanation": {
-        "questionVi": "Trong khung quản trị rủi ro AI của NIST (NIST AI RMF), 4 chức năng cốt lõi là gì?",
+        "questionVi": "Các bước thiết yếu trong việc tạo dựng hình mẫu người dùng (personas) cho chiến dịch marketing lấy khách hàng làm trung tâm là gì?",
         "optionsVi": {
-          "A": "Plan, Do, Check, Act",
-          "B": "Input, Process, Output, Feedback",
-          "C": "Govern, Map, Measure, Manage",
-          "D": "Identify, Protect, Detect, Respond"
+          "A": "Xác định đối tượng mục tiêu, tiến hành nghiên cứu, xây dựng hình mẫu giả định dựa trên thông tin thu được, xác thực hình mẫu.",
+          "B": "Nhận diện rủi ro riêng tư, phân tích dữ liệu, triển khai chính sách, đào tạo nhân sự.",
+          "C": "Tiến hành khảo sát, điều hành nhóm tập trung, triển khai phát hiện, phân tích kết quả.",
+          "D": "Phát triển chiến lược marketing, thực thi chiến dịch, đánh giá kết quả, điều chỉnh chiến thuật."
         },
-        "answerDisplay": "C. Govern, Map, Measure, Manage",
-        "concept": "• Khung quản trị NIST AI RMF được cấu trúc xung quanh 4 chức năng chính: Quản trị (Govern), Ánh xạ rủi ro (Map), Đo lường (Measure) và Quản lý (Manage).",
-        "whyCorrect": "• Bốn chức năng này cung cấp phương pháp toàn diện để quản lý rủi ro AI trong suốt chu kỳ sống.",
+        "answerDisplay": "A. Define target audience, conduct research, build fictional personas based on insights, validate personas",
+        "concept": "• Persona là hình mẫu đại diện hư cấu mô tả chân dung khách hàng lý tưởng dựa trên dữ liệu thực tế thu thập từ nghiên cứu thị trường.",
+        "whyCorrect": "• Quy trình chuẩn để xây dựng Persona gồm: Xác định đối tượng -> Nghiên cứu sâu -> Xây dựng hình mẫu dựa trên insight -> Xác thực tính thực tế.",
         "whyWrong": {
-          "A": "• Plan-Do-Check-Act là chu trình chất lượng ISO 9001 (PDCA).",
-          "B": "• Input-Process-Output là mô hình xử lý hệ thống thông tin.",
-          "D": "• Identify-Protect-Detect-Respond là khung an ninh mạng NIST Cybersecurity Framework (NIST CSF)."
+          "B": "• Đây là quy trình quản lý rủi ro dữ liệu/riêng tư.",
+          "C": "• Đây là các phương pháp khảo sát/phân tích nhỏ lẻ, không cấu thành quy trình xây dựng chân dung toàn diện.",
+          "D": "• Đây là quy trình vận hành chiến dịch marketing tổng quát."
         }
-      }
+      },
+      "num": 8
     },
     {
       "id": 9,
-      "task": "sp26_fe_re",
-      "taskLabel": "SP26 FE RE",
-      "num": 9,
-      "chooseType": "Choose 1 answer",
       "question": "Which of the following is a recommended security practice for machine learning datasets?",
       "options": {
         "A": "Ensure your team is full of different perspectives",
@@ -281,31 +252,27 @@
         "D": "Create a chain of command"
       },
       "answer": "B",
-      "source": "ITE302c_SP26_FE_RE",
       "explanation": {
-        "questionVi": "Mục đích của việc ẩn danh hóa dữ liệu (Data Anonymization) là gì?",
+        "questionVi": "Biện pháp bảo mật nào sau đây được khuyến nghị cho các tập dữ liệu học máy?",
         "optionsVi": {
-          "A": "Tăng kích thước tệp dữ liệu để phân tích sâu hơn",
-          "B": "Loại bỏ hoặc làm mờ thông tin cá nhân để ngăn chặn việc nhận dạng danh tính người dùng",
-          "C": "Mã hóa dữ liệu để chỉ người có mật khẩu mới đọc được",
-          "D": "Tự động xóa các bản ghi cũ"
+          "A": "Đảm bảo đội ngũ của bạn có nhiều góc nhìn đa dạng khác nhau.",
+          "B": "Ban hành một cơ cấu quản trị dữ liệu (Data Governance) vững chắc.",
+          "C": "Thực hiện mô hình hóa mối đe dọa với các thuật toán có lợi.",
+          "D": "Tạo ra một chuỗi mệnh lệnh phân cấp quản lý."
         },
-        "answerDisplay": "B. Removing or obscuring personal identifiers to prevent individual identification",
-        "concept": "• Anonymization biến đổi dữ liệu cá nhân (PII) thành dữ liệu vô danh sao cho không thể khôi phục lại danh tính.",
-        "whyCorrect": "• Loại bỏ mối liên kết giữa dữ liệu và cá nhân giúp chia sẻ dữ liệu nghiên cứu an toàn mà không xâm phạm quyền riêng tư.",
+        "answerDisplay": "B. Enact a sound data governance structure",
+        "concept": "• Quản trị dữ liệu (Data Governance) bao gồm các chính sách, quy trình và tiêu chuẩn nhằm đảm bảo dữ liệu học máy luôn an toàn, chất lượng và tuân thủ đạo đức.",
+        "whyCorrect": "• Cơ cấu quản trị dữ liệu chặt chẽ giúp kiểm soát quyền truy cập, bảo vệ tính toàn vẹn và ngăn chặn rò rỉ dữ liệu huấn luyện.",
         "whyWrong": {
-          "A": "• Ẩn danh hóa không làm tăng kích thước tệp.",
-          "C": "• Mã hóa (Encryption) là biện pháp bảo mật có thể giải mã, khác với ẩn danh hóa vĩnh viễn.",
-          "D": "• Xóa bản ghi là hủy dữ liệu (Data Retention policy)."
+          "A": "• Đội ngũ đa dạng góc nhìn giúp giảm thiên vị (bias), không phải biện pháp bảo mật trực tiếp.",
+          "C": "• Mô hình hóa đe dọa cần tập trung vào các kịch bản tấn công (threat vectors) chứ không phải thuật toán có lợi.",
+          "D": "• Chuỗi mệnh lệnh là mô hình quản lý nhân sự hành chính."
         }
-      }
+      },
+      "num": 9
     },
     {
       "id": 10,
-      "task": "sp26_fe_re",
-      "taskLabel": "SP26 FE RE",
-      "num": 10,
-      "chooseType": "Choose 1 answer",
       "question": "You're training a model to classify whether or not a bridge is likely to collapse given several factors. You have a dataset of thousands of existing bridges and their attributes, where each bridge is labeled as having collapsed or not collapsed. Only a handful of bridges in the dataset are labeled as having collapsed—the rest are labeled as not collapsed. Given your goal of minimizing bridge collapse and the severe harm it can cause, which of the following metrics would be most useful for evaluating the model?",
       "options": {
         "A": "Accuracy",
@@ -313,32 +280,28 @@
         "C": "Precision",
         "D": "Recall"
       },
-      "answer": "A",
-      "source": "ITE302c_SP26_FE_RE",
+      "answer": "D",
       "explanation": {
-        "questionVi": "Nguyên tắc 'Privacy by Design' (Riêng tư theo thiết kế) có ý nghĩa gì đối với các kỹ sư phần mềm?",
+        "questionVi": "Bạn đang huấn luyện mô hình để phân loại xem một cây cầu có nguy cơ sụp đổ hay không dựa trên nhiều yếu tố. Tập dữ liệu chứa hàng ngàn cây cầu hiện có, nhưng chỉ có rất ít cầu thực sự bị sụp đổ (dữ liệu cực kỳ mất cân bằng). Để giảm thiểu tối đa việc bỏ sót cầu sập gây thảm họa, chỉ số đánh giá nào hữu ích nhất cho mô hình này?",
         "optionsVi": {
-          "A": "Tích hợp các biện pháp bảo vệ quyền riêng tư ngay từ khâu kiến trúc và thiết kế ban đầu",
-          "B": "Chỉ bổ sung tính năng riêng tư sau khi khách hàng phàn nàn",
-          "C": "Ủy quyền toàn bộ trách nhiệm bảo mật cho người dùng",
-          "D": "Khóa tất cả các tính năng của ứng dụng"
+          "A": "Độ chính xác tổng thể (Accuracy)",
+          "B": "Ma trận nhầm lẫn (Confusion matrix)",
+          "C": "Độ xác thực (Precision)",
+          "D": "Độ bao phủ / Độ nhạy (Recall)"
         },
-        "answerDisplay": "A. Integrating privacy protections into the core system architecture from the initial design phase",
-        "concept": "• Privacy by Design coi quyền riêng tư là thành phần thiết yếu được chủ động xây dựng ngay từ đầu, thay vì vá lỗi thụ động.",
-        "whyCorrect": "• Tích hợp từ đầu giúp ngăn ngừa nguy cơ rò rỉ dữ liệu hiệu quả và tiết kiệm chi phí sửa chữa.",
+        "answerDisplay": "D. Recall",
+        "concept": "• Recall (Độ bao phủ) đo lường khả năng tìm ra toàn bộ các mẫu dương tính thực tế (cầu sập). Trong các bài toán an toàn sinh mạng, việc bỏ sót mẫu dương tính (False Negative) là cực kỳ nguy hiểm.",
+        "whyCorrect": "• Tối ưu Recall giúp giảm tối đa trường hợp dự báo 'không sập' nhưng thực tế cầu bị 'sập' (False Negative).",
         "whyWrong": {
-          "B": "• Bổ sung sau khi có phàn nàn là cách làm thụ động bị cấm.",
-          "C": "• Đổ trách nhiệm cho người dùng là vi phạm đạo đức thiết kế.",
-          "D": "• Khóa tính năng làm sản phẩm không thể sử dụng được."
+          "A": "• Accuracy không phản ánh đúng hiệu năng trên dữ liệu mất cân bằng (chỉ cần đoán tất cả 'không sập' đã đạt accuracy 99.9%).",
+          "B": "• Confusion matrix là bảng thống kê trực quan, không phải một chỉ số đơn lẻ để tối ưu hiệu năng.",
+          "C": "• Precision tập trung giảm False Positive (báo sập nhưng không sập), trong bài toán này sập hụt nguy hiểm hơn báo động nhầm."
         }
-      }
+      },
+      "num": 10
     },
     {
       "id": 11,
-      "task": "sp26_fe_re",
-      "taskLabel": "SP26 FE RE",
-      "num": 11,
-      "chooseType": "Choose 1 answer",
       "question": "Which of the following describes extrajudicial judgment?",
       "options": {
         "A": "A ruling or scoring made outside of a court.",
@@ -346,32 +309,28 @@
         "C": "Applying law from one jurisdiction within another.",
         "D": "Unusual interpretation of law outside of its typical meaning."
       },
-      "answer": "B",
-      "source": "ITE302c_SP26_FE_RE",
+      "answer": "A",
       "explanation": {
-        "questionVi": "Khái niệm 'Data Minimization' (Giảm thiểu dữ liệu) yêu cầu điều gì?",
+        "questionVi": "Nội dung nào sau đây mô tả đúng nhất về phán quyết/chấm điểm ngoài tòa án (extrajudicial judgment)?",
         "optionsVi": {
-          "A": "Nén dữ liệu cơ sở xuống mức dung lượng thấp nhất",
-          "B": "Chỉ thu thập đúng và đủ dữ liệu cần thiết cho mục đích xử lý cụ thể đã được xác định trước",
-          "C": "Xóa toàn bộ dữ liệu người dùng hàng tuần",
-          "D": "Chỉ lưu trữ dữ liệu dưới dạng số nguyên"
+          "A": "Một quyết định phân loại hoặc chấm điểm được thực hiện bên ngoài hệ thống tòa án pháp lý.",
+          "B": "Chuyển giao các bị cáo từ quyền tài phán này sang quyền tài phán khác để xét xử.",
+          "C": "Áp dụng luật pháp từ khu vực tài phán này vào trong một khu vực tài phán khác.",
+          "D": "Giải thích luật pháp một cách bất thường ngoài ý nghĩa thông thường của nó."
         },
-        "answerDisplay": "B. Collecting only the data strictly necessary for a specified purpose",
-        "concept": "• Giảm thiểu dữ liệu đòi hỏi hạn chế thu thập dư thừa, giúp bảo vệ riêng tư người dùng và giảm nguy cơ rò rỉ.",
-        "whyCorrect": "• Giới hạn thu thập đúng mục đích là nguyên tắc cốt lõi của GDPR và PIPEDA.",
+        "answerDisplay": "A. A ruling or scoring made outside of a court.",
+        "concept": "• Extrajudicial (ngoài tư pháp) đề cập đến các hành động, quyết định hoặc phán quyết diễn ra bên ngoài các thủ tục tố tụng tư pháp thông thường của tòa án (như việc AI chấm điểm rủi ro xã hội của cá nhân).",
+        "whyCorrect": "• Chấm điểm hoặc ra quyết định phân loại nằm ngoài kiểm soát tư pháp đại diện cho phán quyết ngoài tòa án.",
         "whyWrong": {
-          "A": "• Nén dữ liệu là thuật toán lưu trữ, không phải giảm thiểu quyền riêng tư.",
-          "C": "• Xóa hàng tuần gây mất mát dữ liệu phục vụ vận hành.",
-          "D": "• Định dạng kiểu dữ liệu thuộc về lập trình phần mềm."
+          "B": "• Đây là quy trình dẫn độ hoặc chuyển giao quyền xét xử.",
+          "C": "• Đây là áp dụng luật ngoại bang hoặc xung đột pháp luật.",
+          "D": "• Đây là giải thích luật pháp lệch tiền lệ."
         }
-      }
+      },
+      "num": 11
     },
     {
       "id": 12,
-      "task": "sp26_fe_re",
-      "taskLabel": "SP26 FE RE",
-      "num": 12,
-      "chooseType": "Choose 1 answer",
       "question": "Differential privacy works by adding what to a dataset?",
       "options": {
         "A": "filters",
@@ -379,25 +338,25 @@
         "C": "noise",
         "D": "k-anonymity"
       },
-      "answer": "A",
-      "source": "ITE302c_SP26_FE_RE",
+      "answer": "C",
       "explanation": {
-        "questionVi": "Lợi ích chính của việc áp dụng khung giải thích LIME (Local Interpretable Model-agnostic Explanations) là gì?",
+        "questionVi": "Tính riêng tư vi sai (Differential privacy) hoạt động bằng cách thêm yếu tố nào vào tập dữ liệu?",
         "optionsVi": {
-          "A": "Giải thích kết quả dự đoán của bất kỳ mô hình hộp đen nào tại vùng lân cận điểm dữ liệu cụ thể",
-          "B": "Tăng tốc độ huấn luyện mô hình lên gấp 10 lần",
-          "C": "Tự động sửa các lỗi sai trong tập dữ liệu",
-          "D": "Thay thế hoàn toàn mạng nơ-ron phức tạp bằng cây quyết định đơn giản"
+          "A": "Các bộ lọc (filters)",
+          "B": "Điểm đánh giá tính công bằng (fairness scoring)",
+          "C": "Nhiễu toán học (noise)",
+          "D": "Kỹ thuật ẩn danh k-anonymity"
         },
-        "answerDisplay": "A. Explaining black-box predictions locally around specific data points",
-        "concept": "• LIME xấp xỉ hành vi của mô hình phức tạp bằng một mô hình đơn giản có thể giải thích được tại khu vực lân cận của mẫu dữ liệu.",
-        "whyCorrect": "• LIME hoạt động độc lập với loại mô hình (model-agnostic), giúp giải thích quyết định cá thể một cách minh bạch.",
+        "answerDisplay": "C. noise",
+        "concept": "• Differential Privacy bảo vệ dữ liệu cá nhân bằng cách thêm nhiễu toán học (như nhiễu Laplace hoặc Gaussian) vào các câu truy vấn cơ sở dữ liệu.",
+        "whyCorrect": "• Thêm nhiễu giúp che giấu sự hiện diện của một cá nhân cụ thể trong tập dữ liệu mà vẫn đảm bảo tính chính xác thống kê của kết quả truy vấn chung.",
         "whyWrong": {
-          "B": "• LIME tốn thêm thời gian tính toán giải thích chứ không tăng tốc huấn luyện.",
-          "C": "• LIME không có chức năng sửa dữ liệu.",
-          "D": "• LIME không thay thế mô hình gốc mà chỉ cung cấp lời giải thích cho kết quả của nó."
+          "A": "• Bộ lọc dùng để lọc bản ghi, không phải cơ chế bảo mật của Differential Privacy.",
+          "B": "• Điểm công bằng dùng để đánh giá thiên vị thuật toán.",
+          "D": "• k-anonymity là một kỹ thuật ẩn danh dữ liệu tĩnh khác, không phải cơ chế thêm nhiễu của Differential Privacy."
         }
-      }
+      },
+      "num": 12
     },
     {
       "id": 13,
@@ -1182,10 +1141,6 @@
     },
     {
       "id": 37,
-      "task": "sp26_fe_re",
-      "taskLabel": "SP26 FE RE",
-      "num": 37,
-      "chooseType": "Choose 1 answer",
       "question": "Which emerging technology area requires the most immediate ethical attention?",
       "options": {
         "A": "All emerging technologies require ethical consideration",
@@ -1194,24 +1149,24 @@
         "D": "Only robotics"
       },
       "answer": "A",
-      "source": "ITE302c_SP26_FE_RE",
       "explanation": {
-        "questionVi": "Trong các hệ thống trí tuệ môi trường (Ambient Intelligence), rủi ro riêng tư nào phổ biến nhất do việc giám sát dữ liệu liên tục?",
+        "questionVi": "Lĩnh vực công nghệ mới nổi nào yêu cầu sự chú ý đạo đức cấp thiết nhất?",
         "optionsVi": {
-          "A": "Truy cập và thu thập dữ liệu trái phép (Unauthorized data access)",
-          "B": "Cải thiện khả năng phân tích dữ liệu",
-          "C": "Nâng cao trải nghiệm người dùng",
-          "D": "Tối ưu hóa tài nguyên phần cứng"
+          "A": "Tất cả các công nghệ mới nổi đều đòi hỏi phải xem xét khía cạnh đạo đức một cách cấp thiết.",
+          "B": "Chỉ có trí tuệ nhân tạo.",
+          "C": "Chỉ có công nghệ sinh học.",
+          "D": "Chỉ có công nghệ robot."
         },
-        "answerDisplay": "A. Unauthorized data access",
-        "concept": "• Ambient Intelligence theo dõi hành vi người dùng 24/7 qua cảm biến, tạo ra rủi ro lộ rò và rình mò truy cập trái phép.",
-        "whyCorrect": "• Thu thập dữ liệu liên tục tích tụ kho thông tin nhạy cảm rất dễ bị bên thứ ba xâm nhập bất hợp pháp.",
+        "answerDisplay": "A. All emerging technologies require ethical consideration",
+        "concept": "• Bất kỳ công nghệ mới nổi nào (AI, Biotech, Robotics...) khi phát triển vượt tầm kiểm soát đều mang lại những rủi ro đạo đức lớn cho con người.",
+        "whyCorrect": "• Việc phát triển thiếu đạo đức ở bất kỳ nhóm công nghệ nào cũng có thể gây thảm họa, nên tất cả đều cần được xem xét đạo đức song song với nghiên cứu kỹ thuật.",
         "whyWrong": {
-          "B": "• Phân tích nâng cao là lợi ích kỹ thuật.",
-          "C": "• Nâng cao trải nghiệm là mục tiêu sản phẩm.",
-          "D": "• Tối ưu tài nguyên thuộc về hiệu năng hệ thống."
+          "B": "• Đây là câu trả lời phiến diện, loại bỏ tầm quan trọng của các công nghệ khác.",
+          "C": "• Đây là câu trả lời phiến diện, loại bỏ tầm quan trọng của các công nghệ khác.",
+          "D": "• Đây là câu trả lời phiến diện, loại bỏ tầm quan trọng của các công nghệ khác."
         }
-      }
+      },
+      "num": 37
     },
     {
       "id": 38,
