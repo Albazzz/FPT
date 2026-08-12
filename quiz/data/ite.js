@@ -2073,7 +2073,7 @@ window.QUIZ_DATA["ite"] = [
       "C": "Its nationwide scope and specific national focus",
       "D": "A stipulation to continue providing service even if data usage is denied"
     },
-    "answer": "C",
+    "answer": "B",
     "source": "ITE302c_SP26_FE",
     "explanation": {
       "questionVi": "Đặc điểm nổi bật của Đạo luật PIPEDA (Canada) khi so sánh với các luật tương tự là gì?",
@@ -2083,7 +2083,7 @@ window.QUIZ_DATA["ite"] = [
         "C": "Phạm vi toàn quốc và tập trung vào mục tiêu quốc gia cụ thể (Canada)",
         "D": "Quy định tiếp tục cung cấp dịch vụ ngay cả khi người dùng từ chối chia sẻ dữ liệu"
       },
-      "answerDisplay": "C. Its nationwide scope and specific national focus",
+      "answerDisplay": "B. The early date of its inauguration",
       "concept": "• PIPEDA là đạo luật quyền riêng tư dữ liệu thương mại áp dụng trên toàn bộ lãnh thổ Canada.",
       "whyCorrect": "• PIPEDA thiết lập khung pháp lý bảo vệ dữ liệu tư nhân đồng bộ áp dụng cho mọi tổ chức trên toàn quốc Canada.",
       "whyWrong": {
@@ -2139,7 +2139,7 @@ window.QUIZ_DATA["ite"] = [
       "C": "Superintelligence",
       "D": "Basic Al"
     },
-    "answer": "A",
+    "answer": "C",
     "source": "ITE302c_SP26_FE",
     "explanation": {
       "questionVi": "Nếu bạn đối mặt với một hệ thống AI có khả năng xác định chính xác những cá nhân nào sẽ bị nhiễm bệnh trong một đại dịch trước khi ca bệnh đầu tiên xuất hiện, đây là loại AI nào?",
@@ -2149,7 +2149,7 @@ window.QUIZ_DATA["ite"] = [
         "C": "Siêu trí tuệ (Superintelligence)",
         "D": "AI cơ bản (Basic AI)"
       },
-      "answerDisplay": "A. Narrow Al",
+      "answerDisplay": "C. Superintelligence",
       "concept": "• Narrow AI (AI chuyên biệt) là hệ thống AI được tối ưu cho duy nhất một tác vụ cụ thể.",
       "whyCorrect": "• Dù kết quả dự đoán đại dịch cực kỳ siêu việt, hệ thống vẫn chỉ giải quyết 1 bài toán chuyên biệt nên vẫn thuộc Narrow AI.",
       "whyWrong": {
@@ -2238,7 +2238,7 @@ window.QUIZ_DATA["ite"] = [
       "C": "25%",
       "D": "99%"
     },
-    "answer": "C",
+    "answer": "D",
     "source": "ITE302c_SP26_FE",
     "explanation": {
       "questionVi": "Tỷ lệ phần trăm các khung làm việc (frameworks) bao gồm quyền riêng tư như một nguyên tắc cốt lõi là bao nhiêu?",
@@ -2248,7 +2248,7 @@ window.QUIZ_DATA["ite"] = [
         "C": "25%",
         "D": "99%"
       },
-      "answerDisplay": "C. 25%",
+      "answerDisplay": "D. 99%",
       "concept": "• Báo cáo khảo sát các khung quản trị AI/IT chỉ ra rằng khoảng 25% các khung đạo đức xem quyền riêng tư là nguyên tắc cốt lõi ban đầu.",
       "whyCorrect": "• 25% là con số thống kê chính xác trong nghiên cứu tổng hợp về các tiêu chuẩn đạo đức dữ liệu.",
       "whyWrong": {
@@ -2271,7 +2271,7 @@ window.QUIZ_DATA["ite"] = [
       "C": "using new data over existing data",
       "D": "using scraped twitter data over survey data"
     },
-    "answer": "B",
+    "answer": "D",
     "source": "ITE302c_SP26_FE",
     "explanation": {
       "questionVi": "Một ví dụ về thiên vị tự động hóa (Automation Bias) là gì?",
@@ -2281,7 +2281,7 @@ window.QUIZ_DATA["ite"] = [
         "C": "Sử dụng dữ liệu mới thay vì dữ liệu hiện có",
         "D": "Sử dụng dữ liệu Twitter cào được thay vì dữ liệu khảo sát"
       },
-      "answerDisplay": "B. using parsed twitter data over parsed Facebook data",
+      "answerDisplay": "D. using scraped twitter data over survey data",
       "concept": "• Automation Bias là xu hướng con người tin tưởng và ưu tiên kết quả đầu ra của hệ thống tự động/máy tính hơn nhận thức và các nguồn dữ liệu khác.",
       "whyCorrect": "• Việc ưu tiên dữ liệu từ công cụ tự động hóa mà không kiểm chứng thiên vị phản ánh đúng bản chất Automation Bias.",
       "whyWrong": {
@@ -2731,7 +2731,7 @@ window.QUIZ_DATA["ite"] = [
       "C": "By following competitors only",
       "D": "By focusing solely on compliance"
     },
-    "answer": "A",
+    "answer": "B",
     "source": "ITE302c_SP26_FE",
     "explanation": {
       "questionVi": "Vấn đề hộp đen (Black Box Problem) là gì?",
@@ -2741,7 +2741,7 @@ window.QUIZ_DATA["ite"] = [
         "C": "Vấn đề khi các tập dữ liệu bị tối màu",
         "D": "Vấn đề lưu trữ dữ liệu an toàn trong thiết bị"
       },
-      "answerDisplay": "A. By implementing systems once and forgetting them",
+      "answerDisplay": "B. Through regular assessment, feedback, and adaptation",
       "concept": "• Black Box Problem xảy ra ở các mô hình học sâu phức tạp nơi con người không thể truy xuất hay giải thích các bước lập luận bên trong.",
       "whyCorrect": "• Sự thiếu minh bạch trong cơ chế ra quyết định tạo ra rủi ro không thể kiểm toán và khắc phục sai lệch.",
       "whyWrong": {
@@ -3092,7 +3092,7 @@ window.QUIZ_DATA["ite"] = [
       "C": "facing unknown empirical data with an incomplete dataset",
       "D": "an uncertainty of how the data is gathered"
     },
-    "answer": "B",
+    "answer": "C",
     "source": "ITE302c_SP26_FE",
     "explanation": {
       "questionVi": "'Unknown Unknowns' (Những điều không biết là mình không biết) đề cập đến yếu tố nào?",
@@ -3102,7 +3102,7 @@ window.QUIZ_DATA["ite"] = [
         "C": "Đối mặt với dữ liệu thực nghiệm chưa biết với tập dữ liệu chưa hoàn chỉnh",
         "D": "Sự không chắc chắn về cách thu thập dữ liệu"
       },
-      "answerDisplay": "B. lack of explainability and what a model is actually looking at to make it's prediction",
+      "answerDisplay": "C. facing unknown empirical data with an incomplete dataset",
       "concept": "• 'Unknown Unknowns' trong AI chỉ các điểm mù tiềm ẩn của mô hình hộp đen mà các nhà nghiên cứu thậm chí không nhận ra để đo lường hay dự đoán trước.",
       "whyCorrect": "• Thiếu khả năng giải thích (Explainability) làm cho nhà phát triển không thể biết mô hình đang sử dụng các mối tương quan sai lệch nào để đưa ra kết quả.",
       "whyWrong": {
@@ -3917,7 +3917,7 @@ window.QUIZ_DATA["ite"] = [
       "C": "Public education campaign",
       "D": "Video briefing"
     },
-    "answer": "B, C",
+    "answer": "B, D",
     "source": "ITE302c_SP26_FE",
     "explanation": {
       "questionVi": "Những công cụ nào sau đây thuộc về một kế hoạch truyền thông hiệu quả với báo chí/truyền thông? (Select two.)",
@@ -3927,7 +3927,7 @@ window.QUIZ_DATA["ite"] = [
         "C": "Chiến dịch giáo dục công chúng (Public education campaign)",
         "D": "Tóm tắt video nội bộ"
       },
-      "answerDisplay": "B. Press release & C. Public education campaign",
+      "answerDisplay": "B. Press release & D. Video briefing",
       "concept": "• Kế hoạch truyền thông đối ngoại sử dụng Thông cáo báo chí (Press Release) và Chiến dịch giáo dục công chúng để truyền tải thông điệp.",
       "whyCorrect": "• Thông cáo báo chí cung cấp thông tin chính thống cho nhà báo và chiến dịch giáo dục giúp công chúng hiểu đúng vấn đề.",
       "whyWrong": {
