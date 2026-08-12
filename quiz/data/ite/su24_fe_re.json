@@ -27,7 +27,7 @@
           "C": "Mã nguồn đóng chứa mã xáo trộn không thể đọc",
           "D": "Không thể được xem xét bởi chính tổ chức phát triển"
         },
-        "answerDisplay": "A. Closed source software may not be accessible to independent auditors.",
+        "answerDisplay": "A. Closed source software may not be accessible to independent auditors",
         "concept": "• Mã nguồn đóng (Proprietary / Closed Source) ngăn cản sự kiểm tra của bên thứ ba độc lập, gây nên rủi ro minh bạch và thiếu khả năng kiểm toán.",
         "whyCorrect": "• Việc ngăn cấm kiểm toán viên độc lập soi xét mã nguồn tạo ra nguy cơ che giấu lỗi đạo đức và lỗ hổng bảo mật.",
         "whyWrong": {
@@ -159,7 +159,7 @@
           "C": "Các cột thuộc tính nhạy cảm",
           "D": "Mở rộng giá trị k"
         },
-        "answerDisplay": "A. multiple datasets",
+        "answerDisplay": "A. Multiple datasets (Auxiliary data linkage)",
         "concept": "• Linkage Attack on k-Anonymity: Kẻ tấn công liên kết tập dữ liệu k-anonymity với tập dữ liệu công khai bổ sung để khôi phục danh tính cá nhân.",
         "whyCorrect": "• Kết hợp chéo dữ liệu vô danh với các nguồn dữ liệu bên ngoài là cách bẻ gãy k-anonymity.",
         "whyWrong": {
@@ -192,7 +192,7 @@
           "C": "Tăng số lớp tham số",
           "D": "Mã hóa tập dữ liệu"
         },
-        "answerDisplay": "A. Easily identify and modify that attribute",
+        "answerDisplay": "A. Easily identify and modify/remove that specific attribute",
         "concept": "• Glass Box Model (Mô hình giải thích được như Decision Tree, Linear Regression): Cho phép con người soi thấu tác động của từng thuộc tính đến đầu ra.",
         "whyCorrect": "• Tính giải thích trực quan giúp phát hiện và can thiệp ngay thuộc tính gây thiên vị.",
         "whyWrong": {
@@ -291,7 +291,7 @@
           "C": "Tấn công giả mạo Phishing",
           "D": "Mã độc tống tiền Ransomware"
         },
-        "answerDisplay": "A. Auxiliary public datasets",
+        "answerDisplay": "A. Auxiliary public datasets (IMDb ratings)",
         "concept": "• Bài học từ Netflix Scandal: Tập dữ liệu ratings vô danh bị liên kết với tập dữ liệu công khai IMDb để khôi phục danh tính cá nhân.",
         "whyCorrect": "• Sử dụng dữ liệu phụ trợ IMDb là phương thức bẻ gãy sự ẩn danh của dữ liệu Netflix.",
         "whyWrong": {
@@ -423,7 +423,7 @@
           "C": "Báo cáo so sánh mã nguồn diff",
           "D": "Sơ đồ cơ sở dữ liệu"
         },
-        "answerDisplay": "A. Risk Heatmap",
+        "answerDisplay": "A. Risk Heatmap / Risk Matrix",
         "concept": "• Risk Heatmap trực quan hóa khả năng xảy ra (Likelihood) và mức độ tác động (Impact) giúp ban quản trị C-suite nhanh chóng nắm bắt rủi ro cốt lõi.",
         "whyCorrect": "• Trực quan hóa ma trận rủi ro rõ ràng cho ban lãnh đạo C-suite.",
         "whyWrong": {
@@ -456,7 +456,7 @@
           "C": "Coi nhu cầu nội bộ là trên hết",
           "D": "Chỉ tập trung vào tuân thủ ngắn hạn"
         },
-        "answerDisplay": "B. Putting ethical principles into practice",
+        "answerDisplay": "B. Putting ethical principles into practice and foresight into future impacts",
         "concept": "• Triết lý đạo đức hiệu quả phải mang tính Thực thi (Operationalization) và Dự báo tương lai (Foresight) thay vì khẩu hiệu lý thuyết.",
         "whyCorrect": "• Biến lý thuyết thành hành động thực tế và dự báo tác động tương lai là bản chất của triết lý đạo đức vững chắc.",
         "whyWrong": {
@@ -489,7 +489,7 @@
           "C": "Thay thế nhu cầu kiểm thử an ninh kỹ thuật",
           "D": "Đơn giản hóa việc viết mã nguồn"
         },
-        "answerDisplay": "A. It prevents harm before it occurs and reduces costly post-incident remediation.",
+        "answerDisplay": "A. It prevents harm before it occurs and reduces costly post-incident remediation",
         "concept": "• Tiếp cận chủ động (Proactive Risk Management): Nhận diện và phòng ngừa rủi ro ngay từ đầu giúp bảo vệ uy tín và tiết kiệm chi phí khắc phục khủng hoảng.",
         "whyCorrect": "• Chủ động ngăn tổn hại hiệu quả và tiết kiệm chi phí hơn rất nhiều so với khắc phục sự cố bị động.",
         "whyWrong": {
@@ -522,7 +522,7 @@
           "C": "Để xoa dịu các bên liên quan",
           "D": "Để động viên nhân viên"
         },
-        "answerDisplay": "B. To make operational improvements",
+        "answerDisplay": "B. To make operational and ethical improvements to prevent recurrence",
         "concept": "• Post-Incident Feedback Loops: Sử dụng bài học sau sự cố (Lessons Learned) để cải tiến quy trình vận hành và ngăn chặn lỗi lặp lại.",
         "whyCorrect": "• Rút kinh nghiệm để cải tiến vận hành thực chất là giá trị cao nhất của phản hồi khủng hoảng.",
         "whyWrong": {
@@ -555,7 +555,7 @@
           "C": "Truyền thông tầm quan trọng của phản hồi",
           "D": "Truyền thông định kỳ về giá trị"
         },
-        "answerDisplay": "B. Create and participate in a risk culture.",
+        "answerDisplay": "B. Create and participate in a risk culture of open feedback",
         "concept": "• Risk Culture (Văn hóa Rủi ro minh bạch): Cho phép nhân viên thoải mái báo cáo sai sót và tiếp nhận phản hồi mà không sợ bị trừng phạt.",
         "whyCorrect": "• Xây dựng văn hóa mở thúc đẩy việc tự giác lắng nghe và sửa đổi.",
         "whyWrong": {
@@ -588,7 +588,7 @@
           "C": "Họ có nhiều thời gian rảnh hơn",
           "D": "Họ bắt buộc phải trả lời"
         },
-        "answerDisplay": "B. They may have more institutional knowledge about a subject than managers.",
+        "answerDisplay": "B. They may have more hands-on institutional knowledge about practical subject workflows than managers",
         "concept": "• Operational Staff (Nhân viên vận hành trực tiếp) thấu hiểu mọi rủi ro và nút thắt quy trình hàng ngày mà cấp quản lý chỉ nhìn thấy trên báo cáo.",
         "whyCorrect": "• Tri thức vận hành thực tế giúp BIA đánh giá chính xác các lỗ hổng hệ thống.",
         "whyWrong": {
@@ -654,7 +654,7 @@
           "C": "Lý trí đạo đức có ít lợi ích hữu hình",
           "D": "Quyết định của con người thường bị chi phối mạnh mẽ bởi cảm xúc, định kiến và nhận thức hơn là logic thuần túy (influenced by emotion and not logic)"
         },
-        "answerDisplay": "D. Human decision making is often influenced by emotion and not logic.",
+        "answerDisplay": "D. Human decision making is often influenced by emotion and bias rather than pure logic",
         "concept": "• Tâm lý học hành vi (Bounded Rationality): Quyết định thực tế của con người bị chi phối bởi cảm xúc, áp lực thời gian và định kiến nhận thức.",
         "whyCorrect": "• Cảm xúc và định kiến tâm lý thường lấn át khả năng lập luận logic đạo đức thuần túy.",
         "whyWrong": {
@@ -687,7 +687,7 @@
           "C": "Thuật toán cơ bản không xử lý quá 5 bước",
           "D": "Thuật toán cơ bản chỉ xử lý số"
         },
-        "answerDisplay": "A. A basic algorithm has a set amount of choices to optimize for, while a complex algorithm is given the freedom to find its own model",
+        "answerDisplay": "A. A basic algorithm has a set amount of choices to optimize for, while a complex algorithm is given the freedom to find its own model structure",
         "concept": "• Thuật toán phức tạp (Deep Learning / Non-linear models) tự động trích xuất thuộc tính và tự tìm dạng hàm đại diện tối ưu mà không bị giới hạn bởi không gian tham số tuyến tính cố định.",
         "whyCorrect": "• Khả năng tự do khám phá cấu trúc mô hình là đặc trưng của Complex Learning Algorithm.",
         "whyWrong": {
@@ -720,7 +720,7 @@
           "C": "Mô hình ML truyền thống yêu cầu chuyên gia con người thực hiện trích xuất thuộc tính thủ công (requires human feature extraction)",
           "D": "Mô hình ML không cần dữ liệu đầu vào"
         },
-        "answerDisplay": "C. A ML system needs a human to provide the feature extraction.",
+        "answerDisplay": "C. A ML system typically requires a human expert to perform manual feature extraction",
         "concept": "• Phân biệt ML và DL: ML truyền thống yêu cầu Feature Engineering thủ công từ con người; DL (Mạng nơ-ron sâu) tự động học Feature Extraction trực tiếp từ dữ liệu thô.",
         "whyCorrect": "• Trích xuất thuộc tính thủ công bởi con người là hạn chế của ML truyền thống so với DL.",
         "whyWrong": {
@@ -753,7 +753,7 @@
           "C": "Mô hình nhận diện hình ảnh ưu tiên chọn khuôn mặt này hơn khuôn mặt khác dựa trên phân bố tần suất mẫu trong dữ liệu (selects face based on sample data)",
           "D": "Mô hình không phân biệt được chó và ảnh"
         },
-        "answerDisplay": "C. an image recognition model selects one face over another based on sample data",
+        "answerDisplay": "C. An image recognition model selects one face over another based on sample data distribution",
         "concept": "• Empirical Reflection: Mô hình tái phản ánh chính xác phân bố thống kê khách quan chứa trong tập dữ liệu huấn luyện mà nó được nạp.",
         "whyCorrect": "• Phản ánh hiện tượng mô hình sao chép và thể hiện lại sự lệch phân bố mẫu thực nghiệm trong tập dữ liệu.",
         "whyWrong": {
@@ -786,7 +786,7 @@
           "C": "Nguyên lý đầu tiên",
           "D": "Tóm tắt khách quan"
         },
-        "answerDisplay": "A. Highly correlated attributes",
+        "answerDisplay": "A. Highly correlated attributes (Collinearity)",
         "concept": "• Đa cộng tuyến (Multicollinearity): Thành phố phụ thuộc trực tiếp vào Bang, khiến hai biến số này chứa thông tin trùng lặp tương quan mạnh.",
         "whyCorrect": "• Tên thành phố quyết định tên bang tương ứng, tạo ra tính đa cộng tuyến dư thừa dữ liệu.",
         "whyWrong": {
@@ -852,7 +852,7 @@
           "C": "Chiêu trò doanh nghiệp",
           "D": "Công cụ có hại phá hủy chủ nghĩa tư bản"
         },
-        "answerDisplay": "A. an overall good for humanity, no matter the consequences",
+        "answerDisplay": "A. Fiduciary duty to maximize shareholder value",
         "concept": "• Quan điểm Thuyết cổ đông (Shareholder Theory của Milton Friedman): Nghĩa vụ đạo đức và pháp lý hàng đầu của quản trị doanh nghiệp là tối đa hóa lợi nhuận cho cổ đông.",
         "whyCorrect": "• Phản ánh tư tưởng coi lợi nhuận cổ đông là mục tiêu tối cao của doanh nghiệp.",
         "whyWrong": {
@@ -885,7 +885,7 @@
           "C": "Dữ liệu đầu vào và dữ liệu đầu ra, nhưng không thể hiểu logic toán ra quyết định bên trong (inputs/outputs, but not the algorithm logic)",
           "D": "Hiểu hoàn toàn logic thuật toán"
         },
-        "answerDisplay": "C. inputs/outputs, algorithm",
+        "answerDisplay": "C. Input data and output data, but not the internal mathematical decision-making logic",
         "concept": "• Đặc trưng AI Hộp đen: Con người quan sát được Input và Output nhưng không giải thích được các phép biến đổi ma trận ẩn bên trong.",
         "whyCorrect": "• Thấy được đầu vào và đầu ra nhưng không hiểu logic nội tại bên trong là bản chất của AI Hộp đen.",
         "whyWrong": {
@@ -918,7 +918,7 @@
           "C": "Tỷ lệ thuật toán và đường cong",
           "D": "Tỷ lệ dữ liệu huấn luyện"
         },
-        "answerDisplay": "B. the percentage of predictions that don't match actual outcomes",
+        "answerDisplay": "B. The measure/percentage of predictions that don't match actual outcomes (Loss/Error)",
         "concept": "• Hàm sai số (Loss/Error Function) đo lường mức độ sai lệch giữa đầu ra dự đoán của mô hình và nhãn thực tế.",
         "whyCorrect": "• Đo lường tỷ lệ/khoảng cách dự đoán sai so với thực tế là bản chất của Error function.",
         "whyWrong": {
@@ -951,7 +951,7 @@
           "C": "Một loại máy tính phần cứng",
           "D": "Danh sách nguyên liệu tạo bài toán"
         },
-        "answerDisplay": "A. a recipe that a computer uses to solve problems",
+        "answerDisplay": "A. A step-by-step set of instructions (recipe) that a computer uses to solve a problem",
         "concept": "• Định nghĩa Thuật toán (Algorithm): Dãy các quy tắc hay chỉ dẫn từng bước rõ ràng để xử lý dữ liệu và giải quyết bài toán.",
         "whyCorrect": "• Ví như công thức từng bước cho máy tính giải quyết vấn đề.",
         "whyWrong": {
@@ -984,7 +984,7 @@
           "C": "Nó cung cấp trách nhiệm giải trình và xây dựng lòng tin cho người dùng cùng các kiểm toán viên (provides accountability and trust)",
           "D": "Giải thích cho cổ đông"
         },
-        "answerDisplay": "C. It provides accountability and trust",
+        "answerDisplay": "C. It provides accountability and trust for users and auditors",
         "concept": "• Explainable AI (XAI) tạo nền tảng cho Accountability (Trách nhiệm giải trình) và Trust (Lòng tin) vào các quyết định tự động.",
         "whyCorrect": "• Khả năng giải thích giúp đảm bảo trách nhiệm pháp lý và tạo dựng niềm tin công chúng.",
         "whyWrong": {
@@ -1017,7 +1017,7 @@
           "C": "Kiểm tra AI có đáng tin không",
           "D": "Kiểm tra tính sẵn sàng hệ thống"
         },
-        "answerDisplay": "A. To test whether an Al system is capable of tricking a person into thinking it's another person.",
+        "answerDisplay": "A. To test whether an AI system is capable of tricking a human into thinking it is another human",
         "concept": "• Turing Test (Alan Turing, 1950): Đánh giá khả năng bộc lộ hành vi trí tuệ của máy tính đến mức con người không thể phân biệt được với người thật qua hội thoại.",
         "whyCorrect": "• Đánh lừa con người trong giao tiếp hội thoại là tiêu chuẩn của bài kiểm tra Turing.",
         "whyWrong": {
@@ -1050,7 +1050,7 @@
           "C": "Mức độ tương tác",
           "D": "Chu kỳ phản hồi ngắn làm củng cố và khuếch đại nhanh chóng các thiên vị ban đầu (Short feedback cycles)"
         },
-        "answerDisplay": "D. short feedback cycles",
+        "answerDisplay": "D. Short feedback cycles that reinforce initial bias rapidly",
         "concept": "• Short Feedback Loops: Dữ liệu hành vi người dùng (quẹt trái/phải) lập tức quay lại huấn luyện mô hình, tạo ra vòng lặp khuếch đại định kiến cực nhanh.",
         "whyCorrect": "• Chu kỳ phản hồi ngắn tăng tốc độ khắc sâu các định kiến lựa chọn ban đầu.",
         "whyWrong": {
@@ -1084,7 +1084,7 @@
           "D": "Chúng có thể bị bẻ gãy bằng cách kết hợp tập dữ liệu này với các dữ liệu công khai khác sẵn có (combining with other public data)",
           "E": "Tải toàn bộ bộ nhớ"
         },
-        "answerDisplay": "D. They can be broken by combining this data with other publicly available data",
+        "answerDisplay": "D. They can be broken by combining this data with other publicly available data (Linkage attack)",
         "concept": "• Rủi ro Tái định danh (Re-identification via Linkage Attack): Thuật toán và dữ liệu công khai ngoài (mạng xã hội, báo chí) dễ dàng khôi phục danh tính từ tệp ẩn danh hóa sơ sài.",
         "whyCorrect": "• Kết hợp với các nguồn dữ liệu mở bên ngoài triệt tiêu hiệu quả bảo vệ của ẩn danh truyền thống.",
         "whyWrong": {
@@ -1183,7 +1183,7 @@
           "C": "Tối thiểu hóa chỉ số chất lượng",
           "D": "Tối thiểu hóa kích thước tập dữ liệu"
         },
-        "answerDisplay": "A. minimize the error rate as long as parity is obtained",
+        "answerDisplay": "A. Minimize the error rate as long as parity is obtained",
         "concept": "• Fairness-Constrained Accuracy Optimization: Đạt được độ chính xác tối đa (lỗi thấp nhất) trong phạm vi ràng buộc công bằng giữa các nhóm.",
         "whyCorrect": "• Giảm thiểu sai số nhưng bắt buộc duy trì sự bình đẳng chỉ số giữa các nhóm.",
         "whyWrong": {
@@ -1249,7 +1249,7 @@
           "C": "Tối đa hóa lợi nhuận công ty",
           "D": "Loại bỏ hoàn toàn con người"
         },
-        "answerDisplay": "A. Just treatment without prejudice",
+        "answerDisplay": "A. Just treatment without prejudice or favorism across protected groups",
         "concept": "• Định nghĩa Fairness: Đảm bảo mô hình AI đưa ra quyết định không bị ảnh hưởng tiêu cực bởi các thuộc tính nhạy cảm được bảo vệ (giới tính, chủng tộc, tuổi tác).",
         "whyCorrect": "• Đối xử bình đẳng không định kiến là bản chất của Fairness.",
         "whyWrong": {
@@ -1282,7 +1282,7 @@
           "C": "Luôn ghi nhớ rằng chúng ta chưa thể biết hết toàn bộ quy mô năng lực mà các hệ thống AI có thể đạt tới để lập kế hoạch quản lý rủi ro tốt hơn (remembering we don't know full extent of AI capabilities)",
           "D": "Giả định đã biết hết năng lực AI"
         },
-        "answerDisplay": "C. We need to remember that we don't know the full extent of what Al systems might become capable of so that we can better plam",
+        "answerDisplay": "C. Remembering we don't know the full extent of what AI systems might become capable of so we can better plan risk mitigation",
         "concept": "• Capability Caution Principle: Thừa nhận sự bất định về sức mạnh tương lai của AI để xây dựng hàng rào an toàn phòng ngừa rủi ro vượt kiểm soát.",
         "whyCorrect": "• Tự nhận thức giới hạn hiểu biết về sự tiến hóa của AI để chuẩn bị phương án quản trị rủi ro.",
         "whyWrong": {
@@ -1315,7 +1315,7 @@
           "C": "PCI DSS",
           "D": "COPPA"
         },
-        "answerDisplay": "A. FAIR",
+        "answerDisplay": "A. FAIR (Findable, Accessible, Interoperable, Reusable)",
         "concept": "• Nguyên tắc dữ liệu FAIR (Findable, Accessible, Interoperable, Reusable) là khung tiêu chuẩn dữ liệu mở toàn cầu.",
         "whyCorrect": "• Tiêu chuẩn FAIR quy định khả năng chia sẻ và chia sẻ lại dữ liệu mở khoa học.",
         "whyWrong": {
@@ -1348,7 +1348,7 @@
           "C": "Truyền thông từ dưới lên không có quản lý",
           "D": "Chỉ có các văn bản tài liệu tĩnh"
         },
-        "answerDisplay": "A. Transparency about company values.",
+        "answerDisplay": "A. Transparency about company values through continuous actions and open communication",
         "concept": "• Xây dựng văn hóa đạo đức yêu cầu sự Minh bạch giá trị (Transparency), nêu gương từ lãnh đạo và giao tiếp hai chiều công khai.",
         "whyCorrect": "• Minh bạch giá trị cốt lõi đi đôi với hành động tạo dựng niềm tin cho toàn tổ chức.",
         "whyWrong": {
@@ -1381,7 +1381,7 @@
           "C": "Giảm nguy cơ tự động",
           "D": "Chỉ giải quyết tranh chấp nội bộ"
         },
-        "answerDisplay": "A. An Ethics Board can help maintain an organization's values-based intentions and increase transparency into how they use data-driven technologies _",
+        "answerDisplay": "A. An Ethics Board can help maintain an organization's values-based intentions and increase transparency into how they use data-driven technologies",
         "concept": "• Hội đồng Đạo đức (Ethics Board) giữ vai trò định hướng giá trị đạo đức và giám sát minh bạch quy trình sử dụng AI trong tổ chức.",
         "whyCorrect": "• Định hướng giá trị cốt lõi và đảm bảo minh bạch là hai nhiệm vụ quan trọng nhất của Ethics Board.",
         "whyWrong": {
@@ -1414,7 +1414,7 @@
           "C": "Nhân viên tuân lệnh mù quáng",
           "D": "Giá cổ phiếu tăng tức thì"
         },
-        "answerDisplay": "B. Employees will feel a sense of responsibility and loyalty.",
+        "answerDisplay": "B. Employees will feel a sense of responsibility, trust, and organizational loyalty",
         "concept": "• Tác động tích cực của Văn hóa Đạo đức: Thúc đẩy sự gắn kết (Employee Engagement), gia tăng lòng trung thành và tinh thần trách nhiệm công việc.",
         "whyCorrect": "• Nhân viên cảm thấy tự hào và có trách nhiệm khi làm việc trong môi trường minh bạch đạo đức.",
         "whyWrong": {
@@ -1447,7 +1447,7 @@
           "C": "Cung cấp lựa chọn sản phẩm",
           "D": "Cung cấp lựa chọn dịch vụ"
         },
-        "answerDisplay": "B. Fair competition builds user trust in technology as a whole.",
+        "answerDisplay": "B. Fair competition builds user trust and prevents monopoly exploitation in data ecosystems",
         "concept": "• Anti-monopoly & Data Governance: Cạnh tranh công bằng ngăn chặn Big Tech lạm dụng vị thế độc quyền dữ liệu để bóp nghẹt đổi mới sáng tạo và thao túng người dùng.",
         "whyCorrect": "• Xây dựng lòng tin chung cho toàn bộ hệ sinh thái công nghệ và bảo vệ người tiêu dùng.",
         "whyWrong": {
@@ -1480,7 +1480,7 @@
           "C": "Sửa đổi sản phẩm sau phản hồi tiêu cực",
           "D": "Quy trình thay thế ban điều hành"
         },
-        "answerDisplay": "B. A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in fostering an ethical organizational culture.",
+        "answerDisplay": "B. A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in making organizational change toward an ethical culture",
         "concept": "• Change Management: Quy trình quản trị chuyển đổi hành vi, tư duy và cấu trúc tổ chức hướng tới các chuẩn mực văn hóa đạo đức mới.",
         "whyCorrect": "• Hỗ trợ toàn diện cá nhân và tập thể thích nghi với sự thay đổi văn hóa tổ chức.",
         "whyWrong": {
@@ -1513,7 +1513,7 @@
           "C": "'Nó là như vậy rồi.'",
           "D": "'Đây là những gì chúng tôi được bảo phải làm.'"
         },
-        "answerDisplay": "B. \"This is how things are done around here.\"",
+        "answerDisplay": "B. 'This is how things are done around here.'",
         "concept": "• Định nghĩa kinh điển của Văn hóa tổ chức: 'The way we do things around here' - Thói quen, niềm tin và hành vi ứng xử ngầm định hàng ngày của tập thể.",
         "whyCorrect": "• Thể hiện thói quen ứng xử và chuẩn mực hành động thực tế đã ăn sâu vào tổ chức.",
         "whyWrong": {
@@ -1546,7 +1546,7 @@
           "C": "Hạ giá thành sản phẩm",
           "D": "Tăng tốc đầu tư R&D"
         },
-        "answerDisplay": "B. Encouraging product or service differentiation",
+        "answerDisplay": "B. Encouraging product or service differentiation and user empowerment",
         "concept": "• Lợi ích của Fair Competition: Tránh sự độc quyền cồng kềnh, thúc đẩy đổi mới sáng tạo đa dạng và trao cho người dùng quyền tự do lựa chọn giải pháp.",
         "whyCorrect": "• Thúc đẩy sự đa dạng giải pháp công nghệ và trao quyền lựa chọn tự do cho người tiêu dùng.",
         "whyWrong": {
@@ -1579,7 +1579,7 @@
           "C": "Tập trung tìm nguyên nhân lỗi quá khứ",
           "D": "Tập trung vào tuân thủ kiểm toán"
         },
-        "answerDisplay": "B. Focused on preventing future problems.",
+        "answerDisplay": "B. Focused on identifying and preventing future potential ethical problems (Forward-looking)",
         "concept": "• Ethical Impact Assessment (EIA) là công cụ chủ động hướng về tương lai (Proactive / Forward-looking) giúp đánh giá tác động trước khi triển khai công nghệ.",
         "whyCorrect": "• Chủ động nhận diện và triệt tiêu các nguy cơ sự cố đạo đức trước khi sản phẩm ra mắt.",
         "whyWrong": {
@@ -1612,7 +1612,7 @@
           "C": "Có thể ảnh hưởng tới năng suất người lao động",
           "D": "Có thể nảy sinh các vi phạm tiềm tàng về quyền lao động và quyền con người như mất việc làm và tước đoạt sinh kế (potential labor rights and human rights violations)"
         },
-        "answerDisplay": "D. There might be potential labor rights and human rights violations.",
+        "answerDisplay": "D. There might be potential labor rights and human rights violations (job displacement, economic disenfranchisement)",
         "concept": "• AI & Labor Ethics: Nguy cơ thay thế lao động quy mô lớn và tước đoạt sinh kế đe dọa trực tiếp tới Quyền con người và Quyền lao động cơ bản.",
         "whyCorrect": "• Bảo vệ nhân quyền và quyền lao động trước nguy cơ bị tự động hóa đào thải là lý do đạo đức cao nhất.",
         "whyWrong": {
@@ -1627,7 +1627,7 @@
       "task": "su24_fe_re",
       "taskLabel": "SU24 FE RE",
       "num": 50,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Which of the following are potential training data inadequacies that you should communicate to your users in support of transparency? (Select two.)",
       "options": {
         "A": "The amount of time it took to collect data",
@@ -1645,7 +1645,7 @@
           "C": "Kích thước lớn của tập dữ liệu",
           "D": "Bất kỳ giá trị bị khuyết nào trong tập dữ liệu và cách chúng được xử lý (Any missing values and how handled)"
         },
-        "answerDisplay": "B. Any known bias in the sample data & D. Any missing values in the dataset and how they were handled.",
+        "answerDisplay": "B. Any known bias in the sample data & D. Any missing values in dataset and how they were handled",
         "concept": "• Minh bạch dữ liệu (Data Transparency): Công khai hạn chế của dữ liệu mẫu (Known Bias) và phương pháp xử lý dữ liệu thiếu (Missing Value Handling).",
         "whyCorrect": "• Công khai thiên vị và cách xử lý dữ liệu khuyết giúp người dùng hiểu rõ giới hạn và độ tin cậy của mô hình.",
         "whyWrong": {
@@ -1659,7 +1659,7 @@
       "task": "su24_fe_re",
       "taskLabel": "SU24 FE RE",
       "num": 51,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Which of the following benefits can be gained from establishing baseline system behaviors? (Select two.)",
       "options": {
         "A": "Tracking deviance from norms",
@@ -1691,7 +1691,7 @@
       "task": "su24_fe_re",
       "taskLabel": "SU24 FE RE",
       "num": 52,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Which of the following are tools of an effective media communication plan? (Select two.)",
       "options": {
         "A": "Mission statement",
@@ -1723,7 +1723,7 @@
       "task": "su24_fe_re",
       "taskLabel": "SU24 FE RE",
       "num": 53,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Which of the following are useful strategies for communicating ethical risks to the individual? (Select two.)",
       "options": {
         "A": "Ensure individuals understand specific details of each risk",
@@ -1741,7 +1741,7 @@
           "C": "Yêu cầu cá nhân tự giảm thiểu rủi ro",
           "D": "Đảm bảo cá nhân cảm thấy họ có quyền đóng góp ý kiến vào quy trình (Ensure individuals feel they have input)"
         },
-        "answerDisplay": "B. Communicate to individuals proactively rather than reactively & D. Ensure individuals feel that they have input into the process",
+        "answerDisplay": "B. Communicate to individuals proactively rather than reactively & D. Ensure individuals feel that they have input into the process (User empowerment)",
         "concept": "• Truyền thông rủi ro cá nhân hiệu quả: Cần thể hiện sự Chủ động (Proactive) và Trao quyền đóng góp (Empowerment) cho người dùng.",
         "whyCorrect": "• Chủ động cảnh báo và lắng nghe đóng góp ý kiến của người dùng giúp tăng hiệu quả bảo vệ riêng tư.",
         "whyWrong": {
@@ -1755,7 +1755,7 @@
       "task": "su24_fe_re",
       "taskLabel": "SU24 FE RE",
       "num": 54,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Which of the following communication tactics help uphold transparency and explainability from the customer perspective? (Select two.)",
       "options": {
         "A": "Providing prompt responses to customer questions about AI decisions",
@@ -1773,7 +1773,7 @@
           "C": "Cung cấp tài liệu kỹ thuật hàn lâm phức tạp",
           "D": "Cung cấp hướng dẫn bảo mật mật khẩu"
         },
-        "answerDisplay": "A. Providing prompt responses to customer questions about the decisions made by data-driven systems. & B. Providing information about data-driven systems in simple, easy-to-understand terms.",
+        "answerDisplay": "A. Providing prompt responses to customer questions about AI decisions & B. Providing information about data-driven systems in simple, easy-to-understand terms",
         "concept": "• Minh bạch góc nhìn người dùng: Phản hồi nhanh chóng thắc mắc và Giải thích bằng ngôn ngữ phổ thông đơn giản.",
         "whyCorrect": "• Phản hồi kịp thời và dùng ngôn ngữ đơn giản giúp khách hàng thực sự thấu hiểu và tin tưởng hệ thống.",
         "whyWrong": {
@@ -1787,7 +1787,7 @@
       "task": "su24_fe_re",
       "taskLabel": "SU24 FE RE",
       "num": 55,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Which of the following are challenges that can arise if you fail to communicate about the social impact of ethical risks? (Select two.)",
       "options": {
         "A": "Decreased corporate revenue",
@@ -1805,7 +1805,7 @@
           "C": "Sự tước đoạt quyền lợi của các nhóm yếu thế (Disenfranchisement)",
           "D": "Sự xói mòn các quyền con người cơ bản (Erosion of rights)"
         },
-        "answerDisplay": "C. Disenfranchisement & D. Erosion of rights",
+        "answerDisplay": "C. Disenfranchisement of vulnerable groups & D. Erosion of fundamental human rights",
         "concept": "• Không truyền thông rủi ro tác động xã hội gây ra các thảm họa nhân văn nghiêm trọng như tước đoạt quyền xã hội và xói mòn nhân quyền.",
         "whyCorrect": "• Tước đoạt quyền lợi nhóm yếu thế và xói mòn nhân quyền là hai tác động xã hội lớn nhất.",
         "whyWrong": {
@@ -1819,7 +1819,7 @@
       "task": "su24_fe_re",
       "taskLabel": "SU24 FE RE",
       "num": 56,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Management asks someone to do a data-related task. Which of the following would likely be ethically problematic? (Select two.)",
       "options": {
         "A": "Manipulate data or alter its interpretation to favor a specific narrative",
@@ -1837,7 +1837,7 @@
           "C": "Chuyển đổi dữ liệu sang định dạng khác",
           "D": "Xóa bỏ các điểm dữ liệu bất lợi để che giấu xu hướng tiêu cực (Delete inconvenient data points)"
         },
-        "answerDisplay": "A. Manipulate data or alter its interpretation. & D. Delete any erroneous data / inconvenient data points",
+        "answerDisplay": "A. Manipulate data or alter its interpretation to favor a specific narrative & D. Delete inconvenient data points to hide negative trends",
         "concept": "• Đạo đức Xử lý Dữ liệu: Cấm tuyệt đối hành vi Thao túng diễn giải dữ liệu (Data Manipulation) và Che giấu/Xóa bỏ dữ liệu thực tế bất lợi.",
         "whyCorrect": "• Thao túng diễn giải và xóa dữ liệu bất lợi là hai vi phạm đạo đức dữ liệu nghiêm trọng nhất.",
         "whyWrong": {
@@ -1851,7 +1851,7 @@
       "task": "su24_fe_re",
       "taskLabel": "SU24 FE RE",
       "num": 57,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Which of the following are ways that regulations differ from ethical frameworks? (Select two.)",
       "options": {
         "A": "Regulations are often industry led",
@@ -1901,7 +1901,7 @@
           "C": "Beneficence chỉ thúc đẩy lợi ích cho con người",
           "D": "Beneficence là thúc đẩy hiệu suất hệ thống"
         },
-        "answerDisplay": "B. Beneficence is the promotion of well-being, not just for moral agents like humans, but of animals, the environment, and societies _",
+        "answerDisplay": "B. Beneficence is the active promotion of well-being, not just for moral agents like humans, but of animals, environment, and societies",
         "concept": "• Beneficence (Thuyết làm điều thiện) bao quát việc chủ động tạo ra tác động tích cực rộng lớn cho con người, hệ sinh thái và toàn xã hội.",
         "whyCorrect": "• Định nghĩa toàn diện về việc tạo dựng lợi ích cho con người, sinh giới và môi trường.",
         "whyWrong": {
@@ -1916,7 +1916,7 @@
       "task": "su24_fe_re",
       "taskLabel": "SU24 FE RE",
       "num": 59,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Which of the following are advantages to adopting standards frameworks like ISO 27000? (Select two.)",
       "options": {
         "A": "Technology-specific focus and precise implementation instructions",
@@ -1934,7 +1934,7 @@
           "C": "Sức mạnh cưỡng chế pháp lý",
           "D": "Sự hỗ trợ, công nhận và thừa nhận quốc tế (International support and recognition)"
         },
-        "answerDisplay": "B. Formal certification processes that provide competitive advantage & D. International support, recognition, and involvement",
+        "answerDisplay": "B. Formal certification processes that provide competitive advantage & D. International support, recognition, and global involvement",
         "concept": "• Lợi ích của Tiêu chuẩn ISO 27000: Có giá trị Chứng nhận Quốc tế (International Recognition) và chứng minh năng lực an ninh mạng giúp tạo lợi thế cạnh tranh.",
         "whyCorrect": "• Chứng nhận ISO mang lại uy tín cạnh tranh quốc tế và được công nhận toàn cầu.",
         "whyWrong": {
@@ -1966,7 +1966,7 @@
           "C": "Tập dữ liệu dương tính giả",
           "D": "Tập dữ liệu dự đoán"
         },
-        "answerDisplay": "A. classic training set",
+        "answerDisplay": "A. Classic training set split",
         "concept": "• Classic Train/Val/Test Split (60-20-20): Tỷ lệ phân chia kinh điển trong khoa học dữ liệu giúp huấn luyện và đánh giá mô hình khách quan.",
         "whyCorrect": "• 60/20/20 là tên gọi tiêu chuẩn của Classic training set split.",
         "whyWrong": {

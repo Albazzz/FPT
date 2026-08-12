@@ -93,7 +93,7 @@
           "C": "Hỗ trợ tính nhất quán trong hành vi và thống nhất văn hóa tổ chức (consistency of behavior and unification of culture)",
           "D": "Cải thiện kết quả bán hàng"
         },
-        "answerDisplay": "B. It supports accountability and makes it more explicit & C. It supports consistency of behavior and unification of culture.",
+        "answerDisplay": "B. It supports accountability and makes it more explicit & C. It supports consistency of behavior and unification of culture",
         "concept": "• Chính sách tổ chức (Organizational Policies) quy định rõ trách nhiệm giải trình và chuẩn hóa hành vi ứng xử thống nhất cho toàn bộ nhân sự.",
         "whyCorrect": "• Minh bạch hóa trách nhiệm giải trình và tạo sự thống nhất hành vi văn hóa là hai mục tiêu cốt lõi của chính sách tổ chức.",
         "whyWrong": {
@@ -125,7 +125,7 @@
           "C": "Phân tích chính trị nội bộ",
           "D": "Phân tích thiên vị AI"
         },
-        "answerDisplay": "B. To perform a strategic analysis of how external environments impact business operations.",
+        "answerDisplay": "B. To perform a strategic analysis of how external environments impact business operations",
         "concept": "• Khung STEEPV phân tích 6 yếu tố vĩ mô môi trường bên ngoài: Social, Technological, Economic, Environmental, Political, Values.",
         "whyCorrect": "• Phân tích tác động của các yếu tố vĩ mô môi trường bên ngoài đến doanh nghiệp là bản chất của STEEPV.",
         "whyWrong": {
@@ -191,7 +191,7 @@
           "C": "Mật khẩu CSDL không an toàn",
           "D": "Tấn công đối kháng mạng"
         },
-        "answerDisplay": "A. Re-identification through auxiliary datasets",
+        "answerDisplay": "A. Re-identification through auxiliary datasets (Linkage attack)",
         "concept": "• Tái định danh (Re-identification) xảy ra khi tập dữ liệu được ẩn danh hóa sơ sài bị liên kết chéo với tập dữ liệu công khai bên ngoài (như IMDb) để lộ tên người dùng.",
         "whyCorrect": "• Các nhà nghiên cứu đã khôi phục danh tính cá nhân từ tập dữ liệu rating vô danh của Netflix bằng cách liên kết với dữ liệu IMDb công khai.",
         "whyWrong": {
@@ -257,7 +257,7 @@
           "C": "Tác động không bình đẳng gián tiếp (Disparate impact)",
           "D": "Ngược đãi không bình đẳng"
         },
-        "answerDisplay": "C. Disparate impact",
+        "answerDisplay": "C. Disparate impact (Unintentional adverse outcome on protected group)",
         "concept": "• Disparate Impact (Tác động bất bình đẳng gián tiếp) xảy ra khi quy trình trung lập tạo ra kết quả bất lợi không mong muốn cho một nhóm đối tượng cụ thể.",
         "whyCorrect": "• Tỷ lệ đạt điều kiện chênh lệch đáng kể giữa nam và nữ là biểu hiện chuẩn của Disparate Impact.",
         "whyWrong": {
@@ -322,7 +322,7 @@
           "C": "Cột không nhạy cảm",
           "D": "Thuộc tính nhạy cảm (Sensitive attribute)"
         },
-        "answerDisplay": "D. sensitive column",
+        "answerDisplay": "D. Sensitive attribute",
         "concept": "• Sensitive Attribute (Thuộc tính nhạy cảm) là thông tin như tình trạng bệnh lý, thu nhập, tôn giáo cần bảo vệ riêng tư.",
         "whyCorrect": "• Bản thân thuộc tính nhạy cảm (như chẩn đoán y tế) không trực tiếp chỉ danh tính nhưng là thông tin cần bảo mật cao nhất.",
         "whyWrong": {
@@ -355,7 +355,7 @@
           "C": "Áp dụng luật quốc tế",
           "D": "Sửa đổi quy trình tòa án"
         },
-        "answerDisplay": "A. A ruling or scoring made outside of a court",
+        "answerDisplay": "A. A ruling or scoring made outside of a formal court system",
         "concept": "• Extrajudicial Judgment là việc các thuật toán hay thực thể tư nhân tự động đưa ra quyết định đánh giá/chấm điểm trừng phạt cá nhân mà không qua quy trình xét xử của tòa án.",
         "whyCorrect": "• Quyết định hay chấm điểm đưa ra bên ngoài tòa án chính thức là bản chất của Extrajudicial judgment.",
         "whyWrong": {
@@ -617,7 +617,7 @@
           "C": "Lòng tin bị dùng chống lại công ty",
           "D": "Lòng tin là trào lưu tạm thời"
         },
-        "answerDisplay": "A. Trust, once lost, is difficult to regain.",
+        "answerDisplay": "A. Trust, once lost, is extremely difficult to regain.",
         "concept": "• Lòng tin công chúng (Public Trust) là tài sản vô hình quý giá nhất; một khi bị phá hủy bởi scandal đạo đức sẽ mất nhiều năm để gầy dựng lại.",
         "whyCorrect": "• Tính chất khó khôi phục của lòng tin khẳng định tầm quan trọng cốt lõi của việc duy trì uy tín.",
         "whyWrong": {
@@ -650,7 +650,7 @@
           "C": "Nguyên tắc cạnh tranh công bằng",
           "D": "Nghiên cứu tài chính"
         },
-        "answerDisplay": "A. An acronym for findable, accessible, interoperable, and reusable.",
+        "answerDisplay": "A. Findable, Accessible, Interoperable, and Reusable",
         "concept": "• Nguyên tắc dữ liệu FAIR: Findable (Tìm kiếm được), Accessible (Truy cập được), Interoperable (Tương tác hệ thống được), Reusable (Tái sử dụng được).",
         "whyCorrect": "• Định nghĩa chuẩn mực của tiêu chuẩn dữ liệu mở FAIR trong quản trị dữ liệu khoa học.",
         "whyWrong": {
@@ -683,7 +683,7 @@
           "C": "Toàn bộ khách hàng bên ngoài",
           "D": "Chỉ các cổ đông và nhà đầu tư"
         },
-        "answerDisplay": "B. All people who have an impact or are impacted by the organization.",
+        "answerDisplay": "B. All people who have an impact on or are impacted by the organization",
         "concept": "• Stakeholder (Bên liên quan) bao gồm bất kỳ cá nhân hay nhóm nào có thể gây ảnh hưởng hoặc chịu ảnh hưởng bởi các quyết định và sản phẩm của doanh nghiệp.",
         "whyCorrect": "• Bao quát cả chiều tác động hai hướng (tác động đến tổ chức và chịu tác động từ tổ chức).",
         "whyWrong": {
@@ -846,7 +846,7 @@
           "C": "Mô hình không nhận diện được khác biệt văn hóa",
           "D": "Mô hình tổng hợp dữ liệu đa nguồn"
         },
-        "answerDisplay": "B. a model selects for one demographic less often because of their historical representation",
+        "answerDisplay": "B. A model selects for one demographic less often because of their historical representation",
         "concept": "• Historical Bias (Thiên vị lịch sử) xảy ra khi dữ liệu quá khứ chứa tỷ lệ đại diện thấp cho một nhóm xã hội, khiến thuật toán phân biệt lựa chọn nhóm đó ít hơn.",
         "whyCorrect": "• Phản ánh chính xác cơ chế học thiên vị từ sự thiếu hụt đại diện trong dữ liệu quá khứ.",
         "whyWrong": {
@@ -879,7 +879,7 @@
           "C": "Dữ liệu chuyển đổi định dạng âm thanh/video",
           "D": "Dữ liệu chia sẻ với người thân"
         },
-        "answerDisplay": "B. Data collected for one application that could also be applied to another application in a different domain.",
+        "answerDisplay": "B. Data collected for one application that could also be applied to another application in a different domain",
         "concept": "• Dual-use / Multipurpose Data là dữ liệu được thu thập cho mục đích dân sự/lành tính nhưng có thể bị tái sử dụng cho mục đích theo dõi hoặc quân sự nhạy cảm.",
         "whyCorrect": "• Tái sử dụng dữ liệu sang miền ứng dụng khác ngoài mục đích ban đầu là bản chất của Dual-use data.",
         "whyWrong": {
@@ -912,7 +912,7 @@
           "C": "Nhân tổng dự đoán với phần trăm đúng",
           "D": "Chia số lượng dự đoán đúng cho tổng số lượng dự đoán (Divide correct predictions by total predictions)"
         },
-        "answerDisplay": "D. divide the number of correct predictions by the total number of predictions",
+        "answerDisplay": "D. Divide the number of correct predictions by the total number of predictions",
         "concept": "• Công thức tính Accuracy: Accuracy = (Số lượng dự đoán đúng) / (Tổng số lượng dự đoán).",
         "whyCorrect": "• Phép chia số dự đoán đúng cho tổng số lần dự đoán ra tỷ lệ độ chính xác chuẩn mực.",
         "whyWrong": {
@@ -976,7 +976,7 @@
           "C": "Quét độ dài mảng",
           "D": "Quét số ngẫu nhiên"
         },
-        "answerDisplay": "B. 1. Scan to find the smallest number 2. Set to 0 in the index in the output array 3 Remove that number from the input array 4. Repeat steps 1-3, but add 1 to the index number for each loop",
+        "answerDisplay": "B. 1. Scan to find the smallest number, 2. Set to 0 in index of output array, 3. Remove that number from input array, 4. Repeat steps 1-3 adding 1 to index",
         "concept": "• Thuật toán sắp xếp tăng dần đơn giản (Selection Sort): Tìm phần tử nhỏ nhất -> Đưa vào vị trí mảng mới -> Xóa phần tử cũ -> Lặp lại.",
         "whyCorrect": "• Các bước mô tả chính xác logic lặp tìm phần tử nhỏ nhất và xếp vào mảng kết quả.",
         "whyWrong": {
@@ -1009,7 +1009,7 @@
           "C": "Dự báo sụp đổ tài chính cho nhà nghiên cứu",
           "D": "Cung cấp dự đoán cho cổ đông"
         },
-        "answerDisplay": "B. they predict future movement of stocks and find points to exploit the market moving in either direction",
+        "answerDisplay": "B. They predict future movement of stocks and find points to exploit the market moving in either direction",
         "concept": "• Algorithmic Trading trong Hedge Funds sử dụng AI để dự báo biến động giá ngắn hạn và tự động giao dịch mua/bán khống để sinh lời.",
         "whyCorrect": "• Khai thác biến động thị trường hai chiều (Long/Short) là đặc trưng giao dịch của Hedge Funds.",
         "whyWrong": {
@@ -1042,7 +1042,7 @@
           "C": "Dữ liệu thực nghiệm chưa biết",
           "D": "Không chắc chắn về quy trình thu thập dữ liệu"
         },
-        "answerDisplay": "B. lack of explainability and what a model is actually looking at to make it's prediction",
+        "answerDisplay": "B. Lack of explainability and what a model is actually looking at to make its prediction",
         "concept": "• Unknown Unknowns trong AI Hộp đen là các rủi ro mà chúng ta thậm chí không biết là chúng tồn tại do không thể giải thích cơ chế ra quyết định của mô hình.",
         "whyCorrect": "• Việc không thể biết mô hình đang dựa vào quy luật nào bên trong là rủi ro Unknown Unknowns nguy hại nhất.",
         "whyWrong": {
@@ -1108,7 +1108,7 @@
           "C": "Phân quyền truy cập từng phần dữ liệu",
           "D": "Bảo mật tuyệt đối dữ liệu"
         },
-        "answerDisplay": "A. To enable parties to share private data without revealing individuals represented in the data.",
+        "answerDisplay": "A. To enable parties to share private data without revealing individual identity in the dataset",
         "concept": "• Differential Privacy thêm nhiễu toán học ngẫu nhiên vào dữ liệu để cho phép phân tích thống kê tổng thể mà triệt tiêu khả năng suy luận danh tính cá nhân.",
         "whyCorrect": "• Giúp chia sẻ dữ liệu nghiên cứu an toàn mà không làm lộ dữ liệu cá thể.",
         "whyWrong": {
@@ -1141,7 +1141,7 @@
           "C": "Làn bơi (Swimlane)",
           "D": "Tình huống sử dụng (Use case)"
         },
-        "answerDisplay": "A. pipeline",
+        "answerDisplay": "A. Pipeline (Data Pipeline)",
         "concept": "• Data Pipeline là chuỗi tự động hóa thu thập, biến đổi, làm sạch và phân tích dữ liệu lặp đi lặp lại theo định kỳ.",
         "whyCorrect": "• Tự động hóa quy trình phân tích dữ liệu đầu vào định kỳ là bản chất của Data Pipeline.",
         "whyWrong": {
@@ -1174,7 +1174,7 @@
           "C": "Số lượng lớp nơ-ron và tham số",
           "D": "Hiệu suất và tốc độ tối ưu hóa"
         },
-        "answerDisplay": "A. Accountability and management of bias. & B. Transparency and explainability, balanced with privacy.",
+        "answerDisplay": "A. Accountability and management of bias & B. Transparency and explainability, balanced with privacy",
         "concept": "• Các trụ cột của AI có trách nhiệm (Trustworthy AI): 1. Accountability & Bias control, 2. Transparency & Explainability & Privacy protection.",
         "whyCorrect": "• Hai nhóm trụ cột này là cốt lõi của mọi khung làm việc đạo đức AI chuẩn mực.",
         "whyWrong": {
@@ -1206,7 +1206,7 @@
           "C": "Khó hiểu kết quả đầu ra",
           "D": "Khó tạo báo cáo"
         },
-        "answerDisplay": "A. It is difficult to understand how or why an Al system made a particular decision.",
+        "answerDisplay": "A. It is difficult to understand how or why an AI system made a particular decision.",
         "concept": "• Black Box Problem xảy ra khi logic tính toán toán học bên trong của mô hình AI quá phức tạp khiến con người không thể giải thích lý do dẫn đến kết quả.",
         "whyCorrect": "• Không thể giải thích lập luận ra quyết định bên trong của AI là bản chất của vấn đề Black Box.",
         "whyWrong": {
@@ -1239,7 +1239,7 @@
           "C": "Đường cong huấn luyện thiếu dữ liệu",
           "D": "Lỗi định dạng dữ liệu"
         },
-        "answerDisplay": "A. If drug arrests are historically high in that area, the model may correlate crime with areas of high drug use based on the datasets",
+        "answerDisplay": "A. If drug arrests are historically high in that area, the model may correlate crime with areas of high drug enforcement based on datasets",
         "concept": "• Feedback Loop in Predictive Policing: Mô hình nhận dữ liệu bắt giữ lịch sử (phản ánh tần suất cảnh sát tuần tra) và nhầm lẫn đó là tỷ lệ tội phạm thực tế.",
         "whyCorrect": "• Phản ánh hiện tượng mô hình AI nhầm lẫn giữa tần suất thực thi pháp luật lịch sử với tỷ lệ tội phạm khách quan.",
         "whyWrong": {
@@ -1272,7 +1272,7 @@
           "C": "Khi bàn giao sản phẩm",
           "D": "Trong các đợt đánh giá định kỳ sau triển khai"
         },
-        "answerDisplay": "A. From its inception, through maintenance, to applying foresight regarding its decommissioning.",
+        "answerDisplay": "A. From its inception, through maintenance, to applying foresight regarding its decommissioning",
         "concept": "• Vòng đời Đạo đức Toàn diện (End-to-End Ethical Lifecycle): Đạo đức phải được tích hợp xuyên suốt từ khởi tạo (Inception), phát triển, vận hành cho đến khi hủy bỏ (Decommissioning).",
         "whyCorrect": "• Tích hợp đạo đức xuyên suốt toàn bộ vòng đời sản phẩm đảm bảo sự an toàn và có trách nhiệm tối đa.",
         "whyWrong": {
@@ -1305,7 +1305,7 @@
           "C": "Cả hai hoàn toàn giống nhau",
           "D": "Non-maleficence chỉ áp dụng cho AGI ác ý"
         },
-        "answerDisplay": "A. Beneficence refers to \"do only good\" and non-maleficence refers to \"do no harm\"",
+        "answerDisplay": "A. Beneficence refers to 'do only good' and non-maleficence refers to 'do no harm'",
         "concept": "• Hai nguyên tắc đạo đức sinh học/AI cốt lõi: Beneficence (Chủ động làm điều có lợi cho con người) và Non-maleficence (Tránh tuyệt đối việc gây ra tổn hại).",
         "whyCorrect": "• Phân biệt chính xác giữa hành vi chủ động tạo lợi ích (Beneficence) và nguyên tắc ngắm chừng không gây hại (Non-maleficence).",
         "whyWrong": {
@@ -1338,7 +1338,7 @@
           "C": "Nguyên tắc không có rủi ro an ninh",
           "D": "Nguyên tắc tối đa hóa lợi nhuận"
         },
-        "answerDisplay": "A. The principle of doing no harm.",
+        "answerDisplay": "A. The principle of doing no harm",
         "concept": "• Non-maleficence (Primum non nocere - Trước tiên là không gây hại) là quy tắc đạo đức cơ bản yêu cầu hệ thống công nghệ không được gây ra thiệt hại cho người dùng.",
         "whyCorrect": "• Định nghĩa kinh điển của nguyên tắc Non-maleficence là 'Do no harm'.",
         "whyWrong": {
@@ -1404,7 +1404,7 @@
           "C": "Sử dụng dữ liệu mới hơn dữ liệu lịch sử hiện có (Using new data over existing data)",
           "D": "Dùng dữ liệu Twitter thay vì khảo sát"
         },
-        "answerDisplay": "C. using new data over existing data",
+        "answerDisplay": "C. Using new data over existing data (Recency bias / Data freshness)",
         "concept": "• Data Freshness (Tính tươi mới của dữ liệu): Sử dụng dữ liệu mới cập nhật phản ánh đúng thực tế hành vi hiện tại hơn các dữ liệu lịch sử đã lỗi thời.",
         "whyCorrect": "• Ưu tiên dữ liệu mới giúp mô hình cập nhật xu hướng tiêu dùng và hành vi xã hội hiện hành.",
         "whyWrong": {
@@ -1437,7 +1437,7 @@
           "C": "Thiên vị loại trừ (Exclusion bias)",
           "D": "Thiên vị mẫu (Sample bias)"
         },
-        "answerDisplay": "D. sample bias",
+        "answerDisplay": "D. Sample bias",
         "concept": "• Sample Bias (Thiên vị mẫu) xảy ra khi mẫu thu thập không đại diện đúng cho phân bố của tổng thể thực tế.",
         "whyCorrect": "• Thu thập mẫu không bao quát đầy đủ môi trường thực tế gây ra hiện tượng lệch mẫu.",
         "whyWrong": {
@@ -1601,7 +1601,7 @@
           "C": "Bình đẳng dữ liệu huấn luyện",
           "D": "Bình đẳng thiên vị dự đoán"
         },
-        "answerDisplay": "A. equality of false negatives",
+        "answerDisplay": "A. Equality of false negatives",
         "concept": "• Equality of False Negatives đảm bảo tỷ lệ bỏ sót sai sót gây hại đạt mức ngang nhau giữa tất cả các phân nhóm xã hội.",
         "whyCorrect": "• Cân bằng tỷ lệ Âm tính giả giữa các nhóm đảm bảo rủi ro bỏ sót tổn hại không bị dồn lên một nhóm yếu thế cụ thể.",
         "whyWrong": {
@@ -1634,7 +1634,7 @@
           "C": "Bình đẳng dương tính giả",
           "D": "Bình đẳng tỷ lệ dự đoán"
         },
-        "answerDisplay": "B. statistical parity",
+        "answerDisplay": "B. Statistical parity (Demographic parity)",
         "concept": "• Statistical Parity (Demographic Parity) ép buộc tỷ lệ lựa chọn bằng nhau giữa các nhóm mà không xét đến độ xứng đáng (merit) thực tế của từng cá nhân trong nhóm.",
         "whyCorrect": "• Cân bằng chỉ số nhóm cố định có thể bỏ qua sự chênh lệch năng lực cá nhân thực tế giữa các nhóm.",
         "whyWrong": {
@@ -1667,7 +1667,7 @@
           "C": "Tư duy phản biện về các kịch bản tồi tệ nhất có thể xảy ra (worst-case scenarios) để quyết định có nên tiếp tục dự án hay không",
           "D": "Suy nghĩ về kịch bản tốt nhất"
         },
-        "answerDisplay": "C. The purpose of what-if scenario planning sessions is to think critically about potential worst-case scenarios so you can decide whether or not to proceed with a project",
+        "answerDisplay": "C. To think critically about potential worst-case scenarios so you can decide whether or not to proceed with a project",
         "concept": "• Diễn tập kịch bản 'What-if' đóng vai trò quản lý rủi ro dự phòng, giúp nhận diện các thảm họa tồi tệ nhất (Worst-case) để phòng ngừa hoặc dừng dự án kịp thời.",
         "whyCorrect": "• Đánh giá kịch bản xấu nhất giúp tổ chức quyết định tính khả thi và an toàn đạo đức của dự án trước khi triển khai.",
         "whyWrong": {
@@ -1700,7 +1700,7 @@
           "C": "Duy trì biên lợi nhuận công ty",
           "D": "Tăng tính minh bạch sử dụng AI"
         },
-        "answerDisplay": "A. An Ethics Board can help maintain an organization's values-based intentions and increase transparency into how they use data-driven technologies _",
+        "answerDisplay": "A. An Ethics Board can help maintain an organization's values-based intentions and increase transparency into how they use data-driven technologies",
         "concept": "• Hội đồng Đạo đức (Ethics Board) giữ vai trò định hướng giá trị đạo đức và giám sát minh bạch quy trình sử dụng AI trong tổ chức.",
         "whyCorrect": "• Định hướng giá trị cốt lõi và đảm bảo minh bạch là hai nhiệm vụ quan trọng nhất của Ethics Board.",
         "whyWrong": {
@@ -1766,7 +1766,7 @@
           "C": "Can ngăn người dùng soi xét chính sách",
           "D": "Giúp cung cấp sự minh bạch xung quanh các nỗ lực cải thiện chính sách (provide transparency around efforts to improve policies)"
         },
-        "answerDisplay": "D. It can help provide transparency around the efforts to improve the policies.",
+        "answerDisplay": "D. It can help provide transparency around efforts to improve policies.",
         "concept": "• Ghi nhận và công khai chỉ số vi phạm đạo đức giúp tổ chức minh bạch hóa kết quả xử lý và chứng minh nỗ lực cải tiến liên tục.",
         "whyCorrect": "• Minh bạch hóa nỗ lực cải tiến chính sách củng cố niềm tin của các bên liên quan vào tổ chức.",
         "whyWrong": {
@@ -1832,7 +1832,7 @@
           "C": "Duy trì sự đồng bộ với giá trị văn hóa",
           "D": "Báo cáo tiến độ làm việc cho lãnh đạo"
         },
-        "answerDisplay": "B. It helps maintain alignment with the emergent risks and changing ethical posture of the products and services of the organization.",
+        "answerDisplay": "B. It helps maintain alignment with emergent risks and changing ethical posture of products and services.",
         "concept": "• Công nghệ và rủi ro mới (Emergent Risks) xuất hiện liên tục, đòi hỏi chính sách đạo đức phải được cập nhật thường xuyên để tương thích.",
         "whyCorrect": "• Đảm bảo chính sách luôn bắt kịp với các rủi ro công nghệ mới xuất hiện là lý do quan trọng nhất.",
         "whyWrong": {
@@ -1898,7 +1898,7 @@
           "C": "Mô tả quy trình dày đặc phức tạp",
           "D": "Ngôn từ mập mờ linh hoạt"
         },
-        "answerDisplay": "A. Simple to follow",
+        "answerDisplay": "A. Simple to follow and easy to understand",
         "concept": "• Truyền thông chính sách đạo đức cần ưu tiên tính Đơn giản (Simplicity) và Dễ hiểu để mọi đối tượng đều có thể tiếp thu và tuân thủ.",
         "whyCorrect": "• Tính đơn giản dễ hiểu đảm bảo chính sách thực sự được phổ cập và áp dụng hiệu quả.",
         "whyWrong": {

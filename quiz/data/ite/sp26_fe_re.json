@@ -60,7 +60,7 @@
           "C": "Tập xác thực (Validation set)",
           "D": "Tập kiểm thử đơn vị (Unit test)"
         },
-        "answerDisplay": "C. Validation set",
+        "answerDisplay": "C. Validation test",
         "concept": "• Tập xác thực (Validation set) được sử dụng trong quá trình huấn luyện để tinh chỉnh siêu tham số (Hyperparameters) và đánh giá hiện tượng Overfitting.",
         "whyCorrect": "• Tập xác thực giúp kỹ sư chọn mô hình có hiệu suất tối ưu trước khi đánh giá cuối cùng trên tập Test.",
         "whyWrong": {
@@ -88,7 +88,7 @@
           "C": "Nó chứng minh hệ thống hoạt động sớm nhất có thể để thỏa mãn ban quản lý và các cổ đông.",
           "D": "Nó để lộ các khoảng trống trong trách nhiệm giải trình hoặc khả năng kiểm toán."
         },
-        "answerDisplay": "B. It minimizes the impact of any ethical issues which may emerge & D. It reveals any gaps in accountability or auditability",
+        "answerDisplay": "B. It minimizes the impact of any ethical issues which may emerge. & D. It reveals any gaps in accountability or auditability.",
         "concept": "• Pilot testing (thử nghiệm giới hạn trên phạm vi nhỏ) là bước đệm quan trọng trước khi triển khai rộng rãi để phát hiện sớm các tác động ngoài ý muốn của công nghệ.",
         "whyCorrect": "• Thử nghiệm giới hạn giúp giảm thiểu thiệt hại thực tế của các rủi ro đạo đức (phương án B) và chỉ ra các lỗ hổng trong quy trình chịu trách nhiệm và kiểm toán hệ thống (phương án D).",
         "whyWrong": {
@@ -96,7 +96,11 @@
           "C": "• Thỏa mãn cổ đông và chứng minh tính năng kỹ thuật là mục tiêu thương mại/vận hành, không phải lợi ích đạo đức của pilot testing."
         }
       },
-      "num": 3
+      "num": 3,
+      "task": "sp26_fe_re",
+      "taskLabel": "SP26 FE RE",
+      "source": "ITE302c_SP26_FE_RE",
+      "chooseType": "Choose 2 answers"
     },
     {
       "id": 4,
@@ -125,7 +129,11 @@
           "D": "• Định luật không liên quan đến mức độ nổi tiếng hay khả năng ứng dụng đa lĩnh vực của mô hình."
         }
       },
-      "num": 4
+      "num": 4,
+      "task": "sp26_fe_re",
+      "taskLabel": "SP26 FE RE",
+      "source": "ITE302c_SP26_FE_RE",
+      "chooseType": "Choose 1 answer"
     },
     {
       "id": 5,
@@ -153,7 +161,11 @@
           "B": "• Việc dùng tiền mua chuộc để ép người dùng từ bỏ các quyền cơ bản là phi đạo đức."
         }
       },
-      "num": 5
+      "num": 5,
+      "task": "sp26_fe_re",
+      "taskLabel": "SP26 FE RE",
+      "source": "ITE302c_SP26_FE_RE",
+      "chooseType": "Choose 2 answers"
     },
     {
       "id": 6,
@@ -182,7 +194,11 @@
           "D": "• Kiểm thử trong cùng bối cảnh chỉ phản ánh hiệu năng hiện tại, không tự động cải thiện mô hình."
         }
       },
-      "num": 6
+      "num": 6,
+      "task": "sp26_fe_re",
+      "taskLabel": "SP26 FE RE",
+      "source": "ITE302c_SP26_FE_RE",
+      "chooseType": "Choose 1 answer"
     },
     {
       "id": 7,
@@ -211,7 +227,11 @@
           "C": "• Đây là tổ hợp từ sai lệch, không phản ánh đúng định nghĩa quản trị của ma trận RACI."
         }
       },
-      "num": 7
+      "num": 7,
+      "task": "sp26_fe_re",
+      "taskLabel": "SP26 FE RE",
+      "source": "ITE302c_SP26_FE_RE",
+      "chooseType": "Choose 1 answer"
     },
     {
       "id": 8,
@@ -240,7 +260,11 @@
           "D": "• Đây là quy trình vận hành chiến dịch marketing tổng quát."
         }
       },
-      "num": 8
+      "num": 8,
+      "task": "sp26_fe_re",
+      "taskLabel": "SP26 FE RE",
+      "source": "ITE302c_SP26_FE_RE",
+      "chooseType": "Choose 1 answer"
     },
     {
       "id": 9,
@@ -269,7 +293,11 @@
           "D": "• Chuỗi mệnh lệnh là mô hình quản lý nhân sự hành chính."
         }
       },
-      "num": 9
+      "num": 9,
+      "task": "sp26_fe_re",
+      "taskLabel": "SP26 FE RE",
+      "source": "ITE302c_SP26_FE_RE",
+      "chooseType": "Choose 1 answer"
     },
     {
       "id": 10,
@@ -298,7 +326,11 @@
           "C": "• Precision tập trung giảm False Positive (báo sập nhưng không sập), trong bài toán này sập hụt nguy hiểm hơn báo động nhầm."
         }
       },
-      "num": 10
+      "num": 10,
+      "task": "sp26_fe_re",
+      "taskLabel": "SP26 FE RE",
+      "source": "ITE302c_SP26_FE_RE",
+      "chooseType": "Choose 1 answer"
     },
     {
       "id": 11,
@@ -327,7 +359,11 @@
           "D": "• Đây là giải thích luật pháp lệch tiền lệ."
         }
       },
-      "num": 11
+      "num": 11,
+      "task": "sp26_fe_re",
+      "taskLabel": "SP26 FE RE",
+      "source": "ITE302c_SP26_FE_RE",
+      "chooseType": "Choose 1 answer"
     },
     {
       "id": 12,
@@ -356,7 +392,11 @@
           "D": "• k-anonymity là một kỹ thuật ẩn danh dữ liệu tĩnh khác, không phải cơ chế thêm nhiễu của Differential Privacy."
         }
       },
-      "num": 12
+      "num": 12,
+      "task": "sp26_fe_re",
+      "taskLabel": "SP26 FE RE",
+      "source": "ITE302c_SP26_FE_RE",
+      "chooseType": "Choose 1 answer"
     },
     {
       "id": 13,
@@ -536,7 +576,7 @@
         "C": "Focusing only on majority perspectives",
         "D": "Standardizing all messages"
       },
-      "answer": "B",
+      "answer": "B, D",
       "source": "ITE302c_SP26_FE_RE",
       "explanation": {
         "questionVi": "Cách tiếp cận nào sau đây thúc đẩy giao tiếp mang tính bao hàm (Inclusive Communication)?",
@@ -544,15 +584,14 @@
           "A": "Chỉ sử dụng một kênh truyền thông duy nhất",
           "B": "Xem xét các nhu cầu đa dạng về văn hóa và khả năng tiếp cận (Considering diverse cultural and accessibility needs)",
           "C": "Chỉ tập trung vào quan điểm của nhóm đa số",
-          "D": "Tiêu chuẩn hóa cứng nhắc tất cả thông điệp"
+          "D": "Tiêu chuẩn hóa tất cả thông điệp (Standardizing all messages)"
         },
-        "answerDisplay": "B. Considering diverse cultural and accessibility needs",
-        "concept": "• Giao tiếp bao hàm đảm bảo thông điệp tiếp cận được tới mọi nhóm đối tượng, kể cả người khuyết tật hay đa dạng văn hóa.",
-        "whyCorrect": "• Tôn trọng nhu cầu tiếp cận đa dạng đảm bảo tính bình đẳng trong việc truyền tải thông tin.",
+        "answerDisplay": "B. Considering diverse cultural and accessibility needs & D. Standardizing all messages",
+        "concept": "• Giao tiếp bao hàm (Inclusive Communication) đảm bảo thông điệp tiếp cận được mọi đối tượng bằng cách tôn trọng sự đa dạng văn hóa, nhu cầu tiếp cận và chuẩn hóa các thông điệp truyền thông.",
+        "whyCorrect": "• Phương án B xem xét nhu cầu đa dạng văn hóa và tiếp cận giúp loại bỏ rào cản thông tin cho các nhóm yếu thế.\n• Phương án D chuẩn hóa thông điệp giúp đảm bảo tính rõ ràng, nhất quán và dễ tiếp cận cho tất cả người nhận.",
         "whyWrong": {
-          "A": "• Dùng 1 kênh làm hạn chế khả năng tiếp cận của người dùng.",
-          "C": "• Tập trung nhóm đa số tạo ra sự gạt bỏ nhóm yếu thế.",
-          "D": "• Chuẩn hóa cứng nhắc bỏ qua các nhu cầu tiếp cận đặc thù."
+          "A": "• Chỉ sử dụng một kênh truyền thông duy nhất làm hạn chế khả năng tiếp cận của các nhóm đối tượng khác nhau.",
+          "C": "• Chỉ tập trung vào quan điểm nhóm đa số sẽ loại trừ và bỏ qua các nhóm nhỏ hoặc nhóm yếu thế trong cộng đồng."
         }
       }
     },
@@ -569,22 +608,22 @@
         "C": "It's delivered on a single platform",
         "D": "It's concise"
       },
-      "answer": "B, D",
+      "answer": "A, D",
       "source": "ITE302c_SP26_FE_RE",
       "explanation": {
         "questionVi": "Những phẩm chất quan trọng nào của một thông cáo báo chí (Press Release)? (Select two)",
         "optionsVi": {
-          "A": "Được phát hành dưới dạng kỹ thuật số",
-          "B": "Mang tính chất một chiều / không tương tác trực tiếp (Non-interactive)",
+          "A": "Được phát hành dưới dạng kỹ thuật số (It's in a digital format)",
+          "B": "Mang tính chất một chiều / không tương tác trực tiếp",
           "C": "Được phân phối trên một nền tảng duy nhất",
-          "D": "Ngắn gọn và súc tích (Concise)"
+          "D": "Ngắn gọn và súc tích (It's concise)"
         },
-        "answerDisplay": "B. It's non-interactive & D. It's concise",
-        "concept": "• Press Release là văn bản thông báo chính thức một chiều, ngắn gọn, súc tích dành cho các nhà báo trích dẫn.",
-        "whyCorrect": "• Tính ngắn gọn súc tích và tính chất công bố chính thức (non-interactive) là hai thuộc tính chuẩn mực của Press Release.",
+        "answerDisplay": "A. It's in a digital format & D. It's concise",
+        "concept": "• Thông cáo báo chí (Press Release) hiện đại cần được tối ưu hóa ở định dạng kỹ thuật số để phân phối nhanh chóng và giữ dung lượng ngắn gọn, súc tích để phóng viên dễ khai thác thông tin.",
+        "whyCorrect": "• Định dạng kỹ thuật số (phương án A) giúp truyền tải thông tin nhanh chóng, mở rộng phạm vi tiếp cận số.\n• Tính ngắn gọn súc tích (phương án D) là đặc tính cốt lõi giúp báo chí nhanh chóng nắm bắt được nội dung chính.",
         "whyWrong": {
-          "A": "• Dạng kỹ thuật số là kênh phân phối, không phải thuộc tính bản chất.",
-          "C": "• Press Release được phân phối đa nền tảng để phủ sóng rộng."
+          "B": "• Tính chất không tương tác trực tiếp là hạn chế truyền thống, không phải phẩm chất tích cực/quan trọng được khuyến khích.",
+          "C": "• Phân phối trên một nền tảng duy nhất làm giảm tầm phủ sóng truyền thông; thông cáo báo chí chuẩn cần được phát hành đa nền tảng."
         }
       }
     },
@@ -634,23 +673,22 @@
         "C": "It can determine which users have the largest influence on your reputation, and therefore which users you should communicate with.",
         "D": "It can determine how to construct a message that influences users to be more positive about the organization or technology."
       },
-      "answer": "A",
+      "answer": "A, D",
       "source": "ITE302c_SP26_FE_RE",
       "explanation": {
         "questionVi": "Phân tích cảm xúc (Sentiment Analysis) có thể hữu ích như thế nào trong truyền thông mạng xã hội?",
         "optionsVi": {
-          "A": "Nó có thể định hình nội dung và cách thức phân phối thông điệp dựa trên nhận thức của người dùng về tổ chức",
+          "A": "Nó có thể định hình nội dung và cách thức phân phối thông điệp dựa trên nhận thức của người dùng về tổ chức hoặc công nghệ",
           "B": "Phân loại khách hàng trung thành hay không",
           "C": "Xác định người dùng có ảnh hưởng lớn nhất để liên lạc",
-          "D": "Tự động thao túng người dùng có cảm xúc tích cực hơn"
+          "D": "Nó có thể xác định cách xây dựng thông điệp nhằm hướng người dùng có thái độ tích cực hơn về tổ chức hoặc công nghệ"
         },
-        "answerDisplay": "A. It can shape the content and delivery of the message based on users' perceptions of the organization or technology.",
-        "concept": "• Phân tích cảm xúc giúp doanh nghiệp đo lường thái độ dư luận thời gian thực để điều chỉnh chiến lược truyền thông phù hợp.",
-        "whyCorrect": "• Hiểu được thái độ công chúng giúp tổ chức xây dựng nội dung truyền thông đúng tâm lý và tinh tế.",
+        "answerDisplay": "A. It can shape the content and delivery of the message based on users' perceptions of the organization or technology. & D. It can determine how to construct a message that influences users to be more positive about the organization or technology.",
+        "concept": "• Phân tích cảm xúc (Sentiment Analysis) giúp đo lường thái độ dư luận, từ đó hỗ trợ điều chỉnh nội dung, kênh truyền tải cũng như cách thức xây dựng thông điệp để cải thiện phản hồi từ công chúng.",
+        "whyCorrect": "• Phương án A giúp điều chỉnh chiến lược và nội dung truyền thông theo sát phản hồi nhận thức thực tế của người dùng.\n• Phương án D hỗ trợ thiết kế góc nhìn và văn phong thông điệp nhằm chuyển hóa cảm xúc công chúng theo hướng tích cực hơn.",
         "whyWrong": {
-          "B": "• Phân loại khách hàng trung thành thuộc về CRM/Loyalty analytics.",
-          "C": "• Tìm người ảnh hưởng thuộc về Influencer marketing.",
-          "D": "• Thao túng người dùng là vi phạm đạo đức truyền thông."
+          "B": "• Việc phân loại độ trung thành của khách hàng thuộc về phân tích hành vi khách hàng (CRM/Customer Analytics), không phải chức năng chính của Sentiment Analysis.",
+          "C": "• Việc xác định người dùng có ảnh hưởng lớn thuộc về phân tích mạng lưới xã hội và tiếp thị qua người ảnh hưởng (Influencer Analytics)."
         }
       }
     },
@@ -699,23 +737,23 @@
         "C": "To pre-write communications before they are needed",
         "D": "To prevent personnel from communicating prematurely"
       },
-      "answer": "D",
+      "answer": "C",
       "source": "ITE302c_SP26_FE_RE",
       "explanation": {
         "questionVi": "Mục đích của một phát ngôn giữ chỗ (Holding Statement) trong truyền thông khủng hoảng là gì?",
         "optionsVi": {
           "A": "Yêu cầu doanh nghiệp tạm dừng hoạt động",
           "B": "Thuê dịch vụ của các cơ quan báo chí cụ thể",
-          "C": "Viết trước các văn bản truyền thông khi chưa cần đến",
-          "D": "Ngăn chặn nhân viên phát ngôn vội vàng/sớm khi chưa có đủ thông tin xác thực"
+          "C": "Viết trước các văn bản truyền thông trước khi cần sử dụng (To pre-write communications before they are needed)",
+          "D": "Ngăn chặn nhân viên phát ngôn vội vàng/sớm"
         },
-        "answerDisplay": "D. To prevent personnel from communicating prematurely",
-        "concept": "• Holding Statement là thông cáo ban đầu giúp kiểm soát luồng thông tin, câu thời gian xác minh sự thật và ngăn phát ngôn vội vã.",
-        "whyCorrect": "• Tránh việc nhân viên tự ý đưa ra thông tin chưa kiểm chứng làm trầm trọng thêm khủng hoảng.",
+        "answerDisplay": "C. To pre-write communications before they are needed",
+        "concept": "• Thông báo giữ chỗ (Holding Statement) trong quản trị khủng hoảng truyền thông được biên soạn trước theo kịch bản để tổ chức phản ứng tức thì ngay khi sự cố xảy ra.",
+        "whyCorrect": "• Chuẩn bị sẵn các mẫu thông cáo (pre-write communications) giúp doanh nghiệp chủ động phản ứng nhanh chóng và nhất quán ngay trong những giờ đầu khủng hoảng.",
         "whyWrong": {
-          "A": "• Holding statement là công cụ truyền thông, không phải lệnh dừng vận hành.",
-          "B": "• Không dùng để thuê hợp đồng báo chí.",
-          "C": "• Chuẩn bị kịch bản là crisis template, holding statement dùng để công bố tạm thời khi sự cố xảy ra."
+          "A": "• Holding statement là công cụ truyền thông với báo chí, không phải quyết định quản trị vận hành để dừng hoạt động doanh nghiệp.",
+          "B": "• Không liên quan đến việc ký hợp đồng dịch vụ báo chí.",
+          "D": "• Việc ngăn nhân viên phát ngôn là quy chế phát ngôn nội bộ (media policy), không phải mục đích định nghĩa của bản holding statement."
         }
       }
     },
@@ -742,7 +780,7 @@
           "C": "Cung cấp các báo cáo kỹ thuật chuyên sâu về thuật toán",
           "D": "Cung cấp hướng dẫn bảo mật dữ liệu cá nhân"
         },
-        "answerDisplay": "A. Providing prompt responses to customer questions... & B. Providing information about data-driven systems in simple, easy-to-understand terms.",
+        "answerDisplay": "A. Providing prompt responses to customer questions about the decisions made by data-driven systems. & B. Providing information about data-driven systems in simple, easy-to-understand terms.",
         "concept": "• Minh bạch với người tiêu dùng đòi hỏi giải thích thuật toán bằng ngôn ngữ bình dân (Layman terms) và phản hồi thắc mắc kịp thời.",
         "whyCorrect": "• Ngôn ngữ dễ hiểu và phản hồi nhanh giúp người dùng thực sự nắm bắt được cách hệ thống ra quyết định ảnh hưởng đến họ.",
         "whyWrong": {
@@ -805,7 +843,7 @@
           "B": "Narrow AI không thể xử lý các tình huống mà dữ liệu huấn luyện không chuẩn bị trước cho nó",
           "C": "Narrow AI phụ thuộc hoàn toàn vào việc lập trình mã hóa thủ công thuật toán"
         },
-        "answerDisplay": "A. Narrow can only perform the specific tasks it was designed to do & B. Narrow AI can't handle situations that its training data didn't prepare it for.",
+        "answerDisplay": "A. Narrow can only perform the specific tasks it was designed to do. & B. Narrow AI can't handle situations that its training data didn't prepare it for.",
         "concept": "• Narrow AI chỉ tối ưu hóa cho bài toán chuyên biệt trong phạm vi dữ liệu huấn luyện, không có trí tuệ suy luận đa năng.",
         "whyCorrect": "• Tính giới hạn tác vụ và sự phụ thuộc hoàn toàn vào phân phối dữ liệu huấn luyện là 2 lý do khiến ML/DL là Narrow AI.",
         "whyWrong": {
@@ -826,23 +864,23 @@
         "C": "human right",
         "D": "weapon"
       },
-      "answer": "C",
+      "answer": "A",
       "source": "ITE302c_SP26_FE_RE",
       "explanation": {
         "questionVi": "Góc nhìn lạc quan về AI tổng quát (AGI) có thể được tóm tắt chính xác là xem AI như một ____",
         "optionsVi": {
-          "A": "Tiện ích hạ tầng",
+          "A": "Tiện ích hạ tầng (utility)",
           "B": "Công cụ giữ gìn hòa bình",
-          "C": "Quyền con người (Human right)",
+          "C": "Quyền con người",
           "D": "Vũ khí"
         },
-        "answerDisplay": "C. human right",
-        "concept": "• Quan điểm bình đẳng nhân văn coi việc tiếp cận AGI và các lợi ích của nó như một quyền cơ bản của con người (Human Right).",
-        "whyCorrect": "• Xem AGI là quyền con người thể hiện triết lý phân phối công bằng thành quả công nghệ cho toàn bộ nhân loại.",
+        "answerDisplay": "A. utility",
+        "concept": "• Góc nhìn lạc quan về AI tổng quát (AGI) coi AI là một tiện ích hạ tầng thiết yếu (utility) như điện hay nước, hỗ trợ và phục vụ toàn bộ đời sống xã hội.",
+        "whyCorrect": "• Xem AI như một tiện ích (utility) thể hiện góc nhìn tích cực rằng công nghệ này sẽ sẵn có, hữu ích và nâng cao năng suất chung cho toàn bộ nhân loại.",
         "whyWrong": {
-          "A": "• Xem như tiện ích hạ tầng là quan điểm thương mại kỹ thuật.",
-          "B": "• Công cụ giữ hòa bình là quan điểm an ninh quân sự.",
-          "D": "• Xem như vũ khí là quan điểm bi quan và đe dọa."
+          "B": "• Coi AI là công cụ giữ hòa bình mang thiên hướng an ninh chính trị, không phản ánh bức tranh tổng quát về AGI.",
+          "C": "• Quyền con người là khái niệm pháp lý/đạo đức dành cho chủ thể con người, không phải bản chất công nghệ AI.",
+          "D": "• Coi AI là vũ khí là quan điểm bi quan và đe dọa về rủi ro của AI."
         }
       }
     },
@@ -869,7 +907,7 @@
           "C": "Hệ thống AI hỗ trợ cá nhân với các công việc tự động lặp đi lặp lại",
           "D": "Hệ thống AI thực hiện các tác vụ vượt quá khả năng con người như xử lý hàng triệu bản ghi"
         },
-        "answerDisplay": "A. Weapon systems can limit human autonomy... & B. AI systems might impact certain vulnerable groups...",
+        "answerDisplay": "A. Weapon systems can limit human autonomy as humans may not have decision-making capability or understand the decision making. & B. AI systems might impact certain vulnerable groups such as the elderly and children differently than the rest of the population, which could limit those groups' autonomy.",
         "concept": "• AI làm suy giảm Autonomy khi tước bỏ quyền kiểm soát quyết định của con người (trong vũ khí) hoặc thao túng các nhóm dễ bị tổn thương.",
         "whyCorrect": "• Vũ khí tự động tước đi quyền ra quyết định sinh tử của con người và tác động lệch tới nhóm yếu thế làm thu hẹp quyền tự quyết xã hội.",
         "whyWrong": {
@@ -957,23 +995,21 @@
         "C": "Temperature readings for an office building",
         "D": "A user's customer ID in an online ordering system"
       },
-      "answer": "B",
+      "answer": "A, B, D",
       "source": "ITE302c_SP26_FE_RE",
       "explanation": {
         "questionVi": "Thông tin nào sau đây độc lập đủ điều kiện cấu thành Thông tin định danh cá nhân (PII)?",
         "optionsVi": {
-          "A": "Sự kiện hệ thống được ghi vào nhật ký log",
-          "B": "Địa chỉ nhà riêng của người dùng (User's home address)",
+          "A": "Sự kiện hệ thống được ghi vào nhật ký log (System events added to a log)",
+          "B": "Địa chỉ nhà riêng của người dùng (A user's home address)",
           "C": "Chỉ số nhiệt độ của một tòa nhà văn phòng",
-          "D": "Mã ID khách hàng trong hệ thống đặt hàng trực tuyến"
+          "D": "Mã ID khách hàng trong hệ thống đặt hàng trực tuyến (A user's customer ID in an online ordering system)"
         },
-        "answerDisplay": "B. A user's home address",
-        "concept": "• PII độc lập (Direct PII) là thông tin tự nó có thể chỉ đích danh địa điểm cư trú hoặc danh tính của một cá nhân cụ thể.",
-        "whyCorrect": "• Địa chỉ nhà riêng là thông tin địa lý duy nhất liên kết trực tiếp tới danh tính cá nhân.",
+        "answerDisplay": "A. System events added to a log & B. A user's home address & D. A user's customer ID in an online ordering system",
+        "concept": "• Thông tin định danh cá nhân (PII) bao gồm tất cả các dữ liệu có thể dùng trực tiếp hoặc gián tiếp để xác định danh tính hoặc hoạt động của một cá nhân cụ thể.",
+        "whyCorrect": "• Địa chỉ nhà riêng (B) liên kết trực tiếp tới vị trí cư trú cá nhân.\n• Mã Customer ID (D) định danh duy nhất tài khoản người dùng trong hệ thống.\n• Nhật ký sự kiện hệ thống (A) chứa IP, ID hoặc hành vi người dùng, đủ điều kiện cấu thành PII theo các quy chuẩn bảo mật (GDPR/CCPA).",
         "whyWrong": {
-          "A": "• Log sự kiện hệ thống là dữ liệu hạ tầng phần mềm.",
-          "C": "• Nhiệt độ tòa nhà là dữ liệu môi trường IoT.",
-          "D": "• Mã Customer ID cần bảng ánh xạ trong CSDL mới định danh được."
+          "C": "• Chỉ số nhiệt độ tòa nhà là dữ liệu môi trường IoT chung, không chứa bất kỳ yếu tố định danh cá nhân nào."
         }
       }
     },
@@ -1000,7 +1036,7 @@
           "C": "Tương tác và giao lưu với các nhóm người đa dạng (Interacting with diverse groups)",
           "D": "Tiếp xúc với các ví dụ đi ngược lại định kiến thông thường (Counter-stereotypical examples)"
         },
-        "answerDisplay": "B. Cultivating awareness... & C. Interacting with diverse groups... & D. Exposing yourself to counter-stereotypical examples.",
+        "answerDisplay": "B. Cultivating awareness of your own biases. & C. Interacting with diverse groups of people. & D. Exposing yourself to “counter-stereotypical” examples.",
         "concept": "• Giảm Implicit Bias đòi hỏi tự nhận thức, đa dạng hóa trải nghiệm xã hội và liên tục tiếp nhận thông tin phản chứng định kiến.",
         "whyCorrect": "• Ba hành động này giúp bộ não tái cấu trúc các liên tưởng định kiến vô thức sẵn có.",
         "whyWrong": {
@@ -1130,7 +1166,7 @@
           "C": "Cản trở sự hợp tác kinh tế - xã hội và chính trị (Impede socio-political cooperation)",
           "D": "Dẫn đến tư duy nhóm (Groupthink), kìm hãm sự tiến bộ xã hội"
         },
-        "answerDisplay": "C. It can impede socio-political cooperation & D. It can lead to groupthink...",
+        "answerDisplay": "C. It can impede socio-political cooperation. & D. It can lead to groupthink, which can in turn halt forward progress.",
         "concept": "• Confirmation Bias khiến các nhóm xã hội củng cố cực đoan quan điểm cá nhân, tạo ra tư duy nhóm (Groupthink) và chia rẽ chính trị.",
         "whyCorrect": "• Việc từ chối tiếp nhận thông tin trái chiều làm gia tăng sự phân hóa chính trị và kìm hãm đối thoại xã hội.",
         "whyWrong": {
@@ -1166,7 +1202,10 @@
           "D": "• Đây là câu trả lời phiến diện, loại bỏ tầm quan trọng của các công nghệ khác."
         }
       },
-      "num": 37
+      "num": 37,
+      "task": "sp26_fe_re",
+      "taskLabel": "SP26 FE RE",
+      "chooseType": "Choose 1 answer"
     },
     {
       "id": 38,
@@ -1313,23 +1352,22 @@
         "C": "Promote international cooperation.",
         "D": "Promote collaboration."
       },
-      "answer": "B",
+      "answer": "C, D",
       "source": "ITE302c_SP26_FE_RE",
       "explanation": {
         "questionVi": "Khuyến nghị quan trọng nào sau đây được dành cho các chính phủ trong quản trị AI?",
         "optionsVi": {
           "A": "Thúc đẩy các giá trị con người",
-          "B": "Thúc đẩy tính minh bạch trong AI (Promote transparency in AI)",
-          "C": "Thúc đẩy hợp tác quốc tế",
-          "D": "Thúc đẩy sự cộng tác"
+          "B": "Thúc đẩy tính minh bạch trong AI",
+          "C": "Thúc đẩy hợp tác quốc tế (Promote international cooperation)",
+          "D": "Thúc đẩy sự cộng tác (Promote collaboration)"
         },
-        "answerDisplay": "B. Promote transparency in AI.",
-        "concept": "• Khuyến nghị chính sách cho chính phủ tập trung vào việc bắt buộc tính minh bạch (Transparency) để công chúng kiểm toán và giám sát hệ thống AI.",
-        "whyCorrect": "• Thúc đẩy minh bạch giúp xây dựng khung pháp lý giải trình trách nhiệm và sự tin tưởng xã hội.",
+        "answerDisplay": "C. Promote international cooperation. & D. Promote collaboration.",
+        "concept": "• Khuyến nghị dành cho các chính phủ trong quản trị công nghệ bao gồm việc mở rộng hợp tác quốc tế và thúc đẩy cộng tác đa bên giữa chính phủ, doanh nghiệp và viện nghiên cứu.",
+        "whyCorrect": "• Thúc đẩy hợp tác quốc tế (phương án C) giúp xây dựng khung pháp lý và tiêu chuẩn toàn cầu cho AI.\n• Thúc đẩy sự cộng tác (phương án D) kết nối các nguồn lực liên ngành để phát triển và quản trị công nghệ an toàn.",
         "whyWrong": {
-          "A": "• Thúc đẩy giá trị con người là mục tiêu chung nhưng khuyến nghị pháp lý ưu tiên tính minh bạch kiểm toán.",
-          "C": "• Hợp tác quốc tế là phương tiện ngoại giao.",
-          "D": "• Sự cộng tác là phương thức triển khai chung."
+          "A": "• Thúc đẩy giá trị con người là nguyên tắc đạo đức chung cho nhà thiết kế/phát triển AI.",
+          "B": "• Thúc đẩy minh bạch trong AI là khuyến nghị dành cho các công ty phát triển mô hình AI."
         }
       }
     },
@@ -1708,23 +1746,23 @@
         "C": "The pilot phase demonstrates the seriousness of the organization with respect to its ethical responsibilities.",
         "D": "The pilot phase helps to stress test a code of ethics in a real-world situation."
       },
-      "answer": "A",
+      "answer": "C",
       "source": "ITE302c_SP26_FE_RE",
       "explanation": {
         "questionVi": "Lý do nào sau đây là một lý do có vấn đề khi thử nghiệm một bộ quy tắc đạo đức trước khi triển khai rộng rãi?",
         "optionsVi": {
           "A": "Giai đoạn thử nghiệm giúp xác định các lỗ hổng trong bộ quy tắc đạo đức hiện tại",
           "B": "Giai đoạn thử nghiệm giúp phát triển sự nhận thức và đồng thuận từ các bên liên quan",
-          "C": "Giai đoạn thử nghiệm thể hiện sự nghiêm túc của tổ chức đối với trách nhiệm đạo đức",
+          "C": "Giai đoạn thử nghiệm thể hiện sự nghiêm túc của tổ chức đối với trách nhiệm đạo đức (The pilot phase demonstrates the seriousness of the organization with respect to its ethical responsibilities)",
           "D": "Giai đoạn thử nghiệm giúp kiểm thử sức chịu đựng của bộ quy tắc trong thực tế"
         },
-        "answerDisplay": "A. The pilot phase helps to identify gaps in the current code of ethics.",
-        "concept": "• Mục tiêu của Pilot là stress-test và xây dựng sự đồng thuận; nếu coi pilot chỉ để che đậy lỗ hổng hoặc trì hoãn triển khai sẽ gây ra rủi ro cho tổ chức.",
-        "whyCorrect": "• Tìm lỗ hổng mà không có cơ chế sửa đổi thực tế biến thử nghiệm thành cái cớ trì hoãn tuân thủ.",
+        "answerDisplay": "C. The pilot phase demonstrates the seriousness of the organization with respect to its ethical responsibilities.",
+        "concept": "• Việc thực hiện pilot chỉ mang tính phô trương (PR) nhằm chứng tỏ sự \"nghiêm túc\" thay vì tập trung vào mục tiêu kỹ thuật kiểm thử và hoàn thiện bộ quy tắc là một động cơ có vấn đề (ethics-washing).",
+        "whyCorrect": "• Sử dụng thử nghiệm như một công cụ phô trương hình ảnh nhằm đối phó hoặc tạo sự chú ý là lý do không chính đáng, biến pilot thành hình thức biểu diễn.",
         "whyWrong": {
-          "B": "• Xây dựng đồng thuận là lợi ích tích cực chuẩn mực của Pilot.",
-          "C": "• Thể hiện cam kết nghiêm túc là giá trị tích cực của Pilot.",
-          "D": "• Stress-test trong thực tế là mục tiêu kỹ thuật chính đáng của Pilot."
+          "A": "• Tìm ra lỗ hổng là mục tiêu kỹ thuật chính đáng và chuẩn mực của giai đoạn pilot.",
+          "B": "• Xây dựng nhận thức và đồng thuận nội bộ là lợi ích thực tế và tích cực của pilot.",
+          "D": "• Kiểm thử khả năng áp dụng thực tế (stress test) là lý do cốt lõi để triển khai pilot."
         }
       }
     },

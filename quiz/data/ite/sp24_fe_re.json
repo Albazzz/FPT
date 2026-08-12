@@ -27,7 +27,7 @@
           "C": "Che giấu khỏi cột bán định danh",
           "D": "Tổn hại từ các tập dữ liệu chứa k cá nhân"
         },
-        "answerDisplay": "A. distinguished from at least K individuals who are also in the dataset",
+        "answerDisplay": "A. Distinguished from at least k-1 other individuals who are also in the dataset based on quasi-identifiers",
         "concept": "• k-Anonymity Requirement: Mỗi nhóm thuộc tính bán định danh (Quasi-identifiers) phải xuất hiện ít nhất k lần trong tập dữ liệu.",
         "whyCorrect": "• Ẩn mình trong nhóm ít nhất k cá nhân có cùng thuộc tính bán định danh là định nghĩa của k-anonymity.",
         "whyWrong": {
@@ -60,7 +60,7 @@
           "C": "Xoa dịu các bên liên quan",
           "D": "Động viên nhân viên nội bộ"
         },
-        "answerDisplay": "B. To make operational improvements",
+        "answerDisplay": "B. To make operational improvements and prevent future incidents",
         "concept": "• Feedback Loop sau sự cố: Rút ra bài học kinh nghiệm (Lessons Learned) để cải tiến vận hành thực chất.",
         "whyCorrect": "• Cải tiến quy trình vận hành phòng ngừa lặp lại rủi ro là giá trị thực chất nhất.",
         "whyWrong": {
@@ -93,7 +93,7 @@
           "C": "Chiến lược quản lý thay đổi nội bộ sửa đổi",
           "D": "Tái cấu trúc nhóm nội bộ"
         },
-        "answerDisplay": "A. The organization's Al product has a defect and needs to be recalled",
+        "answerDisplay": "A. The organization's AI product has a critical flaw/incident or major values alignment update",
         "concept": "• Tính chất Tin tức của Thông cáo Báo chí (Press Release Newsworthiness): Chỉ phát hành khi có sự kiện quan trọng tác động lớn tới công chúng/khách hàng.",
         "whyCorrect": "• Sự cố sản phẩm nghiêm trọng ảnh hưởng cộng đồng là sự kiện báo chí bắt buộc thông cáo.",
         "whyWrong": {
@@ -126,7 +126,7 @@
           "C": "Nó tạo ra trách nhiệm giải trình, tính minh bạch và lòng tin cho người dùng và cơ quan quản lý (provides accountability and trust)",
           "D": "Giải thích vì mục đích cổ đông"
         },
-        "answerDisplay": "C. It provides accountability and trust.",
+        "answerDisplay": "C. It provides accountability, transparency, and trust for users and regulators",
         "concept": "• Giá trị của XAI: Khả năng giải thích củng cố Trách nhiệm giải trình (Accountability) và Lòng tin (Trust) từ xã hội.",
         "whyCorrect": "• Xây dựng lòng tin và cơ chế giải trình là vai trò cốt lõi của tính giải thích được.",
         "whyWrong": {
@@ -192,7 +192,7 @@
           "C": "Hội thảo có thể mang tính tương tác cao mà không yêu cầu các đại biểu phải tập trung cùng một địa điểm vật lý (interactive without being co-located)",
           "D": "Gây ấn tượng bằng công nghệ"
         },
-        "answerDisplay": "C. The conference can be interactive without the participants needing to be co-located.",
+        "answerDisplay": "C. The conference can be interactive without participants needing to be co-located",
         "concept": "• Lợi thế của Virtual Conference: Duy trì khả năng tương tác đa chiều (Interactive) mà xóa bỏ rào cản địa lý (Co-location).",
         "whyCorrect": "• Tạo tương tác phản hồi linh hoạt mà không tốn chi phí di chuyển địa lý.",
         "whyWrong": {
@@ -225,7 +225,7 @@
           "C": "Độ dài và độ phức tạp mật khẩu",
           "D": "Phương thức tấn công hợp lệ"
         },
-        "answerDisplay": "B. How long CCTV camera recordings should be maintained",
+        "answerDisplay": "B. How long CCTV camera recordings and physical access logs should be maintained",
         "concept": "• Physical Security Policy: Quản lý thiết bị giám sát camera CCTV, thẻ từ ra vào, khóa cửa phòng máy chủ và bảo vệ hạ tầng phần cứng.",
         "whyCorrect": "• Bản ghi camera CCTV là thành tố kiểm soát an ninh vật lý tiêu chuẩn.",
         "whyWrong": {
@@ -258,7 +258,7 @@
           "C": "An ninh",
           "D": "Tính minh bạch và tính giải thích được (Transparency / Explainability)"
         },
-        "answerDisplay": "D. Transparency/explainability",
+        "answerDisplay": "D. Transparency / Explainability (Trade secret protection)",
         "concept": "• Conflict of IP & Transparency: Bảo mật thuật toán độc quyền (IP/Trade Secrets) ngăn cản việc công khai mã nguồn giải thích AI.",
         "whyCorrect": "• Bảo hộ bí mật thương mại xung đột trực diện với yêu cầu công khai minh bạch mô hình.",
         "whyWrong": {
@@ -291,7 +291,7 @@
           "C": "Cung cấp thông tin định tính phong phú giúp liên tục tinh chỉnh và hoàn thiện các chính sách (qualitative information to improve policies)",
           "D": "Cung cấp tính minh bạch bề nổi"
         },
-        "answerDisplay": "C. It can help provide qualitative information that can be used to improve the policies",
+        "answerDisplay": "C. Provides rich qualitative information used to continuously refine and improve policies",
         "concept": "• Policy Iteration & Qualitative Feedback: Phản hồi từ các bên liên quan mang lại dữ liệu thực tế để cập nhật chính sách khả thi hơn.",
         "whyCorrect": "• Phản hồi định tính giúp nhận diện lỗ hổng thực tế để hoàn thiện chính sách.",
         "whyWrong": {
@@ -339,7 +339,7 @@
       "task": "sp24_fe_re",
       "taskLabel": "SP24 FE RE",
       "num": 11,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Which of the following are advantages to adopting standards frameworks like ISO 27000? (Select two.)",
       "options": {
         "A": "Technology-specific focus and precise implementation instructions",
@@ -390,7 +390,7 @@
           "C": "Không tích hợp được quy trình",
           "D": "Chúng có thể bị vô hiệu hóa bằng cách kết hợp dữ liệu ẩn danh đó với các tập dữ liệu công khai khác (broken by combining with other publicly available data)"
         },
-        "answerDisplay": "D. They can be broken by combining this data with other publicly available data",
+        "answerDisplay": "D. They can be broken by combining this anonymized data with other publicly available datasets (Linkage attack)",
         "concept": "• Linkage Attack in Simple Anonymization: Kết hợp dữ liệu xóa tên với dữ liệu cử tri/mạng xã hội công khai để tái định danh cá nhân.",
         "whyCorrect": "• Tái định danh qua kết hợp tập dữ liệu công khai ngoài là điểm yếu chí mạng của ẩn danh hóa đơn giản.",
         "whyWrong": {
@@ -423,7 +423,7 @@
           "C": "Quan tâm, nhất quán và sáng tạo",
           "D": "Dài dòng, phức tạp và lặp đi lặp lại"
         },
-        "answerDisplay": "A. Clear, concise, and coherent.",
+        "answerDisplay": "A. Clear, concise, and coherent",
         "concept": "• Tiêu chuẩn Truyền thông Minh bạch (3Cs): Clear (Rõ ràng), Concise (Súc tích), Coherent (Mạch lạc).",
         "whyCorrect": "• Rõ ràng, súc tích và mạch lạc giúp mọi đối tượng dễ dàng tiếp thu và thấu hiểu.",
         "whyWrong": {
@@ -438,7 +438,7 @@
       "task": "sp24_fe_re",
       "taskLabel": "SP24 FE RE",
       "num": 14,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Which of the following are useful strategies for communicating ethical risks to the individual? (Select two.)",
       "options": {
         "A": "Ensure individuals understand specific details of risks",
@@ -488,7 +488,7 @@
           "C": "Nguyên lý đầu tiên",
           "D": "Tóm tắt khách quan"
         },
-        "answerDisplay": "B. No correlating data",
+        "answerDisplay": "B. No correlation guideline / Feature independence (redundant correlating features)",
         "concept": "• Multicollinearity / Correlated Features: Thành phố và Bang có sự tương quan phụ thuộc trực tiếp (City suy ra State), việc đưa cả hai vào làm tăng đa cộng tuyến và méo lệch mô hình.",
         "whyCorrect": "• Đưa các thuộc tính có tương quan trực tiếp phụ thuộc lẫn nhau vào mô hình vi phạm nguyên tắc 'No correlating data'.",
         "whyWrong": {
@@ -521,7 +521,7 @@
           "C": "Điều tra thiên vị loại trừ",
           "D": "Gán nhãn các đầu ra để ngăn chặn việc đưa trực tiếp đầu ra dự đoán làm dữ liệu huấn luyện lại (label outputs to prevent re-training bias)"
         },
-        "answerDisplay": "D. label outputs to prevent re-training bias",
+        "answerDisplay": "D. Label outputs to prevent re-training bias",
         "concept": "• Mitigating Feedback Loops: Đánh dấu/gán nhãn cẩn thận dữ liệu sinh ra từ thuật toán để tránh nạp mù quáng đầu ra vào tập huấn luyện lại.",
         "whyCorrect": "• Gán nhãn phân biệt đầu ra dự đoán giúp ngăn chặn việc tự củng cố thiên vị trong các vòng tái huấn luyện.",
         "whyWrong": {
@@ -554,7 +554,7 @@
           "C": "Kích thước tập dữ liệu",
           "D": "Chỉ các giá trị khuyết"
         },
-        "answerDisplay": "B. Any known bias in the sample data",
+        "answerDisplay": "B. Any known bias in sample data and missing values handling",
         "concept": "• Dataset Documentation & Datasheets for Datasets: Ghi nhận công khai các thiên vị mẫu (Sample bias) và phương pháp xử lý dữ liệu thiếu để phục vụ kiểm toán.",
         "whyCorrect": "• Ghi nhận các thiên vị mẫu giúp kỹ sư chủ động áp dụng thuật toán giảm nhẹ.",
         "whyWrong": {
@@ -587,7 +587,7 @@
           "C": "Kiểm tra tính sẵn sàng",
           "D": "Kiểm tra độ chính xác mô hình"
         },
-        "answerDisplay": "B. To test whether an AI system can exhibit human intelligence",
+        "answerDisplay": "B. To test whether an AI system can exhibit intelligent behavior indistinguishable from a human",
         "concept": "• Turing Test (Alan Turing 1950): Đánh giá khả năng giao tiếp của máy tính đến mức người đối thoại không thể phân biệt được đó là máy hay con người.",
         "whyCorrect": "• Đo lường khả năng giả lập hành vi trí tuệ giống hệt con người.",
         "whyWrong": {
@@ -620,7 +620,7 @@
           "C": "Giảm hiểm họa tự động",
           "D": "Tăng minh bạch lợi nhuận"
         },
-        "answerDisplay": "A. An Ethics Board can help maintain an organization's values-based intentions and increase transparency into how they use data-driven technologies",
+        "answerDisplay": "A. An Ethics Board can help maintain values-based intentions and increase transparency into data-driven technology use",
         "concept": "• Chức năng Ethics Board: Giám sát việc tuân thủ các giá trị đạo đức và tăng cường tính minh bạch công nghệ.",
         "whyCorrect": "• Định hướng giá trị cốt lõi và đảm bảo minh bạch ứng dụng AI.",
         "whyWrong": {
@@ -653,7 +653,7 @@
           "C": "Tập dương tính giả",
           "D": "Tập huấn luyện dự đoán"
         },
-        "answerDisplay": "B. optimized training set",
+        "answerDisplay": "B. Optimized / Balanced training set",
         "concept": "• Data Pre-processing for Fairness: Kỹ thuật Resampling/Re-weighting để tạo ra Tập huấn luyện cân bằng (Balanced/Optimized Training Set).",
         "whyCorrect": "• Tập dữ liệu đã được xử lý để cân bằng đại diện và triệt tiêu thiên vị.",
         "whyWrong": {
@@ -686,7 +686,7 @@
           "C": "Nhân viên",
           "D": "Khách hàng"
         },
-        "answerDisplay": "B. C-suite executives",
+        "answerDisplay": "B. C-suite executives and senior leadership",
         "concept": "• Tone at the Top: Cam kết ủng hộ mạnh mẽ từ Ban lãnh đạo C-suite là điều kiện quyết định để văn hóa đạo đức được thực thi nghiêm túc.",
         "whyCorrect": "• Cam kết từ cấp C-suite tạo ra nguồn lực và quyền lực cưỡng chế thực thi toàn doanh nghiệp.",
         "whyWrong": {
@@ -719,7 +719,7 @@
           "C": "Phạm vi thẩm quyền theo khu vực/quốc gia cụ thể mâu thuẫn với luồng dữ liệu xuyên biên giới toàn cầu (specific national focus vs global flows)",
           "D": "Bắt buộc cung cấp dịch vụ khi bị từ chối dữ liệu"
         },
-        "answerDisplay": "C. Its nationwide scope and specific national focus",
+        "answerDisplay": "C. Its specific national/regional jurisdiction scope versus global cross-border data flows",
         "concept": "• Cross-Border Data Flow & Jurisdiction: Luật pháp mang tính địa phương trong khi dữ liệu internet và AI vận hành toàn cầu xuyên biên giới.",
         "whyCorrect": "• Giới hạn thẩm quyền địa lý mâu thuẫn với bản chất lưu chuyển dữ liệu toàn cầu của internet.",
         "whyWrong": {
@@ -752,7 +752,7 @@
           "C": "Hiệu quả hơn",
           "D": "Đảm bảo ẩn danh"
         },
-        "answerDisplay": "B. Smart contracts eliminate the need for a central authority",
+        "answerDisplay": "B. Smart contracts eliminate the need for a central trusted authority by executing via code",
         "concept": "• Smart Contracts: Tự động thực thi trên Blockchain không cần trung gian.",
         "whyCorrect": "• Loại bỏ vai trò của bên trung gian phân xử là bản chất kỹ thuật.",
         "whyWrong": {
@@ -785,7 +785,7 @@
           "C": "Tin ý kiến mình là số đông",
           "D": "Quy kết hành vi xấu của bản thân là do hoàn cảnh khách quan, nhưng quy kết hành vi xấu của người khác là do tính cách tiêu cực nội tại (own bad behavior to situation, others to personality)"
         },
-        "answerDisplay": "D. When you say your bad behavior is caused by the situation, but when other people display the same bad behavior, it is caused by a personality trait.",
+        "answerDisplay": "D. Attributing one's own bad behavior to situational factors, but attributing others' bad behavior to internal personality traits",
         "concept": "• Fundamental Attribution Error: Quy kết hoàn cảnh cho mình, quy kết tính cách cho người khác.",
         "whyCorrect": "• Định nghĩa chính xác về lỗi quy kết tâm lý.",
         "whyWrong": {
@@ -818,7 +818,7 @@
           "C": "Viết trước văn bản",
           "D": "Ngăn chặn nhân viên phát ngôn vội vàng/sớm khi chưa xác minh đầy đủ sự thật (prevent personnel from communicating prematurely)"
         },
-        "answerDisplay": "D. To prevent personnel from communicating prematurely",
+        "answerDisplay": "D. To prevent personnel from communicating prematurely before facts are verified",
         "concept": "• Holding Statement: Kiểm soát luồng tin, câu thời gian xác minh và ngăn phát ngôn vội vã.",
         "whyCorrect": "• Tránh nhân viên phát ngôn sai lệch khi chưa đủ thông tin.",
         "whyWrong": {
@@ -851,7 +851,7 @@
           "C": "Cấm thu thập hoàn toàn",
           "D": "Các thuộc tính này trong lịch sử từng bị sử dụng làm căn cứ cho sự phân biệt đối xử và thiên vị hệ thống (used as basis for wholesale discrimination)"
         },
-        "answerDisplay": "D. These groups have been used as the basis for wholesale discriminatiom",
+        "answerDisplay": "D. These groups have historically been used as the basis for systemic discrimination and bias",
         "concept": "• Sensitive Attributes in AI Ethics: Thuộc tính nhạy cảm có lịch sử bị kỳ thị/bất công nên cần kiểm toán bảo vệ đặc biệt.",
         "whyCorrect": "• Lịch sử bị sử dụng để phân biệt đối xử bất công là lý do chúng được gắn nhãn nhạy cảm.",
         "whyWrong": {
@@ -884,7 +884,7 @@
           "C": "Cho bên ngoài biết công ty có đạo đức",
           "D": "Nó tạo ra sự nhất quán trong các thực hành đạo đức trên toàn bộ tổ chức, thay vì việc triển khai manh mún chắp vá (creates consistency across organization)"
         },
-        "answerDisplay": "D. It creates consistency in the ethical practices across the organization, rather than patchy implementation of the practices _",
+        "answerDisplay": "D. It creates consistency in ethical practices across the organization, rather than patchy implementation",
         "concept": "• Consistency in Ethics Implementation: Xóa bỏ sự áp dụng tùy tiện manh mún (patchy implementation) để tạo ra chuẩn mực thống nhất.",
         "whyCorrect": "• Đảm bảo sự nhất quán trong áp dụng đạo đức trên toàn bộ quy mô công ty.",
         "whyWrong": {
@@ -917,7 +917,7 @@
           "C": "SMTP",
           "D": "HTTP (Không mã hóa)"
         },
-        "answerDisplay": "A. HTTPS",
+        "answerDisplay": "A. HTTPS (Hypertext Transfer Protocol Secure)",
         "concept": "• Web Encryption Protocol: HTTPS sử dụng SSL/TLS để mã hóa đường truyền giữ tính bảo mật cho dữ liệu web.",
         "whyCorrect": "• HTTPS là giao thức mã hóa dữ liệu web tiêu chuẩn.",
         "whyWrong": {
@@ -950,7 +950,7 @@
           "C": "Vi phạm thỏa thuận chia sẻ",
           "D": "Xây dựng trên công nghệ bên thứ ba"
         },
-        "answerDisplay": "B. They usurp a person's likeness and can then be weaponized against them.",
+        "answerDisplay": "B. They usurp a person's likeness, identity, and voice, which can then be weaponized against them without consent",
         "concept": "• Deepfake Risks: Xâm phạm nghiêm trọng danh tính và hình ảnh cá nhân (Likeness & Voice theft) để mạo danh thao túng.",
         "whyCorrect": "• Tước đoạt hình ảnh/giọng nói để giả mạo gây tổn hại cá nhân mà không được phép.",
         "whyWrong": {
@@ -983,7 +983,7 @@
           "C": "Nó có thể phát hiện các góc nhìn định tính mới về cách sản phẩm/dịch vụ tác động tới cộng đồng dân cư mục tiêu (unearth new insights for target demographic)",
           "D": "Làm lá chắn trách nhiệm"
         },
-        "answerDisplay": "C. It can unearth new insights for how the products and services might be used In the target demographic community.",
+        "answerDisplay": "C. It can unearth new qualitative insights into how products/services might impact the target demographic community",
         "concept": "• Community Focus Groups: Mang lại các góc nhìn định tính thực tế (Qualitative Insights) từ người chịu tác động trực tiếp.",
         "whyCorrect": "• Khai quật góc nhìn định tính mới từ cộng đồng chịu tác động.",
         "whyWrong": {
@@ -1016,7 +1016,7 @@
           "C": "Nút chọn Đúng/Sai",
           "D": "Cung cấp một hộp văn bản mở tự do cỡ lớn (Unrestricted open text box) để người dùng thoải mái nhập suy nghĩ chi tiết của họ (large unrestricted textbox)"
         },
-        "answerDisplay": "D. Provide a large, unrestricted textbox where users can enter their thoughts at length",
+        "answerDisplay": "D. Provide a large, unrestricted open text box where users can enter their thoughts at length",
         "concept": "• Qualitative Feedback Collection UI: Hộp văn bản tự do (Open Textbox) cho phép người dùng bộc lộ suy nghĩ góc nhìn không bị giới hạn bởi đáp án đóng.",
         "whyCorrect": "• Ô nhập văn bản tự do cho phép người dùng bày tỏ phản hồi định tính sâu sắc.",
         "whyWrong": {
@@ -1049,7 +1049,7 @@
           "C": "Tương quan biến không tồn tại",
           "D": "Tương quan biến với biến nhiễu"
         },
-        "answerDisplay": "A. When you incorrectly assume a cause and effect relationship because variables are correlated.",
+        "answerDisplay": "A. When you incorrectly assume a cause-and-effect relationship simply because two variables are correlated",
         "concept": "• Correlation vs Causation: Hai biến biến thiên cùng chiều (Tương quan) không có nghĩa là biến này gây ra biến kia (Nhân quả).",
         "whyCorrect": "• Ngụy biện coi tương quan thống kê đồng nghĩa với mối quan hệ nhân quả.",
         "whyWrong": {
@@ -1082,7 +1082,7 @@
           "C": "Dùng dữ liệu mới hơn dữ liệu cũ",
           "D": "Chỉ dựa vào dữ liệu cào từ Twitter thay vì dữ liệu khảo sát đại diện để đánh giá dư luận của toàn bộ dân số (scraped twitter data over survey data)"
         },
-        "answerDisplay": "D. using scraped twitter data over survey data",
+        "answerDisplay": "D. Relying strictly on scraped Twitter data over representative survey data for general population sentiment",
         "concept": "• Selection Bias: Chọn nguồn dữ liệu mẫu (như Twitter) vốn lệch về giới trẻ/đô thị làm đại diện cho toàn bộ dân số đa dạng.",
         "whyCorrect": "• Dữ liệu Twitter không đại diện cho toàn bộ mẫu dân số chung sinh ra Selection bias.",
         "whyWrong": {
@@ -1115,7 +1115,7 @@
           "C": "Con người đưa ra lựa chọn tự do",
           "D": "Được an bài bởi lực lượng siêu nhiên"
         },
-        "answerDisplay": "B. All events, past, present, and future, are determined in advance",
+        "answerDisplay": "B. All events, past, present, and future, are determined in advance by preceding causes",
         "concept": "• Determinism: Mọi sự kiện bị quy định bởi chuỗi nguyên nhân nhân quả tiền đề.",
         "whyCorrect": "• Định nghĩa chuẩn triết học của Thuyết quyết định luận.",
         "whyWrong": {
@@ -1148,7 +1148,7 @@
           "C": "Giúp hiểu sự phức tạp",
           "D": "Giúp tìm giải pháp toàn năng"
         },
-        "answerDisplay": "A. It makes it easier for us to identify' and manage different types of risks",
+        "answerDisplay": "A. It makes it easier for us to identify, analyze, and manage different types of risks effectively",
         "concept": "• Categorization in Risk Management: Phân loại rủi ro giúp áp dụng đúng công cụ và quy trình giảm thiểu cho từng miền.",
         "whyCorrect": "• Giúp việc nhận diện và quản lý rủi ro trở nên có hệ thống và hiệu quả hơn.",
         "whyWrong": {
@@ -1181,7 +1181,7 @@
           "C": "Xây dựng kho tri thức tổ chức",
           "D": "Tất cả các đáp án trên (All of the others)"
         },
-        "answerDisplay": "D. All of the others",
+        "answerDisplay": "D. All of the above",
         "concept": "• Chức năng toàn diện của Ethics Board.",
         "whyCorrect": "• Cả 3 nhiệm vụ A, B, C hợp thành chức năng toàn diện.",
         "whyWrong": {
@@ -1214,7 +1214,7 @@
           "C": "Khuyến khích riêng quản lý",
           "D": "Khuyến khích riêng giám đốc"
         },
-        "answerDisplay": "A. An incentive structure that encourages all employees to identify people who deserve a reward for behaving ethically _",
+        "answerDisplay": "A. An incentive structure that encourages all employees to feel responsible and identify positive ethical behavior",
         "concept": "• Culture of Accountability: Lan tỏa tinh thần trách nhiệm tới toàn thể nhân viên trong tổ chức.",
         "whyCorrect": "• Áp dụng cơ chế khuyến khích tinh thần trách nhiệm cho toàn bộ nhân sự.",
         "whyWrong": {
@@ -1247,7 +1247,7 @@
           "C": "Chuẩn xác, bài bản, đạo đức",
           "D": "Chính xác (Accurate), Công bằng (Fair) và Giải thích được (Explainable)"
         },
-        "answerDisplay": "D. accurate, fair and explainable",
+        "answerDisplay": "D. Accurate, fair, and explainable",
         "concept": "• Trụ cột AI Đạo đức: Accuracy (Chính xác), Fairness (Công bằng) và Explainability (Giải thích được).",
         "whyCorrect": "• Bộ ba chỉ số vàng của một mô hình AI có trách nhiệm.",
         "whyWrong": {
@@ -1280,7 +1280,7 @@
           "C": "Tập dữ liệu thiên vị",
           "D": "Điểm công bằng mô hình"
         },
-        "answerDisplay": "A. Epsilon",
+        "answerDisplay": "A. Epsilon (Privacy budget parameter)",
         "concept": "• Differential Privacy Epsilon (ε): Tham số kiểm soát mức độ rò rỉ thông tin riêng tư (Epsilon càng nhỏ, tính riêng tư càng cao).",
         "whyCorrect": "• Epsilon là tham số toán học cốt lõi đo lường ngân sách riêng tư trong Differential Privacy.",
         "whyWrong": {
@@ -1313,7 +1313,7 @@
           "C": "Tác động trực tiếp qua ô nhiễm",
           "D": "Tác động trực tiếp di dời"
         },
-        "answerDisplay": "A. Data-driven technologies can cause secondary, indirect, or cumulative effects on the environment that might impact people in the long term.",
+        "answerDisplay": "A. Data-driven technologies can cause secondary, indirect, or cumulative effects on the environment that impact people in long term",
         "concept": "• Cumulative Carbon Footprint of AI Datacenters.",
         "whyCorrect": "• Tác động tích tụ dài hạn lên hệ sinh thái môi trường.",
         "whyWrong": {
@@ -1346,7 +1346,7 @@
           "C": "Hội đồng tập trung tuân thủ pháp lý",
           "D": "Ủy ban tập trung khung lý thuyết"
         },
-        "answerDisplay": "A. A systemic approach with incentive systems",
+        "answerDisplay": "A. A systemic approach with incentive systems aligned with ethical values",
         "concept": "• Systemic Governance: Thưởng/phạt gắn liền với giá trị thúc đẩy hành vi tự giác.",
         "whyCorrect": "• Cơ chế đãi ngộ khuyến khích tạo động lực thực thi văn hóa.",
         "whyWrong": {
@@ -1379,7 +1379,7 @@
           "C": "Cạnh tranh",
           "D": "Quyền riêng tư"
         },
-        "answerDisplay": "A. trust",
+        "answerDisplay": "A. Trust",
         "concept": "• Human-AI Trust.",
         "whyCorrect": "• Lòng tin là yếu tố quyết định sự hợp tác.",
         "whyWrong": {
@@ -1412,7 +1412,7 @@
           "C": "Cột không nhạy cảm",
           "D": "Cột nhạy cảm"
         },
-        "answerDisplay": "B. quasi-identifier",
+        "answerDisplay": "B. Quasi-identifier",
         "concept": "• Quasi-identifiers (Quasi-ID): Mã bưu điện, Ngày sinh, Giới tính - khi đứng riêng không định danh được nhưng khi kết hợp lại xác định được 87% dân số Mỹ.",
         "whyCorrect": "• Thuộc tính bán định danh là định nghĩa chuẩn cho các biến kết hợp tái định danh.",
         "whyWrong": {
@@ -1445,7 +1445,7 @@
           "C": "Gộp các yêu cầu pháp lý",
           "D": "Khung đạo đức nhằm giảm thiểu các lo ngại đạo đức bằng cách tạo ra các bước hành động cụ thể và các nguyên tắc ra quyết định (mitigate concerns by creating actionable steps)"
         },
-        "answerDisplay": "D. Ethical frameworks seek to mitigate ethical concerns by creating actionable steps.",
+        "answerDisplay": "D. Ethical frameworks seek to mitigate ethical concerns by creating actionable steps and principles for decision-making",
         "concept": "• Ethical Framework Definition: Bộ nguyên tắc và bước hành động thực tiễn (Actionable Steps) để định hướng quyết định đạo đức.",
         "whyCorrect": "• Cung cấp các bước hành động thực tiễn để giải quyết và giảm thiểu nguy cơ đạo đức.",
         "whyWrong": {
@@ -1460,7 +1460,7 @@
       "task": "sp24_fe_re",
       "taskLabel": "SP24 FE RE",
       "num": 45,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Which of the following communication tactics help uphold transparency and explainability from the customer perspective? (Select two.)",
       "options": {
         "A": "Providing prompt responses to customer questions about decisions made by AI",
@@ -1478,7 +1478,7 @@
           "C": "Cung cấp báo cáo kỹ thuật hàn lâm",
           "D": "Cung cấp hướng dẫn bảo mật mật khẩu"
         },
-        "answerDisplay": "A. Providing prompt responses to customer questions about the decisions made by data-driven systems. & B. Providing information about data-driven systems in simple, easy-to-understand terms.",
+        "answerDisplay": "A. Providing prompt responses to customer questions about decisions made by AI & B. Providing information about data-driven systems in simple, easy-to-understand terms",
         "concept": "• Minh bạch góc nhìn người dùng: Phản hồi nhanh và Ngôn ngữ đơn giản.",
         "whyCorrect": "• Phản hồi kịp thời và dùng từ ngữ đơn giản giúp khách hàng thấu hiểu hệ thống.",
         "whyWrong": {
@@ -1510,7 +1510,7 @@
           "C": "Xác minh tập dữ liệu",
           "D": "Nguyên lý đầu tiên (First principles)"
         },
-        "answerDisplay": "D. First principles",
+        "answerDisplay": "D. First principles (Tư duy nguyên lý đầu tiên)",
         "concept": "• First Principles Thinking: Phân tích bài toán về các sự thật cơ bản cốt lõi nhất để đảm bảo mô hình xây dựng trên lập luận logic đúng đắn.",
         "whyCorrect": "• Áp dụng nguyên lý đầu tiên giúp mô hình nhìn nhận bài toán từ nền tảng sự thật logic chuẩn xác.",
         "whyWrong": {
@@ -1525,7 +1525,7 @@
       "task": "sp24_fe_re",
       "taskLabel": "SP24 FE RE",
       "num": 47,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "Management asks an employee to do a data-related task. Which of the following would likely be ethically problematic? (Select two.)",
       "options": {
         "A": "Manipulate data or alter its interpretation to fit a desired outcome",
@@ -1543,7 +1543,7 @@
           "C": "Chuyển đổi định dạng dữ liệu",
           "D": "Xóa dữ liệu thô không thuận lợi và gán nhãn giả là dữ liệu lỗi (Delete inconvenient data claimed as erroneous)"
         },
-        "answerDisplay": "A. Manipulate data or alter its interpretatiom & D. Delete any erroneous data (hoặc xóa dữ liệu cố ý)",
+        "answerDisplay": "A. Manipulate data or alter its interpretation to fit a desired outcome & D. Delete inconvenient raw data while claiming it was erroneous",
         "concept": "• Data Manipulation & Fraud: Thao túng dữ liệu và cố ý xóa bớt dữ liệu thực tế là vi phạm đạo đức nghiêm trọng.",
         "whyCorrect": "• Xuyên tạc diễn giải dữ liệu và xóa dữ liệu thực tế là hành vi gian lận dữ liệu.",
         "whyWrong": {
@@ -1575,7 +1575,7 @@
           "C": "Chuẩn xác, giải thích được và công bằng",
           "D": "Chính xác (Accurate), Công bằng (Fair) và Giải thích được (Explainable)"
         },
-        "answerDisplay": "D. accurate, explainable, and fair",
+        "answerDisplay": "D. Accurate, fair, and explainable (or Accurate, Explainable, and Fair)",
         "concept": "• Ethical Model Pillars: Accurate + Fair + Explainable.",
         "whyCorrect": "• Bộ 3 tiêu chuẩn định nghĩa một mô hình AI có đạo đức.",
         "whyWrong": {
@@ -1590,7 +1590,7 @@
       "task": "sp24_fe_re",
       "taskLabel": "SP24 FE RE",
       "num": 49,
-      "chooseType": "Choose 1 answer",
+      "chooseType": "Choose 2 answers",
       "question": "What does it mean to say that human rights are inalienable? (Select two.)",
       "options": {
         "A": "Inalienable rights are conditional",
@@ -1608,7 +1608,7 @@
           "C": "Quyền không thể bị lấy mất hay chuyển nhượng (cannot be taken away)",
           "D": "Quyền đến từ truyền thống"
         },
-        "answerDisplay": "B. Inalienable rights are inherent in all human beings & C. Inalienable rights cannot be taken away except in extreme circumstances.",
+        "answerDisplay": "B. Inalienable rights are inherent in all human beings by virtue of being human & C. Inalienable rights cannot be taken away or transferred",
         "concept": "• Inalienable Rights: Sẵn có tự nhiên và Không thể bị tước đoạt.",
         "whyCorrect": "• Quyền vốn có và không thể bị tước đoạt là bản chất của Inalienable.",
         "whyWrong": {
@@ -1640,7 +1640,7 @@
           "C": "Thực hiện mô hình hóa đe dọa",
           "D": "Tạo chuỗi chỉ huy"
         },
-        "answerDisplay": "B. Enact a sound data governance structure",
+        "answerDisplay": "B. Enact a sound data governance structure with access controls and audit logs",
         "concept": "• Data Governance Structure: Quản lý quyền truy cập (Access Control), phân loại dữ liệu và ghi log kiểm toán.",
         "whyCorrect": "• Thiết lập cấu trúc quản trị dữ liệu bài bản là giải pháp bảo mật dữ liệu hàng đầu.",
         "whyWrong": {
@@ -1673,7 +1673,7 @@
           "C": "Được chỉ định cao",
           "D": "Áp dụng rộng rãi"
         },
-        "answerDisplay": "B. not excessive",
+        "answerDisplay": "B. Not excessive (Data minimization)",
         "concept": "• GDPR Article 5(1)(c) Data Minimization: Dữ liệu thu thập không được dư thừa (Not excessive).",
         "whyCorrect": "• Giới hạn thu thập không dư thừa là định nghĩa của nguyên tắc Data Minimization trong GDPR.",
         "whyWrong": {
@@ -1706,7 +1706,7 @@
           "C": "Tác động đến năng suất",
           "D": "Có thể xảy ra vi phạm quyền lao động và nhân quyền nghiêm trọng nếu người lao động bị mất việc mà không được hỗ trợ (potential labor rights and human rights violations)"
         },
-        "answerDisplay": "D. There might be potential labor rights and human rights violations.",
+        "answerDisplay": "D. There might be potential labor rights and human rights violations if workers are displaced without support",
         "concept": "• Labor & Human Rights in AI Automation: Việc sa thải/thay thế lao động diện rộng do AI đe dọa sinh kế và quyền lao động cơ bản.",
         "whyCorrect": "• Bảo vệ quyền lao động và nhân quyền cơ bản trước nguy cơ bị đào thải bởi tự động hóa.",
         "whyWrong": {
@@ -1739,7 +1739,7 @@
           "C": "Thiếu dữ liệu huấn luyện",
           "D": "Không đoán được hình dạng màu sắc"
         },
-        "answerDisplay": "A. When a model is deployed, but researchers are unable to figure out why its making decisions",
+        "answerDisplay": "A. When a model is deployed, but researchers are unable to figure out why it's making specific decisions",
         "concept": "• Black Box Problem: Thiếu tính giải thích được về cơ chế lập luận bên trong.",
         "whyCorrect": "• Không thể giải thích cách mô hình xử lý biến số ra kết quả.",
         "whyWrong": {
@@ -1805,7 +1805,7 @@
           "C": "Thay đổi đầu vào và đánh giá dữ liệu huấn luyện",
           "D": "Đánh giá đầu vào và dữ liệu"
         },
-        "answerDisplay": "A_ Change inputs, evaluate outputs",
+        "answerDisplay": "A. Systematically change input data perturbations and evaluate the resulting output decisions (Audit by testing inputs/outputs)",
         "concept": "• Black-box Audit Technique: Kiểm thử tạo nhiễu biến số đầu vào (Input Perturbation) và quan sát sự thay đổi đầu ra (Output Observation) mà không cần truy cập mã nguồn.",
         "whyCorrect": "• Đổi đầu vào và đánh giá đầu ra là phương pháp duy nhất để kiểm toán Hộp đen đóng.",
         "whyWrong": {
@@ -1871,7 +1871,7 @@
           "C": "Cung cấp một mô hình toán học phản ánh mức độ tin tưởng về khả năng xảy ra của một sự kiện dựa trên dữ liệu hiện có (model of belief about likelihood)",
           "D": "Đảm bảo chắc chắn 100%"
         },
-        "answerDisplay": "C. By providing a model of belief about the likelihood of some event happening",
+        "answerDisplay": "C. By providing a mathematical model of belief about the likelihood of an outcome given available evidence",
         "concept": "• Probabilistic Inference in AI (Bayesian Logic): Mô hình hóa mức độ tin tưởng (Degree of belief / Likelihood) dựa trên bằng chứng dữ liệu thu thập được.",
         "whyCorrect": "• Tạo dựng mô hình toán học lượng hóa mức độ tin tưởng về khả năng xảy ra sự kiện.",
         "whyWrong": {
@@ -1904,7 +1904,7 @@
           "C": "Chứa mã xáo trộn",
           "D": "Không thể được xem xét bởi chính tổ chức phát triển"
         },
-        "answerDisplay": "A. Closed source software may not be accessible to independent auditors.",
+        "answerDisplay": "A. Closed source software may not be accessible to independent auditors for security and ethics review",
         "concept": "• Closed Source Transparency Risk: Ngăn cản sự kiểm toán của bên thứ ba độc lập.",
         "whyCorrect": "• Ngăn cấm kiểm toán viên độc lập kiểm tra mã nguồn.",
         "whyWrong": {
@@ -1937,7 +1937,7 @@
           "C": "Phát hiện thuật toán",
           "D": "Đầu vào áp lực"
         },
-        "answerDisplay": "A. perturbed inputs",
+        "answerDisplay": "A. Perturbed inputs (Adversarial perturbation inputs)",
         "concept": "• Adversarial Attacks (Nhiễu đối kháng): Thêm các nhiễu siêu nhỏ không thể nhận biết bởi con người (Perturbed inputs) để lừa mô hình AI dự đoán sai hoàn toàn.",
         "whyCorrect": "• Sử dụng các đầu vào bị tạo nhiễu đối kháng (Perturbed inputs) để đánh lừa mô hình.",
         "whyWrong": {
@@ -1970,7 +1970,7 @@
           "C": "Củng cố quy tắc trong tâm trí nhân viên",
           "D": "Trách nhiệm pháp lý hình thức"
         },
-        "answerDisplay": "A. It allows you to capture the evolving nature of the ethical risks of the product or service that you are developing.",
+        "answerDisplay": "A. It captures the evolving nature of new technological developments and ethical risks of the product",
         "concept": "• Iterative Ethics Policy: Công nghệ và rủi ro AI liên tục tiến hóa (Evolving risks) đòi hỏi bộ quy tắc phải cập nhật định kỳ.",
         "whyCorrect": "• Bắt kịp với sự xuất hiện của các rủi ro đạo đức mới phát sinh từ sự phát triển công nghệ.",
         "whyWrong": {

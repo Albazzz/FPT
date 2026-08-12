@@ -9,7 +9,7 @@
       "task": "su25_fe",
       "taskLabel": "SU25 FE",
       "num": 1,
-      "chooseType": "Choose 2 answers",
+      "chooseType": "Choose 1 answer",
       "question": "You want to solicit feedback from users who are seeking explanations about your AI products and services. So, you decide to place a form on your marketing website that users can fill out. Which of the following is the best way to structure that form for the purpose of collecting useful feedback?",
       "options": {
         "A": "Provide a drop-down menu of feedback categories that users can select from, with a promise that you'll follow up via email.",
@@ -207,7 +207,7 @@
       "task": "su25_fe",
       "taskLabel": "SU25 FE",
       "num": 7,
-      "chooseType": "Choose 2 answers",
+      "chooseType": "Choose 1 answer",
       "question": "Which of the following are potential ethical benefits of conducting pilot tests?",
       "options": {
         "A": "Guaranteed 100% legal protection",
@@ -487,7 +487,7 @@
           "C": "Rò rỉ k-anonymity",
           "D": "Vấn đề an ninh"
         },
-        "answerDisplay": "A. group inclusion",
+        "answerDisplay": "A. Group inclusion",
         "concept": "• Group Inclusion (Suy luận nhóm) xảy ra khi dữ liệu tiết lộ thuộc tính chung của cả nhóm (ví dụ: 100% người trong nhóm mắc bệnh X), gây xâm phạm riêng tư dù cá nhân đã ẩn danh.",
         "whyCorrect": "• Sự thuộc về nhóm tiết lộ thuộc tính nhạy cảm ngay cả khi danh tính cá nhân chưa bị rò rỉ trực tiếp.",
         "whyWrong": {
@@ -880,7 +880,7 @@
           "C": "AI đặc thù",
           "D": "AI hẹp (Narrow AI)"
         },
-        "answerDisplay": "B. Superintelligence",
+        "answerDisplay": "B. Superintelligence (ASI)",
         "concept": "• Artificial Superintelligence (ASI - Siêu trí tuệ) là cấp độ AI lý thuyết vượt xa trí tuệ toàn diện của con người ở mọi lĩnh vực.",
         "whyCorrect": "• Vượt trội hơn con người trong tất cả các lĩnh vực là định nghĩa chuẩn của Superintelligence.",
         "whyWrong": {
@@ -913,7 +913,7 @@
           "C": "Một loại máy tính tính toán",
           "D": "Danh sách nguyên liệu tạo ra bài toán"
         },
-        "answerDisplay": "A. a recipe that a computer uses to solve problems",
+        "answerDisplay": "A. A recipe that a computer uses to solve problems",
         "concept": "• Thuật toán (Algorithm) là tập hợp hữu hạn các chỉ dẫn rõ ràng từng bước để máy tính thực hiện giải quyết một bài toán toán học hay logic.",
         "whyCorrect": "• Ẩn dụ 'công thức' (recipe) thể hiện chính xác bản chất tập hợp chỉ dẫn tính toán từng bước của thuật toán.",
         "whyWrong": {
@@ -946,7 +946,7 @@
           "C": "Dự đoán Dương tính và Thực tế Dương tính (Predicted positive, actual positive)",
           "D": "Dự đoán Dương tính và Thực tế Âm tính"
         },
-        "answerDisplay": "C. the predicted result was positive, and the actual result was positive",
+        "answerDisplay": "C. The predicted result was positive, and the actual result was positive",
         "concept": "• True Positive (Dương tính thật) xảy ra khi mô hình dự đoán có (Positive) và thực tế đối tượng thực sự có (Positive).",
         "whyCorrect": "• Định nghĩa chính xác của True Positive trong ma trận nhầm lẫn (Confusion Matrix).",
         "whyWrong": {
@@ -979,7 +979,7 @@
           "C": "Thuật toán học tập / học máy (Learning algorithm)",
           "D": "Thuật toán rõ ràng tường minh"
         },
-        "answerDisplay": "C. learning algorithm",
+        "answerDisplay": "C. Learning algorithm",
         "concept": "• Thuật toán học tập (Learning Algorithm) tự thử nghiệm, đánh giá hiệu năng và tự thích ứng cải thiện kết quả cho các dữ liệu tương lai.",
         "whyCorrect": "• Khả năng tự thử nghiệm và chọn phương án tối ưu dựa trên dữ liệu quá khứ là đặc trưng của Learning Algorithm.",
         "whyWrong": {
@@ -1142,7 +1142,7 @@
           "C": "Hệ thống AI hỗ trợ cá nhân với các công việc tự động lặp đi lặp lại",
           "D": "Hệ thống AI thực hiện các tác vụ vượt quá khả năng con người như xử lý hàng triệu bản ghi"
         },
-        "answerDisplay": "A. Weapon systems can limit human autonomy... & B. AI systems might impact certain vulnerable groups...",
+        "answerDisplay": "A. Weapon systems can limit human autonomy as humans may not have decision-making capability or understand the decision making. & B. AI systems might impact certain vulnerable groups such as the elderly and children differently than the rest of the population, which could limit those groups' autonomy.",
         "concept": "• AI làm suy giảm Autonomy khi tước bỏ quyền kiểm soát quyết định của con người (trong vũ khí) hoặc thao túng các nhóm dễ bị tổn thương.",
         "whyCorrect": "• Vũ khí tự động tước đi quyền ra quyết định sinh tử của con người và tác động lệch tới nhóm yếu thế làm thu hẹp quyền tự quyết xã hội.",
         "whyWrong": {
@@ -1354,7 +1354,7 @@
       "task": "su25_fe",
       "taskLabel": "SU25 FE",
       "num": 42,
-      "chooseType": "Choose 2 answers",
+      "chooseType": "Choose 1 answer",
       "question": "Which of the following ethical considerations should have priority in an emergency situation like the use of contact-tracing solutions during a pandemic?",
       "options": {
         "A": "Privacy",
@@ -1866,7 +1866,7 @@
           "C": "Nâng cao tư thế bảo mật cho sản phẩm",
           "D": "Sử dụng sở hữu trí tuệ như cơ chế phòng thủ để trốn tránh các yêu cầu minh bạch (Using IP to eschew transparency requirements)"
         },
-        "answerDisplay": "D. using IP as a defensive mechanism to eschew transparency requirements.",
+        "answerDisplay": "D. Using IP as a defensive mechanism to eschew transparency requirements.",
         "concept": "• Lạm dụng lấy lý do bảo vệ sở hữu trí tuệ (IP protection) để từ chối giải thích hay kiểm toán thuật toán là hành vi trốn tránh trách nhiệm minh bạch.",
         "whyCorrect": "• Viện cớ bảo mật IP để che đậy thuật toán hộp đen thiên vị vi phạm nghiêm trọng nguyên tắc minh bạch đạo đức.",
         "whyWrong": {

@@ -413,23 +413,23 @@
         "C": "Dense procedural descriptions",
         "D": "Flexible verbiage"
       },
-      "answer": "B",
+      "answer": "A",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Yếu tố đạo đức nào cần xem xét khi thiết kế các thuật toán AI?",
+        "questionVi": "Yếu tố then chốt nào trong việc truyền thông với các bên liên quan nội bộ và bên ngoài về các chính sách đạo đức của tổ chức?",
         "optionsVi": {
-          "A": "Tối đa hóa việc thu thập dữ liệu mà không cho người dùng biết",
-          "B": "Đảm bảo tính công bằng và minh bạch trong quá trình ra quyết định",
-          "C": "Ưu tiên tốc độ hơn độ chính xác",
-          "D": "Hạn chế công chúng tiếp cận các hướng dẫn đạo đức"
+          "A": "Các ví dụ đơn giản dễ theo dõi và hướng dẫn rõ ràng",
+          "B": "Truyền thông hàng ngày",
+          "C": "Mô tả quy trình dày đặc",
+          "D": "Ngôn từ linh hoạt"
         },
-        "answerDisplay": "B. Ensuring fairness and transparency in decision-making",
-        "concept": "• Thiết kế thuật toán AI có đạo đức đòi hỏi hai trụ cột cốt lõi là Tính công bằng (Fairness) và Tính minh bạch (Transparency).",
-        "whyCorrect": "• Đảm bảo công bằng và minh bạch giúp hệ thống đưa ra quyết định không thiên vị và có thể kiểm toán được.",
+        "answerDisplay": "A. Simple to follow examples",
+        "concept": "• Truyền thông chính sách đạo đức hiệu quả cần sự đơn giản, dễ tiếp cận và có các ví dụ minh họa rõ ràng.",
+        "whyCorrect": "• Các ví dụ đơn giản giúp nhân viên và stakeholders dễ dàng thấu hiểu và áp dụng quy tắc đạo đức vào thực tế.",
         "whyWrong": {
-          "A": "• Thu thập lén lút là vi phạm nghiêm trọng nguyên tắc Informed Consent.",
-          "C": "• Ưu tiên tốc độ mà bỏ qua chính xác làm tăng nguy cơ sai sót gây hại.",
-          "D": "• Hạn chế công khai hướng dẫn đi ngược lại nguyên tắc minh bạch."
+          "B": "• Truyền thông quá thường xuyên gây quá tải thông tin.",
+          "C": "• Mô tả quy trình quá dày đặc phức tạp gây khó hiểu.",
+          "D": "• Ngôn từ không nhất quán thiếu tính chuẩn mực."
         }
       }
     },
@@ -446,23 +446,23 @@
         "C": "Bias mitigation techniques",
         "D": "Threat modeling or analysis tools"
       },
-      "answer": "A",
+      "answer": "D",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Thuật ngữ 'AI có thể giải thích được' (XAI - Explainable AI) đề cập đến điều gì?",
+        "questionVi": "Mô hình phân loại STRIDE hoặc VAST có thể được áp dụng trong trường hợp nào sau đây?",
         "optionsVi": {
-          "A": "Các hệ thống AI có thể mô tả logic bên trong và các quyết định của chúng theo cách con người hiểu được",
-          "B": "Các hệ thống AI chỉ vận hành bằng thư viện mã nguồn mở rõ ràng",
-          "C": "Các hệ thống AI thay thế toàn bộ vai trò giải thích của con người",
-          "D": "Các hệ thống AI tự động dịch thuật văn bản"
+          "A": "Phương pháp giảm thiểu hộp đen",
+          "B": "Công cụ tối ưu hóa mạng",
+          "C": "Kỹ thuật giảm thiểu định kiến",
+          "D": "Các công cụ phân tích hoặc mô hình hóa mối đe dọa"
         },
-        "answerDisplay": "A. AI systems that can describe their internal logic and decisions in human-understandable terms",
-        "concept": "• Explainable AI (XAI) giải quyết vấn đề hộp đen (Black Box) bằng cách giải trình lý do đưa ra kết quả dự đoán.",
-        "whyCorrect": "• XAI giúp chuyên gia và người dùng hiểu rõ căn cứ để đưa ra quyết định của mô hình AI.",
+        "answerDisplay": "D. Threat modeling or analysis tools",
+        "concept": "• STRIDE và VAST là các khung phân loại mối đe dọa (Threat Modeling) tiêu chuẩn trong an ninh mạng.",
+        "whyCorrect": "• Được sử dụng để phân tích và xác định các lỗ hổng, mối đe dọa bảo mật.",
         "whyWrong": {
-          "B": "• Mã nguồn mở không đồng nghĩa với việc mô hình học máy đó giải thích được kết quả.",
-          "C": "• XAI không thay thế con người mà hỗ trợ con người kiểm soát quyết định.",
-          "D": "• Dịch thuật văn bản là tác động của NLP, không phải định nghĩa XAI."
+          "A": "• Không liên quan trực tiếp đến giải thích mô hình AI.",
+          "B": "• Không phải công cụ tối ưu mạng.",
+          "C": "• Không phải kỹ thuật giảm định kiến AI."
         }
       }
     },
@@ -479,23 +479,21 @@
         "C": "Don't treat people as a means to an end; treat them always as an end.",
         "D": "Each person must use reason to will moral laws"
       },
-      "answer": "A",
+      "answer": "B, C, D",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Mục tiêu chính của quản trị dữ liệu (Data Governance) là gì?",
+        "questionVi": "Những phát biểu nào sau đây được thúc đẩy bởi Thuyết Mệnh lệnh tuyệt đối của Kant? (Chọn ba đáp án)",
         "optionsVi": {
-          "A": "Đảm bảo tính sẵn có, tính khả dụng, tính toàn vẹn và tính bảo mật của dữ liệu trong toàn tổ chức",
-          "B": "Xóa toàn bộ dữ liệu lưu trữ hàng năm",
-          "C": "Thay thế chuyên viên phân tích dữ liệu bằng bot tự động",
-          "D": "Thương mại hóa toàn bộ dữ liệu khách hàng không giới hạn"
+          "A": "Bạn có nghĩa vụ đạo đức chọn hành động dựa trên kết quả tiềm năng",
+          "B": "Hành động sao cho quy tắc hành động của bạn có thể trở thành luật phổ quát",
+          "C": "Không đối xử với con người chỉ như một phương tiện để đạt mục đích",
+          "D": "Mỗi người phải sử dụng lý trí để xác định các nghĩa vụ đạo đức"
         },
-        "answerDisplay": "A. Ensuring data availability, usability, integrity, and security across an organization",
-        "concept": "• Quản trị dữ liệu (Data Governance) thiết lập quyền hạn, trách nhiệm và chính sách duy trì chất lượng và an toàn dữ liệu.",
-        "whyCorrect": "• Bốn trụ cột cốt lõi của Data Governance bao gồm Availability, Usability, Integrity và Security.",
+        "answerDisplay": "B. Act in such a way that your actions may become a universal law & C. Don't treat people as a means to an end; treat them always as an end. & D. Each person must use reason to will moral laws",
+        "concept": "• Thuyết Mệnh lệnh tuyệt đối của Kant (Categorical Imperative) nhấn mạnh tính phổ quát, tôn trọng phẩm giá con người và lý trí.",
+        "whyCorrect": "• B, C, D phản ánh chính xác 3 nguyên lý cốt lõi trong triết học nghĩa vụ luận Kantian.",
         "whyWrong": {
-          "B": "• Xóa dữ liệu hàng năm gây mất mát tài sản thông tin của doanh nghiệp.",
-          "C": "• Bot tự động hỗ trợ chứ không thay thế hoàn toàn vai trò quản trị của con người.",
-          "D": "• Bán dữ liệu vô danh sách vi phạm quyền riêng tư nghiêm trọng."
+          "A": "• Chọn hành động dựa trên kết quả là Thuyết vị lợi (Utilitarianism/Consequentialism), trái ngược với Kant."
         }
       }
     },
@@ -548,20 +546,20 @@
       "answer": "A",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Yếu tố nào phân biệt rõ nhất giữa AI tổng quát (AGI) và AI hẹp (Narrow AI)?",
+        "questionVi": "Nguyên tắc Non-maleficence (Không gây hại) là gì?",
         "optionsVi": {
-          "A": "Khả năng tự học và giải quyết mọi tác vụ trí tuệ của con người trên nhiều lĩnh vực",
-          "B": "Tốc độ xử lý tính toán trong 1 giây",
-          "C": "Dung lượng bộ nhớ lưu trữ mô hình",
-          "D": "Số lượng ngôn ngữ lập trình được sử dụng"
+          "A": "Không gây hại",
+          "B": "Thúc đẩy điều tốt",
+          "C": "Đảm bảo sự công bằng",
+          "D": "Tôn trọng quyền tự quyết"
         },
-        "answerDisplay": "A. Ability to learn and solve any intellectual task across multiple domains",
-        "concept": "• General AI (AGI) có trí tuệ linh hoạt đa năng như con người, khác biệt với Narrow AI chỉ xử lý 1 tác vụ chuyên biệt.",
-        "whyCorrect": "• Khả năng tự học và giải quyết bài toán đa lĩnh vực là đặc trưng cốt lõi của AGI.",
+        "answerDisplay": "A. The principle of doing no harm",
+        "concept": "• Nguyên tắc Non-maleficence trong đạo đức y sinh và công nghệ có nghĩa cốt lõi là Không gây hại (Do no harm).",
+        "whyCorrect": "• Trực tiếp định nghĩa nguyên tắc phòng ngừa và hạn chế tổn hại.",
         "whyWrong": {
-          "B": "• Tốc độ xử lý là chỉ số hiệu năng máy tính, không định nghĩa AGI.",
-          "C": "• Dung lượng bộ nhớ phụ thuộc vào hạ tầng lưu trữ.",
-          "D": "• Ngôn ngữ lập trình là công cụ phát triển phần mềm."
+          "B": "• Thúc đẩy điều tốt là Beneficence.",
+          "C": "• Đảm bảo sự công bằng là Justice.",
+          "D": "• Tôn trọng tự quyết là Autonomy."
         }
       }
     },
@@ -578,23 +576,23 @@
         "C": "Kantian deontology",
         "D": "Social contract theory"
       },
-      "answer": "B",
+      "answer": "C",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Nguyên tắc 'Non-maleficence' trong đạo đức công nghệ có nghĩa là gì?",
+        "questionVi": "Nguyên tắc nào nhấn mạnh việc đối xử với con người như một mục đích tối hậu, không chỉ là phương tiện?",
         "optionsVi": {
-          "A": "Nguyên tắc tối đa hóa lợi nhuận tài chính",
-          "B": "Nguyên tắc không gây hại (Do no harm)",
-          "C": "Nguyên tắc tự động hóa mọi quy trình",
-          "D": "Nguyên tắc công khai toàn bộ mã nguồn"
+          "A": "Thuyết vị lợi",
+          "B": "Đạo đức đức hạnh",
+          "C": "Thuyết nghĩa vụ Kantian",
+          "D": "Thuyết hợp đồng xã hội"
         },
-        "answerDisplay": "B. Principle of doing no harm",
-        "concept": "• Non-maleficence (Không gây hại) đòi hỏi hệ thống công nghệ không được gây ra tổn hại vật lý, tinh thần hay xã hội cho con người.",
-        "whyCorrect": "• Yêu cầu cốt lõi của Non-maleficence là phòng ngừa và tránh gây tổn hại cho người dùng và cộng đồng.",
+        "answerDisplay": "C. Kantian deontology",
+        "concept": "• Thuyết Đạo đức nghĩa vụ Kant (Kantian Deontology) đề cao phẩm giá con người như một mục đích độc lập.",
+        "whyCorrect": "• Tuyên ngôn Kantian cấm việc lợi dụng con người làm công cụ.",
         "whyWrong": {
-          "A": "• Tối đa hóa lợi nhuận thuộc về mục tiêu thương mại doanh nghiệp.",
-          "C": "• Tự động hóa là mục tiêu kỹ thuật, không phải nguyên tắc đạo đức.",
-          "D": "• Công khai mã nguồn thuộc về Open Source."
+          "A": "• Thuyết vị lợi sẵn sàng đánh đổi cá nhân vì lợi ích số đông.",
+          "B": "• Đạo đức đức hạnh tập trung vào tính cách cá nhân.",
+          "D": "• Hợp đồng xã hội tập trung vào thỏa thuận quy ước."
         }
       }
     },
@@ -611,23 +609,23 @@
         "C": "Maximum data collection",
         "D": "Fastest processing speed"
       },
-      "answer": "C",
+      "answer": "B",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Thuật ngữ 'Algorithmic Bias' (Thiên vị thuật toán) phát sinh từ nguyên nhân chính nào?",
+        "questionVi": "Yếu tố nào là thiết yếu đối với trách nhiệm giải trình của hệ thống (System Accountability)?",
         "optionsVi": {
-          "A": "Lỗi phần cứng của bộ vi xử lý CPU",
-          "B": "Đường truyền internet bị ngắt kết nối",
-          "C": "Dữ liệu huấn luyện bị lệch hoặc định kiến trong thiết kế thuật toán",
-          "D": "Do máy tính bị nhiễm virus"
+          "A": "Tự động hóa hoàn toàn",
+          "B": "Phân công trách nhiệm rõ ràng",
+          "C": "Thu thập dữ liệu tối đa",
+          "D": "Tốc độ xử lý nhanh nhất"
         },
-        "answerDisplay": "C. Biased training data or prejudiced algorithmic design",
-        "concept": "• Thiên vị thuật toán phản ánh sự lệch lạc sẵn có trong tập dữ liệu quá khứ hoặc định kiến vô thức của nhà thiết kế.",
-        "whyCorrect": "• Dữ liệu huấn luyện không công bằng sẽ làm thuật toán tái lập và trầm trọng hóa sự thiên vị đó.",
+        "answerDisplay": "B. Clear responsibility assignment",
+        "concept": "• Trách nhiệm giải trình đòi hỏi xác định rõ cá nhân/tổ chức chịu trách nhiệm cho hành vi và quyết định của hệ thống.",
+        "whyCorrect": "• Phân công rõ ràng giúp dễ dàng truy cứu và khắc phục hậu quả.",
         "whyWrong": {
-          "A": "• Lỗi CPU là sự cố phần cứng.",
-          "B": "• Gián đoạn internet thuộc về đường truyền mạng.",
-          "D": "• Virus là phần mềm độc hại an ninh mạng."
+          "A": "• Tự động hóa hoàn toàn không xóa bỏ trách nhiệm của con người.",
+          "C": "• Thu thập dữ liệu tối đa vi phạm Data Minimization.",
+          "D": "• Tốc độ không đảm bảo tính giải trình."
         }
       }
     },
@@ -644,23 +642,23 @@
         "C": "The conference can be interactive without the participants needing to be co-located",
         "D": "The participants will be impressed by your leveraging of new and exciting technologies"
       },
-      "answer": "A",
+      "answer": "C",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Vai trò của đánh giá tác động riêng tư (PIA - Privacy Impact Assessment) là gì?",
+        "questionVi": "Lợi ích của việc tổ chức họp báo thực tế ảo (VR) so với họp báo trực tiếp truyền thống là gì?",
         "optionsVi": {
-          "A": "Phân tích và xác định các rủi ro xâm phạm quyền riêng tư trước khi triển khai hệ thống dữ liệu",
-          "B": "Định giá tiền tệ cho dữ liệu cá nhân",
-          "C": "Tăng dung lượng nén của cơ sở dữ liệu",
-          "D": "Tự động gửi email quảng cáo tới khách hàng"
+          "A": "Dễ dàng truyền đạt thông điệp tổng thể hơn",
+          "B": "Dễ truy cập hơn",
+          "C": "Buổi họp có thể tương tác mà các bên tham gia không cần ở cùng một vị trí địa lý",
+          "D": "Gây ấn tượng mạnh hơn"
         },
-        "answerDisplay": "A. Analyzing and identifying privacy risks prior to system deployment",
-        "concept": "• Privacy Impact Assessment (PIA) là quy trình chủ động kiểm toán rủi ro riêng tư trong chu kỳ phát triển dự án.",
-        "whyCorrect": "• Đánh giá chủ quan rủi ro riêng tư trước khi triển khai giúp phòng ngừa vi phạm pháp luật và bảo vệ người dùng.",
+        "answerDisplay": "C. The conference can be interactive without the participants needing to be co-located",
+        "concept": "• Họp báo VR mang lại khả năng tương tác không gian thực tế ảo từ xa mà không đòi hỏi tập trung địa lý.",
+        "whyCorrect": "• Xóa bỏ rào cản khoảng cách địa lý trong khi vẫn duy trì trải nghiệm tương tác.",
         "whyWrong": {
-          "B": "• PIA không dùng để định giá bán dữ liệu.",
-          "C": "• Nén cơ sở dữ liệu là tối ưu lưu trữ.",
-          "D": "• Gửi email quảng cáo là hoạt động marketing."
+          "A": "• Thông điệp không phụ thuộc vào VR.",
+          "B": "• VR đòi hỏi thiết bị chuyên dụng nên không dễ truy cập bằng họp trực tuyến thường.",
+          "D": "• Ấn tượng không phải là lợi ích chức năng cốt lõi."
         }
       }
     },
@@ -738,28 +736,28 @@
       "chooseType": "Choose 1 answer",
       "question": "Which of the following is a misuse of intellectual property (IP) when it comes to ethical accountability for an organization?",
       "options": {
-        "A": "Collecting retums on investments made in research and development",
+        "A": "Collecting returns on investments made in research and development",
         "B": "Filing a patent for the IP that makes non-obvious information known to the public",
         "C": "Enhancing the security posture of a product or service.",
-        "D": "Using IP as a defensive mechariism to eschew transparency requirements"
+        "D": "Using IP as a defensive mechanism to eschew transparency requirements"
       },
-      "answer": "B",
+      "answer": "D",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Hành vi nào sau đây là sự lạm dụng sở hữu trí tuệ (IP) liên quan đến trách nhiệm đạo đức của tổ chức?",
+        "questionVi": "Đâu là hành vi lạm dụng sở hữu trí tuệ (IP) về mặt trách nhiệm giải trình đạo đức của tổ chức?",
         "optionsVi": {
-          "A": "Thu lợi nhuận từ các khoản đầu tư nghiên cứu và phát triển (R&D)",
-          "B": "Đầu cơ bằng sáng chế để kiện tụng trục lợi (Patent trolling)",
-          "C": "Cấp phép sử dụng sở hữu trí tuệ cho đối tác",
-          "D": "Bảo vệ bí mật thương mại theo quy định pháp luật"
+          "A": "Thu được lợi nhuận từ các khoản đầu tư vào nghiên cứu và phát triển (R&D)",
+          "B": "Nộp bằng sáng chế làm công khai thông tin không hiển nhiên cho công chúng",
+          "C": "Tăng cường vị thế bảo mật của một sản phẩm hoặc dịch vụ",
+          "D": "Sử dụng sở hữu trí tuệ (IP) như một cơ chế phòng thủ để trốn tránh các yêu cầu minh bạch"
         },
-        "answerDisplay": "B. Patent trolling",
-        "concept": "• Patent Trolling (đầu cơ bằng sáng chế) là việc đăng ký/mua bằng sáng chế không để sản xuất mà chỉ để đi kiện tụng đòi tiền bồi thường, kìm hãm đổi mới sáng tạo.",
-        "whyCorrect": "• Patent Trolling là hành vi lạm dụng luật sở hữu trí tuệ vi phạm nghiêm trọng đạo đức kinh doanh.",
+        "answerDisplay": "D. Using IP as a defensive mechanism to eschew transparency requirements",
+        "concept": "• Việc lấy lý do bí mật kinh doanh/IP để từ chối giải trình thuật toán gây hại là vi phạm trách nhiệm minh bạch đạo đức.",
+        "whyCorrect": "• Trốn tránh minh bạch dưới chiêu bài bảo hộ IP là hành vi lạm dụng nguy hại.",
         "whyWrong": {
-          "A": "• Thu hồi vốn R&D là hoạt động kinh doanh hợp pháp chính đáng.",
-          "C": "• Cấp phép IP giúp thương mại hóa công nghệ tích cực.",
-          "D": "• Bảo vệ bí mật thương mại là quyền lợi hợp pháp của doanh nghiệp."
+          "A": "• Bảo hộ bản quyền đúng luật là hợp pháp.",
+          "B": "• Bằng sáng chế làm công khai giải pháp là đúng mục đích của bằng sáng chế.",
+          "C": "• Bảo hộ thương hiệu là hoạt động bình thường."
         }
       }
     },
@@ -786,7 +784,7 @@
           "C": "Vấn đề khi các tập dữ liệu bị tối màu",
           "D": "Vấn đề lưu trữ dữ liệu an toàn trong thiết bị"
         },
-        "answerDisplay": "A. When a model is deployed, but researchers are unable to figure out why its making decisions",
+        "answerDisplay": "A. By implementing systems once and forgetting them",
         "concept": "• Black Box Problem xảy ra ở các mô hình học sâu phức tạp nơi con người không thể truy xuất hay giải thích các bước lập luận bên trong.",
         "whyCorrect": "• Sự thiếu minh bạch trong cơ chế ra quyết định tạo ra rủi ro không thể kiểm toán và khắc phục sai lệch.",
         "whyWrong": {
@@ -809,23 +807,23 @@
         "C": "model fairness score",
         "D": "Individual's data"
       },
-      "answer": "C",
+      "answer": "D",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Đối tượng nào sau đây là một ví dụ về Bên liên quan thứ cấp (Secondary Stakeholder)?",
+        "questionVi": "Những gì học được từ mô hình dự đoán sẽ không thay đổi bất kể ________ có được đưa vào hay loại trừ khỏi tập huấn luyện?",
         "optionsVi": {
-          "A": "Nhân viên công ty (Employees)",
-          "B": "Khách hàng (Customers)",
-          "C": "Báo chí / Cơ quan truyền thông (Media)",
-          "D": "Nhà đầu tư (Investors)"
+          "A": "Bộ lọc tập dữ liệu",
+          "B": "Tập dữ liệu bị định kiến",
+          "C": "Điểm công bằng của mô hình",
+          "D": "Dữ liệu của cá nhân"
         },
-        "answerDisplay": "C. Media",
-        "concept": "• Bên liên quan sơ cấp (Primary Stakeholders) giao dịch trực tiếp với công ty (nhân viên, khách hàng, nhà đầu tư). Bên liên quan thứ cấp (Secondary Stakeholders) chịu ảnh hưởng hoặc tác động gián tiếp (truyền thông, cộng đồng).",
-        "whyCorrect": "• Báo chí truyền thông gián tiếp tác động đến dư luận nên thuộc nhóm Secondary Stakeholder.",
+        "answerDisplay": "D. Individual's data",
+        "concept": "• Đây là định nghĩa chuẩn về Differential Privacy (Tính riêng tư vi sai): Sự hiện diện hay thiếu vắng dữ liệu của 1 cá nhân không làm thay đổi đáng kể đầu ra mô hình.",
+        "whyCorrect": "• Bảo vệ quyền riêng tư cá nhân tuyệt đối khỏi bị suy đoán thông tin.",
         "whyWrong": {
-          "A": "• Nhân viên là bên liên quan sơ cấp (Primary).",
-          "B": "• Khách hàng là bên liên quan sơ cấp (Primary).",
-          "D": "• Nhà đầu tư là bên liên quan sơ cấp (Primary)."
+          "A": "• Bộ lọc làm thay đổi kết quả mô hình.",
+          "B": "• Tập dữ liệu định kiến ảnh hưởng lớn đến kết quả.",
+          "C": "• Điểm công bằng là thước đo, không phải dữ liệu đầu vào."
         }
       }
     },
@@ -842,23 +840,23 @@
         "C": "It simplifies design",
         "D": "It boosts marketing campaigns"
       },
-      "answer": "D",
+      "answer": "B",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Nguyên tắc giảm thiểu dữ liệu (Data Minimization) yêu cầu bạn giới hạn thu thập dữ liệu ở mức nào?",
+        "questionVi": "Tại sao Bình đẳng (Equity) là nguyên tắc quan trọng trong đạo đức công nghệ mới nổi?",
         "optionsVi": {
-          "A": "Chỉ những gì cần thiết cho tính riêng tư vi sai",
-          "B": "Tùy chọn cho chuỗi mệnh lệnh quản lý",
-          "C": "Cần thiết để đạt tính ẩn danh k-anonymity",
-          "D": "Chỉ những gì bắt buộc để thực hiện một mục đích đã xác định cụ thể (Required to fulfill a specific purpose)"
+          "A": "Giá trị thương hiệu",
+          "B": "Đảm bảo sự công bằng trong khả năng tiếp cận và kết quả thụ hưởng",
+          "C": "Đơn giản hóa thiết kế",
+          "D": "Chiến dịch tiếp thị"
         },
-        "answerDisplay": "D. required to fulfill a specific purpose",
-        "concept": "• Data Minimization quy định tổ chức chỉ được thu thập đúng và đủ dữ liệu phục vụ mục đích đã được thông báo trước.",
-        "whyCorrect": "• Thu thập giới hạn đúng mục đích ngăn ngừa việc tích trữ dữ liệu dư thừa gây rủi ro xâm phạm riêng tư.",
+        "answerDisplay": "B. It ensures faimess in access and outcomes",
+        "concept": "• Nguyên tắc Equity (Công bằng/Bình đẳng) hướng tới phân bổ cơ hội và lợi ích công nghệ một cách công bằng.",
+        "whyCorrect": "• Đảm bảo mọi nhóm đối tượng đều có cơ hội tiếp cận và thụ hưởng thành quả.",
         "whyWrong": {
-          "A": "• Differential privacy là kỹ thuật toán học, không phải tiêu chuẩn phạm vi thu thập.",
-          "B": "• Chuỗi mệnh lệnh quản lý không phải căn cứ pháp lý thu thập dữ liệu.",
-          "C": "• K-anonymity là kỹ thuật nhóm dữ liệu."
+          "A": "• Thương hiệu không phải mục tiêu đạo đức cốt lõi.",
+          "C": "• Bình đẳng không làm đơn giản hóa thiết kế.",
+          "D": "• Tiếp thị không phải lý do đạo đức."
         }
       }
     },
@@ -875,23 +873,23 @@
         "C": "It helps the organization avoid legal trouble during the development and deployment of data-driven systems",
         "D": "It demonstrates that the organization is committed to accountability and transparency in their data-driven systems"
       },
-      "answer": "A",
+      "answer": "D",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Hạn chế lớn của việc sử dụng các thuật toán có thể giải thích và điều chỉnh được là người dùng có xu hướng đưa ra quyết định như thế nào?",
+        "questionVi": "Tại sao việc tham vấn các bên liên quan từ khi bắt đầu quy trình quản trị rủi ro đạo đức lại quan trọng?",
         "optionsVi": {
-          "A": "Đưa ra các quyết định vị kỷ / có lợi nhất cho cá nhân (Selfish decisions)",
-          "B": "Đưa ra các quyết định có ý thức xã hội",
-          "C": "Đưa ra các quyết định ngẫu nhiên",
-          "D": "Đưa ra các quyết định thiên vị"
+          "A": "Giảm chi phí phát triển",
+          "B": "Bỏ qua các quy định pháp lý",
+          "C": "Tăng tốc độ ra mắt sản phẩm",
+          "D": "Thể hiện tổ chức cam kết trách nhiệm giải trình và minh bạch trong các hệ thống dữ liệu"
         },
-        "answerDisplay": "A. selfish",
-        "concept": "• Khi hiểu rõ và điều chỉnh được thuật toán, con người có xu hướng thao túng đầu vào để tối đa hóa lợi ích cá nhân (Selfish behavior).",
-        "whyCorrect": "• Tính minh bạch quá mức có thể bị lợi dụng để 'gaming the system' (lách luật thuật toán).",
+        "answerDisplay": "D. It demonstrates that the organization is committed to accountability and transparency in their data-driven systems",
+        "concept": "• Tham vấn sớm khẳng định tinh thần trách nhiệm giải trình và minh bạch của tổ chức đối với cộng đồng.",
+        "whyCorrect": "• Xây dựng niềm tin và lắng nghe đóng góp ngay từ khâu thiết kế.",
         "whyWrong": {
-          "B": "• Thực tế người dùng ít khi hy sinh lợi ích cá nhân vì ý thức xã hội chung.",
-          "C": "• Quyết định có tính toán tối đa lợi ích chứ không ngẫu nhiên.",
-          "D": "• Quyết định vị kỷ tập trung vào lợi ích bản thân."
+          "A": "• Tham vấn ban đầu có thể làm tăng chi phí nhưng cần thiết.",
+          "B": "• Không được phép bỏ qua quy định pháp lý.",
+          "C": "• Tốc độ không phải ưu tiên hàng đầu so với đạo đức."
         }
       }
     },
@@ -908,23 +906,22 @@
         "C": "It helps us understand the many complexities involved in different types of ethical risks",
         "D": "It helps us consider risk mitigation in terms of universal tactics that apply to all potential kinds of ethical risk."
       },
-      "answer": "B",
+      "answer": "A, C",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Mục tiêu chính của Đánh giá tác động đạo đức (Ethical Impact Assessment) là gì?",
+        "questionVi": "Tại sao việc phân loại rủi ro đạo đức thành các loại khác nhau lại quan trọng? (Chọn hai đáp án)",
         "optionsVi": {
-          "A": "Đánh giá tính khả thi về mặt tài chính",
-          "B": "Xác định và giảm thiểu các tổn hại đạo đức tiềm ẩn của dự án trước khi triển khai",
-          "C": "Tối ưu hóa mã nguồn lập trình",
-          "D": "Đưa sản phẩm ra thị trường nhanh hơn"
+          "A": "Giúp dễ dàng nhận diện và quản lý các loại rủi ro khác nhau",
+          "B": "Loại bỏ hoàn toàn mọi rủi ro",
+          "C": "Giúp hiểu rõ các độ phức tạp khác nhau liên quan đến từng loại rủi ro đạo đức",
+          "D": "Tránh phải tuân thủ pháp luật"
         },
-        "answerDisplay": "B. To identify and mitigate potential ethical harms of a project before deployment",
-        "concept": "• Ethical Impact Assessment là công cụ quản trị giúp nhận diện trước các tác động tiêu cực về mặt xã hội và đạo đức.",
-        "whyCorrect": "• Đánh giá trước giúp chủ động thiết kế các biện pháp giảm thiểu tổn hại cho cộng đồng.",
+        "answerDisplay": "A. It makes it easier for us to identify and manage different types of risks & C. It helps us understand the many complexities involved in different types of ethical risks",
+        "concept": "• Phân loại rủi ro hỗ trợ việc nhận diện, đánh giá và xây dựng phương án ứng phó phù hợp.",
+        "whyCorrect": "• A và C thể hiện đúng mục đích của phân loại rủi ro.",
         "whyWrong": {
-          "A": "• Tài chính thuộc về thẩm định kinh doanh (Financial Assessment).",
-          "C": "• Tối ưu mã nguồn thuộc về kỹ thuật phần mềm.",
-          "D": "• Tốc độ ra thị trường thuộc về chiến lược kinh doanh."
+          "B": "• Không thể loại bỏ hoàn toàn 100% mọi rủi ro.",
+          "D": "• Phân loại rủi ro không nhằm né tránh luật pháp."
         }
       }
     },
@@ -941,23 +938,23 @@
         "C": "Regulators",
         "D": "Designers"
       },
-      "answer": "B",
+      "answer": "C",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Trong đánh giá rủi ro, khái niệm 'Khả năng xảy ra' (Likelihood) đề cập đến điều gì?",
+        "questionVi": "Đối tượng nào sau đây cấu thành Bên liên quan bên ngoài (External stakeholders) trong ngữ cảnh bộ quy tắc đạo đức?",
         "optionsVi": {
-          "A": "Chi phí tài chính của rủi ro",
-          "B": "Xác suất một sự cố rủi ro sẽ xảy ra (Probability that a risk event will occur)",
-          "C": "Mức độ nghiêm trọng của tác động",
-          "D": "Thời gian kéo dài của rủi ro"
+          "A": "Quản lý doanh nghiệp",
+          "B": "Lập trình viên",
+          "C": "Cơ quan quản lý / Nhà lập pháp",
+          "D": "Nhà thiết kế"
         },
-        "answerDisplay": "B. The probability that a risk event will occur",
-        "concept": "• Ma trận rủi ro được tính dựa trên hai trục: Khả năng xảy ra (Likelihood/Probability) và Mức độ tác động (Impact/Severity).",
-        "whyCorrect": "• Likelihood đo lường xác suất thống kê một nguy cơ chuyển hóa thành sự cố thực tế.",
+        "answerDisplay": "C. Regulators",
+        "concept": "• Bên liên quan bên ngoài bao gồm Cơ quan quản lý (Regulators), Khách hàng, Đối tác và Cộng đồng.",
+        "whyCorrect": "• Regulators là bên ngoài trực tiếp giám sát tuân thủ.",
         "whyWrong": {
-          "A": "• Chi phí tài chính thuộc về đo lường tác động (Impact).",
-          "C": "• Mức độ nghiêm trọng là trục Impact.",
-          "D": "• Thời gian kéo dài là thuộc tính thời lượng (Duration)."
+          "A": "• Quản lý là nhân sự nội bộ.",
+          "B": "• Lập trình viên là nhân sự nội bộ.",
+          "D": "• Nhà thiết kế là nhân sự nội bộ."
         }
       }
     },
@@ -974,23 +971,23 @@
         "C": "Utilitarianism",
         "D": "Virtue Ethics"
       },
-      "answer": "B",
+      "answer": "A",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Cách tiếp cận nào mô tả đúng nhất về Đạo đức Nghĩa vụ (Deontological Ethics)?",
+        "questionVi": "Khung đạo đức nào nhấn mạnh tầm quan trọng của các nghĩa vụ và quy tắc đạo đức khi giải quyết các tiến thoái lưỡng nan?",
         "optionsVi": {
-          "A": "Hành động là đúng nếu nó mang lại kết quả tổng thể tốt nhất",
-          "B": "Hành động là đúng nếu nó tuân thủ các nghĩa vụ và quy tắc đạo đức bất kể hậu quả ra sao",
-          "C": "Hành động là đúng nếu nó được thực hiện bởi một người có đức hạnh",
-          "D": "Hành động là đúng nếu được pháp luật phê chuẩn"
+          "A": "Đạo đức nghĩa vụ (Deontological Ethics)",
+          "B": "Tương đối luận đạo đức",
+          "C": "Thuyết vị lợi",
+          "D": "Đạo đức đức hạnh"
         },
-        "answerDisplay": "B. Action is right if it adheres to moral duties and rules regardless of consequences",
-        "concept": "• Deontology (Đạo đức Kant) khẳng định tính đúng sai nằm ở bản chất hành vi và sự tuân thủ nghĩa vụ/quy tắc, không phụ thuộc vào kết quả.",
-        "whyCorrect": "• Nghĩa vụ đạo đức là bắt buộc và tuyệt đối, không được vi phạm ngay cả khi kết quả có vẻ tốt.",
+        "answerDisplay": "A. Deontological Ethics",
+        "concept": "• Thuyết Đạo đức nghĩa vụ (Deontological Ethics) dựa trên các nguyên tắc và nghĩa vụ đạo đức bất biến.",
+        "whyCorrect": "• A là câu trả lời chính xác cho Deontological Ethics.",
         "whyWrong": {
-          "A": "• Đây là định nghĩa của Utilitarianism / Consequentialism (Đạo đức Hậu quả).",
-          "C": "• Đây là định nghĩa của Virtue Ethics (Đạo đức Đức hạnh).",
-          "D": "• Pháp luật không đồng nhất tuyệt đối với chuẩn mực đạo đức."
+          "B": "• Tương đối luận cho rằng đạo đức tùy thuộc văn hóa/ngữ cảnh.",
+          "C": "• Thuyết vị lợi đánh giá dựa trên kết quả/hậu quả.",
+          "D": "• Đạo đức đức hạnh dựa trên tính cách."
         }
       }
     },
@@ -1010,20 +1007,20 @@
       "answer": "B",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Mục tiêu chính của ẩn danh k-anonymity là gì?",
+        "questionVi": "Các tổ chức nhỏ có thể triển khai thực hành đạo đức như thế nào với nguồn lực hạn chế?",
         "optionsVi": {
-          "A": "Mã hóa toàn bộ cơ sở dữ liệu",
-          "B": "Ngăn chặn việc định danh lại cá nhân trong tập dữ liệu bằng cách nhóm các bản ghi tương tự",
-          "C": "Tăng tốc độ truy vấn cơ sở dữ liệu",
-          "D": "Xóa các bản ghi cá nhân"
+          "A": "Thuê đội ngũ tư vấn lớn",
+          "B": "Áp dụng các hướng dẫn đạo đức dạng mô-đun và ưu tiên các rủi ro trọng yếu",
+          "C": "Trì hoãn thực hành đạo đức cho đến khi mở rộng",
+          "D": "Tự động hóa hoàn toàn"
         },
-        "answerDisplay": "B. Preventing re-identification of individuals in a dataset by grouping records",
-        "concept": "• K-anonymity đảm bảo thông tin của một người ẩn trong ít nhất K-1 cá nhân khác có cùng thuộc tính gián tiếp.",
-        "whyCorrect": "• K-anonymity bảo vệ quyền riêng tư bằng cách triệt tiêu khả năng định danh duy nhất (re-identification).",
+        "answerDisplay": "B. Focus on core ethical principles and gradual implementation",
+        "concept": "• Tiếp cận từng bước bằng hướng dẫn mô-đun giúp doanh nghiệp nhỏ tối ưu nguồn lực.",
+        "whyCorrect": "• B đưa ra giải pháp khả thi nhất cho tổ chức nhỏ.",
         "whyWrong": {
-          "A": "• Mã hóa dữ liệu là mã hóa lưu trữ (Encryption).",
-          "C": "• Tăng tốc truy vấn thuộc về index cơ sở dữ liệu.",
-          "D": "• K-anonymity giữ lại dữ liệu nhưng làm mờ thuộc tính."
+          "A": "• Chi phí thuê tư vấn quá cao.",
+          "C": "• Trì hoãn đạo đức gây rủi ro pháp lý/uy tín.",
+          "D": "• Tự động hóa tốn kém nguồn lực ban đầu."
         }
       }
     },
@@ -1043,20 +1040,20 @@
       "answer": "B",
       "source": "ITE302c_SP26_FE",
       "explanation": {
-        "questionVi": "Mã độc tống tiền (Ransomware) được định nghĩa tốt nhất là gì?",
+        "questionVi": "Loại phần mềm độc hại nào sau đây theo dõi hành vi của người dùng mà không có sự cho phép hoặc hay biết của họ?",
         "optionsVi": {
-          "A": "Một loại virus làm chậm máy tính",
-          "B": "Phần mềm độc hại mã hóa dữ liệu của nạn nhân và yêu cầu thanh toán tiền chuộc để giải mã",
-          "C": "Lỗi hư hỏng phần cứng",
-          "D": "Một email lừa đảo thông thường"
+          "A": "Adware",
+          "B": "Spyware",
+          "C": "Ransomware",
+          "D": "Worm"
         },
-        "answerDisplay": "B. Malware that encrypts files and demands payment for decryption",
-        "concept": "• Ransomware là mối đe dọa an ninh mạng nghiêm trọng chiếm đoạt dữ liệu bằng mã hóa để tống tiền.",
-        "whyCorrect": "• Hành vi mã hóa khóa file và đòi tiền chuộc là đặc trưng phân loại của Ransomware.",
+        "answerDisplay": "B. Spyware",
+        "concept": "• Spyware (Phần mềm gián điệp) được thiết kế đặc biệt để thu thập thông tin và theo dõi người dùng lén lút.",
+        "whyCorrect": "• B định nghĩa chính xác Spyware.",
         "whyWrong": {
-          "A": "• Virus thông thường không nhất thiết mã hóa tống tiền.",
-          "C": "• Ransomware là phần mềm độc hại, không phải lỗi phần cứng.",
-          "D": "• Email lừa đảo (Phishing) chỉ là kịch bản phát tán."
+          "A": "• Adware hiển thị quảng cáo.",
+          "C": "• Ransomware tống tiền bằng cách mã hóa dữ liệu.",
+          "D": "• Worm tự nhân bản lây lan qua mạng."
         }
       }
     },
