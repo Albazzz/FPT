@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,10 +8,13 @@
   <meta name="description" content="Quiz thống nhất 4 môn: PRM393, MLN, JIT401, FE — một engine, data theo task." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css?v=ok12" />
 </head>
+
 <body>
   <div class="app-body">
     <header class="site-nav">
@@ -101,7 +105,8 @@
             <span>Bài / đề</span>
           </div>
           <div class="exam-dropdown" id="examDropdown">
-            <button type="button" class="exam-dropdown-toggle" id="examDropdownToggle" aria-haspopup="listbox" aria-expanded="false">
+            <button type="button" class="exam-dropdown-toggle" id="examDropdownToggle" aria-haspopup="listbox"
+              aria-expanded="false">
               <div class="selected-info">
                 <span class="selected-text" id="selectedExamText">Đang tải...</span>
                 <span class="badge selected-count" id="selectedExamCount">0</span>
@@ -111,7 +116,8 @@
             <div class="exam-dropdown-menu" id="examDropdownMenu">
               <div class="exam-dropdown-search-wrap">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="search" class="exam-dropdown-search" id="examDropdownSearch" placeholder="Tìm đề..." autocomplete="off" aria-label="Tìm kiếm đề">
+                <input type="search" class="exam-dropdown-search" id="examDropdownSearch" placeholder="Tìm đề..."
+                  autocomplete="off" aria-label="Tìm kiếm đề">
               </div>
               <div class="exam-dropdown-list" id="examDropdownList" role="listbox">
                 <!-- render động từ JS -->
@@ -156,21 +162,17 @@
 
               <div class="search-bar search-bar-inline">
                 <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
-                <input
-                  type="search"
-                  id="searchInput"
-                  class="search-input"
-                  placeholder="Tìm câu hỏi…"
-                  autocomplete="off"
-                  aria-label="Tìm kiếm câu hỏi"
-                />
-                <button type="button" class="btn btn-ghost btn-sm search-clear hidden" id="btnClearSearch" title="Xóa tìm kiếm">
+                <input type="search" id="searchInput" class="search-input" placeholder="Tìm câu hỏi…" autocomplete="off"
+                  aria-label="Tìm kiếm câu hỏi" />
+                <button type="button" class="btn btn-ghost btn-sm search-clear hidden" id="btnClearSearch"
+                  title="Xóa tìm kiếm">
                   <i class="fa-solid fa-xmark"></i>
                 </button>
               </div>
 
               <div class="toolbar toolbar-inline" role="toolbar" aria-label="Thao tác">
-                <button type="button" class="btn btn-secondary btn-sm" id="btnToggleMap" title="Ẩn/hiện bản đồ câu" aria-pressed="true" aria-controls="sideMap">
+                <button type="button" class="btn btn-secondary btn-sm" id="btnToggleMap" title="Ẩn/hiện bản đồ câu"
+                  aria-pressed="true" aria-controls="sideMap">
                   <i class="fa-solid fa-map" id="mapToggleIcon"></i>
                   <span class="btn-label" id="mapToggleLabel">Ẩn bản đồ</span>
                 </button>
@@ -181,13 +183,16 @@
                 <button type="button" class="btn btn-secondary btn-sm" id="btnReshuffle" title="Xáo thứ tự câu hỏi">
                   <i class="fa-solid fa-arrows-rotate"></i> <span class="btn-label">Xáo lại</span>
                 </button>
-                <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession" title="Reset điểm theo tag đang chọn">
+                <button type="button" class="btn btn-ghost btn-sm" id="btnResetSession"
+                  title="Reset điểm theo tag đang chọn">
                   <i class="fa-solid fa-rotate-left"></i> <span class="btn-label">Reset điểm</span>
                 </button>
-                <button type="button" class="btn btn-ghost btn-sm btn-danger-text" id="btnClearWrong" title="Xóa câu sai theo tag đang chọn">
+                <button type="button" class="btn btn-ghost btn-sm btn-danger-text" id="btnClearWrong"
+                  title="Xóa câu sai theo tag đang chọn">
                   <i class="fa-solid fa-trash-can"></i> <span class="btn-label">Xóa câu sai</span>
                 </button>
-                <button type="button" class="btn btn-ghost btn-sm" id="btnRestoreWrong" title="Khôi phục câu sai từ lịch sử làm bài">
+                <button type="button" class="btn btn-ghost btn-sm" id="btnRestoreWrong"
+                  title="Khôi phục câu sai từ lịch sử làm bài">
                   <i class="fa-solid fa-rotate-right"></i> <span class="btn-label">Khôi phục câu sai</span>
                 </button>
               </div>
@@ -245,7 +250,8 @@
                 <span class="nav-label">Trước</span>
               </button>
               <div class="nav-center">
-                <input type="number" id="jumpInput" min="1" class="jump-input" title="Nhảy tới số câu" aria-label="Nhảy tới số câu" />
+                <input type="number" id="jumpInput" min="1" class="jump-input" title="Nhảy tới số câu"
+                  aria-label="Nhảy tới số câu" />
                 <button type="button" class="btn btn-secondary btn-sm" id="btnJump">
                   <i class="fa-solid fa-location-arrow"></i> Đi
                 </button>
@@ -267,7 +273,8 @@
   </div>
 
   <!-- Modal xác nhận -->
-  <div id="confirmModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmMsg" hidden>
+  <div id="confirmModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="confirmTitle"
+    aria-describedby="confirmMsg" hidden>
     <div class="modal-backdrop" data-confirm-cancel tabindex="-1"></div>
     <div class="modal-panel" role="document">
       <div class="modal-icon" aria-hidden="true"><i class="fa-solid fa-trash-can"></i></div>
@@ -287,21 +294,18 @@
       <div class="modal-icon master-icon" aria-hidden="true"><i class="fa-solid fa-cloud"></i></div>
       <h3 class="modal-title" id="masterTitle">Kết nối Neon Cloud</h3>
       <p class="modal-msg" id="masterMsg">
-        Nhập <strong>Key Neon</strong> (Database URL) để <strong>lưu tiến trình trên cloud</strong> (đồng bộ nhiều máy).<br />
+        Nhập <strong>Key Neon</strong> (Database URL) để <strong>lưu tiến trình trên cloud</strong> (đồng bộ nhiều
+        máy).<br />
         Bỏ qua = chỉ lưu trên máy này (local).
       </p>
       <label class="master-label" for="masterCodeInput">Key Neon (postgresql://...)</label>
-      <input
-        type="text"
-        id="masterCodeInput"
-        class="master-input"
-        placeholder="Nhập Key Neon của bạn (postgresql://...)"
-        autocomplete="off"
-        spellcheck="false"
-        enterkeyhint="go"
-      />
-      <div class="sc-help-box" style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
-        <a href="https://neon.tech" target="_blank" rel="noopener" class="sc-btn-neon" style="display:inline-flex;align-items:center;gap:6px;background:#ecfdf5;color:#047857;border:1px solid #a7f3d0;padding:6px 12px;border-radius:8px;font:700 12px system-ui;text-decoration:none">
+      <input type="text" id="masterCodeInput" class="master-input"
+        placeholder="Nhập Key Neon của bạn (postgresql://...)" autocomplete="off" spellcheck="false"
+        enterkeyhint="go" />
+      <div class="sc-help-box"
+        style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+        <a href="https://neon.tech" target="_blank" rel="noopener" class="sc-btn-neon"
+          style="display:inline-flex;align-items:center;gap:6px;background:#ecfdf5;color:#047857;border:1px solid #a7f3d0;padding:6px 12px;border-radius:8px;font:700 12px system-ui;text-decoration:none">
           <i class="fa-solid fa-arrow-up-right-from-square"></i> Tạo Key Neon Free (neon.tech)
         </a>
       </div>
@@ -330,4 +334,5 @@
   <script src="data/ite.js?v=ok2"></script>
   <script src="app.js?v=ok18b"></script>
 </body>
+
 </html>
