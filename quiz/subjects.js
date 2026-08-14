@@ -117,7 +117,7 @@ window.QUIZ_SUBJECTS = {
   ite: {
     id: "ite",
     title: "ITE302c",
-    subtitle: "Ethics in IT · 12 Đề FE (720 MCQ)",
+    subtitle: "Ethics in IT · 12 Đề FE + 340 Câu Quizlet (1060 MCQ)",
     brandIcon: "fa-scale-balanced",
     storageWrong: "uq-ite-wrong-v1",
     storageProgress: "uq-ite-progress-v1",
@@ -125,6 +125,7 @@ window.QUIZ_SUBJECTS = {
     multiSelect: true,
     showTranslationAlways: true,
     tasks: [
+      { id: "c340", label: "340 câu", icon: "fa-book" },
       { id: "sp26_fe_re", label: "SP26 FE RE", icon: "fa-file-circle-check" },
       { id: "sp26_fe", label: "SP26 FE", icon: "fa-file" },
       { id: "su25_fe_re", label: "SU25 FE RE", icon: "fa-file-circle-check" },
@@ -142,7 +143,7 @@ window.QUIZ_SUBJECTS = {
     ],
     defaultTask: "all",
     dataKey: "ite",
-    hint: "ITE302c (Ethics in IT): Đầy đủ 12 đề FE từ FuExam.me (720 câu trắc nghiệm).",
+    hint: "ITE302c (Ethics in IT): 12 đề FE từ FuExam.me + 340 câu Quizlet (tổng cộng 1060 câu).",
   },
 };
 

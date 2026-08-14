@@ -1,8 +1,9 @@
 {
   "subject": "ite",
-  "upgradedAt": "2026-08-06T11:40:00.000Z",
-  "total": 720,
+  "upgradedAt": "2026-08-14T10:39:00.000Z",
+  "total": 1060,
   "tasks": [
+    "c340",
     "sp26_fe_re",
     "sp26_fe",
     "su25_fe_re",
@@ -28,7 +29,8 @@
     "su24_fe_re": 60,
     "su24_fe": 60,
     "sp24_fe_re": 60,
-    "sp24_fe": 60
+    "sp24_fe": 60,
+    "c340": 340
   },
   "partsOf": "ite",
   "note": "Edit {task}.json then run: node quiz/tools/merge_by_task.mjs ite"
