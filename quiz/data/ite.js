@@ -737,7 +737,7 @@ window.QUIZ_DATA['ite'] = [
       "C": "By prioritizing speed over accuracy in data processing",
       "D": "By encouraging the concealment of ethical concems"
     },
-    "answer": "D",
+    "answer": "A",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
       "questionVi": "Truyền thông hiệu quả có thể giảm thiểu các rủi ro đạo đức trong AI và Data Science như thế nào?",
@@ -1062,10 +1062,10 @@ window.QUIZ_DATA['ite'] = [
     "chooseType": "Choose 1 answer",
     "question": "A type of artificial intelligence that outperforms humans in all tasks is known as",
     "options": {
-      "A": "General Al",
-      "B": "Outwit Al",
-      "C": "Specific Al",
-      "D": "Encompassing Al"
+      "A": "General AI",
+      "B": "Outwit AI",
+      "C": "Specific AI",
+      "D": "Encompassing AI"
     },
     "answer": "A",
     "source": "Quizlet_ITE302c_340",
@@ -1374,11 +1374,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. The principle of doing no harm.",
       "concept": "• Principle of Non-Maleficence: Nguyên tắc đạo đức cốt lõi yêu cầu các hệ thống công nghệ không được gây hại cho con người và xã hội (\"First, do no harm\").",
-      "whyCorrect": "• Non-maleficence = Không gây hại (doing no harm).",
+      "whyCorrect": "• Non-maleficence (không gây hại) là nguyên tắc đạo đức y học cổ điển từ Hippocrates, yêu cầu các hệ thống công nghệ phải được thiết kế sao cho không gây tổn hại về thể chất, tinh thần hay tài chính cho người dùng và xã hội.",
       "whyWrong": {
-        "B": "• Không định kiến thuộc về Fairness.",
-        "C": "• An ninh thuộc về Security.",
-        "D": "• Sai hoàn toàn về mặt ngữ nghĩa."
+        "B": "• Không có định kiến (no bias) thuộc về nguyên tắc Fairness (Công bằng), là khái niệm riêng biệt với non-maleficence.",
+        "C": "• Không có rủi ro an ninh thuộc về nguyên tắc Security (Bảo mật), tập trung vào bảo vệ dữ liệu và hệ thống khỏi tấn công.",
+        "D": "• Đáp án này hoàn toàn sai nghĩa - \"có rủi ro bảo mật\" (having security risk) là điều cần tránh chứ không phải nguyên tắc đạo đức."
       }
     }
   },
@@ -1506,11 +1506,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. 85%",
       "concept": "• Global Ethics Framework Consensus: Thống kê các bộ khung chuẩn đạo đức AI trên toàn cầu cho thấy khoảng 85% coi Privacy là trụ cột bắt buộc.",
-      "whyCorrect": "• 85% là con số thống kê chính xác trong tài liệu giảng dạy ITE302c.",
+      "whyCorrect": "• Theo nghiên cứu tổng hợp các khung chuẩn đạo đức AI lớn trên thế giới (như EU AI Act, OECD, IEEE), khoảng 85% số khung chuẩn đều đưa quyền riêng tư (Privacy) vào làm trụ cột cốt lõi, cho thấy đây là nguyên tắc được đồng thuận rộng rãi nhất.",
       "whyWrong": {
-        "A": "• 50% là quá thấp.",
-        "C": "• 25% là sai lệch.",
-        "D": "• 99% không chính xác."
+        "A": "• 50% quá thấp so với thực tế - gần như mọi khung chuẩn đạo đức AI uy tín đều bao gồm privacy.",
+        "C": "• 25% là con số không chính xác, phản ánh sai lầm rằng privacy chỉ là quan tâm thiểu số.",
+        "D": "• 99% quá tuyệt đối - vẫn có một số khung chuẩn tập trung vào các lĩnh vực khác mà không đề cập trực tiếp đến privacy."
       }
     }
   },
@@ -1638,11 +1638,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. A stipulation to continue providing service even if data usage is denied",
       "concept": "• PIPEDA Non-conditional Service Provision: PIPEDA (Canada) cấm doanh nghiệp từ chối cung cấp dịch vụ nếu người dùng không đồng ý thu thập dữ liệu ngoài mục đích cốt lõi.",
-      "whyCorrect": "• Đây là điểm đặc sắc bảo vệ người tiêu dùng của PIPEDA.",
+      "whyCorrect": "• PIPEDA có điều khoản đặc biệt yêu cầu tổ chức không được từ chối cung cấp dịch vụ cho người dùng chỉ vì họ từ chối cho phép sử dụng dữ liệu ngoài phạm vi cần thiết, bảo vệ quyền tự chủ dữ liệu của cá nhân.",
       "whyWrong": {
-        "A": "• PIPEDA áp dụng cho khu vực tư nhân rộng lớn.",
-        "B": "• Thời gian ban hành không phải điểm khác biệt duy nhất.",
-        "C": "• Nhiều luật quốc gia khác cũng có phạm vi toàn quốc (GDPR)."
+        "A": "• PIPEDA thực tế bao phủ nhiều lĩnh vực kinh doanh khác nhau, không chỉ tập trung vào một ngành duy nhất.",
+        "B": "• Mặc dù PIPEDA ra đời năm 2000, thời điểm ban hành sớm không phải là điểm nổi bật nhất của đạo luật này.",
+        "C": "• Phạm vi quốc gia và trọng tâm quốc gia không phải là đặc điểm nổi bật nhất - nhiều quốc gia cũng có luật riêng tương tự."
       }
     }
   },
@@ -1935,11 +1935,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Guiding values and expectations for ethical behavior",
       "concept": "• Code of Ethics Purpose: Bộ quy tắc đạo đức đóng vai trò là kim chỉ nam định hướng chuẩn mực hành vi cho toàn bộ thành viên.",
-      "whyCorrect": "• Cung cấp giá trị định hướng và kỳ vọng chuẩn mực đạo đức.",
+      "whyCorrect": "• Bộ quy tắc đạo đức (Code of Ethics) thiết lập hệ giá trị nền tảng và kỳ vọng rõ ràng về hành vi đạo đức cho mọi nhân viên, giúp định hướng quyết định hàng ngày trong môi trường công nghệ dựa trên dữ liệu.",
       "whyWrong": {
-        "A": "• Lương thuộc hợp đồng lao động.",
-        "B": "• Đạo đức không giúp miễn trừ pháp lý.",
-        "D": "• Lịch trình thuộc quản lý dự án."
+        "A": "• Mức lương nhân viên thuộc về chính sách nhân sự và bảng lương, không phải nội dung của quy tắc đạo đức.",
+        "B": "• Bộ quy tắc đạo đức không cung cấp miễn trừ pháp lý - tổ chức vẫn phải chịu trách nhiệm pháp lý nếu vi phạm luật.",
+        "D": "• Lịch trình phát triển sản phẩm thuộc về quản lý dự án (Project Management), không liên quan đến quy tắc đạo đức."
       }
     }
   },
@@ -2034,11 +2034,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. required to fulfill a specific purpose",
       "concept": "• Data Minimization Principle: Chỉ thu thập dữ liệu vừa đủ phục vụ mục đích công bố.",
-      "whyCorrect": "• Giới hạn thu thập đúng mục đích sử dụng cụ thể.",
+      "whyCorrect": "• Nguyên tắc giảm thiểu dữ liệu (Data Minimization) theo GDPR và các luật bảo vệ dữ liệu yêu cầu chỉ thu thập dữ liệu cần thiết để hoàn thành mục đích cụ thể đã xác định rõ ràng (specific purpose), không thu thập dư thừa.",
       "whyWrong": {
-        "A": "• Differential privacy là kỹ thuật nhiễu toán học.",
-        "B": "• Chuỗi chỉ huy thuộc cấu trúc quản lý.",
-        "C": "• k-anonymity là phương pháp ẩn danh."
+        "A": "• Differential privacy là kỹ thuật thêm nhiễu toán học vào dữ liệu, không phải tiêu chuẩn quyết định lượng dữ liệu cần thu thập.",
+        "B": "• \"Tùy chọn cho chuỗi chỉ huy\" không phải là nguyên tắc thu thập dữ liệu - chuỗi chỉ huy thuộc về cấu trúc tổ chức.",
+        "C": "• k-anonymity là kỹ thuật ẩn danh hóa dữ liệu sau thu thập, không phải tiêu chuẩn quyết định phạm vi thu thập."
       }
     }
   },
@@ -2132,11 +2132,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. To conduct the simulated attacks.",
       "concept": "• Red Team vs Blue Team: Red Team đóng vai kẻ tấn công (offensive simulated attacks), Blue Team đóng vai phòng thủ (defensive).",
-      "whyCorrect": "• Red Team thực hiện các đợt tấn công mô phỏng.",
+      "whyCorrect": "• Trong mô hình PenTest, Red Team đóng vai kẻ tấn công - chủ động dò tìm lỗ hổng, khai thác điểm yếu và mô phỏng các cuộc tấn công thực tế nhằm kiểm tra sức chống chịu của hệ thống.",
       "whyWrong": {
-        "B": "• Phòng thủ là nhiệm vụ của Blue Team.",
-        "C": "• Trọng tài là nhiệm vụ của White Team.",
-        "D": "• Vô hiệu hóa thuộc về ứng phó sự cố (Blue Team)."
+        "B": "• Phòng thủ chống lại các cuộc tấn công mô phỏng là nhiệm vụ của Blue Team (đội phòng thủ).",
+        "C": "• Giám sát và điều phối cuộc kiểm thử xâm nhập là vai trò của White Team (đội trọng tài).",
+        "D": "• Vô hiệu hóa tấn công là phản ứng sự cố (Incident Response), không phải vai trò chính thức trong PenTest."
       }
     }
   },
@@ -2198,11 +2198,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. There is a strong positive correlation between both variables.",
       "concept": "• Scatter Plot Correlation: Doanh thu tăng kéo theo tổng thu nhập tăng đồng nhất thể hiện tương quan dương mạnh.",
-      "whyCorrect": "• Tương quan dương mạnh giữa 2 biến kinh doanh.",
+      "whyCorrect": "• Trên biểu đồ phân tán, khi Doanh thu (Revenue) tăng thì Tổng thu nhập (GrossIncome) cũng tăng theo xu hướng rõ ràng và tập trung dọc theo đường thẳng đi lên, thể hiện tương quan dương mạnh (strong positive correlation).",
       "whyWrong": {
-        "A": "• Âm yếu là khi biến này tăng biến kia giảm nhẹ.",
-        "B": "• Dương yếu có độ phân tán lớn.",
-        "C": "• Âm mạnh thể hiện đường dốc xuống rõ ràng."
+        "A": "• Tương quan âm yếu nghĩa là một biến tăng thì biến kia giảm nhẹ với các điểm phân tán - không đúng với mối quan hệ Revenue-GrossIncome.",
+        "B": "• Tương quan dương yếu nghĩa là xu hướng tăng cùng nhau nhưng các điểm dữ liệu rất phân tán - mối quan hệ này mạnh hơn nhiều.",
+        "C": "• Tương quan âm mạnh nghĩa là một biến tăng rõ ràng kéo biến kia giảm mạnh - hoàn toàn ngược với mối quan hệ doanh thu và thu nhập."
       }
     }
   },
@@ -2295,11 +2295,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. sensitive column",
       "concept": "• Sensitive Attribute vs Quasi-identifier: Quasi-identifier (tuổi, giới tính, mã bưu điện) có thể kết hợp để định danh; Sensitive column chứa thông tin nhạy cảm (bệnh lý, thu nhập) cần bảo mật.",
-      "whyCorrect": "• Định nghĩa chuẩn của sensitive column trong bài toán bảo mật dữ liệu cá nhân.",
+      "whyCorrect": "• Sensitive column (cột nhạy cảm) chứa thông tin không thể trực tiếp nhận dạng cá nhân (không phải tên, CMND) nhưng vẫn cần bảo vệ vì liên quan đến sức khỏe, tài chính, chủng tộc hoặc tôn giáo của cá nhân.",
       "whyWrong": {
-        "A": "• Thuật ngữ ngụy tạo.",
-        "B": "• Quasi-identifier giúp kết hợp tái định danh.",
-        "C": "• Ngược nghĩa."
+        "B": "• Quasi-identifier (bán định danh) là các thuộc tính khi kết hợp lại có thể nhận dạng cá nhân (ví dụ: mã bưu chính + ngày sinh + giới tính).",
+        "C": "• Non-sensitive column chứa dữ liệu không cần bảo vệ đặc biệt vì không ảnh hưởng đến quyền riêng tư cá nhân."
       }
     }
   },
@@ -2328,11 +2327,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. A ruling or scoring made outside of a court.",
       "concept": "• Extrajudicial Assessment: Các quyết định, đánh giá hoặc chấm điểm (như chấm điểm tín nhiệm xã hội AI) diễn ra ngoài hệ thống tòa án chính thức.",
-      "whyCorrect": "• Extrajudicial = Ngoài phạm vi cơ quan tư pháp/tòa án.",
+      "whyCorrect": "• Phán quyết ngoài tư pháp (extrajudicial judgment) là quyết định hoặc chấm điểm được đưa ra bên ngoài hệ thống tòa án chính thức, ví dụ như thuật toán AI chấm điểm tín dụng hoặc đánh giá rủi ro tái phạm mà không có sự giám sát của thẩm phán.",
       "whyWrong": {
-        "B": "• Thuộc về dẫn độ (extradition).",
-        "C": "• Thuộc về xung đột pháp luật.",
-        "D": "• Thuộc về diễn giải pháp lý."
+        "B": "• Chuyển bị cáo giữa các tài phán là \"dẫn độ\" (extradition), một thủ tục tư pháp hoàn toàn khác.",
+        "C": "• Áp dụng luật từ tài phán này sang tài phán khác là \"xung đột pháp luật\" (conflict of laws), thuộc tư pháp quốc tế.",
+        "D": "• Diễn giải luật bất thường là \"judicial activism\" hoặc lỗi pháp lý, không phải extrajudicial judgment."
       }
     }
   },
@@ -2361,11 +2360,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. Responsible, Accountable, Consulted, Informed",
       "concept": "• RACI Matrix: Ma trận phân công trách nhiệm dự án: Responsible (Người thực hiện), Accountable (Người chịu trách nhiệm chính), Consulted (Người tham vấn), Informed (Người nhận thông tin).",
-      "whyCorrect": "• Định nghĩa chuẩn của ma trận RACI.",
+      "whyCorrect": "• RACI là viết tắt của Responsible (Người chịu trách nhiệm thực hiện), Accountable (Người chịu trách nhiệm giải trình), Consulted (Người được tham vấn), Informed (Người được thông báo) - ma trận phân công vai trò chuẩn trong quản lý dự án.",
       "whyWrong": {
-        "A": "• Từ ngữ ngụy tạo.",
-        "B": "• Sai từ ngữ cốt lõi.",
-        "C": "• Sai từ ngữ cốt lõi."
+        "A": "• \"Relatable, Agreeable, Commendable, Irascible\" là các tính từ ngẫu nhiên không liên quan đến quản lý dự án hay phân công trách nhiệm.",
+        "B": "• \"Responsible, Accessible, Consulted, Improvised\" sai ở hai từ - Accessible (Có thể tiếp cận) và Improvised (Ứng biến) không phải thuật ngữ RACI chuẩn.",
+        "C": "• \"Redesignable, Accessible, Collected, Informative\" là các từ hoàn toàn không liên quan đến khung phân công trách nhiệm RACI."
       }
     }
   },
@@ -2426,11 +2425,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Ensuring that data hasn't been modified without authorization.",
       "concept": "• CIA Triad - Integrity: Integrity đảm bảo dữ liệu chính xác và không bị chỉnh sửa trái phép.",
-      "whyCorrect": "• Định nghĩa chuẩn của Integrity trong CIA Triad.",
+      "whyCorrect": "• Trong tam giác CIA (Confidentiality-Integrity-Availability), Integrity đảm bảo rằng dữ liệu không bị sửa đổi, xóa hoặc thêm vào trái phép - mọi thay đổi phải được ủy quyền và ghi nhận theo dấu kiểm toán.",
       "whyWrong": {
-        "A": "• Bảo mật riêng tư là Confidentiality.",
-        "C": "• Khả năng truy cập là Availability.",
-        "D": "• Dữ liệu vẫn được phép thay đổi hợp lệ khi có ủy quyền."
+        "A": "• Giữ dữ liệu bí mật thuộc về Confidentiality (Tính bảo mật) - ngăn chặn truy cập trái phép vào thông tin.",
+        "C": "• Đảm bảo dữ liệu có thể truy cập khi cần thuộc về Availability (Tính sẵn có) - duy trì hoạt động liên tục của hệ thống.",
+        "D": "• \"Đảm bảo dữ liệu không bị thay đổi\" (không có từ \"without authorization\") quá tuyệt đối - dữ liệu hợp pháp cần được cập nhật, Integrity chỉ ngăn thay đổi TRÁI PHÉP."
       }
     }
   },
@@ -2459,11 +2458,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Accountability",
       "concept": "• Accountability Risk Category: Gắn trách nhiệm cụ thể cho hành vi của hệ thống.",
-      "whyCorrect": "• Accountability quy định trách nhiệm của stakeholders.",
+      "whyCorrect": "• Accountability (Trách nhiệm giải trình) là phạm trù rủi ro xác định rõ ai chịu trách nhiệm khi hệ thống dựa trên dữ liệu gây ra hậu quả tiêu cực - đảm bảo có người/tổ chức phải đứng ra giải trình và khắc phục.",
       "whyWrong": {
-        "A": "• Explainability diễn giải logic.",
-        "C": "• Transparency công khai thông tin.",
-        "D": "• Understandability mức độ dễ hiểu."
+        "A": "• Explainability (Khả năng giải thích) tập trung vào việc làm rõ CÁCH hệ thống đưa ra quyết định, không phải AI chịu trách nhiệm.",
+        "C": "• Transparency (Tính minh bạch) yêu cầu công khai thông tin về hoạt động của hệ thống, nhưng không trực tiếp xác định trách nhiệm pháp lý.",
+        "D": "• Understandability (Khả năng hiểu được) liên quan đến mức độ người dùng có thể nắm bắt cách hệ thống hoạt động, không phải phân công trách nhiệm."
       }
     }
   },
@@ -2558,10 +2557,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Disenfranchisement · D. Erosion of rights",
       "concept": "• Social Impact Risks: Bỏ qua tác động xã hội gây hại trực tiếp tới cộng đồng thông qua việc tước quyền (Disenfranchisement) và làm xói mòn quyền cơ bản (Erosion of rights).",
-      "whyCorrect": "• C và D là hai tác động xã hội trực tiếp lên cộng đồng.",
+      "whyCorrect": "• Khi tổ chức không truyền thông về tác động xã hội của rủi ro đạo đức, hậu quả nghiêm trọng nhất là sự tước quyền (disenfranchisement) - các nhóm yếu thế bị loại ra khỏi quá trình ra quyết định, và xói mòn các quyền cơ bản (erosion of rights) - quyền riêng tư, bình đẳng bị suy giảm dần.",
       "whyWrong": {
-        "A": "• Doanh thu giảm là rủi ro tài chính của doanh nghiệp.",
-        "B": "• Độ trung thành giảm là rủi ro thương hiệu."
+        "A": "• Giảm doanh thu là hậu quả tài chính của doanh nghiệp, không phải tác động xã hội trực tiếp lên cộng đồng.",
+        "B": "• Giảm trung thành thương hiệu là hệ lụy thương mại/marketing, không phải thách thức xã hội mang tính hệ thống."
       }
     }
   },
@@ -2623,11 +2622,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Trust, once lost, is difficult to regain.",
       "concept": "• Public Trust Asymmetry: Niềm tin tích lũy rất lâu nhưng có thể sụp đổ chỉ sau một sự cố và vô cùng khó khăn để khôi phục.",
-      "whyCorrect": "• Bản chất của niềm tin công chúng là \"dễ mất khó tìm\".",
+      "whyCorrect": "• Niềm tin công chúng (public trust) một khi đã mất đi thì cực kỳ khó khôi phục lại, đòi hỏi thời gian dài và nỗ lực rất lớn. Vì vậy, duy trì niềm tin là ưu tiên hàng đầu trong quản trị đạo đức công nghệ.",
       "whyWrong": {
-        "B": "• Tránh cạm bẫy pháp lý cần sự tuân thủ (compliance).",
-        "C": "• Mang tính tiêu cực sai lệch.",
-        "D": "• Niềm tin là giá trị cốt lõi lâu dài, không phải mốt nhất thời."
+        "B": "• Niềm tin giúp tránh rắc rối pháp lý nhưng đây chỉ là lợi ích phụ - lý do chính là vì niềm tin rất khó phục hồi khi mất.",
+        "C": "• Niềm tin không phải vũ khí để \"dùng chống lại\" tổ chức - đây là phát biểu thiếu logic và không đúng ngữ cảnh.",
+        "D": "• \"Niềm tin là xu hướng mới\" hạ thấp tầm quan trọng cốt lõi của trust - đây không phải xu hướng tạm thời mà là nền tảng vĩnh viễn."
       }
     }
   },
@@ -2655,13 +2654,12 @@ window.QUIZ_DATA['ite'] = [
         "D": "Từ viết tắt của Nghiên cứu trí tuệ trách nhiệm tài chính."
       },
       "answerDisplay": "A. An acronym for findable, accessible, interoperable, and reusable.",
-      "concept": "• FAIR Data Principles: 4 nguyên tắc quản trị dữ liệu mở: Findable (Tìm được), Accessible (Truy cập được), Interoperable (Tương tác được), Reusable (Tái sử dụng được).",
-      "whyCorrect": "• Định nghĩa chính xác thuật ngữ FAIR trong quản trị dữ liệu khoa học/mở.",
+      "concept": "• FAIR Data Principles: 4 nguyên tắc quản trị dữ liệu mở để tối ưu hóa việc tìm kiếm, truy cập và tái sử dụng dữ liệu trực tuyến.",
+      "whyCorrect": "• FAIR là viết tắt của Findable (Có thể tìm thấy), Accessible (Có thể truy cập), Interoperable (Có thể tương tác và kết hợp giữa các hệ thống) và Reusable (Có thể tái sử dụng lâu dài bởi cộng đồng).",
       "whyWrong": {
-        "A": "",
-        "B": "• Sai tên gọi chuyên ngành.",
-        "C": "• Thuộc về kinh tế thị trường.",
-        "D": "• Sai tên gọi chuyên ngành."
+        "B": "• Đây là định nghĩa ngụy tạo - nghiên cứu AI cơ bản không liên quan đến nguyên tắc FAIR trong quản trị dữ liệu mở.",
+        "C": "• FAIR không đề cập đến khái niệm cạnh tranh công bằng (fair competition) trong kinh tế.",
+        "D": "• Định nghĩa này hoàn toàn sai lệch - không liên quan đến nghiên cứu tài chính hay trách nhiệm giải trình tài chính."
       }
     }
   },
@@ -2681,20 +2679,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "C",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Phát biểu nào sau đây là một định nghĩa đầy đủ về bên liên quan (stakeholder)?",
+      "questionVi": "Định nghĩa nào sau đây là đầy đủ và chính xác nhất về bên liên quan (stakeholder)?",
       "optionsVi": {
-        "A": "Tất cả nhân viên nội bộ.",
+        "A": "Tất cả các nhân viên nội bộ của tổ chức.",
         "B": "Tất cả nhân viên nội bộ và khách hàng bên ngoài.",
-        "C": "Tất cả những người có tác động hoặc chịu tác động bởi tổ chức (All people who have an impact or are impacted by the organization).",
+        "C": "Tất cả những người có ảnh hưởng đến tổ chức hoặc chịu ảnh hưởng bởi tổ chức (All people who have an impact or are impacted).",
         "D": "Tất cả mọi người trong công ty."
       },
       "answerDisplay": "C. All people who have an impact or are impacted by the organization.",
-      "concept": "• Stakeholder Definition: Tất cả cá nhân, nhóm người hoặc tổ chức có ảnh hưởng đến hoặc chịu ảnh hưởng bởi các quyết định và hoạt động của doanh nghiệp.",
-      "whyCorrect": "• Định nghĩa bao quát nhất về stakeholder (bên liên quan).",
+      "concept": "• Stakeholder Definition: Khái niệm bên liên quan bao gồm bất kỳ cá nhân, nhóm hay tổ chức nào có thể ảnh hưởng hoặc chịu tác động từ hoạt động kinh doanh của doanh nghiệp.",
+      "whyCorrect": "• Stakeholder (bên liên quan) được định nghĩa rộng rãi nhất bao gồm tất cả những ai có khả năng tác động đến sự phát triển của tổ chức, hoặc chịu ảnh hưởng trực tiếp/gián tiếp từ các quyết định và hoạt động của tổ chức.",
       "whyWrong": {
-        "A": "• Thiếu các bên bên ngoài.",
-        "B": "• Thiếu đối tác, chính quyền, cộng đồng.",
-        "D": "• Chỉ bao gồm nội bộ công ty."
+        "A": "• Chỉ bao gồm nhân viên nội bộ là quá hẹp, bỏ qua các đối tượng quan trọng bên ngoài như khách hàng, nhà cung cấp, cổ đông và cộng đồng.",
+        "B": "• Định nghĩa này vẫn thiếu nhiều bên liên quan thiết yếu khác như cơ quan quản lý, nhà đầu tư và cộng đồng địa phương nơi tổ chức hoạt động.",
+        "D": "• \"Mọi người trong công ty\" trùng với khái niệm nhân viên nội bộ, hoàn toàn bỏ qua các bên liên quan bên ngoài (external stakeholders)."
       }
     }
   },
@@ -2788,10 +2786,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Disseminate information in multiple formats · C. Communicate information in real time",
       "concept": "• Ethics Risk Communication: Đa dạng hóa hình thức (multiple formats) và cập nhật thời gian thực (real-time) giúp thông tin đến nhanh và dễ hấp thụ.",
-      "whyCorrect": "• B và C nâng cao hiệu quả truyền thông rủi ro.",
+      "whyCorrect": "• Thuyết đạo đức bổn phận (Deontological ethics) của Kant cho rằng tính đúng sai của hành động được xác định bởi bản chất hành động và nghĩa vụ đạo đức, không phải bởi kết quả mà hành động đó mang lại. Đây gọi là đạo đức dựa trên quy tắc (rule-based ethics).",
       "whyWrong": {
-        "A": "• Một định dạng dễ gây nhàm chán hoặc bỏ sót.",
-        "D": "• Cung cấp thông tin thụ động (khi hỏi mới trả lời) là sai lầm."
+        "A": "• Đạo đức dựa trên kết quả (Consequentialism/Utilitarianism) đánh giá hành động dựa trên hậu quả - hành động đúng là hành động mang lại kết quả tốt nhất cho số đông.",
+        "C": "• Đạo đức đức hạnh (Virtue ethics) đánh giá dựa trên phẩm chất và tính cách của người thực hiện, không phải quy tắc hay kết quả.",
+        "D": "• Thuyết hợp đồng xã hội (Social Contract theory) dựa trên sự thỏa thuận ngầm giữa cá nhân và xã hội về quyền và nghĩa vụ."
       }
     }
   },
@@ -2910,20 +2909,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Đo lường độ chính xác (accuracy) của một mô hình dự đoán bằng cách:",
+      "questionVi": "Để đo lường độ chính xác (accuracy) của một mô hình dự đoán, bạn thực hiện phép tính nào?",
       "optionsVi": {
-        "A": "Chia số lần dự đoán cho tổng dữ liệu",
-        "B": "Đo tỷ lệ đường cong lỗi",
-        "C": "Nhân tổng số dự đoán với phần trăm đúng",
-        "D": "Chia số lần dự đoán đúng cho tổng số lần dự đoán (divide the number of correct predictions by the total number of predictions)"
+        "A": "Chia số lượng dự đoán cho tổng kích thước tập dữ liệu",
+        "B": "Đo lường tỷ lệ đường cong lỗi của mô hình",
+        "C": "Nhân tổng số lượng dự đoán với tỷ lệ phần trăm dự đoán đúng",
+        "D": "Chia số lượng dự đoán đúng cho tổng số lượng dự đoán (divide correct predictions by total predictions)"
       },
       "answerDisplay": "D. divide the number of correct predictions by the total number of predictions",
-      "concept": "• Accuracy Formula: Accuracy = (Số lượng dự đoán đúng) / (Tổng số lượng dự đoán).",
-      "whyCorrect": "• Công thức chuẩn tính Accuracy.",
+      "concept": "• Accuracy Metric in Machine Learning: Chỉ số đo lường tỷ lệ phần trăm các dự đoán chính xác của mô hình trên tổng số mẫu dự báo.",
+      "whyCorrect": "• Accuracy (Độ chính xác) được tính bằng tỷ số giữa số lượng dự đoán chính xác (bao gồm cả True Positive và True Negative) trên tổng số mẫu dự đoán mà mô hình đã thực hiện.",
       "whyWrong": {
-        "A": "• Sai công thức.",
-        "B": "• Sai công thức.",
-        "C": "• Toán học lặp."
+        "A": "• Chia tổng số dự đoán cho kích thước tập dữ liệu không cho biết tỷ lệ dự đoán đúng hay sai của mô hình.",
+        "B": "• Đường cong lỗi (error curve) dùng để đánh giá quá trình hội tụ trong huấn luyện, không phải công thức tính chỉ số accuracy trực tiếp.",
+        "C": "• Phép tính này cho ra số lượng tuyệt đối các mẫu dự đoán đúng, chứ không phải tỷ lệ phần trăm accuracy."
       }
     }
   },
@@ -2943,18 +2942,18 @@ window.QUIZ_DATA['ite'] = [
     "answer": "B, C, D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Phát biểu nào sau đây được thúc đẩy bởi mệnh lệnh tuyệt đối (Categorical Imperative) của Kant? (Chọn ba)",
+      "questionVi": "Những phát biểu nào sau đây được thúc đẩy bởi mệnh lệnh tuyệt đối (categorical imperative) của Kant? (Chọn ba)",
       "optionsVi": {
-        "A": "Bạn có nghĩa vụ chọn hành động dựa trên kết quả.",
-        "B": "Hãy hành động sao cho hành động của bạn trở thành quy luật phổ quát.",
-        "C": "Đừng coi con người là phương tiện; hãy coi họ là mục đích.",
-        "D": "Mỗi người phải dùng lý trí để ban hành quy luật đạo đức."
+        "A": "Bạn có nghĩa vụ đạo đức phải chọn hành động dựa trên kết quả tiềm năng của chúng.",
+        "B": "Hãy hành động sao cho nguyên tắc hành động của bạn có thể trở thành luật phổ quát (universal law).",
+        "C": "Không đối xử với con người như phương tiện để đạt mục đích, hãy luôn coi họ là mục đích tự thân (treat always as an end).",
+        "D": "Mỗi người phải sử dụng lý trí để thiết lập các quy luật đạo đức."
       },
       "answerDisplay": "B. Act in such a way that your actions may become a universal law. · C. Don't treat people as a means to an end, treat them always as an end. · D. Each person must use reason to will moral laws.",
-      "concept": "• Kantian Ethics: B, C, D là 3 nguyên tắc mệnh lệnh tuyệt đối.",
-      "whyCorrect": "• B, C, D đúng theo Immanuel Kant.",
+      "concept": "• Kantian Categorical Imperative: Học thuyết đạo đức của Kant dựa trên lý trí, tính phổ quát và việc tôn trọng phẩm giá con người như mục đích tự thân.",
+      "whyCorrect": "• Ba phát biểu B, C, D đại diện cho các nguyên lý cốt lõi của thuyết Mệnh lệnh tuyệt đối của Kant: tính phổ quát của hành vi, tôn trọng giá trị nội tại của con người và vai trò của lý trí trong việc lập quy luật đạo đức.",
       "whyWrong": {
-        "A": "• A thuộc thuyết Vị lợi (Utilitarianism)."
+        "A": "• Nghĩa vụ chọn hành động dựa trên kết quả (outcomes) thuộc về thuyết vị lợi (Utilitarianism/Consequentialism), trái ngược hoàn toàn với triết lý phi kết quả của Kant."
       }
     }
   },
@@ -2974,20 +2973,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "B",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Các mô hình dự đoán được sử dụng như thế nào trong các quỹ đầu cơ (hedge funds)?",
+      "questionVi": "Các mô hình dự đoán được sử dụng như thế nào trong các quỹ phòng hộ (hedge funds)?",
       "optionsVi": {
-        "A": "Dự đoán khả năng trả nợ",
-        "B": "Dự đoán sự di chuyển tương lai của cổ phiếu và tìm điểm khai thác thị trường (predict future movement of stocks and find points to exploit)",
-        "C": "Dự báo sụp đổ tài chính",
-        "D": "Ước tính lợi nhuận cho cổ đông"
+        "A": "Dự đoán khả năng trả nợ của cá nhân để duyệt khoản vay",
+        "B": "Dự đoán xu hướng dịch chuyển tương lai của cổ phiếu và tìm thời điểm khai thác thị trường theo cả hai hướng tăng/giảm (exploit market moving in either direction)",
+        "C": "Hỗ trợ các nhà nghiên cứu bằng cách dự báo sự sụp đổ tài chính toàn cầu",
+        "D": "Cung cấp dự đoán cho cổ đông để ước tính lợi nhuận thu về"
       },
       "answerDisplay": "B. they predict future movement of stocks and find points to exploit the market moving in either direction",
-      "concept": "• Financial Predictive Models: Mô hình phân tích xu hướng biến động giá chứng khoán để thực hiện các chiến lược giao dịch tự động.",
-      "whyCorrect": "• B phản ánh đúng thực tế ứng dụng trong Hedge funds.",
+      "concept": "• Predictive Models in Quantitative Finance: Ứng dụng các thuật toán máy học để phân tích dữ liệu thị trường và thực hiện giao dịch tự động kiếm lời.",
+      "whyCorrect": "• Các quỹ phòng hộ sử dụng mô hình dự báo định lượng để nhận diện xu hướng biến động giá của tài sản tài chính (cổ phiếu, ngoại hối) từ đó thực hiện các chiến lược giao dịch mua/bán khống nhằm sinh lời trong mọi điều kiện thị trường.",
       "whyWrong": {
-        "A": "• Thuộc về tín dụng ngân hàng.",
-        "C": "• Phân tích rủi ro hệ thống vĩ mô.",
-        "D": "• Báo cáo tài chính doanh nghiệp."
+        "A": "• Dự đoán khả năng trả nợ và phê duyệt khoản vay là ứng dụng của mô hình chấm điểm tín dụng trong ngân hàng thương mại, không phải quỹ phòng hộ.",
+        "C": "• Dự báo sụp đổ tài chính toàn cầu là nhiệm vụ nghiên cứu kinh tế vĩ mô của các tổ chức tài chính lớn hoặc chính phủ, không phải hoạt động thương mại hàng ngày của quỹ phòng hộ.",
+        "D": "• Cung cấp dự báo lợi nhuận cho cổ đông chỉ là báo cáo quan hệ đầu tư thông thường, không phải cách thức mô hình trực tiếp vận hành kiếm tiền cho quỹ."
       }
     }
   },
@@ -3016,11 +3015,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. facing unknown empirical data with an incomplete dataset",
       "concept": "• Unknown Unknowns: Rủi ro không thể lường trước do thiếu dữ liệu.",
-      "whyCorrect": "• C mô tả đúng khái niệm.",
+      "whyCorrect": "• Unknown Unknowns (những ẩn số chưa biết) xảy ra khi mô hình gặp phải dữ liệu thực nghiệm hoàn toàn mới mà nó chưa từng được huấn luyện, với tập dữ liệu không đầy đủ để dự đoán các tình huống này - đây là rủi ro nguy hiểm nhất vì tổ chức thậm chí không biết rằng mình không biết.",
       "whyWrong": {
-        "A": "• Rủi ro nhân sự.",
-        "B": "• Black-box AI.",
-        "D": "• Known Unknown."
+        "A": "• Không chắc chắn về đạo đức của nhóm nghiên cứu là rủi ro nhân sự (human risk), thuộc về Known Unknowns vì ta ít nhất nhận thức được rủi ro này tồn tại.",
+        "B": "• Thiếu khả năng giải thích thuộc về vấn đề Black-box AI/Explainability - ta biết vấn đề tồn tại nhưng chưa giải quyết được, là Known Unknown.",
+        "D": "• Không chắc chắn về phương pháp thu thập dữ liệu cũng là Known Unknown - ta nhận thức được sự không chắc chắn và có thể điều tra."
       }
     }
   },
@@ -3049,11 +3048,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Domain expertise",
       "concept": "• Domain Expertise in ML: Chuyên gia chuyên ngành (Domain experts) đảm bảo các tính năng và logic của mô hình đúng thực tế nghiệp vụ.",
-      "whyCorrect": "• Chuyên môn lĩnh vực giúp định hướng bài toán đúng đắn.",
+      "whyCorrect": "• Domain expertise (Kiến thức chuyên ngành) đảm bảo rằng sau khi dữ liệu được làm sạch, mô hình đang tiếp cận và phân tích bài toán đúng cách theo góc nhìn chuyên gia lĩnh vực - ví dụ bác sĩ kiểm tra mô hình chẩn đoán y khoa, kỹ sư kiểm tra mô hình dự báo kỹ thuật.",
       "whyWrong": {
-        "A": "• Tóm tắt là bước kỹ thuật xử lý chữ.",
-        "C": "• Xác minh dữ liệu chỉ kiểm tra định dạng.",
-        "D": "• First principles là nguyên lý cơ bản chung."
+        "A": "• Objective summarization (Tóm tắt khách quan) giúp trình bày kết quả phân tích không thiên vị nhưng không đảm bảo mô hình nhìn đúng vấn đề.",
+        "C": "• Dataset verification (Xác minh tập dữ liệu) kiểm tra chất lượng dữ liệu thô, thực hiện TRƯỚC khi đặt câu hỏi về cách nhìn nhận bài toán.",
+        "D": "• First principles (Nguyên lý cơ bản) giúp xây dựng nền tảng logic nhưng không thay thế được kiến thức chuyên sâu của lĩnh vực cụ thể."
       }
     }
   },
@@ -3082,11 +3081,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. To enable parties to share private data without revealing individuals represented in the data.",
       "concept": "• Differential Privacy Goal: Thêm nhiễu toán học để phân tích xu hướng chung mà không thể suy ra dữ liệu cá nhân cụ thể.",
-      "whyCorrect": "• Định nghĩa chuẩn của Differential Privacy.",
+      "whyCorrect": "• Differential privacy cho phép các tổ chức chia sẻ và phân tích dữ liệu tổng hợp trong khi đảm bảo rằng không thể suy ra thông tin của bất kỳ cá nhân cụ thể nào trong tập dữ liệu, bằng cách thêm nhiễu toán học có kiểm soát vào kết quả truy vấn.",
       "whyWrong": {
-        "B": "• Thuộc về De-identification.",
-        "C": "• Thuộc về Access Control.",
-        "D": "• Thuộc về Encryption."
+        "B": "• Loại bỏ trực tiếp các trường nhận dạng (direct identifiers) là kỹ thuật De-identification/Anonymization, không phải Differential Privacy.",
+        "C": "• Giới hạn quyền truy cập theo phân quyền là Access Control/Authorization, thuộc về bảo mật hệ thống chứ không phải Differential Privacy.",
+        "D": "• Đảm bảo dữ liệu hoàn toàn bí mật là mục tiêu của Encryption/Confidentiality, Differential Privacy cho phép chia sẻ dữ liệu có kiểm soát."
       }
     }
   },
@@ -3115,11 +3114,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Pipeline",
       "concept": "• Data Pipeline: Quy trình tự động hóa các bước thu thập, làm sạch, phân tích dữ liệu theo chu kỳ lặp lại.",
-      "whyCorrect": "• Data Pipeline là luồng xử lý dữ liệu định kỳ tự động.",
+      "whyCorrect": "• Pipeline (Đường ống dữ liệu) là một chuỗi quy trình tự động hóa được thiết kế để lặp lại cùng một phân tích mỗi khi dữ liệu mới về, đảm bảo tính nhất quán và hiệu quả trong xử lý dữ liệu định kỳ.",
       "whyWrong": {
-        "B": "• Workflow bao quát cả quy trình nghiệp vụ con người.",
-        "C": "• Thuật ngữ ngụy tạo.",
-        "D": "• Use case là trường hợp sử dụng."
+        "B": "• Workflow (Quy trình làm việc) mô tả trình tự công việc tổng quát của con người, không nhất thiết phải tự động hóa và lặp lại với dữ liệu mới.",
+        "C": "• Swimlane là cách trình bày sơ đồ quy trình chia theo vai trò/phòng ban, không phải thuật ngữ mô tả quy trình xử lý dữ liệu lặp lại.",
+        "D": "• Use case (Tình huống sử dụng) mô tả một kịch bản cụ thể mà người dùng tương tác với hệ thống, không phải quy trình tự động hóa phân tích dữ liệu."
       }
     }
   },
@@ -3148,10 +3147,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Accountability and management of bias. · D. Transparency and explainability, balanced with privacy.",
       "concept": "• Core Ethics Elements in AI: Accountability, Bias Management, Transparency, Explainability & Privacy.",
-      "whyCorrect": "• A và D đại diện cho các nguyên tắc đạo đức cốt lõi.",
+      "whyCorrect": "• Hai yếu tố đạo đức cốt lõi cần bảo vệ trong hệ thống AI: (1) Accountability và quản lý bias - đảm bảo có người chịu trách nhiệm và kiểm soát định kiến; (2) Transparency/Explainability cân bằng với Privacy - vừa minh bạch vừa bảo vệ dữ liệu cá nhân.",
       "whyWrong": {
-        "B": "• Thông số kiến trúc mô hình.",
-        "C": "• Yêu cầu kỹ thuật hiệu năng."
+        "B": "• Số lượng lớp, tensor hay tham số là chi tiết kiến trúc kỹ thuật thuần túy của mô hình, không phải yếu tố đạo đức cần bảo vệ.",
+        "C": "• Performance và optimization (hiệu năng và tối ưu hóa) là mục tiêu kỹ thuật, không phải nguyên tắc đạo đức - một hệ thống hiệu năng cao vẫn có thể bất công hoặc thiếu minh bạch."
       }
     }
   },
@@ -3180,11 +3179,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. It is difficult to understand how or why an AI system made a particular decision.",
       "concept": "• Black Box Problem: Sự thiếu khả năng giải thích (lack of explainability) về cơ chế suy luận bên trong của mô hình phức tạp (như Deep Neural Networks).",
-      "whyCorrect": "• Khó hiểu nguyên nhân/cơ chế AI đưa ra quyết định.",
+      "whyCorrect": "• Vấn đề hộp đen (Black box problem) trong AI xảy ra khi con người không thể hiểu được QUÁ TRÌNH bên trong - tại sao và bằng cách nào hệ thống AI lại đưa ra một quyết định cụ thể, dù có thể thấy đầu vào và đầu ra.",
       "whyWrong": {
-        "A": "• Dữ liệu có thể quan sát được.",
-        "C": "• Kết quả nhận được rõ ràng nhưng không hiểu tại sao ra kết quả đó.",
-        "D": "• Báo cáo là tài liệu xuất ra."
+        "A": "• Khó hiểu bản chất dữ liệu huấn luyện thuộc về vấn đề Data Quality/Data Governance, không phải Black Box Problem.",
+        "C": "• Khó hiểu kết quả đầu ra thuộc về vấn đề Interpretability (diễn giải) - kết quả thường có thể đọc được, vấn đề là không hiểu tại sao ra kết quả đó.",
+        "D": "• Khó hiểu báo cáo là vấn đề trình bày/giao tiếp, không phải bản chất của Black Box Problem."
       }
     }
   },
@@ -3213,11 +3212,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. If drug arrests are historically high in that area, the model may correlate crime with areas of high drug use based on the datasets",
       "concept": "• Historical Bias & Feedback Loops: Thuật toán dự đoán tội phạm dựa trên dữ liệu bắt giữ trong quá khứ, củng cố định kiến cảnh sát thường xuyên tuần tra khu vực đó.",
-      "whyCorrect": "• Định kiến dữ liệu lịch sử (drug arrests) làm lệch dự đoán.",
+      "whyCorrect": "• Nếu dữ liệu lịch sử cho thấy số vụ bắt giữ ma túy cao ở một khu vực, mô hình sẽ liên kết khu vực đó với tỷ lệ tội phạm cao - nhưng điều này có thể phản ánh mật độ cảnh sát tuần tra cao hơn chứ không phải tỷ lệ tội phạm thực sự cao hơn, tạo ra vòng lặp phản hồi thiên vị.",
       "whyWrong": {
-        "B": "• Lý do ngụy tạo.",
-        "C": "• Đủ dữ liệu nhưng dữ liệu bị thiên vị.",
-        "D": "• Định dạng dữ liệu không phải nguyên nhân chính của bias."
+        "B": "• Dự đoán đường cong parabolic là phỏng đoán toán học không có cơ sở - mô hình dự đoán dựa trên dữ liệu lịch sử chứ không tự suy diễn xu hướng toán học trừu tượng.",
+        "C": "• Thiếu dữ liệu huấn luyện gây underfitting (thiếu khớp) chứ không phải nguyên nhân dự đoán tội phạm cao sai lệch.",
+        "D": "• Lỗi định dạng dữ liệu gây ra exception/crash kỹ thuật, không phải thiên vị có hệ thống trong dự đoán tội phạm."
       }
     }
   },
@@ -3246,11 +3245,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. From its inception, through maintenance, to applying foresight regarding its decommissioning.",
       "concept": "• Ethics by Design & Lifecycle: Đạo đức phải được tích hợp vào toàn bộ vòng đời sản phẩm từ khâu ý tưởng (inception) đến ngưng vận hành (decommissioning).",
-      "whyCorrect": "• Tích hợp đạo đức trong toàn bộ vòng đời sản phẩm.",
+      "whyCorrect": "• Đạo đức cần được tích hợp từ giai đoạn hình thành ý tưởng (inception), xuyên suốt quá trình bảo trì (maintenance), cho đến khi ngừng sử dụng công nghệ (decommissioning) - đây là cách tiếp cận \"ethics by design\" toàn diện nhất, ngăn ngừa rủi ro ngay từ đầu.",
       "whyWrong": {
-        "A": "• Phản ứng thụ động sau sự cố.",
-        "B": "• Đã quá muộn để thay đổi kiến trúc.",
-        "C": "• Bỏ sót giai đoạn thiết kế ban đầu."
+        "A": "• Chờ đến khi có phản hồi tiêu cực trên truyền thông là quá muộn - thiệt hại đã xảy ra và chi phí khắc phục rất cao.",
+        "B": "• Áp dụng đạo đức chỉ khi giao hàng với bảo hành là cách tiếp cận thụ động, bỏ lỡ giai đoạn thiết kế và phát triển quan trọng.",
+        "C": "• Đánh giá định kỳ với phản hồi khách hàng là cần thiết nhưng không đủ - đạo đức cần có mặt từ đầu, không phải chỉ sau khi sản phẩm đã ra mắt."
       }
     }
   },
@@ -3312,11 +3311,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. The principle of doing no harm.",
       "concept": "• Non-Maleficence Principle: Tránh gây tổn hại.",
-      "whyCorrect": "• Non-maleficence = doing no harm.",
+      "whyCorrect": "• Non-maleficence (không gây hại) là nguyên tắc đạo đức cổ điển từ y học Hippocrates \"Primum non nocere\" - yêu cầu hệ thống công nghệ không được gây tổn hại về thể chất, tinh thần, tài chính hay xã hội cho bất kỳ ai.",
       "whyWrong": {
-        "B": "• Fairness.",
-        "C": "• Security.",
-        "D": "• Sai nghĩa."
+        "B": "• Không có định kiến (no bias) thuộc về nguyên tắc Fairness (Công bằng) - một hệ thống có thể công bằng nhưng vẫn gây hại theo cách khác.",
+        "C": "• Không có rủi ro an ninh thuộc về nguyên tắc Security (Bảo mật) - bảo mật tập trung vào bảo vệ hệ thống khỏi tấn công, khác với nguyên tắc không gây hại.",
+        "D": "• \"Có rủi ro bảo mật\" hoàn toàn sai nghĩa - đây là điều tiêu cực cần tránh, không thể là định nghĩa của một nguyên tắc đạo đức."
       }
     }
   },
@@ -3378,11 +3377,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. using scraped twitter data over survey data",
       "concept": "• Automation Bias: Ưu tiên dữ liệu máy cào tự động vì tin máy móc hơn con người.",
-      "whyCorrect": "• Phản ánh sự phụ thuộc mù quáng vào dữ liệu máy cào.",
+      "whyCorrect": "• Automation bias xảy ra khi người phân tích ưu tiên sử dụng dữ liệu cào tự động từ Twitter (scraped data) thay vì dữ liệu khảo sát trực tiếp đáng tin cậy hơn, chỉ vì dữ liệu tự động dễ thu thập và có vẻ \"khoa học\" hơn dù chất lượng thấp hơn.",
       "whyWrong": {
-        "A": "• Lỗi khảo sát.",
-        "B": "• Chọn nền tảng.",
-        "C": "• Thời gian."
+        "A": "• Dùng dữ liệu khảo sát bị thiên vị thay vì dữ liệu đã xử lý là vấn đề về Data Quality (chất lượng dữ liệu), không phải automation bias.",
+        "B": "• So sánh hai nguồn dữ liệu đã xử lý (parsed Twitter vs parsed Facebook) là lựa chọn kỹ thuật thông thường, không thể hiện sự thiên vị tự động.",
+        "C": "• Ưu tiên dữ liệu mới hơn dữ liệu cũ là thực hành tốt để tránh Temporal bias, không phải automation bias."
       }
     }
   },
@@ -3411,11 +3410,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. sample bias",
       "concept": "• Sample Bias: Mẫu thu thập không đại diện đúng cho môi trường thực tế.",
-      "whyCorrect": "• Sample bias xảy ra khi mẫu bị lệch so với quần thể.",
+      "whyCorrect": "• Sample bias (Định kiến mẫu) xảy ra khi dữ liệu thu thập không phản ánh chính xác toàn bộ môi trường hoặc quần thể mà mô hình cần phục vụ - ví dụ chỉ khảo sát sinh viên đại học để đại diện cho toàn dân, tạo ra thiên lệch hệ thống.",
       "whyWrong": {
-        "A": "• Prejudice bias thuộc về định kiến xã hội.",
-        "B": "• Observer bias do người quan sát ghi chép sai.",
-        "C": "• Exclusion bias cố ý loại trừ nhóm cụ thể."
+        "A": "• Prejudice bias (Định kiến thiên kiến) xuất phát từ thành kiến có sẵn của con người được nhúng vào dữ liệu hoặc thuật toán, không phải lỗi lấy mẫu.",
+        "B": "• Observer bias (Định kiến quan sát viên) xảy ra khi người thu thập dữ liệu vô tình ảnh hưởng kết quả do kỳ vọng hoặc giả định cá nhân.",
+        "C": "• Exclusion bias (Định kiến loại trừ) xảy ra khi có chủ đích hoặc vô ý loại bỏ một nhóm dữ liệu cụ thể trong quá trình tiền xử lý."
       }
     }
   },
@@ -3575,11 +3574,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. equality of false negatives",
       "concept": "• Equalized Odds / False Negative Parity: Đảm bảo tỷ lệ sai sót bỏ sót (False Negative) bằng nhau giữa các phân nhóm để tránh gây thiệt hại cho một nhóm cụ thể.",
-      "whyCorrect": "• Cân bằng sai sót bỏ sót = Equality of False Negatives.",
+      "whyCorrect": "• Khi mô hình cân bằng số lượng sai sót (mistakes) cho từng nhóm nhỏ để giảm thiểu tác hại, nó đang áp dụng nguyên tắc bình đẳng âm tính giả (equality of false negatives) - đảm bảo tỷ lệ bỏ sót các trường hợp đáng được chấp nhận là như nhau giữa các nhóm, tránh gây thiệt hại bất công cho nhóm nào.",
       "whyWrong": {
-        "A": "• Accuracy parity.",
-        "C": "• Data balance.",
-        "D": "• Demographic parity."
+        "A": "• Equality of true outcomes (bình đẳng kết quả thật) đề cập đến tỷ lệ dự đoán đúng, không phải việc cân bằng sai sót giữa các nhóm.",
+        "C": "• Equality of training data (bình đẳng dữ liệu huấn luyện) liên quan đến khối lượng dữ liệu cho mỗi nhóm, không phải cân bằng lỗi.",
+        "D": "• Equality of prediction bias (bình đẳng định kiến dự đoán) không phải thuật ngữ chuẩn trong các phương pháp đo lường fairness."
       }
     }
   },
@@ -3608,11 +3607,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. statistical parity",
       "concept": "• Statistical Parity Limitation: Ép tỷ lệ chấp nhận giữa các nhóm phải bằng nhau (ví dụ: 50% nam, 50% nữ) mà bỏ qua sự khác biệt về năng lực/hồ sơ thực tế (merit).",
-      "whyCorrect": "• Statistical parity bỏ qua trình độ/năng lực cá nhân.",
+      "whyCorrect": "• Statistical parity (bình đẳng thống kê) yêu cầu tỷ lệ kết quả dương tính phải giống nhau giữa các nhóm, bất kể năng lực thực tế của cá nhân - điều này có nghĩa là nó bỏ qua yếu tố xứng đáng (merit) và có thể làm giảm hoặc duy trì accuracy ở mức chấp nhận được.",
       "whyWrong": {
-        "A": "• Error rate parity xét đến tỷ lệ lỗi.",
-        "C": "• Equality of false positives xét đến sai sót.",
-        "D": "• Thuật ngữ tương tự."
+        "A": "• Error rate parity (bình đẳng tỷ lệ lỗi) cân bằng tỷ lệ sai sót giữa các nhóm, vẫn có thể tính đến merit thông qua dữ liệu thực tế.",
+        "C": "• Equality of false positives cân bằng tỷ lệ dương tính giả, tập trung vào một loại lỗi cụ thể chứ không bỏ qua merit hoàn toàn.",
+        "D": "• Equality of prediction rate không phải thuật ngữ fairness chuẩn và không mô tả chính xác vấn đề bỏ qua merit."
       }
     }
   },
@@ -3641,11 +3640,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. The purpose of what-if scenario planning sessions is to think critically about potential worst-case scenarios so you can decide whether or not to proceed with a project.",
       "concept": "• What-If Scenario Planning: Chuẩn bị trước cho các rủi ro kịch bản tồi tệ nhất (worst-case scenarios) trước khi triển khai dự án.",
-      "whyCorrect": "• Phân tích worst-case scenario để đánh giá rủi ro dự án.",
+      "whyCorrect": "• Phiên lập kế hoạch kịch bản \"what-if\" giúp đội ngũ tư duy phản biện về các tình huống xấu nhất có thể xảy ra (worst-case scenarios), từ đó quyết định liệu có nên tiếp tục dự án hay không, hoặc cần điều chỉnh gì để giảm thiểu rủi ro đạo đức trước khi chúng trở thành hiện thực.",
       "whyWrong": {
-        "A": "• Quá hẹp.",
-        "B": "• Đã vi phạm rồi mới làm là quá muộn.",
-        "D": "• Chỉ nhìn kịch bản màu hồng gây chủ quan."
+        "A": "• Phát biểu này mô tả việc cân đối giữa giá trị và nhu cầu kinh doanh, đúng nhưng không đầy đủ - trọng tâm là phân tích worst-case, không chỉ là tradeoff.",
+        "B": "• Phát biểu này mô tả phân tích hậu sự cố (post-incident review) - what-if planning diễn ra TRƯỚC khi vi phạm xảy ra, không phải sau.",
+        "D": "• Phân tích best-case scenarios (kịch bản tốt nhất) ngược với mục đích - what-if planning tập trung vào rủi ro và kịch bản tiêu cực để chuẩn bị ứng phó."
       }
     }
   },
@@ -3674,11 +3673,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. An Ethics Board can help maintain an organization's values-based intentions and increase transparency into how they use data-driven technologies.",
       "concept": "• Ethics Board Role: Đảm bảo doanh nghiệp đi đúng định hướng giá trị đạo đức và nâng cao tính minh bạch.",
-      "whyCorrect": "• Định nghĩa chuẩn về vai trò của Ethics Board.",
+      "whyCorrect": "• Ethics Board giúp tổ chức duy trì các cam kết dựa trên giá trị đạo đức (values-based intentions) và đồng thời tăng cường tính minh bạch (transparency) trong cách sử dụng công nghệ dựa trên dữ liệu, đảm bảo cân bằng giữa đổi mới và trách nhiệm đạo đức.",
       "whyWrong": {
-        "B": "• Ethics Board cố vấn chứ không trực tiếp sửa lỗi kỹ thuật.",
-        "C": "• Không phải mục tiêu lợi nhuận tài chính.",
-        "D": "• Thiếu khía cạnh duy trì giá trị tổ chức."
+        "B": "• \"Giảm nguy hiểm cố hữu của công nghệ tự trị\" là mục tiêu quá hẹp - Ethics Board không chỉ tập trung vào công nghệ tự trị mà bao quát mọi khía cạnh đạo đức.",
+        "C": "• \"Duy trì biên lợi nhuận\" hoàn toàn sai lệch mục đích - Ethics Board phục vụ giá trị đạo đức, không phải lợi nhuận tài chính.",
+        "D": "• Phát biểu này đúng nhưng chưa đầy đủ - chỉ đề cập transparency mà thiếu phần quan trọng về duy trì values-based intentions."
       }
     }
   },
@@ -3707,11 +3706,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Regulators",
       "concept": "• Regulators: Cơ quan nhà nước bên ngoài.",
-      "whyCorrect": "• Regulators là external stakeholder.",
+      "whyCorrect": "• Regulators (Cơ quan quản lý) là bên liên quan bên ngoài (external stakeholders) vì họ không thuộc tổ chức nhưng có quyền lực đặt ra quy định, giám sát và xử phạt - bộ quy tắc đạo đức cần tính đến yêu cầu của họ.",
       "whyWrong": {
-        "A": "• Nội bộ.",
-        "B": "• Nội bộ.",
-        "D": "• Nội bộ."
+        "A": "• Business managers (Quản lý kinh doanh) là nhân viên nội bộ của tổ chức, thuộc nhóm internal stakeholders.",
+        "B": "• Developers (Lập trình viên) là nhân viên kỹ thuật nội bộ, trực tiếp xây dựng sản phẩm cho tổ chức.",
+        "D": "• Designers (Nhà thiết kế) là thành viên nội bộ thuộc đội ngũ phát triển sản phẩm của tổ chức."
       }
     }
   },
@@ -3740,11 +3739,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. It can help provide transparency around the efforts to improve the policies.",
       "concept": "• Tracking Ethical Violations: Ghi nhận và theo dõi các vi phạm giúp minh bạch quá trình sửa đổi và hoàn thiện chính sách.",
-      "whyCorrect": "• Nâng cao tính minh bạch trong nỗ lực cải tiến chính sách.",
+      "whyCorrect": "• Theo dõi số lượng và mức độ nghiêm trọng của vi phạm đạo đức giúp cung cấp tính minh bạch (transparency) về nỗ lực cải thiện chính sách, cho thấy tổ chức nghiêm túc đo lường và hành động chứ không chỉ tuyên bố suông.",
       "whyWrong": {
-        "A": "• Không thể thay thế việc cập nhật chính sách.",
-        "B": "• Không dùng để ngăn cản người dùng.",
-        "C": "• Dữ liệu số lượng là thông tin định lượng (quantitative)."
+        "A": "• Việc theo dõi vi phạm không thể thay thế nhu cầu cập nhật chính sách - chính sách vẫn cần được làm mới thường xuyên để phản ánh rủi ro mới.",
+        "B": "• Mục đích là minh bạch hóa chứ không phải ngăn cản người dùng đặt câu hỏi - điều đó sẽ đi ngược lại tinh thần đạo đức.",
+        "C": "• \"Qualitative information\" (thông tin định tính) không chính xác - theo dõi số lượng và mức độ nghiêm trọng cung cấp thông tin ĐỊNH LƯỢNG (quantitative)."
       }
     }
   },
@@ -3806,11 +3805,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. It helps maintain alignment with the emergent risks and changing ethical posture of the products and services of the organization.",
       "concept": "• Evolving Ethics Policy: Công nghệ và rủi ro mới (emergent risks) liên tục xuất hiện đòi hỏi chính sách đạo đức phải cập nhật tương ứng.",
-      "whyCorrect": "• Thích ứng với các rủi ro mới nổi (emergent risks).",
+      "whyCorrect": "• Cập nhật liên tục chính sách đạo đức giúp duy trì sự phù hợp với các rủi ro mới nổi (emergent risks) và tư thế đạo đức thay đổi của sản phẩm/dịch vụ - công nghệ phát triển nhanh nên rủi ro đạo đức cũng biến đổi theo.",
       "whyWrong": {
-        "A": "• Biện minh tính năng không phải lý do đạo đức.",
-        "B": "• Quá tập trung vào nội bộ.",
-        "D": "• Làm màu đối phó với sếp."
+        "A": "• Biện minh cho tính năng mới không phải mục đích của chính sách đạo đức - đó thuộc về quy trình product management.",
+        "B": "• Đây tập trung vào giá trị văn hóa nhân viên, nhưng lý do chính để cập nhật là vì rủi ro sản phẩm/dịch vụ thay đổi theo thời gian.",
+        "D": "• \"Chứng minh công việc đang được thực hiện\" cho lãnh đạo cấp cao là thái độ hình thức, không phải lý do thực chất để cập nhật chính sách."
       }
     }
   },
@@ -3839,11 +3838,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Documenting the assumptions and choices made in the drafting of the policies",
       "concept": "• Policy Documentation: Việc lưu lại các giả định và quyết định lựa chọn giúp giải thích cơ sở ra đời của chính sách cho các thế hệ sau.",
-      "whyCorrect": "• Tài liệu hóa giả định và lựa chọn thiết kế chính sách.",
+      "whyCorrect": "• Trước khi phê duyệt chính sách đạo đức, việc ghi chép lại các giả định và lựa chọn (documenting assumptions and choices) được đưa ra trong quá trình dự thảo là rất quan trọng, giúp người đọc hiểu cơ sở lý luận và có thể đánh giá lại khi bối cảnh thay đổi.",
       "whyWrong": {
-        "A": "• Xóa bỏ vấn đề mở là che giấu tồn đọng.",
-        "C": "• Thử nghiệm dự án đã chạy dễ gây xáo trộn.",
-        "D": "• Mỗi tổ chức có bối cảnh riêng."
+        "A": "• Loại bỏ các vấn đề mở (discarding open issues) là hành động thiếu trách nhiệm - vấn đề chưa giải quyết cần được lưu hồ sơ để xử lý sau, không phải xóa đi.",
+        "C": "• Thử nghiệm chính sách trong dự án đã triển khai gây rủi ro - chính sách cần được hoàn thiện trên lý thuyết trước khi áp dụng thực tế.",
+        "D": "• Sao chép chính sách từ tổ chức khác bỏ qua bối cảnh riêng - mỗi tổ chức có văn hóa, sản phẩm và rủi ro đặc thù cần chính sách phù hợp."
       }
     }
   },
@@ -3872,11 +3871,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Simple to follow examples",
       "concept": "• Clear Examples: Dùng ví dụ minh họa trực quan.",
-      "whyCorrect": "• Simple to follow examples.",
+      "whyCorrect": "• Các ví dụ đơn giản dễ theo dõi (simple to follow examples) là yếu tố then chốt giúp mọi bên liên quan - từ kỹ sư đến khách hàng - hiểu và áp dụng chính sách đạo đức vào thực tế hàng ngày mà không cần kiến thức chuyên sâu.",
       "whyWrong": {
-        "B": "• Spam.",
-        "C": "• Phức tạp.",
-        "D": "• Lách luật."
+        "B": "• Truyền thông hàng ngày (daily communications) gây quá tải thông tin và phản tác dụng - chất lượng quan trọng hơn tần suất.",
+        "C": "• Mô tả quy trình dày đặc (dense procedural descriptions) khiến nội dung khó tiếp cận và dễ bị bỏ qua bởi phần lớn nhân viên.",
+        "D": "• Từ ngữ linh hoạt (flexible verbiage) tạo ra sự mập mờ và kẽ hở cho diễn giải sai, đi ngược lại mục tiêu rõ ràng nhất quán."
       }
     }
   },
@@ -3938,11 +3937,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. It allows you to capture the evolving nature of the ethical risks of the product or service that you are developing.",
       "concept": "• Evolving Ethical Risks: Rủi ro đạo đức thay đổi theo sự phát triển của tính năng công nghệ.",
-      "whyCorrect": "• Nắm bắt bản chất thay đổi tiến hóa (evolving nature) của rủi ro đạo đức.",
+      "whyCorrect": "• Cập nhật định kỳ bộ quy tắc đạo đức cho phép tổ chức nắm bắt bản chất đang tiến hóa của các rủi ro đạo đức (evolving ethical risks) liên quan đến sản phẩm/dịch vụ đang phát triển - công nghệ thay đổi nhanh nên rủi ro cũng liên tục biến đổi.",
       "whyWrong": {
-        "B": "• PR làm màu.",
-        "C": "• Nhắc nhở nhân viên chỉ là tác dụng phụ.",
-        "D": "• Đạo đức vượt trên quy định pháp lý thuần túy."
+        "B": "• \"Phát tín hiệu quan tâm đạo đức\" là lý do hình thức bề nổi (signaling), không phải lý do thực chất để cập nhật nội dung chính sách.",
+        "C": "• \"Nhắc nhở nhân viên về sự tồn tại của bộ quy tắc\" chỉ là tác dụng phụ, không phải mục đích chính - nội dung cập nhật mới là điều quan trọng.",
+        "D": "• Trách nhiệm ủy thác và pháp lý không phải lý do chính - nhiều tổ chức cập nhật tự nguyện vì nhận thức rủi ro thay đổi, không phải vì bị bắt buộc."
       }
     }
   },
@@ -3962,20 +3961,19 @@ window.QUIZ_DATA['ite'] = [
     "answer": "C, D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Nguyên tắc nào tuyên bố rằng các cá nhân nên có quyền tự do đưa ra quyết định của riêng họ mà không bị ép buộc?",
+      "questionVi": "Phương pháp phân tích rủi ro nào sau đây sử dụng các từ như \"likely\" (có thể xảy ra), \"unlikely\" (khó xảy ra) và \"rare\" (hiếm gặp) để mô tả khả năng xảy ra rủi ro, và \"moderate\" (vừa phải), \"major\" (nghiêm trọng), \"catastrophic\" (thảm khốc) để mô tả tác động?",
       "optionsVi": {
-        "A": "Quyền riêng tư (Privacy)",
-        "B": "Trách nhiệm giải trình (Accountability)",
-        "C": "Quyền tự trị / Tự quyết (Autonomy)",
-        "D": "Tính minh bạch (Transparency)"
+        "A": "Phân tích bán định tính",
+        "B": "Phân tích định lượng",
+        "C": "Phân tích bán định lượng (Semi-quantitative)",
+        "D": "Phân tích định tính (Qualitative)"
       },
-      "answerDisplay": "C. Autonomy",
-      "concept": "• Principle of Autonomy: Quyền tự trị cá nhân tôn trọng khả năng tự đưa ra quyết định độc lập của con người mà không bị kiểm soát hoặc ép buộc.",
-      "whyCorrect": "• Autonomy đại diện cho quyền tự quyết của con người.",
+      "answerDisplay": "C. Semi-quantitative analysis · D. Qualitative analysis",
+      "concept": "• Qualitative vs Semi-quantitative Risk Analysis: Hai phương pháp này sử dụng các nhãn từ ngữ mô tả thay vì các con số xác suất chính xác để đánh giá mức độ rủi ro.",
+      "whyCorrect": "• Cả phân tích định tính (Qualitative) và bán định lượng (Semi-quantitative) đều sử dụng các từ mô tả trực quan (như likely, moderate, catastrophic) để xếp hạng và đánh giá rủi ro mà không cần đến số liệu thống kê toán học phức tạp.",
       "whyWrong": {
-        "A": "• Privacy bảo vệ dữ liệu cá nhân.",
-        "B": "• Accountability gán trách nhiệm hành vi.",
-        "D": "• Transparency công khai thông tin."
+        "A": "• Phân tích bán định tính không phải là thuật ngữ tiêu chuẩn và phổ biến trong các khung quản lý rủi ro chuyên nghiệp.",
+        "B": "• Phân tích định lượng (Quantitative) bắt buộc phải sử dụng các con số chính xác, tỷ lệ phần trăm và giá trị thiệt hại bằng tiền cụ thể để đo lường rủi ro."
       }
     }
   },
@@ -3995,20 +3993,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "B",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Loại phân tích nào được sử dụng để đề xuất các hành động tốt nhất nên thực hiện dựa trên dữ liệu?",
+      "questionVi": "Trong kỹ thuật dịch ngược mô hình bảo mật vi phân tung hai đồng xu (double coin flip), tỷ lệ câu trả lời \"có/không\" trung thực thực tế được tạo ra là bao nhiêu?",
       "optionsVi": {
-        "A": "Phân tích mô tả (Descriptive)",
-        "B": "Phân tích kê đơn / Đề xuất (Prescriptive)",
-        "C": "Phân tích chẩn đoán (Diagnostic)",
-        "D": "Phân tích dự đoán (Predictive)"
+        "A": "50%",
+        "B": "25%",
+        "C": "75%",
+        "D": "100%"
       },
-      "answerDisplay": "B. Prescriptive",
-      "concept": "• Data Analytics Types: Descriptive (chuyện gì đã xảy ra), Diagnostic (tại sao xảy ra), Predictive (chuyện gì sẽ xảy ra), Prescriptive (nên làm gì tiếp theo).",
-      "whyCorrect": "• Prescriptive analytics đưa ra lời khuyên/hành động tốt nhất nên thực hiện.",
+      "answerDisplay": "B. 25%",
+      "concept": "• Double Coin Flip Privacy Model: Kỹ thuật phản hồi ngẫu nhiên (randomized response) bảo vệ riêng tư bằng cách tung hai đồng xu để quyết định mức độ trung thực của câu trả lời.",
+      "whyCorrect": "• Trong mô hình tung hai đồng xu cổ điển: Đồng xu 1 quyết định trả lời thật (nếu ngửa - 50%) hoặc tiếp tục tung đồng xu 2 (nếu sấp - 50%). Đồng xu 2 quyết định trả lời Có (nếu ngửa - 25%) hoặc Không (nếu sấp - 25%). Do đó, tỷ lệ câu trả lời hoàn toàn trung thực không bị nhiễu chỉ chiếm 25% tổng số câu trả lời.",
       "whyWrong": {
-        "A": "• Descriptive tóm tắt dữ liệu quá khứ.",
-        "C": "• Diagnostic tìm nguyên nhân.",
-        "D": "• Predictive dự đoán tương lai."
+        "A": "• 50% là tỷ lệ quyết định ở đồng xu đầu tiên chứ không phải kết quả thực tế của câu trả lời trung thực sau cùng.",
+        "C": "• 75% là tỷ lệ tổng số câu trả lời có tính đến cả nhiễu ngẫu nhiên, không phải tỷ lệ câu trả lời hoàn toàn trung thực từ người dùng.",
+        "D": "• 100% nghĩa là không có bảo mật vi phân, dữ liệu hoàn toàn không được ẩn danh bằng nhiễu ngẫu nhiên."
       }
     }
   },
@@ -4028,20 +4026,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "C",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Công cụ giải thích mô hình ML nào sau đây sử dụng kỹ thuật tạo mẫu cục bộ xung quanh dự đoán?",
+      "questionVi": "Trong quá trình kiểm định chéo (cross-validation), phân tách tập dữ liệu nào sau đây được sử dụng để tinh chỉnh hiệu năng của mô hình?",
       "optionsVi": {
-        "A": "LIME",
-        "B": "SHAP",
-        "C": "What-If Tool",
-        "D": "ELI5"
+        "A": "Tập huấn luyện (Training set)",
+        "B": "Tập kiểm thử (Test set)",
+        "C": "Tập kiểm định (Validation set/test)",
+        "D": "Kiểm thử đơn vị (Unit test)"
       },
-      "answerDisplay": "A. LIME",
-      "concept": "• LIME (Local Interpretable Model-agnostic Explanations): Xây dựng mô hình xấp xỉ đơn giản (cục bộ) xung quanh một điểm dữ liệu dự đoán để giải thích quyết định của Black-box AI.",
-      "whyCorrect": "• LIME hoạt động dựa trên cơ chế phân tích cục bộ (local surrogate model).",
+      "answerDisplay": "C. Validation test",
+      "concept": "• Validation Set in ML: Tập dữ liệu trung gian dùng để đánh giá hiệu năng mô hình trong quá trình huấn luyện và tinh chỉnh các siêu tham số (hyperparameters).",
+      "whyCorrect": "• Tập kiểm định (Validation set/test) được sử dụng để đánh giá hiệu năng tạm thời và điều chỉnh các siêu tham số (hyperparameters) nhằm tối ưu hóa mô hình trước khi đánh giá cuối cùng.",
       "whyWrong": {
-        "B": "• SHAP dựa trên giá trị Shapley trong Lý thuyết trò chơi.",
-        "C": "• What-If Tool là giao diện trực quan hóa của Google.",
-        "D": "• ELI5 là thư viện Python chung."
+        "A": "• Tập huấn luyện (Training set) được dùng để mô hình học các trọng số cơ bản, không dùng để đánh giá độc lập nhằm tinh chỉnh hiệu năng.",
+        "B": "• Tập kiểm thử (Test set) chỉ được sử dụng ở bước cuối cùng để đánh giá khả năng tổng quát hóa của mô hình đã hoàn thiện, không dùng để tinh chỉnh.",
+        "D": "• Kiểm thử đơn vị (Unit test) là kỹ thuật kiểm tra tính đúng đắn của từng hàm/đoạn mã nguồn trong phát triển phần mềm, không thuộc quy trình ML."
       }
     }
   },
@@ -4061,20 +4059,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Quy trình kiểm toán bảo mật kiểm tra điều gì?",
+      "questionVi": "Khi được sử dụng trong các công cụ gợi ý (recommendation engines), các thuật toán có khả năng giải thích (explainable algorithms) có thể giúp trả lời câu hỏi nào?",
       "optionsVi": {
-        "A": "Tính hiệu quả của các biện pháp bảo mật hiện tại",
-        "B": "Tốc độ của mạng",
-        "C": "Giá trị của tài sản",
-        "D": "Số lượng người dùng"
+        "A": "Tại sao? (why?)",
+        "B": "Thế nào? (how?)",
+        "C": "Ở đâu? (where?)",
+        "D": "Ai? (who?)"
       },
-      "answerDisplay": "A. The effectiveness of current security controls",
-      "concept": "• Security Audit Purpose: Đánh giá tính hiệu quả và mức độ tuân thủ của các biện pháp kiểm soát an ninh thông tin hiện có trong hệ thống.",
-      "whyCorrect": "• Kiểm tra tính hiệu quả của các rào chắn/biện pháp bảo mật.",
+      "answerDisplay": "A. why?",
+      "concept": "• Explainability in Recommender Systems: Giải thích lý do tại sao một sản phẩm hoặc nội dung cụ thể lại được gợi ý cho người dùng.",
+      "whyCorrect": "• Các thuật toán có khả năng giải thích giúp làm rõ lý do tại sao (why) một mặt hàng, bộ phim hay bài hát lại xuất hiện trong danh sách gợi ý của người dùng (ví dụ: \"Vì bạn đã xem bộ phim X\").",
       "whyWrong": {
-        "B": "• Tốc độ mạng thuộc kiểm thử hiệu năng.",
-        "C": "• Giá trị tài sản thuộc định giá doanh nghiệp.",
-        "D": "• Số lượng người dùng thuộc đo lường tăng trưởng."
+        "B": "• Câu hỏi \"Thế nào\" (how) liên quan đến quy trình kỹ thuật tính toán sâu bên trong hệ thống, không phải câu hỏi trực tiếp mà người dùng cần được giải thích.",
+        "C": "• Câu hỏi \"Ở đâu\" (where) liên quan đến vị trí địa lý hoặc vị trí hiển thị, không phải mục tiêu chính của giải thích gợi ý.",
+        "D": "• Câu hỏi \"Ai\" (who) xác định đối tượng người dùng, điều này đã được xác định trước khi hệ thống thực hiện gợi ý."
       }
     }
   },
@@ -4094,20 +4092,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "B",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Phần mềm độc hại nào mã hóa dữ liệu người dùng và đòi tiền để giải mã?",
+      "questionVi": "Biện pháp bảo mật nào sau đây được khuyến nghị cho các tập dữ liệu máy học (ML datasets)?",
       "optionsVi": {
-        "A": "Ransomware",
-        "B": "Spyware",
-        "C": "Trojan",
-        "D": "Worm"
+        "A": "Đảm bảo đội ngũ có nhiều góc nhìn đa dạng",
+        "B": "Thiết lập cấu trúc quản trị dữ liệu chặt chẽ (Enact a sound data governance structure)",
+        "C": "Thực hiện mô hình hóa mối đe dọa với các thuật toán có lợi",
+        "D": "Tạo ra một chuỗi chỉ huy quản lý"
       },
-      "answerDisplay": "A. Ransomware",
-      "concept": "• Ransomware: Mã độc tống tiền mã hóa file dữ liệu của nạn nhân và yêu cầu trả tiền chuộc để lấy khóa giải mã.",
-      "whyCorrect": "• Định nghĩa chính xác của Ransomware.",
+      "answerDisplay": "B. Enact a sound data governance structure",
+      "concept": "• Data Governance for Machine Learning: Quản trị dữ liệu chặt chẽ là nền tảng để bảo vệ an toàn cho tập dữ liệu huấn luyện ML khỏi các nguy cơ tấn công hoặc rò rỉ.",
+      "whyCorrect": "• Thiết lập cấu trúc quản trị dữ liệu chặt chẽ (data governance) giúp kiểm soát quyền truy cập, giám sát quy trình xử lý, đảm bảo tính toàn vẹn và ngăn chặn các nguy cơ rò rỉ dữ liệu huấn luyện ML.",
       "whyWrong": {
-        "B": "• Spyware theo dõi lén lút.",
-        "C": "• Trojan ngụy trang thành file vô hại.",
-        "D": "• Worm tự nhân bản lây lan mạng."
+        "A": "• Sự đa dạng góc nhìn của đội ngũ giúp giảm thiểu định kiến (bias) khi thiết kế, không phải là biện pháp bảo mật dữ liệu kỹ thuật.",
+        "C": "• Thực hiện threat modeling là đúng, nhưng khái niệm \"beneficial algorithms\" (thuật toán có lợi) là một sự ghép từ thiếu tính chính xác về mặt kỹ thuật bảo mật.",
+        "D": "• Chuỗi chỉ huy là mô hình quản lý nhân sự hành chính, không giải quyết trực tiếp các lỗ hổng bảo mật của tập dữ liệu ML."
       }
     }
   },
@@ -4136,10 +4134,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. It minimizes the impact of any ethical issues which may emerge. · D. It reveals any gaps in accountability or auditability.",
       "concept": "• Continuous Auditing Benefits: Kiểm toán định kỳ giúp phát hiện sớm khoảng trống trách nhiệm (gaps in accountability) và giảm thiểu tác hại sự cố (minimizes impact).",
-      "whyCorrect": "• B và D là hai giá trị cốt lõi của kiểm toán định kỳ.",
+      "whyCorrect": "• Kiểm thử thí điểm (pilot testing) trước khi phát hành chính thức mang lại hai lợi ích đạo đức chính: (1) Giảm thiểu tác động của các vấn đề đạo đức nếu chúng xuất hiện (vì quy mô nhỏ); (2) Phát hiện khoảng trống trong trách nhiệm giải trình hoặc khả năng kiểm toán (accountability/auditability gaps).",
       "whyWrong": {
-        "A": "• Kiểm toán không cấp chứng nhận pháp lý cá nhân.",
-        "C": "• Việc đối phó ban quản lý không phải mục tiêu kiểm toán."
+        "A": "• Pilot testing không chứng nhận trách nhiệm pháp lý cho nhà phát triển - đó là chức năng của hợp đồng pháp lý và quy định.",
+        "C": "• Chứng minh hệ thống hoạt động sớm để thỏa mãn ban lãnh đạo và nhà đầu tư là mục tiêu kinh doanh, không phải lợi ích đạo đức."
       }
     }
   },
@@ -4201,11 +4199,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. A method of performing operations on encrypted data.",
       "concept": "• Homomorphic Encryption: Cho phép tính toán trực tiếp trên ciphertext (dữ liệu mã hóa) mà kết quả giải mã ra đúng bằng kết quả tính trên plaintext.",
-      "whyCorrect": "• Thực hiện tính toán trên dữ liệu đang mã hóa.",
+      "whyCorrect": "• Homomorphic encryption (mã hóa đồng cấu) cho phép thực hiện các phép tính toán trực tiếp trên dữ liệu đã được mã hóa mà không cần giải mã trước - kết quả tính toán khi giải mã sẽ giống hệt kết quả nếu tính trên dữ liệu thô, bảo vệ riêng tư trong quá trình xử lý.",
       "whyWrong": {
-        "A": "• Thuộc về trao đổi khóa (Key Exchange).",
-        "B": "• Thuộc về giấu tin (Steganography).",
-        "D": "• Bảo mật không trực tiếp giảm bias."
+        "A": "• Trao đổi khóa công khai/riêng tư là quy trình của PKI (Public Key Infrastructure), không phải homomorphic encryption.",
+        "B": "• Ẩn dữ liệu trong dữ liệu khác là kỹ thuật Steganography (ẩn tin), hoàn toàn khác với homomorphic encryption.",
+        "D": "• Giảm thiểu thuật toán thiên vị thông qua bảo mật là khái niệm ghép sai - mã hóa không liên quan trực tiếp đến giảm bias."
       }
     }
   },
@@ -4234,11 +4232,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. White team",
       "concept": "• White Team Role: Đội ngũ giám sát (referees/judges) quản lý quy tắc tham chiến ROE và điều phối cuộc tấn công mô phỏng giữa Red Team và Blue Team.",
-      "whyCorrect": "• White Team đảm bảo hai bên tuân thủ đúng quy tắc ROE.",
+      "whyCorrect": "• White Team (đội trắng) đóng vai trò trọng tài/giám sát trong bài kiểm thử xâm nhập - họ thiết lập quy tắc tham gia (ROE), giám sát hoạt động của cả Red Team (tấn công) và Blue Team (phòng thủ), đảm bảo cuộc kiểm thử diễn ra an toàn và trong phạm vi cho phép.",
       "whyWrong": {
-        "A": "• Blue Team phòng thủ.",
-        "B": "• Red Team tấn công.",
-        "C": "• Purple Team kết hợp chia sẻ thông tin Red-Blue."
+        "A": "• Blue Team (đội xanh) đóng vai phòng thủ - nhiệm vụ là phát hiện và ngăn chặn các cuộc tấn công mô phỏng từ Red Team.",
+        "B": "• Red Team (đội đỏ) đóng vai tấn công - chủ động tìm và khai thác lỗ hổng trong hệ thống của tổ chức.",
+        "C": "• Purple Team (đội tím) kết hợp kỹ năng của cả Red và Blue Team để cải thiện an ninh tổng thể, không phải vai trò giám sát."
       }
     }
   },
@@ -4267,11 +4265,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Kali Linux",
       "concept": "• Kali Linux: Bản phân phối Linux chuyên dụng dành cho kiểm thử xâm nhập (Penetration Testing) tích hợp sẵn hàng trăm công cụ bảo mật.",
-      "whyCorrect": "• Kali Linux là HĐH kiểm thử bảo mật hàng đầu.",
+      "whyCorrect": "• Kali Linux là hệ điều hành chuyên dụng cho kiểm thử bảo mật, tích hợp sẵn hàng trăm công cụ khai thác lỗ hổng (exploit tools) như Metasploit, Burp Suite, John the Ripper, SQLmap - là nền tảng tiêu chuẩn ngành cho penetration testing.",
       "whyWrong": {
-        "A": "• Zenmap là giao diện đồ họa cho Nmap.",
-        "B": "• Nmap là công cụ quét cổng.",
-        "D": "• Wireshark là công cụ phân tích gói tin mạng."
+        "A": "• Zenmap là giao diện đồ họa (GUI) của Nmap, chỉ hỗ trợ quét mạng và không phải nền tảng chứa hàng trăm công cụ exploit.",
+        "B": "• Nmap là công cụ quét cổng và dịch vụ mạng (port scanning), chỉ phục vụ giai đoạn reconnaissance chứ không phải nền tảng exploit.",
+        "D": "• Wireshark là công cụ phân tích gói tin mạng (packet analyzer), dùng để bắt và phân tích lưu lượng mạng chứ không phải nền tảng exploit."
       }
     }
   },
@@ -4496,11 +4494,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. The law often lags behind innovation.",
       "concept": "• Legal Lag: Luật luôn chậm hơn nhịp độ phát triển công nghệ.",
-      "whyCorrect": "• Law lags behind innovation.",
+      "whyCorrect": "• Luật pháp thường đi sau đổi mới công nghệ (law lags behind innovation) - khi công nghệ mới ra đời, chưa có quy định pháp lý đầy đủ để quản lý. Vì vậy tổ chức cần chủ động giải quyết vấn đề trách nhiệm pháp lý thay vì chờ luật bắt kịp.",
       "whyWrong": {
-        "B": "• Vấn đề thực thi.",
-        "C": "• Vấn đề diễn giải.",
-        "D": "• Vấn đề nhận thức."
+        "B": "• Luật áp dụng không nhất quán là vấn đề thực thi pháp luật, không phải lý do chính để tổ chức chủ động - ngay cả khi áp dụng nhất quán, vẫn cần chủ động vì luật chưa theo kịp.",
+        "C": "• Luật không luôn rõ ràng là vấn đề diễn giải, nhưng ngay cả luật rõ ràng cũng có thể chưa bao phủ công nghệ mới.",
+        "D": "• Luật khó hiểu là vấn đề ngôn ngữ pháp lý, không phải lý do cốt lõi - vấn đề chính là luật CHƯA TỒN TẠI cho công nghệ mới."
       }
     }
   },
@@ -4529,11 +4527,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Set the tone of what is to follow",
       "concept": "• First Crisis Statement Goal: Tuyên bố đầu tiên nhằm định hình thái độ (Set the tone) cầu thị, bình tĩnh và có trách nhiệm của tổ chức.",
-      "whyCorrect": "• Tuyên bố ban đầu giúp định hình tông giọng truyền thông.",
+      "whyCorrect": "• Tuyên bố đầu tiên trong truyền thông khủng hoảng cần thiết lập giọng điệu (set the tone) cho toàn bộ các thông tin tiếp theo - thể hiện sự nghiêm túc, quan tâm và kiểm soát tình hình, tạo nền tảng tin cậy cho các cập nhật sau đó.",
       "whyWrong": {
-        "A": "• Ban đầu chưa đủ thông tin chi tiết.",
-        "B": "• Không phải lúc đi làm khảo sát.",
-        "D": "• Nhận trách nhiệm vội vã khi chưa điều tra xong là sai lầm."
+        "A": "• Cung cấp chi tiết chuyên sâu ngay lần đầu là quá sớm - thông tin chưa được xác minh đầy đủ, dễ gây hoang mang hoặc phải rút lại sau.",
+        "B": "• Khảo sát dư luận là hoạt động thu thập thông tin, không phải nội dung của tuyên bố truyền thông đầu tiên.",
+        "D": "• Nhận trách nhiệm ngay lập tức khi chưa có đủ thông tin có thể gây hậu quả pháp lý nghiêm trọng và không phản ánh sự thận trọng cần thiết."
       }
     }
   },
@@ -4562,11 +4560,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. The conference can be interactive without the participants needing to be co-located.",
       "concept": "• VR Remote Interaction: Tương tác chân thực không khoảng cách địa lý.",
-      "whyCorrect": "• Interactive without co-location.",
+      "whyCorrect": "• Họp báo thực tế ảo (VR press conference) cho phép người tham gia tương tác trực tiếp với nhau và với nội dung trình bày mà không cần phải có mặt cùng một địa điểm (co-located), kết hợp lợi ích của tính tương tác trực tiếp với sự thuận tiện của từ xa.",
       "whyWrong": {
-        "A": "• Phụ thuộc bài phát biểu.",
-        "B": "• Cần thiết bị VR.",
-        "D": "• Yếu tố hình thức."
+        "A": "• Truyền tải thông điệp tổng thể không phải lợi ích đặc thù của VR - email, video call thông thường cũng có thể truyền tải thông điệp hiệu quả.",
+        "B": "• \"Dễ tiếp cận cho tất cả\" không chính xác - VR đòi hỏi thiết bị đặc biệt (headset, kết nối tốc độ cao), có thể tạo rào cản cho một số người.",
+        "D": "• \"Gây ấn tượng bằng công nghệ mới\" là lý do hời hợt - lợi ích thực sự là tính tương tác không cần co-located, không phải để khoe công nghệ."
       }
     }
   },
@@ -4627,10 +4625,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Having a disjoined message. · C. Not paying attention to the flow of messaging.",
       "concept": "• Communication Pitfalls: Thông điệp bị rời rạc (disjointed) và Không quản lý luồng thông tin (flow of messaging).",
-      "whyCorrect": "• A và C làm suy giảm hiệu quả truyền thông rủi ro.",
+      "whyCorrect": "• Hai cạm bẫy nghiêm trọng trong truyền thông rủi ro nội bộ tổ chức: (1) Thông điệp rời rạc không liên kết (disjointed message) gây nhầm lẫn và mâu thuẫn giữa các phòng ban; (2) Không chú ý đến mạch truyền thông (flow of messaging) khiến thông tin đến sai thời điểm hoặc sai thứ tự.",
       "whyWrong": {
-        "B": "• Theo dõi phản hồi là việc nên làm.",
-        "D": "• Phối hợp giữa các phòng ban là việc tốt."
+        "B": "• Theo dõi phản hồi từ khán giả sau truyền thông (following up) là thực hành tốt, không phải cạm bẫy.",
+        "D": "• Phối hợp thông điệp giữa các phòng ban (coordinating) là chiến lược hiệu quả giúp đảm bảo tính nhất quán, không phải cạm bẫy."
       }
     }
   },
@@ -4692,11 +4690,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. It helps you predict business interruptions and develop recovery strategies.",
       "concept": "• Business Impact Analysis (BIA): Xác định các hoạt động kinh doanh cốt lõi và dự đoán thiệt hại khi bị gián đoạn để xây dựng phương án phục hồi sau sự cố.",
-      "whyCorrect": "• Dự đoán gián đoạn và lập chiến lược phục hồi.",
+      "whyCorrect": "• Đánh giá tác động kinh doanh (BIA - Business Impact Assessment) giúp tổ chức dự đoán trước các gián đoạn kinh doanh tiềm ẩn (business interruptions) và xây dựng chiến lược phục hồi (recovery strategies), đảm bảo khả năng tiếp tục hoạt động sau sự cố.",
       "whyWrong": {
-        "B": "• Thuộc quy trình Quản trị Rủi ro (Risk Treatment).",
-        "C": "• Thuộc về Đánh giá Tác động Đạo đức (EIA).",
-        "D": "• Đẩy rủi ro cho khách hàng là sai trái."
+        "B": "• Xác định rủi ro chấp nhận hoặc chuyển giao cho bên thứ ba là chức năng của Risk Assessment/Risk Treatment, không phải BIA.",
+        "C": "• Đánh giá sản phẩm/dịch vụ áp dụng giá trị đạo đức cho xã hội thuộc về Ethical Impact Assessment hoặc Social Impact Assessment, không phải BIA.",
+        "D": "• Chuyển giao rủi ro cho khách hàng không phải mục đích của bất kỳ quy trình đánh giá nào - đây là hành vi phi đạo đức."
       }
     }
   },
@@ -4725,11 +4723,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. It demonstrates that the organization is committed to accountability and transparency in their data-driven systems.",
       "concept": "• Stakeholder Transparency: Thể hiện cam kết trách nhiệm và minh bạch.",
-      "whyCorrect": "• Thể hiện cam kết với Accountability & Transparency.",
+      "whyCorrect": "• Thu hút các bên liên quan từ đầu quy trình quản lý rủi ro đạo đức thể hiện cam kết thực sự của tổ chức đối với trách nhiệm giải trình (accountability) và tính minh bạch (transparency), xây dựng niềm tin và đảm bảo mọi góc nhìn được phản ánh.",
       "whyWrong": {
-        "A": "• Chủ quan.",
-        "B": "• Sai thực tế.",
-        "C": "• Tầm nhìn hẹp."
+        "A": "• \"Chứng minh hoàn toàn có khả năng giải quyết\" là tuyên bố quá tuyệt đối - không tổ chức nào có thể hoàn toàn loại bỏ rủi ro đạo đức.",
+        "B": "• \"Không thể giải quyết rủi ro mà không có input trước\" đặt tổ chức vào thế quá phụ thuộc - mặc dù input quan trọng, tổ chức vẫn cần khả năng tự phân tích.",
+        "C": "• Tránh rắc rối pháp lý là lợi ích phụ - mục đích chính là thể hiện cam kết đạo đức chân thành, không phải tự bảo vệ pháp lý."
       }
     }
   },
@@ -4758,10 +4756,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. It makes it easier for us to identify and manage different types of risks. · C. It helps us understand the many complexities involved in different types of ethical risks.",
       "concept": "• Categorization of Risks: Phân loại rủi ro giúp dễ quản lý và hiểu sự phức tạp.",
-      "whyCorrect": "• A và C đúng mục đích phân loại.",
+      "whyCorrect": "• Phân loại rủi ro đạo đức thành các loại khác nhau quan trọng vì: (1) Giúp nhận diện và quản lý từng loại rủi ro dễ dàng hơn (easier to identify and manage); (2) Giúp hiểu được sự phức tạp đa chiều liên quan đến từng loại rủi ro đạo đức khác nhau.",
       "whyWrong": {
-        "B": "• PR thương hiệu.",
-        "D": "• Không có chiến thuật vạn năng."
+        "B": "• Cho stakeholder bên ngoài thấy tổ chức nghiêm túc là lợi ích PR/truyền thông bề nổi, không phải lý do cốt lõi để phân loại rủi ro.",
+        "D": "• Tìm chiến thuật giảm thiểu phổ quát áp dụng cho mọi loại rủi ro đi ngược mục đích phân loại - phân loại để xử lý riêng biệt, không phải để gộp chung."
       }
     }
   },
@@ -4790,11 +4788,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. Collecting location data every time the app is opened, potentially learning where a user lives, works, etc.",
       "concept": "• Privacy Side-Effects of AI Apps: Ứng dụng lấy vị trí liên tục tạo ra nguy cơ xâm phạm riêng tư khi suy đoán ra địa chỉ nhà và nơi làm việc của người dùng.",
-      "whyCorrect": "• Lấy dữ liệu vị trí thường xuyên tiết lộ đời tư cá nhân.",
+      "whyCorrect": "• Ứng dụng thời tiết sử dụng thuật toán học tập sẽ thu thập dữ liệu vị trí mỗi khi ứng dụng được mở, từ đó có thể suy ra nơi người dùng sống, làm việc, thường xuyên đi lại - đây là rủi ro riêng tư nghiêm trọng vượt xa mục đích ban đầu là xem dự báo thời tiết.",
       "whyWrong": {
-        "A": "• Tính năng thông thường.",
-        "B": "• Hạ tầng lưu trữ.",
-        "C": "• Chỉ nhiệt độ thì chưa đủ xâm phạm vị trí riêng tư."
+        "A": "• Truy cập dự báo thời tiết từ kênh truyền hình địa phương là chức năng cơ bản thụ động, không liên quan đến thuật toán học tập thu thập dữ liệu.",
+        "B": "• Lưu trữ dữ liệu trên AWS là chi tiết hạ tầng kỹ thuật, không phải kết quả của thuật toán học tập phân tích vị trí trạm thời tiết.",
+        "C": "• Thu thập dữ liệu nhiệt độ khi mở ứng dụng ít rủi ro hơn vì nhiệt độ chung không tiết lộ nhiều thông tin cá nhân như dữ liệu vị trí."
       }
     }
   },
@@ -4823,11 +4821,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. General Al",
       "concept": "• General AI: Trí tuệ nhân tạo toàn năng.",
-      "whyCorrect": "• General AI.",
+      "whyCorrect": "• General AI (Trí tuệ nhân tạo tổng quát) hay còn gọi là AGI (Artificial General Intelligence) là loại AI có khả năng thực hiện mọi nhiệm vụ trí tuệ mà con người làm được, thậm chí vượt trội hơn trong tất cả các lĩnh vực.",
       "whyWrong": {
-        "B": "• Thuật ngữ ngụy tạo.",
-        "C": "• Narrow AI.",
-        "D": "• Thuật ngữ ngụy tạo."
+        "B": "• \"Outwit AI\" là thuật ngữ không tồn tại trong phân loại AI chuẩn - đây là từ ngụy tạo trong đáp án gây nhiễu.",
+        "C": "• Specific AI (tương đương Narrow AI) chỉ giỏi một nhiệm vụ cụ thể được huấn luyện, không vượt trội con người ở mọi lĩnh vực.",
+        "D": "• \"Encompassing AI\" là thuật ngữ ngụy tạo không có trong bảng phân loại AI chuẩn (Narrow → General → Super)."
       }
     }
   },
@@ -4889,11 +4887,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. the predicted result was positive, and the actual result was positive",
       "concept": "• Confusion Matrix - True Positive: Dự đoán = Positive, Thực tế = Positive.",
-      "whyCorrect": "• Cả dự đoán và thực tế đều là Positive.",
+      "whyCorrect": "• True Positive (Dương tính thật) xảy ra khi mô hình dự đoán kết quả là dương tính (positive) và kết quả thực tế cũng là dương tính - tức mô hình dự đoán ĐÚNG rằng sự kiện xảy ra. Ví dụ: Mô hình dự đoán bệnh nhân bị bệnh, và bệnh nhân thực sự bị bệnh.",
       "whyWrong": {
-        "A": "• True Negative.",
-        "B": "• False Negative.",
-        "D": "• False Positive."
+        "A": "• Dự đoán âm tính và thực tế âm tính là True Negative (Âm tính thật) - mô hình đúng khi dự đoán sự kiện KHÔNG xảy ra.",
+        "B": "• Dự đoán âm tính nhưng thực tế dương tính là False Negative (Âm tính giả) - mô hình bỏ sót trường hợp thực sự xảy ra.",
+        "D": "• Dự đoán dương tính nhưng thực tế âm tính là False Positive (Dương tính giả) - mô hình báo động sai khi sự kiện không xảy ra."
       }
     }
   },
@@ -5020,10 +5018,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. If the holders of data are trustworthy entities. · B. Whether the data was gathered in an ethical manner.",
       "concept": "• Ethical Data Integrity: Thu thập đạo đức (ethical gathering) và Đơn vị lưu trữ uy tín (trustworthy entities).",
-      "whyCorrect": "• A và B đảm bảo tính toàn vẹn đạo đức của nguồn dữ liệu.",
+      "whyCorrect": "• Hai khía cạnh quan trọng của tính toàn vẹn đạo đức đối với dữ liệu: (1) Tổ chức nắm giữ dữ liệu có phải thực thể đáng tin cậy (trustworthy entities) hay không; (2) Dữ liệu có được thu thập theo cách đạo đức (ethical manner) hay không - đảm bảo nguồn gốc sạch và quản lý có trách nhiệm.",
       "whyWrong": {
-        "C": "• Giá trị thương mại thuộc về kinh doanh.",
-        "D": "• Định dạng dữ liệu là thuộc tính kỹ thuật."
+        "C": "• Giá trị thương mại hoặc tiền tệ của dữ liệu là yếu tố kinh doanh, không phải tiêu chí đạo đức về tính toàn vẹn dữ liệu.",
+        "D": "• Loại dữ liệu kỹ thuật (âm thanh, hình ảnh, v.v.) là đặc tính format, không phải yếu tố đánh giá tính toàn vẹn đạo đức."
       }
     }
   },
@@ -5052,11 +5050,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. To use the model in real-life predictions, monitoring the error rate and accuracy",
       "concept": "• ML Model Deployment Phase: Đưa mô hình vào môi trường production để dự đoán thực tế và liên tục theo dõi (monitor) hiệu năng.",
-      "whyCorrect": "• Ứng dụng thực tế và giám sát độ chính xác/lỗi.",
+      "whyCorrect": "• Giai đoạn triển khai (deployment phase) đưa mô hình vào ứng dụng thực tế (real-life predictions) để phục vụ người dùng cuối, đồng thời liên tục giám sát tỷ lệ lỗi (error rate) và độ chính xác (accuracy) để đảm bảo mô hình hoạt động đúng trong môi trường production.",
       "whyWrong": {
-        "A": "• Thử nghiệm thuộc bước Validation/Testing.",
-        "C": "• Huấn luyện lại thuộc bước Retraining.",
-        "D": "• Chọn thuật toán thuộc bước Model Selection."
+        "A": "• Thử nghiệm 40% dataset để kiểm tra accuracy thuộc về giai đoạn Testing/Evaluation, diễn ra trước deployment.",
+        "C": "• Nhận đầu vào mới, huấn luyện lặp lại để tìm đường cong tốt hơn thuộc về giai đoạn Training/Retraining, không phải deployment.",
+        "D": "• Xác định loại thuật toán và làm sạch dữ liệu thuộc về giai đoạn Development/Preparation, bước đầu tiên trong pipeline."
       }
     }
   },
@@ -5117,11 +5115,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Automation bias",
       "concept": "• Automation Bias: Tin tưởng tuyệt đối vào máy móc hơn con người.",
-      "whyCorrect": "• Automation bias.",
+      "whyCorrect": "• Automation bias (Định kiến tự động hóa) là hiện tượng tâm lý khiến con người tin tưởng kết quả của hệ thống ra quyết định tự động (ADS) hơn phán đoán của chính mình hoặc đồng nghiệp, ngay cả khi hệ thống sai và con người có thể nhận ra sai sót nếu tư duy phản biện.",
       "whyWrong": {
-        "A": "• Định kiến vô thức.",
-        "C": "• Chủ quan mất cảnh giác.",
-        "D": "• Tìm thông tin củng cố quan điểm."
+        "A": "• Implicit bias (Định kiến tiềm ẩn) là thành kiến vô thức bắt nguồn từ trải nghiệm xã hội và văn hóa, không liên quan đến niềm tin vào công nghệ.",
+        "C": "• Complacency bias (Định kiến tự mãn) là sự lơ là cảnh giác khi mọi thứ vận hành suôn sẻ trong thời gian dài, khác với niềm tin vào ADS.",
+        "D": "• Confirmation bias (Định kiến xác nhận) là xu hướng tìm kiếm thông tin củng cố niềm tin sẵn có, không đặc thù cho hệ thống tự động."
       }
     }
   },
@@ -5273,21 +5271,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Công nghệ theo dõi mắt (eye-tracking) thu thập dữ liệu bằng cách:",
+      "questionVi": "Phân nhóm nào của tính minh bạch liên quan đến việc mô tả hệ thống cho một người không có chuyên môn (non-expert)?",
       "optionsVi": {
-        "A": "Đo chuyển động mắt của người dùng khi xem màn hình (measuring user's eye movements when viewing screen)",
-        "B": "Ghi lại các đối tượng người dùng nhìn thấy trong phòng",
-        "C": "Xác định khoảng cách giữa mắt người dùng và màn hình",
-        "D": "Theo dõi cảm xúc người dùng qua phân tích khuôn mặt"
+        "A": "Khả năng giải thích (Explainability)",
+        "B": "Khả năng diễn giải (Interpretability)",
+        "C": "Khả năng kiểm toán (Auditability)",
+        "D": "Tính khả dụng (Usability)"
       },
-      "answerDisplay": "A. measuring a user's eye movements when viewing a screen",
-      "concept": "• Eye-Tracking Technology: Kỹ thuật đo lường hướng nhìn, thời gian dừng và chuyển động mắt của người dùng trên giao diện.",
-      "whyCorrect": "• Đo chuyển động mắt khi tương tác với màn hình.",
+      "answerDisplay": "A. Explainability",
+      "concept": "• Explainability vs Interpretability: Khả năng giải thích hướng tới đối tượng người dùng phổ thông, trong khi khả năng diễn giải hướng tới chuyên gia kỹ thuật.",
+      "whyCorrect": "• Explainability (Khả năng giải thích) là tập con của Transparency, tập trung vào việc mô tả cách hoạt động của hệ thống AI bằng ngôn ngữ mà người không chuyên cũng có thể hiểu được, giúp xây dựng niềm tin và sự giám sát từ cộng đồng.",
       "whyWrong": {
-        "A": "",
-        "B": "• Thuộc về thị giác máy tính nhận diện không gian.",
-        "C": "• Thuộc về cảm biến khoảng cách.",
-        "D": "• Thuộc về Facial Emotion Recognition."
+        "B": "• Interpretability (Khả năng diễn giải) dành cho chuyên gia kỹ thuật phân tích cơ chế bên trong mô hình, không hướng tới người không chuyên.",
+        "C": "• Auditability (Khả năng kiểm toán) cho phép bên thứ ba kiểm tra hệ thống theo quy chuẩn pháp lý, mang tính kiểm tra chính thức hơn là giải thích đại chúng.",
+        "D": "• Usability (Tính khả dụng) đề cập đến mức độ dễ sử dụng của giao diện, không liên quan đến việc giải thích cơ chế ra quyết định của thuật toán."
       }
     }
   },
@@ -5307,19 +5304,19 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A, B",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Tại sao việc tích hợp quy trình đồng ý (consent process) vào thiết kế của công nghệ lại quan trọng? (Chọn hai)",
+      "questionVi": "Những cân nhắc đạo đức nào sau đây nên được ưu tiên hàng đầu trong tình huống khẩn cấp như việc sử dụng các giải pháp truy vết tiếp xúc (contact-tracing)?",
       "optionsVi": {
-        "A": "Nó bảo vệ cá nhân khỏi các xâm phạm riêng tư không mong muốn (protects individuals from unwanted privacy invasions)",
-        "B": "Nó trao quyền cho các cá nhân kiểm soát thông tin cá nhân của họ (empowers individuals to have control over personal information)",
-        "C": "Nó cho phép thu thập mọi dữ liệu người dùng",
-        "D": "Nó loại bỏ trách nhiệm pháp lý của công ty"
+        "A": "Quyền riêng tư (Privacy)",
+        "B": "Trách nhiệm giải trình (Accountability)",
+        "C": "Khả năng giải thích (Explainability)",
+        "D": "Định kiến (Bias)"
       },
-      "answerDisplay": "A. It protects individuals from unwanted privacy invasions. · B. It empowers individuals to have control over personal information.",
-      "concept": "• Consent in Privacy Design: Quy trình xin phép (Consent) vừa bảo vệ riêng tư vừa trao quyền tự quyết dữ liệu cho người dùng.",
-      "whyCorrect": "• A và B phản ánh mục tiêu cốt lõi của Consent.",
+      "answerDisplay": "A. Privacy · B. Accountability",
+      "concept": "• Ethical Priorities in Emergencies: Trong tình trạng khẩn cấp y tế, việc bảo vệ dữ liệu nhạy cảm và gán trách nhiệm quản lý rõ ràng là quan trọng nhất.",
+      "whyCorrect": "• Trong tình huống khẩn cấp như sử dụng ứng dụng truy vết tiếp xúc (contact-tracing), Privacy cần được ưu tiên vì dữ liệu vị trí và tiếp xúc cá nhân rất nhạy cảm, đồng thời Accountability đảm bảo rõ ràng ai chịu trách nhiệm quản lý và bảo vệ khối lượng lớn dữ liệu sức khỏe cộng đồng được thu thập.",
       "whyWrong": {
-        "C": "• Ngược lại, consent cấm thu thập bừa bãi.",
-        "D": "• Consent không giúp công ty rũ bỏ trách nhiệm pháp lý."
+        "C": "• Explainability quan trọng nhưng trong tình huống khẩn cấp, ưu tiên bảo vệ dữ liệu cá nhân và trách nhiệm giải trình cao hơn việc giải thích thuật toán.",
+        "D": "• Bias cần được xem xét nhưng không phải ưu tiên hàng đầu trong khẩn cấp y tế - bảo vệ riêng tư dữ liệu sức khỏe và xác định trách nhiệm quản lý dữ liệu cấp bách hơn."
       }
     }
   },
@@ -5339,20 +5336,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "B",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Một cách để thu thập dữ liệu đạo đức hơn là:",
+      "questionVi": "Một mô hình vẫn có thể không công bằng ngay cả khi nó không biết rõ nhóm nào đang được đưa vào hệ thống, điều này liên quan đến thuộc tính nào?",
       "optionsVi": {
-        "A": "Mua dữ liệu từ môi giới",
-        "B": "Lấy dữ liệu không cần xin phép",
-        "C": "Minh bạch về cách dữ liệu được thu thập và sử dụng (transparent about how data is collected and used)",
-        "D": "Ẩn các điều khoản dịch vụ"
+        "A": "Huấn luyện thiên vị (biased training)",
+        "B": "Thuộc tính mù (blind attribute)",
+        "C": "Thuộc tính đơn (single attribute)",
+        "D": "Tối ưu hóa âm tính giả (false-negative optimized)"
       },
-      "answerDisplay": "C. being transparent about how data is collected and used",
-      "concept": "• Ethical Data Collection: Thu thập dữ liệu minh bạch và tự nguyện.",
-      "whyCorrect": "• Minh bạch mục đích thu thập và sử dụng dữ liệu.",
+      "answerDisplay": "B. blind attribute",
+      "concept": "• Fairness through Blindness Fallacy: Loại bỏ trực tiếp các thuộc tính nhạy cảm không đủ để đảm bảo tính công bằng vì mô hình vẫn có thể học qua các thuộc tính proxy tương quan.",
+      "whyCorrect": "• Mô hình sử dụng blind attribute (thuộc tính mù) loại bỏ trực tiếp các biến nhạy cảm (như chủng tộc, giới tính) khỏi đầu vào, nhưng vẫn có thể bất công vì các biến proxy (biến gián tiếp tương quan) như mã bưu chính hay thu nhập vẫn ngầm mã hóa thông tin nhóm.",
       "whyWrong": {
-        "A": "• Môi giới dữ liệu thường thiếu đồng ý hợp lệ.",
-        "B": "• Vi phạm nghiêm trọng đạo đức riêng tư.",
-        "D": "• Che giấu điều khoản là phi đạo đức."
+        "A": "• Biased training (huấn luyện thiên vị) mô tả dữ liệu huấn luyện không công bằng nói chung, không nhấn mạnh việc che giấu biến nhạy cảm.",
+        "C": "• Single attribute (thuộc tính đơn) không phải thuật ngữ chuẩn trong fairness ML và không mô tả hiện tượng loại bỏ biến nhạy cảm nhưng vẫn bất công.",
+        "D": "• False-negative optimized (tối ưu âm tính giả) mô tả chiến lược tối ưu hóa cụ thể, không liên quan đến việc che giấu thuộc tính nhóm."
       }
     }
   },
@@ -5372,20 +5369,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Nếu mô hình của bạn có xu hướng đưa ra kết quả phân biệt đối xử với nhóm yếu thế, bạn đang gặp phải loại định kiến nào?",
+      "questionVi": "Tính công bằng trong máy học có thể bảo vệ các nhóm khỏi bị định kiến, nhưng vẫn có thể gây hại cho:",
       "optionsVi": {
-        "A": "Định kiến nhận thức",
-        "B": "Định kiến hệ thống / Đạo đức (Algorithmic / Systemic bias)",
-        "C": "Định kiến xác nhận",
-        "D": "Định kiến mẫu"
+        "A": "Các tập dữ liệu huấn luyện",
+        "B": "Các nhà nghiên cứu",
+        "C": "Các mô hình trong tương lai",
+        "D": "Các cá nhân bên trong các nhóm đó (individuals within those groups)"
       },
-      "answerDisplay": "B. Algorithmic / Systemic bias",
-      "concept": "• Systemic / Algorithmic Bias: Mô hình đưa ra kết quả bất lợi mang tính phân biệt đối xử với nhóm đối tượng yếu thế.",
-      "whyCorrect": "• Systemic bias gây thiệt hại phân biệt đối xử.",
+      "answerDisplay": "D. individuals within those groups",
+      "concept": "• Group Fairness vs Individual Fairness: Sự công bằng ở cấp độ nhóm đôi khi có thể dẫn đến bất công cho các cá nhân cụ thể thuộc nhóm đó.",
+      "whyCorrect": "• Mặc dù mô hình fairness bảo vệ các nhóm (groups) khỏi bias ở cấp tổng thể, nó vẫn có thể gây hại cho CÁ NHÂN bên trong nhóm đó - ví dụ một cá nhân xứng đáng bị từ chối do mô hình ép cân bằng tỷ lệ giữa các nhóm (subgroup fairness vs individual fairness).",
       "whyWrong": {
-        "A": "• Thuộc tâm lý con người.",
-        "C": "• Thuộc tìm kiếm thông tin củng cố.",
-        "D": "• Thuộc lỗi mẫu."
+        "A": "• Training datasets là công cụ kỹ thuật, không phải đối tượng bị \"hại\" - dữ liệu không có quyền lợi cần bảo vệ.",
+        "B": "• Researchers (nhà nghiên cứu) không bị hại trực tiếp bởi quyết định của mô hình fairness - họ là người xây dựng, không phải đối tượng chịu tác động.",
+        "C": "• Future models (mô hình tương lai) không bị tổn hại - chúng sẽ được huấn luyện trên dữ liệu mới và có thể cải thiện."
       }
     }
   },
@@ -5479,11 +5476,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. National governments",
       "concept": "• OECD AI Principles Target: Khung chuẩn OECD ra đời nhằm định hướng cho chính phủ các quốc gia xây dựng chính sách pháp lý về AI.",
-      "whyCorrect": "• Hướng tới chính phủ các quốc gia thành viên.",
+      "whyCorrect": "• Các Nguyên tắc OECD về AI được thiết kế chủ yếu cho chính phủ các quốc gia thành viên, cung cấp khung hướng dẫn để xây dựng chính sách pháp lý quốc gia về quản trị AI có trách nhiệm, an toàn và minh bạch.",
       "whyWrong": {
-        "A": "• Cá nhân không ban hành được chính sách quốc gia.",
-        "B": "• Cấp chính quyền địa phương quá nhỏ.",
-        "D": "• OECD là tổ chức liên chính phủ."
+        "A": "• Các cá nhân không có quyền lực ban hành chính sách quốc gia về AI - OECD là diễn đàn liên chính phủ hướng tới cấp nhà nước.",
+        "B": "• Chính quyền thành phố/địa phương quá nhỏ về phạm vi - OECD hoạt động ở cấp liên quốc gia với các quốc gia thành viên.",
+        "D": "• Tập đoàn tư nhân là đối tượng bị quản lý bởi chính sách quốc gia, không phải đối tượng chính mà OECD Principles hướng tới trực tiếp."
       }
     }
   },
@@ -5512,11 +5509,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. Ethical frameworks seek to mitigate ethical concerns by creating actionable steps.",
       "concept": "• Actionable Ethical Framework: Biến nguyên tắc thành hành động.",
-      "whyCorrect": "• Actionable steps.",
+      "whyCorrect": "• Khung chuẩn đạo đức (ethical framework) có đặc trưng là biến các quan ngại đạo đức trừu tượng thành các bước hành động cụ thể, thực tiễn (actionable steps) mà tổ chức có thể triển khai ngay, khác với triết học đạo đức thuần lý thuyết.",
       "whyWrong": {
-        "A": "• Khó hành động là sai.",
-        "B": "• Siêu đạo đức là triết học.",
-        "C": "• Pháp lý không phải đạo đức."
+        "A": "• \"Đặt câu hỏi không thể hành động\" mô tả ngược lại mục đích của framework - framework TẠO RA hành động cụ thể, không phải đặt câu hỏi suông.",
+        "B": "• Siêu đạo đức (meta-ethics) phân tích BẢN CHẤT của đạo đức ở cấp triết học, không được áp dụng trực tiếp vào hoạt động kinh doanh hàng ngày.",
+        "C": "• Gộp các yêu cầu quy định ngành mô tả compliance framework (khung tuân thủ pháp lý), không phải ethical framework - đạo đức rộng hơn pháp lý."
       }
     }
   },
@@ -5611,10 +5608,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. To determine what occurred in an incident. · C. To identify who or what is responsible for an incident.",
       "concept": "• Digital Forensics Goals: Xác định diễn biến sự cố (what occurred) và nguyên nhân/kẻ chịu trách nhiệm (who/what is responsible).",
-      "whyCorrect": "• B và C là 2 mục tiêu cốt lõi của điều tra pháp y.",
+      "whyCorrect": "• Phân tích pháp y số (digital forensic analysis) có hai mục tiêu cốt lõi: (1) Xác định chính xác ĐIỀU GÌ đã xảy ra trong sự cố (chuỗi sự kiện, phương pháp tấn công); (2) Xác định AI hoặc CÁI GÌ chịu trách nhiệm (kẻ tấn công, malware, lỗ hổng bị khai thác).",
       "whyWrong": {
-        "A": "• Thông báo sự cố thuộc PR/Truyền thông.",
-        "D": "• Giảm thiểu sự cố thuộc Ứng phó sự cố (Incident Response)."
+        "A": "• Thông báo sự cố cho các bên liên quan thuộc về quy trình Incident Notification/Communication, diễn ra song song nhưng không phải mục tiêu của phân tích pháp y.",
+        "D": "• Giảm thiểu tác động sự cố thuộc về Incident Response/Containment, là giai đoạn ứng phó khẩn cấp diễn ra trước khi phân tích pháp y bắt đầu."
       }
     }
   },
@@ -5643,11 +5640,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Radioactive data tracing doesn't impact a model's performance.",
       "concept": "• Radioactive Data Tracing: Kỹ thuật đánh dấu dữ liệu bản quyền (watermarking) sao cho mô hình học từ dữ liệu đó bị dán nhãn nhận diện được nhưng KHÔNG làm giảm hiệu năng mô hình.",
-      "whyCorrect": "• Không gây tổn hại tới hiệu năng của mô hình AI.",
+      "whyCorrect": "• Ưu điểm vượt trội của radioactive data tracing so với kỹ thuật cũ là nó đánh dấu watermark vào dữ liệu huấn luyện mà KHÔNG làm suy giảm hiệu năng mô hình AI, cho phép phát hiện việc sử dụng dữ liệu trái phép mà không phải đánh đổi chất lượng mô hình.",
       "whyWrong": {
-        "A": "• Đánh dấu ở feature level chứ không sửa nhãn bừa bãi.",
-        "C": "• Áp dụng cho cả hình ảnh và văn bản.",
-        "D": "• Dấu vết ẩn không làm méo mó hình ảnh."
+        "A": "• Sửa đổi nhãn (label) là kỹ thuật cũ (data poisoning detection) - radioactive tracing hoạt động ở cấp đặc trưng (feature level) tinh vi hơn, không chỉ sửa nhãn.",
+        "C": "• Radioactive data tracing áp dụng cho nhiều loại dữ liệu (hình ảnh, văn bản, âm thanh), không giới hạn ở ngôn ngữ - đây là kỹ thuật tổng quát.",
+        "D": "• Dấu vết radioactive được thiết kế để ẨN với mắt người (imperceptible) - nếu người dùng nhận ra thì watermark sẽ dễ bị xóa và mất tác dụng."
       }
     }
   },
@@ -5676,11 +5673,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. Threat modeling or analysis tools",
       "concept": "• STRIDE & VAST Threat Modeling.",
-      "whyCorrect": "• Threat modeling.",
+      "whyCorrect": "• STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) và VAST (Visual, Agile, Simple Threat) là hai phương pháp phân loại mối đe dọa được áp dụng trong các công cụ mô hình hóa mối đe dọa (threat modeling), giúp phân tích và đánh giá rủi ro bảo mật hệ thống.",
       "whyWrong": {
-        "A": "• Sai lĩnh vực.",
-        "B": "• Sai lĩnh vực.",
-        "C": "• Sai lĩnh vực."
+        "A": "• Black box mitigation methods thuộc về kỹ thuật giải thích AI (XAI), không liên quan đến phân loại mối đe dọa an ninh mạng.",
+        "B": "• Network optimization tools tập trung vào cải thiện hiệu năng mạng (bandwidth, latency), hoàn toàn khác lĩnh vực với phân tích mối đe dọa.",
+        "C": "• Bias mitigation techniques thuộc về AI Fairness, giải quyết vấn đề công bằng thuật toán chứ không phải bảo mật hệ thống."
       }
     }
   },
@@ -5742,10 +5739,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Tracking deviance from norms · C. Restoring compromised functionality through a system rollback",
       "concept": "• System Baseline Benefits: Giúp phát hiện hành vi bất thường (deviance from norms) và khôi phục trạng thái an toàn chuẩn (rollback).",
-      "whyCorrect": "• A và C đúng lợi ích kỹ thuật của baseline monitoring.",
+      "whyCorrect": "• Thiết lập hành vi hệ thống cơ sở (baseline) mang lại hai lợi ích bảo mật chính: (1) Phát hiện hành vi bất thường lệch chuẩn (tracking deviance from norms) bằng cách so sánh với baseline; (2) Khôi phục hệ thống về trạng thái an toàn đã biết (system rollback) khi bị xâm phạm.",
       "whyWrong": {
-        "B": "• Tối ưu chi phí là bài toán tài chính.",
-        "D": "• Không trực tiếp dùng cho quản lý nhân sự."
+        "B": "• Tối ưu chi phí vận hành là mục tiêu tài chính/kinh doanh, không phải lợi ích trực tiếp từ việc thiết lập baseline bảo mật hệ thống.",
+        "D": "• Buộc nhân viên chịu trách nhiệm hơn thuộc về quản trị nhân sự/văn hóa tổ chức, baseline hệ thống giám sát máy móc chứ không phải con người."
       }
     }
   },
@@ -5806,11 +5803,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Self-learning models are black boxes whose decisions cannot be understood.",
       "concept": "• Self-Learning Black Box Risk: Thuật toán tự học liên tục thay đổi trọng số làm cho quy trình ra quyết định trở thành hộp đen hoàn toàn.",
-      "whyCorrect": "• Bản chất hộp đen khó giải thích của tự học.",
+      "whyCorrect": "• Mô hình tự học (self-learning models) liên tục cập nhật trọng số và cấu trúc nội bộ dựa trên dữ liệu mới, khiến quá trình ra quyết định trở thành hộp đen hoàn toàn (black box) - ngay cả người tạo ra mô hình cũng không thể hiểu tại sao nó đưa ra một quyết định cụ thể.",
       "whyWrong": {
-        "A": "• Không làm hỏng dữ liệu.",
-        "B": "• Không tự sinh dữ liệu thô mới.",
-        "D": "• Mô hình tạo quyết định rất nhanh."
+        "A": "• Self-learning models không \"làm hỏng\" hay \"phá hủy\" dữ liệu - chúng xử lý và học từ dữ liệu mà không thay đổi nguồn dữ liệu gốc.",
+        "B": "• Self-learning models không tự \"giới thiệu dữ liệu mới\" từ bên ngoài - chúng học từ dữ liệu được cung cấp và tạo ra các biểu diễn nội bộ mới.",
+        "D": "• Self-learning models hoàn toàn có khả năng tạo ra quyết định (output decisions) rất nhanh - vấn đề là KHÔNG HIỂU được lý do đằng sau quyết định đó."
       }
     }
   },
@@ -5839,11 +5836,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. the model is more accurate",
       "concept": "• Explainability Benefits: Khi mô hình có thể giải thích được, các kỹ sư dễ dàng phát hiện lỗi sai để tinh chỉnh giúp tăng độ chính xác thực tế.",
-      "whyCorrect": "• Dễ tinh chỉnh nâng cao độ chính xác thực tế.",
+      "whyCorrect": "• Khi mô hình có thể giải thích được (explainable), các kỹ sư và nhà khoa học dữ liệu dễ dàng phát hiện lỗi logic, bias ẩn và điểm yếu trong quá trình ra quyết định, từ đó tinh chỉnh và cải thiện giúp mô hình đạt độ chính xác cao hơn trong thực tế.",
       "whyWrong": {
-        "A": "• XAI đôi khi xung đột nhẹ với riêng tư.",
-        "B": "• Không liên quan tới tuyển dụng.",
-        "C": "• Không liên quan đến cạnh tranh thị trường."
+        "A": "• Explainability đôi khi thực sự XUNG ĐỘT với privacy - giải thích chi tiết cách mô hình hoạt động có thể vô tình tiết lộ thông tin nhạy cảm trong dữ liệu huấn luyện.",
+        "B": "• Đòn bẩy tuyển dụng (recruiting leverage) không phải lợi ích kỹ thuật trực tiếp của tính giải thích được - đây là lợi ích HR gián tiếp.",
+        "C": "• Ít cạnh tranh hơn hoàn toàn không liên quan - thị trường AI ngày càng cạnh tranh bất kể mô hình có explainable hay không."
       }
     }
   },
@@ -5872,10 +5869,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. The rights of individuals or communities. · D. The health and well-being of individuals or communities.",
       "concept": "• Algorithmic Impact Assessment Level 2: Ảnh hưởng vừa phải (Moderate impact) tác động tới Quyền (Rights) và Sức khỏe/Phúc lợi (Health & Well-being) của cộng đồng.",
-      "whyCorrect": "• C và D thuộc định nghĩa Impact Level 2.",
+      "whyCorrect": "• Trong Đánh giá Tác động Thuật toán Cấp độ 2 (Moderate Impact), hai yếu tố bị ảnh hưởng vừa phải là: (1) Quyền của cá nhân/cộng đồng (rights) - ví dụ bị từ chối dịch vụ không công bằng; (2) Sức khỏe và phúc lợi (health and well-being) - ví dụ ảnh hưởng nhẹ đến chất lượng chăm sóc y tế.",
       "whyWrong": {
-        "A": "• Mất mạng thuộc Level 4 (High/Catastrophic impact).",
-        "B": "• Trễ giao dịch thuộc Level 1 (Low impact)."
+        "A": "• Mất mạng do hoàn cảnh cụ thể thuộc về Impact Level 4 (Critical/Catastrophic) - đây là hậu quả nghiêm trọng nhất, vượt xa mức \"vừa phải\".",
+        "B": "• Chậm trễ ngắn trong giao dịch thương mại thuộc về Impact Level 1 (Low) - đây chỉ là bất tiện nhỏ, chưa đạt mức \"vừa phải\"."
       }
     }
   },
@@ -5937,11 +5934,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Encryption protocols",
       "concept": "• Cryptographic Protocols: SSL, TLS, SSH là các giao thức mã hóa đường truyền bảo vệ dữ liệu.",
-      "whyCorrect": "• Giao thức mã hóa bảo mật truyền thông.",
+      "whyCorrect": "• SSL (Secure Sockets Layer), TLS (Transport Layer Security) và SSH (Secure Shell) đều là các giao thức mã hóa (encryption protocols) bảo vệ dữ liệu truyền qua mạng - SSL/TLS mã hóa web traffic (HTTPS), SSH mã hóa kết nối quản trị từ xa.",
       "whyWrong": {
-        "A": "• Không phải công cụ forensic.",
-        "B": "• Codecs dùng để giải mã video/audio.",
-        "D": "• Version control là Git/SVN."
+        "A": "• Computer forensics tools (công cụ pháp y máy tính) dùng để điều tra sự cố bảo mật sau khi xảy ra, hoàn toàn khác với giao thức mã hóa truyền thông.",
+        "B": "• Media codecs (bộ giải mã truyền thông) xử lý nén/giải nén video và âm thanh (như H.264, MP3), không liên quan đến mã hóa bảo mật.",
+        "D": "• Version control systems (hệ thống quản lý phiên bản) như Git, SVN quản lý mã nguồn phần mềm, không phải giao thức bảo mật mạng."
       }
     }
   },
@@ -5970,11 +5967,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. An open source library that evaluates models for bias and provides mitigation tactics to reduce that bias.",
       "concept": "• AI Fairness 360 (IBM): Bộ công cụ mã nguồn mở giúp phát hiện và loại bỏ định kiến (bias mitigation) trong mô hình ML.",
-      "whyCorrect": "• Thư viện mã nguồn mở phát hiện và giảm định kiến.",
+      "whyCorrect": "• AI Fairness 360 (AIF360) do IBM phát triển là thư viện mã nguồn mở cung cấp hơn 70 chỉ số đánh giá bias và hơn 10 thuật toán giảm thiểu bias, cho phép nhà phát triển phát hiện và sửa chữa sự bất công trong mô hình ML ở mọi giai đoạn pipeline.",
       "whyWrong": {
-        "B": "• AIF360 là bộ mã nguồn/thư viện code, không phải file text checklist.",
-        "C": "• Không phải hội thảo.",
-        "D": "• Không phải một sản phẩm AI thương mại."
+        "B": "• AIF360 không phải bảng kiểm tra (checklist) - nó là bộ MÃ NGUỒN thực thi được với các hàm API, thuật toán và công cụ phân tích tự động.",
+        "C": "• AIF360 không phải sáng kiến cộng đồng tổ chức hội thảo - nó là sản phẩm kỹ thuật cụ thể (thư viện Python) có thể cài đặt và sử dụng trực tiếp.",
+        "D": "• AIF360 không phải một mô hình AI hoàn hảo để benchmark - nó là BỘ CÔNG CỤ giúp đánh giá và cải thiện bất kỳ mô hình nào."
       }
     }
   },
@@ -6001,11 +5998,9 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. To aggregate alerts from disparate sources into a single analysis platform.",
       "concept": "• SIEM Role: Gộp log và cảnh báo an ninh từ nhiều nguồn phân tán để phân tích tập trung.",
-      "whyCorrect": "• Aggregate alerts into a single platform.",
+      "whyCorrect": "• SIEM (Security Information and Event Management) có mục đích tập hợp và tương quan các cảnh báo bảo mật từ nhiều nguồn khác nhau (firewall, IDS, server logs, endpoint) vào MỘT nền tảng phân tích tập trung, giúp đội bảo mật có cái nhìn toàn diện và phát hiện mối đe dọa nhanh hơn.",
       "whyWrong": {
-        "A": "• PenTest.",
-        "B": "• CVSS scoring.",
-        "D": "• TLS/SSL."
+        "A": "• Tấn công mô phỏng hệ thống và mạng là chức năng của Penetration Testing Tools (như Metasploit, Kali Linux), không phải SIEM."
       }
     }
   },
@@ -6034,11 +6029,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. heads for true answer, tails for random answer",
       "concept": "• Randomized Response Technique: Kỹ thuật tung đồng xu thêm nhiễu ngẫu nhiên giúp bảo vệ riêng tư người trả lời câu hỏi nhạy cảm.",
-      "whyCorrect": "• Ngửa trả lời thật, Sấp trả lời ngẫu nhiên là cơ chế Randomized Response chuẩn.",
+      "whyCorrect": "• Kỹ thuật Randomized Response: khi tung đồng xu ngửa → trả lời thật (true answer), sấp → trả lời ngẫu nhiên (random answer). Cơ chế này bảo vệ riêng tư vì không ai biết câu trả lời nào là thật hay ngẫu nhiên, nhưng dữ liệu tổng hợp vẫn có giá trị thống kê để phân tích.",
       "whyWrong": {
-        "A": "• Không bảo vệ riêng tư vì lộ đáp án trực tiếp.",
-        "B": "• Làm mất tính có ích của dữ liệu.",
-        "D": "• Quy tắc sai lệch."
+        "A": "• Ngửa = có, sấp = không hoàn toàn không bảo vệ riêng tư - mọi người đều biết câu trả lời thật của bạn, không có yếu tố ngẫu nhiên bảo vệ.",
+        "B": "• Ngửa = giả, sấp = thật khiến dữ liệu mất hoàn toàn tính hữu ích - 50% câu trả lời là giả nhưng không có cách nào phân biệt, phá hủy giá trị thống kê.",
+        "D": "• Ngửa = ngẫu nhiên, sấp = có tạo ra quy tắc bất đối xứng sai lệch - chỉ bảo vệ riêng tư một chiều và thiếu tính nhất quán của Randomized Response."
       }
     }
   },
@@ -6100,11 +6095,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Suspicion leads to aggressive rejection of a technology.",
       "concept": "• Suspicion in Tech Acceptance: Nghi ngờ thiếu thông tin khiến công chúng từ chối gay gắt (aggressive rejection) công nghệ.",
-      "whyCorrect": "• Dẫn tới sự bài trừ/từ chối gay gắt công nghệ.",
+      "whyCorrect": "• Sự nghi ngờ (suspicion) là cạm bẫy nguy hiểm trong truyền thông rủi ro vì nó dẫn đến sự từ chối công nghệ một cách gay gắt và cảm xúc (aggressive rejection), thay vì đánh giá khách quan - khiến mọi nỗ lực truyền thông minh bạch trở nên vô ích.",
       "whyWrong": {
-        "A": "• Sợ hãi chỉ là nguyên nhân.",
-        "C": "• Tuyệt đối hóa quá mức.",
-        "D": "• Từ chối chứ không chỉ dùng kém."
+        "A": "• Sợ hãi về công nghệ chưa biết rõ mô tả nguyên nhân tâm lý gốc rễ của suspicion, nhưng HẬU QUẢ trực tiếp là aggressive rejection chứ không chỉ dừng ở nỗi sợ.",
+        "C": "• \"Không thể thuyết phục\" quá tuyệt đối - suspicion làm KHÓ thuyết phục nhưng không phải hoàn toàn bất khả thi nếu có chiến lược truyền thông phù hợp.",
+        "D": "• \"Dùng công nghệ kém hiệu quả\" mô tả hậu quả gián tiếp và nhẹ hơn - hậu quả trực tiếp và nghiêm trọng nhất của suspicion là TỪ CHỐI HOÀN TOÀN công nghệ."
       }
     }
   },
@@ -6133,10 +6128,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. It's in a digital format · D. It's concise",
       "concept": "• Modern Press Release Qualities: Định dạng kỹ thuật số (digital) và Ngắn gọn súc tích (concise).",
-      "whyCorrect": "• A và D giúp thông cáo báo chí phát tán nhanh và hiệu quả.",
+      "whyCorrect": "• Thông cáo báo chí hiện đại cần hai đặc tính quan trọng: (1) Định dạng kỹ thuật số (digital format) để phân phối nhanh qua nhiều kênh trực tuyến; (2) Ngắn gọn súc tích (concise) để truyền tải thông điệp cốt lõi hiệu quả trong thời đại thông tin quá tải.",
       "whyWrong": {
-        "B": "• Có thể chứa link/media tương tác.",
-        "C": "• Nên phân phối đa kênh."
+        "B": "• Thông cáo báo chí hiện đại thường có thể bao gồm các liên kết, video nhúng và phương tiện tương tác, không nhất thiết phải \"không tương tác\".",
+        "C": "• Phân phối trên một nền tảng duy nhất giới hạn độ tiếp cận - thông cáo hiệu quả cần được phát trên nhiều kênh (email, website, mạng xã hội, wire services)."
       }
     }
   },
@@ -6262,11 +6257,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. To make operational improvements",
       "concept": "• Post-Crisis Feedback Purpose: Nhận phản hồi để cải tiến quy trình vận hành (operational improvements), tránh lặp lại sai lầm.",
-      "whyCorrect": "• Thực hiện cải tiến vận hành thực tế.",
+      "whyCorrect": "• Mục đích chính của việc nhận phản hồi sau khủng hoảng đạo đức là thực hiện các cải tiến vận hành thực tế (operational improvements) - rút bài học cụ thể để sửa đổi quy trình, chính sách và hệ thống, ngăn chặn sự cố tương tự tái diễn.",
       "whyWrong": {
-        "A": "• Tuân thủ chỉ là khía cạnh hình thức.",
-        "C": "• Xoa dịu mang tính đối phó bề nổi.",
-        "D": "• Thúc đẩy nhân sự thuộc quản trị nội bộ."
+        "A": "• Chứng minh tuân thủ (demonstrate compliance) chỉ là mục tiêu hình thức bề ngoài - cải tiến vận hành thực chất mới tạo ra thay đổi lâu dài.",
+        "C": "• Xoa dịu bên liên quan (appease stakeholders) mang tính đối phó tạm thời - nếu không có cải tiến thực sự, sự xoa dịu sẽ nhanh chóng mất hiệu lực.",
+        "D": "• Thúc đẩy nhân sự nội bộ là lợi ích phụ - mục đích cốt lõi là cải thiện hệ thống và quy trình, không phải tạo động lực cho nhân viên."
       }
     }
   },
@@ -6360,11 +6355,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. Ensure your message is consistent",
       "concept": "• Media Best Practice: Thông điệp phải nhất quán (consistent) giữa các đợt phát ngôn để tránh mâu thuẫn.",
-      "whyCorrect": "• Tính nhất quán (consistency) xây dựng niềm tin báo chí.",
+      "whyCorrect": "• Đảm bảo thông điệp nhất quán (consistent message) là best practice quan trọng nhất khi tham gia trả lời báo chí, vì mâu thuẫn giữa các phát ngôn sẽ làm suy giảm uy tín tổ chức và gây nghi ngờ về tính trung thực trong mắt truyền thông và công chúng.",
       "whyWrong": {
-        "A": "• Né tránh báo chí đối lập gây nghi ngờ.",
-        "B": "• Nhanh nhưng không chính xác gây hậu quả xấu.",
-        "C": "• Tiết lộ tối thiểu gây cảm giác che giấu."
+        "A": "• Chỉ nói chuyện với báo chí ủng hộ tạo ra hình ảnh thiên vị và né tránh, khiến các cơ quan báo chí bị từ chối sẽ đưa tin tiêu cực mạnh hơn.",
+        "B": "• Phát hành thông điệp quá nhanh mà chưa xác minh kỹ có thể dẫn đến thông tin sai lệch phải rút lại, gây thiệt hại uy tín nghiêm trọng hơn.",
+        "C": "• Chỉ tiết lộ tối thiểu theo luật tạo ấn tượng che giấu thông tin - công chúng và báo chí sẽ nghi ngờ tổ chức có nhiều điều muốn giấu."
       }
     }
   },
@@ -6426,11 +6421,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Superintelligence",
       "concept": "• Superintelligence: Vượt xa trí tuệ con người.",
-      "whyCorrect": "• Superintelligence.",
+      "whyCorrect": "• Hệ thống AI có khả năng dự đoán chính xác ai sẽ bị nhiễm bệnh trong đại dịch TRƯỚC KHI ca đầu tiên xuất hiện vượt xa mọi năng lực nhận thức của con người - đây là biểu hiện của Siêu trí tuệ (Superintelligence), vượt trội hoàn toàn so với trí tuệ con người ở mọi khía cạnh.",
       "whyWrong": {
-        "A": "• AI hẹp.",
-        "B": "• AI ngang tầm con người.",
-        "D": "• AI cơ bản."
+        "A": "• Narrow AI (AI hẹp) chỉ giỏi một nhiệm vụ cụ thể được huấn luyện và hoạt động trong phạm vi giới hạn, không thể dự đoán vượt xa khả năng con người như vậy.",
+        "B": "• General AI (AI tổng quát) ngang tầm trí tuệ con người nhưng không vượt trội - một bác sĩ giỏi nhất cũng không thể dự đoán cá nhân nhiễm bệnh trước ca đầu tiên.",
+        "D": "• Basic AI (AI cơ bản) chỉ xử lý các tác vụ logic đơn giản theo quy tắc cứng, hoàn toàn không có khả năng dự báo phức tạp như vậy."
       }
     }
   },
@@ -6459,11 +6454,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Linked IOT technology that always on and acting to personalize the experience for the people within its environment.",
       "concept": "• Ambient Intelligence (AmI): Môi trường thông minh gồm các thiết bị IoT cảm biến luôn bật (always on) để hỗ trợ và cá nhân hóa trải nghiệm sống.",
-      "whyCorrect": "• Luôn bật và cá nhân hóa trải nghiệm sống.",
+      "whyCorrect": "• Ambient intelligence (Trí tuệ môi trường) là hệ sinh thái các thiết bị IoT kết nối liên tục, LUÔN BẬT (always on) và hoạt động ngầm để cá nhân hóa trải nghiệm sống cho con người trong môi trường đó - tự động điều chỉnh ánh sáng, nhiệt độ, âm nhạc theo sở thích cá nhân.",
       "whyWrong": {
-        "A": "• Định nghĩa hẹp.",
-        "B": "• Mang tính gián điệp sai lệch.",
-        "D": "• Định nghĩa phạm vi hẹp."
+        "A": "• Chỉ \"thu thập và lưu trữ dữ liệu\" về nhà/văn phòng mô tả hệ thống giám sát thụ động - AmI phải CHỦ ĐỘNG hành động và cá nhân hóa, không chỉ thu thập.",
+        "B": "• \"Giám sát lén lút cho chính phủ\" hoàn toàn sai bản chất - AmI phục vụ người sống trong môi trường đó, không phải cơ quan giám sát.",
+        "D": "• \"Thu thập dữ liệu về khuôn viên\" quá hẹp về phạm vi và thiếu đặc trưng \"always on + personalize\" - đây chỉ là hệ thống sensor thông thường."
       }
     }
   },
@@ -6492,11 +6487,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Bioethics",
       "concept": "• Bioethics in Healthcare AI: Đạo đức y sinh học quản lý các quyết định điều trị y tế và sức khỏe con người.",
-      "whyCorrect": "• Gợi ý điều trị y tế thuộc Bioethics.",
+      "whyCorrect": "• Khi hệ thống AI gợi ý phương pháp điều trị cho bệnh nhân bệnh viện, các quan ngại đạo đức thuộc về Bioethics (Đạo đức y sinh học) vì liên quan trực tiếp đến sức khỏe, sinh mạng con người và các quyết định y tế có thể ảnh hưởng nghiêm trọng đến bệnh nhân.",
       "whyWrong": {
-        "B": "• Kỹ thuật phần mềm chung.",
-        "C": "• Đạo đức kinh doanh thương mại.",
-        "D": "• Đạo đức môi trường."
+        "B": "• Engineering ethics (Đạo đức kỹ thuật) tập trung vào trách nhiệm của kỹ sư trong thiết kế và xây dựng hệ thống an toàn, không đặc thù cho lĩnh vực y tế.",
+        "C": "• Business ethics (Đạo đức kinh doanh) đề cập đến hành vi kinh doanh công bằng, cạnh tranh lành mạnh - không bao phủ các vấn đề y tế chuyên biệt.",
+        "D": "• Environmental ethics (Đạo đức môi trường) liên quan đến tác động lên thiên nhiên và sinh thái, không phải quyết định điều trị y tế cho bệnh nhân."
       }
     }
   },
@@ -6525,11 +6520,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Smart contracts eliminate the need for a central authority.",
       "concept": "• Smart Contracts & Decentralization: Hợp đồng thông minh tự động thực thi trên Blockchain mà không cần bên trung gian/cơ quan trung tâm (central authority).",
-      "whyCorrect": "• Loại bỏ bên trung gian/cơ quan trung tâm.",
+      "whyCorrect": "• Hợp đồng thông minh (smart contract) tự động thực thi trên nền tảng blockchain phi tập trung, loại bỏ hoàn toàn nhu cầu về bên trung gian hoặc cơ quan trung tâm (central authority) như ngân hàng, luật sư hay tòa án để xác minh và thực thi điều khoản.",
       "whyWrong": {
-        "A": "• Mục đích vẫn là giao kết thỏa thuận.",
-        "C": "• Hiệu quả tùy bối cảnh.",
-        "D": "• Không phải hợp đồng nào cũng ẩn danh."
+        "A": "• Smart contract và traditional contract đều phục vụ cùng mục đích - giao kết và thực thi thỏa thuận giữa các bên, chỉ khác về cơ chế thực thi.",
+        "C": "• \"Hiệu quả hơn\" quá chung chung và phụ thuộc bối cảnh - smart contract nhanh hơn trong một số trường hợp nhưng thiếu linh hoạt khi cần sửa đổi.",
+        "D": "• Smart contract KHÔNG đảm bảo ẩn danh tuyệt đối - blockchain công khai (như Ethereum) cho phép truy vết giao dịch dù không hiển thị tên thật."
       }
     }
   },
@@ -6582,20 +6577,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "B",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Một trong những kết quả bất lợi chính của định kiến tự động hóa (automation bias) là:",
+      "questionVi": "Thông tin nào sau đây, khi đứng một mình, đủ điều kiện để coi là thông tin nhận dạng cá nhân (PII)?",
       "optionsVi": {
-        "A": "Thủ công hóa quy trình",
-        "B": "Giảm khả năng tự trị và sự giám sát của con người (reduced human autonomy and oversight)",
-        "C": "Tăng chi phí vận hành",
-        "D": "Lỗi phần cứng máy tính"
+        "A": "Loại thiết bị của người dùng",
+        "B": "Địa chỉ nhà riêng của người dùng",
+        "C": "Phiên bản trình duyệt của người dùng",
+        "D": "Hệ điều hành của người dùng"
       },
-      "answerDisplay": "B. reduced human autonomy and oversight",
-      "concept": "• Automation Bias Consequence: Phụ thuộc quá đà làm giảm sự giám sát của con me người (reduced human oversight) và quyền tự trị.",
-      "whyCorrect": "• Suy giảm khả năng tự trị và sự giám sát trực tiếp của con người.",
+      "answerDisplay": "B. A user's home address",
+      "concept": "• Personally Identifiable Information (PII): Thông tin có thể được sử dụng trực tiếp để nhận dạng, liên hệ hoặc định vị một cá nhân cụ thể.",
+      "whyCorrect": "• Địa chỉ nhà riêng (home address) là thông tin nhận dạng cá nhân trực tiếp (PII) vì nó xác định vị trí cư trú duy nhất của một cá nhân cụ thể trong đời thực.",
       "whyWrong": {
-        "A": "• Automation bias làm quá trình tự động hơn chứ không thủ công hóa.",
-        "C": "• Chi phí vận hành không phải kết quả tâm lý trực tiếp.",
-        "D": "• Lỗi thuộc hạ tầng phần cứng."
+        "A": "• Loại thiết bị quá phổ biến (ví dụ: iPhone 13), không thể dùng một mình để xác định danh tính một người cụ thể.",
+        "C": "• Phiên bản trình duyệt là thông số kỹ thuật chung của phần mềm, được sử dụng bởi hàng triệu người cùng lúc.",
+        "D": "• Hệ điều hành (ví dụ: Windows 11) chỉ là thông tin kỹ thuật chung của máy tính, không chứa dữ liệu nhận danh cá nhân."
       }
     }
   },
@@ -6615,20 +6610,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Công nghệ trí tuệ môi trường (ambient intelligence) là gì?",
+      "questionVi": "Bạn đã thu thập các bài đăng trên mạng xã hội có chứa một hashtag cụ thể để phân tích các từ được sử dụng trong bài đăng. Đây là loại dữ liệu gì?",
       "optionsVi": {
-        "A": "Cảm biến theo dõi môi trường tự nhiên",
-        "B": "Hệ thống thiết bị IoT thông minh luôn bật để cá nhân hóa và hỗ trợ con người trong môi trường sống (IoT connected, always-on, personalizing experience)",
-        "C": "Trí tuệ nhân tạo dự báo thời tiết",
-        "D": "Cảm biến giám sát an ninh tòa nhà"
+        "A": "Dữ liệu phi cấu trúc (Unstructured)",
+        "B": "Dữ liệu cấu trúc (Structured)",
+        "C": "Dữ liệu bán cấu trúc (Semi-Structured)",
+        "D": "Dữ liệu cấu trúc dữ liệu (Data Structured)"
       },
-      "answerDisplay": "B. Linked IOT technology that always on and acting to personalize the experience for the people within its environment.",
-      "concept": "• Ambient Intelligence: IoT luôn bật và cá nhân hóa trải nghiệm sống.",
-      "whyCorrect": "• Always-on IoT personalizing user experience.",
+      "answerDisplay": "A. Unstructured",
+      "concept": "• Unstructured Data in Social Media: Các bài đăng văn bản tự do, hình ảnh hoặc video trên mạng xã hội không tuân theo một mô hình dữ liệu định sẵn nào.",
+      "whyCorrect": "• Các bài đăng mạng xã hội (văn bản tự do) là dữ liệu phi cấu trúc (unstructured) vì chúng không có định dạng dòng-cột rõ ràng hay cấu trúc cơ sở dữ liệu quan hệ được xác định trước.",
       "whyWrong": {
-        "A": "• Môi trường tự nhiên là Environmental sensing.",
-        "C": "• Thuộc về Weather forecasting.",
-        "D": "• Thuộc về Security monitoring."
+        "B": "• Dữ liệu cấu trúc (Structured) yêu cầu được lưu trữ trong các bảng có hàng và cột được định nghĩa kiểu dữ liệu chặt chẽ (như SQL).",
+        "C": "• Dữ liệu bán cấu trúc (Semi-Structured) sử dụng các thẻ tag hoặc định dạng phân cấp (như JSON, XML) để tổ chức dữ liệu.",
+        "D": "• \"Data Structured\" là thuật ngữ ngụy tạo, không phải là một loại cấu trúc dữ liệu phân tích chuẩn."
       }
     }
   },
@@ -6648,20 +6643,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Điều gì phân biệt đạo đức hệ quả với đạo đức bổn phận?",
+      "questionVi": "Điều nào sau đây định nghĩa đúng về vấn đề hộp đen (black box problem) trong AI?",
       "optionsVi": {
-        "A": "Hệ quả tập trung vào kết quả, bổn phận tập trung vào nghĩa vụ (outcomes vs duties)",
-        "B": "Hệ quả bỏ qua kết quả",
-        "C": "Giống hệt nhau",
-        "D": "Mới hơn về thời gian"
+        "A": "Thách thức trong việc thấu hiểu cơ chế hoạt động bên trong của các hệ thống mờ đục (opaque systems)",
+        "B": "Chi phí bảo trì cơ sở hạ tầng máy chủ quá cao",
+        "C": "Rủi ro bảo mật từ các vụ rò rỉ cơ sở dữ liệu",
+        "D": "Tình trạng thiếu dữ liệu huấn luyện cho các mô hình AI"
       },
-      "answerDisplay": "A. Consequentialism focuses on outcomes, deontology on duties",
-      "concept": "• Consequentialism (Outcomes) vs Deontology (Duties).",
-      "whyCorrect": "• Consequentialism: Outcomes; Deontology: Duties.",
+      "answerDisplay": "A. The challenge of understanding the inner workings of opaque systems",
+      "concept": "• The Black Box Problem: Sự mờ đục của các thuật toán học sâu khiến con người không thể giải thích được lý do đằng sau các quyết định cụ thể của AI.",
+      "whyCorrect": "• Vấn đề hộp đen (Black box problem) mô tả thách thức kỹ thuật khi con người không thể hiểu hoặc giải thích được cơ chế tính toán nội bộ và logic ra quyết định bên trong các hệ thống AI phức tạp (như mạng thần kinh sâu).",
       "whyWrong": {
-        "B": "• Sai.",
-        "C": "• Khác biệt hoàn toàn.",
-        "D": "• Yếu tố thời gian không quyết định."
+        "B": "• Chi phí hạ tầng máy chủ là bài toán ngân sách tài chính của doanh nghiệp, không liên quan đến tính minh bạch của thuật toán.",
+        "C": "• Rò rỉ cơ sở dữ liệu thuộc về lỗ hổng an ninh mạng (security breach), là vấn đề bảo mật thông tin chứ không phải tính mờ đục thuật toán.",
+        "D": "• Thiếu dữ liệu huấn luyện gây ra lỗi underfitting hoặc giảm độ chính xác của mô hình, không phải định nghĩa của hộp đen AI."
       }
     }
   },
@@ -6681,20 +6676,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "B",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Các rủi ro quyền riêng tư gắn liền với hệ thống trí tuệ môi trường (ambient intelligence) chủ yếu do:",
+      "questionVi": "Một loại trí tuệ nhân tạo vượt trội hơn con người trong các tác vụ cụ thể (specific tasks) được gọi là gì?",
       "optionsVi": {
-        "A": "Việc thu thập dữ liệu liên tục và giám sát không ngừng (continuous data collection and monitoring)",
-        "B": "Thiếu kết nối Internet",
-        "C": "Lỗi phần mềm",
-        "D": "Tốn năng lượng"
+        "A": "AI tổng quát (General AI)",
+        "B": "AI hẹp (Narrow AI)",
+        "C": "AI chuyên biệt (Specific AI)",
+        "D": "AI mạnh (Strong AI)"
       },
-      "answerDisplay": "A. continuous data collection and monitoring",
-      "concept": "• Ambient Privacy Risks: Thu thập dữ liệu liên tục 24/7 gây rò rỉ và xâm phạm đời tư.",
-      "whyCorrect": "• Giám sát và thu thập dữ liệu liên tục 24/7.",
+      "answerDisplay": "B. Narrow Al",
+      "concept": "• Narrow AI (Weak AI): Loại AI được thiết kế và huấn luyện để thực hiện một tác vụ cụ thể hoặc giải quyết một bài toán hẹp duy nhất.",
+      "whyCorrect": "• AI hẹp (Narrow AI) được thiết kế để thực hiện xuất sắc một nhiệm vụ cụ thể duy nhất (như chơi cờ, nhận diện khuôn mặt), tại đó nó hoàn toàn có thể vượt trội hơn năng lực của con người.",
       "whyWrong": {
-        "B": "• Hệ thống này luôn cần kết nối.",
-        "C": "• Lỗi phần mềm thuộc về bug kỹ thuật.",
-        "D": "• Tốn năng lượng thuộc về tiêu thụ điện."
+        "A": "• General AI (AI tổng quát) ngang tầm con người ở MỌI nhiệm vụ trí tuệ tổng hợp, hiện tại vẫn chưa thể chế tạo thành công.",
+        "C": "• \"Specific AI\" là thuật ngữ gây nhiễu, phân loại AI chuẩn chỉ chia thành Narrow AI (Weak), General AI (Strong) và Superintelligence.",
+        "D": "• Strong AI (AI mạnh) tương đương với General AI, có khả năng tư duy và tự nhận thức độc lập như con người."
       }
     }
   },
@@ -6714,20 +6709,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Khi xây dựng một mô hình dự đoán đạo đức, mục tiêu bao gồm đảm bảo các kết quả phải:",
+      "questionVi": "Lỗi quy kết cơ bản (fundamental attribution error) là gì?",
       "optionsVi": {
-        "A": "Chính xác, giải thích được, dự đoán được",
-        "B": "Chính xác, chuẩn xác, công bằng",
-        "C": "Chuẩn xác, có phương pháp",
-        "D": "Chính xác, công bằng và giải thích được (accurate, fair and explainable)"
+        "A": "Khi bạn giả định dự đoán của mô hình là chính xác mà không xác minh lại",
+        "B": "Khi bạn quy mọi lỗi hệ thống cho lỗi phần mềm thay vị phần cứng",
+        "C": "Khi bạn đánh giá sự thành công của dự án chỉ dựa vào lợi nhuận",
+        "D": "Khi bạn cho rằng hành vi xấu của mình là do hoàn cảnh, nhưng khi người khác có hành vi xấu tương tự, bạn lại quy cho tính cách của họ"
       },
-      "answerDisplay": "D. accurate, fair and explainable",
-      "concept": "• Ethical Predictive Model Triplets: Accurate, Fair, Explainable.",
-      "whyCorrect": "• Accurate, Fair and Explainable.",
+      "answerDisplay": "D. When you say your bad behavior is caused by the situation, but when other people display the same bad behavior, it is caused by a personality trait",
+      "concept": "• Fundamental Attribution Error: Thiên kiến nhận thức khiến con người đánh giá quá cao yếu tố tính cách và đánh giá thấp hoàn cảnh khi giải thích hành vi của người khác.",
+      "whyCorrect": "• Lỗi quy kết cơ bản mô tả xu hướng tâm lý thiên lệch khi biện hộ cho bản thân bằng hoàn cảnh bên ngoài (tôi đi muộn vì tắc đường), nhưng lại phán xét người khác dựa trên phẩm chất bên trong (họ đi muộn vì lười biếng).",
       "whyWrong": {
-        "A": "• Thiếu Fair.",
-        "B": "• Thiếu Explainable.",
-        "C": "• Đơn điệu."
+        "A": "• Việc tin tưởng mô hình không kiểm chứng phản ánh lỗi tự mãn (automation complacency) hoặc thiếu quy trình kiểm thử.",
+        "B": "• Quy kết lỗi phần mềm/phần cứng là sai lầm kỹ thuật chẩn đoán hệ thống, không liên quan đến thiên kiến tâm lý xã hội của con người.",
+        "C": "• Đánh giá thành công qua lợi nhuận là tư duy kinh doanh thực dụng thuần túy, không phải lỗi quy kết tâm lý học."
       }
     }
   },
@@ -6747,20 +6742,19 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A, D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Thuật ngữ nào mô tả sự thiên vị đối với dữ liệu hoặc kết quả tự động hơn là quan sát từ con người?",
+      "questionVi": "Những điều nào sau đây mô tả các khía cạnh quan trọng trong vai trò của một kỹ sư AI có đạo đức? Chọn hai",
       "optionsVi": {
-        "A": "Automation bias",
-        "B": "Selection bias",
-        "C": "Confirmation bias",
-        "D": "Observer bias"
+        "A": "Làm sạch, phân loại dữ liệu và kiểm toán để phát hiện thiên lệch (bias).",
+        "B": "Tạo ra một chuỗi chỉ huy quản lý trong tổ chức.",
+        "C": "Xây dựng các mô hình ưu tiên tốc độ xử lý hơn là tính an toàn.",
+        "D": "Liên tục cập nhật các phát triển công nghệ mới nhất và các lỗ hổng bảo mật."
       },
-      "answerDisplay": "A. Automation bias",
-      "concept": "• Automation Bias: Thiên vị máy móc hơn con người.",
-      "whyCorrect": "• Automation bias.",
+      "answerDisplay": "A. Cleaning and sorting data, and auditing for bias. · D. Keeping up with the latest developments and vulnerabilities.",
+      "concept": "• Role of an Ethical AI Engineer: Kỹ sư AI có đạo đức phải đảm bảo chất lượng dữ liệu sạch/không thiên lệch và duy trì kiến thức bảo mật để bảo vệ người dùng.",
+      "whyCorrect": "• Vai trò kỹ sư AI đạo đức đòi hỏi: (1) Trực tiếp kiểm soát chất lượng dữ liệu và kiểm toán bias (cleaning, auditing bias) và (2) Cập nhật kiến thức bảo mật liên tục để phát hiện lỗ hổng hệ thống kịp thời.",
       "whyWrong": {
-        "B": "• Lỗi mẫu.",
-        "C": "• Xác nhận quan điểm.",
-        "D": "• Lỗi quan sát viên."
+        "B": "• Chuỗi chỉ huy thuộc cấu trúc quản lý hành chính nhân sự, không phải nhiệm vụ kỹ thuật hay trách nhiệm đạo đức của kỹ sư AI.",
+        "C": "• Ưu tiên tốc độ hơn an toàn vi phạm nghiêm trọng nguyên tắc đạo đức không gây hại (non-maleficence) trong thiết kế hệ thống."
       }
     }
   },
@@ -6822,11 +6816,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Beneficence is the promotion of well-being, not just for moral agents like humans, but of animals, the environment, and societies.",
       "concept": "• Principle of Beneficence: Thúc đẩy phúc lợi cho con người, động vật và môi trường.",
-      "whyCorrect": "• Khái niệm rộng về phúc lợi toàn diện.",
+      "whyCorrect": "• Tổ chức cần truyền thông trung thực và minh bạch về các vấn đề đạo đức, bao gồm cả thừa nhận lỗi sai, để xây dựng niềm tin bền vững với công chúng và các bên liên quan.",
       "whyWrong": {
-        "A": "• Khái niệm cổ điển.",
-        "C": "• Quá hẹp.",
-        "D": "• Sai nghĩa."
+        "A": "• Che giấu vấn đề đạo đức để bảo vệ hình ảnh là chiến lược ngắn hạn nguy hiểm - khi bị phát hiện, hậu quả sẽ nghiêm trọng gấp nhiều lần.",
+        "C": "• Chỉ truyền thông tin tốt tạo ra hình ảnh một chiều thiếu tin cậy - công chúng ngày nay đánh giá cao sự minh bạch hơn hình ảnh hoàn hảo giả tạo.",
+        "D": "• Để bên thứ ba quản lý toàn bộ truyền thông đạo đức mất đi tính chủ động và kiểm soát thông điệp của chính tổ chức."
       }
     }
   },
@@ -6879,20 +6873,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Tại sao ra quyết định bằng lý luận đạo đức không phải lúc nào cũng là mục tiêu khả thi đối với con người?",
+      "questionVi": "Tại sao việc quyết định hành động bằng lập luận đạo đức không phải lúc nào cũng là mục tiêu khả thi đối với con người?",
       "optionsVi": {
-        "A": "Không được học lý thuyết",
-        "B": "Quá phức tạp",
-        "C": "Ít lợi ích",
-        "D": "Quyết định của con người thường bị ảnh hưởng bởi cảm xúc thay vì logic (influenced by emotion and not logic)"
+        "A": "Hầu hết mọi người không được đào tạo về lý thuyết đạo đức chuẩn tắc nên không thể lập luận đạo đức thực sự.",
+        "B": "Lập luận đạo đức quá phức tạp để áp dụng vào các tình huống thế giới thực.",
+        "C": "Lập luận đạo đức mang lại rất ít lợi ích hữu hình cho phần lớn mọi người.",
+        "D": "Quyết định của con người thường bị chi phối mạnh mẽ bởi cảm xúc chứ không phải logic (influenced by emotion and not logic)."
       },
       "answerDisplay": "D. Human decision making is often influenced by emotion and not logic.",
-      "concept": "• Emotion in Human Decision Making: Cảm xúc thường lấn át lý trí.",
-      "whyCorrect": "• Emotion vs Logic.",
+      "concept": "• Cognitive Limitations in Moral Reasoning: Cảm xúc và thiên kiến vô thức thường lấn át tư duy logic khi con người đưa ra quyết định thực tế.",
+      "whyCorrect": "• Con người không phải sinh vật lý trí hoàn hảo; các quyết định hành vi hàng ngày thường bị chi phối mạnh mẽ bởi cảm xúc (emotion), trực giác tức thời và định kiến nhận thức thay vì các quy trình lập luận đạo đức logic.",
       "whyWrong": {
-        "A": "• Lý do phụ.",
-        "B": "• Lý do phụ.",
-        "C": "• Ngược lại."
+        "A": "• Nhận thức đạo đức là bản năng tự nhiên, con người không cần phải học qua trường lớp hay các học thuyết triết học mới biết phân biệt đúng sai.",
+        "B": "• Lập luận đạo đức hoàn toàn có thể áp dụng hiệu quả vào đời sống thực tế nếu con người giữ được sự khách quan và kiểm soát cảm xúc tốt.",
+        "C": "• Lập luận đạo đức giúp xây dựng lòng tin, sự ổn định xã hội và uy tín cá nhân, mang lại những lợi ích vô hình vô cùng to lớn."
       }
     }
   },
@@ -6912,20 +6906,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Doanh nghiệp của bạn xử lý dữ liệu cư dân California. Quy định nào cho phép cư dân yêu cầu xóa dữ liệu của họ khỏi hệ thống?",
+      "questionVi": "Doanh nghiệp của bạn xử lý dữ liệu cá nhân của cư dân bang California. Quy định nào sau đây cho phép cư dân yêu cầu bạn cho biết những dữ liệu nào đã được thu thập về họ?",
       "optionsVi": {
         "A": "PCI DSS",
-        "B": "Hướng dẫn OECD",
+        "B": "Hướng dẫn bảo mật của OECD",
         "C": "COPPA",
         "D": "CCPA (California Consumer Privacy Act)"
       },
       "answerDisplay": "D. CCPA",
-      "concept": "• CCPA (California Consumer Privacy Act): Đạo luật bảo vệ riêng tư người tiêu dùng bang California cấp \"Right to Delete\" (Quyền được xóa dữ liệu).",
-      "whyCorrect": "• CCPA dành riêng cho cư dân bang California.",
+      "concept": "• CCPA (California Consumer Privacy Act): Đạo luật bảo vệ quyền riêng tư của người tiêu dùng bang California, Mỹ, cho phép người dùng kiểm soát và yêu cầu truy xuất dữ liệu cá nhân.",
+      "whyCorrect": "• CCPA (Đạo luật Quyền riêng tư của Người tiêu dùng California) quy định rõ quyền của cư dân bang này trong việc yêu cầu doanh nghiệp công khai loại dữ liệu cá nhân thu thập, mục đích sử dụng và yêu cầu xóa bỏ hoặc từ chối bán dữ liệu đó.",
       "whyWrong": {
-        "A": "• PCI DSS là tiêu chuẩn thẻ thanh toán.",
-        "B": "• OECD là hướng dẫn quốc tế.",
-        "C": "• COPPA là luật bảo vệ riêng tư trẻ em Hoa Kỳ."
+        "A": "• PCI DSS là tiêu chuẩn an ninh thông tin bắt buộc dành cho các tổ chức xử lý thẻ thanh toán hiệu lực toàn cầu, không phải luật riêng tư của bang California.",
+        "B": "• Hướng dẫn bảo mật của OECD là bộ nguyên tắc khuyến nghị ở cấp liên chính phủ, không có hiệu lực pháp lý cưỡng chế trực tiếp đối với doanh nghiệp.",
+        "C": "• COPPA là đạo luật của Mỹ bảo vệ quyền riêng tư trực tuyến của trẻ em dưới 13 tuổi trên phạm vi toàn quốc, không đặc thù cho cư dân California nói chung."
       }
     }
   },
@@ -6944,20 +6938,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "C",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Loại tính công bằng nào hợp lý khi chia đều vé cho các nhóm?",
+      "questionVi": "Loại công bằng nào sẽ hợp lý nhất khi phân chia đều vé (tickets) giữa các nhóm khác nhau?",
       "optionsVi": {
-        "A": "Bình đẳng dương tính giả",
-        "B": "Bình đẳng tỷ lệ lỗi",
-        "C": "Bình đẳng thống kê (Statistical parity / Demographic parity)",
-        "D": "Bình đẳng tỷ lệ dự đoán"
+        "A": "Bình đẳng dương tính giả (equality of false positives)",
+        "B": "Bình đẳng tỷ lệ lỗi (error rate parity)",
+        "C": "Bình đẳng thống kê (statistical parity)",
+        "D": "Bình đẳng tỷ lệ dự đoán (equality of prediction rate)"
       },
       "answerDisplay": "C. statistical parity",
-      "concept": "• Statistical Parity for Equal Resource Allocation: Phân chia tài nguyên (vé) tỷ lệ đồng đều giữa các nhóm đại diện.",
-      "whyCorrect": "• Statistical parity chia đều vé theo tỷ lệ đại diện.",
+      "concept": "• Statistical Parity (Demographic Parity): Tiêu chuẩn công bằng yêu cầu tỷ lệ kết quả chấp nhận/nhận được lợi ích phải bằng nhau giữa tất cả các nhóm nhân khẩu học.",
+      "whyCorrect": "• Bình đẳng thống kê (statistical parity) yêu cầu kết quả đầu ra có lợi (như nhận vé) được chia đều một cách độc lập với các đặc trưng của nhóm, đảm bảo mỗi nhóm nhận được số lượng tương đương nhau.",
       "whyWrong": {
-        "A": "• Dựa trên lỗi bỏ sót.",
-        "B": "• Dựa trên tỷ lệ sai sót.",
-        "D": "• Dựa trên tỷ lệ dự đoán."
+        "A": "• Bình đẳng dương tính giả (equality of false positives) cân bằng tỷ lệ báo động sai giữa các nhóm, không liên quan đến việc phân phối đều tài sản/vé.",
+        "B": "• Bình đẳng tỷ lệ lỗi (error rate parity) cân bằng tổng sai số của mô hình giữa các nhóm, không áp dụng cho bài toán phân chia tài nguyên.",
+        "D": "• Bình đẳng tỷ lệ dự đoán cân bằng tỷ lệ dự đoán chính xác trên thực tế, không giải quyết mục tiêu chia đều số lượng phần thưởng."
       }
     }
   },
@@ -6977,19 +6971,19 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A, D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Những phát biểu nào mô tả quyền bá chủ của tập đoàn (corporate hegemony)? (Chọn hai)",
+      "questionVi": "Những điều nào sau đây mô tả quyền bá chủ của tập đoàn (corporate hegemony)? (Chọn hai)",
       "optionsVi": {
-        "A": "Củng cố lợi ích thông qua sáp nhập và mua lại (mergers and acquisitions)",
-        "B": "Chi tiền lớn cho marketing",
-        "C": "Đầu tư nhiều nơi",
-        "D": "Khóa chặt các đối thủ nhỏ hơn, dẫn đến độc quyền hoặc phe cánh/cartel (locking out smaller players, leading to monopolies or cartels)"
+        "A": "Hợp nhất quyền lực và lợi ích thông qua các hoạt động sáp nhập và mua lại (mergers and acquisitions).",
+        "B": "Chi số tiền lớn cho các chiến dịch xây dựng thương hiệu và tiếp thị tập đoàn.",
+        "C": "Thực hiện nhiều khoản đầu tư vào cùng một lĩnh vực để tăng xác suất thành công.",
+        "D": "Loại bỏ các đối thủ cạnh tranh nhỏ hơn, dẫn đến tình trạng độc quyền nhóm hoặc độc quyền hoàn toàn (locking out smaller players)."
       },
       "answerDisplay": "A. Consolidating interests through mergers and acquisitions · D. Locking out smaller players, leading to monopolies or cartels",
-      "concept": "• Corporate Hegemony: Sự thống trị thị trường của các Big Tech qua M&A (thâu tóm) và Chèn ép đối thủ nhỏ (locking out smaller players) tạo thế độc quyền.",
-      "whyCorrect": "• A và D mô tả hai cơ chế tạo lập vị thế độc quyền bá chủ.",
+      "concept": "• Corporate Hegemony: Tình trạng các tập đoàn công nghệ lớn thống trị thị trường bằng cách thâu tóm và ngăn chặn sự cạnh tranh lành mạnh.",
+      "whyCorrect": "• Bá quyền tập đoàn được thể hiện rõ nét qua việc: (1) Sáp nhập và mua lại (M&A) để thâu tóm các công ty tiềm năng và (2) Chặn đứng sự tham gia của các doanh nghiệp nhỏ hơn (locking out) nhằm duy trì thế độc quyền tuyệt đối.",
       "whyWrong": {
-        "B": "• Chiến dịch marketing là hoạt động thương mại bình thường.",
-        "C": "• Phân tán rủi ro đầu tư là kỹ thuật tài chính."
+        "B": "• Chi tiêu cho thương hiệu và tiếp thị là hoạt động xúc tiến thương mại thông thường của mọi doanh nghiệp, không phản ánh sự bá quyền hay thống trị thị trường.",
+        "C": "• Đa dạng hóa danh mục đầu tư là chiến lược quản lý rủi ro tài chính cơ bản, không phải là hành vi bá quyền nhằm triệt tiêu cạnh tranh."
       }
     }
   },
@@ -7051,11 +7045,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Given a lack of consensus, we should avoid strong assumptions regarding upper limits on future Al capabilities.",
       "concept": "• Asilomar Capability Caution: Tránh giả định giới hạn trên của AI.",
-      "whyCorrect": "• Avoid strong assumptions on upper limits.",
+      "whyCorrect": "• Digital twin (bản sao số) là mô hình ảo chính xác mô phỏng một đối tượng, quy trình hoặc hệ thống thực tế, cho phép thử nghiệm và tối ưu hóa mà không cần tác động lên vật thể thật, giảm rủi ro và chi phí.",
       "whyWrong": {
-        "A": "• Black box principle.",
-        "C": "• Economic impact.",
-        "D": "• Alignment control."
+        "A": "• Blockchain là công nghệ sổ cái phân tán ghi lại giao dịch, không phải công nghệ mô phỏng vật thể/hệ thống thực.",
+        "C": "• Cloud computing cung cấp tài nguyên tính toán qua internet, không phải công nghệ tạo bản sao ảo của vật thể thực.",
+        "D": "• Edge computing xử lý dữ liệu gần nguồn phát sinh thay vì gửi lên cloud, không liên quan đến mô phỏng digital."
       }
     }
   },
@@ -7084,11 +7078,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Augmented",
       "concept": "• Augmented Intelligence in Healthcare: AMA nhấn mạnh AI trong y tế không thay thế bác sĩ mà đóng vai trò trí tuệ tăng cường (Augmented Intelligence) hỗ trợ con người.",
-      "whyCorrect": "• Augmented Intelligence (Trí tuệ tăng cường).",
+      "whyCorrect": "• Luật pháp thường đi sau đổi mới công nghệ vì tốc độ phát triển công nghệ nhanh hơn nhiều so với tốc độ lập pháp, tạo ra khoảng trống pháp lý mà tổ chức cần chủ động bù đắp bằng cam kết đạo đức.",
       "whyWrong": {
-        "A": "• Không đúng chuẩn AMA.",
-        "C": "• AMA muốn đổi từ Artificial sang Augmented.",
-        "D": "• Không đúng chuẩn."
+        "A": "• Luật áp dụng không nhất quán là vấn đề thực thi, không phải lý do cốt lõi - vấn đề chính là LUẬT CHƯA TỒN TẠI cho công nghệ mới.",
+        "C": "• Luật không rõ ràng là vấn đề ngôn ngữ pháp lý, không phải lý do chính để chủ động - luật rõ ràng vẫn có thể chưa bao phủ đủ.",
+        "D": "• Luật khó hiểu là rào cản tiếp cận, nhưng ngay cả khi dễ hiểu, luật vẫn chậm hơn công nghệ."
       }
     }
   },
@@ -7117,10 +7111,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Organizations must obtain consent from individuals regarding the collection and use of biometric data. · C. Organizations must destroy biometric data in a timely fashion.",
       "concept": "• BIPA Requirements (Illinois): Bắt buộc xin phép đồng ý (Consent) và Bắt buộc có lịch trình hủy dữ liệu đúng hạn (Timely destruction).",
-      "whyCorrect": "• B và C là 2 nghĩa vụ cốt lõi của BIPA.",
+      "whyCorrect": "• Theo các framework đạo đức AI toàn cầu, an ninh (security) được đưa vào khoảng 70-75% số framework như một trụ cột cốt lõi, phản ánh tầm quan trọng của bảo mật nhưng chưa phổ biến bằng privacy (~85%).",
       "whyWrong": {
-        "A": "• Được truyền nếu có mã hóa bảo mật.",
-        "D": "• Cho phép lưu trên cloud đáp ứng chuẩn an ninh."
+        "A": "• 21% quá thấp - an ninh là quan tâm chung của hầu hết các framework đạo đức AI, không chỉ một phần nhỏ.",
+        "B": "• 32% vẫn quá thấp so với thực tế - bảo mật là yếu tố thiết yếu được đại đa số framework công nhận.",
+        "D": "• 93% quá cao - mặc dù quan trọng, security không phổ biến bằng privacy trong các framework đạo đức AI."
       }
     }
   },
@@ -7149,11 +7144,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Reference materials",
       "concept": "• NIST Reference Materials.",
-      "whyCorrect": "• Reference materials.",
+      "whyCorrect": "• NIST (National Institute of Standards and Technology) cung cấp tài liệu tham khảo chuẩn (reference materials) bao gồm các hướng dẫn, tiêu chuẩn kỹ thuật và khung an ninh mạng (Cybersecurity Framework) mà các tổ chức dùng làm cơ sở xây dựng chính sách bảo mật.",
       "whyWrong": {
-        "A": "• Nghiên cứu kĩ thuật.",
-        "C": "• Không bán công cụ phần mềm.",
-        "D": "• Do vendor cung cấp."
+        "A": "• NIST nghiên cứu và phát triển tiêu chuẩn đo lường nhưng không bán CÔNG NGHỆ đo lường - họ cung cấp tài liệu tham khảo miễn phí cho công chúng.",
+        "C": "• NIST không phát triển hay bán công cụ phần mềm an ninh mạng - đó là vai trò của các nhà cung cấp bảo mật tư nhân như CrowdStrike, Palo Alto.",
+        "D": "• Cấu hình công nghiệp cụ thể do nhà cung cấp (vendor) cung cấp theo sản phẩm riêng - NIST đưa ra tiêu chuẩn và hướng dẫn chung, không phải cấu hình cho từng sản phẩm."
       }
     }
   },
@@ -7173,20 +7168,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "C",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Một thuật toán \"cố ý bị làm lệch\" được sử dụng để phát hiện các thuộc tính bất công được gọi là:",
+      "questionVi": "Một thuật toán \"cố ý bị làm lệch\" được sử dụng để phát hiện các thuộc tính bất công được gọi là gì?",
       "optionsVi": {
-        "A": "Thuật toán tổng hợp",
+        "A": "Thuật toán tổng hợp (aggregate algorithm)",
         "B": "Mô hình dự đoán",
-        "C": "Thuật toán đối kháng (Adversarial algorithm)",
+        "C": "Thuật toán đối kháng / Đối nghịch (an adversarial algorithm)",
         "D": "Thuật toán phân biệt đối xử"
       },
       "answerDisplay": "C. an adversarial algorithm",
-      "concept": "• Adversarial Testing for Bias: Dùng mô hình đối kháng (Adversarial algorithm) thử nghiệm các tình huống bị lệch để tìm điểm yếu bất công của hệ thống.",
-      "whyCorrect": "• Adversarial algorithm được dùng để tấn công/kiểm thử định kiến.",
+      "concept": "• Adversarial Testing in AI: Sử dụng mô hình đối địch được huấn luyện để chủ động tìm và khai thác lỗ hổng hoặc sự mất cân bằng trong hệ thống chính.",
+      "whyCorrect": "• Thuật toán đối nghịch (adversarial algorithm) được chủ động thiết kế thiên lệch một cách có mục đích để đóng vai trò \"kẻ tấn công\", giúp phát hiện các thuộc tính bất công và điểm yếu tiềm ẩn trong mô hình chính.",
       "whyWrong": {
-        "A": "• Thuật toán gộp.",
-        "B": "• Mô hình thông thường.",
-        "D": "• Discriminatory algorithm mang tính vi phạm."
+        "A": "• Thuật toán tổng hợp (aggregate algorithm) được sử dụng để gom nhóm và tính toán thống kê dữ liệu lớn, không dùng để kiểm thử lỗi hệ thống.",
+        "B": "• Mô hình dự đoán thông thường hướng tới độ chính xác cao nhất trên dữ liệu thực tế, không được cố ý làm lệch để phát hiện thiên kiến.",
+        "D": "• Thuật toán phân biệt đối xử mô tả hành vi lỗi cần tránh của hệ thống, không phải phương pháp kiểm thử đối nghịch chủ động."
       }
     }
   },
@@ -7239,20 +7234,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Phương pháp nào giúp kiểm soát riêng tư dữ liệu khi chia sẻ với bên thứ ba?",
+      "questionVi": "Điều gì làm cho chương trình đào tạo đạo đức thực sự hiệu quả?",
       "optionsVi": {
-        "A": "Ẩn danh hóa dữ liệu (Data Anonymization)",
-        "B": "Mở khai thác dữ liệu",
-        "C": "Tăng kích thước dữ liệu",
-        "D": "Xóa toàn bộ dữ liệu"
+        "A": "Các mô-đun học tập tương tác trực quan",
+        "B": "Học tập dựa trên các tình huống thực tế (Scenario-based learning)",
+        "C": "Củng cố và nhắc nhở liên tục theo thời gian",
+        "D": "Tất cả các phương án trên (All of the others)"
       },
-      "answerDisplay": "A. Data Anonymization",
-      "concept": "• Data Anonymization: Loại bỏ hoặc thay thế các trường định danh để bảo vệ dữ liệu khi chia sẻ.",
-      "whyCorrect": "• Ẩn danh hóa bảo vệ riêng tư khi chia sẻ bên ngoài.",
+      "answerDisplay": "D. All of the others",
+      "concept": "• Effective Ethics Training: Đào tạo đạo đức thành công cần kết hợp tương tác, thực tiễn kịch bản và củng cố kiến thức thường xuyên.",
+      "whyCorrect": "• Sự kết hợp của cả ba yếu tố (học tập tương tác, phân tích tình huống thực tế và củng cố kiến thức định kỳ) tạo nên một chương trình đào tạo đạo đức toàn diện và hiệu quả nhất cho nhân viên.",
       "whyWrong": {
-        "B": "• Làm lộ dữ liệu.",
-        "C": "• Không ảnh hưởng riêng tư.",
-        "D": "• Xóa dữ liệu làm mất giá trị khai thác."
+        "A": "• Tương tác rất tốt nhưng nếu thiếu tình huống thực tế và củng cố liên tục thì kiến thức sẽ nhanh chóng bị lãng quên.",
+        "B": "• Phân tích tình huống thực tế rất quan trọng nhưng cần có sự tương tác và nhắc nhở thường xuyên để duy trì ý thức lâu dài.",
+        "C": "• Củng cố định kỳ là cần thiết nhưng nếu nội dung đào tạo ban đầu nhàm chán và thiếu tính tương tác thì hiệu quả tiếp thu sẽ rất thấp."
       }
     }
   },
@@ -7272,20 +7267,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "B",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Nhiệm vụ của Blue Team trong kiểm thử xâm nhập là gì?",
+      "questionVi": "Đánh giá tác động đạo đức (ethical impact assessment) là gì?",
       "optionsVi": {
-        "A": "Tấn công mô phỏng",
-        "B": "Phòng thủ và bảo vệ hệ thống khỏi tấn công mô phỏng (Defend system against simulated attacks)",
-        "C": "Làm trọng tài",
-        "D": "Viết báo cáo tài chính"
+        "A": "Tập trung vào việc đo lường lợi nhuận tài chính thu về",
+        "B": "Tập trung vào việc phòng ngừa các vấn đề trong tương lai (preventing future problems)",
+        "C": "Là yêu cầu pháp lý bắt buộc đối với tất cả các startup công nghệ",
+        "D": "Chỉ được thực hiện sau khi một cuộc khủng hoảng đã xảy ra"
       },
-      "answerDisplay": "B. Defend system against simulated attacks",
-      "concept": "• Blue Team Defensive Role: Đảm nhận vị trí phòng thủ và giám sát an ninh mạng.",
-      "whyCorrect": "• Blue Team đóng vai trò phòng thủ.",
+      "answerDisplay": "B. Focused on preventing future problems.",
+      "concept": "• Ethical Impact Assessment (EIA): Công cụ chủ động giúp tổ chức dự báo và ngăn chặn các rủi ro đạo đức trước khi triển khai hệ thống.",
+      "whyCorrect": "• Đánh giá tác động đạo đức (EIA) là một quy trình chủ động (proactive), tập trung vào việc dự báo các tác động xã hội và ngăn chặn các vấn đề đạo đức phát sinh trong tương lai trước khi hệ thống được phát hành.",
       "whyWrong": {
-        "A": "• Red Team.",
-        "C": "• White Team.",
-        "D": "• Bộ phận kế toán."
+        "A": "• Đo lường lợi nhuận tài chính thuộc về phân tích ROI (Return on Investment), hoàn toàn không phải mục đích của đánh giá đạo đức.",
+        "C": "• Đánh giá tác động đạo đức thường mang tính tự nguyện khuyến nghị, hiện chưa phải luật bắt buộc đối với mọi startup ở tất cả các nước.",
+        "D": "• Đánh giá đạo đức cần được thực hiện từ giai đoạn thiết kế dự án (by design), nếu đợi sau khủng hoảng mới làm thì đã quá muộn."
       }
     }
   },
@@ -7305,20 +7300,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "B",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Khung chuẩn ISO/IEC 27001 tập trung vào lĩnh vực nào?",
+      "questionVi": "Đối tượng nào sau đây được coi là bên liên quan nội bộ (internal stakeholders) trong bối cảnh thực thi bộ quy tắc đạo đức?",
       "optionsVi": {
-        "A": "Hệ thống Quản lý An toàn Thông tin (Information Security Management System - ISMS)",
-        "B": "Đạo đức AI",
-        "C": "Thiết kế giao diện",
-        "D": "Quản lý tài chính"
+        "A": "Cơ quan quản lý nhà nước",
+        "B": "Nhà thiết kế sản phẩm (Designers)",
+        "C": "Khách hàng người dùng",
+        "D": "Các đối thủ cạnh tranh trên thị trường"
       },
-      "answerDisplay": "A. Information Security Management System (ISMS)",
-      "concept": "• ISO/IEC 27001 Standard: Tiêu chuẩn quốc tế hàng đầu về Hệ thống Quản lý An toàn Thông tin (ISMS).",
-      "whyCorrect": "• Chuẩn ISMS quốc tế.",
+      "answerDisplay": "B. Designers",
+      "concept": "• Internal vs External Stakeholders: Bên liên quan nội bộ trực tiếp tham gia vận hành và phát triển bên trong tổ chức.",
+      "whyCorrect": "• Nhà thiết kế sản phẩm (Designers) thuộc đội ngũ nhân sự làm việc trực tiếp bên trong công ty, do đó họ là bên liên quan nội bộ (internal stakeholders) chịu sự ràng buộc trực tiếp của quy tắc đạo đức doanh nghiệp.",
       "whyWrong": {
-        "B": "• ISO AI chuẩn khác (ISO/IEC 42001).",
-        "C": "• UI/UX design.",
-        "D": "• Kế toán/tài chính."
+        "A": "• Cơ quan quản lý nhà nước (Regulators) là bên liên quan bên ngoài có vai trò giám sát pháp lý, không thuộc nhân sự nội bộ công ty.",
+        "C": "• Khách hàng (Customers) sử dụng sản phẩm từ bên ngoài, là đối tượng được bảo vệ bởi quy tắc đạo đức chứ không phải nhân sự nội bộ.",
+        "D": "• Đối thủ cạnh tranh (Competitors) hoạt động độc lập bên ngoài thị trường, không liên quan đến cấu trúc vận hành nội bộ của công ty."
       }
     }
   },
@@ -7338,20 +7333,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Nguyên tắc minh bạch (transparency) yêu cầu điều gì đối với các hệ thống AI quyết định tự động?",
+      "questionVi": "Lợi ích của việc sử dụng nhóm thảo luận tập trung (focus groups) so với các cuộc khảo sát (surveys) là gì?",
       "optionsVi": {
-        "A": "Bảo mật tuyệt đối mã nguồn",
-        "B": "Công khai cách thức hoạt động và cơ sở đưa ra quyết định của thuật toán cho người dùng (explain operational logic and decision basis)",
-        "C": "Giấu dữ liệu huấn luyện",
-        "D": "Chỉ chia sẻ cho cổ đông"
+        "A": "Chi phí thực hiện rẻ hơn nhiều",
+        "B": "Tạo ra dữ liệu định lượng chính xác",
+        "C": "Dễ dàng mở rộng quy mô khảo sát",
+        "D": "Cho phép tương tác sâu hơn với cộng đồng nhân khẩu học mục tiêu (deeper engagement)"
       },
-      "answerDisplay": "B. Explain operational logic and decision basis to users",
-      "concept": "• AI Transparency Requirement: Người dùng có quyền được biết thuật toán hoạt động thế nào và dựa trên cơ sở nào để quyết định.",
-      "whyCorrect": "• B thể hiện bản chất của tính minh bạch.",
+      "answerDisplay": "D. They allow for deeper engagement with the target demographic community.",
+      "concept": "• Qualitative Research Method: Focus groups cung cấp góc nhìn định tính sâu sắc thông qua thảo luận trực tiếp, khác với khảo sát định lượng trên diện rộng.",
+      "whyCorrect": "• Nhóm thảo luận tập trung (focus groups) cho phép điều phối viên đặt các câu hỏi mở, theo dõi phản ứng phi ngôn ngữ và tương tác sâu sắc (deeper engagement) để hiểu rõ động cơ và cảm xúc của người tham gia.",
       "whyWrong": {
-        "A": "• Bảo mật tuyệt đối gây hộp đen.",
-        "C": "• Giấu dữ liệu vi phạm minh bạch.",
-        "D": "• Minh bạch cần hướng tới người dùng chịu ảnh hưởng."
+        "A": "• Thực hiện focus groups tốn kém chi phí thuê địa điểm, người điều phối và quà tặng hơn nhiều so với việc gửi link khảo sát online.",
+        "B": "• Khảo sát diện rộng mới tạo ra dữ liệu định lượng (quantitative), focus groups chủ yếu thu thập dữ liệu định tính (qualitative).",
+        "C": "• Rất khó mở rộng quy mô vì mỗi buổi thảo luận thường giới hạn từ 6-10 người để đảm bảo chất lượng tương tác trực tiếp."
       }
     }
   },
@@ -7371,20 +7366,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Hiện tượng \"Hallucination\" (ảo giác) trong các mô hình ngôn ngữ lớn (LLM) là gì?",
+      "questionVi": "Lý do vì sao cần thực hiện quy trình thu thập thông tin toàn diện là gì?",
       "optionsVi": {
-        "A": "Mô hình tự tin tạo ra thông tin sai sự thật nhưng trình bày như thật (generating confident incorrect answers)",
-        "B": "Mô hình bị virus tấn công",
-        "C": "Mô hình ngừng hoạt động",
-        "D": "Mô hình xử lý hình ảnh"
+        "A": "Giúp khám phá các thực hành tốt nhất từ các đồng nghiệp trong ngành (best practices from peers)",
+        "B": "Đảm bảo chắc chắn không có vấn đề đạo đức nào phát sinh",
+        "C": "Giảm thiểu nhu cầu về tính minh bạch công cộng",
+        "D": "Đẩy nhanh tiến độ phát triển dự án"
       },
-      "answerDisplay": "A. Generating confident incorrect answers",
-      "concept": "• LLM Hallucination: Hiện tượng mô hình ngôn ngữ tự bịa ra thông tin sai lệch nhưng với giọng văn rất tự tin và thuyết phục.",
-      "whyCorrect": "• Tạo ra thông tin sai sự thật một cách tự tin.",
+      "answerDisplay": "A. It helps to unearth best practices from peers in the industry.",
+      "concept": "• Information Gathering in Ethics Management: Thu thập thông tin rộng rãi giúp tổ chức học hỏi kinh nghiệm thành công và bài học thất bại từ các đối tác khác.",
+      "whyCorrect": "• Quy trình thu thập thông tin toàn diện giúp doanh nghiệp nghiên cứu, học hỏi và áp dụng các kinh nghiệm, chuẩn mực thực hành tốt nhất (best practices) từ các doanh nghiệp cùng ngành đã giải quyết thành công các rủi ro tương tự.",
       "whyWrong": {
-        "B": "• Không phải lỗi mã độc.",
-        "C": "• Mô hình vẫn hoạt động và phản hồi.",
-        "D": "• Đây là hiện tượng sinh văn bản/tri thức."
+        "B": "• Không quy trình nào đảm bảo chắc chắn 100% không phát sinh rủi ro đạo đức, thu thập thông tin chỉ giúp giảm thiểu tối đa xác suất xảy ra.",
+        "C": "• Ngược lại, thông tin thu thập được củng cố và thúc đẩy nhu cầu minh bạch thông tin trước công chúng chứ không làm giảm đi.",
+        "D": "• Thu thập thông tin kỹ lưỡng đòi hỏi thời gian khảo sát nghiên cứu, do đó thường làm chậm tiến độ phát triển ban đầu thay vì đẩy nhanh."
       }
     }
   },
@@ -7437,20 +7432,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Nhiệm vụ của một hội đồng đạo đức (ethics board) cho các tổ chức công nghệ dựa trên dữ liệu là gì?",
+      "questionVi": "Nhiệm vụ của ban đạo đức đối với các tổ chức công nghệ dựa trên dữ liệu là gì?",
       "optionsVi": {
-        "A": "Phản ứng với các thay đổi nhanh trong lĩnh vực và điều tra các hệ lụy đạo đức",
-        "B": "Phát triển tài nguyên để sử dụng trong quy trình ra quyết định đạo đức",
-        "C": "Xây dựng kho tri thức tổ chức xung quanh các thực hành đạo đức",
-        "D": "Tất cả các đáp án trên (All of the others)"
+        "A": "Phản ứng nhanh với các thay đổi công nghệ trong ngành và điều tra các hệ lụy đạo đức kèm theo.",
+        "B": "Xây dựng các tài nguyên, khung hướng dẫn phục vụ quy trình ra quyết định đạo đức.",
+        "C": "Xây dựng kho lưu trữ tri thức của tổ chức về các thực hành đạo đức tốt nhất.",
+        "D": "Tất cả các phương án trên (All of the others)"
       },
       "answerDisplay": "D. All of the others",
-      "concept": "• Ethics Board Responsibilities: Tổng hợp cả 3 nhiệm vụ rà soát, phát triển tài nguyên và lưu trữ tri thức tổ chức.",
-      "whyCorrect": "• Tất cả A, B, C đều là nhiệm vụ của Ethics Board.",
+      "concept": "• Responsibilities of an Ethics Board: Ban đạo đức chịu trách nhiệm toàn diện từ nghiên cứu rủi ro mới, cung cấp tài nguyên quyết định đến quản trị tri thức đạo đức.",
+      "whyCorrect": "• Ban đạo đức có trách nhiệm thực hiện tất cả các nhiệm vụ trên: phản ứng trước thay đổi công nghệ (A), phát triển tài nguyên quyết định (B) và xây dựng kho lưu trữ kiến thức đạo đức nội bộ (C) để định hướng tổ chức phát triển bền vững.",
       "whyWrong": {
-        "A": "• Đúng nhưng chưa đủ.",
-        "B": "• Đúng nhưng chưa đủ.",
-        "C": "• Đúng nhưng chưa đủ."
+        "A": "• Đúng nhưng chưa đủ, điều tra hệ lụy đạo đức chỉ là một phần trách nhiệm của ban đạo đức.",
+        "B": "• Đúng nhưng thiếu đi vai trò phản ứng nhanh với công nghệ mới và việc quản trị tri thức lâu dài.",
+        "C": "• Đúng nhưng xây dựng kho lưu trữ tri thức chỉ phục vụ lưu trữ, ban đạo đức cần trực tiếp tham gia hỗ trợ quyết định thực tế."
       }
     }
   },
@@ -7470,20 +7465,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "C",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Tại sao việc có một chủ sở hữu chính sách (policy owner) cho các chính sách đạo đức nội bộ và bên ngoài lại quan trọng?",
+      "questionVi": "Lý do quan trọng vì sao cần có một chủ sở hữu chính sách (policy owner) cho các chính sách đạo đức nội bộ và bên ngoài là gì?",
       "optionsVi": {
-        "A": "Để ngăn thay đổi chính sách",
-        "B": "Tự viết chính sách một mình",
-        "C": "Họ giúp tập hợp đúng các bên liên quan nội bộ và bên ngoài để cùng dự thảo chính sách (bring right internal and external stakeholders together)",
-        "D": "Có duy nhất một người bị đổ lỗi"
+        "A": "Giúp ngăn chặn mọi sự thay đổi trong chính sách theo thời gian bằng cách bảo vệ các lựa chọn cũ.",
+        "B": "Chủ sở hữu chính sách sẽ tự viết toàn bộ nội dung mà chỉ cần dựa vào kiến thức cá nhân của họ.",
+        "C": "Họ có thể giúp kết nối đúng các bên liên quan nội bộ và bên ngoài để cùng soạn thảo chính sách đạo đức (bring stakeholders together).",
+        "D": "Giúp có duy nhất một người đứng ra chịu trách nhiệm hình sự/pháp lý khi có sự cố xảy ra."
       },
       "answerDisplay": "C. They can help to bring the right internal and external stakeholders together to help draft these ethics policies.",
-      "concept": "• Policy Owner Role: Trách nhiệm chính của Policy Owner là điều phối và quy tụ đúng các bên liên quan để xây dựng và duy trì chính sách.",
-      "whyCorrect": "• Quy tụ đúng các stakeholders để cùng tham gia dự thảo.",
+      "concept": "• Role of a Policy Owner: Người sở hữu chính sách đóng vai trò điều phối, kết nối ý kiến từ nhiều bên liên quan để xây dựng chính sách có tính đồng thuận cao.",
+      "whyCorrect": "• Chủ sở hữu chính sách (policy owner) đóng vai trò trung tâm để tổ chức và điều phối quá trình xây dựng chính sách, đảm bảo kết nối đúng các bên liên quan (stakeholders) trong và ngoài tổ chức đóng góp ý kiến.",
       "whyWrong": {
-        "A": "• Chính sách cần cập nhật theo thời gian.",
-        "B": "• Không được viết một mình thiếu tham vấn.",
-        "D": "• Mục đích là quản trị điều phối chứ không phải tìm người giơ đầu hứng mũi."
+        "A": "• Chính sách đạo đức cần liên tục được cập nhật theo sự phát triển của công nghệ mới, việc ngăn chặn thay đổi là phản tác dụng.",
+        "B": "• Chính sách đạo đức được soạn thảo dựa trên ý kiến đa chiều của tập thể, một cá nhân không thể tự viết dựa trên kiến thức cá nhân duy nhất.",
+        "D": "• Mục đích của chủ sở hữu chính sách là điều phối quy trình, không phải để làm bia đỡ đạn duy nhất gánh mọi trách nhiệm khi có sự cố kỹ thuật xảy ra."
       }
     }
   },
@@ -7530,20 +7525,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Cách tiếp cận nào đối với quản trị doanh nghiệp có nhiều khả năng tạo ra văn hóa tổ chức đạo đức hơn?",
+      "questionVi": "Phương pháp quản trị doanh nghiệp nào có khả năng cao nhất để tạo dựng một văn hóa tổ chức có đạo đức?",
       "optionsVi": {
-        "A": "Cách tiếp cận mang tính hệ thống kết hợp với hệ thống khen thưởng/động lực (systemic approach with incentive systems)",
-        "B": "Ủy ban giám sát chỉ tập trung quy tắc",
-        "C": "Hội đồng tập trung tuân thủ pháp lý",
-        "D": "Ủy ban tập trung khung chuẩn"
+        "A": "Phương pháp tiếp cận mang tính hệ thống kết hợp hệ thống khuyến khích (A systemic approach with incentive systems).",
+        "B": "Một ủy ban giám sát chỉ tập trung vào các quy tắc và luật lệ cứng nhắc.",
+        "C": "Một ban giám đốc chỉ tập trung vào việc tuân thủ pháp luật và quy định bắt buộc.",
+        "D": "Một ủy ban giám sát chỉ tập trung vào các khung lý thuyết đạo đức."
       },
       "answerDisplay": "A. A systemic approach with incentive systems.",
-      "concept": "• Systemic Governance & Incentives.",
-      "whyCorrect": "• Systemic approach with incentive systems.",
+      "concept": "• Systemic Corporate Governance: Quản trị doanh nghiệp hiệu quả cần tích hợp các giá trị đạo đức vào hệ thống vận hành và cơ chế khen thưởng thực tế.",
+      "whyCorrect": "• Tiếp cận hệ thống kết hợp với cơ chế khen thưởng, khuyến khích (incentive systems) giúp nhân viên tự nguyện thực hành đạo đức trong công việc hàng ngày vì lợi ích chung, thay vì chỉ đối phó với luật lệ.",
       "whyWrong": {
-        "B": "• Cứng nhắc.",
-        "C": "• Thiếu tính đạo đức tự nguyện.",
-        "D": "• Lý thuyết suông."
+        "B": "• Chỉ tập trung vào quy tắc cứng nhắc (rules-based) tạo ra văn hóa đối phó, nhân viên sẽ tìm kẽ hở thay vì thực sự hiểu giá trị đạo đức.",
+        "C": "• Tuân thủ pháp luật chỉ là mức tối thiểu bắt buộc, không đủ để xây dựng một văn hóa đạo đức chủ động vượt trên luật pháp.",
+        "D": "• Chỉ tập trung vào khung lý thuyết (frameworks) mà thiếu cơ chế khuyến khích thực tiễn sẽ khiến chính sách đạo đức chỉ nằm trên giấy."
       }
     }
   },
@@ -7572,11 +7567,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Outliers",
       "concept": "• Outliers as Edge Cases: Outliers là các điểm dữ liệu nằm xa phân phối chuẩn (normal distribution), tạo ra các edge cases cho mô hình.",
-      "whyCorrect": "• Outliers nằm ngoài phân phối chuẩn.",
+      "whyCorrect": "• Tấn công Man-in-the-Middle (MITM) xảy ra khi kẻ tấn công chặn và có thể sửa đổi thông tin liên lạc giữa hai bên mà cả hai không biết, ví dụ chặn kết nối WiFi công cộng để đánh cắp thông tin đăng nhập.",
       "whyWrong": {
-        "A": "• Overfitting là hiện tượng học vẹt dữ liệu.",
-        "C": "• Errors là giá trị sai.",
-        "D": "• Noise là nhiễu ngẫu nhiên nhỏ."
+        "A": "• Phishing (lừa đảo) dụ nạn nhân tự cung cấp thông tin qua email/website giả mạo, không cần chặn kết nối trực tiếp.",
+        "C": "• DDoS (tấn công từ chối dịch vụ) quá tải server bằng lưu lượng khổng lồ, mục đích là làm sập dịch vụ chứ không chặn thông tin.",
+        "D": "• SQL injection chèn mã độc vào truy vấn database qua input form, tấn công ứng dụng web chứ không chặn liên lạc."
       }
     }
   },
@@ -7605,11 +7600,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Spyware",
       "concept": "• Spyware Concept.",
-      "whyCorrect": "• Spyware.",
+      "whyCorrect": "• Spyware (phần mềm gián điệp) được thiết kế để âm thầm giám sát mọi hoạt động của người dùng - ghi lại phím bấm (keylogger), chụp màn hình, theo dõi lịch sử duyệt web và thu thập thông tin cá nhân mà không có sự đồng ý.",
       "whyWrong": {
-        "A": "• Lây lan file.",
-        "C": "• Mã hóa tống tiền.",
-        "D": "• Trojan ngụy trang."
+        "A": "• Virus lây lan bằng cách đính kèm vào file thực thi và tự sao chép khi file được chạy, mục đích chính là phá hoại chứ không phải giám sát lén.",
+        "C": "• Ransomware mã hóa toàn bộ dữ liệu nạn nhân và đòi tiền chuộc (thường bằng cryptocurrency) để giải mã, không phải giám sát hoạt động.",
+        "D": "• Trojan horse ngụy trang thành phần mềm hợp pháp để mở cửa hậu (backdoor) cho kẻ tấn công truy cập từ xa, khác với giám sát lén."
       }
     }
   },
@@ -7638,11 +7633,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Bell shape",
       "concept": "• Normal Distribution Curve: Phân phối chuẩn (Gaussian distribution) có đường cong đối xứng hình quả chuông (Bell curve).",
-      "whyCorrect": "• Đường cong đối xứng hình quả chuông (Bell shape).",
+      "whyCorrect": "• Giai đoạn huấn luyện (training phase) là khi mô hình nhận dữ liệu đầu vào mới, học từ dữ liệu đó, và lặp lại quá trình huấn luyện cho đến khi tìm được đường cong phù hợp nhất (best fit curve) giảm thiểu hàm lỗi.",
       "whyWrong": {
-        "A": "• Đuôi lệch là Skewed distribution.",
-        "B": "• Form hình vuông là Uniform distribution.",
-        "D": "• Thuật ngữ ngụy tạo."
+        "A": "• Thử nghiệm 40% dataset kiểm tra accuracy thuộc giai đoạn Testing/Evaluation, diễn ra SAU khi huấn luyện hoàn tất.",
+        "B": "• Đưa mô hình vào dự đoán thực tế và giám sát error rate thuộc giai đoạn Deployment/Production.",
+        "D": "• Xác định loại thuật toán và làm sạch dữ liệu thuộc giai đoạn Development/Preparation, diễn ra TRƯỚC khi bắt đầu huấn luyện."
       }
     }
   },
@@ -7703,10 +7698,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. The intention behind a certain activity or request · D. A request for consent to perform an action",
       "concept": "• Data Access Transparency: Intention & Consent.",
-      "whyCorrect": "• Intention & Consent.",
+      "whyCorrect": "• Trong truyền thông khủng hoảng, tuyên bố đầu tiên với truyền thông cần thiết lập giọng điệu tổng thể (set the tone) cho mọi thông tin tiếp theo, thể hiện sự nghiêm túc, đồng cảm và kiểm soát tình hình.",
       "whyWrong": {
-        "A": "• Phi đạo đức.",
-        "B": "• Mua chuộc quyền riêng tư."
+        "A": "• Cung cấp chi tiết chuyên sâu ngay lần đầu quá sớm khi thông tin chưa được xác minh đầy đủ, dễ phải rút lại và mất uy tín.",
+        "B": "• Khảo sát dư luận là hoạt động thu thập thông tin nội bộ, không phải nội dung tuyên bố đầu tiên với báo chí.",
+        "D": "• Nhận trách nhiệm ngay lập tức khi chưa có đầy đủ thông tin có thể tạo rủi ro pháp lý và không phản ánh sự thận trọng cần thiết."
       }
     }
   },
@@ -7735,11 +7731,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. early and often",
       "concept": "• Data Minimization Habit: \"Delete unused data early and often\" là khẩu hiệu thực hành giảm thiểu dữ liệu chuẩn.",
-      "whyCorrect": "• Xóa dữ liệu thừa sớm và thường xuyên.",
+      "whyCorrect": "• Trong mô hình PenTest, Red Team chịu trách nhiệm tiến hành các cuộc tấn công mô phỏng - họ đóng vai kẻ tấn công để dò tìm và khai thác lỗ hổng bảo mật trong hệ thống, kiểm tra sức chống chịu thực tế.",
       "whyWrong": {
-        "B": "• Quá muộn.",
-        "C": "• Quá muộn.",
-        "D": "• Quá muộn."
+        "B": "• Blue Team (đội phòng thủ) có nhiệm vụ phát hiện, ngăn chặn và ứng phó các cuộc tấn công từ Red Team, không phải tiến hành tấn công.",
+        "C": "• White Team (đội trọng tài) giám sát toàn bộ cuộc diễn tập, thiết lập quy tắc tham gia (ROE) và đảm bảo an toàn.",
+        "D": "• \"Vô hiệu hóa tấn công\" là chức năng của hệ thống phòng thủ (IDS/IPS), không phải vai trò chính thức trong PenTest."
       }
     }
   },
@@ -7759,19 +7755,19 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A, D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Những chỉ số KPI phổ biến nào trên bảng điều khiển (dashboard) của các hệ thống dựa trên dữ liệu? (Chọn hai)",
+      "questionVi": "Những chỉ số hiệu năng cốt lõi (KPIs) nào thường xuất hiện trên bảng điều khiển (dashboards) của các hệ thống dựa trên dữ liệu? (Chọn hai)",
       "optionsVi": {
         "A": "Thời gian huấn luyện mô hình (Model training time)",
-        "B": "EBITDA",
-        "C": "Dự báo dòng tiền vận hành",
-        "D": "Các chỉ số hiệu năng như độ chính xác và hàm chi phí (Performance metrics such as accuracy and cost functions)"
+        "B": "Lợi nhuận trước thuế, lãi vay và khấu hao (EBITDA)",
+        "C": "Dự báo dòng tiền hoạt động",
+        "D": "Các chỉ số đánh giá hiệu năng như độ chính xác (accuracy) và hàm chi phí (cost functions)"
       },
       "answerDisplay": "A. Model training time · D. Performance metrics, such as accuracy and cost functions",
-      "concept": "• Data-Driven System KPIs: Thời gian huấn luyện (training time) và Chỉ số đo lường hiệu năng kỹ thuật (accuracy/cost functions).",
-      "whyCorrect": "• A và D là các chỉ số đo lường kỹ thuật của Data System.",
+      "concept": "• Tech Dashboard KPIs in Data Systems: Giám sát các chỉ số kỹ thuật của mô hình để đảm bảo chất lượng vận hành thuật toán.",
+      "whyCorrect": "• Các hệ thống dựa trên dữ liệu (ML/AI systems) cần giám sát hai KPI kỹ thuật quan trọng trên bảng điều khiển: (1) Thời gian huấn luyện mô hình (training time) và (2) Hiệu năng mô hình như độ chính xác (accuracy) và hàm chi phí.",
       "whyWrong": {
-        "B": "• EBITDA thuộc chỉ số tài chính doanh nghiệp.",
-        "C": "• Dòng tiền thuộc chỉ số kế toán."
+        "B": "• EBITDA là chỉ số tài chính doanh nghiệp tổng thể, không phải KPI kỹ thuật hiển thị trên dashboard giám sát của hệ thống dữ liệu.",
+        "C": "• Dự báo dòng tiền hoạt động thuộc về dashboard của phòng ban kế toán/tài chính, không thuộc về quản trị vận hành hệ thống dữ liệu ML."
       }
     }
   },
@@ -7791,20 +7787,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Tính ẩn danh k-anonymity trong tập dữ liệu đạt được khi mỗi cá nhân không thể:",
+      "questionVi": "Độ ẩn danh K (K-anonymity) trong một tập dữ liệu đạt được khi mỗi cá nhân không thể:",
       "optionsVi": {
-        "A": "Phân biệt được với ít nhất K cá nhân khác cũng có trong tập dữ liệu (distinguished from at least K individuals)",
-        "B": "Tái định danh trong K tập dữ liệu",
-        "C": "Ẩn khỏi cột bán định danh",
-        "D": "Tổn hại từ tập dữ liệu"
+        "A": "Bị phân biệt với ít nhất K cá nhân khác cũng có mặt trong tập dữ liệu đó (distinguished from at least K individuals)",
+        "B": "Bị tái định danh trong K tập dữ liệu khác nhau",
+        "C": "Bị ẩn khỏi một cột bán định danh miễn là có K cá nhân thuộc về cột đó",
+        "D": "Bị gây hại từ các tập dữ liệu có K cá nhân thuộc nhóm nhạy cảm"
       },
       "answerDisplay": "A. distinguished from at least K individuals who are also in the dataset",
-      "concept": "• k-Anonymity Definition: Một tập dữ liệu đạt k-anonymity nếu thông tin của mỗi cá nhân không thể phân biệt được với ít nhất k-1 cá nhân khác.",
-      "whyCorrect": "• Định nghĩa chuẩn của k-anonymity.",
+      "concept": "• K-Anonymity Definition: Kỹ thuật bảo vệ quyền riêng tư đảm bảo thông tin của mỗi cá nhân giống hệt với ít nhất K-1 cá nhân khác trong cùng tập dữ liệu.",
+      "whyCorrect": "• Định nghĩa chuẩn của K-anonymity yêu cầu bất kỳ bản ghi cá nhân nào trong cơ sở dữ liệu cũng phải có các thuộc tính bán định danh (quasi-identifiers) trùng khớp với ít nhất K-1 bản ghi khác, khiến kẻ tấn công không thể phân biệt danh tính cụ thể.",
       "whyWrong": {
-        "B": "• Sai khái niệm.",
-        "C": "• Sai khái niệm.",
-        "D": "• Sai khái niệm."
+        "B": "• K-anonymity là thuộc tính bảo mật của một tập dữ liệu đơn lẻ, không liên quan đến việc đếm số lượng tập dữ liệu bị tái định danh.",
+        "C": "• K-anonymity tìm cách ẩn giấu thông tin cá nhân trong nhóm, không phải là việc \"ẩn khỏi cột bán định danh\".",
+        "D": "• Mục tiêu của K-anonymity là ngăn chặn việc nhận dạng thông tin cá nhân chứ không đo lường mức độ gây hại trực tiếp."
       }
     }
   },
@@ -7833,11 +7829,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. Responsible, Accountable, Consulted, Informed",
       "concept": "• RACI Matrix Concept.",
-      "whyCorrect": "• Responsible, Accountable, Consulted, Informed.",
+      "whyCorrect": "• RACI là viết tắt chuẩn trong quản lý dự án: Responsible (Người thực hiện công việc), Accountable (Người chịu trách nhiệm giải trình cuối cùng), Consulted (Người được tham vấn trước khi quyết định), Informed (Người được thông báo sau khi quyết định).",
       "whyWrong": {
-        "A": "• Sai.",
-        "B": "• Sai.",
-        "C": "• Sai."
+        "A": "• Đáp án này sử dụng các từ ngẫu nhiên (Relatable, Agreeable, Commendable, Irascible) không liên quan đến quản lý dự án hay phân công trách nhiệm.",
+        "B": "• \"Accessible\" và \"Improvised\" sai nghĩa - Accessible (có thể tiếp cận) và Improvised (ứng biến) không nằm trong khung RACI chuẩn.",
+        "C": "• \"Redesignable, Accessible, Collected, Informative\" là tổ hợp từ ngẫu nhiên không tồn tại trong bất kỳ khung quản lý dự án nào."
       }
     }
   },
@@ -7857,20 +7853,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Phán quyết ngoài tư pháp (extrajudicial judgment) mô tả điều gì?",
+      "questionVi": "Điều nào sau đây mô tả phán quyết ngoài tư pháp (extrajudicial judgment)?",
       "optionsVi": {
-        "A": "Phán quyết hoặc chấm điểm được đưa ra bên ngoài tòa án (ruling or scoring outside of a court)",
-        "B": "Chuyển bị cáo tài phán",
-        "C": "Áp dụng luật tài phán khác",
-        "D": "Diễn giải luật bất thường"
+        "A": "Một phán quyết hoặc chấm điểm được đưa ra bên ngoài hệ thống tòa án pháp lý (ruling made outside of a court).",
+        "B": "Chuyển giao bị cáo từ tài phán này sang tài phán khác để xét xử.",
+        "C": "Áp dụng luật pháp từ một tài phán vào bên trong một tài phán khác.",
+        "D": "Diễn giải luật pháp một cách bất thường vượt ra ngoài ý nghĩa thông thường của nó."
       },
       "answerDisplay": "A. A ruling or scoring made outside of a court.",
-      "concept": "• Extrajudicial Judgment.",
-      "whyCorrect": "• Ruling outside of court.",
+      "concept": "• Extrajudicial Judgment in Technology: Việc sử dụng thuật toán AI để tự động chấm điểm, đánh giá rủi ro tái phạm hoặc chấm điểm tín dụng công dân mà không qua quy trình xét xử tư pháp của tòa án.",
+      "whyCorrect": "• Phán quyết ngoài tư pháp (extrajudicial judgment) là quyết định hoặc chấm điểm được đưa ra bên ngoài hệ thống tòa án chính thức, ví dụ như thuật toán AI chấm điểm tín dụng hoặc đánh giá rủi ro tái phạm mà không có sự giám sát của thẩm phán.",
       "whyWrong": {
-        "B": "• Dẫn độ.",
-        "C": "• Xung đột luật.",
-        "D": "• Diễn giải luật."
+        "B": "• Chuyển giao bị cáo giữa các cơ quan tài phán là thủ tục dẫn độ (extradition), một thủ tục tư pháp hợp pháp.",
+        "C": "• Áp dụng luật liên bang/bang khác thuộc về tư pháp quốc tế và xung đột pháp luật, không phải extrajudicial judgment.",
+        "D": "• Diễn giải luật bất thường thuộc lỗi tư pháp hoặc sự sáng tạo pháp lý của thẩm phán, vẫn diễn ra trong tòa án."
       }
     }
   },
@@ -7887,22 +7883,22 @@ window.QUIZ_DATA['ite'] = [
       "C": "Personnel emails",
       "D": "Network intrusion detection alerts"
     },
-    "answer": "D",
+    "answer": "A, D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Nguồn nào sau đây là nguồn dữ liệu điển hình mà hệ thống SIEM thu thập? (Chọn hai)",
+      "questionVi": "Hệ thống SIEM thường thu thập dữ liệu từ những nguồn nào sau đây? (Chọn hai)",
       "optionsVi": {
         "A": "Nhật ký sự kiện hệ thống (System event logs)",
-        "B": "Dữ liệu cá nhân mã hóa",
-        "C": "Email nhân sự",
-        "D": "Cảnh báo phát hiện xâm nhập mạng (Network intrusion detection alerts)"
+        "B": "Dữ liệu cá nhân đã được mã hóa bảo mật",
+        "C": "Email cá nhân của nhân viên công ty",
+        "D": "Các cảnh báo từ hệ thống phát hiện xâm nhập mạng (NIDS alerts)"
       },
       "answerDisplay": "A. System event logs · D. Network intrusion detection alerts",
-      "concept": "• SIEM Log Sources: Hệ thống SIEM thu thập log sự kiện hệ thống (System logs) và cảnh báo từ IDS/IPS (Network intrusion detection alerts).",
-      "whyCorrect": "• System logs và Network NIDS alerts là hai nguồn log nòng cốt của SIEM.",
+      "concept": "• SIEM Data Sources: Hệ thống quản lý sự kiện an ninh thu thập nhật ký sự kiện và cảnh báo xâm nhập để phân tích tương quan mối đe dọa.",
+      "whyCorrect": "• SIEM (Security Information and Event Management) thu thập dữ liệu nhật ký sự kiện hệ thống (System event logs) và các cảnh báo từ hệ thống phát hiện xâm nhập mạng (NIDS alerts) để phân tích tương quan và phát hiện sự cố an ninh.",
       "whyWrong": {
-        "B": "• Dữ liệu cá nhân mã hóa không thuộc log an ninh mạng.",
-        "C": "• Email nhân sự thuộc nội dung riêng tư không phải log hạ tầng."
+        "B": "• Dữ liệu cá nhân được mã hóa phục vụ bảo vệ riêng tư người dùng, không phải nguồn log phục vụ phân tích an ninh của SIEM.",
+        "C": "• Email cá nhân của nhân viên chứa nội dung riêng tư nhạy cảm, không phải nguồn log kỹ thuật để SIEM thu thập giám sát trực tiếp trừ khi có nghi ngờ rò rỉ đặc biệt."
       }
     }
   },
@@ -7931,11 +7927,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Accountability",
       "concept": "• Accountability Concept.",
-      "whyCorrect": "• Accountability.",
+      "whyCorrect": "• Accountability (Trách nhiệm giải trình) là phạm trù rủi ro đạo đức xác định rõ trách nhiệm của các bên liên quan trong việc tạo ra và sử dụng công nghệ dựa trên dữ liệu - ai chịu trách nhiệm khi hệ thống đưa ra quyết định sai hoặc gây hại.",
       "whyWrong": {
-        "A": "• Explainability.",
-        "C": "• Transparency.",
-        "D": "• Understandability."
+        "A": "• Explainability (Khả năng giải thích) tập trung vào khả năng giải thích CÁCH hệ thống hoạt động và ra quyết định, không trực tiếp xác định ai chịu trách nhiệm.",
+        "C": "• Transparency (Tính minh bạch) yêu cầu công khai thông tin về hoạt động hệ thống, nhưng minh bạch không tự động đảm bảo ai sẽ chịu trách nhiệm.",
+        "D": "• Understandability (Tính dễ hiểu) liên quan đến mức độ người dùng cuối có thể nắm bắt chức năng hệ thống, không phải phân công trách nhiệm pháp lý."
       }
     }
   },
@@ -7964,11 +7960,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Proving that something exists, but not the specifics",
       "concept": "• Zero-Knowledge Proof (ZKP): Cho phép một bên (prover) chứng minh cho bên khác (verifier) rằng một phát biểu là đúng mà không cần tiết lộ bất kỳ thông tin nào khác ngoài tính đúng đắn của phát biểu đó.",
-      "whyCorrect": "• Chứng minh mệnh đề đúng mà không hé lộ chi tiết bí mật.",
+      "whyCorrect": "• Zero-knowledge protocols (ZKPs) cho phép một bên chứng minh rằng họ SỞ HỮU hoặc BIẾT một thông tin nào đó mà KHÔNG cần tiết lộ chi tiết cụ thể của thông tin đó - ví dụ chứng minh bạn đủ 18 tuổi mà không cần cho xem ngày sinh chính xác.",
       "whyWrong": {
-        "A": "• Sai nghĩa.",
-        "B": "• Sai nghĩa.",
-        "D": "• Sai nghĩa toán học."
+        "A": "• \"Quyết định khi không biết gì\" diễn giải sai tên gọi ZKP - \"zero knowledge\" ám chỉ bên xác minh không nhận được thông tin ngoài tính đúng/sai, không phải người dùng không biết gì.",
+        "B": "• \"Pin hết\" hoàn toàn không liên quan đến giao thức mật mã - đây là đáp án gây nhiễu dựa trên chữ \"zero\" trong tên.",
+        "D": "• Lỗi chia cho 0 (divide-by-zero) là lỗi lập trình cơ bản, hoàn toàn không liên quan đến giao thức chứng minh không tiết lộ thông tin."
       }
     }
   },
@@ -8063,10 +8059,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Press release · D. Video briefing",
       "concept": "• Media Tools Concept.",
-      "whyCorrect": "• Press release & Video briefing.",
+      "whyCorrect": "• Hai công cụ hiệu quả nhất trong kế hoạch truyền thông với truyền thông: (1) Thông cáo báo chí (press release) - văn bản chính thức cung cấp thông tin cốt lõi cho báo giới; (2) Phiên họp video (video briefing) - cho phép trình bày trực quan và tương tác trực tiếp với phóng viên.",
       "whyWrong": {
-        "A": "• Định hướng nội bộ.",
-        "C": "• Chiến dịch rộng."
+        "A": "• Tuyên bố sứ mệnh (mission statement) là văn bản định hướng chiến lược dài hạn của tổ chức, không phải công cụ truyền thông cụ thể cho từng sự kiện.",
+        "C": "• Chiến dịch giáo dục công chúng (public education campaign) rộng hơn và kéo dài hơn so với công cụ truyền thông sự kiện cụ thể, nhắm đến thay đổi nhận thức dài hạn."
       }
     }
   },
@@ -8160,11 +8156,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. By using data-driven techniques to inform the strategies behind the DRP.",
       "concept": "• AI in Disaster Recovery Planning: Dùng phân tích dữ liệu AI để định hình chiến lược ứng phó và tối ưu kịch bản DRP.",
-      "whyCorrect": "• Phân tích dữ liệu AI hỗ trợ lập chiến lược khôi phục DRP.",
+      "whyCorrect": "• AI và các kỹ thuật dựa trên dữ liệu có thể được tận dụng trong kế hoạch phục hồi thảm họa (DRP) bằng cách phân tích dữ liệu lịch sử sự cố, dự đoán rủi ro tiềm ẩn và tối ưu hóa chiến lược phục hồi dựa trên bằng chứng thay vì phỏng đoán.",
       "whyWrong": {
-        "B": "• NLP sửa lỗi tả là việc quá nhỏ.",
-        "C": "• Deep learning không ngăn được thiên tai tự nhiên.",
-        "D": "• DRP luôn luôn bắt buộc đối với tổ chức."
+        "B": "• Dùng NLP kiểm tra lỗi chính tả và tính dễ hiểu của tài liệu DRP chỉ là ứng dụng bề mặt - giá trị chính của AI là phân tích dữ liệu chiến lược, không phải kiểm tra văn phạm.",
+        "C": "• \"Deep learning tăng cường phòng thủ chống thảm họa\" quá chung chung - DRP tập trung vào PHỤC HỒI sau thảm họa, không phải ngăn chặn thảm họa.",
+        "D": "• Để AI quyết định có cần DRP hay không là thiếu trách nhiệm - mọi tổ chức đều cần DRP, câu hỏi là triển khai NHƯ THẾ NÀO chứ không phải CÓ CẦN HAY KHÔNG."
       }
     }
   },
@@ -8193,11 +8189,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. The public's perception of a crisis",
       "concept": "• Crisis Perception Management.",
-      "whyCorrect": "• Perception management.",
+      "whyCorrect": "• Ý tưởng quan trọng nhất mà chương trình truyền thông khủng hoảng cần quản lý là NHẬN THỨC (perception) của công chúng về cuộc khủng hoảng - cách công chúng NGHĨ và CẢM NHẬN về tình huống quan trọng hơn chi tiết kỹ thuật.",
       "whyWrong": {
-        "B": "• Đội kỹ thuật xử lý.",
-        "C": "• Chi tiết nhỏ.",
-        "D": "• Nội bộ."
+        "B": "• Tác động thực tế (real-world effects) thuộc về đội ứng phó sự cố (incident response team), không phải truyền thông quản lý.",
+        "C": "• Chi tiết cá nhân của cuộc khủng hoảng quá hẹp - truyền thông cần quản lý bức tranh tổng thể về nhận thức, không phải từng chi tiết nhỏ.",
+        "D": "• Đồng thuận nội bộ về cách tiếp cận quan trọng nhưng là bước chuẩn bị NỘI BỘ, không phải ý tưởng chính mà chương trình truyền thông quản lý."
       }
     }
   },
@@ -8226,11 +8222,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. All people who have an impact or are impacted by the organization.",
       "concept": "• Stakeholder Definition.",
-      "whyCorrect": "• Impact or impacted.",
+      "whyCorrect": "• Stakeholder (bên liên quan) bao gồm TẤT CẢ những người có ảnh hưởng đến hoặc bị ảnh hưởng bởi hoạt động của tổ chức - từ nhân viên, khách hàng, nhà đầu tư đến cộng đồng địa phương và cơ quan quản lý.",
       "whyWrong": {
-        "A": "• Hẹp.",
-        "B": "• Hẹp.",
-        "D": "• Hẹp."
+        "A": "• \"Tất cả nhân viên nội bộ\" quá hẹp - bỏ qua khách hàng, nhà cung cấp, cộng đồng và các bên bên ngoài bị ảnh hưởng.",
+        "B": "• \"Nhân viên và khách hàng\" vẫn chưa đầy đủ - thiếu nhà đầu tư, cơ quan quản lý, cộng đồng và các bên liên quan khác.",
+        "D": "• \"Tất cả người trong công ty\" chỉ bao gồm bên nội bộ, hoàn toàn bỏ sót các bên liên quan bên ngoài có quyền lợi liên quan."
       }
     }
   },
@@ -8292,11 +8288,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. To pre-write communications before they are needed",
       "concept": "• Holding Statement Concept.",
-      "whyCorrect": "• Pre-write communications.",
+      "whyCorrect": "• Holding statement (tuyên bố cầm chừng) là thông điệp được viết sẵn TRƯỚC KHI khủng hoảng xảy ra, sẵn sàng phát hành ngay lập tức khi cần, giúp tổ chức kiểm soát thông điệp ban đầu trong những giờ đầu tiên quan trọng nhất.",
       "whyWrong": {
-        "A": "• Sai.",
-        "B": "• Sai.",
-        "D": "• Sai."
+        "A": "• Yêu cầu tạm dừng hoạt động kinh doanh là quyết định vận hành, không phải mục đích của holding statement trong truyền thông khủng hoảng.",
+        "B": "• Giữ chân dịch vụ của các cơ quan truyền thông cụ thể thuộc về PR/media relations, không phải chức năng của holding statement.",
+        "D": "• Ngăn nhân viên truyền thông sớm là chính sách nội bộ (media policy), không phải mục đích trực tiếp của holding statement."
       }
     }
   },
@@ -8325,10 +8321,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Disseminate information in multiple formats · C. Communicate information in real time",
       "concept": "• Risk Communication Strategies.",
-      "whyCorrect": "• Multiple formats & Real time.",
+      "whyCorrect": "• Hai chiến lược hiệu quả nhất để truyền thông rủi ro đạo đức cho tổ chức: (1) Phổ biến thông tin qua NHIỀU định dạng (văn bản, video, infographic, workshop) để phù hợp với các phong cách tiếp nhận khác nhau; (2) Truyền thông THEO THỜI GIAN THỰC (real time) để đảm bảo thông tin cập nhật và kịp thời.",
       "whyWrong": {
-        "A": "• Đơn điệu.",
-        "D": "• Thụ động."
+        "A": "• Truyền thông qua một tiếng nói duy nhất hạn chế khả năng tiếp cận và không phù hợp với quy mô lớn - cần nhiều kênh và đại diện.",
+        "D": "• Chỉ cung cấp thông tin khi được hỏi là chiến lược phản ứng thụ động - rủi ro đạo đức cần được chủ động truyền thông trước khi có sự cố."
       }
     }
   },
@@ -8357,10 +8353,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Communicate to individuals proactively rather than reactively · D. Ensure individuals feel that they have input into the process",
       "concept": "• Individual Risk Communication: Chủ động (proactively) và Tạo cảm giác được đóng góp ý kiến (input into process).",
-      "whyCorrect": "• B và D tạo sự tin tưởng và hợp tác từ phía cá nhân.",
+      "whyCorrect": "• Hai chiến lược quan trọng nhất khi truyền thông rủi ro đạo đức cho CÁ NHÂN: (1) Chủ động truyền thông (proactively) thay vì chờ cá nhân tìm hiểu; (2) Đảm bảo cá nhân cảm thấy có tiếng nói và quyền tham gia vào quy trình (input into the process).",
       "whyWrong": {
-        "A": "• Bắt người dùng hiểu hết chi tiết kỹ thuật là không khả thi.",
-        "C": "• Đổ lỗi trách nhiệm cho cá nhân là sai lầm."
+        "A": "• Yêu cầu cá nhân hiểu chi tiết từng rủi ro quá nặng nề - họ cần hiểu tác động lên mình, không cần thành chuyên gia phân tích rủi ro.",
+        "C": "• Thông báo cá nhân về nghĩa vụ giảm thiểu rủi ro cho CHÍNH HỌ đặt gánh nặng lên vai người dùng - tổ chức phải chịu trách nhiệm chính trong việc bảo vệ."
       }
     }
   },
@@ -8389,11 +8385,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. 80-90%",
       "concept": "• Algorithmic Trading Dominance: Thống kê năm 2019 cho thấy khoảng 80-90% giao dịch tài chính chứng khoán do thuật toán tự động thực hiện.",
-      "whyCorrect": "• 80-90% là con số thống kê chính xác trong bài học ITE302c.",
+      "whyCorrect": "• Đến năm 2019, khoảng 80-90% giao dịch cổ phiếu tương lai (equity-futures) và cổ phiếu tiền mặt (cash-equity) được thực hiện bởi thuật toán giao dịch tự động, cho thấy mức độ phụ thuộc cực lớn của thị trường tài chính vào AI/automated trading.",
       "whyWrong": {
-        "A": "• Quá thấp.",
-        "C": "• Quá thấp.",
-        "D": "• Quá thấp."
+        "A": "• 1-5% quá thấp so với thực tế - thuật toán giao dịch đã thống trị thị trường chứng khoán từ nhiều năm trước 2019.",
+        "C": "• 20-30% vẫn thấp hơn nhiều so với thực tế - tỷ lệ này đã bị vượt qua từ đầu những năm 2010.",
+        "D": "• 11-17% không phản ánh đúng sự thống trị của algorithmic trading trong thị trường chứng khoán hiện đại."
       }
     }
   },
@@ -8455,11 +8451,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. It is difficult to understand how or why an AI system made a particular decision.",
       "concept": "• Black Box Problem Concept.",
-      "whyCorrect": "• How or why AI made a decision.",
+      "whyCorrect": "• Vấn đề hộp đen (Black box problem) trong AI là tình trạng con người không thể hiểu được CÁCH THỨC và LÝ DO tại sao hệ thống AI đưa ra một quyết định cụ thể, mặc dù có thể thấy đầu vào và đầu ra - trọng tâm là quá trình bên trong.",
       "whyWrong": {
-        "A": "• Dữ liệu có thể soi được.",
-        "C": "• Kết quả nhìn thấy được.",
-        "D": "• Báo cáo là văn bản."
+        "A": "• Khó hiểu bản chất dữ liệu huấn luyện là vấn đề Data Governance/Documentation, không phải Black Box - dữ liệu thường có thể kiểm tra được.",
+        "C": "• Khó hiểu kết quả đầu ra thuộc về Interpretability - kết quả thường đọc được (số, nhãn), vấn đề là không biết TẠI SAO ra kết quả đó.",
+        "D": "• Khó hiểu báo cáo là vấn đề presentation/communication, không phải bản chất kỹ thuật của Black Box Problem."
       }
     }
   },
@@ -8521,11 +8517,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. To specify the type of algorithm the model should use and make sure the data is cleaned/formatted",
       "concept": "• Model Development Phase: Lựa chọn thuật toán (Algorithm selection) và Chuẩn hóa/làm sạch dữ liệu (Data cleaning & formatting).",
-      "whyCorrect": "• Chọn loại thuật toán và chuẩn bị dữ liệu sạch.",
+      "whyCorrect": "• Giai đoạn phát triển (develop phase) khi xây dựng mô hình dự đoán tập trung vào việc chọn loại thuật toán phù hợp (linear regression, decision tree, neural network...) và đảm bảo dữ liệu đã được làm sạch, chuẩn hóa đúng định dạng để đưa vào huấn luyện.",
       "whyWrong": {
-        "A": "• Thuộc bước Testing.",
-        "B": "• Thuộc bước Optimization/Tuning.",
-        "D": "• Thuộc bước Retraining/Inference."
+        "A": "• Thử nghiệm 40% dataset để kiểm tra accuracy thuộc giai đoạn Testing/Evaluation, diễn ra sau develop và training.",
+        "B": "• Đưa hàm lỗi xuống mức chấp nhận được thuộc giai đoạn Training/Optimization, diễn ra sau khi đã chọn thuật toán.",
+        "D": "• Nhận đầu vào mới và lặp lại huấn luyện thuộc giai đoạn Training/Iteration, diễn ra sau khi đã chuẩn bị xong ở develop."
       }
     }
   },
@@ -8545,20 +8541,19 @@ window.QUIZ_DATA['ite'] = [
     "answer": "C, D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Nguyên tắc không gây hại (non-maleficence) yêu cầu:",
+      "questionVi": "Điều nào sau đây mô tả đúng nhất lý báo tại sao dữ liệu đôi khi được ví như dầu mỏ?",
       "optionsVi": {
-        "A": "Không gây ra tổn hại (doing no harm)",
-        "B": "Không có định kiến",
-        "C": "Không có rủi ro an ninh",
-        "D": "Có rủi ro"
+        "A": "Dữ liệu có thể dễ dàng bị độc quyền",
+        "B": "Dữ liệu có thể gây hại cho môi trường tự nhiên",
+        "C": "Dữ liệu có giá trị tiền tệ lớn (monetarily valuable)",
+        "D": "Dữ liệu là nhiên liệu vận hành các công nghệ thuật toán (fuel algorithmic technologies)"
       },
-      "answerDisplay": "A. The principle of doing no harm.",
-      "concept": "• Non-Maleficence: Doing no harm.",
-      "whyCorrect": "• Doing no harm.",
+      "answerDisplay": "C. Data can be monetarily valuable. · D. Data can fuel algorithmic technologies.",
+      "concept": "• Data as the New Oil: Dữ liệu là tài sản có giá trị kinh tế cao và đóng vai trò làm nguyên liệu thô để thúc đẩy các hệ thống AI hoạt động.",
+      "whyCorrect": "• Dữ liệu được ví như dầu mỏ vì hai khía cạnh: (1) Dữ liệu có thể khai thác để tạo ra giá trị kinh tế/tiền tệ khổng lồ (monetarily valuable) và (2) Dữ liệu đóng vai trò là nguồn nhiên liệu (fuel) để vận hành và tối ưu hóa các mô hình thuật toán.",
       "whyWrong": {
-        "B": "• Fairness.",
-        "C": "• Security.",
-        "D": "• Sai."
+        "A": "• Mặc dù dữ liệu có xu hướng tích tụ ở các công ty lớn, nó không bị giới hạn vật lý và dễ bị độc quyền tuyệt đối như các mỏ dầu ngoài đời thực.",
+        "B": "• Tác động môi trường của dữ liệu là gián tiếp thông qua điện năng tiêu thụ của server, không trực tiếp gây ô nhiễm sinh thái trực quan như dầu tràn."
       }
     }
   },
@@ -8578,20 +8573,18 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A, B, D",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Ví dụ về định kiến tự động hóa (automation bias) là:",
+      "questionVi": "Những điều nào sau đây mô tả cách thức áp dụng các thực hành đạo đức có thể trở thành một yếu tố tạo nên sự khác biệt chiến lược (strategic differentiator)?",
       "optionsVi": {
-        "A": "Dùng dữ liệu khảo sát bị định kiến",
-        "B": "Dùng dữ liệu Twitter",
-        "C": "Dùng dữ liệu mới",
-        "D": "Sử dụng dữ liệu cào tự động từ Twitter thay vì dữ liệu khảo sát trực tiếp (using scraped twitter data over survey data)"
+        "A": "Giúp xây dựng niềm tin của khách hàng (customer trust)",
+        "B": "Hỗ trợ thiết lập các mối quan hệ đối tác chiến lược",
+        "C": "Đảm bảo doanh nghiệp tuân thủ đầy đủ các quy định pháp luật",
+        "D": "Khuyến khích các ứng viên tài năng nộp đơn ứng tuyển vào công ty"
       },
-      "answerDisplay": "D. using scraped twitter data over survey data",
-      "concept": "• Automation Bias Example.",
-      "whyCorrect": "• Scraped twitter data over survey data.",
+      "answerDisplay": "A. It will build customer trust. · B. It will support the development of strategic partnerships. · D. It will encourage applicants to apply for your company.",
+      "concept": "• Ethics as a Competitive Advantage: Cam kết đạo đức giúp doanh nghiệp nổi bật trên thị trường, thu hút khách hàng, đối tác và nhân tài.",
+      "whyCorrect": "• Cam kết đạo đức tạo lợi thế cạnh tranh chiến lược vượt trội qua ba tác động: (1) Xây dựng niềm tin khách hàng (customer trust); (2) Thu hút các đối tác chiến lược có chung tầm nhìn giá trị và (3) Gia tăng sức hấp dẫn thương hiệu tuyển dụng đối với nhân tài.",
       "whyWrong": {
-        "A": "• Sai.",
-        "B": "• Sai.",
-        "C": "• Sai."
+        "C": "• Tuân thủ pháp luật (compliance) là nghĩa vụ bắt buộc tối thiểu của mọi doanh nghiệp hoạt động trên thị trường, không phải là yếu tố khác biệt chiến lược tự nguyện."
       }
     }
   },
@@ -8611,20 +8604,19 @@ window.QUIZ_DATA['ite'] = [
     "answer": "B, C",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Khi dữ liệu thu thập không phản ánh chính xác toàn bộ môi trường, bạn gặp:",
+      "questionVi": "Tuyên bố quyền con người là bất khả xâm phạm (inalienable) có nghĩa là gì?",
       "optionsVi": {
-        "A": "Prejudice bias",
-        "B": "Observer bias",
-        "C": "Exclusion bias",
-        "D": "Định kiến mẫu (Sample bias)"
+        "A": "Quyền bất khả xâm phạm là có điều kiện ràng buộc",
+        "B": "Quyền bất khả xâm phạm gắn liền với bản chất của mọi con người (inherent)",
+        "C": "Quyền bất khả xâm phạm không thể bị tước đoạt ngoại trừ trong những hoàn cảnh cực kỳ đặc biệt",
+        "D": "Quyền bất khả xâm phạm bắt nguồn từ truyền thống lịch sử"
       },
-      "answerDisplay": "D. sample bias",
-      "concept": "• Sample Bias concept.",
-      "whyCorrect": "• Sample bias.",
+      "answerDisplay": "B. Inalienable rights are inherent in all human beings. · C. Inalienable rights cannot be taken away except in extreme circumstances.",
+      "concept": "• Inalienability of Human Rights: Quyền con người là bẩm sinh, không thể bị mua bán, từ bỏ hay tước đoạt một cách tùy tiện.",
+      "whyCorrect": "• Tính bất khả xâm phạm (inalienable) khẳng định quyền con người: (1) Là bẩm sinh và gắn liền với tư cách làm người (inherent) và (2) Không ai có quyền tước đoạt của cá nhân, ngoại trừ các trường hợp đặc biệt do luật pháp quy định (như hạn chế tự do khi bị kết án tù).",
       "whyWrong": {
-        "A": "• Định kiến nhận thức.",
-        "B": "• Lỗi người quan sát.",
-        "C": "• Lỗi loại trừ."
+        "A": "• Quyền bất khả xâm phạm là vô điều kiện (unconditional) vì chúng thuộc về con người ngay từ khi sinh ra, không phụ thuộc vào hành vi hay địa vị.",
+        "D": "• Quyền con người mang tính phổ quát toàn cầu (universal), không được định nghĩa dựa trên truyền thống hay tập quán văn hóa riêng biệt của từng quốc gia."
       }
     }
   },
@@ -8644,19 +8636,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "A",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Quy định pháp lý khác với khung chuẩn đạo đức ở những điểm nào? (Chọn hai)",
+      "questionVi": "Mục đích của bảo mật vi phân (differential privacy) là gì?",
       "optionsVi": {
-        "A": "Do ngành dẫn dắt",
-        "B": "Linh hoạt",
-        "C": "Có sự cưỡng chế thực thi của pháp luật đằng sau (legal enforcement)",
-        "D": "Cung cấp cơ sở rõ ràng cho các tranh chấp/kiện tụng pháp lý tiềm ẩn (clear basis for litigation)"
+        "A": "Cho phép các bên chia sẻ dữ liệu riêng tư mà không làm lộ thông tin cá nhân của các cá nhân trong dữ liệu đó (without revealing individuals)",
+        "B": "Loại bỏ các mã nhận dạng trực tiếp được sử dụng để xác định danh tính",
+        "C": "Chỉ cho phép một số bên nhất định truy cập vào các phần cụ thể của dữ liệu",
+        "D": "Đảm bảo dữ liệu hoàn toàn bí mật và không thể đọc được bởi các bên không được ủy quyền"
       },
-      "answerDisplay": "C. Regulations have legal enforcement behind them. · D. Regulations provide a clear basis for potential litigation.",
-      "concept": "• Regulations Legal Force: Legal enforcement & Litigation basis.",
-      "whyCorrect": "• C và D.",
+      "answerDisplay": "A. To enable parties to share private data without revealing individuals represented in the data.",
+      "concept": "• Differential Privacy Goal: Chia sẻ thông tin thống kê tổng hợp từ tập dữ liệu lớn mà vẫn bảo vệ tuyệt đối thông tin nhạy cảm của từng cá nhân.",
+      "whyCorrect": "• Differential Privacy cho phép chia sẻ và phân tích dữ liệu tổng hợp mà không tiết lộ thông tin của cá nhân cụ thể nào, bằng cách thêm nhiễu toán học có kiểm soát vào kết quả truy vấn, đảm bảo sự có mặt hay vắng mặt của bất kỳ cá nhân nào không ảnh hưởng đáng kể đến kết quả.",
       "whyWrong": {
-        "A": "• Do chính phủ ban hành.",
-        "B": "• Thường cứng nhắc."
+        "B": "• Loại bỏ trực tiếp trường nhận dạng là kỹ thuật De-identification (xóa nhận dạng), đơn giản hơn và không cung cấp bảo đảm toán học như Differential Privacy.",
+        "C": "• Phân quyền truy cập cho từng phần dữ liệu là Access Control, thuộc về quản lý bảo mật hệ thống chứ không phải kỹ thuật bảo vệ riêng tư toán học.",
+        "D": "• Đảm bảo dữ liệu hoàn toàn bí mật là Encryption - Differential Privacy ngược lại, cho phép chia sẻ dữ liệu nhưng với bảo vệ riêng tư."
       }
     }
   },
@@ -8676,20 +8669,20 @@ window.QUIZ_DATA['ite'] = [
     "answer": "C",
     "source": "Quizlet_ITE302c_340",
     "explanation": {
-      "questionVi": "Cân nhắc đạo đức quan trọng nhất với Deepfakes là:",
+      "questionVi": "Hệ thống Học máy (Machine Learning) khác với hệ thống Học sâu (Deep Learning) ở điểm nào?",
       "optionsVi": {
-        "A": "Mất cơ hội tiền bạc",
-        "B": "Chiếm đoạt diện mạo cá nhân và sử dụng làm vũ khí chống lại họ (usurp likeness and weaponized)",
-        "C": "Vi phạm chia sẻ dữ liệu",
-        "D": "Xây dựng trên tiến bộ bên thứ ba"
+        "A": "Hệ thống ML có khả năng học tập từ những sai lầm của chính nó",
+        "B": "Hệ thống ML tự thực hiện tất cả quy trình trích xuất đặc trưng và phân loại",
+        "C": "Hệ thống ML cần con người thực hiện quy trình trích xuất đặc trưng (feature extraction)",
+        "D": "Hệ thống ML không cần dữ liệu đầu vào để hoạt động"
       },
-      "answerDisplay": "B. They usurp a person's likeness and can then be weaponized against them.",
-      "concept": "• Deepfake Usurp Likeness.",
-      "whyCorrect": "• Usurp likeness and weaponized.",
+      "answerDisplay": "C. A ML system needs a human to provide the feature extraction",
+      "concept": "• Feature Extraction in ML vs DL: Học máy truyền thống yêu cầu con người chọn lọc đặc trưng thủ công, còn học sâu tự động trích xuất đặc trưng qua các lớp ẩn.",
+      "whyCorrect": "• Sự khác biệt cốt lõi: hệ thống Machine Learning (ML) cần con người thực hiện trích xuất đặc trưng (feature extraction) thủ công - tức phải xác định trước những thuộc tính nào quan trọng cho bài toán. Trong khi Deep Learning tự động học và trích xuất đặc trưng từ dữ liệu thô.",
       "whyWrong": {
-        "A": "• Tiền bạc thứ yếu.",
-        "C": "• Pháp lý thứ yếu.",
-        "D": "• Kỹ thuật."
+        "A": "• Cả hai hệ thống ML và DL đều tối ưu hóa độ chính xác dựa trên phản hồi sai số (loss function), đây không phải điểm khác biệt.",
+        "B": "• Đây là đặc tính của Deep Learning, hệ thống Machine Learning truyền thống không tự thực hiện trích xuất đặc trưng.",
+        "D": "• Mọi mô hình học máy hay học sâu đều bắt buộc phải có dữ liệu đầu vào (input data) để huấn luyện và đưa ra kết quả dự đoán."
       }
     }
   },
@@ -8718,11 +8711,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Pipeline",
       "concept": "• Data Pipeline.",
-      "whyCorrect": "• Pipeline.",
+      "whyCorrect": "• Pipeline (Đường ống dữ liệu) là chuỗi quy trình tự động hóa được thiết kế để lặp lại cùng một phân tích mỗi khi dữ liệu mới về hàng tháng, đảm bảo tính nhất quán, hiệu quả và giảm thiểu lỗi con người trong xử lý dữ liệu định kỳ.",
       "whyWrong": {
-        "B": "• Quy trình làm việc chung.",
-        "C": "• Ngụy tạo.",
-        "D": "• Tình huống sử dụng."
+        "B": "• Workflow (Quy trình làm việc) mô tả trình tự công việc tổng quát có sự tham gia của con người, không nhất thiết tự động hóa và lặp lại với dữ liệu mới.",
+        "C": "• Swimlane là kỹ thuật trình bày sơ đồ quy trình chia theo vai trò/phòng ban, không phải thuật ngữ mô tả quy trình xử lý dữ liệu tự động.",
+        "D": "• Use case (Tình huống sử dụng) mô tả kịch bản người dùng tương tác với hệ thống, không phải quy trình tự động hóa phân tích dữ liệu lặp lại."
       }
     }
   },
@@ -8751,11 +8744,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. an explainable description of code that is meant for humans, not computers",
       "concept": "• Pseudocode Definition.",
-      "whyCorrect": "• For humans, not computers.",
+      "whyCorrect": "• Pseudocode (mã giả) là cách mô tả thuật toán bằng ngôn ngữ gần với tiếng người thường, dễ hiểu với CON NGƯỜI nhưng KHÔNG thể chạy trực tiếp trên máy tính - giúp lập trình viên và không lập trình viên cùng hiểu logic thuật toán.",
       "whyWrong": {
-        "B": "• Thư viện.",
-        "C": "• Máy tính không nạp trực tiếp được.",
-        "D": "• Ngôn ngữ lập trình."
+        "B": "• Thư viện Python cho machine learning (như scikit-learn, TensorFlow) là mã nguồn thực thi được, hoàn toàn khác với mã giả.",
+        "C": "• \"Trung gian giữa code và văn xuôi có thể chạy trên máy\" sai ở phần \"chạy được\" - pseudocode KHÔNG thể thực thi trên máy tính.",
+        "D": "• Một loại JavaScript vừa đọc được vừa chạy được mô tả ngôn ngữ lập trình thực, pseudocode không thuộc về bất kỳ ngôn ngữ lập trình cụ thể nào."
       }
     }
   },
@@ -8784,11 +8777,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. divide the number of correct predictions by the total number of predictions",
       "concept": "• Accuracy Formula.",
-      "whyCorrect": "• Correct predictions / Total predictions.",
+      "whyCorrect": "• Accuracy (Độ chính xác) của mô hình dự đoán = Số dự đoán đúng / Tổng số dự đoán. Ví dụ: nếu mô hình đưa ra 100 dự đoán và đúng 85 lần, accuracy = 85/100 = 85%. Đây là chỉ số cơ bản nhất đánh giá hiệu năng mô hình.",
       "whyWrong": {
-        "A": "• Sai.",
-        "B": "• Sai.",
-        "C": "• Sai."
+        "A": "• Chia số dự đoán cho tổng dataset cho tỷ lệ sử dụng dữ liệu, không phải accuracy - công thức thiếu yếu tố \"đúng hay sai\".",
+        "B": "• Đo tỷ lệ đường cong lỗi (error curve ratio) liên quan đến phân tích loss function, không phải cách tính accuracy trực tiếp.",
+        "C": "• Nhân tổng dự đoán với phần trăm đúng cho ra SỐ LƯỢNG dự đoán đúng (con số tuyệt đối), không phải tỷ lệ accuracy (phần trăm)."
       }
     }
   },
@@ -8850,11 +8843,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. We receive too much information and are overloaded.",
       "concept": "• Cognitive Overload.",
-      "whyCorrect": "• Information overload.",
+      "whyCorrect": "• Não người nhận quá nhiều thông tin (information overload) nên phải sử dụng các đường tắt tư duy (mental shortcuts/heuristics) để xử lý nhanh, và chính các đường tắt này tạo ra các thiên kiến nhận thức (cognitive biases) - đây là cơ chế sinh tồn của não bộ.",
       "whyWrong": {
-        "B": "• Sai.",
-        "C": "• Sai.",
-        "D": "• Sai."
+        "B": "• Cognitive biases không phải công cụ ghi nhớ - chúng thực sự GÂY SAI LỆCH ký ức (false memories) và ảnh hưởng đến khả năng nhớ chính xác.",
+        "C": "• Cognitive biases làm tư duy THIẾU logic, không phải giúp logic hơn - chúng khiến cảm xúc và trực giác lấn át lý trí.",
+        "D": "• Cognitive biases là CƠ CHẾ TÂM LÝ BẨM SINH tiến hóa qua hàng ngàn năm, không phải kiến thức được dạy trong trường học."
       }
     }
   },
@@ -8883,11 +8876,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. collaborative filtering",
       "concept": "• Collaborative Filtering Bias in Dating Apps: Lọc cộng tác gợi ý đối tượng dựa trên sở thích của người khác có điểm chung, dễ vô tình tạo ra rào cản phân biệt chủng tộc/ngoại hình.",
-      "whyCorrect": "• Collaborative filtering củng cố định kiến cộng đồng sẵn có.",
+      "whyCorrect": "• Thuật toán hẹn hò trở nên thiên vị chủ yếu qua collaborative filtering (lọc cộng tác) - gợi ý người phù hợp dựa trên sở thích của những người tương tự bạn, tạo ra \"bong bóng\" hẹn hò và củng cố các mẫu hình thiên vị xã hội (tuổi, chủng tộc, ngoại hình).",
       "whyWrong": {
-        "B": "• Không phải nguyên nhân kỹ thuật tạo bias chính.",
-        "C": "• Tính năng UI.",
-        "D": "• Giới hạn số lượng."
+        "B": "• Truy cập các mô hình dữ liệu riêng biệt là kiến trúc kỹ thuật, không phải nguyên nhân gây bias trong gợi ý hẹn hò.",
+        "C": "• Nhiều cách ghép đôi khác nhau tăng đa dạng trải nghiệm, thực tế có thể GIẢM bias thay vì tạo ra bias.",
+        "D": "• Số lượng ghép đôi không giới hạn liên quan đến chính sách sử dụng ứng dụng, không phải cơ chế tạo thiên vị thuật toán."
       }
     }
   },
@@ -8916,11 +8909,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. Data-driven algorithms improve solutions, leading to new customers, and better data.",
       "concept": "• Big Tech Virtuous Cycle.",
-      "whyCorrect": "• Better algorithms -> New customers -> Better data.",
+      "whyCorrect": "• \"Vòng tròn lành\" (virtuous cycle) của Big Tech hoạt động: Thuật toán dựa trên dữ liệu → cải thiện sản phẩm/dịch vụ → thu hút khách hàng mới → tạo ra nhiều dữ liệu hơn và tốt hơn → thuật toán cải thiện thêm → lặp lại, tạo lợi thế cạnh tranh ngày càng lớn.",
       "whyWrong": {
-        "A": "• Sai.",
-        "B": "• Sai.",
-        "C": "• Hẹp."
+        "A": "• Viết thuật toán ít bias hơn là mục tiêu đạo đức, không phải mô tả cơ chế \"virtuous cycle\" kinh doanh của Big Tech.",
+        "B": "• \"Hành động đạo đức để được tôn trọng\" là diễn giải bề mặt không phản ánh cơ chế dữ liệu-thuật toán-khách hàng-dữ liệu.",
+        "C": "• \"Khách hàng tốt hơn dẫn đến dữ liệu tốt hơn\" bỏ qua vai trò trung tâm của thuật toán - không phải chất lượng khách hàng mà SỐ LƯỢNG tạo ra dữ liệu phong phú."
       }
     }
   },
@@ -8949,11 +8942,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. equality of false negatives",
       "concept": "• Equality of False Negatives.",
-      "whyCorrect": "• Equality of false negatives.",
+      "whyCorrect": "• Khi mô hình cân bằng số lượng sai sót cho từng nhóm nhỏ (subgroup) để giảm thiểu tác hại, nó áp dụng equality of false negatives - đảm bảo tỷ lệ bỏ sót (false negative rate) như nhau giữa các nhóm, tránh nhóm nào bị \"bỏ qua\" nhiều hơn.",
       "whyWrong": {
-        "A": "• Sai.",
-        "C": "• Sai.",
-        "D": "• Sai."
+        "A": "• Equality of true outcomes bình đẳng kết quả dự đoán đúng, không trực tiếp giải quyết vấn đề cân bằng sai sót giữa các nhóm.",
+        "C": "• Equality of training data cân bằng lượng dữ liệu huấn luyện, là giải pháp ở cấp dữ liệu chứ không phải cấp cân bằng lỗi dự đoán.",
+        "D": "• Equality of prediction bias không phải thuật ngữ chuẩn trong fairness metrics và không mô tả chính xác việc cân bằng false negatives."
       }
     }
   },
@@ -9014,11 +9007,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Utilitarianism",
       "concept": "• Utilitarianism Global Ethics.",
-      "whyCorrect": "• Utilitarianism.",
+      "whyCorrect": "• Utilitarianism (Thuyết Công lợi) chủ trương hành động đúng là hành động mang lại hạnh phúc lớn nhất cho số đông nhất (greatest good for the greatest number), có tính phổ quát xuyên văn hóa nên phù hợp nhất để ủng hộ một bộ quy tắc đạo đức toàn cầu.",
       "whyWrong": {
-        "B": "• Bổn phận.",
-        "C": "• Đức hạnh.",
-        "D": "• Ngụy tạo."
+        "B": "• Deontology (Thuyết bổn phận) của Kant đặt quy tắc đạo đức tuyệt đối nhưng dựa trên lý trí cá nhân, không trực tiếp nhấn mạnh tính toàn cầu như Utilitarianism.",
+        "C": "• Virtue ethics (Đạo đức đức hạnh) tập trung vào phẩm chất cá nhân, phụ thuộc văn hóa cụ thể nên khó tạo mã đạo đức toàn cầu thống nhất.",
+        "D": "• \"Virtual ethics\" là thuật ngữ ngụy tạo không tồn tại trong triết học đạo đức - được đặt ra để gây nhiễu."
       }
     }
   },
@@ -9047,11 +9040,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. fill in gaps with existing knowledge",
       "concept": "• Cognitive Gap Filling.",
-      "whyCorrect": "• Fill in gaps with existing knowledge.",
+      "whyCorrect": "• Khi gặp thông tin thiếu ngữ cảnh hoặc ý nghĩa rõ ràng, não người có xu hướng tự động lấp đầy khoảng trống bằng kiến thức và kinh nghiệm sẵn có (fill in gaps with existing knowledge), tạo ra câu chuyện hoàn chỉnh từ thông tin rời rạc - đây là cognitive bias \"filling in\".",
       "whyWrong": {
-        "B": "• Sai.",
-        "C": "• Sai.",
-        "D": "• Sai."
+        "B": "• Dùng nguồn nghiên cứu thiên vị là vấn đề chất lượng nguồn tin, không phải phản ứng tự nhiên của não khi thiếu ngữ cảnh.",
+        "C": "• Tìm kiếm nhân vật thẩm quyền thuộc về Authority bias - xảy ra khi có người thẩm quyền hiện diện, không phải khi thiếu thông tin.",
+        "D": "• Bất đồng với niềm tin trước đó mô tả sự thay đổi quan điểm, trái ngược với xu hướng dùng kiến thức cũ để lấp khoảng trống."
       }
     }
   },
@@ -9080,11 +9073,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. The principle of doing no harm.",
       "concept": "• Non-maleficence Concept.",
-      "whyCorrect": "• Doing no harm.",
+      "whyCorrect": "• Non-maleficence (Không gây hại) là nguyên tắc đạo đức cổ điển xuất phát từ lời thề Hippocrates \"Primum non nocere\" (Trước hết, không gây hại), yêu cầu mọi hệ thống công nghệ phải được thiết kế sao cho không gây tổn hại thể chất, tinh thần, tài chính hay xã hội.",
       "whyWrong": {
-        "B": "• Fairness.",
-        "C": "• Security.",
-        "D": "• Sai."
+        "B": "• \"Không có định kiến\" (no bias) thuộc nguyên tắc Fairness (Công bằng), là khái niệm riêng biệt - hệ thống không thiên vị vẫn có thể gây hại theo cách khác.",
+        "C": "• \"Không có rủi ro an ninh\" thuộc nguyên tắc Security (Bảo mật), tập trung vào bảo vệ hệ thống khỏi tấn công chứ không phải nguyên tắc đạo đức không gây hại.",
+        "D": "• \"Có rủi ro bảo mật\" (having security risk) hoàn toàn sai - đây là điều tiêu cực cần tránh, không thể là định nghĩa của bất kỳ nguyên tắc đạo đức nào."
       }
     }
   },
@@ -9211,12 +9204,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Data-driven technologies can cause secondary, indirect, or cumulative effects on the environment that might impact people in the long term.",
       "concept": "• Environmental Ethics in Tech: Tiêu thụ điện năng và hạ tầng Data Center tạo tác động tích tụ gián tiếp tới khí hậu.",
-      "whyCorrect": "• Tác động gián tiếp và tích tụ lâu dài (cumulative effects) lên môi trường.",
+      "whyCorrect": "• Các công nghệ dựa trên dữ liệu như các trung tâm dữ liệu khổng lồ tiêu thụ năng lượng lớn, có thể gây ra các tác động gián tiếp, thứ cấp hoặc tích lũy lâu dài đối với môi trường và khí hậu toàn cầu, ảnh hưởng đến cuộc sống con người trong tương lai.",
       "whyWrong": {
-        "A": "",
-        "B": "• Khai khoáng thuộc ngành phần cứng.",
-        "C": "• Khái niệm quá hẹp.",
-        "D": "• Tác động sinh thái chỉ là một phần."
+        "B": "• Khai thác tài nguyên thô trực tiếp là vấn đề của phần cứng và chuỗi cung ứng vật lý, không phải là tác động đặc trưng của việc phát triển công nghệ dựa trên dữ liệu nói chung.",
+        "C": "• Công nghệ phần mềm và thuật toán không trực tiếp xả thải chất ô nhiễm ra môi trường xung quanh như các nhà máy công nghiệp hóa chất.",
+        "D": "• Việc di dời sinh vật sống không phải là tác động trực tiếp của các thuật toán và hệ thống dữ liệu số."
       }
     }
   },
@@ -9311,11 +9303,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. An Ethics Board can help maintain an organization's values-based intentions and increase transparency into how they use data-driven technologies.",
       "concept": "• Ethics Board Purpose.",
-      "whyCorrect": "• Maintain values-based intentions & increase transparency.",
+      "whyCorrect": "• Ban Đạo đức (Ethics Board) đóng vai trò định hướng giúp doanh nghiệp giữ vững các cam kết đạo đức dựa trên giá trị và nâng cao tính minh bạch đối với công chúng về cách thức phát triển và ứng dụng công nghệ.",
       "whyWrong": {
-        "B": "• Khía cạnh kỹ thuật.",
-        "C": "• Tài chính.",
-        "D": "• Quá hẹp."
+        "B": "• Ban đạo đức không thể trực tiếp làm giảm các mối nguy hiểm kỹ thuật tiềm ẩn của công nghệ tự trị mà chỉ đưa ra các khuyến nghị, nguyên tắc hướng dẫn hành vi.",
+        "C": "• Biên lợi nhuận là mục tiêu tài chính của doanh nghiệp, không thuộc phạm vi trách nhiệm hay mục đích của ban đạo đức.",
+        "D": "• Phát biểu này đúng nhưng quá hẹp vì bỏ qua vai trò cốt lõi là duy trì định hướng giá trị đạo đức (values-based intentions) của tổ chức."
       }
     }
   },
@@ -9344,11 +9336,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Simple to follow examples",
       "concept": "• Simple Examples in Ethics Comm.",
-      "whyCorrect": "• Simple to follow examples.",
+      "whyCorrect": "• Việc đưa ra các ví dụ thực tế, trực quan và dễ hiểu giúp các bên liên quan dễ dàng tiếp thu, hình dung và áp dụng các nguyên tắc đạo đức vào các tình huống thực tiễn.",
       "whyWrong": {
-        "B": "• Spam.",
-        "C": "• Dày đặc phức tạp.",
-        "D": "• Mập mờ lách luật."
+        "B": "• Liên lạc hàng ngày gây quá tải thông tin và làm giảm sự chú ý của mọi người đối với những thông điệp cốt lõi.",
+        "C": "• Các mô tả quy trình dài dòng, phức tạp và khô khan sẽ cản trở người đọc hiểu và ghi nhớ nội dung chính sách đạo đức.",
+        "D": "• Ngôn từ quá linh hoạt hoặc mơ hồ có thể dẫn đến việc hiểu sai lệch, thiếu nhất quán và tạo ra các lỗ hổng trong thực thi chính sách."
       }
     }
   },
@@ -9377,11 +9369,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in making organizational change.",
       "concept": "• Organizational Change Management Definition: Khung quy trình tổng thể để chuẩn bị, hỗ trợ và đồng hành cùng con người và tổ chức thích ứng với sự thay đổi.",
-      "whyCorrect": "• Định nghĩa chuẩn của Quản lý sự thay đổi tổ chức (OCM).",
+      "whyCorrect": "• Quản lý thay đổi (Change Management) là thuật ngữ chung chỉ các phương pháp, quy trình và công cụ được sử dụng để chuẩn bị, hỗ trợ và đồng hành cùng các cá nhân, phòng ban và tổ chức thực hiện các chuyển đổi mang tính hệ thống.",
       "whyWrong": {
-        "A": "• OCM tập trung vào con người và quy trình, không chỉ kỹ thuật.",
-        "B": "• Xây dựng văn hóa chỉ là một phần.",
-        "D": "• Thay đổi sản phẩm chỉ là khía cạnh nhỏ."
+        "A": "• Việc nhân viên lên tiếng chỉ là một phần nhỏ trong cơ chế phản hồi nội bộ, không đại diện cho toàn bộ khái niệm quản lý thay đổi.",
+        "B": "• Định nghĩa này tập trung sai lệch vào việc xây dựng văn hóa đạo đức, vốn là mục tiêu của văn hóa doanh nghiệp chứ không phải định nghĩa tổng quát của quản lý thay đổi.",
+        "D": "• Thay đổi sản phẩm dựa trên phản hồi tiêu cực thuộc quy trình cải tiến sản phẩm hoặc sửa lỗi (product iteration), không phải quản lý thay đổi tổ chức."
       }
     }
   },
@@ -9438,10 +9430,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Lack of clarity in the code of ethics · D. Lack of awareness of the code of ethics and where it is meant to be applied",
       "concept": "• Code of Ethics Adoption Barriers: Thiếu rõ ràng (lack of clarity) và Thiếu nhận thức/truyền thông (lack of awareness).",
-      "whyCorrect": "• B và D cản trở việc thực thi bộ quy tắc đạo đức.",
+      "whyCorrect": "• Hai nguyên nhân chính khiến quy tắc đạo đức ít được áp dụng: (1) Thiếu rõ ràng (lack of clarity) trong nội dung khiến nhân viên khó hiểu; (2) Thiếu nhận thức (lack of awareness) về sự tồn tại và phạm vi ứng dụng của quy tắc trong công việc thực tế.",
       "whyWrong": {
-        "A": "• Bao phủ tốt là điểm tích cực.",
-        "C": "• Ngôn ngữ chỉ dẫn giúp áp dụng rõ ràng hơn."
+        "A": "• Việc bao phủ toàn diện các mối quan ngại là điểm cộng giúp quy tắc hoàn chỉnh hơn, không phải nguyên nhân gây cản trở việc áp dụng.",
+        "C": "• Ngôn ngữ mang tính hướng dẫn và khuôn mẫu giúp nhân viên dễ làm theo, không phải là rào cản chính hạn chế sự tiếp nhận."
       }
     }
   },
@@ -9503,11 +9495,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Documenting the assumptions and choices made in the drafting of the policies",
       "concept": "• Policy Finalization Documentation.",
-      "whyCorrect": "• Documenting assumptions and choices.",
+      "whyCorrect": "• Ghi chép lại các giả định và lựa chọn được đưa ra trong quá trình soạn thảo giúp làm rõ cơ sở lập luận, tạo tiền đề để đánh giá, điều chỉnh chính sách đạo đức một cách hiệu quả trong tương lai.",
       "whyWrong": {
-        "A": "• Che giấu.",
-        "C": "• Gây xáo trộn.",
-        "D": "• Rập khuôn."
+        "A": "• Việc loại bỏ các vấn đề chưa giải quyết là hành vi trốn tránh rủi ro, các vấn đề mở cần được ghi lại để theo dõi và giải quyết ở phiên bản sau.",
+        "C": "• Thử nghiệm chính sách trực tiếp trên hệ thống đang hoạt động có thể gây ra những rủi ro vận hành và tranh chấp không đáng có.",
+        "D": "• Việc sao chép chính sách từ tổ chức khác bỏ qua sự khác biệt về văn hóa, mục tiêu và đặc thù riêng biệt của doanh nghiệp mình."
       }
     }
   },
@@ -9536,10 +9528,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Any known bias in the sample data. · D. Any missing values in the dataset and how they were handled.",
       "concept": "• Data Transparency: Known bias & Missing values handling.",
-      "whyCorrect": "• B và D.",
+      "whyCorrect": "• Để minh bạch hóa hệ thống, doanh nghiệp cần công khai hai khía cạnh thiếu sót của dữ liệu: (1) Mọi thiên lệch đã biết trong dữ liệu mẫu (known bias) và (2) Các giá trị bị khuyết (missing values) cùng phương pháp xử lý chúng.",
       "whyWrong": {
-        "A": "• Thông tin quản lý dự án.",
-        "C": "• Đặc trưng kỹ thuật."
+        "A": "• Thời gian thu thập dữ liệu là thông số vận hành dự án, không ảnh hưởng trực tiếp đến chất lượng và tính công bằng của mô hình khi người dùng sử dụng.",
+        "C": "• Kích thước tập dữ liệu lớn là đặc tính kỹ thuật tích cực, không phải là một sự thiếu hụt hay khuyết điểm cần phải cảnh báo cho người dùng."
       }
     }
   },
@@ -9601,11 +9593,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. individual's data",
       "concept": "• Differential Privacy Individual Data Impact.",
-      "whyCorrect": "• Individual's data.",
+      "whyCorrect": "• Khái niệm bảo mật vi phân (Differential Privacy) yêu cầu rằng kết quả phân tích hoặc bài học từ mô hình dự đoán không được thay đổi đáng kể dù có thêm vào hay loại bỏ dữ liệu của bất kỳ một cá nhân cụ thể nào (individual's data).",
       "whyWrong": {
-        "A": "• Sai.",
-        "B": "• Sai.",
-        "C": "• Sai."
+        "A": "• Việc thêm hoặc bớt bộ lọc dữ liệu sẽ làm thay đổi hoàn toàn phân phối và tập dữ liệu huấn luyện, từ đó thay đổi kết quả mô hình.",
+        "B": "• Tập dữ liệu bị thiên lệch ảnh hưởng trực tiếp đến xu hướng dự đoán của mô hình, không thể loại trừ mà giữ nguyên kết quả học được.",
+        "C": "• Điểm số công bằng là chỉ số đo lường đầu ra, không phải thành phần đưa vào hoặc loại bỏ khỏi tập dữ liệu huấn luyện."
       }
     }
   },
@@ -9634,11 +9626,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Enact a sound data governance structure",
       "concept": "• Data Security Practice for ML: Xây dựng cấu trúc quản trị dữ liệu vững chắc (sound data governance structure) để kiểm soát quyền truy cập và bảo vệ dữ liệu.",
-      "whyCorrect": "• Cấu trúc quản trị dữ liệu bảo vệ tập dữ liệu ML.",
+      "whyCorrect": "• Thiết lập cấu trúc quản trị dữ liệu chặt chẽ (data governance) giúp kiểm soát quyền truy cập, giám sát quy trình xử lý, đảm bảo tính toàn vẹn và ngăn chặn các nguy cơ rò rỉ dữ liệu huấn luyện ML.",
       "whyWrong": {
-        "A": "• Đa dạng góc nhìn phục vụ giảm bias.",
-        "C": "• Thuật ngữ phối hợp sai.",
-        "D": "• Chuỗi chỉ huy thuộc quản lý nhân sự."
+        "A": "• Sự đa dạng góc nhìn của đội ngũ giúp giảm thiểu định kiến (bias) khi thiết kế, không phải là biện pháp bảo mật dữ liệu kỹ thuật.",
+        "C": "• Thực hiện threat modeling là đúng, nhưng khái niệm 'beneficial algorithms' (thuật toán có lợi) là một sự ghép từ thiếu tính chính xác về mặt kỹ thuật bảo mật.",
+        "D": "• Chuỗi chỉ huy là mô hình quản lý nhân sự hành chính, không giải quyết trực tiếp các lỗ hổng bảo mật của tập dữ liệu ML."
       }
     }
   },
@@ -9700,11 +9692,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. multiple datasets",
       "concept": "• k-Anonymity Vulnerability: Dù đạt k-anonymity, khi ghép với tập dữ liệu bên ngoài (multiple datasets), nguy cơ tái định danh vẫn xảy ra.",
-      "whyCorrect": "• Ghép nối nhiều tập dữ liệu (multiple datasets).",
+      "whyCorrect": "• Điểm yếu lớn của k-anonymity là rủi ro tái định danh khi kết hợp nhiều tập dữ liệu khác nhau (multiple datasets), thông qua các cuộc tấn công liên kết dữ liệu (linkage attacks) từ nguồn ngoài.",
       "whyWrong": {
-        "B": "• Rò rỉ là sự cố.",
-        "C": "• Cột nhạy cảm bị lộ thuộc tính.",
-        "D": "• Tăng k giúp tăng tính an toàn."
+        "B": "• Rò rỉ cơ sở dữ liệu làm lộ thông tin trực tiếp, không phải là phương pháp phân tích kỹ thuật nhằm bẻ gãy k-anonymity.",
+        "C": "• Cột nhạy cảm chứa thông tin cần bảo mật (như bệnh lý), bản thân nó không giúp ích cho việc liên kết để tìm ra danh tính cá nhân.",
+        "D": "• Tăng giá trị k giúp tăng độ bảo mật và giảm khả năng tái định danh, chứ không phải làm tăng nguy cơ tái định danh."
       }
     }
   },
@@ -9733,11 +9725,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. re-run the algorithm without it",
       "concept": "• Glass-Box Model Actionability: Quan sát được bên trong giúp con người loại bỏ thuộc tính bị lệch (biased attribute) và chạy lại mô hình.",
-      "whyCorrect": "• Loại bỏ thuộc tính gây bias và chạy lại thuật toán.",
+      "whyCorrect": "• Mô hình hộp kính (glass-box) cho phép nhìn rõ các biến tác động. Nếu phát hiện một thuộc tính gây ra sự bất công, người vận hành có thể chủ động loại bỏ thuộc tính đó và chạy lại thuật toán (re-run the algorithm without it).",
       "whyWrong": {
-        "A": "• Tin tưởng thuộc tính gây bias là sai.",
-        "C": "• Cảnh báo nhưng không can thiệp được là thụ động.",
-        "D": "• Phớt lờ làm tăng bất công."
+        "A": "• Tin tưởng thuộc tính gây thiên lệch đi ngược lại mục tiêu đảm bảo tính công bằng và đạo đức trong ra quyết định.",
+        "C": "• Cảnh báo cho đội ngũ là hành động giao tiếp cần thiết, nhưng không phải là hành động kỹ thuật trực tiếp giải quyết sự sai lệch của mô hình.",
+        "D": "• Bỏ qua lỗi thiên lệch được phát hiện là vi phạm các nguyên tắc trách nhiệm giải trình và đạo đức nghề nghiệp."
       }
     }
   },
@@ -9766,11 +9758,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Validation test",
       "concept": "• ML Data Splits: Training set (huấn luyện trọng số), Validation set (tinh chỉnh hyperparameter), Test set (đánh giá độc lập cuối cùng).",
-      "whyCorrect": "• Validation set được dùng để tinh chỉnh tham số.",
+      "whyCorrect": "• Tập kiểm định (Validation set/test) được sử dụng trong quá trình huấn luyện nhằm đánh giá hiệu năng tạm thời và điều chỉnh các siêu tham số (hyperparameters) để tối ưu hóa mô hình trước khi đánh giá cuối cùng.",
       "whyWrong": {
-        "A": "• Training set dùng để học.",
-        "B": "• Test set dùng để đánh giá độc lập.",
-        "D": "• Unit test thuộc kiểm thử phần mềm."
+        "A": "• Tập huấn luyện (Training set) được dùng để mô hình học các trọng số cơ bản, không dùng để tinh chỉnh hiệu năng độc lập.",
+        "B": "• Tập kiểm thử (Test set) chỉ được sử dụng ở bước cuối cùng để đánh giá khả năng tổng quát hóa của mô hình đã hoàn thiện.",
+        "D": "• Kiểm thử đơn vị (Unit test) là kỹ thuật kiểm tra tính đúng đắn của từng hàm/đoạn mã nguồn trong phát triển phần mềm, không thuộc quy trình ML."
       }
     }
   },
@@ -9799,11 +9791,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. The data was stored insecurely.",
       "concept": "• Root Cause Analysis Concept.",
-      "whyCorrect": "• Stored insecurely.",
+      "whyCorrect": "• Việc lưu trữ dữ liệu thiếu an toàn (stored insecurely) là nguyên nhân gốc rễ (root cause) trực tiếp dẫn đến các vụ tấn công mạng, rò rỉ thông tin cá nhân và vi phạm quyền riêng tư.",
       "whyWrong": {
-        "B": "• Hậu quả.",
-        "C": "• Khía cạnh khác.",
-        "D": "• Khía cạnh khác."
+        "B": "• Dữ liệu bị rò rỉ trên mạng là hậu quả cuối cùng của việc lưu trữ hoặc truyền tải thiếu an toàn, không phải nguyên nhân gốc rễ.",
+        "C": "• Việc xóa dữ liệu khỏi bộ nhớ thực chất là biện pháp giảm thiểu lưu trữ dữ liệu thừa, không phải nguyên nhân gây rò rỉ dữ liệu riêng tư.",
+        "D": "• Dữ liệu bị hỏng (broken/corrupted) ảnh hưởng đến tính sẵn có (availability) chứ không trực tiếp gây rò rỉ quyền riêng tư của cá nhân."
       }
     }
   },
@@ -9832,11 +9824,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. multiple datasets",
       "concept": "• Netflix Re-identification Case.",
-      "whyCorrect": "• Multiple datasets.",
+      "whyCorrect": "• Vụ bê bối giải thưởng Netflix xảy ra khi các nhà nghiên cứu liên kết tập dữ liệu xếp hạng phim ẩn danh của Netflix với tập dữ liệu công khai trên IMDb (multiple datasets) để tái định danh thành công danh tính người dùng.",
       "whyWrong": {
-        "A": "• Sai.",
-        "B": "• Sai.",
-        "D": "• Sai."
+        "A": "• k-anonymity là giải pháp ẩn danh hóa được thiết kế để ngăn chặn tái định danh, không phải công cụ thực hiện cuộc tấn công liên kết dữ liệu.",
+        "B": "• Vụ bê bối không xuất phát từ việc rò rỉ cơ sở dữ liệu bất hợp pháp, mà do Netflix tự chủ động công bố dữ liệu đã ẩn danh hóa sơ sài.",
+        "D": "• Cột dữ liệu nhạy cảm chỉ chứa thông tin đánh giá phim, bản thân nó không cung cấp khả năng liên kết dữ liệu để tìm ra tên người dùng."
       }
     }
   },
@@ -9865,11 +9857,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. group inclusion",
       "concept": "• Group Harm Concept.",
-      "whyCorrect": "• Group inclusion.",
+      "whyCorrect": "• Mặc dù danh tính cá nhân được bảo vệ, người bệnh vẫn có thể bị tổn hại thông qua sự kết hợp nhóm (group inclusion) - ví dụ, nếu biết một người thuộc về nhóm có 100% tỷ lệ mắc bệnh nhạy cảm, thông tin sức khỏe của họ vẫn bị lộ.",
       "whyWrong": {
-        "B": "• Sai.",
-        "C": "• Sai.",
-        "D": "• Sai."
+        "B": "• Cột riêng tư là các biện pháp phân loại dữ liệu kỹ thuật, không phải cơ chế gây ra thiệt hại tiết lộ thông tin.",
+        "C": "• k-anonymity là kỹ thuật bảo vệ quyền riêng tư, giúp giảm thiểu rủi ro chứ không trực tiếp tạo ra nguy cơ rò rỉ thông tin nhóm.",
+        "D": "• Các vấn đề bảo mật (security issues) là lỗ hổng hệ thống, không phải cơ chế suy diễn thông tin từ phân tích dữ liệu nhóm hợp pháp."
       }
     }
   },
@@ -9931,10 +9923,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Tracking deviance from norms · C. Restoring compromised functionality through a system rollback",
       "concept": "• System Baseline Benefits Concept.",
-      "whyCorrect": "• Tracking deviance & Rollback.",
+      "whyCorrect": "• Thiết lập hành vi hệ thống cơ sở mang lại hai lợi ích bảo mật chính: (1) Phát hiện các hành vi bất thường lệch chuẩn (tracking deviance from norms) và (2) Khôi phục hệ thống về trạng thái an toàn đã biết (system rollback) khi bị xâm nhập.",
       "whyWrong": {
-        "B": "• Tài chính.",
-        "D": "• Nhân sự."
+        "B": "• Việc tối ưu hóa chi phí vận hành thuộc về bài toán quản lý tài chính và hạ tầng phần cứng, không phải mục tiêu của việc thiết lập baseline bảo mật.",
+        "D": "• Quy kết trách nhiệm cho nhân viên thuộc phạm trù quản trị nhân sự và quy trình nội bộ, không liên quan đến việc giám sát kỹ thuật hệ thống."
       }
     }
   },
@@ -9963,11 +9955,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. required to fulfill a specific purpose",
       "concept": "• Data Minimization Purpose.",
-      "whyCorrect": "• Required to fulfill a specific purpose.",
+      "whyCorrect": "• Nguyên tắc giảm thiểu dữ liệu (Data Minimization) yêu cầu các tổ chức chỉ thu thập và xử lý lượng dữ liệu tối thiểu, vừa đủ để thực hiện mục đích cụ thể đã xác định trước, tránh thu thập dư thừa.",
       "whyWrong": {
-        "A": "• Kỹ thuật nhiễu.",
-        "B": "• Tùy chọn.",
-        "C": "• Kỹ thuật ẩn danh."
+        "A": "• Bảo mật vi phân (differential privacy) là kỹ thuật thêm nhiễu toán học, không phải tiêu chuẩn pháp lý quyết định phạm vi thu thập dữ liệu.",
+        "B": "• Chuỗi chỉ huy thuộc cấu trúc quản trị nhân sự của tổ chức, không liên quan đến nguyên tắc thu thập dữ liệu người dùng.",
+        "C": "• k-anonymity là mô hình ẩn danh hóa dữ liệu sau khi thu thập, không phải tiêu chuẩn để giới hạn lượng dữ liệu đầu vào."
       }
     }
   },
@@ -9996,11 +9988,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Standard deviation",
       "concept": "• Standard Deviation Reporting.",
-      "whyCorrect": "• Standard deviation.",
+      "whyCorrect": "• Độ lệch chuẩn (Standard deviation) đo lường mức độ phân tán của dữ liệu và có cùng đơn vị với biến số gốc, giúp người đọc dễ dàng hình dung và hiểu ý nghĩa thống kê của kết quả báo cáo hơn.",
       "whyWrong": {
-        "B": "• Đơn vị bình phương.",
-        "C": "• Yếu tố phổ biến.",
-        "D": "• Điểm giữa."
+        "B": "• Phương sai (Variance) sử dụng đơn vị bình phương của biến số gốc, gây khó khăn cho việc diễn giải trực quan đối với khán giả không chuyên.",
+        "C": "• Yếu vị (Mode) chỉ phản ánh giá trị xuất hiện nhiều nhất, không cung cấp thông tin về độ phân tán và xu hướng phân bổ tổng thể của dữ liệu.",
+        "D": "• Trung vị (Median) chỉ chia đôi tập dữ liệu thành hai phần bằng nhau, không thể hiện được mức độ biến động xung quanh giá trị trung bình."
       }
     }
   },
@@ -10029,10 +10021,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Press release · D. Video briefing",
       "concept": "• Media Tools Concept.",
-      "whyCorrect": "• Press release & Video briefing.",
+      "whyCorrect": "• Hai công cụ hiệu quả trong kế hoạch truyền thông báo chí: (1) Thông cáo báo chí (press release) - cung cấp thông tin chính thống; (2) Phiên họp video ngắn (video briefing) - hỗ trợ truyền tải nội dung trực quan và nhanh chóng.",
       "whyWrong": {
-        "A": "• Tuyên bố sứ mệnh.",
-        "C": "• Chiến dịch rộng."
+        "A": "• Tuyên bố sứ mệnh (mission statement) là tài liệu định hướng chiến lược lâu dài của tổ chức, không phải công cụ xử lý truyền thông sự vụ cụ thể.",
+        "C": "• Chiến dịch giáo dục cộng đồng là chương trình nâng cao nhận thức dài hạn và quy mô lớn, không thuộc các công cụ truyền thông báo chí tức thời."
       }
     }
   },
@@ -10094,11 +10086,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. The law often lags behind innovation.",
       "concept": "• Law Lags Behind Innovation.",
-      "whyCorrect": "• Law lags behind innovation.",
+      "whyCorrect": "• Luật pháp thường đi sau sự đổi mới công nghệ (law lags behind innovation) - khi công nghệ mới xuất hiện, hệ thống pháp luật chưa kịp ban hành các quy định quản lý đầy đủ, đòi hỏi doanh nghiệp phải chủ động tự kiểm soát trách nhiệm pháp lý.",
       "whyWrong": {
-        "B": "• Thực thi.",
-        "C": "• Diễn giải.",
-        "D": "• Khó hiểu."
+        "B": "• Việc áp dụng luật thiếu nhất quán thuộc về cơ quan hành pháp, không phải lý do cốt lõi buộc doanh nghiệp phải chủ động xây dựng tiêu chuẩn riêng.",
+        "C": "• Sự mập mờ của luật pháp có thể được giải quyết bằng tư vấn pháp lý, trong khi vấn đề cốt lõi là luật chưa hề tồn tại cho công nghệ mới.",
+        "D": "• Luật khó hiểu là rào cản ngôn ngữ pháp lý, không ảnh hưởng đến nhu cầu chủ động ngăn ngừa rủi ro đạo đức của công nghệ mới."
       }
     }
   },
@@ -10127,10 +10119,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Communicate to individuals proactively rather than reactively · D. Ensure individuals feel that they have input into the process",
       "concept": "• Individual Risk Communication Strategy.",
-      "whyCorrect": "• Proactive & Input into process.",
+      "whyCorrect": "• Truyền thông hiệu quả đến cá nhân đòi hỏi: (1) Chủ động thông báo rủi ro (proactively) trước khi xảy ra sự cố và (2) Đảm bảo cá nhân cảm thấy ý kiến đóng góp của họ được ghi nhận và có vai trò trong quy trình (input into the process).",
       "whyWrong": {
-        "A": "• Ép buộc chi tiết.",
-        "C": "• Đổ lỗi."
+        "A": "• Việc yêu cầu cá nhân hiểu toàn bộ chi tiết kỹ thuật phức tạp của từng rủi ro là không khả thi và gây quá tải thông tin cho họ.",
+        "C": "• Đổ trách nhiệm giảm thiểu rủi ro lên vai người dùng là phi đạo đức, tổ chức mới là bên có trách nhiệm chính trong việc thiết kế hệ thống an toàn."
       }
     }
   },
@@ -10159,11 +10151,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. To make operational improvements",
       "concept": "• Operational Improvement Concept.",
-      "whyCorrect": "• Make operational improvements.",
+      "whyCorrect": "• Mục tiêu cốt lõi của việc tiếp nhận phản hồi sau khủng hoảng đạo đức là rút ra bài học thực tế để thực hiện các cải tiến vận hành (operational improvements), hoàn thiện quy trình nhằm ngăn chặn sự cố lặp lại.",
       "whyWrong": {
-        "A": "• Hình thức.",
-        "C": "• Đối phó.",
-        "D": "• Nội bộ."
+        "A": "• Việc đối phó để chứng minh tuân thủ pháp lý chỉ giải quyết phần ngọn, không giải quyết được nguồn gốc lỗi hệ thống gây ra khủng hoảng.",
+        "C": "• Xoa dịu tạm thời các bên liên quan chỉ là giải pháp đối phó truyền thông ngắn hạn, không mang lại giá trị phát triển bền vững cho tổ chức.",
+        "D": "• Khủng hoảng đạo đức thường gây lo ngại và căng thẳng, việc thu thập phản hồi không nhằm mục đích tạo động lực làm việc cho nhân viên."
       }
     }
   },
@@ -10192,10 +10184,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. Providing prompt responses to customer questions about the decisions made by data-driven systems. · B. Providing information about data-driven systems in simple, easy-to-understand terms.",
       "concept": "• Customer Transparency Strategy.",
-      "whyCorrect": "• Prompt responses & Simple terms.",
+      "whyCorrect": "• Đứng từ góc độ khách hàng, sự minh bạch và dễ giải thích được thể hiện qua: (1) Phản hồi nhanh chóng (prompt responses) cho các thắc mắc về quyết định của hệ thống và (2) Cung cấp thông tin bằng ngôn từ đơn giản, dễ hiểu (simple terms).",
       "whyWrong": {
-        "C": "• Quá hàn lâm.",
-        "D": "• Đã có bảo mật."
+        "C": "• Sách trắng chuyên sâu về thuật toán chỉ phù hợp với các chuyên gia kỹ thuật và nhà nghiên cứu, không mang lại giá trị giải thích cho phần lớn khách hàng phổ thông.",
+        "D": "• Hướng dẫn bảo mật dữ liệu là thực hành tốt về an toàn thông tin (security guidelines), không trực tiếp giúp giải thích cơ chế ra quyết định của hệ thống AI."
       }
     }
   },
@@ -10224,11 +10216,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Communicate the importance of feedback in refining a product.",
       "concept": "• Mitigating Feedback Reluctance.",
-      "whyCorrect": "• Communicate feedback importance in refining product.",
+      "whyCorrect": "• Để giải quyết tâm lý ngại tiếp nhận ý kiến đóng góp, tổ chức cần truyền thông rõ ràng về vai trò quan trọng của phản hồi (importance of feedback) đối với việc cải tiến và hoàn thiện chất lượng sản phẩm.",
       "whyWrong": {
-        "A": "• Quá rộng.",
-        "B": "• Rủi ro.",
-        "D": "• Chung chung."
+        "A": "• Nâng cao nhận thức văn hóa giúp giảm thiểu xung đột giao tiếp chung, không trực tiếp giải quyết rào cản tâm lý từ chối tiếp thu góp ý sản phẩm.",
+        "B": "• Xây dựng văn hóa rủi ro tập trung vào việc nhận diện và ứng phó rủi ro kỹ thuật/vận hành, không tác động trực tiếp đến thái độ đối với phản hồi người dùng.",
+        "D": "• Truyền thông thường xuyên về giá trị văn hóa chung chung mang tính hình thức, không cụ thể và thực tiễn bằng việc nhấn mạnh giá trị của phản hồi đối với sản phẩm."
       }
     }
   },
@@ -10257,11 +10249,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. They may have more institutional knowledge about a subject than managers.",
       "concept": "• Institutional Knowledge in BIA.",
-      "whyCorrect": "• More institutional knowledge.",
+      "whyCorrect": "• Nhân viên trực tiếp vận hành (ground level) thường nắm rõ các chi tiết kỹ thuật, quy trình thực tế và các lỗi phát sinh hàng ngày (institutional knowledge) hơn là các cấp quản lý chỉ nhìn bức tranh tổng thể.",
       "whyWrong": {
-        "A": "• Cá nhân.",
-        "C": "• Bận rộn.",
-        "D": "• Nghĩa vụ sếp cao hơn."
+        "A": "• Tính trung thực phụ thuộc vào tính cách cá nhân và văn hóa doanh nghiệp, không có cơ sở khẳng định nhân viên cấp dưới luôn thẳng thắn hơn quản lý.",
+        "C": "• Nhân viên vận hành thường có lịch trình làm việc dày đặc theo ca, việc sắp xếp thời gian làm khảo sát đôi khi còn khó khăn hơn cấp quản lý.",
+        "D": "• Mọi thành viên trong tổ chức đều có nghĩa vụ phối hợp thực hiện BIA như nhau, không có sự phân biệt nghĩa vụ nhiều hay ít hơn giữa các cấp."
       }
     }
   },
@@ -10290,11 +10282,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Vulnerability audit",
       "concept": "• Vulnerability Audit Purpose.",
-      "whyCorrect": "• Vulnerability audit.",
+      "whyCorrect": "• Kiểm toán lỗ hổng (Vulnerability audit) là quy trình rà soát, đánh giá toàn diện hệ thống để phát hiện các điểm yếu, lỗi kiểm soát chất lượng và các nguy cơ bảo mật cần được khắc phục.",
       "whyWrong": {
-        "A": "• BIA.",
-        "B": "• Tổng kết.",
-        "D": "• BCP."
+        "A": "• Đánh giá tác động kinh doanh (BIA) tập trung vào việc đo lường hậu quả của gián đoạn vận hành, không phải quy trình tìm lỗi kiểm soát chất lượng sản phẩm.",
+        "B": "• Báo cáo bài học kinh nghiệm (Lessons learned) được thực hiện sau khi dự án hoặc sự cố kết thúc để đúc kết kinh nghiệm, không phải công cụ kiểm toán chủ động.",
+        "D": "• Kế hoạch liên tục kinh doanh (BCP) thiết lập các phương án duy trì hoạt động khi xảy ra thảm họa, không phục vụ mục đích kiểm tra lỗi chất lượng nội bộ."
       }
     }
   },
@@ -10323,10 +10315,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Disenfranchisement · D. Erosion of rights",
       "concept": "• Social Impact Risks Concept.",
-      "whyCorrect": "• Disenfranchisement & Erosion of rights.",
+      "whyCorrect": "• Việc thiếu truyền thông về tác động xã hội của rủi ro đạo đức dẫn đến hai hệ lụy nghiêm trọng cho cộng đồng: (1) Sự tước đoạt quyền lợi (disenfranchisement) của các nhóm yếu thế và (2) Sự xói mòn các quyền cơ bản (erosion of rights) của cá nhân.",
       "whyWrong": {
-        "A": "• Doanh thu.",
-        "B": "• Thương hiệu."
+        "A": "• Giảm doanh thu là thiệt hại tài chính thuần túy của doanh nghiệp, không thuộc nhóm tác động xã hội trực tiếp lên cộng đồng người dùng.",
+        "B": "• Suy giảm lòng trung thành thương hiệu là rủi ro thương mại và hình ảnh của công ty, không phản ánh thách thức xã hội mang tính hệ thống."
       }
     }
   },
@@ -10355,11 +10347,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. Human decision making is often influenced by emotion and not logic.",
       "concept": "• Emotion in Moral Reasoning: Cảm xúc thường lấn át lý trí.",
-      "whyCorrect": "• Emotion vs Logic.",
+      "whyCorrect": "• Con người không phải lúc nào cũng ra quyết định dựa trên lý trí thuần túy; các quyết định thực tế thường bị chi phối mạnh mẽ bởi yếu tố cảm xúc (emotion) và định kiến cá nhân thay vì logic lập luận đạo đức.",
       "whyWrong": {
-        "A": "• Phụ.",
-        "B": "• Phụ.",
-        "C": "• Ngược lại."
+        "A": "• Nhận thức đạo đức là bản năng tự nhiên, con người không cần phải được đào tạo bài bản về các học thuyết triết học mới có thể lập luận đạo đức.",
+        "B": "• Lập luận đạo đức hoàn toàn có thể áp dụng hiệu quả vào đời sống thực tế nếu con người giữ được sự khách quan và lý trí.",
+        "C": "• Lập luận đạo đức mang lại lợi ích to lớn trong việc duy trì trật tự, niềm tin và sự hợp tác bền vững trong xã hội."
       }
     }
   },
@@ -10552,11 +10544,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Prescriptive",
       "concept": "• Prescriptive Analytics Concept.",
-      "whyCorrect": "• Prescriptive.",
+      "whyCorrect": "• Phân tích chỉ dẫn (Prescriptive analysis) đi xa hơn việc dự báo bằng cách đề xuất các hành động cụ thể (nên mua doanh nghiệp nào) để đạt được kết quả tối ưu nhất cho tổ chức.",
       "whyWrong": {
-        "A": "• Mô tả.",
-        "C": "• Dự đoán.",
-        "D": "• Tích tụ."
+        "A": "• Phân tích mô tả (Descriptive) chỉ dừng lại ở việc tổng hợp và trình bày những gì đã xảy ra trong quá khứ, không đưa ra đề xuất hành động.",
+        "C": "• Phân tích dự báo (Predictive) dự đoán những gì có khả năng xảy ra trong tương lai, nhưng không trực tiếp đưa ra quyết định lựa chọn tối ưu.",
+        "D": "• Phân tích tích lũy (Cumulative) không phải là một loại hình phân tích dữ liệu chuẩn trong hệ thống Business Intelligence."
       }
     }
   },
@@ -10618,11 +10610,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Beneficence is the promotion of well-being, not just for moral agents like humans, but of animals, the environment, and societies.",
       "concept": "• Beneficence Concept.",
-      "whyCorrect": "• Broad well-being promotion.",
+      "whyCorrect": "• Nguyên tắc hành thiện (Beneficence) yêu cầu tối đa hóa lợi ích và thúc đẩy phúc lợi (well-being) một cách toàn diện cho cả con người, động vật, môi trường và toàn xã hội.",
       "whyWrong": {
-        "A": "• Khái niệm triết học cổ.",
-        "C": "• Hẹp.",
-        "D": "• Lợi nhuận."
+        "A": "• Beneficence là khái niệm triết học đạo đức cổ điển có từ thời cổ đại, không phải thuật ngữ do IBM sáng tạo ra vào năm 2014.",
+        "C": "• Định nghĩa này quá hẹp vì chỉ giới hạn phúc lợi cho con người, bỏ qua mối liên hệ sinh thái đối với động vật và môi trường sống xung quanh.",
+        "D": "• Cải thiện hiệu suất hệ thống để mang lại lợi nhuận cho doanh nghiệp là mục tiêu kinh doanh, hoàn toàn không phản ánh đúng ý nghĩa của nguyên tắc hành thiện."
       }
     }
   },
@@ -10651,11 +10643,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. inputs/outputs, algorithm",
       "concept": "• Black Box Learning Function: Đối với hàm phức tạp, ta nắm rõ đầu vào (inputs) và đầu ra (outputs), nhưng không thể hiểu nổi cơ chế bên trong thuật toán (algorithm).",
-      "whyCorrect": "• Hiểu inputs/outputs nhưng không hiểu cơ chế chi tiết bên trong thuật toán (algorithm).",
+      "whyCorrect": "• Trong các mô hình học sâu phức tạp (hộp đen), người vận hành dễ dàng quan sát đầu vào và kết quả đầu ra (inputs/outputs), nhưng không thể hiểu rõ cơ chế thuật toán chi tiết bên trong (algorithm) hoạt động thế nào để đưa ra quyết định đó.",
       "whyWrong": {
-        "A": "• Causal link mới là cái khó hiểu.",
-        "B": "• Ngược vế.",
-        "D": "• Cả hai đầu vào/đầu ra đều quan sát được."
+        "A": "• Mối liên hệ nhân quả (causal link) là thứ chúng ta không hiểu được, ngược lại tương quan (correlation) là thứ thuật toán dễ dàng tìm ra.",
+        "B": "• Phát biểu này bị đảo ngược vị trí - chúng ta hiểu thuật toán ở mức mã nguồn cơ bản nhưng không hiểu được mối quan hệ nhân quả chi tiết của hàng triệu trọng số bên trong.",
+        "D": "• Cả dữ liệu đầu vào và đầu ra đều là những thành phần hiển nhiên quan sát được, không thể nói là 'không hiểu đầu ra'."
       }
     }
   },
@@ -10684,11 +10676,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. the percentage of predictions that don't match actual outcomes",
       "concept": "• Error Function Attributes: Hàm sai số đo lường tỷ lệ phần trăm các dự đoán bị sai (đối chiếu giữa dự đoán và thực tế).",
-      "whyCorrect": "• Đo lường tỷ lệ dự đoán sai lệch so với kết quả thực tế.",
+      "whyCorrect": "• Hàm sai số (error function/loss function) đo lường tỷ lệ các dự đoán của mô hình không khớp với kết quả thực tế (predictions don't match actual outcomes), là cơ sở để thuật toán điều chỉnh trọng số trong quá trình huấn luyện.",
       "whyWrong": {
-        "A": "• Định dạng dữ liệu thuộc khóa làm sạch.",
-        "C": "• Tỷ lệ ngụy tạo.",
-        "D": "• Tỷ lệ chia dataset."
+        "A": "• Tỷ lệ dữ liệu định dạng đúng phản ánh chất lượng khâu làm sạch dữ liệu đầu vào (data cleaning), không phải chỉ số đo lường sai số dự đoán của mô hình.",
+        "C": "• Khái niệm tỷ lệ giữa thuật toán và đường cong là một định nghĩa ngụy tạo, không có ý nghĩa toán học trong huấn luyện mô hình ML.",
+        "D": "• Tỷ lệ dữ liệu huấn luyện tiêu thụ thuộc về khâu phân bổ tài nguyên dữ liệu, không liên quan đến việc tính toán sai lệch đầu ra dự đoán."
       }
     }
   },
@@ -10717,11 +10709,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. a recipe that a computer uses to solve problems",
       "concept": "• Algorithm Concept.",
-      "whyCorrect": "• A recipe for computer to solve problems.",
+      "whyCorrect": "• Thuật toán (Algorithm) được định nghĩa một cách đơn giản như một công thức hay chỉ dẫn từng bước (recipe) mà máy tính tuân theo để giải quyết một bài toán hoặc thực hiện một tác vụ cụ thể.",
       "whyWrong": {
-        "B": "• Hẹp.",
-        "C": "• Phần cứng.",
-        "D": "• Sai."
+        "B": "• Định nghĩa này mô tả quy trình tư duy viết mã của con người, không phải định nghĩa trực tiếp của bản thân thuật toán khi máy tính thực thi.",
+        "C": "• Thuật toán là tập hợp các chỉ dẫn logic phần mềm, hoàn toàn không phải là một thiết bị phần cứng hay một loại máy tính vật lý.",
+        "D": "• Thuật toán dùng để giải quyết vấn đề chứ không phải để tự động 'tạo ra thêm các vấn đề' cho máy tính giải quyết."
       }
     }
   },
@@ -10750,11 +10742,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. optimized training set",
       "concept": "• 60-20-20 Train-Val-Test Split: Phân chia tỷ lệ 60/20/20 chuẩn tạo nên một tập huấn luyện và kiểm thử tối ưu (Optimized training set).",
-      "whyCorrect": "• Phân chia 60/20/20 tối ưu hóa quy trình huấn luyện và đánh giá.",
+      "whyCorrect": "• Quy trình phân chia dữ liệu theo tỷ lệ 60% huấn luyện (train), 20% kiểm định (validate) và 20% kiểm thử (test) là một phương pháp tối ưu (optimized training set) giúp tránh overfitting và cải thiện hiệu năng mô hình.",
       "whyWrong": {
-        "A": "• Cổ điển thường là 70/30 hoặc 80/20.",
-        "C": "• Sai khái niệm.",
-        "D": "• Sai tên gọi."
+        "A": "• Cách chia cổ điển (classic) thường áp dụng tỷ lệ đơn giản hơn như 70/30 hoặc 80/20 không có sự tách biệt rõ ràng của tập kiểm định độc lập.",
+        "C": "• Tập dương tính giả (false positive set) là một khái niệm lỗi dự đoán, không phải tên gọi của phương pháp phân chia tập dữ liệu huấn luyện.",
+        "D": "• Khái niệm 'predictive training set' là thuật ngữ đặt sai tên, không phản ánh đúng quy trình phân chia dữ liệu ba phần chuẩn mực."
       }
     }
   },
@@ -10783,11 +10775,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. It provides accountability and trust.",
       "concept": "• Core Value of Explainability: Explainability tạo tiền đề vững chắc cho Trách nhiệm giải trình (Accountability) và Niềm tin (Trust).",
-      "whyCorrect": "• Cung cấp Accountability và Trust.",
+      "whyCorrect": "• Khả năng giải thích (Explainability) quan trọng vì nó là nền tảng cốt lõi giúp thiết lập trách nhiệm giải trình (accountability) và xây dựng niềm tin (trust) của người dùng đối với các quyết định của hệ thống AI.",
       "whyWrong": {
-        "A": "• Chỉ là một nhóm đối tượng.",
-        "B": "• Diễn giải chỉ là phương tiện.",
-        "D": "• Quá hẹp."
+        "A": "• Giải thích cho nhân viên nội bộ hiểu chỉ là một nhóm đối tượng nhỏ, chưa bao quát được mục tiêu đạo đức hướng tới người dùng cuối và xã hội.",
+        "B": "• Cung cấp diễn giải hành động chỉ là phương tiện kỹ thuật sơ khởi, chưa nêu bật được giá trị đạo đức và xã hội mà tính giải thích mang lại.",
+        "D": "• Giải thích phục vụ cổ đông chỉ mang tính chất báo cáo thương mại, hạ thấp ý nghĩa bảo vệ quyền lợi người dùng của giải thích đạo đức."
       }
     }
   },
@@ -10816,11 +10808,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. To test whether an Al system is capable of thinking like a human being.",
       "concept": "• Turing Test Purpose: Kiểm tra khả năng biểu hiện trí tuệ và tư duy của máy tính sao cho không thể phân biệt được với con người.",
-      "whyCorrect": "• Đánh giá khả năng tư duy và phản hồi giống con người.",
+      "whyCorrect": "• Phép thử Turing (Turing test) do Alan Turing đề xuất nhằm đánh giá liệu một hệ thống AI có khả năng thể hiện hành vi trí tuệ và tư duy giống như con người (thinking like a human being) đến mức không thể phân biệt được hay không.",
       "whyWrong": {
-        "A": "• Đánh lừa chỉ là hình thức thể hiện.",
-        "C": "• Đáng tin thuộc XAI/Ethics.",
-        "D": "• Tính sẵn có thuộc về Availability."
+        "A": "• Việc lừa người khác nghĩ mình là người chỉ là biểu hiện hành vi bên ngoài trong cuộc trò chuyện, không phản ánh trọn vẹn mục tiêu đánh giá năng lực tư duy trí tuệ tổng quát.",
+        "C": "• Phép thử Turing kiểm tra trí tuệ hành vi, không kiểm tra các tiêu chuẩn đạo đức hay mức độ đáng tin cậy (trustworthiness) của hệ thống.",
+        "D": "• Tính sẵn sàng (availability) là chỉ số hạ tầng mạng và máy chủ hoạt động liên tục, hoàn toàn không liên quan đến phép thử trí tuệ Turing."
       }
     }
   },
@@ -10849,11 +10841,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "D. short feedback cycles",
       "concept": "• Short Feedback Cycles in Bias: Chu kỳ phản hồi ngắn (short feedback cycles) khiến hành vi quẹt/tương tác nhanh chóng được củng cố vào thuật toán, đào sâu định kiến rất nhanh.",
-      "whyCorrect": "• Chu kỳ phản hồi ngắn làm gia tăng và củng cố bias nhanh chóng.",
+      "whyCorrect": "• Các vòng lặp dự đoán trên ứng dụng hẹn hò rất dễ bị thiên vị do chu kỳ phản hồi ngắn (short feedback cycles) - các hành động quẹt trái/phải tức thì của người dùng nhanh chóng được nạp lại vào thuật toán, củng cố và khuếch đại định kiến có sẵn cực kỳ nhanh.",
       "whyWrong": {
-        "A": "• Hệ số đo lường.",
-        "B": "• Thị trường là bối cảnh.",
-        "C": "• Mức độ tương tác là dữ liệu."
+        "A": "• Chỉ số công bằng (fairness quotients) là công cụ đo lường nhằm giảm thiểu thiên lệch, không phải nguyên nhân gây ra thiên lệch.",
+        "B": "• Lực lượng thị trường là bối cảnh kinh tế chung, không phải cơ chế thuật toán trực tiếp tạo ra vòng lặp phản hồi thiên vị.",
+        "C": "• Mức độ tương tác là thông số đo lường lượng dữ liệu người dùng hoạt động, bản thân nó không tự tạo ra thiên lệch nếu thiếu cơ chế phản hồi nhanh."
       }
     }
   },
@@ -10915,11 +10907,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Anyone under 13 years old",
       "concept": "• COPPA Age Limit: COPPA (Mỹ) quy định bảo vệ đặc biệt dữ liệu cá nhân của trẻ em dưới 13 tuổi (under 13 years old).",
-      "whyCorrect": "• COPPA áp dụng cho trẻ em dưới 13 tuổi.",
+      "whyCorrect": "• Đạo luật COPPA của Mỹ được ban hành nhằm bảo vệ quyền riêng tư và thông tin cá nhân trực tuyến của trẻ em dưới 13 tuổi (under 13 years old), yêu cầu sự đồng ý của cha mẹ trước khi thu thập dữ liệu.",
       "whyWrong": {
-        "A": "• Dưới 18 tuổi thuộc về trẻ vị thành niên nói chung.",
-        "C": "• Bao gồm cả trẻ nhỏ dưới 5 tuổi.",
-        "D": "• Tuổi vị thành niên (Teenagers)."
+        "A": "• Dưới 18 tuổi thuộc nhóm vị thành niên nói chung theo luật dân sự, COPPA có giới hạn độ tuổi bảo vệ đặc biệt nghiêm ngặt hơn là dưới 13.",
+        "C": "• Giới hạn từ 5 đến 13 tuổi bỏ sót nhóm trẻ em nhỏ tuổi dưới 5 tuổi, vốn cũng được COPPA bảo vệ tuyệt đối.",
+        "D": "• Nhóm tuổi từ 13 đến 18 tuổi thuộc đối tượng vị thành niên lớn (teenagers), không nằm trong phạm vi áp dụng bắt buộc của COPPA."
       }
     }
   },
@@ -10981,10 +10973,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. Regulations have legal enforcement behind them. · D. Regulations provide a clear basis for potential litigation.",
       "concept": "• Regulations Legal Enforcement.",
-      "whyCorrect": "• Legal enforcement & Litigation basis.",
+      "whyCorrect": "• Quy chế pháp lý khác biệt với khung đạo đức ở hai điểm: (1) Được bảo đảm thực thi bằng pháp luật (legal enforcement) từ cơ quan nhà nước và (2) Cung cấp cơ sở pháp lý rõ ràng cho các vụ kiện tụng (litigation basis) khi có vi phạm xảy ra.",
       "whyWrong": {
-        "A": "• Do nhà nước ban hành.",
-        "B": "• Cứng nhắc."
+        "A": "• Các quy định pháp lý do nhà nước ban hành, không phải do ngành công nghiệp tự thiết lập và dẫn dắt như quy tắc ứng xử tự nguyện.",
+        "B": "• Luật pháp có tính ràng buộc cứng nhắc và bắt buộc tuân thủ nghiêm ngặt, kém linh hoạt hơn nhiều so với các nguyên tắc đạo đức hướng dẫn."
       }
     }
   },
@@ -11013,11 +11005,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "A. minimize the error rate as long as parity is obtained",
       "concept": "• Accuracy Standard Goal.",
-      "whyCorrect": "• Minimize error rate as long as parity is obtained.",
+      "whyCorrect": "• Mục tiêu của tiêu chuẩn chính xác trong mô hình công bằng là giảm thiểu tỷ lệ lỗi dự đoán xuống mức thấp nhất có thể (minimize error rate), với điều kiện bắt buộc phải đạt được sự bình đẳng cân bằng giữa các nhóm (parity is obtained).",
       "whyWrong": {
-        "B": "• Sai.",
-        "C": "• Sai.",
-        "D": "• Sai."
+        "B": "• Giảm thiểu điểm số công bằng nghĩa là chấp nhận hệ thống bất công hơn, đi ngược lại mục tiêu xây dựng mô hình công bằng đạo đức.",
+        "C": "• Giảm thiểu các chỉ số chất lượng để bảo toàn số lượng dữ liệu là hướng đi sai lệch kỹ thuật huấn luyện mô hình ML.",
+        "D": "• Giữ cho dữ liệu huấn luyện không bị ảnh hưởng không liên quan trực tiếp đến việc cân bằng giữa độ chính xác và tính công bằng ở đầu ra."
       }
     }
   },
@@ -11046,11 +11038,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. an adversarial algorithm",
       "concept": "• Adversarial Algorithm Concept.",
-      "whyCorrect": "• Adversarial algorithm.",
+      "whyCorrect": "• Thuật toán đối nghịch (adversarial algorithm) được chủ động thiết kế thiên lệch một cách có mục đích để đóng vai trò 'kẻ tấn công', giúp phát hiện các thuộc tính bất công và điểm yếu tiềm ẩn trong mô hình chính.",
       "whyWrong": {
-        "A": "• Aggregate.",
-        "B": "• Predictive.",
-        "D": "• Discriminatory."
+        "A": "• Thuật toán tổng hợp (aggregate algorithm) dùng để gom nhóm và tính toán dữ liệu lớn, không dùng để phát hiện bất công.",
+        "B": "• Mô hình dự đoán thông thường nhằm mục tiêu dự báo kết quả chuẩn xác, không được thiết kế thiên vị có chủ đích để kiểm thử.",
+        "D": "• Thuật toán phân biệt đối xử là hành vi lỗi cần tránh của hệ thống, không phải tên gọi của một phương pháp kiểm thử đối nghịch chủ động."
       }
     }
   },
@@ -11112,10 +11104,10 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "B. Formal certification processes that provide competitive advantage · D. International support, recognition, and involvement",
       "concept": "• ISO Standards Benefits Concept.",
-      "whyCorrect": "• Certification & International recognition.",
+      "whyCorrect": "• Áp dụng tiêu chuẩn quốc tế như ISO 27000 mang lại hai lợi ích lớn: (1) Được cấp chứng nhận chính thức (formal certification) giúp tăng lợi thế cạnh tranh và (2) Nhận được sự công nhận, hỗ trợ rộng rãi trên quy mô quốc tế (international recognition).",
       "whyWrong": {
-        "A": "• Nguyên tắc chung.",
-        "C": "• Tự nguyện."
+        "A": "• ISO 27000 đưa ra các nguyên tắc quản lý an toàn thông tin chung mang tính định hướng, không đi sâu vào chỉ dẫn kỹ thuật cụ thể cho từng công nghệ riêng biệt.",
+        "C": "• ISO là tiêu chuẩn tự nguyện áp dụng để cải thiện quy trình, không mang tính bắt buộc pháp lý và không có quyền lực thực thi pháp luật của nhà nước."
       }
     }
   },
@@ -11144,11 +11136,11 @@ window.QUIZ_DATA['ite'] = [
       },
       "answerDisplay": "C. We need to remember that we don't know the full extent of what Al systems might become capable of so that we can better plan.",
       "concept": "• Capability Caution Core Definition: Cẩn trọng vì không ai biết trước giới hạn năng lực tối đa của AI trong tương lai.",
-      "whyCorrect": "• Nhận thức được rằng chúng ta không thể biết hết trần năng lực của AI trong tương lai.",
+      "whyCorrect": "• Khuyến cáo năng lực (Capability caution) nhắc nhở chúng ta phải luôn nhận thức rằng con người chưa thể biết hết toàn bộ giới hạn năng lực mà các hệ thống AI có thể đạt tới trong tương lai, từ đó chủ động lập kế hoạch quản trị rủi ro tốt hơn.",
       "whyWrong": {
-        "A": "• Sai vế.",
-        "B": "• Đóng băng AI là không khả thi.",
-        "D": "• Ngược nghĩa hoàn toàn."
+        "A": "• Khuyến cáo tập trung vào việc quản trị sự phát triển năng lực khó lường của AI, không phải là việc lo sợ AI giới hạn năng lực của con người.",
+        "B": "• Đóng băng sự phát triển của AI ở trạng thái hiện tại là phương án phi thực tế và cản trở sự tiến bộ khoa học công nghệ toàn cầu.",
+        "D": "• Phát biểu này khẳng định chúng ta đã biết hết giới hạn của AI, hoàn toàn trái ngược với tinh thần cảnh giác của khuyến cáo năng lực."
       }
     }
   },
