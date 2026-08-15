@@ -14,15 +14,13 @@ rawData.forEach((q, idx) => {
   if (!q.question) return;
   const norm = q.question.trim().toLowerCase();
   if (!uniqueMap.has(norm)) {
-    // Add unique internal index
     uniqueMap.set(norm, { ...q, uIdx: idx + 1 });
   }
 });
 
 const questions = Array.from(uniqueMap.values());
-console.log('Total unique questions ready for build:', questions.length);
 
-// Module definitions with filters and comprehensive key theory points
+// Module definitions with filters and curated high-level principles
 const moduleSpecs = [
   {
     id: 'm1',
@@ -30,7 +28,7 @@ const moduleSpecs = [
     title: 'AI Ethics, Algorithmic Fairness & Bias Mitigation',
     titleVi: 'Đạo đức AI, Tính công bằng Thuật toán & Giảm thiểu Định kiến',
     icon: 'fa-brain',
-    theory: [
+    baseTheory: [
       {
         en: 'Algorithmic Fairness ensures AI systems deliver equitable outcomes without discriminating against protected attributes like race, gender, or age.',
         vi: 'Dịch: Tính công bằng thuật toán đảm bảo các hệ thống AI đưa ra kết quả bình đẳng mà không phân biệt đối xử dựa trên các thuộc tính được bảo vệ như chủng tộc, giới tính hoặc tuổi tác.'
@@ -56,7 +54,7 @@ const moduleSpecs = [
     title: 'Machine Learning Models, Training Data & Probability',
     titleVi: 'Mô hình Máy học, Dữ liệu Huấn luyện & Xác suất',
     icon: 'fa-chart-network',
-    theory: [
+    baseTheory: [
       {
         en: 'Training Data Inadequacies must be communicated transparently to users so they understand the limitations and boundaries of predictive models.',
         vi: 'Dịch: Sự thiếu hụt hoặc hạn chế của dữ liệu huấn luyện phải được truyền thông minh bạch tới người dùng để họ hiểu rõ giới hạn của mô hình dự đoán.'
@@ -78,7 +76,7 @@ const moduleSpecs = [
     title: 'Privacy, Data Protection & Laws (GDPR, PIPEDA, CCPA, COPPA, FERPA, HIPAA)',
     titleVi: 'Quyền riêng tư, Bảo vệ Dữ liệu & Luật pháp (GDPR, PIPEDA, CCPA, COPPA, FERPA, HIPAA)',
     icon: 'fa-user-shield',
-    theory: [
+    baseTheory: [
       {
         en: 'Personal Information Protection and Electronic Documents Act (PIPEDA) applies to private-sector organizations across Canada that collect, use, or disclose personal information in commercial activities.',
         vi: 'Dịch: Đạo luật Bảo vệ Thông tin Cá nhân và Tài liệu Điện tử (PIPEDA) áp dụng cho các tổ chức khu vực tư nhân trên khắp Canada thu thập, sử dụng hoặc tiết lộ thông tin cá nhân trong các hoạt động thương mại.'
@@ -104,7 +102,7 @@ const moduleSpecs = [
     title: 'Information Security, Threat Modeling (STRIDE, VAST) & Cyber Threats',
     titleVi: 'An toàn Bảo mật, Mô hình hóa Mối đe dọa (STRIDE, VAST) & Mã độc',
     icon: 'fa-shield-halved',
-    theory: [
+    baseTheory: [
       {
         en: 'STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) and VAST (Visual, Agile, and Threat modeling) are threat modeling frameworks used to classify security risks.',
         vi: 'Dịch: STRIDE (Giả mạo, Xáo trộn, Phủ nhận, Tiết lộ thông tin, Từ chối dịch vụ, Nâng quyền) và VAST là các khung mô hình hóa mối đe dọa dùng để phân loại rủi ro bảo mật.'
@@ -126,7 +124,7 @@ const moduleSpecs = [
     title: 'Intellectual Property, Copyright, Patents & Trade Secrets',
     titleVi: 'Sở hữu Trí tuệ, Bản quyền, Bằng sáng chế & Bí mật Thương mại',
     icon: 'fa-copyright',
-    theory: [
+    baseTheory: [
       {
         en: 'Intellectual Property (IP) protections include Copyrights (expression of ideas), Patents (inventions/processes), Trade Secrets (confidential formulas), and Trademarks (brand identifiers).',
         vi: 'Dịch: Các hình thức bảo hộ Sở hữu Trí tuệ (IP) bao gồm Bản quyền (bản thể hiện ý tưởng), Bằng sáng chế (phát minh/quy trình), Bí mật thương mại (công thức bảo mật) và Nhãn hiệu (dấu hiệu thương hiệu).'
@@ -144,7 +142,7 @@ const moduleSpecs = [
     title: 'Risk Management, Liability, Accountability & Governance',
     titleVi: 'Quản lý Rủi ro, Trách nhiệm Giải trình & Quản trị Tổ chức',
     icon: 'fa-scale-balanced',
-    theory: [
+    baseTheory: [
       {
         en: 'Proactive Risk Management addresses potential liability issues early, preventing costly legal battles, reputational damage, and ethical failures.',
         vi: 'Dịch: Quản lý rủi ro chủ động giải quyết các vấn đề trách nhiệm pháp lý từ sớm, ngăn ngừa các tranh chấp pháp lý tốn kém, tổn hại uy tín và thất bại về đạo đức.'
@@ -166,7 +164,7 @@ const moduleSpecs = [
     title: 'Crisis Communication, Media Management & Public Trust',
     titleVi: 'Truyền thông Khủng hoảng, Quản lý Truyền thông & Niềm tin Công chúng',
     icon: 'fa-bullhorn',
-    theory: [
+    baseTheory: [
       {
         en: 'A Media Communication Plan during an ethical crisis must designate a single trained spokesperson and establish verified messaging channels.',
         vi: 'Dịch: Kế hoạch truyền thông với báo chí trong khủng hoảng đạo đức phải chỉ định một người phát ngôn duy nhất được đào tạo và thiết lập các kênh thông điệp được xác thực.'
@@ -184,7 +182,7 @@ const moduleSpecs = [
     title: 'Professional Ethics, Whistleblowing & Codes of Conduct',
     titleVi: 'Đạo đức Nghề nghiệp, Tố giác (Whistleblowing) & Quy tắc Ứng xử',
     icon: 'fa-user-tie',
-    theory: [
+    baseTheory: [
       {
         en: 'Professional Codes of Conduct (such as ACM or IEEE) dictate that IT professionals must prioritize public safety, privacy, and social well-being over corporate profit.',
         vi: 'Dịch: Quy tắc ứng xử nghề nghiệp (như ACM hay IEEE) quy định rằng các chuyên gia CNTT phải ưu tiên an toàn công cộng, quyền riêng tư và lợi ích xã hội lên trên lợi nhuận doanh nghiệp.'
@@ -202,7 +200,7 @@ const moduleSpecs = [
     title: 'Data Analysis, Correlation & Scatter Plot Interpretation',
     titleVi: 'Phân tích Dữ liệu, Tương quan & Phân tích Biểu đồ Phân tán',
     icon: 'fa-chart-line',
-    theory: [
+    baseTheory: [
       {
         en: 'A Scatter Plot showing points tightly aligned along an upward slope indicates a Strong Positive Correlation between the two variables.',
         vi: 'Dịch: Biểu đồ phân tán có các điểm dữ liệu nằm sát nhau theo hướng dốc lên thể hiện Tương quan Dương Mạnh (Strong Positive Correlation) giữa hai biến.'
@@ -220,7 +218,7 @@ const moduleSpecs = [
     title: 'Comprehensive Practice & Scenario-based Questions',
     titleVi: 'Bộ Câu Hỏi Tình Huống & Đạo Đức CNTT Tổng Hợp',
     icon: 'fa-list-check',
-    theory: [
+    baseTheory: [
       {
         en: 'Ethics in technology requires continuous evaluation across the entire lifecycle: design, development, deployment, and decommissioning.',
         vi: 'Dịch: Đạo đức trong công nghệ đòi hỏi việc đánh giá liên tục trong toàn bộ vòng đời: thiết kế, phát triển, triển khai và loại bỏ.'
@@ -230,7 +228,7 @@ const moduleSpecs = [
   }
 ];
 
-// Assign questions to modules using unique normalized question string
+// Assign questions to modules
 const assignedKeys = new Set();
 const moduleData = moduleSpecs.map(spec => {
   const modQuestions = [];
@@ -243,14 +241,36 @@ const moduleData = moduleSpecs.map(spec => {
       modQuestions.push(q);
     }
   });
-  return { ...spec, questions: modQuestions };
+
+  // Extract all unique knowledge items from questions in this module
+  const extractedTheoryMap = new Map();
+  modQuestions.forEach(q => {
+    const exp = q.explanation || {};
+    const ansText = exp.answerDisplay || (q.answer + '. ' + (q.options ? q.options[q.answer] : ''));
+    const qEn = q.question.trim();
+    const qVi = exp.questionVi ? exp.questionVi.trim() : '';
+    const conceptVi = exp.concept ? exp.concept.replace(/^[•\s\-\*]+/, '').trim() : '';
+
+    if (qEn && ansText) {
+      // Build clear dual language summary bullet for each question
+      const enSummary = `Q: ${qEn} -> Key Answer: ${ansText}`;
+      const viSummary = qVi ? `Dịch: ${qVi} -> Đáp án chính: ${ansText}` : `Dịch: ${conceptVi}`;
+      if (!extractedTheoryMap.has(enSummary.toLowerCase())) {
+        extractedTheoryMap.set(enSummary.toLowerCase(), { en: enSummary, vi: viSummary, concept: conceptVi });
+      }
+    }
+  });
+
+  const extractedTheoryList = Array.from(extractedTheoryMap.values());
+
+  return { ...spec, questions: modQuestions, extractedTheoryList };
 });
 
-console.log('Categorization summary:');
+console.log('Categorization & Exhaustive Theory Summary:');
 let totalAssigned = 0;
 moduleData.forEach(m => {
   totalAssigned += m.questions.length;
-  console.log(`${m.code} - ${m.title}: ${m.questions.length} questions`);
+  console.log(`${m.code} - ${m.title}: ${m.questions.length} questions | ${m.extractedTheoryList.length} Extracted Core Knowledge Points`);
 });
 console.log(`Total questions assigned across modules: ${totalAssigned} / ${questions.length}`);
 
@@ -307,10 +327,18 @@ function renderQuestionHTML(q, idx) {
 
 // Generate HTML Content
 const htmlModulesContent = moduleData.map((m, mIdx) => {
-  const theoryHTML = m.theory.map(t => `
-    <div class="theory-item">
+  const baseTheoryHTML = m.baseTheory.map(t => `
+    <div class="theory-item base-rule">
+      <div class="t-en"><i class="fa-solid fa-star"></i> ${t.en}</div>
+      <div class="t-vi">${t.vi}</div>
+    </div>
+  `).join('');
+
+  const extractedTheoryHTML = m.extractedTheoryList.map(t => `
+    <div class="theory-item knowledge-point">
       <div class="t-en">${t.en}</div>
       <div class="t-vi">${t.vi}</div>
+      ${t.concept ? `<div class="t-concept"><strong>Ghi nhớ cốt lõi:</strong> ${t.concept}</div>` : ''}
     </div>
   `).join('');
 
@@ -325,8 +353,12 @@ const htmlModulesContent = moduleData.map((m, mIdx) => {
       </div>
 
       <div class="theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-bookmark"></i> Lý Thuyết Cốt Lõi & Quy Tắc Học Tập / Core Theory</div>
-        ${theoryHTML}
+        <div class="box-title"><i class="fa-solid fa-book-bookmark"></i> Lý Thuyết Cốt Lõi & Tổng Hợp Toàn Bộ Kiến Thức Ôn Thi (${m.extractedTheoryList.length + m.baseTheory.length} Ý Cốt Lõi)</div>
+        <div class="theory-section-header"><i class="fa-solid fa-graduation-cap"></i> 1. Nguyên Tắc Cốt Lõi (Core Principles):</div>
+        ${baseTheoryHTML}
+        
+        <div class="theory-section-header" style="margin-top: 18px;"><i class="fa-solid fa-list-check"></i> 2. Tổng Hợp Chi Tiết Toàn Bộ Kiến Thức & Câu Hỏi Trong Chương (Exhaustive Exam Knowledge Points):</div>
+        ${extractedTheoryHTML}
       </div>
 
       <div class="qa-list">
@@ -618,31 +650,56 @@ const fullHTML = `<!DOCTYPE html>
 
     .box-title {
       font-weight: 700;
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: var(--accent);
-      margin-bottom: 14px;
+      margin-bottom: 16px;
       display: flex;
       align-items: center;
       gap: 8px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    .theory-section-header {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--green);
+      margin-bottom: 10px;
     }
 
     .theory-item {
-      margin-bottom: 14px;
+      margin-bottom: 12px;
+      padding: 10px 12px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.04);
     }
 
-    .theory-item:last-child { margin-bottom: 0; }
+    .theory-item.base-rule {
+      border-left: 3px solid var(--accent);
+    }
+
+    .theory-item.knowledge-point {
+      border-left: 3px solid var(--vi-color);
+    }
 
     .t-en {
       font-weight: 600;
       color: var(--text-main);
-      font-size: 0.95rem;
+      font-size: 0.92rem;
     }
 
     .t-vi {
       color: var(--vi-color);
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       margin-top: 2px;
       font-style: italic;
+    }
+
+    .t-concept {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 4px;
     }
 
     /* QA Cards */
@@ -835,7 +892,7 @@ const fullHTML = `<!DOCTYPE html>
     <main class="main-content" id="mainContent">
       <div class="doc-hero">
         <h1><i class="fa-solid fa-book-open-reader"></i> ITE302 - Information Technology Ethics Study Guide</h1>
-        <p>Tài liệu tổng hợp học tập & ôn thi toàn bộ 1060 câu hỏi ITE (Đạo đức CNTT). Trình bày dạng Tiếng Anh chuẩn kèm dòng dịch Tiếng Việt trực quan ngay bên dưới từng dòng/câu.</p>
+        <p>Tài liệu tổng hợp học tập & ôn thi toàn bộ 1060 câu hỏi ITE (Đạo đức CNTT). Trình bày dạng Tiếng Anh chuẩn kèm dòng dịch Tiếng Việt trực quan ngay bên dưới từng dòng/câu. Phần Lý Thuyết Cốt Lõi tại đầu mỗi chương được tổng hợp bao phủ 100% tất cả câu hỏi trong chương đó.</p>
         <div class="stats-pills">
           <span class="pill"><i class="fa-solid fa-layer-group"></i> 10 Modules Kiến Thức</span>
           <span class="pill"><i class="fa-solid fa-file-circle-check"></i> ${questions.length} Câu Hỏi Độc Lập</span>
@@ -913,7 +970,7 @@ console.log('-', htmlOutputPath2);
 
 // Generate Markdown File Content
 let mdContent = `# ITE302 - Information Technology Ethics Master Study Guide
-> Comprehensive dual-language study guide built from 1060 ITE quiz questions. Each concept and question includes English text with line-by-line Vietnamese translation directly underneath.
+> Comprehensive dual-language study guide built from 1060 ITE quiz questions. Each concept and question includes English text with line-by-line Vietnamese translation directly underneath. The Core Theory box in each module comprehensively synthesizes all question concepts.
 
 ---
 
@@ -923,9 +980,15 @@ moduleData.forEach((m, mIdx) => {
   mdContent += `## ${m.code}: ${m.title}\n`;
   mdContent += `### ${m.titleVi}\n\n`;
 
-  mdContent += `#### Core Theory & Key Concepts / Lý Thuyết Cốt Lõi\n`;
-  m.theory.forEach(t => {
-    mdContent += `- **${t.en}**\n  *${t.vi}*\n\n`;
+  mdContent += `#### Core Theory & Exhaustive Knowledge Points / Lý Thuyết Cốt Lõi & Tổng Hợp Kiến Thức Ôn Thi\n`;
+  m.baseTheory.forEach(t => {
+    mdContent += `- **[CORE RULE] ${t.en}**\n  *${t.vi}*\n\n`;
+  });
+
+  m.extractedTheoryList.forEach(t => {
+    mdContent += `- **${t.en}**\n  *${t.vi}*\n`;
+    if (t.concept) mdContent += `  *Ghi nhớ: ${t.concept}*\n`;
+    mdContent += `\n`;
   });
 
   mdContent += `#### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (${m.questions.length} câu)\n\n`;

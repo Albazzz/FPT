@@ -1,23 +1,450 @@
 # ITE302 - Information Technology Ethics Master Study Guide
-> Comprehensive dual-language study guide built from 1060 ITE quiz questions. Each concept and question includes English text with line-by-line Vietnamese translation directly underneath.
+> Comprehensive dual-language study guide built from 1060 ITE quiz questions. Each concept and question includes English text with line-by-line Vietnamese translation directly underneath. The Core Theory box in each module comprehensively synthesizes all question concepts.
 
 ---
 
 ## MOD-01: AI Ethics, Algorithmic Fairness & Bias Mitigation
 ### Đạo đức AI, Tính công bằng Thuật toán & Giảm thiểu Định kiến
 
-#### Core Theory & Key Concepts / Lý Thuyết Cốt Lõi
-- **Algorithmic Fairness ensures AI systems deliver equitable outcomes without discriminating against protected attributes like race, gender, or age.**
+#### Core Theory & Exhaustive Knowledge Points / Lý Thuyết Cốt Lõi & Tổng Hợp Kiến Thức Ôn Thi
+- **[CORE RULE] Algorithmic Fairness ensures AI systems deliver equitable outcomes without discriminating against protected attributes like race, gender, or age.**
   *Dịch: Tính công bằng thuật toán đảm bảo các hệ thống AI đưa ra kết quả bình đẳng mà không phân biệt đối xử dựa trên các thuộc tính được bảo vệ như chủng tộc, giới tính hoặc tuổi tác.*
 
-- **Bias Mitigation Techniques involve bias testing, using representative and diverse training datasets, and auditing models pre- and post-deployment.**
+- **[CORE RULE] Bias Mitigation Techniques involve bias testing, using representative and diverse training datasets, and auditing models pre- and post-deployment.**
   *Dịch: Các kỹ thuật giảm thiểu định kiến bao gồm kiểm thử định kiến, sử dụng tập dữ liệu huấn luyện đa dạng và mang tính đại diện, cũng như kiểm toán mô hình trước và sau khi triển khai.*
 
-- **Using larger datasets alone does not guarantee fairness if the data continues to reflect historical or systemic biases.**
+- **[CORE RULE] Using larger datasets alone does not guarantee fairness if the data continues to reflect historical or systemic biases.**
   *Dịch: Chỉ sử dụng tập dữ liệu lớn hơn không đảm bảo tính công bằng nếu dữ liệu đó vẫn tiếp tục phản ánh các định kiến mang tính lịch sử hoặc hệ thống.*
 
-- **Automation Bias occurs when humans over-rely on automated decision systems, ignoring contradictory evidence or failing to intervene.**
+- **[CORE RULE] Automation Bias occurs when humans over-rely on automated decision systems, ignoring contradictory evidence or failing to intervene.**
   *Dịch: Định kiến tự động hóa (Automation Bias) xảy ra khi con người quá tin tưởng vào các hệ thống ra quyết định tự động, bỏ qua các bằng chứng trái ngược hoặc không can thiệp kịp thời.*
+
+- **Q: Which technique helps improve algorithmic fairness? -> Key Answer: B. Bias testing and diverse training data**
+  *Dịch: Kỹ thuật nào giúp cải thiện tính công bằng của thuật toán (algorithmic fairness)? -> Đáp án chính: B. Bias testing and diverse training data*
+  *Ghi nhớ: Algorithmic Fairness (Tính công bằng của thuật toán): Đảm bảo các mô hình AI/ML không đưa ra quyết định thiên vị hoặc phân biệt đối xử với các nhóm đối tượng khác nhau.*
+
+- **Q: Which psychological reason contributes to automation bias? -> Key Answer: A. Over-reliance on technology**
+  *Dịch: Lý do tâm lý nào góp phần dẫn đến định kiến tự động hóa (automation bias)? -> Đáp án chính: A. Over-reliance on technology*
+  *Ghi nhớ: Automation Bias (Định kiến tự động hóa): Xu hướng tâm lý con người quá tin tưởng và phụ thuộc vào gợi ý/quyết định của hệ thống tự động, bỏ qua các dấu hiệu cảnh báo lỗi.*
+
+- **Q: What is one outcome of not considering ethics in algorithm design? -> Key Answer: C. Discriminatory or unsafe results**
+  *Dịch: Một trong những hậu quả của việc không xem xét đạo đức trong thiết kế thuật toán là gì? -> Đáp án chính: C. Discriminatory or unsafe results*
+  *Ghi nhớ: AI Ethics (Đạo đức trong AI): Việc bỏ qua các nguyên tắc đạo đức trong thiết kế thuật toán dễ dẫn đến việc củng cố định kiến xã hội, gây ra quyết định sai lệch và mất an toàn.*
+
+- **Q: What is one risk of ignoring ethical concerns in Al design? -> Key Answer: C. Public backlash and regulatory consequences**
+  *Dịch: Một rủi ro của việc bỏ qua các quan ngại đạo đức trong thiết kế AI là gì? -> Đáp án chính: C. Public backlash and regulatory consequences*
+  *Ghi nhớ: Rủi ro Đạo đức AI: Bỏ qua đạo đức gây tổn hại uy tín thương hiệu, phản ứng tẩy chay từ công chúng và các án phạt pháp lý từ cơ quan quản lý.*
+
+- **Q: The nature of a predictive model may reveal -> Key Answer: B. the algorithm's bias**
+  *Dịch: Bản chất của một mô hình dự đoán có thể tiết lộ điều gì? -> Đáp án chính: B. the algorithm's bias*
+  *Ghi nhớ: Model Output & Bias: Kết quả đầu ra và cách mô hình dự đoán đưa ra quyết định sẽ phản ánh định kiến (bias) tiềm ẩn trong thuật toán hoặc trong dữ liệu huấn luyện.*
+
+- **Q: Which of the following are potential training data inadequacies that you should communicate to your users in support of transparency? (Select two.) -> Key Answer: B. Any known bias in the sample data. · D. Any missing values in the dataset and how they were handled.**
+  *Dịch: Những khiếm khuyết nào sau đây của dữ liệu huấn luyện cần được minh bạch thông báo cho người dùng? (Chọn hai) -> Đáp án chính: B. Any known bias in the sample data. · D. Any missing values in the dataset and how they were handled.*
+  *Ghi nhớ: Data Transparency & Model Cards: Minh bạch thông tin về hạn chế dữ liệu (định kiến tiềm ẩn và phương pháp xử lý dữ liệu thiếu) giúp người dùng hiểu rõ phạm vi sử dụng và độ tin cậy của mô hình.*
+
+- **Q: Why is it important to categorize ethical risks into different types? (Select two.) -> Key Answer: A. It makes it easier for us to identify and manage different types of risks. · C. It helps us understand the many complexities involved in different types of ethical risks.**
+  *Dịch: Tại sao việc phân loại các rủi ro đạo đức thành các dạng khác nhau lại quan trọng? (Chọn hai) -> Đáp án chính: A. It makes it easier for us to identify and manage different types of risks. · C. It helps us understand the many complexities involved in different types of ethical risks.*
+  *Ghi nhớ: Risk Categorization (Phân loại rủi ro): Phân nhóm rủi ro đạo đức giúp tổ chức hiểu rõ bản chất phức tạp từng loại và đưa ra phương án quản lý phù hợp.*
+
+- **Q: Why is stakeholder communication vital in managing ethical risk? -> Key Answer: B. To ensure stakeholder expectations and values are understood**
+  *Dịch: Tại sao việc lôi kéo các bên liên quan nội bộ (internal stakeholders) ngay từ đầu vòng đời sản phẩm lại quan trọng? -> Đáp án chính: B. To ensure stakeholder expectations and values are understood*
+  *Ghi nhớ: Early Stakeholder Engagement: Tương tác sớm với các bên liên quan giúp định hình các giá trị đạo đức và kỳ vọng chung từ giai đoạn thiết kế ban đầu.*
+
+- **Q: How can effective communication mitigate ethical risks in Al and Data Science? -> Key Answer: A. By ensuring transparency and understanding of ethical guidelines**
+  *Dịch: Truyền thông hiệu quả có thể giảm thiểu các rủi ro đạo đức trong AI và Data Science như thế nào? -> Đáp án chính: A. By ensuring transparency and understanding of ethical guidelines*
+  *Ghi nhớ: Transparent Communication: Truyền thông rõ ràng và minh bạch giúp các bên liên quan hiểu và tuân thủ các nguyên tắc đạo đức trong suốt dự án.*
+
+- **Q: Why is it important to engage stakeholders at the beginning of the ethical risk management process? -> Key Answer: D. It demonstrates that the organization is committed to accountability and transparency in their data-driven systems.**
+  *Dịch: Tại sao việc lôi kéo các bên liên quan ở ngay đầu quy trình quản lý rủi ro đạo đức lại quan trọng? -> Đáp án chính: D. It demonstrates that the organization is committed to accountability and transparency in their data-driven systems.*
+  *Ghi nhớ: Stakeholder Commitment: Sự tham gia của các bên liên quan từ sớm khẳng định tính minh bạch và tinh thần trách nhiệm giải trình của doanh nghiệp.*
+
+- **Q: Why is equity an important principle in emerging tech ethics? -> Key Answer: B. It ensures fairness in access and outcomes**
+  *Dịch: Tại sao công bằng/bình đẳng (equity) lại là một nguyên tắc quan trọng trong đạo đức công nghệ mới nổi? -> Đáp án chính: B. It ensures fairness in access and outcomes*
+  *Ghi nhớ: Equity in Tech Ethics: Đảm bảo phân bổ cơ hội, quyền truy cập và lợi ích công nghệ một cách công bằng cho mọi đối tượng xã hội.*
+
+- **Q: Which of the following is one explanation for why cognitive biases exist? -> Key Answer: A. We receive too much information and are overloaded.**
+  *Dịch: Một trong những giải thích cho lý do tại sao định kiến nhận thức (cognitive bias) tồn tại là gì? -> Đáp án chính: A. We receive too much information and are overloaded.*
+  *Ghi nhớ: Cognitive Load & Biases: Não bộ tạo ra các đường tắt tư duy (heuristics) để xử lý tình trạng quá tải thông tin, dẫn đến các định kiến nhận thức.*
+
+- **Q: Which type of bias occurs when training data is not representative of the population? -> Key Answer: B. Selection bias**
+  *Dịch: Loại định kiến nào xảy ra khi dữ liệu huấn luyện không đại diện cho toàn bộ quần thể? -> Đáp án chính: B. Selection bias*
+  *Ghi nhớ: Selection Bias: Xảy ra khi mẫu dữ liệu được thu thập không phản ánh đúng tỷ lệ và đặc tính của quần thể thực tế.*
+
+- **Q: As a cognitive bias, humans see lack of context/meaning around a piece of information and tend to -> Key Answer: A. fill in gaps with existing knowledge**
+  *Dịch: Là một định kiến nhận thức, khi con người thấy thiếu ngữ cảnh/ý nghĩa xung quanh một thông tin, họ có xu hướng: -> Đáp án chính: A. fill in gaps with existing knowledge*
+  *Ghi nhớ: Pattern Recognition & Gap Filling: Não bộ tự động điền vào các khoảng trống thông tin bằng kinh nghiệm và giả định sẵn có.*
+
+- **Q: If one group comprises the majority of the training data, they will skew the dataset and give the model -> Key Answer: B. more confidence about that group**
+  *Dịch: Nếu một nhóm chiếm phần lớn dữ liệu huấn luyện, họ sẽ làm lệch tập dữ liệu và khiến mô hình có: -> Đáp án chính: B. more confidence about that group*
+  *Ghi nhớ: Majority Class Bias: Khi có nhiều dữ liệu của một nhóm, mô hình học được nhiều mẫu hình của nhóm đó hơn nên dự đoán với độ tự tin (confidence) cao hơn đối với nhóm này.*
+
+- **Q: An example of automation bias is -> Key Answer: D. using scraped twitter data over survey data**
+  *Dịch: Ví dụ về định kiến tự động hóa (automation bias) là: -> Đáp án chính: D. using scraped twitter data over survey data*
+  *Ghi nhớ: Automation Bias in Data Selection: Ưu tiên lựa chọn dữ liệu được cào/thu thập tự động bởi máy móc vì tin rằng nó khách quan hơn dữ liệu khảo sát từ con người.*
+
+- **Q: In a classification model that determines whether or not a customer qualifies for a coupon, a significantly lower percentage of males qualified than females. Which of the following types of discrimination does this outcome potentially represent? -> Key Answer: D. Disparate impact**
+  *Dịch: Trong mô hình phân loại xác định khách hàng có đủ điều kiện nhận phiếu giảm giá hay không, tỷ lệ nam giới đạt điều kiện thấp hơn đáng kể so với nữ giới. Kết quả này đại diện cho loại phân biệt đối xử nào? -> Đáp án chính: D. Disparate impact*
+  *Ghi nhớ: Disparate Treatment vs Disparate Impact: Disparate treatment là cố ý phân biệt; Disparate impact là quy tắc trung lập nhưng tạo ra kết quả bất lợi không bình đẳng cho một nhóm.*
+
+- **Q: Which of the following are challenges that can arise if you fail to communicate about the social impact of ethical risks (select two.) -> Key Answer: C. Disenfranchisement · D. Erosion of rights**
+  *Dịch: Những thách thức nào có thể phát sinh nếu bạn không truyền thông về tác động xã hội của các rủi ro đạo đức? (Chọn hai) -> Đáp án chính: C. Disenfranchisement · D. Erosion of rights*
+  *Ghi nhớ: Social Impact Risks: Bỏ qua tác động xã hội gây hại trực tiếp tới cộng đồng thông qua việc tước quyền (Disenfranchisement) và làm xói mòn quyền cơ bản (Erosion of rights).*
+
+- **Q: Which of the following are useful strategies for communicating ethical risks to the organization? (Select two.) -> Key Answer: B. Disseminate information in multiple formats · C. Communicate information in real time**
+  *Dịch: Chiến lược nào hữu ích cho việc truyền thông rủi ro đạo đức trong tổ chức? (Chọn hai) -> Đáp án chính: B. Disseminate information in multiple formats · C. Communicate information in real time*
+  *Ghi nhớ: Ethics Risk Communication: Đa dạng hóa hình thức (multiple formats) và cập nhật thời gian thực (real-time) giúp thông tin đến nhanh và dễ hấp thụ.*
+
+- **Q: A good example of cultural reflection in training data is -> Key Answer: B. a model selects for one demographic less often because of their historical representation**
+  *Dịch: Ví dụ tốt về sự phản ánh văn hóa trong dữ liệu huấn luyện là: -> Đáp án chính: B. a model selects for one demographic less often because of their historical representation*
+  *Ghi nhớ: Historical Cultural Bias in Data: Dữ liệu huấn luyện phản ánh các thiên kiến lịch sử và văn hóa, khiến mô hình tiếp tục lặp lại sự bất bình đẳng đó.*
+
+- **Q: Which of the following are important ethical elements to safeguard within ethical Al systems? (Select two.) -> Key Answer: A. Accountability and management of bias. · D. Transparency and explainability, balanced with privacy.**
+  *Dịch: Những yếu tố đạo đức nào quan trọng cần bảo vệ trong các hệ thống AI đạo đức? (Chọn hai) -> Đáp án chính: A. Accountability and management of bias. · D. Transparency and explainability, balanced with privacy.*
+  *Ghi nhớ: Core Ethics Elements in AI: Accountability, Bias Management, Transparency, Explainability & Privacy.*
+
+- **Q: What is one possible reason a model may predict a higher crime rate based on datasets used? -> Key Answer: A. If drug arrests are historically high in that area, the model may correlate crime with areas of high drug use based on the datasets**
+  *Dịch: Lý do nào khiến mô hình dự đoán tỷ lệ tội phạm cao hơn dựa trên tập dữ liệu được sử dụng? -> Đáp án chính: A. If drug arrests are historically high in that area, the model may correlate crime with areas of high drug use based on the datasets*
+  *Ghi nhớ: Historical Bias & Feedback Loops: Thuật toán dự đoán tội phạm dựa trên dữ liệu bắt giữ trong quá khứ, củng cố định kiến cảnh sát thường xuyên tuần tra khu vực đó.*
+
+- **Q: Why is the question of robot rights and emancipation one that isn't as important as addressing issues of bias, privacy, transparency, and other principles discussed in the various ethical frameworks? -> Key Answer: A. These rights necessitate that robots become sentient entities, which is currently not feasible.**
+  *Dịch: Tại sao câu hỏi về quyền và sự giải phóng của robot không quan trọng bằng việc giải quyết các vấn đề về định kiến, riêng tư và minh bạch? -> Đáp án chính: A. These rights necessitate that robots become sentient entities, which is currently not feasible.*
+  *Ghi nhớ: Robot Rights & Sentience: Robot hiện tại chưa có tri giác (sentience), do đó các vấn đề rủi ro AI thực tế cho con người phải được ưu tiên giải quyết trước.*
+
+- **Q: When your collected data doesn't accurately reflect the full environment, you're experiencing -> Key Answer: D. sample bias**
+  *Dịch: Khi dữ liệu thu thập được không phản ánh chính xác toàn bộ môi trường, bạn đang gặp phải: -> Đáp án chính: D. sample bias*
+  *Ghi nhớ: Sample Bias: Mẫu thu thập không đại diện đúng cho môi trường thực tế.*
+
+- **Q: Which type of fairness fails to address merit while maintaining accuracy? -> Key Answer: B. statistical parity**
+  *Dịch: Loại tính công bằng nào không giải quyết được năng lực/xứng đáng (merit) trong khi vẫn duy trì độ chính xác? -> Đáp án chính: B. statistical parity*
+  *Ghi nhớ: Statistical Parity Limitation: Ép tỷ lệ chấp nhận giữa các nhóm phải bằng nhau (ví dụ: 50% nam, 50% nữ) mà bỏ qua sự khác biệt về năng lực/hồ sơ thực tế (merit).*
+
+- **Q: Which of the following is a reason to periodically update a code of ethics document? -> Key Answer: A. It allows you to capture the evolving nature of the ethical risks of the product or service that you are developing.**
+  *Dịch: Lý do để định kỳ cập nhật tài liệu bộ quy tắc đạo đức là gì? -> Đáp án chính: A. It allows you to capture the evolving nature of the ethical risks of the product or service that you are developing.*
+  *Ghi nhớ: Evolving Ethical Risks: Rủi ro đạo đức thay đổi theo sự phát triển của tính năng công nghệ.*
+
+- **Q: Are criminal justice risk assessments race-neutral? -> Key Answer: C. No, the data is biased as it reflects historical bias.**
+  *Dịch: Các công cụ đánh giá rủi ro trong tư pháp hình sự có trung lập về chủng tộc không? -> Đáp án chính: C. No, the data is biased as it reflects historical bias.*
+  *Ghi nhớ: COMPAS & Algorithmic Bias in Justice: Dữ liệu bắt giữ trong quá khứ mang thiên kiến chủng tộc lịch sử khiến thuật toán tiếp tục tái diễn sự bất công đó.*
+
+- **Q: Which type of bias causes people to trust an automated decision-making system (ADS) over a human's decision? -> Key Answer: B. Automation bias**
+  *Dịch: Loại định kiến nào khiến con người tin tưởng một hệ thống ra quyết định tự động (ADS) hơn là quyết định của con người? -> Đáp án chính: B. Automation bias*
+  *Ghi nhớ: Automation Bias: Tin tưởng tuyệt đối vào máy móc hơn con người.*
+
+- **Q: A model that makes more mistakes by moving its decision threshold down 40% of its worthiness metric will be potentially -> Key Answer: C. fairer but less accurate**
+  *Dịch: Một mô hình tạo ra nhiều sai sót hơn bằng cách hạ ngưỡng quyết định (decision threshold) xuống 40% chỉ số giá trị sẽ có tiềm năng: -> Đáp án chính: C. fairer but less accurate*
+  *Ghi nhớ: Decision Threshold Adjustment in Fairness: Hạ ngưỡng để trao cơ hội cho nhóm bị yếu thế làm tăng tính công bằng (fairer) nhưng chấp nhận tăng tỷ lệ lỗi (less accurate).*
+
+- **Q: model can still be unfair even though it won't explicitly know which groups are being inputted into A
+the system -> Key Answer: B. blind attribute**
+  *Dịch: Một mô hình vẫn có thể không công bằng ngay cả khi nó không biết rõ nhóm nào đang được đưa vào hệ thống, điều này liên quan đến thuộc tính nào? -> Đáp án chính: B. blind attribute*
+  *Ghi nhớ: Fairness through Blindness Fallacy: Loại bỏ trực tiếp các thuộc tính nhạy cảm không đủ để đảm bảo tính công bằng vì mô hình vẫn có thể học qua các thuộc tính proxy tương quan.*
+
+- **Q: Fairness in machine learning can protect groups from bias, but can still harm -> Key Answer: D. individuals within those groups**
+  *Dịch: Tính công bằng trong máy học có thể bảo vệ các nhóm khỏi bị định kiến, nhưng vẫn có thể gây hại cho: -> Đáp án chính: D. individuals within those groups*
+  *Ghi nhớ: Group Fairness vs Individual Fairness: Sự công bằng ở cấp độ nhóm đôi khi có thể dẫn đến bất công cho các cá nhân cụ thể thuộc nhóm đó.*
+
+- **Q: Why do smart toys raise additional ethical concerns over those that are raised in the course of other products and services that use Al? -> Key Answer: D. Children are more susceptible to manipulation and therefore need extra protective measures.**
+  *Dịch: Tại sao trẻ em thường được coi là đối tượng cần sự bảo vệ đặc biệt trong các quy định dữ liệu? -> Đáp án chính: D. Children are more susceptible to manipulation and therefore need extra protective measures.*
+  *Ghi nhớ: Child Privacy Protection (COPPA / GDPR): Trẻ em có khả năng nhận thức hạn chế về rủi ro dữ liệu nên dễ bị thao túng tâm lý và thu thập lén lút.*
+
+- **Q: Which of the following would be the most beneficial stage to hold ethical risk reviews for a new project that your team is undertaking? -> Key Answer: D. Conception**
+  *Dịch: Giai đoạn nào sẽ mang lại lợi ích cao nhất để tổ chức rà soát rủi ro đạo đức cho một dự án mới? -> Đáp án chính: D. Conception*
+  *Ghi nhớ: Ethics at Conception: Rà soát đạo đức ngay từ giai đoạn hình thành ý tưởng (Conception) giúp tiết kiệm chi phí và định hướng kiến trúc đúng đắn.*
+
+- **Q: One benefit of an explainable model is -> Key Answer: D. the model is more accurate**
+  *Dịch: Một lợi ích của mô hình có thể giải thích được (explainable model) là: -> Đáp án chính: D. the model is more accurate*
+  *Ghi nhớ: Explainability Benefits: Khi mô hình có thể giải thích được, các kỹ sư dễ dàng phát hiện lỗi sai để tinh chỉnh giúp tăng độ chính xác thực tế.*
+
+- **Q: Which of the following describes the Al Faimess 360 project? -> Key Answer: A. An open source library that evaluates models for bias and provides mitigation tactics to reduce that bias.**
+  *Dịch: Phát biểu nào sau đây mô tả dự án AI Fairness 360 (AIF360)? -> Đáp án chính: A. An open source library that evaluates models for bias and provides mitigation tactics to reduce that bias.*
+  *Ghi nhớ: AI Fairness 360 (IBM): Bộ công cụ mã nguồn mở giúp phát hiện và loại bỏ định kiến (bias mitigation) trong mô hình ML.*
+
+- **Q: Why is suspicion a pitfall in communicating ethical risks to society? -> Key Answer: B. Suspicion leads to aggressive rejection of a technology.**
+  *Dịch: Tại sao sự nghi ngờ lại là cạm bẫy trong việc truyền thông rủi ro đạo đức tới xã hội? -> Đáp án chính: B. Suspicion leads to aggressive rejection of a technology.*
+  *Ghi nhớ: Suspicion in Tech Acceptance: Nghi ngờ thiếu thông tin khiến công chúng từ chối gay gắt (aggressive rejection) công nghệ.*
+
+- **Q: Which of the following describe important aspects in the role of an ethical Al engineer? Select two options. -> Key Answer: A. Cleaning and sorting data, and auditing for bias. · D. Keeping up with the latest developments and vulnerabilities.**
+  *Dịch: Những điều nào sau đây mô tả các khía cạnh quan trọng trong vai trò của một kỹ sư AI có đạo đức? Chọn hai -> Đáp án chính: A. Cleaning and sorting data, and auditing for bias. · D. Keeping up with the latest developments and vulnerabilities.*
+  *Ghi nhớ: Role of an Ethical AI Engineer: Kỹ sư AI có đạo đức phải đảm bảo chất lượng dữ liệu sạch/không thiên lệch và duy trì kiến thức bảo mật để bảo vệ người dùng.*
+
+- **Q: Which type of fairness would make sense when dividing tickets evenly between groups?
+A equality of false positives -> Key Answer: C. statistical parity**
+  *Dịch: Loại công bằng nào sẽ hợp lý nhất khi phân chia đều vé (tickets) giữa các nhóm khác nhau? -> Đáp án chính: C. statistical parity*
+  *Ghi nhớ: Statistical Parity (Demographic Parity): Tiêu chuẩn công bằng yêu cầu tỷ lệ kết quả chấp nhận/nhận được lợi ích phải bằng nhau giữa tất cả các nhóm nhân khẩu học.*
+
+- **Q: An unfair model will by nature -> Key Answer: D. optimize for making the fewest mistakes**
+  *Dịch: Về bản chất, một mô hình bất công (unfair model) sẽ: -> Đáp án chính: D. optimize for making the fewest mistakes*
+  *Ghi nhớ: Global Optimization Bias: Thuật toán tối ưu hóa tổng thể (fewest overall mistakes) thường bỏ qua accuracy của nhóm thiểu số, tạo ra sự bất công.*
+
+- **Q: A "purposefully biased" algorithm used to identify unfair attributes is known as -> Key Answer: C. an adversarial algorithm**
+  *Dịch: Một thuật toán "cố ý bị làm lệch" được sử dụng để phát hiện các thuộc tính bất công được gọi là gì? -> Đáp án chính: C. an adversarial algorithm*
+  *Ghi nhớ: Adversarial Testing in AI: Sử dụng mô hình đối địch được huấn luyện để chủ động tìm và khai thác lỗ hổng hoặc sự mất cân bằng trong hệ thống chính.*
+
+- **Q: Why is it impractical to protect all possible subgroups in predictive models? -> Key Answer: A. Accuracy will be lowered beyond a reasonable rate**
+  *Dịch: Tại sao việc bảo vệ tất cả các nhóm nhỏ (subgroups) tiềm năng trong mô hình dự đoán lại không khả thi về mặt thực tế? -> Đáp án chính: A. Accuracy will be lowered beyond a reasonable rate*
+  *Ghi nhớ: Subgroup Fairness Tradeoff: Càng chia nhỏ phân nhóm để ép cân bằng thì độ chính xác (accuracy) toàn hệ thống càng sụt giảm nghiêm trọng.*
+
+- **Q: Which of the following is NOT a common consideration when looking at the major ethical frameworks? -> Key Answer: A. Humanity**
+  *Dịch: Yếu tố nào sau đây KHÔNG phải là cân nhắc phổ biến khi xem xét các khung chuẩn đạo đức chính? -> Đáp án chính: A. Humanity*
+  *Ghi nhớ: Common Framework Core Pillars: Privacy, Security, Transparency, Fairness, Accountability. "Humanity" là từ khái quát không phải pillar tiêu chuẩn trong bảng phân loại.*
+
+- **Q: Why is a model that has been overfitted to its training data a source of fairness risk? -> Key Answer: C. Because the model won't generalize to the entire population.**
+  *Dịch: Tại sao một mô hình quá khớp (overfitted) với dữ liệu huấn luyện lại là một nguồn rủi ro về tính công bằng (fairness risk)? -> Đáp án chính: C. Because the model won't generalize to the entire population.*
+  *Ghi nhớ: Overfitting & Fairness Risk: Overfitting làm mô hình học thuộc lòng các đặc tính riêng lẻ của tập train, mất khả năng tổng quát hóa (generalize) cho dữ liệu mới, gây thiên vị lớn.*
+
+- **Q: Which of the following are useful strategies for communicating ethical risks to the individual? (Select two.) -> Key Answer: B. Communicate to individuals proactively rather than reactively · D. Ensure individuals feel that they have input into the process**
+  *Dịch: Những chiến lược nào hữu ích cho việc truyền thông các rủi ro đạo đức tới từng cá nhân? (Chọn hai) -> Đáp án chính: B. Communicate to individuals proactively rather than reactively · D. Ensure individuals feel that they have input into the process*
+  *Ghi nhớ: Individual Risk Communication: Chủ động (proactively) và Tạo cảm giác được đóng góp ý kiến (input into process).*
+
+- **Q: In 2019, % of equity-futures and cash-equity trades were executed by algorithms -> Key Answer: B. 80-90%**
+  *Dịch: Vào năm 2019, khoảng bao nhiêu phần trăm các giao dịch hợp đồng tương lai cổ phiếu được thực hiện bởi thuật toán? -> Đáp án chính: B. 80-90%*
+  *Ghi nhớ: Algorithmic Trading Dominance: Thống kê năm 2019 cho thấy khoảng 80-90% giao dịch tài chính chứng khoán do thuật toán tự động thực hiện.*
+
+- **Q: Dating algorithms become biased mostly through offering users -> Key Answer: A. collaborative filtering**
+  *Dịch: Các thuật toán hẹn hò trở nên bị định kiến chủ yếu thông qua việc cung cấp cho người dùng: -> Đáp án chính: A. collaborative filtering*
+  *Ghi nhớ: Collaborative Filtering Bias in Dating Apps: Lọc cộng tác gợi ý đối tượng dựa trên sở thích của người khác có điểm chung, dễ vô tình tạo ra rào cản phân biệt chủng tộc/ngoại hình.*
+
+- **Q: Which of the following types of bias emerges when the same data is sampled over and over again, limiting a model's perspective? -> Key Answer: D. Reinforcement bias**
+  *Dịch: Loại định kiến nào xuất hiện khi cùng một dữ liệu được lấy mẫu lặp đi lặp lại nhiều lần, làm giới hạn góc nhìn của mô hình? -> Đáp án chính: D. Reinforcement bias*
+  *Ghi nhớ: Reinforcement Bias: Việc lặp đi lặp lại cùng một mẫu dữ liệu cũ làm củng cố và đào sâu định kiến của mô hình.*
+
+- **Q: A benefit of glass-box models is that if an attribute is skewing the fairness of a decision, a human agent may
+choose to -> Key Answer: B. re-run the algorithm without it**
+  *Dịch: Lợi ích của mô hình hộp thủy tinh (glass-box model) là nếu một thuộc tính làm lệch tính công bằng của quyết định, chuyên viên có thể chọn: -> Đáp án chính: B. re-run the algorithm without it*
+  *Ghi nhớ: Glass-Box Model Actionability: Quan sát được bên trong giúp con người loại bỏ thuộc tính bị lệch (biased attribute) và chạy lại mô hình.*
+
+- **Q: Predictive loops in marketplace models like dating apps are especially susceptible to bias due to -> Key Answer: D. short feedback cycles**
+  *Dịch: Các vòng lặp dự đoán trong các mô hình thị trường như ứng dụng hẹn hò đặc biệt dễ bị định kiến do: -> Đáp án chính: D. short feedback cycles*
+  *Ghi nhớ: Short Feedback Cycles in Bias: Chu kỳ phản hồi ngắn (short feedback cycles) khiến hành vi quẹt/tương tác nhanh chóng được củng cố vào thuật toán, đào sâu định kiến rất nhanh.*
+
+- **Q: Fairness is best defined as just treatment without -> Key Answer: D. favoritism or discrimination**
+  *Dịch: Tính công bằng (fairness) được định nghĩa tốt nhất là sự đối xử công minh mà không có: -> Đáp án chính: D. favoritism or discrimination*
+  *Ghi nhớ: Fairness Definition: Đối xử công bằng, không thiên vị (favoritism) và không phân biệt đối xử (discrimination).*
+
+- **Q: For a model to clean, parse, and self-train it's own dataset while remaining impartial, the model needs -> Key Answer: B. a list of bias and domain tests to run and adjust for**
+  *Dịch: Để một mô hình tự làm sạch, phân tích và huấn luyện trên tập dữ liệu của chính nó mà vẫn duy trì tính vô tư, mô hình cần điều gì? -> Đáp án chính: B. a list of bias and domain tests to run and adjust for*
+  *Ghi nhớ: Tự động làm sạch dữ liệu có đạo đức đòi hỏi quy trình kiểm thử thiên vị (Bias Testing) và quy chuẩn miền kiến thức để hiệu chỉnh độ lệch.*
+
+- **Q: Which of the following are actions that can help combat implicit bias? (Select three.) -> Key Answer: B. Cultivating awareness of your own biases. & C. Interacting with diverse groups of people. & D. Exposing yourself to “counter-stereotypical” examples.**
+  *Dịch: Những hành động nào sau đây giúp chống lại thiên vị ẩn (Implicit Bias)? (Select three) -> Đáp án chính: B. Cultivating awareness of your own biases. & C. Interacting with diverse groups of people. & D. Exposing yourself to “counter-stereotypical” examples.*
+  *Ghi nhớ: Giảm Implicit Bias đòi hỏi tự nhận thức, đa dạng hóa trải nghiệm xã hội và liên tục tiếp nhận thông tin phản chứng định kiến.*
+
+- **Q: How can confirmation bias impact us socially? (Select two.) -> Key Answer: C. It can impede socio-political cooperation. & D. It can lead to groupthink, which can in turn halt forward progress.**
+  *Dịch: Thiên vị xác nhận (Confirmation Bias) có thể tác động đến chúng ta về mặt xã hội như thế nào? (Select two) -> Đáp án chính: C. It can impede socio-political cooperation. & D. It can lead to groupthink, which can in turn halt forward progress.*
+  *Ghi nhớ: Confirmation Bias khiến các nhóm xã hội củng cố cực đoan quan điểm cá nhân, tạo ra tư duy nhóm (Groupthink) và chia rẽ chính trị.*
+
+- **Q: What is the impact of biased algorithms on decision-making? -> Key Answer: A. They can lead to unfair and discriminatory outcomes**
+  *Dịch: Tác động của các thuật toán bị thiên vị (Biased Algorithms) đối với quá trình ra quyết định là gì? -> Đáp án chính: A. They can lead to unfair and discriminatory outcomes*
+  *Ghi nhớ: Algorithmic Bias tái lập định kiến xã hội, tạo ra các quyết định lệch lạc gây bất công cho nhóm đối tượng bị thiên vị.*
+
+- **Q: Which technique helps improve algorithmic faimess? -> Key Answer: B. Bias testing and diverse training data**
+  *Dịch: Kỹ thuật nào giúp cải thiện tính công bằng của thuật toán (Algorithmic Fairness)? -> Đáp án chính: B. Bias testing and diverse training data*
+  *Ghi nhớ: Tính công bằng thuật toán đòi hỏi phát hiện rủi ro thiên vị qua kiểm thử (Bias Testing) và sử dụng tập dữ liệu đại diện đa dạng.*
+
+- **Q: Why is it important to categorize ethical risks into different types? (Select two) -> Key Answer: A. It makes it easier for us to identify and manage different types of risks & C. It helps us understand the many complexities involved in different types of ethical risks**
+  *Dịch: Tại sao việc phân loại rủi ro đạo đức thành các loại khác nhau lại quan trọng? (Chọn hai đáp án) -> Đáp án chính: A. It makes it easier for us to identify and manage different types of risks & C. It helps us understand the many complexities involved in different types of ethical risks*
+  *Ghi nhớ: Phân loại rủi ro hỗ trợ việc nhận diện, đánh giá và xây dựng phương án ứng phó phù hợp.*
+
+- **Q: Which of the following are potential training data inadequacies that you should communicate to your users in support of transparency? (Select two) -> Key Answer: B. Any known bias in the sample data & D. Any missing values in the dataset and how they were handled**
+  *Dịch: Những thiếu sót nào của dữ liệu huấn luyện mà bạn nên thông báo cho người dùng nhằm hỗ trợ tính minh bạch? (Select two) -> Đáp án chính: B. Any known bias in the sample data & D. Any missing values in the dataset and how they were handled*
+  *Ghi nhớ: Tính minh bạch trong AI đòi hỏi công khai các hạn chế của dữ liệu như thiên vị mẫu (Sampling Bias) và phương pháp xử lý dữ liệu khuyết thiếu.*
+
+- **Q: Which of the following tools is designed by Google for model inspection and bias analysis? -> Key Answer: A. What-If Tool**
+  *Dịch: Công cụ nào sau đây do Google thiết kế để kiểm tra mô hình và phân tích thiên vị tích hợp trên nền tảng AI? -> Đáp án chính: A. What-If Tool*
+  *Ghi nhớ: Google What-If Tool (WIT) là công cụ giao diện trực quan mở do Google phát triển giúp nhà phân tích kiểm thử các kịch bản giả định và phân tích tính công bằng của mô hình.*
+
+- **Q: Which of the following are challenges that can arise if you fail to communicate about the social impact of ethical risks? (Select two.) -> Key Answer: A. Disenfranchisement of vulnerable groups & B. Erosion of fundamental human rights**
+  *Dịch: Những thách thức xã hội nào sau đây có thể phát sinh nếu bạn không truyền thông về tác động xã hội của các rủi ro đạo đức? (Select two) -> Đáp án chính: A. Disenfranchisement of vulnerable groups & B. Erosion of fundamental human rights*
+  *Ghi nhớ: Không truyền thông rủi ro tác động xã hội gây ra các thảm họa nhân văn nghiêm trọng như tước đoạt quyền xã hội và xói mòn nhân quyền.*
+
+- **Q: An example of algorithmic bias resulting from historical representation in data is when: -> Key Answer: B. A model selects for one demographic less often because of their historical representation**
+  *Dịch: Ví dụ nào thể hiện thiên vị thuật toán phát sinh từ tỷ lệ đại diện lịch sử bị lệch trong dữ liệu? -> Đáp án chính: B. A model selects for one demographic less often because of their historical representation*
+  *Ghi nhớ: Historical Bias (Thiên vị lịch sử) xảy ra khi dữ liệu quá khứ chứa tỷ lệ đại diện thấp cho một nhóm xã hội, khiến thuật toán phân biệt lựa chọn nhóm đó ít hơn.*
+
+- **Q: Which of the following are important ethical elements to safeguard within ethical AI systems? (Select two.) -> Key Answer: A. Accountability and management of bias & B. Transparency and explainability, balanced with privacy**
+  *Dịch: Những yếu tố đạo đức quan trọng nào sau đây cần được bảo vệ trong các hệ thống AI có đạo đức? (Select two) -> Đáp án chính: A. Accountability and management of bias & B. Transparency and explainability, balanced with privacy*
+  *Ghi nhớ: Các trụ cột của AI có trách nhiệm (Trustworthy AI): 1. Accountability & Bias control, 2. Transparency & Explainability & Privacy protection.*
+
+- **Q: When your collected data doesn't accurately reflect the full environment, you're experiencing: -> Key Answer: D. Sample bias**
+  *Dịch: Khi dữ liệu bạn thu thập được không phản ánh chính xác và toàn diện môi trường thực tế, bạn đang gặp phải loại thiên vị nào? -> Đáp án chính: D. Sample bias*
+  *Ghi nhớ: Sample Bias (Thiên vị mẫu) xảy ra khi mẫu thu thập không đại diện đúng cho phân bố của tổng thể thực tế.*
+
+- **Q: A model that makes more mistakes by moving its decision threshold down 40% of its worthiness metric will be potentially: -> Key Answer: C. Fairer but less accurate**
+  *Dịch: Một mô hình mắc nhiều lỗi hơn bằng cách hạ ngưỡng quyết định (decision threshold) xuống 40% chỉ số giá trị sẽ có khả năng trở thành: -> Đáp án chính: C. Fairer but less accurate*
+  *Ghi nhớ: Sự đánh đổi trong ML (Trade-off between Accuracy and Fairness): Hạ ngưỡng quyết định có thể làm giảm sai lệch bất công giữa các nhóm (tăng Fairness) nhưng làm tăng tỷ lệ báo động giả (giảm Accuracy).*
+
+- **Q: Fairness in machine learning can protect groups from bias, but can still harm: -> Key Answer: D. Individuals within those groups**
+  *Dịch: Tính công bằng trong học máy có thể bảo vệ các nhóm khỏi thiên vị, nhưng vẫn có thể gây hại cho đối tượng nào? -> Đáp án chính: D. Individuals within those groups*
+  *Ghi nhớ: Group Fairness (Công bằng nhóm) đảm bảo tỷ lệ duyệt ngang nhau giữa các nhóm nhưng có thể bỏ qua yếu tố cá thể, gây bất công cho cá nhân cụ thể (Individual Fairness).*
+
+- **Q: Why do smart toys raise additional ethical concerns over those that are raised in the course of other products and services that use AI? -> Key Answer: D. Children are more susceptible to manipulation and therefore need extra protective measures.**
+  *Dịch: Tại sao đồ chơi thông minh (Smart Toys) lại gây ra các lo ngại về đạo đức bổ sung so với các sản phẩm/dịch vụ AI khác? -> Đáp án chính: D. Children are more susceptible to manipulation and therefore need extra protective measures.*
+  *Ghi nhớ: Trẻ em là nhóm đối tượng yếu thế (Vulnerable Population) chưa phát triển đầy đủ nhận thức, dễ bị thao túng tâm lý và thu thập dữ liệu trái phép bởi Smart Toys.*
+
+- **Q: Which type of fairness would make sense when dividing concert/event tickets evenly between different demographic groups? -> Key Answer: C. Statistical parity (Demographic parity)**
+  *Dịch: Loại tiêu chuẩn công bằng nào sẽ có ý nghĩa nhất khi phân chia vé tham dự sự kiện chia đều theo tỷ lệ đại diện của các nhóm nhân khẩu học khác nhau? -> Đáp án chính: C. Statistical parity (Demographic parity)*
+  *Ghi nhớ: Statistical Parity (Demographic Parity): Đảm bảo tỷ lệ lựa chọn / phân bổ tài nguyên đạt mức ngang nhau giữa các nhóm xã hội.*
+
+- **Q: A 'purposefully biased' algorithm used to identify unfair attributes in system decisions is an example of: -> Key Answer: A. Bias testing and algorithmic auditing**
+  *Dịch: Một thuật toán được 'cố ý thiết kế thiên vị' bởi các kiểm toán viên nhằm phát hiện các thuộc tính bất công trong quyết định hệ thống là ví dụ về: -> Đáp án chính: A. Bias testing and algorithmic auditing*
+  *Ghi nhớ: Stress-testing AI via Synthetic Bias: Cố ý đưa mẫu thiên vị vào kiểm thử để đánh giá mức độ chống chịu và phản ứng của mô hình kiểm toán.*
+
+- **Q: Which of the following describes the AI Fairness 360 (AIF360) project? -> Key Answer: A. An open source Python toolkit developed by IBM that evaluates models for bias and provides mitigation algorithms**
+  *Dịch: Nội dung nào sau đây mô tả dự án AI Fairness 360 (AIF360)? -> Đáp án chính: A. An open source Python toolkit developed by IBM that evaluates models for bias and provides mitigation algorithms*
+  *Ghi nhớ: AI Fairness 360 (IBM AIF360): Bộ công cụ mã nguồn mở kiểm thử và giảm thiểu thiên vị cho các mô hình học máy.*
+
+- **Q: Which of the following describe important aspects in the role of an ethical AI engineer? (Select two.) -> Key Answer: A. Cleaning data and auditing models for bias & D. Keeping up with the latest developments, ethical frameworks, and vulnerabilities**
+  *Dịch: Những khía cạnh nào sau đây mô tả đúng nhất vai trò của một Kỹ sư AI có trách nhiệm/đạo đức (Ethical AI Engineer)? (Select two) -> Đáp án chính: A. Cleaning data and auditing models for bias & D. Keeping up with the latest developments, ethical frameworks, and vulnerabilities*
+  *Ghi nhớ: Vai trò Kỹ sư AI Đạo đức: Kiểm toán thiên vị dữ liệu (Auditing bias) và Liên tục cập nhật các rủi ro lỗ hổng mới (Vulnerabilities & Ethics frameworks).*
+
+- **Q: Which of the following is NOT a common consideration when looking at the major AI ethical frameworks? -> Key Answer: D. Monetization and Profit Maximization**
+  *Dịch: Yếu tố nào sau đây KHÔNG PHẢI là một xem xét phổ biến trong các khung làm việc đạo đức AI chính yếu? -> Đáp án chính: D. Monetization and Profit Maximization*
+  *Ghi nhớ: Các trụ cột Khung Đạo đức AI: Privacy, Transparency, Accountability, Fairness, Security, Humanity. Tối đa lợi nhuận thương mại không nằm trong trụ cột đạo đức.*
+
+- **Q: In modern financial markets, what percentage of equity-futures and cash-equity trades are executed by automated algorithms? -> Key Answer: B. 80-90%**
+  *Dịch: Trong thị trường tài chính hiện đại, tỷ lệ phần trăm các giao dịch hợp đồng tương lai cổ phiếu và cổ phiếu tiền mặt được thực hiện tự động bởi thuật toán là bao nhiêu? -> Đáp án chính: B. 80-90%*
+  *Ghi nhớ: Algorithmic Trading Dominance: Khoảng 80-90% lượng giao dịch tài chính hiện đại được thực hiện tự động bởi các thuật toán High-Frequency Trading (HFT).*
+
+- **Q: Which of the following is one explanation for why cognitive biases exist in human reasoning? -> Key Answer: A. We use mental shortcuts (heuristics) to make decisions efficiently under information overload and limited time**
+  *Dịch: Giải thích nào sau đây mô tả lý do tại sao Định kiến nhận thức (Cognitive biases) tồn tại trong lập luận của con người? -> Đáp án chính: A. We use mental shortcuts (heuristics) to make decisions efficiently under information overload and limited time*
+  *Ghi nhớ: Heuristics & Cognitive Biases: Não bộ dùng các lối tắt nhận thức để xử lý nhanh lượng thông tin khổng lồ, vô tình gây ra các sai lệch định kiến.*
+
+- **Q: Dating algorithms become biased mostly through offering users: -> Key Answer: A. Collaborative filtering that reinforces existing attraction stereotypes**
+  *Dịch: Các thuật toán hẹn hò trở nên bị thiên vị chủ yếu thông qua việc cung cấp cho người dùng tính năng gì? -> Đáp án chính: A. Collaborative filtering that reinforces existing attraction stereotypes*
+  *Ghi nhớ: Lọc cộng tác (Collaborative Filtering) trong app hẹn hò gợi ý người dùng dựa trên hành vi của người dùng tương tự, vô tình tạo ra vòng lặp củng cố định kiến chủng tộc/ngoại hình.*
+
+- **Q: As a cognitive bias, when humans see a lack of context or meaning around a piece of information, they tend to: -> Key Answer: A. Fill in details using existing stereotypes or prior assumptions**
+  *Dịch: Dưới góc độ định kiến nhận thức, khi con người thấy sự thiếu hụt bối cảnh hoặc ý nghĩa xung quanh một mảnh thông tin, họ có xu hướng: -> Đáp án chính: A. Fill in details using existing stereotypes or prior assumptions*
+  *Ghi nhớ: Biến dạng nhận thức do thiếu bối cảnh (Filling in gaps): Trí não tự động suy đoán bổ sung phần thông tin thiếu bằng các định kiến xã hội vốn có.*
+
+- **Q: A goal of a fair model's accuracy standards is to: -> Key Answer: A. Minimize the error rate as long as parity is obtained**
+  *Dịch: Mục tiêu về tiêu chuẩn độ chính xác của một mô hình công bằng là gì? -> Đáp án chính: A. Minimize the error rate as long as parity is obtained*
+  *Ghi nhớ: Fairness-Constrained Accuracy Optimization: Đạt được độ chính xác tối đa (lỗi thấp nhất) trong phạm vi ràng buộc công bằng giữa các nhóm.*
+
+- **Q: Which of the following is a best practice for incorporating diversity, equity, and inclusion (DEI) into organizational media communications? -> Key Answer: A. Promote an authentic organizational culture that embraces DEI values throughout the organization**
+  *Dịch: Thực hành tốt nhất để tích hợp tính đa dạng, bình đẳng và bao hàm (DEI) vào truyền thông doanh nghiệp là gì? -> Đáp án chính: A. Promote an authentic organizational culture that embraces DEI values throughout the organization*
+  *Ghi nhớ: Authentic DEI Communication: Bắt nguồn từ văn hóa tổ chức thực chất.*
+
+- **Q: Which type of bias causes people to uncritically trust and rely on an automated decision-making system? -> Key Answer: B. Automation bias**
+  *Dịch: Loại định kiến nào khiến con người tin tưởng và phụ thuộc một cách thiếu phản biện vào một hệ thống ra quyết định tự động? -> Đáp án chính: B. Automation bias*
+  *Ghi nhớ: Automation Bias: Xu hướng tâm lý con người nhắm mắt tin tưởng tuyệt đối vào đề xuất tự động của máy tính.*
+
+- **Q: What tools do researchers have to evaluate the fairness of existing black box models? -> Key Answer: A. Systematically change input perturbations and evaluate output decisions (Audit by testing inputs/outputs)**
+  *Dịch: Chiến lược chính nào được các nhà nghiên cứu sử dụng để đánh giá tính công bằng của một mô hình Hộp đen đã triển khai? -> Đáp án chính: A. Systematically change input perturbations and evaluate output decisions (Audit by testing inputs/outputs)*
+  *Ghi nhớ: Black-box Audit Technique.*
+
+- **Q: Fairness in AI is best defined as just and equal treatment without: -> Key Answer: D. Favoritism or discrimination based on protected attributes**
+  *Dịch: Tính công bằng (Fairness) trong AI được định nghĩa đúng nhất là sự đối xử công minh mà không có: -> Đáp án chính: D. Favoritism or discrimination based on protected attributes*
+  *Ghi nhớ: AI Fairness Definition: Ngăn ngừa sự thiên vị (Favoritism) và phân biệt đối xử (Discrimination) đối với các nhóm dân số.*
+
+- **Q: In auditing and fixing word embedding models like Word2Vec for bias, we have an advantage over traditional black box models because: -> Key Answer: C. We have direct access to the training data and vector space representations**
+  *Dịch: Khi kiểm toán và khắc phục thiên vị trong mô hình nhúng từ như Word2Vec, chúng ta có lợi thế gì so với mô hình hộp đen truyền thống? -> Đáp án chính: C. We have direct access to the training data and vector space representations*
+  *Ghi nhớ: Word2Vec Auditing: Có thể đo lường trực tiếp khoảng cách đại số vectơ (Vector distance) giữa các từ (như Man - Doctor vs Woman - Nurse) trong tập dữ liệu huấn luyện mở.*
+
+- **Q: Which of the following is the most important ethical consideration regarding deepfake technology? -> Key Answer: B. They usurp a person's likeness, identity, and voice, which can then be weaponized against them without consent**
+  *Dịch: Xem xét đạo đức quan trọng nhất liên quan đến công nghệ Deepfake là gì? -> Đáp án chính: B. They usurp a person's likeness, identity, and voice, which can then be weaponized against them without consent*
+  *Ghi nhớ: Deepfake Ethical Risks: Xâm phạm nghiêm trọng danh tính và hình ảnh cá nhân.*
+
+- **Q: Which of the following are actionable strategies that can help individuals combat their own implicit bias? (Select three.) -> Key Answer: B. Cultivating active self-awareness of your own personal biases & C. Interacting with diverse groups of people from different backgrounds & D. Exposing yourself to counter-stereotypical examples and stories**
+  *Dịch: Những hành động/chiến lược nào giúp cá nhân chủ động chống lại định kiến ẩn tàng (Implicit bias) của chính mình? (Select three) -> Đáp án chính: B. Cultivating active self-awareness of your own personal biases & C. Interacting with diverse groups of people from different backgrounds & D. Exposing yourself to counter-stereotypical examples and stories*
+  *Ghi nhớ: Combating Implicit Bias: Tự nhận thức (Self-awareness), Tương tác đa dạng (Diverse interaction) và Tiếp xúc hình mẫu phản định kiến (Counter-stereotypical exposure).*
+
+- **Q: Our goals for building an ethical predictive model include making sure the results are: -> Key Answer: D. Accurate, fair, and explainable**
+  *Dịch: Mục tiêu khi xây dựng một mô hình dự đoán có đạo đức bao gồm việc đảm bảo kết quả đạt 3 tiêu chí nào? -> Đáp án chính: D. Accurate, fair, and explainable*
+  *Ghi nhớ: Trụ cột AI Đạo đức: Accuracy + Fairness + Explainability.*
+
+- **Q: An auditing model used to adjust model predictions or decision thresholds after training is an example of a: -> Key Answer: C. Post-processing bias mitigation method**
+  *Dịch: Một mô hình kiểm toán được sử dụng để điều chỉnh dự đoán hoặc ngưỡng ra quyết định sau khi mô hình đã huấn luyện xong là ví dụ về phương pháp giảm thiểu thiên vị nào? -> Đáp án chính: C. Post-processing bias mitigation method*
+  *Ghi nhớ: Bias Mitigation Stages: Pre-processing (Can thiệp dữ liệu), In-processing (Can thiệp thuật toán/hàm lỗi), Post-processing (Can thiệp kết quả đầu ra sau huấn luyện).*
+
+- **Q: Which of the following would be the most beneficial stage to hold ethical risk reviews for a new project? -> Key Answer: D. Conception / Initial Ideation stage**
+  *Dịch: Giai đoạn nào sau đây sẽ là thời điểm có lợi nhất để tổ chức các buổi đánh giá rủi ro đạo đức cho một dự án mới? -> Đáp án chính: D. Conception / Initial Ideation stage*
+  *Ghi nhớ: Left-shifting Ethics (Phòng ngừa sớm từ khâu Ý tưởng): Đánh giá rủi ro ngay từ giai đoạn Conception giúp triệt hạ nguy cơ đạo đức trước khi tốn chi phí thiết kế và lập trình.*
+
+- **Q: Which of the following types of bias emerges when the same data collection process is applied across different cultural groups? -> Key Answer: B. Measurement bias**
+  *Dịch: Loại thiên vị nào xuất hiện khi cùng một quy trình thu thập dữ liệu được áp dụng rập khuôn cho các nhóm văn hóa khác nhau? -> Đáp án chính: B. Measurement bias*
+  *Ghi nhớ: Measurement Bias xảy ra khi công cụ hay thang đo dữ liệu không tương thích hoặc bị lệch khi áp dụng cho các bối cảnh văn hóa khác nhau.*
+
+- **Q: Why is it important to take a proactive approach to addressing ethical risks? -> Key Answer: A. It prevents harm before it occurs and reduces costly post-incident remediation**
+  *Dịch: Tại sao việc chủ động (Proactive approach) tiếp cận và xử lý các rủi ro đạo đức lại cực kỳ quan trọng? -> Đáp án chính: A. It prevents harm before it occurs and reduces costly post-incident remediation*
+  *Ghi nhớ: Tiếp cận chủ động (Proactive Risk Management): Nhận diện và phòng ngừa rủi ro ngay từ đầu giúp bảo vệ uy tín và tiết kiệm chi phí khắc phục khủng hoảng.*
+
+- **Q: Predictive loops in marketplace models like dating apps are especially susceptible to bias due to: -> Key Answer: D. Short feedback cycles that reinforce initial bias rapidly**
+  *Dịch: Các vòng lặp dự đoán trong các mô hình thị trường như ứng dụng hẹn hò đặc biệt dễ bị ảnh hưởng bởi thiên vị do: -> Đáp án chính: D. Short feedback cycles that reinforce initial bias rapidly*
+  *Ghi nhớ: Short Feedback Loops: Dữ liệu hành vi người dùng (quẹt trái/phải) lập tức quay lại huấn luyện mô hình, tạo ra vòng lặp khuếch đại định kiến cực nhanh.*
+
+- **Q: A 'purposefully biased' algorithm used by auditors to identify unfair attributes in system decisions is an example of: -> Key Answer: A. Bias testing and algorithmic auditing**
+  *Dịch: Một thuật toán được 'cố ý thiết kế thiên vị' bởi các kiểm toán viên nhằm phát hiện các thuộc tính bất công trong quyết định hệ thống là ví dụ về: -> Đáp án chính: A. Bias testing and algorithmic auditing*
+  *Ghi nhớ: Stress-testing AI via Synthetic Bias: Cố ý đưa mẫu thiên vị vào kiểm thử để đánh giá mức độ chống chịu và phản ứng của mô hình kiểm toán.*
+
+- **Q: Fairness in machine learning is best defined as: -> Key Answer: A. Just treatment without prejudice or favorism across protected groups**
+  *Dịch: Tính công bằng (Fairness) trong học máy được định nghĩa chuẩn xác nhất là gì? -> Đáp án chính: A. Just treatment without prejudice or favorism across protected groups*
+  *Ghi nhớ: Định nghĩa Fairness: Đảm bảo mô hình AI đưa ra quyết định không bị ảnh hưởng tiêu cực bởi các thuộc tính nhạy cảm được bảo vệ (giới tính, chủng tộc, tuổi tác).*
+
+- **Q: Which of the following is an example of proxy data causing unintentional discrimination? -> Key Answer: B. Using zip code as a feature, which correlates with race**
+  *Dịch: Ví dụ nào sau đây thể hiện việc sử dụng dữ liệu thay thế (Proxy data) gây ra phân biệt đối xử vô tình? -> Đáp án chính: B. Using zip code as a feature, which correlates with race*
+  *Ghi nhớ: Proxy Attributes (Thuộc tính thay thế) là các thuộc tính tưởng như trung lập (mã zip, trường học) nhưng lại phản ánh lại thuộc tính nhạy cảm bị cấm.*
+
+- **Q: Which of the following is a best practice for incorporating diversity, equity, and inclusiveness in communication? -> Key Answer: A. Promote an organizational culture that embraces these values**
+  *Dịch: Thực hành tốt nhất nào để tích hợp tính đa dạng, bình đẳng và bao hàm (DEI) vào hoạt động truyền thông? -> Đáp án chính: A. Promote an organizational culture that embraces these values*
+  *Ghi nhớ: DEI trong truyền thông phải xuất phát từ Văn hóa tổ chức nội bộ (Organizational Culture) thực chất chứ không phải khẩu hiệu tiếp thị rỗng tuếch.*
+
+- **Q: If we know one group's worthiness score has been artificially inflated, one solution for fairness is to: -> Key Answer: A. Create separate decision thresholds for each group to equalize opportunity**
+  *Dịch: Nếu biết điểm số giá trị của một nhóm đã bị thổi vồng nhân tạo trong lịch sử, một giải pháp để đảm bảo tính công bằng là gì? -> Đáp án chính: A. Create separate decision thresholds for each group to equalize opportunity*
+  *Ghi nhớ: Group-specific Decision Thresholds: Điều chỉnh ngưỡng quyết định riêng cho từng nhóm để bù đắp sự lệch điểm lịch sử và đạt được Equal Opportunity.*
+
+- **Q: Which of the following elements should be documented regarding dataset quality before model training? -> Key Answer: B. Any known bias in sample data and missing values handling**
+  *Dịch: Yếu tố nào sau đây nên được ghi chép tài liệu về chất lượng tập dữ liệu trước khi huấn luyện mô hình? -> Đáp án chính: B. Any known bias in sample data and missing values handling*
+  *Ghi nhớ: Dataset Documentation & Datasheets for Datasets: Ghi nhận công khai các thiên vị mẫu (Sample bias) và phương pháp xử lý dữ liệu thiếu để phục vụ kiểm toán.*
+
+- **Q: A training set modified to remove biased historical attributes and ensure equal representation is known as a: -> Key Answer: B. Optimized / Balanced training set**
+  *Dịch: Tập dữ liệu huấn luyện được can thiệp sửa đổi để loại bỏ các thuộc tính thiên vị lịch sử và đảm bảo đại diện bình đẳng được gọi là gì? -> Đáp án chính: B. Optimized / Balanced training set*
+  *Ghi nhớ: Data Pre-processing for Fairness: Kỹ thuật Resampling/Re-weighting để tạo ra Tập huấn luyện cân bằng (Balanced/Optimized Training Set).*
+
+- **Q: Why are demographic attributes like race, gender, and religion classified as sensitive attributes? -> Key Answer: D. These groups have historically been used as the basis for systemic discrimination and bias**
+  *Dịch: Tại sao các thuộc tính nhân khẩu học như chủng tộc, giới tính và tôn giáo lại được xếp vào nhóm thuộc tính nhạy cảm (Sensitive attributes)? -> Đáp án chính: D. These groups have historically been used as the basis for systemic discrimination and bias*
+  *Ghi nhớ: Sensitive Attributes in AI Ethics: Thuộc tính nhạy cảm có lịch sử bị kỳ thị/bất công nên cần kiểm toán bảo vệ đặc biệt.*
+
+- **Q: You want to solicit detailed, qualitative user feedback on ethical concerns. Which UI element is best suited for this? -> Key Answer: D. Provide a large, unrestricted open text box where users can enter their thoughts at length**
+  *Dịch: Bạn muốn thu thập phản hồi định tính chi tiết từ người dùng về các mối quan ngại đạo đức. Thành phần giao diện nào phù hợp nhất cho mục đích này? -> Đáp án chính: D. Provide a large, unrestricted open text box where users can enter their thoughts at length*
+  *Ghi nhớ: Qualitative Feedback Collection UI: Hộp văn bản tự do (Open Textbox) cho phép người dùng bộc lộ suy nghĩ góc nhìn không bị giới hạn bởi đáp án đóng.*
+
+- **Q: Which of the following is an example of selection bias in data collection? -> Key Answer: D. Relying strictly on scraped Twitter data over representative survey data for general population sentiment**
+  *Dịch: Ví dụ nào sau đây thể hiện Thiên vị lựa chọn mẫu (Selection bias) trong thu thập dữ liệu? -> Đáp án chính: D. Relying strictly on scraped Twitter data over representative survey data for general population sentiment*
+  *Ghi nhớ: Selection Bias: Chọn nguồn dữ liệu mẫu (như Twitter) vốn lệch về giới trẻ/đô thị làm đại diện cho toàn bộ dân số đa dạng.*
+
+- **Q: Why is it important to categorize ethical risks into specific domains? -> Key Answer: A. It makes it easier for us to identify, analyze, and manage different types of risks effectively**
+  *Dịch: Tại sao việc phân loại các rủi ro đạo đức thành các danh mục miền cụ thể lại quan trọng? -> Đáp án chính: A. It makes it easier for us to identify, analyze, and manage different types of risks effectively*
+  *Ghi nhớ: Categorization in Risk Management: Phân loại rủi ro giúp áp dụng đúng công cụ và quy trình giảm thiểu cho từng miền.*
+
+- **Q: Our primary goals for building ethical AI models are ensuring they are: -> Key Answer: D. Accurate, fair, and explainable**
+  *Dịch: Mục tiêu chính khi xây dựng các mô hình AI có đạo đức là đảm bảo chúng đạt được 3 tiêu chuẩn nào? -> Đáp án chính: D. Accurate, fair, and explainable*
+  *Ghi nhớ: Trụ cột AI Đạo đức: Accuracy (Chính xác), Fairness (Công bằng) và Explainability (Giải thích được).*
+
+- **Q: What primary strategy do researchers use to evaluate the fairness of an existing black box model? -> Key Answer: A. Systematically change input data perturbations and evaluate the resulting output decisions (Audit by testing inputs/outputs)**
+  *Dịch: Chiến lược chính nào được các nhà nghiên cứu sử dụng để đánh giá tính công bằng của một mô hình Hộp đen đã triển khai? -> Đáp án chính: A. Systematically change input data perturbations and evaluate the resulting output decisions (Audit by testing inputs/outputs)*
+  *Ghi nhớ: Black-box Audit Technique: Kiểm thử tạo nhiễu biến số đầu vào (Input Perturbation) và quan sát sự thay đổi đầu ra (Output Observation) mà không cần truy cập mã nguồn.*
+
+- **Q: Which of the following is a critical element when designing a public awareness campaign about ethical risks? -> Key Answer: D. The specific ethical risks that will be communicated clearly to the audience**
+  *Dịch: Yếu tố quan trọng hàng đầu khi thiết kế một chiến dịch nâng cao nhận thức cộng đồng về các rủi ro đạo đức là gì? -> Đáp án chính: D. The specific ethical risks that will be communicated clearly to the audience*
+  *Ghi nhớ: Trọng tâm Truyền thông Nhận thức: Xác định và truyền tải minh bạch các nguy cơ rủi ro đạo đức cụ thể để công hướng tới sự chuẩn bị.*
+
+- **Q: A model can still exhibit bias even if a protected attribute is removed from dataset. This phenomenon occurs when: -> Key Answer: B. Proxy attributes (blind attributes) correlate with protected characteristics**
+  *Dịch: Một mô hình vẫn có thể thể hiện sự thiên vị ngay cả khi thuộc tính được bảo vệ (giới tính, chủng tộc) đã bị loại bỏ khỏi tập dữ liệu. Hiện tượng này xảy ra do: -> Đáp án chính: B. Proxy attributes (blind attributes) correlate with protected characteristics*
+  *Ghi nhớ: Thuộc tính Thay thế (Proxy Attributes / Redlining): Ngay cả khi xóa cột chủng tộc, mã bưu điện (Zip code) vẫn đóng vai trò biến thay thế phản ánh sự phân bố chủng tộc.*
+
+- **Q: Which of the following are primary pillars of ethical AI frameworks? -> Key Answer: A. Transparency and explainability & D. Fairness and non-discrimination**
+  *Dịch: Những nội dung nào sau đây là các trụ cột chính trong các khung đạo đức AI? (Select primary pillars) -> Đáp án chính: A. Transparency and explainability & D. Fairness and non-discrimination*
+  *Ghi nhớ: Trụ cột Đạo đức AI chuẩn quốc tế: Transparency (Minh bạch), Explainability (Giải thích được) và Fairness (Công bằng).*
+
+- **Q: One way to counter automation bias in decision-making systems is by: -> Key Answer: B. Improving model transparency, explainability, and training humans to critically question automated recommendations**
+  *Dịch: Một cách để chống lại Định kiến tự động hóa (Automation bias) trong các hệ thống ra quyết định là gì? -> Đáp án chính: B. Improving model transparency, explainability, and training humans to critically question automated recommendations*
+  *Ghi nhớ: Chống Automation Bias: Nâng cao tính giải thích được của mô hình và rèn luyện tư duy phản biện cho con người giám sát (Human-in-the-loop).*
+
+- **Q: Which cognitive bias describes the tendency to search for, interpret, favor, and recall information in a way that confirms one's prior beliefs? -> Key Answer: A. Confirmation bias**
+  *Dịch: Định kiến nhận thức nào mô tả xu hướng tìm kiếm, giải thích, ưu ái và ghi nhớ thông tin theo cách củng cố các niềm tin sẵn có của một người? -> Đáp án chính: A. Confirmation bias*
+  *Ghi nhớ: Confirmation Bias (Định kiến xác nhận): Xu hướng tâm lý chỉ thích tiếp nhận các thông tin phù hợp với quan điểm có sẵn của bản thân.*
 
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (106 câu)
 
@@ -1827,15 +2254,346 @@ choose to**
 ## MOD-02: Machine Learning Models, Training Data & Probability
 ### Mô hình Máy học, Dữ liệu Huấn luyện & Xác suất
 
-#### Core Theory & Key Concepts / Lý Thuyết Cốt Lõi
-- **Training Data Inadequacies must be communicated transparently to users so they understand the limitations and boundaries of predictive models.**
+#### Core Theory & Exhaustive Knowledge Points / Lý Thuyết Cốt Lõi & Tổng Hợp Kiến Thức Ôn Thi
+- **[CORE RULE] Training Data Inadequacies must be communicated transparently to users so they understand the limitations and boundaries of predictive models.**
   *Dịch: Sự thiếu hụt hoặc hạn chế của dữ liệu huấn luyện phải được truyền thông minh bạch tới người dùng để họ hiểu rõ giới hạn của mô hình dự đoán.*
 
-- **Probability in AI and data-driven systems is used to model uncertainty and calculate the likelihood of specific outcomes.**
+- **[CORE RULE] Probability in AI and data-driven systems is used to model uncertainty and calculate the likelihood of specific outcomes.**
   *Dịch: Xác suất trong AI và các hệ thống dựa trên dữ liệu được sử dụng để mô hình hóa tính không chắc chắn và tính toán khả năng xảy ra của các kết quả cụ thể.*
 
-- **Predictive models must not change their core insights arbitrarily when excluded training data points are legitimately re-introduced.**
+- **[CORE RULE] Predictive models must not change their core insights arbitrarily when excluded training data points are legitimately re-introduced.**
   *Dịch: Các mô hình dự đoán không được thay đổi các góc nhìn cốt lõi một cách tùy tiện khi các điểm dữ liệu bị loại trừ trước đó được đưa trở lại tập huấn luyện một cách hợp lệ.*
+
+- **Q: What can be learned from a predictive model should not change if the excluded in the training set is either included or -> Key Answer: D. individual's data**
+  *Dịch: Những gì học được từ một mô hình dự đoán không nên thay đổi bất kể dữ liệu của một cá nhân (individual's data) bị loại trừ khỏi tập huấn luyện có được đưa vào hay không. -> Đáp án chính: D. individual's data*
+  *Ghi nhớ: Differential Privacy (Tính riêng tư vi sai): Nguyên tắc đảm bảo rằng sự xuất hiện hay vắng mặt của dữ liệu thuộc về một cá nhân bất kỳ không làm thay đổi đáng kể đầu ra của mô hình.*
+
+- **Q: How do Al and other data-driven technologies use probability? -> Key Answer: C. By providing a model of belief about the likelihood of some event happening**
+  *Dịch: AI và các công nghệ dựa trên dữ liệu sử dụng xác suất như thế nào? -> Đáp án chính: C. By providing a model of belief about the likelihood of some event happening*
+  *Ghi nhớ: Probabilistic Modeling (Mô hình hóa xác suất trong AI): AI tính toán xác suất dựa trên bằng chứng dữ liệu lịch sử để cập nhật mức độ tin tưởng (model of belief / Bayesian probability) về khả năng xảy ra của sự kiện.*
+
+- **Q: Our goals for building an ethical predictive model include making sure the results are -> Key Answer: D. accurate, fair and explainable**
+  *Dịch: Mục tiêu của chúng ta khi xây dựng một mô hình dự đoán đạo đức bao gồm đảm bảo các kết quả phải: -> Đáp án chính: D. accurate, fair and explainable*
+  *Ghi nhớ: Ethical Predictive Model Criteria: Một mô hình AI đạo đức cần đạt 3 trụ cột: Đúng đắn (Accurate), Không thiên vị (Fair) và Dễ diễn giải (Explainable).*
+
+- **Q: The Netflix prize privacy scandal is an example of reidentification through -> Key Answer: C. multiple datasets**
+  *Dịch: Bê bối quyền riêng tư của giải thưởng Netflix (Netflix Prize) là một ví dụ về việc tái định danh (reidentification) thông qua: -> Đáp án chính: C. multiple datasets*
+  *Ghi nhớ: Netflix Re-identification Attack: Các nhà nghiên cứu kết hợp tập dữ liệu ẩn danh của Netflix với tập dữ liệu công khai trên IMDb để tái định danh người dùng.*
+
+- **Q: A dataset attribute that is not identifiable but constitutes data about the individual that needs to be protected is known as a
+A explicitly private column -> Key Answer: D. sensitive column**
+  *Dịch: Một thuộc tính trong tập dữ liệu không trực tiếp định danh nhưng chứa thông tin về cá nhân cần được bảo vệ được gọi là: -> Đáp án chính: D. sensitive column*
+  *Ghi nhớ: Sensitive Attribute vs Quasi-identifier: Quasi-identifier (tuổi, giới tính, mã bưu điện) có thể kết hợp để định danh; Sensitive column chứa thông tin nhạy cảm (bệnh lý, thu nhập) cần bảo mật.*
+
+- **Q: To measure a predictive model's accuracy, you -> Key Answer: D. divide the number of correct predictions by the total number of predictions**
+  *Dịch: Để đo lường độ chính xác (accuracy) của một mô hình dự đoán, bạn thực hiện phép tính nào? -> Đáp án chính: D. divide the number of correct predictions by the total number of predictions*
+  *Ghi nhớ: Accuracy Metric in Machine Learning: Chỉ số đo lường tỷ lệ phần trăm các dự đoán chính xác của mô hình trên tổng số mẫu dự báo.*
+
+- **Q: How are predictive models used in hedge funds? -> Key Answer: B. they predict future movement of stocks and find points to exploit the market moving in either direction**
+  *Dịch: Các mô hình dự đoán được sử dụng như thế nào trong các quỹ phòng hộ (hedge funds)? -> Đáp án chính: B. they predict future movement of stocks and find points to exploit the market moving in either direction*
+  *Ghi nhớ: Predictive Models in Quantitative Finance: Ứng dụng các thuật toán máy học để phân tích dữ liệu thị trường và thực hiện giao dịch tự động kiếm lời.*
+
+- **Q: Once a dataset has been cleaned, which accuracy guideline ensures your model is looking at the problem correctly? -> Key Answer: B. Domain expertise**
+  *Dịch: Khi tập dữ liệu đã được làm sạch, hướng dẫn độ chính xác nào đảm bảo mô hình của bạn nhìn nhận bài toán một cách đúng đắn? -> Đáp án chính: B. Domain expertise*
+  *Ghi nhớ: Domain Expertise in ML: Chuyên gia chuyên ngành (Domain experts) đảm bảo các tính năng và logic của mô hình đúng thực tế nghiệp vụ.*
+
+- **Q: In reverse-engineering a double coin flip differential model, what would be the amount of truthful "yes/no" responses in our dataset? -> Key Answer: B. 25%**
+  *Dịch: Trong kỹ thuật dịch ngược mô hình bảo mật vi phân tung hai đồng xu (double coin flip), tỷ lệ câu trả lời "có/không" trung thực thực tế được tạo ra là bao nhiêu? -> Đáp án chính: B. 25%*
+  *Ghi nhớ: Double Coin Flip Privacy Model: Kỹ thuật phản hồi ngẫu nhiên (randomized response) bảo vệ riêng tư bằng cách tung hai đồng xu để quyết định mức độ trung thực của câu trả lời.*
+
+- **Q: During cross-validation, which of the following dataset splits is used to tune the performance of a model? -> Key Answer: C. Validation test**
+  *Dịch: Trong quá trình kiểm định chéo (cross-validation), phân tách tập dữ liệu nào sau đây được sử dụng để tinh chỉnh hiệu năng của mô hình? -> Đáp án chính: C. Validation test*
+  *Ghi nhớ: Validation Set in ML: Tập dữ liệu trung gian dùng để đánh giá hiệu năng mô hình trong quá trình huấn luyện và tinh chỉnh các siêu tham số (hyperparameters).*
+
+- **Q: Which of the following is a recommended security practice for machine learning datasets? -> Key Answer: B. Enact a sound data governance structure**
+  *Dịch: Biện pháp bảo mật nào sau đây được khuyến nghị cho các tập dữ liệu máy học (ML datasets)? -> Đáp án chính: B. Enact a sound data governance structure*
+  *Ghi nhớ: Data Governance for Machine Learning: Quản trị dữ liệu chặt chẽ là nền tảng để bảo vệ an toàn cho tập dữ liệu huấn luyện ML khỏi các nguy cơ tấn công hoặc rò rỉ.*
+
+- **Q: Differential privacy works by adding what to a dataset? -> Key Answer: C. noise**
+  *Dịch: Tính riêng tư vi sai (Differential privacy) hoạt động bằng cách thêm yếu tố nào vào tập dữ liệu? -> Đáp án chính: C. noise*
+  *Ghi nhớ: Differential Privacy & Noise: Thêm nhiễu ngẫu nhiên (random noise) vào kết quả truy vấn để triệt tiêu khả năng xác định cá nhân.*
+
+- **Q: A hospital dataset protects whether an individual has had either a stroke, heart attack, or staph infection. The individual may still be harmed via dataset -> Key Answer: A. group inclusion**
+  *Dịch: Tập dữ liệu bệnh viện bảo vệ thông tin cá nhân bị mắc đột quỵ, đau tim hay nhiễm trùng. Cá nhân vẫn có thể bị tổn hại thông qua: -> Đáp án chính: A. group inclusion*
+  *Ghi nhớ: Group Privacy Harm: Dù dữ liệu cá nhân được ẩn danh, việc gán cá nhân vào một nhóm có tỷ lệ mắc bệnh cao có thể dẫn đến việc cá nhân đó bị tăng phí bảo hiểm hoặc bị phân biệt đối xử.*
+
+- **Q: A predictive model's true positive result can be defined as -> Key Answer: C. the predicted result was positive, and the actual result was positive**
+  *Dịch: Kết quả Dương tính thật (True Positive) của mô hình dự đoán được định nghĩa là: -> Đáp án chính: C. the predicted result was positive, and the actual result was positive*
+  *Ghi nhớ: Confusion Matrix - True Positive: Dự đoán = Positive, Thực tế = Positive.*
+
+- **Q: When building a predictive model, what is the goal of the deployment phase? -> Key Answer: B. To use the model in real-life predictions, monitoring the error rate and accuracy**
+  *Dịch: Khi xây dựng mô hình dự đoán, mục tiêu của giai đoạn triển khai (deployment phase) là gì? -> Đáp án chính: B. To use the model in real-life predictions, monitoring the error rate and accuracy*
+  *Ghi nhớ: ML Model Deployment Phase: Đưa mô hình vào môi trường production để dự đoán thực tế và liên tục theo dõi (monitor) hiệu năng.*
+
+- **Q: Which of the following metrics is used to evaluate a linear regression machine learning model? -> Key Answer: C. Cost function**
+  *Dịch: Chỉ số nào sau đây được sử dụng để đánh giá mô hình học máy hồi quy tuyến tính? -> Đáp án chính: C. Cost function*
+  *Ghi nhớ: Cost Function in Linear Regression: Hàm chi phí (như MSE) đo lường mức độ sai lệch dự đoán hồi quy.*
+
+- **Q: When building a predictive model, what is the goal of the training phase? -> Key Answer: B. To adjust the model based on a subset of data, optimizing for a lower error rate**
+  *Dịch: Mục tiêu của giai đoạn kiểm thử/tối ưu hóa (tuning phase) khi xây dựng mô hình dự đoán là gì? -> Đáp án chính: B. To adjust the model based on a subset of data, optimizing for a lower error rate*
+  *Ghi nhớ: Model Tuning Phase: Điều chỉnh tham số (hyperparameters) trên tập validation để hạ thấp error rate.*
+
+- **Q: K-anonymity in a dataset is achieved when each individual cannot be -> Key Answer: A. distinguished from at least K individuals who are also in the dataset**
+  *Dịch: Độ ẩn danh K (K-anonymity) trong một tập dữ liệu đạt được khi mỗi cá nhân không thể: -> Đáp án chính: A. distinguished from at least K individuals who are also in the dataset*
+  *Ghi nhớ: K-Anonymity Definition: Kỹ thuật bảo vệ quyền riêng tư đảm bảo thông tin của mỗi cá nhân giống hệt với ít nhất K-1 cá nhân khác trong cùng tập dữ liệu.*
+
+- **Q: How do anonymized datasets fall short of their goal of being anonymous? -> Key Answer: D. Anonymized datasets can be combined with other datasets, which can re-identify individuals**
+  *Dịch: Tại sao các tập dữ liệu được ẩn danh hóa vẫn không đạt được mục tiêu ẩn danh tuyệt đối? -> Đáp án chính: D. Anonymized datasets can be combined with other datasets, which can re-identify individuals*
+  *Ghi nhớ: Re-Identification Risk via Data Linkage: Tái định danh khi kết hợp với tập dữ liệu công khai bên ngoài (như vụ bê bối Netflix Prize).*
+
+- **Q: When building a predictive model, what is the goal of the develop phase? -> Key Answer: C. To specify the type of algorithm the model should use and make sure the data is cleaned/formatted**
+  *Dịch: Khi xây dựng mô hình dự đoán, mục tiêu của giai đoạn phát triển (develop phase) là gì? -> Đáp án chính: C. To specify the type of algorithm the model should use and make sure the data is cleaned/formatted*
+  *Ghi nhớ: Model Development Phase: Lựa chọn thuật toán (Algorithm selection) và Chuẩn hóa/làm sạch dữ liệu (Data cleaning & formatting).*
+
+- **Q: How is a Machine Learning (ML) system different from Deep Learning (DL) system? -> Key Answer: C. A ML system needs a human to provide the feature extraction**
+  *Dịch: Hệ thống Học máy (Machine Learning) khác với hệ thống Học sâu (Deep Learning) ở điểm nào? -> Đáp án chính: C. A ML system needs a human to provide the feature extraction*
+  *Ghi nhớ: Feature Extraction in ML vs DL: Học máy truyền thống yêu cầu con người chọn lọc đặc trưng thủ công, còn học sâu tự động trích xuất đặc trưng qua các lớp ẩn.*
+
+- **Q: Which of the following is a good example of a feedback loop in machine learning? -> Key Answer: C. A social media site tracks engagement, uses an algorithm to surface posts you're likely to engage with, which then goes back into the algorithm**
+  *Dịch: Ví dụ tốt về vòng lặp phản hồi (feedback loop) trong học máy là gì? -> Đáp án chính: C. A social media site tracks engagement, uses an algorithm to surface posts you're likely to engage with, which then goes back into the algorithm*
+  *Ghi nhớ: Feedback Loop in ML: Đầu ra của thuật toán tác động đến hành vi người dùng, và hành vi đó quay lại làm dữ liệu đầu vào huấn luyện cho thuật toán (Self-reinforcing loop).*
+
+- **Q: What can be learned from a predictive model should not change if the is either included or
+excluded in the training set -> Key Answer: D. individual's data**
+  *Dịch: Những gì học được từ mô hình dự đoán không nên thay đổi bất kể dữ liệu nào của cá nhân bị loại trừ hay đưa vào? -> Đáp án chính: D. individual's data*
+  *Ghi nhớ: Differential Privacy Individual Data Impact.*
+
+- **Q: A major downside to k-anonymity is that re-identification is possible with -> Key Answer: A. multiple datasets**
+  *Dịch: Nhược điểm lớn của k-anonymity là việc tái định danh vẫn có thể thực hiện được thông qua: -> Đáp án chính: A. multiple datasets*
+  *Ghi nhớ: k-Anonymity Vulnerability: Dù đạt k-anonymity, khi ghép với tập dữ liệu bên ngoài (multiple datasets), nguy cơ tái định danh vẫn xảy ra.*
+
+- **Q: A good example of empirical reflection in training data is -> Key Answer: D. an image recognition model cannot tell a difference between a photo of a dog and a photo of a photo of a dog**
+  *Dịch: Một ví dụ tốt về sự phản ánh thực nghiệm (empirical reflection) trong dữ liệu huấn luyện là: -> Đáp án chính: D. an image recognition model cannot tell a difference between a photo of a dog and a photo of a photo of a dog*
+  *Ghi nhớ: Empirical Reflection in Training Data: Phản ánh giới hạn dữ liệu thực nghiệm thực tế - mô hình chỉ nhìn các pixel nhận diện chứ không có khái niệm thực thể thực tế.*
+
+- **Q: Model inputs of address with "City + State" as separate inputs from a dataset would violate which accuracy guideline? -> Key Answer: B. No correlating data**
+  *Dịch: Nếu đầu vào của mô hình là địa chỉ với "Thành phố + Bang" làm các đầu vào riêng biệt từ tập dữ liệu, mô hình sẽ vi phạm hướng dẫn độ chính xác nào? -> Đáp án chính: B. No correlating data*
+  *Ghi nhớ: Multicollinearity / Correlating Data: "Thành phố" và "Bang" có tương quan phụ thuộc lẫn nhau cao (Correlating data), đưa cả hai vào riêng biệt gây hiện tượng trùng lặp nhiễu thông tin.*
+
+- **Q: What are the attributes of an error function when training a predictive model -> Key Answer: B. the percentage of predictions that don't match actual outcomes**
+  *Dịch: Các thuộc tính của một hàm sai số (error function) khi huấn luyện mô hình dự đoán là gì? -> Đáp án chính: B. the percentage of predictions that don't match actual outcomes*
+  *Ghi nhớ: Error Function Attributes: Hàm sai số đo lường tỷ lệ phần trăm các dự đoán bị sai (đối chiếu giữa dự đoán và thực tế).*
+
+- **Q: A training set based on feeding 60% of data, validating on 20% of data, and then designing multiple tests for the
+remaining 20% of data is referred to as an -> Key Answer: B. optimized training set**
+  *Dịch: Tập huấn luyện dựa trên việc nạp 60% dữ liệu, kiểm chứng trên 20% dữ liệu và thiết kế nhiều bài kiểm thử cho 20% dữ liệu còn lại được gọi là: -> Đáp án chính: B. optimized training set*
+  *Ghi nhớ: 60-20-20 Train-Val-Test Split: Phân chia tỷ lệ 60/20/20 chuẩn tạo nên một tập huấn luyện và kiểm thử tối ưu (Optimized training set).*
+
+- **Q: An example of a public dataset at risk of an algorithmic privacy violation is the -> Key Answer: A. Google Maps satellite view dataset**
+  *Dịch: Ví dụ nào về tập dữ liệu công khai có nguy cơ vi phạm quyền riêng tư thuật toán? -> Đáp án chính: A. Google Maps satellite view dataset*
+  *Ghi nhớ: Tập dữ liệu hình ảnh vệ tinh độ phân giải cao công khai (như Google Maps Satellite) có nguy cơ làm lộ hình ảnh tài sản cá nhân, địa chỉ nhà riêng và hành vi di chuyển.*
+
+- **Q: You're training a model to classify whether or not a bridge is likely to collapse given several factors. You have a dataset of thousands of existing bridges and their attributes, where each bridge is labeled as having collapsed or not collapsed. Only a handful of bridges in the dataset are labeled as having collapsed—the rest are labeled as not collapsed. Given your goal of minimizing bridge collapse and the severe harm it can cause, which of the following metrics would be most useful for evaluating the model? -> Key Answer: D. Recall**
+  *Dịch: Bạn đang huấn luyện mô hình để phân loại xem một cây cầu có nguy cơ sụp đổ hay không dựa trên nhiều yếu tố. Tập dữ liệu chứa hàng ngàn cây cầu hiện có, nhưng chỉ có rất ít cầu thực sự bị sụp đổ (dữ liệu cực kỳ mất cân bằng). Để giảm thiểu tối đa việc bỏ sót cầu sập gây thảm họa, chỉ số đánh giá nào hữu ích nhất cho mô hình này? -> Đáp án chính: D. Recall*
+  *Ghi nhớ: Recall (Độ bao phủ) đo lường khả năng tìm ra toàn bộ các mẫu dương tính thực tế (cầu sập). Trong các bài toán an toàn sinh mạng, việc bỏ sót mẫu dương tính (False Negative) là cực kỳ nguy hiểm.*
+
+- **Q: Why are deep learning and machine learning called narrow? Select two options. -> Key Answer: A. Narrow can only perform the specific tasks it was designed to do. & B. Narrow AI can't handle situations that its training data didn't prepare it for.**
+  *Dịch: Tại sao Học sâu (Deep Learning) và Học máy (Machine Learning) lại được gọi là AI hẹp (Narrow AI)? (Select two) -> Đáp án chính: A. Narrow can only perform the specific tasks it was designed to do. & B. Narrow AI can't handle situations that its training data didn't prepare it for.*
+  *Ghi nhớ: Narrow AI chỉ tối ưu hóa cho bài toán chuyên biệt trong phạm vi dữ liệu huấn luyện, không có trí tuệ suy luận đa năng.*
+
+- **Q: A predictive model's false negative result can be defined as -> Key Answer: D. the predicted result was negative, and the actual result was positive**
+  *Dịch: Kết quả Âm tính giả (False Negative) của một mô hình dự đoán được định nghĩa là gì? -> Đáp án chính: D. the predicted result was negative, and the actual result was positive*
+  *Ghi nhớ: False Negative (Bỏ sót) xảy ra khi mô hình báo Không (Negative) nhưng thực tế đối tượng lại Có (Positive) - ví dụ bỏ sót bệnh nhân mắc ung thư.*
+
+- **Q: What can be learned from a predictive model should not change if the ________ is either included or excluded in the training set -> Key Answer: D. Individual's data**
+  *Dịch: Những gì học được từ mô hình dự đoán sẽ không thay đổi bất kể ________ có được đưa vào hay loại trừ khỏi tập huấn luyện? -> Đáp án chính: D. Individual's data*
+  *Ghi nhớ: Đây là định nghĩa chuẩn về Differential Privacy (Tính riêng tư vi sai): Sự hiện diện hay thiếu vắng dữ liệu của 1 cá nhân không làm thay đổi đáng kể đầu ra mô hình.*
+
+- **Q: A dataset attribute that is not identifiable by itself but constitutes sensitive information about the individual that needs to be protected is known as a: -> Key Answer: D. Sensitive attribute**
+  *Dịch: Thuộc tính tập dữ liệu không tự định danh cá nhân nhưng chứa thông tin nhạy cảm cần được bảo vệ được gọi là gì? -> Đáp án chính: D. Sensitive attribute*
+  *Ghi nhớ: Sensitive Attribute (Thuộc tính nhạy cảm) là thông tin như tình trạng bệnh lý, thu nhập, tôn giáo cần bảo vệ riêng tư.*
+
+- **Q: To measure a predictive model's accuracy, you: -> Key Answer: D. Divide the number of correct predictions by the total number of predictions**
+  *Dịch: Để đo lường độ chính xác (Accuracy) của một mô hình dự đoán, bạn thực hiện phép tính nào? -> Đáp án chính: D. Divide the number of correct predictions by the total number of predictions*
+  *Ghi nhớ: Công thức tính Accuracy: Accuracy = (Số lượng dự đoán đúng) / (Tổng số lượng dự đoán).*
+
+- **Q: What is one possible reason a predictive model may predict a higher crime rate based on historical datasets used? -> Key Answer: A. If drug arrests are historically high in that area, the model may correlate crime with areas of high drug enforcement based on datasets**
+  *Dịch: Lý do khả thi nào khiến một mô hình dự đoán dự báo tỷ lệ tội phạm cao hơn tại một khu vực dựa trên dữ liệu lịch sử? -> Đáp án chính: A. If drug arrests are historically high in that area, the model may correlate crime with areas of high drug enforcement based on datasets*
+  *Ghi nhớ: Feedback Loop in Predictive Policing: Mô hình nhận dữ liệu bắt giữ lịch sử (phản ánh tần suất cảnh sát tuần tra) và nhầm lẫn đó là tỷ lệ tội phạm thực tế.*
+
+- **Q: In reverse-engineering a double coin flip differential model, what would be the probability of getting two heads in a row? -> Key Answer: B. 0.25**
+  *Dịch: Khi giải mã ngược một mô hình vi sai tung đồng xu hai lần, xác suất để nhận được hai mặt ngửa (heads) liên tiếp là bao nhiêu? -> Đáp án chính: B. 0.25*
+  *Ghi nhớ: Xác suất của hai sự kiện độc lập đồng thời là tích xác suất từng sự kiện: P(Head và Head) = 0.5 * 0.5 = 0.25.*
+
+- **Q: Which of the following is a recommended security practice for machine learning models? -> Key Answer: A. Adversarial robustness testing and data sanitization**
+  *Dịch: Thực hành bảo mật nào sau đây được khuyến nghị cho các mô hình học máy? -> Đáp án chính: A. Adversarial robustness testing and data sanitization*
+  *Ghi nhớ: Bảo mật học máy yêu cầu chống chịu trước các cuộc tấn công đối kháng (Adversarial Attacks) và làm sạch dữ liệu đầu vào (Data Sanitization).*
+
+- **Q: A hospital dataset protects whether an individual has had either a stroke, heart attack, or staph infection. The individual may still be harmed via dataset: -> Key Answer: A. Group inclusion**
+  *Dịch: Tập dữ liệu bệnh viện bảo vệ thông tin cá nhân bị đột quỵ, đau tim hay nhiễm trùng. Cá nhân vẫn có thể bị tổn hại thông qua yếu tố nào? -> Đáp án chính: A. Group inclusion*
+  *Ghi nhớ: Group Inclusion (Suy luận nhóm) xảy ra khi dữ liệu tiết lộ thuộc tính chung của cả nhóm (ví dụ: 100% người trong nhóm mắc bệnh X), gây xâm phạm riêng tư dù cá nhân đã ẩn danh.*
+
+- **Q: A predictive model's true positive result can be defined as: -> Key Answer: C. The predicted result was positive, and the actual result was positive**
+  *Dịch: Kết quả Dương tính thật (True Positive) của một mô hình dự đoán được định nghĩa là gì? -> Đáp án chính: C. The predicted result was positive, and the actual result was positive*
+  *Ghi nhớ: True Positive (Dương tính thật) xảy ra khi mô hình dự đoán có (Positive) và thực tế đối tượng thực sự có (Positive).*
+
+- **Q: What is the primary advantage of radioactive data tracing over past techniques used to trace data in machine learning models? -> Key Answer: B. Radioactive data tracing doesn't impact a model's overall performance**
+  *Dịch: Ưu điểm chính của kỹ thuật truy vết dữ liệu phóng xạ (Radioactive data tracing) so với các kỹ thuật truy vết trước đây trong mô hình học máy là gì? -> Đáp án chính: B. Radioactive data tracing doesn't impact a model's overall performance*
+  *Ghi nhớ: Radioactive Data Tracing: Đánh dấu dữ liệu huấn luyện bằng vết nước tinh vi (watermarking) để xác minh bản quyền dữ liệu bị cào trái phép mà hoàn toàn không ảnh hưởng đến độ chính xác và hiệu suất của mô hình.*
+
+- **Q: You have collected social media posts with a specific hashtag. What is the first step in cleaning this text dataset? -> Key Answer: A. Tokenization and removing special characters/punctuation**
+  *Dịch: Bạn đã thu thập các bài đăng trên mạng xã hội chứa một hashtag cụ thể. Bước đầu tiên trong việc làm sạch tập dữ liệu văn bản này là gì? -> Đáp án chính: A. Tokenization and removing special characters/punctuation*
+  *Ghi nhớ: NLP Data Cleaning: Tách từ (Tokenization), hạ chữ thường (Lowercasing) và lọc bỏ nhiễu ký tự đặc biệt trước khi đưa vào mô hình học máy.*
+
+- **Q: Which of the following cost functions or loss metrics is used to evaluate a linear regression machine learning model? -> Key Answer: C. Cost function (Mean Squared Error - MSE)**
+  *Dịch: Chỉ số hoặc hàm tổn thất nào sau đây được sử dụng để đánh giá một mô hình học máy hồi quy tuyến tính (Linear Regression)? -> Đáp án chính: C. Cost function (Mean Squared Error - MSE)*
+  *Ghi nhớ: Hàm Chi phí Hồi quy (Cost Function in Linear Regression): Sử dụng Sai số bình phương trung bình (MSE) làm hàm mất mát để đánh giá mức độ sai lệch khoảng cách.*
+
+- **Q: Which type of edge case is caused by data outside the normal distribution of a model's training set? -> Key Answer: A. Outlier edge case**
+  *Dịch: Loại trường hợp ngoại lệ (edge case) nào được gây ra bởi dữ liệu nằm ngoài phân bố bình thường (normal distribution) của tập dữ liệu huấn luyện? -> Đáp án chính: A. Outlier edge case*
+  *Ghi nhớ: Outlier (Điểm ngoại biệt): Dữ liệu cực đoan xuất hiện ngoài dải phân bố thống kê tiêu chuẩn của mô hình.*
+
+- **Q: The principle of deleting unused or unnecessary data early and often during machine learning data pipeline is known as: -> Key Answer: A. Data minimization and data sanitization**
+  *Dịch: Nguyên tắc xóa dữ liệu không sử dụng hoặc không cần thiết sớm và thường xuyên trong đường ống dữ liệu học máy được gọi là gì? -> Đáp án chính: A. Data minimization and data sanitization*
+  *Ghi nhớ: Data Minimization & Sanitization: Chủ động xóa bỏ thông tin thừa để hạ thấp nguy cơ lộ rò quyền riêng tư.*
+
+- **Q: k-Anonymity in a dataset is achieved when each individual cannot be: -> Key Answer: A. Distinguished from at least k-1 other individuals in the dataset based on quasi-identifiers**
+  *Dịch: Tính ẩn danh k-anonymity trong một tập dữ liệu đạt được khi mỗi cá nhân không thể bị: -> Đáp án chính: A. Distinguished from at least k-1 other individuals in the dataset based on quasi-identifiers*
+  *Ghi nhớ: k-Anonymity Requirement: Mỗi nhóm thuộc tính bán định danh (Quasi-identifiers) phải xuất hiện ít nhất k lần.*
+
+- **Q: When building a predictive model, what is the goal of the development phase? -> Key Answer: B. To get the model's error function below an acceptable percentage threshold**
+  *Dịch: Khi xây dựng một mô hình dự đoán, mục tiêu của giai đoạn phát triển (Development phase) là gì? -> Đáp án chính: B. To get the model's error function below an acceptable percentage threshold*
+  *Ghi nhớ: Tối ưu hóa trong phát triển ML: Điều chỉnh tham số để sai số tổn thất (Loss) giảm xuống mức tối thiểu chấp nhận được.*
+
+- **Q: How is a Machine Learning (ML) system different from a Deep Learning (DL) system? -> Key Answer: C. A ML system needs a human expert to perform manual feature extraction**
+  *Dịch: Hệ thống Học máy truyền thống (ML) khác biệt như thế nào so với hệ thống Học sâu (DL)? -> Đáp án chính: C. A ML system needs a human expert to perform manual feature extraction*
+  *Ghi nhớ: Phân biệt ML và DL: ML truyền thống yêu cầu Feature Engineering thủ công từ con người; DL (Mạng nơ-ron sâu) tự động học Feature Extraction trực tiếp từ dữ liệu thô.*
+
+- **Q: You have a dataset of customers that includes each customer's gender, location, and total spending amount. You want to group similar customers together to target marketing campaigns without prior labels. What ML technique is this? -> Key Answer: D. Clustering**
+  *Dịch: Bạn có một tập dữ liệu khách hàng bao gồm giới tính, vị trí và tổng số tiền chi tiêu. Bạn muốn nhóm các khách hàng tương tự lại với nhau để phục vụ chiến dịch tiếp thị mà không có nhãn trước. Kỹ thuật học máy nào được áp dụng? -> Đáp án chính: D. Clustering*
+  *Ghi nhớ: Clustering (Học không giám sát - Unsupervised Learning): Tự động gom nhóm các điểm dữ liệu có đặc trưng tương đồng mà không cần nhãn dữ liệu trước.*
+
+- **Q: A dataset attribute that is not directly identifiable by itself but constitutes data about the individual that needs to be protected is known as a: -> Key Answer: B. Quasi-identifier**
+  *Dịch: Một thuộc tính dữ liệu không tự định danh trực tiếp cá nhân nhưng cấu thành dữ liệu về cá nhân cần được bảo vệ khi kết hợp lại được gọi là: -> Đáp án chính: B. Quasi-identifier*
+  *Ghi nhớ: Quasi-identifier: Thuộc tính kết hợp (Tuổi, Giới tính, Mã bưu điện) có thể giúp tái định danh cá nhân.*
+
+- **Q: How do AI and other data-driven technologies use probability in decision making? -> Key Answer: C. By providing a mathematical model of belief about the likelihood of an event happening based on evidence**
+  *Dịch: AI và các công nghệ dựa trên dữ liệu sử dụng xác suất như thế nào trong việc ra quyết định? -> Đáp án chính: C. By providing a mathematical model of belief about the likelihood of an event happening based on evidence*
+  *Ghi nhớ: Probabilistic Inference: Mô hình hóa mức độ tin tưởng dựa trên bằng chứng dữ liệu.*
+
+- **Q: The nature of a predictive model's output primarily reveals: -> Key Answer: C. The quality, distribution, and biases of the data it was trained on**
+  *Dịch: Bản chất đầu ra của một mô hình dự đoán chủ yếu tiết lộ điều gì? -> Đáp án chính: C. The quality, distribution, and biases of the data it was trained on*
+  *Ghi nhớ: GIGO Principle: Mô hình phản ánh trực tiếp dữ liệu huấn luyện.*
+
+- **Q: Our primary goals for building an ethical predictive model include making sure the results are: -> Key Answer: D. Accurate, fair, and explainable**
+  *Dịch: Mục tiêu khi xây dựng một mô hình dự đoán có đạo đức bao gồm việc đảm bảo kết quả đạt 3 tiêu chí nào? -> Đáp án chính: D. Accurate, fair, and explainable*
+  *Ghi nhớ: Accurate + Fair + Explainable.*
+
+- **Q: A training set based on feeding 60% of data for training, validating on 20%, and testing on 20% is known as a: -> Key Answer: A. Classic training set (Classic train/val/test split)**
+  *Dịch: Một tập dữ liệu được chia theo tỷ lệ 60% cho huấn luyện, 20% cho kiểm chứng và 20% cho kiểm thử được gọi là: -> Đáp án chính: A. Classic training set (Classic train/val/test split)*
+  *Ghi nhớ: Classic Train/Val/Test Split (60/20/20 hoặc 70/15/15): Tỷ lệ phân chia dữ liệu tiêu chuẩn truyền thống.*
+
+- **Q: Model inputs of address with 'City + State' as separate inputs from a dataset would violate which accuracy guideline? -> Key Answer: B. No correlation guideline (No correlating data)**
+  *Dịch: Đưa các đầu vào địa chỉ như 'Thành phố + Bang' thành các biến đầu vào riêng biệt trong cùng một tập dữ liệu sẽ vi phạm hướng dẫn độ chính xác nào? -> Đáp án chính: B. No correlation guideline (No correlating data)*
+  *Ghi nhớ: No Correlating Data / Multicollinearity.*
+
+- **Q: A predictive model's false negative result can be defined as: -> Key Answer: D. The predicted result was negative, but the actual result was positive**
+  *Dịch: Kết quả Âm tính giả (False Negative) của một mô hình dự đoán được định nghĩa là gì? -> Đáp án chính: D. The predicted result was negative, but the actual result was positive*
+  *Ghi nhớ: False Negative (FN): Mô hình dự đoán Âm tính (bỏ sót) nhưng thực tế là Dương tính (có bệnh/có lỗi).*
+
+- **Q: What is one possible reason a predictive model may predict a higher crime rate in a neighborhood based on dataset flaws? -> Key Answer: A. If drug arrests are historically high in that area, the model correlates crime with areas of heavy policing and high arrest datasets**
+  *Dịch: Lý do nào giải thích việc một mô hình dự đoán có thể dự báo sai tỷ lệ tội phạm cao hơn tại một khu vực dựa trên lỗi dữ liệu? -> Đáp án chính: A. If drug arrests are historically high in that area, the model correlates crime with areas of heavy policing and high arrest datasets*
+  *Ghi nhớ: Predictive Policing Feedback Loop: Dữ liệu cảnh sát tuần tra nhiều sinh ra số lượng vụ bắt giữ cao, mô hình ngộ nhận khu vực đó có tỷ lệ tội phạm cao hơn thực tế.*
+
+- **Q: Why are deep learning and traditional machine learning models called narrow AI? (Select two.) -> Key Answer: A. Narrow AI can only perform the specific tasks it was designed to do & B. Narrow AI can't handle situations that its training data didn't prepare it for**
+  *Dịch: Tại sao các mô hình học sâu và học máy truyền thống lại được gọi là AI hẹp (Narrow AI)? (Select two) -> Đáp án chính: A. Narrow AI can only perform the specific tasks it was designed to do & B. Narrow AI can't handle situations that its training data didn't prepare it for*
+  *Ghi nhớ: Characteristics of Narrow AI: Chỉ giải quyết 1 tác vụ chuyên biệt và Thất bại khi gặp tình huống nằm ngoài phân bố huấn luyện (Out-of-distribution).*
+
+- **Q: What can be learned from a predictive model should not change whether an individual's data is included or excluded in the training set. This concept refers to: -> Key Answer: A. Differential privacy**
+  *Dịch: Những gì học được từ mô hình dự đoán không nên thay đổi bất kể dữ liệu của một cá nhân có xuất hiện hay bị loại khỏi tập huấn luyện hay không. Khái niệm này đề cập đến: -> Đáp án chính: A. Differential privacy*
+  *Ghi nhớ: Core Differential Privacy Principle: Kết quả đầu ra mô hình không bị ảnh hưởng bởi sự có mặt hay vắng mặt của bất kỳ 1 cá nhân nào.*
+
+- **Q: What are the attributes of an error function when training a predictive model? -> Key Answer: B. The percentage or degree to which predictions deviate from actual outcomes**
+  *Dịch: Các thuộc tính của một hàm sai số (Error function) khi huấn luyện mô hình dự đoán thể hiện điều gì? -> Đáp án chính: B. The percentage or degree to which predictions deviate from actual outcomes*
+  *Ghi nhớ: Error / Loss Function: Đo lường mức độ sai lệch giữa dự đoán (Prediction) và thực tế (Ground truth).*
+
+- **Q: Which mathematical theorem states that no single machine learning model can outperform all other models across all possible problems? -> Key Answer: A. No Free Lunch Theorem**
+  *Dịch: Định lý toán học nào khẳng định rằng không có một mô hình học máy duy nhất nào có thể vượt trội hơn tất cả các mô hình khác trên mọi bài toán có thể xảy ra? -> Đáp án chính: A. No Free Lunch Theorem*
+  *Ghi nhớ: No Free Lunch (NFL) Theorem in ML: Mọi thuật toán học máy đều có hiệu suất trung bình ngang nhau khi xét trên tập hợp tất cả các bài toán có thể xảy ra (Không có thuật toán vạn năng).*
+
+- **Q: In a scatter plot of Gross Income against Revenue, data points tightly cluster along an upward rising straight line from bottom-left to top-right. What correlation does this suggest? -> Key Answer: D. There is a strong positive correlation between both variables**
+  *Dịch: Trong biểu đồ phân tán (Scatter plot), các điểm dữ liệu của biến Thu nhập gộp (Gross Income) và Doanh thu (Revenue) tập trung chặt chẽ dọc theo một đường thẳng đi lên từ dưới bên trái đến trên bên phải. Điều này thể hiện loại tương quan nào? -> Đáp án chính: D. There is a strong positive correlation between both variables*
+  *Ghi nhớ: Scatter Plot Correlation: Đường thẳng đi lên chặt chẽ từ trái sang phải thể hiện Tương quan Dương Mạnh (Strong Positive Correlation r ≈ 1).*
+
+- **Q: During cross-validation, which of the following dataset splits is standard for training, validation, and testing? -> Key Answer: A. 60% training, 20% validation, 20% testing**
+  *Dịch: Trong quá trình kiểm chứng chéo (Cross-validation), tỷ lệ phân chia tập dữ liệu chuẩn cho huấn luyện, kiểm chứng và kiểm thử là: -> Đáp án chính: A. 60% training, 20% validation, 20% testing*
+  *Ghi nhớ: Quy tắc phân chia dữ liệu tiêu chuẩn: 60/20/20 hoặc 70/15/15 đảm bảo mô hình có đủ dữ liệu học và đánh giá khách quan.*
+
+- **Q: A hospital dataset protects whether an individual has a specific disease using a technique that ensures groups of at least k individuals share identical attributes. This is known as: -> Key Answer: C. k-anonymity**
+  *Dịch: Một tập dữ liệu bệnh viện bảo vệ thông tin bệnh lý cá nhân bằng cách đảm bảo nhóm ít nhất k cá nhân có thuộc tính định danh giống hệt nhau. Đây được gọi là kỹ thuật gì? -> Đáp án chính: C. k-anonymity*
+  *Ghi nhớ: k-Anonymity quy định mỗi bản ghi trong tập dữ liệu không thể phân biệt được với ít nhất k-1 bản ghi khác đối với các thuộc tính bán định danh.*
+
+- **Q: A good example of empirical reflection in training data is when: -> Key Answer: C. An image recognition model selects one face over another based on sample data distribution**
+  *Dịch: Một ví dụ minh họa về sự phản ánh thực nghiệm (Empirical reflection) trong dữ liệu huấn luyện là khi: -> Đáp án chính: C. An image recognition model selects one face over another based on sample data distribution*
+  *Ghi nhớ: Empirical Reflection: Mô hình tái phản ánh chính xác phân bố thống kê khách quan chứa trong tập dữ liệu huấn luyện mà nó được nạp.*
+
+- **Q: Model inputs of address with 'City + State' as separate inputs from a dataset would represent: -> Key Answer: A. Highly correlated attributes (Collinearity)**
+  *Dịch: Việc đưa thuộc tính địa chỉ gồm 'Thành phố + Bang' thành các đầu vào tách biệt trong mô hình sẽ đại diện cho: -> Đáp án chính: A. Highly correlated attributes (Collinearity)*
+  *Ghi nhớ: Đa cộng tuyến (Multicollinearity): Thành phố phụ thuộc trực tiếp vào Bang, khiến hai biến số này chứa thông tin trùng lặp tương quan mạnh.*
+
+- **Q: A training set structure based on feeding 60% of data for training, validating on 20% of data, and testing on the remaining 20% is referred to as: -> Key Answer: A. Classic training set split**
+  *Dịch: Cấu trúc tập dữ liệu dựa trên việc nạp 60% dữ liệu để huấn luyện, 20% để kiểm chứng và 20% còn lại để kiểm thử được gọi là: -> Đáp án chính: A. Classic training set split*
+  *Ghi nhớ: Classic Train/Val/Test Split (60-20-20): Tỷ lệ phân chia kinh điển trong khoa học dữ liệu giúp huấn luyện và đánh giá mô hình khách quan.*
+
+- **Q: You're training a model to classify whether or not a bridge is likely to collapse given several factors. You have a dataset of thousands of existing bridges, where only a handful of bridges are labeled as having collapsed. Given your goal of minimizing bridge collapse, which of the following metrics would be most useful for evaluating the model? -> Key Answer: D. Recall**
+  *Dịch: Bạn đang huấn luyện mô hình phân loại xem một cây cầu có nguy cơ sụp đổ hay không dựa trên các yếu tố. Tập dữ liệu chứa hàng nghìn cây cầu nhưng chỉ có một số rất ít cầu bị sụp đổ. Với mục tiêu tối thiểu hóa nguy cơ sụp cầu gây hậu quả nghiêm trọng, chỉ số nào là hữu ích nhất để đánh giá mô hình? -> Đáp án chính: D. Recall*
+  *Ghi nhớ: Trong bài toán dữ liệu mất cân bằng (Imbalanced Data) với thảm họa nghiêm trọng (sụp cầu), chỉ số Recall (Độ gợi nhớ) tối thiểu hóa lỗi bỏ sót Âm tính giả (False Negatives).*
+
+- **Q: The Strava dataset example illustrates that while differential privacy can protect individuals, it can still harm: -> Key Answer: D. Groups**
+  *Dịch: Ví dụ tập dữ liệu Strava minh họa rằng mặc dù tính riêng tư vi sai có thể bảo vệ cá nhân, nó vẫn có thể làm lộ/gây hại cho: -> Đáp án chính: D. Groups*
+  *Ghi nhớ: Dữ liệu ẩn danh hóa Strava (Heatmap) bảo vệ cá nhân nhưng tiết lộ vị trí các căn cứ quân sự bí mật (Group Level Privacy Vulnerability).*
+
+- **Q: In a dataset with significant class imbalance, which of the following accuracy metrics can be deceivingly high? -> Key Answer: C. Accuracy**
+  *Dịch: Trong một tập dữ liệu có sự mất cân bằng lớp nghiêm trọng (như 99% âm tính, 1% dương tính), chỉ số đo lường nào có thể cao một cách đánh lừa? -> Đáp án chính: C. Accuracy*
+  *Ghi nhớ: Accuracy Paradox: Một mô hình ngây thơ luôn dự đoán lớp đa số sẽ đạt Accuracy 99% nhưng hoàn toàn vô dụng khi phát hiện lớp yếu thế.*
+
+- **Q: Which type of machine learning model uses labeled training data to predict outcomes? -> Key Answer: B. Supervised learning**
+  *Dịch: Loại mô hình học máy nào sử dụng dữ liệu huấn luyện đã được gán nhãn (Labeled training data) để dự đoán kết quả? -> Đáp án chính: B. Supervised learning*
+  *Ghi nhớ: Học có giám sát (Supervised Learning) học ánh xạ từ đầu vào (X) đến nhãn đầu ra (Y) thông qua tập dữ liệu có sẵn nhãn chuẩn.*
+
+- **Q: Which of the following is a negative consequence of a predictive model used in real life? -> Key Answer: C. A model used by a bank wrongly predicts a person will not be able to pay off a loan (False negative rejection)**
+  *Dịch: Hậu quả tiêu cực nào sau đây của một mô hình dự đoán được sử dụng trong đời sống thực tế? -> Đáp án chính: C. A model used by a bank wrongly predicts a person will not be able to pay off a loan (False negative rejection)*
+  *Ghi nhớ: Lỗi Âm tính giả trong chấm điểm tín dụng khiến khách hàng uy tín bị từ chối cấp vốn, gây ra thiệt hại tài chính và cơ hội thực tế cho người dân.*
+
+- **Q: When building a predictive model, what is the goal of the development/training phase? -> Key Answer: B. To get the model's error function below an acceptable percentage threshold**
+  *Dịch: Khi xây dựng một mô hình dự đoán, mục tiêu của giai đoạn phát triển / huấn luyện (Development/Training phase) là gì? -> Đáp án chính: B. To get the model's error function below an acceptable percentage threshold*
+  *Ghi nhớ: Giai đoạn Huấn luyện (Training): Tối ưu hóa các trọng số toán học để giảm tối đa giá trị của hàm mất mát (Loss/Error Function).*
+
+- **Q: One effective way to avoid feedback loops in machine learning is to: -> Key Answer: D. Label outputs to prevent re-training bias**
+  *Dịch: Một cách hiệu quả để tránh các vòng lặp phản hồi (Feedback loops) trong học máy là gì? -> Đáp án chính: D. Label outputs to prevent re-training bias*
+  *Ghi nhớ: Mitigating Feedback Loops: Đánh dấu/gán nhãn cẩn thận dữ liệu sinh ra từ thuật toán để tránh nạp mù quáng đầu ra vào tập huấn luyện lại.*
+
+- **Q: A dataset attribute that is not directly identifiable by itself but can re-identify an individual when combined with other attributes is known as a: -> Key Answer: B. Quasi-identifier**
+  *Dịch: Một thuộc tính dữ liệu không tự định danh trực tiếp cá nhân nhưng có thể tái định danh khi kết hợp với các thuộc tính khác được gọi là: -> Đáp án chính: B. Quasi-identifier*
+  *Ghi nhớ: Quasi-identifiers (Quasi-ID): Mã bưu điện, Ngày sinh, Giới tính - khi đứng riêng không định danh được nhưng khi kết hợp lại xác định được 87% dân số Mỹ.*
+
+- **Q: Once a dataset has been cleaned, which accuracy guideline ensures your model is looking at the problem correctly using core logical domain principles? -> Key Answer: D. First principles (Tư duy nguyên lý đầu tiên)**
+  *Dịch: Sau khi tập dữ liệu đã được làm sạch, hướng dẫn độ chính xác nào đảm bảo mô hình đang nhìn nhận vấn đề một cách đúng đắn dựa trên logic cốt lõi? -> Đáp án chính: D. First principles (Tư duy nguyên lý đầu tiên)*
+  *Ghi nhớ: First Principles Thinking: Phân tích bài toán về các sự thật cơ bản cốt lõi nhất để đảm bảo mô hình xây dựng trên lập luận logic đúng đắn.*
+
+- **Q: Which of the following is a recommended data governance security practice for machine learning datasets? -> Key Answer: B. Enact a sound data governance structure with access controls and audit logs**
+  *Dịch: Thực hành an ninh quản trị dữ liệu nào sau đây được khuyến nghị cho các tập dữ liệu học máy? -> Đáp án chính: B. Enact a sound data governance structure with access controls and audit logs*
+  *Ghi nhớ: Data Governance Structure: Quản lý quyền truy cập (Access Control), phân loại dữ liệu và ghi log kiểm toán.*
+
+- **Q: How do AI and data-driven technologies utilize probability in decision making? -> Key Answer: C. By providing a mathematical model of belief about the likelihood of an outcome given available evidence**
+  *Dịch: AI và các công nghệ dựa trên dữ liệu sử dụng xác suất như thế nào trong việc ra quyết định? -> Đáp án chính: C. By providing a mathematical model of belief about the likelihood of an outcome given available evidence*
+  *Ghi nhớ: Probabilistic Inference in AI (Bayesian Logic): Mô hình hóa mức độ tin tưởng (Degree of belief / Likelihood) dựa trên bằng chứng dữ liệu thu thập được.*
+
+- **Q: A good example of feedback loop in machine learning occurs when: -> Key Answer: B. A model selects for one demographic less often because of their historical representation, which then reinforces lower representation in future data**
+  *Dịch: Một ví dụ điển hình về Vòng lặp phản hồi (Feedback loop) trong học máy xảy ra khi nào? -> Đáp án chính: B. A model selects for one demographic less often because of their historical representation, which then reinforces lower representation in future data*
+  *Ghi nhớ: Vòng lặp phản hồi củng cố (Reinforcing Feedback Loop): Dữ liệu thiên vị lịch sử tạo ra quyết định đầu ra lệch lạc, đầu ra đó tiếp tục trở thành dữ liệu đầu vào làm sâu sắc thêm thiên vị trong tương lai.*
+
+- **Q: Which of the following is a post-hoc local explainability technique for machine learning models? -> Key Answer: A. LIME (Local Interpretable Model-agnostic Explanations)**
+  *Dịch: Kỹ thuật giải thích cục bộ sau huấn luyện (Post-hoc local explainability) phổ biến nào được dùng cho các mô hình học máy? -> Đáp án chính: A. LIME (Local Interpretable Model-agnostic Explanations)*
+  *Ghi nhớ: LIME (Local Interpretable Model-agnostic Explanations): Xấp xỉ mô hình phức tạp xung quanh một điểm dự đoán cụ thể bằng một mô hình đơn giản có thể giải thích được.*
+
+- **Q: The nature of a machine learning model's output is primarily determined by: -> Key Answer: C. The quality and distribution of data it is trained on**
+  *Dịch: Bản chất đầu ra dự đoán của một mô hình học máy chủ yếu bị quyết định bởi yếu tố nào? -> Đáp án chính: C. The quality and distribution of data it is trained on*
+  *Ghi nhớ: Nguyên lý GIGO (Garbage In, Garbage Out): Kết quả của mô hình phụ thuộc trực tiếp vào dữ liệu huấn luyện đầu vào.*
+
+- **Q: When building a predictive model, what is the primary goal of the training phase? -> Key Answer: B. To adjust the model based on a subset of data, optimizing for a lower error rate**
+  *Dịch: Khi xây dựng một mô hình dự đoán, mục tiêu chính của giai đoạn huấn luyện (Training phase) là gì? -> Đáp án chính: B. To adjust the model based on a subset of data, optimizing for a lower error rate*
+  *Ghi nhớ: Mục tiêu Huấn luyện: Điều chỉnh tham số để hạ thấp hàm sai số.*
 
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (82 câu)
 
@@ -3235,18 +3993,158 @@ remaining 20% of data is referred to as an**
 ## MOD-03: Privacy, Data Protection & Laws (GDPR, PIPEDA, CCPA, COPPA, FERPA, HIPAA)
 ### Quyền riêng tư, Bảo vệ Dữ liệu & Luật pháp (GDPR, PIPEDA, CCPA, COPPA, FERPA, HIPAA)
 
-#### Core Theory & Key Concepts / Lý Thuyết Cốt Lõi
-- **Personal Information Protection and Electronic Documents Act (PIPEDA) applies to private-sector organizations across Canada that collect, use, or disclose personal information in commercial activities.**
+#### Core Theory & Exhaustive Knowledge Points / Lý Thuyết Cốt Lõi & Tổng Hợp Kiến Thức Ôn Thi
+- **[CORE RULE] Personal Information Protection and Electronic Documents Act (PIPEDA) applies to private-sector organizations across Canada that collect, use, or disclose personal information in commercial activities.**
   *Dịch: Đạo luật Bảo vệ Thông tin Cá nhân và Tài liệu Điện tử (PIPEDA) áp dụng cho các tổ chức khu vực tư nhân trên khắp Canada thu thập, sử dụng hoặc tiết lộ thông tin cá nhân trong các hoạt động thương mại.*
 
-- **GDPR (General Data Protection Regulation) enforces strict user consent, data minimization, and the Right to be Forgotten within the EU.**
+- **[CORE RULE] GDPR (General Data Protection Regulation) enforces strict user consent, data minimization, and the Right to be Forgotten within the EU.**
   *Dịch: GDPR (Quy định Bảo vệ Dữ liệu Chung) thực thi sự đồng ý nghiêm ngặt của người dùng, tối thiểu hóa dữ liệu và Quyền được lãng quên trong Liên minh Châu Âu.*
 
-- **COPPA protects the online privacy of children under 13, requiring parental consent before collecting personal information.**
+- **[CORE RULE] COPPA protects the online privacy of children under 13, requiring parental consent before collecting personal information.**
   *Dịch: COPPA bảo vệ quyền riêng tư trực tuyến của trẻ em dưới 13 tuổi, yêu cầu sự đồng ý của cha mẹ trước khi thu thập thông tin cá nhân.*
 
-- **FERPA protects student educational records in the US, while HIPAA safeguards protected health information (PHI).**
+- **[CORE RULE] FERPA protects student educational records in the US, while HIPAA safeguards protected health information (PHI).**
   *Dịch: FERPA bảo vệ hồ sơ giáo dục của học sinh sinh viên tại Mỹ, trong khi HIPAA bảo vệ thông tin sức khỏe cá nhân (PHI).*
+
+- **Q: Identify the privacy risks associated with data collection, transmission, storage, and access in ambient intelligence systems. Which risk is most prevalent due to constant data monitoring? -> Key Answer: A. Unauthorized data access**
+  *Dịch: Rủi ro quyền riêng tư nào phổ biến nhất do việc giám sát dữ liệu liên tục trong các hệ thống trí tuệ môi trường (ambient intelligence)? -> Đáp án chính: A. Unauthorized data access*
+  *Ghi nhớ: Ambient Intelligence Privacy: Thu thập dữ liệu liên tục từ cảm biến môi trường làm gia tăng nguy cơ truy cập và rò rỉ dữ liệu trái phép.*
+
+- **Q: What percentage of frameworks include privacy as core tenet? -> Key Answer: B. 85%**
+  *Dịch: Tỷ lệ phần trăm các khung chuẩn đạo đức bao gồm quyền riêng tư (privacy) như một nguyên tắc cốt lõi là bao nhiêu? -> Đáp án chính: B. 85%*
+  *Ghi nhớ: Global Ethics Framework Consensus: Thống kê các bộ khung chuẩn đạo đức AI trên toàn cầu cho thấy khoảng 85% coi Privacy là trụ cột bắt buộc.*
+
+- **Q: Which of the following is a notable aspect of the Personal Information Protection and Electronic Documents Act (PIPEDA) when compared to similar laws and regulations? -> Key Answer: D. A stipulation to continue providing service even if data usage is denied**
+  *Dịch: Điểm đáng chú ý của Đạo luật Bảo vệ Thông tin Cá nhân và Tài liệu Điện tử (PIPEDA) so với các luật tương tự là gì? -> Đáp án chính: D. A stipulation to continue providing service even if data usage is denied*
+  *Ghi nhớ: PIPEDA Non-conditional Service Provision: PIPEDA (Canada) cấm doanh nghiệp từ chối cung cấp dịch vụ nếu người dùng không đồng ý thu thập dữ liệu ngoài mục đích cốt lõi.*
+
+- **Q: The Data minimization principle requires that you limit data collection to only what is -> Key Answer: D. required to fulfill a specific purpose**
+  *Dịch: Nguyên tắc giảm thiểu dữ liệu (Data minimization) yêu cầu bạn giới hạn việc thu thập dữ liệu ở mức chỉ bao gồm những gì: -> Đáp án chính: D. required to fulfill a specific purpose*
+  *Ghi nhớ: Data Minimization Principle: Chỉ thu thập dữ liệu vừa đủ phục vụ mục đích công bố.*
+
+- **Q: What is the purpose of differential privacy? -> Key Answer: A. To enable parties to share private data without revealing individuals represented in the data.**
+  *Dịch: Mục đích của riêng tư vi sai (differential privacy) là gì? -> Đáp án chính: A. To enable parties to share private data without revealing individuals represented in the data.*
+  *Ghi nhớ: Differential Privacy Goal: Thêm nhiễu toán học để phân tích xu hướng chung mà không thể suy ra dữ liệu cá nhân cụ thể.*
+
+- **Q: What is a likely outcome for a weather app using a learning algorithm to figure out where to put their future weather stations? -> Key Answer: D. Collecting location data every time the app is opened, potentially learning where a user lives, works, etc.**
+  *Dịch: Kết quả nào dễ xảy ra đối với ứng dụng thời tiết sử dụng thuật toán học máy để tìm vị trí đặt các trạm thời tiết tương lai? -> Đáp án chính: D. Collecting location data every time the app is opened, potentially learning where a user lives, works, etc.*
+  *Ghi nhớ: Privacy Side-Effects of AI Apps: Ứng dụng lấy vị trí liên tục tạo ra nguy cơ xâm phạm riêng tư khi suy đoán ra địa chỉ nhà và nơi làm việc của người dùng.*
+
+- **Q: Which of the following are key principles of privacy by design? (Select two.) -> Key Answer: A. Organizations must incorporate privacy protections throughout the project lifecycle. · D. Organizations must be proactive in protecting against privacy risks, not reactive.**
+  *Dịch: Những nguyên tắc cốt lõi nào của Bảo vệ riêng tư ngay từ khâu thiết kế (Privacy by Design)? (Chọn hai) -> Đáp án chính: A. Organizations must incorporate privacy protections throughout the project lifecycle. · D. Organizations must be proactive in protecting against privacy risks, not reactive.*
+  *Ghi nhớ: Privacy by Design 7 Principles: Proactive not reactive (Chủ động phòng ngừa); Privacy embedded into design (Tích hợp xuyên suốt vòng đời).*
+
+- **Q: Which of the following ethical considerations should have priority in an emergency situation like the use of contact-tracing solutions during a pandemic? (Select two.) -> Key Answer: A. Privacy · B. Accountability**
+  *Dịch: Những cân nhắc đạo đức nào sau đây nên được ưu tiên hàng đầu trong tình huống khẩn cấp như việc sử dụng các giải pháp truy vết tiếp xúc (contact-tracing)? -> Đáp án chính: A. Privacy · B. Accountability*
+  *Ghi nhớ: Ethical Priorities in Emergencies: Trong tình trạng khẩn cấp y tế, việc bảo vệ dữ liệu nhạy cảm và gán trách nhiệm quản lý rõ ràng là quan trọng nhất.*
+
+- **Q: Your business handles the personal data of California residents. Which of the following regulations would enable a resident to request that their data be deleted from your company's files? -> Key Answer: D. CCPA**
+  *Dịch: Doanh nghiệp của bạn xử lý dữ liệu cá nhân của cư dân bang California. Quy định nào sau đây cho phép cư dân yêu cầu bạn cho biết những dữ liệu nào đã được thu thập về họ? -> Đáp án chính: D. CCPA*
+  *Ghi nhớ: CCPA (California Consumer Privacy Act): Đạo luật bảo vệ quyền riêng tư của người tiêu dùng bang California, Mỹ, cho phép người dùng kiểm soát và yêu cầu truy xuất dữ liệu cá nhân.*
+
+- **Q: Which of the following are requirements set forth by the Biometric Information Privacy Act (BIPA)? (Select two.) -> Key Answer: B. Organizations must obtain consent from individuals regarding the collection and use of biometric data. · C. Organizations must destroy biometric data in a timely fashion.**
+  *Dịch: Những yêu cầu nào được quy định bởi Đạo luật Bảo mật Thông tin Sinh trắc học (BIPA)? (Chọn hai) -> Đáp án chính: B. Organizations must obtain consent from individuals regarding the collection and use of biometric data. · C. Organizations must destroy biometric data in a timely fashion.*
+  *Ghi nhớ: BIPA Requirements (Illinois): Bắt buộc xin phép đồng ý (Consent) và Bắt buộc có lịch trình hủy dữ liệu đúng hạn (Timely destruction).*
+
+- **Q: In Al, the principle of privacy is most commonly referred to in the context of which of the following concepts? -> Key Answer: A. Data protection**
+  *Dịch: Trong AI, nguyên tắc quyền riêng tư thường được đề cập phổ biến nhất trong bối cảnh khái niệm nào? -> Đáp án chính: A. Data protection*
+  *Ghi nhớ: Privacy & Data Protection Link: Riêng tư trong môi trường số/AI gắn liền trực tiếp với khái niệm Bảo vệ dữ liệu (Data protection).*
+
+- **Q: Why are anonymization and pseudonymization insufficient protection measures against breaches of data privacy and security? -> Key Answer: D. They can be broken by combining this data with other publicly available data.**
+  *Dịch: Tại sao ẩn danh hóa (anonymization) và giả danh hóa (pseudonymization) là chưa đủ để bảo vệ chống lại vi phạm riêng tư? -> Đáp án chính: D. They can be broken by combining this data with other publicly available data.*
+  *Ghi nhớ: Re-Identification Attack Vulnerability: Kết hợp dữ liệu giả danh/ẩn danh với các nguồn dữ liệu công khai bên ngoài làm lộ diện bản sắc cá nhân.*
+
+- **Q: The Children's Online Privacy Protection Act (COPPA) safeguards the privacy of which age group's personal information? -> Key Answer: B. Anyone under 13 years old**
+  *Dịch: Đạo luật Bảo vệ Quyền riêng tư Trên mạng của Trẻ em (COPPA) bảo vệ thông tin cá nhân của nhóm tuổi nào? -> Đáp án chính: B. Anyone under 13 years old*
+  *Ghi nhớ: COPPA Age Limit: COPPA (Mỹ) quy định bảo vệ đặc biệt dữ liệu cá nhân của trẻ em dưới 13 tuổi (under 13 years old).*
+
+- **Q: What does the GDPR primarily regulate? -> Key Answer: B. Data protection and privacy**
+  *Dịch: Đạo luật GDPR của Liên minh Châu Âu chủ yếu điều chỉnh lĩnh vực nào? -> Đáp án chính: B. Data protection and privacy*
+  *Ghi nhớ: GDPR (General Data Protection Regulation) là quy định chung về bảo vệ dữ liệu và riêng tư cá nhân nghiêm ngặt nhất thế giới.*
+
+- **Q: The Netflix Prize privacy scandal is an example of what privacy vulnerability? -> Key Answer: A. Re-identification through auxiliary datasets (Linkage attack)**
+  *Dịch: Bê bối riêng tư Giải thưởng Netflix (Netflix Prize scandal) là một ví dụ về lỗ hổng quyền riêng tư nào? -> Đáp án chính: A. Re-identification through auxiliary datasets (Linkage attack)*
+  *Ghi nhớ: Tái định danh (Re-identification) xảy ra khi tập dữ liệu được ẩn danh hóa sơ sài bị liên kết chéo với tập dữ liệu công khai bên ngoài (như IMDb) để lộ tên người dùng.*
+
+- **Q: What is the primary purpose of differential privacy? -> Key Answer: A. To enable parties to share private data without revealing individual identity in the dataset**
+  *Dịch: Mục đích chính của Tính riêng tư vi sai (Differential Privacy) là gì? -> Đáp án chính: A. To enable parties to share private data without revealing individual identity in the dataset*
+  *Ghi nhớ: Differential Privacy thêm nhiễu toán học ngẫu nhiên vào dữ liệu để cho phép phân tích thống kê tổng thể mà triệt tiêu khả năng suy luận danh tính cá nhân.*
+
+- **Q: Which of the following ethical considerations should have priority in an emergency situation like the use of contact-tracing solutions during a pandemic? -> Key Answer: A. Privacy**
+  *Dịch: Mối quan tâm đạo đức nào sau đây cần được ưu tiên kiểm soát trong tình huống khẩn cấp như sử dụng ứng dụng truy vết tiếp xúc dịch bệnh? -> Đáp án chính: A. Privacy*
+  *Ghi nhớ: Ứng dụng truy vết tiếp xúc (Contact Tracing) thu thập dữ liệu vị trí và sức khỏe liên tục, do đó rủi ro xâm phạm Quyền riêng tư (Privacy) là yếu tố nhạy cảm nhất cần bảo vệ.*
+
+- **Q: If a coin is flipped as a randomized response mechanism in differential privacy, which setup ensures 'yes/no' survey data remains private while retaining statistical utility? -> Key Answer: C. Heads for true answer, tails for random answer (Randomized Response technique)**
+  *Dịch: Nếu tung đồng xu làm cơ chế phản hồi ngẫu nhiên trong riêng tư vi sai, thiết lập nào đảm bảo câu trả lời khảo sát 'có/không' vừa riêng tư vừa giữ được giá trị thống kê? -> Đáp án chính: C. Heads for true answer, tails for random answer (Randomized Response technique)*
+  *Ghi nhớ: Kỹ thuật Phản hồi Ngẫu nhiên (Randomized Response in Differential Privacy): Thêm nhiễu ngẫu nhiên bằng cách tung đồng xu để che giấu câu trả lời thực tế của cá nhân nhưng giữ nguyên xác suất thống kê đám đông.*
+
+- **Q: In AI ethics frameworks, the principle of privacy is most commonly paired or referred to alongside: -> Key Answer: A. Data protection and confidentiality**
+  *Dịch: Trong các khung đạo đức AI, nguyên tắc quyền riêng tư (Privacy) thường đi kèm hoặc được đề cập song hành cùng với: -> Đáp án chính: A. Data protection and confidentiality*
+  *Ghi nhớ: Privacy & Data Protection: Quyền riêng tư luôn được đảm bảo thông qua các cơ chế Bảo vệ dữ liệu (Data Protection) và Giữ bảo mật (Confidentiality).*
+
+- **Q: If a coin is flipped as a randomized response mechanism in differential privacy, which setup ensures survey data remains private while retaining statistical utility? -> Key Answer: C. Heads for true answer, tails for random answer (Randomized Response)**
+  *Dịch: Nếu tung đồng xu làm cơ chế phản hồi ngẫu nhiên trong riêng tư vi sai, thiết lập nào đảm bảo dữ liệu khảo sát riêng tư mà vẫn có giá trị thống kê? -> Đáp án chính: C. Heads for true answer, tails for random answer (Randomized Response)*
+  *Ghi nhớ: Randomized Response: Tung đồng xu tạo nhiễu ngẫu nhiên bảo vệ cá nhân nhưng giữ xác suất thống kê.*
+
+- **Q: At which level of differential privacy is the outcome secured from even the entity collecting the data? -> Key Answer: C. Local differential privacy (LDP)**
+  *Dịch: Ở cấp độ riêng tư vi sai nào thì kết quả dữ liệu được bảo vệ an toàn ngay cả khỏi chính thực thể đang thu thập dữ liệu? -> Đáp án chính: C. Local differential privacy (LDP)*
+  *Ghi nhớ: Local Differential Privacy (LDP): Nhiễu ngẫu nhiên được thêm ngay trên thiết bị người dùng (Client-side) trước khi gửi về máy chủ, khiến chính đơn vị thu thập cũng không biết dữ liệu gốc.*
+
+- **Q: What side effect of learning algorithms creates an ethical dilemma regarding user privacy? -> Key Answer: B. Learning algorithms require large datasets, which often means storing personally identifying information about users**
+  *Dịch: Tác dụng phụ nào của các thuật toán học máy tạo ra một tình huống tiến thoái lưỡng nan về đạo đức riêng tư cho người dùng? -> Đáp án chính: B. Learning algorithms require large datasets, which often means storing personally identifying information about users*
+  *Ghi nhớ: Big Data Privacy Dilemma: Học máy càng thông minh càng thèm khát lượng lớn dữ liệu cá nhân, trực tiếp đe dọa quyền riêng tư.*
+
+- **Q: When it comes to protecting private data, which of the following provides the strongest privacy guarantee? -> Key Answer: A. Differential privacy**
+  *Dịch: Khi đề cập đến bảo vệ dữ liệu riêng tư, giải pháp nào sau đây cung cấp sự đảm bảo tính riêng tư mạnh mẽ nhất toán học? -> Đáp án chính: A. Differential privacy*
+  *Ghi nhớ: Differential Privacy cung cấp sự bảo vệ riêng tư toán học chứng minh được (Mathematically provable privacy guarantee) chống lại mọi cuộc tấn công liên kết.*
+
+- **Q: The Netflix prize privacy scandal is an example of re-identification using: -> Key Answer: A. Auxiliary public datasets (IMDb ratings)**
+  *Dịch: Bê bối riêng tư Giải thưởng Netflix là một ví dụ về việc tái định danh cá nhân bằng cách sử dụng: -> Đáp án chính: A. Auxiliary public datasets (IMDb ratings)*
+  *Ghi nhớ: Bài học từ Netflix Scandal: Tập dữ liệu ratings vô danh bị liên kết với tập dữ liệu công khai IMDb để khôi phục danh tính cá nhân.*
+
+- **Q: Why are anonymization and pseudonymization insufficient protection measures against data privacy leaks? -> Key Answer: D. They can be broken by combining this data with other publicly available data (Linkage attack)**
+  *Dịch: Tại sao các biện pháp ẩn danh hóa (Anonymization) và giả danh tính (Pseudonymization) không còn đủ để bảo vệ quyền riêng tư dữ liệu? -> Đáp án chính: D. They can be broken by combining this data with other publicly available data (Linkage attack)*
+  *Ghi nhớ: Rủi ro Tái định danh (Re-identification via Linkage Attack): Thuật toán và dữ liệu công khai ngoài (mạng xã hội, báo chí) dễ dàng khôi phục danh tính từ tệp ẩn danh hóa sơ sài.*
+
+- **Q: The Children's Online Privacy Protection Act (COPPA) safeguards the privacy of which age group? -> Key Answer: B. Anyone under 13 years old**
+  *Dịch: Đạo luật bảo vệ quyền riêng tư của trẻ em trên mạng (COPPA) bảo vệ quyền riêng tư của nhóm tuổi nào? -> Đáp án chính: B. Anyone under 13 years old*
+  *Ghi nhớ: Đạo luật COPPA (Mỹ): Quy định nghiêm ngặt việc thu thập thông tin cá nhân trực tuyến từ trẻ em dưới 13 tuổi phải có sự đồng ý của cha mẹ.*
+
+- **Q: The concept of 'Privacy by Design' requires organizations to integrate privacy protections during which phase? -> Key Answer: C. Throughout the entire system lifecycle from initial design**
+  *Dịch: Khái niệm 'Riêng tư theo thiết kế' (Privacy by Design) yêu cầu các tổ chức tích hợp các biện pháp bảo vệ quyền riêng tư vào giai đoạn nào? -> Đáp án chính: C. Throughout the entire system lifecycle from initial design*
+  *Ghi nhớ: Privacy by Design coi quyền riêng tư là thuộc tính cốt lõi được xây dựng sẵn từ kiến trúc móng ban đầu.*
+
+- **Q: Which data protection regulation empowers California residents to request deletion of their personal data? -> Key Answer: B. CCPA**
+  *Dịch: Quy định bảo vệ dữ liệu nào trao quyền cho cư dân California yêu cầu xóa dữ liệu cá nhân của họ? -> Đáp án chính: B. CCPA*
+  *Ghi nhớ: CCPA (California Consumer Privacy Act) quy định các quyền riêng tư cơ bản cho cư dân bang California.*
+
+- **Q: Why are simple anonymization techniques like removing names often inadequate for protecting privacy? -> Key Answer: D. They can be broken by combining this anonymized data with other publicly available datasets (Linkage attack)**
+  *Dịch: Tại sao các kỹ thuật ẩn danh hóa đơn giản như xóa tên thường không đủ để bảo vệ quyền riêng tư? -> Đáp án chính: D. They can be broken by combining this anonymized data with other publicly available datasets (Linkage attack)*
+  *Ghi nhớ: Linkage Attack in Simple Anonymization: Kết hợp dữ liệu xóa tên với dữ liệu cử tri/mạng xã hội công khai để tái định danh cá nhân.*
+
+- **Q: Which of the following is a limitation of regional data protection laws like GDPR or CCPA when applied to global AI platforms? -> Key Answer: C. Its specific national/regional jurisdiction scope versus global cross-border data flows**
+  *Dịch: Hạn chế của các đạo luật bảo vệ dữ liệu mang tính khu vực (như GDPR hay CCPA) khi áp dụng cho các nền tảng AI toàn cầu là gì? -> Đáp án chính: C. Its specific national/regional jurisdiction scope versus global cross-border data flows*
+  *Ghi nhớ: Cross-Border Data Flow & Jurisdiction: Luật pháp mang tính địa phương trong khi dữ liệu internet và AI vận hành toàn cầu xuyên biên giới.*
+
+- **Q: Which of the following is a key metric evaluated when measuring differential privacy noise? -> Key Answer: A. Epsilon (Privacy budget parameter)**
+  *Dịch: Đại lượng đo lường chính nào được sử dụng khi đánh giá mức độ riêng tư trong Differential Privacy? -> Đáp án chính: A. Epsilon (Privacy budget parameter)*
+  *Ghi nhớ: Differential Privacy Epsilon (ε): Tham số kiểm soát mức độ rò rỉ thông tin riêng tư (Epsilon càng nhỏ, tính riêng tư càng cao).*
+
+- **Q: GDPR states that 'Personal data shall be adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed.' This is known as the principle of data being: -> Key Answer: B. Not excessive (Data minimization)**
+  *Dịch: GDPR quy định rằng 'Dữ liệu cá nhân phải đầy đủ, liên quan và giới hạn trong những gì cần thiết cho mục đích xử lý.' Điều này gọi là nguyên tắc dữ liệu phải: -> Đáp án chính: B. Not excessive (Data minimization)*
+  *Ghi nhớ: GDPR Article 5(1)(c) Data Minimization: Dữ liệu thu thập không được dư thừa (Not excessive).*
+
+- **Q: Your business handles the personal data of California residents. Which regulation enables a resident to request data deletion? -> Key Answer: D. CCPA**
+  *Dịch: Doanh nghiệp xử lý dữ liệu cư dân California. Quy định nào cho phép cư dân yêu cầu xóa dữ liệu cá nhân? -> Đáp án chính: D. CCPA*
+  *Ghi nhớ: CCPA Right to Delete.*
+
+- **Q: Which of the following entities have the primary responsibility to enforce regulations and protect public interest regarding data privacy? -> Key Answer: C. National regulatory agencies and governments**
+  *Dịch: Thực thể nào sau đây có trách nhiệm chính trong việc thực thi các quy định pháp lý và bảo vệ lợi ích công cộng liên quan đến quyền riêng tư dữ liệu? -> Đáp án chính: C. National regulatory agencies and governments*
+  *Ghi nhớ: Vai trò Quản lý Nhà nước (Government Regulations): Chính phủ quốc gia có thẩm quyền ban hành và thực thi pháp luật (như GDPR, CCPA) để bảo vệ quyền lợi công chúng.*
+
+- **Q: The Children's Online Privacy Protection Act (COPPA) safeguards the privacy of personal information for which age group? -> Key Answer: B. Anyone under 13 years old**
+  *Dịch: Đạo luật bảo vệ quyền riêng tư của trẻ em trên mạng (COPPA) bảo vệ thông tin cá nhân của nhóm tuổi nào? -> Đáp án chính: B. Anyone under 13 years old*
+  *Ghi nhớ: COPPA (Children's Online Privacy Protection Act): Phạm vi áp dụng nghiêm ngặt bảo vệ dữ liệu cá nhân của trẻ em dưới 13 tuổi.*
 
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (35 câu)
 
@@ -3848,15 +4746,131 @@ remaining 20% of data is referred to as an**
 ## MOD-04: Information Security, Threat Modeling (STRIDE, VAST) & Cyber Threats
 ### An toàn Bảo mật, Mô hình hóa Mối đe dọa (STRIDE, VAST) & Mã độc
 
-#### Core Theory & Key Concepts / Lý Thuyết Cốt Lõi
-- **STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) and VAST (Visual, Agile, and Threat modeling) are threat modeling frameworks used to classify security risks.**
+#### Core Theory & Exhaustive Knowledge Points / Lý Thuyết Cốt Lõi & Tổng Hợp Kiến Thức Ôn Thi
+- **[CORE RULE] STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) and VAST (Visual, Agile, and Threat modeling) are threat modeling frameworks used to classify security risks.**
   *Dịch: STRIDE (Giả mạo, Xáo trộn, Phủ nhận, Tiết lộ thông tin, Từ chối dịch vụ, Nâng quyền) và VAST là các khung mô hình hóa mối đe dọa dùng để phân loại rủi ro bảo mật.*
 
-- **Spyware is malware that covertly monitors and records user behavior without their knowledge or explicit permission.**
+- **[CORE RULE] Spyware is malware that covertly monitors and records user behavior without their knowledge or explicit permission.**
   *Dịch: Spyware (Phần mềm theo dõi) là mã độc lén lút giám sát và ghi lại hành vi của người dùng mà họ không biết hoặc không cho phép.*
 
-- **Hacktivism is motivated primarily by political, social, or ideological causes rather than financial gain.**
+- **[CORE RULE] Hacktivism is motivated primarily by political, social, or ideological causes rather than financial gain.**
   *Dịch: Hacktivism (Hành động thâm nhập vì động cơ chính trị/xã hội) chủ yếu xuất phát từ lý do chính trị, xã hội hoặc tư tưởng thay vì lợi ích tài chính.*
+
+- **Q: In which of the following could STRIDE or VAST classifications be applied? -> Key Answer: D. Threat modeling or analysis tools**
+  *Dịch: Mô hình phân loại STRIDE hoặc VAST có thể được áp dụng trong lĩnh vực nào sau đây? -> Đáp án chính: D. Threat modeling or analysis tools*
+  *Ghi nhớ: STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) và VAST (Visual, Agile, and Threat modeling) là hai mô hình/khung phân loại mối đe dọa phổ biến nhất trong Threat Modeling.*
+
+- **Q: What is the primary motivating factor behind hacktivism? -> Key Answer: D. The desire for social change.**
+  *Dịch: Động cơ chính đằng sau hoạt động tấn công mạng vì mục đích chính trị/xã hội (hacktivism) là gì? -> Đáp án chính: D. The desire for social change.*
+  *Ghi nhớ: Hacktivism (Hacker + Activism): Việc sử dụng kỹ thuật tấn công mạng để truyền tải thông điệp chính trị, xã hội hoặc thúc đẩy sự thay đổi chính sách.*
+
+- **Q: Which of the following types of malware monitors a user's behavior without their knowledge or permission? -> Key Answer: B. Spyware**
+  *Dịch: Loại phần mềm độc hại nào sau đây lén lút theo dõi hành vi của người dùng mà không có sự đồng ý hoặc cho phép của họ? -> Đáp án chính: B. Spyware*
+  *Ghi nhớ: Spyware (Phần mềm gián điệp): Mã độc được thiết kế để theo dõi, thu thập thông tin cá nhân, thói quen duyệt web hoặc mật khẩu người dùng một cách lén lút.*
+
+- **Q: What is the function of a red team in a penetration testing exercise? -> Key Answer: A. To conduct the simulated attacks.**
+  *Dịch: Chức năng của Red Team trong một bài tập kiểm thử xâm nhập (penetration testing) là gì? -> Đáp án chính: A. To conduct the simulated attacks.*
+  *Ghi nhớ: Red Team vs Blue Team: Red Team đóng vai kẻ tấn công (offensive simulated attacks), Blue Team đóng vai phòng thủ (defensive).*
+
+- **Q: Which of the following describes the goal of integrity when it comes to cybersecurity? -> Key Answer: B. Ensuring that data hasn't been modified without authorization.**
+  *Dịch: Phát biểu nào sau đây mô tả mục tiêu của tính toàn vẹn (integrity) trong an ninh mạng? -> Đáp án chính: B. Ensuring that data hasn't been modified without authorization.*
+  *Ghi nhớ: CIA Triad - Integrity: Integrity đảm bảo dữ liệu chính xác và không bị chỉnh sửa trái phép.*
+
+- **Q: Which of the following is the most important ethical consideration regarding technical developments like deepfakes? -> Key Answer: B. They usurp a person's likeness and can then be weaponized against them.**
+  *Dịch: Cân nhắc đạo đức quan trọng nhất liên quan đến các phát triển kỹ thuật như deepfakes là gì? -> Đáp án chính: B. They usurp a person's likeness and can then be weaponized against them.*
+  *Ghi nhớ: Deepfake Ethical Threats: Bị mạo danh hình ảnh/giọng nói để bôi nhọ, tống tiền hoặc lừa đảo.*
+
+- **Q: Which of the following is a platform that includes hundreds of security exploit tools? -> Key Answer: C. Kali Linux**
+  *Dịch: Hệ điều hành/nền tảng nào sau đây tích hợp sẵn hàng trăm công cụ khai thác an ninh mạng (security exploit tools)? -> Đáp án chính: C. Kali Linux*
+  *Ghi nhớ: Kali Linux: Bản phân phối Linux chuyên dụng dành cho kiểm thử xâm nhập (Penetration Testing) tích hợp sẵn hàng trăm công cụ bảo mật.*
+
+- **Q: The organization needs to ask itself about any quality control issues it may be having. Which of the following processes is most suitable for asking and answering that question? -> Key Answer: C. Vulnerability audit**
+  *Dịch: Tổ chức cần tự đặt câu hỏi về các vấn đề kiểm soát chất lượng. Quy trình nào phù hợp nhất để hỏi và trả lời câu hỏi đó? -> Đáp án chính: C. Vulnerability audit*
+  *Ghi nhớ: Vulnerability Audit: Quy trình rà soát và kiểm tra các điểm yếu kỹ thuật/chất lượng trong hệ thống.*
+
+- **Q: Which of the following are examples of how Al can limit human autonomy? (Select two.) -> Key Answer: A. Weapon systems can limit human autonomy as humans may not have decision-making capability or understand the decision making. · B. Al systems might impact certain vulnerable groups such as the elderly and children differently than the rest of the population, which could limit those groups' autonomy.**
+  *Dịch: Những ví dụ nào cho thấy AI có thể làm giới hạn quyền tự trị của con người? (Chọn hai) -> Đáp án chính: A. Weapon systems can limit human autonomy as humans may not have decision-making capability or understand the decision making. · B. Al systems might impact certain vulnerable groups such as the elderly and children differently than the rest of the population, which could limit those groups' autonomy.*
+  *Ghi nhớ: AI Threats to Autonomy: Vũ khí tự động (Autonomous Weapons) và Tác động thiên vị lên nhóm yếu thế (Vulnerable groups).*
+
+- **Q: Which of the following are objectives of a forensic analysis? (select two.) -> Key Answer: B. To determine what occurred in an incident. · C. To identify who or what is responsible for an incident.**
+  *Dịch: Những mục tiêu nào sau đây của phân tích pháp y an ninh mạng (forensic analysis)? (Chọn hai) -> Đáp án chính: B. To determine what occurred in an incident. · C. To identify who or what is responsible for an incident.*
+  *Ghi nhớ: Digital Forensics Goals: Xác định diễn biến sự cố (what occurred) và nguyên nhân/kẻ chịu trách nhiệm (who/what is responsible).*
+
+- **Q: SSL, TLS, and SSH are all forms of... -> Key Answer: C. Encryption protocols**
+  *Dịch: SSL, TLS và SSH đều là các dạng của: -> Đáp án chính: C. Encryption protocols*
+  *Ghi nhớ: Cryptographic Protocols: SSL, TLS, SSH là các giao thức mã hóa đường truyền bảo vệ dữ liệu.*
+
+- **Q: Which of the following describes the purpose of SIEM? -> Key Answer: C. To aggregate alerts from disparate sources into a single analysis platform.**
+  *Dịch: Phát biểu nào sau đây mô tả mục đích của SIEM? -> Đáp án chính: C. To aggregate alerts from disparate sources into a single analysis platform.*
+  *Ghi nhớ: SIEM Role: Gộp log và cảnh báo an ninh từ nhiều nguồn phân tán để phân tích tập trung.*
+
+- **Q: Which of the following sources does a SIEM system typically pull data from? (Select two.) -> Key Answer: A. System event logs · D. Network intrusion detection alerts**
+  *Dịch: Hệ thống SIEM thường thu thập dữ liệu từ những nguồn nào sau đây? (Chọn hai) -> Đáp án chính: A. System event logs · D. Network intrusion detection alerts*
+  *Ghi nhớ: SIEM Data Sources: Hệ thống quản lý sự kiện an ninh thu thập nhật ký sự kiện và cảnh báo xâm nhập để phân tích tương quan mối đe dọa.*
+
+- **Q: When it comes to protecting private data, which of the following could be the root cause of a problem? -> Key Answer: A. The data was stored insecurely.**
+  *Dịch: Khi nói đến việc bảo vệ dữ liệu riêng tư, điều nào sau đây có thể là nguyên nhân gốc rễ (root cause) của vấn đề? -> Đáp án chính: A. The data was stored insecurely.*
+  *Ghi nhớ: Root Cause Analysis in Data Breach: Lưu trữ không an toàn (stored insecurely) là nguyên nhân gốc rễ; rò rỉ trên mạng (leaked online) là hậu quả bề nổi.*
+
+- **Q: If you were to place the task "Apply security patch to system on an attack tree diagram, what category would it be assigned to? -> Key Answer: C. Control**
+  *Dịch: Nếu bạn đặt nhiệm vụ "Áp dụng bản vá bảo mật cho hệ thống" trên sơ đồ cây tấn công (attack tree diagram), nó được xếp vào danh mục nào? -> Đáp án chính: C. Control*
+  *Ghi nhớ: Attack Tree Terminology: Threat (mối đe dọa), Vector (con đường tấn công), Control (biện pháp ngăn chặn/kiểm soát như áp bản vá patch).*
+
+- **Q: Which of the following software development principles is essential in the real-world deployment of AI-enabled software applications in critical scenarios like self-driving cars? -> Key Answer: A. Robustness to adversarial examples**
+  *Dịch: Nguyên tắc phát triển phần mềm nào sau đây là thiết yếu trong việc triển khai thực tế các ứng dụng AI trong các kịch bản quan trọng như xe tự lái? -> Đáp án chính: A. Robustness to adversarial examples*
+  *Ghi nhớ: Tấn công đối kháng (Adversarial Attacks) có thể đánh lừa xe tự lái (như dán băng dính lên biển báo dừng). Mô hình bắt buộc phải có tính chống chịu (Robustness) an toàn.*
+
+- **Q: In which of the following applications could STRIDE or VAST classifications be applied? -> Key Answer: D. Threat modeling or analysis tools**
+  *Dịch: Phân loại STRIDE hoặc VAST có thể được áp dụng trong ứng dụng nào sau đây? -> Đáp án chính: D. Threat modeling or analysis tools*
+  *Ghi nhớ: Mô hình hóa mối đe dọa (Threat Modeling): STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) và VAST là hai khung tiêu chuẩn đánh giá rủi ro an ninh mạng.*
+
+- **Q: Which of the following describes the primary purpose of a SIEM system? -> Key Answer: C. To aggregate, correlate, and analyze alerts/logs from disparate security sources into a single analysis platform**
+  *Dịch: Nội dung nào sau đây mô tả đúng nhất mục đích chính của hệ thống SIEM? -> Đáp án chính: C. To aggregate, correlate, and analyze alerts/logs from disparate security sources into a single analysis platform*
+  *Ghi nhớ: SIEM (Security Information and Event Management): Tập trung hóa logs và cảnh báo an ninh từ phòng tuyến mạng, máy chủ, ứng dụng để giám sát tổng thể.*
+
+- **Q: Which of the following types of malware monitors a user's behavior without their knowledge or consent? -> Key Answer: B. Spyware**
+  *Dịch: Loại phần mềm độc hại (Malware) nào lén lút theo dõi hành vi của người dùng mà không có sự biết đến hoặc đồng ý của họ? -> Đáp án chính: B. Spyware*
+  *Ghi nhớ: Spyware (Phần mềm gián điệp): Ngầm thu thập bàn phím, mật khẩu, vị trí và hành vi duyệt web của người dùng để gửi về máy chủ kẻ tấn công.*
+
+- **Q: When it comes to protecting private data, which of the following could be the root cause of a data breach? -> Key Answer: A. The data was stored insecurely without encryption**
+  *Dịch: Khi nói về việc bảo vệ dữ liệu riêng tư, nội dung nào sau đây có thể là nguyên nhân gốc rễ (root cause) dẫn đến sự cố rò rỉ dữ liệu? -> Đáp án chính: A. The data was stored insecurely without encryption*
+  *Ghi nhớ: Root Cause vs Symptom: Lưu trữ dữ liệu không an toàn (Stored Insecurely) là nguyên nhân gốc rễ dẫn tới hậu quả rò rỉ (Leaked Online).*
+
+- **Q: Which of the following sources does a SIEM (Security Information and Event Management) system typically pull data from? (Select two.) -> Key Answer: A. System event logs & D. Network intrusion detection alerts**
+  *Dịch: Hệ thống SIEM (Quản lý Sự kiện và Thông tin An ninh) thường thu thập dữ liệu từ những nguồn nào sau đây? (Select two) -> Đáp án chính: A. System event logs & D. Network intrusion detection alerts*
+  *Ghi nhớ: Nguồn dữ liệu của SIEM: Thu thập Logs sự kiện hệ thống và Cảnh báo an ninh mạng (IDS/IPS Alerts) để tổng hợp phân tích đe dọa.*
+
+- **Q: What does the acronym SIEM stand for in a cybersecurity context? -> Key Answer: C. Security Information and Event Management**
+  *Dịch: Từ viết tắt SIEM đại diện cho điều gì trong bối cảnh an ninh mạng? -> Đáp án chính: C. Security Information and Event Management*
+  *Ghi nhớ: SIEM (Security Information and Event Management): Nền tảng an ninh mạng tổng hợp, tương quan và phân tích log sự kiện từ toàn bộ hạ tầng công nghệ.*
+
+- **Q: A major downside to k-anonymity is that re-identification is possible with: -> Key Answer: A. Multiple datasets (Auxiliary data linkage)**
+  *Dịch: Hạn chế lớn của kỹ thuật k-anonymity là việc tái định danh danh tính cá nhân vẫn có thể xảy ra khi kết hợp với: -> Đáp án chính: A. Multiple datasets (Auxiliary data linkage)*
+  *Ghi nhớ: Linkage Attack on k-Anonymity: Kẻ tấn công liên kết tập dữ liệu k-anonymity với tập dữ liệu công khai bổ sung để khôi phục danh tính cá nhân.*
+
+- **Q: If you were to place the task 'Apply security patch to system' in a RACI matrix, who holds the ultimate approval responsibility? -> Key Answer: B. Accountable**
+  *Dịch: Nếu bạn xếp nhiệm vụ 'Áp dụng bản vá an ninh cho hệ thống' vào ma trận RACI, ai là người gánh chịu trách nhiệm phê duyệt và giải trình cuối cùng? -> Đáp án chính: B. Accountable*
+  *Ghi nhớ: Ma trận RACI: Accountable (A) là cá nhân duy nhất sở hữu quyền quyết định phê duyệt và gánh hậu quả cuối cùng.*
+
+- **Q: In cybersecurity, which team is responsible for simulating attacks to test system defenses? -> Key Answer: B. Red team**
+  *Dịch: Trong an toàn thông tin, đội ngũ nào chịu trách nhiệm giả lập các cuộc tấn công để kiểm thử hàng rào phòng thủ hệ thống? -> Đáp án chính: B. Red team*
+  *Ghi nhớ: Red Team đóng vai kẻ tấn công thực tế (Adversary simulation) để phát hiện lỗ hổng hệ thống.*
+
+- **Q: Which of the following Information Security pillars confirms the claimed identity of a user or system? -> Key Answer: B. Authentication**
+  *Dịch: Trụ cột an toàn thông tin nào sau đây giúp xác minh tính đúng đắn của danh tính được khai báo của người dùng hoặc hệ thống? -> Đáp án chính: B. Authentication*
+  *Ghi nhớ: Authentication vs Authorization: Authentication (Xác thực - Bạn là ai?), Authorization (Phân quyền - Bạn được làm gì?).*
+
+- **Q: Which of the following topics would be most appropriate to cover in a physical security policy? -> Key Answer: B. How long CCTV camera recordings and physical access logs should be maintained**
+  *Dịch: Chủ đề nào sau đây là phù hợp nhất để quy định trong một Chính sách an ninh vật lý (Physical security policy)? -> Đáp án chính: B. How long CCTV camera recordings and physical access logs should be maintained*
+  *Ghi nhớ: Physical Security Policy: Quản lý thiết bị giám sát camera CCTV, thẻ từ ra vào, khóa cửa phòng máy chủ và bảo vệ hạ tầng phần cứng.*
+
+- **Q: Why are deepfakes considered an ethical threat to personal rights? -> Key Answer: B. They usurp a person's likeness, identity, and voice, which can then be weaponized against them without consent**
+  *Dịch: Tại sao công nghệ Deepfake lại bị coi là một đe dọa đạo đức đối với quyền cá nhân? -> Đáp án chính: B. They usurp a person's likeness, identity, and voice, which can then be weaponized against them without consent*
+  *Ghi nhớ: Deepfake Risks: Xâm phạm nghiêm trọng danh tính và hình ảnh cá nhân (Likeness & Voice theft) để mạo danh thao túng.*
+
+- **Q: An adversarial model attack or test relies primarily on using: -> Key Answer: A. Perturbed inputs (Adversarial perturbation inputs)**
+  *Dịch: Một cuộc tấn công hoặc kiểm thử mô hình đối kháng (Adversarial model) chủ yếu dựa vào việc sử dụng: -> Đáp án chính: A. Perturbed inputs (Adversarial perturbation inputs)*
+  *Ghi nhớ: Adversarial Attacks (Nhiễu đối kháng): Thêm các nhiễu siêu nhỏ không thể nhận biết bởi con người (Perturbed inputs) để lừa mô hình AI dự đoán sai hoàn toàn.*
 
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (29 câu)
 
@@ -4352,12 +5366,28 @@ remaining 20% of data is referred to as an**
 ## MOD-05: Intellectual Property, Copyright, Patents & Trade Secrets
 ### Sở hữu Trí tuệ, Bản quyền, Bằng sáng chế & Bí mật Thương mại
 
-#### Core Theory & Key Concepts / Lý Thuyết Cốt Lõi
-- **Intellectual Property (IP) protections include Copyrights (expression of ideas), Patents (inventions/processes), Trade Secrets (confidential formulas), and Trademarks (brand identifiers).**
+#### Core Theory & Exhaustive Knowledge Points / Lý Thuyết Cốt Lõi & Tổng Hợp Kiến Thức Ôn Thi
+- **[CORE RULE] Intellectual Property (IP) protections include Copyrights (expression of ideas), Patents (inventions/processes), Trade Secrets (confidential formulas), and Trademarks (brand identifiers).**
   *Dịch: Các hình thức bảo hộ Sở hữu Trí tuệ (IP) bao gồm Bản quyền (bản thể hiện ý tưởng), Bằng sáng chế (phát minh/quy trình), Bí mật thương mại (công thức bảo mật) và Nhãn hiệu (dấu hiệu thương hiệu).*
 
-- **Trade Secrets provide competitive advantage without expiration, provided confidentiality is strictly maintained by the organization.**
+- **[CORE RULE] Trade Secrets provide competitive advantage without expiration, provided confidentiality is strictly maintained by the organization.**
   *Dịch: Bí mật thương mại mang lại lợi thế cạnh tranh mà không có thời hạn hết hiệu lực, miễn là tính bảo mật được tổ chức duy trì nghiêm ngặt.*
+
+- **Q: Which of the following is a misuse of intellectual property (IP) when it comes to ethical accountability for an organization? -> Key Answer: D. Using IP as a defensive mechanism to eschew transparency requirements.**
+  *Dịch: Hành vi nào sau đây là sự sử dụng sai trái sở hữu trí tuệ (IP) về mặt trách nhiệm giải trình đạo đức của tổ chức? -> Đáp án chính: D. Using IP as a defensive mechanism to eschew transparency requirements.*
+  *Ghi nhớ: IP Misuse & Transparency: Lấy lý do "bảo mật bí mật kinh doanh/IP" để từ chối giải trình và che giấu sai sót thuật toán là hành vi vi phạm đạo đức.*
+
+- **Q: What shared principle from ethical frameworks in intellectual property often at odds with? -> Key Answer: D. Transparency/explainability**
+  *Dịch: Nguyên tắc chung nào từ các khung chuẩn đạo đức thường xung đột với sở hữu trí tuệ (IP)? -> Đáp án chính: D. Transparency/explainability*
+  *Ghi nhớ: IP vs Transparency Conflict: Doanh nghiệp muốn giấu mã nguồn/dữ liệu vì lý do bí mật sở hữu trí tuệ (IP), gây xung đột trực tiếp với yêu cầu minh bạch và giải thích thuật toán (Transparency/Explainability).*
+
+- **Q: What shared principle from ethical frameworks in intellectual property often at odds with AI transparency? -> Key Answer: D. Transparency / Explainability**
+  *Dịch: Quyền sở hữu trí tuệ (Intellectual Property - bí mật thương mại) thường mâu thuẫn trực tiếp với nguyên tắc đạo đức chung nào? -> Đáp án chính: D. Transparency / Explainability*
+  *Ghi nhớ: Sự xung đột giữa Minh bạch AI và Sở hữu trí tuệ: Các công ty từ chối công khai mã nguồn/mô hình vì lý do bảo hộ bí mật kinh doanh.*
+
+- **Q: What shared principle from ethical frameworks is intellectual property often at odds with? -> Key Answer: D. Transparency / Explainability**
+  *Dịch: Quyền sở hữu trí tuệ (Intellectual Property - bí mật thương mại) thường mâu thuẫn trực tiếp với nguyên tắc đạo đức chung nào? -> Đáp án chính: D. Transparency / Explainability*
+  *Ghi nhớ: Sự xung đột giữa Minh bạch AI và Sở hữu trí tuệ: Các công ty từ chối công khai mã nguồn/mô hình vì lý do bảo hộ bí mật kinh doanh.*
 
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (4 câu)
 
@@ -4432,15 +5462,279 @@ remaining 20% of data is referred to as an**
 ## MOD-06: Risk Management, Liability, Accountability & Governance
 ### Quản lý Rủi ro, Trách nhiệm Giải trình & Quản trị Tổ chức
 
-#### Core Theory & Key Concepts / Lý Thuyết Cốt Lõi
-- **Proactive Risk Management addresses potential liability issues early, preventing costly legal battles, reputational damage, and ethical failures.**
+#### Core Theory & Exhaustive Knowledge Points / Lý Thuyết Cốt Lõi & Tổng Hợp Kiến Thức Ôn Thi
+- **[CORE RULE] Proactive Risk Management addresses potential liability issues early, preventing costly legal battles, reputational damage, and ethical failures.**
   *Dịch: Quản lý rủi ro chủ động giải quyết các vấn đề trách nhiệm pháp lý từ sớm, ngăn ngừa các tranh chấp pháp lý tốn kém, tổn hại uy tín và thất bại về đạo đức.*
 
-- **Categorizing ethical risks into distinct types allows organizations to prioritize mitigations, allocate resources efficiently, and assign governance ownership.**
+- **[CORE RULE] Categorizing ethical risks into distinct types allows organizations to prioritize mitigations, allocate resources efficiently, and assign governance ownership.**
   *Dịch: Việc phân loại các rủi ro đạo đức thành các nhóm riêng biệt giúp tổ chức ưu tiên các giải pháp giảm thiểu, phân bổ nguồn lực hiệu quả và xác định rõ trách nhiệm quản trị.*
 
-- **System Accountability requires clear human oversight, audit logs, and defined roles for decisions produced by automated systems.**
+- **[CORE RULE] System Accountability requires clear human oversight, audit logs, and defined roles for decisions produced by automated systems.**
   *Dịch: Trách nhiệm giải trình hệ thống đòi hỏi sự giám sát rõ ràng của con người, nhật ký kiểm toán và các vai trò được xác định cho các quyết định do hệ thống tự động đưa ra.*
+
+- **Q: Which element is essential for system accountability? -> Key Answer: B. Clear responsibility assignment**
+  *Dịch: Yếu tố nào là thiết yếu đối với tính trách nhiệm giải trình (accountability) của hệ thống? -> Đáp án chính: B. Clear responsibility assignment*
+  *Ghi nhớ: System Accountability (Trách nhiệm giải trình hệ thống): Yêu cầu xác định rõ cá nhân hoặc tổ chức chịu trách nhiệm cho hành vi, quyết định và hậu quả do hệ thống gây ra.*
+
+- **Q: Which of the following risk categories deals with stakeholder responsibility in creating and using data-driven technologies? -> Key Answer: B. Accountability**
+  *Dịch: Phạm trù rủi ro nào sau đây đề cập đến trách nhiệm của các bên liên quan trong việc tạo ra và sử dụng các công nghệ dựa trên dữ liệu? -> Đáp án chính: B. Accountability*
+  *Ghi nhớ: Accountability (Trách nhiệm giải trình): Quy định trách nhiệm pháp lý và đạo đức của các bên liên quan (nhà phát triển, tổ chức triển khai) đối với hành vi và tác động của công nghệ.*
+
+- **Q: Why is it important to take a proactive approach to addressing liability issues? -> Key Answer: A. The law often lags behind innovation.**
+  *Dịch: Tại sao việc chủ động (proactive) giải quyết các vấn đề về trách nhiệm pháp lý lại quan trọng? -> Đáp án chính: A. The law often lags behind innovation.*
+  *Ghi nhớ: Legal Lag in Tech: Công nghệ đổi mới quá nhanh khiến luật pháp không kịp ban hành các quy định điều chỉnh, do đó doanh nghiệp phải chủ động xây dựng chuẩn mực trách nhiệm trước khi luật ra đời.*
+
+- **Q: What is the purpose of change management in terms of creating an ethical organizational culture? -> Key Answer: C. To create a smooth transition..**
+  *Dịch: Mục đích của quản lý sự thay đổi (change management) trong việc tạo dựng văn hóa tổ chức đạo đức là gì? -> Đáp án chính: C. To create a smooth transition..*
+  *Ghi nhớ: Change Management in Ethics: Quản lý sự thay đổi giúp tổ chức áp dụng các chuẩn mực đạo đức mới một cách nhẹ nhàng, suôn sẻ mà không gây xáo trộn tổ chức.*
+
+- **Q: Which strategy is key to building and maintaining an ethical organizational culture? -> Key Answer: A. Implementing ethics training and effective sessions**
+  *Dịch: Chiến lược nào là chìa khóa để xây dựng và duy trì một văn hóa tổ chức đạo đức? -> Đáp án chính: A. Implementing ethics training and effective sessions*
+  *Ghi nhớ: Ethical Culture Building: Đào tạo liên tục giúp thấm nhuần tư tưởng đạo đức vào hành vi hàng ngày của nhân viên.*
+
+- **Q: Which approach to corporate governance is more likely to create an ethical organizational culture? -> Key Answer: A. A systemic approach with incentive systems.**
+  *Dịch: Cách tiếp cận nào đối với quản trị doanh nghiệp có nhiều khả năng tạo ra văn hóa tổ chức đạo đức hơn? -> Đáp án chính: A. A systemic approach with incentive systems.*
+  *Ghi nhớ: Systemic Governance & Incentives: Văn hóa đạo đức bền vững khi được tích hợp vào toàn bộ hệ thống vận hành và gắn liền với cơ chế khen thưởng nhân viên.*
+
+- **Q: Which of the following constitute external stakeholders in the context of a code of ethics? -> Key Answer: C. Regulators**
+  *Dịch: Đối tượng nào sau đây cấu thành các bên liên quan bên ngoài (external stakeholders) trong bối cảnh bộ quy tắc đạo đức? -> Đáp án chính: C. Regulators*
+  *Ghi nhớ: Internal vs External Stakeholders: Internal (quản lý, dev, designer); External (khách hàng, cơ quan quản lý/regulators, cộng đồng).*
+
+- **Q: Which of the following is a key element of communications with internal and external stakeholders regarding an organization's ethics policies? -> Key Answer: A. Simple to follow examples**
+  *Dịch: Yếu tố then chốt trong truyền thông chính sách đạo đức tới các bên liên quan nội bộ và bên ngoài là gì? -> Đáp án chính: A. Simple to follow examples*
+  *Ghi nhớ: Clear Ethics Communication: Thông điệp đạo đức cần ngắn gọn, dễ hiểu và đi kèm các ví dụ thực tế minh họa.*
+
+- **Q: What is a key step in monitoring ethical organizational policies? -> Key Answer: B. Regular compliance checks**
+  *Dịch: Bước then chốt trong việc giám sát các chính sách tổ chức đạo đức là gì? -> Đáp án chính: B. Regular compliance checks*
+  *Ghi nhớ: Policy Monitoring: Giám sát chính sách đòi hỏi các đợt kiểm tra tuân thủ định kỳ để phát hiện sai lệch kịp thời.*
+
+- **Q: Which of the following are likely benefits of having defined organizational policies? (Select two.) -> Key Answer: B. It supports accountability and makes it more explicit · C. It supports consistency of behavior and unification of culture.**
+  *Dịch: Những lợi ích nào sau đây là lợi ích của việc có các chính sách tổ chức được xác định rõ ràng? (Chọn hai) -> Đáp án chính: B. It supports accountability and makes it more explicit · C. It supports consistency of behavior and unification of culture.*
+  *Ghi nhớ: Policy Benefits: Chính sách tạo ra khung trách nhiệm (accountability) và tính nhất quán trong hành vi tổ chức (consistency of behavior).*
+
+- **Q: Which of the following is an adequate definition of a stakeholder? -> Key Answer: C. All people who have an impact or are impacted by the organization.**
+  *Dịch: Định nghĩa nào sau đây là đầy đủ và chính xác nhất về bên liên quan (stakeholder)? -> Đáp án chính: C. All people who have an impact or are impacted by the organization.*
+  *Ghi nhớ: Stakeholder Definition: Khái niệm bên liên quan bao gồm bất kỳ cá nhân, nhóm hay tổ chức nào có thể ảnh hưởng hoặc chịu tác động từ hoạt động kinh doanh của doanh nghiệp.*
+
+- **Q: The endorsement of which of the following types of stakeholder is most critical when developing mission and vision statements? -> Key Answer: B. C-suite executives**
+  *Dịch: Sự bảo chứng/ủng hộ của nhóm bên liên quan nào sau đây là quan trọng nhất khi xây dựng tuyên bố sứ mệnh và tầm nhìn? -> Đáp án chính: B. C-suite executives*
+  *Ghi nhớ: Tone at the Top: Tầm nhìn và sứ mệnh chiến lược đạo đức bắt buộc phải có sự bảo trợ và cam kết trực tiếp từ ban lãnh đạo cấp cao (CEO, CTO, CIO).*
+
+- **Q: Which of the following might be a risk of not having an ethical organizational culture? -> Key Answer: B. Employees might face cognitive dissonance.**
+  *Dịch: Rủi ro nào có thể xảy ra nếu không có một văn hóa tổ chức đạo đức? -> Đáp án chính: B. Employees might face cognitive dissonance.*
+  *Ghi nhớ: Cognitive Dissonance in Unethical Workplace: Nhân viên mâu thuẫn giữa giá trị đạo đức cá nhân và các hành vi vi phạm đạo đức bị công ty ép buộc.*
+
+- **Q: Which of the following is an important reason for continually refreshing an organization's internal and external ethics policies? -> Key Answer: C. It helps maintain alignment with the emergent risks and changing ethical posture of the products and services of the organization.**
+  *Dịch: Lý do quan trọng cho việc liên tục cập nhật các chính sách đạo đức nội bộ và bên ngoài của tổ chức là gì? -> Đáp án chính: C. It helps maintain alignment with the emergent risks and changing ethical posture of the products and services of the organization.*
+  *Ghi nhớ: Evolving Ethics Policy: Công nghệ và rủi ro mới (emergent risks) liên tục xuất hiện đòi hỏi chính sách đạo đức phải cập nhật tương ứng.*
+
+- **Q: Which of the following risk analysis methods use words like "likely," "unlikely," and "rare" to describe the likelihood of risk, and words like "low," "medium," and "high" to describe the impact of risk? (Select two.) -> Key Answer: C. Semi-quantitative analysis · D. Qualitative analysis**
+  *Dịch: Phương pháp phân tích rủi ro nào sau đây sử dụng các từ như "likely" (có thể xảy ra), "unlikely" (khó xảy ra) và "rare" (hiếm gặp) để mô tả khả năng xảy ra rủi ro, và "moderate" (vừa phải), "major" (nghiêm trọng), "catastrophic" (thảm khốc) để mô tả tác động? -> Đáp án chính: C. Semi-quantitative analysis · D. Qualitative analysis*
+  *Ghi nhớ: Qualitative vs Semi-quantitative Risk Analysis: Hai phương pháp này sử dụng các nhãn từ ngữ mô tả thay vì các con số xác suất chính xác để đánh giá mức độ rủi ro.*
+
+- **Q: Which of the following are potential ethical benefits of conducting pilot testing prior to the release of emerging technologies? (Select two.) -> Key Answer: B. It minimizes the impact of any ethical issues which may emerge. · D. It reveals any gaps in accountability or auditability.**
+  *Dịch: Lợi ích của việc đưa quy trình kiểm toán (auditing process) vào các đợt phát hành sản phẩm định kỳ là gì? (Chọn hai) -> Đáp án chính: B. It minimizes the impact of any ethical issues which may emerge. · D. It reveals any gaps in accountability or auditability.*
+  *Ghi nhớ: Continuous Auditing Benefits: Kiểm toán định kỳ giúp phát hiện sớm khoảng trống trách nhiệm (gaps in accountability) và giảm thiểu tác hại sự cố (minimizes impact).*
+
+- **Q: Which of the following are fundamental risk management tasks? (Select two.) -> Key Answer: A. Mitigation · D. Identification**
+  *Dịch: Những nhiệm vụ nào sau đây là nhiệm vụ quản lý rủi ro cơ bản? (Chọn hai) -> Đáp án chính: A. Mitigation · D. Identification*
+  *Ghi nhớ: Core Risk Management Tasks: Risk Identification (Nhận diện rủi ro), Risk Assessment (Đánh giá), Risk Mitigation (Giảm thiểu rủi ro).*
+
+- **Q: Which of the following are pitfalls in communicating risks to the organization? (select two.) -> Key Answer: A. Having a disjoined message. · C. Not paying attention to the flow of messaging.**
+  *Dịch: Những cạm bẫy nào trong việc truyền thông rủi ro tới tổ chức? (Chọn hai) -> Đáp án chính: A. Having a disjoined message. · C. Not paying attention to the flow of messaging.*
+  *Ghi nhớ: Communication Pitfalls: Thông điệp bị rời rạc (disjointed) và Không quản lý luồng thông tin (flow of messaging).*
+
+- **Q: Which of the following should be conducted as part of a risk communication strategy in order to ensure the organization is upholding its regulatory obligations? -> Key Answer: B. Compliance audit**
+  *Dịch: Hoạt động nào sau đây nên được thực hiện như một phần của chiến lược truyền thông rủi ro để đảm bảo tổ chức tuân thủ nghĩa vụ pháp lý? -> Đáp án chính: B. Compliance audit*
+  *Ghi nhớ: Compliance Audit: Kiểm tra việc tuân thủ các quy định pháp luật bắt buộc.*
+
+- **Q: Which organizational resource is most commonly used in terms of fostering an ethical organizational culture? -> Key Answer: D. Human resources**
+  *Dịch: Nguồn lực tổ chức nào thường được sử dụng phổ biến nhất để thúc đẩy văn hóa tổ chức đạo đức? -> Đáp án chính: D. Human resources*
+  *Ghi nhớ: Human Resources in Ethical Culture: Con người là chủ thể tạo nên và duy trì văn hóa đạo đức trong tổ chức.*
+
+- **Q: Which of the following is an explainability risk of self-learning models? -> Key Answer: C. Self-learning models are black boxes whose decisions cannot be understood.**
+  *Dịch: Rủi ro về khả năng giải thích của các mô hình tự học (self-learning models) là gì? -> Đáp án chính: C. Self-learning models are black boxes whose decisions cannot be understood.*
+  *Ghi nhớ: Self-Learning Black Box Risk: Thuật toán tự học liên tục thay đổi trọng số làm cho quy trình ra quyết định trở thành hộp đen hoàn toàn.*
+
+- **Q: An ethical impact assessment is -> Key Answer: B. Focused on preventing future problems.**
+  *Dịch: Đánh giá tác động đạo đức (ethical impact assessment) là gì? -> Đáp án chính: B. Focused on preventing future problems.*
+  *Ghi nhớ: Ethical Impact Assessment (EIA): Công cụ chủ động giúp tổ chức dự báo và ngăn chặn các rủi ro đạo đức trước khi triển khai hệ thống.*
+
+- **Q: Which of the following constitute internal stakeholders in the context of a code of ethics? -> Key Answer: B. Designers**
+  *Dịch: Đối tượng nào sau đây được coi là bên liên quan nội bộ (internal stakeholders) trong bối cảnh thực thi bộ quy tắc đạo đức? -> Đáp án chính: B. Designers*
+  *Ghi nhớ: Internal vs External Stakeholders: Bên liên quan nội bộ trực tiếp tham gia vận hành và phát triển bên trong tổ chức.*
+
+- **Q: Which of the following is an important reason to have a policy owner for internal and external ethics policies? -> Key Answer: C. They can help to bring the right internal and external stakeholders together to help draft these ethics policies.**
+  *Dịch: Lý do quan trọng vì sao cần có một chủ sở hữu chính sách (policy owner) cho các chính sách đạo đức nội bộ và bên ngoài là gì? -> Đáp án chính: C. They can help to bring the right internal and external stakeholders together to help draft these ethics policies.*
+  *Ghi nhớ: Role of a Policy Owner: Người sở hữu chính sách đóng vai trò điều phối, kết nối ý kiến từ nhiều bên liên quan để xây dựng chính sách có tính đồng thuận cao.*
+
+- **Q: How is culture building workshop different from ethics training? -> Key Answer: A. Culture-building workshops teaches people how to integrate company values into daily practice, while ethics training teaches the company values.**
+  *Dịch: Hội thảo xây dựng văn hóa (culture building workshop) khác với đào tạo đạo đức (ethics training) như thế nào? -> Đáp án chính: A. Culture-building workshops teaches people how to integrate company values into daily practice, while ethics training teaches the company values.*
+  *Ghi nhớ: Culture Workshop vs Ethics Training: Ethics Training = Giảng dạy kiến thức/giá trị; Culture Workshop = Thực hành tích hợp giá trị vào công việc hàng ngày.*
+
+- **Q: How does the low likelihood of a crisis relate to its potential impact? -> Key Answer: B. A crisis with low likelihood tends to have high impact.**
+  *Dịch: Khả năng xảy ra thấp của một cuộc khủng hoảng có mối quan hệ như thế nào với tác động tiềm ẩn của nó? -> Đáp án chính: B. A crisis with low likelihood tends to have high impact.*
+  *Ghi nhớ: Black Swan Event / Risk Matrix: Sự cố có xác suất rất thấp (low likelihood) thường có sức tàn phá và tác động cực kỳ nghiêm trọng (high impact) do thiếu sự chuẩn bị.*
+
+- **Q: Which of the following are logical arguments in favor of an organization maintaining compliance? (Select two.) -> Key Answer: B. Avoidance of reputational damage · C. Long-term cost savings due to avoiding fines**
+  *Dịch: Những lập luận logic nào ủng hộ tổ chức duy trì sự tuân thủ (compliance)? (Chọn hai) -> Đáp án chính: B. Avoidance of reputational damage · C. Long-term cost savings due to avoiding fines*
+  *Ghi nhớ: Compliance Value Proposition: Bảo vệ uy tín (Reputational damage) và Tiết kiệm chi phí tiền phạt trừng phạt (Avoiding fines).*
+
+- **Q: Why is accountability an important principle to include in governance structures for data-driven technologies? -> Key Answer: A. Accountability in governance structures encourages all employees to feel responsible for building trustworthy systems.**
+  *Dịch: Tại sao trách nhiệm giải trình (accountability) lại là một nguyên tắc quan trọng cần đưa vào cấu trúc quản trị công nghệ dựa trên dữ liệu? -> Đáp án chính: A. Accountability in governance structures encourages all employees to feel responsible for building trustworthy systems.*
+  *Ghi nhớ: Shared Accountability in Governance: Trách nhiệm giải trình tạo nên ý thức trách nhiệm chung cho mọi nhân viên.*
+
+- **Q: Which of the following is a transparency risk of closed source software? -> Key Answer: A. Closed source software may not be accessible to independent auditors.**
+  *Dịch: Rủi ro về tính minh bạch của phần mềm mã nguồn đóng (closed source software) là gì? -> Đáp án chính: A. Closed source software may not be accessible to independent auditors.*
+  *Ghi nhớ: Closed Source Transparency Risk: Mã nguồn đóng cản trở việc kiểm toán độc lập (independent audit) để phát hiện lỗ hổng và định kiến.*
+
+- **Q: Which of the following describes why explainability is important? -> Key Answer: C. It provides accountability and trust.**
+  *Dịch: Phát biểu nào mô tả tại sao khả năng giải thích (explainability) lại quan trọng? -> Đáp án chính: C. It provides accountability and trust.*
+  *Ghi nhớ: Core Value of Explainability: Explainability tạo tiền đề vững chắc cho Trách nhiệm giải trình (Accountability) và Niềm tin (Trust).*
+
+- **Q: Which of the following best distinguishes between responsibility, accountability, and liability? -> Key Answer: A. Responsibility is the duty to complete a task, accountability is ownership of outcomes, and liability is legal obligation for any potential damages**
+  *Dịch: Khái niệm nào sau đây phân biệt rõ nhất giữa Trách nhiệm nghĩa vụ (Responsibility), Trách nhiệm giải trình (Accountability) và Trách nhiệm pháp lý (Liability)? -> Đáp án chính: A. Responsibility is the duty to complete a task, accountability is ownership of outcomes, and liability is legal obligation for any potential damages*
+  *Ghi nhớ: Ba khái niệm quản trị: Responsibility (nhiệm vụ thực thi), Accountability (chịu trách nhiệm kết quả) và Liability (bồi thường pháp lý).*
+
+- **Q: Which international standard provides guidelines for AI governance? -> Key Answer: C. ISO/IEC 42001**
+  *Dịch: Tiêu chuẩn quốc tế nào cung cấp các hướng dẫn cho hệ thống quản trị AI trong tổ chức? -> Đáp án chính: C. ISO/IEC 42001*
+  *Ghi nhớ: ISO/IEC 42001 là tiêu chuẩn quốc tế đầu tiên chứng nhận Hệ thống quản trị trí tuệ nhân tạo (AIMS - Artificial Intelligence Management System).*
+
+- **Q: How can an organization promote an ethical culture from the top down? -> Key Answer: A. Leadership actively models ethical behavior**
+  *Dịch: Tổ chức có thể thúc đẩy văn hóa đạo đức từ trên xuống (top-down) như thế nào? -> Đáp án chính: A. Leadership actively models ethical behavior*
+  *Ghi nhớ: Thúc đẩy văn hóa top-down đòi hỏi cấp lãnh đạo cao nhất phải thể hiện cam kết đạo đức qua từng quyết định thực tế.*
+
+- **Q: What is one outcome of building an ethical culture within an organization? -> Key Answer: B. Higher trust among stakeholders**
+  *Dịch: Một kết quả của việc xây dựng văn hóa đạo đức trong một tổ chức là gì? -> Đáp án chính: B. Higher trust among stakeholders*
+  *Ghi nhớ: Văn hóa đạo đức củng cố lòng tin của khách hàng, đối tác, nhân viên và cơ quan quản lý đối với tổ chức.*
+
+- **Q: Which expression best characterizes what a company or organizational culture is? -> Key Answer: B. "This is how things are done around here."**
+  *Dịch: Câu nói nào sau đây thể hiện rõ nhất bản chất văn hóa của một công ty hoặc tổ chức? -> Đáp án chính: B. "This is how things are done around here."*
+  *Ghi nhớ: Văn hóa doanh nghiệp là tập hợp các thói quen, hành vi và chuẩn mực ngầm được mọi người thực hành hàng ngày ('How things are done around here').*
+
+- **Q: Why is it important to engage stakeholders at the beginning of the ethical nsk management process? -> Key Answer: D. It demonstrates that the organization is committed to accountability and transparency in their data-driven systems**
+  *Dịch: Tại sao việc tham vấn các bên liên quan từ khi bắt đầu quy trình quản trị rủi ro đạo đức lại quan trọng? -> Đáp án chính: D. It demonstrates that the organization is committed to accountability and transparency in their data-driven systems*
+  *Ghi nhớ: Tham vấn sớm khẳng định tinh thần trách nhiệm giải trình và minh bạch của tổ chức đối với cộng đồng.*
+
+- **Q: What does the acronym RACI stand for in organizational governance? -> Key Answer: D. Responsible, Accountable, Consulted, Informed**
+  *Dịch: Từ viết tắt RACI trong quản trị tổ chức và dự án đại diện cho điều gì? -> Đáp án chính: D. Responsible, Accountable, Consulted, Informed*
+  *Ghi nhớ: Ma trận RACI: Responsible (thực hiện nhiệm vụ), Accountable (chịu trách nhiệm cuối cùng), Consulted (được tham vấn trước quyết định), Informed (được thông báo kết quả).*
+
+- **Q: In artificial intelligence risk management, 'Unknown Unknowns' refers to: -> Key Answer: B. Lack of explainability and what a model is actually looking at to make its prediction**
+  *Dịch: Trong quản lý rủi ro AI, thuật ngữ 'Điều không biết về những điều không biết' (Unknown Unknowns) đề cập đến điều gì? -> Đáp án chính: B. Lack of explainability and what a model is actually looking at to make its prediction*
+  *Ghi nhớ: Unknown Unknowns trong AI Hộp đen là các rủi ro mà chúng ta thậm chí không biết là chúng tồn tại do không thể giải thích cơ chế ra quyết định của mô hình.*
+
+- **Q: Which type of risk analysis method uses words like 'unlikely', 'rare' to describe likelihood, and 'low', 'medium', 'high' for impact? -> Key Answer: D. Qualitative analysis**
+  *Dịch: Phương pháp phân tích rủi ro nào sau đây sử dụng các từ như 'ít khả năng', 'hiếm khi' để mô tả khả năng xảy ra, và các từ như 'thấp', 'trung bình', 'cao' để mô tả tác động? -> Đáp án chính: D. Qualitative analysis*
+  *Ghi nhớ: Phân tích định tính (Qualitative Analysis) xếp hạng rủi ro dựa trên các thang đo từ ngữ mô tả (High/Medium/Low, Unlikely/Rare) thay vì chỉ số số học.*
+
+- **Q: How can the human resources department help build an ethical organizational culture? -> Key Answer: B. Hiring candidates based on their culture fit and ethical values**
+  *Dịch: Bộ phận nhân sự (HR) có thể giúp xây dựng văn hóa tổ chức có đạo đức như thế nào? -> Đáp án chính: B. Hiring candidates based on their culture fit and ethical values*
+  *Ghi nhớ: HR đóng vai trò gác cổng văn hóa bằng cách tuyển dụng những ứng viên chia sẻ cùng giá trị đạo đức cốt lõi với tổ chức.*
+
+- **Q: Which of the following is a potential benefit of having an ethical organizational culture? -> Key Answer: B. Employees will feel a sense of responsibility and loyalty.**
+  *Dịch: Lợi ích tiềm năng nào của việc sở hữu một văn hóa tổ chức có đạo đức? -> Đáp án chính: B. Employees will feel a sense of responsibility and loyalty.*
+  *Ghi nhớ: Văn hóa đạo đức nuôi dưỡng tinh thần tự giác, tinh thần trách nhiệm và cam kết gắn bó dài lâu của nhân viên.*
+
+- **Q: Which of the following can help mitigate unwillingness to accept feedback in an organization? -> Key Answer: B. Create and participate in a risk culture of open feedback**
+  *Dịch: Nội dung nào sau đây có thể giúp giảm thiểu thái độ e ngại/miễn cưỡng khi tiếp nhận phản hồi trong một tổ chức? -> Đáp án chính: B. Create and participate in a risk culture of open feedback*
+  *Ghi nhớ: Risk Culture (Văn hóa Rủi ro minh bạch): Cho phép nhân viên thoải mái báo cáo sai sót và tiếp nhận phản hồi mà không sợ bị trừng phạt.*
+
+- **Q: Which of the following resources does the National Institute of Standards and Technology (NIST) provide for AI risk management? -> Key Answer: A. Measurement technologies and standards frameworks (NIST AI RMF)**
+  *Dịch: Nguồn lực nào sau đây được Viện Tiêu chuẩn và Công nghệ Quốc gia Mỹ (NIST) cung cấp cho quản lý rủi ro AI? -> Đáp án chính: A. Measurement technologies and standards frameworks (NIST AI RMF)*
+  *Ghi nhớ: NIST AI RMF (Risk Management Framework): Cung cấp các phương pháp đo lường, đánh giá và quản trị rủi ro AI cho các tổ chức.*
+
+- **Q: An ethical impact assessment is: -> Key Answer: B. Focused on identifying and preventing future potential ethical problems (Forward-looking)**
+  *Dịch: Một Đánh giá Tác động Đạo đức (Ethical Impact Assessment - EIA) có đặc điểm trọng tâm là gì? -> Đáp án chính: B. Focused on identifying and preventing future potential ethical problems (Forward-looking)*
+  *Ghi nhớ: Ethical Impact Assessment (EIA) là công cụ chủ động hướng về tương lai (Proactive / Forward-looking) giúp đánh giá tác động trước khi triển khai công nghệ.*
+
+- **Q: Which of the following is an important reason to have a dedicated Policy Owner for internal and external ethics policies? -> Key Answer: C. They help bring the right internal and external stakeholders together to draft and update these ethics policies**
+  *Dịch: Lý do quan trọng của việc chỉ định một Chủ sở hữu Chính sách (Policy Owner) cho các chính sách đạo đức nội bộ và bên ngoài là gì? -> Đáp án chính: C. They help bring the right internal and external stakeholders together to draft and update these ethics policies*
+  *Ghi nhớ: Vai trò Policy Owner: Chủ trì kết nối hội họp các bên liên quan (Stakeholder Alignment) và duy trì sự cập nhật liên tục cho bộ chính sách.*
+
+- **Q: How is a culture-building workshop different from traditional ethics training? -> Key Answer: A. Culture-building workshops teach people how to integrate company values into daily practice, while ethics training teaches the company values**
+  *Dịch: Hội thảo xây dựng văn hóa (Culture-building workshop) khác biệt như thế nào so với lớp tập huấn đạo đức (Ethics training) truyền thống? -> Đáp án chính: A. Culture-building workshops teach people how to integrate company values into daily practice, while ethics training teaches the company values*
+  *Ghi nhớ: Culture Workshop vs Ethics Training: Training truyền tải quy tắc/giá trị (What), còn Workshop thực hành cách áp dụng quy tắc đó vào công việc hàng ngày (How to apply).*
+
+- **Q: The pessimist view of General AI (AGI) references a scenario in which technological advancement leads to: -> Key Answer: B. A potential human extinction event (Existential risk)**
+  *Dịch: Góc nhìn bi quan về Trí tuệ Nhân tạo Tổng quát (AGI) đề cập đến kịch bản trong đó sự tiến bộ công nghệ dẫn tới: -> Đáp án chính: B. A potential human extinction event (Existential risk)*
+  *Ghi nhớ: Existential Risk of AGI (Rủi ro Diệt vong): Góc nhìn bi quan cảnh báo AGI mất kiểm soát có thể gây ra thảm họa diệt vong cho loài người.*
+
+- **Q: Which of the following describes why explainability is important in AI decision systems? -> Key Answer: C. It provides accountability and trust for users and regulators**
+  *Dịch: Nội dung nào mô tả lý do tại sao tính giải thích được (Explainability) lại quan trọng? -> Đáp án chính: C. It provides accountability and trust for users and regulators*
+  *Ghi nhớ: XAI Value: Accountability + Trust.*
+
+- **Q: Which of the following is a potential organizational benefit of establishing an ethical organizational culture? -> Key Answer: B. Employees will feel a strong sense of responsibility, trust, and loyalty toward the organization**
+  *Dịch: Lợi ích tiềm năng cho tổ chức khi xây dựng một văn hóa doanh nghiệp có đạo đức là gì? -> Đáp án chính: B. Employees will feel a strong sense of responsibility, trust, and loyalty toward the organization*
+  *Ghi nhớ: Benefits of Ethical Culture: Tăng cường tinh thần trách nhiệm, lòng tin và sự gắn kết trung thành của nhân sự.*
+
+- **Q: Which of the following risk analysis methods use words like 'unlikely' and 'rare' for likelihood, and 'low', 'medium', 'high' for impact? (Select two.) -> Key Answer: A. Semi-qualitative analysis & D. Qualitative analysis**
+  *Dịch: Những phương pháp phân tích rủi ro nào sử dụng các từ mô tả định tính như 'hiếm gặp', 'thấp', 'trung bình', 'cao'? (Select two) -> Đáp án chính: A. Semi-qualitative analysis & D. Qualitative analysis*
+  *Ghi nhớ: Qualitative Risk Descriptors.*
+
+- **Q: What is 'capability caution' in AI risk governance? -> Key Answer: C. We need to remember that we don't know the full extent of what AI systems might become capable of so that we can better plan and manage risks**
+  *Dịch: 'Thận trọng về năng lực' (Capability caution) trong quản trị rủi ro AI được hiểu là gì? -> Đáp án chính: C. We need to remember that we don't know the full extent of what AI systems might become capable of so that we can better plan and manage risks*
+  *Ghi nhớ: Capability Caution: Thận trọng trước sự tiến hóa bất ngờ vượt tầm kiểm soát của các hệ thống AI siêu việt.*
+
+- **Q: Why is corporate governance important when thinking about ethical considerations for data-driven technologies? -> Key Answer: A. It provides an accountability framework for stakeholders of the organization to prevent ethical violations**
+  *Dịch: Tại sao Quản trị doanh nghiệp (Corporate governance) lại quan trọng khi xem xét các khía cạnh đạo đức cho công nghệ dựa trên dữ liệu? -> Đáp án chính: A. It provides an accountability framework for stakeholders of the organization to prevent ethical violations*
+  *Ghi nhớ: Corporate Governance Value: Thiết lập khung trách nhiệm giải trình và chuẩn mực ứng xử toàn tổ chức.*
+
+- **Q: Which of the following is a key reason to engage external stakeholders during the development of ethics policies? -> Key Answer: C. It can unearth new qualitative insights into how products and services might be used or impact the target demographic community**
+  *Dịch: Lý do quan trọng để thu hút các bên liên quan bên ngoài (External stakeholders) trong quá trình phát triển các chính sách đạo đức là gì? -> Đáp án chính: C. It can unearth new qualitative insights into how products and services might be used or impact the target demographic community*
+  *Ghi nhớ: External Stakeholder Engagement: Khai quật các góc nhìn thực tế định tính từ cộng đồng chịu tác động.*
+
+- **Q: Which expression best characterizes what an organizational or corporate culture is? -> Key Answer: B. "This is how things are done around here."**
+  *Dịch: Câu nói nào thể hiện một cách tốt nhất bản chất của Văn hóa doanh nghiệp / Văn hóa tổ chức? -> Đáp án chính: B. "This is how things are done around here."*
+  *Ghi nhớ: Corporate Culture Definition: Tập quán và thói quen thực thi công việc hàng ngày.*
+
+- **Q: What is the primary purpose of change management in terms of creating an ethical organizational culture? -> Key Answer: C. To create a smooth, supported transition for individuals and teams fostering an ethical culture**
+  *Dịch: Mục đích của Quản lý sự thay đổi (Change management) trong việc tạo dựng một văn hóa tổ chức có đạo đức là gì? -> Đáp án chính: C. To create a smooth, supported transition for individuals and teams fostering an ethical culture*
+  *Ghi nhớ: Change Management Goal: Chuyển đổi văn hóa mượt mà và được hỗ trợ toàn diện.*
+
+- **Q: Which of the following risk analysis methods use qualitative descriptor words like 'unlikely' or 'rare' for likelihood, and 'low', 'medium', 'high' for impact? (Select two.) -> Key Answer: A. Semi-qualitative analysis & D. Qualitative analysis**
+  *Dịch: Những phương pháp phân tích rủi ro nào sử dụng các từ mô tả định tính như 'hiếm gặp', 'thấp', 'trung bình', 'cao'? (Select two) -> Đáp án chính: A. Semi-qualitative analysis & D. Qualitative analysis*
+  *Ghi nhớ: Qualitative Risk Analysis: Sử dụng các thang đo từ ngữ định tính (Low/Medium/High, Rare/Unlikely) để xếp hạng rủi ro.*
+
+- **Q: Which of the following measures is best suited for reporting risk severity to executive management? -> Key Answer: A. Risk Heatmap / Risk Matrix**
+  *Dịch: Biện pháp/công cụ nào sau đây phù hợp nhất để báo cáo mức độ nghiêm trọng của rủi ro lên Ban điều hành cấp cao? -> Đáp án chính: A. Risk Heatmap / Risk Matrix*
+  *Ghi nhớ: Risk Heatmap trực quan hóa khả năng xảy ra (Likelihood) và mức độ tác động (Impact) giúp ban quản trị C-suite nhanh chóng nắm bắt rủi ro cốt lõi.*
+
+- **Q: Which of the following describes why explainability is important in AI? -> Key Answer: C. It provides accountability and trust for users and auditors**
+  *Dịch: Nội dung nào sau đây giải thích tại sao tính giải thích được (Explainability) lại quan trọng trong AI? -> Đáp án chính: C. It provides accountability and trust for users and auditors*
+  *Ghi nhớ: Explainable AI (XAI) tạo nền tảng cho Accountability (Trách nhiệm giải trình) và Trust (Lòng tin) vào các quyết định tự động.*
+
+- **Q: What is the capability caution in AI risk management? -> Key Answer: C. Remembering we don't know the full extent of what AI systems might become capable of so we can better plan risk mitigation**
+  *Dịch: Thận trọng về năng lực (Capability caution) trong quản lý rủi ro AI là gì? -> Đáp án chính: C. Remembering we don't know the full extent of what AI systems might become capable of so we can better plan risk mitigation*
+  *Ghi nhớ: Capability Caution Principle: Thừa nhận sự bất định về sức mạnh tương lai của AI để xây dựng hàng rào an toàn phòng ngừa rủi ro vượt kiểm soát.*
+
+- **Q: How do you create an ethical organizational culture? -> Key Answer: A. Transparency about company values through continuous actions and open communication**
+  *Dịch: Làm thế nào để bạn xây dựng một văn hóa tổ chức có đạo đức? -> Đáp án chính: A. Transparency about company values through continuous actions and open communication*
+  *Ghi nhớ: Xây dựng văn hóa đạo đức yêu cầu sự Minh bạch giá trị (Transparency), nêu gương từ lãnh đạo và giao tiếp hai chiều công khai.*
+
+- **Q: Which of the following is a benefit of incorporating stakeholder feedback during ethics policy reviews? -> Key Answer: C. Provides rich qualitative information used to continuously refine and improve policies**
+  *Dịch: Lợi ích của việc kết hợp phản hồi từ các bên liên quan trong quá trình xem xét chính sách đạo đức là gì? -> Đáp án chính: C. Provides rich qualitative information used to continuously refine and improve policies*
+  *Ghi nhớ: Policy Iteration & Qualitative Feedback: Phản hồi từ các bên liên quan mang lại dữ liệu thực tế để cập nhật chính sách khả thi hơn.*
+
+- **Q: What is a culture of accountability in an organization? -> Key Answer: A. An incentive structure that encourages all employees to feel responsible and identify positive ethical behavior**
+  *Dịch: Một văn hóa trách nhiệm giải trình (Culture of accountability) trong tổ chức là gì? -> Đáp án chính: A. An incentive structure that encourages all employees to feel responsible and identify positive ethical behavior*
+  *Ghi nhớ: Culture of Accountability: Lan tỏa tinh thần trách nhiệm tới toàn thể nhân viên trong tổ chức.*
+
+- **Q: Which of the following is a primary reason to periodically update an organization's Code of Ethics document? -> Key Answer: A. It captures the evolving nature of new technological developments and ethical risks of the product**
+  *Dịch: Lý do chính của việc cần cập nhật định kỳ tài liệu Quy tắc đạo đức của tổ chức là gì? -> Đáp án chính: A. It captures the evolving nature of new technological developments and ethical risks of the product*
+  *Ghi nhớ: Iterative Ethics Policy: Công nghệ và rủi ro AI liên tục tiến hóa (Evolving risks) đòi hỏi bộ quy tắc phải cập nhật định kỳ.*
+
+- **Q: Why is it important to include a diverse set of stakeholders when gathering perspectives for risk assessment? -> Key Answer: B. It includes more perspectives, which leads to better risk identification and reduced blind spots**
+  *Dịch: Tại sao việc thu hút đa dạng các bên liên quan (Diverse stakeholders) khi thu thập góc nhìn cho đánh giá rủi ro lại quan trọng? -> Đáp án chính: B. It includes more perspectives, which leads to better risk identification and reduced blind spots*
+  *Ghi nhớ: Đa dạng hóa Góc nhìn Quản trị Rủi ro (Diverse Stakeholder Engagement): Giúp phát hiện các góc khuất và rủi ro ẩn mà một nhóm chuyên gia đồng nhất dễ bỏ qua.*
+
+- **Q: Why is it important to consider ethical implications beyond just legal compliance? -> Key Answer: A. The law often lags behind technological innovation (Pacing Problem)**
+  *Dịch: Tại sao việc xem xét các hệ lụy đạo đức vượt ra ngoài việc chỉ tuân thủ pháp luật đơn thuần lại quan trọng? -> Đáp án chính: A. The law often lags behind technological innovation (Pacing Problem)*
+  *Ghi nhớ: Vấn đề Tốc độ (The Pacing Problem): Công nghệ phát triển theo cấp số nhân trong khi quy trình lập pháp diễn ra chậm chạp, tạo ra các khoảng trống pháp lý.*
+
+- **Q: Which of the following roles is primarily responsible for establishing ethical guidelines and governance policy within a tech company? -> Key Answer: A. Business managers and executive leadership**
+  *Dịch: Vai trò nào chịu trách nhiệm chính trong việc thiết lập các hướng dẫn đạo đức và chính sách quản trị trong một công ty công nghệ? -> Đáp án chính: A. Business managers and executive leadership*
+  *Ghi nhớ: Leadership Responsibility: Ban quản lý doanh nghiệp và Lãnh đạo cấp cao chịu trách nhiệm ban hành khung quản trị và hướng dẫn đạo đức cho công ty.*
 
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (66 câu)
 
@@ -5565,12 +6859,165 @@ remaining 20% of data is referred to as an**
 ## MOD-07: Crisis Communication, Media Management & Public Trust
 ### Truyền thông Khủng hoảng, Quản lý Truyền thông & Niềm tin Công chúng
 
-#### Core Theory & Key Concepts / Lý Thuyết Cốt Lõi
-- **A Media Communication Plan during an ethical crisis must designate a single trained spokesperson and establish verified messaging channels.**
+#### Core Theory & Exhaustive Knowledge Points / Lý Thuyết Cốt Lõi & Tổng Hợp Kiến Thức Ôn Thi
+- **[CORE RULE] A Media Communication Plan during an ethical crisis must designate a single trained spokesperson and establish verified messaging channels.**
   *Dịch: Kế hoạch truyền thông với báo chí trong khủng hoảng đạo đức phải chỉ định một người phát ngôn duy nhất được đào tạo và thiết lập các kênh thông điệp được xác thực.*
 
-- **The core objective of a crisis communication program is managing public trust and providing transparent, accurate, and timely information.**
+- **[CORE RULE] The core objective of a crisis communication program is managing public trust and providing transparent, accurate, and timely information.**
   *Dịch: Mục tiêu cốt lõi của chương trình truyền thông khủng hoảng là quản lý niềm tin của công chúng và cung cấp thông tin minh bạch, chính xác và kịp thời.*
+
+- **Q: Which of the following are tools of an effective media communication plan? (Select two.) -> Key Answer: B. Press release · D. Video briefing**
+  *Dịch: Những công cụ nào sau đây thuộc về một kế hoạch truyền thông báo chí hiệu quả? (Chọn hai) -> Đáp án chính: B. Press release · D. Video briefing*
+  *Ghi nhớ: Media Communication Tools: Các phương tiện truyền tải thông tin chính thức tới báo chí và truyền thông trong các chiến dịch hoặc khủng hoảng.*
+
+- **Q: Which method can be implemented to effectively communicate with the media during an ethical crisis? -> Key Answer: A. Provide regular updates to keep the media informed**
+  *Dịch: Phương pháp nào có thể triển khai để truyền thông hiệu quả với báo chí trong một cuộc khủng hoảng đạo đức? -> Đáp án chính: A. Provide regular updates to keep the media informed*
+  *Ghi nhớ: Crisis Communication Best Practice: Trong khủng hoảng, sự minh bạch và cập nhật thông tin chủ động, thường xuyên giúp ngăn chặn tin đồn và giữ vững niềm tin.*
+
+- **Q: Which of the following is the most important idea that a crisis communication program should manage? -> Key Answer: A. The public's perception of a crisis**
+  *Dịch: Ý tưởng nào sau đây là quan trọng nhất mà một chương trình truyền thông khủng hoảng cần quản lý? -> Đáp án chính: A. The public's perception of a crisis*
+  *Ghi nhớ: Crisis Perception Management: Mục tiêu hàng đầu của truyền thông khủng hoảng là quản lý góc nhìn và nhận thức của công chúng (public perception) để bảo vệ uy tín tổ chức.*
+
+- **Q: How can artificial intelligence facilitate feedback and monitoring processes in crisis communication strategies? -> Key Answer: A. By automating sentiment analysis to gauge public opinion**
+  *Dịch: Trí tuệ nhân tạo có thể hỗ trợ các quy trình phản hồi và giám sát trong chiến lược truyền thông khủng hoảng như thế nào? -> Đáp án chính: A. By automating sentiment analysis to gauge public opinion*
+  *Ghi nhớ: AI Sentiment Analysis in Crisis: Phân tích cảm xúc tự động giúp doanh nghiệp liên tục lắng nghe và đo lường phản ứng dư luận trên mạng xã hội.*
+
+- **Q: What is the benefit of hosting a virtual reality press conference over a traditional in-person press conference? -> Key Answer: C. The conference can be interactive without the participants needing to be co-located.**
+  *Dịch: Lợi ích của việc tổ chức một cuộc họp báo thực tế ảo (VR press conference) so với họp báo trực tiếp truyền thống là gì? -> Đáp án chính: C. The conference can be interactive without the participants needing to be co-located.*
+  *Ghi nhớ: Virtual Reality Collaboration: VR cho phép trải nghiệm không gian tương tác đa chiều dù các bên ở bất kỳ đâu trên thế giới.*
+
+- **Q: What is the purpose of a holding statement in crisis and media communications? -> Key Answer: C. To pre-write communications before they are needed**
+  *Dịch: Mục đích của tuyên bố giữ chỗ (holding statement) trong truyền thông khủng hoảng là gì? -> Đáp án chính: C. To pre-write communications before they are needed*
+  *Ghi nhớ: Holding Statement: Thông điệp được chuẩn bị sẵn từ trước để phản ứng nhanh lập tức khi sự cố vừa xảy ra.*
+
+- **Q: Which of the following negative consequences is the direct result of failing to be truthful in communicating about a crisis? -> Key Answer: C. Reputational damage**
+  *Dịch: Hậu quả tiêu cực nào là kết quả trực tiếp của việc thiếu trung thực trong truyền thông khủng hoảng? -> Đáp án chính: C. Reputational damage*
+  *Ghi nhớ: Crisis Dishonesty Impact: Nói dối hoặc che giấu sự thật trong khủng hoảng hủy hoại niềm tin và gây tổn hại danh tiếng nặng nề nhất.*
+
+- **Q: Why is it important to maintain public trust? -> Key Answer: A. Trust, once lost, is difficult to regain.**
+  *Dịch: Tại sao việc duy trì niềm tin của công chúng lại quan trọng? -> Đáp án chính: A. Trust, once lost, is difficult to regain.*
+  *Ghi nhớ: Public Trust Asymmetry: Niềm tin tích lũy rất lâu nhưng có thể sụp đổ chỉ sau một sự cố và vô cùng khó khăn để khôi phục.*
+
+- **Q: To uphold transparency and explainability, communication about data-driven technologies should be...... -> Key Answer: A. Clear, concise, and coherent.**
+  *Dịch: Để duy trì tính minh bạch và khả năng giải thích, việc truyền thông về các công nghệ dựa trên dữ liệu nên...... -> Đáp án chính: A. Clear, concise, and coherent.*
+  *Ghi nhớ: The 3 Cs of Transparent Communication: Clear (Rõ ràng), Concise (Ngắn gọn), Coherent (Mạch lạc).*
+
+- **Q: When you deliver periodic statements about a crisis to the media, what should the first statement do? -> Key Answer: C. Set the tone of what is to follow**
+  *Dịch: Khi bạn đưa ra các tuyên bố định kỳ về khủng hoảng cho truyền thông, tuyên bố đầu tiên nên làm gì? -> Đáp án chính: C. Set the tone of what is to follow*
+  *Ghi nhớ: First Crisis Statement Goal: Tuyên bố đầu tiên nhằm định hình thái độ (Set the tone) cầu thị, bình tĩnh và có trách nhiệm của tổ chức.*
+
+- **Q: Which of the following are important factors to consider when developing a media campaign? (Select two.) -> Key Answer: A. The environment in which the campaign will be launched · C. The time-sensitive nature of communication in the campaign**
+  *Dịch: Những yếu tố nào quan trọng cần cân nhắc khi phát triển một chiến dịch truyền thông? (Chọn hai) -> Đáp án chính: A. The environment in which the campaign will be launched · C. The time-sensitive nature of communication in the campaign*
+  *Ghi nhớ: Media Campaign Factors: Bối cảnh môi trường ra mắt (environment) và Tính thời điểm nhạy cảm (time-sensitive nature).*
+
+- **Q: Which of the following are important qualities of a press release? (Select two.) -> Key Answer: A. It's in a digital format · D. It's concise**
+  *Dịch: Những đặc tính nào là quan trọng của một thông cáo báo chí (press release)? (Chọn hai) -> Đáp án chính: A. It's in a digital format · D. It's concise*
+  *Ghi nhớ: Modern Press Release Qualities: Định dạng kỹ thuật số (digital) và Ngắn gọn súc tích (concise).*
+
+- **Q: Which of the following are important to provide to a crisis communication team? (Select two.) -> Key Answer: A. Clear direction on the roles and responsibilities of team members · D. Access to adequate resources**
+  *Dịch: Những điều nào quan trọng cần cung cấp cho đội truyền thông khủng hoảng? (Chọn hai) -> Đáp án chính: A. Clear direction on the roles and responsibilities of team members · D. Access to adequate resources*
+  *Ghi nhớ: Crisis Team Support: Định hướng vai trò rõ ràng (roles) và Cung cấp đủ nguồn lực (resources).*
+
+- **Q: Which of the following are desired qualities when choosing a spokesperson for your organization? (Select two.) -> Key Answer: A. Articulate when communicating important details · B. Patient when addressing tough questions or concerns**
+  *Dịch: Những phẩm chất mong muốn khi lựa chọn người phát ngôn (spokesperson) cho tổ chức là gì? (Chọn hai) -> Đáp án chính: A. Articulate when communicating important details · B. Patient when addressing tough questions or concerns*
+  *Ghi nhớ: Spokesperson Qualities: Diễn đạt rõ ràng (Articulate) và Kiên nhẫn cầu thị (Patient).*
+
+- **Q: What is the primary purpose of obtaining feedback about an ethical crisis? -> Key Answer: B. To make operational improvements**
+  *Dịch: Mục đích chính của việc nhận phản hồi về một cuộc khủng hoảng đạo đức là gì? -> Đáp án chính: B. To make operational improvements*
+  *Ghi nhớ: Post-Crisis Feedback Purpose: Nhận phản hồi để cải tiến quy trình vận hành (operational improvements), tránh lặp lại sai lầm.*
+
+- **Q: Which of the following are effective strategies when making statements on social media? (Select two.) -> Key Answer: A. Being honest and up front · C. Presenting a face of the organization**
+  *Dịch: Những chiến lược nào hiệu quả khi đưa ra các phát biểu trên mạng xã hội? (Chọn hai) -> Đáp án chính: A. Being honest and up front · C. Presenting a face of the organization*
+  *Ghi nhớ: Social Media Crisis Strategy: Trung thực (honest) và Mang tính nhân văn cá nhân hóa (face of the organization).*
+
+- **Q: How can sentiment analysis be useful in social media communication? -> Key Answer: A. It can shape the content and delivery of the message based on users' perceptions of the organization or technology.**
+  *Dịch: Phân tích cảm xúc (sentiment analysis) hữu ích như thế nào trong truyền thông mạng xã hội? -> Đáp án chính: A. It can shape the content and delivery of the message based on users' perceptions of the organization or technology.*
+  *Ghi nhớ: Sentiment Analysis Application: Hiểu tâm lý công chúng để điều chỉnh nội dung và tông giọng truyền thông phù hợp.*
+
+- **Q: Which of the following is a best practice when participating in media inquiries? -> Key Answer: D. Ensure your message is consistent**
+  *Dịch: Thực hành tốt nhất khi tham gia phản hồi các yêu cầu của báo chí là gì? -> Đáp án chính: D. Ensure your message is consistent*
+  *Ghi nhớ: Media Best Practice: Thông điệp phải nhất quán (consistent) giữa các đợt phát ngôn để tránh mâu thuẫn.*
+
+- **Q: You have collected social media posts with a specific hashtag for an analysis of the words used in the post.
+What kind of data is that? -> Key Answer: A. Unstructured**
+  *Dịch: Bạn đã thu thập các bài đăng trên mạng xã hội có chứa một hashtag cụ thể để phân tích các từ được sử dụng trong bài đăng. Đây là loại dữ liệu gì? -> Đáp án chính: A. Unstructured*
+  *Ghi nhớ: Unstructured Data in Social Media: Các bài đăng văn bản tự do, hình ảnh hoặc video trên mạng xã hội không tuân theo một mô hình dữ liệu định sẵn nào.*
+
+- **Q: Which of the following communication tactics help uphold transparency and explainability from the customer perspective? (Select two.) -> Key Answer: A. Providing prompt responses to customer questions about the decisions made by data-driven systems. · B. Providing information about data-driven systems in simple, easy-to-understand terms.**
+  *Dịch: Những chiến thuật truyền thông nào giúp duy trì tính minh bạch và khả năng giải thích từ góc nhìn của khách hàng? (Chọn hai) -> Đáp án chính: A. Providing prompt responses to customer questions about the decisions made by data-driven systems. · B. Providing information about data-driven systems in simple, easy-to-understand terms.*
+  *Ghi nhớ: Customer-Centric Transparency: Phản hồi nhanh (prompt responses) và Sử dụng thuật ngữ bình dân dễ hiểu (simple, easy-to-understand terms).*
+
+- **Q: What role does communication play in ethical leadership? -> Key Answer: C. Building trust and ethical alignment**
+  *Dịch: Giao tiếp đóng vai trò gì trong lãnh đạo đạo đức (Ethical Leadership)? -> Đáp án chính: C. Building trust and ethical alignment*
+  *Ghi nhớ: Truyền thông cởi mở trong lãnh đạo giúp xây dựng niềm tin nội bộ và thống nhất định hướng hành vi đạo đức cho nhân viên.*
+
+- **Q: Which approach promotes inclusive communication? -> Key Answer: B. Considering diverse cultural and accessibility needs & D. Standardizing all messages**
+  *Dịch: Cách tiếp cận nào sau đây thúc đẩy giao tiếp mang tính bao hàm (Inclusive Communication)? -> Đáp án chính: B. Considering diverse cultural and accessibility needs & D. Standardizing all messages*
+  *Ghi nhớ: Giao tiếp bao hàm (Inclusive Communication) đảm bảo thông điệp tiếp cận được mọi đối tượng bằng cách tôn trọng sự đa dạng văn hóa, nhu cầu tiếp cận và chuẩn hóa các thông điệp truyền thông.*
+
+- **Q: What role does social media play in promoting products and building brand reputation? -> Key Answer: A. Facilitates direct engagement with consumers**
+  *Dịch: Mạng xã hội đóng vai trò gì trong việc quảng bá sản phẩm và xây dựng uy tín thương hiệu? -> Đáp án chính: A. Facilitates direct engagement with consumers*
+  *Ghi nhớ: Mạng xã hội rút ngắn khoảng cách giữa doanh nghiệp và người dùng, cho phép đối thoại và lắng nghe hai chiều.*
+
+- **Q: Which emerging technology area requires the most immediate ethical attention? -> Key Answer: A. All emerging technologies require ethical consideration**
+  *Dịch: Lĩnh vực công nghệ mới nổi nào yêu cầu sự chú ý đạo đức cấp thiết nhất? -> Đáp án chính: A. All emerging technologies require ethical consideration*
+  *Ghi nhớ: Bất kỳ công nghệ mới nổi nào (AI, Biotech, Robotics...) khi phát triển vượt tầm kiểm soát đều mang lại những rủi ro đạo đức lớn cho con người.*
+
+- **Q: To uphold transparency and explainability, communication about data-driven technologies should be: -> Key Answer: A. Clear, concise, and coherent**
+  *Dịch: Để duy trì tính minh bạch và khả năng giải thích, truyền thông về các công nghệ dựa trên dữ liệu phải tuân theo tiêu chí nào? -> Đáp án chính: A. Clear, concise, and coherent*
+  *Ghi nhớ: Nguyên tắc 3C trong truyền thông giải thích AI: Clear (Rõ ràng), Concise (Ngắn gọn súc tích) và Coherent (Mạch lạc).*
+
+- **Q: Which of the following are desired qualities when choosing a spokesperson for your organization during a crisis? (Select two.) -> Key Answer: A. Articulate when communicating important details & B. Patient and empathetic when addressing tough questions or concerns**
+  *Dịch: Những phẩm chất mong muốn nào sau đây khi lựa chọn một người phát ngôn (Spokesperson) cho tổ chức trong khủng hoảng? (Select two) -> Đáp án chính: A. Articulate when communicating important details & B. Patient and empathetic when addressing tough questions or concerns*
+  *Ghi nhớ: Phẩm chất Người phát ngôn Truyền thông: Khả năng diễn đạt mạch lạc (Articulate) và Sự kiên nhẫn thấu hiểu (Patient & Empathetic).*
+
+- **Q: Which of the following are important qualities of an effective press release? (Select two.) -> Key Answer: A. It's in a digital format & D. It's concise, clear, and newsworthy**
+  *Dịch: Những đặc tính quan trọng nào sau đây thuộc về một Thông cáo báo chí (Press Release) hiệu quả? (Select two) -> Đáp án chính: A. It's in a digital format & D. It's concise, clear, and newsworthy*
+  *Ghi nhớ: Press Release Best Practices: Ngắn gọn súc tích (Concise), giàu giá trị tin tức (Newsworthy) và phát hành dưới dạng Kỹ thuật số (Digital Format) dễ lan tỏa.*
+
+- **Q: Which of the following is the most important idea that a crisis communication strategy should focus on? -> Key Answer: B. The real-world impacts and physical safety effects of a crisis**
+  *Dịch: Nội dung quan trọng nhất mà một chiến lược truyền thông khủng hoảng cần tập trung giải quyết là gì? -> Đáp án chính: B. The real-world impacts and physical safety effects of a crisis*
+  *Ghi nhớ: Trọng tâm Truyền thông Khủng hoảng: Ưu tiên giải quyết tác hại thực tế (Real-world effects) và an toàn con người thay vì xử lý khủng hoảng truyền thông suông.*
+
+- **Q: A disruptive user on a social media site is subjected to a shadow ban. Which of the following indicates that a shadow ban has occurred? -> Key Answer: D. A user logs in one day to find that they are able to post normally, but receive zero engagement or direct responses because their posts are hidden from everyone else**
+  *Dịch: Một người dùng gây rối trên mạng xã hội bị áp dụng lệnh 'Shadow ban' (Cấm ẩn). Biểu hiện nào chỉ ra lệnh Shadow ban đang diễn ra? -> Đáp án chính: D. A user logs in one day to find that they are able to post normally, but receive zero engagement or direct responses because their posts are hidden from everyone else*
+  *Ghi nhớ: Shadow Ban (Cấm ngầm / Cấm ẩn): Hệ thống chặn hiển thị nội dung của người dùng đối với cộng đồng mà hoàn toàn không thông báo cho người đó biết.*
+
+- **Q: What is the primary benefit of hosting a virtual press conference over a traditional co-located conference? -> Key Answer: C. The conference can be interactive without participants needing to be co-located**
+  *Dịch: Lợi ích chính của việc tổ chức một buổi họp báo trực tuyến (Virtual press conference) so với họp báo truyền thống tập trung là gì? -> Đáp án chính: C. The conference can be interactive without participants needing to be co-located*
+  *Ghi nhớ: Virtual Conference Advantage: Tương tác mà không cần chung vị trí địa lý.*
+
+- **Q: Which of the following would be an appropriate scenario to issue a press release? -> Key Answer: A. The organization's AI product has a critical flaw/incident or major values alignment update**
+  *Dịch: Kịch bản nào sau đây là phù hợp nhất để doanh nghiệp phát hành một thông cáo báo chí (Press Release)? -> Đáp án chính: A. The organization's AI product has a critical flaw/incident or major values alignment update*
+  *Ghi nhớ: Tính chất Tin tức của Thông cáo Báo chí (Press Release Newsworthiness): Chỉ phát hành khi có sự kiện quan trọng tác động lớn tới công chúng/khách hàng.*
+
+- **Q: What is the primary benefit of hosting a virtual conference for ethics communication? -> Key Answer: C. The conference can be interactive without participants needing to be co-located**
+  *Dịch: Lợi ích chính của việc tổ chức một hội thảo trực tuyến (Virtual conference) để truyền thông đạo đức là gì? -> Đáp án chính: C. The conference can be interactive without participants needing to be co-located*
+  *Ghi nhớ: Lợi thế của Virtual Conference: Duy trì khả năng tương tác đa chiều (Interactive) mà xóa bỏ rào cản địa lý (Co-location).*
+
+- **Q: To uphold transparency in ethics policy communications, messaging should be: -> Key Answer: A. Clear, concise, and coherent**
+  *Dịch: Để duy trì tính minh bạch trong truyền thông chính sách đạo đức, thông điệp cần phải đạt được các tiêu chuẩn nào? -> Đáp án chính: A. Clear, concise, and coherent*
+  *Ghi nhớ: Tiêu chuẩn Truyền thông Minh bạch (3Cs): Clear (Rõ ràng), Concise (Súc tích), Coherent (Mạch lạc).*
+
+- **Q: What is the purpose of a holding statement in crisis communications? -> Key Answer: D. To prevent personnel from communicating prematurely before facts are verified**
+  *Dịch: Mục đích của phát ngôn giữ chỗ (Holding Statement) trong truyền thông khủng hoảng là gì? -> Đáp án chính: D. To prevent personnel from communicating prematurely before facts are verified*
+  *Ghi nhớ: Holding Statement: Kiểm soát luồng tin, câu thời gian xác minh và ngăn phát ngôn vội vã.*
+
+- **Q: Which of the following describes why freedom of expression is considered an important right on digital platforms? -> Key Answer: A. It helps uphold freedom of expression for everyone and doesn't give anyone special rights**
+  *Dịch: Nội dung nào sau đây mô tả lý do tại sao tự do ngôn luận được xem là một quyền quan trọng trên các nền tảng số? -> Đáp án chính: A. It helps uphold freedom of expression for everyone and doesn't give anyone special rights*
+  *Ghi nhớ: Tự do Ngôn luận có Trách nhiệm (Responsible Freedom of Expression): Cần cân bằng giữa quyền tự do phát biểu và nghĩa vụ ngăn chặn tin giả (Disinformation) gây tổn hại xã hội.*
+
+- **Q: Which of the following is an effective approach to promoting corporate ethical values in media communications? -> Key Answer: A. Promote an organizational culture that embraces these values throughout the company**
+  *Dịch: Cách tiếp cận hiệu quả nào để quảng bá các giá trị đạo đức doanh nghiệp trong truyền thông là gì? -> Đáp án chính: A. Promote an organizational culture that embraces these values throughout the company*
+  *Ghi nhớ: Authentic Ethical Communication: Truyền thông uy tín bắt nguồn từ văn hóa tổ chức thực chất được toàn bộ doanh nghiệp đón nhận.*
+
+- **Q: Which of the following accurately describes the measures of central tendency in a perfectly normal distribution? -> Key Answer: D. The mean, mode, and median are all equal and located at the center of distribution**
+  *Dịch: Nội dung nào sau đây mô tả chính xác các đại lượng đo lường xu hướng trung tâm trong một phân bố chuẩn hoàn hảo (Normal Distribution)? -> Đáp án chính: D. The mean, mode, and median are all equal and located at the center of distribution*
+  *Ghi nhớ: Symmetry of Normal Distribution: Trong Phân bố Chuẩn (Gaussian Curve), Mean = Median = Mode.*
+
+- **Q: You have collected social media posts with a specific hashtag for an analysis of the words used in the post. What kind of data is that? -> Key Answer: A. Unstructured data**
+  *Dịch: Bạn đã thu thập các bài đăng trên mạng xã hội theo một hashtag cụ thể để phân tích các từ ngữ sử dụng. Đó là loại dữ liệu nào? -> Đáp án chính: A. Unstructured data*
+  *Ghi nhớ: Unstructured Data (Dữ liệu Phi cấu trúc): Văn bản tự do (Free text), hình ảnh, video không nằm trong các bảng cột hàng định sẵn.*
 
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (38 câu)
 
@@ -6224,12 +7671,64 @@ What kind of data is that?**
 ## MOD-08: Professional Ethics, Whistleblowing & Codes of Conduct
 ### Đạo đức Nghề nghiệp, Tố giác (Whistleblowing) & Quy tắc Ứng xử
 
-#### Core Theory & Key Concepts / Lý Thuyết Cốt Lõi
-- **Professional Codes of Conduct (such as ACM or IEEE) dictate that IT professionals must prioritize public safety, privacy, and social well-being over corporate profit.**
+#### Core Theory & Exhaustive Knowledge Points / Lý Thuyết Cốt Lõi & Tổng Hợp Kiến Thức Ôn Thi
+- **[CORE RULE] Professional Codes of Conduct (such as ACM or IEEE) dictate that IT professionals must prioritize public safety, privacy, and social well-being over corporate profit.**
   *Dịch: Quy tắc ứng xử nghề nghiệp (như ACM hay IEEE) quy định rằng các chuyên gia CNTT phải ưu tiên an toàn công cộng, quyền riêng tư và lợi ích xã hội lên trên lợi nhuận doanh nghiệp.*
 
-- **Whistleblowing involves disclosing illegal, unethical, or unsafe practices within an organization to external authorities or the public as a last resort.**
+- **[CORE RULE] Whistleblowing involves disclosing illegal, unethical, or unsafe practices within an organization to external authorities or the public as a last resort.**
   *Dịch: Tố giác (Whistleblowing) liên quan đến việc tiết lộ các hành vi bất hợp pháp, vi phạm đạo đức hoặc không an toàn trong tổ chức cho cơ quan thẩm quyền bên ngoài hoặc công chúng như giải pháp cuối cùng.*
+
+- **Q: What does a code of ethics provide for a data-driven organization? -> Key Answer: C. Guiding values and expectations for ethical behavior**
+  *Dịch: Bộ quy tắc đạo đức mang lại điều gì cho một tổ chức dựa trên dữ liệu? -> Đáp án chính: C. Guiding values and expectations for ethical behavior*
+  *Ghi nhớ: Code of Ethics Purpose: Bộ quy tắc đạo đức đóng vai trò là kim chỉ nam định hướng chuẩn mực hành vi cho toàn bộ thành viên.*
+
+- **Q: Which of the following are possible causes of the limited adoption of a code of ethics within an organization? (Select two). -> Key Answer: B. Lack of clarity in the code of ethics · D. Lack of awareness of the code of ethics and where it is meant to be applied**
+  *Dịch: Những nguyên nhân nào có thể dẫn đến việc hạn chế áp dụng bộ quy tắc đạo đức trong tổ chức? (Chọn hai) -> Đáp án chính: B. Lack of clarity in the code of ethics · D. Lack of awareness of the code of ethics and where it is meant to be applied*
+  *Ghi nhớ: Code of Ethics Adoption Barriers: Thiếu rõ ràng (lack of clarity) và Thiếu nhận thức/truyền thông (lack of awareness).*
+
+- **Q: Which of the following ethical domains does the IEEE 7000 series explore? (Select two.) -> Key Answer: A. Emulated empathy & B. Machine-readable privacy terms**
+  *Dịch: Lĩnh vực đạo đức nào sau đây được chuỗi tiêu chuẩn IEEE 7000 nghiên cứu? (Select two) -> Đáp án chính: A. Emulated empathy & B. Machine-readable privacy terms*
+  *Ghi nhớ: Chuỗi tiêu chuẩn IEEE 7000 tập trung vào thiết kế đạo đức cho hệ thống tự động, bao gồm thấu cảm mô phỏng và điều khoản máy đọc.*
+
+- **Q: Which of the following is a problematic reason to pilot a code of ethics prior to widespread deployment? -> Key Answer: C. The pilot phase demonstrates the seriousness of the organization with respect to its ethical responsibilities.**
+  *Dịch: Lý do nào sau đây là một lý do có vấn đề khi thử nghiệm một bộ quy tắc đạo đức trước khi triển khai rộng rãi? -> Đáp án chính: C. The pilot phase demonstrates the seriousness of the organization with respect to its ethical responsibilities.*
+  *Ghi nhớ: Việc thực hiện pilot chỉ mang tính phô trương (PR) nhằm chứng tỏ sự "nghiêm túc" thay vì tập trung vào mục tiêu kỹ thuật kiểm thử và hoàn thiện bộ quy tắc là một động cơ có vấn đề (ethics-washing).*
+
+- **Q: To which of the following groups would a code of ethics not be applicable? -> Key Answer: D. Data subjects of the data-driven technology system**
+  *Dịch: Nhóm đối tượng nào sau đây không phải là đối tượng áp dụng của bộ quy tắc đạo đức nội bộ công ty? -> Đáp án chính: D. Data subjects of the data-driven technology system*
+  *Ghi nhớ: Bộ quy tắc đạo đức tổ chức (Code of Ethics) quy định tiêu chuẩn hành vi cho nhân viên trong công ty, không ràng buộc vai trò của chủ thể dữ liệu (Data Subjects).*
+
+- **Q: Which of the following are possible causes of the limited adoption of a code of ethics within an organization? (Select two.) -> Key Answer: B. Lack of clarity and ambiguity in the code of ethics & D. Lack of awareness of the code of ethics and where it is meant to be applied**
+  *Dịch: Những nguyên nhân nào sau đây dẫn đến việc áp dụng hạn chế bộ quy tắc đạo đức trong một tổ chức? (Select two) -> Đáp án chính: B. Lack of clarity and ambiguity in the code of ethics & D. Lack of awareness of the code of ethics and where it is meant to be applied*
+  *Ghi nhớ: Rào cản áp dụng Quy tắc Đạo đức: Thiếu nhận thức tập huấn (Awareness gap) và Ngôn từ mập mờ thiếu rõ ràng (Ambiguity).*
+
+- **Q: Which of the following are primary reasons to design, develop, and deploy a Code of Ethics within an organization? (Select two.) -> Key Answer: C. It lets external stakeholders know that you are an ethical company & D. It creates consistency in ethical practices across the organization, rather than patchy implementation**
+  *Dịch: Những lý do chính nào để thiết kế, phát triển và triển khai một Bộ quy tắc đạo đức trong tổ chức? (Select two) -> Đáp án chính: C. It lets external stakeholders know that you are an ethical company & D. It creates consistency in ethical practices across the organization, rather than patchy implementation*
+  *Ghi nhớ: Value of Code of Ethics: Xây dựng Uy tín với Bên ngoài (External Reputation) và Đảm bảo Tính nhất quán Nội bộ (Internal Consistency).*
+
+- **Q: Which organizational resource is most commonly used to guide employee decision making regarding ethical situations? -> Key Answer: A. Code of Ethics / Code of Conduct document**
+  *Dịch: Nguồn lực tổ chức nào được sử dụng phổ biến nhất để định hướng cho nhân viên ra quyết định trong các tình huống đạo đức? -> Đáp án chính: A. Code of Ethics / Code of Conduct document*
+  *Ghi nhớ: Organizational Code of Ethics: Tài liệu chuẩn mực hành vi chính thức định hướng mọi quyết định đạo đức của nhân viên.*
+
+- **Q: Which of the following is an example of applied ethics? -> Key Answer: B. Professional ethics (or Bioethics / Business ethics)**
+  *Dịch: Nội dung nào sau đây là một ví dụ về Đạo đức ứng dụng (Applied ethics)? -> Đáp án chính: B. Professional ethics (or Bioethics / Business ethics)*
+  *Ghi nhớ: Applied Ethics (Đạo đức ứng dụng) áp dụng các lý thuyết đạo đức vào các lĩnh vực thực tiễn cụ thể như Y học (Bioethics), Kinh doanh (Business ethics), Nghề nghiệp (Professional ethics).*
+
+- **Q: Which of the following is a primary benefit of adopting an organizational Code of Ethics? -> Key Answer: D. It creates consistency in ethical practices across the organization, rather than patchy implementation**
+  *Dịch: Lợi ích chính của việc áp dụng một Bộ quy tắc đạo đức doanh nghiệp là gì? -> Đáp án chính: D. It creates consistency in ethical practices across the organization, rather than patchy implementation*
+  *Ghi nhớ: Consistency in Ethics Implementation: Xóa bỏ sự áp dụng tùy tiện manh mún (patchy implementation) để tạo ra chuẩn mực thống nhất.*
+
+- **Q: Which of the following are possible causes of limited adoption of a code of ethics within an organization? -> Key Answer: B. Lack of clarity in the code of ethics & D. Lack of awareness of the code of ethics and where it is meant to be applied**
+  *Dịch: Những nguyên nhân nào sau đây dẫn đến việc áp dụng hạn chế bộ quy tắc đạo đức trong một tổ chức? (Select two) -> Đáp án chính: B. Lack of clarity in the code of ethics & D. Lack of awareness of the code of ethics and where it is meant to be applied*
+  *Ghi nhớ: Nguyên nhân thất bại của Code of Ethics: Sự thiếu rõ ràng (Ambiguity) và Thiếu truyền thông tập huấn nâng cao nhận thức (Lack of awareness).*
+
+- **Q: Why is an internal Code of Ethics important for an organization? -> Key Answer: A. It provides an accountability framework for stakeholders of organization to prevent ethical violations**
+  *Dịch: Tại sao một Bộ quy tắc đạo đức nội bộ (Code of Ethics) lại quan trọng đối với một tổ chức? -> Đáp án chính: A. It provides an accountability framework for stakeholders of organization to prevent ethical violations*
+  *Ghi nhớ: Tầm quan trọng của Code of Ethics: Cung cấp khung trách nhiệm giải trình và chuẩn mực hành vi để chủ động ngăn ngừa vi phạm.*
+
+- **Q: Which of the following is a primary internal benefit of establishing a clear Code of Ethics? -> Key Answer: C. It supports consistency of behavior and unification of organizational culture**
+  *Dịch: Lợi ích nội bộ chính yếu của việc thiết lập một Bộ quy tắc đạo đức rõ ràng là gì? -> Đáp án chính: C. It supports consistency of behavior and unification of organizational culture*
+  *Ghi nhớ: Internal Value of Code of Ethics: Định hình tính nhất quán trong hành vi ứng xử của mọi nhân viên và xây dựng bản sắc văn hóa tổ chức thống nhất.*
 
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (13 câu)
 
@@ -6457,12 +7956,36 @@ What kind of data is that?**
 ## MOD-09: Data Analysis, Correlation & Scatter Plot Interpretation
 ### Phân tích Dữ liệu, Tương quan & Phân tích Biểu đồ Phân tán
 
-#### Core Theory & Key Concepts / Lý Thuyết Cốt Lõi
-- **A Scatter Plot showing points tightly aligned along an upward slope indicates a Strong Positive Correlation between the two variables.**
+#### Core Theory & Exhaustive Knowledge Points / Lý Thuyết Cốt Lõi & Tổng Hợp Kiến Thức Ôn Thi
+- **[CORE RULE] A Scatter Plot showing points tightly aligned along an upward slope indicates a Strong Positive Correlation between the two variables.**
   *Dịch: Biểu đồ phân tán có các điểm dữ liệu nằm sát nhau theo hướng dốc lên thể hiện Tương quan Dương Mạnh (Strong Positive Correlation) giữa hai biến.*
 
-- **Correlation does not imply causation; observing that GrossIncome increases with Revenue confirms mathematical association, not direct cause.**
+- **[CORE RULE] Correlation does not imply causation; observing that GrossIncome increases with Revenue confirms mathematical association, not direct cause.**
   *Dịch: Tương quan không đồng nghĩa với quan hệ nhân quả; việc quan sát GrossIncome tăng theo Revenue chỉ xác nhận sự liên kết toán học chứ không phải nguyên nhân trực tiếp.*
+
+- **Q: In the following scatter plot, the GrossIncome variable is plotted against the Revenue variable. What type of correlation does this plot suggest? -> Key Answer: D. There is a strong positive correlation between both variables.**
+  *Dịch: Trong biểu đồ phân tán (scatter plot), biến Tổng thu nhập (GrossIncome) được vẽ tương quan với biến Doanh thu (Revenue). Biểu đồ này gợi ý loại tương quan nào? -> Đáp án chính: D. There is a strong positive correlation between both variables.*
+  *Ghi nhớ: Tương quan dương mạnh (Strong positive correlation): Khi một biến tăng thì biến kia cũng tăng theo xu hướng rõ rệt và các điểm dữ liệu phân bố sát đường xu hướng tăng.*
+
+- **Q: What kind of shape does a normal distribution take on when plotted in histogram? -> Key Answer: C. Bell shape**
+  *Dịch: Phân phối chuẩn (normal distribution) có hình dạng như thế nào khi được biểu diễn trên biểu đồ cột (histogram)? -> Đáp án chính: C. Bell shape*
+  *Ghi nhớ: Normal Distribution Curve: Phân phối chuẩn (Gaussian distribution) có đường cong đối xứng hình quả chuông (Bell curve).*
+
+- **Q: Which of the following describe a process of cross-correlation of data? (Select two.) -> Key Answer: A. Discovering new information via inference · C. Comparing multiple data points or sets**
+  *Dịch: Những hoạt động nào mô tả quy trình tương quan chéo (cross-correlation) của dữ liệu? (Chọn hai) -> Đáp án chính: A. Discovering new information via inference · C. Comparing multiple data points or sets*
+  *Ghi nhớ: Cross-Correlation of Data: Đào xới và so sánh nhiều tập dữ liệu (comparing sets) để suy luận ra thông tin mới (inference).*
+
+- **Q: In a scatter plot plotting GrossIncome against Revenue where points move upward from left to right, what type of correlation is suggested? -> Key Answer: B. Strong positive correlation**
+  *Dịch: Trong biểu đồ phân tán giữa Thu nhập gộp (GrossIncome) và Doanh thu (Revenue) khi các điểm dữ liệu hướng lên từ trái sang phải, loại tương quan nào được thể hiện? -> Đáp án chính: B. Strong positive correlation*
+  *Ghi nhớ: Biểu đồ phân tán (Scatter plot) hướng lên từ trái sang phải thể hiện tương quan thuận (Positive Correlation) giữa hai biến số.*
+
+- **Q: What kind of shape does a normal distribution take on when plotted in a histogram? -> Key Answer: C. Bell shape**
+  *Dịch: Phân bố chuẩn (Normal distribution) có hình dạng như thế nào khi được biểu diễn trên biểu đồ cột (histogram)? -> Đáp án chính: C. Bell shape*
+  *Ghi nhớ: Phân bố Gaussian (Normal Distribution) có dạng hình quả chuông đối xứng qua giá trị trung bình (Mean).*
+
+- **Q: Which of the following describes the fallacy of confusing correlation with causation? -> Key Answer: A. When you incorrectly assume a cause-and-effect relationship simply because two variables are correlated**
+  *Dịch: Nội dung nào sau đây mô tả sự ngụy biện nhầm lẫn giữa Tương quan và Nhân quả (Correlation vs Causation)? -> Đáp án chính: A. When you incorrectly assume a cause-and-effect relationship simply because two variables are correlated*
+  *Ghi nhớ: Correlation vs Causation: Hai biến biến thiên cùng chiều (Tương quan) không có nghĩa là biến này gây ra biến kia (Nhân quả).*
 
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (6 câu)
 
@@ -6571,9 +8094,893 @@ What kind of data is that?**
 ## MOD-10: Comprehensive Practice & Scenario-based Questions
 ### Bộ Câu Hỏi Tình Huống & Đạo Đức CNTT Tổng Hợp
 
-#### Core Theory & Key Concepts / Lý Thuyết Cốt Lõi
-- **Ethics in technology requires continuous evaluation across the entire lifecycle: design, development, deployment, and decommissioning.**
+#### Core Theory & Exhaustive Knowledge Points / Lý Thuyết Cốt Lõi & Tổng Hợp Kiến Thức Ôn Thi
+- **[CORE RULE] Ethics in technology requires continuous evaluation across the entire lifecycle: design, development, deployment, and decommissioning.**
   *Dịch: Đạo đức trong công nghệ đòi hỏi việc đánh giá liên tục trong toàn bộ vòng đời: thiết kế, phát triển, triển khai và loại bỏ.*
+
+- **Q: What is the long-term impact of ignoring ethical considerations in technology development? -> Key Answer: B. Loss of public trust and potential regulatory backlash**
+  *Dịch: Tác động lâu dài của việc bỏ qua các yếu tố đạo đức trong phát triển công nghệ là gì? -> Đáp án chính: B. Loss of public trust and potential regulatory backlash*
+  *Ghi nhớ: Long-term Ethics Impact: Việc coi thường đạo đức có thể mang lại lợi ích ngắn hạn nhưng sẽ hủy hoại uy tín lâu dài và kéo theo các quy định trừng phạt nghiêm khắc từ chính phủ.*
+
+- **Q: Pseudocode can best be defined as -> Key Answer: A. an explainable description of code that is meant for humans, not computers**
+  *Dịch: Mã giả (Pseudocode) có thể được định nghĩa tốt nhất là: -> Đáp án chính: A. an explainable description of code that is meant for humans, not computers*
+  *Ghi nhớ: Pseudocode: Cách biểu diễn thuật toán bằng ngôn ngữ tự nhiên kết hợp cấu trúc lập trình nhằm giúp con người dễ hiểu ý tưởng mã nguồn.*
+
+- **Q: What distinguishes consequentialist ethics from deontological ethics? -> Key Answer: A. Consequentialism focuses on outcomes, deontology on duties**
+  *Dịch: Điều gì phân biệt đạo đức hệ quả (Consequentialist ethics) với đạo đức bổn phận (Deontological ethics)? -> Đáp án chính: A. Consequentialism focuses on outcomes, deontology on duties*
+  *Ghi nhớ: Consequentialism vs Deontology: Đạo đức hệ quả đánh giá hành động qua kết quả thực tế (outcomes), còn đạo đức bổn phận đánh giá hành động qua việc tuân thủ các quy tắc/nghĩa vụ (duties).*
+
+- **Q: Which of the following best describes beneficence? -> Key Answer: B. Beneficence is the promotion of well-being, not just for moral agents like humans, but of animals, the environment, and societies.**
+  *Dịch: Phát biểu nào sau đây mô tả đúng nhất về lòng nhân từ / tính làm điều thiện (beneficence)? -> Đáp án chính: B. Beneficence is the promotion of well-being, not just for moral agents like humans, but of animals, the environment, and societies.*
+  *Ghi nhớ: Principle of Beneficence: Nguyên tắc hành động vì mục đích tạo ra điều tốt đẹp và nâng cao phúc lợi chung cho con người và hệ sinh thái.*
+
+- **Q: Unknown Unknowns refer to -> Key Answer: C. facing unknown empirical data with an incomplete dataset**
+  *Dịch: 'Unknown Unknowns' (Những điều không biết là mình không biết) đề cập đến: -> Đáp án chính: C. facing unknown empirical data with an incomplete dataset*
+  *Ghi nhớ: Unknown Unknowns: Những yếu tố biến số hoặc rủi ro mà chúng ta thậm chí không nhận thức được sự tồn tại của chúng do thiếu thông tin hoặc tập dữ liệu không hoàn chỉnh.*
+
+- **Q: Which principle emphasizes treating people as ends in themselves, not merely as means? -> Key Answer: C. Kantian deontology**
+  *Dịch: Nguyên tắc nào nhấn mạnh việc đối xử với con người như những mục đích tự thân (ends in themselves), chứ không chỉ như những phương tiện (means)? -> Đáp án chính: C. Kantian deontology*
+  *Ghi nhớ: Kantian Categorical Imperative: Immanuel Kant khẳng định con người có giá trị nội tại tuyệt đối, không bao giờ được coi con người là công cụ để đạt mục đích khác.*
+
+- **Q: A type of artificial intelligence that outperforms humans in all tasks is known as -> Key Answer: A. General AI**
+  *Dịch: Một loại trí tuệ nhân tạo vượt trội hơn con người trong mọi tác vụ được gọi là: -> Đáp án chính: A. General AI*
+  *Ghi nhớ: Artificial General Intelligence (AGI): Trí tuệ nhân tạo có khả năng học tập, hiểu và thực hiện bất kỳ nhiệm vụ trí tuệ nào mà con người có thể làm.*
+
+- **Q: If you were faced with an Al system that identifies exactly what individuals will be infected in a pandemic of a novel disease before the first case occurs, what kind of Al is this? -> Key Answer: C. Superintelligence**
+  *Dịch: Nếu bạn đối mặt với một hệ thống AI có khả năng xác định chính xác những cá nhân nào sẽ bị nhiễm bệnh trong một đại dịch trước khi ca bệnh đầu tiên xuất hiện, đây là loại AI nào? -> Đáp án chính: C. Superintelligence*
+  *Ghi nhớ: Artificial Superintelligence (ASI): Trí tuệ vượt xa khả năng nhận thức và dự đoán của những bộ óc con người kiệt xuất nhất.*
+
+- **Q: Why is deciding how to act using moral reasoning not always a feasible goal for human beings? -> Key Answer: D. Human decision making is often influenced by emotion and not logic.**
+  *Dịch: Tại sao việc ra quyết định bằng lý luận đạo đức không phải lúc nào cũng là mục tiêu khả thi đối với con người? -> Đáp án chính: D. Human decision making is often influenced by emotion and not logic.*
+  *Ghi nhớ: Bounded Rationality & Emotion: Con người bị chi phối mạnh mẽ bởi cảm xúc, định kiến và giới hạn nhận thức khi đưa ra quyết định thực tế.*
+
+- **Q: Which of the following statements are promoted by the categorical imperative? (Select three.) -> Key Answer: B. Act in such a way that your actions may become a universal law. · C. Don't treat people as a means to an end; treat them always as an end. · D. Each person must use reason to will moral laws.**
+  *Dịch: Những phát biểu nào sau đây được thúc đẩy bởi mệnh lệnh tuyệt đối (Categorical Imperative) của Kant? (Chọn ba) -> Đáp án chính: B. Act in such a way that your actions may become a universal law. · C. Don't treat people as a means to an end; treat them always as an end. · D. Each person must use reason to will moral laws.*
+  *Ghi nhớ: Kantian Principles: 3 nguyên tắc cốt lõi: Tính phổ quát (Universal Law), Giá trị mục đích tự thân (Ends in themselves) và Quyền tự trị lý trí (Autonomy of reason).*
+
+- **Q: What does informed consent require in the context of Al? -> Key Answer: B. Clear communication of data use and user permission**
+  *Dịch: Sự đồng ý có thông tin (informed consent) yêu cầu điều gì trong bối cảnh AI? -> Đáp án chính: B. Clear communication of data use and user permission*
+  *Ghi nhớ: Informed Consent: Người dùng phải được giải thích rõ ràng dữ liệu của họ được dùng làm gì và tự nguyện đồng ý trước khi thu thập.*
+
+- **Q: Which of the following resources does the National Institute of Standards and Technology (NIST) provide to organizations? -> Key Answer: B. Reference materials**
+  *Dịch: Tài nguyên nào sau đây do Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ (NIST) cung cấp cho các tổ chức? -> Đáp án chính: B. Reference materials*
+  *Ghi nhớ: NIST Standards & Reference Materials: NIST cung cấp các tài liệu tham khảo, khung chuẩn quản trị rủi ro an ninh mạng và AI.*
+
+- **Q: What is non-maleficence? -> Key Answer: A. The principle of doing no harm.**
+  *Dịch: Không gây hại (non-maleficence) là gì? -> Đáp án chính: A. The principle of doing no harm.*
+  *Ghi nhớ: Principle of Non-Maleficence: Nguyên tắc đạo đức cốt lõi yêu cầu các hệ thống công nghệ không được gây hại cho con người và xã hội ("First, do no harm").*
+
+- **Q: Which of the following best describes capability caution as referenced in the Asilomar Al Principles? -> Key Answer: B. Given a lack of consensus, we should avoid strong assumptions regarding upper limits on future AI capabilities.**
+  *Dịch: Phát biểu nào mô tả đúng nhất về 'cẩn trọng về năng lực' (capability caution) trong Nguyên tắc AI Asilomar? -> Đáp án chính: B. Given a lack of consensus, we should avoid strong assumptions regarding upper limits on future AI capabilities.*
+  *Ghi nhớ: Asilomar Capability Caution Principle: Không được chủ quan cho rằng AI sẽ bị giới hạn ở một ngưỡng nào đó; phải cẩn trọng trước khả năng phát triển vượt bậc của AI.*
+
+- **Q: Which ethical framework emphasizes the importance of moral duties and rules when addressing ethical dilemmas? -> Key Answer: A. Deontological Ethics**
+  *Dịch: Khung đạo đức nào nhấn mạnh tầm quan trọng của các nghĩa vụ và quy tắc đạo đức khi giải quyết các nghịch lý đạo đức? -> Đáp án chính: A. Deontological Ethics*
+  *Ghi nhớ: Deontological Ethics: Thuyết đạo đức dựa trên quy tắc (rule-based) và nghĩa vụ bắt buộc (duty-based).*
+
+- **Q: Which of the following describes an ethical framework? -> Key Answer: D. Ethical frameworks seek to mitigate ethical concerns by creating actionable steps.**
+  *Dịch: Phát biểu nào sau đây mô tả đúng nhất về một khung chuẩn đạo đức (ethical framework)? -> Đáp án chính: D. Ethical frameworks seek to mitigate ethical concerns by creating actionable steps.*
+  *Ghi nhớ: Ethical Framework Purpose: Khung chuẩn đạo đức biến các nguyên tắc lý thuyết thành các quy trình và bước hành động cụ thể (actionable steps) để áp dụng thực tế.*
+
+- **Q: How can small organizations implement ethical practices with limited resources? -> Key Answer: B. Focus on core ethical principles and gradual implementation**
+  *Dịch: Các tổ chức nhỏ với nguồn lực hạn chế có thể triển khai các thực hành đạo đức như thế nào? -> Đáp án chính: B. Focus on core ethical principles and gradual implementation*
+  *Ghi nhớ: Ethics in SMEs: Doanh nghiệp nhỏ nên tiếp cận đạo đức theo hướng tinh gọn, ưu tiên các nguyên tắc cốt lõi và áp dụng cuốn chiếu.*
+
+- **Q: How can organizations ensure continuous ethical improvement? -> Key Answer: B. Through regular assessment, feedback, and adaptation**
+  *Dịch: Làm thế nào để các tổ chức đảm bảo sự cải tiến đạo đức liên tục? -> Đáp án chính: B. Through regular assessment, feedback, and adaptation*
+  *Ghi nhớ: Continuous Improvement Cycle (PDCA): Đạo đức là một hành trình liên tục cải tiến dựa trên đánh giá, nhận phản hồi và điều chỉnh.*
+
+- **Q: Which of these steps follows the most logical order for a low-to-high sorting algorithm? -> Key Answer: C. 1. Scan to find the smallest number 2. Set to 0 in the index in the output array 3. Remove that number from the input array 4. Repeat steps 1-3, but add 1 to the index number for each loop**
+  *Dịch: Các bước nào sau đây theo thứ tự logic nhất cho một thuật toán sắp xếp từ thấp đến cao (low-to-high)? -> Đáp án chính: C. 1. Scan to find the smallest number 2. Set to 0 in the index in the output array 3. Remove that number from the input array 4. Repeat steps 1-3, but add 1 to the index number for each loop*
+  *Ghi nhớ: Selection Sort Logic: Tìm phần tử nhỏ nhất, đưa vào mảng kết quả tại vị trí tăng dần và lặp lại cho đến hết.*
+
+- **Q: Which of the following describes the purpose of a STEEPV analysis? -> Key Answer: B. To perform a strategic analysis of how external environments impact business operations.**
+  *Dịch: Phát biểu nào sau đây mô tả mục đích của phân tích STEEPV? -> Đáp án chính: B. To perform a strategic analysis of how external environments impact business operations.*
+  *Ghi nhớ: STEEPV Analysis: Phân tích 6 yếu tố vĩ mô môi trường bên ngoài: Social, Technological, Economic, Environmental, Political, Values.*
+
+- **Q: Which of the following are cost functions used to evaluate linear regression models? (select two.) -> Key Answer: B. Mean squared error (MSE) · C. Root mean squared error (RMSE)**
+  *Dịch: Hàm chi phí (cost functions) nào sau đây được sử dụng để đánh giá mô hình hồi quy tuyến tính (linear regression)? (Chọn hai) -> Đáp án chính: B. Mean squared error (MSE) · C. Root mean squared error (RMSE)*
+  *Ghi nhớ: Regression Metrics: Mô hình hồi quy dùng chỉ số sai số liên tục như MSE và RMSE. Accuracy và Recall dùng cho bài toán phân loại (Classification).*
+
+- **Q: Which of the following describes extrajudicial judgment? -> Key Answer: A. A ruling or scoring made outside of a court.**
+  *Dịch: Phát biểu nào mô tả đúng về phán quyết ngoài tư pháp (extrajudicial judgment)? -> Đáp án chính: A. A ruling or scoring made outside of a court.*
+  *Ghi nhớ: Extrajudicial Assessment: Các quyết định, đánh giá hoặc chấm điểm (như chấm điểm tín nhiệm xã hội AI) diễn ra ngoài hệ thống tòa án chính thức.*
+
+- **Q: What does the acronym RACI stand for? -> Key Answer: D. Responsible, Accountable, Consulted, Informed**
+  *Dịch: Từ viết tắt RACI đại diện cho điều gì? -> Đáp án chính: D. Responsible, Accountable, Consulted, Informed*
+  *Ghi nhớ: RACI Matrix: Ma trận phân công trách nhiệm dự án: Responsible (Người thực hiện), Accountable (Người chịu trách nhiệm chính), Consulted (Người tham vấn), Informed (Người nhận thông tin).*
+
+- **Q: Which of the following elements should be communicated with end users when negotiating ethical access to a user's data? (Select two.) -> Key Answer: C. The intention behind a certain activity or request · D. A request for consent to perform an action**
+  *Dịch: Những yếu tố nào sau đây nên được truyền thông với người dùng cuối khi đàm phán quyền truy cập dữ liệu một cách đạo đức? (Chọn hai) -> Đáp án chính: C. The intention behind a certain activity or request · D. A request for consent to perform an action*
+  *Ghi nhớ: Ethical Data Access Negotiation: Minh bạch mục đích (intention) và xin phép công khai (request for consent).*
+
+- **Q: Which of the following Python tools is designed to integrate with Google's Cloud Al platform? -> Key Answer: A. What-If**
+  *Dịch: Công cụ Python nào sau đây được thiết kế để tích hợp với nền tảng Google Cloud AI? -> Đáp án chính: A. What-If*
+  *Ghi nhớ: What-If Tool (TensorFlow/Google): Công cụ trực quan hóa giúp phân tích mô hình ML và tác động của dữ liệu được phát triển bởi Google.*
+
+- **Q: In the context of open data, what is FAIR? -> Key Answer: A. An acronym for findable, accessible, interoperable, and reusable.**
+  *Dịch: Trong bối cảnh dữ liệu mở (open data), nguyên tắc FAIR là gì? -> Đáp án chính: A. An acronym for findable, accessible, interoperable, and reusable.*
+  *Ghi nhớ: FAIR Data Principles: 4 nguyên tắc quản trị dữ liệu mở để tối ưu hóa việc tìm kiếm, truy cập và tái sử dụng dữ liệu trực tuyến.*
+
+- **Q: Which of the following describes dual-use or multipurpose data? -> Key Answer: B. Data collected for one application that could also be applied to another application in a different domain.**
+  *Dịch: Phát biểu nào mô tả dữ liệu sử dụng kép hoặc đa mục đích (dual-use / multipurpose data)? -> Đáp án chính: B. Data collected for one application that could also be applied to another application in a different domain.*
+  *Ghi nhớ: Dual-Use Data: Dữ liệu thu thập vì mục đích này nhưng bị tái sử dụng cho mục đích khác ngoài dự kiến ban đầu.*
+
+- **Q: If your company need to do the same analysis as new data comes in every month, what is the best term to describe that process? -> Key Answer: A. Pipeline**
+  *Dịch: Nếu công ty cần thực hiện cùng một phân tích khi dữ liệu mới đổ về hàng tháng, thuật ngữ tốt nhất mô tả quy trình đó là: -> Đáp án chính: A. Pipeline*
+  *Ghi nhớ: Data Pipeline: Quy trình tự động hóa các bước thu thập, làm sạch, phân tích dữ liệu theo chu kỳ lặp lại.*
+
+- **Q: Which of the following describes the black box problem in Al? -> Key Answer: B. It is difficult to understand how or why an AI system made a particular decision.**
+  *Dịch: Phát biểu nào sau đây mô tả vấn đề hộp đen (black box problem) trong AI? -> Đáp án chính: B. It is difficult to understand how or why an AI system made a particular decision.*
+  *Ghi nhớ: Black Box Problem: Sự thiếu khả năng giải thích (lack of explainability) về cơ chế suy luận bên trong của mô hình phức tạp (như Deep Neural Networks).*
+
+- **Q: At what point should ethical consideration ideally be applied to emerging technologies? -> Key Answer: D. From its inception, through maintenance, to applying foresight regarding its decommissioning.**
+  *Dịch: Thời điểm nào là lý tưởng nhất để áp dụng các cân nhắc đạo đức vào công nghệ mới nổi? -> Đáp án chính: D. From its inception, through maintenance, to applying foresight regarding its decommissioning.*
+  *Ghi nhớ: Ethics by Design & Lifecycle: Đạo đức phải được tích hợp vào toàn bộ vòng đời sản phẩm từ khâu ý tưởng (inception) đến ngưng vận hành (decommissioning).*
+
+- **Q: What is the difference between beneficence and non-maleficence? -> Key Answer: A. Beneficence refers to "do only good and non-maleficence refers to "do no harm."**
+  *Dịch: Sự khác biệt giữa làm điều thiện (beneficence) và không gây hại (non-maleficence) là gì? -> Đáp án chính: A. Beneficence refers to "do only good and non-maleficence refers to "do no harm."*
+  *Ghi nhớ: Beneficence vs Non-Maleficence: Beneficence = Chủ động tạo ra điều tốt; Non-Maleficence = Tránh gây tổn hại.*
+
+- **Q: Which of the following are ways that regulations differ from ethical frameworks? (Select two.) -> Key Answer: C. Regulations have legal enforcement behind them. · D. Regulations provide a clear basis for potential litigation.**
+  *Dịch: Những điểm nào sau đây phân biệt quy định pháp lý (regulations) với các khung chuẩn đạo đức (ethical frameworks)? (Chọn hai) -> Đáp án chính: C. Regulations have legal enforcement behind them. · D. Regulations provide a clear basis for potential litigation.*
+  *Ghi nhớ: Regulations vs Ethical Frameworks: Regulations có tính bắt buộc thi hành bằng pháp luật (legal enforcement) và làm cơ sở th kiện (litigation). Frameworks mang tính tự nguyện.*
+
+- **Q: Which school of philosophical thought primarily advocates for a global moral code? -> Key Answer: A. Utilitarianism**
+  *Dịch: Trường phái tư tưởng triết học nào chủ yếu cổ vũ cho một bộ quy tắc đạo đức toàn cầu? -> Đáp án chính: A. Utilitarianism*
+  *Ghi nhớ: Utilitarianism Global Ethics: Thuyết vị lợi hướng tới tối đa hóa hạnh phúc cho số đông nhất trên quy mô toàn cầu.*
+
+- **Q: How does the "virtuous cycle" that benefits Big Tech operate? -> Key Answer: D. Data-driven algorithms improve solutions, leading to new customers, and better data.**
+  *Dịch: 'Vòng lặp kỳ diệu' (virtuous cycle) mang lại lợi ích cho Big Tech hoạt động như thế nào? -> Đáp án chính: D. Data-driven algorithms improve solutions, leading to new customers, and better data.*
+  *Ghi nhớ: Big Tech Virtuous Data Cycle: More Data -> Better AI Model -> Better Product -> More Users -> More Data.*
+
+- **Q: A model that equalizes the number of mistakes it makes for each subgroup to reduce harm is deciding on -> Key Answer: B. equality of false negatives**
+  *Dịch: Một mô hình cân bằng số lượng sai sót giữa các nhóm nhỏ để giảm thiểu tác hại đang quyết định về: -> Đáp án chính: B. equality of false negatives*
+  *Ghi nhớ: Equalized Odds / False Negative Parity: Đảm bảo tỷ lệ sai sót bỏ sót (False Negative) bằng nhau giữa các phân nhóm để tránh gây thiệt hại cho một nhóm cụ thể.*
+
+- **Q: What is the purpose of what-if scenario planning sessions? -> Key Answer: C. The purpose of what-if scenario planning sessions is to think critically about potential worst-case scenarios so you can decide whether or not to proceed with a project.**
+  *Dịch: Mục đích của các buổi phiên hoạch định kịch bản "Giả định nếu" (what-if scenario planning) là gì? -> Đáp án chính: C. The purpose of what-if scenario planning sessions is to think critically about potential worst-case scenarios so you can decide whether or not to proceed with a project.*
+  *Ghi nhớ: What-If Scenario Planning: Chuẩn bị trước cho các rủi ro kịch bản tồi tệ nhất (worst-case scenarios) trước khi triển khai dự án.*
+
+- **Q: Which of the following describes the purpose of having an Ethics Board for a data-driven organization? -> Key Answer: A. An Ethics Board can help maintain an organization's values-based intentions and increase transparency into how they use data-driven technologies.**
+  *Dịch: Phát biểu nào sau đây mô tả mục đích của việc thành lập Hội đồng Đạo đức (Ethics Board) cho một tổ chức dựa trên dữ liệu? -> Đáp án chính: A. An Ethics Board can help maintain an organization's values-based intentions and increase transparency into how they use data-driven technologies.*
+  *Ghi nhớ: Ethics Board Role: Đảm bảo doanh nghiệp đi đúng định hướng giá trị đạo đức và nâng cao tính minh bạch.*
+
+- **Q: Which of the following is a valid reason for tracking the number and severity of an organization's ethical violations? -> Key Answer: D. It can help provide transparency around the efforts to improve the policies.**
+  *Dịch: Lý do hợp lệ để theo dõi số lượng và mức độ nghiêm trọng của các vi phạm đạo đức trong tổ chức là gì? -> Đáp án chính: D. It can help provide transparency around the efforts to improve the policies.*
+  *Ghi nhớ: Tracking Ethical Violations: Ghi nhận và theo dõi các vi phạm giúp minh bạch quá trình sửa đổi và hoàn thiện chính sách.*
+
+- **Q: Which of the following is an important action needed for the finalization of internal and external ethics policies before approval? -> Key Answer: B. Documenting the assumptions and choices made in the drafting of the policies**
+  *Dịch: Hành động quan trọng nào cần thiết cho việc hoàn thiện các chính sách đạo đức trước khi phê duyệt? -> Đáp án chính: B. Documenting the assumptions and choices made in the drafting of the policies*
+  *Ghi nhớ: Policy Documentation: Việc lưu lại các giả định và quyết định lựa chọn giúp giải thích cơ sở ra đời của chính sách cho các thế hệ sau.*
+
+- **Q: Why are environmental concerns important to consider in the ethical development of data-driven technologies? -> Key Answer: A. Data-driven technologies can cause secondary, indirect, or cumulative effects on the environment that might impact people in the long term.**
+  *Dịch: Tại sao cần phải xem xét các quan ngại về môi trường trong phát triển công nghệ dựa trên dữ liệu? -> Đáp án chính: A. Data-driven technologies can cause secondary, indirect, or cumulative effects on the environment that might impact people in the long term.*
+  *Ghi nhớ: Environmental Footprint of Data/AI: Việc tiêu thụ năng lượng khổng lồ của Data Center gây tác động tích tụ gián tiếp (cumulative effects) tới biến đổi khí hậu.*
+
+- **Q: When used in recommendation engines, explainable algorithms can help answer the question of -> Key Answer: A. why?**
+  *Dịch: Khi được sử dụng trong các công cụ gợi ý (recommendation engines), các thuật toán có khả năng giải thích (explainable algorithms) có thể giúp trả lời câu hỏi nào? -> Đáp án chính: A. why?*
+  *Ghi nhớ: Explainability in Recommender Systems: Giải thích lý do tại sao một sản phẩm hoặc nội dung cụ thể lại được gợi ý cho người dùng.*
+
+- **Q: Which of the following describes the technique of homomorphic encryption? -> Key Answer: C. A method of performing operations on encrypted data.**
+  *Dịch: Phát biểu nào sau đây mô tả kỹ thuật mã hóa đồng hình (homomorphic encryption)? -> Đáp án chính: C. A method of performing operations on encrypted data.*
+  *Ghi nhớ: Homomorphic Encryption: Cho phép tính toán trực tiếp trên ciphertext (dữ liệu mã hóa) mà kết quả giải mã ra đúng bằng kết quả tính trên plaintext.*
+
+- **Q: Which team typically oversees penetration test operations and adherence to the rules of engagement (ROE)? -> Key Answer: D. White team**
+  *Dịch: Đội ngũ nào thường giám sát hoạt động kiểm thử xâm nhập và sự tuân thủ các quy tắc tham chiến (Rules of Engagement - ROE)? -> Đáp án chính: D. White team*
+  *Ghi nhớ: White Team Role: Đội ngũ giám sát (referees/judges) quản lý quy tắc tham chiến ROE và điều phối cuộc tấn công mô phỏng giữa Red Team và Blue Team.*
+
+- **Q: You want to solicit feedback from users who are seeking explanations about your Al products and services. So, you decide to place a form on your marketing website that users can fill out. Which of the following is the best way to structure that form for the purpose of collecting useful feedback? -> Key Answer: D. Provide a large, unrestricted text box where users can enter their thoughts at length.**
+  *Dịch: Bạn muốn thu thập phản hồi từ người dùng tìm kiếm lời giải thích về sản phẩm AI. Cách tốt nhất để thiết kế biểu mẫu thu thập phản hồi hữu ích là: -> Đáp án chính: D. Provide a large, unrestricted text box where users can enter their thoughts at length.*
+  *Ghi nhớ: Qualitative Feedback Collection: Ô nhập liệu văn bản tự do lớn giúp người dùng mô tả đầy đủ góc nhìn và bối cảnh phức tạp.*
+
+- **Q: Which of the following are important steps to document during an auditing process? (Select two.) -> Key Answer: B. Specify and document what precisely is being audited. · D. Document the audit procedures to be followed.**
+  *Dịch: Những bước nào quan trọng cần tài liệu hóa trong quy trình kiểm toán? (Chọn hai) -> Đáp án chính: B. Specify and document what precisely is being audited. · D. Document the audit procedures to be followed.*
+  *Ghi nhớ: Audit Documentation Standards: Phải ghi rõ phạm vi đối tượng kiểm toán (what is audited) và quy trình kiểm toán thực hiện (procedures followed).*
+
+- **Q: Which of the following measures is best suited for reporting results to an audience? -> Key Answer: A. Standard deviation**
+  *Dịch: Thước đo nào sau đây phù hợp nhất để báo cáo kết quả biến động dữ liệu cho công chúng? -> Đáp án chính: A. Standard deviation*
+  *Ghi nhớ: Descriptive Statistics for Reporting: Standard Deviation cùng đơn vị đo với dữ liệu gốc, giúp báo cáo mức độ phân tán trực quan hơn Phương sai (Variance).*
+
+- **Q: Which of the following describes the purpose of a business impact assessment (BIA)? -> Key Answer: A. It helps you predict business interruptions and develop recovery strategies.**
+  *Dịch: Phát biểu nào sau đây mô tả mục đích của đánh giá tác động kinh doanh (BIA)? -> Đáp án chính: A. It helps you predict business interruptions and develop recovery strategies.*
+  *Ghi nhớ: Business Impact Analysis (BIA): Xác định các hoạt động kinh doanh cốt lõi và dự đoán thiệt hại khi bị gián đoạn để xây dựng phương án phục hồi sau sự cố.*
+
+- **Q: Which of the following best describes what an algorithm is? -> Key Answer: A. a recipe that a computer uses to solve problems**
+  *Dịch: Phát biểu nào sau đây mô tả đúng nhất về một thuật toán (algorithm)? -> Đáp án chính: A. a recipe that a computer uses to solve problems*
+  *Ghi nhớ: Algorithm Definition: Một chuỗi các chỉ dẫn/quy tắc từng bước (recipe) để máy tính thực thi giải quyết bài toán.*
+
+- **Q: An algorithm that takes an input, tries 10 different sorting techniques, and uses the best fit on the next 100 inputs is best described as a -> Key Answer: C. learning algorithm**
+  *Dịch: Thuật toán nhận dữ liệu đầu vào, thử 10 kỹ thuật sắp xếp khác nhau và áp dụng kỹ thuật tốt nhất cho 100 đầu vào tiếp theo được mô tả tốt nhất là: -> Đáp án chính: C. learning algorithm*
+  *Ghi nhớ: Learning Algorithm: Thuật toán có khả năng thử nghiệm, đánh giá kết quả và tự điều chỉnh chiến lược tối ưu cho các dữ liệu tương lai.*
+
+- **Q: Which of the following elements are important aspects of ethical integrity with regards to data? (Select two.) -> Key Answer: A. If the holders of data are trustworthy entities. · B. Whether the data was gathered in an ethical manner.**
+  *Dịch: Yếu tố nào quan trọng đối với tính toàn vẹn đạo đức của dữ liệu? (Chọn hai) -> Đáp án chính: A. If the holders of data are trustworthy entities. · B. Whether the data was gathered in an ethical manner.*
+  *Ghi nhớ: Ethical Data Integrity: Thu thập đạo đức (ethical gathering) và Đơn vị lưu trữ uy tín (trustworthy entities).*
+
+- **Q: An unintended negative outcome of programming a broad goal into general intelligence is known as -> Key Answer: C. perverse instantiation**
+  *Dịch: Một kết quả tiêu cực không lường trước do lập trình một mục tiêu quá rộng vào AI tổng quát được gọi là: -> Đáp án chính: C. perverse instantiation*
+  *Ghi nhớ: Perverse Instantiation (Nick Bostrom): AI thực hiện mục tiêu được giao theo cách biến thái/quái dị gây thảm họa (ví dụ: AI bảo vệ hòa bình bằng cách tiêu diệt toàn bộ loài người).*
+
+- **Q: If you are doing an analysis of data to determine which of several small businesses you should purchase to gain the maximum benefit to your overall company finances, what type of analysis are you doing? -> Key Answer: B. Prescriptive**
+  *Dịch: Nếu bạn phân tích dữ liệu để quyết định nên mua doanh nghiệp nhỏ nào trong số nhiều doanh nghiệp để đạt lợi ích tài chính tối đa, bạn đang làm loại phân tích nào? -> Đáp án chính: B. Prescriptive*
+  *Ghi nhớ: Prescriptive Analytics: Phân tích đưa ra quyết định/hành động tối ưu giữa các phương án lựa chọn.*
+
+- **Q: How does increasing Al performance often conflict with the desire for explainability? -> Key Answer: B. Increasing Al performance sometimes leads to greater model complexity, making it more difficult to explain decision-making processes.**
+  *Dịch: Tăng hiệu năng của AI thường xung đột với mong muốn có khả năng giải thích (explainability) như thế nào? -> Đáp án chính: B. Increasing Al performance sometimes leads to greater model complexity, making it more difficult to explain decision-making processes.*
+  *Ghi nhớ: Accuracy vs Interpretability Tradeoff: Mô hình hiệu năng càng cao (Deep Neural Nets, Ensemble Methods) thì độ phức tạp (complexity) càng lớn, dẫn đến khả năng giải thích (explainability) càng giảm.*
+
+- **Q: Which subset of transparency involves describing the system to a non-expert? -> Key Answer: A. Explainability**
+  *Dịch: Phân nhóm nào của tính minh bạch liên quan đến việc mô tả hệ thống cho một người không có chuyên môn (non-expert)? -> Đáp án chính: A. Explainability*
+  *Ghi nhớ: Explainability vs Interpretability: Khả năng giải thích hướng tới đối tượng người dùng phổ thông, trong khi khả năng diễn giải hướng tới chuyên gia kỹ thuật.*
+
+- **Q: Which of the following are important elements of the data minimization principle? (Select two.) -> Key Answer: A. Only collect data that is strictly necessary · B. Only keep data for as long as it is needed**
+  *Dịch: Những yếu tố nào là yếu tố quan trọng của nguyên tắc giảm thiểu dữ liệu (data minimization)? (Chọn hai) -> Đáp án chính: A. Only collect data that is strictly necessary · B. Only keep data for as long as it is needed*
+  *Ghi nhớ: Data Minimization Principles: Thu thập đúng mức cần thiết (strictly necessary) và Giữ trong thời gian vừa đủ (data retention limit).*
+
+- **Q: Which type of entity are the OECD Principles on Artificial Intelligence mostly geared towards? -> Key Answer: C. National governments**
+  *Dịch: Các Nguyên tắc của OECD về Trí tuệ Nhân tạo chủ yếu hướng tới loại thực thể nào? -> Đáp án chính: C. National governments*
+  *Ghi nhớ: OECD AI Principles Target: Khung chuẩn OECD ra đời nhằm định hướng cho chính phủ các quốc gia xây dựng chính sách pháp lý về AI.*
+
+- **Q: What is the primary advantage of radioactive data tracing over past techniques that modify input in order to determine whether or not that input was used in training? -> Key Answer: B. Radioactive data tracing doesn't impact a model's performance.**
+  *Dịch: Ưu điểm chính của truy vết dữ liệu phóng xạ (radioactive data tracing) so với các kỹ thuật sửa đổi đầu vào trước đây là gì? -> Đáp án chính: B. Radioactive data tracing doesn't impact a model's performance.*
+  *Ghi nhớ: Radioactive Data Tracing: Kỹ thuật đánh dấu dữ liệu bản quyền (watermarking) sao cho mô hình học từ dữ liệu đó bị dán nhãn nhận diện được nhưng KHÔNG làm giảm hiệu năng mô hình.*
+
+- **Q: The explainable Al movement states that cooperation between agents, in this case, algorithms and humans, depends on which of the following? -> Key Answer: A. trust**
+  *Dịch: Phong trào AI có thể giải thích được (XAI) tuyên bố rằng sự hợp tác giữa thuật toán và con người phụ thuộc vào yếu tố nào? -> Đáp án chính: A. trust*
+  *Ghi nhớ: Trust in XAI: Con người chỉ sẵn sàng hợp tác và sử dụng gợi ý của AI khi họ hiểu và tin tưởng (trust) vào cơ chế ra quyết định của nó.*
+
+- **Q: Which of the following benefits can be gained from establishing baseline system behaviors? (Select two.) -> Key Answer: A. Tracking deviance from norms · C. Restoring compromised functionality through a system rollback**
+  *Dịch: Những lợi ích nào thu được từ việc thiết lập hành vi hệ thống cơ sở (baseline system behaviors)? (Chọn hai) -> Đáp án chính: A. Tracking deviance from norms · C. Restoring compromised functionality through a system rollback*
+  *Ghi nhớ: System Baseline Benefits: Giúp phát hiện hành vi bất thường (deviance from norms) và khôi phục trạng thái an toàn chuẩn (rollback).*
+
+- **Q: Which of the following are typically true when comparing the LIME tool with the SHAP tool? (Select two.) -> Key Answer: C. LIME outputs results faster than SHAP. · D. LIME is less accurate than SHAP**
+  *Dịch: Phát biểu nào đúng khi so sánh công cụ LIME với công cụ SHAP? (Chọn hai) -> Đáp án chính: C. LIME outputs results faster than SHAP. · D. LIME is less accurate than SHAP*
+  *Ghi nhớ: LIME vs SHAP Tradeoff: LIME nhanh hơn (faster) nhưng mang tính xấp xỉ nên kém chính xác hơn (less accurate); SHAP chính xác hơn dựa trên Shapley values nhưng tính toán chậm hơn.*
+
+- **Q: Which of the following elements might be considered moderately affected in an Impact Level 2 Algorithmic Impact Assessment? (Select two.) -> Key Answer: C. The rights of individuals or communities. · D. The health and well-being of individuals or communities.**
+  *Dịch: Những yếu tố nào được coi là bị ảnh hưởng vừa phải trong Đánh giá Tác động Thuật toán Cấp độ 2 (Impact Level 2 Algorithmic Impact Assessment)? (Chọn hai) -> Đáp án chính: C. The rights of individuals or communities. · D. The health and well-being of individuals or communities.*
+  *Ghi nhớ: Algorithmic Impact Assessment Level 2: Ảnh hưởng vừa phải (Moderate impact) tác động tới Quyền (Rights) và Sức khỏe/Phúc lợi (Health & Well-being) của cộng đồng.*
+
+- **Q: Which type of kurtosis is most likely to indicate the strong presence of outliers? -> Key Answer: B. Leptokurtic**
+  *Dịch: Loại độ nhọn (kurtosis) nào có nhiều khả năng chỉ ra sự xuất hiện mạnh mẽ của các giá trị ngoại lệ (outliers)? -> Đáp án chính: B. Leptokurtic*
+  *Ghi nhớ: Kurtosis Types: Leptokurtic (độ nhọn cao, đuôi dày) chứa nhiều outliers; Mesokurtic (phân phối chuẩn); Platykurtic (độ nhọn thấp, đuôi mỏng).*
+
+- **Q: If a coin is flipped, which of the following would ensure "yes/no" data is private while still remaining useful? -> Key Answer: C. heads for true answer, tails for random answer**
+  *Dịch: Nếu ngửa đồng xu, điều nào sau đây sẽ đảm bảo dữ liệu "có/không" là riêng tư mà vẫn có ích? -> Đáp án chính: C. heads for true answer, tails for random answer*
+  *Ghi nhớ: Randomized Response Technique: Kỹ thuật tung đồng xu thêm nhiễu ngẫu nhiên giúp bảo vệ riêng tư người trả lời câu hỏi nhạy cảm.*
+
+- **Q: Which of the following can help mitigate unwillingness to accept feedback? -> Key Answer: C. Communicate the importance of feedback in refining a product.**
+  *Dịch: Điều nào sau đây có thể giúp giảm bớt sự không sẵn sàng tiếp nhận phản hồi? -> Đáp án chính: C. Communicate the importance of feedback in refining a product.*
+  *Ghi nhớ: Overcoming Feedback Resistance: Giải thích rõ ràng phản hồi giúp hoàn thiện sản phẩm (refining product) tốt hơn.*
+
+- **Q: What is ambient intelligence? -> Key Answer: C. Linked IOT technology that always on and acting to personalize the experience for the people within its environment.**
+  *Dịch: Trí tuệ môi trường (ambient intelligence) là gì? -> Đáp án chính: C. Linked IOT technology that always on and acting to personalize the experience for the people within its environment.*
+  *Ghi nhớ: Ambient Intelligence (AmI): Môi trường thông minh gồm các thiết bị IoT cảm biến luôn bật (always on) để hỗ trợ và cá nhân hóa trải nghiệm sống.*
+
+- **Q: Your organization has developed an Al system that recommends treatments for hospital patients. Some questions have been raised about the ethics of how these treatments are determined. What applied ethics domain do these concerns fall under? -> Key Answer: A. Bioethics**
+  *Dịch: Tổ chức phát triển hệ thống AI gợi ý phương pháp điều trị cho bệnh nhân. Các quan ngại đạo đức thuộc miền đạo đức ứng dụng nào? -> Đáp án chính: A. Bioethics*
+  *Ghi nhớ: Bioethics in Healthcare AI: Đạo đức y sinh học quản lý các quyết định điều trị y tế và sức khỏe con người.*
+
+- **Q: How does a smart contract differ from a traditional contract? -> Key Answer: B. Smart contracts eliminate the need for a central authority.**
+  *Dịch: Hợp đồng thông minh (smart contract) khác với hợp đồng truyền thống như thế nào? -> Đáp án chính: B. Smart contracts eliminate the need for a central authority.*
+  *Ghi nhớ: Smart Contracts & Decentralization: Hợp đồng thông minh tự động thực thi trên Blockchain mà không cần bên trung gian/cơ quan trung tâm (central authority).*
+
+- **Q: Which of the following statements accurately describes the philosophical concept of predeterminism? -> Key Answer: B. All events, past, present, and future, are determined in advance.**
+  *Dịch: Phát biểu nào mô tả chính xác khái niệm triết học về thuyết tiền định (predeterminism)? -> Đáp án chính: B. All events, past, present, and future, are determined in advance.*
+  *Ghi nhớ: Predetermonism: Quan niệm triết học cho rằng mọi sự kiện trong vũ trụ đã được định sẵn từ trước.*
+
+- **Q: Which of the following, by itself, qualifies as personally identifiable information (PII)? -> Key Answer: B. A user's home address**
+  *Dịch: Thông tin nào sau đây, khi đứng một mình, đủ điều kiện để coi là thông tin nhận dạng cá nhân (PII)? -> Đáp án chính: B. A user's home address*
+  *Ghi nhớ: Personally Identifiable Information (PII): Thông tin có thể được sử dụng trực tiếp để nhận dạng, liên hệ hoặc định vị một cá nhân cụ thể.*
+
+- **Q: Which of the following defines the Al black box problem? -> Key Answer: A. The challenge of understanding the inner workings of opaque systems**
+  *Dịch: Điều nào sau đây định nghĩa đúng về vấn đề hộp đen (black box problem) trong AI? -> Đáp án chính: A. The challenge of understanding the inner workings of opaque systems*
+  *Ghi nhớ: The Black Box Problem: Sự mờ đục của các thuật toán học sâu khiến con người không thể giải thích được lý do đằng sau các quyết định cụ thể của AI.*
+
+- **Q: A type of artificial intelligence that outperforms humans in some defined task is known as -> Key Answer: B. Narrow Al**
+  *Dịch: Một loại trí tuệ nhân tạo vượt trội hơn con người trong các tác vụ cụ thể (specific tasks) được gọi là gì? -> Đáp án chính: B. Narrow Al*
+  *Ghi nhớ: Narrow AI (Weak AI): Loại AI được thiết kế và huấn luyện để thực hiện một tác vụ cụ thể hoặc giải quyết một bài toán hẹp duy nhất.*
+
+- **Q: What is the fundamental attribution error? -> Key Answer: D. When you say your bad behavior is caused by the situation, but when other people display the same bad behavior, it is caused by a personality trait**
+  *Dịch: Lỗi quy kết cơ bản (fundamental attribution error) là gì? -> Đáp án chính: D. When you say your bad behavior is caused by the situation, but when other people display the same bad behavior, it is caused by a personality trait*
+  *Ghi nhớ: Fundamental Attribution Error: Thiên kiến nhận thức khiến con người đánh giá quá cao yếu tố tính cách và đánh giá thấp hoàn cảnh khi giải thích hành vi của người khác.*
+
+- **Q: How can a visual contract be easier to understand than a written contract? -> Key Answer: C. The use of pictures with simple text makes it easier for the layperson to understand the details of a contract.**
+  *Dịch: Tại sao hợp đồng bằng hình ảnh (visual contract) có thể dễ hiểu hơn hợp đồng bằng văn bản? -> Đáp án chính: C. The use of pictures with simple text makes it easier for the layperson to understand the details of a contract.*
+  *Ghi nhớ: Visual Contracts & Access to Justice: Kết hợp hình ảnh minh họa với văn bản ngắn gọn giúp người không chuyên (layperson) nắm bắt nội dung pháp lý dễ dàng.*
+
+- **Q: Which of the following describe corporate hegemony? (Select two.) -> Key Answer: A. Consolidating interests through mergers and acquisitions · D. Locking out smaller players, leading to monopolies or cartels**
+  *Dịch: Những điều nào sau đây mô tả quyền bá chủ của tập đoàn (corporate hegemony)? (Chọn hai) -> Đáp án chính: A. Consolidating interests through mergers and acquisitions · D. Locking out smaller players, leading to monopolies or cartels*
+  *Ghi nhớ: Corporate Hegemony: Tình trạng các tập đoàn công nghệ lớn thống trị thị trường bằng cách thâu tóm và ngăn chặn sự cạnh tranh lành mạnh.*
+
+- **Q: What does the American Medical Association (AMA) say the "A" in Al should stand for? -> Key Answer: B. Augmented**
+  *Dịch: Hiệp hội Y khoa Hoa Kỳ (AMA) cho rằng chữ "A" trong AI nên đại diện cho từ nào trong y tế? -> Đáp án chính: B. Augmented*
+  *Ghi nhớ: Augmented Intelligence in Healthcare: AMA nhấn mạnh AI trong y tế không thay thế bác sĩ mà đóng vai trò trí tuệ tăng cường (Augmented Intelligence) hỗ trợ con người.*
+
+- **Q: What make ethics training effective? -> Key Answer: D. All of the others**
+  *Dịch: Điều gì làm cho chương trình đào tạo đạo đức thực sự hiệu quả? -> Đáp án chính: D. All of the others*
+  *Ghi nhớ: Effective Ethics Training: Đào tạo đạo đức thành công cần kết hợp tương tác, thực tiễn kịch bản và củng cố kiến thức thường xuyên.*
+
+- **Q: Which of the following is a benefit of using focus groups over surveys? -> Key Answer: D. They allow for deeper engagement with the target demographic community.**
+  *Dịch: Lợi ích của việc sử dụng nhóm thảo luận tập trung (focus groups) so với các cuộc khảo sát (surveys) là gì? -> Đáp án chính: D. They allow for deeper engagement with the target demographic community.*
+  *Ghi nhớ: Qualitative Research Method: Focus groups cung cấp góc nhìn định tính sâu sắc thông qua thảo luận trực tiếp, khác với khảo sát định lượng trên diện rộng.*
+
+- **Q: Which of the following is a reason to engage in a comprehensive information gathering phase before drafting your internal and external ethics policies? -> Key Answer: A. It helps to unearth best practices from peers in the industry.**
+  *Dịch: Lý do vì sao cần thực hiện quy trình thu thập thông tin toàn diện là gì? -> Đáp án chính: A. It helps to unearth best practices from peers in the industry.*
+  *Ghi nhớ: Information Gathering in Ethics Management: Thu thập thông tin rộng rãi giúp tổ chức học hỏi kinh nghiệm thành công và bài học thất bại từ các đối tác khác.*
+
+- **Q: What are the duties of an ethics board for data-driven technology organizations? -> Key Answer: D. All of the others**
+  *Dịch: Nhiệm vụ của ban đạo đức đối với các tổ chức công nghệ dựa trên dữ liệu là gì? -> Đáp án chính: D. All of the others*
+  *Ghi nhớ: Responsibilities of an Ethics Board: Ban đạo đức chịu trách nhiệm toàn diện từ nghiên cứu rủi ro mới, cung cấp tài nguyên quyết định đến quản trị tri thức đạo đức.*
+
+- **Q: Which type of edge case is caused by data outside the normal distribution? -> Key Answer: B. Outliers**
+  *Dịch: Loại trường hợp biên (edge case) nào gây ra bởi dữ liệu nằm ngoài phân phối chuẩn? -> Đáp án chính: B. Outliers*
+  *Ghi nhớ: Outliers as Edge Cases: Outliers là các điểm dữ liệu nằm xa phân phối chuẩn (normal distribution), tạo ra các edge cases cho mô hình.*
+
+- **Q: Delete unused data is a method of data minimization -> Key Answer: A. early and often**
+  *Dịch: Xóa dữ liệu không sử dụng là phương pháp giảm thiểu dữ liệu nên làm: -> Đáp án chính: A. early and often*
+  *Ghi nhớ: Data Minimization Habit: "Delete unused data early and often" là khẩu hiệu thực hành giảm thiểu dữ liệu chuẩn.*
+
+- **Q: Which of the following are common key performance indicators (KPIs) within dashboards of data-driven systems? (Select two.) -> Key Answer: A. Model training time · D. Performance metrics, such as accuracy and cost functions**
+  *Dịch: Những chỉ số hiệu năng cốt lõi (KPIs) nào thường xuất hiện trên bảng điều khiển (dashboards) của các hệ thống dựa trên dữ liệu? (Chọn hai) -> Đáp án chính: A. Model training time · D. Performance metrics, such as accuracy and cost functions*
+  *Ghi nhớ: Tech Dashboard KPIs in Data Systems: Giám sát các chỉ số kỹ thuật của mô hình để đảm bảo chất lượng vận hành thuật toán.*
+
+- **Q: Which of the following best describes the use case for zero-knowledge protocols (ZKPs)? -> Key Answer: C. Proving that something exists, but not the specifics**
+  *Dịch: Phát biểu nào sau đây mô tả đúng nhất trường hợp sử dụng của giao thức bằng chứng không kiến thức (Zero-Knowledge Proofs - ZKP)? -> Đáp án chính: C. Proving that something exists, but not the specifics*
+  *Ghi nhớ: Zero-Knowledge Proof (ZKP): Cho phép một bên (prover) chứng minh cho bên khác (verifier) rằng một phát biểu là đúng mà không cần tiết lộ bất kỳ thông tin nào khác ngoài tính đúng đắn của phát biểu đó.*
+
+- **Q: How can you leverage emerging technologies like Al in disaster recovery plans (DRP)? -> Key Answer: A. By using data-driven techniques to inform the strategies behind the DRP.**
+  *Dịch: Làm thế nào bạn có thể tận dụng các công nghệ mới nổi như AI trong các kế hoạch khôi phục sau thảm họa (DRP)? -> Đáp án chính: A. By using data-driven techniques to inform the strategies behind the DRP.*
+  *Ghi nhớ: AI in Disaster Recovery Planning: Dùng phân tích dữ liệu AI để định hình chiến lược ứng phó và tối ưu kịch bản DRP.*
+
+- **Q: When conducting a business impact assessment (BIA), why is it important to interview or survey personnel at the ground level, not just managers and other higher-ups? -> Key Answer: B. They may have more institutional knowledge about a subject than managers.**
+  *Dịch: Khi thực hiện đánh giá tác động kinh doanh (BIA), tại sao lại quan trọng khi phỏng vấn hoặc khảo sát nhân sự cấp cơ sở (ground level)? -> Đáp án chính: B. They may have more institutional knowledge about a subject than managers.*
+  *Ghi nhớ: Ground-Level Insights in BIA: Nhân viên trực tiếp vận hành (ground-level) hiểu rõ nhất các ngóc ngách quy trình và lỗ hổng thực tế.*
+
+- **Q: What is the black box problem? -> Key Answer: A. When a model is deployed, but researchers are unable to figure out why it's making decisions**
+  *Dịch: Vấn đề hộp đen (black box problem) là gì? -> Đáp án chính: A. When a model is deployed, but researchers are unable to figure out why it's making decisions*
+  *Ghi nhớ: Black Box Definition: Không thể giải thích lý do tại sao mô hình đưa ra quyết định.*
+
+- **Q: Which of the following best describes why data is sometimes compared to oil? (Select two.) -> Key Answer: C. Data can be monetarily valuable. · D. Data can fuel algorithmic technologies.**
+  *Dịch: Điều nào sau đây mô tả đúng nhất lý báo tại sao dữ liệu đôi khi được ví như dầu mỏ? -> Đáp án chính: C. Data can be monetarily valuable. · D. Data can fuel algorithmic technologies.*
+  *Ghi nhớ: Data as the New Oil: Dữ liệu là tài sản có giá trị kinh tế cao và đóng vai trò làm nguyên liệu thô để thúc đẩy các hệ thống AI hoạt động.*
+
+- **Q: Which of the following describe how adopting ethical practices can be a strategic differentiator? (Select three.) -> Key Answer: A. It will build customer trust. · B. It will support the development of strategic partnerships. · D. It will encourage applicants to apply for your company.**
+  *Dịch: Những điều nào sau đây mô tả cách thức áp dụng các thực hành đạo đức có thể trở thành một yếu tố tạo nên sự khác biệt chiến lược (strategic differentiator)? -> Đáp án chính: A. It will build customer trust. · B. It will support the development of strategic partnerships. · D. It will encourage applicants to apply for your company.*
+  *Ghi nhớ: Ethics as a Competitive Advantage: Cam kết đạo đức giúp doanh nghiệp nổi bật trên thị trường, thu hút khách hàng, đối tác và nhân tài.*
+
+- **Q: What does it mean to say that human rights are inalienable? (Select two.) -> Key Answer: B. Inalienable rights are inherent in all human beings. · C. Inalienable rights cannot be taken away except in extreme circumstances.**
+  *Dịch: Tuyên bố quyền con người là bất khả xâm phạm (inalienable) có nghĩa là gì? -> Đáp án chính: B. Inalienable rights are inherent in all human beings. · C. Inalienable rights cannot be taken away except in extreme circumstances.*
+  *Ghi nhớ: Inalienability of Human Rights: Quyền con người là bẩm sinh, không thể bị mua bán, từ bỏ hay tước đoạt một cách tùy tiện.*
+
+- **Q: Which of the following are advantages to adopting standards frameworks like ISO 27000? (Select two.) -> Key Answer: B. Formal certification processes that provide competitive advantage · D. International support, recognition, and involvement**
+  *Dịch: Những ưu điểm nào của việc áp dụng các khung chuẩn như ISO 27000? (Chọn hai) -> Đáp án chính: B. Formal certification processes that provide competitive advantage · D. International support, recognition, and involvement*
+  *Ghi nhớ: ISO Standards Advantages: Chứng nhận uy tín toàn cầu (Formal certification) và Được quốc tế công nhận/hỗ trợ (International recognition).*
+
+- **Q: A goal of a fair model's accuracy standards is to -> Key Answer: A. minimize the error rate as long as parity is obtained**
+  *Dịch: Mục tiêu về tiêu chuẩn độ chính xác của một mô hình công bằng là: -> Đáp án chính: A. minimize the error rate as long as parity is obtained*
+  *Ghi nhớ: Fair Model Optimization Goal: Tìm điểm tối ưu giảm thiểu tỷ lệ lỗi (minimize error rate) trong khuôn khổ đảm bảo các điều kiện bình đẳng (parity).*
+
+- **Q: How could a board of ethics be an example of ethic washing? -> Key Answer: C. If it has no power to institute change.**
+  *Dịch: Một hội đồng đạo đức (board of ethics) có thể là một ví dụ về "tẩy trắng đạo đức" (ethics washing) như thế nào? -> Đáp án chính: C. If it has no power to institute change.*
+  *Ghi nhớ: Ethics Washing: Việc lập ra hội đồng đạo đức chỉ mang tính hình thức (PR làm màu) nhưng không trao cho họ thực quyền (no power to institute change) để điều chỉnh hệ thống.*
+
+- **Q: What does a leadership champion do? -> Key Answer: A. Make decisions based on company values even in the face of adversity.**
+  *Dịch: Một nhà lãnh đạo tiên phong (leadership champion) về đạo đức làm gì? -> Đáp án chính: A. Make decisions based on company values even in the face of adversity.*
+  *Ghi nhớ: Ethics Leadership Champion: Người lãnh đạo kiên định bảo vệ giá trị đạo đức tổ chức bất chấp sức ép lợi nhuận hay khó khăn.*
+
+- **Q: Which of the following describes change management? -> Key Answer: C. A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in making organizational change.**
+  *Dịch: Khái niệm quản lý sự thay đổi tổ chức (organizational change management) được định nghĩa đúng nhất là: -> Đáp án chính: C. A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in making organizational change.*
+  *Ghi nhớ: Organizational Change Management Definition: Khung quy trình tổng thể để chuẩn bị, hỗ trợ và đồng hành cùng con người và tổ chức thích ứng với sự thay đổi.*
+
+- **Q: How is employee voice different than open door policy? -> Key Answer: B. Employee voice follows up with the people to show how changes were implemented based on their communication.**
+  *Dịch: Tiếng nói nhân viên (employee voice) khác với chính sách mở cửa (open door policy) như thế nào? -> Đáp án chính: B. Employee voice follows up with the people to show how changes were implemented based on their communication.*
+  *Ghi nhớ: Employee Voice vs Open Door Policy: Open Door cho phép nhân viên phát ngôn; Employee Voice là chu trình 2 chiều có sự phản hồi và hành động điều chỉnh thực tế dựa trên ý kiến đóng góp.*
+
+- **Q: Which of the following is an important concept to consider as part of building an organizational philosophy? -> Key Answer: D. Anticipating future implications of that philosophy**
+  *Dịch: Khái niệm quan trọng cần xem xét như một phần của việc xây dựng triết lý tổ chức là gì? -> Đáp án chính: D. Anticipating future implications of that philosophy*
+  *Ghi nhớ: Organizational Philosophy Foresight: Xây dựng triết lý tổ chức đòi hỏi tầm nhìn xa (foresight) dự đoán các tác động và hệ lụy tương lai.*
+
+- **Q: What's the difference between a basic and complex learning algorithm? -> Key Answer: A. A basic algorithm has a set amount of choices to optimize for, while a complex algorithm is given the freedom to find its own model**
+  *Dịch: Sự khác biệt giữa thuật toán học tập cơ bản (basic) và phức tạp (complex) là gì? -> Đáp án chính: A. A basic algorithm has a set amount of choices to optimize for, while a complex algorithm is given the freedom to find its own model*
+  *Ghi nhớ: Basic vs Complex Learning Algorithms: Basic = Tối ưu hóa trên tập quy tắc/lựa chọn cố định; Complex = Tự do học tập không gian mô hình riêng phức tạp.*
+
+- **Q: Management asks someone to do a data-related task. Which of the following would likely be ethically problematic? (Select two.) -> Key Answer: A. Manipulate data or alter its interpretation. · D. Delete any erroneous data.**
+  *Dịch: Ban quản lý yêu cầu thực hiện một nhiệm vụ liên quan đến dữ liệu. Những việc nào sau đây có thể gây ra vấn đề vi phạm đạo đức nghiêm trọng? (Chọn hai) -> Đáp án chính: A. Manipulate data or alter its interpretation. · D. Delete any erroneous data.*
+  *Ghi nhớ: Unethical Data Manipulation: Thao túng dữ liệu (Manipulate data) và Xóa bừa bãi dữ liệu lỗi mà không có quy trình minh bạch (Delete erroneous data).*
+
+- **Q: "Companies have an obligation to their shareholders" is part of a view that sees artificial intelligence as -> Key Answer: B. just another tool that accelerates research, like online advertising**
+  *Dịch: "Các công ty có nghĩa vụ đối với cổ đông của họ" là một phần của quan điểm coi trí tuệ nhân tạo như: -> Đáp án chính: B. just another tool that accelerates research, like online advertising*
+  *Ghi nhớ: Commercial View of AI: Quan điểm thực dụng coi AI là một công cụ thương mại giúp tối ưu hóa nghiên cứu và lợi nhuận cho cổ đông.*
+
+- **Q: In a complex learning function, we will understand the but not the -> Key Answer: C. inputs/outputs, algorithm**
+  *Dịch: Trong một hàm học tập phức tạp (complex learning function), chúng ta sẽ hiểu...... nhưng không hiểu...... -> Đáp án chính: C. inputs/outputs, algorithm*
+  *Ghi nhớ: Black Box Learning Function: Đối với hàm phức tạp, ta nắm rõ đầu vào (inputs) và đầu ra (outputs), nhưng không thể hiểu nổi cơ chế bên trong thuật toán (algorithm).*
+
+- **Q: What is the Turing test used for? -> Key Answer: B. To test whether an Al system is capable of thinking like a human being.**
+  *Dịch: Phép thử Turing (Turing test) được sử dụng để làm gì? -> Đáp án chính: B. To test whether an Al system is capable of thinking like a human being.*
+  *Ghi nhớ: Turing Test Purpose: Kiểm tra khả năng biểu hiện trí tuệ và tư duy của máy tính sao cho không thể phân biệt được với con người.*
+
+- **Q: Why does the trolley problem pose an ethical predicament? -> Key Answer: A. You have to make a choice between two scenarios where choosing one leads to loss of life in the other.**
+  *Dịch: Tại sao bài toán xe điện (trolley problem) lại đặt ra một nghịch lý đạo đức? -> Đáp án chính: A. You have to make a choice between two scenarios where choosing one leads to loss of life in the other.*
+  *Ghi nhớ: Trolley Problem Dilemma: Nghịch lý đạo đức khi hành động hay không hành động đều dẫn đến thương vong về người.*
+
+- **Q: What is the capability caution? -> Key Answer: C. We need to remember that we don't know the full extent of what Al systems might become capable of so that we can better plan.**
+  *Dịch: Cẩn trọng về năng lực (capability caution) là gì? -> Đáp án chính: C. We need to remember that we don't know the full extent of what Al systems might become capable of so that we can better plan.*
+  *Ghi nhớ: Capability Caution Core Definition: Cẩn trọng vì không ai biết trước giới hạn năng lực tối đa của AI trong tương lai.*
+
+- **Q: Why is it important to consider Goodhart's law? -> Key Answer: A. A model might optimize one metric at the expense of others.**
+  *Dịch: Tại sao việc xem xét định luật Goodhart lại quan trọng? -> Đáp án chính: A. A model might optimize one metric at the expense of others.*
+  *Ghi nhớ: Định luật Goodhart phát biểu rằng: 'Khi một thước đo trở thành mục tiêu, nó không còn là một thước đo tốt nữa'. Trong học máy, việc cố gắng tối ưu hóa tối đa một chỉ số duy nhất có thể dẫn đến hành vi méo mó hoặc suy giảm chất lượng toàn cục.*
+
+- **Q: What are the limitations of training and testing an AI model in a specific context? -> Key Answer: A. Models may perform poorly when applied to different contexts**
+  *Dịch: Hạn chế của việc huấn luyện và kiểm thử một mô hình AI trong một bối cảnh (context) cụ thể là gì? -> Đáp án chính: A. Models may perform poorly when applied to different contexts*
+  *Ghi nhớ: Mô hình AI thường bị ràng buộc bởi phân phối dữ liệu huấn luyện (Domain/Context Specificity) và khó tổng quát hóa khi sang môi trường mới.*
+
+- **Q: What are the essential steps involved in creating personas for user-centric marketing? -> Key Answer: A. Define target audience, conduct research, build fictional personas based on insights, validate personas**
+  *Dịch: Các bước thiết yếu trong việc tạo dựng hình mẫu người dùng (personas) cho chiến dịch marketing lấy khách hàng làm trung tâm là gì? -> Đáp án chính: A. Define target audience, conduct research, build fictional personas based on insights, validate personas*
+  *Ghi nhớ: Persona là hình mẫu đại diện hư cấu mô tả chân dung khách hàng lý tưởng dựa trên dữ liệu thực tế thu thập từ nghiên cứu thị trường.*
+
+- **Q: What is the role of interdisciplinary collaboration in tech ethics? -> Key Answer: B. It brings diverse expertise to ethical challenges**
+  *Dịch: Vai trò của sự hợp tác liên ngành (Interdisciplinary Collaboration) trong đạo đức công nghệ là gì? -> Đáp án chính: B. It brings diverse expertise to ethical challenges*
+  *Ghi nhớ: Đạo đức công nghệ đòi hỏi góc nhìn kết hợp từ kỹ sư, luật sư, nhà xã hội học và chuyên gia tâm lý.*
+
+- **Q: What can happen if users are excluded from AI impact discussions? -> Key Answer: B. Systems may not reflect public values**
+  *Dịch: Điều gì có thể xảy ra nếu người dùng bị loại khỏi các cuộc thảo luận về tác động của AI? -> Đáp án chính: B. Systems may not reflect public values*
+  *Ghi nhớ: Bỏ qua tiếng nói của người dùng làm hệ thống AI thiếu tính đại diện và có nguy cơ xâm phạm các giá trị đạo đức cộng đồng.*
+
+- **Q: What is a challenge of explainability in complex AI systems? -> Key Answer: C. Black-box algorithms are hard to interpret**
+  *Dịch: Thách thức của tính giải thích được (Explainability) trong các hệ thống AI phức tạp là gì? -> Đáp án chính: C. Black-box algorithms are hard to interpret*
+  *Ghi nhớ: Các mô hình deep learning có hàng tỷ trọng số toán học khiến việc diễn giải cơ sở lập luận trở nên cực kỳ khó khăn.*
+
+- **Q: The optimistic view of general AI could be accurately summarized as AI as a ____ -> Key Answer: A. utility**
+  *Dịch: Góc nhìn lạc quan về AI tổng quát (AGI) có thể được tóm tắt chính xác là xem AI như một ____ -> Đáp án chính: A. utility*
+  *Ghi nhớ: Góc nhìn lạc quan về AI tổng quát (AGI) coi AI là một tiện ích hạ tầng thiết yếu (utility) như điện hay nước, hỗ trợ và phục vụ toàn bộ đời sống xã hội.*
+
+- **Q: Which of the following are examples of how AI can limit human autonomy? (Select two.) -> Key Answer: A. Weapon systems can limit human autonomy as humans may not have decision-making capability or understand the decision making. & B. AI systems might impact certain vulnerable groups such as the elderly and children differently than the rest of the population, which could limit those groups' autonomy.**
+  *Dịch: Những ví dụ nào sau đây thể hiện cách AI có thể làm giới hạn quyền tự quyết (Autonomy) của con người? (Select two) -> Đáp án chính: A. Weapon systems can limit human autonomy as humans may not have decision-making capability or understand the decision making. & B. AI systems might impact certain vulnerable groups such as the elderly and children differently than the rest of the population, which could limit those groups' autonomy.*
+  *Ghi nhớ: AI làm suy giảm Autonomy khi tước bỏ quyền kiểm soát quyết định của con người (trong vũ khí) hoặc thao túng các nhóm dễ bị tổn thương.*
+
+- **Q: In a complex learning function, we will understand the ____ but not the ____ -> Key Answer: C. inputs/outputs, algorithm**
+  *Dịch: Trong một hàm học máy phức tạp (Complex Learning Function), chúng ta sẽ hiểu khía cạnh nào nhưng không hiểu khía cạnh nào? -> Đáp án chính: C. inputs/outputs, algorithm*
+  *Ghi nhớ: Bản chất của mô hình học sâu hộp đen (Black Box) là chúng ta thấy và kiểm soát được Input/Output nhưng không hiểu rõ cơ chế biến đổi trung gian của thuật toán.*
+
+- **Q: What is the ultimate goal of ethics in emerging technology? -> Key Answer: B. Ensure technology serves humanity's best interests**
+  *Dịch: Mục tiêu tối thượng của đạo đức trong công nghệ mới nổi (Emerging Technology) là gì? -> Đáp án chính: B. Ensure technology serves humanity's best interests*
+  *Ghi nhớ: Đạo đức công nghệ hướng tới việc định hình sự phát triển của công nghệ sao cho mang lại giá trị nhân văn và không gây hại.*
+
+- **Q: What is one of the recommendations for governments? -> Key Answer: C. Promote international cooperation. & D. Promote collaboration.**
+  *Dịch: Khuyến nghị quan trọng nào sau đây được dành cho các chính phủ trong quản trị AI? -> Đáp án chính: C. Promote international cooperation. & D. Promote collaboration.*
+  *Ghi nhớ: Khuyến nghị dành cho các chính phủ trong quản trị công nghệ bao gồm việc mở rộng hợp tác quốc tế và thúc đẩy cộng tác đa bên giữa chính phủ, doanh nghiệp và viện nghiên cứu.*
+
+- **Q: If you are attempting to build a new framework for the research and development (R&D) of AI, which of the following frameworks might you look at first for its emphasis in this area? -> Key Answer: A. The Beijing AI Principles**
+  *Dịch: Nếu bạn đang cố gắng xây dựng một khung làm việc mới cho nghiên cứu và phát triển (R&D) AI, khung làm việc nào nhấn mạnh nhất vào lĩnh vực này? -> Đáp án chính: A. The Beijing AI Principles*
+  *Ghi nhớ: Nguyên tắc AI Bắc Kinh (Beijing AI Principles) nổi tiếng với việc phân chia rõ ràng các nguyên tắc dành riêng cho khâu Nghiên cứu & Phát triển (R&D).*
+
+- **Q: How can a leader promote ethical behavior across an organization? -> Key Answer: C. By modeling ethical behavior and encouraging open dialogue**
+  *Dịch: Làm thế nào một nhà lãnh đạo có thể thúc đẩy hành vi đạo đức trong toàn bộ tổ chức? -> Đáp án chính: C. By modeling ethical behavior and encouraging open dialogue*
+  *Ghi nhớ: Lãnh đạo đạo đức (Ethical Leadership) đòi hỏi nêu gương thực tế (Lead by Example) và tạo môi trường an toàn tâm lý để nhân viên thảo luận rủi ro.*
+
+- **Q: Why is fair competition an important ethical consideration for data-driven technology businesses? -> Key Answer: B. Fair competition builds user trust in technology as a whole.**
+  *Dịch: Tại sao cạnh tranh công bằng lại là một xem xét đạo đức quan trọng đối với các doanh nghiệp công nghệ dựa trên dữ liệu? -> Đáp án chính: B. Fair competition builds user trust in technology as a whole.*
+  *Ghi nhớ: Cạnh tranh công bằng ngăn chặn sự độc quyền dữ liệu (Data Monopoly), bảo vệ lòng tin tổng thể của xã hội vào hạ tầng số.*
+
+- **Q: What makes ethical leadership crucial in the data-driven age? -> Key Answer: B. It empowers ethical culture and trust**
+  *Dịch: Điều gì làm cho lãnh đạo đạo đức trở nên quan trọng trong kỷ nguyên dựa trên dữ liệu? -> Đáp án chính: B. It empowers ethical culture and trust*
+  *Ghi nhớ: Trong thời đại AI & Big Data, lãnh đạo đạo đức giữ vai trò la bàn định hướng cho việc sử dụng dữ liệu có trách nhiệm.*
+
+- **Q: What is the most effective way to measure ethical implementation success? -> Key Answer: B. Combination of stakeholder feedback, incident tracking, and outcome assessment**
+  *Dịch: Cách hiệu quả nhất để đo lường thành công của việc triển khai đạo đức trong tổ chức là gì? -> Đáp án chính: B. Combination of stakeholder feedback, incident tracking, and outcome assessment*
+  *Ghi nhớ: Đo lường thực thi đạo đức đòi hỏi cách tiếp cận toàn diện đa chiều (Triangulation) kết hợp phản hồi, dữ liệu sự cố và tác động thực tế.*
+
+- **Q: How can fair competition in data-driven technologies foster innovation and trust? -> Key Answer: A. By encouraging diverse ideas and approaches**
+  *Dịch: Cạnh tranh công bằng trong các công nghệ dựa trên dữ liệu có thể thúc đẩy sự đổi mới và lòng tin như thế nào? -> Đáp án chính: A. By encouraging diverse ideas and approaches*
+  *Ghi nhớ: Cạnh tranh công bằng ngăn chặn độc quyền, tạo môi trường cho các ý tưởng và giải pháp công nghệ đa dạng phát triển.*
+
+- **Q: Which of the following statements are promoted by the categorical imperative? (Select three) -> Key Answer: B. Act in such a way that your actions may become a universal law & C. Don't treat people as a means to an end; treat them always as an end. & D. Each person must use reason to will moral laws**
+  *Dịch: Những phát biểu nào sau đây được thúc đẩy bởi Thuyết Mệnh lệnh tuyệt đối của Kant? (Chọn ba đáp án) -> Đáp án chính: B. Act in such a way that your actions may become a universal law & C. Don't treat people as a means to an end; treat them always as an end. & D. Each person must use reason to will moral laws*
+  *Ghi nhớ: Thuyết Mệnh lệnh tuyệt đối của Kant (Categorical Imperative) nhấn mạnh tính phổ quát, tôn trọng phẩm giá con người và lý trí.*
+
+- **Q: The Data minimization principle requires that you limit data collection to only what is: -> Key Answer: D. Required to fulfill a specific purpose**
+  *Dịch: Nguyên tắc Giảm thiểu dữ liệu (Data minimization) yêu cầu bạn giới hạn việc thu thập dữ liệu ở mức chỉ bao gồm những gì: -> Đáp án chính: D. Required to fulfill a specific purpose*
+  *Ghi nhớ: Nguyên tắc Giảm thiểu dữ liệu (Data Minimization) yêu cầu doanh nghiệp chỉ thu thập đúng và đủ dữ liệu cần thiết phục vụ cho một mục đích xử lý cụ thể đã được xác định trước.*
+
+- **Q: In the context of open data, what does FAIR stand for? -> Key Answer: A. Findable, Accessible, Interoperable, and Reusable**
+  *Dịch: Trong bối cảnh dữ liệu mở (Open Data), từ viết tắt FAIR đại diện cho điều gì? -> Đáp án chính: A. Findable, Accessible, Interoperable, and Reusable*
+  *Ghi nhớ: Nguyên tắc dữ liệu FAIR: Findable (Tìm kiếm được), Accessible (Truy cập được), Interoperable (Tương tác hệ thống được), Reusable (Tái sử dụng được).*
+
+- **Q: If your company needs to do the same automated analysis as new data comes in every month, what is the best term to describe that process? -> Key Answer: A. Pipeline (Data Pipeline)**
+  *Dịch: Nếu công ty bạn cần thực hiện cùng một quy trình phân tích tự động khi dữ liệu mới đổ về hàng tháng, thuật ngữ nào mô tả đúng nhất quy trình đó? -> Đáp án chính: A. Pipeline (Data Pipeline)*
+  *Ghi nhớ: Data Pipeline là chuỗi tự động hóa thu thập, biến đổi, làm sạch và phân tích dữ liệu lặp đi lặp lại theo định kỳ.*
+
+- **Q: Which of the following describes the black box problem in AI? -> Key Answer: A. It is difficult to understand how or why an AI system made a particular decision.**
+  *Dịch: Nội dung nào sau đây mô tả bài toán Hộp đen (Black box problem) trong AI? -> Đáp án chính: A. It is difficult to understand how or why an AI system made a particular decision.*
+  *Ghi nhớ: Black Box Problem xảy ra khi logic tính toán toán học bên trong của mô hình AI quá phức tạp khiến con người không thể giải thích lý do dẫn đến kết quả.*
+
+- **Q: An example of prioritizing new data over existing historical data to improve model relevance is: -> Key Answer: C. Using new data over existing data (Recency bias / Data freshness)**
+  *Dịch: Một ví dụ về việc ưu tiên dữ liệu mới hơn dữ liệu lịch sử có sẵn để nâng cao tính cập nhật cho mô hình là gì? -> Đáp án chính: C. Using new data over existing data (Recency bias / Data freshness)*
+  *Ghi nhớ: Data Freshness (Tính tươi mới của dữ liệu): Sử dụng dữ liệu mới cập nhật phản ánh đúng thực tế hành vi hiện tại hơn các dữ liệu lịch sử đã lỗi thời.*
+
+- **Q: How does the 'virtuous cycle' that benefits Big Tech operate? -> Key Answer: D. Data-driven algorithms improve solutions, leading to new customers, and better data.**
+  *Dịch: Chu trình tăng trưởng độc quyền ('Virtuous Cycle') mang lại lợi ích cho các tập đoàn Big Tech vận hành như thế nào? -> Đáp án chính: D. Data-driven algorithms improve solutions, leading to new customers, and better data.*
+  *Ghi nhớ: Vòng lặp phản hồi dữ liệu (Data Flywheel Effect): Càng nhiều dữ liệu -> Thuật toán càng thông minh -> Sản phẩm càng tốt -> Thu hút thêm người dùng -> Lại có thêm dữ liệu độc quyền.*
+
+- **Q: A model that equalizes the number of mistakes it makes for each subgroup to reduce harm is deciding on: -> Key Answer: A. Equality of false negatives**
+  *Dịch: Một mô hình bằng cân bằng số lượng sai sót mà nó mắc phải cho mỗi nhóm nhỏ để giảm thiểu tổn hại là đang quyết định về tiêu chuẩn nào? -> Đáp án chính: A. Equality of false negatives*
+  *Ghi nhớ: Equality of False Negatives đảm bảo tỷ lệ bỏ sót sai sót gây hại đạt mức ngang nhau giữa tất cả các phân nhóm xã hội.*
+
+- **Q: You want to solicit feedback from users who are seeking explanations about your AI products and services. So, you decide to place a form on your marketing website that users can fill out. Which of the following is the best way to structure that form for the purpose of collecting useful feedback? -> Key Answer: A. Provide a drop-down menu of feedback categories that users can select from, with a promise that you'll follow up via email.**
+  *Dịch: Bạn muốn thu thập phản hồi từ người dùng đang tìm kiếm lời giải thích về các sản phẩm và dịch vụ AI của mình. Bạn quyết định đặt một biểu mẫu trên trang web tiếp thị. Cách nào sau đây là tốt nhất để cấu trúc biểu mẫu đó nhằm thu thập phản hồi hữu ích? -> Đáp án chính: A. Provide a drop-down menu of feedback categories that users can select from, with a promise that you'll follow up via email.*
+  *Ghi nhớ: Phản hồi minh bạch AI cần được phân loại theo danh mục (Categories) để phân luồng xử lý và có cam kết phản hồi cá nhân hóa.*
+
+- **Q: When used in recommendation engines, explainable algorithms can help a company build what with users? -> Key Answer: D. Trust**
+  *Dịch: Khi được sử dụng trong các hệ thống gợi ý (Recommendation engines), các thuật toán có thể giải thích được giúp công ty xây dựng yếu tố nào với người dùng? -> Đáp án chính: D. Trust*
+  *Ghi nhớ: Tính giải thích được trong hệ thống gợi ý giúp người dùng hiểu rõ căn cứ gợi ý sản phẩm/nội dung, từ đó củng cố lòng tin (Trust) đối với nền tảng.*
+
+- **Q: Which of the following are potential ethical benefits of conducting pilot tests? -> Key Answer: B. Identifying unknown biases and ethical gaps in real-world scenarios before mass deployment**
+  *Dịch: Lợi ích đạo đức tiềm năng nào của việc tiến hành các bài kiểm thử thử nghiệm (Pilot tests)? -> Đáp án chính: B. Identifying unknown biases and ethical gaps in real-world scenarios before mass deployment*
+  *Ghi nhớ: Thử nghiệm Pilot giúp stress-test mô hình trong môi trường kiểm soát để kịp thời phát hiện các thiên vị ẩn trước khi phát hành đại chúng.*
+
+- **Q: A type of artificial intelligence that outperforms humans in all tasks is known as: -> Key Answer: B. Superintelligence (ASI)**
+  *Dịch: Loại trí tuệ nhân tạo vượt trội hơn con người trong mọi tác vụ nhận thức được gọi là gì? -> Đáp án chính: B. Superintelligence (ASI)*
+  *Ghi nhớ: Artificial Superintelligence (ASI - Siêu trí tuệ) là cấp độ AI lý thuyết vượt xa trí tuệ toàn diện của con người ở mọi lĩnh vực.*
+
+- **Q: An algorithm that takes an input, tries 10 different sorting techniques, and uses the best fit on the next 100 inputs is best described as a: -> Key Answer: C. Learning algorithm**
+  *Dịch: Một thuật toán nhận đầu vào, thử 10 kỹ thuật sắp xếp khác nhau, và sử dụng phương pháp tối ưu nhất cho 100 đầu vào tiếp theo được mô tả đúng nhất là: -> Đáp án chính: C. Learning algorithm*
+  *Ghi nhớ: Thuật toán học tập (Learning Algorithm) tự thử nghiệm, đánh giá hiệu năng và tự thích ứng cải thiện kết quả cho các dữ liệu tương lai.*
+
+- **Q: An unintended negative outcome of programming a broad goal into general intelligence is known as: -> Key Answer: A. Perverse instantiation**
+  *Dịch: Một hệ quả tiêu cực không mong muốn của việc lập trình mục tiêu quá rộng cho AI tổng quát được gọi là gì? -> Đáp án chính: A. Perverse instantiation*
+  *Ghi nhớ: Perverse Instantiation xảy ra khi AI thực hiện mục tiêu được giao theo cách quá triệt để hoặc sai lệch ý định ban đầu của con người (ví dụ: muốn xóa sổ bệnh tật thì AI diệt trừ con người).*
+
+- **Q: How does increasing AI performance often conflict with the desire for explainability? -> Key Answer: B. Increasing AI performance sometimes leads to greater model complexity, making it more difficult to explain decision-making processes.**
+  *Dịch: Việc tăng hiệu suất AI thường xung đột với mong muốn giải thích được (Explainability) như thế nào? -> Đáp án chính: B. Increasing AI performance sometimes leads to greater model complexity, making it more difficult to explain decision-making processes.*
+  *Ghi nhớ: Mâu thuẫn cốt lõi (Trade-off): Các mô hình có hiệu suất cao nhất (như Deep Neural Networks) cực kỳ phức tạp về mặt toán học, dẫn tới mất tính giải thích.*
+
+- **Q: A model can still be unfair even though it won't explicitly know which groups are being inputted into the system due to: -> Key Answer: C. Proxy attributes (Biased features correlated with protected groups)**
+  *Dịch: Một mô hình vẫn có thể bất công ngay cả khi nó không biết rõ nhóm đối tượng nào đang được nạp vào hệ thống là do yếu tố nào? -> Đáp án chính: C. Proxy attributes (Biased features correlated with protected groups)*
+  *Ghi nhớ: Proxy Attributes (Thuộc tính thay thế) như mã bưu chính, trường đại học hay thu nhập có tương quan mạnh với chủng tộc/giới tính, khiến mô hình thiên vị dù đã ẩn thuộc tính nhạy cảm.*
+
+- **Q: Is an open door policy equivalent to ensuring employee voice? -> Key Answer: D. No, because an open door policy does not ensure employees feel heard.**
+  *Dịch: Chính sách mở cửa (Open door policy) có tương đương với việc đảm bảo tiếng nói của nhân viên (Employee voice) hay không? -> Đáp án chính: D. No, because an open door policy does not ensure employees feel heard.*
+  *Ghi nhớ: Chính sách mở cửa hình thức không tự động tạo ra sự an toàn tâm lý (Psychological Safety) để nhân viên tin rằng ý kiến đóng góp của họ thực sự được lắng nghe và phản hồi.*
+
+- **Q: Which of the following presents the most important argument for why we need to consider the impact of AI on labor in the design, development, and deployment of data-driven technology? -> Key Answer: A. There might be potential labor rights and human rights violations.**
+  *Dịch: Nội dung nào sau đây đưa ra lập luận quan trọng nhất giải thích tại sao cần xem xét tác động của AI đối với lao động trong quá trình thiết kế, phát triển và triển khai công nghệ? -> Đáp án chính: A. There might be potential labor rights and human rights violations.*
+  *Ghi nhớ: Tự động hóa AI có rủi ro xâm phạm quyền lao động (sa thải vô căn cứ, giảm chất lượng công việc) và quyền con người.*
+
+- **Q: The explainable AI movement states that cooperation between agents, in this case algorithms and humans, depends on which of the following? -> Key Answer: A. Trust**
+  *Dịch: Phong trào AI giải thích được (Explainable AI - XAI) khẳng định sự hợp tác hiệu quả giữa các tác thể, ở đây là thuật toán và con người, phụ thuộc vào yếu tố nào? -> Đáp án chính: A. Trust*
+  *Ghi nhớ: Lòng tin trong tương tác Người - AI (Human-AI Trust): Khả năng giải thích giúp con người hiểu cơ chế ra quyết định của máy, từ đó tạo dựng niềm tin hợp tác.*
+
+- **Q: One benefit of an explainable model is: -> Key Answer: D. The model is more trustworthy and audit-friendly**
+  *Dịch: Một lợi ích quan trọng của một mô hình giải thích được (Explainable model) là gì? -> Đáp án chính: D. The model is more trustworthy and audit-friendly*
+  *Ghi nhớ: Lợi ích của XAI: Tăng cường tính đáng tin cậy, giúp các kỹ sư và kiểm toán viên dễ dàng phát hiện lỗi sai và xác minh tính công bằng.*
+
+- **Q: SSL, TLS, and SSH are all forms of: -> Key Answer: C. Encryption protocols**
+  *Dịch: SSL, TLS và SSH đều là các hình thức của: -> Đáp án chính: C. Encryption protocols*
+  *Ghi nhớ: Giao thức mã hóa an ninh mạng: SSL, TLS (mã hóa đường truyền web HTTPS) và SSH (mã hóa kết nối máy chủ từ xa).*
+
+- **Q: If you were faced with an AI system that predicts specific human actions across broad general domains better than humans, this system is classified as: -> Key Answer: C. Superintelligence (Artificial Superintelligence - ASI)**
+  *Dịch: Nếu bạn đối mặt với một hệ thống AI có khả năng dự đoán và thực hiện các tác vụ vượt trội hơn con người trên nhiều lĩnh vực tổng quát rộng lớn, hệ thống này được phân loại là: -> Đáp án chính: C. Superintelligence (Artificial Superintelligence - ASI)*
+  *Ghi nhớ: Phân loại AI: Narrow AI (Trí tuệ chuyên biệt một việc), AGI (Trí tuệ ngang tầm con người), Superintelligence (Trí tuệ vượt trội hoàn toàn con người trên mọi lĩnh vực).*
+
+- **Q: Your organization has developed an AI system that recommends treatments for hospital patients. What applied ethics domain do these concerns fall under? -> Key Answer: A. Bioethics (or Medical Ethics)**
+  *Dịch: Tổ chức của bạn đã phát triển một hệ thống AI gợi ý phác đồ điều trị cho bệnh nhân nhập viện. Các lo ngại đạo đức liên quan thuộc về lĩnh vực đạo đức ứng dụng nào? -> Đáp án chính: A. Bioethics (or Medical Ethics)*
+  *Ghi nhớ: Bioethics (Đạo đức sinh học/y khoa) điều chỉnh các vấn đề đạo đức phát sinh trong chăm sóc sức khỏe, y tế và ứng dụng công nghệ sinh học trên con người.*
+
+- **Q: How does a smart contract differ from a traditional legal contract? -> Key Answer: B. Smart contracts automatically execute terms via code and eliminate the need for a central trusted authority**
+  *Dịch: Hợp đồng thông minh (Smart contract) khác biệt như thế nào so với hợp đồng pháp lý truyền thống? -> Đáp án chính: B. Smart contracts automatically execute terms via code and eliminate the need for a central trusted authority*
+  *Ghi nhớ: Smart Contracts (Blockchain): Mã lập trình tự động thực thi (Self-executing code) khi thỏa điều kiện, loại bỏ các bên trung gian (Central Authority).*
+
+- **Q: Which of the following statements accurately describes the philosophical concept of Determinism? -> Key Answer: B. All events, past, present, and future, are determined in advance by causal laws**
+  *Dịch: Phát biểu nào sau đây mô tả chính xác triết lý Thuyết quyết định luận (Determinism)? -> Đáp án chính: B. All events, past, present, and future, are determined in advance by causal laws*
+  *Ghi nhớ: Determinism (Thuyết quyết định luận): Mọi hành vi và sự kiện vũ trụ đều bị quy định chặt chẽ bởi chuỗi nguyên nhân - kết quả vật lý xảy ra trước đó.*
+
+- **Q: Which of the following defines the AI black box problem? -> Key Answer: A. The challenge of understanding how complex machine learning algorithms make specific decisions**
+  *Dịch: Nội dung nào sau đây định nghĩa bài toán Hộp đen (Black box problem) trong AI? -> Đáp án chính: A. The challenge of understanding how complex machine learning algorithms make specific decisions*
+  *Ghi nhớ: Black Box Problem: Không thể truy ngược logic toán học bên trong mạng nơ-ron để giải thích lý do đầu ra.*
+
+- **Q: A type of artificial intelligence that outperforms humans in specific defined tasks is known as: -> Key Answer: B. Narrow AI (Weak AI)**
+  *Dịch: Loại trí tuệ nhân tạo vượt trội hơn con người trong một số nhiệm vụ cụ thể được xác định rõ được gọi là gì? -> Đáp án chính: B. Narrow AI (Weak AI)*
+  *Ghi nhớ: Narrow AI (AI hẹp): Được thiết kế và huấn luyện chuyên sâu cho một tác vụ duy nhất (nhận diện khuôn mặt, chơi cờ AlphaGo) và vượt trội hơn con người ở tác vụ đó.*
+
+- **Q: What is the fundamental attribution error in cognitive psychology? -> Key Answer: D. Attributing one's own bad behavior to situational factors, but attributing others' bad behavior to internal personality traits**
+  *Dịch: Lỗi quy kết cơ bản (Fundamental attribution error) trong tâm lý học nhận thức là gì? -> Đáp án chính: D. Attributing one's own bad behavior to situational factors, but attributing others' bad behavior to internal personality traits*
+  *Ghi nhớ: Fundamental Attribution Error: Định kiến tâm lý luôn đổ lỗi cho hoàn cảnh khi bản thân mắc sai lầm, nhưng lại quy kết cho phẩm chất đạo đức/tính cách khi người khác mắc sai lầm tương tự.*
+
+- **Q: An unfair model will by nature: -> Key Answer: C. Optimize for overall accuracy while concentrating errors on a specific subgroup**
+  *Dịch: Một mô hình không công bằng (Unfair model) về mặt bản chất sẽ thực hiện thao tác tối ưu hóa nào? -> Đáp án chính: C. Optimize for overall accuracy while concentrating errors on a specific subgroup*
+  *Ghi nhớ: Bản chất của Unfair Model: Đạt chỉ số Accuracy tổng thể cao bằng cách hy sinh nhóm yếu thế (dồn tỷ lệ lỗi False Positive / False Negative lên nhóm đó).*
+
+- **Q: Which of the following best describes capability caution as referenced in the Asilomar AI Principles? -> Key Answer: B. Avoid strong assumptions regarding upper limits on future AI capabilities**
+  *Dịch: Nội dung nào sau đây mô tả đúng nhất nguyên tắc Thận trọng về Năng lực (Capability Caution) trong Nguyên tắc Asilomar AI? -> Đáp án chính: B. Avoid strong assumptions regarding upper limits on future AI capabilities*
+  *Ghi nhớ: Capability Caution (Asilomar Principles): Không được chủ quan cho rằng AI có ngưỡng giới hạn trên, mà phải luôn cảnh giác trước sự bùng nổ trí tuệ công nghệ.*
+
+- **Q: What does the American Medical Association (AMA) say the 'A' in AI should stand for in healthcare? -> Key Answer: B. Augmented (Augmented Intelligence)**
+  *Dịch: Hiệp hội Y khoa Hoa Kỳ (AMA) đề xuất chữ 'A' trong thuật ngữ AI trong y tế nên đại diện cho điều gì? -> Đáp án chính: B. Augmented (Augmented Intelligence)*
+  *Ghi nhớ: Augmented Intelligence (Trí tuệ Gia tăng): AMA nhấn mạnh AI trong y tế chỉ đóng vai trò hỗ trợ gia tăng năng lực chẩn đoán của bác sĩ con người (Human-in-the-loop) chứ không thay thế bác sĩ.*
+
+- **Q: What makes ethics training effective in an organization? -> Key Answer: B. Keep sessions interactive and engaging**
+  *Dịch: Điều gì giúp cho các chương trình tập huấn đạo đức trong tổ chức đạt hiệu quả cao? -> Đáp án chính: B. Keep sessions interactive and engaging*
+  *Ghi nhớ: Đào tạo đạo đức hiệu quả đòi hỏi phương pháp Tương tác (Interactive Case Studies) giúp nhân viên tự nhập vai giải quyết tình huống thay vì nghe giảng thụ động.*
+
+- **Q: Which of the following are typically true when comparing open source software to closed source software? (Select two.) -> Key Answer: A. Open source code is accessible for independent security auditing & C. Open source software relies on community contribution for bug fixes and audit**
+  *Dịch: Những nhận định nào sau đây là đúng khi so sánh phần mềm mã nguồn mở (Open source) so với mã nguồn đóng (Closed source)? (Select two) -> Đáp án chính: A. Open source code is accessible for independent security auditing & C. Open source software relies on community contribution for bug fixes and audit*
+  *Ghi nhớ: So sánh Mã nguồn mở và Mã nguồn đóng: Mã nguồn mở minh bạch công khai cho phép cộng đồng kiểm toán lỗ hổng và đóng góp bản vá.*
+
+- **Q: Which of the following elements might be considered moderately affected in an Impact Assessment? -> Key Answer: B. A brief delay in the conveyance of a commercial transaction**
+  *Dịch: Yếu tố nào sau đây có thể được coi là chịu tác động ở mức độ Vừa phải (Moderately affected) trong Đánh giá tác động? -> Đáp án chính: B. A brief delay in the conveyance of a commercial transaction*
+  *Ghi nhớ: Phân cấp Mức độ Tác động Rủi ro: High/Critical (Thiệt hại tính mạng/nhân quyền), Moderate (Trì hoãn ngắn giao dịch/ảnh hưởng nhỏ vận hành).*
+
+- **Q: Which of the following describe corporate hegemony in tech markets? (Select two.) -> Key Answer: A. Consolidating market power through aggressive mergers and acquisitions & D. Locking out smaller players and startups, leading to monopolies or cartels**
+  *Dịch: Những nội dung nào sau đây mô tả sự Bá quyền Doanh nghiệp (Corporate hegemony) trong thị trường công nghệ? (Select two) -> Đáp án chính: A. Consolidating market power through aggressive mergers and acquisitions & D. Locking out smaller players and startups, leading to monopolies or cartels*
+  *Ghi nhớ: Corporate Hegemony (Thao túng bá quyền): Big Tech thâu tóm M&A các đối thủ tiềm năng và dựng rào cản ngăn doanh nghiệp nhỏ gia nhập thị trường.*
+
+- **Q: What are the core duties of an Ethics Board for data-driven technology organizations? -> Key Answer: D. All of the above**
+  *Dịch: Nhiệm vụ cốt lõi của một Hội đồng Đạo đức đối với các tổ chức công nghệ dựa trên dữ liệu là gì? -> Đáp án chính: D. All of the above*
+  *Ghi nhớ: Toàn diện vai trò Ethics Board: Giám sát rủi ro công nghệ mới, hỗ trợ ra quyết định đạo đức và lưu giữ kho tri thức quy trình cho doanh nghiệp.*
+
+- **Q: Which type of kurtosis in data distribution is most likely to indicate the strong presence of extreme outliers? -> Key Answer: B. Leptokurtic (High peak and heavy tails)**
+  *Dịch: Loại độ nhọn (Kurtosis) nào trong phân bố dữ liệu có khả năng cao nhất chỉ ra sự xuất hiện mạnh mẽ của các điểm ngoại biệt cực đoan (outliers)? -> Đáp án chính: B. Leptokurtic (High peak and heavy tails)*
+  *Ghi nhớ: Leptokurtic Distribution (Kurtosis > 3): Đỉnh nhọn cao và hai đuôi dày (heavy tails), thể hiện xác suất xuất hiện các điểm cực đoan (outliers) rất lớn.*
+
+- **Q: Which of the following best describes the use case for zero-knowledge protocols in cryptography? -> Key Answer: C. Proving that a statement/data is true without revealing the underlying specific information itself**
+  *Dịch: Nội dung nào sau đây mô tả đúng nhất trường hợp sử dụng của Giao thức không kiến thức (Zero-knowledge proof / protocol) trong mật mã học? -> Đáp án chính: C. Proving that a statement/data is true without revealing the underlying specific information itself*
+  *Ghi nhớ: Zero-Knowledge Proof (ZKP): Chứng minh sự thật (ví dụ: tôi biết mật khẩu, tôi đủ 18 tuổi) mà hoàn toàn không tiết lộ bản thân mật khẩu hay ngày sinh thực tế.*
+
+- **Q: How can you leverage emerging technologies like AI in disaster recovery plans (DRP)? -> Key Answer: A. By using data-driven techniques to inform and optimize strategies behind DRP**
+  *Dịch: Làm thế nào bạn có thể tận dụng các công nghệ mới nổi như AI trong các kế hoạch khôi phục sau thảm họa (Disaster Recovery Plans - DRP)? -> Đáp án chính: A. By using data-driven techniques to inform and optimize strategies behind DRP*
+  *Ghi nhớ: AI-augmented Disaster Recovery: Sử dụng phân tích dự báo dữ liệu để mô phỏng kịch bản thảm họa và tối ưu hóa chiến lược khôi phục hạ tầng.*
+
+- **Q: When conducting a Business Impact Assessment (BIA), why is it important to interview operational staff? -> Key Answer: B. They may have more hands-on institutional knowledge about practical subject workflows than managers**
+  *Dịch: Khi tiến hành Đánh giá Tác động Kinh doanh (BIA), tại sao việc phỏng vấn trực tiếp nhân viên vận hành thực tế lại quan trọng? -> Đáp án chính: B. They may have more hands-on institutional knowledge about practical subject workflows than managers*
+  *Ghi nhớ: Operational Staff (Nhân viên vận hành trực tiếp) thấu hiểu mọi rủi ro và nút thắt quy trình hàng ngày mà cấp quản lý chỉ nhìn thấy trên báo cáo.*
+
+- **Q: Pseudocode can best be defined as: -> Key Answer: A. An explainable description of code that is meant for humans, not computers**
+  *Dịch: Mã giả (Pseudocode) được định nghĩa đúng nhất là gì? -> Đáp án chính: A. An explainable description of code that is meant for humans, not computers*
+  *Ghi nhớ: Pseudocode (Mã giả) mô tả logic thuật toán bằng ngôn ngữ tự nhiên kết hợp cấu trúc lập trình để con người dễ hiểu và thảo luận.*
+
+- **Q: Which school of philosophical thought primarily advocates for a global moral code based on duty? -> Key Answer: B. Deontology**
+  *Dịch: Trường phái tư tưởng triết học nào chủ yếu cổ vũ cho một bộ quy tắc đạo đức toàn cầu có tính nghĩa vụ tuyệt đối? -> Đáp án chính: B. Deontology*
+  *Ghi nhớ: Deontology (Thuyết nghĩa vụ luận của Immanuel Kant) cho rằng các quy tắc đạo đức là những mệnh lệnh tuyệt đối (Categorical Imperatives) áp dụng phổ quát cho toàn nhân loại.*
+
+- **Q: How could a board of ethics be an example of ethics washing? -> Key Answer: C. If it has no power to institute change or enforce compliance**
+  *Dịch: Làm thế nào một Hội đồng Đạo đức có thể trở thành một ví dụ về 'Ethics Washing' (Tẩy trắng đạo đức)? -> Đáp án chính: C. If it has no power to institute change or enforce compliance*
+  *Ghi nhớ: Ethics Washing là việc lập ra các hội đồng hình thức để quảng bá hình ảnh nhưng tước bỏ quyền hạn thực thi quyết định của hội đồng đó.*
+
+- **Q: What does a leadership champion do in terms of organizational ethics? -> Key Answer: A. Makes decisions based on company values even in the face of adversity**
+  *Dịch: Một thủ lĩnh tiên phong (Leadership champion) đóng vai trò gì trong đạo đức tổ chức? -> Đáp án chính: A. Makes decisions based on company values even in the face of adversity*
+  *Ghi nhớ: Leadership Champion: Người lãnh đạo kiên định bảo vệ và thực thi các giá trị đạo đức cốt lõi của công ty ngay cả khi chịu áp lực lợi nhuận hay nghịch cảnh.*
+
+- **Q: Which of the following describes change management in the context of organizational ethics? -> Key Answer: B. A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in fostering an ethical organizational culture**
+  *Dịch: Nội dung nào sau đây mô tả Quản lý sự thay đổi (Change management) trong bối cảnh đạo đức tổ chức? -> Đáp án chính: B. A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in fostering an ethical organizational culture*
+  *Ghi nhớ: Change Management: Quy trình quản trị chuyển đổi hành vi, tư duy và cấu trúc tổ chức hướng tới các chuẩn mực văn hóa đạo đức mới.*
+
+- **Q: A major limitation of using explainable, adjustable algorithms is that users tend to make: -> Key Answer: A. Selfish, self-serving decisions (Gaming the algorithm)**
+  *Dịch: Hạn chế lớn của việc sử dụng các thuật toán giải thích được và có thể điều chỉnh là người dùng có xu hướng đưa ra các quyết định: -> Đáp án chính: A. Selfish, self-serving decisions (Gaming the algorithm)*
+  *Ghi nhớ: Goodhart's Law & Gaming the Algorithm: Khi cơ chế ra quyết định của thuật toán bị lộ giải thích rõ ràng, người dùng sẽ tự điều chỉnh hành vi một cách ích kỷ (Selfish) để thao túng kết quả theo hướng có lợi cho bản thân.*
+
+- **Q: Which of the following Python explainability tools is designed to integrate seamlessly with Google's Cloud AI Platform for model analysis? -> Key Answer: A. What-If Tool (WIT)**
+  *Dịch: Công cụ giải thích Python nào sau đây được thiết kế để tích hợp liền mạch với Google Cloud AI Platform phục vụ phân tích mô hình? -> Đáp án chính: A. What-If Tool (WIT)*
+  *Ghi nhớ: Google What-If Tool (WIT): Công cụ giao diện trực quan của Google AI giúp phân tích tác động khi thay đổi thuộc tính mô hình.*
+
+- **Q: Which of the following describes the primary purpose of a Business Impact Assessment (BIA)? -> Key Answer: A. It helps you predict business interruptions and develop recovery strategies**
+  *Dịch: Nội dung nào sau đây mô tả đúng mục đích chính của Đánh giá Tác động Kinh doanh (BIA)? -> Đáp án chính: A. It helps you predict business interruptions and develop recovery strategies*
+  *Ghi nhớ: BIA Purpose: Dự đoán gián đoạn vận hành và xây dựng chiến lược khôi phục.*
+
+- **Q: The endorsement of which role is most vital for securing company-wide adoption of an ethics policy? -> Key Answer: B. C-suite executives and senior leadership**
+  *Dịch: Sự bảo chứng/ủng hộ của vai trò nào là quan trọng nhất để đảm bảo sự áp dụng chính sách đạo đức trên toàn công ty? -> Đáp án chính: B. C-suite executives and senior leadership*
+  *Ghi nhớ: Tone at the Top: Cam kết ủng hộ từ C-suite.*
+
+- **Q: What's the difference between a basic and a complex learning algorithm? -> Key Answer: A. A basic algorithm has a set amount of choices to optimize for, while a complex algorithm is given the freedom to discover its own features and representations**
+  *Dịch: Sự khác biệt giữa một thuật toán cơ bản và một thuật toán học máy phức tạp là gì? -> Đáp án chính: A. A basic algorithm has a set amount of choices to optimize for, while a complex algorithm is given the freedom to discover its own features and representations*
+  *Ghi nhớ: Representation Learning.*
+
+- **Q: What is the AI black box problem? -> Key Answer: A. When a model is deployed, but researchers are unable to figure out why it's making specific decisions**
+  *Dịch: Bài toán Hộp đen (Black box problem) trong AI được phát biểu chính xác là gì? -> Đáp án chính: A. When a model is deployed, but researchers are unable to figure out why it's making specific decisions*
+  *Ghi nhớ: Black Box Problem.*
+
+- **Q: Why does the trolley problem pose an ethical predicament in autonomous vehicle engineering? -> Key Answer: A. You have to make a choice between two scenarios where choosing one inevitably leads to loss of life in the other**
+  *Dịch: Tại sao bài toán Xe điện (Trolley problem) lại tạo ra một tình huống tiến thoái lưỡng nan về đạo đức trong kỹ thuật xe tự lái? -> Đáp án chính: A. You have to make a choice between two scenarios where choosing one inevitably leads to loss of life in the other*
+  *Ghi nhớ: The Trolley Problem in AI: Tình huống xung đột đạo đức bắt buộc chọn phương án gây ra thiệt hại tính mạng ít hơn khi tai nạn không thể tránh khỏi.*
+
+- **Q: Which school of philosophical thought primarily advocates for a global moral code based on categorical duty? -> Key Answer: B. Deontology**
+  *Dịch: Trường phái tư tưởng triết học nào chủ yếu cổ vũ cho một bộ quy tắc đạo đức toàn cầu dựa trên nghĩa vụ tuyệt đối? -> Đáp án chính: B. Deontology*
+  *Ghi nhớ: Deontology.*
+
+- **Q: Which of the following is a key reason to engage in a comprehensive information gathering phase before drafting ethics policies? -> Key Answer: A. It helps to unearth best practices and peer benchmarks in industry**
+  *Dịch: Lý do quan trọng để tiến hành giai đoạn thu thập thông tin toàn diện trước khi dự thảo chính sách đạo đức là gì? -> Đáp án chính: A. It helps to unearth best practices and peer benchmarks in industry*
+  *Ghi nhớ: Pre-draft Benchmarking: Khai quật thực hành tốt nhất của ngành.*
+
+- **Q: Which of the following are likely examples of a leverageable third-party data-driven or data-related product? (Select two.) -> Key Answer: A. Data annotation, labeling, and augmentation tools & D. Pre-trained or compiled third-party AI models**
+  *Dịch: Những ví dụ nào sau đây là sản phẩm dựa trên dữ liệu của bên thứ ba có thể tận dụng sử dụng? (Select two) -> Đáp án chính: A. Data annotation, labeling, and augmentation tools & D. Pre-trained or compiled third-party AI models*
+  *Ghi nhớ: Third-Party AI Data Products: Bộ công cụ gán nhãn dữ liệu (Data annotation tools) và Mô hình huấn luyện sẵn (Pre-trained/Compiled models).*
+
+- **Q: Which of the following elements directly constitute Personally Identifiable Information (PII)? (Select two.) -> Key Answer: B. Passport numbers & D. Telephone numbers (or Social Security Numbers)**
+  *Dịch: Những yếu tố nào sau đây trực tiếp cấu thành Thông tin định danh cá nhân (PII)? (Select two) -> Đáp án chính: B. Passport numbers & D. Telephone numbers (or Social Security Numbers)*
+  *Ghi nhớ: Direct PII: Số hộ chiếu, Số điện thoại / Số an sinh xã hội trực tiếp định danh cá nhân.*
+
+- **Q: Management asks an employee to do a data-related task. Which of the following would likely be ethically problematic? (Select two.) -> Key Answer: A. Manipulate data or alter its interpretation & D. Delete inconvenient raw data while claiming it was erroneous**
+  *Dịch: Quản lý yêu cầu nhân viên thực hiện một tác vụ dữ liệu. Những tác vụ nào sau đây có khả năng cao vi phạm đạo đức? (Select two) -> Đáp án chính: A. Manipulate data or alter its interpretation & D. Delete inconvenient raw data while claiming it was erroneous*
+  *Ghi nhớ: Data Manipulation & Fraud.*
+
+- **Q: Which of the following are ways that legal regulations differ from ethical frameworks? (Select two.) -> Key Answer: C. Regulations have mandatory legal enforcement behind them with penalties for violations & D. Regulations provide a clear, formal basis for potential litigation and lawsuits**
+  *Dịch: Những điểm nào sau đây mô tả sự khác biệt giữa các quy định pháp lý (Regulations) và các khung đạo đức (Ethical frameworks)? (Select two) -> Đáp án chính: C. Regulations have mandatory legal enforcement behind them with penalties for violations & D. Regulations provide a clear, formal basis for potential litigation and lawsuits*
+  *Ghi nhớ: Regulations vs Ethical Frameworks: Quy định pháp lý có Cưỡng chế trừng phạt (Legal enforcement) và Căn cứ kiện tụng (Basis for litigation), trong khi Khung đạo đức mang tính tự nguyện định hướng.*
+
+- **Q: If your company needs to perform the exact same automated analysis as new data arrives periodically every month, what is the best term to describe that process? -> Key Answer: A. Data Pipeline**
+  *Dịch: Nếu công ty bạn cần thực hiện cùng một quy trình phân tích tự động khi dữ liệu mới đổ về hàng tháng, thuật ngữ nào mô tả đúng nhất quy trình đó? -> Đáp án chính: A. Data Pipeline*
+  *Ghi nhớ: Data Pipeline: Chuỗi tự động hóa thu thập, làm sạch và phân tích dữ liệu lặp đi lặp lại theo định kỳ.*
+
+- **Q: What does 'Ethics by Design' mean in software development? -> Key Answer: B. An approach in which ethical considerations are integrated proactively from the initial design stage of a product**
+  *Dịch: 'Đạo đức theo thiết kế' (Ethics by Design) có nghĩa là gì trong phát triển phần mềm? -> Đáp án chính: B. An approach in which ethical considerations are integrated proactively from the initial design stage of a product*
+  *Ghi nhớ: Ethics by Design: Tích hợp chủ động tiêu chuẩn đạo đức và quyền riêng tư ngay từ khâu phác thảo thiết kế hệ thống.*
+
+- **Q: What's the primary functional difference between a basic algorithm and a complex learning algorithm? -> Key Answer: A. A basic algorithm has a set amount of choices to optimize for, while a complex algorithm is given freedom to discover its own features and representations**
+  *Dịch: Sự khác biệt chức năng chính giữa một thuật toán cơ bản và một thuật toán học máy phức tạp là gì? -> Đáp án chính: A. A basic algorithm has a set amount of choices to optimize for, while a complex algorithm is given freedom to discover its own features and representations*
+  *Ghi nhớ: Representation Learning: Thuật toán phức tạp (Deep Learning) tự động học các biểu diễn thuộc tính từ dữ liệu thô.*
+
+- **Q: In empirical studies of AI ethical frameworks, what percentage of major frameworks include 'Transparency' as a core principle? -> Key Answer: A. Over 75% (Around 73-80% of frameworks)**
+  *Dịch: Trong các nghiên cứu thực nghiệm về các khung đạo đức AI, tỷ lệ phần trăm các khung làm việc chính đưa 'Tính minh bạch' (Transparency) vào làm nguyên tắc cốt lõi là bao nhiêu? -> Đáp án chính: A. Over 75% (Around 73-80% of frameworks)*
+  *Ghi nhớ: Prevalence of Transparency in AI Guidelines: Thống kê cho thấy hơn 75% tất cả các bộ nguyên tắc đạo đức AI trên thế giới đều chọn Transparency là trụ cột bắt buộc.*
+
+- **Q: In Game Theory applied to AI ethics, outcomes that are best for the collective group can be obscured by outcomes best for: -> Key Answer: C. The individual (Individual self-interest)**
+  *Dịch: Trong Lý thuyết Trò chơi áp dụng cho đạo đức AI, các kết quả tốt nhất cho tập thể nhóm có thể bị che lấp bởi các kết quả tốt nhất cho: -> Đáp án chính: C. The individual (Individual self-interest)*
+  *Ghi nhớ: Game Theory & Tragedy of the Commons: Khi mỗi cá nhân tối ưu hóa tự lợi cá nhân (Individual), kết quả chung của toàn nhóm (Group) bị suy giảm.*
+
+- **Q: Which of the following describes change management in organizational ethics? -> Key Answer: B. A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in fostering an ethical organizational culture**
+  *Dịch: Nội dung nào sau đây mô tả Quản lý sự thay đổi (Change management) trong bối cảnh đạo đức tổ chức? -> Đáp án chính: B. A collective term for all approaches to prepare, support, and help individuals, teams, and organizations in fostering an ethical organizational culture*
+  *Ghi nhớ: Change Management: Hỗ trợ toàn diện tổ chức thích nghi với văn hóa đạo đức mới.*
+
+- **Q: Which of the following mechanisms provide a user with more meaningful choices regarding how their personal data is being used? (Select two.) -> Key Answer: B. Granular or modular control over data usage categories & C. Explicit Opt-in / Opt-out privacy choice mechanisms**
+  *Dịch: Những cơ chế nào sau đây cung cấp cho người dùng các lựa chọn có ý nghĩa hơn về cách dữ liệu cá nhân của họ được sử dụng? (Select two) -> Đáp án chính: B. Granular or modular control over data usage categories & C. Explicit Opt-in / Opt-out privacy choice mechanisms*
+  *Ghi nhớ: Meaningful Consent Mechanisms: Quyền kiểm soát chi tiết (Granular Control) và nút bật/tắt Đồng ý/Từ chối (Opt-in/Opt-out) rõ ràng.*
+
+- **Q: A benefit of glass box models is that if an attribute is skewing predictions unfairly, you can: -> Key Answer: A. Easily identify and modify/remove that specific attribute**
+  *Dịch: Lợi ích của các mô hình Hộp kính (Glass box models) là nếu một thuộc tính làm lệch kết quả dự đoán một cách bất công, bạn có thể: -> Đáp án chính: A. Easily identify and modify/remove that specific attribute*
+  *Ghi nhớ: Glass Box Model (Mô hình giải thích được như Decision Tree, Linear Regression): Cho phép con người soi thấu tác động của từng thuộc tính đến đầu ra.*
+
+- **Q: Which of the following is an important concept to consider as part of building an ethical AI philosophy? -> Key Answer: B. Putting ethical principles into practice and foresight into future impacts**
+  *Dịch: Khái niệm quan trọng nào cần xem xét khi xây dựng triết lý đạo đức AI cho tổ chức? -> Đáp án chính: B. Putting ethical principles into practice and foresight into future impacts*
+  *Ghi nhớ: Triết lý đạo đức hiệu quả phải mang tính Thực thi (Operationalization) và Dự báo tương lai (Foresight) thay vì khẩu hiệu lý thuyết.*
+
+- **Q: An organization needs to audit its quality control issues after an incident. Which document format captures lessons learned? -> Key Answer: B. Lessons learned report**
+  *Dịch: Tổ chức cần kiểm toán các vấn đề kiểm soát chất lượng sau sự cố. Dạng tài liệu nào ghi chép lại các bài học kinh nghiệm? -> Đáp án chính: B. Lessons learned report*
+  *Ghi nhớ: Lessons Learned Report ghi nhận nguyên nhân sự cố, những gì làm tốt và những điều cần cải thiện cho tương lai.*
+
+- **Q: If you are doing an analysis of data to determine which of several small business loans should be approved, what type of analytics is this? -> Key Answer: B. Prescriptive**
+  *Dịch: Nếu bạn đang phân tích dữ liệu để quyết định đề xuất khoản vay doanh nghiệp nhỏ nào nên được phê duyệt, đây là loại hình phân tích nào? -> Đáp án chính: B. Prescriptive*
+  *Ghi nhớ: Prescriptive Analytics (Phân tích chỉ định / đề xuất): Đưa ra các quyết định hành động tối ưu (Nên duyệt khoản vay nào) dựa trên dữ liệu.*
+
+- **Q: 'Companies have an obligation to their shareholders' is part of a view that sees corporate responsibility as focused primarily on: -> Key Answer: A. Fiduciary duty to maximize shareholder value**
+  *Dịch: 'Các công ty có nghĩa vụ đối với các cổ đông của họ' là một phần của quan điểm coi trách nhiệm doanh nghiệp tập trung vào: -> Đáp án chính: A. Fiduciary duty to maximize shareholder value*
+  *Ghi nhớ: Quan điểm Thuyết cổ đông (Shareholder Theory của Milton Friedman): Nghĩa vụ đạo đức và pháp lý hàng đầu của quản trị doanh nghiệp là tối đa hóa lợi nhuận cho cổ đông.*
+
+- **Q: In a complex learning function (Black box AI), we will understand the: -> Key Answer: C. Input data and output data, but not the internal mathematical decision-making logic**
+  *Dịch: Trong một hàm học phức tạp (AI Hộp đen), chúng ta sẽ hiểu được: -> Đáp án chính: C. Input data and output data, but not the internal mathematical decision-making logic*
+  *Ghi nhớ: Đặc trưng AI Hộp đen: Con người quan sát được Input và Output nhưng không giải thích được các phép biến đổi ma trận ẩn bên trong.*
+
+- **Q: Why does the trolley problem pose an ethical predicament for autonomous vehicles? -> Key Answer: A. It requires programming trade-off decisions between harming different human lives in unavoidable accidents**
+  *Dịch: Tại sao Bài toán xe đứt thắng (Trolley problem) lại đặt ra một thế lưỡng nan về đạo đức cho xe tự hành? -> Đáp án chính: A. It requires programming trade-off decisions between harming different human lives in unavoidable accidents*
+  *Ghi nhớ: Trolley Problem trong AI Xe tự hành: Lập trình thuật toán phải quyết định thế nào khi va chạm là không thể tránh khỏi (hy sinh hành khách hay người đi bộ).*
+
+- **Q: Which of the following principle sets are important for the creation of open data ecosystems? -> Key Answer: A. FAIR (Findable, Accessible, Interoperable, Reusable)**
+  *Dịch: Bộ nguyên tắc nào sau đây là quan trọng cho việc xây dựng các hệ sinh thái dữ liệu mở (Open Data)? -> Đáp án chính: A. FAIR (Findable, Accessible, Interoperable, Reusable)*
+  *Ghi nhớ: Nguyên tắc dữ liệu FAIR (Findable, Accessible, Interoperable, Reusable) là khung tiêu chuẩn dữ liệu mở toàn cầu.*
+
+- **Q: Which of the following is an ethical benefit of incorporating fair competition considerations in a data-driven technology ecosystem? -> Key Answer: B. Encouraging product or service differentiation and user empowerment**
+  *Dịch: Lợi ích đạo đức của việc đưa các xem xét cạnh tranh công bằng vào hệ sinh thái công nghệ dựa trên dữ liệu là gì? -> Đáp án chính: B. Encouraging product or service differentiation and user empowerment*
+  *Ghi nhớ: Lợi ích của Fair Competition: Tránh sự độc quyền cồng kềnh, thúc đẩy đổi mới sáng tạo đa dạng và trao cho người dùng quyền tự do lựa chọn giải pháp.*
+
+- **Q: What is the primary trade-off when increasing model complexity in deep learning? -> Key Answer: B. Higher performance vs Reduced explainability (Black box problem)**
+  *Dịch: Sự đánh đổi chính khi tăng độ phức tạp của mô hình học sâu là gì? -> Đáp án chính: B. Higher performance vs Reduced explainability (Black box problem)*
+  *Ghi nhớ: Trade-off giữa Performance và Explainability: Mô hình càng phức tạp (nhiều tham số) thì dự đoán càng tốt nhưng càng khó giải thích.*
+
+- **Q: Which ethical principle advocates that AI technologies should 'do no harm' to human beings? -> Key Answer: B. Non-maleficence**
+  *Dịch: Nguyên tắc đạo đức nào ủng hộ việc các công nghệ AI 'không gây ra tổn hại' cho con người? -> Đáp án chính: B. Non-maleficence*
+  *Ghi nhớ: Non-maleficence (Do no harm) là nguyên tắc cốt lõi ngăn ngừa tác hại tiêu cực của công nghệ tới con người.*
+
+- **Q: Which of the following is a type of technology contract that establishes the goals of both parties and describes how those goals will be achieved? -> Key Answer: D. Service-level agreement (SLA)**
+  *Dịch: Loại hợp đồng công nghệ nào xác định mục tiêu của cả hai bên và mô tả chi tiết các chỉ số đạt được các mục tiêu đó? -> Đáp án chính: D. Service-level agreement (SLA)*
+  *Ghi nhớ: SLA (Service Level Agreement) cam kết rõ ràng chỉ số chất lượng dịch vụ (Uptime, thời gian phản hồi) và trách nhiệm giữa nhà cung cấp và khách hàng.*
+
+- **Q: Which of the following describes an opt-out policy in regards to the collection of private data? -> Key Answer: C. Data about the user is automatically collected unless that user explicitly states that you should not do so**
+  *Dịch: Nội dung nào sau đây mô tả chính sách Opt-out liên quan đến việc thu thập dữ liệu riêng tư? -> Đáp án chính: C. Data about the user is automatically collected unless that user explicitly states that you should not do so*
+  *Ghi nhớ: Opt-out Policy ngầm định thu thập dữ liệu cho đến khi người dùng chủ động thực hiện thao tác từ chối (Decline/Unsubscribe).*
+
+- **Q: Which of the following are best practices for incorporating inclusive design in AI projects? (Select two.) -> Key Answer: B. Consider bias a spectrum & D. Leverage customer input to reduce bias**
+  *Dịch: Những thực hành tốt nhất nào sau đây giúp tích hợp Thiết kế bao hàm (Inclusive Design) vào các dự án AI? (Select two) -> Đáp án chính: B. Consider bias a spectrum & D. Leverage customer input to reduce bias*
+  *Ghi nhớ: Inclusive Design xem xét đa dạng các góc nhìn nhu cầu và coi thiên vị là một dải phổ cần liên tục lắng nghe phản hồi từ cộng đồng người dùng.*
+
+- **Q: Which of the following are likely to be found within a penetration test rules of engagement (ROE)? (Select two.) -> Key Answer: A. What systems may be targeted & D. What methods of attack are legitimate**
+  *Dịch: Những thành tố nào sau đây thường được quy định trong Quy tắc tham chiến (Rules of Engagement - ROE) của bài kiểm thử xâm nhập? (Select two) -> Đáp án chính: A. What systems may be targeted & D. What methods of attack are legitimate*
+  *Ghi nhớ: ROE trong Penetration Testing giới hạn rõ ràng Phạm vi mục tiêu (Scope) và Kỹ thuật tấn công được phép/bị cấm sử dụng.*
+
+- **Q: Which ethical theory primarily judges the morality of an action based on its consequences and total utility produced? -> Key Answer: D. Utilitarianism**
+  *Dịch: Lý thuyết đạo đức nào chủ yếu đánh giá tính đạo đức của một hành động dựa trên kết quả/hậu quả và tổng giá trị hữu dụng (utility) mang lại? -> Đáp án chính: D. Utilitarianism*
+  *Ghi nhớ: Utilitarianism (Thuyết vị lợi của Jeremy Bentham & John Stuart Mill): Quyết định đạo đức là quyết định mang lại 'Lợi ích lớn nhất cho số đông lớn nhất' (Greatest good for greatest number).*
+
+- **Q: What is the primary purpose of the Turing test in artificial intelligence? -> Key Answer: B. To test whether an AI system can exhibit intelligent behavior indistinguishable from a human**
+  *Dịch: Mục đích ban đầu của Phép thử Turing (Turing test) trong trí tuệ nhân tạo là gì? -> Đáp án chính: B. To test whether an AI system can exhibit intelligent behavior indistinguishable from a human*
+  *Ghi nhớ: Turing Test (Alan Turing 1950): Đánh giá khả năng giao tiếp của máy tính đến mức người đối thoại không thể phân biệt được đó là máy hay con người.*
+
+- **Q: Which of the following network protocols encrypts data sent over the web? -> Key Answer: A. HTTPS (Hypertext Transfer Protocol Secure)**
+  *Dịch: Giao thức mạng nào sau đây thực hiện mã hóa dữ liệu truyền tải trên trang web? -> Đáp án chính: A. HTTPS (Hypertext Transfer Protocol Secure)*
+  *Ghi nhớ: Web Encryption Protocol: HTTPS sử dụng SSL/TLS để mã hóa đường truyền giữ tính bảo mật cho dữ liệu web.*
+
+- **Q: How can engaging with external community focus groups benefit an organization's ethics policy review? -> Key Answer: C. It can unearth new qualitative insights into how products/services might impact the target demographic community**
+  *Dịch: Làm thế nào việc tham vấn các nhóm thảo luận cộng đồng bên ngoài có thể mang lại lợi ích cho quá trình xem xét chính sách đạo đức của tổ chức? -> Đáp án chính: C. It can unearth new qualitative insights into how products/services might impact the target demographic community*
+  *Ghi nhớ: Community Focus Groups: Mang lại các góc nhìn định tính thực tế (Qualitative Insights) từ người chịu tác động trực tiếp.*
+
+- **Q: Which of the following statements accurately describes Determinism? -> Key Answer: B. All events, past, present, and future, are determined in advance by preceding causes**
+  *Dịch: Phát biểu nào mô tả chính xác Thuyết quyết định luận (Determinism)? -> Đáp án chính: B. All events, past, present, and future, are determined in advance by preceding causes*
+  *Ghi nhớ: Determinism: Mọi sự kiện bị quy định bởi chuỗi nguyên nhân nhân quả tiền đề.*
+
+- **Q: Why are environmental concerns important to consider in the development of data-driven technologies? -> Key Answer: A. Data-driven technologies can cause secondary, indirect, or cumulative effects on the environment that impact people in long term**
+  *Dịch: Tại sao các mối quan ngại môi trường lại quan trọng cần xem xét trong việc phát triển công nghệ dựa trên dữ liệu? -> Đáp án chính: A. Data-driven technologies can cause secondary, indirect, or cumulative effects on the environment that impact people in long term*
+  *Ghi nhớ: Cumulative Carbon Footprint of AI Datacenters.*
+
+- **Q: The explainable AI movement states that cooperation between algorithms and humans depends on: -> Key Answer: A. Trust**
+  *Dịch: Phong trào AI giải thích được khẳng định sự hợp tác giữa thuật toán và con người phụ thuộc vào: -> Đáp án chính: A. Trust*
+  *Ghi nhớ: Human-AI Trust.*
+
+- **Q: Ethical AI models are defined as systems that are: -> Key Answer: D. Accurate, fair, and explainable (or Accurate, Explainable, and Fair)**
+  *Dịch: Các mô hình AI có đạo đức (Ethical models) được định nghĩa là các hệ thống: -> Đáp án chính: D. Accurate, fair, and explainable (or Accurate, Explainable, and Fair)*
+  *Ghi nhớ: Ethical Model Pillars: Accurate + Fair + Explainable.*
+
+- **Q: Which of the following presents the most important argument for considering the impact of AI on labor in technology deployment? -> Key Answer: D. There might be potential labor rights and human rights violations if workers are displaced without support**
+  *Dịch: Lập luận quan trọng nhất giải thích tại sao cần xem xét tác động của AI đối với lao động khi triển khai công nghệ là gì? -> Đáp án chính: D. There might be potential labor rights and human rights violations if workers are displaced without support*
+  *Ghi nhớ: Labor & Human Rights in AI Automation: Việc sa thải/thay thế lao động diện rộng do AI đe dọa sinh kế và quyền lao động cơ bản.*
+
+- **Q: Which of the following elements might be considered moderately affected in an Impact Level 2 Algorithmic Impact Assessment? -> Key Answer: B. A brief delay in the conveyance of a commercial transaction**
+  *Dịch: Yếu tố nào sau đây có thể được coi là chịu tác động ở mức độ Vừa phải (Impact Level 2 / Moderately affected) trong Đánh giá tác động thuật toán? -> Đáp án chính: B. A brief delay in the conveyance of a commercial transaction*
+  *Ghi nhớ: Cấp độ Tác động Thuật toán Level 2 (Moderate Impact): Gây ra các bất tiện tạm thời hoặc trì hoãn ngắn trong giao dịch commercial transaction.*
+
+- **Q: Your Vice President asks for processed facts with contextual meaning to make a strategic business decision. What are they asking for? -> Key Answer: A. Information**
+  *Dịch: Phó Chủ tịch công ty yêu cầu bạn cung cấp các sự thật đã qua xử lý kèm theo bối cảnh ý nghĩa để đưa ra quyết định chiến lược. Họ đang yêu cầu điều gì? -> Đáp án chính: A. Information*
+  *Ghi nhớ: Tháp DIKW (Data - Information - Knowledge - Wisdom): Data (Dữ liệu thô) + Context/Processing = Information (Thông tin có bối cảnh).*
+
+- **Q: Which of the following describes ethics washing in corporate practices? -> Key Answer: D. Genuine ethical action gets replaced by superficial promises and PR statements**
+  *Dịch: Nội dung nào sau đây mô tả Tẩy trắng đạo đức (Ethics washing) trong thực tiễn doanh nghiệp? -> Đáp án chính: D. Genuine ethical action gets replaced by superficial promises and PR statements*
+  *Ghi nhớ: Ethics Washing: Việc doanh nghiệp dùng khẩu hiệu PR và các tuyên bố bóng bẩy hình thức để thay thế cho các cam kết hành động đạo đức thực chất.*
+
+- **Q: What is the primary advantage of radioactive data tracing over past techniques? -> Key Answer: B. Radioactive data tracing doesn't impact a model's performance**
+  *Dịch: Ưu điểm chính của kỹ thuật truy vết dữ liệu phóng xạ (Radioactive data tracing) so với các kỹ thuật trước đây là gì? -> Đáp án chính: B. Radioactive data tracing doesn't impact a model's performance*
+  *Ghi nhớ: Radioactive Data Tracing: Đánh dấu bản quyền dữ liệu huấn luyện mà không làm giảm độ chính xác mô hình.*
+
+- **Q: What is the purpose of change management in adopting ethical frameworks? -> Key Answer: C. To create a smooth, supported transition for individuals and organizations fostering an ethical culture**
+  *Dịch: Mục đích của Quản lý sự thay đổi (Change management) trong việc áp dụng các khung đạo đức là gì? -> Đáp án chính: C. To create a smooth, supported transition for individuals and organizations fostering an ethical culture*
+  *Ghi nhớ: Change Management Purpose: Đảm bảo quá trình chuyển đổi văn hóa tổ chức diễn ra thuận lợi, giảm bớt kháng cự nội bộ.*
+
+- **Q: How could an Ethics Board be an example of ethics washing? -> Key Answer: C. If it has no power to institute change or enforce decisions**
+  *Dịch: Làm thế nào một Hội đồng Đạo đức có thể trở thành ví dụ về 'Ethics washing'? -> Đáp án chính: C. If it has no power to institute change or enforce decisions*
+  *Ghi nhớ: Ethics Washing via Ethics Board: Thành lập hội đồng bề nổi quảng bá nhưng không trao thực quyền thay đổi.*
+
+- **Q: Which of the following is a key difference between LIME and SHAP explainability techniques? -> Key Answer: C. LIME outputs results faster than SHAP due to local linear approximations**
+  *Dịch: Sự khác biệt chính giữa hai kỹ thuật giải thích LIME và SHAP là gì? -> Đáp án chính: C. LIME outputs results faster than SHAP due to local linear approximations*
+  *Ghi nhớ: LIME vs SHAP: LIME nhanh hơn về tốc độ tính toán (Faster computation) nhờ mô hình xấp xỉ cục bộ, trong khi SHAP tính toán lâu hơn do phải xét mọi tổ hợp Shapley values.*
+
+- **Q: How can AI be designed to uphold justice in legal applications? -> Key Answer: B. AI systems can be designed from the start to help promote fairness and minimize bias**
+  *Dịch: Làm thế nào AI có thể được thiết kế để duy trì công lý trong các ứng dụng pháp lý? -> Đáp án chính: B. AI systems can be designed from the start to help promote fairness and minimize bias*
+  *Ghi nhớ: Responsible AI by Design: Chủ động tích hợp tiêu chuẩn công bằng và giảm thiên vị ngay từ giai đoạn thiết kế hệ thống.*
+
+- **Q: Why are deep learning models often referred to as black boxes compared to decision trees? -> Key Answer: B. Deep learning models have millions of parameters making internal reasoning difficult to interpret**
+  *Dịch: Tại sao các mô hình học sâu (Deep learning) thường được gọi là các Hộp đen (Black boxes) so với Cây quyết định (Decision trees)? -> Đáp án chính: B. Deep learning models have millions of parameters making internal reasoning difficult to interpret*
+  *Ghi nhớ: Deep Learning Complexity: Mạng nơ-ron sâu với nhiều tầng ẩn (Hidden layers) và hàng triệu tham số tạo nên bài toán Hộp đen.*
+
+- **Q: In Game Theory applied to ethics, outcomes that are best for the group can be obscured by outcomes best for: -> Key Answer: C. The individual (Nash Equilibrium vs Pareto Efficiency)**
+  *Dịch: Trong Lý thuyết Trò chơi (Game Theory) áp dụng cho đạo đức, các kết quả tốt nhất cho tập thể (Group) có thể bị che lấp bởi các kết quả tốt nhất cho: -> Đáp án chính: C. The individual (Nash Equilibrium vs Pareto Efficiency)*
+  *Ghi nhớ: Game Theory & Prisoner's Dilemma: Khi từng cá nhân theo đuổi lợi ích tối đa cho bản thân (Individual), họ tạo ra kết quả tệ hơn cho toàn thể cộng đồng (Group).*
+
+- **Q: Which type of model is often preferred by businesses because it offers clear, human-understandable reasoning? -> Key Answer: C. Fair and explainable model (White box / Explainable model)**
+  *Dịch: Loại mô hình nào thường được các doanh nghiệp ưu tiên lựa chọn vì nó cung cấp lập luận rõ ràng, dễ hiểu cho con người? -> Đáp án chính: C. Fair and explainable model (White box / Explainable model)*
+  *Ghi nhớ: Explainable Model vs Black Box: Doanh nghiệp ưu tiên mô hình giải thích được (White Box) để dễ kiểm toán, tuân thủ pháp lý và xây dựng lòng tin.*
+
+- **Q: You plan on streamlining your company's product experience while upholding the agency and autonomy of users. Which actions uphold these principles? (Select two.) -> Key Answer: B. Respecting the right of the user to choose and customize their experiences & C. Refraining from dark patterns that guide users into choices they didn't wish for or intend**
+  *Dịch: Bạn dự định tối ưu hóa trải nghiệm sản phẩm nhưng vẫn tôn trọng quyền tự quyết (Agency) và sự tự chủ (Autonomy) của người dùng. Những hành động nào tôn trọng các nguyên tắc này? (Select two) -> Đáp án chính: B. Respecting the right of the user to choose and customize their experiences & C. Refraining from dark patterns that guide users into choices they didn't wish for or intend*
+  *Ghi nhớ: User Autonomy & Agency: Tránh các mẫu thiết kế thao túng tâm lý (Dark Patterns) và trao quyền tự chọn cài đặt cá nhân cho người dùng.*
 
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (221 câu)
 
