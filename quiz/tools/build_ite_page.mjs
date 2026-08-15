@@ -275,7 +275,7 @@ moduleData.forEach(m => {
   console.log(`${m.code} - ${m.title}: ${m.questions.length} questions`);
 });
 
-// Function to generate dual-language Q&A item matching Quiz Hub style
+// Function to generate dual-language Q&A item matching play.html exact DOM
 function renderQuestionHTML(q, idx, totalInMod, modCode) {
   const exp = q.explanation || {};
   const questionEn = q.question;
@@ -289,9 +289,10 @@ function renderQuestionHTML(q, idx, totalInMod, modCode) {
     optionsHTML = Object.entries(q.options).map(([key, val]) => {
       const viVal = (exp.optionsVi && exp.optionsVi[key]) ? exp.optionsVi[key] : '';
       return `
-        <button class="btn-option" data-opt="${key}" onclick="handleOptionClick(this, '${key}', '${q.answer}')">
-          <div class="opt-content">
-            <div class="opt-en"><span class="opt-key-badge">${key}</span> ${val}</div>
+        <button type="button" class="btn-option" data-opt="${key}" onclick="handleOptionClick(this, '${key}', '${q.answer}')">
+          <span class="opt-badge">${key}</span>
+          <div class="opt-text-wrap">
+            <div class="opt-en">${val}</div>
             ${viVal ? `<div class="opt-vi">Dịch: ${viVal}</div>` : ''}
           </div>
         </button>
@@ -300,25 +301,25 @@ function renderQuestionHTML(q, idx, totalInMod, modCode) {
   }
 
   return `
-    <div class="card-soft question-card ${idx === 0 ? 'active-card' : ''}" id="qcard-${modCode}-${idx}" data-idx="${idx}" data-ans="${q.answer}" data-search="${(questionEn + ' ' + questionVi + ' ' + conceptVi).toLowerCase().replace(/"/g, '&quot;')}">
-      <div class="card-header-bar">
-        <div class="q-badge-item"><i class="fa-solid fa-circle-question"></i> Câu ${idx + 1} / ${totalInMod}</div>
-        <div class="task-badge"><i class="fa-solid fa-tag"></i> ${q.taskLabel || q.task || 'ITE'}</div>
+    <div class="card quiz-card ${idx === 0 ? 'active-card' : ''}" id="qcard-${modCode}-${idx}" data-idx="${idx}" data-ans="${q.answer}" data-search="${(questionEn + ' ' + questionVi + ' ' + conceptVi).toLowerCase().replace(/"/g, '&quot;')}">
+      <div class="card-meta">
+        <span class="q-index"><i class="fa-solid fa-circle-question"></i> Câu ${idx + 1} / ${totalInMod}</span>
+        <span class="q-id"><i class="fa-solid fa-tag"></i> ${q.taskLabel || q.task || 'ITE'}</span>
       </div>
       
-      <div class="question-body">
+      <h2 class="question">
         <div class="q-text-en">${questionEn}</div>
         <div class="q-text-vi">Dịch: ${questionVi}</div>
-      </div>
+      </h2>
 
-      ${optionsHTML ? `<div class="options-grid">${optionsHTML}</div>` : ''}
+      ${optionsHTML ? `<div class="options" role="listbox">${optionsHTML}</div>` : ''}
 
       <div class="answer-box">
         <div class="ans-title"><i class="fa-solid fa-circle-check"></i> Đáp án đúng: <span class="ans-key">${answerEn}</span></div>
       </div>
 
       ${conceptVi ? `
-      <div class="concept-box">
+      <div class="explain-panel">
         <div class="concept-title"><i class="fa-solid fa-lightbulb"></i> Khái niệm cốt lõi (Key Concept):</div>
         <div class="concept-content">${conceptVi}</div>
         ${whyCorrectVi ? `<div class="why-correct"><i class="fa-solid fa-check"></i> <strong>Tại sao đúng:</strong> ${whyCorrectVi}</div>` : ''}
@@ -338,9 +339,9 @@ const htmlModulesContent = moduleData.map((m, mIdx) => {
 
   const questionsHTML = m.questions.map((q, qIdx) => renderQuestionHTML(q, qIdx, m.questions.length, m.code)).join('');
 
-  // Question Map Palette Buttons
-  const paletteButtonsHTML = m.questions.map((q, qIdx) => `
-    <button class="q-map-cell ${qIdx === 0 ? 'active' : ''}" id="mapbtn-${m.code}-${qIdx}" onclick="jumpToQuestion('${m.code}', ${qIdx})">${qIdx + 1}</button>
+  // Question Map Cells (q-cell) matching play.html exact DOM
+  const paletteCellsHTML = m.questions.map((q, qIdx) => `
+    <button type="button" class="q-cell ${qIdx === 0 ? 'is-current' : ''}" id="mapbtn-${m.code}-${qIdx}" onclick="jumpToQuestion('${m.code}', ${qIdx})">${qIdx + 1}</button>
   `).join('');
 
   return `
@@ -356,26 +357,37 @@ const htmlModulesContent = moduleData.map((m, mIdx) => {
         ${pureTheoryHTML}
       </div>
 
-      <!-- Question Navigation & Palette Container -->
-      <div class="card-soft quiz-controls-bar">
-        <div class="palette-header">
-          <i class="fa-solid fa-table-cells"></i> <strong>Bản đồ câu hỏi (${m.questions.length} câu):</strong>
+      <!-- Question Navigation & Map Container - Matching play.html exact DOM -->
+      <div class="card-soft quiz-controls-bar" style="margin-bottom: 20px;">
+        <div class="map-head" style="margin-bottom: 8px;">
+          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (${m.questions.length} câu)</span>
         </div>
-        <div class="q-map-grid" id="palette-${m.code}">
-          ${paletteButtonsHTML}
+        <div class="map-legend" style="margin-bottom: 12px;">
+          <span><i class="dot current"></i> đang làm</span>
+          <span><i class="dot ok"></i> đúng</span>
+          <span><i class="dot bad"></i> sai</span>
+          <span><i class="dot unseen"></i> chưa</span>
         </div>
 
-        <div class="nav-buttons-row">
-          <button class="btn btn-secondary" id="prevBtn-${m.code}" onclick="navigateQuestion('${m.code}', -1)">
-            <i class="fa-solid fa-chevron-left"></i> Câu trước
-          </button>
-          <div class="q-counter-text" id="counter-${m.code}">
-            <i class="fa-solid fa-list-ol"></i> Câu 1 / ${m.questions.length}
-          </div>
-          <button class="btn btn-primary" id="nextBtn-${m.code}" onclick="navigateQuestion('${m.code}', 1)">
-            Câu tiếp <i class="fa-solid fa-chevron-right"></i>
-          </button>
+        <div class="q-map" id="palette-${m.code}" style="margin-bottom: 16px;">
+          ${paletteCellsHTML}
         </div>
+
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
+          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-${m.code}" onclick="navigateQuestion('${m.code}', -1)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Câu trước</span>
+          </button>
+
+          <div class="nav-center">
+            <span class="q-counter-text" id="counter-${m.code}">Câu 1 / ${m.questions.length}</span>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-${m.code}" onclick="navigateQuestion('${m.code}', 1)">
+            <span class="nav-label">Câu tiếp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
       </div>
 
       <div class="qa-list" id="qlist-${m.code}">
@@ -395,165 +407,9 @@ const fullHTML = `<!DOCTYPE html>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css?v=ok12" />
   <style>
-    :root {
-      --bg: #f5f7fb;
-      --surface: #ffffff;
-      --surface-2: #f0f4fa;
-      --border: #e6ebf2;
-      --border-strong: #d5dde8;
-      --text: #1c2434;
-      --text-muted: #6b7a90;
-      --accent: #2f7cf6;
-      --accent-hover: #1b63d6;
-      --accent-soft: rgba(47, 124, 246, 0.1);
-      --correct: #1f9d63;
-      --correct-bg: rgba(31, 157, 99, 0.12);
-      --wrong: #e5484d;
-      --wrong-bg: rgba(229, 72, 77, 0.1);
-      --vi-color: #d97706;
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 20px;
-      --shadow-sm: 0 2px 8px rgba(28, 36, 52, 0.06);
-      --shadow-md: 0 8px 28px rgba(28, 36, 52, 0.08);
-      --font: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    }
-
-    body.dark-mode {
-      --bg: #0f172a;
-      --surface: #1e293b;
-      --surface-2: #334155;
-      --border: #334155;
-      --border-strong: #475569;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
-      --accent: #38bdf8;
-      --accent-hover: #0284c7;
-      --accent-soft: rgba(56, 189, 248, 0.15);
-      --correct: #4ade80;
-      --correct-bg: rgba(74, 222, 128, 0.15);
-      --wrong: #f87171;
-      --wrong-bg: rgba(248, 113, 113, 0.15);
-      --vi-color: #fbbf24;
-      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-      --shadow-md: 0 8px 28px rgba(0, 0, 0, 0.4);
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: var(--font);
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-      min-height: 100vh;
-      transition: background-color 0.25s, color 0.25s;
-    }
-
-    /* Top Nav Bar - Matching Quiz Hub site-nav */
-    .site-nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 10px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      color: var(--text);
-      font-weight: 800;
-      font-size: 1.15rem;
-    }
-
-    .brand-mark {
-      width: 38px;
-      height: 38px;
-      border-radius: 10px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-    }
-
-    .brand-text strong { display: block; line-height: 1.2; }
-    .brand-text span { font-size: 0.75rem; color: var(--text-muted); font-weight: 500; }
-
-    .nav-stats {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 12px;
-      border-radius: var(--radius-sm);
-      font-size: 0.85rem;
-      font-weight: 600;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      color: var(--text);
-    }
-
-    .badge-score {
-      background: var(--correct-bg);
-      color: var(--correct);
-      border-color: rgba(31, 157, 99, 0.3);
-    }
-
-    .header-controls {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .search-wrapper { position: relative; }
-    .search-input {
-      padding: 8px 16px 8px 36px;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      color: var(--text);
-      font-size: 0.88rem;
-      width: 200px;
-      transition: width 0.25s;
-    }
-    .search-input:focus { outline: none; border-color: var(--accent); width: 260px; }
-    .search-wrapper i { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
-
-    .btn-action {
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      color: var(--text);
-      padding: 8px 14px;
-      border-radius: var(--radius-sm);
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 0.85rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.2s;
-    }
-    .btn-action:hover { background: var(--border); border-color: var(--accent); }
-    .btn-action.active-mode { background: var(--accent); color: #fff; border-color: var(--accent); }
-
-    /* Layout Structure */
+    /* Specific study guide layout overrides */
     .app-container {
       display: flex;
       max-width: 1400px;
@@ -561,7 +417,6 @@ const fullHTML = `<!DOCTYPE html>
       min-height: calc(100vh - 64px);
     }
 
-    /* Sidebar Navigation */
     .sidebar {
       width: 300px;
       background: var(--surface);
@@ -578,7 +433,7 @@ const fullHTML = `<!DOCTYPE html>
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: var(--text-muted);
+      color: var(--muted);
       margin-bottom: 12px;
       padding-left: 8px;
     }
@@ -588,13 +443,13 @@ const fullHTML = `<!DOCTYPE html>
       align-items: center;
       justify-content: space-between;
       padding: 10px 12px;
-      color: var(--text-muted);
+      color: var(--muted);
       text-decoration: none;
-      border-radius: var(--radius-sm);
+      border-radius: var(--r-sm);
       font-size: 0.88rem;
       font-weight: 600;
       margin-bottom: 4px;
-      transition: all 0.2s;
+      transition: var(--t-fast);
     }
 
     .nav-link:hover, .nav-link.active {
@@ -611,7 +466,6 @@ const fullHTML = `<!DOCTYPE html>
       border-radius: 12px;
     }
 
-    /* Main Content Area */
     .main-content {
       flex: 1;
       padding: 24px 30px;
@@ -621,179 +475,44 @@ const fullHTML = `<!DOCTYPE html>
     .doc-hero {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: var(--radius-md);
+      border-radius: var(--r-md);
       padding: 24px 28px;
       margin-bottom: 28px;
       box-shadow: var(--shadow-sm);
     }
 
     .doc-hero h1 { font-size: 1.6rem; font-weight: 800; color: var(--accent); margin-bottom: 8px; }
-    .doc-hero p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 14px; }
+    .doc-hero p { color: var(--muted); font-size: 0.95rem; margin-bottom: 14px; }
     .stats-pills { display: flex; gap: 12px; flex-wrap: wrap; }
     .pill { background: var(--surface-2); border: 1px solid var(--border); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
 
-    /* Module Section */
     .module-section { margin-bottom: 50px; scroll-margin-top: 80px; }
     .module-header { margin-bottom: 18px; border-bottom: 2px solid var(--border); padding-bottom: 10px; }
     .module-tag { display: inline-block; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; margin-bottom: 6px; }
     .module-header h2 { font-size: 1.4rem; font-weight: 800; color: var(--text); display: flex; align-items: center; gap: 10px; }
     .module-sub { font-size: 1.02rem; color: var(--vi-color); font-weight: 600; margin-top: 4px; }
 
-    /* Card Soft */
-    .card-soft {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 22px 26px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    /* Theory Box */
     .theory-box { margin-bottom: 24px; border-left: 4px solid var(--accent); }
     .box-title { font-weight: 800; font-size: 1.02rem; color: var(--accent); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
-    .theory-item { margin-bottom: 12px; padding: 12px 14px; border-radius: var(--radius-sm); background: var(--surface-2); border: 1px solid var(--border); }
+    .theory-item { margin-bottom: 12px; padding: 12px 14px; border-radius: var(--r-sm); background: var(--surface-2); border: 1px solid var(--border); }
     .t-en { font-weight: 700; color: var(--text); font-size: 0.94rem; }
     .t-vi { color: var(--vi-color); font-size: 0.88rem; margin-top: 4px; font-style: italic; font-weight: 500; }
 
-    /* Quiz Control Bar & Palette Map - Matching Quiz Hub */
-    .quiz-controls-bar { margin-bottom: 24px; }
-    .palette-header { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 10px; }
-
-    .q-map-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      max-height: 160px;
-      overflow-y: auto;
-      padding-bottom: 8px;
-      margin-bottom: 14px;
-    }
-
-    .q-map-cell {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: var(--surface-2);
-      color: var(--text-muted);
-      font-size: 0.82rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.15s;
-    }
-
-    .q-map-cell:hover { border-color: var(--accent); color: var(--accent); }
-    .q-map-cell.active { border-color: var(--accent) !important; background: var(--accent) !important; color: #fff !important; font-weight: 800; box-shadow: 0 0 0 2px var(--accent-soft); }
-    .q-map-cell.cell-ok { background: var(--correct-bg) !important; border-color: var(--correct) !important; color: var(--correct) !important; }
-    .q-map-cell.cell-bad { background: var(--wrong-bg) !important; border-color: var(--wrong) !important; color: var(--wrong) !important; }
-
-    .nav-buttons-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-top: 1px solid var(--border);
-      padding-top: 14px;
-    }
-
-    .btn {
-      padding: 9px 20px;
-      border-radius: var(--radius-sm);
-      font-weight: 700;
-      font-size: 0.9rem;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.2s;
-      border: 1px solid transparent;
-    }
-
-    .btn-primary { background: var(--accent); color: #fff; }
-    .btn-primary:hover { background: var(--accent-hover); }
-    .btn-secondary { background: var(--surface-2); border-color: var(--border); color: var(--text); }
-    .btn-secondary:hover { background: var(--border); }
-
-    .q-counter-text { font-weight: 700; font-size: 0.95rem; color: var(--text); }
-
-    /* Question Card Styling */
-    .question-card { margin-bottom: 20px; }
-    body.quiz-mode .question-card { display: none; }
-    body.quiz-mode .question-card.active-card { display: block !important; }
-    body.study-mode .question-card { display: block !important; }
+    /* Single Card Display Mode */
+    body.quiz-mode .card.quiz-card { display: none; }
+    body.quiz-mode .card.quiz-card.active-card { display: block !important; }
+    body.study-mode .card.quiz-card { display: block !important; }
     body.study-mode .quiz-controls-bar { display: none; }
 
-    .card-header-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
-    .q-badge-item { background: var(--accent-soft); color: var(--accent); font-weight: 800; font-size: 0.85rem; padding: 4px 12px; border-radius: 6px; }
-    .task-badge { background: var(--surface-2); border: 1px solid var(--border); color: var(--text-muted); font-size: 0.78rem; font-weight: 600; padding: 4px 10px; border-radius: 6px; }
-
-    .question-body { margin-bottom: 20px; }
     .q-text-en { font-size: 1.08rem; font-weight: 800; color: var(--text); line-height: 1.5; }
     .q-text-vi { font-size: 1rem; color: var(--vi-color); margin-top: 6px; font-weight: 600; }
-
-    /* Options Buttons - Matching Quiz Hub btn-option */
-    .options-grid { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
-
-    .btn-option {
-      width: 100%;
-      text-align: left;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 12px 18px;
-      font-size: 0.93rem;
-      cursor: pointer;
-      transition: all 0.2s;
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-    }
-
-    .btn-option:hover {
-      background: var(--surface);
-      border-color: var(--accent);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .opt-key-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 26px;
-      height: 26px;
-      border-radius: 6px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-weight: 800;
-      font-size: 0.82rem;
-      flex-shrink: 0;
-    }
-
-    .btn-option.opt-correct {
-      background: var(--correct-bg) !important;
-      border-color: var(--correct) !important;
-    }
-    .btn-option.opt-correct .opt-key-badge {
-      background: var(--correct) !important;
-      color: #fff !important;
-    }
-
-    .btn-option.opt-wrong {
-      background: var(--wrong-bg) !important;
-      border-color: var(--wrong) !important;
-    }
-    .btn-option.opt-wrong .opt-key-badge {
-      background: var(--wrong) !important;
-      color: #fff !important;
-    }
-
     .opt-en { color: var(--text); font-weight: 600; }
     .opt-vi { color: var(--vi-color); font-size: 0.86rem; margin-top: 3px; font-weight: 500; }
 
-    /* Explanation Boxes */
     .answer-box {
       background: var(--correct-bg);
       border: 1px dashed var(--correct);
-      border-radius: var(--radius-sm);
+      border-radius: var(--r-sm);
       padding: 14px 18px;
       margin-bottom: 12px;
       display: none;
@@ -801,19 +520,13 @@ const fullHTML = `<!DOCTYPE html>
     .ans-title { color: var(--correct); font-weight: 800; font-size: 0.96rem; }
     .ans-key { color: var(--text); }
 
-    .concept-box {
-      background: var(--surface-2);
-      border-top: 1px solid var(--border);
-      padding-top: 14px;
-      margin-top: 14px;
-      display: none;
-    }
+    .explain-panel { display: none; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
     .concept-title { font-size: 0.9rem; font-weight: 800; color: var(--accent); margin-bottom: 4px; }
-    .concept-content { font-size: 0.9rem; color: var(--text-muted); }
+    .concept-content { font-size: 0.9rem; color: var(--muted); }
     .why-correct { font-size: 0.88rem; color: var(--correct); margin-top: 6px; font-weight: 600; }
 
     body.study-mode .answer-box,
-    body.study-mode .concept-box { display: block !important; }
+    body.study-mode .explain-panel { display: block !important; }
     body.study-mode .btn-option { cursor: default; }
 
     .hidden-vi .q-text-vi,
@@ -823,44 +536,44 @@ const fullHTML = `<!DOCTYPE html>
     @media (max-width: 900px) {
       .app-container { flex-direction: column; }
       .sidebar { width: 100%; height: auto; position: static; }
-      .search-input { width: 140px; }
-      .search-input:focus { width: 180px; }
     }
   </style>
 </head>
 <body class="quiz-mode">
 
   <header class="site-nav">
-    <a class="brand" href="./" title="Về Quiz Hub">
-      <span class="brand-mark"><i class="fa-solid fa-layer-group"></i></span>
-      <div class="brand-text">
-        <strong>Quiz Hub</strong>
-        <span>ITE302 Master Quiz Engine</span>
+    <div class="nav-inner container" style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+      <a class="brand" href="./" title="Về Quiz Hub">
+        <span class="brand-mark"><i class="fa-solid fa-layer-group"></i></span>
+        <div class="brand-text">
+          <strong>Quiz Hub</strong>
+          <span>ITE302 Master Quiz Engine</span>
+        </div>
+      </a>
+
+      <div class="nav-stats">
+        <span class="badge badge-score" id="scoreBadge">
+          <i class="fa-solid fa-circle-check"></i>
+          Đã làm: <strong id="scoreText">0 / 0</strong>
+        </span>
+
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm khái niệm, câu hỏi...">
+        </div>
+
+        <button class="btn-action active-mode" id="toggleAppModeBtn">
+          <i class="fa-solid fa-gamepad"></i> <span id="appModeLabel">Chế độ Quiz (Chuyển từng câu)</span>
+        </button>
+
+        <button class="btn-action" id="toggleViBtn">
+          <i class="fa-solid fa-language"></i> <span>Ẩn Dịch Việt</span>
+        </button>
+
+        <button class="btn-action" id="toggleThemeBtn">
+          <i class="fa-solid fa-moon"></i> <span>Giao diện</span>
+        </button>
       </div>
-    </a>
-
-    <div class="nav-stats">
-      <span class="badge badge-score" id="scoreBadge">
-        <i class="fa-solid fa-circle-check"></i>
-        Đã làm: <strong id="scoreText">0 / 0</strong>
-      </span>
-
-      <div class="search-wrapper">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm khái niệm, câu hỏi...">
-      </div>
-
-      <button class="btn-action active-mode" id="toggleAppModeBtn">
-        <i class="fa-solid fa-gamepad"></i> <span id="appModeLabel">Chế độ Quiz (Chuyển từng câu)</span>
-      </button>
-
-      <button class="btn-action" id="toggleViBtn">
-        <i class="fa-solid fa-language"></i> <span>Ẩn Dịch Việt</span>
-      </button>
-
-      <button class="btn-action" id="toggleThemeBtn">
-        <i class="fa-solid fa-moon"></i> <span>Giao diện</span>
-      </button>
     </div>
   </header>
 
@@ -880,7 +593,7 @@ const fullHTML = `<!DOCTYPE html>
     <main class="main-content" id="mainContent">
       <div class="doc-hero">
         <h1><i class="fa-solid fa-gamepad"></i> ITE302 - Interactive Quiz & Master Study Guide</h1>
-        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT) thiết kế theo giao diện chuẩn <strong>Quiz Hub</strong>. Đọc phần <strong>Lý Thuyết Cốt Lõi</strong> ở đầu mỗi chương để làm trọn vẹn các câu hỏi bên dưới. Nhấp chọn đáp án để kiểm tra kết quả Đúng/Sai, chuyển câu qua <strong>Bản đồ câu hỏi</strong> hoặc nút <strong>Câu tiếp / Câu trước</strong>.</p>
+        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT) với giao diện các nút bấm và câu hỏi chuẩn <strong>play.html</strong>. Đọc phần <strong>Lý Thuyết Cốt Lõi</strong> ở đầu mỗi chương để làm trọn vẹn các câu hỏi bên dưới. Nhấp chọn đáp án để kiểm tra kết quả Đúng/Sai, chuyển câu qua <strong>Bản đồ câu hỏi</strong> hoặc nút <strong>Câu trước / Câu tiếp</strong>.</p>
         <div class="stats-pills">
           <span class="pill"><i class="fa-solid fa-layer-group"></i> 10 Modules Kiến Thức</span>
           <span class="pill"><i class="fa-solid fa-file-circle-check"></i> ${questions.length} Câu Hỏi Độc Lập</span>
@@ -913,7 +626,7 @@ const fullHTML = `<!DOCTYPE html>
       currentQuestionMap[modCode] = qIdx;
 
       // Update Active Question Card
-      const cards = sec.querySelectorAll('.question-card');
+      const cards = sec.querySelectorAll('.card.quiz-card');
       cards.forEach((card, i) => {
         if (i === qIdx) {
           card.classList.add('active-card');
@@ -922,19 +635,19 @@ const fullHTML = `<!DOCTYPE html>
         }
       });
 
-      // Update Palette Map Cells
-      const cells = sec.querySelectorAll('.q-map-cell');
+      // Update Palette Map Cells (q-cell)
+      const cells = sec.querySelectorAll('.q-cell');
       cells.forEach((cell, i) => {
         if (i === qIdx) {
-          cell.classList.add('active');
+          cell.classList.add('is-current');
         } else {
-          cell.classList.remove('active');
+          cell.classList.remove('is-current');
         }
       });
 
       // Update Counter Text
       const counterEl = document.getElementById('counter-' + modCode);
-      if (counterEl) counterEl.innerHTML = '<i class="fa-solid fa-list-ol"></i> Câu ' + (qIdx + 1) + ' / ' + total;
+      if (counterEl) counterEl.textContent = 'Câu ' + (qIdx + 1) + ' / ' + total;
     }
 
     // Navigate prev / next question
@@ -947,7 +660,7 @@ const fullHTML = `<!DOCTYPE html>
     function handleOptionClick(optElem, chosenOpt, correctOpt) {
       if (document.body.classList.contains('study-mode')) return;
 
-      const card = optElem.closest('.question-card');
+      const card = optElem.closest('.card.quiz-card');
       if (card.classList.contains('answered')) return; // Allow only 1 selection per question
       card.classList.add('answered');
 
@@ -967,18 +680,18 @@ const fullHTML = `<!DOCTYPE html>
 
       // Reveal Answer Box & Concept Box
       const ansBox = card.querySelector('.answer-box');
-      const conceptBox = card.querySelector('.concept-box');
+      const conceptBox = card.querySelector('.explain-panel');
       if (ansBox) ansBox.style.display = 'block';
       if (conceptBox) conceptBox.style.display = 'block';
 
-      // Update Question Map Palette Button Color
+      // Update Question Map Palette Button Color (is-ok / is-bad)
       if (modCode && cardIdx !== null) {
         const mapCell = document.getElementById('mapbtn-' + modCode + '-' + cardIdx);
         if (mapCell) {
           if (chosenOpt === correctOpt) {
-            mapCell.classList.add('cell-ok');
+            mapCell.classList.add('is-ok');
           } else {
-            mapCell.classList.add('cell-bad');
+            mapCell.classList.add('is-bad');
           }
         }
       }
@@ -1017,7 +730,7 @@ const fullHTML = `<!DOCTYPE html>
 
     // Search function
     const searchInput = document.getElementById('searchInput');
-    const qaCards = document.querySelectorAll('.question-card');
+    const qaCards = document.querySelectorAll('.card.quiz-card');
 
     searchInput.addEventListener('input', (e) => {
       const term = e.target.value.toLowerCase().trim();
