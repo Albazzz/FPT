@@ -288,44 +288,12 @@ function renderQuestionHTML(q, idx, totalInMod, modCode) {
   if (q.options) {
     optionsHTML = Object.entries(q.options).map(([key, val]) => {
       const viVal = (exp.optionsVi && exp.optionsVi[key]) ? exp.optionsVi[key] : '';
-      return `
-        <button type="button" class="btn-option" data-opt="${key}" onclick="handleOptionClick(this, '${key}', '${q.answer}')">
-          <span class="opt-badge">${key}</span>
-          <div class="opt-text-wrap">
-            <div class="opt-en">${val}</div>
-            ${viVal ? `<div class="opt-vi">Dịch: ${viVal}</div>` : ''}
-          </div>
-        </button>
-      `;
+      return `<button type="button" class="btn-option" data-opt="${key}" onclick="handleOptionClick(this, '${key}', '${q.answer}')"><span class="opt-badge">${key}</span><div class="opt-text-wrap"><div class="opt-en">${val}</div>${viVal ? `<div class="opt-vi">Dịch: ${viVal}</div>` : ''}</div></button>`;
     }).join('');
   }
 
-  return `
-    <div class="card quiz-card ${idx === 0 ? 'active-card' : ''}" id="qcard-${modCode}-${idx}" data-idx="${idx}" data-ans="${q.answer}" data-search="${(questionEn + ' ' + questionVi + ' ' + conceptVi).toLowerCase().replace(/"/g, '&quot;')}">
-      <div class="card-meta">
-        <span class="q-index"><i class="fa-solid fa-circle-question"></i> Câu ${idx + 1} / ${totalInMod}</span>
-        <span class="q-id"><i class="fa-solid fa-tag"></i> ${q.taskLabel || q.task || 'ITE'}</span>
-      </div>
-      
-      <h2 class="question">
-        <div class="q-text-en">${questionEn}</div>
-        <div class="q-text-vi">Dịch: ${questionVi}</div>
-      </h2>
-
-      ${optionsHTML ? `<div class="options" role="listbox">${optionsHTML}</div>` : ''}
-
-      <div class="answer-box">
-        <div class="ans-title"><i class="fa-solid fa-circle-check"></i> Đáp án đúng: <span class="ans-key">${answerEn}</span></div>
-      </div>
-
-      ${conceptVi ? `
-      <div class="explain-panel">
-        <div class="concept-title"><i class="fa-solid fa-lightbulb"></i> Khái niệm cốt lõi (Key Concept):</div>
-        <div class="concept-content">${conceptVi}</div>
-        ${whyCorrectVi ? `<div class="why-correct"><i class="fa-solid fa-check"></i> <strong>Tại sao đúng:</strong> ${whyCorrectVi}</div>` : ''}
-      </div>` : ''}
-    </div>
-  `;
+  // Single line template string without internal newlines/spaces between divs to prevent pre-wrap spacing
+  return `<div class="card quiz-card ${idx === 0 ? 'active-card' : ''}" id="qcard-${modCode}-${idx}" data-idx="${idx}" data-ans="${q.answer}" data-search="${(questionEn + ' ' + questionVi + ' ' + conceptVi).toLowerCase().replace(/"/g, '&quot;')}"><div class="card-meta"><span class="q-index"><i class="fa-solid fa-circle-question"></i> Câu ${idx + 1} / ${totalInMod}</span><span class="q-id"><i class="fa-solid fa-tag"></i> ${q.taskLabel || q.task || 'ITE'}</span></div><h2 class="question"><div class="q-text-en">${questionEn}</div><div class="q-text-vi">Dịch: ${questionVi}</div></h2>${optionsHTML ? `<div class="options" role="listbox">${optionsHTML}</div>` : ''}<div class="answer-box"><div class="ans-title"><i class="fa-solid fa-circle-check"></i> Đáp án đúng: <span class="ans-key">${answerEn}</span></div></div>${conceptVi ? `<div class="explain-panel"><div class="concept-title"><i class="fa-solid fa-lightbulb"></i> Khái niệm cốt lõi (Key Concept):</div><div class="concept-content">${conceptVi}</div>${whyCorrectVi ? `<div class="why-correct"><i class="fa-solid fa-check"></i> <strong>Tại sao đúng:</strong> ${whyCorrectVi}</div>` : ''}</div>` : ''}</div>`;
 }
 
 // Generate HTML Content
@@ -411,13 +379,38 @@ const fullHTML = `<!DOCTYPE html>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css?v=ok12" />
   <style>
+    /* Question text tight spacing overrides */
+    h2.question {
+      white-space: normal !important;
+      margin-bottom: 16px !important;
+    }
+
+    .q-text-en {
+      font-size: 1.08rem !important;
+      font-weight: 800 !important;
+      color: var(--text, #1c2434) !important;
+      line-height: 1.45 !important;
+      margin-bottom: 6px !important;
+      text-align: left !important;
+    }
+
+    .q-text-vi {
+      font-size: 0.96rem !important;
+      color: var(--vi-color, #d97706) !important;
+      font-weight: 600 !important;
+      line-height: 1.4 !important;
+      margin-top: 4px !important;
+      margin-bottom: 0 !important;
+      text-align: left !important;
+    }
+
     /* Fixed UI & Options styling overrides */
     .options {
       display: flex !important;
       flex-direction: column !important;
-      gap: 12px !important;
-      margin-top: 16px !important;
-      margin-bottom: 20px !important;
+      gap: 10px !important;
+      margin-top: 14px !important;
+      margin-bottom: 18px !important;
       width: 100% !important;
     }
 
@@ -430,9 +423,9 @@ const fullHTML = `<!DOCTYPE html>
       background: var(--surface-2, #f0f4fa) !important;
       border: 1px solid var(--border, #e6ebf2) !important;
       border-radius: 10px !important;
-      padding: 14px 18px !important;
+      padding: 12px 16px !important;
       cursor: pointer !important;
-      gap: 14px !important;
+      gap: 12px !important;
       transition: all 0.2s ease !important;
       box-sizing: border-box !important;
     }
@@ -447,8 +440,8 @@ const fullHTML = `<!DOCTYPE html>
       display: inline-flex !important;
       align-items: center !important;
       justify-content: center !important;
-      width: 32px !important;
-      height: 32px !important;
+      width: 30px !important;
+      height: 30px !important;
       border-radius: 8px !important;
       background: var(--accent-soft, rgba(47, 124, 246, 0.12)) !important;
       color: var(--accent, #2f7cf6) !important;
@@ -466,7 +459,7 @@ const fullHTML = `<!DOCTYPE html>
     .opt-en {
       color: var(--text, #1c2434) !important;
       font-weight: 600 !important;
-      font-size: 0.96rem !important;
+      font-size: 0.95rem !important;
       line-height: 1.45 !important;
       text-align: left !important;
     }
@@ -474,7 +467,7 @@ const fullHTML = `<!DOCTYPE html>
     .opt-vi {
       color: var(--vi-color, #d97706) !important;
       font-size: 0.88rem !important;
-      margin-top: 4px !important;
+      margin-top: 3px !important;
       font-weight: 500 !important;
       text-align: left !important;
     }
@@ -620,9 +613,6 @@ const fullHTML = `<!DOCTYPE html>
     body.quiz-mode .card.quiz-card.active-card { display: block !important; }
     body.study-mode .card.quiz-card { display: block !important; }
     body.study-mode .quiz-controls-bar { display: none; }
-
-    .q-text-en { font-size: 1.08rem; font-weight: 800; color: var(--text); line-height: 1.5; text-align: left; }
-    .q-text-vi { font-size: 1rem; color: var(--vi-color); margin-top: 6px; font-weight: 600; text-align: left; }
 
     .answer-box {
       background: var(--correct-bg);
