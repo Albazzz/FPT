@@ -352,28 +352,20 @@ const htmlModulesContent = moduleData.map((m, mIdx) => {
         <h3 class="module-sub">${m.titleVi} (${m.questions.length} câu hỏi)</h3>
       </div>
 
+      <!-- 1. Top: Theory Box -->
       <div class="card-soft theory-box">
         <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
         ${pureTheoryHTML}
       </div>
 
-      <!-- Question Navigation & Map Container - Matching play.html exact DOM -->
-      <div class="card-soft quiz-controls-bar" style="margin-bottom: 20px;">
-        <div class="map-head" style="margin-bottom: 8px;">
-          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (${m.questions.length} câu)</span>
-        </div>
-        <div class="map-legend" style="margin-bottom: 12px;">
-          <span><i class="dot current"></i> đang làm</span>
-          <span><i class="dot ok"></i> đúng</span>
-          <span><i class="dot bad"></i> sai</span>
-          <span><i class="dot unseen"></i> chưa</span>
-        </div>
+      <!-- 2. Middle: Question Card -->
+      <div class="qa-list" id="qlist-${m.code}">
+        ${questionsHTML}
+      </div>
 
-        <div class="q-map" id="palette-${m.code}" style="margin-bottom: 16px;">
-          ${paletteCellsHTML}
-        </div>
-
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
+      <!-- 3. Bottom: Navigation Bar & Map Grid Palette (Moved Down Below Question Card) -->
+      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px;">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi" style="margin-bottom: 16px;">
           <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-${m.code}" onclick="navigateQuestion('${m.code}', -1)">
             <i class="fa-solid fa-arrow-left"></i>
             <span class="nav-label">Câu trước</span>
@@ -388,10 +380,20 @@ const htmlModulesContent = moduleData.map((m, mIdx) => {
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </nav>
-      </div>
 
-      <div class="qa-list" id="qlist-${m.code}">
-        ${questionsHTML}
+        <div class="map-head" style="margin-bottom: 8px;">
+          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (${m.questions.length} câu)</span>
+        </div>
+        <div class="map-legend" style="margin-bottom: 12px;">
+          <span><i class="dot current"></i> đang làm</span>
+          <span><i class="dot ok"></i> đúng</span>
+          <span><i class="dot bad"></i> sai</span>
+          <span><i class="dot unseen"></i> chưa</span>
+        </div>
+
+        <div class="q-map" id="palette-${m.code}">
+          ${paletteCellsHTML}
+        </div>
       </div>
     </section>
   `;
@@ -409,7 +411,95 @@ const fullHTML = `<!DOCTYPE html>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css?v=ok12" />
   <style>
-    /* Specific study guide layout overrides */
+    /* Fixed UI & Options styling overrides */
+    .options {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 12px !important;
+      margin-top: 16px !important;
+      margin-bottom: 20px !important;
+      width: 100% !important;
+    }
+
+    .btn-option {
+      width: 100% !important;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: flex-start !important;
+      text-align: left !important;
+      background: var(--surface-2, #f0f4fa) !important;
+      border: 1px solid var(--border, #e6ebf2) !important;
+      border-radius: 10px !important;
+      padding: 14px 18px !important;
+      cursor: pointer !important;
+      gap: 14px !important;
+      transition: all 0.2s ease !important;
+      box-sizing: border-box !important;
+    }
+
+    .btn-option:hover {
+      background: var(--surface, #ffffff) !important;
+      border-color: var(--accent, #2f7cf6) !important;
+      box-shadow: 0 4px 12px rgba(47, 124, 246, 0.1) !important;
+    }
+
+    .opt-badge {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 32px !important;
+      height: 32px !important;
+      border-radius: 8px !important;
+      background: var(--accent-soft, rgba(47, 124, 246, 0.12)) !important;
+      color: var(--accent, #2f7cf6) !important;
+      font-weight: 800 !important;
+      font-size: 0.9rem !important;
+      flex-shrink: 0 !important;
+    }
+
+    .opt-text-wrap {
+      flex: 1 1 auto !important;
+      text-align: left !important;
+      min-width: 0 !important;
+    }
+
+    .opt-en {
+      color: var(--text, #1c2434) !important;
+      font-weight: 600 !important;
+      font-size: 0.96rem !important;
+      line-height: 1.45 !important;
+      text-align: left !important;
+    }
+
+    .opt-vi {
+      color: var(--vi-color, #d97706) !important;
+      font-size: 0.88rem !important;
+      margin-top: 4px !important;
+      font-weight: 500 !important;
+      text-align: left !important;
+    }
+
+    .btn-option.opt-correct {
+      background: var(--correct-bg, rgba(31, 157, 99, 0.12)) !important;
+      border-color: var(--correct, #1f9d63) !important;
+    }
+
+    .btn-option.opt-correct .opt-badge {
+      background: var(--correct, #1f9d63) !important;
+      color: #ffffff !important;
+    }
+
+    .btn-option.opt-wrong {
+      background: var(--wrong-bg, rgba(229, 72, 77, 0.12)) !important;
+      border-color: var(--wrong, #e5484d) !important;
+    }
+
+    .btn-option.opt-wrong .opt-badge {
+      background: var(--wrong, #e5484d) !important;
+      color: #ffffff !important;
+    }
+
+    /* Layout overrides */
     .app-container {
       display: flex;
       max-width: 1400px;
@@ -504,10 +594,8 @@ const fullHTML = `<!DOCTYPE html>
     body.study-mode .card.quiz-card { display: block !important; }
     body.study-mode .quiz-controls-bar { display: none; }
 
-    .q-text-en { font-size: 1.08rem; font-weight: 800; color: var(--text); line-height: 1.5; }
-    .q-text-vi { font-size: 1rem; color: var(--vi-color); margin-top: 6px; font-weight: 600; }
-    .opt-en { color: var(--text); font-weight: 600; }
-    .opt-vi { color: var(--vi-color); font-size: 0.86rem; margin-top: 3px; font-weight: 500; }
+    .q-text-en { font-size: 1.08rem; font-weight: 800; color: var(--text); line-height: 1.5; text-align: left; }
+    .q-text-vi { font-size: 1rem; color: var(--vi-color); margin-top: 6px; font-weight: 600; text-align: left; }
 
     .answer-box {
       background: var(--correct-bg);
@@ -517,10 +605,10 @@ const fullHTML = `<!DOCTYPE html>
       margin-bottom: 12px;
       display: none;
     }
-    .ans-title { color: var(--correct); font-weight: 800; font-size: 0.96rem; }
+    .ans-title { color: var(--correct); font-weight: 800; font-size: 0.96rem; text-align: left; }
     .ans-key { color: var(--text); }
 
-    .explain-panel { display: none; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+    .explain-panel { display: none; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); text-align: left; }
     .concept-title { font-size: 0.9rem; font-weight: 800; color: var(--accent); margin-bottom: 4px; }
     .concept-content { font-size: 0.9rem; color: var(--muted); }
     .why-correct { font-size: 0.88rem; color: var(--correct); margin-top: 6px; font-weight: 600; }
@@ -593,7 +681,7 @@ const fullHTML = `<!DOCTYPE html>
     <main class="main-content" id="mainContent">
       <div class="doc-hero">
         <h1><i class="fa-solid fa-gamepad"></i> ITE302 - Interactive Quiz & Master Study Guide</h1>
-        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT) với giao diện các nút bấm và câu hỏi chuẩn <strong>play.html</strong>. Đọc phần <strong>Lý Thuyết Cốt Lõi</strong> ở đầu mỗi chương để làm trọn vẹn các câu hỏi bên dưới. Nhấp chọn đáp án để kiểm tra kết quả Đúng/Sai, chuyển câu qua <strong>Bản đồ câu hỏi</strong> hoặc nút <strong>Câu trước / Câu tiếp</strong>.</p>
+        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT) với giao diện các nút bấm và câu hỏi chuẩn <strong>play.html</strong>. Đọc phần <strong>Lý Thuyết Cốt Lõi</strong> ở đầu mỗi chương để làm trọn vẹn các câu hỏi bên dưới. Nhấp chọn đáp án để kiểm tra kết quả Đúng/Sai, chuyển câu qua <strong>Bản đồ câu hỏi</strong> hoặc nút <strong>Câu trước / Câu tiếp</strong> phía dưới câu hỏi.</p>
         <div class="stats-pills">
           <span class="pill"><i class="fa-solid fa-layer-group"></i> 10 Modules Kiến Thức</span>
           <span class="pill"><i class="fa-solid fa-file-circle-check"></i> ${questions.length} Câu Hỏi Độc Lập</span>

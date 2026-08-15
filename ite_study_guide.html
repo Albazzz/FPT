@@ -10,7 +10,95 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css?v=ok12" />
   <style>
-    /* Specific study guide layout overrides */
+    /* Fixed UI & Options styling overrides */
+    .options {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 12px !important;
+      margin-top: 16px !important;
+      margin-bottom: 20px !important;
+      width: 100% !important;
+    }
+
+    .btn-option {
+      width: 100% !important;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: flex-start !important;
+      text-align: left !important;
+      background: var(--surface-2, #f0f4fa) !important;
+      border: 1px solid var(--border, #e6ebf2) !important;
+      border-radius: 10px !important;
+      padding: 14px 18px !important;
+      cursor: pointer !important;
+      gap: 14px !important;
+      transition: all 0.2s ease !important;
+      box-sizing: border-box !important;
+    }
+
+    .btn-option:hover {
+      background: var(--surface, #ffffff) !important;
+      border-color: var(--accent, #2f7cf6) !important;
+      box-shadow: 0 4px 12px rgba(47, 124, 246, 0.1) !important;
+    }
+
+    .opt-badge {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 32px !important;
+      height: 32px !important;
+      border-radius: 8px !important;
+      background: var(--accent-soft, rgba(47, 124, 246, 0.12)) !important;
+      color: var(--accent, #2f7cf6) !important;
+      font-weight: 800 !important;
+      font-size: 0.9rem !important;
+      flex-shrink: 0 !important;
+    }
+
+    .opt-text-wrap {
+      flex: 1 1 auto !important;
+      text-align: left !important;
+      min-width: 0 !important;
+    }
+
+    .opt-en {
+      color: var(--text, #1c2434) !important;
+      font-weight: 600 !important;
+      font-size: 0.96rem !important;
+      line-height: 1.45 !important;
+      text-align: left !important;
+    }
+
+    .opt-vi {
+      color: var(--vi-color, #d97706) !important;
+      font-size: 0.88rem !important;
+      margin-top: 4px !important;
+      font-weight: 500 !important;
+      text-align: left !important;
+    }
+
+    .btn-option.opt-correct {
+      background: var(--correct-bg, rgba(31, 157, 99, 0.12)) !important;
+      border-color: var(--correct, #1f9d63) !important;
+    }
+
+    .btn-option.opt-correct .opt-badge {
+      background: var(--correct, #1f9d63) !important;
+      color: #ffffff !important;
+    }
+
+    .btn-option.opt-wrong {
+      background: var(--wrong-bg, rgba(229, 72, 77, 0.12)) !important;
+      border-color: var(--wrong, #e5484d) !important;
+    }
+
+    .btn-option.opt-wrong .opt-badge {
+      background: var(--wrong, #e5484d) !important;
+      color: #ffffff !important;
+    }
+
+    /* Layout overrides */
     .app-container {
       display: flex;
       max-width: 1400px;
@@ -105,10 +193,8 @@
     body.study-mode .card.quiz-card { display: block !important; }
     body.study-mode .quiz-controls-bar { display: none; }
 
-    .q-text-en { font-size: 1.08rem; font-weight: 800; color: var(--text); line-height: 1.5; }
-    .q-text-vi { font-size: 1rem; color: var(--vi-color); margin-top: 6px; font-weight: 600; }
-    .opt-en { color: var(--text); font-weight: 600; }
-    .opt-vi { color: var(--vi-color); font-size: 0.86rem; margin-top: 3px; font-weight: 500; }
+    .q-text-en { font-size: 1.08rem; font-weight: 800; color: var(--text); line-height: 1.5; text-align: left; }
+    .q-text-vi { font-size: 1rem; color: var(--vi-color); margin-top: 6px; font-weight: 600; text-align: left; }
 
     .answer-box {
       background: var(--correct-bg);
@@ -118,10 +204,10 @@
       margin-bottom: 12px;
       display: none;
     }
-    .ans-title { color: var(--correct); font-weight: 800; font-size: 0.96rem; }
+    .ans-title { color: var(--correct); font-weight: 800; font-size: 0.96rem; text-align: left; }
     .ans-key { color: var(--text); }
 
-    .explain-panel { display: none; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+    .explain-panel { display: none; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); text-align: left; }
     .concept-title { font-size: 0.9rem; font-weight: 800; color: var(--accent); margin-bottom: 4px; }
     .concept-content { font-size: 0.9rem; color: var(--muted); }
     .why-correct { font-size: 0.88rem; color: var(--correct); margin-top: 6px; font-weight: 600; }
@@ -239,7 +325,7 @@
     <main class="main-content" id="mainContent">
       <div class="doc-hero">
         <h1><i class="fa-solid fa-gamepad"></i> ITE302 - Interactive Quiz & Master Study Guide</h1>
-        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT) với giao diện các nút bấm và câu hỏi chuẩn <strong>play.html</strong>. Đọc phần <strong>Lý Thuyết Cốt Lõi</strong> ở đầu mỗi chương để làm trọn vẹn các câu hỏi bên dưới. Nhấp chọn đáp án để kiểm tra kết quả Đúng/Sai, chuyển câu qua <strong>Bản đồ câu hỏi</strong> hoặc nút <strong>Câu trước / Câu tiếp</strong>.</p>
+        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT) với giao diện các nút bấm và câu hỏi chuẩn <strong>play.html</strong>. Đọc phần <strong>Lý Thuyết Cốt Lõi</strong> ở đầu mỗi chương để làm trọn vẹn các câu hỏi bên dưới. Nhấp chọn đáp án để kiểm tra kết quả Đúng/Sai, chuyển câu qua <strong>Bản đồ câu hỏi</strong> hoặc nút <strong>Câu trước / Câu tiếp</strong> phía dưới câu hỏi.</p>
         <div class="stats-pills">
           <span class="pill"><i class="fa-solid fa-layer-group"></i> 10 Modules Kiến Thức</span>
           <span class="pill"><i class="fa-solid fa-file-circle-check"></i> 600 Câu Hỏi Độc Lập</span>
@@ -255,6 +341,7 @@
         <h3 class="module-sub">Đạo đức AI, Tính công bằng Thuật toán & Giảm thiểu Định kiến (106 câu hỏi)</h3>
       </div>
 
+      <!-- 1. Top: Theory Box -->
       <div class="card-soft theory-box">
         <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
         
@@ -285,251 +372,7 @@
   
       </div>
 
-      <!-- Question Navigation & Map Container - Matching play.html exact DOM -->
-      <div class="card-soft quiz-controls-bar" style="margin-bottom: 20px;">
-        <div class="map-head" style="margin-bottom: 8px;">
-          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (106 câu)</span>
-        </div>
-        <div class="map-legend" style="margin-bottom: 12px;">
-          <span><i class="dot current"></i> đang làm</span>
-          <span><i class="dot ok"></i> đúng</span>
-          <span><i class="dot bad"></i> sai</span>
-          <span><i class="dot unseen"></i> chưa</span>
-        </div>
-
-        <div class="q-map" id="palette-MOD-01" style="margin-bottom: 16px;">
-          
-    <button type="button" class="q-cell is-current" id="mapbtn-MOD-01-0" onclick="jumpToQuestion('MOD-01', 0)">1</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-1" onclick="jumpToQuestion('MOD-01', 1)">2</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-2" onclick="jumpToQuestion('MOD-01', 2)">3</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-3" onclick="jumpToQuestion('MOD-01', 3)">4</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-4" onclick="jumpToQuestion('MOD-01', 4)">5</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-5" onclick="jumpToQuestion('MOD-01', 5)">6</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-6" onclick="jumpToQuestion('MOD-01', 6)">7</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-7" onclick="jumpToQuestion('MOD-01', 7)">8</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-8" onclick="jumpToQuestion('MOD-01', 8)">9</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-9" onclick="jumpToQuestion('MOD-01', 9)">10</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-10" onclick="jumpToQuestion('MOD-01', 10)">11</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-11" onclick="jumpToQuestion('MOD-01', 11)">12</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-12" onclick="jumpToQuestion('MOD-01', 12)">13</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-13" onclick="jumpToQuestion('MOD-01', 13)">14</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-14" onclick="jumpToQuestion('MOD-01', 14)">15</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-15" onclick="jumpToQuestion('MOD-01', 15)">16</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-16" onclick="jumpToQuestion('MOD-01', 16)">17</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-17" onclick="jumpToQuestion('MOD-01', 17)">18</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-18" onclick="jumpToQuestion('MOD-01', 18)">19</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-19" onclick="jumpToQuestion('MOD-01', 19)">20</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-20" onclick="jumpToQuestion('MOD-01', 20)">21</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-21" onclick="jumpToQuestion('MOD-01', 21)">22</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-22" onclick="jumpToQuestion('MOD-01', 22)">23</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-23" onclick="jumpToQuestion('MOD-01', 23)">24</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-24" onclick="jumpToQuestion('MOD-01', 24)">25</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-25" onclick="jumpToQuestion('MOD-01', 25)">26</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-26" onclick="jumpToQuestion('MOD-01', 26)">27</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-27" onclick="jumpToQuestion('MOD-01', 27)">28</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-28" onclick="jumpToQuestion('MOD-01', 28)">29</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-29" onclick="jumpToQuestion('MOD-01', 29)">30</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-30" onclick="jumpToQuestion('MOD-01', 30)">31</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-31" onclick="jumpToQuestion('MOD-01', 31)">32</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-32" onclick="jumpToQuestion('MOD-01', 32)">33</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-33" onclick="jumpToQuestion('MOD-01', 33)">34</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-34" onclick="jumpToQuestion('MOD-01', 34)">35</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-35" onclick="jumpToQuestion('MOD-01', 35)">36</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-36" onclick="jumpToQuestion('MOD-01', 36)">37</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-37" onclick="jumpToQuestion('MOD-01', 37)">38</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-38" onclick="jumpToQuestion('MOD-01', 38)">39</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-39" onclick="jumpToQuestion('MOD-01', 39)">40</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-40" onclick="jumpToQuestion('MOD-01', 40)">41</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-41" onclick="jumpToQuestion('MOD-01', 41)">42</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-42" onclick="jumpToQuestion('MOD-01', 42)">43</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-43" onclick="jumpToQuestion('MOD-01', 43)">44</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-44" onclick="jumpToQuestion('MOD-01', 44)">45</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-45" onclick="jumpToQuestion('MOD-01', 45)">46</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-46" onclick="jumpToQuestion('MOD-01', 46)">47</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-47" onclick="jumpToQuestion('MOD-01', 47)">48</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-48" onclick="jumpToQuestion('MOD-01', 48)">49</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-49" onclick="jumpToQuestion('MOD-01', 49)">50</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-50" onclick="jumpToQuestion('MOD-01', 50)">51</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-51" onclick="jumpToQuestion('MOD-01', 51)">52</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-52" onclick="jumpToQuestion('MOD-01', 52)">53</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-53" onclick="jumpToQuestion('MOD-01', 53)">54</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-54" onclick="jumpToQuestion('MOD-01', 54)">55</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-55" onclick="jumpToQuestion('MOD-01', 55)">56</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-56" onclick="jumpToQuestion('MOD-01', 56)">57</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-57" onclick="jumpToQuestion('MOD-01', 57)">58</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-58" onclick="jumpToQuestion('MOD-01', 58)">59</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-59" onclick="jumpToQuestion('MOD-01', 59)">60</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-60" onclick="jumpToQuestion('MOD-01', 60)">61</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-61" onclick="jumpToQuestion('MOD-01', 61)">62</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-62" onclick="jumpToQuestion('MOD-01', 62)">63</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-63" onclick="jumpToQuestion('MOD-01', 63)">64</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-64" onclick="jumpToQuestion('MOD-01', 64)">65</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-65" onclick="jumpToQuestion('MOD-01', 65)">66</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-66" onclick="jumpToQuestion('MOD-01', 66)">67</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-67" onclick="jumpToQuestion('MOD-01', 67)">68</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-68" onclick="jumpToQuestion('MOD-01', 68)">69</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-69" onclick="jumpToQuestion('MOD-01', 69)">70</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-70" onclick="jumpToQuestion('MOD-01', 70)">71</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-71" onclick="jumpToQuestion('MOD-01', 71)">72</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-72" onclick="jumpToQuestion('MOD-01', 72)">73</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-73" onclick="jumpToQuestion('MOD-01', 73)">74</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-74" onclick="jumpToQuestion('MOD-01', 74)">75</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-75" onclick="jumpToQuestion('MOD-01', 75)">76</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-76" onclick="jumpToQuestion('MOD-01', 76)">77</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-77" onclick="jumpToQuestion('MOD-01', 77)">78</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-78" onclick="jumpToQuestion('MOD-01', 78)">79</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-79" onclick="jumpToQuestion('MOD-01', 79)">80</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-80" onclick="jumpToQuestion('MOD-01', 80)">81</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-81" onclick="jumpToQuestion('MOD-01', 81)">82</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-82" onclick="jumpToQuestion('MOD-01', 82)">83</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-83" onclick="jumpToQuestion('MOD-01', 83)">84</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-84" onclick="jumpToQuestion('MOD-01', 84)">85</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-85" onclick="jumpToQuestion('MOD-01', 85)">86</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-86" onclick="jumpToQuestion('MOD-01', 86)">87</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-87" onclick="jumpToQuestion('MOD-01', 87)">88</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-88" onclick="jumpToQuestion('MOD-01', 88)">89</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-89" onclick="jumpToQuestion('MOD-01', 89)">90</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-90" onclick="jumpToQuestion('MOD-01', 90)">91</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-91" onclick="jumpToQuestion('MOD-01', 91)">92</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-92" onclick="jumpToQuestion('MOD-01', 92)">93</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-93" onclick="jumpToQuestion('MOD-01', 93)">94</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-94" onclick="jumpToQuestion('MOD-01', 94)">95</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-95" onclick="jumpToQuestion('MOD-01', 95)">96</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-96" onclick="jumpToQuestion('MOD-01', 96)">97</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-97" onclick="jumpToQuestion('MOD-01', 97)">98</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-98" onclick="jumpToQuestion('MOD-01', 98)">99</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-99" onclick="jumpToQuestion('MOD-01', 99)">100</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-100" onclick="jumpToQuestion('MOD-01', 100)">101</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-101" onclick="jumpToQuestion('MOD-01', 101)">102</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-102" onclick="jumpToQuestion('MOD-01', 102)">103</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-103" onclick="jumpToQuestion('MOD-01', 103)">104</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-104" onclick="jumpToQuestion('MOD-01', 104)">105</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-01-105" onclick="jumpToQuestion('MOD-01', 105)">106</button>
-  
-        </div>
-
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
-          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-01" onclick="navigateQuestion('MOD-01', -1)">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span class="nav-label">Câu trước</span>
-          </button>
-
-          <div class="nav-center">
-            <span class="q-counter-text" id="counter-MOD-01">Câu 1 / 106</span>
-          </div>
-
-          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-01" onclick="navigateQuestion('MOD-01', 1)">
-            <span class="nav-label">Câu tiếp</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </nav>
-      </div>
-
+      <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-01">
         
     <div class="card quiz-card active-card" id="qcard-MOD-01-0" data-idx="0" data-ans="B" data-search="which technique helps improve algorithmic fairness? kỹ thuật nào giúp cải thiện tính công bằng của thuật toán (algorithmic fairness)? • algorithmic fairness (tính công bằng của thuật toán): đảm bảo các mô hình ai/ml không đưa ra quyết định thiên vị hoặc phân biệt đối xử với các nhóm đối tượng khác nhau.">
@@ -6573,6 +6416,251 @@ choose to</div>
     </div>
   
       </div>
+
+      <!-- 3. Bottom: Navigation Bar & Map Grid Palette (Moved Down Below Question Card) -->
+      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px;">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi" style="margin-bottom: 16px;">
+          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-01" onclick="navigateQuestion('MOD-01', -1)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Câu trước</span>
+          </button>
+
+          <div class="nav-center">
+            <span class="q-counter-text" id="counter-MOD-01">Câu 1 / 106</span>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-01" onclick="navigateQuestion('MOD-01', 1)">
+            <span class="nav-label">Câu tiếp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+
+        <div class="map-head" style="margin-bottom: 8px;">
+          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (106 câu)</span>
+        </div>
+        <div class="map-legend" style="margin-bottom: 12px;">
+          <span><i class="dot current"></i> đang làm</span>
+          <span><i class="dot ok"></i> đúng</span>
+          <span><i class="dot bad"></i> sai</span>
+          <span><i class="dot unseen"></i> chưa</span>
+        </div>
+
+        <div class="q-map" id="palette-MOD-01">
+          
+    <button type="button" class="q-cell is-current" id="mapbtn-MOD-01-0" onclick="jumpToQuestion('MOD-01', 0)">1</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-1" onclick="jumpToQuestion('MOD-01', 1)">2</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-2" onclick="jumpToQuestion('MOD-01', 2)">3</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-3" onclick="jumpToQuestion('MOD-01', 3)">4</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-4" onclick="jumpToQuestion('MOD-01', 4)">5</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-5" onclick="jumpToQuestion('MOD-01', 5)">6</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-6" onclick="jumpToQuestion('MOD-01', 6)">7</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-7" onclick="jumpToQuestion('MOD-01', 7)">8</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-8" onclick="jumpToQuestion('MOD-01', 8)">9</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-9" onclick="jumpToQuestion('MOD-01', 9)">10</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-10" onclick="jumpToQuestion('MOD-01', 10)">11</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-11" onclick="jumpToQuestion('MOD-01', 11)">12</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-12" onclick="jumpToQuestion('MOD-01', 12)">13</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-13" onclick="jumpToQuestion('MOD-01', 13)">14</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-14" onclick="jumpToQuestion('MOD-01', 14)">15</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-15" onclick="jumpToQuestion('MOD-01', 15)">16</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-16" onclick="jumpToQuestion('MOD-01', 16)">17</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-17" onclick="jumpToQuestion('MOD-01', 17)">18</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-18" onclick="jumpToQuestion('MOD-01', 18)">19</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-19" onclick="jumpToQuestion('MOD-01', 19)">20</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-20" onclick="jumpToQuestion('MOD-01', 20)">21</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-21" onclick="jumpToQuestion('MOD-01', 21)">22</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-22" onclick="jumpToQuestion('MOD-01', 22)">23</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-23" onclick="jumpToQuestion('MOD-01', 23)">24</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-24" onclick="jumpToQuestion('MOD-01', 24)">25</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-25" onclick="jumpToQuestion('MOD-01', 25)">26</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-26" onclick="jumpToQuestion('MOD-01', 26)">27</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-27" onclick="jumpToQuestion('MOD-01', 27)">28</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-28" onclick="jumpToQuestion('MOD-01', 28)">29</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-29" onclick="jumpToQuestion('MOD-01', 29)">30</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-30" onclick="jumpToQuestion('MOD-01', 30)">31</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-31" onclick="jumpToQuestion('MOD-01', 31)">32</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-32" onclick="jumpToQuestion('MOD-01', 32)">33</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-33" onclick="jumpToQuestion('MOD-01', 33)">34</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-34" onclick="jumpToQuestion('MOD-01', 34)">35</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-35" onclick="jumpToQuestion('MOD-01', 35)">36</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-36" onclick="jumpToQuestion('MOD-01', 36)">37</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-37" onclick="jumpToQuestion('MOD-01', 37)">38</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-38" onclick="jumpToQuestion('MOD-01', 38)">39</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-39" onclick="jumpToQuestion('MOD-01', 39)">40</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-40" onclick="jumpToQuestion('MOD-01', 40)">41</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-41" onclick="jumpToQuestion('MOD-01', 41)">42</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-42" onclick="jumpToQuestion('MOD-01', 42)">43</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-43" onclick="jumpToQuestion('MOD-01', 43)">44</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-44" onclick="jumpToQuestion('MOD-01', 44)">45</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-45" onclick="jumpToQuestion('MOD-01', 45)">46</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-46" onclick="jumpToQuestion('MOD-01', 46)">47</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-47" onclick="jumpToQuestion('MOD-01', 47)">48</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-48" onclick="jumpToQuestion('MOD-01', 48)">49</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-49" onclick="jumpToQuestion('MOD-01', 49)">50</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-50" onclick="jumpToQuestion('MOD-01', 50)">51</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-51" onclick="jumpToQuestion('MOD-01', 51)">52</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-52" onclick="jumpToQuestion('MOD-01', 52)">53</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-53" onclick="jumpToQuestion('MOD-01', 53)">54</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-54" onclick="jumpToQuestion('MOD-01', 54)">55</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-55" onclick="jumpToQuestion('MOD-01', 55)">56</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-56" onclick="jumpToQuestion('MOD-01', 56)">57</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-57" onclick="jumpToQuestion('MOD-01', 57)">58</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-58" onclick="jumpToQuestion('MOD-01', 58)">59</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-59" onclick="jumpToQuestion('MOD-01', 59)">60</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-60" onclick="jumpToQuestion('MOD-01', 60)">61</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-61" onclick="jumpToQuestion('MOD-01', 61)">62</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-62" onclick="jumpToQuestion('MOD-01', 62)">63</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-63" onclick="jumpToQuestion('MOD-01', 63)">64</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-64" onclick="jumpToQuestion('MOD-01', 64)">65</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-65" onclick="jumpToQuestion('MOD-01', 65)">66</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-66" onclick="jumpToQuestion('MOD-01', 66)">67</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-67" onclick="jumpToQuestion('MOD-01', 67)">68</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-68" onclick="jumpToQuestion('MOD-01', 68)">69</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-69" onclick="jumpToQuestion('MOD-01', 69)">70</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-70" onclick="jumpToQuestion('MOD-01', 70)">71</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-71" onclick="jumpToQuestion('MOD-01', 71)">72</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-72" onclick="jumpToQuestion('MOD-01', 72)">73</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-73" onclick="jumpToQuestion('MOD-01', 73)">74</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-74" onclick="jumpToQuestion('MOD-01', 74)">75</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-75" onclick="jumpToQuestion('MOD-01', 75)">76</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-76" onclick="jumpToQuestion('MOD-01', 76)">77</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-77" onclick="jumpToQuestion('MOD-01', 77)">78</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-78" onclick="jumpToQuestion('MOD-01', 78)">79</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-79" onclick="jumpToQuestion('MOD-01', 79)">80</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-80" onclick="jumpToQuestion('MOD-01', 80)">81</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-81" onclick="jumpToQuestion('MOD-01', 81)">82</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-82" onclick="jumpToQuestion('MOD-01', 82)">83</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-83" onclick="jumpToQuestion('MOD-01', 83)">84</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-84" onclick="jumpToQuestion('MOD-01', 84)">85</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-85" onclick="jumpToQuestion('MOD-01', 85)">86</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-86" onclick="jumpToQuestion('MOD-01', 86)">87</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-87" onclick="jumpToQuestion('MOD-01', 87)">88</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-88" onclick="jumpToQuestion('MOD-01', 88)">89</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-89" onclick="jumpToQuestion('MOD-01', 89)">90</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-90" onclick="jumpToQuestion('MOD-01', 90)">91</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-91" onclick="jumpToQuestion('MOD-01', 91)">92</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-92" onclick="jumpToQuestion('MOD-01', 92)">93</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-93" onclick="jumpToQuestion('MOD-01', 93)">94</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-94" onclick="jumpToQuestion('MOD-01', 94)">95</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-95" onclick="jumpToQuestion('MOD-01', 95)">96</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-96" onclick="jumpToQuestion('MOD-01', 96)">97</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-97" onclick="jumpToQuestion('MOD-01', 97)">98</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-98" onclick="jumpToQuestion('MOD-01', 98)">99</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-99" onclick="jumpToQuestion('MOD-01', 99)">100</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-100" onclick="jumpToQuestion('MOD-01', 100)">101</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-101" onclick="jumpToQuestion('MOD-01', 101)">102</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-102" onclick="jumpToQuestion('MOD-01', 102)">103</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-103" onclick="jumpToQuestion('MOD-01', 103)">104</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-104" onclick="jumpToQuestion('MOD-01', 104)">105</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-01-105" onclick="jumpToQuestion('MOD-01', 105)">106</button>
+  
+        </div>
+      </div>
     </section>
   
     <section class="module-section " id="m2" data-modcode="MOD-02" data-total="82">
@@ -6582,6 +6670,7 @@ choose to</div>
         <h3 class="module-sub">Mô hình Máy học, Dữ liệu Huấn luyện & Xác suất (82 câu hỏi)</h3>
       </div>
 
+      <!-- 1. Top: Theory Box -->
       <div class="card-soft theory-box">
         <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
         
@@ -6612,203 +6701,7 @@ choose to</div>
   
       </div>
 
-      <!-- Question Navigation & Map Container - Matching play.html exact DOM -->
-      <div class="card-soft quiz-controls-bar" style="margin-bottom: 20px;">
-        <div class="map-head" style="margin-bottom: 8px;">
-          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (82 câu)</span>
-        </div>
-        <div class="map-legend" style="margin-bottom: 12px;">
-          <span><i class="dot current"></i> đang làm</span>
-          <span><i class="dot ok"></i> đúng</span>
-          <span><i class="dot bad"></i> sai</span>
-          <span><i class="dot unseen"></i> chưa</span>
-        </div>
-
-        <div class="q-map" id="palette-MOD-02" style="margin-bottom: 16px;">
-          
-    <button type="button" class="q-cell is-current" id="mapbtn-MOD-02-0" onclick="jumpToQuestion('MOD-02', 0)">1</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-1" onclick="jumpToQuestion('MOD-02', 1)">2</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-2" onclick="jumpToQuestion('MOD-02', 2)">3</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-3" onclick="jumpToQuestion('MOD-02', 3)">4</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-4" onclick="jumpToQuestion('MOD-02', 4)">5</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-5" onclick="jumpToQuestion('MOD-02', 5)">6</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-6" onclick="jumpToQuestion('MOD-02', 6)">7</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-7" onclick="jumpToQuestion('MOD-02', 7)">8</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-8" onclick="jumpToQuestion('MOD-02', 8)">9</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-9" onclick="jumpToQuestion('MOD-02', 9)">10</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-10" onclick="jumpToQuestion('MOD-02', 10)">11</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-11" onclick="jumpToQuestion('MOD-02', 11)">12</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-12" onclick="jumpToQuestion('MOD-02', 12)">13</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-13" onclick="jumpToQuestion('MOD-02', 13)">14</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-14" onclick="jumpToQuestion('MOD-02', 14)">15</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-15" onclick="jumpToQuestion('MOD-02', 15)">16</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-16" onclick="jumpToQuestion('MOD-02', 16)">17</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-17" onclick="jumpToQuestion('MOD-02', 17)">18</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-18" onclick="jumpToQuestion('MOD-02', 18)">19</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-19" onclick="jumpToQuestion('MOD-02', 19)">20</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-20" onclick="jumpToQuestion('MOD-02', 20)">21</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-21" onclick="jumpToQuestion('MOD-02', 21)">22</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-22" onclick="jumpToQuestion('MOD-02', 22)">23</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-23" onclick="jumpToQuestion('MOD-02', 23)">24</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-24" onclick="jumpToQuestion('MOD-02', 24)">25</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-25" onclick="jumpToQuestion('MOD-02', 25)">26</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-26" onclick="jumpToQuestion('MOD-02', 26)">27</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-27" onclick="jumpToQuestion('MOD-02', 27)">28</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-28" onclick="jumpToQuestion('MOD-02', 28)">29</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-29" onclick="jumpToQuestion('MOD-02', 29)">30</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-30" onclick="jumpToQuestion('MOD-02', 30)">31</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-31" onclick="jumpToQuestion('MOD-02', 31)">32</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-32" onclick="jumpToQuestion('MOD-02', 32)">33</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-33" onclick="jumpToQuestion('MOD-02', 33)">34</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-34" onclick="jumpToQuestion('MOD-02', 34)">35</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-35" onclick="jumpToQuestion('MOD-02', 35)">36</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-36" onclick="jumpToQuestion('MOD-02', 36)">37</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-37" onclick="jumpToQuestion('MOD-02', 37)">38</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-38" onclick="jumpToQuestion('MOD-02', 38)">39</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-39" onclick="jumpToQuestion('MOD-02', 39)">40</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-40" onclick="jumpToQuestion('MOD-02', 40)">41</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-41" onclick="jumpToQuestion('MOD-02', 41)">42</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-42" onclick="jumpToQuestion('MOD-02', 42)">43</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-43" onclick="jumpToQuestion('MOD-02', 43)">44</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-44" onclick="jumpToQuestion('MOD-02', 44)">45</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-45" onclick="jumpToQuestion('MOD-02', 45)">46</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-46" onclick="jumpToQuestion('MOD-02', 46)">47</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-47" onclick="jumpToQuestion('MOD-02', 47)">48</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-48" onclick="jumpToQuestion('MOD-02', 48)">49</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-49" onclick="jumpToQuestion('MOD-02', 49)">50</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-50" onclick="jumpToQuestion('MOD-02', 50)">51</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-51" onclick="jumpToQuestion('MOD-02', 51)">52</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-52" onclick="jumpToQuestion('MOD-02', 52)">53</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-53" onclick="jumpToQuestion('MOD-02', 53)">54</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-54" onclick="jumpToQuestion('MOD-02', 54)">55</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-55" onclick="jumpToQuestion('MOD-02', 55)">56</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-56" onclick="jumpToQuestion('MOD-02', 56)">57</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-57" onclick="jumpToQuestion('MOD-02', 57)">58</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-58" onclick="jumpToQuestion('MOD-02', 58)">59</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-59" onclick="jumpToQuestion('MOD-02', 59)">60</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-60" onclick="jumpToQuestion('MOD-02', 60)">61</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-61" onclick="jumpToQuestion('MOD-02', 61)">62</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-62" onclick="jumpToQuestion('MOD-02', 62)">63</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-63" onclick="jumpToQuestion('MOD-02', 63)">64</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-64" onclick="jumpToQuestion('MOD-02', 64)">65</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-65" onclick="jumpToQuestion('MOD-02', 65)">66</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-66" onclick="jumpToQuestion('MOD-02', 66)">67</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-67" onclick="jumpToQuestion('MOD-02', 67)">68</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-68" onclick="jumpToQuestion('MOD-02', 68)">69</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-69" onclick="jumpToQuestion('MOD-02', 69)">70</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-70" onclick="jumpToQuestion('MOD-02', 70)">71</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-71" onclick="jumpToQuestion('MOD-02', 71)">72</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-72" onclick="jumpToQuestion('MOD-02', 72)">73</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-73" onclick="jumpToQuestion('MOD-02', 73)">74</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-74" onclick="jumpToQuestion('MOD-02', 74)">75</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-75" onclick="jumpToQuestion('MOD-02', 75)">76</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-76" onclick="jumpToQuestion('MOD-02', 76)">77</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-77" onclick="jumpToQuestion('MOD-02', 77)">78</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-78" onclick="jumpToQuestion('MOD-02', 78)">79</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-79" onclick="jumpToQuestion('MOD-02', 79)">80</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-80" onclick="jumpToQuestion('MOD-02', 80)">81</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-02-81" onclick="jumpToQuestion('MOD-02', 81)">82</button>
-  
-        </div>
-
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
-          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-02" onclick="navigateQuestion('MOD-02', -1)">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span class="nav-label">Câu trước</span>
-          </button>
-
-          <div class="nav-center">
-            <span class="q-counter-text" id="counter-MOD-02">Câu 1 / 82</span>
-          </div>
-
-          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-02" onclick="navigateQuestion('MOD-02', 1)">
-            <span class="nav-label">Câu tiếp</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </nav>
-      </div>
-
+      <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-02">
         
     <div class="card quiz-card active-card" id="qcard-MOD-02-0" data-idx="0" data-ans="D" data-search="what can be learned from a predictive model should not change if the excluded in the training set is either included or những gì học được từ một mô hình dự đoán không nên thay đổi bất kể dữ liệu của một cá nhân (individual's data) bị loại trừ khỏi tập huấn luyện có được đưa vào hay không. • differential privacy (tính riêng tư vi sai): nguyên tắc đảm bảo rằng sự xuất hiện hay vắng mặt của dữ liệu thuộc về một cá nhân bất kỳ không làm thay đổi đáng kể đầu ra của mô hình.">
@@ -11476,6 +11369,203 @@ remaining 20% of data is referred to as an</div>
     </div>
   
       </div>
+
+      <!-- 3. Bottom: Navigation Bar & Map Grid Palette (Moved Down Below Question Card) -->
+      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px;">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi" style="margin-bottom: 16px;">
+          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-02" onclick="navigateQuestion('MOD-02', -1)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Câu trước</span>
+          </button>
+
+          <div class="nav-center">
+            <span class="q-counter-text" id="counter-MOD-02">Câu 1 / 82</span>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-02" onclick="navigateQuestion('MOD-02', 1)">
+            <span class="nav-label">Câu tiếp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+
+        <div class="map-head" style="margin-bottom: 8px;">
+          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (82 câu)</span>
+        </div>
+        <div class="map-legend" style="margin-bottom: 12px;">
+          <span><i class="dot current"></i> đang làm</span>
+          <span><i class="dot ok"></i> đúng</span>
+          <span><i class="dot bad"></i> sai</span>
+          <span><i class="dot unseen"></i> chưa</span>
+        </div>
+
+        <div class="q-map" id="palette-MOD-02">
+          
+    <button type="button" class="q-cell is-current" id="mapbtn-MOD-02-0" onclick="jumpToQuestion('MOD-02', 0)">1</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-1" onclick="jumpToQuestion('MOD-02', 1)">2</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-2" onclick="jumpToQuestion('MOD-02', 2)">3</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-3" onclick="jumpToQuestion('MOD-02', 3)">4</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-4" onclick="jumpToQuestion('MOD-02', 4)">5</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-5" onclick="jumpToQuestion('MOD-02', 5)">6</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-6" onclick="jumpToQuestion('MOD-02', 6)">7</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-7" onclick="jumpToQuestion('MOD-02', 7)">8</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-8" onclick="jumpToQuestion('MOD-02', 8)">9</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-9" onclick="jumpToQuestion('MOD-02', 9)">10</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-10" onclick="jumpToQuestion('MOD-02', 10)">11</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-11" onclick="jumpToQuestion('MOD-02', 11)">12</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-12" onclick="jumpToQuestion('MOD-02', 12)">13</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-13" onclick="jumpToQuestion('MOD-02', 13)">14</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-14" onclick="jumpToQuestion('MOD-02', 14)">15</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-15" onclick="jumpToQuestion('MOD-02', 15)">16</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-16" onclick="jumpToQuestion('MOD-02', 16)">17</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-17" onclick="jumpToQuestion('MOD-02', 17)">18</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-18" onclick="jumpToQuestion('MOD-02', 18)">19</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-19" onclick="jumpToQuestion('MOD-02', 19)">20</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-20" onclick="jumpToQuestion('MOD-02', 20)">21</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-21" onclick="jumpToQuestion('MOD-02', 21)">22</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-22" onclick="jumpToQuestion('MOD-02', 22)">23</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-23" onclick="jumpToQuestion('MOD-02', 23)">24</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-24" onclick="jumpToQuestion('MOD-02', 24)">25</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-25" onclick="jumpToQuestion('MOD-02', 25)">26</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-26" onclick="jumpToQuestion('MOD-02', 26)">27</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-27" onclick="jumpToQuestion('MOD-02', 27)">28</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-28" onclick="jumpToQuestion('MOD-02', 28)">29</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-29" onclick="jumpToQuestion('MOD-02', 29)">30</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-30" onclick="jumpToQuestion('MOD-02', 30)">31</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-31" onclick="jumpToQuestion('MOD-02', 31)">32</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-32" onclick="jumpToQuestion('MOD-02', 32)">33</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-33" onclick="jumpToQuestion('MOD-02', 33)">34</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-34" onclick="jumpToQuestion('MOD-02', 34)">35</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-35" onclick="jumpToQuestion('MOD-02', 35)">36</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-36" onclick="jumpToQuestion('MOD-02', 36)">37</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-37" onclick="jumpToQuestion('MOD-02', 37)">38</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-38" onclick="jumpToQuestion('MOD-02', 38)">39</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-39" onclick="jumpToQuestion('MOD-02', 39)">40</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-40" onclick="jumpToQuestion('MOD-02', 40)">41</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-41" onclick="jumpToQuestion('MOD-02', 41)">42</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-42" onclick="jumpToQuestion('MOD-02', 42)">43</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-43" onclick="jumpToQuestion('MOD-02', 43)">44</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-44" onclick="jumpToQuestion('MOD-02', 44)">45</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-45" onclick="jumpToQuestion('MOD-02', 45)">46</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-46" onclick="jumpToQuestion('MOD-02', 46)">47</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-47" onclick="jumpToQuestion('MOD-02', 47)">48</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-48" onclick="jumpToQuestion('MOD-02', 48)">49</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-49" onclick="jumpToQuestion('MOD-02', 49)">50</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-50" onclick="jumpToQuestion('MOD-02', 50)">51</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-51" onclick="jumpToQuestion('MOD-02', 51)">52</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-52" onclick="jumpToQuestion('MOD-02', 52)">53</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-53" onclick="jumpToQuestion('MOD-02', 53)">54</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-54" onclick="jumpToQuestion('MOD-02', 54)">55</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-55" onclick="jumpToQuestion('MOD-02', 55)">56</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-56" onclick="jumpToQuestion('MOD-02', 56)">57</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-57" onclick="jumpToQuestion('MOD-02', 57)">58</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-58" onclick="jumpToQuestion('MOD-02', 58)">59</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-59" onclick="jumpToQuestion('MOD-02', 59)">60</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-60" onclick="jumpToQuestion('MOD-02', 60)">61</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-61" onclick="jumpToQuestion('MOD-02', 61)">62</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-62" onclick="jumpToQuestion('MOD-02', 62)">63</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-63" onclick="jumpToQuestion('MOD-02', 63)">64</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-64" onclick="jumpToQuestion('MOD-02', 64)">65</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-65" onclick="jumpToQuestion('MOD-02', 65)">66</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-66" onclick="jumpToQuestion('MOD-02', 66)">67</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-67" onclick="jumpToQuestion('MOD-02', 67)">68</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-68" onclick="jumpToQuestion('MOD-02', 68)">69</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-69" onclick="jumpToQuestion('MOD-02', 69)">70</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-70" onclick="jumpToQuestion('MOD-02', 70)">71</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-71" onclick="jumpToQuestion('MOD-02', 71)">72</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-72" onclick="jumpToQuestion('MOD-02', 72)">73</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-73" onclick="jumpToQuestion('MOD-02', 73)">74</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-74" onclick="jumpToQuestion('MOD-02', 74)">75</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-75" onclick="jumpToQuestion('MOD-02', 75)">76</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-76" onclick="jumpToQuestion('MOD-02', 76)">77</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-77" onclick="jumpToQuestion('MOD-02', 77)">78</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-78" onclick="jumpToQuestion('MOD-02', 78)">79</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-79" onclick="jumpToQuestion('MOD-02', 79)">80</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-80" onclick="jumpToQuestion('MOD-02', 80)">81</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-02-81" onclick="jumpToQuestion('MOD-02', 81)">82</button>
+  
+        </div>
+      </div>
     </section>
   
     <section class="module-section " id="m3" data-modcode="MOD-03" data-total="35">
@@ -11485,6 +11575,7 @@ remaining 20% of data is referred to as an</div>
         <h3 class="module-sub">Quyền riêng tư, Bảo vệ Dữ liệu & Luật pháp (GDPR, PIPEDA, CCPA, COPPA, FERPA, HIPAA) (35 câu hỏi)</h3>
       </div>
 
+      <!-- 1. Top: Theory Box -->
       <div class="card-soft theory-box">
         <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
         
@@ -11515,109 +11606,7 @@ remaining 20% of data is referred to as an</div>
   
       </div>
 
-      <!-- Question Navigation & Map Container - Matching play.html exact DOM -->
-      <div class="card-soft quiz-controls-bar" style="margin-bottom: 20px;">
-        <div class="map-head" style="margin-bottom: 8px;">
-          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (35 câu)</span>
-        </div>
-        <div class="map-legend" style="margin-bottom: 12px;">
-          <span><i class="dot current"></i> đang làm</span>
-          <span><i class="dot ok"></i> đúng</span>
-          <span><i class="dot bad"></i> sai</span>
-          <span><i class="dot unseen"></i> chưa</span>
-        </div>
-
-        <div class="q-map" id="palette-MOD-03" style="margin-bottom: 16px;">
-          
-    <button type="button" class="q-cell is-current" id="mapbtn-MOD-03-0" onclick="jumpToQuestion('MOD-03', 0)">1</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-1" onclick="jumpToQuestion('MOD-03', 1)">2</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-2" onclick="jumpToQuestion('MOD-03', 2)">3</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-3" onclick="jumpToQuestion('MOD-03', 3)">4</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-4" onclick="jumpToQuestion('MOD-03', 4)">5</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-5" onclick="jumpToQuestion('MOD-03', 5)">6</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-6" onclick="jumpToQuestion('MOD-03', 6)">7</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-7" onclick="jumpToQuestion('MOD-03', 7)">8</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-8" onclick="jumpToQuestion('MOD-03', 8)">9</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-9" onclick="jumpToQuestion('MOD-03', 9)">10</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-10" onclick="jumpToQuestion('MOD-03', 10)">11</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-11" onclick="jumpToQuestion('MOD-03', 11)">12</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-12" onclick="jumpToQuestion('MOD-03', 12)">13</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-13" onclick="jumpToQuestion('MOD-03', 13)">14</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-14" onclick="jumpToQuestion('MOD-03', 14)">15</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-15" onclick="jumpToQuestion('MOD-03', 15)">16</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-16" onclick="jumpToQuestion('MOD-03', 16)">17</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-17" onclick="jumpToQuestion('MOD-03', 17)">18</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-18" onclick="jumpToQuestion('MOD-03', 18)">19</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-19" onclick="jumpToQuestion('MOD-03', 19)">20</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-20" onclick="jumpToQuestion('MOD-03', 20)">21</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-21" onclick="jumpToQuestion('MOD-03', 21)">22</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-22" onclick="jumpToQuestion('MOD-03', 22)">23</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-23" onclick="jumpToQuestion('MOD-03', 23)">24</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-24" onclick="jumpToQuestion('MOD-03', 24)">25</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-25" onclick="jumpToQuestion('MOD-03', 25)">26</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-26" onclick="jumpToQuestion('MOD-03', 26)">27</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-27" onclick="jumpToQuestion('MOD-03', 27)">28</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-28" onclick="jumpToQuestion('MOD-03', 28)">29</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-29" onclick="jumpToQuestion('MOD-03', 29)">30</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-30" onclick="jumpToQuestion('MOD-03', 30)">31</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-31" onclick="jumpToQuestion('MOD-03', 31)">32</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-32" onclick="jumpToQuestion('MOD-03', 32)">33</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-33" onclick="jumpToQuestion('MOD-03', 33)">34</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-03-34" onclick="jumpToQuestion('MOD-03', 34)">35</button>
-  
-        </div>
-
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
-          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-03" onclick="navigateQuestion('MOD-03', -1)">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span class="nav-label">Câu trước</span>
-          </button>
-
-          <div class="nav-center">
-            <span class="q-counter-text" id="counter-MOD-03">Câu 1 / 35</span>
-          </div>
-
-          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-03" onclick="navigateQuestion('MOD-03', 1)">
-            <span class="nav-label">Câu tiếp</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </nav>
-      </div>
-
+      <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-03">
         
     <div class="card quiz-card active-card" id="qcard-MOD-03-0" data-idx="0" data-ans="A" data-search="identify the privacy risks associated with data collection, transmission, storage, and access in ambient intelligence systems. which risk is most prevalent due to constant data monitoring? rủi ro quyền riêng tư nào phổ biến nhất do việc giám sát dữ liệu liên tục trong các hệ thống trí tuệ môi trường (ambient intelligence)? • ambient intelligence privacy: thu thập dữ liệu liên tục từ cảm biến môi trường làm gia tăng nguy cơ truy cập và rò rỉ dữ liệu trái phép.">
@@ -13616,6 +13605,109 @@ remaining 20% of data is referred to as an</div>
     </div>
   
       </div>
+
+      <!-- 3. Bottom: Navigation Bar & Map Grid Palette (Moved Down Below Question Card) -->
+      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px;">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi" style="margin-bottom: 16px;">
+          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-03" onclick="navigateQuestion('MOD-03', -1)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Câu trước</span>
+          </button>
+
+          <div class="nav-center">
+            <span class="q-counter-text" id="counter-MOD-03">Câu 1 / 35</span>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-03" onclick="navigateQuestion('MOD-03', 1)">
+            <span class="nav-label">Câu tiếp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+
+        <div class="map-head" style="margin-bottom: 8px;">
+          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (35 câu)</span>
+        </div>
+        <div class="map-legend" style="margin-bottom: 12px;">
+          <span><i class="dot current"></i> đang làm</span>
+          <span><i class="dot ok"></i> đúng</span>
+          <span><i class="dot bad"></i> sai</span>
+          <span><i class="dot unseen"></i> chưa</span>
+        </div>
+
+        <div class="q-map" id="palette-MOD-03">
+          
+    <button type="button" class="q-cell is-current" id="mapbtn-MOD-03-0" onclick="jumpToQuestion('MOD-03', 0)">1</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-1" onclick="jumpToQuestion('MOD-03', 1)">2</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-2" onclick="jumpToQuestion('MOD-03', 2)">3</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-3" onclick="jumpToQuestion('MOD-03', 3)">4</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-4" onclick="jumpToQuestion('MOD-03', 4)">5</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-5" onclick="jumpToQuestion('MOD-03', 5)">6</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-6" onclick="jumpToQuestion('MOD-03', 6)">7</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-7" onclick="jumpToQuestion('MOD-03', 7)">8</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-8" onclick="jumpToQuestion('MOD-03', 8)">9</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-9" onclick="jumpToQuestion('MOD-03', 9)">10</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-10" onclick="jumpToQuestion('MOD-03', 10)">11</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-11" onclick="jumpToQuestion('MOD-03', 11)">12</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-12" onclick="jumpToQuestion('MOD-03', 12)">13</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-13" onclick="jumpToQuestion('MOD-03', 13)">14</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-14" onclick="jumpToQuestion('MOD-03', 14)">15</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-15" onclick="jumpToQuestion('MOD-03', 15)">16</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-16" onclick="jumpToQuestion('MOD-03', 16)">17</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-17" onclick="jumpToQuestion('MOD-03', 17)">18</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-18" onclick="jumpToQuestion('MOD-03', 18)">19</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-19" onclick="jumpToQuestion('MOD-03', 19)">20</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-20" onclick="jumpToQuestion('MOD-03', 20)">21</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-21" onclick="jumpToQuestion('MOD-03', 21)">22</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-22" onclick="jumpToQuestion('MOD-03', 22)">23</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-23" onclick="jumpToQuestion('MOD-03', 23)">24</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-24" onclick="jumpToQuestion('MOD-03', 24)">25</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-25" onclick="jumpToQuestion('MOD-03', 25)">26</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-26" onclick="jumpToQuestion('MOD-03', 26)">27</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-27" onclick="jumpToQuestion('MOD-03', 27)">28</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-28" onclick="jumpToQuestion('MOD-03', 28)">29</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-29" onclick="jumpToQuestion('MOD-03', 29)">30</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-30" onclick="jumpToQuestion('MOD-03', 30)">31</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-31" onclick="jumpToQuestion('MOD-03', 31)">32</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-32" onclick="jumpToQuestion('MOD-03', 32)">33</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-33" onclick="jumpToQuestion('MOD-03', 33)">34</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-03-34" onclick="jumpToQuestion('MOD-03', 34)">35</button>
+  
+        </div>
+      </div>
     </section>
   
     <section class="module-section " id="m4" data-modcode="MOD-04" data-total="29">
@@ -13625,6 +13717,7 @@ remaining 20% of data is referred to as an</div>
         <h3 class="module-sub">An toàn Bảo mật, Mô hình hóa Mối đe dọa (STRIDE, VAST) & Mã độc (29 câu hỏi)</h3>
       </div>
 
+      <!-- 1. Top: Theory Box -->
       <div class="card-soft theory-box">
         <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
         
@@ -13655,97 +13748,7 @@ remaining 20% of data is referred to as an</div>
   
       </div>
 
-      <!-- Question Navigation & Map Container - Matching play.html exact DOM -->
-      <div class="card-soft quiz-controls-bar" style="margin-bottom: 20px;">
-        <div class="map-head" style="margin-bottom: 8px;">
-          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (29 câu)</span>
-        </div>
-        <div class="map-legend" style="margin-bottom: 12px;">
-          <span><i class="dot current"></i> đang làm</span>
-          <span><i class="dot ok"></i> đúng</span>
-          <span><i class="dot bad"></i> sai</span>
-          <span><i class="dot unseen"></i> chưa</span>
-        </div>
-
-        <div class="q-map" id="palette-MOD-04" style="margin-bottom: 16px;">
-          
-    <button type="button" class="q-cell is-current" id="mapbtn-MOD-04-0" onclick="jumpToQuestion('MOD-04', 0)">1</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-1" onclick="jumpToQuestion('MOD-04', 1)">2</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-2" onclick="jumpToQuestion('MOD-04', 2)">3</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-3" onclick="jumpToQuestion('MOD-04', 3)">4</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-4" onclick="jumpToQuestion('MOD-04', 4)">5</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-5" onclick="jumpToQuestion('MOD-04', 5)">6</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-6" onclick="jumpToQuestion('MOD-04', 6)">7</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-7" onclick="jumpToQuestion('MOD-04', 7)">8</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-8" onclick="jumpToQuestion('MOD-04', 8)">9</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-9" onclick="jumpToQuestion('MOD-04', 9)">10</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-10" onclick="jumpToQuestion('MOD-04', 10)">11</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-11" onclick="jumpToQuestion('MOD-04', 11)">12</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-12" onclick="jumpToQuestion('MOD-04', 12)">13</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-13" onclick="jumpToQuestion('MOD-04', 13)">14</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-14" onclick="jumpToQuestion('MOD-04', 14)">15</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-15" onclick="jumpToQuestion('MOD-04', 15)">16</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-16" onclick="jumpToQuestion('MOD-04', 16)">17</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-17" onclick="jumpToQuestion('MOD-04', 17)">18</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-18" onclick="jumpToQuestion('MOD-04', 18)">19</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-19" onclick="jumpToQuestion('MOD-04', 19)">20</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-20" onclick="jumpToQuestion('MOD-04', 20)">21</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-21" onclick="jumpToQuestion('MOD-04', 21)">22</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-22" onclick="jumpToQuestion('MOD-04', 22)">23</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-23" onclick="jumpToQuestion('MOD-04', 23)">24</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-24" onclick="jumpToQuestion('MOD-04', 24)">25</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-25" onclick="jumpToQuestion('MOD-04', 25)">26</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-26" onclick="jumpToQuestion('MOD-04', 26)">27</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-27" onclick="jumpToQuestion('MOD-04', 27)">28</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-04-28" onclick="jumpToQuestion('MOD-04', 28)">29</button>
-  
-        </div>
-
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
-          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-04" onclick="navigateQuestion('MOD-04', -1)">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span class="nav-label">Câu trước</span>
-          </button>
-
-          <div class="nav-center">
-            <span class="q-counter-text" id="counter-MOD-04">Câu 1 / 29</span>
-          </div>
-
-          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-04" onclick="navigateQuestion('MOD-04', 1)">
-            <span class="nav-label">Câu tiếp</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </nav>
-      </div>
-
+      <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-04">
         
     <div class="card quiz-card active-card" id="qcard-MOD-04-0" data-idx="0" data-ans="D" data-search="in which of the following could stride or vast classifications be applied? mô hình phân loại stride hoặc vast có thể được áp dụng trong lĩnh vực nào sau đây? • stride (spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege) và vast (visual, agile, and threat modeling) là hai mô hình/khung phân loại mối đe dọa phổ biến nhất trong threat modeling.">
@@ -15386,6 +15389,97 @@ remaining 20% of data is referred to as an</div>
     </div>
   
       </div>
+
+      <!-- 3. Bottom: Navigation Bar & Map Grid Palette (Moved Down Below Question Card) -->
+      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px;">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi" style="margin-bottom: 16px;">
+          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-04" onclick="navigateQuestion('MOD-04', -1)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Câu trước</span>
+          </button>
+
+          <div class="nav-center">
+            <span class="q-counter-text" id="counter-MOD-04">Câu 1 / 29</span>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-04" onclick="navigateQuestion('MOD-04', 1)">
+            <span class="nav-label">Câu tiếp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+
+        <div class="map-head" style="margin-bottom: 8px;">
+          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (29 câu)</span>
+        </div>
+        <div class="map-legend" style="margin-bottom: 12px;">
+          <span><i class="dot current"></i> đang làm</span>
+          <span><i class="dot ok"></i> đúng</span>
+          <span><i class="dot bad"></i> sai</span>
+          <span><i class="dot unseen"></i> chưa</span>
+        </div>
+
+        <div class="q-map" id="palette-MOD-04">
+          
+    <button type="button" class="q-cell is-current" id="mapbtn-MOD-04-0" onclick="jumpToQuestion('MOD-04', 0)">1</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-1" onclick="jumpToQuestion('MOD-04', 1)">2</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-2" onclick="jumpToQuestion('MOD-04', 2)">3</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-3" onclick="jumpToQuestion('MOD-04', 3)">4</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-4" onclick="jumpToQuestion('MOD-04', 4)">5</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-5" onclick="jumpToQuestion('MOD-04', 5)">6</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-6" onclick="jumpToQuestion('MOD-04', 6)">7</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-7" onclick="jumpToQuestion('MOD-04', 7)">8</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-8" onclick="jumpToQuestion('MOD-04', 8)">9</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-9" onclick="jumpToQuestion('MOD-04', 9)">10</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-10" onclick="jumpToQuestion('MOD-04', 10)">11</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-11" onclick="jumpToQuestion('MOD-04', 11)">12</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-12" onclick="jumpToQuestion('MOD-04', 12)">13</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-13" onclick="jumpToQuestion('MOD-04', 13)">14</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-14" onclick="jumpToQuestion('MOD-04', 14)">15</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-15" onclick="jumpToQuestion('MOD-04', 15)">16</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-16" onclick="jumpToQuestion('MOD-04', 16)">17</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-17" onclick="jumpToQuestion('MOD-04', 17)">18</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-18" onclick="jumpToQuestion('MOD-04', 18)">19</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-19" onclick="jumpToQuestion('MOD-04', 19)">20</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-20" onclick="jumpToQuestion('MOD-04', 20)">21</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-21" onclick="jumpToQuestion('MOD-04', 21)">22</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-22" onclick="jumpToQuestion('MOD-04', 22)">23</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-23" onclick="jumpToQuestion('MOD-04', 23)">24</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-24" onclick="jumpToQuestion('MOD-04', 24)">25</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-25" onclick="jumpToQuestion('MOD-04', 25)">26</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-26" onclick="jumpToQuestion('MOD-04', 26)">27</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-27" onclick="jumpToQuestion('MOD-04', 27)">28</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-04-28" onclick="jumpToQuestion('MOD-04', 28)">29</button>
+  
+        </div>
+      </div>
     </section>
   
     <section class="module-section " id="m5" data-modcode="MOD-05" data-total="4">
@@ -15395,6 +15489,7 @@ remaining 20% of data is referred to as an</div>
         <h3 class="module-sub">Sở hữu Trí tuệ, Bản quyền, Bằng sáng chế & Bí mật Thương mại (4 câu hỏi)</h3>
       </div>
 
+      <!-- 1. Top: Theory Box -->
       <div class="card-soft theory-box">
         <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
         
@@ -15410,47 +15505,7 @@ remaining 20% of data is referred to as an</div>
   
       </div>
 
-      <!-- Question Navigation & Map Container - Matching play.html exact DOM -->
-      <div class="card-soft quiz-controls-bar" style="margin-bottom: 20px;">
-        <div class="map-head" style="margin-bottom: 8px;">
-          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (4 câu)</span>
-        </div>
-        <div class="map-legend" style="margin-bottom: 12px;">
-          <span><i class="dot current"></i> đang làm</span>
-          <span><i class="dot ok"></i> đúng</span>
-          <span><i class="dot bad"></i> sai</span>
-          <span><i class="dot unseen"></i> chưa</span>
-        </div>
-
-        <div class="q-map" id="palette-MOD-05" style="margin-bottom: 16px;">
-          
-    <button type="button" class="q-cell is-current" id="mapbtn-MOD-05-0" onclick="jumpToQuestion('MOD-05', 0)">1</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-05-1" onclick="jumpToQuestion('MOD-05', 1)">2</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-05-2" onclick="jumpToQuestion('MOD-05', 2)">3</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-05-3" onclick="jumpToQuestion('MOD-05', 3)">4</button>
-  
-        </div>
-
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
-          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-05" onclick="navigateQuestion('MOD-05', -1)">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span class="nav-label">Câu trước</span>
-          </button>
-
-          <div class="nav-center">
-            <span class="q-counter-text" id="counter-MOD-05">Câu 1 / 4</span>
-          </div>
-
-          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-05" onclick="navigateQuestion('MOD-05', 1)">
-            <span class="nav-label">Câu tiếp</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </nav>
-      </div>
-
+      <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-05">
         
     <div class="card quiz-card active-card" id="qcard-MOD-05-0" data-idx="0" data-ans="D" data-search="which of the following is a misuse of intellectual property (ip) when it comes to ethical accountability for an organization? hành vi nào sau đây là sự sử dụng sai trái sở hữu trí tuệ (ip) về mặt trách nhiệm giải trình đạo đức của tổ chức? • ip misuse & transparency: lấy lý do &quot;bảo mật bí mật kinh doanh/ip&quot; để từ chối giải trình và che giấu sai sót thuật toán là hành vi vi phạm đạo đức.">
@@ -15682,6 +15737,47 @@ remaining 20% of data is referred to as an</div>
     </div>
   
       </div>
+
+      <!-- 3. Bottom: Navigation Bar & Map Grid Palette (Moved Down Below Question Card) -->
+      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px;">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi" style="margin-bottom: 16px;">
+          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-05" onclick="navigateQuestion('MOD-05', -1)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Câu trước</span>
+          </button>
+
+          <div class="nav-center">
+            <span class="q-counter-text" id="counter-MOD-05">Câu 1 / 4</span>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-05" onclick="navigateQuestion('MOD-05', 1)">
+            <span class="nav-label">Câu tiếp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+
+        <div class="map-head" style="margin-bottom: 8px;">
+          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (4 câu)</span>
+        </div>
+        <div class="map-legend" style="margin-bottom: 12px;">
+          <span><i class="dot current"></i> đang làm</span>
+          <span><i class="dot ok"></i> đúng</span>
+          <span><i class="dot bad"></i> sai</span>
+          <span><i class="dot unseen"></i> chưa</span>
+        </div>
+
+        <div class="q-map" id="palette-MOD-05">
+          
+    <button type="button" class="q-cell is-current" id="mapbtn-MOD-05-0" onclick="jumpToQuestion('MOD-05', 0)">1</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-05-1" onclick="jumpToQuestion('MOD-05', 1)">2</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-05-2" onclick="jumpToQuestion('MOD-05', 2)">3</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-05-3" onclick="jumpToQuestion('MOD-05', 3)">4</button>
+  
+        </div>
+      </div>
     </section>
   
     <section class="module-section " id="m6" data-modcode="MOD-06" data-total="66">
@@ -15691,6 +15787,7 @@ remaining 20% of data is referred to as an</div>
         <h3 class="module-sub">Quản lý Rủi ro, Trách nhiệm Giải trình & Quản trị Tổ chức (66 câu hỏi)</h3>
       </div>
 
+      <!-- 1. Top: Theory Box -->
       <div class="card-soft theory-box">
         <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
         
@@ -15711,171 +15808,7 @@ remaining 20% of data is referred to as an</div>
   
       </div>
 
-      <!-- Question Navigation & Map Container - Matching play.html exact DOM -->
-      <div class="card-soft quiz-controls-bar" style="margin-bottom: 20px;">
-        <div class="map-head" style="margin-bottom: 8px;">
-          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (66 câu)</span>
-        </div>
-        <div class="map-legend" style="margin-bottom: 12px;">
-          <span><i class="dot current"></i> đang làm</span>
-          <span><i class="dot ok"></i> đúng</span>
-          <span><i class="dot bad"></i> sai</span>
-          <span><i class="dot unseen"></i> chưa</span>
-        </div>
-
-        <div class="q-map" id="palette-MOD-06" style="margin-bottom: 16px;">
-          
-    <button type="button" class="q-cell is-current" id="mapbtn-MOD-06-0" onclick="jumpToQuestion('MOD-06', 0)">1</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-1" onclick="jumpToQuestion('MOD-06', 1)">2</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-2" onclick="jumpToQuestion('MOD-06', 2)">3</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-3" onclick="jumpToQuestion('MOD-06', 3)">4</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-4" onclick="jumpToQuestion('MOD-06', 4)">5</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-5" onclick="jumpToQuestion('MOD-06', 5)">6</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-6" onclick="jumpToQuestion('MOD-06', 6)">7</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-7" onclick="jumpToQuestion('MOD-06', 7)">8</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-8" onclick="jumpToQuestion('MOD-06', 8)">9</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-9" onclick="jumpToQuestion('MOD-06', 9)">10</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-10" onclick="jumpToQuestion('MOD-06', 10)">11</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-11" onclick="jumpToQuestion('MOD-06', 11)">12</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-12" onclick="jumpToQuestion('MOD-06', 12)">13</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-13" onclick="jumpToQuestion('MOD-06', 13)">14</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-14" onclick="jumpToQuestion('MOD-06', 14)">15</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-15" onclick="jumpToQuestion('MOD-06', 15)">16</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-16" onclick="jumpToQuestion('MOD-06', 16)">17</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-17" onclick="jumpToQuestion('MOD-06', 17)">18</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-18" onclick="jumpToQuestion('MOD-06', 18)">19</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-19" onclick="jumpToQuestion('MOD-06', 19)">20</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-20" onclick="jumpToQuestion('MOD-06', 20)">21</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-21" onclick="jumpToQuestion('MOD-06', 21)">22</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-22" onclick="jumpToQuestion('MOD-06', 22)">23</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-23" onclick="jumpToQuestion('MOD-06', 23)">24</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-24" onclick="jumpToQuestion('MOD-06', 24)">25</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-25" onclick="jumpToQuestion('MOD-06', 25)">26</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-26" onclick="jumpToQuestion('MOD-06', 26)">27</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-27" onclick="jumpToQuestion('MOD-06', 27)">28</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-28" onclick="jumpToQuestion('MOD-06', 28)">29</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-29" onclick="jumpToQuestion('MOD-06', 29)">30</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-30" onclick="jumpToQuestion('MOD-06', 30)">31</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-31" onclick="jumpToQuestion('MOD-06', 31)">32</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-32" onclick="jumpToQuestion('MOD-06', 32)">33</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-33" onclick="jumpToQuestion('MOD-06', 33)">34</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-34" onclick="jumpToQuestion('MOD-06', 34)">35</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-35" onclick="jumpToQuestion('MOD-06', 35)">36</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-36" onclick="jumpToQuestion('MOD-06', 36)">37</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-37" onclick="jumpToQuestion('MOD-06', 37)">38</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-38" onclick="jumpToQuestion('MOD-06', 38)">39</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-39" onclick="jumpToQuestion('MOD-06', 39)">40</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-40" onclick="jumpToQuestion('MOD-06', 40)">41</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-41" onclick="jumpToQuestion('MOD-06', 41)">42</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-42" onclick="jumpToQuestion('MOD-06', 42)">43</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-43" onclick="jumpToQuestion('MOD-06', 43)">44</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-44" onclick="jumpToQuestion('MOD-06', 44)">45</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-45" onclick="jumpToQuestion('MOD-06', 45)">46</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-46" onclick="jumpToQuestion('MOD-06', 46)">47</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-47" onclick="jumpToQuestion('MOD-06', 47)">48</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-48" onclick="jumpToQuestion('MOD-06', 48)">49</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-49" onclick="jumpToQuestion('MOD-06', 49)">50</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-50" onclick="jumpToQuestion('MOD-06', 50)">51</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-51" onclick="jumpToQuestion('MOD-06', 51)">52</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-52" onclick="jumpToQuestion('MOD-06', 52)">53</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-53" onclick="jumpToQuestion('MOD-06', 53)">54</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-54" onclick="jumpToQuestion('MOD-06', 54)">55</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-55" onclick="jumpToQuestion('MOD-06', 55)">56</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-56" onclick="jumpToQuestion('MOD-06', 56)">57</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-57" onclick="jumpToQuestion('MOD-06', 57)">58</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-58" onclick="jumpToQuestion('MOD-06', 58)">59</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-59" onclick="jumpToQuestion('MOD-06', 59)">60</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-60" onclick="jumpToQuestion('MOD-06', 60)">61</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-61" onclick="jumpToQuestion('MOD-06', 61)">62</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-62" onclick="jumpToQuestion('MOD-06', 62)">63</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-63" onclick="jumpToQuestion('MOD-06', 63)">64</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-64" onclick="jumpToQuestion('MOD-06', 64)">65</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-06-65" onclick="jumpToQuestion('MOD-06', 65)">66</button>
-  
-        </div>
-
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
-          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-06" onclick="navigateQuestion('MOD-06', -1)">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span class="nav-label">Câu trước</span>
-          </button>
-
-          <div class="nav-center">
-            <span class="q-counter-text" id="counter-MOD-06">Câu 1 / 66</span>
-          </div>
-
-          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-06" onclick="navigateQuestion('MOD-06', 1)">
-            <span class="nav-label">Câu tiếp</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </nav>
-      </div>
-
+      <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-06">
         
     <div class="card quiz-card active-card" id="qcard-MOD-06-0" data-idx="0" data-ans="B" data-search="which element is essential for system accountability? yếu tố nào là thiết yếu đối với tính trách nhiệm giải trình (accountability) của hệ thống? • system accountability (trách nhiệm giải trình hệ thống): yêu cầu xác định rõ cá nhân hoặc tổ chức chịu trách nhiệm cho hành vi, quyết định và hậu quả do hệ thống gây ra.">
@@ -19625,6 +19558,171 @@ remaining 20% of data is referred to as an</div>
     </div>
   
       </div>
+
+      <!-- 3. Bottom: Navigation Bar & Map Grid Palette (Moved Down Below Question Card) -->
+      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px;">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi" style="margin-bottom: 16px;">
+          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-06" onclick="navigateQuestion('MOD-06', -1)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Câu trước</span>
+          </button>
+
+          <div class="nav-center">
+            <span class="q-counter-text" id="counter-MOD-06">Câu 1 / 66</span>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-06" onclick="navigateQuestion('MOD-06', 1)">
+            <span class="nav-label">Câu tiếp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+
+        <div class="map-head" style="margin-bottom: 8px;">
+          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (66 câu)</span>
+        </div>
+        <div class="map-legend" style="margin-bottom: 12px;">
+          <span><i class="dot current"></i> đang làm</span>
+          <span><i class="dot ok"></i> đúng</span>
+          <span><i class="dot bad"></i> sai</span>
+          <span><i class="dot unseen"></i> chưa</span>
+        </div>
+
+        <div class="q-map" id="palette-MOD-06">
+          
+    <button type="button" class="q-cell is-current" id="mapbtn-MOD-06-0" onclick="jumpToQuestion('MOD-06', 0)">1</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-1" onclick="jumpToQuestion('MOD-06', 1)">2</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-2" onclick="jumpToQuestion('MOD-06', 2)">3</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-3" onclick="jumpToQuestion('MOD-06', 3)">4</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-4" onclick="jumpToQuestion('MOD-06', 4)">5</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-5" onclick="jumpToQuestion('MOD-06', 5)">6</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-6" onclick="jumpToQuestion('MOD-06', 6)">7</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-7" onclick="jumpToQuestion('MOD-06', 7)">8</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-8" onclick="jumpToQuestion('MOD-06', 8)">9</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-9" onclick="jumpToQuestion('MOD-06', 9)">10</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-10" onclick="jumpToQuestion('MOD-06', 10)">11</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-11" onclick="jumpToQuestion('MOD-06', 11)">12</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-12" onclick="jumpToQuestion('MOD-06', 12)">13</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-13" onclick="jumpToQuestion('MOD-06', 13)">14</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-14" onclick="jumpToQuestion('MOD-06', 14)">15</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-15" onclick="jumpToQuestion('MOD-06', 15)">16</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-16" onclick="jumpToQuestion('MOD-06', 16)">17</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-17" onclick="jumpToQuestion('MOD-06', 17)">18</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-18" onclick="jumpToQuestion('MOD-06', 18)">19</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-19" onclick="jumpToQuestion('MOD-06', 19)">20</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-20" onclick="jumpToQuestion('MOD-06', 20)">21</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-21" onclick="jumpToQuestion('MOD-06', 21)">22</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-22" onclick="jumpToQuestion('MOD-06', 22)">23</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-23" onclick="jumpToQuestion('MOD-06', 23)">24</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-24" onclick="jumpToQuestion('MOD-06', 24)">25</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-25" onclick="jumpToQuestion('MOD-06', 25)">26</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-26" onclick="jumpToQuestion('MOD-06', 26)">27</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-27" onclick="jumpToQuestion('MOD-06', 27)">28</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-28" onclick="jumpToQuestion('MOD-06', 28)">29</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-29" onclick="jumpToQuestion('MOD-06', 29)">30</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-30" onclick="jumpToQuestion('MOD-06', 30)">31</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-31" onclick="jumpToQuestion('MOD-06', 31)">32</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-32" onclick="jumpToQuestion('MOD-06', 32)">33</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-33" onclick="jumpToQuestion('MOD-06', 33)">34</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-34" onclick="jumpToQuestion('MOD-06', 34)">35</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-35" onclick="jumpToQuestion('MOD-06', 35)">36</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-36" onclick="jumpToQuestion('MOD-06', 36)">37</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-37" onclick="jumpToQuestion('MOD-06', 37)">38</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-38" onclick="jumpToQuestion('MOD-06', 38)">39</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-39" onclick="jumpToQuestion('MOD-06', 39)">40</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-40" onclick="jumpToQuestion('MOD-06', 40)">41</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-41" onclick="jumpToQuestion('MOD-06', 41)">42</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-42" onclick="jumpToQuestion('MOD-06', 42)">43</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-43" onclick="jumpToQuestion('MOD-06', 43)">44</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-44" onclick="jumpToQuestion('MOD-06', 44)">45</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-45" onclick="jumpToQuestion('MOD-06', 45)">46</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-46" onclick="jumpToQuestion('MOD-06', 46)">47</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-47" onclick="jumpToQuestion('MOD-06', 47)">48</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-48" onclick="jumpToQuestion('MOD-06', 48)">49</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-49" onclick="jumpToQuestion('MOD-06', 49)">50</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-50" onclick="jumpToQuestion('MOD-06', 50)">51</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-51" onclick="jumpToQuestion('MOD-06', 51)">52</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-52" onclick="jumpToQuestion('MOD-06', 52)">53</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-53" onclick="jumpToQuestion('MOD-06', 53)">54</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-54" onclick="jumpToQuestion('MOD-06', 54)">55</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-55" onclick="jumpToQuestion('MOD-06', 55)">56</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-56" onclick="jumpToQuestion('MOD-06', 56)">57</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-57" onclick="jumpToQuestion('MOD-06', 57)">58</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-58" onclick="jumpToQuestion('MOD-06', 58)">59</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-59" onclick="jumpToQuestion('MOD-06', 59)">60</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-60" onclick="jumpToQuestion('MOD-06', 60)">61</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-61" onclick="jumpToQuestion('MOD-06', 61)">62</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-62" onclick="jumpToQuestion('MOD-06', 62)">63</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-63" onclick="jumpToQuestion('MOD-06', 63)">64</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-64" onclick="jumpToQuestion('MOD-06', 64)">65</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-06-65" onclick="jumpToQuestion('MOD-06', 65)">66</button>
+  
+        </div>
+      </div>
     </section>
   
     <section class="module-section " id="m7" data-modcode="MOD-07" data-total="38">
@@ -19634,6 +19732,7 @@ remaining 20% of data is referred to as an</div>
         <h3 class="module-sub">Truyền thông Khủng hoảng, Quản lý Truyền thông & Niềm tin Công chúng (38 câu hỏi)</h3>
       </div>
 
+      <!-- 1. Top: Theory Box -->
       <div class="card-soft theory-box">
         <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
         
@@ -19649,115 +19748,7 @@ remaining 20% of data is referred to as an</div>
   
       </div>
 
-      <!-- Question Navigation & Map Container - Matching play.html exact DOM -->
-      <div class="card-soft quiz-controls-bar" style="margin-bottom: 20px;">
-        <div class="map-head" style="margin-bottom: 8px;">
-          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (38 câu)</span>
-        </div>
-        <div class="map-legend" style="margin-bottom: 12px;">
-          <span><i class="dot current"></i> đang làm</span>
-          <span><i class="dot ok"></i> đúng</span>
-          <span><i class="dot bad"></i> sai</span>
-          <span><i class="dot unseen"></i> chưa</span>
-        </div>
-
-        <div class="q-map" id="palette-MOD-07" style="margin-bottom: 16px;">
-          
-    <button type="button" class="q-cell is-current" id="mapbtn-MOD-07-0" onclick="jumpToQuestion('MOD-07', 0)">1</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-1" onclick="jumpToQuestion('MOD-07', 1)">2</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-2" onclick="jumpToQuestion('MOD-07', 2)">3</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-3" onclick="jumpToQuestion('MOD-07', 3)">4</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-4" onclick="jumpToQuestion('MOD-07', 4)">5</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-5" onclick="jumpToQuestion('MOD-07', 5)">6</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-6" onclick="jumpToQuestion('MOD-07', 6)">7</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-7" onclick="jumpToQuestion('MOD-07', 7)">8</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-8" onclick="jumpToQuestion('MOD-07', 8)">9</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-9" onclick="jumpToQuestion('MOD-07', 9)">10</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-10" onclick="jumpToQuestion('MOD-07', 10)">11</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-11" onclick="jumpToQuestion('MOD-07', 11)">12</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-12" onclick="jumpToQuestion('MOD-07', 12)">13</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-13" onclick="jumpToQuestion('MOD-07', 13)">14</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-14" onclick="jumpToQuestion('MOD-07', 14)">15</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-15" onclick="jumpToQuestion('MOD-07', 15)">16</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-16" onclick="jumpToQuestion('MOD-07', 16)">17</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-17" onclick="jumpToQuestion('MOD-07', 17)">18</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-18" onclick="jumpToQuestion('MOD-07', 18)">19</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-19" onclick="jumpToQuestion('MOD-07', 19)">20</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-20" onclick="jumpToQuestion('MOD-07', 20)">21</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-21" onclick="jumpToQuestion('MOD-07', 21)">22</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-22" onclick="jumpToQuestion('MOD-07', 22)">23</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-23" onclick="jumpToQuestion('MOD-07', 23)">24</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-24" onclick="jumpToQuestion('MOD-07', 24)">25</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-25" onclick="jumpToQuestion('MOD-07', 25)">26</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-26" onclick="jumpToQuestion('MOD-07', 26)">27</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-27" onclick="jumpToQuestion('MOD-07', 27)">28</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-28" onclick="jumpToQuestion('MOD-07', 28)">29</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-29" onclick="jumpToQuestion('MOD-07', 29)">30</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-30" onclick="jumpToQuestion('MOD-07', 30)">31</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-31" onclick="jumpToQuestion('MOD-07', 31)">32</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-32" onclick="jumpToQuestion('MOD-07', 32)">33</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-33" onclick="jumpToQuestion('MOD-07', 33)">34</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-34" onclick="jumpToQuestion('MOD-07', 34)">35</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-35" onclick="jumpToQuestion('MOD-07', 35)">36</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-36" onclick="jumpToQuestion('MOD-07', 36)">37</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-07-37" onclick="jumpToQuestion('MOD-07', 37)">38</button>
-  
-        </div>
-
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
-          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-07" onclick="navigateQuestion('MOD-07', -1)">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span class="nav-label">Câu trước</span>
-          </button>
-
-          <div class="nav-center">
-            <span class="q-counter-text" id="counter-MOD-07">Câu 1 / 38</span>
-          </div>
-
-          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-07" onclick="navigateQuestion('MOD-07', 1)">
-            <span class="nav-label">Câu tiếp</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </nav>
-      </div>
-
+      <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-07">
         
     <div class="card quiz-card active-card" id="qcard-MOD-07-0" data-idx="0" data-ans="B, D" data-search="which of the following are tools of an effective media communication plan? (select two.) những công cụ nào sau đây thuộc về một kế hoạch truyền thông báo chí hiệu quả? (chọn hai) • media communication tools: các phương tiện truyền tải thông tin chính thức tới báo chí và truyền thông trong các chiến dịch hoặc khủng hoảng.">
@@ -21930,6 +21921,115 @@ What kind of data is that?</div>
     </div>
   
       </div>
+
+      <!-- 3. Bottom: Navigation Bar & Map Grid Palette (Moved Down Below Question Card) -->
+      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px;">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi" style="margin-bottom: 16px;">
+          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-07" onclick="navigateQuestion('MOD-07', -1)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Câu trước</span>
+          </button>
+
+          <div class="nav-center">
+            <span class="q-counter-text" id="counter-MOD-07">Câu 1 / 38</span>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-07" onclick="navigateQuestion('MOD-07', 1)">
+            <span class="nav-label">Câu tiếp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+
+        <div class="map-head" style="margin-bottom: 8px;">
+          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (38 câu)</span>
+        </div>
+        <div class="map-legend" style="margin-bottom: 12px;">
+          <span><i class="dot current"></i> đang làm</span>
+          <span><i class="dot ok"></i> đúng</span>
+          <span><i class="dot bad"></i> sai</span>
+          <span><i class="dot unseen"></i> chưa</span>
+        </div>
+
+        <div class="q-map" id="palette-MOD-07">
+          
+    <button type="button" class="q-cell is-current" id="mapbtn-MOD-07-0" onclick="jumpToQuestion('MOD-07', 0)">1</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-1" onclick="jumpToQuestion('MOD-07', 1)">2</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-2" onclick="jumpToQuestion('MOD-07', 2)">3</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-3" onclick="jumpToQuestion('MOD-07', 3)">4</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-4" onclick="jumpToQuestion('MOD-07', 4)">5</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-5" onclick="jumpToQuestion('MOD-07', 5)">6</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-6" onclick="jumpToQuestion('MOD-07', 6)">7</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-7" onclick="jumpToQuestion('MOD-07', 7)">8</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-8" onclick="jumpToQuestion('MOD-07', 8)">9</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-9" onclick="jumpToQuestion('MOD-07', 9)">10</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-10" onclick="jumpToQuestion('MOD-07', 10)">11</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-11" onclick="jumpToQuestion('MOD-07', 11)">12</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-12" onclick="jumpToQuestion('MOD-07', 12)">13</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-13" onclick="jumpToQuestion('MOD-07', 13)">14</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-14" onclick="jumpToQuestion('MOD-07', 14)">15</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-15" onclick="jumpToQuestion('MOD-07', 15)">16</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-16" onclick="jumpToQuestion('MOD-07', 16)">17</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-17" onclick="jumpToQuestion('MOD-07', 17)">18</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-18" onclick="jumpToQuestion('MOD-07', 18)">19</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-19" onclick="jumpToQuestion('MOD-07', 19)">20</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-20" onclick="jumpToQuestion('MOD-07', 20)">21</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-21" onclick="jumpToQuestion('MOD-07', 21)">22</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-22" onclick="jumpToQuestion('MOD-07', 22)">23</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-23" onclick="jumpToQuestion('MOD-07', 23)">24</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-24" onclick="jumpToQuestion('MOD-07', 24)">25</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-25" onclick="jumpToQuestion('MOD-07', 25)">26</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-26" onclick="jumpToQuestion('MOD-07', 26)">27</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-27" onclick="jumpToQuestion('MOD-07', 27)">28</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-28" onclick="jumpToQuestion('MOD-07', 28)">29</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-29" onclick="jumpToQuestion('MOD-07', 29)">30</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-30" onclick="jumpToQuestion('MOD-07', 30)">31</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-31" onclick="jumpToQuestion('MOD-07', 31)">32</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-32" onclick="jumpToQuestion('MOD-07', 32)">33</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-33" onclick="jumpToQuestion('MOD-07', 33)">34</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-34" onclick="jumpToQuestion('MOD-07', 34)">35</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-35" onclick="jumpToQuestion('MOD-07', 35)">36</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-36" onclick="jumpToQuestion('MOD-07', 36)">37</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-07-37" onclick="jumpToQuestion('MOD-07', 37)">38</button>
+  
+        </div>
+      </div>
     </section>
   
     <section class="module-section " id="m8" data-modcode="MOD-08" data-total="13">
@@ -21939,6 +22039,7 @@ What kind of data is that?</div>
         <h3 class="module-sub">Đạo đức Nghề nghiệp, Tố giác (Whistleblowing) & Quy tắc Ứng xử (13 câu hỏi)</h3>
       </div>
 
+      <!-- 1. Top: Theory Box -->
       <div class="card-soft theory-box">
         <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
         
@@ -21954,65 +22055,7 @@ What kind of data is that?</div>
   
       </div>
 
-      <!-- Question Navigation & Map Container - Matching play.html exact DOM -->
-      <div class="card-soft quiz-controls-bar" style="margin-bottom: 20px;">
-        <div class="map-head" style="margin-bottom: 8px;">
-          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (13 câu)</span>
-        </div>
-        <div class="map-legend" style="margin-bottom: 12px;">
-          <span><i class="dot current"></i> đang làm</span>
-          <span><i class="dot ok"></i> đúng</span>
-          <span><i class="dot bad"></i> sai</span>
-          <span><i class="dot unseen"></i> chưa</span>
-        </div>
-
-        <div class="q-map" id="palette-MOD-08" style="margin-bottom: 16px;">
-          
-    <button type="button" class="q-cell is-current" id="mapbtn-MOD-08-0" onclick="jumpToQuestion('MOD-08', 0)">1</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-08-1" onclick="jumpToQuestion('MOD-08', 1)">2</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-08-2" onclick="jumpToQuestion('MOD-08', 2)">3</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-08-3" onclick="jumpToQuestion('MOD-08', 3)">4</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-08-4" onclick="jumpToQuestion('MOD-08', 4)">5</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-08-5" onclick="jumpToQuestion('MOD-08', 5)">6</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-08-6" onclick="jumpToQuestion('MOD-08', 6)">7</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-08-7" onclick="jumpToQuestion('MOD-08', 7)">8</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-08-8" onclick="jumpToQuestion('MOD-08', 8)">9</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-08-9" onclick="jumpToQuestion('MOD-08', 9)">10</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-08-10" onclick="jumpToQuestion('MOD-08', 10)">11</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-08-11" onclick="jumpToQuestion('MOD-08', 11)">12</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-08-12" onclick="jumpToQuestion('MOD-08', 12)">13</button>
-  
-        </div>
-
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
-          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-08" onclick="navigateQuestion('MOD-08', -1)">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span class="nav-label">Câu trước</span>
-          </button>
-
-          <div class="nav-center">
-            <span class="q-counter-text" id="counter-MOD-08">Câu 1 / 13</span>
-          </div>
-
-          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-08" onclick="navigateQuestion('MOD-08', 1)">
-            <span class="nav-label">Câu tiếp</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </nav>
-      </div>
-
+      <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-08">
         
     <div class="card quiz-card active-card" id="qcard-MOD-08-0" data-idx="0" data-ans="C" data-search="what does a code of ethics provide for a data-driven organization? bộ quy tắc đạo đức mang lại điều gì cho một tổ chức dựa trên dữ liệu? • code of ethics purpose: bộ quy tắc đạo đức đóng vai trò là kim chỉ nam định hướng chuẩn mực hành vi cho toàn bộ thành viên.">
@@ -22757,6 +22800,65 @@ What kind of data is that?</div>
     </div>
   
       </div>
+
+      <!-- 3. Bottom: Navigation Bar & Map Grid Palette (Moved Down Below Question Card) -->
+      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px;">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi" style="margin-bottom: 16px;">
+          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-08" onclick="navigateQuestion('MOD-08', -1)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Câu trước</span>
+          </button>
+
+          <div class="nav-center">
+            <span class="q-counter-text" id="counter-MOD-08">Câu 1 / 13</span>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-08" onclick="navigateQuestion('MOD-08', 1)">
+            <span class="nav-label">Câu tiếp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+
+        <div class="map-head" style="margin-bottom: 8px;">
+          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (13 câu)</span>
+        </div>
+        <div class="map-legend" style="margin-bottom: 12px;">
+          <span><i class="dot current"></i> đang làm</span>
+          <span><i class="dot ok"></i> đúng</span>
+          <span><i class="dot bad"></i> sai</span>
+          <span><i class="dot unseen"></i> chưa</span>
+        </div>
+
+        <div class="q-map" id="palette-MOD-08">
+          
+    <button type="button" class="q-cell is-current" id="mapbtn-MOD-08-0" onclick="jumpToQuestion('MOD-08', 0)">1</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-08-1" onclick="jumpToQuestion('MOD-08', 1)">2</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-08-2" onclick="jumpToQuestion('MOD-08', 2)">3</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-08-3" onclick="jumpToQuestion('MOD-08', 3)">4</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-08-4" onclick="jumpToQuestion('MOD-08', 4)">5</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-08-5" onclick="jumpToQuestion('MOD-08', 5)">6</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-08-6" onclick="jumpToQuestion('MOD-08', 6)">7</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-08-7" onclick="jumpToQuestion('MOD-08', 7)">8</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-08-8" onclick="jumpToQuestion('MOD-08', 8)">9</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-08-9" onclick="jumpToQuestion('MOD-08', 9)">10</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-08-10" onclick="jumpToQuestion('MOD-08', 10)">11</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-08-11" onclick="jumpToQuestion('MOD-08', 11)">12</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-08-12" onclick="jumpToQuestion('MOD-08', 12)">13</button>
+  
+        </div>
+      </div>
     </section>
   
     <section class="module-section " id="m9" data-modcode="MOD-09" data-total="6">
@@ -22766,6 +22868,7 @@ What kind of data is that?</div>
         <h3 class="module-sub">Phân tích Dữ liệu, Tương quan & Phân tích Biểu đồ Phân tán (6 câu hỏi)</h3>
       </div>
 
+      <!-- 1. Top: Theory Box -->
       <div class="card-soft theory-box">
         <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
         
@@ -22781,51 +22884,7 @@ What kind of data is that?</div>
   
       </div>
 
-      <!-- Question Navigation & Map Container - Matching play.html exact DOM -->
-      <div class="card-soft quiz-controls-bar" style="margin-bottom: 20px;">
-        <div class="map-head" style="margin-bottom: 8px;">
-          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (6 câu)</span>
-        </div>
-        <div class="map-legend" style="margin-bottom: 12px;">
-          <span><i class="dot current"></i> đang làm</span>
-          <span><i class="dot ok"></i> đúng</span>
-          <span><i class="dot bad"></i> sai</span>
-          <span><i class="dot unseen"></i> chưa</span>
-        </div>
-
-        <div class="q-map" id="palette-MOD-09" style="margin-bottom: 16px;">
-          
-    <button type="button" class="q-cell is-current" id="mapbtn-MOD-09-0" onclick="jumpToQuestion('MOD-09', 0)">1</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-09-1" onclick="jumpToQuestion('MOD-09', 1)">2</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-09-2" onclick="jumpToQuestion('MOD-09', 2)">3</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-09-3" onclick="jumpToQuestion('MOD-09', 3)">4</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-09-4" onclick="jumpToQuestion('MOD-09', 4)">5</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-09-5" onclick="jumpToQuestion('MOD-09', 5)">6</button>
-  
-        </div>
-
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
-          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-09" onclick="navigateQuestion('MOD-09', -1)">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span class="nav-label">Câu trước</span>
-          </button>
-
-          <div class="nav-center">
-            <span class="q-counter-text" id="counter-MOD-09">Câu 1 / 6</span>
-          </div>
-
-          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-09" onclick="navigateQuestion('MOD-09', 1)">
-            <span class="nav-label">Câu tiếp</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </nav>
-      </div>
-
+      <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-09">
         
     <div class="card quiz-card active-card" id="qcard-MOD-09-0" data-idx="0" data-ans="D" data-search="in the following scatter plot, the grossincome variable is plotted against the revenue variable. what type of correlation does this plot suggest? trong biểu đồ phân tán (scatter plot), biến tổng thu nhập (grossincome) được vẽ tương quan với biến doanh thu (revenue). biểu đồ này gợi ý loại tương quan nào? • tương quan dương mạnh (strong positive correlation): khi một biến tăng thì biến kia cũng tăng theo xu hướng rõ rệt và các điểm dữ liệu phân bố sát đường xu hướng tăng.">
@@ -23171,6 +23230,51 @@ What kind of data is that?</div>
     </div>
   
       </div>
+
+      <!-- 3. Bottom: Navigation Bar & Map Grid Palette (Moved Down Below Question Card) -->
+      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px;">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi" style="margin-bottom: 16px;">
+          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-09" onclick="navigateQuestion('MOD-09', -1)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Câu trước</span>
+          </button>
+
+          <div class="nav-center">
+            <span class="q-counter-text" id="counter-MOD-09">Câu 1 / 6</span>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-09" onclick="navigateQuestion('MOD-09', 1)">
+            <span class="nav-label">Câu tiếp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+
+        <div class="map-head" style="margin-bottom: 8px;">
+          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (6 câu)</span>
+        </div>
+        <div class="map-legend" style="margin-bottom: 12px;">
+          <span><i class="dot current"></i> đang làm</span>
+          <span><i class="dot ok"></i> đúng</span>
+          <span><i class="dot bad"></i> sai</span>
+          <span><i class="dot unseen"></i> chưa</span>
+        </div>
+
+        <div class="q-map" id="palette-MOD-09">
+          
+    <button type="button" class="q-cell is-current" id="mapbtn-MOD-09-0" onclick="jumpToQuestion('MOD-09', 0)">1</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-09-1" onclick="jumpToQuestion('MOD-09', 1)">2</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-09-2" onclick="jumpToQuestion('MOD-09', 2)">3</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-09-3" onclick="jumpToQuestion('MOD-09', 3)">4</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-09-4" onclick="jumpToQuestion('MOD-09', 4)">5</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-09-5" onclick="jumpToQuestion('MOD-09', 5)">6</button>
+  
+        </div>
+      </div>
     </section>
   
     <section class="module-section " id="m10" data-modcode="MOD-10" data-total="221">
@@ -23180,6 +23284,7 @@ What kind of data is that?</div>
         <h3 class="module-sub">Bộ Câu Hỏi Tình Huống & Đạo Đức CNTT Tổng Hợp (221 câu hỏi)</h3>
       </div>
 
+      <!-- 1. Top: Theory Box -->
       <div class="card-soft theory-box">
         <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
         
@@ -23190,481 +23295,7 @@ What kind of data is that?</div>
   
       </div>
 
-      <!-- Question Navigation & Map Container - Matching play.html exact DOM -->
-      <div class="card-soft quiz-controls-bar" style="margin-bottom: 20px;">
-        <div class="map-head" style="margin-bottom: 8px;">
-          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (221 câu)</span>
-        </div>
-        <div class="map-legend" style="margin-bottom: 12px;">
-          <span><i class="dot current"></i> đang làm</span>
-          <span><i class="dot ok"></i> đúng</span>
-          <span><i class="dot bad"></i> sai</span>
-          <span><i class="dot unseen"></i> chưa</span>
-        </div>
-
-        <div class="q-map" id="palette-MOD-10" style="margin-bottom: 16px;">
-          
-    <button type="button" class="q-cell is-current" id="mapbtn-MOD-10-0" onclick="jumpToQuestion('MOD-10', 0)">1</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-1" onclick="jumpToQuestion('MOD-10', 1)">2</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-2" onclick="jumpToQuestion('MOD-10', 2)">3</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-3" onclick="jumpToQuestion('MOD-10', 3)">4</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-4" onclick="jumpToQuestion('MOD-10', 4)">5</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-5" onclick="jumpToQuestion('MOD-10', 5)">6</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-6" onclick="jumpToQuestion('MOD-10', 6)">7</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-7" onclick="jumpToQuestion('MOD-10', 7)">8</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-8" onclick="jumpToQuestion('MOD-10', 8)">9</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-9" onclick="jumpToQuestion('MOD-10', 9)">10</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-10" onclick="jumpToQuestion('MOD-10', 10)">11</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-11" onclick="jumpToQuestion('MOD-10', 11)">12</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-12" onclick="jumpToQuestion('MOD-10', 12)">13</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-13" onclick="jumpToQuestion('MOD-10', 13)">14</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-14" onclick="jumpToQuestion('MOD-10', 14)">15</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-15" onclick="jumpToQuestion('MOD-10', 15)">16</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-16" onclick="jumpToQuestion('MOD-10', 16)">17</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-17" onclick="jumpToQuestion('MOD-10', 17)">18</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-18" onclick="jumpToQuestion('MOD-10', 18)">19</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-19" onclick="jumpToQuestion('MOD-10', 19)">20</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-20" onclick="jumpToQuestion('MOD-10', 20)">21</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-21" onclick="jumpToQuestion('MOD-10', 21)">22</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-22" onclick="jumpToQuestion('MOD-10', 22)">23</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-23" onclick="jumpToQuestion('MOD-10', 23)">24</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-24" onclick="jumpToQuestion('MOD-10', 24)">25</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-25" onclick="jumpToQuestion('MOD-10', 25)">26</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-26" onclick="jumpToQuestion('MOD-10', 26)">27</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-27" onclick="jumpToQuestion('MOD-10', 27)">28</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-28" onclick="jumpToQuestion('MOD-10', 28)">29</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-29" onclick="jumpToQuestion('MOD-10', 29)">30</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-30" onclick="jumpToQuestion('MOD-10', 30)">31</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-31" onclick="jumpToQuestion('MOD-10', 31)">32</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-32" onclick="jumpToQuestion('MOD-10', 32)">33</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-33" onclick="jumpToQuestion('MOD-10', 33)">34</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-34" onclick="jumpToQuestion('MOD-10', 34)">35</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-35" onclick="jumpToQuestion('MOD-10', 35)">36</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-36" onclick="jumpToQuestion('MOD-10', 36)">37</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-37" onclick="jumpToQuestion('MOD-10', 37)">38</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-38" onclick="jumpToQuestion('MOD-10', 38)">39</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-39" onclick="jumpToQuestion('MOD-10', 39)">40</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-40" onclick="jumpToQuestion('MOD-10', 40)">41</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-41" onclick="jumpToQuestion('MOD-10', 41)">42</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-42" onclick="jumpToQuestion('MOD-10', 42)">43</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-43" onclick="jumpToQuestion('MOD-10', 43)">44</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-44" onclick="jumpToQuestion('MOD-10', 44)">45</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-45" onclick="jumpToQuestion('MOD-10', 45)">46</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-46" onclick="jumpToQuestion('MOD-10', 46)">47</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-47" onclick="jumpToQuestion('MOD-10', 47)">48</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-48" onclick="jumpToQuestion('MOD-10', 48)">49</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-49" onclick="jumpToQuestion('MOD-10', 49)">50</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-50" onclick="jumpToQuestion('MOD-10', 50)">51</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-51" onclick="jumpToQuestion('MOD-10', 51)">52</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-52" onclick="jumpToQuestion('MOD-10', 52)">53</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-53" onclick="jumpToQuestion('MOD-10', 53)">54</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-54" onclick="jumpToQuestion('MOD-10', 54)">55</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-55" onclick="jumpToQuestion('MOD-10', 55)">56</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-56" onclick="jumpToQuestion('MOD-10', 56)">57</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-57" onclick="jumpToQuestion('MOD-10', 57)">58</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-58" onclick="jumpToQuestion('MOD-10', 58)">59</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-59" onclick="jumpToQuestion('MOD-10', 59)">60</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-60" onclick="jumpToQuestion('MOD-10', 60)">61</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-61" onclick="jumpToQuestion('MOD-10', 61)">62</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-62" onclick="jumpToQuestion('MOD-10', 62)">63</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-63" onclick="jumpToQuestion('MOD-10', 63)">64</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-64" onclick="jumpToQuestion('MOD-10', 64)">65</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-65" onclick="jumpToQuestion('MOD-10', 65)">66</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-66" onclick="jumpToQuestion('MOD-10', 66)">67</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-67" onclick="jumpToQuestion('MOD-10', 67)">68</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-68" onclick="jumpToQuestion('MOD-10', 68)">69</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-69" onclick="jumpToQuestion('MOD-10', 69)">70</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-70" onclick="jumpToQuestion('MOD-10', 70)">71</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-71" onclick="jumpToQuestion('MOD-10', 71)">72</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-72" onclick="jumpToQuestion('MOD-10', 72)">73</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-73" onclick="jumpToQuestion('MOD-10', 73)">74</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-74" onclick="jumpToQuestion('MOD-10', 74)">75</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-75" onclick="jumpToQuestion('MOD-10', 75)">76</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-76" onclick="jumpToQuestion('MOD-10', 76)">77</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-77" onclick="jumpToQuestion('MOD-10', 77)">78</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-78" onclick="jumpToQuestion('MOD-10', 78)">79</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-79" onclick="jumpToQuestion('MOD-10', 79)">80</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-80" onclick="jumpToQuestion('MOD-10', 80)">81</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-81" onclick="jumpToQuestion('MOD-10', 81)">82</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-82" onclick="jumpToQuestion('MOD-10', 82)">83</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-83" onclick="jumpToQuestion('MOD-10', 83)">84</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-84" onclick="jumpToQuestion('MOD-10', 84)">85</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-85" onclick="jumpToQuestion('MOD-10', 85)">86</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-86" onclick="jumpToQuestion('MOD-10', 86)">87</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-87" onclick="jumpToQuestion('MOD-10', 87)">88</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-88" onclick="jumpToQuestion('MOD-10', 88)">89</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-89" onclick="jumpToQuestion('MOD-10', 89)">90</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-90" onclick="jumpToQuestion('MOD-10', 90)">91</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-91" onclick="jumpToQuestion('MOD-10', 91)">92</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-92" onclick="jumpToQuestion('MOD-10', 92)">93</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-93" onclick="jumpToQuestion('MOD-10', 93)">94</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-94" onclick="jumpToQuestion('MOD-10', 94)">95</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-95" onclick="jumpToQuestion('MOD-10', 95)">96</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-96" onclick="jumpToQuestion('MOD-10', 96)">97</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-97" onclick="jumpToQuestion('MOD-10', 97)">98</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-98" onclick="jumpToQuestion('MOD-10', 98)">99</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-99" onclick="jumpToQuestion('MOD-10', 99)">100</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-100" onclick="jumpToQuestion('MOD-10', 100)">101</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-101" onclick="jumpToQuestion('MOD-10', 101)">102</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-102" onclick="jumpToQuestion('MOD-10', 102)">103</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-103" onclick="jumpToQuestion('MOD-10', 103)">104</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-104" onclick="jumpToQuestion('MOD-10', 104)">105</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-105" onclick="jumpToQuestion('MOD-10', 105)">106</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-106" onclick="jumpToQuestion('MOD-10', 106)">107</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-107" onclick="jumpToQuestion('MOD-10', 107)">108</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-108" onclick="jumpToQuestion('MOD-10', 108)">109</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-109" onclick="jumpToQuestion('MOD-10', 109)">110</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-110" onclick="jumpToQuestion('MOD-10', 110)">111</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-111" onclick="jumpToQuestion('MOD-10', 111)">112</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-112" onclick="jumpToQuestion('MOD-10', 112)">113</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-113" onclick="jumpToQuestion('MOD-10', 113)">114</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-114" onclick="jumpToQuestion('MOD-10', 114)">115</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-115" onclick="jumpToQuestion('MOD-10', 115)">116</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-116" onclick="jumpToQuestion('MOD-10', 116)">117</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-117" onclick="jumpToQuestion('MOD-10', 117)">118</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-118" onclick="jumpToQuestion('MOD-10', 118)">119</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-119" onclick="jumpToQuestion('MOD-10', 119)">120</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-120" onclick="jumpToQuestion('MOD-10', 120)">121</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-121" onclick="jumpToQuestion('MOD-10', 121)">122</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-122" onclick="jumpToQuestion('MOD-10', 122)">123</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-123" onclick="jumpToQuestion('MOD-10', 123)">124</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-124" onclick="jumpToQuestion('MOD-10', 124)">125</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-125" onclick="jumpToQuestion('MOD-10', 125)">126</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-126" onclick="jumpToQuestion('MOD-10', 126)">127</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-127" onclick="jumpToQuestion('MOD-10', 127)">128</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-128" onclick="jumpToQuestion('MOD-10', 128)">129</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-129" onclick="jumpToQuestion('MOD-10', 129)">130</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-130" onclick="jumpToQuestion('MOD-10', 130)">131</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-131" onclick="jumpToQuestion('MOD-10', 131)">132</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-132" onclick="jumpToQuestion('MOD-10', 132)">133</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-133" onclick="jumpToQuestion('MOD-10', 133)">134</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-134" onclick="jumpToQuestion('MOD-10', 134)">135</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-135" onclick="jumpToQuestion('MOD-10', 135)">136</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-136" onclick="jumpToQuestion('MOD-10', 136)">137</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-137" onclick="jumpToQuestion('MOD-10', 137)">138</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-138" onclick="jumpToQuestion('MOD-10', 138)">139</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-139" onclick="jumpToQuestion('MOD-10', 139)">140</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-140" onclick="jumpToQuestion('MOD-10', 140)">141</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-141" onclick="jumpToQuestion('MOD-10', 141)">142</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-142" onclick="jumpToQuestion('MOD-10', 142)">143</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-143" onclick="jumpToQuestion('MOD-10', 143)">144</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-144" onclick="jumpToQuestion('MOD-10', 144)">145</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-145" onclick="jumpToQuestion('MOD-10', 145)">146</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-146" onclick="jumpToQuestion('MOD-10', 146)">147</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-147" onclick="jumpToQuestion('MOD-10', 147)">148</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-148" onclick="jumpToQuestion('MOD-10', 148)">149</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-149" onclick="jumpToQuestion('MOD-10', 149)">150</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-150" onclick="jumpToQuestion('MOD-10', 150)">151</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-151" onclick="jumpToQuestion('MOD-10', 151)">152</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-152" onclick="jumpToQuestion('MOD-10', 152)">153</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-153" onclick="jumpToQuestion('MOD-10', 153)">154</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-154" onclick="jumpToQuestion('MOD-10', 154)">155</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-155" onclick="jumpToQuestion('MOD-10', 155)">156</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-156" onclick="jumpToQuestion('MOD-10', 156)">157</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-157" onclick="jumpToQuestion('MOD-10', 157)">158</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-158" onclick="jumpToQuestion('MOD-10', 158)">159</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-159" onclick="jumpToQuestion('MOD-10', 159)">160</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-160" onclick="jumpToQuestion('MOD-10', 160)">161</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-161" onclick="jumpToQuestion('MOD-10', 161)">162</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-162" onclick="jumpToQuestion('MOD-10', 162)">163</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-163" onclick="jumpToQuestion('MOD-10', 163)">164</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-164" onclick="jumpToQuestion('MOD-10', 164)">165</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-165" onclick="jumpToQuestion('MOD-10', 165)">166</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-166" onclick="jumpToQuestion('MOD-10', 166)">167</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-167" onclick="jumpToQuestion('MOD-10', 167)">168</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-168" onclick="jumpToQuestion('MOD-10', 168)">169</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-169" onclick="jumpToQuestion('MOD-10', 169)">170</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-170" onclick="jumpToQuestion('MOD-10', 170)">171</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-171" onclick="jumpToQuestion('MOD-10', 171)">172</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-172" onclick="jumpToQuestion('MOD-10', 172)">173</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-173" onclick="jumpToQuestion('MOD-10', 173)">174</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-174" onclick="jumpToQuestion('MOD-10', 174)">175</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-175" onclick="jumpToQuestion('MOD-10', 175)">176</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-176" onclick="jumpToQuestion('MOD-10', 176)">177</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-177" onclick="jumpToQuestion('MOD-10', 177)">178</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-178" onclick="jumpToQuestion('MOD-10', 178)">179</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-179" onclick="jumpToQuestion('MOD-10', 179)">180</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-180" onclick="jumpToQuestion('MOD-10', 180)">181</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-181" onclick="jumpToQuestion('MOD-10', 181)">182</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-182" onclick="jumpToQuestion('MOD-10', 182)">183</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-183" onclick="jumpToQuestion('MOD-10', 183)">184</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-184" onclick="jumpToQuestion('MOD-10', 184)">185</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-185" onclick="jumpToQuestion('MOD-10', 185)">186</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-186" onclick="jumpToQuestion('MOD-10', 186)">187</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-187" onclick="jumpToQuestion('MOD-10', 187)">188</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-188" onclick="jumpToQuestion('MOD-10', 188)">189</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-189" onclick="jumpToQuestion('MOD-10', 189)">190</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-190" onclick="jumpToQuestion('MOD-10', 190)">191</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-191" onclick="jumpToQuestion('MOD-10', 191)">192</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-192" onclick="jumpToQuestion('MOD-10', 192)">193</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-193" onclick="jumpToQuestion('MOD-10', 193)">194</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-194" onclick="jumpToQuestion('MOD-10', 194)">195</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-195" onclick="jumpToQuestion('MOD-10', 195)">196</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-196" onclick="jumpToQuestion('MOD-10', 196)">197</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-197" onclick="jumpToQuestion('MOD-10', 197)">198</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-198" onclick="jumpToQuestion('MOD-10', 198)">199</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-199" onclick="jumpToQuestion('MOD-10', 199)">200</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-200" onclick="jumpToQuestion('MOD-10', 200)">201</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-201" onclick="jumpToQuestion('MOD-10', 201)">202</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-202" onclick="jumpToQuestion('MOD-10', 202)">203</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-203" onclick="jumpToQuestion('MOD-10', 203)">204</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-204" onclick="jumpToQuestion('MOD-10', 204)">205</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-205" onclick="jumpToQuestion('MOD-10', 205)">206</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-206" onclick="jumpToQuestion('MOD-10', 206)">207</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-207" onclick="jumpToQuestion('MOD-10', 207)">208</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-208" onclick="jumpToQuestion('MOD-10', 208)">209</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-209" onclick="jumpToQuestion('MOD-10', 209)">210</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-210" onclick="jumpToQuestion('MOD-10', 210)">211</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-211" onclick="jumpToQuestion('MOD-10', 211)">212</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-212" onclick="jumpToQuestion('MOD-10', 212)">213</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-213" onclick="jumpToQuestion('MOD-10', 213)">214</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-214" onclick="jumpToQuestion('MOD-10', 214)">215</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-215" onclick="jumpToQuestion('MOD-10', 215)">216</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-216" onclick="jumpToQuestion('MOD-10', 216)">217</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-217" onclick="jumpToQuestion('MOD-10', 217)">218</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-218" onclick="jumpToQuestion('MOD-10', 218)">219</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-219" onclick="jumpToQuestion('MOD-10', 219)">220</button>
-  
-    <button type="button" class="q-cell " id="mapbtn-MOD-10-220" onclick="jumpToQuestion('MOD-10', 220)">221</button>
-  
-        </div>
-
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
-          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-10" onclick="navigateQuestion('MOD-10', -1)">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span class="nav-label">Câu trước</span>
-          </button>
-
-          <div class="nav-center">
-            <span class="q-counter-text" id="counter-MOD-10">Câu 1 / 221</span>
-          </div>
-
-          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-10" onclick="navigateQuestion('MOD-10', 1)">
-            <span class="nav-label">Câu tiếp</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </nav>
-      </div>
-
+      <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-10">
         
     <div class="card quiz-card active-card" id="qcard-MOD-10-0" data-idx="0" data-ans="B" data-search="what is the long-term impact of ignoring ethical considerations in technology development? tác động lâu dài của việc bỏ qua các yếu tố đạo đức trong phát triển công nghệ là gì? • long-term ethics impact: việc coi thường đạo đức có thể mang lại lợi ích ngắn hạn nhưng sẽ hủy hoại uy tín lâu dài và kéo theo các quy định trừng phạt nghiêm khắc từ chính phủ.">
@@ -36249,6 +35880,481 @@ What kind of data is that?</div>
       </div>
     </div>
   
+      </div>
+
+      <!-- 3. Bottom: Navigation Bar & Map Grid Palette (Moved Down Below Question Card) -->
+      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px;">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi" style="margin-bottom: 16px;">
+          <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-MOD-10" onclick="navigateQuestion('MOD-10', -1)">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="nav-label">Câu trước</span>
+          </button>
+
+          <div class="nav-center">
+            <span class="q-counter-text" id="counter-MOD-10">Câu 1 / 221</span>
+          </div>
+
+          <button type="button" class="btn btn-secondary btn-nav" id="nextBtn-MOD-10" onclick="navigateQuestion('MOD-10', 1)">
+            <span class="nav-label">Câu tiếp</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </nav>
+
+        <div class="map-head" style="margin-bottom: 8px;">
+          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (221 câu)</span>
+        </div>
+        <div class="map-legend" style="margin-bottom: 12px;">
+          <span><i class="dot current"></i> đang làm</span>
+          <span><i class="dot ok"></i> đúng</span>
+          <span><i class="dot bad"></i> sai</span>
+          <span><i class="dot unseen"></i> chưa</span>
+        </div>
+
+        <div class="q-map" id="palette-MOD-10">
+          
+    <button type="button" class="q-cell is-current" id="mapbtn-MOD-10-0" onclick="jumpToQuestion('MOD-10', 0)">1</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-1" onclick="jumpToQuestion('MOD-10', 1)">2</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-2" onclick="jumpToQuestion('MOD-10', 2)">3</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-3" onclick="jumpToQuestion('MOD-10', 3)">4</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-4" onclick="jumpToQuestion('MOD-10', 4)">5</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-5" onclick="jumpToQuestion('MOD-10', 5)">6</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-6" onclick="jumpToQuestion('MOD-10', 6)">7</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-7" onclick="jumpToQuestion('MOD-10', 7)">8</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-8" onclick="jumpToQuestion('MOD-10', 8)">9</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-9" onclick="jumpToQuestion('MOD-10', 9)">10</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-10" onclick="jumpToQuestion('MOD-10', 10)">11</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-11" onclick="jumpToQuestion('MOD-10', 11)">12</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-12" onclick="jumpToQuestion('MOD-10', 12)">13</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-13" onclick="jumpToQuestion('MOD-10', 13)">14</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-14" onclick="jumpToQuestion('MOD-10', 14)">15</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-15" onclick="jumpToQuestion('MOD-10', 15)">16</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-16" onclick="jumpToQuestion('MOD-10', 16)">17</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-17" onclick="jumpToQuestion('MOD-10', 17)">18</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-18" onclick="jumpToQuestion('MOD-10', 18)">19</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-19" onclick="jumpToQuestion('MOD-10', 19)">20</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-20" onclick="jumpToQuestion('MOD-10', 20)">21</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-21" onclick="jumpToQuestion('MOD-10', 21)">22</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-22" onclick="jumpToQuestion('MOD-10', 22)">23</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-23" onclick="jumpToQuestion('MOD-10', 23)">24</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-24" onclick="jumpToQuestion('MOD-10', 24)">25</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-25" onclick="jumpToQuestion('MOD-10', 25)">26</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-26" onclick="jumpToQuestion('MOD-10', 26)">27</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-27" onclick="jumpToQuestion('MOD-10', 27)">28</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-28" onclick="jumpToQuestion('MOD-10', 28)">29</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-29" onclick="jumpToQuestion('MOD-10', 29)">30</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-30" onclick="jumpToQuestion('MOD-10', 30)">31</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-31" onclick="jumpToQuestion('MOD-10', 31)">32</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-32" onclick="jumpToQuestion('MOD-10', 32)">33</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-33" onclick="jumpToQuestion('MOD-10', 33)">34</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-34" onclick="jumpToQuestion('MOD-10', 34)">35</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-35" onclick="jumpToQuestion('MOD-10', 35)">36</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-36" onclick="jumpToQuestion('MOD-10', 36)">37</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-37" onclick="jumpToQuestion('MOD-10', 37)">38</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-38" onclick="jumpToQuestion('MOD-10', 38)">39</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-39" onclick="jumpToQuestion('MOD-10', 39)">40</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-40" onclick="jumpToQuestion('MOD-10', 40)">41</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-41" onclick="jumpToQuestion('MOD-10', 41)">42</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-42" onclick="jumpToQuestion('MOD-10', 42)">43</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-43" onclick="jumpToQuestion('MOD-10', 43)">44</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-44" onclick="jumpToQuestion('MOD-10', 44)">45</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-45" onclick="jumpToQuestion('MOD-10', 45)">46</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-46" onclick="jumpToQuestion('MOD-10', 46)">47</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-47" onclick="jumpToQuestion('MOD-10', 47)">48</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-48" onclick="jumpToQuestion('MOD-10', 48)">49</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-49" onclick="jumpToQuestion('MOD-10', 49)">50</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-50" onclick="jumpToQuestion('MOD-10', 50)">51</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-51" onclick="jumpToQuestion('MOD-10', 51)">52</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-52" onclick="jumpToQuestion('MOD-10', 52)">53</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-53" onclick="jumpToQuestion('MOD-10', 53)">54</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-54" onclick="jumpToQuestion('MOD-10', 54)">55</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-55" onclick="jumpToQuestion('MOD-10', 55)">56</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-56" onclick="jumpToQuestion('MOD-10', 56)">57</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-57" onclick="jumpToQuestion('MOD-10', 57)">58</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-58" onclick="jumpToQuestion('MOD-10', 58)">59</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-59" onclick="jumpToQuestion('MOD-10', 59)">60</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-60" onclick="jumpToQuestion('MOD-10', 60)">61</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-61" onclick="jumpToQuestion('MOD-10', 61)">62</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-62" onclick="jumpToQuestion('MOD-10', 62)">63</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-63" onclick="jumpToQuestion('MOD-10', 63)">64</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-64" onclick="jumpToQuestion('MOD-10', 64)">65</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-65" onclick="jumpToQuestion('MOD-10', 65)">66</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-66" onclick="jumpToQuestion('MOD-10', 66)">67</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-67" onclick="jumpToQuestion('MOD-10', 67)">68</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-68" onclick="jumpToQuestion('MOD-10', 68)">69</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-69" onclick="jumpToQuestion('MOD-10', 69)">70</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-70" onclick="jumpToQuestion('MOD-10', 70)">71</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-71" onclick="jumpToQuestion('MOD-10', 71)">72</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-72" onclick="jumpToQuestion('MOD-10', 72)">73</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-73" onclick="jumpToQuestion('MOD-10', 73)">74</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-74" onclick="jumpToQuestion('MOD-10', 74)">75</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-75" onclick="jumpToQuestion('MOD-10', 75)">76</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-76" onclick="jumpToQuestion('MOD-10', 76)">77</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-77" onclick="jumpToQuestion('MOD-10', 77)">78</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-78" onclick="jumpToQuestion('MOD-10', 78)">79</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-79" onclick="jumpToQuestion('MOD-10', 79)">80</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-80" onclick="jumpToQuestion('MOD-10', 80)">81</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-81" onclick="jumpToQuestion('MOD-10', 81)">82</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-82" onclick="jumpToQuestion('MOD-10', 82)">83</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-83" onclick="jumpToQuestion('MOD-10', 83)">84</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-84" onclick="jumpToQuestion('MOD-10', 84)">85</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-85" onclick="jumpToQuestion('MOD-10', 85)">86</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-86" onclick="jumpToQuestion('MOD-10', 86)">87</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-87" onclick="jumpToQuestion('MOD-10', 87)">88</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-88" onclick="jumpToQuestion('MOD-10', 88)">89</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-89" onclick="jumpToQuestion('MOD-10', 89)">90</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-90" onclick="jumpToQuestion('MOD-10', 90)">91</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-91" onclick="jumpToQuestion('MOD-10', 91)">92</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-92" onclick="jumpToQuestion('MOD-10', 92)">93</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-93" onclick="jumpToQuestion('MOD-10', 93)">94</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-94" onclick="jumpToQuestion('MOD-10', 94)">95</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-95" onclick="jumpToQuestion('MOD-10', 95)">96</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-96" onclick="jumpToQuestion('MOD-10', 96)">97</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-97" onclick="jumpToQuestion('MOD-10', 97)">98</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-98" onclick="jumpToQuestion('MOD-10', 98)">99</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-99" onclick="jumpToQuestion('MOD-10', 99)">100</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-100" onclick="jumpToQuestion('MOD-10', 100)">101</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-101" onclick="jumpToQuestion('MOD-10', 101)">102</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-102" onclick="jumpToQuestion('MOD-10', 102)">103</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-103" onclick="jumpToQuestion('MOD-10', 103)">104</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-104" onclick="jumpToQuestion('MOD-10', 104)">105</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-105" onclick="jumpToQuestion('MOD-10', 105)">106</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-106" onclick="jumpToQuestion('MOD-10', 106)">107</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-107" onclick="jumpToQuestion('MOD-10', 107)">108</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-108" onclick="jumpToQuestion('MOD-10', 108)">109</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-109" onclick="jumpToQuestion('MOD-10', 109)">110</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-110" onclick="jumpToQuestion('MOD-10', 110)">111</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-111" onclick="jumpToQuestion('MOD-10', 111)">112</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-112" onclick="jumpToQuestion('MOD-10', 112)">113</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-113" onclick="jumpToQuestion('MOD-10', 113)">114</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-114" onclick="jumpToQuestion('MOD-10', 114)">115</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-115" onclick="jumpToQuestion('MOD-10', 115)">116</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-116" onclick="jumpToQuestion('MOD-10', 116)">117</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-117" onclick="jumpToQuestion('MOD-10', 117)">118</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-118" onclick="jumpToQuestion('MOD-10', 118)">119</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-119" onclick="jumpToQuestion('MOD-10', 119)">120</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-120" onclick="jumpToQuestion('MOD-10', 120)">121</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-121" onclick="jumpToQuestion('MOD-10', 121)">122</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-122" onclick="jumpToQuestion('MOD-10', 122)">123</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-123" onclick="jumpToQuestion('MOD-10', 123)">124</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-124" onclick="jumpToQuestion('MOD-10', 124)">125</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-125" onclick="jumpToQuestion('MOD-10', 125)">126</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-126" onclick="jumpToQuestion('MOD-10', 126)">127</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-127" onclick="jumpToQuestion('MOD-10', 127)">128</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-128" onclick="jumpToQuestion('MOD-10', 128)">129</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-129" onclick="jumpToQuestion('MOD-10', 129)">130</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-130" onclick="jumpToQuestion('MOD-10', 130)">131</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-131" onclick="jumpToQuestion('MOD-10', 131)">132</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-132" onclick="jumpToQuestion('MOD-10', 132)">133</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-133" onclick="jumpToQuestion('MOD-10', 133)">134</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-134" onclick="jumpToQuestion('MOD-10', 134)">135</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-135" onclick="jumpToQuestion('MOD-10', 135)">136</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-136" onclick="jumpToQuestion('MOD-10', 136)">137</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-137" onclick="jumpToQuestion('MOD-10', 137)">138</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-138" onclick="jumpToQuestion('MOD-10', 138)">139</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-139" onclick="jumpToQuestion('MOD-10', 139)">140</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-140" onclick="jumpToQuestion('MOD-10', 140)">141</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-141" onclick="jumpToQuestion('MOD-10', 141)">142</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-142" onclick="jumpToQuestion('MOD-10', 142)">143</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-143" onclick="jumpToQuestion('MOD-10', 143)">144</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-144" onclick="jumpToQuestion('MOD-10', 144)">145</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-145" onclick="jumpToQuestion('MOD-10', 145)">146</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-146" onclick="jumpToQuestion('MOD-10', 146)">147</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-147" onclick="jumpToQuestion('MOD-10', 147)">148</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-148" onclick="jumpToQuestion('MOD-10', 148)">149</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-149" onclick="jumpToQuestion('MOD-10', 149)">150</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-150" onclick="jumpToQuestion('MOD-10', 150)">151</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-151" onclick="jumpToQuestion('MOD-10', 151)">152</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-152" onclick="jumpToQuestion('MOD-10', 152)">153</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-153" onclick="jumpToQuestion('MOD-10', 153)">154</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-154" onclick="jumpToQuestion('MOD-10', 154)">155</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-155" onclick="jumpToQuestion('MOD-10', 155)">156</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-156" onclick="jumpToQuestion('MOD-10', 156)">157</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-157" onclick="jumpToQuestion('MOD-10', 157)">158</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-158" onclick="jumpToQuestion('MOD-10', 158)">159</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-159" onclick="jumpToQuestion('MOD-10', 159)">160</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-160" onclick="jumpToQuestion('MOD-10', 160)">161</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-161" onclick="jumpToQuestion('MOD-10', 161)">162</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-162" onclick="jumpToQuestion('MOD-10', 162)">163</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-163" onclick="jumpToQuestion('MOD-10', 163)">164</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-164" onclick="jumpToQuestion('MOD-10', 164)">165</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-165" onclick="jumpToQuestion('MOD-10', 165)">166</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-166" onclick="jumpToQuestion('MOD-10', 166)">167</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-167" onclick="jumpToQuestion('MOD-10', 167)">168</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-168" onclick="jumpToQuestion('MOD-10', 168)">169</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-169" onclick="jumpToQuestion('MOD-10', 169)">170</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-170" onclick="jumpToQuestion('MOD-10', 170)">171</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-171" onclick="jumpToQuestion('MOD-10', 171)">172</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-172" onclick="jumpToQuestion('MOD-10', 172)">173</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-173" onclick="jumpToQuestion('MOD-10', 173)">174</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-174" onclick="jumpToQuestion('MOD-10', 174)">175</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-175" onclick="jumpToQuestion('MOD-10', 175)">176</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-176" onclick="jumpToQuestion('MOD-10', 176)">177</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-177" onclick="jumpToQuestion('MOD-10', 177)">178</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-178" onclick="jumpToQuestion('MOD-10', 178)">179</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-179" onclick="jumpToQuestion('MOD-10', 179)">180</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-180" onclick="jumpToQuestion('MOD-10', 180)">181</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-181" onclick="jumpToQuestion('MOD-10', 181)">182</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-182" onclick="jumpToQuestion('MOD-10', 182)">183</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-183" onclick="jumpToQuestion('MOD-10', 183)">184</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-184" onclick="jumpToQuestion('MOD-10', 184)">185</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-185" onclick="jumpToQuestion('MOD-10', 185)">186</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-186" onclick="jumpToQuestion('MOD-10', 186)">187</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-187" onclick="jumpToQuestion('MOD-10', 187)">188</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-188" onclick="jumpToQuestion('MOD-10', 188)">189</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-189" onclick="jumpToQuestion('MOD-10', 189)">190</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-190" onclick="jumpToQuestion('MOD-10', 190)">191</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-191" onclick="jumpToQuestion('MOD-10', 191)">192</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-192" onclick="jumpToQuestion('MOD-10', 192)">193</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-193" onclick="jumpToQuestion('MOD-10', 193)">194</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-194" onclick="jumpToQuestion('MOD-10', 194)">195</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-195" onclick="jumpToQuestion('MOD-10', 195)">196</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-196" onclick="jumpToQuestion('MOD-10', 196)">197</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-197" onclick="jumpToQuestion('MOD-10', 197)">198</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-198" onclick="jumpToQuestion('MOD-10', 198)">199</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-199" onclick="jumpToQuestion('MOD-10', 199)">200</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-200" onclick="jumpToQuestion('MOD-10', 200)">201</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-201" onclick="jumpToQuestion('MOD-10', 201)">202</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-202" onclick="jumpToQuestion('MOD-10', 202)">203</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-203" onclick="jumpToQuestion('MOD-10', 203)">204</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-204" onclick="jumpToQuestion('MOD-10', 204)">205</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-205" onclick="jumpToQuestion('MOD-10', 205)">206</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-206" onclick="jumpToQuestion('MOD-10', 206)">207</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-207" onclick="jumpToQuestion('MOD-10', 207)">208</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-208" onclick="jumpToQuestion('MOD-10', 208)">209</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-209" onclick="jumpToQuestion('MOD-10', 209)">210</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-210" onclick="jumpToQuestion('MOD-10', 210)">211</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-211" onclick="jumpToQuestion('MOD-10', 211)">212</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-212" onclick="jumpToQuestion('MOD-10', 212)">213</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-213" onclick="jumpToQuestion('MOD-10', 213)">214</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-214" onclick="jumpToQuestion('MOD-10', 214)">215</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-215" onclick="jumpToQuestion('MOD-10', 215)">216</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-216" onclick="jumpToQuestion('MOD-10', 216)">217</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-217" onclick="jumpToQuestion('MOD-10', 217)">218</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-218" onclick="jumpToQuestion('MOD-10', 218)">219</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-219" onclick="jumpToQuestion('MOD-10', 219)">220</button>
+  
+    <button type="button" class="q-cell " id="mapbtn-MOD-10-220" onclick="jumpToQuestion('MOD-10', 220)">221</button>
+  
+        </div>
       </div>
     </section>
   
