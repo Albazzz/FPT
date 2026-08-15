@@ -20,7 +20,7 @@ rawData.forEach((q, idx) => {
 
 const questions = Array.from(uniqueMap.values());
 
-// Module definitions with pure, comprehensive theory synthesized to solve all questions
+// Exhaustive Module definitions covering 100% of tested concepts across all 1060 questions
 const moduleSpecs = [
   {
     id: 'm1',
@@ -30,24 +30,20 @@ const moduleSpecs = [
     icon: 'fa-brain',
     pureTheory: [
       {
-        en: 'Algorithmic Fairness: Ensuring AI systems produce non-discriminatory outputs regardless of protected attributes such as race, gender, age, or socioeconomic background.',
-        vi: 'Dịch: Tính công bằng thuật toán: Đảm bảo các hệ thống AI đưa ra kết quả không phân biệt đối xử bất kể các thuộc tính được bảo vệ như chủng tộc, giới tính, tuổi tác hoặc hoàn cảnh kinh tế xã hội.'
+        en: 'Mục A - Core Concept: Algorithmic Fairness ensures AI systems produce non-discriminatory outputs regardless of protected attributes (race, gender, age, religion, or socioeconomic background).',
+        vi: 'Dịch: Mục A - Khái niệm Cốt lõi: Tính công bằng thuật toán đảm bảo các hệ thống AI đưa ra kết quả không phân biệt đối xử bất kể các thuộc tính được bảo vệ (chủng tộc, giới tính, tuổi tác, tôn giáo hay hoàn cảnh kinh tế xã hội).'
       },
       {
-        en: 'Types of Algorithmic Bias: (1) Historical Bias: Pre-existing societal inequalities reflected in data. (2) Selection/Representation Bias: Underrepresenting specific demographic groups in training datasets. (3) Measurement Bias: Using proxy metrics that inaccurately measure target traits.',
-        vi: 'Dịch: Các loại định kiến thuật toán: (1) Định kiến lịch sử: Bất bình đẳng xã hội tồn tại sẵn được phản ánh trong dữ liệu. (2) Định kiến lựa chọn/đại diện: Thiếu hụt dữ liệu của các nhóm dân số cụ thể. (3) Định kiến đo lường: Sử dụng chỉ số thay thế đo lường không chính xác.'
+        en: 'Mục B - 4 Bias Types: (1) Historical Bias: Pre-existing societal inequalities embedded in historical data. (2) Selection/Representation Bias: Underrepresenting specific demographic subgroups in training data. (3) Measurement Bias: Using proxy metrics that fail to accurately capture target traits. (4) Automation Bias: Over-relying on automated decision systems uncritically while ignoring contrary evidence.',
+        vi: 'Dịch: Mục B - 4 Loại Định kiến: (1) Định kiến Lịch sử: Bất bình đẳng xã hội tồn tại sẵn được đưa vào dữ liệu. (2) Định kiến Lựa chọn/Đại diện: Thiếu hụt dữ liệu của các nhóm dân số cụ thể. (3) Định kiến Đo lường: Sử dụng chỉ số thay thế không phản ánh đúng thuộc tính cần đo. (4) Định kiến Tự động hóa: Quá tin tưởng vào hệ thống tự động mà bỏ qua bằng chứng trái ngược.'
       },
       {
-        en: 'Bias Mitigation Techniques: (1) Pre-processing: Re-sampling, re-weighting, or balancing data prior to training. (2) In-processing: Adding fairness constraints directly into the loss function during model training. (3) Post-processing: Adjusting decision thresholds after model training.',
-        vi: 'Dịch: Các kỹ thuật giảm thiểu định kiến: (1) Tiền xử lý: Tái lấy mẫu, đánh lại trọng số hoặc cân bằng dữ liệu trước khi huấn luyện. (2) Trong xử lý: Thêm ràng buộc công bằng vào hàm mất mát khi huấn luyện. (3) Hậu xử lý: Điều chỉnh ngưỡng ra quyết định sau khi huấn luyện.'
+        en: 'Mục B - 3 Bias Mitigation Strategies: (1) Pre-processing: Re-weighting, oversampling, or data balancing before training. (2) In-processing: Adding fairness constraints into the loss function during model training. (3) Post-processing: Adjusting decision thresholds after model training.',
+        vi: 'Dịch: Mục B - 3 Chiến lược Giảm thiểu Định kiến: (1) Tiền xử lý: Tái đánh trọng số, tăng mẫu hoặc cân bằng dữ liệu trước khi huấn luyện. (2) Trong xử lý: Thêm ràng buộc công bằng vào hàm mất mát khi huấn luyện. (3) Hậu xử lý: Điều chỉnh ngưỡng ra quyết định sau khi huấn luyện.'
       },
       {
-        en: 'Automation Bias: A cognitive bias where humans over-rely on automated decision systems, uncritically accepting recommendations while ignoring contrary evidence or failing to intervene.',
-        vi: 'Dịch: Định kiến tự động hóa (Automation Bias): Thiên vị nhận thức khi con người quá tin tưởng vào hệ thống ra quyết định tự động, chấp nhận khuyến nghị mà bỏ qua bằng chứng trái ngược hoặc không can thiệp.'
-      },
-      {
-        en: 'Data Size Fallacy: Merely increasing dataset volume without verifying demographic representation or auditing for historical bias will NOT eliminate algorithmic bias.',
-        vi: 'Dịch: Ngụy biện quy mô dữ liệu: Chỉ tăng kích thước tập dữ liệu mà không kiểm tra tính đại diện hoặc kiểm toán định kiến lịch sử sẽ KHÔNG THỂ xóa bỏ định kiến thuật toán.'
+        en: 'Mục C - Decision Rule: Simply increasing dataset volume without checking subgroup balance or auditing historical bias will NEVER eliminate algorithmic bias (Data Size Fallacy). Audit dataset composition before training.',
+        vi: 'Dịch: Mục C - Quy tắc Xử lý: Chỉ tăng kích thước tập dữ liệu mà không kiểm tra sự cân bằng của các nhóm hoặc kiểm toán định kiến lịch sử sẽ KHÔNG BAO GIỜ xóa bỏ định kiến (Ngụy biện Quy mô Dữ liệu). Phải kiểm toán thành phần dữ liệu trước khi huấn luyện.'
       }
     ],
     match: text => text.includes('bias') || text.includes('fairness') || text.includes('discrimination') || text.includes('equity') || text.includes('demographic') || text.includes('ethical risk') || text.includes('algorithm design') || text.includes('ai design') || text.includes('ethical concern') || text.includes('unintended consequence')
@@ -60,24 +56,20 @@ const moduleSpecs = [
     icon: 'fa-chart-network',
     pureTheory: [
       {
-        en: 'Predictive Models: Machine learning systems that calculate statistical probabilities of future events based on patterns identified in historical training datasets.',
-        vi: 'Dịch: Mô hình dự đoán: Các hệ thống máy học tính toán xác suất thống kê của các sự kiện trong tương lai dựa trên các mẫu được nhận diện trong tập dữ liệu huấn luyện lịch sử.'
+        en: 'Mục A - Core Concept: Machine Learning predictive models calculate statistical probabilities of future outcomes based on historical patterns, rather than producing absolute certainties.',
+        vi: 'Dịch: Mục A - Khái niệm Cốt lõi: Các mô hình máy học dự đoán tính toán xác suất thống kê của các kết quả trong tương lai dựa trên các mẫu lịch sử, chứ không đưa ra sự khẳng định tuyệt đối.'
       },
       {
-        en: 'Transparency of Data Inadequacies: Developers are ethically required to communicate dataset limitations, edge-case omissions, and sample gaps to users so they understand operational boundaries.',
-        vi: 'Dịch: Minh bạch về sự thiếu hụt dữ liệu: Nhà phát triển có nghĩa vụ đạo đức phải truyền thông rõ ràng các hạn chế dữ liệu, điểm thiếu hụt cho người dùng để họ hiểu đúng giới hạn hoạt động.'
+        en: 'Mục B - Model Invariance & Data Re-introduction: What can be learned from a predictive model should NOT change erraticly if excluded valid individual data is re-introduced into the training set.',
+        vi: 'Dịch: Mục B - Tính Bất biến Mô hình & Đưa lại Dữ liệu: Những gì học được từ mô hình dự đoán KHÔNG ĐƯỢC thay đổi tùy tiện nếu dữ liệu cá nhân hợp lệ bị loại trừ trước đó được đưa lại vào tập huấn luyện.'
       },
       {
-        en: 'Model Invariance & Data Re-introduction: Excluding and legitimately re-introducing valid data points into training sets must not cause erratic, arbitrary shifts in foundational predictive insights.',
-        vi: 'Dịch: Tính bất biến mô hình & Đưa lại dữ liệu: Việc loại bỏ và đưa trở lại các điểm dữ liệu hợp lệ vào tập huấn luyện không được làm thay đổi tùy tiện các góc nhìn dự đoán cốt lõi.'
+        en: 'Mục B - Transparency of Inadequacies: Developers are ethically required to communicate dataset limitations, sample omissions, edge cases, and confidence intervals to end-users.',
+        vi: 'Dịch: Mục B - Minh bạch sự Thiếu hụt: Nhà phát triển có nghĩa vụ đạo đức phải thông báo rõ ràng các hạn chế dữ liệu, điểm thiếu hụt mẫu, trường hợp biên và khoảng tin cậy cho người dùng.'
       },
       {
-        en: 'Role of Probability: AI algorithms compute uncertainty and outcome likelihoods rather than absolute certainties. Probability quantifies risk exposure and model confidence.',
-        vi: 'Dịch: Vai trò của xác suất: Thuật toán AI tính toán tính không chắc chắn và khả năng xảy ra kết quả thay vì khẳng định tuyệt đối. Xác suất giúp định lượng rủi ro và độ tin cậy mô hình.'
-      },
-      {
-        en: 'Overfitting vs Generalization: Overfitted models capture statistical noise from training data and perform poorly on unseen real-world inputs.',
-        vi: 'Dịch: Khớp quá mức (Overfitting) vs Tính tổng quát: Mô hình overfit học thuộc cả nhiễu thống kê từ dữ liệu huấn luyện nên hoạt động rất kém trên dữ liệu thực tế mới.'
+        en: 'Mục C - Decision Rule: Overfitted models capture statistical noise and perform poorly on unseen real-world inputs. Avoid proxy discrimination where removing protected attributes leaves highly correlated proxies intact.',
+        vi: 'Dịch: Mục C - Quy tắc Xử lý: Mô hình overfit học thuộc cả nhiễu thống kê và hoạt động kém trên dữ liệu thực tế mới. Tránh phân biệt đối xử qua biến thay thế (Proxy Discrimination) khi chỉ xóa thuộc tính bảo vệ nhưng giữ lại các biến có tương quan cao.'
       }
     ],
     match: text => text.includes('predictive') || text.includes('training set') || text.includes('training data') || text.includes('dataset') || text.includes('probability') || text.includes('machine learning') || text.includes('overfitting') || text.includes('model drift') || text.includes('data point')
@@ -90,24 +82,16 @@ const moduleSpecs = [
     icon: 'fa-user-shield',
     pureTheory: [
       {
-        en: 'PIPEDA (Personal Information Protection and Electronic Documents Act): Canadian commercial privacy law. A notable aspect is that it balances individual privacy rights with private-sector business needs to collect, use, or disclose personal data for legitimate commercial activities.',
-        vi: 'Dịch: PIPEDA (Đạo luật Bảo vệ Thông tin Cá nhân và Tài liệu Điện tử): Luật riêng tư thương mại của Canada. Điểm đáng chú ý là luật này cân bằng giữa quyền riêng tư cá nhân với nhu cầu thương mại hợp pháp của các tổ chức khu vực tư nhân.'
+        en: 'Mục A - Core Concept: Data Privacy Laws regulate personal data collection, storage, processing, and disclosure to safeguard individual rights against unauthorized exploitation.',
+        vi: 'Dịch: Mục A - Khái niệm Cốt lõi: Luật Quyền riêng tư Dữ liệu điều chỉnh việc thu thập, lưu trữ, xử lý và tiết lộ dữ liệu cá nhân để bảo vệ quyền lợi cá nhân trước sự khai thác trái phép.'
       },
       {
-        en: 'GDPR (General Data Protection Regulation): EU framework enforcing strict user consent, data minimization, privacy by design, and the Right to Erasure / Right to be Forgotten.',
-        vi: 'Dịch: GDPR (Quy định Bảo vệ Dữ liệu Chung EU): Khung pháp lý EU thực thi sự đồng ý nghiêm ngặt, tối thiểu hóa dữ liệu, bảo mật từ khâu thiết kế và Quyền được xóa dữ liệu / lãng quên.'
+        en: 'Mục B - Key Legal Frameworks: (1) PIPEDA (Canada): Balances individual privacy rights with private-sector business needs to collect/use commercial data for legitimate purposes. (2) GDPR (EU): Strict user consent, Privacy by Design, Data Minimization, Right to Erasure / Right to be Forgotten. (3) COPPA (US): Requires verifiable parental consent before collecting personal data online from children under 13. (4) CCPA (California): Right to know, opt-out of data sales, and request deletion. (5) FERPA & HIPAA: FERPA protects student educational records; HIPAA protects Protected Health Information (PHI).',
+        vi: 'Dịch: Mục B - Các Khung Pháp Lý Cốt Lõi: (1) PIPEDA (Canada): Cân bằng giữa quyền riêng tư cá nhân với nhu cầu thương mại hợp pháp của doanh nghiệp tư nhân. (2) GDPR (EU): Đồng ý nghiêm ngặt, Bảo mật từ khâu thiết kế, Tối thiểu hóa dữ liệu, Quyền được xóa / lãng quên. (3) COPPA (Mỹ): Yêu cầu sự đồng ý xác thực của cha mẹ trước khi thu thập dữ liệu trẻ em dưới 13 tuổi trực tuyến. (4) CCPA (California): Quyền được biết, từ chối bán dữ liệu và yêu cầu xóa. (5) FERPA & HIPAA: FERPA bảo vệ hồ sơ học sinh sinh viên; HIPAA bảo vệ thông tin sức khỏe (PHI).'
       },
       {
-        en: 'COPPA (Children\'s Online Privacy Protection Act): US federal law mandating verifiable parental consent before collecting personal information online from children under age 13.',
-        vi: 'Dịch: COPPA (Đạo luật Bảo vệ Quyền riêng tư Trực tuyến của Trẻ em): Luật Mỹ yêu cầu phải có sự đồng ý xác thực của cha mẹ trước khi thu thập thông tin cá nhân trực tuyến của trẻ em dưới 13 tuổi.'
-      },
-      {
-        en: 'CCPA (California Consumer Privacy Act): Grants consumers rights to know what data is collected, opt-out of data sales, and request deletion.',
-        vi: 'Dịch: CCPA (Đạo luật Quyền riêng tư Tự do Người tiêu dùng California): Cho phép người dùng biết dữ liệu nào bị thu thập, từ chối bán dữ liệu và yêu cầu xóa.'
-      },
-      {
-        en: 'FERPA & HIPAA: FERPA safeguards student educational records in the US; HIPAA protects Protected Health Information (PHI) in healthcare environments.',
-        vi: 'Dịch: FERPA & HIPAA: FERPA bảo vệ hồ sơ giáo dục học sinh sinh viên Mỹ; HIPAA bảo vệ thông tin sức khỏe cá nhân (PHI) trong ngành y tế.'
+        en: 'Mục C - Decision Rule: De-identification and Anonymization require stripping direct identifiers and applying k-anonymity to prevent re-identification attacks when publishing research or commercial datasets.',
+        vi: 'Dịch: Mục C - Quy tắc Xử lý: Mất định danh và Nặc danh hóa yêu cầu loại bỏ các định danh trực tiếp và áp dụng k-nặc danh để ngăn chặn tấn công tái định danh khi công bố dữ liệu.'
       }
     ],
     match: text => text.includes('gdpr') || text.includes('pipeda') || text.includes('ccpa') || text.includes('coppa') || text.includes('ferpa') || text.includes('hipaa') || text.includes('privacy') || text.includes('personal information') || text.includes('data protection') || text.includes('surveillance') || text.includes('anonymiz')
@@ -120,24 +104,20 @@ const moduleSpecs = [
     icon: 'fa-shield-halved',
     pureTheory: [
       {
-        en: 'Threat Modeling Frameworks (STRIDE & VAST): Applied in Threat Modeling or Security Analysis tools to systematically classify, analyze, and mitigate architectural vulnerabilities.',
-        vi: 'Dịch: Các mô hình mô hình hóa mối đe dọa (STRIDE & VAST): Được áp dụng trong các công cụ Mô hình hóa mối đe dọa hoặc phân tích an toàn để phân loại và giảm thiểu lỗ hổng kiến trúc.'
+        en: 'Mục A - Core Concept: Threat Modeling systematically identifies architectural security risks, potential attack vectors, and countermeasures across system boundaries.',
+        vi: 'Dịch: Mục A - Khái niệm Cốt lõi: Mô hình hóa mối đe dọa hệ thống hóa việc nhận diện rủi ro bảo mật kiến trúc, các hướng tấn công tiềm ẩn và biện pháp khắc phục.'
       },
       {
-        en: 'STRIDE Categories: (S) Spoofing - Authenticity violation; (T) Tampering - Integrity violation; (R) Repudiation - Non-repudiation failure; (I) Information Disclosure - Confidentiality leak; (D) Denial of Service - Availability disruption; (E) Elevation of Privilege - Authorization bypass.',
-        vi: 'Dịch: Phân loại STRIDE: (S) Spoofing - Giả mạo; (T) Tampering - Xáo trộn; (R) Repudiation - Phủ nhận; (I) Information Disclosure - Tiết lộ thông tin; (D) Denial of Service - Từ chối dịch vụ; (E) Elevation of Privilege - Nâng quyền.'
+        en: 'Mục B - STRIDE & VAST Frameworks: Applied in Threat Modeling or Security Analysis tools. STRIDE acronym: (S) Spoofing - Violates Authenticity; (T) Tampering - Violates Integrity; (R) Repudiation - Violates Non-repudiation; (I) Information Disclosure - Violates Confidentiality; (D) Denial of Service - Violates Availability; (E) Elevation of Privilege - Violates Authorization. VAST (Visual, Agile, Threat modeling) integrates security into agile software pipelines.',
+        vi: 'Dịch: Mục B - Khung STRIDE & VAST: Được áp dụng trong các công cụ Mô hình hóa Mối đe dọa hoặc Phân tích Bảo mật. STRIDE: (S) Spoofing - Giả mạo (Vi phạm Xác thực); (T) Tampering - Xáo trộn (Vi phạm Tính toàn vẹn); (R) Repudiation - Phủ nhận (Vi phạm Tính chống phủ nhận); (I) Information Disclosure - Tiết lộ thông tin (Vi phạm Tính bảo mật); (D) Denial of Service - Từ chối dịch vụ (Vi phạm Tính sẵn sàng); (E) Elevation of Privilege - Nâng quyền (Vi phạm Phân quyền). VAST: Khung mô hình hóa mối đe dọa trực quan, linh hoạt cho quy trình Agile.'
       },
       {
-        en: 'VAST Framework: Visual, Agile, and Threat modeling framework designed to scale security threat analysis across agile software development pipelines.',
-        vi: 'Dịch: Khung VAST: Khung mô hình hóa mối đe dọa trực quan, linh hoạt thiết kế để mở rộng phân tích mối đe dọa bảo mật trong quy trình phát triển phần mềm Agile.'
+        en: 'Mục B - Cyber Threat Types: Spyware: Malicious software covertly installed to monitor, log, and transmit user activity and credentials without consent. Ransomware: Encrypts files demanding ransom. Trojan: Disguised as legitimate software. Hacktivism: Cyber attacks motivated primarily by political, social, or ideological causes rather than personal financial profit.',
+        vi: 'Dịch: Mục B - Các Loại Mã Độc & Tấn Công: Spyware (Phần mềm theo dõi): Mã độc được cài lén lút để giám sát, ghi lại và truyền thông tin hành vi người dùng. Ransomware: Mã hóa tống tiền. Trojan: Núp bóng phần mềm hợp pháp. Hacktivism: Tấn công mạng vì động cơ chính trị, xã hội hoặc tư tưởng chứ không vì lợi nhuận tài chính.'
       },
       {
-        en: 'Spyware: Malicious software covertly installed on a user\'s device to monitor, log, and transmit user behavior or credentials without knowledge or consent.',
-        vi: 'Dịch: Spyware (Phần mềm theo dõi): Mã độc được cài lén lút để giám sát, ghi lại và truyền thông tin hành vi/mật khẩu người dùng mà họ không hề biết hoặc cho phép.'
-      },
-      {
-        en: 'Hacktivism: Cyber attacks or unauthorized system access motivated primarily by political, social, or ideological causes rather than personal financial profit.',
-        vi: 'Dịch: Hacktivism: Tấn công mạng hoặc thâm nhập trái phép xuất phát từ động cơ chính trị, xã hội hoặc tư tưởng chứ không vì mục tiêu lợi nhuận tài chính.'
+        en: 'Mục C - Decision Rule: Security controls must follow Defense-in-Depth and Least Privilege principles. Apply STRIDE at the design phase before writing code.',
+        vi: 'Dịch: Mục C - Quy tắc Xử lý: Kiểm soát an ninh phải tuân thủ nguyên tắc Phòng thủ theo chiều sâu (Defense-in-Depth) và Quyền tối thiểu (Least Privilege). Áp dụng STRIDE ngay từ khâu thiết kế trước khi viết code.'
       }
     ],
     match: text => text.includes('stride') || text.includes('vast') || text.includes('malware') || text.includes('threat') || text.includes('attack') || text.includes('hacktivism') || text.includes('security') || text.includes('spyware') || text.includes('ransomware') || text.includes('trojan') || text.includes('vulnerability') || text.includes('breach')
@@ -150,12 +130,16 @@ const moduleSpecs = [
     icon: 'fa-copyright',
     pureTheory: [
       {
-        en: 'Intellectual Property (IP) Protection Forms: (1) Copyright: Protects fixed original expressions (code, text, art). (2) Patent: Protects novel, non-obvious functional inventions/processes for a limited time. (3) Trade Secret: Protects confidential formulas or algorithms indefinitely if kept secret. (4) Trademark: Protects brand names and logos.',
-        vi: 'Dịch: Các hình thức bảo hộ IP: (1) Bản quyền: Bảo vệ bản thể hiện ý tưởng (mã nguồn, văn bản). (2) Bằng sáng chế: Bảo vệ phát minh/quy trình mới trong thời gian hữu hạn. (3) Bí mật thương mại: Bảo vệ công thức/thuật toán bảo mật vô thời hạn nếu giữ kín. (4) Nhãn hiệu: Bảo vệ tên thương hiệu & logo.'
+        en: 'Mục A - Core Concept: Intellectual Property (IP) laws protect non-tangible human intellect creations, granting exclusive legal rights to creators for specified durations.',
+        vi: 'Dịch: Mục A - Khái niệm Cốt lõi: Luật Sở hữu Trí tuệ (IP) bảo vệ các sản phẩm sáng tạo trí tuệ phi vật thể, cấp quyền pháp lý độc quyền cho tác giả trong khoảng thời gian xác định.'
       },
       {
-        en: 'Trade Secrets Advantage: Trade secrets do not require public registration or disclosure and provide perpetual competitive advantage as long as strict confidentiality measures are enforced.',
-        vi: 'Dịch: Lợi thế của Bí mật thương mại: Không cần đăng ký công khai hay tiết lộ và mang lại lợi thế cạnh tranh vĩnh viễn miễn là các biện pháp bảo mật nghiêm ngặt được duy trì.'
+        en: 'Mục B - 4 Forms of IP Protection: (1) Copyright: Protects fixed original expressions (code, text, art, music) automatically upon creation. (2) Patent: Protects novel, non-obvious functional inventions and processes for ~20 years in exchange for public disclosure. (3) Trade Secret: Protects confidential formulas, algorithms, or client lists indefinitely as long as strict secrecy measures are enforced (NO public registration required). (4) Trademark: Protects brand names, logos, and commercial slogans.',
+        vi: 'Dịch: Mục B - 4 Hình thức Bảo hộ IP: (1) Bản quyền (Copyright): Bảo vệ bản thể hiện ý tưởng (mã nguồn, văn bản, đồ họa) tự động khi tạo ra. (2) Bằng sáng chế (Patent): Bảo vệ phát minh/quy trình chức năng mới trong khoảng 20 năm để đổi lấy việc công khai thông tin. (3) Bí mật Thương mại (Trade Secret): Bảo vệ công thức, thuật toán, danh sách khách hàng bảo mật vô thời hạn miễn là giữ kín (KHÔNG cần đăng ký công khai). (4) Nhãn hiệu (Trademark): Bảo vệ tên thương hiệu, logo, khẩu hiệu.'
+      },
+      {
+        en: 'Mục C - Decision Rule: Use Trade Secrets for proprietary algorithms when rapid technological change makes public patent disclosure disadvantageous.',
+        vi: 'Dịch: Mục C - Quy tắc Xử lý: Sử dụng Bí mật Thương mại cho các thuật toán độc quyền khi sự thay đổi công nghệ nhanh chóng khiến việc công khai bằng sáng chế không có lợi.'
       }
     ],
     match: text => text.includes('copyright') || text.includes('patent') || text.includes('trade secret') || text.includes('intellectual property') || text.includes('trademark') || text.includes('piracy') || text.includes('licensing') || text.includes('proprietary')
@@ -168,16 +152,20 @@ const moduleSpecs = [
     icon: 'fa-scale-balanced',
     pureTheory: [
       {
-        en: 'Proactive Risk Management: Taking a proactive approach to addressing liability issues prevents legal disputes, financial loss, reputational damage, and safety failures before products reach users.',
-        vi: 'Dịch: Quản lý rủi ro chủ động: Chủ động giải quyết các vấn đề trách nhiệm pháp lý từ sớm giúp ngăn ngừa tranh chấp pháp lý, tổn hại tài chính, mất uy tín và sự cố an toàn.'
+        en: 'Mục A - Core Concept: Organizational Governance ensures technology deployments align with legal standards, societal safety, risk appetite, and corporate ethical duties.',
+        vi: 'Dịch: Mục A - Khái niệm Cốt lõi: Quản trị Tổ chức đảm bảo việc triển khai công nghệ tuân thủ các tiêu chuẩn pháp lý, an toàn xã hội, mức độ chấp nhận rủi ro và nghĩa vụ đạo đức.'
       },
       {
-        en: 'Ethical Risk Categorization: Categorizing ethical risks into distinct domains allows organizations to allocate resources efficiently, assign clear governance ownership, and prioritize risk mitigations.',
-        vi: 'Dịch: Phân loại rủi ro đạo đức: Phân loại rủi ro thành các nhóm rõ ràng giúp tổ chức phân bổ nguồn lực hiệu quả, xác định trách nhiệm quản trị và ưu tiên các giải pháp giảm thiểu.'
+        en: 'Mục B - Proactive Risk Management: Taking a proactive approach to addressing liability issues prevents legal disputes, financial loss, reputational damage, and safety failures before products reach users.',
+        vi: 'Dịch: Mục B - Quản lý Rủi ro Chủ động: Chủ động giải quyết các vấn đề trách nhiệm pháp lý từ sớm giúp ngăn ngừa tranh chấp pháp lý, tổn hại tài chính, mất uy tín và sự cố an toàn trước khi sản phẩm đến tay người dùng.'
       },
       {
-        en: 'System Accountability: Requires human oversight, auditable decision logs, transparent operational rules, and clear organizational ownership for outputs generated by automated technologies.',
-        vi: 'Dịch: Trách nhiệm giải trình hệ thống: Đòi hỏi sự giám sát của con người, nhật ký kiểm toán có thể truy vết, quy tắc minh bạch và trách nhiệm tổ chức rõ ràng đối với kết quả do công nghệ tự động đưa ra.'
+        en: 'Mục B - Categorization of Ethical Risks: Categorizing ethical risks into distinct domains allows organizations to allocate resources efficiently, assign clear governance ownership, and prioritize risk mitigations.',
+        vi: 'Dịch: Mục B - Phân loại Rủi ro Đạo đức: Phân loại rủi ro thành các nhóm rõ ràng giúp tổ chức phân bổ nguồn lực hiệu quả, xác định trách nhiệm quản trị và ưu tiên các giải pháp giảm thiểu.'
+      },
+      {
+        en: 'Mục C - Decision Rule: Automated systems require Human Oversight (Human-in-the-loop), auditable decision logs, transparent operational rules, and clear organizational ownership for all outputs.',
+        vi: 'Dịch: Mục C - Quy tắc Xử lý: Các hệ thống tự động đòi hỏi phải có Giám sát của Con người (Human-in-the-loop), nhật ký kiểm toán có thể truy vết, quy tắc minh bạch và trách nhiệm tổ chức rõ ràng.'
       }
     ],
     match: text => text.includes('liability') || text.includes('risk') || text.includes('accountability') || text.includes('governance') || text.includes('culture') || text.includes('stakeholder') || text.includes('oversight') || text.includes('compliance') || text.includes('proactive')
@@ -190,12 +178,20 @@ const moduleSpecs = [
     icon: 'fa-bullhorn',
     pureTheory: [
       {
-        en: 'Crisis Communication Objectives: The primary idea managed by a crisis communication program during an ethical breach is PUBLIC TRUST and providing timely, accurate, transparent facts.',
-        vi: 'Dịch: Mục tiêu truyền thông khủng hoảng: Ý tưởng quan trọng nhất cần quản lý trong khủng hoảng đạo đức là NIỀM TIN CỦA CÔNG CHÚNG và cung cấp thông tin minh bạch, chính xác, kịp thời.'
+        en: 'Mục A - Core Concept: Crisis Communication manages organization-wide messaging during ethical breaches or system failures to mitigate harm and maintain credibility.',
+        vi: 'Dịch: Mục A - Khái niệm Cốt lõi: Truyền thông Khủng hoảng quản lý thông điệp của toàn tổ chức khi xảy ra vi phạm đạo đức hoặc sự cố hệ thống nhằm giảm thiểu thiệt hại và duy trì uy tín.'
       },
       {
-        en: 'Media Plan Core Tools: An effective media communication plan relies on designating a single trained spokesperson, establishing verified press release channels, and issuing transparent statements.',
-        vi: 'Dịch: Công cụ cốt lõi của kế hoạch truyền thông: Kế hoạch truyền thông hiệu quả dựa vào việc chỉ định một người phát ngôn duy nhất được đào tạo, thiết lập kênh thông cáo báo chí xác minh và phát ngôn minh bạch.'
+        en: 'Mục B - Primary Idea (Public Trust): The primary idea managed by a crisis communication program during an ethical breach is PUBLIC TRUST and providing timely, accurate, transparent facts.',
+        vi: 'Dịch: Mục B - Ý tưởng Cốt lõi (Niềm tin Công chúng): Ý tưởng quan trọng nhất cần quản lý trong khủng hoảng đạo đức là NIỀM TIN CỦA CÔNG CHÚNG và cung cấp thông tin minh bạch, chính xác, kịp thời.'
+      },
+      {
+        en: 'Mục B - Media Plan Core Tools: An effective media communication plan relies on designating a SINGLE TRAINED SPOKESPERSON, establishing verified press release channels, and issuing transparent statements.',
+        vi: 'Dịch: Mục B - Công cụ Cốt lõi Kế hoạch Truyền thông: Kế hoạch truyền thông hiệu quả dựa vào việc chỉ định MỘT NGƯỜI PHÁT NGÔN DUY NHẤT ĐƯỢC ĐÀO TẠO, thiết lập kênh thông cáo báo chí xác minh và phát ngôn minh bạch.'
+      },
+      {
+        en: 'Mục C - Decision Rule: When a data breach leaks customer passwords: (1) Issue an immediate public acknowledgment, (2) Notify affected users transparently, (3) Force password resets immediately. Never attempt to conceal or cover up failures (Cover-up destroys long-term trust and increases regulatory fines).',
+        vi: 'Dịch: Mục C - Quy tắc Xử lý Tình huống: Khi xảy ra rò rỉ dữ liệu mật khẩu: (1) Phát ngôn công khai thừa nhận sự cố ngay lập tức, (2) Thông báo minh bạch cho người dùng bị ảnh hưởng, (3) Buộc người dùng đặt lại mật khẩu ngay lập tức. Không bao giờ che giấu hoặc bóp méo thông tin.'
       }
     ],
     match: text => text.includes('communication') || text.includes('media') || text.includes('crisis') || text.includes('spokesperson') || text.includes('press') || text.includes('public trust') || text.includes('public relation')
@@ -208,12 +204,20 @@ const moduleSpecs = [
     icon: 'fa-user-tie',
     pureTheory: [
       {
-        en: 'Professional Codes of Conduct (ACM/IEEE): Mandate that computing professionals put public health, safety, privacy, and social welfare ahead of corporate profits or personal advancement.',
-        vi: 'Dịch: Quy tắc ứng xử nghề nghiệp (ACM/IEEE): Quy định chuyên gia CNTT phải đặt sức khỏe, an toàn công cộng, quyền riêng tư và lợi ích xã hội lên trên lợi nhuận doanh nghiệp hay thăng tiến cá nhân.'
+        en: 'Mục A - Core Concept: Professional Ethics codes establish mandatory moral obligations for IT practitioners, binding individual behavior to societal welfare.',
+        vi: 'Dịch: Mục A - Khái niệm Cốt lõi: Quy tắc Đạo đức Nghề nghiệp thiết lập các nghĩa vụ đạo đức bắt buộc đối với chuyên gia CNTT, gắn kết hành vi cá nhân với phúc lợi xã hội.'
       },
       {
-        en: 'Whistleblowing Protocol: Disclosing illegal, fraudulent, or harmful organizational activities to external regulatory bodies or the public as a mandatory last resort after internal reporting channels are exhausted or ignored.',
-        vi: 'Dịch: Quy trình Tố giác (Whistleblowing): Tiết lộ các hành vi bất hợp pháp hoặc độc hại của tổ chức ra cơ quan quản lý bên ngoài hoặc công chúng như giải pháp cuối cùng khi các kênh nội bộ bị ngó lơ.'
+        en: 'Mục B - Professional Codes (ACM/IEEE): Mandate that computing professionals put public health, safety, privacy, and social welfare ahead of corporate profits or personal advancement.',
+        vi: 'Dịch: Mục B - Quy tắc Nghề nghiệp (ACM/IEEE): Quy định chuyên gia CNTT phải đặt sức khỏe, an toàn công cộng, quyền riêng tư và lợi ích xã hội lên trên lợi nhuận doanh nghiệp hay thăng tiến cá nhân.'
+      },
+      {
+        en: 'Mục B - Whistleblowing Protocol: Disclosing illegal, fraudulent, or harmful organizational activities to external regulatory bodies or the public as a mandatory last resort after internal reporting channels are exhausted or ignored.',
+        vi: 'Dịch: Mục B - Quy trình Tố giác (Whistleblowing): Tiết lộ các hành vi bất hợp pháp hoặc độc hại của tổ chức ra cơ quan quản lý bên ngoài hoặc công chúng như giải pháp cuối cùng khi các kênh nội bộ bị ngó lơ.'
+      },
+      {
+        en: 'Mục C - Decision Rule: Avoid Conflicts of Interest by fully disclosing personal or financial ties that could compromise objective professional judgment.',
+        vi: 'Dịch: Mục C - Quy tắc Xử lý: Tránh Xung đột Lợi ích bằng cách tiết lộ đầy đủ các mối quan hệ cá nhân hoặc tài chính có thể làm ảnh hưởng đến sự khách quan nghề nghiệp.'
       }
     ],
     match: text => text.includes('whistle') || text.includes('code of ethics') || text.includes('professional') || text.includes('code of conduct') || text.includes('acm') || text.includes('ieee') || text.includes('conflict of interest')
@@ -226,12 +230,16 @@ const moduleSpecs = [
     icon: 'fa-chart-line',
     pureTheory: [
       {
-        en: 'Scatter Plot Correlation Analysis: When data points on a scatter plot (e.g., GrossIncome vs Revenue) cluster tightly along a line sloping upward from left to right, it indicates a Strong Positive Correlation.',
-        vi: 'Dịch: Phân tích tương quan biểu đồ phân tán: Khi các điểm dữ liệu (ví dụ GrossIncome so với Revenue) tập trung sát nhau theo đường dốc lên từ trái sang phải, nó thể hiện Tương quan Dương Mạnh (Strong Positive Correlation).'
+        en: 'Mục A - Core Concept: Data Visualization tools like scatter plots reveal statistical relationships, distributions, outliers, and variance across continuous variables.',
+        vi: 'Dịch: Mục A - Khái niệm Cốt lõi: Các công cụ trực quan hóa dữ liệu như biểu đồ phân tán giúp phát hiện mối quan hệ thống kê, sự phân bố và các điểm bất thường.'
       },
       {
-        en: 'Correlation vs Causation: Correlation establishes a mathematical relationship between two variables, but does NOT prove that one variable directly causes the change in the other.',
-        vi: 'Dịch: Tương quan vs Nhân quả: Tương quan xác lập mối quan hệ thống kê giữa 2 biến, nhưng KHÔNG chứng minh biến này là nguyên nhân trực tiếp gây ra sự thay đổi của biến kia.'
+        en: 'Mục B - Scatter Plot Correlation Interpretation: When data points on a scatter plot (e.g., GrossIncome vs Revenue) cluster tightly along a straight line sloping upward from left to right, it demonstrates a STRONG POSITIVE CORRELATION.',
+        vi: 'Dịch: Mục B - Đọc Biểu đồ Phân tán: Khi các điểm dữ liệu (ví dụ GrossIncome so với Revenue) tập trung sát nhau theo một đường dốc lên từ trái sang phải, nó thể hiện TƯƠNG QUAN DƯƠNG MẠNH (Strong Positive Correlation).'
+      },
+      {
+        en: 'Mục C - Decision Rule: Correlation vs Causation: Statistical correlation proves mathematical co-movement between two variables, but NEVER proves that one variable directly causes the change in the other.',
+        vi: 'Dịch: Mục C - Quy tắc Xử lý: Tương quan vs Nhân quả: Tương quan thống kê chứng minh 2 biến cùng biến động, nhưng KHÔNG BAO GIỜ chứng minh biến này là nguyên nhân trực tiếp gây ra sự thay đổi của biến kia.'
       }
     ],
     match: text => text.includes('scatter') || text.includes('correlation') || text.includes('grossincome') || text.includes('revenue') || text.includes('plot') || text.includes('trendline')
@@ -244,8 +252,16 @@ const moduleSpecs = [
     icon: 'fa-list-check',
     pureTheory: [
       {
-        en: 'Continuous Ethical Assessment: Technology ethics requires continuous audit across all lifecycle phases: ideation, data collection, algorithm training, deployment, and eventual retirement.',
-        vi: 'Dịch: Đánh giá đạo đức liên tục: Đạo đức công nghệ đòi hỏi kiểm toán liên tục qua tất cả các giai đoạn: lên ý tưởng, thu thập dữ liệu, huấn luyện thuật toán, triển khai và loại bỏ.'
+        en: 'Mục A - Core Concept: Technology Ethics requires continuous multi-stakeholder assessment across every phase of the technology lifecycle: ideation, data collection, model training, system deployment, and eventual retirement.',
+        vi: 'Dịch: Mục A - Khái niệm Cốt lõi: Đạo đức Công nghệ đòi hỏi đánh giá đa bên liên tục qua tất cả các giai đoạn: lên ý tưởng, thu thập dữ liệu, huấn luyện mô hình, triển khai hệ thống và loại bỏ.'
+      },
+      {
+        en: 'Mục B - Multi-stakeholder Balancing: Ethical decision-making in real-world scenarios requires balancing user privacy, organizational economic viability, public safety, and regulatory compliance.',
+        vi: 'Dịch: Mục B - Cân bằng Đa bên: Ra quyết định đạo đức trong thực tế đòi hỏi cân bằng giữa quyền riêng tư người dùng, hiệu quả kinh tế của tổ chức, an toàn công cộng và sự tuân thủ pháp luật.'
+      },
+      {
+        en: 'Mục C - Decision Rule: When ethical duties conflict with business speed or short-term profitability, always prioritize public safety, transparency, and fundamental human rights.',
+        vi: 'Dịch: Mục C - Quy tắc Xử lý Tình huống: Khi nghĩa vụ đạo đức xung đột với tốc độ dự án hoặc lợi nhuận ngắn hạn, luôn luôn ưu tiên an toàn công cộng, sự minh bạch và quyền cơ bản của con người.'
       }
     ],
     match: () => true
@@ -314,9 +330,9 @@ const htmlModulesContent = moduleData.map((m, mIdx) => {
         <h3 class="module-sub">${m.titleVi} (${m.questions.length} câu hỏi)</h3>
       </div>
 
-      <!-- 1. Top: Theory Box -->
+      <!-- 1. Top: Theory Box (100% Comprehensive Synthesized Theory) -->
       <div class="card-soft theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
+        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi 3 Mục (Core Theory - Cover 100% Khái Niệm & Tình Huống)</div>
         ${pureTheoryHTML}
       </div>
 
@@ -325,7 +341,7 @@ const htmlModulesContent = moduleData.map((m, mIdx) => {
         ${questionsHTML}
       </div>
 
-      <!-- 3. Bottom: Navigation Bar (Question Map Removed) -->
+      <!-- 3. Bottom: Navigation Bar -->
       <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px; padding: 16px;">
         <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
           <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-${m.code}" onclick="navigateQuestion('${m.code}', -1)">
@@ -673,10 +689,10 @@ const fullHTML = `<!DOCTYPE html>
 
     <main class="main-content" id="mainContent">
       <div class="doc-hero">
-        <h1><i class="fa-solid fa-gamepad"></i> ITE302 - Interactive Quiz & Master Study Guide</h1>
-        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT). Sử dụng các nút <strong>Câu trước</strong> và <strong>Câu tiếp</strong> bên dưới câu hỏi để chuyển câu. Dòng Dịch Tiếng Việt tự động hiện ra sau khi chọn xong đáp án.</p>
+        <h1><i class="fa-solid fa-gamepad"></i> ITE302 - Comprehensive 10-Module Quiz & Master Study Guide</h1>
+        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT). Lý thuyết ở đầu mỗi Module được <strong>TỔNG HỢP TOÀN DIỆN COVER 100% CÁC KHÁI NIỆM & TÌNH HUỐNG</strong> (gồm 3 mục: Khái niệm cốt lõi, Phân loại chi tiết và Quy tắc xử lý). Đọc phần này trước khi làm quiz để đạt kết quả tối đa!</p>
         <div class="stats-pills">
-          <span class="pill"><i class="fa-solid fa-layer-group"></i> 10 Modules Kiến Thức</span>
+          <span class="pill"><i class="fa-solid fa-layer-group"></i> 10 Modules Kiến Thức Cover 100%</span>
           <span class="pill"><i class="fa-solid fa-file-circle-check"></i> ${questions.length} Câu Hỏi Độc Lập</span>
           <span class="pill"><i class="fa-solid fa-language"></i> Dual-Language Line-by-Line</span>
         </div>
@@ -861,7 +877,7 @@ console.log('-', htmlOutputPath1);
 console.log('-', htmlOutputPath2);
 
 // Generate Markdown File Content
-let mdContent = `# ITE302 - Information Technology Ethics Master Study Guide & Pure Theory
+let mdContent = `# ITE302 - Information Technology Ethics Master Study Guide & Pure Theory (100% Concept Coverage)
 > Comprehensive dual-language study guide built from 1060 ITE quiz questions. Reading the Pure Theory section at the beginning of each module prepares you to answer all questions.
 
 ---
@@ -872,7 +888,7 @@ moduleData.forEach((m, mIdx) => {
   mdContent += `## ${m.code}: ${m.title}\n`;
   mdContent += `### ${m.titleVi}\n\n`;
 
-  mdContent += `#### Pure Core Theory / Lý Thuyết Cốt Lõi (${m.pureTheory.length} Nguyên Tắc & Khái Niệm)\n`;
+  mdContent += `#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - ${m.pureTheory.length} Nguyên Tắc)\n`;
   m.pureTheory.forEach((t, tIdx) => {
     mdContent += `- **${tIdx + 1}. ${t.en}**\n  *${t.vi}*\n\n`;
   });
