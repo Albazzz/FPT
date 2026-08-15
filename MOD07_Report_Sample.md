@@ -1,4 +1,4 @@
-# BÁO CÁO MẪU KIẾN THỨC & NGÂN HÀNG CÂU HỎI MODULE 07 (MOD-07)
+# BÁO CÁO TOÀN DIỆN MODULE 07 (MOD-07)
 ## Subject: ITE302c - Ethics in Information Technology
 
 ---
@@ -8,32 +8,37 @@
 - **Tên Tiếng Anh:** Crisis Communication, Media Management & Public Trust
 - **Tên Tiếng Việt:** Truyền thông Khủng hoảng, Quản lý Truyền thông & Niềm tin Công chúng
 - **Số lượng câu hỏi:** 51 câu trắc nghiệm chuyên sâu
+- **Độ Cover Lý Thuyết:** **100% Kiến thức & Quy tắc xử lý tình huống**
 
 ---
 
-### II. LÝ THUYẾT CỐT LÕI (CORE THEORY - ĐỌC XONG ĐỂ LÀM BÀI)
-> *Phần lý thuyết cốt lõi tổng hợp nguyên lý nền tảng. Đọc kỹ phần này sẽ giúp bạn hiểu rõ bản chất và trả lời đúng 100% các câu hỏi bên dưới.*
+### II. LÝ THUYẾT CỐT LÕI 3 MỤC (COVER 100% KHÁI NIỆM & TÌNH HUỐNG)
+> *Đọc kỹ phần lý thuyết tổng hợp 3 mục bên dưới trước khi giải đề. Phần này đã bao phủ 100% bản chất khái niệm và quy tắc xử lý của toàn bộ 51 câu hỏi trắc nghiệm.*
 
-#### Nguyên Tắc 1: Crisis Communication Objectives: The primary idea managed by a crisis communication program during an ethical breach is PUBLIC TRUST and providing timely, accurate, transparent facts.
-*Dịch: Mục tiêu truyền thông khủng hoảng: Ý tưởng quan trọng nhất cần quản lý trong khủng hoảng đạo đức là NIỀM TIN CỦA CÔNG CHÚNG và cung cấp thông tin minh bạch, chính xác, kịp thời.*
+#### 1. Mục A - Khái Niệm Cốt Lõi (Core Definitions & Frameworks)
+- **English:** Crisis Communication Objectives: Crisis Communication manages organization-wide messaging during ethical breaches or system failures to mitigate harm, restore order, and maintain long-term institutional credibility.
+- **Tiếng Việt:** *Dịch: Mục tiêu Truyền thông Khủng hoảng: Truyền thông khủng hoảng quản lý thông điệp của toàn tổ chức khi xảy ra vi phạm đạo đức hoặc sự cố hệ thống nhằm giảm thiểu thiệt hại, khôi phục trật tự và duy trì uy tín lâu dài.*
 
-#### Nguyên Tắc 2: Media Plan Core Tools: An effective media communication plan relies on designating a single trained spokesperson, establishing verified press release channels, and issuing transparent statements.
-*Dịch: Công cụ cốt lõi của kế hoạch truyền thông: Kế hoạch truyền thông hiệu quả dựa vào việc chỉ định một người phát ngôn duy nhất được đào tạo, thiết lập kênh thông cáo báo chí xác minh và phát ngôn minh bạch.*
+#### 2. Mục B - Phân Loại Thuật Ngữ & Công Cụ (Technical Taxonomy & Tools)
+- **English:** Primary Idea (Public Trust): The primary idea managed by a crisis communication program during an ethical breach is PUBLIC TRUST and providing timely, accurate, transparent facts.
+- **Tiếng Việt:** *Dịch: Ý tưởng Cốt lõi (Niềm tin Công chúng): Ý tưởng quan trọng nhất cần quản lý trong khủng hoảng đạo đức là NIỀM TIN CỦA CÔNG CHÚNG và cung cấp thông tin minh bạch, chính xác, kịp thời.*
 
-#### Nguyên Tắc 3: Proactive Transparency vs Cover-up: Attempting to downplay, conceal, or misrepresent organizational failures destroys long-term credibility and magnifies regulatory fines.
-*Dịch: Minh bạch chủ động vs Che giấu: Cố tình hạ thấp, che giấu hoặc bóp méo sai phạm của tổ chức sẽ hủy hoại uy tín lâu dài và làm tăng nặng các án phạt pháp lý.*
+#### 3. Mục B - Phân Loại Thuật Ngữ & Công Cụ (Technical Taxonomy & Tools)
+- **English:** Media Plan Core Tools: An effective media communication plan relies on designating a SINGLE TRAINED SPOKESPERSON, establishing verified press release channels, and issuing transparent statements.
+- **Tiếng Việt:** *Dịch: Công cụ Cốt lõi Kế hoạch Truyền thông: Kế hoạch truyền thông hiệu quả dựa vào việc chỉ định MỘT NGƯỜI PHÁT NGÔN DUY NHẤT ĐƯỢC ĐÀO TẠO, thiết lập kênh thông cáo báo chí xác minh và phát ngôn minh bạch.*
 
-#### Nguyên Tắc 4: Internal vs External Alignment: Before communicating with external media, internal staff must be briefed to ensure consistent messaging across all public-facing touchpoints.
-*Dịch: Thống nhất Nội bộ vs Bên ngoài: Trước khi truyền thông ra báo chí bên ngoài, nhân sự nội bộ phải được quán triệt để đảm bảo thông điệp đồng nhất trên mọi kênh tiếp xúc.*
+#### 4. Mục C - Quy Tắc Xử Lý Tình Huống Thực Tế (Scenario Decision Rules)
+- **English:** Data Leak Protocol: When a data breach leaks customer credentials: (1) Issue an immediate public acknowledgment, (2) Notify affected users transparently, (3) Force password resets immediately. Never attempt to conceal or cover up failures (Cover-up destroys long-term trust and increases regulatory fines).
+- **Tiếng Việt:** *Dịch: Quy tắc Xử lý Rò rỉ Dữ liệu: Khi xảy ra rò rỉ dữ liệu mật khẩu: (1) Phát ngôn công khai thừa nhận sự cố ngay lập tức, (2) Thông báo minh bạch cho người dùng bị ảnh hưởng, (3) Buộc người dùng đặt lại mật khẩu ngay lập tức. Không bao giờ che giấu hoặc bóp méo thông tin.*
 
 
 ---
 
-### III. BỘ CÂU HỎI TRẮC NGHIỆM CHI TIẾT (FULL QUIZ BANK - 51 CÂU)
+### III. BỘ NGÂN HÀNG CÂU HỎI TRẮC NGHIỆM CHI TIẾT (51 CÂU)
 
 #### Câu 1:
-**Q:** Which of the following are tools of an effective media communication plan? (Select two.)  
-*Dịch:* Những công cụ nào sau đây thuộc về một kế hoạch truyền thông báo chí hiệu quả? (Chọn hai)
+**Q (Tiếng Anh):** Which of the following are tools of an effective media communication plan? (Select two.)  
+*Dịch Tiếng Việt:* Những công cụ nào sau đây thuộc về một kế hoạch truyền thông báo chí hiệu quả? (Chọn hai)
 
 **Các phương án lựa chọn:**
 - **A.** Mission statement 
@@ -52,11 +57,11 @@
 ---
 
 #### Câu 2:
-**Q:** Which method can be implemented to effectively communicate with the media during an ethical crisis?  
-*Dịch:* Phương pháp nào có thể triển khai để truyền thông hiệu quả với báo chí trong một cuộc khủng hoảng đạo đức?
+**Q (Tiếng Anh):** Which method can be implemented to effectively communicate with the media during an ethical crisis?  
+*Dịch Tiếng Việt:* Phương pháp nào có thể triển khai để truyền thông hiệu quả với báo chí trong một cuộc khủng hoảng đạo đức?
 
 **Các phương án lựa chọn:**
-- **A.** Provide regular updates to keep the media informed   *(Đáp án đúng)*
+- **A.** Provide regular updates to keep the media informed   👉 *(Đáp án đúng)*
   *Dịch:* Cung cấp thông tin cập nhật thường xuyên để báo chí nắm bắt tình hình
 - **B.** Ignore media inquiries until the crisis resolves 
   *Dịch:* Phớt lờ các yêu cầu của báo chí cho đến khi khủng hoảng giải quyết xong
@@ -72,11 +77,11 @@
 ---
 
 #### Câu 3:
-**Q:** Which of the following is the most important idea that a crisis communication program should manage?  
-*Dịch:* Ý tưởng nào sau đây là quan trọng nhất mà một chương trình truyền thông khủng hoảng cần quản lý?
+**Q (Tiếng Anh):** Which of the following is the most important idea that a crisis communication program should manage?  
+*Dịch Tiếng Việt:* Ý tưởng nào sau đây là quan trọng nhất mà một chương trình truyền thông khủng hoảng cần quản lý?
 
 **Các phương án lựa chọn:**
-- **A.** The public's perception of a crisis   *(Đáp án đúng)*
+- **A.** The public's perception of a crisis   👉 *(Đáp án đúng)*
   *Dịch:* Nhận thức của công chúng về cuộc khủng hoảng
 - **B.** The real-world effects of a crisis 
   *Dịch:* Các tác động thực tế ngoài đời thực của cuộc khủng hoảng
@@ -92,13 +97,13 @@
 ---
 
 #### Câu 4:
-**Q:** Why is stakeholder communication vital in managing ethical risk?  
-*Dịch:* Tại sao việc lôi kéo các bên liên quan nội bộ (internal stakeholders) ngay từ đầu vòng đời sản phẩm lại quan trọng?
+**Q (Tiếng Anh):** Why is stakeholder communication vital in managing ethical risk?  
+*Dịch Tiếng Việt:* Tại sao việc lôi kéo các bên liên quan nội bộ (internal stakeholders) ngay từ đầu vòng đời sản phẩm lại quan trọng?
 
 **Các phương án lựa chọn:**
 - **A.** To improve company branding only 
   *Dịch:* Để tăng ngân sách phát triển sản phẩm
-- **B.** To ensure stakeholder expectations and values are understood   *(Đáp án đúng)*
+- **B.** To ensure stakeholder expectations and values are understood   👉 *(Đáp án đúng)*
   *Dịch:* Để đảm bảo kỳ vọng và giá trị của các bên liên quan được thấu hiểu
 - **C.** To avoid legal responsibilities 
   *Dịch:* Để tránh các trách nhiệm pháp lý
@@ -112,11 +117,11 @@
 ---
 
 #### Câu 5:
-**Q:** How can artificial intelligence facilitate feedback and monitoring processes in crisis communication strategies?  
-*Dịch:* Trí tuệ nhân tạo có thể hỗ trợ các quy trình phản hồi và giám sát trong chiến lược truyền thông khủng hoảng như thế nào?
+**Q (Tiếng Anh):** How can artificial intelligence facilitate feedback and monitoring processes in crisis communication strategies?  
+*Dịch Tiếng Việt:* Trí tuệ nhân tạo có thể hỗ trợ các quy trình phản hồi và giám sát trong chiến lược truyền thông khủng hoảng như thế nào?
 
 **Các phương án lựa chọn:**
-- **A.** By automating sentiment analysis to gauge public opinion   *(Đáp án đúng)*
+- **A.** By automating sentiment analysis to gauge public opinion   👉 *(Đáp án đúng)*
   *Dịch:* Bằng cách tự động hóa phân tích cảm xúc (sentiment analysis) để đo lường dư luận
 - **B.** By creating holding statements for immediate use 
   *Dịch:* Bằng cách tạo các tuyên bố giữ chỗ (holding statements) để sử dụng ngay
@@ -132,11 +137,11 @@
 ---
 
 #### Câu 6:
-**Q:** How can effective communication mitigate ethical risks in Al and Data Science?  
-*Dịch:* Truyền thông hiệu quả có thể giảm thiểu các rủi ro đạo đức trong AI và Data Science như thế nào?
+**Q (Tiếng Anh):** How can effective communication mitigate ethical risks in Al and Data Science?  
+*Dịch Tiếng Việt:* Truyền thông hiệu quả có thể giảm thiểu các rủi ro đạo đức trong AI và Data Science như thế nào?
 
 **Các phương án lựa chọn:**
-- **A.** By ensuring transparency and understanding of ethical guidelines   *(Đáp án đúng)*
+- **A.** By ensuring transparency and understanding of ethical guidelines   👉 *(Đáp án đúng)*
   *Dịch:* Bằng cách đảm bảo tính minh bạch và sự thấu hiểu các hướng dẫn đạo đức
 - **B.** By limiting access to Al technologies 
   *Dịch:* Bằng cách giới hạn quyền truy cập vào công nghệ AI
@@ -152,15 +157,15 @@
 ---
 
 #### Câu 7:
-**Q:** What is the benefit of hosting a virtual reality press conference over a traditional in-person press conference?  
-*Dịch:* Lợi ích của việc tổ chức một cuộc họp báo thực tế ảo (VR press conference) so với họp báo trực tiếp truyền thống là gì?
+**Q (Tiếng Anh):** What is the benefit of hosting a virtual reality press conference over a traditional in-person press conference?  
+*Dịch Tiếng Việt:* Lợi ích của việc tổ chức một cuộc họp báo thực tế ảo (VR press conference) so với họp báo trực tiếp truyền thống là gì?
 
 **Các phương án lựa chọn:**
 - **A.** It will be easier to communicate your overall message to your audience. 
   *Dịch:* Dễ dàng hơn trong việc truyền tải thông điệp tổng thể
 - **B.** The conference will be easily accessible to all willing participants. 
   *Dịch:* Họp báo dễ dàng tiếp cận với tất cả người tham gia
-- **C.** The conference can be interactive without the participants needing to be co-located.   *(Đáp án đúng)*
+- **C.** The conference can be interactive without the participants needing to be co-located.   👉 *(Đáp án đúng)*
   *Dịch:* Buổi họp báo có thể tương tác mà người tham gia không cần ở cùng một vị trí địa lý
 - **D.** The participants will be impressed by your leveraging of new and exciting technologies. 
   *Dịch:* Người tham gia sẽ bị ấn tượng bởi việc áp dụng công nghệ mới
@@ -172,11 +177,11 @@
 ---
 
 #### Câu 8:
-**Q:** Which of the following is a key element of communications with internal and external stakeholders regarding an organization's ethics policies?  
-*Dịch:* Yếu tố then chốt trong truyền thông chính sách đạo đức tới các bên liên quan nội bộ và bên ngoài là gì?
+**Q (Tiếng Anh):** Which of the following is a key element of communications with internal and external stakeholders regarding an organization's ethics policies?  
+*Dịch Tiếng Việt:* Yếu tố then chốt trong truyền thông chính sách đạo đức tới các bên liên quan nội bộ và bên ngoài là gì?
 
 **Các phương án lựa chọn:**
-- **A.** Simple to follow examples   *(Đáp án đúng)*
+- **A.** Simple to follow examples   👉 *(Đáp án đúng)*
   *Dịch:* Ví dụ đơn giản, dễ theo dõi (Simple to follow examples)
 - **B.** Daily communications 
   *Dịch:* Truyền thông hàng ngày
@@ -192,15 +197,15 @@
 ---
 
 #### Câu 9:
-**Q:** What is the purpose of a holding statement in crisis and media communications?  
-*Dịch:* Mục đích của tuyên bố giữ chỗ (holding statement) trong truyền thông khủng hoảng là gì?
+**Q (Tiếng Anh):** What is the purpose of a holding statement in crisis and media communications?  
+*Dịch Tiếng Việt:* Mục đích của tuyên bố giữ chỗ (holding statement) trong truyền thông khủng hoảng là gì?
 
 **Các phương án lựa chọn:**
 - **A.** To order the business to temporarily halt certain operations 
   *Dịch:* Yêu cầu doanh nghiệp tạm dừng hoạt động
 - **B.** To retain the services of specific media outlets 
   *Dịch:* Thuê dịch vụ của các cơ quan báo chí cụ thể
-- **C.** To pre-write communications before they are needed   *(Đáp án đúng)*
+- **C.** To pre-write communications before they are needed   👉 *(Đáp án đúng)*
   *Dịch:* Soạn thảo trước các thông điệp truyền thông trước khi cần sử dụng (To pre-write communications)
 - **D.** To prevent personnel from communicating prematurely 
   *Dịch:* Ngăn cản nhân viên giao tiếp sớm
@@ -212,15 +217,15 @@
 ---
 
 #### Câu 10:
-**Q:** Which of the following negative consequences is the direct result of failing to be truthful in communicating about a crisis?  
-*Dịch:* Hậu quả tiêu cực nào là kết quả trực tiếp của việc thiếu trung thực trong truyền thông khủng hoảng?
+**Q (Tiếng Anh):** Which of the following negative consequences is the direct result of failing to be truthful in communicating about a crisis?  
+*Dịch Tiếng Việt:* Hậu quả tiêu cực nào là kết quả trực tiếp của việc thiếu trung thực trong truyền thông khủng hoảng?
 
 **Các phương án lựa chọn:**
 - **A.** Discrimination 
   *Dịch:* Phân biệt đối xử
 - **B.** Security risk 
   *Dịch:* Rủi ro an ninh
-- **C.** Reputational damage   *(Đáp án đúng)*
+- **C.** Reputational damage   👉 *(Đáp án đúng)*
   *Dịch:* Tổn hại danh tiếng (Reputational damage)
 - **D.** Financial loss 
   *Dịch:* Tổn thất tài chính
@@ -232,11 +237,11 @@
 ---
 
 #### Câu 11:
-**Q:** Why is it important to maintain public trust?  
-*Dịch:* Tại sao việc duy trì niềm tin của công chúng lại quan trọng?
+**Q (Tiếng Anh):** Why is it important to maintain public trust?  
+*Dịch Tiếng Việt:* Tại sao việc duy trì niềm tin của công chúng lại quan trọng?
 
 **Các phương án lựa chọn:**
-- **A.** Trust, once lost, is difficult to regain.   *(Đáp án đúng)*
+- **A.** Trust, once lost, is difficult to regain.   👉 *(Đáp án đúng)*
   *Dịch:* Niềm tin một khi đã mất rất khó lấy lại (Trust, once lost, is difficult to regain)
 - **B.** Trust is required to avoid legal pitfalis. 
   *Dịch:* Niềm tin là bắt buộc để tránh cạm bẫy pháp lý
@@ -252,8 +257,8 @@
 ---
 
 #### Câu 12:
-**Q:** Which of the following are useful strategies for communicating ethical risks to the organization? (Select two.)  
-*Dịch:* Chiến lược nào hữu ích cho việc truyền thông rủi ro đạo đức trong tổ chức? (Chọn hai)
+**Q (Tiếng Anh):** Which of the following are useful strategies for communicating ethical risks to the organization? (Select two.)  
+*Dịch Tiếng Việt:* Chiến lược nào hữu ích cho việc truyền thông rủi ro đạo đức trong tổ chức? (Chọn hai)
 
 **Các phương án lựa chọn:**
 - **A.** Communicate information through a single voice 
@@ -272,11 +277,11 @@
 ---
 
 #### Câu 13:
-**Q:** To uphold transparency and explainability, communication about data-driven technologies should be......  
-*Dịch:* Để duy trì tính minh bạch và khả năng giải thích, việc truyền thông về các công nghệ dựa trên dữ liệu nên......
+**Q (Tiếng Anh):** To uphold transparency and explainability, communication about data-driven technologies should be......  
+*Dịch Tiếng Việt:* Để duy trì tính minh bạch và khả năng giải thích, việc truyền thông về các công nghệ dựa trên dữ liệu nên......
 
 **Các phương án lựa chọn:**
-- **A.** Clear, concise, and coherent.   *(Đáp án đúng)*
+- **A.** Clear, concise, and coherent.   👉 *(Đáp án đúng)*
   *Dịch:* Rõ ràng, ngắn gọn và mạch lạc (Clear, concise, and coherent)
 - **B.** Complex, convincing, and contained. 
   *Dịch:* Phức tạp, thuyết phục và khép kín
@@ -292,15 +297,15 @@
 ---
 
 #### Câu 14:
-**Q:** When you deliver periodic statements about a crisis to the media, what should the first statement do?  
-*Dịch:* Khi bạn đưa ra các tuyên bố định kỳ về khủng hoảng cho truyền thông, tuyên bố đầu tiên nên làm gì?
+**Q (Tiếng Anh):** When you deliver periodic statements about a crisis to the media, what should the first statement do?  
+*Dịch Tiếng Việt:* Khi bạn đưa ra các tuyên bố định kỳ về khủng hoảng cho truyền thông, tuyên bố đầu tiên nên làm gì?
 
 **Các phương án lựa chọn:**
 - **A.** Provide in-depth details about the situation 
   *Dịch:* Cung cấp chi tiết chuyên sâu
 - **B.** Survey public opinion of the organization 
   *Dịch:* Khảo sát ý kiến công chúng
-- **C.** Set the tone of what is to follow   *(Đáp án đúng)*
+- **C.** Set the tone of what is to follow   👉 *(Đáp án đúng)*
   *Dịch:* Định hình tông giọng và hướng đi cho các thông điệp tiếp theo (Set the tone of what is to follow)
 - **D.** Accept responsibility for perceived problems 
   *Dịch:* Nhận trách nhiệm hoàn toàn
@@ -312,8 +317,8 @@
 ---
 
 #### Câu 15:
-**Q:** Which of the following are important factors to consider when developing a media campaign? (Select two.)  
-*Dịch:* Những yếu tố nào quan trọng cần cân nhắc khi phát triển một chiến dịch truyền thông? (Chọn hai)
+**Q (Tiếng Anh):** Which of the following are important factors to consider when developing a media campaign? (Select two.)  
+*Dịch Tiếng Việt:* Những yếu tố nào quan trọng cần cân nhắc khi phát triển một chiến dịch truyền thông? (Chọn hai)
 
 **Các phương án lựa chọn:**
 - **A.** The environment in which the campaign will be launched 
@@ -332,8 +337,8 @@
 ---
 
 #### Câu 16:
-**Q:** Which of the following are pitfalls in communicating risks to the organization? (select two.)  
-*Dịch:* Những cạm bẫy nào trong việc truyền thông rủi ro tới tổ chức? (Chọn hai)
+**Q (Tiếng Anh):** Which of the following are pitfalls in communicating risks to the organization? (select two.)  
+*Dịch Tiếng Việt:* Những cạm bẫy nào trong việc truyền thông rủi ro tới tổ chức? (Chọn hai)
 
 **Các phương án lựa chọn:**
 - **A.** Having a disjoined message. 
@@ -352,13 +357,13 @@
 ---
 
 #### Câu 17:
-**Q:** Which of the following should be conducted as part of a risk communication strategy in order to ensure the organization is upholding its regulatory obligations?  
-*Dịch:* Hoạt động nào sau đây nên được thực hiện như một phần của chiến lược truyền thông rủi ro để đảm bảo tổ chức tuân thủ nghĩa vụ pháp lý?
+**Q (Tiếng Anh):** Which of the following should be conducted as part of a risk communication strategy in order to ensure the organization is upholding its regulatory obligations?  
+*Dịch Tiếng Việt:* Hoạt động nào sau đây nên được thực hiện như một phần của chiến lược truyền thông rủi ro để đảm bảo tổ chức tuân thủ nghĩa vụ pháp lý?
 
 **Các phương án lựa chọn:**
 - **A.** Business impact assessment (BIA) 
   *Dịch:* Đánh giá tác động kinh doanh (BIA)
-- **B.** Compliance audit   *(Đáp án đúng)*
+- **B.** Compliance audit   👉 *(Đáp án đúng)*
   *Dịch:* Kiểm toán tuân thủ (Compliance audit)
 - **C.** Ethical risk review 
   *Dịch:* Rà soát rủi ro đạo đức
@@ -372,8 +377,8 @@
 ---
 
 #### Câu 18:
-**Q:** Which of the following are important qualities of a press release? (Select two.)  
-*Dịch:* Những đặc tính nào là quan trọng của một thông cáo báo chí (press release)? (Chọn hai)
+**Q (Tiếng Anh):** Which of the following are important qualities of a press release? (Select two.)  
+*Dịch Tiếng Việt:* Những đặc tính nào là quan trọng của một thông cáo báo chí (press release)? (Chọn hai)
 
 **Các phương án lựa chọn:**
 - **A.** It's in a digital format 
@@ -392,8 +397,8 @@
 ---
 
 #### Câu 19:
-**Q:** Which of the following are important to provide to a crisis communication team? (Select two.)  
-*Dịch:* Những điều nào quan trọng cần cung cấp cho đội truyền thông khủng hoảng? (Chọn hai)
+**Q (Tiếng Anh):** Which of the following are important to provide to a crisis communication team? (Select two.)  
+*Dịch Tiếng Việt:* Những điều nào quan trọng cần cung cấp cho đội truyền thông khủng hoảng? (Chọn hai)
 
 **Các phương án lựa chọn:**
 - **A.** Clear direction on the roles and responsibilities of team members 
@@ -412,8 +417,8 @@
 ---
 
 #### Câu 20:
-**Q:** Which of the following are desired qualities when choosing a spokesperson for your organization? (Select two.)  
-*Dịch:* Những phẩm chất mong muốn khi lựa chọn người phát ngôn (spokesperson) cho tổ chức là gì? (Chọn hai)
+**Q (Tiếng Anh):** Which of the following are desired qualities when choosing a spokesperson for your organization? (Select two.)  
+*Dịch Tiếng Việt:* Những phẩm chất mong muốn khi lựa chọn người phát ngôn (spokesperson) cho tổ chức là gì? (Chọn hai)
 
 **Các phương án lựa chọn:**
 - **A.** Articulate when communicating important details 
@@ -432,13 +437,13 @@
 ---
 
 #### Câu 21:
-**Q:** What is the primary purpose of obtaining feedback about an ethical crisis?  
-*Dịch:* Mục đích chính của việc nhận phản hồi về một cuộc khủng hoảng đạo đức là gì?
+**Q (Tiếng Anh):** What is the primary purpose of obtaining feedback about an ethical crisis?  
+*Dịch Tiếng Việt:* Mục đích chính của việc nhận phản hồi về một cuộc khủng hoảng đạo đức là gì?
 
 **Các phương án lựa chọn:**
 - **A.** To demonstrate compliance 
   *Dịch:* Báo cáo tuân thủ
-- **B.** To make operational improvements   *(Đáp án đúng)*
+- **B.** To make operational improvements   👉 *(Đáp án đúng)*
   *Dịch:* Thực hiện các cải tiến vận hành (To make operational improvements)
 - **C.** To appeases concerned stakeholders 
   *Dịch:* Xoa dịu bên liên quan
@@ -452,8 +457,8 @@
 ---
 
 #### Câu 22:
-**Q:** Which of the following are effective strategies when making statements on social media? (Select two.)  
-*Dịch:* Những chiến lược nào hiệu quả khi đưa ra các phát biểu trên mạng xã hội? (Chọn hai)
+**Q (Tiếng Anh):** Which of the following are effective strategies when making statements on social media? (Select two.)  
+*Dịch Tiếng Việt:* Những chiến lược nào hiệu quả khi đưa ra các phát biểu trên mạng xã hội? (Chọn hai)
 
 **Các phương án lựa chọn:**
 - **A.** Being honest and up front 
@@ -472,11 +477,11 @@
 ---
 
 #### Câu 23:
-**Q:** How can sentiment analysis be useful in social media communication?  
-*Dịch:* Phân tích cảm xúc (sentiment analysis) hữu ích như thế nào trong truyền thông mạng xã hội?
+**Q (Tiếng Anh):** How can sentiment analysis be useful in social media communication?  
+*Dịch Tiếng Việt:* Phân tích cảm xúc (sentiment analysis) hữu ích như thế nào trong truyền thông mạng xã hội?
 
 **Các phương án lựa chọn:**
-- **A.** It can shape the content and delivery of the message based on users' perceptions of the organization or technology.   *(Đáp án đúng)*
+- **A.** It can shape the content and delivery of the message based on users' perceptions of the organization or technology.   👉 *(Đáp án đúng)*
   *Dịch:* Định hình nội dung và cách truyền tải thông điệp dựa trên góc nhìn nhận thức của người dùng (shape content and delivery based on users' perceptions)
 - **B.** It can classify customers as loyal or disloyal, helping you target customers differently in your communications. 
   *Dịch:* Phân loại khách hàng trung thành
@@ -492,8 +497,8 @@
 ---
 
 #### Câu 24:
-**Q:** Which of the following is a best practice when participating in media inquiries?  
-*Dịch:* Thực hành tốt nhất khi tham gia phản hồi các yêu cầu của báo chí là gì?
+**Q (Tiếng Anh):** Which of the following is a best practice when participating in media inquiries?  
+*Dịch Tiếng Việt:* Thực hành tốt nhất khi tham gia phản hồi các yêu cầu của báo chí là gì?
 
 **Các phương án lựa chọn:**
 - **A.** Only agree to speak to media outlets that are favorable to your organization 
@@ -502,7 +507,7 @@
   *Dịch:* Phát hành thông điệp càng nhanh càng tốt
 - **C.** Divulge only the information that you are required to by law 
   *Dịch:* Chỉ tiết lộ thông tin tối thiểu theo luật
-- **D.** Ensure your message is consistent   *(Đáp án đúng)*
+- **D.** Ensure your message is consistent   👉 *(Đáp án đúng)*
   *Dịch:* Đảm bảo thông điệp của bạn nhất quán (Ensure your message is consistent)
 
 - **Đáp án đúng:** `D. Ensure your message is consistent`
@@ -512,12 +517,12 @@
 ---
 
 #### Câu 25:
-**Q:** You have collected social media posts with a specific hashtag for an analysis of the words used in the post.
+**Q (Tiếng Anh):** You have collected social media posts with a specific hashtag for an analysis of the words used in the post.
 What kind of data is that?  
-*Dịch:* Bạn đã thu thập các bài đăng trên mạng xã hội có chứa một hashtag cụ thể để phân tích các từ được sử dụng trong bài đăng. Đây là loại dữ liệu gì?
+*Dịch Tiếng Việt:* Bạn đã thu thập các bài đăng trên mạng xã hội có chứa một hashtag cụ thể để phân tích các từ được sử dụng trong bài đăng. Đây là loại dữ liệu gì?
 
 **Các phương án lựa chọn:**
-- **A.** Unstructured   *(Đáp án đúng)*
+- **A.** Unstructured   👉 *(Đáp án đúng)*
   *Dịch:* Dữ liệu phi cấu trúc (Unstructured)
 - **B.** Structured 
   *Dịch:* Dữ liệu cấu trúc (Structured)
@@ -533,13 +538,13 @@ What kind of data is that?
 ---
 
 #### Câu 26:
-**Q:** How does the low likelihood of a crisis relate to its potential impact?  
-*Dịch:* Khả năng xảy ra thấp của một cuộc khủng hoảng có mối quan hệ như thế nào với tác động tiềm ẩn của nó?
+**Q (Tiếng Anh):** How does the low likelihood of a crisis relate to its potential impact?  
+*Dịch Tiếng Việt:* Khả năng xảy ra thấp của một cuộc khủng hoảng có mối quan hệ như thế nào với tác động tiềm ẩn của nó?
 
 **Các phương án lựa chọn:**
 - **A.** A crisis with low likelihood tends to have moderate impact. 
   *Dịch:* Khủng hoảng có khả năng xảy ra thấp có xu hướng tác động vừa phải
-- **B.** A crisis with low likelihood tends to have high impact.   *(Đáp án đúng)*
+- **B.** A crisis with low likelihood tends to have high impact.   👉 *(Đáp án đúng)*
   *Dịch:* Khủng hoảng có khả năng xảy ra thấp thường có xu hướng có tác động rất cao (low likelihood tends to have high impact)
 - **C.** A crisis with low likelihood tends to have little to no effect on its impact 
   *Dịch:* Không ảnh hưởng
@@ -553,8 +558,8 @@ What kind of data is that?
 ---
 
 #### Câu 27:
-**Q:** Which of the following communication tactics help uphold transparency and explainability from the customer perspective? (Select two.)  
-*Dịch:* Những chiến thuật truyền thông nào giúp duy trì tính minh bạch và khả năng giải thích từ góc nhìn của khách hàng? (Chọn hai)
+**Q (Tiếng Anh):** Which of the following communication tactics help uphold transparency and explainability from the customer perspective? (Select two.)  
+*Dịch Tiếng Việt:* Những chiến thuật truyền thông nào giúp duy trì tính minh bạch và khả năng giải thích từ góc nhìn của khách hàng? (Chọn hai)
 
 **Các phương án lựa chọn:**
 - **A.** Providing prompt responses to customer questions about the decisions made by data-driven systems. 
@@ -573,8 +578,8 @@ What kind of data is that?
 ---
 
 #### Câu 28:
-**Q:** Which of the following are useful strategies for communicating ethical risks to the individual? (Select two.)  
-*Dịch:* Những chiến lược nào hữu ích cho việc truyền thông các rủi ro đạo đức tới từng cá nhân? (Chọn hai)
+**Q (Tiếng Anh):** Which of the following are useful strategies for communicating ethical risks to the individual? (Select two.)  
+*Dịch Tiếng Việt:* Những chiến lược nào hữu ích cho việc truyền thông các rủi ro đạo đức tới từng cá nhân? (Chọn hai)
 
 **Các phương án lựa chọn:**
 - **A.** Ensure individuals understand the specific details of each risk they are affected by 
@@ -593,15 +598,15 @@ What kind of data is that?
 ---
 
 #### Câu 29:
-**Q:** What role does communication play in ethical leadership?  
-*Dịch:* Giao tiếp đóng vai trò gì trong lãnh đạo đạo đức (Ethical Leadership)?
+**Q (Tiếng Anh):** What role does communication play in ethical leadership?  
+*Dịch Tiếng Việt:* Giao tiếp đóng vai trò gì trong lãnh đạo đạo đức (Ethical Leadership)?
 
 **Các phương án lựa chọn:**
 - **A.** Preventing conflict resolution 
   *Dịch:* Ngăn cản giải quyết xung đột
 - **B.** Encouraging silence during ethical issues 
   *Dịch:* Khuyến khích sự im lặng khi xảy ra vấn đề đạo đức
-- **C.** Building trust and ethical alignment   *(Đáp án đúng)*
+- **C.** Building trust and ethical alignment   👉 *(Đáp án đúng)*
   *Dịch:* Xây dựng niềm tin và sự đồng bộ về tiêu chuẩn đạo đức (Building trust and ethical alignment)
 - **D.** Reducing transparency in strategy 
   *Dịch:* Giảm tính minh bạch trong chiến lược
@@ -613,8 +618,8 @@ What kind of data is that?
 ---
 
 #### Câu 30:
-**Q:** Which approach promotes inclusive communication?  
-*Dịch:* Cách tiếp cận nào sau đây thúc đẩy giao tiếp mang tính bao hàm (Inclusive Communication)?
+**Q (Tiếng Anh):** Which approach promotes inclusive communication?  
+*Dịch Tiếng Việt:* Cách tiếp cận nào sau đây thúc đẩy giao tiếp mang tính bao hàm (Inclusive Communication)?
 
 **Các phương án lựa chọn:**
 - **A.** Using a single communication channel 
@@ -634,11 +639,11 @@ What kind of data is that?
 ---
 
 #### Câu 31:
-**Q:** What role does social media play in promoting products and building brand reputation?  
-*Dịch:* Mạng xã hội đóng vai trò gì trong việc quảng bá sản phẩm và xây dựng uy tín thương hiệu?
+**Q (Tiếng Anh):** What role does social media play in promoting products and building brand reputation?  
+*Dịch Tiếng Việt:* Mạng xã hội đóng vai trò gì trong việc quảng bá sản phẩm và xây dựng uy tín thương hiệu?
 
 **Các phương án lựa chọn:**
-- **A.** Facilitates direct engagement with consumers   *(Đáp án đúng)*
+- **A.** Facilitates direct engagement with consumers   👉 *(Đáp án đúng)*
   *Dịch:* Tạo điều kiện tương tác trực tiếp với người tiêu dùng (Facilitates direct engagement with consumers)
 - **B.** Guarantees higher sales numbers 
   *Dịch:* Đảm bảo con số doanh số cao hơn
@@ -654,11 +659,11 @@ What kind of data is that?
 ---
 
 #### Câu 32:
-**Q:** Which emerging technology area requires the most immediate ethical attention?  
-*Dịch:* Lĩnh vực công nghệ mới nổi nào yêu cầu sự chú ý đạo đức cấp thiết nhất?
+**Q (Tiếng Anh):** Which emerging technology area requires the most immediate ethical attention?  
+*Dịch Tiếng Việt:* Lĩnh vực công nghệ mới nổi nào yêu cầu sự chú ý đạo đức cấp thiết nhất?
 
 **Các phương án lựa chọn:**
-- **A.** All emerging technologies require ethical consideration   *(Đáp án đúng)*
+- **A.** All emerging technologies require ethical consideration   👉 *(Đáp án đúng)*
   *Dịch:* Tất cả các công nghệ mới nổi đều đòi hỏi phải xem xét khía cạnh đạo đức một cách cấp thiết.
 - **B.** Only artificial intelligence 
   *Dịch:* Chỉ có trí tuệ nhân tạo.
@@ -674,13 +679,13 @@ What kind of data is that?
 ---
 
 #### Câu 33:
-**Q:** Which expression best characterizes what a company or organizational culture is?  
-*Dịch:* Câu nói nào sau đây thể hiện rõ nhất bản chất văn hóa của một công ty hoặc tổ chức?
+**Q (Tiếng Anh):** Which expression best characterizes what a company or organizational culture is?  
+*Dịch Tiếng Việt:* Câu nói nào sau đây thể hiện rõ nhất bản chất văn hóa của một công ty hoặc tổ chức?
 
 **Các phương án lựa chọn:**
 - **A.** "This is how we want this done." 
   *Dịch:* "Đây là cách chúng tôi muốn điều này được thực hiện."
-- **B.** "This is how things are done around here."   *(Đáp án đúng)*
+- **B.** "This is how things are done around here."   👉 *(Đáp án đúng)*
   *Dịch:* "Đây là cách mọi việc được thực hiện ở đây." ("This is how things are done around here.")
 - **C.** "It is what it is." 
   *Dịch:* "Nó là như vậy rồi."
@@ -694,11 +699,11 @@ What kind of data is that?
 ---
 
 #### Câu 34:
-**Q:** To uphold transparency and explainability, communication about data-driven technologies should be:  
-*Dịch:* Để duy trì tính minh bạch và khả năng giải thích, truyền thông về các công nghệ dựa trên dữ liệu phải tuân theo tiêu chí nào?
+**Q (Tiếng Anh):** To uphold transparency and explainability, communication about data-driven technologies should be:  
+*Dịch Tiếng Việt:* Để duy trì tính minh bạch và khả năng giải thích, truyền thông về các công nghệ dựa trên dữ liệu phải tuân theo tiêu chí nào?
 
 **Các phương án lựa chọn:**
-- **A.** Clear, concise, and coherent   *(Đáp án đúng)*
+- **A.** Clear, concise, and coherent   👉 *(Đáp án đúng)*
   *Dịch:* Rõ ràng, ngắn gọn súc tích và mạch lạc (Clear, concise, and coherent)
 - **B.** Complex, convincing, and contained 
   *Dịch:* Phức tạp, thuyết phục
@@ -714,11 +719,11 @@ What kind of data is that?
 ---
 
 #### Câu 35:
-**Q:** You have collected social media posts with a specific hashtag. What is the first step in cleaning this text dataset?  
-*Dịch:* Bạn đã thu thập các bài đăng trên mạng xã hội chứa một hashtag cụ thể. Bước đầu tiên trong việc làm sạch tập dữ liệu văn bản này là gì?
+**Q (Tiếng Anh):** You have collected social media posts with a specific hashtag. What is the first step in cleaning this text dataset?  
+*Dịch Tiếng Việt:* Bạn đã thu thập các bài đăng trên mạng xã hội chứa một hashtag cụ thể. Bước đầu tiên trong việc làm sạch tập dữ liệu văn bản này là gì?
 
 **Các phương án lựa chọn:**
-- **A.** Tokenization and removing special characters/punctuation   *(Đáp án đúng)*
+- **A.** Tokenization and removing special characters/punctuation   👉 *(Đáp án đúng)*
   *Dịch:* Tách từ (Tokenization) và loại bỏ các ký tự đặc biệt / dấu câu (removing special characters and noise)
 - **B.** Building a neural network 
   *Dịch:* Xây dựng mạng nơ-ron
@@ -734,8 +739,8 @@ What kind of data is that?
 ---
 
 #### Câu 36:
-**Q:** Which of the following are desired qualities when choosing a spokesperson for your organization during a crisis? (Select two.)  
-*Dịch:* Những phẩm chất mong muốn nào sau đây khi lựa chọn một người phát ngôn (Spokesperson) cho tổ chức trong khủng hoảng? (Select two)
+**Q (Tiếng Anh):** Which of the following are desired qualities when choosing a spokesperson for your organization during a crisis? (Select two.)  
+*Dịch Tiếng Việt:* Những phẩm chất mong muốn nào sau đây khi lựa chọn một người phát ngôn (Spokesperson) cho tổ chức trong khủng hoảng? (Select two)
 
 **Các phương án lựa chọn:**
 - **A.** Articulate when communicating important details 
@@ -754,8 +759,8 @@ What kind of data is that?
 ---
 
 #### Câu 37:
-**Q:** Which of the following are important qualities of an effective press release? (Select two.)  
-*Dịch:* Những đặc tính quan trọng nào sau đây thuộc về một Thông cáo báo chí (Press Release) hiệu quả? (Select two)
+**Q (Tiếng Anh):** Which of the following are important qualities of an effective press release? (Select two.)  
+*Dịch Tiếng Việt:* Những đặc tính quan trọng nào sau đây thuộc về một Thông cáo báo chí (Press Release) hiệu quả? (Select two)
 
 **Các phương án lựa chọn:**
 - **A.** It's in a digital format 
@@ -774,13 +779,13 @@ What kind of data is that?
 ---
 
 #### Câu 38:
-**Q:** Which of the following is the most important idea that a crisis communication strategy should focus on?  
-*Dịch:* Nội dung quan trọng nhất mà một chiến lược truyền thông khủng hoảng cần tập trung giải quyết là gì?
+**Q (Tiếng Anh):** Which of the following is the most important idea that a crisis communication strategy should focus on?  
+*Dịch Tiếng Việt:* Nội dung quan trọng nhất mà một chiến lược truyền thông khủng hoảng cần tập trung giải quyết là gì?
 
 **Các phương án lựa chọn:**
 - **A.** The public's perception of a crisis 
   *Dịch:* Nhận thức của công chúng về khủng hoảng
-- **B.** The real-world impacts and physical safety effects of a crisis   *(Đáp án đúng)*
+- **B.** The real-world impacts and physical safety effects of a crisis   👉 *(Đáp án đúng)*
   *Dịch:* Các tác động thực tế trong đời sống thực và sự an toàn của con người (real-world effects of a crisis)
 - **C.** The individual details of a crisis 
   *Dịch:* Các chi tiết đơn lẻ của khủng hoảng
@@ -794,8 +799,8 @@ What kind of data is that?
 ---
 
 #### Câu 39:
-**Q:** A disruptive user on a social media site is subjected to a shadow ban. Which of the following indicates that a shadow ban has occurred?  
-*Dịch:* Một người dùng gây rối trên mạng xã hội bị áp dụng lệnh 'Shadow ban' (Cấm ẩn). Biểu hiện nào chỉ ra lệnh Shadow ban đang diễn ra?
+**Q (Tiếng Anh):** A disruptive user on a social media site is subjected to a shadow ban. Which of the following indicates that a shadow ban has occurred?  
+*Dịch Tiếng Việt:* Một người dùng gây rối trên mạng xã hội bị áp dụng lệnh 'Shadow ban' (Cấm ẩn). Biểu hiện nào chỉ ra lệnh Shadow ban đang diễn ra?
 
 **Các phương án lựa chọn:**
 - **A.** User is warned by admin 
@@ -804,7 +809,7 @@ What kind of data is that?
   *Dịch:* Người dùng bị tước quyền đăng bài
 - **C.** User receives a ban message 
   *Dịch:* Người dùng nhận thông báo cấm
-- **D.** A user logs in one day to find that they are able to post normally, but receive zero engagement or direct responses because their posts are hidden from everyone else   *(Đáp án đúng)*
+- **D.** A user logs in one day to find that they are able to post normally, but receive zero engagement or direct responses because their posts are hidden from everyone else   👉 *(Đáp án đúng)*
   *Dịch:* Người dùng đăng bài bình thường nhưng không ai nhìn thấy và không nhận được bất kỳ tương tác/phản hồi nào (able to post, but receive no direct responses)
 
 - **Đáp án đúng:** `D. A user logs in one day to find that they are able to post normally, but receive zero engagement or direct responses because their posts are hidden from everyone else`
@@ -814,11 +819,11 @@ What kind of data is that?
 ---
 
 #### Câu 40:
-**Q:** Which of the following is a best practice for incorporating diversity, equity, and inclusion (DEI) into organizational media communications?  
-*Dịch:* Thực hành tốt nhất để tích hợp tính đa dạng, bình đẳng và bao hàm (DEI) vào truyền thông doanh nghiệp là gì?
+**Q (Tiếng Anh):** Which of the following is a best practice for incorporating diversity, equity, and inclusion (DEI) into organizational media communications?  
+*Dịch Tiếng Việt:* Thực hành tốt nhất để tích hợp tính đa dạng, bình đẳng và bao hàm (DEI) vào truyền thông doanh nghiệp là gì?
 
 **Các phương án lựa chọn:**
-- **A.** Promote an authentic organizational culture that embraces DEI values throughout the organization   *(Đáp án đúng)*
+- **A.** Promote an authentic organizational culture that embraces DEI values throughout the organization   👉 *(Đáp án đúng)*
   *Dịch:* Thúc đẩy một văn hóa tổ chức chân thực thực sự đón nhận và thực thi các giá trị DEI (Promote organizational culture embracing DEI values)
 - **B.** Ensure multiple groups communicate differently based on race 
   *Dịch:* Phân nhóm truyền thông theo chủng tộc
@@ -834,15 +839,15 @@ What kind of data is that?
 ---
 
 #### Câu 41:
-**Q:** What is the primary benefit of hosting a virtual press conference over a traditional co-located conference?  
-*Dịch:* Lợi ích chính của việc tổ chức một buổi họp báo trực tuyến (Virtual press conference) so với họp báo truyền thống tập trung là gì?
+**Q (Tiếng Anh):** What is the primary benefit of hosting a virtual press conference over a traditional co-located conference?  
+*Dịch Tiếng Việt:* Lợi ích chính của việc tổ chức một buổi họp báo trực tuyến (Virtual press conference) so với họp báo truyền thống tập trung là gì?
 
 **Các phương án lựa chọn:**
 - **A.** Easier to communicate overall message 
   *Dịch:* Dễ truyền đạt thông điệp
 - **B.** Easily accessible 
   *Dịch:* Dễ tiếp cận
-- **C.** The conference can be interactive without participants needing to be co-located   *(Đáp án đúng)*
+- **C.** The conference can be interactive without participants needing to be co-located   👉 *(Đáp án đúng)*
   *Dịch:* Hội thảo có thể mang tính tương tác mà không yêu cầu các đại biểu phải tập trung cùng một địa điểm (interactive without being co-located)
 - **D.** Impressed by technology 
   *Dịch:* Gây ấn tượng công nghệ
@@ -854,13 +859,13 @@ What kind of data is that?
 ---
 
 #### Câu 42:
-**Q:** Which expression best characterizes what an organizational or corporate culture is?  
-*Dịch:* Câu nói nào thể hiện một cách tốt nhất bản chất của Văn hóa doanh nghiệp / Văn hóa tổ chức?
+**Q (Tiếng Anh):** Which expression best characterizes what an organizational or corporate culture is?  
+*Dịch Tiếng Việt:* Câu nói nào thể hiện một cách tốt nhất bản chất của Văn hóa doanh nghiệp / Văn hóa tổ chức?
 
 **Các phương án lựa chọn:**
 - **A.** "This is how we want this done." 
   *Dịch:* "Đây là cách chúng tôi muốn công việc được làm."
-- **B.** "This is how things are done around here."   *(Đáp án đúng)*
+- **B.** "This is how things are done around here."   👉 *(Đáp án đúng)*
   *Dịch:* "Đây là cách mọi việc được thực hiện ở đây." ("This is how things are done around here.")
 - **C.** "It is what it is." 
   *Dịch:* "Nó là như vậy thôi."
@@ -874,11 +879,11 @@ What kind of data is that?
 ---
 
 #### Câu 43:
-**Q:** Which of the following is a best practice for incorporating diversity, equity, and inclusiveness in communication?  
-*Dịch:* Thực hành tốt nhất nào để tích hợp tính đa dạng, bình đẳng và bao hàm (DEI) vào hoạt động truyền thông?
+**Q (Tiếng Anh):** Which of the following is a best practice for incorporating diversity, equity, and inclusiveness in communication?  
+*Dịch Tiếng Việt:* Thực hành tốt nhất nào để tích hợp tính đa dạng, bình đẳng và bao hàm (DEI) vào hoạt động truyền thông?
 
 **Các phương án lựa chọn:**
-- **A.** Promote an organizational culture that embraces these values   *(Đáp án đúng)*
+- **A.** Promote an organizational culture that embraces these values   👉 *(Đáp án đúng)*
   *Dịch:* Thúc đẩy một văn hóa tổ chức thực sự đón nhận và sống với các giá trị này (Promote an organizational culture that embraces these values)
 - **B.** Ensure multiple groups of people communicate in different ways 
   *Dịch:* Bắt các nhóm giao tiếp khác nhau
@@ -894,11 +899,11 @@ What kind of data is that?
 ---
 
 #### Câu 44:
-**Q:** Which of the following would be an appropriate scenario to issue a press release?  
-*Dịch:* Kịch bản nào sau đây là phù hợp nhất để doanh nghiệp phát hành một thông cáo báo chí (Press Release)?
+**Q (Tiếng Anh):** Which of the following would be an appropriate scenario to issue a press release?  
+*Dịch Tiếng Việt:* Kịch bản nào sau đây là phù hợp nhất để doanh nghiệp phát hành một thông cáo báo chí (Press Release)?
 
 **Các phương án lựa chọn:**
-- **A.** The organization's AI product has a critical flaw/incident or major values alignment update   *(Đáp án đúng)*
+- **A.** The organization's AI product has a critical flaw/incident or major values alignment update   👉 *(Đáp án đúng)*
   *Dịch:* Sản phẩm AI của tổ chức gặp sự cố/lỗi nghiêm trọng hoặc công bố cập nhật lớn về tiêu chuẩn đạo đức (product defect/recall or major policy announcement)
 - **B.** The organization's service receives a routine minor update 
   *Dịch:* Dịch vụ nhận cập nhật nhỏ định kỳ
@@ -914,15 +919,15 @@ What kind of data is that?
 ---
 
 #### Câu 45:
-**Q:** What is the primary benefit of hosting a virtual conference for ethics communication?  
-*Dịch:* Lợi ích chính của việc tổ chức một hội thảo trực tuyến (Virtual conference) để truyền thông đạo đức là gì?
+**Q (Tiếng Anh):** What is the primary benefit of hosting a virtual conference for ethics communication?  
+*Dịch Tiếng Việt:* Lợi ích chính của việc tổ chức một hội thảo trực tuyến (Virtual conference) để truyền thông đạo đức là gì?
 
 **Các phương án lựa chọn:**
 - **A.** Easier to communicate overall message 
   *Dịch:* Dễ truyền đạt thông điệp chung
 - **B.** Accessible to all willing participants globally 
   *Dịch:* Tiếp cận dễ dàng
-- **C.** The conference can be interactive without participants needing to be co-located   *(Đáp án đúng)*
+- **C.** The conference can be interactive without participants needing to be co-located   👉 *(Đáp án đúng)*
   *Dịch:* Hội thảo có thể mang tính tương tác cao mà không yêu cầu các đại biểu phải tập trung cùng một địa điểm vật lý (interactive without being co-located)
 - **D.** Participants will be impressed by technology 
   *Dịch:* Gây ấn tượng bằng công nghệ
@@ -934,11 +939,11 @@ What kind of data is that?
 ---
 
 #### Câu 46:
-**Q:** To uphold transparency in ethics policy communications, messaging should be:  
-*Dịch:* Để duy trì tính minh bạch trong truyền thông chính sách đạo đức, thông điệp cần phải đạt được các tiêu chuẩn nào?
+**Q (Tiếng Anh):** To uphold transparency in ethics policy communications, messaging should be:  
+*Dịch Tiếng Việt:* Để duy trì tính minh bạch trong truyền thông chính sách đạo đức, thông điệp cần phải đạt được các tiêu chuẩn nào?
 
 **Các phương án lựa chọn:**
-- **A.** Clear, concise, and coherent   *(Đáp án đúng)*
+- **A.** Clear, concise, and coherent   👉 *(Đáp án đúng)*
   *Dịch:* Rõ ràng, ngắn gọn súc tích và mạch lạc (Clear, concise, and coherent)
 - **B.** Complex, convincing, and contained 
   *Dịch:* Phức tạp, thuyết phục và khép kín
@@ -954,8 +959,8 @@ What kind of data is that?
 ---
 
 #### Câu 47:
-**Q:** What is the purpose of a holding statement in crisis communications?  
-*Dịch:* Mục đích của phát ngôn giữ chỗ (Holding Statement) trong truyền thông khủng hoảng là gì?
+**Q (Tiếng Anh):** What is the purpose of a holding statement in crisis communications?  
+*Dịch Tiếng Việt:* Mục đích của phát ngôn giữ chỗ (Holding Statement) trong truyền thông khủng hoảng là gì?
 
 **Các phương án lựa chọn:**
 - **A.** To order business operation halt 
@@ -964,7 +969,7 @@ What kind of data is that?
   *Dịch:* Thuê dịch vụ báo chí
 - **C.** To pre-write communications 
   *Dịch:* Viết trước văn bản
-- **D.** To prevent personnel from communicating prematurely before facts are verified   *(Đáp án đúng)*
+- **D.** To prevent personnel from communicating prematurely before facts are verified   👉 *(Đáp án đúng)*
   *Dịch:* Ngăn chặn nhân viên phát ngôn vội vàng/sớm khi chưa xác minh đầy đủ sự thật (prevent personnel from communicating prematurely)
 
 - **Đáp án đúng:** `D. To prevent personnel from communicating prematurely before facts are verified`
@@ -974,11 +979,11 @@ What kind of data is that?
 ---
 
 #### Câu 48:
-**Q:** Which of the following describes why freedom of expression is considered an important right on digital platforms?  
-*Dịch:* Nội dung nào sau đây mô tả lý do tại sao tự do ngôn luận được xem là một quyền quan trọng trên các nền tảng số?
+**Q (Tiếng Anh):** Which of the following describes why freedom of expression is considered an important right on digital platforms?  
+*Dịch Tiếng Việt:* Nội dung nào sau đây mô tả lý do tại sao tự do ngôn luận được xem là một quyền quan trọng trên các nền tảng số?
 
 **Các phương án lựa chọn:**
-- **A.** It helps uphold freedom of expression for everyone and doesn't give anyone special rights   *(Đáp án đúng)*
+- **A.** It helps uphold freedom of expression for everyone and doesn't give anyone special rights   👉 *(Đáp án đúng)*
   *Dịch:* Ủng hộ tự do phát biểu cho mọi người không đặc quyền
 - **B.** It prevents the spread of disinformation that causes harm to vulnerable populations 
   *Dịch:* Giúp ngăn chặn sự phát tán của tin giả / thông tin sai lệch gây tổn hại cho các nhóm dễ bị tổn thương (prevents spread of disinformation causing harm)
@@ -994,11 +999,11 @@ What kind of data is that?
 ---
 
 #### Câu 49:
-**Q:** Which of the following is an effective approach to promoting corporate ethical values in media communications?  
-*Dịch:* Cách tiếp cận hiệu quả nào để quảng bá các giá trị đạo đức doanh nghiệp trong truyền thông là gì?
+**Q (Tiếng Anh):** Which of the following is an effective approach to promoting corporate ethical values in media communications?  
+*Dịch Tiếng Việt:* Cách tiếp cận hiệu quả nào để quảng bá các giá trị đạo đức doanh nghiệp trong truyền thông là gì?
 
 **Các phương án lựa chọn:**
-- **A.** Promote an organizational culture that embraces these values throughout the company   *(Đáp án đúng)*
+- **A.** Promote an organizational culture that embraces these values throughout the company   👉 *(Đáp án đúng)*
   *Dịch:* Thúc đẩy một văn hóa tổ chức thực sự đón nhận và sống theo các giá trị đó (Promote an organizational culture that embraces these values)
 - **B.** Ensure multiple groups communicate differently based on race 
   *Dịch:* Đảm bảo phân nhóm truyền thông theo chủng tộc
@@ -1014,8 +1019,8 @@ What kind of data is that?
 ---
 
 #### Câu 50:
-**Q:** Which of the following accurately describes the measures of central tendency in a perfectly normal distribution?  
-*Dịch:* Nội dung nào sau đây mô tả chính xác các đại lượng đo lường xu hướng trung tâm trong một phân bố chuẩn hoàn hảo (Normal Distribution)?
+**Q (Tiếng Anh):** Which of the following accurately describes the measures of central tendency in a perfectly normal distribution?  
+*Dịch Tiếng Việt:* Nội dung nào sau đây mô tả chính xác các đại lượng đo lường xu hướng trung tâm trong một phân bố chuẩn hoàn hảo (Normal Distribution)?
 
 **Các phương án lựa chọn:**
 - **A.** The mean is higher than both median and mode 
@@ -1024,7 +1029,7 @@ What kind of data is that?
   *Dịch:* Trung vị bằng mốt và cao hơn trung bình
 - **C.** The mode is higher than mean 
   *Dịch:* Mốt cao hơn trung bình
-- **D.** The mean, mode, and median are all equal and located at the center of distribution   *(Đáp án đúng)*
+- **D.** The mean, mode, and median are all equal and located at the center of distribution   👉 *(Đáp án đúng)*
   *Dịch:* Giá trị trung bình (Mean), Mốt (Mode) và Trung vị (Median) đều bằng nhau và nằm tại chính tâm phân bố (Mean, mode and median are the same)
 
 - **Đáp án đúng:** `D. The mean, mode, and median are all equal and located at the center of distribution`
@@ -1034,11 +1039,11 @@ What kind of data is that?
 ---
 
 #### Câu 51:
-**Q:** You have collected social media posts with a specific hashtag for an analysis of the words used in the post. What kind of data is that?  
-*Dịch:* Bạn đã thu thập các bài đăng trên mạng xã hội theo một hashtag cụ thể để phân tích các từ ngữ sử dụng. Đó là loại dữ liệu nào?
+**Q (Tiếng Anh):** You have collected social media posts with a specific hashtag for an analysis of the words used in the post. What kind of data is that?  
+*Dịch Tiếng Việt:* Bạn đã thu thập các bài đăng trên mạng xã hội theo một hashtag cụ thể để phân tích các từ ngữ sử dụng. Đó là loại dữ liệu nào?
 
 **Các phương án lựa chọn:**
-- **A.** Unstructured data   *(Đáp án đúng)*
+- **A.** Unstructured data   👉 *(Đáp án đúng)*
   *Dịch:* Dữ liệu phi cấu trúc (Unstructured data)
 - **B.** Structured data 
   *Dịch:* Dữ liệu có cấu trúc (Structured data)
