@@ -6,18 +6,9 @@
 ## MOD-01: AI Ethics, Algorithmic Fairness & Bias Mitigation
 ### Đạo đức AI, Tính công bằng Thuật toán & Giảm thiểu Định kiến
 
-#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 4 Nguyên Tắc)
-- **1. Mục A - Core Concept: Algorithmic Fairness ensures AI systems produce non-discriminatory outputs regardless of protected attributes (race, gender, age, religion, or socioeconomic background).**
-  *Dịch: Mục A - Khái niệm Cốt lõi: Tính công bằng thuật toán đảm bảo các hệ thống AI đưa ra kết quả không phân biệt đối xử bất kể các thuộc tính được bảo vệ (chủng tộc, giới tính, tuổi tác, tôn giáo hay hoàn cảnh kinh tế xã hội).*
-
-- **2. Mục B - 4 Bias Types: (1) Historical Bias: Pre-existing societal inequalities embedded in historical data. (2) Selection/Representation Bias: Underrepresenting specific demographic subgroups in training data. (3) Measurement Bias: Using proxy metrics that fail to accurately capture target traits. (4) Automation Bias: Over-relying on automated decision systems uncritically while ignoring contrary evidence.**
-  *Dịch: Mục B - 4 Loại Định kiến: (1) Định kiến Lịch sử: Bất bình đẳng xã hội tồn tại sẵn được đưa vào dữ liệu. (2) Định kiến Lựa chọn/Đại diện: Thiếu hụt dữ liệu của các nhóm dân số cụ thể. (3) Định kiến Đo lường: Sử dụng chỉ số thay thế không phản ánh đúng thuộc tính cần đo. (4) Định kiến Tự động hóa: Quá tin tưởng vào hệ thống tự động mà bỏ qua bằng chứng trái ngược.*
-
-- **3. Mục B - 3 Bias Mitigation Strategies: (1) Pre-processing: Re-weighting, oversampling, or data balancing before training. (2) In-processing: Adding fairness constraints into the loss function during model training. (3) Post-processing: Adjusting decision thresholds after model training.**
-  *Dịch: Mục B - 3 Chiến lược Giảm thiểu Định kiến: (1) Tiền xử lý: Tái đánh trọng số, tăng mẫu hoặc cân bằng dữ liệu trước khi huấn luyện. (2) Trong xử lý: Thêm ràng buộc công bằng vào hàm mất mát khi huấn luyện. (3) Hậu xử lý: Điều chỉnh ngưỡng ra quyết định sau khi huấn luyện.*
-
-- **4. Mục C - Decision Rule: Simply increasing dataset volume without checking subgroup balance or auditing historical bias will NEVER eliminate algorithmic bias (Data Size Fallacy). Audit dataset composition before training.**
-  *Dịch: Mục C - Quy tắc Xử lý: Chỉ tăng kích thước tập dữ liệu mà không kiểm tra sự cân bằng của các nhóm hoặc kiểm toán định kiến lịch sử sẽ KHÔNG BAO GIỜ xóa bỏ định kiến (Ngụy biện Quy mô Dữ liệu). Phải kiểm toán thành phần dữ liệu trước khi huấn luyện.*
+#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 1 Nguyên Tắc)
+- **1. Mục 1 - Khái niệm Cốt lõi & Bản đồ Định kiến (Core Concepts & Bias Taxonomy)...**
+  *Dịch: Mục 1 - Khái niệm Cốt lõi & Bản đồ Định kiến...*
 
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (106 câu)
 
@@ -1827,19 +1818,7 @@ choose to**
 ## MOD-02: Machine Learning Models, Training Data & Probability
 ### Mô hình Máy học, Dữ liệu Huấn luyện & Xác suất
 
-#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 4 Nguyên Tắc)
-- **1. Mục A - Core Concept: Machine Learning predictive models calculate statistical probabilities of future outcomes based on historical patterns, rather than producing absolute certainties.**
-  *Dịch: Mục A - Khái niệm Cốt lõi: Các mô hình máy học dự đoán tính toán xác suất thống kê của các kết quả trong tương lai dựa trên các mẫu lịch sử, chứ không đưa ra sự khẳng định tuyệt đối.*
-
-- **2. Mục B - Model Invariance & Data Re-introduction: What can be learned from a predictive model should NOT change erraticly if excluded valid individual data is re-introduced into the training set.**
-  *Dịch: Mục B - Tính Bất biến Mô hình & Đưa lại Dữ liệu: Những gì học được từ mô hình dự đoán KHÔNG ĐƯỢC thay đổi tùy tiện nếu dữ liệu cá nhân hợp lệ bị loại trừ trước đó được đưa lại vào tập huấn luyện.*
-
-- **3. Mục B - Transparency of Inadequacies: Developers are ethically required to communicate dataset limitations, sample omissions, edge cases, and confidence intervals to end-users.**
-  *Dịch: Mục B - Minh bạch sự Thiếu hụt: Nhà phát triển có nghĩa vụ đạo đức phải thông báo rõ ràng các hạn chế dữ liệu, điểm thiếu hụt mẫu, trường hợp biên và khoảng tin cậy cho người dùng.*
-
-- **4. Mục C - Decision Rule: Overfitted models capture statistical noise and perform poorly on unseen real-world inputs. Avoid proxy discrimination where removing protected attributes leaves highly correlated proxies intact.**
-  *Dịch: Mục C - Quy tắc Xử lý: Mô hình overfit học thuộc cả nhiễu thống kê và hoạt động kém trên dữ liệu thực tế mới. Tránh phân biệt đối xử qua biến thay thế (Proxy Discrimination) khi chỉ xóa thuộc tính bảo vệ nhưng giữ lại các biến có tương quan cao.*
-
+#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 0 Nguyên Tắc)
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (82 câu)
 
 **Q1: What can be learned from a predictive model should not change if the excluded in the training set is either included or**
@@ -3238,16 +3217,7 @@ remaining 20% of data is referred to as an**
 ## MOD-03: Privacy, Data Protection & Laws (GDPR, PIPEDA, CCPA, COPPA, FERPA, HIPAA)
 ### Quyền riêng tư, Bảo vệ Dữ liệu & Luật pháp (GDPR, PIPEDA, CCPA, COPPA, FERPA, HIPAA)
 
-#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 3 Nguyên Tắc)
-- **1. Mục A - Core Concept: Data Privacy Laws regulate personal data collection, storage, processing, and disclosure to safeguard individual rights against unauthorized exploitation.**
-  *Dịch: Mục A - Khái niệm Cốt lõi: Luật Quyền riêng tư Dữ liệu điều chỉnh việc thu thập, lưu trữ, xử lý và tiết lộ dữ liệu cá nhân để bảo vệ quyền lợi cá nhân trước sự khai thác trái phép.*
-
-- **2. Mục B - Key Legal Frameworks: (1) PIPEDA (Canada): Balances individual privacy rights with private-sector business needs to collect/use commercial data for legitimate purposes. (2) GDPR (EU): Strict user consent, Privacy by Design, Data Minimization, Right to Erasure / Right to be Forgotten. (3) COPPA (US): Requires verifiable parental consent before collecting personal data online from children under 13. (4) CCPA (California): Right to know, opt-out of data sales, and request deletion. (5) FERPA & HIPAA: FERPA protects student educational records; HIPAA protects Protected Health Information (PHI).**
-  *Dịch: Mục B - Các Khung Pháp Lý Cốt Lõi: (1) PIPEDA (Canada): Cân bằng giữa quyền riêng tư cá nhân với nhu cầu thương mại hợp pháp của doanh nghiệp tư nhân. (2) GDPR (EU): Đồng ý nghiêm ngặt, Bảo mật từ khâu thiết kế, Tối thiểu hóa dữ liệu, Quyền được xóa / lãng quên. (3) COPPA (Mỹ): Yêu cầu sự đồng ý xác thực của cha mẹ trước khi thu thập dữ liệu trẻ em dưới 13 tuổi trực tuyến. (4) CCPA (California): Quyền được biết, từ chối bán dữ liệu và yêu cầu xóa. (5) FERPA & HIPAA: FERPA bảo vệ hồ sơ học sinh sinh viên; HIPAA bảo vệ thông tin sức khỏe (PHI).*
-
-- **3. Mục C - Decision Rule: De-identification and Anonymization require stripping direct identifiers and applying k-anonymity to prevent re-identification attacks when publishing research or commercial datasets.**
-  *Dịch: Mục C - Quy tắc Xử lý: Mất định danh và Nặc danh hóa yêu cầu loại bỏ các định danh trực tiếp và áp dụng k-nặc danh để ngăn chặn tấn công tái định danh khi công bố dữ liệu.*
-
+#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 0 Nguyên Tắc)
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (35 câu)
 
 **Q1: Identify the privacy risks associated with data collection, transmission, storage, and access in ambient intelligence systems. Which risk is most prevalent due to constant data monitoring?**
@@ -3848,19 +3818,7 @@ remaining 20% of data is referred to as an**
 ## MOD-04: Information Security, Threat Modeling (STRIDE, VAST) & Cyber Threats
 ### An toàn Bảo mật, Mô hình hóa Mối đe dọa (STRIDE, VAST) & Mã độc
 
-#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 4 Nguyên Tắc)
-- **1. Mục A - Core Concept: Threat Modeling systematically identifies architectural security risks, potential attack vectors, and countermeasures across system boundaries.**
-  *Dịch: Mục A - Khái niệm Cốt lõi: Mô hình hóa mối đe dọa hệ thống hóa việc nhận diện rủi ro bảo mật kiến trúc, các hướng tấn công tiềm ẩn và biện pháp khắc phục.*
-
-- **2. Mục B - STRIDE & VAST Frameworks: Applied in Threat Modeling or Security Analysis tools. STRIDE acronym: (S) Spoofing - Violates Authenticity; (T) Tampering - Violates Integrity; (R) Repudiation - Violates Non-repudiation; (I) Information Disclosure - Violates Confidentiality; (D) Denial of Service - Violates Availability; (E) Elevation of Privilege - Violates Authorization. VAST (Visual, Agile, Threat modeling) integrates security into agile software pipelines.**
-  *Dịch: Mục B - Khung STRIDE & VAST: Được áp dụng trong các công cụ Mô hình hóa Mối đe dọa hoặc Phân tích Bảo mật. STRIDE: (S) Spoofing - Giả mạo (Vi phạm Xác thực); (T) Tampering - Xáo trộn (Vi phạm Tính toàn vẹn); (R) Repudiation - Phủ nhận (Vi phạm Tính chống phủ nhận); (I) Information Disclosure - Tiết lộ thông tin (Vi phạm Tính bảo mật); (D) Denial of Service - Từ chối dịch vụ (Vi phạm Tính sẵn sàng); (E) Elevation of Privilege - Nâng quyền (Vi phạm Phân quyền). VAST: Khung mô hình hóa mối đe dọa trực quan, linh hoạt cho quy trình Agile.*
-
-- **3. Mục B - Cyber Threat Types: Spyware: Malicious software covertly installed to monitor, log, and transmit user activity and credentials without consent. Ransomware: Encrypts files demanding ransom. Trojan: Disguised as legitimate software. Hacktivism: Cyber attacks motivated primarily by political, social, or ideological causes rather than personal financial profit.**
-  *Dịch: Mục B - Các Loại Mã Độc & Tấn Công: Spyware (Phần mềm theo dõi): Mã độc được cài lén lút để giám sát, ghi lại và truyền thông tin hành vi người dùng. Ransomware: Mã hóa tống tiền. Trojan: Núp bóng phần mềm hợp pháp. Hacktivism: Tấn công mạng vì động cơ chính trị, xã hội hoặc tư tưởng chứ không vì lợi nhuận tài chính.*
-
-- **4. Mục C - Decision Rule: Security controls must follow Defense-in-Depth and Least Privilege principles. Apply STRIDE at the design phase before writing code.**
-  *Dịch: Mục C - Quy tắc Xử lý: Kiểm soát an ninh phải tuân thủ nguyên tắc Phòng thủ theo chiều sâu (Defense-in-Depth) và Quyền tối thiểu (Least Privilege). Áp dụng STRIDE ngay từ khâu thiết kế trước khi viết code.*
-
+#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 0 Nguyên Tắc)
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (29 câu)
 
 **Q1: In which of the following could STRIDE or VAST classifications be applied?**
@@ -4355,16 +4313,7 @@ remaining 20% of data is referred to as an**
 ## MOD-05: Intellectual Property, Copyright, Patents & Trade Secrets
 ### Sở hữu Trí tuệ, Bản quyền, Bằng sáng chế & Bí mật Thương mại
 
-#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 3 Nguyên Tắc)
-- **1. Mục A - Core Concept: Intellectual Property (IP) laws protect non-tangible human intellect creations, granting exclusive legal rights to creators for specified durations.**
-  *Dịch: Mục A - Khái niệm Cốt lõi: Luật Sở hữu Trí tuệ (IP) bảo vệ các sản phẩm sáng tạo trí tuệ phi vật thể, cấp quyền pháp lý độc quyền cho tác giả trong khoảng thời gian xác định.*
-
-- **2. Mục B - 4 Forms of IP Protection: (1) Copyright: Protects fixed original expressions (code, text, art, music) automatically upon creation. (2) Patent: Protects novel, non-obvious functional inventions and processes for ~20 years in exchange for public disclosure. (3) Trade Secret: Protects confidential formulas, algorithms, or client lists indefinitely as long as strict secrecy measures are enforced (NO public registration required). (4) Trademark: Protects brand names, logos, and commercial slogans.**
-  *Dịch: Mục B - 4 Hình thức Bảo hộ IP: (1) Bản quyền (Copyright): Bảo vệ bản thể hiện ý tưởng (mã nguồn, văn bản, đồ họa) tự động khi tạo ra. (2) Bằng sáng chế (Patent): Bảo vệ phát minh/quy trình chức năng mới trong khoảng 20 năm để đổi lấy việc công khai thông tin. (3) Bí mật Thương mại (Trade Secret): Bảo vệ công thức, thuật toán, danh sách khách hàng bảo mật vô thời hạn miễn là giữ kín (KHÔNG cần đăng ký công khai). (4) Nhãn hiệu (Trademark): Bảo vệ tên thương hiệu, logo, khẩu hiệu.*
-
-- **3. Mục C - Decision Rule: Use Trade Secrets for proprietary algorithms when rapid technological change makes public patent disclosure disadvantageous.**
-  *Dịch: Mục C - Quy tắc Xử lý: Sử dụng Bí mật Thương mại cho các thuật toán độc quyền khi sự thay đổi công nghệ nhanh chóng khiến việc công khai bằng sáng chế không có lợi.*
-
+#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 0 Nguyên Tắc)
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (4 câu)
 
 **Q1: Which of the following is a misuse of intellectual property (IP) when it comes to ethical accountability for an organization?**
@@ -4438,19 +4387,7 @@ remaining 20% of data is referred to as an**
 ## MOD-06: Risk Management, Liability, Accountability & Governance
 ### Quản lý Rủi ro, Trách nhiệm Giải trình & Quản trị Tổ chức
 
-#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 4 Nguyên Tắc)
-- **1. Mục A - Core Concept: Organizational Governance ensures technology deployments align with legal standards, societal safety, risk appetite, and corporate ethical duties.**
-  *Dịch: Mục A - Khái niệm Cốt lõi: Quản trị Tổ chức đảm bảo việc triển khai công nghệ tuân thủ các tiêu chuẩn pháp lý, an toàn xã hội, mức độ chấp nhận rủi ro và nghĩa vụ đạo đức.*
-
-- **2. Mục B - Proactive Risk Management: Taking a proactive approach to addressing liability issues prevents legal disputes, financial loss, reputational damage, and safety failures before products reach users.**
-  *Dịch: Mục B - Quản lý Rủi ro Chủ động: Chủ động giải quyết các vấn đề trách nhiệm pháp lý từ sớm giúp ngăn ngừa tranh chấp pháp lý, tổn hại tài chính, mất uy tín và sự cố an toàn trước khi sản phẩm đến tay người dùng.*
-
-- **3. Mục B - Categorization of Ethical Risks: Categorizing ethical risks into distinct domains allows organizations to allocate resources efficiently, assign clear governance ownership, and prioritize risk mitigations.**
-  *Dịch: Mục B - Phân loại Rủi ro Đạo đức: Phân loại rủi ro thành các nhóm rõ ràng giúp tổ chức phân bổ nguồn lực hiệu quả, xác định trách nhiệm quản trị và ưu tiên các giải pháp giảm thiểu.*
-
-- **4. Mục C - Decision Rule: Automated systems require Human Oversight (Human-in-the-loop), auditable decision logs, transparent operational rules, and clear organizational ownership for all outputs.**
-  *Dịch: Mục C - Quy tắc Xử lý: Các hệ thống tự động đòi hỏi phải có Giám sát của Con người (Human-in-the-loop), nhật ký kiểm toán có thể truy vết, quy tắc minh bạch và trách nhiệm tổ chức rõ ràng.*
-
+#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 0 Nguyên Tắc)
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (66 câu)
 
 **Q1: Which element is essential for system accountability?**
@@ -5574,19 +5511,7 @@ remaining 20% of data is referred to as an**
 ## MOD-07: Crisis Communication, Media Management & Public Trust
 ### Truyền thông Khủng hoảng, Quản lý Truyền thông & Niềm tin Công chúng
 
-#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 4 Nguyên Tắc)
-- **1. Mục A - Core Concept: Crisis Communication manages organization-wide messaging during ethical breaches or system failures to mitigate harm and maintain credibility.**
-  *Dịch: Mục A - Khái niệm Cốt lõi: Truyền thông Khủng hoảng quản lý thông điệp của toàn tổ chức khi xảy ra vi phạm đạo đức hoặc sự cố hệ thống nhằm giảm thiểu thiệt hại và duy trì uy tín.*
-
-- **2. Mục B - Primary Idea (Public Trust): The primary idea managed by a crisis communication program during an ethical breach is PUBLIC TRUST and providing timely, accurate, transparent facts.**
-  *Dịch: Mục B - Ý tưởng Cốt lõi (Niềm tin Công chúng): Ý tưởng quan trọng nhất cần quản lý trong khủng hoảng đạo đức là NIỀM TIN CỦA CÔNG CHÚNG và cung cấp thông tin minh bạch, chính xác, kịp thời.*
-
-- **3. Mục B - Media Plan Core Tools: An effective media communication plan relies on designating a SINGLE TRAINED SPOKESPERSON, establishing verified press release channels, and issuing transparent statements.**
-  *Dịch: Mục B - Công cụ Cốt lõi Kế hoạch Truyền thông: Kế hoạch truyền thông hiệu quả dựa vào việc chỉ định MỘT NGƯỜI PHÁT NGÔN DUY NHẤT ĐƯỢC ĐÀO TẠO, thiết lập kênh thông cáo báo chí xác minh và phát ngôn minh bạch.*
-
-- **4. Mục C - Decision Rule: When a data breach leaks customer passwords: (1) Issue an immediate public acknowledgment, (2) Notify affected users transparently, (3) Force password resets immediately. Never attempt to conceal or cover up failures (Cover-up destroys long-term trust and increases regulatory fines).**
-  *Dịch: Mục C - Quy tắc Xử lý Tình huống: Khi xảy ra rò rỉ dữ liệu mật khẩu: (1) Phát ngôn công khai thừa nhận sự cố ngay lập tức, (2) Thông báo minh bạch cho người dùng bị ảnh hưởng, (3) Buộc người dùng đặt lại mật khẩu ngay lập tức. Không bao giờ che giấu hoặc bóp méo thông tin.*
-
+#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 0 Nguyên Tắc)
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (38 câu)
 
 **Q1: Which of the following are tools of an effective media communication plan? (Select two.)**
@@ -6239,19 +6164,7 @@ What kind of data is that?**
 ## MOD-08: Professional Ethics, Whistleblowing & Codes of Conduct
 ### Đạo đức Nghề nghiệp, Tố giác (Whistleblowing) & Quy tắc Ứng xử
 
-#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 4 Nguyên Tắc)
-- **1. Mục A - Core Concept: Professional Ethics codes establish mandatory moral obligations for IT practitioners, binding individual behavior to societal welfare.**
-  *Dịch: Mục A - Khái niệm Cốt lõi: Quy tắc Đạo đức Nghề nghiệp thiết lập các nghĩa vụ đạo đức bắt buộc đối với chuyên gia CNTT, gắn kết hành vi cá nhân với phúc lợi xã hội.*
-
-- **2. Mục B - Professional Codes (ACM/IEEE): Mandate that computing professionals put public health, safety, privacy, and social welfare ahead of corporate profits or personal advancement.**
-  *Dịch: Mục B - Quy tắc Nghề nghiệp (ACM/IEEE): Quy định chuyên gia CNTT phải đặt sức khỏe, an toàn công cộng, quyền riêng tư và lợi ích xã hội lên trên lợi nhuận doanh nghiệp hay thăng tiến cá nhân.*
-
-- **3. Mục B - Whistleblowing Protocol: Disclosing illegal, fraudulent, or harmful organizational activities to external regulatory bodies or the public as a mandatory last resort after internal reporting channels are exhausted or ignored.**
-  *Dịch: Mục B - Quy trình Tố giác (Whistleblowing): Tiết lộ các hành vi bất hợp pháp hoặc độc hại của tổ chức ra cơ quan quản lý bên ngoài hoặc công chúng như giải pháp cuối cùng khi các kênh nội bộ bị ngó lơ.*
-
-- **4. Mục C - Decision Rule: Avoid Conflicts of Interest by fully disclosing personal or financial ties that could compromise objective professional judgment.**
-  *Dịch: Mục C - Quy tắc Xử lý: Tránh Xung đột Lợi ích bằng cách tiết lộ đầy đủ các mối quan hệ cá nhân hoặc tài chính có thể làm ảnh hưởng đến sự khách quan nghề nghiệp.*
-
+#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 0 Nguyên Tắc)
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (13 câu)
 
 **Q1: What does a code of ethics provide for a data-driven organization?**
@@ -6478,16 +6391,7 @@ What kind of data is that?**
 ## MOD-09: Data Analysis, Correlation & Scatter Plot Interpretation
 ### Phân tích Dữ liệu, Tương quan & Phân tích Biểu đồ Phân tán
 
-#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 3 Nguyên Tắc)
-- **1. Mục A - Core Concept: Data Visualization tools like scatter plots reveal statistical relationships, distributions, outliers, and variance across continuous variables.**
-  *Dịch: Mục A - Khái niệm Cốt lõi: Các công cụ trực quan hóa dữ liệu như biểu đồ phân tán giúp phát hiện mối quan hệ thống kê, sự phân bố và các điểm bất thường.*
-
-- **2. Mục B - Scatter Plot Correlation Interpretation: When data points on a scatter plot (e.g., GrossIncome vs Revenue) cluster tightly along a straight line sloping upward from left to right, it demonstrates a STRONG POSITIVE CORRELATION.**
-  *Dịch: Mục B - Đọc Biểu đồ Phân tán: Khi các điểm dữ liệu (ví dụ GrossIncome so với Revenue) tập trung sát nhau theo một đường dốc lên từ trái sang phải, nó thể hiện TƯƠNG QUAN DƯƠNG MẠNH (Strong Positive Correlation).*
-
-- **3. Mục C - Decision Rule: Correlation vs Causation: Statistical correlation proves mathematical co-movement between two variables, but NEVER proves that one variable directly causes the change in the other.**
-  *Dịch: Mục C - Quy tắc Xử lý: Tương quan vs Nhân quả: Tương quan thống kê chứng minh 2 biến cùng biến động, nhưng KHÔNG BAO GIỜ chứng minh biến này là nguyên nhân trực tiếp gây ra sự thay đổi của biến kia.*
-
+#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 0 Nguyên Tắc)
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (6 câu)
 
 **Q1: In the following scatter plot, the GrossIncome variable is plotted against the Revenue variable. What type of correlation does this plot suggest?**
@@ -6595,16 +6499,7 @@ What kind of data is that?**
 ## MOD-10: Comprehensive Practice & Scenario-based Questions
 ### Bộ Câu Hỏi Tình Huống & Đạo Đức CNTT Tổng Hợp
 
-#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 3 Nguyên Tắc)
-- **1. Mục A - Core Concept: Technology Ethics requires continuous multi-stakeholder assessment across every phase of the technology lifecycle: ideation, data collection, model training, system deployment, and eventual retirement.**
-  *Dịch: Mục A - Khái niệm Cốt lõi: Đạo đức Công nghệ đòi hỏi đánh giá đa bên liên tục qua tất cả các giai đoạn: lên ý tưởng, thu thập dữ liệu, huấn luyện mô hình, triển khai hệ thống và loại bỏ.*
-
-- **2. Mục B - Multi-stakeholder Balancing: Ethical decision-making in real-world scenarios requires balancing user privacy, organizational economic viability, public safety, and regulatory compliance.**
-  *Dịch: Mục B - Cân bằng Đa bên: Ra quyết định đạo đức trong thực tế đòi hỏi cân bằng giữa quyền riêng tư người dùng, hiệu quả kinh tế của tổ chức, an toàn công cộng và sự tuân thủ pháp luật.*
-
-- **3. Mục C - Decision Rule: When ethical duties conflict with business speed or short-term profitability, always prioritize public safety, transparency, and fundamental human rights.**
-  *Dịch: Mục C - Quy tắc Xử lý Tình huống: Khi nghĩa vụ đạo đức xung đột với tốc độ dự án hoặc lợi nhuận ngắn hạn, luôn luôn ưu tiên an toàn công cộng, sự minh bạch và quyền cơ bản của con người.*
-
+#### Pure Core Theory 3 Mục (Coverage 100% Khái Niệm & Tình Huống - 0 Nguyên Tắc)
 #### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (221 câu)
 
 **Q1: What is the long-term impact of ignoring ethical considerations in technology development?**

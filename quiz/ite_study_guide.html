@@ -233,11 +233,20 @@
     .module-header h2 { font-size: 1.4rem; font-weight: 800; color: var(--text); display: flex; align-items: center; gap: 10px; }
     .module-sub { font-size: 1.02rem; color: var(--vi-color); font-weight: 600; margin-top: 4px; }
 
-    .theory-box { margin-bottom: 24px; border-left: 4px solid var(--accent); }
-    .box-title { font-weight: 800; font-size: 1.02rem; color: var(--accent); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
-    .theory-item { margin-bottom: 12px; padding: 12px 14px; border-radius: var(--r-sm); background: var(--surface-2); border: 1px solid var(--border); }
-    .t-en { font-weight: 700; color: var(--text); font-size: 0.94rem; }
-    .t-vi { color: var(--vi-color); font-size: 0.88rem; margin-top: 4px; font-style: italic; font-weight: 500; }
+    .theory-box { margin-bottom: 24px; border-left: 4px solid var(--accent); background: var(--surface); padding: 18px 20px; border-radius: var(--r-md, 12px); border: 1px solid var(--border); }
+    .box-title { font-weight: 800; font-size: 1.05rem; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; border-bottom: 2px solid var(--border); padding-bottom: 10px; }
+    .theory-item { margin-bottom: 14px; padding: 14px 16px; border-radius: var(--r-sm); background: var(--surface-2); border: 1px solid var(--border); }
+    .theory-item:last-child { margin-bottom: 0; }
+    .t-header { font-weight: 800; font-size: 0.98rem; color: var(--text); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .t-num { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.78rem; font-weight: 800; flex-shrink: 0; }
+    .t-header-vi { color: var(--vi-color); font-size: 0.9rem; font-weight: 600; }
+    .theory-bullets { list-style: none; padding-left: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+    .theory-bullet-li { font-size: 0.92rem; line-height: 1.45; }
+    .t-bullet-point { display: flex; align-items: flex-start; gap: 10px; }
+    .bullet-icon { color: var(--accent); font-weight: 900; font-size: 1.2rem; line-height: 1.2; flex-shrink: 0; }
+    .t-bullet-content { flex: 1; }
+    .t-en-text { font-weight: 700; color: var(--text); }
+    .t-vi-text { color: var(--vi-color); font-size: 0.88rem; margin-top: 3px; font-weight: 500; }
 
     /* Single Card Display Mode */
     body.quiz-mode .card.quiz-card { display: none; }
@@ -264,6 +273,219 @@
     body.study-mode .answer-box,
     body.study-mode .explain-panel { display: block !important; }
     body.study-mode .btn-option { cursor: default; }
+
+    /* Rich Web Theory Formatting Styles */
+    .theory-box {
+      background: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      border-left: 5px solid var(--accent, #2f7cf6) !important;
+      border-radius: 14px !important;
+      padding: 24px !important;
+      margin-bottom: 24px !important;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+    }
+
+    .theory-box-header {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      padding-bottom: 14px !important;
+      margin-bottom: 18px !important;
+      border-bottom: 2px solid #f1f5f9 !important;
+    }
+
+    .theory-box-title {
+      font-size: 1.15rem !important;
+      font-weight: 800 !important;
+      color: #0f172a !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+    }
+
+    .theory-toggle-btn {
+      background: #f1f5f9 !important;
+      border: 1px solid #cbd5e1 !important;
+      color: #334155 !important;
+      padding: 6px 14px !important;
+      border-radius: 8px !important;
+      font-size: 0.88rem !important;
+      font-weight: 600 !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+    }
+
+    .theory-toggle-btn:hover {
+      background: #e2e8f0 !important;
+      color: #0f172a !important;
+    }
+
+    .web-callout-info {
+      background: #eff6ff !important;
+      border: 1px solid #bfdbfe !important;
+      border-left: 4px solid #2563eb !important;
+      color: #1e40af !important;
+      padding: 12px 16px !important;
+      border-radius: 8px !important;
+      margin-bottom: 18px !important;
+      font-size: 0.95rem !important;
+      line-height: 1.5 !important;
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 10px !important;
+    }
+
+    .web-callout-warning {
+      background: #fffbeb !important;
+      border: 1px solid #fde68a !important;
+      border-left: 4px solid #d97706 !important;
+      color: #92400e !important;
+      padding: 14px 18px !important;
+      border-radius: 8px !important;
+      margin-bottom: 20px !important;
+      font-size: 0.96rem !important;
+      line-height: 1.5 !important;
+    }
+
+    .web-theory-h4 {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+      border: 1px solid #e2e8f0 !important;
+      padding: 10px 16px !important;
+      border-radius: 8px !important;
+      margin-top: 22px !important;
+      margin-bottom: 14px !important;
+      color: #1e293b !important;
+      font-size: 1.05rem !important;
+      font-weight: 700 !important;
+    }
+
+    .web-theory-h5 {
+      font-size: 0.98rem !important;
+      font-weight: 700 !important;
+      color: #334155 !important;
+      margin-top: 14px !important;
+      margin-bottom: 8px !important;
+    }
+
+    .web-theory-ul {
+      list-style: none !important;
+      padding-left: 0 !important;
+      margin-top: 8px !important;
+      margin-bottom: 16px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 8px !important;
+    }
+
+    .web-theory-li {
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 10px !important;
+      line-height: 1.55 !important;
+      font-size: 0.95rem !important;
+      color: #334155 !important;
+      text-align: left !important;
+    }
+
+    .web-theory-li.sub-li {
+      margin-left: 20px !important;
+      font-size: 0.91rem !important;
+    }
+
+    .li-icon {
+      color: #2f7cf6 !important;
+      font-weight: bold !important;
+      font-size: 1rem !important;
+      flex-shrink: 0 !important;
+      margin-top: 1px !important;
+    }
+
+    .li-content {
+      flex: 1 1 auto !important;
+    }
+
+    .li-content strong {
+      color: #0f172a !important;
+    }
+
+    .web-num-item {
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 12px !important;
+      margin-bottom: 10px !important;
+      line-height: 1.5 !important;
+      text-align: left !important;
+    }
+
+    .web-num-badge {
+      background: #3b82f6 !important;
+      color: #ffffff !important;
+      font-weight: 700 !important;
+      font-size: 0.85rem !important;
+      width: 24px !important;
+      height: 24px !important;
+      border-radius: 50% !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-shrink: 0 !important;
+      margin-top: 2px !important;
+    }
+
+    .web-table-wrapper {
+      overflow-x: auto !important;
+      margin-top: 14px !important;
+      margin-bottom: 20px !important;
+      border-radius: 10px !important;
+      border: 1px solid #e2e8f0 !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03) !important;
+    }
+
+    .web-theory-table {
+      width: 100% !important;
+      border-collapse: collapse !important;
+      font-size: 0.92rem !important;
+      text-align: left !important;
+    }
+
+    .web-theory-table th {
+      background: #1e293b !important;
+      color: #ffffff !important;
+      padding: 10px 14px !important;
+      font-weight: 700 !important;
+    }
+
+    .web-theory-table td {
+      padding: 10px 14px !important;
+      border-bottom: 1px solid #f1f5f9 !important;
+      color: #334155 !important;
+      line-height: 1.5 !important;
+    }
+
+    .web-theory-table tr:nth-child(even) td {
+      background: #f8fafc !important;
+    }
+
+    .web-theory-table tr:hover td {
+      background: #f1f5f9 !important;
+    }
+
+    code.t-code {
+      background: #f1f5f9 !important;
+      color: #0f172a !important;
+      padding: 2px 6px !important;
+      border-radius: 4px !important;
+      font-family: monospace !important;
+      font-size: 0.9em !important;
+      border: 1px solid #cbd5e1 !important;
+    }
+
+    .web-theory-divider {
+      border: 0 !important;
+      height: 1px !important;
+      background: #e2e8f0 !important;
+      margin: 20px 0 !important;
+    }
 
     @media (max-width: 900px) {
       .app-container { flex-direction: column; }
@@ -386,31 +608,281 @@
         <h3 class="module-sub">Đạo đức AI, Tính công bằng Thuật toán & Giảm thiểu Định kiến (106 câu hỏi)</h3>
       </div>
 
-      <!-- 1. Top: Theory Box (100% Comprehensive Synthesized Theory) -->
-      <div class="card-soft theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi 3 Mục (Core Theory - Cover 100% Khái Niệm & Tình Huống)</div>
-        
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>1.</strong> Mục A - Core Concept: Algorithmic Fairness ensures AI systems produce non-discriminatory outputs regardless of protected attributes (race, gender, age, religion, or socioeconomic background).</div>
-      <div class="t-vi">Dịch: Mục A - Khái niệm Cốt lõi: Tính công bằng thuật toán đảm bảo các hệ thống AI đưa ra kết quả không phân biệt đối xử bất kể các thuộc tính được bảo vệ (chủng tộc, giới tính, tuổi tác, tôn giáo hay hoàn cảnh kinh tế xã hội).</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>2.</strong> Mục B - 4 Bias Types: (1) Historical Bias: Pre-existing societal inequalities embedded in historical data. (2) Selection/Representation Bias: Underrepresenting specific demographic subgroups in training data. (3) Measurement Bias: Using proxy metrics that fail to accurately capture target traits. (4) Automation Bias: Over-relying on automated decision systems uncritically while ignoring contrary evidence.</div>
-      <div class="t-vi">Dịch: Mục B - 4 Loại Định kiến: (1) Định kiến Lịch sử: Bất bình đẳng xã hội tồn tại sẵn được đưa vào dữ liệu. (2) Định kiến Lựa chọn/Đại diện: Thiếu hụt dữ liệu của các nhóm dân số cụ thể. (3) Định kiến Đo lường: Sử dụng chỉ số thay thế không phản ánh đúng thuộc tính cần đo. (4) Định kiến Tự động hóa: Quá tin tưởng vào hệ thống tự động mà bỏ qua bằng chứng trái ngược.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>3.</strong> Mục B - 3 Bias Mitigation Strategies: (1) Pre-processing: Re-weighting, oversampling, or data balancing before training. (2) In-processing: Adding fairness constraints into the loss function during model training. (3) Post-processing: Adjusting decision thresholds after model training.</div>
-      <div class="t-vi">Dịch: Mục B - 3 Chiến lược Giảm thiểu Định kiến: (1) Tiền xử lý: Tái đánh trọng số, tăng mẫu hoặc cân bằng dữ liệu trước khi huấn luyện. (2) Trong xử lý: Thêm ràng buộc công bằng vào hàm mất mát khi huấn luyện. (3) Hậu xử lý: Điều chỉnh ngưỡng ra quyết định sau khi huấn luyện.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>4.</strong> Mục C - Decision Rule: Simply increasing dataset volume without checking subgroup balance or auditing historical bias will NEVER eliminate algorithmic bias (Data Size Fallacy). Audit dataset composition before training.</div>
-      <div class="t-vi">Dịch: Mục C - Quy tắc Xử lý: Chỉ tăng kích thước tập dữ liệu mà không kiểm tra sự cân bằng của các nhóm hoặc kiểm toán định kiến lịch sử sẽ KHÔNG BAO GIỜ xóa bỏ định kiến (Ngụy biện Quy mô Dữ liệu). Phải kiểm toán thành phần dữ liệu trước khi huấn luyện.</div>
-    </div>
-  
+      <!-- 1. Top: Expanded Web Theory Box -->
+      
+    <div class="card-soft theory-box">
+      <div class="theory-box-header">
+        <div class="theory-box-title">
+          <i class="fa-solid fa-book-open" style="color: var(--accent, #2f7cf6);"></i>
+          <span>Lý Thuyết Cốt Lõi Mở Rộng (Cover 100% Khái Niệm & Ứng Dụng Thực Tế)</span>
+        </div>
+        <button type="button" class="theory-toggle-btn" id="theory-btn-MOD-01" onclick="toggleTheory('MOD-01')">
+          <i class="fa-solid fa-chevron-up"></i> Thu gọn lý thuyết
+        </button>
       </div>
+      <div class="web-theory-container" id="theory-content-MOD-01">
+        <div class="web-callout-info"><i class="fa-solid fa-lightbulb"></i> <span>Phần lý thuyết mở rộng này bao phủ toàn diện 100% bản chất khái niệm, toán học thước đo công bằng, chiến lược debias và quy tắc xử lý tình huống của toàn bộ 106 câu hỏi trắc nghiệm MOD-01.</span></div>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 1. Khái niệm Cốt lõi & Bản đồ Định kiến (Core Concepts & Bias Taxonomy)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Algorithmic Fairness (Công bằng Thuật toán):</strong> Đảm bảo các mô hình ra quyết định tự động không phân biệt đối xử dựa trên thuộc tính nhạy cảm/bảo vệ (<em>sensitive/protected attributes</em> như chủng tộc, giới tính, tôn giáo).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Phân loại Định kiến Dữ liệu & Hệ thống (Data & System Biases):</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Historical Bias (Định kiến Lịch sử):</strong> Dữ liệu phản ánh sự bất bình đẳng trong quá khứ (ví dụ: công cụ đánh giá nguy cơ tái phạm tội COMPAS gán điểm nguy cơ cao hơn cho người da đen).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Selection / Sampling Bias (Định kiến Lựa chọn/Lấy mẫu):</strong> Tập dữ liệu lấy mẫu không đại diện cho toàn bộ quần thể thực tế.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Measurement Bias (Định kiến Đo lường):</strong> Cách đo đạc hoặc gán nhãn không chính xác.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Automation Bias (Định kiến Tự động hóa):</strong> Con người tin tưởng tuyệt đối vào đầu ra của máy tính (<em>over-reliance</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Reinforcement Bias (Định kiến Củng cố):</strong> Vòng lặp phản hồi ngắn khiến thuật toán liên tục củng cố thiên vị ban đầu.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Phân loại Định kiến Nhận thức Con người (Cognitive Biases):</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Heuristics (Định kiến Tự điền khoảng trống):</strong> Lối tắt tư duy do quá tải thông tin (<em>information overload</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Confirmation Bias (Định kiến Xác nhận):</strong> Chỉ tìm kiếm thông tin củng cố niềm tin có sẵn, gây hiện tượng <strong>Groupthink</strong> (Tư duy nhóm).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Implicit Bias (Định kiến Ẩn tàng / Vô thức):</strong> <strong>3 chiến lược giảm thiểu:</strong> (1) Tăng cường tự nhận thức (<em>Self-awareness</em>); (2) Tương tác đa dạng (<em>Diverse interaction</em>); (3) Tiếp xúc với hình mẫu phản-định-kiến (<em>Counter-stereotypical examples</em>).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 2. Thước đo Công bằng Toán học & Nghịch lý Kỹ thuật (Fairness Metrics & Trade-offs)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Disparate Treatment (Phân biệt đối xử Trực tiếp):</strong> Cố tình sử dụng thuộc tính nhạy cảm làm đầu vào thuật toán.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Disparate Impact (Phân biệt đối xử Gián tiếp):</strong> Quy trình trung lập nhưng gây tác động bất lợi vượt tỷ lệ cho một nhóm bảo vệ.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Statistical Parity / Demographic Parity (Bình đẳng Thống kê):</strong> Tỷ lệ kết quả tích cực phải bằng nhau giữa các nhóm (<strong>Bỏ qua năng lực/merit của cá nhân</strong>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Fairness through Blindness Fallacy (Ngụy biện Giả mù):</strong> Loại bỏ thuộc tính nhạy cảm là KHÔNG ĐỦ vì mô hình vẫn học phân biệt qua các biến thay thế (<strong>Proxy Data</strong> như Mã Zip / Zip code).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Đánh đổi giữa Accuracy (Độ chính xác) và Fairness (Công bằng):</strong> Áp dụng ràng buộc công bằng có thể làm giảm tổng độ chính xác của mô hình.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Group Fairness vs Individual Fairness:</strong> Cân bằng tỷ lệ nhóm có thể gây bất công cho cá nhân xuất sắc nhất trong nhóm.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Mục tiêu tối ưu:</strong> Tối thiểu hóa tỷ lệ lỗi (<em>error rate</em>) đồng thời duy trì sự bình đẳng thống kê.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 3. Chiến lược Can thiệp & Kiểm toán (Mitigation Strategies & Auditing)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>3 Giai đoạn Can thiệp:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Pre-processing (Tiền xử lý):</strong> Tái trọng số (<em>Re-weighting</em>), tăng/giảm mẫu (<em>Oversampling/Undersampling</em>) trước khi huấn luyện.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>In-processing (Trong xử lý):</strong> Thêm ràng buộc công bằng (<em>Fairness constraints</em>) hoặc thuật toán đối kháng (<em>Adversarial debiasing</em>) trong lúc huấn luyện.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Post-processing (Hậu xử lý):</strong> Điều chỉnh ngưỡng quyết định (<em>Threshold adjustment</em>) sau khi mô hình đã huấn luyện xong.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Phương pháp Kiểm toán Thuật toán (Algorithm Auditing):</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Black-box Auditing (Kiểm toán Hộp đen):</strong> Tạo nhiễu đầu vào (<em>Input Perturbation</em>) để xem thay đổi đầu ra.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Glass-box Auditing (Kiểm toán Hộp kính):</strong> Loại bỏ thuộc tính nghi ngờ và chạy lại mô hình để đánh giá trọng số.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Adversarial Auditing:</strong> Dùng thuật toán tấn công để tìm điểm yếu định kiến.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Word Embeddings Auditing:</strong> Kiểm toán không gian vector ngôn ngữ (<em>Word2Vec</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Bộ công cụ Kiểm toán Tiêu chuẩn:</strong> <strong>IBM AI Fairness 360 (AIF360)</strong> và <strong>Google What-If Tool (WIT)</strong>.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 4. Khung Đạo đức, Quản trị & Vòng đời AI (Ethical Frameworks & Lifecycle)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Bộ ba AI có Trách nhiệm (Responsible AI Triad):</strong> <strong>Accurate – Fair – Explainable</strong> (Chính xác – Công bằng – Giải thích được).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Trụ cột Đạo đức AI:</strong> Công bằng, Minh bạch, Khả năng giải thích, Trách nhiệm giải trình, Quyền riêng tư, An ninh mạng (Lợi nhuận KHÔNG phải trụ cột đạo đức).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Left-shifting (Đánh giá Đạo đức từ gốc):</strong> Đưa xem xét đạo đức vào ngay giai đoạn lên ý tưởng ban đầu (<em>Conception stage</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Nghĩa vụ Kỹ sư AI Đạo đức:</strong> Làm sạch dữ liệu, kiểm toán thiên vị định kỳ và theo dõi lỗ hổng an ninh mạng liên tục.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 5. Truyền thông Rủi ro & Stakeholders (Risk Communication & Engagement)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Model Cards & Minh bạch Dữ liệu:</strong> Phải công khai thiên vị đã biết (<em>known biases</em>) và phương pháp xử lý dữ liệu thiếu.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Tác hại khi không truyền thông rủi ro:</strong> Gây tước quyền xã hội (<em>Disenfranchisement</em>) và xói mòn các quyền cơ bản.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Chiến lược hiệu quả:</strong> Xây dựng văn hóa DEI (Đa dạng, Bình đẳng, Bao hàm), truyền thông cá nhân hóa chủ động, mở hộp văn bản tự do để thu thập phản hồi, tránh gây nghi ngờ dư luận không căn cứ.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 6. Case Studies & Thông số Thực tế</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Algorithmic Trading (Giao dịch tự động):</strong> 80-90% giao dịch chứng khoán/hợp đồng tương lai được thực hiện bởi thuật toán tự động.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Smart Toys (Đồ chơi thông minh):</strong> Trẻ em là đối tượng dễ bị tổn thương và thao túng tâm lý.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Deepfakes:</strong> Chiếm đoạt diện mạo, danh tính và giọng nói mà không có sự đồng ý.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Robot Rights:</strong> Ưu tiên thấp do thiếu tri giác (<em>sentience</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Dating Apps:</strong> Thuật toán Lọc cộng tác (<em>Collaborative Filtering</em>) với chu kỳ phản hồi ngắn khuếch đại định kiến gợi ý.</div>
+        </li>
+      
+</ul>
+      </div>
+    </div>
+  
 
       <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-01">
@@ -450,31 +922,353 @@ choose to</div><div class="q-text-vi">Dịch: Lợi ích của mô hình hộp t
         <h3 class="module-sub">Mô hình Máy học, Dữ liệu Huấn luyện & Xác suất (82 câu hỏi)</h3>
       </div>
 
-      <!-- 1. Top: Theory Box (100% Comprehensive Synthesized Theory) -->
-      <div class="card-soft theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi 3 Mục (Core Theory - Cover 100% Khái Niệm & Tình Huống)</div>
-        
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>1.</strong> Mục A - Core Concept: Machine Learning predictive models calculate statistical probabilities of future outcomes based on historical patterns, rather than producing absolute certainties.</div>
-      <div class="t-vi">Dịch: Mục A - Khái niệm Cốt lõi: Các mô hình máy học dự đoán tính toán xác suất thống kê của các kết quả trong tương lai dựa trên các mẫu lịch sử, chứ không đưa ra sự khẳng định tuyệt đối.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>2.</strong> Mục B - Model Invariance & Data Re-introduction: What can be learned from a predictive model should NOT change erraticly if excluded valid individual data is re-introduced into the training set.</div>
-      <div class="t-vi">Dịch: Mục B - Tính Bất biến Mô hình & Đưa lại Dữ liệu: Những gì học được từ mô hình dự đoán KHÔNG ĐƯỢC thay đổi tùy tiện nếu dữ liệu cá nhân hợp lệ bị loại trừ trước đó được đưa lại vào tập huấn luyện.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>3.</strong> Mục B - Transparency of Inadequacies: Developers are ethically required to communicate dataset limitations, sample omissions, edge cases, and confidence intervals to end-users.</div>
-      <div class="t-vi">Dịch: Mục B - Minh bạch sự Thiếu hụt: Nhà phát triển có nghĩa vụ đạo đức phải thông báo rõ ràng các hạn chế dữ liệu, điểm thiếu hụt mẫu, trường hợp biên và khoảng tin cậy cho người dùng.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>4.</strong> Mục C - Decision Rule: Overfitted models capture statistical noise and perform poorly on unseen real-world inputs. Avoid proxy discrimination where removing protected attributes leaves highly correlated proxies intact.</div>
-      <div class="t-vi">Dịch: Mục C - Quy tắc Xử lý: Mô hình overfit học thuộc cả nhiễu thống kê và hoạt động kém trên dữ liệu thực tế mới. Tránh phân biệt đối xử qua biến thay thế (Proxy Discrimination) khi chỉ xóa thuộc tính bảo vệ nhưng giữ lại các biến có tương quan cao.</div>
-    </div>
-  
+      <!-- 1. Top: Expanded Web Theory Box -->
+      
+    <div class="card-soft theory-box">
+      <div class="theory-box-header">
+        <div class="theory-box-title">
+          <i class="fa-solid fa-book-open" style="color: var(--accent, #2f7cf6);"></i>
+          <span>Lý Thuyết Cốt Lõi Mở Rộng (Cover 100% Khái Niệm & Ứng Dụng Thực Tế)</span>
+        </div>
+        <button type="button" class="theory-toggle-btn" id="theory-btn-MOD-02" onclick="toggleTheory('MOD-02')">
+          <i class="fa-solid fa-chevron-up"></i> Thu gọn lý thuyết
+        </button>
       </div>
+      <div class="web-theory-container" id="theory-content-MOD-02">
+        <div class="web-callout-info"><i class="fa-solid fa-lightbulb"></i> <span>Phần lý thuyết mở rộng này đối chiếu toàn diện 100% với 82 câu hỏi trắc nghiệm của MOD-02, phân tích 27 cụm khái niệm cốt lõi (nhóm A–J) và lưu ý 4 điểm mâu thuẫn cần chú ý khi làm bài.</span></div>
+<div class="web-callout-warning"><i class="fa-solid fa-triangle-exclamation"></i> <strong>⚠️ 4 điểm mâu thuẫn trong ngân hàng câu hỏi — lưu ý khi ôn thi</strong></div>
+
+          <div class="web-num-item">
+            <span class="web-num-badge">1</span>
+            <div class="web-num-text"><strong>60/20/20 là "classic" hay "optimized"?</strong> Câu 28 gọi tỷ lệ 60/20/20 (kèm chi tiết "thiết kế nhiều bài test") là <em>optimized training set</em>; Câu 54 và 67 gọi cùng tỷ lệ này (không có chi tiết đó) là <em>classic training set</em>. Nếu đề không nhắc "nhiều bài test", nên chọn <strong>classic</strong> (đáp án số đông).</div>
+          </div>
+        
+
+          <div class="web-num-item">
+            <span class="web-num-badge">2</span>
+            <div class="web-num-text"><strong>"Develop phase" là gì?</strong> Câu 20 cho rằng mục tiêu giai đoạn "develop" là chọn thuật toán + làm sạch dữ liệu. Nhưng Câu 47 và 73 (cùng hỏi "development phase") lại chọn đáp án thực chất là mục tiêu của <strong>giai đoạn Train</strong> (hạ error function xuống ngưỡng chấp nhận — trùng Câu 17, 82). Đọc kỹ đề thi thật để biết "develop" và "development" có bị dùng thay thế nhau không.</div>
+          </div>
+        
+
+          <div class="web-num-item">
+            <span class="web-num-badge">3</span>
+            <div class="web-num-text"><strong>"Empirical reflection" là hiện tượng nào?</strong> Câu 25 minh họa bằng việc mô hình không phân biệt được ảnh chó thật với ảnh chụp lại ảnh chó (giới hạn ở mức pixel). Câu 65 minh họa bằng việc mô hình ưu tiên khuôn mặt này hơn khuôn mặt kia theo phân bố mẫu (thiên vị đại diện). Hiểu khái niệm này theo nghĩa rộng.</div>
+          </div>
+        
+
+          <div class="web-num-item">
+            <span class="web-num-badge">4</span>
+            <div class="web-num-text"><strong>Quasi-identifier hay Sensitive column/attribute?</strong> Câu 5 và Câu 50 dùng <strong>gần như cùng một đề bài</strong> ("không tự định danh nhưng chứa thông tin về cá nhân cần bảo vệ") nhưng cho 2 đáp án khác nhau. Quy tắc: thấy "kết hợp với... để nhận diện" <code class="t-code">&rarr;</code> quasi-identifier; thấy "thông tin nhạy cảm" tường minh <code class="t-code">&rarr;</code> sensitive attribute.</div>
+          </div>
+        
+<hr class="web-theory-divider"/>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> BẢNG LÝ THUYẾT CHI TIẾT MOD-02 (27 CỤM KHÁI NIỆM & HƯỚNG DẪN ÔN THI)</div>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> A. Xác suất & Tiêu chí Mô hình Đạo đức</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>A1. Xác suất trong AI = "model of belief"</strong> <em>(Câu 2, 51, 78):</em> AI không xác định khả năng khách quan tuyệt đối, không đảm bảo 100%, cũng không suy đoán "không cần dữ liệu". AI xây dựng một <strong>mô hình niềm tin</strong> (<em>model of belief</em>) dựa trên bằng chứng dữ liệu quan sát được.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>A2. 3 tiêu chí mô hình đạo đức:</strong> <strong>Accurate – Fair – Explainable</strong> <em>(Câu 3, 53)</em> (không phải "precise/predictable/methodical").</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>A3. Nguyên lý GIGO (Garbage In, Garbage Out)</strong> <em>(Câu 52, 81):</em> Đầu ra mô hình phản ánh trực tiếp <strong>chất lượng, sự phân bố và thiên vị của dữ liệu huấn luyện</strong>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>A4. No Free Lunch Theorem</strong> <em>(Câu 61):</em> Không thuật toán nào vượt trội hơn mọi thuật toán khác trên MỌI bài toán.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>A5. Narrow AI — 2 lý do (chọn 2)</strong> <em>(Câu 31, 58):</em> (1) Chỉ làm được đúng tác vụ được thiết kế; (2) Không xử lý được tình huống ngoài phạm vi dữ liệu huấn luyện.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> B. Vòng đời Xây dựng Mô hình (3 giai đoạn)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>B1. Develop Phase</strong> <em>(Câu 20):</em> Chọn thuật toán + làm sạch/định dạng dữ liệu.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>B2. Train Phase</strong> <em>(Câu 17, 82 — trùng đáp án Câu 47, 73):</em> Điều chỉnh mô hình trên tập con dữ liệu, tối ưu để hạ <em>error function</em> xuống dưới ngưỡng chấp nhận.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>B3. Deploy Phase</strong> <em>(Câu 15):</em> Dùng mô hình trong dự đoán thực tế + giám sát liên tục <em>error rate/accuracy</em>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>B4. Error Function</strong> <em>(Câu 27, 60):</em> Tỷ lệ/mức độ dự đoán KHÔNG khớp kết quả thực tế.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>B5. Cost Function cho Linear Regression</strong> <em>(Câu 16, 43):</em> Dùng Cost function (MSE) để đánh giá — KHÔNG dùng Accuracy hay ROC (dành cho bài toán phân loại).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> C. Đánh giá Mô hình: Confusion Matrix & Metrics</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>C1. TP / FN / TN / FP</strong> <em>(Câu 14, 32, 40, 56):</em> True Positive (dự đoán +, thực tế +). False Negative (dự đoán -, thực tế +: bỏ sót).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>C2. Accuracy = số đúng ÷ tổng số dự đoán</strong> <em>(Câu 6, 35)</em>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>C3. Accuracy Paradox</strong> <em>(Câu 70):</em> Khi mất cân bằng lớp nghiêm trọng, Accuracy có thể cao một cách đánh lừa.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>C4. Ưu tiên Recall khi bỏ sót gây hậu quả nghiêm trọng</strong> <em>(Câu 30, 68):</em> Ví dụ dự đoán cầu sập với dữ liệu mất cân bằng nặng.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>C5. Hậu quả thực tế của lỗi mô hình</strong> <em>(Câu 72):</em> Ví dụ ngân hàng từ chối vay nhầm một người đủ điều kiện (False Negative).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> D. Chuẩn bị Dữ liệu & Kiểm định</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>D1. Tỷ lệ chia 60/20/20 (train/validation/test)</strong> <em>(Câu 10, 28, 54, 63, 67)</em>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>D2. Vai trò Validation set</strong> <em>(Câu 10, 63):</em> Tinh chỉnh <em>hyperparameters</em> trong lúc huấn luyện.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>D3. Bộ "Accuracy Guidelines"</strong> <em>(Câu 8, 26, 55, 66, 76):</em></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><em>Domain expertise:</em> Chuyên gia kiểm tra thực tế nghiệp vụ (Câu 8).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><em>First principles:</em> Phân tích bài toán từ sự thật nền tảng nhất (Câu 76).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><em>No correlating data / collinearity:</em> Tránh đưa các biến tương quan cao làm input riêng biệt (vd. tách "City" & "State") (Câu 26, 55, 66).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>D4. Làm sạch dữ liệu văn bản (NLP)</strong> <em>(Câu 42):</em> Bước đầu tiên là Tokenization + loại bỏ ký tự đặc biệt/dấu câu.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>D5. Outlier edge case</strong> <em>(Câu 44):</em> Edge case do dữ liệu nằm ngoài phân bố bình thường của tập huấn luyện.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> E. Quyền riêng tư & Ẩn danh hóa Dữ liệu</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>E1. Differential Privacy — định nghĩa</strong> <em>(Câu 1, 23, 33, 59):</em> Kết quả học được KHÔNG đổi đáng kể dù dữ liệu của MỘT cá nhân có được đưa vào hay loại khỏi tập huấn luyện.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>E2. Cơ chế:</strong> Thêm Noise/Nhiễu toán học <em>(Câu 12)</em>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>E3. Cơ chế 2 đồng xu (Randomized Response)</strong> <em>(Câu 9, 37):</em> Tỷ lệ trả lời hoàn toàn trung thực = <strong>25%</strong> (<code class="t-code">0.5 \times 0.5 = 0.25</code>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>E4. K-anonymity — định nghĩa</strong> <em>(Câu 18, 46, 64):</em> Mỗi cá nhân không thể bị phân biệt với ít nhất <strong><code class="t-code">k-1</code> cá nhân khác</strong> dựa trên <em>quasi-identifiers</em>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>E5. Điểm yếu chung:</strong> Vẫn có thể tái định danh khi <strong>kết hợp với dataset khác</strong> (Linkage attacks) <em>(Câu 19, 24)</em>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>E6. Quasi-identifier vs Sensitive attribute</strong> <em>(Câu 5, 34, 50, 75):</em> Quasi-identifier (kết hợp nhiều thuộc tính để nhận diện); Sensitive attribute (bản thân nó là thông tin cần bảo vệ).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>E7. Case study:</strong> Netflix Prize (kết hợp Netflix + IMDb) <em>(Câu 4)</em>; Google Maps satellite <em>(Câu 29)</em>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>E8. Group inclusion harm (Tổn hại theo nhóm)</strong> <em>(Câu 13, 39, 69):</em> Dù cá nhân được bảo vệ, việc thuộc về một <strong>nhóm</strong> vẫn bị ảnh hưởng (tăng phí bảo hiểm theo nhóm nguy cơ / Strava bản đồ nhiệt tiết lộ vị trí căn cứ quân sự).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> F. Bảo mật & Quản trị Dữ liệu</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>F1. Data governance structure</strong> <em>(Câu 11, 77):</em> Thực hành bảo mật khuyến nghị cho <strong>dataset</strong>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>F2. Adversarial robustness testing + data sanitization</strong> <em>(Câu 38):</em> Thực hành bảo mật khuyến nghị cho <strong>model</strong>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>F3. Data minimization & sanitization</strong> <em>(Câu 45):</em> Xóa dữ liệu thừa sớm và thường xuyên.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>F4. Radioactive data tracing</strong> <em>(Câu 41):</em> Đánh dấu bản quyền dữ liệu huấn luyện mà KHÔNG ảnh hưởng hiệu năng mô hình.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> G. Thiên vị (Bias) & Vòng lặp Phản hồi</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>G1. Feedback loop — ví dụ chuẩn</strong> <em>(Câu 22):</em> Mạng xã hội theo dõi tương tác <code class="t-code">&rarr;</code> thuật toán gợi ý bài dễ quẹt <code class="t-code">&rarr;</code> hành vi đó quay lại làm dữ liệu train.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>G2. Feedback loop — củng cố thiên vị đại diện</strong> <em>(Câu 79):</em> Chọn 1 nhóm nhân khẩu học ít hơn do đại diện lịch sử thấp <code class="t-code">&rarr;</code> càng giảm đại diện nhóm đó trong tương lai.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>G3. Predictive policing bias</strong> <em>(Câu 36, 57):</em> Khu vực bị tuần tra nhiều có lịch sử bắt giữ cao <code class="t-code">&rarr;</code> mô hình nhầm tương quan này là tỷ lệ tội phạm thực tế.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>G4. Giảm thiểu feedback loop</strong> <em>(Câu 74):</em> Gán nhãn rõ đầu ra, tránh đưa trực tiếp output của mô hình trở lại làm dữ liệu huấn luyện không kiểm soát.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>G5. Empirical reflection (nghĩa rộng)</strong> <em>(Câu 25, 65):</em> Mô hình chỉ phản ánh đúng những gì có trong dữ liệu huấn luyện (giới hạn pixel ở Câu 25 / thiên vị tần suất phân bố ở Câu 65).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> H. Các dạng Học máy & Kỹ thuật</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>H1. ML vs DL</strong> <em>(Câu 21, 48):</em> ML cần con người trích xuất đặc trưng thủ công (<em>manual feature extraction</em>); DL tự động học đặc trưng từ dữ liệu thô.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>H2. Supervised learning</strong> <em>(Câu 71):</em> Dùng dữ liệu CÓ NHÃN (<em>labeled data</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>H3. Clustering (Unsupervised)</strong> <em>(Câu 49):</em> Gom nhóm đối tượng tương tự khi KHÔNG CÓ NHÃN trước.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>H4. LIME (Explainability)</strong> <em>(Câu 80):</em> Kỹ thuật giải thích cục bộ (<em>local</em>), sau huấn luyện (<em>post-hoc</em>), độc lập với loại mô hình (<em>model-agnostic</em>).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> I. Thống kê & Ứng dụng Thực tế</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>I1. Diễn giải Scatter Plot</strong> <em>(Câu 62):</em> Các điểm dữ liệu tập trung dốc lên về phía bên phải = Tương quan dương mạnh (<em>strong positive correlation</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>I2. Predictive models trong Hedge Funds</strong> <em>(Câu 7):</em> Dự đoán xu hướng giá cổ phiếu, khai thác thị trường theo CẢ HAI hướng tăng/giảm.</div>
+        </li>
+      
+</ul>
+      </div>
+    </div>
+  
 
       <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-02">
@@ -514,26 +1308,146 @@ remaining 20% of data is referred to as an</div><div class="q-text-vi">Dịch: T
         <h3 class="module-sub">Quyền riêng tư, Bảo vệ Dữ liệu & Luật pháp (GDPR, PIPEDA, CCPA, COPPA, FERPA, HIPAA) (35 câu hỏi)</h3>
       </div>
 
-      <!-- 1. Top: Theory Box (100% Comprehensive Synthesized Theory) -->
-      <div class="card-soft theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi 3 Mục (Core Theory - Cover 100% Khái Niệm & Tình Huống)</div>
-        
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>1.</strong> Mục A - Core Concept: Data Privacy Laws regulate personal data collection, storage, processing, and disclosure to safeguard individual rights against unauthorized exploitation.</div>
-      <div class="t-vi">Dịch: Mục A - Khái niệm Cốt lõi: Luật Quyền riêng tư Dữ liệu điều chỉnh việc thu thập, lưu trữ, xử lý và tiết lộ dữ liệu cá nhân để bảo vệ quyền lợi cá nhân trước sự khai thác trái phép.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>2.</strong> Mục B - Key Legal Frameworks: (1) PIPEDA (Canada): Balances individual privacy rights with private-sector business needs to collect/use commercial data for legitimate purposes. (2) GDPR (EU): Strict user consent, Privacy by Design, Data Minimization, Right to Erasure / Right to be Forgotten. (3) COPPA (US): Requires verifiable parental consent before collecting personal data online from children under 13. (4) CCPA (California): Right to know, opt-out of data sales, and request deletion. (5) FERPA & HIPAA: FERPA protects student educational records; HIPAA protects Protected Health Information (PHI).</div>
-      <div class="t-vi">Dịch: Mục B - Các Khung Pháp Lý Cốt Lõi: (1) PIPEDA (Canada): Cân bằng giữa quyền riêng tư cá nhân với nhu cầu thương mại hợp pháp của doanh nghiệp tư nhân. (2) GDPR (EU): Đồng ý nghiêm ngặt, Bảo mật từ khâu thiết kế, Tối thiểu hóa dữ liệu, Quyền được xóa / lãng quên. (3) COPPA (Mỹ): Yêu cầu sự đồng ý xác thực của cha mẹ trước khi thu thập dữ liệu trẻ em dưới 13 tuổi trực tuyến. (4) CCPA (California): Quyền được biết, từ chối bán dữ liệu và yêu cầu xóa. (5) FERPA & HIPAA: FERPA bảo vệ hồ sơ học sinh sinh viên; HIPAA bảo vệ thông tin sức khỏe (PHI).</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>3.</strong> Mục C - Decision Rule: De-identification and Anonymization require stripping direct identifiers and applying k-anonymity to prevent re-identification attacks when publishing research or commercial datasets.</div>
-      <div class="t-vi">Dịch: Mục C - Quy tắc Xử lý: Mất định danh và Nặc danh hóa yêu cầu loại bỏ các định danh trực tiếp và áp dụng k-nặc danh để ngăn chặn tấn công tái định danh khi công bố dữ liệu.</div>
-    </div>
-  
+      <!-- 1. Top: Expanded Web Theory Box -->
+      
+    <div class="card-soft theory-box">
+      <div class="theory-box-header">
+        <div class="theory-box-title">
+          <i class="fa-solid fa-book-open" style="color: var(--accent, #2f7cf6);"></i>
+          <span>Lý Thuyết Cốt Lõi Mở Rộng (Cover 100% Khái Niệm & Ứng Dụng Thực Tế)</span>
+        </div>
+        <button type="button" class="theory-toggle-btn" id="theory-btn-MOD-03" onclick="toggleTheory('MOD-03')">
+          <i class="fa-solid fa-chevron-up"></i> Thu gọn lý thuyết
+        </button>
       </div>
+      <div class="web-theory-container" id="theory-content-MOD-03">
+        <div class="web-callout-info"><i class="fa-solid fa-lightbulb"></i> <span>Phần lý thuyết cốt lõi mở rộng toàn diện bao phủ 100% bản chất khái niệm, kỹ thuật toán học và quy tắc pháp lý của toàn bộ 35 câu hỏi trắc nghiệm MOD-03.</span></div>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 1. Khái niệm Cốt lõi & Môi trường Thông minh (Ambient Intelligence)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Bản chất của Quyền riêng tư (Privacy):</strong> Privacy gắn liền không thể tách rời với <strong>Bảo vệ dữ liệu (Data Protection)</strong> và <strong>Tính bảo mật (Confidentiality)</strong>. Trong khoảng 85% các khung chuẩn đạo đức AI toàn cầu, <strong>Quyền riêng tư (Privacy) là yêu cầu bắt buộc</strong>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Rủi ro của Môi trường Thông minh (Ambient Intelligence):</strong> Các hệ thống cảm biến thông minh (<em>smart sensors/IoT</em>) thu thập dữ liệu ngầm làm gia tăng nghiêm trọng rủi ro <strong>Truy cập Trái phép (Unauthorized Access)</strong>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Nghịch lý Dữ liệu lớn (Big Data Privacy Dilemma):</strong> Các ứng dụng thời tiết/bản đồ yêu cầu vị trí GPS không chỉ lưu trữ thông tin định danh cá nhân (PII) mà còn <strong>suy đoán ra thói quen di chuyển hàng ngày của người dùng</strong>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Ứng dụng Truy vết Khẩn cấp (Pandemic/Emergency Tracing):</strong> Khi triển khai các ứng dụng truy vết dịch bệnh, ưu tiên tối cao bắt buộc phải là <strong>Quyền riêng tư (Privacy)</strong> và <strong>Trách nhiệm giải trình (Accountability)</strong>.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 2. Kỹ thuật Toán học Differential Privacy & Cơ chế Tung đồng xu</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Khái niệm Differential Privacy (Riêng tư vi sai):</strong> Là giải pháp toán học mạnh mẽ nhất chứng minh rằng: kết quả đầu ra của mô hình <strong>KHÔNG THAY ĐỔI ĐÁNG KỂ</strong> dù dữ liệu của MỘT cá nhân bất kỳ có được đưa vào hay loại bỏ khỏi tập huấn luyện.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Cơ chế Phản hồi Ngẫu nhiên (Randomized Response Technique - Tung đồng xu):</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Lần tung 1:</strong> Ngửa <code class="t-code">&rarr;</code> Trả lời thật 100%; Sấp <code class="t-code">&rarr;</code> Tung tiếp lần 2.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Lần tung 2:</strong> Ngửa <code class="t-code">&rarr;</code> Trả lời "Có"; Sấp <code class="t-code">&rarr;</code> Trả lời "Không".</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Ý nghĩa:</strong> Tạo ra sự phủ nhận hợp lý (<em>plausible deniability</em>) giúp bảo vệ cá nhân khi trả lời các câu hỏi nhạy cảm.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Xác suất:</strong> Tỷ lệ người trả lời hoàn toàn trung thực là <strong>25%</strong> (<code class="t-code">0.5 \times 0.5 = 0.25</code>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Local Differential Privacy (LDP):</strong> Kỹ thuật thêm nhiễu toán học ngay tại thiết bị của người dùng trước khi gửi về máy chủ trung tâm. Dữ liệu được bảo vệ an toàn <strong>ngay cả trước đơn vị thu thập dữ liệu</strong>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Tham số Ngân sách Riêng tư Epsilon (<code class="t-code">\varepsilon</code>):</strong> <code class="t-code">\varepsilon</code> đại diện cho ngân sách riêng tư. <strong><code class="t-code">\varepsilon</code> càng nhỏ thì mức độ bảo vệ riêng tư càng cao</strong>.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 3. Giới hạn Ẩn danh hóa & Tấn công Tái định danh (Linkage Attacks)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Thất bại của Ẩn danh hóa (Anonymization / Pseudonymization):</strong> Việc chỉ xóa tên hay số CMND/CCCD là KHÔNG ĐỦ để bảo vệ riêng tư nếu kẻ tấn công thực hiện <strong>Tấn công Liên kết dữ liệu (Linkage Attack)</strong> với các tập dữ liệu công khai bên ngoài.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Case study Bê bối Netflix Prize (2006):</strong> Các nhà nghiên cứu bảo mật đã kết hợp tập dữ liệu ẩn danh giải thưởng Netflix với dữ liệu đánh giá phim công khai trên IMDb để <strong>tái định danh thành công danh tính và lịch sử xem phim của các người dùng ẩn danh</strong>.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 4. Bảng Tra cứu Chi tiết các Luật & Quy định Pháp lý Bảo vệ Dữ liệu</div>
+
+        <div class="web-table-wrapper">
+          <table class="web-theory-table">
+            <thead><tr><th>Đạo luật</th><th>Phạm vi & Bản chất cốt lõi trong Đề thi</th></tr></thead>
+            <tbody><tr><td><strong>GDPR (Châu Âu)</strong></td><td>Quy định nguyên tắc <strong>Giảm thiểu Dữ liệu (Data Minimization - Điều 5(1)(c))</strong>: Dữ liệu thu thập phải thỏa mãn 3 điều kiện: <em>Adequate</em> (Đầy đủ), <em>Relevant</em> (Liên quan) và <em>Limited to what is necessary</em> (Giới hạn trong mức cần thiết).</td></tr><tr><td><strong>PIPEDA (Canada)</strong></td><td>Cấm doanh nghiệp từ chối cung cấp sản phẩm/dịch vụ nếu người dùng không đồng ý cho thu thập các dữ liệu KHÔNG ESSENTIAL (không thiết yếu cho giao dịch).</td></tr><tr><td><strong>CCPA (California)</strong></td><td>Cho phép người dùng có <strong>Quyền yêu cầu xóa dữ liệu cá nhân</strong> (<em>Right to request deletion</em>) khỏi cơ sở dữ liệu của doanh nghiệp.</td></tr><tr><td><strong>COPPA (Mỹ)</strong></td><td>Yêu cầu phải có <strong>Sự đồng ý xác thực của cha mẹ (<em>Verifiable Parental Consent</em>)</strong> trước khi thu thập dữ liệu của trẻ em <strong>dưới 13 tuổi</strong>.</td></tr><tr><td><strong>BIPA (Illinois)</strong></td><td>Quy định nghiêm ngặt về <strong>Dữ liệu Sinh trắc học (Biometric Data)</strong>: Bắt buộc phải xin phép bằng văn bản và có lịch trình hủy dữ liệu đúng hạn.</td></tr><tr><td><strong>FERPA & HIPAA</strong></td><td>FERPA bảo vệ hồ sơ giáo dục học sinh/sinh viên; HIPAA bảo vệ hồ sơ thông tin sức khỏe cá nhân.</td></tr><tr><td><strong>Thẩm quyền thực thi</strong></td><td>Các <strong>Cơ quan Quản lý Quốc gia (National Regulatory Agencies)</strong> chịu trách nhiệm thanh tra và thực thi trừng phạt vi phạm.</td></tr></tbody>
+          </table>
+        </div>
+      
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 5. Privacy by Design (7 Nguyên tắc Ann Cavoukian)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Nguyên tắc 1 - Proactive not Reactive / Preventive not Remedial:</strong> Chủ động phòng ngừa rủi ro từ trước, không thụ động ứng phó sau khi sự cố đã xảy ra.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Nguyên tắc 2 - Privacy as the Default Setting:</strong> Quyền riêng tư là cài đặt mặc định tự động cho mọi người dùng mà không cần họ phải chủ động thao tác.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Nguyên tắc 3 - Privacy Embedded into Design:</strong> Bảo mật được tích hợp trực tiếp vào kiến trúc thiết kế hệ thống xuyên suốt toàn bộ vòng đời phát triển phần mềm.</div>
+        </li>
+      
+</ul>
+      </div>
+    </div>
+  
 
       <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-03">
@@ -567,31 +1481,224 @@ remaining 20% of data is referred to as an</div><div class="q-text-vi">Dịch: T
         <h3 class="module-sub">An toàn Bảo mật, Mô hình hóa Mối đe dọa (STRIDE, VAST) & Mã độc (29 câu hỏi)</h3>
       </div>
 
-      <!-- 1. Top: Theory Box (100% Comprehensive Synthesized Theory) -->
-      <div class="card-soft theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi 3 Mục (Core Theory - Cover 100% Khái Niệm & Tình Huống)</div>
-        
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>1.</strong> Mục A - Core Concept: Threat Modeling systematically identifies architectural security risks, potential attack vectors, and countermeasures across system boundaries.</div>
-      <div class="t-vi">Dịch: Mục A - Khái niệm Cốt lõi: Mô hình hóa mối đe dọa hệ thống hóa việc nhận diện rủi ro bảo mật kiến trúc, các hướng tấn công tiềm ẩn và biện pháp khắc phục.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>2.</strong> Mục B - STRIDE & VAST Frameworks: Applied in Threat Modeling or Security Analysis tools. STRIDE acronym: (S) Spoofing - Violates Authenticity; (T) Tampering - Violates Integrity; (R) Repudiation - Violates Non-repudiation; (I) Information Disclosure - Violates Confidentiality; (D) Denial of Service - Violates Availability; (E) Elevation of Privilege - Violates Authorization. VAST (Visual, Agile, Threat modeling) integrates security into agile software pipelines.</div>
-      <div class="t-vi">Dịch: Mục B - Khung STRIDE & VAST: Được áp dụng trong các công cụ Mô hình hóa Mối đe dọa hoặc Phân tích Bảo mật. STRIDE: (S) Spoofing - Giả mạo (Vi phạm Xác thực); (T) Tampering - Xáo trộn (Vi phạm Tính toàn vẹn); (R) Repudiation - Phủ nhận (Vi phạm Tính chống phủ nhận); (I) Information Disclosure - Tiết lộ thông tin (Vi phạm Tính bảo mật); (D) Denial of Service - Từ chối dịch vụ (Vi phạm Tính sẵn sàng); (E) Elevation of Privilege - Nâng quyền (Vi phạm Phân quyền). VAST: Khung mô hình hóa mối đe dọa trực quan, linh hoạt cho quy trình Agile.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>3.</strong> Mục B - Cyber Threat Types: Spyware: Malicious software covertly installed to monitor, log, and transmit user activity and credentials without consent. Ransomware: Encrypts files demanding ransom. Trojan: Disguised as legitimate software. Hacktivism: Cyber attacks motivated primarily by political, social, or ideological causes rather than personal financial profit.</div>
-      <div class="t-vi">Dịch: Mục B - Các Loại Mã Độc & Tấn Công: Spyware (Phần mềm theo dõi): Mã độc được cài lén lút để giám sát, ghi lại và truyền thông tin hành vi người dùng. Ransomware: Mã hóa tống tiền. Trojan: Núp bóng phần mềm hợp pháp. Hacktivism: Tấn công mạng vì động cơ chính trị, xã hội hoặc tư tưởng chứ không vì lợi nhuận tài chính.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>4.</strong> Mục C - Decision Rule: Security controls must follow Defense-in-Depth and Least Privilege principles. Apply STRIDE at the design phase before writing code.</div>
-      <div class="t-vi">Dịch: Mục C - Quy tắc Xử lý: Kiểm soát an ninh phải tuân thủ nguyên tắc Phòng thủ theo chiều sâu (Defense-in-Depth) và Quyền tối thiểu (Least Privilege). Áp dụng STRIDE ngay từ khâu thiết kế trước khi viết code.</div>
-    </div>
-  
+      <!-- 1. Top: Expanded Web Theory Box -->
+      
+    <div class="card-soft theory-box">
+      <div class="theory-box-header">
+        <div class="theory-box-title">
+          <i class="fa-solid fa-book-open" style="color: var(--accent, #2f7cf6);"></i>
+          <span>Lý Thuyết Cốt Lõi Mở Rộng (Cover 100% Khái Niệm & Ứng Dụng Thực Tế)</span>
+        </div>
+        <button type="button" class="theory-toggle-btn" id="theory-btn-MOD-04" onclick="toggleTheory('MOD-04')">
+          <i class="fa-solid fa-chevron-up"></i> Thu gọn lý thuyết
+        </button>
       </div>
+      <div class="web-theory-container" id="theory-content-MOD-04">
+        <div class="web-callout-info"><i class="fa-solid fa-lightbulb"></i> <span>Phần lý thuyết cốt lõi mở rộng toàn diện bao phủ 100% bản chất khái niệm, kiến thức an toàn thông tin và quy tắc xử lý của toàn bộ 29 câu hỏi trắc nghiệm MOD-04.</span></div>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 1. Khái niệm cốt lõi & Mô hình hóa mối đe dọa (Threat Modeling: STRIDE & VAST)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Threat Modeling (Mô hình hóa mối đe dọa):</strong> Quy trình hệ thống hóa việc nhận diện rủi ro bảo mật kiến trúc, các hướng tấn công tiềm ẩn (<em>attack vectors</em>) và biện pháp kiểm soát (<em>countermeasures/controls</em>) trên ranh giới hệ thống. Áp dụng ngay từ khâu <strong>thiết kế ban đầu (design phase)</strong> trước khi viết code.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Mô hình STRIDE (Phân loại rủi ro kiến trúc):</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>(S) Spoofing (Giả mạo):</strong> Vi phạm tính <strong>Xác thực (Authenticity)</strong> - giả danh người dùng/hệ thống.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>(T) Tampering (Xáo trộn):</strong> Vi phạm tính <strong>Toàn vẹn (Integrity)</strong> - chỉnh sửa trái phép dữ liệu/code.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>(R) Repudiation (Phủ nhận):</strong> Vi phạm tính <strong>Chống phủ nhận (Non-repudiation)</strong> - không lưu nhật ký kiểm toán.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>(I) Information Disclosure (Tiết lộ thông tin):</strong> Vi phạm tính <strong>Bảo mật (Confidentiality)</strong> - rò rỉ dữ liệu.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>(D) Denial of Service (Từ chối dịch vụ):</strong> Vi phạm tính <strong>Sẵn sàng (Availability)</strong> - làm quá tải hệ thống.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>(E) Elevation of Privilege (Nâng quyền):</strong> Vi phạm tính <strong>Phân quyền (Authorization)</strong> - chiếm quyền quản trị.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Khung VAST (Visual, Agile, Threat modeling):</strong> Khung mô hình hóa mối đe dọa trực quan, linh hoạt thiết kế tích hợp trực tiếp vào quy trình phần mềm Agile.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 2. Phân loại Mã độc & Tấn công Mạng (Cyber Threats & Malware)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Spyware (Phần mềm gián điệp):</strong> Mã độc cài lén lút để theo dõi, ghi lại bàn phím/hành vi duyệt web và truyền dữ liệu/mật khẩu về máy chủ kẻ tấn công mà người dùng không hay biết.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Ransomware (Mã độc tống tiền):</strong> Mã hóa dữ liệu người dùng và đòi tiền chuộc để giải mã.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Trojan Horse (Ngựa Trojan):</strong> Núp bóng phần mềm hợp pháp để lừa người dùng cài đặt.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Hacktivism (Tấn công mạng vì mục tiêu xã hội/chính trị):</strong> Cuộc tấn công mạng được thúc đẩy bởi <strong>khao khát thúc đẩy sự thay đổi xã hội</strong> (<em>desire for social change</em>), chính trị hoặc tư tưởng, chứ không phải vì mục đích tài chính cá nhân.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 3. Kiểm thử Xâm nhập, Đội ngũ Bảo mật & Pháp y Kỹ thuật số (PenTest & Forensics)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Red Team vs. Blue Team trong Penetration Testing:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Red Team:</strong> Đóng vai kẻ tấn công (<em>offensive/simulated attacks</em>) - chủ động dò tìm và khai thác lỗ hổng để thử nghiệm sức chịu đựng của hệ thống.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Blue Team:</strong> Đóng vai phòng thủ (<em>defensive</em>) - bảo vệ và phản ứng sự cố.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Mục tiêu của Phân tích Pháp y Kỹ thuật số (Digital Forensic Analysis):</strong> (1) Xác định chính xác <strong>điều gì đã xảy ra</strong> trong sự cố (<em>determine what occurred</em>); (2) Xác định <strong>ai hoặc cái gì chịu trách nhiệm</strong> (<em>identify who or what is responsible</em> - kẻ tấn công, malware, lỗ hổng).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Công cụ & Giao thức An toàn:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Encryption Protocols:</strong> SSL, TLS, SSH là các giao thức mã hóa đường truyền bảo vệ tính bảo mật và toàn vẹn dữ liệu mạng.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Kali Linux:</strong> Hệ điều hành chuyên dụng cho PenTest tích hợp sẵn hàng trăm công cụ khai thác lỗ hổng bảo mật (<em>security exploit tools</em> như Metasploit, Burp Suite, Nmap).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Vulnerability Audit (Kiểm toán lỗ hổng):</strong> Quy trình tự đánh giá và rà soát các vấn đề kiểm soát chất lượng và điểm yếu an ninh mạng.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 4. Hạ tầng Giám sát SIEM, Quản trị RACI & An ninh Vật lý</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Hệ thống SIEM (Security Information and Event Management):</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Mục đích chính:</strong> Tổng hợp, tương quan và phân tích các cảnh báo/nhật ký từ nhiều nguồn an ninh phân tán (<em>aggregate alerts from disparate sources</em>) về <strong>MỘT nền tảng phân tích tập trung duy nhất</strong>.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Nguồn dữ liệu cốt lõi:</strong> Thu thập dữ liệu từ <strong>System event logs</strong> (nhật ký sự kiện hệ thống) và <strong>Network intrusion detection alerts</strong> (cảnh báo phát hiện xâm nhập mạng NIDS).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Nguyên nhân gốc rễ (Root Cause Analysis):</strong> Dữ liệu được lưu trữ không an toàn và thiếu mã hóa (<em>stored insecurely</em>) là <strong>nguyên nhân gốc rễ</strong>, còn dữ liệu bị rò rỉ lên mạng (<em>leaked online</em>) chỉ là hậu quả bề nổi.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Attack Tree Diagram (Sơ đồ cây tấn công):</strong> Nhiệm vụ "Áp dụng bản vá an ninh" (<em>Apply security patch</em>) thuộc danh mục <strong>Control</strong> (Biện pháp kiểm soát/ngăn chặn).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Ma trận RACI:</strong> Vị trí <strong>Accountable (A)</strong> gánh chịu trách nhiệm phê duyệt và giải trình tối cao cho tác vụ áp dụng bản vá an ninh.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Physical Security Policy (Chính sách an ninh vật lý):</strong> Quy định thời hạn lưu trữ bản ghi camera giám sát CCTV và nhật ký ra vào cổng/phòng máy chủ.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 5. Đe dọa Đạo đức AI, Tấn công Đối kháng & Xe tự lái</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Deepfake Ethical Threat:</strong> Usurp a person's likeness, identity, and voice without consent - chiếm đoạt diện mạo, danh tính và giọng nói của một người để biến thành vũ khí chống lại họ.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Robustness to Adversarial Examples (Tính chống chịu dữ liệu đối kháng):</strong> Yêu cầu thiết yếu cho các ứng dụng AI quan trọng (như xe tự lái).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Adversarial Perturbed Inputs (Đầu vào nhiễu đối kháng):</strong> Kẻ tấn công cố tình thêm nhiễu siêu nhỏ (<em>perturbed inputs</em>) để đánh lừa mô hình AI nhận diện sai hoàn toàn.</div>
+        </li>
+      
+</ul>
+      </div>
+    </div>
+  
 
       <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-04">
@@ -625,26 +1732,59 @@ remaining 20% of data is referred to as an</div><div class="q-text-vi">Dịch: T
         <h3 class="module-sub">Sở hữu Trí tuệ, Bản quyền, Bằng sáng chế & Bí mật Thương mại (4 câu hỏi)</h3>
       </div>
 
-      <!-- 1. Top: Theory Box (100% Comprehensive Synthesized Theory) -->
-      <div class="card-soft theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi 3 Mục (Core Theory - Cover 100% Khái Niệm & Tình Huống)</div>
-        
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>1.</strong> Mục A - Core Concept: Intellectual Property (IP) laws protect non-tangible human intellect creations, granting exclusive legal rights to creators for specified durations.</div>
-      <div class="t-vi">Dịch: Mục A - Khái niệm Cốt lõi: Luật Sở hữu Trí tuệ (IP) bảo vệ các sản phẩm sáng tạo trí tuệ phi vật thể, cấp quyền pháp lý độc quyền cho tác giả trong khoảng thời gian xác định.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>2.</strong> Mục B - 4 Forms of IP Protection: (1) Copyright: Protects fixed original expressions (code, text, art, music) automatically upon creation. (2) Patent: Protects novel, non-obvious functional inventions and processes for ~20 years in exchange for public disclosure. (3) Trade Secret: Protects confidential formulas, algorithms, or client lists indefinitely as long as strict secrecy measures are enforced (NO public registration required). (4) Trademark: Protects brand names, logos, and commercial slogans.</div>
-      <div class="t-vi">Dịch: Mục B - 4 Hình thức Bảo hộ IP: (1) Bản quyền (Copyright): Bảo vệ bản thể hiện ý tưởng (mã nguồn, văn bản, đồ họa) tự động khi tạo ra. (2) Bằng sáng chế (Patent): Bảo vệ phát minh/quy trình chức năng mới trong khoảng 20 năm để đổi lấy việc công khai thông tin. (3) Bí mật Thương mại (Trade Secret): Bảo vệ công thức, thuật toán, danh sách khách hàng bảo mật vô thời hạn miễn là giữ kín (KHÔNG cần đăng ký công khai). (4) Nhãn hiệu (Trademark): Bảo vệ tên thương hiệu, logo, khẩu hiệu.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>3.</strong> Mục C - Decision Rule: Use Trade Secrets for proprietary algorithms when rapid technological change makes public patent disclosure disadvantageous.</div>
-      <div class="t-vi">Dịch: Mục C - Quy tắc Xử lý: Sử dụng Bí mật Thương mại cho các thuật toán độc quyền khi sự thay đổi công nghệ nhanh chóng khiến việc công khai bằng sáng chế không có lợi.</div>
-    </div>
-  
+      <!-- 1. Top: Expanded Web Theory Box -->
+      
+    <div class="card-soft theory-box">
+      <div class="theory-box-header">
+        <div class="theory-box-title">
+          <i class="fa-solid fa-book-open" style="color: var(--accent, #2f7cf6);"></i>
+          <span>Lý Thuyết Cốt Lõi Mở Rộng (Cover 100% Khái Niệm & Ứng Dụng Thực Tế)</span>
+        </div>
+        <button type="button" class="theory-toggle-btn" id="theory-btn-MOD-05" onclick="toggleTheory('MOD-05')">
+          <i class="fa-solid fa-chevron-up"></i> Thu gọn lý thuyết
+        </button>
       </div>
+      <div class="web-theory-container" id="theory-content-MOD-05">
+        <div class="web-callout-info"><i class="fa-solid fa-lightbulb"></i> <span>Phần lý thuyết cốt lõi bao phủ 100% bản chất khái niệm và quy tắc pháp lý của 4 câu hỏi trắc nghiệm MOD-05.</span></div>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 1. Khái niệm Cốt lõi & 4 Hình thức Bảo hộ Sở hữu Trí tuệ (IP)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Copyright (Bản quyền):</strong> Bảo vệ bản thể hiện ý tưởng cố định (<em>fixed original expression</em>) như mã nguồn, văn bản, đồ họa tự động khi tạo ra.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Patent (Bằng sáng chế):</strong> Bảo vệ phát minh/quy trình chức năng mới (<em>novel, non-obvious functional inventions</em>) trong ~20 năm để đổi lấy việc công khai thông tin với xã hội.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Trade Secret (Bí mật Thương mại):</strong> Bảo vệ công thức, thuật toán, danh sách khách hàng bảo mật vô thời hạn miễn là giữ kín (<strong>KHÔNG cần đăng ký công khai</strong>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Trademark (Nhãn hiệu):</strong> Bảo vệ tên thương hiệu, logo và khẩu hiệu thương mại.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 2. Quy tắc Xử lý & Lựa chọn Bảo hộ Thuật toán</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Khi nào chọn Trade Secret:</strong> Sử dụng Bí mật Thương mại cho các thuật toán độc quyền khi sự thay đổi công nghệ nhanh chóng khiến việc công khai bằng sáng chế không có lợi.</div>
+        </li>
+      
+</ul>
+      </div>
+    </div>
+  
 
       <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-05">
@@ -678,31 +1818,428 @@ remaining 20% of data is referred to as an</div><div class="q-text-vi">Dịch: T
         <h3 class="module-sub">Quản lý Rủi ro, Trách nhiệm Giải trình & Quản trị Tổ chức (66 câu hỏi)</h3>
       </div>
 
-      <!-- 1. Top: Theory Box (100% Comprehensive Synthesized Theory) -->
-      <div class="card-soft theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi 3 Mục (Core Theory - Cover 100% Khái Niệm & Tình Huống)</div>
-        
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>1.</strong> Mục A - Core Concept: Organizational Governance ensures technology deployments align with legal standards, societal safety, risk appetite, and corporate ethical duties.</div>
-      <div class="t-vi">Dịch: Mục A - Khái niệm Cốt lõi: Quản trị Tổ chức đảm bảo việc triển khai công nghệ tuân thủ các tiêu chuẩn pháp lý, an toàn xã hội, mức độ chấp nhận rủi ro và nghĩa vụ đạo đức.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>2.</strong> Mục B - Proactive Risk Management: Taking a proactive approach to addressing liability issues prevents legal disputes, financial loss, reputational damage, and safety failures before products reach users.</div>
-      <div class="t-vi">Dịch: Mục B - Quản lý Rủi ro Chủ động: Chủ động giải quyết các vấn đề trách nhiệm pháp lý từ sớm giúp ngăn ngừa tranh chấp pháp lý, tổn hại tài chính, mất uy tín và sự cố an toàn trước khi sản phẩm đến tay người dùng.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>3.</strong> Mục B - Categorization of Ethical Risks: Categorizing ethical risks into distinct domains allows organizations to allocate resources efficiently, assign clear governance ownership, and prioritize risk mitigations.</div>
-      <div class="t-vi">Dịch: Mục B - Phân loại Rủi ro Đạo đức: Phân loại rủi ro thành các nhóm rõ ràng giúp tổ chức phân bổ nguồn lực hiệu quả, xác định trách nhiệm quản trị và ưu tiên các giải pháp giảm thiểu.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>4.</strong> Mục C - Decision Rule: Automated systems require Human Oversight (Human-in-the-loop), auditable decision logs, transparent operational rules, and clear organizational ownership for all outputs.</div>
-      <div class="t-vi">Dịch: Mục C - Quy tắc Xử lý: Các hệ thống tự động đòi hỏi phải có Giám sát của Con người (Human-in-the-loop), nhật ký kiểm toán có thể truy vết, quy tắc minh bạch và trách nhiệm tổ chức rõ ràng.</div>
-    </div>
-  
+      <!-- 1. Top: Expanded Web Theory Box -->
+      
+    <div class="card-soft theory-box">
+      <div class="theory-box-header">
+        <div class="theory-box-title">
+          <i class="fa-solid fa-book-open" style="color: var(--accent, #2f7cf6);"></i>
+          <span>Lý Thuyết Cốt Lõi Mở Rộng (Cover 100% Khái Niệm & Ứng Dụng Thực Tế)</span>
+        </div>
+        <button type="button" class="theory-toggle-btn" id="theory-btn-MOD-06" onclick="toggleTheory('MOD-06')">
+          <i class="fa-solid fa-chevron-up"></i> Thu gọn lý thuyết
+        </button>
       </div>
+      <div class="web-theory-container" id="theory-content-MOD-06">
+        <div class="web-callout-info"><i class="fa-solid fa-lightbulb"></i> <span>Phần lý thuyết cốt lõi mở rộng toàn diện bao phủ 100% bản chất khái niệm, kiến thức quản trị tổ chức, pháp lý và quy tắc xử lý của toàn bộ 66 câu hỏi trắc nghiệm MOD-06.</span></div>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 1. Bộ ba Trách nhiệm Quản trị & Ma trận RACI</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Responsibility (Trách nhiệm thực thi):</strong> Là nghĩa vụ hoàn thành một nhiệm vụ hoặc công việc cụ thể được giao.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Accountability (Trách nhiệm giải trình / Sở hữu kết quả):</strong> Là quyền và nghĩa vụ chịu trách nhiệm tối cao cho kết quả cuối cùng của hệ thống/quy trình (kể cả khi đã ủy quyền cho người khác làm).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Liability (Trách nhiệm pháp lý):</strong> Là nghĩa vụ pháp lý phải bồi thường thiệt hại về mặt tài chính hoặc chịu chế tài trước pháp luật khi xảy ra tổn thất.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Ma trận RACI trong Quản trị Dự án:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>R - Responsible (Người thực thi):</strong> Người trực tiếp làm công việc.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>A - Accountable (Người chịu trách nhiệm tối cao):</strong> Cá nhân duy nhất có quyền phê duyệt và gánh vác trách nhiệm giải trình cuối cùng.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>C - Consulted (Người được tham vấn):</strong> Chuyên gia cung cấp ý kiến hai chiều trước khi ra quyết định.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>I - Informed (Người được thông báo):</strong> Đối tượng được cập nhật thông tin một chiều về tiến độ/kết quả.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Yếu tố thiết yếu cho System Accountability:</strong> Phân công trách nhiệm rõ ràng (<em>Clear responsibility assignment</em>).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 2. Xây dựng Văn hóa Đạo đức Tổ chức & Quản lý Thay đổi (Culture & HR)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Bản chất của Văn hóa Doanh nghiệp:</strong> Được định nghĩa chuẩn xác nhất qua câu nói thực tế: <em>"This is how things are done around here"</em> (Đây là cách mọi việc được thực hiện ở đây - thể hiện hành vi thực tế hơn là khẩu hiệu lý thuyết).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Phương pháp Xây dựng Văn hóa Đạo đức:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Top-down (Nêu gương từ cấp cao):</strong> Ban lãnh đạo cấp cao phải tích cực làm tấm gương cho hành vi đạo đức (<em>Leadership actively models ethical behavior</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Tiếp cận Hệ thống & Động lực:</strong> Kết hợp quản trị có hệ thống với hệ thống khen thưởng/đãi ngộ (<em>Systemic approach with incentive systems</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Minh bạch liên tục:</strong> Minh bạch về giá trị công ty qua hành động thực tế và giao tiếp mở (<em>Transparency about company values through continuous actions</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Phân biệt Culture Workshop vs. Ethics Training:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Ethics Training (Đào tạo đạo đức):</strong> Giảng dạy lý thuyết về các giá trị và quy tắc của công ty (<em>Teaches company values</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Culture-building Workshop (Hội thảo xây dựng văn hóa):</strong> Hướng dẫn nhân viên cách tích hợp các giá trị đó vào thực hành công việc hàng ngày (<em>Teaches how to integrate company values into daily practice</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Vai trò của Bộ phận Nhân sự (Human Resources):</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content">Là nguồn lực tổ chức được sử dụng phổ biến nhất (<em>Human resources</em>) để nuôi dưỡng văn hóa.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content">Đóng vai trò then chốt bằng cách <strong>tuyển dụng ứng viên dựa trên sự phù hợp văn hóa và giá trị đạo đức</strong> (<em>culture fit and ethical values</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Rủi ro khi thiếu Văn hóa Đạo đức:</strong> Nhân viên gặp phải tình trạng <strong>Bất hòa nhận thức (<em>Cognitive Dissonance</em>)</strong> khi giá trị cá nhân mâu thuẫn với hành vi sai trái của công ty.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Quản lý sự thay đổi (Change Management):</strong> Mục đích là tạo ra <strong>sự chuyển đổi suôn sẻ và được hỗ trợ</strong> (<em>smooth, supported transition</em>) khi áp dụng chuẩn mực đạo đức mới.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Văn hóa Rủi ro Mở (Risk Culture of Open Feedback):</strong> Giúp triệt tiêu thái độ e ngại tiếp nhận phản hồi, khuyến khích nhân viên chủ động báo cáo lỗi.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 3. Quản trị Stakeholder & Vận hành Chính sách Đạo đức</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Định nghĩa Stakeholder (Bên liên quan):</strong> <em>Tất cả những người có ảnh hưởng đến tổ chức hoặc chịu ảnh hưởng bởi tổ chức</em> (<em>All people who have an impact or are impacted by the organization</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Internal Stakeholders:</strong> Lãnh đạo, quản lý, lập trình viên (Developers), nhà thiết kế (Designers).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>External Stakeholders:</strong> Cơ quan quản lý (Regulators), khách hàng, chủ thể dữ liệu (Data subjects), cộng đồng.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Vai trò của Chủ sở hữu Chính sách (Policy Owner):</strong> Không tự viết chính sách một mình mà có trách nhiệm <strong>quy tụ và kết nối đúng các bên liên quan nội bộ và bên ngoài để cùng dự thảo, cập nhật chính sách</strong> (<em>bring the right internal and external stakeholders together</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Lợi ích khi lấy ý kiến External Stakeholders:</strong> Giúp phát hiện các góc nhìn định tính mới (<em>qualitative insights</em>) về cách sản phẩm tác động lên cộng đồng thực tế và loại bỏ điểm mù (<em>blind spots</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Phát triển Tầm nhìn & Sứ mệnh (Mission & Vision):</strong> Sự ủng hộ của <strong>Ban lãnh đạo cấp cao (<em>C-suite executives</em>)</strong> là quan trọng nhất.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Cập nhật Bộ quy tắc Đạo đức (Code of Ethics):</strong> Cần cập nhật định kỳ để <strong>bắt kịp bản chất liên tục tiến hóa của công nghệ mới và các rủi ro đạo đức mới nổi</strong> (<em>captures evolving nature of emergent risks</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Truyền thông Chính sách:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content">Cần sử dụng <strong>các ví dụ đơn giản, dễ theo dõi (<em>simple to follow examples</em>)</strong>.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><em>Cạm bẫy cần tránh:</em> Thông điệp rời rạc (<em>disjointed message</em>) và không kiểm soát luồng truyền thông (<em>not paying attention to message flow</em>).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 4. Phương pháp Phân tích Rủi ro, Báo cáo & Đánh giá Tác động</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Phân loại Phương pháp Phân tích Rủi ro:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Qualitative Analysis (Định tính) & Semi-qualitative (Bán định tính):</strong> Sử dụng các từ ngữ mô tả bằng lời (<em>Likelihood:</em> "Likely", "Unlikely", "Rare"; <em>Impact:</em> "Low", "Medium", "High" hoặc "Moderate", "Major", "Catastrophic").</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Quantitative Analysis (Định lượng):</strong> Dùng dữ liệu số học, tỷ lệ phần trăm và giá trị tiền tệ cụ thể.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Quy luật Khủng hoảng (Black Swan Dynamic):</strong> Sự cố có <strong>khả năng xảy ra thấp thường có xu hướng để lại tác động hủy hoại cực kỳ cao</strong> (<em>Low likelihood tends to have high impact</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Công cụ Báo cáo Lãnh đạo C-Suite:</strong> <strong>Bản đồ nhiệt rủi ro / Ma trận rủi ro (<em>Risk Heatmap / Risk Matrix</em>)</strong> là công cụ trực quan hóa mức độ nghiêm trọng tốt nhất cho ban điều hành.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Đánh giá Tác động Đạo đức (Ethical Impact Assessment - EIA):</strong> Là công cụ chủ động hướng về tương lai (<em>Forward-looking</em>), tập trung vào việc <strong>nhận diện và phòng ngừa các vấn đề đạo đức tiềm tàng trước khi triển khai</strong> (<em>focused on identifying and preventing future problems</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Kiểm thử Thí điểm (Pilot Testing) & Kiểm toán Định kỳ:</strong> Giúp giảm thiểu phạm vi ảnh hưởng của rủi ro và bộc lộ các khoảng trống trong trách nhiệm giải trình hoặc khả năng kiểm toán (<em>reveals gaps in accountability/auditability</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Lợi ích kinh tế của Việc Tuân thủ (Compliance):</strong> Tránh tổn hại danh tiếng (<em>Avoidance of reputational damage</em>) và tiết kiệm chi phí lâu dài do tránh các khoản tiền phạt khổng lồ (<em>Long-term cost savings due to avoiding fines</em>).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 5. Mối quan hệ Luật pháp vs. Đạo đức & Tiêu chuẩn Quốc tế</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Vấn đề Tốc độ (The Pacing Problem):</strong> Doanh nghiệp bắt buộc phải chủ động quản trị đạo đức vượt lên trên luật pháp vì <strong>Luật pháp luôn đi sau và tụt hậu so với tốc độ đổi mới công nghệ</strong> (<em>The law often lags behind innovation</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Tiêu chuẩn Quản trị AI Quốc tế:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>ISO/IEC 42001:</strong> Tiêu chuẩn quốc tế chính thức đầu tiên quy định về <strong>Hệ thống Quản trị Trí tuệ Nhân tạo</strong> (<em>Artificial Intelligence Management System - AIMS</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>NIST AI RMF (AI Risk Management Framework):</strong> Khung hướng dẫn của Viện Tiêu chuẩn và Công nghệ Quốc gia Mỹ cung cấp các công nghệ đo lường và khung chuẩn đánh giá rủi ro AI.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 6. Các Rủi ro Quản trị AI Chuyên biệt & Ma trận Từ khóa</div>
+
+        <div class="web-table-wrapper">
+          <table class="web-theory-table">
+            <thead><tr><th>Khái niệm / Rủi ro</th><th>Bản chất & Ý nghĩa trong Đề thi</th></tr></thead>
+            <tbody><tr><td><strong>Capability Caution (Thận trọng về Năng lực)</strong></td><td>Nguyên tắc quản trị nhắc nhở rằng chúng ta <strong>chưa thể biết hết toàn bộ quy mô năng lực mà các hệ thống AI có thể đạt tới trong tương lai</strong>, do đó cần lập kế hoạch phòng ngừa rủi ro vượt tầm kiểm soát.</td></tr><tr><td><strong>Unknown Unknowns (Điều không biết về điều không biết)</strong></td><td>Xuất phát từ sự thiếu tính giải thích (<em>lack of explainability</em>) - chúng ta không thể biết mô hình AI hộp đen đang thực sự nhìn vào thuộc tính nào để đưa ra quyết định.</td></tr><tr><td><strong>Pessimist View of AGI (Góc nhìn Bi quan về AGI)</strong></td><td>Cảnh báo kịch bản trí tuệ nhân tạo tổng quát vượt kiểm soát có thể dẫn đến <strong>nguy cơ diệt vong của nhân loại</strong> (<em>human extinction event / existential risk</em>).</td></tr><tr><td><strong>Closed-Source Transparency Risk</strong></td><td>Phần mềm mã nguồn đóng tạo ra rủi ro minh bạch vì <strong>ngăn cản các nhà kiểm toán độc lập tiếp cận và đánh giá an toàn</strong> (<em>may not be accessible to independent auditors</em>).</td></tr><tr><td><strong>Explainability Value (Giá trị của XAI)</strong></td><td>Cung cấp nền tảng xây dựng <strong>Tính trách nhiệm giải trình và Lòng tin</strong> (<em>Provides accountability and trust</em>).</td></tr></tbody>
+          </table>
+        </div>
+      
+<div class="web-theory-h5">Bảng Ma trận Từ khóa Ăn điểm MOD-06:</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Essential for system accountability <code class="t-code">&rarr;</code> <strong>Clear responsibility assignment</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Responsibility vs Accountability vs Liability <code class="t-code">&rarr;</code> <strong>Duty to complete task | Ownership of outcomes | Legal obligation for damages</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Characterizes company culture <code class="t-code">&rarr;</code> <strong>"This is how things are done around here."</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Culture workshop vs. Ethics training <code class="t-code">&rarr;</code> <strong>Workshop teaches integrating values into daily practice; Training teaches company values</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">HR helps build ethical culture by... <code class="t-code">&rarr;</code> <strong>Hiring candidates based on culture fit and ethical values</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Risk of lacking ethical culture <code class="t-code">&rarr;</code> <strong>Employees face cognitive dissonance</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Why take proactive approach / Beyond legal compliance <code class="t-code">&rarr;</code> <strong>The law often lags behind innovation (Pacing Problem)</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Purpose of Change Management <code class="t-code">&rarr;</code> <strong>Create a smooth, supported transition</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Role of Policy Owner <code class="t-code">&rarr;</code> <strong>Bring internal and external stakeholders together to draft/update policies</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Words like "likely", "unlikely", "rare", "low", "high" <code class="t-code">&rarr;</code> <strong>Qualitative analysis / Semi-qualitative analysis</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Reporting risk severity to executive management <code class="t-code">&rarr;</code> <strong>Risk Heatmap / Risk Matrix</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Ethical Impact Assessment (EIA) focus <code class="t-code">点rightarrow</code> <strong>Focused on identifying and preventing future problems (Forward-looking)</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">International AI governance standard <code class="t-code">&rarr;</code> <strong>ISO/IEC 42001</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">NIST provides for AI risk management <code class="t-code">&rarr;</code> <strong>Measurement technologies and standards frameworks (NIST AI RMF)</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Capability caution in AI <code class="t-code">&rarr;</code> <strong>Remember we don't know the full extent of what AI systems might become capable of</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Unknown Unknowns in AI <code class="t-code">&rarr;</code> <strong>Lack of explainability and what a model is actually looking at</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Explainability provides... <code class="t-code">&rarr;</code> <strong>Accountability and trust</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content">Closed source transparency risk <code class="t-code">&rarr;</code> <strong>May not be accessible to independent auditors</strong></div>
+        </li>
+      
+</ul>
+      </div>
+    </div>
+  
 
       <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-06">
@@ -736,31 +2273,68 @@ remaining 20% of data is referred to as an</div><div class="q-text-vi">Dịch: T
         <h3 class="module-sub">Truyền thông Khủng hoảng, Quản lý Truyền thông & Niềm tin Công chúng (38 câu hỏi)</h3>
       </div>
 
-      <!-- 1. Top: Theory Box (100% Comprehensive Synthesized Theory) -->
-      <div class="card-soft theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi 3 Mục (Core Theory - Cover 100% Khái Niệm & Tình Huống)</div>
-        
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>1.</strong> Mục A - Core Concept: Crisis Communication manages organization-wide messaging during ethical breaches or system failures to mitigate harm and maintain credibility.</div>
-      <div class="t-vi">Dịch: Mục A - Khái niệm Cốt lõi: Truyền thông Khủng hoảng quản lý thông điệp của toàn tổ chức khi xảy ra vi phạm đạo đức hoặc sự cố hệ thống nhằm giảm thiểu thiệt hại và duy trì uy tín.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>2.</strong> Mục B - Primary Idea (Public Trust): The primary idea managed by a crisis communication program during an ethical breach is PUBLIC TRUST and providing timely, accurate, transparent facts.</div>
-      <div class="t-vi">Dịch: Mục B - Ý tưởng Cốt lõi (Niềm tin Công chúng): Ý tưởng quan trọng nhất cần quản lý trong khủng hoảng đạo đức là NIỀM TIN CỦA CÔNG CHÚNG và cung cấp thông tin minh bạch, chính xác, kịp thời.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>3.</strong> Mục B - Media Plan Core Tools: An effective media communication plan relies on designating a SINGLE TRAINED SPOKESPERSON, establishing verified press release channels, and issuing transparent statements.</div>
-      <div class="t-vi">Dịch: Mục B - Công cụ Cốt lõi Kế hoạch Truyền thông: Kế hoạch truyền thông hiệu quả dựa vào việc chỉ định MỘT NGƯỜI PHÁT NGÔN DUY NHẤT ĐƯỢC ĐÀO TẠO, thiết lập kênh thông cáo báo chí xác minh và phát ngôn minh bạch.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>4.</strong> Mục C - Decision Rule: When a data breach leaks customer passwords: (1) Issue an immediate public acknowledgment, (2) Notify affected users transparently, (3) Force password resets immediately. Never attempt to conceal or cover up failures (Cover-up destroys long-term trust and increases regulatory fines).</div>
-      <div class="t-vi">Dịch: Mục C - Quy tắc Xử lý Tình huống: Khi xảy ra rò rỉ dữ liệu mật khẩu: (1) Phát ngôn công khai thừa nhận sự cố ngay lập tức, (2) Thông báo minh bạch cho người dùng bị ảnh hưởng, (3) Buộc người dùng đặt lại mật khẩu ngay lập tức. Không bao giờ che giấu hoặc bóp méo thông tin.</div>
-    </div>
-  
+      <!-- 1. Top: Expanded Web Theory Box -->
+      
+    <div class="card-soft theory-box">
+      <div class="theory-box-header">
+        <div class="theory-box-title">
+          <i class="fa-solid fa-book-open" style="color: var(--accent, #2f7cf6);"></i>
+          <span>Lý Thuyết Cốt Lõi Mở Rộng (Cover 100% Khái Niệm & Ứng Dụng Thực Tế)</span>
+        </div>
+        <button type="button" class="theory-toggle-btn" id="theory-btn-MOD-07" onclick="toggleTheory('MOD-07')">
+          <i class="fa-solid fa-chevron-up"></i> Thu gọn lý thuyết
+        </button>
       </div>
+      <div class="web-theory-container" id="theory-content-MOD-07">
+        <div class="web-callout-info"><i class="fa-solid fa-lightbulb"></i> <span>Phần lý thuyết cốt lõi bao phủ 100% quy tắc truyền thông khủng hoảng và quản lý niềm tin công chúng của 38 câu hỏi trắc nghiệm MOD-07.</span></div>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 1. Khái niệm Cốt lõi & Quản lý Niềm tin Công chúng</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Crisis Communication (Truyền thông Khủng hoảng):</strong> Quản lý thông điệp toàn tổ chức khi xảy ra vi phạm đạo đức hoặc sự cố hệ thống nhằm giảm thiểu thiệt hại và duy trì uy tín.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Public Trust (Niềm tin Công chúng):</strong> Ý tưởng quan trọng nhất cần bảo vệ trong khủng hoảng là NIỀM TIN CỦA CÔNG CHÚNG thông qua việc cung cấp thông tin minh bạch, chính xác, kịp thời.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 2. Kế hoạch Truyền thông & Người phát ngôn</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Single Trained Spokesperson:</strong> Chỉ định <strong>MỘT người phát ngôn duy nhất được đào tạo chuyên sâu</strong> đại diện cho toàn bộ công ty.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Kênh xác minh:</strong> Thiết lập kênh thông cáo báo chí chính thức, tránh tin đồn thất thiệt.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 3. Quy tắc Xử lý Tình huống Sự cố Rò rỉ Dữ liệu (Data Breach)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>3 bước bắt buộc khi rò rỉ mật khẩu:</strong> (1) Thừa nhận sự cố công khai ngay lập tức; (2) Thông báo minh bạch cho người dùng bị ảnh hưởng; (3) Buộc người dùng đặt lại mật khẩu ngay lập tức.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Tuyệt đối không che giấu (No Cover-up):</strong> Che giấu sự cố hủy hoại niềm tin dài hạn và làm tăng án phạt pháp lý.</div>
+        </li>
+      
+</ul>
+      </div>
+    </div>
+  
 
       <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-07">
@@ -797,31 +2371,50 @@ What kind of data is that?</div><div class="q-text-vi">Dịch: Bạn đã thu th
         <h3 class="module-sub">Đạo đức Nghề nghiệp, Tố giác (Whistleblowing) & Quy tắc Ứng xử (13 câu hỏi)</h3>
       </div>
 
-      <!-- 1. Top: Theory Box (100% Comprehensive Synthesized Theory) -->
-      <div class="card-soft theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi 3 Mục (Core Theory - Cover 100% Khái Niệm & Tình Huống)</div>
-        
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>1.</strong> Mục A - Core Concept: Professional Ethics codes establish mandatory moral obligations for IT practitioners, binding individual behavior to societal welfare.</div>
-      <div class="t-vi">Dịch: Mục A - Khái niệm Cốt lõi: Quy tắc Đạo đức Nghề nghiệp thiết lập các nghĩa vụ đạo đức bắt buộc đối với chuyên gia CNTT, gắn kết hành vi cá nhân với phúc lợi xã hội.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>2.</strong> Mục B - Professional Codes (ACM/IEEE): Mandate that computing professionals put public health, safety, privacy, and social welfare ahead of corporate profits or personal advancement.</div>
-      <div class="t-vi">Dịch: Mục B - Quy tắc Nghề nghiệp (ACM/IEEE): Quy định chuyên gia CNTT phải đặt sức khỏe, an toàn công cộng, quyền riêng tư và lợi ích xã hội lên trên lợi nhuận doanh nghiệp hay thăng tiến cá nhân.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>3.</strong> Mục B - Whistleblowing Protocol: Disclosing illegal, fraudulent, or harmful organizational activities to external regulatory bodies or the public as a mandatory last resort after internal reporting channels are exhausted or ignored.</div>
-      <div class="t-vi">Dịch: Mục B - Quy trình Tố giác (Whistleblowing): Tiết lộ các hành vi bất hợp pháp hoặc độc hại của tổ chức ra cơ quan quản lý bên ngoài hoặc công chúng như giải pháp cuối cùng khi các kênh nội bộ bị ngó lơ.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>4.</strong> Mục C - Decision Rule: Avoid Conflicts of Interest by fully disclosing personal or financial ties that could compromise objective professional judgment.</div>
-      <div class="t-vi">Dịch: Mục C - Quy tắc Xử lý: Tránh Xung đột Lợi ích bằng cách tiết lộ đầy đủ các mối quan hệ cá nhân hoặc tài chính có thể làm ảnh hưởng đến sự khách quan nghề nghiệp.</div>
-    </div>
-  
+      <!-- 1. Top: Expanded Web Theory Box -->
+      
+    <div class="card-soft theory-box">
+      <div class="theory-box-header">
+        <div class="theory-box-title">
+          <i class="fa-solid fa-book-open" style="color: var(--accent, #2f7cf6);"></i>
+          <span>Lý Thuyết Cốt Lõi Mở Rộng (Cover 100% Khái Niệm & Ứng Dụng Thực Tế)</span>
+        </div>
+        <button type="button" class="theory-toggle-btn" id="theory-btn-MOD-08" onclick="toggleTheory('MOD-08')">
+          <i class="fa-solid fa-chevron-up"></i> Thu gọn lý thuyết
+        </button>
       </div>
+      <div class="web-theory-container" id="theory-content-MOD-08">
+        <div class="web-callout-info"><i class="fa-solid fa-lightbulb"></i> <span>Phần lý thuyết cốt lõi bao phủ 100% quy tắc đạo đức nghề nghiệp và quy trình tố giác của 13 câu hỏi trắc nghiệm MOD-08.</span></div>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 1. Khái niệm Cốt lõi & Quy tắc Đạo đức Nghề nghiệp (ACM / IEEE)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>ACM / IEEE Code of Ethics:</strong> Quy định chuyên gia CNTT phải đặt sức khỏe, an toàn công cộng, quyền riêng tư và phúc lợi xã hội lên trên lợi nhuận doanh nghiệp hay thăng tiến cá nhân.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 2. Quy trình Tố giác Sai phạm (Whistleblowing Protocol)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Whistleblowing:</strong> Tiết lộ hành vi bất hợp pháp hoặc độc hại của tổ chức ra cơ quan quản lý bên ngoài hoặc công chúng là <strong>mục giải pháp cuối cùng (last resort)</strong> sau khi các kênh báo cáo nội bộ đã bị ngó lơ hoặc vỡ nợ.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 3. Tránh Xung đột Lợi ích (Conflict of Interest)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Quy tắc xử lý:</strong> Tiết lộ đầy đủ các mối quan hệ cá nhân hoặc tài chính có thể làm ảnh hưởng đến sự khách quan nghề nghiệp.</div>
+        </li>
+      
+</ul>
+      </div>
+    </div>
+  
 
       <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-08">
@@ -855,26 +2448,123 @@ What kind of data is that?</div><div class="q-text-vi">Dịch: Bạn đã thu th
         <h3 class="module-sub">Phân tích Dữ liệu, Tương quan & Phân tích Biểu đồ Phân tán (6 câu hỏi)</h3>
       </div>
 
-      <!-- 1. Top: Theory Box (100% Comprehensive Synthesized Theory) -->
-      <div class="card-soft theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi 3 Mục (Core Theory - Cover 100% Khái Niệm & Tình Huống)</div>
-        
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>1.</strong> Mục A - Core Concept: Data Visualization tools like scatter plots reveal statistical relationships, distributions, outliers, and variance across continuous variables.</div>
-      <div class="t-vi">Dịch: Mục A - Khái niệm Cốt lõi: Các công cụ trực quan hóa dữ liệu như biểu đồ phân tán giúp phát hiện mối quan hệ thống kê, sự phân bố và các điểm bất thường.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>2.</strong> Mục B - Scatter Plot Correlation Interpretation: When data points on a scatter plot (e.g., GrossIncome vs Revenue) cluster tightly along a straight line sloping upward from left to right, it demonstrates a STRONG POSITIVE CORRELATION.</div>
-      <div class="t-vi">Dịch: Mục B - Đọc Biểu đồ Phân tán: Khi các điểm dữ liệu (ví dụ GrossIncome so với Revenue) tập trung sát nhau theo một đường dốc lên từ trái sang phải, nó thể hiện TƯƠNG QUAN DƯƠNG MẠNH (Strong Positive Correlation).</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>3.</strong> Mục C - Decision Rule: Correlation vs Causation: Statistical correlation proves mathematical co-movement between two variables, but NEVER proves that one variable directly causes the change in the other.</div>
-      <div class="t-vi">Dịch: Mục C - Quy tắc Xử lý: Tương quan vs Nhân quả: Tương quan thống kê chứng minh 2 biến cùng biến động, nhưng KHÔNG BAO GIỜ chứng minh biến này là nguyên nhân trực tiếp gây ra sự thay đổi của biến kia.</div>
-    </div>
-  
+      <!-- 1. Top: Expanded Web Theory Box -->
+      
+    <div class="card-soft theory-box">
+      <div class="theory-box-header">
+        <div class="theory-box-title">
+          <i class="fa-solid fa-book-open" style="color: var(--accent, #2f7cf6);"></i>
+          <span>Lý Thuyết Cốt Lõi Mở Rộng (Cover 100% Khái Niệm & Ứng Dụng Thực Tế)</span>
+        </div>
+        <button type="button" class="theory-toggle-btn" id="theory-btn-MOD-09" onclick="toggleTheory('MOD-09')">
+          <i class="fa-solid fa-chevron-up"></i> Thu gọn lý thuyết
+        </button>
       </div>
+      <div class="web-theory-container" id="theory-content-MOD-09">
+        <div class="web-callout-info"><i class="fa-solid fa-lightbulb"></i> <span>Phần lý thuyết mở rộng này bao phủ 100% bản chất khái niệm, kỹ thuật phân tích biểu đồ phân tán và quy tắc xử lý của toàn bộ 6 câu hỏi trắc nghiệm MOD-09.</span></div>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 1. Đọc Biểu đồ Phân tán (Scatter Plot) & Hệ số Tương quan</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Mục đích của Scatter Plot:</strong> Trực quan hóa mối quan hệ phân bố, độ phân tán và xu hướng tương quan giữa hai biến số liên tục <code class="t-code">(X, Y)</code>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Quy tắc nhận diện chiều hướng tương quan:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Tương quan dương mạnh (Strong Positive Correlation):</strong> Các điểm dữ liệu phân bố tập trung sát nhau và tạo thành một đường thẳng dốc lên từ trái sang phải (khi <code class="t-code">X</code> tăng thì <code class="t-code">Y</code> tăng tương ứng rõ rệt).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><em>Ví dụ trong đề thi:</em> Biểu đồ giữa GrossIncome (Thu nhập gộp) và Revenue (Doanh thu) đi lên từ trái sang phải <code class="t-code">&rarr;</code> <strong>Strong positive correlation</strong>.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Tương quan âm (Negative Correlation):</strong> Các điểm dốc xuống từ trái sang phải (khi <code class="t-code">X</code> tăng thì <code class="t-code">Y</code> giảm).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Không có tương quan (No Correlation):</strong> Các điểm phân tán ngẫu nhiên hình đám mây, không tạo thành đường dốc.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 2. Phân phối Chuẩn (Normal / Gaussian Distribution)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Hình dạng trên biểu đồ Histogram:</strong> Khi vẽ biểu đồ tần suất (histogram), phân phối chuẩn có hình dạng quả chuông đối xứng (<strong>Bell shape / Bell curve</strong>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Đặc tính cốt lõi:</strong> Đỉnh chuông nằm ở vị trí trung tâm đại diện cho giá trị trung bình (Mean), dữ liệu phân bố đối xứng sang hai phía và thoải dần về hai đuôi (tails).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 3. Tương quan Chéo (Cross-Correlation of Data)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Định nghĩa & 2 Khía cạnh cốt lõi:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>So sánh nhiều tập dữ liệu:</strong> Đối chiếu đồng thời nhiều điểm dữ liệu hoặc nhiều tập dữ liệu khác nhau (<em>Comparing multiple data points or sets</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Suy luận thông tin mới:</strong> Tìm kiếm các mối liên hệ tiềm ẩn để trích xuất tri thức mới thông qua suy diễn (<em>Discovering new information via inference</em>).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 4. Ngụy biện Tương quan vs. Nhân quả (Correlation vs. Causation Fallacy)</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Bản chất ngụy biện:</strong> Xảy ra khi một người giả định sai lầm rằng có mối quan hệ nguyên nhân - kết quả (nhân quả) chỉ vì hai biến số có sự tương quan thống kê với nhau (<em>incorrectly assuming a cause-and-effect relationship simply because two variables are correlated</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Quy tắc vàng trong Khoa học Dữ liệu & Đạo đức AI:</strong> <em>"Correlation does not imply causation"</em> — Hai biến cùng tăng hoặc cùng giảm chỉ chứng minh chúng cùng biến thiên toán học (co-movement), hoàn toàn không đủ căn cứ để kết luận biến này là nguyên nhân sinh ra biến kia nếu chưa có thực nghiệm chứng minh hoặc có sự can thiệp của biến ẩn/biến nhiễu (<em>confounding variable</em>).</div>
+        </li>
+      
+</ul>
+<hr class="web-theory-divider"/>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> BẢNG MA TRẬN TỪ KHÓA ĂN ĐIỂM TUYỆT ĐỐI MOD-09</div>
+
+        <div class="web-table-wrapper">
+          <table class="web-theory-table">
+            <thead><tr><th>Từ khóa nhận diện trong đề thi</th><th>Đáp án chính xác bắt buộc chọn</th></tr></thead>
+            <tbody><tr><td>• Scatter plot: GrossIncome vs. Revenue (points move upward from left to right)</td><td><code class="t-code">&rarr;</code> <strong>Strong positive correlation</strong></td></tr><tr><td>• Shape of normal distribution plotted in histogram</td><td><code class="t-code">&rarr;</code> <strong>Bell shape (Hình quả chuông)</strong></td></tr><tr><td>• Process of cross-correlation of data (Select two)</td><td><code class="t-code">&rarr;</code> <strong>Discovering new information via inference</strong><br/><code class="t-code">&rarr;</code> <strong>Comparing multiple data points or sets</strong></td></tr><tr><td>• Fallacy of confusing correlation with causation</td><td><code class="t-code">&rarr;</code> <strong>Incorrectly assume cause-and-effect relationship simply because two variables are correlated</strong></td></tr></tbody>
+          </table>
+        </div>
+      
+      </div>
+    </div>
+  
 
       <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-09">
@@ -908,26 +2598,351 @@ What kind of data is that?</div><div class="q-text-vi">Dịch: Bạn đã thu th
         <h3 class="module-sub">Bộ Câu Hỏi Tình Huống & Đạo Đức CNTT Tổng Hợp (221 câu hỏi)</h3>
       </div>
 
-      <!-- 1. Top: Theory Box (100% Comprehensive Synthesized Theory) -->
-      <div class="card-soft theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi 3 Mục (Core Theory - Cover 100% Khái Niệm & Tình Huống)</div>
-        
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>1.</strong> Mục A - Core Concept: Technology Ethics requires continuous multi-stakeholder assessment across every phase of the technology lifecycle: ideation, data collection, model training, system deployment, and eventual retirement.</div>
-      <div class="t-vi">Dịch: Mục A - Khái niệm Cốt lõi: Đạo đức Công nghệ đòi hỏi đánh giá đa bên liên tục qua tất cả các giai đoạn: lên ý tưởng, thu thập dữ liệu, huấn luyện mô hình, triển khai hệ thống và loại bỏ.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>2.</strong> Mục B - Multi-stakeholder Balancing: Ethical decision-making in real-world scenarios requires balancing user privacy, organizational economic viability, public safety, and regulatory compliance.</div>
-      <div class="t-vi">Dịch: Mục B - Cân bằng Đa bên: Ra quyết định đạo đức trong thực tế đòi hỏi cân bằng giữa quyền riêng tư người dùng, hiệu quả kinh tế của tổ chức, an toàn công cộng và sự tuân thủ pháp luật.</div>
-    </div>
-  
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>3.</strong> Mục C - Decision Rule: When ethical duties conflict with business speed or short-term profitability, always prioritize public safety, transparency, and fundamental human rights.</div>
-      <div class="t-vi">Dịch: Mục C - Quy tắc Xử lý Tình huống: Khi nghĩa vụ đạo đức xung đột với tốc độ dự án hoặc lợi nhuận ngắn hạn, luôn luôn ưu tiên an toàn công cộng, sự minh bạch và quyền cơ bản của con người.</div>
-    </div>
-  
+      <!-- 1. Top: Expanded Web Theory Box -->
+      
+    <div class="card-soft theory-box">
+      <div class="theory-box-header">
+        <div class="theory-box-title">
+          <i class="fa-solid fa-book-open" style="color: var(--accent, #2f7cf6);"></i>
+          <span>Lý Thuyết Cốt Lõi Mở Rộng (Cover 100% Khái Niệm & Ứng Dụng Thực Tế)</span>
+        </div>
+        <button type="button" class="theory-toggle-btn" id="theory-btn-MOD-10" onclick="toggleTheory('MOD-10')">
+          <i class="fa-solid fa-chevron-up"></i> Thu gọn lý thuyết
+        </button>
       </div>
+      <div class="web-theory-container" id="theory-content-MOD-10">
+        <div class="web-callout-info"><i class="fa-solid fa-lightbulb"></i> <span>Phần lý thuyết cốt lõi mở rộng này bao phủ toàn diện 100% bản chất khái niệm, nguyên tắc triết học, an toàn AI và quy tắc xử lý tình huống của toàn bộ 221 câu hỏi trắc nghiệm MOD-10.</span></div>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 1. Các Học Thuyết Triết Học & Nguyên Tắc Đạo Đức Cốt Lõi</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Đạo đức Bổn phận Kant (Kantian Deontology):</strong> Đánh giá tính đạo đức dựa trên nghĩa vụ và quy tắc (<em>duties and rules</em>), không phụ thuộc vào kết quả thực tế.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Mệnh lệnh Tuyệt đối (Categorical Imperative):</strong> (1) Quy luật phổ quát (<em>Universal Law</em>); (2) Mục đích tự thân (<em>Ends in themselves</em> - đối xử con người như mục đích tự thân, không bao giờ chỉ coi là phương tiện); (3) Tự trị lý trí (<em>Autonomy of Reason</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Thuyết Vị lợi (Utilitarianism / Consequentialism):</strong> Đánh giá đúng/sai dựa vào kết quả thực tế (<em>outcomes / consequences</em>) và tổng giá trị hữu ích (<em>total utility</em>) nhằm đạt được "lợi ích lớn nhất cho số đông lớn nhất". Cổ vũ cho bộ quy tắc đạo đức toàn cầu.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Bộ tứ Nguyên tắc Đạo đức Ứng dụng:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Beneficence (Làm điều thiện):</strong> Thúc đẩy phúc lợi (<em>do only good</em>) cho con người, xã hội và môi trường.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Non-Maleficence (Không gây hại):</strong> Yêu cầu cốt lõi không gây tổn hại (<em>do no harm</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Autonomy (Quyền tự quyết):</strong> Tôn trọng quyền tự do cá nhân; nghiêm cấm Dark Patterns thao túng ép người dùng ra quyết định.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Informed Consent (Sự đồng thuận có thông tin):</strong> Minh bạch mục đích sử dụng dữ liệu (<em>intention behind request</em>) và nhận được sự đồng ý tự nguyện.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Quyền Con người Bất khả Xâm phạm (Inalienable Human Rights):</strong> Quyền bẩm sinh (<em>inherent</em>) ở mọi người, không thể bị tước đoạt ngoại trừ hoàn cảnh đặc biệt theo luật định.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Thuyết Quyết định luận (Determinism / Predeterminism):</strong> Quan niệm mọi sự kiện đều được định sẵn từ trước bởi chuỗi nguyên nhân tiền đề (<em>determined in advance by causal laws</em>).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 2. Phân Loại AI, An Toàn AI & Các Vấn Đề Trọng Yếu</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Narrow AI (AI Hẹp / Weak AI):</strong> Vượt trội con người trong các tác vụ cụ thể, đơn lẻ được xác định rõ (<em>outperforms humans in specific defined tasks</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>General AI (AGI - AI Tổng quát):</strong> Trí tuệ nhân tạo ngang tầm/vượt trội con người trên mọi tác vụ nhận thức (Lạc quan: utility; Bi quan: <em>existential risk / human extinction event</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Superintelligence (ASI - Siêu trí tuệ):</strong> Vượt trội hoàn toàn tất cả bộ óc con người trên mọi lĩnh vực.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Augmented Intelligence (AMA Stance):</strong> Chữ "A" trong y tế là <em>Augmented</em> (Tăng cường) — AI hỗ trợ bác sĩ chứ không thay thế con người.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Turing Test (Phép thử Turing):</strong> Đánh giá AI có biểu hiện hành vi không thể phân biệt được với con người (<em>exhibit behavior indistinguishable from human</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Capability Caution (Asilomar):</strong> Nguyên tắc nhắc nhở tránh đưa ra giả định cứng nhắc về giới hạn trên của AI trong tương lai (<em>avoid strong assumptions regarding upper limits on future AI capabilities</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Perverse Instantiation (Nick Bostrom):</strong> Hệ quả tiêu cực xảy ra khi AI thực hiện mục tiêu tổng quát được giao theo cách biến thái/quái dị gây thảm họa.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>The Trolley Problem (Bài toán Xe điện):</strong> Thế lưỡng nan đạo đức khi lập trình AI bắt buộc phải đưa ra quyết định đánh đổi sinh mạng.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 3. Tính Minh Bạch, AI Giải Thích Được (XAI) & Công Cụ Kỹ Thuật</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Bài toán Hộp đen (Black Box Problem):</strong> Hiểu inputs/outputs nhưng không thể hiểu cơ chế thuật toán và logic ra quyết định bên trong (<em>algorithm logic</em>) do mô hình có hàng triệu tham số.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Sự đánh đổi cốt lõi:</strong> Hiệu năng càng cao (<em>Higher performance/complexity</em>) <code class="t-code">&rarr;</code> Tính giải thích càng giảm (<em>Reduced explainability</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Mô hình Hộp kính (Glass Box Models):</strong> Cho phép nhìn rõ trọng số từng biến; dễ dàng nhận diện và loại bỏ/điều chỉnh biến gây thiên vị (<em>easily identify and modify/remove attribute</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Định luật Goodhart (Goodhart's Law):</strong> "Khi một thước đo trở thành mục tiêu, nó không còn là một thước đo tốt nữa".</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Bộ ba Tiêu chuẩn của Mô hình Đạo đức:</strong> Accurate, Fair, and Explainable (Chính xác, Công bằng và Giải thích được).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Công cụ Kỹ thuật Chuyên dụng:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>LIME vs SHAP:</strong> LIME xuất kết quả nhanh hơn (<em>faster</em>) nhưng kém chính xác hơn (<em>less accurate</em>); SHAP chính xác hơn dựa trên giá trị Shapley nhưng chậm hơn.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Google What-If Tool (WIT):</strong> Công cụ trực quan phân tích mô hình trên Google Cloud AI Platform.</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Radioactive Data Tracing:</strong> Kỹ thuật đánh dấu dữ liệu (<em>watermarking</em>) phát hiện việc dùng dữ liệu trái phép mà không giảm hiệu năng (<em>doesn't impact model's performance</em>).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 4. Quản Trị Dữ Liệu, Quyền Riêng Tư & Mật Mã Học</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Nguyên tắc Giảm thiểu Dữ liệu (Data Minimization):</strong> Chỉ thu thập dữ liệu thực sự cần thiết cho mục đích cụ thể (<em>required to fulfill a specific purpose</em>). Thực hành: <em>"Delete unused data early and often"</em>.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Tiêu chuẩn Dữ liệu Mở FAIR:</strong> Findable (Dễ tìm), Accessible (Dễ truy cập), Interoperable (Tương tác được), Reusable (Tái sử dụng được).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Tháp DIKW (Data <code class="t-code">&rarr;</code> Information <code class="t-code">&rarr;</code> Knowledge <code class="t-code">&rarr;</code> Wisdom):</strong> Information là dữ liệu đã qua xử lý và được gắn bối cảnh ý nghĩa (<em>processed facts with contextual meaning</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Dữ liệu Đa mục đích (Dual-use / Multipurpose Data):</strong> Thu thập cho ứng dụng này nhưng tái sử dụng cho ứng dụng khác ở lĩnh vực khác.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Công nghệ Bảo mật Mật mã học:</strong></div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Zero-Knowledge Proofs (ZKP):</strong> Chứng minh mệnh đề/thông tin đúng mà không tiết lộ chi tiết cụ thể (<em>proving that something exists, but not the specifics</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Homomorphic Encryption:</strong> Thực hiện phép toán trực tiếp trên dữ liệu đã mã hóa (<em>performing operations on encrypted data</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li sub-li">
+          <span class="li-icon">◦</span>
+          <div class="li-content"><strong>Randomized Response Technique:</strong> Tung đồng xu bảo vệ quyền riêng tư cá nhân khi khảo sát nhạy cảm.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Giao thức Mạng An toàn:</strong> HTTPS, SSL, TLS, SSH là các giao thức mã hóa đường truyền.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Cơ chế Thu thập Dữ liệu (Opt-in vs Opt-out):</strong> Opt-out (tự động thu thập trừ khi từ chối); Cung cấp quyền kiểm soát chi tiết (<em>Granular control</em>).</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 5. Quản Trị Tổ Chức, Văn Hóa Doanh Nghiệp & Đánh Giá Rủi Ro</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Hội đồng Đạo đức (Ethics Board) & Ethics Washing:</strong> Ethics Washing xảy ra khi lập hội đồng PR hình thức nhưng không trao thực quyền (<em>has no power to institute change</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Thủ lĩnh Tiên phong (Leadership Champion):</strong> Đưa ra quyết định dựa trên giá trị đạo đức công ty ngay cả khi đối mặt với nghịch cảnh (<em>in the face of adversity</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Văn hóa Tổ chức & Nhân sự:</strong> Ethics Training (dạy lý thuyết giá trị) vs Culture Workshop (dạy cách tích hợp giá trị vào công việc). Employee Voice (quy trình 2 chiều có hành động thực tế) vs Open Door Policy.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Đánh giá Tác động Kinh doanh (Business Impact Assessment - BIA):</strong> Dự đoán gián đoạn và lập chiến lược phục hồi (<em>predict interruptions and develop recovery strategies</em>). Bắt buộc phỏng vấn nhân viên vận hành cấp cơ sở (<em>ground-level staff</em>) vì họ nắm nhiều tri thức thực tế (<em>hands-on institutional knowledge</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Regulations vs Frameworks:</strong> Legal regulations có sức mạnh cưỡng chế (<em>legal enforcement</em>) và tạo cơ sở rõ ràng cho kiện tụng (<em>basis for potential litigation</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Phân tích STEEPV:</strong> Đánh giá 6 yếu tố vĩ mô: Social, Technological, Economic, Environmental, Political, Values.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Corporate Hegemony & Virtuous Cycle (Data Flywheel):</strong> Big Tech khóa rào cản ngăn doanh nghiệp nhỏ (<em>locking out smaller players</em>). Vòng lặp dữ liệu: Thuật toán tốt <code class="t-code">&rarr;</code> Người dùng mới <code class="t-code">&rarr;</code> Thêm dữ liệu tốt <code class="t-code">&rarr;</code> Thuật toán hoàn thiện hơn.</div>
+        </li>
+      
+</ul>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> 6. Thống Kê, Thuật Toán & Khái Niệm Kỹ Thuật Bổ Trợ</div>
+<ul class="web-theory-ul">
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Độ nhọn Phân phối (Kurtosis):</strong> Leptokurtic (độ nhọn cao, đuôi dày, chỉ ra sự xuất hiện mạnh mẽ của các giá trị ngoại lệ cực đoan - <em>strong presence of outliers</em>); Mesokurtic (phân phối chuẩn quả chuông); Platykurtic (độ nhọn dẹt).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Chỉ số Báo cáo cho Công chúng:</strong> Standard Deviation (Độ lệch chuẩn) cùng đơn vị đo với dữ liệu thô.</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Hàm Chi phí Hồi quy Tuyến tính:</strong> Đánh giá bằng MSE và RMSE (Accuracy/Recall dùng cho phân loại).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Lý thuyết Trò chơi (Game Theory):</strong> Kết quả tối ưu cho tập thể bị tổn hại bởi lợi ích tự lợi của từng cá nhân (<em>individual self-interest</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>Mã giả (Pseudocode):</strong> Mô tả thuật toán dễ hiểu dành riêng cho con người đọc và trao đổi (<em>meant for humans, not computers</em>).</div>
+        </li>
+      
+
+        <li class="web-theory-li ">
+          <span class="li-icon">•</span>
+          <div class="li-content"><strong>PenTest Teams:</strong> Red Team (tấn công), Blue Team (phòng thủ), White Team (trọng tài giám sát Rules of Engagement - ROE).</div>
+        </li>
+      
+</ul>
+<hr class="web-theory-divider"/>
+<div class="web-theory-h4"><i class="fa-solid fa-layer-group"></i> BẢNG MA TRẬN TỪ KHÓA ĂN ĐIỂM NHANH MOD-10</div>
+
+        <div class="web-table-wrapper">
+          <table class="web-theory-table">
+            <thead><tr><th>Dấu hiệu câu hỏi (Trigger Keywords)</th><th>Đáp án chính xác bắt buộc chọn</th></tr></thead>
+            <tbody><tr><td>• Consequentialism vs Deontology</td><td><code class="t-code">&rarr;</code> <strong>Consequentialism on outcomes, deontology on duties</strong></td></tr><tr><td>• Treat people as ends in themselves, never merely as means</td><td><code class="t-code">&rarr;</code> <strong>Kantian deontology / Categorical imperative</strong></td></tr><tr><td>• Beneficence vs Non-maleficence</td><td><code class="t-code">&rarr;</code> <em></em>Beneficence = "do only good"</td><td>Non-maleficence = "do no harm"<em></em></td></tr><tr><td>• Outperforms humans in all tasks</td><td><code class="t-code">&rarr;</code> <strong>General AI (AGI) hoặc Superintelligence (ASI)</strong></td></tr><tr><td>• Outperforms humans in specific/defined tasks</td><td><code class="t-code">&rarr;</code> <strong>Narrow AI (Weak AI)</strong></td></tr><tr><td>• What AMA says "A" in AI stands for</td><td><code class="t-code">&rarr;</code> <strong>Augmented (Augmented Intelligence)</strong></td></tr><tr><td>• Asilomar capability caution principle</td><td><code class="t-code">&rarr;</code> <strong>Avoid strong assumptions regarding upper limits on future AI capabilities</strong></td></tr><tr><td>• Unintended negative outcome of broad AI goals</td><td><code class="t-code">&rarr;</code> <strong>Perverse instantiation</strong></td></tr><tr><td>• Black box problem definition</td><td><code class="t-code">&rarr;</code> <strong>Difficult to understand how or why AI made a specific decision</strong></td></tr><tr><td>• Trade-off: Increasing AI performance</td><td><code class="t-code">&rarr;</code> <strong>Leads to greater model complexity, making it harder to explain</strong></td></tr><tr><td>• LIME vs SHAP comparison</td><td><code class="t-code">&rarr;</code> <em></em>LIME outputs results faster</td><td>LIME is less accurate than SHAP<em></em></td></tr><tr><td>• Google Cloud AI model inspection tool</td><td><code class="t-code">&rarr;</code> <strong>What-If Tool (WIT)</strong></td></tr><tr><td>• Watermarking data without impacting performance</td><td><code class="t-code">&rarr;</code> <strong>Radioactive data tracing</strong></td></tr><tr><td>• FAIR open data acronym</td><td><code class="t-code">&rarr;</code> <strong>Findable, Accessible, Interoperable, Reusable</strong></td></tr><tr><td>• Processed facts with contextual meaning</td><td><code class="t-code">&rarr;</code> <strong>Information (Tháp DIKW)</strong></td></tr><tr><td>• Proving something exists without revealing specifics</td><td><code class="t-code">&rarr;</code> <strong>Zero-knowledge protocols (ZKP)</strong></td></tr><tr><td>• Performing calculations directly on encrypted data</td><td><code class="t-code">&rarr;</code> <strong>Homomorphic encryption</strong></td></tr><tr><td>• Ethics Board without power to institute change</td><td><code class="t-code">&rarr;</code> <strong>Ethics washing</strong></td></tr><tr><td>• Makes decisions based on values in adversity</td><td><code class="t-code">&rarr;</code> <strong>Leadership champion</strong></td></tr><tr><td>• BIA: Why interview ground-level staff</td><td><code class="t-code">&rarr;</code> <strong>They have more hands-on institutional knowledge</strong></td></tr><tr><td>• Legal regulations differ from ethical frameworks</td><td><code class="t-code">&rarr;</code> <em></em>Legal enforcement</td><td>Clear basis for potential litigation<em></em></td></tr><tr><td>• Shape of normal distribution</td><td><code class="t-code">&rarr;</code> <strong>Bell shape</strong></td></tr><tr><td>• Kurtosis indicating strong presence of outliers</td><td>$ightarrow$ <strong>Leptokurtic</strong></td></tr><tr><td>• Cost functions for linear regression</td><td><code class="t-code">&rarr;</code> <strong>MSE (Mean squared error) & RMSE (Root mean squared error)</strong></td></tr><tr><td>• Pseudocode definition</td><td>$ightarrow$ <strong>An explainable description of code meant for humans, not computers</strong></td></tr></tbody>
+          </table>
+        </div>
+      
+      </div>
+    </div>
+  
 
       <!-- 2. Middle: Question Card -->
       <div class="qa-list" id="qlist-MOD-10">
@@ -959,6 +2974,19 @@ What kind of data is that?</div><div class="q-text-vi">Dịch: Bạn đã thu th
   </div>
 
   <script>
+    function toggleTheory(modCode) {
+      const content = document.getElementById('theory-content-' + modCode);
+      const btn = document.getElementById('theory-btn-' + modCode);
+      if (!content || !btn) return;
+      if (content.style.display === 'none') {
+        content.style.display = 'block';
+        btn.innerHTML = '<i class="fa-solid fa-chevron-up"></i> Thu gọn lý thuyết';
+      } else {
+        content.style.display = 'none';
+        btn.innerHTML = '<i class="fa-solid fa-chevron-down"></i> Mở rộng lý thuyết';
+      }
+    }
+
     let scoreTotal = 0;
     let scoreCorrect = 0;
 
