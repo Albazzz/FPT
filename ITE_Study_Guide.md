@@ -1,5 +1,5 @@
-# ITE302 - Information Technology Ethics Master Study Guide
-> Comprehensive dual-language study guide built from 1060 ITE quiz questions. Each concept and question includes English text with line-by-line Vietnamese translation directly underneath. The Core Theory box in each module comprehensively synthesizes all question concepts.
+# ITE302 - Information Technology Ethics Master Study Guide & Quiz Bank
+> Comprehensive dual-language study guide built from 1060 ITE quiz questions. Each concept and question includes English text with line-by-line Vietnamese translation directly underneath.
 
 ---
 

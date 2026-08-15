@@ -252,7 +252,6 @@ const moduleData = moduleSpecs.map(spec => {
     const conceptVi = exp.concept ? exp.concept.replace(/^[•\s\-\*]+/, '').trim() : '';
 
     if (qEn && ansText) {
-      // Build clear dual language summary bullet for each question
       const enSummary = `Q: ${qEn} -> Key Answer: ${ansText}`;
       const viSummary = qVi ? `Dịch: ${qVi} -> Đáp án chính: ${ansText}` : `Dịch: ${conceptVi}`;
       if (!extractedTheoryMap.has(enSummary.toLowerCase())) {
@@ -266,15 +265,7 @@ const moduleData = moduleSpecs.map(spec => {
   return { ...spec, questions: modQuestions, extractedTheoryList };
 });
 
-console.log('Categorization & Exhaustive Theory Summary:');
-let totalAssigned = 0;
-moduleData.forEach(m => {
-  totalAssigned += m.questions.length;
-  console.log(`${m.code} - ${m.title}: ${m.questions.length} questions | ${m.extractedTheoryList.length} Extracted Core Knowledge Points`);
-});
-console.log(`Total questions assigned across modules: ${totalAssigned} / ${questions.length}`);
-
-// Function to generate dual-language Q&A item
+// Function to generate dual-language Q&A item with interactive click handlers
 function renderQuestionHTML(q, idx) {
   const exp = q.explanation || {};
   const questionEn = q.question;
@@ -289,7 +280,7 @@ function renderQuestionHTML(q, idx) {
       const isCorrect = key === q.answer;
       const viVal = (exp.optionsVi && exp.optionsVi[key]) ? exp.optionsVi[key] : '';
       return `
-        <div class="option-item ${isCorrect ? 'correct-option' : ''}">
+        <div class="option-item" data-opt="${key}" onclick="handleOptionClick(this, '${key}', '${q.answer}')">
           <div class="opt-en"><strong class="opt-key">${key}.</strong> ${val}</div>
           ${viVal ? `<div class="opt-vi">Dịch: ${viVal}</div>` : ''}
         </div>
@@ -298,7 +289,7 @@ function renderQuestionHTML(q, idx) {
   }
 
   return `
-    <div class="qa-card" id="q-${q.uIdx}" data-search="${(questionEn + ' ' + questionVi + ' ' + conceptVi).toLowerCase().replace(/"/g, '&quot;')}">
+    <div class="qa-card" id="q-${q.uIdx}" data-ans="${q.answer}" data-search="${(questionEn + ' ' + questionVi + ' ' + conceptVi).toLowerCase().replace(/"/g, '&quot;')}">
       <div class="qa-header">
         <span class="qa-badge">Câu ${idx + 1}</span>
         <span class="task-badge">${q.taskLabel || q.task || 'ITE'}</span>
@@ -373,7 +364,7 @@ const fullHTML = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ITE302 Master Study Guide - Tài Liệu Học Ôn Đạo Đức CNTT Song Ngữ</title>
+  <title>ITE302 Master Study Guide & Quiz App - Ôn Thi Đạo Đức CNTT Interactive</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
   <style>
@@ -386,7 +377,9 @@ const fullHTML = `<!DOCTYPE html>
       --accent: #38bdf8;
       --accent-hover: #0284c7;
       --green: #4ade80;
-      --green-bg: rgba(74, 222, 128, 0.1);
+      --green-bg: rgba(74, 222, 128, 0.12);
+      --red: #f87171;
+      --red-bg: rgba(248, 113, 113, 0.12);
       --border: #334155;
       --vi-color: #fbbf24;
       --radius: 12px;
@@ -401,7 +394,9 @@ const fullHTML = `<!DOCTYPE html>
       --accent: #0284c7;
       --accent-hover: #0369a1;
       --green: #16a34a;
-      --green-bg: rgba(22, 163, 74, 0.1);
+      --green-bg: rgba(22, 163, 74, 0.12);
+      --red: #dc2626;
+      --red-bg: rgba(220, 38, 38, 0.12);
       --border: #e2e8f0;
       --vi-color: #d97706;
     }
@@ -457,14 +452,14 @@ const fullHTML = `<!DOCTYPE html>
       border-radius: 20px;
       color: var(--text-main);
       font-size: 0.9rem;
-      width: 260px;
+      width: 220px;
       transition: width 0.3s;
     }
 
     .search-input:focus {
       outline: none;
       border-color: var(--accent);
-      width: 320px;
+      width: 280px;
     }
 
     .search-wrapper {
@@ -497,6 +492,26 @@ const fullHTML = `<!DOCTYPE html>
     .btn-action:hover {
       background: var(--bg-card-hover);
       border-color: var(--accent);
+    }
+
+    .btn-action.active-mode {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+    }
+
+    /* Score Badge */
+    .score-badge {
+      background: rgba(74, 222, 128, 0.15);
+      border: 1px solid var(--green);
+      color: var(--green);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 6px 12px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
     /* Container Layout */
@@ -765,7 +780,7 @@ const fullHTML = `<!DOCTYPE html>
     .options-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 8px;
+      gap: 10px;
       margin-bottom: 16px;
     }
 
@@ -773,35 +788,54 @@ const fullHTML = `<!DOCTYPE html>
       background: rgba(255, 255, 255, 0.03);
       border: 1px solid var(--border);
       border-radius: 8px;
-      padding: 10px 14px;
-      font-size: 0.9rem;
+      padding: 12px 16px;
+      font-size: 0.92rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      user-select: none;
+    }
+
+    .option-item:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--accent);
     }
 
     .option-item.correct-option {
-      background: var(--green-bg);
-      border-color: var(--green);
+      background: var(--green-bg) !important;
+      border-color: var(--green) !important;
+      color: var(--text-main);
+    }
+
+    .option-item.wrong-option {
+      background: var(--red-bg) !important;
+      border-color: var(--red) !important;
+      color: var(--text-main);
     }
 
     .opt-en {
       color: var(--text-main);
+      font-weight: 500;
     }
 
     .opt-key {
       color: var(--accent);
+      margin-right: 4px;
     }
 
     .opt-vi {
       color: var(--vi-color);
-      font-size: 0.85rem;
-      margin-top: 2px;
+      font-size: 0.86rem;
+      margin-top: 3px;
     }
 
+    /* Answers and Explanations Display Logic */
     .answer-box {
       background: rgba(74, 222, 128, 0.08);
       border: 1px dashed var(--green);
       border-radius: 8px;
-      padding: 10px 14px;
+      padding: 12px 16px;
       margin-bottom: 12px;
+      display: none; /* Default hidden in quiz mode */
     }
 
     .ans-title {
@@ -819,24 +853,36 @@ const fullHTML = `<!DOCTYPE html>
       border-top: 1px solid var(--border);
       padding-top: 12px;
       margin-top: 12px;
+      display: none; /* Default hidden in quiz mode */
     }
 
     .concept-title {
-      font-size: 0.85rem;
+      font-size: 0.88rem;
       font-weight: 700;
       color: var(--accent);
       margin-bottom: 4px;
     }
 
     .concept-content {
-      font-size: 0.88rem;
+      font-size: 0.9rem;
       color: var(--text-muted);
     }
 
     .why-correct {
-      font-size: 0.85rem;
+      font-size: 0.88rem;
       color: var(--green);
       margin-top: 6px;
+      font-weight: 500;
+    }
+
+    /* Study Mode Force Reveals Answers */
+    body.study-mode .answer-box,
+    body.study-mode .concept-box {
+      display: block !important;
+    }
+
+    body.study-mode .option-item {
+      cursor: default;
     }
 
     .hidden-vi .q-text-vi,
@@ -848,23 +894,31 @@ const fullHTML = `<!DOCTYPE html>
     @media (max-width: 900px) {
       .app-container { flex-direction: column; }
       .sidebar { width: 100%; height: auto; position: static; }
-      .search-input { width: 180px; }
-      .search-input:focus { width: 220px; }
+      .search-input { width: 150px; }
+      .search-input:focus { width: 200px; }
     }
   </style>
 </head>
-<body>
+<body class="quiz-mode">
 
   <header class="top-header">
     <div class="brand-title">
-      <i class="fa-solid fa-graduation-cap"></i> ITE302 Master Study Guide
+      <i class="fa-solid fa-graduation-cap"></i> ITE302 Interactive Quiz App
     </div>
 
     <div class="header-controls">
+      <div class="score-badge" id="scoreBadge">
+        <i class="fa-solid fa-trophy"></i> Đã làm: <span id="scoreText">0 / 0 (Đúng: 0)</span>
+      </div>
+
       <div class="search-wrapper">
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm khái niệm, câu hỏi...">
       </div>
+
+      <button class="btn-action active-mode" id="toggleAppModeBtn">
+        <i class="fa-solid fa-gamepad"></i> <span id="appModeLabel">Chế độ Quiz Luyện Tập</span>
+      </button>
 
       <button class="btn-action" id="toggleViBtn">
         <i class="fa-solid fa-language"></i> <span>Ẩn Dịch Việt</span>
@@ -891,8 +945,8 @@ const fullHTML = `<!DOCTYPE html>
 
     <main class="main-content" id="mainContent">
       <div class="doc-hero">
-        <h1><i class="fa-solid fa-book-open-reader"></i> ITE302 - Information Technology Ethics Study Guide</h1>
-        <p>Tài liệu tổng hợp học tập & ôn thi toàn bộ 1060 câu hỏi ITE (Đạo đức CNTT). Trình bày dạng Tiếng Anh chuẩn kèm dòng dịch Tiếng Việt trực quan ngay bên dưới từng dòng/câu. Phần Lý Thuyết Cốt Lõi tại đầu mỗi chương được tổng hợp bao phủ 100% tất cả câu hỏi trong chương đó.</p>
+        <h1><i class="fa-solid fa-gamepad"></i> ITE302 - Interactive Quiz & Practice Exam</h1>
+        <p>Bộ ứng dụng trắc nghiệm & ôn tập 1060 câu ITE (Đạo đức CNTT). Ở <strong>Chế độ Quiz</strong>, nhấp chọn đáp án để kiểm tra kết quả Đúng/Sai và hiển thị ngay Khái niệm cốt lõi & Giải thích chi tiết. Nhấn nút chế độ trên thanh công cụ để chuyển sang <strong>Chế độ Đọc Lý Thuyết</strong>.</p>
         <div class="stats-pills">
           <span class="pill"><i class="fa-solid fa-layer-group"></i> 10 Modules Kiến Thức</span>
           <span class="pill"><i class="fa-solid fa-file-circle-check"></i> ${questions.length} Câu Hỏi Độc Lập</span>
@@ -905,6 +959,65 @@ const fullHTML = `<!DOCTYPE html>
   </div>
 
   <script>
+    let scoreTotal = 0;
+    let scoreCorrect = 0;
+
+    // Handle option click in Quiz mode
+    function handleOptionClick(optElem, chosenOpt, correctOpt) {
+      if (document.body.classList.contains('study-mode')) return;
+
+      const card = optElem.closest('.qa-card');
+      if (card.classList.contains('answered')) return; // Allow only 1 selection per question
+      card.classList.add('answered');
+
+      const options = card.querySelectorAll('.option-item');
+      options.forEach(opt => {
+        const key = opt.getAttribute('data-opt');
+        if (key === correctOpt) {
+          opt.classList.add('correct-option');
+        } else if (key === chosenOpt && chosenOpt !== correctOpt) {
+          opt.classList.add('wrong-option');
+        }
+      });
+
+      // Reveal Answer Box & Concept Box
+      const ansBox = card.querySelector('.answer-box');
+      const conceptBox = card.querySelector('.concept-box');
+      if (ansBox) ansBox.style.display = 'block';
+      if (conceptBox) conceptBox.style.display = 'block';
+
+      // Update Score
+      scoreTotal++;
+      if (chosenOpt === correctOpt) {
+        scoreCorrect++;
+      }
+      updateScoreDisplay();
+    }
+
+    function updateScoreDisplay() {
+      const text = scoreTotal + ' / ${questions.length} (Đúng: ' + scoreCorrect + ')';
+      document.getElementById('scoreText').textContent = text;
+    }
+
+    // Toggle App Mode (Quiz Mode vs Study Mode)
+    const toggleAppModeBtn = document.getElementById('toggleAppModeBtn');
+    const appModeLabel = document.getElementById('appModeLabel');
+
+    toggleAppModeBtn.addEventListener('click', () => {
+      const isQuizMode = document.body.classList.contains('quiz-mode');
+      if (isQuizMode) {
+        document.body.classList.remove('quiz-mode');
+        document.body.classList.add('study-mode');
+        appModeLabel.textContent = 'Chế độ Đọc Lý Thuyết (Hiện tất cả)';
+        toggleAppModeBtn.classList.remove('active-mode');
+      } else {
+        document.body.classList.remove('study-mode');
+        document.body.classList.add('quiz-mode');
+        appModeLabel.textContent = 'Chế độ Quiz Luyện Tập';
+        toggleAppModeBtn.classList.add('active-mode');
+      }
+    });
+
     // Search function
     const searchInput = document.getElementById('searchInput');
     const qaCards = document.querySelectorAll('.qa-card');
@@ -964,13 +1077,13 @@ const fullHTML = `<!DOCTYPE html>
 
 fs.writeFileSync(htmlOutputPath1, fullHTML, 'utf8');
 fs.writeFileSync(htmlOutputPath2, fullHTML, 'utf8');
-console.log('HTML files generated successfully:');
+console.log('HTML Quiz App files generated successfully:');
 console.log('-', htmlOutputPath1);
 console.log('-', htmlOutputPath2);
 
 // Generate Markdown File Content
-let mdContent = `# ITE302 - Information Technology Ethics Master Study Guide
-> Comprehensive dual-language study guide built from 1060 ITE quiz questions. Each concept and question includes English text with line-by-line Vietnamese translation directly underneath. The Core Theory box in each module comprehensively synthesizes all question concepts.
+let mdContent = `# ITE302 - Information Technology Ethics Master Study Guide & Quiz Bank
+> Comprehensive dual-language study guide built from 1060 ITE quiz questions. Each concept and question includes English text with line-by-line Vietnamese translation directly underneath.
 
 ---
 
