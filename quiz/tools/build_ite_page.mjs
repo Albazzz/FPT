@@ -252,838 +252,93 @@ const moduleSpecs = [
   }
 ];
 
-// Assign questions to modules using unique normalized question string
-const assignedKeys = new Set();
-const moduleData = moduleSpecs.map(spec => {
-  const modQuestions = [];
-  questions.forEach(q => {
-    const qKey = q.question.trim().toLowerCase();
-    if (assignedKeys.has(qKey)) return;
-    const searchText = (q.question + ' ' + (q.explanation?.concept || '') + ' ' + (q.explanation?.whyCorrect || '')).toLowerCase();
-    if (spec.match(searchText)) {
-      assignedKeys.add(qKey);
-      modQuestions.push(q);
-    }
-  });
-  return { ...spec, questions: modQuestions };
-});
+// Generate Theory Modal HTML
+const theoryModalHTML = `
+  <div id="theoryModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="theoryTitle" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px);">
+    <div style="background:var(--surface, #ffffff); color:var(--text, #1c2434); border-radius:14px; max-width:860px; width:90%; margin:40px auto; padding:24px; max-height:85vh; overflow-y:auto; border:1px solid var(--border, #e6ebf2); box-shadow:0 12px 32px rgba(0,0,0,0.25);">
+      <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border, #e6ebf2); padding-bottom:12px; margin-bottom:16px;">
+        <h3 id="theoryTitle" style="font-weight:800; font-size:1.2rem; color:var(--accent, #2f7cf6); display:flex; align-items:center; gap:8px;">
+          <i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi 10 Modules ITE302c
+        </h3>
+        <button type="button" onclick="closeTheoryModal()" style="border:none; background:none; font-size:1.4rem; cursor:pointer; color:var(--text-muted, #6b7a90);">&times;</button>
+      </div>
 
-console.log('Categorization Summary:');
-let totalAssigned = 0;
-moduleData.forEach(m => {
-  totalAssigned += m.questions.length;
-  console.log(`${m.code} - ${m.title}: ${m.questions.length} questions`);
-});
-
-// Function to generate dual-language Q&A item matching Quiz Hub style
-function renderQuestionHTML(q, idx, totalInMod, modCode) {
-  const exp = q.explanation || {};
-  const questionEn = q.question;
-  const questionVi = exp.questionVi || 'Dịch câu hỏi chưa có sẵn.';
-  const answerEn = exp.answerDisplay || (q.answer + '. ' + (q.options ? q.options[q.answer] : ''));
-  const conceptVi = exp.concept || '';
-  const whyCorrectVi = exp.whyCorrect || '';
-
-  let optionsHTML = '';
-  if (q.options) {
-    optionsHTML = Object.entries(q.options).map(([key, val]) => {
-      const viVal = (exp.optionsVi && exp.optionsVi[key]) ? exp.optionsVi[key] : '';
-      return `
-        <button class="btn-option" data-opt="${key}" onclick="handleOptionClick(this, '${key}', '${q.answer}')">
-          <div class="opt-content">
-            <div class="opt-en"><span class="opt-key-badge">${key}</span> ${val}</div>
-            ${viVal ? `<div class="opt-vi">Dịch: ${viVal}</div>` : ''}
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        ${moduleSpecs.map((m, idx) => `
+          <div style="background:var(--surface-2, #f0f4fa); border-left:4px solid var(--accent, #2f7cf6); border-radius:8px; padding:16px;">
+            <h4 style="font-weight:800; font-size:1rem; color:var(--accent, #2f7cf6); margin-bottom:10px;">
+              ${m.code}: ${m.title} (${m.titleVi})
+            </h4>
+            ${m.pureTheory.map((t, tIdx) => `
+              <div style="margin-bottom:10px; padding:8px 10px; background:var(--surface, #fff); border-radius:6px; border:1px solid var(--border, #e6ebf2);">
+                <div style="font-weight:700; font-size:0.9rem; color:var(--text, #1c2434);"><i class="fa-solid fa-lightbulb" style="color:var(--accent, #2f7cf6); margin-right:4px;"></i> ${tIdx + 1}. ${t.en}</div>
+                <div style="font-size:0.86rem; color:var(--vi-color, #d97706); margin-top:3px; font-style:italic;">${t.vi}</div>
+              </div>
+            `).join('')}
           </div>
-        </button>
-      `;
-    }).join('');
-  }
-
-  return `
-    <div class="card-soft question-card ${idx === 0 ? 'active-card' : ''}" id="qcard-${modCode}-${idx}" data-idx="${idx}" data-ans="${q.answer}" data-search="${(questionEn + ' ' + questionVi + ' ' + conceptVi).toLowerCase().replace(/"/g, '&quot;')}">
-      <div class="card-header-bar">
-        <div class="q-badge-item"><i class="fa-solid fa-circle-question"></i> Câu ${idx + 1} / ${totalInMod}</div>
-        <div class="task-badge"><i class="fa-solid fa-tag"></i> ${q.taskLabel || q.task || 'ITE'}</div>
+        `).join('')}
       </div>
       
-      <div class="question-body">
-        <div class="q-text-en">${questionEn}</div>
-        <div class="q-text-vi">Dịch: ${questionVi}</div>
+      <div style="margin-top:20px; text-align:right;">
+        <button type="button" class="btn btn-primary" onclick="closeTheoryModal()"><i class="fa-solid fa-check"></i> Đóng & Tiếp tục làm Quiz</button>
       </div>
-
-      ${optionsHTML ? `<div class="options-grid">${optionsHTML}</div>` : ''}
-
-      <div class="answer-box">
-        <div class="ans-title"><i class="fa-solid fa-circle-check"></i> Đáp án đúng: <span class="ans-key">${answerEn}</span></div>
-      </div>
-
-      ${conceptVi ? `
-      <div class="concept-box">
-        <div class="concept-title"><i class="fa-solid fa-lightbulb"></i> Khái niệm cốt lõi (Key Concept):</div>
-        <div class="concept-content">${conceptVi}</div>
-        ${whyCorrectVi ? `<div class="why-correct"><i class="fa-solid fa-check"></i> <strong>Tại sao đúng:</strong> ${whyCorrectVi}</div>` : ''}
-      </div>` : ''}
     </div>
-  `;
-}
-
-// Generate HTML Content
-const htmlModulesContent = moduleData.map((m, mIdx) => {
-  const pureTheoryHTML = m.pureTheory.map((t, tIdx) => `
-    <div class="theory-item">
-      <div class="t-en"><i class="fa-solid fa-circle-info"></i> <strong>${tIdx + 1}.</strong> ${t.en}</div>
-      <div class="t-vi">${t.vi}</div>
-    </div>
-  `).join('');
-
-  const questionsHTML = m.questions.map((q, qIdx) => renderQuestionHTML(q, qIdx, m.questions.length, m.code)).join('');
-
-  // Question Map Palette Buttons
-  const paletteButtonsHTML = m.questions.map((q, qIdx) => `
-    <button class="q-map-cell ${qIdx === 0 ? 'active' : ''}" id="mapbtn-${m.code}-${qIdx}" onclick="jumpToQuestion('${m.code}', ${qIdx})">${qIdx + 1}</button>
-  `).join('');
-
-  return `
-    <section class="module-section ${mIdx === 0 ? 'active-module' : ''}" id="${m.id}" data-modcode="${m.code}" data-total="${m.questions.length}">
-      <div class="module-header">
-        <div class="module-tag">${m.code}</div>
-        <h2><i class="fa-solid ${m.icon}"></i> ${m.title}</h2>
-        <h3 class="module-sub">${m.titleVi} (${m.questions.length} câu hỏi)</h3>
-      </div>
-
-      <div class="card-soft theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-open"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
-        ${pureTheoryHTML}
-      </div>
-
-      <!-- Question Navigation & Palette Container -->
-      <div class="card-soft quiz-controls-bar">
-        <div class="palette-header">
-          <i class="fa-solid fa-table-cells"></i> <strong>Bản đồ câu hỏi (${m.questions.length} câu):</strong>
-        </div>
-        <div class="q-map-grid" id="palette-${m.code}">
-          ${paletteButtonsHTML}
-        </div>
-
-        <div class="nav-buttons-row">
-          <button class="btn btn-secondary" id="prevBtn-${m.code}" onclick="navigateQuestion('${m.code}', -1)">
-            <i class="fa-solid fa-chevron-left"></i> Câu trước
-          </button>
-          <div class="q-counter-text" id="counter-${m.code}">
-            <i class="fa-solid fa-list-ol"></i> Câu 1 / ${m.questions.length}
-          </div>
-          <button class="btn btn-primary" id="nextBtn-${m.code}" onclick="navigateQuestion('${m.code}', 1)">
-            Câu tiếp <i class="fa-solid fa-chevron-right"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="qa-list" id="qlist-${m.code}">
-        ${questionsHTML}
-      </div>
-    </section>
-  `;
-}).join('');
-
-const fullHTML = `<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ITE302 Master Quiz Hub - Đạo Đức CNTT Interactive</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
-  <style>
-    :root {
-      --bg: #f5f7fb;
-      --surface: #ffffff;
-      --surface-2: #f0f4fa;
-      --border: #e6ebf2;
-      --border-strong: #d5dde8;
-      --text: #1c2434;
-      --text-muted: #6b7a90;
-      --accent: #2f7cf6;
-      --accent-hover: #1b63d6;
-      --accent-soft: rgba(47, 124, 246, 0.1);
-      --correct: #1f9d63;
-      --correct-bg: rgba(31, 157, 99, 0.12);
-      --wrong: #e5484d;
-      --wrong-bg: rgba(229, 72, 77, 0.1);
-      --vi-color: #d97706;
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 20px;
-      --shadow-sm: 0 2px 8px rgba(28, 36, 52, 0.06);
-      --shadow-md: 0 8px 28px rgba(28, 36, 52, 0.08);
-      --font: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    }
-
-    body.dark-mode {
-      --bg: #0f172a;
-      --surface: #1e293b;
-      --surface-2: #334155;
-      --border: #334155;
-      --border-strong: #475569;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
-      --accent: #38bdf8;
-      --accent-hover: #0284c7;
-      --accent-soft: rgba(56, 189, 248, 0.15);
-      --correct: #4ade80;
-      --correct-bg: rgba(74, 222, 128, 0.15);
-      --wrong: #f87171;
-      --wrong-bg: rgba(248, 113, 113, 0.15);
-      --vi-color: #fbbf24;
-      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-      --shadow-md: 0 8px 28px rgba(0, 0, 0, 0.4);
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: var(--font);
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-      min-height: 100vh;
-      transition: background-color 0.25s, color 0.25s;
-    }
-
-    /* Top Nav Bar - Matching Quiz Hub site-nav */
-    .site-nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 10px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      color: var(--text);
-      font-weight: 800;
-      font-size: 1.15rem;
-    }
-
-    .brand-mark {
-      width: 38px;
-      height: 38px;
-      border-radius: 10px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-    }
-
-    .brand-text strong { display: block; line-height: 1.2; }
-    .brand-text span { font-size: 0.75rem; color: var(--text-muted); font-weight: 500; }
-
-    .nav-stats {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 12px;
-      border-radius: var(--radius-sm);
-      font-size: 0.85rem;
-      font-weight: 600;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      color: var(--text);
-    }
-
-    .badge-score {
-      background: var(--correct-bg);
-      color: var(--correct);
-      border-color: rgba(31, 157, 99, 0.3);
-    }
-
-    .header-controls {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .search-wrapper { position: relative; }
-    .search-input {
-      padding: 8px 16px 8px 36px;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      color: var(--text);
-      font-size: 0.88rem;
-      width: 200px;
-      transition: width 0.25s;
-    }
-    .search-input:focus { outline: none; border-color: var(--accent); width: 260px; }
-    .search-wrapper i { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
-
-    .btn-action {
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      color: var(--text);
-      padding: 8px 14px;
-      border-radius: var(--radius-sm);
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 0.85rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.2s;
-    }
-    .btn-action:hover { background: var(--border); border-color: var(--accent); }
-    .btn-action.active-mode { background: var(--accent); color: #fff; border-color: var(--accent); }
-
-    /* Layout Structure */
-    .app-container {
-      display: flex;
-      max-width: 1400px;
-      margin: 0 auto;
-      min-height: calc(100vh - 64px);
-    }
-
-    /* Sidebar Navigation */
-    .sidebar {
-      width: 300px;
-      background: var(--surface);
-      border-right: 1px solid var(--border);
-      padding: 20px 14px;
-      position: sticky;
-      top: 64px;
-      height: calc(100vh - 64px);
-      overflow-y: auto;
-      flex-shrink: 0;
-    }
-
-    .sidebar-title {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      margin-bottom: 12px;
-      padding-left: 8px;
-    }
-
-    .nav-link {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 12px;
-      color: var(--text-muted);
-      text-decoration: none;
-      border-radius: var(--radius-sm);
-      font-size: 0.88rem;
-      font-weight: 600;
-      margin-bottom: 4px;
-      transition: all 0.2s;
-    }
-
-    .nav-link:hover, .nav-link.active {
-      background: var(--accent-soft);
-      color: var(--accent);
-    }
-
-    .nav-count {
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 12px;
-    }
-
-    /* Main Content Area */
-    .main-content {
-      flex: 1;
-      padding: 24px 30px;
-      max-width: 1100px;
-    }
-
-    .doc-hero {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 24px 28px;
-      margin-bottom: 28px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .doc-hero h1 { font-size: 1.6rem; font-weight: 800; color: var(--accent); margin-bottom: 8px; }
-    .doc-hero p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 14px; }
-    .stats-pills { display: flex; gap: 12px; flex-wrap: wrap; }
-    .pill { background: var(--surface-2); border: 1px solid var(--border); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
-
-    /* Module Section */
-    .module-section { margin-bottom: 50px; scroll-margin-top: 80px; }
-    .module-header { margin-bottom: 18px; border-bottom: 2px solid var(--border); padding-bottom: 10px; }
-    .module-tag { display: inline-block; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; margin-bottom: 6px; }
-    .module-header h2 { font-size: 1.4rem; font-weight: 800; color: var(--text); display: flex; align-items: center; gap: 10px; }
-    .module-sub { font-size: 1.02rem; color: var(--vi-color); font-weight: 600; margin-top: 4px; }
-
-    /* Card Soft */
-    .card-soft {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 22px 26px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    /* Theory Box */
-    .theory-box { margin-bottom: 24px; border-left: 4px solid var(--accent); }
-    .box-title { font-weight: 800; font-size: 1.02rem; color: var(--accent); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
-    .theory-item { margin-bottom: 12px; padding: 12px 14px; border-radius: var(--radius-sm); background: var(--surface-2); border: 1px solid var(--border); }
-    .t-en { font-weight: 700; color: var(--text); font-size: 0.94rem; }
-    .t-vi { color: var(--vi-color); font-size: 0.88rem; margin-top: 4px; font-style: italic; font-weight: 500; }
-
-    /* Quiz Control Bar & Palette Map - Matching Quiz Hub */
-    .quiz-controls-bar { margin-bottom: 24px; }
-    .palette-header { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 10px; }
-
-    .q-map-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      max-height: 160px;
-      overflow-y: auto;
-      padding-bottom: 8px;
-      margin-bottom: 14px;
-    }
-
-    .q-map-cell {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: var(--surface-2);
-      color: var(--text-muted);
-      font-size: 0.82rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.15s;
-    }
-
-    .q-map-cell:hover { border-color: var(--accent); color: var(--accent); }
-    .q-map-cell.active { border-color: var(--accent) !important; background: var(--accent) !important; color: #fff !important; font-weight: 800; box-shadow: 0 0 0 2px var(--accent-soft); }
-    .q-map-cell.cell-ok { background: var(--correct-bg) !important; border-color: var(--correct) !important; color: var(--correct) !important; }
-    .q-map-cell.cell-bad { background: var(--wrong-bg) !important; border-color: var(--wrong) !important; color: var(--wrong) !important; }
-
-    .nav-buttons-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-top: 1px solid var(--border);
-      padding-top: 14px;
-    }
-
-    .btn {
-      padding: 9px 20px;
-      border-radius: var(--radius-sm);
-      font-weight: 700;
-      font-size: 0.9rem;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.2s;
-      border: 1px solid transparent;
-    }
-
-    .btn-primary { background: var(--accent); color: #fff; }
-    .btn-primary:hover { background: var(--accent-hover); }
-    .btn-secondary { background: var(--surface-2); border-color: var(--border); color: var(--text); }
-    .btn-secondary:hover { background: var(--border); }
-
-    .q-counter-text { font-weight: 700; font-size: 0.95rem; color: var(--text); }
-
-    /* Question Card Styling */
-    .question-card { margin-bottom: 20px; }
-    body.quiz-mode .question-card { display: none; }
-    body.quiz-mode .question-card.active-card { display: block !important; }
-    body.study-mode .question-card { display: block !important; }
-    body.study-mode .quiz-controls-bar { display: none; }
-
-    .card-header-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
-    .q-badge-item { background: var(--accent-soft); color: var(--accent); font-weight: 800; font-size: 0.85rem; padding: 4px 12px; border-radius: 6px; }
-    .task-badge { background: var(--surface-2); border: 1px solid var(--border); color: var(--text-muted); font-size: 0.78rem; font-weight: 600; padding: 4px 10px; border-radius: 6px; }
-
-    .question-body { margin-bottom: 20px; }
-    .q-text-en { font-size: 1.08rem; font-weight: 800; color: var(--text); line-height: 1.5; }
-    .q-text-vi { font-size: 1rem; color: var(--vi-color); margin-top: 6px; font-weight: 600; }
-
-    /* Options Buttons - Matching Quiz Hub btn-option */
-    .options-grid { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
-
-    .btn-option {
-      width: 100%;
-      text-align: left;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 12px 18px;
-      font-size: 0.93rem;
-      cursor: pointer;
-      transition: all 0.2s;
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-    }
-
-    .btn-option:hover {
-      background: var(--surface);
-      border-color: var(--accent);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .opt-key-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 26px;
-      height: 26px;
-      border-radius: 6px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-weight: 800;
-      font-size: 0.82rem;
-      flex-shrink: 0;
-    }
-
-    .btn-option.opt-correct {
-      background: var(--correct-bg) !important;
-      border-color: var(--correct) !important;
-    }
-    .btn-option.opt-correct .opt-key-badge {
-      background: var(--correct) !important;
-      color: #fff !important;
-    }
-
-    .btn-option.opt-wrong {
-      background: var(--wrong-bg) !important;
-      border-color: var(--wrong) !important;
-    }
-    .btn-option.opt-wrong .opt-key-badge {
-      background: var(--wrong) !important;
-      color: #fff !important;
-    }
-
-    .opt-en { color: var(--text); font-weight: 600; }
-    .opt-vi { color: var(--vi-color); font-size: 0.86rem; margin-top: 3px; font-weight: 500; }
-
-    /* Explanation Boxes */
-    .answer-box {
-      background: var(--correct-bg);
-      border: 1px dashed var(--correct);
-      border-radius: var(--radius-sm);
-      padding: 14px 18px;
-      margin-bottom: 12px;
-      display: none;
-    }
-    .ans-title { color: var(--correct); font-weight: 800; font-size: 0.96rem; }
-    .ans-key { color: var(--text); }
-
-    .concept-box {
-      background: var(--surface-2);
-      border-top: 1px solid var(--border);
-      padding-top: 14px;
-      margin-top: 14px;
-      display: none;
-    }
-    .concept-title { font-size: 0.9rem; font-weight: 800; color: var(--accent); margin-bottom: 4px; }
-    .concept-content { font-size: 0.9rem; color: var(--text-muted); }
-    .why-correct { font-size: 0.88rem; color: var(--correct); margin-top: 6px; font-weight: 600; }
-
-    body.study-mode .answer-box,
-    body.study-mode .concept-box { display: block !important; }
-    body.study-mode .btn-option { cursor: default; }
-
-    .hidden-vi .q-text-vi,
-    .hidden-vi .t-vi,
-    .hidden-vi .opt-vi { display: none !important; }
-
-    @media (max-width: 900px) {
-      .app-container { flex-direction: column; }
-      .sidebar { width: 100%; height: auto; position: static; }
-      .search-input { width: 140px; }
-      .search-input:focus { width: 180px; }
-    }
-  </style>
-</head>
-<body class="quiz-mode">
-
-  <header class="site-nav">
-    <a class="brand" href="./" title="Về Quiz Hub">
-      <span class="brand-mark"><i class="fa-solid fa-layer-group"></i></span>
-      <div class="brand-text">
-        <strong>Quiz Hub</strong>
-        <span>ITE302 Master Quiz Engine</span>
-      </div>
-    </a>
-
-    <div class="nav-stats">
-      <span class="badge badge-score" id="scoreBadge">
-        <i class="fa-solid fa-circle-check"></i>
-        Đã làm: <strong id="scoreText">0 / 0</strong>
-      </span>
-
-      <div class="search-wrapper">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm khái niệm, câu hỏi...">
-      </div>
-
-      <button class="btn-action active-mode" id="toggleAppModeBtn">
-        <i class="fa-solid fa-gamepad"></i> <span id="appModeLabel">Chế độ Quiz (Chuyển từng câu)</span>
-      </button>
-
-      <button class="btn-action" id="toggleViBtn">
-        <i class="fa-solid fa-language"></i> <span>Ẩn Dịch Việt</span>
-      </button>
-
-      <button class="btn-action" id="toggleThemeBtn">
-        <i class="fa-solid fa-moon"></i> <span>Giao diện</span>
-      </button>
-    </div>
-  </header>
-
-  <div class="app-container">
-    <aside class="sidebar">
-      <div class="sidebar-title">Danh Mục Chương Học (10 Modules)</div>
-      <nav>
-        ${moduleData.map(m => `
-          <a href="#${m.id}" class="nav-link">
-            <span><i class="fa-solid ${m.icon}"></i> ${m.code}</span>
-            <span class="nav-count">${m.questions.length}</span>
-          </a>
-        `).join('')}
-      </nav>
-    </aside>
-
-    <main class="main-content" id="mainContent">
-      <div class="doc-hero">
-        <h1><i class="fa-solid fa-gamepad"></i> ITE302 - Interactive Quiz & Master Study Guide</h1>
-        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT) thiết kế theo giao diện chuẩn <strong>Quiz Hub</strong>. Đọc phần <strong>Lý Thuyết Cốt Lõi</strong> ở đầu mỗi chương để làm trọn vẹn các câu hỏi bên dưới. Nhấp chọn đáp án để kiểm tra kết quả Đúng/Sai, chuyển câu qua <strong>Bản đồ câu hỏi</strong> hoặc nút <strong>Câu tiếp / Câu trước</strong>.</p>
-        <div class="stats-pills">
-          <span class="pill"><i class="fa-solid fa-layer-group"></i> 10 Modules Kiến Thức</span>
-          <span class="pill"><i class="fa-solid fa-file-circle-check"></i> ${questions.length} Câu Hỏi Độc Lập</span>
-          <span class="pill"><i class="fa-solid fa-language"></i> Dual-Language Line-by-Line</span>
-        </div>
-      </div>
-
-      ${htmlModulesContent}
-    </main>
   </div>
-
-  <script>
-    let scoreTotal = 0;
-    let scoreCorrect = 0;
-
-    // Track active question index per module
-    const currentQuestionMap = {};
-    document.querySelectorAll('.module-section').forEach(sec => {
-      const code = sec.getAttribute('data-modcode');
-      if (code) currentQuestionMap[code] = 0;
-    });
-
-    // Jump to specific question in module
-    function jumpToQuestion(modCode, qIdx) {
-      const sec = document.querySelector(\`section[data-modcode="\${modCode}"]\`);
-      if (!sec) return;
-      const total = parseInt(sec.getAttribute('data-total') || '1', 10);
-      if (qIdx < 0 || qIdx >= total) return;
-
-      currentQuestionMap[modCode] = qIdx;
-
-      // Update Active Question Card
-      const cards = sec.querySelectorAll('.question-card');
-      cards.forEach((card, i) => {
-        if (i === qIdx) {
-          card.classList.add('active-card');
-        } else {
-          card.classList.remove('active-card');
-        }
-      });
-
-      // Update Palette Map Cells
-      const cells = sec.querySelectorAll('.q-map-cell');
-      cells.forEach((cell, i) => {
-        if (i === qIdx) {
-          cell.classList.add('active');
-        } else {
-          cell.classList.remove('active');
-        }
-      });
-
-      // Update Counter Text
-      const counterEl = document.getElementById('counter-' + modCode);
-      if (counterEl) counterEl.innerHTML = '<i class="fa-solid fa-list-ol"></i> Câu ' + (qIdx + 1) + ' / ' + total;
-    }
-
-    // Navigate prev / next question
-    function navigateQuestion(modCode, dir) {
-      const currentIdx = currentQuestionMap[modCode] || 0;
-      jumpToQuestion(modCode, currentIdx + dir);
-    }
-
-    // Handle option click in Quiz mode
-    function handleOptionClick(optElem, chosenOpt, correctOpt) {
-      if (document.body.classList.contains('study-mode')) return;
-
-      const card = optElem.closest('.question-card');
-      if (card.classList.contains('answered')) return; // Allow only 1 selection per question
-      card.classList.add('answered');
-
-      const cardIdx = card.getAttribute('data-idx');
-      const modSec = card.closest('.module-section');
-      const modCode = modSec ? modSec.getAttribute('data-modcode') : null;
-
-      const options = card.querySelectorAll('.btn-option');
-      options.forEach(opt => {
-        const key = opt.getAttribute('data-opt');
-        if (key === correctOpt) {
-          opt.classList.add('opt-correct');
-        } else if (key === chosenOpt && chosenOpt !== correctOpt) {
-          opt.classList.add('opt-wrong');
-        }
-      });
-
-      // Reveal Answer Box & Concept Box
-      const ansBox = card.querySelector('.answer-box');
-      const conceptBox = card.querySelector('.concept-box');
-      if (ansBox) ansBox.style.display = 'block';
-      if (conceptBox) conceptBox.style.display = 'block';
-
-      // Update Question Map Palette Button Color
-      if (modCode && cardIdx !== null) {
-        const mapCell = document.getElementById('mapbtn-' + modCode + '-' + cardIdx);
-        if (mapCell) {
-          if (chosenOpt === correctOpt) {
-            mapCell.classList.add('cell-ok');
-          } else {
-            mapCell.classList.add('cell-bad');
-          }
-        }
-      }
-
-      // Update Score Tracker
-      scoreTotal++;
-      if (chosenOpt === correctOpt) {
-        scoreCorrect++;
-      }
-      updateScoreDisplay();
-    }
-
-    function updateScoreDisplay() {
-      const text = scoreTotal + ' / ${questions.length} (Đúng: ' + scoreCorrect + ')';
-      document.getElementById('scoreText').textContent = text;
-    }
-
-    // Toggle App Mode (Quiz Mode vs Study Mode)
-    const toggleAppModeBtn = document.getElementById('toggleAppModeBtn');
-    const appModeLabel = document.getElementById('appModeLabel');
-
-    toggleAppModeBtn.addEventListener('click', () => {
-      const isQuizMode = document.body.classList.contains('quiz-mode');
-      if (isQuizMode) {
-        document.body.classList.remove('quiz-mode');
-        document.body.classList.add('study-mode');
-        appModeLabel.textContent = 'Chế độ Xem Tất Cả (Read All)';
-        toggleAppModeBtn.classList.remove('active-mode');
-      } else {
-        document.body.classList.remove('study-mode');
-        document.body.classList.add('quiz-mode');
-        appModeLabel.textContent = 'Chế độ Quiz (Chuyển từng câu)';
-        toggleAppModeBtn.classList.add('active-mode');
-      }
-    });
-
-    // Search function
-    const searchInput = document.getElementById('searchInput');
-    const qaCards = document.querySelectorAll('.question-card');
-
-    searchInput.addEventListener('input', (e) => {
-      const term = e.target.value.toLowerCase().trim();
-      if (term) {
-        // If searching, force reveal matching cards
-        document.body.classList.remove('quiz-mode');
-        document.body.classList.add('study-mode');
-        qaCards.forEach(card => {
-          const text = card.getAttribute('data-search') || '';
-          if (text.includes(term)) {
-            card.style.display = 'block';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      } else {
-        // Reset to quiz mode
-        document.body.classList.remove('study-mode');
-        document.body.classList.add('quiz-mode');
-        qaCards.forEach(card => card.style.display = '');
-      }
-    });
-
-    // Toggle Translation
-    const toggleViBtn = document.getElementById('toggleViBtn');
-    let viVisible = true;
-    toggleViBtn.addEventListener('click', () => {
-      viVisible = !viVisible;
-      document.body.classList.toggle('hidden-vi', !viVisible);
-      toggleViBtn.querySelector('span').textContent = viVisible ? 'Ẩn Dịch Việt' : 'Hiện Dịch Việt';
-    });
-
-    // Toggle Theme
-    const toggleThemeBtn = document.getElementById('toggleThemeBtn');
-    toggleThemeBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      const isDark = document.body.classList.contains('dark-mode');
-      toggleThemeBtn.querySelector('i').className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
-    });
-
-    // Smooth Scroll Active Link
-    const navLinks = document.querySelectorAll('.nav-link');
-    window.addEventListener('scroll', () => {
-      let current = '';
-      const sections = document.querySelectorAll('.module-section');
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 120) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + current) {
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
-</body>
-</html>
 `;
 
-fs.writeFileSync(htmlOutputPath1, fullHTML, 'utf8');
-fs.writeFileSync(htmlOutputPath2, fullHTML, 'utf8');
+// Build play.html-identical HTML file
+const playHtmlContent = fs.readFileSync(path.resolve('./quiz/play.html'), 'utf8');
+
+// Inject ITE theory button into toolbar and theory modal into page
+let updatedPlayHTML = playHtmlContent;
+
+// Update title and ensure it defaults to subject 'ite'
+updatedPlayHTML = updatedPlayHTML.replace(/<title>.*?<\/title>/, '<title>Làm quiz ITE302c — Quiz Hub</title>');
+
+// Inject Theory button into toolbar
+if (!updatedPlayHTML.includes('btnOpenTheory')) {
+  updatedPlayHTML = updatedPlayHTML.replace(
+    '<button type="button" class="btn btn-secondary btn-sm" id="btnToggleMap"',
+    `<button type="button" class="btn btn-secondary btn-sm" id="btnOpenTheory" title="Xem Lý Thuyết Cốt Lõi (Pure Theory)" onclick="openTheoryModal()" style="margin-right:4px;">
+      <i class="fa-solid fa-book-open" style="color:var(--accent);"></i>
+      <span class="btn-label">Lý thuyết</span>
+    </button>
+    <button type="button" class="btn btn-secondary btn-sm" id="btnToggleMap"`
+  );
+}
+
+// Inject Modal before script tags
+if (!updatedPlayHTML.includes('id="theoryModal"')) {
+  updatedPlayHTML = updatedPlayHTML.replace(
+    '<!-- Modal xác nhận -->',
+    `${theoryModalHTML}\n  <!-- Modal xác nhận -->`
+  );
+}
+
+// Inject script functions for modal
+const modalScript = `
+  <script>
+    function openTheoryModal() {
+      const modal = document.getElementById('theoryModal');
+      if (modal) modal.style.display = 'block';
+    }
+    function closeTheoryModal() {
+      const modal = document.getElementById('theoryModal');
+      if (modal) modal.style.display = 'none';
+    }
+    // Force default subject to ITE if not set in URL
+    if (!location.search.includes('s=')) {
+      history.replaceState(null, '', location.pathname + '?s=ite');
+    }
+  </script>
+`;
+
+if (!updatedPlayHTML.includes('openTheoryModal')) {
+  updatedPlayHTML = updatedPlayHTML.replace('</body>', `${modalScript}\n</body>`);
+}
+
+fs.writeFileSync(htmlOutputPath1, updatedPlayHTML, 'utf8');
+fs.writeFileSync(htmlOutputPath2, updatedPlayHTML, 'utf8');
 console.log('HTML Quiz Hub App files generated successfully:');
 console.log('-', htmlOutputPath1);
 console.log('-', htmlOutputPath2);
@@ -1096,39 +351,13 @@ let mdContent = `# ITE302 - Information Technology Ethics Master Study Guide & P
 
 `;
 
-moduleData.forEach((m, mIdx) => {
+moduleSpecs.forEach((m, mIdx) => {
   mdContent += `## ${m.code}: ${m.title}\n`;
   mdContent += `### ${m.titleVi}\n\n`;
 
   mdContent += `#### Pure Core Theory / Lý Thuyết Cốt Lõi (${m.pureTheory.length} Nguyên Tắc & Khái Niệm)\n`;
   m.pureTheory.forEach((t, tIdx) => {
     mdContent += `- **${tIdx + 1}. ${t.en}**\n  *${t.vi}*\n\n`;
-  });
-
-  mdContent += `#### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (${m.questions.length} câu)\n\n`;
-  m.questions.forEach((q, qIdx) => {
-    const exp = q.explanation || {};
-    const questionEn = q.question;
-    const questionVi = exp.questionVi || '';
-    const answerEn = exp.answerDisplay || (q.answer + '. ' + (q.options ? q.options[q.answer] : ''));
-    const conceptVi = exp.concept || '';
-
-    mdContent += `**Q${qIdx + 1}: ${questionEn}**\n`;
-    if (questionVi) mdContent += `*Dịch: ${questionVi}*\n\n`;
-
-    if (q.options) {
-      Object.entries(q.options).forEach(([k, v]) => {
-        const isAns = k === q.answer;
-        const viOpt = (exp.optionsVi && exp.optionsVi[k]) ? exp.optionsVi[k] : '';
-        mdContent += `  - ${isAns ? '**[CORRECT]** ' : ''}${k}. ${v}\n`;
-        if (viOpt) mdContent += `    *Dịch: ${viOpt}*\n`;
-      });
-      mdContent += `\n`;
-    }
-
-    mdContent += `**Correct Answer / Đáp án đúng:** ${answerEn}\n`;
-    if (conceptVi) mdContent += `**Key Concept / Khái niệm:** ${conceptVi}\n`;
-    mdContent += `\n---\n\n`;
   });
 });
 
