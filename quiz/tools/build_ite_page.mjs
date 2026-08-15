@@ -20,7 +20,7 @@ rawData.forEach((q, idx) => {
 
 const questions = Array.from(uniqueMap.values());
 
-// Module definitions with filters and curated high-level principles
+// Module definitions with pure, comprehensive theory synthesized to solve all questions
 const moduleSpecs = [
   {
     id: 'm1',
@@ -28,22 +28,26 @@ const moduleSpecs = [
     title: 'AI Ethics, Algorithmic Fairness & Bias Mitigation',
     titleVi: 'Đạo đức AI, Tính công bằng Thuật toán & Giảm thiểu Định kiến',
     icon: 'fa-brain',
-    baseTheory: [
+    pureTheory: [
       {
-        en: 'Algorithmic Fairness ensures AI systems deliver equitable outcomes without discriminating against protected attributes like race, gender, or age.',
-        vi: 'Dịch: Tính công bằng thuật toán đảm bảo các hệ thống AI đưa ra kết quả bình đẳng mà không phân biệt đối xử dựa trên các thuộc tính được bảo vệ như chủng tộc, giới tính hoặc tuổi tác.'
+        en: 'Algorithmic Fairness: Ensuring AI systems produce non-discriminatory outputs regardless of protected attributes such as race, gender, age, or socioeconomic background.',
+        vi: 'Dịch: Tính công bằng thuật toán: Đảm bảo các hệ thống AI đưa ra kết quả không phân biệt đối xử bất kể các thuộc tính được bảo vệ như chủng tộc, giới tính, tuổi tác hoặc hoàn cảnh kinh tế xã hội.'
       },
       {
-        en: 'Bias Mitigation Techniques involve bias testing, using representative and diverse training datasets, and auditing models pre- and post-deployment.',
-        vi: 'Dịch: Các kỹ thuật giảm thiểu định kiến bao gồm kiểm thử định kiến, sử dụng tập dữ liệu huấn luyện đa dạng và mang tính đại diện, cũng như kiểm toán mô hình trước và sau khi triển khai.'
+        en: 'Types of Algorithmic Bias: (1) Historical Bias: Pre-existing societal inequalities reflected in data. (2) Selection/Representation Bias: Underrepresenting specific demographic groups in training datasets. (3) Measurement Bias: Using proxy metrics that inaccurately measure target traits.',
+        vi: 'Dịch: Các loại định kiến thuật toán: (1) Định kiến lịch sử: Bất bình đẳng xã hội tồn tại sẵn được phản ánh trong dữ liệu. (2) Định kiến lựa chọn/đại diện: Thiếu hụt dữ liệu của các nhóm dân số cụ thể. (3) Định kiến đo lường: Sử dụng chỉ số thay thế đo lường không chính xác.'
       },
       {
-        en: 'Using larger datasets alone does not guarantee fairness if the data continues to reflect historical or systemic biases.',
-        vi: 'Dịch: Chỉ sử dụng tập dữ liệu lớn hơn không đảm bảo tính công bằng nếu dữ liệu đó vẫn tiếp tục phản ánh các định kiến mang tính lịch sử hoặc hệ thống.'
+        en: 'Bias Mitigation Techniques: (1) Pre-processing: Re-sampling, re-weighting, or balancing data prior to training. (2) In-processing: Adding fairness constraints directly into the loss function during model training. (3) Post-processing: Adjusting decision thresholds after model training.',
+        vi: 'Dịch: Các kỹ thuật giảm thiểu định kiến: (1) Tiền xử lý: Tái lấy mẫu, đánh lại trọng số hoặc cân bằng dữ liệu trước khi huấn luyện. (2) Trong xử lý: Thêm ràng buộc công bằng vào hàm mất mát khi huấn luyện. (3) Hậu xử lý: Điều chỉnh ngưỡng ra quyết định sau khi huấn luyện.'
       },
       {
-        en: 'Automation Bias occurs when humans over-rely on automated decision systems, ignoring contradictory evidence or failing to intervene.',
-        vi: 'Dịch: Định kiến tự động hóa (Automation Bias) xảy ra khi con người quá tin tưởng vào các hệ thống ra quyết định tự động, bỏ qua các bằng chứng trái ngược hoặc không can thiệp kịp thời.'
+        en: 'Automation Bias: A cognitive bias where humans over-rely on automated decision systems, uncritically accepting recommendations while ignoring contrary evidence or failing to intervene.',
+        vi: 'Dịch: Định kiến tự động hóa (Automation Bias): Thiên vị nhận thức khi con người quá tin tưởng vào hệ thống ra quyết định tự động, chấp nhận khuyến nghị mà bỏ qua bằng chứng trái ngược hoặc không can thiệp.'
+      },
+      {
+        en: 'Data Size Fallacy: Merely increasing dataset volume without verifying demographic representation or auditing for historical bias will NOT eliminate algorithmic bias.',
+        vi: 'Dịch: Ngụy biện quy mô dữ liệu: Chỉ tăng kích thước tập dữ liệu mà không kiểm tra tính đại diện hoặc kiểm toán định kiến lịch sử sẽ KHÔNG THỂ xóa bỏ định kiến thuật toán.'
       }
     ],
     match: text => text.includes('bias') || text.includes('fairness') || text.includes('discrimination') || text.includes('equity') || text.includes('demographic') || text.includes('ethical risk') || text.includes('algorithm design') || text.includes('ai design') || text.includes('ethical concern') || text.includes('unintended consequence')
@@ -54,18 +58,26 @@ const moduleSpecs = [
     title: 'Machine Learning Models, Training Data & Probability',
     titleVi: 'Mô hình Máy học, Dữ liệu Huấn luyện & Xác suất',
     icon: 'fa-chart-network',
-    baseTheory: [
+    pureTheory: [
       {
-        en: 'Training Data Inadequacies must be communicated transparently to users so they understand the limitations and boundaries of predictive models.',
-        vi: 'Dịch: Sự thiếu hụt hoặc hạn chế của dữ liệu huấn luyện phải được truyền thông minh bạch tới người dùng để họ hiểu rõ giới hạn của mô hình dự đoán.'
+        en: 'Predictive Models: Machine learning systems that calculate statistical probabilities of future events based on patterns identified in historical training datasets.',
+        vi: 'Dịch: Mô hình dự đoán: Các hệ thống máy học tính toán xác suất thống kê của các sự kiện trong tương lai dựa trên các mẫu được nhận diện trong tập dữ liệu huấn luyện lịch sử.'
       },
       {
-        en: 'Probability in AI and data-driven systems is used to model uncertainty and calculate the likelihood of specific outcomes.',
-        vi: 'Dịch: Xác suất trong AI và các hệ thống dựa trên dữ liệu được sử dụng để mô hình hóa tính không chắc chắn và tính toán khả năng xảy ra của các kết quả cụ thể.'
+        en: 'Transparency of Data Inadequacies: Developers are ethically required to communicate dataset limitations, edge-case omissions, and sample gaps to users so they understand operational boundaries.',
+        vi: 'Dịch: Minh bạch về sự thiếu hụt dữ liệu: Nhà phát triển có nghĩa vụ đạo đức phải truyền thông rõ ràng các hạn chế dữ liệu, điểm thiếu hụt cho người dùng để họ hiểu đúng giới hạn hoạt động.'
       },
       {
-        en: 'Predictive models must not change their core insights arbitrarily when excluded training data points are legitimately re-introduced.',
-        vi: 'Dịch: Các mô hình dự đoán không được thay đổi các góc nhìn cốt lõi một cách tùy tiện khi các điểm dữ liệu bị loại trừ trước đó được đưa trở lại tập huấn luyện một cách hợp lệ.'
+        en: 'Model Invariance & Data Re-introduction: Excluding and legitimately re-introducing valid data points into training sets must not cause erratic, arbitrary shifts in foundational predictive insights.',
+        vi: 'Dịch: Tính bất biến mô hình & Đưa lại dữ liệu: Việc loại bỏ và đưa trở lại các điểm dữ liệu hợp lệ vào tập huấn luyện không được làm thay đổi tùy tiện các góc nhìn dự đoán cốt lõi.'
+      },
+      {
+        en: 'Role of Probability: AI algorithms compute uncertainty and outcome likelihoods rather than absolute certainties. Probability quantifies risk exposure and model confidence.',
+        vi: 'Dịch: Vai trò của xác suất: Thuật toán AI tính toán tính không chắc chắn và khả năng xảy ra kết quả thay vì khẳng định tuyệt đối. Xác suất giúp định lượng rủi ro và độ tin cậy mô hình.'
+      },
+      {
+        en: 'Overfitting vs Generalization: Overfitted models capture statistical noise from training data and perform poorly on unseen real-world inputs.',
+        vi: 'Dịch: Khớp quá mức (Overfitting) vs Tính tổng quát: Mô hình overfit học thuộc cả nhiễu thống kê từ dữ liệu huấn luyện nên hoạt động rất kém trên dữ liệu thực tế mới.'
       }
     ],
     match: text => text.includes('predictive') || text.includes('training set') || text.includes('training data') || text.includes('dataset') || text.includes('probability') || text.includes('machine learning') || text.includes('overfitting') || text.includes('model drift') || text.includes('data point')
@@ -76,22 +88,26 @@ const moduleSpecs = [
     title: 'Privacy, Data Protection & Laws (GDPR, PIPEDA, CCPA, COPPA, FERPA, HIPAA)',
     titleVi: 'Quyền riêng tư, Bảo vệ Dữ liệu & Luật pháp (GDPR, PIPEDA, CCPA, COPPA, FERPA, HIPAA)',
     icon: 'fa-user-shield',
-    baseTheory: [
+    pureTheory: [
       {
-        en: 'Personal Information Protection and Electronic Documents Act (PIPEDA) applies to private-sector organizations across Canada that collect, use, or disclose personal information in commercial activities.',
-        vi: 'Dịch: Đạo luật Bảo vệ Thông tin Cá nhân và Tài liệu Điện tử (PIPEDA) áp dụng cho các tổ chức khu vực tư nhân trên khắp Canada thu thập, sử dụng hoặc tiết lộ thông tin cá nhân trong các hoạt động thương mại.'
+        en: 'PIPEDA (Personal Information Protection and Electronic Documents Act): Canadian commercial privacy law. A notable aspect is that it balances individual privacy rights with private-sector business needs to collect, use, or disclose personal data for legitimate commercial activities.',
+        vi: 'Dịch: PIPEDA (Đạo luật Bảo vệ Thông tin Cá nhân và Tài liệu Điện tử): Luật riêng tư thương mại của Canada. Điểm đáng chú ý là luật này cân bằng giữa quyền riêng tư cá nhân với nhu cầu thương mại hợp pháp của các tổ chức khu vực tư nhân.'
       },
       {
-        en: 'GDPR (General Data Protection Regulation) enforces strict user consent, data minimization, and the Right to be Forgotten within the EU.',
-        vi: 'Dịch: GDPR (Quy định Bảo vệ Dữ liệu Chung) thực thi sự đồng ý nghiêm ngặt của người dùng, tối thiểu hóa dữ liệu và Quyền được lãng quên trong Liên minh Châu Âu.'
+        en: 'GDPR (General Data Protection Regulation): EU framework enforcing strict user consent, data minimization, privacy by design, and the Right to Erasure / Right to be Forgotten.',
+        vi: 'Dịch: GDPR (Quy định Bảo vệ Dữ liệu Chung EU): Khung pháp lý EU thực thi sự đồng ý nghiêm ngặt, tối thiểu hóa dữ liệu, bảo mật từ khâu thiết kế và Quyền được xóa dữ liệu / lãng quên.'
       },
       {
-        en: 'COPPA protects the online privacy of children under 13, requiring parental consent before collecting personal information.',
-        vi: 'Dịch: COPPA bảo vệ quyền riêng tư trực tuyến của trẻ em dưới 13 tuổi, yêu cầu sự đồng ý của cha mẹ trước khi thu thập thông tin cá nhân.'
+        en: 'COPPA (Children\'s Online Privacy Protection Act): US federal law mandating verifiable parental consent before collecting personal information online from children under age 13.',
+        vi: 'Dịch: COPPA (Đạo luật Bảo vệ Quyền riêng tư Trực tuyến của Trẻ em): Luật Mỹ yêu cầu phải có sự đồng ý xác thực của cha mẹ trước khi thu thập thông tin cá nhân trực tuyến của trẻ em dưới 13 tuổi.'
       },
       {
-        en: 'FERPA protects student educational records in the US, while HIPAA safeguards protected health information (PHI).',
-        vi: 'Dịch: FERPA bảo vệ hồ sơ giáo dục của học sinh sinh viên tại Mỹ, trong khi HIPAA bảo vệ thông tin sức khỏe cá nhân (PHI).'
+        en: 'CCPA (California Consumer Privacy Act): Grants consumers rights to know what data is collected, opt-out of data sales, and request deletion.',
+        vi: 'Dịch: CCPA (Đạo luật Quyền riêng tư Tự do Người tiêu dùng California): Cho phép người dùng biết dữ liệu nào bị thu thập, từ chối bán dữ liệu và yêu cầu xóa.'
+      },
+      {
+        en: 'FERPA & HIPAA: FERPA safeguards student educational records in the US; HIPAA protects Protected Health Information (PHI) in healthcare environments.',
+        vi: 'Dịch: FERPA & HIPAA: FERPA bảo vệ hồ sơ giáo dục học sinh sinh viên Mỹ; HIPAA bảo vệ thông tin sức khỏe cá nhân (PHI) trong ngành y tế.'
       }
     ],
     match: text => text.includes('gdpr') || text.includes('pipeda') || text.includes('ccpa') || text.includes('coppa') || text.includes('ferpa') || text.includes('hipaa') || text.includes('privacy') || text.includes('personal information') || text.includes('data protection') || text.includes('surveillance') || text.includes('anonymiz')
@@ -102,18 +118,26 @@ const moduleSpecs = [
     title: 'Information Security, Threat Modeling (STRIDE, VAST) & Cyber Threats',
     titleVi: 'An toàn Bảo mật, Mô hình hóa Mối đe dọa (STRIDE, VAST) & Mã độc',
     icon: 'fa-shield-halved',
-    baseTheory: [
+    pureTheory: [
       {
-        en: 'STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) and VAST (Visual, Agile, and Threat modeling) are threat modeling frameworks used to classify security risks.',
-        vi: 'Dịch: STRIDE (Giả mạo, Xáo trộn, Phủ nhận, Tiết lộ thông tin, Từ chối dịch vụ, Nâng quyền) và VAST là các khung mô hình hóa mối đe dọa dùng để phân loại rủi ro bảo mật.'
+        en: 'Threat Modeling Frameworks (STRIDE & VAST): Applied in Threat Modeling or Security Analysis tools to systematically classify, analyze, and mitigate architectural vulnerabilities.',
+        vi: 'Dịch: Các mô hình mô hình hóa mối đe dọa (STRIDE & VAST): Được áp dụng trong các công cụ Mô hình hóa mối đe dọa hoặc phân tích an toàn để phân loại và giảm thiểu lỗ hổng kiến trúc.'
       },
       {
-        en: 'Spyware is malware that covertly monitors and records user behavior without their knowledge or explicit permission.',
-        vi: 'Dịch: Spyware (Phần mềm theo dõi) là mã độc lén lút giám sát và ghi lại hành vi của người dùng mà họ không biết hoặc không cho phép.'
+        en: 'STRIDE Categories: (S) Spoofing - Authenticity violation; (T) Tampering - Integrity violation; (R) Repudiation - Non-repudiation failure; (I) Information Disclosure - Confidentiality leak; (D) Denial of Service - Availability disruption; (E) Elevation of Privilege - Authorization bypass.',
+        vi: 'Dịch: Phân loại STRIDE: (S) Spoofing - Giả mạo; (T) Tampering - Xáo trộn; (R) Repudiation - Phủ nhận; (I) Information Disclosure - Tiết lộ thông tin; (D) Denial of Service - Từ chối dịch vụ; (E) Elevation of Privilege - Nâng quyền.'
       },
       {
-        en: 'Hacktivism is motivated primarily by political, social, or ideological causes rather than financial gain.',
-        vi: 'Dịch: Hacktivism (Hành động thâm nhập vì động cơ chính trị/xã hội) chủ yếu xuất phát từ lý do chính trị, xã hội hoặc tư tưởng thay vì lợi ích tài chính.'
+        en: 'VAST Framework: Visual, Agile, and Threat modeling framework designed to scale security threat analysis across agile software development pipelines.',
+        vi: 'Dịch: Khung VAST: Khung mô hình hóa mối đe dọa trực quan, linh hoạt thiết kế để mở rộng phân tích mối đe dọa bảo mật trong quy trình phát triển phần mềm Agile.'
+      },
+      {
+        en: 'Spyware: Malicious software covertly installed on a user\'s device to monitor, log, and transmit user behavior or credentials without knowledge or consent.',
+        vi: 'Dịch: Spyware (Phần mềm theo dõi): Mã độc được cài lén lút để giám sát, ghi lại và truyền thông tin hành vi/mật khẩu người dùng mà họ không hề biết hoặc cho phép.'
+      },
+      {
+        en: 'Hacktivism: Cyber attacks or unauthorized system access motivated primarily by political, social, or ideological causes rather than personal financial profit.',
+        vi: 'Dịch: Hacktivism: Tấn công mạng hoặc thâm nhập trái phép xuất phát từ động cơ chính trị, xã hội hoặc tư tưởng chứ không vì mục tiêu lợi nhuận tài chính.'
       }
     ],
     match: text => text.includes('stride') || text.includes('vast') || text.includes('malware') || text.includes('threat') || text.includes('attack') || text.includes('hacktivism') || text.includes('security') || text.includes('spyware') || text.includes('ransomware') || text.includes('trojan') || text.includes('vulnerability') || text.includes('breach')
@@ -124,14 +148,14 @@ const moduleSpecs = [
     title: 'Intellectual Property, Copyright, Patents & Trade Secrets',
     titleVi: 'Sở hữu Trí tuệ, Bản quyền, Bằng sáng chế & Bí mật Thương mại',
     icon: 'fa-copyright',
-    baseTheory: [
+    pureTheory: [
       {
-        en: 'Intellectual Property (IP) protections include Copyrights (expression of ideas), Patents (inventions/processes), Trade Secrets (confidential formulas), and Trademarks (brand identifiers).',
-        vi: 'Dịch: Các hình thức bảo hộ Sở hữu Trí tuệ (IP) bao gồm Bản quyền (bản thể hiện ý tưởng), Bằng sáng chế (phát minh/quy trình), Bí mật thương mại (công thức bảo mật) và Nhãn hiệu (dấu hiệu thương hiệu).'
+        en: 'Intellectual Property (IP) Protection Forms: (1) Copyright: Protects fixed original expressions (code, text, art). (2) Patent: Protects novel, non-obvious functional inventions/processes for a limited time. (3) Trade Secret: Protects confidential formulas or algorithms indefinitely if kept secret. (4) Trademark: Protects brand names and logos.',
+        vi: 'Dịch: Các hình thức bảo hộ IP: (1) Bản quyền: Bảo vệ bản thể hiện ý tưởng (mã nguồn, văn bản). (2) Bằng sáng chế: Bảo vệ phát minh/quy trình mới trong thời gian hữu hạn. (3) Bí mật thương mại: Bảo vệ công thức/thuật toán bảo mật vô thời hạn nếu giữ kín. (4) Nhãn hiệu: Bảo vệ tên thương hiệu & logo.'
       },
       {
-        en: 'Trade Secrets provide competitive advantage without expiration, provided confidentiality is strictly maintained by the organization.',
-        vi: 'Dịch: Bí mật thương mại mang lại lợi thế cạnh tranh mà không có thời hạn hết hiệu lực, miễn là tính bảo mật được tổ chức duy trì nghiêm ngặt.'
+        en: 'Trade Secrets Advantage: Trade secrets do not require public registration or disclosure and provide perpetual competitive advantage as long as strict confidentiality measures are enforced.',
+        vi: 'Dịch: Lợi thế của Bí mật thương mại: Không cần đăng ký công khai hay tiết lộ và mang lại lợi thế cạnh tranh vĩnh viễn miễn là các biện pháp bảo mật nghiêm ngặt được duy trì.'
       }
     ],
     match: text => text.includes('copyright') || text.includes('patent') || text.includes('trade secret') || text.includes('intellectual property') || text.includes('trademark') || text.includes('piracy') || text.includes('licensing') || text.includes('proprietary')
@@ -142,18 +166,18 @@ const moduleSpecs = [
     title: 'Risk Management, Liability, Accountability & Governance',
     titleVi: 'Quản lý Rủi ro, Trách nhiệm Giải trình & Quản trị Tổ chức',
     icon: 'fa-scale-balanced',
-    baseTheory: [
+    pureTheory: [
       {
-        en: 'Proactive Risk Management addresses potential liability issues early, preventing costly legal battles, reputational damage, and ethical failures.',
-        vi: 'Dịch: Quản lý rủi ro chủ động giải quyết các vấn đề trách nhiệm pháp lý từ sớm, ngăn ngừa các tranh chấp pháp lý tốn kém, tổn hại uy tín và thất bại về đạo đức.'
+        en: 'Proactive Risk Management: Taking a proactive approach to addressing liability issues prevents legal disputes, financial loss, reputational damage, and safety failures before products reach users.',
+        vi: 'Dịch: Quản lý rủi ro chủ động: Chủ động giải quyết các vấn đề trách nhiệm pháp lý từ sớm giúp ngăn ngừa tranh chấp pháp lý, tổn hại tài chính, mất uy tín và sự cố an toàn.'
       },
       {
-        en: 'Categorizing ethical risks into distinct types allows organizations to prioritize mitigations, allocate resources efficiently, and assign governance ownership.',
-        vi: 'Dịch: Việc phân loại các rủi ro đạo đức thành các nhóm riêng biệt giúp tổ chức ưu tiên các giải pháp giảm thiểu, phân bổ nguồn lực hiệu quả và xác định rõ trách nhiệm quản trị.'
+        en: 'Ethical Risk Categorization: Categorizing ethical risks into distinct domains allows organizations to allocate resources efficiently, assign clear governance ownership, and prioritize risk mitigations.',
+        vi: 'Dịch: Phân loại rủi ro đạo đức: Phân loại rủi ro thành các nhóm rõ ràng giúp tổ chức phân bổ nguồn lực hiệu quả, xác định trách nhiệm quản trị và ưu tiên các giải pháp giảm thiểu.'
       },
       {
-        en: 'System Accountability requires clear human oversight, audit logs, and defined roles for decisions produced by automated systems.',
-        vi: 'Dịch: Trách nhiệm giải trình hệ thống đòi hỏi sự giám sát rõ ràng của con người, nhật ký kiểm toán và các vai trò được xác định cho các quyết định do hệ thống tự động đưa ra.'
+        en: 'System Accountability: Requires human oversight, auditable decision logs, transparent operational rules, and clear organizational ownership for outputs generated by automated technologies.',
+        vi: 'Dịch: Trách nhiệm giải trình hệ thống: Đòi hỏi sự giám sát của con người, nhật ký kiểm toán có thể truy vết, quy tắc minh bạch và trách nhiệm tổ chức rõ ràng đối với kết quả do công nghệ tự động đưa ra.'
       }
     ],
     match: text => text.includes('liability') || text.includes('risk') || text.includes('accountability') || text.includes('governance') || text.includes('culture') || text.includes('stakeholder') || text.includes('oversight') || text.includes('compliance') || text.includes('proactive')
@@ -164,14 +188,14 @@ const moduleSpecs = [
     title: 'Crisis Communication, Media Management & Public Trust',
     titleVi: 'Truyền thông Khủng hoảng, Quản lý Truyền thông & Niềm tin Công chúng',
     icon: 'fa-bullhorn',
-    baseTheory: [
+    pureTheory: [
       {
-        en: 'A Media Communication Plan during an ethical crisis must designate a single trained spokesperson and establish verified messaging channels.',
-        vi: 'Dịch: Kế hoạch truyền thông với báo chí trong khủng hoảng đạo đức phải chỉ định một người phát ngôn duy nhất được đào tạo và thiết lập các kênh thông điệp được xác thực.'
+        en: 'Crisis Communication Objectives: The primary idea managed by a crisis communication program during an ethical breach is PUBLIC TRUST and providing timely, accurate, transparent facts.',
+        vi: 'Dịch: Mục tiêu truyền thông khủng hoảng: Ý tưởng quan trọng nhất cần quản lý trong khủng hoảng đạo đức là NIỀM TIN CỦA CÔNG CHÚNG và cung cấp thông tin minh bạch, chính xác, kịp thời.'
       },
       {
-        en: 'The core objective of a crisis communication program is managing public trust and providing transparent, accurate, and timely information.',
-        vi: 'Dịch: Mục tiêu cốt lõi của chương trình truyền thông khủng hoảng là quản lý niềm tin của công chúng và cung cấp thông tin minh bạch, chính xác và kịp thời.'
+        en: 'Media Plan Core Tools: An effective media communication plan relies on designating a single trained spokesperson, establishing verified press release channels, and issuing transparent statements.',
+        vi: 'Dịch: Công cụ cốt lõi của kế hoạch truyền thông: Kế hoạch truyền thông hiệu quả dựa vào việc chỉ định một người phát ngôn duy nhất được đào tạo, thiết lập kênh thông cáo báo chí xác minh và phát ngôn minh bạch.'
       }
     ],
     match: text => text.includes('communication') || text.includes('media') || text.includes('crisis') || text.includes('spokesperson') || text.includes('press') || text.includes('public trust') || text.includes('public relation')
@@ -182,14 +206,14 @@ const moduleSpecs = [
     title: 'Professional Ethics, Whistleblowing & Codes of Conduct',
     titleVi: 'Đạo đức Nghề nghiệp, Tố giác (Whistleblowing) & Quy tắc Ứng xử',
     icon: 'fa-user-tie',
-    baseTheory: [
+    pureTheory: [
       {
-        en: 'Professional Codes of Conduct (such as ACM or IEEE) dictate that IT professionals must prioritize public safety, privacy, and social well-being over corporate profit.',
-        vi: 'Dịch: Quy tắc ứng xử nghề nghiệp (như ACM hay IEEE) quy định rằng các chuyên gia CNTT phải ưu tiên an toàn công cộng, quyền riêng tư và lợi ích xã hội lên trên lợi nhuận doanh nghiệp.'
+        en: 'Professional Codes of Conduct (ACM/IEEE): Mandate that computing professionals put public health, safety, privacy, and social welfare ahead of corporate profits or personal advancement.',
+        vi: 'Dịch: Quy tắc ứng xử nghề nghiệp (ACM/IEEE): Quy định chuyên gia CNTT phải đặt sức khỏe, an toàn công cộng, quyền riêng tư và lợi ích xã hội lên trên lợi nhuận doanh nghiệp hay thăng tiến cá nhân.'
       },
       {
-        en: 'Whistleblowing involves disclosing illegal, unethical, or unsafe practices within an organization to external authorities or the public as a last resort.',
-        vi: 'Dịch: Tố giác (Whistleblowing) liên quan đến việc tiết lộ các hành vi bất hợp pháp, vi phạm đạo đức hoặc không an toàn trong tổ chức cho cơ quan thẩm quyền bên ngoài hoặc công chúng như giải pháp cuối cùng.'
+        en: 'Whistleblowing Protocol: Disclosing illegal, fraudulent, or harmful organizational activities to external regulatory bodies or the public as a mandatory last resort after internal reporting channels are exhausted or ignored.',
+        vi: 'Dịch: Quy trình Tố giác (Whistleblowing): Tiết lộ các hành vi bất hợp pháp hoặc độc hại của tổ chức ra cơ quan quản lý bên ngoài hoặc công chúng như giải pháp cuối cùng khi các kênh nội bộ bị ngó lơ.'
       }
     ],
     match: text => text.includes('whistle') || text.includes('code of ethics') || text.includes('professional') || text.includes('code of conduct') || text.includes('acm') || text.includes('ieee') || text.includes('conflict of interest')
@@ -200,14 +224,14 @@ const moduleSpecs = [
     title: 'Data Analysis, Correlation & Scatter Plot Interpretation',
     titleVi: 'Phân tích Dữ liệu, Tương quan & Phân tích Biểu đồ Phân tán',
     icon: 'fa-chart-line',
-    baseTheory: [
+    pureTheory: [
       {
-        en: 'A Scatter Plot showing points tightly aligned along an upward slope indicates a Strong Positive Correlation between the two variables.',
-        vi: 'Dịch: Biểu đồ phân tán có các điểm dữ liệu nằm sát nhau theo hướng dốc lên thể hiện Tương quan Dương Mạnh (Strong Positive Correlation) giữa hai biến.'
+        en: 'Scatter Plot Correlation Analysis: When data points on a scatter plot (e.g., GrossIncome vs Revenue) cluster tightly along a line sloping upward from left to right, it indicates a Strong Positive Correlation.',
+        vi: 'Dịch: Phân tích tương quan biểu đồ phân tán: Khi các điểm dữ liệu (ví dụ GrossIncome so với Revenue) tập trung sát nhau theo đường dốc lên từ trái sang phải, nó thể hiện Tương quan Dương Mạnh (Strong Positive Correlation).'
       },
       {
-        en: 'Correlation does not imply causation; observing that GrossIncome increases with Revenue confirms mathematical association, not direct cause.',
-        vi: 'Dịch: Tương quan không đồng nghĩa với quan hệ nhân quả; việc quan sát GrossIncome tăng theo Revenue chỉ xác nhận sự liên kết toán học chứ không phải nguyên nhân trực tiếp.'
+        en: 'Correlation vs Causation: Correlation establishes a mathematical relationship between two variables, but does NOT prove that one variable directly causes the change in the other.',
+        vi: 'Dịch: Tương quan vs Nhân quả: Tương quan xác lập mối quan hệ thống kê giữa 2 biến, nhưng KHÔNG chứng minh biến này là nguyên nhân trực tiếp gây ra sự thay đổi của biến kia.'
       }
     ],
     match: text => text.includes('scatter') || text.includes('correlation') || text.includes('grossincome') || text.includes('revenue') || text.includes('plot') || text.includes('trendline')
@@ -218,17 +242,17 @@ const moduleSpecs = [
     title: 'Comprehensive Practice & Scenario-based Questions',
     titleVi: 'Bộ Câu Hỏi Tình Huống & Đạo Đức CNTT Tổng Hợp',
     icon: 'fa-list-check',
-    baseTheory: [
+    pureTheory: [
       {
-        en: 'Ethics in technology requires continuous evaluation across the entire lifecycle: design, development, deployment, and decommissioning.',
-        vi: 'Dịch: Đạo đức trong công nghệ đòi hỏi việc đánh giá liên tục trong toàn bộ vòng đời: thiết kế, phát triển, triển khai và loại bỏ.'
+        en: 'Continuous Ethical Assessment: Technology ethics requires continuous audit across all lifecycle phases: ideation, data collection, algorithm training, deployment, and eventual retirement.',
+        vi: 'Dịch: Đánh giá đạo đức liên tục: Đạo đức công nghệ đòi hỏi kiểm toán liên tục qua tất cả các giai đoạn: lên ý tưởng, thu thập dữ liệu, huấn luyện thuật toán, triển khai và loại bỏ.'
       }
     ],
     match: () => true
   }
 ];
 
-// Assign questions to modules
+// Assign questions to modules using unique normalized question string
 const assignedKeys = new Set();
 const moduleData = moduleSpecs.map(spec => {
   const modQuestions = [];
@@ -241,32 +265,19 @@ const moduleData = moduleSpecs.map(spec => {
       modQuestions.push(q);
     }
   });
-
-  // Extract all unique knowledge items from questions in this module
-  const extractedTheoryMap = new Map();
-  modQuestions.forEach(q => {
-    const exp = q.explanation || {};
-    const ansText = exp.answerDisplay || (q.answer + '. ' + (q.options ? q.options[q.answer] : ''));
-    const qEn = q.question.trim();
-    const qVi = exp.questionVi ? exp.questionVi.trim() : '';
-    const conceptVi = exp.concept ? exp.concept.replace(/^[•\s\-\*]+/, '').trim() : '';
-
-    if (qEn && ansText) {
-      const enSummary = `Q: ${qEn} -> Key Answer: ${ansText}`;
-      const viSummary = qVi ? `Dịch: ${qVi} -> Đáp án chính: ${ansText}` : `Dịch: ${conceptVi}`;
-      if (!extractedTheoryMap.has(enSummary.toLowerCase())) {
-        extractedTheoryMap.set(enSummary.toLowerCase(), { en: enSummary, vi: viSummary, concept: conceptVi });
-      }
-    }
-  });
-
-  const extractedTheoryList = Array.from(extractedTheoryMap.values());
-
-  return { ...spec, questions: modQuestions, extractedTheoryList };
+  return { ...spec, questions: modQuestions };
 });
 
+console.log('Categorization Summary:');
+let totalAssigned = 0;
+moduleData.forEach(m => {
+  totalAssigned += m.questions.length;
+  console.log(`${m.code} - ${m.title}: ${m.questions.length} questions`);
+});
+console.log(`Total questions assigned across modules: ${totalAssigned} / ${questions.length}`);
+
 // Function to generate dual-language Q&A item with interactive click handlers
-function renderQuestionHTML(q, idx) {
+function renderQuestionHTML(q, idx, totalInMod, modCode) {
   const exp = q.explanation || {};
   const questionEn = q.question;
   const questionVi = exp.questionVi || 'Dịch câu hỏi chưa có sẵn.';
@@ -289,9 +300,9 @@ function renderQuestionHTML(q, idx) {
   }
 
   return `
-    <div class="qa-card" id="q-${q.uIdx}" data-ans="${q.answer}" data-search="${(questionEn + ' ' + questionVi + ' ' + conceptVi).toLowerCase().replace(/"/g, '&quot;')}">
+    <div class="qa-card ${idx === 0 ? 'active-card' : ''}" id="qcard-${modCode}-${idx}" data-idx="${idx}" data-ans="${q.answer}" data-search="${(questionEn + ' ' + questionVi + ' ' + conceptVi).toLowerCase().replace(/"/g, '&quot;')}">
       <div class="qa-header">
-        <span class="qa-badge">Câu ${idx + 1}</span>
+        <span class="qa-badge">Câu ${idx + 1} / ${totalInMod}</span>
         <span class="task-badge">${q.taskLabel || q.task || 'ITE'}</span>
       </div>
       
@@ -318,25 +329,22 @@ function renderQuestionHTML(q, idx) {
 
 // Generate HTML Content
 const htmlModulesContent = moduleData.map((m, mIdx) => {
-  const baseTheoryHTML = m.baseTheory.map(t => `
+  const pureTheoryHTML = m.pureTheory.map((t, tIdx) => `
     <div class="theory-item base-rule">
-      <div class="t-en"><i class="fa-solid fa-star"></i> ${t.en}</div>
+      <div class="t-en"><i class="fa-solid fa-lightbulb"></i> <strong>${tIdx + 1}.</strong> ${t.en}</div>
       <div class="t-vi">${t.vi}</div>
     </div>
   `).join('');
 
-  const extractedTheoryHTML = m.extractedTheoryList.map(t => `
-    <div class="theory-item knowledge-point">
-      <div class="t-en">${t.en}</div>
-      <div class="t-vi">${t.vi}</div>
-      ${t.concept ? `<div class="t-concept"><strong>Ghi nhớ cốt lõi:</strong> ${t.concept}</div>` : ''}
-    </div>
-  `).join('');
+  const questionsHTML = m.questions.map((q, qIdx) => renderQuestionHTML(q, qIdx, m.questions.length, m.code)).join('');
 
-  const questionsHTML = m.questions.map((q, qIdx) => renderQuestionHTML(q, qIdx)).join('');
+  // Question Map Palette Buttons
+  const paletteButtonsHTML = m.questions.map((q, qIdx) => `
+    <button class="q-map-btn ${qIdx === 0 ? 'current-btn' : ''}" id="mapbtn-${m.code}-${qIdx}" onclick="jumpToQuestion('${m.code}', ${qIdx})">${qIdx + 1}</button>
+  `).join('');
 
   return `
-    <section class="module-section" id="${m.id}">
+    <section class="module-section ${mIdx === 0 ? 'active-module' : ''}" id="${m.id}" data-modcode="${m.code}" data-total="${m.questions.length}">
       <div class="module-header">
         <div class="module-tag">${m.code}</div>
         <h2><i class="fa-solid ${m.icon}"></i> ${m.title}</h2>
@@ -344,15 +352,31 @@ const htmlModulesContent = moduleData.map((m, mIdx) => {
       </div>
 
       <div class="theory-box">
-        <div class="box-title"><i class="fa-solid fa-book-bookmark"></i> Lý Thuyết Cốt Lõi & Tổng Hợp Toàn Bộ Kiến Thức Ôn Thi (${m.extractedTheoryList.length + m.baseTheory.length} Ý Cốt Lõi)</div>
-        <div class="theory-section-header"><i class="fa-solid fa-graduation-cap"></i> 1. Nguyên Tắc Cốt Lõi (Core Principles):</div>
-        ${baseTheoryHTML}
-        
-        <div class="theory-section-header" style="margin-top: 18px;"><i class="fa-solid fa-list-check"></i> 2. Tổng Hợp Chi Tiết Toàn Bộ Kiến Thức & Câu Hỏi Trong Chương (Exhaustive Exam Knowledge Points):</div>
-        ${extractedTheoryHTML}
+        <div class="box-title"><i class="fa-solid fa-book-bookmark"></i> Lý Thuyết Cốt Lõi (Core Theory - Đọc xong để làm bài)</div>
+        ${pureTheoryHTML}
       </div>
 
-      <div class="qa-list">
+      <!-- Question Navigation & Palette Container -->
+      <div class="quiz-controls-bar">
+        <div class="palette-header">
+          <span><i class="fa-solid fa-grip"></i> Bản đồ câu hỏi (${m.questions.length} câu):</span>
+        </div>
+        <div class="q-palette-grid" id="palette-${m.code}">
+          ${paletteButtonsHTML}
+        </div>
+
+        <div class="nav-buttons-row">
+          <button class="btn-nav" id="prevBtn-${m.code}" onclick="navigateQuestion('${m.code}', -1)">
+            <i class="fa-solid fa-chevron-left"></i> Câu trước
+          </button>
+          <span class="q-counter-text" id="counter-${m.code}">Câu 1 / ${m.questions.length}</span>
+          <button class="btn-nav" id="nextBtn-${m.code}" onclick="navigateQuestion('${m.code}', 1)">
+            Câu tiếp <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="qa-list" id="qlist-${m.code}">
         ${questionsHTML}
       </div>
     </section>
@@ -364,7 +388,7 @@ const fullHTML = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ITE302 Master Study Guide & Quiz App - Ôn Thi Đạo Đức CNTT Interactive</title>
+  <title>ITE302 Master Study Guide & Quiz Engine - Ôn Thi Đạo Đức CNTT</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
   <style>
@@ -452,14 +476,14 @@ const fullHTML = `<!DOCTYPE html>
       border-radius: 20px;
       color: var(--text-main);
       font-size: 0.9rem;
-      width: 220px;
+      width: 200px;
       transition: width 0.3s;
     }
 
     .search-input:focus {
       outline: none;
       border-color: var(--accent);
-      width: 280px;
+      width: 260px;
     }
 
     .search-wrapper {
@@ -659,13 +683,13 @@ const fullHTML = `<!DOCTYPE html>
       background: var(--bg-card);
       border-left: 4px solid var(--accent);
       border-radius: 8px;
-      padding: 20px;
+      padding: 22px;
       margin-bottom: 24px;
     }
 
     .box-title {
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.05rem;
       color: var(--accent);
       margin-bottom: 16px;
       display: flex;
@@ -675,49 +699,129 @@ const fullHTML = `<!DOCTYPE html>
       padding-bottom: 8px;
     }
 
-    .theory-section-header {
-      font-weight: 700;
-      font-size: 0.9rem;
-      color: var(--green);
-      margin-bottom: 10px;
-    }
-
     .theory-item {
-      margin-bottom: 12px;
-      padding: 10px 12px;
-      border-radius: 6px;
+      margin-bottom: 14px;
+      padding: 12px 14px;
+      border-radius: 8px;
       background: rgba(255, 255, 255, 0.02);
       border: 1px solid rgba(255, 255, 255, 0.04);
     }
 
     .theory-item.base-rule {
-      border-left: 3px solid var(--accent);
-    }
-
-    .theory-item.knowledge-point {
-      border-left: 3px solid var(--vi-color);
+      border-left: 4px solid var(--accent);
     }
 
     .t-en {
       font-weight: 600;
       color: var(--text-main);
-      font-size: 0.92rem;
+      font-size: 0.95rem;
     }
 
     .t-vi {
       color: var(--vi-color);
-      font-size: 0.88rem;
-      margin-top: 2px;
+      font-size: 0.9rem;
+      margin-top: 4px;
       font-style: italic;
     }
 
-    .t-concept {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      margin-top: 4px;
+    /* Quiz Control Bar & Palette */
+    .quiz-controls-bar {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 20px;
     }
 
-    /* QA Cards */
+    .palette-header {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .q-palette-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      max-height: 140px;
+      overflow-y: auto;
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+    }
+
+    .q-map-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .q-map-btn:hover {
+      border-color: var(--accent);
+      color: var(--text-main);
+    }
+
+    .q-map-btn.current-btn {
+      border-color: var(--accent) !important;
+      background: var(--accent) !important;
+      color: #000 !important;
+      font-weight: 800;
+    }
+
+    .q-map-btn.correct-btn {
+      background: var(--green-bg) !important;
+      border-color: var(--green) !important;
+      color: var(--green) !important;
+    }
+
+    .q-map-btn.wrong-btn {
+      background: var(--red-bg) !important;
+      border-color: var(--red) !important;
+      color: var(--red) !important;
+    }
+
+    .nav-buttons-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+    }
+
+    .btn-nav {
+      background: var(--accent);
+      color: #000;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .btn-nav:hover {
+      background: var(--accent-hover);
+      color: #fff;
+    }
+
+    .q-counter-text {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    /* QA Cards - Slide Mode vs Read All Mode */
     .qa-list {
       display: flex;
       flex-direction: column;
@@ -728,18 +832,32 @@ const fullHTML = `<!DOCTYPE html>
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 22px;
-      transition: border-color 0.2s, transform 0.2s;
+      padding: 24px;
+      transition: border-color 0.2s;
     }
 
-    .qa-card:hover {
-      border-color: var(--accent);
+    /* Single Question Slide Mode */
+    body.quiz-mode .qa-card {
+      display: none;
+    }
+
+    body.quiz-mode .qa-card.active-card {
+      display: block !important;
+    }
+
+    /* Read All Mode Shows All Cards */
+    body.study-mode .qa-card {
+      display: block !important;
+    }
+
+    body.study-mode .quiz-controls-bar {
+      display: none;
     }
 
     .qa-header {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .qa-badge {
@@ -760,18 +878,18 @@ const fullHTML = `<!DOCTYPE html>
     }
 
     .qa-question-block {
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
 
     .q-text-en {
-      font-size: 1.05rem;
+      font-size: 1.08rem;
       font-weight: 700;
       color: var(--text-main);
       line-height: 1.5;
     }
 
     .q-text-vi {
-      font-size: 0.98rem;
+      font-size: 1rem;
       color: var(--vi-color);
       margin-top: 6px;
       font-weight: 500;
@@ -781,7 +899,7 @@ const fullHTML = `<!DOCTYPE html>
       display: grid;
       grid-template-columns: 1fr;
       gap: 10px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
 
     .option-item {
@@ -851,8 +969,8 @@ const fullHTML = `<!DOCTYPE html>
     .concept-box {
       background: rgba(255, 255, 255, 0.02);
       border-top: 1px solid var(--border);
-      padding-top: 12px;
-      margin-top: 12px;
+      padding-top: 14px;
+      margin-top: 14px;
       display: none; /* Default hidden in quiz mode */
     }
 
@@ -903,7 +1021,7 @@ const fullHTML = `<!DOCTYPE html>
 
   <header class="top-header">
     <div class="brand-title">
-      <i class="fa-solid fa-graduation-cap"></i> ITE302 Interactive Quiz App
+      <i class="fa-solid fa-graduation-cap"></i> ITE302 Interactive Quiz Hub
     </div>
 
     <div class="header-controls">
@@ -917,7 +1035,7 @@ const fullHTML = `<!DOCTYPE html>
       </div>
 
       <button class="btn-action active-mode" id="toggleAppModeBtn">
-        <i class="fa-solid fa-gamepad"></i> <span id="appModeLabel">Chế độ Quiz Luyện Tập</span>
+        <i class="fa-solid fa-gamepad"></i> <span id="appModeLabel">Chế độ Quiz (Chuyển từng câu)</span>
       </button>
 
       <button class="btn-action" id="toggleViBtn">
@@ -945,8 +1063,8 @@ const fullHTML = `<!DOCTYPE html>
 
     <main class="main-content" id="mainContent">
       <div class="doc-hero">
-        <h1><i class="fa-solid fa-gamepad"></i> ITE302 - Interactive Quiz & Practice Exam</h1>
-        <p>Bộ ứng dụng trắc nghiệm & ôn tập 1060 câu ITE (Đạo đức CNTT). Ở <strong>Chế độ Quiz</strong>, nhấp chọn đáp án để kiểm tra kết quả Đúng/Sai và hiển thị ngay Khái niệm cốt lõi & Giải thích chi tiết. Nhấn nút chế độ trên thanh công cụ để chuyển sang <strong>Chế độ Đọc Lý Thuyết</strong>.</p>
+        <h1><i class="fa-solid fa-gamepad"></i> ITE302 - Interactive Quiz & Master Study Guide</h1>
+        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT). Đọc phần <strong>Lý Thuyết Cốt Lõi</strong> ở đầu mỗi chương để làm trọn vẹn các câu hỏi bên dưới. Nhấp chọn đáp án để kiểm tra kết quả Đúng/Sai, nhảy câu qua <strong>Bản đồ câu hỏi</strong> hoặc nút <strong>Câu tiếp / Câu trước</strong>.</p>
         <div class="stats-pills">
           <span class="pill"><i class="fa-solid fa-layer-group"></i> 10 Modules Kiến Thức</span>
           <span class="pill"><i class="fa-solid fa-file-circle-check"></i> ${questions.length} Câu Hỏi Độc Lập</span>
@@ -962,6 +1080,53 @@ const fullHTML = `<!DOCTYPE html>
     let scoreTotal = 0;
     let scoreCorrect = 0;
 
+    // Track active question index per module
+    const currentQuestionMap = {};
+    document.querySelectorAll('.module-section').forEach(sec => {
+      const code = sec.getAttribute('data-modcode');
+      if (code) currentQuestionMap[code] = 0;
+    });
+
+    // Jump to specific question in module
+    function jumpToQuestion(modCode, qIdx) {
+      const sec = document.querySelector(\`section[data-modcode="\${modCode}"]\`);
+      if (!sec) return;
+      const total = parseInt(sec.getAttribute('data-total') || '1', 10);
+      if (qIdx < 0 || qIdx >= total) return;
+
+      currentQuestionMap[modCode] = qIdx;
+
+      // Update Active Question Card
+      const cards = sec.querySelectorAll('.qa-card');
+      cards.forEach((card, i) => {
+        if (i === qIdx) {
+          card.classList.add('active-card');
+        } else {
+          card.classList.remove('active-card');
+        }
+      });
+
+      // Update Palette Map Buttons
+      const btns = sec.querySelectorAll('.q-map-btn');
+      btns.forEach((btn, i) => {
+        if (i === qIdx) {
+          btn.classList.add('current-btn');
+        } else {
+          btn.classList.remove('current-btn');
+        }
+      });
+
+      // Update Counter Text
+      const counterEl = document.getElementById('counter-' + modCode);
+      if (counterEl) counterEl.textContent = 'Câu ' + (qIdx + 1) + ' / ' + total;
+    }
+
+    // Navigate prev / next question
+    function navigateQuestion(modCode, dir) {
+      const currentIdx = currentQuestionMap[modCode] || 0;
+      jumpToQuestion(modCode, currentIdx + dir);
+    }
+
     // Handle option click in Quiz mode
     function handleOptionClick(optElem, chosenOpt, correctOpt) {
       if (document.body.classList.contains('study-mode')) return;
@@ -969,6 +1134,10 @@ const fullHTML = `<!DOCTYPE html>
       const card = optElem.closest('.qa-card');
       if (card.classList.contains('answered')) return; // Allow only 1 selection per question
       card.classList.add('answered');
+
+      const cardIdx = card.getAttribute('data-idx');
+      const modSec = card.closest('.module-section');
+      const modCode = modSec ? modSec.getAttribute('data-modcode') : null;
 
       const options = card.querySelectorAll('.option-item');
       options.forEach(opt => {
@@ -986,7 +1155,19 @@ const fullHTML = `<!DOCTYPE html>
       if (ansBox) ansBox.style.display = 'block';
       if (conceptBox) conceptBox.style.display = 'block';
 
-      // Update Score
+      // Update Question Map Palette Button Color
+      if (modCode && cardIdx !== null) {
+        const mapBtn = document.getElementById('mapbtn-' + modCode + '-' + cardIdx);
+        if (mapBtn) {
+          if (chosenOpt === correctOpt) {
+            mapBtn.classList.add('correct-btn');
+          } else {
+            mapBtn.classList.add('wrong-btn');
+          }
+        }
+      }
+
+      // Update Score Tracker
       scoreTotal++;
       if (chosenOpt === correctOpt) {
         scoreCorrect++;
@@ -1008,12 +1189,12 @@ const fullHTML = `<!DOCTYPE html>
       if (isQuizMode) {
         document.body.classList.remove('quiz-mode');
         document.body.classList.add('study-mode');
-        appModeLabel.textContent = 'Chế độ Đọc Lý Thuyết (Hiện tất cả)';
+        appModeLabel.textContent = 'Chế độ Xem Tất Cả (Read All)';
         toggleAppModeBtn.classList.remove('active-mode');
       } else {
         document.body.classList.remove('study-mode');
         document.body.classList.add('quiz-mode');
-        appModeLabel.textContent = 'Chế độ Quiz Luyện Tập';
+        appModeLabel.textContent = 'Chế độ Quiz (Chuyển từng câu)';
         toggleAppModeBtn.classList.add('active-mode');
       }
     });
@@ -1024,14 +1205,24 @@ const fullHTML = `<!DOCTYPE html>
 
     searchInput.addEventListener('input', (e) => {
       const term = e.target.value.toLowerCase().trim();
-      qaCards.forEach(card => {
-        const text = card.getAttribute('data-search') || '';
-        if (text.includes(term)) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
+      if (term) {
+        // If searching, force reveal matching cards
+        document.body.classList.remove('quiz-mode');
+        document.body.classList.add('study-mode');
+        qaCards.forEach(card => {
+          const text = card.getAttribute('data-search') || '';
+          if (text.includes(term)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      } else {
+        // Reset to quiz mode
+        document.body.classList.remove('study-mode');
+        document.body.classList.add('quiz-mode');
+        qaCards.forEach(card => card.style.display = '');
+      }
     });
 
     // Toggle Translation
@@ -1082,8 +1273,8 @@ console.log('-', htmlOutputPath1);
 console.log('-', htmlOutputPath2);
 
 // Generate Markdown File Content
-let mdContent = `# ITE302 - Information Technology Ethics Master Study Guide & Quiz Bank
-> Comprehensive dual-language study guide built from 1060 ITE quiz questions. Each concept and question includes English text with line-by-line Vietnamese translation directly underneath.
+let mdContent = `# ITE302 - Information Technology Ethics Master Study Guide & Pure Theory
+> Comprehensive dual-language study guide built from 1060 ITE quiz questions. Reading the Pure Theory section at the beginning of each module prepares you to answer all questions.
 
 ---
 
@@ -1093,15 +1284,9 @@ moduleData.forEach((m, mIdx) => {
   mdContent += `## ${m.code}: ${m.title}\n`;
   mdContent += `### ${m.titleVi}\n\n`;
 
-  mdContent += `#### Core Theory & Exhaustive Knowledge Points / Lý Thuyết Cốt Lõi & Tổng Hợp Kiến Thức Ôn Thi\n`;
-  m.baseTheory.forEach(t => {
-    mdContent += `- **[CORE RULE] ${t.en}**\n  *${t.vi}*\n\n`;
-  });
-
-  m.extractedTheoryList.forEach(t => {
-    mdContent += `- **${t.en}**\n  *${t.vi}*\n`;
-    if (t.concept) mdContent += `  *Ghi nhớ: ${t.concept}*\n`;
-    mdContent += `\n`;
+  mdContent += `#### Pure Core Theory / Lý Thuyết Cốt Lõi (${m.pureTheory.length} Nguyên Tắc & Khái Niệm)\n`;
+  m.pureTheory.forEach((t, tIdx) => {
+    mdContent += `- **${tIdx + 1}. ${t.en}**\n  *${t.vi}*\n\n`;
   });
 
   mdContent += `#### Practice Q&A Bank / Bộ Câu Hỏi & Đáp Án (${m.questions.length} câu)\n\n`;
