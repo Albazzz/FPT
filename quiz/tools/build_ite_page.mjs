@@ -292,7 +292,6 @@ function renderQuestionHTML(q, idx, totalInMod, modCode) {
     }).join('');
   }
 
-  // Single line template string without internal newlines/spaces between divs to prevent pre-wrap spacing
   return `<div class="card quiz-card ${idx === 0 ? 'active-card' : ''}" id="qcard-${modCode}-${idx}" data-idx="${idx}" data-ans="${q.answer}" data-search="${(questionEn + ' ' + questionVi + ' ' + conceptVi).toLowerCase().replace(/"/g, '&quot;')}"><div class="card-meta"><span class="q-index"><i class="fa-solid fa-circle-question"></i> Câu ${idx + 1} / ${totalInMod}</span><span class="q-id"><i class="fa-solid fa-tag"></i> ${q.taskLabel || q.task || 'ITE'}</span></div><h2 class="question"><div class="q-text-en">${questionEn}</div><div class="q-text-vi">Dịch: ${questionVi}</div></h2>${optionsHTML ? `<div class="options" role="listbox">${optionsHTML}</div>` : ''}<div class="answer-box"><div class="ans-title"><i class="fa-solid fa-circle-check"></i> Đáp án đúng: <span class="ans-key">${answerEn}</span></div></div>${conceptVi ? `<div class="explain-panel"><div class="concept-title"><i class="fa-solid fa-lightbulb"></i> Khái niệm cốt lõi (Key Concept):</div><div class="concept-content">${conceptVi}</div>${whyCorrectVi ? `<div class="why-correct"><i class="fa-solid fa-check"></i> <strong>Tại sao đúng:</strong> ${whyCorrectVi}</div>` : ''}</div>` : ''}</div>`;
 }
 
@@ -306,11 +305,6 @@ const htmlModulesContent = moduleData.map((m, mIdx) => {
   `).join('');
 
   const questionsHTML = m.questions.map((q, qIdx) => renderQuestionHTML(q, qIdx, m.questions.length, m.code)).join('');
-
-  // Question Map Cells (q-cell) matching play.html exact DOM
-  const paletteCellsHTML = m.questions.map((q, qIdx) => `
-    <button type="button" class="q-cell ${qIdx === 0 ? 'is-current' : ''}" id="mapbtn-${m.code}-${qIdx}" onclick="jumpToQuestion('${m.code}', ${qIdx})">${qIdx + 1}</button>
-  `).join('');
 
   return `
     <section class="module-section ${mIdx === 0 ? 'active-module' : ''}" id="${m.id}" data-modcode="${m.code}" data-total="${m.questions.length}">
@@ -331,9 +325,9 @@ const htmlModulesContent = moduleData.map((m, mIdx) => {
         ${questionsHTML}
       </div>
 
-      <!-- 3. Bottom: Navigation Bar & Map Grid Palette (Moved Down Below Question Card) -->
-      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px;">
-        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi" style="margin-bottom: 16px;">
+      <!-- 3. Bottom: Navigation Bar (Question Map Removed) -->
+      <div class="card-soft quiz-controls-bar" style="margin-top: 24px; margin-bottom: 20px; padding: 16px;">
+        <nav class="nav-arrows" aria-label="Điều hướng câu hỏi">
           <button type="button" class="btn btn-secondary btn-nav" id="prevBtn-${m.code}" onclick="navigateQuestion('${m.code}', -1)">
             <i class="fa-solid fa-arrow-left"></i>
             <span class="nav-label">Câu trước</span>
@@ -348,20 +342,6 @@ const htmlModulesContent = moduleData.map((m, mIdx) => {
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </nav>
-
-        <div class="map-head" style="margin-bottom: 8px;">
-          <span><i class="fa-solid fa-map"></i> Bản đồ câu hỏi (${m.questions.length} câu)</span>
-        </div>
-        <div class="map-legend" style="margin-bottom: 12px;">
-          <span><i class="dot current"></i> đang làm</span>
-          <span><i class="dot ok"></i> đúng</span>
-          <span><i class="dot bad"></i> sai</span>
-          <span><i class="dot unseen"></i> chưa</span>
-        </div>
-
-        <div class="q-map" id="palette-${m.code}">
-          ${paletteCellsHTML}
-        </div>
       </div>
     </section>
   `;
@@ -694,7 +674,7 @@ const fullHTML = `<!DOCTYPE html>
     <main class="main-content" id="mainContent">
       <div class="doc-hero">
         <h1><i class="fa-solid fa-gamepad"></i> ITE302 - Interactive Quiz & Master Study Guide</h1>
-        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT). Câu hỏi và phương án mặc định hiển thị Tiếng Anh. Dòng <strong>Dịch Tiếng Việt</strong> sẽ <strong>TỰ ĐỘNG HIỆN RA NGAY SAU KHI BẠN CHỌN XONG ĐÁP ÁN</strong> (hoặc nhấn nút Bật Dịch Việt Luôn trên thanh công cụ).</p>
+        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT). Sử dụng các nút <strong>Câu trước</strong> và <strong>Câu tiếp</strong> bên dưới câu hỏi để chuyển câu. Dòng Dịch Tiếng Việt tự động hiện ra sau khi chọn xong đáp án.</p>
         <div class="stats-pills">
           <span class="pill"><i class="fa-solid fa-layer-group"></i> 10 Modules Kiến Thức</span>
           <span class="pill"><i class="fa-solid fa-file-circle-check"></i> ${questions.length} Câu Hỏi Độc Lập</span>
@@ -736,16 +716,6 @@ const fullHTML = `<!DOCTYPE html>
         }
       });
 
-      // Update Palette Map Cells (q-cell)
-      const cells = sec.querySelectorAll('.q-cell');
-      cells.forEach((cell, i) => {
-        if (i === qIdx) {
-          cell.classList.add('is-current');
-        } else {
-          cell.classList.remove('is-current');
-        }
-      });
-
       // Update Counter Text
       const counterEl = document.getElementById('counter-' + modCode);
       if (counterEl) counterEl.textContent = 'Câu ' + (qIdx + 1) + ' / ' + total;
@@ -766,8 +736,6 @@ const fullHTML = `<!DOCTYPE html>
       card.classList.add('answered'); // Triggers reveal of Vietnamese translation (q-text-vi and opt-vi)
 
       const cardIdx = card.getAttribute('data-idx');
-      const modSec = card.closest('.module-section');
-      const modCode = modSec ? modSec.getAttribute('data-modcode') : null;
 
       const options = card.querySelectorAll('.btn-option');
       options.forEach(opt => {
@@ -784,18 +752,6 @@ const fullHTML = `<!DOCTYPE html>
       const conceptBox = card.querySelector('.explain-panel');
       if (ansBox) ansBox.style.display = 'block';
       if (conceptBox) conceptBox.style.display = 'block';
-
-      // Update Question Map Palette Button Color (is-ok / is-bad)
-      if (modCode && cardIdx !== null) {
-        const mapCell = document.getElementById('mapbtn-' + modCode + '-' + cardIdx);
-        if (mapCell) {
-          if (chosenOpt === correctOpt) {
-            mapCell.classList.add('is-ok');
-          } else {
-            mapCell.classList.add('is-bad');
-          }
-        }
-      }
 
       // Update Score Tracker
       scoreTotal++;
