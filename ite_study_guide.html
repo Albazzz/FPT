@@ -98,6 +98,33 @@
       color: #ffffff !important;
     }
 
+    /* Translation Hiding Logic in Quiz Mode: Hide questionVi & optVi until answered */
+    body.quiz-mode .q-text-vi,
+    body.quiz-mode .opt-vi {
+      display: none;
+    }
+
+    /* Reveal translations after selecting an option */
+    body.quiz-mode .card.quiz-card.answered .q-text-vi,
+    body.quiz-mode .card.quiz-card.answered .opt-vi {
+      display: block !important;
+    }
+
+    /* Force show translations when Study Mode or Show VI Always mode is active */
+    body.study-mode .q-text-vi,
+    body.study-mode .opt-vi,
+    body.show-vi-always .q-text-vi,
+    body.show-vi-always .opt-vi {
+      display: block !important;
+    }
+
+    /* Hide translation if user explicitly clicks Hide VI button */
+    body.hidden-vi .q-text-vi,
+    body.hidden-vi .opt-vi,
+    body.hidden-vi .t-vi {
+      display: none !important;
+    }
+
     /* Layout overrides */
     .app-container {
       display: flex;
@@ -216,10 +243,6 @@
     body.study-mode .explain-panel { display: block !important; }
     body.study-mode .btn-option { cursor: default; }
 
-    .hidden-vi .q-text-vi,
-    .hidden-vi .t-vi,
-    .hidden-vi .opt-vi { display: none !important; }
-
     @media (max-width: 900px) {
       .app-container { flex-direction: column; }
       .sidebar { width: 100%; height: auto; position: static; }
@@ -254,7 +277,7 @@
         </button>
 
         <button class="btn-action" id="toggleViBtn">
-          <i class="fa-solid fa-language"></i> <span>Ẩn Dịch Việt</span>
+          <i class="fa-solid fa-language"></i> <span id="viBtnText">Bật Dịch Việt Luôn</span>
         </button>
 
         <button class="btn-action" id="toggleThemeBtn">
@@ -325,7 +348,7 @@
     <main class="main-content" id="mainContent">
       <div class="doc-hero">
         <h1><i class="fa-solid fa-gamepad"></i> ITE302 - Interactive Quiz & Master Study Guide</h1>
-        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT) với giao diện các nút bấm và câu hỏi chuẩn <strong>play.html</strong>. Đọc phần <strong>Lý Thuyết Cốt Lõi</strong> ở đầu mỗi chương để làm trọn vẹn các câu hỏi bên dưới. Nhấp chọn đáp án để kiểm tra kết quả Đúng/Sai, chuyển câu qua <strong>Bản đồ câu hỏi</strong> hoặc nút <strong>Câu trước / Câu tiếp</strong> phía dưới câu hỏi.</p>
+        <p>Bộ ứng dụng trắc nghiệm & học lý thuyết 1060 câu ITE (Đạo đức CNTT). Câu hỏi và phương án mặc định hiển thị Tiếng Anh. Dòng <strong>Dịch Tiếng Việt</strong> sẽ <strong>TỰ ĐỘNG HIỆN RA NGAY SAU KHI BẠN CHỌN XONG ĐÁP ÁN</strong> (hoặc nhấn nút Bật Dịch Việt Luôn trên thanh công cụ).</p>
         <div class="stats-pills">
           <span class="pill"><i class="fa-solid fa-layer-group"></i> 10 Modules Kiến Thức</span>
           <span class="pill"><i class="fa-solid fa-file-circle-check"></i> 600 Câu Hỏi Độc Lập</span>
@@ -36418,7 +36441,7 @@ What kind of data is that?</div>
 
       const card = optElem.closest('.card.quiz-card');
       if (card.classList.contains('answered')) return; // Allow only 1 selection per question
-      card.classList.add('answered');
+      card.classList.add('answered'); // Triggers reveal of Vietnamese translation (q-text-vi and opt-vi)
 
       const cardIdx = card.getAttribute('data-idx');
       const modSec = card.closest('.module-section');
@@ -36510,13 +36533,15 @@ What kind of data is that?</div>
       }
     });
 
-    // Toggle Translation
+    // Toggle Translation Always vs Reveal on Click
     const toggleViBtn = document.getElementById('toggleViBtn');
-    let viVisible = true;
+    const viBtnText = document.getElementById('viBtnText');
+    let showViAlways = false;
+
     toggleViBtn.addEventListener('click', () => {
-      viVisible = !viVisible;
-      document.body.classList.toggle('hidden-vi', !viVisible);
-      toggleViBtn.querySelector('span').textContent = viVisible ? 'Ẩn Dịch Việt' : 'Hiện Dịch Việt';
+      showViAlways = !showViAlways;
+      document.body.classList.toggle('show-vi-always', showViAlways);
+      viBtnText.textContent = showViAlways ? 'Dịch Hiện Sau Khi Chọn' : 'Bật Dịch Việt Luôn';
     });
 
     // Toggle Theme
