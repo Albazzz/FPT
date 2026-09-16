@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 const dir = 'd:/Study/tonghop/quiz/data/hcm202';
-const files = fs.readdirSync(dir).filter(f => f.endsWith('.json') && f !== 'hcm202_index.json' && !f.startsWith('_'));
+const files = fs.readdirSync(dir).filter(f => f.endsWith('.json') && !f.includes('index') && !f.startsWith('_'));
 
 let allQuestions = [];
 
