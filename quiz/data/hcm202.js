@@ -1,7 +1,6 @@
 /**
  * HCM202 — Tư tưởng Hồ Chí Minh
  * 15 Bộ Đề FE từ FuExam.me (Tổng cộng 900 câu)
- * Ảnh đính kèm HD 1920x1108 trực tiếp từ Fuexam Media
  */
 window.QUIZ_DATA = window.QUIZ_DATA || {};
 window.QUIZ_DATA['hcm202'] = [
@@ -2053,9 +2052,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 1: [FA25 FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "nsmal Fngxay dung mannyn shaghag",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "eestion ] Ironacsalneenssdyivava1ha Unoem nsohocuxchravefhchsciannvan hoa? Ensning coohinh lnln \"Ehn hung Vbnhs cun unacun Xay dung duc Innhgchs Exoo",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -2070,9 +2069,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 2: [FA25 FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "lion <",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "hsm Dasino JJoHo Ch Minh ccnatonam nso? {honag nsmal Exoo",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -2087,9 +2086,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 3: [FA25 FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "nsmal",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "oesuion 3 LOslrgkh v chlbetco nergmrh tuvenchoreogmhn chlthsy ccrglo cua m rh maquen cong 60 uanonkhac IhohochMinhbop \"Ehn( hú mhu húnhunkỳ hantlutan Phncchlvas Excon",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -2104,9 +2103,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 4: [FA25 FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "nsmal (oo Phnth S0nJt Luc Umassnws Exoon",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "eestion 4 IhcoHChMinn vanhoab8asa Urhusacuauh Uhucc Yeulonsor KWcenqunn \"Ehn",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -2121,9 +2120,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 5: [FA25 FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "nsmal",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "oestion $ Thco H8 ChMrn chlccrg votla ncu cao chủ ngha toEx sutovinceg hunohi \"Ehn hunghaumua runtilubun hinguaviky Excon",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -2140,8 +2139,8 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "eestion € nauamo suno Fhamrhiroiono] (yg hosrhhoathrgrgayvemac Ova Cuc Tur Exsuar unoonnuload \"Ehnr nsmal ksmhencun Muc dchcuacugsuno rrucwosmnvuIrnfun mugoch chat Ienvasihea uoc s0n9 Exoon",
+      "D": "oodj phap ha HChkrhrgos na Sn930 vanhoc Nhabuy rhhacing"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/38355/full",
@@ -2155,10 +2154,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 7: [FA25 FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "nsmal Fhkngchlocochmang",
       "B": "Phương án B",
       "C": "Phương án C",
-      "D": "Phương án D"
+      "D": "aoorchhmon &chcschmang Exoon"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/38356/full",
@@ -2172,9 +2171,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 8: [FA25 FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "nsmal",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "eestion € 46 ChMnh chornakhnaafmcuamonnennoo hmhnek \"Ehn hungluco tumb huinhmb LXEC",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -2189,10 +2188,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 9: [FA25 FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "nsmal",
+      "B": "uMhniwvousBsmo Dallychbp Mxtbn ToouVui Nan esnachentahanhmomeno tan Mscan TgaxvaKan mrnchrtaohdhamaran TacVu Nam Daful uuna chuyenva csnbo chenslBal dognuusn Irknong Exoon",
+      "C": "cunke ounke Thanh ccro tyhcong hubonhoch Mihongkhulsofhsn naof {honag",
+      "D": "atyhcong cla"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/38358/full",
@@ -2206,10 +2205,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 10: [FA25 FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "nsmal nOc heuvo dunng too Trumvann huu",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "eestion hMgn' rn \"Ehn ochmom Na heuvaxh Exoon",
+      "D": "aulachusamuc daoduc cach mantcna Iu Ivcna"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/38359/full",
@@ -13402,9 +13401,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 1: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Quan đíẽm chinh thẽ",
+      "C": "âu (hooye ngeg Multlple Choico Trong nghiên cúu tu Hồ Chí Minh; cần quán triệt quan điểm nào dưói đây? Quan điểm bộ phận Quan điểm toàn diện",
+      "D": "Quan điẽm toàn cục [aci tuong"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18656/full",
@@ -13416,12 +13415,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 C1FE",
     "num": 2,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 2: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 2: Câu 2 hool ng[ Multlple Choico Cách diễn đạt nào dưói đây là cua Hồ Chí Minh?",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "Lý luận mà không liên hệ với thực tiễn là lý luận mù quáng",
+      "B": "Lý luận mà không liên hệ vói thực tiễn là lý luận suông ach giáo rổng",
+      "C": "Lý luận mà không liên hệ vói thực tiễn là lý luận điều",
+      "D": "Lý luận mà không liên hệ vđi thực tiễn là lý luận trống"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18657/full",
@@ -13436,8 +13435,8 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 3: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "B": "ào chúng ta Xem nưóc Pháp và các nuóc khác dân chu nhu thế nào; tôi sẽ trò về giúp đồng bào Xem nước Pháp và các nước khác văn minh như thẽ nào, tôi sẽ trờ về giúp đồng bào chúng ta Xem nước Pháp và các nưóc khác tỉến bộ như thế nào, tôi sẽ trờ về gỉúp ào chúng ta ICi đông",
+      "C": "âu 3 nool ngeg Multlple Choico Mục đích chính để Hồ Chí Minh muốn ra nưóc ngoài là gi? Xem nước Pháp và các nưôc khác làm như thế nào; tôi sẽ trờ về giúp húng đông",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13454,8 +13453,8 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 4 hoore nger Multlple Choice hủ truơng cầu ngoại vỉện; dùng bạo lực đẽ khôi phục độc lập dân tộc là đường lôi cua nhà yêu nưóc nào? Phan Bội Châu Phan Chu Trinh Hồ Chí Minh",
+      "D": "Hoàng Hoa Thám olin"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18659/full",
@@ -13471,7 +13470,7 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 5 hoore nget Multlple Choice Trong tư Hồ Chí Minh đã tỉẽp thu về hành động; tư tường nhập thế, hành động; gỉúp đời; ưóc vọng về một xã hỗỉ binh tri hoà mực, hoà triêt lý nhân sinh; tu thân duong tính; đề cao văn hoá lễ giáo; tao ra truyền thông hiẽu học từ triẽt lý nào? Phât giáo Nho giáo Chu nghĩa Tam dân giáo ouan tuong đông; ông",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13487,8 +13486,8 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 6: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "B": "Truyền thõng văn hoá dân chu; tỉẽn bộ cua Pháp",
+      "C": "âu 6 Ghooye nger Multlple Choice Tư tuờng văn hoá phương Tây nào sau đây ành hưòng đến sự hinh thành tư tuờng dân chù Hồ Chí Minh trưôc khỉ ngưci ra đỉ tim úu nuôc? Truyền thõng văn hoá dân chu, tiẽn bộ cua Đức hu nghĩa thực chúng Hoa Kỳ Triẽt hoc phuong Tây [ach đưòng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13504,9 +13503,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 7: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "6/1918 6/1919",
+      "C": "âu 7 Ghoode ngeg Multlple Choice Nguyễn Ái Quõc gúi bàn \"Bàn sách cua nhân dân An Nam\" tói Hộỉ nghị Vécxây , đòi chính phù Pháp thừa nhân các quyền tu do, dân chu và binh ua nhân dân Viêt Nam vào thời gian nào? 6/1917",
+      "D": "6/1920 olin yêu ang"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18662/full",
@@ -13518,12 +13517,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 C1FE",
     "num": 8,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 8: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 8: Câu 8 nool ngeg Multlple Choico Trong các luận điểm sau, luận điểm nào là cua Hồ Chí Minh?",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "Vô sàn tất cà các nuóc",
+      "B": "Vô sàn tất cà các nuóc và các dân tộc bị áp bức doàn kết lại",
+      "C": "Vô sàn tất cà các nuớc liên hiệp lại",
+      "D": "oàn kết lại Lao động tất cà các nước, đoàn kết lại [Kach"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18663/full",
@@ -13538,9 +13537,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 9: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "àn thân và dân tộc Truyền thống doàn kết; lạc quan; yêu đời; có niềm tin vào chính nghĩa, tiỉn vào súc mạnh cúa bàn thân và",
+      "C": "âu 9 Ghoode nget Multlple Choice Truyền thống nào của dân tộc Việt Nam là nguồn gõc hinh thành tư Hồ Chí Minh Truyền thõng yêu nưóc , lạc quan; yêu đời; có niềm tin vào chính nghĩa; tin vào súc mạnh cua bàn thân và",
+      "D": "ân tộc Truyền thõng lac quan; yêu đời; có niềm tin vào chính nghĩa, tỉn vào súc mạnh cua bàn thân và dân tộc Truyền thõng nhân nghĩa, thủy chung; lạc quan; yêu đời; có niềm tin vào chính nghĩa, tin vào súc manh cua ân tộc eoun tuòng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18664/full",
@@ -13552,12 +13551,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 C1FE",
     "num": 10,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 10: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 10: Câu 10 Choore ngeg Multlple Choice Nguyễn Tất Thành ờ Anh vào thời gian nào?",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "1911-1912",
+      "B": "1912-1913",
+      "C": "1913-1917",
+      "D": "1911-1915 olan"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18665/full",
@@ -13572,9 +13571,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 11: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Phan Bội Châu",
+      "C": "âu 11 Ghooye ngeg Multlple Choice Theo Hồ Chí Minh; đuờng lối cùa nhà yêu nưóc nào còn \"nặng cốt cách phong kiến\"? Phan Châu Trinh Hoàng Hoa Thám",
+      "D": "Nguyễn Thái Học HICh"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18666/full",
@@ -13589,9 +13588,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 12: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Tù 1920 đến 1930 Từ 1930 đến 1941",
+      "C": "âu 12 Ghoode ngeg Multlple Choice Tư Hồ Chí Minh về cách mạng Việt Nam được hinh thành về cơ bàn trong thời kỳ nào? Từ 1911 đến 1920",
+      "D": "Từ 1930 đến 1945 [aci tưòng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18667/full",
@@ -13605,10 +13604,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 13: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "\"Kè địch nguy hiẽm cua chu nghĩa xã hội\"",
+      "B": "\"Đối lâp vói chu nghĩa xã hội\"",
+      "C": "âu 13 Ghooye ngeg Multlple Choice Theo Hồ Chí Minh; chu nghĩa cá nhân; loi minh hại người, tự do vô tổ chúc, vô kỷ luât và nhũng tính xãu khác được coi là gi? \"Cân loai bò trong chu nghĩa xã hội\"",
+      "D": "\"Không thuộc về chu nghĩa xã hội\" [BoCh"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18668/full",
@@ -13623,8 +13622,8 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 14: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "B": "Hồ Chí Mỉnh đã chi ra độc lập dân tộc là bao gồm cà nộỉ dung dân tộc và dân chú",
+      "C": "âu 14 Ghoode ngeg Multlple Choice Nội dung côt lõi cua tư tưong Hồ Chí Mỉnh về mối quan hệ giũa độc lập dân tộc và chù nghĩa xã hội là gì? Độc lâp dân tôc là co sò, tiền đề đẽ tỉẽn lên chu nghĩa xã hội, chu nghĩa xã hội là điều kỉện đẽ bào đàm nền độc lập dân tộc vũng chắc Độc lâp dân tộc mà dân vẫn không có com ẳn; áo mẳc, không được học hành thì độc lâp đó không cóý nghĩa gi uôc cách mang gỉải phóng dân tộc 0 Viêt Nam ngay từ đầu đã đưoc Hồ Chí Mỉnh xác định đi theo con ách mang vỗ sàn [rBaCh đưòng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13640,8 +13639,8 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 15: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "B": "Giai cấp nhân",
+      "C": "âu 15 hoore ng[ Multlple Choice Theo Hồ Chí Minh; cách mạng giải phóng dân tộc muốn thắng lợi phải do ai lãnh đạo? Đảng Cộng sàn Giai cãp vô sàn ua giai cãp tư sàn oan ông Đảng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13657,9 +13656,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 16: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Là chế độ còn một ít óc lột",
+      "C": "âu 16 hooye ngeg Multlple Cholco Quan đíẽm nào dưới đây thuộc về bàn chất cua CNXH trong tư tường Hồ Chí Minh Là chế độ òn nguời bóc lột nguời Là chế độ người bóc lột bị khinh rè",
+      "D": "Là chế độ người bóc lột được thừa nhận orin không người"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18671/full",
@@ -13671,12 +13670,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 C1FE",
     "num": 17,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 17: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 17: Câu 17 Ghoode ng[ Multlple Choico Hồ Chí Minh vạch ra lực lượng cách mạng phóng dân tộc:",
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "ách mạng là sự nghiệp cua quần chúng bị áp bức ách mạng là sự nghiệp cua công nông ách mạng là sự nghiệp cua mọi",
+      "D": "ân olin gỉài ngưòi"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18672/full",
@@ -13691,8 +13690,8 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 18: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "B": "Phát huy tính tích cực, chu động cua đội ngũ cán bộ, quản lý, kẽ cà các cá nhân đang định cư ò nưóc ngoài",
+      "C": "âu 18 Ghoode ngeg Multlple Choice Đẽ đảm bào thực hỉện thắng Iợỉ chú nghĩa xã hội 0 Việt Nam trong thòỉ kỳ độ, theo Hồ Chí Minh phải làm gi? Gỉũ vũng và tẳng cuòng vai trò lãnh dao cua Đảng; nâng cao vai trò quản lý cua nhà nưôc Giũvũng uờng vai trò quản lý cua Nhà nưóc; xây dựng độỉ ngũ cán bộ đủ đúc và tài Phát huy vai trò làm chù cúa nâng cao vai trò quàn lý cua nhà nưóc [SaCh quá tằng Đàng,",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13705,12 +13704,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 C1FE",
     "num": 19,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 19: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 19: Câu 19 hool ngeg Multlple Choico Hồ Chí Minh là nguời đấu tranh đòi quyền độc lập cho đối tượng nào?",
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "ác dân tộc thuộc địa ờ phương",
+      "D": "ân tộc Việt Nam ân tộc Việt Nam và tãt cà các dân tộc bị áp búc trên thế giói ân tộc thuộc địa ờ uong olan Đông Đông"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18674/full",
@@ -13722,12 +13721,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 C1FE",
     "num": 20,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 20: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 20: Câu 20 hool ngeg Multlple Choico Theo Hồ Chí Minh; lực lượng cua cách mạng phóng dân tộc là:",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "Toàn dân tộc",
+      "B": "nhân và nông dân",
+      "C": "Trí tiêu tư sàn; tư sàn dân tộc, địa chu vừa và nhò ông thúc,",
+      "D": "Tâng lớp trung gian oran giài"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18675/full",
@@ -13742,8 +13741,8 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 21: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "B": "ộ phân cua tâp thẽ Một tế bào cua xã hội Đều là một cá thể trong xã hội Một phần cua tập thẽ [aCh nguòi ,",
+      "C": "âu 21 hoore ngeg Multlple Choice Theo Hồ Chí Minh; chẽ độ xã hội chủ nghĩa là chẽ độ do dân làm chú; thi mỗi con được coi là gì?",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13759,9 +13758,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 22: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Tư liệu sàn xuãt là cua chung",
+      "C": "âu 22 hoode ng[ Multlple Choice Đâu phải là đlẽm giống nhau giũa chủ nghĩa xã hội và chu nghĩa cộng sàn theo Hồ Chí Minh? Sức sàn xuãt phát triẽn dựa trên chẽ độ tư hũu òn giai cấp áp bức bóc lột",
+      "D": "Năng suất lao dộng phát triẽn olin không Không"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18677/full",
@@ -13776,8 +13775,8 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 23: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "B": "Làm trước , nói sau",
+      "C": "âu 23 hool ngeg Multlple Choico Hồ Chí Minh cho rằng mọi Cán bộ; viên phài thực hiện nguyên tắc: Nói đi đôi với làm Nói truớc , làm sau [Bach Đàng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13793,9 +13792,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 24: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "áo cáo chính trị tai Đai hộỉ Đai biễu toàn quõc lần thú Il cua Đảng Đường Cách mệnh [KCh",
+      "C": "âu 24 hoore ng[ Multlple Choice Hồ Chí Minh khằng định: \"Chính vi Đàng Lao dộng Viêt Nam là Đàng cua giai cãp công nhân và nhân dân lao ho nên nó phài là ua dân tôc Vỉêt Nam Luân diẽm này đuoc trich trong tác phẩm nào? Tuyên ngôn độc lập Lời kêu goi toàn quõc kháng chiẽn",
+      "D": "ông Đàng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18679/full",
@@ -13811,7 +13810,7 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 25 (hooye ngeg Multlple Choico Trong tư tưòng Hồ Chí Mỉnh pháp nhân nghĩa được hỉễu như thế nào? Nhà nưóc phải tôn trong; đảm bào thực hiện đầy đu quyền con người, chăm lo đến lọi ích cua mọi nguời Nhà nuóc phài tôn trong quyền tự do cá nhân; vì loi ích cua con người Nhà nưóc phải đảm bào tính nhân văn trong pháp luật; quan tâm đẽn lọỉ ích mỗi nguòi Nhà nưóc phài tôn trong quyền tự do cá nhân vì mục đích nhân văn cao cà olin quyên nhũng 'nhũng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13827,9 +13826,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 26: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "uôn lâu VV Hồ Chí Minh đã căn dặn Nhà nưóc phài dung biện pháp gì đẽ cài tạo; gỉúp họ trò nên nhũng nguời lao động luong thiên? Giáo dục , pháp luật Rẳn de, pháp luât Nhác nhò, trừng phat Giáo duc",
+      "C": "âu 26 hoore ngeg Multlple Choice Trong Dỉ chúc; khi nói về nhũng nan nhân cua chế độ xã hộỉ cũ như trộm cắp gái điếm, cò bạc",
+      "D": "ao dúc Hac ngưỞi"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18681/full",
@@ -13845,7 +13844,7 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 27 Ghoode ngeg Multlple Choice Nội dung nào không vóỉ bàn chất giai cấp nhân cua nhà nuóc theo tu Hồ Chi Minh? Nhà nước do Đảng Cộng sàn lãnh đạo Tính định hướng xã hội chu nghĩa cua sự phát triẽn đất nước Nguyên tắc tổ chức và hoat dộng co bản cua nó là nguyên tắc tâp trung dân chú Nhà nưóc duói su lãnh dao cua Quôc hội olin đúng ông tuong",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13861,9 +13860,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 28: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Độc lập dân tộc gắn liền chu nghĩa xã hội",
+      "C": "âu 28 hoode ng Multlple Choico Một trong nội dung chính trong thực hiện cách mạng nuóc ta hiện nay là gì? Độc lập dân tộc gắn liền vói bào vệ chu quyền ông",
+      "D": "ân tộc giài phóng; cách mạng thành ân tộc và giai cấp olin nhũng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18683/full",
@@ -13875,11 +13874,11 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 C1FE",
     "num": 29,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 29: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 29: Câu 29 Ghoode nger Multlple Choico Hồ Chí Minh nhãn mạnh tầm quan trọng cua mặt trận như sau:",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "A": "Mặt trận là khối đoàn kết chặt chẽ, lâu dài, thật sự, chân thành",
+      "B": "Mặt trận là khối đoàn kết chặt chẽ, lâu dài, thật sự, chân chính",
+      "C": "Mặt trận là khối đoàn kết chặt chẽ, lâu dài, thật sự, chân thực [PKoch",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13892,11 +13891,11 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 C1FE",
     "num": 30,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 30: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 30: Câu 30 hool ng Multlple Choico Hồ Chí Minh cho rằng; nhà nuóc cùa dân; do dân và vì dân phài   nhu thế nào?",
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "ó hiệu lực pháp lý manh mẽ ó hiệu lực pháp lý toàn diện ó hiệu lực pháp lý chân chính ó hiệu lực pháp lý hiệu quà ouin",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13909,12 +13908,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 C1FE",
     "num": 31,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 31: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 31: Câu 31 Ghooye ngeg Multlple Choico Theo Hồ Chí Minh, vai trò cua nhân dân là gì?",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Khách thể cua lực",
+      "C": "hù thể cua lực Nguồn gốc cua lực",
+      "D": "Súc manh cua quyền lực elor quyền quyền quyền"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18686/full",
@@ -13928,10 +13927,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 32: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "Xác định nhiệm vụ cua Đảng",
+      "B": "Xác định bàn chất của Đảng",
+      "C": "âu 32 hoode ng[ Multlple Choice Theo tu Hồ Chí Minh; luận điẽm Đảng Cộng sản Việt Nam là sàn phẩm cua sự kẽt giũa chu nghĩa Mác-Lênin vổi phong trào công nhân và phong trào yêu nưôc là xác định nộỉ dung nào trong các nội dung sau Xác định nguồn gốc ra đời cúa Đàng",
+      "D": "ây? Xác định năng lực cua Đảng [Sach tưóng hop"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18687/full",
@@ -13946,9 +13945,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 33: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Đàng sàn",
+      "C": "âu 33 (hooye ngeg Multlple Choico Theo Hồ Chí Minh; dâu là lực lãnh đạo Măt trân dân tộc nhất? Nhà nuóc hính phù ông",
+      "D": "Quốc hội [Bach luong thống"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18688/full",
@@ -13962,9 +13961,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 34: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "A": "Lần thú |",
+      "B": "iễu toàn quỗc lần thú mãy? Lần thú II Lần thú III Lần thú IV eoun",
+      "C": "âu 34 hoore ngeg Multlple Choice \"Tinh thần yêu nuóc chân chính khác hẳn với tinh thần 'vị quõc\" cua bon đế quõc phàn đông. Nó là môt bô phận cua tinh thần quõc t6 là câu nói được Hồ Chí Minh khẳng định trong Báo cáo chính trị cúa Đại hội đại",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -13981,8 +13980,8 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 35 hoore ngeg Multlple Choice Đỗi vđỉ Hồ Chí Minh; toàn dân tôc chi trò thành lực lượng to lón; có súc manh vô đich khỉ đươc tâp hợp; tổ húc lại thành một khối vũng chắc, được giác ngộ về mục tiêu chiến đấu chung và hoat động theo: Một Đảng chính trị đúng đắn Môt lõi chính trị đúng đắn Một tổ chức chính trị đúng đắn olin",
+      "D": "uòng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18690/full",
@@ -13994,12 +13993,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 C1FE",
     "num": 36,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 36: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 36: Câu 36 hoode nger Multlple Cholco Trong Mặt trân dân tộc nhãt, sàn đóng vai trò là gì?",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "Thành viên cua Mặt trận dân tộc nhất",
+      "B": "Lực lượng lãnh dạo Mặt trận dân tộc nhất",
+      "C": "Vùa là thành viên; vừa là lực luợng lãnh đạo Mặt trận dân tộc nhất ông thống thống thống ông thống",
+      "D": "Đại biểu cua giai cấp nhân trong Mặt trận dân tộc nhất [SaCh thống Đàng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18691/full",
@@ -14014,9 +14013,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 37: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Phụng sự cách mạng",
+      "C": "âu 37 Ghooye ngeg Multlple Choico Hồ Chí Minh cho rằng đoàn kết toàn dân để làm gì? Phụng sự nhân dân Phụng sự tổ quốc",
+      "D": "Phụng sựxã hội [FBcn"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18692/full",
@@ -14031,9 +14030,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 38: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "ỉến thành tu tưong Đoàn kết",
+      "C": "âu 38 Ghoode ngeg Multlple Choico Hồ Chí Minh luu ý Đảng về vấn đề đại đoàn kết toàn dân tộc qua luân điẽm nào? Đoàn kết hi nẳm ò chù trưong; lối, chính sách mà phài biến thành súc manh Đoàn kết không chi nằm 0 chù trưong; đường lối, chính sách mà hi nằm 0 chù truong; đuờng lối mà phài biến thành chính sách Đoàn kết hi nằm ờ khẩu hiệu; tuyên truyền mà phài là tư tu olin thông không đưòng phải không không",
+      "D": "uy , tuong"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18693/full",
@@ -14049,8 +14048,8 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 39 nool ngeg Multlple Choico Hồ Chí Minh cho rằng phát triển giáo dục để làm gì? Nâng cao dân trí huẩn bị nhân tài Phát triẽn lâu dài",
+      "D": "Mục tiêu bền oran vũng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18694/full",
@@ -14065,8 +14064,8 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 40: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "B": "Chu nghia dân tộc chân chính",
+      "C": "âu 40 hoore ngeg Multlple Choice Hãy chon phưong án trà lời đúng nhất: Lòng khoan dung độ lượng 0 Hồ Chí Minh không phài là một sách lược nhãt thờỉ, một thù đoan chính trị, mà là sự nỗi và phát triẽn cua điều gi? hu nghĩa nuóc Truyền thõng nhân ái, bao dung cua dân tộc Mục tiêu cách mạng elou tẽp yêu",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14082,8 +14081,8 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 41: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "B": "Ici",
+      "C": "âu 41 nool ngeg Multlple Choico Đâu là nguyên tắc đoàn kết quõc tế trong tư tưòng Hồ Chí Minh? Đoàn kết trên co sờ thõng nhất mục tiêu và lợi ích, có lý, có tinh Đoàn kết trên co sò thõng nhất mục tỉêu độc lập cua dân tộc mình và mục tiêu cùa nhân loai Đoàn kết trên cơ sờ thống nhất mục tiêu và mục đích; có lý, có tinh Đoàn kết trên cơ sò thống nhất lợi ích và chú nghĩa dân tộc",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14151,8 +14150,8 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 45 hoore ng[ Multlple Choice Theo quan điẽm cua Hồ Chí Minh; nội dung xây dựng con người cần quan tâm xây dựng con người toàn diện nhu thế nào? Vừa \"hồng\" vừa \"chuyên\" Vừa \"chuyên\" vừa \"cân\" Vừa ần\" vừa \"kiêm'",
+      "D": "Vừa \"kiêm\" vừa \"liêm\" olin"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18700/full",
@@ -14168,7 +14167,7 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 46 hoore ngeg Multlple Choice Hồ Chí Minh cho rằng: \"Vi loài ngưòi mđi sáng tao và minh ra ngôn ngũ; chữ vỉết; dao đúc, pháp luât khoa hoc tôn giáo; vẳn hoc  nghê thuât, nhũng u cho sinh hoat ngày về mẳc, ăn; ờ và các phuong thức sừ dụng\" . Từ nào còn thiếu trong dấu lẽ sinh tồn cũng như mục dích cua cuộc sõng nhu cầu đòi sõng và tinh thần mục đích phát triền và sinh tồn uôc sống eloui phát ông hang",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14184,9 +14183,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 47: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Một chiến dịch dể chống nan mù chữ Một chiến dịch xây dựng đòi sõng móỉ Một chiến dịch xây dựng nền văn hóa mới [Sach",
+      "C": "âu 47 nooy ngeg Multlple Choice Trong nhũng nhỉệm vu cãp bách cua Nhà nưôc Viêt Nam Dân chu công hòa, khỉ nói về vấn đề thú hai nan",
+      "D": "ôt, Hồ Chí Minh đã đề nghị mờ một chiẽn dịch gi? Một chỉẽn dịch tuyên truyền nền giáo duc mói"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18702/full",
@@ -14201,9 +14200,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 48: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Phài tu dưỡng đạo đức thường xuyên",
+      "C": "âu 48 hool ng Multlple Cholco Đâu là nguyên tắc xây dựng đạo đức mới trong tư Hồ Chí Minh? Phài tu duõng đạo đức suốt đời Phài tu dưỡng đạo đức ngày",
+      "D": "Phài tu dưỡng đạo đức liên tục S0Ch tuòng hàng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18703/full",
@@ -14219,7 +14218,7 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 49 hoode ngeg Multlple Choice Hồ Chi Minh cho phong trào công sán công nhân quôc tế trò thành luc lượng quyết định vân mệnh cua loài người không chi do chiẽn lưoc và sach lưoc thiên tài cua cách mang vổ sàn, mà còn do điều gì? Những phẩm chất đạo đức cao quý làm cho chu nghĩa cộng sản trờ thành một sức mạnh vô địch Vũ khí, dan duoc hỉện dai làm cho chú nghia công sàn trờ thành môt súc manh vô địch Khoa học, kỹ thuật tiên tiẽn làm cho chú nghĩa cộng sản trờ thành một sức mạnh vô địch Mục tỉêu nâng cao dân trí cua vẳn hóa làm cho chu nghĩa công sán trò thành súc mạnh to Ión [Kch rằng,",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14234,10 +14233,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 50: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "Đảng; cho cách mạng Nhà nưóc, cho cách mang",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 50 hoore ngeg Multlple Choice Theo Hồ Chí Minh; trung với nưóc là tuyêt đối trung thành vói sự nghỉệp dựng nưóc và gỉũ nưóc ; trung thành vói on đường đi lên cua đất nưóc; là suôt đời phấn đãu cho ai? ách mang; quần [B@Ch húng",
+      "D": "ân tôc, cho cách mang"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18705/full",
@@ -14253,7 +14252,7 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 51 hool ngeg Multlple Cholce ác quan điẽm dưói đây , đâu là quan điẽm cua Hồ Chí Minh? Văn hoá ngang vói các lĩnh vực khác, có mối quan hệ với các lĩnh vực khác Văn hoá không như lĩnh vực khác, có mối quan hệ vói các lĩnh vực khác Văn hoá là mọi lĩnh vực có mối quan hệ ngang Văn hóa ngang vói các lĩnh vuc khác không có môi quan hệ vói các lĩnh vực khác ouan Trong hàng hàng hàng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14269,9 +14268,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 52: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Trào lưu tiẽn hoá cua thời đai Trào luu tiến hoá cua khoa học kỹ thuật",
+      "C": "âu 52 hoore ngeg Multlple Choice Theo Hồ Chi Mỉnh; tính khoa học cua nền vẳn hóa mđi thẽ hiện ò tính hỉện dạỉ, tỉến tỉến, thuận vói đều gi? Trào luu tiến hoá cua dân tôc",
+      "D": "Trào lưu tiến hoá cua vẳn học nghệ thuât eloun"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18707/full",
@@ -14283,12 +14282,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 C1FE",
     "num": 53,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 53: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 53: Câu 53 hool ng Multlple Cholco Khi nói về Hồ Chí Minh; báo Uruquay viết:",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "người có tinh càm bao la như vũ và tinh yêu trè thơ vô bờ bến",
+      "C": "ó một trái tim bao la như vũ trụ và tình yêu trè thơ vô bờ bến ó một trái tim như vũ trụ và tinh yêu trè thơ vô bờ bến",
+      "D": "là người có tinh càm bao la và trái tim yêu thương trè thơ vô bờ bến olin Õng= Ông tru Ông Ông '"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18708/full",
@@ -14302,10 +14301,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 54: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "Văn hoá tham gia vào nhiêm vụ các hoạt kinh tế, chính trị, xã hội và trong hoạt động cua kinh tẽ;",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 54 nool ngeg Multlple Choico Đâu là phuong án chính xác nhất và đầy đu nhất theo quan điẽm Hồ Chí Minh về văn hóa? hính trị, xã hộỉ cũng phải có văn hoá Văn hoá tham gia vào nhiêm vu các hoat kinh tẽ, chính tri, xã hôi và trong hoat đông cua kinh tẽ, hính tri, xã hội cũng phài có dao đúc Văn hoá tham gia vào nhỉệm vụ các hoat động kỉnh tế, chính trị; xã hội và trong hoat động cua kinh tế, hính tri; xã hội cũng phài có tinh thần cách mang Văn hóa tham gia vào nhỉệm vụ các hoạt động kinh tế, xã hội và trong hoạt động cua kinh tế, chính trị; xã hộỉ cũng phài có tinh thần quõc tế [sach",
+      "D": "ông ông"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18709/full",
@@ -14321,7 +14320,7 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 55 Ghooye ngeg Multlple Choico Theo Hồ Chí Minh, không moi con nguòi đều trò thành động lực, mà phài là những con ngưòi như thế nào? Đươc gỉác ngộ và tổ chúc ó dao dức ó nẳng lực ó trinh độ và hiẽu biết ouan phảỉ",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14334,12 +14333,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 C1FE",
     "num": 56,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 56: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 56: Câu 56 nool ngeg Multlple Choico Hãy điền từ còn thiếu trong câu duói đây Theo Hồ Chí Minh, \"Muốn xây dựng chu nghĩa xã hội, truớc hết cần có",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "khoa học kỹ thuật tiên tiến\"",
+      "C": "on người xã hội chù nông nghiệp hiện đại\" ông;",
+      "D": "nền kinh tế phát triển\" [rBaCh nghĩa\""
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18711/full",
@@ -14354,9 +14353,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 57: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Sức mạnh, sức hấp dẫn cua chu nghĩa Mác-Lênin",
+      "C": "âu 57 hool ngeg Multlple Choico Theo Hồ Chí Minh, đao đức là nhân tố tao nên điều gì? Súc mạnh; sức hấp dẫn cua chu nghĩa xã hội Súc mạnh; súc hấp dẫn cua tu tường Hồ Chí Minh",
+      "D": "Sức mạnh, sức hấp dẩn cua tinh thần dân tộc oran]"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18712/full",
@@ -14371,9 +14370,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 58: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Yêu Tổ quõc, yêu nhân dân; yêu chu nghĩa xã hội Yêu Tổ quõc, yêu nhân dân;, yêu chu nghĩa xã hội, yêu lao Yêu Tổ quõc , yêu nhân dân; yêu chu nghĩa xã hội, yêu lao yêu khoa học và kỷ luât Kc nhũng phẩm động",
+      "C": "âu 58 hoode ngeg Multlple Choice hon phưong án chính xác nhất: Trong Bài nóỉ tai Đai hôi sinh viên Việt Nam lần thú hai (7-5-1958) , Hồ Chí Minh đã xác dịnh hãt cho thanh niên, sinh viên Việt Nam là Yêu Tổ quõc, yêu nhân dân",
+      "D": "ông `"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18713/full",
@@ -14389,7 +14388,7 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 59 Ghoode ngeg Multlple Choice Theo Hồ Chí Minh; sau khi hoàn thành binh định Việt Nam về măt quân sự và bắt tay vào khai thác thuôc địa thực dân Pháp đã bỉẽn nước ta từ môt nưóc phong kỉẽn thành nuôc như thẽ nào? Thuôc đia và phong kiến Phong kỉẽn nừa thuộc địa Phong kỉẽn tâp quyền Phong kiẽn phân quyền MICh",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14405,9 +14404,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 60: [SU26 C1FE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "inh dẳng ác ái cua Đai Cách mang Pháp từ khi nào? Hoc sinh tiẽu hoc Hoc sinh Quỗc hoc Huế Thầy giáo học ờ trường Dục Thanh Khi đặt chân đến nuóc Pháp ouin truòng",
+      "C": "âu 60 Ghooye ngeg Multlple Choico Hồ Chí Minh bắt dầu quan tâm đến khẩu hiệu \"Tự do",
+      "D": "ay"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18715/full",
@@ -14419,12 +14418,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 1,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 1: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 1: Câu hoode  Multlple  Trong tư tường Hồ Chí Minh về cách mạng Việt Nam được xem là gì?",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "Hệ thống các quan điểm cụ thể về cách mạng Việt Nam",
+      "B": "Một nhóm các quan điểm cụ thể về cách mạng Việt Nam",
+      "C": "âu ree[ Multlple Choice Trong tư tường Hồ Chí Minh về cách mạng Việt Nam được xem là gì? Hệ ác quan điểm cụ thẽ về cách mạng Việt Nam Một hệ ác học thuyết về cách mạng Việt Nam",
+      "D": "Một hệ quan điểm toàn diện và sâu sắc về cách mạng Việt Nam"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18896/full",
@@ -14436,12 +14435,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 2,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 2: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 2: hoode  [ Multlple  Khái nỉệm tu tuòng Hồ Chí Minh mà Đai hội IX (2001) nêu lên KHÔNG bao gồm nội dung nào sau đây?",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "ao gồm nội dung nào sau đây? ản chãt cách mang và khoa học cua tư tưởng Hồ Chí Minh Nguồn gõc tư tuờng; lý luân cua tư tuòng Hồ Chí Minh Nội dung tư tuòng Hồ Chí Minh",
+      "C": "âu 2 ree [ Multlple Choice Khái nỉệm tu tuòng Hồ Chí Minh mà Đai hội IX (2001) nêu lên KHÔNG",
+      "D": "Kết cãu tư tưởng Hồ Chí Minh EXOC"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18897/full",
@@ -14453,12 +14452,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 3,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 3: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 3: Multlple Choice Vận dụng tư tường Hồ Chí Minh cần phài nắm quan điểm nào?",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "Quan đíểm lịch sừ thế giói",
+      "B": "Quan điểm lịch sừ Việt Nam",
+      "C": "Quan đíểm lịch sừ cụ thể",
+      "D": "Quan điểm phát triển EXQT vững"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18898/full",
@@ -14470,12 +14469,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 4,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 4: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 4: Câu 4 Một trong những yêu cầu co bàn trong nghiên cứu tư tuờng Hồ Chí Minh là",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "Multlple Choice Một trong những yêu cầu co bàn trong nghiên cứu tư Hồ Chí Minh là gì? Đàm bào thống nhất nguyên tắc tính và tính khoa học",
+      "B": "Đàm bào nhất tính thực chúng và lý",
+      "C": "âu 4 Đàm bào nhất giữa khoa học và thực tiễn",
+      "D": "Đàm bào tính thực chứng và khoa học EXO tuong giũa ang uy"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18899/full",
@@ -14487,12 +14486,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 5,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 5: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 5: Câu 5 Nguyên tắc cơ bàn nào sau đây cần phài quán triệt trong nghiên cúu tu Hồ Chí Minh?",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "Multlple Choice Nguyên tắc cơ bàn nào sau đây cần phài quán triệt trong nghiên cúu tư Hồ Chí Minh? Quan điểm kế thừa và phát triẽn Quan điểm kế thừa và toàn diện",
+      "B": "Quan đíểm kế thừa và toàn diện",
+      "C": "âu 5 Quan điểm cách mạng và cụ thẽ",
+      "D": "Quan điểm toàn diện và phát triẽn EXE tuong"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18900/full",
@@ -14504,12 +14503,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 6,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 6: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 6: Câu 6 Khi so sánh về bàn chất cua Nhật và Pháp; Hồ chí Minh nhận định nhu thế nào?",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Khác nhau",
+      "C": "âu 6 hoode ree [ Multlple Choice Khi so sánh về bàn chãt cua Nhật và Pháp; Hồ chí Minh nhận định nhu thế nào? hẳng khác gì nhau Rất đặc biệt",
+      "D": "Giống nhau EXQ"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18901/full",
@@ -14521,11 +14520,11 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 7,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 7: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 7: Báo Le Paria (Nguời Cùng khố) do Nguyễn Ái Quốc sáng lập, ra số đầu tiên khi nào? c 30/12/1920 1/4/1921 1/4/1922 1/4/1923 đông",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "B": "áo Le Paria (Người khổ) do Nguyễn Ái Quõc sáng lập, ra số đầu tiên khi nào? 30/12/1920 1/4/1921 1/4/1922 1/4/1923 EXT",
+      "C": "âu 7 hoode ree [ Multlple Choice ùng đông",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14538,12 +14537,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 8,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 8: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 8: Câu 8 hoode ree [ Multlple Choice Nguyễn Tất Thành ờ Mỹ vào khoàng thời gian nào?",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "1911-1912",
+      "B": "1912-1913",
+      "C": "1914-1917",
+      "D": "1911-1915 EXET"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18903/full",
@@ -14557,10 +14556,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 9: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "nee Multlple Choice",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 9 hoode hu nghĩa nào sau đây ành đến sự hình thành tư tường Hồ Chí Minh? hu nghĩa dân tộc cua Grady hu nghĩa hu nghĩa tam dân chu Tôn Trung Sơn hù nghia dân tộc hẹp hòi EXC huờng",
+      "D": "ân chu cua Kenedy"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18904/full",
@@ -14572,12 +14571,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 10,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 10: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 10: Câu 10 hoode ree [ Multlple Choice Tiền đề tư tuòng; lí luận dẫn đến sự hình thành tu tuòng Hồ Chí Minh là gì?",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "Giá trị truyền văn hiến Việt Nam",
+      "B": "Giá trị truyền văn hóa Việt Nam",
+      "C": "Giá trị tư tuờng Việt Nam",
+      "D": "Giá trị truyền lễ tiết cua Việt Nam EXT thống thống thống"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18905/full",
@@ -14591,10 +14590,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 11: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "neeg Multlple Choice Hồ Chí Minh mất bao nhiêu năm bôn ba nuóc ngoài để tim",
+      "B": "25 năm",
+      "C": "âu 11 hoode úu nuóc? 10 năm 30 năm",
+      "D": "35 năm EXQ đuờng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18906/full",
@@ -14608,9 +14607,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 12: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "A": "neet Multlple Choice Theo Hồ Chí Minh, ưu điểm Ión nhất cua chu nghĩa Mác là gì?",
+      "B": "àn chất cách mạng àn chất khoa học EXQG",
+      "C": "âu 12 hoode hu nghĩa nhân đạo triệt để Phương pháp làm việc biện chúng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14627,8 +14626,8 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 13 hoode re[ Multlple Choice Hồ Chí Minh được coi là linh hồn cua cuộc hiến Pháp trong đoan nào? 1946 - 1954 1945 - 1954 1930 - 1945 hống giai",
+      "D": "1939 1945 EXOG kháng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18908/full",
@@ -14642,10 +14641,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 14: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "neet Multlple Choice \"Luận cuong cua VI. Lênin làm cho tôi rất càm động; phấn khòi, sáng tò, tin tưong bỉêt bao.  Tôi vui mừng đến phát khóc lên. Ngồi một minh trong buồng mà tôi nói to lên như đang nói truóc quân chúng đông đào: hõỉ nh Trung Quõc",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 14 hoode Pháp",
+      "D": "ồng bào bị đọa đày đau khổ! là cái cần thiết cho chúng ta, đây là con đường giài phóng chúng ta\" Nguyễn Ải Quõc nói câu ấy khi dang ò đâu? Liên Xô EXEC Đây"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18909/full",
@@ -14660,9 +14659,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 15: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Sự yêu thương và vị tha",
+      "C": "âu 15 hoode ree [ Multlple Choice ụ Hoàng Thị Loan đã có đức tính gì ành hường tói Hồ Chí Minh? Lòng nhân hậu và mẫn càm Tân tào và đàm",
+      "D": "Từ bi và vị tha EXEC ang"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18910/full",
@@ -14676,9 +14675,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 16: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "neet Multlple Choice Quan điểm nào duói đây thuộc về bàn chất cùa chủ nghĩa xã hội trong tư tuòng Hồ Chí Minh?",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 16 hoode hế độ chính trị do nhân dân làm chú hế độ chính trị do nhân dân sáng tạo hế độ chính trị do nhà nưóc làm chu hế độ chính trị do làm chù EXTI Đàng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14695,8 +14694,8 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 17 hool ree [ Multlple Choice Hồ Chí Minh cho phóng dân tộc phài gắn liền với: Độc lập; tự do và hạnh phúc Nhân sinh và hạnh phúc EXOC rằng giài",
+      "D": "ân quyền và tự do"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18912/full",
@@ -14708,11 +14707,11 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 18,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 18: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 18: Câu 18 hoode ree [ Multlple Choice Theo Hồ Chí Minh, trong thời kỳ quá độ còn tồn tại hình thức:",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "A": "Sò hữu cùa nhà nuóc và sờ hữu cua hợp tác xã",
+      "B": "Sờ hữu cua người lao động lè và sờ hữu cua nhà tư bàn",
+      "C": "Tất cà các phuong án EXEC riêng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14729,7 +14728,7 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 19 hoode ree [ Multlple Choice Hồ Chí Mỉnh gỉài quyết như thế nào về mối quan hệ gỉũa vấn đề giai cấp và dân tôc? Phài kết hợp nhuần nhuyễn dân tộc vói giai cãp; độc lập dân tộc và chu nghĩa xã hội, chu nghĩa yêu nưóc vói chu nghia quôc tẽ Phài kết hợp nhuần nhuyễn dân tộc vđi giai cãp; độc lập dân tộc và chu nghĩa xã hội, chu nghĩa yêu nưôc vói chú nghia nhân văn Phải kết nhuần nhuyễn dân tộc vđi giai cãp; dôc lâp dân tôc và chu nghĩa xã hội, chu nghĩa yêu nưôc vói chú nghĩa nhân dao Phài kết hợp nhuần nhuyễn gỉũa giai cãp với dân tộc, chu nghĩa xã hôi và độc lâp dân tộc, chu nghĩa yêu nưóc và chu nghĩa quõc tế dai dỗng EXT hơp",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14744,9 +14743,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 20: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "Sự ra đời cua CNXH ò Việt Nam là sàn phẩm tất yẽu cua quá trinh phát triẽn lịch sù, quá trinh cách mạng Việt Nam Su ra đòi cua CNXH ò Viêt Nam là sản phẩm tẫt yếu cua trinh phát triẽn lịch su, quá trinh cách mang thế giói Sự ra đờị cua CNXH 0 Việt Nam là sán phẩm tất yếu cua quá trinh phát triẽn lịch su; quá trinh cách mang Đông Nam Á Sự ra đời cua CNXH 0 Việt Nam là sàn phẩm tất un quá yếu",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 20 hoode ree[ Multlple Choice Hồ Chí Minh cho rẳng sự ra đời cua chu nghĩa xã hộỉ 0 Việt Nam có ý nghĩa như thế nào? ủa quá trinh phát triẽn lịch su, quá trinh cách mạng hâu Á",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14762,9 +14761,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 21: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Vấn đề dân tộc và vấn đề giai cấp là quan hệ kinh tế",
+      "C": "âu 21 hoode nee[ Multlple Choice Đâu là câu trà lời chính xác nhãt trong tư tưởng Hồ Chí Minh về vấn đề dân tộc? Vãn đề dân tộc và vấn đề giai cãp là quan hệ chính trị Vấn đề dân tộc và vấn đề giai cấp là quan hệ thể hiện trong mọi mặt cua xã hội",
+      "D": "Vấn đề dân tộc và vấn đề giai cấp là quan hệ văn hoá EXE"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18916/full",
@@ -14778,9 +14777,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 22: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
+      "A": "neet Multlple Choice Phải kết hợp nhuần nhuyễn dân tôc vói giai cãp; dộc lập dân tộc và chu nghĩa xã hôi, chu nghĩa yêu nưóc vói",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 22 hoode hu nghĩa quỗc tẽ. Quan đ1ểm trên thuôc nôi dung gi trong trong tu tuòng Hồ Chí Minh? Tư tưong Hồ Chí Minh về vấn đề dân tộc Tu 'tuởng Hồ Chí Minh về vãn đề giai cãp Tư tường Hồ Chí Minh về doàn kết quõc tế Tư tường Hồ Chí Minh về chu nghĩa xã hội EXEC",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14795,10 +14794,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 23: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "neet Multlple Choice Theo Hồ Chí Minh; tính chất và nhiệm vụ đầu cùa cách mạng ò thuộc địa là gì? Giài phóng dân tộc",
+      "B": "Giài phóng thế",
+      "C": "âu 23 hoode Giài phóng nhân loai",
+      "D": "Giài phóng giai cấp EXT hàng giói"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18918/full",
@@ -14812,10 +14811,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 24: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "neet Multlple Choice Quá độ lên chu nghĩa xã hội theo Hồ Chí Minh là gì? Xóa bò toàn bộ những thành tựu cua xã hội cũ",
+      "B": "Kế thừa toàn bộ những gì xã hội cũ để lại",
+      "C": "âu 24 hoode Kế thừa những giá trị cua xã hội cũ",
+      "D": "Xóa bò một vài giá trị cua xã hội cũ EXOT"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18919/full",
@@ -14829,10 +14828,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 25: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "nee[ Mulllple Choice Theo Hồ Chí Minh;, cách làm trong xây dựng xã hội mói là: Tranh thù tối đa sự giúp đỡ, viện trợ quôc tế",
+      "B": "Đem cua dân; tài sức dân làm lợi cho dân",
+      "C": "âu 25 hool Kết hợp cài tạo xã hội cũ với xây xã hội mới",
+      "D": "Kết hợp xây và bào vệ đất nuóc Exoo ân;, ựng ựng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18920/full",
@@ -14844,11 +14843,11 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 26,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 26: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 26: Câu 26 hoode aneet Multlple Choice Hồ Chí Minh nhắc cán bộ nhà nuớc phài như thế nào?",
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "ó mối liên hệ mật thiết vói đại diện cua nhân dân ó mối liên hệ mật thiết vói giai cãp minh ó mối liên hệ mật thiết với chính quyền ó mối liên hệ mật thiết với nhân dân Edun",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14865,8 +14864,8 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 27 hoode neet Multlple Choice Đâu là quan đíẽm cua Hồ Chí Minh về xây dựng nhà nưóc có hỉệu lực pháp lý mạnh mẽ? Hoat quàn lý nhà nưóc bẳng Hiến pháp và pháp luật, chú trong đua pháp luật vào cuộc sống Hoat quàn lý nhà nưóc bằng Hiẽn pháp và pháp luât; chú trong đưa pháp luât vào thuc tiễn Hoạt động quàn lý nhà nưôc bẳng Hiẽn pháp và pháp luật; chú trong đưa pháp luật vào xã hội Hoat động quàn lý nhà nuóc bằng Hiến pháp và pháp luật; chú trong đua pháp luật vào đòi sõng kinh tế Exoon động",
+      "D": "ông"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18922/full",
@@ -14880,9 +14879,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 28: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "A": "i?",
+      "B": "Ph",
+      "C": "âu 28 hoode ree [ Multlple Choice Luân điẽm \"Không có sự dồng tinh hô cua đai da số nhân dân lao động đối vói đôi tiền phong cua minh túc là đối vói giai cấp vô sàn; thi cách mạng vô sàn thể thực hiên đuoc\" là Mác VI Lênin Hồ Chí Minh EXEC ung không úa Ăngghen",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14898,8 +14897,8 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 29: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "B": "ãt kỳ ai vi phạm pháp luât đều bị trị nghiêm khắc, nguời, tội. Exoon đúng Tẳng ngưòi phải",
+      "C": "âu 29 hoode nee[ Multlple Choice Nội dung nào không đúng vói tư tuờng Hồ Chí Minh trong việc thực thi Hiến pháp và pháp luât? Pháp luât phài và phài đù ường tuyên truyền; giáo dục pháp luật cho ao tuổi Người thực thi luât pháp thât su tâm và nghiêm minh ông ũng trừng đúng đúng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14914,9 +14913,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 30: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "A": "neet Multlple Choice Luận điẽm: \"Cách mệnh truóc hết phải có cái gì? Truóc hết phài có đảng cách mệnh; đẽ trong thì vận đông và tổ chúc dân chúng. ngoài thì liên lạc vói dân tộc bị áp búc và vô sàn giai cãp 0 mọỉ noi. Đàng có thi cách mang mói thành công, cũng nhu nguòi cầm lái có vũng thuyền mói chạy\" được trích từ tác phẩm nào cua Hồ",
+      "B": "ản án chế dộ thực dân Pháp kách mênh",
+      "C": "âu 30 hoode hí Mỉnh? on rồng tre Thuờng thức chính trị EXECn vũng Đuòng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14932,9 +14931,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 31: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Nhà nước phài phụng sự giai cấp cầm quyền",
+      "C": "âu 31 hoode ree [ Multlple Choice Theo Hồ Chí Minh, nhà nuóc vì dân là nhà nuóc nhu thế nào? Nhà nước phài phụng sự nhân dân Nhà nưóc phài phụng sự sàn ông ông",
+      "D": "Nhà nưóc phài phụng sự giai cấp nhân EXC Đảng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18926/full",
@@ -14950,7 +14949,7 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 32 hool ree [ Multlple Choice Hồ Chí Minh nhãn manh vấn đề nào sau đây trong quan hệ giũa cán bộ nhà nưóc vói nhân dân? Kính trong nhân dân Tự tôn dân tộc Nghiêm khắc Phuc EXOT tùng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -14963,12 +14962,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 33,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 33: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 33: Câu 33 hoode aneet Multlple Choice Quan đíểm nào sau đây là tư cách Đàng viên theo tư Hồ Chí Minh?",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "Đặt lợi ích cua Đàng; cua con người lên trên hết",
+      "B": "Đặt lợi ích cua Đảng; cua nhân dân lên trên hết",
+      "C": "Đặt lợi ích cua Đàng; cua giai cấp cầm quyền lên truớc hết",
+      "D": "Đặt lợi ích cua Đàng, cua các giai tầng trong xã hội lên truớc hết Enoun tuong"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18928/full",
@@ -14982,10 +14981,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 34: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "neet Multlple Choice Đâu là đáp án chính xác nhất đĩền vào chỗ trống? Theo Hồ Chí Minh \"Tất cà trong nước là cua toàn thể nhân dân Việt Nam\" ? Quyền bính",
+      "B": "Quyền binh",
+      "C": "âu 34 hoode Quyền lực",
+      "D": "Quyền hành EXT"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18929/full",
@@ -14997,12 +14996,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 35,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 35: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 35: Câu 35 hoode ree [ Multlple Choice Theo quan điểm Hồ Chí Minh; khái quát dân chu có ý nghĩa là gì?",
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "hù EXG ngưòi",
+      "D": "ân là chù và dân làm chù ân là người chù ân làm quàn lý ân làm"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18930/full",
@@ -15017,9 +15016,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 36: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Lập trường giai cấp tư sàn, ưu tiên đấu tranh giai cãp Lập giai cãp",
+      "C": "âu 36 hoode neet Multlple Choice Theo Hồ Chí Minh, xây dựng khối đại đoàn kết toàn dân phài đúng vũng trên lập truờng nào? Lập truờng giai cấp công nhân; giải quyết hài hòa mối quan hệ giai cấp - dân tộc ông",
+      "D": "ân; ưu tiên đấu tranh ruộng đãt Lập trí thức , ưu tiên phát triẽn khoa học nghệ EXEC truòng nông trưòng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18931/full",
@@ -15033,9 +15032,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 37: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "A": "neyet Multlple Choice Theo Hồ Chí Minh; tại sao phài đoàn kết quõc tế? Lựa chọn 2 đáp án. Nhằm kết hợp sức mạnh dân tộc và sức mạnh thời đại; tao sức mạnh tổng hợp cho cách mạng",
+      "B": "Góp phần cùng nhân dân thế giói thực hiện các mục tiêu cách mạng Vi đây là mục tiêu, nhiệm vụ đầu cua cách mang Việt Nam Nhằm kế thừa truyền thõng yêu nưóc , nhân nghĩa, đoàn kết cua dân tộc Exoon hàng",
+      "C": "âu 37 Ghaaee",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -15050,9 +15049,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 38: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "A": "neet Multlple Choice Đâu là nguyên tắc đoàn kết quõc tế trong tư tường Hồ Chí Minh? Đảm bào mục tiêu độc lâp cua dân tộc minh và mục tiêu thời đai",
+      "B": "Đàm bào mục tiêu độc lập cua dân tộc minh và mục tiêu cua nhân loai Đảm bào mục tiêu độc lập cua dân tộc mình và mục tỉêu đại chúng Đàm bào mục tiêu độc lập cua dân tộc minh và mục tiêu cua các nuóc đặt quan hệ ngoai giao EXCC",
+      "C": "âu 38 hoode",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -15068,9 +15067,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 39: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Đang sống 0 các nưóc cùng Châu lục Đinh cu 6 các nuóc theo con xã hôỉ chu nghia",
+      "C": "âu 39 hoode neet Multlple Choice tưong Hồ Chí Minh; Mặt trân dân tộc thống nhãt là nơi quy tụ mọi tổ chúc và cá nhân yêu nưóc người Việt Nam, bao gồm cà những đối tượng nào? Định cư 0 nưôc ngoài ác cá nhân thuôc tổ chúc phi chính phú Exoon Trong",
+      "D": "uòng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18934/full",
@@ -15086,8 +15085,8 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 40 hoode ree[ Multlple Choice Theo Hồ Chí Minh thực hỉện dai doàn kết dân tộc phải gắn liền vói doàn kết quõc tế nhằm mục đích gì? Giữ gin súc mạnh dân tộc Giũ gin súc manh thời đai ường manh thòi đai",
+      "D": "Tao súc manh hợp cho cách mang chiến kè thù EXE Tăng sÚc tổng tháng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18935/full",
@@ -15102,9 +15101,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 41: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Sự lãnh dao cua tổ chức Sự lãnh đạo cua chính quyền",
+      "C": "âu 41 hoode neet Multlple Choice Theo Hồ Chí Minh, Mặt trận dân tộc thống nhất phài được xây dựng trên nền khối liên minh công - nông - trí thúc và đẫt dưói sự lãnh đao cua ai? Sự lãnh dao cùa Đàng",
+      "D": "Sự lãnh đao của Mặt trân EXEC tàng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18936/full",
@@ -15118,9 +15117,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 42: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "A": "neet Multlple Choice Hồ Chí Minh đã khẳng định vị trí; vai trò cua đai đoàn kết toàn dân tộc như thế nào? Đại aoàn kết toàn dân tộc là vấn đề có ý nghĩa chiến lược , định thành công của cách mạng",
+      "B": "Đai aoàn kết toàn dân tôc là vãn đề có ý nghĩa",
+      "C": "âu 42 hoode òn; quyết đinh thành ách mang Đại đoàn kết toàn dân tộc là vấn đề có ý nghĩa lịch su, quyết định thành công cùa cách mang Đại đoàn kết toàn dân tôc là vấn đề có ý nghĩa đặc bỉệt quan trong; quyết ẩịnh thành công cua cách mang EX quyêt sỗng ông",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -15135,10 +15134,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 43: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "nee Multlple Choice Hồ Chí Minh cho rằng đoàn kết có ý nghĩa thế nào? Đoàn kết là yêu nưóc un sáng",
+      "B": "Đoàn kết là tao",
+      "C": "âu 43 hoode Đoàn kết là súc mạnh",
+      "D": "Đoàn kết là khôn ngoan"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18938/full",
@@ -15153,9 +15152,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 44: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Cua dân; do dân và vi dân",
+      "C": "âu 44 hoode neet Multlple Choice Theo quan điẽm cùa Hồ Chí Minh; đại đoàn kết dân tộc là một mục tỉêu; nhỉệm vụ hàng dầu cua cách mang Viêt Nam và thời cách mang là sự nghiêp cua ai? ua quần chúng; do quần chúng và vì quần chúng ua người lao động nói chung ua công - nông EXE",
+      "D": "ông"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18939/full",
@@ -15169,10 +15168,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 45: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "neet Multlple Cholce Theo Hồ Chí Minh, doàn kết là điểm nào sau đây? Điểm mẹ",
+      "B": "Điểm quyết định",
+      "C": "âu 45 hoode Điểm thắng lợi",
+      "D": "Điểm tiên QC quyẽt"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18940/full",
@@ -15187,8 +15186,8 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 46: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "B": "Hinh thành nhũng phẩm chãt mói xã hội chu nghĩa Kế thừa nhũng giá trị tốt đẹp cua con nguời truyền hinh thành phẩm chất mới xã hội chu nghĩa Phá bò truyền thống cũ Exoon ngưởi ngưoi _ nhũng thõng; nhũng nhũng",
+      "C": "âu 46 hoode ree[ Multlple Choice Theo tư tưong Hồ Chí Minh; con mđi xã hội chu nghĩa là con nhu thế nào? Kế thừa giá trị tỗt đẹp cua con người truyền thõng",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -15205,7 +15204,7 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 47 hoode neet Multlple Choice Nguyên tắc nào sau đây là nguyên tắc quan trọng bậc nhât trong xây dựng một nền đạo đúc mói theo tư tuòng Hỗ Chí Minh? Nói đi đôi với làm Nêu guong về đạo đúc Xây đi đôi với chõng Tu duõng đạo đức suôt đời EXEC",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -15221,9 +15220,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 48: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Vào thời điểm thành lập",
+      "C": "âu 48 hoode ree [ Multlple Choice Hồ Chí Minh lần đầu tiên ra định nghĩa vẳn hóa vào lúc nào? Vào thời gian Bác ờ Pháp Vào thời gian ờ nhà tù cua Tường Giói Thạch",
+      "D": "Vào thời điểm đọc Tuyên Ngôn Độc lập EXEC đua Đảng ang"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18943/full",
@@ -15238,9 +15237,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 49: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Trung với nước , hiếu vói ào",
+      "C": "âu 49 hoode ree [ Multlple Choice Đâu là chuẩn mực đạo đức cách mạng trong tư Hồ Chí Minh? Trung vói nước, hiếu với dân Trung vói nuóc , hiếu vói cách mạng",
+      "D": "Trung với nuớc , hiếu với xã hội EXE tuòng đông"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18944/full",
@@ -15255,9 +15254,9 @@ window.QUIZ_DATA['hcm202'] = [
     "question": "Câu 50: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Hồn côt dân tộc Văn hóa dân tộc Truyền thống dân tôc EXG huỵ phải tôc, giảo",
+      "C": "âu 50 hoode neet Multlple Choice Hồ Chí Mỉnh yêu cầu: \"phài phát hết lôt cho hết tinh thần dân để cổ vũ cho đồng bào ta; đẽ ốt cách dân tộc",
+      "D": "ục cho con cháu ta\" Từ còn thỉẽu trong dấu là gi?"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18945/full",
@@ -15271,9 +15270,9 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 51: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "A": "neet Multlple Choice Đoan vỉết dưóỉ đây ghi tóm tẳt lời gỉải thích cua Hồ Chí Mỉnh về cần; kiệm liêm , chinh. Hòi: Điẽm tóm tắt nào đã bị ghi nhầm nộỉ dung?",
+      "B": "Kiệm là không xa xi, không hoang phí, không bừa bãi _ Liêm là luôn tôn trong cua công và cua dân; không tham tiền cua; địa vị; danh tiẽng:",
+      "C": "âu 51 hoode ân là lao động cân cù, siêng năng, lao động có kẽ hoach; sáng tạo và có năng suất lao động cao _ hính là trong sạch; không tham lam đồng xu; hạt thóc cua nhà nưóc , cua dân. EXEC",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -15288,10 +15287,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 52: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "neet Multlple Choice Theo Hồ Chí Minh, trinh độ vẳn hóa cùa nhân dân nâng cao sẽ gỉúp cho chúng ta đẩy manh công cuôc gì? Khôi phuc kinh tế",
+      "B": "Khôi phục kinh tế, phát triẽn dân chủ Phát triẽn dân chú",
+      "C": "âu 52 hoode",
+      "D": "Khôi phục văn hóa EXEC"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18947/full",
@@ -15303,11 +15302,11 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 53,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 53: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 53: Câu 53 hoode ree [ Multlple Choice Đâu là quan điểm đúng vói tư Hồ Chí Minh về cách mạng:",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
+      "A": "Tài năng là gốc cua nguời cách mạng",
+      "B": "đúc là àn lĩnh chính trị là gốc cua",
+      "C": "ua người cách mang Trí tuệ là gốc cua người cách mạng ách mạng EXE tuong người Đao gôc người",
       "D": "Phương án D"
     },
     "answer": "A",
@@ -15324,8 +15323,8 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 54 hool ree [ Multlple Choice Hồ Chí Minh cho vằn hóa có tính: húng",
+      "D": "ân tộc, khoa học và đại ân tộc, khoa học và nhân dân ân tộc, khoa học và nhân bàn EXOT rằng"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18949/full",
@@ -15337,12 +15336,12 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU26 FE RE",
     "num": 55,
     "chooseType": "Choose 1 answer",
-    "question": "Câu 55: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
+    "question": "Câu 55: Câu 55 hoode aneet Multlple Choice Hồ Chí Minh xác định hiệu cua thanh niên là gì?",
     "options": {
       "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "B": "Tây cầm súng tiến lên",
+      "C": "ầm cờ đò sao vàng tiến lên Tay cầm khẩu hiệu tiến lên",
+      "D": "Tay cầm búa và lưõi liềm tiến lên EXC huy Tay"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18950/full",
@@ -15358,8 +15357,8 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 56 hoode ree[ Multlple Choice Hồ Chí Minh cho xây dựng con mói xã hội chu nghĩa truóc hết phài:",
+      "D": "iệt trừ chu nghĩa cá nhân iệt trừ văn hóa phong kiến iệt trừ văn hóa tư sàn EXO rằng người"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18951/full",
@@ -15373,10 +15372,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 57: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "neet Multlple Choice Điền vào chỗ trống theo tư tướng Hồ Chí Minh: \"Nền văn hoá xã hội chù nghĩa lầ một nền văn hoá lấy",
+      "B": "ào làm co sò\" . Tự do Hạnh phúc",
+      "C": "âu 57 hoode ua Ãm no",
+      "D": "Giàu có EXT đông"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18952/full",
@@ -15392,8 +15391,8 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "C": "âu 58 hoode ree [ Multlple Choice Hồ Chí Minh định: 'Văn hoá phài soi ho quõc dân đi\" là nói đến vãn đề Văn hoá chính trị là một trong nhũng lực cho sự phát triến Văn hoá là bàn sắc dân tộc Văn hoá là niềm tin cua quần húng",
+      "D": "Văn hoá là tiêu chí đế đánh giá trinh độ dân tộc EXT khẳng 'gì? đưòng đông"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18953/full",
@@ -15407,10 +15406,10 @@ window.QUIZ_DATA['hcm202'] = [
     "chooseType": "Choose 1 answer",
     "question": "Câu 59: [SU26 FE RE] (Nội dung chi tiết trong hình ảnh đính kèm bên dưới)",
     "options": {
-      "A": "Phương án A",
-      "B": "Phương án B",
-      "C": "Phương án C",
-      "D": "Phương án D"
+      "A": "neet Multlple Choice Theo Hồ Chí Minh, tham ô, lãng phí được ví như giặc gì? Ngoai xâm",
+      "B": "Nội xâm",
+      "C": "âu 59 hoode Mỹ",
+      "D": "Giặc dốt EXEC"
     },
     "answer": "A",
     "image": "https://fuexam.me/media/18954/full",
@@ -15426,7 +15425,7 @@ window.QUIZ_DATA['hcm202'] = [
     "options": {
       "A": "Phương án A",
       "B": "Phương án B",
-      "C": "Phương án C",
+      "C": "âu 60 hoode ree [ Multlple Choice Theo tư tuòng Hồ Chí Minh; con Việt Nam trong thòi đạỉ môi phải có bao nhiêu phẩm chãt co bản? hất co bàn phẩm chất cơ bàn hãt co bàn 6 phẩm chất co bàn Exoon ngưởi phẩm phẩm",
       "D": "Phương án D"
     },
     "answer": "A",
