@@ -1,0 +1,1028 @@
+{
+  "subject": "hcm202",
+  "task": "sp24_b5_fe",
+  "taskLabel": "SP24 B5 FE",
+  "count": 60,
+  "questions": [
+    {
+      "id": 661,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 1,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 1",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38804-9e2126d25346bfa6b739fbd5846fa546.jpg?hash=1ekqpzZBnj",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 662,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 2,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 2",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38805-5f5265cf7b1d942c33e1a1bd28e2cdba.jpg?hash=u4pOY2W3HP",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 663,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 3,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 3",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38806-b3142b7303c1894f08f5bf44d20a0ff7.jpg?hash=q7cqXbJek1",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 664,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 4,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 4",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38807-e8be468e8ffa236237746f6a25c17f8a.jpg?hash=nQy73uwEid",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 665,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 5,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 5",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38808-90b4a8a7e570b059c2a6cdf15b0472ac.jpg?hash=uAZQY5nQqW",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 666,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 6,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 6",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38809-e2d6a362b7814420dee49428eb4b059f.jpg?hash=D-TW9pvEOH",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 667,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 7,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 7",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38810-ebda7876c14149b022886a3ad1118a73.jpg?hash=TvIEUti8Lw",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 668,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 8,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 8",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38811-404801d00a43729ec23d6765e22b9600.jpg?hash=ksCpAHuwrK",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 669,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 9,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 9",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38812-41f9dfe8815e17333653fcfcea2ddef6.jpg?hash=UOMY4bAj4x",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 670,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 10,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 10",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38813-0b6920c2417320d72f2dc9a957acf28a.jpg?hash=LDGowPJExT",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 671,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 11,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 11",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38814-859f089610d25b94eb3b693f34a72f1a.jpg?hash=nAp--6bxLs",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 672,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 12,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 12",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38815-daffc69c6d0f1a3ffa2d18ff4e99ce1c.jpg?hash=_Cy34LNFSB",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 673,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 13,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 13",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38816-2be217f41bbccd018404cf331ed38482.jpg?hash=1T2tU7ADut",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 674,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 14,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 14",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38817-79ada5bf7e83384fba02e7b3a1f642fb.jpg?hash=EltyGspKFw",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 675,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 15,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 15",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38818-39eaf198fd193b552a4a2d7e5bc2c32d.jpg?hash=TJ_4TjKuBM",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 676,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 16,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 16",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38819-d9b9518a48614425a0a3a34bfe8ff761.jpg?hash=pjSdIPvtQL",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 677,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 17,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 17",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38820-7f54ecbb25b4dc8dbcf7253fabdbc10b.jpg?hash=KeVIFudSXC",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 678,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 18,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 18",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38821-3b9d6c52bb239601889983822e0af142.jpg?hash=ALFuXPwVwX",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 679,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 19,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 19",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38822-46ea18a4d48925ac5790b08c01bf0e60.jpg?hash=WN_s4E1ebS",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 680,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 20,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 20",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38823-f32fd81a438bf6c9d7974fb0e48c04ec.jpg?hash=dLdfyle7Ev",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 681,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 21,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 21",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38824-f4a948c7fa64b10ce23a1b4a8d2471e1.jpg?hash=GWdyae9p1X",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 682,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 22,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 22",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38825-f9daf9c11a651159c1e130266f4801fe.jpg?hash=14-OVAYx0i",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 683,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 23,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 23",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38826-073093bcd30e8ac218ead39615436655.jpg?hash=6XE1oZNu24",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 684,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 24,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 24",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38827-01635aff62533555940e4292882188a7.jpg?hash=xrEMx2e1is",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 685,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 25,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 25",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38828-1ef4d994f4b3776e0cd5e09a054bad44.jpg?hash=yUx5cqcCuA",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 686,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 26,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 26",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38829-1914c6cc745d1a8367c00a9b1f3c418b.jpg?hash=gJXW62gGqO",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 687,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 27,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 27",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38830-ab3b048eb7bf3dab6064d1cef4c2acc5.jpg?hash=gv8d3UOW4M",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 688,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 28,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 28",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38831-26c832eef6afe7cbf3e9ed70604ffd90.jpg?hash=8gDPwS1Zv4",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 689,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 29,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 29",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38832-2d630baa13c5365c320623ce0ddd67cf.jpg?hash=Vv4Y9BbD72",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 690,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 30,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 30",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38833-a9e5996cae18e8bb495c5befecc9fe88.jpg?hash=6yl8k_0083",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 691,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 31,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 31",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38834-6fb012be434f5896cd6dc07c6fe09f26.jpg?hash=aU2k0xZOhX",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 692,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 32,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 32",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38835-e9c2131aed82b52890795dc53f948baa.jpg?hash=BTZlo8LrXq",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 693,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 33,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 33",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38836-6def81b4e47886c0c690e51c6f7b5790.jpg?hash=T4SQI6jK0P",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 694,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 34,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 34",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38837-b8fb95af2e897a7c423ada70edad99c5.jpg?hash=guUqf3KLx7",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 695,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 35,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 35",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38838-58bcc3baf70e46d1aa3fe5516726e719.jpg?hash=uzF0HUq2ic",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 696,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 36,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 36",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38839-7a560e1679e0bd862a01c963d666f49a.jpg?hash=cYNYLUZm4n",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 697,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 37,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 37",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38840-13ce8136554a82a35bfbef638d3d394d.jpg?hash=wwv8Pb3VTX",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 698,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 38,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 38",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38841-f384a20e0ef54d35767cd977a00de9d9.jpg?hash=7vn0zzTHH2",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 699,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 39,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 39",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38842-c5f2a53392616d070c18bd9d2573554a.jpg?hash=tXrk3XljV6",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 700,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 40,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 40",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38843-5448631c71222462809bbe527bd73e7e.jpg?hash=Ax1s5accKA",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 701,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 41,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 41",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38844-3a637160585dec2b133c5f498e5992cd.jpg?hash=5mAvYmGBL7",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 702,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 42,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 42",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38845-694624d64be31c7f655acb4ec2129c53.jpg?hash=SOWiOnpdE1",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 703,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 43,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 43",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38846-66a958a6386b47ffc73cc74715c0fe60.jpg?hash=t8YOKoDh2B",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 704,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 44,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 44",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38847-47e426518675801fffa621388fa0630f.jpg?hash=1vc934hUrX",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 705,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 45,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 45",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38848-c3269881ea6092481ca90150f65614ef.jpg?hash=p9t50YYrsL",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 706,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 46,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 46",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38849-4f1e340e4b8c4d383d0866d8b50d474b.jpg?hash=Z5UjlbrqNK",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 707,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 47,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 47",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38850-885b780c89a0558d6df1cdc77ba1ac54.jpg?hash=6IlNPxAGQ2",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 708,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 48,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 48",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38851-5d57e7d905890ddf72e0f872ae66e0b1.jpg?hash=9bMj_GAf0H",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 709,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 49,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 49",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38852-0e155c424702a2002df00067a2fd5605.jpg?hash=xWT30yivUL",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 710,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 50,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 50",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38853-484bd8f6019252fc4e4243af8afc751b.jpg?hash=5M2W70ax_v",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 711,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 51,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 51",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38854-892b7f2c4c95b4c19e0c18637616d388.jpg?hash=w45ekMGHVH",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 712,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 52,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 52",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38855-38bd4c1660f0f35f5a94fd93d134d4f2.jpg?hash=dSEUKLlTp7",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 713,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 53,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 53",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38856-83578eff2ea13c856b5c17743e0332c3.jpg?hash=SbIgbJOel5",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 714,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 54,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 54",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38857-c9f419cb96a0b4fd64a9934fe76fa026.jpg?hash=ahI1nq46J8",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 715,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 55,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 55",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38858-7615935e3f78fb8efc7969abe87404a4.jpg?hash=QL2kumQI9W",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 716,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 56,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 56",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38859-667c63a3ddbe90784fb60a993761a086.jpg?hash=d5pxu4Ufyc",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 717,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 57,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 57",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38860-526f1fe9f6f44704bf9a8627d4cbc294.jpg?hash=2ms3pnHCZi",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 718,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 58,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 58",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38861-8101baede667cda820791255ca60173c.jpg?hash=Ccq2el2QZK",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 719,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 59,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 59",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38862-9f87263b6b5be187b12c829135033f27.jpg?hash=6LWCApNdQ7",
+      "source": "HCM202_SP24_B5_FE"
+    },
+    {
+      "id": 720,
+      "task": "sp24_b5_fe",
+      "taskLabel": "SP24 B5 FE",
+      "num": 60,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SP24 B5 FE] Câu 60",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38863-2a720695562680c6e0eccbfddf279774.jpg?hash=mcigmeWIr7",
+      "source": "HCM202_SP24_B5_FE"
+    }
+  ]
+}

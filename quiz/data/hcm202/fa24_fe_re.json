@@ -1,0 +1,1028 @@
+{
+  "subject": "hcm202",
+  "task": "fa24_fe_re",
+  "taskLabel": "FA24 FE RE",
+  "count": 60,
+  "questions": [
+    {
+      "id": 481,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 1,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 1",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38624-757c9def50a87a969c8ebfb0c37e7452.jpg?hash=6prJe083Md",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 482,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 2,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 2",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38625-44612a49b2f79c69342208de4b19ecfd.jpg?hash=8W487s0tXY",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 483,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 3,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 3",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38626-e0f96d8b1f870ae64712c3c9ac39f0d4.jpg?hash=Q8Og1TeKGO",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 484,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 4,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 4",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38627-7d43c9fb9f35c37bb831356efb7d9c1d.jpg?hash=70bLx-i4Zr",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 485,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 5,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 5",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38628-3bbd5bd5074efc19958453b7edf0f964.jpg?hash=y57U_4O8Dh",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 486,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 6,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 6",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38629-c172523fec6446743bb8cc93129c4fcd.jpg?hash=6WAGlZWMIv",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 487,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 7,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 7",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38630-b7b3248b3b9af87f7ba27cb0e48e75c7.jpg?hash=XyYBdKFdhC",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 488,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 8,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 8",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38631-2d41501532e76fb521efbd6654f69b05.jpg?hash=8PN1fbsDzy",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 489,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 9,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 9",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38632-8cd425d0cd9d6065044e73590ab1f81f.jpg?hash=EHM2J4Ekju",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 490,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 10,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 10",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38633-d5ac86bc91474b72081df0cf82efad6a.jpg?hash=WOx621gO8M",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 491,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 11,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 11",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38634-e8d2813ba2615e6d0554ef5b71807926.jpg?hash=Gp0VdIsxTB",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 492,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 12,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 12",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38635-77a47045ffa3e0cba432222f695e870b.jpg?hash=i6hddUQrOt",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 493,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 13,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 13",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38636-ab0de48c5db3e07cc878cbaec62f10cc.jpg?hash=CnEh-bfb0R",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 494,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 14,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 14",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38637-614e62f9ae75eb72a28a68e993af9764.jpg?hash=wpH2ambrUx",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 495,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 15,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 15",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38638-da2c7d25c163f690b6d1aa8f671b3361.jpg?hash=puxUaEdiFE",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 496,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 16,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 16",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38639-e05d8704032939b3c7e213ad2685f1f5.jpg?hash=Wq5NX-VJmf",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 497,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 17,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 17",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38640-de4ae6ba1df1fa50d68a1c498a9582de.jpg?hash=GC32YK3KRa",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 498,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 18,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 18",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38641-459a840e681167cb7879f07bdc0703fd.jpg?hash=8UsnFZQ-f6",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 499,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 19,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 19",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38642-bbfe06b0d696b41d4e6cf42dc25f0152.jpg?hash=F_kdDPBMHj",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 500,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 20,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 20",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38643-03c25027e7f46031f46ce8f18cd4e09e.jpg?hash=QTh_0CDVT_",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 501,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 21,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 21",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38644-91062c47cccc4e913886b94bfa2ac551.jpg?hash=0G9IaWG5ON",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 502,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 22,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 22",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38645-33c8a45ef38cdef3d971bd52816725a7.jpg?hash=BTEm5bBOPZ",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 503,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 23,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 23",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38646-5e093eaec0ae06dc3baf8ffe11d38218.jpg?hash=7FVXs8drDy",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 504,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 24,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 24",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38647-f559636511314966eb4be35e90ffe0ca.jpg?hash=AaqRwPq-T-",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 505,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 25,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 25",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38648-a9cd557e4c39fea533abbafeec2b5343.jpg?hash=EiIWIOyjFj",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 506,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 26,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 26",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38649-c0f5688e6765127e317c079844314fff.jpg?hash=wdZR4o9ti4",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 507,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 27,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 27",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38650-190917a8a40b1e73672dbe6d8798c91f.jpg?hash=lfg6YazA2v",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 508,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 28,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 28",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38651-a3a02629ef6a778a04a14511858cf0e8.jpg?hash=LUrUuI0ZGj",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 509,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 29,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 29",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38652-c345aeac963fe0a757652f2fe34c3f7f.jpg?hash=7hRIW1Fk2J",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 510,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 30,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 30",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38653-6e23532e5fe237a31987d1ffac6bd795.jpg?hash=GPfMNPrb_H",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 511,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 31,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 31",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38654-cb895557f868e06ffdb34b84feacdb50.jpg?hash=R5kqMZPVUr",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 512,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 32,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 32",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38655-3a02b366c3d223f87b91cc862d1f75e0.jpg?hash=8LY6x_DFkb",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 513,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 33,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 33",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38656-8bffde199aec8e3be0f9f0a6825860a4.jpg?hash=O4CviEorrg",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 514,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 34,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 34",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38657-143ef6fcde09a570cbd4516d53ef98db.jpg?hash=Ub5Vxrd0Kj",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 515,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 35,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 35",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38658-ed26ffeb88a8a71b8e3a032d1922fd99.jpg?hash=ABYTMoYASq",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 516,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 36,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 36",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38659-a45484d1a19ac2cd703669bf1bdbe559.jpg?hash=-YeO4ZS8mu",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 517,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 37,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 37",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38660-12781db7291f8ce95cfb177a1092b969.jpg?hash=WmAsqC07HF",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 518,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 38,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 38",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38661-980470a0390116be3896f0fa69436940.jpg?hash=9d35t69teK",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 519,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 39,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 39",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38662-be580430f001a383ec8df4750bf9b1f9.jpg?hash=frXVraeeaB",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 520,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 40,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 40",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38663-ecaede0ab37ba44f81d11ef668de3443.jpg?hash=HItypT6qBF",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 521,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 41,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 41",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38664-74feec183c278aeb75c84614dbb4be61.jpg?hash=0_96N8-kG5",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 522,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 42,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 42",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38665-b46a401ec0eaf551b4e58f5b3d5916cd.jpg?hash=b16hIbyUVO",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 523,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 43,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 43",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38666-9f71808a6fbfbabb5bd483baec3a2916.jpg?hash=mGpPxDCnU0",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 524,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 44,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 44",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38667-717c3c6d6d58f4529f86ed69ce969f4e.jpg?hash=C3AcVzmeuI",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 525,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 45,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 45",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38668-3dffeee095471442a5e6ba9839ae2f4c.jpg?hash=OgxzO-KGLh",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 526,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 46,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 46",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38669-3bf83f05e75c6f55a0638c437d9febd2.jpg?hash=wAXmRcZKvg",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 527,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 47,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 47",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38670-4ec4c511960e3a9b8f747a647a1c172e.jpg?hash=U_743bjJub",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 528,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 48,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 48",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38671-90439c35d5500fe1f36b4dadbc82b9ac.jpg?hash=MjGKo1hWvC",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 529,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 49,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 49",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38672-c6289a3e67cdb33842ecfd7810f63c05.jpg?hash=jlrhsq9jWQ",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 530,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 50,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 50",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38673-fd798cd27702021e715a0d693824dd2f.jpg?hash=TT_kCckEc4",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 531,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 51,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 51",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38674-ed406df89e61b003b70d38cf7255c3ae.jpg?hash=-4cmBZoQZA",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 532,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 52,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 52",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38675-d96c0e478c57dd85c39d0fc1fdb44783.jpg?hash=Ytt1eKtRB3",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 533,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 53,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 53",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38676-d5f1b0162a21444f770966e1813e75f7.jpg?hash=ly5UFDhbTL",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 534,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 54,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 54",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38677-af875816c2c7facfffdcc2683c163e9f.jpg?hash=CfyV3tEwJ2",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 535,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 55,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 55",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38678-c7d0fe15818ff225bfb6e6f099959b3b.jpg?hash=l-tJ7DBj1O",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 536,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 56,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 56",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38679-b8d6f109667d530d494eddaf4f450e5e.jpg?hash=ftIUANW-o5",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 537,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 57,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 57",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38680-910e0b9eb8027e0a664a6d12948f468a.jpg?hash=uQMn2HfYhl",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 538,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 58,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 58",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38681-b144fe2e3090e01a3a560e9e6aa208b8.jpg?hash=zDLtiRjVzn",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 539,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 59,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 59",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38682-8f1b3b511e4fa2bdea3a660ce45c0a48.jpg?hash=kpRP7Fc9yM",
+      "source": "HCM202_FA24_FE_RE"
+    },
+    {
+      "id": 540,
+      "task": "fa24_fe_re",
+      "taskLabel": "FA24 FE RE",
+      "num": 60,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA24 FE RE] Câu 60",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38683-e7193af9d46d2d99954d69f417ccf814.jpg?hash=7e_-iX7XmF",
+      "source": "HCM202_FA24_FE_RE"
+    }
+  ]
+}

@@ -145,6 +145,39 @@ window.QUIZ_SUBJECTS = {
     dataKey: "ite",
     hint: "ITE302c (Ethics in IT): 12 đề FE từ FuExam.me + 340 câu Quizlet (tổng cộng 1060 câu).",
   },
+  hcm202: {
+    id: "hcm202",
+    title: "HCM202",
+    subtitle: "Tư tưởng Hồ Chí Minh · 15 Đề FE (900 MCQ)",
+    brandIcon: "fa-star",
+    storageWrong: "uq-hcm202-wrong-v1",
+    storageProgress: "uq-hcm202-progress-v1",
+    cloudSubject: "hcm202",
+    multiSelect: true,
+    showTranslationAlways: true,
+    tasks: [
+      { id: "su26_fe_re", label: "SU26 FE RE", icon: "fa-file-circle-check" },
+      { id: "su26_c1fe", label: "SU26 C1FE", icon: "fa-file" },
+      { id: "sp26_b5_fe_re", label: "SP26 B5 FE RE", icon: "fa-file-circle-check" },
+      { id: "sp26_b5_fe", label: "SP26 B5 FE", icon: "fa-file" },
+      { id: "fa25_fe", label: "FA25 FE", icon: "fa-file" },
+      { id: "su25_b5_fe", label: "SU25 B5 FE", icon: "fa-file-circle-plus" },
+      { id: "su25_fe", label: "SU25 FE", icon: "fa-file" },
+      { id: "sp25_fe", label: "SP25 FE", icon: "fa-file" },
+      { id: "fa24_fe_re", label: "FA24 FE RE", icon: "fa-file-circle-check" },
+      { id: "fa24_fe", label: "FA24 FE", icon: "fa-file" },
+      { id: "su24_fe", label: "SU24 FE", icon: "fa-file" },
+      { id: "sp24_b5_fe", label: "SP24 B5 FE", icon: "fa-file-circle-plus" },
+      { id: "sp24_fe_re", label: "SP24 FE RE", icon: "fa-file-circle-check" },
+      { id: "sp24_fe", label: "SP24 FE", icon: "fa-file" },
+      { id: "su26_b5_fe", label: "SU26 B5 FE", icon: "fa-file-circle-plus" },
+      { id: "all", label: "Tất cả", icon: "fa-layer-group" },
+    ],
+    defaultTask: "all",
+    dataKey: "hcm202",
+    hint: "HCM202 (Tư tưởng Hồ Chí Minh): 15 bộ đề FE tổng hợp từ FuExam.me.",
+  },
 };
 
-window.QUIZ_SUBJECT_ORDER = ["prm", "mln", "jit", "fe", "prn232", "ite"];
+window.QUIZ_SUBJECT_ORDER = ["prm", "mln", "jit", "fe", "prn232", "ite", "hcm202"];
+

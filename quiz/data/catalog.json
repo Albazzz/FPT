@@ -7,7 +7,8 @@
     "jit",
     "fe",
     "prn232",
-    "ite302"
+    "ite302",
+    "hcm202"
   ],
   "counts": {
     "ite": 720,
@@ -16,8 +17,9 @@
     "jit": 780,
     "fe": 726,
     "prn232": 150,
-    "ite302": 360
+    "ite302": 360,
+    "hcm202": 900
   },
-  "total": 4676,
+  "total": 5576,
   "notes": "Per-task parts under quiz/data/{subject}/{task}.json; monofile merged for app"
 }

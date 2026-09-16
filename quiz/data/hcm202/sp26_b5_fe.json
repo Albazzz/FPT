@@ -1,0 +1,1156 @@
+{
+  "subject": "hcm202",
+  "task": "sp26_b5_fe",
+  "taskLabel": "SP26 B5 FE",
+  "count": 60,
+  "questions": [
+    {
+      "id": 181,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 1,
+      "chooseType": "Choose answer",
+      "question": "Hồ Chí Minh dạy học ở trường Dục Thanh - Phan Thiết trong khoảng thời gian nào?",
+      "options": {
+        "A": "Năm 1909-1910",
+        "B": "Năm 1909-1911",
+        "C": "Năm 1908-1909",
+        "D": "Năm 1910-1911"
+      },
+      "answer": "D",
+      "image": "https://fuexam.me/data/attachments/15/15765-e99d23140b6fd92098867e4075437aa6.jpg?hash=xiwd5x37v2",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• HCM dạy học tại trường Dục Thanh (Phan Thiết) từ tháng 9/1910 đến tháng 2/1911.",
+        "whyCorrect": "• Đáp án [D] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 182,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 2,
+      "chooseType": "Choose answer",
+      "question": "Câu nói \"Đảng là đạo đức, là văn minh\" được chủ tịch Hồ Chí Minh đưa ra ở:",
+      "options": {
+        "A": "Diễn văn kỷ niệm 30 năm thành lập Đảng 1960",
+        "B": "Diễn văn khai mạc đại hội đại biểu toàn quốc lần thứ III của Đảng năm 1960",
+        "C": "Di chúc - 1969",
+        "D": "Diễn văn khai mạc đại hội đại biểu toàn quốc lần thứ II tháng 2-1951"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15766-3d32215ed381066a4cc8981f163abc47.jpg?hash=jc2fV9xosM",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Tại 'Diễn văn kỷ niệm 30 năm thành lập Đảng' (tháng 1/1960), Bác viết: 'Đảng ta là đạo đức, là văn minh'.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 183,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 3,
+      "chooseType": "Choose answer",
+      "question": "Để chuẩn bị thành lập Đảng Cộng sản Việt Nam, Nguyễn Ái Quốc đã từ Liên Xô về Trung Quốc năm nào?",
+      "options": {
+        "A": "1925",
+        "B": "1927",
+        "C": "1923",
+        "D": "1924"
+      },
+      "answer": "D",
+      "image": "https://fuexam.me/data/attachments/15/15767-312e5f17ba3c01e49777ce9ebdce334a.jpg?hash=65Rc0GfNCx",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Tháng 11/1924, Nguyễn Ái Quốc từ Liên Xô đến Quảng Châu (Trung Quốc) để chuẩn bị thành lập Đảng.",
+        "whyCorrect": "• Đáp án [D] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 184,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 4,
+      "chooseType": "Choose 1 answer",
+      "question": "Theo Hồ Chí Minh, mâu thuẫn chủ yếu ở thuộc địa, không thể điều hòa được là gì?",
+      "options": {
+        "A": "Mâu thuẫn giữa giai cấp công nhân với chủ nghĩa thực dân",
+        "B": "Mâu thuẫn giữa dân tộc thuộc địa với thực dân, đế quốc",
+        "C": "Mâu thuẫn giữa giai cấp nông dân với giai cấp địa chủ bản xứ",
+        "D": "Tất cả các phương án trên"
+      },
+      "answer": "B",
+      "image": "https://fuexam.me/data/attachments/15/15768-aa61419caceeb198abf10d0d2cbbf0e0.jpg?hash=kYUEjX0VSP",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Ở nước thuộc địa, mâu thuẫn chủ yếu không thể điều hòa là giữa toàn thể dân tộc thuộc địa với thực dân, đế quốc xâm lược.",
+        "whyCorrect": "• Đáp án [B] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 185,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 5,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, Đảng Cộng sản Việt Nam mang bản chất gì?",
+      "options": {
+        "A": "Mang bản chất giai cấp công nhân, dân tộc",
+        "B": "Mang bản chất giai cấp công nhân, nhân dân lao động và dân tộc",
+        "C": "Mang bản chất giai cấp công nhân, con người",
+        "D": "Mang bản chất giai cấp công nhân"
+      },
+      "answer": "D",
+      "image": "https://fuexam.me/data/attachments/15/15769-39cf0ef708305729ceb9e4d48d7993a4.jpg?hash=aGbeIGiNz8",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Đảng Cộng sản Việt Nam mang bản chất giai cấp công nhân.",
+        "whyCorrect": "• Đáp án [D] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 186,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 6,
+      "chooseType": "Choose answer",
+      "question": "Hồ Chí Minh ví chủ nghĩa dân tộc như điều gì?",
+      "options": {
+        "A": "Mùa xuân của xã hội",
+        "B": "Động lực lớn của đất nước",
+        "C": "Nền tảng tư tưởng của Đảng",
+        "D": "Mục tiêu cần phải gạt bỏ"
+      },
+      "answer": "B",
+      "image": "https://fuexam.me/data/attachments/15/15770-dd409627e1df0e091ccab22e348e8fa4.jpg?hash=jhauwyvyO2",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Hồ Chí Minh khẳng định: Chủ nghĩa dân tộc chân chính là một động lực lớn của đất nước.",
+        "whyCorrect": "• Đáp án [B] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 187,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 7,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, dân chủ là tư tưởng phải được tự do. Tự do là đối với mọi vấn đề, mọi người tự do bày tỏ ý kiến của mình, góp phần tìm ra điều gì?",
+      "options": {
+        "A": "Chân lý",
+        "B": "Thực tiễn",
+        "C": "Lẽ phải",
+        "D": "Nguyên tắc"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15771-46d21ce13b60d42db62b5b9b44a66ed6.jpg?hash=Jiva-ay62v",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Hồ Chí Minh nhấn mạnh: Chế độ ta là chế độ dân chủ, tư tưởng phải được tự do... góp phần tìm ra chân lý.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 188,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 8,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, ngoài lợi ích của giai cấp, của nhân dân và toàn thể dân tộc Việt Nam, Đảng cần phải có thêm điều gì?",
+      "options": {
+        "A": "Không còn lợi ích nào khác",
+        "B": "Còn vì lợi ích của mình",
+        "C": "Còn vì lợi ích của nhà nước",
+        "D": "Còn vì lợi ích cá nhân"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15772-e51d551aca797a3d2aa0c84d5e10b56e.jpg?hash=qfA4nzaOCX",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Hồ Chí Minh khẳng định: Ngoài lợi ích của nhân dân, của dân tộc, Đảng không có lợi ích nào khác.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 189,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 9,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, đạo đức mới chỉ có thể được xây dựng trên cơ sở sự tự giác tu dưỡng đạo đức của mỗi người thông qua hoạt động thực tiễn, phải kiên trì rèn luyện như việc gì?",
+      "options": {
+        "A": "Việc rửa mặt hàng ngày",
+        "B": "Việc đánh răng hàng ngày",
+        "C": "Việc ăn uống hàng ngày",
+        "D": "Việc hít thở hàng ngày"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15773-ea053a4ff00de57d4ed23c859f53fb09.jpg?hash=nD-TWSDxm7",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Đạo đức cách mạng phải kiên trì rèn luyện hàng ngày, như rửa mặt hàng ngày.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 190,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 10,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh cho rằng đạo đức cách mạng không phải là điều gì?",
+      "options": {
+        "A": "Từ trên trời sa xuống",
+        "B": "Phẩm chất vốn có",
+        "C": "Tự nhiên mà có",
+        "D": "Có sẵn trong tự nhiên"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15774-a93a3f58e0a2363b315b5165862bb59f.jpg?hash=u7ONdNGsEZ",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Hồ Chí Minh viết: Đạo đức cách mạng không phải từ trên trời sa xuống, nó do đấu tranh, rèn luyện bền bỉ hàng ngày mà phát triển.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 191,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 11,
+      "chooseType": "Choose answer",
+      "question": "Đâu là luận điểm sáng tạo của Hồ Chí Minh về vấn đề lãnh đạo của Đảng?",
+      "options": {
+        "A": "Lý luận về Đảng Cộng sản cầm quyền",
+        "B": "Tư duy của Đảng Cộng sản",
+        "C": "Đường lối của Đảng Cộng sản",
+        "D": "Đội ngũ lãnh đạo của Đảng Cộng sản"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15775-a194acf1fab6ab56d1b18602ae124dc4.jpg?hash=E50IimUX49",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Lý luận về Đảng Cộng sản cầm quyền là luận điểm sáng tạo đặc sắc của Hồ Chí Minh.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 192,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 12,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, cuộc cách mạng nào đầu thế kỷ XX đã làm \"thức tỉnh các dân tộc châu Á\"?",
+      "options": {
+        "A": "Cách mạng Trung Quốc",
+        "B": "Cách mạng Ấn Độ",
+        "C": "Cách mạng tháng Mười Nga",
+        "D": "Cách mạng Pháp"
+      },
+      "answer": "C",
+      "image": "https://fuexam.me/data/attachments/15/15776-3fbef2f68d7f051ee22aa398e5a9beb3.jpg?hash=ruBqe9mfBC",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Cách mạng Tháng Mười Nga năm 1917 đã làm thức tỉnh các dân tộc thuộc địa và bị áp bức ở châu Á.",
+        "whyCorrect": "• Đáp án [C] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 193,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 13,
+      "chooseType": "Choose answer",
+      "question": "Đối với Hồ Chí Minh, dân ta tài năng trí tuệ và sáng tạo, họ biết giải quyết nhiều vấn đề một cách giản đơn, mau chóng, đầy đủ, mà những người tài giỏi, những đoàn thể to lớn...",
+      "options": {
+        "A": "Nghĩ mãi không ra",
+        "B": "Nghĩ mãi mới ra",
+        "C": "Làm mãi không được",
+        "D": "Làm mãi mới được"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15777-d3927821cf624150823393daaf771d42.jpg?hash=6Aca-tAQeB",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Dân ta rất trí tuệ, họ giải quyết nhiều vấn đề mau chóng mà những người tài giỏi, đoàn thể to lớn 'nghĩ mãi không ra'.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 194,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 14,
+      "chooseType": "Choose answer",
+      "question": "Hồ Chí Minh cho rằng thầy giáo, cô giáo trong chế độ ta cần góp phần vào công cuộc nào?",
+      "options": {
+        "A": "Công cuộc xây dựng CNXH",
+        "B": "Công cuộc kháng chiến chống Mỹ cứu nước",
+        "C": "Công cuộc xây dựng xã hội mới",
+        "D": "Kháng chiến chống Pháp"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15778-b9e5308dfa8de35dbafd82f1e4c13752.jpg?hash=WaZZi1Hth6",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Thầy giáo, cô giáo góp phần quan trọng vào công cuộc xây dựng chủ nghĩa xã hội.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 195,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 15,
+      "chooseType": "Choose 1 answer",
+      "question": "Nội dung nào không đúng với tư tưởng Hồ Chí Minh để xác định bước đi và tìm cách làm của chủ nghĩa xã hội phù hợp với Việt Nam cần phải thực hiện điều gì?",
+      "options": {
+        "A": "Theo bước đi của các nước xã hội chủ nghĩa, vừa làm vừa tìm kiếm mô hình phù hợp",
+        "B": "Quán triệt dựa trên nền tảng của chủ nghĩa Mác-Lênin về xây dựng chế độ mới, có thể tham khảo, học tập kinh nghiệm của các nước anh em",
+        "C": "Xuất phát từ điều kiện thực tế, đặc điểm dân tộc, nhu cầu và khả năng thực tế của nhân dân",
+        "D": "Xây dựng phải đi đôi với chống, lấy xây làm chính để loại trừ các lực cản của chế độ cũ và chủ nghĩa cá nhân"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15779-1a21f0e0070db9600d2ae3ae4534773f.jpg?hash=g3UPo_ms70",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Hồ Chí Minh phản đối việc rập khuôn máy móc theo bước đi của các nước khác.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 196,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 16,
+      "chooseType": "Choose answer",
+      "question": "Đâu là câu trả lời chính xác và đầy đủ nhất theo tư tưởng Hồ Chí Minh?",
+      "options": {
+        "A": "Đảng Cộng sản Việt Nam là một thành viên của Mặt trận dân tộc thống nhất",
+        "B": "Đảng Cộng sản Việt Nam là lực lượng lãnh đạo Mặt trận",
+        "C": "Đảng Cộng sản Việt Nam vừa là thành viên, vừa là lực lượng lãnh đạo Mặt trận",
+        "D": "Đảng Cộng sản Việt Nam không là thành viên của Mặt trận dân tộc thống nhất"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15780-9a5c2b448eb46a684cf383442227c9e7.jpg?hash=YcnL-h9I6p",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 197,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 17,
+      "chooseType": "Choose answer",
+      "question": "Hồ Chí Minh nhìn nhận con người như điều gì?",
+      "options": {
+        "A": "Chính thể",
+        "B": "Tế bào",
+        "C": "Xã hội",
+        "D": "Cộng đồng"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15781-70c5433d77bd67e4cab1a9eb7d38bd94.jpg?hash=rYGd-OfltS",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Hồ Chí Minh nhìn nhận con người như một chỉnh thể đa dạng, thống nhất.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 198,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 18,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh nhân tố nào sau đây quyết định thành công của thời kỳ quá độ lên chủ nghĩa xã hội?",
+      "options": {
+        "A": "Con người",
+        "B": "Văn hóa",
+        "C": "Xã hội",
+        "D": "Kinh tế"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15782-b20f06a9f989d9489f59fe49e7c84ff9.jpg?hash=pGJ5N5Aqbn",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Con người là nhân tố quyết định thành công của thời kỳ quá độ lên CNXH.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 199,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 19,
+      "chooseType": "Choose answer",
+      "question": "Điểm giống trong tư tưởng về xây dựng nhà nước của Hồ Chí Minh và các bậc tiền nhân trong lịch sử là gì?",
+      "options": {
+        "A": "Dựa vào bạo lực vũ trang",
+        "B": "Dựa vào dân",
+        "C": "Dựa vào tài năng, trí tuệ, óc phán đoán",
+        "D": "Dựa vào đạo đức cách mạng"
+      },
+      "answer": "B",
+      "image": "https://fuexam.me/data/attachments/15/15783-14bad0a77e4f8eda1203e43beb1b5b7c.jpg?hash=NZ5znDyCIp",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Điểm giống nhau cốt lõi là tư tưởng 'Dựa vào dân', lấy dân làm gốc.",
+        "whyCorrect": "• Đáp án [B] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 200,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 20,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, muốn tăng cường đoàn kết quốc tế trong cuộc đấu tranh vì mục tiêu chung các Đảng Cộng sản phải tiến hành có hiệu quả việc giáo dục chủ nghĩa yêu nước chân chính kết hợp với điều gì?",
+      "options": {
+        "A": "Chủ nghĩa quốc tế vô sản",
+        "B": "Chủ nghĩa xã hội",
+        "C": "Chủ nghĩa quốc tế",
+        "D": "Chủ nghĩa Mác - Lênin"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15784-10d54dd6550c982635774ba456c0173a.jpg?hash=A2Xoj_ehMa",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Kết hợp chủ nghĩa yêu nước chân chính với chủ nghĩa quốc tế vô sản.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 201,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 21,
+      "chooseType": "Choose answer",
+      "question": "Hồ Chí Minh cho rằng cán bộ muốn hướng dẫn nhân dân phải như thế nào?",
+      "options": {
+        "A": "Làm mực thước cho nhân dân bắt chước",
+        "B": "Làm gương cho nhân dân",
+        "C": "Làm mô hình cho dân theo",
+        "D": "Làm quan cách mạng"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15785-f154e170e158874f903bee2fb421c640.jpg?hash=58LwFMFGup",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 202,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 22,
+      "chooseType": "Choose answer",
+      "question": "Đoàn kết quốc tế theo tư tưởng Hồ Chí Minh được xác định có vai trò như thế nào?",
+      "options": {
+        "A": "Một nhân tố thường xuyên và hết sức quan trọng giúp cho cách mạng Việt Nam đi đến thắng lợi hoàn toàn",
+        "B": "Có ý nghĩa sống còn đối với cách mạng Việt Nam",
+        "C": "Vấn đề cơ bản của cách mạng Việt Nam",
+        "D": "Sức mạnh giúp cho dân tộc ta vượt qua mọi thử thách, khó khăn trong dựng nước và giữ nước"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15786-2394656fba3647a232cea70b1ec5069b.jpg?hash=2Z_JBYRWgx",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 203,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 23,
+      "chooseType": "Choose answer",
+      "question": "Đâu là quan điểm của Hồ Chí Minh về bản chất con người?",
+      "options": {
+        "A": "Bản chất con người mang tính xã hội",
+        "B": "Bản chất con người mang tính nhân dân",
+        "C": "Bản chất con người mang tính dân chủ",
+        "D": "Bản chất con người mang tính kế thừa"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15787-b37cba447f0ceac04a95fd12ac6fcb79.jpg?hash=EKgJ3nAvny",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 204,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 24,
+      "chooseType": "Choose answer",
+      "question": "Trong các luận điểm sau đây về văn hóa, luận điểm nào Hồ Chí Minh nói về tính chất của nền văn hóa?",
+      "options": {
+        "A": "Phải nâng cao trình độ văn hóa của nhân dân",
+        "B": "Phải xây dựng một nền văn hóa dân tộc, khoa học và đại chúng",
+        "C": "Văn hóa cũng là một mặt trận",
+        "D": "Xây dựng đức tin vững chắc"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15788-793444fe20afab735d126026f4e6b61b.jpg?hash=OZGajWm-Yc",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 205,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 25,
+      "chooseType": "Choose answer",
+      "question": "Đại đoàn kết dân tộc được xác định là nhiệm vụ nào trong những nhiệm vụ dưới đây của Đảng và của toàn dân tộc ta?",
+      "options": {
+        "A": "Cơ bản của Đảng và của dân tộc",
+        "B": "Hàng đầu của Đảng và của dân tộc",
+        "C": "Quan trọng của Đảng và của dân tộc ta",
+        "D": "Thiết yếu"
+      },
+      "answer": "B",
+      "image": "https://fuexam.me/data/attachments/15/15789-c83d8897dd17dee8aa357e841e92a349.jpg?hash=48HVMKHBdj",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Đại đoàn kết dân tộc là nhiệm vụ hàng đầu của Đảng và của toàn dân tộc.",
+        "whyCorrect": "• Đáp án [B] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 206,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 26,
+      "chooseType": "Choose answer",
+      "question": "Hồ Chí Minh cho rằng xây dựng văn hóa mới trước hết cần phải làm gì?",
+      "options": {
+        "A": "Tư tưởng phải được tự do",
+        "B": "Tư tưởng phải được nuôi dưỡng",
+        "C": "Phải xây dựng xã hội dân chủ",
+        "D": "Tiếp thu tất cả các văn hóa du nhập"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15790-9a3b289b7395e0bf4c35e52e04ac448b.jpg?hash=sQgnlc-bJx",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Xây dựng văn hóa mới trước hết tư tưởng phải được tự do (giải phóng tư tưởng).",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 207,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 27,
+      "chooseType": "Choose 1 answer",
+      "question": "Theo Hồ Chí Minh, đoàn kết phải căn cứ vào điều gì?",
+      "options": {
+        "A": "Đấu tranh",
+        "B": "Lợi ích chung",
+        "C": "Tự do",
+        "D": "Phê bình"
+      },
+      "answer": "B",
+      "image": "https://fuexam.me/data/attachments/15/15791-624802d5e747aae20e082f1d1f7402ac.jpg?hash=mBGKFG-ua9",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Đoàn kết phải dựa trên nền tảng mục tiêu và lợi ích chung của dân tộc.",
+        "whyCorrect": "• Đáp án [B] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 208,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 28,
+      "chooseType": "Choose answer",
+      "question": "Theo quan điểm của Hồ Chí Minh, phẩm chất đạo đức nào là quan trọng nhất, bao trùm nhất, chi phối các phẩm chất khác?",
+      "options": {
+        "A": "Trung với nước, hiếu với dân",
+        "B": "Cần kiệm, liêm, chính, chí công vô tư",
+        "C": "Có tình yêu thương con người, sống có tình, có nghĩa",
+        "D": "Có tinh thần quốc tế trong sáng"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15792-2531833491061916c766bf790b6f63aa.jpg?hash=9yH_ZDBjgh",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Trung với nước, hiếu với dân là phẩm chất đạo đức quan trọng nhất, bao trùm nhất.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 209,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 29,
+      "chooseType": "Choose answer",
+      "question": "Nguyễn Ái Quốc đọc Sơ thảo lần thứ nhất luận cương về vấn đề dân tộc và vấn đề thuộc địa của Lênin vào thời gian nào?",
+      "options": {
+        "A": "7/1917",
+        "B": "7/1918",
+        "C": "7/1919",
+        "D": "7/1920"
+      },
+      "answer": "D",
+      "image": "https://fuexam.me/data/attachments/15/15793-9e0167b1cf0bfbef6b5d7f90bc465930.jpg?hash=fxbT5Me2ga",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Nguyễn Ái Quốc đọc Luận cương của Lênin vào tháng 7/1920 trên báo L'Humanité.",
+        "whyCorrect": "• Đáp án [D] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 210,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 30,
+      "chooseType": "Choose answer",
+      "question": "Chọn phương án trả lời đúng nhất theo tư tưởng Hồ Chí Minh về bản chất của nhà nước Việt Nam?",
+      "options": {
+        "A": "Mang bản chất giai cấp công nhân",
+        "B": "Có tính dân tộc, tính nhân dân sâu sắc",
+        "C": "Có sự thống nhất bản chất giai cấp công nhân với tính nhân dân và tính dân tộc",
+        "D": "Mang tính dân tộc"
+      },
+      "answer": "C",
+      "image": "https://fuexam.me/data/attachments/15/15794-1daeedb29f21de90f4d6004c6606bb25.jpg?hash=XphVV6M9_g",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Nhà nước Việt Nam có sự thống nhất giữa bản chất giai cấp công nhân với tính nhân dân và tính dân tộc.",
+        "whyCorrect": "• Đáp án [C] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 211,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 31,
+      "chooseType": "Choose answer",
+      "question": "Nguyên tắc chung của Mặt trận dân tộc thống nhất được Hồ Chí Minh xác định cụ thể phù hợp là gì?",
+      "options": {
+        "A": "Đoàn kết chặt chẽ, lâu dài, thật sự, chân thành",
+        "B": "Chống chiến tranh xâm lược",
+        "C": "Độc lập, tự do",
+        "D": "Độc lập, bình đẳng"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15795-0e12b874bb183830fdcec716a0292721.jpg?hash=v2v8wDmGsC",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 212,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 32,
+      "chooseType": "Choose answer",
+      "question": "Hồ Chí Minh cho rằng đạo đức có vai trò thế nào?",
+      "options": {
+        "A": "Đạo đức là gốc của người cách mạng",
+        "B": "Đạo đức là gốc của người xã hội",
+        "C": "Đạo đức là gốc của người công chúng",
+        "D": "Đạo đức là gốc của người lãnh đạo"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15796-edf83a77849117f75171c9924df665b3.jpg?hash=As8a-lLncM",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 213,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 33,
+      "chooseType": "Choose answer",
+      "question": "Lực lượng đoàn kết quốc tế theo Hồ Chí Minh cần phải đoàn kết với đối tượng nào?",
+      "options": {
+        "A": "Giai cấp công nhân, lực lượng xã hội chủ nghĩa, phong trào cộng sản và công nhân quốc tế với các dân tộc thuộc địa bị áp bức và các lực lượng tiến bộ trên thế giới",
+        "B": "Giai cấp nông dân, lực lượng xã hội chủ nghĩa, phong trào cộng sản và công nhân quốc tế với các dân tộc thuộc địa bị áp bức và các lực lượng tiến bộ trên thế giới",
+        "C": "Giai cấp lao động, lực lượng xã hội chủ nghĩa, phong trào cộng sản và công nhân quốc tế với các dân tộc thuộc địa bị áp bức và các lực lượng tiến bộ trên thế giới",
+        "D": "Tầng lớp trí thức, lực lượng xã hội chủ nghĩa, phong trào cộng sản và công nhân quốc tế, với các dân tộc thuộc địa bị áp bức và các lực lượng tiến bộ trên thế giới"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15797-b90e815b04f26d0ac7c6c91df42c20e2.jpg?hash=0Lps5wBI87",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 214,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 34,
+      "chooseType": "Choose answer",
+      "question": "Vấn đề dân tộc trong tư tưởng Hồ Chí Minh là sự kết hợp nhuần nhuyễn:",
+      "options": {
+        "A": "Dân tộc với giai cấp",
+        "B": "Độc lập dân tộc và chủ nghĩa xã hội",
+        "C": "Chủ nghĩa yêu nước với chủ nghĩa quốc tế",
+        "D": "Tất cả các phương án"
+      },
+      "answer": "D",
+      "image": "https://fuexam.me/data/attachments/15/15798-2a24f1a0fffa8bcc99e8b9e7779ad170.jpg?hash=6iobYLgNxh",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Kết hợp nhuần nhuyễn dân tộc - giai cấp, độc lập dân tộc - CNXH, yêu nước - quốc tế.",
+        "whyCorrect": "• Đáp án [D] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 215,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 35,
+      "chooseType": "Choose answer",
+      "question": "Giai đoạn nào sau đây Hồ Chí Minh bổ sung và hoàn thiện tư tưởng của mình?",
+      "options": {
+        "A": "1911 đến 1920",
+        "B": "1930 đến 1969",
+        "C": "1941 đến 1969",
+        "D": "1921 đến 1930"
+      },
+      "answer": "C",
+      "image": "https://fuexam.me/data/attachments/15/15799-614e958425b68f731a4c9edf2ea9dada.jpg?hash=6xbRQ0IT8L",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Giai đoạn 1941 - 1969 là giai đoạn phát triển, bổ sung và hoàn thiện tư tưởng Hồ Chí Minh.",
+        "whyCorrect": "• Đáp án [C] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 216,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 36,
+      "chooseType": "Choose answer",
+      "question": "Trong giai đoạn 1923-1924, Quảng Châu Trung Quốc được mệnh danh là:",
+      "options": {
+        "A": "Moskva của Phương Đông",
+        "B": "Trung tâm của cách mạng vô sản",
+        "C": "Thủ Phủ Cộng Sản",
+        "D": "Căn cứ quốc tế vô sản"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15800-5abb9d03421a32b0ec89463e087e625c.jpg?hash=h45KusJLnJ",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 217,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 37,
+      "chooseType": "Choose answer",
+      "question": "Chủ tịch Hồ Chí Minh là hiện thân cho tinh thần dân tộc ta, Người đã nói rằng: \"Cái mà tôi cần nhất trên đời là... đồng bào tôi được tự do\". Chọn đáp án đúng nhất điền vào dấu ...",
+      "options": {
+        "A": "Tổ quốc tôi được độc lập",
+        "B": "Đất nước tôi được thống nhất",
+        "C": "Tổ quốc tôi được bình đẳng",
+        "D": "Đất nước tôi được phát triển"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15801-65e6972b9e83574d238e458321428380.jpg?hash=3uB3C_nlVs",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 218,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 38,
+      "chooseType": "Choose answer",
+      "question": "Lối sống ích kỷ, chỉ biết có riêng mình, thu vén cho riêng mình, chỉ thấy công lao của mình mà quên công lao của người khác. Theo Hồ Chí Minh là gì?",
+      "options": {
+        "A": "Chủ nghĩa cá nhân",
+        "B": "Chủ nghĩa vị kỷ",
+        "C": "Theo Hồ Chí Minh là gì?A. Chủ nghĩa cá nhânB. Chủ nghĩa vị kỷC. Chủ nghĩa tư bản",
+        "D": "Phong cách tiểu tư sản"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15802-346d22ce6b3c0785deaa5e58baaaecd4.jpg?hash=GRVfTu3t1Z",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 219,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 39,
+      "chooseType": "Choose answer",
+      "question": "\"Nếu nước độc lập mà dân không hưởng hạnh phúc tự do, thì độc lập cũng chẳng có nghĩa lý gì\". Trích dẫn trên đề cập đến nội dung gì trong tư tưởng Hồ Chí Minh?",
+      "options": {
+        "A": "Độc lập dân tộc gắn liền với chủ nghĩa xã hội",
+        "B": "Về sức mạnh của nhân dân, của khối đại đoàn kết dân tộc",
+        "C": "Tư tưởng về phát triển kinh tế và văn hóa",
+        "D": "Tu dưỡng, rèn luyện đạo đức suốt đời"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15803-555bca14c65f10895f9a038d410ef252.jpg?hash=IJj190uvoD",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Độc lập dân tộc phải gắn liền với CNXH và tự do, hạnh phúc của nhân dân.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 220,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 40,
+      "chooseType": "Choose answer",
+      "question": "Theo tư tưởng Hồ Chí Minh, Đảng Cộng sản Việt Nam vừa là người lãnh đạo, vừa là người đầy tớ trung thành của nhân dân, Đảng phải chăm lo mối quan hệ giữa Đảng với dân là nhằm mục đích gì?",
+      "options": {
+        "A": "Xác định vị thế cầm quyền của Đảng",
+        "B": "Xác định phương thức cầm quyền của Đảng",
+        "C": "Xác định năng lực cầm quyền của Đảng",
+        "D": "Xác định tính chất cầm quyền của Đảng"
+      },
+      "answer": "B",
+      "image": "https://fuexam.me/data/attachments/15/15804-a149cbf14b7ce594261c1baca71f85d5.jpg?hash=ww_ua5ZjJ1",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Xác định phương thức cầm quyền và bản chất vì dân của Đảng.",
+        "whyCorrect": "• Đáp án [B] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 221,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 41,
+      "chooseType": "Choose answer",
+      "question": "Trong thời gian ở nước ngoài, Nguyễn Tất Thành đã làm những công việc gì?",
+      "options": {
+        "A": "Đốt lò, bán báo",
+        "B": "Thợ ảnh, làm bánh",
+        "C": "Phụ bếp, cào tuyết",
+        "D": "Tất cả các công việc"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15805-0b86e8ec1b5d4b3a0ff663bdcfa5b678.jpg?hash=7bsCSYiNXJ",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 222,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 42,
+      "chooseType": "Choose answer",
+      "question": "Kiểm soát quyền lực Nhà nước và phòng, chống tiêu cực trong Nhà nước, được xác định là nội dung nào trong tư tưởng Hồ Chí Minh về Nhà nước của nhân dân, do nhân dân, vì nhân dân?",
+      "options": {
+        "A": "Nhà nước dân chủ",
+        "B": "Nhà nước pháp quyền",
+        "C": "Nhà nước trong sạch, vững mạnh",
+        "D": "Xây dựng nhà nước"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15806-8855b94583b1c23147aeea521ec920db.jpg?hash=wQ-eaWexk7",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 223,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 43,
+      "chooseType": "Choose 3 answers",
+      "question": "Theo Hồ Chí Minh, Đảng lãnh đạo Nhà nước bằng các phương thức nào?",
+      "options": {
+        "A": "Đường lối, chủ trương, chính sách",
+        "B": "Qua các tổ chức Đảng, đảng viên trong bộ máy nhà nước",
+        "C": "Bằng công tác kiểm tra",
+        "D": "Qua các tổ chức tôn giáo, giáo phái"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15807-1eeb90dbba838772f3a1b832ef133289.jpg?hash=wAV654R0Om",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 224,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 44,
+      "chooseType": "Choose answer",
+      "question": "Vận dụng tư tưởng Hồ Chí Minh trong chiến lược đoàn kết quốc tế thì bộ phận nào là hạt nhân đoàn kết dân tộc và đoàn kết quốc tế?",
+      "options": {
+        "A": "Đảng Cộng sản Việt Nam",
+        "B": "Nhà nước",
+        "C": "Mặt trận Tổ quốc",
+        "D": "Đoàn thanh niên"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15808-56f7a09b1baaff85b558ad661d4d63ee.jpg?hash=9y9tv66kyY",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Đảng Cộng sản Việt Nam là hạt nhân của khối đại đoàn kết dân tộc và đoàn kết quốc tế.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 225,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 45,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, Đảng Cộng sản Việt Nam là Đảng như thế nào?",
+      "options": {
+        "A": "Cầm quyền",
+        "B": "Quản lý",
+        "C": "Phân quyền",
+        "D": "Làm chủ"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15809-e09186775a6dbfbec4667e9da91ef3b4.jpg?hash=qixKyUnZF7",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Hồ Chí Minh khẳng định: 'Đảng ta là một Đảng cầm quyền'.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 226,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 46,
+      "chooseType": "Choose answer",
+      "question": "\"Đạo đức cách mạng không phải trên trời sa xuống. Nó do đấu tranh, rèn luyện bền bỉ hàng ngày mà phát triển và củng cố. Cũng như ngọc càng mài càng sáng, vàng càng luyện càng trong\". Luận điểm trên đây diễn đạt nội dung nào trong tư tưởng Hồ Chí Minh về đạo đức?",
+      "options": {
+        "A": "Vai trò của đạo đức cách mạng",
+        "B": "Nguyên tắc xây dựng đạo đức mới",
+        "C": "Nội dung của đạo đức cách mạng",
+        "D": "Tất cả các phương án"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15810-ef7df49b3fd6db72f75fe7737280bbd7.jpg?hash=yfbbaM4rqQ",
+      "source": "HCM202_SP26_B5_FE",
+      "explanation": {
+        "concept": "• Hồ Chí Minh viết: Đạo đức cách mạng không phải từ trên trời sa xuống, nó do đấu tranh, rèn luyện bền bỉ hàng ngày mà phát triển.",
+        "whyCorrect": "• Đáp án [A] chuẩn xác theo Giáo trình Tư tưởng Hồ Chí Minh (NXB Chính trị quốc gia Sự thật, 2021)."
+      }
+    },
+    {
+      "id": 227,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 47,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, để lãnh đạo mặt trận, Đảng phải có cái gì?",
+      "options": {
+        "A": "Có chính sách mặt trận đúng đắn",
+        "B": "Có chính sách đoàn kết đúng đắn",
+        "C": "Có chính sách tập hợp đúng đắn",
+        "D": "Có chính sách ngoại giao đúng đắn"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15811-433f2405df0934fd9b81e869b852576d.jpg?hash=m206XSiGiM",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 228,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 48,
+      "chooseType": "Choose answer",
+      "question": "Chọn câu trả lời đúng nhất với tư tưởng Hồ Chí Minh về vai trò của đại đoàn kết dân tộc?",
+      "options": {
+        "A": "Đại đoàn kết dân tộc là vấn đề sách lược",
+        "B": "Đại đoàn kết dân tộc là vấn đề chiến lược",
+        "C": "Đại đoàn kết dân tộc là thủ đoạn chính trị",
+        "D": "Đại đoàn kết dân tộc là phương pháp chính trị"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15812-5891ab66e6526dc168ebe23c3b00dfd0.jpg?hash=Qno9KeGQCU",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 229,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 49,
+      "chooseType": "Choose answer",
+      "question": "Hồ Chí Minh cho rằng giải phóng dân tộc là sự nghiệp của ai?",
+      "options": {
+        "A": "Toàn dân",
+        "B": "Toàn quân",
+        "C": "Toàn Đảng",
+        "D": "Giai cấp công nhân"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15813-a77a7fa60ef2d2c11c1a09da481ae8e5.jpg?hash=GQ1MB87YvZ",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 230,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 50,
+      "chooseType": "Choose answer",
+      "question": "Nguyễn Ái Quốc đến Liên Xô lần đầu tiên học tại trường nào?",
+      "options": {
+        "A": "Đại học Liên Xô",
+        "B": "Đại học Phương Đông",
+        "C": "Trường quốc tế Lênin",
+        "D": "Viện nghiên cứu các vấn đề dân tộc và thuộc địa"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15814-434103b766b80441f4953d41bcf7cad9.jpg?hash=1CX4-gxdH9",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 231,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 51,
+      "chooseType": "Choose 1 answer",
+      "question": "Theo Hồ Chí Minh, cách mạng giải phóng dân tộc muốn thắng lợi:",
+      "options": {
+        "A": "Phải đi theo con đường cách mạng vô sản",
+        "B": "Phải đi theo con đường cách mạng Pháp, Mỹ",
+        "C": "Phải đi theo con đường cách mạng tháng Mười Nga",
+        "D": "Phải đi theo con đường cách mạng của các bậc tiền bối Việt Nam"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15815-3b7538f1492258e5611dc62c6880064b.jpg?hash=MQs4NrqqqH",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 232,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 52,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, ưu điểm lớn nhất của chủ nghĩa Tam dân của Tôn Trung Sơn là gì?",
+      "options": {
+        "A": "Chống phong kiến",
+        "B": "Đấu tranh vì tự do, dân chủ",
+        "C": "Phù hợp với điều kiện thực tế nước ta",
+        "D": "Phù hợp với truyền thống"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15816-0d0aa9456f45ba21815f741a33b49ff1.jpg?hash=JuSxMLTyUV",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 233,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 53,
+      "chooseType": "Choose answer",
+      "question": "Quan điểm nào dưới đây là phương thức tiếp cận về chủ nghĩa xã hội của Hồ Chí Minh?",
+      "options": {
+        "A": "Hồ Chí Minh tiếp cận chủ nghĩa xã hội từ phương diện đạo đức. Chủ nghĩa xã hội là đối lập với chủ nghĩa cá nhân.",
+        "B": "Hồ Chí Minh tiếp cận chủ nghĩa xã hội từ phương diện đạo đứ",
+        "C": "Chủ nghĩa xã hội là đối lập với chủ nghĩa cá nhân.B. Hồ Chí Minh tiếp cận chủ nghĩa xã hội từ phương diện đạo đức. Chủ nghĩa xã hội là đối lập với chủ nghĩa nhân văn.C. Hồ Chí Minh tiếp cận chủ nghĩa xã hội từ phương diện đạo đức. Chủ nghĩa xã hội là đối lập với chủ nghĩa vị lợi.",
+        "D": "Hồ Chí Minh tiếp cận chủ nghĩa xã hội từ phương diện đạo đức. Chủ nghĩa xã hội là đối lập với chủ nghĩa vị kỷ."
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15817-75f796323f6979911fc7c9e4193c57c7.jpg?hash=EJUcD0SE9L",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 234,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 54,
+      "chooseType": "Choose answer",
+      "question": "\"Đến ngày thắng lợi, nhân dân ta sẽ xây dựng lại đất nước ta đàng hoàng hơn, to đẹp hơn\". Điều khẳng định trên được Hồ Chí Minh nêu ra tại văn kiện nào sau đây?",
+      "options": {
+        "A": "Lời kêu gọi toàn quốc kháng chiến",
+        "B": "Bài phát biểu tại lễ kỷ niệm 30 năm thành lập Đảng",
+        "C": "Lời kêu gọi đồng bào và chiến sĩ cả nước",
+        "D": "Di chúc"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15818-2f6e45502b8039ba552088b68bd91879.jpg?hash=u0pnWLw-La",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 235,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 55,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, vấn đề cốt lõi của cách mạng giải phóng dân tộc thuộc địa là:",
+      "options": {
+        "A": "Vấn đề tự do dân chủ",
+        "B": "Vấn đề độc lập dân tộc",
+        "C": "Vấn đề ruộng đất",
+        "D": "Phương án D"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15819-9ad30980086c8d636d40e9b4527fe51f.jpg?hash=QTg8KREW9A",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 236,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 56,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, mọi người phải hiểu và tuyệt đối chấp hành pháp luật, bất kể người đó giữ cương vị nào. Vì thần linh pháp quyền là:",
+      "options": {
+        "A": "Sức mạnh do thần linh và vì con người",
+        "B": "Sức mạnh do con người và vì con người",
+        "C": "Sức mạnh do con người và vì thần linh",
+        "D": "Phương án D"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15820-af3f1e910f0d6d79a7c3c240d77def6c.jpg?hash=Zn8VHt_MzD",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 237,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 57,
+      "chooseType": "Choose answer",
+      "question": "Theo Tư tưởng Hồ Chí Minh, văn hóa có mấy chức năng chủ yếu?",
+      "options": {
+        "A": "Hai",
+        "B": "Ba",
+        "C": "Bốn",
+        "D": "Năm"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15821-41aabd5a99c60dcc9887787152a693b9.jpg?hash=kSxuhAnQmg",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 238,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 58,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, nội dung cốt lõi của vấn đề dân tộc thuộc địa là gì?",
+      "options": {
+        "A": "Tự do, dân chủ",
+        "B": "Độc lập, tự do",
+        "C": "Người cày có ruộng",
+        "D": "Quyền con người"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15822-bb8e36420bc6bd62a75c0e9e6d0512f2.jpg?hash=3olEMqygaR",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 239,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 59,
+      "chooseType": "Choose answer",
+      "question": "Theo Hồ Chí Minh, vì trùng rất độc này đẻ ra, không dám đổi mới sáng tạo. Người đang đề cập đến vấn đề gì?",
+      "options": {
+        "A": "Chủ nghĩa cá nhân",
+        "B": "Đế quốc",
+        "C": "Chủ nghĩa tư bản",
+        "D": "Giặc đói"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15823-b38a13a36a37c26ac95af3ec44aca0c6.jpg?hash=GgDYb7N2rj",
+      "source": "HCM202_SP26_B5_FE"
+    },
+    {
+      "id": 240,
+      "task": "sp26_b5_fe",
+      "taskLabel": "SP26 B5 FE",
+      "num": 60,
+      "chooseType": "Choose answer",
+      "question": "Khẩu hiệu Tự do - Bình đẳng - Bác ái ra đời ở đâu?",
+      "options": {
+        "A": "Đại cách mạng Pháp",
+        "B": "Cách mạng Tân Hợi của Tôn Trung Sơn",
+        "C": "Cải cách Minh Trị - Nhật Bản",
+        "D": "Phong trào Duy Tân của Phan Châu Trinh"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/15/15824-789a610924fb15dd5440dac5544ec0c6.jpg?hash=TqvpVTxJO4",
+      "source": "HCM202_SP26_B5_FE"
+    }
+  ]
+}

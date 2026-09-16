@@ -1,0 +1,1028 @@
+{
+  "subject": "hcm202",
+  "task": "su26_fe_re",
+  "taskLabel": "SU26 FE RE",
+  "count": 60,
+  "questions": [
+    {
+      "id": 1,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 1,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 1",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19736-8fa21db7ca310f32a32a67459970ddd2.jpg?hash=UaOBJLKkUe",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 2,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 2,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 2",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19737-dd276107105294c8a15941ccabde2a48.jpg?hash=HHu1i133-u",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 3,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 3,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 3",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19738-c6b0e0148e527b8daba66ca78784a518.jpg?hash=xH1APckP7h",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 4,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 4,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 4",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19739-7263e5e36353325f65adc06df4dc59cb.jpg?hash=BrXsIEW9jX",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 5,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 5,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 5",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19740-b0981dbf8de900ad32c69127e97da280.jpg?hash=6Qt37QC979",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 6,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 6,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 6",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19741-4500c622065f9771b1af9bd4e769d53c.jpg?hash=-fbw7Q7TiA",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 7,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 7,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 7",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19742-21e2c2f4fa8935ba7d0fb03f184acf2e.jpg?hash=AU4xsipQ1O",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 8,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 8,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 8",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19743-464fa01c8af8ed8f65a5684eeb87447e.jpg?hash=Y9QkfGFzTn",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 9,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 9,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 9",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19744-bcc9ae91722c25be25a9e586a085dbc5.jpg?hash=q10HtjA3zj",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 10,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 10,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 10",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19745-6269fcb81dadd9404ee8f5cd831130f1.jpg?hash=C9OJJz5QdM",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 11,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 11,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 11",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19746-84ab4d1f75df49a6c50ec847a276b97e.jpg?hash=6FCrkxLHQO",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 12,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 12,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 12",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19747-9c9b9df57f29bb3db38d207ab6a06b10.jpg?hash=WMHouTid8m",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 13,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 13,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 13",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19748-4a100e7710e2c60d60fedff38df472c0.jpg?hash=f1LSMlwypW",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 14,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 14,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 14",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19749-fbcbe20d2b185a19943d1de9dc4ba10e.jpg?hash=ul1oj0NrXQ",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 15,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 15,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 15",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19750-70173f867a5e762b706607d1c82debbe.jpg?hash=w_xt3GQV6v",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 16,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 16,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 16",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19751-c37c1cc28036e28ecad843217255036b.jpg?hash=OzFndKoghB",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 17,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 17,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 17",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19752-37c94caaeb97c5b742095f88a2e342e8.jpg?hash=BaiPerpds0",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 18,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 18,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 18",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19753-1198e8d7f1bfe0741942bf99ee1efa11.jpg?hash=wzHzaFHM_6",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 19,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 19,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 19",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19754-d40b42a0a68295a7adc8693b9b2391b9.jpg?hash=IpXBrM_HJc",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 20,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 20,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 20",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19755-580b55de712bba4e2273a371ec01db59.jpg?hash=SakS_SQudN",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 21,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 21,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 21",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19756-21a3d26caaafe31ac0a28f44a726cb00.jpg?hash=kmaV7LOgJO",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 22,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 22,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 22",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19757-7a14bc574c93d64f309c8da728b83eac.jpg?hash=o6LPBr2ZwG",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 23,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 23,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 23",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19758-9b5e139281c22f3b7364bdfd1dd6bac4.jpg?hash=lEgh0UtNPG",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 24,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 24,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 24",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19759-deb06061a25e737a8bb1c1508aa3bea3.jpg?hash=8XrZ1-7dPU",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 25,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 25,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 25",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19760-4f1ba1396b9e051f41fd7078eebeb579.jpg?hash=0cycynwYgV",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 26,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 26,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 26",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19761-dfbf53144ad2b49de848ac435d176af0.jpg?hash=6GFrgaEp-U",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 27,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 27,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 27",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19762-bdf28f929ef8d3f6171c76c2f17d5be7.jpg?hash=fUVLsFHuEs",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 28,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 28,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 28",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19763-245bc66f0f6894352d65310240b56d53.jpg?hash=2vE2rtQrAd",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 29,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 29,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 29",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19764-213de1db37aa8eb158180bda0fb18732.jpg?hash=fqXAsOlbc4",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 30,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 30,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 30",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19765-e98786c079cf6663939a51e8766bdb7b.jpg?hash=p29HvGItQM",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 31,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 31,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 31",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19766-25ff13dfd32c9ed65c035a37d07fd09b.jpg?hash=_hg_mdfAUx",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 32,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 32,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 32",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19767-452e8a0bf80c522239acda89ca1cc483.jpg?hash=7RRyJIszGv",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 33,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 33,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 33",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19768-7c764aac526031bcf2538621b794e836.jpg?hash=xz4woNMxVD",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 34,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 34,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 34",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19769-12dfb9db8be60787e4df0765745d2149.jpg?hash=5icqb-zX8b",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 35,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 35,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 35",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19770-68525b369018f471909f33ec8ae7cfc2.jpg?hash=g0Uof1KTEd",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 36,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 36,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 36",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19771-edff6c6ab70938a7fb21888162bd6310.jpg?hash=NPPWabJsKq",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 37,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 37,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 37",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19772-19d62602fc0bf0d4344b24c2daa4c7d3.jpg?hash=htbJo5I6e2",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 38,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 38,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 38",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19773-374cd03f85db15416a0f3cb6170b28cf.jpg?hash=yxTSDodx38",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 39,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 39,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 39",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19774-1ea3d1510d38437dc6977e87df4bbf0b.jpg?hash=zua5_GwjHl",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 40,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 40,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 40",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19775-cc62a7a39678436e101a1d870ad3f360.jpg?hash=kzmSXrkOdg",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 41,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 41,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 41",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19776-7aee2d0391c8cfa9cc56000f8c6d805b.jpg?hash=H1oysMNDKV",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 42,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 42,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 42",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19777-b38da6b5b559adc8d0c3ba48f33869cb.jpg?hash=TKQzDZPDQz",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 43,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 43,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 43",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19778-c4429624674ac6a32ee31fd5c2b182b3.jpg?hash=hVHfPmuoi1",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 44,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 44,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 44",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19779-ebca4af889a38a694a1620ece7626a39.jpg?hash=qfEJ2O55Go",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 45,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 45,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 45",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19780-af5a396d657280878579242743c5a8e9.jpg?hash=fqYt9v7JhA",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 46,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 46,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 46",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19781-868b233dad54577c5df0f556bcef965d.jpg?hash=r9jJpBVgZp",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 47,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 47,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 47",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19782-bfc227422627c877f9788172bf6b8b48.jpg?hash=_cLjkvWP_d",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 48,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 48,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 48",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19783-41e882073a4444a748920d80e8ac6533.jpg?hash=ma6fHKjx1f",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 49,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 49,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 49",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19784-98f7ec9877cda3e250457c469a89cb28.jpg?hash=FCXOFxJudG",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 50,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 50,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 50",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19785-756d6ea1ea43d2779535245b65b83439.jpg?hash=fp-zZ9u_W3",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 51,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 51,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 51",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19786-c9968d69ac014f76fd50a9c809722a7b.jpg?hash=Jos7nEkHLT",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 52,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 52,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 52",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19787-8539a1df73479d84dab5ff4b91737c35.jpg?hash=KvRDmpNXze",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 53,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 53,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 53",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19788-fe4eb7500f00dca198eefe1b1713b68b.jpg?hash=n6VxgIAo0b",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 54,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 54,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 54",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19789-a888c65b6d4107eba525263412375b15.jpg?hash=0YVNdYHPE9",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 55,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 55,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 55",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19790-e13e633e4740de17089785ed00e4e7c6.jpg?hash=sQ5Mf3Lfpt",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 56,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 56,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 56",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19791-9a1f597823f2a274f82ea26becf831e7.jpg?hash=GeqJKfPFOh",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 57,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 57,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 57",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19792-fb0d443dc9f47828b7afd208747a1c6f.jpg?hash=4WwAK_o57c",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 58,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 58,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 58",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19793-250e97f99784ecf04e86b0edf72c40b6.jpg?hash=SNOc9W3ju3",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 59,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 59,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 59",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19794-cc33823c56466ad4fbf895f5a7daa3ec.jpg?hash=ssl0g1OH0T",
+      "source": "HCM202_SU26_FE_RE"
+    },
+    {
+      "id": 60,
+      "task": "su26_fe_re",
+      "taskLabel": "SU26 FE RE",
+      "num": 60,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi SU26 FE RE] Câu 60",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/19/19795-5b21eb79f3b35c36167e7fe624327f04.jpg?hash=jIkHMpWNKH",
+      "source": "HCM202_SU26_FE_RE"
+    }
+  ]
+}

@@ -1,0 +1,1028 @@
+{
+  "subject": "hcm202",
+  "task": "fa25_fe",
+  "taskLabel": "FA25 FE",
+  "count": 60,
+  "questions": [
+    {
+      "id": 241,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 1,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 1",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38384-b5e2b515c995a0d7323c7736a56ba34b.jpg?hash=95tCg5_ohm",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 242,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 2,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 2",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38385-27c343fe06e25d003f014f0050ebec2b.jpg?hash=kl2ixyNK16",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 243,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 3,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 3",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38386-b16817e184301334c04921991336e2d5.jpg?hash=5gttgewzLm",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 244,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 4,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 4",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38387-4995173e88a54e1dca1533a1dce655ee.jpg?hash=5nR1iIMAJ3",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 245,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 5,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 5",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38388-113c7bac89418f17bfa397168baac555.jpg?hash=5cnGQ-iRh9",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 246,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 6,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 6",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38389-965fe50ac78fcd77cc5fb99970c902e2.jpg?hash=Bl26zsBOd8",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 247,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 7,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 7",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38390-dd4d742384baca9a75366c42c4887e2d.jpg?hash=bSJTqgx3_V",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 248,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 8,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 8",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38391-8725f10599cfe08dba1def9e8dba47bf.jpg?hash=1-KXIw-fWX",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 249,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 9,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 9",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38392-a05ea8c44daae1631745bd9ec510de1f.jpg?hash=8z6Nh-QRKf",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 250,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 10,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 10",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38393-30cec0ef4fa737c0213254dc6666fc91.jpg?hash=OEN_a-n55O",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 251,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 11,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 11",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38394-e1d7171a0ee621f106c29087ac47818a.jpg?hash=ALt-q--Vz1",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 252,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 12,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 12",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38395-6b5b9822a0b8c29873adfdccc552b9d7.jpg?hash=kNSMR9nTrX",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 253,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 13,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 13",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38396-7e2d89e109e9a3133bccfb247352e3ab.jpg?hash=F4Fcg0HLBU",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 254,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 14,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 14",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38397-1369d12af77e97821ac86aee487ad012.jpg?hash=96qTTGAj6B",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 255,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 15,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 15",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38398-f763905677b25a489de3df45d2539633.jpg?hash=Va_hxcgxsB",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 256,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 16,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 16",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38399-120820a19c1b9dc899634227ffa2a59c.jpg?hash=1JWcL81D9f",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 257,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 17,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 17",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38400-672889d075684437bbb64ac0f2a5dd49.jpg?hash=0xqqTxYvPg",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 258,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 18,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 18",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38401-aa3962f325082ee40c2755ed81e86cfe.jpg?hash=LN0W5rpy4j",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 259,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 19,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 19",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38402-d26c05b08841d5c096e88116fbf01b82.jpg?hash=F5PAClp0mU",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 260,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 20,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 20",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38403-cccfaf94baa532d0eae9f5cfd7624a9a.jpg?hash=kZpoYzX4-M",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 261,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 21,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 21",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38404-61c76439e5a125c3b41ef2befde00eea.jpg?hash=olyQWMljQr",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 262,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 22,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 22",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38405-75f9ee9ca4636272baf9303ad69883f0.jpg?hash=4O6bEhzUAg",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 263,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 23,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 23",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38406-c99dd7307962c12f37de575d8ccb0176.jpg?hash=wCNKh6QHca",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 264,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 24,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 24",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38407-cbc2ffdc01416c6bf4a1e5551ac3075e.jpg?hash=buWQ9GRQJw",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 265,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 25,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 25",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38408-241b949c4bcb38ad54af2bdf127ebae7.jpg?hash=S_P6OQWc9u",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 266,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 26,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 26",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38409-540c78433bc5c3690572d984173ad883.jpg?hash=XwHOG957Wu",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 267,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 27,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 27",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38410-23e74660cd73fa2e631615f77bacbab9.jpg?hash=A2erVDt3h3",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 268,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 28,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 28",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38411-f4ca3c7e726ffa91f887f073745dbccc.jpg?hash=6rihtT3Sc-",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 269,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 29,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 29",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38412-603c2df7a589fcc0ecaefda0aa6bd683.jpg?hash=K0kHa2-gz2",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 270,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 30,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 30",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38413-e91bbe9595b3022de8bf3b16167d7952.jpg?hash=r-lPz4frvO",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 271,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 31,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 31",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38414-cb7df6be8fb0f29b76ee9bb0280f5b83.jpg?hash=zqAMKe-Znu",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 272,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 32,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 32",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38415-d9038b982d11a828dfc8e4f402977786.jpg?hash=4qVGnMAYRV",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 273,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 33,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 33",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38416-2edb2c3dfb50502092538cd46f7831ef.jpg?hash=MDBzmrr0wL",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 274,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 34,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 34",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38417-d7c821b97e6bd73a080df34c7573ec46.jpg?hash=R-dzwuAPJh",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 275,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 35,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 35",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38418-9b1644f884512923ba836791d80411a6.jpg?hash=wXnT_7UMGR",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 276,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 36,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 36",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38419-f8fb7932705d36fa303b5d5d268708a3.jpg?hash=-7p-sBRV5e",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 277,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 37,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 37",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38420-6c7d201879c89074c419e30ecbc1cdf7.jpg?hash=nmKI82NKEs",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 278,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 38,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 38",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38421-c1084ec853355f702af5bcd90f3acc66.jpg?hash=sRrR2pfzUy",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 279,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 39,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 39",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38422-8ea2ba84feb4a7631d76a20450117456.jpg?hash=iSYIVKZw0J",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 280,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 40,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 40",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38423-c3653115776b94c4b4728034c3c99b74.jpg?hash=8Jd5UShQdw",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 281,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 41,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 41",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38424-f19225e52c1c58a023d67fe0fa10848e.jpg?hash=B5HegSzs6B",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 282,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 42,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 42",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38425-01f2dd3112345522c56a452b5525c7dc.jpg?hash=9PXj0hJs2e",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 283,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 43,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 43",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38426-0a2fc12b130d3c054f2c2c8fce27f175.jpg?hash=4S_5exK6UD",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 284,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 44,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 44",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38427-c83d75bb7fe1bb9138e6f3e6dcb344e4.jpg?hash=3anJXqZ8LD",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 285,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 45,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 45",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38428-2c5ded4bc2caf7a65388a7fae70beb4f.jpg?hash=tm5ep18MU3",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 286,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 46,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 46",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38429-15fc38882073fd37fcb283f207b051fa.jpg?hash=n4X7JIG3MT",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 287,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 47,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 47",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38430-bcbe0f130a7b4dc47f6c0b0db9a17489.jpg?hash=ZIqkSerWUR",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 288,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 48,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 48",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38431-64c1b498fceb9f4b6623a7c2ee07da1a.jpg?hash=deufFZFuGl",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 289,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 49,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 49",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38432-3286f9c98f8aefcf54ce2951e5a9b534.jpg?hash=2tSglaUDZi",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 290,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 50,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 50",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38433-73bb62a1606b3b985410ede14454f039.jpg?hash=eqxxgVSYBd",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 291,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 51,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 51",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38434-845fade4e40d8c501a35ce2949a61934.jpg?hash=hqOirgRMI5",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 292,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 52,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 52",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38435-f2eb2f8f8595e2fd1bd09f7bbe27bcb7.jpg?hash=54fMxPSuWq",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 293,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 53,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 53",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38436-c0e6a5152a591a4b2229cffa3ad15607.jpg?hash=VBc5x3ZWg7",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 294,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 54,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 54",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38437-2b636be5c738772d6f45496224156371.jpg?hash=lcIm9YEFAG",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 295,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 55,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 55",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38438-13da5eccd221f738cf622573a5b9ae52.jpg?hash=LoBYMWO1ZG",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 296,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 56,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 56",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38439-40872a2839c9e12d7e9e0e79b920be88.jpg?hash=tKhPnZ-Ioz",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 297,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 57,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 57",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38440-1458176b53a7e3811dc55de311e3161f.jpg?hash=E1V1wLzN5w",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 298,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 58,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 58",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38441-52f908367dc6ee14b57b950d396ede33.jpg?hash=TJwt241-KB",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 299,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 59,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 59",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38442-ac903089dcb2f20cc80c0c3a14fab458.jpg?hash=BoW6fESZSb",
+      "source": "HCM202_FA25_FE"
+    },
+    {
+      "id": 300,
+      "task": "fa25_fe",
+      "taskLabel": "FA25 FE",
+      "num": 60,
+      "chooseType": "Choose 1 answer",
+      "question": "[Đề thi FA25 FE] Câu 60",
+      "options": {
+        "A": "Đáp án A (Xem trên ảnh)",
+        "B": "Đáp án B (Xem trên ảnh)",
+        "C": "Đáp án C (Xem trên ảnh)",
+        "D": "Đáp án D (Xem trên ảnh)"
+      },
+      "answer": "A",
+      "image": "https://fuexam.me/data/attachments/38/38443-ac925c7fc7d4f330de554c0274e39e2e.jpg?hash=TnbrKC_INK",
+      "source": "HCM202_FA25_FE"
+    }
+  ]
+}
