@@ -2475,7 +2475,7 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "FA25 FE",
     "num": 26,
     "chooseType": "Choose 1 answer",
-    "question": "[Đề thi FA25 FE] Câu 26",
+    "question": "Ooooonoo Ocee Paan",
     "options": {
       "A": "Đáp án A (Xem trên ảnh)",
       "B": "Đáp án B (Xem trên ảnh)",
@@ -11749,7 +11749,7 @@ window.QUIZ_DATA['hcm202'] = [
     "taskLabel": "SU25 FE",
     "num": 24,
     "chooseType": "Choose 1 answer",
-    "question": "[Đề thi SU25 FE] Câu 24",
+    "question": "S6s Poooaaaooeo",
     "options": {
       "A": "Đáp án A (Xem trên ảnh)",
       "B": "Đáp án B (Xem trên ảnh)",
